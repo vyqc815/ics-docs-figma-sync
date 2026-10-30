@@ -1,0 +1,1107 @@
+{
+  "course_management/course_management.md": {
+    "frames": {
+      "2812:17023": {
+        "hash": "65190b827a4fa658",
+        "name": "Quản lý khoá học",
+        "type": "SECTION"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "course_management/homework-test/homework-test.md": {
+    "frames": {
+      "5491:346399": {
+        "hash": "73beb76201c1c027",
+        "name": "CD-KH-060100 — Bài tập về nhà / BTVN",
+        "type": "FRAME"
+      },
+      "6015:53230": {
+        "hash": "702a4cf554174067",
+        "name": "CD-KH-060100-DK — Bài tập về nhà / BTVN",
+        "type": "FRAME"
+      },
+      "5491:347564": {
+        "hash": "4bb71fe8a08ddef3",
+        "name": "CD-KH-060200 — Bài tập về nhà / Kiểm tra",
+        "type": "FRAME"
+      },
+      "6015:53668": {
+        "hash": "e6f9199be8f9171c",
+        "name": "CD-KH-060200-DK — Bài tập về nhà / Kiểm tra",
+        "type": "FRAME"
+      },
+      "5491:348706": {
+        "hash": "97f82f41f8e835ba",
+        "name": "CD-KH-060110 — Bài tập về nhà / Popup chọn loại câu",
+        "type": "FRAME"
+      },
+      "6015:54107": {
+        "hash": "b0ba3a79183a928d",
+        "name": "CD-KH-060110-DK — Bài tập về nhà / Popup chọn loại câu",
+        "type": "FRAME"
+      },
+      "5491:348805": {
+        "hash": "fc11ea667c42c904",
+        "name": "CD-KH-060120 — Bài tập về nhà / Popup soạn câu hỏi · Trắc nghiệm",
+        "type": "FRAME"
+      },
+      "6019:66093": {
+        "hash": "b8e0adca1996892a",
+        "name": "CD-KH-060120-DK — Bài tập về nhà / Popup soạn câu hỏi · Trắc nghiệm",
+        "type": "FRAME"
+      },
+      "5491:348893": {
+        "hash": "3e7e9db800bde2ff",
+        "name": "CD-KH-060130 — Bài tập về nhà / BTVN · Bài chưa có câu hỏi",
+        "type": "FRAME"
+      },
+      "6015:54200": {
+        "hash": "1380fb6096676cc9",
+        "name": "CD-KH-060130-DK — Bài tập về nhà / BTVN · Bài chưa có câu hỏi",
+        "type": "FRAME"
+      },
+      "5672:74620": {
+        "hash": "0ef72850f0071868",
+        "name": "CD-KH-060121 — Bài tập về nhà / Popup soạn câu hỏi · Sắp xếp",
+        "type": "FRAME"
+      },
+      "6019:66201": {
+        "hash": "700cdb55a98a3869",
+        "name": "CD-KH-060121-DK — Bài tập về nhà / Popup soạn câu hỏi · Sắp xếp",
+        "type": "FRAME"
+      },
+      "5672:74752": {
+        "hash": "2579e858072f948d",
+        "name": "CD-KH-060122 — Bài tập về nhà / Popup soạn câu hỏi · Nối từ",
+        "type": "FRAME"
+      },
+      "6019:66310": {
+        "hash": "4ce56919934d0ff9",
+        "name": "CD-KH-060122-DK — Bài tập về nhà / Popup soạn câu hỏi · Nối từ",
+        "type": "FRAME"
+      },
+      "5672:74887": {
+        "hash": "a833c43e68e322b9",
+        "name": "CD-KH-060123 — Bài tập về nhà / Popup soạn câu hỏi · Nói",
+        "type": "FRAME"
+      },
+      "6019:66422": {
+        "hash": "41520f1b0b1b41e6",
+        "name": "CD-KH-060123-DK — Bài tập về nhà / Popup soạn câu hỏi · Nói",
+        "type": "FRAME"
+      },
+      "5672:75018": {
+        "hash": "1ab0facc343aa4ef",
+        "name": "CD-KH-060124 — Bài tập về nhà / Popup soạn câu hỏi · Viết",
+        "type": "FRAME"
+      },
+      "6019:66530": {
+        "hash": "dac15b963b08bdc5",
+        "name": "CD-KH-060124-DK — Bài tập về nhà / Popup soạn câu hỏi · Viết",
+        "type": "FRAME"
+      },
+      "5672:75135": {
+        "hash": "120f0044bba0e8ec",
+        "name": "CD-KH-060125 — Bài tập về nhà / Popup soạn câu hỏi · Câu hỏi con",
+        "type": "FRAME"
+      },
+      "6019:66624": {
+        "hash": "6708c9c35b8e9270",
+        "name": "CD-KH-060125-DK — Bài tập về nhà / Popup soạn câu hỏi · Câu hỏi con",
+        "type": "FRAME"
+      },
+      "5672:75273": {
+        "hash": "c2eea0158f324cf8",
+        "name": "CD-KH-060140 — Bài tập về nhà / Kết quả Import",
+        "type": "FRAME"
+      },
+      "6015:54631": {
+        "hash": "077bad1be218a229",
+        "name": "CD-KH-060140-DK — Bài tập về nhà / Kết quả Import",
+        "type": "FRAME"
+      },
+      "5672:75298": {
+        "hash": "f0d01be9bf02beeb",
+        "name": "CD-KH-060141 — Bài tập về nhà / Kết quả Import",
+        "type": "FRAME"
+      },
+      "6015:54645": {
+        "hash": "922df359c354676b",
+        "name": "CD-KH-060141-DK — Bài tập về nhà / Kết quả Import",
+        "type": "FRAME"
+      },
+      "5672:75315": {
+        "hash": "284aaa22715959a5",
+        "name": "CD-KH-060150 — Bài tập về nhà / Soát lỗi bằng AI",
+        "type": "FRAME"
+      },
+      "6015:54653": {
+        "hash": "1c5da79abbb4e800",
+        "name": "CD-KH-060150-DK — Bài tập về nhà / Soát lỗi bằng AI",
+        "type": "FRAME"
+      },
+      "5672:75478": {
+        "hash": "6988f1fd4b7a4040",
+        "name": "CD-KH-060160 — Bài tập về nhà / Preview mobile (trên trang Kiểm tra)",
+        "type": "FRAME"
+      },
+      "6015:54692": {
+        "hash": "969d23d678a1c699",
+        "name": "CD-KH-060160-DK — Bài tập về nhà / Preview mobile (trên trang Kiểm tra)",
+        "type": "FRAME"
+      },
+      "5491:357438": {
+        "hash": "8fd485e275c3a46a",
+        "name": "CD-KH-030340 — Học kỳ / Kiểm tra / Danh sách bài tập",
+        "type": "FRAME"
+      },
+      "6015:61856": {
+        "hash": "4a8baebc21b14caa",
+        "name": "CD-KH-030340-DK — Học kỳ / Kiểm tra / Danh sách bài tập",
+        "type": "FRAME"
+      },
+      "5491:358429": {
+        "hash": "9a8323528558665a",
+        "name": "CD-KH-030341 — Học kỳ / Kiểm tra / Popup Generate · Nhập prompt",
+        "type": "FRAME"
+      },
+      "6015:62283": {
+        "hash": "85a1532bb7e9cc45",
+        "name": "CD-KH-030341-DK — Học kỳ / Kiểm tra / Popup Generate · Nhập prompt",
+        "type": "FRAME"
+      },
+      "5491:358584": {
+        "hash": "1085656b31ed6c1e",
+        "name": "CD-KH-030343 — Học kỳ / Kiểm tra / Danh sách bài tập · Sau Generate (30 dòng)",
+        "type": "FRAME"
+      },
+      "6579:398214": {
+        "hash": "2ff43f995ec98282",
+        "name": "CD-KH-030343-DK — Học kỳ / Kiểm tra / Danh sách bài tập · Sau Generate (30 dòng)",
+        "type": "FRAME"
+      },
+      "5609:33933": {
+        "hash": "d7e0bea87071d742",
+        "name": "CD-KH-030347 — Học kỳ / Kiểm tra / Danh sách bài tập · Sau khi tạo",
+        "type": "FRAME"
+      },
+      "6015:62889": {
+        "hash": "3edba8ee42fbe69d",
+        "name": "CD-KH-030347-DK — Học kỳ / Kiểm tra / Danh sách bài tập · Sau khi tạo",
+        "type": "FRAME"
+      },
+      "5491:358483": {
+        "hash": "3421196307742193",
+        "name": "CD-KH-030342 — Học kỳ / Kiểm tra / Popup Generate · Chọn kiến thức & kỹ năng",
+        "type": "FRAME"
+      },
+      "6646:135456": {
+        "hash": "b11d17d415eb5bc0",
+        "name": "CD-KH-030342-DK — Học kỳ / Kiểm tra / Popup Generate · Chọn kiến thức & kỹ năng",
+        "type": "FRAME"
+      },
+      "5609:31772": {
+        "hash": "8c8bd626f95cbc4b",
+        "name": "CD-KH-030344 — Học kỳ / Kiểm tra / Generate · Đang tạo bảng",
+        "type": "FRAME"
+      },
+      "6579:392822": {
+        "hash": "6e47fc9fbcd8f3a2",
+        "name": "CD-KH-030344-DK — Học kỳ / Kiểm tra / Generate · Đang tạo bảng",
+        "type": "FRAME"
+      },
+      "5609:31815": {
+        "hash": "9b3be906923976d2",
+        "name": "CD-KH-030346 — Học kỳ / Kiểm tra / Generate · Lỗi",
+        "type": "FRAME"
+      },
+      "6015:63345": {
+        "hash": "29e7b0e218ad3e2e",
+        "name": "CD-KH-030346-DK — Học kỳ / Kiểm tra / Generate · Lỗi",
+        "type": "FRAME"
+      },
+      "5609:31794": {
+        "hash": "30c0640faef69cec",
+        "name": "CD-KH-030345 — Học kỳ / Kiểm tra / Generate · Xác nhận bỏ bảng",
+        "type": "FRAME"
+      },
+      "6015:63369": {
+        "hash": "c8355a9bb2331921",
+        "name": "CD-KH-030345-DK — Học kỳ / Kiểm tra / Generate · Xác nhận bỏ bảng",
+        "type": "FRAME"
+      },
+      "5614:35400": {
+        "hash": "9cb343fdfd09dc11",
+        "name": "CD-KH-030348 — Học kỳ / Kiểm tra / Popup chọn loại câu",
+        "type": "FRAME"
+      },
+      "6015:63425": {
+        "hash": "7b199a5d4ae404da",
+        "name": "CD-KH-030348-DK — Học kỳ / Kiểm tra / Popup chọn loại câu",
+        "type": "FRAME"
+      },
+      "5614:35448": {
+        "hash": "0c3b1c854ca44ea4",
+        "name": "CD-KH-030349 — Học kỳ / Kiểm tra / Popup soạn câu hỏi · Trắc nghiệm",
+        "type": "FRAME"
+      },
+      "6015:63473": {
+        "hash": "5e32b250ae96e49f",
+        "name": "CD-KH-030349-DK — Học kỳ / Kiểm tra / Popup soạn câu hỏi · Trắc nghiệm",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "course_management/knowledge-s1/knowledge-s1.md": {
+    "frames": {
+      "5004:37802": {
+        "hash": "745c5a39dd83c145",
+        "name": "CD-KH-030270 — Học kỳ / Bài học / Popup chi tiết bài học / Tab Kiến thức / Popup thêm kiến thức vào bài",
+        "type": "FRAME"
+      },
+      "6015:53081": {
+        "hash": "735f0038dc909730",
+        "name": "CD-KH-030270-DK — Học kỳ / Bài học / Popup chi tiết bài học / Tab Kiến thức / Popup thêm kiến thức vào bài",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "course_management/library/library.md": {
+    "frames": {
+      "6163:81278": {
+        "hash": "8ce70de4faac0cdd",
+        "name": "CD-KH-070301 — Thư viện / Bài tập / Chi tiết câu hỏi · Listening",
+        "type": "FRAME"
+      },
+      "6579:386683": {
+        "hash": "1a95eb4d90194fd7",
+        "name": "CD-KH-070301-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Listening",
+        "type": "FRAME"
+      },
+      "6163:82177": {
+        "hash": "5e71548e4c57d659",
+        "name": "CD-KH-070302 — Thư viện / Bài tập / Chi tiết câu hỏi · Reading",
+        "type": "FRAME"
+      },
+      "6579:387571": {
+        "hash": "ebd482001627c2bc",
+        "name": "CD-KH-070302-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Reading",
+        "type": "FRAME"
+      },
+      "6163:332037": {
+        "hash": "1e557041fa3d9478",
+        "name": "CD-KH-070304 — Thư viện / Bài tập / Chi tiết câu hỏi · Reading / Sửa câu",
+        "type": "FRAME"
+      },
+      "6579:366332": {
+        "hash": "61354eeae6929618",
+        "name": "CD-KH-070304-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Reading / Sửa câu",
+        "type": "FRAME"
+      },
+      "6163:332868": {
+        "hash": "fb797f9ed619d63e",
+        "name": "CD-KH-070305 — Thư viện / Bài tập / Chi tiết câu hỏi · Reading / Thêm · Sửa từ khoá",
+        "type": "FRAME"
+      },
+      "6579:367198": {
+        "hash": "a6efb68d158e4753",
+        "name": "CD-KH-070305-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Reading / Thêm · Sửa từ khoá",
+        "type": "FRAME"
+      },
+      "6163:82881": {
+        "hash": "fbba2f3bf5c3c2f3",
+        "name": "CD-KH-070303 — Thư viện / Bài tập / Chi tiết câu hỏi · Reading (Tiếng Nhật)",
+        "type": "FRAME"
+      },
+      "6579:388463": {
+        "hash": "bf11deb3bdd15a3e",
+        "name": "CD-KH-070303-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Reading (Tiếng Nhật)",
+        "type": "FRAME"
+      },
+      "5729:91615": {
+        "hash": "1f2564507f740333",
+        "name": "CD-KH-070160 — Thư viện / Kiến thức / Bảng chữ (tiếng Nhật)",
+        "type": "FRAME"
+      },
+      "6579:392879": {
+        "hash": "d8430fe825410e9f",
+        "name": "CD-KH-070160-DK — Thư viện / Kiến thức / Bảng chữ (tiếng Nhật)",
+        "type": "FRAME"
+      },
+      "5729:94334": {
+        "hash": "10b3da1b1b649ed2",
+        "name": "CD-KH-070161 — Thư viện / Kiến thức / Bảng chữ (tiếng Nhật) · Xem dạng bảng chữ",
+        "type": "FRAME"
+      },
+      "6579:395015": {
+        "hash": "9f0ce54a6c5adee9",
+        "name": "CD-KH-070161-DK — Thư viện / Kiến thức / Bảng chữ (tiếng Nhật) · Xem dạng bảng chữ",
+        "type": "FRAME"
+      },
+      "5729:92036": {
+        "hash": "5c74e1f26055383a",
+        "name": "CD-KH-070170 — Thư viện / Kiến thức / Bảng chữ (tiếng Hàn)",
+        "type": "FRAME"
+      },
+      "6579:393950": {
+        "hash": "c127663e88d99598",
+        "name": "CD-KH-070170-DK — Thư viện / Kiến thức / Bảng chữ (tiếng Hàn)",
+        "type": "FRAME"
+      },
+      "5729:95447": {
+        "hash": "7bd4dcc2bb6221e9",
+        "name": "CD-KH-070171 — Thư viện / Kiến thức / Bảng chữ (tiếng Hàn) · Xem dạng bảng chữ",
+        "type": "FRAME"
+      },
+      "6579:396321": {
+        "hash": "f5b2595283472cea",
+        "name": "CD-KH-070171-DK — Thư viện / Kiến thức / Bảng chữ (tiếng Hàn) · Xem dạng bảng chữ",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "course_management/semester/test/test.md": {
+    "frames": {
+      "497:18242": {
+        "hash": "f5c29b60b7086b31",
+        "name": "CD-KH-030300 — Học kỳ / Kiểm tra",
+        "type": "FRAME"
+      },
+      "6015:63835": {
+        "hash": "18a4c315fca85618",
+        "name": "CD-KH-030300-DK — Học kỳ / Kiểm tra",
+        "type": "FRAME"
+      },
+      "2527:168207": {
+        "hash": "387ce7700e9cfad6",
+        "name": "CD-KH-030310",
+        "type": "FRAME"
+      },
+      "2527:175658": {
+        "hash": "a436911ecf9c0edd",
+        "name": "CD-KH-030310",
+        "type": "FRAME"
+      },
+      "3241:19586": {
+        "hash": "7b7dd641ef5041a3",
+        "name": "Bản sao · CD-KH-030310",
+        "type": "FRAME"
+      },
+      "1496:16304": {
+        "hash": "381e4db8e1d1e53c",
+        "name": "CD-KH-030310 — Học kỳ / Kiểm tra / Popup cấu hình bài kiểm tra",
+        "type": "FRAME"
+      },
+      "6015:64397": {
+        "hash": "eb511f60d518c4e8",
+        "name": "CD-KH-030310-DK — Học kỳ / Kiểm tra / Popup cấu hình bài kiểm tra",
+        "type": "FRAME"
+      },
+      "5491:357438": {
+        "hash": "8fd485e275c3a46a",
+        "name": "CD-KH-030340 — Học kỳ / Kiểm tra / Danh sách bài tập",
+        "type": "FRAME"
+      },
+      "6015:61856": {
+        "hash": "4a8baebc21b14caa",
+        "name": "CD-KH-030340-DK — Học kỳ / Kiểm tra / Danh sách bài tập",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "course_management/skill-s6/skill-s6.md": {
+    "frames": {
+      "5491:340361": {
+        "hash": "46d02abd3bd71b47",
+        "name": "CD-KH-050100 — Kỹ năng (S6) / Nghe",
+        "type": "FRAME"
+      },
+      "6646:123375": {
+        "hash": "7ded10551fdc527c",
+        "name": "CD-KH-050100-DK — Kỹ năng (S6) / Nghe",
+        "type": "FRAME"
+      },
+      "6646:84755": {
+        "hash": "9c188bd0b0c8ba9e",
+        "name": "CD-KH-050110 — Kỹ năng (S6) / Nghe / Chi tiết bài nghe (drawer)",
+        "type": "FRAME"
+      },
+      "6646:127785": {
+        "hash": "6eeba8b17fa96f74",
+        "name": "CD-KH-050110-DK — Kỹ năng (S6) / Nghe / Chi tiết bài nghe (drawer)",
+        "type": "FRAME"
+      },
+      "6646:116941": {
+        "hash": "f7c9bcfd7c523835",
+        "name": "CD-KH-050140 — Kỹ năng (S6) / Nghe / Preview mobile theo bài đang chọn",
+        "type": "FRAME"
+      },
+      "6646:129058": {
+        "hash": "4431476504d1a679",
+        "name": "CD-KH-050140-DK — Kỹ năng (S6) / Nghe / Preview mobile theo bài đang chọn",
+        "type": "FRAME"
+      },
+      "6646:118162": {
+        "hash": "1383f5f14090aca6",
+        "name": "CD-KH-050130 — Kỹ năng (S6) / Nghe / Khoá chưa có bài nghe",
+        "type": "FRAME"
+      },
+      "6646:130193": {
+        "hash": "27ae87a10218b8f4",
+        "name": "CD-KH-050130-DK — Kỹ năng (S6) / Nghe / Khoá chưa có bài nghe",
+        "type": "FRAME"
+      },
+      "6646:119253": {
+        "hash": "0ff3fa6109d90325",
+        "name": "CD-KH-050120 — Kỹ năng (S6) / Nghe / Chọn nhiều · Thao tác hàng loạt",
+        "type": "FRAME"
+      },
+      "6646:131134": {
+        "hash": "089cdd8a9b51aad6",
+        "name": "CD-KH-050120-DK — Kỹ năng (S6) / Nghe / Chọn nhiều · Thao tác hàng loạt",
+        "type": "FRAME"
+      },
+      "6646:120233": {
+        "hash": "532c64b3acaf2a16",
+        "name": "CD-KH-050155 — Kỹ năng (S6) / Nghe / Popup gỡ bài khỏi khoá",
+        "type": "FRAME"
+      },
+      "6646:132286": {
+        "hash": "66955517e135ff37",
+        "name": "CD-KH-050155-DK — Kỹ năng (S6) / Nghe / Popup gỡ bài khỏi khoá",
+        "type": "FRAME"
+      },
+      "6646:120248": {
+        "hash": "87100a3d3dd4ae95",
+        "name": "CD-KH-050180 — Kỹ năng (S6) / Nghe / Transcript bằng AI (inline)",
+        "type": "FRAME"
+      },
+      "6646:132301": {
+        "hash": "286f72a0b4455edf",
+        "name": "CD-KH-050180-DK — Kỹ năng (S6) / Nghe / Transcript bằng AI (inline)",
+        "type": "FRAME"
+      },
+      "6646:121390": {
+        "hash": "bd377ecc5ad6fd82",
+        "name": "CD-KH-050190 — Kỹ năng (S6) / Nghe / Soát lỗi bằng AI",
+        "type": "FRAME"
+      },
+      "6646:133447": {
+        "hash": "5fcb263d2c601bdf",
+        "name": "CD-KH-050190-DK — Kỹ năng (S6) / Nghe / Soát lỗi bằng AI",
+        "type": "FRAME"
+      },
+      "6646:122539": {
+        "hash": "7ce2655bcf439c75",
+        "name": "CD-KH-050150 — Kỹ năng (S6) / Nghe / Popup thêm bài từ thư viện",
+        "type": "FRAME"
+      },
+      "6646:134590": {
+        "hash": "ec9c0a1bb9650dc3",
+        "name": "CD-KH-050150-DK — Kỹ năng (S6) / Nghe / Popup thêm bài từ thư viện",
+        "type": "FRAME"
+      },
+      "6646:122949": {
+        "hash": "7f2c4e4e3b2124fb",
+        "name": "CD-KH-050160 — Kỹ năng (S6) / Nghe / Popup tạo bài nghe mới",
+        "type": "FRAME"
+      },
+      "6646:134889": {
+        "hash": "a7f6bfb93f4676cd",
+        "name": "CD-KH-050160-DK — Kỹ năng (S6) / Nghe / Popup tạo bài nghe mới",
+        "type": "FRAME"
+      },
+      "5491:342722": {
+        "hash": "67ec92e8d117efee",
+        "name": "CD-KH-050200 — Kỹ năng (S6) / Đọc",
+        "type": "FRAME"
+      },
+      "6646:124506": {
+        "hash": "4a2c47aef7202511",
+        "name": "CD-KH-050200-DK — Kỹ năng (S6) / Đọc",
+        "type": "FRAME"
+      },
+      "6163:81278": {
+        "hash": "8ce70de4faac0cdd",
+        "name": "CD-KH-070301 — Thư viện / Bài tập / Chi tiết câu hỏi · Listening",
+        "type": "FRAME"
+      },
+      "6579:386683": {
+        "hash": "1a95eb4d90194fd7",
+        "name": "CD-KH-070301-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Listening",
+        "type": "FRAME"
+      },
+      "6163:82177": {
+        "hash": "5e71548e4c57d659",
+        "name": "CD-KH-070302 — Thư viện / Bài tập / Chi tiết câu hỏi · Reading",
+        "type": "FRAME"
+      },
+      "6579:387571": {
+        "hash": "ebd482001627c2bc",
+        "name": "CD-KH-070302-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Reading",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "management_requirement/class_management/class_detail_overview_requirements.md": {
+    "frames": {
+      "3561:71389": {
+        "hash": "5879f9cf02869564",
+        "name": "Bản sao · ADM-LOP-020100",
+        "type": "FRAME"
+      },
+      "769:30963": {
+        "hash": "42381a8d4d0e7ba5",
+        "name": "ADM-LOP-020100 — Chi tiết lớp học / Tổng quan",
+        "type": "FRAME"
+      },
+      "3304:60340": {
+        "hash": "89944cf9fa8b4bb4",
+        "name": "ADM-LOP-020100 — Chi tiết lớp học / Tổng quan > chi tiết",
+        "type": "FRAME"
+      },
+      "4056:109839": {
+        "hash": "80e07a454ed09320",
+        "name": "ADM-LOP-020100-DK — Chi tiết lớp học / Tổng quan",
+        "type": "FRAME"
+      },
+      "4056:110282": {
+        "hash": "4a49379e3a3cd16f",
+        "name": "ADM-LOP-020100-DK — Chi tiết lớp học / Tổng quan > chi tiết",
+        "type": "FRAME"
+      },
+      "2425:105717": {
+        "hash": "d1a70a5c56b938e3",
+        "name": "Class Session Status",
+        "type": "COMPONENT_SET"
+      },
+      "2456:110608": {
+        "hash": "fb7214455e24da5f",
+        "name": "Trạng thái đi học",
+        "type": "COMPONENT_SET"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "management_requirement/salary_management/teacher_salary_requirements.md": {
+    "frames": {
+      "4101:138376": {
+        "hash": "7d76f2846752cbc8",
+        "name": "ADM-LGV-010000 — Lương / Lương giáo viên",
+        "type": "FRAME"
+      },
+      "4343:91789": {
+        "hash": "3948ef527a22b84a",
+        "name": "ADM-LGV-010000-DK — Lương / Lương giáo viên",
+        "type": "FRAME"
+      },
+      "4101:128323": {
+        "hash": "41909997562bf91d",
+        "name": "        ├─ LƯƠNG GV",
+        "type": "CANVAS"
+      },
+      "4101:140492": {
+        "hash": "691f09f651237c99",
+        "name": "Dropdown · Tháng này",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "management_requirement/schedule_management/teaching_schedule_requirements.md": {
+    "frames": {
+      "4101:129181": {
+        "hash": "c55835cc9c4de8de",
+        "name": "ADM-LD-010000 — Lịch / Lịch dạy tổng",
+        "type": "FRAME"
+      },
+      "4139:135432": {
+        "hash": "ea9a85a7f0330fb7",
+        "name": "ADM-LD-010000-DK — Lịch / Lịch dạy tổng",
+        "type": "FRAME"
+      },
+      "5822:38379": {
+        "hash": "75e638b67c78a21b",
+        "name": "ADM-LD-010010 — Lịch / Lịch dạy tổng / Theo lớp",
+        "type": "FRAME"
+      },
+      "5836:2742": {
+        "hash": "7b0e500234ab5391",
+        "name": "ADM-LD-010010-DK — Lịch / Lịch dạy tổng / Theo lớp",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "teacher_role/class/class_course_requirements.md": {
+    "frames": {
+      "4333:15552": {
+        "hash": "89badc63aab97e38",
+        "name": "GV-LOP-080100 — Chi tiết lớp / Mindset khoá học / Học viên",
+        "type": "FRAME"
+      },
+      "4333:15711": {
+        "hash": "2d97d92dd702a2d4",
+        "name": "GV-LOP-080100-DK — Chi tiết lớp / Mindset khoá học / Học viên",
+        "type": "FRAME"
+      },
+      "4333:14602": {
+        "hash": "59f1f5bb91a853ff",
+        "name": "GV-LOP-090100 — Chi tiết lớp / Hướng dẫn giảng dạy / Trống",
+        "type": "FRAME"
+      },
+      "4333:14761": {
+        "hash": "a66df944e2559f30",
+        "name": "GV-LOP-090100-DK — Chi tiết lớp / Hướng dẫn giảng dạy / Trống",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "teacher_role/class/class_evaluation_requirements.md": {
+    "frames": {
+      "4333:16560": {
+        "hash": "3a73508137cb0cf1",
+        "name": "GV-LOP-100100 — Chi tiết lớp / Đánh giá / Không có quyền truy cập",
+        "type": "FRAME"
+      },
+      "4333:16719": {
+        "hash": "acf85c9ee5445c4e",
+        "name": "GV-LOP-100100-DK — Chi tiết lớp / Đánh giá / Không có quyền truy cập",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "teacher_role/class/class_information_requirements.md": {
+    "frames": {
+      "4333:17990": {
+        "hash": "53117fe4996af697",
+        "name": "GV-LOP-110100 — Chi tiết lớp / Thông tin / Thông tin",
+        "type": "FRAME"
+      },
+      "4333:18149": {
+        "hash": "9a76dbc7b4e517d9",
+        "name": "GV-LOP-110100-DK — Chi tiết lớp / Thông tin / Thông tin",
+        "type": "FRAME"
+      },
+      "4333:18493": {
+        "hash": "5b94a623dc869513",
+        "name": "GV-LOP-110200 — Chi tiết lớp / Thông tin / KPI",
+        "type": "FRAME"
+      },
+      "4333:19232": {
+        "hash": "abecf2bb362fa301",
+        "name": "GV-LOP-110200-DK — Chi tiết lớp / Thông tin / KPI",
+        "type": "FRAME"
+      },
+      "4333:18902": {
+        "hash": "8479ecc5edf4a1c8",
+        "name": "GV-LOP-110300 — Chi tiết lớp / Thông tin / Lịch sử & lương",
+        "type": "FRAME"
+      },
+      "4333:19508": {
+        "hash": "7bc0eb6d61e2224a",
+        "name": "GV-LOP-110300-DK — Chi tiết lớp / Thông tin / Lịch sử & lương",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "teacher_role/class/class_overview_requirements.md": {
+    "frames": {
+      "4324:4861": {
+        "hash": "8991f0f7a7f8faff",
+        "name": "GV-LOP-020000 — Chi tiết lớp / Tổng quan",
+        "type": "FRAME"
+      },
+      "4324:15165": {
+        "hash": "54a31ee908596fc9",
+        "name": "GV-LOP-020000-DK — Chi tiết lớp / Tổng quan",
+        "type": "FRAME"
+      },
+      "3868:95435": {
+        "hash": "e92b3aa8b624a0cc",
+        "name": "GV-LOP-010000 — Lớp / Thống kê tổng quan",
+        "type": "FRAME"
+      },
+      "4056:149227": {
+        "hash": "b6fd93bb583ac8cc",
+        "name": "GV-LOP-010000-DK — Lớp / Thống kê tổng quan",
+        "type": "FRAME"
+      },
+      "2425:105717": {
+        "hash": "d1a70a5c56b938e3",
+        "name": "Class Session Status",
+        "type": "COMPONENT_SET"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "teacher_role/class/class_process_requirements.md": {
+    "frames": {
+      "4333:13208": {
+        "hash": "4c190d980dddefe3",
+        "name": "GV-LOP-060100 — Chi tiết lớp / Tiêu chuẩn lớp / Trống",
+        "type": "FRAME"
+      },
+      "4333:13367": {
+        "hash": "ebd7c0acdc139ac9",
+        "name": "GV-LOP-060100-DK — Chi tiết lớp / Tiêu chuẩn lớp / Trống",
+        "type": "FRAME"
+      },
+      "4333:13911": {
+        "hash": "9d6c9f9c5390925e",
+        "name": "GV-LOP-070100 — Chi tiết lớp / Cuộc họp / Trống",
+        "type": "FRAME"
+      },
+      "4333:14070": {
+        "hash": "2e9c66702c6b8975",
+        "name": "GV-LOP-070100-DK — Chi tiết lớp / Cuộc họp / Trống",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "teacher_role/class/class_teaching_requirements.md": {
+    "frames": {
+      "4324:16651": {
+        "hash": "1941fb59bb94c354",
+        "name": "GV-LOP-030100 — Chi tiết lớp / Bài học / Buổi học",
+        "type": "FRAME"
+      },
+      "4324:30255": {
+        "hash": "0a916614968d5c42",
+        "name": "GV-LOP-030100-DK — Chi tiết lớp / Bài học / Buổi học",
+        "type": "FRAME"
+      },
+      "5292:220948": {
+        "hash": "ccf50162e4105977",
+        "name": "GV-LOP-030110 — Chi tiết lớp / Bài học / Buổi học / Dặn dò trước buổi học",
+        "type": "FRAME"
+      },
+      "5292:222200": {
+        "hash": "6b548d01d2f27dce",
+        "name": "GV-LOP-030111 — Chi tiết lớp / Bài học / Buổi học / Dặn dò đã đọc",
+        "type": "FRAME"
+      },
+      "5292:222984": {
+        "hash": "5f9e068028bde767",
+        "name": "GV-LOP-030120 — Chi tiết lớp / Bài học / Popup chọn lịch dạy",
+        "type": "FRAME"
+      },
+      "5292:223041": {
+        "hash": "1a45900f8af220bc",
+        "name": "GV-LOP-030121 — Chi tiết lớp / Bài học / Popup bắt đầu buổi học",
+        "type": "FRAME"
+      },
+      "5292:223076": {
+        "hash": "1345cf2de01af33b",
+        "name": "GV-LOP-030130 — Chi tiết lớp / Bài học / Bước 1 Điểm danh",
+        "type": "FRAME"
+      },
+      "5292:224358": {
+        "hash": "88d8378840197439",
+        "name": "GV-LOP-030131 — Chi tiết lớp / Bài học / Popup kết thúc buổi học",
+        "type": "FRAME"
+      },
+      "5292:224370": {
+        "hash": "cdb521bce77077c4",
+        "name": "GV-LOP-030141 — Chi tiết lớp / Bài học / Popup hoàn thành buổi học",
+        "type": "FRAME"
+      },
+      "5292:224382": {
+        "hash": "a6df2953a891e730",
+        "name": "GV-LOP-030161 — Chi tiết lớp / Bài học / Popup tiếp tục buổi học",
+        "type": "FRAME"
+      },
+      "5292:224394": {
+        "hash": "5846585ce82c42d7",
+        "name": "GV-LOP-030140 — Chi tiết lớp / Bài học / Bước 2 Ghi chú buổi học",
+        "type": "FRAME"
+      },
+      "5292:225250": {
+        "hash": "809035c9db39d11a",
+        "name": "GV-LOP-030150 — Chi tiết lớp / Bài học / Buổi học đã kết thúc",
+        "type": "FRAME"
+      },
+      "5292:225685": {
+        "hash": "cf199ea87cfe4e65",
+        "name": "GV-LOP-030160 — Chi tiết lớp / Bài học / Buổi học / Bài đang dạy",
+        "type": "FRAME"
+      },
+      "5292:226685": {
+        "hash": "a533dc1314ee64d5",
+        "name": "GV-LOP-030170 — Chi tiết lớp / Bài học / Buổi học / Bài chờ hoàn thành",
+        "type": "FRAME"
+      },
+      "4324:16967": {
+        "hash": "1f8d90da541ec242",
+        "name": "GV-LOP-030200 — Chi tiết lớp / Bài học / Thông tin",
+        "type": "FRAME"
+      },
+      "4324:30708": {
+        "hash": "76e7573c0192e07f",
+        "name": "GV-LOP-030200-DK — Chi tiết lớp / Bài học / Thông tin",
+        "type": "FRAME"
+      },
+      "4324:17213": {
+        "hash": "91641114289641b9",
+        "name": "GV-LOP-030300 — Chi tiết lớp / Bài học / Nội dung",
+        "type": "FRAME"
+      },
+      "4324:31014": {
+        "hash": "f2c79e5028723754",
+        "name": "GV-LOP-030300-DK — Chi tiết lớp / Bài học / Nội dung",
+        "type": "FRAME"
+      },
+      "4324:17763": {
+        "hash": "cb18a48b2e9ed0c5",
+        "name": "GV-LOP-030500 — Chi tiết lớp / Bài học / Kiến thức",
+        "type": "FRAME"
+      },
+      "4324:31626": {
+        "hash": "6c9da1b66c53a5d0",
+        "name": "GV-LOP-030500-DK — Chi tiết lớp / Bài học / Kiến thức",
+        "type": "FRAME"
+      },
+      "4324:17511": {
+        "hash": "2177e02ad733ec36",
+        "name": "GV-LOP-030400 — Chi tiết lớp / Bài học / Tài nguyên",
+        "type": "FRAME"
+      },
+      "4324:31307": {
+        "hash": "28949de657dab8a8",
+        "name": "GV-LOP-030400-DK — Chi tiết lớp / Bài học / Tài nguyên",
+        "type": "FRAME"
+      },
+      "4324:85925": {
+        "hash": "97e17c7ef585c07f",
+        "name": "GV-LOP-040100 — Chi tiết lớp / Bài tập và Kiểm tra / BTVN",
+        "type": "FRAME"
+      },
+      "4324:99880": {
+        "hash": "611db54ac4e5313f",
+        "name": "GV-LOP-040100-DK — Chi tiết lớp / Bài tập và Kiểm tra / BTVN",
+        "type": "FRAME"
+      },
+      "4324:86231": {
+        "hash": "27dc3b21fe58bbf9",
+        "name": "GV-LOP-040200 — Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra",
+        "type": "FRAME"
+      },
+      "4324:100236": {
+        "hash": "dbaa178a9544728b",
+        "name": "GV-LOP-040200-DK — Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra",
+        "type": "FRAME"
+      },
+      "4333:7910": {
+        "hash": "1024c1556c27111d",
+        "name": "GV-LOP-050100 — Chi tiết lớp / Tự học / Trống",
+        "type": "FRAME"
+      },
+      "4333:8502": {
+        "hash": "f39beca6a74ca203",
+        "name": "GV-LOP-050100-DK — Chi tiết lớp / Tự học / Trống",
+        "type": "FRAME"
+      },
+      "2456:110608": {
+        "hash": "fb7214455e24da5f",
+        "name": "Trạng thái đi học",
+        "type": "COMPONENT_SET"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "teacher_role/class_list/class_list_requirements.md": {
+    "frames": {
+      "3868:95435": {
+        "hash": "e92b3aa8b624a0cc",
+        "name": "GV-LOP-010000 — Lớp / Thống kê tổng quan",
+        "type": "FRAME"
+      },
+      "4056:149227": {
+        "hash": "b6fd93bb583ac8cc",
+        "name": "GV-LOP-010000-DK — Lớp / Thống kê tổng quan",
+        "type": "FRAME"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "teacher_role/history_and_salary/history_and_salary_requirements.md": {
+    "frames": {
+      "3868:96982": {
+        "hash": "73ff7d5d6453df7f",
+        "name": "GV-LS-010000 — Lịch sử & lương / Buổi dạy",
+        "type": "FRAME"
+      },
+      "4056:149555": {
+        "hash": "f2bb03bbe3b08aaf",
+        "name": "GV-LS-010000-DK — Lịch sử & lương / Buổi dạy",
+        "type": "FRAME"
+      },
+      "3868:102081": {
+        "hash": "6fe2cab2afe7aaeb",
+        "name": "GV-LS-010003 — Lịch sử & lương / KPI",
+        "type": "FRAME"
+      },
+      "4056:150017": {
+        "hash": "389bca80812b71c2",
+        "name": "GV-LS-010003-DK — Lịch sử & lương / KPI",
+        "type": "FRAME"
+      },
+      "3868:102573": {
+        "hash": "45eb87dc84e3a3b4",
+        "name": "GV-LS-010004 — Lịch sử & lương / OT",
+        "type": "FRAME"
+      },
+      "4056:150295": {
+        "hash": "69caa6ee4056f52d",
+        "name": "GV-LS-010004-DK — Lịch sử & lương / OT",
+        "type": "FRAME"
+      },
+      "4760:16671": {
+        "hash": "3b7c57c221dc1a7c",
+        "name": "GV-LS-010010 — Lịch sử & lương / Popup đề xuất tăng lương",
+        "type": "FRAME"
+      },
+      "4899:111626": {
+        "hash": "421c97161916a9d4",
+        "name": "GV-LS-010010-DK — Lịch sử & lương / Popup đề xuất tăng lương",
+        "type": "FRAME"
+      },
+      "4814:159271": {
+        "hash": "271a071d9d14847d",
+        "name": "GV-LS-010012 — Lịch sử & lương / Popup đề xuất tăng lương / Chọn lý do",
+        "type": "FRAME"
+      },
+      "4899:111721": {
+        "hash": "76c214af3e40ecd9",
+        "name": "GV-LS-010012-DK — Lịch sử & lương / Popup đề xuất tăng lương / Chọn lý do",
+        "type": "FRAME"
+      },
+      "4899:118050": {
+        "hash": "c000c3cb370f19d0",
+        "name": "ADM-LGV-020010 — Lương / Đề xuất tăng lương / Popup duyệt đề xuất",
+        "type": "FRAME"
+      },
+      "4899:118692": {
+        "hash": "7b00579ba11e57a4",
+        "name": "ADM-LGV-020010-DK — Lương / Đề xuất tăng lương / Popup duyệt đề xuất",
+        "type": "FRAME"
+      },
+      "4899:106613": {
+        "hash": "ccccf1d4b3b8c8bc",
+        "name": "GV-LS-010015 — Lịch sử & lương / Popup xác nhận gửi đề xuất",
+        "type": "FRAME"
+      },
+      "4899:111930": {
+        "hash": "a70391c315ff9002",
+        "name": "GV-LS-010015-DK — Lịch sử & lương / Popup xác nhận gửi đề xuất",
+        "type": "FRAME"
+      },
+      "4899:105950": {
+        "hash": "ec57a67a8f4e6568",
+        "name": "GV-LS-010014 — Lịch sử & lương / Đề xuất mới (có thể huỷ)",
+        "type": "FRAME"
+      },
+      "4899:107802": {
+        "hash": "c5594be86b7e9f63",
+        "name": "GV-LS-010014-DK — Lịch sử & lương / Đề xuất mới (có thể huỷ)",
+        "type": "FRAME"
+      },
+      "4760:16739": {
+        "hash": "3bf30575e5b3e0f6",
+        "name": "GV-LS-010011 — Lịch sử & lương / Đề xuất đang xử lý (không huỷ được)",
+        "type": "FRAME"
+      },
+      "4899:107263": {
+        "hash": "4d4140114b50c203",
+        "name": "GV-LS-010011-DK — Lịch sử & lương / Đề xuất đang xử lý (không huỷ được)",
+        "type": "FRAME"
+      },
+      "4899:106646": {
+        "hash": "df4cf30222fabd58",
+        "name": "GV-LS-010016 — Lịch sử & lương / Popup xác nhận huỷ đề xuất",
+        "type": "FRAME"
+      },
+      "4899:111961": {
+        "hash": "da763139bbcd0518",
+        "name": "GV-LS-010016-DK — Lịch sử & lương / Popup xác nhận huỷ đề xuất",
+        "type": "FRAME"
+      },
+      "4895:105828": {
+        "hash": "49bb1b009f79f443",
+        "name": "GV-LS-010013 — Lịch sử & lương / Popup lịch sử đề xuất",
+        "type": "FRAME"
+      },
+      "4899:111874": {
+        "hash": "09bbd9b5ab090648",
+        "name": "GV-LS-010013-DK — Lịch sử & lương / Popup lịch sử đề xuất",
+        "type": "FRAME"
+      },
+      "3772:93114": {
+        "hash": "bef1c2e9f874a463",
+        "name": "    ├─ LỊCH SỬ VÀ LƯƠNG",
+        "type": "CANVAS"
+      },
+      "4760:157911": {
+        "hash": "2b69156e6011ef9e",
+        "name": "FLOW giáo viên đề xuất tăng lương",
+        "type": "SECTION"
+      },
+      "4895:105908": {
+        "hash": "b3c8f8c90deac00e",
+        "name": "        └─ ĐỀ XUẤT TĂNG LƯƠNG",
+        "type": "CANVAS"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  },
+  "teacher_role/teaching_schedule/teaching_schedule_requirements.md": {
+    "frames": {
+      "5413:46957": {
+        "hash": "854b0ea8ba6f9afb",
+        "name": "GV-LD-010000 — Lịch dạy / Xem theo lớp",
+        "type": "FRAME"
+      },
+      "5425:272113": {
+        "hash": "8a2105a80854b274",
+        "name": "GV-LD-010000-DK — Lịch dạy / Xem theo lớp",
+        "type": "FRAME"
+      },
+      "5413:49118": {
+        "hash": "d59acaba94674f9e",
+        "name": "GV-LD-020000 — Lịch dạy / Quản lý đăng ký lịch",
+        "type": "FRAME"
+      },
+      "5425:272722": {
+        "hash": "b7542a872cef7f74",
+        "name": "GV-LD-020000-DK — Lịch dạy / Quản lý đăng ký lịch",
+        "type": "FRAME"
+      },
+      "5413:49911": {
+        "hash": "d61bd2daf92f9266",
+        "name": "GV-LD-020010 — Lịch dạy / Quản lý đăng ký lịch / Popup đăng ký khung giờ",
+        "type": "FRAME"
+      },
+      "5425:274125": {
+        "hash": "ee0f79052a72ca29",
+        "name": "GV-LD-020010-DK — Lịch dạy / Quản lý đăng ký lịch / Popup đăng ký khung giờ",
+        "type": "FRAME"
+      },
+      "5413:45647": {
+        "hash": "b5ebc87ecf1e1ff3",
+        "name": "    ├─ LỊCH DẠY",
+        "type": "CANVAS"
+      }
+    },
+    "checked": "30/10/2026 16:57"
+  }
+}

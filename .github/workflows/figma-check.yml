@@ -1,0 +1,40 @@
+name: Figma check
+
+on:
+  schedule: [{ cron: "0 * * * *" }]   # mỗi giờ
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # docs là symlink tới repo FE: checkout repo FE vào đúng chỗ
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.DOCS_REPO }}        # vd duongtb1992/fe_ics_2026
+          ref: ${{ vars.DOCS_BRANCH }}             # vd sprint/sprint01
+          token: ${{ secrets.DOCS_REPO_TOKEN }}
+          path: _fe
+          fetch-depth: 0
+      - run: rm -f docs && ln -s _fe/docs/requirements docs
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - run: python scripts/figma_check.py --thumbs
+        env: { FIGMA_TOKEN: "${{ secrets.FIGMA_TOKEN }}" }
+      - name: Commit snapshot
+        run: |
+          git config user.name "figma-bot"
+          git config user.email "figma-bot@users.noreply.github.com"
+          git add sync/
+          git diff --cached --quiet || git commit -m "chore: figma snapshot" && git push
+      - run: mkdocs build
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy site --project-name=ics-docs-figma-sync

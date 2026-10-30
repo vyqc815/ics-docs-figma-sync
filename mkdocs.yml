@@ -1,0 +1,57 @@
+site_name: ICS Docs · Figma
+docs_dir: docs   # symlink tới thư mục requirements của repo FE (nguồn duy nhất)
+use_directory_urls: false
+
+theme:
+  name: material
+  language: vi
+  custom_dir: overrides
+  font: { text: Inter, code: JetBrains Mono }
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle: { icon: material/weather-night, name: Chế độ tối }
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle: { icon: material/weather-sunny, name: Chế độ sáng }
+
+extra_css: [assets/sync.css]
+extra_javascript: [assets/sync.js, assets/screens.js]
+
+hooks:
+  - hooks/sync_status.py
+
+plugins:
+  - search:
+      lang: [en]
+  - tags
+  - git-revision-date-localized:
+      type: datetime
+      locale: vi
+      fallback_to_build_date: true
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - toc: { permalink: false }
+  - mdx_truly_sane_lists: { nested_indent: 2, truly_sane: true }
+  - pymdownx.superfences
+  - admonition
+
+validation:
+  links: { not_found: info, unrecognized_links: info }
+
+exclude_docs: |
+  *.html
+  requirement_template.md
+
+watch: [overrides, hooks, scripts, sync]

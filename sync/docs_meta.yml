@@ -1,0 +1,468 @@
+# Metadata cho từng tài liệu, giữ ở đây để không phải sửa file docs gốc.
+# Nếu file docs có frontmatter thì frontmatter được ưu tiên.
+# Khoá = đường dẫn tính từ thư mục docs/.
+#
+# figma: link frame (Figma > chuột phải frame > Copy link to selection, phải có node-id)
+
+course_management/course_management.md:
+  figma: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=2812-17023&t=lPLtOG4CwgaA4rrQ-0
+  tags:
+  - course
+  - cd
+  version: '1.0'
+course_management/homework-test/homework-test.md:
+  figma:
+  - name: CD-KH-060100 — Bài tập về nhà / BTVN
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-346399
+  - name: CD-KH-060100-DK — Bài tập về nhà / BTVN
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-53230
+  - name: CD-KH-060200 — Bài tập về nhà / Kiểm tra
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-347564
+  - name: CD-KH-060200-DK — Bài tập về nhà / Kiểm tra
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-53668
+  - name: CD-KH-060110 — Bài tập về nhà / Popup chọn loại câu
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-348706
+  - name: CD-KH-060110-DK — Bài tập về nhà / Popup chọn loại câu
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-54107
+  - name: CD-KH-060120 — Bài tập về nhà / Popup soạn câu hỏi · Trắc nghiệm
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-348805
+  - name: CD-KH-060120-DK — Bài tập về nhà / Popup soạn câu hỏi · Trắc nghiệm
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6019-66093
+  - name: CD-KH-060130 — Bài tập về nhà / BTVN · Bài chưa có câu hỏi
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-348893
+  - name: CD-KH-060130-DK — Bài tập về nhà / BTVN · Bài chưa có câu hỏi
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-54200
+  - name: CD-KH-060121 — Bài tập về nhà / Popup soạn câu hỏi · Sắp xếp
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5672-74620
+  - name: CD-KH-060121-DK — Bài tập về nhà / Popup soạn câu hỏi · Sắp xếp
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6019-66201
+  - name: CD-KH-060122 — Bài tập về nhà / Popup soạn câu hỏi · Nối từ
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5672-74752
+  - name: CD-KH-060122-DK — Bài tập về nhà / Popup soạn câu hỏi · Nối từ
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6019-66310
+  - name: CD-KH-060123 — Bài tập về nhà / Popup soạn câu hỏi · Nói
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5672-74887
+  - name: CD-KH-060123-DK — Bài tập về nhà / Popup soạn câu hỏi · Nói
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6019-66422
+  - name: CD-KH-060124 — Bài tập về nhà / Popup soạn câu hỏi · Viết
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5672-75018
+  - name: CD-KH-060124-DK — Bài tập về nhà / Popup soạn câu hỏi · Viết
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6019-66530
+  - name: CD-KH-060125 — Bài tập về nhà / Popup soạn câu hỏi · Câu hỏi con
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5672-75135
+  - name: CD-KH-060125-DK — Bài tập về nhà / Popup soạn câu hỏi · Câu hỏi con
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6019-66624
+  - name: CD-KH-060140 — Bài tập về nhà / Kết quả Import
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5672-75273
+  - name: CD-KH-060140-DK — Bài tập về nhà / Kết quả Import
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-54631
+  - name: CD-KH-060141 — Bài tập về nhà / Kết quả Import
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5672-75298
+  - name: CD-KH-060141-DK — Bài tập về nhà / Kết quả Import
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-54645
+  - name: CD-KH-060150 — Bài tập về nhà / Soát lỗi bằng AI
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5672-75315
+  - name: CD-KH-060150-DK — Bài tập về nhà / Soát lỗi bằng AI
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-54653
+  - name: CD-KH-060160 — Bài tập về nhà / Preview mobile (trên trang Kiểm tra)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5672-75478
+  - name: CD-KH-060160-DK — Bài tập về nhà / Preview mobile (trên trang Kiểm tra)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-54692
+  - name: CD-KH-030340 — Học kỳ / Kiểm tra / Danh sách bài tập
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-357438
+  - name: CD-KH-030340-DK — Học kỳ / Kiểm tra / Danh sách bài tập
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-61856
+  - name: CD-KH-030341 — Học kỳ / Kiểm tra / Popup Generate · Nhập prompt
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-358429
+  - name: CD-KH-030341-DK — Học kỳ / Kiểm tra / Popup Generate · Nhập prompt
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-62283
+  - name: CD-KH-030343 — Học kỳ / Kiểm tra / Danh sách bài tập · Sau Generate (30 dòng)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-358584
+  - name: CD-KH-030343-DK — Học kỳ / Kiểm tra / Danh sách bài tập · Sau Generate (30 dòng)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-398214
+  - name: CD-KH-030347 — Học kỳ / Kiểm tra / Danh sách bài tập · Sau khi tạo
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5609-33933
+  - name: CD-KH-030347-DK — Học kỳ / Kiểm tra / Danh sách bài tập · Sau khi tạo
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-62889
+  - name: CD-KH-030342 — Học kỳ / Kiểm tra / Popup Generate · Chọn kiến thức & kỹ năng
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-358483
+  - name: CD-KH-030342-DK — Học kỳ / Kiểm tra / Popup Generate · Chọn kiến thức & kỹ năng
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-135456
+  - name: CD-KH-030344 — Học kỳ / Kiểm tra / Generate · Đang tạo bảng
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5609-31772
+  - name: CD-KH-030344-DK — Học kỳ / Kiểm tra / Generate · Đang tạo bảng
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-392822
+  - name: CD-KH-030346 — Học kỳ / Kiểm tra / Generate · Lỗi
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5609-31815
+  - name: CD-KH-030346-DK — Học kỳ / Kiểm tra / Generate · Lỗi
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-63345
+  - name: CD-KH-030345 — Học kỳ / Kiểm tra / Generate · Xác nhận bỏ bảng
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5609-31794
+  - name: CD-KH-030345-DK — Học kỳ / Kiểm tra / Generate · Xác nhận bỏ bảng
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-63369
+  - name: CD-KH-030348 — Học kỳ / Kiểm tra / Popup chọn loại câu
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5614-35400
+  - name: CD-KH-030348-DK — Học kỳ / Kiểm tra / Popup chọn loại câu
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-63425
+  - name: CD-KH-030349 — Học kỳ / Kiểm tra / Popup soạn câu hỏi · Trắc nghiệm
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5614-35448
+  - name: CD-KH-030349-DK — Học kỳ / Kiểm tra / Popup soạn câu hỏi · Trắc nghiệm
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-63473
+  tags:
+  - course
+  - homework
+  - test
+  - cd
+course_management/knowledge-s1/knowledge-s1.md:
+  figma:
+  - name: CD-KH-030270 — Học kỳ / Bài học / Popup chi tiết bài học / Tab Kiến thức / Popup thêm kiến thức vào bài
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5004-37802
+  - name: CD-KH-030270-DK — Học kỳ / Bài học / Popup chi tiết bài học / Tab Kiến thức / Popup thêm kiến thức vào bài
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-53081
+  tags:
+  - course
+  - knowledge
+  - cd
+course_management/library/library.md:
+  figma:
+  - name: CD-KH-070301 — Thư viện / Bài tập / Chi tiết câu hỏi · Listening
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6163-81278
+  - name: CD-KH-070301-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Listening
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-386683
+  - name: CD-KH-070302 — Thư viện / Bài tập / Chi tiết câu hỏi · Reading
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6163-82177
+  - name: CD-KH-070302-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Reading
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-387571
+  - name: CD-KH-070304 — Thư viện / Bài tập / Chi tiết câu hỏi · Reading / Sửa câu
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6163-332037
+  - name: CD-KH-070304-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Reading / Sửa câu
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-366332
+  - name: CD-KH-070305 — Thư viện / Bài tập / Chi tiết câu hỏi · Reading / Thêm · Sửa từ khoá
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6163-332868
+  - name: CD-KH-070305-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Reading / Thêm · Sửa từ khoá
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-367198
+  - name: CD-KH-070303 — Thư viện / Bài tập / Chi tiết câu hỏi · Reading (Tiếng Nhật)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6163-82881
+  - name: CD-KH-070303-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Reading (Tiếng Nhật)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-388463
+  - name: CD-KH-070160 — Thư viện / Kiến thức / Bảng chữ (tiếng Nhật)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5729-91615
+  - name: CD-KH-070160-DK — Thư viện / Kiến thức / Bảng chữ (tiếng Nhật)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-392879
+  - name: CD-KH-070161 — Thư viện / Kiến thức / Bảng chữ (tiếng Nhật) · Xem dạng bảng chữ
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5729-94334
+  - name: CD-KH-070161-DK — Thư viện / Kiến thức / Bảng chữ (tiếng Nhật) · Xem dạng bảng chữ
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-395015
+  - name: CD-KH-070170 — Thư viện / Kiến thức / Bảng chữ (tiếng Hàn)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5729-92036
+  - name: CD-KH-070170-DK — Thư viện / Kiến thức / Bảng chữ (tiếng Hàn)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-393950
+  - name: CD-KH-070171 — Thư viện / Kiến thức / Bảng chữ (tiếng Hàn) · Xem dạng bảng chữ
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5729-95447
+  - name: CD-KH-070171-DK — Thư viện / Kiến thức / Bảng chữ (tiếng Hàn) · Xem dạng bảng chữ
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-396321
+course_management/semester/test/test.md:
+  figma:
+  - name: CD-KH-030300 — Học kỳ / Kiểm tra
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=497-18242
+  - name: CD-KH-030300-DK — Học kỳ / Kiểm tra
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-63835
+  - name: CD-KH-030310
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=2527-168207
+  - name: CD-KH-030310
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=2527-175658
+  - name: Bản sao · CD-KH-030310
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=3241-19586
+  - name: CD-KH-030310 — Học kỳ / Kiểm tra / Popup cấu hình bài kiểm tra
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=1496-16304
+  - name: CD-KH-030310-DK — Học kỳ / Kiểm tra / Popup cấu hình bài kiểm tra
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-64397
+  - name: CD-KH-030340 — Học kỳ / Kiểm tra / Danh sách bài tập
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-357438
+  - name: CD-KH-030340-DK — Học kỳ / Kiểm tra / Danh sách bài tập
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6015-61856
+course_management/skill-s6/skill-s6.md:
+  figma:
+  - name: CD-KH-050100 — Kỹ năng (S6) / Nghe
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-340361
+  - name: CD-KH-050100-DK — Kỹ năng (S6) / Nghe
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-123375
+  - name: CD-KH-050110 — Kỹ năng (S6) / Nghe / Chi tiết bài nghe (drawer)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-84755
+  - name: CD-KH-050110-DK — Kỹ năng (S6) / Nghe / Chi tiết bài nghe (drawer)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-127785
+  - name: CD-KH-050140 — Kỹ năng (S6) / Nghe / Preview mobile theo bài đang chọn
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-116941
+  - name: CD-KH-050140-DK — Kỹ năng (S6) / Nghe / Preview mobile theo bài đang chọn
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-129058
+  - name: CD-KH-050130 — Kỹ năng (S6) / Nghe / Khoá chưa có bài nghe
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-118162
+  - name: CD-KH-050130-DK — Kỹ năng (S6) / Nghe / Khoá chưa có bài nghe
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-130193
+  - name: CD-KH-050120 — Kỹ năng (S6) / Nghe / Chọn nhiều · Thao tác hàng loạt
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-119253
+  - name: CD-KH-050120-DK — Kỹ năng (S6) / Nghe / Chọn nhiều · Thao tác hàng loạt
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-131134
+  - name: CD-KH-050155 — Kỹ năng (S6) / Nghe / Popup gỡ bài khỏi khoá
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-120233
+  - name: CD-KH-050155-DK — Kỹ năng (S6) / Nghe / Popup gỡ bài khỏi khoá
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-132286
+  - name: CD-KH-050180 — Kỹ năng (S6) / Nghe / Transcript bằng AI (inline)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-120248
+  - name: CD-KH-050180-DK — Kỹ năng (S6) / Nghe / Transcript bằng AI (inline)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-132301
+  - name: CD-KH-050190 — Kỹ năng (S6) / Nghe / Soát lỗi bằng AI
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-121390
+  - name: CD-KH-050190-DK — Kỹ năng (S6) / Nghe / Soát lỗi bằng AI
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-133447
+  - name: CD-KH-050150 — Kỹ năng (S6) / Nghe / Popup thêm bài từ thư viện
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-122539
+  - name: CD-KH-050150-DK — Kỹ năng (S6) / Nghe / Popup thêm bài từ thư viện
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-134590
+  - name: CD-KH-050160 — Kỹ năng (S6) / Nghe / Popup tạo bài nghe mới
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-122949
+  - name: CD-KH-050160-DK — Kỹ năng (S6) / Nghe / Popup tạo bài nghe mới
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-134889
+  - name: CD-KH-050200 — Kỹ năng (S6) / Đọc
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5491-342722
+  - name: CD-KH-050200-DK — Kỹ năng (S6) / Đọc
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6646-124506
+  - name: CD-KH-070301 — Thư viện / Bài tập / Chi tiết câu hỏi · Listening
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6163-81278
+  - name: CD-KH-070301-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Listening
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-386683
+  - name: CD-KH-070302 — Thư viện / Bài tập / Chi tiết câu hỏi · Reading
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6163-82177
+  - name: CD-KH-070302-DK — Thư viện / Bài tập / Chi tiết câu hỏi · Reading
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=6579-387571
+curriculum_management_requirement/level_management/level_management.md:
+  tags:
+  - curriculum
+  - level
+management_requirement/class_management/class_detail_overview_requirements.md:
+  figma:
+  - name: Bản sao · ADM-LOP-020100
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=3561-71389
+  - name: ADM-LOP-020100 — Chi tiết lớp học / Tổng quan
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=769-30963
+  - name: ADM-LOP-020100 — Chi tiết lớp học / Tổng quan > chi tiết
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=3304-60340
+  - name: ADM-LOP-020100-DK — Chi tiết lớp học / Tổng quan
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4056-109839
+  - name: ADM-LOP-020100-DK — Chi tiết lớp học / Tổng quan > chi tiết
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4056-110282
+  - name: Class Session Status
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=2425-105717
+  - name: Trạng thái đi học
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=2456-110608
+management_requirement/salary_management/teacher_salary_requirements.md:
+  figma:
+  - name: ADM-LGV-010000 — Lương / Lương giáo viên
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4101-138376
+  - name: ADM-LGV-010000-DK — Lương / Lương giáo viên
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4343-91789
+  - name: '        ├─ LƯƠNG GV'
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4101-128323
+  - name: Dropdown · Tháng này
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4101-140492
+management_requirement/schedule_management/teaching_schedule_requirements.md:
+  figma:
+  - name: ADM-LD-010000 — Lịch / Lịch dạy tổng
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4101-129181
+  - name: ADM-LD-010000-DK — Lịch / Lịch dạy tổng
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4139-135432
+  - name: ADM-LD-010010 — Lịch / Lịch dạy tổng / Theo lớp
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5822-38379
+  - name: ADM-LD-010010-DK — Lịch / Lịch dạy tổng / Theo lớp
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5836-2742
+meeting_schedule/meeting_schedule.md:
+  tags:
+  - meeting
+  - class-handler
+  - admin
+teacher_role/class/class_course_requirements.md:
+  figma:
+  - name: GV-LOP-080100 — Chi tiết lớp / Mindset khoá học / Học viên
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-15552
+  - name: GV-LOP-080100-DK — Chi tiết lớp / Mindset khoá học / Học viên
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-15711
+  - name: GV-LOP-090100 — Chi tiết lớp / Hướng dẫn giảng dạy / Trống
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-14602
+  - name: GV-LOP-090100-DK — Chi tiết lớp / Hướng dẫn giảng dạy / Trống
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-14761
+teacher_role/class/class_evaluation_requirements.md:
+  figma:
+  - name: GV-LOP-100100 — Chi tiết lớp / Đánh giá / Không có quyền truy cập
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-16560
+  - name: GV-LOP-100100-DK — Chi tiết lớp / Đánh giá / Không có quyền truy cập
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-16719
+teacher_role/class/class_information_requirements.md:
+  figma:
+  - name: GV-LOP-110100 — Chi tiết lớp / Thông tin / Thông tin
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-17990
+  - name: GV-LOP-110100-DK — Chi tiết lớp / Thông tin / Thông tin
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-18149
+  - name: GV-LOP-110200 — Chi tiết lớp / Thông tin / KPI
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-18493
+  - name: GV-LOP-110200-DK — Chi tiết lớp / Thông tin / KPI
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-19232
+  - name: GV-LOP-110300 — Chi tiết lớp / Thông tin / Lịch sử & lương
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-18902
+  - name: GV-LOP-110300-DK — Chi tiết lớp / Thông tin / Lịch sử & lương
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-19508
+teacher_role/class/class_overview_requirements.md:
+  figma:
+  - name: GV-LOP-020000 — Chi tiết lớp / Tổng quan
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-4861
+  - name: GV-LOP-020000-DK — Chi tiết lớp / Tổng quan
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-15165
+  - name: GV-LOP-010000 — Lớp / Thống kê tổng quan
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=3868-95435
+  - name: GV-LOP-010000-DK — Lớp / Thống kê tổng quan
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4056-149227
+  - name: Class Session Status
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=2425-105717
+teacher_role/class/class_process_requirements.md:
+  figma:
+  - name: GV-LOP-060100 — Chi tiết lớp / Tiêu chuẩn lớp / Trống
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-13208
+  - name: GV-LOP-060100-DK — Chi tiết lớp / Tiêu chuẩn lớp / Trống
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-13367
+  - name: GV-LOP-070100 — Chi tiết lớp / Cuộc họp / Trống
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-13911
+  - name: GV-LOP-070100-DK — Chi tiết lớp / Cuộc họp / Trống
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-14070
+teacher_role/class/class_teaching_requirements.md:
+  figma:
+  - name: GV-LOP-030100 — Chi tiết lớp / Bài học / Buổi học
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-16651
+  - name: GV-LOP-030100-DK — Chi tiết lớp / Bài học / Buổi học
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-30255
+  - name: GV-LOP-030110 — Chi tiết lớp / Bài học / Buổi học / Dặn dò trước buổi học
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-220948
+  - name: GV-LOP-030111 — Chi tiết lớp / Bài học / Buổi học / Dặn dò đã đọc
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-222200
+  - name: GV-LOP-030120 — Chi tiết lớp / Bài học / Popup chọn lịch dạy
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-222984
+  - name: GV-LOP-030121 — Chi tiết lớp / Bài học / Popup bắt đầu buổi học
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-223041
+  - name: GV-LOP-030130 — Chi tiết lớp / Bài học / Bước 1 Điểm danh
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-223076
+  - name: GV-LOP-030131 — Chi tiết lớp / Bài học / Popup kết thúc buổi học
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-224358
+  - name: GV-LOP-030141 — Chi tiết lớp / Bài học / Popup hoàn thành buổi học
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-224370
+  - name: GV-LOP-030161 — Chi tiết lớp / Bài học / Popup tiếp tục buổi học
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-224382
+  - name: GV-LOP-030140 — Chi tiết lớp / Bài học / Bước 2 Ghi chú buổi học
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-224394
+  - name: GV-LOP-030150 — Chi tiết lớp / Bài học / Buổi học đã kết thúc
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-225250
+  - name: GV-LOP-030160 — Chi tiết lớp / Bài học / Buổi học / Bài đang dạy
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-225685
+  - name: GV-LOP-030170 — Chi tiết lớp / Bài học / Buổi học / Bài chờ hoàn thành
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5292-226685
+  - name: GV-LOP-030200 — Chi tiết lớp / Bài học / Thông tin
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-16967
+  - name: GV-LOP-030200-DK — Chi tiết lớp / Bài học / Thông tin
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-30708
+  - name: GV-LOP-030300 — Chi tiết lớp / Bài học / Nội dung
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-17213
+  - name: GV-LOP-030300-DK — Chi tiết lớp / Bài học / Nội dung
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-31014
+  - name: GV-LOP-030500 — Chi tiết lớp / Bài học / Kiến thức
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-17763
+  - name: GV-LOP-030500-DK — Chi tiết lớp / Bài học / Kiến thức
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-31626
+  - name: GV-LOP-030400 — Chi tiết lớp / Bài học / Tài nguyên
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-17511
+  - name: GV-LOP-030400-DK — Chi tiết lớp / Bài học / Tài nguyên
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-31307
+  - name: GV-LOP-040100 — Chi tiết lớp / Bài tập và Kiểm tra / BTVN
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-85925
+  - name: GV-LOP-040100-DK — Chi tiết lớp / Bài tập và Kiểm tra / BTVN
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-99880
+  - name: GV-LOP-040200 — Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-86231
+  - name: GV-LOP-040200-DK — Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4324-100236
+  - name: GV-LOP-050100 — Chi tiết lớp / Tự học / Trống
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-7910
+  - name: GV-LOP-050100-DK — Chi tiết lớp / Tự học / Trống
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4333-8502
+  - name: Trạng thái đi học
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=2456-110608
+teacher_role/class_list/class_list_requirements.md:
+  figma:
+  - name: GV-LOP-010000 — Lớp / Thống kê tổng quan
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=3868-95435
+  - name: GV-LOP-010000-DK — Lớp / Thống kê tổng quan
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4056-149227
+teacher_role/history_and_salary/history_and_salary_requirements.md:
+  figma:
+  - name: GV-LS-010000 — Lịch sử & lương / Buổi dạy
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=3868-96982
+  - name: GV-LS-010000-DK — Lịch sử & lương / Buổi dạy
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4056-149555
+  - name: GV-LS-010003 — Lịch sử & lương / KPI
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=3868-102081
+  - name: GV-LS-010003-DK — Lịch sử & lương / KPI
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4056-150017
+  - name: GV-LS-010004 — Lịch sử & lương / OT
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=3868-102573
+  - name: GV-LS-010004-DK — Lịch sử & lương / OT
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4056-150295
+  - name: GV-LS-010010 — Lịch sử & lương / Popup đề xuất tăng lương
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4760-16671
+  - name: GV-LS-010010-DK — Lịch sử & lương / Popup đề xuất tăng lương
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-111626
+  - name: GV-LS-010012 — Lịch sử & lương / Popup đề xuất tăng lương / Chọn lý do
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4814-159271
+  - name: GV-LS-010012-DK — Lịch sử & lương / Popup đề xuất tăng lương / Chọn lý do
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-111721
+  - name: ADM-LGV-020010 — Lương / Đề xuất tăng lương / Popup duyệt đề xuất
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-118050
+  - name: ADM-LGV-020010-DK — Lương / Đề xuất tăng lương / Popup duyệt đề xuất
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-118692
+  - name: GV-LS-010015 — Lịch sử & lương / Popup xác nhận gửi đề xuất
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-106613
+  - name: GV-LS-010015-DK — Lịch sử & lương / Popup xác nhận gửi đề xuất
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-111930
+  - name: GV-LS-010014 — Lịch sử & lương / Đề xuất mới (có thể huỷ)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-105950
+  - name: GV-LS-010014-DK — Lịch sử & lương / Đề xuất mới (có thể huỷ)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-107802
+  - name: GV-LS-010011 — Lịch sử & lương / Đề xuất đang xử lý (không huỷ được)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4760-16739
+  - name: GV-LS-010011-DK — Lịch sử & lương / Đề xuất đang xử lý (không huỷ được)
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-107263
+  - name: GV-LS-010016 — Lịch sử & lương / Popup xác nhận huỷ đề xuất
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-106646
+  - name: GV-LS-010016-DK — Lịch sử & lương / Popup xác nhận huỷ đề xuất
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-111961
+  - name: GV-LS-010013 — Lịch sử & lương / Popup lịch sử đề xuất
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4895-105828
+  - name: GV-LS-010013-DK — Lịch sử & lương / Popup lịch sử đề xuất
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4899-111874
+  - name: '    ├─ LỊCH SỬ VÀ LƯƠNG'
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=3772-93114
+  - name: FLOW giáo viên đề xuất tăng lương
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4760-157911
+  - name: '        └─ ĐỀ XUẤT TĂNG LƯƠNG'
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=4895-105908
+teacher_role/teaching_schedule/teaching_schedule_requirements.md:
+  figma:
+  - name: GV-LD-010000 — Lịch dạy / Xem theo lớp
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5413-46957
+  - name: GV-LD-010000-DK — Lịch dạy / Xem theo lớp
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5425-272113
+  - name: GV-LD-020000 — Lịch dạy / Quản lý đăng ký lịch
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5413-49118
+  - name: GV-LD-020000-DK — Lịch dạy / Quản lý đăng ký lịch
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5425-272722
+  - name: GV-LD-020010 — Lịch dạy / Quản lý đăng ký lịch / Popup đăng ký khung giờ
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5413-49911
+  - name: GV-LD-020010-DK — Lịch dạy / Quản lý đăng ký lịch / Popup đăng ký khung giờ
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5425-274125
+  - name: '    ├─ LỊCH DẠY'
+    url: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=5413-45647

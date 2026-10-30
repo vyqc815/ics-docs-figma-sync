@@ -1,0 +1,40 @@
+<h3>Luồng làm việc</h3>
+<ol>
+  <li><strong>Designer</strong> đặt tên frame theo quy ước <code>ROLE-MENU-MMTTPS — Tên / Tab / Popup / Trạng thái</code>, cập nhật bảng NAVIGATION trên Figma.</li>
+  <li><strong>BA</strong> viết docs và ghi mã màn hình (vd <code>ADM-HV-020310</code>, dải <code>CD-KH-070301</code>–<code>070305</code>). Không cần dán link hay ảnh: mã tự thành link mở đúng prototype.</li>
+  <li><strong>Admin</strong> bấm <em>Đồng bộ › Sync danh sách màn</em> khi NAVIGATION thay đổi, và <em>Kiểm tra UI thay đổi</em> để biết frame nào vừa sửa.</li>
+  <li><strong>Người review</strong> so docs với prototype, admin bấm <em>Đánh dấu đã đồng bộ</em>.</li>
+</ol>
+
+<h3>Mã màn hình</h3>
+<ul>
+  <li>Mã thường mở màn <strong>Light</strong>. Mã có đuôi <code>-DK</code> mở màn <strong>Dark</strong> tương ứng.</li>
+  <li>Bấm mã trong docs: khung Figma bên phải chuyển sang màn đó. Giữ Ctrl/⌘ khi bấm để mở thẳng trong Figma.</li>
+  <li>Mã gạch ngang: không có frame trên Figma (đã đổi tên hoặc xoá).</li>
+</ul>
+
+<h3>Trạng thái tài liệu</h3>
+<table>
+  <tr><th>Màu</th><th>Ý nghĩa</th></tr>
+  <tr><td>🟢 Đồng bộ</td><td>Docs và UI không đổi từ lần đánh dấu gần nhất</td></tr>
+  <tr><td>🟠 Docs đổi</td><td>Docs đã sửa, UI chưa cập nhật theo</td></tr>
+  <tr><td>🔵 UI đổi</td><td>Frame Figma đã sửa, docs chưa cập nhật theo</td></tr>
+  <tr><td>🔴 Cả hai đổi</td><td>Cần review lại toàn bộ</td></tr>
+  <tr><td>⚪ Chưa có mốc</td><td>Chưa ai đánh dấu đồng bộ lần nào</td></tr>
+</table>
+<p>Trạng thái so với <strong>mốc đồng bộ</strong> (lần bấm "Đánh dấu đã đồng bộ"), không so theo ngày sửa.</p>
+
+<h3>Các nút</h3>
+<table>
+  <tr><th>Nút</th><th>Tác dụng</th><th>Quyền</th></tr>
+  <tr><td>Logo góc trái</td><td>Tải lại trang</td><td>Mọi người</td></tr>
+  <tr><td>Màn hình Figma</td><td>Tra cứu toàn bộ mã: gõ tiền tố (vd <code>ADM-HV-02</code>), lọc theo nhóm, loại, trạng thái. Phím <code>/</code> để tìm</td><td>Mọi người</td></tr>
+  <tr><td>⟲ Lịch sử</td><td>Thay đổi docs (git), thay đổi UI, các mốc đồng bộ</td><td>Mọi người</td></tr>
+  <tr><td>« / » trên từng phần</td><td>Thu gọn menu trái, mục lục, khung Figma. Mở lại bằng tab ở mép màn hình</td><td>Mọi người</td></tr>
+  <tr><td>Đường kẻ giữa docs và Figma</td><td>Kéo để đổi độ rộng, nhấn đúp để về mặc định</td><td>Mọi người</td></tr>
+  <tr><td>Ô chọn frame</td><td>Xem lần lượt các frame mà tài liệu nhắc tới. ● là frame đổi từ mốc</td><td>Mọi người</td></tr>
+  <tr><td>Đồng bộ › Sync danh sách màn</td><td>Đọc bảng NAVIGATION: mã, tên, loại, Final, Chưa làm, màn Dark</td><td>Admin</td></tr>
+  <tr><td>Đồng bộ › Kiểm tra UI thay đổi</td><td>Lấy dấu vân tay các frame docs nhắc tới, đánh dấu frame vừa đổi</td><td>Admin</td></tr>
+  <tr><td>Đồng bộ › Build lại site</td><td>Cập nhật khi docs vừa sửa</td><td>Admin</td></tr>
+  <tr><td>Đánh dấu đã đồng bộ</td><td>Ghi mốc: docs và UI hiện tại khớp nhau, kèm tên người đánh dấu</td><td>Admin</td></tr>
+</table>

@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set s = page.sync %}
+{% if s %}
+<div class="sync-bar card sync-{{ s.color }}">
+  <span class="sync-dot"></span>
+  <div class="sync-text">
+    <strong>{{ s.label }}</strong>
+    {% if page.meta.version %}<span class="pill">v{{ page.meta.version }}</span>{% endif %}
+    {% if s.frames %}<span class="pill">{{ s.frames | length }} frame</span>{% endif %}
+    <div class="sync-sub">
+      {% if s.baseline %}Mốc đồng bộ {{ s.baseline.date }} bởi {{ s.baseline.by }}{% else %}Chưa có mốc đồng bộ{% endif %}
+    </div>
+  </div>
+  {% if s.frames and s.status != "synced" %}
+  <button class="btn btn-primary admin-only sync-mark-btn" data-doc="{{ s.path }}">
+    {% include ".icons/material/check-decagram-outline.svg" %}Đánh dấu đã đồng bộ</button>
+  {% endif %}
+  <div class="sync-tools">
+    <button class="tool-btn" data-action="toggle-history" title="Xem lịch sử thay đổi" aria-label="Xem lịch sử thay đổi">
+      {% include ".icons/material/history.svg" %}</button>
+  </div>
+</div>
+{% endif %}
+
+<div class="split {% if s and s.frames %}has-figma{% endif %}">
+  <div class="split-doc card">{{ super() }}</div>
+
+  {% if s %}
+  <div class="split-gutter" title="Kéo để đổi độ rộng, nhấn đúp để về mặc định"></div>
+  <aside class="split-side">
+    <div class="history-panel card">
+      <div class="panel-head">
+        <strong>Lịch sử</strong>
+        <button class="tool-btn" data-action="toggle-history" title="Đóng" aria-label="Đóng">
+          {% include ".icons/material/close.svg" %}</button>
+      </div>
+      {% for h in s.history %}
+      <div class="history-row {% if h.kind == 'baseline' %}is-baseline{% endif %}">
+        <span class="kind kind-{{ h.kind }}">{{ {'docs':'Docs','ui':'UI','baseline':'Mốc'}[h.kind] }}</span>
+        <span class="when">{{ h.date }} · {{ h.who }}</span>
+        <div>{{ h.text }}{% if h.thumb %} · <a href="{{ h.thumb }}" target="_blank">ảnh frame</a>{% endif %}</div>
+      </div>
+      {% else %}
+      <p class="muted">Chưa có lịch sử.</p>
+      {% endfor %}
+    </div>
+
+    {% if s.frames %}
+    <div class="figma-panel card">
+      <div class="panel-head">
+        <select class="figma-select" aria-label="Chọn frame">
+          {% for f in s.frames %}
+          <option value="{{ loop.index0 }}">{% if f.changed %}● {% endif %}{{ f.name }}</option>
+          {% endfor %}
+        </select>
+        <a class="tool-btn figma-open" href="{{ s.frames[0].url }}" target="_blank" title="Mở trong Figma" aria-label="Mở trong Figma">
+          {% include ".icons/material/open-in-new.svg" %}</a>
+        <button class="tool-btn" data-action="toggle-figma" title="Thu gọn Figma" aria-label="Thu gọn Figma">
+          {% include ".icons/material/chevron-double-right.svg" %}</button>
+      </div>
+      <div class="figma-frame is-loading">
+        <div class="figma-loading"><span class="spinner"></span>Đang tải Figma…</div>
+        <iframe title="Figma" allowfullscreen></iframe>
+      </div>
+      <script type="application/json" class="figma-frames">{{ s.frames | tojson }}</script>
+    </div>
+    {% endif %}
+  </aside>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block site_nav %}
+{{ super() }}
+<div class="edge-tabs edge-left">
+  <button class="edge-tab" data-action="toggle-nav" title="Mở menu">{% include ".icons/material/chevron-double-right.svg" %}Menu</button>
+</div>
+<div class="edge-tabs edge-right">
+  {% if page.sync and page.sync.frames %}
+  <button class="edge-tab edge-figma" data-action="toggle-figma" title="Mở Figma">{% include ".icons/material/chevron-double-left.svg" %}Figma</button>
+  {% endif %}
+  <button class="edge-tab edge-toc" data-action="toggle-toc" title="Mở mục lục">{% include ".icons/material/chevron-double-left.svg" %}Mục lục</button>
+</div>
+<template id="tpl-collapse-nav"><button class="tool-btn collapse-btn" data-action="toggle-nav" title="Thu gọn menu" aria-label="Thu gọn menu">{% include ".icons/material/chevron-double-left.svg" %}</button></template>
+<template id="tpl-collapse-toc"><button class="tool-btn collapse-btn" data-action="toggle-toc" title="Thu gọn mục lục" aria-label="Thu gọn mục lục">{% include ".icons/material/chevron-double-right.svg" %}</button></template>
+{% endblock %}
+
+{% block scripts %}
+<script>window.SYNC_MAP = {{ config.extra.sync_map | tojson }};</script>
+{{ super() }}
+{% endblock %}
