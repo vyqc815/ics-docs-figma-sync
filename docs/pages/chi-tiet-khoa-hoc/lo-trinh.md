@@ -5,12 +5,12 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-020200 — Chi tiết khoá học / Lộ trình (`1219:8317`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-khoa-hoc/lo-trinh`  
 > **Khung thiết kế:** 1440 × 1535.75 px  
-> **Xuất lúc:** 2026-11-01T15:48:52.263Z  
+> **Xuất lúc:** 2026-11-01T16:12:05.937Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-020200/page-spec.json`
 
 ## 1. Tổng quan
 
-Trang rộng **1440px**, cao **1535.75px**, gồm 1134 layer: 184 đoạn chữ, 0 ảnh, 117 icon, 324 component instance.
+Trang rộng **1440px**, cao **1535.75px**, gồm 1134 layer (tính cả frame gốc): 184 đoạn chữ, 0 ảnh, 117 icon, 324 component instance.
 
 Nền trang: `#ffffff` (color/neutral/white).
 
@@ -76,1173 +76,1174 @@ Nền trang: `#ffffff` (color/neutral/white).
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| — | Unbounded | 17 / 1.5 | 500 | 0 | #334155 (color/text/primary) | 1 | “Nội dung buổi học” |
-| — | Afacad | 15 / 1.25 | 700 upper | 0 | #e65100 | 18 | “Số buổi 05/06” |
-| `Body/15/Medium` | Afacad | 15 / 1.25 | 500 | 0 | #334155 (color/text/primary) | 17 | “Nhập Môn Tiếng Trung (HSK1) · HK I” |
+| — | Unbounded | 17 / 1.5 (25.5px) | 500 | 0 | #334155 (color/text/primary) | 1 | “Nội dung buổi học” |
+| — | Afacad | 15 / 1.25 (18.75px) | 700 · case upper | 0 | #e65100 | 18 | “Số buổi 05/06” |
+| `Body/15/Medium` | Afacad | 15 / 1.25 (18.75px) | 500 | 0 | #334155 (color/text/primary) | 17 | “Nhập Môn Tiếng Trung (HSK1) · HK I” |
 | — | Afacad | 15 / auto | 700 | 0 | #334155 | 17 | “1” |
-| — | Noto Sans SC | 15 / 1.25 | 700 upper | 0 | #334155 (color/text/primary) | 15 | “你好” |
-| — | Afacad | 15 / 1.25 | 500 | 0 | #64748b (color/text/secondary) | 15 | “Chào hỏi” |
-| `Label/15/Bold` | Afacad | 15 / 1.25 | 700 upper | 0 | #64748b (color/text/secondary) | 14 | “BÀI HỌC” |
+| — | Noto Sans SC | 15 / 1.25 (18.75px) | 700 · case upper | 0 | #334155 (color/text/primary) | 15 | “你好” |
+| — | Afacad | 15 / 1.25 (18.75px) | 500 | 0 | #64748b (color/text/secondary) | 15 | “Chào hỏi” |
+| `Label/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 · case upper | 0 | #64748b (color/text/secondary) | 14 | “BÀI HỌC” |
 | — | Afacad | 15 / 16px | 500 | 0 | #2d9732 | 12 | “01:30:00” |
-| `Label/15/Bold` | Afacad | 15 / 1.25 | 700 upper | 0 | #334155 (color/text/primary) | 4 | “[ 90 phút ]” |
-| — | Afacad | 15 / 1.25 | 700 upper | 0 | #2d9732 | 4 | “Số buổi 01/01” |
-| — | Afacad | 15 / 1.25 | 400 | 0 | #334155 (color/text/primary) | 3 | “ 1” |
+| `Label/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 · case upper | 0 | #334155 (color/text/primary) | 4 | “[ 90 phút ]” |
+| — | Afacad | 15 / 1.25 (18.75px) | 700 · case upper | 0 | #2d9732 | 4 | “Số buổi 01/01” |
+| — | Afacad | 15 / 1.25 (18.75px) | 400 | 0 | #334155 (color/text/primary) | 3 | “ 1” |
 | — | Afacad | 15 / 16px | 500 | 0 | #e65100 | 3 | “00:50:00” |
-| — | Noto Sans SC | 15 / 1.25 | 400 | 0 | #334155 (color/text/primary) | 2 | “期中考试” |
+| — | Noto Sans SC | 15 / 1.25 (18.75px) | 400 | 0 | #334155 (color/text/primary) | 2 | “期中考试” |
 | — | Afacad | 15 / auto | 700 | 0 | #64748b | 1 | “STT” |
 | — | Afacad | 15 / 16px | 500 | 0 | #ed4038 | 1 | “01:35:00” |
 | — | Afacad | 15 / 16px | 500 | 0 | #cbd5e1 (color/text/muted) | 1 | “00:00:00” |
-| — | Afacad | 15 / 1.25 | 400 italic | 0 | #cccccc (color/extended/cccccc) | 1 | “Nhập nhanh tên bài học — nhấn Enter để …” |
+| — | Afacad | 15 / 1.25 (18.75px) | 400 italic | 0 | #cccccc (color/extended/cccccc) | 1 | “Nhập nhanh tên bài học — nhấn Enter để …” |
 | — | Unbounded | 14 / auto | 500 | 0 | #ffffff (org/dac-nhan/fg) | 1 | “Đắc Nhân” |
-| `Body/13/Bold` | Afacad | 13 / 1.25 | 700 | 0 | #2d9732 | 17 | “1343272” |
+| `Body/13/Bold` | Afacad | 13 / 1.25 (16.25px) | 700 | 0 | #2d9732 | 17 | “1343272” |
 | — | Afacad | 13 / 16px | 700 | 0 | #e65100 | 9 | “Chưa đủ buổi” |
 | — | Afacad | 13 / 17px | 600 | 0 | #64748b | 3 | “2” |
 | — | Afacad | 13 / 16px | 700 | 0 | #2d9732 | 2 | “Đủ buổi” |
-| `Body/13/Bold` | Afacad | 13 / 1.25 | 700 | 0 | #0f766e | 1 | “CD” |
-| — | Unbounded | 13 / 1.25 | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Học Liệu Ngôn Ngữ” |
-| — | Afacad | 13 / 1.25 | 500 | 0 | #ffffff (color/neutral/white) | 1 | “CD.dacnhan@gmail.com” |
+| `Body/13/Bold` | Afacad | 13 / 1.25 (16.25px) | 700 | 0 | #0f766e | 1 | “CD” |
+| — | Unbounded | 13 / 1.25 (16.25px) | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Học Liệu Ngôn Ngữ” |
+| — | Afacad | 13 / 1.25 (16.25px) | 500 | 0 | #ffffff (color/neutral/white) | 1 | “CD.dacnhan@gmail.com” |
 | — | Afacad | 13 / auto | 400 | 0 | #94a3b8 | 1 | “Hiển thị 1–17 trong 56 buổi học” |
 | — | Afacad | 13 / 17px | 600 | 0 | #ffffff | 1 | “1” |
-| — | Unbounded | 12 / 1.25 | 600 title | 0 | #ffffff (color/neutral/white) | 4 | “Quy trình” |
-| — | Unbounded | 11 / 1.25 | 600 title | 0 | #ffffff (color/neutral/white) | 18 | “Kiến thức (S1) ” |
+| — | Unbounded | 12 / 1.25 (15px) | 600 · case title | 0 | #ffffff (color/neutral/white) | 4 | “Quy trình” |
+| — | Unbounded | 11 / 1.25 (13.75px) | 600 · case title | 0 | #ffffff (color/neutral/white) | 18 | “Kiến thức (S1) ” |
 
 ## 4. Cấu trúc chi tiết
 
-Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
+Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Dòng đầu tiên là chính frame trang (gốc). Tên layer nằm trong `**…**`, chữ hiển thị nằm trong `“…”`, giá trị CSS nguyên văn nằm trong backtick: dấu `·` hay `—` **bên trong** các cặp đó là nội dung, chỉ dấu ` · ` bên ngoài mới ngăn cách các trường. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
 
-- [khối] **Main - WorkspaceContainer** — 1140×1471.75 · @ (300, 64) abs · column gap 12 pad 24 24 24 24 · bg #ffffff (color/neutral/white) · clip `1219:8398`
-  - [khối] **Section - Top Action Bar** — 1092×33.75 [FILL×HUG] · @ (24, 24) flow · row gap 16 align CENTER · bg #ffffff (color/neutral/white) `1219:8399`
-    - [khối] **Container** — 404.25×26 [HUG×HUG] · @ (0, 3.88) flow · row align CENTER `1219:8400`
-      - [khối] **Heading 1** — 184×26 [HUG×HUG] · @ (0, 0) flow · column `1219:8401`
-        - [chữ] “Nội dung buổi học” — 184×26 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/1.5 500 #334155 (color/text/primary) · no-wrap `1219:8402`
-      - [khối] **Margin** — 220.25×24.75 · @ (184, 0.63) flow · column pad 0 0 0 12 `1219:8403`
-    - [khối] **Utility Actions** — 488.51×33.75 · @ (420.25, 0) flow `1219:8406`
-  - [khối] **Section - MatrixTableView** — 1092×1378 [FILL×HUG] · @ (24, 69.75) flow · column gap 12 · bg rgba(248, 250, 252, 0.5) · clip `1219:8407`
-    - [khối] **Table** — 2432×1269 [FIXED×HUG] · @ (0, 0) flow · column gap -1 · bg #ffffff (color/neutral/white) · radius 16px · shadow inset 0 0 0 1px #e2e8f0 · clip `1219:8408`
-      - [khối] **Table Header with updated 3-line columns** — 2432×127 [FILL×HUG] · @ (0, 0) flow · column · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `1219:8409`
-        - [khối] **Row** — 2432×126 · @ (0, 0) flow · bg #f8fafc (color/extended/f8fafc) · shadow inset 0 -1px 0 0 #e2e8f0 `1219:8410`
-          - [khối] **Cell - Column 2: Semester / Ky** — 284×126 · @ (380, 0) abs · column pad 43 12 41 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8411`
-            - [chữ] “KỲ” — 16×19 [HUG×HUG] · @ (133.5, 43) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8412`
-          - [khối] **Cell - Column 3: Duration / Thoi gian** — 126×126 · @ (664, 0) abs · column pad 33.5 29 31.5 30 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:8413`
-            - [chữ] “THỜI GIAN ” — 66×19 [HUG×HUG] · @ (30, 33.5) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8414`
-            - [chữ] “[ 90 phút ]” — 67×19 [HUG×HUG] · @ (29.5, 52.5) flow · Afacad 15/1.25 700 #334155 (color/text/primary) case upper · text-align center · no-wrap `2751:43941`
-          - [khối] **Cell - Matrix Skill Header 1: KHAI GIẢNG** — 141×126 · @ (790, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8415`
-            - [khối] **Container** — 116×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8418`
-              - [chữ] “Số buổi 01/01” — 93×19 [HUG×HUG] · @ (11.5, 0) flow · Afacad 15/1.25 700 #2d9732 case upper · text-align center · no-wrap `1219:8419`
-              - [chữ] “[ 60 phút ]” — 67×19 [HUG×HUG] · @ (24.5, 19) flow · Afacad 15/1.25 700 #2d9732 case upper · text-align center · no-wrap `2619:202206`
-            - [khối] **Container** — 116×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8420`
-              - [chữ] “KHAI GIẢNG” — 74×19 [HUG×HUG] · @ (21, 0) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8421`
-            - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Đủ buổi, Size=S⟩ — 72×22 [HUG×HUG] · @ (34, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #f0ffef · radius 6px · border 1px solid #2d9732 `2808:53235`
-              - [khối] **Container** — 58×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53235;2808:53188`
-                - [icon] **Leading** ⟨Action Icon: Icon=Check Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53235-2808-53189.svg `I2808:53235;2808:53189`
-                - [khối] **Container** — 40×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53235;2808:53190`
-                  - [chữ] “Đủ buổi” — 40×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I2808:53235;2808:53191`
-          - [khối] **Cell - Matrix Skill Header 2: PHÁT ÂM** — 143×126 · @ (931, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8422`
-            - [khối] **Container** — 118×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8425`
-              - [chữ] “Số buổi 05/06” — 93×19 [HUG×HUG] · @ (12.5, 0) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `1219:8426`
-              - [chữ] “[ 45 phút ]” — 67×19 [HUG×HUG] · @ (25.5, 19) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `2619:202207`
-            - [khối] **Container** — 118×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8427`
-              - [chữ] “PHÁT ÂM” — 54×19 [HUG×HUG] · @ (32, 0) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8428`
-            - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20.5, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53251`
-              - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53251;2808:53211`
-                - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53251-2808-53212.svg `I2808:53251;2808:53212`
-                - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53251;2808:53213`
-                  - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53251;2808:53214`
-          - [khối] **Cell - Matrix Skill Header 3: CHỦ ĐỀ GIAO TIẾP** — 153×126 · @ (1074, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8429`
-            - [khối] **Container** — 128×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8432`
-              - [chữ] “Số buổi 03/12” — 93×19 [HUG×HUG] · @ (17.5, 0) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `1219:8433`
-              - [chữ] “[ 50 phút ]” — 67×19 [HUG×HUG] · @ (30.5, 19) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `2619:202208`
-            - [khối] **Container** — 128×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8434`
-              - [chữ] “CHỦ ĐỀ GIAO TIẾP” — 111×19 [HUG×HUG] · @ (8.5, 0) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8435`
-            - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (25.5, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53258`
-              - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53258;2808:53211`
-                - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53258-2808-53212.svg `I2808:53258;2808:53212`
-                - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53258;2808:53213`
-                  - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53258;2808:53214`
-          - [khối] **Cell - Matrix Skill Header 4: MINI TEST PHÁT ÂM** — 155×126 · @ (1227, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8436`
-            - [khối] **Container** — 130×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8439`
-              - [chữ] “Số buổi 02/02” — 93×19 [HUG×HUG] · @ (18.5, 0) flow · Afacad 15/1.25 700 #2d9732 case upper · text-align center · no-wrap `1219:8440`
-              - [chữ] “[ 30 phút ]” — 67×19 [HUG×HUG] · @ (31.5, 19) flow · Afacad 15/1.25 700 #2d9732 case upper · text-align center · no-wrap `2619:202209`
-            - [khối] **Container** — 130×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8441`
-              - [chữ] “MINI TEST PHÁT ÂM” — 116×19 [HUG×HUG] · @ (7, 0) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8442`
-            - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Đủ buổi, Size=S⟩ — 72×22 [HUG×HUG] · @ (41, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #f0ffef · radius 6px · border 1px solid #2d9732 `2808:53274`
-              - [khối] **Container** — 58×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53274;2808:53188`
-                - [icon] **Leading** ⟨Action Icon: Icon=Check Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53274-2808-53189.svg `I2808:53274;2808:53189`
-                - [khối] **Container** — 40×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53274;2808:53190`
-                  - [chữ] “Đủ buổi” — 40×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I2808:53274;2808:53191`
-          - [khối] **Cell - Matrix Skill Header 5: TỔNG ÔN TẬP** — 141×126 · @ (1382, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8443`
-            - [khối] **Container** — 116×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8446`
-              - [chữ] “Số buổi 02/06” — 93×19 [HUG×HUG] · @ (11.5, 0) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `1219:8447`
-              - [chữ] “[ 60 phút ]” — 67×19 [HUG×HUG] · @ (24.5, 19) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `2619:202210`
-            - [khối] **Container** — 116×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8448`
-              - [chữ] “TỔNG ÔN TẬP” — 86×19 [HUG×HUG] · @ (15, 0) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8449`
-            - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (19.5, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53290`
-              - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53290;2808:53211`
-                - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53290-2808-53212.svg `I2808:53290;2808:53212`
-                - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53290;2808:53213`
-                  - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53290;2808:53214`
-          - [khối] **Cell - Matrix Skill Header 6: NGỮ PHÁP** — 142×126 · @ (1523, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8450`
-            - [khối] **Container** — 117×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8453`
-              - [chữ] “Số buổi 03/20” — 93×19 [HUG×HUG] · @ (12, 0) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `1219:8454`
-              - [chữ] “[ 50 phút ]” — 67×19 [HUG×HUG] · @ (25, 19) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `2619:202211`
-            - [khối] **Container** — 117×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8455`
-              - [chữ] “NGỮ PHÁP” — 65×19 [HUG×HUG] · @ (26, 0) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8456`
-            - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53306`
-              - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53306;2808:53211`
-                - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53306-2808-53212.svg `I2808:53306;2808:53212`
-                - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53306;2808:53213`
-                  - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53306;2808:53214`
-          - [khối] **Cell - Matrix Skill Header 7: TỪ VỰNG** — 142×126 · @ (1665, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8457`
-            - [khối] **Container** — 117×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8460`
-              - [chữ] “Số buổi 03/24” — 93×19 [HUG×HUG] · @ (12, 0) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `1219:8461`
-              - [chữ] “[ 40 phút ]” — 67×19 [HUG×HUG] · @ (25, 19) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `2619:202212`
-            - [khối] **Container** — 117×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8462`
-              - [chữ] “TỪ VỰNG” — 58×19 [HUG×HUG] · @ (29.5, 0) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8463`
-            - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53322`
-              - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53322;2808:53211`
-                - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53322-2808-53212.svg `I2808:53322;2808:53212`
-                - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53322;2808:53213`
-                  - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53322;2808:53214`
-          - [khối] **Cell - Matrix Skill Header 8: NGHE HIỂU** — 142×126 · @ (1807, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8464`
-            - [khối] **Container** — 117×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8467`
-              - [chữ] “Số buổi 07/16” — 93×19 [HUG×HUG] · @ (12, 0) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `1219:8468`
-              - [chữ] “[ 45 phút ]” — 67×19 [HUG×HUG] · @ (25, 19) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `2619:202213`
-            - [khối] **Container** — 117×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8469`
-              - [chữ] “NGHE HIỂU” — 65×19 [HUG×HUG] · @ (26, 0) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8470`
-            - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53338`
-              - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53338;2808:53211`
-                - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53338-2808-53212.svg `I2808:53338;2808:53212`
-                - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53338;2808:53213`
-                  - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53338;2808:53214`
-          - [khối] **Cell - Matrix Skill Header 9: ĐỌC HIỂU** — 142×126 · @ (1949, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8471`
-            - [khối] **Container** — 117×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8474`
-              - [chữ] “Số buổi 02/12” — 93×19 [HUG×HUG] · @ (12, 0) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `1219:8475`
-              - [chữ] “[ 45 phút ]” — 67×19 [HUG×HUG] · @ (25, 19) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `2619:202214`
-            - [khối] **Container** — 117×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8476`
-              - [chữ] “ĐỌC HIỂU” — 61×19 [HUG×HUG] · @ (28, 0) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8477`
-            - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53354`
-              - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53354;2808:53211`
-                - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53354-2808-53212.svg `I2808:53354;2808:53212`
-                - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53354;2808:53213`
-                  - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53354;2808:53214`
-          - [khối] **Cell - Matrix Skill Header 10: VIẾT** — 141×126 · @ (2091, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER `1219:8478`
-            - [khối] **Container** — 117×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8481`
-              - [chữ] “Số buổi 01/08” — 93×19 [HUG×HUG] · @ (12, 0) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `1219:8482`
-              - [chữ] “[ 40 phút ]” — 67×19 [HUG×HUG] · @ (25, 19) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `2619:202215`
-            - [khối] **Container** — 117×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8483`
-              - [chữ] “VIẾT” — 27×19 [HUG×HUG] · @ (45, 0) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8484`
-            - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53370`
-              - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53370;2808:53211`
-                - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53370-2808-53212.svg `I2808:53370;2808:53212`
-                - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53370;2808:53213`
-                  - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53370;2808:53214`
-          - [khối] **Cell - Matrix Skill Header 11: MINI TEST NGỮ PHÁP + TỪ VỰNG + SỬA TEST** — 200×126 · @ (2232, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER `6518:336996`
-            - [khối] **Container** — 176×38 [FILL×HUG] · @ (12, 12) flow · column align CENTER `6518:336997`
-              - [chữ] “Số buổi 00/03” — 93×19 [HUG×HUG] · @ (41.5, 0) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `6518:336998`
-              - [chữ] “[ 50 phút ]” — 67×19 [HUG×HUG] · @ (54.5, 19) flow · Afacad 15/1.25 700 #e65100 case upper · text-align center · no-wrap `6518:336999`
-            - [khối] **Container** — 176×38 [FILL×HUG] · @ (12, 52) flow · column align CENTER `6518:337000`
-              - [chữ] “MINI TEST NGỮ PHÁP + TỪ VỰNG + SỬA TEST” — 176×38 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · text-align center `6518:337001`
-            - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (49.5, 92) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `6518:337002`
-              - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I6518:337002;2808:53211`
-                - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I6518-337002-2808-53212.svg `I6518:337002;2808:53212`
-                - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I6518:337002;2808:53213`
-                  - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I6518:337002;2808:53214`
-          - [khối] **Cell - Sticky Left Column: Lesson Name** — 324×126 · @ (56, 0) abs · column pad 43 16 41 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8485`
-            - [hình] **Cell - Sticky Left Column: Lesson Name:shadow** — 324×126 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8486`
-            - [chữ] “BÀI HỌC” — 52×19 [HUG×HUG] · @ (24, 43) flow · Afacad 15/1.25 700 #64748b (color/text/secondary) case upper · no-wrap `1219:8487`
-          - [khối] **Cell - Sticky Left Column: STT** — 56×126 · @ (0, 0) abs · row pad 43 0 12.5 16 justify CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53413`
-            - [chữ] “STT” — 39×20 [FILL×HUG] · @ (16, 43) flow · Afacad 15/auto 700 #64748b · text-align center `2808:53414`
-      - [khối] **Table Body with Checkbox UI cells** — 2432×1143 [FILL×HUG] · @ (0, 126) flow · column · bg #ffffff (color/neutral/white) `1219:8488`
-        - [khối] **Row 1** — 2432×63 · @ (0, 0) flow · bg #ffffff (color/neutral/white) · shadow inset 0 -1px 0 0 #f1f5f9 `1219:8489`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8490`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39141`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39141;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39141;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39141;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39141;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39141-2015-36012.svg `I2015:39141;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:8497`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53136`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53136;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53136;2808:53130`
-          - [icon] **Data - 10 Checkbox Cells** — 141×66 · @ (790, -0.44) abs · file assets/data-10-checkbox-cells-1219-8501.svg `1219:8501`
-          - [khối] **Data** — 143×66 · @ (931, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8506`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8507`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1823`
-          - [khối] **Data** — 153×66 · @ (1074, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8511`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8512`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1825`
-          - [icon] **Data** — 155×66 · @ (1227, -0.44) abs · file assets/data-1219-8514.svg `1219:8514`
-          - [khối] **Data** — 141×66 · @ (1382, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8517`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8518`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1827`
-          - [khối] **Data** — 142×66 · @ (1523, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8520`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8521`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1828`
-          - [khối] **Data** — 142×66 · @ (1665, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8525`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8526`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1830`
-          - [khối] **Data** — 142×66 · @ (1807, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8530`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8531`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1832`
-          - [khối] **Data** — 142×66 · @ (1949, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8533`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8534`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1833`
-          - [khối] **Data** — 141×63 · @ (2091, -0.44) abs · row justify CENTER align CENTER `1219:8536`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336960`
-          - [khối] **Data** — 200×63 · @ (2232, -0.44) abs · row justify CENTER align CENTER `6518:337017`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337018`
-          - [khối] **Data · Hover** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #fff5ec (color/extended/fff5ec) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8538`
-            - [hình] **Data:shadow** — 324×72 · @ (0, 0) abs · bg #fff5ec (color/extended/fff5ec) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `3004:75118`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg #ffffff · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8539`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8540`
-              - [khối] **Container** — 54×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8544`
-                - [khối] **Container** — 54×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8545`
-                  - [chữ] “你好” — 30×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:8546`
-                - [khối] **Container** — 54×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8547`
-                  - [chữ] “Chào hỏi” — 54×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:8548`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53416`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53466.svg `2808:53466`
-            - [chữ] “1” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53417`
-        - [khối] **Row 2** — 2432×98 · @ (0, 63) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:8549`
-          - [khối] **Data** — 284×98 · @ (380, 0) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8550`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 34) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39152`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39152;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39152;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39152;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39152;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39152-2015-36012.svg `I2015:39152;2015:36012`
-          - [khối] **Data** — 126×98 · @ (664, 0) abs · column pad 13 15 13 16 justify CENTER align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:8557`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 36) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53139`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53139;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53139;2808:53130`
-          - [khối] **Data - 10 Checkboxes** — 141×98 · @ (790, 0) abs · column pad 21 8 21 8 justify CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8561`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8562`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1834`
-          - [khối] **Data** — 143×98 · @ (931, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8564`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8565`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1835`
-          - [khối] **Data** — 153×98 · @ (1074, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8567`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8568`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1836`
-          - [icon] **Data** — 155×98 · @ (1227, 0) abs · file assets/data-1219-8570.svg `1219:8570`
-          - [icon] **Data** — 141×98 · @ (1382, 0) abs · file assets/data-1219-8575.svg `1219:8575`
-          - [khối] **Data** — 142×98 · @ (1523, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8580`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8581`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1841`
-          - [khối] **Data** — 142×98 · @ (1665, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8583`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8584`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1842`
-          - [khối] **Data** — 142×98 · @ (1807, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8586`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8587`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1843`
-          - [khối] **Data** — 142×98 · @ (1949, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8591`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8592`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1845`
-          - [khối] **Data** — 141×98 · @ (2091, 0) abs · row justify CENTER align CENTER `1219:8596`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 37) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2409:144837`
-          - [khối] **Data** — 200×98 · @ (2232, 0) abs · row justify CENTER align CENTER `6518:337019`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 37) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337020`
-          - [khối] **Data · Đang chỉnh sửa tên** — 324×98 · @ (56, 0) abs · column pad 12 12 12 24 justify CENTER · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8600`
-            - [hình] **Data:shadow** — 324×98 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8601`
-            - [khối] **Edit Fields** — 287×79 [FILL×HUG] · @ (24, 9.5) flow · column gap 8 · clip `2857:58678`
-              - [instance] **Input · Tên bài học** ⟨Atom/Input: Loại=Gift code, Text=期中考试 1, State=Sửa trực tiếp, Kiểu=S⟩ — 287×34 [FILL×HUG] · @ (0, 0) flow · row pad 8 12 8 12 justify CENTER · bg #fff5ec (color/extended/fff5ec) · radius 8px · clip `2857:58679`
-                - [khối] **Container** — 263×16 [FILL×FIXED] · @ (12, 8) flow · row gap 1 align CENTER · clip `I2857:58679;3004:75120`
-                  - [chữ] “期中考试 1” — 71×19 [HUG×FILL] · @ (0, -1.5) flow · runs: “期中考试” Noto Sans SC 15/1.25 400 #334155 (color/text/primary); “ 1” Afacad 15/1.25 400 #334155 (color/text/primary) · no-wrap `I2857:58679;3004:75121`
-                  - [hình] **Rectangle 5747** — 1×16 · @ (72, 0) flow · bg #e65100 (color/brand/orange) `I2857:58679;3004:75122`
-              - [instance] **Input · Mô tả** ⟨Atom/Input: Loại=Gift code, Text=Kiểm tra giữa kỳ 1, State=Text, Kiểu=S⟩ — 287×37 [FILL×HUG] · @ (0, 42) flow · row pad 8 12 8 12 justify CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `2857:58683`
-                - [khối] **Container** — 261×19 [FILL×HUG] · @ (13, 9) flow · column · clip `I2857:58683;2808:42228`
-                  - [chữ] “Kiểm tra giữa kỳ 1” — 261×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 400 #334155 (color/text/primary) · truncate 1 lines `I2857:58683;2808:42229`
-          - [khối] **Data - STT** — 56×98 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53418`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 40) flow · file assets/drag-handle-2808-53468.svg `2808:53468`
-            - [chữ] “2” — 37×20 [FILL×HUG] · @ (18, 39) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53419`
-        - [khối] **Row 3** — 2432×98 · @ (0, 161) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:8611`
-          - [khối] **Data** — 284×98 · @ (380, 0) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8612`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 34) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39163`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39163;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39163;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39163;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39163;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39163-2015-36012.svg `I2015:39163;2015:36012`
-          - [khối] **Data** — 126×98 · @ (664, 0) abs · column pad 13 15 13 16 justify CENTER align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:8619`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 36) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53142`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53142;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53142;2808:53130`
-          - [khối] **Data** — 141×98 · @ (790, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8623`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8624`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1847`
-          - [icon] **Data** — 143×98 · @ (931, 0) abs · file assets/data-1219-8626.svg `1219:8626`
-          - [khối] **Data** — 153×98 · @ (1074, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8631`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8632`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1850`
-          - [khối] **Data** — 155×98 · @ (1227, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8636`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8637`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1852`
-          - [khối] **Data** — 141×98 · @ (1382, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8639`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8640`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1853`
-          - [khối] **Data** — 142×98 · @ (1523, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8642`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8643`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1854`
-          - [khối] **Data** — 142×98 · @ (1665, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8645`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8646`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1855`
-          - [icon] **Data** — 142×98 · @ (1807, 0) abs · file assets/data-1219-8650.svg `1219:8650`
-          - [khối] **Data** — 142×98 · @ (1949, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8653`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8654`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1858`
-          - [khối] **Data** — 141×98 · @ (2091, 0) abs · row justify CENTER align CENTER `1219:8656`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 37) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336961`
-          - [khối] **Data** — 200×98 · @ (2232, 0) abs · row justify CENTER align CENTER `6518:337021`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 37) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337022`
-          - [khối] **Data · Đang chỉnh sửa mô tả** — 324×98 · @ (56, 0) abs · column pad 12 12 12 24 justify CENTER · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8658`
-            - [hình] **Data:shadow** — 324×98 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8659`
-            - [khối] **Edit Fields** — 287×79 [FILL×HUG] · @ (24, 9.5) flow · column gap 8 · clip `2857:58686`
-              - [instance] **Input · Tên bài học** ⟨Atom/Input: Loại=Gift code, Text=单韵母, State=Text, Kiểu=S⟩ — 287×37 [FILL×HUG] · @ (0, 0) flow · row pad 8 12 8 12 justify CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `2857:58687`
-                - [khối] **Container** — 261×19 [FILL×HUG] · @ (13, 9) flow · column · clip `I2857:58687;2808:42228`
-                  - [chữ] “单韵母” — 261×19 [FILL×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 400 #334155 (color/text/primary) · truncate 1 lines `I2857:58687;2808:42229`
-              - [instance] **Input · Mô tả** ⟨Atom/Input: Loại=Gift code, Text=Vận mẫu đơn, State=Sửa trực tiếp, Kiểu=S⟩ — 287×34 [FILL×HUG] · @ (0, 45) flow · row pad 8 12 8 12 justify CENTER · bg #fff5ec (color/extended/fff5ec) · radius 8px · clip `2857:58690`
-                - [khối] **Container** — 263×16 [FILL×FIXED] · @ (12, 8) flow · row gap 1 align CENTER · clip `I2857:58690;3004:75120`
-                  - [chữ] “Vận mẫu đơn” — 80×19 [HUG×FILL] · @ (0, -1.5) flow · Afacad 15/1.25 400 #334155 (color/text/primary) · no-wrap `I2857:58690;3004:75121`
-                  - [hình] **Rectangle 5747** — 1×16 · @ (81, 0) flow · bg #e65100 (color/brand/orange) `I2857:58690;3004:75122`
-          - [khối] **Data - STT** — 56×98 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53420`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 40) flow · file assets/drag-handle-2808-53470.svg `2808:53470`
-            - [chữ] “3” — 37×20 [FILL×HUG] · @ (18, 39) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53421`
-        - [khối] **Row 4** — 2432×64 · @ (0, 259) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:8669`
-          - [khối] **Data** — 284×64 · @ (380, 0.41) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8670`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 17) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39174`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39174;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39174;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39174;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39174;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39174-2015-36012.svg `I2015:39174;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, 0.41) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:8677`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53145`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53145;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53145;2808:53130`
-          - [khối] **Data** — 141×66 · @ (790, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8681`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8682`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1859`
-          - [icon] **Data** — 143×66 · @ (931, 0.36) abs · file assets/data-1219-8684.svg `1219:8684`
-          - [khối] **Data** — 153×66 · @ (1074, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8689`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8690`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1862`
-          - [khối] **Data** — 155×66 · @ (1227, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8692`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8693`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1863`
-          - [khối] **Data** — 141×66 · @ (1382, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8697`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8698`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1865`
-          - [khối] **Data** — 142×66 · @ (1523, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8700`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8701`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1866`
-          - [khối] **Data** — 142×66 · @ (1665, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8703`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8704`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1867`
-          - [icon] **Data** — 142×66 · @ (1807, 0.36) abs · file assets/data-1219-8708.svg `1219:8708`
-          - [khối] **Data** — 142×66 · @ (1949, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8711`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8712`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1870`
-          - [khối] **Data** — 141×63 · @ (2091, 0.36) abs · row justify CENTER align CENTER `1219:8714`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336962`
-          - [khối] **Data** — 200×63 · @ (2232, 0.36) abs · row justify CENTER align CENTER `6518:337023`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337024`
-          - [khối] **Data** — 324×72 · @ (56, 0.41) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8716`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8717`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8718`
-              - [khối] **Container** — 77×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8722`
-                - [khối] **Container** — 77×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8723`
-                  - [chữ] “复韵母” — 45×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:8724`
-                - [khối] **Container** — 77×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8725`
-                  - [chữ] “Vận mẫu kép” — 77×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:8726`
-          - [khối] **Data - STT** — 56×64 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53422`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 23) flow · file assets/drag-handle-2808-53472.svg `2808:53472`
-            - [chữ] “4” — 37×20 [FILL×HUG] · @ (18, 22) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53423`
-        - [khối] **Row 5** — 2432×63 · @ (0, 323) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:8727`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8728`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39185`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39185;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39185;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39185;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39185;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39185-2015-36012.svg `I2015:39185;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:8735`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=00:50:00, Type=Thời gian · Dưới 80%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #fff7ed · radius 4px · border 1px solid #fb923c · clip `2808:53148`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53148;2808:53121`
-                - [chữ] “00:50:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #e65100 · text-align center · no-wrap `I2808:53148;2808:53122`
-          - [khối] **Data** — 141×66 · @ (790, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8739`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8740`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1871`
-          - [khối] **Data** — 143×66 · @ (931, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8742`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8743`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1872`
-          - [khối] **Data** — 153×66 · @ (1074, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8745`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8746`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1873`
-          - [khối] **Data** — 155×66 · @ (1227, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8750`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8751`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1875`
-          - [khối] **Data** — 141×66 · @ (1382, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8753`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8754`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1876`
-          - [icon] **Data** — 142×66 · @ (1523, -0.44) abs · file assets/data-1219-8756.svg `1219:8756`
-          - [khối] **Data** — 142×66 · @ (1665, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8761`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8762`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1879`
-          - [khối] **Data** — 142×66 · @ (1807, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8766`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8767`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1881`
-          - [khối] **Data** — 142×66 · @ (1949, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8769`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8770`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1882`
-          - [khối] **Data** — 141×63 · @ (2091, -0.44) abs · row justify CENTER align CENTER `1219:8772`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336963`
-          - [khối] **Data** — 200×63 · @ (2232, -0.44) abs · row justify CENTER align CENTER `6518:337025`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337026`
-          - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8774`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8775`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8776`
-              - [khối] **Container** — 152×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8780`
-                - [khối] **Container** — 152×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8781`
-                  - [chữ] “汉语难吗？” — 75×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:8782`
-                - [khối] **Container** — 152×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8783`
-                  - [chữ] “Tiếng Trung có khó không” — 152×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:8784`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53424`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53474.svg `2808:53474`
-            - [chữ] “5” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53425`
-        - [khối] **Row 6** — 2432×63 · @ (0, 386) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:8785`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8786`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39196`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39196;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39196;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39196;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39196;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39196-2015-36012.svg `I2015:39196;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:8793`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53151`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53151;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53151;2808:53130`
-          - [khối] **Data** — 141×66 · @ (790, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8797`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8798`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1883`
-          - [icon] **Data** — 143×66 · @ (931, -0.33) abs · file assets/data-1219-8800.svg `1219:8800`
-          - [khối] **Data** — 153×66 · @ (1074, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8805`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8806`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1886`
-          - [khối] **Data** — 155×66 · @ (1227, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8808`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8809`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1887`
-          - [khối] **Data** — 141×66 · @ (1382, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8811`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8812`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1888`
-          - [khối] **Data** — 142×66 · @ (1523, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8814`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8815`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1889`
-          - [khối] **Data** — 142×66 · @ (1665, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8819`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8820`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1891`
-          - [icon] **Data** — 142×66 · @ (1807, -0.33) abs · file assets/data-1219-8822.svg `1219:8822`
-          - [khối] **Data** — 142×66 · @ (1949, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8827`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8828`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1894`
-          - [khối] **Data** — 141×64 · @ (2091, -1.33) abs · row justify CENTER align CENTER `1219:8830`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 20) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336964`
-          - [khối] **Data** — 200×64 · @ (2232, -1.33) abs · row justify CENTER align CENTER `6518:337027`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 20) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337028`
-          - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8832`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8833`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8834`
-              - [khối] **Container** — 111×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8838`
-                - [khối] **Container** — 111×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8839`
-                  - [chữ] “声母 1” — 41×19 [HUG×HUG] · @ (0, 0) flow · runs: “声母” Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper; “ 1” Afacad 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:8840`
-                - [khối] **Container** — 111×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8841`
-                  - [chữ] “Thanh mẫu cơ bản” — 111×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:8842`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53426`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53476.svg `2808:53476`
-            - [chữ] “6” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53427`
-        - [khối] **Row 7** — 2432×63 · @ (0, 449) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:8843`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8844`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39207`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39207;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39207;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39207;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39207;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39207-2015-36012.svg `I2015:39207;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:8851`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53154`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53154;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53154;2808:53130`
-          - [khối] **Data** — 141×66 · @ (790, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8855`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8856`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1895`
-          - [khối] **Data** — 143×66 · @ (931, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8858`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8859`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1896`
-          - [khối] **Data** — 153×66 · @ (1074, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8861`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8862`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1897`
-          - [khối] **Data** — 155×66 · @ (1227, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8866`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8867`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1899`
-          - [khối] **Data** — 141×66 · @ (1382, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8869`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8870`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1900`
-          - [icon] **Data** — 142×66 · @ (1523, -0.25) abs · file assets/data-1219-8872.svg `1219:8872`
-          - [icon] **Data** — 142×66 · @ (1665, -0.25) abs · file assets/data-1219-8875.svg `1219:8875`
-          - [khối] **Data** — 142×66 · @ (1807, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8880`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8881`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1904`
-          - [khối] **Data** — 142×66 · @ (1949, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8885`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8886`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1906`
-          - [khối] **Data** — 141×64 · @ (2091, -1.25) abs · row justify CENTER align CENTER `1219:8888`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 20) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336965`
-          - [khối] **Data** — 200×64 · @ (2232, -1.25) abs · row justify CENTER align CENTER `6518:337029`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 20) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337030`
-          - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8890`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8891`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8892`
-              - [khối] **Container** — 105×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8896`
-                - [khối] **Container** — 105×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8897`
-                  - [chữ] “你叫什么名字？” — 105×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:8898`
-                - [khối] **Container** — 105×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8899`
-                  - [chữ] “Hỏi tên” — 42×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:8900`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53428`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53478.svg `2808:53478`
-            - [chữ] “7” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53429`
-        - [khối] **Row 8** — 2432×63 · @ (0, 512) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:8901`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8902`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39218`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39218;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39218;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39218;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39218;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39218-2015-36012.svg `I2015:39218;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:8909`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53157`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53157;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53157;2808:53130`
-          - [khối] **Data** — 141×66 · @ (790, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8913`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8914`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1907`
-          - [icon] **Data** — 143×66 · @ (931, -0.67) abs · file assets/data-1219-8916.svg `1219:8916`
-          - [khối] **Data** — 153×66 · @ (1074, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8921`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8922`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1910`
-          - [khối] **Data** — 155×66 · @ (1227, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8924`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8925`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1911`
-          - [khối] **Data** — 141×66 · @ (1382, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8927`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8928`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1912`
-          - [khối] **Data** — 142×66 · @ (1523, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8930`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8931`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1913`
-          - [khối] **Data** — 142×66 · @ (1665, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8935`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8936`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1915`
-          - [icon] **Data** — 142×66 · @ (1807, -0.67) abs · file assets/data-1219-8940.svg `1219:8940`
-          - [khối] **Data** — 142×66 · @ (1949, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8943`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8944`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1918`
-          - [khối] **Data** — 141×63 · @ (2091, -0.67) abs · row justify CENTER align CENTER `1219:8946`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336966`
-          - [khối] **Data** — 200×63 · @ (2232, -0.67) abs · row justify CENTER align CENTER `6518:337031`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337032`
-          - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8948`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8949`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8950`
-              - [khối] **Container** — 126×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8954`
-                - [khối] **Container** — 126×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8955`
-                  - [chữ] “声母 2” — 41×19 [HUG×HUG] · @ (0, 0) flow · runs: “声母” Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper; “ 2” Afacad 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:8956`
-                - [khối] **Container** — 126×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8957`
-                  - [chữ] “Thanh mẫu nâng cao” — 126×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:8958`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53430`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53480.svg `2808:53480`
-            - [chữ] “8” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53431`
-        - [khối] **Row 9** — 2432×64 · @ (0, 575) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:8959`
-          - [khối] **Data** — 284×64 · @ (380, 0.31) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8960`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 17) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39229`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39229;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39229;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39229;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39229;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39229-2015-36012.svg `I2015:39229;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, 0.31) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:8967`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:35:00, Type=Thời gian · Vượt⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #fef2f2 · radius 4px · border 1px solid #ed4038 · clip `2808:53160`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53160;2808:53133`
-                - [chữ] “01:35:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #ed4038 · text-align center · no-wrap `I2808:53160;2808:53134`
-          - [khối] **Data** — 141×66 · @ (790, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8971`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8972`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1919`
-          - [khối] **Data** — 143×66 · @ (931, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8974`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8975`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1920`
-          - [icon] **Data** — 153×66 · @ (1074, 0.16) abs · file assets/data-1219-8977.svg covers (0, 0) 18×66 `1219:8977`
-          - [khối] **Data** — 155×66 · @ (1227, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8980`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8981`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1922`
-          - [khối] **Data** — 141×66 · @ (1382, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8983`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8984`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1923`
-          - [khối] **Data** — 142×66 · @ (1523, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8986`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8987`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1924`
-          - [khối] **Data** — 142×66 · @ (1665, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8989`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8990`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1925`
-          - [khối] **Data** — 142×66 · @ (1807, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:8994`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8995`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1927`
-          - [icon] **Data** — 142×66 · @ (1949, 0.16) abs · file assets/data-1219-8999.svg `1219:8999`
-          - [khối] **Data** — 141×63 · @ (2091, 0.16) abs · row justify CENTER align CENTER `1219:9004`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336967`
-          - [khối] **Data** — 200×63 · @ (2232, 0.16) abs · row justify CENTER align CENTER `6518:337033`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337034`
-          - [khối] **Data** — 324×72 · @ (56, 0.31) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9006`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9007`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9008`
-              - [khối] **Container** — 90×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9012`
-                - [khối] **Container** — 90×19 [FILL×HUG] · @ (0, 0) flow · column · clip `1219:9013`
-                  - [chữ] “听说训练” — 60×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap · truncate `1219:9014`
-                - [khối] **Container** — 90×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9015`
-                  - [chữ] “Luyện nghe nói” — 90×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:9016`
-          - [khối] **Data - STT** — 56×64 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53432`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 23) flow · file assets/drag-handle-2808-53482.svg `2808:53482`
-            - [chữ] “9” — 37×20 [FILL×HUG] · @ (18, 22) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53433`
-        - [khối] **Row 10** — 2432×63 · @ (0, 639) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:9017`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9018`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39240`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39240;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39240;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39240;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39240;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39240-2015-36012.svg `I2015:39240;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:9025`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53163`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53163;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53163;2808:53130`
-          - [khối] **Data** — 141×66 · @ (790, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9029`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9030`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1931`
-          - [icon] **Data** — 143×66 · @ (931, -0.52) abs · file assets/data-1219-9032.svg `1219:9032`
-          - [khối] **Data** — 153×66 · @ (1074, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9037`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9038`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1934`
-          - [khối] **Data** — 155×66 · @ (1227, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9040`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9041`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1935`
-          - [khối] **Data** — 141×66 · @ (1382, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9043`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9044`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1936`
-          - [khối] **Data** — 142×66 · @ (1523, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9048`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9049`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1938`
-          - [khối] **Data** — 142×66 · @ (1665, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9051`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9052`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1939`
-          - [icon] **Data** — 142×66 · @ (1807, -0.52) abs · file assets/data-1219-9054.svg `1219:9054`
-          - [khối] **Data** — 142×66 · @ (1949, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9057`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9058`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1941`
-          - [khối] **Data** — 141×63 · @ (2091, -0.52) abs · row justify CENTER align CENTER `1219:9060`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336968`
-          - [khối] **Data** — 200×63 · @ (2232, -0.52) abs · row justify CENTER align CENTER `6518:337035`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337036`
-          - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9062`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9063`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9064`
-              - [khối] **Container** — 86×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9068`
-                - [khối] **Container** — 86×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9069`
-                  - [chữ] “声调复习” — 60×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:9070`
-                - [khối] **Container** — 86×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9071`
-                  - [chữ] “Ôn thanh điệu” — 86×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:9072`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53434`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53484.svg `2808:53484`
-            - [chữ] “10” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53435`
-        - [khối] **Row 11** — 2432×63 · @ (0, 702) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:9073`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9074`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39251`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39251;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39251;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39251;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39251;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39251-2015-36012.svg `I2015:39251;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:9081`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Time=4 ngày trước, Name=Trần Minh Khoa, Label=00:00:00, Type=Thời gian · Chưa có⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f1f5f9 · radius 4px · border 1px solid #cbd5e1 · clip `2808:53166`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53166;2808:53117`
-                - [chữ] “00:00:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #cbd5e1 (color/text/muted) · text-align center · no-wrap `I2808:53166;2808:53118`
-          - [khối] **Data** — 141×66 · @ (790, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9085`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9086`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1942`
-          - [khối] **Data** — 143×66 · @ (931, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9088`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9089`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1943`
-          - [khối] **Data** — 153×66 · @ (1074, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9091`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9092`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1944`
-          - [khối] **Data** — 155×66 · @ (1227, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9094`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9095`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1945`
-          - [khối] **Data** — 141×66 · @ (1382, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9097`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9098`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1946`
-          - [khối] **Data** — 142×66 · @ (1523, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9100`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9101`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1947`
-          - [khối] **Data** — 142×66 · @ (1665, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9105`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9106`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1949`
-          - [khối] **Data** — 142×66 · @ (1807, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9110`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9111`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1951`
-          - [khối] **Data** — 142×66 · @ (1949, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9113`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9114`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1952`
-          - [khối] **Data** — 141×63 · @ (2091, -0.44) abs · row justify CENTER align CENTER `1219:9116`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2409:144839`
-          - [khối] **Data** — 200×63 · @ (2232, -0.44) abs · row justify CENTER align CENTER `6518:337037`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337038`
-          - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9120`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9121`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9122`
-              - [khối] **Container** — 76×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9126`
-                - [khối] **Container** — 76×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9127`
-                  - [chữ] “写汉字” — 45×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:9128`
-                - [khối] **Container** — 76×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9129`
-                  - [chữ] “Viết chữ Hán” — 76×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:9130`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53436`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53486.svg `2808:53486`
-            - [chữ] “11” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53437`
-        - [khối] **Row 12** — 2432×63 · @ (0, 765) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:9131`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9132`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39262`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39262;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39262;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39262;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39262;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39262-2015-36012.svg `I2015:39262;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:9139`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53169`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53169;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53169;2808:53130`
-          - [khối] **Data** — 141×66 · @ (790, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9143`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9144`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1953`
-          - [khối] **Data** — 143×66 · @ (931, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9146`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9147`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1954`
-          - [khối] **Data** — 153×66 · @ (1074, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9149`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9150`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1955`
-          - [khối] **Data** — 155×66 · @ (1227, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9154`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9155`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1957`
-          - [khối] **Data** — 141×66 · @ (1382, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9157`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9158`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1958`
-          - [icon] **Data** — 142×66 · @ (1523, -0.44) abs · file assets/data-1219-9160.svg `1219:9160`
-          - [icon] **Data** — 142×66 · @ (1665, -0.44) abs · file assets/data-1219-9165.svg `1219:9165`
-          - [khối] **Data** — 142×66 · @ (1807, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9170`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9171`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1963`
-          - [khối] **Data** — 142×66 · @ (1949, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9173`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9174`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1964`
-          - [khối] **Data** — 141×63 · @ (2091, -0.44) abs · row justify CENTER align CENTER `1219:9178`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336969`
-          - [khối] **Data** — 200×63 · @ (2232, -0.44) abs · row justify CENTER align CENTER `6518:337039`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337040`
-          - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9180`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9181`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9182`
-              - [khối] **Container** — 107×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9186`
-                - [khối] **Container** — 107×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9187`
-                  - [chữ] “个人信息” — 60×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:9188`
-                - [khối] **Container** — 107×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9189`
-                  - [chữ] “Thông tin cá nhân” — 107×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:9190`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53438`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53488.svg `2808:53488`
-            - [chữ] “12” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53439`
-        - [khối] **Row 13** — 2432×63 · @ (0, 828) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:9191`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9192`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39273`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39273;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39273;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39273;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39273;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39273-2015-36012.svg `I2015:39273;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:9199`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53172`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53172;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53172;2808:53130`
-          - [khối] **Data** — 141×66 · @ (790, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9203`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9204`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1966`
-          - [khối] **Data** — 143×66 · @ (931, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9206`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9207`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1967`
-          - [icon] **Data** — 153×66 · @ (1074, -0.28) abs · file assets/data-1219-9209.svg covers (0, 0) 18×66 `1219:9209`
-          - [khối] **Data** — 155×66 · @ (1227, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9214`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9215`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1970`
-          - [khối] **Data** — 141×66 · @ (1382, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9217`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9218`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1971`
-          - [khối] **Data** — 142×66 · @ (1523, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9220`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9221`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1972`
-          - [khối] **Data** — 142×66 · @ (1665, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9225`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9226`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1974`
-          - [khối] **Data** — 142×66 · @ (1807, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9230`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9231`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1976`
-          - [khối] **Data** — 142×66 · @ (1949, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9233`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9234`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1977`
-          - [icon] **Data** — 141×64 · @ (2091, -1.28) abs · file assets/data-1219-9236.svg `1219:9236`
-          - [khối] **Data** — 200×64 · @ (2232, -1.28) abs · row justify CENTER align CENTER `6518:337041`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 20) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337042`
-          - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9240`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9241`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9242`
-              - [khối] **Container** — 153×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9246`
-                - [khối] **Container** — 153×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9247`
-                  - [chữ] “你做什么工作？” — 105×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:9248`
-                - [khối] **Container** — 153×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9249`
-                  - [chữ] “Nghề nghiệp và công việc” — 153×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:9250`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53440`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53490.svg `2808:53490`
-            - [chữ] “13” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53441`
-        - [khối] **Row 14** — 2432×63 · @ (0, 891) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:9251`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9252`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39284`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39284;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39284;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39284;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39284;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39284-2015-36012.svg `I2015:39284;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:9259`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53175`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53175;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53175;2808:53130`
-          - [khối] **Data** — 141×66 · @ (790, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9263`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9264`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1978`
-          - [khối] **Data** — 143×66 · @ (931, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9266`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9267`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1979`
-          - [icon] **Data** — 153×66 · @ (1074, -0.2) abs · file assets/data-1219-9269.svg covers (0, 0) 18×66 `1219:9269`
-          - [khối] **Data** — 155×66 · @ (1227, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9272`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9273`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1981`
-          - [khối] **Data** — 141×66 · @ (1382, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9275`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9276`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1982`
-          - [khối] **Data** — 142×66 · @ (1523, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9278`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9279`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1983`
-          - [icon] **Data** — 142×66 · @ (1665, -0.2) abs · file assets/data-1219-9283.svg `1219:9283`
-          - [khối] **Data** — 142×66 · @ (1807, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9288`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9289`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1987`
-          - [khối] **Data** — 142×66 · @ (1949, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9291`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9292`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1988`
-          - [khối] **Data** — 141×63 · @ (2091, -1.2) abs · row justify CENTER align CENTER `1219:9296`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336970`
-          - [khối] **Data** — 200×63 · @ (2232, -1.2) abs · row justify CENTER align CENTER `6518:337044`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337045`
-          - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9298`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9299`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9300`
-              - [khối] **Container** — 118×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9304`
-                - [khối] **Container** — 118×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9305`
-                  - [chữ] “你是哪国人？” — 90×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:9306`
-                - [khối] **Container** — 118×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9307`
-                  - [chữ] “Quốc gia, ngôn ngữ” — 118×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:9308`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53442`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53492.svg `2808:53492`
-            - [chữ] “14” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53443`
-        - [khối] **Row 15** — 2432×63 · @ (0, 954) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:9309`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9310`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39295`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39295;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39295;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39295;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39295;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39295-2015-36012.svg `I2015:39295;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:9317`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=00:45:00, Type=Thời gian · Dưới 80%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #fff7ed · radius 4px · border 1px solid #fb923c · clip `2808:53178`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53178;2808:53121`
-                - [chữ] “00:45:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #e65100 · text-align center · no-wrap `I2808:53178;2808:53122`
-          - [khối] **Data** — 141×66 · @ (790, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9321`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9322`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1990`
-          - [khối] **Data** — 143×66 · @ (931, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9324`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9325`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1991`
-          - [khối] **Data** — 153×66 · @ (1074, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9327`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9328`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1992`
-          - [khối] **Data** — 155×66 · @ (1227, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9330`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9331`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1993`
-          - [khối] **Data** — 141×66 · @ (1382, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9333`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9334`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1994`
-          - [khối] **Data** — 142×66 · @ (1523, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9336`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9337`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1995`
-          - [khối] **Data** — 142×66 · @ (1665, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9339`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9340`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1996`
-          - [icon] **Data** — 142×66 · @ (1807, -0.62) abs · file assets/data-1219-9342.svg `1219:9342`
-          - [khối] **Data** — 142×66 · @ (1949, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9347`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9348`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1999`
-          - [khối] **Data** — 141×63 · @ (2091, -0.62) abs · row justify CENTER align CENTER `1219:9350`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336971`
-          - [khối] **Data** — 200×63 · @ (2232, -0.62) abs · row justify CENTER align CENTER `6518:337046`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337047`
-          - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9352`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9353`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9354`
-              - [khối] **Container** — 150×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9358`
-                - [khối] **Container** — 150×19 [FILL×HUG] · @ (0, 0) flow · column · clip `1219:9359`
-                  - [chữ] “听力：去学校” — 90×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:9360`
-                - [khối] **Container** — 150×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9361`
-                  - [chữ] “Nghe: đường đến trường” — 150×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:9362`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53444`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53494.svg `2808:53494`
-            - [chữ] “15” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53445`
-        - [khối] **Row 16** — 2432×63 · @ (0, 1017) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:9363`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9364`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39306`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39306;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39306;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39306;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39306;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39306-2015-36012.svg `I2015:39306;2015:36012`
-          - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:9371`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:00:00, Type=Thời gian · Dưới 80%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #fff7ed · radius 4px · border 1px solid #fb923c · clip `2808:53181`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53181;2808:53121`
-                - [chữ] “01:00:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #e65100 · text-align center · no-wrap `I2808:53181;2808:53122`
-          - [khối] **Data** — 141×66 · @ (790, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9375`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9376`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2000`
-          - [khối] **Data** — 143×66 · @ (931, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9378`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9379`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2001`
-          - [khối] **Data** — 153×66 · @ (1074, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9381`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9382`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2002`
-          - [khối] **Data** — 155×66 · @ (1227, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9384`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9385`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2003`
-          - [icon] **Data** — 141×66 · @ (1382, -0.55) abs · file assets/data-1219-9387.svg `1219:9387`
-          - [khối] **Data** — 142×66 · @ (1523, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9392`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9393`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2006`
-          - [khối] **Data** — 142×66 · @ (1665, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9397`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9398`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2008`
-          - [khối] **Data** — 142×66 · @ (1807, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9402`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9403`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2010`
-          - [khối] **Data** — 142×66 · @ (1949, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9407`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9408`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2012`
-          - [khối] **Data** — 141×63 · @ (2091, -0.55) abs · row justify CENTER align CENTER `1219:9412`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336972`
-          - [khối] **Data** — 200×63 · @ (2232, -0.55) abs · row justify CENTER align CENTER `6518:337048`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337049`
-          - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9414`
-            - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9415`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9416`
-              - [khối] **Container** — 110×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9420`
-                - [khối] **Container** — 110×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9421`
-                  - [chữ] “复习 1” — 41×19 [HUG×HUG] · @ (0, 0) flow · runs: “复习” Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper; “ 1” Afacad 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:9422`
-                - [khối] **Container** — 110×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9423`
-                  - [chữ] “Ôn tập tổng hợp 1” — 110×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:9424`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53446`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53496.svg `2808:53496`
-            - [chữ] “16” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53447`
-        - [khối] **Row 17** — 2432×63 · @ (0, 1080) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 #f1f5f9 (color/border/subtle) `1219:9425`
-          - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9426`
-            - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39317`
-              - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39317;2015:36006`
-                - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 700 #2d9732 · no-wrap `I2015:39317;2015:36006;1994:25957`
-              - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39317;2015:36007`
-                - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39317;2015:36008`
-              - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39317-2015-36012.svg `I2015:39317;2015:36012`
-          - [khối] **Data** — 126×51 · @ (664, -0.44) abs · column pad 13 15 12 16 align CENTER · border 0 1px 0 0 #e2e8f0 (color/border/default) `1219:9433`
-            - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53184`
-              - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53184;2808:53129`
-                - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53184;2808:53130`
-          - [khối] **Data** — 141×66 · @ (790, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9437`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9438`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2014`
-          - [khối] **Data** — 143×66 · @ (931, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9440`
-            - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9441`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2015`
-          - [khối] **Data** — 153×66 · @ (1074, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9443`
-            - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9444`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2016`
-          - [khối] **Data** — 155×66 · @ (1227, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9446`
-            - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9447`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2017`
-          - [khối] **Data** — 141×66 · @ (1382, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9449`
-            - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9450`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2018`
-          - [khối] **Data** — 142×66 · @ (1523, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9452`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9453`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2019`
-          - [khối] **Data** — 142×66 · @ (1665, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9455`
-            - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9456`
-              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2020`
-          - [icon] **Data** — 142×66 · @ (1807, -0.47) abs · file assets/data-1219-9458.svg `1219:9458`
-          - [icon] **Data** — 142×66 · @ (1949, -0.47) abs · file assets/data-1219-9463.svg `1219:9463`
-          - [khối] **Data** — 141×63 · @ (2091, -0.47) abs · row justify CENTER align CENTER `1219:9466`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336973`
-          - [khối] **Data** — 200×63 · @ (2232, -0.47) abs · row justify CENTER align CENTER `6518:337050`
-            - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337051`
-          - [khối] **Data** — 324×64 · @ (56, -0.44) abs · column pad 12 12 12 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 #f1f5f9 (color/border/subtle) `1219:9468`
-            - [hình] **Data:shadow** — 324×64.28 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9469`
-            - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 12) flow · row gap 12 `1219:9470`
-              - [khối] **Container** — 115×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9474`
-                - [khối] **Container** — 115×19 [FILL×HUG] · @ (0, 0) flow · column · clip `1219:9475`
-                  - [chữ] “听力：长对话” — 90×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 700 #334155 (color/text/primary) case upper · no-wrap `1219:9476`
-                - [khối] **Container** — 115×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9477`
-                  - [chữ] “Nghe: hội thoại dài” — 115×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #64748b (color/text/secondary) · no-wrap `1219:9478`
-          - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 #f1f5f9 · clip `2808:53448`
-            - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53498.svg `2808:53498`
-            - [chữ] “17” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53449`
-    - [khối] **Scrollbar ngang** — 1092×8 [FILL×FIXED] · @ (0, 1281) flow · bg #f1f5f9 · radius 4px · clip `6518:337108`
-      - [hình] **Thumb** — 490×8 · @ (0, 0) abs · bg #ccd6e0 · radius 4px `6518:337109`
-    - [instance] **Molecule/Add New Bar · Thêm bài học** ⟨Molecule/Add New Bar: Icon trái=false, Nút=1075:1478, Placeholder=Nhập nhanh tên bài học — nhấn Enter để thêm dòng mới, Type=Box, Size=M, State=Default⟩ — 1092×40 [FILL×FIXED] · @ (0, 1301) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #f8fafc (color/extended/f8fafc) · radius 8px · border 1px dashed #cbd5e1 (color/extended/cbd5e1) `6518:337110`
-      - [chữ] “Nhập nhanh tên bài học — nhấn Enter để thêm dòng mới” — 1034×19 [FILL×HUG] · @ (13, 10.5) flow · Afacad 15/1.25 400 italic #cccccc (color/extended/cccccc) · truncate 1 lines `I6518:337110;5056:365849`
-      - [icon] **Action Button** ⟨Atom/Icon Button: Icon=Add Rounded⟩ — 20×20 · @ (1059, 10) flow · file assets/action-button-I6518-337110-5056-365850.svg covers (-2, -2) 26×26 `I6518:337110;5056:365850`
-    - [khối] **Footer · Phân trang** — 1092×25 [FILL×HUG] · @ (0, 1353) flow · row gap 8 align CENTER · clip `6518:337117`
-      - [chữ] “Hiển thị 1–17 trong 56 buổi học” — 866×17 [FILL×HUG] · @ (0, 4) flow · Afacad 13/auto 400 #94a3b8 `6518:337118`
-      - [icon] **Trang ‹** — 36×24 · @ (874, 0.5) flow · file assets/trang-6518-337119.svg `6518:337119`
-      - [khối] **Trang 1** — 25×23 [HUG×HUG] · @ (918, 1) flow · row pad 3 9 3 9 align CENTER · bg #e65100 · radius 6px · clip `6518:337121`
-        - [chữ] “1” — 7×17 [HUG×HUG] · @ (9, 3) flow · Afacad 13/17px 600 #ffffff · no-wrap `6518:337122`
-      - [khối] **Trang 2** — 27×25 [HUG×HUG] · @ (951, 0) flow · row pad 3 9 3 9 align CENTER · radius 6px · border 1px solid #e2e8f0 · clip `6518:337123`
-        - [chữ] “2” — 7×17 [HUG×HUG] · @ (10, 4) flow · Afacad 13/17px 600 #64748b · no-wrap `6518:337124`
-      - [khối] **Trang 3** — 27×25 [HUG×HUG] · @ (986, 0) flow · row pad 3 9 3 9 align CENTER · radius 6px · border 1px solid #e2e8f0 · clip `6518:337125`
-        - [chữ] “3” — 7×17 [HUG×HUG] · @ (10, 4) flow · Afacad 13/17px 600 #64748b · no-wrap `6518:337126`
-      - [khối] **Trang 8** — 27×25 [HUG×HUG] · @ (1021, 0) flow · row pad 3 9 3 9 align CENTER · radius 6px · border 1px solid #e2e8f0 · clip `6518:337129`
-        - [chữ] “4” — 7×17 [HUG×HUG] · @ (10, 4) flow · Afacad 13/17px 600 #64748b · no-wrap `6518:337130`
-      - [icon] **Trang ›** — 36×24 · @ (1056, 0.5) flow · file assets/trang-6518-337131.svg `6518:337131`
-- [instance] **Sidebar · MENU - CD** ⟨MENU - CD: Trang=Khoá học / Quy trình / Lộ trình (S4)⟩ — 300×1535.75 · @ (0, 0) abs · bg #ff5b00 · clip `4915:256398`
-  - [khối] **Frame 427322079** — 371.25×1198 · @ (0, -216) abs · bg #ff5b00 `I4915:256398;4901:220980`
-    - [icon] **Subtract** — 332.18×305.61 · @ (277.9, 67.31) abs · file assets/subtract-I4915-256398-4901-220982.svg covers (1.16, 148.69) 20.94×150.43 `I4915:256398;4901:220982`
-    - [icon] **Intersect** — 196.74×223.25 · @ (281.58, 127.62) abs · file assets/intersect-I4915-256398-4901-220989.svg covers (0.61, 88.38) 17.81×130.99 `I4915:256398;4901:220989`
-    - [icon] **Vector** — 92.05×189.04 · @ (0, 170.29) abs · file assets/vector-I4915-256398-4901-221002.svg covers (0, 45.71) 92.05×143.32 `I4915:256398;4901:221002`
-    - [icon] **Vector** — 485.25×688.49 · @ (-54.28, 531.77) abs · file assets/vector-I4915-256398-4901-221003.svg covers (54.28, 20.6) 300×651.43 `I4915:256398;4901:221003`
-    - [icon] **Union** — 328.37×643.92 · @ (98.87, 829.04) abs · file assets/union-I4915-256398-4901-221004.svg covers (0, 0) 201.13×643.92 `I4915:256398;4901:221004`
-    - [icon] **Group 240002** — 324.75×297.48 · @ (-61.5, 181.5) abs · file assets/group-240002-I4915-256398-4901-221007.svg covers (61.5, 34.5) 263.25×262.98 `I4915:256398;4901:221007`
-    - [khối] **material-symbols:menu-rounded** — 18×18 · @ (164.25, 240.75) abs · clip `I4915:256398;4901:221028`
-    - [khối] **Frame 427322029** — 36×36 · @ (9.75, 541.5) abs · clip `I4915:256398;4901:221029`
-    - [khối] **Menu Section 1: Quy trình (Expanded)** — 192×1100.36 · @ (96, 294) abs · column gap 8 align MAX `I4915:256398;4901:221030`
-      - [icon] **Frame 1171274940** — 192×28.36 · @ (0, 0) flow · file assets/frame-1171274940-I4915-256398-4901-221031.svg `I4915:256398;4901:221031`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=1150:22358, Label=Quy trình, Type=Chính dropdown, State=Default, Expanded=No⟩ — 192×44 [FILL×HUG] · @ (0, 36.36) flow · row space-between pad 8 8 8 8 align CENTER · radius 8px `I4915:256398;4901:221036`
-        - [khối] **Content** — 158×28 [FILL×HUG] · @ (8, 8) flow · row gap 8 align CENTER · clip `I4915:256398;4901:221036;2245:87821`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Quy trình⟩ — 28×28 · @ (0, 0) flow · file assets/icon-I4915-256398-4901-221036-2245-87816.svg `I4915:256398;4901:221036;2245:87816`
-          - [chữ] “Quy trình” — 122×15 [FILL×HUG] · @ (36, 6.5) flow · Unbounded 12/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221036;2245:87820`
-        - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (166, 13) flow · file assets/chevron-I4915-256398-4901-221036-2245-87822.svg `I4915:256398;4901:221036;2245:87822`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=4835:160221, Label=Kiến thức (S1) , Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 88.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221037`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Kiến thức⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221037-2245-87904.svg `I4915:256398;4901:221037;2245:87904`
-        - [chữ] “Kiến thức (S1) ” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221037;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=483:3548, Label=Học kỳ, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 136.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221038`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Học kỳ⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221038-2245-87904.svg `I4915:256398;4901:221038;2245:87904`
-        - [chữ] “Học kỳ” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221038;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=458:1148, Label=Tổng quan (S2), Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 184.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221039`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tổng quan⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221039-2245-87904.svg `I4915:256398;4901:221039;2245:87904`
-        - [chữ] “Tổng quan (S2)” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221039;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53778, Label=Lộ trình (S4), Type=Menu phụ, State=Select, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 232.36) flow · row gap 8 pad 8 4 8 8 align CENTER · bg `linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.25) 100%)` · radius 8px · shadow inset 0 0 0 1px rgba(255, 255, 255, 0.2), 0 1.25px 2.25px 0 rgba(0, 0, 0, 0.05) · backdrop blur(2.25px) `I4915:256398;4901:221040`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Lộ trình⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221040-2245-87910.svg `I4915:256398;4901:221040;2245:87910`
-        - [chữ] “Lộ trình (S4)” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221040;2245:87914`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=470:993, Label=Kỹ năng (S6), Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 280.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;5491:336932`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Thư viện kỹ năng⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-5491-336932-2245-87904.svg `I4915:256398;5491:336932;2245:87904`
-        - [chữ] “Kỹ năng (S6)” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:336932;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35762, Label=BTVN & Kiểm Tra, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 328.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;5491:343756`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Bài tập và kiểm tra⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-5491-343756-2245-87904.svg `I4915:256398;5491:343756;2245:87904`
-        - [chữ] “BTVN & Kiểm Tra” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:343756;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=483:3592, Label=Quản lý, Type=Chính dropdown, State=Default, Expanded=No⟩ — 192×44 [FILL×HUG] · @ (0, 376.36) flow · row space-between pad 8 8 8 8 align CENTER · radius 8px `I4915:256398;4901:221041`
-        - [khối] **Content** — 158×28 [FILL×HUG] · @ (8, 8) flow · row gap 8 align CENTER · clip `I4915:256398;4901:221041;2245:87821`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Quản lý⟩ — 28×28 · @ (0, 0) flow · file assets/icon-I4915-256398-4901-221041-2245-87816.svg `I4915:256398;4901:221041;2245:87816`
-          - [chữ] “Quản lý” — 122×15 [FILL×HUG] · @ (36, 6.5) flow · Unbounded 12/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221041;2245:87820`
-        - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (166, 13) flow · file assets/chevron-I4915-256398-4901-221041-2245-87822.svg `I4915:256398;4901:221041;2245:87822`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53557, Label=Quản lý tiến độ, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 428.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221042`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Quản lý tiến độ⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221042-2245-87904.svg `I4915:256398;4901:221042;2245:87904`
-        - [chữ] “Quản lý tiến độ” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221042;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=442:1606, Label=Log cập nhật, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 476.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221043`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Log⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221043-2245-87904.svg `I4915:256398;4901:221043;2245:87904`
-        - [chữ] “Log cập nhật” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221043;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53558, Label=lỗi dữ liệu, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 524.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221044`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Lỗi dữ liệu⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221044-2245-87904.svg `I4915:256398;4901:221044;2245:87904`
-        - [chữ] “lỗi dữ liệu” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221044;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53559, Label=Biên bản, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 572.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221045`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Biên bản⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221045-2245-87904.svg `I4915:256398;4901:221045;2245:87904`
-        - [chữ] “Biên bản” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221045;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53560, Label=Quy trình QC, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 620.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221046`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Quy trình QC⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221046-2245-87904.svg `I4915:256398;4901:221046;2245:87904`
-        - [chữ] “Quy trình QC” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221046;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=483:3598, Label=Tài liệu, Type=Chính dropdown, State=Default, Expanded=No⟩ — 192×44 [FILL×HUG] · @ (0, 668.36) flow · row space-between pad 8 8 8 8 align CENTER · radius 8px `I4915:256398;4901:221047`
-        - [khối] **Content** — 158×28 [FILL×HUG] · @ (8, 8) flow · row gap 8 align CENTER · clip `I4915:256398;4901:221047;2245:87821`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tài liệu⟩ — 28×28 · @ (0, 0) flow · file assets/icon-I4915-256398-4901-221047-2245-87816.svg `I4915:256398;4901:221047;2245:87816`
-          - [chữ] “Tài liệu” — 122×15 [FILL×HUG] · @ (36, 6.5) flow · Unbounded 12/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221047;2245:87820`
-        - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (166, 13) flow · file assets/chevron-I4915-256398-4901-221047-2245-87822.svg `I4915:256398;4901:221047;2245:87822`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53561, Label=Mindset, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 720.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221048`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Mindset⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221048-2245-87904.svg `I4915:256398;4901:221048;2245:87904`
-        - [chữ] “Mindset” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221048;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53562, Label=tiêu chuẩn g.Trình, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 768.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221049`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tiêu chuẩn giáo trình⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221049-2245-87904.svg `I4915:256398;4901:221049;2245:87904`
-        - [chữ] “tiêu chuẩn g.Trình” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221049;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=470:999, Label=HD Giảng dạy, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 816.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221050`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tài liệu & hướng dẫn⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221050-2245-87904.svg `I4915:256398;4901:221050;2245:87904`
-        - [chữ] “HD Giảng dạy” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221050;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53556, Label=Nội dung (S3), Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 864.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221051`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Nội dung⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221051-2245-87904.svg `I4915:256398;4901:221051;2245:87904`
-        - [chữ] “Nội dung (S3)” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221051;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=470:997, Label=Thư viện, Type=Chính dropdown, State=Default, Expanded=Yes⟩ — 192×44 [FILL×HUG] · @ (0, 912.36) flow · row space-between pad 8 8 8 8 align CENTER · radius 8px `I4915:256398;5491:349897`
-        - [khối] **Content** — 158×28 [FILL×HUG] · @ (8, 8) flow · row gap 8 align CENTER · clip `I4915:256398;5491:349897;2245:87830`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Thư viện kiến thức⟩ — 28×28 · @ (0, 0) flow · file assets/icon-I4915-256398-5491-349897-2245-87825.svg `I4915:256398;5491:349897;2245:87825`
-          - [chữ] “Thư viện” — 122×15 [FILL×HUG] · @ (36, 6.5) flow · Unbounded 12/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:349897;2245:87829`
-        - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (166, 13) flow · file assets/chevron-I4915-256398-5491-349897-2245-87831.svg `I4915:256398;5491:349897;2245:87831`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=4835:160221, Label=Kiến thức, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 964.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;5491:349906`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Kiến thức⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-5491-349906-2245-87904.svg `I4915:256398;5491:349906;2245:87904`
-        - [chữ] “Kiến thức” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:349906;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=470:993, Label=Kỹ năng, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 1012.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;5491:349911`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Thư viện kỹ năng⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-5491-349911-2245-87904.svg `I4915:256398;5491:349911;2245:87904`
-        - [chữ] “Kỹ năng” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:349911;2245:87908`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=470:1914, Label=Bài tập, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 1060.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;5491:349916`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Thư viện bài tập⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-5491-349916-2245-87904.svg `I4915:256398;5491:349916;2245:87904`
-        - [chữ] “Bài tập” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:349916;2245:87908`
-    - [icon] **Nav Items** — 58×663 · @ (12, 294) abs · file assets/nav-items-I4915-256398-4901-221052.svg `I4915:256398;4901:221052`
-  - [icon] **Left: ICS Logo & Toggle** — 54×44 · @ (14, 12) abs · file assets/left-ics-logo-toggle-I4915-256398-4901-221076.svg `I4915:256398;4901:221076`
-  - [hình] **Rectangle 5646** — 300×2 · @ (0, 64) abs · bg #ffffff `I4915:256398;4901:221079`
-  - [hình] **Divider** — 2×1470 · @ (82, 66) abs · bg #ffffff `I4915:256398;4901:221080`
-  - [icon] **LOGO CENTER** ⟨LOGO CENTER: Property 1=ICS, Property 2=no⟩ — 54×54 · @ (14, 1366) abs · file assets/logo-center-I4915-256398-4901-221081.svg covers (-4, 0) 62×62 `I4915:256398;4901:221081`
-- [khối] **Header** — 1140×64 · @ (299, 0) abs · clip `2812:34949`
-  - [icon] **Group 240178** — 1140×64 · @ (0, 0) abs · file assets/group-240178-4050-122605.svg `4050:122605`
-  - [instance] **ACCOUNT** ⟨ACCOUNT: Role=CD, Theme=Dark, Size=Default⟩ — 222×36 · @ (902, 14) abs · row gap 10 justify MAX align CENTER `2812:34997`
-    - [khối] **Frame 1171274934** — 192×36 [FIXED×HUG] · @ (0, 0) flow · row gap 8 align CENTER `I2812:34997;2008:31768`
-      - [khối] **Background+Shadow** — 36×36 · @ (0, 0) flow · row justify CENTER align CENTER · bg #ccfbf1 · radius 9999px · shadow inset 0 0 0 1px #0f766e, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I2812:34997;2008:31883`
-        - [khối] **Container** — 17×16 [HUG×HUG] · @ (9.5, 10) flow · column `I2812:34997;2008:31884`
-          - [chữ] “CD” — 17×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/1.25 700 #0f766e · no-wrap `I2812:34997;2008:31885`
-      - [khối] **Container** — 148×32 [FILL×HUG] · @ (44, 2) flow · column `I2812:34997;2008:31771`
-        - [chữ] “Học Liệu Ngôn Ngữ” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/1.25 600 #ffffff (color/neutral/white) · truncate 1 lines `I2812:34997;2008:31772`
-        - [chữ] “CD.dacnhan@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/1.25 500 #ffffff (color/neutral/white) · truncate 1 lines `I2812:34997;2008:31773`
-    - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file assets/overlay-I2812-34997-2008-31774.svg covers (-2, -2) 26×26 `I2812:34997;2008:31774`
-  - [instance] **Component 2** ⟨Switch Center: Property 1=Đắc Nhân⟩ — 166×42 · @ (12, 11) abs · row gap 4 pad 8 8 8 8 align CENTER · bg #e65100 (org/dac-nhan/bg) · radius 8px · border 1px solid #ffffff (org/border) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4273:160593`
-    - [khối] **Frame 427325409** — 128×24 [FILL×HUG] · @ (9, 9) flow · row gap 8 align CENTER `I4273:160593;4019:24203`
-      - [icon] **LOGO CENTER** — 24×24 · @ (0, 0) flow · file assets/logo-center-I4273-160593-4019-22291.svg covers (-1.78, 0) 27.56×27.56 `I4273:160593;4019:22291`
-      - [chữ] “Đắc Nhân” — 96×17 [FILL×HUG] · @ (32, 3.5) flow · Unbounded 14/auto 500 #ffffff (org/dac-nhan/fg) · truncate 1 lines `I4273:160593;4019:24214`
-    - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (141, 13) flow · file assets/chevron-I4273-160593-4019-24215.svg `I4273:160593;4019:24215`
+- [trang] **CD-KH-020200 — Chi tiết khoá học / Lộ trình** — 1440×1535.75 · bg #ffffff (color/neutral/white) `1219:8317`
+  - [khối] **Main - WorkspaceContainer** — 1140×1471.75 · @ (300, 64) abs · column gap 12 pad 24 24 24 24 · bg #ffffff (color/neutral/white) · clip `1219:8398`
+    - [khối] **Section - Top Action Bar** — 1092×33.75 [FILL×HUG] · @ (24, 24) flow · row gap 16 align CENTER · bg #ffffff (color/neutral/white) `1219:8399`
+      - [khối] **Container** — 404.25×26 [HUG×HUG] · @ (0, 3.88) flow · row align CENTER `1219:8400`
+        - [khối] **Heading 1** — 184×26 [HUG×HUG] · @ (0, 0) flow · column `1219:8401`
+          - [chữ] “Nội dung buổi học” — 184×26 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/1.5 (25.5px) 500 #334155 (color/text/primary) · no-wrap `1219:8402`
+        - [khối] **Margin** — 220.25×24.75 · @ (184, 0.63) flow · column pad 0 0 0 12 · trống `1219:8403`
+      - [khối] **Utility Actions** — 488.51×33.75 · @ (420.25, 0) flow · trống `1219:8406`
+    - [khối] **Section - MatrixTableView** — 1092×1378 [FILL×HUG] · @ (24, 69.75) flow · column gap 12 · bg rgba(248, 250, 252, 0.5) · clip `1219:8407`
+      - [khối] **Table** — 2432×1269 [FIXED×HUG] · @ (0, 0) flow · column gap -1 · bg #ffffff (color/neutral/white) · radius 16px · shadow inset 0 0 0 1px #e2e8f0 · clip `1219:8408`
+        - [khối] **Table Header with updated 3-line columns** — 2432×127 [FILL×HUG] · @ (0, 0) flow · column · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `1219:8409`
+          - [khối] **Row** — 2432×126 · @ (0, 0) flow · bg #f8fafc (color/extended/f8fafc) · shadow inset 0 -1px 0 0 #e2e8f0 `1219:8410`
+            - [khối] **Cell - Column 2: Semester / Ky** — 284×126 · @ (380, 0) abs · column pad 43 12 41 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8411`
+              - [chữ] “KỲ” — 16×19 [HUG×HUG] · @ (133.5, 43) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8412`
+            - [khối] **Cell - Column 3: Duration / Thoi gian** — 126×126 · @ (664, 0) abs · column pad 33.5 29 31.5 30 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:8413`
+              - [chữ] “THỜI GIAN ” — 66×19 [HUG×HUG] · @ (30, 33.5) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8414`
+              - [chữ] “[ 90 phút ]” — 67×19 [HUG×HUG] · @ (29.5, 52.5) flow · Afacad 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · text-align center · no-wrap `2751:43941`
+            - [khối] **Cell - Matrix Skill Header 1: KHAI GIẢNG** — 141×126 · @ (790, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8415`
+              - [khối] **Container** — 116×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8418`
+                - [chữ] “Số buổi 01/01” — 93×19 [HUG×HUG] · @ (11.5, 0) flow · Afacad 15/1.25 (18.75px) 700 #2d9732 case upper · text-align center · no-wrap `1219:8419`
+                - [chữ] “[ 60 phút ]” — 67×19 [HUG×HUG] · @ (24.5, 19) flow · Afacad 15/1.25 (18.75px) 700 #2d9732 case upper · text-align center · no-wrap `2619:202206`
+              - [khối] **Container** — 116×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8420`
+                - [chữ] “KHAI GIẢNG” — 74×19 [HUG×HUG] · @ (21, 0) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8421`
+              - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Đủ buổi, Size=S⟩ — 72×22 [HUG×HUG] · @ (34, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #f0ffef · radius 6px · border 1px solid #2d9732 `2808:53235`
+                - [khối] **Container** — 58×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53235;2808:53188`
+                  - [icon] **Leading** ⟨Action Icon: Icon=Check Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53235-2808-53189.svg `I2808:53235;2808:53189`
+                  - [khối] **Container** — 40×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53235;2808:53190`
+                    - [chữ] “Đủ buổi” — 40×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I2808:53235;2808:53191`
+            - [khối] **Cell - Matrix Skill Header 2: PHÁT ÂM** — 143×126 · @ (931, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8422`
+              - [khối] **Container** — 118×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8425`
+                - [chữ] “Số buổi 05/06” — 93×19 [HUG×HUG] · @ (12.5, 0) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `1219:8426`
+                - [chữ] “[ 45 phút ]” — 67×19 [HUG×HUG] · @ (25.5, 19) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `2619:202207`
+              - [khối] **Container** — 118×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8427`
+                - [chữ] “PHÁT ÂM” — 54×19 [HUG×HUG] · @ (32, 0) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8428`
+              - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20.5, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53251`
+                - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53251;2808:53211`
+                  - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53251-2808-53212.svg `I2808:53251;2808:53212`
+                  - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53251;2808:53213`
+                    - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53251;2808:53214`
+            - [khối] **Cell - Matrix Skill Header 3: CHỦ ĐỀ GIAO TIẾP** — 153×126 · @ (1074, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8429`
+              - [khối] **Container** — 128×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8432`
+                - [chữ] “Số buổi 03/12” — 93×19 [HUG×HUG] · @ (17.5, 0) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `1219:8433`
+                - [chữ] “[ 50 phút ]” — 67×19 [HUG×HUG] · @ (30.5, 19) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `2619:202208`
+              - [khối] **Container** — 128×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8434`
+                - [chữ] “CHỦ ĐỀ GIAO TIẾP” — 111×19 [HUG×HUG] · @ (8.5, 0) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8435`
+              - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (25.5, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53258`
+                - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53258;2808:53211`
+                  - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53258-2808-53212.svg `I2808:53258;2808:53212`
+                  - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53258;2808:53213`
+                    - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53258;2808:53214`
+            - [khối] **Cell - Matrix Skill Header 4: MINI TEST PHÁT ÂM** — 155×126 · @ (1227, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8436`
+              - [khối] **Container** — 130×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8439`
+                - [chữ] “Số buổi 02/02” — 93×19 [HUG×HUG] · @ (18.5, 0) flow · Afacad 15/1.25 (18.75px) 700 #2d9732 case upper · text-align center · no-wrap `1219:8440`
+                - [chữ] “[ 30 phút ]” — 67×19 [HUG×HUG] · @ (31.5, 19) flow · Afacad 15/1.25 (18.75px) 700 #2d9732 case upper · text-align center · no-wrap `2619:202209`
+              - [khối] **Container** — 130×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8441`
+                - [chữ] “MINI TEST PHÁT ÂM” — 116×19 [HUG×HUG] · @ (7, 0) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8442`
+              - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Đủ buổi, Size=S⟩ — 72×22 [HUG×HUG] · @ (41, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #f0ffef · radius 6px · border 1px solid #2d9732 `2808:53274`
+                - [khối] **Container** — 58×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53274;2808:53188`
+                  - [icon] **Leading** ⟨Action Icon: Icon=Check Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53274-2808-53189.svg `I2808:53274;2808:53189`
+                  - [khối] **Container** — 40×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53274;2808:53190`
+                    - [chữ] “Đủ buổi” — 40×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I2808:53274;2808:53191`
+            - [khối] **Cell - Matrix Skill Header 5: TỔNG ÔN TẬP** — 141×126 · @ (1382, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8443`
+              - [khối] **Container** — 116×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8446`
+                - [chữ] “Số buổi 02/06” — 93×19 [HUG×HUG] · @ (11.5, 0) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `1219:8447`
+                - [chữ] “[ 60 phút ]” — 67×19 [HUG×HUG] · @ (24.5, 19) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `2619:202210`
+              - [khối] **Container** — 116×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8448`
+                - [chữ] “TỔNG ÔN TẬP” — 86×19 [HUG×HUG] · @ (15, 0) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8449`
+              - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (19.5, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53290`
+                - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53290;2808:53211`
+                  - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53290-2808-53212.svg `I2808:53290;2808:53212`
+                  - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53290;2808:53213`
+                    - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53290;2808:53214`
+            - [khối] **Cell - Matrix Skill Header 6: NGỮ PHÁP** — 142×126 · @ (1523, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8450`
+              - [khối] **Container** — 117×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8453`
+                - [chữ] “Số buổi 03/20” — 93×19 [HUG×HUG] · @ (12, 0) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `1219:8454`
+                - [chữ] “[ 50 phút ]” — 67×19 [HUG×HUG] · @ (25, 19) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `2619:202211`
+              - [khối] **Container** — 117×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8455`
+                - [chữ] “NGỮ PHÁP” — 65×19 [HUG×HUG] · @ (26, 0) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8456`
+              - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53306`
+                - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53306;2808:53211`
+                  - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53306-2808-53212.svg `I2808:53306;2808:53212`
+                  - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53306;2808:53213`
+                    - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53306;2808:53214`
+            - [khối] **Cell - Matrix Skill Header 7: TỪ VỰNG** — 142×126 · @ (1665, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8457`
+              - [khối] **Container** — 117×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8460`
+                - [chữ] “Số buổi 03/24” — 93×19 [HUG×HUG] · @ (12, 0) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `1219:8461`
+                - [chữ] “[ 40 phút ]” — 67×19 [HUG×HUG] · @ (25, 19) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `2619:202212`
+              - [khối] **Container** — 117×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8462`
+                - [chữ] “TỪ VỰNG” — 58×19 [HUG×HUG] · @ (29.5, 0) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8463`
+              - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53322`
+                - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53322;2808:53211`
+                  - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53322-2808-53212.svg `I2808:53322;2808:53212`
+                  - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53322;2808:53213`
+                    - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53322;2808:53214`
+            - [khối] **Cell - Matrix Skill Header 8: NGHE HIỂU** — 142×126 · @ (1807, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8464`
+              - [khối] **Container** — 117×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8467`
+                - [chữ] “Số buổi 07/16” — 93×19 [HUG×HUG] · @ (12, 0) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `1219:8468`
+                - [chữ] “[ 45 phút ]” — 67×19 [HUG×HUG] · @ (25, 19) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `2619:202213`
+              - [khối] **Container** — 117×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8469`
+                - [chữ] “NGHE HIỂU” — 65×19 [HUG×HUG] · @ (26, 0) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8470`
+              - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53338`
+                - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53338;2808:53211`
+                  - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53338-2808-53212.svg `I2808:53338;2808:53212`
+                  - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53338;2808:53213`
+                    - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53338;2808:53214`
+            - [khối] **Cell - Matrix Skill Header 9: ĐỌC HIỂU** — 142×126 · @ (1949, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8471`
+              - [khối] **Container** — 117×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8474`
+                - [chữ] “Số buổi 02/12” — 93×19 [HUG×HUG] · @ (12, 0) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `1219:8475`
+                - [chữ] “[ 45 phút ]” — 67×19 [HUG×HUG] · @ (25, 19) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `2619:202214`
+              - [khối] **Container** — 117×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8476`
+                - [chữ] “ĐỌC HIỂU” — 61×19 [HUG×HUG] · @ (28, 0) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8477`
+              - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53354`
+                - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53354;2808:53211`
+                  - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53354-2808-53212.svg `I2808:53354;2808:53212`
+                  - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53354;2808:53213`
+                    - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53354;2808:53214`
+            - [khối] **Cell - Matrix Skill Header 10: VIẾT** — 141×126 · @ (2091, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER `1219:8478`
+              - [khối] **Container** — 117×38 [FILL×HUG] · @ (12, 21.5) flow · column align CENTER `1219:8481`
+                - [chữ] “Số buổi 01/08” — 93×19 [HUG×HUG] · @ (12, 0) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `1219:8482`
+                - [chữ] “[ 40 phút ]” — 67×19 [HUG×HUG] · @ (25, 19) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `2619:202215`
+              - [khối] **Container** — 117×19 [FILL×HUG] · @ (12, 61.5) flow · column align CENTER `1219:8483`
+                - [chữ] “VIẾT” — 27×19 [HUG×HUG] · @ (45, 0) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center · no-wrap `1219:8484`
+              - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (20, 82.5) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `2808:53370`
+                - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I2808:53370;2808:53211`
+                  - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I2808-53370-2808-53212.svg `I2808:53370;2808:53212`
+                  - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I2808:53370;2808:53213`
+                    - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I2808:53370;2808:53214`
+            - [khối] **Cell - Matrix Skill Header 11: MINI TEST NGỮ PHÁP + TỪ VỰNG + SỬA TEST** — 200×126 · @ (2232, 0) abs · column gap 2 pad 12 12 12 12 justify CENTER align CENTER `6518:336996`
+              - [khối] **Container** — 176×38 [FILL×HUG] · @ (12, 12) flow · column align CENTER `6518:336997`
+                - [chữ] “Số buổi 00/03” — 93×19 [HUG×HUG] · @ (41.5, 0) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `6518:336998`
+                - [chữ] “[ 50 phút ]” — 67×19 [HUG×HUG] · @ (54.5, 19) flow · Afacad 15/1.25 (18.75px) 700 #e65100 case upper · text-align center · no-wrap `6518:336999`
+              - [khối] **Container** — 176×38 [FILL×HUG] · @ (12, 52) flow · column align CENTER `6518:337000`
+                - [chữ] “MINI TEST NGỮ PHÁP + TỪ VỰNG + SỬA TEST” — 176×38 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · text-align center `6518:337001`
+              - [instance] **Trạng thái số buổi** ⟨Atom/Status: Status=Chưa đủ buổi, Size=S⟩ — 101×22 [HUG×HUG] · @ (49.5, 92) flow · row gap 4 pad 2 8 2 4 justify CENTER align CENTER · bg #fff7ed · radius 6px · border 1px solid #e65100 `6518:337002`
+                - [khối] **Container** — 87×16 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I6518:337002;2808:53211`
+                  - [icon] **Leading** ⟨Action Icon: Icon=Dashed Circle, Size=16⟩ — 14×14 · @ (0, 1) flow · file assets/leading-I6518-337002-2808-53212.svg `I6518:337002;2808:53212`
+                  - [khối] **Container** — 69×16 [HUG×HUG] · @ (18, 0) flow · column justify CENTER align CENTER `I6518:337002;2808:53213`
+                    - [chữ] “Chưa đủ buổi” — 69×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #e65100 · text-align center · no-wrap `I6518:337002;2808:53214`
+            - [khối] **Cell - Sticky Left Column: Lesson Name** — 324×126 · @ (56, 0) abs · column pad 43 16 41 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8485`
+              - [hình] **Cell - Sticky Left Column: Lesson Name:shadow** — 324×126 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8486`
+              - [chữ] “BÀI HỌC” — 52×19 [HUG×HUG] · @ (24, 43) flow · Afacad 15/1.25 (18.75px) 700 #64748b (color/text/secondary) case upper · no-wrap `1219:8487`
+            - [khối] **Cell - Sticky Left Column: STT** — 56×126 · @ (0, 0) abs · row pad 43 0 12.5 16 justify CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53413`
+              - [chữ] “STT” — 39×20 [FILL×HUG] · @ (16, 43) flow · Afacad 15/auto 700 #64748b · text-align center `2808:53414`
+        - [khối] **Table Body with Checkbox UI cells** — 2432×1143 [FILL×HUG] · @ (0, 126) flow · column · bg #ffffff (color/neutral/white) `1219:8488`
+          - [khối] **Row 1** — 2432×63 · @ (0, 0) flow · bg #ffffff (color/neutral/white) · shadow inset 0 -1px 0 0 #f1f5f9 `1219:8489`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8490`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39141`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39141;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39141;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39141;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39141;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39141-2015-36012.svg `I2015:39141;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:8497`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53136`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53136;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53136;2808:53130`
+            - [icon] **Data - 10 Checkbox Cells** — 141×66 · @ (790, -0.44) abs · file assets/data-10-checkbox-cells-1219-8501.svg `1219:8501`
+            - [khối] **Data** — 143×66 · @ (931, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8506`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8507`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1823`
+            - [khối] **Data** — 153×66 · @ (1074, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8511`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8512`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1825`
+            - [icon] **Data** — 155×66 · @ (1227, -0.44) abs · file assets/data-1219-8514.svg `1219:8514`
+            - [khối] **Data** — 141×66 · @ (1382, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8517`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8518`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1827`
+            - [khối] **Data** — 142×66 · @ (1523, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8520`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8521`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1828`
+            - [khối] **Data** — 142×66 · @ (1665, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8525`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8526`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1830`
+            - [khối] **Data** — 142×66 · @ (1807, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8530`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8531`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1832`
+            - [khối] **Data** — 142×66 · @ (1949, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8533`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8534`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1833`
+            - [khối] **Data** — 141×63 · @ (2091, -0.44) abs · row justify CENTER align CENTER `1219:8536`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336960`
+            - [khối] **Data** — 200×63 · @ (2232, -0.44) abs · row justify CENTER align CENTER `6518:337017`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337018`
+            - [khối] **Data · Hover** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #fff5ec (color/extended/fff5ec) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8538`
+              - [hình] **Data:shadow** — 324×72 · @ (0, 0) abs · bg #fff5ec (color/extended/fff5ec) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `3004:75118`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg #ffffff · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8539`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8540`
+                - [khối] **Container** — 54×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8544`
+                  - [khối] **Container** — 54×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8545`
+                    - [chữ] “你好” — 30×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:8546`
+                  - [khối] **Container** — 54×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8547`
+                    - [chữ] “Chào hỏi” — 54×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:8548`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53416`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53466.svg `2808:53466`
+              - [chữ] “1” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53417`
+          - [khối] **Row 2** — 2432×98 · @ (0, 63) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:8549`
+            - [khối] **Data** — 284×98 · @ (380, 0) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8550`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 34) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39152`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39152;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39152;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39152;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39152;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39152-2015-36012.svg `I2015:39152;2015:36012`
+            - [khối] **Data** — 126×98 · @ (664, 0) abs · column pad 13 15 13 16 justify CENTER align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:8557`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 36) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53139`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53139;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53139;2808:53130`
+            - [khối] **Data - 10 Checkboxes** — 141×98 · @ (790, 0) abs · column pad 21 8 21 8 justify CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8561`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8562`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1834`
+            - [khối] **Data** — 143×98 · @ (931, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8564`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8565`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1835`
+            - [khối] **Data** — 153×98 · @ (1074, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8567`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8568`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1836`
+            - [icon] **Data** — 155×98 · @ (1227, 0) abs · file assets/data-1219-8570.svg `1219:8570`
+            - [icon] **Data** — 141×98 · @ (1382, 0) abs · file assets/data-1219-8575.svg `1219:8575`
+            - [khối] **Data** — 142×98 · @ (1523, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8580`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8581`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1841`
+            - [khối] **Data** — 142×98 · @ (1665, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8583`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8584`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1842`
+            - [khối] **Data** — 142×98 · @ (1807, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8586`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8587`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1843`
+            - [khối] **Data** — 142×98 · @ (1949, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8591`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8592`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1845`
+            - [khối] **Data** — 141×98 · @ (2091, 0) abs · row justify CENTER align CENTER `1219:8596`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 37) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2409:144837`
+            - [khối] **Data** — 200×98 · @ (2232, 0) abs · row justify CENTER align CENTER `6518:337019`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 37) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337020`
+            - [khối] **Data · Đang chỉnh sửa tên** — 324×98 · @ (56, 0) abs · column pad 12 12 12 24 justify CENTER · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8600`
+              - [hình] **Data:shadow** — 324×98 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8601`
+              - [khối] **Edit Fields** — 287×79 [FILL×HUG] · @ (24, 9.5) flow · column gap 8 · clip `2857:58678`
+                - [instance] **Input · Tên bài học** ⟨Atom/Input: Loại=Gift code, Text=期中考试 1, State=Sửa trực tiếp, Kiểu=S⟩ — 287×34 [FILL×HUG] · @ (0, 0) flow · row pad 8 12 8 12 justify CENTER · bg #fff5ec (color/extended/fff5ec) · radius 8px · clip `2857:58679`
+                  - [khối] **Container** — 263×16 [FILL×FIXED] · @ (12, 8) flow · row gap 1 align CENTER · clip `I2857:58679;3004:75120`
+                    - [chữ] “期中考试 1” — 71×19 [HUG×FILL] · @ (0, -1.5) flow · runs: “期中考试” Noto Sans SC 15/1.25 (18.75px) 400 #334155 (color/text/primary); “ 1” Afacad 15/1.25 (18.75px) 400 #334155 (color/text/primary) · no-wrap `I2857:58679;3004:75121`
+                    - [hình] **Rectangle 5747** — 1×16 · @ (72, 0) flow · bg #e65100 (color/brand/orange) `I2857:58679;3004:75122`
+                - [instance] **Input · Mô tả** ⟨Atom/Input: Loại=Gift code, Text=Kiểm tra giữa kỳ 1, State=Text, Kiểu=S⟩ — 287×37 [FILL×HUG] · @ (0, 42) flow · row pad 8 12 8 12 justify CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `2857:58683`
+                  - [khối] **Container** — 261×19 [FILL×HUG] · @ (13, 9) flow · column · clip `I2857:58683;2808:42228`
+                    - [chữ] “Kiểm tra giữa kỳ 1” — 261×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 400 #334155 (color/text/primary) · truncate 1 lines `I2857:58683;2808:42229`
+            - [khối] **Data - STT** — 56×98 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53418`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 40) flow · file assets/drag-handle-2808-53468.svg `2808:53468`
+              - [chữ] “2” — 37×20 [FILL×HUG] · @ (18, 39) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53419`
+          - [khối] **Row 3** — 2432×98 · @ (0, 161) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:8611`
+            - [khối] **Data** — 284×98 · @ (380, 0) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8612`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 34) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39163`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39163;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39163;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39163;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39163;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39163-2015-36012.svg `I2015:39163;2015:36012`
+            - [khối] **Data** — 126×98 · @ (664, 0) abs · column pad 13 15 13 16 justify CENTER align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:8619`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 36) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53142`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53142;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53142;2808:53130`
+            - [khối] **Data** — 141×98 · @ (790, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8623`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8624`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1847`
+            - [icon] **Data** — 143×98 · @ (931, 0) abs · file assets/data-1219-8626.svg `1219:8626`
+            - [khối] **Data** — 153×98 · @ (1074, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8631`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8632`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1850`
+            - [khối] **Data** — 155×98 · @ (1227, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8636`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8637`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1852`
+            - [khối] **Data** — 141×98 · @ (1382, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8639`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8640`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1853`
+            - [khối] **Data** — 142×98 · @ (1523, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8642`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8643`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1854`
+            - [khối] **Data** — 142×98 · @ (1665, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8645`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8646`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1855`
+            - [icon] **Data** — 142×98 · @ (1807, 0) abs · file assets/data-1219-8650.svg `1219:8650`
+            - [khối] **Data** — 142×98 · @ (1949, 0) abs · column pad 21 8 21 8 justify CENTER align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8653`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 37) flow · row justify CENTER align CENTER `1219:8654`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1858`
+            - [khối] **Data** — 141×98 · @ (2091, 0) abs · row justify CENTER align CENTER `1219:8656`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 37) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336961`
+            - [khối] **Data** — 200×98 · @ (2232, 0) abs · row justify CENTER align CENTER `6518:337021`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 37) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337022`
+            - [khối] **Data · Đang chỉnh sửa mô tả** — 324×98 · @ (56, 0) abs · column pad 12 12 12 24 justify CENTER · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8658`
+              - [hình] **Data:shadow** — 324×98 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8659`
+              - [khối] **Edit Fields** — 287×79 [FILL×HUG] · @ (24, 9.5) flow · column gap 8 · clip `2857:58686`
+                - [instance] **Input · Tên bài học** ⟨Atom/Input: Loại=Gift code, Text=单韵母, State=Text, Kiểu=S⟩ — 287×37 [FILL×HUG] · @ (0, 0) flow · row pad 8 12 8 12 justify CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `2857:58687`
+                  - [khối] **Container** — 261×19 [FILL×HUG] · @ (13, 9) flow · column · clip `I2857:58687;2808:42228`
+                    - [chữ] “单韵母” — 261×19 [FILL×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 400 #334155 (color/text/primary) · truncate 1 lines `I2857:58687;2808:42229`
+                - [instance] **Input · Mô tả** ⟨Atom/Input: Loại=Gift code, Text=Vận mẫu đơn, State=Sửa trực tiếp, Kiểu=S⟩ — 287×34 [FILL×HUG] · @ (0, 45) flow · row pad 8 12 8 12 justify CENTER · bg #fff5ec (color/extended/fff5ec) · radius 8px · clip `2857:58690`
+                  - [khối] **Container** — 263×16 [FILL×FIXED] · @ (12, 8) flow · row gap 1 align CENTER · clip `I2857:58690;3004:75120`
+                    - [chữ] “Vận mẫu đơn” — 80×19 [HUG×FILL] · @ (0, -1.5) flow · Afacad 15/1.25 (18.75px) 400 #334155 (color/text/primary) · no-wrap `I2857:58690;3004:75121`
+                    - [hình] **Rectangle 5747** — 1×16 · @ (81, 0) flow · bg #e65100 (color/brand/orange) `I2857:58690;3004:75122`
+            - [khối] **Data - STT** — 56×98 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53420`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 40) flow · file assets/drag-handle-2808-53470.svg `2808:53470`
+              - [chữ] “3” — 37×20 [FILL×HUG] · @ (18, 39) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53421`
+          - [khối] **Row 4** — 2432×64 · @ (0, 259) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:8669`
+            - [khối] **Data** — 284×64 · @ (380, 0.41) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8670`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 17) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39174`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39174;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39174;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39174;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39174;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39174-2015-36012.svg `I2015:39174;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, 0.41) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:8677`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53145`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53145;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53145;2808:53130`
+            - [khối] **Data** — 141×66 · @ (790, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8681`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8682`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1859`
+            - [icon] **Data** — 143×66 · @ (931, 0.36) abs · file assets/data-1219-8684.svg `1219:8684`
+            - [khối] **Data** — 153×66 · @ (1074, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8689`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8690`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1862`
+            - [khối] **Data** — 155×66 · @ (1227, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8692`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8693`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1863`
+            - [khối] **Data** — 141×66 · @ (1382, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8697`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8698`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1865`
+            - [khối] **Data** — 142×66 · @ (1523, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8700`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8701`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1866`
+            - [khối] **Data** — 142×66 · @ (1665, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8703`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8704`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1867`
+            - [icon] **Data** — 142×66 · @ (1807, 0.36) abs · file assets/data-1219-8708.svg `1219:8708`
+            - [khối] **Data** — 142×66 · @ (1949, 0.36) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8711`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8712`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1870`
+            - [khối] **Data** — 141×63 · @ (2091, 0.36) abs · row justify CENTER align CENTER `1219:8714`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336962`
+            - [khối] **Data** — 200×63 · @ (2232, 0.36) abs · row justify CENTER align CENTER `6518:337023`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337024`
+            - [khối] **Data** — 324×72 · @ (56, 0.41) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8716`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8717`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8718`
+                - [khối] **Container** — 77×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8722`
+                  - [khối] **Container** — 77×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8723`
+                    - [chữ] “复韵母” — 45×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:8724`
+                  - [khối] **Container** — 77×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8725`
+                    - [chữ] “Vận mẫu kép” — 77×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:8726`
+            - [khối] **Data - STT** — 56×64 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53422`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 23) flow · file assets/drag-handle-2808-53472.svg `2808:53472`
+              - [chữ] “4” — 37×20 [FILL×HUG] · @ (18, 22) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53423`
+          - [khối] **Row 5** — 2432×63 · @ (0, 323) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:8727`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8728`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39185`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39185;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39185;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39185;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39185;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39185-2015-36012.svg `I2015:39185;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:8735`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=00:50:00, Type=Thời gian · Dưới 80%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #fff7ed · radius 4px · border 1px solid #fb923c · clip `2808:53148`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53148;2808:53121`
+                  - [chữ] “00:50:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #e65100 · text-align center · no-wrap `I2808:53148;2808:53122`
+            - [khối] **Data** — 141×66 · @ (790, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8739`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8740`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1871`
+            - [khối] **Data** — 143×66 · @ (931, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8742`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8743`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1872`
+            - [khối] **Data** — 153×66 · @ (1074, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8745`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8746`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1873`
+            - [khối] **Data** — 155×66 · @ (1227, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8750`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8751`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1875`
+            - [khối] **Data** — 141×66 · @ (1382, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8753`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8754`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1876`
+            - [icon] **Data** — 142×66 · @ (1523, -0.44) abs · file assets/data-1219-8756.svg `1219:8756`
+            - [khối] **Data** — 142×66 · @ (1665, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8761`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8762`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1879`
+            - [khối] **Data** — 142×66 · @ (1807, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8766`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8767`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1881`
+            - [khối] **Data** — 142×66 · @ (1949, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8769`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8770`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1882`
+            - [khối] **Data** — 141×63 · @ (2091, -0.44) abs · row justify CENTER align CENTER `1219:8772`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336963`
+            - [khối] **Data** — 200×63 · @ (2232, -0.44) abs · row justify CENTER align CENTER `6518:337025`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337026`
+            - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8774`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8775`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8776`
+                - [khối] **Container** — 152×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8780`
+                  - [khối] **Container** — 152×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8781`
+                    - [chữ] “汉语难吗？” — 75×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:8782`
+                  - [khối] **Container** — 152×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8783`
+                    - [chữ] “Tiếng Trung có khó không” — 152×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:8784`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53424`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53474.svg `2808:53474`
+              - [chữ] “5” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53425`
+          - [khối] **Row 6** — 2432×63 · @ (0, 386) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:8785`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8786`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39196`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39196;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39196;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39196;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39196;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39196-2015-36012.svg `I2015:39196;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:8793`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53151`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53151;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53151;2808:53130`
+            - [khối] **Data** — 141×66 · @ (790, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8797`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8798`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1883`
+            - [icon] **Data** — 143×66 · @ (931, -0.33) abs · file assets/data-1219-8800.svg `1219:8800`
+            - [khối] **Data** — 153×66 · @ (1074, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8805`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8806`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1886`
+            - [khối] **Data** — 155×66 · @ (1227, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8808`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8809`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1887`
+            - [khối] **Data** — 141×66 · @ (1382, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8811`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8812`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1888`
+            - [khối] **Data** — 142×66 · @ (1523, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8814`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8815`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1889`
+            - [khối] **Data** — 142×66 · @ (1665, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8819`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8820`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1891`
+            - [icon] **Data** — 142×66 · @ (1807, -0.33) abs · file assets/data-1219-8822.svg `1219:8822`
+            - [khối] **Data** — 142×66 · @ (1949, -0.33) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8827`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8828`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1894`
+            - [khối] **Data** — 141×64 · @ (2091, -1.33) abs · row justify CENTER align CENTER `1219:8830`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 20) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336964`
+            - [khối] **Data** — 200×64 · @ (2232, -1.33) abs · row justify CENTER align CENTER `6518:337027`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 20) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337028`
+            - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8832`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8833`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8834`
+                - [khối] **Container** — 111×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8838`
+                  - [khối] **Container** — 111×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8839`
+                    - [chữ] “声母 1” — 41×19 [HUG×HUG] · @ (0, 0) flow · runs: “声母” Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper; “ 1” Afacad 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:8840`
+                  - [khối] **Container** — 111×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8841`
+                    - [chữ] “Thanh mẫu cơ bản” — 111×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:8842`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53426`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53476.svg `2808:53476`
+              - [chữ] “6” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53427`
+          - [khối] **Row 7** — 2432×63 · @ (0, 449) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:8843`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8844`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39207`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39207;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39207;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39207;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39207;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39207-2015-36012.svg `I2015:39207;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:8851`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53154`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53154;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53154;2808:53130`
+            - [khối] **Data** — 141×66 · @ (790, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8855`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8856`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1895`
+            - [khối] **Data** — 143×66 · @ (931, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8858`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8859`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1896`
+            - [khối] **Data** — 153×66 · @ (1074, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8861`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8862`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1897`
+            - [khối] **Data** — 155×66 · @ (1227, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8866`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8867`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1899`
+            - [khối] **Data** — 141×66 · @ (1382, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8869`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8870`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1900`
+            - [icon] **Data** — 142×66 · @ (1523, -0.25) abs · file assets/data-1219-8872.svg `1219:8872`
+            - [icon] **Data** — 142×66 · @ (1665, -0.25) abs · file assets/data-1219-8875.svg `1219:8875`
+            - [khối] **Data** — 142×66 · @ (1807, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8880`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8881`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1904`
+            - [khối] **Data** — 142×66 · @ (1949, -0.25) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8885`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8886`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1906`
+            - [khối] **Data** — 141×64 · @ (2091, -1.25) abs · row justify CENTER align CENTER `1219:8888`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 20) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336965`
+            - [khối] **Data** — 200×64 · @ (2232, -1.25) abs · row justify CENTER align CENTER `6518:337029`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 20) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337030`
+            - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8890`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8891`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8892`
+                - [khối] **Container** — 105×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8896`
+                  - [khối] **Container** — 105×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8897`
+                    - [chữ] “你叫什么名字？” — 105×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:8898`
+                  - [khối] **Container** — 105×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8899`
+                    - [chữ] “Hỏi tên” — 42×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:8900`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53428`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53478.svg `2808:53478`
+              - [chữ] “7” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53429`
+          - [khối] **Row 8** — 2432×63 · @ (0, 512) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:8901`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8902`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39218`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39218;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39218;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39218;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39218;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39218-2015-36012.svg `I2015:39218;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:8909`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53157`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53157;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53157;2808:53130`
+            - [khối] **Data** — 141×66 · @ (790, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8913`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8914`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1907`
+            - [icon] **Data** — 143×66 · @ (931, -0.67) abs · file assets/data-1219-8916.svg `1219:8916`
+            - [khối] **Data** — 153×66 · @ (1074, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8921`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8922`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1910`
+            - [khối] **Data** — 155×66 · @ (1227, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8924`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8925`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1911`
+            - [khối] **Data** — 141×66 · @ (1382, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8927`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8928`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1912`
+            - [khối] **Data** — 142×66 · @ (1523, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8930`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8931`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1913`
+            - [khối] **Data** — 142×66 · @ (1665, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8935`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8936`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1915`
+            - [icon] **Data** — 142×66 · @ (1807, -0.67) abs · file assets/data-1219-8940.svg `1219:8940`
+            - [khối] **Data** — 142×66 · @ (1949, -0.67) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8943`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8944`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1918`
+            - [khối] **Data** — 141×63 · @ (2091, -0.67) abs · row justify CENTER align CENTER `1219:8946`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336966`
+            - [khối] **Data** — 200×63 · @ (2232, -0.67) abs · row justify CENTER align CENTER `6518:337031`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337032`
+            - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8948`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:8949`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:8950`
+                - [khối] **Container** — 126×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:8954`
+                  - [khối] **Container** — 126×19 [FILL×HUG] · @ (0, 0) flow · column `1219:8955`
+                    - [chữ] “声母 2” — 41×19 [HUG×HUG] · @ (0, 0) flow · runs: “声母” Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper; “ 2” Afacad 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:8956`
+                  - [khối] **Container** — 126×19 [FILL×HUG] · @ (0, 21) flow · column `1219:8957`
+                    - [chữ] “Thanh mẫu nâng cao” — 126×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:8958`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53430`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53480.svg `2808:53480`
+              - [chữ] “8” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53431`
+          - [khối] **Row 9** — 2432×64 · @ (0, 575) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:8959`
+            - [khối] **Data** — 284×64 · @ (380, 0.31) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8960`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 17) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39229`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39229;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39229;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39229;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39229;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39229-2015-36012.svg `I2015:39229;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, 0.31) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:8967`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:35:00, Type=Thời gian · Vượt⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #fef2f2 · radius 4px · border 1px solid #ed4038 · clip `2808:53160`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53160;2808:53133`
+                  - [chữ] “01:35:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #ed4038 · text-align center · no-wrap `I2808:53160;2808:53134`
+            - [khối] **Data** — 141×66 · @ (790, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8971`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8972`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1919`
+            - [khối] **Data** — 143×66 · @ (931, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8974`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8975`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1920`
+            - [icon] **Data** — 153×66 · @ (1074, 0.16) abs · file assets/data-1219-8977.svg covers (0, 0) 18×66 `1219:8977`
+            - [khối] **Data** — 155×66 · @ (1227, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8980`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8981`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1922`
+            - [khối] **Data** — 141×66 · @ (1382, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8983`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8984`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1923`
+            - [khối] **Data** — 142×66 · @ (1523, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8986`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8987`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1924`
+            - [khối] **Data** — 142×66 · @ (1665, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8989`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8990`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1925`
+            - [khối] **Data** — 142×66 · @ (1807, 0.16) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:8994`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:8995`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1927`
+            - [icon] **Data** — 142×66 · @ (1949, 0.16) abs · file assets/data-1219-8999.svg `1219:8999`
+            - [khối] **Data** — 141×63 · @ (2091, 0.16) abs · row justify CENTER align CENTER `1219:9004`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336967`
+            - [khối] **Data** — 200×63 · @ (2232, 0.16) abs · row justify CENTER align CENTER `6518:337033`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337034`
+            - [khối] **Data** — 324×72 · @ (56, 0.31) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9006`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9007`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9008`
+                - [khối] **Container** — 90×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9012`
+                  - [khối] **Container** — 90×19 [FILL×HUG] · @ (0, 0) flow · column · clip `1219:9013`
+                    - [chữ] “听说训练” — 60×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap · truncate `1219:9014`
+                  - [khối] **Container** — 90×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9015`
+                    - [chữ] “Luyện nghe nói” — 90×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:9016`
+            - [khối] **Data - STT** — 56×64 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53432`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 23) flow · file assets/drag-handle-2808-53482.svg `2808:53482`
+              - [chữ] “9” — 37×20 [FILL×HUG] · @ (18, 22) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53433`
+          - [khối] **Row 10** — 2432×63 · @ (0, 639) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:9017`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9018`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39240`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39240;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39240;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39240;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39240;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39240-2015-36012.svg `I2015:39240;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:9025`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53163`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53163;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53163;2808:53130`
+            - [khối] **Data** — 141×66 · @ (790, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9029`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9030`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1931`
+            - [icon] **Data** — 143×66 · @ (931, -0.52) abs · file assets/data-1219-9032.svg `1219:9032`
+            - [khối] **Data** — 153×66 · @ (1074, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9037`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9038`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1934`
+            - [khối] **Data** — 155×66 · @ (1227, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9040`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9041`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1935`
+            - [khối] **Data** — 141×66 · @ (1382, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9043`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9044`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1936`
+            - [khối] **Data** — 142×66 · @ (1523, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9048`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9049`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1938`
+            - [khối] **Data** — 142×66 · @ (1665, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9051`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9052`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1939`
+            - [icon] **Data** — 142×66 · @ (1807, -0.52) abs · file assets/data-1219-9054.svg `1219:9054`
+            - [khối] **Data** — 142×66 · @ (1949, -0.52) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9057`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9058`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1941`
+            - [khối] **Data** — 141×63 · @ (2091, -0.52) abs · row justify CENTER align CENTER `1219:9060`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336968`
+            - [khối] **Data** — 200×63 · @ (2232, -0.52) abs · row justify CENTER align CENTER `6518:337035`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337036`
+            - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9062`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9063`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9064`
+                - [khối] **Container** — 86×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9068`
+                  - [khối] **Container** — 86×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9069`
+                    - [chữ] “声调复习” — 60×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:9070`
+                  - [khối] **Container** — 86×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9071`
+                    - [chữ] “Ôn thanh điệu” — 86×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:9072`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53434`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53484.svg `2808:53484`
+              - [chữ] “10” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53435`
+          - [khối] **Row 11** — 2432×63 · @ (0, 702) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:9073`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9074`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39251`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39251;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39251;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39251;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39251;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39251-2015-36012.svg `I2015:39251;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:9081`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Time=4 ngày trước, Name=Trần Minh Khoa, Label=00:00:00, Type=Thời gian · Chưa có⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f1f5f9 · radius 4px · border 1px solid #cbd5e1 · clip `2808:53166`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53166;2808:53117`
+                  - [chữ] “00:00:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #cbd5e1 (color/text/muted) · text-align center · no-wrap `I2808:53166;2808:53118`
+            - [khối] **Data** — 141×66 · @ (790, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9085`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9086`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1942`
+            - [khối] **Data** — 143×66 · @ (931, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9088`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9089`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1943`
+            - [khối] **Data** — 153×66 · @ (1074, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9091`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9092`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1944`
+            - [khối] **Data** — 155×66 · @ (1227, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9094`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9095`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1945`
+            - [khối] **Data** — 141×66 · @ (1382, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9097`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9098`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1946`
+            - [khối] **Data** — 142×66 · @ (1523, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9100`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9101`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1947`
+            - [khối] **Data** — 142×66 · @ (1665, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9105`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9106`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1949`
+            - [khối] **Data** — 142×66 · @ (1807, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9110`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9111`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1951`
+            - [khối] **Data** — 142×66 · @ (1949, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9113`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9114`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1952`
+            - [khối] **Data** — 141×63 · @ (2091, -0.44) abs · row justify CENTER align CENTER `1219:9116`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2409:144839`
+            - [khối] **Data** — 200×63 · @ (2232, -0.44) abs · row justify CENTER align CENTER `6518:337037`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337038`
+            - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9120`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9121`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9122`
+                - [khối] **Container** — 76×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9126`
+                  - [khối] **Container** — 76×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9127`
+                    - [chữ] “写汉字” — 45×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:9128`
+                  - [khối] **Container** — 76×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9129`
+                    - [chữ] “Viết chữ Hán” — 76×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:9130`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53436`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53486.svg `2808:53486`
+              - [chữ] “11” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53437`
+          - [khối] **Row 12** — 2432×63 · @ (0, 765) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:9131`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9132`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39262`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39262;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39262;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39262;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39262;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39262-2015-36012.svg `I2015:39262;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:9139`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53169`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53169;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53169;2808:53130`
+            - [khối] **Data** — 141×66 · @ (790, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9143`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9144`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1953`
+            - [khối] **Data** — 143×66 · @ (931, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9146`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9147`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1954`
+            - [khối] **Data** — 153×66 · @ (1074, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9149`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9150`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1955`
+            - [khối] **Data** — 155×66 · @ (1227, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9154`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9155`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1957`
+            - [khối] **Data** — 141×66 · @ (1382, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9157`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9158`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1958`
+            - [icon] **Data** — 142×66 · @ (1523, -0.44) abs · file assets/data-1219-9160.svg `1219:9160`
+            - [icon] **Data** — 142×66 · @ (1665, -0.44) abs · file assets/data-1219-9165.svg `1219:9165`
+            - [khối] **Data** — 142×66 · @ (1807, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9170`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9171`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1963`
+            - [khối] **Data** — 142×66 · @ (1949, -0.44) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9173`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9174`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1964`
+            - [khối] **Data** — 141×63 · @ (2091, -0.44) abs · row justify CENTER align CENTER `1219:9178`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336969`
+            - [khối] **Data** — 200×63 · @ (2232, -0.44) abs · row justify CENTER align CENTER `6518:337039`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337040`
+            - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9180`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9181`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9182`
+                - [khối] **Container** — 107×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9186`
+                  - [khối] **Container** — 107×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9187`
+                    - [chữ] “个人信息” — 60×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:9188`
+                  - [khối] **Container** — 107×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9189`
+                    - [chữ] “Thông tin cá nhân” — 107×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:9190`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53438`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53488.svg `2808:53488`
+              - [chữ] “12” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53439`
+          - [khối] **Row 13** — 2432×63 · @ (0, 828) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:9191`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9192`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39273`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39273;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39273;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39273;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39273;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39273-2015-36012.svg `I2015:39273;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:9199`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53172`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53172;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53172;2808:53130`
+            - [khối] **Data** — 141×66 · @ (790, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9203`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9204`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1966`
+            - [khối] **Data** — 143×66 · @ (931, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9206`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9207`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1967`
+            - [icon] **Data** — 153×66 · @ (1074, -0.28) abs · file assets/data-1219-9209.svg covers (0, 0) 18×66 `1219:9209`
+            - [khối] **Data** — 155×66 · @ (1227, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9214`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9215`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1970`
+            - [khối] **Data** — 141×66 · @ (1382, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9217`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9218`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1971`
+            - [khối] **Data** — 142×66 · @ (1523, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9220`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9221`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1972`
+            - [khối] **Data** — 142×66 · @ (1665, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9225`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9226`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1974`
+            - [khối] **Data** — 142×66 · @ (1807, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9230`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9231`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1976`
+            - [khối] **Data** — 142×66 · @ (1949, -0.28) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9233`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9234`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1977`
+            - [icon] **Data** — 141×64 · @ (2091, -1.28) abs · file assets/data-1219-9236.svg `1219:9236`
+            - [khối] **Data** — 200×64 · @ (2232, -1.28) abs · row justify CENTER align CENTER `6518:337041`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 20) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337042`
+            - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9240`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9241`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9242`
+                - [khối] **Container** — 153×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9246`
+                  - [khối] **Container** — 153×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9247`
+                    - [chữ] “你做什么工作？” — 105×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:9248`
+                  - [khối] **Container** — 153×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9249`
+                    - [chữ] “Nghề nghiệp và công việc” — 153×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:9250`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53440`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53490.svg `2808:53490`
+              - [chữ] “13” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53441`
+          - [khối] **Row 14** — 2432×63 · @ (0, 891) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:9251`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9252`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39284`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39284;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39284;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39284;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39284;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39284-2015-36012.svg `I2015:39284;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:9259`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53175`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53175;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53175;2808:53130`
+            - [khối] **Data** — 141×66 · @ (790, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9263`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9264`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1978`
+            - [khối] **Data** — 143×66 · @ (931, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9266`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9267`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1979`
+            - [icon] **Data** — 153×66 · @ (1074, -0.2) abs · file assets/data-1219-9269.svg covers (0, 0) 18×66 `1219:9269`
+            - [khối] **Data** — 155×66 · @ (1227, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9272`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9273`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1981`
+            - [khối] **Data** — 141×66 · @ (1382, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9275`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9276`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1982`
+            - [khối] **Data** — 142×66 · @ (1523, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9278`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9279`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1983`
+            - [icon] **Data** — 142×66 · @ (1665, -0.2) abs · file assets/data-1219-9283.svg `1219:9283`
+            - [khối] **Data** — 142×66 · @ (1807, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9288`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9289`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1987`
+            - [khối] **Data** — 142×66 · @ (1949, -0.2) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9291`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9292`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1988`
+            - [khối] **Data** — 141×63 · @ (2091, -1.2) abs · row justify CENTER align CENTER `1219:9296`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336970`
+            - [khối] **Data** — 200×63 · @ (2232, -1.2) abs · row justify CENTER align CENTER `6518:337044`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337045`
+            - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9298`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9299`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9300`
+                - [khối] **Container** — 118×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9304`
+                  - [khối] **Container** — 118×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9305`
+                    - [chữ] “你是哪国人？” — 90×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:9306`
+                  - [khối] **Container** — 118×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9307`
+                    - [chữ] “Quốc gia, ngôn ngữ” — 118×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:9308`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53442`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53492.svg `2808:53492`
+              - [chữ] “14” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53443`
+          - [khối] **Row 15** — 2432×63 · @ (0, 954) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:9309`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9310`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39295`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39295;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39295;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39295;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39295;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39295-2015-36012.svg `I2015:39295;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:9317`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=00:45:00, Type=Thời gian · Dưới 80%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #fff7ed · radius 4px · border 1px solid #fb923c · clip `2808:53178`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53178;2808:53121`
+                  - [chữ] “00:45:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #e65100 · text-align center · no-wrap `I2808:53178;2808:53122`
+            - [khối] **Data** — 141×66 · @ (790, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9321`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9322`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1990`
+            - [khối] **Data** — 143×66 · @ (931, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9324`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9325`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1991`
+            - [khối] **Data** — 153×66 · @ (1074, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9327`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9328`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1992`
+            - [khối] **Data** — 155×66 · @ (1227, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9330`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9331`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1993`
+            - [khối] **Data** — 141×66 · @ (1382, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9333`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9334`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1994`
+            - [khối] **Data** — 142×66 · @ (1523, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9336`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9337`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1995`
+            - [khối] **Data** — 142×66 · @ (1665, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9339`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9340`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1996`
+            - [icon] **Data** — 142×66 · @ (1807, -0.62) abs · file assets/data-1219-9342.svg `1219:9342`
+            - [khối] **Data** — 142×66 · @ (1949, -0.62) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9347`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9348`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:1999`
+            - [khối] **Data** — 141×63 · @ (2091, -0.62) abs · row justify CENTER align CENTER `1219:9350`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336971`
+            - [khối] **Data** — 200×63 · @ (2232, -0.62) abs · row justify CENTER align CENTER `6518:337046`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337047`
+            - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9352`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9353`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9354`
+                - [khối] **Container** — 150×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9358`
+                  - [khối] **Container** — 150×19 [FILL×HUG] · @ (0, 0) flow · column · clip `1219:9359`
+                    - [chữ] “听力：去学校” — 90×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:9360`
+                  - [khối] **Container** — 150×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9361`
+                    - [chữ] “Nghe: đường đến trường” — 150×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:9362`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53444`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53494.svg `2808:53494`
+              - [chữ] “15” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53445`
+          - [khối] **Row 16** — 2432×63 · @ (0, 1017) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:9363`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9364`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39306`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39306;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39306;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39306;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39306;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39306-2015-36012.svg `I2015:39306;2015:36012`
+            - [khối] **Data** — 126×52 · @ (664, -0.44) abs · column pad 13 15 13 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:9371`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:00:00, Type=Thời gian · Dưới 80%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #fff7ed · radius 4px · border 1px solid #fb923c · clip `2808:53181`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53181;2808:53121`
+                  - [chữ] “01:00:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #e65100 · text-align center · no-wrap `I2808:53181;2808:53122`
+            - [khối] **Data** — 141×66 · @ (790, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9375`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9376`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2000`
+            - [khối] **Data** — 143×66 · @ (931, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9378`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9379`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2001`
+            - [khối] **Data** — 153×66 · @ (1074, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9381`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9382`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2002`
+            - [khối] **Data** — 155×66 · @ (1227, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9384`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9385`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2003`
+            - [icon] **Data** — 141×66 · @ (1382, -0.55) abs · file assets/data-1219-9387.svg `1219:9387`
+            - [khối] **Data** — 142×66 · @ (1523, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9392`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9393`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2006`
+            - [khối] **Data** — 142×66 · @ (1665, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9397`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9398`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2008`
+            - [khối] **Data** — 142×66 · @ (1807, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9402`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9403`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2010`
+            - [khối] **Data** — 142×66 · @ (1949, -0.55) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9407`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9408`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2012`
+            - [khối] **Data** — 141×63 · @ (2091, -0.55) abs · row justify CENTER align CENTER `1219:9412`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336972`
+            - [khối] **Data** — 200×63 · @ (2232, -0.55) abs · row justify CENTER align CENTER `6518:337048`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337049`
+            - [khối] **Data** — 324×72 · @ (56, -0.44) abs · column pad 16 12 16 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9414`
+              - [hình] **Data:shadow** — 324×71.84 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9415`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 16) flow · row gap 12 `1219:9416`
+                - [khối] **Container** — 110×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9420`
+                  - [khối] **Container** — 110×19 [FILL×HUG] · @ (0, 0) flow · column `1219:9421`
+                    - [chữ] “复习 1” — 41×19 [HUG×HUG] · @ (0, 0) flow · runs: “复习” Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper; “ 1” Afacad 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:9422`
+                  - [khối] **Container** — 110×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9423`
+                    - [chữ] “Ôn tập tổng hợp 1” — 110×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:9424`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53446`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53496.svg `2808:53496`
+              - [chữ] “16” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53447`
+          - [khối] **Row 17** — 2432×63 · @ (0, 1080) flow · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1219:9425`
+            - [khối] **Data** — 284×63 · @ (380, -0.44) abs · row gap 8 pad 0 12 0 12 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9426`
+              - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Count=false, Leading Icon=1994:25956, Clear=false, Count Value=1, Leading=true, Chevron=true, Value=Nhập Môn Tiếng Trung (HSK1) · HK I, Size=XS, State=Default, Content=Value⟩ — 259×30 [FILL×FIXED] · @ (12, 16.5) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2015:39317`
+                - [instance] **Leading** ⟨Atom/ID Badge: Type=7-digit, Size=20H, Item=05⟩ — 64×22 [HUG×HUG] · @ (13, 4) flow · row pad 3 8 3 8 justify CENTER align CENTER · bg #f8fffc · radius 6px `I2015:39317;2015:36006`
+                  - [chữ] “1343272” — 48×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/1.25 (16.25px) 700 #2d9732 · no-wrap `I2015:39317;2015:36006;1994:25957`
+                - [khối] **Content** — 145×19 [FILL×HUG] · @ (83, 5.5) flow · row align CENTER · clip `I2015:39317;2015:36007`
+                  - [chữ] “Nhập Môn Tiếng Trung (HSK1) · HK I” — 145×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · truncate 1 lines `I2015:39317;2015:36008`
+                - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (234, 7) flow · file assets/chevron-I2015-39317-2015-36012.svg `I2015:39317;2015:36012`
+            - [khối] **Data** — 126×51 · @ (664, -0.44) abs · column pad 13 15 12 16 align CENTER · border 0 1px 0 0 solid #e2e8f0 (color/border/default) `1219:9433`
+              - [instance] **Atom/Chip · Thời gian** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=01:30:00, Type=Thời gian · 90–100%⟩ — 75×26 [HUG×HUG] · @ (25.5, 13) flow · row pad 4 8 4 8 justify CENTER · bg #f0ffef · radius 4px · border 1px solid #2d9732 · clip `2808:53184`
+                - [khối] **Container** — 57×16 [HUG×HUG] · @ (9, 5) flow · column align CENTER · clip `I2808:53184;2808:53129`
+                  - [chữ] “01:30:00” — 57×16 [HUG×HUG] · @ (0, 0) flow · Afacad 15/16px 500 #2d9732 · text-align center · no-wrap `I2808:53184;2808:53130`
+            - [khối] **Data** — 141×66 · @ (790, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9437`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9438`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (50, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2014`
+            - [khối] **Data** — 143×66 · @ (931, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9440`
+              - [khối] **Container** — 126×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9441`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (51, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2015`
+            - [khối] **Data** — 153×66 · @ (1074, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9443`
+              - [khối] **Container** — 136×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9444`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (56, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2016`
+            - [khối] **Data** — 155×66 · @ (1227, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9446`
+              - [khối] **Container** — 138×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9447`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=Yes⟩ — 24×24 · @ (57, 0) flow · bg #f8f8fa (color/extended/f8f8fa) · radius 8px · shadow inset 0 0 0 1.2px #e2e8f0, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2017`
+            - [khối] **Data** — 141×66 · @ (1382, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9449`
+              - [khối] **Container** — 124×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9450`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2018`
+            - [khối] **Data** — 142×66 · @ (1523, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9452`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9453`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2019`
+            - [khối] **Data** — 142×66 · @ (1665, -0.47) abs · column pad 21 8 21 8 align CENTER · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9455`
+              - [khối] **Container** — 125×24 [FILL×HUG] · @ (8, 21) flow · row justify CENTER align CENTER `1219:9456`
+                - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (50.5, 0) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `1226:2020`
+            - [icon] **Data** — 142×66 · @ (1807, -0.47) abs · file assets/data-1219-9458.svg `1219:9458`
+            - [icon] **Data** — 142×66 · @ (1949, -0.47) abs · file assets/data-1219-9463.svg `1219:9463`
+            - [khối] **Data** — 141×63 · @ (2091, -0.47) abs · row justify CENTER align CENTER `1219:9466`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (58.5, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:336973`
+            - [khối] **Data** — 200×63 · @ (2232, -0.47) abs · row justify CENTER align CENTER `6518:337050`
+              - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=24, Disabled=No⟩ — 24×24 · @ (88, 19.5) flow · bg #ffffff · radius 8px · shadow inset 0 0 0 1.2px #cbd5e1, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6518:337051`
+            - [khối] **Data** — 324×64 · @ (56, -0.44) abs · column pad 12 12 12 24 · bg #ffffff (color/neutral/white) · border 0 1px 0 0 solid #f1f5f9 (color/border/subtle) `1219:9468`
+              - [hình] **Data:shadow** — 324×64.28 · @ (0, 0) abs · bg rgba(255, 255, 255, 0.002) · shadow 2.25px 0 5.63px -2.25px rgba(0, 0, 0, 0.06) `1219:9469`
+              - [khối] **Container** — 287×40 [FILL×HUG] · @ (24, 12) flow · row gap 12 `1219:9470`
+                - [khối] **Container** — 115×40 [HUG×HUG] · @ (0, 0) flow · column gap 2 `1219:9474`
+                  - [khối] **Container** — 115×19 [FILL×HUG] · @ (0, 0) flow · column · clip `1219:9475`
+                    - [chữ] “听力：长对话” — 90×19 [HUG×HUG] · @ (0, 0) flow · Noto Sans SC 15/1.25 (18.75px) 700 #334155 (color/text/primary) case upper · no-wrap `1219:9476`
+                  - [khối] **Container** — 115×19 [FILL×HUG] · @ (0, 21) flow · column `1219:9477`
+                    - [chữ] “Nghe: hội thoại dài” — 115×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #64748b (color/text/secondary) · no-wrap `1219:9478`
+            - [khối] **Data - STT** — 56×63 · @ (0, 0) abs · row pad 0 0 0 8 align CENTER · bg #ffffff · border 0 1px 0 0 solid #f1f5f9 · clip `2808:53448`
+              - [icon] **Drag Handle** ⟨Action Icon: Icon=Drag Handle, Size=18⟩ — 10×18 · @ (8, 22.5) flow · file assets/drag-handle-2808-53498.svg `2808:53498`
+              - [chữ] “17” — 37×20 [FILL×HUG] · @ (18, 21.5) flow · Afacad 15/auto 700 #334155 · text-align center `2808:53449`
+      - [khối] **Scrollbar ngang** — 1092×8 [FILL×FIXED] · @ (0, 1281) flow · bg #f1f5f9 · radius 4px · clip `6518:337108`
+        - [hình] **Thumb** — 490×8 · @ (0, 0) abs · bg #ccd6e0 · radius 4px `6518:337109`
+      - [instance] **Molecule/Add New Bar · Thêm bài học** ⟨Molecule/Add New Bar: Icon trái=false, Nút=1075:1478, Placeholder=Nhập nhanh tên bài học — nhấn Enter để thêm dòng mới, Type=Box, Size=M, State=Default⟩ — 1092×40 [FILL×FIXED] · @ (0, 1301) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #f8fafc (color/extended/f8fafc) · radius 8px · border 1px dashed #cbd5e1 (color/extended/cbd5e1) `6518:337110`
+        - [chữ] “Nhập nhanh tên bài học — nhấn Enter để thêm dòng mới” — 1034×19 [FILL×HUG] · @ (13, 10.5) flow · Afacad 15/1.25 (18.75px) 400 italic #cccccc (color/extended/cccccc) · truncate 1 lines `I6518:337110;5056:365849`
+        - [icon] **Action Button** ⟨Atom/Icon Button: Icon=Add Rounded⟩ — 20×20 · @ (1059, 10) flow · file assets/action-button-I6518-337110-5056-365850.svg covers (-2, -2) 26×26 `I6518:337110;5056:365850`
+      - [khối] **Footer · Phân trang** — 1092×25 [FILL×HUG] · @ (0, 1353) flow · row gap 8 align CENTER · clip `6518:337117`
+        - [chữ] “Hiển thị 1–17 trong 56 buổi học” — 866×17 [FILL×HUG] · @ (0, 4) flow · Afacad 13/auto 400 #94a3b8 `6518:337118`
+        - [icon] **Trang ‹** — 36×24 · @ (874, 0.5) flow · file assets/trang-6518-337119.svg `6518:337119`
+        - [khối] **Trang 1** — 25×23 [HUG×HUG] · @ (918, 1) flow · row pad 3 9 3 9 align CENTER · bg #e65100 · radius 6px · clip `6518:337121`
+          - [chữ] “1” — 7×17 [HUG×HUG] · @ (9, 3) flow · Afacad 13/17px 600 #ffffff · no-wrap `6518:337122`
+        - [khối] **Trang 2** — 27×25 [HUG×HUG] · @ (951, 0) flow · row pad 3 9 3 9 align CENTER · radius 6px · border 1px solid #e2e8f0 · clip `6518:337123`
+          - [chữ] “2” — 7×17 [HUG×HUG] · @ (10, 4) flow · Afacad 13/17px 600 #64748b · no-wrap `6518:337124`
+        - [khối] **Trang 3** — 27×25 [HUG×HUG] · @ (986, 0) flow · row pad 3 9 3 9 align CENTER · radius 6px · border 1px solid #e2e8f0 · clip `6518:337125`
+          - [chữ] “3” — 7×17 [HUG×HUG] · @ (10, 4) flow · Afacad 13/17px 600 #64748b · no-wrap `6518:337126`
+        - [khối] **Trang 8** — 27×25 [HUG×HUG] · @ (1021, 0) flow · row pad 3 9 3 9 align CENTER · radius 6px · border 1px solid #e2e8f0 · clip `6518:337129`
+          - [chữ] “4” — 7×17 [HUG×HUG] · @ (10, 4) flow · Afacad 13/17px 600 #64748b · no-wrap `6518:337130`
+        - [icon] **Trang ›** — 36×24 · @ (1056, 0.5) flow · file assets/trang-6518-337131.svg `6518:337131`
+  - [instance] **Sidebar · MENU - CD** ⟨MENU - CD: Trang=Khoá học / Quy trình / Lộ trình (S4)⟩ — 300×1535.75 · @ (0, 0) abs · bg #ff5b00 · clip `4915:256398`
+    - [khối] **Frame 427322079** — 371.25×1198 · @ (0, -216) abs · bg #ff5b00 `I4915:256398;4901:220980`
+      - [icon] **Subtract** — 332.18×305.61 · @ (277.9, 67.31) abs · file assets/subtract-I4915-256398-4901-220982.svg covers (1.16, 148.69) 20.94×150.43 `I4915:256398;4901:220982`
+      - [icon] **Intersect** — 196.74×223.25 · @ (281.58, 127.62) abs · file assets/intersect-I4915-256398-4901-220989.svg covers (0.61, 88.38) 17.81×130.99 `I4915:256398;4901:220989`
+      - [icon] **Vector** — 92.05×189.04 · @ (0, 170.29) abs · file assets/vector-I4915-256398-4901-221002.svg covers (0, 45.71) 92.05×143.32 `I4915:256398;4901:221002`
+      - [icon] **Vector** — 485.25×688.49 · @ (-54.28, 531.77) abs · file assets/vector-I4915-256398-4901-221003.svg covers (54.28, 20.6) 300×651.43 `I4915:256398;4901:221003`
+      - [icon] **Union** — 328.37×643.92 · @ (98.87, 829.04) abs · file assets/union-I4915-256398-4901-221004.svg covers (0, 0) 201.13×643.92 `I4915:256398;4901:221004`
+      - [icon] **Group 240002** — 324.75×297.48 · @ (-61.5, 181.5) abs · file assets/group-240002-I4915-256398-4901-221007.svg covers (61.5, 34.5) 263.25×262.98 `I4915:256398;4901:221007`
+      - [khối] **material-symbols:menu-rounded** — 18×18 · @ (164.25, 240.75) abs · clip · trống `I4915:256398;4901:221028`
+      - [khối] **Frame 427322029** — 36×36 · @ (9.75, 541.5) abs · clip · trống `I4915:256398;4901:221029`
+      - [khối] **Menu Section 1: Quy trình (Expanded)** — 192×1100.36 · @ (96, 294) abs · column gap 8 align MAX `I4915:256398;4901:221030`
+        - [icon] **Frame 1171274940** — 192×28.36 · @ (0, 0) flow · file assets/frame-1171274940-I4915-256398-4901-221031.svg `I4915:256398;4901:221031`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=1150:22358, Label=Quy trình, Type=Chính dropdown, State=Default, Expanded=No⟩ — 192×44 [FILL×HUG] · @ (0, 36.36) flow · row space-between pad 8 8 8 8 align CENTER · radius 8px `I4915:256398;4901:221036`
+          - [khối] **Content** — 158×28 [FILL×HUG] · @ (8, 8) flow · row gap 8 align CENTER · clip `I4915:256398;4901:221036;2245:87821`
+            - [icon] **Icon** ⟨ICON MENU: ICON MENU=Quy trình⟩ — 28×28 · @ (0, 0) flow · file assets/icon-I4915-256398-4901-221036-2245-87816.svg `I4915:256398;4901:221036;2245:87816`
+            - [chữ] “Quy trình” — 122×15 [FILL×HUG] · @ (36, 6.5) flow · Unbounded 12/1.25 (15px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221036;2245:87820`
+          - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (166, 13) flow · file assets/chevron-I4915-256398-4901-221036-2245-87822.svg `I4915:256398;4901:221036;2245:87822`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=4835:160221, Label=Kiến thức (S1) , Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 88.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221037`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Kiến thức⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221037-2245-87904.svg `I4915:256398;4901:221037;2245:87904`
+          - [chữ] “Kiến thức (S1) ” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221037;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=483:3548, Label=Học kỳ, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 136.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221038`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Học kỳ⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221038-2245-87904.svg `I4915:256398;4901:221038;2245:87904`
+          - [chữ] “Học kỳ” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221038;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=458:1148, Label=Tổng quan (S2), Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 184.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221039`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tổng quan⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221039-2245-87904.svg `I4915:256398;4901:221039;2245:87904`
+          - [chữ] “Tổng quan (S2)” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221039;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53778, Label=Lộ trình (S4), Type=Menu phụ, State=Select, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 232.36) flow · row gap 8 pad 8 4 8 8 align CENTER · bg `linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.25) 100%)` · radius 8px · shadow inset 0 0 0 1px rgba(255, 255, 255, 0.2), 0 1.25px 2.25px 0 rgba(0, 0, 0, 0.05) · backdrop blur(2.25px) `I4915:256398;4901:221040`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Lộ trình⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221040-2245-87910.svg `I4915:256398;4901:221040;2245:87910`
+          - [chữ] “Lộ trình (S4)” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221040;2245:87914`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=470:993, Label=Kỹ năng (S6), Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 280.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;5491:336932`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Thư viện kỹ năng⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-5491-336932-2245-87904.svg `I4915:256398;5491:336932;2245:87904`
+          - [chữ] “Kỹ năng (S6)” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:336932;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35762, Label=BTVN & Kiểm Tra, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 328.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;5491:343756`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Bài tập và kiểm tra⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-5491-343756-2245-87904.svg `I4915:256398;5491:343756;2245:87904`
+          - [chữ] “BTVN & Kiểm Tra” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:343756;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=483:3592, Label=Quản lý, Type=Chính dropdown, State=Default, Expanded=No⟩ — 192×44 [FILL×HUG] · @ (0, 376.36) flow · row space-between pad 8 8 8 8 align CENTER · radius 8px `I4915:256398;4901:221041`
+          - [khối] **Content** — 158×28 [FILL×HUG] · @ (8, 8) flow · row gap 8 align CENTER · clip `I4915:256398;4901:221041;2245:87821`
+            - [icon] **Icon** ⟨ICON MENU: ICON MENU=Quản lý⟩ — 28×28 · @ (0, 0) flow · file assets/icon-I4915-256398-4901-221041-2245-87816.svg `I4915:256398;4901:221041;2245:87816`
+            - [chữ] “Quản lý” — 122×15 [FILL×HUG] · @ (36, 6.5) flow · Unbounded 12/1.25 (15px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221041;2245:87820`
+          - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (166, 13) flow · file assets/chevron-I4915-256398-4901-221041-2245-87822.svg `I4915:256398;4901:221041;2245:87822`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53557, Label=Quản lý tiến độ, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 428.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221042`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Quản lý tiến độ⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221042-2245-87904.svg `I4915:256398;4901:221042;2245:87904`
+          - [chữ] “Quản lý tiến độ” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221042;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=442:1606, Label=Log cập nhật, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 476.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221043`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Log⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221043-2245-87904.svg `I4915:256398;4901:221043;2245:87904`
+          - [chữ] “Log cập nhật” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221043;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53558, Label=lỗi dữ liệu, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 524.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221044`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Lỗi dữ liệu⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221044-2245-87904.svg `I4915:256398;4901:221044;2245:87904`
+          - [chữ] “lỗi dữ liệu” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221044;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53559, Label=Biên bản, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 572.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221045`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Biên bản⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221045-2245-87904.svg `I4915:256398;4901:221045;2245:87904`
+          - [chữ] “Biên bản” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221045;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53560, Label=Quy trình QC, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 620.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221046`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Quy trình QC⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221046-2245-87904.svg `I4915:256398;4901:221046;2245:87904`
+          - [chữ] “Quy trình QC” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221046;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=483:3598, Label=Tài liệu, Type=Chính dropdown, State=Default, Expanded=No⟩ — 192×44 [FILL×HUG] · @ (0, 668.36) flow · row space-between pad 8 8 8 8 align CENTER · radius 8px `I4915:256398;4901:221047`
+          - [khối] **Content** — 158×28 [FILL×HUG] · @ (8, 8) flow · row gap 8 align CENTER · clip `I4915:256398;4901:221047;2245:87821`
+            - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tài liệu⟩ — 28×28 · @ (0, 0) flow · file assets/icon-I4915-256398-4901-221047-2245-87816.svg `I4915:256398;4901:221047;2245:87816`
+            - [chữ] “Tài liệu” — 122×15 [FILL×HUG] · @ (36, 6.5) flow · Unbounded 12/1.25 (15px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221047;2245:87820`
+          - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (166, 13) flow · file assets/chevron-I4915-256398-4901-221047-2245-87822.svg `I4915:256398;4901:221047;2245:87822`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53561, Label=Mindset, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 720.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221048`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Mindset⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221048-2245-87904.svg `I4915:256398;4901:221048;2245:87904`
+          - [chữ] “Mindset” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221048;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53562, Label=tiêu chuẩn g.Trình, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 768.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221049`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tiêu chuẩn giáo trình⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221049-2245-87904.svg `I4915:256398;4901:221049;2245:87904`
+          - [chữ] “tiêu chuẩn g.Trình” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221049;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=470:999, Label=HD Giảng dạy, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 816.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221050`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tài liệu & hướng dẫn⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221050-2245-87904.svg `I4915:256398;4901:221050;2245:87904`
+          - [chữ] “HD Giảng dạy” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221050;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=2808:53556, Label=Nội dung (S3), Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 864.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;4901:221051`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Nội dung⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-4901-221051-2245-87904.svg `I4915:256398;4901:221051;2245:87904`
+          - [chữ] “Nội dung (S3)” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;4901:221051;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=470:997, Label=Thư viện, Type=Chính dropdown, State=Default, Expanded=Yes⟩ — 192×44 [FILL×HUG] · @ (0, 912.36) flow · row space-between pad 8 8 8 8 align CENTER · radius 8px `I4915:256398;5491:349897`
+          - [khối] **Content** — 158×28 [FILL×HUG] · @ (8, 8) flow · row gap 8 align CENTER · clip `I4915:256398;5491:349897;2245:87830`
+            - [icon] **Icon** ⟨ICON MENU: ICON MENU=Thư viện kiến thức⟩ — 28×28 · @ (0, 0) flow · file assets/icon-I4915-256398-5491-349897-2245-87825.svg `I4915:256398;5491:349897;2245:87825`
+            - [chữ] “Thư viện” — 122×15 [FILL×HUG] · @ (36, 6.5) flow · Unbounded 12/1.25 (15px) 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:349897;2245:87829`
+          - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (166, 13) flow · file assets/chevron-I4915-256398-5491-349897-2245-87831.svg `I4915:256398;5491:349897;2245:87831`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=4835:160221, Label=Kiến thức, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 964.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;5491:349906`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Kiến thức⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-5491-349906-2245-87904.svg `I4915:256398;5491:349906;2245:87904`
+          - [chữ] “Kiến thức” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:349906;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=470:993, Label=Kỹ năng, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 1012.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;5491:349911`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Thư viện kỹ năng⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-5491-349911-2245-87904.svg `I4915:256398;5491:349911;2245:87904`
+          - [chữ] “Kỹ năng” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:349911;2245:87908`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=470:1914, Label=Bài tập, Type=Menu phụ, State=Default, Expanded=No⟩ — 180×40 [FIXED×HUG] · @ (12, 1060.36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:256398;5491:349916`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Thư viện bài tập⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-256398-5491-349916-2245-87904.svg `I4915:256398;5491:349916;2245:87904`
+          - [chữ] “Bài tập” — 136×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:256398;5491:349916;2245:87908`
+      - [icon] **Nav Items** — 58×663 · @ (12, 294) abs · file assets/nav-items-I4915-256398-4901-221052.svg `I4915:256398;4901:221052`
+    - [icon] **Left: ICS Logo & Toggle** — 54×44 · @ (14, 12) abs · file assets/left-ics-logo-toggle-I4915-256398-4901-221076.svg `I4915:256398;4901:221076`
+    - [hình] **Rectangle 5646** — 300×2 · @ (0, 64) abs · bg #ffffff `I4915:256398;4901:221079`
+    - [hình] **Divider** — 2×1470 · @ (82, 66) abs · bg #ffffff `I4915:256398;4901:221080`
+    - [icon] **LOGO CENTER** ⟨LOGO CENTER: Property 1=ICS, Property 2=no⟩ — 54×54 · @ (14, 1366) abs · file assets/logo-center-I4915-256398-4901-221081.svg covers (-4, 0) 62×62 `I4915:256398;4901:221081`
+  - [khối] **Header** — 1140×64 · @ (299, 0) abs · clip `2812:34949`
+    - [icon] **Group 240178** — 1140×64 · @ (0, 0) abs · file assets/group-240178-4050-122605.svg `4050:122605`
+    - [instance] **ACCOUNT** ⟨ACCOUNT: Role=CD, Theme=Dark, Size=Default⟩ — 222×36 · @ (902, 14) abs · row gap 10 justify MAX align CENTER `2812:34997`
+      - [khối] **Frame 1171274934** — 192×36 [FIXED×HUG] · @ (0, 0) flow · row gap 8 align CENTER `I2812:34997;2008:31768`
+        - [khối] **Background+Shadow** — 36×36 · @ (0, 0) flow · row justify CENTER align CENTER · bg #ccfbf1 · radius 9999px · shadow inset 0 0 0 1px #0f766e, 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I2812:34997;2008:31883`
+          - [khối] **Container** — 17×16 [HUG×HUG] · @ (9.5, 10) flow · column `I2812:34997;2008:31884`
+            - [chữ] “CD” — 17×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/1.25 (16.25px) 700 #0f766e · no-wrap `I2812:34997;2008:31885`
+        - [khối] **Container** — 148×32 [FILL×HUG] · @ (44, 2) flow · column `I2812:34997;2008:31771`
+          - [chữ] “Học Liệu Ngôn Ngữ” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/1.25 (16.25px) 600 #ffffff (color/neutral/white) · truncate 1 lines `I2812:34997;2008:31772`
+          - [chữ] “CD.dacnhan@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/1.25 (16.25px) 500 #ffffff (color/neutral/white) · truncate 1 lines `I2812:34997;2008:31773`
+      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file assets/overlay-I2812-34997-2008-31774.svg covers (-2, -2) 26×26 `I2812:34997;2008:31774`
+    - [instance] **Component 2** ⟨Switch Center: Property 1=Đắc Nhân⟩ — 166×42 · @ (12, 11) abs · row gap 4 pad 8 8 8 8 align CENTER · bg #e65100 (org/dac-nhan/bg) · radius 8px · border 1px solid #ffffff (org/border) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4273:160593`
+      - [khối] **Frame 427325409** — 128×24 [FILL×HUG] · @ (9, 9) flow · row gap 8 align CENTER `I4273:160593;4019:24203`
+        - [icon] **LOGO CENTER** — 24×24 · @ (0, 0) flow · file assets/logo-center-I4273-160593-4019-22291.svg covers (-1.78, 0) 27.56×27.56 `I4273:160593;4019:22291`
+        - [chữ] “Đắc Nhân” — 96×17 [FILL×HUG] · @ (32, 3.5) flow · Unbounded 14/auto 500 #ffffff (org/dac-nhan/fg) · truncate 1 lines `I4273:160593;4019:24214`
+      - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (141, 13) flow · file assets/chevron-I4273-160593-4019-24215.svg `I4273:160593;4019:24215`
 
 ## 5. Component đang dùng
 
@@ -1632,14 +1633,14 @@ Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần
 2. **row / column** = flex-direction; `gap` = khoảng cách giữa các con; `pad T R B L` = padding.
 3. `justify` (trục chính) và `align` (trục phụ): MIN = start, CENTER = center, MAX = end, SPACE_BETWEEN = space-between, BASELINE = baseline.
 4. Kích thước con: **FIXED** = cố định đúng số px; **HUG** = co theo nội dung; **FILL** = giãn lấp phần còn trống của cha (flex: 1 trên trục chính, stretch trên trục phụ).
-5. Layer **abs** đặt bằng position absolute theo `@ (x, y)` so với cha; layer **flow** để auto layout xếp, `@ (x, y)` chỉ để đối chiếu.
+5. Layer **abs** đặt bằng position absolute theo `@ (x, y)` so với **mép ngoài** của cha, kể cả khi cha là row/column (padding của cha không ảnh hưởng): `left: x; top: y`. Nếu cha có `border` thì trừ độ dày viền trái/trên, vì CSS tính từ bên trong viền. Layer **flow** để auto layout xếp, `@ (x, y)` chỉ để đối chiếu.
 6. Viền (stroke) **không** chiếm chỗ trong layout: `shadow inset 0 0 0 Wpx` = viền phía trong, `outline` = viền ở giữa hoặc nét đứt, shadow `0 0 0 Wpx` không inset = viền phía ngoài. Chỉ khi ghi `border` thì viền mới chiếm chỗ (strokesIncludedInLayout).
-7. Chữ: `cỡ/line-height` tính bằng px, hoặc là hệ số nhân với cỡ chữ nếu không có đơn vị; `auto` = line-height mặc định của font (CSS `normal`). Letter-spacing dạng `em` là phần trăm cỡ chữ. Chữ có chiều rộng tự động (`no-wrap`) **không xuống dòng**. Giữ nguyên mọi khoảng trắng, trừ chữ `no-wrap`: ở loại này **bỏ dấu cách ở cuối mỗi dòng** (Figma không tính chúng vào độ rộng); `⏎` là xuống dòng (CSS `white-space: pre`, hoặc `pre-wrap` cho chữ có chiều rộng cố định). Figma **làm tròn lên** độ rộng của chữ `no-wrap` thành số nguyên px — đặt `min-width` bằng đúng độ rộng ghi trong dòng.
+7. Chữ: `cỡ/line-height` tính bằng px, hoặc là hệ số nhân với cỡ chữ nếu không có đơn vị (giá trị px tương ứng ghi trong ngoặc, ví dụ `15/1.25 (18.75px)`; dùng đúng giá trị đó, chiều cao khung chữ có thể đã được Figma làm tròn); `auto` = line-height mặc định của font (CSS `normal`). `case upper` / `lower` / `title` = `text-transform: uppercase` / `lowercase` / `capitalize`, `case small_caps` = `font-variant-caps: small-caps`; chữ trong `“…”` là chữ gốc, chưa đổi hoa/thường. Letter-spacing dạng `em` là phần trăm cỡ chữ. Chữ có chiều rộng tự động (`no-wrap`) **không xuống dòng**. Giữ nguyên mọi khoảng trắng, trừ chữ `no-wrap`: ở loại này **bỏ dấu cách ở cuối mỗi dòng** (Figma không tính chúng vào độ rộng); `⏎` là xuống dòng (CSS `white-space: pre`, hoặc `pre-wrap` cho chữ có chiều rộng cố định). Figma **làm tròn lên** độ rộng của chữ `no-wrap` thành số nguyên px — đặt `min-width` bằng đúng độ rộng ghi trong dòng.
 8. Icon và hình minh hoạ đã xuất sẵn thành file — dùng nguyên file, không vẽ lại. Ảnh nền dùng đúng chế độ cover/contain/crop ghi trong style.
 9. Màu có token thì dùng token (biến CSS) với giá trị dự phòng ghi kèm.
 10. Giá trị mặc định khi dòng không ghi: `justify` và `align` = MIN — trong CSS phải **tự đặt `align-items: flex-start`** vì mặc định của CSS là stretch; không có `[..]` = FIXED×FIXED; layer không ghi row/column là khung thường, các con của nó đặt **abs**; không ghi `bg` = nền trong suốt.
 11. Nhiều con FILL cùng hàng có thể lệch nhau vài phần px do Figma làm tròn — dùng flex: 1 cho tất cả, con số chỉ để đối chiếu. `wrap cross-gap N` = khoảng cách giữa các hàng (dòng) khi xuống dòng.
 12. Icon/ảnh xuất sẵn: layer giữ đúng kích thước của nó (position: relative), bên trong đặt một `<img>` position absolute. Không ghi `covers` thì ảnh phủ đúng khung layer; `file … covers (x, y) W×H` = file vẽ tràn ra ngoài khung (bóng, viền ngoài, phần bị khung cha cắt) — đặt `<img>` tại (x, y) so với góc layer với đúng W×H. Phép xoay/lật đã nằm sẵn trong file.
-13. `image url(…) …` là shorthand CSS `background` đầy đủ (vị trí / kích thước / lặp) — dùng nguyên văn để có đúng vùng crop.
+13. `bg #màu` là màu nền; `bg `…`` (gradient) và `image `url(…) …`` là shorthand CSS `background` đầy đủ (vị trí / kích thước / lặp) — dùng nguyên văn để có đúng vùng crop. `border W style màu` = CSS `border` (hoặc `border-width` 4 cạnh T R B L). Layer ghi `trống` không có nền, viền, con hay file: giữ một khung rỗng đúng kích thước.
 
 Giá trị chính xác đến từng node (kèm CSS dựng sẵn) nằm trong `../../../.figma/pages/cd-kh-020200/page-spec.json`.

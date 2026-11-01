@@ -5,12 +5,12 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     └─ QUẢN LÝ TÀI KHOẢN › MST-TK-010000-DK — Tài khoản / Danh sách tài khoản (`4056:137809`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/tai-khoan/danh-sach-tai-khoan-dk`  
 > **Khung thiết kế:** 1440 × 964 px  
-> **Xuất lúc:** 2026-11-01T15:49:06.999Z  
+> **Xuất lúc:** 2026-11-01T16:12:18.021Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/mst-tk-010000-dk/page-spec.json`
 
 ## 1. Tổng quan
 
-Trang rộng **1440px**, cao **964px**, gồm 1097 layer: 244 đoạn chữ, 45 ảnh, 202 icon, 280 component instance.
+Trang rộng **1440px**, cao **964px**, gồm 1097 layer (tính cả frame gốc): 244 đoạn chữ, 45 ảnh, 202 icon, 280 component instance.
 
 Nền trang: `#121213` (bg/canvas).
 
@@ -81,1126 +81,1127 @@ Nền trang: `#121213` (bg/canvas).
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `Heading/17/SemiBold` | Unbounded | 17 / 1.5 | 600 | 0 | #ededef (text/primary) | 1 | “Danh sách tài khoản” |
-| `Body/15/Medium` | Afacad | 15 / 1.25 | 500 | 0 | #a1a1aa (text/secondary) | 93 | “tran.bao.sales@gmail.com” |
-| `Body/15/Bold` | Afacad | 15 / 1.25 | 700 | 0 | #ededef (text/primary) | 47 | “Trần - Sales” |
-| `Body/15/Bold` | Afacad | 15 / 1.25 | 700 | 0 | #ec4899 | 30 | “Support” |
-| `Body/15/Bold` | Afacad | 15 / 1.25 | 700 | 0 | #8b5cf6 | 28 | “Trainee” |
-| `Body/15/Bold` | Afacad | 15 / 1.25 | 700 | 0 | #16a34a (brand/primary) | 15 | “+2” |
-| `Body/15/Bold` | Afacad | 15 / 1.25 | 700 | 0 | #f87171 (status/danger-text) | 14 | “Sale” |
-| `Body/15/Medium` | Afacad | 15 / 1.25 | 500 | 0 | #ededef (text/primary) | 5 | “Vai trò” |
-| `Label/15/Bold` | Afacad | 15 / 1.25 | 700 upper | 0 | #a1a1aa (text/secondary) | 4 | “Tên” |
-| `Body/15/Regular` | Afacad | 15 / 1.25 | 400 | 0 | #71717a (text/muted) | 1 | “Tìm nội dung...” |
-| `Body/15/Bold` | Afacad | 15 / 1.25 | 700 | 0 | #0694a2 | 1 | “Admin” |
-| `Body/15/Bold` | Afacad | 15 / 1.25 | 700 | 0 | #10b981 | 1 | “Manager” |
-| `Body/15/Bold` | Afacad | 15 / 1.25 | 700 | 0 | #ffffff (color/neutral/white) | 1 | “1” |
-| `Body/15/Bold` | Afacad | 15 / 1.25 | 700 | 0 | #71717a (text/muted) | 1 | “...” |
-| — | Unbounded | 13 / 1.25 | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Master” |
-| — | Afacad | 13 / 1.25 | 500 | 0 | #ffffff (color/neutral/white) | 1 | “master@gmail.com” |
-| — | Unbounded | 12 / 1.25 | 600 title | 0 | #ffffff (color/neutral/white) | 1 | “Quản Lý” |
-| — | Unbounded | 11 / 1.25 | 600 title | 0 | #ffffff (color/neutral/white) | 4 | “Lớp Học” |
-| `Menu/8/Regular` | Unbounded | 8 / 1.5 | 400 | 0 | #ffffff (color/neutral/white) | 1 | “v20.07.2026_17:30” |
+| `Heading/17/SemiBold` | Unbounded | 17 / 1.5 (25.5px) | 600 | 0 | #ededef (text/primary) | 1 | “Danh sách tài khoản” |
+| `Body/15/Medium` | Afacad | 15 / 1.25 (18.75px) | 500 | 0 | #a1a1aa (text/secondary) | 93 | “tran.bao.sales@gmail.com” |
+| `Body/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 | 0 | #ededef (text/primary) | 47 | “Trần - Sales” |
+| `Body/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 | 0 | #ec4899 | 30 | “Support” |
+| `Body/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 | 0 | #8b5cf6 | 28 | “Trainee” |
+| `Body/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 | 0 | #16a34a (brand/primary) | 15 | “+2” |
+| `Body/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 | 0 | #f87171 (status/danger-text) | 14 | “Sale” |
+| `Body/15/Medium` | Afacad | 15 / 1.25 (18.75px) | 500 | 0 | #ededef (text/primary) | 5 | “Vai trò” |
+| `Label/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 · case upper | 0 | #a1a1aa (text/secondary) | 4 | “Tên” |
+| `Body/15/Regular` | Afacad | 15 / 1.25 (18.75px) | 400 | 0 | #71717a (text/muted) | 1 | “Tìm nội dung...” |
+| `Body/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 | 0 | #0694a2 | 1 | “Admin” |
+| `Body/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 | 0 | #10b981 | 1 | “Manager” |
+| `Body/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 | 0 | #ffffff (color/neutral/white) | 1 | “1” |
+| `Body/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 | 0 | #71717a (text/muted) | 1 | “...” |
+| — | Unbounded | 13 / 1.25 (16.25px) | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Master” |
+| — | Afacad | 13 / 1.25 (16.25px) | 500 | 0 | #ffffff (color/neutral/white) | 1 | “master@gmail.com” |
+| — | Unbounded | 12 / 1.25 (15px) | 600 · case title | 0 | #ffffff (color/neutral/white) | 1 | “Quản Lý” |
+| — | Unbounded | 11 / 1.25 (13.75px) | 600 · case title | 0 | #ffffff (color/neutral/white) | 4 | “Lớp Học” |
+| `Menu/8/Regular` | Unbounded | 8 / 1.5 (12px) | 400 | 0 | #ffffff (color/neutral/white) | 1 | “v20.07.2026_17:30” |
 
 ## 4. Cấu trúc chi tiết
 
-Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
+Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Dòng đầu tiên là chính frame trang (gốc). Tên layer nằm trong `**…**`, chữ hiển thị nằm trong `“…”`, giá trị CSS nguyên văn nằm trong backtick: dấu `·` hay `—` **bên trong** các cặp đó là nội dung, chỉ dấu ` · ` bên ngoài mới ngăn cách các trường. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
 
-- [khối] **Header** — 1206×64 · @ (234, 0) abs · clip `4056:137810`
-  - [icon] **Group 240178** — 1206×64 · @ (0, 0) abs · file assets/group-240178-4056-137811.svg `4056:137811`
-  - [instance] **ACCOUNT** ⟨ACCOUNT: Role=Master, Theme=Dark, Size=Default⟩ — 222×36 · @ (968, 14) abs · row gap 10 justify MAX align CENTER `4056:137858`
-    - [khối] **Frame 1171274934** — 192×36 [FIXED×HUG] · @ (0, 0) flow · row gap 8 align CENTER `I4056:137858;2008:31737`
-      - [khối] **Background+Border+Shadow** — 36×36 · @ (0, 0) flow · row justify CENTER align CENTER · bg #153020 (bg/brand-tint-strong) · radius 9999px · border 1px solid #27272a (border/default) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:137858;2008:31739`
-        - [ảnh] **2 copy@3x 1** — 36×36 · @ (0, 0) flow · image `url("assets/img-bfd8678ab281.png") center / cover no-repeat` · radius 18px `I4056:137858;2008:31846`
-      - [khối] **Container** — 148×32 [FILL×HUG] · @ (44, 2) flow · column `I4056:137858;2008:31741`
-        - [chữ] “Master” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/1.25 600 #ffffff (color/neutral/white) · truncate 1 lines `I4056:137858;2008:31742`
-        - [chữ] “master@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/1.25 500 #ffffff (color/neutral/white) · truncate 1 lines `I4056:137858;2008:31743`
-    - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file assets/overlay-I4056-137858-2008-31744.svg covers (-2, -2) 26×26 `I4056:137858;2008:31744`
-- [khối] **Sidebar** — 234×810 · @ (0, 0) abs · bg #0b0b0c (chrome/bg) · clip `4056:137859`
-  - [icon] **Frame 427322079** — 371.25×1197.75 · @ (0, -216) abs · file assets/frame-427322079-4056-137860.svg covers (0, 216) 234×810 `4056:137860`
-  - [khối] **Left: ICS Logo & Toggle** — 207×44.59 · @ (14, 12) abs · row gap 24 align CENTER `4056:137911`
-    - [khối] **Container** — 159×44.59 [FILL×HUG] · @ (0, 0) flow · column gap 2 `4056:137912`
-      - [icon] **Navigation / Sidebar Menu / Light** — 51×30.59 · @ (0, 0) flow · file assets/navigation-sidebar-menu-light-4056-137913.svg covers (0, 0) 53×32.59 `4056:137913`
-      - [chữ] “v20.07.2026_17:30” — 90×12 [HUG×HUG] · @ (0, 32.59) flow · Unbounded 8/1.5 400 #ffffff (color/neutral/white) · no-wrap `4056:137925`
-    - [icon] **Frame 1171274926** — 24×24 · @ (183, 10.3) flow · file assets/frame-1171274926-4056-137926.svg `4056:137926`
-  - [khối] **Nav Items** — 210×694 · @ (12, 78) abs · column space-between align CENTER `4056:137928`
-    - [khối] **Menu** — 210×621 [FILL×FIXED] · @ (0, 0) flow · column gap 8 align MAX `4056:137929`
-      - [instance] **Card Menu** ⟨Card Menu v2 (Test): Icon=483:3592, Label=Quản Lý, Type=Chính dropdown, State=Default, Expanded=Yes⟩ — 210×44 [FIXED×HUG] · @ (0, 0) flow · row space-between pad 8 8 8 8 align CENTER · radius 8px `4056:137930`
-        - [khối] **Content** — 176×28 [FILL×HUG] · @ (8, 8) flow · row gap 8 align CENTER · clip `I4056:137930;2245:87830`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Quản lý⟩ — 28×28 · @ (0, 0) flow · file assets/icon-menu-I4056-137930-2245-87825.svg `I4056:137930;2245:87825`
-          - [chữ] “Quản Lý” — 140×15 [FILL×HUG] · @ (36, 6.5) flow · Unbounded 12/1.25 600 #ffffff (color/neutral/white) case title `I4056:137930;2245:87829`
-        - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (184, 13) flow · file assets/chevron-I4056-137930-2245-87831.svg `I4056:137930;2245:87831`
-      - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=1933:8141, Label=Lớp Học, Type=Con, State=Select, Expanded=No⟩ — 198×40 [FIXED×HUG] · @ (12, 52) flow · row gap 8 pad 8 4 8 8 align CENTER · bg `linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.25) 100%)` · radius 8px · shadow inset 0 0 0 1px rgba(255, 255, 255, 0.2), 0 1.25px 2.25px 0 rgba(0, 0, 0, 0.05) · backdrop blur(2.25px) `4056:137931`
-        - [hình] **Theme · Dark BG** — 198×40 · @ (0, 0) abs · bg #2a2a2e (bg/strong) · radius 8px · shadow inset 0 0 0 1px #3f3f46 `I4056:137931;4139:138315`
-        - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Lớp học⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4056-137931-2245-87860.svg `I4056:137931;2245:87860`
-        - [chữ] “Lớp Học” — 154×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4056:137931;2245:87864`
-      - [instance] **Card Menu** ⟨Card Menu v2 (Test): Icon=418:52623, Label=Học Viên, Type=Con, State=Default, Expanded=No⟩ — 198×40 [FIXED×HUG] · @ (12, 100) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:137932`
-        - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Học viên trực tuyến⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4056-137932-2245-87854.svg `I4056:137932;2245:87854`
-        - [chữ] “Học Viên” — 154×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4056:137932;2245:87858`
-      - [instance] **Card Menu** ⟨Card Menu v2 (Test): Icon=1161:5614, Label=Giáo Viên, Type=Con, State=Default, Expanded=No⟩ — 198×40 [FIXED×HUG] · @ (12, 148) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:137933`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Giáo viên 2⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4056-137933-2245-87854.svg `I4056:137933;2245:87854`
-        - [chữ] “Giáo Viên” — 154×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4056:137933;2245:87858`
-      - [instance] **Card Menu** ⟨Card Menu v2 (Test): Icon=4101:88017, Label=Quản Lý Tài Khoản, Type=Con, State=Default, Expanded=No⟩ — 198×40 [FIXED×HUG] · @ (12, 196) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:137934`
-        - [icon] **Icon** ⟨ICON MENU: ICON MENU=Quản lý tài khoản⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4056-137934-2245-87854.svg `I4056:137934;2245:87854`
-        - [chữ] “Quản Lý Tài Khoản” — 154×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 600 #ffffff (color/neutral/white) case title `I4056:137934;2245:87858`
-    - [icon] **LOGO CENTER** ⟨LOGO CENTER: Property 1=ICS, Property 2=yes⟩ — 146×54 · @ (32, 640) flow · file assets/logo-center-4056-137935.svg covers (-4, 0) 154×62 `4056:137935`
-- [khối] **Frame 427320139** — 1206×900 · @ (234, 64) abs · row gap 99 pad 16 16 16 16 · bg #18181a (bg/surface) `4056:137936`
-  - [khối] **Data Table (Bento/Card Style for Modern Look)** — 1174×884 [FILL×FIXED] · @ (16, 16) flow · column gap 12 pad 0 0 16 0 · clip `4056:137937`
-    - [khối] **Header Section** — 1174×33 [FILL×FIXED] · @ (0, 0) flow · row space-between align CENTER `4056:137938`
-      - [khối] **Container** — 216×26 [HUG×HUG] · @ (0, 3.5) flow · row gap 12 align CENTER `4056:137939`
-        - [chữ] “Danh sách tài khoản” — 216×26 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/1.5 600 #ededef (text/primary) · no-wrap `4056:137940`
-      - [khối] **Container** — 274×30 [HUG×HUG] · @ (900, 1.5) flow · row gap 12 align CENTER `4056:137942`
-        - [instance] **Atom/Input** ⟨Atom/Input: Loại=Gift code, Text=Tìm nội dung..., State=Search Compact, Kiểu=Chuẩn⟩ — 180×30 · @ (0, 0) flow · column gap 10 pad 0 12 0 8 justify CENTER · bg #121213 (bg/canvas) · radius 8px · border 1px solid #3f3f46 (border/strong) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05) `4056:137943`
-          - [khối] **Frame 427321959** — 158×19 [FILL×HUG] · @ (9, 5.5) flow · row gap 4 align CENTER `I4056:137943;1739:32348`
-            - [icon] **SVG** — 14×14 · @ (0, 2.5) flow · file assets/svg-I4056-137943-1739-32349.svg `I4056:137943;1739:32349`
-            - [chữ] “Tìm nội dung...” — 140×19 [FILL×HUG] · @ (18, 0) flow · Afacad 15/1.25 400 #71717a (text/muted) · truncate 1 lines `I4056:137943;1739:32351`
-        - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Clear=false, Count Value=1, Leading=false, Leading Icon=2015:30465, Count=false, Chevron=true, Value=Vai trò, Size=XS, State=Default, Content=Value⟩ — 82×30 [HUG×FIXED] · @ (192, 0) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #18181a (bg/surface) · radius 8px · border 1px solid #27272a (border/default) `4056:137944`
-          - [khối] **Content** — 38×19 [HUG×HUG] · @ (13, 5.5) flow · row align CENTER · clip `I4056:137944;2015:36007`
-            - [chữ] “Vai trò” — 38×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 500 #ededef (text/primary) · no-wrap `I4056:137944;2015:36008`
-          - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (57, 7) flow · file assets/chevron-I4056-137944-2015-36012.svg `I4056:137944;2015:36012`
-    - [khối] **Section - Bảng dữ liệu chi tiết các lớp học** — 1174×665 [FILL×FIXED] · @ (0, 45) flow · column · bg #18181a (bg/surface) · radius 16px · border 1px solid #27272a (border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) · clip `4056:137945`
-      - [khối] **Table Scroll Container** — 1172×679 [FILL×FIXED] · @ (1, 1) flow · column · clip `4056:137946`
-        - [khối] **Table** — 1172×36 [FILL×HUG] · @ (0, 0) flow · column gap -1 `4056:137947`
-          - [khối] **Frame 427321948** — 1172×36 [FILL×HUG] · @ (0, 0) flow · row gap 24 align CENTER · bg #121213 (bg/canvas) · radius 12px 12px 0 0 · border 0 0 1px 0 #27272a (border/default) `4056:137948`
-            - [khối] **Frame 427326027** — 472×35 [FIXED×HUG] · @ (0, 0) flow · row gap 12 align CENTER `4056:137949`
-              - [khối] **Cell** — 40×35 [HUG×HUG] · @ (0, 0) flow · column pad 8 0 8 16 justify CENTER · radius 12px 0 0 0 `4056:137950`
-                - [chữ] “Tên” — 24×19 [FIXED×HUG] · @ (16, 8) flow · Afacad 15/1.25 700 #a1a1aa (text/secondary) case upper · text-align center `4056:137951`
-            - [khối] **Cell** — 360×35 [FIXED×HUG] · @ (496, 0) flow · column pad 8 0 8 0 justify CENTER `4056:137952`
-              - [chữ] “Vai trò” — 360×19 [FILL×HUG] · @ (0, 8) flow · Afacad 15/1.25 700 #a1a1aa (text/secondary) case upper `4056:137953`
-            - [khối] **Cell** — 84×35 [FIXED×HUG] · @ (880, 0) flow · column pad 8 0 8 0 justify CENTER `4056:137954`
-              - [chữ] “Ngày tạo” — 84×19 [FILL×HUG] · @ (0, 8) flow · Afacad 15/1.25 700 #a1a1aa (text/secondary) case upper · text-align center `4056:137955`
-            - [khối] **Cell** — 84×35 [FIXED×HUG] · @ (988, 0) flow · column pad 8 0 8 0 justify CENTER align CENTER `4056:137956`
-              - [chữ] “Trạng thái” — 84×19 [FILL×HUG] · @ (0, 8) flow · Afacad 15/1.25 700 #a1a1aa (text/secondary) case upper · text-align center `4056:137957`
-        - [khối] **Table Body / Rows** — 1172×445.75 [FILL×HUG] · @ (0, 36) flow · column `4056:137958`
-          - [khối] **Row 1** — 1172×56 [FILL×FIXED] · @ (0, 0) flow · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:137959`
-            - [khối] **Frame 427321951** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:137960`
-              - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:137961`
-                - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-279410b0bc0f.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:137962`
-                - [khối] **Container** — 158×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:137963`
-                  - [chữ] “Trần - Sales” — 158×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:137964`
-                  - [chữ] “tran.bao.sales@gmail.com” — 158×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:137965`
-              - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:137966`
-                - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-137967.svg covers (-2, -2) 32×32 `4056:137967`
-                - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:137968`
-                  - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:137968;3004:49435`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-137968-3004-49436.svg `I4056:137968;3004:49436`
-                    - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:137968;3004:49437`
-                - [instance] **Role Component** ⟨Role Component: Name=Admin, Dropdown=Không⟩ — 76×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #0694a2 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:137969`
-                  - [khối] **Frame 1171274972** — 62×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:137969;3004:49447`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Admin, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-137969-3004-49448.svg `I4056:137969;3004:49448`
-                    - [chữ] “Admin” — 38×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #0694a2 · no-wrap `I4056:137969;3004:49449`
-                - [instance] **Role Component** ⟨Role Component: Name=+Plus, Dropdown=Có⟩ — 26×26 · @ (211, 0) flow · column justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #16a34a (brand/primary) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:137970`
-                  - [chữ] “+2” — 16×19 [HUG×HUG] · @ (5, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:137970;124:63401`
-              - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:137971`
-                - [chữ] “21.08.2026” — 69×19 [HUG×HUG] · @ (7.5, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:137972`
-              - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:137973`
-                - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:137974`
-                  - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:137974;124:65559`
-              - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-137975.svg covers (0, 0) 76×38 `4056:137975`
-          - [khối] **Row 2** — 1172×56 [FILL×FIXED] · @ (0, 56) flow · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:137979`
-            - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:137980`
-              - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:137981`
-                - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:137982`
-                - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:137983`
-                  - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:137984`
-                  - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:137985`
-              - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:137986`
-                - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-137987.svg covers (-2, -2) 32×32 `4056:137987`
-                - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:137988`
-                  - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:137988;3004:49435`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-137988-3004-49436.svg `I4056:137988;3004:49436`
-                    - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:137988;3004:49437`
-                - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:137989`
-                  - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:137989;3004:49453`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-137989-3004-49454.svg `I4056:137989;3004:49454`
-                    - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:137989;3004:49455`
-              - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:137990`
-                - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:137991`
-              - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:137992`
-                - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:137993`
-                  - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:137993;124:65559`
-              - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-137994.svg covers (0, 0) 76×38 `4056:137994`
-          - [khối] **Row 7** — 1172×56 [FILL×FIXED] · @ (0, 112) flow · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:137998`
-            - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:137999`
-              - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138000`
-                - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138001`
-                - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138002`
-                  - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138003`
-                  - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138004`
-              - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138005`
-                - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138006`
-                  - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138006-2623-27461.svg `I4056:138006;2623:27461`
-                  - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138006;139:67075`
-                - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138007.svg covers (-1, -1) 26×26 `4056:138007`
-                - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138008`
-                  - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138008;3004:49429`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138008-3004-49430.svg `I4056:138008;3004:49430`
-                    - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138008;3004:49431`
-              - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138009`
-                - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138010`
-              - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138011`
-                - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138012`
-                  - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138012;124:65563`
-              - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138013.svg covers (0, 0) 76×38 `4056:138013`
-          - [khối] **Row 8** — 1172×54.88 [FILL×FIXED] · @ (0, 168) flow · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138017`
-            - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138018`
-              - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138019`
-                - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138020`
-                - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138021`
-                  - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138022`
-                  - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138023`
-              - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138024`
-                - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138025.svg covers (-2, -2) 32×32 `4056:138025`
-                - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138026`
-                  - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138026;3004:49435`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138026-3004-49436.svg `I4056:138026;3004:49436`
-                    - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138026;3004:49437`
-                - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138027`
-                  - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138027;3004:49453`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138027-3004-49454.svg `I4056:138027;3004:49454`
-                    - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138027;3004:49455`
-              - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138028`
-                - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138029`
-              - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138030`
-                - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138031`
-                  - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138031;124:65559`
-              - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138032.svg covers (0, 0) 76×38 `4056:138032`
-          - [khối] **Row 10** — 1172×56 [FILL×FIXED] · @ (0, 222.88) flow · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138036`
-            - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138037`
-              - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138038`
-                - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138039`
-                - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138040`
-                  - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138041`
-                  - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138042`
-              - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138043`
-                - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138044.svg covers (-2, -2) 32×32 `4056:138044`
-                - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138045`
-                  - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138045;3004:49435`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138045-3004-49436.svg `I4056:138045;3004:49436`
-                    - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138045;3004:49437`
-                - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138046`
-                  - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138046;3004:49453`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138046-3004-49454.svg `I4056:138046;3004:49454`
-                    - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138046;3004:49455`
-              - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138047`
-                - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138048`
-              - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138049`
-                - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138050`
-                  - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138050;124:65559`
-              - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138051.svg covers (0, 0) 76×38 `4056:138051`
-            - [khối] **Row 2** — 1172×56 · @ (0, 0.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138055`
-              - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138056`
-                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138057`
-                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138058`
-                  - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138059`
-                    - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138060`
-                    - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138061`
-                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138062`
-                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138063.svg covers (-2, -2) 32×32 `4056:138063`
-                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138064`
-                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138064;3004:49435`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138064-3004-49436.svg `I4056:138064;3004:49436`
-                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138064;3004:49437`
-                  - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138065`
-                    - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138065;3004:49453`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138065-3004-49454.svg `I4056:138065;3004:49454`
-                      - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138065;3004:49455`
-                - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138066`
-                  - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138067`
-                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138068`
-                  - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138069`
-                    - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138069;124:65559`
-                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138070.svg covers (0, 0) 76×38 `4056:138070`
-              - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138074`
-                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138075`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138076`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138077`
-                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138078`
-                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138079`
-                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138080`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138081`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138082.svg covers (-2, -2) 32×32 `4056:138082`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138083`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138083;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138083-3004-49436.svg `I4056:138083;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138083;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138084`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138084;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138084-3004-49454.svg `I4056:138084;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138084;3004:49455`
-                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138085`
-                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138086`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138087`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138088`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138088;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138089.svg covers (0, 0) 76×38 `4056:138089`
-              - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138093`
-                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138094`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138095`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138096`
-                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138097`
-                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138098`
-                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138099`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138100`
-                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138101`
-                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138101-2623-27461.svg `I4056:138101;2623:27461`
-                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138101;139:67075`
-                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138101-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138101;3065:68070`
-                    - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138102.svg covers (-1, -1) 26×26 `4056:138102`
-                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138103`
-                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138103;3004:49429`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138103-3004-49430.svg `I4056:138103;3004:49430`
-                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138103;3004:49431`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138104`
-                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138105`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138106`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138107`
-                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138107;124:65563`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138108.svg covers (0, 0) 76×38 `4056:138108`
-              - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138112`
-                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138113`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138114`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138115`
-                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138116`
-                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138117`
-                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138118`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138119`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138120.svg covers (-2, -2) 32×32 `4056:138120`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138121`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138121;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138121-3004-49436.svg `I4056:138121;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138121;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138122`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138122;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138122-3004-49454.svg `I4056:138122;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138122;3004:49455`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138123`
-                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138124`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138125`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138126`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138126;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138127.svg covers (0, 0) 76×38 `4056:138127`
-            - [khối] **Row 7** — 1172×56 · @ (0, 56.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138131`
-              - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138132`
-                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138133`
-                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138134`
-                  - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138135`
-                    - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138136`
-                    - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138137`
-                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138138`
-                  - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138139`
-                    - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138139-2623-27461.svg `I4056:138139;2623:27461`
-                    - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138139;139:67075`
-                    - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138139-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138139;3065:68070`
-                  - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138140.svg covers (-1, -1) 26×26 `4056:138140`
-                  - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138141`
-                    - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138141;3004:49429`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138141-3004-49430.svg `I4056:138141;3004:49430`
-                      - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138141;3004:49431`
-                - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138142`
-                  - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138143`
-                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138144`
-                  - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138145`
-                    - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138145;124:65563`
-                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138146.svg covers (0, 0) 76×38 `4056:138146`
-              - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138150`
-                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138151`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138152`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138153`
-                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138154`
-                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138155`
-                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138156`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138157`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138158.svg covers (-2, -2) 32×32 `4056:138158`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138159`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138159;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138159-3004-49436.svg `I4056:138159;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138159;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138160`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138160;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138160-3004-49454.svg `I4056:138160;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138160;3004:49455`
-                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138161`
-                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138162`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138163`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138164`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138164;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138165.svg covers (0, 0) 76×38 `4056:138165`
-              - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138169`
-                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138170`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138171`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138172`
-                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138173`
-                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138174`
-                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138175`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138176`
-                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138177`
-                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138177-2623-27461.svg `I4056:138177;2623:27461`
-                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138177;139:67075`
-                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138177-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138177;3065:68070`
-                    - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138178.svg covers (-1, -1) 26×26 `4056:138178`
-                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138179`
-                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138179;3004:49429`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138179-3004-49430.svg `I4056:138179;3004:49430`
-                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138179;3004:49431`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138180`
-                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138181`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138182`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138183`
-                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138183;124:65563`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138184.svg covers (0, 0) 76×38 `4056:138184`
-              - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138188`
-                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138189`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138190`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138191`
-                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138192`
-                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138193`
-                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138194`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138195`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138196.svg covers (-2, -2) 32×32 `4056:138196`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138197`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138197;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138197-3004-49436.svg `I4056:138197;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138197;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138198`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138198;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138198-3004-49454.svg `I4056:138198;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138198;3004:49455`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138199`
-                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138200`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138201`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138202`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138202;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138203.svg covers (0, 0) 76×38 `4056:138203`
-            - [khối] **Row 8** — 1172×54.88 · @ (0, 112.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138207`
-              - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138208`
-                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138209`
-                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138210`
-                  - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138211`
-                    - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138212`
-                    - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138213`
-                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138214`
-                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138215.svg covers (-2, -2) 32×32 `4056:138215`
-                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138216`
-                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138216;3004:49435`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138216-3004-49436.svg `I4056:138216;3004:49436`
-                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138216;3004:49437`
-                  - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138217`
-                    - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138217;3004:49453`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138217-3004-49454.svg `I4056:138217;3004:49454`
-                      - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138217;3004:49455`
-                - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138218`
-                  - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138219`
-                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138220`
-                  - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138221`
-                    - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138221;124:65559`
-                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138222.svg covers (0, 0) 76×38 `4056:138222`
-              - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138226`
-                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138227`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138228`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138229`
-                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138230`
-                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138231`
-                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138232`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138233`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138234.svg covers (-2, -2) 32×32 `4056:138234`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138235`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138235;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138235-3004-49436.svg `I4056:138235;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138235;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138236`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138236;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138236-3004-49454.svg `I4056:138236;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138236;3004:49455`
-                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138237`
-                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138238`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138239`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138240`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138240;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138241.svg covers (0, 0) 76×38 `4056:138241`
-              - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138245`
-                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138246`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138247`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138248`
-                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138249`
-                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138250`
-                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138251`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138252`
-                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138253`
-                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138253-2623-27461.svg `I4056:138253;2623:27461`
-                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138253;139:67075`
-                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138253-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138253;3065:68070`
-                    - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138254.svg covers (-1, -1) 26×26 `4056:138254`
-                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138255`
-                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138255;3004:49429`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138255-3004-49430.svg `I4056:138255;3004:49430`
-                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138255;3004:49431`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138256`
-                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138257`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138258`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138259`
-                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138259;124:65563`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138260.svg covers (0, 0) 76×38 `4056:138260`
-              - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138264`
-                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138265`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138266`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138267`
-                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138268`
-                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138269`
-                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138270`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138271`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138272.svg covers (-2, -2) 32×32 `4056:138272`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138273`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138273;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138273-3004-49436.svg `I4056:138273;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138273;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138274`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138274;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138274-3004-49454.svg `I4056:138274;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138274;3004:49455`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138275`
-                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138276`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138277`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138278`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138278;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138279.svg covers (0, 0) 76×38 `4056:138279`
-          - [khối] **Row 11** — 1172×56 [FILL×FIXED] · @ (0, 278.88) flow · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138283`
-            - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138284`
-              - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138285`
-                - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138286`
-                - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138287`
-                  - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138288`
-                  - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138289`
-              - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138290`
-                - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138291`
-                  - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138291-2623-27461.svg `I4056:138291;2623:27461`
-                  - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138291;139:67075`
-                  - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138291-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138291;3065:68070`
-                - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138292.svg covers (-1, -1) 26×26 `4056:138292`
-                - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138293`
-                  - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138293;3004:49429`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138293-3004-49430.svg `I4056:138293;3004:49430`
-                    - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138293;3004:49431`
-              - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138294`
-                - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138295`
-              - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138296`
-                - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138297`
-                  - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138297;124:65563`
-              - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138298.svg covers (0, 0) 76×38 `4056:138298`
-            - [khối] **Row 2** — 1172×56 · @ (0, 0.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138302`
-              - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138303`
-                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138304`
-                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138305`
-                  - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138306`
-                    - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138307`
-                    - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138308`
-                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138309`
-                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138310.svg covers (-2, -2) 32×32 `4056:138310`
-                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138311`
-                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138311;3004:49435`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138311-3004-49436.svg `I4056:138311;3004:49436`
-                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138311;3004:49437`
-                  - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138312`
-                    - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138312;3004:49453`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138312-3004-49454.svg `I4056:138312;3004:49454`
-                      - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138312;3004:49455`
-                - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138313`
-                  - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138314`
-                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138315`
-                  - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138316`
-                    - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138316;124:65559`
-                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138317.svg covers (0, 0) 76×38 `4056:138317`
-              - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138321`
-                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138322`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138323`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138324`
-                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138325`
-                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138326`
-                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138327`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138328`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138329.svg covers (-2, -2) 32×32 `4056:138329`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138330`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138330;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138330-3004-49436.svg `I4056:138330;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138330;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138331`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138331;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138331-3004-49454.svg `I4056:138331;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138331;3004:49455`
-                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138332`
-                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138333`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138334`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138335`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138335;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138336.svg covers (0, 0) 76×38 `4056:138336`
-              - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138340`
-                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138341`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138342`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138343`
-                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138344`
-                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138345`
-                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138346`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138347`
-                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138348`
-                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138348-2623-27461.svg `I4056:138348;2623:27461`
-                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138348;139:67075`
-                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138348-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138348;3065:68070`
-                    - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138349.svg covers (-1, -1) 26×26 `4056:138349`
-                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138350`
-                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138350;3004:49429`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138350-3004-49430.svg `I4056:138350;3004:49430`
-                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138350;3004:49431`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138351`
-                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138352`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138353`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138354`
-                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138354;124:65563`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138355.svg covers (0, 0) 76×38 `4056:138355`
-              - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138359`
-                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138360`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138361`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138362`
-                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138363`
-                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138364`
-                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138365`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138366`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138367.svg covers (-2, -2) 32×32 `4056:138367`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138368`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138368;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138368-3004-49436.svg `I4056:138368;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138368;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138369`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138369;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138369-3004-49454.svg `I4056:138369;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138369;3004:49455`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138370`
-                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138371`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138372`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138373`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138373;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138374.svg covers (0, 0) 76×38 `4056:138374`
-            - [khối] **Row 7** — 1172×56 · @ (0, 56.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138378`
-              - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138379`
-                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138380`
-                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138381`
-                  - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138382`
-                    - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138383`
-                    - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138384`
-                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138385`
-                  - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138386`
-                    - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138386-2623-27461.svg `I4056:138386;2623:27461`
-                    - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138386;139:67075`
-                    - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138386-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138386;3065:68070`
-                  - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138387.svg covers (-1, -1) 26×26 `4056:138387`
-                  - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138388`
-                    - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138388;3004:49429`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138388-3004-49430.svg `I4056:138388;3004:49430`
-                      - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138388;3004:49431`
-                - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138389`
-                  - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138390`
-                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138391`
-                  - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138392`
-                    - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138392;124:65563`
-                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138393.svg covers (0, 0) 76×38 `4056:138393`
-              - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138397`
-                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138398`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138399`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138400`
-                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138401`
-                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138402`
-                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138403`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138404`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138405.svg covers (-2, -2) 32×32 `4056:138405`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138406`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138406;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138406-3004-49436.svg `I4056:138406;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138406;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138407`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138407;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138407-3004-49454.svg `I4056:138407;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138407;3004:49455`
-                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138408`
-                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138409`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138410`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138411`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138411;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138412.svg covers (0, 0) 76×38 `4056:138412`
-              - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138416`
-                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138417`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138418`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138419`
-                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138420`
-                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138421`
-                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138422`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138423`
-                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138424`
-                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138424-2623-27461.svg `I4056:138424;2623:27461`
-                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138424;139:67075`
-                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138424-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138424;3065:68070`
-                    - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138425.svg covers (-1, -1) 26×26 `4056:138425`
-                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138426`
-                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138426;3004:49429`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138426-3004-49430.svg `I4056:138426;3004:49430`
-                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138426;3004:49431`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138427`
-                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138428`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138429`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138430`
-                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138430;124:65563`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138431.svg covers (0, 0) 76×38 `4056:138431`
-              - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138435`
-                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138436`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138437`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138438`
-                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138439`
-                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138440`
-                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138441`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138442`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138443.svg covers (-2, -2) 32×32 `4056:138443`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138444`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138444;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138444-3004-49436.svg `I4056:138444;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138444;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138445`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138445;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138445-3004-49454.svg `I4056:138445;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138445;3004:49455`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138446`
-                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138447`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138448`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138449`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138449;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138450.svg covers (0, 0) 76×38 `4056:138450`
-            - [khối] **Row 8** — 1172×54.88 · @ (0, 112.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138454`
-              - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138455`
-                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138456`
-                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138457`
-                  - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138458`
-                    - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138459`
-                    - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138460`
-                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138461`
-                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138462.svg covers (-2, -2) 32×32 `4056:138462`
-                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138463`
-                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138463;3004:49435`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138463-3004-49436.svg `I4056:138463;3004:49436`
-                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138463;3004:49437`
-                  - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138464`
-                    - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138464;3004:49453`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138464-3004-49454.svg `I4056:138464;3004:49454`
-                      - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138464;3004:49455`
-                - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138465`
-                  - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138466`
-                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138467`
-                  - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138468`
-                    - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138468;124:65559`
-                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138469.svg covers (0, 0) 76×38 `4056:138469`
-              - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138473`
-                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138474`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138475`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138476`
-                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138477`
-                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138478`
-                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138479`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138480`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138481.svg covers (-2, -2) 32×32 `4056:138481`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138482`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138482;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138482-3004-49436.svg `I4056:138482;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138482;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138483`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138483;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138483-3004-49454.svg `I4056:138483;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138483;3004:49455`
-                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138484`
-                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138485`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138486`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138487`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138487;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138488.svg covers (0, 0) 76×38 `4056:138488`
-              - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138492`
-                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138493`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138494`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138495`
-                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138496`
-                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138497`
-                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138498`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138499`
-                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138500`
-                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138500-2623-27461.svg `I4056:138500;2623:27461`
-                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138500;139:67075`
-                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138500-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138500;3065:68070`
-                    - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138501.svg covers (-1, -1) 26×26 `4056:138501`
-                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138502`
-                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138502;3004:49429`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138502-3004-49430.svg `I4056:138502;3004:49430`
-                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138502;3004:49431`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138503`
-                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138504`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138505`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138506`
-                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138506;124:65563`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138507.svg covers (0, 0) 76×38 `4056:138507`
-              - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138511`
-                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138512`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138513`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138514`
-                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138515`
-                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138516`
-                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138517`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138518`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138519.svg covers (-2, -2) 32×32 `4056:138519`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138520`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138520;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138520-3004-49436.svg `I4056:138520;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138520;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138521`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138521;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138521-3004-49454.svg `I4056:138521;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138521;3004:49455`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138522`
-                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138523`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138524`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138525`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138525;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138526.svg covers (0, 0) 76×38 `4056:138526`
-          - [khối] **Row 12** — 1172×54.88 [FILL×FIXED] · @ (0, 334.88) flow · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138530`
-            - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138531`
-              - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138532`
-                - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138533`
-                - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138534`
-                  - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138535`
-                  - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138536`
-              - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138537`
-                - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138538.svg covers (-2, -2) 32×32 `4056:138538`
-                - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138539`
-                  - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138539;3004:49435`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138539-3004-49436.svg `I4056:138539;3004:49436`
-                    - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138539;3004:49437`
-                - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138540`
-                  - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138540;3004:49453`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138540-3004-49454.svg `I4056:138540;3004:49454`
-                    - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138540;3004:49455`
-              - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138541`
-                - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138542`
-              - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138543`
-                - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138544`
-                  - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138544;124:65559`
-              - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138545.svg covers (0, 0) 76×38 `4056:138545`
-            - [khối] **Row 2** — 1172×56 · @ (0, 0.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138549`
-              - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138550`
-                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138551`
-                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138552`
-                  - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138553`
-                    - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138554`
-                    - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138555`
-                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138556`
-                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138557.svg covers (-2, -2) 32×32 `4056:138557`
-                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138558`
-                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138558;3004:49435`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138558-3004-49436.svg `I4056:138558;3004:49436`
-                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138558;3004:49437`
-                  - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138559`
-                    - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138559;3004:49453`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138559-3004-49454.svg `I4056:138559;3004:49454`
-                      - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138559;3004:49455`
-                - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138560`
-                  - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138561`
-                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138562`
-                  - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138563`
-                    - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138563;124:65559`
-                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138564.svg covers (0, 0) 76×38 `4056:138564`
-              - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138568`
-                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138569`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138570`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138571`
-                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138572`
-                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138573`
-                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138574`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138575`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138576.svg covers (-2, -2) 32×32 `4056:138576`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138577`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138577;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138577-3004-49436.svg `I4056:138577;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138577;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138578`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138578;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138578-3004-49454.svg `I4056:138578;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138578;3004:49455`
-                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138579`
-                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138580`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138581`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138582`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138582;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138583.svg covers (0, 0) 76×38 `4056:138583`
-              - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138587`
-                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138588`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138589`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138590`
-                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138591`
-                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138592`
-                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138593`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138594`
-                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138595`
-                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138595-2623-27461.svg `I4056:138595;2623:27461`
-                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138595;139:67075`
-                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138595-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138595;3065:68070`
-                    - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138596.svg covers (-1, -1) 26×26 `4056:138596`
-                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138597`
-                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138597;3004:49429`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138597-3004-49430.svg `I4056:138597;3004:49430`
-                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138597;3004:49431`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138598`
-                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138599`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138600`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138601`
-                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138601;124:65563`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138602.svg covers (0, 0) 76×38 `4056:138602`
-              - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138606`
-                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138607`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138608`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138609`
-                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138610`
-                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138611`
-                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138612`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138613`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138614.svg covers (-2, -2) 32×32 `4056:138614`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138615`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138615;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138615-3004-49436.svg `I4056:138615;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138615;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138616`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138616;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138616-3004-49454.svg `I4056:138616;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138616;3004:49455`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138617`
-                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138618`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138619`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138620`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138620;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138621.svg covers (0, 0) 76×38 `4056:138621`
-            - [khối] **Row 7** — 1172×56 · @ (0, 56.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138625`
-              - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138626`
-                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138627`
-                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138628`
-                  - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138629`
-                    - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138630`
-                    - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138631`
-                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138632`
-                  - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138633`
-                    - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138633-2623-27461.svg `I4056:138633;2623:27461`
-                    - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138633;139:67075`
-                    - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138633-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138633;3065:68070`
-                  - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138634.svg covers (-1, -1) 26×26 `4056:138634`
-                  - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138635`
-                    - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138635;3004:49429`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138635-3004-49430.svg `I4056:138635;3004:49430`
-                      - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138635;3004:49431`
-                - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138636`
-                  - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138637`
-                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138638`
-                  - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138639`
-                    - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138639;124:65563`
-                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138640.svg covers (0, 0) 76×38 `4056:138640`
-              - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138644`
-                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138645`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138646`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138647`
-                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138648`
-                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138649`
-                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138650`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138651`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138652.svg covers (-2, -2) 32×32 `4056:138652`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138653`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138653;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138653-3004-49436.svg `I4056:138653;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138653;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138654`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138654;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138654-3004-49454.svg `I4056:138654;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138654;3004:49455`
-                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138655`
-                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138656`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138657`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138658`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138658;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138659.svg covers (0, 0) 76×38 `4056:138659`
-              - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138663`
-                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138664`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138665`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138666`
-                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138667`
-                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138668`
-                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138669`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138670`
-                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138671`
-                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138671-2623-27461.svg `I4056:138671;2623:27461`
-                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138671;139:67075`
-                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138671-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138671;3065:68070`
-                    - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138672.svg covers (-1, -1) 26×26 `4056:138672`
-                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138673`
-                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138673;3004:49429`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138673-3004-49430.svg `I4056:138673;3004:49430`
-                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138673;3004:49431`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138674`
-                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138675`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138676`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138677`
-                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138677;124:65563`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138678.svg covers (0, 0) 76×38 `4056:138678`
-              - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138682`
-                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138683`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138684`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138685`
-                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138686`
-                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138687`
-                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138688`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138689`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138690.svg covers (-2, -2) 32×32 `4056:138690`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138691`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138691;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138691-3004-49436.svg `I4056:138691;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138691;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138692`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138692;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138692-3004-49454.svg `I4056:138692;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138692;3004:49455`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138693`
-                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138694`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138695`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138696`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138696;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138697.svg covers (0, 0) 76×38 `4056:138697`
-            - [khối] **Row 8** — 1172×54.88 · @ (0, 112.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138701`
-              - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138702`
-                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138703`
-                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138704`
-                  - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138705`
-                    - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138706`
-                    - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138707`
-                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138708`
-                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138709.svg covers (-2, -2) 32×32 `4056:138709`
-                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138710`
-                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138710;3004:49435`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138710-3004-49436.svg `I4056:138710;3004:49436`
-                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138710;3004:49437`
-                  - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138711`
-                    - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138711;3004:49453`
-                      - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138711-3004-49454.svg `I4056:138711;3004:49454`
-                      - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138711;3004:49455`
-                - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138712`
-                  - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138713`
-                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138714`
-                  - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138715`
-                    - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138715;124:65559`
-                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138716.svg covers (0, 0) 76×38 `4056:138716`
-              - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138720`
-                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138721`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138722`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138723`
-                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138724`
-                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138725`
-                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138726`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138727`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138728.svg covers (-2, -2) 32×32 `4056:138728`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138729`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138729;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138729-3004-49436.svg `I4056:138729;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138729;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138730`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138730;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138730-3004-49454.svg `I4056:138730;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138730;3004:49455`
-                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138731`
-                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138732`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138733`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138734`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138734;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138735.svg covers (0, 0) 76×38 `4056:138735`
-              - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138739`
-                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138740`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138741`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138742`
-                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138743`
-                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138744`
-                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138745`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138746`
-                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138747`
-                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138747-2623-27461.svg `I4056:138747;2623:27461`
-                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 700 #16a34a (brand/primary) · no-wrap `I4056:138747;139:67075`
-                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138747-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138747;3065:68070`
-                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138748`
-                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138748;3004:49429`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138748-3004-49430.svg `I4056:138748;3004:49430`
-                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #f87171 (status/danger-text) · no-wrap `I4056:138748;3004:49431`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138749`
-                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138750`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138751`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138752`
-                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138752;124:65563`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138753.svg covers (0, 0) 76×38 `4056:138753`
-              - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138757`
-                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138758`
-                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138759`
-                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138760`
-                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138761`
-                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138762`
-                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138763`
-                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138764`
-                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138765.svg covers (-2, -2) 32×32 `4056:138765`
-                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138766`
-                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138766;3004:49435`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138766-3004-49436.svg `I4056:138766;3004:49436`
-                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138766;3004:49437`
-                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138767`
-                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138767;3004:49453`
-                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138767-3004-49454.svg `I4056:138767;3004:49454`
-                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #8b5cf6 · no-wrap `I4056:138767;3004:49455`
-                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138768`
-                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138769`
-                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138770`
-                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138771`
-                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138771;124:65559`
-                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138772.svg covers (0, 0) 76×38 `4056:138772`
-          - [khối] **Row 9** — 1172×56 [FILL×FIXED] · @ (0, 389.75) flow · bg #18181a (bg/surface) · radius 0 0 12px 12px · border 0 0 1px 0 #1f1f22 (border/subtle) `4056:138776`
-            - [khối] **Frame 427321956** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138777`
-              - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138778`
-                - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138779`
-                - [khối] **Container** — 170×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138780`
-                  - [chữ] “Mỹ Phương - CSKH” — 170×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 700 #ededef (text/primary) `4056:138781`
-                  - [chữ] “phuong.my.cskh@gmail.com” — 170×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138782`
-              - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138783`
-                - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138784.svg covers (-2, -2) 32×32 `4056:138784`
-                - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138785`
-                  - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138785;3004:49435`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138785-3004-49436.svg `I4056:138785;3004:49436`
-                    - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #ec4899 · no-wrap `I4056:138785;3004:49437`
-                - [instance] **Role Component** ⟨Role Component: Name=Manager, Dropdown=Không⟩ — 92×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #146048 (tone/green/border) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138786`
-                  - [khối] **Frame 1171274971** — 78×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138786;3004:49441`
-                    - [icon] **Icon Role** ⟨Icon Role: Role=Manager, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138786-3004-49442.svg `I4056:138786;3004:49442`
-                    - [chữ] “Manager” — 54×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 700 #10b981 · no-wrap `I4056:138786;3004:49443`
-              - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138787`
-                - [chữ] “12.04.2026” — 69×19 [HUG×HUG] · @ (7.5, 0) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `4056:138788`
-              - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138789`
-                - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138790`
-                  - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138790;124:65563`
-              - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138791.svg covers (0, 0) 76×38 `4056:138791`
-    - [instance] **Phân Trang** ⟨Phân Trang⟩ — 1064.19×28 [FIXED×HUG] · @ (0, 722) flow · row gap 12 align CENTER `4056:138795`
-      - [khối] **Container** — 229×19 [HUG×HUG] · @ (0, 4.5) flow · column `I4056:138795;1391:17471`
-        - [chữ] “Hiển thị 1 - 10 trong tổng số 80 lớp học” — 229×19 [HUG×HUG] · @ (0, 0) flow · runs: “Hiển thị ” Afacad 15/1.25 500 #a1a1aa (text/secondary); “1” Afacad 15/1.25 500 #ededef (text/primary); “ - ” Afacad 15/1.25 500 #a1a1aa (text/secondary); “10” Afacad 15/1.25 500 #ededef (text/primary); “ trong tổng số ” Afacad 15/1.25 500 #a1a1aa (text/secondary); “80” Afacad 15/1.25 500 #ededef (text/primary); “ lớp học” Afacad 15/1.25 500 #a1a1aa (text/secondary) · no-wrap `I4056:138795;1391:17472`
-      - [khối] **Container** — 251×28 [HUG×HUG] · @ (241, 0) flow · row gap 6 align CENTER `I4056:138795;1391:17473`
-        - [khối] **Button** — 48×28 [HUG×FIXED] · @ (0, 0) flow · column pad 0 6 0 6 justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) · opacity 0.5 `I4056:138795;1391:17474`
-          - [chữ] “Trước” — 34×19 [HUG×HUG] · @ (7, 4.5) flow · Afacad 15/1.25 500 #a1a1aa (text/secondary) · text-align center · no-wrap `I4056:138795;1391:17475`
-        - [khối] **Button** — 28×28 · @ (54, 0) flow · row justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 6px `I4056:138795;1391:17476`
-          - [chữ] “1” — 8×19 [HUG×HUG] · @ (10, 4.5) flow · Afacad 15/1.25 700 #ffffff (color/neutral/white) · text-align center · no-wrap `I4056:138795;1391:17477`
-        - [khối] **Button** — 28×28 · @ (88, 0) flow · row justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) `I4056:138795;1391:17478`
-          - [chữ] “2” — 8×19 [HUG×HUG] · @ (10, 4.5) flow · Afacad 15/1.25 700 #ededef (text/primary) · text-align center · no-wrap `I4056:138795;1391:17479`
-        - [khối] **Button** — 28×28 · @ (122, 0) flow · row justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) `I4056:138795;1391:17480`
-          - [chữ] “3” — 8×19 [HUG×HUG] · @ (10, 4.5) flow · Afacad 15/1.25 700 #ededef (text/primary) · text-align center · no-wrap `I4056:138795;1391:17481`
-        - [khối] **Container** — 18×19 [HUG×HUG] · @ (156, 4.5) flow · column pad 0 4 0 4 `I4056:138795;1391:17482`
-          - [chữ] “...” — 10×19 [HUG×HUG] · @ (4, 0) flow · Afacad 15/1.25 700 #71717a (text/muted) · no-wrap `I4056:138795;1391:17483`
-        - [khối] **Button** — 28×28 · @ (180, 0) flow · row justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) `I4056:138795;1391:17484`
-          - [chữ] “8” — 8×19 [HUG×HUG] · @ (10, 4.5) flow · Afacad 15/1.25 700 #ededef (text/primary) · text-align center · no-wrap `I4056:138795;1391:17485`
-        - [khối] **Button** — 37×28 [HUG×FIXED] · @ (214, 0) flow · column pad 0 6 0 6 justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) `I4056:138795;1391:17486`
-          - [chữ] “Sau” — 23×19 [HUG×HUG] · @ (7, 4.5) flow · Afacad 15/1.25 500 #ededef (text/primary) · text-align center · no-wrap `I4056:138795;1391:17487`
+- [trang] **MST-TK-010000-DK — Tài khoản / Danh sách tài khoản** — 1440×964 · bg #121213 (bg/canvas) `4056:137809`
+  - [khối] **Header** — 1206×64 · @ (234, 0) abs · clip `4056:137810`
+    - [icon] **Group 240178** — 1206×64 · @ (0, 0) abs · file assets/group-240178-4056-137811.svg `4056:137811`
+    - [instance] **ACCOUNT** ⟨ACCOUNT: Role=Master, Theme=Dark, Size=Default⟩ — 222×36 · @ (968, 14) abs · row gap 10 justify MAX align CENTER `4056:137858`
+      - [khối] **Frame 1171274934** — 192×36 [FIXED×HUG] · @ (0, 0) flow · row gap 8 align CENTER `I4056:137858;2008:31737`
+        - [khối] **Background+Border+Shadow** — 36×36 · @ (0, 0) flow · row justify CENTER align CENTER · bg #153020 (bg/brand-tint-strong) · radius 9999px · border 1px solid #27272a (border/default) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:137858;2008:31739`
+          - [ảnh] **2 copy@3x 1** — 36×36 · @ (0, 0) flow · image `url("assets/img-bfd8678ab281.png") center / cover no-repeat` · radius 18px `I4056:137858;2008:31846`
+        - [khối] **Container** — 148×32 [FILL×HUG] · @ (44, 2) flow · column `I4056:137858;2008:31741`
+          - [chữ] “Master” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/1.25 (16.25px) 600 #ffffff (color/neutral/white) · truncate 1 lines `I4056:137858;2008:31742`
+          - [chữ] “master@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/1.25 (16.25px) 500 #ffffff (color/neutral/white) · truncate 1 lines `I4056:137858;2008:31743`
+      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file assets/overlay-I4056-137858-2008-31744.svg covers (-2, -2) 26×26 `I4056:137858;2008:31744`
+  - [khối] **Sidebar** — 234×810 · @ (0, 0) abs · bg #0b0b0c (chrome/bg) · clip `4056:137859`
+    - [icon] **Frame 427322079** — 371.25×1197.75 · @ (0, -216) abs · file assets/frame-427322079-4056-137860.svg covers (0, 216) 234×810 `4056:137860`
+    - [khối] **Left: ICS Logo & Toggle** — 207×44.59 · @ (14, 12) abs · row gap 24 align CENTER `4056:137911`
+      - [khối] **Container** — 159×44.59 [FILL×HUG] · @ (0, 0) flow · column gap 2 `4056:137912`
+        - [icon] **Navigation / Sidebar Menu / Light** — 51×30.59 · @ (0, 0) flow · file assets/navigation-sidebar-menu-light-4056-137913.svg covers (0, 0) 53×32.59 `4056:137913`
+        - [chữ] “v20.07.2026_17:30” — 90×12 [HUG×HUG] · @ (0, 32.59) flow · Unbounded 8/1.5 (12px) 400 #ffffff (color/neutral/white) · no-wrap `4056:137925`
+      - [icon] **Frame 1171274926** — 24×24 · @ (183, 10.3) flow · file assets/frame-1171274926-4056-137926.svg `4056:137926`
+    - [khối] **Nav Items** — 210×694 · @ (12, 78) abs · column space-between align CENTER `4056:137928`
+      - [khối] **Menu** — 210×621 [FILL×FIXED] · @ (0, 0) flow · column gap 8 align MAX `4056:137929`
+        - [instance] **Card Menu** ⟨Card Menu v2 (Test): Icon=483:3592, Label=Quản Lý, Type=Chính dropdown, State=Default, Expanded=Yes⟩ — 210×44 [FIXED×HUG] · @ (0, 0) flow · row space-between pad 8 8 8 8 align CENTER · radius 8px `4056:137930`
+          - [khối] **Content** — 176×28 [FILL×HUG] · @ (8, 8) flow · row gap 8 align CENTER · clip `I4056:137930;2245:87830`
+            - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Quản lý⟩ — 28×28 · @ (0, 0) flow · file assets/icon-menu-I4056-137930-2245-87825.svg `I4056:137930;2245:87825`
+            - [chữ] “Quản Lý” — 140×15 [FILL×HUG] · @ (36, 6.5) flow · Unbounded 12/1.25 (15px) 600 #ffffff (color/neutral/white) case title `I4056:137930;2245:87829`
+          - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (184, 13) flow · file assets/chevron-I4056-137930-2245-87831.svg `I4056:137930;2245:87831`
+        - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=1933:8141, Label=Lớp Học, Type=Con, State=Select, Expanded=No⟩ — 198×40 [FIXED×HUG] · @ (12, 52) flow · row gap 8 pad 8 4 8 8 align CENTER · bg `linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.25) 100%)` · radius 8px · shadow inset 0 0 0 1px rgba(255, 255, 255, 0.2), 0 1.25px 2.25px 0 rgba(0, 0, 0, 0.05) · backdrop blur(2.25px) `4056:137931`
+          - [hình] **Theme · Dark BG** — 198×40 · @ (0, 0) abs · bg #2a2a2e (bg/strong) · radius 8px · shadow inset 0 0 0 1px #3f3f46 `I4056:137931;4139:138315`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Lớp học⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4056-137931-2245-87860.svg `I4056:137931;2245:87860`
+          - [chữ] “Lớp Học” — 154×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:137931;2245:87864`
+        - [instance] **Card Menu** ⟨Card Menu v2 (Test): Icon=418:52623, Label=Học Viên, Type=Con, State=Default, Expanded=No⟩ — 198×40 [FIXED×HUG] · @ (12, 100) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:137932`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Học viên trực tuyến⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4056-137932-2245-87854.svg `I4056:137932;2245:87854`
+          - [chữ] “Học Viên” — 154×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:137932;2245:87858`
+        - [instance] **Card Menu** ⟨Card Menu v2 (Test): Icon=1161:5614, Label=Giáo Viên, Type=Con, State=Default, Expanded=No⟩ — 198×40 [FIXED×HUG] · @ (12, 148) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:137933`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Giáo viên 2⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4056-137933-2245-87854.svg `I4056:137933;2245:87854`
+          - [chữ] “Giáo Viên” — 154×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:137933;2245:87858`
+        - [instance] **Card Menu** ⟨Card Menu v2 (Test): Icon=4101:88017, Label=Quản Lý Tài Khoản, Type=Con, State=Default, Expanded=No⟩ — 198×40 [FIXED×HUG] · @ (12, 196) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:137934`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Quản lý tài khoản⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4056-137934-2245-87854.svg `I4056:137934;2245:87854`
+          - [chữ] “Quản Lý Tài Khoản” — 154×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:137934;2245:87858`
+      - [icon] **LOGO CENTER** ⟨LOGO CENTER: Property 1=ICS, Property 2=yes⟩ — 146×54 · @ (32, 640) flow · file assets/logo-center-4056-137935.svg covers (-4, 0) 154×62 `4056:137935`
+  - [khối] **Frame 427320139** — 1206×900 · @ (234, 64) abs · row gap 99 pad 16 16 16 16 · bg #18181a (bg/surface) `4056:137936`
+    - [khối] **Data Table (Bento/Card Style for Modern Look)** — 1174×884 [FILL×FIXED] · @ (16, 16) flow · column gap 12 pad 0 0 16 0 · clip `4056:137937`
+      - [khối] **Header Section** — 1174×33 [FILL×FIXED] · @ (0, 0) flow · row space-between align CENTER `4056:137938`
+        - [khối] **Container** — 216×26 [HUG×HUG] · @ (0, 3.5) flow · row gap 12 align CENTER `4056:137939`
+          - [chữ] “Danh sách tài khoản” — 216×26 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/1.5 (25.5px) 600 #ededef (text/primary) · no-wrap `4056:137940`
+        - [khối] **Container** — 274×30 [HUG×HUG] · @ (900, 1.5) flow · row gap 12 align CENTER `4056:137942`
+          - [instance] **Atom/Input** ⟨Atom/Input: Loại=Gift code, Text=Tìm nội dung..., State=Search Compact, Kiểu=Chuẩn⟩ — 180×30 · @ (0, 0) flow · column gap 10 pad 0 12 0 8 justify CENTER · bg #121213 (bg/canvas) · radius 8px · border 1px solid #3f3f46 (border/strong) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05) `4056:137943`
+            - [khối] **Frame 427321959** — 158×19 [FILL×HUG] · @ (9, 5.5) flow · row gap 4 align CENTER `I4056:137943;1739:32348`
+              - [icon] **SVG** — 14×14 · @ (0, 2.5) flow · file assets/svg-I4056-137943-1739-32349.svg `I4056:137943;1739:32349`
+              - [chữ] “Tìm nội dung...” — 140×19 [FILL×HUG] · @ (18, 0) flow · Afacad 15/1.25 (18.75px) 400 #71717a (text/muted) · truncate 1 lines `I4056:137943;1739:32351`
+          - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Clear=false, Count Value=1, Leading=false, Leading Icon=2015:30465, Count=false, Chevron=true, Value=Vai trò, Size=XS, State=Default, Content=Value⟩ — 82×30 [HUG×FIXED] · @ (192, 0) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #18181a (bg/surface) · radius 8px · border 1px solid #27272a (border/default) `4056:137944`
+            - [khối] **Content** — 38×19 [HUG×HUG] · @ (13, 5.5) flow · row align CENTER · clip `I4056:137944;2015:36007`
+              - [chữ] “Vai trò” — 38×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #ededef (text/primary) · no-wrap `I4056:137944;2015:36008`
+            - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (57, 7) flow · file assets/chevron-I4056-137944-2015-36012.svg `I4056:137944;2015:36012`
+      - [khối] **Section - Bảng dữ liệu chi tiết các lớp học** — 1174×665 [FILL×FIXED] · @ (0, 45) flow · column · bg #18181a (bg/surface) · radius 16px · border 1px solid #27272a (border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) · clip `4056:137945`
+        - [khối] **Table Scroll Container** — 1172×679 [FILL×FIXED] · @ (1, 1) flow · column · clip `4056:137946`
+          - [khối] **Table** — 1172×36 [FILL×HUG] · @ (0, 0) flow · column gap -1 `4056:137947`
+            - [khối] **Frame 427321948** — 1172×36 [FILL×HUG] · @ (0, 0) flow · row gap 24 align CENTER · bg #121213 (bg/canvas) · radius 12px 12px 0 0 · border 0 0 1px 0 solid #27272a (border/default) `4056:137948`
+              - [khối] **Frame 427326027** — 472×35 [FIXED×HUG] · @ (0, 0) flow · row gap 12 align CENTER `4056:137949`
+                - [khối] **Cell** — 40×35 [HUG×HUG] · @ (0, 0) flow · column pad 8 0 8 16 justify CENTER · radius 12px 0 0 0 `4056:137950`
+                  - [chữ] “Tên” — 24×19 [FIXED×HUG] · @ (16, 8) flow · Afacad 15/1.25 (18.75px) 700 #a1a1aa (text/secondary) case upper · text-align center `4056:137951`
+              - [khối] **Cell** — 360×35 [FIXED×HUG] · @ (496, 0) flow · column pad 8 0 8 0 justify CENTER `4056:137952`
+                - [chữ] “Vai trò” — 360×19 [FILL×HUG] · @ (0, 8) flow · Afacad 15/1.25 (18.75px) 700 #a1a1aa (text/secondary) case upper `4056:137953`
+              - [khối] **Cell** — 84×35 [FIXED×HUG] · @ (880, 0) flow · column pad 8 0 8 0 justify CENTER `4056:137954`
+                - [chữ] “Ngày tạo” — 84×19 [FILL×HUG] · @ (0, 8) flow · Afacad 15/1.25 (18.75px) 700 #a1a1aa (text/secondary) case upper · text-align center `4056:137955`
+              - [khối] **Cell** — 84×35 [FIXED×HUG] · @ (988, 0) flow · column pad 8 0 8 0 justify CENTER align CENTER `4056:137956`
+                - [chữ] “Trạng thái” — 84×19 [FILL×HUG] · @ (0, 8) flow · Afacad 15/1.25 (18.75px) 700 #a1a1aa (text/secondary) case upper · text-align center `4056:137957`
+          - [khối] **Table Body / Rows** — 1172×445.75 [FILL×HUG] · @ (0, 36) flow · column `4056:137958`
+            - [khối] **Row 1** — 1172×56 [FILL×FIXED] · @ (0, 0) flow · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:137959`
+              - [khối] **Frame 427321951** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:137960`
+                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:137961`
+                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-279410b0bc0f.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:137962`
+                  - [khối] **Container** — 158×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:137963`
+                    - [chữ] “Trần - Sales” — 158×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:137964`
+                    - [chữ] “tran.bao.sales@gmail.com” — 158×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:137965`
+                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:137966`
+                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-137967.svg covers (-2, -2) 32×32 `4056:137967`
+                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:137968`
+                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:137968;3004:49435`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-137968-3004-49436.svg `I4056:137968;3004:49436`
+                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:137968;3004:49437`
+                  - [instance] **Role Component** ⟨Role Component: Name=Admin, Dropdown=Không⟩ — 76×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #0694a2 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:137969`
+                    - [khối] **Frame 1171274972** — 62×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:137969;3004:49447`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Admin, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-137969-3004-49448.svg `I4056:137969;3004:49448`
+                      - [chữ] “Admin” — 38×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #0694a2 · no-wrap `I4056:137969;3004:49449`
+                  - [instance] **Role Component** ⟨Role Component: Name=+Plus, Dropdown=Có⟩ — 26×26 · @ (211, 0) flow · column justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #16a34a (brand/primary) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:137970`
+                    - [chữ] “+2” — 16×19 [HUG×HUG] · @ (5, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:137970;124:63401`
+                - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:137971`
+                  - [chữ] “21.08.2026” — 69×19 [HUG×HUG] · @ (7.5, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:137972`
+                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:137973`
+                  - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:137974`
+                    - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:137974;124:65559`
+                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-137975.svg covers (0, 0) 76×38 `4056:137975`
+            - [khối] **Row 2** — 1172×56 [FILL×FIXED] · @ (0, 56) flow · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:137979`
+              - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:137980`
+                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:137981`
+                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:137982`
+                  - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:137983`
+                    - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:137984`
+                    - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:137985`
+                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:137986`
+                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-137987.svg covers (-2, -2) 32×32 `4056:137987`
+                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:137988`
+                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:137988;3004:49435`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-137988-3004-49436.svg `I4056:137988;3004:49436`
+                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:137988;3004:49437`
+                  - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:137989`
+                    - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:137989;3004:49453`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-137989-3004-49454.svg `I4056:137989;3004:49454`
+                      - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:137989;3004:49455`
+                - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:137990`
+                  - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:137991`
+                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:137992`
+                  - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:137993`
+                    - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:137993;124:65559`
+                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-137994.svg covers (0, 0) 76×38 `4056:137994`
+            - [khối] **Row 7** — 1172×56 [FILL×FIXED] · @ (0, 112) flow · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:137998`
+              - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:137999`
+                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138000`
+                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138001`
+                  - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138002`
+                    - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138003`
+                    - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138004`
+                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138005`
+                  - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138006`
+                    - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138006-2623-27461.svg `I4056:138006;2623:27461`
+                    - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138006;139:67075`
+                  - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138007.svg covers (-1, -1) 26×26 `4056:138007`
+                  - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138008`
+                    - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138008;3004:49429`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138008-3004-49430.svg `I4056:138008;3004:49430`
+                      - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138008;3004:49431`
+                - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138009`
+                  - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138010`
+                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138011`
+                  - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138012`
+                    - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138012;124:65563`
+                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138013.svg covers (0, 0) 76×38 `4056:138013`
+            - [khối] **Row 8** — 1172×54.88 [FILL×FIXED] · @ (0, 168) flow · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138017`
+              - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138018`
+                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138019`
+                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138020`
+                  - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138021`
+                    - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138022`
+                    - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138023`
+                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138024`
+                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138025.svg covers (-2, -2) 32×32 `4056:138025`
+                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138026`
+                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138026;3004:49435`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138026-3004-49436.svg `I4056:138026;3004:49436`
+                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138026;3004:49437`
+                  - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138027`
+                    - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138027;3004:49453`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138027-3004-49454.svg `I4056:138027;3004:49454`
+                      - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138027;3004:49455`
+                - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138028`
+                  - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138029`
+                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138030`
+                  - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138031`
+                    - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138031;124:65559`
+                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138032.svg covers (0, 0) 76×38 `4056:138032`
+            - [khối] **Row 10** — 1172×56 [FILL×FIXED] · @ (0, 222.88) flow · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138036`
+              - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138037`
+                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138038`
+                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138039`
+                  - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138040`
+                    - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138041`
+                    - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138042`
+                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138043`
+                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138044.svg covers (-2, -2) 32×32 `4056:138044`
+                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138045`
+                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138045;3004:49435`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138045-3004-49436.svg `I4056:138045;3004:49436`
+                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138045;3004:49437`
+                  - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138046`
+                    - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138046;3004:49453`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138046-3004-49454.svg `I4056:138046;3004:49454`
+                      - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138046;3004:49455`
+                - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138047`
+                  - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138048`
+                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138049`
+                  - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138050`
+                    - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138050;124:65559`
+                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138051.svg covers (0, 0) 76×38 `4056:138051`
+              - [khối] **Row 2** — 1172×56 · @ (0, 0.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138055`
+                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138056`
+                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138057`
+                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138058`
+                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138059`
+                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138060`
+                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138061`
+                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138062`
+                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138063.svg covers (-2, -2) 32×32 `4056:138063`
+                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138064`
+                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138064;3004:49435`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138064-3004-49436.svg `I4056:138064;3004:49436`
+                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138064;3004:49437`
+                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138065`
+                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138065;3004:49453`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138065-3004-49454.svg `I4056:138065;3004:49454`
+                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138065;3004:49455`
+                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138066`
+                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138067`
+                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138068`
+                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138069`
+                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138069;124:65559`
+                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138070.svg covers (0, 0) 76×38 `4056:138070`
+                - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138074`
+                  - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138075`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138076`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138077`
+                      - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138078`
+                        - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138079`
+                        - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138080`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138081`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138082.svg covers (-2, -2) 32×32 `4056:138082`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138083`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138083;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138083-3004-49436.svg `I4056:138083;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138083;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138084`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138084;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138084-3004-49454.svg `I4056:138084;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138084;3004:49455`
+                    - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138085`
+                      - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138086`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138087`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138088`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138088;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138089.svg covers (0, 0) 76×38 `4056:138089`
+                - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138093`
+                  - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138094`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138095`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138096`
+                      - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138097`
+                        - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138098`
+                        - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138099`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138100`
+                      - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138101`
+                        - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138101-2623-27461.svg `I4056:138101;2623:27461`
+                        - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138101;139:67075`
+                        - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138101-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138101;3065:68070`
+                      - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138102.svg covers (-1, -1) 26×26 `4056:138102`
+                      - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138103`
+                        - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138103;3004:49429`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138103-3004-49430.svg `I4056:138103;3004:49430`
+                          - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138103;3004:49431`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138104`
+                      - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138105`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138106`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138107`
+                        - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138107;124:65563`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138108.svg covers (0, 0) 76×38 `4056:138108`
+                - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138112`
+                  - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138113`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138114`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138115`
+                      - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138116`
+                        - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138117`
+                        - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138118`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138119`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138120.svg covers (-2, -2) 32×32 `4056:138120`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138121`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138121;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138121-3004-49436.svg `I4056:138121;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138121;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138122`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138122;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138122-3004-49454.svg `I4056:138122;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138122;3004:49455`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138123`
+                      - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138124`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138125`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138126`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138126;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138127.svg covers (0, 0) 76×38 `4056:138127`
+              - [khối] **Row 7** — 1172×56 · @ (0, 56.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138131`
+                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138132`
+                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138133`
+                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138134`
+                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138135`
+                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138136`
+                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138137`
+                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138138`
+                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138139`
+                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138139-2623-27461.svg `I4056:138139;2623:27461`
+                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138139;139:67075`
+                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138139-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138139;3065:68070`
+                    - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138140.svg covers (-1, -1) 26×26 `4056:138140`
+                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138141`
+                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138141;3004:49429`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138141-3004-49430.svg `I4056:138141;3004:49430`
+                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138141;3004:49431`
+                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138142`
+                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138143`
+                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138144`
+                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138145`
+                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138145;124:65563`
+                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138146.svg covers (0, 0) 76×38 `4056:138146`
+                - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138150`
+                  - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138151`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138152`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138153`
+                      - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138154`
+                        - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138155`
+                        - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138156`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138157`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138158.svg covers (-2, -2) 32×32 `4056:138158`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138159`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138159;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138159-3004-49436.svg `I4056:138159;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138159;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138160`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138160;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138160-3004-49454.svg `I4056:138160;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138160;3004:49455`
+                    - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138161`
+                      - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138162`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138163`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138164`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138164;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138165.svg covers (0, 0) 76×38 `4056:138165`
+                - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138169`
+                  - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138170`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138171`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138172`
+                      - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138173`
+                        - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138174`
+                        - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138175`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138176`
+                      - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138177`
+                        - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138177-2623-27461.svg `I4056:138177;2623:27461`
+                        - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138177;139:67075`
+                        - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138177-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138177;3065:68070`
+                      - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138178.svg covers (-1, -1) 26×26 `4056:138178`
+                      - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138179`
+                        - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138179;3004:49429`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138179-3004-49430.svg `I4056:138179;3004:49430`
+                          - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138179;3004:49431`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138180`
+                      - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138181`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138182`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138183`
+                        - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138183;124:65563`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138184.svg covers (0, 0) 76×38 `4056:138184`
+                - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138188`
+                  - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138189`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138190`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138191`
+                      - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138192`
+                        - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138193`
+                        - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138194`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138195`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138196.svg covers (-2, -2) 32×32 `4056:138196`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138197`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138197;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138197-3004-49436.svg `I4056:138197;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138197;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138198`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138198;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138198-3004-49454.svg `I4056:138198;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138198;3004:49455`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138199`
+                      - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138200`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138201`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138202`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138202;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138203.svg covers (0, 0) 76×38 `4056:138203`
+              - [khối] **Row 8** — 1172×54.88 · @ (0, 112.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138207`
+                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138208`
+                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138209`
+                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138210`
+                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138211`
+                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138212`
+                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138213`
+                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138214`
+                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138215.svg covers (-2, -2) 32×32 `4056:138215`
+                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138216`
+                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138216;3004:49435`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138216-3004-49436.svg `I4056:138216;3004:49436`
+                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138216;3004:49437`
+                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138217`
+                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138217;3004:49453`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138217-3004-49454.svg `I4056:138217;3004:49454`
+                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138217;3004:49455`
+                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138218`
+                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138219`
+                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138220`
+                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138221`
+                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138221;124:65559`
+                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138222.svg covers (0, 0) 76×38 `4056:138222`
+                - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138226`
+                  - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138227`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138228`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138229`
+                      - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138230`
+                        - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138231`
+                        - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138232`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138233`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138234.svg covers (-2, -2) 32×32 `4056:138234`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138235`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138235;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138235-3004-49436.svg `I4056:138235;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138235;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138236`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138236;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138236-3004-49454.svg `I4056:138236;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138236;3004:49455`
+                    - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138237`
+                      - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138238`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138239`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138240`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138240;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138241.svg covers (0, 0) 76×38 `4056:138241`
+                - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138245`
+                  - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138246`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138247`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138248`
+                      - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138249`
+                        - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138250`
+                        - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138251`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138252`
+                      - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138253`
+                        - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138253-2623-27461.svg `I4056:138253;2623:27461`
+                        - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138253;139:67075`
+                        - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138253-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138253;3065:68070`
+                      - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138254.svg covers (-1, -1) 26×26 `4056:138254`
+                      - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138255`
+                        - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138255;3004:49429`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138255-3004-49430.svg `I4056:138255;3004:49430`
+                          - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138255;3004:49431`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138256`
+                      - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138257`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138258`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138259`
+                        - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138259;124:65563`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138260.svg covers (0, 0) 76×38 `4056:138260`
+                - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138264`
+                  - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138265`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138266`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138267`
+                      - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138268`
+                        - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138269`
+                        - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138270`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138271`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138272.svg covers (-2, -2) 32×32 `4056:138272`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138273`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138273;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138273-3004-49436.svg `I4056:138273;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138273;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138274`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138274;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138274-3004-49454.svg `I4056:138274;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138274;3004:49455`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138275`
+                      - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138276`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138277`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138278`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138278;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138279.svg covers (0, 0) 76×38 `4056:138279`
+            - [khối] **Row 11** — 1172×56 [FILL×FIXED] · @ (0, 278.88) flow · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138283`
+              - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138284`
+                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138285`
+                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138286`
+                  - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138287`
+                    - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138288`
+                    - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138289`
+                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138290`
+                  - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138291`
+                    - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138291-2623-27461.svg `I4056:138291;2623:27461`
+                    - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138291;139:67075`
+                    - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138291-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138291;3065:68070`
+                  - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138292.svg covers (-1, -1) 26×26 `4056:138292`
+                  - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138293`
+                    - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138293;3004:49429`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138293-3004-49430.svg `I4056:138293;3004:49430`
+                      - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138293;3004:49431`
+                - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138294`
+                  - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138295`
+                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138296`
+                  - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138297`
+                    - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138297;124:65563`
+                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138298.svg covers (0, 0) 76×38 `4056:138298`
+              - [khối] **Row 2** — 1172×56 · @ (0, 0.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138302`
+                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138303`
+                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138304`
+                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138305`
+                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138306`
+                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138307`
+                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138308`
+                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138309`
+                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138310.svg covers (-2, -2) 32×32 `4056:138310`
+                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138311`
+                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138311;3004:49435`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138311-3004-49436.svg `I4056:138311;3004:49436`
+                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138311;3004:49437`
+                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138312`
+                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138312;3004:49453`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138312-3004-49454.svg `I4056:138312;3004:49454`
+                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138312;3004:49455`
+                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138313`
+                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138314`
+                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138315`
+                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138316`
+                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138316;124:65559`
+                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138317.svg covers (0, 0) 76×38 `4056:138317`
+                - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138321`
+                  - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138322`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138323`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138324`
+                      - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138325`
+                        - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138326`
+                        - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138327`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138328`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138329.svg covers (-2, -2) 32×32 `4056:138329`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138330`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138330;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138330-3004-49436.svg `I4056:138330;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138330;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138331`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138331;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138331-3004-49454.svg `I4056:138331;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138331;3004:49455`
+                    - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138332`
+                      - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138333`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138334`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138335`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138335;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138336.svg covers (0, 0) 76×38 `4056:138336`
+                - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138340`
+                  - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138341`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138342`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138343`
+                      - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138344`
+                        - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138345`
+                        - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138346`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138347`
+                      - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138348`
+                        - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138348-2623-27461.svg `I4056:138348;2623:27461`
+                        - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138348;139:67075`
+                        - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138348-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138348;3065:68070`
+                      - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138349.svg covers (-1, -1) 26×26 `4056:138349`
+                      - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138350`
+                        - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138350;3004:49429`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138350-3004-49430.svg `I4056:138350;3004:49430`
+                          - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138350;3004:49431`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138351`
+                      - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138352`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138353`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138354`
+                        - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138354;124:65563`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138355.svg covers (0, 0) 76×38 `4056:138355`
+                - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138359`
+                  - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138360`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138361`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138362`
+                      - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138363`
+                        - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138364`
+                        - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138365`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138366`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138367.svg covers (-2, -2) 32×32 `4056:138367`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138368`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138368;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138368-3004-49436.svg `I4056:138368;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138368;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138369`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138369;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138369-3004-49454.svg `I4056:138369;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138369;3004:49455`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138370`
+                      - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138371`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138372`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138373`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138373;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138374.svg covers (0, 0) 76×38 `4056:138374`
+              - [khối] **Row 7** — 1172×56 · @ (0, 56.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138378`
+                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138379`
+                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138380`
+                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138381`
+                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138382`
+                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138383`
+                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138384`
+                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138385`
+                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138386`
+                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138386-2623-27461.svg `I4056:138386;2623:27461`
+                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138386;139:67075`
+                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138386-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138386;3065:68070`
+                    - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138387.svg covers (-1, -1) 26×26 `4056:138387`
+                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138388`
+                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138388;3004:49429`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138388-3004-49430.svg `I4056:138388;3004:49430`
+                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138388;3004:49431`
+                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138389`
+                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138390`
+                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138391`
+                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138392`
+                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138392;124:65563`
+                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138393.svg covers (0, 0) 76×38 `4056:138393`
+                - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138397`
+                  - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138398`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138399`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138400`
+                      - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138401`
+                        - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138402`
+                        - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138403`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138404`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138405.svg covers (-2, -2) 32×32 `4056:138405`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138406`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138406;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138406-3004-49436.svg `I4056:138406;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138406;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138407`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138407;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138407-3004-49454.svg `I4056:138407;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138407;3004:49455`
+                    - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138408`
+                      - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138409`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138410`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138411`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138411;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138412.svg covers (0, 0) 76×38 `4056:138412`
+                - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138416`
+                  - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138417`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138418`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138419`
+                      - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138420`
+                        - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138421`
+                        - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138422`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138423`
+                      - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138424`
+                        - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138424-2623-27461.svg `I4056:138424;2623:27461`
+                        - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138424;139:67075`
+                        - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138424-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138424;3065:68070`
+                      - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138425.svg covers (-1, -1) 26×26 `4056:138425`
+                      - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138426`
+                        - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138426;3004:49429`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138426-3004-49430.svg `I4056:138426;3004:49430`
+                          - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138426;3004:49431`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138427`
+                      - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138428`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138429`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138430`
+                        - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138430;124:65563`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138431.svg covers (0, 0) 76×38 `4056:138431`
+                - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138435`
+                  - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138436`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138437`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138438`
+                      - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138439`
+                        - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138440`
+                        - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138441`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138442`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138443.svg covers (-2, -2) 32×32 `4056:138443`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138444`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138444;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138444-3004-49436.svg `I4056:138444;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138444;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138445`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138445;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138445-3004-49454.svg `I4056:138445;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138445;3004:49455`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138446`
+                      - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138447`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138448`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138449`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138449;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138450.svg covers (0, 0) 76×38 `4056:138450`
+              - [khối] **Row 8** — 1172×54.88 · @ (0, 112.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138454`
+                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138455`
+                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138456`
+                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138457`
+                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138458`
+                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138459`
+                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138460`
+                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138461`
+                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138462.svg covers (-2, -2) 32×32 `4056:138462`
+                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138463`
+                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138463;3004:49435`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138463-3004-49436.svg `I4056:138463;3004:49436`
+                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138463;3004:49437`
+                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138464`
+                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138464;3004:49453`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138464-3004-49454.svg `I4056:138464;3004:49454`
+                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138464;3004:49455`
+                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138465`
+                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138466`
+                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138467`
+                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138468`
+                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138468;124:65559`
+                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138469.svg covers (0, 0) 76×38 `4056:138469`
+                - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138473`
+                  - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138474`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138475`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138476`
+                      - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138477`
+                        - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138478`
+                        - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138479`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138480`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138481.svg covers (-2, -2) 32×32 `4056:138481`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138482`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138482;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138482-3004-49436.svg `I4056:138482;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138482;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138483`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138483;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138483-3004-49454.svg `I4056:138483;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138483;3004:49455`
+                    - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138484`
+                      - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138485`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138486`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138487`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138487;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138488.svg covers (0, 0) 76×38 `4056:138488`
+                - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138492`
+                  - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138493`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138494`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138495`
+                      - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138496`
+                        - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138497`
+                        - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138498`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138499`
+                      - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138500`
+                        - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138500-2623-27461.svg `I4056:138500;2623:27461`
+                        - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138500;139:67075`
+                        - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138500-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138500;3065:68070`
+                      - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138501.svg covers (-1, -1) 26×26 `4056:138501`
+                      - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138502`
+                        - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138502;3004:49429`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138502-3004-49430.svg `I4056:138502;3004:49430`
+                          - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138502;3004:49431`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138503`
+                      - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138504`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138505`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138506`
+                        - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138506;124:65563`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138507.svg covers (0, 0) 76×38 `4056:138507`
+                - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138511`
+                  - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138512`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138513`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138514`
+                      - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138515`
+                        - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138516`
+                        - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138517`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138518`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138519.svg covers (-2, -2) 32×32 `4056:138519`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138520`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138520;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138520-3004-49436.svg `I4056:138520;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138520;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138521`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138521;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138521-3004-49454.svg `I4056:138521;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138521;3004:49455`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138522`
+                      - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138523`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138524`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138525`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138525;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138526.svg covers (0, 0) 76×38 `4056:138526`
+            - [khối] **Row 12** — 1172×54.88 [FILL×FIXED] · @ (0, 334.88) flow · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138530`
+              - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138531`
+                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138532`
+                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138533`
+                  - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138534`
+                    - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138535`
+                    - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138536`
+                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138537`
+                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138538.svg covers (-2, -2) 32×32 `4056:138538`
+                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138539`
+                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138539;3004:49435`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138539-3004-49436.svg `I4056:138539;3004:49436`
+                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138539;3004:49437`
+                  - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138540`
+                    - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138540;3004:49453`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138540-3004-49454.svg `I4056:138540;3004:49454`
+                      - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138540;3004:49455`
+                - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138541`
+                  - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138542`
+                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138543`
+                  - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138544`
+                    - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138544;124:65559`
+                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138545.svg covers (0, 0) 76×38 `4056:138545`
+              - [khối] **Row 2** — 1172×56 · @ (0, 0.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138549`
+                - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138550`
+                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138551`
+                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138552`
+                    - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138553`
+                      - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138554`
+                      - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138555`
+                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138556`
+                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138557.svg covers (-2, -2) 32×32 `4056:138557`
+                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138558`
+                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138558;3004:49435`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138558-3004-49436.svg `I4056:138558;3004:49436`
+                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138558;3004:49437`
+                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138559`
+                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138559;3004:49453`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138559-3004-49454.svg `I4056:138559;3004:49454`
+                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138559;3004:49455`
+                  - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138560`
+                    - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138561`
+                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138562`
+                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138563`
+                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138563;124:65559`
+                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138564.svg covers (0, 0) 76×38 `4056:138564`
+                - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138568`
+                  - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138569`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138570`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138571`
+                      - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138572`
+                        - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138573`
+                        - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138574`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138575`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138576.svg covers (-2, -2) 32×32 `4056:138576`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138577`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138577;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138577-3004-49436.svg `I4056:138577;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138577;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138578`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138578;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138578-3004-49454.svg `I4056:138578;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138578;3004:49455`
+                    - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138579`
+                      - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138580`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138581`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138582`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138582;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138583.svg covers (0, 0) 76×38 `4056:138583`
+                - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138587`
+                  - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138588`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138589`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138590`
+                      - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138591`
+                        - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138592`
+                        - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138593`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138594`
+                      - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138595`
+                        - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138595-2623-27461.svg `I4056:138595;2623:27461`
+                        - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138595;139:67075`
+                        - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138595-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138595;3065:68070`
+                      - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138596.svg covers (-1, -1) 26×26 `4056:138596`
+                      - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138597`
+                        - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138597;3004:49429`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138597-3004-49430.svg `I4056:138597;3004:49430`
+                          - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138597;3004:49431`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138598`
+                      - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138599`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138600`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138601`
+                        - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138601;124:65563`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138602.svg covers (0, 0) 76×38 `4056:138602`
+                - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138606`
+                  - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138607`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138608`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138609`
+                      - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138610`
+                        - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138611`
+                        - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138612`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138613`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138614.svg covers (-2, -2) 32×32 `4056:138614`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138615`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138615;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138615-3004-49436.svg `I4056:138615;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138615;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138616`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138616;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138616-3004-49454.svg `I4056:138616;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138616;3004:49455`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138617`
+                      - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138618`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138619`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138620`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138620;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138621.svg covers (0, 0) 76×38 `4056:138621`
+              - [khối] **Row 7** — 1172×56 · @ (0, 56.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138625`
+                - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138626`
+                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138627`
+                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138628`
+                    - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138629`
+                      - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138630`
+                      - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138631`
+                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138632`
+                    - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138633`
+                      - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138633-2623-27461.svg `I4056:138633;2623:27461`
+                      - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138633;139:67075`
+                      - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138633-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138633;3065:68070`
+                    - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138634.svg covers (-1, -1) 26×26 `4056:138634`
+                    - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138635`
+                      - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138635;3004:49429`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138635-3004-49430.svg `I4056:138635;3004:49430`
+                        - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138635;3004:49431`
+                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138636`
+                    - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138637`
+                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138638`
+                    - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138639`
+                      - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138639;124:65563`
+                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138640.svg covers (0, 0) 76×38 `4056:138640`
+                - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138644`
+                  - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138645`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138646`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138647`
+                      - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138648`
+                        - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138649`
+                        - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138650`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138651`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138652.svg covers (-2, -2) 32×32 `4056:138652`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138653`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138653;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138653-3004-49436.svg `I4056:138653;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138653;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138654`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138654;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138654-3004-49454.svg `I4056:138654;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138654;3004:49455`
+                    - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138655`
+                      - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138656`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138657`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138658`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138658;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138659.svg covers (0, 0) 76×38 `4056:138659`
+                - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138663`
+                  - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138664`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138665`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138666`
+                      - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138667`
+                        - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138668`
+                        - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138669`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138670`
+                      - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138671`
+                        - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138671-2623-27461.svg `I4056:138671;2623:27461`
+                        - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138671;139:67075`
+                        - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138671-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138671;3065:68070`
+                      - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (91, 19) abs · file assets/mouse-click-4056-138672.svg covers (-1, -1) 26×26 `4056:138672`
+                      - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138673`
+                        - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138673;3004:49429`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138673-3004-49430.svg `I4056:138673;3004:49430`
+                          - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138673;3004:49431`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138674`
+                      - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138675`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138676`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138677`
+                        - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138677;124:65563`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138678.svg covers (0, 0) 76×38 `4056:138678`
+                - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138682`
+                  - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138683`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138684`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138685`
+                      - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138686`
+                        - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138687`
+                        - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138688`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138689`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138690.svg covers (-2, -2) 32×32 `4056:138690`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138691`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138691;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138691-3004-49436.svg `I4056:138691;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138691;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138692`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138692;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138692-3004-49454.svg `I4056:138692;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138692;3004:49455`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138693`
+                      - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138694`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138695`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138696`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138696;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138697.svg covers (0, 0) 76×38 `4056:138697`
+              - [khối] **Row 8** — 1172×54.88 · @ (0, 112.12) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138701`
+                - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138702`
+                  - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138703`
+                    - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138704`
+                    - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138705`
+                      - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138706`
+                      - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138707`
+                  - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138708`
+                    - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138709.svg covers (-2, -2) 32×32 `4056:138709`
+                    - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138710`
+                      - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138710;3004:49435`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138710-3004-49436.svg `I4056:138710;3004:49436`
+                        - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138710;3004:49437`
+                    - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138711`
+                      - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138711;3004:49453`
+                        - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138711-3004-49454.svg `I4056:138711;3004:49454`
+                        - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138711;3004:49455`
+                  - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138712`
+                    - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138713`
+                  - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138714`
+                    - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138715`
+                      - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138715;124:65559`
+                  - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138716.svg covers (0, 0) 76×38 `4056:138716`
+                - [khối] **Row 2** — 1172×56 · @ (0, 0) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138720`
+                  - [khối] **Frame 427321952** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138721`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138722`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-c91065efbc62.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138723`
+                      - [khối] **Container** — 131×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138724`
+                        - [chữ] “TRÚC_SALES” — 131×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138725`
+                        - [chữ] “truc.sales@gmail.com” — 131×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138726`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138727`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138728.svg covers (-2, -2) 32×32 `4056:138728`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138729`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138729;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138729-3004-49436.svg `I4056:138729;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138729;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138730`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138730;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138730-3004-49454.svg `I4056:138730;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138730;3004:49455`
+                    - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138731`
+                      - [chữ] “19.07.2026” — 68×19 [HUG×HUG] · @ (8, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138732`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138733`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138734`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138734;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138735.svg covers (0, 0) 76×38 `4056:138735`
+                - [khối] **Row 7** — 1172×56 · @ (0, 56) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138739`
+                  - [khối] **Frame 427321953** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138740`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138741`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138742`
+                      - [khối] **Container** — 106×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138743`
+                        - [chữ] “Thủy Vy” — 106×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138744`
+                        - [chữ] “vy.qc@gmail.com” — 106×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138745`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138746`
+                      - [instance] **Role Component** ⟨Role Component: Name=Content +, Dropdown=Có⟩ — 120×26 [HUG×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px dashed #16a34a (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138747`
+                        - [icon] **Vector** — 12×12 · @ (9, 7) flow · file assets/vector-I4056-138747-2623-27461.svg `I4056:138747;2623:27461`
+                        - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/1.25 (18.75px) 700 #16a34a (brand/primary) · no-wrap `I4056:138747;139:67075`
+                        - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file assets/mouse-click-I4056-138747-3065-68070.svg covers (-0.87, 0) 26.3×25.84 `I4056:138747;3065:68070`
+                      - [instance] **Role Component** ⟨Role Component: Name=Sale, Dropdown=Không⟩ — 63×26 [HUG×FIXED] · @ (128, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ef4444 (status/danger) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138748`
+                        - [khối] **Frame 1171274968** — 49×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138748;3004:49429`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale 2, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138748-3004-49430.svg `I4056:138748;3004:49430`
+                          - [chữ] “Sale” — 25×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #f87171 (status/danger-text) · no-wrap `I4056:138748;3004:49431`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138749`
+                      - [chữ] “15.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138750`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138751`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138752`
+                        - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138752;124:65563`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138753.svg covers (0, 0) 76×38 `4056:138753`
+                - [khối] **Row 8** — 1172×54.88 · @ (0, 112) abs · bg #18181a (bg/surface) · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138757`
+                  - [khối] **Frame 427321955** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138758`
+                    - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138759`
+                      - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-ff7f56dcab03.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138760`
+                      - [khối] **Container** — 150×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138761`
+                        - [chữ] “Kiều My - CSKH” — 150×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138762`
+                        - [chữ] “my.kieu.cskh@gmail.com” — 150×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138763`
+                    - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138764`
+                      - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138765.svg covers (-2, -2) 32×32 `4056:138765`
+                      - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138766`
+                        - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138766;3004:49435`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138766-3004-49436.svg `I4056:138766;3004:49436`
+                          - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138766;3004:49437`
+                      - [instance] **Role Component** ⟨Role Component: Name=Trainee, Dropdown=Không⟩ — 82×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #8b5cf6 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138767`
+                        - [khối] **Frame 1171274970** — 68×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138767;3004:49453`
+                          - [icon] **Icon Role** ⟨Icon Role: Role=Trainee, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138767-3004-49454.svg `I4056:138767;3004:49454`
+                          - [chữ] “Trainee” — 44×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #8b5cf6 · no-wrap `I4056:138767;3004:49455`
+                    - [khối] **Container** — 84×24 · @ (864, 7) flow · column justify CENTER align CENTER `4056:138768`
+                      - [chữ] “13.05.2026” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138769`
+                    - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138770`
+                      - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #16a34a (brand/primary) · radius 4px `4056:138771`
+                        - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #18181a (bg/surface) · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I4056:138771;124:65559`
+                    - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138772.svg covers (0, 0) 76×38 `4056:138772`
+            - [khối] **Row 9** — 1172×56 [FILL×FIXED] · @ (0, 389.75) flow · bg #18181a (bg/surface) · radius 0 0 12px 12px · border 0 0 1px 0 solid #1f1f22 (border/subtle) `4056:138776`
+              - [khối] **Frame 427321956** — 1162.33×38 · @ (16, 9) abs · row gap 24 align CENTER `4056:138777`
+                - [khối] **Container** — 456×32 · @ (0, 3) flow · row gap 8 align CENTER `4056:138778`
+                  - [ảnh] **Ellipse 2** — 32×32 · @ (0, 0) flow · image `url("assets/img-2648ca65b9d4.png") center / cover no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `4056:138779`
+                  - [khối] **Container** — 170×38 [HUG×HUG] · @ (40, -3) flow · column · clip `4056:138780`
+                    - [chữ] “Mỹ Phương - CSKH” — 170×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) `4056:138781`
+                    - [chữ] “phuong.my.cskh@gmail.com” — 170×19 [HUG×HUG] · @ (0, 19) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138782`
+                - [khối] **Container** — 360×26 · @ (480, 6) flow · row gap 8 `4056:138783`
+                  - [icon] **Role Component** ⟨Role Component: Name=Retancle +, Dropdown=Có⟩ — 26×26 · @ (0, 0) flow · file assets/role-component-4056-138784.svg covers (-2, -2) 32×32 `4056:138784`
+                  - [instance] **Role Component** ⟨Role Component: Name=Support, Dropdown=Không⟩ — 85×26 [HUG×FIXED] · @ (34, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #ec4899 · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138785`
+                    - [khối] **Frame 1171274969** — 71×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138785;3004:49435`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Sale-handler / Support 1, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138785-3004-49436.svg `I4056:138785;3004:49436`
+                      - [chữ] “Support” — 47×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #ec4899 · no-wrap `I4056:138785;3004:49437`
+                  - [instance] **Role Component** ⟨Role Component: Name=Manager, Dropdown=Không⟩ — 92×26 [HUG×FIXED] · @ (127, 0) flow · row gap 8 pad 4 8 4 4 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #146048 (tone/green/border) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:138786`
+                    - [khối] **Frame 1171274971** — 78×20 [HUG×HUG] · @ (5, 3) flow · row gap 4 align CENTER `I4056:138786;3004:49441`
+                      - [icon] **Icon Role** ⟨Icon Role: Role=Manager, Style=Color⟩ — 20×20 · @ (0, 0) flow · file assets/icon-role-I4056-138786-3004-49442.svg `I4056:138786;3004:49442`
+                      - [chữ] “Manager” — 54×19 [HUG×HUG] · @ (24, 0.5) flow · Afacad 15/1.25 (18.75px) 700 #10b981 · no-wrap `I4056:138786;3004:49443`
+                - [khối] **Container** — 84×19 [FIXED×HUG] · @ (864, 9.5) flow · column justify CENTER align CENTER `4056:138787`
+                  - [chữ] “12.04.2026” — 69×19 [HUG×HUG] · @ (7.5, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `4056:138788`
+                - [khối] **Container** — 84×24 · @ (972, 7) flow · row justify CENTER align CENTER `4056:138789`
+                  - [instance] **Switch** ⟨Switch: Size=Small, Status=Off, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (28, 4) flow · row gap 10 pad 2 2 2 2 align CENTER · bg #2a2a2e (bg/strong) · radius 4px `4056:138790`
+                    - [khối] **Switch** — 12×12 · @ (2, 2) flow · bg #18181a (bg/surface) · radius 3px · clip `I4056:138790;124:65563`
+                - [icon] **Container** — 82.33×38 · @ (1080, 0) flow · file assets/container-4056-138791.svg covers (0, 0) 76×38 `4056:138791`
+      - [instance] **Phân Trang** ⟨Phân Trang⟩ — 1064.19×28 [FIXED×HUG] · @ (0, 722) flow · row gap 12 align CENTER `4056:138795`
+        - [khối] **Container** — 229×19 [HUG×HUG] · @ (0, 4.5) flow · column `I4056:138795;1391:17471`
+          - [chữ] “Hiển thị 1 - 10 trong tổng số 80 lớp học” — 229×19 [HUG×HUG] · @ (0, 0) flow · runs: “Hiển thị ” Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary); “1” Afacad 15/1.25 (18.75px) 500 #ededef (text/primary); “ - ” Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary); “10” Afacad 15/1.25 (18.75px) 500 #ededef (text/primary); “ trong tổng số ” Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary); “80” Afacad 15/1.25 (18.75px) 500 #ededef (text/primary); “ lớp học” Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · no-wrap `I4056:138795;1391:17472`
+        - [khối] **Container** — 251×28 [HUG×HUG] · @ (241, 0) flow · row gap 6 align CENTER `I4056:138795;1391:17473`
+          - [khối] **Button** — 48×28 [HUG×FIXED] · @ (0, 0) flow · column pad 0 6 0 6 justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) · opacity 0.5 `I4056:138795;1391:17474`
+            - [chữ] “Trước” — 34×19 [HUG×HUG] · @ (7, 4.5) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · text-align center · no-wrap `I4056:138795;1391:17475`
+          - [khối] **Button** — 28×28 · @ (54, 0) flow · row justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 6px `I4056:138795;1391:17476`
+            - [chữ] “1” — 8×19 [HUG×HUG] · @ (10, 4.5) flow · Afacad 15/1.25 (18.75px) 700 #ffffff (color/neutral/white) · text-align center · no-wrap `I4056:138795;1391:17477`
+          - [khối] **Button** — 28×28 · @ (88, 0) flow · row justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) `I4056:138795;1391:17478`
+            - [chữ] “2” — 8×19 [HUG×HUG] · @ (10, 4.5) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) · text-align center · no-wrap `I4056:138795;1391:17479`
+          - [khối] **Button** — 28×28 · @ (122, 0) flow · row justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) `I4056:138795;1391:17480`
+            - [chữ] “3” — 8×19 [HUG×HUG] · @ (10, 4.5) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) · text-align center · no-wrap `I4056:138795;1391:17481`
+          - [khối] **Container** — 18×19 [HUG×HUG] · @ (156, 4.5) flow · column pad 0 4 0 4 `I4056:138795;1391:17482`
+            - [chữ] “...” — 10×19 [HUG×HUG] · @ (4, 0) flow · Afacad 15/1.25 (18.75px) 700 #71717a (text/muted) · no-wrap `I4056:138795;1391:17483`
+          - [khối] **Button** — 28×28 · @ (180, 0) flow · row justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) `I4056:138795;1391:17484`
+            - [chữ] “8” — 8×19 [HUG×HUG] · @ (10, 4.5) flow · Afacad 15/1.25 (18.75px) 700 #ededef (text/primary) · text-align center · no-wrap `I4056:138795;1391:17485`
+          - [khối] **Button** — 37×28 [HUG×FIXED] · @ (214, 0) flow · column pad 0 6 0 6 justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) `I4056:138795;1391:17486`
+            - [chữ] “Sau” — 23×19 [HUG×HUG] · @ (7, 4.5) flow · Afacad 15/1.25 (18.75px) 500 #ededef (text/primary) · text-align center · no-wrap `I4056:138795;1391:17487`
 
 ## 5. Component đang dùng
 
@@ -1724,14 +1725,14 @@ Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần
 2. **row / column** = flex-direction; `gap` = khoảng cách giữa các con; `pad T R B L` = padding.
 3. `justify` (trục chính) và `align` (trục phụ): MIN = start, CENTER = center, MAX = end, SPACE_BETWEEN = space-between, BASELINE = baseline.
 4. Kích thước con: **FIXED** = cố định đúng số px; **HUG** = co theo nội dung; **FILL** = giãn lấp phần còn trống của cha (flex: 1 trên trục chính, stretch trên trục phụ).
-5. Layer **abs** đặt bằng position absolute theo `@ (x, y)` so với cha; layer **flow** để auto layout xếp, `@ (x, y)` chỉ để đối chiếu.
+5. Layer **abs** đặt bằng position absolute theo `@ (x, y)` so với **mép ngoài** của cha, kể cả khi cha là row/column (padding của cha không ảnh hưởng): `left: x; top: y`. Nếu cha có `border` thì trừ độ dày viền trái/trên, vì CSS tính từ bên trong viền. Layer **flow** để auto layout xếp, `@ (x, y)` chỉ để đối chiếu.
 6. Viền (stroke) **không** chiếm chỗ trong layout: `shadow inset 0 0 0 Wpx` = viền phía trong, `outline` = viền ở giữa hoặc nét đứt, shadow `0 0 0 Wpx` không inset = viền phía ngoài. Chỉ khi ghi `border` thì viền mới chiếm chỗ (strokesIncludedInLayout).
-7. Chữ: `cỡ/line-height` tính bằng px, hoặc là hệ số nhân với cỡ chữ nếu không có đơn vị; `auto` = line-height mặc định của font (CSS `normal`). Letter-spacing dạng `em` là phần trăm cỡ chữ. Chữ có chiều rộng tự động (`no-wrap`) **không xuống dòng**. Giữ nguyên mọi khoảng trắng, trừ chữ `no-wrap`: ở loại này **bỏ dấu cách ở cuối mỗi dòng** (Figma không tính chúng vào độ rộng); `⏎` là xuống dòng (CSS `white-space: pre`, hoặc `pre-wrap` cho chữ có chiều rộng cố định). Figma **làm tròn lên** độ rộng của chữ `no-wrap` thành số nguyên px — đặt `min-width` bằng đúng độ rộng ghi trong dòng.
+7. Chữ: `cỡ/line-height` tính bằng px, hoặc là hệ số nhân với cỡ chữ nếu không có đơn vị (giá trị px tương ứng ghi trong ngoặc, ví dụ `15/1.25 (18.75px)`; dùng đúng giá trị đó, chiều cao khung chữ có thể đã được Figma làm tròn); `auto` = line-height mặc định của font (CSS `normal`). `case upper` / `lower` / `title` = `text-transform: uppercase` / `lowercase` / `capitalize`, `case small_caps` = `font-variant-caps: small-caps`; chữ trong `“…”` là chữ gốc, chưa đổi hoa/thường. Letter-spacing dạng `em` là phần trăm cỡ chữ. Chữ có chiều rộng tự động (`no-wrap`) **không xuống dòng**. Giữ nguyên mọi khoảng trắng, trừ chữ `no-wrap`: ở loại này **bỏ dấu cách ở cuối mỗi dòng** (Figma không tính chúng vào độ rộng); `⏎` là xuống dòng (CSS `white-space: pre`, hoặc `pre-wrap` cho chữ có chiều rộng cố định). Figma **làm tròn lên** độ rộng của chữ `no-wrap` thành số nguyên px — đặt `min-width` bằng đúng độ rộng ghi trong dòng.
 8. Icon và hình minh hoạ đã xuất sẵn thành file — dùng nguyên file, không vẽ lại. Ảnh nền dùng đúng chế độ cover/contain/crop ghi trong style.
 9. Màu có token thì dùng token (biến CSS) với giá trị dự phòng ghi kèm.
 10. Giá trị mặc định khi dòng không ghi: `justify` và `align` = MIN — trong CSS phải **tự đặt `align-items: flex-start`** vì mặc định của CSS là stretch; không có `[..]` = FIXED×FIXED; layer không ghi row/column là khung thường, các con của nó đặt **abs**; không ghi `bg` = nền trong suốt.
 11. Nhiều con FILL cùng hàng có thể lệch nhau vài phần px do Figma làm tròn — dùng flex: 1 cho tất cả, con số chỉ để đối chiếu. `wrap cross-gap N` = khoảng cách giữa các hàng (dòng) khi xuống dòng.
 12. Icon/ảnh xuất sẵn: layer giữ đúng kích thước của nó (position: relative), bên trong đặt một `<img>` position absolute. Không ghi `covers` thì ảnh phủ đúng khung layer; `file … covers (x, y) W×H` = file vẽ tràn ra ngoài khung (bóng, viền ngoài, phần bị khung cha cắt) — đặt `<img>` tại (x, y) so với góc layer với đúng W×H. Phép xoay/lật đã nằm sẵn trong file.
-13. `image url(…) …` là shorthand CSS `background` đầy đủ (vị trí / kích thước / lặp) — dùng nguyên văn để có đúng vùng crop.
+13. `bg #màu` là màu nền; `bg `…`` (gradient) và `image `url(…) …`` là shorthand CSS `background` đầy đủ (vị trí / kích thước / lặp) — dùng nguyên văn để có đúng vùng crop. `border W style màu` = CSS `border` (hoặc `border-width` 4 cạnh T R B L). Layer ghi `trống` không có nền, viền, con hay file: giữ một khung rỗng đúng kích thước.
 
 Giá trị chính xác đến từng node (kèm CSS dựng sẵn) nằm trong `../../../.figma/pages/mst-tk-010000-dk/page-spec.json`.
