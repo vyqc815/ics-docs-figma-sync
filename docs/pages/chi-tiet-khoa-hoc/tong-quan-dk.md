@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-020100-DK — Chi tiết khoá học / Tổng quan (`6015:66153`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-khoa-hoc/tong-quan-dk`  
 > **Khung thiết kế:** 1440 × 910 px  
-> **Xuất lúc:** 2026-11-01T15:35:34.972Z  
+> **Xuất lúc:** 2026-11-01T15:49:00.294Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-020100-dk/page-spec.json`
 
 ## 1. Tổng quan

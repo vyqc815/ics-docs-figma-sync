@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-050400 — Kỹ năng (S6) / Nói (`6646:83606`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/ky-nang-s6/noi`  
 > **Khung thiết kế:** 1440 × 910 px  
-> **Xuất lúc:** 2026-11-01T15:35:21.860Z  
+> **Xuất lúc:** 2026-11-01T15:48:48.902Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-050400/page-spec.json`
 
 ## 1. Tổng quan

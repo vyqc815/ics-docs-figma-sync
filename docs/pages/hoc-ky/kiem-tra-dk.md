@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-030300-DK — Học kỳ / Kiểm tra (`6015:63835`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/hoc-ky/kiem-tra-dk`  
 > **Khung thiết kế:** 1440 × 910 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-01T15:35:33.417Z  
+> **Xuất lúc:** 2026-11-01T15:48:59.136Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-030300-dk/page-spec.json`
 
 ## 1. Tổng quan

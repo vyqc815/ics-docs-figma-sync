@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-020200 — Chi tiết khoá học / Lộ trình (`1219:8317`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-khoa-hoc/lo-trinh`  
 > **Khung thiết kế:** 1440 × 1535.75 px  
-> **Xuất lúc:** 2026-11-01T15:35:26.140Z  
+> **Xuất lúc:** 2026-11-01T15:48:52.263Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-020200/page-spec.json`
 
 ## 1. Tổng quan

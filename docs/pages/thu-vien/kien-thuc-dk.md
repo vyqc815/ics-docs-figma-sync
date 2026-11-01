@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-070100-DK — Thư viện / Kiến thức (`6579:371255`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/thu-vien/kien-thuc-dk`  
 > **Khung thiết kế:** 1440 × 1250 px  
-> **Xuất lúc:** 2026-11-01T15:35:28.788Z  
+> **Xuất lúc:** 2026-11-01T15:48:55.444Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-070100-dk/page-spec.json`
 
 ## 1. Tổng quan

@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-030200 — Học kỳ / Bài học (`497:20630`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/hoc-ky/bai-hoc`  
 > **Khung thiết kế:** 1440 × 1090 px  
-> **Xuất lúc:** 2026-11-01T15:35:23.466Z  
+> **Xuất lúc:** 2026-11-01T15:48:50.127Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-030200/page-spec.json`
 
 ## 1. Tổng quan

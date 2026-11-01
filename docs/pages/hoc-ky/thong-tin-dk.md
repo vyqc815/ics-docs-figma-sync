@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-030100-DK — Học kỳ / Thông tin (`6015:63545`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/hoc-ky/thong-tin-dk`  
 > **Khung thiết kế:** 1440 × 910 px  
-> **Xuất lúc:** 2026-11-01T15:35:32.980Z  
+> **Xuất lúc:** 2026-11-01T15:48:58.753Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-030100-dk/page-spec.json`
 
 ## 1. Tổng quan

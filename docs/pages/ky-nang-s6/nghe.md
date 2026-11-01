@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-050100 — Kỹ năng (S6) / Nghe (`5491:340361`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/ky-nang-s6/nghe`  
 > **Khung thiết kế:** 1440 × 910 px  
-> **Xuất lúc:** 2026-11-01T15:35:20.115Z  
+> **Xuất lúc:** 2026-11-01T15:48:47.519Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-050100/page-spec.json`
 
 ## 1. Tổng quan
