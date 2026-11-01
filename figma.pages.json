@@ -1,0 +1,216 @@
+{
+  "fileKey": "rRVs5HX0kIHffbS0V40djG",
+  "specDir": ".figma/pages",
+  "docsDir": "docs/pages",
+  "docLanguage": "vi",
+  "fontSource": "google",
+  "debugIds": true,
+  "figmaNote": true,
+  "baseUrl": "http://localhost:3000",
+  "thresholds": {},
+  "pages": [
+    {
+      "name": "thu-vien-kien-thuc",
+      "nodeId": "5491:352655",
+      "route": "/thu-vien/kien-thuc"
+    },
+    {
+      "name": "cd-kh-040100",
+      "nodeId": "4846:157807",
+      "route": "/kien-thuc-s1/tu-vung",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-040200",
+      "nodeId": "4846:168501",
+      "route": "/kien-thuc-s1/ngu-phap",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-060100",
+      "nodeId": "5491:346399",
+      "route": "/bai-tap-ve-nha/btvn",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-060200",
+      "nodeId": "5491:347564",
+      "route": "/bai-tap-ve-nha/kiem-tra",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-070200",
+      "nodeId": "5491:353761",
+      "route": "/thu-vien/ky-nang/nghe",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-070300",
+      "nodeId": "5491:354867",
+      "route": "/thu-vien/bai-tap",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-050100",
+      "nodeId": "5491:340361",
+      "route": "/ky-nang-s6/nghe",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-050200",
+      "nodeId": "5491:342722",
+      "route": "/ky-nang-s6/doc",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-050300",
+      "nodeId": "6646:82521",
+      "route": "/ky-nang-s6/viet",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-050400",
+      "nodeId": "6646:83606",
+      "route": "/ky-nang-s6/noi",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-030100",
+      "nodeId": "497:17005",
+      "route": "/hoc-ky/thong-tin",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-030300",
+      "nodeId": "497:18242",
+      "route": "/hoc-ky/kiem-tra",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-030200",
+      "nodeId": "497:20630",
+      "route": "/hoc-ky/bai-hoc",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-010000",
+      "nodeId": "458:4142",
+      "route": "/quan-ly-khoa-hoc",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-020100",
+      "nodeId": "470:2142",
+      "route": "/chi-tiet-khoa-hoc/tong-quan",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-020200",
+      "nodeId": "1219:8317",
+      "route": "/chi-tiet-khoa-hoc/lo-trinh",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-040100-dk",
+      "nodeId": "6015:107029",
+      "route": "/kien-thuc-s1/tu-vung-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-040200-dk",
+      "nodeId": "6015:46821",
+      "route": "/kien-thuc-s1/ngu-phap-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-060100-dk",
+      "nodeId": "6015:53230",
+      "route": "/bai-tap-ve-nha/btvn-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-060200-dk",
+      "nodeId": "6015:53668",
+      "route": "/bai-tap-ve-nha/kiem-tra-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-070100-dk",
+      "nodeId": "6579:371255",
+      "route": "/thu-vien/kien-thuc-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-070200-dk",
+      "nodeId": "6579:372308",
+      "route": "/thu-vien/ky-nang/nghe-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-070300-dk",
+      "nodeId": "6579:373375",
+      "route": "/thu-vien/bai-tap-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-050100-dk",
+      "nodeId": "6646:123375",
+      "route": "/ky-nang-s6/nghe-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-050200-dk",
+      "nodeId": "6646:124506",
+      "route": "/ky-nang-s6/doc-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-050300-dk",
+      "nodeId": "6646:125576",
+      "route": "/ky-nang-s6/viet-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-050400-dk",
+      "nodeId": "6646:126650",
+      "route": "/ky-nang-s6/noi-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-030100-dk",
+      "nodeId": "6015:63545",
+      "route": "/hoc-ky/thong-tin-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-030300-dk",
+      "nodeId": "6015:63835",
+      "route": "/hoc-ky/kiem-tra-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-030200-dk",
+      "nodeId": "6015:64055",
+      "route": "/hoc-ky/bai-hoc-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-010000-dk",
+      "nodeId": "6015:65744",
+      "route": "/quan-ly-khoa-hoc-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-020100-dk",
+      "nodeId": "6015:66153",
+      "route": "/chi-tiet-khoa-hoc/tong-quan-dk",
+      "docOnly": true
+    },
+    {
+      "name": "cd-kh-020200-dk",
+      "nodeId": "6015:66574",
+      "route": "/chi-tiet-khoa-hoc/lo-trinh-dk",
+      "docOnly": true
+    }
+  ]
+}

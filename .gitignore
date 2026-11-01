@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+.env*.local
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+
+# figma-page demo: never commit local env files
+.env
+
+# figma-page: page specs and exported assets are regenerated from Figma;
+# keep only what the fidelity check of pages with code needs.
+.figma/pages/*/page-spec.json
+.figma/pages/*/assets/
+!.figma/pages/thu-vien-kien-thuc/page-spec.json
