@@ -39,7 +39,7 @@
     ["/api/docs/pull", "Cập nhật docs từ Git", "Lấy docs mới nhất của repo FE: file thêm, sửa, xoá đều được cập nhật"],
     ["/api/figma/screens", "Sync danh sách màn", "Đọc lại bảng NAVIGATION trên Figma: mã, tên, loại, Final, Chưa làm"],
     ["/api/figma/check", "Kiểm tra UI thay đổi", "So từng frame mà docs nhắc tới với lần kiểm tra trước"],
-    ["/api/rebuild", "Build lại site", "Khi docs vừa sửa trực tiếp trên máy này"],
+    ["/api/rebuild", "Build lại site", "Khi docs trên máy này vừa sửa mà chưa push Git (site thường tự build lại khi docs đổi)"],
   ];
   function menu(label, cls, items) {
     var wrap = document.createElement("div");

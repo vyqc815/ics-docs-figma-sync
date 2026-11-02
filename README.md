@@ -113,5 +113,8 @@ Nginx của domain do script deploy BE sinh lại mỗi lần deploy, nên khố
    `sudo nginx -t && sudo systemctl reload nginx`
 6. Sao lưu định kỳ `users.yml` và thư mục `sync/`.
 
-Cập nhật code web: `cd /opt/docs-figma/app && git pull && sudo systemctl restart docs-figma`.
+Cập nhật code web: push lên `main` là workflow `Deploy` (`.github/workflows/deploy.yml`) tự SSH vào server,
+`git pull` rồi restart. Cần thêm secrets `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_SSH_KEY` trong Settings › Secrets
+của repo; user đó phải chạy được `sudo systemctl restart docs-figma` không cần mật khẩu. Làm tay:
+`cd /opt/docs-figma/app && git pull && sudo systemctl restart docs-figma`.
 Port 8000 đã bị dùng: thêm `PORT=8010` vào `.env` và đổi `proxy_pass` tương ứng.

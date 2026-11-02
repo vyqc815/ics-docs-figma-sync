@@ -11,7 +11,6 @@ import os
 import time
 import subprocess
 import threading
-from http.cookies import SimpleCookie
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, quote, unquote, urlparse
@@ -106,9 +105,13 @@ def admin_job(fn):
 
 class Handler(BaseHTTPRequestHandler):
     # ---------- helpers ----------
+    def _sids(self):
+        """Every sid cookie sent: another app on the same host (any port) may also set one named sid."""
+        parts = (c.strip().split("=", 1) for c in self.headers.get("Cookie", "").split(";"))
+        return [p[1] for p in parts if len(p) == 2 and p[0] == "sid"]
+
     def _sid(self):
-        cookie = SimpleCookie(self.headers.get("Cookie", ""))
-        return cookie["sid"].value if "sid" in cookie else None
+        return next((s for s in self._sids() if auth.session(s)), None)
 
     def _user(self):
         return auth.session(self._sid())

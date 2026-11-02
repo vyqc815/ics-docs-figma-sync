@@ -49,7 +49,7 @@
   function openPassword() {
     var f = form([
       field("Mật khẩu hiện tại", "password", "old", { autocomplete: "current-password" }),
-      field("Mật khẩu mới (từ " + MIN + " ký tự)", "password", "new", { autocomplete: "new-password" }),
+      field("Mật khẩu mới (từ " + MIN + " ký tự, chữ hoặc số đều được)", "password", "new", { autocomplete: "new-password" }),
       field("Nhập lại mật khẩu mới", "password", "again", { autocomplete: "new-password" }),
     ], "Đổi mật khẩu");
     f.addEventListener("submit", function (e) {

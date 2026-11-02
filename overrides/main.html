@@ -18,8 +18,6 @@
     {% include ".icons/material/check-decagram-outline.svg" %}Đánh dấu đã đồng bộ</button>
   {% endif %}
   <div class="sync-tools">
-    <a class="tool-btn" href="{{ base_url }}/api/docs/raw?doc={{ s.path | urlencode }}" download
-       title="Tải file .md của tài liệu" aria-label="Tải file .md của tài liệu">{% include ".icons/material/download-outline.svg" %}</a>
     <button class="tool-btn" data-action="toggle-history" title="Xem lịch sử thay đổi" aria-label="Xem lịch sử thay đổi">
       {% include ".icons/material/history.svg" %}</button>
   </div>
@@ -37,7 +35,11 @@
 {% endif %}
 
 <div class="split {% if s and s.frames %}has-figma{% endif %}">
-  <div class="split-doc card">{{ super() }}</div>
+  <div class="split-doc card">
+    {% if s %}<a class="tool-btn doc-download" href="{{ base_url }}/api/docs/raw?doc={{ s.path | urlencode }}" download
+       title="Tải file .md của tài liệu" aria-label="Tải file .md của tài liệu">{% include ".icons/material/download-outline.svg" %}</a>{% endif %}
+    {{ super() }}
+  </div>
 
   {% if s %}
   <div class="split-gutter" title="Kéo để đổi độ rộng, nhấn đúp để về mặc định"></div>

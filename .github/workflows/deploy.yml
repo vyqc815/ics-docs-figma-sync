@@ -1,0 +1,32 @@
+name: Deploy
+
+# Push code lên main thì server tự git pull rồi restart (dev.sh build lại site khi khởi động).
+# Cần secrets: DEPLOY_HOST, DEPLOY_USER, DEPLOY_SSH_KEY, DEPLOY_PORT nếu SSH không ở port 22 (private key, public key đã nằm trong ~/.ssh/authorized_keys của server).
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["sync/**", "**.md"]   # commit snapshot của Figma check không cần deploy
+  workflow_dispatch:
+
+concurrency: deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull và restart trên server
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+        run: |
+          mkdir -p ~/.ssh && echo "$SSH_KEY" > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
+          ssh -i ~/.ssh/id_deploy -p "${PORT:-22}" -o StrictHostKeyChecking=accept-new "$USER@$HOST" '
+            set -e
+            cd /opt/docs-figma/app
+            git pull --ff-only
+            .venv/bin/pip install -q -r requirements.txt
+            sudo systemctl restart docs-figma
+            sleep 5 && systemctl is-active docs-figma
+          '
