@@ -44,9 +44,10 @@ function codeFiles(pageFile: string): FigmaSource["files"] {
     const code = read(rel);
     if (code === null) return;
     out.push({ path: rel, code });
-    for (const m of code.matchAll(/from "(\.{1,2}\/[^"]+)"/g)) {
-      const base = normalize(join(dirname(rel), m[1]));
-      const file = [".tsx", ".ts"].map((ext) => base + ext).find((f) => existsSync(join(root, f)));
+    // Relative imports and the project-root alias ("@/…").
+    for (const m of code.matchAll(/from "((?:\.{1,2}|@)\/[^"]+)"/g)) {
+      const base = m[1].startsWith("@/") ? m[1].slice(2) : normalize(join(dirname(rel), m[1]));
+      const file = [".tsx", ".ts", "/index.tsx"].map((ext) => base + ext).find((f) => existsSync(join(root, f)));
       if (file) visit(file);
     }
   };
