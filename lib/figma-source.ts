@@ -19,11 +19,6 @@ export interface FigmaSource {
   files: { path: string; code: string }[];
 }
 
-interface BuildInfo {
-  pageFile: string;
-  docFile: string;
-}
-
 // Only the files listed in next.config.ts (outputFileTracingIncludes) ship with these routes.
 const root = /* turbopackIgnore: true */ process.cwd();
 const read = (rel: string): string | null => {
@@ -59,14 +54,29 @@ function codeFiles(pageFile: string): FigmaSource["files"] {
   return out;
 }
 
+/**
+ * Where the generator put the page's Markdown and code. Derived from the config
+ * (docsDir + route, componentsDir + page name) rather than read from
+ * .figma/pages/<page>/build.json: dot folders are left out of the deployed bundle.
+ */
+function sourcePaths(page: FigmaPage): { docFile: string; pageFile: string } {
+  const segs = page.route.split("/").filter(Boolean);
+  const docsDir = (config as { docsDir?: string }).docsDir ?? "docs/pages";
+  const componentsDir = (config as { componentsDir?: string }).componentsDir ?? "components/figma";
+  return {
+    docFile: `${docsDir}/${segs.length ? segs.join("/") : "index"}.md`,
+    pageFile: page.docOnly ? "" : `${componentsDir}/${page.name}/index.tsx`,
+  };
+}
+
 export function figmaSource(page: FigmaPage): FigmaSource {
-  const buildText = read(join(config.specDir, page.name, "build.json"));
-  const build = buildText ? (JSON.parse(buildText) as BuildInfo) : null;
+  const { docFile, pageFile } = sourcePaths(page);
+  const docText = read(docFile);
   return {
     name: page.name,
     route: page.route,
-    doc: build?.docFile ? { path: build.docFile, text: read(build.docFile) ?? "" } : null,
-    files: build?.pageFile ? codeFiles(build.pageFile) : [],
+    doc: docText === null ? null : { path: docFile, text: docText },
+    files: pageFile ? codeFiles(pageFile) : [],
   };
 }
 

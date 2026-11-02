@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 // The Figma viewer pages and API read the page Markdown and generated code at request time.
-const figmaSources = ["./figma.pages.json", "./docs/pages/**/*", "./components/figma/**/*", "./.figma/pages/*/build.json"];
+const figmaSources = ["./figma.pages.json", "./docs/pages/**/*", "./components/figma/**/*"];
 
 const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
