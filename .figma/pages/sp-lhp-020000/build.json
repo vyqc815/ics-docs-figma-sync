@@ -1,6 +1,17 @@
 {
   "route": "/lich-hop/dang-bang",
-  "pageFile": "",
+  "pageFile": "components/figma/sp-lhp-020000/index.tsx",
   "docFile": "docs/pages/lich-hop/dang-bang.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3857:79451",
+      "component": "Body",
+      "file": "components/figma/sp-lhp-020000/Body.tsx"
+    },
+    {
+      "nodeId": "3857:79585",
+      "component": "Section2",
+      "file": "components/figma/sp-lhp-020000/Section2.tsx"
+    }
+  ]
 }

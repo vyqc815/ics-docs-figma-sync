@@ -1,0 +1,640 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 955,
+    "mismatched": 7983,
+    "percent": 0.58,
+    "shapePercent": 0.02,
+    "textPercent": 2.628,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6935:387197;3857:67915",
+      "name": "Label",
+      "pixels": 394,
+      "percent": 16.1
+    },
+    {
+      "id": "I6935:387328;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 51,
+      "percent": 6.1
+    },
+    {
+      "id": "I6935:387239;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I6935:387260;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I6935:387294;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I6935:387311;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I6935:387345;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I6935:387362;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I6935:387379;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I6935:387396;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I6935:387277;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 45,
+      "percent": 5.4
+    },
+    {
+      "id": "I6935:387326;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 114,
+      "percent": 5.4
+    },
+    {
+      "id": "I6935:387343;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 114,
+      "percent": 5.4
+    },
+    {
+      "id": "I6935:387360;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 114,
+      "percent": 5.4
+    },
+    {
+      "id": "I6935:387377;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 114,
+      "percent": 5.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 1216,
+      "y": 384,
+      "width": 48,
+      "height": 16,
+      "pixels": 24,
+      "node": {
+        "id": "I6935:387320;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 432,
+      "width": 48,
+      "height": 24,
+      "pixels": 24,
+      "node": {
+        "id": "I6935:387337;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 488,
+      "width": 48,
+      "height": 16,
+      "pixels": 24,
+      "node": {
+        "id": "I6935:387354;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 592,
+      "width": 48,
+      "height": 16,
+      "pixels": 24,
+      "node": {
+        "id": "I6935:387388;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 640,
+      "width": 48,
+      "height": 24,
+      "pixels": 24,
+      "node": {
+        "id": "I6935:387405;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 536,
+      "width": 48,
+      "height": 24,
+      "pixels": 23,
+      "node": {
+        "id": "I6935:387371;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1224,
+      "y": 328,
+      "width": 40,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "I6935:387303;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1192,
+      "y": 328,
+      "width": 16,
+      "height": 16,
+      "pixels": 11,
+      "node": {
+        "id": "I6935:387300;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 384,
+      "width": 24,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "I6935:387317;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 432,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "I6935:387334;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 488,
+      "width": 24,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "I6935:387351;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 536,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "I6935:387368;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 592,
+      "width": 24,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "I6935:387385;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 640,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "I6935:387402;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1312,
+      "y": 336,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "6935:387304",
+        "name": "Cell · Trạng thái",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "6935:387171",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6935:387171",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 402,
+    "missing": [],
+    "withinThreshold": 402,
+    "buckets": {
+      "≤0.5px": 402,
+      "≤1px": 402,
+      "≤2px": 402,
+      "≤4px": 402,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6935:387206",
+        "name": "Danh sách cuộc họp",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:387207",
+        "name": "Atom/Icon Button",
+        "role": "icon",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:387586",
+        "name": "Hôm nay",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:387184",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:387205",
+        "name": "Frame 427321947",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:387208",
+        "name": "Bộ lọc",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:387209",
+        "name": "Filter · Người tham gia",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:387209;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:387209;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:387169",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:387170",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:387171",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:387183",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:387066",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "6935:387067",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "6935:387068",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "6935:387115",
+        "name": "ACCOUNT",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:387115;2008:31704",
+        "name": "Frame 1171274934",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:387115;2008:31899",
+        "name": "Background+Shadow",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:387115;2008:31900",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:387115;2008:31901",
+        "name": "PTL",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:387115;2008:31708",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:387115;2008:31709",
+        "name": "Phụ Trách Lớp Đắc Nhân",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:387115;2008:31710",
+        "name": "PTL.dacnhan@gmail.com",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:387115;2008:31711",
+        "name": "Overlay",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.19,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/lich-hop/dropdown-loc-thoi-gian-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

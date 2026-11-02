@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1907,
+    "mismatched": 4184,
+    "percent": 0.152,
+    "shapePercent": 0.001,
+    "textPercent": 1.057,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:113386;2245:87908",
+      "name": "Label",
+      "pixels": 329,
+      "percent": 13.7
+    },
+    {
+      "id": "I4056:113384;2245:87908",
+      "name": "Label",
+      "pixels": 206,
+      "percent": 8.6
+    },
+    {
+      "id": "I4056:113190;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 134,
+      "percent": 5.5
+    },
+    {
+      "id": "I4056:113225;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 129,
+      "percent": 5.3
+    },
+    {
+      "id": "I4056:113387;2245:87908",
+      "name": "Label",
+      "pixels": 104,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:113223",
+      "name": "Thường xuyên nhắc nhở học viên đi học đầy đủ ở trên lớp",
+      "pixels": 510,
+      "percent": 2.7
+    },
+    {
+      "id": "I4056:113390;1971:7432",
+      "name": "Label",
+      "pixels": 61,
+      "percent": 2.6
+    },
+    {
+      "id": "4056:113237",
+      "name": "Không Khí Và Tương Tác Lớp Học",
+      "pixels": 566,
+      "percent": 2.2
+    },
+    {
+      "id": "4056:113251",
+      "name": "Không Khí Và Tương Tác Lớp Học",
+      "pixels": 566,
+      "percent": 2.2
+    },
+    {
+      "id": "I4056:113389;1959:25446",
+      "name": "Label",
+      "pixels": 49,
+      "percent": 2.1
+    },
+    {
+      "id": "4056:113202",
+      "name": "Tỷ lệ đi học trên 80%",
+      "pixels": 366,
+      "percent": 1.9
+    },
+    {
+      "id": "I4056:113230;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 19,
+      "percent": 1.8
+    },
+    {
+      "id": "I4056:113193;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 17,
+      "percent": 1.7
+    },
+    {
+      "id": "I4056:113213;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 17,
+      "percent": 1.7
+    },
+    {
+      "id": "I4056:113233;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 17,
+      "percent": 1.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4056:113418",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 226,
+    "missing": [],
+    "withinThreshold": 226,
+    "buckets": {
+      "≤0.5px": 226,
+      "≤1px": 226,
+      "≤2px": 226,
+      "≤4px": 226,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:113329",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:113336",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:113350",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:113351",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:113354",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:113158",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:113159",
+        "name": "MainContent",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:113160",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113161",
+        "name": "Header line: Title, Progress Bar, Add Action",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113162",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113163",
+        "name": "Heading 1",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113164",
+        "name": "Tiêu chuẩn lớp - giáo viên",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113165",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:113165;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113166",
+        "name": "Bộ tiêu chuẩn · Tiêu Chuẩn Chung",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113167",
+        "name": "Category · [Trước 3-5 ngày] Gọi khách đầu khoá",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113168",
+        "name": "Frame 1171274930",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113169",
+        "name": "BTVN",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113170",
+        "name": "Global Progress Bar",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113171",
+        "name": "Right",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113172",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:113172;2011:30138",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113173",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113174",
+        "name": "Category · Tỷ Lệ Đi Học (mở)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:113175",
+        "name": "Category Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.01,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

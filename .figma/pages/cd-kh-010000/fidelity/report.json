@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 6257,
-    "percent": 0.536,
+    "mismatched": 6218,
+    "percent": 0.533,
     "shapePercent": 0.185,
-    "textPercent": 1.61,
+    "textPercent": 1.595,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -74,12 +74,6 @@
       "percent": 3.8
     },
     {
-      "id": "I4915:256174;4901:216096;2245:87820",
-      "name": "Label",
-      "pixels": 87,
-      "percent": 3.4
-    },
-    {
       "id": "1160:2053",
       "name": "- Mở Rộng Ngữ Pháp HSK3 Cốt Lõi: 把, 被, 比, 了 / 过 / 着 - 20+ Chủ Đề Quen Thuộc: Nhà Ở, Ăn Uống, Công Việc, Sức Khỏe, Học Tập - 100+ Hội Thoại Thực Tế: Nhà Hàng, Nơi Làm Việc, Hàng Xóm, Tình Huống Đời Sống - Rèn Nói – Nghe – Viết Ngắn, Tập Trung Phản Xạ Và Diễn Đạt Ý Kiến - Lồng Ghép Kiến Thức Về Đời Sống Và Môi Trường Làm Việc Tại Trung Quốc",
       "pixels": 1690,
@@ -98,7 +92,7 @@
       "percent": 3.3
     },
     {
-      "id": "I4915:256174;4901:216102;2245:87820",
+      "id": "I4915:256174;4901:216096;2245:87820",
       "name": "Label",
       "pixels": 83,
       "percent": 3.2
@@ -108,6 +102,12 @@
       "name": "ID",
       "pixels": 38,
       "percent": 3.2
+    },
+    {
+      "id": "I4915:256174;4901:216102;2245:87820",
+      "name": "Label",
+      "pixels": 79,
+      "percent": 3.1
     }
   ],
   "regions": [

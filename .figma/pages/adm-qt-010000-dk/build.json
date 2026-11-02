@@ -1,6 +1,29 @@
 {
   "route": "/quy-trinh/danh-sach-loai-quy-trinh-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-qt-010000-dk/index.tsx",
   "docFile": "docs/pages/quy-trinh/danh-sach-loai-quy-trinh-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:128696",
+      "component": "MainAppContainer",
+      "file": "components/figma/adm-qt-010000-dk/MainAppContainer.tsx"
+    },
+    {
+      "nodeId": "4056:128917",
+      "component": "Header4",
+      "file": "components/figma/shared/Header4.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:128917": "4056:119548",
+    "4056:128918": "4056:119549",
+    "4056:128965": "4056:119596",
+    "I4056:128965;2008:30986": "I4056:119596;2008:30986",
+    "I4056:128965;2008:31747": "I4056:119596;2008:31747",
+    "I4056:128965;2008:31748": "I4056:119596;2008:31748",
+    "I4056:128965;1391:17264": "I4056:119596;1391:17264",
+    "I4056:128965;1391:17266": "I4056:119596;1391:17266",
+    "I4056:128965;1391:17268": "I4056:119596;1391:17268",
+    "I4056:128965;1391:17270": "I4056:119596;1391:17270"
+  }
 }

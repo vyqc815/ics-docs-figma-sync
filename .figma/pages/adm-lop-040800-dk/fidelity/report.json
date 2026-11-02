@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 860,
+    "mismatched": 1795,
+    "percent": 0.145,
+    "shapePercent": 0.001,
+    "textPercent": 2.146,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:118241;2245:87908",
+      "name": "Label",
+      "pixels": 329,
+      "percent": 13.7
+    },
+    {
+      "id": "I4056:118248;2245:87914",
+      "name": "Label",
+      "pixels": 312,
+      "percent": 13
+    },
+    {
+      "id": "I4056:118239;2245:87908",
+      "name": "Label",
+      "pixels": 206,
+      "percent": 8.6
+    },
+    {
+      "id": "4056:118163",
+      "name": "Ngày Cập Nhật",
+      "pixels": 135,
+      "percent": 4.3
+    },
+    {
+      "id": "I4056:118242;2245:87908",
+      "name": "Label",
+      "pixels": 104,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:118155",
+      "name": "Ngày Ghi Nhận",
+      "pixels": 93,
+      "percent": 3
+    },
+    {
+      "id": "I4056:118244;2245:87908",
+      "name": "Label",
+      "pixels": 73,
+      "percent": 3
+    },
+    {
+      "id": "I4056:118245;2245:87908",
+      "name": "Label",
+      "pixels": 61,
+      "percent": 2.5
+    },
+    {
+      "id": "4056:118157",
+      "name": "Trạng Thái",
+      "pixels": 67,
+      "percent": 2.2
+    },
+    {
+      "id": "4056:118161",
+      "name": "Ghi Chú",
+      "pixels": 53,
+      "percent": 1.7
+    },
+    {
+      "id": "I4056:118243;2245:87908",
+      "name": "Label",
+      "pixels": 33,
+      "percent": 1.4
+    },
+    {
+      "id": "I4056:118246;2245:87908",
+      "name": "Label",
+      "pixels": 33,
+      "percent": 1.4
+    },
+    {
+      "id": "I4056:118247;2245:87908",
+      "name": "Label",
+      "pixels": 33,
+      "percent": 1.4
+    },
+    {
+      "id": "I4056:118240;2245:87908",
+      "name": "Label",
+      "pixels": 28,
+      "percent": 1.2
+    },
+    {
+      "id": "4056:118159",
+      "name": "Số Tiền",
+      "pixels": 35,
+      "percent": 1.1
+    }
+  ],
+  "regions": [
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4056:118273",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 128,
+    "missing": [],
+    "withinThreshold": 128,
+    "buckets": {
+      "≤0.5px": 128,
+      "≤1px": 128,
+      "≤2px": 128,
+      "≤4px": 128,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:118136",
+        "name": "Sub Navigation Tabs",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118140",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118140;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118140;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118141",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118141;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118141;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118142",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118142;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118142;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118143",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118143;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118143;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118144",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118144;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118144;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118144;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118184",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:118191",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:118205",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:118206",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:118209",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:118135",
+        "name": "MainContent",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:118137",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118137;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.06,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/lop-hoc/cai-dat/ot-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

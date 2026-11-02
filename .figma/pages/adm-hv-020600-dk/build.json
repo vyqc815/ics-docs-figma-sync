@@ -1,6 +1,34 @@
 {
   "route": "/chi-tiet-hoc-vien/ghi-chu-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-hv-020600-dk/index.tsx",
   "docFile": "docs/pages/chi-tiet-hoc-vien/ghi-chu-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:121381",
+      "component": "Header6",
+      "file": "components/figma/shared/Header6.tsx"
+    },
+    {
+      "nodeId": "4056:121430",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/adm-hv-020600-dk/MainScrollableWorkspace.tsx"
+    },
+    {
+      "nodeId": "4056:121548",
+      "component": "Sidebar",
+      "file": "components/figma/adm-hv-020600-dk/Sidebar.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:121381": "4056:120072",
+    "4056:121382": "4056:120073",
+    "4056:121429": "4056:120120",
+    "I4056:121429;2008:30986": "I4056:120120;2008:30986",
+    "I4056:121429;2008:31747": "I4056:120120;2008:31747",
+    "I4056:121429;2008:31748": "I4056:120120;2008:31748",
+    "I4056:121429;1391:17264": "I4056:120120;1391:17264",
+    "I4056:121429;1391:17266": "I4056:120120;1391:17266",
+    "I4056:121429;1391:17268": "I4056:120120;1391:17268",
+    "I4056:121429;1391:17270": "I4056:120120;1391:17270"
+  }
 }

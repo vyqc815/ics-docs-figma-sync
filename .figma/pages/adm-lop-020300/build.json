@@ -1,6 +1,22 @@
 {
   "route": "/chi-tiet-lop-hoc/bai-tap-ve-nha",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-020300/index.tsx",
   "docFile": "docs/pages/chi-tiet-lop-hoc/bai-tap-ve-nha.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "769:36563",
+      "component": "Body",
+      "file": "components/figma/adm-lop-020300/Body.tsx"
+    },
+    {
+      "nodeId": "3497:45868",
+      "component": "Header11",
+      "file": "components/figma/shared/Header11.tsx"
+    },
+    {
+      "nodeId": "4915:225881",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-020300/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

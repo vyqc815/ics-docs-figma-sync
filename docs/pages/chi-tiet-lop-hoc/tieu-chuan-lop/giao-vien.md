@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Tiêu chuẩn lớp giáo viên › ADM-LOP-020600 — Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên (`769:37409`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien`  
 > **Khung thiết kế:** 1440 × 1907 px  
-> **Xuất lúc:** 2026-11-01T16:12:44.047Z  
+> **Xuất lúc:** 2026-11-02T03:37:06.121Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/adm-lop-020600/page-spec.json`
 
 ## 1. Tổng quan
@@ -77,22 +77,22 @@ Nền trang: `#f8fafc`.
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `Body/19/Bold` | Afacad | 19 / 1.25 (23.75px) | 700 | 0 | #334155 (color/text/primary) | 8 | “BTVN” |
-| `Body/17/Medium` | Afacad | 17 / 1.25 (21.25px) | 500 | 0 | #334155 (color/text/primary) | 5 | “Nhắc nhở học viên trước buổi học tại GG…” |
-| — | Afacad | 17 / 1.25 (21.25px) | 400 italic | 0 | #cccccc (color/text/placeholder) | 2 | “Nhập ghi chú...” |
-| — | Unbounded | 17 / 1.5 (25.5px) | 600 | 0 | #334155 (color/text/primary) | 1 | “Tiêu chuẩn lớp - giáo viên” |
-| `Body/17/Bold` | Afacad | 17 / 1.25 (21.25px) | 700 | 0 | #ffffff (color/neutral/white) | 1 | “Thêm quy trình” |
-| — | Afacad | 16 / 1.25 (20px) | 700 · case title | 0 | #ffffff | 1 | “DN0091 - 132” |
-| `Body/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 | 0 | #e65100 | 7 | “1/1” |
-| `Body/15/Regular` | Afacad | 15 / 1.25 (18.75px) | 400 | 0 | #64748b (color/text/secondary) | 4 | “Ghi chú” |
-| `Body/15/Medium` | Afacad | 15 / 1.25 (18.75px) | 500 | 0 | #334155 (color/text/primary) | 2 | “17:00 - 30.09.2026” |
-| `Body/15/Bold` | Afacad | 15 / 1.25 (18.75px) | 700 | 0 | #cbd5e1 (color/text/muted) | 1 | “4/7” |
-| `Body/14/SemiBold` | Afacad | 14 / 1.25 (17.5px) | 600 | 0 | #e65100 (color/brand/orange) | 5 | “20%” |
-| `Body/14/Medium` | Afacad | 14 / 1.25 (17.5px) | 500 | 0 | #334155 (color/text/primary) | 1 | “Kiểm tra sau buổi 8” |
-| — | Unbounded | 13 / 1.25 (16.25px) | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Admin Đắc Nhân” |
-| — | Afacad | 13 / 1.25 (16.25px) | 500 | 0 | #ffffff (color/neutral/white) | 1 | “admin@gmail.com” |
-| `Body/13/Regular` | Afacad | 13 / 1.25 (16.25px) | 400 | 0 | #cbd5e1 (color/text/muted) | 1 | “45/500” |
-| — | Unbounded | 11 / 1.25 (13.75px) | 600 · case title | 0 | #ffffff (color/neutral/white) | 11 | “Tổng quan” |
+| `Body/19/Bold` | Afacad | 19 / 24px | 700 | 0 | #334155 (color/text/primary) | 8 | “BTVN” |
+| `Body/17/Medium` | Afacad | 17 / 21px | 500 | 0 | #334155 (color/text/primary) | 5 | “Nhắc nhở học viên trước buổi học tại GG…” |
+| — | Afacad | 17 / 21px | 400 italic | 0 | #cccccc (color/text/placeholder) | 2 | “Nhập ghi chú...” |
+| — | Unbounded | 17 / 26px | 600 | 0 | #334155 (color/text/primary) | 1 | “Tiêu chuẩn lớp - giáo viên” |
+| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (color/neutral/white) | 1 | “Thêm quy trình” |
+| — | Afacad | 16 / 20px | 700 · case title | 0 | #ffffff | 1 | “DN0091 - 132” |
+| `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #e65100 | 7 | “1/1” |
+| `Body/15/Regular` | Afacad | 15 / 19px | 400 | 0 | #64748b (color/text/secondary) | 4 | “Ghi chú” |
+| `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #334155 (color/text/primary) | 2 | “17:00 - 30.09.2026” |
+| `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #cbd5e1 (color/text/muted) | 1 | “4/7” |
+| `Body/14/SemiBold` | Afacad | 14 / 18px | 600 | 0 | #e65100 (color/brand/orange) | 5 | “20%” |
+| `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #334155 (color/text/primary) | 1 | “Kiểm tra sau buổi 8” |
+| — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Admin Đắc Nhân” |
+| — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “admin@gmail.com” |
+| `Body/13/Regular` | Afacad | 13 / 16px | 400 | 0 | #cbd5e1 (color/text/muted) | 1 | “45/500” |
+| — | Unbounded | 11 / 14px | 600 · case title | 0 | #ffffff (color/neutral/white) | 11 | “Tổng quan” |
 
 ## 4. Cấu trúc chi tiết
 
@@ -105,210 +105,210 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
       - [khối] **Header line: Title, Progress Bar, Add Action** — 1092×38 [FILL×HUG] · @ (0, 0) flow · row gap 24 align CENTER `3502:77177`
         - [khối] **Container** — 917×26 [FILL×HUG] · @ (0, 6) flow · column `3502:77178`
           - [khối] **Heading 1** — 917×26 [FILL×HUG] · @ (0, 0) flow · column `3502:77179`
-            - [chữ] “Tiêu chuẩn lớp - giáo viên” — 260×26 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/1.5 (25.5px) 600 #334155 (color/text/primary) · no-wrap `3502:77180`
+            - [chữ] “Tiêu chuẩn lớp - giáo viên” — 260×26 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/26px 600 #334155 (color/text/primary) · no-wrap `3502:77180`
         - [instance] **Atom/Button** ⟨Atom/Button: Label=Thêm quy trình, Type=Primary, Size=Medium⟩ — 151×38 [HUG×FIXED] · @ (941, 0) flow · row pad 10 24 10 24 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 8px · border 1px solid #ffffff · shadow 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `3502:77182`
-          - [chữ] “Thêm quy trình” — 101×21 [HUG×HUG] · @ (25, 8.5) flow · Afacad 17/1.25 (21.25px) 700 #ffffff (color/neutral/white) · no-wrap `I3502:77182;1048:1230`
+          - [chữ] “Thêm quy trình” — 101×21 [HUG×HUG] · @ (25, 8.5) flow · Afacad 17/21px 700 #ffffff (color/neutral/white) · no-wrap `I3502:77182;1048:1230`
       - [khối] **Bộ tiêu chuẩn · Tiêu Chuẩn Chung** — 1092×1003 [FILL×HUG] · @ (0, 54) flow · column gap 12 `2711:51652`
         - [khối] **Category · [Trước 3-5 ngày] Gọi khách đầu khoá** — 1092×54 [FILL×HUG] · @ (0, 0) flow · row gap 16 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #e2e8f0 (color/border/default) `3502:77190`
           - [khối] **Frame 1171274930** — 970×36 [FILL×HUG] · @ (17, 9) flow · column gap 2 `3502:77191`
-            - [chữ] “BTVN” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/1.25 (23.75px) 700 #334155 (color/text/primary) `3502:77192`
-            - [icon] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( Không % )⟩ — 970×10 [FILL×FIXED] · @ (0, 26) flow · file assets/global-progress-bar-3502-77193.svg `3502:77193`
+            - [chữ] “BTVN” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/24px 700 #334155 (color/text/primary) `3502:77192`
+            - [icon] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( Không % )⟩ — 970×10 [FILL×FIXED] · @ (0, 26) flow · file /figma/assets/bad5a3b131dd.svg `3502:77193`
           - [khối] **Right** — 72×24 [HUG×HUG] · @ (1003, 15) flow · row gap 16 align CENTER `3502:77194`
             - [instance] **Atom/Number Badge** ⟨Atom/Number Badge: Value=1/1, Type=Số buổi, Size=Medium, State=Active⟩ — 38×24 · @ (0, 0) flow · column pad 2 8 2 8 justify CENTER align CENTER · bg #ffedd5 · radius 6px `3502:77195`
-              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/1.25 (18.75px) 700 #e65100 · no-wrap `I3502:77195;2011:30138`
-            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file assets/action-icon-3502-77196.svg `3502:77196`
+              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #e65100 · no-wrap `I3502:77195;2011:30138`
+            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file /figma/assets/c9e4b8ec38f5.svg `3502:77196`
         - [khối] **Category · Tỷ Lệ Đi Học (mở)** — 1092×517 [FILL×HUG] · @ (0, 66) flow · column · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #e2e8f0 (color/border/default) `2711:51686`
           - [khối] **Category Header** — 1090×61 [FILL×HUG] · @ (1, 1) flow · row gap 16 pad 8 16 8 16 align CENTER · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2711:51687`
             - [khối] **Frame 1171274930** — 970×44 [FILL×HUG] · @ (16, 8) flow · column gap 2 `3502:77221`
-              - [chữ] “Tỷ Lệ Đi Học” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/1.25 (23.75px) 700 #334155 (color/text/primary) `3502:77222`
+              - [chữ] “Tỷ Lệ Đi Học” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/24px 700 #334155 (color/text/primary) `3502:77222`
               - [instance] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( % )⟩ — 970×18 [FILL×HUG] · @ (0, 26) flow · row gap 8 align CENTER `3502:77223`
-                - [icon] **Frame 427325998** — 936×10 [FILL×FIXED] · @ (0, 4) flow · file assets/frame-427325998-I3502-77223-1350-13203.svg `I3502:77223;1350:13203`
-                - [chữ] “20%” — 26×18 [HUG×HUG] · @ (944, 0) flow · Afacad 14/1.25 (17.5px) 600 #e65100 (color/brand/orange) · no-wrap `I3502:77223;1350:13208`
+                - [icon] **Frame 427325998** — 936×10 [FILL×FIXED] · @ (0, 4) flow · file /figma/assets/4d1dee110ef5.svg `I3502:77223;1350:13203`
+                - [chữ] “20%” — 26×18 [HUG×HUG] · @ (944, 0) flow · Afacad 14/18px 600 #e65100 (color/brand/orange) · no-wrap `I3502:77223;1350:13208`
             - [khối] **Right** — 72×24 [HUG×HUG] · @ (1002, 18) flow · row gap 16 align CENTER `3502:77218`
               - [instance] **Atom/Number Badge** ⟨Atom/Number Badge: Value=4/7, Type=Số buổi, Size=Medium, State=Inactive⟩ — 38×24 · @ (0, 0) flow · column pad 2 8 2 8 justify CENTER align CENTER · bg #f1f5f9 · radius 6px `3502:77219`
-                - [chữ] “4/7” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/1.25 (18.75px) 700 #cbd5e1 (color/text/muted) · no-wrap `I3502:77219;811:10098`
-              - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (54, 3) flow · file assets/action-icon-3502-77220.svg `3502:77220`
+                - [chữ] “4/7” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #cbd5e1 (color/text/muted) · no-wrap `I3502:77219;811:10098`
+              - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (54, 3) flow · file /figma/assets/57b96098aad2.svg `3502:77220`
           - [khối] **Task List** — 1090×454 [FILL×HUG] · @ (1, 62) flow · column gap 10 pad 16 16 16 16 `2711:51706`
             - [khối] **Task · Task tiến trình · Nhắc nhở học viên trước bu** — 1058×130 [FILL×HUG] · @ (16, 16) flow · column gap 8 pad 14 14 14 14 · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2711:51740`
               - [khối] **Row** — 1028×29 [FILL×HUG] · @ (15, 15) flow · row gap 16 align CENTER `2711:51741`
                 - [khối] **Left** — 849×21 [FILL×HUG] · @ (0, 4) flow · row gap 8 align CENTER `2711:51742`
-                  - [icon] **Checkbox** ⟨Checkbox: Checked=Yes, Size=20, Disabled=No⟩ — 20×20 · @ (0, 0.5) flow · file assets/checkbox-2711-51746.svg covers (-2, -2) 26×26 `2711:51746`
-                  - [chữ] “Nhắc nhở học viên trước buổi học tại GG Chat” — 821×21 [FILL×HUG] · @ (28, 0) flow · Afacad 17/1.25 (21.25px) 500 #334155 (color/text/primary) `2711:51748`
+                  - [icon] **Checkbox** ⟨Checkbox: Checked=Yes, Size=20, Disabled=No⟩ — 20×20 · @ (0, 0.5) flow · file /figma/assets/2b6403bbddf3.svg covers (-2, -2) 26×26 `2711:51746`
+                  - [chữ] “Nhắc nhở học viên trước buổi học tại GG Chat” — 821×21 [FILL×HUG] · @ (28, 0) flow · Afacad 17/21px 500 #334155 (color/text/primary) `2711:51748`
                 - [khối] **Right** — 163×29 [HUG×HUG] · @ (865, 0) flow · row gap 12 align CENTER `2711:51749`
                   - [instance] **Atom/Chip** ⟨Atom/Chip: Time=4 ngày trước, Icon=false, Name=Trần Minh Khoa, Label=17:00 - 30.09.2026, Type=Date⟩ — 133×29 [HUG×FIXED] · @ (0, 0) flow · row gap 4 pad 4 8 4 8 align CENTER · bg #fff5ec (color/extended/fff5ec) · radius 8px · border 1px solid #ffeddd (color/extended/ffeddd) `2711:51750`
-                    - [chữ] “17:00 - 30.09.2026” — 115×19 [HUG×HUG] · @ (9, 5) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · text-align center · no-wrap `I2711:51750;1590:881`
-                  - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (145, 5.5) flow · file assets/action-icon-2711-51758.svg `2711:51758`
+                    - [chữ] “17:00 - 30.09.2026” — 115×19 [HUG×HUG] · @ (9, 5) flow · Afacad 15/19px 500 #334155 (color/text/primary) · text-align center · no-wrap `I2711:51750;1590:881`
+                  - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (145, 5.5) flow · file /figma/assets/4cdc2073b1fb.svg `2711:51758`
               - [khối] **Field · Ghi chú** — 1028×63 [FILL×HUG] · @ (15, 52) flow · column gap 4 `3857:71641`
                 - [instance] **Atom/Label** ⟨Atom/Label: Required=false, Icon=1832:36661, Label=Ghi chú, Có icon=Yes⟩ — 173×19 [FIXED×HUG] · @ (0, 0) flow · row gap 4 align CENTER `3857:71648`
-                  - [icon] **Liner Icon** ⟨Liner Icon: Property 1=Ghi chú⟩ — 16×16 · @ (0, 1.5) flow · file assets/liner-icon-I3857-71648-2808-48144.svg `I3857:71648;2808:48144`
-                  - [chữ] “Ghi chú” — 46×19 [HUG×HUG] · @ (20, 0) flow · Afacad 15/1.25 (18.75px) 400 #64748b (color/text/secondary) · no-wrap `I3857:71648;2808:48145`
+                  - [icon] **Liner Icon** ⟨Liner Icon: Property 1=Ghi chú⟩ — 16×16 · @ (0, 1.5) flow · file /figma/assets/2a4afd710173.svg `I3857:71648;2808:48144`
+                  - [chữ] “Ghi chú” — 46×19 [HUG×HUG] · @ (20, 0) flow · Afacad 15/19px 400 #64748b (color/text/secondary) · no-wrap `I3857:71648;2808:48145`
                 - [khối] **Body** — 1028×40 [FILL×HUG] · @ (0, 23) flow · column gap 12 `3857:71643`
                   - [khối] **Row** — 1028×40 [FILL×HUG] · @ (0, 0) flow · row gap 16 `3857:71644`
                     - [khối] **Field · Ghi chú** — 1028×40 [FILL×HUG] · @ (0, 0) flow · column gap 6 `3857:71645`
                       - [instance] **Atom/Input** ⟨Atom/Input: Loại=Gift code, Text=Nhập ghi chú..., State=Default, Kiểu=Chuẩn⟩ — 1028×40 [FILL×FIXED] · @ (0, 0) flow · row pad 8 8 8 12 align CENTER · bg #ffffff · radius 10px · border 1px solid #e2e8f0 (color/border/default) `3857:71646`
-                        - [chữ] “Nhập ghi chú...” — 1006×21 [FILL×HUG] · @ (13, 9.5) flow · Afacad 17/1.25 (21.25px) 400 italic #cccccc (color/text/placeholder) `I3857:71646;1048:1264`
+                        - [chữ] “Nhập ghi chú...” — 1006×21 [FILL×HUG] · @ (13, 9.5) flow · Afacad 17/21px 400 italic #cccccc (color/text/placeholder) `I3857:71646;1048:1264`
             - [khối] **Task · Kiểm tra · Tỷ lệ đi học trên 80%** — 1058×142 [FILL×HUG] · @ (16, 156) flow · column gap 8 pad 14 14 14 14 · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2711:51785`
               - [khối] **Row** — 1028×41 [FILL×HUG] · @ (15, 15) flow · row gap 16 align CENTER `2711:51786`
                 - [khối] **Left** — 855×41 [FILL×HUG] · @ (0, 0) flow · column gap 2 `2711:51787`
-                  - [chữ] “Tỷ lệ đi học trên 80%” — 855×21 [FILL×FILL] · @ (0, 0) flow · Afacad 17/1.25 (21.25px) 500 #334155 (color/text/primary) `2711:51792`
+                  - [chữ] “Tỷ lệ đi học trên 80%” — 855×21 [FILL×FILL] · @ (0, 0) flow · Afacad 17/21px 500 #334155 (color/text/primary) `2711:51792`
                   - [khối] **Progress · Tỷ lệ đi học** — 855×18 [FILL×HUG] · @ (0, 23) flow · row gap 8 align CENTER · clip `3772:85644`
-                    - [icon] **Bar** — 821×10 [FILL×FIXED] · @ (0, 4) flow · file assets/bar-3772-85645.svg `3772:85645`
-                    - [chữ] “75%” — 26×18 [HUG×HUG] · @ (829, 0) flow · Afacad 14/1.25 (17.5px) 600 #e65100 (color/brand/orange) · no-wrap `3772:85649`
+                    - [icon] **Bar** — 821×10 [FILL×FIXED] · @ (0, 4) flow · file /figma/assets/3de4fb1af619.svg `3772:85645`
+                    - [chữ] “75%” — 26×18 [HUG×HUG] · @ (829, 0) flow · Afacad 14/18px 600 #e65100 (color/brand/orange) · no-wrap `3772:85649`
                 - [khối] **Right** — 157×26 [HUG×HUG] · @ (871, 7.5) flow · row gap 12 align CENTER `2711:51793`
                   - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Kiểm tra sau buổi 8, Variant=Neutral, Dropdown=Off⟩ — 127×26 [HUG×HUG] · @ (0, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #f1f5f9 · radius 6px `2711:51794`
-                    - [chữ] “Kiểm tra sau buổi 8” — 107×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/1.25 (17.5px) 500 #334155 (color/text/primary) · no-wrap `I2711:51794;1048:1255`
-                  - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (139, 4) flow · file assets/action-icon-2711-51800.svg `2711:51800`
+                    - [chữ] “Kiểm tra sau buổi 8” — 107×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #334155 (color/text/primary) · no-wrap `I2711:51794;1048:1255`
+                  - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (139, 4) flow · file /figma/assets/4cdc2073b1fb.svg `2711:51800`
               - [khối] **Field · Ghi chú** — 1028×63 [FILL×HUG] · @ (15, 64) flow · column gap 4 `3857:71617`
                 - [instance] **Atom/Label** ⟨Atom/Label: Required=false, Icon=1832:36661, Label=Ghi chú, Có icon=Yes⟩ — 173×19 [FIXED×HUG] · @ (0, 0) flow · row gap 4 align CENTER `3857:71655`
-                  - [icon] **Liner Icon** ⟨Liner Icon: Property 1=Ghi chú⟩ — 16×16 · @ (0, 1.5) flow · file assets/liner-icon-I3857-71655-2808-48144.svg `I3857:71655;2808:48144`
-                  - [chữ] “Ghi chú” — 46×19 [HUG×HUG] · @ (20, 0) flow · Afacad 15/1.25 (18.75px) 400 #64748b (color/text/secondary) · no-wrap `I3857:71655;2808:48145`
+                  - [icon] **Liner Icon** ⟨Liner Icon: Property 1=Ghi chú⟩ — 16×16 · @ (0, 1.5) flow · file /figma/assets/2a4afd710173.svg `I3857:71655;2808:48144`
+                  - [chữ] “Ghi chú” — 46×19 [HUG×HUG] · @ (20, 0) flow · Afacad 15/19px 400 #64748b (color/text/secondary) · no-wrap `I3857:71655;2808:48145`
                 - [khối] **Body** — 1028×40 [FILL×HUG] · @ (0, 23) flow · column gap 12 `3857:71622`
                   - [khối] **Row** — 1028×40 [FILL×HUG] · @ (0, 0) flow · row gap 16 `3857:71623`
                     - [khối] **Field · Ghi chú** — 1028×40 [FILL×HUG] · @ (0, 0) flow · column gap 6 `3857:71624`
                       - [instance] **Atom/Input** ⟨Atom/Input: Loại=Gift code, Text=Nhập ghi chú..., State=Default, Kiểu=Chuẩn⟩ — 1028×40 [FILL×FIXED] · @ (0, 0) flow · row pad 8 8 8 12 align CENTER · bg #ffffff · radius 10px · border 1px solid #e2e8f0 (color/border/default) `3857:71625`
-                        - [chữ] “Nhập ghi chú...” — 1006×21 [FILL×HUG] · @ (13, 9.5) flow · Afacad 17/1.25 (21.25px) 400 italic #cccccc (color/text/placeholder) `I3857:71625;1048:1264`
+                        - [chữ] “Nhập ghi chú...” — 1006×21 [FILL×HUG] · @ (13, 9.5) flow · Afacad 17/21px 400 italic #cccccc (color/text/placeholder) `I3857:71625;1048:1264`
             - [khối] **Task · Đánh giá · Thường xuyên nhắc nhở học ** — 1058×130 [FILL×HUG] · @ (16, 308) flow · column gap 8 pad 14 14 14 14 · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2711:51802`
               - [khối] **Row** — 1028×29 [FILL×HUG] · @ (15, 15) flow · row gap 16 align CENTER `2711:51803`
                 - [khối] **Left** — 849×21 [FILL×HUG] · @ (0, 4) flow · row gap 8 align CENTER `2711:51804`
-                  - [icon] **Checkbox** ⟨Checkbox: Checked=Yes, Size=20, Disabled=No⟩ — 20×20 · @ (0, 0.5) flow · file assets/checkbox-2711-51808.svg covers (-2, -2) 26×26 `2711:51808`
-                  - [chữ] “Thường xuyên nhắc nhở học viên đi học đầy đủ ở trên lớp” — 821×21 [FILL×HUG] · @ (28, 0) flow · Afacad 17/1.25 (21.25px) 500 #334155 (color/text/primary) `2711:51810`
+                  - [icon] **Checkbox** ⟨Checkbox: Checked=Yes, Size=20, Disabled=No⟩ — 20×20 · @ (0, 0.5) flow · file /figma/assets/2b6403bbddf3.svg covers (-2, -2) 26×26 `2711:51808`
+                  - [chữ] “Thường xuyên nhắc nhở học viên đi học đầy đủ ở trên lớp” — 821×21 [FILL×HUG] · @ (28, 0) flow · Afacad 17/21px 500 #334155 (color/text/primary) `2711:51810`
                 - [khối] **Right** — 163×29 [HUG×HUG] · @ (865, 0) flow · row gap 12 align CENTER `2711:51811`
                   - [instance] **Atom/Chip** ⟨Atom/Chip: Time=4 ngày trước, Icon=false, Name=Trần Minh Khoa, Label=21:30 - 30.09.2026, Type=Date⟩ — 133×29 [HUG×FIXED] · @ (0, 0) flow · row gap 4 pad 4 8 4 8 align CENTER · bg #fff5ec (color/extended/fff5ec) · radius 8px · border 1px solid #ffeddd (color/extended/ffeddd) `2711:51812`
-                    - [chữ] “21:30 - 30.09.2026” — 115×19 [HUG×HUG] · @ (9, 5) flow · Afacad 15/1.25 (18.75px) 500 #334155 (color/text/primary) · text-align center · no-wrap `I2711:51812;1590:881`
-                  - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (145, 5.5) flow · file assets/action-icon-2711-51820.svg `2711:51820`
+                    - [chữ] “21:30 - 30.09.2026” — 115×19 [HUG×HUG] · @ (9, 5) flow · Afacad 15/19px 500 #334155 (color/text/primary) · text-align center · no-wrap `I2711:51812;1590:881`
+                  - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Up, Size=18⟩ — 18×18 · @ (145, 5.5) flow · file /figma/assets/4cdc2073b1fb.svg `2711:51820`
               - [khối] **Body** — 1028×63 [FILL×HUG] · @ (15, 52) flow · column gap 12 `2711:51823`
                 - [khối] **Row** — 1028×63 [FILL×HUG] · @ (0, 0) flow · row gap 16 `2711:51835`
                   - [khối] **Field · Kết quả** — 506×63 [FILL×HUG] · @ (0, 0) flow · column gap 4 `2711:51828`
                     - [instance] **Atom/Label** ⟨Atom/Label: Required=false, Icon=3065:52444, Label=Kết quả, Có icon=Yes⟩ — 173×19 [FIXED×HUG] · @ (0, 0) flow · row gap 4 align CENTER `3857:71662`
-                      - [icon] **Liner Icon** ⟨Liner Icon: Property 1=Điểm⟩ — 16×16 · @ (0, 1.5) flow · file assets/liner-icon-I3857-71662-2808-48144.svg `I3857:71662;2808:48144`
-                      - [chữ] “Kết quả” — 47×19 [HUG×HUG] · @ (20, 0) flow · Afacad 15/1.25 (18.75px) 400 #64748b (color/text/secondary) · no-wrap `I3857:71662;2808:48145`
+                      - [icon] **Liner Icon** ⟨Liner Icon: Property 1=Điểm⟩ — 16×16 · @ (0, 1.5) flow · file /figma/assets/19b0272e2961.svg `I3857:71662;2808:48144`
+                      - [chữ] “Kết quả” — 47×19 [HUG×HUG] · @ (20, 0) flow · Afacad 15/19px 400 #64748b (color/text/secondary) · no-wrap `I3857:71662;2808:48145`
                     - [instance] **Atom/Input** ⟨Atom/Input: Loại=Gift code, Text=Đạt, State=CChọn, Kiểu=Chuẩn⟩ — 506×40 [FILL×FIXED] · @ (0, 23) flow · row pad 8 12 8 12 align CENTER · bg #ffffff · radius 10px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 rgba(0, 0, 0, 0.05) `2711:51824`
-                      - [chữ] “Đạt” — 466×24 [FILL×FILL] · @ (12, 8) flow · Afacad 17/1.25 (21.25px) 500 #334155 (color/text/primary) `I2711:51824;2148:20906`
-                      - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (478, 12) flow · file assets/chevron-I2711-51824-2148-21002.svg `I2711:51824;2148:21002`
+                      - [chữ] “Đạt” — 466×24 [FILL×FILL] · @ (12, 8) flow · Afacad 17/21px 500 #334155 (color/text/primary) `I2711:51824;2148:20906`
+                      - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (478, 12) flow · file /figma/assets/aabab76135b8.svg `I2711:51824;2148:21002`
                   - [khối] **Field · Ghi chú** — 506×63 [FILL×HUG] · @ (522, 0) flow · column gap 4 `2711:51833`
                     - [instance] **Atom/Label** ⟨Atom/Label: Required=false, Icon=1832:36661, Label=Ghi chú, Có icon=Yes⟩ — 173×19 [FIXED×HUG] · @ (0, 0) flow · row gap 4 align CENTER `3857:71668`
-                      - [icon] **Liner Icon** ⟨Liner Icon: Property 1=Ghi chú⟩ — 16×16 · @ (0, 1.5) flow · file assets/liner-icon-I3857-71668-2808-48144.svg `I3857:71668;2808:48144`
-                      - [chữ] “Ghi chú” — 46×19 [HUG×HUG] · @ (20, 0) flow · Afacad 15/1.25 (18.75px) 400 #64748b (color/text/secondary) · no-wrap `I3857:71668;2808:48145`
+                      - [icon] **Liner Icon** ⟨Liner Icon: Property 1=Ghi chú⟩ — 16×16 · @ (0, 1.5) flow · file /figma/assets/91fcf20c3dc1.svg `I3857:71668;2808:48144`
+                      - [chữ] “Ghi chú” — 46×19 [HUG×HUG] · @ (20, 0) flow · Afacad 15/19px 400 #64748b (color/text/secondary) · no-wrap `I3857:71668;2808:48145`
                     - [instance] **Atom/Input** ⟨Atom/Input: Loại=Gift code, Text=Giáo viên nhắc chuyên cần ở đầu và cuối buổi., State=Counter, Kiểu=Chuẩn⟩ — 506×40 [FILL×FIXED] · @ (0, 23) flow · row pad 8 12 8 12 align CENTER · bg #ffffff · radius 10px · border 1px solid #e2e8f0 (color/border/default) `2711:51830`
-                      - [chữ] “Giáo viên nhắc chuyên cần ở đầu và cuối buổi.” — 441×21 [FILL×HUG] · @ (13, 9.5) flow · Afacad 17/1.25 (21.25px) 500 #334155 (color/text/primary) `I2711:51830;1056:1242`
-                      - [chữ] “45/500” — 39×16 [HUG×HUG] · @ (454, 12) flow · Afacad 13/1.25 (16.25px) 400 #cbd5e1 (color/text/muted) · no-wrap `I2711:51830;1056:1243`
+                      - [chữ] “Giáo viên nhắc chuyên cần ở đầu và cuối buổi.” — 441×21 [FILL×HUG] · @ (13, 9.5) flow · Afacad 17/21px 500 #334155 (color/text/primary) `I2711:51830;1056:1242`
+                      - [chữ] “45/500” — 39×16 [HUG×HUG] · @ (454, 12) flow · Afacad 13/16px 400 #cbd5e1 (color/text/muted) · no-wrap `I2711:51830;1056:1243`
         - [khối] **Category · [Trước 3-5 ngày] Gọi khách đầu khoá** — 1092×54 [FILL×HUG] · @ (0, 595) flow · row gap 16 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #e2e8f0 (color/border/default) `3502:77234`
           - [khối] **Frame 1171274930** — 970×36 [FILL×HUG] · @ (17, 9) flow · column gap 2 `3502:77235`
-            - [chữ] “Không Khí Và Tương Tác Lớp Học” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/1.25 (23.75px) 700 #334155 (color/text/primary) `3502:77236`
-            - [icon] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( Không % )⟩ — 970×10 [FILL×FIXED] · @ (0, 26) flow · file assets/global-progress-bar-3502-77237.svg `3502:77237`
+            - [chữ] “Không Khí Và Tương Tác Lớp Học” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/24px 700 #334155 (color/text/primary) `3502:77236`
+            - [icon] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( Không % )⟩ — 970×10 [FILL×FIXED] · @ (0, 26) flow · file /figma/assets/bad5a3b131dd.svg `3502:77237`
           - [khối] **Right** — 72×24 [HUG×HUG] · @ (1003, 15) flow · row gap 16 align CENTER `3502:77238`
             - [instance] **Atom/Number Badge** ⟨Atom/Number Badge: Value=1/1, Type=Số buổi, Size=Medium, State=Active⟩ — 38×24 · @ (0, 0) flow · column pad 2 8 2 8 justify CENTER align CENTER · bg #ffedd5 · radius 6px `3502:77239`
-              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/1.25 (18.75px) 700 #e65100 · no-wrap `I3502:77239;2011:30138`
-            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file assets/action-icon-3502-77240.svg `3502:77240`
+              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #e65100 · no-wrap `I3502:77239;2011:30138`
+            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file /figma/assets/c9883be34963.svg `3502:77240`
         - [khối] **Category · [Trước 3-5 ngày] Gọi khách đầu khoá** — 1092×62 [FILL×HUG] · @ (0, 661) flow · row gap 16 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #e2e8f0 (color/border/default) `3502:77241`
           - [khối] **Frame 1171274930** — 970×44 [FILL×HUG] · @ (17, 9) flow · column gap 2 `3502:77242`
-            - [chữ] “Các Công Tác Hành Chính” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/1.25 (23.75px) 700 #334155 (color/text/primary) `3502:77243`
+            - [chữ] “Các Công Tác Hành Chính” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/24px 700 #334155 (color/text/primary) `3502:77243`
             - [instance] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( % )⟩ — 970×18 [FILL×HUG] · @ (0, 26) flow · row gap 8 align CENTER `3502:77244`
-              - [icon] **Frame 427325998** — 936×10 [FILL×FIXED] · @ (0, 4) flow · file assets/frame-427325998-I3502-77244-1350-13203.svg `I3502:77244;1350:13203`
-              - [chữ] “20%” — 26×18 [HUG×HUG] · @ (944, 0) flow · Afacad 14/1.25 (17.5px) 600 #e65100 (color/brand/orange) · no-wrap `I3502:77244;1350:13208`
+              - [icon] **Frame 427325998** — 936×10 [FILL×FIXED] · @ (0, 4) flow · file /figma/assets/4d1dee110ef5.svg `I3502:77244;1350:13203`
+              - [chữ] “20%” — 26×18 [HUG×HUG] · @ (944, 0) flow · Afacad 14/18px 600 #e65100 (color/brand/orange) · no-wrap `I3502:77244;1350:13208`
           - [khối] **Right** — 72×24 [HUG×HUG] · @ (1003, 19) flow · row gap 16 align CENTER `3502:77245`
             - [instance] **Atom/Number Badge** ⟨Atom/Number Badge: Value=1/1, Type=Số buổi, Size=Medium, State=Active⟩ — 38×24 · @ (0, 0) flow · column pad 2 8 2 8 justify CENTER align CENTER · bg #ffedd5 · radius 6px `3502:77246`
-              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/1.25 (18.75px) 700 #e65100 · no-wrap `I3502:77246;2011:30138`
-            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file assets/action-icon-3502-77247.svg `3502:77247`
+              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #e65100 · no-wrap `I3502:77246;2011:30138`
+            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file /figma/assets/034148d86d11.svg `3502:77247`
         - [khối] **Category · [Trước 3-5 ngày] Gọi khách đầu khoá** — 1092×54 [FILL×HUG] · @ (0, 735) flow · row gap 16 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #e2e8f0 (color/border/default) `3502:77262`
           - [khối] **Frame 1171274930** — 970×36 [FILL×HUG] · @ (17, 9) flow · column gap 2 `3502:77263`
-            - [chữ] “Không Khí Và Tương Tác Lớp Học” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/1.25 (23.75px) 700 #334155 (color/text/primary) `3502:77264`
-            - [icon] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( Không % )⟩ — 970×10 [FILL×FIXED] · @ (0, 26) flow · file assets/global-progress-bar-3502-77265.svg `3502:77265`
+            - [chữ] “Không Khí Và Tương Tác Lớp Học” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/24px 700 #334155 (color/text/primary) `3502:77264`
+            - [icon] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( Không % )⟩ — 970×10 [FILL×FIXED] · @ (0, 26) flow · file /figma/assets/bad5a3b131dd.svg `3502:77265`
           - [khối] **Right** — 72×24 [HUG×HUG] · @ (1003, 15) flow · row gap 16 align CENTER `3502:77266`
             - [instance] **Atom/Number Badge** ⟨Atom/Number Badge: Value=1/1, Type=Số buổi, Size=Medium, State=Active⟩ — 38×24 · @ (0, 0) flow · column pad 2 8 2 8 justify CENTER align CENTER · bg #ffedd5 · radius 6px `3502:77267`
-              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/1.25 (18.75px) 700 #e65100 · no-wrap `I3502:77267;2011:30138`
-            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file assets/action-icon-3502-77268.svg `3502:77268`
+              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #e65100 · no-wrap `I3502:77267;2011:30138`
+            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file /figma/assets/034148d86d11.svg `3502:77268`
         - [khối] **Category · [Trước 3-5 ngày] Gọi khách đầu khoá** — 1092×62 [FILL×HUG] · @ (0, 801) flow · row gap 16 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #e2e8f0 (color/border/default) `3502:77269`
           - [khối] **Frame 1171274930** — 970×44 [FILL×HUG] · @ (17, 9) flow · column gap 2 `3502:77270`
-            - [chữ] “Đảm Bảo Chất Lượng Buổi Học” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/1.25 (23.75px) 700 #334155 (color/text/primary) `3502:77271`
+            - [chữ] “Đảm Bảo Chất Lượng Buổi Học” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/24px 700 #334155 (color/text/primary) `3502:77271`
             - [instance] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( % )⟩ — 970×18 [FILL×HUG] · @ (0, 26) flow · row gap 8 align CENTER `3502:77272`
-              - [icon] **Frame 427325998** — 936×10 [FILL×FIXED] · @ (0, 4) flow · file assets/frame-427325998-I3502-77272-1350-13203.svg `I3502:77272;1350:13203`
-              - [chữ] “20%” — 26×18 [HUG×HUG] · @ (944, 0) flow · Afacad 14/1.25 (17.5px) 600 #e65100 (color/brand/orange) · no-wrap `I3502:77272;1350:13208`
+              - [icon] **Frame 427325998** — 936×10 [FILL×FIXED] · @ (0, 4) flow · file /figma/assets/4d1dee110ef5.svg `I3502:77272;1350:13203`
+              - [chữ] “20%” — 26×18 [HUG×HUG] · @ (944, 0) flow · Afacad 14/18px 600 #e65100 (color/brand/orange) · no-wrap `I3502:77272;1350:13208`
           - [khối] **Right** — 72×24 [HUG×HUG] · @ (1003, 19) flow · row gap 16 align CENTER `3502:77273`
             - [instance] **Atom/Number Badge** ⟨Atom/Number Badge: Value=1/1, Type=Số buổi, Size=Medium, State=Active⟩ — 38×24 · @ (0, 0) flow · column pad 2 8 2 8 justify CENTER align CENTER · bg #ffedd5 · radius 6px `3502:77274`
-              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/1.25 (18.75px) 700 #e65100 · no-wrap `I3502:77274;2011:30138`
-            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file assets/action-icon-3502-77275.svg `3502:77275`
+              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #e65100 · no-wrap `I3502:77274;2011:30138`
+            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file /figma/assets/034148d86d11.svg `3502:77275`
         - [khối] **Category · [Trước 3-5 ngày] Gọi khách đầu khoá** — 1092×54 [FILL×HUG] · @ (0, 875) flow · row gap 16 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #e2e8f0 (color/border/default) `3502:77349`
           - [khối] **Frame 1171274930** — 970×36 [FILL×HUG] · @ (17, 9) flow · column gap 2 `3502:77350`
-            - [chữ] “Đảm Quy Trình & Quy Định Của Buổi Học” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/1.25 (23.75px) 700 #334155 (color/text/primary) `3502:77351`
-            - [icon] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( Không % )⟩ — 970×10 [FILL×FIXED] · @ (0, 26) flow · file assets/global-progress-bar-3502-77352.svg `3502:77352`
+            - [chữ] “Đảm Quy Trình & Quy Định Của Buổi Học” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/24px 700 #334155 (color/text/primary) `3502:77351`
+            - [icon] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( Không % )⟩ — 970×10 [FILL×FIXED] · @ (0, 26) flow · file /figma/assets/bad5a3b131dd.svg `3502:77352`
           - [khối] **Right** — 72×24 [HUG×HUG] · @ (1003, 15) flow · row gap 16 align CENTER `3502:77353`
             - [instance] **Atom/Number Badge** ⟨Atom/Number Badge: Value=1/1, Type=Số buổi, Size=Medium, State=Active⟩ — 38×24 · @ (0, 0) flow · column pad 2 8 2 8 justify CENTER align CENTER · bg #ffedd5 · radius 6px `3502:77354`
-              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/1.25 (18.75px) 700 #e65100 · no-wrap `I3502:77354;2011:30138`
-            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file assets/action-icon-3502-77355.svg `3502:77355`
+              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #e65100 · no-wrap `I3502:77354;2011:30138`
+            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file /figma/assets/034148d86d11.svg `3502:77355`
         - [khối] **Category · [Trước 3-5 ngày] Gọi khách đầu khoá** — 1092×62 [FILL×HUG] · @ (0, 941) flow · row gap 16 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #e2e8f0 (color/border/default) `3502:77356`
           - [khối] **Frame 1171274930** — 970×44 [FILL×HUG] · @ (17, 9) flow · column gap 2 `3502:77357`
-            - [chữ] “Tiêu Chuẩn Buổi Khai Giảng” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/1.25 (23.75px) 700 #334155 (color/text/primary) `3502:77358`
+            - [chữ] “Tiêu Chuẩn Buổi Khai Giảng” — 970×24 [FILL×HUG] · @ (0, 0) flow · Afacad 19/24px 700 #334155 (color/text/primary) `3502:77358`
             - [instance] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( % )⟩ — 970×18 [FILL×HUG] · @ (0, 26) flow · row gap 8 align CENTER `3502:77359`
-              - [icon] **Frame 427325998** — 936×10 [FILL×FIXED] · @ (0, 4) flow · file assets/frame-427325998-I3502-77359-1350-13203.svg `I3502:77359;1350:13203`
-              - [chữ] “20%” — 26×18 [HUG×HUG] · @ (944, 0) flow · Afacad 14/1.25 (17.5px) 600 #e65100 (color/brand/orange) · no-wrap `I3502:77359;1350:13208`
+              - [icon] **Frame 427325998** — 936×10 [FILL×FIXED] · @ (0, 4) flow · file /figma/assets/4d1dee110ef5.svg `I3502:77359;1350:13203`
+              - [chữ] “20%” — 26×18 [HUG×HUG] · @ (944, 0) flow · Afacad 14/18px 600 #e65100 (color/brand/orange) · no-wrap `I3502:77359;1350:13208`
           - [khối] **Right** — 72×24 [HUG×HUG] · @ (1003, 19) flow · row gap 16 align CENTER `3502:77360`
             - [instance] **Atom/Number Badge** ⟨Atom/Number Badge: Value=1/1, Type=Số buổi, Size=Medium, State=Active⟩ — 38×24 · @ (0, 0) flow · column pad 2 8 2 8 justify CENTER align CENTER · bg #ffedd5 · radius 6px `3502:77361`
-              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/1.25 (18.75px) 700 #e65100 · no-wrap `I3502:77361;2011:30138`
-            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file assets/action-icon-3502-77362.svg `3502:77362`
+              - [chữ] “1/1” — 22×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #e65100 · no-wrap `I3502:77361;2011:30138`
+            - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Down, Size=18⟩ — 18×18 · @ (54, 3) flow · file /figma/assets/034148d86d11.svg `3502:77362`
   - [khối] **Header** — 1140×64 · @ (300, 0) abs · clip `3497:47386`
-    - [icon] **Group 240178** — 1140×64 · @ (0, 0) abs · file assets/group-240178-4050-116347.svg `4050:116347`
+    - [icon] **Group 240178** — 1140×64 · @ (0, 0) abs · file /figma/assets/1fae0d4949f0.svg `4050:116347`
     - [instance] **ACCOUNT** ⟨ACCOUNT: Role=Admin, Theme=Dark, Size=Default⟩ — 222×36 · @ (902, 14) abs · row gap 10 justify MAX align CENTER `3497:47434`
       - [khối] **Frame 1171274934** — 192×36 [FIXED×HUG] · @ (0, 0) flow · row gap 8 align CENTER `I3497:47434;2008:30986`
         - [khối] **Background+Border+Shadow** — 36×36 · @ (0, 0) flow · row justify CENTER align CENTER · bg #fed7aa (color/extended/fed7aa) · radius 9999px · border 1px solid #ffffff (color/neutral/white) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I3497:47434;2008:31747`
-          - [ảnh] **Avatar** — 34×34 [FILL×FILL] · @ (1, 1) flow · image `url("assets/img-372d69401a76.png") -14.2px 0 / 62.39px 34px no-repeat` · clip `I3497:47434;2008:31748`
+          - [ảnh] **Avatar** — 34×34 [FILL×FILL] · @ (1, 1) flow · image `url("/figma/assets/372d69401a76.jpg") -14.2px 0 / 62.39px 34px no-repeat` · clip `I3497:47434;2008:31748`
         - [khối] **Container** — 148×32 [FILL×HUG] · @ (44, 2) flow · column `I3497:47434;1391:17264`
-          - [chữ] “Admin Đắc Nhân” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/1.25 (16.25px) 600 #ffffff (color/neutral/white) · truncate 1 lines `I3497:47434;1391:17266`
-          - [chữ] “admin@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/1.25 (16.25px) 500 #ffffff (color/neutral/white) · truncate 1 lines `I3497:47434;1391:17268`
-      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file assets/overlay-I3497-47434-1391-17270.svg covers (-2, -2) 26×26 `I3497:47434;1391:17270`
+          - [chữ] “Admin Đắc Nhân” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/16px 600 #ffffff (color/neutral/white) · truncate 1 lines `I3497:47434;1391:17266`
+          - [chữ] “admin@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/16px 500 #ffffff (color/neutral/white) · truncate 1 lines `I3497:47434;1391:17268`
+      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file /figma/assets/93cec656b378.svg covers (-2, -2) 26×26 `I3497:47434;1391:17270`
   - [instance] **Sidebar · MENU - ADMIN** ⟨MENU - ADMIN: Trang=Quản lý / Lớp Học / Tiêu chuẩn Lớp - GV⟩ — 300×810 · @ (0, 0) abs · bg #ff5b00 · clip `4915:226785`
     - [khối] **Frame 427322079** — 371.25×1197.75 · @ (0, -216) abs · bg #ff5b00 · clip `I4915:226785;4901:210134`
-      - [icon] **Subtract** — 332.18×305.61 · @ (277.9, 67.31) abs · file assets/subtract-I4915-226785-4901-210136.svg covers (1.16, 148.69) 20.94×150.43 `I4915:226785;4901:210136`
-      - [icon] **Intersect** — 196.74×223.25 · @ (281.58, 127.62) abs · file assets/intersect-I4915-226785-4901-210143.svg covers (0.61, 88.38) 17.81×130.99 `I4915:226785;4901:210143`
-      - [icon] **Vector** — 92.05×189 · @ (0, 170.25) abs · file assets/vector-I4915-226785-4901-210156.svg covers (0, 45.75) 92.05×143.25 `I4915:226785;4901:210156`
-      - [icon] **Vector** — 485.25×688.35 · @ (-54.28, 531.66) abs · file assets/vector-I4915-226785-4901-210157.svg covers (54.28, 20.59) 300×473.75 `I4915:226785;4901:210157`
-      - [icon] **Union** — 328.37×643.79 · @ (98.87, 828.86) abs · file assets/union-I4915-226785-4901-210158.svg covers (0, 0) 201.13×197.14 `I4915:226785;4901:210158`
-      - [icon] **Group 240002** — 324.75×297.48 · @ (-61.5, 181.5) abs · file assets/group-240002-I4915-226785-4901-210161.svg covers (61.5, 34.5) 263.25×262.98 `I4915:226785;4901:210161`
+      - [icon] **Subtract** — 332.18×305.61 · @ (277.9, 67.31) abs · file /figma/assets/e8fe9260c1e4.svg covers (1.16, 148.69) 20.94×150.43 `I4915:226785;4901:210136`
+      - [icon] **Intersect** — 196.74×223.25 · @ (281.58, 127.62) abs · file /figma/assets/121f3c2da1e2.svg covers (0.61, 88.38) 17.81×130.99 `I4915:226785;4901:210143`
+      - [icon] **Vector** — 92.05×189 · @ (0, 170.25) abs · file /figma/assets/4fe6db22d1da.svg covers (0, 45.75) 92.05×143.25 `I4915:226785;4901:210156`
+      - [icon] **Vector** — 485.25×688.35 · @ (-54.28, 531.66) abs · file /figma/assets/e8d22fedfa87.svg covers (54.28, 20.59) 300×473.75 `I4915:226785;4901:210157`
+      - [icon] **Union** — 328.37×643.79 · @ (98.87, 828.86) abs · file /figma/assets/306d1af7732a.svg covers (0, 0) 201.13×197.14 `I4915:226785;4901:210158`
+      - [icon] **Group 240002** — 324.75×297.48 · @ (-61.5, 181.5) abs · file /figma/assets/a98e399f0af9.svg covers (61.5, 34.5) 263.25×262.98 `I4915:226785;4901:210161`
       - [khối] **material-symbols:menu-rounded** — 18×18 · @ (164.25, 240.75) abs · clip · trống `I4915:226785;4901:210182`
       - [khối] **Frame 427322029** — 36×36 · @ (9.75, 541.5) abs · clip · trống `I4915:226785;4901:210183`
       - [khối] **Menu Section 1: Quy trình (Expanded)** — 192×556 · @ (96, 294) abs · column gap 8 `I4915:226785;4901:210184`
         - [khối] **Frame 1171274929** — 192×28 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `I4915:226785;4901:210185`
-          - [icon] **Button** — 28×28 · @ (0, 0) flow · file assets/button-I4915-226785-4901-210186.svg `I4915:226785;4901:210186`
+          - [icon] **Button** — 28×28 · @ (0, 0) flow · file /figma/assets/3e46b691b596.svg `I4915:226785;4901:210186`
           - [khối] **Button** — 106×28 [HUG×FIXED] · @ (36, 0) flow · row pad 0 8 0 8 justify CENTER align CENTER · bg rgba(255, 255, 255, 0.2) · radius 6px `I4915:226785;4901:210189`
-            - [chữ] “DN0091 - 132” — 90×20 [HUG×HUG] · @ (8, 4) flow · Afacad 16/1.25 (20px) 700 #ffffff case title · no-wrap `I4915:226785;4901:210190`
+            - [chữ] “DN0091 - 132” — 90×20 [HUG×HUG] · @ (8, 4) flow · Afacad 16/20px 700 #ffffff case title · no-wrap `I4915:226785;4901:210190`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=458:1148, Label=Tổng quan, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:226785;4901:210191`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tổng quan⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-226785-4901-210191-2245-87904.svg `I4915:226785;4901:210191;2245:87904`
-          - [chữ] “Tổng quan” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210191;2245:87908`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tổng quan⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/26bc8994d31a.svg `I4915:226785;4901:210191;2245:87904`
+          - [chữ] “Tổng quan” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210191;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=458:1167, Label=Bài học, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 84) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:226785;4901:210192`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Bài học⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-226785-4901-210192-2245-87904.svg `I4915:226785;4901:210192;2245:87904`
-          - [chữ] “Bài học” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210192;2245:87908`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Bài học⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/49911873b2dd.svg `I4915:226785;4901:210192;2245:87904`
+          - [chữ] “Bài học” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210192;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35762, Label=Bài tập và Kiểm tra, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 132) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:226785;4901:210193`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Bài tập và kiểm tra⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-226785-4901-210193-2245-87904.svg `I4915:226785;4901:210193;2245:87904`
-          - [chữ] “Bài tập và Kiểm tra” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210193;2245:87908`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Bài tập và kiểm tra⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/7fdbd7cf77fb.svg `I4915:226785;4901:210193;2245:87904`
+          - [chữ] “Bài tập và Kiểm tra” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210193;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=442:1600, Label=Tự học, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 180) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:226785;4901:210194`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Tự học⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4915-226785-4901-210194-2245-87904.svg `I4915:226785;4901:210194;2245:87904`
-          - [chữ] “Tự học” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210194;2245:87908`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Tự học⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/262bf4649141.svg `I4915:226785;4901:210194;2245:87904`
+          - [chữ] “Tự học” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210194;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=442:1601, Label=Đánh giá, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 228) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:226785;4901:210195`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Đánh giá⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4915-226785-4901-210195-2245-87904.svg `I4915:226785;4901:210195;2245:87904`
-          - [chữ] “Đánh giá” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210195;2245:87908`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Đánh giá⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/bf7d876d3e8d.svg `I4915:226785;4901:210195;2245:87904`
+          - [chữ] “Đánh giá” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210195;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35765, Label=Tiêu chuẩn Lớp - GV, Type=Menu phụ, State=Select, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 276) flow · row gap 8 pad 8 4 8 8 align CENTER · bg `linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.25) 100%)` · radius 8px · shadow inset 0 0 0 1px rgba(255, 255, 255, 0.2), 0 1.25px 2.25px 0 rgba(0, 0, 0, 0.05) · backdrop blur(2.25px) `I4915:226785;4901:210196`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tiêu chuẩn lớp - GV⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-226785-4901-210196-2245-87910.svg `I4915:226785;4901:210196;2245:87910`
-          - [chữ] “Tiêu chuẩn Lớp - GV” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210196;2245:87914`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tiêu chuẩn lớp - GV⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/395b5316a474.svg `I4915:226785;4901:210196;2245:87910`
+          - [chữ] “Tiêu chuẩn Lớp - GV” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210196;2245:87914`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35766, Label=Quy trình lớp, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 324) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:226785;4901:210197`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Quy trình lớp⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4915-226785-4901-210197-2245-87904.svg `I4915:226785;4901:210197;2245:87904`
-          - [chữ] “Quy trình lớp” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210197;2245:87908`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Quy trình lớp⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/f9549d7ca804.svg `I4915:226785;4901:210197;2245:87904`
+          - [chữ] “Quy trình lớp” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210197;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35767, Label=CSKH, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 372) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:226785;4901:210198`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=CSKH⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4915-226785-4901-210198-2245-87904.svg `I4915:226785;4901:210198;2245:87904`
-          - [chữ] “CSKH” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210198;2245:87908`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=CSKH⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/566696280750.svg `I4915:226785;4901:210198;2245:87904`
+          - [chữ] “CSKH” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210198;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=442:1604, Label=Cuộc họp, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 420) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:226785;4901:210199`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Cuộc họp⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4915-226785-4901-210199-2245-87904.svg `I4915:226785;4901:210199;2245:87904`
-          - [chữ] “Cuộc họp” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210199;2245:87908`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Cuộc họp⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/4a84283dbbaf.svg `I4915:226785;4901:210199;2245:87904`
+          - [chữ] “Cuộc họp” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210199;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35769, Label=Cài đặt, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 468) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:226785;4901:210200`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Cài đặt⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4915-226785-4901-210200-2245-87904.svg `I4915:226785;4901:210200;2245:87904`
-          - [chữ] “Cài đặt” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210200;2245:87908`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Cài đặt⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/9e63c5231f0b.svg `I4915:226785;4901:210200;2245:87904`
+          - [chữ] “Cài đặt” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210200;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35770, Label=Nhật ký, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 516) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `I4915:226785;4901:210201`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Nhật ký⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4915-226785-4901-210201-2245-87904.svg `I4915:226785;4901:210201;2245:87904`
-          - [chữ] “Nhật ký” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210201;2245:87908`
-      - [icon] **Nav Items** — 58×662 · @ (12, 290) abs · file assets/nav-items-I4915-226785-4901-210202.svg `I4915:226785;4901:210202`
-    - [icon] **Left: ICS Logo & Toggle** — 54×44 · @ (14, 12) abs · file assets/left-ics-logo-toggle-I4915-226785-4901-210221.svg `I4915:226785;4901:210221`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Nhật ký⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/8694a9d55bee.svg `I4915:226785;4901:210201;2245:87904`
+          - [chữ] “Nhật ký” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4915:226785;4901:210201;2245:87908`
+      - [icon] **Nav Items** — 58×662 · @ (12, 290) abs · file /figma/assets/3f234904fabb.svg `I4915:226785;4901:210202`
+    - [icon] **Left: ICS Logo & Toggle** — 54×44 · @ (14, 12) abs · file /figma/assets/cae1412c87a2.svg `I4915:226785;4901:210221`
     - [hình] **Rectangle 5646** — 300×2 · @ (0, 64) abs · bg #ffffff `I4915:226785;4901:210224`
     - [hình] **Divider** — 2×794 · @ (82, 66) abs · bg #ffffff `I4915:226785;4901:210225`
-    - [icon] **LOGO CENTER** ⟨LOGO CENTER: Property 1=ICS, Property 2=no⟩ — 54×54 · @ (14, 740) abs · file assets/logo-center-I4915-226785-4901-210226.svg covers (-4, 0) 62×62 `I4915:226785;4901:210226`
+    - [icon] **LOGO CENTER** ⟨LOGO CENTER: Property 1=ICS, Property 2=no⟩ — 54×54 · @ (14, 740) abs · file /figma/assets/7c075ffddf0e.svg covers (-4, 0) 62×62 `I4915:226785;4901:210226`
 
 ## 5. Component đang dùng
 
@@ -398,57 +398,57 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 
 | File | Loại | Kích thước | Dùng ở |
 | --- | --- | --- | --- |
-| `assets/global-progress-bar-3502-77193.svg` | svg |  | 3502:77193 |
-| `assets/action-icon-3502-77196.svg` | svg |  | 3502:77196 |
-| `assets/frame-427325998-I3502-77223-1350-13203.svg` | svg |  | I3502:77223;1350:13203 |
-| `assets/action-icon-3502-77220.svg` | svg |  | 3502:77220 |
-| `assets/checkbox-2711-51746.svg` | svg |  | 2711:51746 |
-| `assets/action-icon-2711-51758.svg` | svg |  | 2711:51758 |
-| `assets/liner-icon-I3857-71648-2808-48144.svg` | svg |  | I3857:71648;2808:48144 |
-| `assets/bar-3772-85645.svg` | svg |  | 3772:85645 |
-| `assets/action-icon-2711-51800.svg` | svg |  | 2711:51800 |
-| `assets/liner-icon-I3857-71655-2808-48144.svg` | svg |  | I3857:71655;2808:48144 |
-| `assets/checkbox-2711-51808.svg` | svg |  | 2711:51808 |
-| `assets/action-icon-2711-51820.svg` | svg |  | 2711:51820 |
-| `assets/liner-icon-I3857-71662-2808-48144.svg` | svg |  | I3857:71662;2808:48144 |
-| `assets/chevron-I2711-51824-2148-21002.svg` | svg |  | I2711:51824;2148:21002 |
-| `assets/liner-icon-I3857-71668-2808-48144.svg` | svg |  | I3857:71668;2808:48144 |
-| `assets/global-progress-bar-3502-77237.svg` | svg |  | 3502:77237 |
-| `assets/action-icon-3502-77240.svg` | svg |  | 3502:77240 |
-| `assets/frame-427325998-I3502-77244-1350-13203.svg` | svg |  | I3502:77244;1350:13203 |
-| `assets/action-icon-3502-77247.svg` | svg |  | 3502:77247 |
-| `assets/global-progress-bar-3502-77265.svg` | svg |  | 3502:77265 |
-| `assets/action-icon-3502-77268.svg` | svg |  | 3502:77268 |
-| `assets/frame-427325998-I3502-77272-1350-13203.svg` | svg |  | I3502:77272;1350:13203 |
-| `assets/action-icon-3502-77275.svg` | svg |  | 3502:77275 |
-| `assets/global-progress-bar-3502-77352.svg` | svg |  | 3502:77352 |
-| `assets/action-icon-3502-77355.svg` | svg |  | 3502:77355 |
-| `assets/frame-427325998-I3502-77359-1350-13203.svg` | svg |  | I3502:77359;1350:13203 |
-| `assets/action-icon-3502-77362.svg` | svg |  | 3502:77362 |
-| `assets/group-240178-4050-116347.svg` | svg |  | 4050:116347 |
-| `assets/img-372d69401a76.png` | image |  | I3497:47434;2008:31748 |
-| `assets/overlay-I3497-47434-1391-17270.svg` | svg |  | I3497:47434;1391:17270 |
-| `assets/subtract-I4915-226785-4901-210136.svg` | svg |  | I4915:226785;4901:210136 |
-| `assets/intersect-I4915-226785-4901-210143.svg` | svg |  | I4915:226785;4901:210143 |
-| `assets/vector-I4915-226785-4901-210156.svg` | svg |  | I4915:226785;4901:210156 |
-| `assets/vector-I4915-226785-4901-210157.svg` | svg |  | I4915:226785;4901:210157 |
-| `assets/union-I4915-226785-4901-210158.svg` | svg |  | I4915:226785;4901:210158 |
-| `assets/group-240002-I4915-226785-4901-210161.svg` | svg |  | I4915:226785;4901:210161 |
-| `assets/button-I4915-226785-4901-210186.svg` | svg |  | I4915:226785;4901:210186 |
-| `assets/icon-I4915-226785-4901-210191-2245-87904.svg` | svg |  | I4915:226785;4901:210191;2245:87904 |
-| `assets/icon-I4915-226785-4901-210192-2245-87904.svg` | svg |  | I4915:226785;4901:210192;2245:87904 |
-| `assets/icon-I4915-226785-4901-210193-2245-87904.svg` | svg |  | I4915:226785;4901:210193;2245:87904 |
-| `assets/icon-menu-I4915-226785-4901-210194-2245-87904.svg` | svg |  | I4915:226785;4901:210194;2245:87904 |
-| `assets/icon-menu-I4915-226785-4901-210195-2245-87904.svg` | svg |  | I4915:226785;4901:210195;2245:87904 |
-| `assets/icon-I4915-226785-4901-210196-2245-87910.svg` | svg |  | I4915:226785;4901:210196;2245:87910 |
-| `assets/icon-menu-I4915-226785-4901-210197-2245-87904.svg` | svg |  | I4915:226785;4901:210197;2245:87904 |
-| `assets/icon-menu-I4915-226785-4901-210198-2245-87904.svg` | svg |  | I4915:226785;4901:210198;2245:87904 |
-| `assets/icon-menu-I4915-226785-4901-210199-2245-87904.svg` | svg |  | I4915:226785;4901:210199;2245:87904 |
-| `assets/icon-I4915-226785-4901-210200-2245-87904.svg` | svg |  | I4915:226785;4901:210200;2245:87904 |
-| `assets/icon-menu-I4915-226785-4901-210201-2245-87904.svg` | svg |  | I4915:226785;4901:210201;2245:87904 |
-| `assets/nav-items-I4915-226785-4901-210202.svg` | svg |  | I4915:226785;4901:210202 |
-| `assets/left-ics-logo-toggle-I4915-226785-4901-210221.svg` | svg |  | I4915:226785;4901:210221 |
-| `assets/logo-center-I4915-226785-4901-210226.svg` | svg |  | I4915:226785;4901:210226 |
+| `/figma/assets/bad5a3b131dd.svg` | svg | 970 × 10 | 3502:77193 |
+| `/figma/assets/c9e4b8ec38f5.svg` | svg | 18 × 18 | 3502:77196 |
+| `/figma/assets/4d1dee110ef5.svg` | svg | 936 × 10 | I3502:77223;1350:13203 |
+| `/figma/assets/57b96098aad2.svg` | svg | 18 × 18 | 3502:77220 |
+| `/figma/assets/2b6403bbddf3.svg` | svg | 26 × 26 | 2711:51746 |
+| `/figma/assets/4cdc2073b1fb.svg` | svg | 18 × 18 | 2711:51758 |
+| `/figma/assets/2a4afd710173.svg` | svg | 16 × 16 | I3857:71648;2808:48144 |
+| `/figma/assets/3de4fb1af619.svg` | svg | 821 × 10 | 3772:85645 |
+| `/figma/assets/4cdc2073b1fb.svg` | svg | 18 × 18 | 2711:51800 |
+| `/figma/assets/2a4afd710173.svg` | svg | 16 × 16 | I3857:71655;2808:48144 |
+| `/figma/assets/2b6403bbddf3.svg` | svg | 26 × 26 | 2711:51808 |
+| `/figma/assets/4cdc2073b1fb.svg` | svg | 18 × 18 | 2711:51820 |
+| `/figma/assets/19b0272e2961.svg` | svg | 16 × 16 | I3857:71662;2808:48144 |
+| `/figma/assets/aabab76135b8.svg` | svg | 16 × 16 | I2711:51824;2148:21002 |
+| `/figma/assets/91fcf20c3dc1.svg` | svg | 16 × 16 | I3857:71668;2808:48144 |
+| `/figma/assets/bad5a3b131dd.svg` | svg | 970 × 10 | 3502:77237 |
+| `/figma/assets/c9883be34963.svg` | svg | 18 × 18 | 3502:77240 |
+| `/figma/assets/4d1dee110ef5.svg` | svg | 936 × 10 | I3502:77244;1350:13203 |
+| `/figma/assets/034148d86d11.svg` | svg | 18 × 18 | 3502:77247 |
+| `/figma/assets/bad5a3b131dd.svg` | svg | 970 × 10 | 3502:77265 |
+| `/figma/assets/034148d86d11.svg` | svg | 18 × 18 | 3502:77268 |
+| `/figma/assets/4d1dee110ef5.svg` | svg | 936 × 10 | I3502:77272;1350:13203 |
+| `/figma/assets/034148d86d11.svg` | svg | 18 × 18 | 3502:77275 |
+| `/figma/assets/bad5a3b131dd.svg` | svg | 970 × 10 | 3502:77352 |
+| `/figma/assets/034148d86d11.svg` | svg | 18 × 18 | 3502:77355 |
+| `/figma/assets/4d1dee110ef5.svg` | svg | 936 × 10 | I3502:77359;1350:13203 |
+| `/figma/assets/034148d86d11.svg` | svg | 18 × 18 | 3502:77362 |
+| `/figma/assets/1fae0d4949f0.svg` | svg | 1140 × 64 | 4050:116347 |
+| `/figma/assets/372d69401a76.jpg` | image | 132 × 72 | I3497:47434;2008:31748 |
+| `/figma/assets/93cec656b378.svg` | svg | 26 × 26 | I3497:47434;1391:17270 |
+| `/figma/assets/e8fe9260c1e4.svg` | svg | 20.94 × 150.43 | I4915:226785;4901:210136 |
+| `/figma/assets/121f3c2da1e2.svg` | svg | 17.81 × 130.99 | I4915:226785;4901:210143 |
+| `/figma/assets/4fe6db22d1da.svg` | svg | 92.05 × 143.25 | I4915:226785;4901:210156 |
+| `/figma/assets/e8d22fedfa87.svg` | svg | 300 × 473.75 | I4915:226785;4901:210157 |
+| `/figma/assets/306d1af7732a.svg` | svg | 201.13 × 197.14 | I4915:226785;4901:210158 |
+| `/figma/assets/a98e399f0af9.svg` | svg | 263.25 × 262.98 | I4915:226785;4901:210161 |
+| `/figma/assets/3e46b691b596.svg` | svg | 28 × 28 | I4915:226785;4901:210186 |
+| `/figma/assets/26bc8994d31a.svg` | svg | 24 × 24 | I4915:226785;4901:210191;2245:87904 |
+| `/figma/assets/49911873b2dd.svg` | svg | 24 × 24 | I4915:226785;4901:210192;2245:87904 |
+| `/figma/assets/7fdbd7cf77fb.svg` | svg | 24 × 24 | I4915:226785;4901:210193;2245:87904 |
+| `/figma/assets/262bf4649141.svg` | svg | 24 × 24 | I4915:226785;4901:210194;2245:87904 |
+| `/figma/assets/bf7d876d3e8d.svg` | svg | 24 × 24 | I4915:226785;4901:210195;2245:87904 |
+| `/figma/assets/395b5316a474.svg` | svg | 24 × 24 | I4915:226785;4901:210196;2245:87910 |
+| `/figma/assets/f9549d7ca804.svg` | svg | 24 × 24 | I4915:226785;4901:210197;2245:87904 |
+| `/figma/assets/566696280750.svg` | svg | 24 × 24 | I4915:226785;4901:210198;2245:87904 |
+| `/figma/assets/4a84283dbbaf.svg` | svg | 24 × 24 | I4915:226785;4901:210199;2245:87904 |
+| `/figma/assets/9e63c5231f0b.svg` | svg | 24 × 24 | I4915:226785;4901:210200;2245:87904 |
+| `/figma/assets/8694a9d55bee.svg` | svg | 24 × 24 | I4915:226785;4901:210201;2245:87904 |
+| `/figma/assets/3f234904fabb.svg` | svg | 58 × 662 | I4915:226785;4901:210202 |
+| `/figma/assets/cae1412c87a2.svg` | svg | 54 × 44 | I4915:226785;4901:210221 |
+| `/figma/assets/7c075ffddf0e.svg` | svg | 62 × 62 | I4915:226785;4901:210226 |
 
 ## 8. Tương tác, liên kết và ghi chú
 

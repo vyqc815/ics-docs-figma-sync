@@ -1,6 +1,44 @@
 {
   "route": "/chi-tiet-lop/tieu-chuan-lop/trong",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-lop-060100/index.tsx",
   "docFile": "docs/pages/chi-tiet-lop/tieu-chuan-lop/trong.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4333:13209",
+      "component": "Body7",
+      "file": "components/figma/shared/Body7.tsx"
+    },
+    {
+      "nodeId": "4333:13210",
+      "component": "Maincontent",
+      "file": "components/figma/shared/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4333:13224",
+      "component": "Header37",
+      "file": "components/figma/shared/Header37.tsx"
+    },
+    {
+      "nodeId": "4915:260963",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-060100/SidebarMenuTeacher.tsx"
+    }
+  ],
+  "idAlias": {
+    "4333:13209": "4333:7911",
+    "4333:13210": "4333:7912",
+    "4333:13211": "4333:7913",
+    "4333:13212": "4333:7914",
+    "4333:13213": "4333:7915",
+    "4333:13214": "4333:7922",
+    "4333:13215": "4333:7923",
+    "4333:13216": "4333:7924",
+    "4333:13217": "4333:7926",
+    "4333:13218": "4333:7927",
+    "4333:13219": "4333:7928",
+    "4333:13220": "4333:7929",
+    "4333:13221": "4333:9541",
+    "4333:13222": "4333:9542",
+    "4333:13223": "4333:9543"
+  }
 }

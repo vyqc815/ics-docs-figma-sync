@@ -1,6 +1,22 @@
 {
   "route": "/lich-hen/hoc-vien",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lhn-010200/index.tsx",
   "docFile": "docs/pages/lich-hen/hoc-vien.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2367:24570",
+      "component": "Dn12",
+      "file": "components/figma/shared/Dn12.tsx"
+    },
+    {
+      "nodeId": "2370:26054",
+      "component": "Bg",
+      "file": "components/figma/adm-lhn-010200/Bg.tsx"
+    },
+    {
+      "nodeId": "4915:222605",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lhn-010200/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

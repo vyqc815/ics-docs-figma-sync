@@ -1,6 +1,17 @@
 {
   "route": "/khao-sat/danh-sach-khao-sat",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-ks-010000/index.tsx",
   "docFile": "docs/pages/khao-sat/danh-sach-khao-sat.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4686:43633",
+      "component": "Body",
+      "file": "components/figma/gv-ks-010000/Body.tsx"
+    },
+    {
+      "nodeId": "4686:43762",
+      "component": "MainKhaoSat",
+      "file": "components/figma/gv-ks-010000/MainKhaoSat.tsx"
+    }
+  ]
 }

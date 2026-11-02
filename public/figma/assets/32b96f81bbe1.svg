@@ -1,0 +1,16 @@
+<svg width="597" height="10" viewBox="0 0 597 10" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M0 5C0 2.79086 1.79086 1 4 1H593C595.209 1 597 2.79086 597 5V5C597 7.20914 595.209 9 593 9H3.99999C1.79086 9 0 7.20914 0 5V5Z" fill="#202023"/>
+<path d="M0 5C0 2.79086 1.79086 1 4 1H443.932C446.141 1 447.932 2.79086 447.932 5V5C447.932 7.20914 446.141 9 443.932 9H3.99999C1.79085 9 0 7.20914 0 5V5Z" fill="url(#paint0_linear)"/>
+<use xlink:href="#stroke0" fill="white"/>
+<mask id="stroke1" fill="white">
+<use xlink:href="#stroke0"/>
+</mask>
+<path d="M451.568 5C451.568 7.76142 449.94 10 447.932 10C445.924 10 444.296 7.76142 444.296 5C444.296 2.23858 445.924 0 447.932 0C449.94 0 451.568 2.23858 451.568 5Z" stroke-width="3" stroke="#16A34A" mask="url(#stroke1)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="451.967" y1="5.33333" x2="451.619" y2="17.8657" gradientUnits="userSpaceOnUse">
+<stop stop-color="#16A34A"/>
+<stop offset="1" stop-color="#4ADE80"/>
+</linearGradient>
+<path id="stroke0" d="M451.568 5C451.568 7.76142 449.94 10 447.932 10C445.924 10 444.296 7.76142 444.296 5C444.296 2.23858 445.924 0 447.932 0C449.94 0 451.568 2.23858 451.568 5Z"/>
+</defs>
+</svg>

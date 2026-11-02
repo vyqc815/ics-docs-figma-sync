@@ -1,0 +1,16 @@
+<svg width="577" height="10" viewBox="0 0 577 10" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M0 5C0 2.79086 1.79086 1 4 1H573C575.209 1 577 2.79086 577 5V5C577 7.20914 575.209 9 573 9H4.00002C1.79088 9 0 7.20914 0 5V5Z" fill="#F3F4F6"/>
+<path d="M0 5C0 2.79086 1.79086 1 4 1H428.926C431.135 1 432.926 2.79086 432.926 5V5C432.926 7.20914 431.135 9 428.926 9H3.99999C1.79085 9 0 7.20914 0 5V5Z" fill="url(#paint0_linear)"/>
+<use xlink:href="#stroke0" fill="white"/>
+<mask id="stroke1" fill="white">
+<use xlink:href="#stroke0"/>
+</mask>
+<path d="M436.44 5C436.44 7.76142 434.867 10 432.926 10C430.985 10 429.412 7.76142 429.412 5C429.412 2.23858 430.985 0 432.926 0C434.867 0 436.44 2.23858 436.44 5Z" stroke-width="3" stroke="#E65100" mask="url(#stroke1)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="436.826" y1="5.33333" x2="436.466" y2="17.865" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E65100"/>
+<stop offset="1" stop-color="#F98D52"/>
+</linearGradient>
+<path id="stroke0" d="M436.44 5C436.44 7.76142 434.867 10 432.926 10C430.985 10 429.412 7.76142 429.412 5C429.412 2.23858 430.985 0 432.926 0C434.867 0 436.44 2.23858 436.44 5Z"/>
+</defs>
+</svg>

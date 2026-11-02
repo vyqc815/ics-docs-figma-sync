@@ -1,0 +1,508 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 1955,
+    "percent": 0.168,
+    "shapePercent": 0.074,
+    "textPercent": 1.666,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:130524;2245:87864",
+      "name": "Label",
+      "pixels": 438,
+      "percent": 17.5
+    },
+    {
+      "id": "I4056:130525;2245:87820",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 3.3
+    },
+    {
+      "id": "I4056:130526;2245:87820",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.7
+    },
+    {
+      "id": "I4056:130518;2245:87820",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.4
+    },
+    {
+      "id": "I4056:130519;2245:87768",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.4
+    },
+    {
+      "id": "I4056:130527;2245:87820",
+      "name": "Label",
+      "pixels": 61,
+      "percent": 2.4
+    },
+    {
+      "id": "I4056:130529;2245:87768",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.2
+    },
+    {
+      "id": "I4056:130528;2245:87768",
+      "name": "Label",
+      "pixels": 54,
+      "percent": 1.9
+    },
+    {
+      "id": "I4056:130523;2245:87858",
+      "name": "Label",
+      "pixels": 46,
+      "percent": 1.8
+    },
+    {
+      "id": "I4056:130520;2245:87820",
+      "name": "Label",
+      "pixels": 33,
+      "percent": 1.3
+    },
+    {
+      "id": "I4101:138195;2245:87768",
+      "name": "Label",
+      "pixels": 36,
+      "percent": 1.3
+    },
+    {
+      "id": "I4056:130521;2245:87848",
+      "name": "Label",
+      "pixels": 27,
+      "percent": 1.1
+    },
+    {
+      "id": "I4056:130522;2245:87858",
+      "name": "Label",
+      "pixels": 22,
+      "percent": 0.9
+    },
+    {
+      "id": "I4056:130447;1048:1230",
+      "name": "Button",
+      "pixels": 8,
+      "percent": 0.5
+    },
+    {
+      "id": "I4056:130583;1391:17268",
+      "name": "admin@gmail.com",
+      "pixels": 7,
+      "percent": 0.3
+    }
+  ],
+  "regions": [
+    {
+      "x": 272,
+      "y": 104,
+      "width": 48,
+      "height": 40,
+      "pixels": 640,
+      "node": {
+        "id": "4056:130437",
+        "name": "image",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 840,
+      "y": 376,
+      "width": 40,
+      "height": 24,
+      "pixels": 157,
+      "node": {
+        "id": "4056:130442",
+        "name": "Empty State / Gmail",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 792,
+      "y": 376,
+      "width": 16,
+      "height": 16,
+      "pixels": 39,
+      "node": {
+        "id": "4056:130442",
+        "name": "Empty State / Gmail",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4056:130502",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4056:130502",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 768,
+      "y": 368,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "4056:130442",
+        "name": "Empty State / Gmail",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 99,
+    "missing": [],
+    "withinThreshold": 99,
+    "buckets": {
+      "≤0.5px": 99,
+      "≤1px": 99,
+      "≤2px": 99,
+      "≤4px": 99,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:130515",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130500",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130501",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130502",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130514",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130434",
+        "name": "BG",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:130435",
+        "name": "Frame 427323976",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130436",
+        "name": "Frame 427321837",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130437",
+        "name": "image",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130438",
+        "name": "Frame 427320146",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130439",
+        "name": "Jone Aly",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130440",
+        "name": "Admin",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130441",
+        "name": "Frame 427323942",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130442",
+        "name": "Empty State / Gmail",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130443",
+        "name": "Frame 427323938",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130444",
+        "name": "Frame 427323977",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130445",
+        "name": "Xác minh Gmail",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130446",
+        "name": "Nhấn nút xác minh để lấy file trên GG Drive",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130447",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:130447;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130448",
+        "name": "Sidebar",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:130449",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:130517",
+        "name": "Menu Chính",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:130518",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:130518;2245:87821",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.02,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/move-video/xac-minh-gmail-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

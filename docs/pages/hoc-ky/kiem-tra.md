@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-030300 — Học kỳ / Kiểm tra (`497:18242`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/hoc-ky/kiem-tra`  
 > **Khung thiết kế:** 1440 × 910 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T01:51:33.673Z  
+> **Xuất lúc:** 2026-11-02T02:47:21.362Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-030300/page-spec.json`
 
 ## 1. Tổng quan
@@ -523,18 +523,12 @@ Không có.
 
 Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần nhất):
 
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255361;4901:220701;2245:87904`): Asset a57 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255361;5491:349847;2245:87825`): Asset a58 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Chevron** (`I4915:255361;5491:349847;2245:87831`): Asset a59 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255361;5491:349856;2245:87904`): Asset a60 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255361;5491:349861;2245:87904`): Asset a61 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255361;5491:349866;2245:87904`): Asset a62 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_STALE` — **Nav Items** (`I4915:255361;4901:220702`): Asset a63 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
-- `ASSET_EXPORT_STALE` — **Left: ICS Logo & Toggle** (`I4915:255361;4901:220726`): Asset a64 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
-- `ASSET_EXPORT_STALE` — **LOGO CENTER** (`I4915:255361;4901:220731`): Asset a65 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
-- `REVERSE_Z_INDEX` — **Frame 427321958** (`2860:37006`): "First on top" stacking: give earlier children a higher z-index.
-- `REVERSE_Z_INDEX` — **Frame 427321957** (`2860:37010`): "First on top" stacking: give earlier children a higher z-index.
-- `REVERSE_Z_INDEX` — **Frame 1171274942** (`2860:37014`): "First on top" stacking: give earlier children a higher z-index.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255361;4901:220701;2245:87904`): Asset a57 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255361;5491:349847;2245:87825`): Asset a58 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Chevron** (`I4915:255361;5491:349847;2245:87831`): Asset a59 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255361;5491:349856;2245:87904`): Asset a60 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255361;5491:349861;2245:87904`): Asset a61 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255361;5491:349866;2245:87904`): Asset a62 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 
 ## 10. Hướng dẫn dựng lại (cho người và AI)
 

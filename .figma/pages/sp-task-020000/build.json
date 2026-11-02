@@ -1,6 +1,17 @@
 {
   "route": "/quy-trinh/task-tuan-nay",
-  "pageFile": "",
+  "pageFile": "components/figma/sp-task-020000/index.tsx",
   "docFile": "docs/pages/quy-trinh/task-tuan-nay.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3857:73906",
+      "component": "Body",
+      "file": "components/figma/sp-task-020000/Body.tsx"
+    },
+    {
+      "nodeId": "3857:74040",
+      "component": "Section2",
+      "file": "components/figma/sp-task-020000/Section2.tsx"
+    }
+  ]
 }

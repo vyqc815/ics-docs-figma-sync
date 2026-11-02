@@ -1,6 +1,30 @@
 {
   "route": "/chi-tiet-lop/bai-hoc/noi-dung",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-lop-030300/index.tsx",
   "docFile": "docs/pages/chi-tiet-lop/bai-hoc/noi-dung.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4324:17214",
+      "component": "Body3",
+      "file": "components/figma/shared/Body3.tsx"
+    },
+    {
+      "nodeId": "4324:17215",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-030300/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4324:19954",
+      "component": "Header32",
+      "file": "components/figma/shared/Header32.tsx"
+    },
+    {
+      "nodeId": "4915:259721",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-030300/SidebarMenuTeacher.tsx"
+    }
+  ],
+  "idAlias": {
+    "4324:17214": "769:30964"
+  }
 }

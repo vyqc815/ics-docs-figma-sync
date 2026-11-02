@@ -1,6 +1,17 @@
 {
   "route": "/task-truc",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-task-030000/index.tsx",
   "docFile": "docs/pages/task-truc.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4343:80873",
+      "component": "Body",
+      "file": "components/figma/adm-task-030000/Body.tsx"
+    },
+    {
+      "nodeId": "4343:81009",
+      "component": "Section2",
+      "file": "components/figma/adm-task-030000/Section2.tsx"
+    }
+  ]
 }

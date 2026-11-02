@@ -1,0 +1,799 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1287,
+    "mismatched": 5228,
+    "percent": 0.282,
+    "shapePercent": 0.051,
+    "textPercent": 1.173,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4554:24602;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "I4554:24603;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "I4554:24614;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "I4554:24615;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "I4558:30370;2053:24633",
+      "name": "ID",
+      "pixels": 346,
+      "percent": 16.5
+    },
+    {
+      "id": "4558:30372",
+      "name": "ÔN TẬP: Giữa Kỳ 1",
+      "pixels": 529,
+      "percent": 13.1
+    },
+    {
+      "id": "4554:25823",
+      "name": "Từ điển Hán Việt trực tuyến",
+      "pixels": 528,
+      "percent": 12.5
+    },
+    {
+      "id": "I4915:224525;4901:206599;2245:87908",
+      "name": "Label",
+      "pixels": 201,
+      "percent": 8.4
+    },
+    {
+      "id": "I4915:224525;4901:206597;2245:87908",
+      "name": "Label",
+      "pixels": 141,
+      "percent": 5.9
+    },
+    {
+      "id": "I4554:25702;1062:1351",
+      "name": "Huong-dan-hoc-vien.mp4",
+      "pixels": 162,
+      "percent": 5.1
+    },
+    {
+      "id": "I4554:25703;1062:1351",
+      "name": "Huong-dan-hoc-vien.mp4",
+      "pixels": 162,
+      "percent": 5.1
+    },
+    {
+      "id": "I4554:25704;1062:1351",
+      "name": "Huong-dan-hoc-vien.mp4",
+      "pixels": 162,
+      "percent": 5.1
+    },
+    {
+      "id": "4554:25758",
+      "name": "nǐ",
+      "pixels": 11,
+      "percent": 3.6
+    },
+    {
+      "id": "4554:25755",
+      "name": "07:40",
+      "pixels": 20,
+      "percent": 3.3
+    },
+    {
+      "id": "4554:25730",
+      "name": "18:25",
+      "pixels": 19,
+      "percent": 3.1
+    }
+  ],
+  "regions": [
+    {
+      "x": 752,
+      "y": 840,
+      "width": 24,
+      "height": 16,
+      "pixels": 106,
+      "node": {
+        "id": "4554:25797",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 920,
+      "y": 840,
+      "width": 24,
+      "height": 16,
+      "pixels": 106,
+      "node": {
+        "id": "4554:25797",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 664,
+      "y": 840,
+      "width": 32,
+      "height": 16,
+      "pixels": 102,
+      "node": {
+        "id": "4554:25797",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 920,
+      "y": 864,
+      "width": 24,
+      "height": 16,
+      "pixels": 101,
+      "node": {
+        "id": "4554:25782",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 664,
+      "y": 864,
+      "width": 24,
+      "height": 16,
+      "pixels": 97,
+      "node": {
+        "id": "4554:25797",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 752,
+      "y": 864,
+      "width": 24,
+      "height": 16,
+      "pixels": 92,
+      "node": {
+        "id": "4554:25792",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 840,
+      "y": 840,
+      "width": 24,
+      "height": 16,
+      "pixels": 87,
+      "node": {
+        "id": "4554:25797",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 840,
+      "y": 864,
+      "width": 24,
+      "height": 16,
+      "pixels": 84,
+      "node": {
+        "id": "4554:25787",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 928,
+      "y": 896,
+      "width": 16,
+      "height": 8,
+      "pixels": 40,
+      "node": {
+        "id": "4554:25779",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 760,
+      "y": 896,
+      "width": 16,
+      "height": 8,
+      "pixels": 36,
+      "node": {
+        "id": "4554:25789",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 672,
+      "y": 896,
+      "width": 16,
+      "height": 8,
+      "pixels": 32,
+      "node": {
+        "id": "4554:25794",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 840,
+      "y": 896,
+      "width": 16,
+      "height": 8,
+      "pixels": 30,
+      "node": {
+        "id": "4554:25784",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 480,
+      "y": 96,
+      "width": 8,
+      "height": 16,
+      "pixels": 11,
+      "node": {
+        "id": "4558:30372",
+        "name": "ÔN TẬP: Giữa Kỳ 1",
+        "role": "text"
+      }
+    },
+    {
+      "x": 568,
+      "y": 1128,
+      "width": 8,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "4554:25816",
+        "name": "Link 1: Từ điển Hán Việt",
+        "role": "container"
+      }
+    },
+    {
+      "x": 376,
+      "y": 320,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4554:25702;1062:1346",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 696,
+      "y": 320,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4554:25703;1062:1347",
+        "name": "Background",
+        "role": "container"
+      }
+    },
+    {
+      "x": 376,
+      "y": 416,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4554:25704;1062:1346",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4915:224525;4901:206632",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 379,
+    "missing": [],
+    "withinThreshold": 367,
+    "buckets": {
+      "≤0.5px": 358,
+      "≤1px": 358,
+      "≤2px": 358,
+      "≤4px": 367,
+      ">4px": 12
+    },
+    "worst": [
+      {
+        "id": "4554:25779",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25784",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25789",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25794",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25777",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.62,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25782",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.63,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25787",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.62,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25792",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.63,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25778",
+        "name": "mā",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25783",
+        "name": "má",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25788",
+        "name": "mǎ",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25793",
+        "name": "mà",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4558:30373",
+        "name": "Frame 1171274946",
+        "role": "container",
+        "delta": 2.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4558:30372",
+        "name": "ÔN TẬP: Giữa Kỳ 1",
+        "role": "text",
+        "delta": 2.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4558:30370",
+        "name": "Atom/ID Badge",
+        "role": "instance",
+        "delta": 2.38,
+        "dx": 2.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4558:30370;2053:24633",
+        "name": "ID",
+        "role": "text",
+        "delta": 2.38,
+        "dx": 2.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25817",
+        "name": "Container",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25821",
+        "name": "Container",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25822",
+        "name": "Heading 4",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25823",
+        "name": "Từ điển Hán Việt trực tuyến",
+        "role": "text",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25824",
+        "name": "Link",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25835",
+        "name": "Video luyện nghe tiếng Trung (YouTube)",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4554:25700;2808:43055",
+        "name": "Tài liệu học tập (3)",
+        "role": "text",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4554:25702;1062:1357",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4554:25702;1062:1358",
+        "name": "Cập nhật",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 82,
+    "over": [
+      {
+        "id": "4554:25779",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25784",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25789",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25794",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25777",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.62,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25782",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.63,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25787",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.62,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25792",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.63,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25778",
+        "name": "mā",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25783",
+        "name": "má",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25788",
+        "name": "mǎ",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25793",
+        "name": "mà",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "12 elements are off by more than their limit (1px, 2.5px for text-driven; worst 82px)."
+  ],
+  "url": "http://localhost:3108/lop-hoc/bai-hoc/tai-nguyen",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

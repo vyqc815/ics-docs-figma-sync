@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-030200 — Học kỳ / Bài học (`497:20630`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/hoc-ky/bai-hoc`  
 > **Khung thiết kế:** 1440 × 1090 px  
-> **Xuất lúc:** 2026-11-02T01:56:28.011Z  
+> **Xuất lúc:** 2026-11-02T02:47:28.422Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-030200/page-spec.json`
 
 ## 1. Tổng quan
@@ -620,19 +620,8 @@ Không có.
 
 Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần nhất):
 
-- `ASSET_EXPORT_STALE` — **Chevron** (`I5614:58994;2015:36012`): Asset a8 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
-- `ASSET_EXPORT_STALE` — **Leading** (`I2860:36843;2808:44037`): Asset a11 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
-- `ASSET_EXPORT_STALE` — **Chevron** (`I2860:36843;2808:44784`): Asset a12 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
-- `ASSET_EXPORT_STALE` — **Leading** (`I2860:36850;2808:44048`): Asset a14 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
-- `ASSET_EXPORT_STALE` — **Chevron** (`I2860:36850;2808:44787`): Asset a15 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
-- `ASSET_EXPORT_STALE` — **Leading** (`I2860:36856;2808:44037`): Asset a17 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
-- `ASSET_EXPORT_STALE` — **Chevron** (`I2860:36856;2808:44784`): Asset a18 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
-- `ASSET_EXPORT_STALE` — **Action Button** (`I2860:36867;5056:365854`): Asset a20 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255090;5491:349861;2245:87904`): Asset a52 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255090;5491:349866;2245:87904`): Asset a53 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
-- `REVERSE_Z_INDEX` — **Frame 427321958** (`2860:36833`): "First on top" stacking: give earlier children a higher z-index.
-- `REVERSE_Z_INDEX` — **Frame 427321957** (`2860:36837`): "First on top" stacking: give earlier children a higher z-index.
-- `REVERSE_Z_INDEX` — **Frame 1171274942** (`2860:36841`): "First on top" stacking: give earlier children a higher z-index.
 
 ## 10. Hướng dẫn dựng lại (cho người và AI)
 

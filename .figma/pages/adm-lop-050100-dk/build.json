@@ -1,6 +1,34 @@
 {
   "route": "/lop-hoc/nhat-ky/nhat-ky-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-050100-dk/index.tsx",
   "docFile": "docs/pages/lop-hoc/nhat-ky/nhat-ky-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:118407",
+      "component": "Section1",
+      "file": "components/figma/adm-lop-050100-dk/Section1.tsx"
+    },
+    {
+      "nodeId": "4056:118533",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-050100-dk/SidebarRail.tsx"
+    },
+    {
+      "nodeId": "4056:118626",
+      "component": "Header12",
+      "file": "components/figma/shared/Header12.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:118626": "4056:112373",
+    "4056:118627": "4056:112374",
+    "4056:118674": "4056:112421",
+    "I4056:118674;2008:30986": "I4056:112421;2008:30986",
+    "I4056:118674;2008:31747": "I4056:112421;2008:31747",
+    "I4056:118674;2008:31748": "I4056:112421;2008:31748",
+    "I4056:118674;1391:17264": "I4056:112421;1391:17264",
+    "I4056:118674;1391:17266": "I4056:112421;1391:17266",
+    "I4056:118674;1391:17268": "I4056:112421;1391:17268",
+    "I4056:118674;1391:17270": "I4056:112421;1391:17270"
+  }
 }

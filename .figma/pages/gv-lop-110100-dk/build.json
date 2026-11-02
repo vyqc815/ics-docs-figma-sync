@@ -1,6 +1,30 @@
 {
   "route": "/chi-tiet-lop/thong-tin/thong-tin-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-lop-110100-dk/index.tsx",
   "docFile": "docs/pages/chi-tiet-lop/thong-tin/thong-tin-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4333:18150",
+      "component": "Body7",
+      "file": "components/figma/shared/Body7.tsx"
+    },
+    {
+      "nodeId": "4333:18151",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-110100-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4333:18165",
+      "component": "Header38",
+      "file": "components/figma/shared/Header38.tsx"
+    },
+    {
+      "nodeId": "4333:18216",
+      "component": "SidebarRail",
+      "file": "components/figma/gv-lop-110100-dk/SidebarRail.tsx"
+    }
+  ],
+  "idAlias": {
+    "4333:18150": "4333:7911"
+  }
 }

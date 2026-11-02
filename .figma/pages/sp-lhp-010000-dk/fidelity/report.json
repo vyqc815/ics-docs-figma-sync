@@ -1,0 +1,712 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 955,
+    "mismatched": 8335,
+    "percent": 0.606,
+    "shapePercent": 0.024,
+    "textPercent": 2.609,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:147924;3857:67915",
+      "name": "Label",
+      "pixels": 394,
+      "percent": 16.1
+    },
+    {
+      "id": "I4056:148055;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 51,
+      "percent": 6.1
+    },
+    {
+      "id": "I4056:147966;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I4056:147987;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I4056:148021;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I4056:148038;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I4056:148072;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I4056:148089;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I4056:148106;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I4056:148123;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 47,
+      "percent": 5.6
+    },
+    {
+      "id": "I4056:148004;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 45,
+      "percent": 5.4
+    },
+    {
+      "id": "I4056:148053;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 114,
+      "percent": 5.4
+    },
+    {
+      "id": "I4056:148070;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 114,
+      "percent": 5.4
+    },
+    {
+      "id": "I4056:148087;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 114,
+      "percent": 5.4
+    },
+    {
+      "id": "I4056:148104;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 114,
+      "percent": 5.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 1216,
+      "y": 432,
+      "width": 48,
+      "height": 24,
+      "pixels": 24,
+      "node": {
+        "id": "I4056:148064;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 488,
+      "width": 48,
+      "height": 16,
+      "pixels": 24,
+      "node": {
+        "id": "I4056:148081;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 592,
+      "width": 48,
+      "height": 16,
+      "pixels": 24,
+      "node": {
+        "id": "I4056:148115;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 640,
+      "width": 48,
+      "height": 24,
+      "pixels": 24,
+      "node": {
+        "id": "I4056:148132;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 536,
+      "width": 48,
+      "height": 24,
+      "pixels": 23,
+      "node": {
+        "id": "I4056:148098;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1208,
+      "y": 176,
+      "width": 40,
+      "height": 16,
+      "pixels": 19,
+      "node": {
+        "id": "I4056:147975;1672:16228",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1248,
+      "y": 200,
+      "width": 24,
+      "height": 16,
+      "pixels": 16,
+      "node": {
+        "id": "4056:147978",
+        "name": "Mouse click",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 224,
+      "width": 32,
+      "height": 24,
+      "pixels": 12,
+      "node": {
+        "id": "I4056:147995;1672:16222",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 280,
+      "width": 32,
+      "height": 16,
+      "pixels": 12,
+      "node": {
+        "id": "I4056:148012;1672:16222",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 384,
+      "width": 32,
+      "height": 16,
+      "pixels": 12,
+      "node": {
+        "id": "I4056:148046;1672:16222",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 328,
+      "width": 32,
+      "height": 24,
+      "pixels": 11,
+      "node": {
+        "id": "I4056:148029;1672:16222",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1176,
+      "y": 176,
+      "width": 24,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:147972;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 224,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:147993;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 280,
+      "width": 24,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:148010;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 328,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:148027;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 384,
+      "width": 24,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:148044;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 432,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:148061;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 488,
+      "width": 24,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:148078;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 536,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:148095;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 592,
+      "width": 24,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:148112;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 640,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:148129;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4056:147898",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4056:147898",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 405,
+    "missing": [],
+    "withinThreshold": 405,
+    "buckets": {
+      "≤0.5px": 405,
+      "≤1px": 405,
+      "≤2px": 405,
+      "≤4px": 405,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:147933",
+        "name": "Danh sách cuộc họp",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147934",
+        "name": "Atom/Icon Button",
+        "role": "icon",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147911",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147932",
+        "name": "Frame 427321947",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147935",
+        "name": "Bộ lọc",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147936",
+        "name": "Filter · Người tham gia",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147936;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147936;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147896",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147897",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147898",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147910",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147794",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:147795",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:147796",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:147843",
+        "name": "ACCOUNT",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147843;2008:31704",
+        "name": "Frame 1171274934",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147843;2008:31899",
+        "name": "Background+Shadow",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147843;2008:31900",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147843;2008:31901",
+        "name": "PTL",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147843;2008:31708",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147843;2008:31709",
+        "name": "Phụ Trách Lớp Đắc Nhân",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147843;2008:31710",
+        "name": "PTL.dacnhan@gmail.com",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147843;2008:31711",
+        "name": "Overlay",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147844",
+        "name": "Sidebar",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 0.19,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/lich-hop/dang-danh-sach-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

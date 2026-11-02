@@ -1,0 +1,460 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1255,
+    "mismatched": 3517,
+    "percent": 0.195,
+    "shapePercent": 0.001,
+    "textPercent": 0.954,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:146710;1308:6706",
+      "name": "0%",
+      "pixels": 51,
+      "percent": 26
+    },
+    {
+      "id": "I4056:146722;1308:6706",
+      "name": "0%",
+      "pixels": 51,
+      "percent": 26
+    },
+    {
+      "id": "I4056:146725;1308:6706",
+      "name": "0%",
+      "pixels": 51,
+      "percent": 26
+    },
+    {
+      "id": "I4056:146728;1308:6706",
+      "name": "0%",
+      "pixels": 51,
+      "percent": 26
+    },
+    {
+      "id": "I4056:146719;1391:14476",
+      "name": "80%",
+      "pixels": 66,
+      "percent": 23.6
+    },
+    {
+      "id": "I4056:146713;1308:6749",
+      "name": "100%",
+      "pixels": 67,
+      "percent": 19.9
+    },
+    {
+      "id": "I4056:146716;1308:6749",
+      "name": "100%",
+      "pixels": 67,
+      "percent": 19.9
+    },
+    {
+      "id": "I4056:146617;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 134,
+      "percent": 5.5
+    },
+    {
+      "id": "I4056:146652;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 129,
+      "percent": 5.3
+    },
+    {
+      "id": "4056:146650",
+      "name": "Thường xuyên nhắc nhở học viên đi học đầy đủ ở trên lớp",
+      "pixels": 510,
+      "percent": 3.7
+    },
+    {
+      "id": "I4056:146566;2245:87768",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 2.9
+    },
+    {
+      "id": "I4056:146572;3857:67909",
+      "name": "Label",
+      "pixels": 65,
+      "percent": 2.7
+    },
+    {
+      "id": "I4056:146574;3857:67909",
+      "name": "Label",
+      "pixels": 67,
+      "percent": 2.7
+    },
+    {
+      "id": "I4056:146573;3857:67909",
+      "name": "Label",
+      "pixels": 64,
+      "percent": 2.6
+    },
+    {
+      "id": "I4056:146576;2245:87829",
+      "name": "Label",
+      "pixels": 65,
+      "percent": 2.5
+    }
+  ],
+  "regions": [
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4056:146549",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4056:146549",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 307,
+    "missing": [],
+    "withinThreshold": 307,
+    "buckets": {
+      "≤0.5px": 307,
+      "≤1px": 307,
+      "≤2px": 307,
+      "≤4px": 307,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:146562",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:146547",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:146548",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:146549",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:146561",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:146445",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:146446",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:146447",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:146494",
+        "name": "ACCOUNT",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:146494;2008:31704",
+        "name": "Frame 1171274934",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:146494;2008:31899",
+        "name": "Background+Shadow",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:146494;2008:31900",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:146494;2008:31901",
+        "name": "PTL",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:146494;2008:31708",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:146494;2008:31709",
+        "name": "Phụ Trách Lớp Đắc Nhân",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:146494;2008:31710",
+        "name": "PTL.dacnhan@gmail.com",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:146494;2008:31711",
+        "name": "Overlay",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:146495",
+        "name": "Sidebar",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:146496",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:146564",
+        "name": "Nav Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:146565",
+        "name": "Menu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:146566",
+        "name": "Card Menu",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:146566;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:146566;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:146567",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.02,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/quy-trinh/task-hom-nay-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

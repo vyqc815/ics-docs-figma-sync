@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 905,
+    "mismatched": 302,
+    "percent": 0.023,
+    "shapePercent": 0,
+    "textPercent": 0.236,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "2868:59807",
+      "name": "Buổi tối",
+      "pixels": 16,
+      "percent": 1.2
+    },
+    {
+      "id": "2868:59851",
+      "name": "Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này",
+      "pixels": 92,
+      "percent": 1.1
+    },
+    {
+      "id": "2868:59761",
+      "name": "Buổi sáng",
+      "pixels": 16,
+      "percent": 1
+    },
+    {
+      "id": "I4915:234086;4899:195682;2245:87858",
+      "name": "Label",
+      "pixels": 23,
+      "percent": 0.9
+    },
+    {
+      "id": "2868:59784",
+      "name": "Buổi chiều",
+      "pixels": 14,
+      "percent": 0.8
+    },
+    {
+      "id": "I4915:234086;4899:195681;2245:87858",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 0.7
+    },
+    {
+      "id": "I4915:234086;4899:195683;1971:7432",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 0.6
+    },
+    {
+      "id": "I4915:234086;4899:195685;1971:7432",
+      "name": "Label",
+      "pixels": 14,
+      "percent": 0.6
+    },
+    {
+      "id": "2868:59833",
+      "name": "Ghi chú",
+      "pixels": 5,
+      "percent": 0.5
+    },
+    {
+      "id": "I4915:234086;4899:195676;2245:87858",
+      "name": "Label",
+      "pixels": 12,
+      "percent": 0.5
+    },
+    {
+      "id": "1910:17259",
+      "name": "Chi tiết giáo viên",
+      "pixels": 15,
+      "percent": 0.3
+    },
+    {
+      "id": "2868:59757",
+      "name": "Chủ nhật",
+      "pixels": 5,
+      "percent": 0.3
+    },
+    {
+      "id": "I4915:234086;4899:195675;2245:87829",
+      "name": "Label",
+      "pixels": 7,
+      "percent": 0.3
+    },
+    {
+      "id": "I4915:234086;4899:195684;1971:7432",
+      "name": "Label",
+      "pixels": 8,
+      "percent": 0.3
+    },
+    {
+      "id": "2868:59766",
+      "name": "Trước 9h tối",
+      "pixels": 3,
+      "percent": 0.2
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 240,
+    "missing": [],
+    "withinThreshold": 240,
+    "buckets": {
+      "≤0.5px": 240,
+      "≤1px": 240,
+      "≤2px": 240,
+      "≤4px": 240,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2868:59757",
+        "name": "Chủ nhật",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.26,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2868:59807",
+        "name": "Buổi tối",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1910:17263",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1910:17263;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1910:17263;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1910:17264",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1910:17264;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1910:17264;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1910:17265",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1910:17265;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1910:17265;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1910:17266",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1910:17266;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1910:17266;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1910:17266;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1910:17267",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1910:17267;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1910:17267;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2868:59766",
+        "name": "Trước 9h tối",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1910:17259",
+        "name": "Chi tiết giáo viên",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2868:59747",
+        "name": "Thứ 3",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2868:59751",
+        "name": "Thứ 5",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2868:59754",
+        "name": "Header · Thứ 7",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2868:59755",
+        "name": "Thứ 7",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2868:59776",
+        "name": "Card · Trống · Thứ 6",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.5,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-giao-vien/quan-ly-dang-ky-lich",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

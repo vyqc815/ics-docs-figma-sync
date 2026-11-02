@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-030200-DK — Học kỳ / Bài học (`6015:64055`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/hoc-ky/bai-hoc-dk`  
 > **Khung thiết kế:** 1440 × 1090 px  
-> **Xuất lúc:** 2026-11-02T02:04:48.688Z  
+> **Xuất lúc:** 2026-11-02T02:55:51.145Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-030200-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -620,9 +620,6 @@ Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần
 
 - `ASSET_EXPORT_FAILED` — **Icon** (`I6015:64295;5491:349861;2245:87904`): Asset a52 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I6015:64295;5491:349866;2245:87904`): Asset a53 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
-- `REVERSE_Z_INDEX` — **Frame 427321958** (`6015:64156`): "First on top" stacking: give earlier children a higher z-index.
-- `REVERSE_Z_INDEX` — **Frame 427321957** (`6015:64161`): "First on top" stacking: give earlier children a higher z-index.
-- `REVERSE_Z_INDEX` — **Frame 1171274942** (`6015:64165`): "First on top" stacking: give earlier children a higher z-index.
 
 ## 10. Hướng dẫn dựng lại (cho người và AI)
 

@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 1893,
+    "percent": 0.162,
+    "shapePercent": 0,
+    "textPercent": 1.063,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "3977:74405",
+      "name": "Mã người nhận",
+      "pixels": 27,
+      "percent": 4.8
+    },
+    {
+      "id": "I3977:74002;1391:17479",
+      "name": "2",
+      "pixels": 10,
+      "percent": 4.5
+    },
+    {
+      "id": "I3977:74002;1391:17487",
+      "name": "Sau",
+      "pixels": 22,
+      "percent": 4
+    },
+    {
+      "id": "I3977:74002;1391:17477",
+      "name": "1",
+      "pixels": 8,
+      "percent": 3.6
+    },
+    {
+      "id": "3977:74483",
+      "name": "Mã voucher",
+      "pixels": 88,
+      "percent": 3
+    },
+    {
+      "id": "3977:74443",
+      "name": "Mã voucher",
+      "pixels": 87,
+      "percent": 2.9
+    },
+    {
+      "id": "3977:74523",
+      "name": "Mã voucher",
+      "pixels": 87,
+      "percent": 2.9
+    },
+    {
+      "id": "3977:74277",
+      "name": "Trạng thái",
+      "pixels": 67,
+      "percent": 2.8
+    },
+    {
+      "id": "3977:74323",
+      "name": "Mã voucher",
+      "pixels": 86,
+      "percent": 2.8
+    },
+    {
+      "id": "3977:74275",
+      "name": "Ngày hết hạn",
+      "pixels": 62,
+      "percent": 2.6
+    },
+    {
+      "id": "3977:74283",
+      "name": "Mã voucher",
+      "pixels": 84,
+      "percent": 2.6
+    },
+    {
+      "id": "3977:74403",
+      "name": "Mã voucher",
+      "pixels": 78,
+      "percent": 2.5
+    },
+    {
+      "id": "3977:74563",
+      "name": "Mã voucher",
+      "pixels": 78,
+      "percent": 2.4
+    },
+    {
+      "id": "3977:74603",
+      "name": "Mã voucher",
+      "pixels": 68,
+      "percent": 2.3
+    },
+    {
+      "id": "3977:74643",
+      "name": "Mã voucher",
+      "pixels": 71,
+      "percent": 2.2
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 297,
+    "missing": [],
+    "withinThreshold": 297,
+    "buckets": {
+      "≤0.5px": 297,
+      "≤1px": 297,
+      "≤2px": 297,
+      "≤4px": 297,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I3977:74295;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74335;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74375;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74455;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74495;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74535;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74575;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74615;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74655;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74002;1391:17471",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74002;1391:17472",
+        "name": "Hiển thị 1 - 10 trong tổng số 80 lớp học",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74002;1391:17473",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74002;1391:17474",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74002;1391:17475",
+        "name": "Trước",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74002;1391:17476",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74002;1391:17477",
+        "name": "1",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74002;1391:17478",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74002;1391:17479",
+        "name": "2",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74002;1391:17486",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:74002;1391:17487",
+        "name": "Sau",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:74403",
+        "name": "Mã voucher",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:239955;4915:214813",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:74323",
+        "name": "Mã voucher",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:239955;4915:214798",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:239955;4915:214799",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.42,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/voucher/danh-sach-voucher",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

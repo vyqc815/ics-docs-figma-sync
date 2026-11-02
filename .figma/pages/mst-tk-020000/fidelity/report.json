@@ -1,0 +1,559 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 3429,
+    "percent": 0.294,
+    "shapePercent": 0.054,
+    "textPercent": 1.015,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "3005:41011",
+      "name": "Tạo tài khoản",
+      "pixels": 1376,
+      "percent": 24.7
+    },
+    {
+      "id": "3005:41022",
+      "name": "Nguyễn Văn A",
+      "pixels": 654,
+      "percent": 9.9
+    },
+    {
+      "id": "I3005:43093;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 20,
+      "percent": 2.5
+    },
+    {
+      "id": "I3004:50135;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 31,
+      "percent": 2.4
+    },
+    {
+      "id": "I3004:49972;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 28,
+      "percent": 2.3
+    },
+    {
+      "id": "I3004:50083;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 36,
+      "percent": 2.1
+    },
+    {
+      "id": "I3005:42873;3004:49431",
+      "name": "Sale",
+      "pixels": 12,
+      "percent": 1.9
+    },
+    {
+      "id": "I3004:49956;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 20,
+      "percent": 1.8
+    },
+    {
+      "id": "I4030:81898;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 32,
+      "percent": 1.7
+    },
+    {
+      "id": "I4030:81897;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 26,
+      "percent": 1.6
+    },
+    {
+      "id": "I3005:43133;139:67075",
+      "name": "Thêm chức vụ",
+      "pixels": 27,
+      "percent": 1.4
+    },
+    {
+      "id": "3005:41047",
+      "name": "Thông Tin Cá Nhân",
+      "pixels": 58,
+      "percent": 0.8
+    },
+    {
+      "id": "3005:41136",
+      "name": "Hãy chọn một màu để có được Một buổi làm việc hiệu quả nhất nhé",
+      "pixels": 238,
+      "percent": 0.8
+    },
+    {
+      "id": "4030:88773",
+      "name": "Cam · Mặc định",
+      "pixels": 13,
+      "percent": 0.7
+    },
+    {
+      "id": "I3005:42934;3004:49515",
+      "name": "Teacher-handler",
+      "pixels": 13,
+      "percent": 0.6
+    }
+  ],
+  "regions": [
+    {
+      "x": 64,
+      "y": 560,
+      "width": 128,
+      "height": 72,
+      "pixels": 311,
+      "node": {
+        "id": "4030:88770",
+        "name": "COLOR THEME",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 168,
+      "y": 152,
+      "width": 104,
+      "height": 80,
+      "pixels": 121,
+      "node": {
+        "id": "3005:41706",
+        "name": "+",
+        "role": "text"
+      }
+    },
+    {
+      "x": 176,
+      "y": 384,
+      "width": 144,
+      "height": 32,
+      "pixels": 107,
+      "node": {
+        "id": "I3005:43133;139:67075",
+        "name": "Thêm chức vụ",
+        "role": "text"
+      }
+    },
+    {
+      "x": 192,
+      "y": 256,
+      "width": 48,
+      "height": 8,
+      "pixels": 26,
+      "node": {
+        "id": "3005:41703",
+        "name": "Overlay+Border",
+        "role": "container"
+      }
+    },
+    {
+      "x": 288,
+      "y": 384,
+      "width": 48,
+      "height": 32,
+      "pixels": 24,
+      "node": {
+        "id": "I3005:43133;139:67075",
+        "name": "Thêm chức vụ",
+        "role": "text"
+      }
+    },
+    {
+      "x": 168,
+      "y": 328,
+      "width": 16,
+      "height": 16,
+      "pixels": 13,
+      "node": {
+        "id": "I3005:42864;3004:49478",
+        "name": "Icon Role",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 288,
+      "y": 320,
+      "width": 24,
+      "height": 24,
+      "pixels": 9,
+      "node": {
+        "id": "I3005:42873;3004:49430",
+        "name": "Icon Role",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 256,
+      "y": 408,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "3005:43133",
+        "name": "Role Component",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 178,
+    "missing": [],
+    "withinThreshold": 176,
+    "buckets": {
+      "≤0.5px": 175,
+      "≤1px": 175,
+      "≤2px": 175,
+      "≤4px": 178,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3005:43569",
+        "name": "Frame 1171274928",
+        "role": "container",
+        "delta": 2.66,
+        "dx": -1.33,
+        "dy": 0,
+        "dw": 2.66,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41022",
+        "name": "Nguyễn Văn A",
+        "role": "text",
+        "delta": 2.66,
+        "dx": -1.33,
+        "dy": 0,
+        "dw": 2.66,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41011",
+        "name": "Tạo tài khoản",
+        "role": "text",
+        "delta": 2.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:43133",
+        "name": "Role Component",
+        "role": "instance",
+        "delta": 0.19,
+        "dx": -0.09,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3005:43133;139:67075",
+        "name": "Thêm chức vụ",
+        "role": "text",
+        "delta": 0.19,
+        "dx": -0.09,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:42968",
+        "name": "Role Component",
+        "role": "instance",
+        "delta": 0.09,
+        "dx": -0.09,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3005:42968;3004:49555",
+        "name": "Frame 1171274972",
+        "role": "container",
+        "delta": 0.09,
+        "dx": -0.09,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3005:42968;3004:49556",
+        "name": "Icon Role",
+        "role": "icon",
+        "delta": 0.09,
+        "dx": -0.09,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3005:42968;3004:49557",
+        "name": "Role 12",
+        "role": "text",
+        "delta": 0.09,
+        "dx": -0.09,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:43137",
+        "name": "Role Component",
+        "role": "icon",
+        "delta": 0.09,
+        "dx": -0.09,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3005:43133;2623:27461",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.09,
+        "dx": -0.09,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3005:43133;3065:68070",
+        "name": "Mouse click",
+        "role": "icon",
+        "delta": 0.09,
+        "dx": -0.09,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41047",
+        "name": "Thông Tin Cá Nhân",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41010",
+        "name": "Frame 427322608",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:43566",
+        "name": "Frame 1171274927",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41131",
+        "name": "Frame 427322607",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41132",
+        "name": "Frame 427322606",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41133",
+        "name": "Frame 427322605",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:43104",
+        "name": "Frame 427322605",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4030:88769",
+        "name": "Frame 1171274944",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4030:88770",
+        "name": "COLOR THEME",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4030:88771",
+        "name": "Frame 1171274935",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4030:88772",
+        "name": "Màu",
+        "role": "shape",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4030:88773",
+        "name": "Cam · Mặc định",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4030:88894",
+        "name": "Frame 1171274945",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.66,
+    "over": [
+      {
+        "id": "3005:43569",
+        "name": "Frame 1171274928",
+        "role": "container",
+        "delta": 2.66,
+        "dx": -1.33,
+        "dy": 0,
+        "dw": 2.66,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41022",
+        "name": "Nguyễn Văn A",
+        "role": "text",
+        "delta": 2.66,
+        "dx": -1.33,
+        "dy": 0,
+        "dw": 2.66,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "2 elements are off by more than their limit (1px, 2.5px for text-driven; worst 2.66px)."
+  ],
+  "url": "http://localhost:3108/tai-khoan/chi-tiet-tai-khoan",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

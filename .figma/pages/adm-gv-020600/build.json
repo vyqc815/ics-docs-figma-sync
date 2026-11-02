@@ -1,6 +1,35 @@
 {
   "route": "/chi-tiet-giao-vien/ghi-chu",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-gv-020600/index.tsx",
   "docFile": "docs/pages/chi-tiet-giao-vien/ghi-chu.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "1904:7235",
+      "component": "Body2",
+      "file": "components/figma/shared/Body2.tsx"
+    },
+    {
+      "nodeId": "1904:7269",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/adm-gv-020600/MainScrollableWorkspace.tsx"
+    },
+    {
+      "nodeId": "4915:234395",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-gv-020600/SidebarMenuAdmin.tsx"
+    }
+  ],
+  "idAlias": {
+    "1904:7235": "1904:6494",
+    "2223:85127": "2223:85069",
+    "4050:119936": "4050:119839",
+    "2223:85175": "2223:85117",
+    "I2223:85175;2008:30986": "I2223:85117;2008:30986",
+    "I2223:85175;2008:31747": "I2223:85117;2008:31747",
+    "I2223:85175;2008:31748": "I2223:85117;2008:31748",
+    "I2223:85175;1391:17264": "I2223:85117;1391:17264",
+    "I2223:85175;1391:17266": "I2223:85117;1391:17266",
+    "I2223:85175;1391:17268": "I2223:85117;1391:17268",
+    "I2223:85175;1391:17270": "I2223:85117;1391:17270"
+  }
 }

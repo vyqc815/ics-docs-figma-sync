@@ -1,6 +1,17 @@
 {
   "route": "/lich-day/quan-ly-dang-ky-lich-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-ld-020000-dk/index.tsx",
   "docFile": "docs/pages/lich-day/quan-ly-dang-ky-lich-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "5425:272724",
+      "component": "Body",
+      "file": "components/figma/gv-ld-020000-dk/Body.tsx"
+    },
+    {
+      "nodeId": "5425:273877",
+      "component": "SidebarGiaoVienLichDay",
+      "file": "components/figma/gv-ld-020000-dk/SidebarGiaoVienLichDay.tsx"
+    }
+  ]
 }

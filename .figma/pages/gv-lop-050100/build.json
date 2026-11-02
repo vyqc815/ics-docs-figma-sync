@@ -1,6 +1,27 @@
 {
   "route": "/chi-tiet-lop/tu-hoc/trong",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-lop-050100/index.tsx",
   "docFile": "docs/pages/chi-tiet-lop/tu-hoc/trong.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4333:7911",
+      "component": "Body7",
+      "file": "components/figma/shared/Body7.tsx"
+    },
+    {
+      "nodeId": "4333:7912",
+      "component": "Maincontent",
+      "file": "components/figma/shared/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4333:8066",
+      "component": "Header",
+      "file": "components/figma/gv-lop-050100/Header.tsx"
+    },
+    {
+      "nodeId": "4915:260756",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-050100/SidebarMenuTeacher.tsx"
+    }
+  ]
 }

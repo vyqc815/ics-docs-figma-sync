@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 436,
+    "percent": 0.037,
+    "shapePercent": 0,
+    "textPercent": 0.44,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "5789:155571",
+      "name": "Trang bạn tìm không tồn tại, đã bị xoá hoặc đường dẫn không đúng. Kiểm tra lại đường dẫn hoặc quay về trang chủ.",
+      "pixels": 245,
+      "percent": 1.1
+    },
+    {
+      "id": "5789:155569",
+      "name": "404",
+      "pixels": 153,
+      "percent": 0.9
+    },
+    {
+      "id": "I5789:155576;1048:1230",
+      "name": "Button",
+      "pixels": 18,
+      "percent": 0.9
+    },
+    {
+      "id": "I5789:155573;1430:10760",
+      "name": "Button",
+      "pixels": 10,
+      "percent": 0.7
+    },
+    {
+      "id": "I5789:152949;4899:195420;2245:87829",
+      "name": "Label",
+      "pixels": 5,
+      "percent": 0.2
+    },
+    {
+      "id": "I5789:152863;1391:17266",
+      "name": "Admin Đắc Nhân",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5789:152863;1391:17268",
+      "name": "admin@gmail.com",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5789:152949;4915:212042",
+      "name": "v20.07.2026_17:30",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5789:152949;4899:195421;2245:87858",
+      "name": "Label",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5789:152949;4899:195422;2245:87858",
+      "name": "Label",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5789:152949;4899:195423;2245:87858",
+      "name": "Label",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5789:152949;4899:195424;2245:87864",
+      "name": "Label",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5789:152949;4899:195425;2245:87858",
+      "name": "Label",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5789:152949;4899:195426;2245:87858",
+      "name": "Label",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5789:152949;4899:195427;2245:87858",
+      "name": "Label",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 130,
+    "missing": [],
+    "withinThreshold": 130,
+    "buckets": {
+      "≤0.5px": 129,
+      "≤1px": 130,
+      "≤2px": 130,
+      "≤4px": 130,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5789:155569",
+        "name": "404",
+        "role": "text",
+        "delta": 0.53,
+        "dx": -0.27,
+        "dy": -0.01,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5789:155572",
+        "name": "Nút",
+        "role": "container",
+        "delta": 0.19,
+        "dx": -0.09,
+        "dy": -0.01,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5789:155576",
+        "name": "Nút · Về trang chủ",
+        "role": "instance",
+        "delta": 0.19,
+        "dx": -0.09,
+        "dy": -0.01,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:155576;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.19,
+        "dx": -0.09,
+        "dy": -0.01,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5789:155573",
+        "name": "Nút · Quay lại",
+        "role": "instance",
+        "delta": 0.09,
+        "dx": -0.09,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:155573;1430:10760",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.09,
+        "dx": -0.09,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152949;4915:212043",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152949;4915:212028",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152949;4915:212029",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152949;4915:212030",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152949;4915:212042",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5789:155539",
+        "name": "Trạng thái · 404",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5789:155540",
+        "name": "Empty State / Illustration",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5789:155570",
+        "name": "Không tìm thấy trang",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5789:155571",
+        "name": "Trang bạn tìm không tồn tại, đã bị xoá hoặc đường dẫn không đúng. Kiểm tra lại đường dẫn hoặc quay về trang chủ.",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5789:152815",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "5789:152816",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "5789:152863",
+        "name": "ACCOUNT",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152863;2008:30986",
+        "name": "Frame 1171274934",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152863;2008:31747",
+        "name": "Background+Border+Shadow",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152863;2008:31748",
+        "name": "Avatar",
+        "role": "image",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152863;1391:17264",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152863;1391:17266",
+        "name": "Admin Đắc Nhân",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152863;1391:17268",
+        "name": "admin@gmail.com",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5789:152863;1391:17270",
+        "name": "Overlay",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.53,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/loi-404-khong-tim-thay-trang",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

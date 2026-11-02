@@ -1,6 +1,22 @@
 {
   "route": "/chi-tiet-hoc-vien/thong-tin-ca-nhan",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-hv-020100/index.tsx",
   "docFile": "docs/pages/chi-tiet-hoc-vien/thong-tin-ca-nhan.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "1648:11718",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/adm-hv-020100/MainScrollableWorkspace.tsx"
+    },
+    {
+      "nodeId": "2223:83735",
+      "component": "Header",
+      "file": "components/figma/adm-hv-020100/Header.tsx"
+    },
+    {
+      "nodeId": "4915:233159",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-hv-020100/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

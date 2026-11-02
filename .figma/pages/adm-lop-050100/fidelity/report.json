@@ -1,0 +1,508 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 4734,
+    "percent": 0.406,
+    "shapePercent": 0.006,
+    "textPercent": 1.994,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4915:231079;4901:211379;2245:87908",
+      "name": "Label",
+      "pixels": 201,
+      "percent": 8.4
+    },
+    {
+      "id": "2533:21012",
+      "name": "Thêm Tráo Thẻ",
+      "pixels": 118,
+      "percent": 6.2
+    },
+    {
+      "id": "I4915:231079;4901:211377;2245:87908",
+      "name": "Label",
+      "pixels": 141,
+      "percent": 5.9
+    },
+    {
+      "id": "I2533:20986;2409:141178",
+      "name": "Hệ thống",
+      "pixels": 153,
+      "percent": 5.7
+    },
+    {
+      "id": "2533:20995",
+      "name": "Đổi Trạng Thái",
+      "pixels": 106,
+      "percent": 5.7
+    },
+    {
+      "id": "I2533:21003;2409:141178",
+      "name": "Hệ thống",
+      "pixels": 153,
+      "percent": 5.7
+    },
+    {
+      "id": "2533:20927",
+      "name": "Thu gọn",
+      "pixels": 52,
+      "percent": 5
+    },
+    {
+      "id": "2533:20978",
+      "name": "Chăm Sóc Lớp",
+      "pixels": 90,
+      "percent": 5
+    },
+    {
+      "id": "2533:20924",
+      "name": "Giúp học viên thực hành theo dõi lớp học, nắm được tình trạng học tập của học viên và rèn kỹ năng tổng hợp – báo cáo thông tin lớp.",
+      "pixels": 1176,
+      "percent": 4.5
+    },
+    {
+      "id": "2533:20997",
+      "name": "Thuy SP đã đổi trạng thái lớp NS003",
+      "pixels": 202,
+      "percent": 4.4
+    },
+    {
+      "id": "2533:20980",
+      "name": "Thuy SP đã Follow lớp NS0002",
+      "pixels": 162,
+      "percent": 4.2
+    },
+    {
+      "id": "2533:20885",
+      "name": "MÔ TẢ",
+      "pixels": 35,
+      "percent": 4
+    },
+    {
+      "id": "2533:20889",
+      "name": "NGÀY LOG",
+      "pixels": 54,
+      "percent": 3.9
+    },
+    {
+      "id": "I2533:21020;2409:141178",
+      "name": "Hệ thống",
+      "pixels": 84,
+      "percent": 3.9
+    },
+    {
+      "id": "I2533:20984;1350:12808",
+      "name": "7 ngày (40 ca)",
+      "pixels": 62,
+      "percent": 3.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 1176,
+      "y": 600,
+      "width": 24,
+      "height": 32,
+      "pixels": 18,
+      "node": {
+        "id": "I2533:20986;2409:141177",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1176,
+      "y": 656,
+      "width": 24,
+      "height": 8,
+      "pixels": 14,
+      "node": {
+        "id": "I2533:21003;2409:141177",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1384,
+      "y": 784,
+      "width": 24,
+      "height": 24,
+      "pixels": 11,
+      "node": {
+        "id": "2533:21031",
+        "name": "Atom/Icon Button",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 960,
+      "y": 608,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I2533:20982;1910:16476",
+        "name": "Frame 427321966",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 960,
+      "y": 712,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I2533:21016;1910:16476",
+        "name": "Frame 427321966",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4915:231079;4901:211412",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 278,
+    "missing": [],
+    "withinThreshold": 278,
+    "buckets": {
+      "≤0.5px": 277,
+      "≤1px": 278,
+      "≤2px": 278,
+      "≤4px": 278,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2533:20885",
+        "name": "MÔ TẢ",
+        "role": "text",
+        "delta": 0.94,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:21147",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:21147;1739:32348",
+        "name": "Frame 427321959",
+        "role": "container",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:21147;1739:32349",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:21147;1739:32351",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:20876",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:20876;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:20876;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:20978",
+        "name": "Chăm Sóc Lớp",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:20969",
+        "name": "Atom/Object Chip",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:20969;2409:141174",
+        "name": "Tittle",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:20969;2409:141175",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:20969;2409:141178",
+        "name": "Hệ thống",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:20986",
+        "name": "Atom/Object Chip",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:20986;2409:141174",
+        "name": "Tittle",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:20986;2409:141175",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:20986;2409:141178",
+        "name": "Hệ thống",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:21003",
+        "name": "Atom/Object Chip",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:21003;2409:141174",
+        "name": "Tittle",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:21003;2409:141175",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:21003;2409:141178",
+        "name": "Hệ thống",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:20995",
+        "name": "Đổi Trạng Thái",
+        "role": "text",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231079;4901:211322",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:231079;4901:211329",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:231079;4901:211343",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 0.94,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/lop-hoc/nhat-ky/nhat-ky",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

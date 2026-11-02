@@ -1,0 +1,592 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 982,
+    "mismatched": 4464,
+    "percent": 0.316,
+    "shapePercent": 0.054,
+    "textPercent": 1.05,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:130750;2245:87864",
+      "name": "Label",
+      "pixels": 438,
+      "percent": 17.5
+    },
+    {
+      "id": "I4101:138215;2245:87768",
+      "name": "Label",
+      "pixels": 156,
+      "percent": 5.4
+    },
+    {
+      "id": "I4056:130751;2245:87820",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 3.3
+    },
+    {
+      "id": "I4056:130616;2706:23415;1910:18520",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 3.1
+    },
+    {
+      "id": "I4056:130617;2706:23421;1910:18520",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 3.1
+    },
+    {
+      "id": "I4056:130618;2706:23427;1910:18520",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 3.1
+    },
+    {
+      "id": "I4056:130620;2706:23434;1910:18520",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 3.1
+    },
+    {
+      "id": "I4056:130621;2706:23435;1910:18520",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 3.1
+    },
+    {
+      "id": "I4056:130622;2706:23436;1910:18520",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 3.1
+    },
+    {
+      "id": "I4056:130624;2706:23438;1910:18520",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 3.1
+    },
+    {
+      "id": "I4056:130752;2245:87820",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.7
+    },
+    {
+      "id": "I4056:130757;2245:87768",
+      "name": "Label",
+      "pixels": 78,
+      "percent": 2.7
+    },
+    {
+      "id": "I4056:130620;2409:150455",
+      "name": "Nội dung cảnh báo",
+      "pixels": 244,
+      "percent": 2.6
+    },
+    {
+      "id": "I4101:138211;2245:87768",
+      "name": "Label",
+      "pixels": 76,
+      "percent": 2.6
+    },
+    {
+      "id": "I4056:130744;2245:87820",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 256,
+      "y": 88,
+      "width": 48,
+      "height": 40,
+      "pixels": 640,
+      "node": {
+        "id": "4056:130590",
+        "name": "image",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 720,
+      "y": 344,
+      "width": 24,
+      "height": 24,
+      "pixels": 19,
+      "node": {
+        "id": "I4056:130617;2409:150256;2391:66593",
+        "name": "Frame 427325140",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 720,
+      "y": 296,
+      "width": 24,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "I4056:130616;2409:150192;2391:66588",
+        "name": "Frame 427325140",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 720,
+      "y": 592,
+      "width": 16,
+      "height": 24,
+      "pixels": 15,
+      "node": {
+        "id": "I4056:130621;2409:150506;2391:66601",
+        "name": "Frame 427325278",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 720,
+      "y": 640,
+      "width": 24,
+      "height": 24,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:130622;2409:150570;2391:66606",
+        "name": "Frame 427325278",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4056:130728",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4056:130728",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 856,
+      "y": 296,
+      "width": 16,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "I4056:130616;2409:150199",
+        "name": "Warning",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 856,
+      "y": 344,
+      "width": 16,
+      "height": 24,
+      "pixels": 6,
+      "node": {
+        "id": "I4056:130617;2409:150263",
+        "name": "Warning",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 856,
+      "y": 416,
+      "width": 16,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "I4056:130618;2409:150327",
+        "name": "Warning",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 856,
+      "y": 536,
+      "width": 16,
+      "height": 24,
+      "pixels": 6,
+      "node": {
+        "id": "I4056:130620;2409:150453",
+        "name": "Warning",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 856,
+      "y": 592,
+      "width": 16,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "I4056:130621;2409:150513",
+        "name": "Warning",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 856,
+      "y": 688,
+      "width": 16,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "I4056:130623;2409:150641",
+        "name": "Warning",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 286,
+    "missing": [],
+    "withinThreshold": 286,
+    "buckets": {
+      "≤0.5px": 286,
+      "≤1px": 286,
+      "≤2px": 286,
+      "≤4px": 286,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:130607",
+        "name": "Mã lớp",
+        "role": "text",
+        "delta": 0.34,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130741",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130726",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130727",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130728",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130740",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130585",
+        "name": "BG",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:130586",
+        "name": "Frame 427325574",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130587",
+        "name": "Frame 427325285",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130588",
+        "name": "Frame 427321837",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130589",
+        "name": "Frame 1171274927",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130590",
+        "name": "image",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130591",
+        "name": "Frame 427320146",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130592",
+        "name": "Jone Aly",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130593",
+        "name": "Admin",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130594",
+        "name": "Frame 427325283",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130595",
+        "name": "Frame 427325275",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130596",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:130596;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130597",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:130597;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130598",
+        "name": "Frame 427325284",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130599",
+        "name": "Frame 427325279",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130600",
+        "name": "Danh sách video",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:130601",
+        "name": "Filter · Thời gian",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.34,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/move-video/danh-sach-video-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

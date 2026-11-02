@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 561,
+    "percent": 0.048,
+    "shapePercent": 0,
+    "textPercent": 0.924,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4915:260756;4901:213980;2245:87908",
+      "name": "Label",
+      "pixels": 141,
+      "percent": 5.9
+    },
+    {
+      "id": "I4915:260756;4901:213985;2245:87908",
+      "name": "Label",
+      "pixels": 147,
+      "percent": 3.7
+    },
+    {
+      "id": "I4915:260756;4901:213987;689:15190",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 1.4
+    },
+    {
+      "id": "I4333:8114;4019:24078",
+      "name": "Sakumi",
+      "pixels": 26,
+      "percent": 1.3
+    },
+    {
+      "id": "I4915:260756;4901:213982;689:15190",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 1.3
+    },
+    {
+      "id": "I4915:260756;4901:214012;4760:156576;1971:8814",
+      "name": "Value",
+      "pixels": 3,
+      "percent": 1.2
+    },
+    {
+      "id": "I4915:260756;4901:213996;2245:87908",
+      "name": "Label",
+      "pixels": 21,
+      "percent": 0.9
+    },
+    {
+      "id": "4333:7924",
+      "name": "Bảng dữ liệu này đang trống",
+      "pixels": 54,
+      "percent": 0.8
+    },
+    {
+      "id": "4333:9543",
+      "name": "Bảng dữ liệu này đang trống",
+      "pixels": 48,
+      "percent": 0.7
+    },
+    {
+      "id": "I4333:8116;2008:31783",
+      "name": "GV.dacnhan@gmail.com",
+      "pixels": 20,
+      "percent": 0.7
+    },
+    {
+      "id": "I4915:260756;4901:213989;2245:87908",
+      "name": "Label",
+      "pixels": 11,
+      "percent": 0.5
+    },
+    {
+      "id": "I4915:260756;4901:213994;2245:87908",
+      "name": "Label",
+      "pixels": 19,
+      "percent": 0.5
+    },
+    {
+      "id": "I4915:260756;4901:213995;2245:87908",
+      "name": "Label",
+      "pixels": 10,
+      "percent": 0.4
+    },
+    {
+      "id": "I4333:8116;2008:31872",
+      "name": "GV",
+      "pixels": 1,
+      "percent": 0.3
+    },
+    {
+      "id": "I4915:260756;4901:213986;2245:87914",
+      "name": "Label",
+      "pixels": 6,
+      "percent": 0.3
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 110,
+    "missing": [],
+    "withinThreshold": 110,
+    "buckets": {
+      "≤0.5px": 108,
+      "≤1px": 110,
+      "≤2px": 110,
+      "≤4px": 110,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4915:260756;4901:213991;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260756;4901:213991;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:7924",
+        "name": "Bảng dữ liệu này đang trống",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:9543",
+        "name": "Bảng dữ liệu này đang trống",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260756;4901:213982;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260756;4901:213982;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:7915",
+        "name": "Chi tiết buổi học",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260756;4901:213987;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260756;4901:213987;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260756;4901:213925",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:260756;4901:213932",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:260756;4901:213946",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:260756;4901:213947",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:260756;4901:213950",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4333:7911",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4333:7912",
+        "name": "MainContent",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4333:7913",
+        "name": "Frame 427321965",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:7914",
+        "name": "Frame 427321964",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:7922",
+        "name": "Empty State · Chi tiết buổi học",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:7923",
+        "name": "Empty State / Illustration",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:7926",
+        "name": "Frame 1171274937",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:7927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:7928",
+        "name": "Frame 1171274941",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:7929",
+        "name": "Danh sách bài học",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:9541",
+        "name": "Empty State · Danh sách bài học",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.55,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-lop/tu-hoc/trong",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

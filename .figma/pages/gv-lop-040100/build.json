@@ -1,6 +1,22 @@
 {
   "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/btvn",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-lop-040100/index.tsx",
   "docFile": "docs/pages/chi-tiet-lop/bai-tap-va-kiem-tra/btvn.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4324:85926",
+      "component": "Body",
+      "file": "components/figma/gv-lop-040100/Body.tsx"
+    },
+    {
+      "nodeId": "4324:86639",
+      "component": "Header",
+      "file": "components/figma/gv-lop-040100/Header.tsx"
+    },
+    {
+      "nodeId": "4915:260549",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-040100/SidebarMenuTeacher.tsx"
+    }
+  ]
 }

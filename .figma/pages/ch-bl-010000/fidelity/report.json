@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1057,
+    "mismatched": 1523,
+    "percent": 0.1,
+    "shapePercent": 0,
+    "textPercent": 0.628,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "5364:370249",
+      "name": "MEINE HOBBYS SIND...",
+      "pixels": 164,
+      "percent": 6.9
+    },
+    {
+      "id": "I5371:39978;2015:36008",
+      "name": "Value",
+      "pixels": 68,
+      "percent": 4.9
+    },
+    {
+      "id": "I5364:370127;2015:36008",
+      "name": "Value",
+      "pixels": 28,
+      "percent": 4.7
+    },
+    {
+      "id": "5364:370270",
+      "name": "MEINE HOBBYS SIND...",
+      "pixels": 146,
+      "percent": 3.9
+    },
+    {
+      "id": "I5364:370129;2015:36008",
+      "name": "Value",
+      "pixels": 109,
+      "percent": 3.8
+    },
+    {
+      "id": "I5364:370191;1725:17084",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 3.7
+    },
+    {
+      "id": "5364:370165",
+      "name": "MEINE HOBBYS SIND...",
+      "pixels": 112,
+      "percent": 3.5
+    },
+    {
+      "id": "I5371:39428;1725:17084",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 3.5
+    },
+    {
+      "id": "5364:370228",
+      "name": "MEINE HOBBYS SIND...",
+      "pixels": 114,
+      "percent": 3.4
+    },
+    {
+      "id": "I5364:370126;2015:36008",
+      "name": "Value",
+      "pixels": 44,
+      "percent": 3.2
+    },
+    {
+      "id": "I5364:370128;2015:36008",
+      "name": "Value",
+      "pixels": 36,
+      "percent": 2.6
+    },
+    {
+      "id": "5364:370207",
+      "name": "MEINE HOBBYS SIND...",
+      "pixels": 76,
+      "percent": 2.6
+    },
+    {
+      "id": "I5364:370233;1725:17084",
+      "name": "Label",
+      "pixels": 11,
+      "percent": 2.2
+    },
+    {
+      "id": "I5364:370118;5274:362799;3857:67911;1971:8814",
+      "name": "Value",
+      "pixels": 4,
+      "percent": 1.6
+    },
+    {
+      "id": "I5364:370179;2015:30321",
+      "name": "Badge",
+      "pixels": 16,
+      "percent": 1.4
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 467,
+    "missing": [],
+    "withinThreshold": 467,
+    "buckets": {
+      "≤0.5px": 465,
+      "≤1px": 467,
+      "≤2px": 467,
+      "≤4px": 467,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5364:370165",
+        "name": "MEINE HOBBYS SIND...",
+        "role": "text",
+        "delta": 0.86,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.86,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:370249",
+        "name": "MEINE HOBBYS SIND...",
+        "role": "text",
+        "delta": 0.81,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.81,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:39978",
+        "name": "Filter · Trung tâm",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:39978;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:39978;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:39978;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:370126",
+        "name": "Filter · Trạng thái",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370126;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370126;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370126;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:370127",
+        "name": "Filter · Loại",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370127;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370127;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370127;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:370128",
+        "name": "Filter · Đối tượng",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370128;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370128;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:370207",
+        "name": "MEINE HOBBYS SIND...",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370179;2015:30321",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.12,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370242;2015:30321",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.12,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:370150",
+        "name": "Sĩ số",
+        "role": "text",
+        "delta": 0.2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.2,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370179;2015:30322",
+        "name": "Dropdown Icon",
+        "role": "icon",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:370242;2015:30322",
+        "name": "Dropdown Icon",
+        "role": "icon",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:370152",
+        "name": "Sĩ số",
+        "role": "text",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:370148",
+        "name": "Sĩ số",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.86,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/bao-loi/danh-sach-bao-loi-ch-bl-010000",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

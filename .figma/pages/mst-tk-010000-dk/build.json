@@ -1,6 +1,22 @@
 {
   "route": "/tai-khoan/danh-sach-tai-khoan-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/mst-tk-010000-dk/index.tsx",
   "docFile": "docs/pages/tai-khoan/danh-sach-tai-khoan-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:137810",
+      "component": "Header",
+      "file": "components/figma/mst-tk-010000-dk/Header.tsx"
+    },
+    {
+      "nodeId": "4056:137859",
+      "component": "Sidebar",
+      "file": "components/figma/mst-tk-010000-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "4056:137936",
+      "component": "Section3",
+      "file": "components/figma/mst-tk-010000-dk/Section3.tsx"
+    }
+  ]
 }

@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-070300 — Thư viện / Bài tập (`5491:354867`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/thu-vien/bai-tap`  
 > **Khung thiết kế:** 1440 × 1274 px  
-> **Xuất lúc:** 2026-11-02T01:43:17.196Z  
+> **Xuất lúc:** 2026-11-02T02:43:47.676Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-070300/page-spec.json`
 
 ## 1. Tổng quan

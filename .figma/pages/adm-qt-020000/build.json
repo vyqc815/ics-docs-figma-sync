@@ -1,6 +1,34 @@
 {
   "route": "/quy-trinh/chi-tiet-loai-quy-trinh",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-qt-020000/index.tsx",
   "docFile": "docs/pages/quy-trinh/chi-tiet-loai-quy-trinh.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4915:238721",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-qt-020000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "2683:211185",
+      "component": "Header3",
+      "file": "components/figma/shared/Header3.tsx"
+    },
+    {
+      "nodeId": "2702:35907",
+      "component": "Maincontent",
+      "file": "components/figma/adm-qt-020000/Maincontent.tsx"
+    }
+  ],
+  "idAlias": {
+    "2683:211185": "2223:83677",
+    "4050:120568": "4050:118384",
+    "2683:211233": "2223:83725",
+    "I2683:211233;2008:30986": "I2223:83725;2008:30986",
+    "I2683:211233;2008:31747": "I2223:83725;2008:31747",
+    "I2683:211233;2008:31748": "I2223:83725;2008:31748",
+    "I2683:211233;1391:17264": "I2223:83725;1391:17264",
+    "I2683:211233;1391:17266": "I2223:83725;1391:17266",
+    "I2683:211233;1391:17268": "I2223:83725;1391:17268",
+    "I2683:211233;1391:17270": "I2223:83725;1391:17270"
+  }
 }

@@ -1,6 +1,30 @@
 {
   "route": "/tools/giong-doc/am-tiet-pinyin-dang-tao",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-tl-010300/index.tsx",
   "docFile": "docs/pages/tools/giong-doc/am-tiet-pinyin-dang-tao.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "6133:126134",
+      "component": "Applayoutwrapper",
+      "file": "components/figma/shared/Applayoutwrapper.tsx"
+    },
+    {
+      "nodeId": "6133:126135",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-tl-010300/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6133:126136",
+      "component": "Header",
+      "file": "components/figma/cd-tl-010300/Header.tsx"
+    },
+    {
+      "nodeId": "6133:126186",
+      "component": "MainGiongDoc",
+      "file": "components/figma/cd-tl-010300/MainGiongDoc.tsx"
+    }
+  ],
+  "idAlias": {
+    "6133:126134": "714:16697"
+  }
 }

@@ -1,6 +1,17 @@
 {
   "route": "/quy-trinh/danh-sach-loai-quy-trinh",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-qt-010000/index.tsx",
   "docFile": "docs/pages/quy-trinh/danh-sach-loai-quy-trinh.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2619:204023",
+      "component": "MainAppContainer",
+      "file": "components/figma/adm-qt-010000/MainAppContainer.tsx"
+    },
+    {
+      "nodeId": "2683:210262",
+      "component": "Header",
+      "file": "components/figma/adm-qt-010000/Header.tsx"
+    }
+  ]
 }

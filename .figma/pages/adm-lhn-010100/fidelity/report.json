@@ -1,0 +1,532 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1004,
+    "mismatched": 8753,
+    "percent": 0.605,
+    "shapePercent": 0.012,
+    "textPercent": 2.838,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "2370:26363",
+      "name": "- Gửi giới thiệu bạn với học viên (lưu ý các học viên đang có chỉ số thấp/ phản ứng ==> không gửi nha) - Gửi giới thiệu bạn phải gởi hết vòng của TH giới thiệu bạn (khi khách seen ==> push tiếp cách đăng bài) - Kiểm tra khách này trước đó đã gửi giới thiệu bạn chưa để gửi văn khác, tránh bị trùng - Note: Đã gửi giới thiệu bạn ở ghi chú ==> mục tiêu nắm được khách này đã gửi hay chưa để lượt tiếp theo còn đổi văn mẫu",
+      "pixels": 3857,
+      "percent": 24.9
+    },
+    {
+      "id": "2370:26035",
+      "name": "Thu gọn",
+      "pixels": 53,
+      "percent": 5
+    },
+    {
+      "id": "I4713:129180;2015:36008",
+      "name": "Value",
+      "pixels": 66,
+      "percent": 4.8
+    },
+    {
+      "id": "2370:26366",
+      "name": "Xem thêm",
+      "pixels": 52,
+      "percent": 3.9
+    },
+    {
+      "id": "I2367:19681;2015:36008",
+      "name": "Value",
+      "pixels": 75,
+      "percent": 3.7
+    },
+    {
+      "id": "I2367:20187;2200:30042",
+      "name": "Ngày mai",
+      "pixels": 47,
+      "percent": 3.7
+    },
+    {
+      "id": "I2370:26359;2200:30042",
+      "name": "Ngày mai",
+      "pixels": 47,
+      "percent": 3.7
+    },
+    {
+      "id": "I2367:20221;2200:30042",
+      "name": "Ngày mai",
+      "pixels": 47,
+      "percent": 3.7
+    },
+    {
+      "id": "2367:19757",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 374,
+      "percent": 3.5
+    },
+    {
+      "id": "2367:20225",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 374,
+      "percent": 3.5
+    },
+    {
+      "id": "2367:20256",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 374,
+      "percent": 3.5
+    },
+    {
+      "id": "2367:20287",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 374,
+      "percent": 3.5
+    },
+    {
+      "id": "I2370:26040;2200:30227",
+      "name": "ID",
+      "pixels": 30,
+      "percent": 3.4
+    },
+    {
+      "id": "I2370:26043;2200:30227",
+      "name": "ID",
+      "pixels": 30,
+      "percent": 3.4
+    },
+    {
+      "id": "I2370:26372;2200:30227",
+      "name": "ID",
+      "pixels": 30,
+      "percent": 3.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 1232,
+      "y": 232,
+      "width": 8,
+      "height": 32,
+      "pixels": 52,
+      "node": {
+        "id": "2698:35163",
+        "name": "Cell · Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1232,
+      "y": 304,
+      "width": 8,
+      "height": 32,
+      "pixels": 48,
+      "node": {
+        "id": "2698:35115",
+        "name": "Cell · Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1208,
+      "y": 240,
+      "width": 8,
+      "height": 24,
+      "pixels": 14,
+      "node": {
+        "id": "2698:35163",
+        "name": "Cell · Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1024,
+      "y": 616,
+      "width": 16,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "2367:20230",
+        "name": "Avatar",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1016,
+      "y": 328,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "I2367:20157;1672:16226",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1000,
+      "y": 616,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "I2367:20228;1672:16230",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 424,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I2367:20194;1672:16230",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 544,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I2370:26370;1672:16230",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 381,
+    "missing": [],
+    "withinThreshold": 381,
+    "buckets": {
+      "≤0.5px": 372,
+      "≤1px": 381,
+      "≤2px": 381,
+      "≤4px": 381,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2367:19674",
+        "name": "Frame 427321947",
+        "role": "container",
+        "delta": 0.73,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1693:21964",
+        "name": "Frame 427323979",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4713:129180",
+        "name": "Dropdown · Trung tâm",
+        "role": "instance",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129180;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129180;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129180;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2367:19681",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2367:19681;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2367:19681;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2367:19681;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2367:19707",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2367:19707;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2367:19707;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2245:88769",
+        "name": "Tabs",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2245:88770",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2245:88770;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2245:88770;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2245:88774",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2245:88774;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2245:88774;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2245:88777",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2245:88777;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2245:88777;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2245:88777;3554:65718",
+        "name": "Số đếm",
+        "role": "instance",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2245:88777;3554:65718;1971:8814",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.73,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/lich-hen/hen-lop",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

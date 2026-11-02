@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 905,
+    "mismatched": 848,
+    "percent": 0.065,
+    "shapePercent": 0.005,
+    "textPercent": 0.62,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4915:233777;4899:195680;2245:87864",
+      "name": "Label",
+      "pixels": 373,
+      "percent": 14.9
+    },
+    {
+      "id": "4056:126272",
+      "name": "Buổi tối",
+      "pixels": 22,
+      "percent": 1.7
+    },
+    {
+      "id": "4056:126293",
+      "name": "Ghi chú",
+      "pixels": 14,
+      "percent": 1.4
+    },
+    {
+      "id": "4056:126232",
+      "name": "Buổi sáng",
+      "pixels": 18,
+      "percent": 1.1
+    },
+    {
+      "id": "4056:126298",
+      "name": "Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này",
+      "pixels": 92,
+      "percent": 1.1
+    },
+    {
+      "id": "4056:126252",
+      "name": "Buổi chiều",
+      "pixels": 18,
+      "percent": 1
+    },
+    {
+      "id": "I4915:233777;4899:195682;2245:87858",
+      "name": "Label",
+      "pixels": 23,
+      "percent": 0.9
+    },
+    {
+      "id": "I4915:233777;4899:195681;2245:87858",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 0.7
+    },
+    {
+      "id": "I4915:233777;4899:195683;1971:7432",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 0.6
+    },
+    {
+      "id": "I4915:233777;4899:195685;1971:7432",
+      "name": "Label",
+      "pixels": 14,
+      "percent": 0.6
+    },
+    {
+      "id": "I4915:233777;4899:195676;2245:87858",
+      "name": "Label",
+      "pixels": 12,
+      "percent": 0.5
+    },
+    {
+      "id": "4056:126199",
+      "name": "Chi tiết giáo viên",
+      "pixels": 19,
+      "percent": 0.4
+    },
+    {
+      "id": "4056:126236",
+      "name": "Trước 9h tối",
+      "pixels": 5,
+      "percent": 0.4
+    },
+    {
+      "id": "I4056:126294;2808:42324",
+      "name": "Tìm nội dung...",
+      "pixels": 100,
+      "percent": 0.4
+    },
+    {
+      "id": "I4056:126193;1391:17268",
+      "name": "admin@gmail.com",
+      "pixels": 7,
+      "percent": 0.3
+    }
+  ],
+  "regions": [
+    {
+      "x": 1224,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 31,
+      "node": {
+        "id": "I4056:126193;2008:31748",
+        "name": "Avatar",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1200,
+      "y": 16,
+      "width": 16,
+      "height": 16,
+      "pixels": 15,
+      "node": {
+        "id": "I4056:126193;2008:31748",
+        "name": "Avatar",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1200,
+      "y": 40,
+      "width": 16,
+      "height": 8,
+      "pixels": 12,
+      "node": {
+        "id": "I4056:126193;2008:31748",
+        "name": "Avatar",
+        "role": "image"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 241,
+    "missing": [],
+    "withinThreshold": 241,
+    "buckets": {
+      "≤0.5px": 241,
+      "≤1px": 241,
+      "≤2px": 241,
+      "≤4px": 241,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:126228",
+        "name": "Chủ nhật",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.26,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126272",
+        "name": "Buổi tối",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126203",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126203;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126203;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126204",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126204;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126204;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126205",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126205;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126205;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126206",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126206;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126206;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126206;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126207",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126207;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126207;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126236",
+        "name": "Trước 9h tối",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126199",
+        "name": "Chi tiết giáo viên",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126218",
+        "name": "Thứ 3",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126222",
+        "name": "Thứ 5",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126225",
+        "name": "Header · Thứ 7",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126226",
+        "name": "Thứ 7",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126244",
+        "name": "Card · Trống · Thứ 6",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.5,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-giao-vien/quan-ly-dang-ky-lich-adm-gv-020500-2",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

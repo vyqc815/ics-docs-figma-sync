@@ -1,0 +1,496 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 954,
+    "mismatched": 1517,
+    "percent": 0.11,
+    "shapePercent": 0.003,
+    "textPercent": 1.095,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5425:272492;2245:87768",
+      "name": "Label",
+      "pixels": 169,
+      "percent": 5.9
+    },
+    {
+      "id": "I5425:272186;2008:48177",
+      "name": "31.01.2026 - 06.01.2026",
+      "pixels": 162,
+      "percent": 5.1
+    },
+    {
+      "id": "5425:272183",
+      "name": "Value",
+      "pixels": 54,
+      "percent": 4.8
+    },
+    {
+      "id": "I5425:274280;2008:49579;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 90,
+      "percent": 4.6
+    },
+    {
+      "id": "I5425:274289;2008:49579;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 73,
+      "percent": 3.8
+    },
+    {
+      "id": "I5425:274188;2008:49570;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 65,
+      "percent": 3.3
+    },
+    {
+      "id": "I5425:274223;2008:49570;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 65,
+      "percent": 3.3
+    },
+    {
+      "id": "I5425:274210;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 63,
+      "percent": 3.2
+    },
+    {
+      "id": "I5425:274245;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 63,
+      "percent": 3.2
+    },
+    {
+      "id": "I6244:51439;2245:87768",
+      "name": "Label",
+      "pixels": 79,
+      "percent": 2.7
+    },
+    {
+      "id": "I5425:272493;2245:87768",
+      "name": "Label",
+      "pixels": 75,
+      "percent": 2.6
+    },
+    {
+      "id": "I5425:274199;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 49,
+      "percent": 2.5
+    },
+    {
+      "id": "I5425:274234;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 49,
+      "percent": 2.5
+    },
+    {
+      "id": "I5425:272494;2245:87768",
+      "name": "Label",
+      "pixels": 71,
+      "percent": 2.5
+    },
+    {
+      "id": "I5425:272491;2245:87768",
+      "name": "Label",
+      "pixels": 55,
+      "percent": 1.9
+    }
+  ],
+  "regions": [
+    {
+      "x": 1400,
+      "y": 184,
+      "width": 24,
+      "height": 16,
+      "pixels": 9,
+      "node": {
+        "id": "5425:272184",
+        "name": "Checkbox 2",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "5425:272472",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "5425:272472",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1400,
+      "y": 24,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I5425:272414;2008:31784",
+        "name": "Overlay",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1416,
+      "y": 24,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I5425:272414;2008:31784",
+        "name": "Overlay",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 226,
+    "missing": [],
+    "withinThreshold": 226,
+    "buckets": {
+      "≤0.5px": 226,
+      "≤1px": 226,
+      "≤2px": 226,
+      "≤4px": 226,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5425:272222",
+        "name": "Frame 427323681",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:272223",
+        "name": "Thứ 6",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:274210",
+        "name": "STATUS CALENDAR",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274210;2008:49502",
+        "name": "AVATAR + Name",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274210;2008:49502;1904:12420",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274210;2008:49502;1991:15993",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274210;2008:49502;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274210;2008:49502;1904:12423",
+        "name": "Trần Nguyễn Hoài Phương",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274210;2008:49448",
+        "name": "Frame 427325229",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274210;2008:49449",
+        "name": "IT_VUONG123",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274210;2008:49450",
+        "name": "09:00 am - 11:00 am",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:274245",
+        "name": "STATUS CALENDAR",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274245;2008:49502",
+        "name": "AVATAR + Name",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274245;2008:49502;1904:12420",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274245;2008:49502;1991:15993",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274245;2008:49502;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274245;2008:49502;1904:12423",
+        "name": "Trần Nguyễn Hoài Phương",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274245;2008:49448",
+        "name": "Frame 427325229",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274245;2008:49449",
+        "name": "IT_VUONG123",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:274245;2008:49450",
+        "name": "09:00 am - 11:00 am",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:274266",
+        "name": "STATUS CALENDAR",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:272485",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:272206",
+        "name": "Frame 427323677",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:272207",
+        "name": "Thứ 2",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:272210",
+        "name": "Frame 427323684",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.02,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/lich-day/xem-theo-lop-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

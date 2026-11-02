@@ -1,0 +1,460 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 982,
+    "mismatched": 2990,
+    "percent": 0.211,
+    "shapePercent": 0.01,
+    "textPercent": 0.754,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2711:70363;1048:1240",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 4
+    },
+    {
+      "id": "2711:70377",
+      "name": "{khach} ơi, {ad} vừa gửi giáo trình cho mình, dự kiến mình sẽ nhận trong 3-5 ngày nha, nếu nhận được báo cho {ad} biết với nha.",
+      "pixels": 656,
+      "percent": 3.1
+    },
+    {
+      "id": "I2711:70325;2159:26238",
+      "name": "Button",
+      "pixels": 34,
+      "percent": 1.9
+    },
+    {
+      "id": "2711:70421",
+      "name": "{khach} ơi, {ad} nhắc mình lịch hẹn tư vấn lộ trình học vào ngày mai nha, có thay đổi gì báo {ad} sớm giúp mình.",
+      "pixels": 385,
+      "percent": 1.8
+    },
+    {
+      "id": "2711:70301",
+      "name": "Xác nhận thông tin với khách",
+      "pixels": 73,
+      "percent": 1.6
+    },
+    {
+      "id": "I2711:70343;2159:26220",
+      "name": "Button",
+      "pixels": 29,
+      "percent": 1.6
+    },
+    {
+      "id": "2711:70443",
+      "name": "Chúc mừng {khach} đã hoàn thành khoá {info}! {ad} gửi mình chứng nhận và ưu đãi đăng ký khoá tiếp theo nha.",
+      "pixels": 348,
+      "percent": 1.6
+    },
+    {
+      "id": "I2711:70365;1048:1238",
+      "name": "Button",
+      "pixels": 8,
+      "percent": 1.5
+    },
+    {
+      "id": "2711:70399",
+      "name": "{khach} ơi, tối nay 19:00 lớp mình có buổi học nha, {khach} nhớ vào đúng giờ giúp {ad} nhé.",
+      "pixels": 309,
+      "percent": 1.5
+    },
+    {
+      "id": "2711:70347",
+      "name": "Nội dung tin nhắn",
+      "pixels": 28,
+      "percent": 1.4
+    },
+    {
+      "id": "2711:70358",
+      "name": "Xem trước",
+      "pixels": 17,
+      "percent": 1.4
+    },
+    {
+      "id": "I2711:70264;2015:36008",
+      "name": "Value",
+      "pixels": 16,
+      "percent": 1.2
+    },
+    {
+      "id": "2711:70442",
+      "name": "Chúc mừng hoàn thành khoá học",
+      "pixels": 60,
+      "percent": 1.2
+    },
+    {
+      "id": "2711:70398",
+      "name": "Nhắc lịch học",
+      "pixels": 23,
+      "percent": 1.1
+    },
+    {
+      "id": "2711:70420",
+      "name": "Nhắc lịch hẹn tư vấn",
+      "pixels": 35,
+      "percent": 1.1
+    }
+  ],
+  "regions": [
+    {
+      "x": 88,
+      "y": 736,
+      "width": 104,
+      "height": 8,
+      "pixels": 86,
+      "node": {
+        "id": "I4915:251998;4915:219007",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1288,
+      "y": 152,
+      "width": 32,
+      "height": 24,
+      "pixels": 59,
+      "node": {
+        "id": "2711:70302",
+        "name": "Actions",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 168,
+    "missing": [],
+    "withinThreshold": 168,
+    "buckets": {
+      "≤0.5px": 168,
+      "≤1px": 168,
+      "≤2px": 168,
+      "≤4px": 168,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2711:70417",
+        "name": "Title Line",
+        "role": "container",
+        "delta": 0.36,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:70420",
+        "name": "Nhắc lịch hẹn tư vấn",
+        "role": "text",
+        "delta": 0.36,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:70362",
+        "name": "Cập nhật 14:20 - 28.09.2026 · Admin Đắc Nhân",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:70363",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:70363;1048:1240",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:70365",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:70365;1048:1238",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:70298",
+        "name": "Title Line",
+        "role": "container",
+        "delta": 0.2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.2,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:70301",
+        "name": "Xác nhận thông tin với khách",
+        "role": "text",
+        "delta": 0.2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.2,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:251998;4915:218968",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:251998;4915:218953",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:251998;4915:218954",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:251998;4915:218955",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:251998;4915:218967",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:69027",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4050:122361",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "2711:69075",
+        "name": "ACCOUNT",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:69075;2008:30986",
+        "name": "Frame 1171274934",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:69075;2008:31747",
+        "name": "Background+Border+Shadow",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:69075;2008:31748",
+        "name": "Avatar",
+        "role": "image",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:69075;1391:17264",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:69075;1391:17266",
+        "name": "Admin Đắc Nhân",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:69075;1391:17268",
+        "name": "admin@gmail.com",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:69075;1391:17270",
+        "name": "Overlay",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4915:251998",
+        "name": "Sidebar · MENU - ADMIN",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 0.36,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/tin-nhan/danh-sach-mau-tin-nhan",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

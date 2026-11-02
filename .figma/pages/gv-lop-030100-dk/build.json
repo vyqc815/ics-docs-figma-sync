@@ -1,6 +1,30 @@
 {
   "route": "/chi-tiet-lop/bai-hoc/buoi-hoc-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-lop-030100-dk/index.tsx",
   "docFile": "docs/pages/chi-tiet-lop/bai-hoc/buoi-hoc-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4324:30256",
+      "component": "Body3",
+      "file": "components/figma/shared/Body3.tsx"
+    },
+    {
+      "nodeId": "4324:30257",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-030100-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4324:30571",
+      "component": "Header31",
+      "file": "components/figma/shared/Header31.tsx"
+    },
+    {
+      "nodeId": "4324:30622",
+      "component": "SidebarRail",
+      "file": "components/figma/gv-lop-030100-dk/SidebarRail.tsx"
+    }
+  ],
+  "idAlias": {
+    "4324:30256": "769:30964"
+  }
 }

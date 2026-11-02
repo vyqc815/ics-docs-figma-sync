@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/hoc-ky/thong-tin`
 - Verdict: **PASS**
-- Pixels outside text: **0.017%** differ (limit 0.5%); all pixels: 0.418%; inside text boxes: 1.486% (glyph rendering)
+- Pixels outside text: **0.014%** differ (limit 0.5%); all pixels: 0.407%; inside text boxes: 1.461% (glyph rendering)
 - Boxes: 291/291 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 285, ≤1px: 287, ≤2px: 291, ≤4px: 291, >4px: 0
 
 ## Pixel regions (largest first)
@@ -11,11 +11,9 @@
 | --- | --- | --- |
 | 400, 736, 32×32 | 81 | Action Icon (`I1185:2855;1071:20021`, icon) |
 | 488, 736, 16×32 | 50 | Atom/Button (`1185:2855`, instance) |
-| 1144, 456, 24×16 | 42 | Leading (`I6006:130414;2015:31836;6006:130418;2015:30561`, icon) |
 | 104, 80, 16×24 | 16 | Frame 1171274940 (`I4915:255632;4901:220681`, icon) |
 | 120, 192, 16×8 | 9 | Icon (`I4915:255632;4901:220687;2245:87904`, icon) |
 | 120, 872, 16×8 | 9 | Icon (`I4915:255632;4901:220699;2245:87904`, icon) |
-| 1152, 432, 8×8 | 6 | Chỉnh sửa (`I6006:130414;2015:31836;6006:130417`, instance) |
 | 24, 760, 8×8 | 4 | LOGO CENTER (`I4915:255632;4901:220731`, icon) |
 
 ## Text boxes with most differing pixels (limit 35%)
@@ -27,7 +25,6 @@
 | Label (`I4915:255632;4901:220689;2245:87908`) | 7.8% |
 | - Tổng ôn toàn diện nền tảng HSK1 qua các kiến thức chính: T (`497:29346`) | 5.4% |
 | - Chú trọng luyện nói và phản xạ giao tiếp, lồng ghép bài tậ (`497:29352`) | 5.4% |
-| Label (`I6006:130414;2015:31836;6006:130418;2015:30564`) | 4.6% |
 | - Học 59 điểm ngữ pháp & 398 từ vựng HSK1 xoay quanh Chủ đề  (`497:29348`) | 2.8% |
 | Nhãn trường (`I3004:49741;3004:58620;2808:48145`) | 2.8% |
 | Nhãn trường (`I3004:49928;3004:58620;2808:48145`) | 2.7% |
@@ -37,6 +34,7 @@
 | Nhãn trường (`I3004:49872;3004:58620;2808:48145`) | 2.3% |
 | Nhãn trường (`I3004:49916;3004:58620;2808:48145`) | 2.3% |
 | Nhãn trường (`I3004:50054;3004:58620;2808:48145`) | 2.3% |
+| Label (`I4915:255632;5491:336922;2245:87908`) | 2.3% |
 
 ## Largest box differences
 

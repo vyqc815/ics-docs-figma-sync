@@ -1,6 +1,22 @@
 {
   "route": "/chi-tiet-hoc-vien/log",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-hv-020400/index.tsx",
   "docFile": "docs/pages/chi-tiet-hoc-vien/log.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "1117:10970",
+      "component": "Maincontainer",
+      "file": "components/figma/adm-hv-020400/Maincontainer.tsx"
+    },
+    {
+      "nodeId": "2223:83909",
+      "component": "Header",
+      "file": "components/figma/adm-hv-020400/Header.tsx"
+    },
+    {
+      "nodeId": "4915:232232",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-hv-020400/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

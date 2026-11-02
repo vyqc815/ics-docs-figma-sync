@@ -1,6 +1,30 @@
 {
   "route": "/thong-ke/chi-so",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-tk-010000/index.tsx",
   "docFile": "docs/pages/thong-ke/chi-so.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4101:131684",
+      "component": "Bg",
+      "file": "components/figma/shared/Bg.tsx"
+    },
+    {
+      "nodeId": "4915:245826",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-tk-010000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "4101:131768",
+      "component": "Header",
+      "file": "components/figma/adm-tk-010000/Header.tsx"
+    },
+    {
+      "nodeId": "4101:135797",
+      "component": "MainChiSo",
+      "file": "components/figma/adm-tk-010000/MainChiSo.tsx"
+    }
+  ],
+  "idAlias": {
+    "4101:131684": "3857:85664"
+  }
 }

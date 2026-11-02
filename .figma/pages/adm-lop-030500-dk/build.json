@@ -1,6 +1,40 @@
 {
   "route": "/lop-hoc/bai-hoc/kien-thuc-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-030500-dk/index.tsx",
   "docFile": "docs/pages/lop-hoc/bai-hoc/kien-thuc-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:111947",
+      "component": "Body3",
+      "file": "components/figma/shared/Body3.tsx"
+    },
+    {
+      "nodeId": "4056:111948",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-030500-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:112036",
+      "component": "Header14",
+      "file": "components/figma/shared/Header14.tsx"
+    },
+    {
+      "nodeId": "4056:112085",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-030500-dk/SidebarRail.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:111947": "769:30964",
+    "4056:112036": "4056:111011",
+    "4056:112037": "4056:111012",
+    "4056:112084": "4056:111059",
+    "I4056:112084;2008:30986": "I4056:111059;2008:30986",
+    "I4056:112084;2008:31747": "I4056:111059;2008:31747",
+    "I4056:112084;2008:31748": "I4056:111059;2008:31748",
+    "I4056:112084;1391:17264": "I4056:111059;1391:17264",
+    "I4056:112084;1391:17266": "I4056:111059;1391:17266",
+    "I4056:112084;1391:17268": "I4056:111059;1391:17268",
+    "I4056:112084;1391:17270": "I4056:111059;1391:17270"
+  }
 }

@@ -1,0 +1,580 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 971,
+    "mismatched": 1474,
+    "percent": 0.105,
+    "shapePercent": 0.04,
+    "textPercent": 0.255,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4193:145802",
+      "name": "Hiểu Về Các Đối Tượng",
+      "pixels": 163,
+      "percent": 2.8
+    },
+    {
+      "id": "I4193:146185;1061:1316",
+      "name": "Kéo thả file vào đây hoặc chọn file",
+      "pixels": 120,
+      "percent": 2.7
+    },
+    {
+      "id": "4193:145946",
+      "name": "Nên Tránh để Tốt Hơn",
+      "pixels": 126,
+      "percent": 2.2
+    },
+    {
+      "id": "4193:145586",
+      "name": "CÁC CÔNG TÁC HÀNH CHÍNH",
+      "pixels": 79,
+      "percent": 1.3
+    },
+    {
+      "id": "4193:146183",
+      "name": "Tài liệu",
+      "pixels": 10,
+      "percent": 1.2
+    },
+    {
+      "id": "4193:145658",
+      "name": "BTVN - 1001 Cách Giúp Học Viên",
+      "pixels": 66,
+      "percent": 1.1
+    },
+    {
+      "id": "4193:145730",
+      "name": "Mindset của Đắc Nhân & PLS",
+      "pixels": 67,
+      "percent": 1.1
+    },
+    {
+      "id": "4193:145874",
+      "name": "Hãy là GIÁO VIÊN CÓ TÂM",
+      "pixels": 64,
+      "percent": 1.1
+    },
+    {
+      "id": "4193:146188",
+      "name": "Mô tả",
+      "pixels": 7,
+      "percent": 1
+    },
+    {
+      "id": "4193:145514",
+      "name": "HỌP BÀN GIAO 1",
+      "pixels": 47,
+      "percent": 0.8
+    },
+    {
+      "id": "I4915:249842;4899:202041;2245:87768",
+      "name": "Label",
+      "pixels": 16,
+      "percent": 0.6
+    },
+    {
+      "id": "I4915:249842;4899:202057;2245:87820",
+      "name": "Label",
+      "pixels": 14,
+      "percent": 0.5
+    },
+    {
+      "id": "I4915:249842;4899:202064;2245:87768",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 0.5
+    },
+    {
+      "id": "I4915:249842;4899:202054;2245:87820",
+      "name": "Label",
+      "pixels": 10,
+      "percent": 0.4
+    },
+    {
+      "id": "I4915:249842;4899:202060;2245:87820",
+      "name": "Label",
+      "pixels": 9,
+      "percent": 0.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 448,
+      "y": 536,
+      "width": 72,
+      "height": 8,
+      "pixels": 83,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 344,
+      "y": 432,
+      "width": 80,
+      "height": 16,
+      "pixels": 71,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 448,
+      "y": 432,
+      "width": 72,
+      "height": 16,
+      "pixels": 70,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 344,
+      "y": 536,
+      "width": 72,
+      "height": 8,
+      "pixels": 62,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 544,
+      "y": 536,
+      "width": 80,
+      "height": 8,
+      "pixels": 60,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 552,
+      "y": 432,
+      "width": 72,
+      "height": 16,
+      "pixels": 56,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 672,
+      "y": 464,
+      "width": 8,
+      "height": 56,
+      "pixels": 55,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 288,
+      "y": 464,
+      "width": 8,
+      "height": 56,
+      "pixels": 40,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 296,
+      "y": 432,
+      "width": 24,
+      "height": 16,
+      "pixels": 14,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 288,
+      "y": 536,
+      "width": 24,
+      "height": 8,
+      "pixels": 14,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 656,
+      "y": 432,
+      "width": 16,
+      "height": 16,
+      "pixels": 13,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 656,
+      "y": 536,
+      "width": 16,
+      "height": 8,
+      "pixels": 12,
+      "node": {
+        "id": "4193:146185",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 213,
+    "missing": [],
+    "withinThreshold": 213,
+    "buckets": {
+      "≤0.5px": 212,
+      "≤1px": 212,
+      "≤2px": 213,
+      "≤4px": 213,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4193:146185;1061:1317",
+        "name": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "role": "text",
+        "delta": 1.2,
+        "dx": -0.61,
+        "dy": 0,
+        "dw": 1.2,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:249842;4915:217860",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:249842;4915:217845",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:249842;4915:217846",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:249842;4915:217847",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:249842;4915:217859",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4193:145511;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4193:145583;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4193:145655;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4193:145727;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4193:145799;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4193:145871;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4193:145943;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4193:144449",
+        "name": "Header",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4915:249842",
+        "name": "Sidebar · MENU - ADMIN",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:249842;4915:217795",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:249842;4915:217862",
+        "name": "Nav Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:249842;4915:217863",
+        "name": "MENU - ADMIN (Tổng)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:249842;4899:202030",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:249842;4899:202030;2245:87821",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:249842;4899:202030;2245:87816",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:249842;4899:202030;2245:87820",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:249842;4899:202030;2245:87822",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:249842;4899:202041",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:249842;4899:202041;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.2,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/tai-lieu/chi-tiet-tai-lieu",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

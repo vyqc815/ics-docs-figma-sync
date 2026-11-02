@@ -1,6 +1,22 @@
 {
   "route": "/tin-nhan/danh-sach-mau-tin-nhan",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-tn-010000/index.tsx",
   "docFile": "docs/pages/tin-nhan/danh-sach-mau-tin-nhan.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2711:69027",
+      "component": "Header",
+      "file": "components/figma/adm-tn-010000/Header.tsx"
+    },
+    {
+      "nodeId": "4915:251998",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-tn-010000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "2711:70256",
+      "component": "Maincontent",
+      "file": "components/figma/adm-tn-010000/Maincontent.tsx"
+    }
+  ]
 }

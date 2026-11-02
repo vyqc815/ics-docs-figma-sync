@@ -1,6 +1,17 @@
 {
   "route": "/task-tuan",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-task-010000/index.tsx",
   "docFile": "docs/pages/task-tuan.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4343:79262",
+      "component": "Body",
+      "file": "components/figma/adm-task-010000/Body.tsx"
+    },
+    {
+      "nodeId": "4343:79398",
+      "component": "Section2",
+      "file": "components/figma/adm-task-010000/Section2.tsx"
+    }
+  ]
 }

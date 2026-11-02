@@ -1,6 +1,34 @@
 {
   "route": "/lop-hoc/cai-dat/hoc-vien-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-040200-dk/index.tsx",
   "docFile": "docs/pages/lop-hoc/cai-dat/hoc-vien-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:116187",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-040200-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:116393",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-040200-dk/SidebarRail.tsx"
+    },
+    {
+      "nodeId": "4056:116486",
+      "component": "Header17",
+      "file": "components/figma/shared/Header17.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:116486": "4056:116131",
+    "4056:116487": "4056:116132",
+    "4056:116534": "4056:116179",
+    "I4056:116534;2008:30986": "I4056:116179;2008:30986",
+    "I4056:116534;2008:31747": "I4056:116179;2008:31747",
+    "I4056:116534;2008:31748": "I4056:116179;2008:31748",
+    "I4056:116534;1391:17264": "I4056:116179;1391:17264",
+    "I4056:116534;1391:17266": "I4056:116179;1391:17266",
+    "I4056:116534;1391:17268": "I4056:116179;1391:17268",
+    "I4056:116534;1391:17270": "I4056:116179;1391:17270"
+  }
 }

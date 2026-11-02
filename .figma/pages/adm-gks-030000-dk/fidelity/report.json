@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 3012,
+    "percent": 0.258,
+    "shapePercent": 0.052,
+    "textPercent": 1.399,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4885:66746;2245:87864",
+      "name": "Label",
+      "pixels": 557,
+      "percent": 22.3
+    },
+    {
+      "id": "4885:62107",
+      "name": "Tên khảo sát",
+      "pixels": 607,
+      "percent": 10.4
+    },
+    {
+      "id": "I4885:66745;2245:87858",
+      "name": "Label",
+      "pixels": 242,
+      "percent": 9.7
+    },
+    {
+      "id": "I4885:62161;1048:1255",
+      "name": "Badge",
+      "pixels": 53,
+      "percent": 4.6
+    },
+    {
+      "id": "I4885:62217;1048:1255",
+      "name": "Badge",
+      "pixels": 53,
+      "percent": 4.6
+    },
+    {
+      "id": "I4885:66747;2245:87820",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.7
+    },
+    {
+      "id": "I4885:66740;2245:87820",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.4
+    },
+    {
+      "id": "I4885:66741;2245:87768",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.4
+    },
+    {
+      "id": "I4885:66749;2245:87820",
+      "name": "Label",
+      "pixels": 61,
+      "percent": 2.4
+    },
+    {
+      "id": "4885:62128",
+      "name": "Nguyễn Văn An",
+      "pixels": 42,
+      "percent": 2.3
+    },
+    {
+      "id": "I4885:66751;2245:87768",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.2
+    },
+    {
+      "id": "I4885:66750;2245:87768",
+      "name": "Label",
+      "pixels": 54,
+      "percent": 1.9
+    },
+    {
+      "id": "I4885:66744;2245:87839",
+      "name": "Label",
+      "pixels": 45,
+      "percent": 1.8
+    },
+    {
+      "id": "I4885:66752;2245:87768",
+      "name": "Label",
+      "pixels": 51,
+      "percent": 1.8
+    },
+    {
+      "id": "4885:62269",
+      "name": "Tên",
+      "pixels": 77,
+      "percent": 1.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 1168,
+      "y": 344,
+      "width": 152,
+      "height": 32,
+      "pixels": 584,
+      "node": {
+        "id": "4885:62264",
+        "name": "Trạng thái giao",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4885:66724",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4885:66724",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 299,
+    "missing": [],
+    "withinThreshold": 299,
+    "buckets": {
+      "≤0.5px": 298,
+      "≤1px": 298,
+      "≤2px": 299,
+      "≤4px": 299,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4885:62107",
+        "name": "Tên khảo sát",
+        "role": "text",
+        "delta": 1.83,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.83,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62128",
+        "name": "Nguyễn Văn An",
+        "role": "text",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62116",
+        "name": "Học viên được giao",
+        "role": "text",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62110",
+        "name": "Tabs · Giao / Kết quả",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62112",
+        "name": "Tab · Kết quả khảo sát",
+        "role": "instance",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62112;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62112;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62271",
+        "name": "Số lượng",
+        "role": "instance",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62271;1050:2411",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62131",
+        "name": "15:15 · 06.08.2026",
+        "role": "text",
+        "delta": 0.05,
+        "dx": -0.03,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62145",
+        "name": "15:15 · 06.08.2026",
+        "role": "text",
+        "delta": 0.05,
+        "dx": -0.03,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62173",
+        "name": "15:15 · 06.08.2026",
+        "role": "text",
+        "delta": 0.05,
+        "dx": -0.03,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62229",
+        "name": "15:15 · 06.08.2026",
+        "role": "text",
+        "delta": 0.05,
+        "dx": -0.03,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:66737",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:66722",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:66723",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:66724",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:66736",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62250;4885:58949",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62264;4885:58940",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:66670",
+        "name": "Sidebar",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4885:66671",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4885:66739",
+        "name": "Menu Chính",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4885:66740",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:66740;2245:87821",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.83,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/khao-sat/giao-khao-sat-hoc-vien/danh-sach-hoc-vien-duoc-giao-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

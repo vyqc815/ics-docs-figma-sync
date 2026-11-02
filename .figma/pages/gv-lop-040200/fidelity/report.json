@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 873,
+    "mismatched": 3115,
+    "percent": 0.248,
+    "shapePercent": 0.001,
+    "textPercent": 1.071,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4324:99746;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "I4324:99770;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "I4324:99794;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "I4324:99745;1308:6798",
+      "name": "22/24",
+      "pixels": 82,
+      "percent": 24.4
+    },
+    {
+      "id": "I4324:99769;1308:6798",
+      "name": "22/24",
+      "pixels": 66,
+      "percent": 23.6
+    },
+    {
+      "id": "I4324:99793;1308:6798",
+      "name": "22/24",
+      "pixels": 66,
+      "percent": 23.6
+    },
+    {
+      "id": "4324:86235",
+      "name": "Tổng Quan",
+      "pixels": 502,
+      "percent": 15.6
+    },
+    {
+      "id": "I4915:260342;4901:213764;2245:87908",
+      "name": "Label",
+      "pixels": 141,
+      "percent": 5.9
+    },
+    {
+      "id": "4324:99611",
+      "name": "00:06:57",
+      "pixels": 69,
+      "percent": 5.5
+    },
+    {
+      "id": "4324:99451",
+      "name": "00:03:59",
+      "pixels": 67,
+      "percent": 5.3
+    },
+    {
+      "id": "4324:99577",
+      "name": "00:02:35",
+      "pixels": 66,
+      "percent": 5.2
+    },
+    {
+      "id": "4324:99517",
+      "name": "00:05:06",
+      "pixels": 61,
+      "percent": 4.8
+    },
+    {
+      "id": "4324:99418",
+      "name": "00:05:49",
+      "pixels": 58,
+      "percent": 4.6
+    },
+    {
+      "id": "4324:99644",
+      "name": "00:06:32",
+      "pixels": 57,
+      "percent": 4.5
+    },
+    {
+      "id": "4324:99703",
+      "name": "00:05:42",
+      "pixels": 55,
+      "percent": 4.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 824,
+      "y": 152,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "I4324:86242;3108:127769",
+        "name": "Ô biểu tượng",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 513,
+    "missing": [],
+    "withinThreshold": 513,
+    "buckets": {
+      "≤0.5px": 510,
+      "≤1px": 512,
+      "≤2px": 513,
+      "≤4px": 513,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4324:86235",
+        "name": "Tổng Quan",
+        "role": "text",
+        "delta": 1.66,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.66,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260342;4901:213775;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260342;4901:213775;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260342;4901:213766;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260342;4901:213766;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:99392;3304:59612",
+        "name": "Chưa nộp",
+        "role": "text",
+        "delta": 0.19,
+        "dx": -0.09,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:99551;3304:59612",
+        "name": "Chưa nộp",
+        "role": "text",
+        "delta": 0.19,
+        "dx": -0.09,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:99677;3304:59612",
+        "name": "Chưa nộp",
+        "role": "text",
+        "delta": 0.19,
+        "dx": -0.09,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260342;4901:213771;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260342;4901:213771;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4324:86241",
+        "name": "Thẻ chỉ số",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:86241;3004:47241",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:86241;3004:47242",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4324:86243",
+        "name": "Thẻ chỉ số",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:86243;3004:47241",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:86243;3004:47242",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:86243;3108:127769",
+        "name": "Ô biểu tượng",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4324:86244",
+        "name": "Thẻ chỉ số",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:86244;3004:47241",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:86244;3004:47242",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:86244;3004:47243",
+        "name": "Số liệu + đơn vị",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:86244;3004:47244",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4324:86244;3004:47245",
+        "name": "Đơn vị",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:260342;4901:213709",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:260342;4901:213716",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 1.66,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

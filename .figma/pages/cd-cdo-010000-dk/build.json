@@ -1,6 +1,30 @@
 {
   "route": "/quan-ly-cap-do-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-cdo-010000-dk/index.tsx",
   "docFile": "docs/pages/quan-ly-cap-do-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:144846",
+      "component": "Masterlayout",
+      "file": "components/figma/shared/Masterlayout.tsx"
+    },
+    {
+      "nodeId": "4056:144847",
+      "component": "Header",
+      "file": "components/figma/cd-cdo-010000-dk/Header.tsx"
+    },
+    {
+      "nodeId": "4056:144896",
+      "component": "Section3",
+      "file": "components/figma/cd-cdo-010000-dk/Section3.tsx"
+    },
+    {
+      "nodeId": "4056:144976",
+      "component": "Sidebar",
+      "file": "components/figma/cd-cdo-010000-dk/Sidebar.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:144846": "689:12943"
+  }
 }

@@ -1,6 +1,27 @@
 {
   "route": "/gift-code/danh-sach-gift-code",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-gc-010000-2/index.tsx",
   "docFile": "docs/pages/gift-code/danh-sach-gift-code.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3857:85664",
+      "component": "Bg",
+      "file": "components/figma/shared/Bg.tsx"
+    },
+    {
+      "nodeId": "4915:240264",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-gc-010000-2/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3857:85751",
+      "component": "Header",
+      "file": "components/figma/adm-gc-010000-2/Header.tsx"
+    },
+    {
+      "nodeId": "3977:76307",
+      "component": "MainGiftCode",
+      "file": "components/figma/adm-gc-010000-2/MainGiftCode.tsx"
+    }
+  ]
 }

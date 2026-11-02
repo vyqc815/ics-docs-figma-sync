@@ -1,6 +1,22 @@
 {
   "route": "/lop-hoc/cai-dat/giao-vien",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-040300/index.tsx",
   "docFile": "docs/pages/lop-hoc/cai-dat/giao-vien.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2384:50873",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-040300/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4915:229723",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-040300/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3497:50845",
+      "component": "Header16",
+      "file": "components/figma/shared/Header16.tsx"
+    }
+  ]
 }

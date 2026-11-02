@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 1837,
+    "percent": 0.157,
+    "shapePercent": 0,
+    "textPercent": 3.029,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4333:13494;2245:87914",
+      "name": "Label",
+      "pixels": 580,
+      "percent": 27.1
+    },
+    {
+      "id": "I4899:187812;2245:87908",
+      "name": "Label",
+      "pixels": 205,
+      "percent": 8.5
+    },
+    {
+      "id": "I4333:13490;2245:87908",
+      "name": "Label",
+      "pixels": 254,
+      "percent": 6.3
+    },
+    {
+      "id": "I4333:13491;2245:87908",
+      "name": "Label",
+      "pixels": 104,
+      "percent": 4.9
+    },
+    {
+      "id": "I4333:13487;689:15190",
+      "name": "Label",
+      "pixels": 54,
+      "percent": 4.6
+    },
+    {
+      "id": "I4333:13496;689:15190",
+      "name": "Label",
+      "pixels": 42,
+      "percent": 3.9
+    },
+    {
+      "id": "I4333:13492;689:15190",
+      "name": "Label",
+      "pixels": 38,
+      "percent": 3.6
+    },
+    {
+      "id": "I4333:13498;2245:87908",
+      "name": "Label",
+      "pixels": 60,
+      "percent": 2.8
+    },
+    {
+      "id": "I4333:13499;2245:87908",
+      "name": "Label",
+      "pixels": 83,
+      "percent": 2.1
+    },
+    {
+      "id": "I4333:13501;2245:87908",
+      "name": "Label",
+      "pixels": 44,
+      "percent": 1.8
+    },
+    {
+      "id": "I4899:187534;4899:187330",
+      "name": "Vai trò",
+      "pixels": 17,
+      "percent": 1.6
+    },
+    {
+      "id": "I4333:13495;2245:87908",
+      "name": "Label",
+      "pixels": 31,
+      "percent": 1.4
+    },
+    {
+      "id": "I4333:13500;2245:87908",
+      "name": "Label",
+      "pixels": 33,
+      "percent": 1.4
+    },
+    {
+      "id": "4333:13375",
+      "name": "Bảng dữ liệu này đang trống",
+      "pixels": 84,
+      "percent": 1.3
+    },
+    {
+      "id": "4333:13382",
+      "name": "Bảng dữ liệu này đang trống",
+      "pixels": 84,
+      "percent": 1.3
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 111,
+    "missing": [],
+    "withinThreshold": 111,
+    "buckets": {
+      "≤0.5px": 109,
+      "≤1px": 111,
+      "≤2px": 111,
+      "≤4px": 111,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4333:13496;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4333:13496;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13375",
+        "name": "Bảng dữ liệu này đang trống",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13382",
+        "name": "Bảng dữ liệu này đang trống",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4333:13487;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4333:13487;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13372",
+        "name": "Chi tiết buổi học",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4333:13492;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4333:13492;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13437",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4333:13444",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4333:13458",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4333:13459",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4333:13462",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4333:13368",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4333:13369",
+        "name": "MainContent",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4333:13370",
+        "name": "Frame 427321965",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13371",
+        "name": "Frame 427321964",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13373",
+        "name": "Empty State · Chi tiết buổi học",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13374",
+        "name": "Empty State / Illustration",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13376",
+        "name": "Frame 1171274937",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13377",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13378",
+        "name": "Frame 1171274941",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13379",
+        "name": "Danh sách bài học",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4333:13380",
+        "name": "Empty State · Danh sách bài học",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.55,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-lop/tieu-chuan-lop/trong-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

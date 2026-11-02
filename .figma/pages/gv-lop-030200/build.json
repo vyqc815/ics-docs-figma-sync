@@ -1,6 +1,30 @@
 {
   "route": "/chi-tiet-lop/bai-hoc/thong-tin",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-lop-030200/index.tsx",
   "docFile": "docs/pages/chi-tiet-lop/bai-hoc/thong-tin.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4324:16968",
+      "component": "Body3",
+      "file": "components/figma/shared/Body3.tsx"
+    },
+    {
+      "nodeId": "4324:16969",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-030200/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4324:19674",
+      "component": "Header",
+      "file": "components/figma/gv-lop-030200/Header.tsx"
+    },
+    {
+      "nodeId": "4915:259928",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-030200/SidebarMenuTeacher.tsx"
+    }
+  ],
+  "idAlias": {
+    "4324:16968": "769:30964"
+  }
 }

@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/quan-ly-khoa-hoc-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.494%** differ (limit 0.5%); all pixels: 1.035%; inside text boxes: 2.475% (glyph rendering)
+- Pixels outside text: **0.494%** differ (limit 0.5%); all pixels: 1.034%; inside text boxes: 2.468% (glyph rendering)
 - Boxes: 289/289 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 191, ≤1px: 216, ≤2px: 289, ≤4px: 289, >4px: 0
 
 ## Pixel regions (largest first)
@@ -40,16 +40,16 @@
 | --- | --- |
 | Label (`I6015:65839;4901:216086;2245:87774`) | 15.5% |
 | 1 (`6015:66019`) | 13.3% |
-| Label (`I6015:65839;4901:216102;2245:87820`) | 8.6% |
-| Label (`I6015:65839;4901:216096;2245:87820`) | 8% |
+| Label (`I6015:65839;4901:216102;2245:87820`) | 8.7% |
+| Label (`I6015:65839;4901:216096;2245:87820`) | 7.8% |
 | Mô tả khoá học (`6015:65908`) | 6.5% |
 | Label (`I6015:65839;4901:216088;2245:87768`) | 5.9% |
-| Label (`I6015:65839;4901:216089;2245:87820`) | 5.7% |
+| Label (`I6015:65839;4901:216089;2245:87820`) | 5.4% |
 | Tiếng Trung Sơ Cấp HSK2 (`6015:65939`) | 4.9% |
 | Tiếng Trung Tổng Hợp HSK3 (`6015:65958`) | 4.8% |
 | Value (`I6015:65984;2706:40462`) | 4.8% |
 | Value (`I6015:66002;2706:40462`) | 4.8% |
-| Label (`I6015:65839;4901:216087;2245:87768`) | 4.6% |
+| Label (`I6015:65839;4901:216087;2245:87768`) | 4.7% |
 | - Mở Rộng Ngữ Pháp HSK3 Cốt Lõi: 把, 被, 比, 了 / 过 / 着 - 20+ Ch (`6015:65960`) | 4.3% |
 | Trạng thái (`6015:65916`) | 4.1% |
 | Phát âm, 398 từ vựng và 59 điểm ngữ pháp nền tảng HSK1 (`6015:65922`) | 4% |

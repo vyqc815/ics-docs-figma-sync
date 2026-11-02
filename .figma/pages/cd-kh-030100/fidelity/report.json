@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 910,
-    "mismatched": 5473,
-    "percent": 0.418,
-    "shapePercent": 0.017,
-    "textPercent": 1.486,
+    "mismatched": 5335,
+    "percent": 0.407,
+    "shapePercent": 0.014,
+    "textPercent": 1.461,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -48,12 +48,6 @@
       "name": "- Chú trọng luyện nói và phản xạ giao tiếp, lồng ghép bài tập của đề thi HSKK vào phần luyện nói.",
       "pixels": 850,
       "percent": 5.4
-    },
-    {
-      "id": "I6006:130414;2015:31836;6006:130418;2015:30564",
-      "name": "Label",
-      "pixels": 81,
-      "percent": 4.6
     },
     {
       "id": "497:29348",
@@ -108,6 +102,12 @@
       "name": "Nhãn trường",
       "pixels": 38,
       "percent": 2.3
+    },
+    {
+      "id": "I4915:255632;5491:336922;2245:87908",
+      "name": "Label",
+      "pixels": 55,
+      "percent": 2.3
     }
   ],
   "regions": [
@@ -133,18 +133,6 @@
         "id": "1185:2855",
         "name": "Atom/Button",
         "role": "instance"
-      }
-    },
-    {
-      "x": 1144,
-      "y": 456,
-      "width": 24,
-      "height": 16,
-      "pixels": 42,
-      "node": {
-        "id": "I6006:130414;2015:31836;6006:130418;2015:30561",
-        "name": "Leading",
-        "role": "icon"
       }
     },
     {
@@ -181,18 +169,6 @@
         "id": "I4915:255632;4901:220699;2245:87904",
         "name": "Icon",
         "role": "icon"
-      }
-    },
-    {
-      "x": 1152,
-      "y": 432,
-      "width": 8,
-      "height": 8,
-      "pixels": 6,
-      "node": {
-        "id": "I6006:130414;2015:31836;6006:130417",
-        "name": "Chỉnh sửa",
-        "role": "instance"
       }
     },
     {

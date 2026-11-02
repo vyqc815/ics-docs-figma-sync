@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-010000 — Quản lý khoá học (`458:4142`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/quan-ly-khoa-hoc`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T02:11:34.276Z  
+> **Xuất lúc:** 2026-11-02T02:47:29.314Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/cd-kh-010000/page-spec.json`
 
 ## 1. Tổng quan

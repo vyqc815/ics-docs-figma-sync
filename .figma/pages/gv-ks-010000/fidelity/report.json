@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 558,
+    "percent": 0.048,
+    "shapePercent": 0.001,
+    "textPercent": 0.385,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4686:43791;1048:1249",
+      "name": "Badge",
+      "pixels": 34,
+      "percent": 3
+    },
+    {
+      "id": "I4686:43759;2245:87768",
+      "name": "Label",
+      "pixels": 40,
+      "percent": 1.4
+    },
+    {
+      "id": "I4885:104492;4885:104467;1971:8814",
+      "name": "Value",
+      "pixels": 3,
+      "percent": 1.2
+    },
+    {
+      "id": "4686:43778",
+      "name": "Khảo sát thiết kế template, mức độ thân ",
+      "pixels": 214,
+      "percent": 1
+    },
+    {
+      "id": "I4686:43793;1048:1238",
+      "name": "Button",
+      "pixels": 18,
+      "percent": 1
+    },
+    {
+      "id": "I4686:43684;4019:24078",
+      "name": "Sakumi",
+      "pixels": 16,
+      "percent": 0.8
+    },
+    {
+      "id": "I4686:43768;3554:65718;1971:8814",
+      "name": "Value",
+      "pixels": 2,
+      "percent": 0.8
+    },
+    {
+      "id": "I4686:43682;2008:31783",
+      "name": "GV.dacnhan@gmail.com",
+      "pixels": 20,
+      "percent": 0.7
+    },
+    {
+      "id": "I4686:43783;1048:1238",
+      "name": "Button",
+      "pixels": 12,
+      "percent": 0.7
+    },
+    {
+      "id": "I4686:43756;2245:87768",
+      "name": "Label",
+      "pixels": 14,
+      "percent": 0.5
+    },
+    {
+      "id": "I4814:159005;2245:87768",
+      "name": "Label",
+      "pixels": 13,
+      "percent": 0.5
+    },
+    {
+      "id": "I4686:43777;1048:1251",
+      "name": "Badge",
+      "pixels": 6,
+      "percent": 0.5
+    },
+    {
+      "id": "I6244:56401;2245:87768",
+      "name": "Label",
+      "pixels": 12,
+      "percent": 0.4
+    },
+    {
+      "id": "I4686:43760;2245:87768",
+      "name": "Label",
+      "pixels": 11,
+      "percent": 0.4
+    },
+    {
+      "id": "I4686:43682;2008:31872",
+      "name": "GV",
+      "pixels": 1,
+      "percent": 0.3
+    }
+  ],
+  "regions": [
+    {
+      "x": 568,
+      "y": 272,
+      "width": 8,
+      "height": 16,
+      "pixels": 5,
+      "node": {
+        "id": "4686:43780",
+        "name": "Thanh",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 108,
+    "missing": [],
+    "withinThreshold": 108,
+    "buckets": {
+      "≤0.5px": 108,
+      "≤1px": 108,
+      "≤2px": 108,
+      "≤4px": 108,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4686:43772",
+        "name": "Thời gian giao",
+        "role": "container",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4686:43774",
+        "name": "Giao lúc 18:52 · 04.08.2026",
+        "role": "text",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4686:43751",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4686:43736",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4686:43737",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4686:43738",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4686:43750",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4686:43633",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4686:43634",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4686:43635",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4686:43682",
+        "name": "ACCOUNT",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43682;2008:31778",
+        "name": "Frame 1171274934",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43682;2008:31870",
+        "name": "Background+Shadow",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43682;2008:31871",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43682;2008:31872",
+        "name": "GV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43682;2008:31781",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43682;2008:31782",
+        "name": "Giáo Viên",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43682;2008:31783",
+        "name": "GV.dacnhan@gmail.com",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43682;2008:31784",
+        "name": "Overlay",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4686:43684",
+        "name": "Component 2",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43684;4019:24067",
+        "name": "Frame 427325409",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43684;4019:24068",
+        "name": "LOGO CENTER",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43684;4019:24078",
+        "name": "Sakumi",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:43684;4019:24079",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:187331",
+        "name": "Header/Vai trò",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.09,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/khao-sat/danh-sach-khao-sat",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

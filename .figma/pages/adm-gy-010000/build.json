@@ -1,6 +1,22 @@
 {
   "route": "/gop-y/hoc-vien",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-gy-010000/index.tsx",
   "docFile": "docs/pages/gop-y/hoc-vien.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4193:146266",
+      "component": "Header",
+      "file": "components/figma/adm-gy-010000/Header.tsx"
+    },
+    {
+      "nodeId": "4915:250458",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-gy-010000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "4193:146783",
+      "component": "MainGopY",
+      "file": "components/figma/adm-gy-010000/MainGopY.tsx"
+    }
+  ]
 }

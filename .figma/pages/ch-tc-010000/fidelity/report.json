@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 903,
+    "percent": 0.077,
+    "shapePercent": 0,
+    "textPercent": 0.412,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I3778:20942;1391:14476",
+      "name": "80%",
+      "pixels": 75,
+      "percent": 26.8
+    },
+    {
+      "id": "I3778:34714;1391:14476",
+      "name": "80%",
+      "pixels": 75,
+      "percent": 26.8
+    },
+    {
+      "id": "I3778:34722;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "I3778:34517;1308:6706",
+      "name": "0%",
+      "pixels": 45,
+      "percent": 23
+    },
+    {
+      "id": "3778:34640",
+      "name": "Ngày kết thúc",
+      "pixels": 70,
+      "percent": 4
+    },
+    {
+      "id": "3778:34642",
+      "name": "30.07. 2025",
+      "pixels": 49,
+      "percent": 3.5
+    },
+    {
+      "id": "I4915:257387;4901:224689;3857:67911;1971:8814",
+      "name": "Value",
+      "pixels": 4,
+      "percent": 1.6
+    },
+    {
+      "id": "3778:20916",
+      "name": "DN1-119",
+      "pixels": 24,
+      "percent": 1.6
+    },
+    {
+      "id": "3778:34508",
+      "name": "DN1-119",
+      "pixels": 24,
+      "percent": 1.6
+    },
+    {
+      "id": "3778:34547",
+      "name": "DN1-119",
+      "pixels": 24,
+      "percent": 1.6
+    },
+    {
+      "id": "3778:34586",
+      "name": "DN1-119",
+      "pixels": 24,
+      "percent": 1.6
+    },
+    {
+      "id": "3778:20154",
+      "name": "Thống kê tổng quan",
+      "pixels": 87,
+      "percent": 1.5
+    },
+    {
+      "id": "I6247:155137;2015:36008",
+      "name": "Value",
+      "pixels": 16,
+      "percent": 1.5
+    },
+    {
+      "id": "I4915:257387;4901:224688;3857:67911;1971:8814",
+      "name": "Value",
+      "pixels": 3,
+      "percent": 1.2
+    },
+    {
+      "id": "3778:34650",
+      "name": "T4, 18h30",
+      "pixels": 14,
+      "percent": 1.2
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 314,
+    "missing": [],
+    "withinThreshold": 314,
+    "buckets": {
+      "≤0.5px": 314,
+      "≤1px": 314,
+      "≤2px": 314,
+      "≤4px": 314,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3778:34631",
+        "name": "Kết quả",
+        "role": "text",
+        "delta": 0.27,
+        "dx": -0.14,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3778:34638",
+        "name": "20.12.2025",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:257387;4901:224678",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:257387;4901:224663",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:257387;4901:224664",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:257387;4901:224665",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:257387;4901:224677",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:24891;1308:10508",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:34580;1454:2860",
+        "name": "Group 240059",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:34580;1454:2861",
+        "name": "Rectangle 5627",
+        "role": "shape",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:34580;1454:2862",
+        "name": "Rectangle 5626",
+        "role": "shape",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3778:20023",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "3778:20024",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4050:123428",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "3778:20072",
+        "name": "ACCOUNT",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:20072;2008:31704",
+        "name": "Frame 1171274934",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:20072;2008:31899",
+        "name": "Background+Shadow",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:20072;2008:31900",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:20072;2008:31901",
+        "name": "PTL",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:20072;2008:31708",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:20072;2008:31709",
+        "name": "Phụ Trách Lớp Đắc Nhân",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:20072;2008:31710",
+        "name": "PTL.dacnhan@gmail.com",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3778:20072;2008:31711",
+        "name": "Overlay",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4915:257387",
+        "name": "Sidebar · MENU - CLASS HANDLER",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:257387;4901:224612",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 0.27,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/trang-chu/thong-ke-tong-quan",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

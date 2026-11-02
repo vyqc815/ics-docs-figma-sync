@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 989,
+    "mismatched": 2576,
+    "percent": 0.181,
+    "shapePercent": 0.001,
+    "textPercent": 0.94,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4343:82847;1308:6706",
+      "name": "0%",
+      "pixels": 45,
+      "percent": 23
+    },
+    {
+      "id": "4343:82395",
+      "name": "[Giữa Tuần - Thứ 4 - CSKH] Báo Cáo Tiến Độ Công Việc",
+      "pixels": 629,
+      "percent": 3.2
+    },
+    {
+      "id": "4343:82596",
+      "name": "[Cuối Tuần - Thứ 6 - CSKH] Rà Soát Nhiệm Vụ trong Tuần và Trả Nợ DEADLINE (nếu có)",
+      "pixels": 498,
+      "percent": 2.6
+    },
+    {
+      "id": "4343:82569",
+      "name": "Đã báo các các lớp đang có vấn đề và lên phương án xử lý ngay trong tuần với PTL đúng template",
+      "pixels": 427,
+      "percent": 2.5
+    },
+    {
+      "id": "4343:82339",
+      "name": "Đã nắm và planing hợp lý các lịch hẹn lớp trong tuần phù hợp với lịch làm việc",
+      "pixels": 194,
+      "percent": 1.1
+    },
+    {
+      "id": "I4915:237794;4899:196450;2245:87858",
+      "name": "Label",
+      "pixels": 23,
+      "percent": 0.9
+    },
+    {
+      "id": "4343:82511",
+      "name": "Đã Rà soát lại lịch hẹn và các lớp cần follow, bổ sung các quy trình còn thiếu như quy trình lớp và log lớp",
+      "pixels": 153,
+      "percent": 0.9
+    },
+    {
+      "id": "4343:82540",
+      "name": "Đã báo cáo tiến độ hoàn thành các lịch hẹn cố định trong tuần cho PLT & Quản Lý đúng template",
+      "pixels": 148,
+      "percent": 0.9
+    },
+    {
+      "id": "I4915:237794;4899:196449;2245:87858",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 0.7
+    },
+    {
+      "id": "4343:82368",
+      "name": "Họp với PTL để review lịch hẹn + planning hợp lý",
+      "pixels": 117,
+      "percent": 0.7
+    },
+    {
+      "id": "I4915:237794;4899:196453;1971:7432",
+      "name": "Label",
+      "pixels": 14,
+      "percent": 0.6
+    },
+    {
+      "id": "I4915:237794;4899:196444;2245:87858",
+      "name": "Label",
+      "pixels": 12,
+      "percent": 0.5
+    },
+    {
+      "id": "4343:82712",
+      "name": "[Trả Đủ Nợ] Trả Nợ Lịch Hẹn",
+      "pixels": 90,
+      "percent": 0.5
+    },
+    {
+      "id": "4343:82741",
+      "name": "Đã planning lịch hẹn cho tuần tiếp theo",
+      "pixels": 71,
+      "percent": 0.4
+    },
+    {
+      "id": "4343:82770",
+      "name": "Nắm các lịch KG trong tuần và plan KG tuần tiếp theo",
+      "pixels": 73,
+      "percent": 0.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 448,
+      "y": 88,
+      "width": 16,
+      "height": 24,
+      "pixels": 6,
+      "node": {
+        "id": "4343:79404",
+        "name": "Thêm người phụ trách",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 249,
+    "missing": [],
+    "withinThreshold": 249,
+    "buckets": {
+      "≤0.5px": 249,
+      "≤1px": 249,
+      "≤2px": 249,
+      "≤4px": 249,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4915:237794;4915:213151",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237794;4915:213136",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237794;4915:213137",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237794;4915:213138",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237794;4915:213150",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:79262",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:79796",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:79797",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:79844",
+        "name": "ACCOUNT",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:79844;2008:30986",
+        "name": "Frame 1171274934",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:79844;2008:31747",
+        "name": "Background+Border+Shadow",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:79844;2008:31748",
+        "name": "Avatar",
+        "role": "image",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:79844;1391:17264",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:79844;1391:17266",
+        "name": "Admin Đắc Nhân",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:79844;1391:17268",
+        "name": "admin@gmail.com",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:79844;1391:17270",
+        "name": "Overlay",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4915:237794",
+        "name": "Sidebar · MENU - ADMIN",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:237794;4915:213086",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:237794;4915:213153",
+        "name": "Nav Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:237794;4915:213154",
+        "name": "MENU - ADMIN (Tổng)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:237794;4899:196443",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237794;4899:196443;2245:87830",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237794;4899:196443;2245:87825",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237794;4899:196443;2245:87829",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237794;4899:196443;2245:87831",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.02,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/task-tuan",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

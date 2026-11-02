@@ -1,0 +1,1641 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 809,
+    "mismatched": 22196,
+    "percent": 1.905,
+    "shapePercent": 0.775,
+    "textPercent": 4.769,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "5035:378659",
+      "name": "1",
+      "pixels": 162,
+      "percent": 90
+    },
+    {
+      "id": "I4056:145409;2706:40462",
+      "name": "Value",
+      "pixels": 180,
+      "percent": 85.7
+    },
+    {
+      "id": "I4056:145421;2706:40462",
+      "name": "Value",
+      "pixels": 180,
+      "percent": 81.8
+    },
+    {
+      "id": "I4056:145397;2706:40462",
+      "name": "Value",
+      "pixels": 128,
+      "percent": 58.2
+    },
+    {
+      "id": "I4056:145392;1994:25850",
+      "name": "ID",
+      "pixels": 336,
+      "percent": 26.8
+    },
+    {
+      "id": "I4056:145405;1994:25852",
+      "name": "ID",
+      "pixels": 281,
+      "percent": 23.5
+    },
+    {
+      "id": "I4056:145417;1994:25852",
+      "name": "ID",
+      "pixels": 288,
+      "percent": 23
+    },
+    {
+      "id": "I4056:145274;2245:87774",
+      "name": "Label",
+      "pixels": 478,
+      "percent": 16.6
+    },
+    {
+      "id": "I4056:145411;1474:15129",
+      "name": "Vô hiệu",
+      "pixels": 231,
+      "percent": 15.3
+    },
+    {
+      "id": "I4056:145423;1474:15129",
+      "name": "Vô hiệu",
+      "pixels": 237,
+      "percent": 15
+    },
+    {
+      "id": "4056:145393",
+      "name": "Khoá Học Tổng Hợp A2",
+      "pixels": 1015,
+      "percent": 13.8
+    },
+    {
+      "id": "4056:145406",
+      "name": "Khóa Học Tổng Hợp B1",
+      "pixels": 786,
+      "percent": 11.2
+    },
+    {
+      "id": "4056:145418",
+      "name": "Khóa Học Tổng Hợp B1",
+      "pixels": 776,
+      "percent": 10.6
+    },
+    {
+      "id": "I4056:145284;2245:87829",
+      "name": "Label",
+      "pixels": 219,
+      "percent": 8.6
+    },
+    {
+      "id": "4056:145359",
+      "name": "Mô tả danh mục",
+      "pixels": 170,
+      "percent": 7.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 1120,
+      "y": 472,
+      "width": 32,
+      "height": 96,
+      "pixels": 1490,
+      "node": {
+        "id": "4056:145416",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1336,
+      "y": 576,
+      "width": 64,
+      "height": 88,
+      "pixels": 1282,
+      "node": {
+        "id": "5035:378672",
+        "name": "Pages",
+        "role": "container"
+      }
+    },
+    {
+      "x": 352,
+      "y": 544,
+      "width": 144,
+      "height": 24,
+      "pixels": 743,
+      "node": {
+        "id": "4056:145416",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 352,
+      "y": 496,
+      "width": 144,
+      "height": 24,
+      "pixels": 733,
+      "node": {
+        "id": "4056:145404",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 264,
+      "y": 640,
+      "width": 152,
+      "height": 24,
+      "pixels": 445,
+      "node": {
+        "id": "5035:378653",
+        "name": "Card Footer · Thêm mới & Phân trang",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1168,
+      "y": 472,
+      "width": 24,
+      "height": 88,
+      "pixels": 403,
+      "node": {
+        "id": "4056:145416",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 696,
+      "y": 544,
+      "width": 136,
+      "height": 16,
+      "pixels": 399,
+      "node": {
+        "id": "4056:145416",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1120,
+      "y": 344,
+      "width": 32,
+      "height": 40,
+      "pixels": 393,
+      "node": {
+        "id": "I4056:145397;2706:40462",
+        "name": "Value",
+        "role": "text"
+      }
+    },
+    {
+      "x": 696,
+      "y": 496,
+      "width": 136,
+      "height": 16,
+      "pixels": 388,
+      "node": {
+        "id": "4056:145404",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 280,
+      "y": 600,
+      "width": 176,
+      "height": 16,
+      "pixels": 375,
+      "node": {
+        "id": "5035:378653",
+        "name": "Card Footer · Thêm mới & Phân trang",
+        "role": "container"
+      }
+    },
+    {
+      "x": 352,
+      "y": 368,
+      "width": 144,
+      "height": 16,
+      "pixels": 290,
+      "node": {
+        "id": "4056:145391",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 272,
+      "y": 544,
+      "width": 64,
+      "height": 16,
+      "pixels": 282,
+      "node": {
+        "id": "4056:145416",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 272,
+      "y": 496,
+      "width": 64,
+      "height": 16,
+      "pixels": 278,
+      "node": {
+        "id": "4056:145404",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1208,
+      "y": 544,
+      "width": 48,
+      "height": 16,
+      "pixels": 240,
+      "node": {
+        "id": "4056:145416",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1208,
+      "y": 496,
+      "width": 48,
+      "height": 24,
+      "pixels": 232,
+      "node": {
+        "id": "4056:145404",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 696,
+      "y": 456,
+      "width": 32,
+      "height": 16,
+      "pixels": 136,
+      "node": {
+        "id": "4056:145404",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1160,
+      "y": 376,
+      "width": 136,
+      "height": 16,
+      "pixels": 130,
+      "node": {
+        "id": "4056:145391",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1352,
+      "y": 480,
+      "width": 16,
+      "height": 32,
+      "pixels": 112,
+      "node": {
+        "id": "4056:145412",
+        "name": "Button",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1352,
+      "y": 520,
+      "width": 16,
+      "height": 40,
+      "pixels": 105,
+      "node": {
+        "id": "4056:145424",
+        "name": "Button",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1352,
+      "y": 352,
+      "width": 16,
+      "height": 24,
+      "pixels": 94,
+      "node": {
+        "id": "4056:145400",
+        "name": "Button",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 280,
+      "y": 368,
+      "width": 56,
+      "height": 8,
+      "pixels": 90,
+      "node": {
+        "id": "4056:145392",
+        "name": "ID Badge",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1272,
+      "y": 480,
+      "width": 16,
+      "height": 32,
+      "pixels": 60,
+      "node": {
+        "id": "4056:145411",
+        "name": "Atom/Status",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1384,
+      "y": 624,
+      "width": 8,
+      "height": 32,
+      "pixels": 56,
+      "node": {
+        "id": "5035:378668",
+        "name": "Trang ›",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1312,
+      "y": 352,
+      "width": 16,
+      "height": 24,
+      "pixels": 48,
+      "node": {
+        "id": "4056:145403",
+        "name": "ARROW DETAIL",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1312,
+      "y": 480,
+      "width": 16,
+      "height": 32,
+      "pixels": 48,
+      "node": {
+        "id": "4056:145415",
+        "name": "ARROW DETAIL",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1312,
+      "y": 528,
+      "width": 16,
+      "height": 32,
+      "pixels": 48,
+      "node": {
+        "id": "4056:145427",
+        "name": "ARROW DETAIL",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1304,
+      "y": 624,
+      "width": 16,
+      "height": 32,
+      "pixels": 42,
+      "node": {
+        "id": "5035:378656",
+        "name": "Trang ‹",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1272,
+      "y": 528,
+      "width": 16,
+      "height": 8,
+      "pixels": 36,
+      "node": {
+        "id": "I4056:145423;1474:15130",
+        "name": "SVG",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1272,
+      "y": 544,
+      "width": 16,
+      "height": 16,
+      "pixels": 28,
+      "node": {
+        "id": "4056:145416",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4056:145254",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 243,
+    "missing": [],
+    "withinThreshold": 173,
+    "buckets": {
+      "≤0.5px": 172,
+      "≤1px": 172,
+      "≤2px": 173,
+      "≤4px": 173,
+      ">4px": 70
+    },
+    "worst": [
+      {
+        "id": "4056:145350",
+        "name": "Section - CourseTableCard",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145351",
+        "name": "Container",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145352",
+        "name": "Table",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145365",
+        "name": "Body",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145391",
+        "name": "Row",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145394",
+        "name": "Item",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145395",
+        "name": "- Mở Rộng Ngữ Pháp A2 Cốt Lõi: Weil, Perfekt, Wenn, Dass, Konjunktiv II - 20+ Chủ Đề Quen Thuộc: Nhà Ở, Ăn Uống, Công Việc, Sức Khỏe, Học Tập - 100+ Hội Thoại Thực Tế: Nhà Hàng, Nơi Làm Việc, Hàng Xóm, Tình Huống Đời Sống - Rèn Nói – Nghe – Viết Ngắn, Tập Trung Phản Xạ Và Diễn Đạt Ý Kiến - Lồng Ghép Kiến Thức Về Đời Sống Và Môi Trường Làm Việc Tại Đức",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145404",
+        "name": "Row",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145405",
+        "name": "ID Badge",
+        "role": "instance",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145405;1994:25852",
+        "name": "ID",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145406",
+        "name": "Khóa Học Tổng Hợp B1",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145407",
+        "name": "Nhập mô tả khoá học",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145408",
+        "name": "Data",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145409",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145409;2706:40462",
+        "name": "Value",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145410",
+        "name": "Data",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145411",
+        "name": "Atom/Status",
+        "role": "instance",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15124",
+        "name": "Container",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15125",
+        "name": "icon",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15127",
+        "name": "Margin",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15128",
+        "name": "Container",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15129",
+        "name": "Vô hiệu",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15130",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145415",
+        "name": "ARROW DETAIL",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145412",
+        "name": "Button",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 19,
+    "over": [
+      {
+        "id": "4056:145350",
+        "name": "Section - CourseTableCard",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145351",
+        "name": "Container",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145352",
+        "name": "Table",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145365",
+        "name": "Body",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145391",
+        "name": "Row",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145394",
+        "name": "Item",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145395",
+        "name": "- Mở Rộng Ngữ Pháp A2 Cốt Lõi: Weil, Perfekt, Wenn, Dass, Konjunktiv II - 20+ Chủ Đề Quen Thuộc: Nhà Ở, Ăn Uống, Công Việc, Sức Khỏe, Học Tập - 100+ Hội Thoại Thực Tế: Nhà Hàng, Nơi Làm Việc, Hàng Xóm, Tình Huống Đời Sống - Rèn Nói – Nghe – Viết Ngắn, Tập Trung Phản Xạ Và Diễn Đạt Ý Kiến - Lồng Ghép Kiến Thức Về Đời Sống Và Môi Trường Làm Việc Tại Đức",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 19,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145404",
+        "name": "Row",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145405",
+        "name": "ID Badge",
+        "role": "instance",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145405;1994:25852",
+        "name": "ID",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145406",
+        "name": "Khóa Học Tổng Hợp B1",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145407",
+        "name": "Nhập mô tả khoá học",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145408",
+        "name": "Data",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145409",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145409;2706:40462",
+        "name": "Value",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145410",
+        "name": "Data",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145411",
+        "name": "Atom/Status",
+        "role": "instance",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15124",
+        "name": "Container",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15125",
+        "name": "icon",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15127",
+        "name": "Margin",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15128",
+        "name": "Container",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15129",
+        "name": "Vô hiệu",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145411;1474:15130",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145415",
+        "name": "ARROW DETAIL",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145412",
+        "name": "Button",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145416",
+        "name": "Row",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145417",
+        "name": "ID Badge",
+        "role": "instance",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145417;1994:25852",
+        "name": "ID",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145418",
+        "name": "Khóa Học Tổng Hợp B1",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145419",
+        "name": "Nhập mô tả khoá học",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145420",
+        "name": "Data",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145421",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145421;2706:40462",
+        "name": "Value",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145422",
+        "name": "Data",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145423",
+        "name": "Atom/Status",
+        "role": "instance",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145423;1474:15124",
+        "name": "Container",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145423;1474:15125",
+        "name": "icon",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145423;1474:15127",
+        "name": "Margin",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145423;1474:15128",
+        "name": "Container",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145423;1474:15129",
+        "name": "Vô hiệu",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145423;1474:15130",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145427",
+        "name": "ARROW DETAIL",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145424",
+        "name": "Button",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5035:378653",
+        "name": "Card Footer · Thêm mới & Phân trang",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145428",
+        "name": "Add New Bar · Thêm nội dung khoá học mới",
+        "role": "instance",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145428;5056:365849",
+        "name": "Placeholder",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145428;5056:365850",
+        "name": "Action Button",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5035:378654",
+        "name": "Footer · Phân trang",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5035:378655",
+        "name": "Hiển thị 1 - 5 trong tổng số 5",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5035:378672",
+        "name": "Pages",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5035:378656",
+        "name": "Trang ‹",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5035:378658",
+        "name": "Trang 1",
+        "role": "container",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5035:378659",
+        "name": "1",
+        "role": "text",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5035:378668",
+        "name": "Trang ›",
+        "role": "icon",
+        "delta": 19,
+        "dx": 0,
+        "dy": 19,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145392",
+        "name": "ID Badge",
+        "role": "instance",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145392;1994:25850",
+        "name": "ID",
+        "role": "text",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145393",
+        "name": "Khoá Học Tổng Hợp A2",
+        "role": "text",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145396",
+        "name": "Data",
+        "role": "container",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145397",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145397;2706:40462",
+        "name": "Value",
+        "role": "text",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145398",
+        "name": "Data",
+        "role": "container",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145399",
+        "name": "Atom/Status",
+        "role": "instance",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145399;1474:15115",
+        "name": "Container",
+        "role": "container",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145399;2039:23692",
+        "name": "Leading",
+        "role": "icon",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145399;1474:15118",
+        "name": "Margin",
+        "role": "container",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145399;1474:15119",
+        "name": "Container",
+        "role": "container",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145399;1474:15120",
+        "name": "Nháp",
+        "role": "text",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145399;1474:15121",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145403",
+        "name": "ARROW DETAIL",
+        "role": "icon",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145400",
+        "name": "Button",
+        "role": "icon",
+        "delta": 9.5,
+        "dx": 0,
+        "dy": 9.5,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "0.775% of non-text pixels differ (limit 0.5%).",
+    "4 text boxes differ in more than 35% of their pixels (check font, weight, color).",
+    "70 elements are off by more than their limit (1px, 2.5px for text-driven; worst 19px)."
+  ],
+  "url": "http://localhost:3108/quan-ly-danh-muc-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

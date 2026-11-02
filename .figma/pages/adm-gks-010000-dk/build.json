@@ -1,6 +1,22 @@
 {
   "route": "/khao-sat/giao-khao-sat/danh-sach-nguoi-duoc-giao-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-gks-010000-dk/index.tsx",
   "docFile": "docs/pages/khao-sat/giao-khao-sat/danh-sach-nguoi-duoc-giao-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4343:57293",
+      "component": "Sidebar",
+      "file": "components/figma/adm-gks-010000-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "4343:57380",
+      "component": "Header",
+      "file": "components/figma/adm-gks-010000-dk/Header.tsx"
+    },
+    {
+      "nodeId": "4343:57430",
+      "component": "MaincontentGiaoKhaoSat",
+      "file": "components/figma/adm-gks-010000-dk/MaincontentGiaoKhaoSat.tsx"
+    }
+  ]
 }

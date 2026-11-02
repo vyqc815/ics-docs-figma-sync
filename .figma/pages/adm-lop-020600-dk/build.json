@@ -1,6 +1,40 @@
 {
   "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-020600-dk/index.tsx",
   "docFile": "docs/pages/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:113158",
+      "component": "Body4",
+      "file": "components/figma/shared/Body4.tsx"
+    },
+    {
+      "nodeId": "4056:113159",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-020600-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:113277",
+      "component": "Header12",
+      "file": "components/figma/shared/Header12.tsx"
+    },
+    {
+      "nodeId": "4056:113326",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-020600-dk/SidebarRail.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:113158": "769:37410",
+    "4056:113277": "4056:112373",
+    "4056:113278": "4056:112374",
+    "4056:113325": "4056:112421",
+    "I4056:113325;2008:30986": "I4056:112421;2008:30986",
+    "I4056:113325;2008:31747": "I4056:112421;2008:31747",
+    "I4056:113325;2008:31748": "I4056:112421;2008:31748",
+    "I4056:113325;1391:17264": "I4056:112421;1391:17264",
+    "I4056:113325;1391:17266": "I4056:112421;1391:17266",
+    "I4056:113325;1391:17268": "I4056:112421;1391:17268",
+    "I4056:113325;1391:17270": "I4056:112421;1391:17270"
+  }
 }

@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 1536,
-    "mismatched": 13622,
-    "percent": 0.616,
-    "shapePercent": 0.354,
-    "textPercent": 1.933,
+    "mismatched": 13598,
+    "percent": 0.615,
+    "shapePercent": 0.175,
+    "textPercent": 3.242,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -28,26 +28,8 @@
     {
       "id": "I6015:66756;3004:75121",
       "name": "Tìm nội dung...",
-      "pixels": 291,
-      "percent": 18.1
-    },
-    {
-      "id": "6015:67388",
-      "name": "复习 1",
-      "pixels": 151,
-      "percent": 16
-    },
-    {
-      "id": "6015:66938",
-      "name": "声母 1",
-      "pixels": 143,
-      "percent": 15.1
-    },
-    {
-      "id": "6015:67028",
-      "name": "声母 2",
-      "pixels": 140,
-      "percent": 14.8
+      "pixels": 220,
+      "percent": 13.7
     },
     {
       "id": "I6015:67542;4901:221039;2245:87908",
@@ -62,67 +44,73 @@
       "percent": 11.4
     },
     {
-      "id": "6015:66983",
-      "name": "你叫什么名字？",
-      "pixels": 147,
-      "percent": 6.2
+      "id": "I6015:66669;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
     },
     {
-      "id": "6015:67433",
-      "name": "听力：长对话",
-      "pixels": 126,
-      "percent": 6.2
+      "id": "I6015:66856;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
     },
     {
-      "id": "I6015:67542;5491:336932;2245:87908",
-      "name": "Label",
-      "pixels": 142,
-      "percent": 6.1
+      "id": "I6015:66901;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
     },
     {
-      "id": "6015:67343",
-      "name": "听力：去学校",
-      "pixels": 122,
-      "percent": 6
+      "id": "I6015:66946;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
     },
     {
-      "id": "6015:66589",
-      "name": "THỜI GIAN",
-      "pixels": 89,
-      "percent": 5.9
+      "id": "I6015:66991;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
     },
     {
-      "id": "6015:66603",
-      "name": "PHÁT ÂM",
-      "pixels": 72,
-      "percent": 5.8
+      "id": "I6015:67081;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
     },
     {
-      "id": "6015:67118",
-      "name": "声调复习",
-      "pixels": 79,
-      "percent": 5.8
+      "id": "I6015:67126;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
     },
     {
-      "id": "6015:67163",
-      "name": "写汉字",
-      "pixels": 60,
-      "percent": 5.8
+      "id": "I6015:67171;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6015:67216;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6015:67261;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6015:67306;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
     }
   ],
   "regions": [
-    {
-      "x": 320,
-      "y": 1432,
-      "width": 1096,
-      "height": 64,
-      "pixels": 1956,
-      "node": {
-        "id": "I6518:337137;5056:365849",
-        "name": "Placeholder",
-        "role": "text"
-      }
-    },
     {
       "x": 0,
       "y": 1528,
@@ -136,134 +124,14 @@
       }
     },
     {
-      "x": 1008,
-      "y": 352,
-      "width": 88,
-      "height": 40,
-      "pixels": 338,
+      "x": 336,
+      "y": 1432,
+      "width": 1080,
+      "height": 48,
+      "pixels": 877,
       "node": {
-        "id": "I6015:66717;2808:53130",
-        "name": "Th2, 14.09.2026",
-        "role": "text"
-      }
-    },
-    {
-      "x": 1008,
-      "y": 456,
-      "width": 88,
-      "height": 32,
-      "pixels": 338,
-      "node": {
-        "id": "I6015:66765;2808:53130",
-        "name": "Th2, 14.09.2026",
-        "role": "text"
-      }
-    },
-    {
-      "x": 1008,
-      "y": 272,
-      "width": 88,
-      "height": 32,
-      "pixels": 279,
-      "node": {
-        "id": "I6015:66671;2808:53130",
-        "name": "Th2, 14.09.2026",
-        "role": "text"
-      }
-    },
-    {
-      "x": 1008,
-      "y": 656,
-      "width": 88,
-      "height": 32,
-      "pixels": 279,
-      "node": {
-        "id": "I6015:66903;2808:53130",
-        "name": "Th2, 14.09.2026",
-        "role": "text"
-      }
-    },
-    {
-      "x": 1008,
-      "y": 720,
-      "width": 88,
-      "height": 32,
-      "pixels": 279,
-      "node": {
-        "id": "I6015:66948;2808:53130",
-        "name": "Th2, 14.09.2026",
-        "role": "text"
-      }
-    },
-    {
-      "x": 1008,
-      "y": 784,
-      "width": 88,
-      "height": 32,
-      "pixels": 279,
-      "node": {
-        "id": "I6015:66993;2808:53130",
-        "name": "Th2, 14.09.2026",
-        "role": "text"
-      }
-    },
-    {
-      "x": 1008,
-      "y": 904,
-      "width": 88,
-      "height": 40,
-      "pixels": 279,
-      "node": {
-        "id": "I6015:67083;2808:53130",
-        "name": "Th2, 14.09.2026",
-        "role": "text"
-      }
-    },
-    {
-      "x": 1008,
-      "y": 1032,
-      "width": 88,
-      "height": 32,
-      "pixels": 279,
-      "node": {
-        "id": "I6015:67173;2808:53130",
-        "name": "Th2, 14.09.2026",
-        "role": "text"
-      }
-    },
-    {
-      "x": 1008,
-      "y": 1096,
-      "width": 88,
-      "height": 32,
-      "pixels": 279,
-      "node": {
-        "id": "I6015:67218;2808:53130",
-        "name": "Th2, 14.09.2026",
-        "role": "text"
-      }
-    },
-    {
-      "x": 1008,
-      "y": 1160,
-      "width": 88,
-      "height": 32,
-      "pixels": 279,
-      "node": {
-        "id": "I6015:67263;2808:53130",
-        "name": "Th2, 14.09.2026",
-        "role": "text"
-      }
-    },
-    {
-      "x": 1008,
-      "y": 1352,
-      "width": 88,
-      "height": 32,
-      "pixels": 279,
-      "node": {
-        "id": "I6015:67398;2808:53130",
-        "name": "Th2, 14.09.2026",
+        "id": "I6518:337137;5056:365849",
+        "name": "Placeholder",
         "role": "text"
       }
     },
@@ -340,27 +208,159 @@
       }
     },
     {
-      "x": 1008,
-      "y": 528,
+      "x": 1080,
+      "y": 272,
       "width": 16,
-      "height": 32,
-      "pixels": 40,
+      "height": 24,
+      "pixels": 39,
       "node": {
-        "id": "6015:66813",
+        "id": "6015:66671",
         "name": "Atom/Chip · Thời gian",
         "role": "instance"
       }
     },
     {
-      "x": 1312,
-      "y": 728,
-      "width": 24,
-      "height": 8,
-      "pixels": 40,
+      "x": 1080,
+      "y": 656,
+      "width": 16,
+      "height": 32,
+      "pixels": 39,
       "node": {
-        "id": "6015:66954",
-        "name": "Checkbox",
+        "id": "6015:66903",
+        "name": "Atom/Chip · Thời gian",
         "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 720,
+      "width": 16,
+      "height": 24,
+      "pixels": 39,
+      "node": {
+        "id": "6015:66948",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 784,
+      "width": 16,
+      "height": 24,
+      "pixels": 39,
+      "node": {
+        "id": "6015:66993",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 912,
+      "width": 16,
+      "height": 24,
+      "pixels": 39,
+      "node": {
+        "id": "6015:67083",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 1032,
+      "width": 16,
+      "height": 32,
+      "pixels": 39,
+      "node": {
+        "id": "6015:67173",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 1096,
+      "width": 16,
+      "height": 32,
+      "pixels": 39,
+      "node": {
+        "id": "6015:67218",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 1160,
+      "width": 16,
+      "height": 32,
+      "pixels": 39,
+      "node": {
+        "id": "6015:67263",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 1352,
+      "width": 16,
+      "height": 24,
+      "pixels": 39,
+      "node": {
+        "id": "6015:67398",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 272,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6015:66671",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 360,
+      "width": 16,
+      "height": 24,
+      "pixels": 38,
+      "node": {
+        "id": "6015:66717",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 456,
+      "width": 16,
+      "height": 24,
+      "pixels": 38,
+      "node": {
+        "id": "6015:66765",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 528,
+      "width": 8,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6015:66812",
+        "name": "Data",
+        "role": "container"
       }
     },
     {
@@ -368,7 +368,7 @@
       "y": 528,
       "width": 16,
       "height": 32,
-      "pixels": 39,
+      "pixels": 38,
       "node": {
         "id": "6015:66813",
         "name": "Atom/Chip · Thời gian",
@@ -376,99 +376,99 @@
       }
     },
     {
-      "x": 1312,
-      "y": 1168,
-      "width": 24,
-      "height": 16,
-      "pixels": 39,
+      "x": 1008,
+      "y": 656,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
       "node": {
-        "id": "6015:67269",
-        "name": "Checkbox",
+        "id": "6015:66903",
+        "name": "Atom/Chip · Thời gian",
         "role": "instance"
       }
     },
     {
-      "x": 1312,
-      "y": 1192,
-      "width": 24,
-      "height": 8,
-      "pixels": 31,
+      "x": 1008,
+      "y": 720,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
       "node": {
-        "id": "6015:67267",
-        "name": "Data",
-        "role": "container"
-      }
-    },
-    {
-      "x": 1312,
-      "y": 744,
-      "width": 24,
-      "height": 16,
-      "pixels": 30,
-      "node": {
-        "id": "6015:66954",
-        "name": "Checkbox",
+        "id": "6015:66948",
+        "name": "Atom/Chip · Thời gian",
         "role": "instance"
       }
     },
     {
-      "x": 104,
-      "y": 1000,
-      "width": 24,
-      "height": 24,
-      "pixels": 27,
+      "x": 1008,
+      "y": 784,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
       "node": {
-        "id": "I6015:67542;5491:349897;2245:87825",
-        "name": "Icon",
-        "role": "icon"
-      }
-    },
-    {
-      "x": 1312,
-      "y": 352,
-      "width": 24,
-      "height": 16,
-      "pixels": 26,
-      "node": {
-        "id": "6015:66723",
-        "name": "Checkbox",
+        "id": "6015:66993",
+        "name": "Atom/Chip · Thời gian",
         "role": "instance"
       }
     },
     {
-      "x": 328,
-      "y": 360,
+      "x": 1008,
+      "y": 912,
       "width": 16,
-      "height": 24,
-      "pixels": 23,
+      "height": 32,
+      "pixels": 38,
       "node": {
-        "id": "6015:66759",
-        "name": "Drag Handle",
-        "role": "icon"
+        "id": "6015:67083",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
       }
     },
     {
-      "x": 328,
-      "y": 456,
+      "x": 1008,
+      "y": 1040,
       "width": 16,
       "height": 24,
-      "pixels": 23,
+      "pixels": 38,
       "node": {
-        "id": "6015:66807",
-        "name": "Drag Handle",
-        "role": "icon"
+        "id": "6015:67173",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
       }
     },
     {
-      "x": 328,
-      "y": 544,
+      "x": 1008,
+      "y": 1104,
       "width": 16,
-      "height": 16,
-      "pixels": 23,
+      "height": 24,
+      "pixels": 38,
       "node": {
-        "id": "6015:66852",
-        "name": "Drag Handle",
-        "role": "icon"
+        "id": "6015:67218",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 1160,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6015:67263",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 1352,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6015:67398",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
       }
     }
   ],
@@ -477,37 +477,13 @@
     "missing": [],
     "withinThreshold": 1134,
     "buckets": {
-      "≤0.5px": 246,
-      "≤1px": 1020,
-      "≤2px": 1132,
+      "≤0.5px": 1131,
+      "≤1px": 1131,
+      "≤2px": 1134,
       "≤4px": 1134,
       ">4px": 0
     },
     "worst": [
-      {
-        "id": "I6015:66756;3004:75121",
-        "name": "Tìm nội dung...",
-        "role": "text",
-        "delta": 2.5,
-        "dx": 0,
-        "dy": 2.5,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "I6015:66805;3004:75121",
-        "name": "Tìm nội dung...",
-        "role": "text",
-        "delta": 2.5,
-        "dx": 0,
-        "dy": 2.5,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
       {
         "id": "6015:66624",
         "name": "TỔNG ÔN TẬP",
@@ -521,271 +497,295 @@
         "textDriven": true
       },
       {
-        "id": "6015:66994",
-        "name": "Data",
-        "role": "container",
-        "delta": 1.01,
+        "id": "I6015:66756;3004:75121",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 1.5,
         "dx": 0,
-        "dy": 1.01,
+        "dy": 1.5,
         "dw": 0,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       },
       {
-        "id": "6015:66995",
+        "id": "I6015:66805;3004:75121",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 1.5,
+        "dx": 0,
+        "dy": 1.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:66846",
         "name": "Container",
         "role": "container",
-        "delta": 1.01,
+        "delta": 0.5,
         "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
+        "dy": 0,
+        "dw": 0.5,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       },
       {
-        "id": "6015:66996",
-        "name": "Checkbox",
+        "id": "6015:66847",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:66849",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:66850",
+        "name": "Vận mẫu kép",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:67341",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:67342",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:67344",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:67345",
+        "name": "Nghe: đường đến trường",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:66604",
+        "name": "Trạng thái số buổi",
         "role": "instance",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       },
       {
-        "id": "6015:66997",
-        "name": "Data",
-        "role": "icon",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67000",
-        "name": "Data",
-        "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67001",
+        "id": "I6015:66604;2808:53211",
         "name": "Container",
         "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       },
       {
-        "id": "6015:67002",
-        "name": "Checkbox",
+        "id": "I6015:66604;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:66604;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:66611",
+        "name": "Trạng thái số buổi",
         "role": "instance",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       },
       {
-        "id": "6015:67003",
-        "name": "Data",
-        "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67004",
+        "id": "I6015:66611;2808:53211",
         "name": "Container",
         "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       },
       {
-        "id": "6015:67005",
-        "name": "Checkbox",
+        "id": "I6015:66611;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:66611;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:66625",
+        "name": "Trạng thái số buổi",
         "role": "instance",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       },
       {
-        "id": "6015:67006",
-        "name": "Data",
-        "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67007",
+        "id": "I6015:66625;2808:53211",
         "name": "Container",
         "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       },
       {
-        "id": "6015:67008",
-        "name": "Checkbox",
+        "id": "I6015:66625;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:66625;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:66632",
+        "name": "Trạng thái số buổi",
         "role": "instance",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       },
       {
-        "id": "6015:67009",
-        "name": "Data",
-        "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67010",
+        "id": "I6015:66632;2808:53211",
         "name": "Container",
         "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67011",
-        "name": "Checkbox",
-        "role": "instance",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67012",
-        "name": "Data",
-        "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67013",
-        "name": "Container",
-        "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67014",
-        "name": "Checkbox",
-        "role": "instance",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67015",
-        "name": "Data",
-        "role": "icon",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67018",
-        "name": "Data",
-        "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "6015:67019",
-        "name": "Container",
-        "role": "container",
-        "delta": 1.01,
-        "dx": 0,
-        "dy": 1.01,
-        "dw": 0,
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       }
     ],
-    "maxDelta": 2.5,
+    "maxDelta": 1.72,
     "over": []
   },
   "failures": [],

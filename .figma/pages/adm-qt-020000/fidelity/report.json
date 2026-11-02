@@ -1,0 +1,796 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 2635,
+    "mismatched": 8723,
+    "percent": 0.23,
+    "shapePercent": 0.038,
+    "textPercent": 1.103,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "2702:36148",
+      "name": "Tại Đắc Nhân Trí Thức Truyền Từ Tâm",
+      "pixels": 1340,
+      "percent": 7.8
+    },
+    {
+      "id": "I2702:47701;1055:2277",
+      "name": "Badge",
+      "pixels": 94,
+      "percent": 6.6
+    },
+    {
+      "id": "I2702:47881;1061:1324",
+      "name": "Huong-dan-hoc-vien.mp4",
+      "pixels": 167,
+      "percent": 5.3
+    },
+    {
+      "id": "I2702:47753;1055:2275",
+      "name": "Badge",
+      "pixels": 88,
+      "percent": 4.9
+    },
+    {
+      "id": "I2702:47900;1055:2265",
+      "name": "Badge",
+      "pixels": 54,
+      "percent": 4.6
+    },
+    {
+      "id": "I2702:47724;1061:1324",
+      "name": "Huong-dan-hoc-vien.mp4",
+      "pixels": 150,
+      "percent": 4.5
+    },
+    {
+      "id": "I2702:47775;1055:2273",
+      "name": "Badge",
+      "pixels": 76,
+      "percent": 4.2
+    },
+    {
+      "id": "2702:47819",
+      "name": "Thường xuyên nhắc nhở học viên đi học đầy đủ ở trên lớp",
+      "pixels": 511,
+      "percent": 4.2
+    },
+    {
+      "id": "I2702:47976;1055:2269",
+      "name": "Badge",
+      "pixels": 21,
+      "percent": 4.2
+    },
+    {
+      "id": "I2702:47821;1055:2261",
+      "name": "Badge",
+      "pixels": 47,
+      "percent": 4
+    },
+    {
+      "id": "I2702:47941;1055:2267",
+      "name": "Badge",
+      "pixels": 46,
+      "percent": 4
+    },
+    {
+      "id": "I2702:47851;1055:2263",
+      "name": "Badge",
+      "pixels": 28,
+      "percent": 3.4
+    },
+    {
+      "id": "2711:53829",
+      "name": "Tần suất ghi nhận",
+      "pixels": 66,
+      "percent": 3.3
+    },
+    {
+      "id": "2702:47699",
+      "name": "Truyền đạt mindset đi học đầy đủ cho học viên",
+      "pixels": 366,
+      "percent": 3.2
+    },
+    {
+      "id": "2706:38195",
+      "name": "Tiêu Chuẩn Kiến Thức & Kỹ Năng",
+      "pixels": 140,
+      "percent": 3.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 1368,
+      "y": 248,
+      "width": 40,
+      "height": 24,
+      "pixels": 85,
+      "node": {
+        "id": "2706:38202",
+        "name": "Switch",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 448,
+      "y": 512,
+      "width": 72,
+      "height": 8,
+      "pixels": 83,
+      "node": {
+        "id": "2702:47717",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 448,
+      "y": 1648,
+      "width": 72,
+      "height": 8,
+      "pixels": 83,
+      "node": {
+        "id": "2702:47874",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 344,
+      "y": 408,
+      "width": 80,
+      "height": 8,
+      "pixels": 71,
+      "node": {
+        "id": "2702:47714",
+        "name": "Field · Tài liệu hướng dẫn",
+        "role": "container"
+      }
+    },
+    {
+      "x": 344,
+      "y": 1544,
+      "width": 80,
+      "height": 8,
+      "pixels": 71,
+      "node": {
+        "id": "2702:47871",
+        "name": "Field · File video",
+        "role": "container"
+      }
+    },
+    {
+      "x": 448,
+      "y": 408,
+      "width": 72,
+      "height": 8,
+      "pixels": 70,
+      "node": {
+        "id": "2702:47714",
+        "name": "Field · Tài liệu hướng dẫn",
+        "role": "container"
+      }
+    },
+    {
+      "x": 448,
+      "y": 1544,
+      "width": 72,
+      "height": 8,
+      "pixels": 70,
+      "node": {
+        "id": "2702:47871",
+        "name": "Field · File video",
+        "role": "container"
+      }
+    },
+    {
+      "x": 344,
+      "y": 512,
+      "width": 72,
+      "height": 8,
+      "pixels": 62,
+      "node": {
+        "id": "2702:47717",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 344,
+      "y": 1648,
+      "width": 72,
+      "height": 8,
+      "pixels": 62,
+      "node": {
+        "id": "2702:47874",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 544,
+      "y": 512,
+      "width": 80,
+      "height": 8,
+      "pixels": 60,
+      "node": {
+        "id": "2702:47717",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 544,
+      "y": 1648,
+      "width": 80,
+      "height": 8,
+      "pixels": 60,
+      "node": {
+        "id": "2702:47874",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 552,
+      "y": 408,
+      "width": 72,
+      "height": 8,
+      "pixels": 56,
+      "node": {
+        "id": "2702:47714",
+        "name": "Field · Tài liệu hướng dẫn",
+        "role": "container"
+      }
+    },
+    {
+      "x": 552,
+      "y": 1544,
+      "width": 72,
+      "height": 8,
+      "pixels": 56,
+      "node": {
+        "id": "2702:47871",
+        "name": "Field · File video",
+        "role": "container"
+      }
+    },
+    {
+      "x": 672,
+      "y": 432,
+      "width": 8,
+      "height": 64,
+      "pixels": 55,
+      "node": {
+        "id": "2702:47717",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 672,
+      "y": 1568,
+      "width": 8,
+      "height": 64,
+      "pixels": 55,
+      "node": {
+        "id": "2702:47874",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 288,
+      "y": 440,
+      "width": 8,
+      "height": 56,
+      "pixels": 40,
+      "node": {
+        "id": "2702:47717",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 288,
+      "y": 1576,
+      "width": 8,
+      "height": 56,
+      "pixels": 40,
+      "node": {
+        "id": "2702:47874",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1400,
+      "y": 136,
+      "width": 8,
+      "height": 24,
+      "pixels": 24,
+      "node": {
+        "id": "2706:35122",
+        "name": "Main Toggle Item Card",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1400,
+      "y": 192,
+      "width": 8,
+      "height": 16,
+      "pixels": 24,
+      "node": {
+        "id": "2706:38193",
+        "name": "Main Toggle Item Card",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1400,
+      "y": 320,
+      "width": 8,
+      "height": 16,
+      "pixels": 24,
+      "node": {
+        "id": "2706:38205",
+        "name": "Main Toggle Item Card",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1400,
+      "y": 368,
+      "width": 8,
+      "height": 24,
+      "pixels": 24,
+      "node": {
+        "id": "2706:38211",
+        "name": "Main Toggle Item Card",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1400,
+      "y": 424,
+      "width": 8,
+      "height": 24,
+      "pixels": 24,
+      "node": {
+        "id": "2706:38217",
+        "name": "Main Toggle Item Card",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1400,
+      "y": 480,
+      "width": 8,
+      "height": 16,
+      "pixels": 24,
+      "node": {
+        "id": "2706:38223",
+        "name": "Main Toggle Item Card",
+        "role": "container"
+      }
+    },
+    {
+      "x": 296,
+      "y": 408,
+      "width": 24,
+      "height": 8,
+      "pixels": 14,
+      "node": {
+        "id": "2702:47714",
+        "name": "Field · Tài liệu hướng dẫn",
+        "role": "container"
+      }
+    },
+    {
+      "x": 288,
+      "y": 512,
+      "width": 24,
+      "height": 8,
+      "pixels": 14,
+      "node": {
+        "id": "2702:47717",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 296,
+      "y": 1544,
+      "width": 24,
+      "height": 8,
+      "pixels": 14,
+      "node": {
+        "id": "2702:47871",
+        "name": "Field · File video",
+        "role": "container"
+      }
+    },
+    {
+      "x": 288,
+      "y": 1648,
+      "width": 24,
+      "height": 8,
+      "pixels": 14,
+      "node": {
+        "id": "2702:47874",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 656,
+      "y": 408,
+      "width": 16,
+      "height": 8,
+      "pixels": 13,
+      "node": {
+        "id": "2702:47714",
+        "name": "Field · Tài liệu hướng dẫn",
+        "role": "container"
+      }
+    },
+    {
+      "x": 656,
+      "y": 1544,
+      "width": 16,
+      "height": 8,
+      "pixels": 13,
+      "node": {
+        "id": "2702:47871",
+        "name": "Field · File video",
+        "role": "container"
+      }
+    },
+    {
+      "x": 656,
+      "y": 512,
+      "width": 16,
+      "height": 8,
+      "pixels": 12,
+      "node": {
+        "id": "2702:47717",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 377,
+    "missing": [],
+    "withinThreshold": 377,
+    "buckets": {
+      "≤0.5px": 373,
+      "≤1px": 374,
+      "≤2px": 377,
+      "≤4px": 377,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I2702:47717;1061:1317",
+        "name": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "role": "text",
+        "delta": 1.2,
+        "dx": -0.61,
+        "dy": 0,
+        "dw": 1.2,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2702:47874;1061:1317",
+        "name": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "role": "text",
+        "delta": 1.2,
+        "dx": -0.61,
+        "dy": 0,
+        "dw": 1.2,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:53829",
+        "name": "Tần suất ghi nhận",
+        "role": "text",
+        "delta": 1.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:38195",
+        "name": "Tiêu Chuẩn Kiến Thức & Kỹ Năng",
+        "role": "text",
+        "delta": 0.83,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.83,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:53823",
+        "name": "Vai trò xác thực",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2702:47715",
+        "name": "Tài liệu hướng dẫn",
+        "role": "text",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4915:213982",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4915:213967",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4915:213968",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4915:213969",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4915:213981",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4915:238721",
+        "name": "Sidebar · MENU - ADMIN",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:238721;4915:213917",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:238721;4915:213984",
+        "name": "Nav Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:238721;4915:213985",
+        "name": "MENU - ADMIN (Tổng)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:238721;4899:197482",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4899:197482;2245:87821",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4899:197482;2245:87816",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4899:197482;2245:87820",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4899:197482;2245:87822",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4899:197493",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4899:197493;2245:87770",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4899:197493;2245:87774",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4899:197499",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:238721;4899:197499;2245:87821",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.2,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/quy-trinh/chi-tiet-loai-quy-trinh",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

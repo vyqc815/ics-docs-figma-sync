@@ -1,6 +1,22 @@
 {
   "route": "/kpi-ot/danh-sach-kpi",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-kpi-010000/index.tsx",
   "docFile": "docs/pages/kpi-ot/danh-sach-kpi.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3674:65882",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/adm-kpi-010000/MainScrollableWorkspace.tsx"
+    },
+    {
+      "nodeId": "3674:66830",
+      "component": "Header",
+      "file": "components/figma/adm-kpi-010000/Header.tsx"
+    },
+    {
+      "nodeId": "4915:237485",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-kpi-010000/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

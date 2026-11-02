@@ -1,6 +1,40 @@
 {
   "route": "/lop-hoc/bai-hoc/thong-tin",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-030200/index.tsx",
   "docFile": "docs/pages/lop-hoc/bai-hoc/thong-tin.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3497:64874",
+      "component": "Body3",
+      "file": "components/figma/shared/Body3.tsx"
+    },
+    {
+      "nodeId": "3497:64875",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-030200/Maincontent.tsx"
+    },
+    {
+      "nodeId": "3497:65048",
+      "component": "Header13",
+      "file": "components/figma/shared/Header13.tsx"
+    },
+    {
+      "nodeId": "4915:225203",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-030200/SidebarMenuAdmin.tsx"
+    }
+  ],
+  "idAlias": {
+    "3497:64874": "769:30964",
+    "3497:65048": "3497:3987",
+    "4050:115571": "4050:115474",
+    "3497:65096": "3497:4035",
+    "I3497:65096;2008:30986": "I3497:4035;2008:30986",
+    "I3497:65096;2008:31747": "I3497:4035;2008:31747",
+    "I3497:65096;2008:31748": "I3497:4035;2008:31748",
+    "I3497:65096;1391:17264": "I3497:4035;1391:17264",
+    "I3497:65096;1391:17266": "I3497:4035;1391:17266",
+    "I3497:65096;1391:17268": "I3497:4035;1391:17268",
+    "I3497:65096;1391:17270": "I3497:4035;1391:17270"
+  }
 }

@@ -1,6 +1,22 @@
 {
   "route": "/loi-403-khong-co-quyen-truy-cap-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/sys-err-010000-dk/index.tsx",
   "docFile": "docs/pages/loi-403-khong-co-quyen-truy-cap-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "5789:160416",
+      "component": "Header",
+      "file": "components/figma/sys-err-010000-dk/Header.tsx"
+    },
+    {
+      "nodeId": "5789:160466",
+      "component": "Sidebar",
+      "file": "components/figma/sys-err-010000-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "5789:160550",
+      "component": "Maincontent",
+      "file": "components/figma/sys-err-010000-dk/Maincontent.tsx"
+    }
+  ]
 }

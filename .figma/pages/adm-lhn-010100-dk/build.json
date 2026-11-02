@@ -1,6 +1,22 @@
 {
   "route": "/lich-hen/hen-lop-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lhn-010100-dk/index.tsx",
   "docFile": "docs/pages/lich-hen/hen-lop-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:105111",
+      "component": "Bg",
+      "file": "components/figma/adm-lhn-010100-dk/Bg.tsx"
+    },
+    {
+      "nodeId": "4056:105287",
+      "component": "MenuChinhLichHen",
+      "file": "components/figma/adm-lhn-010100-dk/MenuChinhLichHen.tsx"
+    },
+    {
+      "nodeId": "4056:105366",
+      "component": "Dn1",
+      "file": "components/figma/shared/Dn1.tsx"
+    }
+  ]
 }

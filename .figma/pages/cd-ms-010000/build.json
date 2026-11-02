@@ -1,6 +1,22 @@
 {
   "route": "/mindset-thiet-ke-khoa-hoc",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-ms-010000/index.tsx",
   "docFile": "docs/pages/mindset-thiet-ke-khoa-hoc.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "520:42225",
+      "component": "Maincontentwrapper",
+      "file": "components/figma/cd-ms-010000/Maincontentwrapper.tsx"
+    },
+    {
+      "nodeId": "4915:256669",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-ms-010000/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "2860:4649",
+      "component": "Header",
+      "file": "components/figma/cd-ms-010000/Header.tsx"
+    }
+  ]
 }

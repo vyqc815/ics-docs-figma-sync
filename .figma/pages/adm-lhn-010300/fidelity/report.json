@@ -1,0 +1,508 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 919,
+    "mismatched": 10140,
+    "percent": 0.766,
+    "shapePercent": 0.012,
+    "textPercent": 3.203,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "2860:45631",
+      "name": "- Gửi giới thiệu bạn với học viên (lưu ý các học viên đang có chỉ số thấp/ phản ứng ==> không gửi nha) - Gửi giới thiệu bạn phải gởi hết vòng của TH giới thiệu bạn (khi khách seen ==> push tiếp cách đăng bài) - Kiểm tra khách này trước đó đã gửi giới thiệu bạn chưa để gửi văn khác, tránh bị trùng - Note: Đã gửi giới thiệu bạn ở ghi chú ==> mục tiêu nắm được khách này đã gửi hay chưa để lượt tiếp theo còn đổi văn mẫu",
+      "pixels": 3706,
+      "percent": 27.8
+    },
+    {
+      "id": "I2860:46001;2245:92399",
+      "name": "Trần Phương Nguyên",
+      "pixels": 235,
+      "percent": 8.8
+    },
+    {
+      "id": "I2860:45955;2812:34656",
+      "name": "15.000.000",
+      "pixels": 92,
+      "percent": 5.8
+    },
+    {
+      "id": "I2860:45978;2812:34656",
+      "name": "15.000.000",
+      "pixels": 92,
+      "percent": 5.8
+    },
+    {
+      "id": "I2860:45990;2812:34656",
+      "name": "15.000.000",
+      "pixels": 92,
+      "percent": 5.8
+    },
+    {
+      "id": "I2860:45996;2812:34656",
+      "name": "15.000.000",
+      "pixels": 92,
+      "percent": 5.8
+    },
+    {
+      "id": "I2860:46001;2245:92419",
+      "name": "Thanh Huy - CSKH",
+      "pixels": 150,
+      "percent": 5.6
+    },
+    {
+      "id": "2860:45612",
+      "name": "Thu gọn",
+      "pixels": 53,
+      "percent": 5
+    },
+    {
+      "id": "I4713:129192;2015:36008",
+      "name": "Value",
+      "pixels": 66,
+      "percent": 4.8
+    },
+    {
+      "id": "I2860:45984;2812:34656",
+      "name": "15.000.000",
+      "pixels": 66,
+      "percent": 4.4
+    },
+    {
+      "id": "I2860:46001;2245:92403",
+      "name": "Lê Thị Mỹ Dung",
+      "pixels": 111,
+      "percent": 4.2
+    },
+    {
+      "id": "I2860:46001;2245:92423",
+      "name": "Nhật Dương",
+      "pixels": 111,
+      "percent": 4.2
+    },
+    {
+      "id": "2860:45634",
+      "name": "Xem thêm",
+      "pixels": 52,
+      "percent": 3.9
+    },
+    {
+      "id": "I2370:26533;2015:36008",
+      "name": "Value",
+      "pixels": 75,
+      "percent": 3.7
+    },
+    {
+      "id": "I2860:45646;2200:30042",
+      "name": "Ngày mai",
+      "pixels": 47,
+      "percent": 3.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 1224,
+      "y": 240,
+      "width": 16,
+      "height": 32,
+      "pixels": 52,
+      "node": {
+        "id": "2860:45587",
+        "name": "Cell · Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1216,
+      "y": 312,
+      "width": 24,
+      "height": 32,
+      "pixels": 49,
+      "node": {
+        "id": "2860:45599",
+        "name": "Cell · Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1200,
+      "y": 240,
+      "width": 8,
+      "height": 24,
+      "pixels": 14,
+      "node": {
+        "id": "2860:45587",
+        "name": "Cell · Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 976,
+      "y": 632,
+      "width": 16,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "2860:45652",
+        "name": "Avatar",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 968,
+      "y": 336,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "2860:45591",
+        "name": "Frame 427321971",
+        "role": "container"
+      }
+    },
+    {
+      "x": 952,
+      "y": 640,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "I2860:45651;1672:16230",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 419,
+    "missing": [],
+    "withinThreshold": 419,
+    "buckets": {
+      "≤0.5px": 410,
+      "≤1px": 419,
+      "≤2px": 419,
+      "≤4px": 419,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2370:26529",
+        "name": "Frame 427321947",
+        "role": "container",
+        "delta": 0.73,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2370:26532",
+        "name": "Frame 427323979",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4713:129192",
+        "name": "Dropdown · Trung tâm",
+        "role": "instance",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129192;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129192;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129192;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2370:26533",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2370:26533;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2370:26533;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2370:26533;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2370:26534",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2370:26534;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2370:26534;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2860:45605;2200:30042",
+        "name": "Ngày mai",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2860:45627;2200:30042",
+        "name": "Ngày mai",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2860:45646;2200:30042",
+        "name": "Ngày mai",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2860:45660;2200:30042",
+        "name": "Ngày mai",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:222916;4901:207498",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:222916;4901:207504;1981:25758",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:222916;4901:207504;1981:25759",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41844",
+        "name": "Button",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41850",
+        "name": "Button",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41847",
+        "name": "Button",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41853",
+        "name": "Button",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3005:41841",
+        "name": "Button",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.73,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/lich-hen/hoa-don",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

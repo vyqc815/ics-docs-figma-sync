@@ -1,6 +1,27 @@
 {
   "route": "/khao-sat/tao-khao-sat/tao-cuoc-khao-sat",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-ks-010000/index.tsx",
   "docFile": "docs/pages/khao-sat/tao-khao-sat/tao-cuoc-khao-sat.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4915:243663",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/shared/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "4252:148242",
+      "component": "Header8",
+      "file": "components/figma/shared/Header8.tsx"
+    },
+    {
+      "nodeId": "4262:148485",
+      "component": "MaincontentTaoKhaoSat",
+      "file": "components/figma/adm-ks-010000/MaincontentTaoKhaoSat.tsx"
+    },
+    {
+      "nodeId": "5019:18584",
+      "component": "MenuTrangThaiKhaoSat",
+      "file": "components/figma/adm-ks-010000/MenuTrangThaiKhaoSat.tsx"
+    }
+  ]
 }

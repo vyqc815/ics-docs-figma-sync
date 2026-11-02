@@ -1,6 +1,22 @@
 {
   "route": "/chi-tiet-giao-vien/log",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-gv-020400/index.tsx",
   "docFile": "docs/pages/chi-tiet-giao-vien/log.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "1904:6494",
+      "component": "Body2",
+      "file": "components/figma/shared/Body2.tsx"
+    },
+    {
+      "nodeId": "1904:6528",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/adm-gv-020400/MainScrollableWorkspace.tsx"
+    },
+    {
+      "nodeId": "4915:234704",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-gv-020400/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

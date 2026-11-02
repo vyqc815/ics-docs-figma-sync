@@ -1,6 +1,17 @@
 {
   "route": "/tai-khoan/chi-tiet-tai-khoan",
-  "pageFile": "",
+  "pageFile": "components/figma/mst-tk-020000/index.tsx",
   "docFile": "docs/pages/tai-khoan/chi-tiet-tai-khoan.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3005:33481",
+      "component": "Header",
+      "file": "components/figma/mst-tk-020000/Header.tsx"
+    },
+    {
+      "nodeId": "3005:33606",
+      "component": "Section2",
+      "file": "components/figma/mst-tk-020000/Section2.tsx"
+    }
+  ]
 }

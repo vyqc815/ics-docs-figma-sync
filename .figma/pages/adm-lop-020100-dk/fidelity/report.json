@@ -1,0 +1,484 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1059,
+    "mismatched": 3240,
+    "percent": 0.212,
+    "shapePercent": 0.003,
+    "textPercent": 1.276,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:109843",
+      "name": "Tổng Quan Lớp",
+      "pixels": 848,
+      "percent": 19
+    },
+    {
+      "id": "I4056:110247;2245:87914",
+      "name": "Label",
+      "pixels": 427,
+      "percent": 17.8
+    },
+    {
+      "id": "I4056:110249;2245:87908",
+      "name": "Label",
+      "pixels": 329,
+      "percent": 13.7
+    },
+    {
+      "id": "4056:109868",
+      "name": "Tuyết Ngọc",
+      "pixels": 94,
+      "percent": 5.4
+    },
+    {
+      "id": "I4056:109874;3065:71108",
+      "name": "Tiêu đề",
+      "pixels": 107,
+      "percent": 5.4
+    },
+    {
+      "id": "I4056:110103;1308:10509",
+      "name": "D",
+      "pixels": 28,
+      "percent": 4.9
+    },
+    {
+      "id": "I4056:110115;1308:10515",
+      "name": "E",
+      "pixels": 26,
+      "percent": 4.6
+    },
+    {
+      "id": "I4056:110250;2245:87908",
+      "name": "Label",
+      "pixels": 104,
+      "percent": 4.3
+    },
+    {
+      "id": "I4056:110092;1308:10503",
+      "name": "C",
+      "pixels": 20,
+      "percent": 3.5
+    },
+    {
+      "id": "I4056:110252;2245:87908",
+      "name": "Label",
+      "pixels": 73,
+      "percent": 3
+    },
+    {
+      "id": "I4056:110253;2245:87908",
+      "name": "Label",
+      "pixels": 61,
+      "percent": 2.5
+    },
+    {
+      "id": "4056:110059",
+      "name": "Danh sách học viên",
+      "pixels": 178,
+      "percent": 2.2
+    },
+    {
+      "id": "4056:109911",
+      "name": "00:14:01",
+      "pixels": 22,
+      "percent": 1.7
+    },
+    {
+      "id": "4056:109921",
+      "name": "PHÁT ÂM: Thanh Mẫu và Ghép Âm",
+      "pixels": 66,
+      "percent": 1.7
+    },
+    {
+      "id": "4056:109935",
+      "name": "00:14:01",
+      "pixels": 22,
+      "percent": 1.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 1000,
+      "y": 552,
+      "width": 24,
+      "height": 24,
+      "pixels": 13,
+      "node": {
+        "id": "4056:110097",
+        "name": "Student Status",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 480,
+      "y": 96,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "4056:109842",
+        "name": "SectionClassOverviewHeader",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1000,
+      "y": 352,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4056:110064",
+        "name": "Student Status",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4056:110281",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 500,
+    "missing": [],
+    "withinThreshold": 500,
+    "buckets": {
+      "≤0.5px": 495,
+      "≤1px": 499,
+      "≤2px": 499,
+      "≤4px": 500,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:109843",
+        "name": "Tổng Quan Lớp",
+        "role": "text",
+        "delta": 2.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:109865",
+        "name": "Frame 1171274933",
+        "role": "container",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:109867",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:109868",
+        "name": "Tuyết Ngọc",
+        "role": "text",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:109869",
+        "name": "GHI CHÚ",
+        "role": "icon",
+        "delta": 0.52,
+        "dx": 0.52,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:110028",
+        "name": "Trạng thái",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:110051",
+        "name": "Trạng thái",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:109853;3065:71109",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:109873",
+        "name": "Thẻ chỉ số",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:109873;3065:71106",
+        "name": "Frame 1171274980",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:109873;3065:71107",
+        "name": "Frame 1171274979",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:109873;3065:71111",
+        "name": "Atom/Sparkline",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:109874;3065:71108",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:109876;3065:71108",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:109876;3065:71109",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:109877",
+        "name": "Thẻ chỉ số",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:109877;3065:71106",
+        "name": "Frame 1171274980",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:109877;3065:71107",
+        "name": "Frame 1171274979",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:109877;3065:71111",
+        "name": "Atom/Sparkline",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110070;1308:10491",
+        "name": "A",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110081;1308:10497",
+        "name": "B",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110092;1308:10503",
+        "name": "C",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110103;1308:10509",
+        "name": "D",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110115;1308:10515",
+        "name": "E",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110126;1308:10515",
+        "name": "E",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.25,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-lop-hoc/tong-quan-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

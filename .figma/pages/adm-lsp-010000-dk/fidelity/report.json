@@ -1,0 +1,496 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 2197,
+    "percent": 0.188,
+    "shapePercent": 0.005,
+    "textPercent": 0.831,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4343:84622;2245:87864",
+      "name": "Label",
+      "pixels": 357,
+      "percent": 14.3
+    },
+    {
+      "id": "4343:84890",
+      "name": "Nguyễn Thị Thu Thủy",
+      "pixels": 131,
+      "percent": 5.5
+    },
+    {
+      "id": "I4760:157894;1981:25753;1971:8814",
+      "name": "Value",
+      "pixels": 6,
+      "percent": 4.7
+    },
+    {
+      "id": "4343:84802",
+      "name": "Trần Phương Nguyên",
+      "pixels": 103,
+      "percent": 4.3
+    },
+    {
+      "id": "I4343:84915;2812:34656",
+      "name": "15.000.000",
+      "pixels": 63,
+      "percent": 4.1
+    },
+    {
+      "id": "I4343:84807;2812:34656",
+      "name": "15.000.000",
+      "pixels": 57,
+      "percent": 3.7
+    },
+    {
+      "id": "I4343:84617;2245:87820",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 3.3
+    },
+    {
+      "id": "I4760:157894;1981:25752",
+      "name": "Label",
+      "pixels": 49,
+      "percent": 3
+    },
+    {
+      "id": "I4343:84618;2245:87820",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.7
+    },
+    {
+      "id": "4343:84839",
+      "name": "BD105-I",
+      "pixels": 48,
+      "percent": 2.6
+    },
+    {
+      "id": "I4343:84613;2245:87820",
+      "name": "Label",
+      "pixels": 65,
+      "percent": 2.5
+    },
+    {
+      "id": "I4343:84614;2245:87768",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.4
+    },
+    {
+      "id": "4343:84867",
+      "name": "BD105-I",
+      "pixels": 45,
+      "percent": 2.4
+    },
+    {
+      "id": "I4343:84624;2245:87768",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.2
+    },
+    {
+      "id": "4343:84825",
+      "name": "BD105-I",
+      "pixels": 41,
+      "percent": 2.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 992,
+      "y": 280,
+      "width": 32,
+      "height": 40,
+      "pixels": 27,
+      "node": {
+        "id": "I4343:84789;3228:62842",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4343:84596",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1016,
+      "y": 336,
+      "width": 8,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I4343:84800;3228:62832",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4343:84596",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 992,
+      "y": 336,
+      "width": 8,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "I4343:84800;3228:62832",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 395,
+    "missing": [],
+    "withinThreshold": 395,
+    "buckets": {
+      "≤0.5px": 395,
+      "≤1px": 395,
+      "≤2px": 395,
+      "≤4px": 395,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4343:84815",
+        "name": "Tổng lương",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84634",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84637",
+        "name": "Filter Pills Toolbar",
+        "role": "container",
+        "delta": 0.44,
+        "dx": -0.44,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84638",
+        "name": "Tìm kiếm",
+        "role": "instance",
+        "delta": 0.44,
+        "dx": -0.44,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:84638;1739:32348",
+        "name": "Frame 427321959",
+        "role": "container",
+        "delta": 0.44,
+        "dx": -0.44,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:84638;1739:32349",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 0.44,
+        "dx": -0.44,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:84638;1739:32351",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0.44,
+        "dx": -0.44,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84639",
+        "name": "Filter · Tháng trước",
+        "role": "instance",
+        "delta": 0.44,
+        "dx": -0.44,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:84639;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.44,
+        "dx": -0.44,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:84639;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.44,
+        "dx": -0.44,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84657",
+        "name": "Lớp",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84675",
+        "name": "5/8",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84691",
+        "name": "5/8",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84707",
+        "name": "5/8",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84739",
+        "name": "5/8",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84755",
+        "name": "5/8",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84663",
+        "name": "Sĩ số",
+        "role": "text",
+        "delta": 0.31,
+        "dx": -0.16,
+        "dy": 0,
+        "dw": 0.31,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84635",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.23,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.23,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84636",
+        "name": "KPI Phụ Trách Lớp / CSKH",
+        "role": "text",
+        "delta": 0.23,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.23,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4760:157894;1981:25751",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4760:157894;1981:25752",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84811",
+        "name": "Lớp",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84723",
+        "name": "5/8",
+        "role": "text",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84771",
+        "name": "5/8",
+        "role": "text",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:84609",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.5,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/luong/luong-sp-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

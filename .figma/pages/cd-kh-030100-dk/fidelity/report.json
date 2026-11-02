@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 910,
-    "mismatched": 9432,
-    "percent": 0.72,
-    "shapePercent": 0.109,
-    "textPercent": 2.266,
+    "mismatched": 9002,
+    "percent": 0.687,
+    "shapePercent": 0.102,
+    "textPercent": 2.171,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -56,12 +56,6 @@
       "percent": 6.6
     },
     {
-      "id": "I6015:63651;2015:31836;6015:65690;2015:30564",
-      "name": "Label",
-      "pixels": 114,
-      "percent": 6.5
-    },
-    {
       "id": "I6015:63763;5491:336922;2245:87908",
       "name": "Label",
       "pixels": 142,
@@ -72,12 +66,6 @@
       "name": "Label",
       "pixels": 112,
       "percent": 4.8
-    },
-    {
-      "id": "I6015:63651;2015:31836;6015:65689;2015:30564",
-      "name": "Label",
-      "pixels": 81,
-      "percent": 4.6
     },
     {
       "id": "6015:63559",
@@ -98,16 +86,28 @@
       "percent": 4.1
     },
     {
-      "id": "I6015:63659;5056:365853",
-      "name": "Placeholder",
-      "pixels": 200,
-      "percent": 4.1
-    },
-    {
       "id": "I6015:63763;4901:220699;2245:87908",
       "name": "Label",
       "pixels": 97,
       "percent": 4.1
+    },
+    {
+      "id": "I6015:63763;4901:220690;2245:87908",
+      "name": "Label",
+      "pixels": 90,
+      "percent": 3.8
+    },
+    {
+      "id": "I6015:63763;4901:220692;2245:87908",
+      "name": "Label",
+      "pixels": 90,
+      "percent": 3.8
+    },
+    {
+      "id": "I6015:63763;4901:220693;2245:87908",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 3.6
     }
   ],
   "regions": [
@@ -136,23 +136,11 @@
       }
     },
     {
-      "x": 1256,
+      "x": 1264,
       "y": 432,
-      "width": 160,
+      "width": 152,
       "height": 40,
-      "pixels": 121,
-      "node": {
-        "id": "I6015:63659;5056:365853",
-        "name": "Placeholder",
-        "role": "text"
-      }
-    },
-    {
-      "x": 1120,
-      "y": 432,
-      "width": 56,
-      "height": 40,
-      "pixels": 96,
+      "pixels": 108,
       "node": {
         "id": "I6015:63659;5056:365853",
         "name": "Placeholder",
@@ -325,6 +313,18 @@
         "id": "I6015:63763;4901:220692;2245:87904",
         "name": "Icon",
         "role": "icon"
+      }
+    },
+    {
+      "x": 1120,
+      "y": 432,
+      "width": 16,
+      "height": 40,
+      "pixels": 15,
+      "node": {
+        "id": "6015:63659",
+        "name": "Add New Bar · Thêm mới",
+        "role": "instance"
       }
     },
     {

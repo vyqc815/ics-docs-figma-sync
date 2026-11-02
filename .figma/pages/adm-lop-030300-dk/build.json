@@ -1,6 +1,40 @@
 {
   "route": "/lop-hoc/bai-hoc/noi-dung-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-030300-dk/index.tsx",
   "docFile": "docs/pages/lop-hoc/bai-hoc/noi-dung-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:111399",
+      "component": "Body3",
+      "file": "components/figma/shared/Body3.tsx"
+    },
+    {
+      "nodeId": "4056:111400",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-030300-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:111553",
+      "component": "Header14",
+      "file": "components/figma/shared/Header14.tsx"
+    },
+    {
+      "nodeId": "4056:111602",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-030300-dk/SidebarRail.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:111399": "769:30964",
+    "4056:111553": "4056:111011",
+    "4056:111554": "4056:111012",
+    "4056:111601": "4056:111059",
+    "I4056:111601;2008:30986": "I4056:111059;2008:30986",
+    "I4056:111601;2008:31747": "I4056:111059;2008:31747",
+    "I4056:111601;2008:31748": "I4056:111059;2008:31748",
+    "I4056:111601;1391:17264": "I4056:111059;1391:17264",
+    "I4056:111601;1391:17266": "I4056:111059;1391:17266",
+    "I4056:111601;1391:17268": "I4056:111059;1391:17268",
+    "I4056:111601;1391:17270": "I4056:111059;1391:17270"
+  }
 }

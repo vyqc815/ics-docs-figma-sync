@@ -1,6 +1,17 @@
 {
   "route": "/quy-trinh/task-hom-nay-da-chon-them-nguoi-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/sp-task-010000-dk-2/index.tsx",
   "docFile": "docs/pages/quy-trinh/task-hom-nay-da-chon-them-nguoi-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "6935:389955",
+      "component": "Body",
+      "file": "components/figma/sp-task-010000-dk-2/Body.tsx"
+    },
+    {
+      "nodeId": "6935:390091",
+      "component": "Section2",
+      "file": "components/figma/sp-task-010000-dk-2/Section2.tsx"
+    }
+  ]
 }

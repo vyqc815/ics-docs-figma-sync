@@ -1,0 +1,460 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1059,
+    "mismatched": 10233,
+    "percent": 0.671,
+    "shapePercent": 0.001,
+    "textPercent": 2.34,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I3497:65572;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "I3497:65573;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "I3497:65585;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "I3497:65586;1308:6749",
+      "name": "100%",
+      "pixels": 83,
+      "percent": 24.7
+    },
+    {
+      "id": "3497:65459",
+      "name": "ÔN TẬP: Giữa Kỳ 1",
+      "pixels": 529,
+      "percent": 13.1
+    },
+    {
+      "id": "I4915:224977;4901:206599;2245:87908",
+      "name": "Label",
+      "pixels": 201,
+      "percent": 8.4
+    },
+    {
+      "id": "3497:67350",
+      "name": "[10P]",
+      "pixels": 57,
+      "percent": 7.5
+    },
+    {
+      "id": "3497:67402",
+      "name": "- GV tổ chức thực hành nói dựa trên các hội thoại đã học: HV luyện hỏi – đáp, nói lại các mẫu câu hoặc hội thoại ngắn, giúp chuyển kiến thức thành phản xạ giao tiếp.",
+      "pixels": 1725,
+      "percent": 7.3
+    },
+    {
+      "id": "3497:67349",
+      "name": "1. [OT] Sửa BTVN",
+      "pixels": 157,
+      "percent": 7.1
+    },
+    {
+      "id": "3497:67397",
+      "name": "[20P]",
+      "pixels": 52,
+      "percent": 6.9
+    },
+    {
+      "id": "3497:67396",
+      "name": "4. [OT] Thực hành - giao tiếp",
+      "pixels": 240,
+      "percent": 6.7
+    },
+    {
+      "id": "3497:67363",
+      "name": "[20P]",
+      "pixels": 49,
+      "percent": 6.5
+    },
+    {
+      "id": "3497:67380",
+      "name": "[20P]",
+      "pixels": 49,
+      "percent": 6.5
+    },
+    {
+      "id": "3497:67410",
+      "name": "[15P]",
+      "pixels": 46,
+      "percent": 6.1
+    },
+    {
+      "id": "I4915:224977;4901:206597;2245:87908",
+      "name": "Label",
+      "pixels": 141,
+      "percent": 5.9
+    }
+  ],
+  "regions": [
+    {
+      "x": 480,
+      "y": 88,
+      "width": 8,
+      "height": 24,
+      "pixels": 11,
+      "node": {
+        "id": "3497:65459",
+        "name": "ÔN TẬP: Giữa Kỳ 1",
+        "role": "text"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4915:224977;4901:206632",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 250,
+    "missing": [],
+    "withinThreshold": 250,
+    "buckets": {
+      "≤0.5px": 249,
+      "≤1px": 249,
+      "≤2px": 249,
+      "≤4px": 250,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3497:65459",
+        "name": "ÔN TẬP: Giữa Kỳ 1",
+        "role": "text",
+        "delta": 2.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:67394",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:67395",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:67396",
+        "name": "4. [OT] Thực hành - giao tiếp",
+        "role": "text",
+        "delta": 0.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:67397",
+        "name": "[20P]",
+        "role": "text",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:67347",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:67348",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:67349",
+        "name": "1. [OT] Sửa BTVN",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:67350",
+        "name": "[10P]",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:224977;4901:206542",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:224977;4901:206549",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:224977;4901:206563",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:224977;4901:206564",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:224977;4901:206567",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "3497:65455",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "3497:65456",
+        "name": "MainContent",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "3497:65457",
+        "name": "Frame 427321965",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:65458",
+        "name": "Frame 427321964",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:67218",
+        "name": "Tabs Navigation",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:67219",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3497:67219;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3497:67219;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3497:67220",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3497:67220;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3497:67220;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.38,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/lop-hoc/bai-hoc/noi-dung",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

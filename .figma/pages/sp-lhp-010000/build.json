@@ -1,6 +1,17 @@
 {
   "route": "/lich-hop/dang-danh-sach",
-  "pageFile": "",
+  "pageFile": "components/figma/sp-lhp-010000/index.tsx",
   "docFile": "docs/pages/lich-hop/dang-danh-sach.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3857:78161",
+      "component": "Body",
+      "file": "components/figma/sp-lhp-010000/Body.tsx"
+    },
+    {
+      "nodeId": "3857:78295",
+      "component": "Section2",
+      "file": "components/figma/sp-lhp-010000/Section2.tsx"
+    }
+  ]
 }

@@ -1,6 +1,27 @@
 {
   "route": "/chi-tiet-lop-hoc/tong-quan",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-020100/index.tsx",
   "docFile": "docs/pages/chi-tiet-lop-hoc/tong-quan.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "769:30964",
+      "component": "Body3",
+      "file": "components/figma/shared/Body3.tsx"
+    },
+    {
+      "nodeId": "795:4111",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-020100/Maincontent.tsx"
+    },
+    {
+      "nodeId": "3266:46602",
+      "component": "Header",
+      "file": "components/figma/adm-lop-020100/Header.tsx"
+    },
+    {
+      "nodeId": "4915:224073",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-020100/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

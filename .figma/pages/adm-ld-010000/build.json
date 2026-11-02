@@ -1,6 +1,22 @@
 {
   "route": "/lich/lich-day-tong",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-ld-010000/index.tsx",
   "docFile": "docs/pages/lich/lich-day-tong.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4101:129182",
+      "component": "Maincontent",
+      "file": "components/figma/adm-ld-010000/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4915:239337",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-ld-010000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "4101:129329",
+      "component": "Header",
+      "file": "components/figma/adm-ld-010000/Header.tsx"
+    }
+  ]
 }

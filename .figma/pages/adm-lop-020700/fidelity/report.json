@@ -1,0 +1,496 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 2191,
+    "mismatched": 5765,
+    "percent": 0.183,
+    "shapePercent": 0.002,
+    "textPercent": 0.814,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2711:61489;1048:1240",
+      "name": "Button",
+      "pixels": 93,
+      "percent": 9.8
+    },
+    {
+      "id": "2711:61473",
+      "name": "drive.google.com/tao-lich-hen-ics",
+      "pixels": 378,
+      "percent": 9
+    },
+    {
+      "id": "I4915:227463;4901:210435;2245:87908",
+      "name": "Label",
+      "pixels": 201,
+      "percent": 8.4
+    },
+    {
+      "id": "I2711:61431;1430:10764",
+      "name": "Button",
+      "pixels": 95,
+      "percent": 6.3
+    },
+    {
+      "id": "I4915:227463;4901:210433;2245:87908",
+      "name": "Label",
+      "pixels": 141,
+      "percent": 5.9
+    },
+    {
+      "id": "I2711:61430;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 155,
+      "percent": 5.2
+    },
+    {
+      "id": "I2711:61472;1062:1351",
+      "name": "Huong-dan-hoc-vien.mp4",
+      "pixels": 183,
+      "percent": 5.1
+    },
+    {
+      "id": "I2711:61388;1062:1351",
+      "name": "Huong-dan-hoc-vien.mp4",
+      "pixels": 158,
+      "percent": 4.8
+    },
+    {
+      "id": "I2711:61451;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 103,
+      "percent": 4.2
+    },
+    {
+      "id": "I2711:61497;1055:2269",
+      "name": "Badge",
+      "pixels": 21,
+      "percent": 4.2
+    },
+    {
+      "id": "I2711:61417;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 101,
+      "percent": 4.1
+    },
+    {
+      "id": "I2711:61407;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 98,
+      "percent": 4
+    },
+    {
+      "id": "I2711:61490;1048:1238",
+      "name": "Button",
+      "pixels": 45,
+      "percent": 3.9
+    },
+    {
+      "id": "I2711:61501;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 96,
+      "percent": 3.9
+    },
+    {
+      "id": "I2711:61504;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 95,
+      "percent": 3.9
+    }
+  ],
+  "regions": [
+    {
+      "x": 352,
+      "y": 864,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "2711:61414",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 352,
+      "y": 1296,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "2711:61448",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 408,
+      "y": 456,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I2711:61388;1062:1346",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4915:227463;4901:210468",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 408,
+      "y": 1512,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I2711:61472;1062:1346",
+        "name": "Container",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 330,
+    "missing": [],
+    "withinThreshold": 330,
+    "buckets": {
+      "≤0.5px": 318,
+      "≤1px": 330,
+      "≤2px": 330,
+      "≤4px": 330,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2711:61424",
+        "name": "Left",
+        "role": "container",
+        "delta": 0.92,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:61427",
+        "name": "Follow khách sau tuần 2",
+        "role": "text",
+        "delta": 0.92,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:61428",
+        "name": "Right",
+        "role": "container",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:61429",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:61429;1048:1251",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:61430",
+        "name": "Atom/Chip",
+        "role": "instance",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:61430;1590:881",
+        "name": "Th2, 14.09.2026",
+        "role": "text",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:61431",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:61431;1430:10764",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:61486",
+        "name": "Người xác thực",
+        "role": "container",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:61489",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.55,
+        "dx": -0.55,
+        "dy": 0,
+        "dw": 0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:61489;1048:1240",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.55,
+        "dx": -0.55,
+        "dy": 0,
+        "dw": 0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3857:71889",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0.23,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.23,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3857:71889;2808:48145",
+        "name": "Nhãn trường",
+        "role": "text",
+        "delta": 0.23,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.23,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:61476",
+        "name": "Left",
+        "role": "container",
+        "delta": 0.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:61479",
+        "name": "Class Handler xác nhận đã follow đủ tuần",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:61480",
+        "name": "Right",
+        "role": "container",
+        "delta": 0.17,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:61481",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.17,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:61481;1048:1251",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.17,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:227463;4901:210378",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:227463;4901:210385",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:227463;4901:210399",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:227463;4901:210400",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:227463;4901:210403",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "2711:61337",
+        "name": "MainContent",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.92,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-lop-hoc/quy-trinh-lop",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

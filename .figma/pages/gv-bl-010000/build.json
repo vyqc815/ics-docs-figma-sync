@@ -1,6 +1,32 @@
 {
   "route": "/bao-loi/danh-sach-bao-loi-gv-bl-010000",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-bl-010000/index.tsx",
   "docFile": "docs/pages/bao-loi/danh-sach-bao-loi-gv-bl-010000.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "5019:364968",
+      "component": "Body",
+      "file": "components/figma/gv-bl-010000/Body.tsx"
+    },
+    {
+      "nodeId": "5019:365103",
+      "component": "NoiDung",
+      "file": "components/figma/gv-bl-010000/NoiDung.tsx"
+    },
+    {
+      "nodeId": "5371:43254",
+      "component": "Nut3ChamDangMo",
+      "file": "components/figma/gv-bl-010000/Nut3ChamDangMo.tsx"
+    },
+    {
+      "nodeId": "5371:43256",
+      "component": "MenuThaoTacDongChinhSuaXoaBug",
+      "file": "components/figma/gv-bl-010000/MenuThaoTacDongChinhSuaXoaBug.tsx"
+    },
+    {
+      "nodeId": "5371:43435",
+      "component": "MenuBugCuaToi",
+      "file": "components/figma/gv-bl-010000/MenuBugCuaToi.tsx"
+    }
+  ]
 }

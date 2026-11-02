@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 5703,
+    "percent": 0.489,
+    "shapePercent": 0.001,
+    "textPercent": 2.432,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:118601;2245:87914",
+      "name": "Label",
+      "pixels": 343,
+      "percent": 14.3
+    },
+    {
+      "id": "I4056:118593;2245:87908",
+      "name": "Label",
+      "pixels": 329,
+      "percent": 13.7
+    },
+    {
+      "id": "I4056:118591;2245:87908",
+      "name": "Label",
+      "pixels": 206,
+      "percent": 8.6
+    },
+    {
+      "id": "4056:118518",
+      "name": "Thêm Tráo Thẻ",
+      "pixels": 136,
+      "percent": 7.2
+    },
+    {
+      "id": "I4056:118504;2409:141178",
+      "name": "Hệ thống",
+      "pixels": 182,
+      "percent": 6.8
+    },
+    {
+      "id": "I4056:118515;2409:141178",
+      "name": "Hệ thống",
+      "pixels": 182,
+      "percent": 6.8
+    },
+    {
+      "id": "4056:118507",
+      "name": "Đổi Trạng Thái",
+      "pixels": 123,
+      "percent": 6.7
+    },
+    {
+      "id": "4056:118496",
+      "name": "Chăm Sóc Lớp",
+      "pixels": 117,
+      "percent": 6.5
+    },
+    {
+      "id": "I4056:118526;2409:141178",
+      "name": "Hệ thống",
+      "pixels": 102,
+      "percent": 4.7
+    },
+    {
+      "id": "4056:118433",
+      "name": "NGÀY LOG",
+      "pixels": 64,
+      "percent": 4.6
+    },
+    {
+      "id": "4056:118429",
+      "name": "MÔ TẢ",
+      "pixels": 38,
+      "percent": 4.3
+    },
+    {
+      "id": "I4056:118594;2245:87908",
+      "name": "Label",
+      "pixels": 104,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:118460",
+      "name": "Giúp học viên thực hành theo dõi lớp học, nắm được tình trạng học tập của học viên và rèn kỹ năng tổng hợp – báo cáo thông tin lớp.",
+      "pixels": 1085,
+      "percent": 4.1
+    },
+    {
+      "id": "4056:118509",
+      "name": "Thuy SP đã đổi trạng thái lớp NS003",
+      "pixels": 177,
+      "percent": 3.9
+    },
+    {
+      "id": "I4056:118502;1350:12808",
+      "name": "7 ngày (40 ca)",
+      "pixels": 73,
+      "percent": 3.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4056:118625",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 279,
+    "missing": [],
+    "withinThreshold": 279,
+    "buckets": {
+      "≤0.5px": 278,
+      "≤1px": 279,
+      "≤2px": 279,
+      "≤4px": 279,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:118429",
+        "name": "MÔ TẢ",
+        "role": "text",
+        "delta": 0.94,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118418",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118418;1739:32348",
+        "name": "Frame 427321959",
+        "role": "container",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118418;1739:32349",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118418;1739:32351",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118419",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118419;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118419;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118496",
+        "name": "Chăm Sóc Lớp",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118493",
+        "name": "Atom/Object Chip",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118493;2409:141174",
+        "name": "Tittle",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118493;2409:141175",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118493;2409:141178",
+        "name": "Hệ thống",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118504",
+        "name": "Atom/Object Chip",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118504;2409:141174",
+        "name": "Tittle",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118504;2409:141175",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118504;2409:141178",
+        "name": "Hệ thống",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118515",
+        "name": "Atom/Object Chip",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118515;2409:141174",
+        "name": "Tittle",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118515;2409:141175",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:118515;2409:141178",
+        "name": "Hệ thống",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118507",
+        "name": "Đổi Trạng Thái",
+        "role": "text",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:118536",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:118543",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:118557",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 0.94,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/lop-hoc/nhat-ky/nhat-ky-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

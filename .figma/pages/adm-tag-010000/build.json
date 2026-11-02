@@ -1,6 +1,25 @@
 {
   "route": "/tag/quan-ly-tag",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-tag-010000/index.tsx",
   "docFile": "docs/pages/tag/quan-ly-tag.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3065:62876",
+      "component": "Header20",
+      "file": "components/figma/shared/Header20.tsx"
+    },
+    {
+      "nodeId": "4915:248607",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-tag-010000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3065:64797",
+      "component": "Maincontent",
+      "file": "components/figma/adm-tag-010000/Maincontent.tsx"
+    }
+  ],
+  "idAlias": {
+    "3065:62876": "2409:149271"
+  }
 }

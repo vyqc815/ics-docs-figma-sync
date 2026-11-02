@@ -1,6 +1,22 @@
 {
   "route": "/lop-hoc/cai-dat/thong-tin",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-040100/index.tsx",
   "docFile": "docs/pages/lop-hoc/cai-dat/thong-tin.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2199:19566",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-040100/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4915:230175",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-040100/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3497:50563",
+      "component": "Header16",
+      "file": "components/figma/shared/Header16.tsx"
+    }
+  ]
 }

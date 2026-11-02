@@ -1,6 +1,82 @@
 {
   "route": "/bao-loi/danh-sach-bao-loi",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-bl-010000/index.tsx",
   "docFile": "docs/pages/bao-loi/danh-sach-bao-loi.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "5274:364990",
+      "component": "Body",
+      "file": "components/figma/cd-bl-010000/Body.tsx"
+    },
+    {
+      "nodeId": "5274:365125",
+      "component": "NoiDung",
+      "file": "components/figma/shared/NoiDung.tsx"
+    },
+    {
+      "nodeId": "5371:41169",
+      "component": "ODangSuaTrungTam",
+      "file": "components/figma/shared/ODangSuaTrungTam.tsx"
+    },
+    {
+      "nodeId": "5371:41173",
+      "component": "Menu5TrungTamConLai",
+      "file": "components/figma/shared/Menu5TrungTamConLai.tsx"
+    },
+    {
+      "nodeId": "5371:41237",
+      "component": "ODangSuaDoiTuong",
+      "file": "components/figma/shared/ODangSuaDoiTuong.tsx"
+    },
+    {
+      "nodeId": "5371:41240",
+      "component": "MenuDoiTuong",
+      "file": "components/figma/shared/MenuDoiTuong.tsx"
+    },
+    {
+      "nodeId": "5371:41294",
+      "component": "ODangSuaMucDo",
+      "file": "components/figma/shared/ODangSuaMucDo.tsx"
+    },
+    {
+      "nodeId": "5371:41297",
+      "component": "Menu4MucDo",
+      "file": "components/figma/shared/Menu4MucDo.tsx"
+    },
+    {
+      "nodeId": "5371:41351",
+      "component": "ODangSuaLoai",
+      "file": "components/figma/shared/ODangSuaLoai.tsx"
+    },
+    {
+      "nodeId": "5371:41355",
+      "component": "MenuLoai",
+      "file": "components/figma/shared/MenuLoai.tsx"
+    },
+    {
+      "nodeId": "5371:41389",
+      "component": "ODangSuaTrangThai",
+      "file": "components/figma/shared/ODangSuaTrangThai.tsx"
+    },
+    {
+      "nodeId": "5371:41392",
+      "component": "MenuTrangThai",
+      "file": "components/figma/shared/MenuTrangThai.tsx"
+    },
+    {
+      "nodeId": "5371:41436",
+      "component": "OSuaTrucTiepTieuDe",
+      "file": "components/figma/shared/OSuaTrucTiepTieuDe.tsx"
+    },
+    {
+      "nodeId": "5371:41440",
+      "component": "Nut3ChamDangMo",
+      "file": "components/figma/shared/Nut3ChamDangMo.tsx"
+    },
+    {
+      "nodeId": "5371:41442",
+      "component": "MenuThaoTacDongChinhSuaXoaBug",
+      "file": "components/figma/shared/MenuThaoTacDongChinhSuaXoaBug.tsx"
+    }
+  ]
 }

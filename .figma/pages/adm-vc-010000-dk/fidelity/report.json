@@ -1,0 +1,460 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 2931,
+    "percent": 0.251,
+    "shapePercent": 0.002,
+    "textPercent": 1.636,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:129429;2245:87864",
+      "name": "Label",
+      "pixels": 308,
+      "percent": 12.3
+    },
+    {
+      "id": "I4056:129669;1391:17487",
+      "name": "Sau",
+      "pixels": 30,
+      "percent": 5.5
+    },
+    {
+      "id": "4056:129568",
+      "name": "Mã người nhận",
+      "pixels": 28,
+      "percent": 5
+    },
+    {
+      "id": "I4056:129669;1391:17479",
+      "name": "2",
+      "pixels": 11,
+      "percent": 5
+    },
+    {
+      "id": "4056:129611",
+      "name": "Mã voucher",
+      "pixels": 108,
+      "percent": 3.6
+    },
+    {
+      "id": "4056:129536",
+      "name": "Mã voucher",
+      "pixels": 108,
+      "percent": 3.5
+    },
+    {
+      "id": "4056:129581",
+      "name": "Mã voucher",
+      "pixels": 106,
+      "percent": 3.5
+    },
+    {
+      "id": "4056:129596",
+      "name": "Mã voucher",
+      "pixels": 102,
+      "percent": 3.4
+    },
+    {
+      "id": "I4056:129432;2245:87820",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 3.3
+    },
+    {
+      "id": "4056:129521",
+      "name": "Mã voucher",
+      "pixels": 104,
+      "percent": 3.3
+    },
+    {
+      "id": "4056:129566",
+      "name": "Mã voucher",
+      "pixels": 97,
+      "percent": 3.1
+    },
+    {
+      "id": "4056:129641",
+      "name": "Mã voucher",
+      "pixels": 91,
+      "percent": 3.1
+    },
+    {
+      "id": "4056:129656",
+      "name": "Mã voucher",
+      "pixels": 97,
+      "percent": 3
+    },
+    {
+      "id": "4056:129511",
+      "name": "Ngày hết hạn",
+      "pixels": 69,
+      "percent": 2.9
+    },
+    {
+      "id": "I4056:129527;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 46,
+      "percent": 2.9
+    }
+  ],
+  "regions": [
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4056:129409",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4056:129409",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 298,
+    "missing": [],
+    "withinThreshold": 298,
+    "buckets": {
+      "≤0.5px": 298,
+      "≤1px": 298,
+      "≤2px": 298,
+      "≤4px": 298,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4056:129529;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129544;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129559;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129589;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129604;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129619;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129634;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129649;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129664;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129669;1391:17471",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129669;1391:17472",
+        "name": "Hiển thị 1 - 10 trong tổng số 80 lớp học",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129669;1391:17473",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129669;1391:17474",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129669;1391:17475",
+        "name": "Trước",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129669;1391:17476",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129669;1391:17477",
+        "name": "1",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129669;1391:17478",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129669;1391:17479",
+        "name": "2",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129669;1391:17486",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129669;1391:17487",
+        "name": "Sau",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:129566",
+        "name": "Mã voucher",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:129422",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:129536",
+        "name": "Mã voucher",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:129407",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:129408",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.42,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/voucher/danh-sach-voucher-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

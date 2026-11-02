@@ -1,6 +1,34 @@
 {
   "route": "/quy-trinh/chi-tiet-loai-quy-trinh-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-qt-020000-dk/index.tsx",
   "docFile": "docs/pages/quy-trinh/chi-tiet-loai-quy-trinh-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:128967",
+      "component": "Sidebar",
+      "file": "components/figma/adm-qt-020000-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "4056:129041",
+      "component": "Header4",
+      "file": "components/figma/shared/Header4.tsx"
+    },
+    {
+      "nodeId": "4056:129090",
+      "component": "Maincontent",
+      "file": "components/figma/adm-qt-020000-dk/Maincontent.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:129041": "4056:119548",
+    "4056:129042": "4056:119549",
+    "4056:129089": "4056:119596",
+    "I4056:129089;2008:30986": "I4056:119596;2008:30986",
+    "I4056:129089;2008:31747": "I4056:119596;2008:31747",
+    "I4056:129089;2008:31748": "I4056:119596;2008:31748",
+    "I4056:129089;1391:17264": "I4056:119596;1391:17264",
+    "I4056:129089;1391:17266": "I4056:119596;1391:17266",
+    "I4056:129089;1391:17268": "I4056:119596;1391:17268",
+    "I4056:129089;1391:17270": "I4056:119596;1391:17270"
+  }
 }

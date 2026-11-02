@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1059,
+    "mismatched": 4672,
+    "percent": 0.306,
+    "shapePercent": 0.002,
+    "textPercent": 1.34,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "3304:60344",
+      "name": "Tổng Quan Lớp",
+      "pixels": 717,
+      "percent": 16.1
+    },
+    {
+      "id": "I4915:223847;4901:206367;2245:87914",
+      "name": "Label",
+      "pixels": 237,
+      "percent": 9.9
+    },
+    {
+      "id": "I3304:62463;3004:73494",
+      "name": "Tiêu đề",
+      "pixels": 291,
+      "percent": 8.3
+    },
+    {
+      "id": "I3304:62463;3004:73500",
+      "name": "CSKH",
+      "pixels": 749,
+      "percent": 6.7
+    },
+    {
+      "id": "I3304:62463;3004:73499",
+      "name": "SP",
+      "pixels": 370,
+      "percent": 6.3
+    },
+    {
+      "id": "I3304:60375;3065:71108",
+      "name": "Tiêu đề",
+      "pixels": 107,
+      "percent": 5.4
+    },
+    {
+      "id": "I4915:223847;4901:206370;2245:87908",
+      "name": "Label",
+      "pixels": 115,
+      "percent": 4.8
+    },
+    {
+      "id": "I3304:62463;3004:73501",
+      "name": "Giáo viên",
+      "pixels": 239,
+      "percent": 4.1
+    },
+    {
+      "id": "I3304:62606;2015:31836;3304:62601;2015:30575",
+      "name": "Label",
+      "pixels": 89,
+      "percent": 3.9
+    },
+    {
+      "id": "I3304:62463;3004:73498",
+      "name": "Lịch học",
+      "pixels": 229,
+      "percent": 3.9
+    },
+    {
+      "id": "I4915:223847;4901:206368;2245:87908",
+      "name": "Label",
+      "pixels": 91,
+      "percent": 3.8
+    },
+    {
+      "id": "I3304:62463;3004:73497",
+      "name": "Khai giảng",
+      "pixels": 224,
+      "percent": 3.8
+    },
+    {
+      "id": "I3304:60356;3065:71108",
+      "name": "Tiêu đề",
+      "pixels": 88,
+      "percent": 3.7
+    },
+    {
+      "id": "I4915:223847;4901:206369;2245:87908",
+      "name": "Label",
+      "pixels": 77,
+      "percent": 3.2
+    },
+    {
+      "id": "3304:60369",
+      "name": "Tuyết Ngọc",
+      "pixels": 53,
+      "percent": 3
+    }
+  ],
+  "regions": [
+    {
+      "x": 480,
+      "y": 96,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "3304:60343",
+        "name": "SectionClassOverviewHeader",
+        "role": "container"
+      }
+    },
+    {
+      "x": 464,
+      "y": 336,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "3304:62581",
+        "name": "Mouse click",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4915:223847;4901:206402",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 468,
+    "missing": [],
+    "withinThreshold": 468,
+    "buckets": {
+      "≤0.5px": 463,
+      "≤1px": 467,
+      "≤2px": 467,
+      "≤4px": 468,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3304:60344",
+        "name": "Tổng Quan Lớp",
+        "role": "text",
+        "delta": 2.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3304:60366",
+        "name": "Frame 1171274933",
+        "role": "container",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3304:60368",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3304:60369",
+        "name": "Tuyết Ngọc",
+        "role": "text",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3304:60370",
+        "name": "GHI CHÚ",
+        "role": "icon",
+        "delta": 0.52,
+        "dx": 0.52,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:93539",
+        "name": "Trạng thái",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:93562",
+        "name": "Trạng thái",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:60354;3065:71109",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3304:60374",
+        "name": "Thẻ chỉ số",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:60374;3065:71106",
+        "name": "Frame 1171274980",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:60374;3065:71107",
+        "name": "Frame 1171274979",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:60374;3065:71111",
+        "name": "Atom/Sparkline",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:60375;3065:71108",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:60377;3065:71108",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:60377;3065:71109",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3304:60378",
+        "name": "Thẻ chỉ số",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:60378;3065:71106",
+        "name": "Frame 1171274980",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:60378;3065:71107",
+        "name": "Frame 1171274979",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:60378;3065:71111",
+        "name": "Atom/Sparkline",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:62218;1308:10491",
+        "name": "A",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:62233;1308:10491",
+        "name": "A",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3304:62298;1308:10491",
+        "name": "A",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:223847;4901:206312",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:223847;4901:206319",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:223847;4901:206333",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 2.25,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-lop-hoc/tong-quan-chi-tiet",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

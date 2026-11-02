@@ -1,6 +1,30 @@
 {
   "route": "/voucher/danh-sach-voucher-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-vc-010000-dk/index.tsx",
   "docFile": "docs/pages/voucher/danh-sach-voucher-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:129354",
+      "component": "Bg2",
+      "file": "components/figma/shared/Bg2.tsx"
+    },
+    {
+      "nodeId": "4056:129355",
+      "component": "Sidebar",
+      "file": "components/figma/adm-vc-010000-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "4056:129442",
+      "component": "Header",
+      "file": "components/figma/adm-vc-010000-dk/Header.tsx"
+    },
+    {
+      "nodeId": "4056:129491",
+      "component": "MainVoucher",
+      "file": "components/figma/adm-vc-010000-dk/MainVoucher.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:129354": "4056:130075"
+  }
 }

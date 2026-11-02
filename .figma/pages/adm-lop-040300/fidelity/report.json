@@ -1,0 +1,475 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 860,
+    "mismatched": 1277,
+    "percent": 0.103,
+    "shapePercent": 0.002,
+    "textPercent": 1.316,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "2527:185358",
+      "name": "Buổi đã dạy / Tổng",
+      "pixels": 231,
+      "percent": 8.5
+    },
+    {
+      "id": "I4915:229723;4901:211143;2245:87908",
+      "name": "Label",
+      "pixels": 201,
+      "percent": 8.4
+    },
+    {
+      "id": "I4915:229723;4901:211141;2245:87908",
+      "name": "Label",
+      "pixels": 141,
+      "percent": 5.9
+    },
+    {
+      "id": "I2384:54527;1910:18518",
+      "name": "Button",
+      "pixels": 153,
+      "percent": 4.8
+    },
+    {
+      "id": "2384:50902",
+      "name": "PHỤ TRÁCH CHÍNH",
+      "pixels": 93,
+      "percent": 3.6
+    },
+    {
+      "id": "2527:185364",
+      "name": "200.000 đ",
+      "pixels": 39,
+      "percent": 2.9
+    },
+    {
+      "id": "2527:185360",
+      "name": "Lương / Buổi",
+      "pixels": 72,
+      "percent": 2.8
+    },
+    {
+      "id": "2384:50900",
+      "name": "Mã giáo viên",
+      "pixels": 51,
+      "percent": 2.7
+    },
+    {
+      "id": "2384:50898",
+      "name": "Giáo viên",
+      "pixels": 48,
+      "percent": 2.2
+    },
+    {
+      "id": "2527:185368",
+      "name": "200.000 đ",
+      "pixels": 30,
+      "percent": 2.2
+    },
+    {
+      "id": "2527:185362",
+      "name": "12 / 20",
+      "pixels": 20,
+      "percent": 2.1
+    },
+    {
+      "id": "I4915:229723;4901:211144;2245:87908",
+      "name": "Label",
+      "pixels": 47,
+      "percent": 2
+    },
+    {
+      "id": "2527:185366",
+      "name": "8 / 20",
+      "pixels": 12,
+      "percent": 1.5
+    },
+    {
+      "id": "2384:54585",
+      "name": "Mã giáo viên",
+      "pixels": 27,
+      "percent": 1.1
+    },
+    {
+      "id": "2384:54573",
+      "name": "Mã giáo viên",
+      "pixels": 24,
+      "percent": 1
+    }
+  ],
+  "regions": [
+    {
+      "x": 1216,
+      "y": 232,
+      "width": 24,
+      "height": 24,
+      "pixels": 26,
+      "node": {
+        "id": "2384:54598",
+        "name": "Frame 1171274935",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4915:229723;4901:211176",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 148,
+    "missing": [],
+    "withinThreshold": 147,
+    "buckets": {
+      "≤0.5px": 147,
+      "≤1px": 147,
+      "≤2px": 147,
+      "≤4px": 148,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2527:185358",
+        "name": "Buổi đã dạy / Tổng",
+        "role": "text",
+        "delta": 2.63,
+        "dx": -1.31,
+        "dy": 0,
+        "dw": 2.63,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:53548",
+        "name": "Horizontal Tab Bar Navigation",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:53552",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:53552;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:53552;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:53553",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:53553;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:53553;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:53554",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:53554;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:53554;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:53555",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:53555;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:53555;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:53556",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:53556;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:53556;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:229723;4901:211086",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:229723;4901:211093",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:229723;4901:211107",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:229723;4901:211108",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:229723;4901:211111",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "2384:50873",
+        "name": "MainContent",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "2384:53549",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:53549;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.63,
+    "over": [
+      {
+        "id": "2527:185358",
+        "name": "Buổi đã dạy / Tổng",
+        "role": "text",
+        "delta": 2.63,
+        "dx": -1.31,
+        "dy": 0,
+        "dw": 2.63,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "1 elements are off by more than their limit (1px, 2.5px for text-driven; worst 2.63px)."
+  ],
+  "url": "http://localhost:3108/lop-hoc/cai-dat/giao-vien",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

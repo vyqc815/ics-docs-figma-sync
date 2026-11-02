@@ -1,6 +1,22 @@
 {
   "route": "/khao-sat/giao-khao-sat-hoc-vien/danh-sach-hoc-vien-duoc-giao",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-gks-030000/index.tsx",
   "docFile": "docs/pages/khao-sat/giao-khao-sat-hoc-vien/danh-sach-hoc-vien-duoc-giao.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4915:244281",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-gks-030000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "4885:41018",
+      "component": "Header",
+      "file": "components/figma/adm-gks-030000/Header.tsx"
+    },
+    {
+      "nodeId": "4885:41068",
+      "component": "MaincontentGiaoKhaoSat",
+      "file": "components/figma/adm-gks-030000/MaincontentGiaoKhaoSat.tsx"
+    }
+  ]
 }

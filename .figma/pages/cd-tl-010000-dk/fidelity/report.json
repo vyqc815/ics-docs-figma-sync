@@ -1,0 +1,460 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 910,
+    "mismatched": 2471,
+    "percent": 0.189,
+    "shapePercent": 0.002,
+    "textPercent": 1.546,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6133:126670;6133:108639;2245:87820",
+      "name": "Label",
+      "pixels": 222,
+      "percent": 8.7
+    },
+    {
+      "id": "I6133:126670;6133:108641;2245:87774",
+      "name": "Label",
+      "pixels": 244,
+      "percent": 8.5
+    },
+    {
+      "id": "I6133:126670;6133:108633;2245:87820",
+      "name": "Label",
+      "pixels": 200,
+      "percent": 7.8
+    },
+    {
+      "id": "I6133:126670;6133:108625;2245:87768",
+      "name": "Label",
+      "pixels": 171,
+      "percent": 5.9
+    },
+    {
+      "id": "I6133:126815;1048:1232",
+      "name": "Button",
+      "pixels": 80,
+      "percent": 5.8
+    },
+    {
+      "id": "I6133:126670;6133:108626;2245:87820",
+      "name": "Label",
+      "pixels": 138,
+      "percent": 5.4
+    },
+    {
+      "id": "I6133:126814;1048:1232",
+      "name": "Button",
+      "pixels": 63,
+      "percent": 4.8
+    },
+    {
+      "id": "I6133:126670;6133:108624;2245:87768",
+      "name": "Label",
+      "pixels": 134,
+      "percent": 4.7
+    },
+    {
+      "id": "6133:126725",
+      "name": "Tạo audio từ văn bản bằng Qwen3-TTS · xử lý trên máy chủ, mở là dùng, không cần cài đặt",
+      "pixels": 384,
+      "percent": 3.6
+    },
+    {
+      "id": "I6133:126670;6133:108622;2245:87768",
+      "name": "Label",
+      "pixels": 96,
+      "percent": 3.3
+    },
+    {
+      "id": "I6133:126759;1048:1232",
+      "name": "Button",
+      "pixels": 23,
+      "percent": 3.2
+    },
+    {
+      "id": "I6133:126766;3857:80277",
+      "name": "Tab",
+      "pixels": 29,
+      "percent": 2.8
+    },
+    {
+      "id": "I6133:126670;6133:108640;2245:87820",
+      "name": "Label",
+      "pixels": 70,
+      "percent": 2.7
+    },
+    {
+      "id": "I6133:126670;6133:108623;2245:87768",
+      "name": "Label",
+      "pixels": 67,
+      "percent": 2.3
+    },
+    {
+      "id": "I6133:126670;6133:108642;2245:87768",
+      "name": "Label",
+      "pixels": 65,
+      "percent": 2.3
+    }
+  ],
+  "regions": [
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 7,
+      "node": {
+        "id": "I6133:126670;6133:108604",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I6133:126670;6133:108604",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 173,
+    "missing": [],
+    "withinThreshold": 173,
+    "buckets": {
+      "≤0.5px": 165,
+      "≤1px": 171,
+      "≤2px": 173,
+      "≤4px": 173,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I6133:126815;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 1.38,
+        "dx": -0.69,
+        "dy": 0,
+        "dw": 1.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126814;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 1.19,
+        "dx": -0.59,
+        "dy": 0,
+        "dw": 1.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:126758",
+        "name": "Độ dài ước tính ~ 10 giây âm thanh",
+        "role": "text",
+        "delta": 0.92,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:126759",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126759;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:126760",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126760;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:126725",
+        "name": "Tạo audio từ văn bản bằng Qwen3-TTS · xử lý trên máy chủ, mở là dùng, không cần cài đặt",
+        "role": "text",
+        "delta": 0.84,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:126750",
+        "name": "Văn bản",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:126751",
+        "name": "Dán văn bản hoặc gõ trực tiếp",
+        "role": "text",
+        "delta": 0.27,
+        "dx": -0.27,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:126810",
+        "name": "Kết quả",
+        "role": "text",
+        "delta": 0.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:126811",
+        "name": "Tiếng Đức · Nữ 2 · 10 giây",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126670;6133:108617",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126670;6133:108602",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126670;6133:108603",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126670;6133:108604",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126670;6133:108616",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:126669",
+        "name": "AppLayoutWrapper",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "6133:126670",
+        "name": "Sidebar · MENU - CD",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6133:126670;6133:108551",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6133:126670;6133:108619",
+        "name": "Nav Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6133:126670;6133:108620",
+        "name": "Menu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6133:126670;6133:108621",
+        "name": "Card Menu",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126670;6133:108621;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126670;6133:108621;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.38,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/tools/giong-doc/doc-van-ban-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

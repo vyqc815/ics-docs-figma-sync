@@ -1,0 +1,763 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1280,
+    "mismatched": 6655,
+    "percent": 0.361,
+    "shapePercent": 0.051,
+    "textPercent": 1.574,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:111748;1308:6749",
+      "name": "100%",
+      "pixels": 67,
+      "percent": 19.9
+    },
+    {
+      "id": "I4056:111749;1308:6749",
+      "name": "100%",
+      "pixels": 67,
+      "percent": 19.9
+    },
+    {
+      "id": "I4056:111760;1308:6749",
+      "name": "100%",
+      "pixels": 67,
+      "percent": 19.9
+    },
+    {
+      "id": "I4056:111761;1308:6749",
+      "name": "100%",
+      "pixels": 67,
+      "percent": 19.9
+    },
+    {
+      "id": "4056:111700",
+      "name": "ÔN TẬP: Giữa Kỳ 1",
+      "pixels": 604,
+      "percent": 14.9
+    },
+    {
+      "id": "4560:31864",
+      "name": "Từ điển Hán Việt trực tuyến",
+      "pixels": 613,
+      "percent": 14.6
+    },
+    {
+      "id": "I4056:111913;2245:87908",
+      "name": "Label",
+      "pixels": 329,
+      "percent": 13.7
+    },
+    {
+      "id": "I4056:111912;2245:87914",
+      "name": "Label",
+      "pixels": 305,
+      "percent": 12.7
+    },
+    {
+      "id": "I4056:111911;2245:87908",
+      "name": "Label",
+      "pixels": 206,
+      "percent": 8.6
+    },
+    {
+      "id": "I4560:31855;2808:43098",
+      "name": "Đường dẫn tài liệu, website, video tham khảo, ...",
+      "pixels": 284,
+      "percent": 4.7
+    },
+    {
+      "id": "I4056:111914;2245:87908",
+      "name": "Label",
+      "pixels": 104,
+      "percent": 4.3
+    },
+    {
+      "id": "4560:31876",
+      "name": "Video luyện nghe tiếng Trung (YouTube)",
+      "pixels": 238,
+      "percent": 3.9
+    },
+    {
+      "id": "4056:111733",
+      "name": "Danh sách bài học",
+      "pixels": 179,
+      "percent": 3.9
+    },
+    {
+      "id": "4056:111747",
+      "name": "ÔN TẬP: Giữa Kỳ 1",
+      "pixels": 215,
+      "percent": 3.9
+    },
+    {
+      "id": "I4560:31741;2808:43057",
+      "name": "Giáo trình, file PDF, Word, PPT, ...",
+      "pixels": 153,
+      "percent": 3.8
+    }
+  ],
+  "regions": [
+    {
+      "x": 752,
+      "y": 832,
+      "width": 24,
+      "height": 16,
+      "pixels": 107,
+      "node": {
+        "id": "4560:31838",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 920,
+      "y": 832,
+      "width": 24,
+      "height": 16,
+      "pixels": 106,
+      "node": {
+        "id": "4560:31838",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 664,
+      "y": 832,
+      "width": 32,
+      "height": 16,
+      "pixels": 103,
+      "node": {
+        "id": "4560:31838",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 920,
+      "y": 856,
+      "width": 24,
+      "height": 16,
+      "pixels": 101,
+      "node": {
+        "id": "4560:31823",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 664,
+      "y": 856,
+      "width": 24,
+      "height": 16,
+      "pixels": 97,
+      "node": {
+        "id": "4560:31838",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 752,
+      "y": 856,
+      "width": 24,
+      "height": 16,
+      "pixels": 92,
+      "node": {
+        "id": "4560:31833",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 840,
+      "y": 832,
+      "width": 24,
+      "height": 16,
+      "pixels": 87,
+      "node": {
+        "id": "4560:31838",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 840,
+      "y": 856,
+      "width": 24,
+      "height": 16,
+      "pixels": 84,
+      "node": {
+        "id": "4560:31828",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 928,
+      "y": 888,
+      "width": 16,
+      "height": 16,
+      "pixels": 40,
+      "node": {
+        "id": "4560:31820",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 760,
+      "y": 888,
+      "width": 16,
+      "height": 16,
+      "pixels": 36,
+      "node": {
+        "id": "4560:31830",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 672,
+      "y": 888,
+      "width": 16,
+      "height": 16,
+      "pixels": 32,
+      "node": {
+        "id": "4560:31835",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 840,
+      "y": 888,
+      "width": 16,
+      "height": 16,
+      "pixels": 30,
+      "node": {
+        "id": "4560:31825",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 480,
+      "y": 88,
+      "width": 8,
+      "height": 24,
+      "pixels": 11,
+      "node": {
+        "id": "4056:111700",
+        "name": "ÔN TẬP: Giữa Kỳ 1",
+        "role": "text"
+      }
+    },
+    {
+      "x": 568,
+      "y": 1120,
+      "width": 8,
+      "height": 16,
+      "pixels": 7,
+      "node": {
+        "id": "4560:31857",
+        "name": "Link 1: Từ điển Hán Việt",
+        "role": "container"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4056:111945",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 377,
+    "missing": [],
+    "withinThreshold": 365,
+    "buckets": {
+      "≤0.5px": 359,
+      "≤1px": 359,
+      "≤2px": 359,
+      "≤4px": 365,
+      ">4px": 12
+    },
+    "worst": [
+      {
+        "id": "4560:31820",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31825",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31830",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31835",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31818",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.62,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31823",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.63,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31828",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.62,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31833",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.63,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31819",
+        "name": "mā",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31824",
+        "name": "má",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31829",
+        "name": "mǎ",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31834",
+        "name": "mà",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:111700",
+        "name": "ÔN TẬP: Giữa Kỳ 1",
+        "role": "text",
+        "delta": 2.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31858",
+        "name": "Container",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31862",
+        "name": "Container",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31863",
+        "name": "Heading 4",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31864",
+        "name": "Từ điển Hán Việt trực tuyến",
+        "role": "text",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31865",
+        "name": "Link",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31876",
+        "name": "Video luyện nghe tiếng Trung (YouTube)",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31741;2808:43055",
+        "name": "Tài liệu học tập (3)",
+        "role": "text",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31743;1062:1357",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31743;1062:1358",
+        "name": "Cập nhật",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31744;1062:1357",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31744;1062:1358",
+        "name": "Cập nhật",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31745;1062:1357",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 82,
+    "over": [
+      {
+        "id": "4560:31820",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31825",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31830",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31835",
+        "name": "Container",
+        "role": "icon",
+        "delta": 82,
+        "dx": 0,
+        "dy": -82,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31818",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.62,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31823",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.63,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31828",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.62,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31833",
+        "name": "Container",
+        "role": "container",
+        "delta": 76.63,
+        "dx": -76.63,
+        "dy": -51,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31819",
+        "name": "mā",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31824",
+        "name": "má",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31829",
+        "name": "mǎ",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31834",
+        "name": "mà",
+        "role": "text",
+        "delta": 27,
+        "dx": -19,
+        "dy": -27,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "12 elements are off by more than their limit (1px, 2.5px for text-driven; worst 82px)."
+  ],
+  "url": "http://localhost:3108/lop-hoc/bai-hoc/tai-nguyen-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,0 +1,484 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 977,
+    "percent": 0.084,
+    "shapePercent": 0.073,
+    "textPercent": 0.198,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2409:148203;1048:1230",
+      "name": "Button",
+      "pixels": 10,
+      "percent": 0.7
+    },
+    {
+      "id": "I4915:240882;4899:199748;2245:87768",
+      "name": "Label",
+      "pixels": 16,
+      "percent": 0.6
+    },
+    {
+      "id": "2391:66060",
+      "name": "Xác minh Gmail",
+      "pixels": 28,
+      "percent": 0.5
+    },
+    {
+      "id": "I4915:240882;4899:199759;2245:87858",
+      "name": "Label",
+      "pixels": 13,
+      "percent": 0.5
+    },
+    {
+      "id": "2391:66025",
+      "name": "Admin",
+      "pixels": 16,
+      "percent": 0.4
+    },
+    {
+      "id": "I4915:240882;4899:199761;2245:87820",
+      "name": "Label",
+      "pixels": 10,
+      "percent": 0.4
+    },
+    {
+      "id": "I4915:240882;4899:199764;2245:87820",
+      "name": "Label",
+      "pixels": 10,
+      "percent": 0.4
+    },
+    {
+      "id": "I4915:240882;4899:199737;2245:87820",
+      "name": "Label",
+      "pixels": 7,
+      "percent": 0.3
+    },
+    {
+      "id": "I4915:240882;4899:199754;2245:87820",
+      "name": "Label",
+      "pixels": 4,
+      "percent": 0.2
+    },
+    {
+      "id": "I4915:240882;4899:199757;2245:87829",
+      "name": "Label",
+      "pixels": 6,
+      "percent": 0.2
+    },
+    {
+      "id": "I4915:240882;4899:199760;2245:87864",
+      "name": "Label",
+      "pixels": 2,
+      "percent": 0.1
+    },
+    {
+      "id": "I4915:240882;4899:199767;2245:87820",
+      "name": "Label",
+      "pixels": 3,
+      "percent": 0.1
+    },
+    {
+      "id": "2391:66024",
+      "name": "Jone Aly",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "2391:66061",
+      "name": "Nhấn nút xác minh để lấy file trên GG Drive",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4915:240882;4915:215366",
+      "name": "v20.07.2026_17:30",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 272,
+      "y": 96,
+      "width": 48,
+      "height": 48,
+      "pixels": 652,
+      "node": {
+        "id": "2391:66022",
+        "name": "image",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 760,
+      "y": 368,
+      "width": 64,
+      "height": 88,
+      "pixels": 168,
+      "node": {
+        "id": "2619:203719",
+        "name": "Empty State / Gmail",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 848,
+      "y": 432,
+      "width": 40,
+      "height": 24,
+      "pixels": 15,
+      "node": {
+        "id": "2619:203719",
+        "name": "Empty State / Gmail",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 728,
+      "y": 344,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "2619:203719",
+        "name": "Empty State / Gmail",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 98,
+    "missing": [],
+    "withinThreshold": 98,
+    "buckets": {
+      "≤0.5px": 98,
+      "≤1px": 98,
+      "≤2px": 98,
+      "≤4px": 98,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4915:240882;4915:215367",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:240882;4915:215352",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:240882;4915:215353",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:240882;4915:215354",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:240882;4915:215366",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2391:66019",
+        "name": "BG",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "2391:66020",
+        "name": "Frame 427323976",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2391:66021",
+        "name": "Frame 427321837",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2391:66022",
+        "name": "image",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2391:66023",
+        "name": "Frame 427320146",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2391:66024",
+        "name": "Jone Aly",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2391:66025",
+        "name": "Admin",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2391:66026",
+        "name": "Frame 427323942",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2619:203719",
+        "name": "Empty State / Gmail",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2391:66058",
+        "name": "Frame 427323938",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2391:66059",
+        "name": "Frame 427323977",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2391:66060",
+        "name": "Xác minh Gmail",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2391:66061",
+        "name": "Nhấn nút xác minh để lấy file trên GG Drive",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2409:148203",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2409:148203;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4915:240882",
+        "name": "Sidebar · MENU - ADMIN",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:240882;4915:215302",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:240882;4915:215369",
+        "name": "Nav Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:240882;4915:215370",
+        "name": "MENU - ADMIN (Tổng)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:240882;4899:199737",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.02,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/move-video/xac-minh-gmail",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,0 +1,496 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 3696,
+    "percent": 0.317,
+    "shapePercent": 0.006,
+    "textPercent": 1.491,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:119671;2245:87864",
+      "name": "Label",
+      "pixels": 338,
+      "percent": 13.5
+    },
+    {
+      "id": "4056:119709",
+      "name": "Tổng doanh thu",
+      "pixels": 159,
+      "percent": 6.4
+    },
+    {
+      "id": "4056:119699",
+      "name": "Ngày chốt đơn",
+      "pixels": 123,
+      "percent": 5.4
+    },
+    {
+      "id": "I4056:119720;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 106,
+      "percent": 5
+    },
+    {
+      "id": "I4056:119739;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 106,
+      "percent": 5
+    },
+    {
+      "id": "I4056:119758;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 106,
+      "percent": 5
+    },
+    {
+      "id": "I4056:119777;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 106,
+      "percent": 5
+    },
+    {
+      "id": "I4056:119796;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 106,
+      "percent": 5
+    },
+    {
+      "id": "I4056:119815;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 106,
+      "percent": 5
+    },
+    {
+      "id": "I4056:119834;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 106,
+      "percent": 5
+    },
+    {
+      "id": "I4056:119853;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 106,
+      "percent": 5
+    },
+    {
+      "id": "I4056:119872;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 106,
+      "percent": 5
+    },
+    {
+      "id": "I4056:119891;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 106,
+      "percent": 5
+    },
+    {
+      "id": "I4056:119905;1391:17481",
+      "name": "3",
+      "pixels": 11,
+      "percent": 5
+    },
+    {
+      "id": "4056:119707",
+      "name": "Ghi chú",
+      "pixels": 53,
+      "percent": 4.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4056:119651",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 272,
+      "y": 288,
+      "width": 16,
+      "height": 24,
+      "pixels": 7,
+      "node": {
+        "id": "4056:119753",
+        "name": "Student Status",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4056:119651",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 264,
+      "y": 360,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4056:119772",
+        "name": "Student Status",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 264,
+      "y": 408,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "4056:119791",
+        "name": "Student Status",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 472,
+    "missing": [],
+    "withinThreshold": 472,
+    "buckets": {
+      "≤0.5px": 471,
+      "≤1px": 472,
+      "≤2px": 472,
+      "≤4px": 472,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:119699",
+        "name": "Ngày chốt đơn",
+        "role": "text",
+        "delta": 0.94,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:119684",
+        "name": "Danh sách Học viên",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:119685",
+        "name": "Atom/Icon Button",
+        "role": "icon",
+        "delta": 0.11,
+        "dx": 0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:119664",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:119649",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:119650",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:119651",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:119663",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:119548",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:119549",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:119596",
+        "name": "ACCOUNT",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119596;2008:30986",
+        "name": "Frame 1171274934",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119596;2008:31747",
+        "name": "Background+Border+Shadow",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119596;2008:31748",
+        "name": "Avatar",
+        "role": "image",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119596;1391:17264",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119596;1391:17266",
+        "name": "Admin Đắc Nhân",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119596;1391:17268",
+        "name": "admin@gmail.com",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119596;1391:17270",
+        "name": "Overlay",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:119597",
+        "name": "Sidebar",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:119598",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:119666",
+        "name": "Menu Chính",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:119667",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119667;4139:138311",
+        "name": "Theme · Dark BG",
+        "role": "shape",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119667;2245:87849",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119667;2245:87844",
+        "name": "ICON MENU",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.94,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/danh-sach-hoc-vien-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,6 +1,34 @@
 {
   "route": "/kpi-ot/danh-sach-kpi-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-kpi-010000-dk/index.tsx",
   "docFile": "docs/pages/kpi-ot/danh-sach-kpi-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:128029",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/adm-kpi-010000-dk/MainScrollableWorkspace.tsx"
+    },
+    {
+      "nodeId": "4056:128252",
+      "component": "Header",
+      "file": "components/figma/shared/Header.tsx"
+    },
+    {
+      "nodeId": "4056:128301",
+      "component": "Sidebar",
+      "file": "components/figma/adm-kpi-010000-dk/Sidebar.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:128252": "4083:137036",
+    "4056:128253": "4083:137037",
+    "4056:128300": "4083:137084",
+    "I4056:128300;2008:30986": "I4083:137084;2008:30986",
+    "I4056:128300;2008:31747": "I4083:137084;2008:31747",
+    "I4056:128300;2008:31748": "I4083:137084;2008:31748",
+    "I4056:128300;1391:17264": "I4083:137084;1391:17264",
+    "I4056:128300;1391:17266": "I4083:137084;1391:17266",
+    "I4056:128300;1391:17268": "I4083:137084;1391:17268",
+    "I4056:128300;1391:17270": "I4083:137084;1391:17270"
+  }
 }

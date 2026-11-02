@@ -1,6 +1,22 @@
 {
   "route": "/lich-hen/giao-vien",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lhn-010400/index.tsx",
   "docFile": "docs/pages/lich-hen/giao-vien.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2367:25350",
+      "component": "Dn1",
+      "file": "components/figma/adm-lhn-010400/Dn1.tsx"
+    },
+    {
+      "nodeId": "2370:27059",
+      "component": "Bg",
+      "file": "components/figma/adm-lhn-010400/Bg.tsx"
+    },
+    {
+      "nodeId": "4915:222294",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lhn-010400/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

@@ -1,6 +1,30 @@
 {
   "route": "/lop-hoc/bai-hoc/buoi-hoc",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-030100/index.tsx",
   "docFile": "docs/pages/lop-hoc/bai-hoc/buoi-hoc.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3497:3713",
+      "component": "Body3",
+      "file": "components/figma/shared/Body3.tsx"
+    },
+    {
+      "nodeId": "3497:3714",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-030100/Maincontent.tsx"
+    },
+    {
+      "nodeId": "3497:3987",
+      "component": "Header13",
+      "file": "components/figma/shared/Header13.tsx"
+    },
+    {
+      "nodeId": "4915:225429",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-030100/SidebarMenuAdmin.tsx"
+    }
+  ],
+  "idAlias": {
+    "3497:3713": "769:30964"
+  }
 }

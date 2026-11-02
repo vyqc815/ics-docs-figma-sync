@@ -1,0 +1,652 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 964,
+    "mismatched": 5032,
+    "percent": 0.362,
+    "shapePercent": 0.03,
+    "textPercent": 2.418,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2682:31514;3004:49431",
+      "name": "Sale",
+      "pixels": 57,
+      "percent": 9.6
+    },
+    {
+      "id": "I2682:31512;139:67075",
+      "name": "Thêm chức vụ",
+      "pixels": 172,
+      "percent": 9.3
+    },
+    {
+      "id": "I2682:31413;3004:49437",
+      "name": "Support",
+      "pixels": 96,
+      "percent": 8.9
+    },
+    {
+      "id": "I2682:31473;3004:49437",
+      "name": "Support",
+      "pixels": 96,
+      "percent": 8.9
+    },
+    {
+      "id": "I2682:31034;3004:49431",
+      "name": "Sale",
+      "pixels": 52,
+      "percent": 8.8
+    },
+    {
+      "id": "I2682:29650;3004:49431",
+      "name": "Sale",
+      "pixels": 52,
+      "percent": 8.8
+    },
+    {
+      "id": "I2682:31094;3004:49431",
+      "name": "Sale",
+      "pixels": 52,
+      "percent": 8.8
+    },
+    {
+      "id": "I2682:29448;3004:49431",
+      "name": "Sale",
+      "pixels": 52,
+      "percent": 8.8
+    },
+    {
+      "id": "I2682:31154;3004:49431",
+      "name": "Sale",
+      "pixels": 52,
+      "percent": 8.8
+    },
+    {
+      "id": "I2682:29630;3004:49431",
+      "name": "Sale",
+      "pixels": 52,
+      "percent": 8.8
+    },
+    {
+      "id": "I2682:31394;3004:49431",
+      "name": "Sale",
+      "pixels": 52,
+      "percent": 8.8
+    },
+    {
+      "id": "I2682:31454;3004:49431",
+      "name": "Sale",
+      "pixels": 52,
+      "percent": 8.8
+    },
+    {
+      "id": "2682:31416",
+      "name": "13.05.2026",
+      "pixels": 136,
+      "percent": 8.6
+    },
+    {
+      "id": "2682:31476",
+      "name": "13.05.2026",
+      "pixels": 136,
+      "percent": 8.6
+    },
+    {
+      "id": "2682:31516",
+      "name": "15.05.2026",
+      "pixels": 136,
+      "percent": 8.6
+    }
+  ],
+  "regions": [
+    {
+      "x": 744,
+      "y": 568,
+      "width": 32,
+      "height": 32,
+      "pixels": 39,
+      "node": {
+        "id": "I2682:29608;2623:27461",
+        "name": "Vector",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 744,
+      "y": 184,
+      "width": 32,
+      "height": 24,
+      "pixels": 31,
+      "node": {
+        "id": "2623:27509",
+        "name": "Role Component",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 744,
+      "y": 240,
+      "width": 32,
+      "height": 24,
+      "pixels": 31,
+      "node": {
+        "id": "2623:27557",
+        "name": "Role Component",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 744,
+      "y": 352,
+      "width": 32,
+      "height": 24,
+      "pixels": 31,
+      "node": {
+        "id": "2623:27597",
+        "name": "Role Component",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 744,
+      "y": 400,
+      "width": 32,
+      "height": 32,
+      "pixels": 31,
+      "node": {
+        "id": "2682:31012",
+        "name": "Role Component",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 744,
+      "y": 456,
+      "width": 32,
+      "height": 32,
+      "pixels": 31,
+      "node": {
+        "id": "I2682:29446;2623:27461",
+        "name": "Vector",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 744,
+      "y": 512,
+      "width": 32,
+      "height": 32,
+      "pixels": 31,
+      "node": {
+        "id": "I2682:29628;2623:27461",
+        "name": "Vector",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 744,
+      "y": 624,
+      "width": 32,
+      "height": 32,
+      "pixels": 31,
+      "node": {
+        "id": "I2682:31452;2623:27461",
+        "name": "Vector",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 744,
+      "y": 736,
+      "width": 32,
+      "height": 32,
+      "pixels": 31,
+      "node": {
+        "id": "2682:31532",
+        "name": "Role Component",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 776,
+      "y": 312,
+      "width": 64,
+      "height": 8,
+      "pixels": 18,
+      "node": {
+        "id": "2008:39218",
+        "name": "Frame 427321953",
+        "role": "container"
+      }
+    },
+    {
+      "x": 744,
+      "y": 288,
+      "width": 24,
+      "height": 32,
+      "pixels": 16,
+      "node": {
+        "id": "I2623:27577;2623:27461",
+        "name": "Vector",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 744,
+      "y": 680,
+      "width": 24,
+      "height": 32,
+      "pixels": 16,
+      "node": {
+        "id": "I2682:31512;2623:27461",
+        "name": "Vector",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 776,
+      "y": 288,
+      "width": 64,
+      "height": 8,
+      "pixels": 14,
+      "node": {
+        "id": "2623:27577",
+        "name": "Role Component",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 776,
+      "y": 680,
+      "width": 64,
+      "height": 8,
+      "pixels": 14,
+      "node": {
+        "id": "I2682:31473;3004:49435",
+        "name": "Frame 1171274969",
+        "role": "container"
+      }
+    },
+    {
+      "x": 816,
+      "y": 704,
+      "width": 40,
+      "height": 16,
+      "pixels": 14,
+      "node": {
+        "id": "2682:31504",
+        "name": "Frame 427321953",
+        "role": "container"
+      }
+    },
+    {
+      "x": 864,
+      "y": 288,
+      "width": 8,
+      "height": 32,
+      "pixels": 10,
+      "node": {
+        "id": "2623:27576",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 864,
+      "y": 680,
+      "width": 8,
+      "height": 32,
+      "pixels": 10,
+      "node": {
+        "id": "2682:31511",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 776,
+      "y": 704,
+      "width": 32,
+      "height": 8,
+      "pixels": 8,
+      "node": {
+        "id": "2682:31504",
+        "name": "Frame 427321953",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 1177,
+    "missing": [],
+    "withinThreshold": 1177,
+    "buckets": {
+      "≤0.5px": 1177,
+      "≤1px": 1177,
+      "≤2px": 1177,
+      "≤4px": 1177,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2623:27577",
+        "name": "Role Component",
+        "role": "instance",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:27577;139:67075",
+        "name": "Thêm chức vụ",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2623:27578",
+        "name": "Role Component",
+        "role": "instance",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:27578;3004:49429",
+        "name": "Frame 1171274968",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:27578;3004:49430",
+        "name": "Icon Role",
+        "role": "icon",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:27578;3004:49431",
+        "name": "Sale",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2682:31032",
+        "name": "Role Component",
+        "role": "instance",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:31032;139:67075",
+        "name": "Thêm chức vụ",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2682:31034",
+        "name": "Role Component",
+        "role": "instance",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:31034;3004:49429",
+        "name": "Frame 1171274968",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:31034;3004:49430",
+        "name": "Icon Role",
+        "role": "icon",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:31034;3004:49431",
+        "name": "Sale",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2682:29648",
+        "name": "Role Component",
+        "role": "instance",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:29648;139:67075",
+        "name": "Thêm chức vụ",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2682:29650",
+        "name": "Role Component",
+        "role": "instance",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:29650;3004:49429",
+        "name": "Frame 1171274968",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:29650;3004:49430",
+        "name": "Icon Role",
+        "role": "icon",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:29650;3004:49431",
+        "name": "Sale",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2682:31092",
+        "name": "Role Component",
+        "role": "instance",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:31092;139:67075",
+        "name": "Thêm chức vụ",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2682:31094",
+        "name": "Role Component",
+        "role": "instance",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:31094;3004:49429",
+        "name": "Frame 1171274968",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:31094;3004:49430",
+        "name": "Icon Role",
+        "role": "icon",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2682:31094;3004:49431",
+        "name": "Sale",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2682:31212",
+        "name": "Role Component",
+        "role": "instance",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.19,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/tai-khoan/danh-sach-tai-khoan",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

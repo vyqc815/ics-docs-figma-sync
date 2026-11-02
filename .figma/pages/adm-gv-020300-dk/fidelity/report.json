@@ -1,0 +1,544 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 2469,
+    "percent": 0.212,
+    "shapePercent": 0.006,
+    "textPercent": 1.303,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:125296;2245:87864",
+      "name": "Label",
+      "pixels": 373,
+      "percent": 14.9
+    },
+    {
+      "id": "I4056:125149;2008:48177",
+      "name": "31.01.2026 - 06.01.2026",
+      "pixels": 162,
+      "percent": 5.1
+    },
+    {
+      "id": "4056:125146",
+      "name": "Value",
+      "pixels": 54,
+      "percent": 4.8
+    },
+    {
+      "id": "I4056:125198;2008:49570;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 82,
+      "percent": 4
+    },
+    {
+      "id": "I4056:125200;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 82,
+      "percent": 4
+    },
+    {
+      "id": "I4056:125202;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 82,
+      "percent": 4
+    },
+    {
+      "id": "I4056:125206;2008:49570;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 82,
+      "percent": 4
+    },
+    {
+      "id": "I4056:125208;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 82,
+      "percent": 4
+    },
+    {
+      "id": "I4056:125210;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 82,
+      "percent": 4
+    },
+    {
+      "id": "I4056:125214;2008:49570;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 82,
+      "percent": 4
+    },
+    {
+      "id": "I4056:125216;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 82,
+      "percent": 4
+    },
+    {
+      "id": "I4056:125218;2008:49579;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 82,
+      "percent": 4
+    },
+    {
+      "id": "I4056:125219;2008:49579;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 82,
+      "percent": 4
+    },
+    {
+      "id": "I4056:125297;2245:87858",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.5
+    },
+    {
+      "id": "I4056:125302;2245:87768",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4056:125275",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4056:125275",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 288,
+      "y": 400,
+      "width": 8,
+      "height": 24,
+      "pixels": 6,
+      "node": {
+        "id": "I4056:125206;2008:49570;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 608,
+      "y": 400,
+      "width": 16,
+      "height": 24,
+      "pixels": 6,
+      "node": {
+        "id": "I4056:125208;2008:49502;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 936,
+      "y": 400,
+      "width": 8,
+      "height": 24,
+      "pixels": 6,
+      "node": {
+        "id": "I4056:125210;2008:49502;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 288,
+      "y": 496,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4056:125214;2008:49570;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 608,
+      "y": 496,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4056:125216;2008:49502;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 936,
+      "y": 496,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4056:125218;2008:49579;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1096,
+      "y": 496,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4056:125219;2008:49579;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 253,
+    "missing": [],
+    "withinThreshold": 253,
+    "buckets": {
+      "≤0.5px": 253,
+      "≤1px": 253,
+      "≤2px": 253,
+      "≤4px": 253,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:125139",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:125139;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:125139;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:125140",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:125140;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:125140;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:125140;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:125141",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:125141;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:125141;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:125142",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:125142;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:125142;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:125143",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:125143;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:125143;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:125133",
+        "name": "Chi tiết giáo viên",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:125288",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:125273",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:125274",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:125275",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:125287",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:125078",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:125079",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:125080",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 0.28,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-giao-vien/lich-day-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

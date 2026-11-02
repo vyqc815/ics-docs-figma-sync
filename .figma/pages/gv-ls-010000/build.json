@@ -1,6 +1,17 @@
 {
   "route": "/lich-su-luong/buoi-day",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-ls-010000/index.tsx",
   "docFile": "docs/pages/lich-su-luong/buoi-day.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3868:96983",
+      "component": "Body",
+      "file": "components/figma/gv-ls-010000/Body.tsx"
+    },
+    {
+      "nodeId": "3868:97110",
+      "component": "Section2",
+      "file": "components/figma/gv-ls-010000/Section2.tsx"
+    }
+  ]
 }

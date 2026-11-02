@@ -1,6 +1,17 @@
 {
   "route": "/quy-trinh/task-hom-nay",
-  "pageFile": "",
+  "pageFile": "components/figma/sp-task-010000/index.tsx",
   "docFile": "docs/pages/quy-trinh/task-hom-nay.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3821:45859",
+      "component": "Body",
+      "file": "components/figma/sp-task-010000/Body.tsx"
+    },
+    {
+      "nodeId": "3821:45986",
+      "component": "Section2",
+      "file": "components/figma/sp-task-010000/Section2.tsx"
+    }
+  ]
 }

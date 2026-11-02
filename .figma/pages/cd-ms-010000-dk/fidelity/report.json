@@ -1,0 +1,700 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 850,
+    "mismatched": 12569,
+    "percent": 1.027,
+    "shapePercent": 0.037,
+    "textPercent": 4.314,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:144751;2245:87914",
+      "name": "Label",
+      "pixels": 350,
+      "percent": 14.9
+    },
+    {
+      "id": "I4056:144742;2245:87908",
+      "name": "Label",
+      "pixels": 325,
+      "percent": 13.9
+    },
+    {
+      "id": "4056:144650",
+      "name": "Từ vựng và ngữ pháp phải được lặp lại nhiều lần trong ngữ cảnh khác nhau để học viên có thể ghi nhớ và sử dụng, không chỉ nhận biết và hiểu nghĩa.",
+      "pixels": 2379,
+      "percent": 7.7
+    },
+    {
+      "id": "4056:144674",
+      "name": "MINDSET DẠY VÀ HỌC",
+      "pixels": 224,
+      "percent": 7.5
+    },
+    {
+      "id": "4056:144641",
+      "name": "Kiến thức bài trước phải được tái sử dụng ở những bài sau, không đưa kiến thức nâng cao xuất hiện sớm hơn lộ trình, tránh thiết kế bài học rời rạc.",
+      "pixels": 2250,
+      "percent": 7.3
+    },
+    {
+      "id": "4056:144623",
+      "name": "Kiến thức từ giáo trình phải được học viên ứng dụng theo mục đích cụ thể (ví dụ học hội thoại về mua sắm phải ứng dụng thực tế được khi học viên đi mua sắm...).",
+      "pixels": 2026,
+      "percent": 6.6
+    },
+    {
+      "id": "4056:144632",
+      "name": "Nội dung giảng dạy phải: đúng cấp độ và đủ năng lực yêu cầu của cấp độ, không được quá dễ hoặc quá khó. Nếu tinh giản nội dung, cần đánh giá rõ có ảnh hưởng đến khả năng đạt mục tiêu đầu ra hay không.",
+      "pixels": 1800,
+      "percent": 5.8
+    },
+    {
+      "id": "I4056:144747;2245:87908",
+      "name": "Label",
+      "pixels": 121,
+      "percent": 5.2
+    },
+    {
+      "id": "I4056:144752;2245:87908",
+      "name": "Label",
+      "pixels": 109,
+      "percent": 4.6
+    },
+    {
+      "id": "4056:144668",
+      "name": "MỤC TIÊU ĐẦU RA CỦA KHÓA HỌC",
+      "pixels": 206,
+      "percent": 4.5
+    },
+    {
+      "id": "I4056:144745;2245:87908",
+      "name": "Label",
+      "pixels": 101,
+      "percent": 4.3
+    },
+    {
+      "id": "I4056:144743;2245:87908",
+      "name": "Label",
+      "pixels": 97,
+      "percent": 4.1
+    },
+    {
+      "id": "I4056:144746;2245:87908",
+      "name": "Label",
+      "pixels": 97,
+      "percent": 4.1
+    },
+    {
+      "id": "I4056:144753;2245:87908",
+      "name": "Label",
+      "pixels": 96,
+      "percent": 4.1
+    },
+    {
+      "id": "I4056:144749;2245:87908",
+      "name": "Label",
+      "pixels": 86,
+      "percent": 3.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 104,
+      "y": 120,
+      "width": 24,
+      "height": 24,
+      "pixels": 65,
+      "node": {
+        "id": "I4056:144740;2245:87816",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 168,
+      "width": 16,
+      "height": 24,
+      "pixels": 43,
+      "node": {
+        "id": "I4835:163622;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 16,
+      "pixels": 34,
+      "node": {
+        "id": "4056:144735",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 768,
+      "width": 16,
+      "height": 8,
+      "pixels": 34,
+      "node": {
+        "id": "I4056:144752;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 264,
+      "width": 16,
+      "height": 24,
+      "pixels": 26,
+      "node": {
+        "id": "I4056:144742;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 560,
+      "width": 16,
+      "height": 24,
+      "pixels": 25,
+      "node": {
+        "id": "I4056:144748;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 320,
+      "width": 24,
+      "height": 16,
+      "pixels": 23,
+      "node": {
+        "id": "I4056:144743;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 112,
+      "y": 656,
+      "width": 16,
+      "height": 24,
+      "pixels": 23,
+      "node": {
+        "id": "I4056:144750;2245:87835",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 416,
+      "width": 16,
+      "height": 24,
+      "pixels": 19,
+      "node": {
+        "id": "I4056:144745;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 512,
+      "width": 16,
+      "height": 24,
+      "pixels": 19,
+      "node": {
+        "id": "I4056:144747;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 616,
+      "width": 16,
+      "height": 16,
+      "pixels": 16,
+      "node": {
+        "id": "I4056:144749;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 704,
+      "width": 16,
+      "height": 32,
+      "pixels": 15,
+      "node": {
+        "id": "I4056:144751;2245:87910",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 360,
+      "width": 24,
+      "height": 32,
+      "pixels": 13,
+      "node": {
+        "id": "I4056:144744;2245:87816",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 480,
+      "width": 16,
+      "height": 8,
+      "pixels": 13,
+      "node": {
+        "id": "I4056:144746;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 752,
+      "width": 16,
+      "height": 8,
+      "pixels": 12,
+      "node": {
+        "id": "I4056:144752;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 216,
+      "width": 8,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:144741;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 800,
+      "width": 16,
+      "height": 24,
+      "pixels": 10,
+      "node": {
+        "id": "I4056:144753;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 232,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I4056:144741;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 464,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I4056:144746;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 264,
+      "y": 128,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4056:144740;2245:87822",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 264,
+      "y": 368,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4056:144744;2245:87822",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 768,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "4056:144733",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 152,
+    "missing": [],
+    "withinThreshold": 152,
+    "buckets": {
+      "≤0.5px": 148,
+      "≤1px": 150,
+      "≤2px": 152,
+      "≤4px": 152,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:144673",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144674",
+        "name": "MINDSET DẠY VÀ HỌC",
+        "role": "text",
+        "delta": 1.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144635",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144636",
+        "name": "Nội dung phải có tính liên kết",
+        "role": "text",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144667",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144668",
+        "name": "MỤC TIÊU ĐẦU RA CỦA KHÓA HỌC",
+        "role": "text",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144606",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144607",
+        "name": "Luôn lấy học viên làm trung tâm của mọi vấn đề",
+        "role": "text",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144617",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144618",
+        "name": "Học là phải ứng dụng được",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144597",
+        "name": "MainContentWrapper",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:144598",
+        "name": "Section - CenterColumnProcessList",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144599",
+        "name": "Package Title Area",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144600",
+        "name": "Heading 1",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144601",
+        "name": "MINDSET THIẾT KẾ KHÓA HỌC",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144604",
+        "name": "Accordion · Luôn lấy học viên làm trung tâm của mọi vấn đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144605",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144608",
+        "name": "Collapse Icon Button",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144611",
+        "name": "Mouse click",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144612",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144613",
+        "name": "Trước khi xây dựng khóa học phải xác định rõ bối cảnh học viên. Mọi nội dung và phương pháp đều xuất phát từ nhu cầu thực tế của học viên.",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144614",
+        "name": "Atom/Icon Button",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144615",
+        "name": "Accordion · Học là phải ứng dụng được",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144616",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:144619",
+        "name": "Collapse Icon Button",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.13,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/mindset-thiet-ke-khoa-hoc-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

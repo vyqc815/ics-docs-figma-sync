@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 910,
+    "mismatched": 2914,
+    "percent": 0.222,
+    "shapePercent": 0.04,
+    "textPercent": 1.246,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "6133:126546",
+      "name": "1.120 âm tiết · 2 giọng: Serena (nữ) và Aiden (nam). Mỗi âm được máy tự chấm đúng thanh và cân âm lượng (lệch không quá ±1 dB). Sau khi tạo xong, nhóm duyệt các âm bị đánh dấu rồi mới mở nút \"Âm tiết\" trên web.",
+      "pixels": 1541,
+      "percent": 3.3
+    },
+    {
+      "id": "I6133:126135;6133:108633;2245:87820",
+      "name": "Label",
+      "pixels": 83,
+      "percent": 3.2
+    },
+    {
+      "id": "I6133:126135;6133:108639;2245:87820",
+      "name": "Label",
+      "pixels": 79,
+      "percent": 3.1
+    },
+    {
+      "id": "6133:126651",
+      "name": "2. Tạo cả bảng 1.120 âm",
+      "pixels": 58,
+      "percent": 2
+    },
+    {
+      "id": "I6133:126135;6133:108626;2245:87820",
+      "name": "Label",
+      "pixels": 46,
+      "percent": 1.8
+    },
+    {
+      "id": "6133:126543",
+      "name": "Bảng âm tiết pinyin tiếng Trung",
+      "pixels": 391,
+      "percent": 1.6
+    },
+    {
+      "id": "I6133:126135;6133:108625;2245:87768",
+      "name": "Label",
+      "pixels": 37,
+      "percent": 1.3
+    },
+    {
+      "id": "I6133:126135;6133:108624;2245:87768",
+      "name": "Label",
+      "pixels": 25,
+      "percent": 0.9
+    },
+    {
+      "id": "I6133:126544;1048:1251",
+      "name": "Badge",
+      "pixels": 10,
+      "percent": 0.9
+    },
+    {
+      "id": "I6133:126550;1048:1251",
+      "name": "Badge",
+      "pixels": 10,
+      "percent": 0.9
+    },
+    {
+      "id": "I6133:126135;6133:108622;2245:87768",
+      "name": "Label",
+      "pixels": 22,
+      "percent": 0.8
+    },
+    {
+      "id": "I6133:126184;2008:31885",
+      "name": "CD",
+      "pixels": 3,
+      "percent": 0.8
+    },
+    {
+      "id": "I6133:126185;4019:24078",
+      "name": "Sakumi",
+      "pixels": 16,
+      "percent": 0.8
+    },
+    {
+      "id": "I6133:126196;2808:42758",
+      "name": "Tab",
+      "pixels": 18,
+      "percent": 0.8
+    },
+    {
+      "id": "I6133:126135;6133:108621;2245:87768",
+      "name": "Label",
+      "pixels": 11,
+      "percent": 0.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 352,
+      "y": 336,
+      "width": 480,
+      "height": 16,
+      "pixels": 518,
+      "node": {
+        "id": "I6133:126552;6019:81723",
+        "name": "Sọc",
+        "role": "shape"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 120,
+    "missing": [],
+    "withinThreshold": 120,
+    "buckets": {
+      "≤0.5px": 119,
+      "≤1px": 120,
+      "≤2px": 120,
+      "≤4px": 120,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6133:126651",
+        "name": "2. Tạo cả bảng 1.120 âm",
+        "role": "text",
+        "delta": 0.81,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.81,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:126646",
+        "name": "Bắt đầu sau giọng nữ · khoảng 3,3 giờ",
+        "role": "text",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108617",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108602",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108603",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108604",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108616",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:126134",
+        "name": "AppLayoutWrapper",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "6133:126135",
+        "name": "Sidebar · MENU - CD",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6133:126135;6133:108551",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6133:126135;6133:108619",
+        "name": "Nav Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6133:126135;6133:108620",
+        "name": "Menu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6133:126135;6133:108621",
+        "name": "Card Menu",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108621;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108621;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108622",
+        "name": "Card Menu",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108622;2245:87764",
+        "name": "ICON MENU",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108622;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108623",
+        "name": "Card Menu",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108623;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108623;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108624",
+        "name": "Card Menu",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108624;2245:87764",
+        "name": "ICON MENU",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108624;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:126135;6133:108625",
+        "name": "Card Menu",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.81,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/tools/giong-doc/am-tiet-pinyin-dang-tao",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

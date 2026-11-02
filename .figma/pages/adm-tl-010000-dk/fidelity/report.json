@@ -1,0 +1,568 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 971,
+    "mismatched": 2470,
+    "percent": 0.177,
+    "shapePercent": 0.021,
+    "textPercent": 0.608,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4343:86180;2245:87774",
+      "name": "Label",
+      "pixels": 366,
+      "percent": 12.7
+    },
+    {
+      "id": "I4343:86226;1061:1316",
+      "name": "Kéo thả file vào đây hoặc chọn file",
+      "pixels": 166,
+      "percent": 3.8
+    },
+    {
+      "id": "I4343:86176;2245:87820",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 3.3
+    },
+    {
+      "id": "4343:86289",
+      "name": "Hiểu Về Các Đối Tượng",
+      "pixels": 188,
+      "percent": 3.2
+    },
+    {
+      "id": "4343:86301",
+      "name": "Nên Tránh để Tốt Hơn",
+      "pixels": 165,
+      "percent": 2.8
+    },
+    {
+      "id": "I4343:86177;2245:87820",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.7
+    },
+    {
+      "id": "I4343:86183;2245:87768",
+      "name": "Label",
+      "pixels": 78,
+      "percent": 2.7
+    },
+    {
+      "id": "I4343:86172;2245:87820",
+      "name": "Label",
+      "pixels": 65,
+      "percent": 2.5
+    },
+    {
+      "id": "I4343:86173;2245:87768",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.4
+    },
+    {
+      "id": "I4343:86179;2245:87820",
+      "name": "Label",
+      "pixels": 61,
+      "percent": 2.4
+    },
+    {
+      "id": "I4343:86181;2245:87768",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.2
+    },
+    {
+      "id": "I4343:86184;2245:87768",
+      "name": "Label",
+      "pixels": 55,
+      "percent": 1.9
+    },
+    {
+      "id": "I4343:86175;2245:87820",
+      "name": "Label",
+      "pixels": 45,
+      "percent": 1.8
+    },
+    {
+      "id": "I4343:86182;2245:87768",
+      "name": "Label",
+      "pixels": 51,
+      "percent": 1.8
+    },
+    {
+      "id": "4343:86271",
+      "name": "CÁC CÔNG TÁC HÀNH CHÍNH",
+      "pixels": 106,
+      "percent": 1.8
+    }
+  ],
+  "regions": [
+    {
+      "x": 456,
+      "y": 536,
+      "width": 56,
+      "height": 8,
+      "pixels": 40,
+      "node": {
+        "id": "4343:86226",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 352,
+      "y": 432,
+      "width": 56,
+      "height": 16,
+      "pixels": 36,
+      "node": {
+        "id": "4343:86226",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 456,
+      "y": 432,
+      "width": 56,
+      "height": 16,
+      "pixels": 36,
+      "node": {
+        "id": "4343:86226",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 560,
+      "y": 432,
+      "width": 56,
+      "height": 16,
+      "pixels": 34,
+      "node": {
+        "id": "4343:86226",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 352,
+      "y": 536,
+      "width": 56,
+      "height": 8,
+      "pixels": 34,
+      "node": {
+        "id": "4343:86226",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 560,
+      "y": 536,
+      "width": 56,
+      "height": 8,
+      "pixels": 34,
+      "node": {
+        "id": "4343:86226",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 288,
+      "y": 472,
+      "width": 8,
+      "height": 48,
+      "pixels": 28,
+      "node": {
+        "id": "4343:86226",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 672,
+      "y": 472,
+      "width": 8,
+      "height": 48,
+      "pixels": 26,
+      "node": {
+        "id": "4343:86226",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4343:86155",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4343:86155",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 296,
+      "y": 536,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4343:86226",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 213,
+    "missing": [],
+    "withinThreshold": 213,
+    "buckets": {
+      "≤0.5px": 212,
+      "≤1px": 212,
+      "≤2px": 213,
+      "≤4px": 213,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4343:86226;1061:1317",
+        "name": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "role": "text",
+        "delta": 1.2,
+        "dx": -0.61,
+        "dy": 0,
+        "dw": 1.2,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:86168",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:86153",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:86154",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:86155",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:86167",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86264;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86270;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86276;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86282;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86288;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86294;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86300;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:86052",
+        "name": "Header",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:86101",
+        "name": "Sidebar",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:86102",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:86170",
+        "name": "LOGO CENTER",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:86171",
+        "name": "Menu Chính",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:86172",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86172;2245:87821",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86172;2245:87816",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86172;2245:87820",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86172;2245:87822",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:86173",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:86173;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.2,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/tai-lieu/chi-tiet-tai-lieu-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

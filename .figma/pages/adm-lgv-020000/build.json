@@ -1,6 +1,22 @@
 {
   "route": "/luong/de-xuat-tang-luong",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lgv-020000/index.tsx",
   "docFile": "docs/pages/luong/de-xuat-tang-luong.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4899:117450",
+      "component": "Header",
+      "file": "components/figma/adm-lgv-020000/Header.tsx"
+    },
+    {
+      "nodeId": "4915:249533",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lgv-020000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "4899:117590",
+      "component": "MainDeXuatTangLuong",
+      "file": "components/figma/adm-lgv-020000/MainDeXuatTangLuong.tsx"
+    }
+  ]
 }

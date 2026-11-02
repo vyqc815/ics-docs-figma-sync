@@ -1,6 +1,34 @@
 {
   "route": "/lop-hoc/cai-dat/hoc-vien",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-040200/index.tsx",
   "docFile": "docs/pages/lop-hoc/cai-dat/hoc-vien.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2224:21182",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-040200/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4915:229949",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-040200/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3497:50704",
+      "component": "Header16",
+      "file": "components/figma/shared/Header16.tsx"
+    }
+  ],
+  "idAlias": {
+    "3497:50704": "3497:50563",
+    "4050:117367": "4050:117270",
+    "3497:50752": "3497:50611",
+    "I3497:50752;2008:30986": "I3497:50611;2008:30986",
+    "I3497:50752;2008:31747": "I3497:50611;2008:31747",
+    "I3497:50752;2008:31748": "I3497:50611;2008:31748",
+    "I3497:50752;1391:17264": "I3497:50611;1391:17264",
+    "I3497:50752;1391:17266": "I3497:50611;1391:17266",
+    "I3497:50752;1391:17268": "I3497:50611;1391:17268",
+    "I3497:50752;1391:17270": "I3497:50611;1391:17270"
+  }
 }

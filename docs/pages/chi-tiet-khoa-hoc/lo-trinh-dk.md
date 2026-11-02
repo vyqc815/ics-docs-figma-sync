@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-020200-DK — Chi tiết khoá học / Lộ trình (`6015:66574`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-khoa-hoc/lo-trinh-dk`  
 > **Khung thiết kế:** 1440 × 1535.75 px  
-> **Xuất lúc:** 2026-11-02T02:06:38.003Z  
+> **Xuất lúc:** 2026-11-02T02:57:41.274Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-020200-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -1647,8 +1647,6 @@ Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần
 - `ASSET_EXPORT_FAILED` — **Data** (`6015:67366`): Asset a69 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Data** (`6015:67420`): Asset a72 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Data** (`6015:67423`): Asset a73 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
-- `NEGATIVE_GAP` — **Table** (`6015:66583`): Negative item spacing -1px: apply as a negative margin on all children but the first.
-- `REVERSE_Z_INDEX` — **Table** (`6015:66583`): "First on top" stacking: give earlier children a higher z-index.
 
 ## 10. Hướng dẫn dựng lại (cho người và AI)
 

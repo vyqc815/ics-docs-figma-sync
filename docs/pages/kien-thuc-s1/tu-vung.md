@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-040100 — Kiến thức (S1) / Từ vựng (`4846:157807`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/kien-thuc-s1/tu-vung`  
 > **Khung thiết kế:** 1440 × 910 px  
-> **Xuất lúc:** 2026-11-02T01:41:10.814Z  
+> **Xuất lúc:** 2026-11-02T02:41:40.458Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-040100/page-spec.json`
 
 ## 1. Tổng quan

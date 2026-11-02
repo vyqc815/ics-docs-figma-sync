@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 2766,
+    "percent": 0.237,
+    "shapePercent": 0.003,
+    "textPercent": 2.205,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "3372:18821",
+      "name": "I. QUY TRÌNH SUPPORT HỌC VIÊN SAU CHỐT",
+      "pixels": 383,
+      "percent": 6.5
+    },
+    {
+      "id": "3372:18810",
+      "name": "[V10.25] QUY TRÌNH SUPPORT HỌC VIÊN",
+      "pixels": 347,
+      "percent": 6.4
+    },
+    {
+      "id": "3372:18879",
+      "name": "Hướng dẫn cách sử dụng các app và tài liệu trung tâm",
+      "pixels": 350,
+      "percent": 4.9
+    },
+    {
+      "id": "3372:18867",
+      "name": "Hướng dẫn tải app học google chat, google meet, app trung tâm và các tài liệu học tập",
+      "pixels": 537,
+      "percent": 4.7
+    },
+    {
+      "id": "3372:18891",
+      "name": "Gửi thông tin lộ trình học tập chi tiết...",
+      "pixels": 182,
+      "percent": 3.7
+    },
+    {
+      "id": "3372:18831",
+      "name": "Gửi hướng dẫn tải các app ở bên Pancake/zalo (mới)",
+      "pixels": 251,
+      "percent": 3.6
+    },
+    {
+      "id": "3372:18843",
+      "name": "Gửi hóa đơn và nhóm, nhập hóa đơn lên ICS (cũ)",
+      "pixels": 231,
+      "percent": 3.6
+    },
+    {
+      "id": "3372:18855",
+      "name": "Gửi tin nhắn/gọi điện cảm ơn ngay khi học viên đăng ký (mới)",
+      "pixels": 291,
+      "percent": 3.6
+    },
+    {
+      "id": "I4915:231923;4899:195427;2245:87858",
+      "name": "Label",
+      "pixels": 23,
+      "percent": 0.9
+    },
+    {
+      "id": "I3372:18804;1048:1230",
+      "name": "Button",
+      "pixels": 21,
+      "percent": 0.8
+    },
+    {
+      "id": "I4915:231923;4899:195426;2245:87858",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 0.7
+    },
+    {
+      "id": "I4915:231923;4899:195428;1971:7432",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 0.6
+    },
+    {
+      "id": "I4915:231923;4899:195430;1971:7432",
+      "name": "Label",
+      "pixels": 14,
+      "percent": 0.6
+    },
+    {
+      "id": "I4915:231923;4899:195421;2245:87858",
+      "name": "Label",
+      "pixels": 12,
+      "percent": 0.5
+    },
+    {
+      "id": "I3372:18799;2177:28936",
+      "name": "Nhiệm vụ con",
+      "pixels": 11,
+      "percent": 0.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 288,
+      "y": 312,
+      "width": 24,
+      "height": 32,
+      "pixels": 15,
+      "node": {
+        "id": "3372:18819",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 280,
+      "y": 272,
+      "width": 24,
+      "height": 16,
+      "pixels": 9,
+      "node": {
+        "id": "3372:18808",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 336,
+      "y": 376,
+      "width": 24,
+      "height": 16,
+      "pixels": 9,
+      "node": {
+        "id": "3372:18828",
+        "name": "Container",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 205,
+    "missing": [],
+    "withinThreshold": 205,
+    "buckets": {
+      "≤0.5px": 198,
+      "≤1px": 205,
+      "≤2px": 205,
+      "≤4px": 205,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3372:18866",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.66,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.66,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18867",
+        "name": "Hướng dẫn tải app học google chat, google meet, app trung tâm và các tài liệu học tập",
+        "role": "text",
+        "delta": 0.66,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.66,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18830",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18831",
+        "name": "Gửi hướng dẫn tải các app ở bên Pancake/zalo (mới)",
+        "role": "text",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18816",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18820",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18821",
+        "name": "I. QUY TRÌNH SUPPORT HỌC VIÊN SAU CHỐT",
+        "role": "text",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18878",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18879",
+        "name": "Hướng dẫn cách sử dụng các app và tài liệu trung tâm",
+        "role": "text",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18796",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3372:18796;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3372:18796;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18797",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3372:18797;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3372:18797;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18798",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3372:18798;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3372:18798;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18799",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3372:18799;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3372:18799;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3372:18799;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3372:18800",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3372:18800;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3372:18800;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.66,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-hoc-vien/quy-trinh-hoc-vien",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

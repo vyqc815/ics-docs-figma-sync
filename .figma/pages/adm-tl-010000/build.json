@@ -1,6 +1,22 @@
 {
   "route": "/tai-lieu/chi-tiet-tai-lieu",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-tl-010000/index.tsx",
   "docFile": "docs/pages/tai-lieu/chi-tiet-tai-lieu.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4193:144449",
+      "component": "Header",
+      "file": "components/figma/adm-tl-010000/Header.tsx"
+    },
+    {
+      "nodeId": "4915:249842",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-tl-010000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "4193:145204",
+      "component": "MaincontentTaiLieu",
+      "file": "components/figma/adm-tl-010000/MaincontentTaiLieu.tsx"
+    }
+  ]
 }

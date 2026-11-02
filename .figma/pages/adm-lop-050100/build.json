@@ -1,6 +1,34 @@
 {
   "route": "/lop-hoc/nhat-ky/nhat-ky",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-050100/index.tsx",
   "docFile": "docs/pages/lop-hoc/nhat-ky/nhat-ky.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "1295:3953",
+      "component": "Section1",
+      "file": "components/figma/adm-lop-050100/Section1.tsx"
+    },
+    {
+      "nodeId": "4915:231079",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-050100/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3497:53418",
+      "component": "Header13",
+      "file": "components/figma/shared/Header13.tsx"
+    }
+  ],
+  "idAlias": {
+    "3497:53418": "3497:3987",
+    "4050:118046": "4050:115474",
+    "3497:53466": "3497:4035",
+    "I3497:53466;2008:30986": "I3497:4035;2008:30986",
+    "I3497:53466;2008:31747": "I3497:4035;2008:31747",
+    "I3497:53466;2008:31748": "I3497:4035;2008:31748",
+    "I3497:53466;1391:17264": "I3497:4035;1391:17264",
+    "I3497:53466;1391:17266": "I3497:4035;1391:17266",
+    "I3497:53466;1391:17268": "I3497:4035;1391:17268",
+    "I3497:53466;1391:17270": "I3497:4035;1391:17270"
+  }
 }

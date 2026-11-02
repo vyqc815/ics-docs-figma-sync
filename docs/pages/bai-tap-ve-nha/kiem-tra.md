@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-060200 — Bài tập về nhà / Kiểm tra (`5491:347564`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/bai-tap-ve-nha/kiem-tra`  
 > **Khung thiết kế:** 1440 × 962 px  
-> **Xuất lúc:** 2026-11-02T01:43:15.441Z  
+> **Xuất lúc:** 2026-11-02T02:43:45.839Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-060200/page-spec.json`
 
 ## 1. Tổng quan

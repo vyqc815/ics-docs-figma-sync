@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 850,
+    "mismatched": 8961,
+    "percent": 0.732,
+    "shapePercent": 0.004,
+    "textPercent": 3.172,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4915:256669;4901:222153;2245:87908",
+      "name": "Label",
+      "pixels": 184,
+      "percent": 7.8
+    },
+    {
+      "id": "520:47182",
+      "name": "MINDSET DẠY VÀ HỌC",
+      "pixels": 202,
+      "percent": 6.8
+    },
+    {
+      "id": "520:47140",
+      "name": "Từ vựng và ngữ pháp phải được lặp lại nhiều lần trong ngữ cảnh khác nhau để học viên có thể ghi nhớ và sử dụng, không chỉ nhận biết và hiểu nghĩa.",
+      "pixels": 2034,
+      "percent": 6.6
+    },
+    {
+      "id": "520:47121",
+      "name": "Kiến thức bài trước phải được tái sử dụng ở những bài sau, không đưa kiến thức nâng cao xuất hiện sớm hơn lộ trình, tránh thiết kế bài học rời rạc.",
+      "pixels": 1922,
+      "percent": 6.2
+    },
+    {
+      "id": "520:47083",
+      "name": "Kiến thức từ giáo trình phải được học viên ứng dụng theo mục đích cụ thể (ví dụ học hội thoại về mua sắm phải ứng dụng thực tế được khi học viên đi mua sắm...).",
+      "pixels": 1634,
+      "percent": 5.3
+    },
+    {
+      "id": "520:47102",
+      "name": "Nội dung giảng dạy phải: đúng cấp độ và đủ năng lực yêu cầu của cấp độ, không được quá dễ hoặc quá khó. Nếu tinh giản nội dung, cần đánh giá rõ có ảnh hưởng đến khả năng đạt mục tiêu đầu ra hay không.",
+      "pixels": 1414,
+      "percent": 4.6
+    },
+    {
+      "id": "520:47154",
+      "name": "MỤC TIÊU ĐẦU RA CỦA KHÓA HỌC",
+      "pixels": 176,
+      "percent": 3.8
+    },
+    {
+      "id": "520:42257",
+      "name": "Trước khi xây dựng khóa học phải xác định rõ bối cảnh học viên. Mọi nội dung và phương pháp đều xuất phát từ nhu cầu thực tế của học viên.",
+      "pixels": 794,
+      "percent": 2.6
+    },
+    {
+      "id": "520:47135",
+      "name": "Lặp có chủ đích",
+      "pixels": 60,
+      "percent": 2.5
+    },
+    {
+      "id": "520:42454",
+      "name": "HỌC VIÊN",
+      "pixels": 34,
+      "percent": 2.5
+    },
+    {
+      "id": "I4915:256669;5491:336966;2245:87908",
+      "name": "Label",
+      "pixels": 55,
+      "percent": 2.3
+    },
+    {
+      "id": "520:47168",
+      "name": "MINDSET THIẾT KẾ KHÓA HỌC",
+      "pixels": 68,
+      "percent": 1.7
+    },
+    {
+      "id": "I4915:256669;4901:222158;2245:87908",
+      "name": "Label",
+      "pixels": 32,
+      "percent": 1.4
+    },
+    {
+      "id": "I4273:160773;4019:24078",
+      "name": "Sakumi",
+      "pixels": 26,
+      "percent": 1.3
+    },
+    {
+      "id": "520:47078",
+      "name": "Học là phải ứng dụng được",
+      "pixels": 51,
+      "percent": 1.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I4915:256669;4901:222145",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I4915:256669;4901:222151;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 832,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4915:256669;4901:222195",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 178,
+    "missing": [],
+    "withinThreshold": 178,
+    "buckets": {
+      "≤0.5px": 174,
+      "≤1px": 176,
+      "≤2px": 178,
+      "≤4px": 178,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "520:47181",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:47182",
+        "name": "MINDSET DẠY VÀ HỌC",
+        "role": "text",
+        "delta": 1.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:47106",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:47116",
+        "name": "Nội dung phải có tính liên kết",
+        "role": "text",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:47153",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:47154",
+        "name": "MỤC TIÊU ĐẦU RA CỦA KHÓA HỌC",
+        "role": "text",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:42242",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:42252",
+        "name": "Luôn lấy học viên làm trung tâm của mọi vấn đề",
+        "role": "text",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:47068",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:47078",
+        "name": "Học là phải ứng dụng được",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:256669;4901:222096",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:256669;4901:222103",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:256669;4901:222116",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:256669;4901:222117",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:256669;4901:222118",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:256669;4901:222121",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "520:42225",
+        "name": "MainContentWrapper",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "520:42226",
+        "name": "Section - CenterColumnProcessList",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:46880",
+        "name": "Package Title Area",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:46881",
+        "name": "Heading 1",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:46882",
+        "name": "MINDSET THIẾT KẾ KHÓA HỌC",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:42240",
+        "name": "Accordion · Luôn lấy học viên làm trung tâm của mọi vấn đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:42241",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "520:42253",
+        "name": "Collapse Icon Button",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43133",
+        "name": "Mouse click",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.13,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/mindset-thiet-ke-khoa-hoc",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

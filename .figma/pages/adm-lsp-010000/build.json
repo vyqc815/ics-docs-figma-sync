@@ -1,6 +1,22 @@
 {
   "route": "/luong/luong-sp",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lsp-010000/index.tsx",
   "docFile": "docs/pages/luong/luong-sp.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4101:142414",
+      "component": "Header",
+      "file": "components/figma/adm-lsp-010000/Header.tsx"
+    },
+    {
+      "nodeId": "4915:249224",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lsp-010000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "4101:142551",
+      "component": "MainLuongSp",
+      "file": "components/figma/adm-lsp-010000/MainLuongSp.tsx"
+    }
+  ]
 }

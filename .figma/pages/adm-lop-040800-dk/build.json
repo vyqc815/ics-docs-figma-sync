@@ -1,6 +1,22 @@
 {
   "route": "/lop-hoc/cai-dat/ot-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-040800-dk/index.tsx",
   "docFile": "docs/pages/lop-hoc/cai-dat/ot-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:118135",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-040800-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:118181",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-040800-dk/SidebarRail.tsx"
+    },
+    {
+      "nodeId": "4056:118274",
+      "component": "Header",
+      "file": "components/figma/adm-lop-040800-dk/Header.tsx"
+    }
+  ]
 }

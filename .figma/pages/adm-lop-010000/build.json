@@ -1,6 +1,34 @@
 {
   "route": "/danh-sach-lop-hoc",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-010000/index.tsx",
   "docFile": "docs/pages/danh-sach-lop-hoc.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2623:12574",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/adm-lop-010000/MainScrollableWorkspace.tsx"
+    },
+    {
+      "nodeId": "2623:13247",
+      "component": "Header7",
+      "file": "components/figma/shared/Header7.tsx"
+    },
+    {
+      "nodeId": "4915:223538",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-010000/SidebarMenuAdmin.tsx"
+    }
+  ],
+  "idAlias": {
+    "2623:13247": "2223:83967",
+    "4050:115183": "4050:118869",
+    "2623:13295": "2223:84015",
+    "I2623:13295;2008:30986": "I2223:84015;2008:30986",
+    "I2623:13295;2008:31747": "I2223:84015;2008:31747",
+    "I2623:13295;2008:31748": "I2223:84015;2008:31748",
+    "I2623:13295;1391:17264": "I2223:84015;1391:17264",
+    "I2623:13295;1391:17266": "I2223:84015;1391:17266",
+    "I2623:13295;1391:17268": "I2223:84015;1391:17268",
+    "I2623:13295;1391:17270": "I2223:84015;1391:17270"
+  }
 }

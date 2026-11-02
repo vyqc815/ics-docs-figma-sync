@@ -1,6 +1,22 @@
 {
   "route": "/chi-tiet-hoc-vien/quy-trinh-hoc-vien",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-hv-020500/index.tsx",
   "docFile": "docs/pages/chi-tiet-hoc-vien/quy-trinh-hoc-vien.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2223:83967",
+      "component": "Header7",
+      "file": "components/figma/shared/Header7.tsx"
+    },
+    {
+      "nodeId": "4915:231923",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-hv-020500/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3372:18786",
+      "component": "Section3",
+      "file": "components/figma/adm-hv-020500/Section3.tsx"
+    }
+  ]
 }

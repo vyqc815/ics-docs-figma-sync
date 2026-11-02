@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Cài đặt › ADM-LOP-040500-DK — Lớp học / Cài đặt / Lịch dạy (`4056:117081`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lop-hoc/cai-dat/lich-day-dk`  
 > **Khung thiết kế:** 1440 × 860 px  
-> **Xuất lúc:** 2026-11-01T16:12:49.177Z  
+> **Xuất lúc:** 2026-11-02T03:37:16.118Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/adm-lop-040500-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -79,22 +79,22 @@ Nền trang: `#121213` (bg/canvas).
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `Body/17/SemiBold` | Afacad | 17 / 1.25 (21.25px) | 600 | 0 | #16a34a (brand/primary) | 6 | “T2 - 19:00AM” |
-| `Body/17/Bold` | Afacad | 17 / 1.25 (21.25px) | 700 | 0 | #ededef (text/primary) | 6 | “31.01” |
-| `Body/17/Bold` | Afacad | 17 / 1.25 (21.25px) | 700 | 0 | #ffffff | 1 | “02.01” |
-| — | Afacad | 16 / 1.25 (20px) | 700 | 0 | #ededef (text/primary) | 10 | “DN 342” |
-| — | Afacad | 16 / 1.25 (20px) | 500 · case title | 0 | #a1a1aa (text/secondary) | 7 | “Thông Tin” |
-| — | Afacad | 16 / 1.25 (20px) | 700 · case title | 0 | #ffffff | 1 | “DN0091 - 132” |
-| `Body/16/Bold` | Afacad | 16 / 1.25 (20px) | 700 | 0 | #16a34a (brand/primary) | 1 | “Lịch Dạy” |
+| `Body/17/SemiBold` | Afacad | 17 / 21px | 600 | 0 | #16a34a (brand/primary) | 6 | “T2 - 19:00AM” |
+| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ededef (text/primary) | 6 | “31.01” |
+| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff | 1 | “02.01” |
+| — | Afacad | 16 / 20px | 700 | 0 | #ededef (text/primary) | 10 | “DN 342” |
+| — | Afacad | 16 / 20px | 500 · case title | 0 | #a1a1aa (text/secondary) | 7 | “Thông Tin” |
+| — | Afacad | 16 / 20px | 700 · case title | 0 | #ffffff | 1 | “DN0091 - 132” |
+| `Body/16/Bold` | Afacad | 16 / 20px | 700 | 0 | #16a34a (brand/primary) | 1 | “Lịch Dạy” |
 | — | Afacad | 16 / 18px | 700 | 0 | #ededef (text/primary) | 1 | “IT_VUONG123” |
-| `Body/15/Medium` | Afacad | 15 / 1.25 (18.75px) | 500 | 0 | #a1a1aa (text/secondary) | 7 | “Thứ 2” |
-| `Body/15/Medium` | Afacad | 15 / 1.25 (18.75px) | 500 | 0 | #ededef (text/primary) | 1 | “31.01.2026 - 06.01.2026” |
-| `Body/14/Medium · Title` | Afacad | 14 / 1.25 (17.5px) | 500 · case title | 0 | #ededef (text/primary) | 11 | “Trần Nguyễn Hoài Phương” |
-| — | Afacad | 14 / 1.25 (17.5px) | 500 | 0 | #ededef (text/primary) | 10 | “09:00 am - 11:00 am” |
-| — | Afacad | 14 / 1.25 (17.5px) | 500 | 0 | #a1a1aa (text/secondary) | 1 | “09:00 am - 11:00 am” |
-| — | Unbounded | 13 / 1.25 (16.25px) | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Admin Đắc Nhân” |
-| — | Afacad | 13 / 1.25 (16.25px) | 500 | 0 | #ffffff (color/neutral/white) | 1 | “admin@gmail.com” |
-| — | Unbounded | 11 / 1.25 (13.75px) | 600 · case title | 0 | #ffffff (color/neutral/white) | 11 | “Tổng quan” |
+| `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #a1a1aa (text/secondary) | 7 | “Thứ 2” |
+| `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #ededef (text/primary) | 1 | “31.01.2026 - 06.01.2026” |
+| `Body/14/Medium · Title` | Afacad | 14 / 18px | 500 · case title | 0 | #ededef (text/primary) | 11 | “Trần Nguyễn Hoài Phương” |
+| — | Afacad | 14 / 18px | 500 | 0 | #ededef (text/primary) | 10 | “09:00 am - 11:00 am” |
+| — | Afacad | 14 / 18px | 500 | 0 | #a1a1aa (text/secondary) | 1 | “09:00 am - 11:00 am” |
+| — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Admin Đắc Nhân” |
+| — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “admin@gmail.com” |
+| — | Unbounded | 11 / 14px | 600 · case title | 0 | #ffffff (color/neutral/white) | 11 | “Tổng quan” |
 
 ## 4. Cấu trúc chi tiết
 
@@ -106,258 +106,258 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
       - [khối] **Sub Navigation Tabs** — 1092×36 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `4056:117085`
         - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Inactive, Icon=No, Kiểu=Gạch trái⟩ — 87×36 [HUG×HUG] · @ (0, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · radius 6px `4056:117086`
           - [khối] **Container** — 63×20 [HUG×HUG] · @ (12, 8) flow · row `I4056:117086;2177:28927`
-            - [chữ] “Thông Tin” — 63×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117086;2177:28928`
+            - [chữ] “Thông Tin” — 63×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/20px 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117086;2177:28928`
         - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Inactive, Icon=No, Kiểu=Gạch trái⟩ — 79×36 [HUG×HUG] · @ (99, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · radius 6px `4056:117087`
           - [khối] **Container** — 55×20 [HUG×HUG] · @ (12, 8) flow · row `I4056:117087;2177:28927`
-            - [chữ] “Học Viên” — 55×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117087;2177:28928`
+            - [chữ] “Học Viên” — 55×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/20px 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117087;2177:28928`
         - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Inactive, Icon=No, Kiểu=Gạch trái⟩ — 85×36 [HUG×HUG] · @ (190, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · radius 6px `4056:117088`
           - [khối] **Container** — 61×20 [HUG×HUG] · @ (12, 8) flow · row `I4056:117088;2177:28927`
-            - [chữ] “Giáo Viên” — 61×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117088;2177:28928`
+            - [chữ] “Giáo Viên” — 61×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/20px 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117088;2177:28928`
         - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Inactive, Icon=No, Kiểu=Gạch trái⟩ — 178×36 [HUG×HUG] · @ (287, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · radius 6px `4056:117089`
           - [khối] **Container** — 154×20 [HUG×HUG] · @ (12, 8) flow · row `I4056:117089;2177:28927`
-            - [chữ] “Phụ Trách Lớp & Support” — 154×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117089;2177:28928`
+            - [chữ] “Phụ Trách Lớp & Support” — 154×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/20px 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117089;2177:28928`
         - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Active, Icon=No, Kiểu=Gạch trái⟩ — 83×36 [HUG×HUG] · @ (477, 0) flow · row gap 8 pad 8 12 8 16 align CENTER · bg #102218 (bg/brand-tint) · radius 6px `4056:117090`
           - [khối] **Container** — 55×20 [HUG×HUG] · @ (16, 8) flow · row `I4056:117090;2177:28935`
-            - [chữ] “Lịch Dạy” — 55×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 700 #16a34a (brand/primary) · text-align center · no-wrap `I4056:117090;2177:28936`
+            - [chữ] “Lịch Dạy” — 55×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #16a34a (brand/primary) · text-align center · no-wrap `I4056:117090;2177:28936`
           - [hình] **Left accent vertical pill bar** — 3×13 · @ (4, 11.5) abs · bg #16a34a (brand/primary) · radius 9999px `I4056:117090;2177:28937`
         - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Inactive, Icon=No, Kiểu=Gạch trái⟩ — 80×36 [HUG×HUG] · @ (572, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · radius 6px `4056:117091`
           - [khối] **Container** — 56×20 [HUG×HUG] · @ (12, 8) flow · row `I4056:117091;2177:28927`
-            - [chữ] “Hóa Đơn” — 56×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117091;2177:28928`
+            - [chữ] “Hóa Đơn” — 56×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/20px 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117091;2177:28928`
         - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Inactive, Icon=No, Kiểu=Gạch trái⟩ — 46×36 [HUG×HUG] · @ (664, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · radius 6px `4056:117092`
           - [khối] **Container** — 22×20 [HUG×HUG] · @ (12, 8) flow · row `I4056:117092;2177:28927`
-            - [chữ] “KPI” — 22×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117092;2177:28928`
+            - [chữ] “KPI” — 22×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/20px 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117092;2177:28928`
         - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Inactive, Icon=No, Kiểu=Gạch trái⟩ — 43×36 [HUG×HUG] · @ (722, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · radius 6px `4056:117093`
           - [khối] **Container** — 19×20 [HUG×HUG] · @ (12, 8) flow · row `I4056:117093;2177:28927`
-            - [chữ] “OT” — 19×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117093;2177:28928`
+            - [chữ] “OT” — 19×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/20px 500 #a1a1aa (text/secondary) case title · text-align center · no-wrap `I4056:117093;2177:28928`
     - [khối] **Frame 1171274936** — 1092×33 [FILL×HUG] · @ (24, 64) flow · row gap 16 align CENTER `4056:117094`
       - [instance] **Time** ⟨Time: Property 1=Variant4⟩ — 226×33 [HUG×HUG] · @ (0, 0) flow · row gap 12 pad 6 6 6 8 align CENTER · bg #18181a (bg/surface) · radius 8px · border 1px solid #27272a (border/default) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05) `4056:117095`
-        - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Right, Size=18⟩ — 18×18 · @ (9, 7.5) flow · file assets/action-icon-I4056-117095-2008-48184.svg `I4056:117095;2008:48184`
-        - [chữ] “31.01.2026 - 06.01.2026” — 150×19 [FIXED×HUG] · @ (39, 7) flow · Afacad 15/1.25 (18.75px) 500 #ededef (text/primary) · text-align center `I4056:117095;2008:48177`
-        - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Right, Size=18⟩ — 18×18 · @ (201, 7.5) flow · file assets/action-icon-I4056-117095-2008-48178.svg `I4056:117095;2008:48178`
+        - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Right, Size=18⟩ — 18×18 · @ (9, 7.5) flow · file /figma/assets/671fd273c31b.svg `I4056:117095;2008:48184`
+        - [chữ] “31.01.2026 - 06.01.2026” — 150×19 [FIXED×HUG] · @ (39, 7) flow · Afacad 15/19px 500 #ededef (text/primary) · text-align center `I4056:117095;2008:48177`
+        - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Right, Size=18⟩ — 18×18 · @ (201, 7.5) flow · file /figma/assets/203b88478b6a.svg `I4056:117095;2008:48178`
       - [khối] **Frame 1171274927** — 850×33 [FILL×HUG] · @ (242, 0) flow · row gap 12 wrap cross-gap 8 align CENTER `4056:117096`
         - [khối] **Frame 427325131** — 116×33 [FIXED×HUG] · @ (0, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #102218 (bg/brand-tint) · radius 6px · shadow inset 0 0 0 1px #1e4d31 `4056:117097`
-          - [chữ] “T2 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/1.25 (21.25px) 600 #16a34a (brand/primary) · text-align center `4056:117098`
+          - [chữ] “T2 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #16a34a (brand/primary) · text-align center `4056:117098`
         - [khối] **Frame 427325132** — 116×33 [FIXED×HUG] · @ (128, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #102218 (bg/brand-tint) · radius 6px · shadow inset 0 0 0 1px #1e4d31 `4056:117099`
-          - [chữ] “T3 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/1.25 (21.25px) 600 #16a34a (brand/primary) · text-align center `4056:117100`
+          - [chữ] “T3 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #16a34a (brand/primary) · text-align center `4056:117100`
         - [khối] **Frame 427325133** — 116×33 [FIXED×HUG] · @ (256, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #102218 (bg/brand-tint) · radius 6px · shadow inset 0 0 0 1px #16a34a, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117101`
-          - [chữ] “T4 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/1.25 (21.25px) 600 #16a34a (brand/primary) · text-align center `4056:117102`
-          - [icon] **Vector** — 17×17 · @ (108, 19) abs · file assets/vector-4056-117103.svg covers (-1, -1) 21×21 `4056:117103`
+          - [chữ] “T4 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #16a34a (brand/primary) · text-align center `4056:117102`
+          - [icon] **Vector** — 17×17 · @ (108, 19) abs · file /figma/assets/72ad306c238e.svg covers (-1, -1) 21×21 `4056:117103`
         - [khối] **Frame 427325134** — 116×33 [FIXED×HUG] · @ (384, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #102218 (bg/brand-tint) · radius 6px · shadow inset 0 0 0 1px #1e4d31 `4056:117104`
-          - [chữ] “T5 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/1.25 (21.25px) 600 #16a34a (brand/primary) · text-align center `4056:117105`
+          - [chữ] “T5 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #16a34a (brand/primary) · text-align center `4056:117105`
         - [khối] **Frame 427325135** — 116×33 [FIXED×HUG] · @ (512, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #102218 (bg/brand-tint) · radius 6px · shadow inset 0 0 0 1px #1e4d31 `4056:117106`
-          - [chữ] “T6 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/1.25 (21.25px) 600 #16a34a (brand/primary) · text-align center `4056:117107`
+          - [chữ] “T6 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #16a34a (brand/primary) · text-align center `4056:117107`
         - [khối] **Frame 427325136** — 116×33 [FIXED×HUG] · @ (640, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #102218 (bg/brand-tint) · radius 6px · shadow inset 0 0 0 1px #1e4d31 `4056:117108`
-          - [chữ] “T7 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/1.25 (21.25px) 600 #16a34a (brand/primary) · text-align center `4056:117109`
-        - [icon] **Atom/Icon Button** ⟨Atom/Icon Button: Icon=Plus Button Add⟩ — 33×33 · @ (768, 0) flow · file assets/atom-icon-button-4056-117110.svg covers (-2, -2) 39×39 `4056:117110`
+          - [chữ] “T7 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #16a34a (brand/primary) · text-align center `4056:117109`
+        - [icon] **Atom/Icon Button** ⟨Atom/Icon Button: Icon=Plus Button Add⟩ — 33×33 · @ (768, 0) flow · file /figma/assets/e69dc5e0ccb7.svg covers (-2, -2) 39×39 `4056:117110`
     - [khối] **Frame 427325194** — 1092×353 [FILL×HUG] · @ (24, 109) flow · column gap 12 pad 0 0 16 0 align CENTER · bg #18181a (bg/surface) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `4056:117111`
       - [khối] **Frame 427323674** — 1092×55 [FILL×HUG] · @ (0, 0) flow · column gap 8 pad 4 18 4 18 align CENTER · bg #18181a (bg/surface) · radius 12px 12px 0 0 · shadow inset 0 -1px 0 0 #27272a `4056:117112`
         - [khối] **Frame 427323673** — 1056×47 [FILL×FIXED] · @ (18, 4) flow · row gap 8 align CENTER `4056:117113`
           - [khối] **Frame 427323677** — 144×46 [FILL×HUG] · @ (0, 0.5) flow · column align CENTER `4056:117114`
-            - [chữ] “Thứ 2” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · text-align center `4056:117115`
+            - [chữ] “Thứ 2” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #a1a1aa (text/secondary) · text-align center `4056:117115`
             - [khối] **Frame 427323675** — 148×27 [FIXED×HUG] · @ (-2, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · radius 8px `4056:117116`
-              - [chữ] “31.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/1.25 (21.25px) 700 #ededef (text/primary) · text-align center · no-wrap `4056:117117`
+              - [chữ] “31.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/21px 700 #ededef (text/primary) · text-align center · no-wrap `4056:117117`
           - [khối] **Frame 427323684** — 144×46 [FILL×HUG] · @ (152, 0.5) flow · column align CENTER `4056:117118`
-            - [chữ] “Thứ 3” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · text-align center `4056:117119`
+            - [chữ] “Thứ 3” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #a1a1aa (text/secondary) · text-align center `4056:117119`
             - [khối] **Frame 427323675** — 148×27 [FIXED×HUG] · @ (-2, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · radius 8px `4056:117120`
-              - [chữ] “01.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/1.25 (21.25px) 700 #ededef (text/primary) · text-align center · no-wrap `4056:117121`
+              - [chữ] “01.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/21px 700 #ededef (text/primary) · text-align center · no-wrap `4056:117121`
           - [khối] **Frame 427323679** — 144×46 [FILL×HUG] · @ (304, 0.5) flow · column align CENTER `4056:117122`
-            - [chữ] “Thứ 4” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · text-align center `4056:117123`
+            - [chữ] “Thứ 4” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #a1a1aa (text/secondary) · text-align center `4056:117123`
             - [khối] **Frame 427323675** — 68×27 [HUG×HUG] · @ (38, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 8px `4056:117124`
-              - [chữ] “02.01” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/1.25 (21.25px) 700 #ffffff · text-align center `4056:117125`
+              - [chữ] “02.01” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff · text-align center `4056:117125`
           - [khối] **Frame 427323680** — 144×46 [FILL×HUG] · @ (456, 0.5) flow · column align CENTER `4056:117126`
-            - [chữ] “Thứ 5” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · text-align center `4056:117127`
+            - [chữ] “Thứ 5” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #a1a1aa (text/secondary) · text-align center `4056:117127`
             - [khối] **Frame 427323675** — 148×27 [FIXED×HUG] · @ (-2, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · radius 8px `4056:117128`
-              - [chữ] “03.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/1.25 (21.25px) 700 #ededef (text/primary) · text-align center · no-wrap `4056:117129`
+              - [chữ] “03.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/21px 700 #ededef (text/primary) · text-align center · no-wrap `4056:117129`
           - [khối] **Frame 427323681** — 144×46 [FILL×HUG] · @ (608, 0.5) flow · column align CENTER `4056:117130`
-            - [chữ] “Thứ 6” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · text-align center `4056:117131`
+            - [chữ] “Thứ 6” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #a1a1aa (text/secondary) · text-align center `4056:117131`
             - [khối] **Frame 427323675** — 148×27 [FIXED×HUG] · @ (-2, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · radius 8px `4056:117132`
-              - [chữ] “04.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/1.25 (21.25px) 700 #ededef (text/primary) · text-align center · no-wrap `4056:117133`
+              - [chữ] “04.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/21px 700 #ededef (text/primary) · text-align center · no-wrap `4056:117133`
           - [khối] **Frame 427323682** — 144×46 [FILL×HUG] · @ (760, 0.5) flow · column align CENTER `4056:117134`
-            - [chữ] “Thứ 7” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · text-align center `4056:117135`
+            - [chữ] “Thứ 7” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #a1a1aa (text/secondary) · text-align center `4056:117135`
             - [khối] **Frame 427323675** — 148×27 [FIXED×HUG] · @ (-2, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · radius 8px `4056:117136`
-              - [chữ] “05.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/1.25 (21.25px) 700 #ededef (text/primary) · text-align center · no-wrap `4056:117137`
+              - [chữ] “05.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/21px 700 #ededef (text/primary) · text-align center · no-wrap `4056:117137`
           - [khối] **Frame 427323683** — 144×46 [FILL×HUG] · @ (912, 0.5) flow · column align CENTER `4056:117138`
-            - [chữ] “Chủ Nhật” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/1.25 (18.75px) 500 #a1a1aa (text/secondary) · text-align center `4056:117139`
+            - [chữ] “Chủ Nhật” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #a1a1aa (text/secondary) · text-align center `4056:117139`
             - [khối] **Frame 427323675** — 148×27 [FIXED×HUG] · @ (-2, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · radius 8px `4056:117140`
-              - [chữ] “06.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/1.25 (21.25px) 700 #ededef (text/primary) · text-align center · no-wrap `4056:117141`
+              - [chữ] “06.01” — 39×21 [HUG×HUG] · @ (54.5, 3) flow · Afacad 17/21px 700 #ededef (text/primary) · text-align center · no-wrap `4056:117141`
       - [khối] **Frame 1171274937** — 1092×82 [FILL×HUG] · @ (0, 67) flow · row gap 8 pad 0 18 0 18 align CENTER `4056:117142`
         - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH HOÀN THÀNH⟩ — 144×82 [FIXED×HUG] · @ (18, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #12251a (bg/success) · radius 8px · shadow inset 0 0 0 1px #2d9732, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117143`
           - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 128×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #18181a (bg/surface) · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117143;2008:49570`
             - [khối] **Frame 427323652** — 114×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I4056:117143;2008:49570;1904:12420`
               - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Ngô Văn Tuấn, Size=20⟩ — 20×20 · @ (0, 0) flow `I4056:117143;2008:49570;1991:15993`
-                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("assets/img-661bcc449b79.png") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117143;2008:49570;1991:15993;1991:15980`
-              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117143;2008:49570;1904:12423`
+                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("/figma/assets/661bcc449b79.jpg") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117143;2008:49570;1991:15993;1991:15980`
+              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/18px 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117143;2008:49570;1904:12423`
           - [khối] **Frame 427325229** — 128×38 [FILL×HUG] · @ (8, 36) flow · column `I4056:117143;2008:49571`
-            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 700 #ededef (text/primary) `I4056:117143;2008:49572`
-            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) `I4056:117143;2008:49573`
-        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (170, 6) flow · file assets/status-calendar-4056-117144.svg `4056:117144`
+            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #ededef (text/primary) `I4056:117143;2008:49572`
+            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/18px 500 #ededef (text/primary) `I4056:117143;2008:49573`
+        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (170, 6) flow · file /figma/assets/aeca1023e64e.svg `4056:117144`
         - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH CỐ ĐỊNH⟩ — 144×82 [FIXED×HUG] · @ (322, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #102218 (bg/brand-tint) · radius 8px · shadow inset 0 0 0 1px #16a34a, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117145`
           - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 128×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #18181a (bg/surface) · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117145;2008:49502`
             - [khối] **Frame 427323652** — 114×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I4056:117145;2008:49502;1904:12420`
               - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Ngô Văn Tuấn, Size=20⟩ — 20×20 · @ (0, 0) flow `I4056:117145;2008:49502;1991:15993`
-                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("assets/img-661bcc449b79.png") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117145;2008:49502;1991:15993;1991:15980`
-              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117145;2008:49502;1904:12423`
+                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("/figma/assets/661bcc449b79.jpg") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117145;2008:49502;1991:15993;1991:15980`
+              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/18px 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117145;2008:49502;1904:12423`
           - [khối] **Frame 427325229** — 128×38 [FILL×HUG] · @ (8, 36) flow · column `I4056:117145;2008:49448`
-            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 700 #ededef (text/primary) `I4056:117145;2008:49449`
-            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) `I4056:117145;2008:49450`
-        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (474, 6) flow · file assets/status-calendar-4056-117146.svg `4056:117146`
+            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #ededef (text/primary) `I4056:117145;2008:49449`
+            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/18px 500 #ededef (text/primary) `I4056:117145;2008:49450`
+        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (474, 6) flow · file /figma/assets/aeca1023e64e.svg `4056:117146`
         - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH CỐ ĐỊNH⟩ — 144×82 [FIXED×HUG] · @ (626, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #102218 (bg/brand-tint) · radius 8px · shadow inset 0 0 0 1px #16a34a, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117147`
           - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 128×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #18181a (bg/surface) · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117147;2008:49502`
             - [khối] **Frame 427323652** — 114×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I4056:117147;2008:49502;1904:12420`
               - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Ngô Văn Tuấn, Size=20⟩ — 20×20 · @ (0, 0) flow `I4056:117147;2008:49502;1991:15993`
-                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("assets/img-661bcc449b79.png") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117147;2008:49502;1991:15993;1991:15980`
-              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117147;2008:49502;1904:12423`
+                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("/figma/assets/661bcc449b79.jpg") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117147;2008:49502;1991:15993;1991:15980`
+              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/18px 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117147;2008:49502;1904:12423`
           - [khối] **Frame 427325229** — 128×38 [FILL×HUG] · @ (8, 36) flow · column `I4056:117147;2008:49448`
-            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 700 #ededef (text/primary) `I4056:117147;2008:49449`
-            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) `I4056:117147;2008:49450`
-        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (778, 6) flow · file assets/status-calendar-4056-117148.svg `4056:117148`
-        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Hover⟩ — 144×70 [FILL×FIXED] · @ (930, 6) flow · file assets/status-calendar-4056-117149.svg covers (-4.9, -4.9) 155.8×83.8 `4056:117149`
+            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #ededef (text/primary) `I4056:117147;2008:49449`
+            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/18px 500 #ededef (text/primary) `I4056:117147;2008:49450`
+        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (778, 6) flow · file /figma/assets/aeca1023e64e.svg `4056:117148`
+        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Hover⟩ — 144×70 [FILL×FIXED] · @ (930, 6) flow · file /figma/assets/738359b8bde0.svg covers (-4.9, -4.9) 155.8×83.8 `4056:117149`
       - [khối] **Frame 1171274938** — 1092×82 [FILL×HUG] · @ (0, 161) flow · row gap 8 pad 0 18 0 18 align CENTER `4056:117150`
         - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH HOÀN THÀNH⟩ — 144×82 [FIXED×HUG] · @ (18, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #12251a (bg/success) · radius 8px · shadow inset 0 0 0 1px #2d9732, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117151`
           - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 128×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #18181a (bg/surface) · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117151;2008:49570`
             - [khối] **Frame 427323652** — 114×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I4056:117151;2008:49570;1904:12420`
               - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Ngô Văn Tuấn, Size=20⟩ — 20×20 · @ (0, 0) flow `I4056:117151;2008:49570;1991:15993`
-                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("assets/img-661bcc449b79.png") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117151;2008:49570;1991:15993;1991:15980`
-              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117151;2008:49570;1904:12423`
+                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("/figma/assets/661bcc449b79.jpg") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117151;2008:49570;1991:15993;1991:15980`
+              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/18px 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117151;2008:49570;1904:12423`
           - [khối] **Frame 427325229** — 128×38 [FILL×HUG] · @ (8, 36) flow · column `I4056:117151;2008:49571`
-            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 700 #ededef (text/primary) `I4056:117151;2008:49572`
-            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) `I4056:117151;2008:49573`
-        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (170, 6) flow · file assets/status-calendar-4056-117152.svg `4056:117152`
+            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #ededef (text/primary) `I4056:117151;2008:49572`
+            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/18px 500 #ededef (text/primary) `I4056:117151;2008:49573`
+        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (170, 6) flow · file /figma/assets/aeca1023e64e.svg `4056:117152`
         - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH CỐ ĐỊNH⟩ — 144×82 [FIXED×HUG] · @ (322, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #102218 (bg/brand-tint) · radius 8px · shadow inset 0 0 0 1px #16a34a, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117153`
           - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 128×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #18181a (bg/surface) · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117153;2008:49502`
             - [khối] **Frame 427323652** — 114×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I4056:117153;2008:49502;1904:12420`
               - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Ngô Văn Tuấn, Size=20⟩ — 20×20 · @ (0, 0) flow `I4056:117153;2008:49502;1991:15993`
-                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("assets/img-661bcc449b79.png") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117153;2008:49502;1991:15993;1991:15980`
-              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117153;2008:49502;1904:12423`
+                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("/figma/assets/661bcc449b79.jpg") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117153;2008:49502;1991:15993;1991:15980`
+              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/18px 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117153;2008:49502;1904:12423`
           - [khối] **Frame 427325229** — 128×38 [FILL×HUG] · @ (8, 36) flow · column `I4056:117153;2008:49448`
-            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 700 #ededef (text/primary) `I4056:117153;2008:49449`
-            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) `I4056:117153;2008:49450`
-        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (474, 6) flow · file assets/status-calendar-4056-117154.svg `4056:117154`
+            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #ededef (text/primary) `I4056:117153;2008:49449`
+            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/18px 500 #ededef (text/primary) `I4056:117153;2008:49450`
+        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (474, 6) flow · file /figma/assets/aeca1023e64e.svg `4056:117154`
         - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH CỐ ĐỊNH⟩ — 144×82 [FIXED×HUG] · @ (626, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #102218 (bg/brand-tint) · radius 8px · shadow inset 0 0 0 1px #16a34a, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117155`
           - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 128×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #18181a (bg/surface) · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117155;2008:49502`
             - [khối] **Frame 427323652** — 114×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I4056:117155;2008:49502;1904:12420`
               - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Ngô Văn Tuấn, Size=20⟩ — 20×20 · @ (0, 0) flow `I4056:117155;2008:49502;1991:15993`
-                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("assets/img-661bcc449b79.png") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117155;2008:49502;1991:15993;1991:15980`
-              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117155;2008:49502;1904:12423`
+                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("/figma/assets/661bcc449b79.jpg") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117155;2008:49502;1991:15993;1991:15980`
+              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/18px 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117155;2008:49502;1904:12423`
           - [khối] **Frame 427325229** — 128×38 [FILL×HUG] · @ (8, 36) flow · column `I4056:117155;2008:49448`
-            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 700 #ededef (text/primary) `I4056:117155;2008:49449`
-            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) `I4056:117155;2008:49450`
-        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 [FILL×FIXED] · @ (778, 6) flow · file assets/status-calendar-4056-117156.svg `4056:117156`
-        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 [FILL×FIXED] · @ (930, 6) flow · file assets/status-calendar-4056-117157.svg `4056:117157`
+            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #ededef (text/primary) `I4056:117155;2008:49449`
+            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/18px 500 #ededef (text/primary) `I4056:117155;2008:49450`
+        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 [FILL×FIXED] · @ (778, 6) flow · file /figma/assets/aeca1023e64e.svg `4056:117156`
+        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 [FILL×FIXED] · @ (930, 6) flow · file /figma/assets/aeca1023e64e.svg `4056:117157`
       - [khối] **Frame 1171274939** — 1092×82 [FILL×HUG] · @ (0, 255) flow · row gap 8 pad 0 18 0 18 align CENTER `4056:117158`
         - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH HOÀN THÀNH⟩ — 144×82 [FIXED×HUG] · @ (18, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #12251a (bg/success) · radius 8px · shadow inset 0 0 0 1px #2d9732, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117159`
           - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 128×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #18181a (bg/surface) · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117159;2008:49570`
             - [khối] **Frame 427323652** — 114×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I4056:117159;2008:49570;1904:12420`
               - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Ngô Văn Tuấn, Size=20⟩ — 20×20 · @ (0, 0) flow `I4056:117159;2008:49570;1991:15993`
-                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("assets/img-661bcc449b79.png") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117159;2008:49570;1991:15993;1991:15980`
-              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117159;2008:49570;1904:12423`
+                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("/figma/assets/661bcc449b79.jpg") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117159;2008:49570;1991:15993;1991:15980`
+              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/18px 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117159;2008:49570;1904:12423`
           - [khối] **Frame 427325229** — 128×38 [FILL×HUG] · @ (8, 36) flow · column `I4056:117159;2008:49571`
-            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 700 #ededef (text/primary) `I4056:117159;2008:49572`
-            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) `I4056:117159;2008:49573`
-        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (170, 6) flow · file assets/status-calendar-4056-117160.svg `4056:117160`
+            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #ededef (text/primary) `I4056:117159;2008:49572`
+            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/18px 500 #ededef (text/primary) `I4056:117159;2008:49573`
+        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 144×70 · @ (170, 6) flow · file /figma/assets/aeca1023e64e.svg `4056:117160`
         - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH CỐ ĐỊNH⟩ — 144×82 [FIXED×HUG] · @ (322, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #102218 (bg/brand-tint) · radius 8px · shadow inset 0 0 0 1px #16a34a, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117161`
           - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 128×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #18181a (bg/surface) · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117161;2008:49502`
             - [khối] **Frame 427323652** — 114×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I4056:117161;2008:49502;1904:12420`
               - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Ngô Văn Tuấn, Size=20⟩ — 20×20 · @ (0, 0) flow `I4056:117161;2008:49502;1991:15993`
-                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("assets/img-661bcc449b79.png") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117161;2008:49502;1991:15993;1991:15980`
-              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117161;2008:49502;1904:12423`
+                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("/figma/assets/661bcc449b79.jpg") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117161;2008:49502;1991:15993;1991:15980`
+              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/18px 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117161;2008:49502;1904:12423`
           - [khối] **Frame 427325229** — 128×38 [FILL×HUG] · @ (8, 36) flow · column `I4056:117161;2008:49448`
-            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 700 #ededef (text/primary) `I4056:117161;2008:49449`
-            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) `I4056:117161;2008:49450`
+            - [chữ] “DN 342” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #ededef (text/primary) `I4056:117161;2008:49449`
+            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/18px 500 #ededef (text/primary) `I4056:117161;2008:49450`
         - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH HUỶ BỎ⟩ — 149.43×80 [FIXED×HUG] · @ (474, 1) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #2a1618 (bg/danger) · radius 8px · shadow inset 0 0 0 1px #ff0000, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117162`
           - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 133.43×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #18181a (bg/surface) · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117162;2008:49590`
             - [khối] **Frame 427323652** — 119.43×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I4056:117162;2008:49590;1904:12420`
               - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Ngô Văn Tuấn, Size=20⟩ — 20×20 · @ (0, 0) flow `I4056:117162;2008:49590;1991:15993`
-                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("assets/img-661bcc449b79.png") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117162;2008:49590;1991:15993;1991:15980`
-              - [chữ] “Trần Nguyễn Hoài Phương” — 95.43×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117162;2008:49590;1904:12423`
+                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("/figma/assets/661bcc449b79.jpg") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117162;2008:49590;1991:15993;1991:15980`
+              - [chữ] “Trần Nguyễn Hoài Phương” — 95.43×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/18px 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117162;2008:49590;1904:12423`
           - [khối] **Frame 427325229** — 133.43×36 [FILL×HUG] · @ (8, 36) flow · column `I4056:117162;2008:49591`
             - [chữ] “IT_VUONG123” — 133.43×18 [FILL×HUG] · @ (0, 0) flow · Afacad 16/18px 700 #ededef (text/primary) `I4056:117162;2008:49592`
-            - [chữ] “09:00 am - 11:00 am” — 133.43×18 [FILL×HUG] · @ (0, 18) flow · Afacad 14/1.25 (17.5px) 500 #a1a1aa (text/secondary) `I4056:117162;2008:49593`
+            - [chữ] “09:00 am - 11:00 am” — 133.43×18 [FILL×HUG] · @ (0, 18) flow · Afacad 14/18px 500 #a1a1aa (text/secondary) `I4056:117162;2008:49593`
         - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH LINH HOẠT⟩ — 144×82 [FIXED×HUG] · @ (631.43, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #10202e (bg/info) · radius 8px · shadow inset 0 0 0 1px #417bff, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117163`
           - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 128×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #18181a (bg/surface) · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117163;2008:49579`
             - [khối] **Frame 427323652** — 114×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I4056:117163;2008:49579;1904:12420`
               - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Ngô Văn Tuấn, Size=20⟩ — 20×20 · @ (0, 0) flow `I4056:117163;2008:49579;1991:15993`
-                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("assets/img-661bcc449b79.png") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117163;2008:49579;1991:15993;1991:15980`
-              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117163;2008:49579;1904:12423`
+                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("/figma/assets/661bcc449b79.jpg") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117163;2008:49579;1991:15993;1991:15980`
+              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/18px 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117163;2008:49579;1904:12423`
           - [khối] **Frame 427325229** — 128×38 [FILL×HUG] · @ (8, 36) flow · column `I4056:117163;2008:49580`
-            - [chữ] “DN 5515” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 700 #ededef (text/primary) `I4056:117163;2008:49581`
-            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) `I4056:117163;2008:49582`
+            - [chữ] “DN 5515” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #ededef (text/primary) `I4056:117163;2008:49581`
+            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/18px 500 #ededef (text/primary) `I4056:117163;2008:49582`
         - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH LINH HOẠT⟩ — 144×82 [FIXED×HUG] · @ (783.43, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #10202e (bg/info) · radius 8px · shadow inset 0 0 0 1px #417bff, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:117164`
           - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 128×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #18181a (bg/surface) · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117164;2008:49579`
             - [khối] **Frame 427323652** — 114×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I4056:117164;2008:49579;1904:12420`
               - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Ngô Văn Tuấn, Size=20⟩ — 20×20 · @ (0, 0) flow `I4056:117164;2008:49579;1991:15993`
-                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("assets/img-661bcc449b79.png") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117164;2008:49579;1991:15993;1991:15980`
-              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117164;2008:49579;1904:12423`
+                - [ảnh] **Ellipse 76** — 20×20 · @ (0, 0) abs · image `url("/figma/assets/661bcc449b79.jpg") 0 -5px / 20px 30px no-repeat, linear-gradient(#2a2a2e, #2a2a2e)` (bg/strong) · radius 50% `I4056:117164;2008:49579;1991:15993;1991:15980`
+              - [chữ] “Trần Nguyễn Hoài Phương” — 90×18 [FILL×HUG] · @ (24, 1) flow · Afacad 14/18px 500 #ededef (text/primary) case title · truncate 1 lines `I4056:117164;2008:49579;1904:12423`
           - [khối] **Frame 427325229** — 128×38 [FILL×HUG] · @ (8, 36) flow · column `I4056:117164;2008:49580`
-            - [chữ] “IT_VUONG123” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/1.25 (20px) 700 #ededef (text/primary) `I4056:117164;2008:49581`
-            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/1.25 (17.5px) 500 #ededef (text/primary) `I4056:117164;2008:49582`
-        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 138.57×70 [FILL×FIXED] · @ (935.43, 6) flow · file assets/status-calendar-4056-117165.svg `4056:117165`
-        - [icon] **lock** — 20×20 · @ (906, -6) abs · file assets/lock-4056-117166.svg `4056:117166`
-        - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (912, 7) abs · file assets/mouse-click-4056-117168.svg covers (-2, -2) 28×28 `4056:117168`
+            - [chữ] “IT_VUONG123” — 128×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #ededef (text/primary) `I4056:117164;2008:49581`
+            - [chữ] “09:00 am - 11:00 am” — 128×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/18px 500 #ededef (text/primary) `I4056:117164;2008:49582`
+        - [icon] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Chưa có lịch⟩ — 138.57×70 [FILL×FIXED] · @ (935.43, 6) flow · file /figma/assets/6f6f9bbbb897.svg `4056:117165`
+        - [icon] **lock** — 20×20 · @ (906, -6) abs · file /figma/assets/85989ab68552.svg `4056:117166`
+        - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (912, 7) abs · file /figma/assets/ca38b97282f2.svg covers (-2, -2) 28×28 `4056:117168`
   - [khối] **Sidebar (Rail)** — 300×810 · @ (0, 0) abs · bg #0b0b0c (chrome/bg) · clip `4056:117169`
     - [khối] **Frame 427322079** — 371.25×1197.75 · @ (0, -216) abs · bg #0b0b0c (chrome/bg) · clip `4056:117170`
-      - [icon] **Subtract** — 332.18×305.61 · @ (277.9, 67.31) abs · file assets/subtract-4056-117172.svg covers (1.16, 148.69) 20.94×150.43 `4056:117172`
-      - [icon] **Intersect** — 196.74×223.25 · @ (281.58, 127.62) abs · file assets/intersect-4056-117179.svg covers (0.61, 88.38) 17.81×130.99 `4056:117179`
-      - [icon] **Vector** — 92.05×189 · @ (0, 170.25) abs · file assets/vector-4056-117192.svg covers (0, 45.75) 92.05×143.25 `4056:117192`
-      - [icon] **Vector** — 485.25×688.35 · @ (-54.28, 531.66) abs · file assets/vector-4056-117193.svg covers (54.28, 20.59) 300×473.75 `4056:117193`
-      - [icon] **Union** — 328.37×643.79 · @ (98.87, 828.86) abs · file assets/union-4056-117194.svg covers (0, 0) 201.13×197.14 `4056:117194`
-      - [icon] **Group 240002** — 324.75×297.48 · @ (-61.5, 181.5) abs · file assets/group-240002-4056-117197.svg covers (61.5, 34.5) 263.25×262.98 `4056:117197`
+      - [icon] **Subtract** — 332.18×305.61 · @ (277.9, 67.31) abs · file /figma/assets/ea0ac19c98f3.svg covers (1.16, 148.69) 20.94×150.43 `4056:117172`
+      - [icon] **Intersect** — 196.74×223.25 · @ (281.58, 127.62) abs · file /figma/assets/7d3189f93f1b.svg covers (0.61, 88.38) 17.81×130.99 `4056:117179`
+      - [icon] **Vector** — 92.05×189 · @ (0, 170.25) abs · file /figma/assets/b1b0bb1977e7.svg covers (0, 45.75) 92.05×143.25 `4056:117192`
+      - [icon] **Vector** — 485.25×688.35 · @ (-54.28, 531.66) abs · file /figma/assets/56e3496b7244.svg covers (54.28, 20.59) 300×473.75 `4056:117193`
+      - [icon] **Union** — 328.37×643.79 · @ (98.87, 828.86) abs · file /figma/assets/1f6e80d18eb6.svg covers (0, 0) 201.13×197.14 `4056:117194`
+      - [icon] **Group 240002** — 324.75×297.48 · @ (-61.5, 181.5) abs · file /figma/assets/7399776d35b6.svg covers (61.5, 34.5) 263.25×262.98 `4056:117197`
       - [khối] **material-symbols:menu-rounded** — 18×18 · @ (164.25, 240.75) abs · clip · trống `4056:117218`
       - [khối] **Frame 427322029** — 36×36 · @ (9.75, 541.5) abs · clip · trống `4056:117219`
       - [khối] **Menu Section 1: Quy trình (Expanded)** — 192×556 · @ (96, 294) abs · column gap 8 `4056:117220`
         - [khối] **Frame 1171274929** — 192×28 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `4056:117221`
-          - [icon] **Button** — 28×28 · @ (0, 0) flow · file assets/button-4056-117222.svg `4056:117222`
+          - [icon] **Button** — 28×28 · @ (0, 0) flow · file /figma/assets/bc644bdbd61f.svg `4056:117222`
           - [khối] **Button** — 106×28 [HUG×FIXED] · @ (36, 0) flow · row pad 0 8 0 8 justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px `4056:117225`
-            - [chữ] “DN0091 - 132” — 90×20 [HUG×HUG] · @ (8, 4) flow · Afacad 16/1.25 (20px) 700 #ffffff case title · no-wrap `4056:117226`
+            - [chữ] “DN0091 - 132” — 90×20 [HUG×HUG] · @ (8, 4) flow · Afacad 16/20px 700 #ffffff case title · no-wrap `4056:117226`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=458:1148, Label=Tổng quan, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:117227`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tổng quan⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4056-117227-2245-87904.svg `I4056:117227;2245:87904`
-          - [chữ] “Tổng quan” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:117227;2245:87908`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tổng quan⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/26bc8994d31a.svg `I4056:117227;2245:87904`
+          - [chữ] “Tổng quan” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:117227;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=458:1167, Label=Bài học, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 84) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:117228`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Bài học⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4056-117228-2245-87904.svg `I4056:117228;2245:87904`
-          - [chữ] “Bài học” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:117228;2245:87908`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Bài học⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/49911873b2dd.svg `I4056:117228;2245:87904`
+          - [chữ] “Bài học” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:117228;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35762, Label=Bài tập và Kiểm tra, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 132) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:117229`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Bài tập và kiểm tra⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4056-117229-2245-87904.svg `I4056:117229;2245:87904`
-          - [chữ] “Bài tập và Kiểm tra” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:117229;2245:87908`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Bài tập và kiểm tra⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/0e23f8fcbe08.svg `I4056:117229;2245:87904`
+          - [chữ] “Bài tập và Kiểm tra” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:117229;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=442:1600, Label=Tự học, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 180) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:117230`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tự học⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4056-117230-2245-87904.svg `I4056:117230;2245:87904`
-          - [chữ] “Tự học” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:117230;2245:87908`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tự học⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/262bf4649141.svg `I4056:117230;2245:87904`
+          - [chữ] “Tự học” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:117230;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=442:1601, Label=Đánh giá, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 228) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:117231`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Đánh giá⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4056-117231-2245-87904.svg `I4056:117231;2245:87904`
-          - [chữ] “Đánh giá” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:117231;2245:87908`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Đánh giá⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/bf7d876d3e8d.svg `I4056:117231;2245:87904`
+          - [chữ] “Đánh giá” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:117231;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35765, Label=Tiêu chuẩn Lớp - GV, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 276) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:117232`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Tiêu chuẩn lớp - GV⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4056-117232-2245-87904.svg `I4056:117232;2245:87904`
-          - [chữ] “Tiêu chuẩn Lớp - GV” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:117232;2245:87908`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Tiêu chuẩn lớp - GV⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/61820dcff15a.svg `I4056:117232;2245:87904`
+          - [chữ] “Tiêu chuẩn Lớp - GV” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:117232;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35766, Label=Quy trình lớp, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 324) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:117233`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Quy trình lớp⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4056-117233-2245-87904.svg `I4056:117233;2245:87904`
-          - [chữ] “Quy trình lớp” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:117233;2245:87908`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Quy trình lớp⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/f9549d7ca804.svg `I4056:117233;2245:87904`
+          - [chữ] “Quy trình lớp” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:117233;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35767, Label=CSKH, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 372) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:117234`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=CSKH⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4056-117234-2245-87904.svg `I4056:117234;2245:87904`
-          - [chữ] “CSKH” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:117234;2245:87908`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=CSKH⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/566696280750.svg `I4056:117234;2245:87904`
+          - [chữ] “CSKH” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:117234;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=442:1604, Label=Cuộc họp, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 420) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:117235`
-          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Cuộc họp⟩ — 24×24 · @ (8, 8) flow · file assets/icon-I4056-117235-2245-87904.svg `I4056:117235;2245:87904`
-          - [chữ] “Cuộc họp” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:117235;2245:87908`
+          - [icon] **Icon** ⟨ICON MENU: ICON MENU=Cuộc họp⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/4a84283dbbaf.svg `I4056:117235;2245:87904`
+          - [chữ] “Cuộc họp” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:117235;2245:87908`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35769, Label=Cài đặt, Type=Menu phụ, State=Select, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 468) flow · row gap 8 pad 8 4 8 8 align CENTER · bg `linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.25) 100%)` · radius 8px · shadow inset 0 0 0 1px rgba(255, 255, 255, 0.2), 0 1.25px 2.25px 0 rgba(0, 0, 0, 0.05) · backdrop blur(2.25px) `4056:117236`
           - [hình] **Theme · Dark BG** — 192×40 · @ (0, 0) abs · bg #2a2a2e (bg/strong) · radius 8px · shadow inset 0 0 0 1px #3f3f46 `I4056:117236;4139:138323`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Cài đặt⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4056-117236-2245-87910.svg `I4056:117236;2245:87910`
-          - [chữ] “Cài đặt” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:117236;2245:87914`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Cài đặt⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/9e63c5231f0b.svg `I4056:117236;2245:87910`
+          - [chữ] “Cài đặt” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:117236;2245:87914`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=769:35770, Label=Nhật ký, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 516) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:117237`
-          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Nhật ký⟩ — 24×24 · @ (8, 8) flow · file assets/icon-menu-I4056-117237-2245-87904.svg `I4056:117237;2245:87904`
-          - [chữ] “Nhật ký” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/1.25 (13.75px) 600 #ffffff (color/neutral/white) case title `I4056:117237;2245:87908`
-      - [icon] **Nav Items** — 58×662 · @ (12, 290) abs · file assets/nav-items-4056-117238.svg `4056:117238`
-    - [icon] **Left: ICS Logo & Toggle** — 54×44 · @ (14, 12) abs · file assets/left-ics-logo-toggle-4056-117256.svg `4056:117256`
+          - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Nhật ký⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/8694a9d55bee.svg `I4056:117237;2245:87904`
+          - [chữ] “Nhật ký” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:117237;2245:87908`
+      - [icon] **Nav Items** — 58×662 · @ (12, 290) abs · file /figma/assets/b8d532fe3b0e.svg `4056:117238`
+    - [icon] **Left: ICS Logo & Toggle** — 54×44 · @ (14, 12) abs · file /figma/assets/cae1412c87a2.svg `4056:117256`
     - [hình] **Rectangle 5646** — 300×2 · @ (0, 64) abs · bg #27272a (border/default) `4056:117259`
     - [hình] **Divider** — 2×794 · @ (82, 66) abs · bg #27272a (border/default) `4056:117260`
-    - [icon] **LOGO CENTER** ⟨LOGO CENTER: Property 1=ICS, Property 2=no⟩ — 54×54 · @ (14, 740) abs · file assets/logo-center-4056-117261.svg covers (-4, 0) 62×62 `4056:117261`
+    - [icon] **LOGO CENTER** ⟨LOGO CENTER: Property 1=ICS, Property 2=no⟩ — 54×54 · @ (14, 740) abs · file /figma/assets/b33fc171e234.svg covers (-4, 0) 62×62 `4056:117261`
   - [khối] **Header** — 1140×64 · @ (300, 0) abs · clip `4056:117262`
-    - [icon] **Group 240178** — 1140×64 · @ (0, 0) abs · file assets/group-240178-4056-117263.svg `4056:117263`
+    - [icon] **Group 240178** — 1140×64 · @ (0, 0) abs · file /figma/assets/b47e90d9d98b.svg `4056:117263`
     - [instance] **ACCOUNT** ⟨ACCOUNT: Role=Admin, Theme=Dark, Size=Default⟩ — 222×36 · @ (902, 14) abs · row gap 10 justify MAX align CENTER `4056:117310`
       - [khối] **Frame 1171274934** — 192×36 [FIXED×HUG] · @ (0, 0) flow · row gap 8 align CENTER `I4056:117310;2008:30986`
         - [khối] **Background+Border+Shadow** — 36×36 · @ (0, 0) flow · row justify CENTER align CENTER · bg #153020 (bg/brand-tint-strong) · radius 9999px · border 1px solid #27272a (border/default) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I4056:117310;2008:31747`
-          - [ảnh] **Avatar** — 34×34 [FILL×FILL] · @ (1, 1) flow · image `url("assets/img-372d69401a76.png") -14.2px 0 / 62.39px 34px no-repeat` · clip `I4056:117310;2008:31748`
+          - [ảnh] **Avatar** — 34×34 [FILL×FILL] · @ (1, 1) flow · image `url("/figma/assets/372d69401a76.jpg") -14.2px 0 / 62.39px 34px no-repeat` · clip `I4056:117310;2008:31748`
         - [khối] **Container** — 148×32 [FILL×HUG] · @ (44, 2) flow · column `I4056:117310;1391:17264`
-          - [chữ] “Admin Đắc Nhân” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/1.25 (16.25px) 600 #ffffff (color/neutral/white) · truncate 1 lines `I4056:117310;1391:17266`
-          - [chữ] “admin@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/1.25 (16.25px) 500 #ffffff (color/neutral/white) · truncate 1 lines `I4056:117310;1391:17268`
-      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file assets/overlay-I4056-117310-1391-17270.svg covers (-2, -2) 26×26 `I4056:117310;1391:17270`
+          - [chữ] “Admin Đắc Nhân” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/16px 600 #ffffff (color/neutral/white) · truncate 1 lines `I4056:117310;1391:17266`
+          - [chữ] “admin@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/16px 500 #ffffff (color/neutral/white) · truncate 1 lines `I4056:117310;1391:17268`
+      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file /figma/assets/6c2764ed7f1b.svg covers (-2, -2) 26×26 `I4056:117310;1391:17270`
 
 ## 5. Component đang dùng
 
@@ -468,47 +468,47 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 
 | File | Loại | Kích thước | Dùng ở |
 | --- | --- | --- | --- |
-| `assets/action-icon-I4056-117095-2008-48184.svg` | svg |  | I4056:117095;2008:48184 |
-| `assets/action-icon-I4056-117095-2008-48178.svg` | svg |  | I4056:117095;2008:48178 |
-| `assets/vector-4056-117103.svg` | svg |  | 4056:117103 |
-| `assets/atom-icon-button-4056-117110.svg` | svg |  | 4056:117110 |
-| `assets/img-661bcc449b79.png` | image |  | I4056:117143;2008:49570;1991:15993;1991:15980, I4056:117145;2008:49502;1991:15993;1991:15980, I4056:117147;2008:49502;1991:15993;1991:15980, I4056:117151;2008:49570;1991:15993;1991:15980, … |
-| `assets/status-calendar-4056-117144.svg` | svg |  | 4056:117144 |
-| `assets/status-calendar-4056-117146.svg` | svg |  | 4056:117146 |
-| `assets/status-calendar-4056-117148.svg` | svg |  | 4056:117148 |
-| `assets/status-calendar-4056-117149.svg` | svg |  | 4056:117149 |
-| `assets/status-calendar-4056-117152.svg` | svg |  | 4056:117152 |
-| `assets/status-calendar-4056-117154.svg` | svg |  | 4056:117154 |
-| `assets/status-calendar-4056-117156.svg` | svg |  | 4056:117156 |
-| `assets/status-calendar-4056-117157.svg` | svg |  | 4056:117157 |
-| `assets/status-calendar-4056-117160.svg` | svg |  | 4056:117160 |
-| `assets/status-calendar-4056-117165.svg` | svg |  | 4056:117165 |
-| `assets/lock-4056-117166.svg` | svg |  | 4056:117166 |
-| `assets/mouse-click-4056-117168.svg` | svg |  | 4056:117168 |
-| `assets/subtract-4056-117172.svg` | svg |  | 4056:117172 |
-| `assets/intersect-4056-117179.svg` | svg |  | 4056:117179 |
-| `assets/vector-4056-117192.svg` | svg |  | 4056:117192 |
-| `assets/vector-4056-117193.svg` | svg |  | 4056:117193 |
-| `assets/union-4056-117194.svg` | svg |  | 4056:117194 |
-| `assets/group-240002-4056-117197.svg` | svg |  | 4056:117197 |
-| `assets/button-4056-117222.svg` | svg |  | 4056:117222 |
-| `assets/icon-I4056-117227-2245-87904.svg` | svg |  | I4056:117227;2245:87904 |
-| `assets/icon-menu-I4056-117228-2245-87904.svg` | svg |  | I4056:117228;2245:87904 |
-| `assets/icon-I4056-117229-2245-87904.svg` | svg |  | I4056:117229;2245:87904 |
-| `assets/icon-I4056-117230-2245-87904.svg` | svg |  | I4056:117230;2245:87904 |
-| `assets/icon-I4056-117231-2245-87904.svg` | svg |  | I4056:117231;2245:87904 |
-| `assets/icon-menu-I4056-117232-2245-87904.svg` | svg |  | I4056:117232;2245:87904 |
-| `assets/icon-menu-I4056-117233-2245-87904.svg` | svg |  | I4056:117233;2245:87904 |
-| `assets/icon-I4056-117234-2245-87904.svg` | svg |  | I4056:117234;2245:87904 |
-| `assets/icon-I4056-117235-2245-87904.svg` | svg |  | I4056:117235;2245:87904 |
-| `assets/icon-menu-I4056-117236-2245-87910.svg` | svg |  | I4056:117236;2245:87910 |
-| `assets/icon-menu-I4056-117237-2245-87904.svg` | svg |  | I4056:117237;2245:87904 |
-| `assets/nav-items-4056-117238.svg` | svg |  | 4056:117238 |
-| `assets/left-ics-logo-toggle-4056-117256.svg` | svg |  | 4056:117256 |
-| `assets/logo-center-4056-117261.svg` | svg |  | 4056:117261 |
-| `assets/group-240178-4056-117263.svg` | svg |  | 4056:117263 |
-| `assets/img-372d69401a76.png` | image |  | I4056:117310;2008:31748 |
-| `assets/overlay-I4056-117310-1391-17270.svg` | svg |  | I4056:117310;1391:17270 |
+| `/figma/assets/671fd273c31b.svg` | svg | 18 × 18 | I4056:117095;2008:48184 |
+| `/figma/assets/203b88478b6a.svg` | svg | 18 × 18 | I4056:117095;2008:48178 |
+| `/figma/assets/72ad306c238e.svg` | svg | 21 × 21 | 4056:117103 |
+| `/figma/assets/e69dc5e0ccb7.svg` | svg | 39 × 39 | 4056:117110 |
+| `/figma/assets/661bcc449b79.jpg` | image | 320 × 480 | I4056:117143;2008:49570;1991:15993;1991:15980, I4056:117145;2008:49502;1991:15993;1991:15980, I4056:117147;2008:49502;1991:15993;1991:15980, I4056:117151;2008:49570;1991:15993;1991:15980, … |
+| `/figma/assets/aeca1023e64e.svg` | svg | 144 × 70 | 4056:117144 |
+| `/figma/assets/aeca1023e64e.svg` | svg | 144 × 70 | 4056:117146 |
+| `/figma/assets/aeca1023e64e.svg` | svg | 144 × 70 | 4056:117148 |
+| `/figma/assets/738359b8bde0.svg` | svg | 155.8 × 83.8 | 4056:117149 |
+| `/figma/assets/aeca1023e64e.svg` | svg | 144 × 70 | 4056:117152 |
+| `/figma/assets/aeca1023e64e.svg` | svg | 144 × 70 | 4056:117154 |
+| `/figma/assets/aeca1023e64e.svg` | svg | 144 × 70 | 4056:117156 |
+| `/figma/assets/aeca1023e64e.svg` | svg | 144 × 70 | 4056:117157 |
+| `/figma/assets/aeca1023e64e.svg` | svg | 144 × 70 | 4056:117160 |
+| `/figma/assets/6f6f9bbbb897.svg` | svg | 138.57 × 70 | 4056:117165 |
+| `/figma/assets/85989ab68552.svg` | svg | 20 × 20 | 4056:117166 |
+| `/figma/assets/ca38b97282f2.svg` | svg | 28 × 28 | 4056:117168 |
+| `/figma/assets/ea0ac19c98f3.svg` | svg | 20.94 × 150.43 | 4056:117172 |
+| `/figma/assets/7d3189f93f1b.svg` | svg | 17.81 × 130.99 | 4056:117179 |
+| `/figma/assets/b1b0bb1977e7.svg` | svg | 92.05 × 143.25 | 4056:117192 |
+| `/figma/assets/56e3496b7244.svg` | svg | 300 × 473.75 | 4056:117193 |
+| `/figma/assets/1f6e80d18eb6.svg` | svg | 201.13 × 197.14 | 4056:117194 |
+| `/figma/assets/7399776d35b6.svg` | svg | 263.25 × 262.98 | 4056:117197 |
+| `/figma/assets/bc644bdbd61f.svg` | svg | 28 × 28 | 4056:117222 |
+| `/figma/assets/26bc8994d31a.svg` | svg | 24 × 24 | I4056:117227;2245:87904 |
+| `/figma/assets/49911873b2dd.svg` | svg | 24 × 24 | I4056:117228;2245:87904 |
+| `/figma/assets/0e23f8fcbe08.svg` | svg | 24 × 24 | I4056:117229;2245:87904 |
+| `/figma/assets/262bf4649141.svg` | svg | 24 × 24 | I4056:117230;2245:87904 |
+| `/figma/assets/bf7d876d3e8d.svg` | svg | 24 × 24 | I4056:117231;2245:87904 |
+| `/figma/assets/61820dcff15a.svg` | svg | 24 × 24 | I4056:117232;2245:87904 |
+| `/figma/assets/f9549d7ca804.svg` | svg | 24 × 24 | I4056:117233;2245:87904 |
+| `/figma/assets/566696280750.svg` | svg | 24 × 24 | I4056:117234;2245:87904 |
+| `/figma/assets/4a84283dbbaf.svg` | svg | 24 × 24 | I4056:117235;2245:87904 |
+| `/figma/assets/9e63c5231f0b.svg` | svg | 24 × 24 | I4056:117236;2245:87910 |
+| `/figma/assets/8694a9d55bee.svg` | svg | 24 × 24 | I4056:117237;2245:87904 |
+| `/figma/assets/b8d532fe3b0e.svg` | svg | 58 × 662 | 4056:117238 |
+| `/figma/assets/cae1412c87a2.svg` | svg | 54 × 44 | 4056:117256 |
+| `/figma/assets/b33fc171e234.svg` | svg | 62 × 62 | 4056:117261 |
+| `/figma/assets/b47e90d9d98b.svg` | svg | 1140 × 64 | 4056:117263 |
+| `/figma/assets/372d69401a76.jpg` | image | 132 × 72 | I4056:117310;2008:31748 |
+| `/figma/assets/6c2764ed7f1b.svg` | svg | 26 × 26 | I4056:117310;1391:17270 |
 
 ## 8. Tương tác, liên kết và ghi chú
 

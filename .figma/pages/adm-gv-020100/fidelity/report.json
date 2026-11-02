@@ -1,0 +1,460 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 2405,
+    "percent": 0.206,
+    "shapePercent": 0.013,
+    "textPercent": 0.84,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "1330:6147",
+      "name": "Tạ Thị Bích Ngọc",
+      "pixels": 581,
+      "percent": 14.5
+    },
+    {
+      "id": "1330:6270",
+      "name": "Tạ Thị Bích Ngọc",
+      "pixels": 391,
+      "percent": 7
+    },
+    {
+      "id": "1330:6182",
+      "name": "Gmail",
+      "pixels": 50,
+      "percent": 6.4
+    },
+    {
+      "id": "1330:6163",
+      "name": "Lấy lại mật khẩu",
+      "pixels": 68,
+      "percent": 3.2
+    },
+    {
+      "id": "1330:6199",
+      "name": "Tạ Thị Bích Ngọc",
+      "pixels": 270,
+      "percent": 3.1
+    },
+    {
+      "id": "1330:6267",
+      "name": "Tên chủ tài khoản",
+      "pixels": 100,
+      "percent": 1.8
+    },
+    {
+      "id": "1330:6248",
+      "name": "Ngân hàng",
+      "pixels": 74,
+      "percent": 1.3
+    },
+    {
+      "id": "1330:6261",
+      "name": "Số tài khoản",
+      "pixels": 67,
+      "percent": 1.2
+    },
+    {
+      "id": "1330:6209",
+      "name": "Trạng thái",
+      "pixels": 97,
+      "percent": 1.1
+    },
+    {
+      "id": "I2056:24605;1910:18520",
+      "name": "Button",
+      "pixels": 24,
+      "percent": 0.9
+    },
+    {
+      "id": "1330:6175",
+      "name": "Mã giáo viên",
+      "pixels": 73,
+      "percent": 0.9
+    },
+    {
+      "id": "I4915:235940;4899:195682;2245:87858",
+      "name": "Label",
+      "pixels": 23,
+      "percent": 0.9
+    },
+    {
+      "id": "1657:3704",
+      "name": "Ngày sinh",
+      "pixels": 70,
+      "percent": 0.8
+    },
+    {
+      "id": "1330:6202",
+      "name": "Số điện thoại",
+      "pixels": 67,
+      "percent": 0.8
+    },
+    {
+      "id": "I4915:235940;4899:195681;2245:87858",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 0.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 344,
+      "y": 200,
+      "width": 104,
+      "height": 88,
+      "pixels": 125,
+      "node": {
+        "id": "1330:6156",
+        "name": "+",
+        "role": "text"
+      }
+    },
+    {
+      "x": 368,
+      "y": 304,
+      "width": 56,
+      "height": 16,
+      "pixels": 26,
+      "node": {
+        "id": "1330:6154",
+        "name": "Overlay",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 259,
+    "missing": [],
+    "withinThreshold": 259,
+    "buckets": {
+      "≤0.5px": 257,
+      "≤1px": 257,
+      "≤2px": 259,
+      "≤4px": 259,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "1330:6146",
+        "name": "Heading 3 - Teacher Name & Code",
+        "role": "container",
+        "delta": 1.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1330:6147",
+        "name": "Tạ Thị Bích Ngọc",
+        "role": "text",
+        "delta": 1.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1739:35488",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1739:35488;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1739:35488;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1739:35489",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1739:35489;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1739:35489;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1739:35490",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1739:35490;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1739:35490;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1739:35491",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1739:35491;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1739:35491;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1739:35492",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1739:35492;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1739:35492;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1328:4468",
+        "name": "Chi tiết giáo viên",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:235940;4915:212320",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1330:6148",
+        "name": "Margin",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1330:6149",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1330:6150",
+        "name": "LS08",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1330:6183",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1330:6184",
+        "name": "Container",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1330:6246",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.38,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-giao-vien/thong-tin-ca-nhan",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

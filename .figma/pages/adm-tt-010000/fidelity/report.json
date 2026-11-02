@@ -1,0 +1,484 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 4379,
+    "percent": 0.375,
+    "shapePercent": 0.005,
+    "textPercent": 1.994,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4273:155804",
+      "name": "Thêm Tráo Thẻ",
+      "pixels": 118,
+      "percent": 6.2
+    },
+    {
+      "id": "I4273:155790;2409:141178",
+      "name": "Hệ thống",
+      "pixels": 153,
+      "percent": 5.7
+    },
+    {
+      "id": "4273:155793",
+      "name": "Đổi Trạng Thái",
+      "pixels": 106,
+      "percent": 5.7
+    },
+    {
+      "id": "I4273:155801;2409:141178",
+      "name": "Hệ thống",
+      "pixels": 153,
+      "percent": 5.7
+    },
+    {
+      "id": "4273:155749",
+      "name": "Thu gọn",
+      "pixels": 52,
+      "percent": 5
+    },
+    {
+      "id": "4273:155782",
+      "name": "Chăm Sóc Lớp",
+      "pixels": 90,
+      "percent": 5
+    },
+    {
+      "id": "4273:155746",
+      "name": "Giúp học viên thực hành theo dõi lớp học, nắm được tình trạng học tập của học viên và rèn kỹ năng tổng hợp – báo cáo thông tin lớp.",
+      "pixels": 1176,
+      "percent": 4.5
+    },
+    {
+      "id": "4273:155795",
+      "name": "Thuy SP đã đổi trạng thái lớp NS003",
+      "pixels": 202,
+      "percent": 4.4
+    },
+    {
+      "id": "4273:155784",
+      "name": "Thuy SP đã Follow lớp NS0002",
+      "pixels": 162,
+      "percent": 4.2
+    },
+    {
+      "id": "4273:155715",
+      "name": "MÔ TẢ",
+      "pixels": 35,
+      "percent": 4
+    },
+    {
+      "id": "4273:155719",
+      "name": "NGÀY LOG",
+      "pixels": 54,
+      "percent": 3.9
+    },
+    {
+      "id": "I4273:155812;2409:141178",
+      "name": "Hệ thống",
+      "pixels": 84,
+      "percent": 3.9
+    },
+    {
+      "id": "I4273:155788;1350:12808",
+      "name": "7 ngày (40 ca)",
+      "pixels": 62,
+      "percent": 3.2
+    },
+    {
+      "id": "I4273:155799;1350:12808",
+      "name": "7 ngày (40 ca)",
+      "pixels": 62,
+      "percent": 3.2
+    },
+    {
+      "id": "I4273:155810;1350:12808",
+      "name": "7 ngày (40 ca)",
+      "pixels": 62,
+      "percent": 3.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 1120,
+      "y": 624,
+      "width": 24,
+      "height": 32,
+      "pixels": 18,
+      "node": {
+        "id": "I4273:155801;2409:141177",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1120,
+      "y": 576,
+      "width": 24,
+      "height": 8,
+      "pixels": 14,
+      "node": {
+        "id": "I4273:155790;2409:141177",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1128,
+      "y": 592,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4273:155790;2409:141177",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 904,
+      "y": 632,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4273:155797;1910:16476",
+        "name": "Frame 427321966",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 273,
+    "missing": [],
+    "withinThreshold": 273,
+    "buckets": {
+      "≤0.5px": 272,
+      "≤1px": 273,
+      "≤2px": 273,
+      "≤4px": 273,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4273:155715",
+        "name": "MÔ TẢ",
+        "role": "text",
+        "delta": 0.94,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:155782",
+        "name": "Chăm Sóc Lớp",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:155779",
+        "name": "Atom/Object Chip",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:155779;2409:141174",
+        "name": "Tittle",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:155779;2409:141175",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:155779;2409:141178",
+        "name": "Hệ thống",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:155790",
+        "name": "Atom/Object Chip",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:155790;2409:141174",
+        "name": "Tittle",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:155790;2409:141175",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:155790;2409:141178",
+        "name": "Hệ thống",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:155801",
+        "name": "Atom/Object Chip",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:155801;2409:141174",
+        "name": "Tittle",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:155801;2409:141175",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:155801;2409:141178",
+        "name": "Hệ thống",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:155793",
+        "name": "Đổi Trạng Thái",
+        "role": "text",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:252614;4915:219245",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:252614;4915:219230",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:252614;4915:219231",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:252614;4915:219232",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:252614;4915:219244",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:155699",
+        "name": "MainWorkspace",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4273:155700",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:155701",
+        "name": "Frame 427321958",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:155702",
+        "name": "Danh sách log",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:155703",
+        "name": "Filter Pills Toolbar",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.94,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/tuong-tac/danh-sach-log",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

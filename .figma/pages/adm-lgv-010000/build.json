@@ -1,6 +1,22 @@
 {
   "route": "/luong/luong-giao-vien",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lgv-010000/index.tsx",
   "docFile": "docs/pages/luong/luong-giao-vien.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4101:138377",
+      "component": "Header",
+      "file": "components/figma/adm-lgv-010000/Header.tsx"
+    },
+    {
+      "nodeId": "4915:248915",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lgv-010000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "4101:138856",
+      "component": "MainLuongGiaoVien",
+      "file": "components/figma/adm-lgv-010000/MainLuongGiaoVien.tsx"
+    }
+  ]
 }

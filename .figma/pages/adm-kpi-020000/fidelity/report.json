@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 705,
+    "percent": 0.06,
+    "shapePercent": 0,
+    "textPercent": 0.485,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "3708:21818",
+      "name": "Ngày Cập Nhật",
+      "pixels": 117,
+      "percent": 5.1
+    },
+    {
+      "id": "3708:21816",
+      "name": "Ngày Ghi Nhận",
+      "pixels": 83,
+      "percent": 3.6
+    },
+    {
+      "id": "3708:21812",
+      "name": "Trạng Thái",
+      "pixels": 67,
+      "percent": 2.2
+    },
+    {
+      "id": "I3708:22017;1391:17477",
+      "name": "1",
+      "pixels": 3,
+      "percent": 1.4
+    },
+    {
+      "id": "I3708:22017;1391:17487",
+      "name": "Sau",
+      "pixels": 6,
+      "percent": 1.1
+    },
+    {
+      "id": "3708:21808",
+      "name": "Tiêu đề OT",
+      "pixels": 47,
+      "percent": 0.9
+    },
+    {
+      "id": "3708:21810",
+      "name": "Mô tả OT",
+      "pixels": 86,
+      "percent": 0.9
+    },
+    {
+      "id": "3708:21833",
+      "name": "02.02.2026",
+      "pixels": 21,
+      "percent": 0.9
+    },
+    {
+      "id": "3708:21846",
+      "name": "02.02.2026",
+      "pixels": 21,
+      "percent": 0.9
+    },
+    {
+      "id": "3708:21848",
+      "name": "02.02.2026",
+      "pixels": 21,
+      "percent": 0.9
+    },
+    {
+      "id": "3708:21831",
+      "name": "27.01.2026",
+      "pixels": 17,
+      "percent": 0.7
+    },
+    {
+      "id": "I4915:237176;4899:196191;2245:87858",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 0.7
+    },
+    {
+      "id": "3708:21861",
+      "name": "07.02.2026",
+      "pixels": 14,
+      "percent": 0.6
+    },
+    {
+      "id": "3708:21863",
+      "name": "07.02.2026",
+      "pixels": 14,
+      "percent": 0.6
+    },
+    {
+      "id": "I4915:237176;4899:196193;1971:7432",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 0.6
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 204,
+    "missing": [],
+    "withinThreshold": 204,
+    "buckets": {
+      "≤0.5px": 204,
+      "≤1px": 204,
+      "≤2px": 204,
+      "≤4px": 204,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4915:237176;4915:212874",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237176;4915:212859",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237176;4915:212860",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237176;4915:212861",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:237176;4915:212873",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21795",
+        "name": "Main - Scrollable Workspace",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21796",
+        "name": "Frame 1171274987",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21797",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3708:21797;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3708:21797;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21798",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3708:21798;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3708:21798;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3708:21798;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21799",
+        "name": "Frame 427321957",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21800",
+        "name": "Frame 427321948",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21801",
+        "name": "Quản lý danh sách OT",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21802",
+        "name": "Atom/Icon Button",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21803",
+        "name": "Filter Pills Toolbar",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21804",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3708:21804;1739:32348",
+        "name": "Frame 427321959",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3708:21804;1739:32349",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3708:21804;1739:32351",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21805",
+        "name": "Bảng · Danh sách OT",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3708:21806",
+        "name": "Table Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.02,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/kpi-ot/danh-sach-ot",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

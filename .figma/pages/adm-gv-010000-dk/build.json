@@ -1,6 +1,22 @@
 {
   "route": "/danh-sach-giao-vien-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-gv-010000-dk/index.tsx",
   "docFile": "docs/pages/danh-sach-giao-vien-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:122699",
+      "component": "Body",
+      "file": "components/figma/adm-gv-010000-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:122749",
+      "component": "Sidebar",
+      "file": "components/figma/adm-gv-010000-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "4056:122833",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/adm-gv-010000-dk/MainScrollableWorkspace.tsx"
+    }
+  ]
 }

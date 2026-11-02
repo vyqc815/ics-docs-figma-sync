@@ -1,6 +1,27 @@
 {
   "route": "/lop-hoc/bai-hoc/tai-nguyen-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-030400-dk/index.tsx",
   "docFile": "docs/pages/lop-hoc/bai-hoc/tai-nguyen-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:111696",
+      "component": "Body",
+      "file": "components/figma/adm-lop-030400-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:111697",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-030400-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:111804",
+      "component": "Header",
+      "file": "components/figma/adm-lop-030400-dk/Header.tsx"
+    },
+    {
+      "nodeId": "4056:111853",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-030400-dk/SidebarRail.tsx"
+    }
+  ]
 }

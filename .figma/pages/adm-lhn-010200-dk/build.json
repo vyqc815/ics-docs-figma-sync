@@ -1,6 +1,34 @@
 {
   "route": "/lich-hen/hoc-vien-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lhn-010200-dk/index.tsx",
   "docFile": "docs/pages/lich-hen/hoc-vien-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:105738",
+      "component": "MenuChinhLichHen",
+      "file": "components/figma/shared/MenuChinhLichHen.tsx"
+    },
+    {
+      "nodeId": "4056:105817",
+      "component": "Dn1",
+      "file": "components/figma/shared/Dn1.tsx"
+    },
+    {
+      "nodeId": "4056:105865",
+      "component": "Bg",
+      "file": "components/figma/adm-lhn-010200-dk/Bg.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:105817": "4056:105366",
+    "4056:105818": "4056:105367",
+    "4273:161993": "4273:161973",
+    "I4273:161993;2008:30986": "I4273:161973;2008:30986",
+    "I4273:161993;2008:31747": "I4273:161973;2008:31747",
+    "I4273:161993;2008:31748": "I4273:161973;2008:31748",
+    "I4273:161993;1391:17264": "I4273:161973;1391:17264",
+    "I4273:161993;1391:17266": "I4273:161973;1391:17266",
+    "I4273:161993;1391:17268": "I4273:161973;1391:17268",
+    "I4273:161993;1391:17270": "I4273:161973;1391:17270"
+  }
 }

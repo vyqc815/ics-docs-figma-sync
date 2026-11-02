@@ -1,6 +1,34 @@
 {
   "route": "/chi-tiet-hoc-vien/hoc-phi-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-hv-020300-dk/index.tsx",
   "docFile": "docs/pages/chi-tiet-hoc-vien/hoc-phi-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:120464",
+      "component": "Header6",
+      "file": "components/figma/shared/Header6.tsx"
+    },
+    {
+      "nodeId": "4056:120513",
+      "component": "Section2",
+      "file": "components/figma/adm-hv-020300-dk/Section2.tsx"
+    },
+    {
+      "nodeId": "4056:120743",
+      "component": "Sidebar",
+      "file": "components/figma/adm-hv-020300-dk/Sidebar.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:120464": "4056:120072",
+    "4056:120465": "4056:120073",
+    "4056:120512": "4056:120120",
+    "I4056:120512;2008:30986": "I4056:120120;2008:30986",
+    "I4056:120512;2008:31747": "I4056:120120;2008:31747",
+    "I4056:120512;2008:31748": "I4056:120120;2008:31748",
+    "I4056:120512;1391:17264": "I4056:120120;1391:17264",
+    "I4056:120512;1391:17266": "I4056:120120;1391:17266",
+    "I4056:120512;1391:17268": "I4056:120120;1391:17268",
+    "I4056:120512;1391:17270": "I4056:120120;1391:17270"
+  }
 }

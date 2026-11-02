@@ -1,6 +1,22 @@
 {
   "route": "/lich-day/xem-theo-lop-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-ld-010000-dk/index.tsx",
   "docFile": "docs/pages/lich-day/xem-theo-lop-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "5425:272114",
+      "component": "Body",
+      "file": "components/figma/gv-ld-010000-dk/Body.tsx"
+    },
+    {
+      "nodeId": "5425:272165",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/gv-ld-010000-dk/MainScrollableWorkspace.tsx"
+    },
+    {
+      "nodeId": "5425:272418",
+      "component": "SidebarGiaoVienLichDay",
+      "file": "components/figma/gv-ld-010000-dk/SidebarGiaoVienLichDay.tsx"
+    }
+  ]
 }

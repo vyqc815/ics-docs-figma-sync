@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-060100-DK — Bài tập về nhà / BTVN (`6015:53230`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/bai-tap-ve-nha/btvn-dk`  
 > **Khung thiết kế:** 1440 × 962 px  
-> **Xuất lúc:** 2026-11-02T02:00:27.236Z  
+> **Xuất lúc:** 2026-11-02T02:51:27.396Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-060100-dk/page-spec.json`
 
 ## 1. Tổng quan

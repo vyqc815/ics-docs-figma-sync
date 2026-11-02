@@ -1,6 +1,30 @@
 {
   "route": "/lop-hoc/bai-hoc/noi-dung",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-030300/index.tsx",
   "docFile": "docs/pages/lop-hoc/bai-hoc/noi-dung.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3497:65455",
+      "component": "Body3",
+      "file": "components/figma/shared/Body3.tsx"
+    },
+    {
+      "nodeId": "3497:65456",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-030300/Maincontent.tsx"
+    },
+    {
+      "nodeId": "3497:65629",
+      "component": "Header",
+      "file": "components/figma/adm-lop-030300/Header.tsx"
+    },
+    {
+      "nodeId": "4915:224977",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-030300/SidebarMenuAdmin.tsx"
+    }
+  ],
+  "idAlias": {
+    "3497:65455": "769:30964"
+  }
 }

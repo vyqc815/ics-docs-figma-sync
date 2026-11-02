@@ -1,6 +1,30 @@
 {
   "route": "/tools/giong-doc/hoi-thoai-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-tl-010100-dk/index.tsx",
   "docFile": "docs/pages/tools/giong-doc/hoi-thoai-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "6133:127552",
+      "component": "Applayoutwrapper",
+      "file": "components/figma/shared/Applayoutwrapper.tsx"
+    },
+    {
+      "nodeId": "6133:127553",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-tl-010100-dk/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6133:127554",
+      "component": "Header",
+      "file": "components/figma/cd-tl-010100-dk/Header.tsx"
+    },
+    {
+      "nodeId": "6133:127604",
+      "component": "MainGiongDoc",
+      "file": "components/figma/cd-tl-010100-dk/MainGiongDoc.tsx"
+    }
+  ],
+  "idAlias": {
+    "6133:127552": "714:16697"
+  }
 }

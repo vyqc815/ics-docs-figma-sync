@@ -1,6 +1,34 @@
 {
   "route": "/danh-sach-lop-hoc-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-010000-dk/index.tsx",
   "docFile": "docs/pages/danh-sach-lop-hoc-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:108557",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/adm-lop-010000-dk/MainScrollableWorkspace.tsx"
+    },
+    {
+      "nodeId": "4056:109429",
+      "component": "Header6",
+      "file": "components/figma/shared/Header6.tsx"
+    },
+    {
+      "nodeId": "4056:109478",
+      "component": "Sidebar",
+      "file": "components/figma/adm-lop-010000-dk/Sidebar.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:109429": "4056:120072",
+    "4056:109430": "4056:120073",
+    "4056:109477": "4056:120120",
+    "I4056:109477;2008:30986": "I4056:120120;2008:30986",
+    "I4056:109477;2008:31747": "I4056:120120;2008:31747",
+    "I4056:109477;2008:31748": "I4056:120120;2008:31748",
+    "I4056:109477;1391:17264": "I4056:120120;1391:17264",
+    "I4056:109477;1391:17266": "I4056:120120;1391:17266",
+    "I4056:109477;1391:17268": "I4056:120120;1391:17268",
+    "I4056:109477;1391:17270": "I4056:120120;1391:17270"
+  }
 }

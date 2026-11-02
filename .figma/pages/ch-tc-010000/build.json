@@ -1,6 +1,17 @@
 {
   "route": "/trang-chu/thong-ke-tong-quan",
-  "pageFile": "",
+  "pageFile": "components/figma/ch-tc-010000/index.tsx",
   "docFile": "docs/pages/trang-chu/thong-ke-tong-quan.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3778:20023",
+      "component": "Body",
+      "file": "components/figma/ch-tc-010000/Body.tsx"
+    },
+    {
+      "nodeId": "3778:20150",
+      "component": "Section2",
+      "file": "components/figma/ch-tc-010000/Section2.tsx"
+    }
+  ]
 }

@@ -1,6 +1,22 @@
 {
   "route": "/move-video/danh-sach-video",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-mv-020000/index.tsx",
   "docFile": "docs/pages/move-video/danh-sach-video.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2391:66211",
+      "component": "Bg",
+      "file": "components/figma/adm-mv-020000/Bg.tsx"
+    },
+    {
+      "nodeId": "2409:149271",
+      "component": "Header19",
+      "file": "components/figma/shared/Header19.tsx"
+    },
+    {
+      "nodeId": "4915:240573",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-mv-020000/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

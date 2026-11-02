@@ -1,6 +1,17 @@
 {
   "route": "/quy-trinh/ca-truc",
-  "pageFile": "",
+  "pageFile": "components/figma/sp-task-030000/index.tsx",
   "docFile": "docs/pages/quy-trinh/ca-truc.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3857:75832",
+      "component": "Body",
+      "file": "components/figma/sp-task-030000/Body.tsx"
+    },
+    {
+      "nodeId": "3857:75966",
+      "component": "Section2",
+      "file": "components/figma/sp-task-030000/Section2.tsx"
+    }
+  ]
 }

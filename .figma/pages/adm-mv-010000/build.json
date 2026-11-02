@@ -1,6 +1,22 @@
 {
   "route": "/move-video/xac-minh-gmail",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-mv-010000/index.tsx",
   "docFile": "docs/pages/move-video/xac-minh-gmail.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2391:66019",
+      "component": "Bg",
+      "file": "components/figma/adm-mv-010000/Bg.tsx"
+    },
+    {
+      "nodeId": "4915:240882",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-mv-010000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "2409:148987",
+      "component": "Header",
+      "file": "components/figma/adm-mv-010000/Header.tsx"
+    }
+  ]
 }

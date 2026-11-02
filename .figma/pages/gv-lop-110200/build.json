@@ -1,6 +1,30 @@
 {
   "route": "/chi-tiet-lop/thong-tin/kpi",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-lop-110200/index.tsx",
   "docFile": "docs/pages/chi-tiet-lop/thong-tin/kpi.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4333:18494",
+      "component": "Body7",
+      "file": "components/figma/shared/Body7.tsx"
+    },
+    {
+      "nodeId": "4333:18495",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-110200/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4333:18496",
+      "component": "Header",
+      "file": "components/figma/gv-lop-110200/Header.tsx"
+    },
+    {
+      "nodeId": "4915:262205",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-110200/SidebarMenuTeacher.tsx"
+    }
+  ],
+  "idAlias": {
+    "4333:18494": "4333:7911"
+  }
 }

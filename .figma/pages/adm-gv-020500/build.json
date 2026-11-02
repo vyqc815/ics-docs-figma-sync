@@ -1,6 +1,17 @@
 {
   "route": "/chi-tiet-giao-vien/quan-ly-dang-ky-lich",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-gv-020500/index.tsx",
   "docFile": "docs/pages/chi-tiet-giao-vien/quan-ly-dang-ky-lich.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "1540:23968",
+      "component": "Body",
+      "file": "components/figma/adm-gv-020500/Body.tsx"
+    },
+    {
+      "nodeId": "4915:234086",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-gv-020500/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

@@ -1,6 +1,37 @@
 {
   "route": "/ship-sach/danh-sach-don-sach",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-ss-010000/index.tsx",
   "docFile": "docs/pages/ship-sach/danh-sach-don-sach.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "2619:196837",
+      "component": "Maincontent",
+      "file": "components/figma/adm-ss-010000/Maincontent.tsx"
+    },
+    {
+      "nodeId": "2619:197087",
+      "component": "Header",
+      "file": "components/figma/adm-ss-010000/Header.tsx"
+    },
+    {
+      "nodeId": "2619:198107",
+      "component": "TooltipGhiChu",
+      "file": "components/figma/shared/TooltipGhiChu.tsx"
+    },
+    {
+      "nodeId": "4915:251382",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-ss-010000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "2911:1150",
+      "component": "MenuTrangThai",
+      "file": "components/figma/adm-ss-010000/MenuTrangThai.tsx"
+    },
+    {
+      "nodeId": "2619:198109",
+      "component": "TooltipXacNhanThongTin",
+      "file": "components/figma/adm-ss-010000/TooltipXacNhanThongTin.tsx"
+    }
+  ]
 }

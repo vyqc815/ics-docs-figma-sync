@@ -1,0 +1,739 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 910,
+    "mismatched": 2985,
+    "percent": 0.228,
+    "shapePercent": 0.041,
+    "textPercent": 1.294,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6133:127553;6133:108639;2245:87820",
+      "name": "Label",
+      "pixels": 221,
+      "percent": 8.6
+    },
+    {
+      "id": "I6133:127553;6133:108641;2245:87774",
+      "name": "Label",
+      "pixels": 244,
+      "percent": 8.5
+    },
+    {
+      "id": "I6133:127553;6133:108633;2245:87820",
+      "name": "Label",
+      "pixels": 204,
+      "percent": 8
+    },
+    {
+      "id": "I6133:127553;6133:108625;2245:87768",
+      "name": "Label",
+      "pixels": 171,
+      "percent": 5.9
+    },
+    {
+      "id": "I6133:127701;1048:1232",
+      "name": "Button",
+      "pixels": 80,
+      "percent": 5.8
+    },
+    {
+      "id": "I6133:127553;6133:108626;2245:87820",
+      "name": "Label",
+      "pixels": 145,
+      "percent": 5.7
+    },
+    {
+      "id": "I6133:127700;1048:1232",
+      "name": "Button",
+      "pixels": 63,
+      "percent": 4.8
+    },
+    {
+      "id": "I6133:127553;6133:108624;2245:87768",
+      "name": "Label",
+      "pixels": 133,
+      "percent": 4.6
+    },
+    {
+      "id": "6133:127608",
+      "name": "Tạo audio từ văn bản bằng Qwen3-TTS · xử lý trên máy chủ, mở là dùng, không cần cài đặt",
+      "pixels": 384,
+      "percent": 3.6
+    },
+    {
+      "id": "I6133:127553;6133:108622;2245:87768",
+      "name": "Label",
+      "pixels": 96,
+      "percent": 3.3
+    },
+    {
+      "id": "I6133:127672;1048:1232",
+      "name": "Button",
+      "pixels": 23,
+      "percent": 3.2
+    },
+    {
+      "id": "I6133:127553;6133:108640;2245:87820",
+      "name": "Label",
+      "pixels": 71,
+      "percent": 2.8
+    },
+    {
+      "id": "I6133:127553;6133:108623;2245:87768",
+      "name": "Label",
+      "pixels": 68,
+      "percent": 2.4
+    },
+    {
+      "id": "I6133:127553;6133:108642;2245:87768",
+      "name": "Label",
+      "pixels": 63,
+      "percent": 2.2
+    },
+    {
+      "id": "6133:127643",
+      "name": "⋮",
+      "pixels": 3,
+      "percent": 2.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 376,
+      "y": 600,
+      "width": 528,
+      "height": 8,
+      "pixels": 165,
+      "node": {
+        "id": "6133:127668",
+        "name": "+ Thêm lượt thoại",
+        "role": "container"
+      }
+    },
+    {
+      "x": 344,
+      "y": 640,
+      "width": 528,
+      "height": 8,
+      "pixels": 165,
+      "node": {
+        "id": "6133:127668",
+        "name": "+ Thêm lượt thoại",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1032,
+      "y": 328,
+      "width": 24,
+      "height": 8,
+      "pixels": 20,
+      "node": {
+        "id": "6133:127686",
+        "name": "Avatar",
+        "role": "container"
+      }
+    },
+    {
+      "x": 288,
+      "y": 416,
+      "width": 32,
+      "height": 16,
+      "pixels": 20,
+      "node": {
+        "id": "6133:127645",
+        "name": "Avatar",
+        "role": "container"
+      }
+    },
+    {
+      "x": 288,
+      "y": 544,
+      "width": 32,
+      "height": 16,
+      "pixels": 20,
+      "node": {
+        "id": "6133:127661",
+        "name": "Avatar",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1032,
+      "y": 352,
+      "width": 24,
+      "height": 8,
+      "pixels": 19,
+      "node": {
+        "id": "6133:127686",
+        "name": "Avatar",
+        "role": "container"
+      }
+    },
+    {
+      "x": 288,
+      "y": 440,
+      "width": 32,
+      "height": 16,
+      "pixels": 19,
+      "node": {
+        "id": "6133:127645",
+        "name": "Avatar",
+        "role": "container"
+      }
+    },
+    {
+      "x": 288,
+      "y": 568,
+      "width": 32,
+      "height": 16,
+      "pixels": 19,
+      "node": {
+        "id": "6133:127661",
+        "name": "Avatar",
+        "role": "container"
+      }
+    },
+    {
+      "x": 920,
+      "y": 600,
+      "width": 40,
+      "height": 48,
+      "pixels": 19,
+      "node": {
+        "id": "6133:127668",
+        "name": "+ Thêm lượt thoại",
+        "role": "container"
+      }
+    },
+    {
+      "x": 272,
+      "y": 600,
+      "width": 16,
+      "height": 40,
+      "pixels": 15,
+      "node": {
+        "id": "6133:127668",
+        "name": "+ Thêm lượt thoại",
+        "role": "container"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 7,
+      "node": {
+        "id": "I6133:127553;6133:108604",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 296,
+      "y": 600,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6133:127668",
+        "name": "+ Thêm lượt thoại",
+        "role": "container"
+      }
+    },
+    {
+      "x": 336,
+      "y": 600,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6133:127668",
+        "name": "+ Thêm lượt thoại",
+        "role": "container"
+      }
+    },
+    {
+      "x": 912,
+      "y": 600,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6133:127668",
+        "name": "+ Thêm lượt thoại",
+        "role": "container"
+      }
+    },
+    {
+      "x": 304,
+      "y": 640,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6133:127668",
+        "name": "+ Thêm lượt thoại",
+        "role": "container"
+      }
+    },
+    {
+      "x": 880,
+      "y": 640,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6133:127668",
+        "name": "+ Thêm lượt thoại",
+        "role": "container"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I6133:127553;6133:108604",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 182,
+    "missing": [],
+    "withinThreshold": 174,
+    "buckets": {
+      "≤0.5px": 164,
+      "≤1px": 172,
+      "≤2px": 174,
+      "≤4px": 182,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6133:127642",
+        "name": "Guten Morgen! Wie geht es dir?",
+        "role": "text",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127643",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127650",
+        "name": "Danke, gut. Und dir?",
+        "role": "text",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127651",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127658",
+        "name": "Auch gut, danke. Was machst du heute?",
+        "role": "text",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127659",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127666",
+        "name": "Ich gehe ins Kino. Kommst du mit?",
+        "role": "text",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127667",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:127701;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 1.38,
+        "dx": -0.69,
+        "dy": 0,
+        "dw": 1.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:127700;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 1.19,
+        "dx": -0.59,
+        "dy": 0,
+        "dw": 1.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127671",
+        "name": "4 lượt · 2 người nói · ~ 12 giây âm thanh",
+        "role": "text",
+        "delta": 0.92,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127672",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:127672;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127673",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6133:127673;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127696",
+        "name": "Kết quả",
+        "role": "text",
+        "delta": 0.92,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127697",
+        "name": "Tiếng Đức · 2 người nói · 12 giây",
+        "role": "text",
+        "delta": 0.92,
+        "dx": -0.92,
+        "dy": 0,
+        "dw": 0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127608",
+        "name": "Tạo audio từ văn bản bằng Qwen3-TTS · xử lý trên máy chủ, mở là dùng, không cần cài đặt",
+        "role": "text",
+        "delta": 0.84,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127641",
+        "name": "⌄",
+        "role": "text",
+        "delta": 0.44,
+        "dx": 0.2,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127649",
+        "name": "⌄",
+        "role": "text",
+        "delta": 0.44,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127657",
+        "name": "⌄",
+        "role": "text",
+        "delta": 0.44,
+        "dx": 0.2,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127665",
+        "name": "⌄",
+        "role": "text",
+        "delta": 0.44,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127681",
+        "name": "Người 1",
+        "role": "text",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127682",
+        "name": "Giọng",
+        "role": "container",
+        "delta": 0.44,
+        "dx": -0.44,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127683",
+        "name": "Giọng: Nữ 2",
+        "role": "text",
+        "delta": 0.44,
+        "dx": -0.44,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.58,
+    "over": [
+      {
+        "id": "6133:127642",
+        "name": "Guten Morgen! Wie geht es dir?",
+        "role": "text",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127643",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127650",
+        "name": "Danke, gut. Und dir?",
+        "role": "text",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127651",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127658",
+        "name": "Auch gut, danke. Was machst du heute?",
+        "role": "text",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127659",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127666",
+        "name": "Ich gehe ins Kino. Kommst du mit?",
+        "role": "text",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6133:127667",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "8 elements are off by more than their limit (1px, 2.5px for text-driven; worst 2.58px)."
+  ],
+  "url": "http://localhost:3108/tools/giong-doc/hoi-thoai-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,6 +1,22 @@
 {
   "route": "/lich-day/xem-theo-lop",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-ld-010000/index.tsx",
   "docFile": "docs/pages/lich-day/xem-theo-lop.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "5413:46958",
+      "component": "Body",
+      "file": "components/figma/gv-ld-010000/Body.tsx"
+    },
+    {
+      "nodeId": "5413:47009",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/gv-ld-010000/MainScrollableWorkspace.tsx"
+    },
+    {
+      "nodeId": "5425:257921",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-ld-010000/SidebarMenuTeacher.tsx"
+    }
+  ]
 }

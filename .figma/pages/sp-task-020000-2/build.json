@@ -1,6 +1,17 @@
 {
   "route": "/quy-trinh/task-tuan-nay-da-chon-them-nguoi",
-  "pageFile": "",
+  "pageFile": "components/figma/sp-task-020000-2/index.tsx",
   "docFile": "docs/pages/quy-trinh/task-tuan-nay-da-chon-them-nguoi.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "6935:390607",
+      "component": "Body",
+      "file": "components/figma/sp-task-020000-2/Body.tsx"
+    },
+    {
+      "nodeId": "6935:390744",
+      "component": "Section2",
+      "file": "components/figma/sp-task-020000-2/Section2.tsx"
+    }
+  ]
 }

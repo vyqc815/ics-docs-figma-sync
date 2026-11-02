@@ -1,0 +1,508 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1099,
+    "mismatched": 5389,
+    "percent": 0.341,
+    "shapePercent": 0.007,
+    "textPercent": 1.874,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2623:12731;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:12733;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:12785;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:12842;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:12894;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:12944;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:12946;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:12995;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:12997;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:13046;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:13048;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:13097;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:13099;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:13148;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    },
+    {
+      "id": "I2623:13150;1391:14476",
+      "name": "80%",
+      "pixels": 74,
+      "percent": 24.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 448,
+      "y": 344,
+      "width": 32,
+      "height": 8,
+      "pixels": 28,
+      "node": {
+        "id": "I2623:12783;1308:10496",
+        "name": "Vector",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 264,
+      "y": 504,
+      "width": 32,
+      "height": 24,
+      "pixels": 15,
+      "node": {
+        "id": "2623:12883",
+        "name": "CLass Status",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 272,
+      "y": 432,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "2623:12828",
+        "name": "CLass Status",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 528,
+      "y": 448,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "I2623:12840;1391:14019",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 600,
+      "y": 520,
+      "width": 16,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "I2623:12896;1391:14019",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 264,
+      "y": 728,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "2623:13038",
+        "name": "CLass Status",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 1506,
+    "missing": [],
+    "withinThreshold": 1506,
+    "buckets": {
+      "≤0.5px": 1506,
+      "≤1px": 1506,
+      "≤2px": 1506,
+      "≤4px": 1506,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I2623:13019;1590:873",
+        "name": "Trần Minh Khoa",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:13070;1590:873",
+        "name": "Trần Minh Khoa",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:13082;1590:873",
+        "name": "Trần Minh Khoa",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:13121;1590:873",
+        "name": "Trần Minh Khoa",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:13133;1590:873",
+        "name": "Trần Minh Khoa",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:13172;1590:873",
+        "name": "Trần Minh Khoa",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:13184;1590:873",
+        "name": "Trần Minh Khoa",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:13227;1590:873",
+        "name": "Trần Minh Khoa",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:13239;1590:873",
+        "name": "Trần Minh Khoa",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2623:12576",
+        "name": "Frame 427321948",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2623:12577",
+        "name": "Danh sách lớp",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2623:12578",
+        "name": "Atom/Icon Button",
+        "role": "icon",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2623:12579",
+        "name": "Filter Pills Toolbar",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": -0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3634:78208;2015:31494;2015:31352",
+        "name": "Text",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3065:60136;2764:93161",
+        "name": "3.000.000",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3065:60139;2764:93161",
+        "name": "3.000.000",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:223538;4915:219522",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:12838;1308:10502",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:12892;1308:10508",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:12935;1454:2860",
+        "name": "Group 240059",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:12935;1454:2861",
+        "name": "Rectangle 5627",
+        "role": "shape",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:12935;1454:2862",
+        "name": "Rectangle 5626",
+        "role": "shape",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:12942;1308:10514",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:12993;1308:10520",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2623:13044;1308:10502",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.5,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/danh-sach-lop-hoc",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

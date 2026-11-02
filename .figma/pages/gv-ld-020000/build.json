@@ -1,6 +1,17 @@
 {
   "route": "/lich-day/quan-ly-dang-ky-lich",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-ld-020000/index.tsx",
   "docFile": "docs/pages/lich-day/quan-ly-dang-ky-lich.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "5413:49119",
+      "component": "Body",
+      "file": "components/figma/gv-ld-020000/Body.tsx"
+    },
+    {
+      "nodeId": "5425:258114",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-ld-020000/SidebarMenuTeacher.tsx"
+    }
+  ]
 }

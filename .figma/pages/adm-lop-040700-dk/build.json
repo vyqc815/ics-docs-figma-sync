@@ -1,6 +1,34 @@
 {
   "route": "/lop-hoc/cai-dat/kpi-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lop-040700-dk/index.tsx",
   "docFile": "docs/pages/lop-hoc/cai-dat/kpi-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:117899",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-040700-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:117946",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-040700-dk/SidebarRail.tsx"
+    },
+    {
+      "nodeId": "4056:118039",
+      "component": "Header19",
+      "file": "components/figma/shared/Header19.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:118039": "4056:116762",
+    "4056:118040": "4056:116763",
+    "4056:118087": "4056:116810",
+    "I4056:118087;2008:30986": "I4056:116810;2008:30986",
+    "I4056:118087;2008:31747": "I4056:116810;2008:31747",
+    "I4056:118087;2008:31748": "I4056:116810;2008:31748",
+    "I4056:118087;1391:17264": "I4056:116810;1391:17264",
+    "I4056:118087;1391:17266": "I4056:116810;1391:17266",
+    "I4056:118087;1391:17268": "I4056:116810;1391:17268",
+    "I4056:118087;1391:17270": "I4056:116810;1391:17270"
+  }
 }

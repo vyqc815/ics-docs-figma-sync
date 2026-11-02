@@ -1,6 +1,17 @@
 {
   "route": "/lop/thong-ke-tong-quan",
-  "pageFile": "",
+  "pageFile": "components/figma/gv-lop-010000/index.tsx",
   "docFile": "docs/pages/lop/thong-ke-tong-quan.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "3868:95436",
+      "component": "Body",
+      "file": "components/figma/gv-lop-010000/Body.tsx"
+    },
+    {
+      "nodeId": "3868:95566",
+      "component": "Section2",
+      "file": "components/figma/gv-lop-010000/Section2.tsx"
+    }
+  ]
 }

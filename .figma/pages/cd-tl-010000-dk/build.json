@@ -1,6 +1,30 @@
 {
   "route": "/tools/giong-doc/doc-van-ban-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-tl-010000-dk/index.tsx",
   "docFile": "docs/pages/tools/giong-doc/doc-van-ban-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "6133:126669",
+      "component": "Applayoutwrapper",
+      "file": "components/figma/shared/Applayoutwrapper.tsx"
+    },
+    {
+      "nodeId": "6133:126670",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-tl-010000-dk/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6133:126671",
+      "component": "Header",
+      "file": "components/figma/cd-tl-010000-dk/Header.tsx"
+    },
+    {
+      "nodeId": "6133:126721",
+      "component": "MainGiongDoc",
+      "file": "components/figma/cd-tl-010000-dk/MainGiongDoc.tsx"
+    }
+  ],
+  "idAlias": {
+    "6133:126669": "714:16697"
+  }
 }

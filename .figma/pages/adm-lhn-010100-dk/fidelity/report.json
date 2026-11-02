@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1004,
+    "mismatched": 9199,
+    "percent": 0.636,
+    "shapePercent": 0.006,
+    "textPercent": 3.309,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:105213",
+      "name": "- Gửi giới thiệu bạn với học viên (lưu ý các học viên đang có chỉ số thấp/ phản ứng ==> không gửi nha) - Gửi giới thiệu bạn phải gởi hết vòng của TH giới thiệu bạn (khi khách seen ==> push tiếp cách đăng bài) - Kiểm tra khách này trước đó đã gửi giới thiệu bạn chưa để gửi văn khác, tránh bị trùng - Note: Đã gửi giới thiệu bạn ở ghi chú ==> mục tiêu nắm được khách này đã gửi hay chưa để lượt tiếp theo còn đổi văn mẫu",
+      "pixels": 3747,
+      "percent": 24.1
+    },
+    {
+      "id": "I4056:105358;2245:87774",
+      "name": "Label",
+      "pixels": 423,
+      "percent": 14.7
+    },
+    {
+      "id": "I4713:129264;2015:36008",
+      "name": "Value",
+      "pixels": 91,
+      "percent": 6.6
+    },
+    {
+      "id": "I4056:105286;1391:17481",
+      "name": "3",
+      "pixels": 11,
+      "percent": 5
+    },
+    {
+      "id": "I4056:105118;2015:36008",
+      "name": "Value",
+      "pixels": 94,
+      "percent": 4.7
+    },
+    {
+      "id": "4056:105155",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 464,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:105233",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 464,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:105251",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 464,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:105270",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 464,
+      "percent": 4.3
+    },
+    {
+      "id": "I4056:105187;2200:30042",
+      "name": "Ngày mai",
+      "pixels": 52,
+      "percent": 4.1
+    },
+    {
+      "id": "I4056:105209;2200:30042",
+      "name": "Ngày mai",
+      "pixels": 52,
+      "percent": 4.1
+    },
+    {
+      "id": "I4056:105231;2200:30042",
+      "name": "Ngày mai",
+      "pixels": 52,
+      "percent": 4.1
+    },
+    {
+      "id": "I4056:105119;2015:36008",
+      "name": "Value",
+      "pixels": 81,
+      "percent": 3.7
+    },
+    {
+      "id": "I4056:105286;1391:17485",
+      "name": "8",
+      "pixels": 7,
+      "percent": 3.2
+    },
+    {
+      "id": "I4056:105357;2245:87768",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 2.9
+    }
+  ],
+  "regions": [
+    {
+      "x": 1232,
+      "y": 304,
+      "width": 8,
+      "height": 32,
+      "pixels": 48,
+      "node": {
+        "id": "4056:105178",
+        "name": "Cell · Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4056:105341",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4056:105341",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 290,
+    "missing": [],
+    "withinThreshold": 290,
+    "buckets": {
+      "≤0.5px": 281,
+      "≤1px": 290,
+      "≤2px": 290,
+      "≤4px": 290,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:105114",
+        "name": "Frame 427321947",
+        "role": "container",
+        "delta": 0.73,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105117",
+        "name": "Frame 427323979",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4713:129264",
+        "name": "Dropdown · Trung tâm",
+        "role": "instance",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129264;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129264;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129264;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105118",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105118;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105118;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105118;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105119",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105119;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105119;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105126",
+        "name": "Tabs",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105127",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105127;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105127;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105128",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105128;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105128;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105129",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105129;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105129;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105129;3554:65718",
+        "name": "Số đếm",
+        "role": "instance",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105129;3554:65718;1971:8814",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0.13,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.73,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/lich-hen/hen-lop-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,6 +1,17 @@
 {
   "route": "/task-ngay",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-task-020000/index.tsx",
   "docFile": "docs/pages/task-ngay.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4343:80048",
+      "component": "Body",
+      "file": "components/figma/adm-task-020000/Body.tsx"
+    },
+    {
+      "nodeId": "4343:80184",
+      "component": "Section2",
+      "file": "components/figma/adm-task-020000/Section2.tsx"
+    }
+  ]
 }

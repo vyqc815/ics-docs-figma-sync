@@ -1,6 +1,37 @@
 {
   "route": "/hoa-don/danh-sach-hoa-don-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-hd-010000-dk/index.tsx",
   "docFile": "docs/pages/hoa-don/danh-sach-hoa-don-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4056:131049",
+      "component": "Header",
+      "file": "components/figma/adm-hd-010000-dk/Header.tsx"
+    },
+    {
+      "nodeId": "4101:133847",
+      "component": "Sidebar",
+      "file": "components/figma/adm-hd-010000-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "4056:131182",
+      "component": "Maincontent",
+      "file": "components/figma/adm-hd-010000-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:131631",
+      "component": "TooltipTrangThaiHover",
+      "file": "components/figma/adm-hd-010000-dk/TooltipTrangThaiHover.tsx"
+    },
+    {
+      "nodeId": "4056:131632",
+      "component": "TooltipLienHe",
+      "file": "components/figma/adm-hd-010000-dk/TooltipLienHe.tsx"
+    },
+    {
+      "nodeId": "4056:131633",
+      "component": "TooltipThongTinLop",
+      "file": "components/figma/adm-hd-010000-dk/TooltipThongTinLop.tsx"
+    }
+  ]
 }

@@ -1,6 +1,22 @@
 {
   "route": "/loi-404-khong-tim-thay-trang",
-  "pageFile": "",
+  "pageFile": "components/figma/sys-err-020000/index.tsx",
   "docFile": "docs/pages/loi-404-khong-tim-thay-trang.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "5789:152815",
+      "component": "Header",
+      "file": "components/figma/sys-err-020000/Header.tsx"
+    },
+    {
+      "nodeId": "5789:152949",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/sys-err-020000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "5789:152950",
+      "component": "Maincontent",
+      "file": "components/figma/sys-err-020000/Maincontent.tsx"
+    }
+  ]
 }

@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1035,
+    "mismatched": 2710,
+    "percent": 0.182,
+    "shapePercent": 0.004,
+    "textPercent": 0.96,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6935:390854;1308:6706",
+      "name": "0%",
+      "pixels": 45,
+      "percent": 23
+    },
+    {
+      "id": "6935:390794",
+      "name": "Đã xem và chốt tổng quan nhiệm vụ vần làm trong tuần dựa vào lịch hẹn (sau họp team)",
+      "pixels": 969,
+      "percent": 6.7
+    },
+    {
+      "id": "I6935:390782;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 107,
+      "percent": 4.4
+    },
+    {
+      "id": "I6935:390817;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 106,
+      "percent": 4.3
+    },
+    {
+      "id": "6935:390829",
+      "name": "[Giữa Tuần - PTTL] Review tiến độ và lịch hẹn của team Trung Tâm",
+      "pixels": 761,
+      "percent": 3.9
+    },
+    {
+      "id": "6935:390800",
+      "name": "Giá trị",
+      "pixels": 16,
+      "percent": 2.9
+    },
+    {
+      "id": "I6935:390785;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 23,
+      "percent": 2.3
+    },
+    {
+      "id": "I6935:390805;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 23,
+      "percent": 2.3
+    },
+    {
+      "id": "I6935:390825;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 23,
+      "percent": 2.3
+    },
+    {
+      "id": "I6935:390822;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 21,
+      "percent": 2
+    },
+    {
+      "id": "I6935:390743;4901:224932;3857:67911;1971:8814",
+      "name": "Value",
+      "pixels": 4,
+      "percent": 1.6
+    },
+    {
+      "id": "6935:390815",
+      "name": "Add lịch hẹn lớp cho PTL & CSKH theo lịch làm việc (chú ý tới tính khả thi của lịch hẹn)",
+      "pixels": 202,
+      "percent": 1.5
+    },
+    {
+      "id": "6935:390855",
+      "name": "01.01.2027 > 08.01.2027",
+      "pixels": 63,
+      "percent": 1.5
+    },
+    {
+      "id": "I6935:390743;4901:224931;3857:67911;1971:8814",
+      "name": "Value",
+      "pixels": 3,
+      "percent": 1.2
+    },
+    {
+      "id": "6935:390780",
+      "name": "Đã gửi lịch hẹn và add lịch họp ICS với giáo viên cần họp trong tuần",
+      "pixels": 172,
+      "percent": 1.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 288,
+      "y": 360,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "6935:390779",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 288,
+      "y": 648,
+      "width": 24,
+      "height": 32,
+      "pixels": 21,
+      "node": {
+        "id": "6935:390814",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 448,
+      "y": 88,
+      "width": 16,
+      "height": 24,
+      "pixels": 6,
+      "node": {
+        "id": "6935:390750",
+        "name": "Thêm người phụ trách",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 244,
+    "missing": [],
+    "withinThreshold": 244,
+    "buckets": {
+      "≤0.5px": 244,
+      "≤1px": 244,
+      "≤2px": 244,
+      "≤4px": 244,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I6935:390743;4901:224921",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390743;4901:224906",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390743;4901:224907",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390743;4901:224908",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390743;4901:224920",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:390607",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "6935:390608",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "6935:390609",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "6935:390656",
+        "name": "ACCOUNT",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390656;2008:31704",
+        "name": "Frame 1171274934",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390656;2008:31899",
+        "name": "Background+Shadow",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390656;2008:31900",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390656;2008:31901",
+        "name": "PTL",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390656;2008:31708",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390656;2008:31709",
+        "name": "Phụ Trách Lớp Đắc Nhân",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390656;2008:31710",
+        "name": "PTL.dacnhan@gmail.com",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390656;2008:31711",
+        "name": "Overlay",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6935:390743",
+        "name": "Sidebar · MENU - CLASS HANDLER",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6935:390743;4901:224855",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6935:390743;4901:224923",
+        "name": "Nav Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6935:390743;4901:224924",
+        "name": "Menu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390743;4901:224925",
+        "name": "Card Menu",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390743;4901:224925;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390743;4901:224925;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6935:390743;4901:224926",
+        "name": "Card Menu",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.02,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/quy-trinh/task-tuan-nay-da-chon-them-nguoi",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

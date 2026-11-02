@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-070200-DK — Thư viện / Kỹ năng / Nghe (`6579:372308`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/thu-vien/ky-nang/nghe-dk`  
 > **Khung thiết kế:** 1440 × 1250 px  
-> **Xuất lúc:** 2026-11-02T02:01:09.258Z  
+> **Xuất lúc:** 2026-11-02T02:52:09.836Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/cd-kh-070200-dk/page-spec.json`
 
 ## 1. Tổng quan

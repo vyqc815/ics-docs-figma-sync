@@ -1,0 +1,16 @@
+<svg width="936" height="10" viewBox="0 0 936 10" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M0 5C0 2.79086 1.79086 1 4 1H932C934.209 1 936 2.79086 936 5V5C936 7.20914 934.209 9 932 9H4.00003C1.79089 9 0 7.20914 0 5V5Z" fill="#F3F4F6"/>
+<path d="M0 5C0 2.79086 1.79086 1 4 1H531.001C533.21 1 535.001 2.79086 535.001 5V5C535.001 7.20914 533.21 9 531.001 9H4C1.79087 9 0 7.20914 0 5V5Z" fill="url(#paint0_linear)"/>
+<use xlink:href="#stroke0" fill="white"/>
+<mask id="stroke1" fill="white">
+<use xlink:href="#stroke0"/>
+</mask>
+<path d="M541.364 5C541.364 7.76142 538.812 10 535.664 10C532.516 10 529.964 7.76142 529.964 5C529.964 2.23858 532.516 0 535.664 0C538.812 0 541.364 2.23858 541.364 5Z" stroke-width="3" stroke="#E65100" mask="url(#stroke1)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="539.821" y1="5.33333" x2="539.53" y2="17.8686" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E65100"/>
+<stop offset="1" stop-color="#F98D52"/>
+</linearGradient>
+<path id="stroke0" d="M541.364 5C541.364 7.76142 538.812 10 535.664 10C532.516 10 529.964 7.76142 529.964 5C529.964 2.23858 532.516 0 535.664 0C538.812 0 541.364 2.23858 541.364 5Z"/>
+</defs>
+</svg>

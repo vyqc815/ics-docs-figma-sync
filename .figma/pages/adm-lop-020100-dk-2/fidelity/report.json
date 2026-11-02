@@ -1,0 +1,460 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1059,
+    "mismatched": 4885,
+    "percent": 0.32,
+    "shapePercent": 0.001,
+    "textPercent": 1.407,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:110285",
+      "name": "Tổng Quan Lớp",
+      "pixels": 821,
+      "percent": 18.4
+    },
+    {
+      "id": "I4056:110684;2245:87914",
+      "name": "Label",
+      "pixels": 193,
+      "percent": 8
+    },
+    {
+      "id": "I4056:110719;3004:73494",
+      "name": "Tiêu đề",
+      "pixels": 229,
+      "percent": 6.5
+    },
+    {
+      "id": "I4056:110534;2015:31836;4056:110810;2015:30575",
+      "name": "Label",
+      "pixels": 126,
+      "percent": 5.7
+    },
+    {
+      "id": "I4056:110318;3065:71108",
+      "name": "Tiêu đề",
+      "pixels": 107,
+      "percent": 5.4
+    },
+    {
+      "id": "I4056:110719;3004:73500",
+      "name": "CSKH",
+      "pixels": 532,
+      "percent": 4.8
+    },
+    {
+      "id": "I4056:110719;3004:73499",
+      "name": "SP",
+      "pixels": 261,
+      "percent": 4.5
+    },
+    {
+      "id": "4056:110310",
+      "name": "Tuyết Ngọc",
+      "pixels": 59,
+      "percent": 3.4
+    },
+    {
+      "id": "I4056:110687;2245:87908",
+      "name": "Label",
+      "pixels": 77,
+      "percent": 3.2
+    },
+    {
+      "id": "I4056:110686;2245:87908",
+      "name": "Label",
+      "pixels": 74,
+      "percent": 3.1
+    },
+    {
+      "id": "I4056:110534;2015:31836;4056:110811;2015:30575",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 3
+    },
+    {
+      "id": "I4056:110689;2245:87908",
+      "name": "Label",
+      "pixels": 73,
+      "percent": 3
+    },
+    {
+      "id": "I4056:110719;3004:73501",
+      "name": "Giáo viên",
+      "pixels": 173,
+      "percent": 3
+    },
+    {
+      "id": "I4056:110719;3004:73498",
+      "name": "Lịch học",
+      "pixels": 166,
+      "percent": 2.9
+    },
+    {
+      "id": "I4056:110685;2245:87908",
+      "name": "Label",
+      "pixels": 68,
+      "percent": 2.8
+    }
+  ],
+  "regions": [
+    {
+      "x": 480,
+      "y": 96,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "4056:110284",
+        "name": "SectionClassOverviewHeader",
+        "role": "container"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4056:110718",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 470,
+    "missing": [],
+    "withinThreshold": 470,
+    "buckets": {
+      "≤0.5px": 465,
+      "≤1px": 469,
+      "≤2px": 469,
+      "≤4px": 470,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:110285",
+        "name": "Tổng Quan Lớp",
+        "role": "text",
+        "delta": 2.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:110307",
+        "name": "Frame 1171274933",
+        "role": "container",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:110309",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:110310",
+        "name": "Tuyết Ngọc",
+        "role": "text",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:110311",
+        "name": "GHI CHÚ",
+        "role": "icon",
+        "delta": 0.52,
+        "dx": 0.52,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:110472",
+        "name": "Trạng thái",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:110495",
+        "name": "Trạng thái",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110295;3065:71109",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:110317",
+        "name": "Thẻ chỉ số",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110317;3065:71106",
+        "name": "Frame 1171274980",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110317;3065:71107",
+        "name": "Frame 1171274979",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110317;3065:71111",
+        "name": "Atom/Sparkline",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110318;3065:71108",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110320;3065:71108",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110320;3065:71109",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:110321",
+        "name": "Thẻ chỉ số",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110321;3065:71106",
+        "name": "Frame 1171274980",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110321;3065:71107",
+        "name": "Frame 1171274979",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110321;3065:71111",
+        "name": "Atom/Sparkline",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110521;1308:10491",
+        "name": "A",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110539;1308:10491",
+        "name": "A",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:110554;1308:10491",
+        "name": "A",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:110628",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:110635",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:110649",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 2.25,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-lop-hoc/tong-quan-chi-tiet-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

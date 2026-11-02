@@ -1,6 +1,17 @@
 {
   "route": "/chi-tiet-giao-vien/danh-sach-lop",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-gv-020200/index.tsx",
   "docFile": "docs/pages/chi-tiet-giao-vien/danh-sach-lop.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "1331:10825",
+      "component": "Body",
+      "file": "components/figma/adm-gv-020200/Body.tsx"
+    },
+    {
+      "nodeId": "4915:235631",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-gv-020200/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

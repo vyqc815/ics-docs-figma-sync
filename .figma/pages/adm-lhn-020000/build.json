@@ -1,6 +1,32 @@
 {
   "route": "/bang-chia-lich-hen",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-lhn-020000/index.tsx",
   "docFile": "docs/pages/bang-chia-lich-hen.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4915:221983",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lhn-020000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "2371:35948",
+      "component": "Dn1",
+      "file": "components/figma/adm-lhn-020000/Dn1.tsx"
+    },
+    {
+      "nodeId": "2371:35997",
+      "component": "Bg",
+      "file": "components/figma/adm-lhn-020000/Bg.tsx"
+    },
+    {
+      "nodeId": "2371:36449",
+      "component": "Section4",
+      "file": "components/figma/shared/Section4.tsx"
+    },
+    {
+      "nodeId": "2371:36451",
+      "component": "Section5",
+      "file": "components/figma/adm-lhn-020000/Section5.tsx"
+    }
+  ]
 }

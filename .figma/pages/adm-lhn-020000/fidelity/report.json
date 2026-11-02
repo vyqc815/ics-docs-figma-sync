@@ -1,0 +1,460 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 2973,
+    "percent": 0.255,
+    "shapePercent": 0.005,
+    "textPercent": 0.629,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2371:36094;2200:30227",
+      "name": "ID",
+      "pixels": 54,
+      "percent": 3.7
+    },
+    {
+      "id": "I2371:36086;2200:30042",
+      "name": "Ngày mai",
+      "pixels": 45,
+      "percent": 3.5
+    },
+    {
+      "id": "I2371:36495;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    },
+    {
+      "id": "I2371:36513;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    },
+    {
+      "id": "I2371:36531;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    },
+    {
+      "id": "I2371:36549;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    },
+    {
+      "id": "I2371:36612;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    },
+    {
+      "id": "I2371:36630;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    },
+    {
+      "id": "I2371:36657;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    },
+    {
+      "id": "I2371:36675;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    },
+    {
+      "id": "I2371:36693;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    },
+    {
+      "id": "I2371:36711;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    },
+    {
+      "id": "2371:36454",
+      "name": "Bảng chia lịch hẹn",
+      "pixels": 165,
+      "percent": 2.4
+    },
+    {
+      "id": "2371:36529",
+      "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+      "pixels": 220,
+      "percent": 1.9
+    },
+    {
+      "id": "2371:36547",
+      "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+      "pixels": 220,
+      "percent": 1.9
+    }
+  ],
+  "regions": [
+    {
+      "x": 288,
+      "y": 432,
+      "width": 24,
+      "height": 32,
+      "pixels": 25,
+      "node": {
+        "id": "2371:36515",
+        "name": "Status Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1016,
+      "y": 432,
+      "width": 24,
+      "height": 32,
+      "pixels": 25,
+      "node": {
+        "id": "2371:36677",
+        "name": "Status Độ ưu tiên",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 783,
+    "missing": [],
+    "withinThreshold": 783,
+    "buckets": {
+      "≤0.5px": 774,
+      "≤1px": 783,
+      "≤2px": 783,
+      "≤4px": 783,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2371:36000",
+        "name": "Frame 427321947",
+        "role": "container",
+        "delta": 0.73,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36003",
+        "name": "Frame 427323979",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4713:129228",
+        "name": "Dropdown · Trung tâm",
+        "role": "instance",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129228;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129228;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129228;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36004",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2371:36004;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2371:36004;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36481",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36489",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36502",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36507",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36520",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36525",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36538",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36543",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36556",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36561",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36574",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36579",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36601",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36606",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36619",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:36624",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.73,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/bang-chia-lich-hen",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

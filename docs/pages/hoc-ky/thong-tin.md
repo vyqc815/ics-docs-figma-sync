@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-030100 — Học kỳ / Thông tin (`497:17005`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/hoc-ky/thong-tin`  
 > **Khung thiết kế:** 1440 × 910 px  
-> **Xuất lúc:** 2026-11-02T01:46:31.364Z  
+> **Xuất lúc:** 2026-11-02T02:47:02.238Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-030100/page-spec.json`
 
 ## 1. Tổng quan
@@ -640,9 +640,6 @@ Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255632;5491:349856;2245:87904`): Asset a60 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255632;5491:349861;2245:87904`): Asset a61 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:255632;5491:349866;2245:87904`): Asset a62 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
-- `REVERSE_Z_INDEX` — **Frame 427321958** (`2860:16127`): "First on top" stacking: give earlier children a higher z-index.
-- `REVERSE_Z_INDEX` — **Frame 427321957** (`2860:16131`): "First on top" stacking: give earlier children a higher z-index.
-- `REVERSE_Z_INDEX` — **Frame 1171274942** (`2860:16135`): "First on top" stacking: give earlier children a higher z-index.
 
 ## 10. Hướng dẫn dựng lại (cho người và AI)
 

@@ -1,6 +1,22 @@
 {
   "route": "/tuong-tac/danh-sach-log",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-tt-010000/index.tsx",
   "docFile": "docs/pages/tuong-tac/danh-sach-log.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4273:155699",
+      "component": "Mainworkspace",
+      "file": "components/figma/adm-tt-010000/Mainworkspace.tsx"
+    },
+    {
+      "nodeId": "4273:155278",
+      "component": "Header",
+      "file": "components/figma/adm-tt-010000/Header.tsx"
+    },
+    {
+      "nodeId": "4915:252614",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-tt-010000/SidebarMenuAdmin.tsx"
+    }
+  ]
 }

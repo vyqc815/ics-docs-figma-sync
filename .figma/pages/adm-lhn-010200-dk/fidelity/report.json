@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 919,
+    "mismatched": 10145,
+    "percent": 0.767,
+    "shapePercent": 0.006,
+    "textPercent": 3.475,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:105970",
+      "name": "- Gửi giới thiệu bạn với học viên (lưu ý các học viên đang có chỉ số thấp/ phản ứng ==> không gửi nha) - Gửi giới thiệu bạn phải gởi hết vòng của TH giới thiệu bạn (khi khách seen ==> push tiếp cách đăng bài) - Kiểm tra khách này trước đó đã gửi giới thiệu bạn chưa để gửi văn khác, tránh bị trùng - Note: Đã gửi giới thiệu bạn ở ghi chú ==> mục tiêu nắm được khách này đã gửi hay chưa để lượt tiếp theo còn đổi văn mẫu",
+      "pixels": 3633,
+      "percent": 22.8
+    },
+    {
+      "id": "I4056:105809;2245:87774",
+      "name": "Label",
+      "pixels": 423,
+      "percent": 14.7
+    },
+    {
+      "id": "I4713:129288;2015:36008",
+      "name": "Value",
+      "pixels": 91,
+      "percent": 6.6
+    },
+    {
+      "id": "I4056:105957;2245:92367",
+      "name": "giavynguyen2978@gmail.com",
+      "pixels": 248,
+      "percent": 6.4
+    },
+    {
+      "id": "I4056:105957;2245:92352",
+      "name": "Tên:",
+      "pixels": 37,
+      "percent": 6.3
+    },
+    {
+      "id": "I4056:105957;2245:92353",
+      "name": "Nguyễn Gia Vĩ",
+      "pixels": 221,
+      "percent": 5.3
+    },
+    {
+      "id": "I4056:105957;2245:92366",
+      "name": "Gmail:",
+      "pixels": 48,
+      "percent": 5.3
+    },
+    {
+      "id": "I4056:105957;2245:92373",
+      "name": "Lớp đang học:",
+      "pixels": 95,
+      "percent": 5.1
+    },
+    {
+      "id": "I4056:106043;1391:17481",
+      "name": "3",
+      "pixels": 11,
+      "percent": 5
+    },
+    {
+      "id": "I4056:105957;2245:92359",
+      "name": "Sđt:",
+      "pixels": 27,
+      "percent": 4.8
+    },
+    {
+      "id": "I4056:105872;2015:36008",
+      "name": "Value",
+      "pixels": 94,
+      "percent": 4.7
+    },
+    {
+      "id": "4056:105909",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 464,
+      "percent": 4.3
+    },
+    {
+      "id": "I4056:105957;2245:92378",
+      "name": "- DNH315-I (Nghỉ học)",
+      "pixels": 205,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:105990",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 464,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:106008",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 464,
+      "percent": 4.3
+    }
+  ],
+  "regions": [
+    {
+      "x": 1232,
+      "y": 312,
+      "width": 8,
+      "height": 32,
+      "pixels": 48,
+      "node": {
+        "id": "4056:105932",
+        "name": "Cell · Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4056:105792",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4056:105792",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 314,
+    "missing": [],
+    "withinThreshold": 314,
+    "buckets": {
+      "≤0.5px": 305,
+      "≤1px": 314,
+      "≤2px": 314,
+      "≤4px": 314,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:105868",
+        "name": "Frame 427321947",
+        "role": "container",
+        "delta": 0.73,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105871",
+        "name": "Frame 427323979",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4713:129288",
+        "name": "Dropdown · Trung tâm",
+        "role": "instance",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129288;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129288;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129288;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105872",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105872;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105872;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.73,
+        "dx": -0.73,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105872;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105873",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105873;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105873;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105814;1981:25751",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105814;1981:25752",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105941;2200:30042",
+        "name": "Ngày mai",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105966;2200:30042",
+        "name": "Ngày mai",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105988;2200:30042",
+        "name": "Ngày mai",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:106005;2200:30042",
+        "name": "Ngày mai",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105805",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105811;1981:25758",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:105811;1981:25759",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105790",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105791",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:105792",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.73,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/lich-hen/hoc-vien-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

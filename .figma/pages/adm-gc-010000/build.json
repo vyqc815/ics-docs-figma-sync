@@ -1,6 +1,22 @@
 {
   "route": "/ghi-chu/danh-sach-ghi-chu",
-  "pageFile": "",
+  "pageFile": "components/figma/adm-gc-010000/index.tsx",
   "docFile": "docs/pages/ghi-chu/danh-sach-ghi-chu.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "4083:136050",
+      "component": "Section1",
+      "file": "components/figma/adm-gc-010000/Section1.tsx"
+    },
+    {
+      "nodeId": "4915:221051",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-gc-010000/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "4083:136520",
+      "component": "Header",
+      "file": "components/figma/adm-gc-010000/Header.tsx"
+    }
+  ]
 }
