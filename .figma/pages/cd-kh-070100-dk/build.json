@@ -1,6 +1,22 @@
 {
   "route": "/thu-vien/kien-thuc-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-kh-070100-dk/index.tsx",
   "docFile": "docs/pages/thu-vien/kien-thuc-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "6579:371256",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070100-dk/Content.tsx"
+    },
+    {
+      "nodeId": "6579:371580",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-070100-dk/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6579:371581",
+      "component": "Header",
+      "file": "components/figma/cd-kh-070100-dk/Header.tsx"
+    }
+  ]
 }

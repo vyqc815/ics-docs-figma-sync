@@ -1,6 +1,27 @@
 {
   "route": "/quan-ly-khoa-hoc-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-kh-010000-dk/index.tsx",
   "docFile": "docs/pages/quan-ly-khoa-hoc-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "6015:65839",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-010000-dk/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6015:65840",
+      "component": "Header",
+      "file": "components/figma/cd-kh-010000-dk/Header.tsx"
+    },
+    {
+      "nodeId": "6015:65890",
+      "component": "Maincontent",
+      "file": "components/figma/cd-kh-010000-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "6015:66022",
+      "component": "DdOrganismMenuPanel",
+      "file": "components/figma/cd-kh-010000-dk/DdOrganismMenuPanel.tsx"
+    }
+  ]
 }

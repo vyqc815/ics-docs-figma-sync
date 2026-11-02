@@ -1,0 +1,508 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 962,
+    "mismatched": 3153,
+    "percent": 0.228,
+    "shapePercent": 0.004,
+    "textPercent": 1.062,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5491:347921;6579:362454;2245:87908",
+      "name": "Label",
+      "pixels": 184,
+      "percent": 7.8
+    },
+    {
+      "id": "5491:347613",
+      "name": "你好！",
+      "pixels": 374,
+      "percent": 6.8
+    },
+    {
+      "id": "5491:347715",
+      "name": "你爸爸好吗？",
+      "pixels": 374,
+      "percent": 6.8
+    },
+    {
+      "id": "5491:347681",
+      "name": "妈妈好吗？",
+      "pixels": 352,
+      "percent": 6.4
+    },
+    {
+      "id": "5491:347647",
+      "name": "我很好。",
+      "pixels": 345,
+      "percent": 6.3
+    },
+    {
+      "id": "I5491:347588;1048:1240",
+      "name": "Button",
+      "pixels": 155,
+      "percent": 6.2
+    },
+    {
+      "id": "I5491:347589;1048:1240",
+      "name": "Button",
+      "pixels": 97,
+      "percent": 4.8
+    },
+    {
+      "id": "5491:347751",
+      "name": "2",
+      "pixels": 6,
+      "percent": 3.5
+    },
+    {
+      "id": "I5672:62047;2015:30513",
+      "name": "Label",
+      "pixels": 63,
+      "percent": 3.3
+    },
+    {
+      "id": "I5672:62059;2015:30513",
+      "name": "Label",
+      "pixels": 63,
+      "percent": 3.3
+    },
+    {
+      "id": "5491:347749",
+      "name": "1",
+      "pixels": 5,
+      "percent": 2.9
+    },
+    {
+      "id": "6518:373081",
+      "name": "Kỳ & bài kiểm tra",
+      "pixels": 105,
+      "percent": 2.9
+    },
+    {
+      "id": "5491:347630",
+      "name": "你好吗？",
+      "pixels": 145,
+      "percent": 2.6
+    },
+    {
+      "id": "I5491:347921;6579:362456;2245:87908",
+      "name": "Label",
+      "pixels": 55,
+      "percent": 2.3
+    },
+    {
+      "id": "5491:348650",
+      "name": "10",
+      "pixels": 6,
+      "percent": 2.1
+    }
+  ],
+  "regions": [
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I5491:347921;6579:362446",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5491:347921;6579:362452;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 872,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5491:347921;6579:362466;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 872,
+      "y": 224,
+      "width": 16,
+      "height": 16,
+      "pixels": 5,
+      "node": {
+        "id": "5672:62033",
+        "name": "Ellipse",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 928,
+      "y": 224,
+      "width": 16,
+      "height": 16,
+      "pixels": 5,
+      "node": {
+        "id": "5672:62037",
+        "name": "Ellipse",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 24,
+      "y": 808,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I5491:347921;6579:362503",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 429,
+    "missing": [],
+    "withinThreshold": 429,
+    "buckets": {
+      "≤0.5px": 415,
+      "≤1px": 424,
+      "≤2px": 429,
+      "≤4px": 429,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5672:62047",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 1.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:62047;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:62059",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 1.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:62059;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:62045",
+        "name": "Kiến thức / Kỹ năng",
+        "role": "text",
+        "delta": 1.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347743",
+        "name": "spacer",
+        "role": "container",
+        "delta": 1,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347744",
+        "name": "Footer · Phân trang",
+        "role": "container",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347745",
+        "name": "Hiển thị 1–8 trong 10 câu hỏi",
+        "role": "text",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347746",
+        "name": "Trang ‹",
+        "role": "icon",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347748",
+        "name": "Trang 1",
+        "role": "container",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347749",
+        "name": "1",
+        "role": "text",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347750",
+        "name": "Trang 2",
+        "role": "container",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347751",
+        "name": "2",
+        "role": "text",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347758",
+        "name": "Trang ›",
+        "role": "icon",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347585",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:347585;2808:42276",
+        "name": "Input",
+        "role": "container",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:347585;2808:42277",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:347585;2808:42278",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347586",
+        "name": "DD/Molecule/Trigger",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:347586;2015:31179",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:347586;2015:31180",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:347586;2015:31183",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:347587",
+        "name": "DD/Molecule/Trigger",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:347587;2015:31179",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:347587;2015:31180",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.22,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/bai-tap-ve-nha/kiem-tra",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

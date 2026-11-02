@@ -1,0 +1,796 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1536,
+    "mismatched": 4407,
+    "percent": 0.199,
+    "shapePercent": 0.032,
+    "textPercent": 1.236,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2857:58679;3004:75121",
+      "name": "Tìm nội dung...",
+      "pixels": 243,
+      "percent": 15.1
+    },
+    {
+      "id": "1219:8840",
+      "name": "声母 1",
+      "pixels": 120,
+      "percent": 12.7
+    },
+    {
+      "id": "1219:9422",
+      "name": "复习 1",
+      "pixels": 119,
+      "percent": 12.6
+    },
+    {
+      "id": "1219:8956",
+      "name": "声母 2",
+      "pixels": 116,
+      "percent": 12.3
+    },
+    {
+      "id": "I4915:256398;4901:221039;2245:87908",
+      "name": "Label",
+      "pixels": 184,
+      "percent": 7.8
+    },
+    {
+      "id": "2751:43941",
+      "name": "[ 60 phút ]",
+      "pixels": 116,
+      "percent": 7.5
+    },
+    {
+      "id": "2619:202207",
+      "name": "[ 45 phút ]",
+      "pixels": 107,
+      "percent": 6.9
+    },
+    {
+      "id": "1219:8426",
+      "name": "Số buổi 05/04",
+      "pixels": 126,
+      "percent": 6
+    },
+    {
+      "id": "1219:8419",
+      "name": "Số buổi 03/12",
+      "pixels": 124,
+      "percent": 5.9
+    },
+    {
+      "id": "2619:202206",
+      "name": "[ 60 phút ]",
+      "pixels": 88,
+      "percent": 5.7
+    },
+    {
+      "id": "1219:8428",
+      "name": "PHÁT ÂM",
+      "pixels": 65,
+      "percent": 5.3
+    },
+    {
+      "id": "1219:8414",
+      "name": "THỜI GIAN",
+      "pixels": 78,
+      "percent": 5.2
+    },
+    {
+      "id": "1219:8898",
+      "name": "你叫什么名字？",
+      "pixels": 115,
+      "percent": 4.9
+    },
+    {
+      "id": "1219:9248",
+      "name": "你做什么工作？",
+      "pixels": 111,
+      "percent": 4.7
+    },
+    {
+      "id": "1219:8421",
+      "name": "KHAI GIẢNG",
+      "pixels": 77,
+      "percent": 4.6
+    }
+  ],
+  "regions": [
+    {
+      "x": 1008,
+      "y": 352,
+      "width": 80,
+      "height": 16,
+      "pixels": 70,
+      "node": {
+        "id": "2808:53139",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 456,
+      "width": 80,
+      "height": 8,
+      "pixels": 70,
+      "node": {
+        "id": "2808:53142",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1016,
+      "y": 376,
+      "width": 72,
+      "height": 8,
+      "pixels": 65,
+      "node": {
+        "id": "2808:53139",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1016,
+      "y": 480,
+      "width": 72,
+      "height": 8,
+      "pixels": 65,
+      "node": {
+        "id": "1219:8619",
+        "name": "Data",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1312,
+      "y": 456,
+      "width": 24,
+      "height": 32,
+      "pixels": 56,
+      "node": {
+        "id": "1219:8626",
+        "name": "Data",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1176,
+      "y": 280,
+      "width": 24,
+      "height": 24,
+      "pixels": 42,
+      "node": {
+        "id": "1219:8501",
+        "name": "Data - 10 Checkbox Cells",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1384,
+      "y": 1440,
+      "width": 24,
+      "height": 32,
+      "pixels": 41,
+      "node": {
+        "id": "I6518:337110;5056:365850",
+        "name": "Action Button",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1240,
+      "y": 1480,
+      "width": 32,
+      "height": 16,
+      "pixels": 32,
+      "node": {
+        "id": "6518:337121",
+        "name": "Trang 1",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1320,
+      "y": 664,
+      "width": 16,
+      "height": 24,
+      "pixels": 28,
+      "node": {
+        "id": "1219:8800",
+        "name": "Data",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1240,
+      "y": 1504,
+      "width": 24,
+      "height": 8,
+      "pixels": 26,
+      "node": {
+        "id": "6518:337121",
+        "name": "Trang 1",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1312,
+      "y": 920,
+      "width": 24,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "1219:9032",
+        "name": "Data",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I4915:256398;4901:221031",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I4915:256398;4901:221037;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 368,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I2015:39152;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 464,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I2015:39163;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 872,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I4915:256398;4901:221049;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 1064,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I4915:256398;5491:349906;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 288,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39141;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 608,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39185;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 672,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39196;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 736,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39207;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 800,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39218;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 928,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39240;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 992,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39251;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 1048,
+      "width": 16,
+      "height": 16,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39262;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 1112,
+      "width": 16,
+      "height": 16,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39273;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 1176,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39284;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 1240,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39295;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 1304,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39306;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 952,
+      "y": 1368,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I2015:39317;2015:36012",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 1133,
+    "missing": [],
+    "withinThreshold": 1133,
+    "buckets": {
+      "≤0.5px": 245,
+      "≤1px": 1019,
+      "≤2px": 1131,
+      "≤4px": 1133,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I2857:58679;3004:75121",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 2.5,
+        "dx": 0,
+        "dy": 2.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2857:58690;3004:75121",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 2.5,
+        "dx": 0,
+        "dy": 2.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8449",
+        "name": "TỔNG ÔN TẬP",
+        "role": "text",
+        "delta": 1.72,
+        "dx": -0.86,
+        "dy": 0,
+        "dw": 1.72,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8913",
+        "name": "Data",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8914",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1226:1907",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8916",
+        "name": "Data",
+        "role": "icon",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8921",
+        "name": "Data",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8922",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1226:1910",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8924",
+        "name": "Data",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8925",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1226:1911",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8927",
+        "name": "Data",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8928",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1226:1912",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8930",
+        "name": "Data",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8931",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1226:1913",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8935",
+        "name": "Data",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8936",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1226:1915",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8940",
+        "name": "Data",
+        "role": "icon",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8943",
+        "name": "Data",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1219:8944",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.01,
+        "dx": 0,
+        "dy": 1.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.5,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/chi-tiet-khoa-hoc/lo-trinh",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

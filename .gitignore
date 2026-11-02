@@ -14,3 +14,6 @@ next-env.d.ts
 .figma/pages/*/page-spec.json
 .figma/pages/*/assets/
 !.figma/pages/thu-vien-kien-thuc/page-spec.json
+
+# figma-page check: screenshots and diffs are rebuilt on every check.
+.figma/pages/*/fidelity/*.png

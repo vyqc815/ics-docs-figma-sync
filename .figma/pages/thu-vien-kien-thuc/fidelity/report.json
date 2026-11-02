@@ -12,24 +12,72 @@
   "pixels": {
     "width": 1440,
     "height": 1250,
-    "mismatched": 4664,
-    "percent": 0.259,
+    "mismatched": 3286,
+    "percent": 0.183,
     "shapePercent": 0.003,
-    "textPercent": 2.56,
+    "textPercent": 1.794,
     "sizeMismatch": false
   },
   "textNodes": [
     {
-      "id": "I5491:353384;5491:351795;2245:87908",
-      "name": "Label",
-      "pixels": 321,
-      "percent": 13.7
+      "id": "5505:25600",
+      "name": "对不起",
+      "pixels": 239,
+      "percent": 17.1
     },
     {
-      "id": "I5491:353384;5491:351807;2245:87908",
-      "name": "Label",
-      "pixels": 233,
-      "percent": 9.9
+      "id": "5505:25626",
+      "name": "爸爸",
+      "pixels": 158,
+      "percent": 16.6
+    },
+    {
+      "id": "5505:25756",
+      "name": "苹果",
+      "pixels": 149,
+      "percent": 15.7
+    },
+    {
+      "id": "5505:25652",
+      "name": "妈妈",
+      "pixels": 138,
+      "percent": 14.5
+    },
+    {
+      "id": "5505:25704",
+      "name": "学习",
+      "pixels": 138,
+      "percent": 14.5
+    },
+    {
+      "id": "5505:25520",
+      "name": "你好",
+      "pixels": 137,
+      "percent": 14.4
+    },
+    {
+      "id": "5505:25547",
+      "name": "再见",
+      "pixels": 128,
+      "percent": 13.5
+    },
+    {
+      "id": "5505:25730",
+      "name": "老师",
+      "pixels": 128,
+      "percent": 13.5
+    },
+    {
+      "id": "5505:25678",
+      "name": "哥哥",
+      "pixels": 122,
+      "percent": 12.8
+    },
+    {
+      "id": "5505:25574",
+      "name": "谢谢",
+      "pixels": 104,
+      "percent": 10.9
     },
     {
       "id": "I5505:25452;2177:28928",
@@ -44,46 +92,10 @@
       "percent": 8.3
     },
     {
-      "id": "I5491:353384;5491:351808;2245:87908",
+      "id": "I5491:353384;5491:351795;2245:87908",
       "name": "Label",
-      "pixels": 188,
-      "percent": 8
-    },
-    {
-      "id": "I5491:353384;5491:351797;2245:87908",
-      "name": "Label",
-      "pixels": 182,
+      "pixels": 184,
       "percent": 7.8
-    },
-    {
-      "id": "I5491:353384;5491:351800;2245:87908",
-      "name": "Label",
-      "pixels": 180,
-      "percent": 7.7
-    },
-    {
-      "id": "I5491:353384;5491:351809;2245:87908",
-      "name": "Label",
-      "pixels": 180,
-      "percent": 7.7
-    },
-    {
-      "id": "I5491:353384;5491:351804;2245:87908",
-      "name": "Label",
-      "pixels": 177,
-      "percent": 7.5
-    },
-    {
-      "id": "I5491:353384;5491:351798;2245:87908",
-      "name": "Label",
-      "pixels": 172,
-      "percent": 7.3
-    },
-    {
-      "id": "I5491:353384;5491:351793;2245:87908",
-      "name": "Label",
-      "pixels": 167,
-      "percent": 7.1
     },
     {
       "id": "I5505:25436;2177:28936",
@@ -96,18 +108,6 @@
       "name": "Chi tiết NV",
       "pixels": 86,
       "percent": 7
-    },
-    {
-      "id": "I5491:353384;5491:351802;2245:87908",
-      "name": "Label",
-      "pixels": 161,
-      "percent": 6.9
-    },
-    {
-      "id": "I5729:91570;2177:28928",
-      "name": "Chi tiết NV",
-      "pixels": 96,
-      "percent": 6.6
     }
   ],
   "regions": [
@@ -145,18 +145,6 @@
         "id": "I5491:353384;5491:351807;2245:87904",
         "name": "Icon",
         "role": "icon"
-      }
-    },
-    {
-      "x": 152,
-      "y": 608,
-      "width": 16,
-      "height": 8,
-      "pixels": 4,
-      "node": {
-        "id": "I5491:353384;5491:351802",
-        "name": "Card Menu v2 (Test)",
-        "role": "instance"
       }
     },
     {
@@ -418,7 +406,7 @@
         "role": "text",
         "delta": 0.88,
         "dx": 0,
-        "dy": -0.25,
+        "dy": 0,
         "dw": 0.88,
         "dh": 0,
         "limit": 2.5,
@@ -437,52 +425,52 @@
         "textDriven": true
       },
       {
-        "id": "5505:25533",
-        "name": "Cell",
-        "role": "container",
-        "delta": 0.5,
-        "dx": 0,
-        "dy": 0,
-        "dw": 0,
-        "dh": -0.5,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "5505:25534",
-        "name": "Atom/Badge",
-        "role": "instance",
-        "delta": 0.5,
-        "dx": 0,
-        "dy": 0,
-        "dw": 0,
-        "dh": -0.5,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "I5505:25534;1048:1247",
-        "name": "Badge",
-        "role": "text",
-        "delta": 0.5,
-        "dx": 0,
-        "dy": 0,
-        "dw": 0,
-        "dh": -0.5,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
         "id": "5505:25551",
         "name": "Tạm biệt",
         "role": "text",
         "delta": 0.5,
         "dx": 0,
-        "dy": -0.25,
+        "dy": 0,
         "dw": 0.5,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
+      },
+      {
+        "id": "5505:25708",
+        "name": "Học tập",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:353384;5491:351738",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5491:353384;5491:351745",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
       }
     ],
     "maxDelta": 1.45,

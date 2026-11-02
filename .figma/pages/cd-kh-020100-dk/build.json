@@ -1,6 +1,22 @@
 {
   "route": "/chi-tiet-khoa-hoc/tong-quan-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-kh-020100-dk/index.tsx",
   "docFile": "docs/pages/chi-tiet-khoa-hoc/tong-quan-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "6015:66154",
+      "component": "Maincontentarea",
+      "file": "components/figma/cd-kh-020100-dk/Maincontentarea.tsx"
+    },
+    {
+      "nodeId": "6015:66515",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-020100-dk/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6015:66516",
+      "component": "Header",
+      "file": "components/figma/cd-kh-020100-dk/Header.tsx"
+    }
+  ]
 }

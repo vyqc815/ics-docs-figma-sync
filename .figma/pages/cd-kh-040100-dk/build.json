@@ -1,6 +1,36 @@
 {
   "route": "/kien-thuc-s1/tu-vung-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-kh-040100-dk/index.tsx",
   "docFile": "docs/pages/kien-thuc-s1/tu-vung-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "6015:107030",
+      "component": "Content",
+      "file": "components/figma/cd-kh-040100-dk/Content.tsx"
+    },
+    {
+      "nodeId": "6015:107416",
+      "component": "SidebarMenuCd4",
+      "file": "components/figma/shared/SidebarMenuCd4.tsx"
+    },
+    {
+      "nodeId": "6015:107417",
+      "component": "Header5",
+      "file": "components/figma/shared/Header5.tsx"
+    },
+    {
+      "nodeId": "6015:107467",
+      "component": "DropdownThemTu",
+      "file": "components/figma/cd-kh-040100-dk/DropdownThemTu.tsx"
+    },
+    {
+      "nodeId": "6015:107468",
+      "component": "TooltipCumCuaMuc",
+      "file": "components/figma/shared/TooltipCumCuaMuc.tsx"
+    }
+  ],
+  "idAlias": {
+    "6015:107468": "5004:24976",
+    "6015:107469": "5004:24977"
+  }
 }

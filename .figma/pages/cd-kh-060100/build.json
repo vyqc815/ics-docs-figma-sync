@@ -1,6 +1,22 @@
 {
   "route": "/bai-tap-ve-nha/btvn",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-kh-060100/index.tsx",
   "docFile": "docs/pages/bai-tap-ve-nha/btvn.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "5491:346400",
+      "component": "Content",
+      "file": "components/figma/cd-kh-060100/Content.tsx"
+    },
+    {
+      "nodeId": "5491:346756",
+      "component": "SidebarMenuCd7",
+      "file": "components/figma/shared/SidebarMenuCd7.tsx"
+    },
+    {
+      "nodeId": "5491:346757",
+      "component": "Header6",
+      "file": "components/figma/shared/Header6.tsx"
+    }
+  ]
 }

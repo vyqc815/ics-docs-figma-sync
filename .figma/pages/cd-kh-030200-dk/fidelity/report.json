@@ -1,0 +1,796 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1090,
+    "mismatched": 22022,
+    "percent": 1.403,
+    "shapePercent": 0.143,
+    "textPercent": 5.15,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "6015:64076",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+      "pixels": 909,
+      "percent": 19.3
+    },
+    {
+      "id": "6015:64132",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 4)",
+      "pixels": 919,
+      "percent": 19.2
+    },
+    {
+      "id": "6015:64094",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 2)",
+      "pixels": 902,
+      "percent": 18.8
+    },
+    {
+      "id": "6015:64150",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 5)",
+      "pixels": 900,
+      "percent": 18.8
+    },
+    {
+      "id": "6015:64114",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 3)",
+      "pixels": 884,
+      "percent": 18.5
+    },
+    {
+      "id": "I6015:64295;4901:220689;2245:87908",
+      "name": "Label",
+      "pixels": 308,
+      "percent": 13.1
+    },
+    {
+      "id": "I6015:64295;4901:220688;2245:87914",
+      "name": "Label",
+      "pixels": 271,
+      "percent": 11.6
+    },
+    {
+      "id": "6015:64095",
+      "name": "- Chủ đề Từ vựng HSK1 (phần 2): Con người, Cuộc sống & Văn hóa|- Cấu trúc Ngữ pháp HSK1 (phần 2): Liên kết, Hành động & Biểu đạt|- Luyện tập tổng hợp HSK1 (phần 2), Kỹ năng Nghe - Nói - Đọc hiểu",
+      "pixels": 2498,
+      "percent": 8.2
+    },
+    {
+      "id": "6015:64077",
+      "name": "- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu",
+      "pixels": 2468,
+      "percent": 8.1
+    },
+    {
+      "id": "6015:64115",
+      "name": "- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu",
+      "pixels": 2468,
+      "percent": 8.1
+    },
+    {
+      "id": "6015:64133",
+      "name": "- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu",
+      "pixels": 2468,
+      "percent": 8.1
+    },
+    {
+      "id": "6015:64151",
+      "name": "- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu",
+      "pixels": 2468,
+      "percent": 8.1
+    },
+    {
+      "id": "I6015:64295;5491:336922;2245:87908",
+      "name": "Label",
+      "pixels": 142,
+      "percent": 6.1
+    },
+    {
+      "id": "I6015:64080;1067:2468",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 5.2
+    },
+    {
+      "id": "I6015:64098;1067:2468",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 5.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 1136,
+      "y": 144,
+      "width": 80,
+      "height": 24,
+      "pixels": 308,
+      "node": {
+        "id": "I6015:64167;2808:44039",
+        "name": "Công khai",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1136,
+      "y": 344,
+      "width": 80,
+      "height": 24,
+      "pixels": 308,
+      "node": {
+        "id": "I6015:64180;2808:44039",
+        "name": "Công khai",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1120,
+      "y": 432,
+      "width": 296,
+      "height": 40,
+      "pixels": 203,
+      "node": {
+        "id": "I6015:64191;5056:365853",
+        "name": "Placeholder",
+        "role": "text"
+      }
+    },
+    {
+      "x": 416,
+      "y": 88,
+      "width": 88,
+      "height": 40,
+      "pixels": 114,
+      "node": {
+        "id": "I6015:64060;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text"
+      }
+    },
+    {
+      "x": 416,
+      "y": 256,
+      "width": 80,
+      "height": 8,
+      "pixels": 73,
+      "node": {
+        "id": "6015:64080",
+        "name": "Background+Border",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 416,
+      "y": 408,
+      "width": 80,
+      "height": 8,
+      "pixels": 73,
+      "node": {
+        "id": "6015:64098",
+        "name": "Background+Border",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 416,
+      "y": 552,
+      "width": 80,
+      "height": 16,
+      "pixels": 73,
+      "node": {
+        "id": "6015:64118",
+        "name": "Background+Border",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 416,
+      "y": 704,
+      "width": 80,
+      "height": 16,
+      "pixels": 73,
+      "node": {
+        "id": "6015:64136",
+        "name": "Background+Border",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 416,
+      "y": 856,
+      "width": 80,
+      "height": 8,
+      "pixels": 73,
+      "node": {
+        "id": "6015:64154",
+        "name": "Background+Border",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 416,
+      "y": 232,
+      "width": 80,
+      "height": 16,
+      "pixels": 72,
+      "node": {
+        "id": "6015:64080",
+        "name": "Background+Border",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 416,
+      "y": 384,
+      "width": 80,
+      "height": 8,
+      "pixels": 72,
+      "node": {
+        "id": "6015:64083",
+        "name": "Margin",
+        "role": "container"
+      }
+    },
+    {
+      "x": 416,
+      "y": 536,
+      "width": 80,
+      "height": 8,
+      "pixels": 72,
+      "node": {
+        "id": "6015:64118",
+        "name": "Background+Border",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 416,
+      "y": 688,
+      "width": 80,
+      "height": 8,
+      "pixels": 72,
+      "node": {
+        "id": "I6015:64136;1067:2468",
+        "name": "Label",
+        "role": "text"
+      }
+    },
+    {
+      "x": 416,
+      "y": 832,
+      "width": 80,
+      "height": 16,
+      "pixels": 72,
+      "node": {
+        "id": "6015:64154",
+        "name": "Background+Border",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 104,
+      "y": 120,
+      "width": 24,
+      "height": 32,
+      "pixels": 58,
+      "node": {
+        "id": "I6015:64295;4901:220686;2245:87816",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 752,
+      "width": 24,
+      "height": 32,
+      "pixels": 58,
+      "node": {
+        "id": "I6015:64295;4901:220697;2245:87816",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 856,
+      "width": 16,
+      "height": 24,
+      "pixels": 45,
+      "node": {
+        "id": "I6015:64295;4901:220699;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 176,
+      "width": 16,
+      "height": 24,
+      "pixels": 42,
+      "node": {
+        "id": "I6015:64295;4901:220687;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 1048,
+      "width": 16,
+      "height": 24,
+      "pixels": 42,
+      "node": {
+        "id": "I6015:64295;5491:349856;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 80,
+      "width": 8,
+      "height": 32,
+      "pixels": 40,
+      "node": {
+        "id": "I6015:64295;4901:220681",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 1000,
+      "width": 24,
+      "height": 24,
+      "pixels": 27,
+      "node": {
+        "id": "I6015:64295;5491:349847;2245:87825",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 656,
+      "width": 16,
+      "height": 24,
+      "pixels": 23,
+      "node": {
+        "id": "I6015:64295;4901:220695;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 272,
+      "width": 16,
+      "height": 24,
+      "pixels": 22,
+      "node": {
+        "id": "I6015:64295;4901:220689;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 808,
+      "width": 16,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "I6015:64295;4901:220698;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 320,
+      "width": 16,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "I6015:64295;4901:220690;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 416,
+      "width": 16,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "I6015:64295;5491:343746;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 608,
+      "width": 16,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "I6015:64295;4901:220694;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 512,
+      "width": 16,
+      "height": 24,
+      "pixels": 17,
+      "node": {
+        "id": "I6015:64295;4901:220692;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 712,
+      "width": 16,
+      "height": 16,
+      "pixels": 15,
+      "node": {
+        "id": "I6015:64295;4901:220696;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 952,
+      "width": 16,
+      "height": 24,
+      "pixels": 15,
+      "node": {
+        "id": "I6015:64295;4901:220701;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 286,
+    "missing": [],
+    "withinThreshold": 286,
+    "buckets": {
+      "≤0.5px": 276,
+      "≤1px": 281,
+      "≤2px": 286,
+      "≤4px": 286,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6015:64132",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 4)",
+        "role": "text",
+        "delta": 1.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64094",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 2)",
+        "role": "text",
+        "delta": 1.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64114",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 3)",
+        "role": "text",
+        "delta": 1.45,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.45,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64076",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+        "role": "text",
+        "delta": 1.2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.2,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64150",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 5)",
+        "role": "text",
+        "delta": 1.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64078",
+        "name": "Frame 427321971",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64096",
+        "name": "Frame 427321971",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64116",
+        "name": "Frame 427321971",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64134",
+        "name": "Frame 427321971",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64152",
+        "name": "Frame 427321971",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64351",
+        "name": "HSK1 · Sơ cấp 1",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64352",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64354",
+        "name": "HSK2 · Sơ cấp 2",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64355",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64357",
+        "name": "HSK3 · Sơ cấp 3",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64358",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64360",
+        "name": "HSK4 · Trung cấp 1",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64361",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64363",
+        "name": "HSK5 · Trung cấp",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64364",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64366",
+        "name": "HSK6 · Cao cấp",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64367",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64080",
+        "name": "Background+Border",
+        "role": "instance",
+        "delta": 0.33,
+        "dx": 0.23,
+        "dy": 0,
+        "dw": 0.33,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64080;1067:2468",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.33,
+        "dx": 0.23,
+        "dy": 0,
+        "dw": 0.33,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64098",
+        "name": "Background+Border",
+        "role": "instance",
+        "delta": 0.33,
+        "dx": 0.23,
+        "dy": 0,
+        "dw": 0.33,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.56,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/hoc-ky/bai-hoc-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

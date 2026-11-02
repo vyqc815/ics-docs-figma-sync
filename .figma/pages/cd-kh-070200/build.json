@@ -1,6 +1,22 @@
 {
   "route": "/thu-vien/ky-nang/nghe",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-kh-070200/index.tsx",
   "docFile": "docs/pages/thu-vien/ky-nang/nghe.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "5491:353762",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070200/Content.tsx"
+    },
+    {
+      "nodeId": "5491:354490",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-070200/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "5491:354132",
+      "component": "Header8",
+      "file": "components/figma/shared/Header8.tsx"
+    }
+  ]
 }

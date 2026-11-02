@@ -1,0 +1,724 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 12074,
+    "percent": 1.035,
+    "shapePercent": 0.494,
+    "textPercent": 2.475,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6015:65839;4901:216086;2245:87774",
+      "name": "Label",
+      "pixels": 445,
+      "percent": 15.5
+    },
+    {
+      "id": "6015:66019",
+      "name": "1",
+      "pixels": 24,
+      "percent": 13.3
+    },
+    {
+      "id": "I6015:65839;4901:216102;2245:87820",
+      "name": "Label",
+      "pixels": 221,
+      "percent": 8.6
+    },
+    {
+      "id": "I6015:65839;4901:216096;2245:87820",
+      "name": "Label",
+      "pixels": 204,
+      "percent": 8
+    },
+    {
+      "id": "6015:65908",
+      "name": "Mô tả khoá học",
+      "pixels": 154,
+      "percent": 6.5
+    },
+    {
+      "id": "I6015:65839;4901:216088;2245:87768",
+      "name": "Label",
+      "pixels": 171,
+      "percent": 5.9
+    },
+    {
+      "id": "I6015:65839;4901:216089;2245:87820",
+      "name": "Label",
+      "pixels": 145,
+      "percent": 5.7
+    },
+    {
+      "id": "6015:65939",
+      "name": "Tiếng Trung Sơ Cấp HSK2",
+      "pixels": 209,
+      "percent": 4.9
+    },
+    {
+      "id": "6015:65958",
+      "name": "Tiếng Trung Tổng Hợp HSK3",
+      "pixels": 214,
+      "percent": 4.8
+    },
+    {
+      "id": "I6015:65984;2706:40462",
+      "name": "Value",
+      "pixels": 10,
+      "percent": 4.8
+    },
+    {
+      "id": "I6015:66002;2706:40462",
+      "name": "Value",
+      "pixels": 10,
+      "percent": 4.8
+    },
+    {
+      "id": "I6015:65839;4901:216087;2245:87768",
+      "name": "Label",
+      "pixels": 133,
+      "percent": 4.6
+    },
+    {
+      "id": "6015:65960",
+      "name": "- Mở Rộng Ngữ Pháp HSK3 Cốt Lõi: 把, 被, 比, 了 / 过 / 着 - 20+ Chủ Đề Quen Thuộc: Nhà Ở, Ăn Uống, Công Việc, Sức Khỏe, Học Tập - 100+ Hội Thoại Thực Tế: Nhà Hàng, Nơi Làm Việc, Hàng Xóm, Tình Huống Đời Sống - Rèn Nói – Nghe – Viết Ngắn, Tập Trung Phản Xạ Và Diễn Đạt Ý Kiến - Lồng Ghép Kiến Thức Về Đời Sống Và Môi Trường Làm Việc Tại Trung Quốc",
+      "pixels": 2150,
+      "percent": 4.3
+    },
+    {
+      "id": "6015:65916",
+      "name": "Trạng thái",
+      "pixels": 67,
+      "percent": 4.1
+    },
+    {
+      "id": "6015:65922",
+      "name": "Phát âm, 398 từ vựng và 59 điểm ngữ pháp nền tảng HSK1",
+      "pixels": 411,
+      "percent": 4
+    }
+  ],
+  "regions": [
+    {
+      "x": 272,
+      "y": 584,
+      "width": 1128,
+      "height": 80,
+      "pixels": 3253,
+      "node": {
+        "id": "6015:66012",
+        "name": "Add New Bar · Thêm nội dung khoá học mới",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1152,
+      "y": 480,
+      "width": 136,
+      "height": 40,
+      "pixels": 551,
+      "node": {
+        "id": "I6015:65986;1474:15129",
+        "name": "Vô hiệu",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1152,
+      "y": 528,
+      "width": 136,
+      "height": 48,
+      "pixels": 542,
+      "node": {
+        "id": "I6015:66004;1474:15129",
+        "name": "Vô hiệu",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1152,
+      "y": 384,
+      "width": 136,
+      "height": 8,
+      "pixels": 373,
+      "node": {
+        "id": "6015:65968",
+        "name": "Atom/Status",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1152,
+      "y": 168,
+      "width": 136,
+      "height": 16,
+      "pixels": 238,
+      "node": {
+        "id": "6015:65930",
+        "name": "Atom/Status",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1160,
+      "y": 200,
+      "width": 120,
+      "height": 16,
+      "pixels": 235,
+      "node": {
+        "id": "6015:65930",
+        "name": "Atom/Status",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 488,
+      "width": 16,
+      "height": 24,
+      "pixels": 76,
+      "node": {
+        "id": "6015:65988",
+        "name": "Button · Copy",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 544,
+      "width": 16,
+      "height": 24,
+      "pixels": 76,
+      "node": {
+        "id": "6015:66006",
+        "name": "Button · Copy",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1112,
+      "y": 512,
+      "width": 24,
+      "height": 8,
+      "pixels": 58,
+      "node": {
+        "id": "6015:65975",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1112,
+      "y": 560,
+      "width": 24,
+      "height": 8,
+      "pixels": 58,
+      "node": {
+        "id": "6015:65993",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1112,
+      "y": 488,
+      "width": 24,
+      "height": 8,
+      "pixels": 57,
+      "node": {
+        "id": "I6015:65984;2706:40462",
+        "name": "Value",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1112,
+      "y": 536,
+      "width": 24,
+      "height": 8,
+      "pixels": 57,
+      "node": {
+        "id": "6015:66002",
+        "name": "Atom/Number Badge",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1384,
+      "y": 488,
+      "width": 16,
+      "height": 24,
+      "pixels": 32,
+      "node": {
+        "id": "6015:65990",
+        "name": "Button",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1384,
+      "y": 544,
+      "width": 16,
+      "height": 16,
+      "pixels": 31,
+      "node": {
+        "id": "6015:66008",
+        "name": "Button",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1112,
+      "y": 232,
+      "width": 24,
+      "height": 8,
+      "pixels": 20,
+      "node": {
+        "id": "I6015:65946;2706:40460",
+        "name": "Value",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1040,
+      "y": 496,
+      "width": 16,
+      "height": 16,
+      "pixels": 17,
+      "node": {
+        "id": "I6015:65982;2015:30310",
+        "name": "Dropdown Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1040,
+      "y": 544,
+      "width": 16,
+      "height": 16,
+      "pixels": 17,
+      "node": {
+        "id": "I6015:66000;2015:30310",
+        "name": "Dropdown Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1112,
+      "y": 256,
+      "width": 24,
+      "height": 8,
+      "pixels": 14,
+      "node": {
+        "id": "6015:65937",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 960,
+      "y": 544,
+      "width": 16,
+      "height": 16,
+      "pixels": 12,
+      "node": {
+        "id": "I6015:65998;2015:30346",
+        "name": "Dropdown Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1304,
+      "y": 544,
+      "width": 16,
+      "height": 16,
+      "pixels": 9,
+      "node": {
+        "id": "6015:66005",
+        "name": "ARROW DETAIL",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 248,
+      "y": 24,
+      "width": 8,
+      "height": 16,
+      "pixels": 8,
+      "node": {
+        "id": "6015:65889",
+        "name": "Component 2",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1304,
+      "y": 496,
+      "width": 16,
+      "height": 16,
+      "pixels": 8,
+      "node": {
+        "id": "6015:65987",
+        "name": "ARROW DETAIL",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 7,
+      "node": {
+        "id": "I6015:65839;4901:216067",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I6015:65839;4901:216067",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 289,
+    "missing": [],
+    "withinThreshold": 289,
+    "buckets": {
+      "≤0.5px": 191,
+      "≤1px": 216,
+      "≤2px": 289,
+      "≤4px": 289,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6015:65891",
+        "name": "Container",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65899",
+        "name": "Section - CourseTableCard",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65900",
+        "name": "Container",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65901",
+        "name": "Table",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65918",
+        "name": "Body",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65956",
+        "name": "Row",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65959",
+        "name": "Item",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65960",
+        "name": "- Mở Rộng Ngữ Pháp HSK3 Cốt Lõi: 把, 被, 比, 了 / 过 / 着 - 20+ Chủ Đề Quen Thuộc: Nhà Ở, Ăn Uống, Công Việc, Sức Khỏe, Học Tập - 100+ Hội Thoại Thực Tế: Nhà Hàng, Nơi Làm Việc, Hàng Xóm, Tình Huống Đời Sống - Rèn Nói – Nghe – Viết Ngắn, Tập Trung Phản Xạ Và Diễn Đạt Ý Kiến - Lồng Ghép Kiến Thức Về Đời Sống Và Môi Trường Làm Việc Tại Trung Quốc",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65975",
+        "name": "Row",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65976",
+        "name": "ID Badge",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:65976;1994:25852",
+        "name": "ID",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65977",
+        "name": "Tiếng Trung Trung Cấp HSK4",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65978",
+        "name": "Nhập mô tả khoá học",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65979",
+        "name": "Data",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65980",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:65980;2015:30345",
+        "name": "Badge",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:65980;2015:30346",
+        "name": "Dropdown Icon",
+        "role": "icon",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65981",
+        "name": "Data",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65982",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:65982;2015:30309",
+        "name": "Badge",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:65982;2015:30310",
+        "name": "Dropdown Icon",
+        "role": "icon",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65983",
+        "name": "Data",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65984",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:65984;2706:40462",
+        "name": "Value",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65985",
+        "name": "Data",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/quan-ly-khoa-hoc-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

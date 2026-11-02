@@ -1,0 +1,508 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 910,
+    "mismatched": 1148,
+    "percent": 0.088,
+    "shapePercent": 0.007,
+    "textPercent": 0.802,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4915:255361;4901:220689;2245:87908",
+      "name": "Label",
+      "pixels": 184,
+      "percent": 7.8
+    },
+    {
+      "id": "I6006:130496;2015:31836;6006:130500;2015:30564",
+      "name": "Label",
+      "pixels": 81,
+      "percent": 4.6
+    },
+    {
+      "id": "497:18296",
+      "name": "Kiểm tra giữa kỳ 3 HSK1",
+      "pixels": 135,
+      "percent": 4.2
+    },
+    {
+      "id": "497:18319",
+      "name": "Kiểm tra cuối kỳ 3 HSK1",
+      "pixels": 100,
+      "percent": 3.2
+    },
+    {
+      "id": "I6006:130496;2015:31836;6006:130498;2015:30575",
+      "name": "Label",
+      "pixels": 46,
+      "percent": 2.6
+    },
+    {
+      "id": "I4915:255361;5491:336922;2245:87908",
+      "name": "Label",
+      "pixels": 55,
+      "percent": 2.3
+    },
+    {
+      "id": "I6006:130496;2015:31836;6006:130499;2015:30564",
+      "name": "Label",
+      "pixels": 28,
+      "percent": 1.6
+    },
+    {
+      "id": "I4273:160653;4019:24214",
+      "name": "Đắc Nhân",
+      "pixels": 31,
+      "percent": 1.6
+    },
+    {
+      "id": "I4915:255361;4901:220694;2245:87908",
+      "name": "Label",
+      "pixels": 32,
+      "percent": 1.4
+    },
+    {
+      "id": "I4915:255361;4901:220700;2245:87908",
+      "name": "Label",
+      "pixels": 27,
+      "percent": 1.2
+    },
+    {
+      "id": "I5614:59006;2015:36008",
+      "name": "Value",
+      "pixels": 8,
+      "percent": 1.1
+    },
+    {
+      "id": "I2860:13738;2008:31885",
+      "name": "CD",
+      "pixels": 3,
+      "percent": 0.8
+    },
+    {
+      "id": "I2860:37178;1207:1810",
+      "name": "30m",
+      "pixels": 4,
+      "percent": 0.7
+    },
+    {
+      "id": "I2860:37190;1207:1810",
+      "name": "30m",
+      "pixels": 4,
+      "percent": 0.7
+    },
+    {
+      "id": "I2860:37040;5056:365853",
+      "name": "Placeholder",
+      "pixels": 32,
+      "percent": 0.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 1144,
+      "y": 456,
+      "width": 24,
+      "height": 16,
+      "pixels": 42,
+      "node": {
+        "id": "I6006:130496;2015:31836;6006:130500;2015:30561",
+        "name": "Leading",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I4915:255361;4901:220681",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I4915:255361;4901:220687;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 872,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I4915:255361;4901:220699;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1152,
+      "y": 432,
+      "width": 8,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "I6006:130496;2015:31836;6006:130499;2015:30561",
+        "name": "Leading",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4915:255361;4901:220731",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 222,
+    "missing": [],
+    "withinThreshold": 222,
+    "buckets": {
+      "≤0.5px": 222,
+      "≤1px": 222,
+      "≤2px": 222,
+      "≤4px": 222,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "497:18295",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "497:18296",
+        "name": "Kiểm tra giữa kỳ 3 HSK1",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "497:18318",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "497:18319",
+        "name": "Kiểm tra cuối kỳ 3 HSK1",
+        "role": "text",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2860:37016;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2860:37029;2808:44784",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:255361;4901:220632",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:255361;4901:220639",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:255361;4901:220652",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:255361;4901:220653",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:255361;4901:220654",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:255361;4901:220657",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "497:18278",
+        "name": "Content Body (Split Layout: Form & Term List)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "497:18279",
+        "name": "Main - Left Column: Form & Details",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "497:18280",
+        "name": "Navigation Subtabs",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "497:18281",
+        "name": "Component 2",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I497:18281;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I497:18281;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "497:18282",
+        "name": "Component 3",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I497:18282;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I497:18282;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "497:18283",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I497:18283;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I497:18283;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I497:18283;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.34,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/hoc-ky/kiem-tra",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

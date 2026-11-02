@@ -1,0 +1,676 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 6257,
+    "percent": 0.536,
+    "shapePercent": 0.185,
+    "textPercent": 1.61,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "5035:378519",
+      "name": "1",
+      "pixels": 25,
+      "percent": 13.9
+    },
+    {
+      "id": "I2706:42982;2015:30309",
+      "name": "Badge",
+      "pixels": 45,
+      "percent": 6.7
+    },
+    {
+      "id": "1160:1973",
+      "name": "Mô tả khoá học",
+      "pixels": 149,
+      "percent": 6.3
+    },
+    {
+      "id": "I2706:42978;2015:30345",
+      "name": "Badge",
+      "pixels": 126,
+      "percent": 6.2
+    },
+    {
+      "id": "I2706:42923;2706:40462",
+      "name": "Value",
+      "pixels": 10,
+      "percent": 4.8
+    },
+    {
+      "id": "I2706:42980;2706:40462",
+      "name": "Value",
+      "pixels": 10,
+      "percent": 4.8
+    },
+    {
+      "id": "1160:1981",
+      "name": "Trạng thái",
+      "pixels": 67,
+      "percent": 4.1
+    },
+    {
+      "id": "1160:2019",
+      "name": "Tiếng Trung Sơ Cấp HSK2",
+      "pixels": 175,
+      "percent": 4.1
+    },
+    {
+      "id": "1160:2050",
+      "name": "Tiếng Trung Tổng Hợp HSK3",
+      "pixels": 170,
+      "percent": 3.8
+    },
+    {
+      "id": "I4915:256174;4901:216096;2245:87820",
+      "name": "Label",
+      "pixels": 87,
+      "percent": 3.4
+    },
+    {
+      "id": "1160:2053",
+      "name": "- Mở Rộng Ngữ Pháp HSK3 Cốt Lõi: 把, 被, 比, 了 / 过 / 着 - 20+ Chủ Đề Quen Thuộc: Nhà Ở, Ăn Uống, Công Việc, Sức Khỏe, Học Tập - 100+ Hội Thoại Thực Tế: Nhà Hàng, Nơi Làm Việc, Hàng Xóm, Tình Huống Đời Sống - Rèn Nói – Nghe – Viết Ngắn, Tập Trung Phản Xạ Và Diễn Đạt Ý Kiến - Lồng Ghép Kiến Thức Về Đời Sống Và Môi Trường Làm Việc Tại Trung Quốc",
+      "pixels": 1690,
+      "percent": 3.4
+    },
+    {
+      "id": "1160:1971",
+      "name": "Tên khoá học",
+      "pixels": 66,
+      "percent": 3.3
+    },
+    {
+      "id": "1160:1990",
+      "name": "Phát âm, 398 từ vựng và 59 điểm ngữ pháp nền tảng HSK1",
+      "pixels": 348,
+      "percent": 3.3
+    },
+    {
+      "id": "I4915:256174;4901:216102;2245:87820",
+      "name": "Label",
+      "pixels": 83,
+      "percent": 3.2
+    },
+    {
+      "id": "I1994:25859;1994:25848",
+      "name": "ID",
+      "pixels": 38,
+      "percent": 3.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 1152,
+      "y": 528,
+      "width": 136,
+      "height": 48,
+      "pixels": 585,
+      "node": {
+        "id": "I2706:42984;1474:15129",
+        "name": "Vô hiệu",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1152,
+      "y": 480,
+      "width": 136,
+      "height": 40,
+      "pixels": 584,
+      "node": {
+        "id": "I1474:15166;1474:15129",
+        "name": "Vô hiệu",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1152,
+      "y": 384,
+      "width": 136,
+      "height": 8,
+      "pixels": 218,
+      "node": {
+        "id": "1474:15156",
+        "name": "Atom/Status",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1336,
+      "y": 488,
+      "width": 24,
+      "height": 24,
+      "pixels": 88,
+      "node": {
+        "id": "5035:378505",
+        "name": "Button · Copy",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1336,
+      "y": 544,
+      "width": 24,
+      "height": 24,
+      "pixels": 87,
+      "node": {
+        "id": "5035:378509",
+        "name": "Button · Copy",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1360,
+      "y": 592,
+      "width": 32,
+      "height": 32,
+      "pixels": 77,
+      "node": {
+        "id": "I2702:48160;5056:365850",
+        "name": "Action Button",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1328,
+      "y": 656,
+      "width": 32,
+      "height": 8,
+      "pixels": 70,
+      "node": {
+        "id": "5035:378518",
+        "name": "Trang 1",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1112,
+      "y": 504,
+      "width": 24,
+      "height": 16,
+      "pixels": 67,
+      "node": {
+        "id": "2706:42923",
+        "name": "Atom/Number Badge",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1112,
+      "y": 560,
+      "width": 24,
+      "height": 8,
+      "pixels": 67,
+      "node": {
+        "id": "2706:42973",
+        "name": "Row",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1328,
+      "y": 632,
+      "width": 32,
+      "height": 16,
+      "pixels": 64,
+      "node": {
+        "id": "5035:378518",
+        "name": "Trang 1",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1112,
+      "y": 488,
+      "width": 24,
+      "height": 8,
+      "pixels": 60,
+      "node": {
+        "id": "I2706:42923;2706:40462",
+        "name": "Value",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1112,
+      "y": 536,
+      "width": 24,
+      "height": 16,
+      "pixels": 60,
+      "node": {
+        "id": "I2706:42980;2706:40462",
+        "name": "Value",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1040,
+      "y": 496,
+      "width": 16,
+      "height": 16,
+      "pixels": 25,
+      "node": {
+        "id": "I2011:26683;2015:30310",
+        "name": "Dropdown Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1040,
+      "y": 544,
+      "width": 16,
+      "height": 16,
+      "pixels": 25,
+      "node": {
+        "id": "I2706:42982;2015:30310",
+        "name": "Dropdown Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 960,
+      "y": 544,
+      "width": 16,
+      "height": 16,
+      "pixels": 22,
+      "node": {
+        "id": "I2706:42978;2015:30346",
+        "name": "Dropdown Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1304,
+      "y": 544,
+      "width": 16,
+      "height": 16,
+      "pixels": 18,
+      "node": {
+        "id": "2706:42988",
+        "name": "ARROW DETAIL",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1304,
+      "y": 496,
+      "width": 16,
+      "height": 16,
+      "pixels": 16,
+      "node": {
+        "id": "1391:14544",
+        "name": "ARROW DETAIL",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1296,
+      "y": 640,
+      "width": 16,
+      "height": 24,
+      "pixels": 6,
+      "node": {
+        "id": "5035:378516",
+        "name": "Trang ‹",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1376,
+      "y": 640,
+      "width": 8,
+      "height": 24,
+      "pixels": 6,
+      "node": {
+        "id": "5035:378528",
+        "name": "Trang ›",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1168,
+      "y": 352,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I2706:42930;2015:31836;2706:42929;2015:30561",
+        "name": "Leading",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 288,
+    "missing": [],
+    "withinThreshold": 288,
+    "buckets": {
+      "≤0.5px": 190,
+      "≤1px": 215,
+      "≤2px": 288,
+      "≤4px": 288,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "1160:1936",
+        "name": "Container",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:1964",
+        "name": "Section - CourseTableCard",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:1965",
+        "name": "Container",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:1966",
+        "name": "Table",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:1982",
+        "name": "Body",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:2045",
+        "name": "Row",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:2052",
+        "name": "Item",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:2053",
+        "name": "- Mở Rộng Ngữ Pháp HSK3 Cốt Lõi: 把, 被, 比, 了 / 过 / 着 - 20+ Chủ Đề Quen Thuộc: Nhà Ở, Ăn Uống, Công Việc, Sức Khỏe, Học Tập - 100+ Hội Thoại Thực Tế: Nhà Hàng, Nơi Làm Việc, Hàng Xóm, Tình Huống Đời Sống - Rèn Nói – Nghe – Viết Ngắn, Tập Trung Phản Xạ Và Diễn Đạt Ý Kiến - Lồng Ghép Kiến Thức Về Đời Sống Và Môi Trường Làm Việc Tại Trung Quốc",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:2111",
+        "name": "Row",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1994:25863",
+        "name": "ID Badge",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1994:25863;1994:25852",
+        "name": "ID",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:2116",
+        "name": "Tiếng Trung Trung Cấp HSK4",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:2118",
+        "name": "Nhập mô tả khoá học",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:2119",
+        "name": "Data",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2015:30367",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2015:30367;2015:30345",
+        "name": "Badge",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2015:30367;2015:30346",
+        "name": "Dropdown Icon",
+        "role": "icon",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1160:2124",
+        "name": "Data",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2011:26683",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2011:26683;2015:30309",
+        "name": "Badge",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2011:26683;2015:30310",
+        "name": "Dropdown Icon",
+        "role": "icon",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:42922",
+        "name": "Data",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:42923",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2706:42923;2706:40462",
+        "name": "Value",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1360:8168",
+        "name": "Data",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/quan-ly-khoa-hoc",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

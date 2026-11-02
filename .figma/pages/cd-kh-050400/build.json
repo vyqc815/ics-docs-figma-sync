@@ -1,6 +1,22 @@
 {
   "route": "/ky-nang-s6/noi",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-kh-050400/index.tsx",
   "docFile": "docs/pages/ky-nang-s6/noi.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "6646:83607",
+      "component": "Content",
+      "file": "components/figma/cd-kh-050400/Content.tsx"
+    },
+    {
+      "nodeId": "6646:83960",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-050400/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6646:83961",
+      "component": "Header",
+      "file": "components/figma/cd-kh-050400/Header.tsx"
+    }
+  ]
 }

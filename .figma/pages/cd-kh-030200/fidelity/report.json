@@ -1,0 +1,496 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1090,
+    "mismatched": 19405,
+    "percent": 1.236,
+    "shapePercent": 0.004,
+    "textPercent": 5.039,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "497:20730",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+      "pixels": 781,
+      "percent": 16.6
+    },
+    {
+      "id": "2860:12884",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 4)",
+      "pixels": 792,
+      "percent": 16.5
+    },
+    {
+      "id": "2860:12822",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 2)",
+      "pixels": 773,
+      "percent": 16.1
+    },
+    {
+      "id": "2860:12915",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 5)",
+      "pixels": 773,
+      "percent": 16.1
+    },
+    {
+      "id": "2860:12853",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 3)",
+      "pixels": 759,
+      "percent": 15.9
+    },
+    {
+      "id": "497:20732",
+      "name": "- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu",
+      "pixels": 2657,
+      "percent": 8.7
+    },
+    {
+      "id": "2860:12823",
+      "name": "- Chủ đề Từ vựng HSK1 (phần 2): Con người, Cuộc sống & Văn hóa|- Cấu trúc Ngữ pháp HSK1 (phần 2): Liên kết, Hành động & Biểu đạt|- Luyện tập tổng hợp HSK1 (phần 2), Kỹ năng Nghe - Nói - Đọc hiểu",
+      "pixels": 2657,
+      "percent": 8.7
+    },
+    {
+      "id": "2860:12854",
+      "name": "- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu",
+      "pixels": 2657,
+      "percent": 8.7
+    },
+    {
+      "id": "2860:12885",
+      "name": "- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu",
+      "pixels": 2657,
+      "percent": 8.7
+    },
+    {
+      "id": "2860:12916",
+      "name": "- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu",
+      "pixels": 2657,
+      "percent": 8.7
+    },
+    {
+      "id": "I4915:255090;4901:220689;2245:87908",
+      "name": "Label",
+      "pixels": 184,
+      "percent": 7.8
+    },
+    {
+      "id": "I1076:6693;1067:2468",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 5.2
+    },
+    {
+      "id": "I2860:12826;1067:2468",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 5.2
+    },
+    {
+      "id": "I2860:12857;1067:2468",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 5.2
+    },
+    {
+      "id": "I2860:12888;1067:2468",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 5.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I4915:255090;4901:220681",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I4915:255090;4901:220687;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 872,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I4915:255090;4901:220699;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 1064,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I4915:255090;5491:349856;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 936,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4915:255090;4901:220731",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 285,
+    "missing": [],
+    "withinThreshold": 285,
+    "buckets": {
+      "≤0.5px": 275,
+      "≤1px": 280,
+      "≤2px": 285,
+      "≤4px": 285,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2860:12884",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 4)",
+        "role": "text",
+        "delta": 1.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2860:12822",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 2)",
+        "role": "text",
+        "delta": 1.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2860:12853",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 3)",
+        "role": "text",
+        "delta": 1.45,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.45,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "497:20730",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+        "role": "text",
+        "delta": 1.2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.2,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2860:12915",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 5)",
+        "role": "text",
+        "delta": 1.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1076:6697",
+        "name": "Frame 427321971",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2860:12824",
+        "name": "Frame 427321971",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2860:12855",
+        "name": "Frame 427321971",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2860:12886",
+        "name": "Frame 427321971",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2860:12917",
+        "name": "Frame 427321971",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58965",
+        "name": "HSK1 · Sơ cấp 1",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58966",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58968",
+        "name": "HSK2 · Sơ cấp 2",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58969",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58971",
+        "name": "HSK3 · Sơ cấp 3",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58972",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58974",
+        "name": "HSK4 · Trung cấp 1",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58975",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58977",
+        "name": "HSK5 · Trung cấp",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58978",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58980",
+        "name": "HSK6 · Cao cấp",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:58981",
+        "name": "4 kỳ",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.42,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1076:6693",
+        "name": "Background+Border",
+        "role": "instance",
+        "delta": 0.33,
+        "dx": 0.23,
+        "dy": 0,
+        "dw": 0.33,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1076:6693;1067:2468",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.33,
+        "dx": 0.23,
+        "dy": 0,
+        "dw": 0.33,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2860:12826",
+        "name": "Background+Border",
+        "role": "instance",
+        "delta": 0.33,
+        "dx": 0.23,
+        "dy": 0,
+        "dw": 0.33,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.56,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/hoc-ky/bai-hoc",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

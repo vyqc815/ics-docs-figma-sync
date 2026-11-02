@@ -1,6 +1,22 @@
 {
   "route": "/chi-tiet-khoa-hoc/lo-trinh-dk",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-kh-020200-dk/index.tsx",
   "docFile": "docs/pages/chi-tiet-khoa-hoc/lo-trinh-dk.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "6015:66575",
+      "component": "MainWorkspacecontainer",
+      "file": "components/figma/cd-kh-020200-dk/MainWorkspacecontainer.tsx"
+    },
+    {
+      "nodeId": "6015:67542",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-020200-dk/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6015:67543",
+      "component": "Header",
+      "file": "components/figma/cd-kh-020200-dk/Header.tsx"
+    }
+  ]
 }

@@ -1,6 +1,22 @@
 {
   "route": "/hoc-ky/thong-tin",
-  "pageFile": "",
+  "pageFile": "components/figma/cd-kh-030100/index.tsx",
   "docFile": "docs/pages/hoc-ky/thong-tin.md",
-  "sections": []
+  "sections": [
+    {
+      "nodeId": "497:29462",
+      "component": "Section1",
+      "file": "components/figma/cd-kh-030100/Section1.tsx"
+    },
+    {
+      "nodeId": "4915:255632",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/shared/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "2860:13641",
+      "component": "Header",
+      "file": "components/figma/shared/Header.tsx"
+    }
+  ]
 }

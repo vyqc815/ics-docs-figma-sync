@@ -1,0 +1,496 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1274,
+    "mismatched": 2532,
+    "percent": 0.138,
+    "shapePercent": 0.003,
+    "textPercent": 0.963,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "5505:23292",
+      "name": "我 / 叫 / 王明",
+      "pixels": 235,
+      "percent": 12
+    },
+    {
+      "id": "5505:23692",
+      "name": "我 / 家 / 有 / 四口人",
+      "pixels": 267,
+      "percent": 10.2
+    },
+    {
+      "id": "I5491:355596;5491:352407;2245:87908",
+      "name": "Label",
+      "pixels": 184,
+      "percent": 7.8
+    },
+    {
+      "id": "5505:23347",
+      "name": "你 · 我 · 他 · 她",
+      "pixels": 161,
+      "percent": 7.6
+    },
+    {
+      "id": "I5505:23327;2015:30513",
+      "name": "Label",
+      "pixels": 66,
+      "percent": 6.2
+    },
+    {
+      "id": "I5505:23381;2015:30513",
+      "name": "Label",
+      "pixels": 66,
+      "percent": 6.2
+    },
+    {
+      "id": "I5505:23408;2015:30513",
+      "name": "Label",
+      "pixels": 66,
+      "percent": 6.2
+    },
+    {
+      "id": "I5505:23437;2015:30513",
+      "name": "Label",
+      "pixels": 66,
+      "percent": 6.2
+    },
+    {
+      "id": "I5505:23271;2015:30513",
+      "name": "Label",
+      "pixels": 46,
+      "percent": 3.8
+    },
+    {
+      "id": "I5505:23299;2015:30513",
+      "name": "Label",
+      "pixels": 46,
+      "percent": 3.8
+    },
+    {
+      "id": "I5505:23354;2015:30513",
+      "name": "Label",
+      "pixels": 46,
+      "percent": 3.8
+    },
+    {
+      "id": "I5505:23464;2015:30513",
+      "name": "Label",
+      "pixels": 46,
+      "percent": 3.8
+    },
+    {
+      "id": "I5505:23491;2015:30513",
+      "name": "Label",
+      "pixels": 46,
+      "percent": 3.8
+    },
+    {
+      "id": "I5505:23518;2015:30513",
+      "name": "Label",
+      "pixels": 46,
+      "percent": 3.8
+    },
+    {
+      "id": "I5505:23219;2015:30513",
+      "name": "Label",
+      "pixels": 52,
+      "percent": 3.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I5491:355596;5491:352399",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5491:355596;5491:352405;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 872,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5491:355596;5491:352419;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 1064,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5491:355596;5491:352423;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 1120,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I5491:355596;5491:352455",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 396,
+    "missing": [],
+    "withinThreshold": 396,
+    "buckets": {
+      "≤0.5px": 395,
+      "≤1px": 396,
+      "≤2px": 396,
+      "≤4px": 396,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5505:23672",
+        "name": "Gia đình Lý Hoa có mấy người?",
+        "role": "text",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23656",
+        "name": "— chưa có đáp án —",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23271",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5505:23271;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23299",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5505:23299;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23354",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5505:23354;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23464",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5505:23464;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23491",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5505:23491;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23518",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5505:23518;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23293",
+        "name": "Sắp xếp các từ thành câu đúng",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23693",
+        "name": "Sắp xếp các từ thành câu đúng",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23389",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5505:23389;1048:1255",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23499",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5505:23499;1048:1255",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23251",
+        "name": "Kiến thức / Kỹ năng",
+        "role": "text",
+        "delta": 0.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23512",
+        "name": "Chọn câu trả lời đúng",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:23485",
+        "name": "Chọn câu trả lời phù hợp",
+        "role": "text",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:22978",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5505:22979",
+        "name": "Ngân hàng câu hỏi dùng chung cho BTVN và Kiểm tra",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.56,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3108/thu-vien/bai-tap",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}
