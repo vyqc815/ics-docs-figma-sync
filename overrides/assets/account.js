@@ -140,13 +140,13 @@
     var f = form([
       field("Tên tài khoản", "text", "username", { autocomplete: "off", placeholder: "nguyen.van.a" }),
       role,
-      field("Mật khẩu (từ " + MIN + " ký tự)", "password", "password", { autocomplete: "new-password" }),
+      field("Mật khẩu", "password", "password", { autocomplete: "new-password" }),
     ], "Tạo tài khoản");
     f.querySelector("[data-close]").remove();
     f.addEventListener("submit", function (e) {
       e.preventDefault();
       var v = { username: f.username.value.trim(), role: f.role.value, password: f.password.value };
-      if (!/^[a-zA-Z0-9._-]{3,32}$/.test(v.username)) return fail(f, "Tên tài khoản 3-32 ký tự: chữ, số, dấu . _ -");
+      if (!/^[\p{L}\p{N}_.@-]{2,32}$/u.test(v.username)) return fail(f, "Tên tài khoản 2-32 ký tự, không có dấu cách");
       if (v.password.length < MIN) return fail(f, "Mật khẩu phải từ " + MIN + " ký tự");
       if (users.some(function (u) { return u.username === v.username; })) return fail(f, "Tài khoản này đã tồn tại");
       submitTo(f, "/api/users/save", v, function () { load(box); });
@@ -154,7 +154,7 @@
     box.append(f);
   }
   function openReset(box, u) {
-    var f = form([field("Mật khẩu mới cho " + u.username + " (từ " + MIN + " ký tự)", "password", "password", { autocomplete: "new-password" })],
+    var f = form([field("Mật khẩu mới cho " + u.username + " (từ " + MIN + " ký tự, chữ hoặc số đều được)", "password", "password", { autocomplete: "new-password" })],
       "Lưu mật khẩu");
     f.querySelector("[data-close]").removeAttribute("data-close");
     f.querySelector(".form-actions .btn").addEventListener("click", function () { f.remove(); });

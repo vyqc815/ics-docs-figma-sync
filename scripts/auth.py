@@ -68,7 +68,7 @@ def logout(sid):
 
 
 # ---------- Account management (web) ----------
-NAME = re.compile(r"^[a-zA-Z0-9._-]{3,32}$")
+NAME = re.compile(r"^[\w.@-]{2,32}$")  # chữ (có dấu cũng được), số, . _ - @; không dấu cách
 
 
 class AccountError(Exception):
@@ -100,8 +100,8 @@ def save_user(actor, username, role, password=None):
     users = load_users()
     if role not in ROLES:
         raise AccountError("Quyền không hợp lệ")
-    if not NAME.match(username or ""):
-        raise AccountError("Tên tài khoản 3-32 ký tự: chữ, số, dấu . _ -")
+    if not NAME.fullmatch(username or ""):
+        raise AccountError("Tên tài khoản 2-32 ký tự, không có dấu cách")
     exists = username in users
     if not exists and not password:
         raise AccountError("Tài khoản mới cần mật khẩu")
