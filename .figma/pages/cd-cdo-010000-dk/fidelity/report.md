@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/quan-ly-cap-do-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.152%; inside text boxes: 2.064% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.164%; inside text boxes: 2.236% (glyph rendering)
 - Boxes: 205/205 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 205, ≤1px: 205, ≤2px: 205, ≤4px: 205, >4px: 0
 
 ## Pixel regions (largest first)
@@ -19,18 +19,18 @@
 | Label (`I4056:145051;2245:87774`) | 13.4% |
 | Label (`I4056:145066;2245:87820`) | 9.5% |
 | Label (`I4056:145060;2245:87829`) | 8.6% |
-| Label (`I4056:145052;2245:87768`) | 6.5% |
+| Label (`I4056:145052;2245:87768`) | 6.6% |
+| Label (`I4056:145053;2245:87829`) | 6.5% |
 | Nhập môn tiếng trung (`4056:144952`) | 6.4% |
-| Label (`I4056:145053;2245:87829`) | 6.4% |
+| Label (`I4056:145055;2245:87858`) | 6.3% |
 | Tiếng trung sơ cấp 2 (`4056:144924`) | 5.7% |
 | Tiếng trung trung cấp 1 (`4056:144938`) | 5.3% |
-| Label (`I4056:145055;2245:87858`) | 4.4% |
 | Tiếng trung sơ cấp 1 (`4056:144966`) | 4% |
-| Label (`I4056:145048;2245:87768`) | 3.5% |
-| Label (`I4056:145067;2245:87820`) | 3.2% |
+| Label (`I4056:145048;2245:87768`) | 3.6% |
+| Label (`I4056:145067;2245:87820`) | 3.3% |
 | Mô tả cấp độ (`4056:144912`) | 2.8% |
-| Label (`I4056:145068;2245:87768`) | 2.7% |
-| Label (`I4056:145050;2245:87768`) | 2.6% |
+| Label (`I4056:145068;2245:87768`) | 2.8% |
+| Label (`I4056:145050;2245:87768`) | 2.7% |
 
 ## Largest box differences
 

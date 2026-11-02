@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/lich-day/xem-theo-lop`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.101%; inside text boxes: 1% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.102%; inside text boxes: 1.011% (glyph rendering)
 - Boxes: 226/226 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 226, ≤1px: 226, ≤2px: 226, ≤4px: 226, >4px: 0
 
 ## Pixel regions (largest first)
@@ -26,10 +26,10 @@
 | Trần Nguyễn Hoài Phương (`I5413:47085;2008:49502;1904:12423`) | 3.8% |
 | Trần Nguyễn Hoài Phương (`I5413:47093;2008:49502;1904:12423`) | 3.8% |
 | Label (`I5425:257921;4901:212752;2245:87768`) | 1.4% |
+| Sakumi (`I5425:258112;4019:24078`) | 1.3% |
 | Value (`I5425:257921;4901:212758;4885:104460;1971:8814`) | 1.2% |
 | Chủ Nhật (`5413:47075`) | 1% |
 | Thứ 7 (`5413:47071`) | 0.9% |
-| 09:00 am - 11:00 am (`I5413:47083;2008:49573`) | 0.9% |
 
 ## Largest box differences
 

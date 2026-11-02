@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/lich-su-luong/buoi-day-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.19%; inside text boxes: 1.21% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.194%; inside text boxes: 1.235% (glyph rendering)
 - Boxes: 414/414 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 411, ≤1px: 413, ≤2px: 414, ≤4px: 414, >4px: 0
 
 ## Pixel regions (largest first)
@@ -27,8 +27,8 @@
 | VON FRÜH BIS SPÄT (`4056:149789`) | 3.2% |
 | WIEDERHOLUNG 2 (`4056:149969`) | 3.2% |
 | MEINE HOBBYS SIND... (`4056:149729`) | 3% |
+| Label (`I6244:54231;2245:87768`) | 2.9% |
 | WOHNUNGSSUCHE (`4056:149849`) | 2.9% |
-| Label (`I6244:54231;2245:87768`) | 2.7% |
 | MENGENANGABEN (`4056:149929`) | 2.7% |
 | Label (`I4056:149682;2245:87768`) | 2.6% |
 
@@ -41,8 +41,8 @@
 | Từ sáng sớm đến đêm muộn (`4056:149790`) | text | 0.8 | 2.5 (text) | 0 | 0 | 0.8 | 0 |
 | Lớp (`4056:149709`) | text | 0.34 | 2.5 (text) | 0 | 0 | 0.34 | 0 |
 | Lớp (`4056:149984`) | text | 0.34 | 2.5 (text) | 0 | 0 | 0.34 | 0 |
-| Heading 2 (`4056:149687`) | container | 0.25 | 2.5 (text) | 0 | 0 | 0.25 | 0 |
-| Lịch sử & lương (`4056:149688`) | text | 0.25 | 2.5 (text) | 0 | 0 | 0.25 | 0 |
+| Heading 2 (`4056:149687`) | container | 0.22 | 2.5 (text) | 0 | 0 | 0.22 | 0 |
+| Lịch sử & lương (`4056:149688`) | text | 0.22 | 2.5 (text) | 0 | 0 | 0.22 | 0 |
 | Cách nói số lượng (`4056:149930`) | text | 0.08 | 2.5 (text) | 0 | 0 | 0.08 | 0 |
 | Thực phẩm (`4056:149950`) | text | 0.05 | 2.5 (text) | 0 | 0 | 0.05 | 0 |
 | Frame 1171274926 (`4056:149674`) | icon | 0.02 | 2.5 (text) | 0 | -0.02 | 0 | 0 |

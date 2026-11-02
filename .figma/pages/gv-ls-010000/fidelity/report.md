@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/lich-su-luong/buoi-day`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.114%; inside text boxes: 0.728% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.115%; inside text boxes: 0.739% (glyph rendering)
 - Boxes: 413/413 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 410, ≤1px: 412, ≤2px: 413, ≤4px: 413, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
@@ -34,8 +34,8 @@
 | Từ sáng sớm đến đêm muộn (`3868:99468`) | text | 0.8 | 2.5 (text) | 0 | 0 | 0.8 | 0 |
 | Lớp (`3868:99375`) | text | 0.34 | 2.5 (text) | 0 | 0 | 0.34 | 0 |
 | Lớp (`3868:99701`) | text | 0.34 | 2.5 (text) | 0 | 0 | 0.34 | 0 |
-| Heading 2 (`3868:97113`) | container | 0.25 | 2.5 (text) | 0 | 0 | 0.25 | 0 |
-| Lịch sử & lương (`3868:97114`) | text | 0.25 | 2.5 (text) | 0 | 0 | 0.25 | 0 |
+| Heading 2 (`3868:97113`) | container | 0.22 | 2.5 (text) | 0 | 0 | 0.22 | 0 |
+| Lịch sử & lương (`3868:97114`) | text | 0.22 | 2.5 (text) | 0 | 0 | 0.22 | 0 |
 | Cách nói số lượng (`3868:99636`) | text | 0.08 | 2.5 (text) | 0 | 0 | 0.08 | 0 |
 | Thực phẩm (`3868:99660`) | text | 0.05 | 2.5 (text) | 0 | 0 | 0.05 | 0 |
 | Frame 1171274926 (`I4915:263183;4901:212421`) | icon | 0.02 | 2.5 (text) | 0 | -0.02 | 0 | 0 |

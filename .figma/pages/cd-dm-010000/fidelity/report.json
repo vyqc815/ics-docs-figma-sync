@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 809,
-    "mismatched": 5879,
-    "percent": 0.505,
+    "mismatched": 5917,
+    "percent": 0.508,
     "shapePercent": 0.011,
-    "textPercent": 2.114,
+    "textPercent": 2.128,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -100,13 +100,13 @@
     {
       "id": "I4915:257163;4901:217044;2245:87820",
       "name": "Label",
-      "pixels": 83,
-      "percent": 3.2
+      "pixels": 87,
+      "percent": 3.4
     },
     {
-      "id": "3065:53290",
-      "name": "tên danh mục",
-      "pixels": 65,
+      "id": "I4915:257163;4901:217050;2245:87820",
+      "name": "Label",
+      "pixels": 83,
       "percent": 3.2
     }
   ],

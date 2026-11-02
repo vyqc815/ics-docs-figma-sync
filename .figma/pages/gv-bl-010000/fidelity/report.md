@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/bao-loi/danh-sach-bao-loi-gv-bl-010000`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.088%; inside text boxes: 0.606% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.089%; inside text boxes: 0.615% (glyph rendering)
 - Boxes: 348/348 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 346, ≤1px: 348, ≤2px: 348, ≤4px: 348, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)

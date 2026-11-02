@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/loi-404-khong-tim-thay-trang-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.071%; inside text boxes: 0.869% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.101%; inside text boxes: 1.234% (glyph rendering)
 - Boxes: 75/75 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 75, ≤1px: 75, ≤2px: 75, ≤4px: 75, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,20 +17,20 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I5789:161510;2245:87864`) | 13.5% |
-| Label (`I5789:161517;2245:87768`) | 2.2% |
-| Label (`I5789:161518;2245:87820`) | 1.5% |
-| Label (`I5789:161506;2245:87848`) | 1.3% |
+| Label (`I5789:161512;2245:87858`) | 2.5% |
+| Label (`I5789:161517;2245:87768`) | 2.4% |
+| Label (`I5789:161513;2245:87858`) | 1.8% |
+| Label (`I5789:161516;2245:87858`) | 1.7% |
+| Label (`I5789:161515;2245:87858`) | 1.6% |
+| Label (`I5789:161507;2245:87858`) | 1.5% |
+| Label (`I5789:161514;2245:87858`) | 1.5% |
+| Label (`I5789:161506;2245:87848`) | 1.4% |
+| Label (`I5789:161518;2245:87820`) | 1.3% |
 | Trang bạn tìm không tồn tại, đã bị xoá hoặc đường dẫn không  (`5789:161886`) | 1.3% |
+| Label (`I5789:161508;2245:87858`) | 1.1% |
+| Label (`I5789:161511;2245:87858`) | 1.1% |
+| Label (`I5789:161509;2245:87858`) | 1% |
 | Button (`I5789:161891;1048:1230`) | 0.8% |
-| admin@gmail.com (`I5789:161434;1391:17268`) | 0.3% |
-| Button (`I5789:161888;1430:10760`) | 0.3% |
-| Admin Đắc Nhân (`I5789:161434;1391:17266`) | 0.1% |
-| Label (`I5789:161508;2245:87858`) | 0.1% |
-| Label (`I5789:161509;2245:87858`) | 0.1% |
-| Không tìm thấy trang (`5789:161885`) | 0.1% |
-| v20.07.2026_17:30 (`5789:161502`) | 0% |
-| Label (`I5789:161507;2245:87858`) | 0% |
-| Label (`I5789:161511;2245:87858`) | 0% |
 
 ## Largest box differences
 

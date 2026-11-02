@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/bao-loi/danh-sach-bao-loi`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.116%; inside text boxes: 0.698% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.119%; inside text boxes: 0.715% (glyph rendering)
 - Boxes: 477/477 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 475, ≤1px: 477, ≤2px: 477, ≤4px: 477, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
@@ -17,10 +17,10 @@
 | Label (`I5274:368028;1725:17084`) | 3.7% |
 | MEINE HOBBYS SIND... (`5274:365166`) | 3.5% |
 | Label (`I5371:41239;1725:17084`) | 3.5% |
+| Label (`I5274:365124;5274:362947;2245:87820`) | 3.4% |
 | MEINE HOBBYS SIND... (`5274:365217`) | 3.4% |
-| Label (`I5274:365124;5274:362947;2245:87820`) | 3.2% |
+| Label (`I5274:365124;5274:362953;2245:87820`) | 3.2% |
 | Value (`I5274:365131;2015:36008`) | 3.2% |
-| Label (`I5274:365124;5274:362953;2245:87820`) | 3.1% |
 | Value (`I5274:367753;2015:36008`) | 2.6% |
 | MEINE HOBBYS SIND... (`5274:365200`) | 2.6% |
 | Label (`I5274:368048;1725:17084`) | 2.2% |

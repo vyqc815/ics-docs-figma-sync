@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/loi-403-khong-co-quyen-truy-cap-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.172%; inside text boxes: 1.922% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.186%; inside text boxes: 2.087% (glyph rendering)
 - Boxes: 75/75 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 73, ≤1px: 73, ≤2px: 75, ≤4px: 75, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,27 +17,27 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I5789:160540;2245:87864`) | 13.5% |
-| Bạn không có quyền truy cập trang này (`5789:160904`) | 6.3% |
-| Label (`I5789:160547;2245:87768`) | 2.2% |
-| Label (`I5789:160548;2245:87820`) | 1.5% |
-| Label (`I5789:160536;2245:87848`) | 1.3% |
+| Bạn không có quyền truy cập trang này (`5789:160904`) | 5.4% |
+| Label (`I5789:160542;2245:87858`) | 2.5% |
+| Label (`I5789:160547;2245:87768`) | 2.4% |
+| Label (`I5789:160543;2245:87858`) | 1.8% |
+| Label (`I5789:160546;2245:87858`) | 1.7% |
+| Label (`I5789:160545;2245:87858`) | 1.6% |
+| Label (`I5789:160537;2245:87858`) | 1.5% |
+| Label (`I5789:160544;2245:87858`) | 1.5% |
+| Label (`I5789:160536;2245:87848`) | 1.4% |
+| Label (`I5789:160548;2245:87820`) | 1.3% |
 | Button (`I5789:160910;1048:1230`) | 1.3% |
 | Tài khoản của bạn chưa được cấp quyền xem nội dung này. Nếu  (`5789:160905`) | 1.2% |
-| admin@gmail.com (`I5789:160464;1391:17268`) | 0.3% |
-| Admin Đắc Nhân (`I5789:160464;1391:17266`) | 0.1% |
-| Label (`I5789:160538;2245:87858`) | 0.1% |
-| Label (`I5789:160539;2245:87858`) | 0.1% |
-| v20.07.2026_17:30 (`5789:160532`) | 0% |
-| Label (`I5789:160537;2245:87858`) | 0% |
-| Label (`I5789:160541;2245:87858`) | 0% |
-| Label (`I5789:160542;2245:87858`) | 0% |
+| Label (`I5789:160538;2245:87858`) | 1.1% |
+| Label (`I5789:160541;2245:87858`) | 1.1% |
 
 ## Largest box differences
 
 | Node | Role | Δ | Limit | dx | dy | dw | dh |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Trạng thái · 403 (`5789:160884`) | container | 1.08 | 2.5 (text) | -0.55 | 0 | 1.08 | -0.01 |
-| Bạn không có quyền truy cập trang này (`5789:160904`) | text | 1.08 | 2.5 (text) | -0.55 | 0 | 1.08 | 0 |
+| Trạng thái · 403 (`5789:160884`) | container | 1.05 | 2.5 (text) | -0.53 | 0 | 1.05 | -0.01 |
+| Bạn không có quyền truy cập trang này (`5789:160904`) | text | 1.05 | 2.5 (text) | -0.53 | 0 | 1.05 | 0 |
 | Nút (`5789:160906`) | container | 0.19 | 2.5 (text) | -0.11 | 0 | 0.19 | 0 |
 | Nút · Về trang chủ (`5789:160910`) | instance | 0.19 | 2.5 (text) | -0.11 | 0 | 0.19 | 0 |
 | Button (`I5789:160910;1048:1230`) | text | 0.19 | 2.5 (text) | -0.11 | 0 | 0.19 | 0 |

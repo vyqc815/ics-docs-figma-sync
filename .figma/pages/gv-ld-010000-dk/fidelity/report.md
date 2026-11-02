@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/lich-day/xem-theo-lop-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.11%; inside text boxes: 1.095% (glyph rendering)
+- Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.113%; inside text boxes: 1.125% (glyph rendering)
 - Boxes: 226/226 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 226, ≤1px: 226, ≤2px: 226, ≤4px: 226, >4px: 0
 
 ## Pixel regions (largest first)
@@ -19,7 +19,7 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I5425:272492;2245:87768`) | 5.9% |
+| Label (`I5425:272492;2245:87768`) | 5.7% |
 | 31.01.2026 - 06.01.2026 (`I5425:272186;2008:48177`) | 5.1% |
 | Value (`5425:272183`) | 4.8% |
 | Trần Nguyễn Hoài Phương (`I5425:274280;2008:49579;1904:12423`) | 4.6% |
@@ -28,11 +28,11 @@
 | Trần Nguyễn Hoài Phương (`I5425:274223;2008:49570;1904:12423`) | 3.3% |
 | Trần Nguyễn Hoài Phương (`I5425:274210;2008:49502;1904:12423`) | 3.2% |
 | Trần Nguyễn Hoài Phương (`I5425:274245;2008:49502;1904:12423`) | 3.2% |
-| Label (`I6244:51439;2245:87768`) | 2.7% |
+| Label (`I6244:51439;2245:87768`) | 2.9% |
 | Label (`I5425:272493;2245:87768`) | 2.6% |
+| Label (`I5425:272494;2245:87768`) | 2.6% |
 | Trần Nguyễn Hoài Phương (`I5425:274199;2008:49502;1904:12423`) | 2.5% |
 | Trần Nguyễn Hoài Phương (`I5425:274234;2008:49502;1904:12423`) | 2.5% |
-| Label (`I5425:272494;2245:87768`) | 2.5% |
 | Label (`I5425:272491;2245:87768`) | 1.9% |
 
 ## Largest box differences

@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/khao-sat/danh-sach-khao-sat-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.086%; inside text boxes: 0.693% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.09%; inside text boxes: 0.723% (glyph rendering)
 - Boxes: 108/108 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 108, ≤1px: 108, ≤2px: 108, ≤4px: 108, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,12 +16,14 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4885:59927;2245:87768`) | 5.9% |
-| Label (`I6244:56416;2245:87768`) | 2.7% |
+| Label (`I4885:59927;2245:87768`) | 5.7% |
+| Label (`I6244:56416;2245:87768`) | 2.9% |
 | Label (`I4885:59928;2245:87768`) | 2.6% |
-| Label (`I4885:59924;2245:87768`) | 2.5% |
-| Label (`I4885:59929;2245:87768`) | 2.5% |
+| Label (`I4885:59929;2245:87768`) | 2.6% |
+| Label (`I4885:59924;2245:87768`) | 2.4% |
 | Label (`I4885:59925;2245:87768`) | 1.9% |
+| Label (`I4885:104534;4885:104479`) | 1.8% |
+| Vai trò (`I4899:187359;4899:187330`) | 1.6% |
 | GV.dacnhan@gmail.com (`I4885:59848;2008:31783`) | 1.3% |
 | Value (`I4885:104538;4885:104467;1971:8814`) | 1.2% |
 | Label (`I4885:59923;2245:87768`) | 1% |
@@ -29,8 +31,6 @@
 | Khảo sát thiết kế template, mức độ thân  (`4885:59947`) | 0.9% |
 | Button (`I4885:59952;1048:1238`) | 0.5% |
 | Button (`I4885:59962;1048:1238`) | 0.5% |
-| KHẢO SÁT THÔNG TIN GIÁO VIÊN (`4885:59959`) | 0.3% |
-| KHẢO SÁT TEMPLATE PPT (`4885:59945`) | 0.2% |
 
 ## Largest box differences
 

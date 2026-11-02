@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/quan-ly-danh-muc`
 - Verdict: **PASS**
-- Pixels outside text: **0.011%** differ (limit 0.5%); all pixels: 0.505%; inside text boxes: 2.114% (glyph rendering)
+- Pixels outside text: **0.011%** differ (limit 0.5%); all pixels: 0.508%; inside text boxes: 2.128% (glyph rendering)
 - Boxes: 213/213 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 212, ≤1px: 212, ≤2px: 213, ≤4px: 213, >4px: 0
 
 ## Pixel regions (largest first)
@@ -36,8 +36,8 @@
 | Khoá Học Tổng Hợp A1 (`3065:53321`) | 3.8% |
 | ID (`I3065:53354;1994:25852`) | 3.8% |
 | Khoá Học Tổng Hợp A2 (`3065:53338`) | 3.7% |
-| Label (`I4915:257163;4901:217044;2245:87820`) | 3.2% |
-| tên danh mục (`3065:53290`) | 3.2% |
+| Label (`I4915:257163;4901:217044;2245:87820`) | 3.4% |
+| Label (`I4915:257163;4901:217050;2245:87820`) | 3.2% |
 
 ## Largest box differences
 

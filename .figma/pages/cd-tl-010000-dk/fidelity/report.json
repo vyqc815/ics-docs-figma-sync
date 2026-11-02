@@ -12,18 +12,18 @@
   "pixels": {
     "width": 1440,
     "height": 910,
-    "mismatched": 2471,
-    "percent": 0.189,
+    "mismatched": 2488,
+    "percent": 0.19,
     "shapePercent": 0.002,
-    "textPercent": 1.546,
+    "textPercent": 1.556,
     "sizeMismatch": false
   },
   "textNodes": [
     {
       "id": "I6133:126670;6133:108639;2245:87820",
       "name": "Label",
-      "pixels": 222,
-      "percent": 8.7
+      "pixels": 221,
+      "percent": 8.6
     },
     {
       "id": "I6133:126670;6133:108641;2245:87774",
@@ -34,8 +34,8 @@
     {
       "id": "I6133:126670;6133:108633;2245:87820",
       "name": "Label",
-      "pixels": 200,
-      "percent": 7.8
+      "pixels": 204,
+      "percent": 8
     },
     {
       "id": "I6133:126670;6133:108625;2245:87768",
@@ -52,8 +52,8 @@
     {
       "id": "I6133:126670;6133:108626;2245:87820",
       "name": "Label",
-      "pixels": 138,
-      "percent": 5.4
+      "pixels": 145,
+      "percent": 5.7
     },
     {
       "id": "I6133:126814;1048:1232",
@@ -64,8 +64,8 @@
     {
       "id": "I6133:126670;6133:108624;2245:87768",
       "name": "Label",
-      "pixels": 134,
-      "percent": 4.7
+      "pixels": 133,
+      "percent": 4.6
     },
     {
       "id": "6133:126725",
@@ -86,28 +86,28 @@
       "percent": 3.2
     },
     {
+      "id": "I6133:126670;6133:108640;2245:87820",
+      "name": "Label",
+      "pixels": 71,
+      "percent": 2.8
+    },
+    {
       "id": "I6133:126766;3857:80277",
       "name": "Tab",
       "pixels": 29,
       "percent": 2.8
     },
     {
-      "id": "I6133:126670;6133:108640;2245:87820",
-      "name": "Label",
-      "pixels": 70,
-      "percent": 2.7
-    },
-    {
       "id": "I6133:126670;6133:108623;2245:87768",
       "name": "Label",
-      "pixels": 67,
-      "percent": 2.3
+      "pixels": 68,
+      "percent": 2.4
     },
     {
       "id": "I6133:126670;6133:108642;2245:87768",
       "name": "Label",
-      "pixels": 65,
-      "percent": 2.3
+      "pixels": 63,
+      "percent": 2.2
     }
   ],
   "regions": [

@@ -12,18 +12,18 @@
   "pixels": {
     "width": 1440,
     "height": 954,
-    "mismatched": 1517,
-    "percent": 0.11,
+    "mismatched": 1557,
+    "percent": 0.113,
     "shapePercent": 0.003,
-    "textPercent": 1.095,
+    "textPercent": 1.125,
     "sizeMismatch": false
   },
   "textNodes": [
     {
       "id": "I5425:272492;2245:87768",
       "name": "Label",
-      "pixels": 169,
-      "percent": 5.9
+      "pixels": 165,
+      "percent": 5.7
     },
     {
       "id": "I5425:272186;2008:48177",
@@ -76,11 +76,17 @@
     {
       "id": "I6244:51439;2245:87768",
       "name": "Label",
-      "pixels": 79,
-      "percent": 2.7
+      "pixels": 84,
+      "percent": 2.9
     },
     {
       "id": "I5425:272493;2245:87768",
+      "name": "Label",
+      "pixels": 75,
+      "percent": 2.6
+    },
+    {
+      "id": "I5425:272494;2245:87768",
       "name": "Label",
       "pixels": 75,
       "percent": 2.6
@@ -95,12 +101,6 @@
       "id": "I5425:274234;2008:49502;1904:12423",
       "name": "Trần Nguyễn Hoài Phương",
       "pixels": 49,
-      "percent": 2.5
-    },
-    {
-      "id": "I5425:272494;2245:87768",
-      "name": "Label",
-      "pixels": 71,
       "percent": 2.5
     },
     {

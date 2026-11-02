@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 866,
-    "mismatched": 1635,
+    "mismatched": 1630,
     "percent": 0.131,
     "shapePercent": 0.002,
-    "textPercent": 0.896,
+    "textPercent": 0.893,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -28,14 +28,14 @@
     {
       "id": "I6326:29631;2245:87768",
       "name": "Label",
-      "pixels": 169,
-      "percent": 5.9
+      "pixels": 165,
+      "percent": 5.7
     },
     {
       "id": "6326:25966",
       "name": "Theo tháng",
-      "pixels": 129,
-      "percent": 5.4
+      "pixels": 101,
+      "percent": 4.2
     },
     {
       "id": "I6326:29632;2245:87768",
@@ -44,16 +44,16 @@
       "percent": 2.6
     },
     {
-      "id": "I6326:29629;2245:87768",
-      "name": "Label",
-      "pixels": 73,
-      "percent": 2.5
-    },
-    {
       "id": "I6326:29633;2245:87768",
       "name": "Label",
-      "pixels": 71,
-      "percent": 2.5
+      "pixels": 75,
+      "percent": 2.6
+    },
+    {
+      "id": "I6326:29629;2245:87768",
+      "name": "Label",
+      "pixels": 68,
+      "percent": 2.4
     },
     {
       "id": "6326:25816",
@@ -92,6 +92,12 @@
       "percent": 1.7
     },
     {
+      "id": "I6326:29555;4899:187330",
+      "name": "Vai trò",
+      "pixels": 17,
+      "percent": 1.6
+    },
+    {
       "id": "6326:25838",
       "name": "A1 - TRẢI NGHIỆM - HK1",
       "pixels": 55,
@@ -102,12 +108,6 @@
       "name": "GV.dacnhan@gmail.com",
       "pixels": 36,
       "percent": 1.3
-    },
-    {
-      "id": "I6326:29628;2245:87768",
-      "name": "Label",
-      "pixels": 28,
-      "percent": 1
     }
   ],
   "regions": [

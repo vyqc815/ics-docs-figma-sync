@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 12058,
-    "percent": 1.034,
+    "mismatched": 12074,
+    "percent": 1.035,
     "shapePercent": 0.494,
-    "textPercent": 2.468,
+    "textPercent": 2.475,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -34,14 +34,14 @@
     {
       "id": "I6015:65839;4901:216102;2245:87820",
       "name": "Label",
-      "pixels": 222,
-      "percent": 8.7
+      "pixels": 221,
+      "percent": 8.6
     },
     {
       "id": "I6015:65839;4901:216096;2245:87820",
       "name": "Label",
-      "pixels": 200,
-      "percent": 7.8
+      "pixels": 204,
+      "percent": 8
     },
     {
       "id": "6015:65908",
@@ -58,8 +58,8 @@
     {
       "id": "I6015:65839;4901:216089;2245:87820",
       "name": "Label",
-      "pixels": 138,
-      "percent": 5.4
+      "pixels": 145,
+      "percent": 5.7
     },
     {
       "id": "6015:65939",
@@ -88,8 +88,8 @@
     {
       "id": "I6015:65839;4901:216087;2245:87768",
       "name": "Label",
-      "pixels": 134,
-      "percent": 4.7
+      "pixels": 133,
+      "percent": 4.6
     },
     {
       "id": "6015:65960",

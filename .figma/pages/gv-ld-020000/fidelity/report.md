@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/lich-day/quan-ly-dang-ky-lich`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.024%; inside text boxes: 0.301% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.025%; inside text boxes: 0.316% (glyph rendering)
 - Boxes: 166/166 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 166, ≤1px: 166, ≤2px: 166, ≤4px: 166, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
@@ -10,20 +10,20 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I5425:258114;4901:212752;2245:87768`) | 1.4% |
+| Sakumi (`I5425:258305;4019:24078`) | 1.3% |
 | Buổi tối (`5413:49248`) | 1.2% |
 | Value (`I5425:258114;4901:212758;4885:104460;1971:8814`) | 1.2% |
 | Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này (`5413:49274`) | 1.1% |
 | Buổi sáng (`5413:49208`) | 1% |
-| Sakumi (`I5425:258305;4019:24078`) | 0.8% |
 | Buổi chiều (`5413:49228`) | 0.8% |
 | GV.dacnhan@gmail.com (`I5425:258303;2008:31783`) | 0.7% |
 | Ghi chú (`5413:49269`) | 0.5% |
+| Label (`I5425:258114;4901:212753;2245:87768`) | 0.5% |
 | Label (`I5425:258114;4901:212754;2245:87768`) | 0.5% |
 | Label (`I5425:258114;6244:32866;2245:87768`) | 0.4% |
-| Label (`I5425:258114;4901:212753;2245:87768`) | 0.4% |
 | GV (`I5425:258303;2008:31872`) | 0.3% |
 | Chủ nhật (`5413:49204`) | 0.3% |
-| Trước 9h tối (`5413:49212`) | 0.2% |
+| Vai trò (`I5425:258306;4899:187330`) | 0.2% |
 
 ## Largest box differences
 

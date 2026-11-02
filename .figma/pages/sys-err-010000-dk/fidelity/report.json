@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2003,
-    "percent": 0.172,
+    "mismatched": 2173,
+    "percent": 0.186,
     "shapePercent": 0.002,
-    "textPercent": 1.922,
+    "textPercent": 2.087,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -28,25 +28,61 @@
     {
       "id": "5789:160904",
       "name": "Bạn không có quyền truy cập trang này",
-      "pixels": 1195,
-      "percent": 6.3
+      "pixels": 1025,
+      "percent": 5.4
+    },
+    {
+      "id": "I5789:160542;2245:87858",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.5
     },
     {
       "id": "I5789:160547;2245:87768",
       "name": "Label",
-      "pixels": 64,
-      "percent": 2.2
+      "pixels": 69,
+      "percent": 2.4
     },
     {
-      "id": "I5789:160548;2245:87820",
+      "id": "I5789:160543;2245:87858",
       "name": "Label",
-      "pixels": 39,
+      "pixels": 45,
+      "percent": 1.8
+    },
+    {
+      "id": "I5789:160546;2245:87858",
+      "name": "Label",
+      "pixels": 42,
+      "percent": 1.7
+    },
+    {
+      "id": "I5789:160545;2245:87858",
+      "name": "Label",
+      "pixels": 40,
+      "percent": 1.6
+    },
+    {
+      "id": "I5789:160537;2245:87858",
+      "name": "Label",
+      "pixels": 37,
+      "percent": 1.5
+    },
+    {
+      "id": "I5789:160544;2245:87858",
+      "name": "Label",
+      "pixels": 37,
       "percent": 1.5
     },
     {
       "id": "I5789:160536;2245:87848",
       "name": "Label",
-      "pixels": 34,
+      "pixels": 35,
+      "percent": 1.4
+    },
+    {
+      "id": "I5789:160548;2245:87820",
+      "name": "Label",
+      "pixels": 33,
       "percent": 1.3
     },
     {
@@ -62,52 +98,16 @@
       "percent": 1.2
     },
     {
-      "id": "I5789:160464;1391:17268",
-      "name": "admin@gmail.com",
-      "pixels": 7,
-      "percent": 0.3
-    },
-    {
-      "id": "I5789:160464;1391:17266",
-      "name": "Admin Đắc Nhân",
-      "pixels": 3,
-      "percent": 0.1
-    },
-    {
       "id": "I5789:160538;2245:87858",
       "name": "Label",
-      "pixels": 2,
-      "percent": 0.1
-    },
-    {
-      "id": "I5789:160539;2245:87858",
-      "name": "Label",
-      "pixels": 2,
-      "percent": 0.1
-    },
-    {
-      "id": "5789:160532",
-      "name": "v20.07.2026_17:30",
-      "pixels": 0,
-      "percent": 0
-    },
-    {
-      "id": "I5789:160537;2245:87858",
-      "name": "Label",
-      "pixels": 0,
-      "percent": 0
+      "pixels": 28,
+      "percent": 1.1
     },
     {
       "id": "I5789:160541;2245:87858",
       "name": "Label",
-      "pixels": 0,
-      "percent": 0
-    },
-    {
-      "id": "I5789:160542;2245:87858",
-      "name": "Label",
-      "pixels": 0,
-      "percent": 0
+      "pixels": 27,
+      "percent": 1.1
     }
   ],
   "regions": [
@@ -152,10 +152,10 @@
         "id": "5789:160884",
         "name": "Trạng thái · 403",
         "role": "container",
-        "delta": 1.08,
-        "dx": -0.55,
+        "delta": 1.05,
+        "dx": -0.53,
         "dy": 0,
-        "dw": 1.08,
+        "dw": 1.05,
         "dh": -0.01,
         "limit": 2.5,
         "textDriven": true
@@ -164,10 +164,10 @@
         "id": "5789:160904",
         "name": "Bạn không có quyền truy cập trang này",
         "role": "text",
-        "delta": 1.08,
-        "dx": -0.55,
+        "delta": 1.05,
+        "dx": -0.53,
         "dy": 0,
-        "dw": 1.08,
+        "dw": 1.05,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
@@ -449,7 +449,7 @@
         "textDriven": true
       }
     ],
-    "maxDelta": 1.08,
+    "maxDelta": 1.05,
     "over": []
   },
   "failures": [],

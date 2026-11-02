@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 1057,
-    "mismatched": 1732,
-    "percent": 0.114,
+    "mismatched": 1757,
+    "percent": 0.115,
     "shapePercent": 0,
-    "textPercent": 0.728,
+    "textPercent": 0.739,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -187,10 +187,10 @@
         "id": "3868:97113",
         "name": "Heading 2",
         "role": "container",
-        "delta": 0.25,
+        "delta": 0.22,
         "dx": 0,
         "dy": 0,
-        "dw": 0.25,
+        "dw": 0.22,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
@@ -199,10 +199,10 @@
         "id": "3868:97114",
         "name": "Lịch sử & lương",
         "role": "text",
-        "delta": 0.25,
+        "delta": 0.22,
         "dx": 0,
         "dy": 0,
-        "dw": 0.25,
+        "dw": 0.22,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true

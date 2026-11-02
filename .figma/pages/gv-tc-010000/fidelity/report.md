@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/trang-chu/thong-ke-theo-thang-gv-tc-010000`
 - Verdict: **PASS**
-- Pixels outside text: **0.036%** differ (limit 0.5%); all pixels: 0.355%; inside text boxes: 2.182% (glyph rendering)
+- Pixels outside text: **0.036%** differ (limit 0.5%); all pixels: 0.353%; inside text boxes: 2.168% (glyph rendering)
 - Boxes: 428/428 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 428, ≤1px: 428, ≤2px: 428, ≤4px: 428, >4px: 0
 
 ## Pixel regions (largest first)

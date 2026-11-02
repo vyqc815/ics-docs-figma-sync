@@ -12,24 +12,24 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 1006,
-    "percent": 0.086,
+    "mismatched": 1048,
+    "percent": 0.09,
     "shapePercent": 0.001,
-    "textPercent": 0.693,
+    "textPercent": 0.723,
     "sizeMismatch": false
   },
   "textNodes": [
     {
       "id": "I4885:59927;2245:87768",
       "name": "Label",
-      "pixels": 169,
-      "percent": 5.9
+      "pixels": 165,
+      "percent": 5.7
     },
     {
       "id": "I6244:56416;2245:87768",
       "name": "Label",
-      "pixels": 79,
-      "percent": 2.7
+      "pixels": 84,
+      "percent": 2.9
     },
     {
       "id": "I4885:59928;2245:87768",
@@ -38,22 +38,34 @@
       "percent": 2.6
     },
     {
-      "id": "I4885:59924;2245:87768",
-      "name": "Label",
-      "pixels": 73,
-      "percent": 2.5
-    },
-    {
       "id": "I4885:59929;2245:87768",
       "name": "Label",
-      "pixels": 71,
-      "percent": 2.5
+      "pixels": 75,
+      "percent": 2.6
+    },
+    {
+      "id": "I4885:59924;2245:87768",
+      "name": "Label",
+      "pixels": 68,
+      "percent": 2.4
     },
     {
       "id": "I4885:59925;2245:87768",
       "name": "Label",
       "pixels": 55,
       "percent": 1.9
+    },
+    {
+      "id": "I4885:104534;4885:104479",
+      "name": "Label",
+      "pixels": 12,
+      "percent": 1.8
+    },
+    {
+      "id": "I4899:187359;4899:187330",
+      "name": "Vai trò",
+      "pixels": 17,
+      "percent": 1.6
     },
     {
       "id": "I4885:59848;2008:31783",
@@ -70,7 +82,7 @@
     {
       "id": "I4885:59923;2245:87768",
       "name": "Label",
-      "pixels": 28,
+      "pixels": 29,
       "percent": 1
     },
     {
@@ -96,18 +108,6 @@
       "name": "Button",
       "pixels": 9,
       "percent": 0.5
-    },
-    {
-      "id": "4885:59959",
-      "name": "KHẢO SÁT THÔNG TIN GIÁO VIÊN",
-      "pixels": 84,
-      "percent": 0.3
-    },
-    {
-      "id": "4885:59945",
-      "name": "KHẢO SÁT TEMPLATE PPT",
-      "pixels": 52,
-      "percent": 0.2
     }
   ],
   "regions": [

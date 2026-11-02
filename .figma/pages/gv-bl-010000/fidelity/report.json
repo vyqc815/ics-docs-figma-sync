@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 1057,
-    "mismatched": 1335,
-    "percent": 0.088,
+    "mismatched": 1356,
+    "percent": 0.089,
     "shapePercent": 0,
-    "textPercent": 0.606,
+    "textPercent": 0.615,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -94,7 +94,7 @@
     {
       "id": "I5019:365102;4901:213199;2245:87768",
       "name": "Label",
-      "pixels": 40,
+      "pixels": 39,
       "percent": 1.4
     },
     {

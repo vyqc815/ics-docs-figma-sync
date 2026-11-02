@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/quan-ly-cap-do`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.064%; inside text boxes: 1.048% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.066%; inside text boxes: 1.081% (glyph rendering)
 - Boxes: 175/175 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 175, ≤1px: 175, ≤2px: 175, ≤4px: 175, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
@@ -17,13 +17,13 @@
 | ID (`I1994:25895;1994:25836`) | 3.9% |
 | ID (`I1994:25899;1994:25836`) | 3.8% |
 | Tiếng trung sơ cấp 1 (`1901:2131`) | 3.5% |
-| Label (`I4915:256939;4901:217044;2245:87820`) | 3.2% |
-| Label (`I4915:256939;4901:217050;2245:87820`) | 3.1% |
+| Label (`I4915:256939;4901:217044;2245:87820`) | 3.4% |
+| Label (`I4915:256939;4901:217050;2245:87820`) | 3.2% |
 | Công khai (`I1901:1951;1474:15110`) | 2.7% |
 | Công khai (`I1901:2137;1474:15110`) | 2.7% |
 | Mô tả cấp độ (`1910:19805`) | 2.4% |
-| Label (`I4915:256939;4901:217037;2245:87820`) | 1.8% |
-| Label (`I4915:256939;4901:217036;2245:87768`) | 1.3% |
+| Label (`I4915:256939;4901:217037;2245:87820`) | 2% |
+| Label (`I4915:256939;4901:217036;2245:87768`) | 1.5% |
 
 ## Largest box differences
 

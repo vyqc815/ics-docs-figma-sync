@@ -2,7 +2,7 @@
 
 - URL: `http://localhost:3108/quan-ly-khoa-hoc`
 - Verdict: **PASS**
-- Pixels outside text: **0.185%** differ (limit 0.5%); all pixels: 0.533%; inside text boxes: 1.595% (glyph rendering)
+- Pixels outside text: **0.185%** differ (limit 0.5%); all pixels: 0.536%; inside text boxes: 1.61% (glyph rendering)
 - Boxes: 288/288 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 190, ≤1px: 215, ≤2px: 288, ≤4px: 288, >4px: 0
 
 ## Pixel regions (largest first)
@@ -43,12 +43,12 @@
 | Trạng thái (`1160:1981`) | 4.1% |
 | Tiếng Trung Sơ Cấp HSK2 (`1160:2019`) | 4.1% |
 | Tiếng Trung Tổng Hợp HSK3 (`1160:2050`) | 3.8% |
+| Label (`I4915:256174;4901:216096;2245:87820`) | 3.4% |
 | - Mở Rộng Ngữ Pháp HSK3 Cốt Lõi: 把, 被, 比, 了 / 过 / 着 - 20+ Ch (`1160:2053`) | 3.4% |
 | Tên khoá học (`1160:1971`) | 3.3% |
 | Phát âm, 398 từ vựng và 59 điểm ngữ pháp nền tảng HSK1 (`1160:1990`) | 3.3% |
-| Label (`I4915:256174;4901:216096;2245:87820`) | 3.2% |
+| Label (`I4915:256174;4901:216102;2245:87820`) | 3.2% |
 | ID (`I1994:25859;1994:25848`) | 3.2% |
-| Label (`I4915:256174;4901:216102;2245:87820`) | 3.1% |
 
 ## Largest box differences
 

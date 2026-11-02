@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 558,
-    "percent": 0.048,
+    "mismatched": 576,
+    "percent": 0.049,
     "shapePercent": 0.001,
-    "textPercent": 0.385,
+    "textPercent": 0.398,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -28,8 +28,14 @@
     {
       "id": "I4686:43759;2245:87768",
       "name": "Label",
-      "pixels": 40,
+      "pixels": 39,
       "percent": 1.4
+    },
+    {
+      "id": "I4686:43684;4019:24078",
+      "name": "Sakumi",
+      "pixels": 26,
+      "percent": 1.3
     },
     {
       "id": "I4885:104492;4885:104467;1971:8814",
@@ -48,12 +54,6 @@
       "name": "Button",
       "pixels": 18,
       "percent": 1
-    },
-    {
-      "id": "I4686:43684;4019:24078",
-      "name": "Sakumi",
-      "pixels": 16,
-      "percent": 0.8
     },
     {
       "id": "I4686:43768;3554:65718;1971:8814",
@@ -76,7 +76,13 @@
     {
       "id": "I4686:43756;2245:87768",
       "name": "Label",
-      "pixels": 14,
+      "pixels": 17,
+      "percent": 0.6
+    },
+    {
+      "id": "I4686:43760;2245:87768",
+      "name": "Label",
+      "pixels": 13,
       "percent": 0.5
     },
     {
@@ -95,12 +101,6 @@
       "id": "I6244:56401;2245:87768",
       "name": "Label",
       "pixels": 12,
-      "percent": 0.4
-    },
-    {
-      "id": "I4686:43760;2245:87768",
-      "name": "Label",
-      "pixels": 11,
       "percent": 0.4
     },
     {

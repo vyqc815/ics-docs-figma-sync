@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 1057,
-    "mismatched": 1767,
-    "percent": 0.116,
+    "mismatched": 1811,
+    "percent": 0.119,
     "shapePercent": 0,
-    "textPercent": 0.698,
+    "textPercent": 0.715,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -68,13 +68,19 @@
       "percent": 3.5
     },
     {
+      "id": "I5274:365124;5274:362947;2245:87820",
+      "name": "Label",
+      "pixels": 87,
+      "percent": 3.4
+    },
+    {
       "id": "5274:365217",
       "name": "MEINE HOBBYS SIND...",
       "pixels": 114,
       "percent": 3.4
     },
     {
-      "id": "I5274:365124;5274:362947;2245:87820",
+      "id": "I5274:365124;5274:362953;2245:87820",
       "name": "Label",
       "pixels": 83,
       "percent": 3.2
@@ -84,12 +90,6 @@
       "name": "Value",
       "pixels": 44,
       "percent": 3.2
-    },
-    {
-      "id": "I5274:365124;5274:362953;2245:87820",
-      "name": "Label",
-      "pixels": 79,
-      "percent": 3.1
     },
     {
       "id": "I5274:367753;2015:36008",

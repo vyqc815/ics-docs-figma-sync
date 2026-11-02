@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 833,
-    "percent": 0.071,
+    "mismatched": 1173,
+    "percent": 0.101,
     "shapePercent": 0.002,
-    "textPercent": 0.869,
+    "textPercent": 1.234,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -26,21 +26,57 @@
       "percent": 13.5
     },
     {
-      "id": "I5789:161517;2245:87768",
+      "id": "I5789:161512;2245:87858",
       "name": "Label",
-      "pixels": 64,
-      "percent": 2.2
+      "pixels": 62,
+      "percent": 2.5
     },
     {
-      "id": "I5789:161518;2245:87820",
+      "id": "I5789:161517;2245:87768",
       "name": "Label",
-      "pixels": 39,
+      "pixels": 69,
+      "percent": 2.4
+    },
+    {
+      "id": "I5789:161513;2245:87858",
+      "name": "Label",
+      "pixels": 45,
+      "percent": 1.8
+    },
+    {
+      "id": "I5789:161516;2245:87858",
+      "name": "Label",
+      "pixels": 42,
+      "percent": 1.7
+    },
+    {
+      "id": "I5789:161515;2245:87858",
+      "name": "Label",
+      "pixels": 40,
+      "percent": 1.6
+    },
+    {
+      "id": "I5789:161507;2245:87858",
+      "name": "Label",
+      "pixels": 37,
+      "percent": 1.5
+    },
+    {
+      "id": "I5789:161514;2245:87858",
+      "name": "Label",
+      "pixels": 37,
       "percent": 1.5
     },
     {
       "id": "I5789:161506;2245:87848",
       "name": "Label",
-      "pixels": 34,
+      "pixels": 35,
+      "percent": 1.4
+    },
+    {
+      "id": "I5789:161518;2245:87820",
+      "name": "Label",
+      "pixels": 33,
       "percent": 1.3
     },
     {
@@ -50,64 +86,28 @@
       "percent": 1.3
     },
     {
-      "id": "I5789:161891;1048:1230",
-      "name": "Button",
-      "pixels": 16,
-      "percent": 0.8
-    },
-    {
-      "id": "I5789:161434;1391:17268",
-      "name": "admin@gmail.com",
-      "pixels": 7,
-      "percent": 0.3
-    },
-    {
-      "id": "I5789:161888;1430:10760",
-      "name": "Button",
-      "pixels": 4,
-      "percent": 0.3
-    },
-    {
-      "id": "I5789:161434;1391:17266",
-      "name": "Admin Đắc Nhân",
-      "pixels": 3,
-      "percent": 0.1
-    },
-    {
       "id": "I5789:161508;2245:87858",
       "name": "Label",
-      "pixels": 2,
-      "percent": 0.1
-    },
-    {
-      "id": "I5789:161509;2245:87858",
-      "name": "Label",
-      "pixels": 2,
-      "percent": 0.1
-    },
-    {
-      "id": "5789:161885",
-      "name": "Không tìm thấy trang",
-      "pixels": 6,
-      "percent": 0.1
-    },
-    {
-      "id": "5789:161502",
-      "name": "v20.07.2026_17:30",
-      "pixels": 0,
-      "percent": 0
-    },
-    {
-      "id": "I5789:161507;2245:87858",
-      "name": "Label",
-      "pixels": 0,
-      "percent": 0
+      "pixels": 28,
+      "percent": 1.1
     },
     {
       "id": "I5789:161511;2245:87858",
       "name": "Label",
-      "pixels": 0,
-      "percent": 0
+      "pixels": 27,
+      "percent": 1.1
+    },
+    {
+      "id": "I5789:161509;2245:87858",
+      "name": "Label",
+      "pixels": 24,
+      "percent": 1
+    },
+    {
+      "id": "I5789:161891;1048:1230",
+      "name": "Button",
+      "pixels": 16,
+      "percent": 0.8
     }
   ],
   "regions": [

@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 866,
-    "mismatched": 4427,
-    "percent": 0.355,
+    "mismatched": 4402,
+    "percent": 0.353,
     "shapePercent": 0.036,
-    "textPercent": 2.182,
+    "textPercent": 2.168,
     "sizeMismatch": false
   },
   "textNodes": [

@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 436,
-    "percent": 0.037,
+    "mismatched": 454,
+    "percent": 0.039,
     "shapePercent": 0,
-    "textPercent": 0.44,
+    "textPercent": 0.458,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -26,9 +26,9 @@
       "percent": 1.1
     },
     {
-      "id": "5789:155569",
-      "name": "404",
-      "pixels": 153,
+      "id": "I5789:152949;4899:195427;2245:87858",
+      "name": "Label",
+      "pixels": 23,
       "percent": 0.9
     },
     {
@@ -38,16 +38,64 @@
       "percent": 0.9
     },
     {
+      "id": "I5789:152949;4899:195426;2245:87858",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 0.7
+    },
+    {
       "id": "I5789:155573;1430:10760",
       "name": "Button",
       "pixels": 10,
       "percent": 0.7
     },
     {
+      "id": "I5789:152949;4899:195428;1971:7432",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 0.6
+    },
+    {
+      "id": "I5789:152949;4899:195430;1971:7432",
+      "name": "Label",
+      "pixels": 14,
+      "percent": 0.6
+    },
+    {
+      "id": "I5789:152949;4899:195421;2245:87858",
+      "name": "Label",
+      "pixels": 12,
+      "percent": 0.5
+    },
+    {
+      "id": "5789:155569",
+      "name": "404",
+      "pixels": 70,
+      "percent": 0.4
+    },
+    {
       "id": "I5789:152949;4899:195420;2245:87829",
       "name": "Label",
-      "pixels": 5,
-      "percent": 0.2
+      "pixels": 7,
+      "percent": 0.3
+    },
+    {
+      "id": "I5789:152949;4899:195425;2245:87858",
+      "name": "Label",
+      "pixels": 7,
+      "percent": 0.3
+    },
+    {
+      "id": "I5789:152949;4899:195429;1971:7432",
+      "name": "Label",
+      "pixels": 8,
+      "percent": 0.3
+    },
+    {
+      "id": "I5789:152949;4899:195431;2245:87768",
+      "name": "Label",
+      "pixels": 2,
+      "percent": 0.1
     },
     {
       "id": "I5789:152863;1391:17266",
@@ -58,54 +106,6 @@
     {
       "id": "I5789:152863;1391:17268",
       "name": "admin@gmail.com",
-      "pixels": 0,
-      "percent": 0
-    },
-    {
-      "id": "I5789:152949;4915:212042",
-      "name": "v20.07.2026_17:30",
-      "pixels": 0,
-      "percent": 0
-    },
-    {
-      "id": "I5789:152949;4899:195421;2245:87858",
-      "name": "Label",
-      "pixels": 0,
-      "percent": 0
-    },
-    {
-      "id": "I5789:152949;4899:195422;2245:87858",
-      "name": "Label",
-      "pixels": 0,
-      "percent": 0
-    },
-    {
-      "id": "I5789:152949;4899:195423;2245:87858",
-      "name": "Label",
-      "pixels": 0,
-      "percent": 0
-    },
-    {
-      "id": "I5789:152949;4899:195424;2245:87864",
-      "name": "Label",
-      "pixels": 0,
-      "percent": 0
-    },
-    {
-      "id": "I5789:152949;4899:195425;2245:87858",
-      "name": "Label",
-      "pixels": 0,
-      "percent": 0
-    },
-    {
-      "id": "I5789:152949;4899:195426;2245:87858",
-      "name": "Label",
-      "pixels": 0,
-      "percent": 0
-    },
-    {
-      "id": "I5789:152949;4899:195427;2245:87858",
-      "name": "Label",
       "pixels": 0,
       "percent": 0
     }
@@ -127,10 +127,10 @@
         "id": "5789:155569",
         "name": "404",
         "role": "text",
-        "delta": 0.53,
-        "dx": -0.27,
+        "delta": 0.55,
+        "dx": -0.28,
         "dy": -0.01,
-        "dw": 0.53,
+        "dw": 0.55,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
@@ -424,7 +424,7 @@
         "textDriven": true
       }
     ],
-    "maxDelta": 0.53,
+    "maxDelta": 0.55,
     "over": []
   },
   "failures": [],

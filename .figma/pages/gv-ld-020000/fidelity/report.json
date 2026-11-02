@@ -12,18 +12,24 @@
   "pixels": {
     "width": 1440,
     "height": 905,
-    "mismatched": 308,
-    "percent": 0.024,
+    "mismatched": 323,
+    "percent": 0.025,
     "shapePercent": 0,
-    "textPercent": 0.301,
+    "textPercent": 0.316,
     "sizeMismatch": false
   },
   "textNodes": [
     {
       "id": "I5425:258114;4901:212752;2245:87768",
       "name": "Label",
-      "pixels": 40,
+      "pixels": 39,
       "percent": 1.4
+    },
+    {
+      "id": "I5425:258305;4019:24078",
+      "name": "Sakumi",
+      "pixels": 26,
+      "percent": 1.3
     },
     {
       "id": "5413:49248",
@@ -50,12 +56,6 @@
       "percent": 1
     },
     {
-      "id": "I5425:258305;4019:24078",
-      "name": "Sakumi",
-      "pixels": 16,
-      "percent": 0.8
-    },
-    {
       "id": "5413:49228",
       "name": "Buổi chiều",
       "pixels": 14,
@@ -74,6 +74,12 @@
       "percent": 0.5
     },
     {
+      "id": "I5425:258114;4901:212753;2245:87768",
+      "name": "Label",
+      "pixels": 13,
+      "percent": 0.5
+    },
+    {
       "id": "I5425:258114;4901:212754;2245:87768",
       "name": "Label",
       "pixels": 13,
@@ -83,12 +89,6 @@
       "id": "I5425:258114;6244:32866;2245:87768",
       "name": "Label",
       "pixels": 12,
-      "percent": 0.4
-    },
-    {
-      "id": "I5425:258114;4901:212753;2245:87768",
-      "name": "Label",
-      "pixels": 11,
       "percent": 0.4
     },
     {
@@ -104,9 +104,9 @@
       "percent": 0.3
     },
     {
-      "id": "5413:49212",
-      "name": "Trước 9h tối",
-      "pixels": 3,
+      "id": "I5425:258306;4899:187330",
+      "name": "Vai trò",
+      "pixels": 2,
       "percent": 0.2
     }
   ],

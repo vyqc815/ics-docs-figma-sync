@@ -12,24 +12,24 @@
   "pixels": {
     "width": 1440,
     "height": 905,
-    "mismatched": 783,
-    "percent": 0.06,
+    "mismatched": 823,
+    "percent": 0.063,
     "shapePercent": 0.002,
-    "textPercent": 0.76,
+    "textPercent": 0.8,
     "sizeMismatch": false
   },
   "textNodes": [
     {
       "id": "I5425:273951;2245:87768",
       "name": "Label",
-      "pixels": 169,
-      "percent": 5.9
+      "pixels": 165,
+      "percent": 5.7
     },
     {
       "id": "I6244:51444;2245:87768",
       "name": "Label",
-      "pixels": 79,
-      "percent": 2.7
+      "pixels": 84,
+      "percent": 2.9
     },
     {
       "id": "I5425:273952;2245:87768",
@@ -40,8 +40,8 @@
     {
       "id": "I5425:273953;2245:87768",
       "name": "Label",
-      "pixels": 71,
-      "percent": 2.5
+      "pixels": 75,
+      "percent": 2.6
     },
     {
       "id": "I5425:273950;2245:87768",
@@ -56,6 +56,12 @@
       "percent": 1.7
     },
     {
+      "id": "I5425:273876;4899:187330",
+      "name": "Vai trò",
+      "pixels": 17,
+      "percent": 1.6
+    },
+    {
       "id": "5425:272874",
       "name": "Ghi chú",
       "pixels": 14,
@@ -65,6 +71,12 @@
       "id": "I5425:273873;2008:31783",
       "name": "GV.dacnhan@gmail.com",
       "pixels": 36,
+      "percent": 1.3
+    },
+    {
+      "id": "I5425:273875;4019:24078",
+      "name": "Sakumi",
+      "pixels": 26,
       "percent": 1.3
     },
     {
@@ -88,26 +100,14 @@
     {
       "id": "I5425:273948;2245:87768",
       "name": "Label",
-      "pixels": 28,
+      "pixels": 29,
       "percent": 1
-    },
-    {
-      "id": "I5425:273875;4019:24078",
-      "name": "Sakumi",
-      "pixels": 16,
-      "percent": 0.8
     },
     {
       "id": "I5425:273949;2245:87774",
       "name": "Label",
-      "pixels": 21,
-      "percent": 0.7
-    },
-    {
-      "id": "5425:272817",
-      "name": "Trước 9h tối",
-      "pixels": 5,
-      "percent": 0.4
+      "pixels": 22,
+      "percent": 0.8
     }
   ],
   "regions": [

@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 1057,
-    "mismatched": 2890,
-    "percent": 0.19,
+    "mismatched": 2948,
+    "percent": 0.194,
     "shapePercent": 0.001,
-    "textPercent": 1.21,
+    "textPercent": 1.235,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -86,16 +86,16 @@
       "percent": 3
     },
     {
+      "id": "I6244:54231;2245:87768",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 2.9
+    },
+    {
       "id": "4056:149849",
       "name": "WOHNUNGSSUCHE",
       "pixels": 64,
       "percent": 2.9
-    },
-    {
-      "id": "I6244:54231;2245:87768",
-      "name": "Label",
-      "pixels": 79,
-      "percent": 2.7
     },
     {
       "id": "4056:149929",
@@ -212,10 +212,10 @@
         "id": "4056:149687",
         "name": "Heading 2",
         "role": "container",
-        "delta": 0.25,
+        "delta": 0.22,
         "dx": 0,
         "dy": 0,
-        "dw": 0.25,
+        "dw": 0.22,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
@@ -224,10 +224,10 @@
         "id": "4056:149688",
         "name": "Lịch sử & lương",
         "role": "text",
-        "delta": 0.25,
+        "delta": 0.22,
         "dx": 0,
         "dy": 0,
-        "dw": 0.25,
+        "dw": 0.22,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true

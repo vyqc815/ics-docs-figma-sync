@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 910,
-    "mismatched": 991,
-    "percent": 0.076,
+    "mismatched": 1019,
+    "percent": 0.078,
     "shapePercent": 0,
-    "textPercent": 0.667,
+    "textPercent": 0.686,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -38,22 +38,22 @@
       "percent": 4
     },
     {
-      "id": "6133:124171",
-      "name": "Giọng đọc",
-      "pixels": 85,
-      "percent": 3.3
+      "id": "I6133:123478;6133:108633;2245:87820",
+      "name": "Label",
+      "pixels": 87,
+      "percent": 3.4
     },
     {
-      "id": "I6133:123478;6133:108633;2245:87820",
+      "id": "I6133:123478;6133:108639;2245:87820",
       "name": "Label",
       "pixels": 83,
       "percent": 3.2
     },
     {
-      "id": "I6133:123478;6133:108639;2245:87820",
-      "name": "Label",
-      "pixels": 79,
-      "percent": 3.1
+      "id": "6133:124171",
+      "name": "Giọng đọc",
+      "pixels": 70,
+      "percent": 2.7
     },
     {
       "id": "I6133:124210;1048:1232",
@@ -70,8 +70,8 @@
     {
       "id": "I6133:123478;6133:108626;2245:87820",
       "name": "Label",
-      "pixels": 46,
-      "percent": 1.8
+      "pixels": 51,
+      "percent": 2
     },
     {
       "id": "I6133:124212;1048:1230",
@@ -82,8 +82,20 @@
     {
       "id": "I6133:123478;6133:108625;2245:87768",
       "name": "Label",
-      "pixels": 37,
+      "pixels": 43,
+      "percent": 1.5
+    },
+    {
+      "id": "I6133:123528;4019:24078",
+      "name": "Sakumi",
+      "pixels": 26,
       "percent": 1.3
+    },
+    {
+      "id": "I6133:123478;6133:108624;2245:87768",
+      "name": "Label",
+      "pixels": 31,
+      "percent": 1.1
     },
     {
       "id": "I6133:124176;2808:42758",
@@ -96,18 +108,6 @@
       "name": "Cô",
       "pixels": 4,
       "percent": 1
-    },
-    {
-      "id": "I6133:123478;6133:108624;2245:87768",
-      "name": "Label",
-      "pixels": 25,
-      "percent": 0.9
-    },
-    {
-      "id": "I6133:123478;6133:108622;2245:87768",
-      "name": "Label",
-      "pixels": 22,
-      "percent": 0.8
     }
   ],
   "regions": [],
