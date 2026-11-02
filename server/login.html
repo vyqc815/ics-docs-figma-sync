@@ -48,13 +48,13 @@
     var u = document.getElementById("username").value.trim(), p = document.getElementById("password").value;
     if (!u || !p) { err.textContent = "Nhập tài khoản và mật khẩu"; return; }
     btn.disabled = true;
-    fetch("/api/login", { method: "POST", headers: { "Content-Type": "application/json" },
+    fetch("api/login", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username: u, password: p }) })
       .then(function (r) { return r.json(); })
       .then(function (res) {
         if (!res.ok) { err.textContent = res.message; btn.disabled = false; return; }
-        var next = new URLSearchParams(location.search).get("next") || "/";
-        location.href = next.charAt(0) === "/" && next.charAt(1) !== "/" ? next : "/";
+        var next = new URLSearchParams(location.search).get("next") || "./";
+        location.href = next.charAt(0) === "/" && next.charAt(1) !== "/" ? next : "./";
       })
       .catch(function () { err.textContent = "Không kết nối được máy chủ"; btn.disabled = false; });
   });

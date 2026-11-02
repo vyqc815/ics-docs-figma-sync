@@ -24,7 +24,7 @@ theme:
       toggle: { icon: material/weather-sunny, name: Chế độ sáng }
 
 extra_css: [assets/sync.css]
-extra_javascript: [assets/sync.js, assets/screens.js]
+extra_javascript: [assets/sync.js, assets/screens.js, assets/account.js, assets/tags.js]
 
 hooks:
   - hooks/sync_status.py
@@ -32,7 +32,6 @@ hooks:
 plugins:
   - search:
       lang: [en]
-  - tags
   - git-revision-date-localized:
       type: datetime
       locale: vi

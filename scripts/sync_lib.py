@@ -6,6 +6,7 @@ the comparison of the current state against that baseline.
 """
 import hashlib
 import json
+import os
 import re
 import subprocess
 from pathlib import Path
@@ -14,6 +15,19 @@ from urllib.parse import parse_qs, quote, urlparse
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def load_dotenv(path=ROOT / ".env"):
+    """Read KEY=VALUE lines from .env (gitignored) without overriding variables already set."""
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        key, sep, value = line.strip().partition("=")
+        if sep and key and not key.startswith("#"):
+            os.environ.setdefault(key.strip(), value.strip().strip("'\""))
+
+
+load_dotenv()
 DOCS = ROOT / "docs"
 SYNC = ROOT / "sync"
 META_FILE = SYNC / "docs_meta.yml"
@@ -229,3 +243,90 @@ def full_history(rel_path, state):
         rows.append({"kind": "baseline", "date": ev["date"], "who": ev["by"],
                      "text": "Mốc đồng bộ"})
     return sorted(rows, key=_sort_key, reverse=True)
+
+
+def prune_deleted_docs():
+    """Drop sync data of docs that no longer exist, so deleted files leave nothing behind."""
+    existing = {p.relative_to(DOCS).as_posix() for p in DOCS.rglob("*.md")}
+    removed = set()
+    for path in (STATE_FILE, SNAPSHOT_FILE, FIGMA_HISTORY_FILE):
+        data = read_json(path, {})
+        gone = [k for k in data if k not in existing]
+        for k in gone:
+            data.pop(k)
+        if gone:
+            write_json(path, data)
+            removed.update(gone)
+    if META_FILE.exists():
+        raw = META_FILE.read_text(encoding="utf-8")
+        meta = yaml.safe_load(raw) or {}
+        gone = [k for k in meta if k not in existing]
+        if gone:
+            for k in gone:
+                meta.pop(k)
+            write_central_meta(meta)
+            removed.update(gone)
+    return sorted(removed)
+
+
+def docs_repo():
+    """Git repo that holds the docs folder (docs/ is a symlink into the FE repo)."""
+    return DOCS.resolve()
+
+
+# ---------- Tags ----------
+# In a doc:  frontmatter `tags: [lop-hoc, giao-vien]`  or a line  `Tags: #lop-hoc #giao-vien`
+# On the web: stored in sync/docs_meta.yml (`tags:`), editable by admins.
+TAG_LINE = re.compile(r"^[ \t>]*(?:\*\*)?(?:tags?|thẻ)(?:\*\*)?[ \t]*:[ \t]*(#[^\n]*)$", re.I | re.M)
+HASHTAG = re.compile(r"#([^\s#,]+)")
+
+
+def normalize_tag(tag):
+    return re.sub(r"\s+", "-", str(tag).strip().lstrip("#").lower())
+
+
+def _unique(tags):
+    return [t for t in dict.fromkeys(normalize_tag(t) for t in tags) if t]
+
+
+def strip_tag_lines(body):
+    """Tags found on `Tags: #a #b` lines, and the body without those lines."""
+    tags = [t for m in TAG_LINE.finditer(body) for t in HASHTAG.findall(m.group(1))]
+    return _unique(tags), TAG_LINE.sub("", body)
+
+
+def doc_tags(rel_path, central=None):
+    """(tags written in the doc file, tags added on the web)."""
+    central = load_central_meta() if central is None else central
+    front, body = split_frontmatter((DOCS / rel_path).read_text(encoding="utf-8"))
+    front_tags = front.get("tags") or []
+    in_file = _unique((front_tags if isinstance(front_tags, list) else [front_tags]) + strip_tag_lines(body)[0])
+    web = _unique((central.get(rel_path) or {}).get("tags") or [])
+    return in_file, [t for t in web if t not in in_file]
+
+
+def write_central_meta(meta):
+    raw = META_FILE.read_text(encoding="utf-8") if META_FILE.exists() else ""
+    header = "".join(l + "\n" for l in raw.splitlines() if l.startswith("#"))
+    META_FILE.write_text(header + "\n" + yaml.safe_dump(meta, allow_unicode=True, sort_keys=True, width=200),
+                         encoding="utf-8")
+
+
+def set_web_tags(doc, tags):
+    rel = Path(doc).as_posix().removeprefix("docs/")
+    if not (DOCS / rel).exists():
+        raise SyncError(f"Không thấy file {doc}")
+    meta = load_central_meta()
+    entry = meta.setdefault(rel, {}) or {}
+    meta[rel] = entry
+    clean = _unique(tags or [])
+    if any(len(t) > 40 for t in clean):
+        raise SyncError("Tag dài tối đa 40 ký tự")
+    if clean:
+        entry["tags"] = clean
+    else:
+        entry.pop("tags", None)
+        if not entry:
+            meta.pop(rel)
+    write_central_meta(meta)
+    return f"Đã lưu {len(clean)} tag" if clean else "Đã xoá tag gắn trên web"

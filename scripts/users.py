@@ -33,8 +33,8 @@ def main():
         print(f"Đã xoá {args.username}")
         return
     password = getpass.getpass("Mật khẩu: ")
-    if len(password) < 8 or password != getpass.getpass("Nhập lại: "):
-        sys.exit("Mật khẩu phải từ 8 ký tự và hai lần nhập phải giống nhau")
+    if len(password) < auth.MIN_PASSWORD or password != getpass.getpass("Nhập lại: "):
+        sys.exit(f"Mật khẩu phải từ {auth.MIN_PASSWORD} ký tự và hai lần nhập phải giống nhau")
     users[args.username] = {"role": args.role, "password": auth.hash_password(password)}
     auth.save_users(users)
     print(f"Đã lưu {args.username} ({args.role})")

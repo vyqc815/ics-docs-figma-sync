@@ -2,9 +2,10 @@
 (function () {
   var KIND_ORDER = { screen: 0, tab: 1, popup: 2, state: 2, "popup-state": 3 };
   var STATUS = [
-    ["", "Tất cả"], ["final", "Final"], ["notfinal", "Chưa Final"], ["todo", "Chưa làm"],
-    ["dark", "Dark (-DK)"], ["outside", "Ngoài NAVIGATION"],
+    ["", "Mọi trạng thái"], ["final", "Final"], ["notfinal", "Chưa Final"], ["todo", "Chưa làm"],
+    ["removed", "Đã bỏ (gạch ngang)"], ["outside", "Ngoài NAVIGATION"],
   ];
+  var THEMES = [["light", "Bản Light"], ["dark", "Bản Dark (-DK)"], ["", "Light và Dark"]];
 
   function el(tag, cls, text) {
     var e = document.createElement(tag);
@@ -24,23 +25,22 @@
   }
 
   function matchStatus(f, st) {
-    if (st === "final") return f.final && !f.dark;
-    if (st === "notfinal") return !f.final && !f.dark;
-    if (st === "todo") return f.todo;
-    if (st === "dark") return f.dark;
-    if (st === "outside") return !f.in_nav && !f.dark;
+    if (st === "final") return !!f.final;
+    if (st === "notfinal") return !f.final;
+    if (st === "todo") return !!f.todo;
+    if (st === "removed") return !!f.removed;
+    if (st === "outside") return !f.in_nav;
     return true;
   }
 
   function render(host, data, ui) {
-    var state = { q: "", group: "", type: "", status: "", current: null };
+    var state = { q: "", group: "", type: "", status: "", theme: "light", current: null };
     var list = el("div", "sb-list card"), preview = el("div", "sb-preview card");
     var search = el("div", "sb-search"), input = el("input");
     input.placeholder = "Tìm mã (ADM-HV-02) hoặc tên màn…  /";
-    var groupSel = el("select", "figma-select");
-    var types = el("div", "sb-chips"), statuses = el("div", "sb-chips"), count = el("div", "sb-count");
+    var filters = el("div", "sb-filters"), count = el("div", "sb-count");
     var items = el("div", "sb-items");
-    search.append(input, groupSel, types, statuses, count);
+    search.append(input, filters, count);
     list.append(search, items);
     var info = el("div", "sb-info"), frame = el("div", "figma-frame is-loading");
     frame.innerHTML = '<div class="figma-loading">Chọn một màn hình để xem</div><iframe title="Figma" allowfullscreen></iframe>';
@@ -49,34 +49,39 @@
     var iframe = frame.querySelector("iframe");
     iframe.addEventListener("load", function () { if (iframe.src) frame.classList.remove("is-loading"); });
 
-    groupSel.append(new Option("Tất cả nhóm (" + Object.keys(data.groups).length + ")", ""));
-    Object.keys(data.groups).sort().forEach(function (g) {
-      var n = data.frames.filter(function (f) { return f.route.indexOf(g + "-") === 0 && !f.dark; }).length;
-      groupSel.append(new Option(g + " · " + data.groups[g] + " (" + n + ")", g));
-    });
-    groupSel.addEventListener("change", function () { state.group = groupSel.value; draw(); });
-
-    function chips(box, values, key) {
-      values.forEach(function (v) {
-        var c = el("button", "chip" + (v[0] === "" ? " is-on" : ""), v[1]);
-        c.addEventListener("click", function () {
-          state[key] = v[0];
-          box.querySelectorAll(".chip").forEach(function (x) { x.classList.toggle("is-on", x === c); });
-          draw();
-        });
-        box.append(c);
-      });
+    function dropdown(key, label, options) {
+      var wrap = el("label", "sb-filter");
+      wrap.append(el("span", "", label));
+      var sel = el("select", "figma-select");
+      options.forEach(function (o) { sel.append(new Option(o[1], o[0], false, o[0] === state[key])); });
+      sel.addEventListener("change", function () { state[key] = sel.value; draw(); });
+      wrap.append(sel);
+      filters.append(wrap);
+      return sel;
     }
-    var typeNames = Array.from(new Set(data.frames.map(function (f) { return f.type; }).filter(Boolean)));
-    chips(types, [["", "Mọi loại"]].concat(typeNames.map(function (t) { return [t, t]; })), "type");
-    chips(statuses, STATUS, "status");
+    var groupOpts = [["", "Mọi nhóm"]].concat(Object.keys(data.groups).sort().map(function (g) {
+      return [g, g + " · " + data.groups[g]];
+    }));
+    var types = Array.from(new Set(data.frames.map(function (f) { return f.type; }).filter(Boolean))).sort();
+    dropdown("group", "Nhóm", groupOpts);
+    dropdown("type", "Loại", [["", "Mọi loại"]].concat(types.map(function (t) { return [t, t]; })));
+    dropdown("status", "Trạng thái", STATUS);
+    dropdown("theme", "Bản", THEMES);
+    var reset = el("button", "chip", "Xoá bộ lọc");
+    reset.addEventListener("click", function () {
+      state.q = ""; input.value = ""; state.group = ""; state.type = ""; state.status = ""; state.theme = "light";
+      filters.querySelectorAll("select").forEach(function (sel, i) { sel.value = ["", "", "", "light"][i]; });
+      draw();
+    });
+    filters.append(reset);
 
     function matches(f) {
       var q = state.q.trim().toUpperCase();
-      if (state.group && f.route.indexOf(state.group + "-") !== 0) return false;
+      if (state.group && f.role + "-" + f.menu !== state.group) return false;
       if (state.type && f.type !== state.type) return false;
+      if (state.theme === "light" && f.dark) return false;
+      if (state.theme === "dark" && !f.dark) return false;
       if (!matchStatus(f, state.status)) return false;
-      if (!state.status && f.dark) return false;  // dark screens only under the "Dark" filter
       if (!q) return true;
       return f.code.indexOf(q) === 0 || f.code.replace(/-/g, "").indexOf(q.replace(/-/g, "")) === 0 ||
         f.title.toUpperCase().indexOf(q) !== -1;
@@ -85,8 +90,7 @@
     function draw() {
       items.innerHTML = "";
       var shown = data.frames.filter(matches), lastGroup = null;
-      var total = data.frames.filter(function (f) { return !f.dark; }).length;
-      count.textContent = shown.length + " / " + total + " mã" + (data.updated ? " · sync " + data.updated : "");
+      count.textContent = shown.length + " / " + data.frames.length + " mã" + (data.updated ? " · sync " + data.updated : "");
       shown.slice(0, 800).forEach(function (f) {
         var g = f.role + "-" + f.menu;
         if (g !== lastGroup) {
@@ -98,7 +102,8 @@
         b.dataset.code = f.code;
         b.append(el("code", "", f.code + " "), document.createTextNode(f.title.split(" / ").slice(-1)[0]));
         if (f.todo) b.append(el("span", "sb-flag is-todo", "Chưa làm"));
-        if (f.final && !f.dark) b.append(el("span", "sb-flag is-final", "Final"));
+        if (f.final) b.append(el("span", "sb-flag is-final", "Final"));
+        if (f.dark) b.append(el("span", "sb-flag is-todo", "Dark"));
         b.title = f.title;
         b.addEventListener("click", function () { open(f); });
         items.append(b);
@@ -125,7 +130,13 @@
         var sw = el("button", "chip", f.dark ? "Xem bản Light" : "Xem bản Dark");
         sw.addEventListener("click", function () {
           var target = data.frames.find(function (x) { return x.code === other; });
-          if (target) open(target);
+          if (!target) return;
+          if (state.theme && state.theme !== (target.dark ? "dark" : "light")) {
+            state.theme = "";
+            filters.querySelectorAll("select")[3].value = "";
+            draw();
+          }
+          open(target);
         });
         meta.append(sw);
       }
@@ -161,7 +172,10 @@
     });
     draw();
     var initial = data.frames.find(function (f) { return f.code === decodeURIComponent(location.hash.slice(1)); });
-    if (initial) { input.value = initial.route; state.q = initial.route; draw(); open(initial); }
+    if (initial) {
+      if (initial.dark) { state.theme = "dark"; filters.querySelectorAll("select")[3].value = "dark"; }
+      input.value = initial.route; state.q = initial.route; draw(); open(initial);
+    }
   }
 
   if (window.document$) window.document$.subscribe(init); else document.addEventListener("DOMContentLoaded", init);

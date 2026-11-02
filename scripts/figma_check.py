@@ -47,6 +47,7 @@ def fetch_thumbs(session, file_key, node_ids):
 
 
 def collect_targets():
+    lib.prune_deleted_docs()
     central = lib.load_central_meta()
     index = lib.load_index()
     targets = defaultdict(list)  # file_key -> [(doc, node_id, url)]

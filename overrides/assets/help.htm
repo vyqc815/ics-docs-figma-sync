@@ -1,40 +1,85 @@
-<h3>Luồng làm việc</h3>
+<h3>Xem một tài liệu</h3>
 <ol>
-  <li><strong>Designer</strong> đặt tên frame theo quy ước <code>ROLE-MENU-MMTTPS — Tên / Tab / Popup / Trạng thái</code>, cập nhật bảng NAVIGATION trên Figma.</li>
-  <li><strong>BA</strong> viết docs và ghi mã màn hình (vd <code>ADM-HV-020310</code>, dải <code>CD-KH-070301</code>–<code>070305</code>). Không cần dán link hay ảnh: mã tự thành link mở đúng prototype.</li>
-  <li><strong>Admin</strong> bấm <em>Đồng bộ › Sync danh sách màn</em> khi NAVIGATION thay đổi, và <em>Kiểm tra UI thay đổi</em> để biết frame nào vừa sửa.</li>
-  <li><strong>Người review</strong> so docs với prototype, admin bấm <em>Đánh dấu đã đồng bộ</em>.</li>
+  <li>Chọn tài liệu ở <strong>menu bên trái</strong>. Chấm màu cạnh tên là trạng thái, số màu cam cạnh nhóm là số tài liệu cần review.</li>
+  <li>Đọc nội dung ở <strong>cột giữa</strong>. UI Figma hiện ở <strong>cột bên phải</strong>.</li>
+  <li>Bấm vào một <strong>mã màn hình</strong> trong nội dung (chữ xanh, vd <code>ADM-HV-020310</code>): cột phải chuyển sang đúng màn đó.<br>
+      Giữ <kbd>Ctrl</kbd>/<kbd>⌘</kbd> khi bấm để mở thẳng trong Figma.</li>
+  <li>Muốn xem màn khác của tài liệu: bấm <strong>ô chọn frame</strong> trên đầu cột phải.</li>
+  <li>Bấm <strong>↗</strong> cạnh ô chọn frame để mở màn đang xem trong Figma.</li>
 </ol>
 
-<h3>Mã màn hình</h3>
+<h3>Đọc thanh trạng thái (trên đầu tài liệu)</h3>
+<table>
+  <tr><th>Thấy</th><th>Nghĩa là</th></tr>
+  <tr><td>🟢 Đồng bộ</td><td>Docs và UI khớp nhau, không cần làm gì</td></tr>
+  <tr><td>🟠 Docs đổi, UI chưa cập nhật</td><td>Báo designer cập nhật Figma</td></tr>
+  <tr><td>🔵 UI đổi, docs chưa cập nhật</td><td>Báo BA cập nhật docs. Frame đổi có dấu ● trong ô chọn frame</td></tr>
+  <tr><td>🔴 Cả hai đổi</td><td>Cần review lại cả docs và UI</td></tr>
+  <tr><td>⚪ Chưa có mốc</td><td>Chưa ai xác nhận tài liệu này lần nào</td></tr>
+</table>
+<p>Bấm <strong>⤓</strong> ở cuối thanh trạng thái để tải file <code>.md</code> gốc của tài liệu.</p>
+<p>Bấm <strong>⟲</strong> ở cuối thanh trạng thái để xem lịch sử: ai sửa docs, frame nào đổi, ai đánh dấu đồng bộ. Bấm ✕ hoặc <kbd>Esc</kbd> để quay lại Figma.</p>
+
+<h3>Tìm một màn hình</h3>
+<ol>
+  <li>Bấm <strong>Màn hình Figma</strong> trên thanh trên cùng.</li>
+  <li>Gõ mã hoặc tiền tố vào ô tìm (bấm <kbd>/</kbd> để nhảy vào ô tìm). Vd <code>ADM-HV-02</code> ra mọi tab, popup, trạng thái của màn đó.</li>
+  <li>Lọc thêm bằng các ô <strong>Nhóm</strong>, <strong>Loại</strong>, <strong>Trạng thái</strong>, <strong>Bản</strong> (Light / Dark). Các ô lọc kết hợp với nhau. Bấm <em>Xoá bộ lọc</em> để về ban đầu.</li>
+  <li>Bấm một dòng để xem màn bên phải. Phía trên có các tài liệu đang nhắc tới mã đó, bấm để mở.</li>
+  <li>Bấm <strong>Xem bản Dark / Xem bản Light</strong> để chuyển giữa hai bản.</li>
+</ol>
+<p>Muốn tìm theo nội dung tài liệu: dùng ô <strong>Tìm kiếm</strong> trên thanh trên cùng.</p>
+
+<h3>Tag</h3>
+<table>
+  <tr><th>Muốn</th><th>Làm</th></tr>
+  <tr><td>Xem tag của tài liệu</td><td>Dòng tag ngay dưới thanh trạng thái. Bấm một tag để xem mọi tài liệu cùng tag</td></tr>
+  <tr><td>Tìm, lọc theo tag</td><td>Bấm <strong>Tag</strong> trên thanh trên cùng › gõ tên tag hoặc tên tài liệu (phím <kbd>/</kbd>) › bấm các tag để lọc. Chọn nhiều tag = tài liệu có đủ các tag đó</td></tr>
+  <tr><td>Gắn tag trên web <em>(admin)</em></td><td>Bấm biểu tượng ✎ cuối dòng tag › gõ tag rồi <kbd>Enter</kbd> › <strong>Lưu tag</strong>. Tag gắn trên web có viền nét đứt</td></tr>
+  <tr><td>Gắn tag trong file docs</td><td>Thêm một dòng <code>Tags: #lop-hoc #giao-vien</code> vào file (dòng này không hiện trong nội dung, chỉ hiện thành tag). Sau đó <em>Cập nhật docs từ Git</em></td></tr>
+</table>
+<p>Tag viết thường, nhiều chữ nối bằng dấu gạch ngang, vd <code>#lich-hop</code>.</p>
+
+<h3>Chỉnh cách hiển thị</h3>
+<table>
+  <tr><th>Bấm</th><th>Để</th></tr>
+  <tr><td><strong>«</strong> trên đầu menu trái</td><td>Thu gọn menu trái. Mở lại bằng tab <em>Menu</em> ở mép trái màn hình</td></tr>
+  <tr><td><strong>»</strong> trên đầu mục lục</td><td>Thu gọn mục lục. Mở lại bằng tab <em>Mục lục</em> ở mép phải</td></tr>
+  <tr><td><strong>»</strong> trên đầu cột Figma</td><td>Thu gọn Figma, docs rộng ra. Mở lại bằng tab <em>Figma</em> ở mép phải</td></tr>
+  <tr><td>Kéo <strong>đường kẻ giữa docs và Figma</strong></td><td>Đổi độ rộng hai cột. Nhấn đúp để về mặc định</td></tr>
+  <tr><td>Biểu tượng ☀ / ☾ trên thanh trên cùng</td><td>Đổi giao diện sáng / tối</td></tr>
+  <tr><td>Logo góc trái trên cùng</td><td>Tải lại trang</td></tr>
+</table>
+<p>Web nhớ các lựa chọn này cho lần sau.</p>
+
+<h3>Gắn UI Figma vào tài liệu</h3>
 <ul>
-  <li>Mã thường mở màn <strong>Light</strong>. Mã có đuôi <code>-DK</code> mở màn <strong>Dark</strong> tương ứng.</li>
-  <li>Bấm mã trong docs: khung Figma bên phải chuyển sang màn đó. Giữ Ctrl/⌘ khi bấm để mở thẳng trong Figma.</li>
-  <li>Mã gạch ngang: không có frame trên Figma (đã đổi tên hoặc xoá).</li>
+  <li>Trong file docs, ghi <strong>mã màn hình</strong> ở chỗ mô tả UI, vd <code>ADM-HV-020310</code> hoặc dải <code>CD-KH-070301</code>–<code>070305</code>. Sau khi build, mã thành link và màn đó tự xuất hiện ở cột Figma.</li>
+  <li>Tài liệu <strong>không ghi mã nào</strong> thì không có cột Figma: web không tự đoán màn nào thuộc tài liệu nào.</li>
+  <li>Ảnh dán trong docs vẫn hiện bình thường, nhưng không cần nữa: mã là đủ để xem prototype mới nhất. Ảnh chỉ nên giữ khi cần ghi chú điểm khác Figma.</li>
 </ul>
 
-<h3>Trạng thái tài liệu</h3>
+<h3>Dành cho admin</h3>
 <table>
-  <tr><th>Màu</th><th>Ý nghĩa</th></tr>
-  <tr><td>🟢 Đồng bộ</td><td>Docs và UI không đổi từ lần đánh dấu gần nhất</td></tr>
-  <tr><td>🟠 Docs đổi</td><td>Docs đã sửa, UI chưa cập nhật theo</td></tr>
-  <tr><td>🔵 UI đổi</td><td>Frame Figma đã sửa, docs chưa cập nhật theo</td></tr>
-  <tr><td>🔴 Cả hai đổi</td><td>Cần review lại toàn bộ</td></tr>
-  <tr><td>⚪ Chưa có mốc</td><td>Chưa ai đánh dấu đồng bộ lần nào</td></tr>
+  <tr><th>Bấm</th><th>Khi nào</th></tr>
+  <tr><td><strong>Đánh dấu đã đồng bộ</strong> (nút xanh trên thanh trạng thái)</td><td>Sau khi đã so docs với UI và thấy khớp. Tài liệu chuyển 🟢</td></tr>
+  <tr><td><strong>Đồng bộ › Sync danh sách màn</strong></td><td>Khi designer vừa cập nhật bảng NAVIGATION trên Figma</td></tr>
+  <tr><td><strong>Đồng bộ › Kiểm tra UI thay đổi</strong></td><td>Định kỳ, hoặc khi designer báo vừa sửa UI</td></tr>
+  <tr><td><strong>Đồng bộ › Cập nhật docs từ Git</strong></td><td>Khi BA vừa đẩy docs lên repo FE. Lấy bản mới nhất: file thêm mới hiện ra, file sửa được cập nhật, file xoá biến mất cùng toàn bộ dữ liệu đồng bộ của nó</td></tr>
+  <tr><td><strong>Đồng bộ › Build lại site</strong></td><td>Khi docs vừa được sửa trực tiếp trên máy chạy server</td></tr>
 </table>
-<p>Trạng thái so với <strong>mốc đồng bộ</strong> (lần bấm "Đánh dấu đã đồng bộ"), không so theo ngày sửa.</p>
+<p>Các thao tác đồng bộ mất từ vài giây tới vài phút, xong trang tự tải lại.</p>
 
-<h3>Các nút</h3>
+<h3>Tài khoản</h3>
+<p>Bấm <strong>tên của bạn</strong> ở góc phải trên cùng để mở menu tài khoản.</p>
 <table>
-  <tr><th>Nút</th><th>Tác dụng</th><th>Quyền</th></tr>
-  <tr><td>Logo góc trái</td><td>Tải lại trang</td><td>Mọi người</td></tr>
-  <tr><td>Màn hình Figma</td><td>Tra cứu toàn bộ mã: gõ tiền tố (vd <code>ADM-HV-02</code>), lọc theo nhóm, loại, trạng thái. Phím <code>/</code> để tìm</td><td>Mọi người</td></tr>
-  <tr><td>⟲ Lịch sử</td><td>Thay đổi docs (git), thay đổi UI, các mốc đồng bộ</td><td>Mọi người</td></tr>
-  <tr><td>« / » trên từng phần</td><td>Thu gọn menu trái, mục lục, khung Figma. Mở lại bằng tab ở mép màn hình</td><td>Mọi người</td></tr>
-  <tr><td>Đường kẻ giữa docs và Figma</td><td>Kéo để đổi độ rộng, nhấn đúp để về mặc định</td><td>Mọi người</td></tr>
-  <tr><td>Ô chọn frame</td><td>Xem lần lượt các frame mà tài liệu nhắc tới. ● là frame đổi từ mốc</td><td>Mọi người</td></tr>
-  <tr><td>Đồng bộ › Sync danh sách màn</td><td>Đọc bảng NAVIGATION: mã, tên, loại, Final, Chưa làm, màn Dark</td><td>Admin</td></tr>
-  <tr><td>Đồng bộ › Kiểm tra UI thay đổi</td><td>Lấy dấu vân tay các frame docs nhắc tới, đánh dấu frame vừa đổi</td><td>Admin</td></tr>
-  <tr><td>Đồng bộ › Build lại site</td><td>Cập nhật khi docs vừa sửa</td><td>Admin</td></tr>
-  <tr><td>Đánh dấu đã đồng bộ</td><td>Ghi mốc: docs và UI hiện tại khớp nhau, kèm tên người đánh dấu</td><td>Admin</td></tr>
+  <tr><th>Muốn</th><th>Làm</th></tr>
+  <tr><td>Đổi mật khẩu của mình</td><td>Menu tài khoản › <strong>Đổi mật khẩu</strong> › nhập mật khẩu hiện tại và mật khẩu mới (từ 4 ký tự, chữ và số là đủ)</td></tr>
+  <tr><td>Tạo tài khoản cho người khác <em>(admin)</em></td><td>Menu tài khoản › <strong>Quản lý tài khoản</strong> › điền phần <em>Tạo tài khoản mới</em> › <strong>Tạo tài khoản</strong>. Gửi tên và mật khẩu cho người đó, nhắc họ đổi mật khẩu sau lần đăng nhập đầu</td></tr>
+  <tr><td>Cấp hoặc bỏ quyền admin <em>(admin)</em></td><td>Quản lý tài khoản › đổi ô <strong>Quyền</strong> của người đó (Xem / Admin)</td></tr>
+  <tr><td>Người khác quên mật khẩu <em>(admin)</em></td><td>Quản lý tài khoản › <strong>Đặt lại mật khẩu</strong> ở dòng của người đó</td></tr>
+  <tr><td>Xoá tài khoản <em>(admin)</em></td><td>Quản lý tài khoản › <strong>Xoá</strong> ở dòng của người đó</td></tr>
+  <tr><td>Thoát</td><td>Menu tài khoản › <strong>Đăng xuất</strong></td></tr>
 </table>
+<p>Xem <strong>danh sách tài khoản</strong>: menu tài khoản › <strong>Quản lý tài khoản</strong> (chỉ admin thấy). Bảng trên cùng liệt kê mọi tài khoản và quyền.</p>
+<p>Khi bị đổi quyền, đặt lại mật khẩu hoặc xoá, người đó sẽ bị đăng xuất ngay.</p>

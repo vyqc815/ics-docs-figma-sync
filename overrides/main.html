@@ -18,9 +18,21 @@
     {% include ".icons/material/check-decagram-outline.svg" %}Đánh dấu đã đồng bộ</button>
   {% endif %}
   <div class="sync-tools">
+    <a class="tool-btn" href="{{ base_url }}/api/docs/raw?doc={{ s.path | urlencode }}" download
+       title="Tải file .md của tài liệu" aria-label="Tải file .md của tài liệu">{% include ".icons/material/download-outline.svg" %}</a>
     <button class="tool-btn" data-action="toggle-history" title="Xem lịch sử thay đổi" aria-label="Xem lịch sử thay đổi">
       {% include ".icons/material/history.svg" %}</button>
   </div>
+</div>
+{% endif %}
+
+{% if s %}
+<div class="tag-row" data-doc="{{ s.path }}" data-web-tags="{{ s.web_tags | join(',') }}" data-file-tags="{{ s.file_tags | join(',') }}">
+  {% include ".icons/material/tag-outline.svg" %}
+  {% for t in s.file_tags %}<a class="tag-chip" href="{{ base_url }}/tags.html#{{ t }}" title="Tag ghi trong file docs">#{{ t }}</a>{% endfor %}
+  {% for t in s.web_tags %}<a class="tag-chip is-web" href="{{ base_url }}/tags.html#{{ t }}" title="Tag gắn trên web">#{{ t }}</a>{% endfor %}
+  {% if not s.file_tags and not s.web_tags %}<span class="muted">Chưa có tag</span>{% endif %}
+  <button class="tool-btn admin-only tag-edit-btn" title="Sửa tag" aria-label="Sửa tag">{% include ".icons/material/pencil-outline.svg" %}</button>
 </div>
 {% endif %}
 

@@ -4,6 +4,9 @@
 #
 # figma: link frame (Figma > chuột phải frame > Copy link to selection, phải có node-id)
 
+account_management/account_management.md:
+  tags:
+  - master
 course_management/course_management.md:
   figma: https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/PLS-ICS-T8-2026?node-id=2812-17023&t=lPLtOG4CwgaA4rrQ-0
   tags:

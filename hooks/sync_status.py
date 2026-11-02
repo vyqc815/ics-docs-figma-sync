@@ -1,4 +1,5 @@
-"""MkDocs hook: sync status/history per page, clickable screen codes, and the Figma screen browser."""
+"""MkDocs hook: sync status/history per page, tags, clickable screen codes, overview, screen and tag browsers."""
+import html as html_lib
 import json
 import re
 import sys
@@ -10,7 +11,6 @@ from mkdocs.structure.files import File
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 import sync_lib as lib  # noqa: E402
 
-SCREENS_PAGE = "figma-screens.md"
 SCREENS_MD = """---
 title: Màn hình Figma
 hide: [toc]
@@ -19,20 +19,18 @@ hide: [toc]
 
 <div id="screen-browser" class="screen-browser"></div>
 """
-def home_markdown(pages):
-    """Overview: docs grouped by sync status, the ones needing review first."""
-    order = ["both", "ui", "docs", "no_baseline", "synced"]
-    lines = ["---", "title: Tổng quan", "hide: [toc]", "---", "# Tổng quan", ""]
-    counts = {k: sum(1 for p in pages if p[2] == k) for k in order}
-    lines.append(" · ".join(f"**{lib.STATUSES[k]['label']}**: {counts[k]}" for k in order))
-    for k in order:
-        items = [p for p in pages if p[2] == k]
-        if not items:
-            continue
-        lines += ["", f"## {lib.STATUSES[k]['label']} ({len(items)})", ""]
-        lines += [f"- [{title}]({rel})" for rel, title, _ in sorted(items)]
-    lines += ["", f"{sum(1 for p in pages if p[2] == 'no_figma')} tài liệu chưa ghi mã màn hình nào."]
-    return "\n".join(lines) + "\n"
+TAGS_MD = """---
+title: Tag
+hide: [toc]
+---
+# Tag
+
+<div id="tag-browser" class="tag-browser"></div>
+"""
+REVIEW_ORDER = ["both", "ui", "docs", "no_baseline"]
+_cache = {}
+_index = {}
+_backlinks = {}
 
 
 def _title(rel):
@@ -40,9 +38,6 @@ def _title(rel):
         if line.startswith("# "):
             return line[2:].strip()
     return rel
-_cache = {}
-_index = {}
-_backlinks = {}
 
 
 def on_files(files, config):
@@ -52,28 +47,92 @@ def on_files(files, config):
     state = lib.read_json(lib.STATE_FILE, {})
     snapshot = lib.read_json(lib.SNAPSHOT_FILE, {})
     status_map = {}
+    _cache.clear()
     _backlinks.clear()
     for f in files.documentation_pages():
         rel = f.src_uri
         meta = lib.doc_meta(rel, central)
         frames = lib.doc_frames(rel, meta, _index)
+        file_tags, web_tags = lib.doc_tags(rel, central)
         status = lib.compute_status(rel, frames, state, snapshot)
         names = {n: v.get("name") for n, v in (snapshot.get(rel) or {}).get("frames", {}).items()}
         _cache[rel] = {"meta": meta, "frames": frames, "status": status, "state": state, "names": names,
-                       "changed": lib.changed_frames(rel, frames, state, snapshot)}
+                       "changed": lib.changed_frames(rel, frames, state, snapshot), "url": f.url,
+                       "title": _title(rel), "file_tags": file_tags, "web_tags": web_tags}
         status_map[f.url] = status
         for fr in frames:
             if fr.get("code"):
-                _backlinks.setdefault(fr["code"], []).append({"url": f.url, "title": rel})
+                _backlinks.setdefault(fr["code"], []).append({"url": f.url, "title": _cache[rel]["title"]})
     if _index.get("frames"):
-        files.append(File.generated(config, SCREENS_PAGE, content=SCREENS_MD))
+        files.append(File.generated(config, "figma-screens.md", content=SCREENS_MD))
+    files.append(File.generated(config, "tags.md", content=TAGS_MD))
     if not files.get_file_from_path("index.md"):
-        pages = [(rel, _title(rel), c["status"]) for rel, c in _cache.items() if c["status"] != "no_figma"]
-        pages += [(rel, rel, "no_figma") for rel, c in _cache.items() if c["status"] == "no_figma"]
-        files.append(File.generated(config, "index.md", content=home_markdown(pages)))
+        files.append(File.generated(config, "index.md", content=home_markdown(state)))
     config.extra["sync_map"] = status_map
     return files
 
+
+# ---------- Overview page ----------
+
+def _e(text):
+    return html_lib.escape(str(text))
+
+
+def home_markdown(state):
+    docs = list(_cache.values())
+    stats = [(k, sum(1 for d in docs if d["status"] == k)) for k in REVIEW_ORDER + ["synced", "no_figma"]]
+    cards = "".join(
+        f'<a class="stat-card card sync-{lib.STATUSES[k]["color"]}" href="#status-{k}">'
+        f'<span class="stat-label"><span class="sync-dot"></span>{_e(lib.STATUSES[k]["label"])}</span>'
+        f'<span class="stat-value">{n}</span></a>' for k, n in stats)
+
+    review = sorted((d for d in docs if d["status"] in REVIEW_ORDER),
+                    key=lambda d: (REVIEW_ORDER.index(d["status"]), d["title"]))
+    review_html = "".join(
+        f'<li id="status-{d["status"]}"><span class="nav-dot sync-{lib.STATUSES[d["status"]]["color"]}"></span>'
+        f'<a href="{_e(d["url"])}">{_e(d["title"])}</a><span class="muted">{_e(lib.STATUSES[d["status"]]["label"])}</span></li>'
+        for d in review) or '<li class="muted">Không có tài liệu nào cần review</li>'
+
+    tag_count = {}
+    for d in docs:
+        for t in d["file_tags"] + d["web_tags"]:
+            tag_count[t] = tag_count.get(t, 0) + 1
+    tags_html = "".join(f'<a class="tag-chip" href="tags.html#{_e(t)}">#{_e(t)}<span>{n}</span></a>'
+                        for t, n in sorted(tag_count.items(), key=lambda x: (-x[1], x[0]))[:30]) \
+        or '<span class="muted">Chưa có tag nào</span>'
+
+    frames = [f for f in (_index.get("frames") or {}).values() if not f.get("dark")]
+    fig = [("Mã màn hình", len(frames)), ("Final", sum(1 for f in frames if f.get("final"))),
+           ("Chưa Final", sum(1 for f in frames if not f.get("final"))),
+           ("Chưa làm", sum(1 for f in frames if f.get("todo"))),
+           ("Có bản Dark", sum(1 for f in frames if f.get("dark_code")))]
+    fig_html = "".join(f'<div class="mini-stat"><span>{_e(k)}</span><strong>{v}</strong></div>' for k, v in fig)
+
+    recent = sorted(((rel, ev) for rel, s in state.items() for ev in s.get("log", [])),
+                    key=lambda x: lib._sort_key({"date": x[1]["date"]}), reverse=True)[:8]
+    recent_html = "".join(
+        f'<li><a href="{_e(_cache[rel]["url"])}">{_e(_cache[rel]["title"])}</a>'
+        f'<span class="muted">{_e(ev["date"])} · {_e(ev["by"])}</span></li>'
+        for rel, ev in recent if rel in _cache) or '<li class="muted">Chưa có mốc đồng bộ nào</li>'
+
+    return f"""---
+title: Tổng quan
+hide: [toc]
+---
+# Tổng quan
+
+<div class="stat-grid">{cards}</div>
+<div class="widget-grid">
+<section class="widget card widget-wide"><h2>Cần review <span class="pill">{len(review)}</span></h2><ul class="widget-list">{review_html}</ul></section>
+<section class="widget card"><h2>Màn hình Figma</h2><div class="mini-stats">{fig_html}</div>
+<p><a href="figma-screens.html">Mở danh sách màn hình →</a> <span class="muted">Sync {_e(_index.get("updated") or "chưa có")}</span></p></section>
+<section class="widget card"><h2>Tag</h2><div class="tag-cloud">{tags_html}</div><p><a href="tags.html">Xem tất cả tag →</a></p></section>
+<section class="widget card"><h2>Đồng bộ gần đây</h2><ul class="widget-list">{recent_html}</ul></section>
+</div>
+"""
+
+
+# ---------- Markdown / HTML processing ----------
 
 BLOCK_START = re.compile(r"^\s{0,3}([-*+]\s|\d+[.)]\s|\|)")
 
@@ -94,12 +153,11 @@ def github_like_blocks(markdown):
 
 @event_priority(100)
 def on_page_markdown(markdown, page, config, files):
+    _, markdown = lib.strip_tag_lines(markdown)  # tags are shown as chips, not as a text line
     markdown = github_like_blocks(markdown)
     info = _cache.get(page.file.src_uri)
-    if info:
-        for key in ("tags", "version"):
-            if info["meta"].get(key) and key not in page.meta:
-                page.meta[key] = info["meta"][key]
+    if info and info["meta"].get("version") and "version" not in page.meta:
+        page.meta["version"] = info["meta"]["version"]
     return markdown
 
 
@@ -160,19 +218,23 @@ def on_page_context(context, page, config, nav):
         "baseline": base.get("log", [None])[-1] if base.get("log") else None,
         "history": lib.full_history(rel, info["state"]),
         "path": "docs/" + rel,
+        "file_tags": info["file_tags"],
+        "web_tags": info["web_tags"],
     }
     return context
 
 
 def on_post_build(config):
-    """Slim index for the in-browser screen browser and code links."""
+    """Data files for the screen browser and the tag browser."""
+    assets = Path(config.site_dir) / "assets"
+    assets.mkdir(parents=True, exist_ok=True)
     keys = ("code", "title", "kind", "type", "route", "role", "menu", "group", "page", "url",
             "final", "todo", "removed", "in_nav", "dark", "dark_code", "ready")
-    frames = []
-    for f in (_index.get("frames") or {}).values():
-        frames.append(dict({k: f.get(k) for k in keys}, embed=lib.figma_embed_url(f["url"]) if f.get("url") else None,
-                           docs=_backlinks.get(f["code"], [])))
+    frames = [dict({k: f.get(k) for k in keys}, embed=lib.figma_embed_url(f["url"]) if f.get("url") else None,
+                   docs=_backlinks.get(f["code"], []))
+              for f in (_index.get("frames") or {}).values()]
     data = {"groups": _index.get("groups", {}), "updated": _index.get("updated"), "frames": frames}
-    out = Path(config.site_dir) / "assets" / "figma_index.json"
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    (assets / "figma_index.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    docs = [{"url": d["url"], "title": d["title"], "status": d["status"], "file_tags": d["file_tags"],
+             "web_tags": d["web_tags"]} for d in _cache.values()]
+    (assets / "tags.json").write_text(json.dumps({"docs": docs}, ensure_ascii=False), encoding="utf-8")

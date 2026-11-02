@@ -19,8 +19,9 @@
     setTimeout(function () { t.remove(); }, type === "info" ? 120000 : 5000);
     return t;
   }
+  function url(path) { return root() + path.replace(/^\//, ""); }  // works under a sub-path too
   function api(path, payload) {
-    return fetch(path, { method: "POST", headers: { "Content-Type": "application/json" },
+    return fetch(url(path), { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload || {}) }).then(function (r) { return r.json(); });
   }
   function isDark() { return body.getAttribute("data-md-color-scheme") === "slate"; }
@@ -31,13 +32,14 @@
     var u = new URL(url);
     return "https://embed.figma.com" + u.pathname + "?node-id=" + u.searchParams.get("node-id") + "&embed-host=ics-docs-figma-sync";
   }
-  window.SyncUI = { pref: pref, toast: toast, embedFor: embedFor, root: root };
+  window.SyncUI = { pref: pref, toast: toast, embedFor: embedFor, root: root, url: url };
 
   // ---------- Header: screens link, admin menu, account menu ----------
   var ADMIN_ITEMS = [
+    ["/api/docs/pull", "Cập nhật docs từ Git", "Lấy docs mới nhất của repo FE: file thêm, sửa, xoá đều được cập nhật"],
     ["/api/figma/screens", "Sync danh sách màn", "Đọc lại bảng NAVIGATION trên Figma: mã, tên, loại, Final, Chưa làm"],
     ["/api/figma/check", "Kiểm tra UI thay đổi", "So từng frame mà docs nhắc tới với lần kiểm tra trước"],
-    ["/api/rebuild", "Build lại site", "Cập nhật nội dung khi docs vừa được sửa"],
+    ["/api/rebuild", "Build lại site", "Khi docs vừa sửa trực tiếp trên máy này"],
   ];
   function menu(label, cls, items) {
     var wrap = document.createElement("div");
@@ -61,7 +63,7 @@
     var logo = document.querySelector(".md-header__button.md-logo");
     if (logo) logo.addEventListener("click", function (e) { e.preventDefault(); location.reload(); });
     if (logo) logo.title = "Tải lại trang";
-    fetch("/api/me").then(function (r) { return r.json(); }).then(function (me) {
+    fetch(url("/api/me")).then(function (r) { return r.json(); }).then(function (me) {
       if (!me.user) return;
       body.dataset.role = me.role;
       var bar = document.createElement("div");
@@ -70,9 +72,14 @@
       screens.className = "btn";
       screens.href = root() + "figma-screens.html";
       screens.textContent = "Màn hình Figma";
-      bar.append(screens);
+      var tagsLink = document.createElement("a");
+      tagsLink.className = "btn";
+      tagsLink.href = root() + "tags.html";
+      tagsLink.textContent = "Tag";
+      bar.append(screens, tagsLink);
       if (me.role === "admin") {
-        bar.append(menu("Đồng bộ", "admin-only", ADMIN_ITEMS.map(function (a) {
+        var items = ADMIN_ITEMS.filter(function (a) { return me.docs_pull || a[0] !== "/api/docs/pull"; });
+        bar.append(menu("Đồng bộ", "admin-only", items.map(function (a) {
           return item(a[1], a[2], { "data-admin": a[0] });
         })));
       }
@@ -82,10 +89,14 @@
       chip.querySelector(".avatar").textContent = me.user.slice(0, 2);
       chip.querySelector(".uname").textContent = me.user;
       chip.querySelector(".role-badge").textContent = me.role === "admin" ? "Admin" : "Xem";
-      bar.append(menu(chip, "account-menu", [
-        item("Hướng dẫn", "Các trạng thái, nút và luồng làm việc", { "data-help": "" }),
-        item("Đăng xuất", "", { "data-logout": "" }),
-      ]));
+      var accountItems = [
+        item("Hướng dẫn sử dụng", "Bấm vào đâu để làm gì", { "data-help": "" }),
+        item("Đổi mật khẩu", "", { "data-account": "password" }),
+      ];
+      if (me.role === "admin") accountItems.push(item("Quản lý tài khoản", "Tạo, phân quyền, đặt lại mật khẩu", { "data-account": "users" }));
+      accountItems.push(item("Đăng xuất", "", { "data-logout": "" }));
+      bar.append(menu(chip, "account-menu", accountItems));
+      body.dataset.user = me.user;
       var search = document.querySelector(".md-header__inner .md-search");
       search.parentNode.insertBefore(bar, search.nextSibling);
     }).catch(function (e) { console.error("[Sync] Error:", e); });
@@ -107,7 +118,7 @@
     if (!e.target.closest(".dropdown-menu")) closeMenus();
     var admin = e.target.closest("[data-admin]");
     if (admin) runAdmin(admin);
-    if (e.target.closest("[data-logout]")) api("/api/logout").then(function () { location.href = "/login"; });
+    if (e.target.closest("[data-logout]")) api("/api/logout").then(function () { location.href = url("/login"); });
     if (e.target.closest("[data-help]")) { closeMenus(); openHelp(); }
   });
   function runAdmin(btn) {
@@ -123,37 +134,42 @@
     });
   }
 
-  // ---------- Help modal ----------
+  // ---------- Modal (help, account forms) ----------
   var lastFocus = null;
-  function openHelp() {
-    var tpl = document.getElementById("help-content");
-    if (!tpl) {
-      fetch(root() + "assets/help.htm").then(function (r) { return r.text(); }).then(function (html) {
-        var t = document.createElement("template");
-        t.id = "help-content";
-        t.innerHTML = html;
-        body.append(t);
-        openHelp();
-      });
-      return;
-    }
+  function openModal(title, content, wide) {
+    closeModal();
     lastFocus = document.activeElement;
     var overlay = document.createElement("div");
     overlay.className = "modal-overlay";
-    overlay.innerHTML = '<div class="modal card" role="dialog" aria-modal="true" aria-label="Hướng dẫn">' +
-      '<div class="panel-head"><strong>Hướng dẫn</strong><button class="tool-btn" data-close title="Đóng" aria-label="Đóng">✕</button></div>' +
+    overlay.innerHTML = '<div class="modal card" role="dialog" aria-modal="true">' +
+      '<div class="modal-head"><h2></h2><button class="tool-btn" data-close title="Đóng" aria-label="Đóng">✕</button></div>' +
       '<div class="modal-body md-typeset"></div></div>';
-    overlay.querySelector(".modal-body").append(tpl.content.cloneNode(true));
+    overlay.querySelector(".modal").classList.toggle("is-narrow", !wide);
+    overlay.querySelector("h2").textContent = title;
+    overlay.querySelector(".modal").setAttribute("aria-label", title);
+    overlay.querySelector(".modal-body").append(content);
     body.append(overlay);
-    overlay.querySelector("[data-close]").focus();
+    var first = overlay.querySelector(".modal-body input, .modal-body select, .modal-body button") || overlay.querySelector("[data-close]");
+    first.focus();
     overlay.addEventListener("click", function (e) {
-      if (e.target === overlay || e.target.closest("[data-close]")) closeHelp();
+      if (e.target === overlay || e.target.closest("[data-close]")) closeModal();
     });
+    return overlay;
   }
-  function closeHelp() {
+  function closeModal() {
     var o = document.querySelector(".modal-overlay");
     if (o) { o.remove(); if (lastFocus) lastFocus.focus(); }
   }
+  function openHelp() {
+    fetch(root() + "assets/help.htm").then(function (r) { return r.text(); }).then(function (html) {
+      var t = document.createElement("template");
+      t.innerHTML = html;
+      openModal("Hướng dẫn sử dụng", t.content, true);
+    }).catch(function (e) { console.error("[Sync] Error:", e); toast("Không tải được hướng dẫn", "error"); });
+  }
+  window.SyncUI.openModal = openModal;
+  window.SyncUI.closeModal = closeModal;
+  window.SyncUI.api = api;
 
   // ---------- Collapsible sections (each control sits on its own section) ----------
   function applyPrefs() {
@@ -186,7 +202,7 @@
   });
   document.addEventListener("keydown", function (e) {
     if (e.key !== "Escape") return;
-    if (document.querySelector(".modal-overlay")) return closeHelp();
+    if (document.querySelector(".modal-overlay")) return closeModal();
     closeMenus();
     body.classList.remove("show-history");
   });
