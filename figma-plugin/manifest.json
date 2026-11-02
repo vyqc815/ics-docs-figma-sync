@@ -1,0 +1,15 @@
+{
+  "name": "ICS Code Viewer",
+  "id": "ics-code-viewer-dev",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma", "dev"],
+  "capabilities": ["inspect"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["https://ics-figma-demo.vercel.app"],
+    "devAllowedDomains": ["http://localhost:3108"],
+    "reasoning": "Loads the page Markdown and generated code of the selected screen."
+  }
+}

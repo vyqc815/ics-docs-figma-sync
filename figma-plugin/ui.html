@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<style>
+  :root {
+    --bg: var(--figma-color-bg, #fff);
+    --bg2: var(--figma-color-bg-secondary, #f5f5f5);
+    --fg: var(--figma-color-text, #111);
+    --fg2: var(--figma-color-text-secondary, #666);
+    --line: var(--figma-color-border, #e5e5e5);
+    --accent: var(--figma-color-bg-brand, #0d99ff);
+    --code-bg: var(--figma-color-bg-secondary, #f7f7f8);
+    --kw: #b4237a; --str: #1a7f37; --tag: #0b62c4; --attr: #8a5a00; --com: #8b949e;
+  }
+  .figma-dark {
+    --kw: #ff7ab2; --str: #7ee787; --tag: #79c0ff; --attr: #e3b341; --com: #8b949e;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 12px/1.5 Inter, system-ui, sans-serif; color: var(--fg); background: var(--bg); }
+  header { padding: 10px 12px 0; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--bg); z-index: 1; }
+  .row { display: flex; align-items: center; gap: 8px; }
+  .title { font-weight: 600; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+  .route { color: var(--fg2); font-family: ui-monospace, Menlo, monospace; font-size: 11px; }
+  .tabs { display: flex; gap: 4px; margin-top: 8px; }
+  .tab { border: 0; background: none; color: var(--fg2); padding: 6px 10px; cursor: pointer; border-bottom: 2px solid transparent; font: inherit; font-weight: 500; }
+  .tab[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--accent); }
+  button.small, a.small { border: 1px solid var(--line); background: var(--bg); color: var(--fg); border-radius: 6px; padding: 3px 8px; font: inherit; cursor: pointer; text-decoration: none; white-space: nowrap; }
+  button.small:hover, a.small:hover { background: var(--bg2); }
+  .files { display: flex; flex-wrap: wrap; gap: 4px; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+  .chip { border: 1px solid var(--line); background: var(--bg); color: var(--fg2); border-radius: 999px; padding: 2px 8px; cursor: pointer; font: 11px ui-monospace, Menlo, monospace; }
+  .chip[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .bar { display: flex; justify-content: space-between; align-items: center; padding: 6px 12px; color: var(--fg2); font: 11px ui-monospace, Menlo, monospace; }
+  pre { margin: 0 12px 12px; padding: 10px; background: var(--code-bg); border-radius: 8px; overflow: auto; font: 11px/1.55 ui-monospace, Menlo, monospace; tab-size: 2; white-space: pre; }
+  .kw { color: var(--kw); } .str { color: var(--str); } .tag { color: var(--tag); } .attr { color: var(--attr); } .com { color: var(--com); }
+  .md { padding: 4px 16px 24px; }
+  .md h1 { font-size: 16px; margin: 14px 0 6px; } .md h2 { font-size: 14px; margin: 16px 0 6px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+  .md h3 { font-size: 13px; margin: 12px 0 4px; } .md p { margin: 6px 0; } .md ul { margin: 4px 0; padding-left: 18px; }
+  .md code { background: var(--code-bg); padding: 0 4px; border-radius: 4px; font: 11px ui-monospace, Menlo, monospace; }
+  .md pre { margin: 6px 0; }
+  .md blockquote { margin: 6px 0; padding: 6px 10px; border-left: 3px solid var(--accent); background: var(--bg2); border-radius: 0 6px 6px 0; }
+  .md table { border-collapse: collapse; margin: 6px 0; font-size: 11px; display: block; overflow-x: auto; }
+  .md th, .md td { border: 1px solid var(--line); padding: 3px 6px; text-align: left; vertical-align: top; }
+  .md th { background: var(--bg2); }
+  .empty { padding: 40px 24px; text-align: center; color: var(--fg2); }
+  .setting { display: flex; gap: 6px; align-items: center; padding: 8px 12px; border-top: 1px solid var(--line); color: var(--fg2); position: sticky; bottom: 0; background: var(--bg); }
+  .setting select { font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 2px 4px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <div class="title" id="title">ICS Code Viewer</div>
+    <a class="small" id="demo" href="#" hidden>▶ Xem demo</a>
+  </div>
+  <div class="route" id="route"></div>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tab-md" aria-selected="true">📄 MD</button>
+    <button class="tab" role="tab" id="tab-code" aria-selected="false">🧩 Code</button>
+  </div>
+</header>
+<main id="main"><div class="empty">Chọn một màn trên canvas (hoặc dải ghi chú code bên dưới màn).</div></main>
+<div class="setting">
+  Nguồn:
+  <select id="source">
+    <option value="http://localhost:3108">Máy này (localhost:3108)</option>
+    <option value="https://ics-figma-demo.vercel.app">Vercel</option>
+  </select>
+</div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  let state = { data: null, tab: "md", file: 0, ids: [] };
+
+  // Light TSX highlighting: comments, strings, JSX tags and attributes, keywords.
+  function highlight(code) {
+    const re = /(\/\*[\s\S]*?\*\/|\/\/[^\n]*)|("(?:[^"\\\n]|\\.)*"|'(?:[^'\\\n]|\\.)*'|`(?:[^`\\]|\\.)*`)|(<\/?[A-Za-z][\w.]*)|(\b[a-zA-Z-]+(?==))|\b(import|from|export|default|function|return|const|let|type|interface|async|await|if|else)\b/g;
+    let out = "", last = 0, m;
+    while ((m = re.exec(code))) {
+      out += esc(code.slice(last, m.index));
+      const cls = m[1] ? "com" : m[2] ? "str" : m[3] ? "tag" : m[4] ? "attr" : "kw";
+      out += `<span class="${cls}">${esc(m[0])}</span>`;
+      last = re.lastIndex;
+    }
+    return out + esc(code.slice(last));
+  }
+
+  // Small Markdown renderer: headings, lists, tables, code blocks, inline code, bold, links.
+  function inline(s) {
+    return esc(s)
+      .replace(/`([^`]+)`/g, "<code>$1</code>")
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+  }
+  function markdown(md) {
+    const lines = md.replace(/<!--[\s\S]*?-->\n?/g, "").split("\n");
+    let html = "", i = 0;
+    while (i < lines.length) {
+      const l = lines[i];
+      if (l.startsWith("```")) {
+        let j = i + 1, body = [];
+        while (j < lines.length && !lines[j].startsWith("```")) body.push(lines[j++]);
+        html += `<pre>${esc(body.join("\n"))}</pre>`; i = j + 1; continue;
+      }
+      const h = l.match(/^(#{1,4})\s+(.*)/);
+      if (h) { html += `<h${h[1].length}>${inline(h[2])}</h${h[1].length}>`; i++; continue; }
+      if (l.startsWith("|")) {
+        const rows = [];
+        while (i < lines.length && lines[i].startsWith("|")) rows.push(lines[i++]);
+        const cells = (r) => r.replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
+        const body = rows.filter((r) => !/^\|[\s:|-]+\|$/.test(r));
+        html += "<table>" + body.map((r, k) => "<tr>" + cells(r).map((c) => k ? `<td>${inline(c)}</td>` : `<th>${inline(c)}</th>`).join("") + "</tr>").join("") + "</table>";
+        continue;
+      }
+      if (l.startsWith(">")) {
+        const quote = [];
+        while (i < lines.length && lines[i].startsWith(">")) quote.push(lines[i++].replace(/^>\s?/, ""));
+        html += `<blockquote>${quote.filter((q) => q.trim()).map(inline).join("<br>")}</blockquote>`;
+        continue;
+      }
+      if (/^\s*[-*]\s+/.test(l)) {
+        const items = [];
+        while (i < lines.length && /^\s*[-*]\s+/.test(lines[i])) items.push(lines[i++].replace(/^\s*[-*]\s+/, ""));
+        html += "<ul>" + items.map((t) => `<li>${inline(t)}</li>`).join("") + "</ul>";
+        continue;
+      }
+      if (l.trim()) html += `<p>${inline(l)}</p>`;
+      i++;
+    }
+    return html;
+  }
+
+  function render() {
+    const d = state.data;
+    $("tab-md").setAttribute("aria-selected", state.tab === "md");
+    $("tab-code").setAttribute("aria-selected", state.tab === "code");
+    if (!d) return;
+    if (d.error) { $("main").innerHTML = `<div class="empty">${esc(d.error)}</div>`; return; }
+    if (state.tab === "md") {
+      $("main").innerHTML = d.doc
+        ? `<div class="bar"><span>${esc(d.doc.path)}</span><button class="small" data-copy="md">Copy MD</button></div><div class="md">${markdown(d.doc.text)}</div>`
+        : `<div class="empty">Màn này chưa có MD.</div>`;
+    } else if (!d.files.length) {
+      $("main").innerHTML = `<div class="empty">Màn này chưa có code.</div>`;
+    } else {
+      const f = d.files[state.file] || d.files[0];
+      const chips = d.files.map((x, k) => `<button class="chip" data-file="${k}" aria-selected="${k === state.file}">${esc(x.path.split("/").slice(-2).join("/"))}</button>`).join("");
+      $("main").innerHTML = `<div class="files">${chips}</div><div class="bar"><span>${esc(f.path)} · ${f.code.split("\n").length} dòng</span><button class="small" data-copy="code">Copy</button></div><pre>${highlight(f.code)}</pre>`;
+    }
+  }
+
+  async function load() {
+    if (!state.ids.length) { state.data = null; $("main").innerHTML = '<div class="empty">Chọn một màn trên canvas (hoặc dải ghi chú code bên dưới màn).</div>'; return; }
+    const base = $("source").value;
+    $("main").innerHTML = '<div class="empty">Đang tải…</div>';
+    try {
+      const res = await fetch(`${base}/api/figma-source?node=${encodeURIComponent(state.ids.join(","))}`);
+      state.data = await res.json();
+    } catch (e) {
+      state.data = { error: `Không kết nối được ${base}. Dev server có đang chạy không?` };
+    }
+    const d = state.data;
+    $("title").textContent = d && !d.error ? d.name.toUpperCase() : "ICS Code Viewer";
+    $("route").textContent = d && !d.error ? d.route : "";
+    $("demo").hidden = !(d && !d.error && d.files.length);
+    state.file = 0;
+    render();
+  }
+
+  $("tab-md").onclick = () => { state.tab = "md"; render(); };
+  $("tab-code").onclick = () => { state.tab = "code"; render(); };
+  $("source").onchange = load;
+  $("demo").onclick = (e) => {
+    e.preventDefault();
+    parent.postMessage({ pluginMessage: { type: "open", url: `https://ics-figma-demo.vercel.app${state.data.route}` } }, "*");
+  };
+  $("main").onclick = (e) => {
+    const t = e.target.closest("[data-file],[data-copy]");
+    if (!t) return;
+    if (t.dataset.file) { state.file = +t.dataset.file; render(); return; }
+    const text = t.dataset.copy === "md" ? state.data.doc.text : state.data.files[state.file].code;
+    // The plugin iframe has no clipboard permission: copy through a hidden textarea.
+    const ta = document.createElement("textarea");
+    ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove();
+    parent.postMessage({ pluginMessage: { type: "notify", text: "Đã copy" } }, "*");
+  };
+
+  window.onmessage = (e) => {
+    const msg = e.data && e.data.pluginMessage;
+    if (msg && msg.type === "selection") {
+      if (msg.ids.join(",") === state.ids.join(",")) return;
+      state.ids = msg.ids; load();
+    }
+  };
+  // Outside Figma (browser preview), ?node=… loads a screen directly.
+  const q = new URLSearchParams(location.search).get("node");
+  if (q) { state.ids = q.split(","); load(); }
+  parent.postMessage({ pluginMessage: { type: "ready" } }, "*");
+</script>
+</body>
+</html>
