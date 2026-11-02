@@ -37,7 +37,13 @@ const FigmaIndexPage = (): React.JSX.Element => {
                 <Link href={p.route} className="text-sm text-blue-700 hover:underline">
                   {p.name}
                 </Link>
-                <span className="ml-2 text-xs text-neutral-500">{p.route}</span>
+                <Link href={`/figma/${p.name}/spec`} className="ml-2 text-xs text-neutral-600 hover:underline">
+                  MD
+                </Link>
+                <Link href={`/figma/${p.name}/code`} className="ml-2 text-xs text-neutral-600 hover:underline">
+                  Code
+                </Link>
+                <span className="ml-2 text-xs text-neutral-400">{p.route}</span>
               </li>
             ))}
           </ul>

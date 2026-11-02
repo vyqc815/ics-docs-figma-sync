@@ -9,6 +9,7 @@
   "debugIds": true,
   "figmaNote": true,
   "demoUrl": "https://ics-figma-demo.vercel.app",
+  "sourceViewer": true,
   "baseUrl": "http://localhost:3000",
   "thresholds": {},
   "pages": [
