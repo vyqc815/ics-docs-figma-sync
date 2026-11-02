@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Body7 } from "../shared/Body7";
 import { Maincontent } from "./Maincontent";
-import { Header30 } from "../shared/Header30";
+import { Header29 } from "../shared/Header29";
 import { SidebarMenuTeacher } from "./SidebarMenuTeacher";
 
 /** Figma frame "GV-LOP-070100 — Chi tiết lớp / Cuộc họp / Trống" — 1440×810px. */
@@ -14,7 +14,7 @@ export function GvLop070100Page() {
     <main className={`[--color-border-default:#e2e8f0] [--color-neutral-white:#ffffff] [--color-text-primary:#334155] [--org-border:#ffffff] [--org-sakumi-bg:#e33f64] [--org-sakumi-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] overflow-hidden bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="4333:13911">
       <Body7 />
       <Maincontent />
-      <Header30 />
+      <Header29 />
       <SidebarMenuTeacher />
     </main>
   );

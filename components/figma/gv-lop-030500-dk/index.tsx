@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Body3 } from "../shared/Body3";
 import { Maincontent } from "./Maincontent";
-import { Header34 } from "../shared/Header34";
+import { Header33 } from "../shared/Header33";
 import { SidebarRail } from "./SidebarRail";
 
 /** Figma frame "GV-LOP-030500-DK — Chi tiết lớp / Bài học / Kiến thức" — 1440×1059px. */
@@ -14,7 +14,7 @@ export function GvLop030500DkPage() {
     <main className={`[--bg-brand-tint:#fff7ed] [--bg-canvas:#f8fafc] [--bg-strong:#e2e8f0] [--bg-surface:#ffffff] [--border-brand:#fed7aa] [--border-default:#e2e8f0] [--border-strong:#cbd5e1] [--brand-primary:#e65100] [--chrome-bg:#ff7700] [--chrome-ring-dark:#ef6700] [--chrome-ring-light:#ff9537] [--color-neutral-white:#ffffff] [--org-border:#ffffff] [--org-sakumi-bg:#e33f64] [--org-sakumi-fg:#ffffff] [--text-primary:#334155] [--text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1059px] overflow-hidden bg-[color:#121213] ${fontVariables}`} data-figma-id="4324:31626">
       <Body3 />
       <Maincontent />
-      <Header34 />
+      <Header33 />
       <SidebarRail />
     </main>
   );

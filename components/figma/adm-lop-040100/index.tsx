@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Maincontent } from "./Maincontent";
 import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
-import { Header16 } from "../shared/Header16";
+import { Header14 } from "../shared/Header14";
 
 /** Figma frame "ADM-LOP-040100 — Lớp học / Cài đặt / Thông tin" — 1440×810px. */
 export function AdmLop040100Page() {
@@ -13,7 +13,7 @@ export function AdmLop040100Page() {
     <main className={`[--color-border-default:#e2e8f0] [--color-brand-orange:#e65100] [--color-extended-fed7aa:#fed7aa] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-text-placeholder:#cccccc] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="2199:17395">
       <Maincontent />
       <SidebarMenuAdmin />
-      <Header16 />
+      <Header14 />
     </main>
   );
 }

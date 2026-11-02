@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Content } from "./Content";
 import { SidebarMenuCd } from "./SidebarMenuCd";
-import { Header22 } from "../shared/Header22";
+import { Header21 } from "../shared/Header21";
 
 /** Figma frame "CD-KH-050200-DK — Kỹ năng (S6) / Đọc" — 1440×910px. */
 export function CdKh050200DkPage() {
@@ -13,7 +13,7 @@ export function CdKh050200DkPage() {
     <main className={`[--bg-strong:#e2e8f0] [--border-strong:#cbd5e1] [--color-border-button:#cbd5e1] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-cccccc:#cccccc] [--color-neutral-white:#ffffff] [--color-text-placeholder:#cccccc] [--org-border:#ffffff] [--org-dac-nhan-bg:#e65100] [--org-dac-nhan-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[910px] bg-[color:#18181a] ${fontVariables}`} data-figma-id="6646:124506">
       <Content />
       <SidebarMenuCd />
-      <Header22 />
+      <Header21 />
     </main>
   );
 }

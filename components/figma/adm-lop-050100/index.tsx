@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Section1 } from "./Section1";
 import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
-import { Header13 } from "../shared/Header13";
+import { Header12 } from "../shared/Header12";
 
 /** Figma frame "ADM-LOP-050100 — Lớp học / Nhật ký / Nhật ký" — 1440×810px. */
 export function AdmLop050100Page() {
@@ -13,7 +13,7 @@ export function AdmLop050100Page() {
     <main className={`[--color-border-button:#cbd5e1] [--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-f8fafc:#f8fafc] [--color-extended-fed7aa:#fed7aa] [--color-extended-ffeddd:#ffeddd] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-surface-input:#f1f5f9] [--color-text-muted:#cbd5e1] [--color-text-placeholder:#cccccc] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] [background:linear-gradient(#f8fafc,#f8fafc),linear-gradient(#ffffff,#ffffff)] ${fontVariables}`} data-figma-id="1105:5472">
       <Section1 />
       <SidebarMenuAdmin />
-      <Header13 />
+      <Header12 />
     </main>
   );
 }

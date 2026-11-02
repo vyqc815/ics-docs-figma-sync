@@ -15,8 +15,8 @@
     },
     {
       "nodeId": "3497:50563",
-      "component": "Header16",
-      "file": "components/figma/shared/Header16.tsx"
+      "component": "Header14",
+      "file": "components/figma/shared/Header14.tsx"
     }
   ]
 }

@@ -4,7 +4,7 @@
 
 import { fontVariables } from "./fonts";
 import { Maincontent } from "./Maincontent";
-import { Header10 } from "../shared/Header10";
+import { Header9 } from "../shared/Header9";
 import { SidebarRail } from "./SidebarRail";
 import { MoleculeTooltip } from "./MoleculeTooltip";
 
@@ -13,7 +13,7 @@ export function AdmLop020100Dk2Page() {
   return (
     <main className={`[--bg-brand-tint:#fff7ed] [--bg-brand-tint-strong:#ffedd5] [--bg-canvas:#f8fafc] [--bg-danger:#fef2f2] [--bg-hover:#fff7ed] [--bg-strong:#e2e8f0] [--bg-subtle:#f1f5f9] [--bg-success:#ecfdf5] [--bg-surface:#ffffff] [--border-brand:#fed7aa] [--border-default:#e2e8f0] [--border-strong:#cbd5e1] [--border-subtle:#f1f5f9] [--brand-accent:#ff9537] [--brand-primary:#e65100] [--chrome-bg:#ff7700] [--chrome-ring-dark:#ef6700] [--chrome-ring-light:#ff9537] [--color-neutral-white:#ffffff] [--color-semantic-success:#2d9732] [--status-danger-text:#e11d48] [--status-success-text:#059669] [--text-muted:#cbd5e1] [--text-primary:#334155] [--text-secondary:#64748b] [--tone-green-border:#6ee7b7] [--tone-rose-border:#fda4af] [--tone-violet-bg:#ede9fe] [--tone-violet-border:#c4b5fd] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1059px] bg-[color:#121213] ${fontVariables}`} data-figma-id="4056:110282">
       <Maincontent />
-      <Header10 />
+      <Header9 />
       <SidebarRail />
       <MoleculeTooltip />
     </main>

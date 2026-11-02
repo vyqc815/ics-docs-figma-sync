@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Body7 } from "../shared/Body7";
 import { Maincontent2 } from "../shared/Maincontent2";
-import { Header36 } from "../shared/Header36";
+import { Header35 } from "../shared/Header35";
 import { SidebarRail } from "./SidebarRail";
 
 /** Figma frame "GV-LOP-050100-DK — Chi tiết lớp / Tự học / Trống" — 1440×810px. */
@@ -14,7 +14,7 @@ export function GvLop050100DkPage() {
     <main className={`[--bg-canvas:#f8fafc] [--bg-strong:#e2e8f0] [--bg-surface:#ffffff] [--border-brand:#fed7aa] [--border-default:#e2e8f0] [--border-strong:#cbd5e1] [--chrome-bg:#ff7700] [--chrome-ring-dark:#ef6700] [--chrome-ring-light:#ff9537] [--color-neutral-white:#ffffff] [--org-border:#ffffff] [--org-sakumi-bg:#e33f64] [--org-sakumi-fg:#ffffff] [--text-primary:#334155] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] overflow-hidden bg-[color:#121213] ${fontVariables}`} data-figma-id="4333:8502">
       <Body7 />
       <Maincontent2 />
-      <Header36 />
+      <Header35 />
       <SidebarRail />
     </main>
   );

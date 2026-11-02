@@ -4,16 +4,16 @@
 
 import { fontVariables } from "./fonts";
 import { Content } from "./Content";
-import { SidebarMenuCd5 } from "../shared/SidebarMenuCd5";
-import { Header23 } from "../shared/Header23";
+import { SidebarMenuCd6 } from "../shared/SidebarMenuCd6";
+import { Header22 } from "../shared/Header22";
 
 /** Figma frame "CD-KH-050300 — Kỹ năng (S6) / Viết" — 1440×910px. */
 export function CdKh050300Page() {
   return (
     <main className={`[--color-border-button:#cbd5e1] [--color-border-default:#e2e8f0] [--color-brand-orange:#e65100] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-cccccc:#cccccc] [--color-extended-f8fafc:#f8fafc] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-surface-input:#f1f5f9] [--color-text-placeholder:#cccccc] [--color-text-primary:#334155] [--color-text-secondary:#64748b] [--org-border:#ffffff] [--org-dac-nhan-bg:#e65100] [--org-dac-nhan-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[910px] bg-[color:var(--color-neutral-white,#ffffff)] ${fontVariables}`} data-figma-id="6646:82521">
       <Content />
-      <SidebarMenuCd5 />
-      <Header23 />
+      <SidebarMenuCd6 />
+      <Header22 />
     </main>
   );
 }

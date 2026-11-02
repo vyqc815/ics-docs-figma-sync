@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Body3 } from "../shared/Body3";
 import { Maincontent } from "./Maincontent";
-import { Header33 } from "../shared/Header33";
+import { Header32 } from "../shared/Header32";
 import { SidebarMenuTeacher } from "./SidebarMenuTeacher";
 
 /** Figma frame "GV-LOP-030500 — Chi tiết lớp / Bài học / Kiến thức" — 1440×1059px. */
@@ -14,7 +14,7 @@ export function GvLop030500Page() {
     <main className={`[--color-border-default:#e2e8f0] [--color-brand-orange:#e65100] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-text-primary:#334155] [--color-text-secondary:#64748b] [--org-border:#ffffff] [--org-sakumi-bg:#e33f64] [--org-sakumi-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1059px] overflow-hidden bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="4324:17763">
       <Body3 />
       <Maincontent />
-      <Header33 />
+      <Header32 />
       <SidebarMenuTeacher />
     </main>
   );

@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Body5 } from "../shared/Body5";
 import { Maincontent } from "./Maincontent";
-import { Header12 } from "../shared/Header12";
+import { Header11 } from "../shared/Header11";
 import { SidebarRail } from "./SidebarRail";
 
 /** Figma frame "ADM-LOP-020800-DK — Chi tiết lớp học / CSKH" — 1440×2016px. */
@@ -14,7 +14,7 @@ export function AdmLop020800DkPage() {
     <main className={`[--bg-brand-tint:#fff7ed] [--bg-brand-tint-strong:#ffedd5] [--bg-canvas:#f8fafc] [--bg-strong:#e2e8f0] [--bg-subtle:#f1f5f9] [--bg-surface:#ffffff] [--bg-warning:#fffbeb] [--border-brand:#fed7aa] [--border-default:#e2e8f0] [--border-strong:#cbd5e1] [--border-subtle:#f1f5f9] [--brand-primary:#e65100] [--chrome-bg:#ff7700] [--chrome-ring-dark:#ef6700] [--chrome-ring-light:#ff9537] [--color-neutral-white:#ffffff] [--text-muted:#cbd5e1] [--text-primary:#334155] [--text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[2016px] bg-[color:#121213] ${fontVariables}`} data-figma-id="4056:114859">
       <Body5 />
       <Maincontent />
-      <Header12 />
+      <Header11 />
       <SidebarRail />
     </main>
   );

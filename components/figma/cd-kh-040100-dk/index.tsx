@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Content } from "./Content";
 import { SidebarMenuCd4 } from "../shared/SidebarMenuCd4";
-import { Header25 } from "../shared/Header25";
+import { Header24 } from "../shared/Header24";
 import { DropdownThemTu } from "./DropdownThemTu";
 import { TooltipCumCuaMuc } from "../shared/TooltipCumCuaMuc";
 
@@ -15,7 +15,7 @@ export function CdKh040100DkPage() {
     <main className={`[--bg-strong:#e2e8f0] [--border-strong:#cbd5e1] [--color-border-button:#cbd5e1] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-cccccc:#cccccc] [--color-neutral-white:#ffffff] [--color-text-placeholder:#cccccc] [--org-border:#ffffff] [--org-dac-nhan-bg:#e65100] [--org-dac-nhan-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[910px] bg-[color:#18181a] ${fontVariables}`} data-figma-id="6015:107029">
       <Content />
       <SidebarMenuCd4 />
-      <Header25 />
+      <Header24 />
       <DropdownThemTu />
       <TooltipCumCuaMuc />
     </main>

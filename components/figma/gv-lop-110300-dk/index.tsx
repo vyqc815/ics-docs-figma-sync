@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Body7 } from "../shared/Body7";
 import { Maincontent } from "./Maincontent";
-import { Header31 } from "../shared/Header31";
+import { Header30 } from "../shared/Header30";
 import { SidebarRail } from "./SidebarRail";
 
 /** Figma frame "GV-LOP-110300-DK — Chi tiết lớp / Thông tin / Lịch sử & lương" — 1440×810px. */
@@ -14,7 +14,7 @@ export function GvLop110300DkPage() {
     <main className={`[--bg-brand-tint:#fff7ed] [--bg-canvas:#f8fafc] [--bg-strong:#e2e8f0] [--bg-surface:#ffffff] [--border-brand:#fed7aa] [--border-default:#e2e8f0] [--border-strong:#cbd5e1] [--brand-primary:#e65100] [--chrome-bg:#ff7700] [--chrome-ring-dark:#ef6700] [--chrome-ring-light:#ff9537] [--color-neutral-white:#ffffff] [--org-border:#ffffff] [--org-sakumi-bg:#e33f64] [--org-sakumi-fg:#ffffff] [--text-primary:#334155] [--text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] overflow-hidden bg-[color:#121213] ${fontVariables}`} data-figma-id="4333:19508">
       <Body7 />
       <Maincontent />
-      <Header31 />
+      <Header30 />
       <SidebarRail />
     </main>
   );

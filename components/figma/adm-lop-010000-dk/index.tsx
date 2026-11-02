@@ -4,7 +4,7 @@
 
 import { fontVariables } from "./fonts";
 import { MainScrollableWorkspace } from "./MainScrollableWorkspace";
-import { Header6 } from "../shared/Header6";
+import { Header5 } from "../shared/Header5";
 import { Sidebar } from "./Sidebar";
 
 /** Figma frame "ADM-LOP-010000-DK — Danh sách lớp học" — 1440×1099px. */
@@ -12,7 +12,7 @@ export function AdmLop010000DkPage() {
   return (
     <main className={`[--bg-brand-tint:#fff7ed] [--bg-brand-tint-strong:#ffedd5] [--bg-canvas:#f8fafc] [--bg-danger:#fef2f2] [--bg-hover:#fff7ed] [--bg-info:#f0f9ff] [--bg-strong:#e2e8f0] [--bg-subtle:#f1f5f9] [--bg-success:#ecfdf5] [--bg-surface:#ffffff] [--border-brand:#fed7aa] [--border-default:#e2e8f0] [--border-strong:#cbd5e1] [--border-subtle:#f1f5f9] [--brand-accent:#ff9537] [--brand-primary:#e65100] [--brand-primary-soft:#ff9537] [--chrome-bg:#ff7700] [--color-neutral-white:#ffffff] [--color-semantic-success:#2d9732] [--status-danger:#ed4038] [--status-success-text:#059669] [--text-muted:#cbd5e1] [--text-primary:#334155] [--text-secondary:#64748b] [--tone-blue-bg:#dbeafe] [--tone-blue-border:#93c5fd] [--tone-blue-text:#1e40af] [--tone-cyan-bg:#cffafe] [--tone-cyan-border:#67e8f9] [--tone-cyan-text:#155e75] [--tone-fuchsia-bg:#fce7f3] [--tone-fuchsia-border:#f9a8d4] [--tone-fuchsia-text:#9d174d] [--tone-gray-bg:#f1f5f9] [--tone-gray-border:#cbd5e1] [--tone-gray-text:#334155] [--tone-green-bg:#d1fae5] [--tone-green-border:#6ee7b7] [--tone-green-text:#065f46] [--tone-indigo-bg:#e0e7ff] [--tone-indigo-border:#a5b4fc] [--tone-indigo-text:#3730a3] [--tone-orange-bg:#ffedd5] [--tone-orange-border:#fdba74] [--tone-orange-text:#9a3412] [--tone-rose-bg:#ffe4e6] [--tone-rose-border:#fda4af] [--tone-rose-text:#9f1239] [--tone-teal-bg:#ccfbf1] [--tone-teal-border:#5eead4] [--tone-teal-text:#115e59] [--tone-violet-bg:#ede9fe] [--tone-violet-border:#c4b5fd] [--tone-violet-text:#5b21b6] [--tone-yellow-bg:#fef3c7] [--tone-yellow-border:#fcd34d] [--tone-yellow-text:#92400e] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1099px] bg-[color:#121213] ${fontVariables}`} data-figma-id="4056:108555">
       <MainScrollableWorkspace />
-      <Header6 />
+      <Header5 />
       <Sidebar />
     </main>
   );

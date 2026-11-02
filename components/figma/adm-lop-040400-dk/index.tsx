@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Maincontent } from "./Maincontent";
 import { SidebarRail } from "./SidebarRail";
-import { Header19 } from "../shared/Header19";
+import { Header18 } from "../shared/Header18";
 
 /** Figma frame "ADM-LOP-040400-DK — Lớp học / Cài đặt / Trợ giảng & support" — 1440×860px. */
 export function AdmLop040400DkPage() {
@@ -13,7 +13,7 @@ export function AdmLop040400DkPage() {
     <main className={`[--bg-brand-tint:#fff7ed] [--bg-brand-tint-strong:#ffedd5] [--bg-canvas:#f8fafc] [--bg-hover:#fff7ed] [--bg-strong:#e2e8f0] [--bg-subtle:#f1f5f9] [--bg-surface:#ffffff] [--border-default:#e2e8f0] [--border-strong:#cbd5e1] [--border-subtle:#f1f5f9] [--brand-primary:#e65100] [--chrome-bg:#ff7700] [--chrome-ring-dark:#ef6700] [--chrome-ring-light:#ff9537] [--color-neutral-white:#ffffff] [--text-primary:#334155] [--text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[860px] bg-[color:#121213] ${fontVariables}`} data-figma-id="4056:116816">
       <Maincontent />
       <SidebarRail />
-      <Header19 />
+      <Header18 />
     </main>
   );
 }

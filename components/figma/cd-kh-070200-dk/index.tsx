@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Content } from "./Content";
 import { SidebarMenuCd } from "./SidebarMenuCd";
-import { Header29 } from "../shared/Header29";
+import { Header28 } from "../shared/Header28";
 
 /** Figma frame "CD-KH-070200-DK — Thư viện / Kỹ năng / Nghe" — 1440×1250px. */
 export function CdKh070200DkPage() {
@@ -13,7 +13,7 @@ export function CdKh070200DkPage() {
     <main className={`[--bg-strong:#e2e8f0] [--border-strong:#cbd5e1] [--color-neutral-white:#ffffff] [--color-text-placeholder:#cccccc] [--org-border:#ffffff] [--org-dac-nhan-bg:#e65100] [--org-dac-nhan-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1250px] bg-[color:#18181a] ${fontVariables}`} data-figma-id="6579:372308">
       <Content />
       <SidebarMenuCd />
-      <Header29 />
+      <Header28 />
     </main>
   );
 }

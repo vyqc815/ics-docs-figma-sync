@@ -4,7 +4,7 @@
 
 import { fontVariables } from "./fonts";
 import { Sidebar3 } from "../shared/Sidebar3";
-import { Header9 } from "../shared/Header9";
+import { Header8 } from "../shared/Header8";
 import { MaincontentTaoKhaoSat } from "./MaincontentTaoKhaoSat";
 
 /** Figma frame "ADM-KS-020000-DK — Khảo sát / Tạo khảo sát cho lớp / Tạo cuộc khảo sát" — 1440×810px. */
@@ -12,7 +12,7 @@ export function AdmKs020000DkPage() {
   return (
     <main className={`[--bg-brand-tint:#fff7ed] [--bg-brand-tint-strong:#ffedd5] [--bg-canvas:#f8fafc] [--bg-strong:#e2e8f0] [--bg-subtle:#f1f5f9] [--bg-surface:#ffffff] [--border-default:#e2e8f0] [--border-strong:#cbd5e1] [--brand-primary:#e65100] [--chrome-bg:#ff7700] [--color-neutral-white:#ffffff] [--color-semantic-error-text:#e11d48] [--org-border:#ffffff] [--text-muted:#cbd5e1] [--text-primary:#334155] [--text-secondary:#64748b] [--tone-yellow-bg:#fef3c7] [--tone-yellow-text:#92400e] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] overflow-hidden bg-[color:#18181a] ${fontVariables}`} data-figma-id="4885:63192">
       <Sidebar3 />
-      <Header9 />
+      <Header8 />
       <MaincontentTaoKhaoSat />
     </main>
   );

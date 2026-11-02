@@ -3,7 +3,7 @@
  * Exported: 2026-11-02T03:22:38.857Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Header6 } from "../shared/Header6";
+import { Header5 } from "../shared/Header5";
 import { MainScrollableWorkspace } from "./MainScrollableWorkspace";
 import { Sidebar2 } from "../shared/Sidebar2";
 
@@ -11,7 +11,7 @@ import { Sidebar2 } from "../shared/Sidebar2";
 export function AdmHv020200DkPage() {
   return (
     <main className={`[--bg-brand-tint:#fff7ed] [--bg-brand-tint-strong:#ffedd5] [--bg-canvas:#f8fafc] [--bg-hover:#fff7ed] [--bg-strong:#e2e8f0] [--bg-subtle:#f1f5f9] [--bg-success:#ecfdf5] [--bg-surface:#ffffff] [--border-brand:#fed7aa] [--border-default:#e2e8f0] [--border-strong:#cbd5e1] [--border-subtle:#f1f5f9] [--brand-primary:#e65100] [--chrome-bg:#ff7700] [--color-neutral-white:#ffffff] [--color-semantic-success:#2d9732] [--text-primary:#334155] [--text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] bg-[color:#121213] ${fontVariables}`} data-figma-id="4056:120225">
-      <Header6 />
+      <Header5 />
       <MainScrollableWorkspace />
       <Sidebar2 />
     </main>

@@ -4,7 +4,7 @@
 
 import { fontVariables } from "./fonts";
 import { ContentBodySplitLayoutFormTermList } from "./ContentBodySplitLayoutFormTermList";
-import { Header22 } from "../shared/Header22";
+import { Header21 } from "../shared/Header21";
 import { SidebarMenuCd2 } from "../shared/SidebarMenuCd2";
 
 /** Figma frame "CD-KH-030300-DK — Học kỳ / Kiểm tra" — 1440×910px. */
@@ -12,7 +12,7 @@ export function CdKh030300DkPage() {
   return (
     <main className={`[--bg-strong:#e2e8f0] [--border-strong:#cbd5e1] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-cccccc:#cccccc] [--color-neutral-white:#ffffff] [--color-text-secondary:#64748b] [--org-border:#ffffff] [--org-dac-nhan-bg:#e65100] [--org-dac-nhan-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[910px] overflow-hidden bg-[color:#18181a] ${fontVariables}`} data-figma-id="6015:63835">
       <ContentBodySplitLayoutFormTermList />
-      <Header22 />
+      <Header21 />
       <SidebarMenuCd2 />
     </main>
   );

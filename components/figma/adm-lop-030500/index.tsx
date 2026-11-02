@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Body3 } from "../shared/Body3";
 import { Maincontent } from "./Maincontent";
-import { Header15 } from "../shared/Header15";
+import { Header } from "./Header";
 import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
 
 /** Figma frame "ADM-LOP-030500 — Lớp học / Bài học / Kiến thức" — 1440×1059px. */
@@ -14,7 +14,7 @@ export function AdmLop030500Page() {
     <main className={`[--color-border-default:#e2e8f0] [--color-brand-orange:#e65100] [--color-extended-fed7aa:#fed7aa] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1059px] bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="3497:66616">
       <Body3 />
       <Maincontent />
-      <Header15 />
+      <Header />
       <SidebarMenuAdmin />
     </main>
   );

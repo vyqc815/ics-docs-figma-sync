@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Content } from "./Content";
 import { SidebarMenuCd7 } from "../shared/SidebarMenuCd7";
-import { Header26 } from "../shared/Header26";
+import { Header25 } from "../shared/Header25";
 
 /** Figma frame "CD-KH-060100 — Bài tập về nhà / BTVN" — 1440×962px. */
 export function CdKh060100Page() {
@@ -13,7 +13,7 @@ export function CdKh060100Page() {
     <main className={`[--color-border-button:#cbd5e1] [--color-border-default:#e2e8f0] [--color-brand-orange:#e65100] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-cccccc:#cccccc] [--color-extended-f8fafc:#f8fafc] [--color-extended-fff5ec:#fff5ec] [--color-neutral-100:#f5f5f5] [--color-neutral-200:#d9d9d9] [--color-neutral-white:#ffffff] [--color-semantic-warning:#e65100] [--color-surface-input:#f1f5f9] [--color-text-placeholder:#cccccc] [--color-text-primary:#334155] [--color-text-secondary:#64748b] [--org-border:#ffffff] [--org-dac-nhan-bg:#e65100] [--org-dac-nhan-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[962px] bg-[color:var(--color-neutral-white,#ffffff)] ${fontVariables}`} data-figma-id="5491:346399">
       <Content />
       <SidebarMenuCd7 />
-      <Header26 />
+      <Header25 />
     </main>
   );
 }

@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Body7 } from "../shared/Body7";
 import { Maincontent } from "./Maincontent";
-import { Header32 } from "../shared/Header32";
+import { Header31 } from "../shared/Header31";
 import { SidebarMenuTeacher } from "./SidebarMenuTeacher";
 
 /** Figma frame "GV-LOP-110300 — Chi tiết lớp / Thông tin / Lịch sử & lương" — 1440×810px. */
@@ -14,7 +14,7 @@ export function GvLop110300Page() {
     <main className={`[--color-border-default:#e2e8f0] [--color-brand-orange:#e65100] [--color-extended-f8fafc:#f8fafc] [--color-extended-ffedd5:#ffedd5] [--color-extended-fff5ec:#fff5ec] [--color-extended-fff7ed:#fff7ed] [--color-neutral-white:#ffffff] [--color-text-primary:#334155] [--color-text-secondary:#64748b] [--org-border:#ffffff] [--org-sakumi-bg:#e33f64] [--org-sakumi-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] overflow-hidden bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="4333:18902">
       <Body7 />
       <Maincontent />
-      <Header32 />
+      <Header31 />
       <SidebarMenuTeacher />
     </main>
   );

@@ -4,7 +4,7 @@
 
 import { fontVariables } from "./fonts";
 import { Maincontent } from "./Maincontent";
-import { Header11 } from "../shared/Header11";
+import { Header10 } from "../shared/Header10";
 import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
 
 /** Figma frame "ADM-LOP-020700 — Chi tiết lớp học / Quy trình lớp" — 1440×2191px. */
@@ -12,7 +12,7 @@ export function AdmLop020700Page() {
   return (
     <main className={`[--color-border-button:#cbd5e1] [--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-cccccc:#cccccc] [--color-extended-f8fafc:#f8fafc] [--color-extended-fed7aa:#fed7aa] [--color-extended-ffeddd:#ffeddd] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-text-muted:#cbd5e1] [--color-text-placeholder:#cccccc] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[2191px] bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="2711:61204">
       <Maincontent />
-      <Header11 />
+      <Header10 />
       <SidebarMenuAdmin />
     </main>
   );

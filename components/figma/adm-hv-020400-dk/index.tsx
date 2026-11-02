@@ -4,7 +4,7 @@
 
 import { fontVariables } from "./fonts";
 import { Maincontainer } from "./Maincontainer";
-import { Header6 } from "../shared/Header6";
+import { Header5 } from "../shared/Header5";
 import { Sidebar2 } from "../shared/Sidebar2";
 
 /** Figma frame "ADM-HV-020400-DK — Chi tiết học viên / Log" — 1440×810px. */
@@ -12,7 +12,7 @@ export function AdmHv020400DkPage() {
   return (
     <main className={`[--bg-brand-tint:#fff7ed] [--bg-brand-tint-strong:#ffedd5] [--bg-canvas:#f8fafc] [--bg-strong:#e2e8f0] [--bg-subtle:#f1f5f9] [--bg-surface:#ffffff] [--border-brand:#fed7aa] [--border-default:#e2e8f0] [--border-strong:#cbd5e1] [--border-subtle:#f1f5f9] [--brand-primary:#e65100] [--chrome-bg:#ff7700] [--color-brand-orange:#e65100] [--color-neutral-white:#ffffff] [--text-muted:#cbd5e1] [--text-primary:#334155] [--text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] bg-[color:#121213] ${fontVariables}`} data-figma-id="4056:120827">
       <Maincontainer />
-      <Header6 />
+      <Header5 />
       <Sidebar2 />
     </main>
   );

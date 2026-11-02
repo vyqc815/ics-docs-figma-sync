@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Section1 } from "./Section1";
 import { SidebarMenuCd } from "./SidebarMenuCd";
-import { Header22 } from "../shared/Header22";
+import { Header21 } from "../shared/Header21";
 import { MenuHocKyCapDo } from "./MenuHocKyCapDo";
 
 /** Figma frame "CD-KH-030200-DK — Học kỳ / Bài học" — 1440×1090px. */
@@ -14,7 +14,7 @@ export function CdKh030200DkPage() {
     <main className={`[--bg-strong:#e2e8f0] [--border-strong:#cbd5e1] [--color-brand-orange:#e65100] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-cccccc:#cccccc] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-semantic-success-text:#059669] [--org-border:#ffffff] [--org-dac-nhan-bg:#e65100] [--org-dac-nhan-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1090px] bg-[color:#18181a] ${fontVariables}`} data-figma-id="6015:64055">
       <Section1 />
       <SidebarMenuCd />
-      <Header22 />
+      <Header21 />
       <MenuHocKyCapDo />
     </main>
   );

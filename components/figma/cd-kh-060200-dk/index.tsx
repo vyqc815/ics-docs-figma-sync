@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Content } from "./Content";
 import { SidebarMenuCd8 } from "../shared/SidebarMenuCd8";
-import { Header27 } from "../shared/Header27";
+import { Header26 } from "../shared/Header26";
 
 /** Figma frame "CD-KH-060200-DK — Bài tập về nhà / Kiểm tra" — 1440×962px. */
 export function CdKh060200DkPage() {
@@ -13,7 +13,7 @@ export function CdKh060200DkPage() {
     <main className={`[--bg-strong:#e2e8f0] [--border-strong:#cbd5e1] [--color-border-button:#cbd5e1] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-cccccc:#cccccc] [--color-neutral-white:#ffffff] [--color-text-placeholder:#cccccc] [--org-border:#ffffff] [--org-dac-nhan-bg:#e65100] [--org-dac-nhan-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[962px] bg-[color:#18181a] ${fontVariables}`} data-figma-id="6015:53668">
       <Content />
       <SidebarMenuCd8 />
-      <Header27 />
+      <Header26 />
     </main>
   );
 }

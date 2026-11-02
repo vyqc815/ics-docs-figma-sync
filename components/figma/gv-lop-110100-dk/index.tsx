@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { Body7 } from "../shared/Body7";
 import { Maincontent } from "./Maincontent";
-import { Header38 } from "../shared/Header38";
+import { Header37 } from "../shared/Header37";
 import { SidebarRail } from "./SidebarRail";
 
 /** Figma frame "GV-LOP-110100-DK — Chi tiết lớp / Thông tin / Thông tin" — 1440×810px. */
@@ -14,7 +14,7 @@ export function GvLop110100DkPage() {
     <main className={`[--bg-brand-tint:#fff7ed] [--bg-canvas:#f8fafc] [--bg-strong:#e2e8f0] [--bg-subtle:#f1f5f9] [--bg-surface:#ffffff] [--border-brand:#fed7aa] [--border-default:#e2e8f0] [--border-strong:#cbd5e1] [--brand-primary:#e65100] [--chrome-bg:#ff7700] [--chrome-ring-dark:#ef6700] [--chrome-ring-light:#ff9537] [--color-neutral-white:#ffffff] [--org-border:#ffffff] [--org-sakumi-bg:#e33f64] [--org-sakumi-fg:#ffffff] [--text-primary:#334155] [--text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] overflow-hidden bg-[color:#121213] ${fontVariables}`} data-figma-id="4333:18149">
       <Body7 />
       <Maincontent />
-      <Header38 />
+      <Header37 />
       <SidebarRail />
     </main>
   );

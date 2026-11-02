@@ -3,7 +3,7 @@
  * Exported: 2026-11-02T03:22:36.869Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Header7 } from "../shared/Header7";
+import { Header6 } from "../shared/Header6";
 import { MainScrollableWorkspace } from "./MainScrollableWorkspace";
 import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
 
@@ -11,7 +11,7 @@ import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
 export function AdmHv020600Page() {
   return (
     <main className={`[--color-border-default:#e2e8f0] [--color-brand-orange:#e65100] [--color-extended-eff6ff:#eff6ff] [--color-extended-fdba74:#fdba74] [--color-extended-fed7aa:#fed7aa] [--color-extended-fff5ec:#fff5ec] [--color-extended-fff7ed:#fff7ed] [--color-neutral-white:#ffffff] [--color-text-muted:#cbd5e1] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1095px] bg-[color:#ffffff] ${fontVariables}`} data-figma-id="1117:11216">
-      <Header7 />
+      <Header6 />
       <MainScrollableWorkspace />
       <SidebarMenuAdmin />
     </main>
