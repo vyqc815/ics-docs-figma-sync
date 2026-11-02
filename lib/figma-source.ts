@@ -24,7 +24,8 @@ interface BuildInfo {
   docFile: string;
 }
 
-const root = process.cwd();
+// Only the files listed in next.config.ts (outputFileTracingIncludes) ship with these routes.
+const root = /* turbopackIgnore: true */ process.cwd();
 const read = (rel: string): string | null => {
   const full = join(root, rel);
   return existsSync(full) ? readFileSync(full, "utf-8") : null;
