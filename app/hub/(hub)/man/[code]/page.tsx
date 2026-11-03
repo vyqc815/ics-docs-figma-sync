@@ -2,12 +2,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Code2, FileText, MonitorPlay, PenTool } from "lucide-react";
 
-import { KindTag, LiveShot, PageHead, Panel, PriorityTag, StatusTag, Tag } from "@/components/qc/ui";
+import { KindTag, LiveShot, PageHead, Panel, PriorityTag, StatusTag, TabBar, Tag } from "@/components/qc/ui";
 import { builtPage, clusterOfFile, clustersOf, figmaUrl, frames, registry, requirementPages, reserved } from "@/lib/qc/data";
 
 /** One screen: live Figma render, where requirements talk about it, its items and the testcases that cover them. */
-const ScreenPage = async ({ params }: { params: Promise<{ code: string }> }): Promise<React.JSX.Element> => {
+const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: string }>; searchParams: Promise<{ xem?: string }> }): Promise<React.JSX.Element> => {
   const code = (await params).code.toUpperCase();
+  const { xem = "figma" } = await searchParams;
   const frame = frames()[code];
   const planned = reserved()[code];
   if (!frame && !planned) notFound();
@@ -24,6 +25,15 @@ const ScreenPage = async ({ params }: { params: Promise<{ code: string }> }): Pr
   const screen = inClusters.map((c) => registry(c.name)!.screens[code]).find(Boolean);
   const pages = requirementPages(code);
   const built = builtPage(code);
+  const demo = screen?.link ?? built?.route;
+  const base = `/hub/man/${code}?xem=`;
+  // Demo, code and spec are the demo's own pages, embedded: no extra files ship with the hub
+  const views = [
+    { key: "figma", label: "Figma", href: `${base}figma` },
+    ...(demo ? [{ key: "demo", label: "Demo thật", href: `${base}demo` }] : []),
+    ...(built ? [{ key: "code", label: "Code", href: `${base}code` }, { key: "spec", label: "Spec MD", href: `${base}spec` }] : []),
+  ];
+  const frameSrc = xem === "demo" ? demo : xem === "code" ? built?.code : xem === "spec" ? built?.spec : undefined;
 
   return (
     <>
@@ -36,12 +46,18 @@ const ScreenPage = async ({ params }: { params: Promise<{ code: string }> }): Pr
           {!frame && <Tag tone="gray">Chưa có thiết kế</Tag>}
         </div>
       </PageHead>
-      <div className="grid gap-6 xl:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
-        <Panel>
+      <Panel className="mb-6">
+        <div className="mb-4">
+          <TabBar tabs={views} active={frameSrc ? xem : "figma"} />
+        </div>
+        {frameSrc ? (
+          <iframe src={frameSrc} title={`${code} · ${xem}`} className="h-[78vh] min-h-[560px] w-full rounded-xl border border-(--hub-line) bg-white" />
+        ) : (
           <LiveShot code={code} className="min-h-[260px]" />
-          <div className="mt-4 flex flex-wrap gap-2 text-sm">
-            {screen?.link && (
-              <a href={screen.link} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 hover:text-(--hub-accent)">
+        )}
+        <div className="mt-4 flex flex-wrap gap-2 text-sm">
+            {demo && (
+              <a href={demo} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 hover:text-(--hub-accent)">
                 <MonitorPlay className="size-4" /> Mở demo
               </a>
             )}
@@ -65,10 +81,11 @@ const ScreenPage = async ({ params }: { params: Promise<{ code: string }> }): Pr
                 Màn cha: <span className="font-mono">{frame.parent}</span>
               </Link>
             )}
-          </div>
-        </Panel>
+        </div>
+      </Panel>
 
-        <div className="space-y-6">
+      <div className="grid gap-6 xl:grid-cols-2">
+        <div className="contents">
           <Panel title="Requirement nói về màn này">
             {pages.length ? (
               <ul className="space-y-3 text-sm">

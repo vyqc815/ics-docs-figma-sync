@@ -70,7 +70,7 @@ let cache: {
   screenReq: Record<string, ReqPage[]>;
   reserved: Reserved;
   index: QcIndex;
-  pages: Set<string>;
+  pages: Map<string, string>;
 } | null = null;
 
 export type IndexFile = { path: string; title: string; prefix: string; screens: string[]; pages: { no: number; title: string; screens: string[] }[] };
@@ -106,7 +106,7 @@ function load(): NonNullable<typeof cache> {
     screenReq: json(join(ROOT, "scripts", "figma", "screen-requirements.json"), {}),
     reserved: json<{ codes: Reserved }>(join(SYS, "ma-du-kien.json"), { codes: {} }).codes,
     index: json(join(SYS, "qc-index.json"), {}),
-    pages: new Set(json<{ pages: { name: string }[] }>(join(ROOT, "figma.pages.json"), { pages: [] }).pages.map((p) => p.name)),
+    pages: new Map(json<{ pages: { name: string; route: string }[] }>(join(ROOT, "figma.pages.json"), { pages: [] }).pages.map((p) => [p.name, p.route])),
   };
   return cache;
 }
@@ -120,10 +120,11 @@ export const indexInfo = (): QcIndex => load().index;
 export const requirementFiles = (): IndexFile[] => (load().index.files ?? []).map((f) => ({ ...f, path: f.path.replace(/^requirements\//, "") }));
 export const figmaUrl = (nodeId: string): string =>
   `https://www.figma.com/design/${load().fileKey}/?node-id=${nodeId.replace(":", "-")}`;
-/** Built page of a screen (figma.pages.json name = code in lower case): its generated code and Markdown spec. */
-export function builtPage(code: string): { code: string; spec: string } | null {
+/** Built page of a screen (figma.pages.json name = code in lower case): demo route, generated code and Markdown spec. */
+export function builtPage(code: string): { code: string; spec: string; route: string } | null {
   const name = code.toLowerCase();
-  return load().pages.has(name) ? { code: `/figma/${name}/code`, spec: `/figma/${name}/spec` } : null;
+  const route = load().pages.get(name);
+  return route ? { code: `/figma/${name}/code`, spec: `/figma/${name}/spec`, route } : null;
 }
 export const liveImage = (code: string): string => `/api/figma-frame/${code}.png`;
 

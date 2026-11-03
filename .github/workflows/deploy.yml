@@ -23,13 +23,21 @@ jobs:
       VERCEL_ORG_ID: team_sFEtj8U8fk5SoT0J4eNhlqEX
       VERCEL_PROJECT_ID: prj_uuVtVRFOVUGPxz7YkCEI4d491c6P
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-      NODE_OPTIONS: --max-old-space-size=6144
+      NODE_OPTIONS: --max-old-space-size=8192
     steps:
       - name: Need VERCEL_TOKEN
         if: env.VERCEL_TOKEN == ''
         run: |
           echo "::error::Chưa có secret VERCEL_TOKEN, bỏ qua deploy."
           exit 1
+
+      # The runner has 7GB RAM; next build of ~930 pages peaks above it and the runner is killed mid-build.
+      - name: Add swap
+        run: |
+          sudo swapoff -a || true
+          sudo fallocate -l 12G /swapfile2 && sudo chmod 600 /swapfile2
+          sudo mkswap /swapfile2 && sudo swapon /swapfile2
+          free -h
 
       - uses: actions/checkout@v4
         with:
