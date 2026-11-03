@@ -17,8 +17,8 @@
 
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
-| `ADM-GC-010010` | Popup tạo gift code | Popup | — | — | — | — | Figma | thấp |
-| `ADM-GC-010020` | Popup cập nhật gift code | Popup | — | — | — | — | Figma | thấp |
+| `ADM-GC-010010` | Popup tạo gift code | Popup | ADM-GC-010001 | ADM-GC-010001 | — | `/gift-code/danh-sach-gift-code/da-sao-chep-ma?popup=ADM-GC-010010` | Figma | cao |
+| `ADM-GC-010020` | Popup cập nhật gift code | Popup | ADM-GC-010001 | ADM-GC-010001 | — | `/gift-code/danh-sach-gift-code/da-sao-chep-ma?popup=ADM-GC-010020` | Figma | cao |
 
 ## 4. Khu vực và item
 
@@ -61,8 +61,6 @@ Frame: `ADM-GC-010000`, `ADM-GC-010001` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - Frame Figma chưa có requirement (4): `ADM-GC-010000`, `ADM-GC-010001`, `ADM-GC-010010`, `ADM-GC-010020`
-- Popup chưa có màn cha (2): `ADM-GC-010010`, `ADM-GC-010020`
-- Phân loại cần design duyệt (2): `ADM-GC-010010`, `ADM-GC-010020`
 - Thiếu prototype link đi vào (2): `ADM-GC-010010`, `ADM-GC-010020`
 
 ## 9. Chi tiết dựng

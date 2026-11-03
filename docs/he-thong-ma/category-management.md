@@ -23,10 +23,10 @@ Requirement: `curriculum_management_requirement/category_management/category_man
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
 | `CD-DM-010010` | Popup danh mục & cấp độ | Popup | CD-DM-010000 | CD-DM-010000 | — | `/quan-ly-danh-muc?popup=CD-DM-010010` | Figma | cao |
-| `CD-DM-010020` | Mindset | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010020` | Figma | thấp |
-| `CD-DM-010030` | Tiêu chuẩn giáo trình | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010030` | Figma | thấp |
-| `CD-DM-010040` | Hướng dẫn giảng dạy | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010040` | Figma | thấp |
-| `CD-DM-010057` | Thành công | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010057` | Figma | thấp |
+| `CD-DM-010020` | Mindset | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010020` | Figma | trung bình |
+| `CD-DM-010030` | Tiêu chuẩn giáo trình | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010030` | Figma | trung bình |
+| `CD-DM-010040` | Hướng dẫn giảng dạy | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010040` | Figma | trung bình |
+| `CD-DM-010057` | Thành công | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010057` | Figma | trung bình |
 | `CD-DM-010060` | Popup kích hoạt công khai | Popup | CD-DM-010000 | CD-DM-010000 | — | `/quan-ly-danh-muc?popup=CD-DM-010060` | Figma | cao |
 | `CD-DM-010062` | Điền sai | Trạng thái | CD-DM-010060 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010062` | Figma | trung bình |
 

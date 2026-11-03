@@ -87,9 +87,9 @@
    "name": "xem-theo-lop",
    "title": "Lịch dạy / Xem theo lớp",
    "kind": "trang-thai",
-   "parent": null,
-   "shownOn": null,
-   "kindConfidence": "thap",
+   "parent": "GV-LD-020000",
+   "shownOn": "GV-LD-020000",
+   "kindConfidence": "trung-binh",
    "source": "qc",
    "content": "figma",
    "nodeId": "5413:46957",
@@ -97,7 +97,7 @@
    "inPageList": true,
    "synced": true,
    "route": "/lich-day/xem-theo-lop",
-   "link": null,
+   "link": "/lich-day/quan-ly-dang-ky-lich?state=GV-LD-010000",
    "dark": "GV-LD-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
@@ -1762,14 +1762,9 @@
  ],
  "issues": [
   {
-   "kind": "popup-khong-co-man-cha",
-   "ref": "GV-LD-010000",
-   "text": "chưa xác định được màn chính để mở"
-  },
-  {
    "kind": "phan-loai-can-duyet",
    "ref": "GV-LD-010000",
-   "text": "loại trang-thai, màn cha None — tin cậy thap"
+   "text": "loại trang-thai, màn cha GV-LD-020000 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",

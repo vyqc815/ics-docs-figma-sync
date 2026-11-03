@@ -59,9 +59,9 @@
    "name": "popup-tao-gift-code",
    "title": "Gift code / Popup tạo gift code",
    "kind": "popup",
-   "parent": null,
-   "shownOn": null,
-   "kindConfidence": "thap",
+   "parent": "ADM-GC-010001",
+   "shownOn": "ADM-GC-010001",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3977:76869",
@@ -69,7 +69,7 @@
    "inPageList": false,
    "synced": false,
    "route": null,
-   "link": null,
+   "link": "/gift-code/danh-sach-gift-code/da-sao-chep-ma?popup=ADM-GC-010010",
    "dark": "ADM-GC-010010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
@@ -80,9 +80,9 @@
    "name": "popup-cap-nhat-gift-code",
    "title": "Gift code / Popup cập nhật gift code",
    "kind": "popup",
-   "parent": null,
-   "shownOn": null,
-   "kindConfidence": "thap",
+   "parent": "ADM-GC-010001",
+   "shownOn": "ADM-GC-010001",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3977:76954",
@@ -90,7 +90,7 @@
    "inPageList": false,
    "synced": false,
    "route": null,
-   "link": null,
+   "link": "/gift-code/danh-sach-gift-code/da-sao-chep-ma?popup=ADM-GC-010020",
    "dark": "ADM-GC-010020-DK",
    "openedFrom": [],
    "citedByRequirement": false,
@@ -517,16 +517,6 @@
    "text": "popup “Gift code / Popup tạo gift code” chưa được requirement nhắc tới"
   },
   {
-   "kind": "popup-khong-co-man-cha",
-   "ref": "ADM-GC-010010",
-   "text": "chưa xác định được màn chính để mở"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-GC-010010",
-   "text": "loại popup, màn cha None — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-GC-010010",
    "text": "không có prototype link nào đi vào frame"
@@ -535,16 +525,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-GC-010020",
    "text": "popup “Gift code / Popup cập nhật gift code” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "popup-khong-co-man-cha",
-   "ref": "ADM-GC-010020",
-   "text": "chưa xác định được màn chính để mở"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-GC-010020",
-   "text": "loại popup, màn cha None — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",

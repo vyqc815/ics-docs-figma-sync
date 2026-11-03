@@ -132,7 +132,7 @@
    "kind": "popup",
    "parent": "CD-KH-030341",
    "shownOn": "CD-KH-030340",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "qc",
    "content": "figma",
    "nodeId": "5491:358483",
@@ -157,7 +157,7 @@
    "kind": "trang-thai",
    "parent": "CD-KH-030344",
    "shownOn": "CD-KH-030340",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "qc",
    "content": "figma",
    "nodeId": "5491:358584",
@@ -183,7 +183,7 @@
    "kind": "trang-thai",
    "parent": "CD-KH-030341",
    "shownOn": "CD-KH-030340",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "qc",
    "content": "figma",
    "nodeId": "5609:31772",
@@ -211,7 +211,7 @@
    "kind": "trang-thai",
    "parent": "CD-KH-030343",
    "shownOn": "CD-KH-030340",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "qc",
    "content": "figma",
    "nodeId": "5609:31794",
@@ -259,7 +259,7 @@
    "kind": "trang-thai",
    "parent": "CD-KH-030343",
    "shownOn": "CD-KH-030340",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "qc",
    "content": "figma",
    "nodeId": "5609:33933",
@@ -309,7 +309,7 @@
    "kind": "popup",
    "parent": "CD-KH-030348",
    "shownOn": "CD-KH-030340",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "qc",
    "content": "figma",
    "nodeId": "5614:35448",
@@ -6433,23 +6433,18 @@
  "issues": [
   {
    "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-030342",
-   "text": "loại popup, màn cha CD-KH-030341 — tin cậy thap"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
    "ref": "CD-KH-030343",
-   "text": "loại trang-thai, màn cha CD-KH-030344 — tin cậy thap"
+   "text": "loại trang-thai, màn cha CD-KH-030344 — tin cậy trung-binh"
   },
   {
    "kind": "phan-loai-can-duyet",
    "ref": "CD-KH-030344",
-   "text": "loại trang-thai, màn cha CD-KH-030341 — tin cậy thap"
+   "text": "loại trang-thai, màn cha CD-KH-030341 — tin cậy trung-binh"
   },
   {
    "kind": "phan-loai-can-duyet",
    "ref": "CD-KH-030345",
-   "text": "loại trang-thai, màn cha CD-KH-030343 — tin cậy thap"
+   "text": "loại trang-thai, màn cha CD-KH-030343 — tin cậy trung-binh"
   },
   {
    "kind": "phan-loai-can-duyet",
@@ -6464,17 +6459,12 @@
   {
    "kind": "phan-loai-can-duyet",
    "ref": "CD-KH-030347",
-   "text": "loại trang-thai, màn cha CD-KH-030343 — tin cậy thap"
+   "text": "loại trang-thai, màn cha CD-KH-030343 — tin cậy trung-binh"
   },
   {
    "kind": "figma-chua-co-requirement",
    "ref": "CD-KH-030348",
    "text": "popup “Học kỳ / Kiểm tra / Popup chọn loại câu” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-030349",
-   "text": "loại popup, màn cha CD-KH-030348 — tin cậy thap"
   },
   {
    "kind": "phan-loai-can-duyet",

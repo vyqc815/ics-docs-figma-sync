@@ -28,18 +28,18 @@ Requirement: `survey_bug/bug/bug.md` — Báo lỗi & Góp ý (tiền tố `SB-B
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
 | `CD-BL-010010` | Popup gửi báo lỗi · Đối tượng PPT, PDF, BTVN | Popup | CD-BL-010000 | CD-BL-010000 | — | `/bao-loi/danh-sach-bao-loi?popup=CD-BL-010010` | Figma | cao |
-| `CD-BL-010011` | Popup gửi báo lỗi · Đối tượng Khác | Popup | CD-BL-010000 | CD-BL-010000 | — | `/bao-loi/danh-sach-bao-loi?popup=CD-BL-010011` | Figma | thấp |
+| `CD-BL-010011` | Popup gửi báo lỗi · Đối tượng Khác | Popup | CD-BL-010000 | CD-BL-010000 | — | `/bao-loi/danh-sach-bao-loi?popup=CD-BL-010011` | Figma | cao |
 | `CD-BL-010020` | Popup chi tiết báo lỗi · Đang xử lý | Popup | CD-BL-010000 | CD-BL-010000 | — | `/bao-loi/danh-sach-bao-loi?popup=CD-BL-010020` | Figma | cao |
 | `CD-BL-010030` | Popup chi tiết báo lỗi · Hoàn thành | Popup | CD-BL-010000 | CD-BL-010000 | — | `/bao-loi/danh-sach-bao-loi?popup=CD-BL-010030` | Figma | cao |
 | `CD-BL-010040` | Chưa có báo lỗi | Trạng thái | CD-BL-010000 | CD-BL-010000 | — | `/bao-loi/danh-sach-bao-loi?state=CD-BL-010040` | Figma | trung bình |
-| `CD-BL-010050` | Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý | Popup | CD-BL-010040 | CD-BL-010000 | — | `/bao-loi/danh-sach-bao-loi?popup=CD-BL-010050` | Figma | thấp |
+| `CD-BL-010050` | Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý | Popup | CD-BL-010040 | CD-BL-010000 | — | `/bao-loi/danh-sach-bao-loi?popup=CD-BL-010050` | Figma | cao |
 | `CH-BL-010010` | Popup gửi báo lỗi · Đối tượng PPT, PDF, BTVN | Popup | CH-BL-010000 | CH-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010010` | Figma | cao |
-| `CH-BL-010011` | Popup gửi báo lỗi · Đối tượng Khác | Popup | CH-BL-010000 | CH-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010011` | Figma | thấp |
+| `CH-BL-010011` | Popup gửi báo lỗi · Đối tượng Khác | Popup | CH-BL-010000 | CH-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010011` | Figma | cao |
 | `CH-BL-010020` | Popup chi tiết báo lỗi · Đang xử lý | Popup | CH-BL-010000 | CH-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010020` | Figma | cao |
 | `CH-BL-010030` | Popup chi tiết báo lỗi · Hoàn thành | Popup | CH-BL-010000 | CH-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010030` | Figma | cao |
 | `CH-BL-010040` | Chưa có báo lỗi | Trạng thái | CH-BL-010000 | CH-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-ch-bl-010000?state=CH-BL-010040` | Figma | trung bình |
-| `CH-BL-010050` | Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý | Popup | CH-BL-010040 | CH-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010050` | Figma | thấp |
-| `CH-BL-010070` | Popup nhắc báo lỗi chưa xử lý (mỗi ngày) | Popup | CH-BL-010040 | CH-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010070` | Figma | thấp |
+| `CH-BL-010050` | Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý | Popup | CH-BL-010040 | CH-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010050` | Figma | cao |
+| `CH-BL-010070` | Popup nhắc báo lỗi chưa xử lý (mỗi ngày) | Popup | CH-BL-010040 | CH-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010070` | Figma | cao |
 | `GV-BL-010010` | Popup gửi báo lỗi · Giáo trình | Popup | GV-BL-010000 | GV-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-gv-bl-010000?popup=GV-BL-010010` | Figma | cao |
 | `GV-BL-010020` | Popup chi tiết báo lỗi · Đang mở | Popup | GV-BL-010000 | GV-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-gv-bl-010000?popup=GV-BL-010020` | Figma | cao |
 | `GV-BL-010030` | Popup chi tiết báo lỗi · Đã giải quyết | Popup | GV-BL-010000 | GV-BL-010000 | — | `/bao-loi/danh-sach-bao-loi-gv-bl-010000?popup=GV-BL-010030` | Figma | cao |
@@ -217,7 +217,7 @@ Frame: `GV-BL-010000` · Nguồn nội dung: Figma
 
 - Frame Figma chưa có requirement (17): `CD-BL-010010`, `CD-BL-010011`, `CD-BL-010020`, `CD-BL-010030`, `CD-BL-010040`, `CD-BL-010050`, `CH-BL-010010`, `CH-BL-010011`, `CH-BL-010020`, `CH-BL-010030`, `CH-BL-010040`, `CH-BL-010050`, `CH-BL-010070`, `GV-BL-010010`, `GV-BL-010020`, `GV-BL-010030`, `GV-BL-010040`
 - Thiếu prototype link đi vào (17): `CD-BL-010010`, `CD-BL-010011`, `CD-BL-010020`, `CD-BL-010030`, `CD-BL-010040`, `CD-BL-010050`, `CH-BL-010010`, `CH-BL-010011`, `CH-BL-010020`, `CH-BL-010030`, `CH-BL-010040`, `CH-BL-010050`, `CH-BL-010070`, `GV-BL-010010`, `GV-BL-010020`, `GV-BL-010030`, `GV-BL-010040`
-- Phân loại cần design duyệt (8): `CD-BL-010011`, `CD-BL-010040`, `CD-BL-010050`, `CH-BL-010011`, `CH-BL-010040`, `CH-BL-010050`, `CH-BL-010070`, `GV-BL-010040`
+- Phân loại cần design duyệt (3): `CD-BL-010040`, `CH-BL-010040`, `GV-BL-010040`
 - REQ/EX chưa có testcase (4): `REQ12`, `EX03`, `EX08`, `EX09`
 
 ## 9. Chi tiết dựng

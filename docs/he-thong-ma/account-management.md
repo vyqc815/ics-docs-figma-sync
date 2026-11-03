@@ -27,6 +27,7 @@ Requirement: `account_management/account_management.md` — Quản lý tài kho�
 | `MST-TK-010010` | Popup thêm tài khoản | Popup | MST-TK-010000 | MST-TK-010000 | — | `/tai-khoan/danh-sach-tai-khoan?popup=MST-TK-010010` | Figma | cao |
 | `MST-TK-010020` | Popup xác nhận xoá | Popup | MST-TK-010000 | MST-TK-010000 | — | `/tai-khoan/danh-sach-tai-khoan?popup=MST-TK-010020` | Figma | cao |
 | `MST-TK-010030` | Popup đặt lại mật khẩu | Popup | MST-TK-010000 | MST-TK-010000 | — | `/tai-khoan/danh-sach-tai-khoan?popup=MST-TK-010030` | Figma | cao |
+| `PRO-GD-010010` | Popup chọn màu giao diện | Popup | MST-TK-020000 | MST-TK-020000 | — | `/tai-khoan/chi-tiet-tai-khoan?popup=PRO-GD-010010` | Figma | trung bình |
 
 ## 4. Khu vực và item
 
@@ -132,8 +133,9 @@ Frame: `MST-TK-010000`, `MST-TK-020000` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - Chưa thấy trên Figma (2): `A03.01`, `A03.03`
-- Frame Figma chưa có requirement (3): `MST-TK-010010`, `MST-TK-010020`, `MST-TK-010030`
-- Thiếu prototype link đi vào (3): `MST-TK-010010`, `MST-TK-010020`, `MST-TK-010030`
+- Frame Figma chưa có requirement (4): `MST-TK-010010`, `MST-TK-010020`, `MST-TK-010030`, `PRO-GD-010010`
+- Thiếu prototype link đi vào (4): `MST-TK-010010`, `MST-TK-010020`, `MST-TK-010030`, `PRO-GD-010010`
+- Phân loại cần design duyệt (1): `PRO-GD-010010`
 - Testcase không trỏ REQ (8): `TTC01`, `TTC02`, `TTC03`, `TTC04`, `TC05`, `TC06`, `TC19`, `TC20`
 - REQ/EX chưa có testcase (5): `REQ01`, `REQ03`, `REQ04`, `REQ06`, `REQ10`
 

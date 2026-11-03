@@ -27,14 +27,14 @@ Requirement: `course_management/homework-test/homework-test.md` — [CD] Bài t�
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
 | `CD-KH-030341` | Popup Generate · Nhập prompt | Popup | CD-KH-030340 | CD-KH-030340 | CD-KH-030340, CD-KH-030342, CD-KH-030350 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?popup=CD-KH-030341` | QC | cao |
-| `CD-KH-030342` | Popup Generate · Chọn kiến thức & kỹ năng | Popup | CD-KH-030341 | CD-KH-030340 | CD-KH-030341 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?popup=CD-KH-030342` | QC | thấp |
-| `CD-KH-030343` | Danh sách bài tập · Sau Generate (30 dòng) | Trạng thái | CD-KH-030344 | CD-KH-030340 | CD-KH-030344, CD-KH-030345 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?state=CD-KH-030343` | QC | thấp |
-| `CD-KH-030344` | Generate · Đang tạo bảng | Trạng thái | CD-KH-030341 | CD-KH-030340 | CD-KH-030341, CD-KH-030342, CD-KH-030346, CD-KH-030350 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?state=CD-KH-030344` | QC | thấp |
-| `CD-KH-030345` | Generate · Xác nhận bỏ bảng | Trạng thái | CD-KH-030343 | CD-KH-030340 | CD-KH-030343 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?state=CD-KH-030345` | QC | thấp |
+| `CD-KH-030342` | Popup Generate · Chọn kiến thức & kỹ năng | Popup | CD-KH-030341 | CD-KH-030340 | CD-KH-030341 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?popup=CD-KH-030342` | QC | cao |
+| `CD-KH-030343` | Danh sách bài tập · Sau Generate (30 dòng) | Trạng thái | CD-KH-030344 | CD-KH-030340 | CD-KH-030344, CD-KH-030345 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?state=CD-KH-030343` | QC | trung bình |
+| `CD-KH-030344` | Generate · Đang tạo bảng | Trạng thái | CD-KH-030341 | CD-KH-030340 | CD-KH-030341, CD-KH-030342, CD-KH-030346, CD-KH-030350 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?state=CD-KH-030344` | QC | trung bình |
+| `CD-KH-030345` | Generate · Xác nhận bỏ bảng | Trạng thái | CD-KH-030343 | CD-KH-030340 | CD-KH-030343 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?state=CD-KH-030345` | QC | trung bình |
 | `CD-KH-030346` | Generate · Lỗi | Trạng thái | CD-KH-030300 | CD-KH-030300 | — | `/hoc-ky/kiem-tra?state=CD-KH-030346` | QC | thấp |
-| `CD-KH-030347` | Danh sách bài tập · Sau khi tạo | Trạng thái | CD-KH-030343 | CD-KH-030340 | CD-KH-030343 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?state=CD-KH-030347` | QC | thấp |
+| `CD-KH-030347` | Danh sách bài tập · Sau khi tạo | Trạng thái | CD-KH-030343 | CD-KH-030340 | CD-KH-030343 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?state=CD-KH-030347` | QC | trung bình |
 | `CD-KH-030348` | Popup chọn loại câu | Popup | CD-KH-030340 | CD-KH-030340 | CD-KH-030340 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?popup=CD-KH-030348` | Figma | cao |
-| `CD-KH-030349` | Popup soạn câu hỏi · Trắc nghiệm | Popup | CD-KH-030348 | CD-KH-030340 | CD-KH-030348 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?popup=CD-KH-030349` | QC | thấp |
+| `CD-KH-030349` | Popup soạn câu hỏi · Trắc nghiệm | Popup | CD-KH-030348 | CD-KH-030340 | CD-KH-030348 | `/hoc-ky/kiem-tra/danh-sach-bai-tap?popup=CD-KH-030349` | QC | cao |
 | `CD-KH-060110` | Popup chọn loại câu | Popup | CD-KH-060100 | CD-KH-060100 | CD-KH-060100, CD-KH-060200 | `/bai-tap-ve-nha/btvn?popup=CD-KH-060110` | QC | cao |
 | `CD-KH-060120` | Popup soạn câu hỏi · Trắc nghiệm | Popup | CD-KH-060110 | CD-KH-060100 | CD-KH-060110 | `/bai-tap-ve-nha/btvn?popup=CD-KH-060120` | QC | thấp |
 | `CD-KH-060121` | Popup soạn câu hỏi · Sắp xếp | Popup | CD-KH-060100 | CD-KH-060100 | — | `/bai-tap-ve-nha/btvn?popup=CD-KH-060121` | Figma | thấp |
@@ -334,7 +334,7 @@ Frame: `CD-KH-030340` · Nguồn nội dung: Figma
 - Chưa thấy trên Figma (16): `A01.04`, `A01.05`, `A03.04`, `A03.09`, `A07.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A11.01`, `A11.03`, `A11.04`, `A12.02`, `A12.03`, `A13.01`, `A13.02`
 - Requirement ghi thiếu, Figma đã có (6): `A02.03`, `A06.12`, `A06.13`, `A06.14`, `A06.15`, `A06.16`
 - Chưa sync (8): `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`
-- Phân loại cần design duyệt (18): `CD-KH-030342`, `CD-KH-030343`, `CD-KH-030344`, `CD-KH-030345`, `CD-KH-030346`, `CD-KH-030347`, `CD-KH-030349`, `CD-KH-060120`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060130`, `CD-KH-060140`, `CD-KH-060141`, `CD-KH-060150`, `CD-KH-060160`
+- Phân loại cần design duyệt (16): `CD-KH-030343`, `CD-KH-030344`, `CD-KH-030345`, `CD-KH-030346`, `CD-KH-030347`, `CD-KH-060120`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060130`, `CD-KH-060140`, `CD-KH-060141`, `CD-KH-060150`, `CD-KH-060160`
 - Thiếu prototype link đi vào (8): `CD-KH-030346`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060130`, `CD-KH-060140`
 - Frame Figma chưa có requirement (10): `CD-KH-030348`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060140`, `CD-KH-060141`, `CD-KH-060150`, `CD-KH-060160`
 - Testcase không trỏ REQ (3): `TC5a`, `TTC01`, `TTC02`

@@ -191,6 +191,27 @@
     "AM-AM.A03",
     "AM-AM.F01"
    ]
+  },
+  "PRO-GD-010010": {
+   "id": "PRO-GD-010010",
+   "name": "popup-chon-mau-giao-dien",
+   "title": "Hồ sơ / Popup chọn màu giao diện",
+   "kind": "popup",
+   "parent": "MST-TK-020000",
+   "shownOn": "MST-TK-020000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4273:166221",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/tai-khoan/chi-tiet-tai-khoan?popup=PRO-GD-010010",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
   }
  },
  "regions": [
@@ -1229,6 +1250,21 @@
   {
    "kind": "thieu-prototype-link",
    "ref": "MST-TK-010030",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "PRO-GD-010010",
+   "text": "popup “Hồ sơ / Popup chọn màu giao diện” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "PRO-GD-010010",
+   "text": "loại popup, màn cha MST-TK-020000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "PRO-GD-010010",
    "text": "không có prototype link nào đi vào frame"
   },
   {

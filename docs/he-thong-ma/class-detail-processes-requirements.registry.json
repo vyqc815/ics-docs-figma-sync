@@ -139,7 +139,7 @@
    "kind": "trang-thai",
    "parent": "ADM-LOP-020611",
    "shownOn": "ADM-LOP-020600",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "figma",
    "content": "figma",
    "nodeId": "2711:54002",
@@ -1597,7 +1597,7 @@
   {
    "kind": "phan-loai-can-duyet",
    "ref": "ADM-LOP-020612",
-   "text": "loại trang-thai, màn cha ADM-LOP-020611 — tin cậy thap"
+   "text": "loại trang-thai, màn cha ADM-LOP-020611 — tin cậy trung-binh"
   },
   {
    "kind": "figma-chua-co-requirement",

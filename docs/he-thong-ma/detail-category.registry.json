@@ -86,7 +86,7 @@
    "kind": "trang-thai",
    "parent": "CD-DM-010010",
    "shownOn": "CD-DM-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "figma",
    "content": "figma",
    "nodeId": "1758:4876",
@@ -109,7 +109,7 @@
    "kind": "trang-thai",
    "parent": "CD-DM-010010",
    "shownOn": "CD-DM-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "figma",
    "content": "figma",
    "nodeId": "1758:5127",
@@ -132,7 +132,7 @@
    "kind": "trang-thai",
    "parent": "CD-DM-010010",
    "shownOn": "CD-DM-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "figma",
    "content": "figma",
    "nodeId": "1758:5335",
@@ -155,7 +155,7 @@
    "kind": "trang-thai",
    "parent": "CD-DM-010010",
    "shownOn": "CD-DM-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "figma",
    "content": "figma",
    "nodeId": "689:14188",
@@ -1207,7 +1207,7 @@
   {
    "kind": "phan-loai-can-duyet",
    "ref": "CD-DM-010020",
-   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy thap"
+   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",
@@ -1222,7 +1222,7 @@
   {
    "kind": "phan-loai-can-duyet",
    "ref": "CD-DM-010030",
-   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy thap"
+   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",
@@ -1237,7 +1237,7 @@
   {
    "kind": "phan-loai-can-duyet",
    "ref": "CD-DM-010040",
-   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy thap"
+   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",
@@ -1252,7 +1252,7 @@
   {
    "kind": "phan-loai-can-duyet",
    "ref": "CD-DM-010057",
-   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy thap"
+   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",

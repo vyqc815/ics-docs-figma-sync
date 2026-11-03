@@ -28,13 +28,14 @@ def dests(n):
                 out.add(a["destinationId"])
     return out
 
-def walk(n, page, container, top, path):
+def walk(n, page, container, top, path, section=None):
     m = FRAME_NAME.match(n["name"]) if n["type"] in ("FRAME", "COMPONENT", "INSTANCE") else None
     if m:
         code = m[1].upper()
         bb = n.get("absoluteBoundingBox") or {}
         info = {"code": code, "id": n["id"], "title": m[2].strip(), "page": page.strip(), "container": container,
-                "w": bb.get("width"), "h": bb.get("height"), "nested": top is not None, "inside": top}
+                "w": bb.get("width"), "h": bb.get("height"), "nested": top is not None, "inside": top,
+                "section": section, "box": [bb.get("x") or 0, bb.get("y") or 0, bb.get("width") or 0, bb.get("height") or 0]}
         frames.setdefault(code, info)
         by_id[n["id"]] = code
         if top is None:
@@ -50,8 +51,10 @@ def walk(n, page, container, top, path):
             incoming[d].add(top)
     if not m and n["type"] in ("SECTION", "FRAME", "GROUP") and top is None:
         container = n["name"]
+    if n["type"] == "SECTION":
+        section = n["id"]
     for c in n.get("children") or []:
-        walk(c, page, container, top, path)
+        walk(c, page, container, top, path, section)
 
 for p in doc["children"]:
     walk(p, p["name"], None, None, [])
@@ -123,6 +126,31 @@ def kind_of(title, w, h):
         return "trang-thai", "trung-binh", f"bước/trạng thái trong popup: “{last}”"
     return "popup", "thap", f"frame nhỏ {int(w)}×{int(h)}, tên không ghi loại"
 
+def main_like(c):
+    f = frames[c]
+    return not c.endswith("-DK") and not f["nested"] and kind_of(f["title"], f["w"] or 0, f["h"] or 0)[0] == "man-chinh"
+
+# Canvas layout: a Section that holds exactly one main screen owns every popup and state placed in it.
+section_mains = collections.defaultdict(set)
+for c in frames:
+    if frames[c].get("section") and main_like(c):
+        section_mains[frames[c]["section"]].add(c)
+
+def gap(a, b):
+    ax, ay, aw, ah = a
+    bx, by, bw, bh = b
+    return (max(0, bx - ax - aw, ax - bx - bw) ** 2 + max(0, by - ay - ah, ay - by - bh) ** 2) ** 0.5
+
+def by_layout(code, f):
+    """(sole main screen of the frame's Section, nearest main screen on the same page)."""
+    if not f.get("box"):
+        return None, None
+    mains = section_mains.get(f.get("section"), set()) - {code}
+    sole = next(iter(mains)) if len(mains) == 1 else None
+    near = [c for c in frames if c != code and main_like(c) and frames[c]["page"] == f["page"]]
+    nearest = min(near, key=lambda c: gap(f["box"], frames[c]["box"]), default=None)
+    return sole, nearest
+
 RANK = {"cao": 2, "trung-binh": 1, "thap": 0}
 def lower(a, b):
     return a if RANK[a] <= RANK[b] else b
@@ -154,19 +182,25 @@ def classify(code):
     proto = sorted(links_in.get(code, set()) - {code + "-DK"})
     proto_light = [p for p in proto if not p.endswith("-DK")]
     nparent = f["inside"] if f.get("nested") else None
+    lsole, lnear = by_layout(code, f) if loai != "man-chinh" else (None, None)
     votes = collections.Counter()
     for p in proto_light:
         votes[p] += 2
     for p in (tparent, cparent, nparent):
         if p:
             votes[p] += 1
+    # layout fills a missing parent but never overrides one: a state of a popup sits beside its popup
+    if not votes and (lsole or lnear):
+        votes[lsole or lnear] += 1
     parent = votes.most_common(1)[0][0] if votes else None
+    # parent in the same one-screen Section (the screen itself, or a popup placed beside it) is certain
+    same_section = bool(lsole and parent and (parent == lsole or frames.get(parent, {}).get("section") == f.get("section")))
     agree = sum(1 for p in (tparent, cparent, nparent) if p == parent) + (1 if parent in proto_light else 0)
     if loai == "man-chinh":
         tin_cha = "trung-binh"  # a main screen hangs off its route group; the parent here is context only
     elif not parent:
         tin_cha = "thap"
-    elif agree >= 2:
+    elif agree >= 2 or same_section:
         tin_cha = "cao"
     elif len(votes) == 1:
         tin_cha = "trung-binh"
@@ -174,11 +208,18 @@ def classify(code):
         tin_cha = "thap"
     if len(votes) > 1:
         reasons.append("màn cha có nhiều gợi ý")
+    if same_section:
+        reasons.append(f"nằm trong Section chỉ có màn chính {lsole}")
+    elif lsole and parent and parent != lsole:
+        reasons.append(f"Section chỉ có màn chính {lsole}, khác màn cha đoán")
+    elif lsole is None and parent and not proto_light and parent == lnear:
+        reasons.append("màn cha chỉ suy từ vị trí gần nhất")
     tin = lower(tin_loai, tin_cha)
     if note:
         tin = "thap"
     return {"loai": loai, "parent": parent, "tinCay": tin, "tinCayLoai": tin_loai, "tinCayCha": tin_cha,
-            "lyDo": "; ".join(reasons), "goiY": {"theoTen": tparent, "theoMa": cparent, "prototype": proto, "namTrong": nparent}}
+            "lyDo": "; ".join(reasons), "goiY": {"theoTen": tparent, "theoMa": cparent, "prototype": proto, "namTrong": nparent,
+                     "theoSection": lsole, "ganNhat": lnear}}
 
 def root_screen(code, seen=()):
     """main screen that displays this frame (follow parents through popup → popup chains)."""
@@ -225,7 +266,7 @@ json.dump({"fileKey": "rRVs5HX0kIHffbS0V40djG", "frames": allc},
 
 L = ["# Phân loại 178 mã ngoài danh sách màn", "",
      "Sinh tự động từ Figma (REST, chỉ đọc). Chưa thêm vào `figma.pages.json`, chưa sinh code.",
-     "Design duyệt các dòng có tin cậy *trung bình* / *thấp*. Màn cha suy từ prototype link, tên frame và mã; “Hiển thị theo” là màn chính mở popup/trạng thái này (`?popup=`, `?state=`).", ""]
+     "Design duyệt các dòng có tin cậy *trung bình* / *thấp*. Màn cha suy từ prototype link, tên frame, mã và vị trí trên canvas (Section chỉ có một màn chính thì chắc chắn); “Hiển thị theo” là màn chính mở popup/trạng thái này (`?popup=`, `?state=`).", ""]
 cnt = collections.Counter(r["loai"] for r in rows)
 tc = collections.Counter(r["tinCay"] for r in rows)
 L += ["| Loại | Số mã |", "|---|---|"] + [f"| {k} | {v} |" for k, v in cnt.most_common()]
@@ -233,7 +274,7 @@ L += ["", f"Tin cậy: cao {tc['cao']}, trung bình {tc['trung-binh']}, thấp {
 L += ["## Cần duyệt", "", "| Mã | Tên frame | Loại | Màn cha | Hiển thị theo | Tin cậy | Lý do / gợi ý khác |", "|---|---|---|---|---|---|---|"]
 def other(r):
     g = r.get("goiY") or {}
-    alt = {g.get("theoTen"), g.get("theoMa"), *(g.get("prototype") or [])} - {None, r["parent"]}
+    alt = {g.get("theoTen"), g.get("theoMa"), g.get("theoSection"), *(g.get("prototype") or [])} - {None, r["parent"]}
     return (r["lyDo"] + (f"; nguồn khác: {', '.join(sorted(alt))}" if alt else "")).replace("|", "/")
 for r in rows:
     if r["canDuyet"]:

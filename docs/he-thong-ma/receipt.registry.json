@@ -284,7 +284,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010012",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "figma",
    "content": "figma",
    "nodeId": "3004:65498",
@@ -605,7 +605,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010000",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "figma",
    "content": "figma",
    "nodeId": "3058:96236",
@@ -626,7 +626,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010000",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "figma",
    "content": "figma",
    "nodeId": "3058:108224",
@@ -756,7 +756,7 @@
    "kind": "popup",
    "parent": "ADM-HD-010000",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3058:96531",
@@ -777,7 +777,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010020",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "figma",
    "content": "figma",
    "nodeId": "2731:75709",
@@ -847,7 +847,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010020",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "trung-binh",
    "source": "figma",
    "content": "figma",
    "nodeId": "2731:75800",
@@ -3145,7 +3145,7 @@
   {
    "kind": "phan-loai-can-duyet",
    "ref": "ADM-HD-010013",
-   "text": "loại trang-thai, màn cha ADM-HD-010012 — tin cậy thap"
+   "text": "loại trang-thai, màn cha ADM-HD-010012 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",
@@ -3315,7 +3315,7 @@
   {
    "kind": "phan-loai-can-duyet",
    "ref": "ADM-HD-010081",
-   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy thap"
+   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",
@@ -3330,7 +3330,7 @@
   {
    "kind": "phan-loai-can-duyet",
    "ref": "ADM-HD-010082",
-   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy thap"
+   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",
@@ -3398,11 +3398,6 @@
    "text": "popup “Hoá đơn / Popup cập nhật lịch hẹn” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010111",
-   "text": "loại popup, màn cha ADM-HD-010000 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-HD-010111",
    "text": "không có prototype link nào đi vào frame"
@@ -3415,7 +3410,7 @@
   {
    "kind": "phan-loai-can-duyet",
    "ref": "ADM-HD-010120",
-   "text": "loại trang-thai, màn cha ADM-HD-010020 — tin cậy thap"
+   "text": "loại trang-thai, màn cha ADM-HD-010020 — tin cậy trung-binh"
   },
   {
    "kind": "figma-chua-co-requirement",
@@ -3440,7 +3435,7 @@
   {
    "kind": "phan-loai-can-duyet",
    "ref": "ADM-HD-010224",
-   "text": "loại trang-thai, màn cha ADM-HD-010020 — tin cậy thap"
+   "text": "loại trang-thai, màn cha ADM-HD-010020 — tin cậy trung-binh"
   },
   {
    "kind": "figma-chua-co-requirement",

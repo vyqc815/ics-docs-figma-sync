@@ -13,21 +13,23 @@
     506.0
    ],
    "loai": "popup",
-   "parent": null,
-   "tinCay": "thap",
+   "parent": "ADM-GC-010001",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
-   "tinCayCha": "thap",
-   "lyDo": "tên: “Popup tạo gift code”; mã gần nhất ADM-GC-010000 (“Ghi chú / Danh sách ghi chú”) thuộc nhóm khác — tiền tố mã có thể bị trùng",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup tạo gift code”; mã gần nhất ADM-GC-010000 (“Ghi chú / Danh sách ghi chú”) thuộc nhóm khác — tiền tố mã có thể bị trùng; nằm trong Section chỉ có màn chính ADM-GC-010001",
    "goiY": {
     "theoTen": null,
     "theoMa": null,
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-GC-010001",
+    "ganNhat": "ADM-GC-010001"
    },
-   "manHienThi": null,
-   "parentInPageList": false,
+   "manHienThi": "ADM-GC-010001",
+   "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-GC-010020",
@@ -40,21 +42,23 @@
     450.0
    ],
    "loai": "popup",
-   "parent": null,
-   "tinCay": "thap",
+   "parent": "ADM-GC-010001",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
-   "tinCayCha": "thap",
-   "lyDo": "tên: “Popup cập nhật gift code”; mã gần nhất ADM-GC-010000 (“Ghi chú / Danh sách ghi chú”) thuộc nhóm khác — tiền tố mã có thể bị trùng",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup cập nhật gift code”; mã gần nhất ADM-GC-010000 (“Ghi chú / Danh sách ghi chú”) thuộc nhóm khác — tiền tố mã có thể bị trùng; nằm trong Section chỉ có màn chính ADM-GC-010001",
    "goiY": {
     "theoTen": null,
     "theoMa": null,
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-GC-010001",
+    "ganNhat": "ADM-GC-010001"
    },
-   "manHienThi": null,
-   "parentInPageList": false,
+   "manHienThi": "ADM-GC-010001",
+   "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-GKS-010005",
@@ -71,12 +75,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chọn trung tâm”",
+   "lyDo": "tên: “Popup chọn trung tâm”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GKS-010000",
     "theoMa": "ADM-GKS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-010000"
    },
    "manHienThi": "ADM-GKS-010000",
    "parentInPageList": true,
@@ -103,7 +109,9 @@
     "theoTen": "ADM-GKS-010000",
     "theoMa": "ADM-GKS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-010020"
    },
    "manHienThi": "ADM-GKS-010000",
    "parentInPageList": true,
@@ -125,12 +133,14 @@
    "tinCay": "thap",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
-   "lyDo": "tên: “Popup kết quả cá nhân”; màn cha có nhiều gợi ý",
+   "lyDo": "tên: “Popup kết quả cá nhân”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GKS-010020",
     "theoMa": "ADM-GKS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-010020"
    },
    "manHienThi": "ADM-GKS-010020",
    "parentInPageList": true,
@@ -152,12 +162,14 @@
    "tinCay": "thap",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
-   "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý",
+   "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GKS-010020",
     "theoMa": "ADM-GKS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-010020"
    },
    "manHienThi": "ADM-GKS-010020",
    "parentInPageList": true,
@@ -179,12 +191,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chọn trung tâm”",
+   "lyDo": "tên: “Popup chọn trung tâm”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GKS-020000",
     "theoMa": "ADM-GKS-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-020000"
    },
    "manHienThi": "ADM-GKS-020000",
    "parentInPageList": true,
@@ -211,7 +225,9 @@
     "theoTen": "ADM-GKS-020000",
     "theoMa": "ADM-GKS-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-020020"
    },
    "manHienThi": "ADM-GKS-020000",
    "parentInPageList": true,
@@ -233,12 +249,14 @@
    "tinCay": "thap",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
-   "lyDo": "tên: “Popup kết quả cả lớp”; màn cha có nhiều gợi ý",
+   "lyDo": "tên: “Popup kết quả cả lớp”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GKS-020020",
     "theoMa": "ADM-GKS-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-020020"
    },
    "manHienThi": "ADM-GKS-020020",
    "parentInPageList": true,
@@ -260,12 +278,14 @@
    "tinCay": "thap",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
-   "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý",
+   "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GKS-020020",
     "theoMa": "ADM-GKS-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-020020"
    },
    "manHienThi": "ADM-GKS-020020",
    "parentInPageList": true,
@@ -287,12 +307,14 @@
    "tinCay": "thap",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
-   "lyDo": "tên: “Popup kết quả cả trung tâm”; màn cha có nhiều gợi ý",
+   "lyDo": "tên: “Popup kết quả cả trung tâm”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GKS-030020",
     "theoMa": "ADM-GKS-030000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-030020"
    },
    "manHienThi": "ADM-GKS-030020",
    "parentInPageList": true,
@@ -314,12 +336,14 @@
    "tinCay": "thap",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
-   "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý",
+   "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GKS-030020",
     "theoMa": "ADM-GKS-030000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-030020"
    },
    "manHienThi": "ADM-GKS-030020",
    "parentInPageList": true,
@@ -346,7 +370,9 @@
     "theoTen": "ADM-GKS-030045",
     "theoMa": "ADM-GKS-030000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-020020"
    },
    "manHienThi": "ADM-GKS-030020",
    "parentInPageList": true,
@@ -373,7 +399,9 @@
     "theoTen": "ADM-GKS-030045",
     "theoMa": "ADM-GKS-030000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GKS-020020"
    },
    "manHienThi": "ADM-GKS-030020",
    "parentInPageList": true,
@@ -395,12 +423,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup tìm kiếm nâng cao”",
+   "lyDo": "tên: “Popup tìm kiếm nâng cao”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GV-010000",
     "theoMa": "ADM-GV-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GV-010000"
    },
    "manHienThi": "ADM-GV-010000",
    "parentInPageList": true,
@@ -422,12 +452,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm giáo viên”",
+   "lyDo": "tên: “Popup thêm giáo viên”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GV-010000",
     "theoMa": "ADM-GV-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GV-010000"
    },
    "manHienThi": "ADM-GV-010000",
    "parentInPageList": true,
@@ -449,12 +481,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm tag”",
+   "lyDo": "tên: “Popup thêm tag”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GV-010000",
     "theoMa": "ADM-GV-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GV-010000"
    },
    "manHienThi": "ADM-GV-010000",
    "parentInPageList": true,
@@ -481,7 +515,9 @@
     "theoTen": "ADM-GV-010000",
     "theoMa": "ADM-GV-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GV-020200"
    },
    "manHienThi": "ADM-GV-010000",
    "parentInPageList": true,
@@ -508,7 +544,9 @@
     "theoTen": "ADM-GV-010040",
     "theoMa": "ADM-GV-010040",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GV-020200"
    },
    "manHienThi": "ADM-GV-010000",
    "parentInPageList": false,
@@ -535,7 +573,9 @@
     "theoTen": "ADM-GV-010000",
     "theoMa": "ADM-GV-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GV-010003"
    },
    "manHienThi": "ADM-GV-010000",
    "parentInPageList": true,
@@ -557,12 +597,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chỉnh sửa lương”",
+   "lyDo": "tên: “Popup chỉnh sửa lương”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-GV-020200",
     "theoMa": "ADM-GV-020200",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-GV-020200"
    },
    "manHienThi": "ADM-GV-020200",
    "parentInPageList": true,
@@ -618,12 +660,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup đăng ký khung giờ”",
+   "lyDo": "tên: “Popup đăng ký khung giờ”; nằm trong Section chỉ có màn chính ADM-GV-020500",
    "goiY": {
     "theoTen": "ADM-GV-020500",
     "theoMa": "ADM-GV-020500",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-GV-020500",
+    "ganNhat": "ADM-GV-020500"
    },
    "manHienThi": "ADM-GV-020500",
    "parentInPageList": true,
@@ -645,14 +689,16 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm hoá đơn”",
+   "lyDo": "tên: “Popup thêm hoá đơn”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010000",
     "prototype": [
      "ADM-HD-010000"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -674,12 +720,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "trạng thái của popup: “Chọn đơn vị tiền”",
+   "lyDo": "trạng thái của popup: “Chọn đơn vị tiền”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010010",
     "theoMa": "ADM-HD-010010",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
@@ -701,12 +749,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "trạng thái của popup: “Chọn học viên có sẵn”",
+   "lyDo": "trạng thái của popup: “Chọn học viên có sẵn”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010010",
     "theoMa": "ADM-HD-010010",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
@@ -725,15 +775,17 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010012",
-   "tinCay": "thap",
+   "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
-   "tinCayCha": "thap",
-   "lyDo": "trạng thái của popup: “Mở danh sách”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Mở danh sách”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010012",
     "theoMa": "ADM-HD-010010",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
@@ -755,12 +807,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chỉnh sửa hoá đơn”",
+   "lyDo": "tên: “Popup chỉnh sửa hoá đơn”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -782,12 +836,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chọn học viên đã liên kết”",
+   "lyDo": "tên: “Popup chọn học viên đã liên kết”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -809,12 +865,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm học phí”",
+   "lyDo": "tên: “Popup thêm học phí”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -836,12 +894,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "bước/trạng thái trong popup: “Học viên mới”",
+   "lyDo": "bước/trạng thái trong popup: “Học viên mới”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010060",
     "theoMa": "ADM-HD-010060",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
@@ -863,12 +923,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm người phụ trách”",
+   "lyDo": "tên: “Popup thêm người phụ trách”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -890,12 +952,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "trạng thái của popup: “Chọn người phụ trách”",
+   "lyDo": "trạng thái của popup: “Chọn người phụ trách”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010070",
     "theoMa": "ADM-HD-010070",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
@@ -917,12 +981,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "trạng thái của popup: “Chọn trạng thái”",
+   "lyDo": "trạng thái của popup: “Chọn trạng thái”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010070",
     "theoMa": "ADM-HD-010070",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
@@ -944,12 +1010,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "trạng thái của popup: “Chọn số KPI”",
+   "lyDo": "trạng thái của popup: “Chọn số KPI”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010070",
     "theoMa": "ADM-HD-010070",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
@@ -971,12 +1039,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm (thao tác học viên)”",
+   "lyDo": "tên: “Popup thêm (thao tác học viên)”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -995,15 +1065,17 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010000",
-   "tinCay": "thap",
+   "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
-   "tinCayCha": "thap",
-   "lyDo": "trạng thái của popup: “Chọn Xem lịch sử”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Chọn Xem lịch sử”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010080",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -1022,15 +1094,17 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010000",
-   "tinCay": "thap",
+   "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
-   "tinCayCha": "thap",
-   "lyDo": "trạng thái của popup: “Chọn Thêm Lịch Hẹn”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Chọn Thêm Lịch Hẹn”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010080",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -1052,12 +1126,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm tag”",
+   "lyDo": "tên: “Popup thêm tag”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -1079,12 +1155,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm lịch hẹn”",
+   "lyDo": "tên: “Popup thêm lịch hẹn”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -1103,20 +1181,22 @@
    ],
    "loai": "popup",
    "parent": "ADM-HD-010000",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
-   "tinCayCha": "thap",
-   "lyDo": "tên: “Popup cập nhật lịch hẹn”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup cập nhật lịch hẹn”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010110",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HD-010120",
@@ -1130,17 +1210,19 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010020",
-   "tinCay": "thap",
+   "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
-   "tinCayCha": "thap",
-   "lyDo": "bước/trạng thái trong popup: “Lịch sử lớp”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "bước/trạng thái trong popup: “Lịch sử lớp”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010000",
     "prototype": [
      "ADM-HD-010020"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -1162,12 +1244,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup danh sách lịch hẹn”",
+   "lyDo": "tên: “Popup danh sách lịch hẹn”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -1189,12 +1273,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm ghi chú”",
+   "lyDo": "tên: “Popup thêm ghi chú”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010000",
     "theoMa": "ADM-HD-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
@@ -1216,12 +1302,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "trạng thái của popup: “Mở Loại”",
+   "lyDo": "trạng thái của popup: “Mở Loại”; nằm trong Section chỉ có màn chính ADM-HD-010000",
    "goiY": {
     "theoTen": "ADM-HD-010230",
     "theoMa": "ADM-HD-010230",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HD-010000",
+    "ganNhat": "ADM-HD-010000"
    },
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
@@ -1243,12 +1331,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm học viên”",
+   "lyDo": "tên: “Popup thêm học viên”; nằm trong Section chỉ có màn chính ADM-HV-010000",
    "goiY": {
     "theoTen": "ADM-HV-010000",
     "theoMa": "ADM-HV-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HV-010000",
+    "ganNhat": "ADM-HV-010000"
    },
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": true,
@@ -1270,12 +1360,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Dropdown cấp độ”",
+   "lyDo": "tên: “Dropdown cấp độ”; nằm trong Section chỉ có màn chính ADM-HV-010000",
    "goiY": {
     "theoTen": "ADM-HV-010010",
     "theoMa": "ADM-HV-010010",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HV-010000",
+    "ganNhat": "ADM-HV-010000"
    },
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": false,
@@ -1299,7 +1391,9 @@
     "theoTen": "ADM-HV-010000",
     "theoMa": "ADM-HV-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": null
    },
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": true,
@@ -1326,7 +1420,9 @@
     "theoTen": "ADM-HV-010000",
     "theoMa": "ADM-HV-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-HV-010040"
    },
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": true,
@@ -1353,7 +1449,9 @@
     "theoTen": "ADM-HV-010060",
     "theoMa": "ADM-HV-010060",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-HV-010040"
    },
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": false,
@@ -1380,7 +1478,9 @@
     "theoTen": "ADM-HV-010000",
     "theoMa": "ADM-HV-010000",
     "prototype": [],
-    "namTrong": "ADM-LOP-050304"
+    "namTrong": "ADM-LOP-050304",
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-050304"
    },
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": true,
@@ -1402,12 +1502,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Dropdown · Trạng thái”",
+   "lyDo": "tên: “Dropdown · Trạng thái”; nằm trong Section chỉ có màn chính ADM-HV-010000",
    "goiY": {
     "theoTen": "ADM-HV-010000",
     "theoMa": "ADM-HV-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HV-010000",
+    "ganNhat": "ADM-HV-010000"
    },
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": true,
@@ -1429,12 +1531,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Dropdown · Tag”",
+   "lyDo": "tên: “Dropdown · Tag”; nằm trong Section chỉ có màn chính ADM-HV-010000",
    "goiY": {
     "theoTen": "ADM-HV-010000",
     "theoMa": "ADM-HV-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-HV-010000",
+    "ganNhat": "ADM-HV-010000"
    },
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": true,
@@ -1456,12 +1560,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm ghi chú”",
+   "lyDo": "tên: “Popup thêm ghi chú”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-HV-020600",
     "theoMa": "ADM-HV-020600",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-HV-020600"
    },
    "manHienThi": "ADM-HV-020600",
    "parentInPageList": true,
@@ -1483,12 +1589,14 @@
    "tinCay": "thap",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
-   "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý",
+   "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-KS-010020",
     "theoMa": "ADM-KS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-KS-010020"
    },
    "manHienThi": "ADM-KS-010020",
    "parentInPageList": true,
@@ -1510,12 +1618,14 @@
    "tinCay": "thap",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
-   "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý",
+   "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-KS-020020",
     "theoMa": "ADM-KS-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-KS-020020"
    },
    "manHienThi": "ADM-KS-020020",
    "parentInPageList": true,
@@ -1537,12 +1647,14 @@
    "tinCay": "thap",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
-   "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý",
+   "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-KS-030020",
     "theoMa": "ADM-KS-030000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-KS-030020"
    },
    "manHienThi": "ADM-KS-030020",
    "parentInPageList": true,
@@ -1564,12 +1676,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup duyệt đề xuất”",
+   "lyDo": "tên: “Popup duyệt đề xuất”; nằm trong Section chỉ có màn chính ADM-LGV-020000",
    "goiY": {
     "theoTen": "ADM-LGV-020000",
     "theoMa": "ADM-LGV-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LGV-020000",
+    "ganNhat": "ADM-LGV-020000"
    },
    "manHienThi": "ADM-LGV-020000",
    "parentInPageList": true,
@@ -1591,12 +1705,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm lịch hẹn”",
+   "lyDo": "tên: “Popup thêm lịch hẹn”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-LHN-010100",
     "theoMa": "ADM-LHN-010100",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LHN-010100"
    },
    "manHienThi": "ADM-LHN-010100",
    "parentInPageList": true,
@@ -1618,12 +1734,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Dropdown chọn nhân sự (đang mở)”",
+   "lyDo": "tên: “Dropdown chọn nhân sự (đang mở)”; nằm trong Section chỉ có màn chính ADM-LOP-010000",
    "goiY": {
     "theoTen": "ADM-LOP-010000",
     "theoMa": "ADM-LOP-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-010000",
+    "ganNhat": "ADM-LOP-010000"
    },
    "manHienThi": "ADM-LOP-010000",
    "parentInPageList": true,
@@ -1645,12 +1763,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Ẩn hiện cột”",
+   "lyDo": "tên: “Ẩn hiện cột”; nằm trong Section chỉ có màn chính ADM-LOP-010000",
    "goiY": {
     "theoTen": "ADM-LOP-010000",
     "theoMa": "ADM-LOP-010000",
     "prototype": [],
-    "namTrong": "ADM-LOP-010000"
+    "namTrong": "ADM-LOP-010000",
+    "theoSection": "ADM-LOP-010000",
+    "ganNhat": "ADM-LOP-010000"
    },
    "manHienThi": "ADM-LOP-010000",
    "parentInPageList": true,
@@ -1672,12 +1792,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm lớp học”",
+   "lyDo": "tên: “Popup thêm lớp học”; nằm trong Section chỉ có màn chính ADM-LOP-010000",
    "goiY": {
     "theoTen": "ADM-LOP-010000",
     "theoMa": "ADM-LOP-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-010000",
+    "ganNhat": "ADM-LOP-010000"
    },
    "manHienThi": "ADM-LOP-010000",
    "parentInPageList": true,
@@ -1699,12 +1821,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm tag”",
+   "lyDo": "tên: “Popup thêm tag”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-LOP-010000",
     "theoMa": "ADM-LOP-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-010000"
    },
    "manHienThi": "ADM-LOP-010000",
    "parentInPageList": true,
@@ -1726,12 +1850,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm lịch hẹn”",
+   "lyDo": "tên: “Popup thêm lịch hẹn”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-LOP-010000",
     "theoMa": "ADM-LOP-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-010000"
    },
    "manHienThi": "ADM-LOP-010000",
    "parentInPageList": true,
@@ -1753,12 +1879,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm tiêu chuẩn”",
+   "lyDo": "tên: “Popup thêm tiêu chuẩn”; nằm trong Section chỉ có màn chính ADM-LOP-020600",
    "goiY": {
     "theoTen": "ADM-LOP-020600",
     "theoMa": "ADM-LOP-020600",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-020600",
+    "ganNhat": "ADM-LOP-020600"
    },
    "manHienThi": "ADM-LOP-020600",
    "parentInPageList": true,
@@ -1780,14 +1908,16 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "trạng thái của popup: “Xem trước”",
+   "lyDo": "trạng thái của popup: “Xem trước”; nằm trong Section chỉ có màn chính ADM-LOP-020600",
    "goiY": {
     "theoTen": "ADM-LOP-020610",
     "theoMa": "ADM-LOP-020610",
     "prototype": [
      "ADM-LOP-020610"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-020600",
+    "ganNhat": "ADM-LOP-020600"
    },
    "manHienThi": "ADM-LOP-020600",
    "parentInPageList": false,
@@ -1806,17 +1936,19 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-LOP-020611",
-   "tinCay": "thap",
+   "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
-   "tinCayCha": "thap",
-   "lyDo": "trạng thái của popup: “Xem tiêu chí”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Xem tiêu chí”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính ADM-LOP-020600",
    "goiY": {
     "theoTen": "ADM-LOP-020610",
     "theoMa": "ADM-LOP-020610",
     "prototype": [
      "ADM-LOP-020611"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-020600",
+    "ganNhat": "ADM-LOP-020600"
    },
    "manHienThi": "ADM-LOP-020600",
    "parentInPageList": false,
@@ -1843,7 +1975,9 @@
     "theoTen": "ADM-LOP-020700",
     "theoMa": "ADM-LOP-020700",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-020709"
    },
    "manHienThi": "ADM-LOP-020700",
    "parentInPageList": true,
@@ -1872,7 +2006,9 @@
     "prototype": [
      "ADM-LOP-020710"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-020709"
    },
    "manHienThi": "ADM-LOP-020700",
    "parentInPageList": false,
@@ -1901,7 +2037,9 @@
     "prototype": [
      "ADM-LOP-020711"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-020709"
    },
    "manHienThi": "ADM-LOP-020700",
    "parentInPageList": false,
@@ -1928,7 +2066,9 @@
     "theoTen": "ADM-LOP-020800",
     "theoMa": "ADM-LOP-020800",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-020809"
    },
    "manHienThi": "ADM-LOP-020800",
    "parentInPageList": true,
@@ -1957,7 +2097,9 @@
     "prototype": [
      "ADM-LOP-020810"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-020809"
    },
    "manHienThi": "ADM-LOP-020800",
    "parentInPageList": false,
@@ -1986,7 +2128,9 @@
     "prototype": [
      "ADM-LOP-020811"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-020809"
    },
    "manHienThi": "ADM-LOP-020800",
    "parentInPageList": false,
@@ -2008,12 +2152,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "cao",
    "tinCayCha": "trung-binh",
-   "lyDo": "tên: “Popup lịch sử ghi chú”",
+   "lyDo": "tên: “Popup lịch sử ghi chú”; Section chỉ có màn chính ADM-LOP-020100, khác màn cha đoán",
    "goiY": {
     "theoTen": null,
     "theoMa": "ADM-LOP-040200",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-020100",
+    "ganNhat": "ADM-LOP-020100"
    },
    "manHienThi": "ADM-LOP-040200",
    "parentInPageList": true,
@@ -2035,12 +2181,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup lịch sử trạng thái”",
+   "lyDo": "tên: “Popup lịch sử trạng thái”; nằm trong Section chỉ có màn chính ADM-LOP-040200",
    "goiY": {
     "theoTen": "ADM-LOP-040200",
     "theoMa": "ADM-LOP-040200",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-040200",
+    "ganNhat": "ADM-LOP-040200"
    },
    "manHienThi": "ADM-LOP-040200",
    "parentInPageList": true,
@@ -2062,12 +2210,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm học phí”",
+   "lyDo": "tên: “Popup thêm học phí”; nằm trong Section chỉ có màn chính ADM-LOP-040200",
    "goiY": {
     "theoTen": "ADM-LOP-040200",
     "theoMa": "ADM-LOP-040200",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-040200",
+    "ganNhat": "ADM-LOP-040200"
    },
    "manHienThi": "ADM-LOP-040200",
    "parentInPageList": true,
@@ -2089,14 +2239,16 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm lịch dạy linh hoạt”",
+   "lyDo": "tên: “Popup thêm lịch dạy linh hoạt”; nằm trong Section chỉ có màn chính ADM-LOP-040500",
    "goiY": {
     "theoTen": "ADM-LOP-040500",
     "theoMa": "ADM-LOP-040500",
     "prototype": [
      "ADM-LOP-040500"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-040500",
+    "ganNhat": "ADM-LOP-040500"
    },
    "manHienThi": "ADM-LOP-040500",
    "parentInPageList": true,
@@ -2118,12 +2270,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "bước/trạng thái trong popup: “Trùng lịch cố định”",
+   "lyDo": "bước/trạng thái trong popup: “Trùng lịch cố định”; nằm trong Section chỉ có màn chính ADM-LOP-040500",
    "goiY": {
     "theoTen": "ADM-LOP-040520",
     "theoMa": "ADM-LOP-040520",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-040500",
+    "ganNhat": "ADM-LOP-040500"
    },
    "manHienThi": "ADM-LOP-040500",
    "parentInPageList": false,
@@ -2145,12 +2299,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chỉnh sửa KPI”",
+   "lyDo": "tên: “Popup chỉnh sửa KPI”; nằm trong Section chỉ có màn chính ADM-LOP-040700",
    "goiY": {
     "theoTen": "ADM-LOP-040700",
     "theoMa": "ADM-LOP-040700",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-040700",
+    "ganNhat": "ADM-LOP-040700"
    },
    "manHienThi": "ADM-LOP-040700",
    "parentInPageList": true,
@@ -2172,12 +2328,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Đang mở”",
+   "lyDo": "tên: “Đang mở”; nằm trong Section chỉ có màn chính ADM-LOP-040700",
    "goiY": {
     "theoTen": "ADM-LOP-040710",
     "theoMa": "ADM-LOP-040710",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-040700",
+    "ganNhat": "ADM-LOP-040700"
    },
    "manHienThi": "ADM-LOP-040700",
    "parentInPageList": false,
@@ -2199,12 +2357,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chỉnh sửa OT”",
+   "lyDo": "tên: “Popup chỉnh sửa OT”; nằm trong Section chỉ có màn chính ADM-LOP-040800",
    "goiY": {
     "theoTen": "ADM-LOP-040800",
     "theoMa": "ADM-LOP-040800",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-040800",
+    "ganNhat": "ADM-LOP-040800"
    },
    "manHienThi": "ADM-LOP-040800",
    "parentInPageList": true,
@@ -2226,12 +2386,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Đang mở”",
+   "lyDo": "tên: “Đang mở”; nằm trong Section chỉ có màn chính ADM-LOP-040800",
    "goiY": {
     "theoTen": "ADM-LOP-040810",
     "theoMa": "ADM-LOP-040810",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-LOP-040800",
+    "ganNhat": "ADM-LOP-040800"
    },
    "manHienThi": "ADM-LOP-040800",
    "parentInPageList": false,
@@ -2253,12 +2415,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "cao",
    "tinCayCha": "trung-binh",
-   "lyDo": "tên: “Popup xác nhận xoá”",
+   "lyDo": "tên: “Popup xác nhận xoá”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-LOP-050404",
     "theoMa": null,
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-050404"
    },
    "manHienThi": "ADM-LOP-050404",
    "parentInPageList": true,
@@ -2280,12 +2444,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "cao",
    "tinCayCha": "trung-binh",
-   "lyDo": "tên: “Popup xác nhận gửi”",
+   "lyDo": "tên: “Popup xác nhận gửi”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-LOP-050404",
     "theoMa": null,
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-050404"
    },
    "manHienThi": "ADM-LOP-050404",
    "parentInPageList": true,
@@ -2307,12 +2473,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "cao",
    "tinCayCha": "trung-binh",
-   "lyDo": "tên: “Popup tạo tin nhắn”",
+   "lyDo": "tên: “Popup tạo tin nhắn”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-LOP-050404",
     "theoMa": null,
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-050404"
    },
    "manHienThi": "ADM-LOP-050404",
    "parentInPageList": true,
@@ -2334,12 +2502,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "cao",
    "tinCayCha": "trung-binh",
-   "lyDo": "tên: “Popup tạo tin nhắn bán tự động”",
+   "lyDo": "tên: “Popup tạo tin nhắn bán tự động”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-LOP-050404",
     "theoMa": null,
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-LOP-050404"
    },
    "manHienThi": "ADM-LOP-050404",
    "parentInPageList": true,
@@ -2361,12 +2531,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup đổi tên video”",
+   "lyDo": "tên: “Popup đổi tên video”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-MV-020000",
     "theoMa": "ADM-MV-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-MV-020000"
    },
    "manHienThi": "ADM-MV-020000",
    "parentInPageList": true,
@@ -2388,12 +2560,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup xác nhận xoá”",
+   "lyDo": "tên: “Popup xác nhận xoá”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-MV-020000",
     "theoMa": "ADM-MV-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-MV-020000"
    },
    "manHienThi": "ADM-MV-020000",
    "parentInPageList": true,
@@ -2415,12 +2589,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup đổi tên & move video”",
+   "lyDo": "tên: “Popup đổi tên & move video”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "ADM-MV-020000",
     "theoMa": "ADM-MV-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "ADM-MV-020000"
    },
    "manHienThi": "ADM-MV-020000",
    "parentInPageList": true,
@@ -2442,12 +2618,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm đơn sách”",
+   "lyDo": "tên: “Popup thêm đơn sách”; nằm trong Section chỉ có màn chính ADM-SS-010000",
    "goiY": {
     "theoTen": "ADM-SS-010000",
     "theoMa": "ADM-SS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-SS-010000",
+    "ganNhat": "ADM-SS-010000"
    },
    "manHienThi": "ADM-SS-010000",
    "parentInPageList": true,
@@ -2469,12 +2647,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "trạng thái của popup: “Đã chọn học viên có sẵn”",
+   "lyDo": "trạng thái của popup: “Đã chọn học viên có sẵn”; nằm trong Section chỉ có màn chính ADM-SS-010000",
    "goiY": {
     "theoTen": "ADM-SS-010010",
     "theoMa": "ADM-SS-010010",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-SS-010000",
+    "ganNhat": "ADM-SS-010000"
    },
    "manHienThi": "ADM-SS-010000",
    "parentInPageList": false,
@@ -2496,12 +2676,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup xác nhận xoá đơn sách”",
+   "lyDo": "tên: “Popup xác nhận xoá đơn sách”; nằm trong Section chỉ có màn chính ADM-SS-010000",
    "goiY": {
     "theoTen": "ADM-SS-010000",
     "theoMa": "ADM-SS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-SS-010000",
+    "ganNhat": "ADM-SS-010000"
    },
    "manHienThi": "ADM-SS-010000",
    "parentInPageList": true,
@@ -2523,12 +2705,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Đang mở”",
+   "lyDo": "tên: “Đang mở”; nằm trong Section chỉ có màn chính ADM-SS-010000",
    "goiY": {
     "theoTen": "ADM-SS-010000",
     "theoMa": "ADM-SS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-SS-010000",
+    "ganNhat": "ADM-SS-010000"
    },
    "manHienThi": "ADM-SS-010000",
    "parentInPageList": true,
@@ -2550,12 +2734,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "trạng thái của popup: “Đã chọn mẫu”",
+   "lyDo": "trạng thái của popup: “Đã chọn mẫu”; nằm trong Section chỉ có màn chính ADM-SS-010000",
    "goiY": {
     "theoTen": "ADM-SS-010000",
     "theoMa": "ADM-SS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-SS-010000",
+    "ganNhat": "ADM-SS-010000"
    },
    "manHienThi": "ADM-SS-010000",
    "parentInPageList": true,
@@ -2577,12 +2763,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup cập nhật đơn sách”",
+   "lyDo": "tên: “Popup cập nhật đơn sách”; nằm trong Section chỉ có màn chính ADM-SS-010000",
    "goiY": {
     "theoTen": "ADM-SS-010000",
     "theoMa": "ADM-SS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-SS-010000",
+    "ganNhat": "ADM-SS-010000"
    },
    "manHienThi": "ADM-SS-010000",
    "parentInPageList": true,
@@ -2604,12 +2792,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm tag”",
+   "lyDo": "tên: “Popup thêm tag”; nằm trong Section chỉ có màn chính ADM-TAG-010000",
    "goiY": {
     "theoTen": "ADM-TAG-010000",
     "theoMa": "ADM-TAG-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-TAG-010000",
+    "ganNhat": "ADM-TAG-010000"
    },
    "manHienThi": "ADM-TAG-010000",
    "parentInPageList": true,
@@ -2631,12 +2821,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm nhóm tag”",
+   "lyDo": "tên: “Popup thêm nhóm tag”; nằm trong Section chỉ có màn chính ADM-TAG-010000",
    "goiY": {
     "theoTen": "ADM-TAG-010000",
     "theoMa": "ADM-TAG-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "ADM-TAG-010000",
+    "ganNhat": "ADM-TAG-010000"
    },
    "manHienThi": "ADM-TAG-010000",
    "parentInPageList": true,
@@ -2658,12 +2850,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng PPT, PDF, BTVN”",
+   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng PPT, PDF, BTVN”; nằm trong Section chỉ có màn chính CD-BL-010000",
    "goiY": {
     "theoTen": "CD-BL-010000",
     "theoMa": "CD-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-BL-010000",
+    "ganNhat": "CD-BL-010000"
    },
    "manHienThi": "CD-BL-010000",
    "parentInPageList": true,
@@ -2682,20 +2876,22 @@
    ],
    "loai": "popup",
    "parent": "CD-BL-010000",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
-   "tinCayCha": "thap",
-   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng Khác”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng Khác”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-BL-010000",
    "goiY": {
     "theoTen": "CD-BL-010000",
     "theoMa": "CD-BL-010010",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-BL-010000",
+    "ganNhat": "CD-BL-010000"
    },
    "manHienThi": "CD-BL-010000",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-BL-010020",
@@ -2712,12 +2908,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chi tiết báo lỗi · Đang xử lý”",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Đang xử lý”; nằm trong Section chỉ có màn chính CD-BL-010000",
    "goiY": {
     "theoTen": "CD-BL-010000",
     "theoMa": "CD-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-BL-010000",
+    "ganNhat": "CD-BL-010000"
    },
    "manHienThi": "CD-BL-010000",
    "parentInPageList": true,
@@ -2739,12 +2937,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành”",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành”; nằm trong Section chỉ có màn chính CD-BL-010000",
    "goiY": {
     "theoTen": "CD-BL-010000",
     "theoMa": "CD-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-BL-010000",
+    "ganNhat": "CD-BL-010000"
    },
    "manHienThi": "CD-BL-010000",
    "parentInPageList": true,
@@ -2763,20 +2963,22 @@
    ],
    "loai": "popup",
    "parent": "CD-BL-010040",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
-   "tinCayCha": "thap",
-   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-BL-010000",
    "goiY": {
     "theoTen": "CD-BL-010040",
     "theoMa": "CD-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-BL-010000",
+    "ganNhat": "CD-BL-010000"
    },
    "manHienThi": "CD-BL-010000",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-CDO-010010",
@@ -2793,12 +2995,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup kích hoạt công khai”",
+   "lyDo": "tên: “Popup kích hoạt công khai”; nằm trong Section chỉ có màn chính CD-CDO-010000",
    "goiY": {
     "theoTen": "CD-CDO-010000",
     "theoMa": "CD-CDO-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-CDO-010000",
+    "ganNhat": "CD-CDO-010000"
    },
    "manHienThi": "CD-CDO-010000",
    "parentInPageList": true,
@@ -2820,12 +3024,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "trạng thái của popup: “Điền sai”",
+   "lyDo": "trạng thái của popup: “Điền sai”; nằm trong Section chỉ có màn chính CD-CDO-010000",
    "goiY": {
     "theoTen": "CD-CDO-010010",
     "theoMa": "CD-CDO-010010",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-CDO-010000",
+    "ganNhat": "CD-CDO-010000"
    },
    "manHienThi": "CD-CDO-010000",
    "parentInPageList": false,
@@ -2844,15 +3050,17 @@
    ],
    "loai": "trang-thai",
    "parent": "CD-DM-010010",
-   "tinCay": "thap",
+   "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
-   "tinCayCha": "thap",
-   "lyDo": "trạng thái của popup: “Thành công”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Thành công”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-DM-010000",
    "goiY": {
     "theoTen": "CD-DM-010010",
     "theoMa": "CD-DM-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-DM-010000",
+    "ganNhat": "CD-DM-010000"
    },
    "manHienThi": "CD-DM-010000",
    "parentInPageList": true,
@@ -2874,12 +3082,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup kích hoạt công khai”",
+   "lyDo": "tên: “Popup kích hoạt công khai”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "CD-DM-010000",
     "theoMa": "CD-DM-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-DM-010000"
    },
    "manHienThi": "CD-DM-010000",
    "parentInPageList": true,
@@ -2906,7 +3116,9 @@
     "theoTen": "CD-DM-010060",
     "theoMa": "CD-DM-010060",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-DM-010000"
    },
    "manHienThi": "CD-DM-010000",
    "parentInPageList": false,
@@ -2950,7 +3162,9 @@
      "CD-KH-030350",
      "CD-KH-030350-DK"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-040200"
    },
    "manHienThi": "CD-KH-010000",
    "parentInPageList": true,
@@ -2996,7 +3210,9 @@
     "prototype": [
      "CD-KH-010010"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-040200"
    },
    "manHienThi": "CD-KH-010000",
    "parentInPageList": false,
@@ -3018,12 +3234,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup xoá bài học”",
+   "lyDo": "tên: “Popup xoá bài học”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "CD-KH-020260",
     "theoMa": "CD-KH-020260",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-020260"
    },
    "manHienThi": "CD-KH-020260",
    "parentInPageList": true,
@@ -3053,7 +3271,9 @@
      "CD-KH-030100",
      "CD-KH-030104"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-030100"
    },
    "manHienThi": "CD-KH-030100",
    "parentInPageList": true,
@@ -3083,7 +3303,9 @@
      "CD-KH-030100",
      "CD-KH-030104"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-030100"
    },
    "manHienThi": "CD-KH-030100",
    "parentInPageList": true,
@@ -3124,7 +3346,9 @@
     "theoTen": "CD-KH-030300",
     "theoMa": "CD-KH-030300",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": null
    },
    "manHienThi": "CD-KH-030300",
    "parentInPageList": true,
@@ -3163,7 +3387,7 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup Generate · Nhập prompt”; màn cha có nhiều gợi ý",
+   "lyDo": "tên: “Popup Generate · Nhập prompt”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-KH-030340",
    "goiY": {
     "theoTen": "CD-KH-030300",
     "theoMa": "CD-KH-030340",
@@ -3174,7 +3398,9 @@
      "CD-KH-030350",
      "CD-KH-030350-DK"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-KH-030340",
+    "ganNhat": "CD-KH-030340"
    },
    "manHienThi": "CD-KH-030340",
    "parentInPageList": true,
@@ -3193,22 +3419,24 @@
    ],
    "loai": "popup",
    "parent": "CD-KH-030341",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
-   "tinCayCha": "thap",
-   "lyDo": "tên: “Popup Generate · Chọn kiến thức & kỹ năng”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup Generate · Chọn kiến thức & kỹ năng”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-KH-030340",
    "goiY": {
     "theoTen": "CD-KH-030300",
     "theoMa": "CD-KH-030340",
     "prototype": [
      "CD-KH-030341"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-KH-030340",
+    "ganNhat": "CD-KH-030340"
    },
    "manHienThi": "CD-KH-030340",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-030344",
@@ -3222,10 +3450,10 @@
    ],
    "loai": "trang-thai",
    "parent": "CD-KH-030341",
-   "tinCay": "thap",
+   "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
-   "tinCayCha": "thap",
-   "lyDo": "trạng thái của màn: “Generate · Đang tạo bảng”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của màn: “Generate · Đang tạo bảng”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-KH-030340",
    "goiY": {
     "theoTen": "CD-KH-030300",
     "theoMa": "CD-KH-030340",
@@ -3237,7 +3465,9 @@
      "CD-KH-030350",
      "CD-KH-030350-DK"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-KH-030340",
+    "ganNhat": "CD-KH-030340"
    },
    "manHienThi": "CD-KH-030340",
    "parentInPageList": false,
@@ -3256,10 +3486,10 @@
    ],
    "loai": "trang-thai",
    "parent": "CD-KH-030343",
-   "tinCay": "thap",
+   "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
-   "tinCayCha": "thap",
-   "lyDo": "trạng thái của màn: “Generate · Xác nhận bỏ bảng”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của màn: “Generate · Xác nhận bỏ bảng”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-KH-030340",
    "goiY": {
     "theoTen": "CD-KH-030300",
     "theoMa": "CD-KH-030340",
@@ -3267,7 +3497,9 @@
      "CD-KH-030343",
      "CD-KH-030343-DK"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-KH-030340",
+    "ganNhat": "CD-KH-030340"
    },
    "manHienThi": "CD-KH-030340",
    "parentInPageList": true,
@@ -3289,12 +3521,14 @@
    "tinCay": "thap",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "thap",
-   "lyDo": "trạng thái của màn: “Generate · Lỗi”; màn cha có nhiều gợi ý",
+   "lyDo": "trạng thái của màn: “Generate · Lỗi”; màn cha có nhiều gợi ý; Section chỉ có màn chính CD-KH-030340, khác màn cha đoán",
    "goiY": {
     "theoTen": "CD-KH-030300",
     "theoMa": "CD-KH-030340",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-KH-030340",
+    "ganNhat": "CD-KH-030340"
    },
    "manHienThi": "CD-KH-030300",
    "parentInPageList": true,
@@ -3316,14 +3550,16 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chọn loại câu”; màn cha có nhiều gợi ý",
+   "lyDo": "tên: “Popup chọn loại câu”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-KH-030340",
    "goiY": {
     "theoTen": "CD-KH-030300",
     "theoMa": "CD-KH-030340",
     "prototype": [
      "CD-KH-030340"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-KH-030340",
+    "ganNhat": "CD-KH-030340"
    },
    "manHienThi": "CD-KH-030340",
    "parentInPageList": true,
@@ -3342,22 +3578,24 @@
    ],
    "loai": "popup",
    "parent": "CD-KH-030348",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
-   "tinCayCha": "thap",
-   "lyDo": "tên: “Popup soạn câu hỏi · Trắc nghiệm”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup soạn câu hỏi · Trắc nghiệm”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-KH-030340",
    "goiY": {
     "theoTen": "CD-KH-030300",
     "theoMa": "CD-KH-030340",
     "prototype": [
      "CD-KH-030348"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-KH-030340",
+    "ganNhat": "CD-KH-030340"
    },
    "manHienThi": "CD-KH-030340",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-030350",
@@ -3374,12 +3612,14 @@
    "tinCay": "trung-binh",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
-   "lyDo": "trạng thái của màn: “Generate · Lỗi (tab Chọn kiến thức & kỹ năng)”",
+   "lyDo": "trạng thái của màn: “Generate · Lỗi (tab Chọn kiến thức & kỹ năng)”; Section chỉ có màn chính CD-KH-030340, khác màn cha đoán",
    "goiY": {
     "theoTen": "CD-KH-030300",
     "theoMa": "CD-KH-030300",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CD-KH-030340",
+    "ganNhat": "CD-KH-030340"
    },
    "manHienThi": "CD-KH-030300",
    "parentInPageList": true,
@@ -3406,7 +3646,9 @@
     "theoTen": "CD-KH-040100",
     "theoMa": "CD-KH-040150",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-040130"
    },
    "manHienThi": "CD-KH-040100",
    "parentInPageList": true,
@@ -3433,7 +3675,9 @@
     "theoTen": "CD-KH-050100",
     "theoMa": "CD-KH-050150",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-050180"
    },
    "manHienThi": "CD-KH-050100",
    "parentInPageList": true,
@@ -3463,7 +3707,9 @@
      "CD-KH-060100",
      "CD-KH-060200"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-060100"
    },
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
@@ -3492,7 +3738,9 @@
     "prototype": [
      "CD-KH-060110"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-060100"
    },
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
@@ -3519,7 +3767,9 @@
     "theoTen": "CD-KH-060100",
     "theoMa": "CD-KH-060120",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-060200"
    },
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
@@ -3546,7 +3796,9 @@
     "theoTen": "CD-KH-060100",
     "theoMa": "CD-KH-060120",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-060200"
    },
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
@@ -3573,7 +3825,9 @@
     "theoTen": "CD-KH-060100",
     "theoMa": "CD-KH-060120",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-060200"
    },
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
@@ -3600,7 +3854,9 @@
     "theoTen": "CD-KH-060100",
     "theoMa": "CD-KH-060120",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-060200"
    },
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
@@ -3627,7 +3883,9 @@
     "theoTen": "CD-KH-060100",
     "theoMa": "CD-KH-060120",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-060200"
    },
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
@@ -3654,7 +3912,9 @@
     "theoTen": "CD-KH-060130",
     "theoMa": "CD-KH-060100",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-070100"
    },
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
@@ -3684,7 +3944,9 @@
      "CD-KH-060100",
      "CD-KH-060200"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-070100"
    },
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
@@ -3715,7 +3977,9 @@
      "CD-KH-060141",
      "CD-KH-060200"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-070100"
    },
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
@@ -3747,7 +4011,9 @@
      "CD-KH-070102",
      "CD-KH-070102-DK"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "CD-KH-070110"
    },
    "manHienThi": "CD-KH-070100",
    "parentInPageList": true,
@@ -3769,12 +4035,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng PPT, PDF, BTVN”",
+   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng PPT, PDF, BTVN”; nằm trong Section chỉ có màn chính CH-BL-010000",
    "goiY": {
     "theoTen": "CH-BL-010000",
     "theoMa": "CH-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CH-BL-010000",
+    "ganNhat": "CD-BL-010000"
    },
    "manHienThi": "CH-BL-010000",
    "parentInPageList": true,
@@ -3793,20 +4061,22 @@
    ],
    "loai": "popup",
    "parent": "CH-BL-010000",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
-   "tinCayCha": "thap",
-   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng Khác”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng Khác”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CH-BL-010000",
    "goiY": {
     "theoTen": "CH-BL-010000",
     "theoMa": "CH-BL-010010",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CH-BL-010000",
+    "ganNhat": "CD-BL-010000"
    },
    "manHienThi": "CH-BL-010000",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CH-BL-010020",
@@ -3823,12 +4093,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chi tiết báo lỗi · Đang xử lý”",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Đang xử lý”; nằm trong Section chỉ có màn chính CH-BL-010000",
    "goiY": {
     "theoTen": "CH-BL-010000",
     "theoMa": "CH-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CH-BL-010000",
+    "ganNhat": "CD-BL-010000"
    },
    "manHienThi": "CH-BL-010000",
    "parentInPageList": true,
@@ -3850,12 +4122,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành”",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành”; nằm trong Section chỉ có màn chính CH-BL-010000",
    "goiY": {
     "theoTen": "CH-BL-010000",
     "theoMa": "CH-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CH-BL-010000",
+    "ganNhat": "CD-BL-010000"
    },
    "manHienThi": "CH-BL-010000",
    "parentInPageList": true,
@@ -3874,20 +4148,22 @@
    ],
    "loai": "popup",
    "parent": "CH-BL-010040",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
-   "tinCayCha": "thap",
-   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CH-BL-010000",
    "goiY": {
     "theoTen": "CH-BL-010040",
     "theoMa": "CH-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CH-BL-010000",
+    "ganNhat": "CD-BL-010000"
    },
    "manHienThi": "CH-BL-010000",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CH-BL-010070",
@@ -3901,20 +4177,22 @@
    ],
    "loai": "popup",
    "parent": "CH-BL-010040",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
-   "tinCayCha": "thap",
-   "lyDo": "tên: “Popup nhắc báo lỗi chưa xử lý (mỗi ngày)”; màn cha có nhiều gợi ý",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup nhắc báo lỗi chưa xử lý (mỗi ngày)”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CH-BL-010000",
    "goiY": {
     "theoTen": "CH-BL-010040",
     "theoMa": "CH-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "CH-BL-010000",
+    "ganNhat": "CD-BL-010000"
    },
    "manHienThi": "CH-BL-010000",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "GV-BL-010010",
@@ -3931,12 +4209,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup gửi báo lỗi · Giáo trình”",
+   "lyDo": "tên: “Popup gửi báo lỗi · Giáo trình”; nằm trong Section chỉ có màn chính GV-BL-010000",
    "goiY": {
     "theoTen": "GV-BL-010000",
     "theoMa": "GV-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "GV-BL-010000",
+    "ganNhat": "GV-BL-010000"
    },
    "manHienThi": "GV-BL-010000",
    "parentInPageList": true,
@@ -3958,12 +4238,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chi tiết báo lỗi · Đang mở”",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Đang mở”; nằm trong Section chỉ có màn chính GV-BL-010000",
    "goiY": {
     "theoTen": "GV-BL-010000",
     "theoMa": "GV-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "GV-BL-010000",
+    "ganNhat": "GV-BL-010000"
    },
    "manHienThi": "GV-BL-010000",
    "parentInPageList": true,
@@ -3985,12 +4267,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chi tiết báo lỗi · Đã giải quyết”",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Đã giải quyết”; nằm trong Section chỉ có màn chính GV-BL-010000",
    "goiY": {
     "theoTen": "GV-BL-010000",
     "theoMa": "GV-BL-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "GV-BL-010000",
+    "ganNhat": "GV-BL-010000"
    },
    "manHienThi": "GV-BL-010000",
    "parentInPageList": true,
@@ -4012,12 +4296,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thông báo khảo sát mới”",
+   "lyDo": "tên: “Popup thông báo khảo sát mới”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "GV-KS-010000",
     "theoMa": "GV-KS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-KS-010000"
    },
    "manHienThi": "GV-KS-010000",
    "parentInPageList": true,
@@ -4041,7 +4327,9 @@
     "theoTen": "GV-KS-010000",
     "theoMa": "GV-KS-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": null
    },
    "manHienThi": "GV-KS-010000",
    "parentInPageList": true,
@@ -4063,12 +4351,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup xác nhận gửi”",
+   "lyDo": "tên: “Popup xác nhận gửi”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "GV-KS-010010",
     "theoMa": "GV-KS-010010",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-KS-010010"
    },
    "manHienThi": "GV-KS-010010",
    "parentInPageList": true,
@@ -4095,7 +4385,9 @@
     "theoTen": "GV-KS-010010",
     "theoMa": "GV-KS-010010",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-KS-010020"
    },
    "manHienThi": "GV-KS-010010",
    "parentInPageList": true,
@@ -4117,12 +4409,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup câu trả lời của bạn”",
+   "lyDo": "tên: “Popup câu trả lời của bạn”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "GV-KS-010020",
     "theoMa": "GV-KS-010020",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-KS-010020"
    },
    "manHienThi": "GV-KS-010020",
    "parentInPageList": true,
@@ -4144,12 +4438,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup đăng ký khung giờ”",
+   "lyDo": "tên: “Popup đăng ký khung giờ”; nằm trong Section chỉ có màn chính GV-LD-020000",
    "goiY": {
     "theoTen": "GV-LD-020000",
     "theoMa": "GV-LD-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "GV-LD-020000",
+    "ganNhat": "GV-LD-020000"
    },
    "manHienThi": "GV-LD-020000",
    "parentInPageList": true,
@@ -4171,12 +4467,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup Ghi chú theo bài”",
+   "lyDo": "tên: “Popup Ghi chú theo bài”; nằm trong Section chỉ có màn chính GV-LOP-020000",
    "goiY": {
     "theoTen": "GV-LOP-020000",
     "theoMa": "GV-LOP-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "GV-LOP-020000",
+    "ganNhat": "GV-LOP-020000"
    },
    "manHienThi": "GV-LOP-020000",
    "parentInPageList": true,
@@ -4198,12 +4496,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup Thời gian từng phần”",
+   "lyDo": "tên: “Popup Thời gian từng phần”; nằm trong Section chỉ có màn chính GV-LOP-020000",
    "goiY": {
     "theoTen": "GV-LOP-020000",
     "theoMa": "GV-LOP-020000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "GV-LOP-020000",
+    "ganNhat": "GV-LOP-020000"
    },
    "manHienThi": "GV-LOP-020000",
    "parentInPageList": true,
@@ -4230,7 +4530,9 @@
     "theoTen": "GV-LOP-030100",
     "theoMa": "GV-LOP-030100",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LOP-030111"
    },
    "manHienThi": "GV-LOP-030100",
    "parentInPageList": true,
@@ -4257,7 +4559,9 @@
     "theoTen": "GV-LOP-030100",
     "theoMa": "GV-LOP-030120",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LOP-030400"
    },
    "manHienThi": "GV-LOP-030100",
    "parentInPageList": true,
@@ -4279,12 +4583,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup kết thúc buổi học”",
+   "lyDo": "tên: “Popup kết thúc buổi học”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "GV-LOP-030130",
     "theoMa": "GV-LOP-030130",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LOP-030130"
    },
    "manHienThi": "GV-LOP-030130",
    "parentInPageList": true,
@@ -4306,12 +4612,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup hoàn thành buổi học”",
+   "lyDo": "tên: “Popup hoàn thành buổi học”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": "GV-LOP-030140",
     "theoMa": "GV-LOP-030140",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LOP-030140"
    },
    "manHienThi": "GV-LOP-030140",
    "parentInPageList": true,
@@ -4338,7 +4646,9 @@
     "theoTen": "GV-LOP-030150",
     "theoMa": "GV-LOP-030160",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LOP-030160"
    },
    "manHienThi": "GV-LOP-030150",
    "parentInPageList": true,
@@ -4367,7 +4677,9 @@
     "prototype": [
      "GV-LOP-040210"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LOP-040300"
    },
    "manHienThi": "GV-LOP-040200",
    "parentInPageList": true,
@@ -4396,7 +4708,9 @@
     "prototype": [
      "GV-LOP-040201"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LOP-040300"
    },
    "manHienThi": "GV-LOP-040200",
    "parentInPageList": true,
@@ -4423,7 +4737,9 @@
     "theoTen": "GV-LOP-040302",
     "theoMa": "GV-LOP-040300",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LOP-040300"
    },
    "manHienThi": "GV-LOP-040300",
    "parentInPageList": true,
@@ -4450,7 +4766,9 @@
     "theoTen": "GV-LOP-040302",
     "theoMa": "GV-LOP-040310",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LOP-040300"
    },
    "manHienThi": "GV-LOP-040300",
    "parentInPageList": true,
@@ -4487,7 +4805,9 @@
      "GV-LOP-040334",
      "GV-LOP-040335"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LOP-040300"
    },
    "manHienThi": "GV-LOP-040300",
    "parentInPageList": true,
@@ -4518,7 +4838,9 @@
      "GV-LS-010003",
      "GV-LS-010004"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LS-010000"
    },
    "manHienThi": "GV-LS-010000",
    "parentInPageList": true,
@@ -4545,7 +4867,9 @@
     "theoTen": "GV-LS-010010",
     "theoMa": "GV-LS-010010",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LS-010014"
    },
    "manHienThi": "GV-LS-010000",
    "parentInPageList": false,
@@ -4578,7 +4902,9 @@
      "GV-LS-010011",
      "GV-LS-010014"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LS-010011"
    },
    "manHienThi": "GV-LS-010011",
    "parentInPageList": true,
@@ -4608,7 +4934,9 @@
      "GV-LS-010010",
      "GV-LS-010010-DK"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LS-010014"
    },
    "manHienThi": "GV-LS-010000",
    "parentInPageList": false,
@@ -4637,7 +4965,9 @@
     "prototype": [
      "GV-LS-010014"
     ],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "GV-LS-010014"
    },
    "manHienThi": "GV-LS-010014",
    "parentInPageList": true,
@@ -4659,12 +4989,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup thêm tài khoản”",
+   "lyDo": "tên: “Popup thêm tài khoản”; nằm trong Section chỉ có màn chính MST-TK-010000",
    "goiY": {
     "theoTen": "MST-TK-010000",
     "theoMa": "MST-TK-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "MST-TK-010000",
+    "ganNhat": "MST-TK-010000"
    },
    "manHienThi": "MST-TK-010000",
    "parentInPageList": true,
@@ -4686,12 +5018,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup xác nhận xoá”",
+   "lyDo": "tên: “Popup xác nhận xoá”; nằm trong Section chỉ có màn chính MST-TK-010000",
    "goiY": {
     "theoTen": "MST-TK-010000",
     "theoMa": "MST-TK-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "MST-TK-010000",
+    "ganNhat": "MST-TK-010000"
    },
    "manHienThi": "MST-TK-010000",
    "parentInPageList": true,
@@ -4713,12 +5047,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup đặt lại mật khẩu”",
+   "lyDo": "tên: “Popup đặt lại mật khẩu”; nằm trong Section chỉ có màn chính MST-TK-010000",
    "goiY": {
     "theoTen": "MST-TK-010000",
     "theoMa": "MST-TK-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "MST-TK-010000",
+    "ganNhat": "MST-TK-010000"
    },
    "manHienThi": "MST-TK-010000",
    "parentInPageList": true,
@@ -4736,19 +5072,21 @@
     514.1799926757812
    ],
    "loai": "popup",
-   "parent": null,
-   "tinCay": "thap",
+   "parent": "MST-TK-020000",
+   "tinCay": "trung-binh",
    "tinCayLoai": "cao",
-   "tinCayCha": "thap",
-   "lyDo": "tên: “Popup chọn màu giao diện”",
+   "tinCayCha": "trung-binh",
+   "lyDo": "tên: “Popup chọn màu giao diện”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": null,
     "theoMa": null,
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "MST-TK-020000"
    },
-   "manHienThi": null,
-   "parentInPageList": false,
+   "manHienThi": "MST-TK-020000",
+   "parentInPageList": true,
    "hasDark": false,
    "canDuyet": true
   },
@@ -4772,7 +5110,9 @@
     "theoTen": "SP-LHP-010000",
     "theoMa": "SP-LHP-010000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": null,
+    "ganNhat": "SP-LHP-020000"
    },
    "manHienThi": "SP-LHP-010000",
    "parentInPageList": true,
@@ -4794,12 +5134,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Dropdown thời gian (đang mở)”",
+   "lyDo": "tên: “Dropdown thời gian (đang mở)”; nằm trong Section chỉ có màn chính SP-TASK-030000",
    "goiY": {
     "theoTen": "SP-TASK-030000",
     "theoMa": "SP-TASK-030000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "SP-TASK-030000",
+    "ganNhat": "SP-TASK-030000"
    },
    "manHienThi": "SP-TASK-030000",
    "parentInPageList": true,
@@ -4821,12 +5163,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Dropdown ca (đang mở)”",
+   "lyDo": "tên: “Dropdown ca (đang mở)”; nằm trong Section chỉ có màn chính SP-TASK-030000",
    "goiY": {
     "theoTen": "SP-TASK-030000",
     "theoMa": "SP-TASK-030000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "SP-TASK-030000",
+    "ganNhat": "SP-TASK-030000"
    },
    "manHienThi": "SP-TASK-030000",
    "parentInPageList": true,
@@ -4848,12 +5192,14 @@
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Dialog người phụ trách”",
+   "lyDo": "tên: “Dialog người phụ trách”; nằm trong Section chỉ có màn chính SP-TASK-030000",
    "goiY": {
     "theoTen": "SP-TASK-030000",
     "theoMa": "SP-TASK-030000",
     "prototype": [],
-    "namTrong": null
+    "namTrong": null,
+    "theoSection": "SP-TASK-030000",
+    "ganNhat": "SP-TASK-030000"
    },
    "manHienThi": "SP-TASK-030000",
    "parentInPageList": true,

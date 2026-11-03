@@ -22,7 +22,7 @@ Requirement: `teacher_role/teaching_schedule/teaching_schedule_requirements.md` 
 
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
-| `GV-LD-010000` | Xem theo lớp | Trạng thái | — | — | — | — | QC | thấp |
+| `GV-LD-010000` | Xem theo lớp | Trạng thái | GV-LD-020000 | GV-LD-020000 | — | `/lich-day/quan-ly-dang-ky-lich?state=GV-LD-010000` | QC | trung bình |
 | `GV-LD-020010` | Popup đăng ký khung giờ | Popup | GV-LD-020000 | GV-LD-020000 | — | `/lich-day/quan-ly-dang-ky-lich?popup=GV-LD-020010` | QC | cao |
 
 ## 4. Khu vực và item
@@ -169,7 +169,6 @@ Frame: `GV-LD-020000` · Nguồn nội dung: Figma
 
 - Chưa thấy trên Figma (16): `A01.02`, `A01.03`, `A01.04`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.15`, `A02.01`, `A02.03`, `A02.05`, `A02.06`
 - Chưa sync (6): `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`
-- Popup chưa có màn cha (1): `GV-LD-010000`
 - Phân loại cần design duyệt (1): `GV-LD-010000`
 - Thiếu prototype link đi vào (2): `GV-LD-010000`, `GV-LD-020010`
 

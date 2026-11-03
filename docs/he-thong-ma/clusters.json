@@ -22,7 +22,7 @@
   {
    "name": "account-management",
    "title": "Quản lý tài khoản (Master)",
-   "screens": "^(MST\\-TK\\-010000|MST\\-TK\\-010010|MST\\-TK\\-010020|MST\\-TK\\-010030|MST\\-TK\\-020000)$",
+   "screens": "^(MST\\-TK\\-010000|MST\\-TK\\-010010|MST\\-TK\\-010020|MST\\-TK\\-010030|MST\\-TK\\-020000|PRO\\-GD\\-010010)$",
    "requirements": [
     "account_management/account_management.md"
    ],
@@ -846,14 +846,6 @@
    "screens": "^(GV\\-TC\\-010000|GV\\-TC\\-010001|GV\\-TC\\-010002)$",
    "requirements": [],
    "prefix_figma": "GV-TC-01",
-   "auto": true
-  },
-  {
-   "name": "chua-co-req-pro-gd-01",
-   "title": "PRO-GD-01xx (chưa có requirement)",
-   "screens": "^(PRO\\-GD\\-010010)$",
-   "requirements": [],
-   "prefix_figma": "PRO-GD-01",
    "auto": true
   },
   {

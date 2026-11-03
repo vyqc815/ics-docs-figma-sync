@@ -173,7 +173,7 @@
    "kind": "popup",
    "parent": "CD-BL-010000",
    "shownOn": "CD-BL-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5300:51175",
@@ -265,7 +265,7 @@
    "kind": "popup",
    "parent": "CD-BL-010040",
    "shownOn": "CD-BL-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5300:27142",
@@ -339,7 +339,7 @@
    "kind": "popup",
    "parent": "CH-BL-010000",
    "shownOn": "CH-BL-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5300:51109",
@@ -431,7 +431,7 @@
    "kind": "popup",
    "parent": "CH-BL-010040",
    "shownOn": "CH-BL-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5300:26756",
@@ -454,7 +454,7 @@
    "kind": "popup",
    "parent": "CH-BL-010040",
    "shownOn": "CH-BL-010000",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5371:40303",
@@ -2270,11 +2270,6 @@
    "text": "popup “Báo lỗi / Popup gửi báo lỗi · Đối tượng Khác” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-BL-010011",
-   "text": "loại popup, màn cha CD-BL-010000 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "CD-BL-010011",
    "text": "không có prototype link nào đi vào frame"
@@ -2320,11 +2315,6 @@
    "text": "popup “Báo lỗi / Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-BL-010050",
-   "text": "loại popup, màn cha CD-BL-010040 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "CD-BL-010050",
    "text": "không có prototype link nào đi vào frame"
@@ -2343,11 +2333,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "CH-BL-010011",
    "text": "popup “Báo lỗi / Popup gửi báo lỗi · Đối tượng Khác” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CH-BL-010011",
-   "text": "loại popup, màn cha CH-BL-010000 — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",
@@ -2395,11 +2380,6 @@
    "text": "popup “Báo lỗi / Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CH-BL-010050",
-   "text": "loại popup, màn cha CH-BL-010040 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "CH-BL-010050",
    "text": "không có prototype link nào đi vào frame"
@@ -2408,11 +2388,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "CH-BL-010070",
    "text": "popup “Báo lỗi / Popup nhắc báo lỗi chưa xử lý (mỗi ngày)” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CH-BL-010070",
-   "text": "loại popup, màn cha CH-BL-010040 — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",

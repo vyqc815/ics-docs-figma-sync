@@ -25,7 +25,7 @@ Requirement: `management_requirement/class_management/class_detail_processes_req
 | `ADM-LOP-020604` | Trống | Trạng thái | ADM-LOP-020600 | ADM-LOP-020600 | — | `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020604` | Figma | trung bình |
 | `ADM-LOP-020610` | Popup thêm tiêu chuẩn | Popup | ADM-LOP-020600 | ADM-LOP-020600 | — | `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?popup=ADM-LOP-020610` | Figma | cao |
 | `ADM-LOP-020611` | Xem trước | Trạng thái | ADM-LOP-020610 | ADM-LOP-020600 | ADM-LOP-020610 | `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020611` | Figma | trung bình |
-| `ADM-LOP-020612` | Xem tiêu chí | Trạng thái | ADM-LOP-020611 | ADM-LOP-020600 | ADM-LOP-020611 | `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020612` | Figma | thấp |
+| `ADM-LOP-020612` | Xem tiêu chí | Trạng thái | ADM-LOP-020611 | ADM-LOP-020600 | ADM-LOP-020611 | `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020612` | Figma | trung bình |
 | `ADM-LOP-020704` | Trống | Trạng thái | ADM-LOP-020700 | ADM-LOP-020700 | — | `/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020704` | Figma | trung bình |
 | `ADM-LOP-020710` | Popup thêm quy trình | Popup | ADM-LOP-020700 | ADM-LOP-020700 | — | `/chi-tiet-lop-hoc/quy-trinh-lop?popup=ADM-LOP-020710` | Figma | cao |
 | `ADM-LOP-020711` | Xem trước | Trạng thái | ADM-LOP-020710 | ADM-LOP-020700 | ADM-LOP-020710 | `/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020711` | Figma | trung bình |
