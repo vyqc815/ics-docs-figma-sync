@@ -101,7 +101,7 @@
    "name": "tong-quan",
    "title": "Chi tiết lớp học / Tổng quan",
    "kind": "man-chinh",
-   "parent": "ADM-LOP-020300",
+   "parent": "ADM-LOP-020101",
    "shownOn": "ADM-LOP-020100",
    "kindConfidence": "trung-binh",
    "source": "qc",
@@ -122,13 +122,35 @@
     "M-CDO2.A04",
     "M-CDO2.A05",
     "M-CDO2.A06",
-    "M-CDO2.A07",
     "M-CDO2.A08",
     "M-CDO2.A09",
     "M-CDO2.A10",
     "M-CDO2.A11",
     "M-CDO2.A12",
     "M-CDO2.F01"
+   ]
+  },
+  "ADM-LOP-020110": {
+   "id": "ADM-LOP-020110",
+   "name": "popup-lich-su-ghi-chu",
+   "title": "Lớp học / Tổng quan / Popup lịch sử ghi chú",
+   "kind": "popup",
+   "parent": "ADM-LOP-020100",
+   "shownOn": "ADM-LOP-020100",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3348:62669",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop-hoc/tong-quan?popup=ADM-LOP-020110",
+   "dark": "ADM-LOP-020110-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-CDO2.A07"
    ]
   }
  },
@@ -1239,10 +1261,10 @@
    "name": "ghi-chu-cai-dat-va-lich-su",
    "title": "Ghi chú cài đặt và lịch sử",
    "screens": [
-    "adm-lop-020100"
+    "adm-lop-020110"
    ],
    "screensGuessed": [
-    "ADM-LOP-020100"
+    "ADM-LOP-020110"
    ],
    "source": "tu-dien",
    "content": "qc",
@@ -1260,10 +1282,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Icon cạnh tên học viên đang chọn"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDO2.A07.02",
@@ -1275,10 +1295,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Popup Lịch sử ghi chú"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDO2.A07.03",
@@ -1293,10 +1311,8 @@
       "M-CDO2.TC22",
       "M-CDO2.TC46"
      ],
-     "missingTerms": [
-      "Copy"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDO2.A07.04",
@@ -1308,10 +1324,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Ghi chú bất thường"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
    ]
   },
@@ -3526,6 +3540,16 @@
   }
  ],
  "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020110",
+   "text": "popup “Lớp học / Tổng quan / Popup lịch sử ghi chú” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-020110",
+   "text": "không có prototype link nào đi vào frame"
+  },
   {
    "kind": "req-chua-co-testcase",
    "ref": "M-CDO2.EX06",

@@ -7,8 +7,8 @@ Trước khi sửa, design xem requirement còn đúng không: nhiều ghi chú 
 | Loại | Số việc |
 |---|---:|
 | Figma khác requirement | 17 |
-| Chưa có thiết kế | 64 |
-| Khu vực cần bổ sung | 16 |
+| Chưa có thiết kế | 60 |
+| Khu vực cần bổ sung | 17 |
 
 ## Bài tập về nhà và Kiểm tra (CD-KH-06xx)
 
@@ -206,8 +206,5 @@ Cụm `test` · MD: `docs/he-thong-ma/test.md`
 | FIX-090 | [CD-KH-030300](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242) | `A01` Danh sách bài kiểm tra | Figma khác requirement | Khác Figma CD-KH-030300: card chưa có menu `⋮` để xoá bài. | ☐ |
 | FIX-091 | [CD-KH-030300](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242) | `A01` Danh sách bài kiểm tra · `A01.06` | Chưa có thiết kế | Thêm `Xoá bài`: Menu `⋮` trên card có `Xoá` (popup xác nhận `Xoá bài kiểm tra "<tên>"? Bộ câu hỏi của bài cũng sẽ bị xoá.`, nút `Huỷ` / `Xoá`); xoá mềm (**UI cần bổ sung**). | ☐ |
 | FIX-092 | [CD-KH-030310](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1496-16304) | `A02` Popup bài kiểm tra — Tab Thông tin | Figma khác requirement | Khác Figma CD-KH-030310: ô `Số câu hỏi` đang vẽ như ô nhập, requirement là chỉ đọc; ô `Tổng điểm` trên Figma cần bỏ. Dòng Lưu ý ghi `Số câu hỏi và tổng điểm có thể được cập nhật`. | ☐ |
-| FIX-093 | [CD-KH-030346](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815), [CD-KH-030350](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268) | `A03` Popup bài kiểm tra — Tab Bộ Câu Hỏi | Figma khác requirement | Khác Figma: bộ câu hỏi đang vẽ thành màn riêng `CD-KH-030340` (mở từ `>`); requirement đặt trong tab `Bộ Câu Hỏi` của popup (**UI cần bổ sung**). | ☐ |
-| FIX-094 | [CD-KH-030346](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815), [CD-KH-030350](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268) | `A03` Popup bài kiểm tra — Tab Bộ Câu Hỏi · `A03.01` | Chưa có thiết kế | Thêm `Nút thao tác`: `Import Excel`, `Export Excel`, `+ Thêm câu hỏi`, `Generate` (Tạo câu hỏi bằng AI), `Soát lỗi bằng AI`. | ☐ |
-| FIX-095 | [CD-KH-030346](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815), [CD-KH-030350](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268) | `A03` Popup bài kiểm tra — Tab Bộ Câu Hỏi · `A03.02` | Chưa có thiết kế | Thêm `Thẻ tổng quan`: `Tổng số câu`, `Thời gian làm bài` (từ tab Thông tin), `Cơ cấu theo dạng câu`; tag `Thang 10`. | ☐ |
-| FIX-096 | [CD-KH-030346](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815), [CD-KH-030350](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268) | `A03` Popup bài kiểm tra — Tab Bộ Câu Hỏi · `A03.03` | Chưa có thiết kế | Thêm `Bảng câu hỏi`: Cột `STT`, `Bài tập (câu hỏi)`, `Loại câu`, `Đáp án đúng`, `Kiến thức / Kỹ năng`, `Điểm`, `⋮`; tìm kiếm, lọc `Loại câu`, `Kiến thức / Kỹ năng`; câu hỏi con mở / thu. | ☐ |
-| FIX-097 | [CD-KH-030346](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815), [CD-KH-030350](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268) | `A03` Popup bài kiểm tra — Tab Bộ Câu Hỏi · `A03.04` | Chưa có thiết kế | Thêm `Thêm / sửa câu, Import / Export, Generate, Soát lỗi`: Theo `homework-test.md`: soạn câu bắt buộc Số câu, Loại câu, Kiến thức / Kỹ năng; Excel cùng cột bảng; Generate không giới hạn số câu, chọn dòng rồi thêm; câu AI có tag `AI`. | ☐ |
+| FIX-093 | [CD-KH-030300](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242) | `A03` Popup bài kiểm tra — Tab Bộ Câu Hỏi | Figma khác requirement | Khác Figma: bộ câu hỏi đang vẽ thành màn riêng `CD-KH-030340` (mở từ `>`); requirement đặt trong tab `Bộ Câu Hỏi` của popup (**UI cần bổ sung**). | ☐ |
+| FIX-094 | [CD-KH-030300](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242) | `A03` Popup bài kiểm tra — Tab Bộ Câu Hỏi | Khu vực cần bổ sung | Requirement ghi khu vực này "UI cần bổ sung"; vẽ theo bảng item của khu vực. | ☐ |

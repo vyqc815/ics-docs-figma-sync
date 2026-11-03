@@ -117,7 +117,7 @@
    "kind": "trang-thai",
    "parent": "CD-CDO-010010",
    "shownOn": "CD-CDO-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "1901:3819",
@@ -1451,11 +1451,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "CD-CDO-010012",
    "text": "trang-thai “Quản lý cấp độ / Popup kích hoạt công khai / Điền sai” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-CDO-010012",
-   "text": "loại trang-thai, màn cha CD-CDO-010010 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",

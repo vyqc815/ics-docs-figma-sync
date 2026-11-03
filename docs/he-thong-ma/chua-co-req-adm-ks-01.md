@@ -17,7 +17,7 @@
 
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
-| `ADM-KS-010030` | Popup xem trước | Popup | ADM-KS-010020 | ADM-KS-010020 | — | `/khao-sat/tao-khao-sat/cau-hoi-tu-luan-danh-gia?popup=ADM-KS-010030` | Figma | thấp |
+| `ADM-KS-010030` | Popup xem trước | Popup | ADM-KS-010020 | ADM-KS-010020 | — | `/khao-sat/tao-khao-sat/cau-hoi-tu-luan-danh-gia?popup=ADM-KS-010030` | Figma | cao |
 
 ## 4. Khu vực và item
 
@@ -67,7 +67,6 @@ Frame: `ADM-KS-010010`, `ADM-KS-010020` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - Frame Figma chưa có requirement (3): `ADM-KS-010010`, `ADM-KS-010020`, `ADM-KS-010030`
-- Phân loại cần design duyệt (1): `ADM-KS-010030`
 - Thiếu prototype link đi vào (1): `ADM-KS-010030`
 
 ## 9. Chi tiết dựng

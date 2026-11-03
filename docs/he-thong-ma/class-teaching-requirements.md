@@ -41,7 +41,7 @@ Requirement: `teacher_role/class/class_teaching_requirements.md` — [Giáo viê
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
 | `GV-LOP-030120` | Popup chọn lịch dạy | Popup | GV-LOP-030100 | GV-LOP-030100 | — | `/chi-tiet-lop/bai-hoc/buoi-hoc?popup=GV-LOP-030120` | Figma | cao |
-| `GV-LOP-030121` | Popup bắt đầu buổi học | Popup | GV-LOP-030100 | GV-LOP-030100 | — | `/chi-tiet-lop/bai-hoc/buoi-hoc?popup=GV-LOP-030121` | Figma | thấp |
+| `GV-LOP-030121` | Popup bắt đầu buổi học | Popup | GV-LOP-030100 | GV-LOP-030100 | — | `/chi-tiet-lop/bai-hoc/buoi-hoc?popup=GV-LOP-030121` | Figma | cao |
 | `GV-LOP-030401` | Tài nguyên · Bị khoá | Trạng thái | GV-LOP-030400 | GV-LOP-030400 | — | `/chi-tiet-lop/bai-hoc/tai-nguyen?state=GV-LOP-030401` | Figma | trung bình |
 | `GV-LOP-040110` | BTVN · Bài học chưa mở | Trạng thái | GV-LOP-040100 | GV-LOP-040100 | — | `/chi-tiet-lop/bai-tap-va-kiem-tra/btvn?state=GV-LOP-040110` | Figma | trung bình |
 | `GV-LOP-040201` | Kiểm tra · Giáo viên không phụ trách chính (chỉ xem) | Trạng thái | GV-LOP-040211 | GV-LOP-040200 | GV-LOP-040211 | `/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?state=GV-LOP-040201` | Figma | thấp |
@@ -49,7 +49,7 @@ Requirement: `teacher_role/class/class_teaching_requirements.md` — [Giáo viê
 | `GV-LOP-040205` | Kiểm tra · Vừa giao | Trạng thái | GV-LOP-040204 | GV-LOP-040200 | — | `/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?state=GV-LOP-040205` | Figma | thấp |
 | `GV-LOP-040210` | Kiểm tra · Chưa giao (xem trước đề) | Trạng thái | GV-LOP-040200 | GV-LOP-040200 | GV-LOP-040200 | `/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?state=GV-LOP-040210` | Figma | trung bình |
 | `GV-LOP-040211` | Popup Giao bài | Popup | GV-LOP-040210 | GV-LOP-040200 | GV-LOP-040210 | `/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?popup=GV-LOP-040211` | Figma | cao |
-| `GV-LOP-040221` | Popup Thu hồi | Popup | GV-LOP-040201 | GV-LOP-040200 | GV-LOP-040201 | `/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?popup=GV-LOP-040221` | Figma | thấp |
+| `GV-LOP-040221` | Popup Thu hồi | Popup | GV-LOP-040201 | GV-LOP-040200 | GV-LOP-040201 | `/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?popup=GV-LOP-040221` | Figma | cao |
 | `GV-LOP-040320` | Màn chấm bài · Tổng quan chấm bài | Trạng thái | GV-LOP-040100 | GV-LOP-040100 | GV-LOP-040100, GV-LOP-040200 | `/chi-tiet-lop/bai-tap-va-kiem-tra/btvn?state=GV-LOP-040320` | Figma | thấp |
 | `GV-LOP-050100` | Trống | Trạng thái | GV-LOP-050110 | GV-LOP-050110 | — | `/chi-tiet-lop/tu-hoc/co-du-lieu?state=GV-LOP-050100` | QC | trung bình |
 
@@ -608,7 +608,7 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 - Chưa sync (103): `A02.01`, `A02.02`, `A02.03`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A11.01`, `A11.02`, `A11.03`, `A11.04`, `A11.05`, `A13.01`, `A13.02`, `A13.03`, `A13.04`, `A13.05`, `A13.06`, `A13.07`, `A15.01`, `A15.02`, `A15.03`, `A15.04`, `A15.05`, `A15.06`, `A15.07`, `A16.01`, `A16.02`, `A16.03`, `A16.04`, `A17.01`, `A17.02`, `A19.01`, `A19.02`, `A19.03`, `A19.04`, `A19.05`, `A20.01`, `A20.02`, `A20.03`, `A20.04`, `A20.05`, `A20.06`, `A21.01`, `A21.02`, `A21.03`, `A21.04`, `A21.05`, `A21.06`, `A21.07`, `A21.08`, `A21.09`, `A21.10`, `A21.11`, `A21.12`, `A21.13`, `A22.01`, `A22.02`, `A22.03`, `A22.04`, `A22.05`, `A22.06`, `A23.01`, `A23.02`, `A23.03`, `A23.04`, `A24.01`, `A24.02`, `A24.03`, `A24.04`, `A25.01`, `A25.02`, `A25.03`, `A25.04`, `A27.01`, `A27.02`, `A27.03`, `A27.04`
 - Frame Figma chưa có requirement (11): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040211`, `GV-LOP-040221`, `GV-LOP-040320`
 - Thiếu prototype link đi vào (7): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-050100`
-- Phân loại cần design duyệt (10): `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040221`, `GV-LOP-040320`, `GV-LOP-050100`
+- Phân loại cần design duyệt (8): `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040320`, `GV-LOP-050100`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`
 - REQ/EX chưa có testcase (5): `REQ07`, `EX06`, `EX11`, `EX15`, `EX16`
 

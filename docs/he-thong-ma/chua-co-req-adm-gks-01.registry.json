@@ -34,7 +34,7 @@
    "kind": "popup",
    "parent": "ADM-GKS-010020",
    "shownOn": "ADM-GKS-010020",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "4273:153857",
@@ -55,7 +55,7 @@
    "kind": "popup",
    "parent": "ADM-GKS-010020",
    "shownOn": "ADM-GKS-010020",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "4273:153940",
@@ -793,11 +793,6 @@
    "text": "popup “Khảo sát / Giao khảo sát / Popup kết quả cá nhân” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-GKS-010030",
-   "text": "loại popup, màn cha ADM-GKS-010020 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-GKS-010030",
    "text": "không có prototype link nào đi vào frame"
@@ -806,11 +801,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-GKS-010040",
    "text": "popup “Khảo sát / Giao khảo sát / Popup chọn cuộc khảo sát” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-GKS-010040",
-   "text": "loại popup, màn cha ADM-GKS-010020 — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",

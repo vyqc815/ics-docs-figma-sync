@@ -25,7 +25,7 @@ Requirement: `management_requirement/class_management/class_detail_schedule_requ
 |---|---|---|---|---|---|---|---|---|
 | `ADM-LOP-040510` | Popup thêm lịch dạy cố định | Popup | ADM-LOP-040500 | ADM-LOP-040500 | ADM-LOP-040500 | `/lop-hoc/cai-dat/lich-day?popup=ADM-LOP-040510` | Figma | cao |
 | `ADM-LOP-040520` | Popup thêm lịch dạy linh hoạt | Popup | ADM-LOP-040500 | ADM-LOP-040500 | ADM-LOP-040500 | `/lop-hoc/cai-dat/lich-day?popup=ADM-LOP-040520` | Figma | cao |
-| `ADM-LOP-040521` | Trùng lịch cố định | Trạng thái | ADM-LOP-040520 | ADM-LOP-040500 | — | `/lop-hoc/cai-dat/lich-day?state=ADM-LOP-040521` | Figma | trung bình |
+| `ADM-LOP-040521` | Trùng lịch cố định | Trạng thái | ADM-LOP-040520 | ADM-LOP-040500 | — | `/lop-hoc/cai-dat/lich-day?state=ADM-LOP-040521` | Figma | cao |
 
 ## 4. Khu vực và item
 
@@ -235,7 +235,6 @@ Frame: `ADM-LOP-040500` · Nguồn nội dung: Figma
 - Chưa khớp tự động (27): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A03.01`, `A03.03`, `A03.04`, `A03.06`, `A05.01`, `A05.02`, `A05.03`, `A05.05`, `A05.06`, `A05.08`, `A06.02`, `A06.04`, `A06.05`, `A07.01`, `A07.02`, `A07.03`, `A07.05`, `A08.01`, `A08.03`, `A08.04`
 - Chưa sync (5): `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`
 - Frame Figma chưa có requirement (3): `ADM-LOP-040510`, `ADM-LOP-040520`, `ADM-LOP-040521`
-- Phân loại cần design duyệt (1): `ADM-LOP-040521`
 - Thiếu prototype link đi vào (1): `ADM-LOP-040521`
 - Testcase không trỏ REQ (3): `TC44`, `TC45`, `TC46`
 - REQ/EX chưa có testcase (4): `REQ08`, `REQ09`, `EX01`, `EX09`

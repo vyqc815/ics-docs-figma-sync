@@ -73,7 +73,7 @@
    "name": "dang-danh-sach",
    "title": "Lịch họp / Dạng danh sách",
    "kind": "man-chinh",
-   "parent": null,
+   "parent": "SP-LHP-010001",
    "shownOn": "SP-LHP-010000",
    "kindConfidence": "trung-binh",
    "source": "qc",
@@ -90,9 +90,77 @@
    "regions": [
     "MS-MS.A01",
     "MS-MS.A02",
-    "MS-MS.A04",
     "MS-MS.F01",
     "MS-MS.F02"
+   ]
+  },
+  "SP-LHP-010001": {
+   "id": "SP-LHP-010001",
+   "name": "dropdown-loc-nguoi-tham-gia",
+   "title": "Lịch họp / Dropdown lọc · Người tham gia",
+   "kind": "dropdown",
+   "parent": "SP-LHP-010000",
+   "shownOn": "SP-LHP-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "6935:383654",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lich-hop/dropdown-loc-nguoi-tham-gia",
+   "link": "/lich-hop/dang-danh-sach?popup=SP-LHP-010001",
+   "dark": "SP-LHP-010001-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "MS-MS.A04"
+   ]
+  },
+  "SP-LHP-010002": {
+   "id": "SP-LHP-010002",
+   "name": "dropdown-loc-trang-thai",
+   "title": "Lịch họp / Dropdown lọc · Trạng thái",
+   "kind": "dropdown",
+   "parent": "SP-LHP-010001",
+   "shownOn": "SP-LHP-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "6935:384441",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lich-hop/dropdown-loc-trang-thai",
+   "link": "/lich-hop/dang-danh-sach?popup=SP-LHP-010002",
+   "dark": "SP-LHP-010002-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "MS-MS.A04"
+   ]
+  },
+  "SP-LHP-010003": {
+   "id": "SP-LHP-010003",
+   "name": "dropdown-loc-thoi-gian",
+   "title": "Lịch họp / Dropdown lọc · Thời gian",
+   "kind": "dropdown",
+   "parent": "SP-LHP-010002",
+   "shownOn": "SP-LHP-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "6935:385207",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lich-hop/dropdown-loc-thoi-gian",
+   "link": "/lich-hop/dang-danh-sach?popup=SP-LHP-010003",
+   "dark": "SP-LHP-010003-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "MS-MS.A04"
    ]
   },
   "SP-LHP-010010": {
@@ -140,7 +208,6 @@
    "regions": [
     "MS-MS.A01",
     "MS-MS.A02",
-    "MS-MS.A04",
     "MS-MS.F01",
     "MS-MS.F02"
    ]
@@ -935,12 +1002,14 @@
    "name": "trang-4-dropdown-bo-loc",
    "title": "Trang 4: Dropdown bộ lọc",
    "screens": [
-    "sp-lhp-010000",
-    "sp-lhp-020000"
+    "sp-lhp-010001",
+    "sp-lhp-010002",
+    "sp-lhp-010003"
    ],
    "screensGuessed": [
-    "SP-LHP-010000",
-    "SP-LHP-020000"
+    "SP-LHP-010001",
+    "SP-LHP-010002",
+    "SP-LHP-010003"
    ],
    "source": "tu-dien",
    "content": "qc",
@@ -1714,6 +1783,31 @@
   }
  ],
  "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "SP-LHP-010001",
+   "text": "dropdown “Lịch họp / Dropdown lọc · Người tham gia” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "SP-LHP-010002",
+   "text": "dropdown “Lịch họp / Dropdown lọc · Trạng thái” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "SP-LHP-010002",
+   "text": "loại dropdown, màn cha SP-LHP-010001 — tin cậy thap"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "SP-LHP-010003",
+   "text": "dropdown “Lịch họp / Dropdown lọc · Thời gian” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "SP-LHP-010003",
+   "text": "loại dropdown, màn cha SP-LHP-010002 — tin cậy thap"
+  },
   {
    "kind": "figma-chua-co-requirement",
    "ref": "SP-LHP-010010",

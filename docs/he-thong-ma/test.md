@@ -24,8 +24,6 @@ Requirement: `course_management/semester/test/test.md` — Học Kỳ - Tab Ki�
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
 | `CD-KH-030310` | Popup cấu hình bài kiểm tra | Popup | CD-KH-030300 | CD-KH-030300 | CD-KH-030300 | `/hoc-ky/kiem-tra?popup=CD-KH-030310` | QC | cao |
-| `CD-KH-030346` | Generate · Lỗi | Trạng thái | CD-KH-030300 | CD-KH-030300 | — | `/hoc-ky/kiem-tra?state=CD-KH-030346` | Figma | thấp |
-| `CD-KH-030350` | Generate · Lỗi (tab Chọn kiến thức & kỹ năng) | Trạng thái | CD-KH-030300 | CD-KH-030300 | — | `/hoc-ky/kiem-tra?state=CD-KH-030350` | Figma | trung bình |
 
 ## 4. Khu vực và item
 
@@ -60,14 +58,14 @@ Frame: `CD-KH-030310` · Nguồn nội dung: QC
 
 ### `A03` Popup bài kiểm tra — Tab Bộ Câu Hỏi
 
-Frame: `CD-KH-030346`, `CD-KH-030350` (tool đoán:CD-KH-030346, CD-KH-030350) · Nguồn nội dung: QC
+Frame: `CD-KH-030300` (tool đoán:CD-KH-030300) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | nut-thao-tac |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A03.02` | the-tong-quan |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A03.03` | bang-cau-hoi |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A03.04` | them-sua-cau-import-export-generate-soat |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A03.01` | nut-thao-tac |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | the-tong-quan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.03` | bang-cau-hoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | them-sua-cau-import-export-generate-soat |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Toast phản hồi CRUD
 
@@ -149,10 +147,7 @@ Frame: `CD-KH-030300` · Nguồn nội dung: Figma
 - `A01` Khác Figma CD-KH-030300: card chưa có menu `⋮` để xoá bài.
 - `A02` Khác Figma CD-KH-030310: ô `Số câu hỏi` đang vẽ như ô nhập, requirement là chỉ đọc; ô `Tổng điểm` trên Figma cần bỏ. Dòng Lưu ý ghi `Số câu hỏi và tổng điểm có thể được cập nhật`.
 - `A03` Khác Figma: bộ câu hỏi đang vẽ thành màn riêng `CD-KH-030340` (mở từ `>`); requirement đặt trong tab `Bộ Câu Hỏi` của popup (**UI cần bổ sung**).
-- Chưa khớp tự động (6): `A01.01`, `A01.03`, `A01.05`, `A01.07`, `A04.01`, `A04.02`
-- Frame Figma chưa có requirement (2): `CD-KH-030346`, `CD-KH-030350`
-- Phân loại cần design duyệt (2): `CD-KH-030346`, `CD-KH-030350`
-- Thiếu prototype link đi vào (2): `CD-KH-030346`, `CD-KH-030350`
+- Chưa khớp tự động (10): `A01.01`, `A01.03`, `A01.05`, `A01.07`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A04.01`, `A04.02`
 - Testcase không trỏ REQ (1): `TTC01`
 
 ## 9. Chi tiết dựng

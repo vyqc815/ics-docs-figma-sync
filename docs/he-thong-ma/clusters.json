@@ -40,7 +40,7 @@
   {
    "name": "overview",
    "title": "[Phụ trách lớp] Trang chủ — Thống kê tổng quan",
-   "screens": "^(CH\\-TC\\-010000|CH\\-TC\\-010001)$",
+   "screens": "^(CH\\-TC\\-010000)$",
    "requirements": [
     "class_handler_support/overview/overview.md"
    ],
@@ -49,7 +49,7 @@
   {
    "name": "process",
    "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác",
-   "screens": "^(SP\\-TASK\\-010000|SP\\-TASK\\-020000|SP\\-TASK\\-030000|SP\\-TASK\\-030002|SP\\-TASK\\-030003|SP\\-TASK\\-030004|SP\\-TASK\\-030010)$",
+   "screens": "^(SP\\-TASK\\-010000|SP\\-TASK\\-010001|SP\\-TASK\\-020000|SP\\-TASK\\-020001|SP\\-TASK\\-030000|SP\\-TASK\\-030001|SP\\-TASK\\-030002|SP\\-TASK\\-030003|SP\\-TASK\\-030004|SP\\-TASK\\-030010)$",
    "requirements": [
     "class_handler_support/process/process.md"
    ],
@@ -121,7 +121,7 @@
   {
    "name": "test",
    "title": "Học Kỳ - Tab Kiểm tra",
-   "screens": "^(CD\\-KH\\-030300|CD\\-KH\\-030310|CD\\-KH\\-030346|CD\\-KH\\-030350)$",
+   "screens": "^(CD\\-KH\\-030300|CD\\-KH\\-030310)$",
    "requirements": [
     "course_management/semester/test/test.md"
    ],
@@ -274,7 +274,7 @@
   {
    "name": "class-detail-overview-requirements",
    "title": "Chi tiết lớp học — Menu Tổng quan",
-   "screens": "^(ADM\\-LOP\\-020100)$",
+   "screens": "^(ADM\\-LOP\\-020100|ADM\\-LOP\\-020110)$",
    "requirements": [
     "management_requirement/class_management/class_detail_overview_requirements.md"
    ],
@@ -391,7 +391,7 @@
   {
    "name": "meeting-schedule",
    "title": "[Phụ trách lớp, Admin] Lịch Họp",
-   "screens": "^(SP\\-LHP\\-010000|SP\\-LHP\\-010010|SP\\-LHP\\-020000)$",
+   "screens": "^(SP\\-LHP\\-010000|SP\\-LHP\\-010001|SP\\-LHP\\-010002|SP\\-LHP\\-010003|SP\\-LHP\\-010010|SP\\-LHP\\-020000)$",
    "requirements": [
     "meeting_schedule/meeting_schedule.md"
    ],
@@ -571,9 +571,17 @@
   {
    "name": "chua-co-req-adm-gc-01",
    "title": "ADM-GC-01xx (chưa có requirement)",
-   "screens": "^(ADM\\-GC\\-010000|ADM\\-GC\\-010001|ADM\\-GC\\-010010|ADM\\-GC\\-010020)$",
+   "screens": "^(ADM\\-GC\\-010000)$",
    "requirements": [],
    "prefix_figma": "ADM-GC-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-gft-01",
+   "title": "ADM-GFT-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-GFT\\-010000|ADM\\-GFT\\-010001|ADM\\-GFT\\-010010|ADM\\-GFT\\-010020)$",
+   "requirements": [],
+   "prefix_figma": "ADM-GFT-01",
    "auto": true
   },
   {
@@ -683,7 +691,7 @@
   {
    "name": "chua-co-req-adm-lop-02",
    "title": "ADM-LOP-02xx (chưa có requirement)",
-   "screens": "^(ADM\\-LOP\\-020303|ADM\\-LOP\\-020404|ADM\\-LOP\\-020504|ADM\\-LOP\\-020709|ADM\\-LOP\\-020809)$",
+   "screens": "^(ADM\\-LOP\\-020101|ADM\\-LOP\\-020303|ADM\\-LOP\\-020404|ADM\\-LOP\\-020504|ADM\\-LOP\\-020709|ADM\\-LOP\\-020809)$",
    "requirements": [],
    "prefix_figma": "ADM-LOP-02",
    "auto": true
@@ -769,6 +777,14 @@
    "auto": true
   },
   {
+   "name": "chua-co-req-cd-kh-03",
+   "title": "CD-KH-03xx (chưa có requirement)",
+   "screens": "^(CD\\-KH\\-030350)$",
+   "requirements": [],
+   "prefix_figma": "CD-KH-03",
+   "auto": true
+  },
+  {
    "name": "chua-co-req-cd-kh-04",
    "title": "CD-KH-04xx (chưa có requirement)",
    "screens": "^(CD\\-KH\\-040130|CD\\-KH\\-040180|CD\\-KH\\-040210|CD\\-KH\\-040220|CD\\-KH\\-040230|CD\\-KH\\-040240)$",
@@ -803,7 +819,7 @@
   {
    "name": "chua-co-req-ch-tc-01",
    "title": "CH-TC-01xx (chưa có requirement)",
-   "screens": "^(CH\\-TC\\-010002)$",
+   "screens": "^(CH\\-TC\\-010001|CH\\-TC\\-010002|CH\\-TC\\-010003)$",
    "requirements": [],
    "prefix_figma": "CH-TC-01",
    "auto": true

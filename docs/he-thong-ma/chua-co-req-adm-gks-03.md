@@ -16,11 +16,11 @@
 
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
-| `ADM-GKS-030030` | Popup kết quả cả trung tâm | Popup | ADM-GKS-030020 | ADM-GKS-030020 | — | `/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030030` | Figma | thấp |
-| `ADM-GKS-030040` | Popup chọn cuộc khảo sát | Popup | ADM-GKS-030020 | ADM-GKS-030020 | — | `/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030040` | Figma | thấp |
+| `ADM-GKS-030030` | Popup kết quả cả trung tâm | Popup | ADM-GKS-030020 | ADM-GKS-030020 | — | `/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030030` | Figma | cao |
+| `ADM-GKS-030040` | Popup chọn cuộc khảo sát | Popup | ADM-GKS-030020 | ADM-GKS-030020 | — | `/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030040` | Figma | cao |
 | `ADM-GKS-030045` | Dropdown chọn loại giao khảo sát | Dropdown | ADM-GKS-030020 | ADM-GKS-030020 | — | `/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030045` | Figma | thấp |
-| `ADM-GKS-030050` | Popup giao khảo sát · Bắt buộc | Popup | ADM-GKS-030045 | ADM-GKS-030020 | — | `/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030050` | Figma | thấp |
-| `ADM-GKS-030060` | Popup giao khảo sát · Tuỳ chọn | Popup | ADM-GKS-030045 | ADM-GKS-030020 | — | `/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030060` | Figma | thấp |
+| `ADM-GKS-030050` | Popup giao khảo sát · Bắt buộc | Popup | ADM-GKS-030045 | ADM-GKS-030020 | — | `/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030050` | Figma | cao |
+| `ADM-GKS-030060` | Popup giao khảo sát · Tuỳ chọn | Popup | ADM-GKS-030045 | ADM-GKS-030020 | — | `/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030060` | Figma | cao |
 
 ## 4. Khu vực và item
 
@@ -74,8 +74,8 @@ Frame: `ADM-GKS-030020` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - Frame Figma chưa có requirement (6): `ADM-GKS-030020`, `ADM-GKS-030030`, `ADM-GKS-030040`, `ADM-GKS-030045`, `ADM-GKS-030050`, `ADM-GKS-030060`
-- Phân loại cần design duyệt (5): `ADM-GKS-030030`, `ADM-GKS-030040`, `ADM-GKS-030045`, `ADM-GKS-030050`, `ADM-GKS-030060`
 - Thiếu prototype link đi vào (4): `ADM-GKS-030030`, `ADM-GKS-030040`, `ADM-GKS-030050`, `ADM-GKS-030060`
+- Phân loại cần design duyệt (1): `ADM-GKS-030045`
 
 ## 9. Chi tiết dựng
 

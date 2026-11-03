@@ -3,7 +3,7 @@
  "note": "Sinh tự động từ Figma REST; chưa đưa vào figma.pages.json.",
  "codes": [
   {
-   "code": "ADM-GC-010010",
+   "code": "ADM-GFT-010010",
    "title": "Gift code / Popup tạo gift code",
    "nodeId": "3977:76869",
    "page": "├─ GIFT CODE",
@@ -13,26 +13,26 @@
     506.0
    ],
    "loai": "popup",
-   "parent": "ADM-GC-010001",
+   "parent": "ADM-GFT-010000",
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup tạo gift code”; mã gần nhất ADM-GC-010000 (“Ghi chú / Danh sách ghi chú”) thuộc nhóm khác — tiền tố mã có thể bị trùng; nằm trong Section chỉ có màn chính ADM-GC-010001",
+   "lyDo": "tên: “Popup tạo gift code”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
-    "theoTen": null,
-    "theoMa": null,
+    "theoTen": "ADM-GFT-010000",
+    "theoMa": "ADM-GFT-010000",
     "prototype": [],
     "namTrong": null,
-    "theoSection": "ADM-GC-010001",
-    "ganNhat": "ADM-GC-010001"
+    "theoSection": null,
+    "ganNhat": "ADM-GFT-010000"
    },
-   "manHienThi": "ADM-GC-010001",
+   "manHienThi": "ADM-GFT-010000",
    "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
   {
-   "code": "ADM-GC-010020",
+   "code": "ADM-GFT-010020",
    "title": "Gift code / Popup cập nhật gift code",
    "nodeId": "3977:76954",
    "page": "├─ GIFT CODE",
@@ -42,20 +42,20 @@
     450.0
    ],
    "loai": "popup",
-   "parent": "ADM-GC-010001",
+   "parent": "ADM-GFT-010000",
    "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
-   "lyDo": "tên: “Popup cập nhật gift code”; mã gần nhất ADM-GC-010000 (“Ghi chú / Danh sách ghi chú”) thuộc nhóm khác — tiền tố mã có thể bị trùng; nằm trong Section chỉ có màn chính ADM-GC-010001",
+   "lyDo": "tên: “Popup cập nhật gift code”; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
-    "theoTen": null,
-    "theoMa": null,
+    "theoTen": "ADM-GFT-010000",
+    "theoMa": "ADM-GFT-010000",
     "prototype": [],
     "namTrong": null,
-    "theoSection": "ADM-GC-010001",
-    "ganNhat": "ADM-GC-010001"
+    "theoSection": null,
+    "ganNhat": "ADM-GFT-010000"
    },
-   "manHienThi": "ADM-GC-010001",
+   "manHienThi": "ADM-GFT-010000",
    "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
@@ -130,7 +130,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-GKS-010020",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup kết quả cá nhân”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
@@ -142,10 +142,11 @@
     "theoSection": null,
     "ganNhat": "ADM-GKS-010020"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-GKS-010020",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-GKS-010040",
@@ -159,7 +160,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-GKS-010020",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
@@ -171,10 +172,11 @@
     "theoSection": null,
     "ganNhat": "ADM-GKS-010020"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-GKS-010020",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-GKS-020005",
@@ -246,7 +248,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-GKS-020020",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup kết quả cả lớp”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
@@ -258,10 +260,11 @@
     "theoSection": null,
     "ganNhat": "ADM-GKS-020020"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-GKS-020020",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-GKS-020040",
@@ -275,7 +278,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-GKS-020020",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
@@ -287,10 +290,11 @@
     "theoSection": null,
     "ganNhat": "ADM-GKS-020020"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-GKS-020020",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-GKS-030030",
@@ -304,7 +308,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-GKS-030020",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup kết quả cả trung tâm”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
@@ -316,10 +320,11 @@
     "theoSection": null,
     "ganNhat": "ADM-GKS-030020"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-GKS-030020",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-GKS-030040",
@@ -333,7 +338,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-GKS-030020",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
@@ -345,10 +350,11 @@
     "theoSection": null,
     "ganNhat": "ADM-GKS-030020"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-GKS-030020",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-GKS-030050",
@@ -362,7 +368,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-GKS-030045",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup giao khảo sát · Bắt buộc”; màn cha có nhiều gợi ý",
@@ -374,10 +380,11 @@
     "theoSection": null,
     "ganNhat": "ADM-GKS-020020"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-GKS-030020",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-GKS-030060",
@@ -391,7 +398,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-GKS-030045",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup giao khảo sát · Tuỳ chọn”; màn cha có nhiều gợi ý",
@@ -403,10 +410,11 @@
     "theoSection": null,
     "ganNhat": "ADM-GKS-020020"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-GKS-030020",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-GV-010010",
@@ -579,7 +587,7 @@
    },
    "manHienThi": "ADM-GV-010000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -612,40 +620,6 @@
    "canDuyet": false
   },
   {
-   "code": "ADM-GV-020310",
-   "title": null,
-   "nodeId": null,
-   "page": null,
-   "container": null,
-   "size": null,
-   "loai": "chua-ro",
-   "parent": null,
-   "tinCay": "thap",
-   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú",
-   "goiY": {},
-   "manHienThi": null,
-   "parentInPageList": false,
-   "hasDark": false,
-   "canDuyet": true
-  },
-  {
-   "code": "ADM-GV-020320",
-   "title": null,
-   "nodeId": null,
-   "page": null,
-   "container": null,
-   "size": null,
-   "loai": "chua-ro",
-   "parent": null,
-   "tinCay": "thap",
-   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú",
-   "goiY": {},
-   "manHienThi": null,
-   "parentInPageList": false,
-   "hasDark": false,
-   "canDuyet": true
-  },
-  {
    "code": "ADM-GV-020520",
    "title": "Chi tiết giáo viên / Quản lý đăng ký lịch / Popup đăng ký khung giờ",
    "nodeId": "3674:61905",
@@ -671,7 +645,7 @@
    },
    "manHienThi": "ADM-GV-020500",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -717,7 +691,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010010",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Chọn đơn vị tiền”; nằm trong Section chỉ có màn chính ADM-HD-010000",
@@ -729,10 +703,11 @@
     "theoSection": "ADM-HD-010000",
     "ganNhat": "ADM-HD-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HD-010012",
@@ -746,7 +721,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010010",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Chọn học viên có sẵn”; nằm trong Section chỉ có màn chính ADM-HD-010000",
@@ -758,10 +733,11 @@
     "theoSection": "ADM-HD-010000",
     "ganNhat": "ADM-HD-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HD-010013",
@@ -775,7 +751,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010012",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Mở danh sách”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính ADM-HD-010000",
@@ -787,10 +763,11 @@
     "theoSection": "ADM-HD-010000",
     "ganNhat": "ADM-HD-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HD-010030",
@@ -891,7 +868,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010060",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "bước/trạng thái trong popup: “Học viên mới”; nằm trong Section chỉ có màn chính ADM-HD-010000",
@@ -903,10 +880,11 @@
     "theoSection": "ADM-HD-010000",
     "ganNhat": "ADM-HD-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HD-010070",
@@ -949,7 +927,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010070",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Chọn người phụ trách”; nằm trong Section chỉ có màn chính ADM-HD-010000",
@@ -961,10 +939,11 @@
     "theoSection": "ADM-HD-010000",
     "ganNhat": "ADM-HD-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HD-010072",
@@ -978,7 +957,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010070",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Chọn trạng thái”; nằm trong Section chỉ có màn chính ADM-HD-010000",
@@ -990,10 +969,11 @@
     "theoSection": "ADM-HD-010000",
     "ganNhat": "ADM-HD-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HD-010073",
@@ -1007,7 +987,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010070",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Chọn số KPI”; nằm trong Section chỉ có màn chính ADM-HD-010000",
@@ -1019,10 +999,11 @@
     "theoSection": "ADM-HD-010000",
     "ganNhat": "ADM-HD-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HD-010080",
@@ -1064,8 +1045,8 @@
     242.0
    ],
    "loai": "trang-thai",
-   "parent": "ADM-HD-010000",
-   "tinCay": "trung-binh",
+   "parent": "ADM-HD-010080",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Chọn Xem lịch sử”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính ADM-HD-010000",
@@ -1077,10 +1058,11 @@
     "theoSection": "ADM-HD-010000",
     "ganNhat": "ADM-HD-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": true,
+   "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HD-010082",
@@ -1093,8 +1075,8 @@
     242.0
    ],
    "loai": "trang-thai",
-   "parent": "ADM-HD-010000",
-   "tinCay": "trung-binh",
+   "parent": "ADM-HD-010080",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Chọn Thêm Lịch Hẹn”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính ADM-HD-010000",
@@ -1106,10 +1088,11 @@
     "theoSection": "ADM-HD-010000",
     "ganNhat": "ADM-HD-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": true,
+   "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HD-010090",
@@ -1210,7 +1193,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010020",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "bước/trạng thái trong popup: “Lịch sử lớp”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính ADM-HD-010000",
@@ -1224,10 +1207,11 @@
     "theoSection": "ADM-HD-010000",
     "ganNhat": "ADM-HD-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HD-010130",
@@ -1299,7 +1283,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-HD-010230",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Mở Loại”; nằm trong Section chỉ có màn chính ADM-HD-010000",
@@ -1311,10 +1295,11 @@
     "theoSection": "ADM-HD-010000",
     "ganNhat": "ADM-HD-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HV-010010",
@@ -1371,7 +1356,7 @@
    },
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": false,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -1383,7 +1368,7 @@
    "size": null,
    "loai": "popup",
    "parent": "ADM-HV-010000",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
    "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú (“Danh sách học viên / Popup thêm ghi chú”); tên: “Popup thêm ghi chú”",
@@ -1395,10 +1380,11 @@
     "theoSection": null,
     "ganNhat": null
    },
+   "daDuyet": true,
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-HV-010060",
@@ -1513,7 +1499,7 @@
    },
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -1542,7 +1528,7 @@
    },
    "manHienThi": "ADM-HV-010000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -1586,7 +1572,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-KS-010020",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
@@ -1598,10 +1584,11 @@
     "theoSection": null,
     "ganNhat": "ADM-KS-010020"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-KS-010020",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-KS-020030",
@@ -1615,7 +1602,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-KS-020020",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
@@ -1627,10 +1614,11 @@
     "theoSection": null,
     "ganNhat": "ADM-KS-020020"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-KS-020020",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-KS-030030",
@@ -1644,7 +1632,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-KS-030020",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý; màn cha chỉ suy từ vị trí gần nhất",
@@ -1656,10 +1644,11 @@
     "theoSection": null,
     "ganNhat": "ADM-KS-030020"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-KS-030020",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-LGV-020010",
@@ -1745,7 +1734,7 @@
    },
    "manHienThi": "ADM-LOP-010000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -1905,7 +1894,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-LOP-020610",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Xem trước”; nằm trong Section chỉ có màn chính ADM-LOP-020600",
@@ -1919,10 +1908,11 @@
     "theoSection": "ADM-LOP-020600",
     "ganNhat": "ADM-LOP-020600"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-LOP-020600",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-LOP-020612",
@@ -1936,7 +1926,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-LOP-020611",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Xem tiêu chí”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính ADM-LOP-020600",
@@ -1950,10 +1940,11 @@
     "theoSection": "ADM-LOP-020600",
     "ganNhat": "ADM-LOP-020600"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-LOP-020600",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-LOP-020710",
@@ -1996,7 +1987,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-LOP-020710",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Xem trước”",
@@ -2010,10 +2001,11 @@
     "theoSection": null,
     "ganNhat": "ADM-LOP-020709"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-LOP-020700",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-LOP-020712",
@@ -2027,7 +2019,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-LOP-020711",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "thap",
    "lyDo": "trạng thái của popup: “Xem tiêu chí”; màn cha có nhiều gợi ý",
@@ -2041,10 +2033,11 @@
     "theoSection": null,
     "ganNhat": "ADM-LOP-020709"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-LOP-020700",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-LOP-020810",
@@ -2087,7 +2080,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-LOP-020810",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Xem trước”",
@@ -2101,10 +2094,11 @@
     "theoSection": null,
     "ganNhat": "ADM-LOP-020809"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-LOP-020800",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-LOP-020812",
@@ -2118,7 +2112,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-LOP-020811",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "thap",
    "lyDo": "trạng thái của popup: “Xem tiêu chí”; màn cha có nhiều gợi ý",
@@ -2132,13 +2126,14 @@
     "theoSection": null,
     "ganNhat": "ADM-LOP-020809"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-LOP-020800",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
-   "code": "ADM-LOP-040210",
+   "code": "ADM-LOP-020110",
    "title": "Lớp học / Tổng quan / Popup lịch sử ghi chú",
    "nodeId": "3348:62669",
    "page": "├─ Tổng quan",
@@ -2148,23 +2143,24 @@
     762.0
    ],
    "loai": "popup",
-   "parent": "ADM-LOP-040200",
-   "tinCay": "trung-binh",
+   "parent": "ADM-LOP-020100",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "trung-binh",
-   "lyDo": "tên: “Popup lịch sử ghi chú”; Section chỉ có màn chính ADM-LOP-020100, khác màn cha đoán",
+   "lyDo": "tên: “Popup lịch sử ghi chú”; mã gần nhất ADM-LOP-020100 (“Chi tiết lớp học / Tổng quan”) thuộc nhóm khác — tiền tố mã có thể bị trùng; màn cha chỉ suy từ vị trí gần nhất",
    "goiY": {
     "theoTen": null,
-    "theoMa": "ADM-LOP-040200",
+    "theoMa": null,
     "prototype": [],
     "namTrong": null,
-    "theoSection": "ADM-LOP-020100",
+    "theoSection": null,
     "ganNhat": "ADM-LOP-020100"
    },
-   "manHienThi": "ADM-LOP-040200",
+   "daDuyet": true,
+   "manHienThi": "ADM-LOP-020100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-LOP-040220",
@@ -2267,7 +2263,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-LOP-040520",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "bước/trạng thái trong popup: “Trùng lịch cố định”; nằm trong Section chỉ có màn chính ADM-LOP-040500",
@@ -2279,10 +2275,11 @@
     "theoSection": "ADM-LOP-040500",
     "ganNhat": "ADM-LOP-040500"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-LOP-040500",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-LOP-040710",
@@ -2412,7 +2409,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-LOP-050404",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "trung-binh",
    "lyDo": "tên: “Popup xác nhận xoá”; màn cha chỉ suy từ vị trí gần nhất",
@@ -2424,10 +2421,11 @@
     "theoSection": null,
     "ganNhat": "ADM-LOP-050404"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-LOP-050404",
    "parentInPageList": true,
-   "hasDark": false,
-   "canDuyet": true
+   "hasDark": true,
+   "canDuyet": false
   },
   {
    "code": "ADM-LOP-050407",
@@ -2441,7 +2439,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-LOP-050404",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "trung-binh",
    "lyDo": "tên: “Popup xác nhận gửi”; màn cha chỉ suy từ vị trí gần nhất",
@@ -2453,10 +2451,11 @@
     "theoSection": null,
     "ganNhat": "ADM-LOP-050404"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-LOP-050404",
    "parentInPageList": true,
-   "hasDark": false,
-   "canDuyet": true
+   "hasDark": true,
+   "canDuyet": false
   },
   {
    "code": "ADM-LOP-050408",
@@ -2470,7 +2469,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-LOP-050404",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "trung-binh",
    "lyDo": "tên: “Popup tạo tin nhắn”; màn cha chỉ suy từ vị trí gần nhất",
@@ -2482,10 +2481,11 @@
     "theoSection": null,
     "ganNhat": "ADM-LOP-050404"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-LOP-050404",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-LOP-050410",
@@ -2499,7 +2499,7 @@
    ],
    "loai": "popup",
    "parent": "ADM-LOP-050404",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "trung-binh",
    "lyDo": "tên: “Popup tạo tin nhắn bán tự động”; màn cha chỉ suy từ vị trí gần nhất",
@@ -2511,10 +2511,11 @@
     "theoSection": null,
     "ganNhat": "ADM-LOP-050404"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-LOP-050404",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-MV-020010",
@@ -2571,7 +2572,7 @@
    },
    "manHienThi": "ADM-MV-020000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -2644,7 +2645,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-SS-010010",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Đã chọn học viên có sẵn”; nằm trong Section chỉ có màn chính ADM-SS-010000",
@@ -2656,10 +2657,11 @@
     "theoSection": "ADM-SS-010000",
     "ganNhat": "ADM-SS-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-SS-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-SS-010020",
@@ -2687,7 +2689,7 @@
    },
    "manHienThi": "ADM-SS-010000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -2731,7 +2733,7 @@
    ],
    "loai": "trang-thai",
    "parent": "ADM-SS-010000",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Đã chọn mẫu”; nằm trong Section chỉ có màn chính ADM-SS-010000",
@@ -2743,10 +2745,11 @@
     "theoSection": "ADM-SS-010000",
     "ganNhat": "ADM-SS-010000"
    },
+   "daDuyet": true,
    "manHienThi": "ADM-SS-010000",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "ADM-SS-010040",
@@ -3021,7 +3024,7 @@
    ],
    "loai": "trang-thai",
    "parent": "CD-CDO-010010",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Điền sai”; nằm trong Section chỉ có màn chính CD-CDO-010000",
@@ -3033,10 +3036,11 @@
     "theoSection": "CD-CDO-010000",
     "ganNhat": "CD-CDO-010000"
    },
+   "daDuyet": true,
    "manHienThi": "CD-CDO-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-DM-010057",
@@ -3050,7 +3054,7 @@
    ],
    "loai": "trang-thai",
    "parent": "CD-DM-010010",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Thành công”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-DM-010000",
@@ -3062,10 +3066,11 @@
     "theoSection": "CD-DM-010000",
     "ganNhat": "CD-DM-010000"
    },
+   "daDuyet": true,
    "manHienThi": "CD-DM-010000",
    "parentInPageList": true,
-   "hasDark": false,
-   "canDuyet": true
+   "hasDark": true,
+   "canDuyet": false
   },
   {
    "code": "CD-DM-010060",
@@ -3108,7 +3113,7 @@
    ],
    "loai": "trang-thai",
    "parent": "CD-DM-010060",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Điền sai”",
@@ -3120,10 +3125,11 @@
     "theoSection": null,
     "ganNhat": "CD-DM-010000"
    },
+   "daDuyet": true,
    "manHienThi": "CD-DM-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-010010",
@@ -3172,23 +3178,6 @@
    "canDuyet": false
   },
   {
-   "code": "CD-KH-010012",
-   "title": null,
-   "nodeId": null,
-   "page": null,
-   "container": null,
-   "size": null,
-   "loai": "chua-ro",
-   "parent": null,
-   "tinCay": "thap",
-   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú",
-   "goiY": {},
-   "manHienThi": null,
-   "parentInPageList": false,
-   "hasDark": false,
-   "canDuyet": true
-  },
-  {
    "code": "CD-KH-010013",
    "title": "Quản lý khoá học / Popup kích hoạt công khai / ID hợp lệ",
    "nodeId": "2706:43836",
@@ -3200,7 +3189,7 @@
    ],
    "loai": "trang-thai",
    "parent": "CD-KH-010010",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “ID hợp lệ”",
@@ -3214,10 +3203,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-040200"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-020261",
@@ -3313,23 +3303,6 @@
    "canDuyet": false
   },
   {
-   "code": "CD-KH-030220",
-   "title": null,
-   "nodeId": null,
-   "page": null,
-   "container": null,
-   "size": null,
-   "loai": "chua-ro",
-   "parent": null,
-   "tinCay": "thap",
-   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú",
-   "goiY": {},
-   "manHienThi": null,
-   "parentInPageList": false,
-   "hasDark": false,
-   "canDuyet": true
-  },
-  {
    "code": "CD-KH-030320",
    "title": "Học kỳ / Kiểm tra / Popup danh sách câu hỏi",
    "nodeId": null,
@@ -3338,7 +3311,7 @@
    "size": null,
    "loai": "popup",
    "parent": "CD-KH-030300",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
    "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú (“Học kỳ / Kiểm tra / Popup danh sách câu hỏi”); tên: “Popup danh sách câu hỏi”",
@@ -3350,27 +3323,11 @@
     "theoSection": null,
     "ganNhat": null
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-030300",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
-  },
-  {
-   "code": "CD-KH-030330",
-   "title": null,
-   "nodeId": null,
-   "page": null,
-   "container": null,
-   "size": null,
-   "loai": "chua-ro",
-   "parent": null,
-   "tinCay": "thap",
-   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú",
-   "goiY": {},
-   "manHienThi": null,
-   "parentInPageList": false,
-   "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-030341",
@@ -3450,7 +3407,7 @@
    ],
    "loai": "trang-thai",
    "parent": "CD-KH-030341",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của màn: “Generate · Đang tạo bảng”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-KH-030340",
@@ -3469,10 +3426,11 @@
     "theoSection": "CD-KH-030340",
     "ganNhat": "CD-KH-030340"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-030340",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-030345",
@@ -3486,7 +3444,7 @@
    ],
    "loai": "trang-thai",
    "parent": "CD-KH-030343",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của màn: “Generate · Xác nhận bỏ bảng”; màn cha có nhiều gợi ý; nằm trong Section chỉ có màn chính CD-KH-030340",
@@ -3501,10 +3459,11 @@
     "theoSection": "CD-KH-030340",
     "ganNhat": "CD-KH-030340"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-030340",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-030346",
@@ -3517,8 +3476,8 @@
     608.0
    ],
    "loai": "trang-thai",
-   "parent": "CD-KH-030300",
-   "tinCay": "thap",
+   "parent": "CD-KH-030340",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "thap",
    "lyDo": "trạng thái của màn: “Generate · Lỗi”; màn cha có nhiều gợi ý; Section chỉ có màn chính CD-KH-030340, khác màn cha đoán",
@@ -3530,10 +3489,11 @@
     "theoSection": "CD-KH-030340",
     "ganNhat": "CD-KH-030340"
    },
-   "manHienThi": "CD-KH-030300",
+   "daDuyet": true,
+   "manHienThi": "CD-KH-030340",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-030348",
@@ -3608,8 +3568,8 @@
     1519.0
    ],
    "loai": "trang-thai",
-   "parent": "CD-KH-030300",
-   "tinCay": "trung-binh",
+   "parent": "CD-KH-030340",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của màn: “Generate · Lỗi (tab Chọn kiến thức & kỹ năng)”; Section chỉ có màn chính CD-KH-030340, khác màn cha đoán",
@@ -3621,10 +3581,11 @@
     "theoSection": "CD-KH-030340",
     "ganNhat": "CD-KH-030340"
    },
-   "manHienThi": "CD-KH-030300",
+   "daDuyet": true,
+   "manHienThi": "CD-KH-030340",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-040155",
@@ -3638,7 +3599,7 @@
    ],
    "loai": "popup",
    "parent": "CD-KH-040100",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup gỡ mục khỏi khoá”; màn cha có nhiều gợi ý",
@@ -3650,10 +3611,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-040130"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-040100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-050155",
@@ -3667,7 +3629,7 @@
    ],
    "loai": "popup",
    "parent": "CD-KH-050100",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup gỡ bài khỏi khoá”; màn cha có nhiều gợi ý",
@@ -3679,10 +3641,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-050180"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-050100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-060110",
@@ -3728,7 +3691,7 @@
    ],
    "loai": "popup",
    "parent": "CD-KH-060110",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup soạn câu hỏi · Trắc nghiệm”; màn cha có nhiều gợi ý",
@@ -3742,10 +3705,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-060100"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-060121",
@@ -3758,8 +3722,8 @@
     1010.0
    ],
    "loai": "popup",
-   "parent": "CD-KH-060100",
-   "tinCay": "thap",
+   "parent": "CD-KH-060110",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup soạn câu hỏi · Sắp xếp”; màn cha có nhiều gợi ý",
@@ -3771,10 +3735,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-060200"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-060122",
@@ -3787,8 +3752,8 @@
     1058.0
    ],
    "loai": "popup",
-   "parent": "CD-KH-060100",
-   "tinCay": "thap",
+   "parent": "CD-KH-060110",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup soạn câu hỏi · Nối từ”; màn cha có nhiều gợi ý",
@@ -3800,10 +3765,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-060200"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-060123",
@@ -3816,8 +3782,8 @@
     1007.0
    ],
    "loai": "popup",
-   "parent": "CD-KH-060100",
-   "tinCay": "thap",
+   "parent": "CD-KH-060110",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup soạn câu hỏi · Nói”; màn cha có nhiều gợi ý",
@@ -3829,10 +3795,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-060200"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-060124",
@@ -3845,8 +3812,8 @@
     989.0
    ],
    "loai": "popup",
-   "parent": "CD-KH-060100",
-   "tinCay": "thap",
+   "parent": "CD-KH-060110",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup soạn câu hỏi · Viết”; màn cha có nhiều gợi ý",
@@ -3858,10 +3825,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-060200"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-060125",
@@ -3874,8 +3842,8 @@
     1010.0
    ],
    "loai": "popup",
-   "parent": "CD-KH-060100",
-   "tinCay": "thap",
+   "parent": "CD-KH-060110",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup soạn câu hỏi · Câu hỏi con”; màn cha có nhiều gợi ý",
@@ -3887,10 +3855,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-060200"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-060140",
@@ -3904,7 +3873,7 @@
    ],
    "loai": "popup",
    "parent": "CD-KH-060130",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "thap",
    "lyDo": "tên: “Kết quả Import”, không ghi chữ Popup; màn cha có nhiều gợi ý",
@@ -3916,10 +3885,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-070100"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-060141",
@@ -3933,7 +3903,7 @@
    ],
    "loai": "popup",
    "parent": "CD-KH-060100",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "thap",
    "lyDo": "tên: “Kết quả Import”, không ghi chữ Popup; màn cha có nhiều gợi ý",
@@ -3948,10 +3918,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-070100"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-060150",
@@ -3965,7 +3936,7 @@
    ],
    "loai": "popup",
    "parent": "CD-KH-060100",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "tên: “Soát lỗi bằng AI”, không ghi chữ Popup; màn cha có nhiều gợi ý",
@@ -3981,10 +3952,11 @@
     "theoSection": null,
     "ganNhat": "CD-KH-070100"
    },
+   "daDuyet": true,
    "manHienThi": "CD-KH-060100",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "CD-KH-070103",
@@ -4319,7 +4291,7 @@
    "size": null,
    "loai": "dropdown",
    "parent": "GV-KS-010000",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "cao",
    "lyDo": "chỉ có frame bản tối -DK; tên: “Dropdown thông báo khảo sát”",
@@ -4331,10 +4303,11 @@
     "theoSection": null,
     "ganNhat": null
    },
+   "daDuyet": true,
    "manHienThi": "GV-KS-010000",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "GV-KS-010011",
@@ -4551,7 +4524,7 @@
    ],
    "loai": "popup",
    "parent": "GV-LOP-030100",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup bắt đầu buổi học”; màn cha có nhiều gợi ý",
@@ -4563,10 +4536,11 @@
     "theoSection": null,
     "ganNhat": "GV-LOP-030400"
    },
+   "daDuyet": true,
    "manHienThi": "GV-LOP-030100",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "GV-LOP-030131",
@@ -4638,7 +4612,7 @@
    ],
    "loai": "popup",
    "parent": "GV-LOP-030150",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup tiếp tục buổi học”; màn cha có nhiều gợi ý",
@@ -4650,10 +4624,11 @@
     "theoSection": null,
     "ganNhat": "GV-LOP-030160"
    },
+   "daDuyet": true,
    "manHienThi": "GV-LOP-030150",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "GV-LOP-040211",
@@ -4698,7 +4673,7 @@
    ],
    "loai": "popup",
    "parent": "GV-LOP-040201",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup Thu hồi”; màn cha có nhiều gợi ý",
@@ -4712,10 +4687,11 @@
     "theoSection": null,
     "ganNhat": "GV-LOP-040300"
    },
+   "daDuyet": true,
    "manHienThi": "GV-LOP-040200",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "GV-LOP-040310",
@@ -4729,7 +4705,7 @@
    ],
    "loai": "popup",
    "parent": "GV-LOP-040302",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup chọn bài nguồn”; màn cha có nhiều gợi ý",
@@ -4741,10 +4717,11 @@
     "theoSection": null,
     "ganNhat": "GV-LOP-040300"
    },
+   "daDuyet": true,
    "manHienThi": "GV-LOP-040300",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "GV-LOP-040311",
@@ -4758,7 +4735,7 @@
    ],
    "loai": "popup",
    "parent": "GV-LOP-040302",
-   "tinCay": "thap",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "thap",
    "lyDo": "tên: “Popup áp dụng nhận xét chung”; màn cha có nhiều gợi ý",
@@ -4770,10 +4747,11 @@
     "theoSection": null,
     "ganNhat": "GV-LOP-040300"
    },
+   "daDuyet": true,
    "manHienThi": "GV-LOP-040300",
    "parentInPageList": true,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "GV-LOP-040340",
@@ -4859,7 +4837,7 @@
    ],
    "loai": "trang-thai",
    "parent": "GV-LS-010010",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "trung-binh",
    "tinCayCha": "cao",
    "lyDo": "trạng thái của popup: “Chọn lý do”",
@@ -4871,10 +4849,11 @@
     "theoSection": null,
     "ganNhat": "GV-LS-010014"
    },
+   "daDuyet": true,
    "manHienThi": "GV-LS-010000",
    "parentInPageList": false,
    "hasDark": true,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "GV-LS-010013",
@@ -5000,7 +4979,7 @@
    },
    "manHienThi": "MST-TK-010000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -5029,7 +5008,7 @@
    },
    "manHienThi": "MST-TK-010000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -5058,7 +5037,7 @@
    },
    "manHienThi": "MST-TK-010000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -5073,7 +5052,7 @@
    ],
    "loai": "popup",
    "parent": "MST-TK-020000",
-   "tinCay": "trung-binh",
+   "tinCay": "cao",
    "tinCayLoai": "cao",
    "tinCayCha": "trung-binh",
    "lyDo": "tên: “Popup chọn màu giao diện”; màn cha chỉ suy từ vị trí gần nhất",
@@ -5085,10 +5064,11 @@
     "theoSection": null,
     "ganNhat": "MST-TK-020000"
    },
+   "daDuyet": true,
    "manHienThi": "MST-TK-020000",
    "parentInPageList": true,
    "hasDark": false,
-   "canDuyet": true
+   "canDuyet": false
   },
   {
    "code": "SP-LHP-010010",
@@ -5104,16 +5084,17 @@
    "parent": "SP-LHP-010000",
    "tinCay": "cao",
    "tinCayLoai": "cao",
-   "tinCayCha": "cao",
-   "lyDo": "tên: “Popup chi tiết cuộc họp”",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup chi tiết cuộc họp”; màn cha có nhiều gợi ý",
    "goiY": {
-    "theoTen": "SP-LHP-010000",
+    "theoTen": "SP-LHP-010003",
     "theoMa": "SP-LHP-010000",
     "prototype": [],
     "namTrong": null,
     "theoSection": null,
     "ganNhat": "SP-LHP-020000"
    },
+   "daDuyet": true,
    "manHienThi": "SP-LHP-010000",
    "parentInPageList": true,
    "hasDark": true,
@@ -5145,7 +5126,7 @@
    },
    "manHienThi": "SP-TASK-030000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -5174,7 +5155,7 @@
    },
    "manHienThi": "SP-TASK-030000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
    "canDuyet": false
   },
   {
@@ -5203,7 +5184,65 @@
    },
    "manHienThi": "SP-TASK-030000",
    "parentInPageList": true,
-   "hasDark": false,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-040210",
+   "title": "Lớp học / Cài đặt / Học viên / Popup lịch sử ghi chú",
+   "nodeId": "2409:147699",
+   "page": "├─ Cài đặt",
+   "container": "Học viên",
+   "size": [
+    480.0,
+    762.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-040200",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup lịch sử ghi chú”; nằm trong Section chỉ có màn chính ADM-LOP-040200",
+   "goiY": {
+    "theoTen": "ADM-LOP-040200",
+    "theoMa": "ADM-LOP-040200",
+    "prototype": [],
+    "namTrong": null,
+    "theoSection": "ADM-LOP-040200",
+    "ganNhat": "ADM-LOP-040200"
+   },
+   "manHienThi": "ADM-LOP-040200",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "SP-TASK-030003",
+   "title": "Quy trình / Ca trực / Lịch chọn ngày (đang mở)",
+   "nodeId": "3857:76190",
+   "page": "└─ Ca trực",
+   "container": "CA TRỰC",
+   "size": [
+    268.0,
+    246.0
+   ],
+   "loai": "dropdown",
+   "parent": "SP-TASK-030000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Lịch chọn ngày (đang mở)”; nằm trong Section chỉ có màn chính SP-TASK-030000",
+   "goiY": {
+    "theoTen": "SP-TASK-030000",
+    "theoMa": "SP-TASK-030000",
+    "prototype": [],
+    "namTrong": null,
+    "theoSection": "SP-TASK-030000",
+    "ganNhat": "SP-TASK-030000"
+   },
+   "manHienThi": "SP-TASK-030000",
+   "parentInPageList": true,
+   "hasDark": true,
    "canDuyet": false
   }
  ]

@@ -7,6 +7,7 @@
 | Mã | Tên | Route | Bản tối | Nguồn |
 |---|---|---|---|---|
 | `CH-TC-010002` | Trang chủ / Thống kê theo tháng / Hiện thu nhập | `/trang-chu/thong-ke-theo-thang/hien-thu-nhap` | `CH-TC-010002-DK` | Figma |
+| `CH-TC-010003` | Trang chủ / Thống kê theo tháng | `/trang-chu/thong-ke-theo-thang` | `CH-TC-010003-DK` | Figma |
 
 
 ## 2. Luồng
@@ -16,12 +17,13 @@
 
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
+| `CH-TC-010001` | Chọn T9/2026 | Trạng thái | CH-TC-010003 | CH-TC-010003 | CH-TC-010002, CH-TC-010003 | `/trang-chu/thong-ke-theo-thang?state=CH-TC-010001` | Figma | trung bình |
 
 ## 4. Khu vực và item
 
 ### `F01` Header
 
-Frame: `CH-TC-010002` · Nguồn nội dung: Figma
+Frame: `CH-TC-010002`, `CH-TC-010003` · Nguồn nội dung: Figma
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -29,7 +31,7 @@ Frame: `CH-TC-010002` · Nguồn nội dung: Figma
 
 ### `F02` Sidebar · MENU - CLASS HANDLER
 
-Frame: `CH-TC-010002` · Nguồn nội dung: Figma
+Frame: `CH-TC-010002`, `CH-TC-010003` · Nguồn nội dung: Figma
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -37,7 +39,7 @@ Frame: `CH-TC-010002` · Nguồn nội dung: Figma
 
 ### `F03` (ngoài Body)
 
-Frame: `CH-TC-010002` · Nguồn nội dung: Figma
+Frame: `CH-TC-010002`, `CH-TC-010003` · Nguồn nội dung: Figma
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -85,7 +87,8 @@ Frame: `CH-TC-010002` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Frame Figma chưa có requirement (1): `CH-TC-010002`
+- Frame Figma chưa có requirement (3): `CH-TC-010001`, `CH-TC-010002`, `CH-TC-010003`
+- Phân loại cần design duyệt (1): `CH-TC-010001`
 
 ## 9. Chi tiết dựng
 

@@ -6,6 +6,7 @@
 
 | Mã | Tên | Route | Bản tối | Nguồn |
 |---|---|---|---|---|
+| `ADM-LOP-020101` | Chi tiết lớp học / Tổng quan > chi tiết | `/chi-tiet-lop-hoc/tong-quan-chi-tiet` | `ADM-LOP-020101-DK` | Figma |
 | `ADM-LOP-020303` | Chi tiết lớp học / Kiểm tra | `/chi-tiet-lop-hoc/kiem-tra` | `ADM-LOP-020303-DK` | Figma |
 | `ADM-LOP-020709` | Chi tiết lớp học / Quy trình lớp / Có cập nhật & quá hạn | `/chi-tiet-lop-hoc/quy-trinh-lop/co-cap-nhat-qua-han` | `ADM-LOP-020709-DK` | Figma |
 | `ADM-LOP-020809` | Chi tiết lớp học / CSKH / Có cập nhật & quá hạn | `/chi-tiet-lop-hoc/cskh/co-cap-nhat-qua-han` | `ADM-LOP-020809-DK` | Figma |
@@ -23,36 +24,48 @@
 
 ## 4. Khu vực và item
 
-### `F01` MainContent
+### `F01` (ngoài Body)
+
+Frame: `ADM-LOP-020101`, `ADM-LOP-020303`, `ADM-LOP-020709`, `ADM-LOP-020809` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `3304:60346` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | the-chi-so | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `3304:60351` Thẻ chỉ số | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | progress-diem-danh-gia-a-f | `Progress/Điểm Đánh Giá (A-F)` Size=36x32 | `3304:60361` Progress/Điểm Đánh Giá (A-F) | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | avatar | `Avatar` Size=20 | `3304:60367` Avatar | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | ghi-chu | `GHI CHÚ`  | `3304:60370` GHI CHÚ | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | mouse-click |  | `3304:62581` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | molecule-tooltip | `Molecule/Tooltip`  | `3304:62573` Molecule/Tooltip | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | atom-badge | `Atom/Badge`  | `4056:93405` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | nut-an-ghi-chu | `Atom/Button` Type=Outlined Icon, Size=Small | `4056:94106` Nút · Ẩn ghi chú | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.10` | student-status | `Student Status`  | `3304:62212` Student Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.11` | o-dinh-danh |  | `3304:62213` Ô định danh | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.12` | class-session-status | `Class Session Status`  | `3304:62215` Class Session Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.13` | menu-panel | `DD/Organism/Menu Panel` Type=Action | `3304:62606` Menu Panel | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.14` | account | `ACCOUNT` Size=Default | `3304:60662` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.15` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:223847` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.16` | atom-button | `Atom/Button` Type=Primary, Size=Medium | `3857:68581` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.17` | global-progress-bar | `Global Progress Bar`  | `3502:75921` Global Progress Bar | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.18` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `3502:75923` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.19` | atom-chip | `Atom/Chip` Type=Date | `3772:86901` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.20` | atom-badge-type | `Atom/Badge Type` Size=M | `3772:87014` Atom/Badge Type | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F02` MainContent
 
 Frame: `ADM-LOP-020303` · Nguồn nội dung: Figma
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `F01.01` | the-chi-so | `Thẻ chỉ số` Kiểu=Chuẩn | `3502:69812` Thẻ chỉ số | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | trang-thai-nop-bai-va-diem | `Trạng thái nộp bài và điểm`  | `3502:70652` Trạng thái nộp bài và điểm | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | molecule-o-dinh-danh |  | `3502:70653` Molecule/Ô định danh | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `3502:70658` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | atom-side-tab | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `3502:69923` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | atom-icon-button | `Atom/Icon Button`  | `3561:66443` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `3502:69924` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | atom-badge | `Atom/Badge`  | `3502:69928` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | percent | `PERCENT %`  | `3502:69934` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F02` (ngoài Body)
-
-Frame: `ADM-LOP-020303`, `ADM-LOP-020709`, `ADM-LOP-020809` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F02.01` | account | `ACCOUNT` Size=Default | `3502:70012` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.02` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:225655` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.03` | atom-button | `Atom/Button` Type=Primary, Size=Medium | `3857:68581` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.04` | global-progress-bar | `Global Progress Bar`  | `3502:75921` Global Progress Bar | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.05` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `3502:75923` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.06` | atom-chip | `Atom/Chip` Type=Date | `3772:86901` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.07` | atom-badge | `Atom/Badge`  | `3772:86940` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.08` | atom-badge-type | `Atom/Badge Type` Size=M | `3772:87014` Atom/Badge Type | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.01` | the-chi-so | `Thẻ chỉ số` Kiểu=Chuẩn | `3502:69812` Thẻ chỉ số | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.02` | trang-thai-nop-bai-va-diem | `Trạng thái nộp bài và điểm`  | `3502:70652` Trạng thái nộp bài và điểm | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.03` | molecule-o-dinh-danh |  | `3502:70653` Molecule/Ô định danh | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.04` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `3502:70658` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.05` | atom-side-tab | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `3502:69923` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.06` | atom-icon-button | `Atom/Icon Button`  | `3561:66443` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.07` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `3502:69924` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.08` | atom-badge | `Atom/Badge`  | `3502:69928` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.09` | percent | `PERCENT %`  | `3502:69934` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
 
 ### `F03` File
 
@@ -132,7 +145,7 @@ Frame: `ADM-LOP-020809` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Frame Figma chưa có requirement (5): `ADM-LOP-020303`, `ADM-LOP-020404`, `ADM-LOP-020504`, `ADM-LOP-020709`, `ADM-LOP-020809`
+- Frame Figma chưa có requirement (6): `ADM-LOP-020101`, `ADM-LOP-020303`, `ADM-LOP-020404`, `ADM-LOP-020504`, `ADM-LOP-020709`, `ADM-LOP-020809`
 - Phân loại cần design duyệt (2): `ADM-LOP-020404`, `ADM-LOP-020504`
 - Thiếu prototype link đi vào (2): `ADM-LOP-020404`, `ADM-LOP-020504`
 

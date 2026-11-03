@@ -28,7 +28,7 @@ Requirement: `teacher_role/history_and_salary/history_and_salary_requirements.md
 |---|---|---|---|---|---|---|---|---|
 | `ADM-LGV-020010` | Popup duyệt đề xuất | Popup | ADM-LGV-020000 | ADM-LGV-020000 | — | `/luong/de-xuat-tang-luong?popup=ADM-LGV-020010` | QC | cao |
 | `GV-LS-010010` | Popup đề xuất tăng lương | Popup | GV-LS-010000 | GV-LS-010000 | GV-LS-010000, GV-LS-010003, GV-LS-010004 | `/lich-su-luong/buoi-day?popup=GV-LS-010010` | QC | cao |
-| `GV-LS-010012` | Chọn lý do | Trạng thái | GV-LS-010010 | GV-LS-010000 | — | `/lich-su-luong/buoi-day?state=GV-LS-010012` | QC | trung bình |
+| `GV-LS-010012` | Chọn lý do | Trạng thái | GV-LS-010010 | GV-LS-010000 | — | `/lich-su-luong/buoi-day?state=GV-LS-010012` | QC | cao |
 | `GV-LS-010013` | Popup lịch sử đề xuất | Popup | GV-LS-010011 | GV-LS-010011 | GV-LS-010000, GV-LS-010003, GV-LS-010004, GV-LS-010011, GV-LS-010014 | `/lich-su-luong/de-xuat-dang-xu-ly-khong-huy-duoc?popup=GV-LS-010013` | QC | cao |
 | `GV-LS-010015` | Popup xác nhận gửi đề xuất | Popup | GV-LS-010010 | GV-LS-010000 | GV-LS-010010 | `/lich-su-luong/buoi-day?popup=GV-LS-010015` | QC | cao |
 | `GV-LS-010016` | Popup xác nhận huỷ đề xuất | Popup | GV-LS-010014 | GV-LS-010014 | GV-LS-010014 | `/lich-su-luong/de-xuat-moi-co-the-huy?popup=GV-LS-010016` | QC | cao |
@@ -265,7 +265,6 @@ Frame: `GV-LS-010000`, `GV-LS-010003`, `GV-LS-010004`, `GV-LS-010011`, `GV-LS-01
 - Chưa khớp tự động (19): `A01.01`, `A01.02`, `A01.09`, `A01.10`, `A01.16`, `A01.17`, `A01.21`, `A01.22`, `A02.06`, `A02.07`, `A03.06`, `A03.07`, `A06.01`, `A06.04`, `A06.05`, `A06.06`, `A06.07`, `A06.08`, `A06.10`
 - Chưa sync (26): `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A04.09`, `A04.10`, `A04.11`, `A04.12`, `A04.13`, `A04.14`, `A04.15`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`
 - Thiếu prototype link đi vào (2): `ADM-LGV-020010`, `GV-LS-010012`
-- Phân loại cần design duyệt (1): `GV-LS-010012`
 - REQ/EX chưa có testcase (1): `EX06`
 
 ## 9. Chi tiết dựng

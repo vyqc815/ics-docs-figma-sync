@@ -18,8 +18,8 @@
 |---|---|---|---|---|---|---|---|---|
 | `GV-LOP-040301` | Màn chấm bài · Câu hỏi con | Trạng thái | GV-LOP-040300 | GV-LOP-040300 | GV-LOP-040300, GV-LOP-040302, GV-LOP-040320, GV-LOP-040330, GV-LOP-040331, GV-LOP-040332, GV-LOP-040333, GV-LOP-040334, GV-LOP-040335 | `/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040301` | Figma | trung bình |
 | `GV-LOP-040302` | Màn chấm bài · Câu không cần chấm | Trạng thái | GV-LOP-040301 | GV-LOP-040300 | — | `/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040302` | Figma | thấp |
-| `GV-LOP-040310` | Popup chọn bài nguồn | Popup | GV-LOP-040302 | GV-LOP-040300 | — | `/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?popup=GV-LOP-040310` | Figma | thấp |
-| `GV-LOP-040311` | Popup áp dụng nhận xét chung | Popup | GV-LOP-040302 | GV-LOP-040300 | — | `/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?popup=GV-LOP-040311` | Figma | thấp |
+| `GV-LOP-040310` | Popup chọn bài nguồn | Popup | GV-LOP-040302 | GV-LOP-040300 | — | `/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?popup=GV-LOP-040310` | Figma | cao |
+| `GV-LOP-040311` | Popup áp dụng nhận xét chung | Popup | GV-LOP-040302 | GV-LOP-040300 | — | `/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?popup=GV-LOP-040311` | Figma | cao |
 | `GV-LOP-040330` | Màn chấm bài · Trắc nghiệm · App chấm | Trạng thái | GV-LOP-040300 | GV-LOP-040300 | GV-LOP-040300, GV-LOP-040301, GV-LOP-040302, GV-LOP-040320, GV-LOP-040331, GV-LOP-040332, GV-LOP-040333, GV-LOP-040334, GV-LOP-040335 | `/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040330` | Figma | trung bình |
 | `GV-LOP-040331` | Màn chấm bài · Sắp xếp · App chấm | Trạng thái | GV-LOP-040330 | GV-LOP-040300 | GV-LOP-040300, GV-LOP-040301, GV-LOP-040302, GV-LOP-040320, GV-LOP-040330, GV-LOP-040332, GV-LOP-040333, GV-LOP-040334, GV-LOP-040335 | `/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040331` | Figma | trung bình |
 | `GV-LOP-040332` | Màn chấm bài · Nối từ · App chấm | Trạng thái | GV-LOP-040330 | GV-LOP-040300 | GV-LOP-040300, GV-LOP-040301, GV-LOP-040302, GV-LOP-040320, GV-LOP-040330, GV-LOP-040331, GV-LOP-040333, GV-LOP-040334, GV-LOP-040335 | `/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040332` | Figma | trung bình |
@@ -93,7 +93,7 @@ Frame: `GV-LOP-040300` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - Frame Figma chưa có requirement (13): `GV-LOP-040300`, `GV-LOP-040301`, `GV-LOP-040302`, `GV-LOP-040310`, `GV-LOP-040311`, `GV-LOP-040330`, `GV-LOP-040331`, `GV-LOP-040332`, `GV-LOP-040333`, `GV-LOP-040334`, `GV-LOP-040335`, `GV-LOP-040336`, `GV-LOP-040340`
-- Phân loại cần design duyệt (10): `GV-LOP-040301`, `GV-LOP-040302`, `GV-LOP-040310`, `GV-LOP-040311`, `GV-LOP-040330`, `GV-LOP-040331`, `GV-LOP-040332`, `GV-LOP-040333`, `GV-LOP-040334`, `GV-LOP-040335`
+- Phân loại cần design duyệt (8): `GV-LOP-040301`, `GV-LOP-040302`, `GV-LOP-040330`, `GV-LOP-040331`, `GV-LOP-040332`, `GV-LOP-040333`, `GV-LOP-040334`, `GV-LOP-040335`
 - Thiếu prototype link đi vào (3): `GV-LOP-040302`, `GV-LOP-040310`, `GV-LOP-040311`
 
 ## 9. Chi tiết dựng

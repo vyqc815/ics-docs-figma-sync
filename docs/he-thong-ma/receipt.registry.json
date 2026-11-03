@@ -238,7 +238,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010010",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3004:60619",
@@ -261,7 +261,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010010",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3004:65451",
@@ -284,7 +284,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010012",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3004:65498",
@@ -471,7 +471,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010060",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "2997:14096",
@@ -517,7 +517,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010070",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3004:61931",
@@ -538,7 +538,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010070",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3004:62128",
@@ -561,7 +561,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010070",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3004:62345",
@@ -603,9 +603,9 @@
    "name": "chon-xem-lich-su",
    "title": "Hoá đơn / Popup thêm / Chọn Xem lịch sử",
    "kind": "trang-thai",
-   "parent": "ADM-HD-010000",
+   "parent": "ADM-HD-010080",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3058:96236",
@@ -624,9 +624,9 @@
    "name": "chon-them-lich-hen",
    "title": "Hoá đơn / Popup thêm / Chọn Thêm Lịch Hẹn",
    "kind": "trang-thai",
-   "parent": "ADM-HD-010000",
+   "parent": "ADM-HD-010080",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3058:108224",
@@ -777,7 +777,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010020",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "2731:75709",
@@ -913,7 +913,7 @@
    "kind": "trang-thai",
    "parent": "ADM-HD-010230",
    "shownOn": "ADM-HD-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3058:111717",
@@ -3113,11 +3113,6 @@
    "text": "trang-thai “Hoá đơn / Popup thêm hoá đơn / Chọn đơn vị tiền” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010011",
-   "text": "loại trang-thai, màn cha ADM-HD-010010 — tin cậy trung-binh"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-HD-010011",
    "text": "không có prototype link nào đi vào frame"
@@ -3128,11 +3123,6 @@
    "text": "trang-thai “Hoá đơn / Popup thêm hoá đơn / Chọn học viên có sẵn” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010012",
-   "text": "loại trang-thai, màn cha ADM-HD-010010 — tin cậy trung-binh"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-HD-010012",
    "text": "không có prototype link nào đi vào frame"
@@ -3141,11 +3131,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-HD-010013",
    "text": "trang-thai “Hoá đơn / Popup thêm hoá đơn / Chọn học viên có sẵn / Mở danh sách” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010013",
-   "text": "loại trang-thai, màn cha ADM-HD-010012 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",
@@ -3233,11 +3218,6 @@
    "text": "trang-thai “Hoá đơn / Popup thêm học phí / Học viên mới” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010061",
-   "text": "loại trang-thai, màn cha ADM-HD-010060 — tin cậy trung-binh"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-HD-010061",
    "text": "không có prototype link nào đi vào frame"
@@ -3258,11 +3238,6 @@
    "text": "trang-thai “Hoá đơn / Popup thêm người phụ trách / Chọn người phụ trách” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010071",
-   "text": "loại trang-thai, màn cha ADM-HD-010070 — tin cậy trung-binh"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-HD-010071",
    "text": "không có prototype link nào đi vào frame"
@@ -3273,11 +3248,6 @@
    "text": "trang-thai “Hoá đơn / Popup thêm người phụ trách / Chọn trạng thái” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010072",
-   "text": "loại trang-thai, màn cha ADM-HD-010070 — tin cậy trung-binh"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-HD-010072",
    "text": "không có prototype link nào đi vào frame"
@@ -3286,11 +3256,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-HD-010073",
    "text": "trang-thai “Hoá đơn / Popup thêm người phụ trách / Chọn số KPI” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010073",
-   "text": "loại trang-thai, màn cha ADM-HD-010070 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",
@@ -3313,11 +3278,6 @@
    "text": "trang-thai “Hoá đơn / Popup thêm / Chọn Xem lịch sử” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010081",
-   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy trung-binh"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-HD-010081",
    "text": "không có prototype link nào đi vào frame"
@@ -3326,11 +3286,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-HD-010082",
    "text": "trang-thai “Hoá đơn / Popup thêm / Chọn Thêm Lịch Hẹn” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010082",
-   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",
@@ -3408,11 +3363,6 @@
    "text": "trang-thai “Hoá đơn / Popup hồ sơ học viên / Lịch sử lớp” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010120",
-   "text": "loại trang-thai, màn cha ADM-HD-010020 — tin cậy trung-binh"
-  },
-  {
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-HD-010130",
    "text": "popup “Hoá đơn / Popup danh sách lịch hẹn” chưa được requirement nhắc tới"
@@ -3466,11 +3416,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-HD-010231",
    "text": "trang-thai “Hoá đơn / Popup hồ sơ học viên / Popup thêm ghi chú / Mở Loại” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-HD-010231",
-   "text": "loại trang-thai, màn cha ADM-HD-010230 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",

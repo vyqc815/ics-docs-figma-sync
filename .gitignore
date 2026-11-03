@@ -18,3 +18,6 @@ next-env.d.ts
 
 # figma-page check: screenshots and diffs are rebuilt on every check.
 .figma/pages/*/fidelity/*.png
+
+# Python bytecode
+__pycache__/

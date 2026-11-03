@@ -136,14 +136,14 @@
   "ADM-LOP-040210": {
    "id": "ADM-LOP-040210",
    "name": "popup-lich-su-ghi-chu",
-   "title": "Lớp học / Tổng quan / Popup lịch sử ghi chú",
+   "title": "Lớp học / Cài đặt / Học viên / Popup lịch sử ghi chú",
    "kind": "popup",
    "parent": "ADM-LOP-040200",
    "shownOn": "ADM-LOP-040200",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
-   "nodeId": "3348:62669",
+   "nodeId": "2409:147699",
    "inFigma": true,
    "inPageList": false,
    "synced": false,
@@ -3094,12 +3094,7 @@
   {
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-LOP-040210",
-   "text": "popup “Lớp học / Tổng quan / Popup lịch sử ghi chú” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-LOP-040210",
-   "text": "loại popup, màn cha ADM-LOP-040200 — tin cậy trung-binh"
+   "text": "popup “Lớp học / Cài đặt / Học viên / Popup lịch sử ghi chú” chưa được requirement nhắc tới"
   },
   {
    "kind": "thieu-prototype-link",

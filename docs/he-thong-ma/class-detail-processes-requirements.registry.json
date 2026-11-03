@@ -116,7 +116,7 @@
    "kind": "trang-thai",
    "parent": "ADM-LOP-020610",
    "shownOn": "ADM-LOP-020600",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "2711:53620",
@@ -139,7 +139,7 @@
    "kind": "trang-thai",
    "parent": "ADM-LOP-020611",
    "shownOn": "ADM-LOP-020600",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "2711:54002",
@@ -236,7 +236,7 @@
    "kind": "trang-thai",
    "parent": "ADM-LOP-020710",
    "shownOn": "ADM-LOP-020700",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3772:87185",
@@ -259,7 +259,7 @@
    "kind": "trang-thai",
    "parent": "ADM-LOP-020711",
    "shownOn": "ADM-LOP-020700",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "3772:87240",
@@ -356,7 +356,7 @@
    "kind": "trang-thai",
    "parent": "ADM-LOP-020810",
    "shownOn": "ADM-LOP-020800",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "2711:65273",
@@ -379,7 +379,7 @@
    "kind": "trang-thai",
    "parent": "ADM-LOP-020811",
    "shownOn": "ADM-LOP-020800",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "2711:65320",
@@ -1585,19 +1585,9 @@
    "text": "trang-thai “Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Popup thêm tiêu chuẩn / Xem trước” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-LOP-020611",
-   "text": "loại trang-thai, màn cha ADM-LOP-020610 — tin cậy trung-binh"
-  },
-  {
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-LOP-020612",
    "text": "trang-thai “Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Popup thêm tiêu chuẩn / Xem tiêu chí” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-LOP-020612",
-   "text": "loại trang-thai, màn cha ADM-LOP-020611 — tin cậy trung-binh"
   },
   {
    "kind": "figma-chua-co-requirement",
@@ -1630,19 +1620,9 @@
    "text": "trang-thai “Chi tiết lớp học / Quy trình lớp / Popup thêm quy trình / Xem trước” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-LOP-020711",
-   "text": "loại trang-thai, màn cha ADM-LOP-020710 — tin cậy trung-binh"
-  },
-  {
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-LOP-020712",
    "text": "trang-thai “Chi tiết lớp học / Quy trình lớp / Popup thêm quy trình / Xem tiêu chí” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-LOP-020712",
-   "text": "loại trang-thai, màn cha ADM-LOP-020711 — tin cậy thap"
   },
   {
    "kind": "figma-chua-co-requirement",
@@ -1675,19 +1655,9 @@
    "text": "trang-thai “Chi tiết lớp học / CSKH / Popup thêm quy trình CSKH / Xem trước” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-LOP-020811",
-   "text": "loại trang-thai, màn cha ADM-LOP-020810 — tin cậy trung-binh"
-  },
-  {
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-LOP-020812",
    "text": "trang-thai “Chi tiết lớp học / CSKH / Popup thêm quy trình CSKH / Xem tiêu chí” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-LOP-020812",
-   "text": "loại trang-thai, màn cha ADM-LOP-020811 — tin cậy thap"
   },
   {
    "kind": "figma-chua-co-requirement",

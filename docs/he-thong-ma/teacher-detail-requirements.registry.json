@@ -240,7 +240,7 @@
    "synced": true,
    "route": "/chi-tiet-giao-vien/quan-ly-dang-ky-lich",
    "link": "/chi-tiet-giao-vien/quan-ly-dang-ky-lich",
-   "dark": null,
+   "dark": "ADM-GV-020500-DK",
    "openedFrom": [],
    "citedByRequirement": true,
    "regions": [
@@ -265,7 +265,7 @@
    "synced": false,
    "route": null,
    "link": "/chi-tiet-giao-vien/quan-ly-dang-ky-lich?popup=ADM-GV-020520",
-   "dark": null,
+   "dark": "ADM-GV-020520-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [

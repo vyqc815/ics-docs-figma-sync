@@ -367,7 +367,7 @@
    "synced": false,
    "route": null,
    "link": "/danh-sach-hoc-vien?popup=ADM-HV-010012",
-   "dark": null,
+   "dark": "ADM-HV-010012-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": []
@@ -457,7 +457,7 @@
    "synced": false,
    "route": null,
    "link": "/danh-sach-hoc-vien?popup=ADM-HV-010102",
-   "dark": null,
+   "dark": "ADM-HV-010102-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
@@ -480,7 +480,7 @@
    "synced": false,
    "route": null,
    "link": "/danh-sach-hoc-vien?popup=ADM-HV-010202",
-   "dark": null,
+   "dark": "ADM-HV-010202-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [

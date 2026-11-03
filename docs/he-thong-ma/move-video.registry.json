@@ -199,7 +199,7 @@
    "synced": false,
    "route": null,
    "link": "/move-video/danh-sach-video?popup=ADM-MV-020020",
-   "dark": null,
+   "dark": "ADM-MV-020020-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [

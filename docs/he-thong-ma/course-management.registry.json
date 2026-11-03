@@ -159,7 +159,7 @@
    "kind": "trang-thai",
    "parent": "CD-KH-010010",
    "shownOn": "CD-KH-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "2706:43836",
@@ -1479,11 +1479,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "CD-KH-010013",
    "text": "trang-thai “Quản lý khoá học / Popup kích hoạt công khai / ID hợp lệ” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-010013",
-   "text": "loại trang-thai, màn cha CD-KH-010010 — tin cậy trung-binh"
   },
   {
    "kind": "testcase-tro-ma-khong-ton-tai",

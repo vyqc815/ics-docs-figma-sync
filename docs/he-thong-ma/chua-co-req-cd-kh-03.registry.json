@@ -1,0 +1,45 @@
+{
+ "cluster": "chua-co-req-cd-kh-03",
+ "title": "CD-KH-03xx (chưa có requirement)",
+ "figmaPrefix": "CD-KH-03",
+ "requirements": [],
+ "screens": {
+  "CD-KH-030350": {
+   "id": "CD-KH-030350",
+   "name": "generate-loi-tab-chon-kien-thuc-ky-nang",
+   "title": "Học kỳ / Kiểm tra / Generate · Lỗi (tab Chọn kiến thức & kỹ năng)",
+   "kind": "trang-thai",
+   "parent": "CD-KH-030340",
+   "shownOn": "CD-KH-030340",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "6579:75268",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoc-ky/kiem-tra/danh-sach-bai-tap?state=CD-KH-030350",
+   "dark": "CD-KH-030350-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-KH-030350",
+   "text": "trang-thai “Học kỳ / Kiểm tra / Generate · Lỗi (tab Chọn kiến thức & kỹ năng)” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-KH-030350",
+   "text": "không có prototype link nào đi vào frame"
+  }
+ ]
+}

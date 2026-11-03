@@ -73,7 +73,7 @@
    "name": "task-hom-nay",
    "title": "Quy trình / Task hôm nay",
    "kind": "man-chinh",
-   "parent": null,
+   "parent": "SP-TASK-010001",
    "shownOn": "SP-TASK-010000",
    "kindConfidence": "trung-binh",
    "source": "qc",
@@ -88,7 +88,6 @@
    "openedFrom": [],
    "citedByRequirement": true,
    "regions": [
-    "CHS-PR.A01",
     "CHS-PR.A02",
     "CHS-PR.A03",
     "CHS-PR.A04",
@@ -96,12 +95,35 @@
     "CHS-PR.F02"
    ]
   },
+  "SP-TASK-010001": {
+   "id": "SP-TASK-010001",
+   "name": "task-hom-nay-da-chon-them-nguoi",
+   "title": "Quy trình / Task hôm nay · Đã chọn thêm người",
+   "kind": "trang-thai",
+   "parent": "SP-TASK-010000",
+   "shownOn": "SP-TASK-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "6935:389124",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quy-trinh/task-hom-nay-da-chon-them-nguoi",
+   "link": "/quy-trinh/task-hom-nay?state=SP-TASK-010001",
+   "dark": "SP-TASK-010001-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CHS-PR.A01"
+   ]
+  },
   "SP-TASK-020000": {
    "id": "SP-TASK-020000",
    "name": "task-tuan-nay",
    "title": "Quy trình / Task tuần này",
    "kind": "man-chinh",
-   "parent": null,
+   "parent": "SP-TASK-020001",
    "shownOn": "SP-TASK-020000",
    "kindConfidence": "trung-binh",
    "source": "qc",
@@ -116,7 +138,6 @@
    "openedFrom": [],
    "citedByRequirement": true,
    "regions": [
-    "CHS-PR.A01",
     "CHS-PR.A02",
     "CHS-PR.A03",
     "CHS-PR.A04",
@@ -124,12 +145,35 @@
     "CHS-PR.F02"
    ]
   },
+  "SP-TASK-020001": {
+   "id": "SP-TASK-020001",
+   "name": "task-tuan-nay-da-chon-them-nguoi",
+   "title": "Quy trình / Task tuần này · Đã chọn thêm người",
+   "kind": "trang-thai",
+   "parent": "SP-TASK-020000",
+   "shownOn": "SP-TASK-020000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "6935:390606",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quy-trinh/task-tuan-nay-da-chon-them-nguoi",
+   "link": "/quy-trinh/task-tuan-nay?state=SP-TASK-020001",
+   "dark": "SP-TASK-020001-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CHS-PR.A01"
+   ]
+  },
   "SP-TASK-030000": {
    "id": "SP-TASK-030000",
    "name": "ca-truc",
    "title": "Quy trình / Ca trực",
    "kind": "man-chinh",
-   "parent": null,
+   "parent": "SP-TASK-030001",
    "shownOn": "SP-TASK-030000",
    "kindConfidence": "trung-binh",
    "source": "qc",
@@ -144,12 +188,34 @@
    "openedFrom": [],
    "citedByRequirement": true,
    "regions": [
-    "CHS-PR.A01",
     "CHS-PR.A02",
     "CHS-PR.A03",
     "CHS-PR.A04",
     "CHS-PR.F01",
     "CHS-PR.F02"
+   ]
+  },
+  "SP-TASK-030001": {
+   "id": "SP-TASK-030001",
+   "name": "ca-truc-da-chon-them-nguoi",
+   "title": "Quy trình / Ca trực · Đã chọn thêm người",
+   "kind": "trang-thai",
+   "parent": "SP-TASK-030000",
+   "shownOn": "SP-TASK-030000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "6935:391842",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quy-trinh/ca-truc-da-chon-them-nguoi",
+   "link": "/quy-trinh/ca-truc?state=SP-TASK-030001",
+   "dark": "SP-TASK-030001-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CHS-PR.A01"
    ]
   },
   "SP-TASK-030002": {
@@ -168,7 +234,7 @@
    "synced": false,
    "route": null,
    "link": "/quy-trinh/ca-truc?popup=SP-TASK-030002",
-   "dark": null,
+   "dark": "SP-TASK-030002-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": []
@@ -189,7 +255,7 @@
    "synced": false,
    "route": null,
    "link": "/quy-trinh/ca-truc?popup=SP-TASK-030003",
-   "dark": null,
+   "dark": "SP-TASK-030003-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": []
@@ -210,7 +276,7 @@
    "synced": false,
    "route": null,
    "link": "/quy-trinh/ca-truc?popup=SP-TASK-030004",
-   "dark": null,
+   "dark": "SP-TASK-030004-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": []
@@ -231,7 +297,7 @@
    "synced": false,
    "route": null,
    "link": "/quy-trinh/ca-truc?popup=SP-TASK-030010",
-   "dark": null,
+   "dark": "SP-TASK-030010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": []
@@ -243,14 +309,14 @@
    "name": "trang-1-task-hom-nay-task-tuan-nay-task-",
    "title": "Trang 1: Task Hôm Nay / Task Tuần Này / Task Tháng Này / Ca Trực",
    "screens": [
-    "sp-task-010000",
-    "sp-task-020000",
-    "sp-task-030000"
+    "sp-task-010001",
+    "sp-task-020001",
+    "sp-task-030001"
    ],
    "screensGuessed": [
-    "SP-TASK-010000",
-    "SP-TASK-020000",
-    "SP-TASK-030000"
+    "SP-TASK-010001",
+    "SP-TASK-020001",
+    "SP-TASK-030001"
    ],
    "source": "tu-dien",
    "content": "qc",
@@ -266,10 +332,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-010001": [
        {
         "term": "Sidebar",
-        "figmaId": "4915:257614",
+        "figmaId": "6935:389261",
         "layer": "Sidebar · MENU - CLASS HANDLER",
         "confidence": "thap",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -282,7 +348,7 @@
        },
        {
         "term": "Quy Trình",
-        "figmaId": "I4915:257614;4901:224371",
+        "figmaId": "I6935:389261;4901:224371",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -298,10 +364,10 @@
         "inCode": false
        }
       ],
-      "sp-task-020000": [
+      "sp-task-020001": [
        {
         "term": "Sidebar",
-        "figmaId": "4915:257842",
+        "figmaId": "6935:390743",
         "layer": "Sidebar · MENU - CLASS HANDLER",
         "confidence": "thap",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -314,7 +380,7 @@
        },
        {
         "term": "Quy Trình",
-        "figmaId": "I4915:257842;4901:224926",
+        "figmaId": "I6935:390743;4901:224926",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -330,10 +396,10 @@
         "inCode": false
        }
       ],
-      "sp-task-030000": [
+      "sp-task-030001": [
        {
         "term": "Sidebar",
-        "figmaId": "4915:258070",
+        "figmaId": "6935:391979",
         "layer": "Sidebar · MENU - CLASS HANDLER",
         "confidence": "thap",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -346,7 +412,7 @@
        },
        {
         "term": "Quy Trình",
-        "figmaId": "I4915:258070;4901:225148",
+        "figmaId": "I6935:391979;4901:225148",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -381,10 +447,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-010001": [
        {
         "term": "Quy trình",
-        "figmaId": "I4915:257614;4901:224371",
+        "figmaId": "I6935:389261;4901:224371",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -400,10 +466,10 @@
         "inCode": false
        }
       ],
-      "sp-task-020000": [
+      "sp-task-020001": [
        {
         "term": "Quy trình",
-        "figmaId": "I4915:257842;4901:224926",
+        "figmaId": "I6935:390743;4901:224926",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -419,10 +485,10 @@
         "inCode": false
        }
       ],
-      "sp-task-030000": [
+      "sp-task-030001": [
        {
         "term": "Quy trình",
-        "figmaId": "I4915:258070;4901:225148",
+        "figmaId": "I6935:391979;4901:225148",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -454,10 +520,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-010001": [
        {
         "term": "Danh sách task",
-        "figmaId": "3845:49699",
+        "figmaId": "6935:389275",
         "layer": "Danh sách task",
         "confidence": "cao",
         "region": null,
@@ -467,10 +533,10 @@
         "inCode": false
        }
       ],
-      "sp-task-020000": [
+      "sp-task-020001": [
        {
         "term": "Danh sách task",
-        "figmaId": "3857:74052",
+        "figmaId": "6935:390757",
         "layer": "Danh sách task",
         "confidence": "cao",
         "region": null,
@@ -480,10 +546,10 @@
         "inCode": false
        }
       ],
-      "sp-task-030000": [
+      "sp-task-030001": [
        {
         "term": "Danh sách task",
-        "figmaId": "3857:75978",
+        "figmaId": "6935:391993",
         "layer": "Danh sách task",
         "confidence": "cao",
         "region": null,
@@ -509,10 +575,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-010001": [
        {
         "term": "Thời gian",
-        "figmaId": "3845:49781",
+        "figmaId": "6935:389389",
         "layer": "Thời gian",
         "confidence": "cao",
         "region": null,
@@ -522,10 +588,10 @@
         "inCode": false
        }
       ],
-      "sp-task-020000": [
+      "sp-task-020001": [
        {
         "term": "Thời gian",
-        "figmaId": "3857:74166",
+        "figmaId": "6935:390850",
         "layer": "Thời gian",
         "confidence": "cao",
         "region": null,
@@ -535,10 +601,10 @@
         "inCode": false
        }
       ],
-      "sp-task-030000": [
+      "sp-task-030001": [
        {
         "term": "Thời gian",
-        "figmaId": "3857:76092",
+        "figmaId": "6935:392107",
         "layer": "Thời gian",
         "confidence": "cao",
         "region": null,
@@ -564,10 +630,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-010001": [
        {
         "term": "Task Hôm Nay",
-        "figmaId": "I4915:257614;4901:224373",
+        "figmaId": "I6935:389261;4901:224373",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -583,10 +649,10 @@
         "inCode": false
        }
       ],
-      "sp-task-020000": [
+      "sp-task-020001": [
        {
         "term": "Task Hôm Nay",
-        "figmaId": "I4915:257842;4901:224928",
+        "figmaId": "I6935:390743;4901:224928",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -602,10 +668,10 @@
         "inCode": false
        }
       ],
-      "sp-task-030000": [
+      "sp-task-030001": [
        {
         "term": "Task Hôm Nay",
-        "figmaId": "I4915:258070;4901:225150",
+        "figmaId": "I6935:391979;4901:225150",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -643,10 +709,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-010001": [
        {
         "term": "Task Tuần Này",
-        "figmaId": "I4915:257614;4901:224374",
+        "figmaId": "I6935:389261;4901:224374",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -662,10 +728,10 @@
         "inCode": false
        }
       ],
-      "sp-task-020000": [
+      "sp-task-020001": [
        {
         "term": "Task Tuần Này",
-        "figmaId": "I4915:257842;4901:224929",
+        "figmaId": "I6935:390743;4901:224929",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -681,10 +747,10 @@
         "inCode": false
        }
       ],
-      "sp-task-030000": [
+      "sp-task-030001": [
        {
         "term": "Task Tuần Này",
-        "figmaId": "I4915:258070;4901:225151",
+        "figmaId": "I6935:391979;4901:225151",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -739,10 +805,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-010001": [
        {
         "term": "Ca Trực",
-        "figmaId": "I4915:257614;4901:224375",
+        "figmaId": "I6935:389261;4901:224375",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -758,10 +824,10 @@
         "inCode": false
        }
       ],
-      "sp-task-020000": [
+      "sp-task-020001": [
        {
         "term": "Ca Trực",
-        "figmaId": "I4915:257842;4901:224930",
+        "figmaId": "I6935:390743;4901:224930",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -777,10 +843,10 @@
         "inCode": false
        }
       ],
-      "sp-task-030000": [
+      "sp-task-030001": [
        {
         "term": "Ca Trực",
-        "figmaId": "I4915:258070;4901:225152",
+        "figmaId": "I6935:391979;4901:225152",
         "layer": "Card Menu",
         "confidence": "cao",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -828,10 +894,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-010001": [
        {
         "term": "Kiểm tra",
-        "figmaId": "I3857:72467;1048:1255",
+        "figmaId": "I6935:389320;1048:1255",
         "layer": "Badge",
         "confidence": "thap",
         "region": null,
@@ -845,10 +911,10 @@
         "inCode": false
        }
       ],
-      "sp-task-020000": [
+      "sp-task-020001": [
        {
         "term": "Kiểm tra",
-        "figmaId": "I3857:74982;1048:1255",
+        "figmaId": "I6935:390802;1048:1255",
         "layer": "Badge",
         "confidence": "thap",
         "region": null,
@@ -862,10 +928,10 @@
         "inCode": false
        }
       ],
-      "sp-task-030000": [
+      "sp-task-030001": [
        {
         "term": "Kiểm tra",
-        "figmaId": "I3857:76023;1048:1255",
+        "figmaId": "I6935:392038;1048:1255",
         "layer": "Badge",
         "confidence": "thap",
         "region": null,
@@ -895,10 +961,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-010001": [
        {
         "term": "Đánh giá",
-        "figmaId": "3857:72475",
+        "figmaId": "6935:389328",
         "layer": "Task · Đánh giá · Thường xuyên nhắc nhở học ",
         "confidence": "thap",
         "region": null,
@@ -908,10 +974,10 @@
         "inCode": false
        }
       ],
-      "sp-task-020000": [
+      "sp-task-020001": [
        {
         "term": "Đánh giá",
-        "figmaId": "3857:74990",
+        "figmaId": "6935:390810",
         "layer": "Task · Đánh giá · Thường xuyên nhắc nhở học ",
         "confidence": "thap",
         "region": null,
@@ -921,10 +987,10 @@
         "inCode": false
        }
       ],
-      "sp-task-030000": [
+      "sp-task-030001": [
        {
         "term": "Đánh giá",
-        "figmaId": "3857:76031",
+        "figmaId": "6935:392046",
         "layer": "Task · Đánh giá · Thường xuyên nhắc nhở học ",
         "confidence": "thap",
         "region": null,
@@ -948,10 +1014,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-010001": [
        {
         "term": "Task tiến trình",
-        "figmaId": "3857:72440",
+        "figmaId": "6935:389293",
         "layer": "Task · Task tiến trình · Nhắc nhở học viên trước bu",
         "confidence": "thap",
         "region": null,
@@ -961,10 +1027,10 @@
         "inCode": false
        }
       ],
-      "sp-task-020000": [
+      "sp-task-020001": [
        {
         "term": "Task tiến trình",
-        "figmaId": "3857:74955",
+        "figmaId": "6935:390775",
         "layer": "Task · Task tiến trình · Nhắc nhở học viên trước bu",
         "confidence": "thap",
         "region": null,
@@ -974,10 +1040,10 @@
         "inCode": false
        }
       ],
-      "sp-task-030000": [
+      "sp-task-030001": [
        {
         "term": "Task tiến trình",
-        "figmaId": "3857:75996",
+        "figmaId": "6935:392011",
         "layer": "Task · Task tiến trình · Nhắc nhở học viên trước bu",
         "confidence": "thap",
         "region": null,
@@ -1032,10 +1098,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-010001": [
        {
         "term": "Log",
-        "figmaId": "I4915:257614;4901:224383",
+        "figmaId": "I6935:389261;4901:224383",
         "layer": "LOGO CENTER",
         "confidence": "thap",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -1048,10 +1114,10 @@
         "inCode": false
        }
       ],
-      "sp-task-020000": [
+      "sp-task-020001": [
        {
         "term": "Log",
-        "figmaId": "I4915:257842;4901:224948",
+        "figmaId": "I6935:390743;4901:224948",
         "layer": "LOGO CENTER",
         "confidence": "thap",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -1064,10 +1130,10 @@
         "inCode": false
        }
       ],
-      "sp-task-030000": [
+      "sp-task-030001": [
        {
         "term": "Log",
-        "figmaId": "I4915:258070;4901:225170",
+        "figmaId": "I6935:391979;4901:225170",
         "layer": "LOGO CENTER",
         "confidence": "thap",
         "region": "Sidebar · MENU - CLASS HANDLER",
@@ -1088,6 +1154,35 @@
       "Xác thực"
      ],
      "status": "khop"
+    },
+    {
+     "id": "CHS-PR.A01.16",
+     "name": "sidebar-menu-class-handler",
+     "label": "Sidebar · MENU - CLASS HANDLER",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-task-010000": [
+       {
+        "term": "Sidebar · MENU - CLASS HANDLER",
+        "figmaId": "4915:257614",
+        "layer": "Sidebar · MENU - CLASS HANDLER",
+        "confidence": "cao",
+        "region": "Sidebar · MENU - CLASS HANDLER",
+        "owner": "Sidebar · MENU - CLASS HANDLER",
+        "component": "MENU - CLASS HANDLER",
+        "variant": {
+         "Trang": "Quy trình / Task hôm nay"
+        },
+        "inCode": false
+       }
+      ]
+     }
     }
    ]
   },
@@ -2530,6 +2625,51 @@
   }
  ],
  "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "SP-TASK-010001",
+   "text": "trang-thai “Quy trình / Task hôm nay · Đã chọn thêm người” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "SP-TASK-010001",
+   "text": "loại trang-thai, màn cha SP-TASK-010000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "SP-TASK-010001",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "SP-TASK-020001",
+   "text": "trang-thai “Quy trình / Task tuần này · Đã chọn thêm người” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "SP-TASK-020001",
+   "text": "loại trang-thai, màn cha SP-TASK-020000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "SP-TASK-020001",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "SP-TASK-030001",
+   "text": "trang-thai “Quy trình / Ca trực · Đã chọn thêm người” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "SP-TASK-030001",
+   "text": "loại trang-thai, màn cha SP-TASK-030000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "SP-TASK-030001",
+   "text": "không có prototype link nào đi vào frame"
+  },
   {
    "kind": "figma-chua-co-requirement",
    "ref": "SP-TASK-030002",

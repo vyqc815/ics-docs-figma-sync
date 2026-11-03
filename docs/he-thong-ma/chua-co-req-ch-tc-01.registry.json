@@ -4,12 +4,36 @@
  "figmaPrefix": "CH-TC-01",
  "requirements": [],
  "screens": {
+  "CH-TC-010001": {
+   "id": "CH-TC-010001",
+   "name": "chon-t9-2026",
+   "title": "Trang chủ / Thống kê theo tháng / Chọn T9/2026",
+   "kind": "trang-thai",
+   "parent": "CH-TC-010003",
+   "shownOn": "CH-TC-010003",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "7015:12238",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/trang-chu/thong-ke-theo-thang/chon-t9/2026",
+   "link": "/trang-chu/thong-ke-theo-thang?state=CH-TC-010001",
+   "dark": "CH-TC-010001-DK",
+   "openedFrom": [
+    "CH-TC-010002",
+    "CH-TC-010003"
+   ],
+   "citedByRequirement": false,
+   "regions": []
+  },
   "CH-TC-010002": {
    "id": "CH-TC-010002",
    "name": "hien-thu-nhap",
    "title": "Trang chủ / Thống kê theo tháng / Hiện thu nhập",
    "kind": "man-chinh",
-   "parent": "CH-TC-010000",
+   "parent": "CH-TC-010003",
    "shownOn": "CH-TC-010002",
    "kindConfidence": "trung-binh",
    "source": "figma",
@@ -22,7 +46,35 @@
    "link": "/trang-chu/thong-ke-theo-thang/hien-thu-nhap",
    "dark": "CH-TC-010002-DK",
    "openedFrom": [
-    "CH-TC-010000"
+    "CH-TC-010003"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "CH-TC-01.F01",
+    "CH-TC-01.F02",
+    "CH-TC-01.F03"
+   ]
+  },
+  "CH-TC-010003": {
+   "id": "CH-TC-010003",
+   "name": "thong-ke-theo-thang",
+   "title": "Trang chủ / Thống kê theo tháng",
+   "kind": "man-chinh",
+   "parent": "CH-TC-010001",
+   "shownOn": "CH-TC-010003",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "7015:11855",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/trang-chu/thong-ke-theo-thang",
+   "link": "/trang-chu/thong-ke-theo-thang",
+   "dark": "CH-TC-010003-DK",
+   "openedFrom": [
+    "CH-TC-010001",
+    "CH-TC-010002"
    ],
    "citedByRequirement": false,
    "regions": [
@@ -38,7 +90,8 @@
    "name": "header",
    "title": "Header",
    "screens": [
-    "ch-tc-010002"
+    "ch-tc-010002",
+    "ch-tc-010003"
    ],
    "source": "tu-dien",
    "content": "figma",
@@ -83,7 +136,8 @@
    "name": "sidebar-menu-class-handler",
    "title": "Sidebar · MENU - CLASS HANDLER",
    "screens": [
-    "ch-tc-010002"
+    "ch-tc-010002",
+    "ch-tc-010003"
    ],
    "source": "tu-dien",
    "content": "figma",
@@ -126,7 +180,8 @@
    "name": "ngoai-body",
    "title": "(ngoài Body)",
    "screens": [
-    "ch-tc-010002"
+    "ch-tc-010002",
+    "ch-tc-010003"
    ],
    "source": "tu-dien",
    "content": "figma",
@@ -949,8 +1004,23 @@
  "issues": [
   {
    "kind": "figma-chua-co-requirement",
+   "ref": "CH-TC-010001",
+   "text": "trang-thai “Trang chủ / Thống kê theo tháng / Chọn T9/2026” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CH-TC-010001",
+   "text": "loại trang-thai, màn cha CH-TC-010003 — tin cậy trung-binh"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
    "ref": "CH-TC-010002",
    "text": "man-chinh “Trang chủ / Thống kê theo tháng / Hiện thu nhập” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CH-TC-010003",
+   "text": "man-chinh “Trang chủ / Thống kê theo tháng” chưa được requirement nhắc tới"
   }
  ]
 }

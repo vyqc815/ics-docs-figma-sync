@@ -168,7 +168,7 @@
    "kind": "popup",
    "parent": "GV-LOP-030150",
    "shownOn": "GV-LOP-030150",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5292:224382",
@@ -654,11 +654,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "GV-LOP-030161",
    "text": "popup “Chi tiết lớp / Bài học / Popup tiếp tục buổi học” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "GV-LOP-030161",
-   "text": "loại popup, màn cha GV-LOP-030150 — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",

@@ -25,9 +25,9 @@ Requirement: `curriculum_management_requirement/category_management/detail_categ
 | `CD-DM-010020` | Mindset | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010020` | Figma | trung bình |
 | `CD-DM-010030` | Tiêu chuẩn giáo trình | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010030` | Figma | trung bình |
 | `CD-DM-010040` | Hướng dẫn giảng dạy | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010040` | Figma | trung bình |
-| `CD-DM-010057` | Thành công | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010057` | Figma | trung bình |
+| `CD-DM-010057` | Thành công | Trạng thái | CD-DM-010010 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010057` | Figma | cao |
 | `CD-DM-010060` | Popup kích hoạt công khai | Popup | CD-DM-010000 | CD-DM-010000 | — | `/quan-ly-danh-muc?popup=CD-DM-010060` | Figma | cao |
-| `CD-DM-010062` | Điền sai | Trạng thái | CD-DM-010060 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010062` | Figma | trung bình |
+| `CD-DM-010062` | Điền sai | Trạng thái | CD-DM-010060 | CD-DM-010000 | — | `/quan-ly-danh-muc?state=CD-DM-010062` | Figma | cao |
 
 ## 4. Khu vực và item
 
@@ -140,7 +140,7 @@ Frame: `CD-DM-010000` · Nguồn nội dung: Figma
 - Chưa sync (7): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`
 - Frame Figma chưa có requirement (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Thiếu prototype link đi vào (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
-- Phân loại cần design duyệt (5): `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010062`
+- Phân loại cần design duyệt (3): `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`
 - REQ/EX chưa có testcase (5): `EX03`, `EX06`, `EX07`, `EX08`, `EX09`
 
 ## 9. Chi tiết dựng

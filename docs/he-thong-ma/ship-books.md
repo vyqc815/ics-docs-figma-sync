@@ -26,10 +26,10 @@ Requirement: `ship_books/ship_books/ship_books.md` — Ship Sách (tiền tố `
 | `ADM-SS-010001` | Chọn 1 đơn · Xuất Excel | Trạng thái | ADM-SS-010000 | ADM-SS-010000 | — | `/ship-sach/danh-sach-don-sach?state=ADM-SS-010001` | Figma | trung bình |
 | `ADM-SS-010002` | Chọn tất cả · Xuất Excel | Trạng thái | ADM-SS-010000 | ADM-SS-010000 | — | `/ship-sach/danh-sach-don-sach?state=ADM-SS-010002` | Figma | trung bình |
 | `ADM-SS-010010` | Popup thêm đơn sách | Popup | ADM-SS-010000 | ADM-SS-010000 | — | `/ship-sach/danh-sach-don-sach?popup=ADM-SS-010010` | Figma | cao |
-| `ADM-SS-010012` | Đã chọn học viên có sẵn | Trạng thái | ADM-SS-010010 | ADM-SS-010000 | — | `/ship-sach/danh-sach-don-sach?state=ADM-SS-010012` | Figma | trung bình |
+| `ADM-SS-010012` | Đã chọn học viên có sẵn | Trạng thái | ADM-SS-010010 | ADM-SS-010000 | — | `/ship-sach/danh-sach-don-sach?state=ADM-SS-010012` | Figma | cao |
 | `ADM-SS-010020` | Popup xác nhận xoá đơn sách | Popup | ADM-SS-010000 | ADM-SS-010000 | — | `/ship-sach/danh-sach-don-sach?popup=ADM-SS-010020` | Figma | cao |
 | `ADM-SS-010032` | Đang mở | Dropdown | ADM-SS-010000 | ADM-SS-010000 | — | `/ship-sach/danh-sach-don-sach?popup=ADM-SS-010032` | Figma | cao |
-| `ADM-SS-010034` | Đã chọn mẫu | Trạng thái | ADM-SS-010000 | ADM-SS-010000 | — | `/ship-sach/danh-sach-don-sach?state=ADM-SS-010034` | Figma | trung bình |
+| `ADM-SS-010034` | Đã chọn mẫu | Trạng thái | ADM-SS-010000 | ADM-SS-010000 | — | `/ship-sach/danh-sach-don-sach?state=ADM-SS-010034` | Figma | cao |
 | `ADM-SS-010040` | Popup cập nhật đơn sách | Popup | ADM-SS-010000 | ADM-SS-010000 | — | `/ship-sach/danh-sach-don-sach?popup=ADM-SS-010040` | Figma | cao |
 
 ## 4. Khu vực và item
@@ -120,7 +120,7 @@ Frame: `ADM-SS-010000` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - Frame Figma chưa có requirement (8): `ADM-SS-010001`, `ADM-SS-010002`, `ADM-SS-010010`, `ADM-SS-010012`, `ADM-SS-010020`, `ADM-SS-010032`, `ADM-SS-010034`, `ADM-SS-010040`
-- Phân loại cần design duyệt (4): `ADM-SS-010001`, `ADM-SS-010002`, `ADM-SS-010012`, `ADM-SS-010034`
+- Phân loại cần design duyệt (2): `ADM-SS-010001`, `ADM-SS-010002`
 - Thiếu prototype link đi vào (7): `ADM-SS-010001`, `ADM-SS-010002`, `ADM-SS-010010`, `ADM-SS-010012`, `ADM-SS-010020`, `ADM-SS-010034`, `ADM-SS-010040`
 - REQ/EX chưa có testcase (2): `REQ01`, `EX05`
 

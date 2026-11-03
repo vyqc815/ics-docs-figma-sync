@@ -256,7 +256,7 @@
    "kind": "popup",
    "parent": "CD-KH-050100",
    "shownOn": "CD-KH-050100",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "qc",
    "content": "figma",
    "nodeId": "6646:120233",
@@ -5602,11 +5602,6 @@
    "kind": "thieu-prototype-link",
    "ref": "CD-KH-050150",
    "text": "không có prototype link nào đi vào frame"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-050155",
-   "text": "loại popup, màn cha CD-KH-050100 — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",

@@ -57,7 +57,7 @@
    "kind": "popup",
    "parent": "ADM-KS-020020",
    "shownOn": "ADM-KS-020020",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "4885:8949",
@@ -713,11 +713,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-KS-020030",
    "text": "popup “Khảo sát / Tạo khảo sát cho lớp / Popup xem trước” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-KS-020030",
-   "text": "loại popup, màn cha ADM-KS-020020 — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",

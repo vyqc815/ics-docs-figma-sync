@@ -24,16 +24,16 @@ Requirement: `management_requirement/class_management/class_detail_processes_req
 |---|---|---|---|---|---|---|---|---|
 | `ADM-LOP-020604` | Trống | Trạng thái | ADM-LOP-020600 | ADM-LOP-020600 | — | `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020604` | Figma | trung bình |
 | `ADM-LOP-020610` | Popup thêm tiêu chuẩn | Popup | ADM-LOP-020600 | ADM-LOP-020600 | — | `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?popup=ADM-LOP-020610` | Figma | cao |
-| `ADM-LOP-020611` | Xem trước | Trạng thái | ADM-LOP-020610 | ADM-LOP-020600 | ADM-LOP-020610 | `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020611` | Figma | trung bình |
-| `ADM-LOP-020612` | Xem tiêu chí | Trạng thái | ADM-LOP-020611 | ADM-LOP-020600 | ADM-LOP-020611 | `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020612` | Figma | trung bình |
+| `ADM-LOP-020611` | Xem trước | Trạng thái | ADM-LOP-020610 | ADM-LOP-020600 | ADM-LOP-020610 | `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020611` | Figma | cao |
+| `ADM-LOP-020612` | Xem tiêu chí | Trạng thái | ADM-LOP-020611 | ADM-LOP-020600 | ADM-LOP-020611 | `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020612` | Figma | cao |
 | `ADM-LOP-020704` | Trống | Trạng thái | ADM-LOP-020700 | ADM-LOP-020700 | — | `/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020704` | Figma | trung bình |
 | `ADM-LOP-020710` | Popup thêm quy trình | Popup | ADM-LOP-020700 | ADM-LOP-020700 | — | `/chi-tiet-lop-hoc/quy-trinh-lop?popup=ADM-LOP-020710` | Figma | cao |
-| `ADM-LOP-020711` | Xem trước | Trạng thái | ADM-LOP-020710 | ADM-LOP-020700 | ADM-LOP-020710 | `/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020711` | Figma | trung bình |
-| `ADM-LOP-020712` | Xem tiêu chí | Trạng thái | ADM-LOP-020711 | ADM-LOP-020700 | ADM-LOP-020711 | `/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020712` | Figma | thấp |
+| `ADM-LOP-020711` | Xem trước | Trạng thái | ADM-LOP-020710 | ADM-LOP-020700 | ADM-LOP-020710 | `/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020711` | Figma | cao |
+| `ADM-LOP-020712` | Xem tiêu chí | Trạng thái | ADM-LOP-020711 | ADM-LOP-020700 | ADM-LOP-020711 | `/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020712` | Figma | cao |
 | `ADM-LOP-020804` | Trống | Trạng thái | ADM-LOP-020800 | ADM-LOP-020800 | — | `/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020804` | Figma | trung bình |
 | `ADM-LOP-020810` | Popup thêm quy trình CSKH | Popup | ADM-LOP-020800 | ADM-LOP-020800 | — | `/chi-tiet-lop-hoc/cskh?popup=ADM-LOP-020810` | Figma | cao |
-| `ADM-LOP-020811` | Xem trước | Trạng thái | ADM-LOP-020810 | ADM-LOP-020800 | ADM-LOP-020810 | `/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020811` | Figma | trung bình |
-| `ADM-LOP-020812` | Xem tiêu chí | Trạng thái | ADM-LOP-020811 | ADM-LOP-020800 | ADM-LOP-020811 | `/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020812` | Figma | thấp |
+| `ADM-LOP-020811` | Xem trước | Trạng thái | ADM-LOP-020810 | ADM-LOP-020800 | ADM-LOP-020810 | `/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020811` | Figma | cao |
+| `ADM-LOP-020812` | Xem tiêu chí | Trạng thái | ADM-LOP-020811 | ADM-LOP-020800 | ADM-LOP-020811 | `/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020812` | Figma | cao |
 | `ADM-LOP-020904` | Trống | Trạng thái | ADM-LOP-020800 | ADM-LOP-020800 | — | `/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020904` | Figma | trung bình |
 
 ## 4. Khu vực và item
@@ -178,7 +178,7 @@ Frame: `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
 - Chưa khớp tự động (4): `A03.01`, `A03.02`, `A03.03`, `A03.04`
 - Chưa sync (11): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`
 - Frame Figma chưa có requirement (13): `ADM-LOP-020604`, `ADM-LOP-020610`, `ADM-LOP-020611`, `ADM-LOP-020612`, `ADM-LOP-020704`, `ADM-LOP-020710`, `ADM-LOP-020711`, `ADM-LOP-020712`, `ADM-LOP-020804`, `ADM-LOP-020810`, `ADM-LOP-020811`, `ADM-LOP-020812`, `ADM-LOP-020904`
-- Phân loại cần design duyệt (10): `ADM-LOP-020604`, `ADM-LOP-020611`, `ADM-LOP-020612`, `ADM-LOP-020704`, `ADM-LOP-020711`, `ADM-LOP-020712`, `ADM-LOP-020804`, `ADM-LOP-020811`, `ADM-LOP-020812`, `ADM-LOP-020904`
+- Phân loại cần design duyệt (4): `ADM-LOP-020604`, `ADM-LOP-020704`, `ADM-LOP-020804`, `ADM-LOP-020904`
 - Thiếu prototype link đi vào (7): `ADM-LOP-020604`, `ADM-LOP-020610`, `ADM-LOP-020704`, `ADM-LOP-020710`, `ADM-LOP-020804`, `ADM-LOP-020810`, `ADM-LOP-020904`
 
 ## 9. Chi tiết dựng

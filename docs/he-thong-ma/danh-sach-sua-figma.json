@@ -1563,8 +1563,7 @@
    "region": "CM-TE.A03",
    "regionTitle": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
    "screens": [
-    "CD-KH-030346",
-    "CD-KH-030350"
+    "CD-KH-030300"
    ],
    "kind": "khac-figma",
    "requirement": "course_management/semester/test/test.md",
@@ -1572,8 +1571,7 @@
    "text": "Khác Figma: bộ câu hỏi đang vẽ thành màn riêng `CD-KH-030340` (mở từ `>`); requirement đặt trong tab `Bộ Câu Hỏi` của popup (**UI cần bổ sung**).",
    "id": "FIX-093",
    "links": {
-    "CD-KH-030346": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815",
-    "CD-KH-030350": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268"
+    "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
    }
   },
   {
@@ -1582,74 +1580,15 @@
    "region": "CM-TE.A03",
    "regionTitle": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
    "screens": [
-    "CD-KH-030346",
-    "CD-KH-030350"
+    "CD-KH-030300"
    ],
-   "kind": "thieu-thiet-ke",
+   "kind": "khu-vuc-can-bo-sung",
    "requirement": "course_management/semester/test/test.md",
-   "item": "CM-TE.A03.01",
-   "text": "Thêm `Nút thao tác`: `Import Excel`, `Export Excel`, `+ Thêm câu hỏi`, `Generate` (Tạo câu hỏi bằng AI), `Soát lỗi bằng AI`.",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
    "id": "FIX-094",
    "links": {
-    "CD-KH-030346": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815",
-    "CD-KH-030350": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268"
-   }
-  },
-  {
-   "cluster": "test",
-   "clusterTitle": "Học Kỳ - Tab Kiểm tra",
-   "region": "CM-TE.A03",
-   "regionTitle": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
-   "screens": [
-    "CD-KH-030346",
-    "CD-KH-030350"
-   ],
-   "kind": "thieu-thiet-ke",
-   "requirement": "course_management/semester/test/test.md",
-   "item": "CM-TE.A03.02",
-   "text": "Thêm `Thẻ tổng quan`: `Tổng số câu`, `Thời gian làm bài` (từ tab Thông tin), `Cơ cấu theo dạng câu`; tag `Thang 10`.",
-   "id": "FIX-095",
-   "links": {
-    "CD-KH-030346": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815",
-    "CD-KH-030350": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268"
-   }
-  },
-  {
-   "cluster": "test",
-   "clusterTitle": "Học Kỳ - Tab Kiểm tra",
-   "region": "CM-TE.A03",
-   "regionTitle": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
-   "screens": [
-    "CD-KH-030346",
-    "CD-KH-030350"
-   ],
-   "kind": "thieu-thiet-ke",
-   "requirement": "course_management/semester/test/test.md",
-   "item": "CM-TE.A03.03",
-   "text": "Thêm `Bảng câu hỏi`: Cột `STT`, `Bài tập (câu hỏi)`, `Loại câu`, `Đáp án đúng`, `Kiến thức / Kỹ năng`, `Điểm`, `⋮`; tìm kiếm, lọc `Loại câu`, `Kiến thức / Kỹ năng`; câu hỏi con mở / thu.",
-   "id": "FIX-096",
-   "links": {
-    "CD-KH-030346": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815",
-    "CD-KH-030350": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268"
-   }
-  },
-  {
-   "cluster": "test",
-   "clusterTitle": "Học Kỳ - Tab Kiểm tra",
-   "region": "CM-TE.A03",
-   "regionTitle": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
-   "screens": [
-    "CD-KH-030346",
-    "CD-KH-030350"
-   ],
-   "kind": "thieu-thiet-ke",
-   "requirement": "course_management/semester/test/test.md",
-   "item": "CM-TE.A03.04",
-   "text": "Thêm `Thêm / sửa câu, Import / Export, Generate, Soát lỗi`: Theo `homework-test.md`: soạn câu bắt buộc Số câu, Loại câu, Kiến thức / Kỹ năng; Excel cùng cột bảng; Generate không giới hạn số câu, chọn dòng rồi thêm; câu AI có tag `AI`.",
-   "id": "FIX-097",
-   "links": {
-    "CD-KH-030346": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815",
-    "CD-KH-030350": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268"
+    "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
    }
   }
  ]

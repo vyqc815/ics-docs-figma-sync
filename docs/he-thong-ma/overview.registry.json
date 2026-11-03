@@ -63,55 +63,23 @@
  "screens": {
   "CH-TC-010000": {
    "id": "CH-TC-010000",
-   "name": "thong-ke-tong-quan",
-   "title": "Trang chủ / Thống kê tổng quan",
-   "kind": "man-chinh",
-   "parent": "CH-TC-010001",
-   "shownOn": "CH-TC-010000",
-   "kindConfidence": "trung-binh",
+   "name": null,
+   "title": null,
+   "kind": "chua-co-frame",
+   "parent": null,
+   "shownOn": null,
+   "kindConfidence": null,
    "source": "qc",
-   "content": "figma",
-   "nodeId": "3778:20022",
-   "inFigma": true,
+   "content": "qc",
+   "nodeId": null,
+   "inFigma": false,
    "inPageList": true,
    "synced": true,
    "route": "/trang-chu/thong-ke-tong-quan",
-   "link": "/trang-chu/thong-ke-tong-quan",
-   "dark": "CH-TC-010000-DK",
-   "openedFrom": [
-    "CH-TC-010001",
-    "CH-TC-010002"
-   ],
+   "link": null,
+   "dark": null,
+   "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "CHS-OV.A01",
-    "CHS-OV.F01",
-    "CHS-OV.F02",
-    "CHS-OV.F03"
-   ]
-  },
-  "CH-TC-010001": {
-   "id": "CH-TC-010001",
-   "name": "chon-t9-2026",
-   "title": "Trang chủ / Thống kê theo tháng / Chọn T9/2026",
-   "kind": "trang-thai",
-   "parent": "CH-TC-010000",
-   "shownOn": "CH-TC-010000",
-   "kindConfidence": "trung-binh",
-   "source": "figma",
-   "content": "figma",
-   "nodeId": "7015:12238",
-   "inFigma": true,
-   "inPageList": true,
-   "synced": true,
-   "route": "/trang-chu/thong-ke-theo-thang/chon-t9/2026",
-   "link": "/trang-chu/thong-ke-tong-quan?state=CH-TC-010001",
-   "dark": "CH-TC-010001-DK",
-   "openedFrom": [
-    "CH-TC-010000",
-    "CH-TC-010002"
-   ],
-   "citedByRequirement": false,
    "regions": []
   }
  },
@@ -120,12 +88,8 @@
    "id": "CHS-OV.A01",
    "name": "trang-1-thong-ke-tong-quan",
    "title": "Trang 1: Thống kê tổng quan",
-   "screens": [
-    "ch-tc-010000"
-   ],
-   "screensGuessed": [
-    "CH-TC-010000"
-   ],
+   "screens": [],
+   "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
    "requirement": "class_handler_support/overview/overview.md",
@@ -139,40 +103,14 @@
      "spec": "Chọn nhiều, danh sách trung tâm | Tất cả",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Trung tâm",
-        "figmaId": "3778:20158",
-        "layer": "Filter · Loại lớp",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Loại lớp",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trung tâm",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC01",
       "CHS-OV.TC02"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.02",
@@ -181,39 +119,13 @@
      "spec": "Chọn nhiều: `Lớp 1-1`, `Lớp chung`, `Lớp demo` | Tất cả",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Loại lớp",
-        "figmaId": "6247:155137",
-        "layer": "Filter · Loại lớp",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Loại lớp",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Loại lớp",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC04"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.03",
@@ -222,39 +134,13 @@
      "spec": "Chọn nhiều, danh sách khoá học đã define | Tất cả",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Khoá học",
-        "figmaId": "3778:20159",
-        "layer": "Filter · Khoá học",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Khoá học",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Khoá học",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC04"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.04",
@@ -263,39 +149,11 @@
      "spec": "Chọn nhiều, **chỉ** `Đang học`, `Hoàn thành` | `Đang học`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Đang học",
-        "figmaId": "3778:20160",
-        "layer": "Filter · Đang học",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Đang học",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "Đang học",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Trạng thái (nút hiển thị giá trị đang chọn)"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.05",
@@ -304,39 +162,11 @@
      "spec": "Chọn 1: Tới hạn, Hôm nay, Hôm qua, Hôm nay và hôm qua, Tuần này, Tuần trước, Tháng này, Tháng trước, 3 tháng trước, Năm nay, Năm trước, Tùy chọn (phạm vi từng giá trị theo Danh sách lớp) | `Tháng này`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Tháng này",
-        "figmaId": "3778:20161",
-        "layer": "Filter · Tháng này",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Tháng này",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "Tháng này",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thời gian (nút hiển thị giá trị đang chọn)"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.06",
@@ -345,39 +175,13 @@
      "spec": "Chọn nhiều mốc ngày lớp: `Ngày bắt đầu dự kiến`, `Ngày kết thúc dự kiến`, `Ngày bắt đầu chính thức`, `Ngày kết thúc chính thức`; badge số trên nút = số mốc đã chọn | `Ngày kết thúc chính thức`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Chế độ lọc",
-        "figmaId": "3778:20162",
-        "layer": "Filter · Chế độ lọc",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Chế độ lọc",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": true,
-         "Clear": false,
-         "Leading": false,
-         "Value": "Chế độ lọc",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC03"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.07",
@@ -389,11 +193,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Ngày bắt đầu (dự kiến/chính thức)",
-      "≤ Đến"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.08",
@@ -405,11 +206,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Ngày kết thúc (dự kiến/chính thức)",
-      "≥ Từ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.09",
@@ -418,40 +216,14 @@
      "spec": "`Σ (Giá trị HĐ × KPI PTL / Tổng KPI HĐ)` trên các hoá đơn của PTL; phần của hoá đơn có KPI PTL âm thì trừ ra. Hoá đơn có `Tổng KPI HĐ = 0` không tham gia (không chia 0). | `2.027.363.000 đ` (làm tròn đến đồng)",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Doanh Thu",
-        "figmaId": "3778:24833",
-        "layer": "Thẻ chỉ số · Doanh thu",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Doanh thu",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "2.027.363.000 đ",
-         "Có đơn vị": false,
-         "Biểu tượng": "2925:24887",
-         "Có phần thêm": false,
-         "Tiêu đề": "Doanh thu",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ icon"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC04",
       "CHS-OV.TC13"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.10",
@@ -460,40 +232,14 @@
      "spec": "`Σ KPI PTL` trên các hoá đơn của PTL. Không lọc theo trạng thái người phụ trách. | 2 chữ số thập phân, VD `370.70`; âm có dấu `-`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Số KPI",
-        "figmaId": "3778:24840",
-        "layer": "Thẻ chỉ số · Số KPI",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Số KPI",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "370.70",
-         "Có đơn vị": false,
-         "Biểu tượng": "3065:43736",
-         "Có phần thêm": false,
-         "Tiêu đề": "Số KPI",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ icon"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC04",
       "CHS-OV.TC13"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.11",
@@ -502,40 +248,14 @@
      "spec": "`Σ KPI PTL / Σ Tổng KPI HĐ × 100` trên các hoá đơn của PTL. Mẫu = 0 hoặc không có hoá đơn → `0%`. | `%`, 1 chữ số thập phân (bỏ `.0`)",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "KPI Nhận Được",
-        "figmaId": "3778:24847",
-        "layer": "Thẻ chỉ số · KPI nhận được",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · KPI nhận được",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "100%",
-         "Có đơn vị": false,
-         "Biểu tượng": "3065:43736",
-         "Có phần thêm": false,
-         "Tiêu đề": "KPI nhận được",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ icon"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC04",
       "CHS-OV.TC13"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.12",
@@ -544,40 +264,14 @@
      "spec": "Tổng tiền thực tế các khoản KPI `Đã xác nhận` có người nhận là Phụ trách lớp đang đăng nhập, **thuộc các lớp trong tập lớp**. Không tính Mới/Đã hủy/Đã xóa; không dùng giá trị gốc mẫu. | `58.930.000 đ`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "KPI Lớp",
-        "figmaId": "3778:24854",
-        "layer": "Thẻ chỉ số · KPI lớp",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · KPI lớp",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "58.930.000 đ",
-         "Có đơn vị": false,
-         "Biểu tượng": "3065:43736",
-         "Có phần thêm": false,
-         "Tiêu đề": "KPI lớp",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ icon"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC05",
       "CHS-OV.TC09"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.13",
@@ -586,40 +280,14 @@
      "spec": "Đếm lớp trong tập. | Số nguyên",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Số Lớp",
-        "figmaId": "3778:24862",
-        "layer": "Thẻ chỉ số · Số lớp",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Số lớp",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "1",
-         "Có đơn vị": false,
-         "Biểu tượng": "1966:7617",
-         "Có phần thêm": false,
-         "Tiêu đề": "Số lớp",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ icon"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC01",
       "CHS-OV.TC09"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.14",
@@ -628,40 +296,14 @@
      "spec": "Tỷ lệ đi học mỗi học viên = lượt `Có mặt`, `Vào trễ`, `Ra sớm`, `Vào trễ & Ra sớm` / tổng lượt phải tham gia × 100; thẻ = trung bình cộng của mọi học viên trong các lớp của tập. | 1 chữ số thập phân `%`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Đi Học",
-        "figmaId": "3778:24869",
-        "layer": "Thẻ chỉ số · Đi học",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Đi học",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "78.9%",
-         "Có đơn vị": false,
-         "Biểu tượng": "1053:2222",
-         "Có phần thêm": false,
-         "Tiêu đề": "Đi học",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ icon"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC06",
       "CHS-OV.TC09"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.15",
@@ -670,40 +312,14 @@
      "spec": "Tỷ lệ mỗi học viên = BTVN đã nộp / BTVN được giao × 100; thẻ = trung bình cộng của mọi học viên trong tập. | 1 chữ số thập phân `%`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "BTVN",
-        "figmaId": "3778:24876",
-        "layer": "Thẻ chỉ số · BTVN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · BTVN",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "87.3%",
-         "Có đơn vị": false,
-         "Biểu tượng": "738:25434",
-         "Có phần thêm": false,
-         "Tiêu đề": "BTVN",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ icon"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC06",
       "CHS-OV.TC09"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.16",
@@ -712,40 +328,14 @@
      "spec": "Tính tỷ lệ lên kỳ của từng lớp (bảng bên dưới), rồi lấy trung bình cộng các lớp trong tập, mỗi lớp trọng số bằng nhau. | 1 chữ số thập phân `%`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Lên Kỳ",
-        "figmaId": "3778:24883",
-        "layer": "Thẻ chỉ số · Lên kỳ",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Lên kỳ",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "0%",
-         "Có đơn vị": false,
-         "Biểu tượng": "2860:16339",
-         "Có phần thêm": false,
-         "Tiêu đề": "Lên kỳ",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ icon"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC12",
       "CHS-OV.TC09"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.17",
@@ -757,11 +347,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Badge hạng tổng",
-      "getEvaluate(trung bình Q)"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.18",
@@ -770,32 +357,14 @@
      "spec": "Số học viên ở trạng thái `Up-sale`, `Force`, `Super up-sale` hoặc `Hoàn thành` | Số học viên còn tính = tổng học viên, loại `Remove`, `Moved`, `Audit`, `Testing`, `Viewer`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Hoàn thành",
-        "figmaId": "3778:34502",
-        "layer": "CLass Status",
-        "confidence": "cao",
-        "region": null,
-        "owner": "CLass Status",
-        "component": "CLass Status",
-        "variant": {
-         "Property 1": "Hoàn thành"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-OV.TC02",
       "CHS-OV.TC12"
      ],
-     "missingTerms": [
-      "Up-sale"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-OV.A01.19",
@@ -804,492 +373,11 @@
      "spec": "Số học viên `Đang học` | Tổng học viên − số học viên chuyển lớp (`Moved`)",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Đang học",
-        "figmaId": "3778:20160",
-        "layer": "Filter · Đang học",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Đang học",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "Đang học",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [
-      "Chưa hoàn thành (Đang học)"
-     ],
-     "status": "khop"
-    }
-   ]
-  },
-  {
-   "id": "CHS-OV.F01",
-   "name": "header",
-   "title": "Header",
-   "screens": [
-    "ch-tc-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CHS-OV.F01.01",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "3778:20072",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": "Header",
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Phụ Trách Lớp",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  },
-  {
-   "id": "CHS-OV.F02",
-   "name": "sidebar-menu-class-handler",
-   "title": "Sidebar · MENU - CLASS HANDLER",
-   "screens": [
-    "ch-tc-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CHS-OV.F02.01",
-     "name": "sidebar-menu-class-handler",
-     "label": "Sidebar · MENU - CLASS HANDLER",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Sidebar · MENU - CLASS HANDLER",
-        "figmaId": "4915:257387",
-        "layer": "Sidebar · MENU - CLASS HANDLER",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Sidebar · MENU - CLASS HANDLER",
-        "component": "MENU - CLASS HANDLER",
-        "variant": {
-         "Trang": "Trang chủ"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  },
-  {
-   "id": "CHS-OV.F03",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "ch-tc-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CHS-OV.F03.01",
-     "name": "progress-diem-danh-gia-a-f",
-     "label": "Progress/Điểm Đánh Giá (A-F)",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Progress/Điểm Đánh Giá (A-F)",
-        "figmaId": "3778:24891",
-        "layer": "Progress/Điểm Đánh Giá (A-F)",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Progress/Điểm Đánh Giá (A-F)",
-        "component": "Progress/Điểm Đánh Giá (A-F)",
-        "variant": {
-         "Property 1": "D nhỏ",
-         "Size": "36x32"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-OV.F03.02",
-     "name": "the-chi-so-si-so",
-     "label": "Thẻ chỉ số · Sĩ số",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Thẻ chỉ số · Sĩ số",
-        "figmaId": "3778:24905",
-        "layer": "Thẻ chỉ số · Sĩ số",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Sĩ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "8/16",
-         "Có đơn vị": false,
-         "Có phần thêm": false,
-         "Tiêu đề": "Sĩ số",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ nhấn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-OV.F03.03",
-     "name": "the-chi-so-di-hoc",
-     "label": "Thẻ chỉ số · Đi học",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Thẻ chỉ số · Đi học",
-        "figmaId": "3778:24943",
-        "layer": "Thẻ chỉ số · Đi học",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Đi học",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "79%",
-         "Có đơn vị": false,
-         "Có phần thêm": false,
-         "Tiêu đề": "Đi học",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ nhấn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-OV.F03.04",
-     "name": "the-chi-so-btvn",
-     "label": "Thẻ chỉ số · BTVN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Thẻ chỉ số · BTVN",
-        "figmaId": "3778:24981",
-        "layer": "Thẻ chỉ số · BTVN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · BTVN",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "87%",
-         "Có đơn vị": false,
-         "Có phần thêm": false,
-         "Tiêu đề": "BTVN",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ nhấn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-OV.F03.05",
-     "name": "the-chi-so-diem-kt",
-     "label": "Thẻ chỉ số · Điểm KT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Thẻ chỉ số · Điểm KT",
-        "figmaId": "3778:25020",
-        "layer": "Thẻ chỉ số · Điểm KT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Điểm KT",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "9",
-         "Có đơn vị": false,
-         "Có phần thêm": false,
-         "Tiêu đề": "Điểm KT",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ nhấn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-OV.F03.06",
-     "name": "the-chi-so-diem-btvn",
-     "label": "Thẻ chỉ số · Điểm BTVN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Thẻ chỉ số · Điểm BTVN",
-        "figmaId": "3778:25058",
-        "layer": "Thẻ chỉ số · Điểm BTVN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Điểm BTVN",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "9.6",
-         "Có đơn vị": false,
-         "Có phần thêm": false,
-         "Tiêu đề": "Điểm BTVN",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ nhấn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-OV.F03.07",
-     "name": "the-chi-so-thoi-gian-hoc",
-     "label": "Thẻ chỉ số · Thời gian học",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Thẻ chỉ số · Thời gian học",
-        "figmaId": "3778:25096",
-        "layer": "Thẻ chỉ số · Thời gian học",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Thời gian học",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "00:21:12",
-         "Có đơn vị": false,
-         "Có phần thêm": false,
-         "Tiêu đề": "Thời gian học",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ nhấn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-OV.F03.08",
-     "name": "class-status",
-     "label": "CLass Status",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "CLass Status",
-        "figmaId": "3778:20910",
-        "layer": "CLass Status",
-        "confidence": "cao",
-        "region": null,
-        "owner": "CLass Status",
-        "component": "CLass Status",
-        "variant": {
-         "Property 1": "Đang học"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-OV.F03.09",
-     "name": "global-progress-bar",
-     "label": "Global Progress Bar",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "Global Progress Bar",
-        "figmaId": "3778:25136",
-        "layer": "Global Progress Bar",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Global Progress Bar",
-        "component": "Global Progress Bar",
-        "variant": {
-         "Property 1": "Progress ngang có thông số"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-OV.F03.10",
-     "name": "percent",
-     "label": "PERCENT %",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-tc-010000": [
-       {
-        "term": "PERCENT %",
-        "figmaId": "3778:20942",
-        "layer": "PERCENT %",
-        "confidence": "cao",
-        "region": null,
-        "owner": "PERCENT %",
-        "component": "PERCENT %",
-        "variant": {
-         "Property 1": "ĐN 4"
-        },
-        "inCode": false
-       }
-      ]
-     }
+     "status": "chua-co-spec"
     }
    ]
   }
@@ -1608,14 +696,9 @@
  ],
  "issues": [
   {
-   "kind": "figma-chua-co-requirement",
-   "ref": "CH-TC-010001",
-   "text": "trang-thai “Trang chủ / Thống kê theo tháng / Chọn T9/2026” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CH-TC-010001",
-   "text": "loại trang-thai, màn cha CH-TC-010000 — tin cậy trung-binh"
+   "kind": "qc-ma-khong-co-tren-figma",
+   "ref": "CH-TC-010000",
+   "text": "requirement nhắc mã này nhưng Figma không có frame"
   },
   {
    "kind": "req-chua-co-testcase",

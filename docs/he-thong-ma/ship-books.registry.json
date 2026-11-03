@@ -160,7 +160,7 @@
    "kind": "trang-thai",
    "parent": "ADM-SS-010010",
    "shownOn": "ADM-SS-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "2911:44254",
@@ -190,7 +190,7 @@
    "synced": false,
    "route": null,
    "link": "/ship-sach/danh-sach-don-sach?popup=ADM-SS-010020",
-   "dark": null,
+   "dark": "ADM-SS-010020-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
@@ -225,7 +225,7 @@
    "kind": "trang-thai",
    "parent": "ADM-SS-010000",
    "shownOn": "ADM-SS-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "2911:44525",
@@ -1055,11 +1055,6 @@
    "text": "trang-thai “Ship sách / Popup thêm đơn sách / Đã chọn học viên có sẵn” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-SS-010012",
-   "text": "loại trang-thai, màn cha ADM-SS-010010 — tin cậy trung-binh"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-SS-010012",
    "text": "không có prototype link nào đi vào frame"
@@ -1083,11 +1078,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-SS-010034",
    "text": "trang-thai “Ship sách / Popup xác nhận gửi tin nhắn / Đã chọn mẫu” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-SS-010034",
-   "text": "loại trang-thai, màn cha ADM-SS-010000 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",

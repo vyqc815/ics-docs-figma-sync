@@ -39,7 +39,7 @@ Requirement: `course_management/knowledge-s1/knowledge-s1.md` — Kiến thức 
 | `CD-KH-040125` | Thêm vào cụm · Gỡ khỏi cụm | Trạng thái | CD-KH-040100 | CD-KH-040100 | — | `/kien-thuc-s1/tu-vung?state=CD-KH-040125` | Figma | thấp |
 | `CD-KH-040140` | Preview mobile theo từ đang chọn | Trạng thái | CD-KH-040100 | CD-KH-040100 | — | `/kien-thuc-s1/tu-vung?state=CD-KH-040140` | Figma | trung bình |
 | `CD-KH-040150` | Popup thêm từ thư viện | Popup | CD-KH-040100 | CD-KH-040100 | — | `/kien-thuc-s1/tu-vung?popup=CD-KH-040150` | Figma | cao |
-| `CD-KH-040155` | Popup gỡ mục khỏi khoá | Popup | CD-KH-040100 | CD-KH-040100 | — | `/kien-thuc-s1/tu-vung?popup=CD-KH-040155` | Figma | thấp |
+| `CD-KH-040155` | Popup gỡ mục khỏi khoá | Popup | CD-KH-040100 | CD-KH-040100 | — | `/kien-thuc-s1/tu-vung?popup=CD-KH-040155` | Figma | cao |
 | `CD-KH-040160` | Popup thêm theo list | Popup | CD-KH-040100 | CD-KH-040100 | — | `/kien-thuc-s1/tu-vung?popup=CD-KH-040160` | Figma | cao |
 | `CD-KH-040170` | Popup chia cụm bằng AI | Popup | CD-KH-040100 | CD-KH-040100 | — | `/kien-thuc-s1/tu-vung?popup=CD-KH-040170` | Figma | cao |
 | `CD-KH-040190` | Soát lỗi bằng AI | Popup | CD-KH-040100 | CD-KH-040100 | — | `/kien-thuc-s1/tu-vung?popup=CD-KH-040190` | Figma | trung bình |
@@ -464,7 +464,7 @@ Frame: `CD-KH-040100`, `CD-KH-040200` · Nguồn nội dung: Figma
 - Chưa sync (10): `A15.01`, `A15.02`, `A15.03`, `A15.04`, `A15.05`, `A15.06`, `A16.01`, `A16.02`, `A16.03`, `A16.04`
 - Requirement nhắc mã Figma không có (3): `CD-KH-030270`, `CD-KH-030400`, `CD-KH-030540`
 - Frame Figma chưa có requirement (10): `CD-KH-040110`, `CD-KH-040120`, `CD-KH-040125`, `CD-KH-040140`, `CD-KH-040150`, `CD-KH-040155`, `CD-KH-040160`, `CD-KH-040170`, `CD-KH-040190`, `CD-KH-040195`
-- Phân loại cần design duyệt (7): `CD-KH-040110`, `CD-KH-040120`, `CD-KH-040125`, `CD-KH-040140`, `CD-KH-040155`, `CD-KH-040190`, `CD-KH-040195`
+- Phân loại cần design duyệt (6): `CD-KH-040110`, `CD-KH-040120`, `CD-KH-040125`, `CD-KH-040140`, `CD-KH-040190`, `CD-KH-040195`
 - Thiếu prototype link đi vào (10): `CD-KH-040110`, `CD-KH-040120`, `CD-KH-040125`, `CD-KH-040140`, `CD-KH-040150`, `CD-KH-040155`, `CD-KH-040160`, `CD-KH-040170`, `CD-KH-040190`, `CD-KH-040195`
 - REQ/EX chưa có testcase (1): `EX03`
 

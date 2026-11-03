@@ -30,9 +30,9 @@ Requirement: `receipt_management/receipt/receipt.md` — Hoá Đơn (tiền tố
 | `ADM-HD-010006` | Sau khi thêm tag | Trạng thái | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010006` | Figma | trung bình |
 | `ADM-HD-010007` | Sau khi thêm lịch hẹn | Trạng thái | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010007` | Figma | trung bình |
 | `ADM-HD-010010` | Popup thêm hoá đơn | Popup | ADM-HD-010000 | ADM-HD-010000 | ADM-HD-010000 | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010010` | Figma | cao |
-| `ADM-HD-010011` | Chọn đơn vị tiền | Trạng thái | ADM-HD-010010 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010011` | Figma | trung bình |
-| `ADM-HD-010012` | Chọn học viên có sẵn | Trạng thái | ADM-HD-010010 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010012` | Figma | trung bình |
-| `ADM-HD-010013` | Mở danh sách | Trạng thái | ADM-HD-010012 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010013` | Figma | trung bình |
+| `ADM-HD-010011` | Chọn đơn vị tiền | Trạng thái | ADM-HD-010010 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010011` | Figma | cao |
+| `ADM-HD-010012` | Chọn học viên có sẵn | Trạng thái | ADM-HD-010010 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010012` | Figma | cao |
+| `ADM-HD-010013` | Mở danh sách | Trạng thái | ADM-HD-010012 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010013` | Figma | cao |
 | `ADM-HD-010020` | Lịch sử hoá đơn | Trạng thái | ADM-HD-010000 | ADM-HD-010000 | ADM-HD-010000 | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010020` | Figma | trung bình |
 | `ADM-HD-010021` | Cuộn ngang tới cuối | Trạng thái | ADM-HD-010020 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010021` | Figma | trung bình |
 | `ADM-HD-010022` | Mở chi tiết học phí + hover | Trạng thái | ADM-HD-010020 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010022` | Figma | trung bình |
@@ -40,27 +40,27 @@ Requirement: `receipt_management/receipt/receipt.md` — Hoá Đơn (tiền tố
 | `ADM-HD-010040` | Popup xem ảnh hoá đơn | Popup | ADM-HD-010000 | ADM-HD-010000 | ADM-HD-010000, ADM-HD-010102, ADM-HD-010202, ADM-HD-010302 | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010040` | Figma | cao |
 | `ADM-HD-010050` | Popup chọn học viên đã liên kết | Popup | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010050` | Figma | cao |
 | `ADM-HD-010060` | Popup thêm học phí | Popup | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010060` | Figma | cao |
-| `ADM-HD-010061` | Học viên mới | Trạng thái | ADM-HD-010060 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010061` | Figma | trung bình |
+| `ADM-HD-010061` | Học viên mới | Trạng thái | ADM-HD-010060 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010061` | Figma | cao |
 | `ADM-HD-010070` | Popup thêm người phụ trách | Popup | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010070` | Figma | cao |
-| `ADM-HD-010071` | Chọn người phụ trách | Trạng thái | ADM-HD-010070 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010071` | Figma | trung bình |
-| `ADM-HD-010072` | Chọn trạng thái | Trạng thái | ADM-HD-010070 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010072` | Figma | trung bình |
-| `ADM-HD-010073` | Chọn số KPI | Trạng thái | ADM-HD-010070 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010073` | Figma | trung bình |
+| `ADM-HD-010071` | Chọn người phụ trách | Trạng thái | ADM-HD-010070 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010071` | Figma | cao |
+| `ADM-HD-010072` | Chọn trạng thái | Trạng thái | ADM-HD-010070 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010072` | Figma | cao |
+| `ADM-HD-010073` | Chọn số KPI | Trạng thái | ADM-HD-010070 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010073` | Figma | cao |
 | `ADM-HD-010080` | Popup thêm (thao tác học viên) | Popup | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010080` | Figma | cao |
-| `ADM-HD-010081` | Chọn Xem lịch sử | Trạng thái | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010081` | Figma | trung bình |
-| `ADM-HD-010082` | Chọn Thêm Lịch Hẹn | Trạng thái | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010082` | Figma | trung bình |
+| `ADM-HD-010081` | Chọn Xem lịch sử | Trạng thái | ADM-HD-010080 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010081` | Figma | cao |
+| `ADM-HD-010082` | Chọn Thêm Lịch Hẹn | Trạng thái | ADM-HD-010080 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010082` | Figma | cao |
 | `ADM-HD-010090` | Popup thêm tag | Popup | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010090` | Figma | cao |
 | `ADM-HD-010102` | Dropdown · Nhận tiền, Thời gian, Tag, Menu hành động | Dropdown | ADM-HD-010000 | ADM-HD-010000 | ADM-HD-010000 | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010102` | Figma | cao |
 | `ADM-HD-010103` | Menu ⋮ · Thêm học phí | Trạng thái | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010103` | Figma | trung bình |
 | `ADM-HD-010104` | Menu ⋮ · Chỉnh sửa | Trạng thái | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010104` | Figma | trung bình |
 | `ADM-HD-010110` | Popup thêm lịch hẹn | Popup | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010110` | Figma | cao |
 | `ADM-HD-010111` | Popup cập nhật lịch hẹn | Popup | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010111` | Figma | cao |
-| `ADM-HD-010120` | Lịch sử lớp | Trạng thái | ADM-HD-010020 | ADM-HD-010000 | ADM-HD-010020 | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010120` | Figma | trung bình |
+| `ADM-HD-010120` | Lịch sử lớp | Trạng thái | ADM-HD-010020 | ADM-HD-010000 | ADM-HD-010020 | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010120` | Figma | cao |
 | `ADM-HD-010130` | Popup danh sách lịch hẹn | Popup | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010130` | Figma | cao |
 | `ADM-HD-010202` | Dropdown · Hoá đơn đỏ, Loại hoá đơn, Đổi trạng thái | Dropdown | ADM-HD-010000 | ADM-HD-010000 | ADM-HD-010000, ADM-HD-010102 | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010202` | Figma | cao |
 | `ADM-HD-010224` | Trống | Trạng thái | ADM-HD-010020 | ADM-HD-010000 | ADM-HD-010020, ADM-HD-010120 | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010224` | Figma | trung bình |
 | `ADM-HD-010225` | Có ghi chú & bình luận | Trạng thái | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010225` | Figma | trung bình |
 | `ADM-HD-010230` | Popup thêm ghi chú | Popup | ADM-HD-010000 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010230` | Figma | cao |
-| `ADM-HD-010231` | Mở Loại | Trạng thái | ADM-HD-010230 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010231` | Figma | trung bình |
+| `ADM-HD-010231` | Mở Loại | Trạng thái | ADM-HD-010230 | ADM-HD-010000 | — | `/hoa-don/danh-sach-hoa-don?state=ADM-HD-010231` | Figma | cao |
 | `ADM-HD-010302` | Dropdown · Người phụ trách, Trạng thái | Dropdown | ADM-HD-010000 | ADM-HD-010000 | ADM-HD-010000, ADM-HD-010102, ADM-HD-010202 | `/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010302` | Figma | cao |
 
 ## 4. Khu vực và item
@@ -275,7 +275,7 @@ Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - Frame Figma chưa có requirement (35): `ADM-HD-010006`, `ADM-HD-010007`, `ADM-HD-010010`, `ADM-HD-010011`, `ADM-HD-010012`, `ADM-HD-010013`, `ADM-HD-010020`, `ADM-HD-010021`, `ADM-HD-010022`, `ADM-HD-010030`, `ADM-HD-010040`, `ADM-HD-010050`, `ADM-HD-010060`, `ADM-HD-010061`, `ADM-HD-010070`, `ADM-HD-010071`, `ADM-HD-010072`, `ADM-HD-010073`, `ADM-HD-010080`, `ADM-HD-010081`, `ADM-HD-010082`, `ADM-HD-010090`, `ADM-HD-010102`, `ADM-HD-010103`, `ADM-HD-010104`, `ADM-HD-010110`, `ADM-HD-010111`, `ADM-HD-010120`, `ADM-HD-010130`, `ADM-HD-010202`, `ADM-HD-010224`, `ADM-HD-010225`, `ADM-HD-010230`, `ADM-HD-010231`, `ADM-HD-010302`
-- Phân loại cần design duyệt (20): `ADM-HD-010006`, `ADM-HD-010007`, `ADM-HD-010011`, `ADM-HD-010012`, `ADM-HD-010013`, `ADM-HD-010020`, `ADM-HD-010021`, `ADM-HD-010022`, `ADM-HD-010061`, `ADM-HD-010071`, `ADM-HD-010072`, `ADM-HD-010073`, `ADM-HD-010081`, `ADM-HD-010082`, `ADM-HD-010103`, `ADM-HD-010104`, `ADM-HD-010120`, `ADM-HD-010224`, `ADM-HD-010225`, `ADM-HD-010231`
+- Phân loại cần design duyệt (9): `ADM-HD-010006`, `ADM-HD-010007`, `ADM-HD-010020`, `ADM-HD-010021`, `ADM-HD-010022`, `ADM-HD-010103`, `ADM-HD-010104`, `ADM-HD-010224`, `ADM-HD-010225`
 - Thiếu prototype link đi vào (27): `ADM-HD-010006`, `ADM-HD-010007`, `ADM-HD-010011`, `ADM-HD-010012`, `ADM-HD-010013`, `ADM-HD-010021`, `ADM-HD-010022`, `ADM-HD-010030`, `ADM-HD-010050`, `ADM-HD-010060`, `ADM-HD-010061`, `ADM-HD-010070`, `ADM-HD-010071`, `ADM-HD-010072`, `ADM-HD-010073`, `ADM-HD-010080`, `ADM-HD-010081`, `ADM-HD-010082`, `ADM-HD-010090`, `ADM-HD-010103`, `ADM-HD-010104`, `ADM-HD-010110`, `ADM-HD-010111`, `ADM-HD-010130`, `ADM-HD-010225`, `ADM-HD-010230`, `ADM-HD-010231`
 - REQ/EX chưa có testcase (6): `REQ11`, `REQ14`, `REQ17`, `EX02`, `EX05`, `EX06`
 

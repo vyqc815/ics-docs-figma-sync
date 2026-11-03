@@ -23,7 +23,7 @@ Requirement: `curriculum_management_requirement/level_management/level_managemen
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
 | `CD-CDO-010010` | Popup kích hoạt công khai | Popup | CD-CDO-010000 | CD-CDO-010000 | — | `/quan-ly-cap-do?popup=CD-CDO-010010` | Figma | cao |
-| `CD-CDO-010012` | Điền sai | Trạng thái | CD-CDO-010010 | CD-CDO-010000 | — | `/quan-ly-cap-do?state=CD-CDO-010012` | Figma | trung bình |
+| `CD-CDO-010012` | Điền sai | Trạng thái | CD-CDO-010010 | CD-CDO-010000 | — | `/quan-ly-cap-do?state=CD-CDO-010012` | Figma | cao |
 
 ## 4. Khu vực và item
 
@@ -152,7 +152,6 @@ Frame: `CD-CDO-010000` · Nguồn nội dung: Figma
 - Chưa khớp tự động (2): `A03.01`, `A03.02`
 - Frame Figma chưa có requirement (2): `CD-CDO-010010`, `CD-CDO-010012`
 - Thiếu prototype link đi vào (2): `CD-CDO-010010`, `CD-CDO-010012`
-- Phân loại cần design duyệt (1): `CD-CDO-010012`
 - Testcase không trỏ REQ (2): `TC13`, `TC22`
 - REQ/EX chưa có testcase (2): `REQ08`, `EX06`
 

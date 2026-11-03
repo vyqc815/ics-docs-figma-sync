@@ -79,6 +79,7 @@
    "citedByRequirement": true,
    "regions": [
     "CM-TE.A01",
+    "CM-TE.A03",
     "CM-TE.A04",
     "CM-TE.F01"
    ]
@@ -106,52 +107,6 @@
    "citedByRequirement": true,
    "regions": [
     "CM-TE.A02"
-   ]
-  },
-  "CD-KH-030346": {
-   "id": "CD-KH-030346",
-   "name": "generate-loi",
-   "title": "Học kỳ / Kiểm tra / Generate · Lỗi",
-   "kind": "trang-thai",
-   "parent": "CD-KH-030300",
-   "shownOn": "CD-KH-030300",
-   "kindConfidence": "thap",
-   "source": "figma",
-   "content": "figma",
-   "nodeId": "5609:31815",
-   "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
-   "link": "/hoc-ky/kiem-tra?state=CD-KH-030346",
-   "dark": "CD-KH-030346-DK",
-   "openedFrom": [],
-   "citedByRequirement": false,
-   "regions": [
-    "CM-TE.A03"
-   ]
-  },
-  "CD-KH-030350": {
-   "id": "CD-KH-030350",
-   "name": "generate-loi-tab-chon-kien-thuc-ky-nang",
-   "title": "Học kỳ / Kiểm tra / Generate · Lỗi (tab Chọn kiến thức & kỹ năng)",
-   "kind": "trang-thai",
-   "parent": "CD-KH-030300",
-   "shownOn": "CD-KH-030300",
-   "kindConfidence": "trung-binh",
-   "source": "figma",
-   "content": "figma",
-   "nodeId": "6579:75268",
-   "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
-   "link": "/hoc-ky/kiem-tra?state=CD-KH-030350",
-   "dark": "CD-KH-030350-DK",
-   "openedFrom": [],
-   "citedByRequirement": false,
-   "regions": [
-    "CM-TE.A03"
    ]
   }
  },
@@ -617,12 +572,10 @@
    "name": "popup-bai-kiem-tra-tab-bo-cau-hoi",
    "title": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
    "screens": [
-    "cd-kh-030346",
-    "cd-kh-030350"
+    "cd-kh-030300"
    ],
    "screensGuessed": [
-    "CD-KH-030346",
-    "CD-KH-030350"
+    "CD-KH-030300"
    ],
    "source": "tu-dien",
    "content": "qc",
@@ -642,8 +595,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Nút thao tác",
+      "Import Excel"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-TE.A03.02",
@@ -655,8 +611,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Thẻ tổng quan",
+      "Tổng số câu"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-TE.A03.03",
@@ -668,8 +627,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Bảng câu hỏi",
+      "STT"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-TE.A03.04",
@@ -681,8 +643,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Thêm / sửa câu, Import / Export, Generate, Soát lỗi",
+      "homework-test.md"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },
@@ -1601,36 +1566,6 @@
   }
  ],
  "issues": [
-  {
-   "kind": "figma-chua-co-requirement",
-   "ref": "CD-KH-030346",
-   "text": "trang-thai “Học kỳ / Kiểm tra / Generate · Lỗi” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-030346",
-   "text": "loại trang-thai, màn cha CD-KH-030300 — tin cậy thap"
-  },
-  {
-   "kind": "thieu-prototype-link",
-   "ref": "CD-KH-030346",
-   "text": "không có prototype link nào đi vào frame"
-  },
-  {
-   "kind": "figma-chua-co-requirement",
-   "ref": "CD-KH-030350",
-   "text": "trang-thai “Học kỳ / Kiểm tra / Generate · Lỗi (tab Chọn kiến thức & kỹ năng)” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-030350",
-   "text": "loại trang-thai, màn cha CD-KH-030300 — tin cậy trung-binh"
-  },
-  {
-   "kind": "thieu-prototype-link",
-   "ref": "CD-KH-030350",
-   "text": "không có prototype link nào đi vào frame"
-  },
   {
    "kind": "testcase-khong-tro-req",
    "ref": "CM-TE.TTC01",

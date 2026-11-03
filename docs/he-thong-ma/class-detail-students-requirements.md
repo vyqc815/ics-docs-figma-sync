@@ -24,7 +24,7 @@ Requirement: `management_requirement/class_management/class_detail_students_requ
 
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
-| `ADM-LOP-040210` | Popup lịch sử ghi chú | Popup | ADM-LOP-040200 | ADM-LOP-040200 | — | `/lop-hoc/cai-dat/hoc-vien?popup=ADM-LOP-040210` | Figma | trung bình |
+| `ADM-LOP-040210` | Popup lịch sử ghi chú | Popup | ADM-LOP-040200 | ADM-LOP-040200 | — | `/lop-hoc/cai-dat/hoc-vien?popup=ADM-LOP-040210` | Figma | cao |
 | `ADM-LOP-040220` | Popup lịch sử trạng thái | Popup | ADM-LOP-040200 | ADM-LOP-040200 | — | `/lop-hoc/cai-dat/hoc-vien?popup=ADM-LOP-040220` | Figma | cao |
 | `ADM-LOP-040230` | Popup thêm học phí | Popup | ADM-LOP-040200 | ADM-LOP-040200 | — | `/lop-hoc/cai-dat/hoc-vien?popup=ADM-LOP-040230` | Figma | cao |
 
@@ -280,7 +280,6 @@ Frame: `ADM-LOP-040200` · Nguồn nội dung: Figma
 - Chưa khớp tự động (22): `A01.02`, `A01.03`, `A01.09`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A04.01`, `A04.02`, `A04.05`, `A05.01`, `A05.03`, `A05.04`, `A05.05`, `A09.01`, `A10.01`, `A10.03`, `A10.04`
 - Chưa sync (22): `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`
 - Frame Figma chưa có requirement (3): `ADM-LOP-040210`, `ADM-LOP-040220`, `ADM-LOP-040230`
-- Phân loại cần design duyệt (1): `ADM-LOP-040210`
 - Thiếu prototype link đi vào (3): `ADM-LOP-040210`, `ADM-LOP-040220`, `ADM-LOP-040230`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`
 - REQ/EX chưa có testcase (2): `REQ14`, `EX01`

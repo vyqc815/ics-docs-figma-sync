@@ -1,0 +1,287 @@
+{
+ "note": "Design duyệt 2026-11-03: duyệt hết theo tool, trừ các mã có \"suaTuTool\"; bỏ các mã chua-ro. Phân loại và registry dùng file này thay cho phần đoán.",
+ "duyet": {
+  "ADM-GKS-010030": {
+   "loai": "popup",
+   "parent": "ADM-GKS-010020"
+  },
+  "ADM-GKS-010040": {
+   "loai": "popup",
+   "parent": "ADM-GKS-010020"
+  },
+  "ADM-GKS-020030": {
+   "loai": "popup",
+   "parent": "ADM-GKS-020020"
+  },
+  "ADM-GKS-020040": {
+   "loai": "popup",
+   "parent": "ADM-GKS-020020"
+  },
+  "ADM-GKS-030030": {
+   "loai": "popup",
+   "parent": "ADM-GKS-030020"
+  },
+  "ADM-GKS-030040": {
+   "loai": "popup",
+   "parent": "ADM-GKS-030020"
+  },
+  "ADM-GKS-030050": {
+   "loai": "popup",
+   "parent": "ADM-GKS-030045"
+  },
+  "ADM-GKS-030060": {
+   "loai": "popup",
+   "parent": "ADM-GKS-030045"
+  },
+  "ADM-HD-010011": {
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010010"
+  },
+  "ADM-HD-010012": {
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010010"
+  },
+  "ADM-HD-010013": {
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010012"
+  },
+  "ADM-HD-010061": {
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010060"
+  },
+  "ADM-HD-010071": {
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010070"
+  },
+  "ADM-HD-010072": {
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010070"
+  },
+  "ADM-HD-010073": {
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010070"
+  },
+  "ADM-HD-010081": {
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010080",
+   "suaTuTool": "ADM-HD-010000"
+  },
+  "ADM-HD-010082": {
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010080",
+   "suaTuTool": "ADM-HD-010000"
+  },
+  "ADM-HD-010120": {
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010020"
+  },
+  "ADM-HD-010231": {
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010230"
+  },
+  "ADM-HV-010050": {
+   "loai": "popup",
+   "parent": "ADM-HV-010000"
+  },
+  "ADM-KS-010030": {
+   "loai": "popup",
+   "parent": "ADM-KS-010020"
+  },
+  "ADM-KS-020030": {
+   "loai": "popup",
+   "parent": "ADM-KS-020020"
+  },
+  "ADM-KS-030030": {
+   "loai": "popup",
+   "parent": "ADM-KS-030020"
+  },
+  "ADM-LOP-020611": {
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020610"
+  },
+  "ADM-LOP-020612": {
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020611"
+  },
+  "ADM-LOP-020711": {
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020710"
+  },
+  "ADM-LOP-020712": {
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020711"
+  },
+  "ADM-LOP-020811": {
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020810"
+  },
+  "ADM-LOP-020812": {
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020811"
+  },
+  "ADM-LOP-020110": {
+   "loai": "popup",
+   "parent": "ADM-LOP-020100",
+   "suaTuTool": "ADM-LOP-040200"
+  },
+  "ADM-LOP-040521": {
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-040520"
+  },
+  "ADM-LOP-050406": {
+   "loai": "popup",
+   "parent": "ADM-LOP-050404"
+  },
+  "ADM-LOP-050407": {
+   "loai": "popup",
+   "parent": "ADM-LOP-050404"
+  },
+  "ADM-LOP-050408": {
+   "loai": "popup",
+   "parent": "ADM-LOP-050404"
+  },
+  "ADM-LOP-050410": {
+   "loai": "popup",
+   "parent": "ADM-LOP-050404"
+  },
+  "ADM-SS-010012": {
+   "loai": "trang-thai",
+   "parent": "ADM-SS-010010"
+  },
+  "ADM-SS-010034": {
+   "loai": "trang-thai",
+   "parent": "ADM-SS-010000"
+  },
+  "CD-CDO-010012": {
+   "loai": "trang-thai",
+   "parent": "CD-CDO-010010"
+  },
+  "CD-DM-010057": {
+   "loai": "trang-thai",
+   "parent": "CD-DM-010010"
+  },
+  "CD-DM-010062": {
+   "loai": "trang-thai",
+   "parent": "CD-DM-010060"
+  },
+  "CD-KH-010013": {
+   "loai": "trang-thai",
+   "parent": "CD-KH-010010"
+  },
+  "CD-KH-030320": {
+   "loai": "popup",
+   "parent": "CD-KH-030300"
+  },
+  "CD-KH-030344": {
+   "loai": "trang-thai",
+   "parent": "CD-KH-030341"
+  },
+  "CD-KH-030345": {
+   "loai": "trang-thai",
+   "parent": "CD-KH-030343"
+  },
+  "CD-KH-030346": {
+   "loai": "trang-thai",
+   "parent": "CD-KH-030340",
+   "suaTuTool": "CD-KH-030300"
+  },
+  "CD-KH-030350": {
+   "loai": "trang-thai",
+   "parent": "CD-KH-030340",
+   "suaTuTool": "CD-KH-030300"
+  },
+  "CD-KH-040155": {
+   "loai": "popup",
+   "parent": "CD-KH-040100"
+  },
+  "CD-KH-050155": {
+   "loai": "popup",
+   "parent": "CD-KH-050100"
+  },
+  "CD-KH-060120": {
+   "loai": "popup",
+   "parent": "CD-KH-060110"
+  },
+  "CD-KH-060121": {
+   "loai": "popup",
+   "parent": "CD-KH-060110",
+   "suaTuTool": "CD-KH-060100"
+  },
+  "CD-KH-060122": {
+   "loai": "popup",
+   "parent": "CD-KH-060110",
+   "suaTuTool": "CD-KH-060100"
+  },
+  "CD-KH-060123": {
+   "loai": "popup",
+   "parent": "CD-KH-060110",
+   "suaTuTool": "CD-KH-060100"
+  },
+  "CD-KH-060124": {
+   "loai": "popup",
+   "parent": "CD-KH-060110",
+   "suaTuTool": "CD-KH-060100"
+  },
+  "CD-KH-060125": {
+   "loai": "popup",
+   "parent": "CD-KH-060110",
+   "suaTuTool": "CD-KH-060100"
+  },
+  "CD-KH-060140": {
+   "loai": "popup",
+   "parent": "CD-KH-060130"
+  },
+  "CD-KH-060141": {
+   "loai": "popup",
+   "parent": "CD-KH-060100"
+  },
+  "CD-KH-060150": {
+   "loai": "popup",
+   "parent": "CD-KH-060100"
+  },
+  "GV-KS-010003": {
+   "loai": "dropdown",
+   "parent": "GV-KS-010000"
+  },
+  "GV-LOP-030121": {
+   "loai": "popup",
+   "parent": "GV-LOP-030100"
+  },
+  "GV-LOP-030161": {
+   "loai": "popup",
+   "parent": "GV-LOP-030150"
+  },
+  "GV-LOP-040221": {
+   "loai": "popup",
+   "parent": "GV-LOP-040201"
+  },
+  "GV-LOP-040310": {
+   "loai": "popup",
+   "parent": "GV-LOP-040302"
+  },
+  "GV-LOP-040311": {
+   "loai": "popup",
+   "parent": "GV-LOP-040302"
+  },
+  "GV-LS-010012": {
+   "loai": "trang-thai",
+   "parent": "GV-LS-010010"
+  },
+  "PRO-GD-010010": {
+   "loai": "popup",
+   "parent": "MST-TK-020000"
+  },
+  "SP-LHP-010010": {
+   "loai": "popup",
+   "parent": "SP-LHP-010000",
+   "suaTuTool": "SP-LHP-010003"
+  }
+ },
+ "bo": [
+  "ADM-GV-020310",
+  "ADM-GV-020320",
+  "CD-KH-010012",
+  "CD-KH-030220",
+  "CD-KH-030330"
+ ]
+}

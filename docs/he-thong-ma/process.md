@@ -23,6 +23,9 @@ Requirement: `class_handler_support/process/process.md` — [Phụ trách lớp]
 
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
+| `SP-TASK-010001` | Task hôm nay · Đã chọn thêm người | Trạng thái | SP-TASK-010000 | SP-TASK-010000 | — | `/quy-trinh/task-hom-nay?state=SP-TASK-010001` | Figma | trung bình |
+| `SP-TASK-020001` | Task tuần này · Đã chọn thêm người | Trạng thái | SP-TASK-020000 | SP-TASK-020000 | — | `/quy-trinh/task-tuan-nay?state=SP-TASK-020001` | Figma | trung bình |
+| `SP-TASK-030001` | Ca trực · Đã chọn thêm người | Trạng thái | SP-TASK-030000 | SP-TASK-030000 | — | `/quy-trinh/ca-truc?state=SP-TASK-030001` | Figma | trung bình |
 | `SP-TASK-030002` | Dropdown thời gian (đang mở) | Dropdown | SP-TASK-030000 | SP-TASK-030000 | — | `/quy-trinh/ca-truc?popup=SP-TASK-030002` | Figma | cao |
 | `SP-TASK-030003` | Lịch chọn ngày (đang mở) | Dropdown | SP-TASK-030000 | SP-TASK-030000 | — | `/quy-trinh/ca-truc?popup=SP-TASK-030003` | Figma | cao |
 | `SP-TASK-030004` | Dropdown ca (đang mở) | Dropdown | SP-TASK-030000 | SP-TASK-030000 | — | `/quy-trinh/ca-truc?popup=SP-TASK-030004` | Figma | cao |
@@ -32,25 +35,26 @@ Requirement: `class_handler_support/process/process.md` — [Phụ trách lớp]
 
 ### `A01` Trang 1: Task Hôm Nay / Task Tuần Này / Task Tháng Này / Ca Trực
 
-Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` (tool đoán:SP-TASK-010000, SP-TASK-020000, SP-TASK-030000) · Nguồn nội dung: QC
+Frame: `SP-TASK-010001`, `SP-TASK-020001`, `SP-TASK-030001` (tool đoán:SP-TASK-010001, SP-TASK-020001, SP-TASK-030001) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | sidebar | `Card Menu v2 (Test)` Type=Chính dropdown, State=Default; `MENU - CLASS HANDLER`  | `4915:257614` Sidebar · MENU - CLASS HANDLER; `I4915:257614;4901:224371` Card Menu | — |  | `TC02`, `TC06`, `TC09`, `TC10a` | Khớp | QC |
-| `A01.02` | dropdown-quy-trinh | `Card Menu v2 (Test)` Type=Chính dropdown, State=Default | `I4915:257614;4901:224371` Card Menu | — |  | `TC01` | Khớp | QC |
-| `A01.03` | danh-sach-task |  | `3845:49699` Danh sách task | — |  | `TC02` | Khớp | QC |
-| `A01.04` | cot-thoi-gian |  | `3845:49781` Thời gian | — |  | `TC04` | Khớp | QC |
-| `A01.05` | task-hom-nay | `Card Menu v2 (Test)` Type=Con progress, State=Select | `I4915:257614;4901:224373` Card Menu | — |  | `TC01`, `TC02`, `TC04`, `TC05`, `TC06`, `TC07`, `TC09` | Khớp | QC |
-| `A01.06` | task-tuan-nay | `Card Menu v2 (Test)` Type=Con progress, State=Default | `I4915:257614;4901:224374` Card Menu | — |  | `TC04`, `TC05`, `TC06` | Khớp | QC |
+| `A01.01` | sidebar | `Card Menu v2 (Test)` Type=Chính dropdown, State=Default; `MENU - CLASS HANDLER`  | `6935:389261` Sidebar · MENU - CLASS HANDLER; `I6935:389261;4901:224371` Card Menu | — |  | `TC02`, `TC06`, `TC09`, `TC10a` | Khớp | QC |
+| `A01.02` | dropdown-quy-trinh | `Card Menu v2 (Test)` Type=Chính dropdown, State=Default | `I6935:389261;4901:224371` Card Menu | — |  | `TC01` | Khớp | QC |
+| `A01.03` | danh-sach-task |  | `6935:389275` Danh sách task | — |  | `TC02` | Khớp | QC |
+| `A01.04` | cot-thoi-gian |  | `6935:389389` Thời gian | — |  | `TC04` | Khớp | QC |
+| `A01.05` | task-hom-nay | `Card Menu v2 (Test)` Type=Con progress, State=Select | `I6935:389261;4901:224373` Card Menu | — |  | `TC01`, `TC02`, `TC04`, `TC05`, `TC06`, `TC07`, `TC09` | Khớp | QC |
+| `A01.06` | task-tuan-nay | `Card Menu v2 (Test)` Type=Con progress, State=Default | `I6935:389261;4901:224374` Card Menu | — |  | `TC04`, `TC05`, `TC06` | Khớp | QC |
 | `A01.07` | task-thang-nay |  |  | — |  | `TC04`, `TC05`, `TC06`, `TC07`, `TC09` | Chưa khớp tự động | QC |
-| `A01.08` | ca-truc | `Card Menu v2 (Test)` Type=Con progress, State=Default | `I4915:257614;4901:224375` Card Menu | — |  | `TC06`, `TC10a` | Khớp | QC |
+| `A01.08` | ca-truc | `Card Menu v2 (Test)` Type=Con progress, State=Default | `I6935:389261;4901:224375` Card Menu | — |  | `TC06`, `TC10a` | Khớp | QC |
 | `A01.09` | task-khac |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.10` | kiem-tra | `Atom/Badge`  | `I3857:72467;1048:1255` Badge | — |  | `TC03` | Khớp | QC |
-| `A01.11` | danh-gia |  | `3857:72475` Task · Đánh giá · Thường xuyên nhắc nhở học  | — |  |  | Khớp | QC |
-| `A01.12` | task-tien-trinh |  | `3857:72440` Task · Task tiến trình · Nhắc nhở học viên trước bu | — |  |  | Khớp | QC |
+| `A01.10` | kiem-tra | `Atom/Badge`  | `I6935:389320;1048:1255` Badge | — |  | `TC03` | Khớp | QC |
+| `A01.11` | danh-gia |  | `6935:389328` Task · Đánh giá · Thường xuyên nhắc nhở học  | — |  |  | Khớp | QC |
+| `A01.12` | task-tien-trinh |  | `6935:389293` Task · Task tiến trình · Nhắc nhở học viên trước bu | — |  |  | Khớp | QC |
 | `A01.13` | task-nhap-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.14` | huong-dan-media |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.15` | deadline-xac-thuc-log | `LOGO CENTER`  | `I4915:257614;4901:224383` LOGO CENTER | — |  |  | Khớp | QC |
+| `A01.15` | deadline-xac-thuc-log | `LOGO CENTER`  | `I6935:389261;4901:224383` LOGO CENTER | — |  |  | Khớp | QC |
+| `A01.16` | sidebar-menu-class-handler | `MENU - CLASS HANDLER`  | `4915:257614` Sidebar · MENU - CLASS HANDLER | — |  |  | Chỉ có trên Figma | Figma |
 
 ### `A02` Trang 2: Task Khác và Popup chọn quy trình
 
@@ -166,8 +170,9 @@ Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` · Nguồn nội dun
 **Tool báo, cần người xem**
 
 - Chưa khớp tự động (11): `A01.07`, `A01.09`, `A01.13`, `A01.14`, `A02.01`, `A02.03`, `A02.04`, `A03.04`, `A03.05`, `A04.01`, `A04.02`
-- Frame Figma chưa có requirement (4): `SP-TASK-030002`, `SP-TASK-030003`, `SP-TASK-030004`, `SP-TASK-030010`
-- Thiếu prototype link đi vào (1): `SP-TASK-030010`
+- Frame Figma chưa có requirement (7): `SP-TASK-010001`, `SP-TASK-020001`, `SP-TASK-030001`, `SP-TASK-030002`, `SP-TASK-030003`, `SP-TASK-030004`, `SP-TASK-030010`
+- Phân loại cần design duyệt (3): `SP-TASK-010001`, `SP-TASK-020001`, `SP-TASK-030001`
+- Thiếu prototype link đi vào (4): `SP-TASK-010001`, `SP-TASK-020001`, `SP-TASK-030001`, `SP-TASK-030010`
 - REQ/EX chưa có testcase (3): `REQ09`, `EX06`, `EX07`
 
 ## 9. Chi tiết dựng

@@ -294,7 +294,7 @@
    "kind": "popup",
    "parent": "GV-LOP-030100",
    "shownOn": "GV-LOP-030100",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5292:223041",
@@ -661,7 +661,7 @@
    "kind": "popup",
    "parent": "GV-LOP-040201",
    "shownOn": "GV-LOP-040200",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5425:277391",
@@ -7106,11 +7106,6 @@
    "text": "popup “Chi tiết lớp / Bài học / Popup bắt đầu buổi học” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "GV-LOP-030121",
-   "text": "loại popup, màn cha GV-LOP-030100 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "GV-LOP-030121",
    "text": "không có prototype link nào đi vào frame"
@@ -7204,11 +7199,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "GV-LOP-040221",
    "text": "popup “Chi tiết lớp / Bài tập và Kiểm tra / Popup Thu hồi” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "GV-LOP-040221",
-   "text": "loại popup, màn cha GV-LOP-040201 — tin cậy thap"
   },
   {
    "kind": "figma-chua-co-requirement",

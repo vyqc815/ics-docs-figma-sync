@@ -136,7 +136,7 @@
    "synced": false,
    "route": null,
    "link": "/danh-sach-lop-hoc?popup=ADM-LOP-010002",
-   "dark": null,
+   "dark": "ADM-LOP-010002-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": []

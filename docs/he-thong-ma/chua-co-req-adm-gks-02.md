@@ -16,8 +16,8 @@
 
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
-| `ADM-GKS-020030` | Popup kết quả cả lớp | Popup | ADM-GKS-020020 | ADM-GKS-020020 | — | `/khao-sat/giao-khao-sat-lop/ket-qua-khao-sat?popup=ADM-GKS-020030` | Figma | thấp |
-| `ADM-GKS-020040` | Popup chọn cuộc khảo sát | Popup | ADM-GKS-020020 | ADM-GKS-020020 | — | `/khao-sat/giao-khao-sat-lop/ket-qua-khao-sat?popup=ADM-GKS-020040` | Figma | thấp |
+| `ADM-GKS-020030` | Popup kết quả cả lớp | Popup | ADM-GKS-020020 | ADM-GKS-020020 | — | `/khao-sat/giao-khao-sat-lop/ket-qua-khao-sat?popup=ADM-GKS-020030` | Figma | cao |
+| `ADM-GKS-020040` | Popup chọn cuộc khảo sát | Popup | ADM-GKS-020020 | ADM-GKS-020020 | — | `/khao-sat/giao-khao-sat-lop/ket-qua-khao-sat?popup=ADM-GKS-020040` | Figma | cao |
 
 ## 4. Khu vực và item
 
@@ -70,7 +70,6 @@ Frame: `ADM-GKS-020020` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - Frame Figma chưa có requirement (3): `ADM-GKS-020020`, `ADM-GKS-020030`, `ADM-GKS-020040`
-- Phân loại cần design duyệt (2): `ADM-GKS-020030`, `ADM-GKS-020040`
 - Thiếu prototype link đi vào (2): `ADM-GKS-020030`, `ADM-GKS-020040`
 
 ## 9. Chi tiết dựng

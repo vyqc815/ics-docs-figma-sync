@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Classify Figma screen codes outside figma.pages.json: popup / trang-thai / dropdown / ban-toi / man-chinh,
 with suggested parent and confidence. Read-only. Usage: classify.py full.json codes.json figma.pages.json out_dir"""
-import json, re, sys, collections
+import json, os, re, sys, collections
 
 FULL, CODES, PAGES, OUT = sys.argv[1:5]
 doc = json.load(open(FULL))["document"]
@@ -239,6 +239,17 @@ def root_screen(code, seen=()):
     return root_screen(p, seen + (code,)) or (p if p in in_pages else None)
 
 allk = {c: classify(c) for c in set(frames) | set(want)}
+
+# design's decisions win over every guess: approved type and parent, dropped codes left out
+APPROVED = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "docs", "he-thong-ma", "man-cha-da-duyet.json")
+if os.path.exists(APPROVED):
+    decided = json.load(open(APPROVED))
+    for code, d in decided["duyet"].items():
+        if code in allk:
+            allk[code] = {**allk[code], "loai": d["loai"], "parent": d["parent"], "tinCay": "cao", "daDuyet": True}
+    want = [c for c in want if c not in set(decided["bo"])]
+    for code in decided["bo"]:
+        allk.pop(code, None)
 
 VN = {"cao": "cao", "trung-binh": "trung bình", "thap": "thấp"}
 rows = []

@@ -10,7 +10,7 @@
 | `ADM-GV-020200` | Chi tiết giáo viên / Danh sách lớp | `/chi-tiet-giao-vien/danh-sach-lop` | `ADM-GV-020200-DK` | QC |
 | `ADM-GV-020300` | Chi tiết giáo viên / Lịch dạy | `/chi-tiet-giao-vien/lich-day` | `ADM-GV-020300-DK` | QC |
 | `ADM-GV-020400` | Chi tiết giáo viên / Log | `/chi-tiet-giao-vien/log` | `ADM-GV-020400-DK` | QC |
-| `ADM-GV-020500` | Chi tiết giáo viên / Quản lý đăng ký lịch | `/chi-tiet-giao-vien/quan-ly-dang-ky-lich` | — | QC |
+| `ADM-GV-020500` | Chi tiết giáo viên / Quản lý đăng ký lịch | `/chi-tiet-giao-vien/quan-ly-dang-ky-lich` | `ADM-GV-020500-DK` | QC |
 | `ADM-GV-020600` | Chi tiết giáo viên / Ghi chú | `/chi-tiet-giao-vien/ghi-chu` | `ADM-GV-020600-DK` | QC |
 
 Requirement: `management_requirement/teacher_management/teacher_detail_requirements.md` — [Admin] Chi tiết giáo viên (tiền tố `M-TD`).

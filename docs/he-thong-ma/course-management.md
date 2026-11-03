@@ -24,7 +24,7 @@ Requirement: `course_management/course_management.md` — Quản lý khoá học
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
 | `CD-KH-010010` | Popup kích hoạt công khai | Popup | CD-KH-010000 | CD-KH-010000 | CD-KH-010000, CD-KH-020230, CD-KH-030100, CD-KH-030104, CD-KH-030200, CD-KH-030300, CD-KH-030342, CD-KH-030350 | `/quan-ly-khoa-hoc?popup=CD-KH-010010` | Figma | cao |
-| `CD-KH-010013` | ID hợp lệ | Trạng thái | CD-KH-010010 | CD-KH-010000 | CD-KH-010010 | `/quan-ly-khoa-hoc?state=CD-KH-010013` | Figma | trung bình |
+| `CD-KH-010013` | ID hợp lệ | Trạng thái | CD-KH-010010 | CD-KH-010000 | CD-KH-010010 | `/quan-ly-khoa-hoc?state=CD-KH-010013` | Figma | cao |
 
 ## 4. Khu vực và item
 
@@ -162,7 +162,6 @@ Frame: `CD-KH-010000` · Nguồn nội dung: Figma
 
 - Chưa khớp tự động (4): `A04.01`, `A04.03`, `A04.04`, `A04.05`
 - Frame Figma chưa có requirement (2): `CD-KH-010010`, `CD-KH-010013`
-- Phân loại cần design duyệt (1): `CD-KH-010013`
 - Testcase trỏ mã không tồn tại (2): `TC24`, `TC25`
 - REQ/EX chưa có testcase (5): `REQ03`, `REQ04`, `EX03`, `EX08`, `EX12`
 

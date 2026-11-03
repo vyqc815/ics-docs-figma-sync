@@ -22,7 +22,7 @@
 |---|---|---|---|---|---|---|---|---|
 | `GV-LOP-030131` | Popup kết thúc buổi học | Popup | GV-LOP-030130 | GV-LOP-030130 | — | `/chi-tiet-lop/bai-hoc/buoc-1-diem-danh?popup=GV-LOP-030131` | Figma | cao |
 | `GV-LOP-030141` | Popup hoàn thành buổi học | Popup | GV-LOP-030140 | GV-LOP-030140 | — | `/chi-tiet-lop/bai-hoc/buoc-2-ghi-chu-buoi-hoc?popup=GV-LOP-030141` | Figma | cao |
-| `GV-LOP-030161` | Popup tiếp tục buổi học | Popup | GV-LOP-030150 | GV-LOP-030150 | — | `/chi-tiet-lop/bai-hoc/buoi-hoc-da-ket-thuc?popup=GV-LOP-030161` | Figma | thấp |
+| `GV-LOP-030161` | Popup tiếp tục buổi học | Popup | GV-LOP-030150 | GV-LOP-030150 | — | `/chi-tiet-lop/bai-hoc/buoi-hoc-da-ket-thuc?popup=GV-LOP-030161` | Figma | cao |
 
 ## 4. Khu vực và item
 
@@ -67,7 +67,6 @@ Frame: `GV-LOP-030111`, `GV-LOP-030130`, `GV-LOP-030140`, `GV-LOP-030150`, `GV-L
 
 - Frame Figma chưa có requirement (8): `GV-LOP-030111`, `GV-LOP-030130`, `GV-LOP-030131`, `GV-LOP-030140`, `GV-LOP-030141`, `GV-LOP-030150`, `GV-LOP-030160`, `GV-LOP-030161`
 - Thiếu prototype link đi vào (3): `GV-LOP-030131`, `GV-LOP-030141`, `GV-LOP-030161`
-- Phân loại cần design duyệt (1): `GV-LOP-030161`
 
 ## 9. Chi tiết dựng
 

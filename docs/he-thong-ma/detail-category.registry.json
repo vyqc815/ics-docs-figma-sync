@@ -155,7 +155,7 @@
    "kind": "trang-thai",
    "parent": "CD-DM-010010",
    "shownOn": "CD-DM-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "689:14188",
@@ -164,7 +164,7 @@
    "synced": false,
    "route": null,
    "link": "/quan-ly-danh-muc?state=CD-DM-010057",
-   "dark": null,
+   "dark": "CD-DM-010057-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
@@ -201,7 +201,7 @@
    "kind": "trang-thai",
    "parent": "CD-DM-010060",
    "shownOn": "CD-DM-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "1854:21305",
@@ -1250,11 +1250,6 @@
    "text": "trang-thai “Quản lý danh mục / Popup danh mục & cấp độ / Quản lý danh mục / Thành công” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-DM-010057",
-   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy trung-binh"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "CD-DM-010057",
    "text": "không có prototype link nào đi vào frame"
@@ -1273,11 +1268,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "CD-DM-010062",
    "text": "trang-thai “Quản lý danh mục / Popup kích hoạt công khai / Điền sai” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-DM-010062",
-   "text": "loại trang-thai, màn cha CD-DM-010060 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",

@@ -243,7 +243,7 @@
    "kind": "trang-thai",
    "parent": "GV-LS-010010",
    "shownOn": "GV-LS-010000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "qc",
    "content": "figma",
    "nodeId": "4814:159271",
@@ -3479,11 +3479,6 @@
    "kind": "thieu-prototype-link",
    "ref": "ADM-LGV-020010",
    "text": "không có prototype link nào đi vào frame"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "GV-LS-010012",
-   "text": "loại trang-thai, màn cha GV-LS-010010 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",

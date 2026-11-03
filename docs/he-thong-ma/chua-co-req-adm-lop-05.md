@@ -18,10 +18,10 @@
 
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
-| `ADM-LOP-050406` | Popup xác nhận xoá | Popup | ADM-LOP-050404 | ADM-LOP-050404 | — | `/lop-hoc/nhat-ky/tin-nhan?popup=ADM-LOP-050406` | Figma | trung bình |
-| `ADM-LOP-050407` | Popup xác nhận gửi | Popup | ADM-LOP-050404 | ADM-LOP-050404 | — | `/lop-hoc/nhat-ky/tin-nhan?popup=ADM-LOP-050407` | Figma | trung bình |
-| `ADM-LOP-050408` | Popup tạo tin nhắn | Popup | ADM-LOP-050404 | ADM-LOP-050404 | — | `/lop-hoc/nhat-ky/tin-nhan?popup=ADM-LOP-050408` | Figma | trung bình |
-| `ADM-LOP-050410` | Popup tạo tin nhắn bán tự động | Popup | ADM-LOP-050404 | ADM-LOP-050404 | — | `/lop-hoc/nhat-ky/tin-nhan?popup=ADM-LOP-050410` | Figma | trung bình |
+| `ADM-LOP-050406` | Popup xác nhận xoá | Popup | ADM-LOP-050404 | ADM-LOP-050404 | — | `/lop-hoc/nhat-ky/tin-nhan?popup=ADM-LOP-050406` | Figma | cao |
+| `ADM-LOP-050407` | Popup xác nhận gửi | Popup | ADM-LOP-050404 | ADM-LOP-050404 | — | `/lop-hoc/nhat-ky/tin-nhan?popup=ADM-LOP-050407` | Figma | cao |
+| `ADM-LOP-050408` | Popup tạo tin nhắn | Popup | ADM-LOP-050404 | ADM-LOP-050404 | — | `/lop-hoc/nhat-ky/tin-nhan?popup=ADM-LOP-050408` | Figma | cao |
+| `ADM-LOP-050410` | Popup tạo tin nhắn bán tự động | Popup | ADM-LOP-050404 | ADM-LOP-050404 | — | `/lop-hoc/nhat-ky/tin-nhan?popup=ADM-LOP-050410` | Figma | cao |
 
 ## 4. Khu vực và item
 
@@ -69,7 +69,6 @@ Frame: `ADM-LOP-050204`, `ADM-LOP-050304`, `ADM-LOP-050404` · Nguồn nội dun
 **Tool báo, cần người xem**
 
 - Frame Figma chưa có requirement (7): `ADM-LOP-050204`, `ADM-LOP-050304`, `ADM-LOP-050404`, `ADM-LOP-050406`, `ADM-LOP-050407`, `ADM-LOP-050408`, `ADM-LOP-050410`
-- Phân loại cần design duyệt (4): `ADM-LOP-050406`, `ADM-LOP-050407`, `ADM-LOP-050408`, `ADM-LOP-050410`
 - Thiếu prototype link đi vào (4): `ADM-LOP-050406`, `ADM-LOP-050407`, `ADM-LOP-050408`, `ADM-LOP-050410`
 
 ## 9. Chi tiết dựng

@@ -21,6 +21,9 @@ Requirement: `meeting_schedule/meeting_schedule.md` — [Phụ trách lớp, Adm
 
 | Mã | Tên | Loại | Màn cha | Hiển thị theo | Mở từ (prototype) | Link | Nguồn | Tin cậy |
 |---|---|---|---|---|---|---|---|---|
+| `SP-LHP-010001` | Dropdown lọc · Người tham gia | Dropdown | SP-LHP-010000 | SP-LHP-010000 | — | `/lich-hop/dang-danh-sach?popup=SP-LHP-010001` | Figma | cao |
+| `SP-LHP-010002` | Dropdown lọc · Trạng thái | Dropdown | SP-LHP-010001 | SP-LHP-010000 | — | `/lich-hop/dang-danh-sach?popup=SP-LHP-010002` | Figma | thấp |
+| `SP-LHP-010003` | Dropdown lọc · Thời gian | Dropdown | SP-LHP-010002 | SP-LHP-010000 | — | `/lich-hop/dang-danh-sach?popup=SP-LHP-010003` | Figma | thấp |
 | `SP-LHP-010010` | Popup chi tiết cuộc họp | Popup | SP-LHP-010000 | SP-LHP-010000 | — | `/lich-hop/dang-danh-sach?popup=SP-LHP-010010` | Figma | cao |
 
 ## 4. Khu vực và item
@@ -69,7 +72,7 @@ Frame: `SP-LHP-010010` (tool đoán:SP-LHP-010010) · Nguồn nội dung: QC
 
 ### `A04` Trang 4: Dropdown bộ lọc
 
-Frame: `SP-LHP-010000`, `SP-LHP-020000` (tool đoán:SP-LHP-010000, SP-LHP-020000) · Nguồn nội dung: QC
+Frame: `SP-LHP-010001`, `SP-LHP-010002`, `SP-LHP-010003` (tool đoán:SP-LHP-010001, SP-LHP-010002, SP-LHP-010003) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -148,7 +151,8 @@ Frame: `SP-LHP-010000`, `SP-LHP-020000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Frame Figma chưa có requirement (1): `SP-LHP-010010`
+- Frame Figma chưa có requirement (4): `SP-LHP-010001`, `SP-LHP-010002`, `SP-LHP-010003`, `SP-LHP-010010`
+- Phân loại cần design duyệt (2): `SP-LHP-010002`, `SP-LHP-010003`
 - Thiếu prototype link đi vào (1): `SP-LHP-010010`
 - REQ/EX chưa có testcase (4): `REQ07`, `REQ08`, `REQ09`, `EX06`
 

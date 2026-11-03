@@ -34,7 +34,7 @@
    "kind": "popup",
    "parent": "ADM-GKS-030020",
    "shownOn": "ADM-GKS-030020",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "4885:41573",
@@ -55,7 +55,7 @@
    "kind": "popup",
    "parent": "ADM-GKS-030020",
    "shownOn": "ADM-GKS-030020",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "4885:41625",
@@ -97,7 +97,7 @@
    "kind": "popup",
    "parent": "ADM-GKS-030045",
    "shownOn": "ADM-GKS-030020",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5019:5589",
@@ -118,7 +118,7 @@
    "kind": "popup",
    "parent": "ADM-GKS-030045",
    "shownOn": "ADM-GKS-030020",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5019:5728",
@@ -886,11 +886,6 @@
    "text": "popup “Khảo sát / Giao khảo sát học viên / Popup kết quả cả trung tâm” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-GKS-030030",
-   "text": "loại popup, màn cha ADM-GKS-030020 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-GKS-030030",
    "text": "không có prototype link nào đi vào frame"
@@ -899,11 +894,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-GKS-030040",
    "text": "popup “Khảo sát / Giao khảo sát học viên / Popup chọn cuộc khảo sát” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-GKS-030040",
-   "text": "loại popup, màn cha ADM-GKS-030020 — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",
@@ -926,11 +916,6 @@
    "text": "popup “Khảo sát / Giao khảo sát học viên / Popup giao khảo sát · Bắt buộc” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-GKS-030050",
-   "text": "loại popup, màn cha ADM-GKS-030045 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "ADM-GKS-030050",
    "text": "không có prototype link nào đi vào frame"
@@ -939,11 +924,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-GKS-030060",
    "text": "popup “Khảo sát / Giao khảo sát học viên / Popup giao khảo sát · Tuỳ chọn” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-GKS-030060",
-   "text": "loại popup, màn cha ADM-GKS-030045 — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",

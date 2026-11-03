@@ -39,7 +39,7 @@ Requirement: `course_management/skill-s6/skill-s6.md` — Kỹ năng (S6) — Ng
 | `CD-KH-050130` | Khoá chưa có bài nghe | Trạng thái | CD-KH-050100 | CD-KH-050100 | — | `/ky-nang-s6/nghe?state=CD-KH-050130` | QC | trung bình |
 | `CD-KH-050140` | Preview mobile theo bài đang chọn | Trạng thái | CD-KH-050100 | CD-KH-050100 | — | `/ky-nang-s6/nghe?state=CD-KH-050140` | QC | trung bình |
 | `CD-KH-050150` | Popup thêm bài từ thư viện | Popup | CD-KH-050100 | CD-KH-050100 | — | `/ky-nang-s6/nghe?popup=CD-KH-050150` | QC | cao |
-| `CD-KH-050155` | Popup gỡ bài khỏi khoá | Popup | CD-KH-050100 | CD-KH-050100 | — | `/ky-nang-s6/nghe?popup=CD-KH-050155` | QC | thấp |
+| `CD-KH-050155` | Popup gỡ bài khỏi khoá | Popup | CD-KH-050100 | CD-KH-050100 | — | `/ky-nang-s6/nghe?popup=CD-KH-050155` | QC | cao |
 | `CD-KH-050160` | Popup tạo bài nghe mới | Popup | CD-KH-050100 | CD-KH-050100 | — | `/ky-nang-s6/nghe?popup=CD-KH-050160` | QC | cao |
 | `CD-KH-050190` | Soát lỗi bằng AI | Popup | CD-KH-050100 | CD-KH-050100 | — | `/ky-nang-s6/nghe?popup=CD-KH-050190` | QC | trung bình |
 | `CD-KH-050210` | Chi tiết bài đọc (drawer) | Popup | CD-KH-050200 | CD-KH-050200 | — | `/ky-nang-s6/doc?popup=CD-KH-050210` | Figma | cao |
@@ -456,7 +456,7 @@ Frame: `CD-KH-050100`, `CD-KH-050180`, `CD-KH-050200`, `CD-KH-050300`, `CD-KH-05
 - Requirement ghi thiếu, Figma đã có (1): `A01.07`
 - Chưa sync (19): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A09.01`, `A09.02`, `A17.01`, `A17.02`, `A21.01`, `A21.02`, `A21.03`, `A21.04`
 - Thiếu prototype link đi vào (10): `CD-KH-050110`, `CD-KH-050120`, `CD-KH-050130`, `CD-KH-050140`, `CD-KH-050150`, `CD-KH-050155`, `CD-KH-050160`, `CD-KH-050190`, `CD-KH-050210`, `CD-KH-070313`
-- Phân loại cần design duyệt (12): `CD-KH-050120`, `CD-KH-050130`, `CD-KH-050140`, `CD-KH-050155`, `CD-KH-050190`, `CD-KH-070301`, `CD-KH-070302`, `CD-KH-070305`, `CD-KH-070306`, `CD-KH-070307`, `CD-KH-070309`, `CD-KH-070313`
+- Phân loại cần design duyệt (11): `CD-KH-050120`, `CD-KH-050130`, `CD-KH-050140`, `CD-KH-050190`, `CD-KH-070301`, `CD-KH-070302`, `CD-KH-070305`, `CD-KH-070306`, `CD-KH-070307`, `CD-KH-070309`, `CD-KH-070313`
 - Frame Figma chưa có requirement (6): `CD-KH-050210`, `CD-KH-070305`, `CD-KH-070306`, `CD-KH-070307`, `CD-KH-070309`, `CD-KH-070313`
 - Testcase không trỏ REQ (1): `TC42b`
 - REQ/EX chưa có testcase (1): `EX11`

@@ -183,7 +183,7 @@
    "kind": "trang-thai",
    "parent": "CD-KH-030341",
    "shownOn": "CD-KH-030340",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "qc",
    "content": "figma",
    "nodeId": "5609:31772",
@@ -211,7 +211,7 @@
    "kind": "trang-thai",
    "parent": "CD-KH-030343",
    "shownOn": "CD-KH-030340",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "qc",
    "content": "figma",
    "nodeId": "5609:31794",
@@ -234,9 +234,9 @@
    "name": "generate-loi",
    "title": "Học kỳ / Kiểm tra / Generate · Lỗi",
    "kind": "trang-thai",
-   "parent": "CD-KH-030300",
-   "shownOn": "CD-KH-030300",
-   "kindConfidence": "thap",
+   "parent": "CD-KH-030340",
+   "shownOn": "CD-KH-030340",
+   "kindConfidence": "cao",
    "source": "qc",
    "content": "figma",
    "nodeId": "5609:31815",
@@ -244,7 +244,7 @@
    "inPageList": false,
    "synced": false,
    "route": null,
-   "link": "/hoc-ky/kiem-tra?state=CD-KH-030346",
+   "link": "/hoc-ky/kiem-tra/danh-sach-bai-tap?state=CD-KH-030346",
    "dark": "CD-KH-030346-DK",
    "openedFrom": [],
    "citedByRequirement": true,
@@ -386,7 +386,7 @@
    "kind": "popup",
    "parent": "CD-KH-060110",
    "shownOn": "CD-KH-060100",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "qc",
    "content": "figma",
    "nodeId": "5491:348805",
@@ -409,9 +409,9 @@
    "name": "popup-soan-cau-hoi-sap-xep",
    "title": "Bài tập về nhà / Popup soạn câu hỏi · Sắp xếp",
    "kind": "popup",
-   "parent": "CD-KH-060100",
+   "parent": "CD-KH-060110",
    "shownOn": "CD-KH-060100",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5672:74620",
@@ -432,9 +432,9 @@
    "name": "popup-soan-cau-hoi-noi-tu",
    "title": "Bài tập về nhà / Popup soạn câu hỏi · Nối từ",
    "kind": "popup",
-   "parent": "CD-KH-060100",
+   "parent": "CD-KH-060110",
    "shownOn": "CD-KH-060100",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5672:74752",
@@ -455,9 +455,9 @@
    "name": "popup-soan-cau-hoi-noi",
    "title": "Bài tập về nhà / Popup soạn câu hỏi · Nói",
    "kind": "popup",
-   "parent": "CD-KH-060100",
+   "parent": "CD-KH-060110",
    "shownOn": "CD-KH-060100",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5672:74887",
@@ -478,9 +478,9 @@
    "name": "popup-soan-cau-hoi-viet",
    "title": "Bài tập về nhà / Popup soạn câu hỏi · Viết",
    "kind": "popup",
-   "parent": "CD-KH-060100",
+   "parent": "CD-KH-060110",
    "shownOn": "CD-KH-060100",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5672:75018",
@@ -501,9 +501,9 @@
    "name": "popup-soan-cau-hoi-cau-hoi-con",
    "title": "Bài tập về nhà / Popup soạn câu hỏi · Câu hỏi con",
    "kind": "popup",
-   "parent": "CD-KH-060100",
+   "parent": "CD-KH-060110",
    "shownOn": "CD-KH-060100",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5672:75135",
@@ -549,7 +549,7 @@
    "kind": "popup",
    "parent": "CD-KH-060130",
    "shownOn": "CD-KH-060100",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5672:75273",
@@ -572,7 +572,7 @@
    "kind": "popup",
    "parent": "CD-KH-060100",
    "shownOn": "CD-KH-060100",
-   "kindConfidence": "thap",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5672:75298",
@@ -598,7 +598,7 @@
    "kind": "popup",
    "parent": "CD-KH-060100",
    "shownOn": "CD-KH-060100",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "5672:75315",
@@ -6437,21 +6437,6 @@
    "text": "loại trang-thai, màn cha CD-KH-030344 — tin cậy trung-binh"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-030344",
-   "text": "loại trang-thai, màn cha CD-KH-030341 — tin cậy trung-binh"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-030345",
-   "text": "loại trang-thai, màn cha CD-KH-030343 — tin cậy trung-binh"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-030346",
-   "text": "loại trang-thai, màn cha CD-KH-030300 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "CD-KH-030346",
    "text": "không có prototype link nào đi vào frame"
@@ -6467,19 +6452,9 @@
    "text": "popup “Học kỳ / Kiểm tra / Popup chọn loại câu” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-060120",
-   "text": "loại popup, màn cha CD-KH-060110 — tin cậy thap"
-  },
-  {
    "kind": "figma-chua-co-requirement",
    "ref": "CD-KH-060121",
    "text": "popup “Bài tập về nhà / Popup soạn câu hỏi · Sắp xếp” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-060121",
-   "text": "loại popup, màn cha CD-KH-060100 — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",
@@ -6492,11 +6467,6 @@
    "text": "popup “Bài tập về nhà / Popup soạn câu hỏi · Nối từ” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-060122",
-   "text": "loại popup, màn cha CD-KH-060100 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "CD-KH-060122",
    "text": "không có prototype link nào đi vào frame"
@@ -6505,11 +6475,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "CD-KH-060123",
    "text": "popup “Bài tập về nhà / Popup soạn câu hỏi · Nói” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-060123",
-   "text": "loại popup, màn cha CD-KH-060100 — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",
@@ -6522,11 +6487,6 @@
    "text": "popup “Bài tập về nhà / Popup soạn câu hỏi · Viết” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-060124",
-   "text": "loại popup, màn cha CD-KH-060100 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "CD-KH-060124",
    "text": "không có prototype link nào đi vào frame"
@@ -6535,11 +6495,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "CD-KH-060125",
    "text": "popup “Bài tập về nhà / Popup soạn câu hỏi · Câu hỏi con” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-060125",
-   "text": "loại popup, màn cha CD-KH-060100 — tin cậy thap"
   },
   {
    "kind": "thieu-prototype-link",
@@ -6562,11 +6517,6 @@
    "text": "popup “Bài tập về nhà / Kết quả Import” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-060140",
-   "text": "loại popup, màn cha CD-KH-060130 — tin cậy thap"
-  },
-  {
    "kind": "thieu-prototype-link",
    "ref": "CD-KH-060140",
    "text": "không có prototype link nào đi vào frame"
@@ -6577,19 +6527,9 @@
    "text": "popup “Bài tập về nhà / Kết quả Import” chưa được requirement nhắc tới"
   },
   {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-060141",
-   "text": "loại popup, màn cha CD-KH-060100 — tin cậy thap"
-  },
-  {
    "kind": "figma-chua-co-requirement",
    "ref": "CD-KH-060150",
    "text": "popup “Bài tập về nhà / Soát lỗi bằng AI” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "CD-KH-060150",
-   "text": "loại popup, màn cha CD-KH-060100 — tin cậy trung-binh"
   },
   {
    "kind": "figma-chua-co-requirement",

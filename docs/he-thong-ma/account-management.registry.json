@@ -116,7 +116,7 @@
    "synced": false,
    "route": null,
    "link": "/tai-khoan/danh-sach-tai-khoan?popup=MST-TK-010010",
-   "dark": null,
+   "dark": "MST-TK-010010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
@@ -139,7 +139,7 @@
    "synced": false,
    "route": null,
    "link": "/tai-khoan/danh-sach-tai-khoan?popup=MST-TK-010020",
-   "dark": null,
+   "dark": "MST-TK-010020-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": []
@@ -160,7 +160,7 @@
    "synced": false,
    "route": null,
    "link": "/tai-khoan/danh-sach-tai-khoan?popup=MST-TK-010030",
-   "dark": null,
+   "dark": "MST-TK-010030-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
@@ -199,7 +199,7 @@
    "kind": "popup",
    "parent": "MST-TK-020000",
    "shownOn": "MST-TK-020000",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "4273:166221",
@@ -1256,11 +1256,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "PRO-GD-010010",
    "text": "popup “Hồ sơ / Popup chọn màu giao diện” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "PRO-GD-010010",
-   "text": "loại popup, màn cha MST-TK-020000 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",

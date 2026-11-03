@@ -168,7 +168,7 @@
    "kind": "trang-thai",
    "parent": "ADM-LOP-040520",
    "shownOn": "ADM-LOP-040500",
-   "kindConfidence": "trung-binh",
+   "kindConfidence": "cao",
    "source": "figma",
    "content": "figma",
    "nodeId": "2911:43102",
@@ -2518,11 +2518,6 @@
    "kind": "figma-chua-co-requirement",
    "ref": "ADM-LOP-040521",
    "text": "trang-thai “Lớp học / Cài đặt / Lịch dạy / Popup thêm lịch dạy linh hoạt / Trùng lịch cố định” chưa được requirement nhắc tới"
-  },
-  {
-   "kind": "phan-loai-can-duyet",
-   "ref": "ADM-LOP-040521",
-   "text": "loại trang-thai, màn cha ADM-LOP-040520 — tin cậy trung-binh"
   },
   {
    "kind": "thieu-prototype-link",

@@ -248,7 +248,7 @@
    "synced": false,
    "route": null,
    "link": "/danh-sach-giao-vien?popup=ADM-GV-010050",
-   "dark": null,
+   "dark": "ADM-GV-010050-DK",
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
