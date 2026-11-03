@@ -1,5 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "npm ci",
-  "redirects": [{ "source": "/", "destination": "/figma", "permanent": false }]
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/figma",
+      "permanent": false
+    }
+  ],
+  "buildCommand": "next build"
 }
