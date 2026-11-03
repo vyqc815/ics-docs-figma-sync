@@ -2,10 +2,11 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { LockKeyhole } from "lucide-react";
 
+import { Logo } from "@/components/qc/logo";
 import { COOKIE, checkPassword, passwordSet } from "@/lib/qc/auth";
 import "../hub.css";
 
-export const metadata = { title: "Đăng nhập · ICS QC Hub" };
+export const metadata = { title: "Đăng nhập · QC PLS" };
 
 async function login(form: FormData): Promise<void> {
   "use server";
@@ -27,7 +28,7 @@ const LoginPage = async ({ searchParams }: { searchParams: Promise<{ sai?: strin
             <LockKeyhole className="size-5" />
           </span>
           <div>
-            <p className="text-lg font-semibold">ICS QC Hub</p>
+            <Logo className="h-7 w-auto" />
             <p className="text-xs text-(--hub-muted)">Figma · Requirement · Testcase</p>
           </div>
         </div>

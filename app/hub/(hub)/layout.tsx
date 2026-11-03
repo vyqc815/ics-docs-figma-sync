@@ -3,12 +3,13 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { TriangleAlert } from "lucide-react";
 
+import { Logo } from "@/components/qc/logo";
 import { QcNav } from "@/components/qc/nav";
 import { signedIn } from "@/lib/qc/auth";
 import { clusters, frames, indexInfo, reserved, unmappedPages } from "@/lib/qc/data";
 import "../hub.css";
 
-export const metadata = { title: "ICS QC Hub", robots: { index: false } };
+export const metadata = { title: "QC PLS", robots: { index: false } };
 export const dynamic = "force-dynamic";
 
 /** Shell of the QC hub: password gate, sidebar, status bar. */
@@ -27,7 +28,7 @@ const HubLayout = async ({ children }: { children: ReactNode }): Promise<React.J
       <div className="mx-auto flex min-h-screen max-w-[1600px] flex-col overflow-hidden border-(--hub-line)/60 bg-(--hub-shell) lg:min-h-[calc(100vh-48px)] lg:flex-row lg:rounded-[28px] lg:border lg:shadow-[0_60px_160px_-60px_rgb(133_114_255/0.55)]">
         <aside className="flex shrink-0 flex-col border-(--hub-line)/60 px-4 py-6 lg:w-[260px] lg:border-r">
           <div className="px-3 lg:text-center">
-            <p className="text-[22px] font-semibold">ICS QC Hub</p>
+            <Logo className="h-9 w-auto lg:mx-auto" />
             <p className="mt-0.5 text-[13px] text-(--hub-muted)">Figma · Requirement · Testcase</p>
           </div>
           <div className="mt-6 lg:mt-0">
