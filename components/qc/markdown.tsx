@@ -32,7 +32,9 @@ export function RequirementMarkdown({ file, text }: { file: string; text: string
     <div className="hub-md">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
-        urlTransform={(url) => (/^(https?:|\/|#|mailto:)/.test(url) ? url : `/hub/anh/${posix.normalize(posix.join(dir, url))}`)}
+        urlTransform={(url) =>
+          /^figma:/i.test(url) ? `/api/figma-frame/${url.slice(6).trim().toUpperCase()}.png` : /^(https?:|\/|#|mailto:)/.test(url) ? url : `/hub/anh/${posix.normalize(posix.join(dir, url))}`
+        }
         components={{
           h3: ({ children }) => {
             const no = String(Array.isArray(children) ? children[0] : children).match(/^Trang (\d+)/)?.[1];
@@ -42,6 +44,7 @@ export function RequirementMarkdown({ file, text }: { file: string; text: string
             const url = typeof src === "string" ? src : undefined;
             // the page has the live Figma image: QC's screenshot is not shown at all
             if (alt?.startsWith(QC_SHOT)) return null;
+            // ![](figma:MÃ) in a requirement, or the live image line the conversion adds
             const code = url?.match(/\/api\/figma-frame\/([A-Z0-9-]+)\.png$/)?.[1];
             if (code) return <FigmaShot code={code} live liveBase={url?.split("/api/")[0] ?? ""} className="my-2.5" />;
             // eslint-disable-next-line @next/next/no-img-element

@@ -81,14 +81,17 @@ export function Editor({ file }: { file: string }): React.JSX.Element {
           className="hub-scroll h-[72vh] w-full resize-none rounded-2xl border border-(--hub-line) bg-(--hub-panel) p-4 font-mono text-[13px] leading-6 outline-none focus:border-(--hub-accent)"
         />
         <div className="hub-scroll hub-md h-[72vh] overflow-y-auto rounded-2xl bg-(--hub-panel) p-5">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={(u) => (/^(https?:|\/|#)/.test(u) ? u : "")}>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            urlTransform={(u) => (/^figma:/i.test(u) ? `/api/figma-frame/${u.slice(6).trim().toUpperCase()}.png` : /^(https?:|\/|#)/.test(u) ? u : "")}
+          >
             {text}
           </ReactMarkdown>
         </div>
       </div>
       <p className="text-xs text-(--hub-faint)">
-        Đây là bản gốc QC (qc/requirements/{file}). Ghi mã màn ở tiêu đề mục (ví dụ “### CD-KH-030200 — Danh sách bài học”) để trang đó tự có ảnh Figma
-        thật, không cần chụp ảnh. Lưu xong hệ thống tự kiểm không mất nội dung; nếu thiếu sẽ giữ bản cũ và báo Chat.
+        Đây là bản gốc QC (qc/requirements/{file}). Ảnh Figma thật, tự cập nhật, không cần chụp: ghi mã màn ở tiêu đề mục (“### CD-KH-030200 — Danh sách
+        bài học”), hoặc chèn ở bất kỳ đâu bằng <code>![](figma:CD-KH-030200)</code>. Lưu xong hệ thống tự kiểm không mất nội dung; nếu thiếu sẽ giữ bản cũ và báo Chat.
       </p>
     </div>
   );
