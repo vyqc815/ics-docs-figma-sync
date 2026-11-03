@@ -8,5 +8,8 @@
       "permanent": false
     }
   ],
-  "buildCommand": "next build"
+  "buildCommand": "next build",
+  "git": {
+    "deploymentEnabled": false
+  }
 }
