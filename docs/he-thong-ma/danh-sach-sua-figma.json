@@ -1,0 +1,1656 @@
+{
+ "note": "Requirement là chuẩn; design sửa Figma theo danh sách này. Sinh từ registry.",
+ "fixes": [
+  {
+   "cluster": "bai-tap-ve-nha",
+   "clusterTitle": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "region": "CM-HW.A01",
+   "regionTitle": "Khung màn, cây kỳ và bài",
+   "screens": [
+    "CD-KH-060100",
+    "CD-KH-060200"
+   ],
+   "kind": "khac-figma",
+   "requirement": "course_management/homework-test/homework-test.md",
+   "item": null,
+   "text": "Khác Figma CD-KH-060200: tab Kiểm tra trên Figma là danh sách phẳng; requirement là cây theo kỳ giống BTVN.",
+   "id": "FIX-001",
+   "links": {
+    "CD-KH-060100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-346399",
+    "CD-KH-060200": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-347564"
+   }
+  },
+  {
+   "cluster": "bai-tap-ve-nha",
+   "clusterTitle": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "region": "CM-HW.A02",
+   "regionTitle": "Bộ câu hỏi: thanh công cụ và thẻ tổng quan",
+   "screens": [
+    "CD-KH-030340",
+    "CD-KH-060100",
+    "CD-KH-060200"
+   ],
+   "kind": "khac-figma",
+   "requirement": "course_management/homework-test/homework-test.md",
+   "item": null,
+   "text": "Khác Figma CD-KH-030340: còn thẻ `Tổng điểm` (đã bỏ theo thang 10, CD-KH-060100 / 060200 đã sửa); nút tạo bằng AI ghi `Generate`.",
+   "id": "FIX-002",
+   "links": {
+    "CD-KH-030340": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-357438",
+    "CD-KH-060100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-346399",
+    "CD-KH-060200": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-347564"
+   }
+  },
+  {
+   "cluster": "bai-tap-ve-nha",
+   "clusterTitle": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "region": "CM-HW.A02",
+   "regionTitle": "Bộ câu hỏi: thanh công cụ và thẻ tổng quan",
+   "screens": [
+    "CD-KH-030340",
+    "CD-KH-060100",
+    "CD-KH-060200"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/homework-test/homework-test.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-003",
+   "links": {
+    "CD-KH-030340": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-357438",
+    "CD-KH-060100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-346399",
+    "CD-KH-060200": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-347564"
+   }
+  },
+  {
+   "cluster": "bai-tap-ve-nha",
+   "clusterTitle": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "region": "CM-HW.A03",
+   "regionTitle": "Bảng câu hỏi",
+   "screens": [
+    "CD-KH-030340",
+    "CD-KH-060100",
+    "CD-KH-060200"
+   ],
+   "kind": "khac-figma",
+   "requirement": "course_management/homework-test/homework-test.md",
+   "item": null,
+   "text": "Khác Figma CD-KH-060100 / 060200: bảng chưa có cột `Kiến thức / Kỹ năng`, lọc `Kiến thức / Kỹ năng` (đã có ở CD-KH-030340) và còn lọc `Trạng thái`.",
+   "id": "FIX-004",
+   "links": {
+    "CD-KH-030340": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-357438",
+    "CD-KH-060100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-346399",
+    "CD-KH-060200": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-347564"
+   }
+  },
+  {
+   "cluster": "bai-tap-ve-nha",
+   "clusterTitle": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "region": "CM-HW.A06",
+   "regionTitle": "Popup Soạn câu hỏi",
+   "screens": [
+    "CD-KH-060120",
+    "CD-KH-060121",
+    "CD-KH-060122",
+    "CD-KH-060123",
+    "CD-KH-060124",
+    "CD-KH-060125"
+   ],
+   "kind": "khac-figma",
+   "requirement": "course_management/homework-test/homework-test.md",
+   "item": null,
+   "text": "Khác Figma CD-KH-060120: popup chưa có field `Số câu` và `Kiến thức / Kỹ năng`; Figma mới có phần đáp án của Trắc nghiệm.",
+   "id": "FIX-005",
+   "links": {
+    "CD-KH-060120": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-348805",
+    "CD-KH-060121": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-74620",
+    "CD-KH-060122": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-74752",
+    "CD-KH-060123": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-74887",
+    "CD-KH-060124": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-75018",
+    "CD-KH-060125": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-75135"
+   }
+  },
+  {
+   "cluster": "bai-tap-ve-nha",
+   "clusterTitle": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "region": "CM-HW.A06",
+   "regionTitle": "Popup Soạn câu hỏi",
+   "screens": [
+    "CD-KH-060120",
+    "CD-KH-060121",
+    "CD-KH-060122",
+    "CD-KH-060123",
+    "CD-KH-060124",
+    "CD-KH-060125"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/homework-test/homework-test.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-006",
+   "links": {
+    "CD-KH-060120": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-348805",
+    "CD-KH-060121": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-74620",
+    "CD-KH-060122": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-74752",
+    "CD-KH-060123": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-74887",
+    "CD-KH-060124": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-75018",
+    "CD-KH-060125": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-75135"
+   }
+  },
+  {
+   "cluster": "bai-tap-ve-nha",
+   "clusterTitle": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "region": "CM-HW.A07",
+   "regionTitle": "Import / Export Excel",
+   "screens": [
+    "CD-KH-030340",
+    "CD-KH-060140",
+    "CD-KH-060141"
+   ],
+   "kind": "khac-figma",
+   "requirement": "course_management/homework-test/homework-test.md",
+   "item": null,
+   "text": "Khác Figma: nút Import / Export mới có ở CD-KH-030340; chưa có popup kết quả import.",
+   "id": "FIX-007",
+   "links": {
+    "CD-KH-030340": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-357438",
+    "CD-KH-060140": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-75273",
+    "CD-KH-060141": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-75298"
+   }
+  },
+  {
+   "cluster": "bai-tap-ve-nha",
+   "clusterTitle": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "region": "CM-HW.A07",
+   "regionTitle": "Import / Export Excel",
+   "screens": [
+    "CD-KH-030340",
+    "CD-KH-060140",
+    "CD-KH-060141"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/homework-test/homework-test.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-008",
+   "links": {
+    "CD-KH-030340": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-357438",
+    "CD-KH-060140": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-75273",
+    "CD-KH-060141": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-75298"
+   }
+  },
+  {
+   "cluster": "bai-tap-ve-nha",
+   "clusterTitle": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "region": "CM-HW.A08",
+   "regionTitle": "Soát lỗi bằng AI",
+   "screens": [
+    "CD-KH-060150"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/homework-test/homework-test.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-009",
+   "links": {
+    "CD-KH-060150": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5672-75315"
+   }
+  },
+  {
+   "cluster": "bai-tap-ve-nha",
+   "clusterTitle": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "region": "CM-HW.A09",
+   "regionTitle": "Generate bài tập bằng AI — Popup nhập yêu cầu",
+   "screens": [
+    "CD-KH-030341",
+    "CD-KH-030342"
+   ],
+   "kind": "khac-figma",
+   "requirement": "course_management/homework-test/homework-test.md",
+   "item": null,
+   "text": "Khác Figma CD-KH-030341 / 030342: dòng phụ dưới `Số câu` ghi `Tối đa 50 câu mỗi lần`; requirement không giới hạn.",
+   "id": "FIX-010",
+   "links": {
+    "CD-KH-030341": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-358429",
+    "CD-KH-030342": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-358483"
+   }
+  },
+  {
+   "cluster": "bai-tap-ve-nha",
+   "clusterTitle": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "region": "CM-HW.A12",
+   "regionTitle": "Generate — Sau khi tạo",
+   "screens": [
+    "CD-KH-030347"
+   ],
+   "kind": "khac-figma",
+   "requirement": "course_management/homework-test/homework-test.md",
+   "item": null,
+   "text": "Khác Figma CD-KH-030347: tag câu mới ghi `Mới`; requirement dùng tag `AI`.",
+   "id": "FIX-011",
+   "links": {
+    "CD-KH-030347": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-33933"
+   }
+  },
+  {
+   "cluster": "class-detail-invoices-requirements",
+   "clusterTitle": "Chi tiết lớp học — Tab Hóa đơn",
+   "region": "M-CDI2.A01",
+   "regionTitle": "Tab Hóa đơn — Bảng Hóa đơn đã dùng",
+   "screens": [
+    "ADM-LOP-040600"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "management_requirement/class_management/class_detail_invoices_requirements.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-012",
+   "links": {
+    "ADM-LOP-040600": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=2384-52460"
+   }
+  },
+  {
+   "cluster": "class-detail-overview-requirements",
+   "clusterTitle": "Chi tiết lớp học — Menu Tổng quan",
+   "region": "M-CDO2.A08",
+   "regionTitle": "Đánh giá tổng và bài học gần đây",
+   "screens": [
+    "ADM-LOP-020100"
+   ],
+   "kind": "khac-figma",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "item": null,
+   "text": "Khác Figma ADM-LOP-020100: khối Bài học gần đây ở vùng trái đang vẽ 4 icon, requirement là 6 bài.",
+   "id": "FIX-013",
+   "links": {
+    "ADM-LOP-020100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=769-30963"
+   }
+  },
+  {
+   "cluster": "class-detail-overview-requirements",
+   "clusterTitle": "Chi tiết lớp học — Menu Tổng quan",
+   "region": "M-CDO2.A09",
+   "regionTitle": "Bảng bài học của học viên và điểm danh",
+   "screens": [
+    "ADM-LOP-020100"
+   ],
+   "kind": "khac-figma",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "item": null,
+   "text": "Khác Figma ADM-LOP-020100: bảng bài chưa có tag thời điểm mở bài phía trên tên bài.",
+   "id": "FIX-014",
+   "links": {
+    "ADM-LOP-020100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=769-30963"
+   }
+  },
+  {
+   "cluster": "class-information-requirements",
+   "clusterTitle": "[Giáo viên] Chi tiết lớp — Thông tin",
+   "region": "TR-CI.A01",
+   "regionTitle": "Tab Thông tin",
+   "screens": [
+    "GV-LOP-110100"
+   ],
+   "kind": "khac-figma",
+   "requirement": "teacher_role/class/class_information_requirements.md",
+   "item": null,
+   "text": "Mọi field hiển thị cùng một kiểu ô xám chỉ đọc như `Mã lớp`, `Ghi chú`, `Mô tả`. Khác Figma GV-LOP-110100: Figma còn vẽ mũi tên dropdown ở Khóa học, Loại lớp, Trạng thái và icon lịch ở Ngày bắt đầu/kết thúc; cần sửa Figma bỏ các control này.",
+   "id": "FIX-015",
+   "links": {
+    "GV-LOP-110100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=4333-17990"
+   }
+  },
+  {
+   "cluster": "class-overview-requirements",
+   "clusterTitle": "[Giáo viên] Chi tiết lớp — Tổng quan",
+   "region": "TR-CO.A01",
+   "regionTitle": "Tổng quan — Khung màn và phân quyền",
+   "screens": [
+    "GV-LOP-020000"
+   ],
+   "kind": "khac-figma",
+   "requirement": "teacher_role/class/class_overview_requirements.md",
+   "item": null,
+   "text": "Khác Figma GV-LOP-020000: khối `Bài Học Gần Đây` ở vùng trái đang vẽ 4 icon, requirement là 6 bài; bảng bài học chưa có tag thời điểm mở bài phía trên tên bài.",
+   "id": "FIX-016",
+   "links": {
+    "GV-LOP-020000": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=4324-4861"
+   }
+  },
+  {
+   "cluster": "class-teaching-requirements",
+   "clusterTitle": "[Giáo viên] Chi tiết lớp — Giảng dạy",
+   "region": "TR-CT.A12",
+   "regionTitle": "Bài tập và Kiểm tra — Khung menu",
+   "screens": [
+    "GV-LOP-040100",
+    "GV-LOP-040201",
+    "GV-LOP-040204",
+    "GV-LOP-040205",
+    "GV-LOP-040210"
+   ],
+   "kind": "khac-figma",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "item": null,
+   "text": "Khác Figma GV-LOP-040100: Figma chưa có nút điều hướng chấm bài trên card; requirement bổ sung nút này cho `Giáo viên phụ trách chính`.",
+   "id": "FIX-017",
+   "links": {
+    "GV-LOP-040100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=4324-85925",
+    "GV-LOP-040201": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5425-277432",
+    "GV-LOP-040204": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=7074-397332",
+    "GV-LOP-040205": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=7074-398519",
+    "GV-LOP-040210": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5425-276208"
+   }
+  },
+  {
+   "cluster": "class-teaching-requirements",
+   "clusterTitle": "[Giáo viên] Chi tiết lớp — Giảng dạy",
+   "region": "TR-CT.A14",
+   "regionTitle": "Tab, badge và card bài",
+   "screens": [
+    "GV-LOP-040200"
+   ],
+   "kind": "khac-figma",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "item": null,
+   "text": "Khác Figma GV-LOP-040200: Figma chưa có frame card `Chưa giao` đang chọn (xem trước đề) và nút `Giao bài`; hai thành phần này đặc tả theo ICS cũ.",
+   "id": "FIX-018",
+   "links": {
+    "GV-LOP-040200": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=4324-86231"
+   }
+  },
+  {
+   "cluster": "class-teaching-requirements",
+   "clusterTitle": "[Giáo viên] Chi tiết lớp — Giảng dạy",
+   "region": "TR-CT.A26",
+   "regionTitle": "Tự học — Danh sách bài và bảng thời gian",
+   "screens": [
+    "GV-LOP-050100"
+   ],
+   "kind": "khac-figma",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "item": null,
+   "text": "Khác Figma GV-LOP-050100: Figma chỉ có trạng thái chưa có khóa tự học; trạng thái có dữ liệu theo UI của requirement Admin, bỏ các nút thêm.",
+   "id": "FIX-019",
+   "links": {
+    "GV-LOP-050100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=4333-7910"
+   }
+  },
+  {
+   "cluster": "course-management",
+   "clusterTitle": "Quản lý khoá học",
+   "region": "CM-CM.A04",
+   "regionTitle": "Trang 4: Popup Nhân bản khoá học",
+   "screens": [
+    "CD-KH-010000"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/course_management.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-020",
+   "links": {
+    "CD-KH-010000": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5035-375316"
+   }
+  },
+  {
+   "cluster": "information",
+   "clusterTitle": "Học Kỳ",
+   "region": "CM-IN.A05",
+   "regionTitle": "Popup Nhân bản học kỳ",
+   "screens": [
+    "CD-KH-030100"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/semester/information/information.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-021",
+   "links": {
+    "CD-KH-030100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-17005"
+   }
+  },
+  {
+   "cluster": "knowledge-s1",
+   "clusterTitle": "Kiến thức (S1)",
+   "region": "CM-KS.A03",
+   "regionTitle": "Bảng danh sách, tìm kiếm, sắp xếp và lọc",
+   "screens": [
+    "CD-KH-040100",
+    "CD-KH-040200"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/knowledge-s1/knowledge-s1.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-022",
+   "links": {
+    "CD-KH-040100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=4846-157807",
+    "CD-KH-040200": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=4846-168501"
+   }
+  },
+  {
+   "cluster": "knowledge-s1",
+   "clusterTitle": "Kiến thức (S1)",
+   "region": "CM-KS.A10",
+   "regionTitle": "Popup Thêm vào cụm / Gỡ khỏi cụm",
+   "screens": [
+    "CD-KH-040125"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/knowledge-s1/knowledge-s1.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-023",
+   "links": {
+    "CD-KH-040125": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=4846-176086"
+   }
+  },
+  {
+   "cluster": "knowledge-s1",
+   "clusterTitle": "Kiến thức (S1)",
+   "region": "CM-KS.A11",
+   "regionTitle": "Panel Cụm và Số cụm",
+   "screens": [
+    "CD-KH-040100",
+    "CD-KH-040200"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/knowledge-s1/knowledge-s1.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-024",
+   "links": {
+    "CD-KH-040100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=4846-157807",
+    "CD-KH-040200": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=4846-168501"
+   }
+  },
+  {
+   "cluster": "knowledge-s1",
+   "clusterTitle": "Kiến thức (S1)",
+   "region": "CM-KS.A14",
+   "regionTitle": "Preview mobile",
+   "screens": [
+    "CD-KH-040140"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/knowledge-s1/knowledge-s1.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-025",
+   "links": {
+    "CD-KH-040140": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=4846-170817"
+   }
+  },
+  {
+   "cluster": "lesson",
+   "clusterTitle": "Học Kỳ - Tab Bài học",
+   "region": "CM-LE.A02",
+   "regionTitle": "Popup: Chi tiết bài học - Tab Thông tin",
+   "screens": [
+    "CD-KH-030210",
+    "CD-KH-030230",
+    "CD-KH-030240",
+    "CD-KH-030250"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/semester/lesson/lesson.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-026",
+   "links": {
+    "CD-KH-030210": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1076-4963",
+    "CD-KH-030230": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1073-4361",
+    "CD-KH-030240": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1076-6297",
+    "CD-KH-030250": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=2808-52020"
+   }
+  },
+  {
+   "cluster": "lesson",
+   "clusterTitle": "Học Kỳ - Tab Bài học",
+   "region": "CM-LE.A05",
+   "regionTitle": "Popup: Chi tiết bài học - Tab Kiến thức",
+   "screens": [
+    "CD-KH-030211",
+    "CD-KH-030244",
+    "CD-KH-030247"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/semester/lesson/lesson.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-027",
+   "links": {
+    "CD-KH-030211": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=7193-402861",
+    "CD-KH-030244": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=7193-403630",
+    "CD-KH-030247": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=7193-404533"
+   }
+  },
+  {
+   "cluster": "level-management",
+   "clusterTitle": "Quản lý danh sách cấp độ",
+   "region": "CM-LM.A04",
+   "regionTitle": "Popup Kích hoạt công khai cấp độ",
+   "screens": [
+    "CD-CDO-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "curriculum_management_requirement/level_management/level_management.md",
+   "item": "CM-LM.A04.01",
+   "text": "Thêm `Cấp độ`: Hiển thị (chỉ đọc) đúng Tên cấp độ đang thao tác.",
+   "id": "FIX-028",
+   "links": {
+    "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
+   }
+  },
+  {
+   "cluster": "level-management",
+   "clusterTitle": "Quản lý danh sách cấp độ",
+   "region": "CM-LM.A04",
+   "regionTitle": "Popup Kích hoạt công khai cấp độ",
+   "screens": [
+    "CD-CDO-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "curriculum_management_requirement/level_management/level_management.md",
+   "item": "CM-LM.A04.02",
+   "text": "Thêm `Trạng thái hiện tại`: Hiển thị badge trạng thái hiện tại (`Nháp`) trước khi chuyển.",
+   "id": "FIX-029",
+   "links": {
+    "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
+   }
+  },
+  {
+   "cluster": "level-management",
+   "clusterTitle": "Quản lý danh sách cấp độ",
+   "region": "CM-LM.A04",
+   "regionTitle": "Popup Kích hoạt công khai cấp độ",
+   "screens": [
+    "CD-CDO-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "curriculum_management_requirement/level_management/level_management.md",
+   "item": "CM-LM.A04.03",
+   "text": "Thêm `ID cấp độ`: Hiển thị ID hiện tại (2 chữ số) mà cấp độ đã có sẵn từ lúc tạo.",
+   "id": "FIX-030",
+   "links": {
+    "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
+   }
+  },
+  {
+   "cluster": "level-management",
+   "clusterTitle": "Quản lý danh sách cấp độ",
+   "region": "CM-LM.A04",
+   "regionTitle": "Popup Kích hoạt công khai cấp độ",
+   "screens": [
+    "CD-CDO-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "curriculum_management_requirement/level_management/level_management.md",
+   "item": "CM-LM.A04.04",
+   "text": "Thêm `Ô nhập ID`: Hiển thị sẵn ID hiện tại và cho phép chỉnh sửa trực tiếp lần cuối trước khi khóa. Gõ vào ô sẽ kích hoạt kiểm tra lại (định dạng 2 chữ số + duy nhất toàn hệ thống).",
+   "id": "FIX-031",
+   "links": {
+    "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
+   }
+  },
+  {
+   "cluster": "level-management",
+   "clusterTitle": "Quản lý danh sách cấp độ",
+   "region": "CM-LM.A04",
+   "regionTitle": "Popup Kích hoạt công khai cấp độ",
+   "screens": [
+    "CD-CDO-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "curriculum_management_requirement/level_management/level_management.md",
+   "item": "CM-LM.A04.05",
+   "text": "Thêm `Nút làm mới ID (biểu tượng xoay)`: Sinh một ID 2 chữ số mới, chưa được sử dụng, điền vào ô nhập; hệ thống phải kiểm tra lại ID mới này.",
+   "id": "FIX-032",
+   "links": {
+    "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
+   }
+  },
+  {
+   "cluster": "level-management",
+   "clusterTitle": "Quản lý danh sách cấp độ",
+   "region": "CM-LM.A04",
+   "regionTitle": "Popup Kích hoạt công khai cấp độ",
+   "screens": [
+    "CD-CDO-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "curriculum_management_requirement/level_management/level_management.md",
+   "item": "CM-LM.A04.06",
+   "text": "Thêm `Mã cấp độ`: Nếu đã có giá trị: hiển thị chỉ đọc, không cho sửa trong popup. Nếu đang rỗng: hiển thị ô nhập **bắt buộc**, gõ vào sẽ kiểm tra không để trống sau khi cắt khoảng trắng đầu/cuối (không kiểm tra trùng). Sau khi công khai, Mã cấp độ bị khóa.",
+   "id": "FIX-033",
+   "links": {
+    "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
+   }
+  },
+  {
+   "cluster": "level-management",
+   "clusterTitle": "Quản lý danh sách cấp độ",
+   "region": "CM-LM.A04",
+   "regionTitle": "Popup Kích hoạt công khai cấp độ",
+   "screens": [
+    "CD-CDO-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "curriculum_management_requirement/level_management/level_management.md",
+   "item": "CM-LM.A04.07",
+   "text": "Thêm `Biểu tượng kết quả kiểm tra`: ID (khi đang ở dạng nhập): tick xanh khi đúng định dạng và chưa trùng; x đỏ khi sai định dạng hoặc bị trùng. Mã cấp độ (khi đang ở dạng nhập): tick xanh khi có giá trị; x đỏ khi để trống.",
+   "id": "FIX-034",
+   "links": {
+    "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
+   }
+  },
+  {
+   "cluster": "level-management",
+   "clusterTitle": "Quản lý danh sách cấp độ",
+   "region": "CM-LM.A04",
+   "regionTitle": "Popup Kích hoạt công khai cấp độ",
+   "screens": [
+    "CD-CDO-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "curriculum_management_requirement/level_management/level_management.md",
+   "item": "CM-LM.A04.08",
+   "text": "Thêm `Thông báo trạng thái`: ID: `ID có thể sử dụng` / `ID đang bị trùng` / `ID sai định dạng`. Mã cấp độ (khi đang trống): `Mã cấp độ có thể sử dụng` / `Mã cấp độ không được để trống`.",
+   "id": "FIX-035",
+   "links": {
+    "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
+   }
+  },
+  {
+   "cluster": "level-management",
+   "clusterTitle": "Quản lý danh sách cấp độ",
+   "region": "CM-LM.A04",
+   "regionTitle": "Popup Kích hoạt công khai cấp độ",
+   "screens": [
+    "CD-CDO-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "curriculum_management_requirement/level_management/level_management.md",
+   "item": "CM-LM.A04.09",
+   "text": "Thêm `Ghi chú cảnh báo`: Hiển thị cố định: `Sau khi xác nhận, cấp độ sẽ chuyển sang trạng thái Công khai, chỉ còn sửa được Tên và Mô tả. ID và Mã cấp độ sẽ bị khóa`.",
+   "id": "FIX-036",
+   "links": {
+    "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
+   }
+  },
+  {
+   "cluster": "level-management",
+   "clusterTitle": "Quản lý danh sách cấp độ",
+   "region": "CM-LM.A04",
+   "regionTitle": "Popup Kích hoạt công khai cấp độ",
+   "screens": [
+    "CD-CDO-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "curriculum_management_requirement/level_management/level_management.md",
+   "item": "CM-LM.A04.10",
+   "text": "Thêm `Nút Công khai cấp độ`: Chỉ bật khi ID hợp lệ, chưa trùng **và** Mã cấp độ có giá trị. Khi bấm, backend kiểm tra lại lần cuối rồi lưu ID, lưu Mã cấp độ (nếu vừa nhập) và chuyển trạng thái sang `Công Khai` trong cùng một giao dịch.",
+   "id": "FIX-037",
+   "links": {
+    "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
+   }
+  },
+  {
+   "cluster": "level-management",
+   "clusterTitle": "Quản lý danh sách cấp độ",
+   "region": "CM-LM.A04",
+   "regionTitle": "Popup Kích hoạt công khai cấp độ",
+   "screens": [
+    "CD-CDO-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "curriculum_management_requirement/level_management/level_management.md",
+   "item": "CM-LM.A04.11",
+   "text": "Thêm `Nút Hủy / biểu tượng X`: Đóng popup, không lưu thay đổi ID/Mã cấp độ vừa nhập, không đổi trạng thái cấp độ.",
+   "id": "FIX-038",
+   "links": {
+    "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
+   }
+  },
+  {
+   "cluster": "library",
+   "clusterTitle": "[CD] Thư viện",
+   "region": "CM-LI.A04",
+   "regionTitle": "Thư viện kiến thức — tab Bảng chữ",
+   "screens": [
+    "CD-KH-070160",
+    "CD-KH-070161",
+    "CD-KH-070170",
+    "CD-KH-070171"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/library/library.md",
+   "item": "CM-LI.A04.10",
+   "text": "Thêm `Menu ⋮`: Như các tab khác (Đổi trạng thái, Xoá). Ở dạng lưới thao tác qua panel Chi tiết chữ (**UI cần bổ sung**: nút `⋮` trong panel).",
+   "id": "FIX-039",
+   "links": {
+    "CD-KH-070160": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-91615",
+    "CD-KH-070161": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-94334",
+    "CD-KH-070170": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-92036",
+    "CD-KH-070171": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-95447"
+   }
+  },
+  {
+   "cluster": "library",
+   "clusterTitle": "[CD] Thư viện",
+   "region": "CM-LI.A06",
+   "regionTitle": "Thư viện bài tập",
+   "screens": [
+    "CD-KH-070160",
+    "CD-KH-070170",
+    "CD-KH-070304"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/library/library.md",
+   "item": "CM-LI.A06.11",
+   "text": "Thêm `Bấm dòng tab mẫu`: Mở bộ câu hỏi chỉ đọc (**UI cần bổ sung**).",
+   "id": "FIX-040",
+   "links": {
+    "CD-KH-070160": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-91615",
+    "CD-KH-070170": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-92036",
+    "CD-KH-070304": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332037"
+   }
+  },
+  {
+   "cluster": "library",
+   "clusterTitle": "[CD] Thư viện",
+   "region": "CM-LI.A07",
+   "regionTitle": "Thư viện bài tập — Chi tiết câu hỏi",
+   "screens": [
+    "CD-KH-070301",
+    "CD-KH-070302",
+    "CD-KH-070303",
+    "CD-KH-070304",
+    "CD-KH-070305"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/library/library.md",
+   "item": "CM-LI.A07.08",
+   "text": "Thêm `Audio theo kịch bản`: Thêm / sửa / xoá lượt thoại hoặc đổi giọng đối tượng làm audio cũ lệch kịch bản: thanh audio hiện nhãn `Audio cần tạo lại`; CD bấm `Tạo lại audio` (hệ thống đọc từng lượt bằng TTS theo giọng của đối tượng, ghép theo thứ tự lượt) hoặc tải file mới. Lưu câu khi audio chưa tạo lại thì hỏi xác nhận. **UI cần bổ sung.**",
+   "id": "FIX-041",
+   "links": {
+    "CD-KH-070301": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-81278",
+    "CD-KH-070302": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-82177",
+    "CD-KH-070303": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-82881",
+    "CD-KH-070304": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332037",
+    "CD-KH-070305": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332868"
+   }
+  },
+  {
+   "cluster": "library",
+   "clusterTitle": "[CD] Thư viện",
+   "region": "CM-LI.A07",
+   "regionTitle": "Thư viện bài tập — Chi tiết câu hỏi",
+   "screens": [
+    "CD-KH-070301",
+    "CD-KH-070302",
+    "CD-KH-070303",
+    "CD-KH-070304",
+    "CD-KH-070305"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/library/library.md",
+   "item": "CM-LI.A07.09",
+   "text": "Thêm `Lựa chọn / đáp án`: Phần câu hỏi của bài nghe (lựa chọn, đáp án đúng) theo form soạn câu của BTVN; Figma chưa vẽ (**UI cần bổ sung**).",
+   "id": "FIX-042",
+   "links": {
+    "CD-KH-070301": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-81278",
+    "CD-KH-070302": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-82177",
+    "CD-KH-070303": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-82881",
+    "CD-KH-070304": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332037",
+    "CD-KH-070305": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332868"
+   }
+  },
+  {
+   "cluster": "library",
+   "clusterTitle": "[CD] Thư viện",
+   "region": "CM-LI.A07",
+   "regionTitle": "Thư viện bài tập — Chi tiết câu hỏi",
+   "screens": [
+    "CD-KH-070301",
+    "CD-KH-070302",
+    "CD-KH-070303",
+    "CD-KH-070304",
+    "CD-KH-070305"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/library/library.md",
+   "item": "CM-LI.A07.23",
+   "text": "Thêm `Chọn từ có sẵn`: Trên popup `Thêm từ khoá` có ô tìm từ trong Kiến thức (S1) của khoá học (Từ vựng, Hanzi / Kanji); chọn từ thì tự điền Phiên âm, Từ loại, Nghĩa, Chi tiết từ, Hán Việt, Ví dụ, CD sửa lại được. Không tìm thấy thì nhập mới như Figma. **UI cần bổ sung.**",
+   "id": "FIX-043",
+   "links": {
+    "CD-KH-070301": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-81278",
+    "CD-KH-070302": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-82177",
+    "CD-KH-070303": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-82881",
+    "CD-KH-070304": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332037",
+    "CD-KH-070305": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332868"
+   }
+  },
+  {
+   "cluster": "meeting-schedule",
+   "clusterTitle": "[Phụ trách lớp, Admin] Lịch Họp",
+   "region": "MS-MS.A03",
+   "regionTitle": "Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp",
+   "screens": [
+    "SP-LHP-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "item": "MS-MS.A03.01",
+   "text": "Thêm `Dòng phụ dưới tiêu đề`: `Thứ, dd.MM.yyyy · HH:mm · <nhãn>`; nhãn `Đã trôi qua` nếu thời điểm họp đã qua, `Sắp diễn ra` nếu chưa tới. Chỉ có ở Chi tiết cuộc họp.",
+   "id": "FIX-044",
+   "links": {
+    "SP-LHP-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=3857-80154"
+   }
+  },
+  {
+   "cluster": "meeting-schedule",
+   "clusterTitle": "[Phụ trách lớp, Admin] Lịch Họp",
+   "region": "MS-MS.A03",
+   "regionTitle": "Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp",
+   "screens": [
+    "SP-LHP-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "item": "MS-MS.A03.02",
+   "text": "Thêm `Chủ đề`: Bắt buộc, tối đa 255 ký tự.",
+   "id": "FIX-045",
+   "links": {
+    "SP-LHP-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=3857-80154"
+   }
+  },
+  {
+   "cluster": "meeting-schedule",
+   "clusterTitle": "[Phụ trách lớp, Admin] Lịch Họp",
+   "region": "MS-MS.A03",
+   "regionTitle": "Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp",
+   "screens": [
+    "SP-LHP-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "item": "MS-MS.A03.03",
+   "text": "Thêm `Thời gian`: Ngày (`dd.MM.yyyy`, date picker) và giờ (`HH:mm`, time picker), đều bắt buộc. Tạo mới mặc định ngày hôm nay, giờ trống. Cho phép chọn thời điểm quá khứ và trùng giờ với cuộc họp khác.",
+   "id": "FIX-046",
+   "links": {
+    "SP-LHP-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=3857-80154"
+   }
+  },
+  {
+   "cluster": "meeting-schedule",
+   "clusterTitle": "[Phụ trách lớp, Admin] Lịch Họp",
+   "region": "MS-MS.A03",
+   "regionTitle": "Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp",
+   "screens": [
+    "SP-LHP-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "item": "MS-MS.A03.04",
+   "text": "Thêm `Trạng thái`: Dropdown `Mới tạo`, `Đang chờ`, `Đang tham gia`, `Hoàn thành`. Tạo mới mặc định `Mới tạo`. Không tự đổi theo thời gian.",
+   "id": "FIX-047",
+   "links": {
+    "SP-LHP-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=3857-80154"
+   }
+  },
+  {
+   "cluster": "meeting-schedule",
+   "clusterTitle": "[Phụ trách lớp, Admin] Lịch Họp",
+   "region": "MS-MS.A03",
+   "regionTitle": "Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp",
+   "screens": [
+    "SP-LHP-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "item": "MS-MS.A03.05",
+   "text": "Thêm `Người tham gia`: Chip avatar + tên; nút `+` mở danh sách chọn nhiều người (tìm kiếm, mỗi dòng `Tên (Role)`, chỉ tài khoản đang hoạt động). Chọn được tài khoản **mọi role của ICS**, gồm cả Giáo viên, Học viên, Trợ giảng. Hover chip hiện `x` để bỏ. Không bắt buộc; người tạo không tự được thêm vào danh sách.",
+   "id": "FIX-048",
+   "links": {
+    "SP-LHP-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=3857-80154"
+   }
+  },
+  {
+   "cluster": "meeting-schedule",
+   "clusterTitle": "[Phụ trách lớp, Admin] Lịch Họp",
+   "region": "MS-MS.A03",
+   "regionTitle": "Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp",
+   "screens": [
+    "SP-LHP-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "item": "MS-MS.A03.06",
+   "text": "Thêm `Ghi chú`: Không bắt buộc, tối đa 500 ký tự.",
+   "id": "FIX-049",
+   "links": {
+    "SP-LHP-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=3857-80154"
+   }
+  },
+  {
+   "cluster": "meeting-schedule",
+   "clusterTitle": "[Phụ trách lớp, Admin] Lịch Họp",
+   "region": "MS-MS.A03",
+   "regionTitle": "Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp",
+   "screens": [
+    "SP-LHP-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "item": "MS-MS.A03.07",
+   "text": "Thêm `Link cuộc họp`: Không bắt buộc; phải là URL bắt đầu bằng `http://` hoặc `https://`. Ở chế độ chỉ xem hiển thị dạng link, bấm mở tab mới.",
+   "id": "FIX-050",
+   "links": {
+    "SP-LHP-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=3857-80154"
+   }
+  },
+  {
+   "cluster": "meeting-schedule",
+   "clusterTitle": "[Phụ trách lớp, Admin] Lịch Họp",
+   "region": "MS-MS.A03",
+   "regionTitle": "Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp",
+   "screens": [
+    "SP-LHP-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "item": "MS-MS.A03.08",
+   "text": "Thêm `Huỷ`: Đóng popup, bỏ thay đổi chưa lưu.",
+   "id": "FIX-051",
+   "links": {
+    "SP-LHP-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=3857-80154"
+   }
+  },
+  {
+   "cluster": "meeting-schedule",
+   "clusterTitle": "[Phụ trách lớp, Admin] Lịch Họp",
+   "region": "MS-MS.A03",
+   "regionTitle": "Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp",
+   "screens": [
+    "SP-LHP-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "item": "MS-MS.A03.09",
+   "text": "Thêm `Lưu`: Validate → lưu → đóng popup → cập nhật danh sách/lịch và badge sidebar → Toast. Chống bấm lặp.",
+   "id": "FIX-052",
+   "links": {
+    "SP-LHP-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=3857-80154"
+   }
+  },
+  {
+   "cluster": "meeting-schedule",
+   "clusterTitle": "[Phụ trách lớp, Admin] Lịch Họp",
+   "region": "MS-MS.A03",
+   "regionTitle": "Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp",
+   "screens": [
+    "SP-LHP-010010"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "item": "MS-MS.A03.10",
+   "text": "Thêm `Xoá`: Chỉ người tạo, ở Chi tiết cuộc họp (UI cần bổ sung nút). Mở popup xác nhận `Xoá cuộc họp?` hiển thị chủ đề + ngày giờ; xác nhận mới xoá.",
+   "id": "FIX-053",
+   "links": {
+    "SP-LHP-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=3857-80154"
+   }
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A04",
+   "regionTitle": "Panel Cụm và Số cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A04.01",
+   "text": "Thêm `Tất cả cụm + badge N cụm`: Tiêu đề panel và số cụm hiện có; chọn để xem mọi bài của tab (mặc định).",
+   "id": "FIX-054",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A04",
+   "regionTitle": "Panel Cụm và Số cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A04.02",
+   "text": "Thêm `Số cụm`: Mặc định `0`. **Chỉ nhập được khi chưa có cụm**: CD nhập N thì hệ thống tạo N cụm rỗng tên `Chủ đề 1` … `Chủ đề N`. Chưa có cụm thì panel hiện `Chưa có cụm. Nhập Số cụm để tạo các cụm rỗng \"Chủ đề 1 … N\".`. Đã có cụm thì ô chỉ đọc, hiện số cụm hiện tại; thêm / bớt cụm bằng `Thêm cụm mới` và menu ⋮ của cụm.",
+   "id": "FIX-055",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A04",
+   "regionTitle": "Panel Cụm và Số cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A04.03",
+   "text": "Thêm `Chia cụm bằng AI`: AI đề xuất chia các bài của tab vào cụm theo chủ đề nội dung; kết quả chờ duyệt, CD áp dụng hoặc bỏ, theo cùng quy tắc popup Chia cụm bằng AI của S1.",
+   "id": "FIX-056",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A04",
+   "regionTitle": "Panel Cụm và Số cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A04.04",
+   "text": "Thêm `Dòng cụm`: `NN. <tên cụm>` + badge số bài của cụm (0 hiện xám); chọn để lọc bảng trái, tiêu đề bảng đổi thành tên cụm. Menu ⋮: `Đổi tên`, `Xoá cụm`.",
+   "id": "FIX-057",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A04",
+   "regionTitle": "Panel Cụm và Số cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A04.05",
+   "text": "Thêm `Chưa phân cụm`: Badge cam = số bài chưa thuộc cụm nào; chọn để lọc.",
+   "id": "FIX-058",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A04",
+   "regionTitle": "Panel Cụm và Số cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A04.06",
+   "text": "Thêm `Thêm cụm mới`: Thêm 1 cụm rỗng ở cuối, đặt tên ngay tại dòng.",
+   "id": "FIX-059",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A06",
+   "regionTitle": "Drawer Chi tiết bài nghe",
+   "screens": [
+    "CD-KH-050110",
+    "CD-KH-070301"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A06.06",
+   "text": "Thêm `Kịch bản · N lượt`: Danh sách lượt thoại theo thứ tự: nhãn người nói (`A`, `B`…), câu gốc, `Phiên âm ·`, `Dịch ·`, mốc `start – end` theo audio (`mm:ss.s`, **UI cần bổ sung**). Thêm / sửa / xoá / kéo thả lượt; lượt có giá trị AI chờ duyệt viền nét đứt cam với `✓ Duyệt` / `↺ Hoàn tác`.",
+   "id": "FIX-060",
+   "links": {
+    "CD-KH-050110": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-84755",
+    "CD-KH-070301": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-81278"
+   }
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A07",
+   "regionTitle": "Drawer Chi tiết bài đọc",
+   "screens": [
+    "CD-KH-070302",
+    "CD-KH-050210"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-061",
+   "links": {
+    "CD-KH-070302": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-82177",
+    "CD-KH-050210": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6935-379016"
+   }
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A08",
+   "regionTitle": "Menu thao tác dòng và Popup Thêm vào cụm / Gỡ khỏi cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A08.01",
+   "text": "Thêm `Mở chi tiết`: Mở drawer.",
+   "id": "FIX-062",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A08",
+   "regionTitle": "Menu thao tác dòng và Popup Thêm vào cụm / Gỡ khỏi cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A08.02",
+   "text": "Thêm `Thêm vào cụm / Gỡ khỏi cụm`: Mở popup `Cụm của N bài` (N bài đang chọn: 1 khi mở từ dòng).",
+   "id": "FIX-063",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A08",
+   "regionTitle": "Menu thao tác dòng và Popup Thêm vào cụm / Gỡ khỏi cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A08.03",
+   "text": "Thêm `Transcript AI (Nghe) / Tạo câu hỏi bằng AI (Đọc)`: Chạy AI cho riêng bài đó (xem khu vực AI).",
+   "id": "FIX-064",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A08",
+   "regionTitle": "Menu thao tác dòng và Popup Thêm vào cụm / Gỡ khỏi cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A08.04",
+   "text": "Thêm `Gỡ khỏi khoá`: Mở popup Gỡ khỏi khoá.",
+   "id": "FIX-065",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A08",
+   "regionTitle": "Menu thao tác dòng và Popup Thêm vào cụm / Gỡ khỏi cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A08.05",
+   "text": "Thêm `Popup — Tìm cụm`: Tìm theo tên cụm của tab.",
+   "id": "FIX-066",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A08",
+   "regionTitle": "Menu thao tác dòng và Popup Thêm vào cụm / Gỡ khỏi cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A08.06",
+   "text": "Thêm `Popup — Danh sách cụm`: **Radio** từng cụm + số bài của cụm, thêm `Chưa phân cụm` (= gỡ khỏi cụm). Mọi bài đang chọn cùng cụm thì chọn sẵn cụm đó.",
+   "id": "FIX-067",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A08",
+   "regionTitle": "Menu thao tác dòng và Popup Thêm vào cụm / Gỡ khỏi cụm",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A08.07",
+   "text": "Thêm `Popup — Huỷ / Lưu`: Lưu: các bài chuyển vào cụm đã chọn (rời cụm cũ); chọn `Chưa phân cụm` thì gỡ khỏi cụm. Bài đang dùng ở bài học mà rời cụm → cảnh báo liệt kê bài học, xác nhận thì tự gỡ khỏi bài học.",
+   "id": "FIX-068",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A11",
+   "regionTitle": "Popup Thêm bài từ thư viện",
+   "screens": [
+    "CD-KH-050150"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-069",
+   "links": {
+    "CD-KH-050150": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-122539"
+   }
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A12",
+   "regionTitle": "Popup Tạo bài mới",
+   "screens": [
+    "CD-KH-050160"
+   ],
+   "kind": "khu-vuc-can-bo-sung",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": null,
+   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
+   "id": "FIX-070",
+   "links": {
+    "CD-KH-050160": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-122949"
+   }
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A13",
+   "regionTitle": "Popup Gỡ khỏi khoá",
+   "screens": [
+    "CD-KH-050155"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A13.01",
+   "text": "Thêm `Tiêu đề`: `Gỡ N bài nghe khỏi khoá học?`",
+   "id": "FIX-071",
+   "links": {
+    "CD-KH-050155": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-120233"
+   }
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A13",
+   "regionTitle": "Popup Gỡ khỏi khoá",
+   "screens": [
+    "CD-KH-050155"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A13.02",
+   "text": "Thêm `Nội dung`: `Bài nghe <tên> sẽ bị gỡ khỏi Kỹ năng (S6) của khoá, khỏi các cụm và khỏi các bài học đang dùng:` + **danh sách bài học đang dùng** (cảnh báo, **UI cần bổ sung** trên Figma `CD-KH-050155`); nhiều bài thì liệt kê tên từng bài. Không dùng ở bài học nào thì bỏ phần danh sách.",
+   "id": "FIX-072",
+   "links": {
+    "CD-KH-050155": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-120233"
+   }
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A13",
+   "regionTitle": "Popup Gỡ khỏi khoá",
+   "screens": [
+    "CD-KH-050155"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A13.03",
+   "text": "Thêm `Ghi chú`: `Bản ghi trong Thư viện dữ liệu vẫn còn; khoá khác đang dùng không bị ảnh hưởng.`",
+   "id": "FIX-073",
+   "links": {
+    "CD-KH-050155": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-120233"
+   }
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A13",
+   "regionTitle": "Popup Gỡ khỏi khoá",
+   "screens": [
+    "CD-KH-050155"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A13.04",
+   "text": "Thêm `Nút`: `Huỷ`; `Xác nhận gỡ` (đỏ).",
+   "id": "FIX-074",
+   "links": {
+    "CD-KH-050155": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-120233"
+   }
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.01",
+   "text": "Thêm `listening_lesson (bắt buộc)`: Mỗi dòng = 1 bài nghe | `id` → mã dòng trong file (chỉ để nối sheet, không lưu làm mã bài); `title` → `Tên bài`; `mean` → `Mô tả`. Bỏ qua `lesson_id`.",
+   "id": "FIX-075",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.02",
+   "text": "Thêm `listening`: Kịch bản, mỗi dòng = 1 lượt thoại, theo thứ tự dòng | `listening_lesson_id` → bài nghe; `character` → người nói (`A`, `B`…); `sentence` → câu gốc; `phonetic` → `Phiên âm`; `furigana` → phiên âm có chú thích (tiếng Nhật); `mean` → `Dịch`; `start` / `end` → mốc thời gian. Bỏ qua `id`, `_start`, `_end`.",
+   "id": "FIX-076",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.03",
+   "text": "Thêm `listening_question`: Câu hỏi của bài nghe | `listening_lesson_id` → bài nghe; `question`, `a`–`d`, `answer` (số thứ tự đáp án đúng 1–4), `explain` → câu hỏi trắc nghiệm của bài (lưu vào bộ câu hỏi Listening của Thư viện bài tập).",
+   "id": "FIX-077",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.04",
+   "text": "Thêm `reading_lesson (bắt buộc)`: Mỗi dòng = 1 bài đọc | `id` → mã dòng trong file; `title` → `Tên bài`; `mean` → `Mô tả`; `source` → nguồn (ghi chú). Bỏ qua `lesson_id`.",
+   "id": "FIX-078",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.05",
+   "text": "Thêm `reading`: Đoạn văn, mỗi dòng = 1 câu, theo thứ tự dòng | `reading_lesson_id` → bài đọc; `sentence` → câu của đoạn văn; `phonetic` → `Phiên âm`; `furigana` → phiên âm có chú thích; `mean` → `Dịch`. Bỏ qua `id`, `note`.",
+   "id": "FIX-079",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.06",
+   "text": "Thêm `reading_question`: Câu hỏi của bài đọc | `reading_lesson_id` → bài đọc; `question`, `image`, `question_type`, `a`–`d`, `answer`, `explain` → câu hỏi (bộ câu hỏi Reading của Thư viện bài tập).",
+   "id": "FIX-080",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.07",
+   "text": "Thêm `reading_vocabulary`: Từ vựng liên quan của bài đọc | **Bắt buộc có cột `reading_lesson_id`** → bài đọc; `word`, `phonetic`, `type`, `furigana`, `mean`, `example`, `example_phonetic`, `example_mean` → từ vựng. Từ trùng với Từ vựng S1 của khoá thì nối vào từ đó; chưa có thì tạo từ mới trong S1 của khoá rồi nối.",
+   "id": "FIX-081",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.08",
+   "text": "Thêm `Import — sheet`: Thiếu sheet bắt buộc (`listening_lesson` / `reading_lesson`) → báo `Không tìm thấy sheet listening_lesson`, không import. Sheet phụ trống / không có thì bài thiếu phần đó (tính thiếu thông tin), vẫn import.",
+   "id": "FIX-082",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.09",
+   "text": "Thêm `Import — dòng bắt buộc`: Sheet bài gốc: `title`. Sheet phụ: cột nối `listening_lesson_id` / `reading_lesson_id` phải trùng một `id` của sheet bài gốc trong cùng file. Nghe cho phép trống file âm thanh (bài tính thiếu thông tin).",
+   "id": "FIX-083",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.10",
+   "text": "Thêm `Import — lỗi dữ liệu`: Có dòng lỗi → **chặn cả file**, không thêm bài nào; danh sách lỗi theo **sheet + số dòng** (vd `reading_vocabulary dòng 12: thiếu reading_lesson_id`, `listening dòng 40: listening_lesson_id 999 không có trong listening_lesson`).",
+   "id": "FIX-084",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.11",
+   "text": "Thêm `Import — thành công`: Mỗi dòng sheet bài gốc tạo 1 bản ghi thư viện mới `Nháp` (kèm kịch bản / đoạn văn, câu hỏi, từ vựng liên quan), gắn vào khoá theo thứ tự dòng, vào cụm đang chọn; Toast `Thành Công` `Đã import N bài nghe.`; gợi ý Soát lỗi AI. Không tự dò trùng bài.",
+   "id": "FIX-085",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A15",
+   "regionTitle": "Import / Export Excel",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A15.12",
+   "text": "Thêm `Export`: Toàn bộ bài của tab trong khoá (không theo bộ lọc); tên file `<Khoá học>_<Kỹ năng>.xlsx`; cùng các sheet và cột như bảng trên (Nghe 3 sheet, Đọc 4 sheet, `reading_vocabulary` có `reading_lesson_id`), `id` đánh lại theo thứ tự trong file; thêm cột `cluster` (tên các cụm, cách nhau `;`) ở sheet bài gốc để tham khảo. Không có cột bài học.",
+   "id": "FIX-086",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A20",
+   "regionTitle": "Thêm / gỡ bài kỹ năng trong Chi tiết bài học",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A20.01",
+   "text": "Thêm `Popup + Thêm`: Tiêu đề `Thêm kỹ năng vào bài học` + tên bài; 1 màn 3 cột: Loại (`Nghe` / `Đọc` / `Viết` / `Nói`, luôn hiện đủ 4, loại chưa có dữ liệu hiện trống) / Cụm / Bài (checkbox, `Chọn tất cả`, ô tìm). Giữ lựa chọn khi đổi cụm / loại. Bài đã có trong bài mờ, tick sẵn; bài **thiếu thông tin** mờ, không chọn được. `Huỷ`, `Thêm ({n})`.",
+   "id": "FIX-087",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A20",
+   "regionTitle": "Thêm / gỡ bài kỹ năng trong Chi tiết bài học",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A20.02",
+   "text": "Thêm `Thêm cả cụm`: Chọn cụm → `Chọn tất cả`: thêm **một lần** mọi bài đủ thông tin hiện có của cụm theo `Thứ tự trong cụm`; bài thêm sau vào cụm **không** tự vào bài học.",
+   "id": "FIX-088",
+   "links": {}
+  },
+  {
+   "cluster": "skill-s6",
+   "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
+   "region": "CM-SS.A20",
+   "regionTitle": "Thêm / gỡ bài kỹ năng trong Chi tiết bài học",
+   "screens": [],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/skill-s6/skill-s6.md",
+   "item": "CM-SS.A20.03",
+   "text": "Thêm `Danh sách trong bài`: Mỗi bài có `×` gỡ khỏi bài học này (bài vẫn ở S6 và ở cụm), không có nút sửa.",
+   "id": "FIX-089",
+   "links": {}
+  },
+  {
+   "cluster": "test",
+   "clusterTitle": "Học Kỳ - Tab Kiểm tra",
+   "region": "CM-TE.A01",
+   "regionTitle": "Danh sách bài kiểm tra",
+   "screens": [
+    "CD-KH-030300"
+   ],
+   "kind": "khac-figma",
+   "requirement": "course_management/semester/test/test.md",
+   "item": null,
+   "text": "Khác Figma CD-KH-030300: card chưa có menu `⋮` để xoá bài.",
+   "id": "FIX-090",
+   "links": {
+    "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
+   }
+  },
+  {
+   "cluster": "test",
+   "clusterTitle": "Học Kỳ - Tab Kiểm tra",
+   "region": "CM-TE.A01",
+   "regionTitle": "Danh sách bài kiểm tra",
+   "screens": [
+    "CD-KH-030300"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/semester/test/test.md",
+   "item": "CM-TE.A01.06",
+   "text": "Thêm `Xoá bài`: Menu `⋮` trên card có `Xoá` (popup xác nhận `Xoá bài kiểm tra \"<tên>\"? Bộ câu hỏi của bài cũng sẽ bị xoá.`, nút `Huỷ` / `Xoá`); xoá mềm (**UI cần bổ sung**).",
+   "id": "FIX-091",
+   "links": {
+    "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
+   }
+  },
+  {
+   "cluster": "test",
+   "clusterTitle": "Học Kỳ - Tab Kiểm tra",
+   "region": "CM-TE.A02",
+   "regionTitle": "Popup bài kiểm tra — Tab Thông tin",
+   "screens": [
+    "CD-KH-030310"
+   ],
+   "kind": "khac-figma",
+   "requirement": "course_management/semester/test/test.md",
+   "item": null,
+   "text": "Khác Figma CD-KH-030310: ô `Số câu hỏi` đang vẽ như ô nhập, requirement là chỉ đọc; ô `Tổng điểm` trên Figma cần bỏ. Dòng Lưu ý ghi `Số câu hỏi và tổng điểm có thể được cập nhật`.",
+   "id": "FIX-092",
+   "links": {
+    "CD-KH-030310": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1496-16304"
+   }
+  },
+  {
+   "cluster": "test",
+   "clusterTitle": "Học Kỳ - Tab Kiểm tra",
+   "region": "CM-TE.A03",
+   "regionTitle": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
+   "screens": [
+    "CD-KH-030346",
+    "CD-KH-030350"
+   ],
+   "kind": "khac-figma",
+   "requirement": "course_management/semester/test/test.md",
+   "item": null,
+   "text": "Khác Figma: bộ câu hỏi đang vẽ thành màn riêng `CD-KH-030340` (mở từ `>`); requirement đặt trong tab `Bộ Câu Hỏi` của popup (**UI cần bổ sung**).",
+   "id": "FIX-093",
+   "links": {
+    "CD-KH-030346": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815",
+    "CD-KH-030350": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268"
+   }
+  },
+  {
+   "cluster": "test",
+   "clusterTitle": "Học Kỳ - Tab Kiểm tra",
+   "region": "CM-TE.A03",
+   "regionTitle": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
+   "screens": [
+    "CD-KH-030346",
+    "CD-KH-030350"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/semester/test/test.md",
+   "item": "CM-TE.A03.01",
+   "text": "Thêm `Nút thao tác`: `Import Excel`, `Export Excel`, `+ Thêm câu hỏi`, `Generate` (Tạo câu hỏi bằng AI), `Soát lỗi bằng AI`.",
+   "id": "FIX-094",
+   "links": {
+    "CD-KH-030346": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815",
+    "CD-KH-030350": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268"
+   }
+  },
+  {
+   "cluster": "test",
+   "clusterTitle": "Học Kỳ - Tab Kiểm tra",
+   "region": "CM-TE.A03",
+   "regionTitle": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
+   "screens": [
+    "CD-KH-030346",
+    "CD-KH-030350"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/semester/test/test.md",
+   "item": "CM-TE.A03.02",
+   "text": "Thêm `Thẻ tổng quan`: `Tổng số câu`, `Thời gian làm bài` (từ tab Thông tin), `Cơ cấu theo dạng câu`; tag `Thang 10`.",
+   "id": "FIX-095",
+   "links": {
+    "CD-KH-030346": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815",
+    "CD-KH-030350": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268"
+   }
+  },
+  {
+   "cluster": "test",
+   "clusterTitle": "Học Kỳ - Tab Kiểm tra",
+   "region": "CM-TE.A03",
+   "regionTitle": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
+   "screens": [
+    "CD-KH-030346",
+    "CD-KH-030350"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/semester/test/test.md",
+   "item": "CM-TE.A03.03",
+   "text": "Thêm `Bảng câu hỏi`: Cột `STT`, `Bài tập (câu hỏi)`, `Loại câu`, `Đáp án đúng`, `Kiến thức / Kỹ năng`, `Điểm`, `⋮`; tìm kiếm, lọc `Loại câu`, `Kiến thức / Kỹ năng`; câu hỏi con mở / thu.",
+   "id": "FIX-096",
+   "links": {
+    "CD-KH-030346": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815",
+    "CD-KH-030350": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268"
+   }
+  },
+  {
+   "cluster": "test",
+   "clusterTitle": "Học Kỳ - Tab Kiểm tra",
+   "region": "CM-TE.A03",
+   "regionTitle": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
+   "screens": [
+    "CD-KH-030346",
+    "CD-KH-030350"
+   ],
+   "kind": "thieu-thiet-ke",
+   "requirement": "course_management/semester/test/test.md",
+   "item": "CM-TE.A03.04",
+   "text": "Thêm `Thêm / sửa câu, Import / Export, Generate, Soát lỗi`: Theo `homework-test.md`: soạn câu bắt buộc Số câu, Loại câu, Kiến thức / Kỹ năng; Excel cùng cột bảng; Generate không giới hạn số câu, chọn dòng rồi thêm; câu AI có tag `AI`.",
+   "id": "FIX-097",
+   "links": {
+    "CD-KH-030346": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5609-31815",
+    "CD-KH-030350": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6579-75268"
+   }
+  }
+ ]
+}
