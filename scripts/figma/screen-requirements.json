@@ -33,7 +33,17 @@
   {
    "file": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
    "pages": [
-    1
+    3
+   ],
+   "prefix": "SB-0AS",
+   "title": "Giao khảo sát & Kết quả (Admin)"
+  }
+ ],
+ "ADM-GKS-010010-DK": [
+  {
+   "file": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
+   "pages": [
+    3
    ],
    "prefix": "SB-0AS",
    "title": "Giao khảo sát & Kết quả (Admin)"
@@ -123,7 +133,17 @@
   {
    "file": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
    "pages": [
-    2
+    4
+   ],
+   "prefix": "SB-0AS",
+   "title": "Giao khảo sát & Kết quả (Admin)"
+  }
+ ],
+ "ADM-GKS-020010-DK": [
+  {
+   "file": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
+   "pages": [
+    4
    ],
    "prefix": "SB-0AS",
    "title": "Giao khảo sát & Kết quả (Admin)"
@@ -249,11 +269,167 @@
    "title": "Giao khảo sát & Kết quả (Admin)"
   }
  ],
+ "ADM-GV-010000": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
+ "ADM-GV-010000-DK": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
+ "ADM-GV-010001": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
+ "ADM-GV-010003": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
+ "ADM-GV-010010": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
+ "ADM-GV-010020": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    7
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
+ "ADM-GV-010020-DK": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    7
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
+ "ADM-GV-010030": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
+ "ADM-GV-010040": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    5
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
+ "ADM-GV-010040-DK": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    5
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
+ "ADM-GV-010042": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    5
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
+ "ADM-GV-010050": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+   ],
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ],
  "ADM-GV-020100": [
   {
    "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
    "pages": [
-    1
+    1,
+    2
    ],
    "prefix": "M-TD",
    "title": "[Admin] Chi tiết giáo viên"
@@ -263,7 +439,8 @@
   {
    "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
    "pages": [
-    1
+    1,
+    2
    ],
    "prefix": "M-TD",
    "title": "[Admin] Chi tiết giáo viên"
@@ -273,7 +450,27 @@
   {
    "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
    "pages": [
-    1
+    3
+   ],
+   "prefix": "M-TD",
+   "title": "[Admin] Chi tiết giáo viên"
+  }
+ ],
+ "ADM-GV-020200-DK": [
+  {
+   "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "pages": [
+    3
+   ],
+   "prefix": "M-TD",
+   "title": "[Admin] Chi tiết giáo viên"
+  }
+ ],
+ "ADM-GV-020210": [
+  {
+   "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "pages": [
+    3
    ],
    "prefix": "M-TD",
    "title": "[Admin] Chi tiết giáo viên"
@@ -313,7 +510,67 @@
   {
    "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
    "pages": [
-    4
+    5
+   ],
+   "prefix": "M-TD",
+   "title": "[Admin] Chi tiết giáo viên"
+  }
+ ],
+ "ADM-GV-020400-DK": [
+  {
+   "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "pages": [
+    5
+   ],
+   "prefix": "M-TD",
+   "title": "[Admin] Chi tiết giáo viên"
+  }
+ ],
+ "ADM-GV-020500": [
+  {
+   "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "pages": [
+    5
+   ],
+   "prefix": "M-TD",
+   "title": "[Admin] Chi tiết giáo viên"
+  }
+ ],
+ "ADM-GV-020520": [
+  {
+   "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "pages": [
+    6
+   ],
+   "prefix": "M-TD",
+   "title": "[Admin] Chi tiết giáo viên"
+  }
+ ],
+ "ADM-GV-020520-DK": [
+  {
+   "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "pages": [
+    6
+   ],
+   "prefix": "M-TD",
+   "title": "[Admin] Chi tiết giáo viên"
+  }
+ ],
+ "ADM-GV-020600": [
+  {
+   "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "pages": [
+    7
+   ],
+   "prefix": "M-TD",
+   "title": "[Admin] Chi tiết giáo viên"
+  }
+ ],
+ "ADM-GV-020600-DK": [
+  {
+   "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "pages": [
+    7
    ],
    "prefix": "M-TD",
    "title": "[Admin] Chi tiết giáo viên"
@@ -749,11 +1006,172 @@
    "title": "Hoá Đơn"
   }
  ],
+ "ADM-HV-010000": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010000-DK": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010001": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    1,
+    8
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010001-DK": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    1,
+    8
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010010": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    2
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010010-DK": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    2
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010012": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    2
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010060": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    5
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010060-DK": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    5
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010062": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    5
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010070": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    5
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010102": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
+ "ADM-HV-010202": [
+  {
+   "file": "management_requirement/student_management/student_management_requirements.md",
+   "pages": [
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "prefix": "M-SM",
+   "title": "Quản lý học viên"
+  }
+ ],
  "ADM-HV-020100": [
   {
    "file": "management_requirement/student_management/student_detail_requirements.md",
    "pages": [
-    1
+    1,
+    2
    ],
    "prefix": "M-SD",
    "title": "Chi tiết học viên"
@@ -763,7 +1181,8 @@
   {
    "file": "management_requirement/student_management/student_detail_requirements.md",
    "pages": [
-    1
+    1,
+    2
    ],
    "prefix": "M-SD",
    "title": "Chi tiết học viên"
@@ -854,6 +1273,26 @@
    "file": "management_requirement/student_management/student_detail_requirements.md",
    "pages": [
     7
+   ],
+   "prefix": "M-SD",
+   "title": "Chi tiết học viên"
+  }
+ ],
+ "ADM-HV-020610": [
+  {
+   "file": "management_requirement/student_management/student_detail_requirements.md",
+   "pages": [
+    8
+   ],
+   "prefix": "M-SD",
+   "title": "Chi tiết học viên"
+  }
+ ],
+ "ADM-HV-020610-DK": [
+  {
+   "file": "management_requirement/student_management/student_detail_requirements.md",
+   "pages": [
+    8
    ],
    "prefix": "M-SD",
    "title": "Chi tiết học viên"
@@ -1013,7 +1452,9 @@
   {
    "file": "management_requirement/schedule_management/teaching_schedule_requirements.md",
    "pages": [
-    1
+    1,
+    3,
+    4
    ],
    "prefix": "M-TS2",
    "title": "Lịch dạy tổng"
@@ -1023,7 +1464,9 @@
   {
    "file": "management_requirement/schedule_management/teaching_schedule_requirements.md",
    "pages": [
-    1
+    1,
+    3,
+    4
    ],
    "prefix": "M-TS2",
    "title": "Lịch dạy tổng"
@@ -1033,7 +1476,9 @@
   {
    "file": "management_requirement/schedule_management/teaching_schedule_requirements.md",
    "pages": [
-    2
+    2,
+    3,
+    4
    ],
    "prefix": "M-TS2",
    "title": "Lịch dạy tổng"
@@ -1043,7 +1488,9 @@
   {
    "file": "management_requirement/schedule_management/teaching_schedule_requirements.md",
    "pages": [
-    2
+    2,
+    3,
+    4
    ],
    "prefix": "M-TS2",
    "title": "Lịch dạy tổng"
@@ -1053,7 +1500,11 @@
   {
    "file": "management_requirement/salary_management/teacher_salary_requirements.md",
    "pages": [
-    1
+    1,
+    2,
+    3,
+    4,
+    5
    ],
    "prefix": "M-TS",
    "title": "Lương giáo viên — Admin"
@@ -1063,7 +1514,11 @@
   {
    "file": "management_requirement/salary_management/teacher_salary_requirements.md",
    "pages": [
-    1
+    1,
+    2,
+    3,
+    4,
+    5
    ],
    "prefix": "M-TS",
    "title": "Lương giáo viên — Admin"
@@ -1117,9 +1572,19 @@
   {
    "file": "appointment_requirement/appointment_requirements.md",
    "pages": [
-    1,
-    2,
-    4
+    3,
+    6
+   ],
+   "prefix": "A-AP",
+   "title": "Lịch hẹn — Danh sách, thêm lịch hẹn và Review"
+  }
+ ],
+ "ADM-LHN-010110-DK": [
+  {
+   "file": "appointment_requirement/appointment_requirements.md",
+   "pages": [
+    3,
+    6
    ],
    "prefix": "A-AP",
    "title": "Lịch hẹn — Danh sách, thêm lịch hẹn và Review"
@@ -1185,6 +1650,194 @@
    "title": "Lịch hẹn — Danh sách, thêm lịch hẹn và Review"
   }
  ],
+ "ADM-LHN-020000": [
+  {
+   "file": "appointment_requirement/appointment_requirements.md",
+   "pages": [
+    5,
+    6
+   ],
+   "prefix": "A-AP",
+   "title": "Lịch hẹn — Danh sách, thêm lịch hẹn và Review"
+  }
+ ],
+ "ADM-LHN-020000-DK": [
+  {
+   "file": "appointment_requirement/appointment_requirements.md",
+   "pages": [
+    5,
+    6
+   ],
+   "prefix": "A-AP",
+   "title": "Lịch hẹn — Danh sách, thêm lịch hẹn và Review"
+  }
+ ],
+ "ADM-LHN-020002": [
+  {
+   "file": "appointment_requirement/appointment_requirements.md",
+   "pages": [
+    5,
+    6
+   ],
+   "prefix": "A-AP",
+   "title": "Lịch hẹn — Danh sách, thêm lịch hẹn và Review"
+  }
+ ],
+ "ADM-LHN-020009": [
+  {
+   "file": "appointment_requirement/appointment_requirements.md",
+   "pages": [
+    5,
+    6
+   ],
+   "prefix": "A-AP",
+   "title": "Lịch hẹn — Danh sách, thêm lịch hẹn và Review"
+  }
+ ],
+ "ADM-LOP-010000": [
+  {
+   "file": "management_requirement/class_management/class_creation_requirements.md",
+   "pages": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "prefix": "M-CC",
+   "title": "Tạo lớp học"
+  },
+  {
+   "file": "management_requirement/class_management/class_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9
+   ],
+   "prefix": "M-CM",
+   "title": "Quản lý danh sách lớp học"
+  }
+ ],
+ "ADM-LOP-010000-DK": [
+  {
+   "file": "management_requirement/class_management/class_creation_requirements.md",
+   "pages": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "prefix": "M-CC",
+   "title": "Tạo lớp học"
+  },
+  {
+   "file": "management_requirement/class_management/class_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9
+   ],
+   "prefix": "M-CM",
+   "title": "Quản lý danh sách lớp học"
+  }
+ ],
+ "ADM-LOP-010002": [
+  {
+   "file": "management_requirement/class_management/class_creation_requirements.md",
+   "pages": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "prefix": "M-CC",
+   "title": "Tạo lớp học"
+  },
+  {
+   "file": "management_requirement/class_management/class_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9
+   ],
+   "prefix": "M-CM",
+   "title": "Quản lý danh sách lớp học"
+  }
+ ],
+ "ADM-LOP-010004": [
+  {
+   "file": "management_requirement/class_management/class_creation_requirements.md",
+   "pages": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "prefix": "M-CC",
+   "title": "Tạo lớp học"
+  },
+  {
+   "file": "management_requirement/class_management/class_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9
+   ],
+   "prefix": "M-CM",
+   "title": "Quản lý danh sách lớp học"
+  }
+ ],
+ "ADM-LOP-010010": [
+  {
+   "file": "management_requirement/class_management/class_creation_requirements.md",
+   "pages": [
+    1
+   ],
+   "prefix": "M-CC",
+   "title": "Tạo lớp học"
+  }
+ ],
+ "ADM-LOP-010010-DK": [
+  {
+   "file": "management_requirement/class_management/class_creation_requirements.md",
+   "pages": [
+    1
+   ],
+   "prefix": "M-CC",
+   "title": "Tạo lớp học"
+  }
+ ],
  "ADM-LOP-010020": [
   {
    "file": "management_requirement/class_management/class_creation_requirements.md",
@@ -1225,12 +1878,39 @@
    "title": "Quản lý danh sách lớp học"
   }
  ],
+ "ADM-LOP-010050": [
+  {
+   "file": "management_requirement/class_management/class_management_requirements.md",
+   "pages": [
+    8
+   ],
+   "prefix": "M-CM",
+   "title": "Quản lý danh sách lớp học"
+  }
+ ],
+ "ADM-LOP-010050-DK": [
+  {
+   "file": "management_requirement/class_management/class_management_requirements.md",
+   "pages": [
+    8
+   ],
+   "prefix": "M-CM",
+   "title": "Quản lý danh sách lớp học"
+  }
+ ],
  "ADM-LOP-020100": [
   {
    "file": "management_requirement/class_management/class_detail_overview_requirements.md",
    "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
     8,
-    9
+    9,
+    12
    ],
    "prefix": "M-CDO2",
    "title": "Chi tiết lớp học — Menu Tổng quan"
@@ -1240,8 +1920,15 @@
   {
    "file": "management_requirement/class_management/class_detail_overview_requirements.md",
    "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
     8,
-    9
+    9,
+    12
    ],
    "prefix": "M-CDO2",
    "title": "Chi tiết lớp học — Menu Tổng quan"
@@ -1251,8 +1938,15 @@
   {
    "file": "management_requirement/class_management/class_detail_overview_requirements.md",
    "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
     8,
-    9
+    9,
+    12
    ],
    "prefix": "M-CDO2",
    "title": "Chi tiết lớp học — Menu Tổng quan"
@@ -1262,6 +1956,7 @@
   {
    "file": "management_requirement/class_management/class_detail_overview_requirements.md",
    "pages": [
+    7,
     10
    ],
    "prefix": "M-CDO2",
@@ -1272,10 +1967,59 @@
   {
    "file": "management_requirement/class_management/class_detail_overview_requirements.md",
    "pages": [
+    7,
     10
    ],
    "prefix": "M-CDO2",
    "title": "Chi tiết lớp học — Menu Tổng quan"
+  }
+ ],
+ "ADM-LOP-020300": [
+  {
+   "file": "management_requirement/class_management/class_detail_homework_tests_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "prefix": "M-CDH",
+   "title": "Chi tiết lớp học — Menu Bài tập và kiểm tra"
+  }
+ ],
+ "ADM-LOP-020300-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_homework_tests_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "prefix": "M-CDH",
+   "title": "Chi tiết lớp học — Menu Bài tập và kiểm tra"
+  }
+ ],
+ "ADM-LOP-020303": [
+  {
+   "file": "management_requirement/class_management/class_detail_homework_tests_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "prefix": "M-CDH",
+   "title": "Chi tiết lớp học — Menu Bài tập và kiểm tra"
   }
  ],
  "ADM-LOP-020404": [
@@ -1332,7 +2076,27 @@
   {
    "file": "management_requirement/class_management/class_detail_processes_requirements.md",
    "pages": [
-    1
+    2
+   ],
+   "prefix": "M-CDP",
+   "title": "Chi tiết lớp học — Tiêu chuẩn lớp - giáo viên, CSKH và Quy trình lớp"
+  }
+ ],
+ "ADM-LOP-020610-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_processes_requirements.md",
+   "pages": [
+    2
+   ],
+   "prefix": "M-CDP",
+   "title": "Chi tiết lớp học — Tiêu chuẩn lớp - giáo viên, CSKH và Quy trình lớp"
+  }
+ ],
+ "ADM-LOP-020611": [
+  {
+   "file": "management_requirement/class_management/class_detail_processes_requirements.md",
+   "pages": [
+    2
    ],
    "prefix": "M-CDP",
    "title": "Chi tiết lớp học — Tiêu chuẩn lớp - giáo viên, CSKH và Quy trình lớp"
@@ -1488,10 +2252,17 @@
   {
    "file": "management_requirement/class_management/class_detail_lessons_requirements.md",
    "pages": [
-    1,
-    2,
-    5,
-    9
+    6
+   ],
+   "prefix": "M-CDL",
+   "title": "Chi tiết lớp học — Menu Bài học"
+  }
+ ],
+ "ADM-LOP-030200-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "pages": [
+    6
    ],
    "prefix": "M-CDL",
    "title": "Chi tiết lớp học — Menu Bài học"
@@ -1567,12 +2338,191 @@
    "title": "Chi tiết lớp học — Menu Bài học"
   }
  ],
+ "ADM-LOP-040100": [
+  {
+   "file": "management_requirement/class_management/class_detail_information_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "prefix": "M-CDI",
+   "title": "Chi tiết lớp học — Tab Thông tin"
+  }
+ ],
+ "ADM-LOP-040100-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_information_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "prefix": "M-CDI",
+   "title": "Chi tiết lớp học — Tab Thông tin"
+  }
+ ],
+ "ADM-LOP-040200": [
+  {
+   "file": "management_requirement/class_management/class_detail_students_requirements.md",
+   "pages": [
+    1,
+    2,
+    5,
+    9,
+    10
+   ],
+   "prefix": "M-CDS3",
+   "title": "Chi tiết lớp học — Tab Học viên"
+  }
+ ],
+ "ADM-LOP-040200-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_students_requirements.md",
+   "pages": [
+    1,
+    2,
+    5,
+    9,
+    10
+   ],
+   "prefix": "M-CDS3",
+   "title": "Chi tiết lớp học — Tab Học viên"
+  }
+ ],
+ "ADM-LOP-040210": [
+  {
+   "file": "management_requirement/class_management/class_detail_students_requirements.md",
+   "pages": [
+    6
+   ],
+   "prefix": "M-CDS3",
+   "title": "Chi tiết lớp học — Tab Học viên"
+  }
+ ],
+ "ADM-LOP-040210-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_students_requirements.md",
+   "pages": [
+    6
+   ],
+   "prefix": "M-CDS3",
+   "title": "Chi tiết lớp học — Tab Học viên"
+  }
+ ],
+ "ADM-LOP-040220": [
+  {
+   "file": "management_requirement/class_management/class_detail_students_requirements.md",
+   "pages": [
+    7
+   ],
+   "prefix": "M-CDS3",
+   "title": "Chi tiết lớp học — Tab Học viên"
+  }
+ ],
+ "ADM-LOP-040220-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_students_requirements.md",
+   "pages": [
+    7
+   ],
+   "prefix": "M-CDS3",
+   "title": "Chi tiết lớp học — Tab Học viên"
+  }
+ ],
+ "ADM-LOP-040230": [
+  {
+   "file": "management_requirement/class_management/class_detail_students_requirements.md",
+   "pages": [
+    8
+   ],
+   "prefix": "M-CDS3",
+   "title": "Chi tiết lớp học — Tab Học viên"
+  }
+ ],
+ "ADM-LOP-040230-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_students_requirements.md",
+   "pages": [
+    8
+   ],
+   "prefix": "M-CDS3",
+   "title": "Chi tiết lớp học — Tab Học viên"
+  }
+ ],
+ "ADM-LOP-040300": [
+  {
+   "file": "management_requirement/class_management/class_detail_teachers_requirements.md",
+   "pages": [
+    1,
+    5,
+    7,
+    8
+   ],
+   "prefix": "M-CDT",
+   "title": "Chi tiết lớp học — Tab Giáo viên"
+  }
+ ],
+ "ADM-LOP-040300-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_teachers_requirements.md",
+   "pages": [
+    1,
+    5,
+    7,
+    8
+   ],
+   "prefix": "M-CDT",
+   "title": "Chi tiết lớp học — Tab Giáo viên"
+  }
+ ],
+ "ADM-LOP-040400": [
+  {
+   "file": "management_requirement/class_management/class_detail_support_handlers_requirements.md",
+   "pages": [
+    1,
+    3,
+    4,
+    6,
+    7,
+    8
+   ],
+   "prefix": "M-CDS4",
+   "title": "Chi tiết lớp học — Tab Trợ giảng & Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040400-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_support_handlers_requirements.md",
+   "pages": [
+    1,
+    3,
+    4,
+    6,
+    7,
+    8
+   ],
+   "prefix": "M-CDS4",
+   "title": "Chi tiết lớp học — Tab Trợ giảng & Phụ trách lớp"
+  }
+ ],
  "ADM-LOP-040500": [
   {
    "file": "management_requirement/class_management/class_detail_schedule_requirements.md",
    "pages": [
     1,
-    7
+    2,
+    6,
+    7,
+    8
    ],
    "prefix": "M-CDS",
    "title": "Chi tiết lớp học — Tab Lịch dạy"
@@ -1583,7 +2533,10 @@
    "file": "management_requirement/class_management/class_detail_schedule_requirements.md",
    "pages": [
     1,
-    7
+    2,
+    6,
+    7,
+    8
    ],
    "prefix": "M-CDS",
    "title": "Chi tiết lớp học — Tab Lịch dạy"
@@ -1593,8 +2546,21 @@
   {
    "file": "management_requirement/class_management/class_detail_schedule_requirements.md",
    "pages": [
-    1,
-    7
+    3,
+    4,
+    5
+   ],
+   "prefix": "M-CDS",
+   "title": "Chi tiết lớp học — Tab Lịch dạy"
+  }
+ ],
+ "ADM-LOP-040510-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "pages": [
+    3,
+    4,
+    5
    ],
    "prefix": "M-CDS",
    "title": "Chi tiết lớp học — Tab Lịch dạy"
@@ -1604,8 +2570,37 @@
   {
    "file": "management_requirement/class_management/class_detail_schedule_requirements.md",
    "pages": [
-    1,
-    7
+    5
+   ],
+   "prefix": "M-CDS",
+   "title": "Chi tiết lớp học — Tab Lịch dạy"
+  }
+ ],
+ "ADM-LOP-040520-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "pages": [
+    5
+   ],
+   "prefix": "M-CDS",
+   "title": "Chi tiết lớp học — Tab Lịch dạy"
+  }
+ ],
+ "ADM-LOP-040521": [
+  {
+   "file": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "pages": [
+    5
+   ],
+   "prefix": "M-CDS",
+   "title": "Chi tiết lớp học — Tab Lịch dạy"
+  }
+ ],
+ "ADM-LOP-040521-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "pages": [
+    5
    ],
    "prefix": "M-CDS",
    "title": "Chi tiết lớp học — Tab Lịch dạy"
@@ -1613,13 +2608,316 @@
  ],
  "ADM-LOP-040600": [
   {
-   "file": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "file": "management_requirement/class_management/class_detail_invoices_requirements.md",
    "pages": [
     1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "prefix": "M-CDI2",
+   "title": "Chi tiết lớp học — Tab Hóa đơn"
+  }
+ ],
+ "ADM-LOP-040600-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_invoices_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "prefix": "M-CDI2",
+   "title": "Chi tiết lớp học — Tab Hóa đơn"
+  }
+ ],
+ "ADM-LOP-040700": [
+  {
+   "file": "management_requirement/class_management/class_detail_kpi_requirements.md",
+   "pages": [
+    1,
+    4,
+    5,
+    6,
     7
    ],
-   "prefix": "M-CDS",
-   "title": "Chi tiết lớp học — Tab Lịch dạy"
+   "prefix": "M-CDK",
+   "title": "Chi tiết lớp học — Tab KPI của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040700-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_kpi_requirements.md",
+   "pages": [
+    1,
+    4,
+    5,
+    6,
+    7
+   ],
+   "prefix": "M-CDK",
+   "title": "Chi tiết lớp học — Tab KPI của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040710": [
+  {
+   "file": "management_requirement/class_management/class_detail_kpi_requirements.md",
+   "pages": [
+    2
+   ],
+   "prefix": "M-CDK",
+   "title": "Chi tiết lớp học — Tab KPI của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040710-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_kpi_requirements.md",
+   "pages": [
+    2
+   ],
+   "prefix": "M-CDK",
+   "title": "Chi tiết lớp học — Tab KPI của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040712": [
+  {
+   "file": "management_requirement/class_management/class_detail_kpi_requirements.md",
+   "pages": [
+    3
+   ],
+   "prefix": "M-CDK",
+   "title": "Chi tiết lớp học — Tab KPI của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040712-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_kpi_requirements.md",
+   "pages": [
+    3
+   ],
+   "prefix": "M-CDK",
+   "title": "Chi tiết lớp học — Tab KPI của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040800": [
+  {
+   "file": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "pages": [
+    1,
+    4,
+    5,
+    6,
+    7
+   ],
+   "prefix": "M-CDO",
+   "title": "Chi tiết lớp học — Tab OT của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040800-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "pages": [
+    1,
+    4,
+    5,
+    6,
+    7
+   ],
+   "prefix": "M-CDO",
+   "title": "Chi tiết lớp học — Tab OT của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040810": [
+  {
+   "file": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "pages": [
+    2
+   ],
+   "prefix": "M-CDO",
+   "title": "Chi tiết lớp học — Tab OT của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040810-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "pages": [
+    2
+   ],
+   "prefix": "M-CDO",
+   "title": "Chi tiết lớp học — Tab OT của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040812": [
+  {
+   "file": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "pages": [
+    3
+   ],
+   "prefix": "M-CDO",
+   "title": "Chi tiết lớp học — Tab OT của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-040812-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "pages": [
+    3
+   ],
+   "prefix": "M-CDO",
+   "title": "Chi tiết lớp học — Tab OT của Phụ trách lớp"
+  }
+ ],
+ "ADM-LOP-050100": [
+  {
+   "file": "management_requirement/class_management/class_detail_appointments_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "prefix": "M-CDA",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Lịch hẹn"
+  },
+  {
+   "file": "management_requirement/class_management/class_detail_journal_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "prefix": "M-CDJ",
+   "title": "Chi tiết lớp học — Menu Nhật ký"
+  },
+  {
+   "file": "management_requirement/class_management/class_detail_messages_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "prefix": "M-CDM2",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Tin nhắn"
+  },
+  {
+   "file": "management_requirement/class_management/class_detail_notes_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "prefix": "M-CDN",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Ghi chú"
+  }
+ ],
+ "ADM-LOP-050100-DK": [
+  {
+   "file": "management_requirement/class_management/class_detail_appointments_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "prefix": "M-CDA",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Lịch hẹn"
+  },
+  {
+   "file": "management_requirement/class_management/class_detail_journal_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "prefix": "M-CDJ",
+   "title": "Chi tiết lớp học — Menu Nhật ký"
+  },
+  {
+   "file": "management_requirement/class_management/class_detail_messages_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "prefix": "M-CDM2",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Tin nhắn"
+  },
+  {
+   "file": "management_requirement/class_management/class_detail_notes_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "prefix": "M-CDN",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Ghi chú"
+  }
+ ],
+ "ADM-LOP-050204": [
+  {
+   "file": "management_requirement/class_management/class_detail_appointments_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "prefix": "M-CDA",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Lịch hẹn"
+  },
+  {
+   "file": "management_requirement/class_management/class_detail_journal_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "prefix": "M-CDJ",
+   "title": "Chi tiết lớp học — Menu Nhật ký"
+  },
+  {
+   "file": "management_requirement/class_management/class_detail_messages_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "prefix": "M-CDM2",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Tin nhắn"
+  },
+  {
+   "file": "management_requirement/class_management/class_detail_notes_requirements.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "prefix": "M-CDN",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Ghi chú"
   }
  ],
  "ADM-MV-010000": [
@@ -1710,6 +3008,74 @@
    ],
    "prefix": "T-MV",
    "title": "Move Video"
+  }
+ ],
+ "ADM-QT-010000": [
+  {
+   "file": "process_definition_requirement/process_definition_requirements.md",
+   "pages": [
+    2,
+    6
+   ],
+   "prefix": "PD-PD",
+   "title": "Define quy trình"
+  }
+ ],
+ "ADM-QT-010000-DK": [
+  {
+   "file": "process_definition_requirement/process_definition_requirements.md",
+   "pages": [
+    2,
+    6
+   ],
+   "prefix": "PD-PD",
+   "title": "Define quy trình"
+  }
+ ],
+ "ADM-QT-010001": [
+  {
+   "file": "process_definition_requirement/process_definition_requirements.md",
+   "pages": [
+    1
+   ],
+   "prefix": "PD-PD",
+   "title": "Define quy trình"
+  }
+ ],
+ "ADM-QT-010001-DK": [
+  {
+   "file": "process_definition_requirement/process_definition_requirements.md",
+   "pages": [
+    1
+   ],
+   "prefix": "PD-PD",
+   "title": "Define quy trình"
+  }
+ ],
+ "ADM-QT-020000": [
+  {
+   "file": "process_definition_requirement/process_definition_requirements.md",
+   "pages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "prefix": "PD-PD",
+   "title": "Define quy trình"
+  }
+ ],
+ "ADM-QT-020000-DK": [
+  {
+   "file": "process_definition_requirement/process_definition_requirements.md",
+   "pages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "prefix": "PD-PD",
+   "title": "Define quy trình"
   }
  ],
  "ADM-SS-010000": [
@@ -1842,14 +3208,97 @@
    "title": "Ship Sách"
   }
  ],
+ "ADM-TAG-010000": [
+  {
+   "file": "tag_definition_requirement/tag_definition_requirements.md",
+   "pages": [
+    1,
+    4
+   ],
+   "prefix": "TD-TD",
+   "title": "Define Tag — Quản lý nhóm và tag"
+  }
+ ],
+ "ADM-TAG-010000-DK": [
+  {
+   "file": "tag_definition_requirement/tag_definition_requirements.md",
+   "pages": [
+    1,
+    4
+   ],
+   "prefix": "TD-TD",
+   "title": "Define Tag — Quản lý nhóm và tag"
+  }
+ ],
+ "ADM-TAG-010010": [
+  {
+   "file": "tag_definition_requirement/tag_definition_requirements.md",
+   "pages": [
+    3
+   ],
+   "prefix": "TD-TD",
+   "title": "Define Tag — Quản lý nhóm và tag"
+  }
+ ],
+ "ADM-TAG-010010-DK": [
+  {
+   "file": "tag_definition_requirement/tag_definition_requirements.md",
+   "pages": [
+    3
+   ],
+   "prefix": "TD-TD",
+   "title": "Define Tag — Quản lý nhóm và tag"
+  }
+ ],
+ "ADM-TAG-010020": [
+  {
+   "file": "tag_definition_requirement/tag_definition_requirements.md",
+   "pages": [
+    2
+   ],
+   "prefix": "TD-TD",
+   "title": "Define Tag — Quản lý nhóm và tag"
+  }
+ ],
+ "ADM-TAG-010020-DK": [
+  {
+   "file": "tag_definition_requirement/tag_definition_requirements.md",
+   "pages": [
+    2
+   ],
+   "prefix": "TD-TD",
+   "title": "Define Tag — Quản lý nhóm và tag"
+  }
+ ],
  "ADM-TK-010000": [
   {
    "file": "class_handler_support/statistics/statistics.md",
    "pages": [
-    1
+    1,
+    2
    ],
    "prefix": "CHS-ST",
    "title": "[Phụ trách lớp] Thống kê"
+  }
+ ],
+ "ADM-TN-010004": [
+  {
+   "file": "ship_books/message_template/message_template.md",
+   "pages": [
+    1
+   ],
+   "prefix": "SB-MT",
+   "title": "Template Tin Nhắn"
+  }
+ ],
+ "ADM-TN-010004-DK": [
+  {
+   "file": "ship_books/message_template/message_template.md",
+   "pages": [
+    1
+   ],
+   "prefix": "SB-MT",
+   "title": "Template Tin Nhắn"
   }
  ],
  "CD-BL-010000": [
@@ -1923,11 +3372,108 @@
    "title": "Báo lỗi & Góp ý"
   }
  ],
+ "CD-CDO-010000": [
+  {
+   "file": "curriculum_management_requirement/level_management/level_management.md",
+   "pages": [
+    1,
+    2,
+    3
+   ],
+   "prefix": "CM-LM",
+   "title": "Quản lý danh sách cấp độ"
+  },
+  {
+   "file": "curriculum_management_requirement/level_management/level_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3
+   ],
+   "prefix": "CM-LM2",
+   "title": "Quản lý cấp độ"
+  }
+ ],
+ "CD-CDO-010000-DK": [
+  {
+   "file": "curriculum_management_requirement/level_management/level_management.md",
+   "pages": [
+    1,
+    2,
+    3
+   ],
+   "prefix": "CM-LM",
+   "title": "Quản lý danh sách cấp độ"
+  },
+  {
+   "file": "curriculum_management_requirement/level_management/level_management_requirements.md",
+   "pages": [
+    1,
+    2,
+    3
+   ],
+   "prefix": "CM-LM2",
+   "title": "Quản lý cấp độ"
+  }
+ ],
+ "CD-CDO-010010": [
+  {
+   "file": "curriculum_management_requirement/level_management/level_management.md",
+   "pages": [
+    4
+   ],
+   "prefix": "CM-LM",
+   "title": "Quản lý danh sách cấp độ"
+  }
+ ],
+ "CD-CDO-010010-DK": [
+  {
+   "file": "curriculum_management_requirement/level_management/level_management.md",
+   "pages": [
+    4
+   ],
+   "prefix": "CM-LM",
+   "title": "Quản lý danh sách cấp độ"
+  }
+ ],
+ "CD-CDO-010012": [
+  {
+   "file": "curriculum_management_requirement/level_management/level_management.md",
+   "pages": [
+    4
+   ],
+   "prefix": "CM-LM",
+   "title": "Quản lý danh sách cấp độ"
+  }
+ ],
+ "CD-DM-010000": [
+  {
+   "file": "curriculum_management_requirement/category_management/category_management_requirements.md",
+   "pages": [
+    1,
+    2
+   ],
+   "prefix": "CM-CM3",
+   "title": "Quản lý danh mục"
+  }
+ ],
+ "CD-DM-010000-DK": [
+  {
+   "file": "curriculum_management_requirement/category_management/category_management_requirements.md",
+   "pages": [
+    1,
+    2
+   ],
+   "prefix": "CM-CM3",
+   "title": "Quản lý danh mục"
+  }
+ ],
  "CD-DM-010010": [
   {
    "file": "curriculum_management_requirement/category_management/category_management_requirements.md",
    "pages": [
-    4
+    4,
+    5
    ],
    "prefix": "CM-CM3",
    "title": "Quản lý danh mục"
@@ -1935,7 +3481,8 @@
   {
    "file": "curriculum_management_requirement/category_management/detail_category.md",
    "pages": [
-    1
+    1,
+    2
    ],
    "prefix": "CM-DC",
    "title": "Chi tiết danh mục (Popup)"
@@ -1945,7 +3492,8 @@
   {
    "file": "curriculum_management_requirement/category_management/category_management_requirements.md",
    "pages": [
-    4
+    4,
+    5
    ],
    "prefix": "CM-CM3",
    "title": "Quản lý danh mục"
@@ -1953,7 +3501,8 @@
   {
    "file": "curriculum_management_requirement/category_management/detail_category.md",
    "pages": [
-    1
+    1,
+    2
    ],
    "prefix": "CM-DC",
    "title": "Chi tiết danh mục (Popup)"
@@ -2091,6 +3640,7 @@
   {
    "file": "curriculum_management_requirement/category_management/category_management_requirements.md",
    "pages": [
+    3,
     6
    ],
    "prefix": "CM-CM3",
@@ -2101,6 +3651,7 @@
   {
    "file": "curriculum_management_requirement/category_management/category_management_requirements.md",
    "pages": [
+    3,
     6
    ],
    "prefix": "CM-CM3",
@@ -2111,17 +3662,41 @@
   {
    "file": "curriculum_management_requirement/category_management/category_management_requirements.md",
    "pages": [
+    3,
     6
    ],
    "prefix": "CM-CM3",
    "title": "Quản lý danh mục"
   }
  ],
+ "CD-KH-010000": [
+  {
+   "file": "course_management/course_management.md",
+   "pages": [
+    1,
+    2
+   ],
+   "prefix": "CM-CM",
+   "title": "Quản lý khoá học"
+  }
+ ],
+ "CD-KH-010000-DK": [
+  {
+   "file": "course_management/course_management.md",
+   "pages": [
+    1,
+    2
+   ],
+   "prefix": "CM-CM",
+   "title": "Quản lý khoá học"
+  }
+ ],
  "CD-KH-010010": [
   {
    "file": "course_management/course_management.md",
    "pages": [
-    3
+    3,
+    4
    ],
    "prefix": "CM-CM",
    "title": "Quản lý khoá học"
@@ -2131,7 +3706,8 @@
   {
    "file": "course_management/course_management.md",
    "pages": [
-    3
+    3,
+    4
    ],
    "prefix": "CM-CM",
    "title": "Quản lý khoá học"
@@ -2141,10 +3717,176 @@
   {
    "file": "course_management/course_management.md",
    "pages": [
-    3
+    4
    ],
    "prefix": "CM-CM",
    "title": "Quản lý khoá học"
+  }
+ ],
+ "CD-KH-010013-DK": [
+  {
+   "file": "course_management/course_management.md",
+   "pages": [
+    4
+   ],
+   "prefix": "CM-CM",
+   "title": "Quản lý khoá học"
+  }
+ ],
+ "CD-KH-020100": [
+  {
+   "file": "course_management/overview-s1/overview-s1.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "prefix": "CM-OS",
+   "title": "Tổng quan (S1)"
+  }
+ ],
+ "CD-KH-020100-DK": [
+  {
+   "file": "course_management/overview-s1/overview-s1.md",
+   "pages": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "prefix": "CM-OS",
+   "title": "Tổng quan (S1)"
+  }
+ ],
+ "CD-KH-020200": [
+  {
+   "file": "course_management/learning-path-s2/learning-path-s2.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CM-LPS",
+   "title": "Lộ Trình (S2)"
+  }
+ ],
+ "CD-KH-020200-DK": [
+  {
+   "file": "course_management/learning-path-s2/learning-path-s2.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CM-LPS",
+   "title": "Lộ Trình (S2)"
+  }
+ ],
+ "CD-KH-030100": [
+  {
+   "file": "course_management/semester/information/information.md",
+   "pages": [
+    1,
+    2
+   ],
+   "prefix": "CM-IN",
+   "title": "Học Kỳ"
+  }
+ ],
+ "CD-KH-030100-DK": [
+  {
+   "file": "course_management/semester/information/information.md",
+   "pages": [
+    1,
+    2
+   ],
+   "prefix": "CM-IN",
+   "title": "Học Kỳ"
+  }
+ ],
+ "CD-KH-030104": [
+  {
+   "file": "course_management/semester/information/information.md",
+   "pages": [
+    5
+   ],
+   "prefix": "CM-IN",
+   "title": "Học Kỳ"
+  }
+ ],
+ "CD-KH-030104-DK": [
+  {
+   "file": "course_management/semester/information/information.md",
+   "pages": [
+    5
+   ],
+   "prefix": "CM-IN",
+   "title": "Học Kỳ"
+  }
+ ],
+ "CD-KH-030110": [
+  {
+   "file": "course_management/semester/information/information.md",
+   "pages": [
+    3,
+    5
+   ],
+   "prefix": "CM-IN",
+   "title": "Học Kỳ"
+  }
+ ],
+ "CD-KH-030110-DK": [
+  {
+   "file": "course_management/semester/information/information.md",
+   "pages": [
+    3,
+    5
+   ],
+   "prefix": "CM-IN",
+   "title": "Học Kỳ"
+  }
+ ],
+ "CD-KH-030120": [
+  {
+   "file": "course_management/semester/information/information.md",
+   "pages": [
+    3,
+    5
+   ],
+   "prefix": "CM-IN",
+   "title": "Học Kỳ"
+  }
+ ],
+ "CD-KH-030120-DK": [
+  {
+   "file": "course_management/semester/information/information.md",
+   "pages": [
+    3,
+    5
+   ],
+   "prefix": "CM-IN",
+   "title": "Học Kỳ"
+  }
+ ],
+ "CD-KH-030200": [
+  {
+   "file": "course_management/semester/lesson/lesson.md",
+   "pages": [
+    1,
+    3,
+    4
+   ],
+   "prefix": "CM-LE",
+   "title": "Học Kỳ - Tab Bài học"
+  }
+ ],
+ "CD-KH-030200-DK": [
+  {
+   "file": "course_management/semester/lesson/lesson.md",
+   "pages": [
+    1,
+    3,
+    4
+   ],
+   "prefix": "CM-LE",
+   "title": "Học Kỳ - Tab Bài học"
   }
  ],
  "CD-KH-030210": [
@@ -2281,7 +4023,8 @@
   {
    "file": "course_management/semester/test/test.md",
    "pages": [
-    1
+    1,
+    4
    ],
    "prefix": "CM-TE",
    "title": "Học Kỳ - Tab Kiểm tra"
@@ -2291,7 +4034,8 @@
   {
    "file": "course_management/semester/test/test.md",
    "pages": [
-    1
+    1,
+    4
    ],
    "prefix": "CM-TE",
    "title": "Học Kỳ - Tab Kiểm tra"
@@ -2537,6 +4281,88 @@
    "title": "Học Kỳ - Tab Kiểm tra"
   }
  ],
+ "CD-KH-040100": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    1,
+    2,
+    3,
+    7,
+    11
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040100-DK": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    1,
+    2,
+    3,
+    7,
+    11
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040110": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    1,
+    2,
+    3,
+    7,
+    11
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040120": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    9
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040120-DK": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    9
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040125": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    10
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040125-DK": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    10
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
  "CD-KH-040130": [
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
@@ -2552,6 +4378,202 @@
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
     6
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040140": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    14
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040140-DK": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    14
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040150": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    4
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040150-DK": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    4
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040155": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    15
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040155-DK": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    15
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040160": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    5
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040160-DK": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    5
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040170": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    12
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040170-DK": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    12
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040180": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    1,
+    2,
+    3,
+    7,
+    11
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040190": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    13
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040190-DK": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    13
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040195": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    8
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040195-DK": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    8
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040200": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    1,
+    2,
+    3,
+    7,
+    11
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040200-DK": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    1,
+    2,
+    3,
+    7,
+    11
+   ],
+   "prefix": "CM-KS",
+   "title": "Kiến thức (S1)"
+  }
+ ],
+ "CD-KH-040210": [
+  {
+   "file": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    1,
+    2,
+    3,
+    7,
+    11
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -2649,6 +4671,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
+    9,
     19
    ],
    "prefix": "CM-SS",
@@ -2659,6 +4682,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
+    9,
     19
    ],
    "prefix": "CM-SS",
@@ -2965,9 +4989,17 @@
   {
    "file": "course_management/homework-test/homework-test.md",
    "pages": [
-    1,
-    2,
-    3
+    8
+   ],
+   "prefix": "CM-HW",
+   "title": "[CD] Bài tập về nhà và Kiểm tra"
+  }
+ ],
+ "CD-KH-060150-DK": [
+  {
+   "file": "course_management/homework-test/homework-test.md",
+   "pages": [
+    8
    ],
    "prefix": "CM-HW",
    "title": "[CD] Bài tập về nhà và Kiểm tra"
@@ -3009,7 +5041,12 @@
   {
    "file": "course_management/library/library.md",
    "pages": [
-    4
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
    ],
    "prefix": "CM-LI",
    "title": "[CD] Thư viện"
@@ -3019,7 +5056,12 @@
   {
    "file": "course_management/library/library.md",
    "pages": [
-    4
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
    ],
    "prefix": "CM-LI",
    "title": "[CD] Thư viện"
@@ -3049,7 +5091,12 @@
   {
    "file": "course_management/library/library.md",
    "pages": [
-    4
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
    ],
    "prefix": "CM-LI",
    "title": "[CD] Thư viện"
@@ -3059,7 +5106,12 @@
   {
    "file": "course_management/library/library.md",
    "pages": [
-    4
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
    ],
    "prefix": "CM-LI",
    "title": "[CD] Thư viện"
@@ -3369,11 +5421,52 @@
    "title": "Báo lỗi & Góp ý"
   }
  ],
+ "CH-TC-010001": [
+  {
+   "file": "class_handler_support/overview/overview.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CHS-OV",
+   "title": "[Phụ trách lớp] Trang chủ — Thống kê tổng quan"
+  }
+ ],
+ "CH-TC-010002": [
+  {
+   "file": "class_handler_support/overview/overview.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CHS-OV",
+   "title": "[Phụ trách lớp] Trang chủ — Thống kê tổng quan"
+  }
+ ],
+ "CH-TC-010003": [
+  {
+   "file": "class_handler_support/overview/overview.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CHS-OV",
+   "title": "[Phụ trách lớp] Trang chủ — Thống kê tổng quan"
+  }
+ ],
+ "CH-TC-010003-DK": [
+  {
+   "file": "class_handler_support/overview/overview.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CHS-OV",
+   "title": "[Phụ trách lớp] Trang chủ — Thống kê tổng quan"
+  }
+ ],
  "CH-TK-010000": [
   {
    "file": "class_handler_support/statistics/statistics.md",
    "pages": [
-    1
+    1,
+    2
    ],
    "prefix": "CHS-ST",
    "title": "[Phụ trách lớp] Thống kê"
@@ -3383,7 +5476,8 @@
   {
    "file": "class_handler_support/statistics/statistics.md",
    "pages": [
-    1
+    1,
+    2
    ],
    "prefix": "CHS-ST",
    "title": "[Phụ trách lớp] Thống kê"
@@ -3437,6 +5531,62 @@
    ],
    "prefix": "SB-BU",
    "title": "Báo lỗi & Góp ý"
+  }
+ ],
+ "GV-KS-010000": [
+  {
+   "file": "survey_bug/survey/03-take-survey/03-take-survey.md",
+   "pages": [
+    2,
+    3,
+    4
+   ],
+   "prefix": "SB-0TS",
+   "title": "Giáo viên làm khảo sát (Web)"
+  }
+ ],
+ "GV-KS-010000-DK": [
+  {
+   "file": "survey_bug/survey/03-take-survey/03-take-survey.md",
+   "pages": [
+    2,
+    3,
+    4
+   ],
+   "prefix": "SB-0TS",
+   "title": "Giáo viên làm khảo sát (Web)"
+  }
+ ],
+ "GV-KS-010001": [
+  {
+   "file": "survey_bug/survey/03-take-survey/03-take-survey.md",
+   "pages": [
+    1
+   ],
+   "prefix": "SB-0TS",
+   "title": "Giáo viên làm khảo sát (Web)"
+  }
+ ],
+ "GV-KS-010001-DK": [
+  {
+   "file": "survey_bug/survey/03-take-survey/03-take-survey.md",
+   "pages": [
+    1
+   ],
+   "prefix": "SB-0TS",
+   "title": "Giáo viên làm khảo sát (Web)"
+  }
+ ],
+ "GV-KS-010010": [
+  {
+   "file": "survey_bug/survey/03-take-survey/03-take-survey.md",
+   "pages": [
+    2,
+    3,
+    4
+   ],
+   "prefix": "SB-0TS",
+   "title": "Giáo viên làm khảo sát (Web)"
   }
  ],
  "GV-LD-010000": [
@@ -3503,7 +5653,10 @@
   {
    "file": "teacher_role/class/class_overview_requirements.md",
    "pages": [
-    2
+    2,
+    3,
+    5,
+    10
    ],
    "prefix": "TR-CO",
    "title": "[Giáo viên] Chi tiết lớp — Tổng quan"
@@ -3511,7 +5664,10 @@
   {
    "file": "teacher_role/class_list/class_list_requirements.md",
    "pages": [
-    1
+    1,
+    2,
+    3,
+    4
    ],
    "prefix": "TR-CL",
    "title": "[Giáo viên] Lớp — Thống kê tổng quan"
@@ -3521,7 +5677,10 @@
   {
    "file": "teacher_role/class/class_overview_requirements.md",
    "pages": [
-    2
+    2,
+    3,
+    5,
+    10
    ],
    "prefix": "TR-CO",
    "title": "[Giáo viên] Chi tiết lớp — Tổng quan"
@@ -3529,7 +5688,10 @@
   {
    "file": "teacher_role/class_list/class_list_requirements.md",
    "pages": [
-    1
+    1,
+    2,
+    3,
+    4
    ],
    "prefix": "TR-CL",
    "title": "[Giáo viên] Lớp — Thống kê tổng quan"
@@ -3539,7 +5701,12 @@
   {
    "file": "teacher_role/class/class_overview_requirements.md",
    "pages": [
-    1
+    1,
+    3,
+    4,
+    5,
+    6,
+    7
    ],
    "prefix": "TR-CO",
    "title": "[Giáo viên] Chi tiết lớp — Tổng quan"
@@ -3549,7 +5716,12 @@
   {
    "file": "teacher_role/class/class_overview_requirements.md",
    "pages": [
-    1
+    1,
+    3,
+    4,
+    5,
+    6,
+    7
    ],
    "prefix": "TR-CO",
    "title": "[Giáo viên] Chi tiết lớp — Tổng quan"
@@ -3559,7 +5731,17 @@
   {
    "file": "teacher_role/class/class_overview_requirements.md",
    "pages": [
-    1
+    8
+   ],
+   "prefix": "TR-CO",
+   "title": "[Giáo viên] Chi tiết lớp — Tổng quan"
+  }
+ ],
+ "GV-LOP-020020-DK": [
+  {
+   "file": "teacher_role/class/class_overview_requirements.md",
+   "pages": [
+    8
    ],
    "prefix": "TR-CO",
    "title": "[Giáo viên] Chi tiết lớp — Tổng quan"
@@ -3569,7 +5751,17 @@
   {
    "file": "teacher_role/class/class_overview_requirements.md",
    "pages": [
-    1
+    9
+   ],
+   "prefix": "TR-CO",
+   "title": "[Giáo viên] Chi tiết lớp — Tổng quan"
+  }
+ ],
+ "GV-LOP-020030-DK": [
+  {
+   "file": "teacher_role/class/class_overview_requirements.md",
+   "pages": [
+    9
    ],
    "prefix": "TR-CO",
    "title": "[Giáo viên] Chi tiết lớp — Tổng quan"
@@ -3580,6 +5772,8 @@
    "file": "teacher_role/class/class_teaching_requirements.md",
    "pages": [
     1,
+    5,
+    7,
     8,
     11
    ],
@@ -3592,6 +5786,8 @@
    "file": "teacher_role/class/class_teaching_requirements.md",
    "pages": [
     1,
+    5,
+    7,
     8,
     11
    ],
@@ -3603,7 +5799,8 @@
   {
    "file": "teacher_role/class/class_teaching_requirements.md",
    "pages": [
-    1
+    1,
+    2
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -3614,6 +5811,8 @@
    "file": "teacher_role/class/class_teaching_requirements.md",
    "pages": [
     1,
+    5,
+    7,
     8,
     11
    ],
@@ -3625,9 +5824,7 @@
   {
    "file": "teacher_role/class/class_teaching_requirements.md",
    "pages": [
-    1,
-    8,
-    11
+    3
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -3637,9 +5834,7 @@
   {
    "file": "teacher_role/class/class_teaching_requirements.md",
    "pages": [
-    1,
-    8,
-    11
+    3
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -3710,6 +5905,7 @@
    "file": "teacher_role/class/class_teaching_requirements.md",
    "pages": [
     1,
+    5,
     6
    ],
    "prefix": "TR-CT",
@@ -3780,7 +5976,17 @@
   {
    "file": "teacher_role/class/class_teaching_requirements.md",
    "pages": [
-    10
+    22
+   ],
+   "prefix": "TR-CT",
+   "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
+  }
+ ],
+ "GV-LOP-030401-DK": [
+  {
+   "file": "teacher_role/class/class_teaching_requirements.md",
+   "pages": [
+    22
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -3813,7 +6019,8 @@
     12,
     13,
     15,
-    18
+    18,
+    20
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -3826,7 +6033,8 @@
     12,
     13,
     15,
-    18
+    18,
+    20
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -3839,7 +6047,8 @@
     12,
     13,
     15,
-    18
+    18,
+    20
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -3852,7 +6061,8 @@
     13,
     14,
     15,
-    18
+    18,
+    21
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -3865,7 +6075,58 @@
     13,
     14,
     15,
-    18
+    18,
+    21
+   ],
+   "prefix": "TR-CT",
+   "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
+  }
+ ],
+ "GV-LOP-040201": [
+  {
+   "file": "teacher_role/class/class_teaching_requirements.md",
+   "pages": [
+    21
+   ],
+   "prefix": "TR-CT",
+   "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
+  }
+ ],
+ "GV-LOP-040201-DK": [
+  {
+   "file": "teacher_role/class/class_teaching_requirements.md",
+   "pages": [
+    21
+   ],
+   "prefix": "TR-CT",
+   "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
+  }
+ ],
+ "GV-LOP-040204": [
+  {
+   "file": "teacher_role/class/class_teaching_requirements.md",
+   "pages": [
+    21
+   ],
+   "prefix": "TR-CT",
+   "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
+  }
+ ],
+ "GV-LOP-040205": [
+  {
+   "file": "teacher_role/class/class_teaching_requirements.md",
+   "pages": [
+    27
+   ],
+   "prefix": "TR-CT",
+   "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
+  }
+ ],
+ "GV-LOP-040205-DK": [
+  {
+   "file": "teacher_role/class/class_teaching_requirements.md",
+   "pages": [
+    27
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -3875,10 +6136,27 @@
   {
    "file": "teacher_role/class/class_teaching_requirements.md",
    "pages": [
-    13,
-    14,
-    15,
-    18
+    16
+   ],
+   "prefix": "TR-CT",
+   "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
+  }
+ ],
+ "GV-LOP-040210-DK": [
+  {
+   "file": "teacher_role/class/class_teaching_requirements.md",
+   "pages": [
+    16
+   ],
+   "prefix": "TR-CT",
+   "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
+  }
+ ],
+ "GV-LOP-040211": [
+  {
+   "file": "teacher_role/class/class_teaching_requirements.md",
+   "pages": [
+    16
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -3960,7 +6238,8 @@
   {
    "file": "teacher_role/class/class_teaching_requirements.md",
    "pages": [
-    19
+    19,
+    20
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -3970,7 +6249,8 @@
   {
    "file": "teacher_role/class/class_teaching_requirements.md",
    "pages": [
-    19
+    19,
+    20
    ],
    "prefix": "TR-CT",
    "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
@@ -4452,7 +6732,17 @@
   {
    "file": "meeting_schedule/meeting_schedule.md",
    "pages": [
-    4
+    1
+   ],
+   "prefix": "MS-MS",
+   "title": "[Phụ trách lớp, Admin] Lịch Họp"
+  }
+ ],
+ "SP-LHP-010000-DK": [
+  {
+   "file": "meeting_schedule/meeting_schedule.md",
+   "pages": [
+    1
    ],
    "prefix": "MS-MS",
    "title": "[Phụ trách lớp, Admin] Lịch Họp"
@@ -4518,10 +6808,31 @@
    "title": "[Phụ trách lớp, Admin] Lịch Họp"
   }
  ],
+ "SP-LHP-010010": [
+  {
+   "file": "meeting_schedule/meeting_schedule.md",
+   "pages": [
+    3
+   ],
+   "prefix": "MS-MS",
+   "title": "[Phụ trách lớp, Admin] Lịch Họp"
+  }
+ ],
+ "SP-LHP-010010-DK": [
+  {
+   "file": "meeting_schedule/meeting_schedule.md",
+   "pages": [
+    3
+   ],
+   "prefix": "MS-MS",
+   "title": "[Phụ trách lớp, Admin] Lịch Họp"
+  }
+ ],
  "SP-LHP-020000": [
   {
    "file": "meeting_schedule/meeting_schedule.md",
    "pages": [
+    1,
     2
    ],
    "prefix": "MS-MS",
@@ -4532,10 +6843,186 @@
   {
    "file": "meeting_schedule/meeting_schedule.md",
    "pages": [
+    1,
     2
    ],
    "prefix": "MS-MS",
    "title": "[Phụ trách lớp, Admin] Lịch Họp"
+  }
+ ],
+ "SP-TASK-010000": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    2
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-010000-DK": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    2
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-010001": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-010001-DK": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-020000": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    2
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-020000-DK": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    2
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-020001": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-020001-DK": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-030000": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    2,
+    3
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-030000-DK": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    2,
+    3
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-030001": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-030001-DK": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    1
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-030002": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    2,
+    3
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-030003": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    2,
+    3
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-030004": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    2,
+    3
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-030010": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    4
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
+  }
+ ],
+ "SP-TASK-030010-DK": [
+  {
+   "file": "class_handler_support/process/process.md",
+   "pages": [
+    4
+   ],
+   "prefix": "CHS-PR",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác"
   }
  ]
 }

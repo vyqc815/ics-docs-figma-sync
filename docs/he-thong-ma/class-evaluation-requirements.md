@@ -23,15 +23,27 @@ Requirement: `teacher_role/class/class_evaluation_requirements.md` — [Giáo vi
 
 ### `A01` Màn Không có quyền truy cập
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LOP-100100` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | menu-danh-gia |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.02` | hinh-minh-hoa |  |  | — |  |  | Chưa sync | QC |
-| `A01.03` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A01.04` | mo-ta |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.05` | nut-quay-ve-trang-chu |  |  | — |  |  | Chưa sync | QC |
+| `A01.01` | menu-danh-gia | `Card Menu v2 (Test)` Type=Menu phụ, State=Select | `I4915:261791;4901:215081` Card Menu v2 (Test) | — |  | `TC01` | Khớp | QC |
+| `A01.02` | hinh-minh-hoa |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.03` | tieu-de |  | `4333:17252` Không có quyền truy cập | — |  |  | Khớp | QC |
+| `A01.04` | mo-ta |  | `4333:17304` Bạn chưa được cấp quyền cho trang này | — |  | `TC01` | Khớp | QC |
+| `A01.05` | nut-quay-ve-trang-chu | `Atom/Button` Type=Primary, Size=Small | `4333:17305` Button · Quay về trang chủ | — |  |  | Khớp | QC |
+
+### `F01` (ngoài Body)
+
+Frame: `GV-LOP-100100` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | empty-state-illustration | `Empty State / Illustration` Type=Thêm vị trí | `4333:17251` Empty State / Illustration | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | component-2 | `Switch Center`  | `4333:16624` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | account | `ACCOUNT` Size=Default | `4333:16626` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | header-vai-tro |  | `4899:187583` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | sidebar-menu-teacher | `MENU - TEACHER`  | `4915:261791` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -57,7 +69,7 @@ Frame: chưa có · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa sync (5): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`
+- Chưa khớp tự động (1): `A01.02`
 
 ## 9. Chi tiết dựng
 

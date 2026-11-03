@@ -61,7 +61,10 @@ Menu **Lịch Hẹn** của ICS có bốn tab: **Hẹn lớp**, **Học viên**,
 - Khi mở danh sách hoặc Review, bộ lọc mặc định là `Tới hạn` và ba trạng thái được chọn: `Mới`, `Chưa xử lý`, `Đang xử lý`; `Đã xử lý` không được chọn. Đây là bộ lọc hiển thị, không tự đặt Trạng thái hoặc Độ ưu tiên cho lịch hẹn mới.
 - Bộ giá trị ưu tiên/trạng thái nêu trên là bộ chính thức theo xác nhận mới; các requirement lịch hẹn cũ dùng tên khác cần cập nhật thống nhất khi triển khai. Không dùng `Đã xoá` làm trạng thái thay cho thao tác xóa có xác nhận.
 
-### Trang 3: Popup Thêm lịch hẹn mới
+### Trang 3: ADM-LHN-010110 — Popup Thêm lịch hẹn mới
+
+![Figma mới nhất · ADM-LHN-010110](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LHN-010110.png)
+
 ![Trang 3](./images/02-appointment-create.png)
 
 *Popup tạo lịch hẹn và menu chọn người theo nhóm role — nhấn để xem ảnh gốc*
@@ -116,7 +119,10 @@ Form chung theo bảng dưới; riêng popup tạo từ Danh sách học viên �
 - Kiểm tra quyền khi lưu, kể cả request trực tiếp. Chỉ cập nhật UI sau khi lưu thành công; chọn lại giá trị cũ không gửi thay đổi.
 - `Theo dõi` chỉ đọc ngay cả khi được add; quyền xem không đồng nghĩa quyền sửa. Nhiều Người phụ trách thì mỗi người đều được sửa.
 
-### Trang 5: Popup Review — Bảng chia lịch hẹn
+### Trang 5: ADM-LHN-020000 — Popup Review — Bảng chia lịch hẹn
+
+![Figma mới nhất · ADM-LHN-020000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LHN-020000.png)
+
 ![Trang 5](./images/12-review-board.png)
 
 *Review mở Bảng chia lịch hẹn theo bốn tab — nhấn để xem ảnh gốc*
@@ -142,7 +148,12 @@ Form chung theo bảng dưới; riêng popup tạo từ Danh sách học viên �
 - Kéo thả thẻ/cụm chỉ thay đổi nhóm hoặc vị trí trên Review; không cập nhật Nội dung, Đối tượng, Thời gian, Độ ưu tiên, Trạng thái hay field khác của lịch hẹn. Thao tác thất bại giữ vị trí cũ.
 - Các tab dùng cùng bản ghi lịch hẹn ComGao; sắp xếp không tạo lịch hẹn mới hoặc làm mất thẻ. Bộ lọc chỉ thay đổi thẻ hiển thị, không thay đổi thứ tự đã lưu.
 
-### Trang 6: Nút xóa và popup xác nhận lịch hẹn
+### Trang 6: ADM-LHN-010110, ADM-LHN-020000 — Nút xóa và popup xác nhận lịch hẹn
+
+![Figma mới nhất · ADM-LHN-010110](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LHN-010110.png)
+
+![Figma mới nhất · ADM-LHN-020000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LHN-020000.png)
+
 **Mô tả:**
 
 - Trong danh sách Lịch Hẹn, biểu tượng thùng rác hiển thị cố định ở cuối mỗi hàng cho người có quyền xóa; nhấn biểu tượng mở popup xác nhận trước khi xóa.

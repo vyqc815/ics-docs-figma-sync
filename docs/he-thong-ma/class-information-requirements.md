@@ -27,54 +27,69 @@ Requirement: `teacher_role/class/class_information_requirements.md` — [Giáo v
 
 ### `A01` Tab Thông tin
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LOP-110100` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | ma-lop |  |  | — |  |  | Chưa sync | QC |
-| `A01.02` | link-google-meet |  |  | — |  |  | Chưa sync | QC |
-| `A01.03` | khoa-hoc |  |  | — |  |  | Chưa sync | QC |
-| `A01.04` | ghi-chu |  |  | — |  |  | Chưa sync | QC |
-| `A01.05` | mo-ta |  |  | — |  | `TC02` | Chưa sync | QC |
-| `A01.06` | ngay-bat-dau-ngay-ket-thuc |  |  | — |  |  | Chưa sync | QC |
-| `A01.07` | loai-lop |  |  | — |  |  | Chưa sync | QC |
-| `A01.08` | trang-thai |  |  | — |  |  | Chưa sync | QC |
+| `A01.01` | ma-lop | `Atom/Label`  | `I4333:20115;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A01.02` | link-google-meet | `Atom/Label`  | `I4333:20118;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A01.03` | khoa-hoc | `Card Menu v2 (Test)` Type=Con dropdown, State=Default | `I4915:262412;4901:215293` Card Menu v2 (Test) | — |  |  | Khớp | QC |
+| `A01.04` | ghi-chu | `Atom/Label`  | `I4333:20244;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A01.05` | mo-ta | `Atom/Label`  | `I4333:20245;3004:58620` Atom/Label | — |  | `TC02` | Khớp | QC |
+| `A01.06` | ngay-bat-dau-ngay-ket-thuc | `Atom/Label`  | `I4333:20120;3004:58620` Atom/Label; `I4333:20121;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A01.07` | loai-lop | `Atom/Label`  | `I4333:20122;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A01.08` | trang-thai | `Atom/Label`  | `I4333:20123;3004:58620` Atom/Label | — |  |  | Khớp | QC |
 
 ### `A02` Tab KPI — KPI của tôi
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LOP-110200` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | tim-kiem |  |  | — |  |  | Chưa sync | QC |
-| `A02.03` | ten |  |  | — |  |  | Chưa sync | QC |
-| `A02.04` | ngay-ghi-nhan |  |  | — |  |  | Chưa sync | QC |
-| `A02.05` | trang-thai |  |  | — |  |  | Chưa sync | QC |
-| `A02.06` | so-tien |  |  | — |  | `TC05` | Chưa sync | QC |
-| `A02.07` | ngay-cap-nhat |  |  | — |  |  | Chưa sync | QC |
-| `A02.08` | sap-xep |  |  | — |  |  | Chưa sync | QC |
-| `A02.09` | khong-co-khoan |  |  | — |  |  | Chưa sync | QC |
+| `A02.01` | tieu-de |  | `4333:20595` Tiêu đề · KPI của tôi; `4333:20598` Lịch sử & lương | — |  |  | Khớp | QC |
+| `A02.02` | tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `4333:20612` Atom/Input | — |  |  | Khớp | QC |
+| `A02.03` | ten |  | `4333:20620` Lớp | — |  |  | Khớp | QC |
+| `A02.04` | ngay-ghi-nhan |  | `4333:20622` Loại KPI | — |  |  | Khớp | QC |
+| `A02.05` | trang-thai |  | `4333:20624` Ngày ghi nhận | — |  |  | Khớp | QC |
+| `A02.06` | so-tien |  | `4333:20626` Trạng thái | — |  | `TC05` | Khớp | QC |
+| `A02.07` | ngay-cap-nhat |  | `4333:20628` Tiền thưởng | — |  |  | Khớp | QC |
+| `A02.08` | sap-xep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.09` | khong-co-khoan |  | `4333:20719` Bảng dữ liệu này đang trống | — |  |  | Khớp | QC |
 
 ### `A03` Tab Lịch sử & lương
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LOP-110300` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | dropdown-thoi-gian |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | trang-thai-lop |  |  | — |  | `TC14` | Chưa sync | QC |
-| `A03.03` | so-buoi-da-day |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | luong-buoi-day |  |  | — |  |  | Chưa sync | QC |
-| `A03.05` | luong-kpi |  |  | — |  | `TC08` | Chưa sync | QC |
-| `A03.06` | tong-luong |  |  | — |  | `TC15`, `TC16` | Chưa sync | QC |
-| `A03.07` | bang-buoi-day |  |  | — |  |  | Chưa sync | QC |
-| `A03.08` | cot-lop |  |  | — |  |  | Chưa sync | QC |
-| `A03.09` | cot-ten-buoi-hoc |  |  | — |  |  | Chưa sync | QC |
-| `A03.10` | cot-si-so |  |  | — |  | `TC12` | Chưa sync | QC |
-| `A03.11` | cot-thoi-gian |  |  | — |  |  | Chưa sync | QC |
-| `A03.12` | cot-luong-buoi-day |  |  | — |  |  | Chưa sync | QC |
-| `A03.13` | khong-co-buoi |  |  | — |  | `TC10`, `TC11`, `TC14` | Chưa sync | QC |
+| `A03.01` | dropdown-thoi-gian |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | trang-thai-lop | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4333:21048` Thẻ chỉ số · Trạng thái lớp | — |  | `TC14` | Khớp | QC |
+| `A03.03` | so-buoi-da-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4333:21049` Thẻ chỉ số · Số buổi đã dạy | — |  |  | Khớp | QC |
+| `A03.04` | luong-buoi-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4333:21050` Thẻ chỉ số · Lương buổi dạy | — |  |  | Khớp | QC |
+| `A03.05` | luong-kpi | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4333:21051` Thẻ chỉ số · Lương KPI | — |  | `TC08` | Khớp | QC |
+| `A03.06` | tong-luong | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4333:21053` Thẻ chỉ số · Tổng lương | — |  | `TC15`, `TC16` | Khớp | QC |
+| `A03.07` | bang-buoi-day |  | `4333:21118` Danh sách lớp | — |  |  | Khớp | QC |
+| `A03.08` | cot-lop |  | `4333:21122` Lớp | — |  |  | Khớp | QC |
+| `A03.09` | cot-ten-buoi-hoc |  | `4333:21124` Tên buổi học | — |  |  | Khớp | QC |
+| `A03.10` | cot-si-so |  | `4333:21126` Sĩ số | — |  | `TC12` | Khớp | QC |
+| `A03.11` | cot-thoi-gian |  | `4333:21128` Thời gian | — |  |  | Khớp | QC |
+| `A03.12` | cot-luong-buoi-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4333:21050` Thẻ chỉ số · Lương buổi dạy | — |  |  | Khớp | QC |
+| `A03.13` | khong-co-buoi |  | `4333:21393` Bảng dữ liệu này đang trống; `4333:21393` Bảng dữ liệu này đang trống | — |  | `TC10`, `TC11`, `TC14` | Khớp | QC |
+
+### `F01` (ngoài Body)
+
+Frame: `GV-LOP-110100`, `GV-LOP-110200`, `GV-LOP-110300` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `4333:19823` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | molecule-field | `Molecule/Field`  | `4333:20115` Molecule/Field | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | component-2 | `Switch Center`  | `4333:18054` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | account | `ACCOUNT` Size=Default | `4333:18056` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | header-vai-tro |  | `4899:187597` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | sidebar-menu-teacher | `MENU - TEACHER`  | `4915:262412` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | empty-state-illustration | `Empty State / Illustration` Type=Nền trống | `4333:20718` Empty State / Illustration | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | filter-thoi-gian | `DD/Molecule/Trigger` Size=XS, State=Active | `4333:21033` Filter · Thời gian | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -122,7 +137,7 @@ Frame: chưa có · Nguồn nội dung: QC
 **Tool báo, cần người xem**
 
 - `A01` Mọi field hiển thị cùng một kiểu ô xám chỉ đọc như `Mã lớp`, `Ghi chú`, `Mô tả`. Khác Figma GV-LOP-110100: Figma còn vẽ mũi tên dropdown ở Khóa học, Loại lớp, Trạng thái và icon lịch ở Ngày bắt đầu/kết thúc; cần sửa Figma bỏ các control này.
-- Chưa sync (30): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`, `A03.11`, `A03.12`, `A03.13`
+- Chưa khớp tự động (2): `A02.08`, `A03.01`
 - REQ/EX chưa có testcase (2): `REQ05`, `EX03`
 
 ## 9. Chi tiết dựng

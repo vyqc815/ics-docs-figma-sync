@@ -21,6 +21,35 @@
 
 ## 4. Khu vực và item
 
+### `F01` (ngoài Body)
+
+Frame: `ADM-GKS-010020` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:245208` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | account | `ACCOUNT` Size=Default | `4273:153383` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | giao-khao-sat | `Atom/Button` Type=Primary, Size=Small | `4273:153390` Giao khảo sát | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | tab-giao-khao-sat | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `4273:153392` Tab · Giao khảo sát | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | tab-ket-qua-khao-sat | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `4273:153393` Tab · Kết quả khảo sát | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | cau-30 | `Atom/Badge`  | `4273:153687` Câu 30 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | trac-nghiem | `Atom/Badge`  | `4273:153691` Trắc nghiệm | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | bat-buoc | `Atom/Badge`  | `4273:153693` Bắt buộc | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | avatar | `Avatar` Size=32 | `4273:153703` Avatar | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.10` | cau-31 | `Atom/Badge`  | `4273:153738` Câu 31 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.11` | cau-32 | `Atom/Badge`  | `4273:153790` Câu 32 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.12` | doan-ngan | `Atom/Badge`  | `4273:153794` Đoạn ngắn | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.13` | khong-bat-buoc | `Atom/Badge`  | `4273:153796` Không bắt buộc | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.14` | tab-giao-vien | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `4273:153522` Tab · Giáo viên | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.15` | tab-lop | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `4273:153523` Tab · Lớp | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.16` | tab-hoc-vien | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `4273:153524` Tab · Học viên | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.17` | stt | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `4273:153527` STT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.18` | trang-thai-giao | `Atom/Status` Size=S | `4885:59002` Trạng thái giao | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.19` | so-luong | `Atom/Badge`  | `4273:153534` Số lượng | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.20` | chon-cuoc-khao-sat | `DD/Molecule/Trigger` Size=S, State=Default | `4885:69052` Chọn cuộc khảo sát | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.21` | panel | `DD/Organism/Menu Panel` Type=Single | `5070:43465` Panel | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.22` | tooltip-danh-sach-nguoi-chon | `Molecule/Tooltip`  | `5138:163889` Tooltip · Danh sách người chọn | — |  |  | Chỉ có trên Figma | Figma |
+
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

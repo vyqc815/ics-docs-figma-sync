@@ -67,31 +67,154 @@ Requirement: `receipt_management/receipt/receipt.md` — Hoá Đơn (tiền tố
 
 ### `A01` Trang 1: Danh Sách Hoá Đơn
 
-Frame: chưa có (tool đoán:ADM-HD-010020, ADM-HD-010040, ADM-HD-010102, ADM-HD-010202, ADM-HD-010302) · Nguồn nội dung: QC
+Frame: `ADM-HD-010020`, `ADM-HD-010040`, `ADM-HD-010102`, `ADM-HD-010202`, `ADM-HD-010302` (tool đoán:ADM-HD-010020, ADM-HD-010040, ADM-HD-010102, ADM-HD-010202, ADM-HD-010302) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Trang 2: Popup Thêm hoá đơn / Chỉnh sửa hoá đơn
 
-Frame: chưa có (tool đoán:ADM-HD-010010, ADM-HD-010011, ADM-HD-010030, ADM-HD-010070, ADM-HD-010072) · Nguồn nội dung: QC
+Frame: `ADM-HD-010010`, `ADM-HD-010011`, `ADM-HD-010030`, `ADM-HD-010070`, `ADM-HD-010072` (tool đoán:ADM-HD-010010, ADM-HD-010011, ADM-HD-010030, ADM-HD-010070, ADM-HD-010072) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A03` Trang 3: Popup Chọn học viên liên kết hoá đơn
 
-Frame: chưa có (tool đoán:ADM-HD-010012, ADM-HD-010050, ADM-HD-010061, ADM-HD-010080) · Nguồn nội dung: QC
+Frame: `ADM-HD-010012`, `ADM-HD-010050`, `ADM-HD-010061`, `ADM-HD-010080` (tool đoán:ADM-HD-010012, ADM-HD-010050, ADM-HD-010061, ADM-HD-010080) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A04` Trang 4: Popup Thêm học phí
 
-Frame: chưa có (tool đoán:ADM-HD-010022, ADM-HD-010060) · Nguồn nội dung: QC
+Frame: `ADM-HD-010022`, `ADM-HD-010060` (tool đoán:ADM-HD-010022, ADM-HD-010060) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
+
+### `F01` (ngoài Body)
+
+Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:248298` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | nut-them-hoa-don | `Atom/Icon Button`  | `2731:71778` Nút thêm hoá đơn | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `2731:71781` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | loc-nhan-tien | `DD/Molecule/Trigger` Size=XS, State=Default | `2731:71787` Lọc · Nhận tiền | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | loc-hoa-don-do | `DD/Molecule/Trigger` Size=XS, State=Default | `2731:71798` Lọc · Hoá đơn đỏ | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | loc-nguoi-phu-trach | `DD/Molecule/Trigger` Size=XS, State=Active | `2731:71809` Lọc · Người phụ trách | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | loc-tuan-nay | `DD/Molecule/Trigger` Size=XS, State=Active | `2731:71820` Lọc · Tuần này | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | loc-loai-hoa-don | `DD/Molecule/Trigger` Size=XS, State=Active | `2731:71831` Lọc · Loại hoá đơn | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | loc-trang-thai | `DD/Molecule/Trigger` Size=XS, State=Active | `2731:71842` Lọc · Trạng thái | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.10` | loc-tag | `DD/Molecule/Trigger` Size=XS, State=Default | `2731:71853` Lọc · Tag | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.11` | the-chi-so-so-ngay | `Thẻ chỉ số` Kiểu=Biểu đồ | `3065:71290` Thẻ chỉ số · Số ngày | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.12` | the-chi-so-tong-kpi | `Thẻ chỉ số` Kiểu=Biểu đồ | `3065:71448` Thẻ chỉ số · Tổng KPI | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.13` | the-chi-so-so-hoa-don | `Thẻ chỉ số` Kiểu=Biểu đồ | `3065:71488` Thẻ chỉ số · Số hoá đơn | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.14` | the-chi-so-gia-tri | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `3065:71289` Thẻ chỉ số · Giá trị | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.15` | tooltip-trang-thai-hover | `Molecule/Tooltip`  | `3058:76265` Tooltip · Trạng thái (hover) | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.16` | tooltip-lien-he | `Molecule/Tooltip`  | `3058:101130` Tooltip · Liên hệ | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.17` | tooltip-thong-tin-lop | `Molecule/Tooltip`  | `3058:101143` Tooltip · Thông tin lớp | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F02` Row · 103303
+
+Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F02.01` | atom-badge | `Atom/Badge`  | `2731:72501` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `2731:71969` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.03` | avatar-count | `Avatar` Size=24 | `2929:48429` Avatar + Count | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F03` Row · 103297
+
+Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F03.01` | atom-badge | `Atom/Badge`  | `2731:72507` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F03.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `2731:72033` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F03.03` | avatar-count | `Avatar` Size=24 | `2929:48433` Avatar + Count | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F04` Chi tiết học phí
+
+Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F04.01` | atom-tag-solid | `Atom/Tag Solid` Size=20H | `3058:76414` Atom/Tag Solid | — |  |  | Chỉ có trên Figma | Figma |
+| `F04.02` | atom-badge | `Atom/Badge`  | `3058:76421` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F05` Row · 102486
+
+Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F05.01` | atom-badge | `Atom/Badge`  | `2731:72513` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F05.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `2731:72095` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F05.03` | avatar-count | `Avatar` Size=24 | `2929:48437` Avatar + Count | — |  |  | Chỉ có trên Figma | Figma |
+| `F05.04` | mouse-click |  | `2929:48340` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F06` Row · 103176
+
+Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F06.01` | atom-badge | `Atom/Badge`  | `2731:72517` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F06.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `2731:72159` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F06.03` | avatar-count | `Avatar` Size=24 | `2929:48445` Avatar + Count | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F07` Row · 102533
+
+Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F07.01` | atom-badge | `Atom/Badge`  | `2929:48743` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F07.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `2731:72221` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F08` Row · 102515
+
+Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F08.01` | atom-badge | `Atom/Badge`  | `2731:72527` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F08.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `2731:72282` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F08.03` | avatar-count | `Avatar` Size=24 | `2929:48449` Avatar + Count | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F09` Row · 102214
+
+Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F09.01` | atom-badge | `Atom/Badge`  | `2731:72531` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F09.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `2731:72347` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F09.03` | avatar-count | `Avatar` Size=24 | `2929:48453` Avatar + Count | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F10` Row · 102091
+
+Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F10.01` | atom-badge | `Atom/Badge`  | `2731:72537` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F10.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `2731:72409` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F10.03` | avatar-count | `Avatar` Size=24 | `2929:48457` Avatar + Count | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F11` Row · 103183
+
+Frame: `ADM-HD-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F11.01` | atom-badge | `Atom/Badge`  | `2731:72541` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F11.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `2731:72474` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F11.03` | avatar-count | `Avatar` Size=24 | `2929:48465` Avatar + Count | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 

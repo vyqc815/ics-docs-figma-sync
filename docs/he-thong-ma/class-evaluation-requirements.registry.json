@@ -25,13 +25,16 @@
    "nodeId": "4333:16560",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop/danh-gia/khong-co-quyen-truy-cap",
    "link": "/chi-tiet-lop/danh-gia/khong-co-quyen-truy-cap",
    "dark": "GV-LOP-100100-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": []
+   "regions": [
+    "TR-CE.A01",
+    "TR-CE.F01"
+   ]
   }
  },
  "regions": [
@@ -39,7 +42,9 @@
    "id": "TR-CE.A01",
    "name": "man-khong-co-quyen-truy-cap",
    "title": "Màn Không có quyền truy cập",
-   "screens": [],
+   "screens": [
+    "gv-lop-100100"
+   ],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -54,13 +59,33 @@
      "spec": "Vẫn hiển thị trong menu trái của Chi tiết lớp, bấm được.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-100100": [
+       {
+        "term": "Đánh giá",
+        "figmaId": "I4915:261791;4901:215081",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "442:1601",
+         "Label": "Đánh giá",
+         "Type": "Menu phụ",
+         "State": "Select",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-CE.TC01"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-CE.A01.02",
@@ -72,8 +97,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Hình minh hoạ"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CE.A01.03",
@@ -82,11 +109,27 @@
      "spec": "`Không có quyền truy cập`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-100100": [
+       {
+        "term": "Không có quyền truy cập",
+        "figmaId": "4333:17252",
+        "layer": "Không có quyền truy cập",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tiêu đề"
+     ],
+     "status": "khop"
     },
     {
      "id": "TR-CE.A01.04",
@@ -95,13 +138,29 @@
      "spec": "`Bạn chưa được cấp quyền cho trang này`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-100100": [
+       {
+        "term": "Bạn chưa được cấp quyền cho trang này",
+        "figmaId": "4333:17304",
+        "layer": "Bạn chưa được cấp quyền cho trang này",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-CE.TC01"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Mô tả"
+     ],
+     "status": "khop"
     },
     {
      "id": "TR-CE.A01.05",
@@ -110,14 +169,193 @@
      "spec": "Về menu Lớp (Thống kê tổng quan) của role Giáo viên.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-100100": [
+       {
+        "term": "Quay về trang chủ",
+        "figmaId": "4333:17305",
+        "layer": "Button · Quay về trang chủ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Button · Quay về trang chủ",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Quay về trang chủ",
+         "Type": "Primary",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
+   ]
+  },
+  {
+   "id": "TR-CE.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "gv-lop-100100"
    ],
-   "screensFromItems": []
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CE.F01.01",
+     "name": "empty-state-illustration",
+     "label": "Empty State / Illustration",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-100100": [
+       {
+        "term": "Empty State / Illustration",
+        "figmaId": "4333:17251",
+        "layer": "Empty State / Illustration",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Empty State / Illustration",
+        "component": "Empty State / Illustration",
+        "variant": {
+         "Type": "Thêm vị trí",
+         "Trung tâm": "Đắc Nhân"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CE.F01.02",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-100100": [
+       {
+        "term": "Component 2",
+        "figmaId": "4333:16624",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Sakumi"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CE.F01.03",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-100100": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "4333:16626",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Giáo Viên",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CE.F01.04",
+     "name": "header-vai-tro",
+     "label": "Header/Vai trò",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-100100": [
+       {
+        "term": "Header/Vai trò",
+        "figmaId": "4899:187583",
+        "layer": "Header/Vai trò",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Header/Vai trò",
+        "component": null,
+        "variant": {
+         "Vai trò": "Giáo viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CE.F01.05",
+     "name": "sidebar-menu-teacher",
+     "label": "Sidebar · MENU - TEACHER",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-100100": [
+       {
+        "term": "Sidebar · MENU - TEACHER",
+        "figmaId": "4915:261791",
+        "layer": "Sidebar · MENU - TEACHER",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - TEACHER",
+        "component": "MENU - TEACHER",
+        "variant": {
+         "Trang": "Lớp học / Đánh giá"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
   }
  ],
  "exceptions": [

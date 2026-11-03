@@ -60,7 +60,7 @@
    "nodeId": "497:17005",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoc-ky/thong-tin",
    "link": "/hoc-ky/thong-tin",
    "dark": "CD-KH-030100-DK",
@@ -83,7 +83,12 @@
     "CD-KH-030347"
    ],
    "citedByRequirement": true,
-   "regions": []
+   "regions": [
+    "CM-IN.A01",
+    "CM-IN.A02",
+    "CM-IN.A04",
+    "CM-IN.F01"
+   ]
   },
   "CD-KH-030104": {
    "id": "CD-KH-030104",
@@ -98,13 +103,15 @@
    "nodeId": "6006:129022",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoc-ky/chua-co-hoc-ky",
    "link": "/hoc-ky/thong-tin?state=CD-KH-030104",
    "dark": "CD-KH-030104-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CM-IN.A05"
+   ]
   },
   "CD-KH-030110": {
    "id": "CD-KH-030110",
@@ -119,7 +126,7 @@
    "nodeId": "1496:16189",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/cd-kh-030110",
    "link": "/hoc-ky/thong-tin?popup=CD-KH-030110",
    "dark": "CD-KH-030110-DK",
@@ -128,7 +135,10 @@
     "CD-KH-030104"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CM-IN.A03",
+    "CM-IN.A05"
+   ]
   },
   "CD-KH-030120": {
    "id": "CD-KH-030120",
@@ -143,7 +153,7 @@
    "nodeId": "1496:16214",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/cd-kh-030120",
    "link": "/hoc-ky/thong-tin?popup=CD-KH-030120",
    "dark": "CD-KH-030120-DK",
@@ -152,7 +162,10 @@
     "CD-KH-030104"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CM-IN.A03",
+    "CM-IN.A05"
+   ]
   }
  },
  "regions": [
@@ -160,7 +173,9 @@
    "id": "CM-IN.A01",
    "name": "trang-1-1-danh-sach-ky-ben-phai",
    "title": "Trang 1.1: Danh sách kỳ (bên phải)",
-   "screens": [],
+   "screens": [
+    "cd-kh-030100"
+   ],
    "screensGuessed": [
     "CD-KH-030100"
    ],
@@ -169,14 +184,15 @@
    "requirement": "course_management/semester/information/information.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": [],
-   "screensFromItems": []
+   "items": []
   },
   {
    "id": "CM-IN.A02",
    "name": "trang-1-2-tab-thong-tin-ben-trai",
    "title": "Trang 1.2: Tab Thông tin (bên trái)",
-   "screens": [],
+   "screens": [
+    "cd-kh-030100"
+   ],
    "screensGuessed": [
     "CD-KH-030100"
    ],
@@ -196,8 +212,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tên, Mô tả (đầu tab)"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-IN.A02.02",
@@ -206,7 +224,26 @@
      "spec": "✅ | ✅ | Bắt buộc",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Tên học kỳ",
+        "figmaId": "I3004:49766;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2860:16339",
+         "Label": "Tên học kỳ",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-IN.TC01",
@@ -215,7 +252,7 @@
       "CM-IN.TC04"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CM-IN.A02.03",
@@ -224,13 +261,32 @@
      "spec": "✅ | ❌ | Mã hiển thị, cho phép trùng",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Mã học kỳ",
+        "figmaId": "I3004:49712;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2860:42894",
+         "Label": "Mã học kỳ",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-IN.TC04"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CM-IN.A02.04",
@@ -239,7 +295,26 @@
      "spec": "✅ (chỉ `BBB`) | ❌ | 12 chữ số `CCAALLMMMBBB` = ID khoá học + `BBB`; chỉ sửa 3 số cuối `BBB` (rule xem REQ02)",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "ID học kỳ",
+        "figmaId": "I3004:49872;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2860:42891",
+         "Label": "ID học kỳ",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [
       {
        "type": "governed-by",
@@ -252,8 +327,10 @@
       "CM-IN.TC5b",
       "CM-IN.TC06"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "BBB"
+     ],
+     "status": "khop"
     },
     {
      "id": "CM-IN.A02.05",
@@ -262,14 +339,49 @@
      "spec": "✅ | ❌ | Không bắt buộc, cho phép trùng, dùng làm `[Code]` ở tên hiển thị",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Code",
+        "figmaId": "I3004:49928;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2860:42895",
+         "Label": "Code",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       },
+       {
+        "term": "[Code]",
+        "figmaId": "I3004:49928;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2860:42895",
+         "Label": "Code",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-IN.TC01",
       "CM-IN.TC04"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CM-IN.A02.06",
@@ -278,13 +390,32 @@
      "spec": "❌ | ❌ | Tự tính = số bài học ở tab Bài Học (buổi học = bài học)",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Số buổi học",
+        "figmaId": "I3004:50030;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2222",
+         "Label": "Số buổi học",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-IN.TC04"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CM-IN.A02.07",
@@ -298,8 +429,10 @@
      "testcases": [
       "CM-IN.TC04"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Trình độ, Danh mục"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-IN.A02.08",
@@ -311,8 +444,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Data token, Type (text), Data version (số)"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-IN.A02.09",
@@ -321,7 +456,21 @@
      "spec": "✅ | ❌ | Thêm / gỡ học kỳ",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Tổng ôn",
+        "figmaId": "1185:2854",
+        "layer": "Tổng ôn",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-IN.TC03",
@@ -331,16 +480,18 @@
       "CM-IN.TC11"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "CM-IN.A03",
    "name": "trang-1-3-popup-kich-hoat-cong-khai-hoc-",
    "title": "Trang 1.3: Popup Kích hoạt công khai học kỳ",
-   "screens": [],
+   "screens": [
+    "cd-kh-030110",
+    "cd-kh-030120"
+   ],
    "screensGuessed": [
     "CD-KH-030104"
    ],
@@ -357,11 +508,48 @@
      "spec": "`Kích hoạt công khai học kỳ`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030110": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I2527:167869;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030120": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I2527:167413;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Kích hoạt công khai học kỳ"
+     ],
+     "status": "khop"
     },
     {
      "id": "CM-IN.A03.02",
@@ -378,8 +566,11 @@
       "CM-IN.TC10",
       "CM-IN.TC11"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Hiển thị",
+      "[Code] Tên - Tên học kỳ"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-IN.A03.03",
@@ -391,8 +582,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Ô ID học kỳ",
+      "CCAALLMMM"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-IN.A03.04",
@@ -404,8 +598,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thông báo dưới ô ID",
+      "ID có thể sử dụng"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-IN.A03.05",
@@ -417,8 +614,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Lưu ý",
+      "Sau khi công khai, học kỳ chỉ còn sửa được Tên và Mô tả. ID, thông tin khác, Tổng ôn, bài học, bài kiểm tra sẽ bị khoá và học kỳ không thể chuyển về Nháp."
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-IN.A03.06",
@@ -427,20 +627,86 @@
      "spec": "`Huỷ` — `Công khai học kỳ` (chỉ bật khi ID hợp lệ, chưa trùng)",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030110": [
+       {
+        "term": "Nút",
+        "figmaId": "2527:167876",
+        "layer": "Popup/Footer",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Footer",
+        "component": "Popup/Footer",
+        "variant": {
+         "Type": "Hai nút"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Huỷ",
+        "figmaId": "I2527:167876;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030120": [
+       {
+        "term": "Nút",
+        "figmaId": "2527:167420",
+        "layer": "Popup/Footer",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Footer",
+        "component": "Popup/Footer",
+        "variant": {
+         "Type": "Hai nút"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Huỷ",
+        "figmaId": "I2527:167420;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ],
-   "screensFromItems": []
+   "screensFromItems": [
+    "cd-kh-030110",
+    "cd-kh-030120"
+   ]
   },
   {
    "id": "CM-IN.A04",
    "name": "popup-xoa-hoc-ky",
    "title": "Popup xoá học kỳ",
-   "screens": [],
+   "screens": [
+    "cd-kh-030100"
+   ],
    "screensGuessed": [
     "CD-KH-030100"
    ],
@@ -449,14 +715,17 @@
    "requirement": "course_management/semester/information/information.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": [],
-   "screensFromItems": []
+   "items": []
   },
   {
    "id": "CM-IN.A05",
    "name": "popup-nhan-ban-hoc-ky",
    "title": "Popup Nhân bản học kỳ",
-   "screens": [],
+   "screens": [
+    "cd-kh-030104",
+    "cd-kh-030110",
+    "cd-kh-030120"
+   ],
    "screensGuessed": [
     "CD-KH-030100"
    ],
@@ -473,11 +742,48 @@
      "spec": "`Nhân bản học kỳ`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030110": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I2527:167869;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030120": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I2527:167413;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Nhân bản học kỳ"
+     ],
+     "status": "khop-mot-phan"
     },
     {
      "id": "CM-IN.A05.02",
@@ -486,15 +792,66 @@
      "spec": "`Tạo bản sao của học kỳ \"[Code] Tên - Tên học kỳ\"? Bản sao ở trạng thái Nháp, sao chép toàn bộ Thông tin, Tổng ôn, Bài học, Bài tập về nhà, Bài kiểm tra và bộ câu hỏi.`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030104": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I6006:129240;4901:220701;2245:87904",
+        "layer": "Icon",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Icon",
+        "component": "ICON MENU",
+        "variant": {
+         "ICON MENU": "Nội dung"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030110": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I1496:16200;1739:32505",
+        "layer": "Tìm nội dung...",
+        "confidence": "cao",
+        "region": "Scrollable list of terms",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm...",
+         "State": "Search",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030120": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I2808:43035;2808:43023",
+        "layer": "Kỳ học này hiện có 3 nội dung tổng ôn đã sử dụng.",
+        "confidence": "thap",
+        "region": "Atom/Alert",
+        "owner": "Atom/Alert",
+        "component": "Atom/Alert",
+        "variant": {
+         "Type": "Info"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-IN.TC03",
       "CM-IN.TC04",
       "CM-IN.TC08"
      ],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Tạo bản sao của học kỳ \"[Code] Tên - Tên học kỳ\"? Bản sao ở trạng thái Nháp, sao chép toàn bộ Thông tin, Tổng ôn, Bài học, Bài tập về nhà, Bài kiểm tra và bộ câu hỏi."
+     ],
+     "status": "khop"
     },
     {
      "id": "CM-IN.A05.03",
@@ -503,11 +860,85 @@
      "spec": "`Huỷ` — `Nhân bản` (disable + loading trong lúc BE xử lý)",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030104": [
+       {
+        "term": "Nút",
+        "figmaId": "6006:129340",
+        "layer": "Nút",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-kh-030110": [
+       {
+        "term": "Nút",
+        "figmaId": "2527:167876",
+        "layer": "Popup/Footer",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Footer",
+        "component": "Popup/Footer",
+        "variant": {
+         "Type": "Hai nút"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Huỷ",
+        "figmaId": "I2527:167876;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030120": [
+       {
+        "term": "Nút",
+        "figmaId": "2527:167420",
+        "layer": "Popup/Footer",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Footer",
+        "component": "Popup/Footer",
+        "variant": {
+         "Type": "Hai nút"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Huỷ",
+        "figmaId": "I2527:167420;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "CM-IN.A05.04",
@@ -523,11 +954,406 @@
       "CM-IN.TC06",
       "CM-IN.TC16"
      ],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Toast",
+      "Đã nhân bản học kỳ."
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ],
-   "screensFromItems": []
+   "screensFromItems": [
+    "cd-kh-030104",
+    "cd-kh-030110",
+    "cd-kh-030120"
+   ]
+  },
+  {
+   "id": "CM-IN.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "cd-kh-030100"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-IN.F01.01",
+     "name": "tab",
+     "label": "Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Tab",
+        "figmaId": "2177:28953",
+        "layer": "Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-IN.F01.02",
+     "name": "molecule-field",
+     "label": "Molecule/Field",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Molecule/Field",
+        "figmaId": "3004:49766",
+        "layer": "Molecule/Field",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Field",
+        "component": "Molecule/Field",
+        "variant": {
+         "Gợi ý": "Gợi ý hoặc thông báo lỗi",
+         "Có gợi ý": false,
+         "Loại ô": "Ô nhập",
+         "Mật độ": "Gọn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-IN.F01.03",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "1185:2855",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Thêm kỳ",
+         "Type": "Outlined Icon",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-IN.F01.04",
+     "name": "bo-loc-hoc-ky-cap-do",
+     "label": "Bộ lọc · Học kỳ (cấp độ)",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Bộ lọc · Học kỳ (cấp độ)",
+        "figmaId": "5614:58982",
+        "layer": "Bộ lọc · Học kỳ (cấp độ)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Bộ lọc · Học kỳ (cấp độ)",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "HSK1",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-IN.F01.05",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "2860:16133",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Drop & Drag"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-IN.F01.06",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Mouse click",
+        "figmaId": "2860:16134",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-IN.F01.07",
+     "name": "atom-status",
+     "label": "Atom/Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Atom/Status",
+        "figmaId": "2860:27377",
+        "layer": "Atom/Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Status",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Công khai",
+         "Size": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-IN.F01.08",
+     "name": "dd-organism-menu-panel",
+     "label": "DD/Organism/Menu Panel",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "DD/Organism/Menu Panel",
+        "figmaId": "6006:130414",
+        "layer": "DD/Organism/Menu Panel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Organism/Menu Panel",
+        "component": "DD/Organism/Menu Panel",
+        "variant": {
+         "Footer": false,
+         "Search": false,
+         "Type": "Action"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-IN.F01.09",
+     "name": "add-new-bar-them-moi",
+     "label": "Add New Bar · Thêm mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Add New Bar · Thêm mới",
+        "figmaId": "2860:16151",
+        "layer": "Add New Bar · Thêm mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Thêm mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Nút": "1075:1478",
+         "Icon trái": false,
+         "Placeholder": "Thêm mới",
+         "Type": "Box",
+         "Size": "S",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-IN.F01.10",
+     "name": "sidebar-menu-cd",
+     "label": "Sidebar · MENU - CD",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Sidebar · MENU - CD",
+        "figmaId": "4915:255632",
+        "layer": "Sidebar · MENU - CD",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - CD",
+        "component": "MENU - CD",
+        "variant": {
+         "Trang": "Khoá học / Quy trình / Học kỳ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-IN.F01.11",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2860:13689",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "CD",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-IN.F01.12",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030100": [
+       {
+        "term": "Component 2",
+        "figmaId": "4273:160638",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Đắc Nhân"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
   }
  ],
  "exceptions": [

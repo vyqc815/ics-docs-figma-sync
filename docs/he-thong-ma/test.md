@@ -29,53 +29,74 @@ Requirement: `course_management/semester/test/test.md` — Học Kỳ - Tab Ki�
 
 ### `A01` Danh sách bài kiểm tra
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `CD-KH-030300` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | card-bai-kiem-tra |  |  | — | opens `A01` |  | Chưa có thiết kế | QC |
-| `A01.02` | chip-thoi-gian |  |  | — |  | `TC01` | Chưa có thiết kế | QC |
-| `A01.03` | chip-so-cau |  |  | — |  | `TC01` | Chưa có thiết kế | QC |
-| `A01.04` | them-bai-kiem-tra-moi |  |  | — | opens `A01` |  | Chưa có thiết kế | QC |
-| `A01.05` | keo-tha |  |  | — |  | `TC05` | Chưa có thiết kế | QC |
+| `A01.01` | card-bai-kiem-tra |  |  | — | opens `A01` |  | Chưa khớp tự động | QC |
+| `A01.02` | chip-thoi-gian | `Atom/Info Badge` Type=Duration | `I2860:37178;1207:1810` 30m | — |  | `TC01` | Khớp | QC |
+| `A01.03` | chip-so-cau |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
+| `A01.04` | them-bai-kiem-tra-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2702:48181` Add New Bar · Thêm bài kiểm tra mới | — | opens `A01` |  | Khớp | QC |
+| `A01.05` | keo-tha |  |  | — |  | `TC05` | Chưa khớp tự động | QC |
 | `A01.06` | xoa-bai |  |  | — |  | `TC05` | Chưa có thiết kế | QC |
-| `A01.07` | thu-tu-mac-dinh |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A01.07` | thu-tu-mac-dinh |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Popup bài kiểm tra — Tab Thông tin
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `CD-KH-030310` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | do-kho |  |  | — |  | `TC07` | Chưa sync | QC |
-| `A02.03` | mo-ta |  |  | — |  | `TC08` | Chưa sync | QC |
-| `A02.04` | thoi-gian-lam-bai |  |  | — |  |  | Chưa sync | QC |
-| `A02.05` | so-cau-hoi |  |  | — |  | `TC08` | Chưa sync | QC |
-| `A02.06` | diem-dat |  |  | — |  | `TC09` | Chưa sync | QC |
-| `A02.07` | hop-luu-y |  |  | — |  |  | Chưa sync | QC |
-| `A02.08` | dong |  |  | — |  | `TC07` | Chưa sync | QC |
+| `A02.01` | tieu-de | `Atom/Label`  | `2911:43712` Atom/Label | — |  |  | Khớp | QC |
+| `A02.02` | do-kho | `Atom/Label`  | `2911:43717` Atom/Label | — |  | `TC07` | Khớp | QC |
+| `A02.03` | mo-ta | `Atom/Label`  | `2911:43722` Atom/Label | — |  | `TC08` | Khớp | QC |
+| `A02.04` | thoi-gian-lam-bai |  | `1496:16365` Thời gian làm bài * | — |  |  | Khớp | QC |
+| `A02.05` | so-cau-hoi | `Atom/Label`  | `2911:43727` Atom/Label | — |  | `TC08` | Khớp | QC |
+| `A02.06` | diem-dat | `Atom/Label`  | `2911:43737` Atom/Label | — |  | `TC09` | Khớp | QC |
+| `A02.07` | hop-luu-y | `Atom/Alert` Type=Lưu ý | `2808:43043` Atom/Alert | — |  |  | Khớp | QC |
+| `A02.08` | dong | `Atom/Button` Type=Primary, Size=Medium | `I2527:167935;2514:153371` Atom/Button | — |  | `TC07` | Khớp | QC |
 
 ### `A03` Popup bài kiểm tra — Tab Bộ Câu Hỏi
 
-Frame: chưa có (tool đoán:CD-KH-030300) · Nguồn nội dung: QC
+Frame: `CD-KH-030300` (tool đoán:CD-KH-030300) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | nut-thao-tac |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A03.02` | the-tong-quan |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A03.03` | bang-cau-hoi |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A03.04` | them-sua-cau-import-export-generate-soat |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A03.01` | nut-thao-tac |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | the-tong-quan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.03` | bang-cau-hoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | them-sua-cau-import-export-generate-soat |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Toast phản hồi CRUD
 
-Frame: chưa có (tool đoán:CD-KH-030300) · Nguồn nội dung: QC
+Frame: `CD-KH-030300` (tool đoán:CD-KH-030300) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa sync | QC |
-| `A04.02` | canh-bao |  |  | — |  |  | Chưa sync | QC |
-| `A04.03` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A04.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa khớp tự động | QC |
+| `A04.02` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.03` | loi | `Card Menu v2 (Test)` Type=Menu phụ, State=Default | `I4915:255361;4901:220694;2245:87908` Label | — |  |  | Khớp | QC |
+
+### `F01` (ngoài Body)
+
+Frame: `CD-KH-030300` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | component-2 | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `497:18281` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | component-3 | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `497:18282` Component 3 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `497:18283` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | atom-id-badge | `Atom/ID Badge` Type=10-digit, Size=20H | `2003:26053` Atom/ID Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | atom-info-badge | `Atom/Info Badge` Type=Duration | `2860:37178` Atom/Info Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | atom-icon-button | `Atom/Icon Button`  | `2860:37202` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | mouse-click |  | `2860:37209` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | bo-loc-hoc-ky-cap-do | `DD/Molecule/Trigger` Size=XS, State=Default | `5614:59006` Bộ lọc · Học kỳ (cấp độ) | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | atom-status | `Atom/Status` Size=S | `2860:37016` Atom/Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.10` | dd-organism-menu-panel | `DD/Organism/Menu Panel` Type=Action | `6006:130496` DD/Organism/Menu Panel | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.11` | add-new-bar-them-moi | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `2860:37040` Add New Bar · Thêm mới | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.12` | account | `ACCOUNT` Size=Default | `2860:13738` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.13` | component-2 | `Switch Center`  | `4273:160653` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.14` | sidebar-menu-cd | `MENU - CD`  | `4915:255361` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -126,7 +147,7 @@ Frame: chưa có (tool đoán:CD-KH-030300) · Nguồn nội dung: QC
 - `A01` Khác Figma CD-KH-030300: card chưa có menu `⋮` để xoá bài.
 - `A02` Khác Figma CD-KH-030310: ô `Số câu hỏi` đang vẽ như ô nhập, requirement là chỉ đọc; ô `Tổng điểm` trên Figma cần bỏ. Dòng Lưu ý ghi `Số câu hỏi và tổng điểm có thể được cập nhật`.
 - `A03` Khác Figma: bộ câu hỏi đang vẽ thành màn riêng `CD-KH-030340` (mở từ `>`); requirement đặt trong tab `Bộ Câu Hỏi` của popup (**UI cần bổ sung**).
-- Chưa sync (11): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A04.01`, `A04.02`, `A04.03`
+- Chưa khớp tự động (10): `A01.01`, `A01.03`, `A01.05`, `A01.07`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A04.01`, `A04.02`
 - Testcase không trỏ REQ (1): `TTC01`
 
 ## 9. Chi tiết dựng

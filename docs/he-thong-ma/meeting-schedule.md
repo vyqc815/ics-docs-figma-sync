@@ -30,51 +30,79 @@ Requirement: `meeting_schedule/meeting_schedule.md` — [Phụ trách lớp, Adm
 
 ### `A01` Trang 1: Danh sách cuộc họp — dạng danh sách
 
-Frame: chưa có (tool đoán:SP-LHP-010000, SP-LHP-020000) · Nguồn nội dung: QC
+Frame: `SP-LHP-010000`, `SP-LHP-020000` (tool đoán:SP-LHP-010000, SP-LHP-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | nguoi-tham-gia |  |  | — |  | `TC01`, `TC1b`, `TC03`, `TC07`, `TC08` | Chưa sync | QC |
-| `A01.02` | trang-thai |  |  | — |  | `TC1b`, `TC03`, `TC05`, `TC06`, `TC08` | Chưa sync | QC |
-| `A01.03` | thoi-gian |  |  | — |  | `TC08`, `TC10` | Chưa sync | QC |
-| `A01.04` | ngay-hop |  |  | — |  |  | Chưa sync | QC |
-| `A01.05` | gio-hop |  |  | — |  |  | Chưa sync | QC |
-| `A01.06` | chu-de |  |  | — |  | `TC03`, `TC04` | Chưa sync | QC |
-| `A01.07` | ghi-chu |  |  | — |  | `TC04`, `TC09` | Chưa sync | QC |
-| `A01.08` | nguoi-tham-gia |  |  | — |  | `TC01`, `TC1b`, `TC03`, `TC07`, `TC08` | Chưa sync | QC |
-| `A01.09` | trang-thai |  |  | — |  | `TC1b`, `TC03`, `TC05`, `TC06`, `TC08` | Chưa sync | QC |
-| `A01.10` | icon-but |  |  | — | opens `A03` | `TC05` | Chưa sync | QC |
+| `A01.01` | nguoi-tham-gia | `DD/Molecule/Trigger` Size=XS, State=Active | `3857:78844` Filter · Người tham gia | — |  | `TC01`, `TC1b`, `TC03`, `TC07`, `TC08` | Khớp | QC |
+| `A01.02` | trang-thai | `DD/Molecule/Trigger` Size=XS, State=Default | `3857:78845` Filter · Trạng thái | — |  | `TC1b`, `TC03`, `TC05`, `TC06`, `TC08` | Khớp | QC |
+| `A01.03` | thoi-gian | `DD/Molecule/Trigger` Size=XS, State=Default | `3857:78846` Filter · Thời gian | — |  | `TC08`, `TC10` | Khớp | QC |
+| `A01.04` | ngay-hop |  | `3857:78862` Ngày họp | — |  |  | Khớp một phần | QC |
+| `A01.05` | gio-hop |  | `3857:81003` Giờ họp | — |  |  | Khớp một phần | QC |
+| `A01.06` | chu-de |  | `3857:78864` Chủ đề | — |  | `TC03`, `TC04` | Khớp một phần | QC |
+| `A01.07` | ghi-chu | `Card Menu v2 (Test)` Type=Chính thông báo, State=Default | `I4915:258525;4901:225813` Card Menu | — |  | `TC04`, `TC09` | Khớp | QC |
+| `A01.08` | nguoi-tham-gia | `DD/Molecule/Trigger` Size=XS, State=Active | `3857:78844` Filter · Người tham gia | — |  | `TC01`, `TC1b`, `TC03`, `TC07`, `TC08` | Khớp | QC |
+| `A01.09` | trang-thai | `DD/Molecule/Trigger` Size=XS, State=Default | `3857:78845` Filter · Trạng thái | — |  | `TC1b`, `TC03`, `TC05`, `TC06`, `TC08` | Khớp | QC |
+| `A01.10` | icon-but | `Atom/Icon Button`  | `3857:78842` Atom/Icon Button | — | opens `A03` | `TC05` | Khớp | QC |
+| `A01.11` | sidebar-menu-class-handler | `MENU - CLASS HANDLER`  | `4915:258525` Sidebar · MENU - CLASS HANDLER | — |  |  | Chỉ có trên Figma | Figma |
 
 ### `A02` Trang 2: Danh sách cuộc họp — dạng lịch tuần
 
-Frame: chưa có (tool đoán:SP-LHP-010000, SP-LHP-020000) · Nguồn nội dung: QC
+Frame: `SP-LHP-010000`, `SP-LHP-020000` (tool đoán:SP-LHP-010000, SP-LHP-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A03` Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp
 
-Frame: chưa có (tool đoán:SP-LHP-010010) · Nguồn nội dung: QC
+Frame: `SP-LHP-010010` (tool đoán:SP-LHP-010010) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | dong-phu-duoi-tieu-de |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A03.02` | chu-de |  |  | — |  | `TC03`, `TC04` | Chưa có thiết kế | QC |
-| `A03.03` | thoi-gian |  |  | — |  | `TC08`, `TC10` | Chưa có thiết kế | QC |
-| `A03.04` | trang-thai |  |  | — |  | `TC1b`, `TC03`, `TC05`, `TC06`, `TC08` | Chưa có thiết kế | QC |
-| `A03.05` | nguoi-tham-gia |  |  | — |  | `TC01`, `TC1b`, `TC03`, `TC07`, `TC08` | Chưa có thiết kế | QC |
-| `A03.06` | ghi-chu |  |  | — |  | `TC04`, `TC09` | Chưa có thiết kế | QC |
-| `A03.07` | link-cuoc-hop |  |  | — |  | `TC06` | Chưa có thiết kế | QC |
-| `A03.08` | huy |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A03.09` | luu |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A03.10` | xoa |  |  | — | opens `A03` |  | Chưa có thiết kế | QC |
+| `A03.01` | dong-phu-duoi-tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | chu-de | `Atom/Label`  | `3857:80159` Atom/Label | — |  | `TC03`, `TC04` | Khớp | QC |
+| `A03.03` | thoi-gian | `Atom/Label`  | `3857:80162` Atom/Label | — |  | `TC08`, `TC10` | Khớp | QC |
+| `A03.04` | trang-thai | `Atom/Label`  | `3857:80175` Atom/Label | — |  | `TC1b`, `TC03`, `TC05`, `TC06`, `TC08` | Khớp | QC |
+| `A03.05` | nguoi-tham-gia | `Atom/Label`  | `3977:77319` Atom/Label | — |  | `TC01`, `TC1b`, `TC03`, `TC07`, `TC08` | Khớp | QC |
+| `A03.06` | ghi-chu | `Atom/Label`  | `3857:80172` Atom/Label | — |  | `TC04`, `TC09` | Khớp | QC |
+| `A03.07` | link-cuoc-hop | `Atom/Label`  | `3857:80266` Atom/Label | — |  | `TC06` | Khớp | QC |
+| `A03.08` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I3857:80177;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+| `A03.09` | luu | `Atom/Button` Type=Primary, Size=Medium | `I3857:80177;2514:153363` Atom/Button | — |  |  | Khớp | QC |
+| `A03.10` | xoa |  |  | — | opens `A03` |  | Requirement ghi thiếu, Figma đã có | QC |
 
 ### `A04` Trang 4: Dropdown bộ lọc
 
-Frame: chưa có (tool đoán:SP-LHP-010001, SP-LHP-010002, SP-LHP-010003) · Nguồn nội dung: QC
+Frame: `SP-LHP-010001`, `SP-LHP-010002`, `SP-LHP-010003` (tool đoán:SP-LHP-010001, SP-LHP-010002, SP-LHP-010003) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
+
+### `F01` Header
+
+Frame: `SP-LHP-010000`, `SP-LHP-020000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | account | `ACCOUNT` Size=Default | `3857:78210` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F02` (ngoài Body)
+
+Frame: `SP-LHP-010000`, `SP-LHP-020000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F02.01` | xem-bang | `Atom/Tab` State=Inactive, Kiểu=Switch icon | `3857:79228` Xem · Bảng | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.02` | xem-danh-sach | `Atom/Tab` State=Active, Kiểu=Switch icon | `3857:79230` Xem · Danh sách | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.03` | atom-chip | `Atom/Chip` Type=Date | `3857:80912` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.04` | avatar | `Avatar` Size=28 | `3857:80710` Avatar | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.05` | mouse-click |  | `3857:80714` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.06` | molecule-tooltip | `Molecule/Tooltip`  | `3857:80715` Molecule/Tooltip | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.07` | phan-trang |  | `3857:79012` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.08` | time | `Time`  | `3857:84381` Time | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.09` | atom-button | `Atom/Button` Type=Outlined, Size=Small | `3857:80046` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.10` | cuoc-hop-truoc-buoi-10-huong-dan-luye | `STATUS CALENDAR`  | `3857:80116` Cuộc họp · [Trước Buổi 10] Hướng dẫn luyệ | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.11` | cuoc-hop-sau-buoi-7-hop-giao-vien-ren | `STATUS CALENDAR`  | `3857:80125` Cuộc họp · [Sau Buổi 7] Họp Giáo Viên REN | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.12` | them-2-cuoc-hop | `Atom/Badge`  | `3857:80152` Thêm · +2 cuộc họp | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -123,7 +151,8 @@ Frame: chưa có (tool đoán:SP-LHP-010001, SP-LHP-010002, SP-LHP-010003) · Ng
 
 **Tool báo, cần người xem**
 
-- Chưa sync (10): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`
+- Chưa khớp tự động (1): `A03.01`
+- Requirement ghi thiếu, Figma đã có (1): `A03.10`
 - Frame Figma chưa có requirement (4): `SP-LHP-010001`, `SP-LHP-010002`, `SP-LHP-010003`, `SP-LHP-010010`
 - Phân loại cần design duyệt (2): `SP-LHP-010002`, `SP-LHP-010003`
 - Thiếu prototype link đi vào (1): `SP-LHP-010010`

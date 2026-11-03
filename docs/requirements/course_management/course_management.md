@@ -2,7 +2,10 @@
 
 ## 1. UI
 
-### Trang 1: Danh sách khoá học
+### Trang 1: CD-KH-010000 — Danh sách khoá học
+
+![Figma mới nhất · CD-KH-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-010000.png)
+
 ![alt text](image-1.png)
 
 **Mô tả:**
@@ -22,7 +25,10 @@
 - Icon **">"** cuối mỗi dòng: điều hướng đến trang Học kỳ (Trang 2).
 - Danh sách không phân trang.
 
-### Trang 2: Menu chi tiết khoá học
+### Trang 2: CD-KH-010000 — Menu chi tiết khoá học
+
+![Figma mới nhất · CD-KH-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-010000.png)
+
 ![Trang 2](image-4.png)
 
 **Mô tả:**
@@ -51,7 +57,12 @@
 - Sau lần công khai đầu tiên, ID/Danh mục/Cấp độ và toàn bộ dữ liệu chi tiết bên trong bị khoá vĩnh viễn, kể cả khi khoá học chuyển Vô hiệu rồi Công Khai lại (khoá học không thể về `Nháp`). Tên và Mô tả vẫn sửa được ở `Công Khai` / `Vô hiệu` (REQ10).
 - 2 nút hành động: **Hủy** (đóng popup, giữ nguyên trạng thái hiện tại) và **Công khai khoá học** (chỉ bấm được khi toàn bộ trường hợp lệ).
 
-### Trang 4: Popup Nhân bản khoá học
+### Trang 4: CD-KH-010010, CD-KH-010013 — Popup Nhân bản khoá học
+
+![Figma mới nhất · CD-KH-010010](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-010010.png)
+
+![Figma mới nhất · CD-KH-010013](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-010013.png)
+
 **Mô tả:**
 - Mở khi CD chọn `Nhân bản` ở menu thao tác của một khoá học (có ở mọi trạng thái `Nháp` / `Công Khai` / `Vô hiệu`). **UI cần bổ sung** trên Figma.
 

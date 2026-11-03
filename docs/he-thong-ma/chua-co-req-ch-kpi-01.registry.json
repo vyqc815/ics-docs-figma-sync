@@ -17,16 +17,184 @@
    "nodeId": "3821:48599",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/phu-trach-lop/kpi",
    "link": "/phu-trach-lop/kpi",
    "dark": "CH-KPI-010000-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CH-KPI-01.F01",
+    "CH-KPI-01.F02",
+    "CH-KPI-01.F03"
+   ]
   }
  },
- "regions": [],
+ "regions": [
+  {
+   "id": "CH-KPI-01.F01",
+   "name": "header",
+   "title": "Header",
+   "screens": [
+    "ch-kpi-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CH-KPI-01.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "ch-kpi-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3821:48649",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Phụ Trách Lớp",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "CH-KPI-01.F02",
+   "name": "sidebar-menu-class-handler",
+   "title": "Sidebar · MENU - CLASS HANDLER",
+   "screens": [
+    "ch-kpi-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CH-KPI-01.F02.01",
+     "name": "sidebar-menu-class-handler",
+     "label": "Sidebar · MENU - CLASS HANDLER",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "ch-kpi-010000": [
+       {
+        "term": "Sidebar · MENU - CLASS HANDLER",
+        "figmaId": "4969:25135",
+        "layer": "Sidebar · MENU - CLASS HANDLER",
+        "confidence": "cao",
+        "region": "Sidebar · MENU - CLASS HANDLER",
+        "owner": "Sidebar · MENU - CLASS HANDLER",
+        "component": "MENU - CLASS HANDLER",
+        "variant": {
+         "Trang": "KPI"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "CH-KPI-01.F03",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "ch-kpi-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CH-KPI-01.F03.01",
+     "name": "empty-state-illustration",
+     "label": "Empty State / Illustration",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "ch-kpi-010000": [
+       {
+        "term": "Empty State / Illustration",
+        "figmaId": "3821:48567",
+        "layer": "Empty State / Illustration",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Empty State / Illustration",
+        "component": "Empty State / Illustration",
+        "variant": {
+         "Type": "Thêm vị trí",
+         "Trung tâm": "Đắc Nhân"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CH-KPI-01.F03.02",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "ch-kpi-010000": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "3821:48570",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Quay về trang chủ",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
  "exceptions": [],
  "flows": [],
  "testcases": [],

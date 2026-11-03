@@ -19,6 +19,21 @@
 
 ## 4. Khu vực và item
 
+### `F01` (ngoài Body)
+
+Frame: `ADM-TL-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:249842` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | atom-input | `Atom/Input` State=Default, Kiểu=Chuẩn | `4193:146189` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | atom-dropzone | `Atom/Dropzone` Kiểu=Mặc định | `4193:146185` Atom/Dropzone | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | atom-icon-button | `Atom/Icon Button`  | `4193:146193` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | add-new-bar-nhap-noi-dung-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `4193:146143` Add New Bar · Nhập nội dung mới | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | add-new-bar-nhap-danh-muc-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `4193:145393` Add New Bar · Nhập danh mục mới | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | atom-status | `Atom/Status` Size=S | `4193:145511` Atom/Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | add-new-bar-them-moi | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `4193:145435` Add New Bar · Thêm mới | — |  |  | Chỉ có trên Figma | Figma |
+
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

@@ -30,10 +30,23 @@ Requirement: `ship_books/message_template/message_template.md` — Template Tin 
 
 ### `A01` Trang 1: Danh Sách Tin Nhắn
 
-Frame: chưa có (tool đoán:ADM-TN-010004) · Nguồn nội dung: QC
+Frame: `ADM-TN-010004` (tool đoán:ADM-TN-010004) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
+
+### `F01` (ngoài Body)
+
+Frame: `ADM-TN-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | account | `ACCOUNT` Size=Default | `2711:69075` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:251998` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `2711:70262` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Default | `2711:70264` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | atom-button | `Atom/Button` Type=Outlined Icon, Size=XSmall | `2711:70317` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | molecule-add-new-bar | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2711:70455` Molecule/Add New Bar | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 

@@ -28,48 +28,68 @@ Requirement: `course_management/overview-s1/overview-s1.md` — Tổng quan (S1)
 
 ### `A01` Trang 1: Tổng quan (S1)
 
-Frame: chưa có (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
+Frame: `CD-KH-020100` (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | so-buoi |  |  | — |  | `TC02`, `TC04`, `TC07` | Chưa sync | QC |
-| `A01.02` | thoi-gian-moi-buoi |  |  | — |  | `TC02` | Chưa sync | QC |
-| `A01.03` | tong-thoi-gian |  |  | — |  | `TC02`, `TC04`, `TC05`, `TC07` | Chưa sync | QC |
-| `A01.04` | thoi-gian-thuc-te |  |  | — |  | `TC05` | Chưa sync | QC |
-| `A01.05` | thoi-gian-con-lai |  |  | — |  | `TC05`, `TC07` | Chưa sync | QC |
+| `A01.01` | so-buoi | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25145` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC07` | Khớp | QC |
+| `A01.02` | thoi-gian-moi-buoi | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25154` Thẻ chỉ số | — |  | `TC02` | Khớp | QC |
+| `A01.03` | tong-thoi-gian | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25164` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC05`, `TC07` | Khớp | QC |
+| `A01.04` | thoi-gian-thuc-te | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25174` Thẻ chỉ số | — |  | `TC05` | Khớp | QC |
+| `A01.05` | thoi-gian-con-lai | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25184` Thẻ chỉ số | — |  | `TC05`, `TC07` | Khớp | QC |
 
 ### `A02` Khu vực: Bảng "Nội dung buổi học"
 
-Frame: chưa có (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
+Frame: `CD-KH-020100` (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | id |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | ten |  |  | — |  |  | Chưa sync | QC |
-| `A02.03` | mo-ta |  |  | — |  |  | Chưa sync | QC |
-| `A02.04` | so-buoi |  |  | — |  | `TC02`, `TC04`, `TC07` | Chưa sync | QC |
-| `A02.05` | thoi-gian-hoc |  |  | — |  | `TC04`, `TC07` | Chưa sync | QC |
-| `A02.06` | tong-thoi-gian |  |  | — |  | `TC02`, `TC04`, `TC05`, `TC07` | Chưa sync | QC |
-| `A02.07` |  |  |  | — |  |  | Chưa sync | QC |
-| `A02.08` | thao-tac |  |  | — |  | `TC06`, `TC07`, `TC10` | Chưa sync | QC |
+| `A02.01` | id |  | `1448:6747` ID | — |  |  | Khớp | QC |
+| `A02.02` | ten |  | `1448:6749` Tên | — |  |  | Khớp | QC |
+| `A02.03` | mo-ta |  | `1448:6751` Mô tả | — |  |  | Khớp | QC |
+| `A02.04` | so-buoi | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25145` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC07` | Khớp | QC |
+| `A02.05` | thoi-gian-hoc |  | `1448:6755` Thời gian học | — |  | `TC04`, `TC07` | Khớp | QC |
+| `A02.06` | tong-thoi-gian | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25164` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC05`, `TC07` | Khớp | QC |
+| `A02.07` |  |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.08` | thao-tac |  | `1448:6761` Thao tác | — |  | `TC06`, `TC07`, `TC10` | Khớp | QC |
 
 ### `A03` Khu vực: Thêm nội dung buổi học mới
 
-Frame: chưa có (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
+Frame: `CD-KH-020100` (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A04` Toast phản hồi CRUD
 
-Frame: chưa có (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
+Frame: `CD-KH-020100` (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa sync | QC |
-| `A04.02` | thong-tin |  |  | — |  | `TC02`, `TC04` | Chưa sync | QC |
-| `A04.03` | canh-bao |  |  | — |  | `TTC02`, `TC07` | Chưa sync | QC |
-| `A04.04` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A04.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
+| `A04.02` | thong-tin |  |  | — |  | `TC02`, `TC04` | Chưa khớp tự động | QC |
+| `A04.03` | canh-bao |  |  | — |  | `TTC02`, `TC07` | Chưa khớp tự động | QC |
+| `A04.04` | loi | `Card Menu v2 (Test)` Type=Menu phụ, State=Default | `I4915:255903;4901:220870;2245:87908` Label | — |  |  | Khớp | QC |
+
+### `F01` Row
+
+Frame: `CD-KH-020100` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | atom-id-badge | `Atom/ID Badge` Type=6-digit, Size=26H | `2409:144771` Atom/ID Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `2812:25761` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F02` (ngoài Body)
+
+Frame: `CD-KH-020100` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F02.01` | add-new-bar-them-noi-dung-khoa-hoc-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2812:32946` Add New Bar · Thêm nội dung khoá học mới | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.02` | sidebar-menu-cd | `MENU - CD`  | `4915:255903` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.03` | account | `ACCOUNT` Size=Default | `2812:32932` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.04` | component-2 | `Switch Center`  | `4273:160623` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -115,7 +135,7 @@ Frame: chưa có (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa sync (17): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A04.01`, `A04.02`, `A04.03`, `A04.04`
+- Chưa khớp tự động (4): `A02.07`, `A04.01`, `A04.02`, `A04.03`
 - Testcase không trỏ REQ (6): `TTC01`, `TTC02`, `TTC03`, `TTC04`, `TC01`, `TC10`
 - REQ/EX chưa có testcase (1): `REQ03`
 

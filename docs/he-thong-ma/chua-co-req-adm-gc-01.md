@@ -19,6 +19,18 @@
 
 ## 4. Khu vực và item
 
+### `F01` (ngoài Body)
+
+Frame: `ADM-GC-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | dropdown-trung-tam | `DD/Molecule/Trigger` Size=S, State=Default | `4713:129156` Dropdown · Trung tâm | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | dropdown | `DD/Molecule/Trigger` Size=S, State=Default | `4083:136063` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | avatar | `Avatar` Size=24 | `4083:136074` Avatar | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:221051` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | account | `ACCOUNT` Size=Default | `4083:136568` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

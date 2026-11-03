@@ -17,13 +17,17 @@
    "nodeId": "6133:123381",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/tools/giong-doc/doc-van-ban",
    "link": "/tools/giong-doc/doc-van-ban",
    "dark": "CD-TL-010000-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CD-TL-01.F01",
+    "CD-TL-01.F02",
+    "CD-TL-01.F03"
+   ]
   },
   "CD-TL-010010": {
    "id": "CD-TL-010010",
@@ -38,7 +42,7 @@
    "nodeId": "6133:124292",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/tools/giong-doc/dang-tao",
    "link": "/tools/giong-doc/doc-van-ban?state=CD-TL-010010",
    "dark": "CD-TL-010010-DK",
@@ -59,13 +63,17 @@
    "nodeId": "6133:124760",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/tools/giong-doc/hoi-thoai",
    "link": "/tools/giong-doc/hoi-thoai",
    "dark": "CD-TL-010100-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CD-TL-01.F01",
+    "CD-TL-01.F02",
+    "CD-TL-01.F03"
+   ]
   },
   "CD-TL-010210": {
    "id": "CD-TL-010210",
@@ -80,7 +88,7 @@
    "nodeId": "6133:125715",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/tools/giong-doc/loi-ket-noi-may-chu",
    "link": "/tools/giong-doc/hoi-thoai?state=CD-TL-010210",
    "dark": "CD-TL-010210-DK",
@@ -101,7 +109,7 @@
    "nodeId": "6133:126133",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/tools/giong-doc/am-tiet-pinyin-dang-tao",
    "link": "/tools/giong-doc/hoi-thoai?state=CD-TL-010300",
    "dark": "CD-TL-010300-DK",
@@ -110,7 +118,330 @@
    "regions": []
   }
  },
- "regions": [],
+ "regions": [
+  {
+   "id": "CD-TL-01.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "cd-tl-010000",
+    "cd-tl-010100"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CD-TL-01.F01.01",
+     "name": "sidebar-menu-cd",
+     "label": "Sidebar · MENU - CD",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-tl-010000": [
+       {
+        "term": "Sidebar · MENU - CD",
+        "figmaId": "6133:123478",
+        "layer": "Sidebar · MENU - CD",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - CD",
+        "component": "MENU - CD",
+        "variant": {
+         "Trang": "Tools"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CD-TL-01.F01.02",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-tl-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "6133:123527",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "CD",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CD-TL-01.F01.03",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-tl-010000": [
+       {
+        "term": "Component 2",
+        "figmaId": "6133:123528",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Sakumi"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CD-TL-01.F01.04",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-tl-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "6133:126656",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "● Máy chủ sẵn sàng",
+         "Variant": "Success",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CD-TL-01.F01.05",
+     "name": "atom-tab",
+     "label": "Atom/Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-tl-010000": [
+       {
+        "term": "Atom/Tab",
+        "figmaId": "6133:124176",
+        "layer": "Atom/Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Tab",
+        "component": "Atom/Tab",
+        "variant": {
+         "Icon": "3857:80306",
+         "Label": "Đọc văn bản",
+         "State": "Active",
+         "Kiểu": "Gạch chân"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "CD-TL-01.F02",
+   "name": "card-van-ban",
+   "title": "Card · Văn bản",
+   "screens": [
+    "cd-tl-010000",
+    "cd-tl-010100"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CD-TL-01.F02.01",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-tl-010000": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "6133:124210",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Card · Văn bản",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xoá",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "CD-TL-01.F03",
+   "name": "card-giong-ket-qua",
+   "title": "Card · Giọng & kết quả",
+   "screens": [
+    "cd-tl-010000",
+    "cd-tl-010100"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CD-TL-01.F03.01",
+     "name": "atom-tab",
+     "label": "Atom/Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-tl-010000": [
+       {
+        "term": "Atom/Tab",
+        "figmaId": "6133:124218",
+        "layer": "Atom/Tab",
+        "confidence": "cao",
+        "region": "Card · Giọng & kết quả",
+        "owner": "Atom/Tab",
+        "component": "Atom/Tab",
+        "variant": {
+         "Icon": "3857:80306",
+         "Label": "Nữ · 8",
+         "State": "Active",
+         "Kiểu": "Switch"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CD-TL-01.F03.02",
+     "name": "atom-audio-player",
+     "label": "Atom/Audio Player",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-tl-010000": [
+       {
+        "term": "Atom/Audio Player",
+        "figmaId": "6133:124275",
+        "layer": "Atom/Audio Player",
+        "confidence": "cao",
+        "region": "Card · Giọng & kết quả",
+        "owner": "Atom/Audio Player",
+        "component": "Atom/Audio Player",
+        "variant": {
+         "Thời gian": "00:00 / 00:10",
+         "State": "Chưa phát",
+         "Theme": "Light"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CD-TL-01.F03.03",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-tl-010000": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "6133:124285",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Card · Giọng & kết quả",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Tải MP3",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
  "exceptions": [],
  "flows": [],
  "testcases": [],

@@ -27,86 +27,101 @@ Requirement: `management_requirement/class_management/class_detail_messages_requ
 
 ### `A01` Tab Tin Nhắn — Danh sách tin nhắn
 
-Frame: chưa có (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | nut |  |  | — | opens `A02` |  | Chưa sync | QC |
-| `A01.02` | tieu-de |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.03` | tin-nhan |  |  | — |  | `TC01`, `TC02`, `TC06` | Chưa sync | QC |
-| `A01.04` | ngay-tao |  |  | — |  | `TC01`, `TC02` | Chưa sync | QC |
-| `A01.05` | so-nguoi-da-gui |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.06` | gui-chung |  |  | — |  |  | Chưa sync | QC |
-| `A01.07` | mo-thu-gon |  |  | — |  |  | Chưa sync | QC |
-| `A01.08` | nut-do |  |  | — | opens `A01` |  | Chưa sync | QC |
-| `A01.09` | tim-kiem |  |  | — |  |  | Chưa sync | QC |
-| `A01.10` | tai-du-lieu |  |  | — |  |  | Chưa sync | QC |
+| `A01.01` | nut |  |  | — | opens `A02` |  | Chưa khớp tự động | QC |
+| `A01.02` | tieu-de |  | `2533:20883` TIÊU ĐỀ | — |  | `TC01` | Khớp | QC |
+| `A01.03` | tin-nhan | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I1299:21;2177:28928` Chi tiết NV | — |  | `TC01`, `TC02`, `TC06` | Khớp | QC |
+| `A01.04` | ngay-tao |  |  | — |  | `TC01`, `TC02` | Chưa khớp tự động | QC |
+| `A01.05` | so-nguoi-da-gui |  | `2533:20875` Filter Pills Toolbar | — |  | `TC01` | Khớp | QC |
+| `A01.06` | gui-chung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.07` | mo-thu-gon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.08` | nut-do |  |  | — | opens `A01` |  | Chưa khớp tự động | QC |
+| `A01.09` | tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `I2533:21147;1739:32351` Tìm nội dung...; `I2533:21147;1739:32351` Tìm nội dung... | — |  |  | Khớp | QC |
+| `A01.10` | tai-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Popup Tạo tin nhắn bán tự động mới
 
-Frame: chưa có (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | tieu-de |  |  | — |  | `TC07`, `TC13`, `TC14` | Chưa sync | QC |
-| `A02.02` | mo-ta |  |  | — |  | `TC07`, `TC13`, `TC14` | Chưa sync | QC |
-| `A02.03` | chon-mau-tin-nhan |  |  | — |  |  | Chưa sync | QC |
-| `A02.04` | noi-dung-tin-nhan |  |  | — |  |  | Chưa sync | QC |
-| `A02.05` | huy |  |  | — |  |  | Chưa sync | QC |
-| `A02.06` | tao-moi |  |  | — |  | `TC07`, `TC09`, `TC10`, `TC11`, `TC13` | Chưa sync | QC |
+| `A02.01` | tieu-de |  | `2533:20883` TIÊU ĐỀ | — |  | `TC07`, `TC13`, `TC14` | Khớp | QC |
+| `A02.02` | mo-ta |  | `2533:20885` MÔ TẢ | — |  | `TC07`, `TC13`, `TC14` | Khớp | QC |
+| `A02.03` | chon-mau-tin-nhan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.04` | noi-dung-tin-nhan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.05` | huy |  | `2533:20899` Thuy SP đã follow học viên | — |  |  | Khớp | QC |
+| `A02.06` | tao-moi |  |  | — |  | `TC07`, `TC09`, `TC10`, `TC11`, `TC13` | Chưa khớp tự động | QC |
 
 ### `A03` Danh sách học viên và chọn nền tảng
 
-Frame: chưa có (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | hoc-vien |  |  | — |  | `TC15`, `TC19` | Chưa sync | QC |
-| `A03.02` | nguon-nguoi-nhan |  |  | — |  |  | Chưa sync | QC |
-| `A03.03` | dropdown-nen-tang |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | dich-gui |  |  | — |  |  | Chưa sync | QC |
-| `A03.05` | gui-tung-hoc-vien |  |  | — |  |  | Chưa sync | QC |
-| `A03.06` | thieu-lien-ket-nen-tang |  |  | — |  |  | Chưa sync | QC |
+| `A03.01` | hoc-vien |  | `2533:20899` Thuy SP đã follow học viên | — |  | `TC15`, `TC19` | Khớp | QC |
+| `A03.02` | nguon-nguoi-nhan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.03` | dropdown-nen-tang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | dich-gui |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | gui-tung-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.06` | thieu-lien-ket-nen-tang |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Lấy biến CơmGao và gửi tin nhắn
 
-Frame: chưa có (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | bien-mau |  |  | — |  |  | Chưa sync | QC |
-| `A04.02` | thay-bien |  |  | — |  |  | Chưa sync | QC |
-| `A04.03` | gui-mot-nguoi |  |  | — |  |  | Chưa sync | QC |
-| `A04.04` | gui-toan-bo |  |  | — |  |  | Chưa sync | QC |
-| `A04.05` | dang-gui |  |  | — |  |  | Chưa sync | QC |
-| `A04.06` | ket-qua-tung-nguoi |  |  | — |  |  | Chưa sync | QC |
-| `A04.07` | so-nguoi-da-gui |  |  | — |  |  | Chưa sync | QC |
-| `A04.08` | gui-lai |  |  | — |  | `TC27`, `TC29` | Chưa sync | QC |
+| `A04.01` | bien-mau |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | thay-bien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.03` | gui-mot-nguoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.04` | gui-toan-bo |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.05` | dang-gui |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.06` | ket-qua-tung-nguoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.07` | so-nguoi-da-gui |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.08` | gui-lai |  |  | — |  | `TC27`, `TC29` | Chưa khớp tự động | QC |
 
 ### `A05` Quản lý item tin nhắn đã tạo
 
-Frame: chưa có (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | dropdown-mau-tren-item |  |  | — |  |  | Chưa sync | QC |
-| `A05.02` | sua-tieu-de-mo-ta |  |  | — |  |  | Chưa sync | QC |
-| `A05.03` | nut |  |  | — | opens `A05` |  | Chưa sync | QC |
-| `A05.04` | tin-nhan-da-gui |  |  | — |  |  | Chưa sync | QC |
-| `A05.05` | xac-nhan-xoa |  |  | — |  | `TC35` | Chưa sync | QC |
-| `A05.06` | du-lieu-ket-qua-gui |  |  | — |  |  | Chưa sync | QC |
+| `A05.01` | dropdown-mau-tren-item |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.02` | sua-tieu-de-mo-ta |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.03` | nut |  |  | — | opens `A05` |  | Chưa khớp tự động | QC |
+| `A05.04` | tin-nhan-da-gui |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.05` | xac-nhan-xoa |  |  | — |  | `TC35` | Chưa khớp tự động | QC |
+| `A05.06` | du-lieu-ket-qua-gui |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A06` Toast phản hồi CRUD và gửi tin nhắn
 
-Frame: chưa có (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC03`, `TTC04` | Chưa sync | QC |
-| `A06.02` | thong-bao |  |  | — |  | `TTC04` | Chưa sync | QC |
-| `A06.03` | canh-bao |  |  | — |  |  | Chưa sync | QC |
-| `A06.04` | co-loi-xay-ra |  |  | — |  |  | Chưa sync | QC |
-| `A06.05` | dong-va-thoi-luong |  |  | — |  |  | Chưa sync | QC |
+| `A06.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC03`, `TTC04` | Chưa khớp tự động | QC |
+| `A06.02` | thong-bao |  |  | — |  | `TTC04` | Chưa khớp tự động | QC |
+| `A06.03` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.04` | co-loi-xay-ra |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.05` | dong-va-thoi-luong |  |  | — |  |  | Chưa khớp tự động | QC |
+
+### `F01` (ngoài Body)
+
+Frame: `ADM-LOP-050100` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `1299:15` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `2533:21147` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Active | `2533:20876` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | lich-giao-vien-dang-ky | `LỊCH GIÁO VIÊN ĐĂNG KÝ` State=Default | `2533:20901` LỊCH GIÁO VIÊN ĐĂNG KÝ | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | atom-object-chip | `Atom/Object Chip` Type=System | `2533:20905` Atom/Object Chip | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | atom-icon-button | `Atom/Icon Button`  | `2533:21031` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:231079` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | account | `ACCOUNT` Size=Default | `3497:53466` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -186,7 +201,7 @@ Frame: chưa có (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa sync (41): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A06.05`
+- Chưa khớp tự động (33): `A01.01`, `A01.04`, `A01.06`, `A01.07`, `A01.08`, `A01.10`, `A02.03`, `A02.04`, `A02.06`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A06.05`
 
 ## 9. Chi tiết dựng
 

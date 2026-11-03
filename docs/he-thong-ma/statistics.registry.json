@@ -67,13 +67,17 @@
    "nodeId": "3857:81006",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/phu-trach-lop/thong-ke",
    "link": "/phu-trach-lop/thong-ke",
    "dark": "CH-TK-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": []
+   "regions": [
+    "CHS-ST.A01",
+    "CHS-ST.A02",
+    "CHS-ST.F01"
+   ]
   }
  },
  "regions": [
@@ -81,7 +85,9 @@
    "id": "CHS-ST.A01",
    "name": "trang-1-thong-ke",
    "title": "Trang 1: Thống kê",
-   "screens": [],
+   "screens": [
+    "ch-tk-010000"
+   ],
    "screensGuessed": [
     "CH-TK-010000"
    ],
@@ -98,13 +104,39 @@
      "spec": "Chọn nhiều, danh sách trung tâm (Phụ trách lớp không chọn trung tâm ở header) | Tất cả",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Trung tâm",
+        "figmaId": "6935:381681",
+        "layer": "Filter · Trung tâm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Trung tâm",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trung tâm",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CHS-ST.TC11"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.02",
@@ -113,11 +145,39 @@
      "spec": "Chọn 1: Tới hạn, Hôm nay, Hôm qua, Hôm nay và hôm qua, Tuần này, Tuần trước, Tháng này, Tháng trước, 3 tháng trước, Năm nay, Năm trước, Tùy chọn (phạm vi theo Trang chủ) | `Tháng này`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Tháng này",
+        "figmaId": "3857:82088",
+        "layer": "Filter · Tháng này",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Tháng này",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Tháng này",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thời gian (nút hiển thị giá trị đang chọn)"
+     ],
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.03",
@@ -126,7 +186,33 @@
      "spec": "Chọn nhiều, có ô tìm kiếm; danh sách trình độ đã define (VD `HSK1`, `LT24-HSK3`) | Tất cả",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Trình độ",
+        "figmaId": "3857:82108",
+        "layer": "Filter · Trình độ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Trình độ",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trình độ",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CHS-ST.TC01",
@@ -134,7 +220,7 @@
       "CHS-ST.TC07"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.04",
@@ -143,7 +229,33 @@
      "spec": "Chọn nhiều, có ô tìm kiếm; danh sách học kỳ đã define (VD `HKI`, `FULL`, `Chặng I`) | Tất cả",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Học kỳ",
+        "figmaId": "3857:82120",
+        "layer": "Filter · Học kỳ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Học kỳ",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Học kỳ",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CHS-ST.TC01",
@@ -151,7 +263,7 @@
       "CHS-ST.TC07"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.05",
@@ -160,11 +272,54 @@
      "spec": "`KPI Cá Nhân` | Bằng thẻ `Số KPI` của Trang chủ: `Σ KPI PTL` trên các hoá đơn chưa xoá có Phụ trách lớp trong Người phụ trách, thuộc `Trung tâm` đã chọn, Ngày ghi nhận trong khoảng Thời gian; KPI dương cộng, âm trừ. | Như Trang chủ (2 chữ số thập phân, bỏ phần `.00`)",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "KPI",
+        "figmaId": "I4969:25446;4901:227392",
+        "layer": "Card Menu",
+        "confidence": "cao",
+        "region": "Sidebar · MENU - CLASS HANDLER",
+        "owner": "Card Menu",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "1150:22354",
+         "Label": "KPI",
+         "Type": "Chính",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       },
+       {
+        "term": "KPI Cá Nhân",
+        "figmaId": "3857:82943",
+        "layer": "Thẻ chỉ số · KPI Cá Nhân",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · KPI Cá Nhân",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "0",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "KPI Cá Nhân",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.06",
@@ -173,11 +328,54 @@
      "spec": "`Tiền KPI Lớp` | Tổng tiền thực tế các khoản KPI `Đã xác nhận` có người nhận là Phụ trách lớp đang đăng nhập, thuộc Lớp của PTL, `Ngày ghi nhận` của khoản KPI trong khoảng Thời gian. | `x.xxx.xxx đ`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "KPI",
+        "figmaId": "I4969:25446;4901:227392",
+        "layer": "Card Menu",
+        "confidence": "cao",
+        "region": "Sidebar · MENU - CLASS HANDLER",
+        "owner": "Card Menu",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "1150:22354",
+         "Label": "KPI",
+         "Type": "Chính",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Tiền KPI Lớp",
+        "figmaId": "3857:82944",
+        "layer": "Thẻ chỉ số · Tiền KPI Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tiền KPI Lớp",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "0",
+         "Đơn vị": "đ",
+         "Tiêu đề": "Tiền KPI Lớp",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.07",
@@ -186,11 +384,48 @@
      "spec": "`Số Lớp Bắt Đầu` | Đếm Lớp của PTL có `Ngày bắt đầu chính thức` trong khoảng Thời gian. | Số nguyên",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Lớp",
+        "figmaId": "3857:82155",
+        "layer": "Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Số Lớp Bắt Đầu",
+        "figmaId": "3857:82918",
+        "layer": "Thẻ chỉ số · Số Lớp Bắt Đầu",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số Lớp Bắt Đầu",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "2",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Số Lớp Bắt Đầu",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.08",
@@ -199,11 +434,48 @@
      "spec": "`Số Lớp Kết Thúc` | Đếm Lớp của PTL có `Ngày kết thúc chính thức` trong khoảng Thời gian. | Số nguyên",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Lớp",
+        "figmaId": "3857:82155",
+        "layer": "Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Số Lớp Kết Thúc",
+        "figmaId": "3857:82919",
+        "layer": "Thẻ chỉ số · Số Lớp Kết Thúc",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số Lớp Kết Thúc",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "0",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Số Lớp Kết Thúc",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.09",
@@ -212,11 +484,48 @@
      "spec": "`Tổng Số Lớp` | Đếm Tập lớp trong khoảng = tổng số lớp đang phụ trách trong khoảng Thời gian, theo các bộ lọc đang chọn. | Số nguyên",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Lớp",
+        "figmaId": "3857:82155",
+        "layer": "Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Tổng Số Lớp",
+        "figmaId": "3857:82920",
+        "layer": "Thẻ chỉ số · Tổng Số Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tổng Số Lớp",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "17",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Tổng Số Lớp",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.10",
@@ -225,14 +534,51 @@
      "spec": "`Đi Học` | Công thức thẻ `Đi Học` của Trang chủ (trung bình theo học viên), chỉ tính các buổi của Tập lớp trong khoảng có ngày học trong khoảng Thời gian. | `%`, 1 chữ số thập phân, bỏ `.0`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Tỉ lệ",
+        "figmaId": "3857:82184",
+        "layer": "Tỉ lệ",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Đi Học",
+        "figmaId": "3857:82202",
+        "layer": "Thẻ chỉ số · Đi Học",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Đi Học",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "11",
+         "Đơn vị": "%",
+         "Tiêu đề": "Đi Học",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CHS-ST.TC07",
       "CHS-ST.TC09"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.11",
@@ -241,14 +587,51 @@
      "spec": "`Bài Tập Về Nhà` | Công thức thẻ `BTVN` của Trang chủ, chỉ tính BTVN được giao trong khoảng Thời gian của Tập lớp trong khoảng. | `%`, 1 chữ số thập phân, bỏ `.0`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Tỉ lệ",
+        "figmaId": "3857:82184",
+        "layer": "Tỉ lệ",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Bài Tập Về Nhà",
+        "figmaId": "3857:82890",
+        "layer": "Thẻ chỉ số · Bài Tập Về Nhà",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Bài Tập Về Nhà",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "9",
+         "Đơn vị": "%",
+         "Tiêu đề": "Bài Tập Về Nhà",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CHS-ST.TC07",
       "CHS-ST.TC09"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.12",
@@ -257,14 +640,51 @@
      "spec": "`Lên Kỳ` | Công thức thẻ `Lên Kỳ` của Trang chủ: trung bình tỷ lệ lên kỳ từng lớp (nhánh Hoàn thành / chưa hoàn thành) của Tập lớp trong khoảng, mỗi lớp trọng số bằng nhau. | `%`, 1 chữ số thập phân, bỏ `.0`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Tỉ lệ",
+        "figmaId": "3857:82184",
+        "layer": "Tỉ lệ",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Lên Kỳ",
+        "figmaId": "3857:82899",
+        "layer": "Thẻ chỉ số · Lên Kỳ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lên Kỳ",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "68",
+         "Đơn vị": "%",
+         "Tiêu đề": "Lên Kỳ",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CHS-ST.TC07",
       "CHS-ST.TC09"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.13",
@@ -273,7 +693,44 @@
      "spec": "`Tổng Doanh Thu Lớp` | Tổng học phí **đã đóng** của Tập lớp trong khoảng (theo học phí gắn lớp), ngày ghi nhận học phí trong khoảng Thời gian. Không tính học phí chưa thu. | `x.xxx.xxx đ`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Doanh thu",
+        "figmaId": "3857:82212",
+        "layer": "Doanh thu",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Tổng Doanh Thu Lớp",
+        "figmaId": "3857:82968",
+        "layer": "Thẻ chỉ số · Tổng Doanh Thu Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tổng Doanh Thu Lớp",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "221.203.000",
+         "Đơn vị": "đ",
+         "Tiêu đề": "Tổng Doanh Thu Lớp",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CHS-ST.TC03",
@@ -281,7 +738,7 @@
       "CHS-ST.TC09"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CHS-ST.A01.14",
@@ -290,7 +747,44 @@
      "spec": "`Doanh Thu Trung Bình` | `Tổng Doanh Thu Lớp / Tổng Số Lớp`, làm tròn đến đồng. `Tổng Số Lớp = 0` → `0 đ`. | `x.xxx.xxx đ`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Doanh thu",
+        "figmaId": "3857:82212",
+        "layer": "Doanh thu",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Doanh Thu Trung Bình",
+        "figmaId": "3857:82969",
+        "layer": "Thẻ chỉ số · Doanh Thu Trung Bình",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Doanh Thu Trung Bình",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "13.011.941",
+         "Đơn vị": "đ",
+         "Tiêu đề": "Doanh Thu Trung Bình",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CHS-ST.TC03",
@@ -298,16 +792,46 @@
       "CHS-ST.TC09"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
+    },
+    {
+     "id": "CHS-ST.A01.15",
+     "name": "sidebar-menu-class-handler",
+     "label": "Sidebar · MENU - CLASS HANDLER",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "Sidebar · MENU - CLASS HANDLER",
+        "figmaId": "4969:25446",
+        "layer": "Sidebar · MENU - CLASS HANDLER",
+        "confidence": "cao",
+        "region": "Sidebar · MENU - CLASS HANDLER",
+        "owner": "Sidebar · MENU - CLASS HANDLER",
+        "component": "MENU - CLASS HANDLER",
+        "variant": {
+         "Trang": "Thống kê"
+        },
+        "inCode": false
+       }
+      ]
+     }
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "CHS-ST.A02",
    "name": "trang-2-dropdown-trinh-do-va-hoc-ky",
    "title": "Trang 2: Dropdown Trình độ và Học kỳ",
-   "screens": [],
+   "screens": [
+    "ch-tk-010000"
+   ],
    "screensGuessed": [
     "CH-TK-010000"
    ],
@@ -316,8 +840,52 @@
    "requirement": "class_handler_support/statistics/statistics.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": [],
-   "screensFromItems": []
+   "items": []
+  },
+  {
+   "id": "CHS-ST.F01",
+   "name": "header",
+   "title": "Header",
+   "screens": [
+    "ch-tk-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CHS-ST.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "ch-tk-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3857:81056",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Phụ Trách Lớp",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
   }
  ],
  "exceptions": [

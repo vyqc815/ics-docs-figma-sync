@@ -202,7 +202,10 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 - Chỉ nhận `.xlsx`; file khác hoặc sai cột tiêu đề → báo lỗi, không import.
 - Khác Figma: nút Import / Export mới có ở CD-KH-030340; chưa có popup kết quả import.
 
-### Trang 8: Soát lỗi bằng AI
+### Trang 8: CD-KH-060150 — Soát lỗi bằng AI
+
+![Figma mới nhất · CD-KH-060150](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-060150.png)
+
 **Mô tả:**
 
 - Nút `Soát lỗi bằng AI` cho AI rà toàn bộ câu của bài đang chọn và trả danh sách vấn đề để CD tự xử lý (**UI cần bổ sung**).

@@ -17,16 +17,590 @@
    "nodeId": "1505:20827",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/danh-sach-giao-vien/ket-qua-tim-kiem-nang-cao",
    "link": "/danh-sach-giao-vien/ket-qua-tim-kiem-nang-cao",
    "dark": "ADM-GV-010003-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "ADM-GV-01.F01",
+    "ADM-GV-01.F02",
+    "ADM-GV-01.F03"
+   ]
   }
  },
- "regions": [],
+ "regions": [
+  {
+   "id": "ADM-GV-01.F01",
+   "name": "header",
+   "title": "Header",
+   "screens": [
+    "adm-gv-010003"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-GV-01.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2223:84247",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-GV-01.F02",
+   "name": "main-scrollable-workspace",
+   "title": "Main - Scrollable Workspace",
+   "screens": [
+    "adm-gv-010003"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-GV-01.F02.01",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "1739:33295",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.02",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "1739:33298",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "Search Advanced",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.03",
+     "name": "dropdown-trung-tam",
+     "label": "Dropdown · Trung tâm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Dropdown · Trung tâm",
+        "figmaId": "4713:129443",
+        "layer": "Dropdown · Trung tâm",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Dropdown · Trung tâm",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trung tâm",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.04",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Dropdown",
+        "figmaId": "1739:33300",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng Thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.05",
+     "name": "teaching-status",
+     "label": "Teaching status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Teaching status",
+        "figmaId": "3210:30304",
+        "layer": "Teaching status",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Teaching status",
+        "component": "Teaching status",
+        "variant": {
+         "Property 1": "Training"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.06",
+     "name": "o-dinh-danh",
+     "label": "Ô định danh",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Ô định danh",
+        "figmaId": "3210:30305",
+        "layer": "Ô định danh",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Ô định danh",
+        "component": null,
+        "variant": {
+         "Có Tiền": true,
+         "Có lịch hẹn": true,
+         "Có tag": false,
+         "Có avatar": true,
+         "Tên": "gv01",
+         "Có tag thứ 2": false,
+         "Mã": "giaovien@gmail.com"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.07",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "3210:30309",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.08",
+     "name": "percent",
+     "label": "PERCENT %",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "PERCENT %",
+        "figmaId": "3210:30313",
+        "layer": "PERCENT %",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "PERCENT %",
+        "component": "PERCENT %",
+        "variant": {
+         "Property 1": "ĐN 1"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.09",
+     "name": "progress-diem-danh-gia-a-f",
+     "label": "Progress/Điểm Đánh Giá (A-F)",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Progress/Điểm Đánh Giá (A-F)",
+        "figmaId": "3210:30319",
+        "layer": "Progress/Điểm Đánh Giá (A-F)",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Progress/Điểm Đánh Giá (A-F)",
+        "component": "Progress/Điểm Đánh Giá (A-F)",
+        "variant": {
+         "Property 1": "A nhỏ",
+         "Size": "36x32"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.10",
+     "name": "lich-giao-vien-dang-ky",
+     "label": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "figmaId": "3210:30321",
+        "layer": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "component": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "variant": {
+         "Icon": "Lịch",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.11",
+     "name": "ghi-chu",
+     "label": "GHI CHÚ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "GHI CHÚ",
+        "figmaId": "3210:30324",
+        "layer": "GHI CHÚ",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "GHI CHÚ",
+        "component": "GHI CHÚ",
+        "variant": {
+         "Property 1": "Có Ghi chú",
+         "Property 2": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.12",
+     "name": "arrow-detail",
+     "label": "ARROW DETAIL",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "ARROW DETAIL",
+        "figmaId": "3210:30325",
+        "layer": "ARROW DETAIL",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "ARROW DETAIL",
+        "component": "ARROW DETAIL",
+        "variant": {
+         "Property 1": "Arrow detail (Default)",
+         "Property 2": "No"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.13",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Mouse click",
+        "figmaId": "3210:30349",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.14",
+     "name": "lop-hoc",
+     "label": "Lớp học",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Lớp học",
+        "figmaId": "3210:30370",
+        "layer": "Lớp học",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Lớp học",
+        "component": "Lớp học",
+        "variant": {
+         "Property 1": "Có Lớp"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GV-01.F02.15",
+     "name": "phan-trang",
+     "label": "Phân Trang",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Phân Trang",
+        "figmaId": "3210:30597",
+        "layer": "Phân Trang",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Phân Trang",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-GV-01.F03",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-gv-010003"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-GV-01.F03.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010003": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:236558",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Giáo viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
  "exceptions": [],
  "flows": [],
  "testcases": [],

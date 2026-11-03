@@ -32,91 +32,108 @@ Requirement: `curriculum_management_requirement/category_management/category_man
 
 ### `A01` Trang 1: Danh sách danh mục
 
-Frame: chưa có (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
+Frame: `CD-DM-010000` (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Form thêm danh mục
 
-Frame: chưa có (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
+Frame: `CD-DM-010000` (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | id-danh-muc-tam-thoi |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | subject-id |  |  | — |  | `TC03`, `TC04`, `TC05`, `TC18`, `TC19`, `TC24` | Chưa sync | QC |
-| `A02.03` | ten-danh-muc |  |  | — |  | `TC01`, `TC02`, `TC03` | Chưa sync | QC |
-| `A02.04` | mo-ta-danh-muc |  |  | — |  | `TC01`, `TC02` | Chưa sync | QC |
-| `A02.05` | so-khoa-hoc |  |  | — |  | `TC01`, `TC02`, `TC08` | Chưa sync | QC |
-| `A02.06` | trang-thai |  |  | — |  | `TC02`, `TC03`, `TC04`, `TC05`, `TC08`, `TC10`, `TC11`, `TC14`, `TC18`, `TC21`, `TC22`, `TC23`, `TC24`, `TC26` | Chưa sync | QC |
+| `A02.01` | id-danh-muc-tam-thoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.02` | subject-id | `Atom/Status` Size=M | `3065:53348` Atom/Status | — |  | `TC03`, `TC04`, `TC05`, `TC18`, `TC19`, `TC24` | Khớp | QC |
+| `A02.03` | ten-danh-muc |  | `3065:53290` tên danh mục | — |  | `TC01`, `TC02`, `TC03` | Khớp | QC |
+| `A02.04` | mo-ta-danh-muc |  | `3065:53292` Mô tả danh mục | — |  | `TC01`, `TC02` | Khớp | QC |
+| `A02.05` | so-khoa-hoc |  | `3065:53296` Số khoá học | — |  | `TC01`, `TC02`, `TC08` | Khớp | QC |
+| `A02.06` | trang-thai | `Atom/Status` Size=M; `DD/Molecule/Trigger` Size=XS, State=Default | `3065:53785` DD/Molecule/Trigger; `3065:53348` Atom/Status | — |  | `TC02`, `TC03`, `TC04`, `TC05`, `TC08`, `TC10`, `TC11`, `TC14`, `TC18`, `TC21`, `TC22`, `TC23`, `TC24`, `TC26` | Khớp | QC |
+| `A02.07` | id-badge | `Atom/ID Badge` Type=7-digit, Size=26H | `3065:53304` ID Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `A02.08` | atom-number-badge | `Atom/Number Badge` Type=Kỳ, Size=Medium, State=Active | `3065:53310` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `A02.09` | atom-status | `Atom/Status` Size=M | `3065:53314` Atom/Status | — |  |  | Chỉ có trên Figma | Figma |
+| `A02.10` | arrow-detail | `ARROW DETAIL`  | `3065:53318` ARROW DETAIL | — |  |  | Chỉ có trên Figma | Figma |
+| `A02.11` | dd-organism-menu-panel | `DD/Organism/Menu Panel` Type=Action | `3065:53331` DD/Organism/Menu Panel | — |  |  | Chỉ có trên Figma | Figma |
 
 ### `A03` Popup Kích hoạt công khai danh mục
 
-Frame: chưa có (tool đoán:CD-DM-010060) · Nguồn nội dung: QC
+Frame: `CD-DM-010060` (tool đoán:CD-DM-010060) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | thong-tin-danh-muc |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | chon-cach-lay-subject-id |  |  | — |  |  | Chưa sync | QC |
-| `A03.03` | tu-dong-tao |  |  | — |  | `TC04`, `TC10`, `TC24` | Chưa sync | QC |
-| `A03.04` | loi-tu-dong-tao |  |  | — |  |  | Chưa sync | QC |
-| `A03.05` | nhap-thu-cong |  |  | — |  | `TC05`, `TC10` | Chưa sync | QC |
-| `A03.06` | subject-id-hop-le |  |  | — |  | `TC05` | Chưa sync | QC |
-| `A03.07` | subject-id-bi-trung |  |  | — |  |  | Chưa sync | QC |
-| `A03.08` | subject-id-sai-dinh-dang |  |  | — |  |  | Chưa sync | QC |
-| `A03.09` | huong-dan-nhap |  |  | — |  |  | Chưa sync | QC |
-| `A03.10` | xac-nhan |  |  | — |  | `TC03`, `TC04`, `TC05`, `TC10`, `TC11`, `TC18`, `TC19`, `TC20`, `TC22`, `TC23`, `TC24` | Chưa sync | QC |
-| `A03.11` | huy-dong |  |  | — |  |  | Chưa sync | QC |
+| `A03.01` | thong-tin-danh-muc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | chon-cach-lay-subject-id |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.03` | tu-dong-tao |  | `6025:210789` Sau khi xác nhận, danh mục sẽ chuyển sang trạng thái Công khai và không được chỉnh sửa ID này | — |  | `TC04`, `TC10`, `TC24` | Khớp | QC |
+| `A03.04` | loi-tu-dong-tao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | nhap-thu-cong |  |  | — |  | `TC05`, `TC10` | Chưa khớp tự động | QC |
+| `A03.06` | subject-id-hop-le |  |  | — |  | `TC05` | Chưa khớp tự động | QC |
+| `A03.07` | subject-id-bi-trung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.08` | subject-id-sai-dinh-dang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.09` | huong-dan-nhap |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.10` | xac-nhan |  | `6025:210789` Sau khi xác nhận, danh mục sẽ chuyển sang trạng thái Công khai và không được chỉnh sửa ID này; `1854:20955` CD-DM-010060 — Quản lý danh mục / Popup kích hoạt công khai | — |  | `TC03`, `TC04`, `TC05`, `TC10`, `TC11`, `TC18`, `TC19`, `TC20`, `TC22`, `TC23`, `TC24` | Khớp | QC |
+| `A03.11` | huy-dong | `Atom/Button` Type=Secondary, Size=Medium | `I6025:210790;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 
 ### `A04` Popup Chi tiết danh mục
 
-Frame: chưa có (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
+Frame: `CD-DM-010000` (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A05` Tab Tổng quan
 
-Frame: chưa có (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
+Frame: `CD-DM-010010` (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | danh-sach-khoa-hoc |  |  | — |  |  | Chưa sync | QC |
-| `A05.02` | tim-kiem-khoa-hoc |  |  | — |  |  | Chưa sync | QC |
-| `A05.03` | them-khoa-hoc |  |  | — |  | `TC08` | Chưa sync | QC |
-| `A05.04` | id-khoa-hoc-tam-thoi |  |  | — |  |  | Chưa sync | QC |
-| `A05.05` | id-cong-khai-cua-khoa-hoc |  |  | — |  |  | Chưa sync | QC |
-| `A05.06` | ten-khoa-hoc |  |  | — |  |  | Chưa sync | QC |
-| `A05.07` | mo-ta-khoa-hoc |  |  | — |  | `TC08` | Chưa sync | QC |
-| `A05.08` | so-ky |  |  | — |  | `TC09` | Chưa sync | QC |
-| `A05.09` | cap-do |  |  | — |  | `TC08` | Chưa sync | QC |
-| `A05.10` | trang-thai |  |  | — |  | `TC02`, `TC03`, `TC04`, `TC05`, `TC08`, `TC10`, `TC11`, `TC14`, `TC18`, `TC21`, `TC22`, `TC23`, `TC24`, `TC26` | Chưa sync | QC |
+| `A05.01` | danh-sach-khoa-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.02` | tim-kiem-khoa-hoc | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `2702:46349` Atom/Input | — |  |  | Khớp | QC |
+| `A05.03` | them-khoa-hoc | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `I2702:48230;5056:365849` Placeholder | — |  | `TC08` | Khớp | QC |
+| `A05.04` | id-khoa-hoc-tam-thoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.05` | id-cong-khai-cua-khoa-hoc |  | `1725:17395` Nhập mô tả khoá học | — |  |  | Khớp | QC |
+| `A05.06` | ten-khoa-hoc |  | `1725:17378` Tên khoá học | — |  |  | Khớp | QC |
+| `A05.07` | mo-ta-khoa-hoc |  | `1725:17380` Mô tả khoá học | — |  | `TC08` | Khớp | QC |
+| `A05.08` | so-ky |  | `1725:17382` Số kỳ | — |  | `TC09` | Khớp | QC |
+| `A05.09` | cap-do |  | `1725:17384` Cấp độ | — |  | `TC08` | Khớp | QC |
+| `A05.10` | trang-thai |  | `1725:17386` Trạng thái; `1725:17395` Nhập mô tả khoá học | — |  | `TC02`, `TC03`, `TC04`, `TC05`, `TC08`, `TC10`, `TC11`, `TC14`, `TC18`, `TC21`, `TC22`, `TC23`, `TC24`, `TC26` | Khớp | QC |
 
 ### `A06` Popup Kích hoạt công khai khóa học
 
-Frame: chưa có (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
+Frame: `CD-DM-010000` (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A07` Tab Mindset, Tiêu chuẩn giáo trình và Hướng dẫn giảng dạy
 
-Frame: chưa có (tool đoán:CD-DM-010020, CD-DM-010030, CD-DM-010040) · Nguồn nội dung: QC
+Frame: `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040` (tool đoán:CD-DM-010020, CD-DM-010030, CD-DM-010040) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | tim-kiem |  |  | — |  | `TC25` | Chưa sync | QC |
-| `A07.02` | package-category |  |  | — |  | `TC12`, `TC17` | Chưa sync | QC |
-| `A07.03` | action-item |  |  | — |  | `TC12`, `TC13`, `TC17` | Chưa sync | QC |
-| `A07.04` | xem-truoc-noi-dung |  |  | — |  |  | Chưa sync | QC |
-| `A07.05` | luu-ap-dung |  |  | — |  | `TC13`, `TC17` | Chưa sync | QC |
+| `A07.01` | tim-kiem | `Atom/Input` State=Search, Kiểu=Chuẩn | `I2702:46381;1739:32505` Tìm nội dung... | — |  | `TC25` | Khớp một phần | QC |
+| `A07.02` | package-category |  |  | — |  | `TC12`, `TC17` | Chưa khớp tự động | QC |
+| `A07.03` | action-item |  |  | — |  | `TC12`, `TC13`, `TC17` | Chưa khớp tự động | QC |
+| `A07.04` | xem-truoc-noi-dung |  | `1758:5155` Section - Cột phải: Xem trước nội dung chi tiết | — |  |  | Khớp một phần | QC |
+| `A07.05` | luu-ap-dung |  |  | — |  | `TC13`, `TC17` | Chưa khớp tự động | QC |
 
 ### `A08` Popup Áp dụng thành công
 
-Frame: chưa có (tool đoán:CD-DM-010057) · Nguồn nội dung: QC
+Frame: `CD-DM-010057` (tool đoán:CD-DM-010057) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
+
+### `F01` (ngoài Body)
+
+Frame: `CD-DM-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | sidebar-menu-cd | `MENU - CD`  | `4915:257163` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | account | `ACCOUNT` Size=Default | `2223:86161` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | component-2 | `Switch Center`  | `4273:160833` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `3065:53784` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | add-new-bar-them-noi-dung-khoa-hoc-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `3065:53528` Add New Bar · Thêm nội dung khoá học mới | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -177,7 +194,7 @@ Frame: chưa có (tool đoán:CD-DM-010057) · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa sync (32): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`, `A03.11`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A05.09`, `A05.10`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`
+- Chưa khớp tự động (14): `A02.01`, `A03.01`, `A03.02`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A05.01`, `A05.04`, `A07.02`, `A07.03`, `A07.05`
 - Frame Figma chưa có requirement (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Thiếu prototype link đi vào (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Phân loại cần design duyệt (3): `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`

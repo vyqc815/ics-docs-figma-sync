@@ -30,36 +30,63 @@ Requirement: `course_management/course_management.md` — Quản lý khoá học
 
 ### `A01` Trang 1: Danh sách khoá học
 
-Frame: chưa có (tool đoán:CD-KH-010000) · Nguồn nội dung: QC
+Frame: `CD-KH-010000` (tool đoán:CD-KH-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Trang 2: Menu chi tiết khoá học
 
-Frame: chưa có (tool đoán:CD-KH-010000) · Nguồn nội dung: QC
+Frame: `CD-KH-010000` (tool đoán:CD-KH-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A03` Trang 3: Popup xác nhận Công khai khoá học
 
-Frame: chưa có (tool đoán:CD-KH-010010) · Nguồn nội dung: QC
+Frame: `CD-KH-010010` (tool đoán:CD-KH-010010) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A04` Trang 4: Popup Nhân bản khoá học
 
-Frame: chưa có (tool đoán:CD-KH-010000) · Nguồn nội dung: QC
+Frame: `CD-KH-010010`, `CD-KH-010013` (tool đoán:CD-KH-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | tieu-de |  |  | — |  | `TC26` | Chưa có thiết kế | QC |
-| `A04.02` | noi-dung |  |  | — |  | `TC14`, `TC15`, `TC17`, `TC26`, `TC27`, `TC28` | Chưa có thiết kế | QC |
-| `A04.03` | nut |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.04` | toast-thanh-cong |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.05` | toast-loi |  |  | — |  | `TC14`, `TC15`, `TC16`, `TC17` | Chưa có thiết kế | QC |
+| `A04.01` | tieu-de | `Popup/Header`  | `I2527:168013;2514:153357` Tiêu đề | — |  | `TC26` | Khớp | QC |
+| `A04.02` | noi-dung | `Atom/Input` State=Default, Kiểu=Chuẩn | `I3004:49814;3004:58628;1048:1264` Tìm nội dung... | — |  | `TC14`, `TC15`, `TC17`, `TC26`, `TC27`, `TC28` | Khớp | QC |
+| `A04.03` | nut | `Atom/Button` Type=Secondary, Size=Medium; `Popup/Footer` Type=Hai nút | `2527:168019` Popup/Footer; `I2527:168019;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+| `A04.04` | toast-thanh-cong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.05` | toast-loi |  |  | — |  | `TC14`, `TC15`, `TC16`, `TC17` | Chưa khớp tự động | QC |
+
+### `F01` (ngoài Body)
+
+Frame: `CD-KH-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | sidebar-menu-cd | `MENU - CD`  | `4915:256174` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | account | `ACCOUNT` Size=Default | `2223:85233` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | component-2 | `Switch Center`  | `4273:160608` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `2706:20428` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | dd-molecule-trigger | `DD/Molecule/Trigger` Size=XS, State=Default | `2706:19433` DD/Molecule/Trigger | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | add-new-bar-them-noi-dung-khoa-hoc-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2702:48160` Add New Bar · Thêm nội dung khoá học mới | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | dd-organism-menu-panel | `DD/Organism/Menu Panel` Type=Single | `2032:5244` DD/Organism/Menu Panel | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F02` Row
+
+Frame: `CD-KH-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F02.01` | id-badge | `Atom/ID Badge` Type=7-digit, Size=26H | `1994:25857` ID Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.02` | atom-badge | `Atom/Badge`  | `2014:3933` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.03` | atom-number-badge | `Atom/Number Badge` Type=Kỳ, Size=Medium, State=Active | `2065:22378` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.04` | atom-status | `Atom/Status` Size=M | `1474:15136` Atom/Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.05` | arrow-detail | `ARROW DETAIL`  | `1391:14535` ARROW DETAIL | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.06` | dd-organism-menu-panel | `DD/Organism/Menu Panel` Type=Action | `2706:42930` DD/Organism/Menu Panel | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -133,6 +160,7 @@ Frame: chưa có (tool đoán:CD-KH-010000) · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
+- Chưa khớp tự động (2): `A04.04`, `A04.05`
 - Frame Figma chưa có requirement (2): `CD-KH-010010`, `CD-KH-010013`
 - Testcase trỏ mã không tồn tại (2): `TC24`, `TC25`
 - REQ/EX chưa có testcase (5): `REQ03`, `REQ04`, `EX03`, `EX08`, `EX12`

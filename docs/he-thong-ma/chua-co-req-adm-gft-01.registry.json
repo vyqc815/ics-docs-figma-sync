@@ -17,7 +17,7 @@
    "nodeId": "3857:85663",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/gift-code/danh-sach-gift-code",
    "link": "/gift-code/danh-sach-gift-code",
    "dark": "ADM-GFT-010000-DK",
@@ -25,7 +25,9 @@
     "ADM-GFT-010001"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "ADM-GFT-01.F01"
+   ]
   },
   "ADM-GFT-010001": {
    "id": "ADM-GFT-010001",
@@ -40,7 +42,7 @@
    "nodeId": "5165:186783",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/gift-code/danh-sach-gift-code/da-sao-chep-ma",
    "link": "/gift-code/danh-sach-gift-code/da-sao-chep-ma",
    "dark": null,
@@ -48,7 +50,9 @@
     "ADM-GFT-010000"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "ADM-GFT-01.F01"
+   ]
   },
   "ADM-GFT-010010": {
    "id": "ADM-GFT-010010",
@@ -63,7 +67,7 @@
    "nodeId": "3977:76869",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-gft-010010",
    "link": "/gift-code/danh-sach-gift-code?popup=ADM-GFT-010010",
    "dark": "ADM-GFT-010010-DK",
@@ -84,7 +88,7 @@
    "nodeId": "3977:76954",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-gft-010020",
    "link": "/gift-code/danh-sach-gift-code?popup=ADM-GFT-010020",
    "dark": "ADM-GFT-010020-DK",
@@ -93,7 +97,297 @@
    "regions": []
   }
  },
- "regions": [],
+ "regions": [
+  {
+   "id": "ADM-GFT-01.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-gft-010000",
+    "adm-gft-010001"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-GFT-01.F01.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gft-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:240264",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Tools / gift code"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GFT-01.F01.02",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gft-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3857:85799",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GFT-01.F01.03",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gft-010000": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "3977:76312",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GFT-01.F01.04",
+     "name": "tim-kiem-theo-loai",
+     "label": "Tìm kiếm theo loại",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gft-010000": [
+       {
+        "term": "Tìm kiếm theo loại",
+        "figmaId": "3977:76492",
+        "layer": "Tìm kiếm theo loại",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tìm kiếm theo loại",
+        "component": "Atom/Input",
+        "variant": {
+         "Text": "Tìm nội dung...",
+         "Loại": "Gift code",
+         "State": "Search theo loại",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GFT-01.F01.05",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gft-010000": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "3977:76515",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Time": "4 ngày trước",
+         "Name": "Trần Minh Khoa",
+         "Label": "Th2, 14.09.2026",
+         "Icon": false,
+         "Type": "Date không có thứ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GFT-01.F01.06",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gft-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "3977:76520",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "6",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GFT-01.F01.07",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gft-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "3977:76526",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Đã dùng",
+         "Variant": "Success",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GFT-01.F01.08",
+     "name": "phan-trang",
+     "label": "Phân Trang",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gft-010000": [
+       {
+        "term": "Phân Trang",
+        "figmaId": "3977:76485",
+        "layer": "Phân Trang",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Phân Trang",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GFT-01.F01.09",
+     "name": "molecule-tooltip",
+     "label": "Molecule/Tooltip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gft-010001": [
+       {
+        "term": "Molecule/Tooltip",
+        "figmaId": "5165:187648",
+        "layer": "Molecule/Tooltip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Tooltip",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Đã sao chép mã BD3194",
+         "Property 1": "Trạng thái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
  "exceptions": [],
  "flows": [],
  "testcases": [],

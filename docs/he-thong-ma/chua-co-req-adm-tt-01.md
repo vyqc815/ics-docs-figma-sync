@@ -20,6 +20,20 @@
 
 ## 4. Khu vực và item
 
+### `F01` (ngoài Body)
+
+Frame: `ADM-TT-010000`, `ADM-TT-010001` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | dropdown-trung-tam | `DD/Molecule/Trigger` Size=XS, State=Default | `4713:129610` Dropdown · Trung tâm | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Active | `4273:155705` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | lich-giao-vien-dang-ky | `LỊCH GIÁO VIÊN ĐĂNG KÝ` State=Default | `4273:155729` LỊCH GIÁO VIÊN ĐĂNG KÝ | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | atom-object-chip | `Atom/Object Chip` Type=System | `4273:155733` Atom/Object Chip | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | account | `ACCOUNT` Size=Default | `4273:155326` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:252614` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | minh-hoa | `Empty State / Illustration` Type=Không tìm thấy | `4273:156244` Minh hoạ | — |  |  | Chỉ có trên Figma | Figma |
+
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

@@ -11,7 +11,10 @@
 - Hiển thị thông tin của đúng danh mục được chọn, gồm 4 tab: `Tổng quan`, `Mindset`, `Tiêu chuẩn giáo trình`, `Hướng dẫn giảng dạy`.
 - Tab mặc định khi mở popup là `Tổng quan`.
 
-### Trang 2: Tab Tổng quan
+### Trang 2: CD-DM-010010 — Tab Tổng quan
+
+![Figma mới nhất · CD-DM-010010](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010010.png)
+
 ![Trang 2](./images/02-category-overview.png)
 
 *Tab Tổng quan và danh sách khóa học thuộc danh mục — nhấn để xem ảnh gốc*

@@ -52,176 +52,191 @@ Requirement: `course_management/homework-test/homework-test.md` — [CD] Bài t�
 
 ### `A01` Khung màn, cây kỳ và bài
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `CD-KH-060100`, `CD-KH-060200` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | tab-btvn |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.02` | tab-kiem-tra |  |  | — |  | `TC03` | Chưa sync | QC |
-| `A01.03` | o-tim-bai-hoc-tim-bai-kiem-tra |  |  | — |  |  | Chưa sync | QC |
-| `A01.04` | chon-bai |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.05` | ky-cong-khai-vo-hieu |  |  | — | governed-by `REQ09` |  | Chưa sync | QC |
+| `A01.01` | tab-btvn | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `I5491:347473;2177:28936` Nhiệm vụ con | có |  | `TC01` | Khớp | QC |
+| `A01.02` | tab-kiem-tra | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I5491:347475;2177:28928` Chi tiết NV | có |  | `TC03` | Khớp | QC |
+| `A01.03` | o-tim-bai-hoc-tim-bai-kiem-tra | `Atom/Input` State=Search, Kiểu=S | `5491:346599` Atom/Input | có |  |  | Khớp | QC |
+| `A01.04` | chon-bai |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
+| `A01.05` | ky-cong-khai-vo-hieu |  |  | — | governed-by `REQ09` |  | Chưa khớp tự động | QC |
+| `A01.06` | tab-btvn | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `5491:347473` Tab · BTVN | có |  |  | Chỉ có trên Figma | Figma |
+| `A01.07` | tab-kiem-tra | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `5491:347475` Tab · Kiểm tra | có |  |  | Chỉ có trên Figma | Figma |
+| `A01.08` | tab-btvn | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `5491:348636` Tab · BTVN | có |  |  | Chỉ có trên Figma | Figma |
+| `A01.09` | tab-kiem-tra | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `5491:348638` Tab · Kiểm tra | có |  |  | Chỉ có trên Figma | Figma |
 
 ### `A02` Bộ câu hỏi: thanh công cụ và thẻ tổng quan
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `CD-KH-030340`, `CD-KH-060100`, `CD-KH-060200` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | tieu-de |  |  | — |  | `TC07` | Chưa có thiết kế | QC |
-| `A02.02` | import-excel-export-excel |  |  | — | see `A07` |  | Chưa có thiết kế | QC |
-| `A02.03` | preview-mobile |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A02.04` | them-cau-hoi |  |  | — | opens `A05` |  | Chưa có thiết kế | QC |
-| `A02.05` | tao-cau-hoi-bang-ai |  |  | — | opens `A09` |  | Chưa có thiết kế | QC |
-| `A02.06` | soat-loi-bang-ai |  |  | — | see `A08` |  | Chưa có thiết kế | QC |
-| `A02.07` | the-tong-so-cau |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A02.08` | the-thoi-gian-lam-bai |  |  | — |  | `TC08` | Chưa có thiết kế | QC |
-| `A02.09` | the-co-cau-theo-dang-cau |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A02.01` | tieu-de |  | `5491:357669` Tiêu đề | — |  | `TC07` | Khớp | QC |
+| `A02.02` | import-excel-export-excel | `Atom/Button` Type=Outlined, Size=Small | `5491:357673` Atom/Button; `5491:357675` Atom/Button | — | see `A07` |  | Khớp | QC |
+| `A02.03` | preview-mobile | `Atom/Button` Type=Outlined, Size=Small | `5491:346417` Atom/Button | có |  |  | Requirement ghi thiếu, Figma đã có | QC |
+| `A02.04` | them-cau-hoi | `Atom/Button` Type=Outlined, Size=Small | `5614:35293` Nút Thêm câu hỏi | — | opens `A05` |  | Khớp | QC |
+| `A02.05` | tao-cau-hoi-bang-ai | `Atom/Button` Type=Primary, Size=Small | `5491:357677` Nút Generate | — | opens `A09` |  | Khớp | QC |
+| `A02.06` | soat-loi-bang-ai | `Atom/Button` Type=Secondary, Size=Small | `5491:346424` Atom/Button | có | see `A08` |  | Khớp một phần | QC |
+| `A02.07` | the-tong-so-cau |  | `5614:35314` Tổng số câu | — |  |  | Khớp | QC |
+| `A02.08` | the-thoi-gian-lam-bai |  | `5614:35324` Thời gian làm bài | — |  | `TC08` | Khớp một phần | QC |
+| `A02.09` | the-co-cau-theo-dang-cau |  | `5614:35329` Cơ cấu theo dạng câu | — |  |  | Khớp | QC |
 
 ### `A03` Bảng câu hỏi
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `CD-KH-030340`, `CD-KH-060100`, `CD-KH-060200` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | cot |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | dap-an-dung |  |  | — |  |  | Chưa sync | QC |
-| `A03.03` | cau-hoi-con |  |  | — |  | `TC09` | Chưa sync | QC |
-| `A03.04` | tag-ai |  |  | — |  |  | Chưa sync | QC |
-| `A03.05` | o-tim-cau-hoi |  |  | — |  |  | Chưa sync | QC |
-| `A03.06` | loc-loai-cau |  |  | — |  | `TC10` | Chưa sync | QC |
-| `A03.07` | loc-kien-thuc-ky-nang |  |  | — |  |  | Chưa sync | QC |
-| `A03.08` | checkbox |  |  | — |  |  | Chưa sync | QC |
-| `A03.09` | menu |  |  | — | opens `A06` |  | Chưa sync | QC |
-| `A03.10` | nhap-nhanh-cuoi-bang |  |  | — | opens `A05` |  | Chưa sync | QC |
-| `A03.11` | phan-trang |  |  | — |  |  | Chưa sync | QC |
+| `A03.01` | cot |  | `5491:357722` STT; `5491:357670` Bộ câu hỏi | — |  |  | Khớp | QC |
+| `A03.02` | dap-an-dung |  | `5609:33851` Đáp án đúng | — |  |  | Khớp | QC |
+| `A03.03` | cau-hoi-con | `Atom/Tag` Size=Small | `5491:357885` Atom/Tag; `5609:33883` 7.1 | — |  | `TC09` | Khớp | QC |
+| `A03.04` | tag-ai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | o-tim-cau-hoi | `Atom/Input` State=Search, Kiểu=S | `5491:346420` Atom/Input | có |  |  | Khớp một phần | QC |
+| `A03.06` | loc-loai-cau | `DD/Molecule/Trigger` Size=S, State=Default | `5491:357687` DD/Molecule/Trigger | — |  | `TC10` | Khớp | QC |
+| `A03.07` | loc-kien-thuc-ky-nang | `DD/Molecule/Trigger` Size=S, State=Default | `5491:357699` DD/Molecule/Trigger | — |  |  | Khớp | QC |
+| `A03.08` | checkbox | `Checkbox` Size=16 | `5491:357720` Checkbox | — |  |  | Khớp | QC |
+| `A03.09` | menu |  |  | — | opens `A06` |  | Chưa khớp tự động | QC |
+| `A03.10` | nhap-nhanh-cuoi-bang | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `5491:346577` Molecule/Add New Bar | có | opens `A05` |  | Khớp một phần | QC |
+| `A03.11` | phan-trang |  | `5491:346579` Footer · Phân trang | có |  |  | Khớp một phần | QC |
 
 ### `A04` Bài chưa có câu hỏi
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `CD-KH-060130` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A04.02` | them-cau-hoi |  |  | — | opens `A05` |  | Chưa sync | QC |
-| `A04.03` | tao-cau-hoi-bang-ai |  |  | — | opens `A09` |  | Chưa sync | QC |
-| `A04.04` | import-excel |  |  | — |  |  | Chưa sync | QC |
+| `A04.01` | tieu-de |  | `5491:348903` Tiêu đề | có |  |  | Khớp | QC |
+| `A04.02` | them-cau-hoi | `Atom/Button` Type=Outlined Icon, Size=Small | `5491:348908` Nút Thêm từ (dropdown) | có | opens `A05` |  | Khớp | QC |
+| `A04.03` | tao-cau-hoi-bang-ai | `Atom/Button` Type=Secondary, Size=Medium | `5491:349773` Atom/Button | có | opens `A09` |  | Khớp | QC |
+| `A04.04` | import-excel | `Atom/Button` Type=Outlined, Size=Small | `5672:62094` Nút Import Excel | có |  |  | Khớp | QC |
 
 ### `A05` Popup Chọn loại câu
 
-Frame: chưa có (tool đoán:CD-KH-030348) · Nguồn nội dung: QC
+Frame: `CD-KH-060110`, `CD-KH-030348` (tool đoán:CD-KH-030348) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | trac-nghiem |  |  | — |  |  | Chưa sync | QC |
-| `A05.02` | sap-xep |  |  | — |  | `TC15` | Chưa sync | QC |
-| `A05.03` | noi-tu |  |  | — |  |  | Chưa sync | QC |
-| `A05.04` | noi |  |  | — |  |  | Chưa sync | QC |
-| `A05.05` | doc |  |  | — |  |  | Chưa sync | QC |
-| `A05.06` | viet |  |  | — |  |  | Chưa sync | QC |
-| `A05.07` | hinh-anh |  |  | — |  |  | Chưa sync | QC |
-| `A05.08` | cau-hoi-con |  |  | — |  |  | Chưa sync | QC |
+| `A05.01` | trac-nghiem |  | `5491:348733` Trắc nghiệm | — |  |  | Khớp | QC |
+| `A05.02` | sap-xep |  | `5491:348746` Sắp xếp | — |  | `TC15` | Khớp | QC |
+| `A05.03` | noi-tu |  | `5491:348754` Nối từ | — |  |  | Khớp | QC |
+| `A05.04` | noi |  | `5491:348763` Nói | — |  |  | Khớp | QC |
+| `A05.05` | doc |  | `5491:348772` Đọc | — |  |  | Khớp | QC |
+| `A05.06` | viet |  | `5491:348780` Viết | — |  |  | Khớp | QC |
+| `A05.07` | hinh-anh |  | `5491:348788` Hình ảnh | — |  |  | Khớp | QC |
+| `A05.08` | cau-hoi-con |  | `5491:348798` Câu hỏi con | — |  |  | Khớp | QC |
 
 ### `A06` Popup Soạn câu hỏi
 
-Frame: chưa có (tool đoán:CD-KH-060121, CD-KH-060122, CD-KH-060123, CD-KH-060124, CD-KH-060125) · Nguồn nội dung: QC
+Frame: `CD-KH-060120`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125` (tool đoán:CD-KH-060121, CD-KH-060122, CD-KH-060123, CD-KH-060124, CD-KH-060125) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | tieu-de |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.02` | so-cau |  |  | — |  | `TC18`, `TC19` | Chưa có thiết kế | QC |
-| `A06.03` | loai-cau |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.04` | kien-thuc-ky-nang |  |  | — |  | `TC18` | Chưa có thiết kế | QC |
-| `A06.05` | huong-dan |  |  | — |  | `TC20` | Chưa có thiết kế | QC |
-| `A06.06` | noi-dung-cau-hoi |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.07` | hinh-anh-am-thanh |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.08` | dap-an |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.09` | giai-thich-dap-an |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.10` | huy-luu-cau-hoi |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.11` | trac-nghiem |  |  | — |  | `TC17` | Chưa có thiết kế | QC |
-| `A06.12` | sap-xep |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.13` | noi-tu |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.14` | noi |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.15` | doc-viet-hinh-anh |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.16` | cau-hoi-con |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A06.01` | tieu-de | `Popup/Header`  | `I5491:348806;2514:153353` Tiêu đề | — |  |  | Khớp | QC |
+| `A06.02` | so-cau | `Atom/Label`  | `5672:62120` Atom/Label | — |  | `TC18`, `TC19` | Khớp | QC |
+| `A06.03` | loai-cau | `Atom/Label`  | `5491:348822` Atom/Label | — |  |  | Khớp | QC |
+| `A06.04` | kien-thuc-ky-nang | `Atom/Label`  | `5672:62126` Atom/Label | — |  | `TC18` | Khớp | QC |
+| `A06.05` | huong-dan | `Atom/Label`  | `5491:348840` Atom/Label | — |  | `TC20` | Khớp | QC |
+| `A06.06` | noi-dung-cau-hoi | `Atom/Label`  | `5491:348847` Atom/Label | — |  |  | Khớp | QC |
+| `A06.07` | hinh-anh-am-thanh | `Atom/Label`  | `5491:348851` Atom/Label | — |  |  | Khớp | QC |
+| `A06.08` | dap-an |  | `5491:348855` Field · Đáp án | — |  |  | Khớp | QC |
+| `A06.09` | giai-thich-dap-an | `Atom/Label`  | `5491:348884` Atom/Label | — |  |  | Khớp | QC |
+| `A06.10` | huy-luu-cau-hoi | `Atom/Button` Type=Primary, Size=Medium; `Atom/Button` Type=Secondary, Size=Medium | `I5491:348809;2514:153361` Atom/Button; `I5491:348809;2514:153363` Atom/Button | — |  |  | Khớp | QC |
+| `A06.11` | trac-nghiem | `Atom/Input` State=Disabled, Kiểu=S | `5491:348825` Atom/Input | — |  | `TC17` | Khớp một phần | QC |
+| `A06.12` | sap-xep | `Atom/Input` State=Disabled, Kiểu=S | `5672:74629` Atom/Input | — |  |  | Requirement ghi thiếu, Figma đã có | QC |
+| `A06.13` | noi-tu | `Atom/Input` State=Disabled, Kiểu=S | `5672:74761` Atom/Input | — |  |  | Requirement ghi thiếu, Figma đã có | QC |
+| `A06.14` | noi | `Atom/Label`  | `I5491:348847;2015:30530` Label | — |  |  | Requirement ghi thiếu, Figma đã có | QC |
+| `A06.15` | doc-viet-hinh-anh | `Atom/Dropzone` Kiểu=Mặc định; `Atom/Label`  | `I5491:348852;1061:1317` Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB); `I5491:348851;2015:30530` Label | — |  |  | Requirement ghi thiếu, Figma đã có | QC |
+| `A06.16` | cau-hoi-con | `Atom/Input` State=Disabled, Kiểu=S | `5672:75144` Atom/Input | — |  |  | Requirement ghi thiếu, Figma đã có | QC |
 
 ### `A07` Import / Export Excel
 
-Frame: chưa có (tool đoán:CD-KH-060140, CD-KH-060141) · Nguồn nội dung: QC
+Frame: `CD-KH-030340` (tool đoán:CD-KH-060140, CD-KH-060141) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | cot-file |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A07.02` | export |  |  | — |  | `TC22`, `TC26` | Chưa có thiết kế | QC |
-| `A07.03` | import-dong-bat-buoc |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A07.04` | import-loi-du-lieu |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A07.05` | import-cau-trung |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A07.06` | import-thanh-cong |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A07.01` | cot-file |  | `5491:357722` STT | — |  |  | Khớp | QC |
+| `A07.02` | export | `Atom/Button` Type=Outlined, Size=Small | `I5491:357675;1430:10764` Button | — |  | `TC22`, `TC26` | Khớp | QC |
+| `A07.03` | import-dong-bat-buoc |  | `5491:357722` STT | — |  |  | Khớp | QC |
+| `A07.04` | import-loi-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.05` | import-cau-trung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.06` | import-thanh-cong |  | `5491:357722` STT | — |  |  | Khớp | QC |
 
 ### `A08` Soát lỗi bằng AI
 
-Frame: chưa có (tool đoán:CD-KH-060150) · Nguồn nội dung: QC
+Frame: `CD-KH-060150` (tool đoán:CD-KH-060150) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | pham-vi |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A08.02` | van-de-phat-hien |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A08.03` | ket-qua |  |  | — |  | `TC27`, `TC28` | Chưa có thiết kế | QC |
-| `A08.04` | xu-ly |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A08.01` | pham-vi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.02` | van-de-phat-hien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.03` | ket-qua |  |  | — |  | `TC27`, `TC28` | Chưa khớp tự động | QC |
+| `A08.04` | xu-ly |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A09` Generate bài tập bằng AI — Popup nhập yêu cầu
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `CD-KH-030341`, `CD-KH-030342` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A09.01` | tab-nhap-prompt |  |  | — |  |  | Chưa sync | QC |
-| `A09.02` | tab-chon-kien-thuc-ky-nang |  |  | — |  |  | Chưa sync | QC |
-| `A09.03` | so-cau |  |  | — |  | `TC29`, `TC31` | Chưa sync | QC |
-| `A09.04` | dang-cau-hoi |  |  | — |  |  | Chưa sync | QC |
-| `A09.05` | ghi-chu |  |  | — |  |  | Chưa sync | QC |
-| `A09.06` | huy-generate |  |  | — |  |  | Chưa sync | QC |
+| `A09.01` | tab-nhap-prompt | `Atom/Tab` State=Active, Kiểu=Khung | `5491:358445` Chế độ · Nhập prompt | — |  |  | Khớp | QC |
+| `A09.02` | tab-chon-kien-thuc-ky-nang | `Atom/Tab` State=Inactive, Kiểu=Khung | `5491:358447` Chế độ · Chọn kiến thức & kỹ năng | — |  |  | Khớp | QC |
+| `A09.03` | so-cau | `Atom/Label`  | `5491:358458` Atom/Label | — |  | `TC29`, `TC31` | Khớp | QC |
+| `A09.04` | dang-cau-hoi | `Atom/Label`  | `5491:358465` Atom/Label | — |  |  | Khớp | QC |
+| `A09.05` | ghi-chu |  | `5491:358481` Ghi chú | — |  |  | Khớp | QC |
+| `A09.06` | huy-generate | `Atom/Button` Type=Primary, Size=Medium; `Atom/Button` Type=Secondary, Size=Medium | `I5491:358433;2514:153361` Atom/Button; `I5491:358433;2514:153363` Atom/Button | — |  |  | Khớp | QC |
 
 ### `A10` Generate — Đang tạo bảng và lỗi
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `CD-KH-030344`, `CD-KH-030346` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A10.01` | dang-tao-bang-generate |  |  | — |  |  | Chưa sync | QC |
-| `A10.02` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A10.01` | dang-tao-bang-generate | `Popup/Header`  | `I5609:31773;2514:153354` Title | — |  |  | Khớp một phần | QC |
+| `A10.02` | loi |  | `5609:31815` CD-KH-030346 — Học kỳ / Kiểm tra / Generate · Lỗi; `5609:31846` Không tạo được bảng Generate. Dữ liệu bạn đã nhập vẫn được giữ, hãy thử lại. | — |  |  | Khớp một phần | QC |
 
 ### `A11` Generate — Bảng N dòng
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `CD-KH-030343` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A11.01` | dong-tom-tat |  |  | — |  |  | Chưa sync | QC |
-| `A11.02` | cot |  |  | — |  |  | Chưa sync | QC |
-| `A11.03` | thanh-chon |  |  | — |  |  | Chưa sync | QC |
-| `A11.04` | them-n-cau-da-chon |  |  | — |  | `TC37` | Chưa sync | QC |
-| `A11.05` | huy-nut |  |  | — | opens `A11` |  | Chưa sync | QC |
+| `A11.01` | dong-tom-tat |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A11.02` | cot | `DD/Molecule/Trigger` Size=S, State=Default | `5491:358961` STT; `5491:358963` Prompt | — |  |  | Khớp | QC |
+| `A11.03` | thanh-chon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A11.04` | them-n-cau-da-chon |  |  | — |  | `TC37` | Chưa khớp tự động | QC |
+| `A11.05` | huy-nut | `Atom/Button` Type=Outlined, Size=Small | `5491:358909` Atom/Button | — | opens `A11` |  | Khớp | QC |
 
 ### `A12` Generate — Sau khi tạo
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `CD-KH-030347` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A12.01` | cau-moi |  |  | — |  |  | Chưa sync | QC |
-| `A12.02` | badge-tong |  |  | — |  |  | Chưa sync | QC |
-| `A12.03` | the-tong-quan |  |  | — |  |  | Chưa sync | QC |
+| `A12.01` | cau-moi | `Atom/Badge`  | `5609:34491` Atom/Badge | — |  |  | Khớp | QC |
+| `A12.02` | badge-tong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A12.03` | the-tong-quan |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A13` Toast phản hồi CRUD
 
-Frame: chưa có (tool đoán:CD-KH-030340, CD-KH-060100, CD-KH-060200) · Nguồn nội dung: QC
+Frame: `CD-KH-030347` (tool đoán:CD-KH-030340, CD-KH-060100, CD-KH-060200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A13.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa sync | QC |
-| `A13.02` | canh-bao |  |  | — |  |  | Chưa sync | QC |
-| `A13.03` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A13.01` | thanh-cong | `Atom/Toast` Type=Success | `I5609:34554;2167:28343` Title; `I5609:34554;2167:28343` Title | — |  | `TTC01` | Khớp | QC |
+| `A13.02` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A13.03` | loi |  | `5609:34083` Đọc đoạn văn và trả lời 3 câu | — |  |  | Khớp | QC |
+
+### `F01` (ngoài Body)
+
+Frame: `CD-KH-030340` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | tim-kiem | `Atom/Input` State=Search, Kiểu=S | `5491:357680` Tìm kiếm | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | account | `ACCOUNT` Size=Default | `5491:357551` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | component-2 | `Switch Center`  | `5491:357552` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | sidebar-menu-cd | `MENU - CD`  | `5491:357656` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -316,7 +331,8 @@ Frame: chưa có (tool đoán:CD-KH-030340, CD-KH-060100, CD-KH-060200) · Ngu�
 - `A07` Khác Figma: nút Import / Export mới có ở CD-KH-030340; chưa có popup kết quả import.
 - `A09` Khác Figma CD-KH-030341 / 030342: dòng phụ dưới `Số câu` ghi `Tối đa 50 câu mỗi lần`; requirement không giới hạn.
 - `A12` Khác Figma CD-KH-030347: tag câu mới ghi `Mới`; requirement dùng tag `AI`.
-- Chưa sync (47): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`, `A03.11`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`, `A11.01`, `A11.02`, `A11.03`, `A11.04`, `A11.05`, `A12.01`, `A12.02`, `A12.03`, `A13.01`, `A13.02`, `A13.03`
+- Chưa khớp tự động (16): `A01.04`, `A01.05`, `A03.04`, `A03.09`, `A07.04`, `A07.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A11.01`, `A11.03`, `A11.04`, `A12.02`, `A12.03`, `A13.02`
+- Requirement ghi thiếu, Figma đã có (6): `A02.03`, `A06.12`, `A06.13`, `A06.14`, `A06.15`, `A06.16`
 - Phân loại cần design duyệt (4): `CD-KH-030343`, `CD-KH-030347`, `CD-KH-060130`, `CD-KH-060160`
 - Thiếu prototype link đi vào (8): `CD-KH-030346`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060130`, `CD-KH-060140`
 - Frame Figma chưa có requirement (10): `CD-KH-030348`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060140`, `CD-KH-060141`, `CD-KH-060150`, `CD-KH-060160`

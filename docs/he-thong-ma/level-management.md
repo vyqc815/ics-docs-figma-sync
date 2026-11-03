@@ -29,49 +29,63 @@ Requirement: `curriculum_management_requirement/level_management/level_managemen
 
 ### `A01` Trang danh sách cấp độ
 
-Frame: chưa có (tool đoán:CD-CDO-010000) · Nguồn nội dung: QC
+Frame: `CD-CDO-010000` (tool đoán:CD-CDO-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | id |  |  | — | governed-by `REQ01` |  | Chưa sync | QC |
-| `A01.02` | ten-cap-do |  |  | — |  | `TC03` | Chưa sync | QC |
-| `A01.03` | mo-ta-cap-do |  |  | — |  |  | Chưa sync | QC |
-| `A01.04` | ma-cap-do |  |  | — |  | `TC01`, `TC03`, `TC04`, `TC07`, `TC08`, `TC09`, `TC13`, `TC19`, `TC23` | Chưa sync | QC |
-| `A01.05` | trang-thai |  |  | — | governed-by `REQ02` | `TC01`, `TC08`, `TC09`, `TC10`, `TC15`, `TC16`, `TC19` | Chưa sync | QC |
+| `A01.01` | id | `Atom/ID Badge` Type=6-digit, Size=26H | `1910:19801` ID; `1994:25893` ID Badge | — | governed-by `REQ01` |  | Khớp | QC |
+| `A01.02` | ten-cap-do |  | `1910:19803` Tên cấp độ | — |  | `TC03` | Khớp | QC |
+| `A01.03` | mo-ta-cap-do |  | `1910:19805` Mô tả cấp độ | — |  |  | Khớp | QC |
+| `A01.04` | ma-cap-do | `Atom/Status` Size=M | `1910:19807` Mã cấp độ; `1901:1951` Atom/Status | — |  | `TC01`, `TC03`, `TC04`, `TC07`, `TC08`, `TC09`, `TC13`, `TC19`, `TC23` | Khớp | QC |
+| `A01.05` | trang-thai | `Atom/Status` Size=M | `1910:19810` Trạng thái; `1901:2093` Atom/Status | — | governed-by `REQ02` | `TC01`, `TC08`, `TC09`, `TC10`, `TC15`, `TC16`, `TC19` | Khớp | QC |
 
 ### `A02` Thanh "Thêm cấp độ mới"
 
-Frame: chưa có (tool đoán:CD-CDO-010000) · Nguồn nội dung: QC
+Frame: `CD-CDO-010000` (tool đoán:CD-CDO-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A03` Xóa cấp độ
 
-Frame: chưa có (tool đoán:CD-CDO-010000) · Nguồn nội dung: QC
+Frame: `CD-CDO-010000` (tool đoán:CD-CDO-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | popup-xac-nhan-xoa |  |  | — |  | `TC18` | Chưa sync | QC |
-| `A03.02` | toast-loi-khong-duoc-xoa |  |  | — |  |  | Chưa sync | QC |
+| `A03.01` | popup-xac-nhan-xoa |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
+| `A03.02` | toast-loi-khong-duoc-xoa |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Popup Kích hoạt công khai cấp độ
 
-Frame: chưa có (tool đoán:CD-CDO-010010) · Nguồn nội dung: QC
+Frame: `CD-CDO-010010` (tool đoán:CD-CDO-010010) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | cap-do |  |  | — |  | `TC01`, `TC02`, `TC03`, `TC04`, `TC06`, `TC07`, `TC08`, `TC09`, `TC11`, `TC12`, `TC13`, `TC14`, `TC15`, `TC17`, `TC18`, `TC19`, `TC21`, `TC22`, `TC23` | Chưa có thiết kế | QC |
-| `A04.02` | trang-thai-hien-tai |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.03` | id-cap-do |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.04` | o-nhap-id |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.05` | nut-lam-moi-id-bieu-tuong-xoay |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.06` | ma-cap-do |  |  | — |  | `TC01`, `TC03`, `TC04`, `TC07`, `TC08`, `TC09`, `TC13`, `TC19`, `TC23` | Chưa có thiết kế | QC |
-| `A04.07` | bieu-tuong-ket-qua-kiem-tra |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.08` | thong-bao-trang-thai |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.09` | ghi-chu-canh-bao |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.10` | nut-cong-khai-cap-do |  |  | — |  | `TC07` | Chưa có thiết kế | QC |
-| `A04.11` | nut-huy-bieu-tuong-x |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A04.01` | cap-do |  | `4687:5175` Cấp độ: | — |  | `TC01`, `TC02`, `TC03`, `TC04`, `TC06`, `TC07`, `TC08`, `TC09`, `TC11`, `TC12`, `TC13`, `TC14`, `TC15`, `TC17`, `TC18`, `TC19`, `TC21`, `TC22`, `TC23` | Khớp | QC |
+| `A04.02` | trang-thai-hien-tai |  | `4687:5192` Trạng thái hiện tại; `4687:5195` Nháp | — |  |  | Khớp | QC |
+| `A04.03` | id-cap-do |  | `4687:5180` ID cấp độ *: | — |  |  | Khớp | QC |
+| `A04.04` | o-nhap-id |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.05` | nut-lam-moi-id-bieu-tuong-xoay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.06` | ma-cap-do |  |  | — |  | `TC01`, `TC03`, `TC04`, `TC07`, `TC08`, `TC09`, `TC13`, `TC19`, `TC23` | Chưa khớp tự động | QC |
+| `A04.07` | bieu-tuong-ket-qua-kiem-tra |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.08` | thong-bao-trang-thai |  | `4687:5189` ID có thể sử dụng. | — |  |  | Khớp | QC |
+| `A04.09` | ghi-chu-canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.10` | nut-cong-khai-cap-do | `Atom/Button` Type=Primary, Size=Medium | `I2527:168067;2514:153363` Atom/Button | — |  | `TC07` | Khớp | QC |
+| `A04.11` | nut-huy-bieu-tuong-x | `Atom/Button` Type=Secondary, Size=Medium | `I2527:168067;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+
+### `F01` (ngoài Body)
+
+Frame: `CD-CDO-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | account | `ACCOUNT` Size=Default | `2223:86219` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | component-2 | `Switch Center`  | `4273:160803` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | atom-badge | `Atom/Badge`  | `2409:144867` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | id-badge | `Atom/ID Badge` Type=6-digit, Size=26H | `1994:25895` ID Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | atom-status | `Atom/Status` Size=M | `1901:2115` Atom/Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | add-new-bar-them-danh-muc-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2702:48237` Add New Bar · Thêm danh mục mới | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | sidebar-menu-cd | `MENU - CD`  | `4915:256939` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -135,7 +149,7 @@ Frame: chưa có (tool đoán:CD-CDO-010010) · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa sync (7): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A03.01`, `A03.02`
+- Chưa khớp tự động (7): `A03.01`, `A03.02`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.09`
 - Frame Figma chưa có requirement (2): `CD-CDO-010010`, `CD-CDO-010012`
 - Thiếu prototype link đi vào (2): `CD-CDO-010010`, `CD-CDO-010012`
 - Testcase không trỏ REQ (2): `TC13`, `TC22`

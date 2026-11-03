@@ -29,24 +29,45 @@ Requirement: `survey_bug/survey/01-create-survey/01-create-survey.md` — Tạo 
 
 ### `A01` Trang 1: Tạo khảo sát — tab Giáo viên / Lớp
 
-Frame: chưa có (tool đoán:ADM-KS-010000, ADM-KS-020000, ADM-KS-030000) · Nguồn nội dung: QC
+Frame: `ADM-KS-010000`, `ADM-KS-020000`, `ADM-KS-030000` (tool đoán:ADM-KS-010000, ADM-KS-020000, ADM-KS-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Trang 2: Tạo khảo sát — tab Học viên
 
-Frame: chưa có (tool đoán:ADM-KS-010000, ADM-KS-020000, ADM-KS-030000) · Nguồn nội dung: QC
+Frame: `ADM-KS-010000`, `ADM-KS-020000`, `ADM-KS-030000` (tool đoán:ADM-KS-010000, ADM-KS-020000, ADM-KS-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A03` Popup: Xem trước khảo sát
 
-Frame: chưa có (tool đoán:ADM-KS-010000, ADM-KS-020000, ADM-KS-030000) · Nguồn nội dung: QC
+Frame: `ADM-KS-010000`, `ADM-KS-020000`, `ADM-KS-030000` (tool đoán:ADM-KS-010000, ADM-KS-020000, ADM-KS-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
+
+### `F01` (ngoài Body)
+
+Frame: `ADM-KS-010000`, `ADM-KS-020000`, `ADM-KS-030000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:243663` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | account | `ACCOUNT` Size=Default | `4252:148290` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | xem-truoc | `Atom/Button` Type=Outlined, Size=Small | `4262:148495` Xem trước | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | luu | `Atom/Button` Type=Primary, Size=Small | `4262:148497` Lưu | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | add-new-bar-them-cau-hoi-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `4262:148565` Add New Bar · Thêm câu hỏi mới | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | tab-giao-vien | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `4262:148502` Tab · Giáo viên | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | tab-lop | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `4262:148508` Tab · Lớp | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | tab-hoc-vien | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `4262:148513` Tab · Học viên | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | stt | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `4262:148520` STT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.10` | trang-thai | `Atom/Badge`  | `5019:18368` Trạng thái | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.11` | keo-tha | `Atom/Icon Button`  | `4273:149876` Kéo thả | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.12` | add-new-bar-them-cuoc-khao-sat | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `4262:148558` Add New Bar · Thêm cuộc khảo sát | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.13` | panel | `DD/Organism/Menu Panel` Type=Single | `5019:18585` Panel | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.14` | loai-khao-sat | `Atom/Status` Size=S | `4885:39428` Loại khảo sát | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 

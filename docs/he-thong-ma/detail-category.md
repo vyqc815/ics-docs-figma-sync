@@ -33,35 +33,60 @@ Requirement: `curriculum_management_requirement/category_management/detail_categ
 
 ### `A01` Popup Chi tiết danh mục
 
-Frame: chưa có (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
+Frame: `CD-DM-010000` (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Tab Tổng quan
 
-Frame: chưa có (tool đoán:CD-DM-010060) · Nguồn nội dung: QC
+Frame: `CD-DM-010010` (tool đoán:CD-DM-010060) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | id |  |  | — | governed-by `REQ06` |  | Chưa sync | QC |
-| `A02.02` | ten-khoa-hoc |  |  | — |  |  | Chưa sync | QC |
-| `A02.03` | mo-ta-khoa-hoc |  |  | — |  |  | Chưa sync | QC |
-| `A02.04` | cap-do |  |  | — |  | `TC01`, `TC03`, `TC12` | Chưa sync | QC |
-| `A02.05` | so-ky |  |  | — |  |  | Chưa sync | QC |
-| `A02.06` | trang-thai |  |  | — | governed-by `REQ05` | `TC01`, `TC05`, `TC07` | Chưa sync | QC |
-| `A02.07` | tim-kiem |  |  | — |  |  | Chưa sync | QC |
+| `A02.01` | id |  | `1725:17376` ID | — | governed-by `REQ06` |  | Khớp | QC |
+| `A02.02` | ten-khoa-hoc |  | `1725:17378` Tên khoá học | — |  |  | Khớp | QC |
+| `A02.03` | mo-ta-khoa-hoc |  | `1725:17380` Mô tả khoá học | — |  |  | Khớp | QC |
+| `A02.04` | cap-do |  | `1725:17384` Cấp độ | — |  | `TC01`, `TC03`, `TC12` | Khớp | QC |
+| `A02.05` | so-ky |  | `1725:17382` Số kỳ | — |  |  | Khớp | QC |
+| `A02.06` | trang-thai |  | `1725:17386` Trạng thái; `1725:17395` Nhập mô tả khoá học | — | governed-by `REQ05` | `TC01`, `TC05`, `TC07` | Khớp | QC |
+| `A02.07` | tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `I2702:46349;1739:32351` Tìm nội dung... | — |  |  | Khớp | QC |
 
 ### `A03` Tab Mindset, Tiêu chuẩn giáo trình và Hướng dẫn giảng dạy
 
-Frame: chưa có (tool đoán:CD-DM-010020, CD-DM-010030, CD-DM-010040, CD-DM-010057) · Nguồn nội dung: QC
+Frame: `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057` (tool đoán:CD-DM-010020, CD-DM-010030, CD-DM-010040, CD-DM-010057) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tim-kiem |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | package-category |  |  | — |  | `TC08` | Chưa sync | QC |
-| `A03.03` | action-item |  |  | — |  | `TC08` | Chưa sync | QC |
-| `A03.04` | luu-ap-dung |  |  | — |  | `TC08`, `TC11` | Chưa sync | QC |
+| `A03.01` | tim-kiem | `Atom/Input` State=Search, Kiểu=Chuẩn | `I2702:46381;1739:32505` Tìm nội dung... | — |  |  | Khớp một phần | QC |
+| `A03.02` | package-category |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
+| `A03.03` | action-item |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
+| `A03.04` | luu-ap-dung |  |  | — |  | `TC08`, `TC11` | Chưa khớp tự động | QC |
+
+### `F01` (ngoài Body)
+
+Frame: `CD-DM-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | sidebar-menu-cd | `MENU - CD`  | `4915:257163` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | account | `ACCOUNT` Size=Default | `2223:86161` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | component-2 | `Switch Center`  | `4273:160833` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `3065:53784` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | dd-molecule-trigger | `DD/Molecule/Trigger` Size=XS, State=Default | `3065:53785` DD/Molecule/Trigger | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | add-new-bar-them-noi-dung-khoa-hoc-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `3065:53528` Add New Bar · Thêm nội dung khoá học mới | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F02` Row
+
+Frame: `CD-DM-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F02.01` | id-badge | `Atom/ID Badge` Type=7-digit, Size=26H | `3065:53304` ID Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.02` | atom-number-badge | `Atom/Number Badge` Type=Kỳ, Size=Medium, State=Active | `3065:53310` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.03` | atom-status | `Atom/Status` Size=M | `3065:53314` Atom/Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.04` | arrow-detail | `ARROW DETAIL`  | `3065:53318` ARROW DETAIL | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.05` | dd-organism-menu-panel | `DD/Organism/Menu Panel` Type=Action | `3065:53331` DD/Organism/Menu Panel | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -111,7 +136,7 @@ Frame: chưa có (tool đoán:CD-DM-010020, CD-DM-010030, CD-DM-010040, CD-DM-01
 
 **Tool báo, cần người xem**
 
-- Chưa sync (11): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A03.01`, `A03.02`, `A03.03`, `A03.04`
+- Chưa khớp tự động (3): `A03.02`, `A03.03`, `A03.04`
 - Frame Figma chưa có requirement (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Thiếu prototype link đi vào (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Phân loại cần design duyệt (3): `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`

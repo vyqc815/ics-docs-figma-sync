@@ -37,124 +37,156 @@ Requirement: `teacher_role/history_and_salary/history_and_salary_requirements.md
 
 ### `A01` Tổng quan và tab Buổi dạy
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LS-010000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | bo-loc-thoi-gian |  |  | — |  |  | Chưa sync | QC |
-| `A01.02` | tuy-chon |  |  | — |  |  | Chưa sync | QC |
-| `A01.03` | so-lop |  |  | — |  | `TC7b` | Chưa sync | QC |
-| `A01.04` | so-buoi-da-day |  |  | — |  |  | Chưa sync | QC |
-| `A01.05` | luong-buoi-day |  |  | — |  | `TC7a` | Chưa sync | QC |
-| `A01.06` | luong-kpi |  |  | — |  |  | Chưa sync | QC |
-| `A01.07` | luong-ot |  |  | — |  |  | Chưa sync | QC |
-| `A01.08` | tong-luong |  |  | — |  | `TC7a` | Chưa sync | QC |
-| `A01.09` | ba-tab |  |  | — |  |  | Chưa sync | QC |
-| `A01.10` | dinh-dang-tien |  |  | — |  |  | Chưa sync | QC |
-| `A01.11` | lop |  |  | — |  |  | Chưa sync | QC |
-| `A01.12` | ten-buoi-hoc |  |  | — |  |  | Chưa sync | QC |
-| `A01.13` | si-so |  |  | — |  | `TC05` | Chưa sync | QC |
-| `A01.14` | thoi-gian |  |  | — |  | `TC7b` | Chưa sync | QC |
-| `A01.15` | luong-buoi-day |  |  | — |  | `TC7a` | Chưa sync | QC |
-| `A01.16` | sap-xep |  |  | — |  |  | Chưa sync | QC |
-| `A01.17` | khong-co-buoi |  |  | — |  |  | Chưa sync | QC |
-| `A01.18` | lop |  |  | — |  |  | Chưa sync | QC |
-| `A01.19` | so-buoi |  |  | — |  | `TC03`, `TC7b` | Chưa sync | QC |
-| `A01.20` | tong-luong |  |  | — |  | `TC7a` | Chưa sync | QC |
-| `A01.21` | tuong-tac-dong-lop |  |  | — |  |  | Chưa sync | QC |
-| `A01.22` | phan-trang |  |  | — |  |  | Chưa sync | QC |
+| `A01.01` | bo-loc-thoi-gian |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.02` | tuy-chon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.03` | so-lop | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97125` Thẻ chỉ số · Số lớp | — |  | `TC7b` | Khớp | QC |
+| `A01.04` | so-buoi-da-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97126` Thẻ chỉ số · Số buổi đã dạy | — |  |  | Khớp | QC |
+| `A01.05` | luong-buoi-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97127` Thẻ chỉ số · Lương buổi dạy | — |  | `TC7a` | Khớp | QC |
+| `A01.06` | luong-kpi | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97128` Thẻ chỉ số · Lương KPI | — |  |  | Khớp | QC |
+| `A01.07` | luong-ot | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97129` Thẻ chỉ số · Lương OT | — |  |  | Khớp | QC |
+| `A01.08` | tong-luong | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:99317` Thẻ chỉ số · Tổng lương | — |  | `TC7a` | Khớp | QC |
+| `A01.09` | ba-tab |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.10` | dinh-dang-tien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.11` | lop | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:263183;4901:212425` Card Menu | — |  |  | Khớp | QC |
+| `A01.12` | ten-buoi-hoc |  | `3868:99377` Tên buổi học | — |  |  | Khớp | QC |
+| `A01.13` | si-so |  | `3868:99379` Sĩ số | — |  | `TC05` | Khớp | QC |
+| `A01.14` | thoi-gian |  | `3868:99381` Thời gian | — |  | `TC7b` | Khớp | QC |
+| `A01.15` | luong-buoi-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97127` Thẻ chỉ số · Lương buổi dạy | — |  | `TC7a` | Khớp | QC |
+| `A01.16` | sap-xep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.17` | khong-co-buoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.18` | lop | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:263183;4901:212425` Card Menu | — |  |  | Khớp | QC |
+| `A01.19` | so-buoi |  | `3868:99703` Số buổi | — |  | `TC03`, `TC7b` | Khớp | QC |
+| `A01.20` | tong-luong | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:99317` Thẻ chỉ số · Tổng lương | — |  | `TC7a` | Khớp | QC |
+| `A01.21` | tuong-tac-dong-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.22` | phan-trang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.23` | sidebar-menu-teacher | `MENU - TEACHER`  | `4915:263183` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
 
 ### `A02` Tab KPI
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LS-010003` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | lop |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | loai-kpi |  |  | — |  |  | Chưa sync | QC |
-| `A02.03` | ngay-ghi-nhan |  |  | — |  |  | Chưa sync | QC |
-| `A02.04` | trang-thai |  |  | — |  |  | Chưa sync | QC |
-| `A02.05` | tien-thuong |  |  | — |  |  | Chưa sync | QC |
-| `A02.06` | sap-xep |  |  | — |  |  | Chưa sync | QC |
-| `A02.07` | trang-thai-rong |  |  | — |  |  | Chưa sync | QC |
+| `A02.01` | lop | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:263042;4901:212425` Card Menu | — |  |  | Khớp | QC |
+| `A02.02` | loai-kpi |  | `3868:102236` Loại KPI | — |  |  | Khớp | QC |
+| `A02.03` | ngay-ghi-nhan |  | `3868:102238` Ngày ghi nhận | — |  |  | Khớp | QC |
+| `A02.04` | trang-thai |  | `3868:102240` Trạng thái | — |  |  | Khớp | QC |
+| `A02.05` | tien-thuong |  | `3868:102242` Tiền thưởng | — |  |  | Khớp | QC |
+| `A02.06` | sap-xep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.07` | trang-thai-rong |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Tab OT
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LS-010004` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | lop |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | loai-ot |  |  | — |  |  | Chưa sync | QC |
-| `A03.03` | ngay-ghi-nhan |  |  | — |  | `TC13`, `TC14a` | Chưa sync | QC |
-| `A03.04` | trang-thai |  |  | — |  | `TC14` | Chưa sync | QC |
-| `A03.05` | tien-thuong |  |  | — |  |  | Chưa sync | QC |
-| `A03.06` | quyen |  |  | — |  |  | Chưa sync | QC |
-| `A03.07` | rong-loi |  |  | — |  |  | Chưa sync | QC |
+| `A03.01` | lop | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:262901;4901:212425` Card Menu | — |  |  | Khớp | QC |
+| `A03.02` | loai-ot |  | `3868:102728` Loại KPI | — |  |  | Khớp | QC |
+| `A03.03` | ngay-ghi-nhan |  | `3868:102730` Ngày ghi nhận | — |  | `TC13`, `TC14a` | Khớp | QC |
+| `A03.04` | trang-thai |  | `3868:102732` Trạng thái | — |  | `TC14` | Khớp | QC |
+| `A03.05` | tien-thuong |  | `3868:102734` Tiền thưởng | — |  |  | Khớp | QC |
+| `A03.06` | quyen |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.07` | rong-loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Popup Đề xuất tăng lương
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LS-010010`, `GV-LS-010012` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | giao-vien-flow-giao-vien-de-xuat-tang-lu |  |  | — |  |  | Chưa sync | QC |
-| `A04.02` | admin-flow-admin-duyet-de-xuat-tang-luon |  |  | — |  |  | Chưa sync | QC |
-| `A04.03` | ket-qua-tra-ve-giao-vien |  |  | — |  |  | Chưa sync | QC |
-| `A04.04` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A04.05` | thong-bao-chu-ky |  |  | — |  |  | Chưa sync | QC |
-| `A04.06` | pham-vi-de-xuat |  |  | — |  |  | Chưa sync | QC |
-| `A04.07` | luong-buoi-day-hien-tai |  |  | — |  |  | Chưa sync | QC |
-| `A04.08` | muc-luong-de-xuat |  |  | — |  |  | Chưa sync | QC |
-| `A04.09` | ly-do-de-xuat |  |  | — |  |  | Chưa sync | QC |
-| `A04.10` | cac-ly-do |  |  | — |  |  | Chưa sync | QC |
-| `A04.11` | ly-do-khac-chi-tiet |  |  | — |  |  | Chưa sync | QC |
-| `A04.12` | dropdown-tien-te |  |  | — |  |  | Chưa sync | QC |
-| `A04.13` | khoi-trung-dropdown-khong-nhan |  |  | — |  |  | Chưa sync | QC |
-| `A04.14` | huy |  |  | — |  |  | Chưa sync | QC |
-| `A04.15` | gui-de-xuat |  |  | — | opens `A05` | `TC15a` | Chưa sync | QC |
+| `A04.01` | giao-vien-flow-giao-vien-de-xuat-tang-lu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | admin-flow-admin-duyet-de-xuat-tang-luon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.03` | ket-qua-tra-ve-giao-vien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.04` | tieu-de | `Popup/Header`  | `I4760:16672;2514:153340` Tiêu đề | — |  |  | Khớp | QC |
+| `A04.05` | thong-bao-chu-ky |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.06` | pham-vi-de-xuat |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.07` | luong-buoi-day-hien-tai | `Atom/Label`  | `I4760:16687;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A04.08` | muc-luong-de-xuat | `Atom/Label`  | `I4760:16697;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A04.09` | ly-do-de-xuat | `Atom/Label`  | `I4895:105780;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A04.10` | cac-ly-do |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.11` | ly-do-khac-chi-tiet | `Atom/Label`  | `4760:16729` Atom/Label | — |  |  | Khớp | QC |
+| `A04.12` | dropdown-tien-te | `Atom/Nút đơn vị tiền` State=Mặc định | `I4760:16697;3004:58628;3004:60386` Đơn vị tiền | — |  |  | Khớp | QC |
+| `A04.13` | khoi-trung-dropdown-khong-nhan | `Atom/Input` State=CChọn, Kiểu=Chuẩn | `I4895:105780;3004:58628;2148:20906` Chọn | — |  |  | Khớp | QC |
+| `A04.14` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I4760:16723;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+| `A04.15` | gui-de-xuat | `Atom/Button` Type=Primary, Size=Medium | `I4760:16723;2514:153363` Atom/Button | — | opens `A05` | `TC15a` | Khớp | QC |
 
 ### `A05` Popup Xác nhận gửi đề xuất
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LS-010015` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | noi-dung |  |  | — |  |  | Chưa sync | QC |
-| `A05.02` | ty-le-tang |  |  | — |  |  | Chưa sync | QC |
-| `A05.03` | thong-bao |  |  | — |  |  | Chưa sync | QC |
-| `A05.04` | quay-lai-chinh-sua |  |  | — |  | `TC18` | Chưa sync | QC |
-| `A05.05` | xac-nhan-gui |  |  | — |  | `TC19` | Chưa sync | QC |
+| `A05.01` | noi-dung | `Atom/Alert` Type=Lưu ý | `I4899:106633;2808:43032` Số câu hỏi và tổng điểm có thể được cập nhật tự động dựa trên nội dung trong tab Bộ câu hỏi. | — |  |  | Khớp | QC |
+| `A05.02` | ty-le-tang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.03` | thong-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.04` | quay-lai-chinh-sua | `Atom/Button` Type=Secondary, Size=Medium | `I4899:106641;2514:153361` Atom/Button | — |  | `TC18` | Khớp | QC |
+| `A05.05` | xac-nhan-gui | `Atom/Button` Type=Primary, Size=Medium | `I4899:106641;2514:153363` Atom/Button | — |  | `TC19` | Khớp | QC |
 
 ### `A06` Trạng thái đề xuất và hủy đề xuất
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LS-010014`, `GV-LS-010016` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | chua-co-de-xuat-dang-cho |  |  | — |  |  | Chưa sync | QC |
-| `A06.02` | moi |  |  | — |  |  | Chưa sync | QC |
-| `A06.03` | dang-xu-ly |  |  | — |  | `TC25`, `TC26a` | Chưa sync | QC |
-| `A06.04` | da-duyet-tu-choi |  |  | — |  | `TC26` | Chưa sync | QC |
-| `A06.05` | da-huy |  |  | — |  | `TC23`, `TC25` | Chưa sync | QC |
-| `A06.06` | de-xuat-dang-cho |  |  | — |  |  | Chưa sync | QC |
-| `A06.07` | du-lieu-xac-nhan |  |  | — |  |  | Chưa sync | QC |
-| `A06.08` | giu-de-xuat |  |  | — |  | `TC22` | Chưa sync | QC |
-| `A06.09` | huy-de-xuat |  |  | — |  | `TC21` | Chưa sync | QC |
-| `A06.10` | huy-va-gui-lai |  |  | — |  |  | Chưa sync | QC |
+| `A06.01` | chua-co-de-xuat-dang-cho |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.02` | moi | `Molecule/Trạng thái đề xuất tăng lương`  | `4899:106093` Trạng thái đề xuất | — |  |  | Khớp | QC |
+| `A06.03` | dang-xu-ly |  |  | — |  | `TC25`, `TC26a` | Chưa khớp tự động | QC |
+| `A06.04` | da-duyet-tu-choi |  |  | — |  | `TC26` | Chưa khớp tự động | QC |
+| `A06.05` | da-huy |  |  | — |  | `TC23`, `TC25` | Chưa khớp tự động | QC |
+| `A06.06` | de-xuat-dang-cho |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.07` | du-lieu-xac-nhan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.08` | giu-de-xuat | `Atom/Button` Type=Secondary, Size=Medium | `I4899:106671;2514:153361` Atom/Button | — |  | `TC22` | Khớp một phần | QC |
+| `A06.09` | huy-de-xuat | `Molecule/Trạng thái đề xuất tăng lương`  | `I4899:106093;4899:105924` Huỷ đề xuất | — |  | `TC21` | Khớp | QC |
+| `A06.10` | huy-va-gui-lai |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A07` Popup Lịch sử đề xuất tăng lương
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LS-010013` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A07.02` | moi-muc-lich-su |  |  | — |  |  | Chưa sync | QC |
-| `A07.03` | sap-xep |  |  | — |  |  | Chưa sync | QC |
-| `A07.04` | phan-hoi |  |  | — |  | `TC28` | Chưa sync | QC |
-| `A07.05` | dong |  |  | — |  | `TC29` | Chưa sync | QC |
-| `A07.06` | rong-loi |  |  | — |  | `TC29` | Chưa sync | QC |
+| `A07.01` | tieu-de | `Popup/Header`  | `I4895:105829;2514:153340` Tiêu đề | — |  |  | Khớp | QC |
+| `A07.02` | moi-muc-lich-su |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.03` | sap-xep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.04` | phan-hoi | `Popup/Header`  | `I4895:105829;2514:153342` Description | — |  | `TC28` | Khớp | QC |
+| `A07.05` | dong | `Atom/Button` Type=Primary, Size=Medium | `I4895:105870;2514:153363` Atom/Button | — |  | `TC29` | Khớp | QC |
+| `A07.06` | rong-loi |  |  | — |  | `TC29` | Chưa khớp tự động | QC |
+
+### `F01` Header
+
+Frame: `GV-LS-010000`, `GV-LS-010003`, `GV-LS-010004`, `GV-LS-010011`, `GV-LS-010014` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | account | `ACCOUNT` Size=Default | `3868:97032` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | component-2 | `Switch Center`  | `4273:161223` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | header-vai-tro |  | `4899:187639` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F02` (ngoài Body)
+
+Frame: `GV-LS-010000`, `GV-LS-010003`, `GV-LS-010004`, `GV-LS-010011`, `GV-LS-010014` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F02.01` | filter-thoi-gian | `DD/Molecule/Trigger` Size=XS, State=Active | `3868:97121` Filter · Thời gian | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.02` | nut-lich-su-de-xuat | `Atom/Button` Type=Ghost, Size=Small | `4899:105926` Nút · Lịch sử đề xuất | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.03` | nut-de-xuat-tang-luong | `Atom/Button` Type=Primary, Size=Small | `4760:16610` Nút · Đề xuất tăng lương | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.04` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `3868:99338` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.05` | class-status | `CLass Status`  | `3868:99385` CLass Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.06` | atom-chip | `Atom/Chip` Type=Money Outline | `3857:86345` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.07` | the-chi-so-so-lop | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:102219` Thẻ chỉ số · Số lớp | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.08` | the-chi-so-so-buoi-da-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:102220` Thẻ chỉ số · Số buổi đã dạy | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.09` | the-chi-so-luong-buoi-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:102221` Thẻ chỉ số · Lương buổi dạy | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.10` | the-chi-so-luong-kpi | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:102222` Thẻ chỉ số · Lương KPI | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.11` | the-chi-so-luong-ot | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:102223` Thẻ chỉ số · Lương OT | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.12` | the-chi-so-tong-luong | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:102224` Thẻ chỉ số · Tổng lương | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.13` | atom-badge | `Atom/Badge`  | `3868:102469` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.14` | trang-thai-de-xuat | `Molecule/Trạng thái đề xuất tăng lương`  | `4899:105946` Trạng thái đề xuất | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -231,7 +263,7 @@ Frame: chưa có · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa sync (72): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.14`, `A01.15`, `A01.16`, `A01.17`, `A01.18`, `A01.19`, `A01.20`, `A01.21`, `A01.22`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A04.09`, `A04.10`, `A04.11`, `A04.12`, `A04.13`, `A04.14`, `A04.15`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A06.05`, `A06.06`, `A06.07`, `A06.08`, `A06.09`, `A06.10`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`
+- Chưa khớp tự động (30): `A01.01`, `A01.02`, `A01.09`, `A01.10`, `A01.16`, `A01.17`, `A01.21`, `A01.22`, `A02.06`, `A02.07`, `A03.06`, `A03.07`, `A04.01`, `A04.02`, `A04.03`, `A04.05`, `A04.06`, `A04.10`, `A05.02`, `A05.03`, `A06.01`, `A06.03`, `A06.04`, `A06.05`, `A06.06`, `A06.07`, `A06.10`, `A07.02`, `A07.03`, `A07.06`
 - Thiếu prototype link đi vào (2): `ADM-LGV-020010`, `GV-LS-010012`
 - REQ/EX chưa có testcase (1): `EX06`
 

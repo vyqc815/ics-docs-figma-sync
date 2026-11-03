@@ -22,7 +22,10 @@
 - Khi đổi tab, hệ thống giữ đúng giáo viên đang xem; không được tải hoặc hiển thị dữ liệu của giáo viên khác.
 - `Class Handler` và `Support` được truy cập tab `Danh sách lớp`, tab `Log` (chỉ xem), tab `Quản lý đăng ký lịch`, tab `Ghi chú` và tab `Thông tin cá nhân`; tại tab `Thông tin cá nhân` hai role này chỉ được cập nhật `Lương/giờ`, các field khác chỉ xem. Quyền này không đồng nghĩa được xem hoặc thao tác tại các tab khác.
 
-### Trang 2: Tab Thông tin cá nhân
+### Trang 2: ADM-GV-020100 — Tab Thông tin cá nhân
+
+![Figma mới nhất · ADM-GV-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-020100.png)
+
 ![Trang 2](./images/teacher-detail-personal-info.png)
 
 *Tab Thông tin cá nhân của chi tiết giáo viên — nhấn để xem ảnh gốc*
@@ -78,7 +81,10 @@
 - Khi chuyển trạng thái sang `Nghỉ việc`, hệ thống khóa quyền đăng nhập của giáo viên, loại giáo viên khỏi lịch đăng ký và các lớp đang dạy.
 - Dữ liệu hồ sơ, lịch sử và log đã phát sinh trước khi nghỉ việc phải được giữ lại; không xóa cứng giáo viên.
 
-### Trang 3: Tab Danh sách lớp
+### Trang 3: ADM-GV-020200 — Tab Danh sách lớp
+
+![Figma mới nhất · ADM-GV-020200](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-020200.png)
+
 ![Trang 3](./images/teacher-detail-class-list.png)
 
 *Tab Danh sách lớp (cột Lương/giờ trong ảnh đã bỏ) — nhấn để xem ảnh gốc*
@@ -171,7 +177,10 @@
 - Việc đổi chế độ chỉ thay cách trình bày, không làm thay đổi tập buổi dạy của giáo viên trong tuần đang chọn.
 - Mọi lần đổi tuần hoặc đổi chế độ phải chỉ hiển thị kết quả của request mới nhất; dữ liệu cũ không được ghi đè kết quả hiện tại.
 
-### Trang 5: Tab Log
+### Trang 5: ADM-GV-020400 — Tab Log
+
+![Figma mới nhất · ADM-GV-020400](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-020400.png)
+
 ![Trang 5](./images/teacher-detail-log.png)
 
 *Tab Log: log hệ thống tự ghi theo giáo viên, bộ lọc Đối tượng và Thời gian — nhấn để xem ảnh gốc*
@@ -201,7 +210,10 @@
 - Log chỉ thuộc đúng giáo viên đang xem; không hiển thị log của giáo viên khác dù cùng người thao tác.
 - Từ khóa, Đối tượng và Thời gian kết hợp theo `AND`; thay đổi điều kiện đưa danh sách về trang đầu; chỉ response của điều kiện mới nhất được phép cập nhật danh sách.
 
-### Trang 6: Tab Quản lý đăng ký lịch
+### Trang 6: ADM-GV-020520 — Tab Quản lý đăng ký lịch
+
+![Figma mới nhất · ADM-GV-020520](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-020520.png)
+
 ![Trang 6](./images/teacher-detail-registration-schedule.png)
 
 *Lưới 3 buổi × 7 thứ, ô đã đăng ký có khung giờ và ghi chú, checkbox Fulltime — nhấn để xem ảnh gốc*
@@ -243,7 +255,10 @@
 - Backend phải kiểm tra role, phạm vi giáo viên và trạng thái tài khoản tại thời điểm xử lý, kể cả khi gọi API trực tiếp.
 - Khi giáo viên hoặc một role khác cập nhật đồng thời, hệ thống không được âm thầm ghi đè dữ liệu mới hơn; cơ chế xử lý xung đột phải thống nhất với chức năng phía giáo viên.
 
-### Trang 7: Tab Ghi chú
+### Trang 7: ADM-GV-020600 — Tab Ghi chú
+
+![Figma mới nhất · ADM-GV-020600](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-020600.png)
+
 ![Trang 7](./images/teacher-detail-notes-list.png)
 
 *Danh sách ghi chú, bộ lọc, bình luận và ô gõ nhanh tạo ghi chú — nhấn để xem ảnh gốc*

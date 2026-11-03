@@ -144,13 +144,25 @@
    "nodeId": "2711:70470",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/danh-sach-hoa-don",
    "link": "/hoa-don/danh-sach-hoa-don",
    "dark": "ADM-HD-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": []
+   "regions": [
+    "RM-RE.F01",
+    "RM-RE.F02",
+    "RM-RE.F03",
+    "RM-RE.F04",
+    "RM-RE.F05",
+    "RM-RE.F06",
+    "RM-RE.F07",
+    "RM-RE.F08",
+    "RM-RE.F09",
+    "RM-RE.F10",
+    "RM-RE.F11"
+   ]
   },
   "ADM-HD-010006": {
    "id": "ADM-HD-010006",
@@ -165,7 +177,7 @@
    "nodeId": "3058:98038",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/danh-sach-hoa-don/sau-khi-them-tag",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010006",
    "dark": "ADM-HD-010006-DK",
@@ -186,7 +198,7 @@
    "nodeId": "3058:106824",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/danh-sach-hoa-don/sau-khi-them-lich-hen",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010007",
    "dark": "ADM-HD-010007-DK",
@@ -207,7 +219,7 @@
    "nodeId": "2731:75346",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010010",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010010",
    "dark": "ADM-HD-010010-DK",
@@ -215,7 +227,9 @@
     "ADM-HD-010000"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A02"
+   ]
   },
   "ADM-HD-010011": {
    "id": "ADM-HD-010011",
@@ -230,13 +244,15 @@
    "nodeId": "3004:60619",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010011",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010011",
    "dark": "ADM-HD-010011-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A02"
+   ]
   },
   "ADM-HD-010012": {
    "id": "ADM-HD-010012",
@@ -251,13 +267,15 @@
    "nodeId": "3004:65451",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010012",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010012",
    "dark": "ADM-HD-010012-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A03"
+   ]
   },
   "ADM-HD-010013": {
    "id": "ADM-HD-010013",
@@ -272,7 +290,7 @@
    "nodeId": "3004:65498",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010013",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010013",
    "dark": "ADM-HD-010013-DK",
@@ -293,7 +311,7 @@
    "nodeId": "2731:75565",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010020",
    "dark": "ADM-HD-010020-DK",
@@ -301,7 +319,9 @@
     "ADM-HD-010000"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A01"
+   ]
   },
   "ADM-HD-010021": {
    "id": "ADM-HD-010021",
@@ -316,7 +336,7 @@
    "nodeId": "3004:71868",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/cuon-ngang-toi-cuoi",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010021",
    "dark": "ADM-HD-010021-DK",
@@ -337,13 +357,15 @@
    "nodeId": "3004:73103",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/mo-chi-tiet-hoc-phi-hover",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010022",
    "dark": "ADM-HD-010022-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A04"
+   ]
   },
   "ADM-HD-010030": {
    "id": "ADM-HD-010030",
@@ -358,13 +380,15 @@
    "nodeId": "3004:15021",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010030",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010030",
    "dark": "ADM-HD-010030-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A02"
+   ]
   },
   "ADM-HD-010040": {
    "id": "ADM-HD-010040",
@@ -379,7 +403,7 @@
    "nodeId": "2731:90174",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/popup-xem-anh-hoa-don",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010040",
    "dark": "ADM-HD-010040-DK",
@@ -390,7 +414,9 @@
     "ADM-HD-010302"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A01"
+   ]
   },
   "ADM-HD-010050": {
    "id": "ADM-HD-010050",
@@ -405,13 +431,15 @@
    "nodeId": "2997:13731",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010050",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010050",
    "dark": "ADM-HD-010050-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A03"
+   ]
   },
   "ADM-HD-010060": {
    "id": "ADM-HD-010060",
@@ -426,13 +454,15 @@
    "nodeId": "2997:13559",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010060",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010060",
    "dark": "ADM-HD-010060-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A04"
+   ]
   },
   "ADM-HD-010061": {
    "id": "ADM-HD-010061",
@@ -447,13 +477,15 @@
    "nodeId": "2997:14096",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010061",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010061",
    "dark": "ADM-HD-010061-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A03"
+   ]
   },
   "ADM-HD-010070": {
    "id": "ADM-HD-010070",
@@ -468,13 +500,15 @@
    "nodeId": "3004:61802",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010070",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010070",
    "dark": "ADM-HD-010070-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A02"
+   ]
   },
   "ADM-HD-010071": {
    "id": "ADM-HD-010071",
@@ -489,7 +523,7 @@
    "nodeId": "3004:61931",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010071",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010071",
    "dark": "ADM-HD-010071-DK",
@@ -510,13 +544,15 @@
    "nodeId": "3004:62128",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010072",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010072",
    "dark": "ADM-HD-010072-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A02"
+   ]
   },
   "ADM-HD-010073": {
    "id": "ADM-HD-010073",
@@ -531,7 +567,7 @@
    "nodeId": "3004:62345",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010073",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010073",
    "dark": "ADM-HD-010073-DK",
@@ -552,13 +588,15 @@
    "nodeId": "3058:99388",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010080",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010080",
    "dark": "ADM-HD-010080-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A03"
+   ]
   },
   "ADM-HD-010081": {
    "id": "ADM-HD-010081",
@@ -573,7 +611,7 @@
    "nodeId": "3058:96236",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010081",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010081",
    "dark": "ADM-HD-010081-DK",
@@ -594,7 +632,7 @@
    "nodeId": "3058:108224",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010082",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010082",
    "dark": "ADM-HD-010082-DK",
@@ -615,7 +653,7 @@
    "nodeId": "3058:96343",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010090",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010090",
    "dark": "ADM-HD-010090-DK",
@@ -636,7 +674,7 @@
    "nodeId": "2731:86116",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/danh-sach-hoa-don/dropdown-nhan-tien-thoi-gian-tag-menu-hanh-dong",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010102",
    "dark": "ADM-HD-010102-DK",
@@ -644,7 +682,9 @@
     "ADM-HD-010000"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A01"
+   ]
   },
   "ADM-HD-010103": {
    "id": "ADM-HD-010103",
@@ -659,7 +699,7 @@
    "nodeId": "3058:103087",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/danh-sach-hoa-don/menu-them-hoc-phi",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010103",
    "dark": "ADM-HD-010103-DK",
@@ -680,7 +720,7 @@
    "nodeId": "3058:104348",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/danh-sach-hoa-don/menu-chinh-sua",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010104",
    "dark": "ADM-HD-010104-DK",
@@ -701,7 +741,7 @@
    "nodeId": "3058:96427",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010110",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010110",
    "dark": "ADM-HD-010110-DK",
@@ -722,7 +762,7 @@
    "nodeId": "3058:96531",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010111",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010111",
    "dark": "ADM-HD-010111-DK",
@@ -743,7 +783,7 @@
    "nodeId": "2731:75709",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010120",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010120",
    "dark": "ADM-HD-010120-DK",
@@ -766,7 +806,7 @@
    "nodeId": "3058:96637",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010130",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010130",
    "dark": "ADM-HD-010130-DK",
@@ -787,7 +827,7 @@
    "nodeId": "2731:87277",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/danh-sach-hoa-don/dropdown-hoa-don-do-loai-hoa-don-doi-trang-thai",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010202",
    "dark": "ADM-HD-010202-DK",
@@ -796,7 +836,9 @@
     "ADM-HD-010102"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A01"
+   ]
   },
   "ADM-HD-010224": {
    "id": "ADM-HD-010224",
@@ -811,7 +853,7 @@
    "nodeId": "2731:75800",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/popup-ho-so-hoc-vien/ghi-chu/trong",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010224",
    "dark": "ADM-HD-010224-DK",
@@ -835,7 +877,7 @@
    "nodeId": "3058:111486",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/popup-ho-so-hoc-vien/ghi-chu/co-ghi-chu-binh-luan",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010225",
    "dark": "ADM-HD-010225-DK",
@@ -856,7 +898,7 @@
    "nodeId": "2731:75906",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010230",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010230",
    "dark": "ADM-HD-010230-DK",
@@ -877,7 +919,7 @@
    "nodeId": "3058:111717",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-hd-010231",
    "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010231",
    "dark": "ADM-HD-010231-DK",
@@ -898,7 +940,7 @@
    "nodeId": "2731:88436",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/hoa-don/danh-sach-hoa-don/dropdown-nguoi-phu-trach-trang-thai",
    "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010302",
    "dark": "ADM-HD-010302-DK",
@@ -908,7 +950,9 @@
     "ADM-HD-010202"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "RM-RE.A01"
+   ]
   }
  },
  "regions": [
@@ -916,7 +960,13 @@
    "id": "RM-RE.A01",
    "name": "trang-1-danh-sach-hoa-don",
    "title": "Trang 1: Danh Sách Hoá Đơn",
-   "screens": [],
+   "screens": [
+    "adm-hd-010020",
+    "adm-hd-010040",
+    "adm-hd-010102",
+    "adm-hd-010202",
+    "adm-hd-010302"
+   ],
    "screensGuessed": [
     "ADM-HD-010020",
     "ADM-HD-010040",
@@ -929,14 +979,19 @@
    "requirement": "receipt_management/receipt/receipt.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": [],
-   "screensFromItems": []
+   "items": []
   },
   {
    "id": "RM-RE.A02",
    "name": "trang-2-popup-them-hoa-don-chinh-sua-hoa",
    "title": "Trang 2: Popup Thêm hoá đơn / Chỉnh sửa hoá đơn",
-   "screens": [],
+   "screens": [
+    "adm-hd-010010",
+    "adm-hd-010011",
+    "adm-hd-010030",
+    "adm-hd-010070",
+    "adm-hd-010072"
+   ],
    "screensGuessed": [
     "ADM-HD-010010",
     "ADM-HD-010011",
@@ -949,14 +1004,18 @@
    "requirement": "receipt_management/receipt/receipt.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": [],
-   "screensFromItems": []
+   "items": []
   },
   {
    "id": "RM-RE.A03",
    "name": "trang-3-popup-chon-hoc-vien-lien-ket-hoa",
    "title": "Trang 3: Popup Chọn học viên liên kết hoá đơn",
-   "screens": [],
+   "screens": [
+    "adm-hd-010012",
+    "adm-hd-010050",
+    "adm-hd-010061",
+    "adm-hd-010080"
+   ],
    "screensGuessed": [
     "ADM-HD-010012",
     "ADM-HD-010050",
@@ -968,14 +1027,16 @@
    "requirement": "receipt_management/receipt/receipt.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": [],
-   "screensFromItems": []
+   "items": []
   },
   {
    "id": "RM-RE.A04",
    "name": "trang-4-popup-them-hoc-phi",
    "title": "Trang 4: Popup Thêm học phí",
-   "screens": [],
+   "screens": [
+    "adm-hd-010022",
+    "adm-hd-010060"
+   ],
    "screensGuessed": [
     "ADM-HD-010022",
     "ADM-HD-010060"
@@ -985,8 +1046,1674 @@
    "requirement": "receipt_management/receipt/receipt.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": [],
-   "screensFromItems": []
+   "items": []
+  },
+  {
+   "id": "RM-RE.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F01.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:248298",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Thống kê / Hoá đơn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.02",
+     "name": "nut-them-hoa-don",
+     "label": "Nút thêm hoá đơn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Nút thêm hoá đơn",
+        "figmaId": "2731:71778",
+        "layer": "Nút thêm hoá đơn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Nút thêm hoá đơn",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.03",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "2731:71781",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm hoá đơn, học viên...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.04",
+     "name": "loc-nhan-tien",
+     "label": "Lọc · Nhận tiền",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Nhận tiền",
+        "figmaId": "2731:71787",
+        "layer": "Lọc · Nhận tiền",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Nhận tiền",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Nhận tiền",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.05",
+     "name": "loc-hoa-don-do",
+     "label": "Lọc · Hoá đơn đỏ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Hoá đơn đỏ",
+        "figmaId": "2731:71798",
+        "layer": "Lọc · Hoá đơn đỏ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Hoá đơn đỏ",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Hoá đơn đỏ",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.06",
+     "name": "loc-nguoi-phu-trach",
+     "label": "Lọc · Người phụ trách",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Người phụ trách",
+        "figmaId": "2731:71809",
+        "layer": "Lọc · Người phụ trách",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Người phụ trách",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": true,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Người phụ trách",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.07",
+     "name": "loc-tuan-nay",
+     "label": "Lọc · Tuần này",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Tuần này",
+        "figmaId": "2731:71820",
+        "layer": "Lọc · Tuần này",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Tuần này",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Tuần này",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.08",
+     "name": "loc-loai-hoa-don",
+     "label": "Lọc · Loại hoá đơn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Loại hoá đơn",
+        "figmaId": "2731:71831",
+        "layer": "Lọc · Loại hoá đơn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Loại hoá đơn",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "2",
+         "Count": true,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Loại hoá đơn",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.09",
+     "name": "loc-trang-thai",
+     "label": "Lọc · Trạng thái",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Trạng thái",
+        "figmaId": "2731:71842",
+        "layer": "Lọc · Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Trạng thái",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "2",
+         "Count": true,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.10",
+     "name": "loc-tag",
+     "label": "Lọc · Tag",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Tag",
+        "figmaId": "2731:71853",
+        "layer": "Lọc · Tag",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Tag",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Tag",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.11",
+     "name": "the-chi-so-so-ngay",
+     "label": "Thẻ chỉ số · Số ngày",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Thẻ chỉ số · Số ngày",
+        "figmaId": "3065:71290",
+        "layer": "Thẻ chỉ số · Số ngày",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số ngày",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Có đơn vị": false,
+         "Số liệu": "2",
+         "Tiêu đề": "Số ngày",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.12",
+     "name": "the-chi-so-tong-kpi",
+     "label": "Thẻ chỉ số · Tổng KPI",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Thẻ chỉ số · Tổng KPI",
+        "figmaId": "3065:71448",
+        "layer": "Thẻ chỉ số · Tổng KPI",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tổng KPI",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Có đơn vị": false,
+         "Số liệu": "8",
+         "Tiêu đề": "Tổng KPI",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.13",
+     "name": "the-chi-so-so-hoa-don",
+     "label": "Thẻ chỉ số · Số hoá đơn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Thẻ chỉ số · Số hoá đơn",
+        "figmaId": "3065:71488",
+        "layer": "Thẻ chỉ số · Số hoá đơn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số hoá đơn",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Có đơn vị": false,
+         "Số liệu": "17",
+         "Tiêu đề": "Số hoá đơn",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.14",
+     "name": "the-chi-so-gia-tri",
+     "label": "Thẻ chỉ số · Giá trị",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Thẻ chỉ số · Giá trị",
+        "figmaId": "3065:71289",
+        "layer": "Thẻ chỉ số · Giá trị",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Giá trị",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Số liệu": "28.904.001 đ",
+         "Đơn vị": "đơn vị",
+         "Có đơn vị": false,
+         "Có phần thêm": false,
+         "Tiêu đề": "Giá trị",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ nhấn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.15",
+     "name": "tooltip-trang-thai-hover",
+     "label": "Tooltip · Trạng thái (hover)",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Tooltip · Trạng thái (hover)",
+        "figmaId": "3058:76265",
+        "layer": "Tooltip · Trạng thái (hover)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tooltip · Trạng thái (hover)",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Đợi lớp",
+         "Property 1": "Trạng thái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.16",
+     "name": "tooltip-lien-he",
+     "label": "Tooltip · Liên hệ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Tooltip · Liên hệ",
+        "figmaId": "3058:101130",
+        "layer": "Tooltip · Liên hệ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tooltip · Liên hệ",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Thông tin liên hệ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.17",
+     "name": "tooltip-thong-tin-lop",
+     "label": "Tooltip · Thông tin lớp",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Tooltip · Thông tin lớp",
+        "figmaId": "3058:101143",
+        "layer": "Tooltip · Thông tin lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tooltip · Thông tin lớp",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Thông tin lớp"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F02",
+   "name": "row-103303",
+   "title": "Row · 103303",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F02.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72501",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 103303",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Ngày mai",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F02.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:71969",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 103303",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F02.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48429",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 103303",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F03",
+   "name": "row-103297",
+   "title": "Row · 103297",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F03.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72507",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 103297",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Hôm qua",
+         "Variant": "Danger",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F03.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72033",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 103297",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "2",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F03.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48433",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 103297",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F04",
+   "name": "chi-tiet-hoc-phi",
+   "title": "Chi tiết học phí",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F04.01",
+     "name": "atom-tag-solid",
+     "label": "Atom/Tag Solid",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Tag Solid",
+        "figmaId": "3058:76414",
+        "layer": "Atom/Tag Solid",
+        "confidence": "cao",
+        "region": "Chi tiết học phí",
+        "owner": "Atom/Tag Solid",
+        "component": "Atom/Tag Solid",
+        "variant": {
+         "Label": "Mới",
+         "Size": "20H",
+         "Tone": "Blue"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F04.02",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "3058:76421",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Chi tiết học phí",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "DN1_",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F05",
+   "name": "row-102486",
+   "title": "Row · 102486",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F05.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72513",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 102486",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1.000.000 đ",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F05.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72095",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 102486",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F05.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48437",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 102486",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F05.04",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Mouse click",
+        "figmaId": "2929:48340",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": "Row · 102486",
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F06",
+   "name": "row-103176",
+   "title": "Row · 103176",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F06.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72517",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 103176",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Thứ Sáu",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F06.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72159",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 103176",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F06.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48445",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 103176",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F07",
+   "name": "row-102533",
+   "title": "Row · 102533",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F07.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2929:48743",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 102533",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "25/09/2026",
+         "Variant": "Danger",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F07.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72221",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 102533",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F08",
+   "name": "row-102515",
+   "title": "Row · 102515",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F08.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72527",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 102515",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1.740.000 đ",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F08.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72282",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 102515",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F08.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48449",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 102515",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F09",
+   "name": "row-102214",
+   "title": "Row · 102214",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F09.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72531",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 102214",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Hôm nay",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F09.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72347",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 102214",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F09.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48453",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 102214",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F10",
+   "name": "row-102091",
+   "title": "Row · 102091",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F10.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72537",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 102091",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "2.286.000 đ",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F10.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72409",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 102091",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F10.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48457",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 102091",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F11",
+   "name": "row-103183",
+   "title": "Row · 103183",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F11.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72541",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 103183",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "12/10/2026",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F11.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72474",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 103183",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F11.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48465",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 103183",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
   }
  ],
  "exceptions": [

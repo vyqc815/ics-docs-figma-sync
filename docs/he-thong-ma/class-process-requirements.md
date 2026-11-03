@@ -27,31 +27,31 @@ Requirement: `teacher_role/class/class_process_requirements.md` — [Giáo viên
 
 ### `A01` Tiêu chuẩn lớp — Cây tiêu chuẩn và tiến độ
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LOP-060100` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | tien-do-tong |  |  | — |  | `TC02`, `TC05` | Chưa sync | QC |
-| `A01.02` | cay-package-category-action-item |  |  | — |  |  | Chưa sync | QC |
-| `A01.03` | mo-rong-item |  |  | — |  |  | Chưa sync | QC |
-| `A01.04` | action-xac-thuc-verify-duoc-gan |  |  | — |  |  | Chưa sync | QC |
-| `A01.05` | action-xac-thuc-verify-khong-gan-loai-kh |  |  | — |  |  | Chưa sync | QC |
-| `A01.06` | nut-them-tieu-chuan |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.07` | khong-co-noi-dung |  |  | — |  |  | Chưa sync | QC |
+| `A01.01` | tien-do-tong | `Card Menu v2 (Test)` Type=Menu phụ, State=Default | `I4915:260963;4901:214201;2245:87908` Label | — |  | `TC02`, `TC05` | Khớp | QC |
+| `A01.02` | cay-package-category-action-item |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.03` | mo-rong-item |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.04` | action-xac-thuc-verify-duoc-gan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.05` | action-xac-thuc-verify-khong-gan-loai-kh |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.06` | nut-them-tieu-chuan |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
+| `A01.07` | khong-co-noi-dung |  | `4333:13216` Bảng dữ liệu này đang trống | — |  |  | Khớp | QC |
 
 ### `A02` Cuộc họp — Khung màn và Danh sách buổi họp
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LOP-070100` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | danh-sach-buoi-hop |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | card-buoi-hop |  |  | — | opens `A02` |  | Chưa sync | QC |
-| `A02.03` | chon-buoi |  |  | — |  |  | Chưa sync | QC |
-| `A02.04` | so-nguoi-tham-gia |  |  | — |  |  | Chưa sync | QC |
-| `A02.05` | badge-cung-thoi-gian |  |  | — | opens `A02` |  | Chưa sync | QC |
-| `A02.06` | khong-co-buoi |  |  | — |  |  | Chưa sync | QC |
-| `A02.07` | loading-loi |  |  | — |  |  | Chưa sync | QC |
+| `A02.01` | danh-sach-buoi-hop |  | `4333:13923` Danh sách buổi họp | — |  |  | Khớp | QC |
+| `A02.02` | card-buoi-hop |  |  | — | opens `A02` |  | Chưa khớp tự động | QC |
+| `A02.03` | chon-buoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.04` | so-nguoi-tham-gia |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.05` | badge-cung-thoi-gian |  |  | — | opens `A02` |  | Chưa khớp tự động | QC |
+| `A02.06` | khong-co-buoi |  | `4333:13926` Chưa có dữ liệu | — |  |  | Khớp | QC |
+| `A02.07` | loading-loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Nội dung buổi họp và Action Item
 
@@ -59,25 +59,25 @@ Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tieu-de-vung |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | mo-ta |  |  | — |  | `TC11` | Chưa sync | QC |
-| `A03.03` | package-category-action-item |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | mo-rong-item |  |  | — |  |  | Chưa sync | QC |
-| `A03.05` | action-xac-thuc-verify-duoc-gan |  |  | — |  |  | Chưa sync | QC |
-| `A03.06` | action-xac-thuc-verify-khong-gan-giao-vi |  |  | — |  |  | Chưa sync | QC |
-| `A03.07` | action-item-loai-khac-check-progress-eva |  |  | — |  |  | Chưa sync | QC |
-| `A03.08` | bien-ban-cuoc-hop |  |  | — |  | `TC16` | Chưa sync | QC |
+| `A03.01` | tieu-de-vung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | mo-ta |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
+| `A03.03` | package-category-action-item |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | mo-rong-item |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | action-xac-thuc-verify-duoc-gan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.06` | action-xac-thuc-verify-khong-gan-giao-vi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.07` | action-item-loai-khac-check-progress-eva |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.08` | bien-ban-cuoc-hop |  |  | — |  | `TC16` | Chưa khớp tự động | QC |
 
 ### `A04` Toast phản hồi CRUD
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LOP-060100` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | thanh-cong |  |  | — |  | `TTC02` | Chưa sync | QC |
-| `A04.02` | thong-tin |  |  | — |  | `TTC01` | Chưa sync | QC |
-| `A04.03` | canh-bao |  |  | — |  |  | Chưa sync | QC |
-| `A04.04` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A04.01` | thanh-cong |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A04.02` | thong-tin | `Card Menu v2 (Test)` Type=Menu phụ, State=Default | `I4915:260963;4901:214212` Card Menu v2 (Test) | — |  | `TTC01` | Khớp | QC |
+| `A04.03` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ## 5. Nghiệp vụ
 
@@ -134,7 +134,7 @@ Frame: chưa có · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa sync (26): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A04.01`, `A04.02`, `A04.03`, `A04.04`
+- Chưa khớp tự động (21): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.07`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A04.01`, `A04.03`, `A04.04`
 - Popup chưa có màn cha (2): `GV-LOP-060100`, `GV-LOP-070100`
 - Phân loại cần design duyệt (2): `GV-LOP-060100`, `GV-LOP-070100`
 - Thiếu prototype link đi vào (2): `GV-LOP-060100`, `GV-LOP-070100`

@@ -26,6 +26,26 @@
 
 ## 4. Khu vực và item
 
+### `F01` (ngoài Body)
+
+Frame: `GV-LOP-030111`, `GV-LOP-030130`, `GV-LOP-030140`, `GV-LOP-030150`, `GV-LOP-030160` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `5292:222207` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | atom-badge | `Atom/Badge`  | `5292:222216` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | atom-button | `Atom/Button` Type=Primary, Size=Medium | `5292:222589` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | avatar-name | `AVATAR + Name`  | `5292:222296` AVATAR + Name | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | tag-thoi-gian | `Atom/Tag thời gian`  | `5292:222297` Tag thời gian | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | percent | `PERCENT %`  | `5292:222301` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | component-2 | `Switch Center`  | `5292:222447` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | account | `ACCOUNT` Size=Default | `5292:222449` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | header-vai-tro |  | `5292:222450` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.10` | sidebar-menu-teacher | `MENU - TEACHER`  | `5292:222541` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.11` | molecule-o-dinh-danh |  | `5292:223568` Molecule/Ô định danh | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.12` | atom-input | `Atom/Input` State=Textarea, Kiểu=M | `5292:223651` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.13` | minh-hoa | `Empty State / Illustration` Type=Gửi | `5292:225662` Minh hoạ | — |  |  | Chỉ có trên Figma | Figma |
+
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

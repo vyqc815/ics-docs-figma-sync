@@ -17,16 +17,571 @@
    "nodeId": "4899:117449",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/luong/de-xuat-tang-luong",
    "link": "/luong/de-xuat-tang-luong",
    "dark": "ADM-LGV-020000-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "ADM-LGV-02.F01"
+   ]
   }
  },
- "regions": [],
+ "regions": [
+  {
+   "id": "ADM-LGV-02.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lgv-020000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-LGV-02.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "4899:117499",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.02",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:249533",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Lương / Đề xuất lương"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.03",
+     "name": "tim-kiem",
+     "label": "Tìm kiếm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "4899:117596",
+        "layer": "Tìm kiếm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tìm kiếm",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm giáo viên...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.04",
+     "name": "filter-trung-tam",
+     "label": "Filter · Trung tâm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Filter · Trung tâm",
+        "figmaId": "4899:117597",
+        "layer": "Filter · Trung tâm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Trung tâm",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trung tâm",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.05",
+     "name": "filter-trang-thai",
+     "label": "Filter · Trạng thái",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Filter · Trạng thái",
+        "figmaId": "4899:117598",
+        "layer": "Filter · Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Trạng thái",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.06",
+     "name": "filter-thang-nay",
+     "label": "Filter · Tháng này",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Filter · Tháng này",
+        "figmaId": "4899:117599",
+        "layer": "Filter · Tháng này",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Tháng này",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Tháng này",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.07",
+     "name": "the-chi-so-so-lop",
+     "label": "Thẻ chỉ số · Số lớp",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Thẻ chỉ số · Số lớp",
+        "figmaId": "4899:117603",
+        "layer": "Thẻ chỉ số · Số lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số lớp",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "6/6",
+         "Có đơn vị": false,
+         "Biểu tượng": "1966:7617",
+         "Có phần thêm": false,
+         "Tiêu đề": "Mới",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.08",
+     "name": "the-chi-so-so-buoi-da-day",
+     "label": "Thẻ chỉ số · Số buổi đã dạy",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Thẻ chỉ số · Số buổi đã dạy",
+        "figmaId": "4899:117604",
+        "layer": "Thẻ chỉ số · Số buổi đã dạy",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số buổi đã dạy",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "26.7%",
+         "Có đơn vị": false,
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Tiêu đề": "Đang xử lý",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.09",
+     "name": "the-chi-so-luong-buoi-day",
+     "label": "Thẻ chỉ số · Lương buổi dạy",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Thẻ chỉ số · Lương buổi dạy",
+        "figmaId": "4899:117605",
+        "layer": "Thẻ chỉ số · Lương buổi dạy",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lương buổi dạy",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "14.8%",
+         "Có đơn vị": false,
+         "Biểu tượng": "2925:24887",
+         "Có phần thêm": false,
+         "Tiêu đề": "Đã duyệt",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.10",
+     "name": "the-chi-so-luong-kpi",
+     "label": "Thẻ chỉ số · Lương KPI",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Thẻ chỉ số · Lương KPI",
+        "figmaId": "4899:117606",
+        "layer": "Thẻ chỉ số · Lương KPI",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lương KPI",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "13.5%",
+         "Có đơn vị": false,
+         "Biểu tượng": "3065:43736",
+         "Có phần thêm": false,
+         "Tiêu đề": "Từ chối",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.11",
+     "name": "the-chi-so-luong-ot",
+     "label": "Thẻ chỉ số · Lương OT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Thẻ chỉ số · Lương OT",
+        "figmaId": "4899:117607",
+        "layer": "Thẻ chỉ số · Lương OT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lương OT",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "0%",
+         "Có đơn vị": false,
+         "Biểu tượng": "1053:2224",
+         "Có phần thêm": false,
+         "Tiêu đề": "Mức tăng TB",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.12",
+     "name": "the-chi-so-tong-luong",
+     "label": "Thẻ chỉ số · Tổng lương",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Thẻ chỉ số · Tổng lương",
+        "figmaId": "4899:117608",
+        "layer": "Thẻ chỉ số · Tổng lương",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tổng lương",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "6/6",
+         "Có đơn vị": false,
+         "Biểu tượng": "2925:35763",
+         "Có phần thêm": false,
+         "Tiêu đề": "Tổng đề xuất",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.13",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Avatar",
+        "figmaId": "4899:117905",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Phan Thị Lan Anh",
+         "Size": "32"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.14",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "4899:117914",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "240.000 đ",
+         "Type": "TỔNG DOANH THU"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LGV-02.F01.15",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-020000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "4899:117921",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Mới",
+         "Variant": "Info",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
  "exceptions": [],
  "flows": [],
  "testcases": [],

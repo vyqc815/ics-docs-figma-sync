@@ -67,13 +67,17 @@
    "nodeId": "3065:62875",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/tag/quan-ly-tag",
    "link": "/tag/quan-ly-tag",
    "dark": "ADM-TAG-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": []
+   "regions": [
+    "TD-TD.A01",
+    "TD-TD.A04",
+    "TD-TD.F01"
+   ]
   },
   "ADM-TAG-010010": {
    "id": "ADM-TAG-010010",
@@ -88,13 +92,15 @@
    "nodeId": "3065:69413",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-tag-010010",
    "link": "/tag/quan-ly-tag?popup=ADM-TAG-010010",
    "dark": "ADM-TAG-010010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "TD-TD.A03"
+   ]
   },
   "ADM-TAG-010020": {
    "id": "ADM-TAG-010020",
@@ -109,13 +115,15 @@
    "nodeId": "3065:69665",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-tag-010020",
    "link": "/tag/quan-ly-tag?popup=ADM-TAG-010020",
    "dark": "ADM-TAG-010020-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "TD-TD.A02"
+   ]
   }
  },
  "regions": [
@@ -123,7 +131,9 @@
    "id": "TD-TD.A01",
    "name": "trang-1-tag-quan-ly-va-nhom",
    "title": "Trang 1: Tag quản lý và Nhóm",
-   "screens": [],
+   "screens": [
+    "adm-tag-010000"
+   ],
    "screensGuessed": [
     "ADM-TAG-010020"
    ],
@@ -140,7 +150,35 @@
      "spec": "Hiển thị các tag đã tạo; nút `Thêm tag` mở popup tạo tag trong nhóm đang chọn. Phải có nhóm rồi mới thêm được tag.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-tag-010000": [
+       {
+        "term": "Tag quản lý",
+        "figmaId": "3065:64802",
+        "layer": "Tag quản lý",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Thêm tag",
+        "figmaId": "I3065:68021;139:67075",
+        "layer": "Thêm chức vụ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Role Component",
+        "component": "Role Component",
+        "variant": {
+         "Name": "Content +",
+         "Dropdown": "Có"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [
       {
        "type": "opens",
@@ -150,7 +188,7 @@
      ],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TD-TD.A01.02",
@@ -159,13 +197,27 @@
      "spec": "Hiển thị tên nhóm, mô tả nếu có và nhãn Loại. Chọn một nhóm để xem/thêm tag trong nhóm đó.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-tag-010000": [
+       {
+        "term": "Nhóm",
+        "figmaId": "3065:67847",
+        "layer": "Nhóm",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TD-TD.TC01"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TD-TD.A01.03",
@@ -174,7 +226,28 @@
      "spec": "Nút `+` mở popup Thêm nhóm.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-tag-010000": [
+       {
+        "term": "Thêm nhóm mới",
+        "figmaId": "3065:67890",
+        "layer": "Add New Bar · Thêm mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Thêm mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Nút": "1075:1478",
+         "Icon trái": false,
+         "Placeholder": "Thêm nhóm mới",
+         "Type": "Box",
+         "Size": "S",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [
       {
        "type": "opens",
@@ -183,8 +256,10 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "+"
+     ],
+     "status": "khop"
     },
     {
      "id": "TD-TD.A01.04",
@@ -196,17 +271,23 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Chỉnh sửa / Xóa"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ],
-   "screensFromItems": []
+   "screensFromItems": [
+    "adm-tag-010000"
+   ]
   },
   {
    "id": "TD-TD.A02",
    "name": "popup-them-nhom-moi",
    "title": "Popup Thêm nhóm mới",
-   "screens": [],
+   "screens": [
+    "adm-tag-010020"
+   ],
    "screensGuessed": [
     "ADM-TAG-010000"
    ],
@@ -223,11 +304,30 @@
      "spec": "Nhập tên nhóm.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-tag-010020": [
+       {
+        "term": "Tên nhóm",
+        "figmaId": "I3065:69670;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form Elements",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": true,
+         "Icon": "1832:36628",
+         "Label": "Tên nhóm",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TD-TD.A02.02",
@@ -236,11 +336,30 @@
      "spec": "Nhập mô tả nhóm nếu có.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-tag-010020": [
+       {
+        "term": "Mô tả",
+        "figmaId": "I3065:69671;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form Elements",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7703",
+         "Label": "Mô tả",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TD-TD.A02.03",
@@ -249,14 +368,35 @@
      "spec": "Chọn một trong đúng năm giá trị: `Học viên`, `Giáo viên`, `Lớp`, `Hoá đơn`, `Ghi chú`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-tag-010020": [
+       {
+        "term": "Loại",
+        "figmaId": "I3065:69673;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form Elements",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": true,
+         "Icon": "3065:69741",
+         "Label": "Loại",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TD-TD.TC02",
       "TD-TD.TC03"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Học viên"
+     ],
+     "status": "khop"
     },
     {
      "id": "TD-TD.A02.04",
@@ -268,17 +408,23 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thêm / Hủy"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ],
-   "screensFromItems": []
+   "screensFromItems": [
+    "adm-tag-010020"
+   ]
   },
   {
    "id": "TD-TD.A03",
    "name": "popup-them-tag",
    "title": "Popup Thêm tag",
-   "screens": [],
+   "screens": [
+    "adm-tag-010010"
+   ],
    "screensGuessed": [
     "ADM-TAG-010010"
    ],
@@ -298,8 +444,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tên tag, Mô tả"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TD-TD.A03.02",
@@ -318,8 +466,10 @@
       "TD-TD.TC10",
       "TD-TD.TC11"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Nhóm"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TD-TD.A03.03",
@@ -335,8 +485,10 @@
       "TD-TD.TC05",
       "TD-TD.TC06"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Loại"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TD-TD.A03.04",
@@ -345,13 +497,32 @@
      "spec": "Hiển thị theo UI để người dùng chọn/cập nhật thông tin tag.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-tag-010010": [
+       {
+        "term": "Màu sắc",
+        "figmaId": "3065:69601",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form Elements",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": true,
+         "Icon": "3065:69616",
+         "Label": "Màu sắc",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TD-TD.TC07"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TD-TD.A03.05",
@@ -363,17 +534,20 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thêm / Hủy bỏ"
+     ],
+     "status": "chua-thay-tren-figma"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "TD-TD.A04",
    "name": "toast-phan-hoi-crud",
    "title": "Toast phản hồi CRUD",
-   "screens": [],
+   "screens": [
+    "adm-tag-010000"
+   ],
    "screensGuessed": [
     "ADM-TAG-010000"
    ],
@@ -396,8 +570,10 @@
       "TD-TD.TTC01",
       "TD-TD.TTC03"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TD-TD.A04.02",
@@ -411,8 +587,10 @@
      "testcases": [
       "TD-TD.TTC02"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TD-TD.A04.03",
@@ -426,8 +604,10 @@
      "testcases": [
       "TD-TD.TTC03"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TD-TD.A04.04",
@@ -441,11 +621,173 @@
      "testcases": [
       "TD-TD.TTC04"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thông Báo"
+     ],
+     "status": "chua-thay-tren-figma"
     }
+   ]
+  },
+  {
+   "id": "TD-TD.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-tag-010000"
    ],
-   "screensFromItems": []
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TD-TD.F01.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tag-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:248607",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Tag"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TD-TD.F01.02",
+     "name": "atom-tag-solid",
+     "label": "Atom/Tag Solid",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tag-010000": [
+       {
+        "term": "Atom/Tag Solid",
+        "figmaId": "3065:68045",
+        "layer": "Atom/Tag Solid",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Tag Solid",
+        "component": "Atom/Tag Solid",
+        "variant": {
+         "Label": "H4",
+         "Size": "26H",
+         "Tone": "Amber"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TD-TD.F01.03",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tag-010000": [
+       {
+        "term": "Mouse click",
+        "figmaId": "3065:68897",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TD-TD.F01.04",
+     "name": "role-component",
+     "label": "Role Component",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tag-010000": [
+       {
+        "term": "Role Component",
+        "figmaId": "3065:68021",
+        "layer": "Role Component",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Role Component",
+        "component": "Role Component",
+        "variant": {
+         "Name": "Content +",
+         "Dropdown": "Có"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TD-TD.F01.05",
+     "name": "loai-tag",
+     "label": "Loại tag",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tag-010000": [
+       {
+        "term": "Loại tag",
+        "figmaId": "3065:67854",
+        "layer": "Loại tag",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Loại tag",
+        "component": "Loại tag",
+        "variant": {
+         "Property 1": "Lớp",
+         "Property 2": "Text"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
   }
  ],
  "exceptions": [

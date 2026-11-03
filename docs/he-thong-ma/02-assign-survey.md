@@ -33,66 +33,93 @@ Requirement: `survey_bug/survey/02-assign-survey/02-assign-survey.md` — Giao k
 
 ### `A01` Trang 1: Giao khảo sát — tab Giáo viên
 
-Frame: chưa có (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
+Frame: `ADM-GKS-010000`, `ADM-GKS-020000`, `ADM-GKS-030000` (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Trang 2: Giao khảo sát — tab Lớp / Học viên
 
-Frame: chưa có (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
+Frame: `ADM-GKS-010000`, `ADM-GKS-020000`, `ADM-GKS-030000` (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A03` Popup 1: Chọn giáo viên (tab Giáo viên)
 
-Frame: chưa có (tool đoán:ADM-GKS-010010) · Nguồn nội dung: QC
+Frame: `ADM-GKS-010010` (tool đoán:ADM-GKS-010010) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A04` Popup 2: Chọn lớp (tab Lớp)
 
-Frame: chưa có (tool đoán:ADM-GKS-020010) · Nguồn nội dung: QC
+Frame: `ADM-GKS-020010` (tool đoán:ADM-GKS-020010) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A05` Popup 3: Chọn trung tâm (tab Học viên — khảo sát Tuỳ chọn)
 
-Frame: chưa có (tool đoán:ADM-GKS-010005, ADM-GKS-020005) · Nguồn nội dung: QC
+Frame: `ADM-GKS-010005`, `ADM-GKS-020005` (tool đoán:ADM-GKS-010005, ADM-GKS-020005) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A06` Popup 4: Chọn buổi học (tab Học viên — khảo sát Bắt buộc)
 
-Frame: chưa có (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
+Frame: `ADM-GKS-010000`, `ADM-GKS-020000`, `ADM-GKS-030000` (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A07` Trang 3: Giao khảo sát — tab "Kết quả khảo sát"
 
-Frame: chưa có (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
+Frame: `ADM-GKS-010000`, `ADM-GKS-020000`, `ADM-GKS-030000` (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A08` Popup 5: Kết quả của 1 lớp / trung tâm
 
-Frame: chưa có (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
+Frame: `ADM-GKS-010000`, `ADM-GKS-020000`, `ADM-GKS-030000` (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A09` Popup 6: Kết quả từng giáo viên
 
-Frame: chưa có (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
+Frame: `ADM-GKS-010000`, `ADM-GKS-020000`, `ADM-GKS-030000` (tool đoán:ADM-GKS-010000, ADM-GKS-020000, ADM-GKS-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
+
+### `F01` (ngoài Body)
+
+Frame: `ADM-GKS-010000`, `ADM-GKS-020000`, `ADM-GKS-030000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | giao-khao-sat | `Atom/Button` Type=Primary, Size=Small | `5070:4920` Giao khảo sát | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | tab-giao-khao-sat | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `5070:4922` Tab · Giao khảo sát | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | tab-ket-qua-khao-sat | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `5070:4923` Tab · Kết quả khảo sát | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | dropdown-trung-tam | `DD/Molecule/Trigger` Size=XS, State=Default | `5138:150693` Dropdown · Trung tâm | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | avatar | `Avatar` Size=32 | `5070:4937` Avatar | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | trang-thai | `Atom/Badge`  | `5070:4944` Trạng thái | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | xem-ket-qua | `Atom/Button` Type=Primary, Size=Small | `5070:4946` Xem kết quả | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | tab-giao-vien | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `5070:5052` Tab · Giáo viên | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | tab-lop | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `5070:5053` Tab · Lớp | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.10` | tab-hoc-vien | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `5070:5054` Tab · Học viên | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.11` | stt | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `5070:5057` STT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.12` | trang-thai-giao | `Atom/Status` Size=S | `5070:5060` Trạng thái giao | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.13` | so-luong | `Atom/Badge`  | `5070:5067` Số lượng | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.14` | chon-cuoc-khao-sat | `DD/Molecule/Trigger` Size=S, State=Default | `5070:5095` Chọn cuộc khảo sát | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.15` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:245517` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.16` | account | `ACCOUNT` Size=Default | `4273:152766` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.17` | panel | `DD/Organism/Menu Panel` Type=Single | `5019:18702` Panel | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.18` | percent | `PERCENT %`  | `5070:5207` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.19` | logo-trung-tam | `Atom/Logo trung tâm`  | `5070:38376` Logo trung tâm | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.20` | loai-khao-sat | `Atom/Status` Size=S | `4885:42227` Loại khảo sát | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 

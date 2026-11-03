@@ -17,7 +17,7 @@
    "nodeId": "5425:278505",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai",
    "dark": "GV-LOP-040300-DK",
@@ -34,7 +34,10 @@
     "GV-LOP-040335"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "GV-LOP-04.F01",
+    "GV-LOP-04.F02"
+   ]
   },
   "GV-LOP-040301": {
    "id": "GV-LOP-040301",
@@ -49,7 +52,7 @@
    "nodeId": "5425:279548",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-cau-hoi-con",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040301",
    "dark": "GV-LOP-040301-DK",
@@ -80,7 +83,7 @@
    "nodeId": "5425:280390",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-cau-khong-can-cham",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040302",
    "dark": "GV-LOP-040302-DK",
@@ -101,7 +104,7 @@
    "nodeId": "5425:281223",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/gv-lop-040310",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?popup=GV-LOP-040310",
    "dark": "GV-LOP-040310-DK",
@@ -122,7 +125,7 @@
    "nodeId": "5425:281249",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/gv-lop-040311",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?popup=GV-LOP-040311",
    "dark": "GV-LOP-040311-DK",
@@ -143,7 +146,7 @@
    "nodeId": "5750:77412",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-trac-nghiem-app-cham",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040330",
    "dark": "GV-LOP-040330-DK",
@@ -174,7 +177,7 @@
    "nodeId": "5750:77749",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-sap-xep-app-cham",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040331",
    "dark": "GV-LOP-040331-DK",
@@ -205,7 +208,7 @@
    "nodeId": "5750:78086",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-noi-tu-app-cham",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040332",
    "dark": "GV-LOP-040332-DK",
@@ -236,7 +239,7 @@
    "nodeId": "5750:78423",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-noi-app-cham",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040333",
    "dark": "GV-LOP-040333-DK",
@@ -264,7 +267,7 @@
    "nodeId": "5750:78760",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-viet-gv-cham-ai-goi-y",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040334",
    "dark": "GV-LOP-040334-DK",
@@ -295,7 +298,7 @@
    "nodeId": "5750:79097",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-hinh-anh-gv-cham",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?state=GV-LOP-040335",
    "dark": "GV-LOP-040335-DK",
@@ -326,7 +329,7 @@
    "nodeId": "5757:418294",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-xem-anh-bai-viet-tay",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?popup=GV-LOP-040336",
    "dark": "GV-LOP-040336-DK",
@@ -349,7 +352,7 @@
    "nodeId": "5751:83819",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/gv-lop-040340",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai?popup=GV-LOP-040340",
    "dark": "GV-LOP-040340-DK",
@@ -368,7 +371,911 @@
    "regions": []
   }
  },
- "regions": [],
+ "regions": [
+  {
+   "id": "GV-LOP-04.F01",
+   "name": "maincontent",
+   "title": "MainContent",
+   "screens": [
+    "gv-lop-040300"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "GV-LOP-04.F01.01",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "5425:278895",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Đã Chấm và Sửa Bài Trên Lớp",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.02",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "5425:279197",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Câu 3",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.03",
+     "name": "trinh-phat-am-thanh",
+     "label": "Trình phát âm thanh",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Trình phát âm thanh",
+        "figmaId": "5741:417307",
+        "layer": "Trình phát âm thanh",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Trình phát âm thanh",
+        "component": "Atom/Audio Player",
+        "variant": {
+         "Thời gian": "00:00 / 00:05",
+         "State": "Chưa phát",
+         "Theme": "Light"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.04",
+     "name": "dd-molecule-trigger",
+     "label": "DD/Molecule/Trigger",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "DD/Molecule/Trigger",
+        "figmaId": "5425:279217",
+        "layer": "DD/Molecule/Trigger",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "DD/Molecule/Trigger",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Học Viên",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.05",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "5425:279232",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Nhập nhận xét áp dụng cho tất cả học viên trong câu này…",
+         "State": "Textarea",
+         "Kiểu": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.06",
+     "name": "so-thu-tu",
+     "label": "Số thứ tự",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Số thứ tự",
+        "figmaId": "5425:293927",
+        "layer": "Số thứ tự",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Số thứ tự",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.07",
+     "name": "hoc-vien",
+     "label": "Học viên",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Học viên",
+        "figmaId": "5425:293731",
+        "layer": "Học viên",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Học viên",
+        "component": "AVATAR + Name",
+        "variant": {
+         "Property 1": "AVATAR + Name 2"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.08",
+     "name": "diem-0",
+     "label": "Điểm 0",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Điểm 0",
+        "figmaId": "5425:293861",
+        "layer": "Điểm 0",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Điểm 0",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.09",
+     "name": "diem-1",
+     "label": "Điểm 1",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Điểm 1",
+        "figmaId": "5425:293863",
+        "layer": "Điểm 1",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Điểm 1",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.10",
+     "name": "diem-2",
+     "label": "Điểm 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Điểm 2",
+        "figmaId": "5425:293865",
+        "layer": "Điểm 2",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Điểm 2",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "2",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.11",
+     "name": "diem-3",
+     "label": "Điểm 3",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Điểm 3",
+        "figmaId": "5425:293867",
+        "layer": "Điểm 3",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Điểm 3",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "3",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.12",
+     "name": "diem-4",
+     "label": "Điểm 4",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Điểm 4",
+        "figmaId": "5425:293869",
+        "layer": "Điểm 4",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Điểm 4",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "4",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.13",
+     "name": "diem-5",
+     "label": "Điểm 5",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Điểm 5",
+        "figmaId": "5425:293871",
+        "layer": "Điểm 5",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Điểm 5",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "5",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.14",
+     "name": "diem-6",
+     "label": "Điểm 6",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Điểm 6",
+        "figmaId": "5425:293873",
+        "layer": "Điểm 6",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Điểm 6",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "6",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.15",
+     "name": "diem-7",
+     "label": "Điểm 7",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Điểm 7",
+        "figmaId": "5425:293875",
+        "layer": "Điểm 7",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Điểm 7",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "7",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.16",
+     "name": "diem-8",
+     "label": "Điểm 8",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Điểm 8",
+        "figmaId": "5425:293877",
+        "layer": "Điểm 8",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Điểm 8",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "8",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.17",
+     "name": "diem-9",
+     "label": "Điểm 9",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Điểm 9",
+        "figmaId": "5425:293879",
+        "layer": "Điểm 9",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Điểm 9",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "9",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.18",
+     "name": "diem-10",
+     "label": "Điểm 10",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Điểm 10",
+        "figmaId": "5425:293881",
+        "layer": "Điểm 10",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Điểm 10",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "10",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.19",
+     "name": "ghi-am-1-m4a",
+     "label": "ghi-am-1.m4a",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "ghi-am-1.m4a",
+        "figmaId": "5425:293948",
+        "layer": "ghi-am-1.m4a",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "ghi-am-1.m4a",
+        "component": "Atom/Uploaded File Card",
+        "variant": {
+         "Type": "Menu"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.20",
+     "name": "ghi-am-2-m4a",
+     "label": "ghi-am-2.m4a",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "ghi-am-2.m4a",
+        "figmaId": "5425:293963",
+        "layer": "ghi-am-2.m4a",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "ghi-am-2.m4a",
+        "component": "Atom/Uploaded File Card",
+        "variant": {
+         "Type": "Menu"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.21",
+     "name": "o-nhan-xet",
+     "label": "Ô nhận xét",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Ô nhận xét",
+        "figmaId": "5425:294005",
+        "layer": "Ô nhận xét",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Ô nhận xét",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Phát âm tốt. Lưu ý âm \"ch\" trong \"Ich\" đọc nhẹ hơn.",
+         "State": "Textarea",
+         "Kiểu": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.22",
+     "name": "nhan-xet-giao-vien-m4a",
+     "label": "nhan-xet-giao-vien.m4a",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "nhan-xet-giao-vien.m4a",
+        "figmaId": "5425:293978",
+        "layer": "nhan-xet-giao-vien.m4a",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "nhan-xet-giao-vien.m4a",
+        "component": "Atom/Uploaded File Card",
+        "variant": {
+         "Type": "Close"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.23",
+     "name": "o-dap-an",
+     "label": "Ô đáp án",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Ô đáp án",
+        "figmaId": "5425:294014",
+        "layer": "Ô đáp án",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Ô đáp án",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "Disabled",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F01.24",
+     "name": "ty-le-diem",
+     "label": "Tỷ lệ điểm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Tỷ lệ điểm",
+        "figmaId": "5425:293760",
+        "layer": "Tỷ lệ điểm",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Tỷ lệ điểm",
+        "component": "PERCENT %",
+        "variant": {
+         "Property 1": "ĐN 2"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "GV-LOP-04.F02",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "gv-lop-040300"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "GV-LOP-04.F02.01",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Component 2",
+        "figmaId": "5425:278789",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Sakumi"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F02.02",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "5425:278791",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Giáo Viên",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F02.03",
+     "name": "header-vai-tro",
+     "label": "Header/Vai trò",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Header/Vai trò",
+        "figmaId": "5425:278792",
+        "layer": "Header/Vai trò",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Header/Vai trò",
+        "component": null,
+        "variant": {
+         "Vai trò": "Giáo viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-04.F02.04",
+     "name": "sidebar-menu-teacher",
+     "label": "Sidebar · MENU - TEACHER",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040300": [
+       {
+        "term": "Sidebar · MENU - TEACHER",
+        "figmaId": "5425:278883",
+        "layer": "Sidebar · MENU - TEACHER",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - TEACHER",
+        "component": "MENU - TEACHER",
+        "variant": {
+         "Trang": "Lớp học / Giảng dạy / Bài tập và Kiểm tra"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
  "exceptions": [],
  "flows": [],
  "testcases": [],

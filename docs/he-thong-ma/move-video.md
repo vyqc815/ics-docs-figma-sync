@@ -33,24 +33,37 @@ Requirement: `tools/move_video/move_video.md` — Move Video (tiền tố `T-MV`
 
 ### `A01` Trang 1: Xác minh Gmail
 
-Frame: chưa có (tool đoán:ADM-MV-010000, ADM-MV-020000) · Nguồn nội dung: QC
+Frame: `ADM-MV-010000`, `ADM-MV-020000` (tool đoán:ADM-MV-010000, ADM-MV-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Trang 2: Danh sách video
 
-Frame: chưa có (tool đoán:ADM-MV-010000, ADM-MV-020000) · Nguồn nội dung: QC
+Frame: `ADM-MV-010000`, `ADM-MV-020000` (tool đoán:ADM-MV-010000, ADM-MV-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A03` Trang 3: Popup Đổi tên video và xác nhận xoá
 
-Frame: chưa có (tool đoán:ADM-MV-020010, ADM-MV-020020, ADM-MV-020030) · Nguồn nội dung: QC
+Frame: `ADM-MV-020010`, `ADM-MV-020020`, `ADM-MV-020030` (tool đoán:ADM-MV-020010, ADM-MV-020020, ADM-MV-020030) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
+
+### `F01` (ngoài Body)
+
+Frame: `ADM-MV-010000`, `ADM-MV-020000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | empty-state-gmail | `Empty State / Gmail`  | `2619:203719` Empty State / Gmail | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | atom-button | `Atom/Button` Type=Primary, Size=Medium | `2409:148203` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:240882` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | account | `ACCOUNT` Size=Default | `2706:23582` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | filter-thoi-gian | `DD/Molecule/Trigger` Size=XS, State=Active | `3772:93338` Filter · Thời gian | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | mv-row-video | `MV/Row · Video` State=Hover | `2409:150819` MV/Row · Video | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 

@@ -81,13 +81,21 @@
    "nodeId": "1105:5472",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/lop-hoc/nhat-ky/nhat-ky",
    "link": "/lop-hoc/nhat-ky/nhat-ky",
    "dark": "ADM-LOP-050100-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": []
+   "regions": [
+    "M-CDM2.A01",
+    "M-CDM2.A02",
+    "M-CDM2.A03",
+    "M-CDM2.A04",
+    "M-CDM2.A05",
+    "M-CDM2.A06",
+    "M-CDM2.F01"
+   ]
   }
  },
  "regions": [
@@ -95,7 +103,9 @@
    "id": "M-CDM2.A01",
    "name": "tab-tin-nhan-danh-sach-tin-nhan",
    "title": "Tab Tin Nhắn — Danh sách tin nhắn",
-   "screens": [],
+   "screens": [
+    "adm-lop-050100"
+   ],
    "screensGuessed": [
     "ADM-LOP-050100"
    ],
@@ -121,8 +131,11 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Nút +",
+      "Tạo tin nhắn bán tự động mới"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A01.02",
@@ -131,13 +144,27 @@
      "spec": "Hiển thị Tiêu đề và Mô tả ở đầu item như ảnh; các field là metadata của tin nhắn lớp, không tự thêm vào nội dung gửi.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "2533:20883",
+        "layer": "TIÊU ĐỀ",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDM2.TC01"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDM2.A01.03",
@@ -146,7 +173,26 @@
      "spec": "Dropdown hiển thị tên mẫu đang dùng, không hiển thị placeholder mẫu như một tin nhắn đã gửi. Cho chọn mẫu theo quyền; đổi mẫu không reset count hoặc mở lại quyền gửi học viên đã thành công.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Tin nhắn",
+        "figmaId": "I1299:21;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDM2.TC01",
@@ -154,7 +200,7 @@
       "M-CDM2.TC06"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDM2.A01.04",
@@ -169,8 +215,11 @@
       "M-CDM2.TC01",
       "M-CDM2.TC02"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Ngày tạo",
+      "dd/MM/yyyy"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A01.05",
@@ -179,13 +228,29 @@
      "spec": "Hiển thị `S/T`: S là số học viên đã được xác nhận gửi thành công cho item này, T là tổng người nhận trong danh sách. Với 8 học viên chưa gửi hiển thị `0/8`. Gửi thất bại/đang chờ không tăng S; Không cho gửi lại học viên đã thành công trong cùng item.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "S/T",
+        "figmaId": "2533:20875",
+        "layer": "Filter Pills Toolbar",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDM2.TC01"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Số người đã gửi"
+     ],
+     "status": "khop"
     },
     {
      "id": "M-CDM2.A01.06",
@@ -197,8 +262,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Gửi chung",
+      "Gửi"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A01.07",
@@ -210,8 +278,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Mở/Thu gọn"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A01.08",
@@ -229,8 +299,10 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Nút × đỏ"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A01.09",
@@ -239,11 +311,46 @@
      "spec": "Ô `Tìm kiếm...` theo ảnh, **chỉ search theo Tiêu đề tin nhắn** trong lớp hiện tại. Không search Mô tả, tên mẫu, nội dung mẫu hoặc thông tin học viên. Thời điểm kích hoạt còn cần xác nhận. Không tự kế thừa debounce của Nhật Ký sang Tin Nhắn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "I2533:21147;1739:32351",
+        "layer": "Tìm nội dung...",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm lớp học",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Tìm kiếm...",
+        "figmaId": "I2533:21147;1739:32351",
+        "layer": "Tìm nội dung...",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm lớp học",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDM2.A01.10",
@@ -255,17 +362,20 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tải dữ liệu"
+     ],
+     "status": "chua-thay-tren-figma"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "M-CDM2.A02",
    "name": "popup-tao-tin-nhan-ban-tu-dong-moi",
    "title": "Popup Tạo tin nhắn bán tự động mới",
-   "screens": [],
+   "screens": [
+    "adm-lop-050100"
+   ],
    "screensGuessed": [
     "ADM-LOP-050100"
    ],
@@ -282,7 +392,21 @@
      "spec": "**Bắt buộc**, không giới hạn ký tự; không chấp nhận rỗng/chỉ khoảng trắng. Hiển thị xuống dòng khi dài trên item, giữ toàn bộ giá trị đã lưu.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "2533:20883",
+        "layer": "TIÊU ĐỀ",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDM2.TC07",
@@ -290,7 +414,7 @@
       "M-CDM2.TC14"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDM2.A02.02",
@@ -299,7 +423,21 @@
      "spec": "**Bắt buộc**, không giới hạn ký tự; không chấp nhận rỗng/chỉ khoảng trắng. Là metadata bổ sung trên item, không tự thêm vào nội dung gửi.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Mô tả",
+        "figmaId": "2533:20885",
+        "layer": "MÔ TẢ",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDM2.TC07",
@@ -307,7 +445,7 @@
       "M-CDM2.TC14"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDM2.A02.03",
@@ -319,8 +457,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Chọn mẫu tin nhắn"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A02.04",
@@ -332,8 +472,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Nội dung tin nhắn"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A02.05",
@@ -342,11 +484,25 @@
      "spec": "Đóng popup, không thêm item và không gửi tới học viên; không Toast CRUD.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Hủy",
+        "figmaId": "2533:20899",
+        "layer": "Thuy SP đã follow học viên",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDM2.A02.06",
@@ -364,17 +520,20 @@
       "M-CDM2.TC11",
       "M-CDM2.TC13"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tạo mới"
+     ],
+     "status": "chua-thay-tren-figma"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "M-CDM2.A03",
    "name": "danh-sach-hoc-vien-va-chon-nen-tang",
    "title": "Danh sách học viên và chọn nền tảng",
-   "screens": [],
+   "screens": [
+    "adm-lop-050100"
+   ],
    "screensGuessed": [
     "ADM-LOP-050100"
    ],
@@ -391,14 +550,28 @@
      "spec": "Mỗi dòng có icon/avatar, tên học viên và email như UI. Thông tin PH nếu có hiển thị từ dữ liệu nguồn; không mặc nhiên chuyển người nhận sang phụ huynh chỉ vì tên có PH.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Học viên",
+        "figmaId": "2533:20899",
+        "layer": "Thuy SP đã follow học viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDM2.TC15",
       "M-CDM2.TC19"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDM2.A03.02",
@@ -410,8 +583,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Nguồn người nhận"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A03.03",
@@ -423,8 +598,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Dropdown nền tảng"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A03.04",
@@ -436,8 +613,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Đích gửi"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A03.05",
@@ -449,8 +628,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Gửi từng học viên"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A03.06",
@@ -462,17 +643,20 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thiếu liên kết nền tảng"
+     ],
+     "status": "chua-thay-tren-figma"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "M-CDM2.A04",
    "name": "lay-bien-comgao-va-gui-tin-nhan",
    "title": "Lấy biến CơmGao và gửi tin nhắn",
-   "screens": [],
+   "screens": [
+    "adm-lop-050100"
+   ],
    "screensGuessed": [
     "ADM-LOP-050100"
    ],
@@ -492,8 +676,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Biến mẫu"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A04.02",
@@ -505,8 +691,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thay biến"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A04.03",
@@ -518,8 +706,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Gửi một người"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A04.04",
@@ -531,8 +721,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Gửi toàn bộ"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A04.05",
@@ -544,8 +736,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Đang gửi"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A04.06",
@@ -557,8 +751,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Kết quả từng người"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A04.07",
@@ -570,8 +766,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Số người đã gửi"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A04.08",
@@ -586,17 +784,20 @@
       "M-CDM2.TC27",
       "M-CDM2.TC29"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Gửi lại"
+     ],
+     "status": "chua-thay-tren-figma"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "M-CDM2.A05",
    "name": "quan-ly-item-tin-nhan-da-tao",
    "title": "Quản lý item tin nhắn đã tạo",
-   "screens": [],
+   "screens": [
+    "adm-lop-050100"
+   ],
    "screensGuessed": [
     "ADM-LOP-050100"
    ],
@@ -616,8 +817,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Dropdown mẫu trên item"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A05.02",
@@ -629,8 +832,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Sửa Tiêu đề/Mô tả"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A05.03",
@@ -648,8 +853,11 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Nút ×",
+      "Bạn có chắc muốn xóa tin nhắn này?"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A05.04",
@@ -661,8 +869,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tin nhắn đã gửi"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A05.05",
@@ -676,8 +886,11 @@
      "testcases": [
       "M-CDM2.TC35"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Xác nhận xóa",
+      "Xóa tin nhắn thành công."
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A05.06",
@@ -689,17 +902,20 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Dữ liệu kết quả gửi"
+     ],
+     "status": "chua-thay-tren-figma"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "M-CDM2.A06",
    "name": "toast-phan-hoi-crud-va-gui-tin-nhan",
    "title": "Toast phản hồi CRUD và gửi tin nhắn",
-   "screens": [],
+   "screens": [
+    "adm-lop-050100"
+   ],
    "screensGuessed": [
     "ADM-LOP-050100"
    ],
@@ -724,8 +940,11 @@
       "M-CDM2.TTC03",
       "M-CDM2.TTC04"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thành Công",
+      "Tạo tin nhắn thành công."
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A06.02",
@@ -739,8 +958,11 @@
      "testcases": [
       "M-CDM2.TTC04"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thông Báo",
+      "Đang gửi tin nhắn. Vui lòng chờ cập nhật kết quả."
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A06.03",
@@ -752,8 +974,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Cảnh Báo",
+      "Vui lòng nhập đầy đủ tiêu đề và mô tả."
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A06.04",
@@ -765,8 +990,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Có Lỗi Xảy Ra",
+      "Không thể tạo tin nhắn. Vui lòng thử lại."
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDM2.A06.05",
@@ -778,11 +1006,278 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Đóng và thời lượng"
+     ],
+     "status": "chua-thay-tren-figma"
     }
+   ]
+  },
+  {
+   "id": "M-CDM2.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-050100"
    ],
-   "screensFromItems": []
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDM2.F01.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "1299:15",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.02",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "2533:21147",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm lớp học",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.03",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Dropdown",
+        "figmaId": "2533:20876",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Đối tượng",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.04",
+     "name": "lich-giao-vien-dang-ky",
+     "label": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "figmaId": "2533:20901",
+        "layer": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "component": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "variant": {
+         "Icon": "Đồng hồ",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.05",
+     "name": "atom-object-chip",
+     "label": "Atom/Object Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Atom/Object Chip",
+        "figmaId": "2533:20905",
+        "layer": "Atom/Object Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Object Chip",
+        "component": "Atom/Object Chip",
+        "variant": {
+         "Name": "Hệ thống",
+         "Type": "System"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.06",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "2533:21031",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Add Rounded"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.07",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:231079",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Nhật ký"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.08",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3497:53466",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
   }
  ],
  "exceptions": [

@@ -29,57 +29,76 @@ Requirement: `course_management/semester/information/information.md` — Học K
 
 ### `A01` Trang 1.1: Danh sách kỳ (bên phải)
 
-Frame: chưa có (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
+Frame: `CD-KH-030100` (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Trang 1.2: Tab Thông tin (bên trái)
 
-Frame: chưa có (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
+Frame: `CD-KH-030100` (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | ten-mo-ta-dau-tab |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | ten-hoc-ky |  |  | — |  | `TC01`, `TC02`, `TC03`, `TC04` | Chưa sync | QC |
-| `A02.03` | ma-hoc-ky |  |  | — |  | `TC04` | Chưa sync | QC |
-| `A02.04` | id-hoc-ky |  |  | — | governed-by `REQ02` | `TC05`, `TC5b`, `TC06` | Chưa sync | QC |
-| `A02.05` | code |  |  | — |  | `TC01`, `TC04` | Chưa sync | QC |
-| `A02.06` | so-buoi-hoc |  |  | — |  | `TC04` | Chưa sync | QC |
-| `A02.07` | trinh-do-danh-muc |  |  | — |  | `TC04` | Chưa sync | QC |
-| `A02.08` | data-token-type-text-data-version-so |  |  | — |  |  | Chưa sync | QC |
-| `A02.09` | tong-on |  |  | — |  | `TC03`, `TC04`, `TC5b`, `TC09`, `TC11` | Chưa sync | QC |
+| `A02.01` | ten-mo-ta-dau-tab |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.02` | ten-hoc-ky | `Atom/Label`  | `I3004:49766;3004:58620` Atom/Label | — |  | `TC01`, `TC02`, `TC03`, `TC04` | Khớp | QC |
+| `A02.03` | ma-hoc-ky | `Atom/Label`  | `I3004:49712;3004:58620` Atom/Label | — |  | `TC04` | Khớp | QC |
+| `A02.04` | id-hoc-ky | `Atom/Label`  | `I3004:49872;3004:58620` Atom/Label | — | governed-by `REQ02` | `TC05`, `TC5b`, `TC06` | Khớp | QC |
+| `A02.05` | code | `Atom/Label`  | `I3004:49928;3004:58620` Atom/Label; `I3004:49928;3004:58620` Atom/Label | — |  | `TC01`, `TC04` | Khớp | QC |
+| `A02.06` | so-buoi-hoc | `Atom/Label`  | `I3004:50030;3004:58620` Atom/Label | — |  | `TC04` | Khớp | QC |
+| `A02.07` | trinh-do-danh-muc |  |  | — |  | `TC04` | Chưa khớp tự động | QC |
+| `A02.08` | data-token-type-text-data-version-so |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.09` | tong-on |  | `1185:2854` Tổng ôn | — |  | `TC03`, `TC04`, `TC5b`, `TC09`, `TC11` | Khớp | QC |
 
 ### `A03` Trang 1.3: Popup Kích hoạt công khai học kỳ
 
-Frame: chưa có (tool đoán:CD-KH-030104) · Nguồn nội dung: QC
+Frame: `CD-KH-030110`, `CD-KH-030120` (tool đoán:CD-KH-030104) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | hien-thi |  |  | — |  | `TC01`, `TC08`, `TC10`, `TC11` | Chưa sync | QC |
-| `A03.03` | o-id-hoc-ky |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | thong-bao-duoi-o-id |  |  | — |  |  | Chưa sync | QC |
-| `A03.05` | luu-y |  |  | — |  |  | Chưa sync | QC |
-| `A03.06` | nut |  |  | — |  |  | Chưa sync | QC |
+| `A03.01` | tieu-de | `Popup/Header`  | `I2527:167869;2514:153353` Tiêu đề | — |  |  | Khớp | QC |
+| `A03.02` | hien-thi |  |  | — |  | `TC01`, `TC08`, `TC10`, `TC11` | Chưa khớp tự động | QC |
+| `A03.03` | o-id-hoc-ky |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | thong-bao-duoi-o-id |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | luu-y |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.06` | nut | `Atom/Button` Type=Secondary, Size=Medium; `Popup/Footer` Type=Hai nút | `2527:167876` Popup/Footer; `I2527:167876;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 
 ### `A04` Popup xoá học kỳ
 
-Frame: chưa có (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
+Frame: `CD-KH-030100` (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A05` Popup Nhân bản học kỳ
 
-Frame: chưa có (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
+Frame: `CD-KH-030104`, `CD-KH-030110`, `CD-KH-030120` (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | tieu-de |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A05.02` | noi-dung |  |  | — |  | `TC03`, `TC04`, `TC08` | Chưa có thiết kế | QC |
-| `A05.03` | nut |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A05.04` | toast |  |  | — |  | `TC04`, `TC06`, `TC16` | Chưa có thiết kế | QC |
+| `A05.01` | tieu-de | `Popup/Header`  | `I2527:167869;2514:153353` Tiêu đề | — |  |  | Khớp một phần | QC |
+| `A05.02` | noi-dung | `ICON MENU`  | `I6006:129240;4901:220701;2245:87904` Icon | — |  | `TC03`, `TC04`, `TC08` | Khớp | QC |
+| `A05.03` | nut |  | `6006:129340` Nút | — |  |  | Khớp | QC |
+| `A05.04` | toast |  |  | — |  | `TC04`, `TC06`, `TC16` | Chưa khớp tự động | QC |
+
+### `F01` (ngoài Body)
+
+Frame: `CD-KH-030100` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `2177:28953` Tab | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | molecule-field | `Molecule/Field`  | `3004:49766` Molecule/Field | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | atom-button | `Atom/Button` Type=Outlined Icon, Size=Small | `1185:2855` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | bo-loc-hoc-ky-cap-do | `DD/Molecule/Trigger` Size=XS, State=Default | `5614:58982` Bộ lọc · Học kỳ (cấp độ) | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | atom-icon-button | `Atom/Icon Button`  | `2860:16133` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | mouse-click |  | `2860:16134` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | atom-status | `Atom/Status` Size=S | `2860:27377` Atom/Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | dd-organism-menu-panel | `DD/Organism/Menu Panel` Type=Action | `6006:130414` DD/Organism/Menu Panel | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | add-new-bar-them-moi | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `2860:16151` Add New Bar · Thêm mới | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.10` | sidebar-menu-cd | `MENU - CD`  | `4915:255632` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.11` | account | `ACCOUNT` Size=Default | `2860:13689` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.12` | component-2 | `Switch Center`  | `4273:160638` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -133,7 +152,7 @@ Frame: chưa có (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa sync (15): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`
+- Chưa khớp tự động (8): `A02.01`, `A02.07`, `A02.08`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A05.04`
 - Frame Figma chưa có requirement (3): `CD-KH-030104`, `CD-KH-030110`, `CD-KH-030120`
 - Phân loại cần design duyệt (1): `CD-KH-030104`
 - Thiếu prototype link đi vào (1): `CD-KH-030104`

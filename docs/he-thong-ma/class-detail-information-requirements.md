@@ -27,92 +27,103 @@ Requirement: `management_requirement/class_management/class_detail_information_r
 
 ### `A01` Tab Thông tin lớp học
 
-Frame: chưa có (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | lop-khong-chinh-thuc |  |  | — |  | `TC39` | Chưa sync | QC |
-| `A01.02` | ma-lop |  |  | — |  | `TC01`, `TC02`, `TC03` | Chưa sync | QC |
-| `A01.03` | link-google-meet |  |  | — |  |  | Chưa sync | QC |
-| `A01.04` | khoa-hoc |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.05` | ghi-chu |  |  | — |  | `TC01`, `TC02`, `TC03` | Chưa sync | QC |
-| `A01.06` | mo-ta |  |  | — |  | `TC01`, `TC02`, `TC03` | Chưa sync | QC |
-| `A01.07` | ngay-bat-dau |  |  | — |  |  | Chưa sync | QC |
-| `A01.08` | ngay-ket-thuc |  |  | — |  |  | Chưa sync | QC |
-| `A01.09` | loai-lop |  |  | — |  | `TC01`, `TC02`, `TC06`, `TC07` | Chưa sync | QC |
-| `A01.10` | trang-thai |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.11` | luu-cap-nhat |  |  | — |  | `TC02`, `TC03`, `TC04` | Chưa sync | QC |
-| `A01.12` | xoa-lop |  |  | — |  |  | Chưa sync | QC |
+| `A01.01` | lop-khong-chinh-thuc | `ACCOUNT` Size=Default | `2481:114920` Lớp không chính thức; `3497:50611` ACCOUNT | — |  | `TC39` | Khớp | QC |
+| `A01.02` | ma-lop | `Atom/Label`  | `I3004:49982;3004:58620` Atom/Label | — |  | `TC01`, `TC02`, `TC03` | Khớp | QC |
+| `A01.03` | link-google-meet | `Atom/Label`  | `I3004:49756;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A01.04` | khoa-hoc | `Atom/Label`  | `I3004:50108;3004:58620` Atom/Label | — |  | `TC01` | Khớp | QC |
+| `A01.05` | ghi-chu | `Atom/Label`  | `2210:14361` Atom/Label | — |  | `TC01`, `TC02`, `TC03` | Khớp | QC |
+| `A01.06` | mo-ta | `Atom/Label`  | `2210:14373` Atom/Label | — |  | `TC01`, `TC02`, `TC03` | Khớp | QC |
+| `A01.07` | ngay-bat-dau | `Atom/Label`  | `I3004:50122;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A01.08` | ngay-ket-thuc | `Atom/Label`  | `I3004:50041;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A01.09` | loai-lop | `Atom/Label`  | `I3004:49798;3004:58620` Atom/Label | — |  | `TC01`, `TC02`, `TC06`, `TC07` | Khớp | QC |
+| `A01.10` | trang-thai | `Atom/Label`  | `I3004:50093;3004:58620` Atom/Label | — |  | `TC01` | Khớp | QC |
+| `A01.11` | luu-cap-nhat |  |  | — |  | `TC02`, `TC03`, `TC04` | Chưa khớp tự động | QC |
+| `A01.12` | xoa-lop | `ACCOUNT` Size=Default; `Atom/Button` Type=Outlined, Size=Small | `3650:46245` Atom/Button; `3497:50611` ACCOUNT | — |  |  | Khớp | QC |
 
 ### `A02` Dropdown chọn Khóa học
 
-Frame: chưa có (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | gia-tri-hien-tai |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | o-tim-kiem |  |  | — |  |  | Chưa sync | QC |
-| `A02.03` | danh-sach-khoa-hoc |  |  | — |  | `TC09` | Chưa sync | QC |
-| `A02.04` | chon-khoa-hoc-moi |  |  | — |  |  | Chưa sync | QC |
+| `A02.01` | gia-tri-hien-tai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.02` | o-tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.03` | danh-sach-khoa-hoc |  |  | — |  | `TC09` | Chưa khớp tự động | QC |
+| `A02.04` | chon-khoa-hoc-moi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Nhóm Ngày bắt đầu, Ngày kết thúc và lịch được sinh
 
-Frame: chưa có (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | ngay-bat-dau |  |  | — |  | `TC29`, `TC30`, `TC36` | Chưa sync | QC |
-| `A03.02` | ngay-ket-thuc |  |  | — |  | `TC29`, `TC31`, `TC32`, `TC33`, `TC34`, `TC35`, `TC36` | Chưa sync | QC |
-| `A03.03` | lich-co-dinh |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | lich-buoi-duoc-chen |  |  | — |  |  | Chưa sync | QC |
-| `A03.05` | xoa-huy-mot-buoi-co-tinh-vao-chuong-trin |  |  | — |  | `TC33` | Chưa sync | QC |
-| `A03.06` | doi-lich-mot-buoi |  |  | — |  |  | Chưa sync | QC |
-| `A03.07` | khung-gio-bi-trung |  |  | — |  | `TC35` | Chưa sync | QC |
+| `A03.01` | ngay-bat-dau | `Atom/Label`  | `I3004:50122;3004:58620` Atom/Label | — |  | `TC29`, `TC30`, `TC36` | Khớp | QC |
+| `A03.02` | ngay-ket-thuc | `Atom/Label`  | `I3004:50041;3004:58620` Atom/Label | — |  | `TC29`, `TC31`, `TC32`, `TC33`, `TC34`, `TC35`, `TC36` | Khớp | QC |
+| `A03.03` | lich-co-dinh |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | lich-buoi-duoc-chen |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | xoa-huy-mot-buoi-co-tinh-vao-chuong-trin |  |  | — |  | `TC33` | Chưa khớp tự động | QC |
+| `A03.06` | doi-lich-mot-buoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.07` | khung-gio-bi-trung |  |  | — |  | `TC35` | Chưa khớp tự động | QC |
 
 ### `A04` Dropdown Trạng thái
 
-Frame: chưa có (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | trang-thai-hien-tai |  |  | — |  |  | Chưa sync | QC |
-| `A04.02` | danh-sach-trang-thai |  |  | — |  | `TC37` | Chưa sync | QC |
-| `A04.03` | trang-thai-dang-hoc |  |  | — |  | `TC18` | Chưa sync | QC |
-| `A04.04` | moi-tao-khai-giang-trai-nghiem-dang-hoc- |  |  | — |  |  | Chưa sync | QC |
-| `A04.05` | xoa |  |  | — |  |  | Chưa sync | QC |
+| `A04.01` | trang-thai-hien-tai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | danh-sach-trang-thai |  |  | — |  | `TC37` | Chưa khớp tự động | QC |
+| `A04.03` | trang-thai-dang-hoc |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
+| `A04.04` | moi-tao-khai-giang-trai-nghiem-dang-hoc- |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.05` | xoa | `Atom/Button` Type=Outlined, Size=Small | `I3650:46245;1430:10764` Button | — |  |  | Khớp | QC |
 
 ### `A05` Popup xác nhận xóa lớp — Lần 1
 
-Frame: chưa có (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A05.02` | noi-dung |  |  | — |  | `TC22` | Chưa sync | QC |
-| `A05.03` | huy |  |  | — |  |  | Chưa sync | QC |
-| `A05.04` | tiep-tuc |  |  | — | opens `A05` | `TC22`, `TC24` | Chưa sync | QC |
+| `A05.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.02` | noi-dung | `Atom/Input` State=Default, Kiểu=Chuẩn | `I3004:49982;3004:58628;1048:1264` Tìm nội dung... | — |  | `TC22` | Khớp | QC |
+| `A05.03` | huy |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.04` | tiep-tuc |  |  | — | opens `A05` | `TC22`, `TC24` | Chưa khớp tự động | QC |
 
 ### `A06` Popup xác nhận xóa lớp — Lần 2
 
-Frame: chưa có (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A06.02` | noi-dung |  |  | — |  |  | Chưa sync | QC |
-| `A06.03` | quay-lai |  |  | — |  | `TC25` | Chưa sync | QC |
-| `A06.04` | xoa-lop |  |  | — |  | `TC26` | Chưa sync | QC |
+| `A06.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.02` | noi-dung | `Atom/Input` State=Default, Kiểu=Chuẩn | `I3004:49982;3004:58628;1048:1264` Tìm nội dung... | — |  |  | Khớp | QC |
+| `A06.03` | quay-lai |  |  | — |  | `TC25` | Chưa khớp tự động | QC |
+| `A06.04` | xoa-lop | `ACCOUNT` Size=Default; `Atom/Button` Type=Outlined, Size=Small | `3650:46245` Atom/Button; `3497:50611` ACCOUNT | — |  | `TC26` | Khớp | QC |
 
 ### `A07` Toast phản hồi CRUD
 
-Frame: chưa có (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa sync | QC |
-| `A07.02` | thong-tin |  |  | — |  |  | Chưa sync | QC |
-| `A07.03` | canh-bao |  |  | — |  | `TTC02` | Chưa sync | QC |
-| `A07.04` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A07.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
+| `A07.02` | thong-tin | `Atom/Side Tab` State=Active, Kiểu=Gạch trái; `Molecule/Field`  | `I2199:19568;2177:28936` Nhiệm vụ con; `3004:49982` Molecule/Field | — |  |  | Khớp | QC |
+| `A07.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A07.04` | loi | `Molecule/Field`  | `3004:49982` Molecule/Field | — |  |  | Khớp | QC |
+
+### `F01` (ngoài Body)
+
+Frame: `ADM-LOP-040100` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `2199:19568` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | molecule-field | `Molecule/Field`  | `3004:50108` Molecule/Field | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | atom-button | `Atom/Button` Type=Warning, Size=Medium | `3650:46239` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:230175` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -206,7 +217,7 @@ Frame: chưa có (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa sync (40): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A07.01`, `A07.02`, `A07.03`, `A07.04`
+- Chưa khớp tự động (21): `A01.11`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A05.01`, `A05.03`, `A05.04`, `A06.01`, `A06.03`, `A07.01`, `A07.03`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`
 - REQ/EX chưa có testcase (3): `REQ08`, `REQ09`, `EX02`
 

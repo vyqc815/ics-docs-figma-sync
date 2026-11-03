@@ -34,78 +34,78 @@ Requirement: `appointment_requirement/appointment_requirements.md` — Lịch h�
 
 ### `A01` Trang 1: Danh Sách Lịch Hẹn
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `ADM-LHN-010100`, `ADM-LHN-010200`, `ADM-LHN-010300`, `ADM-LHN-010400`, `ADM-LHN-020000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | bon-tab |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.02` | bang |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.03` | thoi-gian-ghi-chu |  |  | — |  |  | Chưa sync | QC |
-| `A01.04` | nguoi-phu-trach |  |  | — |  |  | Chưa sync | QC |
-| `A01.05` | doi-tuong |  |  | — |  | `TC03` | Chưa sync | QC |
-| `A01.06` | badge-phan-trang |  |  | — |  |  | Chưa sync | QC |
-| `A01.07` | xoa |  |  | — | opens `A06` |  | Chưa sync | QC |
+| `A01.01` | bon-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `I2245:88770;2177:28936` Nhiệm vụ con | — |  | `TC01` | Khớp | QC |
+| `A01.02` | bang | `DD/Molecule/Trigger` Size=XS, State=Default | `2367:18831` Section - Bảng dữ liệu chi tiết các lớp học; `2367:19716` Dropdown | — |  | `TC01` | Khớp | QC |
+| `A01.03` | thoi-gian-ghi-chu | `Thời gian lịch hẹn` Size=28H | `2367:20150` Thời gian lịch hẹn | — |  |  | Khớp | QC |
+| `A01.04` | nguoi-phu-trach | `DD/Molecule/Trigger` Size=XS, State=Default | `2367:19707` Dropdown | — |  |  | Khớp | QC |
+| `A01.05` | doi-tuong |  | `2367:18844` Đối tượng | — |  | `TC03` | Khớp | QC |
+| `A01.06` | badge-phan-trang | `Status Độ ưu tiên` Size=24, Kiểu=Default | `2371:36533` Status Độ ưu tiên | — |  |  | Khớp một phần | QC |
+| `A01.07` | xoa | `Status lịch hẹn` Size=24, Kiểu=Default | `2371:36532` Status lịch hẹn | — | opens `A06` |  | Khớp một phần | QC |
 
 ### `A02` Bộ lọc và lựa chọn Ưu tiên / Trạng thái
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `ADM-LHN-010100`, `ADM-LHN-010110`, `ADM-LHN-010200`, `ADM-LHN-010300`, `ADM-LHN-010400`, `ADM-LHN-020000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | trung-tam |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | nguoi-theo-doi-nguoi-phu-trach |  |  | — |  |  | Chưa sync | QC |
-| `A02.03` | thoi-gian |  |  | — |  |  | Chưa sync | QC |
-| `A02.04` | do-uu-tien |  |  | — |  |  | Chưa sync | QC |
-| `A02.05` | trang-thai |  |  | — |  | `TC05`, `TC06` | Chưa sync | QC |
+| `A02.01` | trung-tam | `DD/Molecule/Trigger` Size=XS, State=Default | `4713:129180` Dropdown · Trung tâm | — |  |  | Khớp | QC |
+| `A02.02` | nguoi-theo-doi-nguoi-phu-trach | `ACCOUNT` Size=Default | `4273:161903` ACCOUNT | — |  |  | Khớp một phần | QC |
+| `A02.03` | thoi-gian | `DD/Molecule/Trigger` Size=XS, State=Default | `2367:19716` Dropdown | — |  |  | Khớp | QC |
+| `A02.04` | do-uu-tien | `DD/Molecule/Trigger` Size=XS, State=Default | `2367:19682` Dropdown | — |  |  | Khớp | QC |
+| `A02.05` | trang-thai | `DD/Molecule/Trigger` Size=XS, State=Default | `2367:19725` Dropdown; `2367:19757` [Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2 | — |  | `TC05`, `TC06` | Khớp | QC |
 
 ### `A03` Popup Thêm lịch hẹn mới
 
-Frame: chưa có (tool đoán:ADM-LHN-010110) · Nguồn nội dung: QC
+Frame: `ADM-LHN-010110` (tool đoán:ADM-LHN-010110) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | noi-dung |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | ghi-chu |  |  | — |  |  | Chưa sync | QC |
-| `A03.03` | thoi-gian |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | trung-tam |  |  | — |  | `TC21` | Chưa sync | QC |
-| `A03.05` | doi-tuong |  |  | — |  | `TC07` | Chưa sync | QC |
-| `A03.06` | do-uu-tien |  |  | — |  |  | Chưa sync | QC |
-| `A03.07` | trang-thai |  |  | — |  |  | Chưa sync | QC |
-| `A03.08` | nguoi-phu-trach |  |  | — | opens `A03` | `TC08`, `TC09` | Chưa sync | QC |
-| `A03.09` | theo-doi |  |  | — |  | `TC09` | Chưa sync | QC |
-| `A03.10` | huy-them-lich-hen |  |  | — |  |  | Chưa sync | QC |
+| `A03.01` | noi-dung | `Atom/Label`  | `2370:27447` Atom/Label | — |  |  | Khớp | QC |
+| `A03.02` | ghi-chu | `Atom/Label`  | `2370:27405` Atom/Label | — |  |  | Khớp | QC |
+| `A03.03` | thoi-gian | `Atom/Label`  | `2370:27409` Atom/Label | — |  |  | Khớp | QC |
+| `A03.04` | trung-tam | `Atom/Label`  | `4835:162294` Atom/Label | — |  | `TC21` | Khớp | QC |
+| `A03.05` | doi-tuong | `Atom/Label`  | `2370:27455` Atom/Label | — |  | `TC07` | Khớp | QC |
+| `A03.06` | do-uu-tien | `Atom/Label`  | `2370:27412` Atom/Label | — |  |  | Khớp | QC |
+| `A03.07` | trang-thai | `Atom/Label` ; `Popup/Header`  | `2370:27869` Atom/Label; `I2527:167628;2514:153358` Title | — |  |  | Khớp | QC |
+| `A03.08` | nguoi-phu-trach | `Atom/Label`  | `2370:28055` Atom/Label; `2370:28072` Trợ giảng | — | opens `A03` | `TC08`, `TC09` | Khớp | QC |
+| `A03.09` | theo-doi | `Atom/Label`  | `2370:28132` Atom/Label | — |  | `TC09` | Khớp | QC |
+| `A03.10` | huy-them-lich-hen |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Chỉnh Độ ưu tiên và Trạng thái trên dòng
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `ADM-LHN-010100`, `ADM-LHN-010110`, `ADM-LHN-010200`, `ADM-LHN-010300`, `ADM-LHN-010400`, `ADM-LHN-020000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | do-uu-tien |  |  | — |  |  | Chưa sync | QC |
-| `A04.02` | trang-thai |  |  | — |  | `TC11` | Chưa sync | QC |
-| `A04.03` | nguoi-sua |  |  | — |  |  | Chưa sync | QC |
+| `A04.01` | do-uu-tien | `DD/Molecule/Trigger` Size=XS, State=Default | `2367:19682` Dropdown | — |  |  | Khớp | QC |
+| `A04.02` | trang-thai | `DD/Molecule/Trigger` Size=XS, State=Default | `2367:19725` Dropdown; `2367:19757` [Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2 | — |  | `TC11` | Khớp | QC |
+| `A04.03` | nguoi-sua | `DD/Molecule/Trigger` Size=XS, State=Default | `2367:19707` Dropdown | — |  |  | Khớp | QC |
 
 ### `A05` Popup Review — Bảng chia lịch hẹn
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `ADM-LHN-020000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | tab-bo-loc |  |  | — |  |  | Chưa sync | QC |
-| `A05.02` | cot-cum-the |  |  | — |  |  | Chưa sync | QC |
-| `A05.03` | the-lich-hen |  |  | — |  |  | Chưa sync | QC |
-| `A05.04` | keo-tha-the |  |  | — |  | `TC17` | Chưa sync | QC |
-| `A05.05` | keo-tha-cum |  |  | — |  |  | Chưa sync | QC |
+| `A05.01` | tab-bo-loc | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `I2371:36461;2177:28936` Nhiệm vụ con | — |  |  | Khớp | QC |
+| `A05.02` | cot-cum-the | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `2702:48118` Add New Bar · Nhập tiêu đề mục mới | — |  |  | Khớp | QC |
+| `A05.03` | the-lich-hen |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.04` | keo-tha-the |  | `2371:36762` Kéo thả thẻ | — |  | `TC17` | Khớp | QC |
+| `A05.05` | keo-tha-cum |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A06` Nút xóa và popup xác nhận lịch hẹn
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `ADM-LHN-010110`, `ADM-LHN-020000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | bieu-tuong-xoa |  |  | — |  |  | Chưa sync | QC |
-| `A06.02` | popup-xac-nhan |  |  | — |  | `TC19` | Chưa sync | QC |
-| `A06.03` | ket-qua |  |  | — |  |  | Chưa sync | QC |
+| `A06.01` | bieu-tuong-xoa | `Atom/Label`  | `2370:28055` Atom/Label | — |  |  | Khớp | QC |
+| `A06.02` | popup-xac-nhan | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167634;2514:153361` Atom/Button | — |  | `TC19` | Khớp | QC |
+| `A06.03` | ket-qua | `Status lịch hẹn` Size=24, Kiểu=Default | `2371:36532` Status lịch hẹn | — |  |  | Khớp một phần | QC |
 
 ### `A07` Toast phản hồi CRUD
 
@@ -113,10 +113,33 @@ Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC04` | Chưa sync | QC |
-| `A07.02` | thong-tin |  |  | — |  |  | Chưa sync | QC |
-| `A07.03` | canh-bao |  |  | — |  | `TTC03` | Chưa sync | QC |
-| `A07.04` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A07.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC04` | Chưa khớp tự động | QC |
+| `A07.02` | thong-tin |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.03` | canh-bao |  |  | — |  | `TTC03` | Chưa khớp tự động | QC |
+| `A07.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
+
+### `F01` (ngoài Body)
+
+Frame: `ADM-LHN-010100`, `ADM-LHN-010200`, `ADM-LHN-010300`, `ADM-LHN-010400`, `ADM-LHN-020000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | atom-icon-button | `Atom/Icon Button`  | `2367:19676` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Default | `2367:19681` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | atom-button | `Atom/Button` Type=Warning, Size=Small | `2367:19703` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `2245:88770` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | thoi-gian-lich-hen | `Thời gian lịch hẹn` Size=28H | `2367:19740` Thời gian lịch hẹn | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | atom-tag-solid | `Atom/Tag Solid` Size=16H | `2409:142557` Atom/Tag Solid | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | avatar | `Avatar` Size=28 | `2367:19797` Avatar | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | atom-id-badge | `Atom/ID Badge` Type=Mã lớp, Size=26H | `2370:26005` Atom/ID Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | mouse-click |  | `2370:26396` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.10` | phan-trang |  | `2367:19116` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.11` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:223227` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.12` | molecule-tooltip | `Molecule/Tooltip`  | `2860:45510` Molecule/Tooltip | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.13` | atom-chip | `Atom/Chip` Type=TỔNG DOANH THU | `2860:45955` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.14` | color | `COLOR`  | `2425:104406` COLOR | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.15` | status-lich-hen | `Status lịch hẹn` Size=24, Kiểu=Default | `2371:36496` Status lịch hẹn | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.16` | status-do-uu-tien | `Status Độ ưu tiên` Size=24, Kiểu=Default | `2371:36497` Status Độ ưu tiên | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -181,7 +204,7 @@ Frame: chưa có · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa sync (37): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`
+- Chưa khớp tự động (7): `A03.10`, `A05.03`, `A05.05`, `A07.01`, `A07.02`, `A07.03`, `A07.04`
 - Frame Figma chưa có requirement (1): `ADM-LHN-010110`
 - Thiếu prototype link đi vào (1): `ADM-LHN-010110`
 

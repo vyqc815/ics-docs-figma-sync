@@ -19,6 +19,21 @@
 
 ## 4. Khu vực và item
 
+### `F01` (ngoài Body)
+
+Frame: `ADM-KPI-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `3708:21047` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | atom-icon-button | `Atom/Icon Button`  | `3674:65886` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `3708:20994` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | atom-badge | `Atom/Badge`  | `3708:21172` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | atom-chip | `Atom/Chip` Type=TỔNG DOANH THU | `3708:21493` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | phan-trang |  | `3708:21432` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | account | `ACCOUNT` Size=Default | `3674:66878` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:237485` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

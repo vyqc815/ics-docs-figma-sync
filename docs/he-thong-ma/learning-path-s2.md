@@ -27,10 +27,26 @@ Requirement: `course_management/learning-path-s2/learning-path-s2.md` — Lộ T
 
 ### `A01` Trang 1: Nội dung buổi học (Lộ Trình S2)
 
-Frame: chưa có (tool đoán:CD-KH-020200) · Nguồn nội dung: QC
+Frame: `CD-KH-020200` (tool đoán:CD-KH-020200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
+
+### `F01` (ngoài Body)
+
+Frame: `CD-KH-020200` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | trang-thai-so-buoi | `Atom/Status` Size=S | `2808:53235` Trạng thái số buổi | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Default | `2015:39141` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | atom-chip-thoi-gian | `Atom/Chip` Type=Thời gian · 90–100% | `2808:53136` Atom/Chip · Thời gian | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | input-ten-bai-hoc | `Atom/Input` State=Sửa trực tiếp, Kiểu=S | `2857:58679` Input · Tên bài học | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | input-mo-ta | `Atom/Input` State=Text, Kiểu=S | `2857:58683` Input · Mô tả | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | molecule-add-new-bar-them-bai-hoc | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `6518:337110` Molecule/Add New Bar · Thêm bài học | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | sidebar-menu-cd | `MENU - CD`  | `4915:256398` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | account | `ACCOUNT` Size=Default | `2812:34997` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | component-2 | `Switch Center`  | `4273:160593` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 

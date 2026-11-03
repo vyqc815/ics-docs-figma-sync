@@ -29,56 +29,77 @@ Requirement: `teacher_role/teaching_schedule/teaching_schedule_requirements.md` 
 
 ### `A01` Tab Lịch dạy
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LD-010000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | tieu-de-tab |  |  | — |  |  | Chưa sync | QC |
-| `A01.02` | tuan-dang-xem |  |  | — |  |  | Chưa sync | QC |
-| `A01.03` | mui-ten-trai-phai |  |  | — |  |  | Chưa sync | QC |
-| `A01.04` | cot-ngay |  |  | — |  |  | Chưa sync | QC |
-| `A01.05` | theo-lop |  |  | — |  |  | Chưa sync | QC |
-| `A01.06` | thanh-nhom-lop |  |  | — |  |  | Chưa sync | QC |
-| `A01.07` | the-lich |  |  | — |  | `TC03`, `TC8a` | Chưa sync | QC |
-| `A01.08` | sap-xep-the |  |  | — |  |  | Chưa sync | QC |
-| `A01.09` | o-khong-co-lich |  |  | — |  |  | Chưa sync | QC |
-| `A01.10` | nhieu-lich-trong-ngay |  |  | — |  |  | Chưa sync | QC |
-| `A01.11` | vien-the-tai-menu-nay |  |  | — |  |  | Chưa sync | QC |
-| `A01.12` | lich-huy-bo |  |  | — |  | `TC7a` | Chưa sync | QC |
-| `A01.13` | trang-thai-lich |  |  | — |  |  | Chưa sync | QC |
-| `A01.14` | luong |  |  | — |  | `TC07`, `TC7a`, `TC08`, `TC8a` | Chưa sync | QC |
-| `A01.15` | khac-man-quan-ly-lich-lop |  |  | — |  |  | Chưa sync | QC |
+| `A01.01` | tieu-de-tab | `MENU - TEACHER`  | `5425:257921` Sidebar · MENU - TEACHER | — |  |  | Khớp | QC |
+| `A01.02` | tuan-dang-xem |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.03` | mui-ten-trai-phai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.04` | cot-ngay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.05` | theo-lop |  | `5413:53455` Value | — |  |  | Khớp | QC |
+| `A01.06` | thanh-nhom-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.07` | the-lich |  |  | — |  | `TC03`, `TC8a` | Chưa khớp tự động | QC |
+| `A01.08` | sap-xep-the |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.09` | o-khong-co-lich |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.10` | nhieu-lich-trong-ngay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.11` | vien-the-tai-menu-nay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.12` | lich-huy-bo |  |  | — |  | `TC7a` | Chưa khớp tự động | QC |
+| `A01.13` | trang-thai-lich |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.14` | luong | `ICON MENU`  | `I5425:257921;4901:212752;2245:87764` Icon | — |  | `TC07`, `TC7a`, `TC08`, `TC8a` | Khớp | QC |
+| `A01.15` | khac-man-quan-ly-lich-lop |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Tab Quản lý đăng ký lịch
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LD-020000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | cot-thu |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | hang-buoi |  |  | — |  |  | Chưa sync | QC |
-| `A02.03` | o-chua-dang-ky |  |  | — | opens `A03` |  | Chưa sync | QC |
-| `A02.04` | o-da-dang-ky |  |  | — |  |  | Chưa sync | QC |
-| `A02.05` | icon-but |  |  | — | opens `A02` | `TC12` | Chưa sync | QC |
-| `A02.06` | bo-tick-mot-o |  |  | — |  | `TC12` | Chưa sync | QC |
-| `A02.07` | bat-fulltime |  |  | — |  | `TC13` | Chưa sync | QC |
-| `A02.08` | bo-tick-fulltime |  |  | — |  | `TC14a` | Chưa sync | QC |
-| `A02.09` | trang-thai-fulltime |  |  | — |  |  | Chưa sync | QC |
-| `A02.10` | ghi-chu-chung |  |  | — |  | `TC10` | Chưa sync | QC |
-| `A02.11` | cap-nhat |  |  | — |  | `TC14`, `TC14a`, `TC15`, `TC16`, `TC17`, `TC20`, `TC20a` | Chưa sync | QC |
+| `A02.01` | cot-thu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.02` | hang-buoi |  | `5413:49209` 07h30 - 12h00 | — |  |  | Khớp | QC |
+| `A02.03` | o-chua-dang-ky |  |  | — | opens `A03` |  | Chưa khớp tự động | QC |
+| `A02.04` | o-da-dang-ky |  | `5413:49274` Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này | — |  |  | Khớp | QC |
+| `A02.05` | icon-but |  |  | — | opens `A02` | `TC12` | Chưa khớp tự động | QC |
+| `A02.06` | bo-tick-mot-o |  |  | — |  | `TC12` | Chưa khớp tự động | QC |
+| `A02.07` | bat-fulltime |  | `5413:49187` Fulltime | — |  | `TC13` | Khớp | QC |
+| `A02.08` | bo-tick-fulltime |  | `5413:49187` Fulltime | — |  | `TC14a` | Khớp | QC |
+| `A02.09` | trang-thai-fulltime |  | `5413:49187` Fulltime | — |  |  | Khớp | QC |
+| `A02.10` | ghi-chu-chung | `Atom/Input` State=Textarea, Kiểu=M | `I5413:49270;2808:42324` Tìm nội dung... | — |  | `TC10` | Khớp | QC |
+| `A02.11` | cap-nhat | `Atom/Button` Type=Warning, Size=Medium | `5413:49272` Atom/Button | — |  | `TC14`, `TC14a`, `TC15`, `TC16`, `TC17`, `TC20`, `TC20a` | Khớp | QC |
+| `A02.12` | atom-side-tab | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `5413:49180` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
+| `A02.13` | liner-icon | `Liner Icon`  | `5413:49268` Liner Icon | — |  |  | Chỉ có trên Figma | Figma |
+| `A02.14` | textarea-ghi-chu | `Atom/Input` State=Textarea, Kiểu=M | `5413:49270` Textarea · Ghi chú | — |  |  | Chỉ có trên Figma | Figma |
 
 ### `A03` Popup Đăng ký khung giờ
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LD-020010` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | dong-phu |  |  | — |  | `TC21` | Chưa sync | QC |
-| `A03.03` | gio-bat-dau-gio-ket-thuc |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | ghi-chu |  |  | — |  | `TC24`, `TC25` | Chưa sync | QC |
-| `A03.05` | huy |  |  | — |  |  | Chưa sync | QC |
-| `A03.06` | xac-nhan |  |  | — |  | `TC22`, `TC25` | Chưa sync | QC |
+| `A03.01` | tieu-de | `Popup/Header`  | `I5413:49912;2514:153340` Tiêu đề; `I5413:49912;2514:153341` Title | — |  |  | Khớp | QC |
+| `A03.02` | dong-phu | `Popup/Header`  | `I5413:49912;2514:153342` Description | — |  | `TC21` | Khớp | QC |
+| `A03.03` | gio-bat-dau-gio-ket-thuc | `Atom/Label`  | `5413:49917` Atom/Label; `5413:49920` Atom/Label | — |  |  | Khớp | QC |
+| `A03.04` | ghi-chu | `Atom/Label`  | `5413:49924` Atom/Label | — |  | `TC24`, `TC25` | Khớp | QC |
+| `A03.05` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I5413:49926;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+| `A03.06` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I5413:49926;2514:153363` Atom/Button | — |  | `TC22`, `TC25` | Khớp | QC |
+
+### `F01` Header
+
+Frame: `GV-LD-020000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | account | `ACCOUNT` Size=Default | `5425:258303` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | component-2 | `Switch Center`  | `5425:258305` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | header-vai-tro |  | `5425:258306` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F02` (ngoài Body)
+
+Frame: `GV-LD-020000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F02.01` | sidebar-menu-teacher | `MENU - TEACHER`  | `5425:258114` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -146,7 +167,7 @@ Frame: chưa có · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa sync (32): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.14`, `A01.15`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.11`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`
+- Chưa khớp tự động (16): `A01.02`, `A01.03`, `A01.04`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.15`, `A02.01`, `A02.03`, `A02.05`, `A02.06`
 - Phân loại cần design duyệt (1): `GV-LD-010000`
 - Thiếu prototype link đi vào (2): `GV-LD-010000`, `GV-LD-020010`
 

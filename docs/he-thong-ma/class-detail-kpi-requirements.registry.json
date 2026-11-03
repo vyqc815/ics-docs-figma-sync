@@ -74,13 +74,20 @@
    "nodeId": "2384:53006",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/lop-hoc/cai-dat/kpi",
    "link": "/lop-hoc/cai-dat/kpi",
    "dark": "ADM-LOP-040700-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": []
+   "regions": [
+    "M-CDK.A01",
+    "M-CDK.A04",
+    "M-CDK.A05",
+    "M-CDK.A06",
+    "M-CDK.A07",
+    "M-CDK.F01"
+   ]
   },
   "ADM-LOP-040710": {
    "id": "ADM-LOP-040710",
@@ -95,13 +102,15 @@
    "nodeId": "2245:107872",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-lop-040710",
    "link": "/lop-hoc/cai-dat/kpi?popup=ADM-LOP-040710",
    "dark": "ADM-LOP-040710-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "M-CDK.A02"
+   ]
   },
   "ADM-LOP-040712": {
    "id": "ADM-LOP-040712",
@@ -116,13 +125,15 @@
    "nodeId": "2245:107748",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/frames/adm-lop-040712",
    "link": "/lop-hoc/cai-dat/kpi?popup=ADM-LOP-040712",
    "dark": "ADM-LOP-040712-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "M-CDK.A03"
+   ]
   }
  },
  "regions": [
@@ -130,7 +141,9 @@
    "id": "M-CDK.A01",
    "name": "tab-kpi-danh-sach-va-tim-kiem",
    "title": "Tab KPI — Danh sách và tìm kiếm",
-   "screens": [],
+   "screens": [
+    "adm-lop-040700"
+   ],
    "screensGuessed": [
     "ADM-LOP-040700"
    ],
@@ -156,8 +169,10 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Cài đặt KPI và +"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A01.02",
@@ -169,8 +184,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tìm kiếm"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A01.03",
@@ -179,11 +196,25 @@
      "spec": "Người nhận của khoản KPI; mỗi khoản đúng một Handler.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "Tên",
+        "figmaId": "2389:60832",
+        "layer": "Tên",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDK.A01.04",
@@ -192,11 +223,25 @@
      "spec": "Ngày của Thời gian thực hiện nhập trong popup; lưu cả giờ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "Ngày ghi nhận",
+        "figmaId": "2389:60834",
+        "layer": "Ngày Ghi Nhận",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDK.A01.05",
@@ -205,13 +250,27 @@
      "spec": "Mới, Đã xác nhận, Đã hủy; Đã xóa không hiển thị trong bảng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "2389:60836",
+        "layer": "Trạng Thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDK.TC04"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDK.A01.06",
@@ -220,11 +279,25 @@
      "spec": "Tiền thực tế đã lưu, định dạng VND và dấu phân cách hàng nghìn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "Số tiền",
+        "figmaId": "2389:60838",
+        "layer": "Số Tiền",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDK.A01.07",
@@ -233,11 +306,25 @@
      "spec": "Mở ghi chú/lịch sử của đúng khoản KPI.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "2389:60840",
+        "layer": "Ghi Chú",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDK.A01.08",
@@ -246,11 +333,25 @@
      "spec": "Lần cập nhật gần nhất do máy chủ ghi.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "Ngày cập nhật",
+        "figmaId": "2389:60842",
+        "layer": "Ngày Cập Nhật",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDK.A01.09",
@@ -262,17 +363,20 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "X"
+     ],
+     "status": "chua-thay-tren-figma"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "M-CDK.A02",
    "name": "popup-them-va-chinh-sua-kpi",
    "title": "Popup thêm và chỉnh sửa KPI",
-   "screens": [],
+   "screens": [
+    "adm-lop-040710"
+   ],
    "screensGuessed": [
     "ADM-LOP-040710"
    ],
@@ -294,8 +398,10 @@
      "testcases": [
       "M-CDK.TC05"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Người nhận"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A02.02",
@@ -307,8 +413,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Số tiền"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A02.03",
@@ -322,8 +430,10 @@
      "testcases": [
       "M-CDK.TC08"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Dùng giá trị gốc"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A02.04",
@@ -332,11 +442,30 @@
      "spec": "Ngày và giờ ghi nhận người dùng nhập.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040710": [
+       {
+        "term": "Thời gian thực hiện",
+        "figmaId": "2925:24906",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Thời gian thực hiện",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2224",
+         "Label": "Thời gian thực hiện:",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDK.A02.05",
@@ -345,11 +474,30 @@
      "spec": "Mặc định Mới khi thêm; chọn theo rule trạng thái bên dưới.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040710": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "2911:43672",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Trạng thái",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2370:27888",
+         "Label": "Trạng thái",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDK.A02.06",
@@ -361,8 +509,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tên/Mô tả/Giá trị gốc"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A02.07",
@@ -376,8 +526,10 @@
      "testcases": [
       "M-CDK.TC08"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Hủy bỏ"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A02.08",
@@ -389,17 +541,20 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thêm/Cập nhật"
+     ],
+     "status": "chua-thay-tren-figma"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "M-CDK.A03",
    "name": "dropdown-trang-thai-va-xac-nhan",
    "title": "Dropdown trạng thái và xác nhận",
-   "screens": [],
+   "screens": [
+    "adm-lop-040712"
+   ],
    "screensGuessed": [
     "ADM-LOP-040700"
    ],
@@ -416,11 +571,37 @@
      "spec": "Có | Không | Sửa, xác nhận, hủy hoặc xóa.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040712": [
+       {
+        "term": "Mới",
+        "figmaId": "2245:107779",
+        "layer": "DD/Molecule/Trigger",
+        "confidence": "cao",
+        "region": "Trạng thái",
+        "owner": "DD/Molecule/Trigger",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Count": false,
+         "Chevron": true,
+         "Count Value": "1",
+         "Clear": false,
+         "Leading": false,
+         "Value": "Mới",
+         "Size": "M",
+         "State": "Open",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDK.A03.02",
@@ -429,13 +610,39 @@
      "spec": "Có | Có | Khóa mọi thay đổi; Handler được tự xác nhận khoản của mình.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040712": [
+       {
+        "term": "Đã xác nhận",
+        "figmaId": "I2245:107799;2015:31432;2245:107802",
+        "layer": "DD/Molecule/Menu Item",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Molecule/Menu Item",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Meta Text": "12",
+         "Description Text": "Mô tả phụ",
+         "Label": "Đã xác nhận",
+         "Description": false,
+         "Submenu": false,
+         "Leading": false,
+         "Meta": false,
+         "Type": "Default",
+         "State": "Default",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDK.TC11"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDK.A03.03",
@@ -444,13 +651,39 @@
      "spec": "Có | Không | Giữ để xem; có thể xóa nếu chưa xác nhận. Phục hồi chưa chốt.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040712": [
+       {
+        "term": "Đã hủy",
+        "figmaId": "I2245:107799;2015:31432;2245:107803",
+        "layer": "DD/Molecule/Menu Item",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Molecule/Menu Item",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Meta Text": "12",
+         "Description Text": "Mô tả phụ",
+         "Label": "Đã hủy",
+         "Description": false,
+         "Submenu": false,
+         "Leading": false,
+         "Meta": false,
+         "Type": "Default",
+         "State": "Default",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDK.TC12"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDK.A03.04",
@@ -459,20 +692,50 @@
      "spec": "Không | Không | Xóa mềm; giữ audit.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040712": [
+       {
+        "term": "Đã xóa",
+        "figmaId": "I2245:107799;2015:31432;2245:107804",
+        "layer": "DD/Molecule/Menu Item",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Molecule/Menu Item",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Meta Text": "12",
+         "Description Text": "Mô tả phụ",
+         "Label": "Đã xóa",
+         "Description": false,
+         "Submenu": false,
+         "Leading": false,
+         "Meta": false,
+         "Type": "Default",
+         "State": "Default",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ],
-   "screensFromItems": []
+   "screensFromItems": [
+    "adm-lop-040712"
+   ]
   },
   {
    "id": "M-CDK.A04",
    "name": "xoa-khoan-kpi",
    "title": "Xóa khoản KPI",
-   "screens": [],
+   "screens": [
+    "adm-lop-040700"
+   ],
    "screensGuessed": [
     "ADM-LOP-040700"
    ],
@@ -492,8 +755,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Xóa khoản KPI?",
+      "Popup"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A04.02",
@@ -507,8 +773,10 @@
      "testcases": [
       "M-CDK.TC15"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Hủy bỏ"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A04.03",
@@ -520,17 +788,20 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Xác nhận xóa"
+     ],
+     "status": "chua-thay-tren-figma"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "M-CDK.A05",
    "name": "ghi-chu-lich-su-va-copy",
    "title": "Ghi chú, lịch sử và Copy",
-   "screens": [],
+   "screens": [
+    "adm-lop-040700"
+   ],
    "screensGuessed": [
     "ADM-LOP-040700"
    ],
@@ -552,8 +823,11 @@
      "testcases": [
       "M-CDK.TC18"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Popup ghi chú",
+      "Ghi chú KPI"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A05.02",
@@ -565,8 +839,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Ô nhập nội dung (textarea)"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A05.03",
@@ -578,8 +854,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Lưu nội dung"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A05.04",
@@ -600,8 +878,11 @@
       "M-CDK.TC18",
       "M-CDK.TC25"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Icon lịch sử",
+      "Lịch sử ghi chú"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A05.05",
@@ -613,8 +894,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Mỗi phiên bản"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A05.06",
@@ -628,17 +911,20 @@
      "testcases": [
       "M-CDK.TC18"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Copy"
+     ],
+     "status": "chua-thay-tren-figma"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "M-CDK.A06",
    "name": "tong-chi-ptl",
    "title": "Tổng chi PTL",
-   "screens": [],
+   "screens": [
+    "adm-lop-040700"
+   ],
    "screensGuessed": [
     "ADM-LOP-040700"
    ],
@@ -658,8 +944,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Chi phí PTL của lớp"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A06.02",
@@ -671,17 +959,20 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tổng chi PTL"
+     ],
+     "status": "chua-thay-tren-figma"
     }
-   ],
-   "screensFromItems": []
+   ]
   },
   {
    "id": "M-CDK.A07",
    "name": "toast-va-trang-thai-tai",
    "title": "Toast và trạng thái tải",
-   "screens": [],
+   "screens": [
+    "adm-lop-040700"
+   ],
    "screensGuessed": [
     "ADM-LOP-040700"
    ],
@@ -701,8 +992,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Loading/rỗng/lỗi",
+      "Chưa có khoản KPI."
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A07.02",
@@ -716,8 +1010,11 @@
      "testcases": [
       "M-CDK.TC22"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thành Công",
+      "Đã thêm KPI."
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A07.03",
@@ -729,8 +1026,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Cảnh Báo",
+      "KPI đã được xác nhận và không thể chỉnh sửa."
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A07.04",
@@ -742,8 +1042,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Có Lỗi Xảy Ra",
+      "Không thể cập nhật KPI. Vui lòng thử lại."
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDK.A07.05",
@@ -755,11 +1058,212 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thông Báo"
+     ],
+     "status": "chua-thay-tren-figma"
     }
+   ]
+  },
+  {
+   "id": "M-CDK.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-040700"
    ],
-   "screensFromItems": []
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDK.F01.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "2389:60804",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDK.F01.02",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "2389:60875",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDK.F01.03",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "2384:53068",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDK.F01.04",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "3778:3543",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "TỔNG DOANH THU"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDK.F01.05",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:228819",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Cài đặt"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDK.F01.06",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040700": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3497:51457",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
   }
  ],
  "exceptions": [

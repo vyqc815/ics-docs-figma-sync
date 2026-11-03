@@ -4,7 +4,10 @@
 
 ## 1. UI
 
-### Trang 1: Khung menu Bài tập và kiểm tra
+### Trang 1: ADM-LOP-020300 — Khung menu Bài tập và kiểm tra
+
+![Figma mới nhất · ADM-LOP-020300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020300.png)
+
 ![Trang 1](./images/59-class-homework-list.png)
 
 *Menu Bài tập và kiểm tra — Tab BTVN — nhấn để xem ảnh gốc*
@@ -30,7 +33,10 @@ Phía trên là khối Tổng Quan. Vùng trái hiển thị tên bài đang ch�
 - Bảng hiện kết quả từ chức năng nộp/chấm của học viên/giáo viên; Admin/Class Handler/Support không nhập điểm, nhận xét chấm hoặc sửa đề. **BTVN liên kết 1–1 với bài học của lớp: bao nhiêu bài học thì bấy nhiêu BTVN**. Bài tự học không góp vào danh sách này; Kiểm tra gồm bài của khoá học và bài bổ sung, giáo viên không thêm.
 - **Tải full danh sách bài và học viên hợp lệ, không phân trang/load-more**. Mặc định tab/bài và thứ tự cần chốt; không tự kế thừa lựa chọn mặc định từ menu khác.
 
-### Trang 2: Khối Tổng Quan
+### Trang 2: ADM-LOP-020300 — Khối Tổng Quan
+
+![Figma mới nhất · ADM-LOP-020300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020300.png)
+
 ![Trang 2](./images/59-class-homework-list.png)
 
 *Sáu thẻ Tổng Quan của menu — nhấn để xem ảnh gốc*
@@ -54,7 +60,10 @@ Sáu thẻ thống kê toàn lớp: Đã chấm kiểm tra, Kiểm tra đã giao
 - Đọc thống kê lớp và kết quả hiện tại từ nguồn thống nhất; chọn card/Search không được âm thầm đổi thống kê toàn lớp thành thống kê bài đang chọn.
 - Reset thành công phải cập nhật các chỉ số liên quan theo trạng thái/kết quả sau reset; kết quả bị reset không còn dùng như bài nộp/điểm hiện hành. Việc giữ kết quả khi Rời lớp/Xóa không có nghĩa tiếp tục dùng điểm đã chủ động reset.
 
-### Trang 3: Tab BTVN/Kiểm tra, badge và card bài
+### Trang 3: ADM-LOP-020300 — Tab BTVN/Kiểm tra, badge và card bài
+
+![Figma mới nhất · ADM-LOP-020300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020300.png)
+
 ![Trang 3](./images/60-class-tests-list.png)
 
 *Badge tab và card Kiểm tra — nhấn để xem ảnh gốc*
@@ -77,7 +86,10 @@ Badge cạnh mỗi tab là **số bài chưa chấm**, không phải số học 
 - Nhãn trạng thái, badge và % chấm cùng lấy dữ liệu hiện hành: còn bài nộp chưa chấm thì Chưa chấm; tất cả bài đã nộp được chấm thì Đã chấm. Không dùng điểm > 0 làm điều kiện đã chấm.
 - Reset không thu hồi việc giao bài. Reset hết bài nộp hiện hành khiến bài đã giao trở về Đang đợi nộp bài; khi học viên nộp lại chưa được chấm thì Chưa chấm. Badge tab chỉ đếm bài Chưa chấm, không cộng Chưa giao/Đang đợi nộp bài.
 
-### Trang 4: Tỷ lệ chấm bài trên từng card
+### Trang 4: ADM-LOP-020300 — Tỷ lệ chấm bài trên từng card
+
+![Figma mới nhất · ADM-LOP-020300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020300.png)
+
 **Mô tả:**
 
 **C là số bài học viên đã nộp được chấm xong; S là số bài học viên đã nộp của đúng card. Tỷ lệ = C / S × 100.** Học viên chưa nộp không tham gia mẫu số S.
@@ -96,7 +108,10 @@ Badge cạnh mỗi tab là **số bài chưa chấm**, không phải số học 
 - Không dùng % nộp BTVN ở menu Bài học hoặc điểm trung bình của bài thay tỷ lệ chấm.
 - Tỷ lệ 100% chỉ nói tất cả bài đã nộp trong tập S đã chấm; không chứng minh tất cả học viên đã nộp.
 
-### Trang 5: Bảng trạng thái/kết quả của từng học viên
+### Trang 5: ADM-LOP-020300 — Bảng trạng thái/kết quả của từng học viên
+
+![Figma mới nhất · ADM-LOP-020300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020300.png)
+
 ![Trang 5](./images/59-class-homework-list.png)
 
 *Bảng BTVN theo học viên và icon reset — nhấn để xem ảnh gốc*
@@ -124,7 +139,10 @@ Bảng vùng trái có **Điểm số / Tên học viên / Thời gian làm bài
 - Admin/Class Handler/Support không click điểm/dòng để mở bài làm chi tiết; không có form chấm/sửa nhận xét như Teacher.
 - Đã nộp và Điểm là hai mức dữ liệu khác nhau: có bài nộp không đồng nghĩa đã chấm; điểm chưa có khác điểm 0.
 
-### Trang 6: Reset BTVN/Kiểm tra cho học viên
+### Trang 6: ADM-LOP-020300 — Reset BTVN/Kiểm tra cho học viên
+
+![Figma mới nhất · ADM-LOP-020300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020300.png)
+
 **Mô tả:**
 
 **Admin, Class Handler và Support** có quyền lớp bấm **icon mũi tên xoay vòng ở từng học viên** để mở **popup xác nhận reset**. Xác nhận sẽ reset toàn bộ bài làm/kết quả của đúng học viên ở bài đó để học viên làm lại. Popup dùng component xác nhận chung; chưa có ảnh riêng.
@@ -142,7 +160,10 @@ Bảng vùng trái có **Điểm số / Tên học viên / Thời gian làm bài
 - Reset bài làm là thay dữ liệu, không phải thao tác chỉ đọc; đây là thao tác Admin/Class Handler/Support được phép trong menu.
 - Không cho nhập điểm mới hoặc chấm câu trả lời thông qua reset; khả năng reset bài chưa nộp và nhiều phiên đồng thời cần chốt.
 
-### Trang 7: Toast phản hồi reset
+### Trang 7: ADM-LOP-020300 — Toast phản hồi reset
+
+![Figma mới nhất · ADM-LOP-020300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020300.png)
+
 **Mô tả:**
 
 Reset BTVN và Kiểm tra dùng Toast chung sau khi backend xác nhận kết quả. Thông báo dưới đây là nội dung đề xuất cho nghiệp vụ reset.

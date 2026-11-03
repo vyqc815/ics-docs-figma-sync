@@ -4,7 +4,10 @@ Flow chọn/tạo giáo viên từ một lớp và quyền Giáo viên phụ tr�
 
 ## 1. UI
 
-### Trang 1: Danh sách giáo viên
+### Trang 1: ADM-GV-010000 — Danh sách giáo viên
+
+![Figma mới nhất · ADM-GV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-010000.png)
+
 ![Trang 1](./images/teacher-list.png)
 
 *Danh sách giáo viên: bộ lọc Trung tâm, popover Chi tiết lịch đăng ký, Chi tiết Lớp và Ghi chú chi tiết — nhấn để xem ảnh gốc*
@@ -48,7 +51,10 @@ Flow chọn/tạo giáo viên từ một lớp và quyền Giáo viên phụ tr�
 - Các lỗi chữ khác trên Figma không phải yêu cầu: nhãn bộ lọc `Trọng Thái` đọc là `Trạng Thái`.
 - Trạng thái rỗng không được tự thay bằng `0` nếu hệ thống chưa xác định giá trị thực tế bằng 0.
 
-### Trang 2: Chi tiết lịch đăng ký khi hover
+### Trang 2: ADM-GV-010000 — Chi tiết lịch đăng ký khi hover
+
+![Figma mới nhất · ADM-GV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-010000.png)
+
 **Mô tả:**
 
 - Popover `Chi tiết lịch đăng ký` (ảnh `teacher-list.png`) cho phép `Admin` xem chi tiết lịch đăng ký hiện hành của đúng giáo viên ngay tại danh sách.
@@ -69,7 +75,10 @@ Flow chọn/tạo giáo viên từ một lớp và quyền Giáo viên phụ tr�
 - Vùng hover bao gồm ô lịch và popover để người dùng có thể di chuyển con trỏ sang đọc nội dung.
 - Popover đóng khi con trỏ rời vùng liên quan hoặc khi danh sách chuyển sang dòng/trang khác.
 
-### Trang 3: Chi tiết lớp đang dạy khi hover
+### Trang 3: ADM-GV-010000 — Chi tiết lớp đang dạy khi hover
+
+![Figma mới nhất · ADM-GV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-010000.png)
+
 **Mô tả:**
 
 - Cột `Lịch dạy` hiển thị icon lịch kèm badge đỏ là số lớp `Đang học` của giáo viên; hover icon mở popover `Chi tiết Lớp` liệt kê **tất cả** lớp đang dạy (ảnh `teacher-list.png`).
@@ -87,7 +96,10 @@ Flow chọn/tạo giáo viên từ một lớp và quyền Giáo viên phụ tr�
 - Vùng hover gồm icon và popover; popover đóng khi con trỏ rời vùng liên quan hoặc danh sách chuyển trang.
 - Thứ tự các lớp trong popover cần xác nhận tại mục 3.
 
-### Trang 4: Ghi chú giáo viên
+### Trang 4: ADM-GV-010000 — Ghi chú giáo viên
+
+![Figma mới nhất · ADM-GV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-010000.png)
+
 **Mô tả:**
 
 - Cột `Ghi chú` dùng để xem nhanh và sao chép ghi chú tổng quan của đúng giáo viên tại màn danh sách.
@@ -105,7 +117,10 @@ Flow chọn/tạo giáo viên từ một lớp và quyền Giáo viên phụ tr�
 - Giáo viên không có ghi chú hiển thị icon không khả dụng; hover/click không được hiển thị hoặc sao chép dữ liệu của dòng khác.
 - Phản hồi sau khi sao chép thành công hoặc thất bại cần xác nhận tại mục 3.
 
-### Trang 5: Menu thao tác trên dòng: Thêm lịch hẹn, Thêm tag và Danh sách lịch hẹn
+### Trang 5: ADM-GV-010040 — Menu thao tác trên dòng: Thêm lịch hẹn, Thêm tag và Danh sách lịch hẹn
+
+![Figma mới nhất · ADM-GV-010040](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-010040.png)
+
 ![Trang 5](./images/teacher-row-menu.png)
 
 *Click tên giáo viên mở menu `Thêm lịch hẹn`, `Thêm tag` — nhấn để xem ảnh gốc*
@@ -139,7 +154,10 @@ Flow chọn/tạo giáo viên từ một lớp và quyền Giáo viên phụ tr�
 - Chỉ `Admin` có menu thao tác; role khác không thấy menu và backend từ chối request gán tag / tạo lịch hẹn ngoài quyền.
 - Thêm lịch hẹn hoặc gán tag thành công / thất bại có đúng một Toast theo khu vực Toast phản hồi CRUD.
 
-### Trang 6: Điều hướng đến chi tiết giáo viên
+### Trang 6: ADM-GV-010000 — Điều hướng đến chi tiết giáo viên
+
+![Figma mới nhất · ADM-GV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-010000.png)
+
 **Mô tả:**
 
 - Nút chi tiết ở cuối dòng mở màn hình Chi tiết giáo viên của đúng bản ghi được chọn.
@@ -153,7 +171,10 @@ Flow chọn/tạo giáo viên từ một lớp và quyền Giáo viên phụ tr�
 
 - Khi giáo viên không còn tồn tại hoặc không còn thuộc phạm vi của `Admin`, hệ thống không được mở dữ liệu của giáo viên khác thay thế.
 
-### Trang 7: Thêm mới giáo viên
+### Trang 7: ADM-GV-010020 — Thêm mới giáo viên
+
+![Figma mới nhất · ADM-GV-010020](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-010020.png)
+
 ![Trang 7](./images/teacher-create-modal.png)
 
 *Popup thêm mới giáo viên — nhấn để xem ảnh gốc*
@@ -194,7 +215,10 @@ Flow chọn/tạo giáo viên từ một lớp và quyền Giáo viên phụ tr�
 - Tạo thành công: đóng popup, hiển thị notification thành công và tải lại danh sách giáo viên.
 - Tạo thất bại: giữ dữ liệu người dùng đã nhập, hiển thị notification thất bại, không hiển thị mật khẩu trong nội dung notification và cho phép thử lại.
 
-### Trang 8: Toast phản hồi CRUD
+### Trang 8: ADM-GV-010000 — Toast phản hồi CRUD
+
+![Figma mới nhất · ADM-GV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-010000.png)
+
 ![Trang 8](../../images/01-toast-crud.png)
 
 *Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc*

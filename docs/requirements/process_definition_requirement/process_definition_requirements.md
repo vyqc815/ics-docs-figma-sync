@@ -4,7 +4,10 @@ Menu Quy trình định nghĩa nguồn Action Board theo cấu trúc **Package �
 
 ## 1. UI
 
-### Trang 1: Danh sách loại quy trình
+### Trang 1: ADM-QT-010001 — Danh sách loại quy trình
+
+![Figma mới nhất · ADM-QT-010001](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-QT-010001.png)
+
 ![Trang 1](./images/01-process-list.png)
 
 *Danh sách loại quy trình — nhấn để xem ảnh gốc*
@@ -41,7 +44,12 @@ Menu Quy trình định nghĩa nguồn Action Board theo cấu trúc **Package �
 
 - Muốn thay đổi nội dung quy trình đã Công khai thì dùng **Nhân bản** để có bản Nháp mới.
 
-### Trang 2: Trang 1a: Nhân bản quy trình
+### Trang 2: ADM-QT-010000, ADM-QT-020000 — Trang 1a: Nhân bản quy trình
+
+![Figma mới nhất · ADM-QT-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-QT-010000.png)
+
+![Figma mới nhất · ADM-QT-020000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-QT-020000.png)
+
 **Mô tả:**
 
 - Bấm nút `Nhân bản` ở cuối dòng → popup xác nhận `Nhân bản quy trình`. Xác nhận → hệ thống tạo một quy trình mới ở trạng thái `Nháp` với toàn bộ cấu trúc của quy trình gốc, sau đó Admin chỉnh sửa như một quy trình Nháp bình thường. Chưa có ảnh UI cho nút và popup.
@@ -59,7 +67,10 @@ Menu Quy trình định nghĩa nguồn Action Board theo cấu trúc **Package �
 - Tạo bản sao là thao tác toàn vẹn: lỗi giữa chừng thì không tạo quy trình nào, không có bản sao thiếu nội dung.
 - Thành công → đóng popup, bản sao xuất hiện trong danh sách, Toast `Thành Công`.
 
-### Trang 3: Trang 1b: Xóa quy trình
+### Trang 3: ADM-QT-020000 — Trang 1b: Xóa quy trình
+
+![Figma mới nhất · ADM-QT-020000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-QT-020000.png)
+
 **Mô tả:**
 
 - Bấm nút `Xóa` ở cuối dòng quy trình `Nháp` → popup xác nhận. Chưa có ảnh UI cho nút và popup.
@@ -77,7 +88,10 @@ Menu Quy trình định nghĩa nguồn Action Board theo cấu trúc **Package �
 - Backend kiểm tra lại trạng thái lúc xóa: quy trình vừa được chuyển Công khai bởi người khác thì từ chối.
 - Thành công → đóng popup, bỏ dòng khỏi danh sách, cập nhật tổng số/phân trang, Toast `Thành Công`. Lỗi → giữ dữ liệu, Toast `Có Lỗi Xảy Ra`.
 
-### Trang 4: Chi tiết loại quy trình
+### Trang 4: ADM-QT-020000 — Chi tiết loại quy trình
+
+![Figma mới nhất · ADM-QT-020000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-QT-020000.png)
+
 ![Trang 4](./images/02-process-detail.png)
 
 *Cấu hình Action Board nguồn — nhấn để xem ảnh gốc*
@@ -104,7 +118,10 @@ Menu Quy trình định nghĩa nguồn Action Board theo cấu trúc **Package �
 - Các checkbox trước một số Action Item trong ảnh chưa được giải thích; không mặc định coi đây là Result của lớp.
 - Tên, mô tả và các field cấu hình Package/Category/Action Item đều bắt buộc khi lưu; chỉ kiểm tra field của Loại task đang chọn. Cơ chế lưu/xác nhận xóa khi Nháp chưa thể hiện đầy đủ.
 
-### Trang 5: Dropdown Loại task và field cấu hình
+### Trang 5: ADM-QT-020000 — Dropdown Loại task và field cấu hình
+
+![Figma mới nhất · ADM-QT-020000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-QT-020000.png)
+
 ![Trang 5](./images/03-task-types.png)
 
 *Dropdown Loại task — nhấn để xem ảnh gốc*
@@ -132,7 +149,10 @@ Menu Quy trình định nghĩa nguồn Action Board theo cấu trúc **Package �
 - Các giá trị đang chọn trong ảnh là ví dụ; không mặc định là toàn bộ lựa chọn dropdown.
 - Chỉ đổi Loại task khi còn Nháp; hiển thị đúng bộ field. Quy trình Nháp chưa được thêm vào lớp nên thao tác này không tác động Result của lớp.
 
-### Trang 6: Sử dụng nguồn trong lớp
+### Trang 6: ADM-QT-010000 — Sử dụng nguồn trong lớp
+
+![Figma mới nhất · ADM-QT-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-QT-010000.png)
+
 **Mô tả:**
 
 - Các tab trong lớp chỉ thêm mới từ quy trình Công khai. Khi quy trình đã thêm chuyển Vô hiệu, vẫn hiện nội dung và Result đã ghi nhưng chỉ xem.

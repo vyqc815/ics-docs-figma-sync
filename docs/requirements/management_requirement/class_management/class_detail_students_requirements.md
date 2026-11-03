@@ -4,7 +4,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Học viên**
 
 ## 1. UI
 
-### Trang 1: Tab Học viên — Danh sách học viên
+### Trang 1: ADM-LOP-040200 — Tab Học viên — Danh sách học viên
+
+![Figma mới nhất · ADM-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040200.png)
+
 ![Trang 1](./images/11-class-detail-students.png)
 
 *Danh sách học viên trong lớp — nhấn để xem ảnh gốc*
@@ -37,7 +40,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Học viên**
 - `Lớp 1-1` được thêm một hoặc nhiều học viên như `Lớp chung`; không ẩn/disable thao tác thêm chỉ vì lớp đã có học viên.
 - Các hành động chỉ đọc như mở Chi tiết, xem lịch sử hoặc sao chép ghi chú không hiển thị Toast CRUD.
 
-### Trang 2: Cột Buổi học chỉ xem và cảnh báo vượt buổi
+### Trang 2: ADM-LOP-040200 — Cột Buổi học chỉ xem và cảnh báo vượt buổi
+
+![Figma mới nhất · ADM-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040200.png)
+
 **Mô tả:** Cột Buổi học không còn cho chỉnh sửa. Admin/Class Handler/Support phải chọn số buổi trong popup Thêm học phí. Sau khi giao dịch thành công, cột hiển thị số buổi được phép theo dữ liệu học phí; hover vẫn cảnh báo `Quá buổi học` nếu số thực tế lớn hơn số được phép. Ảnh dropdown tại cột ở phiên bản trước không còn là UI áp dụng.
 
 **Giải thích field/thành phần:**
@@ -97,7 +103,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Học viên**
 - `Lớp 1-1` hỗ trợ multi-select và thêm nhiều học viên trong một lần giống `Lớp chung`.
 - Search/filter chỉ tác động danh sách lựa chọn, không làm mất checkbox đã chọn nếu người dùng đổi từ khóa; UI phải hiển thị được tổng số đang chọn.
 
-### Trang 5: Form Tạo học viên mới
+### Trang 5: ADM-LOP-040200 — Form Tạo học viên mới
+
+![Figma mới nhất · ADM-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040200.png)
+
 ![Trang 5](./images/15-class-detail-student-create.png)
 
 *Tạo tài khoản học viên và thêm vào lớp — nhấn để xem ảnh gốc*
@@ -118,7 +127,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Học viên**
 - Nếu tạo tài khoản thành công nhưng không thể thêm vào lớp, hệ thống phải trả kết quả rõ ràng và không tạo quan hệ nửa chừng. Hướng rollback tài khoản hay giữ tài khoản chờ thêm lại cần dùng quy tắc chung của module Tài khoản.
 - Với cả hai Loại lớp, backend chỉ cần kiểm tra quyền, dữ liệu tài khoản và quan hệ trùng; không chặn dựa trên sĩ số của `Lớp 1-1`.
 
-### Trang 6: Ghi chú trong lớp và Lịch sử ghi chú
+### Trang 6: ADM-LOP-040210 — Ghi chú trong lớp và Lịch sử ghi chú
+
+![Figma mới nhất · ADM-LOP-040210](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040210.png)
+
 ![Trang 6](./images/16-class-detail-student-note.png)
 
 *Ghi chú của học viên trong lớp — nhấn để xem ảnh gốc*
@@ -143,7 +155,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Học viên**
 - Nội dung hiển thị dưới dạng text an toàn; không thực thi HTML/script.
 - Copy thành công có phản hồi nhẹ tại UI nhưng không dùng Toast CRUD vì không thay đổi dữ liệu.
 
-### Trang 7: Trạng thái học viên và Lịch sử thay đổi trạng thái
+### Trang 7: ADM-LOP-040220 — Trạng thái học viên và Lịch sử thay đổi trạng thái
+
+![Figma mới nhất · ADM-LOP-040220](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040220.png)
+
 ![Trang 7](./images/17-class-detail-student-status-menu.png)
 
 *Menu đổi trạng thái học viên — nhấn để xem ảnh gốc*
@@ -186,7 +201,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Học viên**
 - Backend kiểm tra điều kiện học phí tại thời điểm chuyển sang `Đang học`, không tin badge/tổng tiền đang hiển thị trên client.
 - UI ảnh có checkbox và thao tác xóa lịch sử; quyền và quy tắc xóa bản ghi lịch sử chưa được xác nhận nên chưa thuộc phạm vi triển khai.
 
-### Trang 8: Popup Thêm học phí
+### Trang 8: ADM-LOP-040230 — Popup Thêm học phí
+
+![Figma mới nhất · ADM-LOP-040230](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040230.png)
+
 ![Trang 8](./images/19-class-detail-student-tuition.png)
 
 *Ảnh tham chiếu popup cũ; UI áp dụng phải bổ sung field Số buổi học bắt buộc theo rule mới.*
@@ -218,7 +236,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Học viên**
 - Backend phải khóa/kiểm tra lại số dư hóa đơn để ngăn hai người cùng phân bổ vượt số dư.
 - Không được thêm giá trị lớn hơn số dư còn lại của hóa đơn, trừ khi requirement Hóa đơn sau này quy định rõ cơ chế trả thừa.
 
-### Trang 9: Menu thao tác từ tên học viên
+### Trang 9: ADM-LOP-040200 — Menu thao tác từ tên học viên
+
+![Figma mới nhất · ADM-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040200.png)
+
 ![Trang 9](./images/21-class-detail-student-name-actions.png)
 
 *Thêm Tag, Thêm Lịch Hẹn và Xem lịch sử — nhấn để xem ảnh gốc*
@@ -237,7 +258,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Học viên**
 - Menu phải giữ đúng `student_id`; không dùng tên đang hiển thị để định danh.
 - Requirement này chỉ đặc tả điểm vào và tên ba tab, không lặp lại nghiệp vụ chi tiết của từng function.
 
-### Trang 10: Toast phản hồi CRUD
+### Trang 10: ADM-LOP-040200 — Toast phản hồi CRUD
+
+![Figma mới nhất · ADM-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040200.png)
+
 ![Trang 10](../../images/01-toast-crud.png)
 
 *Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc*

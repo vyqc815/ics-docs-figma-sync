@@ -19,6 +19,31 @@
 
 ## 4. Khu vực và item
 
+### `F01` Header
+
+Frame: `CH-KPI-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | account | `ACCOUNT` Size=Default | `3821:48649` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F02` Sidebar · MENU - CLASS HANDLER
+
+Frame: `CH-KPI-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F02.01` | sidebar-menu-class-handler | `MENU - CLASS HANDLER`  | `4969:25135` Sidebar · MENU - CLASS HANDLER | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F03` (ngoài Body)
+
+Frame: `CH-KPI-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F03.01` | empty-state-illustration | `Empty State / Illustration` Type=Thêm vị trí | `3821:48567` Empty State / Illustration | — |  |  | Chỉ có trên Figma | Figma |
+| `F03.02` | atom-button | `Atom/Button` Type=Primary, Size=Medium | `3821:48570` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
+
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

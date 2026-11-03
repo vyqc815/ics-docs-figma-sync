@@ -30,7 +30,10 @@ Tài liệu đặc tả menu **Lớp** của role Giáo viên: thống kê tổn
 - Đổi bộ lọc hoặc tìm kiếm thì tính lại hàng thẻ, tải lại Danh sách lớp và chọn lại lớp đầu tiên.
 - Không có lớp thỏa bộ lọc: hàng thẻ hiển thị `0/0`, `0%`, badge hạng trống; ẩn khối lớp bên trái; Danh sách lớp hiển thị `Bảng dữ liệu này đang trống`.
 
-### Trang 2: Hàng thẻ chỉ số
+### Trang 2: GV-LOP-010000 — Hàng thẻ chỉ số
+
+![Figma mới nhất · GV-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-010000.png)
+
 **Mô tả:**
 
 - Năm thẻ `Số lớp`, `Lên kỳ`, `Đi học`, `BTVN`, `Đạt KPI` và badge hạng, tính trên tập lớp thỏa bộ lọc.
@@ -48,7 +51,10 @@ Tài liệu đặc tả menu **Lớp** của role Giáo viên: thống kê tổn
 - Lớp không có học viên hợp lệ thì KPI lớp không tham gia thẻ `Đạt KPI`.
 - Không làm tròn từng học viên/lớp trước khi lấy trung bình; không chia 0, tập rỗng hiển thị `0%`.
 
-### Trang 3: Khối lớp đang chọn
+### Trang 3: GV-LOP-010000 — Khối lớp đang chọn
+
+![Figma mới nhất · GV-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-010000.png)
+
 **Mô tả:**
 
 - Khối `Lớp <mã lớp>` bên trái hiển thị nhanh thông tin và 6 chỉ số của lớp đang chọn trong Danh sách lớp. Mặc định chọn lớp đầu tiên; bấm card khác để đổi.
@@ -67,7 +73,10 @@ Tài liệu đặc tả menu **Lớp** của role Giáo viên: thống kê tổn
 - Sáu chỉ số dùng đúng công thức mục `Thống kê học tập trung bình của lớp` của Tổng quan lớp; không tính lại khác.
 - Không có lớp trong danh sách: ẩn toàn bộ khối.
 
-### Trang 4: Danh sách lớp
+### Trang 4: GV-LOP-010000 — Danh sách lớp
+
+![Figma mới nhất · GV-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-010000.png)
+
 **Mô tả:**
 
 - Danh sách card lớp thỏa bộ lọc, mỗi card một lớp; bấm card để chọn, bấm `>` để vào Chi tiết lớp.

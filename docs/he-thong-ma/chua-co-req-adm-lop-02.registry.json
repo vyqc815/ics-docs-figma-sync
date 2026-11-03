@@ -17,13 +17,15 @@
    "nodeId": "3304:60340",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop-hoc/tong-quan-chi-tiet",
    "link": "/chi-tiet-lop-hoc/tong-quan-chi-tiet",
    "dark": "ADM-LOP-020101-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "ADM-LOP-02.F01"
+   ]
   },
   "ADM-LOP-020303": {
    "id": "ADM-LOP-020303",
@@ -38,13 +40,16 @@
    "nodeId": "3502:69803",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop-hoc/kiem-tra",
    "link": "/chi-tiet-lop-hoc/kiem-tra",
    "dark": "ADM-LOP-020303-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "ADM-LOP-02.F01",
+    "ADM-LOP-02.F02"
+   ]
   },
   "ADM-LOP-020404": {
    "id": "ADM-LOP-020404",
@@ -59,7 +64,7 @@
    "nodeId": "769:36844",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop-hoc/tu-hoc/trong",
    "link": "/chi-tiet-lop-hoc/kiem-tra?state=ADM-LOP-020404",
    "dark": "ADM-LOP-020404-DK",
@@ -80,7 +85,7 @@
    "nodeId": "769:37126",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop-hoc/danh-gia/trong",
    "link": "/chi-tiet-lop-hoc/kiem-tra?state=ADM-LOP-020504",
    "dark": "ADM-LOP-020504-DK",
@@ -101,13 +106,21 @@
    "nodeId": "2711:61860",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop-hoc/quy-trinh-lop/co-cap-nhat-qua-han",
    "link": "/chi-tiet-lop-hoc/quy-trinh-lop/co-cap-nhat-qua-han",
    "dark": "ADM-LOP-020709-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "ADM-LOP-02.F01",
+    "ADM-LOP-02.F03",
+    "ADM-LOP-02.F04",
+    "ADM-LOP-02.F05",
+    "ADM-LOP-02.F06",
+    "ADM-LOP-02.F07",
+    "ADM-LOP-02.F08"
+   ]
   },
   "ADM-LOP-020809": {
    "id": "ADM-LOP-020809",
@@ -122,16 +135,1386 @@
    "nodeId": "2711:65565",
    "inFigma": true,
    "inPageList": true,
-   "synced": false,
+   "synced": true,
    "route": "/chi-tiet-lop-hoc/cskh/co-cap-nhat-qua-han",
    "link": "/chi-tiet-lop-hoc/cskh/co-cap-nhat-qua-han",
    "dark": "ADM-LOP-020809-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "ADM-LOP-02.F01",
+    "ADM-LOP-02.F03",
+    "ADM-LOP-02.F04",
+    "ADM-LOP-02.F05",
+    "ADM-LOP-02.F06",
+    "ADM-LOP-02.F07",
+    "ADM-LOP-02.F08",
+    "ADM-LOP-02.F09"
+   ]
   }
  },
- "regions": [],
+ "regions": [
+  {
+   "id": "ADM-LOP-02.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-020101",
+    "adm-lop-020303",
+    "adm-lop-020709",
+    "adm-lop-020809"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-LOP-02.F01.01",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "3304:60346",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.02",
+     "name": "the-chi-so",
+     "label": "Thẻ chỉ số",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Thẻ chỉ số",
+        "figmaId": "3304:60351",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "12/12",
+         "Có phần thêm": false,
+         "Tiêu đề": "Sỉ số",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ nhấn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.03",
+     "name": "progress-diem-danh-gia-a-f",
+     "label": "Progress/Điểm Đánh Giá (A-F)",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Progress/Điểm Đánh Giá (A-F)",
+        "figmaId": "3304:60361",
+        "layer": "Progress/Điểm Đánh Giá (A-F)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Progress/Điểm Đánh Giá (A-F)",
+        "component": "Progress/Điểm Đánh Giá (A-F)",
+        "variant": {
+         "Property 1": "A nhỏ",
+         "Size": "36x32"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.04",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Avatar",
+        "figmaId": "3304:60367",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Nữ 2",
+         "Size": "20"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.05",
+     "name": "ghi-chu",
+     "label": "GHI CHÚ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "GHI CHÚ",
+        "figmaId": "3304:60370",
+        "layer": "GHI CHÚ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "GHI CHÚ",
+        "component": "GHI CHÚ",
+        "variant": {
+         "Property 1": "Hover",
+         "Property 2": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.06",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Mouse click",
+        "figmaId": "3304:62581",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.07",
+     "name": "molecule-tooltip",
+     "label": "Molecule/Tooltip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Molecule/Tooltip",
+        "figmaId": "3304:62573",
+        "layer": "Molecule/Tooltip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Tooltip",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Ghi chú chi tiết"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.08",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "4056:93405",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.09",
+     "name": "nut-an-ghi-chu",
+     "label": "Nút · Ẩn ghi chú",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Nút · Ẩn ghi chú",
+        "figmaId": "4056:94106",
+        "layer": "Nút · Ẩn ghi chú",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Nút · Ẩn ghi chú",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Ẩn ghi chú",
+         "Type": "Outlined Icon",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.10",
+     "name": "student-status",
+     "label": "Student Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Student Status",
+        "figmaId": "3304:62212",
+        "layer": "Student Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Student Status",
+        "component": "Student Status",
+        "variant": {
+         "Property 1": "Đang học"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.11",
+     "name": "o-dinh-danh",
+     "label": "Ô định danh",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Ô định danh",
+        "figmaId": "3304:62213",
+        "layer": "Ô định danh",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Ô định danh",
+        "component": null,
+        "variant": {
+         "Có Tiền": true,
+         "Có lịch hẹn": false,
+         "Có tag": true,
+         "Có avatar": true,
+         "Tên": "Học viên 1",
+         "Có tag thứ 2": false,
+         "Mã": "102189-mtra60790@gmail.com"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.12",
+     "name": "class-session-status",
+     "label": "Class Session Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Class Session Status",
+        "figmaId": "3304:62215",
+        "layer": "Class Session Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Class Session Status",
+        "component": "Class Session Status",
+        "variant": {
+         "Property 1": "Đi Học - Làm BT"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.13",
+     "name": "menu-panel",
+     "label": "Menu Panel",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Menu Panel",
+        "figmaId": "3304:62606",
+        "layer": "Menu Panel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Menu Panel",
+        "component": "DD/Organism/Menu Panel",
+        "variant": {
+         "Footer": false,
+         "Search": false,
+         "Type": "Action"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.14",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3304:60662",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.15",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020101": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:223847",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Tổng Quan"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.16",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "3857:68581",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Thêm quy trình",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.17",
+     "name": "global-progress-bar",
+     "label": "Global Progress Bar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Global Progress Bar",
+        "figmaId": "3502:75921",
+        "layer": "Global Progress Bar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Global Progress Bar",
+        "component": "Global Progress Bar",
+        "variant": {
+         "Property 1": "Progress ngang ( Không % )"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.18",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "3502:75923",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1/1",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.19",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "3772:86901",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Time": "4 ngày trước",
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Label": "14:02 - 05.08.2026",
+         "Type": "Date"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F01.20",
+     "name": "atom-badge-type",
+     "label": "Atom/Badge Type",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Atom/Badge Type",
+        "figmaId": "3772:87014",
+        "layer": "Atom/Badge Type",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge Type",
+        "component": "Atom/Badge Type",
+        "variant": {
+         "Variant": "Log",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-LOP-02.F02",
+   "name": "maincontent",
+   "title": "MainContent",
+   "screens": [
+    "adm-lop-020303"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-LOP-02.F02.01",
+     "name": "the-chi-so",
+     "label": "Thẻ chỉ số",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020303": [
+       {
+        "term": "Thẻ chỉ số",
+        "figmaId": "3502:69812",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "01/11",
+         "Đơn vị": "bài",
+         "Tiêu đề": "Đã chấm K.tra",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F02.02",
+     "name": "trang-thai-nop-bai-va-diem",
+     "label": "Trạng thái nộp bài và điểm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020303": [
+       {
+        "term": "Trạng thái nộp bài và điểm",
+        "figmaId": "3502:70652",
+        "layer": "Trạng thái nộp bài và điểm",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Trạng thái nộp bài và điểm",
+        "component": "Trạng thái nộp bài và điểm",
+        "variant": {
+         "Trạng thái": "Điểm",
+         "Cỡ": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F02.03",
+     "name": "molecule-o-dinh-danh",
+     "label": "Molecule/Ô định danh",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020303": [
+       {
+        "term": "Molecule/Ô định danh",
+        "figmaId": "3502:70653",
+        "layer": "Molecule/Ô định danh",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Molecule/Ô định danh",
+        "component": null,
+        "variant": {
+         "Có Tiền": false,
+         "Có lịch hẹn": false,
+         "Có tag": false,
+         "Có avatar": true,
+         "Tên": "Bích Thùy",
+         "Có tag thứ 2": false,
+         "Mã": "MÃ HV: 0001"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F02.04",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020303": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "3502:70658",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F02.05",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020303": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "3502:69923",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F02.06",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020303": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "3561:66443",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Add Circle Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F02.07",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020303": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "3502:69924",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F02.08",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020303": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "3502:69928",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F02.09",
+     "name": "percent",
+     "label": "PERCENT %",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020303": [
+       {
+        "term": "PERCENT %",
+        "figmaId": "3502:69934",
+        "layer": "PERCENT %",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "PERCENT %",
+        "component": "PERCENT %",
+        "variant": {
+         "Property 1": "ĐN 3"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-LOP-02.F03",
+   "name": "file",
+   "title": "File",
+   "screens": [
+    "adm-lop-020709",
+    "adm-lop-020809"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-LOP-02.F03.01",
+     "name": "atom-uploaded-file-card",
+     "label": "Atom/Uploaded File Card",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Atom/Uploaded File Card",
+        "figmaId": "3772:86888",
+        "layer": "Atom/Uploaded File Card",
+        "confidence": "cao",
+        "region": "File",
+        "owner": "Atom/Uploaded File Card",
+        "component": "Atom/Uploaded File Card",
+        "variant": {
+         "Type": "Menu"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-LOP-02.F04",
+   "name": "field-ghi-chu",
+   "title": "Field · Ghi chú",
+   "screens": [
+    "adm-lop-020709",
+    "adm-lop-020809"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-LOP-02.F04.01",
+     "name": "atom-label",
+     "label": "Atom/Label",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Atom/Label",
+        "figmaId": "3857:71895",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Ghi chú",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Ghi chú",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F04.02",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "3772:86906",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Field · Ghi chú",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Nhập ghi chú...",
+         "State": "Default",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-LOP-02.F05",
+   "name": "row",
+   "title": "Row",
+   "screens": [
+    "adm-lop-020709",
+    "adm-lop-020809"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-LOP-02.F05.01",
+     "name": "atom-label",
+     "label": "Atom/Label",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Atom/Label",
+        "figmaId": "3857:71923",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "3065:52444",
+         "Label": "Kết quả",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F05.02",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "3772:86977",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Hài lòng",
+         "State": "CChọn",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-LOP-02.F06",
+   "name": "verify",
+   "title": "Verify",
+   "screens": [
+    "adm-lop-020709",
+    "adm-lop-020809"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-LOP-02.F06.01",
+     "name": "atom-label",
+     "label": "Atom/Label",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Atom/Label",
+        "figmaId": "3857:71952",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Verify",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "738:25432",
+         "Label": "Người xác thực · Class Handler",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-LOP-02.F06.02",
+     "name": "avatar-name",
+     "label": "AVATAR + Name",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "AVATAR + Name",
+        "figmaId": "3772:87003",
+        "layer": "AVATAR + Name",
+        "confidence": "cao",
+        "region": "Verify",
+        "owner": "AVATAR + Name",
+        "component": "AVATAR + Name",
+        "variant": {
+         "Property 1": "AVATAR + Name 2"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-LOP-02.F07",
+   "name": "log-entry",
+   "title": "Log Entry",
+   "screens": [
+    "adm-lop-020709",
+    "adm-lop-020809"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-LOP-02.F07.01",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "3772:87018",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": "Log Entry",
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Time": "4 ngày trước",
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Label": "10:15 - 26.08.2026",
+         "Type": "Date"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-LOP-02.F08",
+   "name": "molecule-add-new-bar",
+   "title": "Molecule/Add New Bar",
+   "screens": [
+    "adm-lop-020709",
+    "adm-lop-020809"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-LOP-02.F08.01",
+     "name": "molecule-add-new-bar",
+     "label": "Molecule/Add New Bar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020709": [
+       {
+        "term": "Molecule/Add New Bar",
+        "figmaId": "3772:87023",
+        "layer": "Molecule/Add New Bar",
+        "confidence": "cao",
+        "region": "Molecule/Add New Bar",
+        "owner": "Molecule/Add New Bar",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Nút": "1075:1478",
+         "Icon trái": false,
+         "Placeholder": "Thêm ghi nhận",
+         "Type": "Box",
+         "Size": "S",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-LOP-02.F09",
+   "name": "header",
+   "title": "Header",
+   "screens": [
+    "adm-lop-020809"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-LOP-02.F09.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020809": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2711:65615",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
  "exceptions": [],
  "flows": [],
  "testcases": [],

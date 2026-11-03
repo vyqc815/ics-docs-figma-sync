@@ -19,6 +19,18 @@
 
 ## 4. Khu vực và item
 
+### `F01` (ngoài Body)
+
+Frame: `GV-LOP-050110` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | atom-badge | `Atom/Badge`  | `5425:281700` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | component-2 | `Switch Center`  | `5425:281389` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | account | `ACCOUNT` Size=Default | `5425:281391` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | header-vai-tro |  | `5425:281392` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | sidebar-menu-teacher | `MENU - TEACHER`  | `5425:281483` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
+
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

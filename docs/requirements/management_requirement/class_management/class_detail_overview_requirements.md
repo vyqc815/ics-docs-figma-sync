@@ -4,7 +4,10 @@
 
 ## 1. UI
 
-### Trang 1: Màn Tổng quan và phân quyền
+### Trang 1: ADM-LOP-020100 — Màn Tổng quan và phân quyền
+
+![Figma mới nhất · ADM-LOP-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020100.png)
+
 ![Trang 1](./images/37-class-overview-off.png)
 
 *Thống kê lớp phía trên; học viên được chọn bên trái; danh sách học viên bên phải.*
@@ -30,7 +33,10 @@
 - Màn này phục vụ xem dữ liệu; không tự thêm quyền chấm điểm, sửa điểm danh, sửa ghi chú giáo viên hoặc thay trạng thái học viên.
 - Badge trạng thái học viên thuộc bộ trạng thái quan hệ lớp đã chốt; không nhầm với trạng thái điểm danh từng bài.
 
-### Trang 2: Nút Back và tooltip thông tin lớp
+### Trang 2: ADM-LOP-020100 — Nút Back và tooltip thông tin lớp
+
+![Figma mới nhất · ADM-LOP-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020100.png)
+
 ![Trang 2](./images/61-class-overview-back-tooltip.png)
 
 *Tooltip thông tin lớp khi hover nút Back — UI ngày 29/09/2026, nhấn để xem ảnh gốc.*
@@ -58,7 +64,10 @@ Nút Back ở góc trên trái gồm mũi tên quay lại và mã lớp đang xe
 - Khi đổi lớp, tooltip phải theo class_id mới; response lớp cũ không ghi đè. Tooltip không phụ thuộc học viên đang chọn hoặc công tắc ON/OFF.
 - Hover/ẩn/click Back không thay dữ liệu và không hiển thị Toast CRUD.
 
-### Trang 3: Thống kê học tập trung bình của lớp
+### Trang 3: ADM-LOP-020100 — Thống kê học tập trung bình của lớp
+
+![Figma mới nhất · ADM-LOP-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020100.png)
+
 **Mô tả:** Hiển thị các chỉ số toàn lớp: Sĩ số, Đi học, BTVN, Điểm KT, Điểm BTVN, Thời gian học, Tiêu chuẩn và Đã chấm và sửa bài; cạnh khối có badge đánh giá lớp.
 
 **Giải thích field/thành phần:**
@@ -86,7 +95,10 @@ Nút Back ở góc trên trái gồm mũi tên quay lại và mã lớp đang xe
 - Công thức sĩ số thường này thay công thức cũ tính Hoàn thành ở tử số và loại Chỉ xem/Xóa khỏi mẫu số; dùng thống nhất với Danh sách lớp. Không đổi công thức Sĩ số KPI có điều kiện học phí.
 - Mẫu số sĩ số phải lấy cả quan hệ học viên–lớp trạng thái Xóa, không chỉ đếm danh sách đang hiển thị. Ví dụ mỗi trạng thái có một học viên thì sĩ số là 2/7.
 
-### Trang 4: Biểu đồ theo bài học
+### Trang 4: ADM-LOP-020100 — Biểu đồ theo bài học
+
+![Figma mới nhất · ADM-LOP-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020100.png)
+
 **Mô tả:** Các chỉ số học tập có biểu đồ đường màu cam theo số bài học, có thể tô vùng dưới đường như ảnh.
 
 **Giải thích field/thành phần:**
@@ -104,7 +116,10 @@ Nút Back ở góc trên trái gồm mũi tên quay lại và mã lớp đang xe
 - Xác định bài học viên đã học từ dữ liệu tiến độ học viên–bài; không dùng bài mới nhất giáo viên mở cho cả lớp thay cho tiến độ từng người.
 - Thiếu dữ liệu không dựng thành đường 0 như kết quả hợp lệ.
 
-### Trang 5: Danh sách, tìm kiếm và chọn học viên
+### Trang 5: ADM-LOP-020100 — Danh sách, tìm kiếm và chọn học viên
+
+![Figma mới nhất · ADM-LOP-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020100.png)
+
 **Mô tả:** Mặc định chọn học viên đầu tiên khi mở màn. Click thẻ chọn học viên và cập nhật vùng trái; dấu > vào detail học viên.
 
 **Giải thích field/thành phần:**
@@ -127,7 +142,10 @@ Nút Back ở góc trên trái gồm mũi tên quay lại và mã lớp đang xe
 - Khi search không khớp học viên đang chọn, chính sách giữ lựa chọn hay chuyển sang kết quả đầu cần chốt; không trộn tên A với dữ liệu B.
 - Học viên Rời lớp/Xóa vẫn có thẻ trong Tổng quan theo rule mọi trạng thái; click xem dữ liệu học tập lịch sử theo quyền. Hiển thị Xóa ở Tổng quan không khôi phục quan hệ hoặc đổi rule ẩn Xóa tại tab Học viên trong Cài đặt.
 
-### Trang 6: Công tắc ON/OFF: học phí và ghi chú cài đặt
+### Trang 6: ADM-LOP-020100 — Công tắc ON/OFF: học phí và ghi chú cài đặt
+
+![Figma mới nhất · ADM-LOP-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020100.png)
+
 ![Trang 6](./images/38-class-overview-on.png)
 
 *ON: thêm học phí, ghi chú lớp và ghi chú từng học viên.*
@@ -150,7 +168,10 @@ Nút Back ở góc trên trái gồm mũi tên quay lại và mã lớp đang xe
 - Các role khác được xem ON trong Tổng quan không vì thế được quyền xem tab Hóa đơn: tab Hóa đơn vẫn chỉ Admin/Class Handler/Support theo requirement riêng.
 - Không cho sửa ghi chú cài đặt ngay tại Tổng quan với mọi role; chỉ xem/lịch sử/Copy. Quyền sửa ở function Cài đặt không thay đổi.
 
-### Trang 7: Ghi chú cài đặt và lịch sử
+### Trang 7: ADM-LOP-020110 — Ghi chú cài đặt và lịch sử
+
+![Figma mới nhất · ADM-LOP-020110](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020110.png)
+
 ![Trang 7](./images/39-class-overview-note-history.png)
 
 **Mô tả:** Ghi chú học viên dùng cùng nguồn với tab Học viên trong Cài đặt; có thể chứa các ghi chú bất thường như học kém/cảnh báo nghỉ học. Lịch sử và Copy dùng dữ liệu phiên bản đã lưu.
@@ -275,7 +296,10 @@ Nút Back ở góc trên trái gồm mũi tên quay lại và mã lớp đang xe
 - Giá trị dùng tính trung bình là tổng thời gian từng bài của từng học viên trên app, không phải từng ô hoạt động riêng lẻ. Cách nguồn thời gian tổng loại trùng giữa chín hoạt động cần xác nhận với function app; không tự cộng trùng.
 - Mapping icon/thứ tự ô không được đoán từ hình; cần dùng định danh hoạt động và asset chuẩn.
 
-### Trang 12: Loading, rỗng, lỗi và an toàn dữ liệu
+### Trang 12: ADM-LOP-020100 — Loading, rỗng, lỗi và an toàn dữ liệu
+
+![Figma mới nhất · ADM-LOP-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020100.png)
+
 **Mô tả:** Phân biệt tải/chưa có dữ liệu/lỗi ở thống kê, danh sách, bảng bài và popup; chống response cũ ghi đè học viên đang chọn.
 
 **Giải thích field/thành phần:**

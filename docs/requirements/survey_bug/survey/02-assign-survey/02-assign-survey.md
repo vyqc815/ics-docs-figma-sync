@@ -47,7 +47,10 @@
 - "Xem kết quả" enable khi dòng có ≥ 1 bài Đã hoàn thành → Popup 5.
 - Menu 3 chấm áp dụng cho cả dòng: **Giao** (dòng Đã thu hồi → giao lại các HV đã thu hồi) · **Thu hồi** (HV chưa hoàn thành của dòng → Đã thu hồi) · **Xoá** (có xác nhận).
 
-### Trang 3: Popup 1: Chọn giáo viên (tab Giáo viên)
+### Trang 3: ADM-GKS-010010 — Popup 1: Chọn giáo viên (tab Giáo viên)
+
+![Figma mới nhất · ADM-GKS-010010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-010010.png)
+
 ![alt text](image-6.png)
 ![alt text](image-7.png)
 
@@ -59,7 +62,10 @@
 - Khảo sát giao thuộc trung tâm đã chọn → GV thấy khi chọn trung tâm đó ở header.
 - "Đã chọn N giáo viên" và nút "Giao khảo sát (N)" cập nhật theo lựa chọn; N = 0 → disable nút.
 
-### Trang 4: Popup 2: Chọn lớp (tab Lớp)
+### Trang 4: ADM-GKS-020010 — Popup 2: Chọn lớp (tab Lớp)
+
+![Figma mới nhất · ADM-GKS-020010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-020010.png)
+
 ![alt text](image-11.png)
 ![alt text](image-12.png)
 
