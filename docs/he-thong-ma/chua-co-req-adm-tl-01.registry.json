@@ -1,0 +1,309 @@
+{
+ "cluster": "chua-co-req-adm-tl-01",
+ "title": "ADM-TL-01xx (chưa có requirement)",
+ "figmaPrefix": "ADM-TL-01",
+ "requirements": [],
+ "screens": {
+  "ADM-TL-010000": {
+   "id": "ADM-TL-010000",
+   "name": "chi-tiet-tai-lieu",
+   "title": "Tài liệu / Chi tiết tài liệu",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "ADM-TL-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4193:144448",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/tai-lieu/chi-tiet-tai-lieu",
+   "link": "/tai-lieu/chi-tiet-tai-lieu",
+   "dark": "ADM-TL-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "ADM-TL-01.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "ADM-TL-01.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-tl-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-TL-01.F01.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tl-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:249842",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Tài liệu"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TL-01.F01.02",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tl-010000": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "4193:146189",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Nhập mô tả",
+         "State": "Default",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TL-01.F01.03",
+     "name": "atom-dropzone",
+     "label": "Atom/Dropzone",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tl-010000": [
+       {
+        "term": "Atom/Dropzone",
+        "figmaId": "4193:146185",
+        "layer": "Atom/Dropzone",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Dropzone",
+        "component": "Atom/Dropzone",
+        "variant": {
+         "Kiểu": "Mặc định",
+         "Loại": "File"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TL-01.F01.04",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tl-010000": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "4193:146193",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Drop & Drag"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TL-01.F01.05",
+     "name": "add-new-bar-nhap-noi-dung-moi",
+     "label": "Add New Bar · Nhập nội dung mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tl-010000": [
+       {
+        "term": "Add New Bar · Nhập nội dung mới",
+        "figmaId": "4193:146143",
+        "layer": "Add New Bar · Nhập nội dung mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Nhập nội dung mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1080:1498",
+         "Placeholder": "Nhập nội dung mới",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TL-01.F01.06",
+     "name": "add-new-bar-nhap-danh-muc-moi",
+     "label": "Add New Bar · Nhập danh mục mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tl-010000": [
+       {
+        "term": "Add New Bar · Nhập danh mục mới",
+        "figmaId": "4193:145393",
+        "layer": "Add New Bar · Nhập danh mục mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Nhập danh mục mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1075:1478",
+         "Placeholder": "Nhập danh mục mới",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TL-01.F01.07",
+     "name": "atom-status",
+     "label": "Atom/Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tl-010000": [
+       {
+        "term": "Atom/Status",
+        "figmaId": "4193:145511",
+        "layer": "Atom/Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Status",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Công khai",
+         "Size": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TL-01.F01.08",
+     "name": "add-new-bar-them-moi",
+     "label": "Add New Bar · Thêm mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tl-010000": [
+       {
+        "term": "Add New Bar · Thêm mới",
+        "figmaId": "4193:145435",
+        "layer": "Add New Bar · Thêm mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Thêm mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Nút": "1075:1478",
+         "Icon trái": false,
+         "Placeholder": "Thêm mới",
+         "Type": "Box",
+         "Size": "S",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-TL-010000",
+   "text": "man-chinh “Tài liệu / Chi tiết tài liệu” chưa được requirement nhắc tới"
+  }
+ ]
+}

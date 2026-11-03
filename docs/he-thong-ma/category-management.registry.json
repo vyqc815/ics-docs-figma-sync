@@ -1,0 +1,1809 @@
+{
+ "cluster": "category-management",
+ "title": "Quản lý danh sách danh mục",
+ "figmaPrefix": "CM-CM2",
+ "requirements": [
+  {
+   "id": "CM-CM2.REQ01",
+   "name": "ID danh mục",
+   "text": "Tự động sinh khi tạo mới: đúng 2 chữ số trong dải `01`–`99` (giữ số 0 đứng đầu, ví dụ `05`; không cấp `00` vì `00` trong ID khoá học nghĩa là chưa chọn), duy nhất toàn hệ thống, tính cả danh mục đã xóa mềm; hệ thống lấy mã nhỏ nhất chưa dùng. Hết mã trong dải thì từ chối tạo mới và báo lỗi `Đã hết ID danh mục khả dụng (01–99).`. ID danh mục là đoạn `AA` trong ID khoá học `CCAALLMMM` (xem `course_management.md` REQ06); vì chỉ danh mục `Công Khai` mới được gán cho khoá học nên đoạn `AA` luôn là ID đã khoá, người dùng không nhập tay lúc thêm nhanh. Có thể chỉnh sửa thủ công trong lúc `Nháp`, kể cả ngay trong popup Kích hoạt công khai danh mục trước khi xác nhận; bị khóa vĩnh viễn (không sửa được) kể từ khi rời khỏi `Nháp`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.REQ02",
+   "name": "Rule chuyển trạng thái",
+   "text": "`Nháp → Công Khai` (một chiều, bắt buộc qua popup Kích hoạt công khai); `Công Khai ↔ Vô hiệu` (hai chiều); không cho chuyển `Nháp → Vô hiệu` trực tiếp và không cho chuyển về `Nháp` từ hai trạng thái còn lại. UI chỉ hiển thị lựa chọn hợp lệ: đang `Nháp` chỉ hiện `Công Khai`, đang `Công Khai` chỉ hiện `Vô hiệu`, đang `Vô hiệu` chỉ hiện `Công Khai`; nếu có request gọi trực tiếp với transition không hợp lệ, backend từ chối và trả thông báo lỗi (xem EX03).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.REQ03",
+   "name": "Thông tin cơ bản",
+   "text": "Tên danh mục bắt buộc, không giới hạn độ dài, được phép trùng với danh mục khác; hệ thống tự cắt khoảng trắng đầu/cuối trước khi lưu. Tên và Mô tả sửa được ở mọi trạng thái (`Nháp`, `Công Khai`, `Vô hiệu`). Mô tả không bắt buộc, có thể để trống lúc tạo và bổ sung sau. Số khóa học do hệ thống tự tính, không nhập tay.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.REQ04",
+   "name": "Popup Kích hoạt công khai danh mục",
+   "text": "Khi chuyển từ `Nháp` sang `Công Khai`, hệ thống bắt buộc mở popup xác nhận, cho phép CD giữ nguyên hoặc chỉnh sửa lần cuối ID (nhập tay hoặc làm mới tự động) trước khi khóa. Nút xác nhận chỉ bật khi ID trong ô đang hợp lệ và chưa trùng; backend luôn kiểm tra lại ngay trước khi lưu và chuyển trạng thái trong cùng một giao dịch.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.REQ05",
+   "name": "Xóa danh mục",
+   "text": "**Chỉ danh mục `Nháp` được xóa** (xóa mềm), và chỉ khi **chưa có** khóa học nào (chưa bị xóa mềm). Danh mục `Công Khai` / `Vô hiệu` không được xóa (muốn ngừng dùng thì để / chuyển `Vô hiệu`); khóa học đã thuộc danh mục giữ nguyên. Nút `Xóa` mờ + tooltip khi không ở `Nháp`; backend luôn kiểm tra lại trạng thái và tham chiếu ngay tại thời điểm xóa, FE hiển thị Toast lỗi do backend trả về (EX08). Quy tắc chung với Khoá học, Học kỳ, Cấp độ: chỉ `Nháp` được xóa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.REQ06",
+   "name": "Ý nghĩa trạng thái Vô hiệu",
+   "text": "Danh mục `Vô hiệu` không hiển thị để chọn mới ở field Danh mục (màn Quản lý khoá học, popup Công khai khoá học); khóa học đã gắn danh mục này vẫn hiển thị đúng thông tin, không bị gỡ hay báo lỗi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.REQ07",
+   "name": "Danh mục được gắn vào khóa học",
+   "text": "Chỉ danh mục `Công Khai` mới được chọn gắn vào khóa học từ field Danh mục của feature Quản lý khoá học. Rule này áp dụng giống với Cấp độ. (Khóa học tạo nhanh trong tab Tổng quan của popup Chi tiết danh mục thì thuộc danh mục đó ở mọi trạng thái, xem `detail_category.md`.)",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.REQ08",
+   "name": "Quyền sửa theo trạng thái",
+   "text": "`Nháp`: sửa được Tên, Mô tả, ID, cấu hình 3 tab nội dung. `Công Khai` / `Vô hiệu`: **chỉ sửa Tên và Mô tả**; ID và toàn bộ dữ liệu chi tiết bên trong (cấu hình Mindset, Tiêu chuẩn giáo trình, Hướng dẫn giảng dạy) chỉ đọc; backend từ chối request sửa (EX04, EX11). Danh mục không thể quay về `Nháp`. Quy tắc chung với Khoá học, Học kỳ, Cấp độ (xem `course_management.md` REQ10).",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "CD-DM-010000": {
+   "id": "CD-DM-010000",
+   "name": "quan-ly-danh-muc",
+   "title": "Quản lý danh mục",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "714:16696",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quan-ly-danh-muc",
+   "link": "/quan-ly-danh-muc",
+   "dark": "CD-DM-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "CM-CM2.A02",
+    "CM-CM2.F01",
+    "CM-CM2.F02"
+   ]
+  },
+  "CD-DM-010010": {
+   "id": "CD-DM-010010",
+   "name": "popup-danh-muc-cap-do",
+   "title": "Quản lý danh mục / Popup danh mục & cấp độ",
+   "kind": "popup",
+   "parent": "CD-DM-010000",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1725:17306",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do",
+   "link": "/quan-ly-danh-muc?popup=CD-DM-010010",
+   "dark": "CD-DM-010010-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "CD-DM-010020": {
+   "id": "CD-DM-010020",
+   "name": "mindset",
+   "title": "Quản lý danh mục / Popup danh mục & cấp độ / Mindset",
+   "kind": "trang-thai",
+   "parent": "CD-DM-010010",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1758:4876",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/mindset",
+   "link": "/quan-ly-danh-muc?state=CD-DM-010020",
+   "dark": "CD-DM-010020-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-CM2.A01"
+   ]
+  },
+  "CD-DM-010030": {
+   "id": "CD-DM-010030",
+   "name": "tieu-chuan-giao-trinh",
+   "title": "Quản lý danh mục / Popup danh mục & cấp độ / Tiêu chuẩn giáo trình",
+   "kind": "trang-thai",
+   "parent": "CD-DM-010010",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1758:5127",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/tieu-chuan-giao-trinh",
+   "link": "/quan-ly-danh-muc?state=CD-DM-010030",
+   "dark": "CD-DM-010030-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-CM2.A01"
+   ]
+  },
+  "CD-DM-010040": {
+   "id": "CD-DM-010040",
+   "name": "huong-dan-giang-day",
+   "title": "Quản lý danh mục / Popup danh mục & cấp độ / Hướng dẫn giảng dạy",
+   "kind": "trang-thai",
+   "parent": "CD-DM-010010",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1758:5335",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/huong-dan-giang-day",
+   "link": "/quan-ly-danh-muc?state=CD-DM-010040",
+   "dark": "CD-DM-010040-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-CM2.A01"
+   ]
+  },
+  "CD-DM-010057": {
+   "id": "CD-DM-010057",
+   "name": "thanh-cong",
+   "title": "Quản lý danh mục / Popup danh mục & cấp độ / Quản lý danh mục / Thành công",
+   "kind": "trang-thai",
+   "parent": "CD-DM-010010",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "689:14188",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/quan-ly-danh-muc?state=CD-DM-010057",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-CM2.A03"
+   ]
+  },
+  "CD-DM-010060": {
+   "id": "CD-DM-010060",
+   "name": "popup-kich-hoat-cong-khai",
+   "title": "Quản lý danh mục / Popup kích hoạt công khai",
+   "kind": "popup",
+   "parent": "CD-DM-010000",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1854:20955",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/quan-ly-danh-muc?popup=CD-DM-010060",
+   "dark": "CD-DM-010060-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-CM2.A03"
+   ]
+  },
+  "CD-DM-010062": {
+   "id": "CD-DM-010062",
+   "name": "dien-sai",
+   "title": "Quản lý danh mục / Popup kích hoạt công khai / Điền sai",
+   "kind": "trang-thai",
+   "parent": "CD-DM-010060",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1854:21305",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/quan-ly-danh-muc?state=CD-DM-010062",
+   "dark": "CD-DM-010062-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [
+  {
+   "id": "CM-CM2.A01",
+   "name": "trang-danh-sach-danh-muc",
+   "title": "Trang danh sách danh mục",
+   "screens": [
+    "cd-dm-010020",
+    "cd-dm-010030",
+    "cd-dm-010040"
+   ],
+   "screensGuessed": [
+    "CD-DM-010020",
+    "CD-DM-010030",
+    "CD-DM-010040"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "curriculum_management_requirement/category_management/category_management.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM2.A01.01",
+     "name": "id",
+     "label": "ID",
+     "spec": "Bắt buộc ngay khi tạo mới. 2 chữ số (`01`–`99`, xem REQ01), duy nhất toàn hệ thống (tính cả danh mục đã xóa mềm). Sửa tự do khi còn `Nháp`; khóa vĩnh viễn kể từ khi rời `Nháp`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010020": [
+       {
+        "term": "01",
+        "figmaId": "1758:4996",
+        "layer": "01",
+        "confidence": "cao",
+        "region": "Modal Body: 2 Columns Layout",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-dm-010030": [
+       {
+        "term": "01",
+        "figmaId": "1781:15503",
+        "layer": "01",
+        "confidence": "cao",
+        "region": "Frame 427321968",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-dm-010040": [
+       {
+        "term": "01",
+        "figmaId": "1781:15565",
+        "layer": "01",
+        "confidence": "cao",
+        "region": "Frame 427321951",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "CM-CM2.REQ01",
+       "raw": "REQ01"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "ID"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM2.A01.02",
+     "name": "ten-danh-muc",
+     "label": "Tên danh mục",
+     "spec": "Bắt buộc, không giới hạn độ dài. Được phép trùng với danh mục khác. Hệ thống tự cắt khoảng trắng đầu/cuối trước khi lưu. Sửa được ở mọi trạng thái.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM2.TC06"
+     ],
+     "missingTerms": [
+      "Tên danh mục"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM2.A01.03",
+     "name": "mo-ta-danh-muc",
+     "label": "Mô tả danh mục",
+     "spec": "Không bắt buộc, không giới hạn độ dài. Sửa được ở mọi trạng thái.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Mô tả danh mục"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM2.A01.04",
+     "name": "cau-hinh-mindset-tieu-chuan-giao-trinh-h",
+     "label": "Cấu hình Mindset, Tiêu chuẩn giáo trình, Hướng dẫn giảng dạy",
+     "spec": "Chỉ sửa được khi `Nháp`; `Công Khai` / `Vô hiệu` chỉ đọc (xem `detail_category.md`).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM2.TC21"
+     ],
+     "missingTerms": [
+      "Cấu hình Mindset, Tiêu chuẩn giáo trình, Hướng dẫn giảng dạy",
+      "Nháp"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM2.A01.05",
+     "name": "so-khoa-hoc",
+     "label": "Số khóa học",
+     "spec": "Chỉ đọc, hệ thống tự tính số khoá học thuộc danh mục; mặc định `0`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM2.TC01"
+     ],
+     "missingTerms": [
+      "Số khóa học",
+      "0"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM2.A01.06",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "3 trạng thái `Nháp` (mặc định) / `Công Khai` / `Vô hiệu`, theo rule chuyển trạng thái ở REQ02. Menu đổi trạng thái: đang `Nháp` chỉ hiện `Công Khai`; đang `Công Khai` chỉ hiện `Vô hiệu`; đang `Vô hiệu` chỉ hiện `Công Khai`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "CM-CM2.REQ02",
+       "raw": "REQ02"
+      }
+     ],
+     "testcases": [
+      "CM-CM2.TC01",
+      "CM-CM2.TC06",
+      "CM-CM2.TC07",
+      "CM-CM2.TC08",
+      "CM-CM2.TC09",
+      "CM-CM2.TC11",
+      "CM-CM2.TC13",
+      "CM-CM2.TC14",
+      "CM-CM2.TC17",
+      "CM-CM2.TC18",
+      "CM-CM2.TC25",
+      "CM-CM2.TC27"
+     ],
+     "missingTerms": [
+      "Trạng thái",
+      "Nháp"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "CM-CM2.A02",
+   "name": "xoa-danh-muc",
+   "title": "Xóa danh mục",
+   "screens": [
+    "cd-dm-010000"
+   ],
+   "screensGuessed": [
+    "CD-DM-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "curriculum_management_requirement/category_management/category_management.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM2.A02.01",
+     "name": "popup-xac-nhan-xoa",
+     "label": "Popup xác nhận xóa",
+     "spec": "Tiêu đề `Xóa danh mục`; nội dung `Bạn có chắc chắn muốn xóa danh mục \"<Tên danh mục>\"? Cấu hình Mindset, Tiêu chuẩn giáo trình, Hướng dẫn giảng dạy của danh mục cũng sẽ bị xóa.`; nút `Hủy`, `Xóa`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM2.TC20"
+     ],
+     "missingTerms": [
+      "Popup xác nhận xóa",
+      "Xóa danh mục"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM2.A02.02",
+     "name": "toast-loi-khong-duoc-xoa",
+     "label": "Toast lỗi không được xóa",
+     "spec": "Khi backend từ chối xóa: đóng popup xác nhận, hiển thị Toast lỗi `Có Lỗi Xảy Ra` với nội dung do backend trả về: `Danh mục đang được sử dụng, không thể xóa.` (danh mục `Nháp` đang có khóa học) hoặc `Chỉ xóa được danh mục ở trạng thái Nháp.` (gọi API trực tiếp với danh mục `Công Khai` / `Vô hiệu`); danh mục giữ nguyên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Toast lỗi không được xóa",
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "CM-CM2.A03",
+   "name": "popup-kich-hoat-cong-khai-danh-muc",
+   "title": "Popup Kích hoạt công khai danh mục",
+   "screens": [
+    "cd-dm-010057",
+    "cd-dm-010060"
+   ],
+   "screensGuessed": [
+    "CD-DM-010057",
+    "CD-DM-010060"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "curriculum_management_requirement/category_management/category_management.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM2.A03.01",
+     "name": "danh-muc",
+     "label": "Danh mục",
+     "spec": "Hiển thị (chỉ đọc) đúng Tên danh mục đang thao tác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM2.TC01",
+      "CM-CM2.TC02",
+      "CM-CM2.TC03",
+      "CM-CM2.TC04",
+      "CM-CM2.TC06",
+      "CM-CM2.TC07",
+      "CM-CM2.TC08",
+      "CM-CM2.TC09",
+      "CM-CM2.TC10",
+      "CM-CM2.TC11",
+      "CM-CM2.TC12",
+      "CM-CM2.TC15",
+      "CM-CM2.TC16",
+      "CM-CM2.TC17",
+      "CM-CM2.TC18",
+      "CM-CM2.TC19",
+      "CM-CM2.TC20",
+      "CM-CM2.TC21",
+      "CM-CM2.TC22",
+      "CM-CM2.TC23",
+      "CM-CM2.TC27"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "CM-CM2.A03.02",
+     "name": "trang-thai-hien-tai",
+     "label": "Trạng thái hiện tại",
+     "spec": "Hiển thị badge trạng thái hiện tại của danh mục (`Nháp`) trước khi chuyển.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "CM-CM2.A03.03",
+     "name": "id-danh-muc",
+     "label": "ID danh mục",
+     "spec": "Hiển thị ID hiện tại (2 chữ số) mà danh mục đã có sẵn từ lúc tạo.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "CM-CM2.A03.04",
+     "name": "o-nhap-id",
+     "label": "Ô nhập ID",
+     "spec": "Hiển thị sẵn ID hiện tại và cho phép chỉnh sửa trực tiếp lần cuối trước khi khóa. Gõ vào ô sẽ kích hoạt kiểm tra lại (định dạng 2 chữ số + duy nhất toàn hệ thống).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM2.TC06"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "CM-CM2.A03.05",
+     "name": "nut-lam-moi-bieu-tuong-xoay",
+     "label": "Nút làm mới (biểu tượng xoay)",
+     "spec": "Sinh một ID 2 chữ số mới, chưa được sử dụng, điền vào ô nhập; hệ thống phải kiểm tra lại ID mới này.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "CM-CM2.A03.06",
+     "name": "bieu-tuong-ket-qua-kiem-tra",
+     "label": "Biểu tượng kết quả kiểm tra",
+     "spec": "Dấu tick xanh khi ID hợp lệ và chưa trùng; Dấu x đỏ khi ID sai định dạng hoặc bị trùng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "CM-CM2.A03.07",
+     "name": "thong-bao-trang-thai",
+     "label": "Thông báo trạng thái",
+     "spec": "`ID có thể sử dụng` khi hợp lệ; `ID đang bị trùng` / `ID sai định dạng` khi không hợp lệ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "CM-CM2.A03.08",
+     "name": "ghi-chu-canh-bao",
+     "label": "Ghi chú cảnh báo",
+     "spec": "Hiển thị cố định: `Sau khi xác nhận, danh mục sẽ chuyển sang trạng thái Công khai, chỉ còn sửa được Tên và Mô tả. ID và cấu hình Mindset, Tiêu chuẩn giáo trình, Hướng dẫn giảng dạy sẽ bị khóa.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "CM-CM2.A03.09",
+     "name": "nut-cong-khai-danh-muc",
+     "label": "Nút Công khai danh mục",
+     "spec": "Chỉ bật khi ID trong ô đang ở trạng thái hợp lệ. Khi bấm, backend kiểm tra lại ID lần cuối rồi lưu ID và chuyển trạng thái sang `Công Khai` trong cùng một giao dịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM2.TC06",
+      "CM-CM2.TC10"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "CM-CM2.A03.10",
+     "name": "nut-huy-bieu-tuong-x",
+     "label": "Nút Hủy / biểu tượng X",
+     "spec": "Đóng popup, không lưu thay đổi ID và không đổi trạng thái danh mục.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "CM-CM2.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "cd-dm-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM2.F01.01",
+     "name": "sidebar-menu-cd",
+     "label": "Sidebar · MENU - CD",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Sidebar · MENU - CD",
+        "figmaId": "4915:257163",
+        "layer": "Sidebar · MENU - CD",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - CD",
+        "component": "MENU - CD",
+        "variant": {
+         "Trang": "Danh Mục & Cấp Độ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM2.F01.02",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2223:86161",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "CD",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM2.F01.03",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Component 2",
+        "figmaId": "4273:160833",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Sakumi"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM2.F01.04",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "3065:53784",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM2.F01.05",
+     "name": "dd-molecule-trigger",
+     "label": "DD/Molecule/Trigger",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "DD/Molecule/Trigger",
+        "figmaId": "3065:53785",
+        "layer": "DD/Molecule/Trigger",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Molecule/Trigger",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM2.F01.06",
+     "name": "add-new-bar-them-noi-dung-khoa-hoc-moi",
+     "label": "Add New Bar · Thêm nội dung khoá học mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Add New Bar · Thêm nội dung khoá học mới",
+        "figmaId": "3065:53528",
+        "layer": "Add New Bar · Thêm nội dung khoá học mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Thêm nội dung khoá học mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1075:1478",
+         "Placeholder": "Thêm nội dung khoá học mới",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "CM-CM2.F02",
+   "name": "row",
+   "title": "Row",
+   "screens": [
+    "cd-dm-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM2.F02.01",
+     "name": "id-badge",
+     "label": "ID Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "ID Badge",
+        "figmaId": "3065:53304",
+        "layer": "ID Badge",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "ID Badge",
+        "component": "Atom/ID Badge",
+        "variant": {
+         "Type": "7-digit",
+         "Size": "26H",
+         "Item": "01"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM2.F02.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "3065:53310",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "2",
+         "Type": "Kỳ",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM2.F02.03",
+     "name": "atom-status",
+     "label": "Atom/Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Atom/Status",
+        "figmaId": "3065:53314",
+        "layer": "Atom/Status",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Status",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Công khai",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM2.F02.04",
+     "name": "arrow-detail",
+     "label": "ARROW DETAIL",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "ARROW DETAIL",
+        "figmaId": "3065:53318",
+        "layer": "ARROW DETAIL",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "ARROW DETAIL",
+        "component": "ARROW DETAIL",
+        "variant": {
+         "Property 1": "Arrow detail (Default)",
+         "Property 2": "No"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM2.F02.05",
+     "name": "dd-organism-menu-panel",
+     "label": "DD/Organism/Menu Panel",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "DD/Organism/Menu Panel",
+        "figmaId": "3065:53331",
+        "layer": "DD/Organism/Menu Panel",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "DD/Organism/Menu Panel",
+        "component": "DD/Organism/Menu Panel",
+        "variant": {
+         "Footer": false,
+         "Search": false,
+         "Type": "Action"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "CM-CM2.EX01",
+   "text": "Tên danh mục mới bị bỏ trống hoặc chỉ chứa khoảng trắng → chặn tạo mới, dữ liệu không thay đổi, disable nút \"+\". Nếu Enter thì hiện thông báo \"Tên danh mục không được bỏ trống\".",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.EX02",
+   "text": "Khi sửa lúc `Nháp`, ID sai định dạng (không đúng 2 chữ số) hoặc trùng (kể cả trùng ID của danh mục đã xóa mềm) → hệ thống từ chối lưu, hiển thị lỗi tương ứng, giữ nguyên ID cũ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.EX03",
+   "text": "Gọi API hoặc thao tác trực tiếp đổi trạng thái không hợp lệ (từ `Công Khai`/`Vô hiệu` về `Nháp`, hoặc từ `Nháp` sang thẳng `Vô hiệu`) → hệ thống từ chối, hiển thị thông báo lỗi (ví dụ: `\"Không thể chuyển sang trạng thái này.\"`), giữ nguyên trạng thái hiện tại. UI chỉ hiển thị lựa chọn hợp lệ: `Nháp` chỉ có `Công Khai`; `Công Khai` chỉ có `Vô hiệu`; `Vô hiệu` chỉ có `Công Khai`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.EX04",
+   "text": "Cố sửa ID khi danh mục có trạng thái khác `Nháp` → hệ thống từ chối, field ID ở trạng thái chỉ đọc/disable.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.EX05",
+   "text": "ID hợp lệ tại thời điểm nhập nhưng bị đối tượng khác dùng ngay trước lúc backend lưu (race condition) → backend từ chối tại bước kiểm tra cuối, không lưu, giữ nguyên trạng thái và hiển thị lỗi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.EX06",
+   "text": "Trong popup Kích hoạt công khai danh mục, ID nhập tay hoặc ID vừa được làm mới sai định dạng (không đúng 2 chữ số) hoặc đã bị trùng → hiển thị lỗi tương ứng ngay trong popup, vô hiệu hóa nút `Công khai danh mục`, giữ danh mục ở `Nháp`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.EX07",
+   "text": "CD bấm `Hủy` hoặc đóng popup Kích hoạt công khai danh mục sau khi đã sửa ID trong ô nhập → không lưu ID vừa sửa, ID của danh mục giữ nguyên như trước khi mở popup, trạng thái vẫn là `Nháp`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.EX08",
+   "text": "Xóa danh mục `Công Khai` / `Vô hiệu` (gọi API trực tiếp) → backend từ chối, trả lỗi `Chỉ xóa được danh mục ở trạng thái Nháp.`. Xóa danh mục `Nháp` đang có khóa học (qua UI, gọi API trực tiếp, hoặc khóa học được tạo ngay trước lúc backend xóa) → backend từ chối, trả lỗi `Danh mục đang được sử dụng, không thể xóa.`. FE hiển thị Toast lỗi với nội dung backend trả về, dữ liệu không đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.EX09",
+   "text": "Người dùng không có quyền gửi request xóa trực tiếp → từ chối, không thay đổi dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.EX10",
+   "text": "Sửa Tên danh mục thành trống hoặc chỉ chứa khoảng trắng (ở bất kỳ trạng thái nào) → từ chối lưu, báo lỗi tại field Tên, giữ nguyên Tên cũ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM2.EX11",
+   "text": "Sửa cấu hình Mindset / Tiêu chuẩn giáo trình / Hướng dẫn giảng dạy (hoặc bất kỳ field nào ngoài Tên, Mô tả) khi danh mục `Công Khai` / `Vô hiệu` (qua UI hoặc gọi API trực tiếp) → UI chỉ đọc; backend từ chối, trả lỗi `Danh mục không ở trạng thái Nháp, chỉ được sửa Tên và Mô tả.`, dữ liệu không đổi.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "CM-CM2.FLOW01",
+   "name": "Thêm nhanh danh mục",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-CM2.FLOW02",
+   "name": "Sửa danh mục",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-CM2.FLOW03",
+   "name": "Kích hoạt công khai danh mục",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-CM2.FLOW04",
+   "name": "Đổi trạng thái Công Khai ↔ Vô hiệu",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-CM2.FLOW05",
+   "name": "Xóa danh mục",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  }
+ ],
+ "testcases": [
+  {
+   "id": "CM-CM2.TC01",
+   "title": "Case 1: Thêm nhanh danh mục bằng nút \"+\"",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 1",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "CM-CM2.FLOW01"
+   ],
+   "items": [
+    "CM-CM2.A01.05",
+    "CM-CM2.A01.06",
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC02",
+   "title": "Case 2: Thêm nhanh danh mục bằng phím Enter",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 1",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "CM-CM2.FLOW01"
+   ],
+   "items": [
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC03",
+   "title": "Case 3: Chặn thêm khi tên trống",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-CM2.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC04",
+   "title": "Case 4: Sửa danh mục khi đang Nháp",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 2 / REQ01, REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ01",
+    "CM-CM2.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM2.FLOW02"
+   ],
+   "items": [
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC05",
+   "title": "Case 5: Chặn sửa khi ID không hợp lệ",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-CM2.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM2.TC06",
+   "title": "Case 6: Mở popup Kích hoạt công khai danh mục",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM2.FLOW03"
+   ],
+   "items": [
+    "CM-CM2.A01.02",
+    "CM-CM2.A01.06",
+    "CM-CM2.A03.01",
+    "CM-CM2.A03.04",
+    "CM-CM2.A03.09"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC07",
+   "title": "Case 7: Công khai danh mục giữ nguyên ID có sẵn",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM2.FLOW03"
+   ],
+   "items": [
+    "CM-CM2.A01.06",
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC08",
+   "title": "Case 8: Công khai danh mục bằng ID làm mới",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM2.FLOW03"
+   ],
+   "items": [
+    "CM-CM2.A01.06",
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC09",
+   "title": "Case 9: Công khai danh mục bằng ID nhập tay trong popup",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM2.FLOW03"
+   ],
+   "items": [
+    "CM-CM2.A01.06",
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC10",
+   "title": "Case 10: Chặn công khai khi ID trong popup không hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-CM2.EX06"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM2.A03.01",
+    "CM-CM2.A03.09"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC11",
+   "title": "Case 11: Hủy popup Kích hoạt công khai danh mục",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-CM2.EX07"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM2.A01.06",
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC12",
+   "title": "Case 12: Khóa ID sau khi rời Nháp",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX04 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ01"
+   ],
+   "exceptions": [
+    "CM-CM2.EX04"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC13",
+   "title": "Case 13: Chuyển đổi Công Khai ↔ Vô hiệu",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 4 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM2.FLOW04"
+   ],
+   "items": [
+    "CM-CM2.A01.06"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC14",
+   "title": "Case 14: Chặn chuyển về Nháp",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX03 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ02"
+   ],
+   "exceptions": [
+    "CM-CM2.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM2.A01.06"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC15",
+   "title": "Case 15: Kiểm tra quyền truy cập trực tiếp",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC16",
+   "title": "Case 16: Xóa danh mục chưa được sử dụng",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 5 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM2.FLOW05"
+   ],
+   "items": [
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC17",
+   "title": "Case 17: Chặn xóa danh mục Công Khai / Vô hiệu",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 5 / REQ05 / EX08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ05"
+   ],
+   "exceptions": [
+    "CM-CM2.EX08"
+   ],
+   "flows": [
+    "CM-CM2.FLOW05"
+   ],
+   "items": [
+    "CM-CM2.A01.06",
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC18",
+   "title": "Case 18: Menu đổi trạng thái theo từng trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-CM2.A01.06",
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC19",
+   "title": "Case 19: Chặn xóa danh mục Nháp đang có khóa học",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX08 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ05"
+   ],
+   "exceptions": [
+    "CM-CM2.EX08"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC20",
+   "title": "Case 20: Khóa học đã xóa mềm không tính là đang sử dụng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-CM2.A02.01",
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC21",
+   "title": "Case 21: Sửa Tên, Mô tả khi Công Khai / Vô hiệu",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 2 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM2.FLOW02"
+   ],
+   "items": [
+    "CM-CM2.A01.04",
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC22",
+   "title": "Case 22: Tên trùng và có khoảng trắng đầu/cuối",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 1, Flow 2 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM2.FLOW01",
+    "CM-CM2.FLOW02"
+   ],
+   "items": [
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC23",
+   "title": "Case 23: Sửa Tên thành trống ở trạng thái Công Khai",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-CM2.EX10"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM2.A03.01"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC24",
+   "title": "Case 24: ID trùng ID danh mục đã xóa mềm",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX02 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ01"
+   ],
+   "exceptions": [
+    "CM-CM2.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM2.TC25",
+   "title": "Case 25: Chặn chuyển Nháp → Vô hiệu",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX03 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ02"
+   ],
+   "exceptions": [
+    "CM-CM2.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM2.A01.06"
+   ]
+  },
+  {
+   "id": "CM-CM2.TC26",
+   "title": "Case 26: Tìm kiếm không phân biệt hoa thường",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "UI",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM2.TC27",
+   "title": "Case 27: Cấu hình nội dung chỉ đọc khi Công Khai / Vô hiệu",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ08 / EX11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM2.REQ08"
+   ],
+   "exceptions": [
+    "CM-CM2.EX11"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM2.A01.06",
+    "CM-CM2.A03.01"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010010",
+   "text": "popup “Quản lý danh mục / Popup danh mục & cấp độ” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010010",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010020",
+   "text": "trang-thai “Quản lý danh mục / Popup danh mục & cấp độ / Mindset” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CD-DM-010020",
+   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010020",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010030",
+   "text": "trang-thai “Quản lý danh mục / Popup danh mục & cấp độ / Tiêu chuẩn giáo trình” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CD-DM-010030",
+   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010030",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010040",
+   "text": "trang-thai “Quản lý danh mục / Popup danh mục & cấp độ / Hướng dẫn giảng dạy” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CD-DM-010040",
+   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010040",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010057",
+   "text": "trang-thai “Quản lý danh mục / Popup danh mục & cấp độ / Quản lý danh mục / Thành công” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CD-DM-010057",
+   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010057",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010060",
+   "text": "popup “Quản lý danh mục / Popup kích hoạt công khai” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010060",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010062",
+   "text": "trang-thai “Quản lý danh mục / Popup kích hoạt công khai / Điền sai” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CD-DM-010062",
+   "text": "loại trang-thai, màn cha CD-DM-010060 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010062",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "CM-CM2.TC15",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "CM-CM2.TC26",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM2.REQ06",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM2.REQ07",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM2.EX05",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM2.EX09",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "curriculum_management_requirement/category_management/category_management.md",
+   "prefix": "CM-CM2",
+   "title": "Quản lý danh sách danh mục"
+  }
+ ]
+}

@@ -1,0 +1,1521 @@
+{
+ "cluster": "class-detail-invoices-requirements",
+ "title": "Chi tiết lớp học — Tab Hóa đơn",
+ "figmaPrefix": "M-CDI2",
+ "requirements": [
+  {
+   "id": "M-CDI2.REQ01",
+   "name": "Chỉ xem",
+   "text": "Tab hiển thị thông tin hóa đơn và học phí; không CRUD và không mở popup chỉnh sửa từ dòng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.REQ02",
+   "name": "Danh sách",
+   "text": "Chỉ hóa đơn đã dùng cho lớp hiện tại; một dòng mỗi invoice_id, không gộp theo tên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.REQ03",
+   "name": "Giá trị tiền",
+   "text": "Giá trị là tổng giá trị hóa đơn. Giá trị dùng trong lớp là tổng học phí ghi nhận từ hóa đơn cho lớp hiện tại; không phải số dư hoặc tổng dùng ở mọi lớp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.REQ04",
+   "name": "Hiển thị",
+   "text": "Tên dài xuống dòng, tiền VND căn phải với dấu phân cách hàng nghìn; layout đọc được trên các kích thước màn hình.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.REQ05",
+   "name": "Đồng bộ",
+   "text": "Mở/tải lại tab hiển thị dữ liệu mới nhất đã lưu; không nhân đôi giao dịch hoặc dùng dữ liệu ngoài class_id.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.REQ06",
+   "name": "Quyền và bảo mật",
+   "text": "Chỉ Admin/Class Handler/Support được xem trong phạm vi lớp; Teacher và mọi role khác bị chặn tại UI và API. Nội dung tên hóa đơn hiển thị an toàn, không thực thi HTML/script.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.REQ07",
+   "name": "Load-more",
+   "text": "Cuộn gần cuối tự tải nhóm hóa đơn tiếp theo; không phân trang số. Giữ vị trí cuộn, chống request/dòng trùng, hỗ trợ thử lại và dừng khi hết dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.REQ08",
+   "name": "Học viên",
+   "text": "Bổ sung cột Tên học viên và filter Học viên chọn một hoặc nhiều người theo quan hệ student_id với hóa đơn đã dùng trong lớp. Nhiều người áp dụng OR giữa các student_id; không chọn thì không giới hạn theo học viên. Lọc toàn bộ dữ liệu trước load-more; đổi/bỏ lựa chọn phải reset kết quả và cursor, tải thêm/retry theo đúng tập đã chọn. Không suy ra học viên từ tên hóa đơn và không bỏ dữ liệu lịch sử do trạng thái Rời lớp / Nghỉ học / Xóa mềm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.REQ09",
+   "name": "Ngày tạo hóa đơn",
+   "text": "Bổ sung cột chỉ xem ngày tạo gốc Cơm Gạo đồng bộ sang ICS, không dùng ngày đồng bộ, ngày học phí hoặc ngày sửa. **Không có filter ngày tạo hóa đơn**, không gửi điều kiện ngày trong request lọc. Thiếu ngày tạo thì đánh dấu cột không khả dụng, không tự thay ngày hoặc loại hóa đơn khỏi bảng.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LOP-040600": {
+   "id": "ADM-LOP-040600",
+   "name": "hoa-don",
+   "title": "Lớp học / Cài đặt / Hoá đơn",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-040500",
+   "shownOn": "ADM-LOP-040600",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2384:52460",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/cai-dat/hoa-don",
+   "link": "/lop-hoc/cai-dat/hoa-don",
+   "dark": "ADM-LOP-040600-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDI2.A01",
+    "M-CDI2.A02",
+    "M-CDI2.A03",
+    "M-CDI2.A04",
+    "M-CDI2.A05",
+    "M-CDI2.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-CDI2.A01",
+   "name": "tab-hoa-don-bang-hoa-don-da-dung",
+   "title": "Tab Hóa đơn — Bảng Hóa đơn đã dùng",
+   "screens": [
+    "adm-lop-040600"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040600"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_invoices_requirements.md",
+   "needsDesign": true,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI2.A01.01",
+     "name": "tab",
+     "label": "Tab",
+     "spec": "Nhãn `Hóa đơn`; làm nổi bật khi đang chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Tab",
+        "figmaId": "2389:60695",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hóa đơn",
+        "figmaId": "I2389:60700;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI2.A01.02",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "`Hóa đơn đã dùng`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Hóa đơn đã dùng",
+        "figmaId": "2389:60801",
+        "layer": "Hoá đơn đã dùng",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC01"
+     ],
+     "missingTerms": [
+      "Tiêu đề"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI2.A01.03",
+     "name": "ten-hoa-don",
+     "label": "Tên hóa đơn",
+     "spec": "Hiển thị tên/mô tả hóa đơn lấy từ dữ liệu hóa đơn; cho xuống dòng để đọc đầy đủ như ảnh.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Tên hóa đơn",
+        "figmaId": "2389:60724",
+        "layer": "Tên Hoá Đơn",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC01"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI2.A01.04",
+     "name": "ten-hoc-vien",
+     "label": "Tên học viên",
+     "spec": "Cột riêng hiển thị tên học viên liên kết với hóa đơn đã dùng trong lớp; lấy theo quan hệ dữ liệu và student_id, không tách tên từ chuỗi Tên hóa đơn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC01"
+     ],
+     "missingTerms": [
+      "Tên học viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI2.A01.05",
+     "name": "ngay-tao-hoa-don",
+     "label": "Ngày tạo hóa đơn",
+     "spec": "Cột chỉ xem, hiển thị ngày tạo gốc từ Cơm Gạo được đồng bộ sang ICS; không phải ngày đồng bộ hay ngày ghi nhận học phí. Không có control lọc ngày.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC01"
+     ],
+     "missingTerms": [
+      "Ngày tạo hóa đơn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI2.A01.06",
+     "name": "gia-tri",
+     "label": "Giá trị",
+     "spec": "Tổng giá trị của hóa đơn, không phải số dư còn lại hoặc học phí của riêng lớp này.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Giá trị",
+        "figmaId": "2389:60726",
+        "layer": "Giá Trị",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC01",
+      "M-CDI2.TC02"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI2.A01.07",
+     "name": "gia-tri-dung-trong-lop",
+     "label": "Giá trị dùng trong lớp",
+     "spec": "Tổng học phí được ghi nhận từ hóa đơn đó vào **lớp đang xem**.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Giá trị dùng trong lớp",
+        "figmaId": "2389:60728",
+        "layer": "Giá Trị Dùng Trong Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC01"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI2.A01.08",
+     "name": "moi-dong",
+     "label": "Mỗi dòng",
+     "spec": "Đại diện cho một hóa đơn, nhận diện bằng invoice_id. Một hóa đơn dùng nhiều lần trong cùng lớp vẫn chỉ có một dòng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Mỗi dòng"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI2.A02",
+   "name": "filter-hoc-vien-va-cot-ngay-tao-hoa-don",
+   "title": "Filter Học viên và cột Ngày tạo hóa đơn",
+   "screens": [
+    "adm-lop-040600"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040600"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_invoices_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI2.A02.01",
+     "name": "filter-hoc-vien",
+     "label": "Filter Học viên",
+     "spec": "Cho phép chọn một hoặc nhiều học viên liên kết với hóa đơn trong lớp hiện tại bằng student_id; hiển thị tên để người dùng nhận biết, không so khớp chuỗi trong Tên hóa đơn. Khả năng tìm kiếm trong control chờ xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Filter Học viên",
+        "figmaId": "2527:185007",
+        "layer": "Filter Học viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter Học viên",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Học viên",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI2.A02.02",
+     "name": "chon-nhieu-hoc-vien",
+     "label": "Chọn nhiều học viên",
+     "spec": "Trả hóa đơn của **bất kỳ** học viên nào trong tập đã chọn (OR giữa các student_id), đồng thời chỉ lấy hóa đơn đã dùng trong lớp hiện tại. Không yêu cầu một hóa đơn thuộc tất cả người được chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chọn nhiều học viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI2.A02.03",
+     "name": "khong-chon-hoc-vien",
+     "label": "Không chọn học viên",
+     "spec": "Không giới hạn theo học viên; hiển thị danh sách hóa đơn đã dùng của lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Không chọn học viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI2.A02.04",
+     "name": "cot-ngay-tao-hoa-don",
+     "label": "Cột Ngày tạo hóa đơn",
+     "spec": "Hiển thị ngày tạo gốc tại Cơm Gạo đồng bộ sang ICS, chỉ xem. Không có filter ngày, date picker hoặc điều kiện ngày trong request lọc. Định dạng ngày và múi giờ hiển thị chờ xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC23"
+     ],
+     "missingTerms": [
+      "Cột Ngày tạo hóa đơn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI2.A02.05",
+     "name": "ket-qua-rong",
+     "label": "Kết quả rỗng",
+     "spec": "`Không có hóa đơn phù hợp với bộ lọc.`; phân biệt với lớp chưa có hóa đơn được sử dụng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC26"
+     ],
+     "missingTerms": [
+      "Kết quả rỗng",
+      "Không có hóa đơn phù hợp với bộ lọc."
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI2.A03",
+   "name": "cot-gia-tri-va-gia-tri-dung-trong-lop",
+   "title": "Cột Giá trị và Giá trị dùng trong lớp",
+   "screens": [
+    "adm-lop-040600"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040600"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_invoices_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI2.A03.01",
+     "name": "gia-tri",
+     "label": "Giá trị",
+     "spec": "Lấy tổng giá trị hóa đơn từ nguồn quản lý hóa đơn. | Hóa đơn 1.000.000đ luôn hiển thị 1.000.000đ dù đã dùng một phần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Giá trị",
+        "figmaId": "2389:60726",
+        "layer": "Giá Trị",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC05",
+      "M-CDI2.TC06",
+      "M-CDI2.TC07",
+      "M-CDI2.TC09"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI2.A03.02",
+     "name": "gia-tri-dung-trong-lop",
+     "label": "Giá trị dùng trong lớp",
+     "spec": "Cộng các lần ghi nhận học phí thuộc cùng invoice_id và class_id đang xem. | Dùng 100.000đ rồi 200.000đ trong lớp A thì hiển thị 300.000đ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Giá trị dùng trong lớp",
+        "figmaId": "2389:60728",
+        "layer": "Giá Trị Dùng Trong Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC05"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI2.A03.03",
+     "name": "dinh-dang",
+     "label": "Định dạng",
+     "spec": "Tiền VND, phân cách hàng nghìn bằng dấu chấm và có ký hiệu đồng; căn phải. | `1.000.000 đ`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Định dạng",
+      "1.000.000 đ"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI2.A04",
+   "name": "trang-thai-tai-rong-loi-va-dong-bo",
+   "title": "Trạng thái tải, rỗng, lỗi và đồng bộ",
+   "screens": [
+    "adm-lop-040600"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040600"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_invoices_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI2.A04.01",
+     "name": "loading",
+     "label": "Loading",
+     "spec": "Hiển thị loading/skeleton khi đang tải; không trình bày dữ liệu cũ của lớp khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Loading"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI2.A04.02",
+     "name": "rong",
+     "label": "Rỗng",
+     "spec": "`Chưa có hóa đơn được sử dụng trong lớp này.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Rỗng",
+        "figmaId": "2389:60728",
+        "layer": "Giá Trị Dùng Trong Lớp",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC10",
+      "M-CDI2.TC12"
+     ],
+     "missingTerms": [
+      "Chưa có hóa đơn được sử dụng trong lớp này."
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI2.A04.03",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Không thể tải thông tin hóa đơn và học phí. Vui lòng thử lại.`; có nút Thử lại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lỗi",
+      "Không thể tải thông tin hóa đơn và học phí. Vui lòng thử lại."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI2.A04.04",
+     "name": "dong-bo",
+     "label": "Đồng bộ",
+     "spec": "Khi mở lại tab, đọc dữ liệu mới nhất đã commit; thay đổi học phí hiển thị đúng dòng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đồng bộ"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI2.A05",
+   "name": "load-more-danh-sach-hoa-don",
+   "title": "Load-more danh sách hóa đơn",
+   "screens": [
+    "adm-lop-040600"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040600"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_invoices_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI2.A05.01",
+     "name": "vung-cuon",
+     "label": "Vùng cuộn",
+     "spec": "Cuộn gần cuối kích hoạt tải nhóm dữ liệu tiếp theo nếu còn hóa đơn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Vùng cuộn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI2.A05.02",
+     "name": "loading-cuoi-bang",
+     "label": "Loading cuối bảng",
+     "spec": "Hiển thị trong lúc tải thêm; giữ các dòng hiện có và vị trí cuộn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Loading cuối bảng"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI2.A05.03",
+     "name": "loi-tai-them",
+     "label": "Lỗi tải thêm",
+     "spec": "Hiển thị lỗi và Thử lại ở cuối bảng; không thay toàn bộ bảng bằng lỗi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI2.TC17"
+     ],
+     "missingTerms": [
+      "Lỗi tải thêm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI2.A05.04",
+     "name": "het-du-lieu",
+     "label": "Hết dữ liệu",
+     "spec": "Dừng gọi tải thêm khi backend báo không còn dữ liệu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Hết dữ liệu"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI2.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-040600"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI2.F01.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "2389:60696",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDI2.F01.02",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Avatar",
+        "figmaId": "2527:184986",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Nguyễn Văn An",
+         "Size": "28"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDI2.F01.03",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "3561:76398",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "TỔNG DOANH THU"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDI2.F01.04",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:229045",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Cài đặt"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDI2.F01.05",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040600": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3497:51316",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-CDI2.EX01",
+   "text": "Chưa có hóa đơn dùng trong lớp → hiển thị empty state.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.EX02",
+   "text": "API lỗi/hết thời gian chờ → hiển thị lỗi và Thử lại; không biến lỗi thành số 0.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.EX03",
+   "text": "Response lớp cũ về muộn → bỏ response không còn phù hợp class_id hiện tại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.EX04",
+   "text": "Người dùng không có quyền xem tài chính hoặc ngoài phạm vi lớp → từ chối truy cập; không trả tên hóa đơn và tiền.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.EX05",
+   "text": "Dữ liệu hóa đơn thiếu hoặc không nhất quán → báo trạng thái dữ liệu không khả dụng; không tự suy ra giá trị hóa đơn từ tổng học phí.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.EX06",
+   "text": "Tải thêm thất bại → giữ các dòng hiện có và cursor chưa thành công; hiển thị Thử lại ở cuối bảng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.EX07",
+   "text": "Response bộ lọc cũ trả về sau khi đổi điều kiện → bỏ response, không nối hoặc ghi đè kết quả bộ lọc hiện tại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI2.EX08",
+   "text": "Lớp có hóa đơn nhưng không khớp bộ lọc → hiển thị empty state theo bộ lọc; không báo lớp chưa có hóa đơn.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "M-CDI2.FLOW01",
+   "name": "Xem hóa đơn đã dùng",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ01",
+    "M-CDI2.REQ02",
+    "M-CDI2.REQ03",
+    "M-CDI2.REQ04"
+   ]
+  },
+  {
+   "id": "M-CDI2.FLOW02",
+   "name": "Đồng bộ khi học phí thay đổi",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ05"
+   ]
+  },
+  {
+   "id": "M-CDI2.FLOW03",
+   "name": "Tải thêm khi cuộn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ07"
+   ]
+  },
+  {
+   "id": "M-CDI2.FLOW04",
+   "name": "Lọc hóa đơn theo học viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ08"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "M-CDI2.TC01",
+   "title": "Case 1: Mở đúng bảng hóa đơn của lớp",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDI2.A01",
+   "scenario": "Flow 1 / REQ01 / REQ08–REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ01",
+    "M-CDI2.REQ08",
+    "M-CDI2.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI2.FLOW01"
+   ],
+   "items": [
+    "M-CDI2.A01.02",
+    "M-CDI2.A01.03",
+    "M-CDI2.A01.04",
+    "M-CDI2.A01.05",
+    "M-CDI2.A01.06",
+    "M-CDI2.A01.07"
+   ]
+  },
+  {
+   "id": "M-CDI2.TC02",
+   "title": "Case 2: Một hóa đơn chỉ hiển thị một dòng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A01",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI2.A01.06"
+   ]
+  },
+  {
+   "id": "M-CDI2.TC03",
+   "title": "Case 3: Tab chỉ xem",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A01",
+   "scenario": "REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC04",
+   "title": "Case 4: Giữ dữ liệu khi học viên không còn học",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A01",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC20",
+   "title": "Case 20: Hiển thị cột Tên học viên từ quan hệ dữ liệu",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A02",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC21",
+   "title": "Case 21: Lọc một học viên trên toàn bộ dữ liệu",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A02",
+   "scenario": "Flow 4 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI2.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC22",
+   "title": "Case 22: Phân biệt học viên trùng tên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A02",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC23",
+   "title": "Case 23: Hiển thị ngày tạo gốc Cơm Gạo",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A02",
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI2.A02.04"
+   ]
+  },
+  {
+   "id": "M-CDI2.TC24",
+   "title": "Case 24: Lọc nhiều học viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A02",
+   "scenario": "Flow 4 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI2.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC25",
+   "title": "Case 25: Reset load-more khi đổi bộ lọc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A02",
+   "scenario": "REQ07–REQ08 / EX07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ07",
+    "M-CDI2.REQ08"
+   ],
+   "exceptions": [
+    "M-CDI2.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC26",
+   "title": "Case 26: Không có kết quả và bỏ điều kiện lọc",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDI2.A02",
+   "scenario": "REQ08 / EX08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ08"
+   ],
+   "exceptions": [
+    "M-CDI2.EX08"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDI2.A02.05"
+   ]
+  },
+  {
+   "id": "M-CDI2.TC27",
+   "title": "Case 27: Lọc được học viên đã rời/nghỉ/xóa mềm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A02",
+   "scenario": "REQ02 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ02",
+    "M-CDI2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC28",
+   "title": "Case 28: Thiếu ngày tạo gốc không dùng ngày đồng bộ thay thế",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A02",
+   "scenario": "REQ09 / EX05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ09"
+   ],
+   "exceptions": [
+    "M-CDI2.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC29",
+   "title": "Case 29: Ngày tạo chỉ là cột hiển thị, không có filter",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A02",
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC05",
+   "title": "Case 5: Phân biệt giá trị hóa đơn và học phí",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A03",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI2.A03.01",
+    "M-CDI2.A03.02"
+   ]
+  },
+  {
+   "id": "M-CDI2.TC06",
+   "title": "Case 6: Cộng nhiều lần học phí từ cùng hóa đơn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A03",
+   "scenario": "Flow 2 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI2.FLOW02"
+   ],
+   "items": [
+    "M-CDI2.A03.01"
+   ]
+  },
+  {
+   "id": "M-CDI2.TC07",
+   "title": "Case 7: Một hóa đơn dùng ở nhiều lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A03",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI2.A03.01"
+   ]
+  },
+  {
+   "id": "M-CDI2.TC08",
+   "title": "Case 8: Hai hóa đơn trùng tên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A03",
+   "scenario": "REQ02–REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ02",
+    "M-CDI2.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC09",
+   "title": "Case 9: Định dạng tiền và tên dài",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDI2.A03",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI2.A03.01"
+   ]
+  },
+  {
+   "id": "M-CDI2.TC10",
+   "title": "Case 10: Chưa có hóa đơn dùng trong lớp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDI2.A04",
+   "scenario": "EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "M-CDI2.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDI2.A04.02"
+   ]
+  },
+  {
+   "id": "M-CDI2.TC11",
+   "title": "Case 11: Tải thất bại và thử lại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A04",
+   "scenario": "EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "M-CDI2.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC12",
+   "title": "Case 12: Cập nhật sau khi thêm học phí",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A04",
+   "scenario": "Flow 2 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI2.FLOW02"
+   ],
+   "items": [
+    "M-CDI2.A04.02"
+   ]
+  },
+  {
+   "id": "M-CDI2.TC13",
+   "title": "Case 13: Response lớp cũ trả về muộn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A04",
+   "scenario": "EX03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "M-CDI2.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC14",
+   "title": "Case 14: Chặn xem dữ liệu tài chính ngoài quyền",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A04",
+   "scenario": "EX04 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ06"
+   ],
+   "exceptions": [
+    "M-CDI2.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC15",
+   "title": "Case 15: Cuộn tải thêm hóa đơn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A05",
+   "scenario": "Flow 3 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI2.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC16",
+   "title": "Case 16: Chống request và dòng trùng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A05",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC17",
+   "title": "Case 17: Tải thêm lỗi và thử lại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A05",
+   "scenario": "EX06 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ07"
+   ],
+   "exceptions": [
+    "M-CDI2.EX06"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDI2.A05.03"
+   ]
+  },
+  {
+   "id": "M-CDI2.TC18",
+   "title": "Case 18: Dừng khi hết hóa đơn",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDI2.A05",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI2.TC19",
+   "title": "Case 19: Teacher và role khác không được xem tab",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI2.A05",
+   "scenario": "REQ06 / EX04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI2.REQ06"
+   ],
+   "exceptions": [
+    "M-CDI2.EX04"
+   ],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/class_management/class_detail_invoices_requirements.md",
+   "prefix": "M-CDI2",
+   "title": "Chi tiết lớp học — Tab Hóa đơn"
+  }
+ ]
+}

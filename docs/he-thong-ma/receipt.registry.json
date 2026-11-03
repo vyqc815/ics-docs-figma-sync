@@ -1,0 +1,3528 @@
+{
+ "cluster": "receipt",
+ "title": "Hoá Đơn",
+ "figmaPrefix": "RM-RE",
+ "requirements": [
+  {
+   "id": "RM-RE.REQ01",
+   "name": "Tên hoá đơn tự động",
+   "text": "Tên tạo theo rule: `[Loại hoá đơn] - [Lớp dự kiến] - [Mã học viên] - [Tên học viên] - [Quy đổi (VND)] - [Tài khoản nhận]` (vd: `[SALE] Mới - DN1_ - 103303 - Tai Nguyen - 680.000 đ - ...`). Không nhập trực tiếp. Tự cập nhật khi một trong các thành phần đổi. **Thành phần nào trống thì bỏ thành phần đó** (kèm dấu phân cách của nó).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ02",
+   "name": "Đồng bộ Tên - Mã học viên",
+   "text": "Khi tick \"Chọn học viên có sẵn\" (popup hoá đơn và popup học phí), chọn Tên hoặc Mã thì trường còn lại tự điền theo, giống Ship Sách.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ03",
+   "name": "Đồng bộ với CG",
+   "text": "Hoá đơn thêm bên CG hiển thị bên ICS và ngược lại. Bên CG không được sửa / xoá hoá đơn, chỉ được sửa KPI. Bên ICS chỉnh sửa đầy đủ. Học phí chỉ thêm được bên ICS. Khi 2 bên cùng sửa thì bên lưu trước được ưu tiên, bên lưu sau nhận thông báo \"đã có dữ liệu mới, vui lòng reload trang\".",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ04",
+   "name": "Cột Học phí",
+   "text": "Cột Học phí = số lượng học phí của hoá đơn, phải khớp số dòng ở phần học phí xổ xuống (sửa lỗi đang hiển thị 0 khi thực tế là 1).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ05",
+   "name": "Menu ba chấm",
+   "text": "Giai đoạn này chỉ làm: Thêm học phí, Chỉnh sửa, Copy, Xoá hoá đơn. Lịch sử hành động, Xuất hoá đơn hiển thị nhưng disable.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ06",
+   "name": "Copy",
+   "text": "Copy chỉ copy **tên hoá đơn** vào clipboard, không tạo hoá đơn mới.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ07",
+   "name": "Xoá mềm có xác nhận và đồng bộ học phí",
+   "text": "Xoá hoá đơn phải xác nhận và là xoá mềm. Đồng bộ các khoản học phí, số dư của tất cả học viên liên kết và học phí theo lớp liên quan; học phí thuộc hoá đơn đã xoá không còn hiệu lực. Tính lại số liệu từ hoá đơn/học phí còn hiệu lực và tải lại các màn liên quan. Chỉ báo thành công khi đồng bộ hoàn tất; Huỷ/lỗi giữ nguyên toàn bộ, không cập nhật dở dang hoặc tự tạo giao dịch hoàn tiền.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ08",
+   "name": "KPI người phụ trách",
+   "text": "Mỗi người phụ trách có Trạng thái (Mới, Đã xác nhận, Đã huỷ, Đã xoá; chỉ ghi nhận, không ảnh hưởng hiển thị / KPI) và Số KPI (từ -10 đến 10, bước 0.05). Thêm qua popup Thêm người phụ trách; trong popup Chỉnh sửa, KPI cạnh tên người phụ trách sửa trực tiếp được. Cột KPI = tổng KPI các người phụ trách; thẻ Tổng KPI lấy từ dữ liệu này.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ09",
+   "name": "Thêm học phí 2 bước",
+   "text": "Bấm Thêm học phí → popup chọn học viên đã liên kết hoá đơn (có nút Thêm học viên) → popup Thêm học phí.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ10",
+   "name": "Học viên mới và mã tự tạo",
+   "text": "Khi không tick \"Chọn học viên có sẵn\" (kể cả khi vào từ nút Thêm học viên ở popup chọn học viên liên kết): nhập Tên, Email, chọn Level (số tự nhiên 1-9), ẩn trường Mã học viên. Mã = Level + 5 chữ số (vd Level 3 → 300001), không trùng, trùng thì tự tăng. Học viên mới được liên kết vào hoá đơn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ11",
+   "name": "Màu loại hoá đơn",
+   "text": "14 loại hoá đơn, mỗi loại 1 màu cố định lấy theo Figma.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ12",
+   "name": "Bộ lọc theo user",
+   "text": "Bộ lọc (Nhận tiền, Hoá đơn đỏ, Người phụ trách, Thời gian, Loại hoá đơn, Trạng thái, Tag) lưu riêng theo từng user. Mặc định Thời gian = Hôm nay áp dụng cho Ngày ghi nhận; Tới hạn = từ hôm nay trở về trước. Các thẻ thống kê đổi theo bộ lọc (Số ngày = số ngày của khoảng lọc).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ13",
+   "name": "Tiền tệ, quy đổi",
+   "text": "Đơn vị: VND, USD, EUR, JPY, CNY, KRW, GBP. VND thì Quy đổi tự điền bằng Số tiền nhưng vẫn sửa được; khác VND thì không tự quy đổi, bắt buộc nhập tay Quy đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ14",
+   "name": "Tài khoản nhận",
+   "text": "Gồm: Tài khoản cá nhân, Tài khoản công ty, Tiền mặt, Khác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ15",
+   "name": "Số tiền đã đóng / Còn lại",
+   "text": "Số tiền đã đóng = số tiền làm hoá đơn bên CG. Còn lại = Số tiền đã đóng − tổng học phí đã thêm. **Còn lại không được âm:** Giá trị học phí không được vượt Còn lại (vd Còn lại 500.000 đ thì học phí tối đa 500.000 đ; phần còn thiếu user tự tạo ở hoá đơn khác).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ16",
+   "name": "Hoá đơn đỏ",
+   "text": "Bộ lọc Hoá đơn đỏ dựa vào checkbox \"Xuất hoá đơn công ty\": tick = Đã tạo, không tick = Chưa có.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ17",
+   "name": "Tệp đính kèm",
+   "text": "Hỗ trợ PDF, DOC, DOCX, PPT, PPTX, tối đa 20MB mỗi file; hiển thị ở cột Hình.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.REQ18",
+   "name": "Trung tâm",
+   "text": "Danh sách có bộ lọc `Trung tâm` nằm cùng hàng với các bộ lọc khác, cho chọn một hoặc nhiều trung tâm; khi chọn thì danh sách, tổng số và phân trang chỉ tính dữ liệu của các trung tâm đã chọn, kết hợp `AND` với các bộ lọc khác. Không chọn thì hiển thị dữ liệu của mọi trung tâm. Role Admin không dùng ô chọn trung tâm trên header. Khi tạo mới bắt buộc chọn `Trung tâm`; bản ghi được lưu thuộc trung tâm đã chọn. Backend kiểm tra lại trung tâm khi lưu, không chỉ dựa vào UI.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-HD-010000": {
+   "id": "ADM-HD-010000",
+   "name": "danh-sach-hoa-don",
+   "title": "Hoá đơn / Danh sách hoá đơn",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2711:70470",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/danh-sach-hoa-don",
+   "link": "/hoa-don/danh-sach-hoa-don",
+   "dark": "ADM-HD-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "RM-RE.F01",
+    "RM-RE.F02",
+    "RM-RE.F03",
+    "RM-RE.F04",
+    "RM-RE.F05",
+    "RM-RE.F06",
+    "RM-RE.F07",
+    "RM-RE.F08",
+    "RM-RE.F09",
+    "RM-RE.F10",
+    "RM-RE.F11"
+   ]
+  },
+  "ADM-HD-010006": {
+   "id": "ADM-HD-010006",
+   "name": "sau-khi-them-tag",
+   "title": "Hoá đơn / Danh sách hoá đơn / Sau khi thêm tag",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:98038",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/danh-sach-hoa-don/sau-khi-them-tag",
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010006",
+   "dark": "ADM-HD-010006-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010007": {
+   "id": "ADM-HD-010007",
+   "name": "sau-khi-them-lich-hen",
+   "title": "Hoá đơn / Danh sách hoá đơn / Sau khi thêm lịch hẹn",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:106824",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/danh-sach-hoa-don/sau-khi-them-lich-hen",
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010007",
+   "dark": "ADM-HD-010007-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010010": {
+   "id": "ADM-HD-010010",
+   "name": "popup-them-hoa-don",
+   "title": "Hoá đơn / Popup thêm hoá đơn",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2731:75346",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010010",
+   "dark": "ADM-HD-010010-DK",
+   "openedFrom": [
+    "ADM-HD-010000"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A02"
+   ]
+  },
+  "ADM-HD-010011": {
+   "id": "ADM-HD-010011",
+   "name": "chon-don-vi-tien",
+   "title": "Hoá đơn / Popup thêm hoá đơn / Chọn đơn vị tiền",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010010",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3004:60619",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010011",
+   "dark": "ADM-HD-010011-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A02"
+   ]
+  },
+  "ADM-HD-010012": {
+   "id": "ADM-HD-010012",
+   "name": "chon-hoc-vien-co-san",
+   "title": "Hoá đơn / Popup thêm hoá đơn / Chọn học viên có sẵn",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010010",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3004:65451",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010012",
+   "dark": "ADM-HD-010012-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A03"
+   ]
+  },
+  "ADM-HD-010013": {
+   "id": "ADM-HD-010013",
+   "name": "mo-danh-sach",
+   "title": "Hoá đơn / Popup thêm hoá đơn / Chọn học viên có sẵn / Mở danh sách",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010012",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3004:65498",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010013",
+   "dark": "ADM-HD-010013-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010020": {
+   "id": "ADM-HD-010020",
+   "name": "lich-su-hoa-don",
+   "title": "Hoá đơn / Popup hồ sơ học viên / Lịch sử hoá đơn",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2731:75565",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don",
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010020",
+   "dark": "ADM-HD-010020-DK",
+   "openedFrom": [
+    "ADM-HD-010000"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A01"
+   ]
+  },
+  "ADM-HD-010021": {
+   "id": "ADM-HD-010021",
+   "name": "cuon-ngang-toi-cuoi",
+   "title": "Hoá đơn / Popup hồ sơ học viên / Lịch sử hoá đơn / Cuộn ngang tới cuối",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010020",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3004:71868",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/cuon-ngang-toi-cuoi",
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010021",
+   "dark": "ADM-HD-010021-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010022": {
+   "id": "ADM-HD-010022",
+   "name": "mo-chi-tiet-hoc-phi-hover",
+   "title": "Hoá đơn / Popup hồ sơ học viên / Lịch sử hoá đơn / Mở chi tiết học phí + hover",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010020",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3004:73103",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/mo-chi-tiet-hoc-phi-hover",
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010022",
+   "dark": "ADM-HD-010022-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A04"
+   ]
+  },
+  "ADM-HD-010030": {
+   "id": "ADM-HD-010030",
+   "name": "popup-chinh-sua-hoa-don",
+   "title": "Hoá đơn / Popup chỉnh sửa hoá đơn",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3004:15021",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010030",
+   "dark": "ADM-HD-010030-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A02"
+   ]
+  },
+  "ADM-HD-010040": {
+   "id": "ADM-HD-010040",
+   "name": "popup-xem-anh-hoa-don",
+   "title": "Hoá đơn / Popup xem ảnh hoá đơn",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2731:90174",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/popup-xem-anh-hoa-don",
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010040",
+   "dark": "ADM-HD-010040-DK",
+   "openedFrom": [
+    "ADM-HD-010000",
+    "ADM-HD-010102",
+    "ADM-HD-010202",
+    "ADM-HD-010302"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A01"
+   ]
+  },
+  "ADM-HD-010050": {
+   "id": "ADM-HD-010050",
+   "name": "popup-chon-hoc-vien-da-lien-ket",
+   "title": "Hoá đơn / Popup chọn học viên đã liên kết",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2997:13731",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010050",
+   "dark": "ADM-HD-010050-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A03"
+   ]
+  },
+  "ADM-HD-010060": {
+   "id": "ADM-HD-010060",
+   "name": "popup-them-hoc-phi",
+   "title": "Hoá đơn / Popup thêm học phí",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2997:13559",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010060",
+   "dark": "ADM-HD-010060-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A04"
+   ]
+  },
+  "ADM-HD-010061": {
+   "id": "ADM-HD-010061",
+   "name": "hoc-vien-moi",
+   "title": "Hoá đơn / Popup thêm học phí / Học viên mới",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010060",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2997:14096",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010061",
+   "dark": "ADM-HD-010061-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A03"
+   ]
+  },
+  "ADM-HD-010070": {
+   "id": "ADM-HD-010070",
+   "name": "popup-them-nguoi-phu-trach",
+   "title": "Hoá đơn / Popup thêm người phụ trách",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3004:61802",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010070",
+   "dark": "ADM-HD-010070-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A02"
+   ]
+  },
+  "ADM-HD-010071": {
+   "id": "ADM-HD-010071",
+   "name": "chon-nguoi-phu-trach",
+   "title": "Hoá đơn / Popup thêm người phụ trách / Chọn người phụ trách",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010070",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3004:61931",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010071",
+   "dark": "ADM-HD-010071-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010072": {
+   "id": "ADM-HD-010072",
+   "name": "chon-trang-thai",
+   "title": "Hoá đơn / Popup thêm người phụ trách / Chọn trạng thái",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010070",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3004:62128",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010072",
+   "dark": "ADM-HD-010072-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A02"
+   ]
+  },
+  "ADM-HD-010073": {
+   "id": "ADM-HD-010073",
+   "name": "chon-so-kpi",
+   "title": "Hoá đơn / Popup thêm người phụ trách / Chọn số KPI",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010070",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3004:62345",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010073",
+   "dark": "ADM-HD-010073-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010080": {
+   "id": "ADM-HD-010080",
+   "name": "popup-them-thao-tac-hoc-vien",
+   "title": "Hoá đơn / Popup thêm (thao tác học viên)",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:99388",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010080",
+   "dark": "ADM-HD-010080-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A03"
+   ]
+  },
+  "ADM-HD-010081": {
+   "id": "ADM-HD-010081",
+   "name": "chon-xem-lich-su",
+   "title": "Hoá đơn / Popup thêm / Chọn Xem lịch sử",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:96236",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010081",
+   "dark": "ADM-HD-010081-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010082": {
+   "id": "ADM-HD-010082",
+   "name": "chon-them-lich-hen",
+   "title": "Hoá đơn / Popup thêm / Chọn Thêm Lịch Hẹn",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:108224",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010082",
+   "dark": "ADM-HD-010082-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010090": {
+   "id": "ADM-HD-010090",
+   "name": "popup-them-tag",
+   "title": "Hoá đơn / Popup thêm tag",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:96343",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010090",
+   "dark": "ADM-HD-010090-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010102": {
+   "id": "ADM-HD-010102",
+   "name": "dropdown-nhan-tien-thoi-gian-tag-menu-ha",
+   "title": "Hoá đơn / Danh sách hoá đơn / Dropdown · Nhận tiền, Thời gian, Tag, Menu hành động",
+   "kind": "dropdown",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2731:86116",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/danh-sach-hoa-don/dropdown-nhan-tien-thoi-gian-tag-menu-hanh-dong",
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010102",
+   "dark": "ADM-HD-010102-DK",
+   "openedFrom": [
+    "ADM-HD-010000"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A01"
+   ]
+  },
+  "ADM-HD-010103": {
+   "id": "ADM-HD-010103",
+   "name": "menu-them-hoc-phi",
+   "title": "Hoá đơn / Danh sách hoá đơn / Menu ⋮ · Thêm học phí",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:103087",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/danh-sach-hoa-don/menu-them-hoc-phi",
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010103",
+   "dark": "ADM-HD-010103-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010104": {
+   "id": "ADM-HD-010104",
+   "name": "menu-chinh-sua",
+   "title": "Hoá đơn / Danh sách hoá đơn / Menu ⋮ · Chỉnh sửa",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:104348",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/danh-sach-hoa-don/menu-chinh-sua",
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010104",
+   "dark": "ADM-HD-010104-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010110": {
+   "id": "ADM-HD-010110",
+   "name": "popup-them-lich-hen",
+   "title": "Hoá đơn / Popup thêm lịch hẹn",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:96427",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010110",
+   "dark": "ADM-HD-010110-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010111": {
+   "id": "ADM-HD-010111",
+   "name": "popup-cap-nhat-lich-hen",
+   "title": "Hoá đơn / Popup cập nhật lịch hẹn",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:96531",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010111",
+   "dark": "ADM-HD-010111-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010120": {
+   "id": "ADM-HD-010120",
+   "name": "lich-su-lop",
+   "title": "Hoá đơn / Popup hồ sơ học viên / Lịch sử lớp",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010020",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2731:75709",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010120",
+   "dark": "ADM-HD-010120-DK",
+   "openedFrom": [
+    "ADM-HD-010020"
+   ],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010130": {
+   "id": "ADM-HD-010130",
+   "name": "popup-danh-sach-lich-hen",
+   "title": "Hoá đơn / Popup danh sách lịch hẹn",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:96637",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010130",
+   "dark": "ADM-HD-010130-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010202": {
+   "id": "ADM-HD-010202",
+   "name": "dropdown-hoa-don-do-loai-hoa-don-doi-tra",
+   "title": "Hoá đơn / Danh sách hoá đơn / Dropdown · Hoá đơn đỏ, Loại hoá đơn, Đổi trạng thái",
+   "kind": "dropdown",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2731:87277",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/danh-sach-hoa-don/dropdown-hoa-don-do-loai-hoa-don-doi-trang-thai",
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010202",
+   "dark": "ADM-HD-010202-DK",
+   "openedFrom": [
+    "ADM-HD-010000",
+    "ADM-HD-010102"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A01"
+   ]
+  },
+  "ADM-HD-010224": {
+   "id": "ADM-HD-010224",
+   "name": "trong",
+   "title": "Hoá đơn / Popup hồ sơ học viên / Ghi chú / Trống",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010020",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2731:75800",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/popup-ho-so-hoc-vien/ghi-chu/trong",
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010224",
+   "dark": "ADM-HD-010224-DK",
+   "openedFrom": [
+    "ADM-HD-010020",
+    "ADM-HD-010120"
+   ],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010225": {
+   "id": "ADM-HD-010225",
+   "name": "co-ghi-chu-binh-luan",
+   "title": "Hoá đơn / Popup hồ sơ học viên / Ghi chú / Có ghi chú & bình luận",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:111486",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/popup-ho-so-hoc-vien/ghi-chu/co-ghi-chu-binh-luan",
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010225",
+   "dark": "ADM-HD-010225-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010230": {
+   "id": "ADM-HD-010230",
+   "name": "popup-them-ghi-chu",
+   "title": "Hoá đơn / Popup hồ sơ học viên / Popup thêm ghi chú",
+   "kind": "popup",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2731:75906",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010230",
+   "dark": "ADM-HD-010230-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010231": {
+   "id": "ADM-HD-010231",
+   "name": "mo-loai",
+   "title": "Hoá đơn / Popup hồ sơ học viên / Popup thêm ghi chú / Mở Loại",
+   "kind": "trang-thai",
+   "parent": "ADM-HD-010230",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3058:111717",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoa-don/danh-sach-hoa-don?state=ADM-HD-010231",
+   "dark": "ADM-HD-010231-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-HD-010302": {
+   "id": "ADM-HD-010302",
+   "name": "dropdown-nguoi-phu-trach-trang-thai",
+   "title": "Hoá đơn / Danh sách hoá đơn / Dropdown · Người phụ trách, Trạng thái",
+   "kind": "dropdown",
+   "parent": "ADM-HD-010000",
+   "shownOn": "ADM-HD-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2731:88436",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoa-don/danh-sach-hoa-don/dropdown-nguoi-phu-trach-trang-thai",
+   "link": "/hoa-don/danh-sach-hoa-don?popup=ADM-HD-010302",
+   "dark": "ADM-HD-010302-DK",
+   "openedFrom": [
+    "ADM-HD-010000",
+    "ADM-HD-010102",
+    "ADM-HD-010202"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "RM-RE.A01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "RM-RE.A01",
+   "name": "trang-1-danh-sach-hoa-don",
+   "title": "Trang 1: Danh Sách Hoá Đơn",
+   "screens": [
+    "adm-hd-010020",
+    "adm-hd-010040",
+    "adm-hd-010102",
+    "adm-hd-010202",
+    "adm-hd-010302"
+   ],
+   "screensGuessed": [
+    "ADM-HD-010020",
+    "ADM-HD-010040",
+    "ADM-HD-010102",
+    "ADM-HD-010202",
+    "ADM-HD-010302"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "receipt_management/receipt/receipt.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "RM-RE.A02",
+   "name": "trang-2-popup-them-hoa-don-chinh-sua-hoa",
+   "title": "Trang 2: Popup Thêm hoá đơn / Chỉnh sửa hoá đơn",
+   "screens": [
+    "adm-hd-010010",
+    "adm-hd-010011",
+    "adm-hd-010030",
+    "adm-hd-010070",
+    "adm-hd-010072"
+   ],
+   "screensGuessed": [
+    "ADM-HD-010010",
+    "ADM-HD-010011",
+    "ADM-HD-010030",
+    "ADM-HD-010070",
+    "ADM-HD-010072"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "receipt_management/receipt/receipt.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "RM-RE.A03",
+   "name": "trang-3-popup-chon-hoc-vien-lien-ket-hoa",
+   "title": "Trang 3: Popup Chọn học viên liên kết hoá đơn",
+   "screens": [
+    "adm-hd-010012",
+    "adm-hd-010050",
+    "adm-hd-010061",
+    "adm-hd-010080"
+   ],
+   "screensGuessed": [
+    "ADM-HD-010012",
+    "ADM-HD-010050",
+    "ADM-HD-010061",
+    "ADM-HD-010080"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "receipt_management/receipt/receipt.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "RM-RE.A04",
+   "name": "trang-4-popup-them-hoc-phi",
+   "title": "Trang 4: Popup Thêm học phí",
+   "screens": [
+    "adm-hd-010022",
+    "adm-hd-010060"
+   ],
+   "screensGuessed": [
+    "ADM-HD-010022",
+    "ADM-HD-010060"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "receipt_management/receipt/receipt.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "RM-RE.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F01.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:248298",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Thống kê / Hoá đơn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.02",
+     "name": "nut-them-hoa-don",
+     "label": "Nút thêm hoá đơn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Nút thêm hoá đơn",
+        "figmaId": "2731:71778",
+        "layer": "Nút thêm hoá đơn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Nút thêm hoá đơn",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.03",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "2731:71781",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm hoá đơn, học viên...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.04",
+     "name": "loc-nhan-tien",
+     "label": "Lọc · Nhận tiền",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Nhận tiền",
+        "figmaId": "2731:71787",
+        "layer": "Lọc · Nhận tiền",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Nhận tiền",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Nhận tiền",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.05",
+     "name": "loc-hoa-don-do",
+     "label": "Lọc · Hoá đơn đỏ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Hoá đơn đỏ",
+        "figmaId": "2731:71798",
+        "layer": "Lọc · Hoá đơn đỏ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Hoá đơn đỏ",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Hoá đơn đỏ",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.06",
+     "name": "loc-nguoi-phu-trach",
+     "label": "Lọc · Người phụ trách",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Người phụ trách",
+        "figmaId": "2731:71809",
+        "layer": "Lọc · Người phụ trách",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Người phụ trách",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": true,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Người phụ trách",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.07",
+     "name": "loc-tuan-nay",
+     "label": "Lọc · Tuần này",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Tuần này",
+        "figmaId": "2731:71820",
+        "layer": "Lọc · Tuần này",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Tuần này",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Tuần này",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.08",
+     "name": "loc-loai-hoa-don",
+     "label": "Lọc · Loại hoá đơn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Loại hoá đơn",
+        "figmaId": "2731:71831",
+        "layer": "Lọc · Loại hoá đơn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Loại hoá đơn",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "2",
+         "Count": true,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Loại hoá đơn",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.09",
+     "name": "loc-trang-thai",
+     "label": "Lọc · Trạng thái",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Trạng thái",
+        "figmaId": "2731:71842",
+        "layer": "Lọc · Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Trạng thái",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "2",
+         "Count": true,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.10",
+     "name": "loc-tag",
+     "label": "Lọc · Tag",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Lọc · Tag",
+        "figmaId": "2731:71853",
+        "layer": "Lọc · Tag",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lọc · Tag",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Tag",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.11",
+     "name": "the-chi-so-so-ngay",
+     "label": "Thẻ chỉ số · Số ngày",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Thẻ chỉ số · Số ngày",
+        "figmaId": "3065:71290",
+        "layer": "Thẻ chỉ số · Số ngày",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số ngày",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Có đơn vị": false,
+         "Số liệu": "2",
+         "Tiêu đề": "Số ngày",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.12",
+     "name": "the-chi-so-tong-kpi",
+     "label": "Thẻ chỉ số · Tổng KPI",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Thẻ chỉ số · Tổng KPI",
+        "figmaId": "3065:71448",
+        "layer": "Thẻ chỉ số · Tổng KPI",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tổng KPI",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Có đơn vị": false,
+         "Số liệu": "8",
+         "Tiêu đề": "Tổng KPI",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.13",
+     "name": "the-chi-so-so-hoa-don",
+     "label": "Thẻ chỉ số · Số hoá đơn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Thẻ chỉ số · Số hoá đơn",
+        "figmaId": "3065:71488",
+        "layer": "Thẻ chỉ số · Số hoá đơn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số hoá đơn",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Có đơn vị": false,
+         "Số liệu": "17",
+         "Tiêu đề": "Số hoá đơn",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.14",
+     "name": "the-chi-so-gia-tri",
+     "label": "Thẻ chỉ số · Giá trị",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Thẻ chỉ số · Giá trị",
+        "figmaId": "3065:71289",
+        "layer": "Thẻ chỉ số · Giá trị",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Giá trị",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Số liệu": "28.904.001 đ",
+         "Đơn vị": "đơn vị",
+         "Có đơn vị": false,
+         "Có phần thêm": false,
+         "Tiêu đề": "Giá trị",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ nhấn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.15",
+     "name": "tooltip-trang-thai-hover",
+     "label": "Tooltip · Trạng thái (hover)",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Tooltip · Trạng thái (hover)",
+        "figmaId": "3058:76265",
+        "layer": "Tooltip · Trạng thái (hover)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tooltip · Trạng thái (hover)",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Đợi lớp",
+         "Property 1": "Trạng thái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.16",
+     "name": "tooltip-lien-he",
+     "label": "Tooltip · Liên hệ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Tooltip · Liên hệ",
+        "figmaId": "3058:101130",
+        "layer": "Tooltip · Liên hệ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tooltip · Liên hệ",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Thông tin liên hệ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F01.17",
+     "name": "tooltip-thong-tin-lop",
+     "label": "Tooltip · Thông tin lớp",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Tooltip · Thông tin lớp",
+        "figmaId": "3058:101143",
+        "layer": "Tooltip · Thông tin lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tooltip · Thông tin lớp",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Thông tin lớp"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F02",
+   "name": "row-103303",
+   "title": "Row · 103303",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F02.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72501",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 103303",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Ngày mai",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F02.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:71969",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 103303",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F02.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48429",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 103303",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F03",
+   "name": "row-103297",
+   "title": "Row · 103297",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F03.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72507",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 103297",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Hôm qua",
+         "Variant": "Danger",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F03.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72033",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 103297",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "2",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F03.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48433",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 103297",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F04",
+   "name": "chi-tiet-hoc-phi",
+   "title": "Chi tiết học phí",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F04.01",
+     "name": "atom-tag-solid",
+     "label": "Atom/Tag Solid",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Tag Solid",
+        "figmaId": "3058:76414",
+        "layer": "Atom/Tag Solid",
+        "confidence": "cao",
+        "region": "Chi tiết học phí",
+        "owner": "Atom/Tag Solid",
+        "component": "Atom/Tag Solid",
+        "variant": {
+         "Label": "Mới",
+         "Size": "20H",
+         "Tone": "Blue"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F04.02",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "3058:76421",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Chi tiết học phí",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "DN1_",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F05",
+   "name": "row-102486",
+   "title": "Row · 102486",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F05.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72513",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 102486",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1.000.000 đ",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F05.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72095",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 102486",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F05.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48437",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 102486",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F05.04",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Mouse click",
+        "figmaId": "2929:48340",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": "Row · 102486",
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F06",
+   "name": "row-103176",
+   "title": "Row · 103176",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F06.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72517",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 103176",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Thứ Sáu",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F06.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72159",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 103176",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F06.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48445",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 103176",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F07",
+   "name": "row-102533",
+   "title": "Row · 102533",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F07.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2929:48743",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 102533",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "25/09/2026",
+         "Variant": "Danger",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F07.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72221",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 102533",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F08",
+   "name": "row-102515",
+   "title": "Row · 102515",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F08.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72527",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 102515",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1.740.000 đ",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F08.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72282",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 102515",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F08.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48449",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 102515",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F09",
+   "name": "row-102214",
+   "title": "Row · 102214",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F09.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72531",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 102214",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Hôm nay",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F09.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72347",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 102214",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F09.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48453",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 102214",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F10",
+   "name": "row-102091",
+   "title": "Row · 102091",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F10.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72537",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 102091",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "2.286.000 đ",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F10.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72409",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 102091",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F10.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48457",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 102091",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "RM-RE.F11",
+   "name": "row-103183",
+   "title": "Row · 103183",
+   "screens": [
+    "adm-hd-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "RM-RE.F11.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2731:72541",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row · 103183",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "12/10/2026",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F11.02",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2731:72474",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row · 103183",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "RM-RE.F11.03",
+     "name": "avatar-count",
+     "label": "Avatar + Count",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-hd-010000": [
+       {
+        "term": "Avatar + Count",
+        "figmaId": "2929:48465",
+        "layer": "Avatar + Count",
+        "confidence": "cao",
+        "region": "Row · 103183",
+        "owner": "Avatar + Count",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Avatar + Count",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "RM-RE.EX01",
+   "text": "Bấm \"Thêm\" / \"Cập nhật\" khi thiếu trường bắt buộc → Báo lỗi tại trường thiếu, không lưu, popup không đóng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.EX02",
+   "text": "Bấm \"Thêm\" ở popup Thêm học phí khi chưa chọn Lớp học, chưa nhập Giá trị (hoặc chưa chọn Level khi không tick) → Báo lỗi, không tạo học phí.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.EX03",
+   "text": "Hoá đơn chưa có học viên liên kết khi bấm \"Thêm học phí\" → Popup chọn học viên hiển thị danh sách rỗng, người dùng bấm \"Thêm học viên\" để tiếp tục.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.EX04",
+   "text": "Bỏ tick \"Chọn học viên có sẵn\" ở Thêm học phí, nhập Email sai định dạng → Báo lỗi định dạng email, không lưu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.EX05",
+   "text": "Tệp đính kèm sai định dạng (ngoài PDF, DOC, DOCX, PPT, PPTX) hoặc vượt 20MB → Từ chối file, báo lỗi, không đính kèm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.EX06",
+   "text": "Thêm / sửa / xoá / thêm học phí thất bại (lỗi hệ thống hoặc đồng bộ CG) → Báo lỗi, giữ nguyên dữ liệu trước đó.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.EX07",
+   "text": "Mã học viên tự tạo bị trùng → Hệ thống tự tăng số lên đến khi không trùng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.EX08",
+   "text": "Hoá đơn (vd KPI) bị sửa đồng thời ở ICS và CG → Giữ dữ liệu của bên lưu trước, bên lưu sau không ghi đè và nhận thông báo \"đã có dữ liệu mới, vui lòng reload trang\".",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "RM-RE.EX09",
+   "text": "Giá trị học phí lớn hơn \"Còn lại\" của hoá đơn → Báo lỗi, không tạo học phí (Còn lại không được âm).",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "RM-RE.FLOW01",
+   "name": "Thêm hoá đơn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "RM-RE.FLOW02",
+   "name": "Đồng bộ với CG",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "RM-RE.FLOW03",
+   "name": "Chọn học viên có sẵn khi tạo hoá đơn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "RM-RE.FLOW04",
+   "name": "Chỉnh sửa hoá đơn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "RM-RE.FLOW05",
+   "name": "Xem học phí của hoá đơn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "RM-RE.FLOW06",
+   "name": "Thêm học phí",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "RM-RE.FLOW07",
+   "name": "Copy tên hoá đơn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "RM-RE.FLOW08",
+   "name": "Xoá hoá đơn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "RM-RE.FLOW09",
+   "name": "Lọc và tìm kiếm",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "RM-RE.FLOW10",
+   "name": "Thêm người phụ trách và KPI",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  }
+ ],
+ "testcases": [
+  {
+   "id": "RM-RE.TC01",
+   "title": "Case 1: Thêm hoá đơn thành công",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 1, REQ01, REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "RM-RE.REQ01",
+    "RM-RE.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [
+    "RM-RE.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "RM-RE.TC02",
+   "title": "Case 2: Thêm hoá đơn thiếu trường bắt buộc",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "RM-RE.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "RM-RE.TC03",
+   "title": "Case 3: Chọn học viên có sẵn, đồng bộ Tên - Mã",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3, REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "RM-RE.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "RM-RE.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "RM-RE.TC04",
+   "title": "Case 4: Chỉnh sửa hoá đơn và KPI",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 4, Flow 10, REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "RM-RE.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "RM-RE.FLOW04",
+    "RM-RE.FLOW10"
+   ],
+   "items": []
+  },
+  {
+   "id": "RM-RE.TC05",
+   "title": "Case 5: Xổ học phí và cột Học phí",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 5, REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "RM-RE.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "RM-RE.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "RM-RE.TC06",
+   "title": "Case 6: Thêm học phí cho học viên đã liên kết",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 6, REQ09, REQ15, EX09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "RM-RE.REQ09",
+    "RM-RE.REQ15"
+   ],
+   "exceptions": [
+    "RM-RE.EX09"
+   ],
+   "flows": [
+    "RM-RE.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "RM-RE.TC07",
+   "title": "Case 7: Thêm học viên mới, mã tự tạo theo Level",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 6, REQ10, EX03, EX04, EX07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "RM-RE.REQ10"
+   ],
+   "exceptions": [
+    "RM-RE.EX03",
+    "RM-RE.EX04",
+    "RM-RE.EX07"
+   ],
+   "flows": [
+    "RM-RE.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "RM-RE.TC08",
+   "title": "Case 8: Đồng bộ với CG",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 2, REQ03, EX08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "RM-RE.REQ03"
+   ],
+   "exceptions": [
+    "RM-RE.EX08"
+   ],
+   "flows": [
+    "RM-RE.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "RM-RE.TC09",
+   "title": "Case 9: Bộ lọc lưu theo user",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 9, REQ12, REQ16",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "RM-RE.REQ12",
+    "RM-RE.REQ16"
+   ],
+   "exceptions": [],
+   "flows": [
+    "RM-RE.FLOW09"
+   ],
+   "items": []
+  },
+  {
+   "id": "RM-RE.TC10",
+   "title": "Case 10: Copy tên, xoá mềm hoá đơn và menu disable",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 7, Flow 8, REQ05, REQ06, REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "RM-RE.REQ05",
+    "RM-RE.REQ06",
+    "RM-RE.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "RM-RE.FLOW07",
+    "RM-RE.FLOW08"
+   ],
+   "items": []
+  },
+  {
+   "id": "RM-RE.TC11",
+   "title": "Case 11: Lọc danh sách theo trung tâm",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ18",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "RM-RE.REQ18"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "RM-RE.TC12",
+   "title": "Case 12: Bắt buộc chọn trung tâm khi tạo",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ18",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "RM-RE.REQ18"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010006",
+   "text": "trang-thai “Hoá đơn / Danh sách hoá đơn / Sau khi thêm tag” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010006",
+   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010006",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010007",
+   "text": "trang-thai “Hoá đơn / Danh sách hoá đơn / Sau khi thêm lịch hẹn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010007",
+   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010007",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010010",
+   "text": "popup “Hoá đơn / Popup thêm hoá đơn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010011",
+   "text": "trang-thai “Hoá đơn / Popup thêm hoá đơn / Chọn đơn vị tiền” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010011",
+   "text": "loại trang-thai, màn cha ADM-HD-010010 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010011",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010012",
+   "text": "trang-thai “Hoá đơn / Popup thêm hoá đơn / Chọn học viên có sẵn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010012",
+   "text": "loại trang-thai, màn cha ADM-HD-010010 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010012",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010013",
+   "text": "trang-thai “Hoá đơn / Popup thêm hoá đơn / Chọn học viên có sẵn / Mở danh sách” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010013",
+   "text": "loại trang-thai, màn cha ADM-HD-010012 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010013",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010020",
+   "text": "trang-thai “Hoá đơn / Popup hồ sơ học viên / Lịch sử hoá đơn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010020",
+   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010021",
+   "text": "trang-thai “Hoá đơn / Popup hồ sơ học viên / Lịch sử hoá đơn / Cuộn ngang tới cuối” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010021",
+   "text": "loại trang-thai, màn cha ADM-HD-010020 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010021",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010022",
+   "text": "trang-thai “Hoá đơn / Popup hồ sơ học viên / Lịch sử hoá đơn / Mở chi tiết học phí + hover” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010022",
+   "text": "loại trang-thai, màn cha ADM-HD-010020 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010022",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010030",
+   "text": "popup “Hoá đơn / Popup chỉnh sửa hoá đơn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010030",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010040",
+   "text": "popup “Hoá đơn / Popup xem ảnh hoá đơn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010050",
+   "text": "popup “Hoá đơn / Popup chọn học viên đã liên kết” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010050",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010060",
+   "text": "popup “Hoá đơn / Popup thêm học phí” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010060",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010061",
+   "text": "trang-thai “Hoá đơn / Popup thêm học phí / Học viên mới” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010061",
+   "text": "loại trang-thai, màn cha ADM-HD-010060 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010061",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010070",
+   "text": "popup “Hoá đơn / Popup thêm người phụ trách” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010070",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010071",
+   "text": "trang-thai “Hoá đơn / Popup thêm người phụ trách / Chọn người phụ trách” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010071",
+   "text": "loại trang-thai, màn cha ADM-HD-010070 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010071",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010072",
+   "text": "trang-thai “Hoá đơn / Popup thêm người phụ trách / Chọn trạng thái” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010072",
+   "text": "loại trang-thai, màn cha ADM-HD-010070 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010072",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010073",
+   "text": "trang-thai “Hoá đơn / Popup thêm người phụ trách / Chọn số KPI” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010073",
+   "text": "loại trang-thai, màn cha ADM-HD-010070 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010073",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010080",
+   "text": "popup “Hoá đơn / Popup thêm (thao tác học viên)” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010080",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010081",
+   "text": "trang-thai “Hoá đơn / Popup thêm / Chọn Xem lịch sử” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010081",
+   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010081",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010082",
+   "text": "trang-thai “Hoá đơn / Popup thêm / Chọn Thêm Lịch Hẹn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010082",
+   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010082",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010090",
+   "text": "popup “Hoá đơn / Popup thêm tag” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010090",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010102",
+   "text": "dropdown “Hoá đơn / Danh sách hoá đơn / Dropdown · Nhận tiền, Thời gian, Tag, Menu hành động” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010103",
+   "text": "trang-thai “Hoá đơn / Danh sách hoá đơn / Menu ⋮ · Thêm học phí” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010103",
+   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010103",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010104",
+   "text": "trang-thai “Hoá đơn / Danh sách hoá đơn / Menu ⋮ · Chỉnh sửa” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010104",
+   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010104",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010110",
+   "text": "popup “Hoá đơn / Popup thêm lịch hẹn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010110",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010111",
+   "text": "popup “Hoá đơn / Popup cập nhật lịch hẹn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010111",
+   "text": "loại popup, màn cha ADM-HD-010000 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010111",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010120",
+   "text": "trang-thai “Hoá đơn / Popup hồ sơ học viên / Lịch sử lớp” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010120",
+   "text": "loại trang-thai, màn cha ADM-HD-010020 — tin cậy thap"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010130",
+   "text": "popup “Hoá đơn / Popup danh sách lịch hẹn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010130",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010202",
+   "text": "dropdown “Hoá đơn / Danh sách hoá đơn / Dropdown · Hoá đơn đỏ, Loại hoá đơn, Đổi trạng thái” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010224",
+   "text": "trang-thai “Hoá đơn / Popup hồ sơ học viên / Ghi chú / Trống” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010224",
+   "text": "loại trang-thai, màn cha ADM-HD-010020 — tin cậy thap"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010225",
+   "text": "trang-thai “Hoá đơn / Popup hồ sơ học viên / Ghi chú / Có ghi chú & bình luận” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010225",
+   "text": "loại trang-thai, màn cha ADM-HD-010000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010225",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010230",
+   "text": "popup “Hoá đơn / Popup hồ sơ học viên / Popup thêm ghi chú” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010230",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010231",
+   "text": "trang-thai “Hoá đơn / Popup hồ sơ học viên / Popup thêm ghi chú / Mở Loại” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-HD-010231",
+   "text": "loại trang-thai, màn cha ADM-HD-010230 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-HD-010231",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-HD-010302",
+   "text": "dropdown “Hoá đơn / Danh sách hoá đơn / Dropdown · Người phụ trách, Trạng thái” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "RM-RE.REQ11",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "RM-RE.REQ14",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "RM-RE.REQ17",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "RM-RE.EX02",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "RM-RE.EX05",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "RM-RE.EX06",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "receipt_management/receipt/receipt.md",
+   "prefix": "RM-RE",
+   "title": "Hoá Đơn"
+  }
+ ]
+}

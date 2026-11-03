@@ -1,0 +1,55 @@
+{
+ "cluster": "chua-co-req-sys-err-02",
+ "title": "SYS-ERR-02xx (chưa có requirement)",
+ "figmaPrefix": "SYS-ERR-02",
+ "requirements": [],
+ "screens": {
+  "SYS-ERR-020000": {
+   "id": "SYS-ERR-020000",
+   "name": "loi-404-khong-tim-thay-trang",
+   "title": "Lỗi 404 · Không tìm thấy trang",
+   "kind": "trang-thai",
+   "parent": null,
+   "shownOn": null,
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5789:152813",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/loi-404-khong-tim-thay-trang",
+   "link": null,
+   "dark": "SYS-ERR-020000-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "SYS-ERR-020000",
+   "text": "trang-thai “Lỗi 404 · Không tìm thấy trang” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "popup-khong-co-man-cha",
+   "ref": "SYS-ERR-020000",
+   "text": "chưa xác định được màn chính để mở"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "SYS-ERR-020000",
+   "text": "loại trang-thai, màn cha None — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "SYS-ERR-020000",
+   "text": "không có prototype link nào đi vào frame"
+  }
+ ]
+}

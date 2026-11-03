@@ -1,0 +1,720 @@
+{
+ "cluster": "message-template",
+ "title": "Template Tin Nhắn",
+ "figmaPrefix": "SB-MT",
+ "requirements": [
+  {
+   "id": "SB-MT.REQ01",
+   "name": "Chèn biến / định dạng cố định",
+   "text": "Danh sách nút Chèn biến và Định dạng là cố định (cấu hình trong code), người dùng không thêm / sửa / xoá được. Chỉ được sửa **tên** và **nội dung** template.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.REQ02",
+   "name": "Xem trước dùng dữ liệu cố định",
+   "text": "Xem trước thay biến bằng bộ dữ liệu ví dụ cố định trong code. Biến không thuộc danh sách (người dùng gõ tay sai tên) giữ nguyên text, không thay.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.REQ03",
+   "name": "Chèn tại vị trí con trỏ",
+   "text": "Biến và dấu đầu dòng chèn tại vị trí con trỏ hiện tại, sau khi chèn con trỏ nằm ngay sau nội dung vừa chèn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.REQ04",
+   "name": "Thêm nhanh",
+   "text": "Nhập tên + Enter hoặc bấm \"+\" để tạo. Template mới có trạng thái mặc định **Tắt**, nội dung trống, nằm ở **cuối danh sách**. Sau khi tạo, ô nhập được xoá trống.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.REQ05",
+   "name": "Copy nội dung",
+   "text": "Icon copy chỉ copy nội dung tin nhắn vào clipboard, không tạo template mới.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.REQ06",
+   "name": "Xoá mềm có xác nhận",
+   "text": "Xoá template phải qua popup xác nhận và là xoá mềm. Tin đã gửi từ template đó vẫn hiển thị bình thường (thời gian + nội dung đã gửi). Sau khi xoá, template không còn để chọn khi gửi tin mới.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.REQ07",
+   "name": "Liên kết Ship Sách",
+   "text": "Chỉ template **đang bật** mới xuất hiện trong dropdown \"Chọn mẫu tin nhắn\" ở popup Xác nhận gửi tin nhắn (Ship Sách). Thứ tự trong dropdown không phụ thuộc vị trí template ở màn này.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.REQ08",
+   "name": "Thông tin cập nhật",
+   "text": "Mỗi lần lưu ghi lại thời điểm và Admin lưu, hiển thị ở dòng \"Cập nhật ...\" cuối khu vực chỉnh sửa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.REQ09",
+   "name": "Nút Lưu và nội dung nháp",
+   "text": "Nút Lưu chỉ sáng khi nội dung khác bản đã lưu. Nội dung đang sửa chưa lưu được giữ lại khi thu gọn / mở card khác, mất khi reload trang. Cho phép nhiều card mở rộng cùng lúc.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.REQ10",
+   "name": "Điều kiện bật",
+   "text": "Template chỉ bật được khi đã có nội dung. Template mới mặc định Tắt.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.REQ11",
+   "name": "Sắp xếp vị trí",
+   "text": "Kéo thả card bằng icon 6 chấm để đổi vị trí. Vị trí được lưu lại (reload vẫn giữ), dùng chung cho mọi Admin. Kéo thả được cả khi đang tìm kiếm / lọc. Không làm thay đổi nội dung, trạng thái bật / tắt của template và không áp dụng cho thứ tự trong dropdown ở Ship Sách.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.REQ12",
+   "name": "Trung tâm",
+   "text": "Danh sách có bộ lọc `Trung tâm` nằm cùng hàng với các bộ lọc khác, cho chọn một hoặc nhiều trung tâm; khi chọn thì danh sách, tổng số và phân trang chỉ tính dữ liệu của các trung tâm đã chọn, kết hợp `AND` với các bộ lọc khác. Không chọn thì hiển thị dữ liệu của mọi trung tâm. Role Admin không dùng ô chọn trung tâm trên header. Khi tạo mới bắt buộc chọn `Trung tâm`; bản ghi được lưu thuộc trung tâm đã chọn. Backend kiểm tra lại trung tâm khi lưu, không chỉ dựa vào UI.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-TN-010000": {
+   "id": "ADM-TN-010000",
+   "name": "danh-sach-mau-tin-nhan",
+   "title": "Tin nhắn / Danh sách mẫu tin nhắn",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "ADM-TN-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2711:68773",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/tin-nhan/danh-sach-mau-tin-nhan",
+   "link": "/tin-nhan/danh-sach-mau-tin-nhan",
+   "dark": "ADM-TN-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "SB-MT.F01"
+   ]
+  },
+  "ADM-TN-010004": {
+   "id": "ADM-TN-010004",
+   "name": "tin-nhan-moi-noi-dung-trong",
+   "title": "Tin nhắn / Danh sách mẫu tin nhắn / Tin nhắn mới (nội dung trống)",
+   "kind": "trang-thai",
+   "parent": "ADM-TN-010000",
+   "shownOn": "ADM-TN-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3228:62216",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/tin-nhan/danh-sach-mau-tin-nhan/tin-nhan-moi-noi-dung-trong",
+   "link": "/tin-nhan/danh-sach-mau-tin-nhan?state=ADM-TN-010004",
+   "dark": "ADM-TN-010004-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "SB-MT.A01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "SB-MT.A01",
+   "name": "trang-1-danh-sach-tin-nhan",
+   "title": "Trang 1: Danh Sách Tin Nhắn",
+   "screens": [
+    "adm-tn-010004"
+   ],
+   "screensGuessed": [
+    "ADM-TN-010004"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "ship_books/message_template/message_template.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "SB-MT.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-tn-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "SB-MT.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tn-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2711:69075",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-MT.F01.02",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tn-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:251998",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "tin nhắn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-MT.F01.03",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tn-010000": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "2711:70262",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm tin nhắn",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-MT.F01.04",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tn-010000": [
+       {
+        "term": "Dropdown",
+        "figmaId": "2711:70264",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-MT.F01.05",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tn-010000": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "2711:70317",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Khách hàng",
+         "Type": "Outlined Icon",
+         "Size": "XSmall"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-MT.F01.06",
+     "name": "molecule-add-new-bar",
+     "label": "Molecule/Add New Bar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tn-010000": [
+       {
+        "term": "Molecule/Add New Bar",
+        "figmaId": "2711:70455",
+        "layer": "Molecule/Add New Bar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Add New Bar",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1075:1478",
+         "Placeholder": "Thêm tin nhắn mới",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "SB-MT.EX01",
+   "text": "Nhập tên rỗng (hoặc chỉ có khoảng trắng) rồi Enter / bấm \"+\" → Không tạo template.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.EX02",
+   "text": "Bấm \"Lưu\" khi tên hoặc nội dung rỗng → Báo lỗi bắt buộc nhập, không lưu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.EX03",
+   "text": "Bấm \"Chèn biến\" / \"Dấu đầu dòng\" khi con trỏ chưa đặt trong ô nội dung → Chèn vào cuối nội dung.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.EX04",
+   "text": "Thêm / sửa / xoá / bật tắt / sắp xếp thất bại (lỗi hệ thống) → Báo lỗi, giữ nguyên trạng thái trước đó (toggle trả về vị trí cũ, card giữ nguyên, card kéo thả trả về vị trí cũ).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-MT.EX05",
+   "text": "Bấm toggle bật khi template chưa có nội dung → Không bật, báo cần nhập nội dung trước.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "SB-MT.FLOW01",
+   "name": "Thêm nhanh template",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-MT.FLOW02",
+   "name": "Sửa tên / nội dung template",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-MT.FLOW03",
+   "name": "Chèn biến / định dạng",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-MT.FLOW04",
+   "name": "Bật / tắt template",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-MT.FLOW05",
+   "name": "Copy nội dung template",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-MT.FLOW06",
+   "name": "Xoá template",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-MT.FLOW07",
+   "name": "Sắp xếp vị trí template",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  }
+ ],
+ "testcases": [
+  {
+   "id": "SB-MT.TC01",
+   "title": "Case 1: Thêm nhanh bằng Enter / nút +",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 1, REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-MT.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "SB-MT.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC02",
+   "title": "Case 2: Template mới mặc định Tắt, chỉ bật khi có nội dung",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ10, EX05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-MT.REQ10"
+   ],
+   "exceptions": [
+    "SB-MT.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC03",
+   "title": "Case 3: Thêm nhanh với tên rỗng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "SB-MT.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC04",
+   "title": "Case 4: Sửa tên / nội dung và lưu",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 2, REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-MT.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "SB-MT.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC05",
+   "title": "Case 5: Nút Lưu sáng và giữ nội dung nháp",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 2, REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-MT.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "SB-MT.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC06",
+   "title": "Case 6: Lưu khi thiếu tên / nội dung",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "SB-MT.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC07",
+   "title": "Case 7: Chèn biến, dấu đầu dòng và xem trước",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3, REQ01-03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-MT.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "SB-MT.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC08",
+   "title": "Case 8: Bật / tắt template và liên kết Ship Sách",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 4, REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-MT.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "SB-MT.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC09",
+   "title": "Case 9: Copy nội dung template",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 5, REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-MT.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "SB-MT.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC10",
+   "title": "Case 10: Xoá mềm template đã dùng gửi tin",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 6, REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-MT.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "SB-MT.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC11",
+   "title": "Case 11: Sắp xếp vị trí template",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 7, REQ11, EX04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-MT.REQ11"
+   ],
+   "exceptions": [
+    "SB-MT.EX04"
+   ],
+   "flows": [
+    "SB-MT.FLOW07"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC12",
+   "title": "Case 12: Lọc danh sách theo trung tâm",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-MT.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-MT.TC13",
+   "title": "Case 13: Bắt buộc chọn trung tâm khi tạo",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-MT.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-TN-010004",
+   "text": "trang-thai “Tin nhắn / Danh sách mẫu tin nhắn / Tin nhắn mới (nội dung trống)” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-TN-010004",
+   "text": "loại trang-thai, màn cha ADM-TN-010000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-TN-010004",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-MT.REQ02",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-MT.REQ03",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-MT.EX03",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "ship_books/message_template/message_template.md",
+   "prefix": "SB-MT",
+   "title": "Template Tin Nhắn"
+  }
+ ]
+}

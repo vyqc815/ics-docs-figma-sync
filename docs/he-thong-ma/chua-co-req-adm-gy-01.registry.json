@@ -1,0 +1,386 @@
+{
+ "cluster": "chua-co-req-adm-gy-01",
+ "title": "ADM-GY-01xx (chưa có requirement)",
+ "figmaPrefix": "ADM-GY-01",
+ "requirements": [],
+ "screens": {
+  "ADM-GY-010010": {
+   "id": "ADM-GY-010010",
+   "name": "giao-vien",
+   "title": "Góp ý / Giáo viên",
+   "kind": "man-chinh",
+   "parent": "ADM-GY-010000",
+   "shownOn": "ADM-GY-010010",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4193:146930",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/gop-y/giao-vien",
+   "link": "/gop-y/giao-vien",
+   "dark": "ADM-GY-010010-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "ADM-GY-01.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "ADM-GY-01.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-gy-010010"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-GY-01.F01.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gy-010010": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:250150",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Góp ý"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GY-01.F01.02",
+     "name": "tab-hoc-vien",
+     "label": "Tab · Học viên",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gy-010010": [
+       {
+        "term": "Tab · Học viên",
+        "figmaId": "4193:148098",
+        "layer": "Tab · Học viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Học viên",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GY-01.F01.03",
+     "name": "tab-giao-vien",
+     "label": "Tab · Giáo viên",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gy-010010": [
+       {
+        "term": "Tab · Giáo viên",
+        "figmaId": "4193:148103",
+        "layer": "Tab · Giáo viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Giáo viên",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GY-01.F01.04",
+     "name": "filter-trang-thai",
+     "label": "Filter · Trạng thái",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gy-010010": [
+       {
+        "term": "Filter · Trạng thái",
+        "figmaId": "4193:147074",
+        "layer": "Filter · Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Trạng thái",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GY-01.F01.05",
+     "name": "filter-thang-nay",
+     "label": "Filter · Tháng này",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gy-010010": [
+       {
+        "term": "Filter · Tháng này",
+        "figmaId": "4193:147076",
+        "layer": "Filter · Tháng này",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Tháng này",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Tháng này",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GY-01.F01.06",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gy-010010": [
+       {
+        "term": "Avatar",
+        "figmaId": "4193:147349",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Phạm Thị Thanh Trúc",
+         "Size": "32"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GY-01.F01.07",
+     "name": "thoi-gian-gui",
+     "label": "Thời gian gửi",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gy-010010": [
+       {
+        "term": "Thời gian gửi",
+        "figmaId": "4193:147081",
+        "layer": "Thời gian gửi",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thời gian gửi",
+        "component": "Atom/Chip",
+        "variant": {
+         "Time": "4 ngày trước",
+         "Name": "Trần Minh Khoa",
+         "Label": "10:54 · 09.01.2025",
+         "Icon": false,
+         "Type": "Date không có thứ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GY-01.F01.08",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gy-010010": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "4193:147082",
+        "layer": "Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trạng thái",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Hoàn thành",
+         "Variant": "Neutral",
+         "Dropdown": "On"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GY-01.F01.09",
+     "name": "ghi-chu",
+     "label": "Ghi chú",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gy-010010": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "4193:147088",
+        "layer": "Ghi chú",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Ghi chú",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Ghi chú",
+         "State": "Default",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GY-01.F01.10",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gy-010010": [
+       {
+        "term": "Avatar",
+        "figmaId": "4193:147351",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Atom/Avatar Initials",
+        "variant": {
+         "Initials": "?",
+         "Style": "Soft",
+         "Tone": "Gray"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GY-010010",
+   "text": "man-chinh “Góp ý / Giáo viên” chưa được requirement nhắc tới"
+  }
+ ]
+}

@@ -1,0 +1,1792 @@
+{
+ "cluster": "teacher-role-teaching-schedule-teaching-schedule-requirements",
+ "title": "[Giáo viên] Lịch dạy",
+ "figmaPrefix": "TR-TS",
+ "requirements": [
+  {
+   "id": "TR-TS.REQ01",
+   "name": "Phạm vi lịch dạy",
+   "text": "Chỉ lịch có giáo viên được phân công là người đang đăng nhập; không lấy toàn bộ lịch của lớp chỉ vì người đó tham gia lớp. Backend kiểm tra phạm vi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.REQ02",
+   "name": "Tuần",
+   "text": "Mặc định tuần hiện tại, Thứ 2–Chủ Nhật, mũi tên dịch một tuần; header và thẻ cùng khoảng theo timezone nghiệp vụ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.REQ03",
+   "name": "Cách trình bày",
+   "text": "Theo lớp hoặc theo ngày, cùng tập lịch; mỗi lịch một thẻ, sắp tăng theo giờ trong ngày; đủ chỗ xem mọi lịch.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.REQ04",
+   "name": "Màu và nghiệp vụ",
+   "text": "Lịch Hủy bỏ vẫn hiển thị màu xám, ưu tiên hơn màu thời gian và không phát sinh lương. Lịch không hủy dùng màu theo ngày. Màu thời gian không tự thay trạng thái hoặc ghi nhận lương; không đánh đồng lịch đã qua với buổi đã hoàn thành.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.REQ05",
+   "name": "Lịch dạy chỉ đọc",
+   "text": "Thẻ chỉ hiển thị, không có hành động khi bấm, không mở popup và không điều hướng. Không CRUD/hủy/hoàn thành/mở lại trực tiếp tại tab này. Giáo viên hoàn thành qua luồng Bài học được cấp quyền theo requirement riêng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.REQ06",
+   "name": "Lịch đăng ký",
+   "text": "Lưới 3 buổi × 7 thứ của chính giáo viên; một ô một khung giờ và ghi chú riêng; một ô là một ca, tối đa 21. Ghi chú chung độc lập. Không tạo buổi dạy/lương từ lịch đăng ký.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.REQ07",
+   "name": "Popup",
+   "text": "Giờ bắt đầu/kết thúc bắt buộc, đúng khung buổi và mốc 30 phút, kết thúc sau bắt đầu; xác nhận chỉ cập nhật nháp, hủy không đổi ô. Backend validate lại khi lưu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.REQ08",
+   "name": "Fulltime",
+   "text": "Bật chọn thêm ô trống với giờ trọn buổi, không đổi giờ/ghi chú ô cũ. Tick khi đủ 21 ô; gỡ một ô tự bỏ tick. Chủ động bỏ Fulltime sẽ bỏ chọn toàn bộ ô đang chọn trong nháp; chỉ bấm Cập nhật mới ghi backend. Fulltime tự bỏ tick do gỡ một ô riêng không kích hoạt gỡ toàn bộ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.REQ09",
+   "name": "Nháp và lưu",
+   "text": "Chỉ Cập nhật mới ghi toàn bộ lịch đăng ký chính thức; không lưu từng ô. Chặn gửi lặp, lưu toàn bộ hoặc không lưu; lỗi giữ nháp, rời màn cảnh báo khi chưa lưu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.REQ10",
+   "name": "Đồng bộ và xung đột",
+   "text": "Dùng cùng nguồn với màn quản lý; chỉ response mới nhất cập nhật UI; phát hiện sửa đồng thời thay vì âm thầm ghi đè. Bỏ khung giờ rảnh vẫn cho lưu bình thường dù có lịch dạy đã phân công trong khung đó; không cảnh báo/chặn vì lý do này và không tự sửa/hủy/xóa lịch dạy đã xếp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.REQ11",
+   "name": "Quyền và audit",
+   "text": "Giáo viên chỉ xem/cập nhật đăng ký của mình; server kiểm tra phiên đăng nhập, trạng thái tài khoản và phạm vi. Cập nhật bởi giáo viên ghi đúng owner/actor; quản lý cập nhật thay theo requirement Chi tiết giáo viên.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "GV-LD-010000": {
+   "id": "GV-LD-010000",
+   "name": "xem-theo-lop",
+   "title": "Lịch dạy / Xem theo lớp",
+   "kind": "trang-thai",
+   "parent": null,
+   "shownOn": null,
+   "kindConfidence": "thap",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "5413:46957",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lich-day/xem-theo-lop",
+   "link": null,
+   "dark": "GV-LD-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-TS.A01"
+   ]
+  },
+  "GV-LD-020000": {
+   "id": "GV-LD-020000",
+   "name": "quan-ly-dang-ky-lich",
+   "title": "Lịch dạy / Quản lý đăng ký lịch",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "GV-LD-020000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "5413:49118",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lich-day/quan-ly-dang-ky-lich",
+   "link": "/lich-day/quan-ly-dang-ky-lich",
+   "dark": "GV-LD-020000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-TS.A02",
+    "TR-TS.F01",
+    "TR-TS.F02"
+   ]
+  },
+  "GV-LD-020010": {
+   "id": "GV-LD-020010",
+   "name": "popup-dang-ky-khung-gio",
+   "title": "Lịch dạy / Quản lý đăng ký lịch / Popup đăng ký khung giờ",
+   "kind": "popup",
+   "parent": "GV-LD-020000",
+   "shownOn": "GV-LD-020000",
+   "kindConfidence": "cao",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "5413:49911",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/lich-day/quan-ly-dang-ky-lich?popup=GV-LD-020010",
+   "dark": "GV-LD-020010-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-TS.A03"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "TR-TS.A01",
+   "name": "tab-lich-day",
+   "title": "Tab Lịch dạy",
+   "screens": [
+    "gv-ld-010000"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/teaching_schedule/teaching_schedule_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-TS.A01.01",
+     "name": "tieu-de-tab",
+     "label": "Tiêu đề / tab",
+     "spec": "Tiêu đề `Lịch Dạy`; tab `Lịch dạy` và `Quản lý đăng ký lịch`. Mặc định mở tab Lịch dạy.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-ld-010000": [
+       {
+        "term": "Lịch Dạy",
+        "figmaId": "5425:257921",
+        "layer": "Sidebar · MENU - TEACHER",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - TEACHER",
+        "component": "MENU - TEACHER",
+        "variant": {
+         "Trang": "Lịch dạy"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tiêu đề / tab"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-TS.A01.02",
+     "name": "tuan-dang-xem",
+     "label": "Tuần đang xem",
+     "spec": "Mặc định tuần chứa ngày hiện tại, Thứ 2 đến Chủ Nhật, theo quy tắc chung của tab Lịch dạy trong Chi tiết giáo viên. Khoảng ngày dạng `dd.MM.yyyy - dd.MM.yyyy`, ngày đầu không sau ngày cuối.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tuần đang xem",
+      "dd.MM.yyyy - dd.MM.yyyy"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A01.03",
+     "name": "mui-ten-trai-phai",
+     "label": "Mũi tên trái / phải",
+     "spec": "Lùi / tiến đúng một tuần; tải lịch tương ứng và cập nhật cả khoảng ngày, cột ngày và thẻ lịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Mũi tên trái / phải"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A01.04",
+     "name": "cot-ngay",
+     "label": "Cột ngày",
+     "spec": "Thứ 2 … Thứ 7, Chủ Nhật; mỗi cột có ngày `dd.MM`. Làm nổi bật ngày hiện tại nếu nằm trong tuần đang xem.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cột ngày",
+      "dd.MM"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A01.05",
+     "name": "theo-lop",
+     "label": "Theo lớp",
+     "spec": "Bật: nhóm lịch theo lớp, mỗi nhóm có thanh tiêu đề mã lớp. Tắt: gom theo ngày, không chia nhóm lớp. Mặc định bật theo frame tham chiếu; quy tắc ghi nhớ lựa chọn giữa các lần mở cần xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-ld-010000": [
+       {
+        "term": "Theo lớp",
+        "figmaId": "5413:53455",
+        "layer": "Value",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-TS.A01.06",
+     "name": "thanh-nhom-lop",
+     "label": "Thanh nhóm lớp",
+     "spec": "Mã lớp của đúng nhóm. Chỉ nhóm các lịch trong phạm vi của giáo viên đang đăng nhập; không vì cùng lớp mà tải thêm lịch của giáo viên khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thanh nhóm lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A01.07",
+     "name": "the-lich",
+     "label": "Thẻ lịch",
+     "spec": "Avatar và tên giáo viên được phân công, mã lớp, giờ bắt đầu–kết thúc. Với phạm vi đã chốt, giáo viên trên thẻ là chính giáo viên đang đăng nhập. Giờ theo timezone nghiệp vụ; cách trình bày theo UI `hh:mm am/pm`. Chỉ hiển thị; bấm thẻ không mở popup, không điều hướng và không thực hiện thao tác dữ liệu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-TS.TC03",
+      "TR-TS.TC8a"
+     ],
+     "missingTerms": [
+      "Thẻ lịch",
+      "hh:mm am/pm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A01.08",
+     "name": "sap-xep-the",
+     "label": "Sắp xếp thẻ",
+     "spec": "Trong cùng ngày và cùng nhóm, giờ bắt đầu tăng dần. Chế độ không nhóm lớp vẫn giữ thứ tự thời gian.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Sắp xếp thẻ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A01.09",
+     "name": "o-khong-co-lich",
+     "label": "Ô không có lịch",
+     "spec": "Ô trống viền nét đứt, không có nút `+`. Cả tuần không có lịch thì giữ lưới tuần trống; vẫn chuyển tuần/đổi chế độ được.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Ô không có lịch",
+      "+"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A01.10",
+     "name": "nhieu-lich-trong-ngay",
+     "label": "Nhiều lịch trong ngày",
+     "spec": "Mở rộng hoặc cuộn để xem đủ; số hàng trong ảnh không phải giới hạn số buổi. Không chồng thẻ che nội dung.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nhiều lịch trong ngày"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A01.11",
+     "name": "vien-the-tai-menu-nay",
+     "label": "Viền thẻ tại menu này",
+     "spec": "Dùng quy ước thời gian của tab Lịch dạy trong Chi tiết giáo viên: với lịch không hủy: ngày đã qua xanh lá, ngày hiện tại cam, ngày tương lai xanh dương. Lịch Hủy bỏ luôn màu xám, ưu tiên hơn màu theo ngày. Có thông tin ngày giờ và tên trạng thái để không chỉ dựa vào màu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Viền thẻ tại menu này"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A01.12",
+     "name": "lich-huy-bo",
+     "label": "Lịch Hủy bỏ",
+     "spec": "Vẫn hiển thị thẻ màu xám, kể cả lịch đã qua, hôm nay hoặc tương lai. Nhãn/tooltip trạng thái là `Hủy bỏ`; không tạo hành động trên thẻ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-TS.TC7a"
+     ],
+     "missingTerms": [
+      "Lịch Hủy bỏ",
+      "Hủy bỏ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A01.13",
+     "name": "trang-thai-lich",
+     "label": "Trạng thái lịch",
+     "spec": "Là dữ liệu nghiệp vụ riêng: Đang đợi / Hoàn thành / Hủy bỏ. Không đổi trạng thái chỉ vì đã qua ngày/giờ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Trạng thái lịch"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A01.14",
+     "name": "luong",
+     "label": "Lương",
+     "spec": "Viền xanh lá không chứng minh đã Hoàn thành hay đã được tính lương. Hoàn thành qua luồng Bài học và lịch được gắn mới làm phát sinh lương theo requirement đã chốt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-ld-010000": [
+       {
+        "term": "Lương",
+        "figmaId": "I5425:257921;4901:212752;2245:87764",
+        "layer": "Icon",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Icon",
+        "component": "ICON MENU",
+        "variant": {
+         "ICON MENU": "Lương"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "TR-TS.TC07",
+      "TR-TS.TC7a",
+      "TR-TS.TC08",
+      "TR-TS.TC8a"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-TS.A01.15",
+     "name": "khac-man-quan-ly-lich-lop",
+     "label": "Khác màn quản lý lịch lớp",
+     "spec": "Tab Lịch dạy ở Chi tiết lớp dùng màu loại/trạng thái lịch (Cố định, Linh hoạt, Hoàn thành, Hủy bỏ); không lấy màu theo thời gian tại menu này để thay đổi dữ liệu của tab đó.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Khác màn quản lý lịch lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "TR-TS.A02",
+   "name": "tab-quan-ly-dang-ky-lich",
+   "title": "Tab Quản lý đăng ký lịch",
+   "screens": [
+    "gv-ld-020000"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/teaching_schedule/teaching_schedule_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-TS.A02.01",
+     "name": "cot-thu",
+     "label": "Cột thứ",
+     "spec": "Thứ 2 … Thứ 7, Chủ nhật; tổng 7 cột.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cột thứ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A02.02",
+     "name": "hang-buoi",
+     "label": "Hàng buổi",
+     "spec": "Sáng `07h30 - 12h00`, Chiều `14h00 - 18h00`, Tối `18h00 - 23h00`. Mỗi cặp thứ–buổi là một ô, tối đa 21 ô.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "07h30 - 12h00",
+        "figmaId": "5413:49209",
+        "layer": "07h30 - 12h00",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Hàng buổi"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-TS.A02.03",
+     "name": "o-chua-dang-ky",
+     "label": "Ô chưa đăng ký",
+     "spec": "Checkbox trống. Tick mở popup `Đăng ký khung giờ` cho đúng thứ/buổi; chưa chọn hợp lệ và xác nhận thì chưa thêm ô vào nháp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-TS.A03",
+       "raw": "mở popup `Đăng ký khung giờ` cho đúng thứ/buổi"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Ô chưa đăng ký",
+      "Đăng ký khung giờ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A02.04",
+     "name": "o-da-dang-ky",
+     "label": "Ô đã đăng ký",
+     "spec": "Checkbox tick, nền cam, ghi chú ngắn nếu có và icon bút. Hover hiện ghi chú đầy đủ; không dùng câu hướng dẫn tooltip trên ảnh làm nội dung ghi chú.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "Ô đã đăng ký",
+        "figmaId": "5413:49274",
+        "layer": "Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này",
+        "confidence": "thap",
+        "region": "Frame 1171274925",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-TS.A02.05",
+     "name": "icon-but",
+     "label": "Icon bút",
+     "spec": "Mở popup với giờ/ghi chú hiện hành của đúng ô để chỉnh sửa nháp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-TS.A02",
+       "raw": "Mở popup với giờ/ghi chú hiện hành của đúng ô để chỉnh sửa nháp"
+      }
+     ],
+     "testcases": [
+      "TR-TS.TC12"
+     ],
+     "missingTerms": [
+      "Icon bút"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A02.06",
+     "name": "bo-tick-mot-o",
+     "label": "Bỏ tick một ô",
+     "spec": "Gỡ ô khỏi nháp; backend chưa thay đổi trước khi bấm Cập nhật.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-TS.TC12"
+     ],
+     "missingTerms": [
+      "Bỏ tick một ô"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-TS.A02.07",
+     "name": "bat-fulltime",
+     "label": "Bật Fulltime",
+     "spec": "**Đã chốt:** chọn các ô còn trống với khung giờ trọn buổi; giữ nguyên giờ và ghi chú của ô đã đăng ký, không ghi đè bằng trọn buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "Fulltime",
+        "figmaId": "5413:49187",
+        "layer": "Fulltime",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "TR-TS.TC13"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-TS.A02.08",
+     "name": "bo-tick-fulltime",
+     "label": "Bỏ tick Fulltime",
+     "spec": "**Đã chốt:** bỏ chọn tất cả ô đang được chọn trong nháp. Chỉ lưu chính thức khi bấm `Cập nhật`; không tự sửa lịch dạy đã xếp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "Fulltime",
+        "figmaId": "5413:49187",
+        "layer": "Fulltime",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "TR-TS.TC14a"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-TS.A02.09",
+     "name": "trang-thai-fulltime",
+     "label": "Trạng thái Fulltime",
+     "spec": "Tick khi đủ 21 ô được chọn, kể cả có ô được chỉnh giờ riêng; bỏ chọn một ô thì tự bỏ tick. Fulltime tại đây là chọn đủ ô, không dùng để thay thế dữ liệu giờ cụ thể từng ô. Chủ động bỏ tick Fulltime sẽ bỏ chọn toàn bộ ô đang được chọn trong nháp; chưa cập nhật backend.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "Fulltime",
+        "figmaId": "5413:49187",
+        "layer": "Fulltime",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-TS.A02.10",
+     "name": "ghi-chu-chung",
+     "label": "Ghi chú chung",
+     "spec": "Trường văn bản dưới lưới, không bắt buộc, độc lập với ghi chú từng ô. Placeholder `gửi tới người phỏng vấn` trên Figma là nội dung mẫu chưa phù hợp ngữ cảnh, cần thống nhất lại nhãn gợi ý.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "gửi tới người phỏng vấn",
+        "figmaId": "I5413:49270;2808:42324",
+        "layer": "Tìm nội dung...",
+        "confidence": "thap",
+        "region": "Frame 1171274925",
+        "owner": "Textarea · Ghi chú",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Thêm ghi chú muốn gửi tới người phỏng vấn (nếu có)",
+         "State": "Textarea",
+         "Kiểu": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "TR-TS.TC10"
+     ],
+     "missingTerms": [
+      "Ghi chú chung"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-TS.A02.11",
+     "name": "cap-nhat",
+     "label": "Cập nhật",
+     "spec": "Lưu toàn bộ nháp gồm tập ô, giờ, ghi chú từng ô và ghi chú chung. Chỉ sau lưu thành công dữ liệu mới thành lịch đăng ký chính thức.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "Cập nhật",
+        "figmaId": "5413:49272",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Cập nhật",
+         "Type": "Warning",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "TR-TS.TC14",
+      "TR-TS.TC14a",
+      "TR-TS.TC15",
+      "TR-TS.TC16",
+      "TR-TS.TC17",
+      "TR-TS.TC20",
+      "TR-TS.TC20a"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-TS.A02.12",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "5413:49180",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-TS.A02.13",
+     "name": "liner-icon",
+     "label": "Liner Icon",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "Liner Icon",
+        "figmaId": "5413:49268",
+        "layer": "Liner Icon",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": "Liner Icon",
+        "component": "Liner Icon",
+        "variant": {
+         "Property 1": "Ghi chú"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-TS.A02.14",
+     "name": "textarea-ghi-chu",
+     "label": "Textarea · Ghi chú",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "Textarea · Ghi chú",
+        "figmaId": "5413:49270",
+        "layer": "Textarea · Ghi chú",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": "Textarea · Ghi chú",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Thêm ghi chú muốn gửi tới người phỏng vấn (nếu có)",
+         "State": "Textarea",
+         "Kiểu": "M"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "TR-TS.A03",
+   "name": "popup-dang-ky-khung-gio",
+   "title": "Popup Đăng ký khung giờ",
+   "screens": [
+    "gv-ld-020010"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/teaching_schedule/teaching_schedule_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-TS.A03.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "`Đăng ký khung giờ`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-TS.A03.02",
+     "name": "dong-phu",
+     "label": "Dòng phụ",
+     "spec": "Đúng thứ, buổi và khung tương ứng ô đã bấm, ví dụ `Thứ 3 · Buổi chiều (14h00 – 18h00)`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-TS.TC21"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-TS.A03.03",
+     "name": "gio-bat-dau-gio-ket-thuc",
+     "label": "Giờ bắt đầu / Giờ kết thúc",
+     "spec": "Bắt buộc. Chọn các mốc cách nhau 30 phút, nằm trong khung của buổi. Buổi sáng gồm các mốc 07:30–12:00, chiều 14:00–18:00, tối 18:00–23:00. Giờ kết thúc phải lớn hơn giờ bắt đầu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-TS.A03.04",
+     "name": "ghi-chu",
+     "label": "Ghi chú",
+     "spec": "Không bắt buộc, chỉ thuộc ô đang sửa; không ghi đè ghi chú chung. Giới hạn ký tự cần xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-TS.TC24",
+      "TR-TS.TC25"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-TS.A03.05",
+     "name": "huy",
+     "label": "Huỷ",
+     "spec": "Đóng popup, không thay đổi nháp của ô; ô mới vẫn trống, ô đang sửa giữ giờ/ghi chú trước khi mở.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-TS.A03.06",
+     "name": "xac-nhan",
+     "label": "Xác nhận",
+     "spec": "Validate và lưu vào nháp lưới; chưa ghi backend. Nếu thiếu giờ hoặc khoảng không hợp lệ, báo lỗi tại field và giữ popup để sửa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-TS.TC22",
+      "TR-TS.TC25"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-TS.F01",
+   "name": "header",
+   "title": "Header",
+   "screens": [
+    "gv-ld-020000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-TS.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "5425:258303",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Giáo Viên",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-TS.F01.02",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "Component 2",
+        "figmaId": "5425:258305",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Sakumi"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-TS.F01.03",
+     "name": "header-vai-tro",
+     "label": "Header/Vai trò",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "Header/Vai trò",
+        "figmaId": "5425:258306",
+        "layer": "Header/Vai trò",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "Header/Vai trò",
+        "component": null,
+        "variant": {
+         "Vai trò": "Giáo viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "TR-TS.F02",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "gv-ld-020000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-TS.F02.01",
+     "name": "sidebar-menu-teacher",
+     "label": "Sidebar · MENU - TEACHER",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ld-020000": [
+       {
+        "term": "Sidebar · MENU - TEACHER",
+        "figmaId": "5425:258114",
+        "layer": "Sidebar · MENU - TEACHER",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - TEACHER",
+        "component": "MENU - TEACHER",
+        "variant": {
+         "Trang": "Lịch dạy"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "TR-TS.EX01",
+   "text": "Truy cập lịch người khác, thay owner/actor hoặc cập nhật lịch dạy trái quyền → backend từ chối; không tiết lộ/cập nhật dữ liệu ngoài phạm vi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.EX02",
+   "text": "Tuần không có lịch dạy → lưới trống; chưa đăng ký ca nào → lưới đăng ký trống. Không coi trạng thái chưa có dữ liệu là lỗi; khả năng lưu một lịch đăng ký rỗng cần xác nhận.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.EX03",
+   "text": "Tải lịch hoặc đăng ký thất bại → lỗi có Thử lại, không dùng dữ liệu mẫu hoặc dữ liệu người/tuần khác thay thế.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.EX04",
+   "text": "Thiếu giờ, ngoài khung buổi, sai mốc 30 phút hoặc kết thúc không lớn hơn bắt đầu → không nhận nháp ô/lưu backend, chỉ rõ lỗi để sửa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.EX05",
+   "text": "Lưu thất bại hoặc bấm lặp → không lưu một phần, giữ nháp; chặn gửi lặp trong khi đang xử lý.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.EX06",
+   "text": "Phiên bản lịch đăng ký đã thay đổi → báo xung đột, không âm thầm ghi đè.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-TS.EX07",
+   "text": "Rời màn khi có nháp chưa lưu → cảnh báo; ở lại giữ nháp, bỏ thay đổi thì không tự lưu.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "TR-TS.FLOW01",
+   "name": "Xem lịch dạy theo tuần",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ01",
+    "TR-TS.REQ02"
+   ]
+  },
+  {
+   "id": "TR-TS.FLOW02",
+   "name": "Chuyển cách nhóm lịch",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ03"
+   ]
+  },
+  {
+   "id": "TR-TS.FLOW03",
+   "name": "Chỉnh nháp lịch đăng ký",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ06",
+    "TR-TS.REQ07"
+   ]
+  },
+  {
+   "id": "TR-TS.FLOW04",
+   "name": "Chọn Fulltime",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ08"
+   ]
+  },
+  {
+   "id": "TR-TS.FLOW05",
+   "name": "Lưu lịch đăng ký",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ09",
+    "TR-TS.REQ10",
+    "TR-TS.REQ11"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "TR-TS.TC01",
+   "title": "Case 1: Mở lịch tuần hiện tại",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-TS.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-TS.TC02",
+   "title": "Case 2: Chặn lịch giáo viên khác cùng lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A01",
+   "scenario": "REQ01 / EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ01"
+   ],
+   "exceptions": [
+    "TR-TS.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-TS.TC03",
+   "title": "Case 3: Chuyển tuần qua tháng/năm",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A01",
+   "scenario": "Flow 1 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW01"
+   ],
+   "items": [
+    "TR-TS.A01.07"
+   ]
+  },
+  {
+   "id": "TR-TS.TC04",
+   "title": "Case 4: Bật và tắt Theo lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A01",
+   "scenario": "Flow 2 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-TS.TC05",
+   "title": "Case 5: Tuần không có lịch",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-TS.A01",
+   "scenario": "EX02 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ02"
+   ],
+   "exceptions": [
+    "TR-TS.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-TS.TC06",
+   "title": "Case 6: Nhiều lịch và bản ghi thay thế",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A01",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-TS.TC07",
+   "title": "Case 7: Màu thời gian không tự hoàn thành lịch",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A01",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-TS.A01.14"
+   ]
+  },
+  {
+   "id": "TR-TS.TC7a",
+   "title": "Case 7a: Lịch hủy vẫn hiển thị màu xám",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A01",
+   "scenario": "REQ01 / REQ04–REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ01",
+    "TR-TS.REQ04",
+    "TR-TS.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-TS.A01.12",
+    "TR-TS.A01.14"
+   ]
+  },
+  {
+   "id": "TR-TS.TC08",
+   "title": "Case 8: Lịch dạy chỉ đọc",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A01",
+   "scenario": "REQ05 / EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ05"
+   ],
+   "exceptions": [
+    "TR-TS.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "TR-TS.A01.14"
+   ]
+  },
+  {
+   "id": "TR-TS.TC8a",
+   "title": "Case 8a: Thẻ lịch không có hành động",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A01",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-TS.A01.07",
+    "TR-TS.A01.14"
+   ]
+  },
+  {
+   "id": "TR-TS.TC09",
+   "title": "Case 9: Tải lỗi và response cũ",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A01",
+   "scenario": "EX03 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ10"
+   ],
+   "exceptions": [
+    "TR-TS.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-TS.TC10",
+   "title": "Case 10: Tải đúng lịch đăng ký cá nhân",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-TS.A02",
+   "scenario": "Flow 3 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW03"
+   ],
+   "items": [
+    "TR-TS.A02.10"
+   ]
+  },
+  {
+   "id": "TR-TS.TC11",
+   "title": "Case 11: Thêm ô mới vào nháp",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A02",
+   "scenario": "Flow 3 / REQ06–REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ06",
+    "TR-TS.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-TS.TC12",
+   "title": "Case 12: Sửa và gỡ ô",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A02",
+   "scenario": "Flow 3 / REQ06–REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ06",
+    "TR-TS.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW03"
+   ],
+   "items": [
+    "TR-TS.A02.05",
+    "TR-TS.A02.06"
+   ]
+  },
+  {
+   "id": "TR-TS.TC13",
+   "title": "Case 13: Fulltime giữ dữ liệu ô đã đăng ký",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A02",
+   "scenario": "Flow 4 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW04"
+   ],
+   "items": [
+    "TR-TS.A02.07"
+   ]
+  },
+  {
+   "id": "TR-TS.TC14",
+   "title": "Case 14: Trạng thái Fulltime khi chỉnh một ô",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-TS.A02",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-TS.A02.11"
+   ]
+  },
+  {
+   "id": "TR-TS.TC14a",
+   "title": "Case 14a: Chủ động bỏ tick Fulltime",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A02",
+   "scenario": "Flow 4 / REQ08–REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ08",
+    "TR-TS.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW04"
+   ],
+   "items": [
+    "TR-TS.A02.08",
+    "TR-TS.A02.11"
+   ]
+  },
+  {
+   "id": "TR-TS.TC15",
+   "title": "Case 15: Cập nhật và đồng bộ dữ liệu",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-TS.A02",
+   "scenario": "Flow 5 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW05"
+   ],
+   "items": [
+    "TR-TS.A02.11"
+   ]
+  },
+  {
+   "id": "TR-TS.TC16",
+   "title": "Case 16: Không tạo lịch dạy hoặc lương từ lịch rảnh",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A02",
+   "scenario": "REQ06 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ06",
+    "TR-TS.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-TS.A02.11"
+   ]
+  },
+  {
+   "id": "TR-TS.TC17",
+   "title": "Case 17: Lưu lỗi hoặc bấm lặp",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A02",
+   "scenario": "EX05 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ09"
+   ],
+   "exceptions": [
+    "TR-TS.EX05"
+   ],
+   "flows": [],
+   "items": [
+    "TR-TS.A02.11"
+   ]
+  },
+  {
+   "id": "TR-TS.TC18",
+   "title": "Case 18: Cập nhật đồng thời",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A02",
+   "scenario": "EX06 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ10"
+   ],
+   "exceptions": [
+    "TR-TS.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-TS.TC19",
+   "title": "Case 19: Rời màn khi còn nháp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-TS.A02",
+   "scenario": "EX07 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ09"
+   ],
+   "exceptions": [
+    "TR-TS.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-TS.TC20",
+   "title": "Case 20: Không sửa đăng ký của giáo viên khác",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A02",
+   "scenario": "EX01 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ11"
+   ],
+   "exceptions": [
+    "TR-TS.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "TR-TS.A02.11"
+   ]
+  },
+  {
+   "id": "TR-TS.TC20a",
+   "title": "Case 20a: Bỏ ca rảnh đang có lịch dạy vẫn lưu được",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A02",
+   "scenario": "Flow 5 / REQ09–REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ09",
+    "TR-TS.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW05"
+   ],
+   "items": [
+    "TR-TS.A02.11"
+   ]
+  },
+  {
+   "id": "TR-TS.TC21",
+   "title": "Case 21: Mở đúng thứ và buổi",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A03",
+   "scenario": "Flow 3 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW03"
+   ],
+   "items": [
+    "TR-TS.A03.02"
+   ]
+  },
+  {
+   "id": "TR-TS.TC22",
+   "title": "Case 22: Bắt buộc giờ và đúng thứ tự",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A03",
+   "scenario": "EX04 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ07"
+   ],
+   "exceptions": [
+    "TR-TS.EX04"
+   ],
+   "flows": [],
+   "items": [
+    "TR-TS.A03.06"
+   ]
+  },
+  {
+   "id": "TR-TS.TC23",
+   "title": "Case 23: Kiểm tra biên và mốc giờ",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-TS.A03",
+   "scenario": "EX04 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ07"
+   ],
+   "exceptions": [
+    "TR-TS.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-TS.TC24",
+   "title": "Case 24: Huỷ thêm mới hoặc chỉnh sửa",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-TS.A03",
+   "scenario": "Flow 3 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-TS.FLOW03"
+   ],
+   "items": [
+    "TR-TS.A03.04"
+   ]
+  },
+  {
+   "id": "TR-TS.TC25",
+   "title": "Case 25: Một ca và ghi chú độc lập",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-TS.A03",
+   "scenario": "REQ06–REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-TS.REQ06",
+    "TR-TS.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-TS.A03.04",
+    "TR-TS.A03.06"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "popup-khong-co-man-cha",
+   "ref": "GV-LD-010000",
+   "text": "chưa xác định được màn chính để mở"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LD-010000",
+   "text": "loại trang-thai, màn cha None — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-LD-010000",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-LD-020010",
+   "text": "không có prototype link nào đi vào frame"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "teacher_role/teaching_schedule/teaching_schedule_requirements.md",
+   "prefix": "TR-TS",
+   "title": "[Giáo viên] Lịch dạy"
+  }
+ ]
+}

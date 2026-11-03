@@ -1,0 +1,1647 @@
+{
+ "cluster": "test",
+ "title": "Học Kỳ - Tab Kiểm tra",
+ "figmaPrefix": "CM-TE",
+ "requirements": [
+  {
+   "id": "CM-TE.REQ01",
+   "name": "Danh sách",
+   "text": "Bài kiểm tra của học kỳ đang chọn theo thứ tự đã sắp; card có ID 10 số, tên, chip thời gian, chip số câu, nút `>`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-TE.REQ02",
+   "name": "Thêm bài",
+   "text": "Chỉ khi học kỳ `Nháp`; nhập tên ở ô cuối danh sách; ID 10 số hệ thống tự sinh, duy nhất; bài mới ở cuối.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-TE.REQ03",
+   "name": "Sắp xếp",
+   "text": "Kéo thả khi học kỳ `Nháp`; thứ tự dùng ở menu Bài Tập Về Nhà và lớp học.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-TE.REQ04",
+   "name": "Quyền sửa theo trạng thái học kỳ / khoá học",
+   "text": "Danh sách bài (thêm, sắp xếp, xoá), tab Thông tin và bộ câu hỏi chỉ sửa khi học kỳ `Nháp` **và** khoá học `Nháp`; học kỳ hoặc khoá học `Công khai` / `Vô hiệu` chỉ đọc toàn bộ (xem `course_management.md` REQ10). Nhân bản học kỳ / khoá học sao chép toàn bộ bài kiểm tra và bộ câu hỏi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-TE.REQ05",
+   "name": "Xoá bài",
+   "text": "Xoá mềm bài và bộ câu hỏi, qua popup xác nhận, chỉ khi học kỳ `Nháp` và khoá học `Nháp`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-TE.REQ06",
+   "name": "Thông tin bài",
+   "text": "Tiêu đề, Độ khó (1 - Dễ / Bình thường / Khó), Thời gian làm bài (giờ : phút : giây, > 0) bắt buộc; Mô tả, Điểm đạt (0 ≤ Điểm đạt ≤ 10, thang 10) không bắt buộc; Số câu hỏi tự tính, chỉ đọc; không có Tổng điểm; lưu tự động từng field.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-TE.REQ07",
+   "name": "Bộ câu hỏi",
+   "text": "Soạn trong tab Bộ Câu Hỏi của popup, cùng quy tắc `homework-test.md`; dùng chung dữ liệu với menu Bài Tập Về Nhà → tab Kiểm tra.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "CD-KH-030300": {
+   "id": "CD-KH-030300",
+   "name": "kiem-tra",
+   "title": "Học kỳ / Kiểm tra",
+   "kind": "man-chinh",
+   "parent": "CD-KH-030200",
+   "shownOn": "CD-KH-030300",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "497:18242",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoc-ky/kiem-tra",
+   "link": "/hoc-ky/kiem-tra",
+   "dark": "CD-KH-030300-DK",
+   "openedFrom": [
+    "CD-KH-030100",
+    "CD-KH-030104",
+    "CD-KH-030200"
+   ],
+   "citedByRequirement": true,
+   "regions": [
+    "CM-TE.A01",
+    "CM-TE.A04",
+    "CM-TE.F01"
+   ]
+  },
+  "CD-KH-030310": {
+   "id": "CD-KH-030310",
+   "name": "popup-cau-hinh-bai-kiem-tra",
+   "title": "Học kỳ / Kiểm tra / Popup cấu hình bài kiểm tra",
+   "kind": "popup",
+   "parent": "CD-KH-030300",
+   "shownOn": "CD-KH-030300",
+   "kindConfidence": "cao",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "1496:16304",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/hoc-ky/kiem-tra/popup-cau-hinh-bai-kiem-tra",
+   "link": "/hoc-ky/kiem-tra?popup=CD-KH-030310",
+   "dark": "CD-KH-030310-DK",
+   "openedFrom": [
+    "CD-KH-030300"
+   ],
+   "citedByRequirement": true,
+   "regions": [
+    "CM-TE.A02"
+   ]
+  },
+  "CD-KH-030346": {
+   "id": "CD-KH-030346",
+   "name": "generate-loi",
+   "title": "Học kỳ / Kiểm tra / Generate · Lỗi",
+   "kind": "trang-thai",
+   "parent": "CD-KH-030300",
+   "shownOn": "CD-KH-030300",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5609:31815",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoc-ky/kiem-tra?state=CD-KH-030346",
+   "dark": "CD-KH-030346-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-TE.A03"
+   ]
+  },
+  "CD-KH-030350": {
+   "id": "CD-KH-030350",
+   "name": "generate-loi-tab-chon-kien-thuc-ky-nang",
+   "title": "Học kỳ / Kiểm tra / Generate · Lỗi (tab Chọn kiến thức & kỹ năng)",
+   "kind": "trang-thai",
+   "parent": "CD-KH-030300",
+   "shownOn": "CD-KH-030300",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "6579:75268",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/hoc-ky/kiem-tra?state=CD-KH-030350",
+   "dark": "CD-KH-030350-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-TE.A03"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "CM-TE.A01",
+   "name": "danh-sach-bai-kiem-tra",
+   "title": "Danh sách bài kiểm tra",
+   "screens": [
+    "cd-kh-030300"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "course_management/semester/test/test.md",
+   "needsDesign": true,
+   "figmaDiffNotes": [
+    "Khác Figma CD-KH-030300: card chưa có menu `⋮` để xoá bài."
+   ],
+   "items": [
+    {
+     "id": "CM-TE.A01.01",
+     "name": "card-bai-kiem-tra",
+     "label": "Card bài kiểm tra",
+     "spec": "Icon kéo thả bên trái; `ID` bài (10 chữ số, hệ thống tự sinh, màu xanh); tên bài; chip thời gian làm bài (vd `30m`); chip số câu hỏi; nút `>` mở popup bài kiểm tra.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "CM-TE.A01",
+       "raw": "mở popup bài kiểm tra"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Card bài kiểm tra",
+      "ID"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-TE.A01.02",
+     "name": "chip-thoi-gian",
+     "label": "Chip thời gian",
+     "spec": "Thời gian làm bài rút gọn: `30m`, `1h30m`; chưa cấu hình hiển thị `—`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "30m",
+        "figmaId": "I2860:37178;1207:1810",
+        "layer": "30m",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Info Badge",
+        "component": "Atom/Info Badge",
+        "variant": {
+         "Type": "Duration"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-TE.TC01"
+     ],
+     "missingTerms": [
+      "Chip thời gian"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "CM-TE.A01.03",
+     "name": "chip-so-cau",
+     "label": "Chip số câu",
+     "spec": "Số câu của bộ câu hỏi (tự tính); `0` khi chưa có câu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-TE.TC01"
+     ],
+     "missingTerms": [
+      "Chip số câu",
+      "0"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-TE.A01.04",
+     "name": "them-bai-kiem-tra-moi",
+     "label": "Thêm bài kiểm tra mới",
+     "spec": "Ô nhập cuối danh sách; nhập tên và Enter (hoặc bấm `+`) tạo bài mới ở cuối, rồi mở popup bài vừa tạo ở tab Thông tin.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Thêm bài kiểm tra mới",
+        "figmaId": "2702:48181",
+        "layer": "Add New Bar · Thêm bài kiểm tra mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Thêm bài kiểm tra mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1075:1478",
+         "Placeholder": "Thêm bài kiểm tra mới",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "opens",
+       "target": "CM-TE.A01",
+       "raw": "mở popup bài vừa tạo ở tab Thông tin"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-TE.A01.05",
+     "name": "keo-tha",
+     "label": "Kéo thả",
+     "spec": "Kéo icon bên trái để đổi thứ tự bài; thứ tự lưu lên backend và dùng ở menu Bài Tập Về Nhà, lớp học.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-TE.TC05"
+     ],
+     "missingTerms": [
+      "Kéo thả"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-TE.A01.06",
+     "name": "xoa-bai",
+     "label": "Xoá bài",
+     "spec": "Menu `⋮` trên card có `Xoá` (popup xác nhận `Xoá bài kiểm tra \"<tên>\"? Bộ câu hỏi của bài cũng sẽ bị xoá.`, nút `Huỷ` / `Xoá`); xoá mềm (**UI cần bổ sung**).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-TE.TC05"
+     ],
+     "missingTerms": [
+      "Xoá bài",
+      "⋮"
+     ],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "CM-TE.A01.07",
+     "name": "thu-tu-mac-dinh",
+     "label": "Thứ tự mặc định",
+     "spec": "Theo thứ tự đã sắp; bài mới ở cuối.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thứ tự mặc định"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "CM-TE.A02",
+   "name": "popup-bai-kiem-tra-tab-thong-tin",
+   "title": "Popup bài kiểm tra — Tab Thông tin",
+   "screens": [
+    "cd-kh-030310"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "course_management/semester/test/test.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [
+    "Khác Figma CD-KH-030310: ô `Số câu hỏi` đang vẽ như ô nhập, requirement là chỉ đọc; ô `Tổng điểm` trên Figma cần bỏ. Dòng Lưu ý ghi `Số câu hỏi và tổng điểm có thể được cập nhật`."
+   ],
+   "items": [
+    {
+     "id": "CM-TE.A02.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề ",
+     "spec": "Bắt buộc; không để trống hoặc chỉ khoảng trắng. Tên trên card cập nhật theo.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030310": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "2911:43712",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Modal Body Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": true,
+         "Icon": "1832:36628",
+         "Label": "Tiêu đề",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-TE.A02.02",
+     "name": "do-kho",
+     "label": "Độ khó ",
+     "spec": "Bắt buộc; một trong `1 - Dễ`, `Bình thường`, `Khó`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030310": [
+       {
+        "term": "Độ khó",
+        "figmaId": "2911:43717",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Modal Body Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": true,
+         "Icon": "2263:35671",
+         "Label": "Độ khó",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-TE.TC07"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-TE.A02.03",
+     "name": "mo-ta",
+     "label": "Mô tả",
+     "spec": "Không bắt buộc; nhiều dòng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030310": [
+       {
+        "term": "Mô tả",
+        "figmaId": "2911:43722",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Modal Body Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7703",
+         "Label": "Mô tả",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-TE.TC08"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-TE.A02.04",
+     "name": "thoi-gian-lam-bai",
+     "label": "Thời gian làm bài ",
+     "spec": "Bắt buộc; 3 ô `Giờ` : `Phút` : `Giây`, tổng > 0; phút và giây 0–59.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030310": [
+       {
+        "term": "Thời gian làm bài",
+        "figmaId": "1496:16365",
+        "layer": "Thời gian làm bài *",
+        "confidence": "cao",
+        "region": "Modal Body Form",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-TE.A02.05",
+     "name": "so-cau-hoi",
+     "label": "Số câu hỏi",
+     "spec": "**Tự tính** từ bộ câu hỏi (số câu cha), chỉ đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030310": [
+       {
+        "term": "Số câu hỏi",
+        "figmaId": "2911:43727",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Modal Body Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "738:25432",
+         "Label": "Số câu hỏi",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-TE.TC08"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-TE.A02.06",
+     "name": "diem-dat",
+     "label": "Điểm đạt",
+     "spec": "Không bắt buộc; số từ 0 đến 10 (điểm bài của học viên tính trên thang 10, là trung bình điểm các câu).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030310": [
+       {
+        "term": "Điểm đạt",
+        "figmaId": "2911:43737",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Modal Body Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "738:25432",
+         "Label": "Điểm đạt",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-TE.TC09"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-TE.A02.07",
+     "name": "hop-luu-y",
+     "label": "Hộp Lưu ý",
+     "spec": "`Số câu hỏi được cập nhật tự động dựa trên nội dung trong tab Bộ câu hỏi.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030310": [
+       {
+        "term": "Lưu ý",
+        "figmaId": "2808:43043",
+        "layer": "Atom/Alert",
+        "confidence": "cao",
+        "region": "Modal Body Form",
+        "owner": "Atom/Alert",
+        "component": "Atom/Alert",
+        "variant": {
+         "Type": "Lưu ý"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-TE.A02.08",
+     "name": "dong",
+     "label": "Đóng",
+     "spec": "Đóng popup; dữ liệu đã lưu tự động.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030310": [
+       {
+        "term": "Đóng",
+        "figmaId": "I2527:167935;2514:153371",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Đóng",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-TE.TC07"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "CM-TE.A03",
+   "name": "popup-bai-kiem-tra-tab-bo-cau-hoi",
+   "title": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
+   "screens": [
+    "cd-kh-030346",
+    "cd-kh-030350"
+   ],
+   "screensGuessed": [
+    "CD-KH-030346",
+    "CD-KH-030350"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "course_management/semester/test/test.md",
+   "needsDesign": true,
+   "figmaDiffNotes": [
+    "Khác Figma: bộ câu hỏi đang vẽ thành màn riêng `CD-KH-030340` (mở từ `>`); requirement đặt trong tab `Bộ Câu Hỏi` của popup (**UI cần bổ sung**)."
+   ],
+   "items": [
+    {
+     "id": "CM-TE.A03.01",
+     "name": "nut-thao-tac",
+     "label": "Nút thao tác",
+     "spec": "`Import Excel`, `Export Excel`, `+ Thêm câu hỏi`, `Generate` (Tạo câu hỏi bằng AI), `Soát lỗi bằng AI`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "CM-TE.A03.02",
+     "name": "the-tong-quan",
+     "label": "Thẻ tổng quan",
+     "spec": "`Tổng số câu`, `Thời gian làm bài` (từ tab Thông tin), `Cơ cấu theo dạng câu`; tag `Thang 10`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "CM-TE.A03.03",
+     "name": "bang-cau-hoi",
+     "label": "Bảng câu hỏi",
+     "spec": "Cột `STT`, `Bài tập (câu hỏi)`, `Loại câu`, `Đáp án đúng`, `Kiến thức / Kỹ năng`, `Điểm`, `⋮`; tìm kiếm, lọc `Loại câu`, `Kiến thức / Kỹ năng`; câu hỏi con mở / thu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "CM-TE.A03.04",
+     "name": "them-sua-cau-import-export-generate-soat",
+     "label": "Thêm / sửa câu, Import / Export, Generate, Soát lỗi",
+     "spec": "Theo `homework-test.md`: soạn câu bắt buộc Số câu, Loại câu, Kiến thức / Kỹ năng; Excel cùng cột bảng; Generate không giới hạn số câu, chọn dòng rồi thêm; câu AI có tag `AI`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    }
+   ]
+  },
+  {
+   "id": "CM-TE.A04",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [
+    "cd-kh-030300"
+   ],
+   "screensGuessed": [
+    "CD-KH-030300"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "course_management/semester/test/test.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-TE.A04.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | `Đã thêm bài kiểm tra.`; `Đã xoá bài kiểm tra.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-TE.TTC01"
+     ],
+     "missingTerms": [
+      "Thành công",
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-TE.A04.02",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | `Học kỳ hoặc khoá học không ở trạng thái Nháp, không thể chỉnh sửa bài kiểm tra.` (request bị từ chối)",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cảnh báo",
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-TE.A04.03",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | Thêm, xoá, sắp xếp, lưu tự động thất bại do backend / network.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Lỗi",
+        "figmaId": "I4915:255361;4901:220694;2245:87908",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "2808:53558",
+         "Label": "lỗi dữ liệu",
+         "Type": "Menu phụ",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "CM-TE.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "cd-kh-030300"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-TE.F01.01",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Component 2",
+        "figmaId": "497:18281",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.02",
+     "name": "component-3",
+     "label": "Component 3",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Component 3",
+        "figmaId": "497:18282",
+        "layer": "Component 3",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 3",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.03",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "497:18283",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.04",
+     "name": "atom-id-badge",
+     "label": "Atom/ID Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Atom/ID Badge",
+        "figmaId": "2003:26053",
+        "layer": "Atom/ID Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/ID Badge",
+        "component": "Atom/ID Badge",
+        "variant": {
+         "Type": "10-digit",
+         "Size": "20H",
+         "Item": "01"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.05",
+     "name": "atom-info-badge",
+     "label": "Atom/Info Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Atom/Info Badge",
+        "figmaId": "2860:37178",
+        "layer": "Atom/Info Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Info Badge",
+        "component": "Atom/Info Badge",
+        "variant": {
+         "Type": "Duration"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.06",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "2860:37202",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Drop & Drag"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.07",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Mouse click",
+        "figmaId": "2860:37209",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.08",
+     "name": "bo-loc-hoc-ky-cap-do",
+     "label": "Bộ lọc · Học kỳ (cấp độ)",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Bộ lọc · Học kỳ (cấp độ)",
+        "figmaId": "5614:59006",
+        "layer": "Bộ lọc · Học kỳ (cấp độ)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Bộ lọc · Học kỳ (cấp độ)",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "HSK1",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.09",
+     "name": "atom-status",
+     "label": "Atom/Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Atom/Status",
+        "figmaId": "2860:37016",
+        "layer": "Atom/Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Status",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Công khai",
+         "Size": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.10",
+     "name": "dd-organism-menu-panel",
+     "label": "DD/Organism/Menu Panel",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "DD/Organism/Menu Panel",
+        "figmaId": "6006:130496",
+        "layer": "DD/Organism/Menu Panel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Organism/Menu Panel",
+        "component": "DD/Organism/Menu Panel",
+        "variant": {
+         "Footer": false,
+         "Search": false,
+         "Type": "Action"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.11",
+     "name": "add-new-bar-them-moi",
+     "label": "Add New Bar · Thêm mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Add New Bar · Thêm mới",
+        "figmaId": "2860:37040",
+        "layer": "Add New Bar · Thêm mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Thêm mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Nút": "1075:1478",
+         "Icon trái": false,
+         "Placeholder": "Thêm mới",
+         "Type": "Box",
+         "Size": "S",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.12",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2860:13738",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "CD",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.13",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Component 2",
+        "figmaId": "4273:160653",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Đắc Nhân"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-TE.F01.14",
+     "name": "sidebar-menu-cd",
+     "label": "Sidebar · MENU - CD",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-030300": [
+       {
+        "term": "Sidebar · MENU - CD",
+        "figmaId": "4915:255361",
+        "layer": "Sidebar · MENU - CD",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - CD",
+        "component": "MENU - CD",
+        "variant": {
+         "Trang": "Khoá học / Quy trình / Học kỳ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "CM-TE.EX01",
+   "text": "Tên bài kiểm tra mới trống hoặc chỉ có khoảng trắng → không tạo bài.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-TE.EX02",
+   "text": "Thêm, sắp xếp, xoá bài, sửa tab Thông tin hoặc thêm / sửa / xoá / import câu hỏi khi học kỳ hoặc khoá học không ở `Nháp` (kể cả gọi API trực tiếp) → backend từ chối; dữ liệu không đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-TE.EX03",
+   "text": "Field tab Thông tin sai (Tiêu đề trống, Thời gian = 0, phút / giây > 59, Điểm đạt < 0 hoặc > 10) → báo lỗi dưới field, không lưu field đó.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-TE.EX04",
+   "text": "Lưu tự động, thêm, xoá, sắp xếp thất bại do backend / network → Toast `Có Lỗi Xảy Ra`; dữ liệu trên server giữ giá trị cũ.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "CM-TE.FLOW01",
+   "name": "Xem danh sách bài kiểm tra",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ01"
+   ]
+  },
+  {
+   "id": "CM-TE.FLOW02",
+   "name": "Thêm bài kiểm tra",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ02"
+   ]
+  },
+  {
+   "id": "CM-TE.FLOW03",
+   "name": "Sắp xếp bài kiểm tra",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ03"
+   ]
+  },
+  {
+   "id": "CM-TE.FLOW04",
+   "name": "Xoá bài kiểm tra",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ05"
+   ]
+  },
+  {
+   "id": "CM-TE.FLOW05",
+   "name": "Sửa thông tin bài kiểm tra",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ06"
+   ]
+  },
+  {
+   "id": "CM-TE.FLOW06",
+   "name": "Soạn bộ câu hỏi",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ07"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "CM-TE.TC01",
+   "title": "Case 1: Xem danh sách bài kiểm tra",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-TE.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-TE.FLOW01"
+   ],
+   "items": [
+    "CM-TE.A01.02",
+    "CM-TE.A01.03"
+   ]
+  },
+  {
+   "id": "CM-TE.TC02",
+   "title": "Case 2: Thêm bài kiểm tra",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-TE.A01",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-TE.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-TE.TC03",
+   "title": "Case 3: Tên trống",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-TE.A01",
+   "scenario": "EX01 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ02"
+   ],
+   "exceptions": [
+    "CM-TE.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-TE.TC04",
+   "title": "Case 4: Kéo thả đổi thứ tự",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-TE.A01",
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-TE.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-TE.TC05",
+   "title": "Case 5: Học kỳ Công khai chỉ đọc danh sách",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-TE.A01",
+   "scenario": "EX02 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ04"
+   ],
+   "exceptions": [
+    "CM-TE.EX02"
+   ],
+   "flows": [],
+   "items": [
+    "CM-TE.A01.05",
+    "CM-TE.A01.06"
+   ]
+  },
+  {
+   "id": "CM-TE.TC06",
+   "title": "Case 6: Xoá bài kiểm tra",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-TE.A01",
+   "scenario": "Flow 4 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-TE.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-TE.TC07",
+   "title": "Case 7: Mở và sửa thông tin",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-TE.A02",
+   "scenario": "Flow 5 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-TE.FLOW05"
+   ],
+   "items": [
+    "CM-TE.A02.02",
+    "CM-TE.A02.08"
+   ]
+  },
+  {
+   "id": "CM-TE.TC08",
+   "title": "Case 8: Số câu hỏi tự tính",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-TE.A02",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-TE.A02.03",
+    "CM-TE.A02.05"
+   ]
+  },
+  {
+   "id": "CM-TE.TC09",
+   "title": "Case 9: Điểm đạt vượt thang 10",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-TE.A02",
+   "scenario": "EX03 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ06"
+   ],
+   "exceptions": [
+    "CM-TE.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "CM-TE.A02.06"
+   ]
+  },
+  {
+   "id": "CM-TE.TC10",
+   "title": "Case 10: Thời gian bằng 0",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-TE.A02",
+   "scenario": "EX03 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ06"
+   ],
+   "exceptions": [
+    "CM-TE.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-TE.TC11",
+   "title": "Case 11: Thông tin chỉ đọc khi học kỳ Công khai",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-TE.A02",
+   "scenario": "EX02 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ04"
+   ],
+   "exceptions": [
+    "CM-TE.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-TE.TC12",
+   "title": "Case 12: Soạn câu trong popup",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-TE.A03",
+   "scenario": "Flow 6 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-TE.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-TE.TC13",
+   "title": "Case 13: Không sửa câu khi học kỳ Công khai",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-TE.A03",
+   "scenario": "REQ04 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ04",
+    "CM-TE.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-TE.TC14",
+   "title": "Case 14: Đồng bộ với menu Bài Tập Về Nhà",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-TE.A03",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-TE.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-TE.TTC01",
+   "title": "Toast Case 1: Thành công",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-TE.A04",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-TE.A04.01"
+   ]
+  },
+  {
+   "id": "CM-TE.TTC02",
+   "title": "Toast Case 2: Lỗi lưu tự động",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-TE.A04",
+   "scenario": "EX04 / Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-TE.EX04"
+   ],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-KH-030346",
+   "text": "trang-thai “Học kỳ / Kiểm tra / Generate · Lỗi” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CD-KH-030346",
+   "text": "loại trang-thai, màn cha CD-KH-030300 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-KH-030346",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-KH-030350",
+   "text": "trang-thai “Học kỳ / Kiểm tra / Generate · Lỗi (tab Chọn kiến thức & kỹ năng)” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CD-KH-030350",
+   "text": "loại trang-thai, màn cha CD-KH-030300 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-KH-030350",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "CM-TE.TTC01",
+   "text": "testcase không ghi REQ/EX/Flow"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "course_management/semester/test/test.md",
+   "prefix": "CM-TE",
+   "title": "Học Kỳ - Tab Kiểm tra"
+  }
+ ]
+}

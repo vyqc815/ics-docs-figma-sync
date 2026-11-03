@@ -267,7 +267,8 @@ def build(cluster, args):
     out = {"cluster": cluster["name"], "title": cluster["title"], "figmaPrefix": figma_prefix, "requirements": [], "screens": screens, "regions": [],
            "exceptions": [], "flows": [], "testcases": [], "issues": []}
     for rel in req_files:
-        build_requirement(rel, pref[rel], texts[rel], screens, specs, out)
+        mapped = [s for s in reqmap.get(rel, {}).get("screens", []) if s in screens and screens[s]["kind"] == "man-chinh"]
+        build_requirement(rel, pref[rel], texts[rel], screens, specs, out, mapped)
 
     # Figma layers no requirement item names: keep them as figma items so nothing on screen goes uncoded
     main_synced = [c.lower() for c, s in screens.items() if s["kind"] == "man-chinh" and s["synced"]]
@@ -344,7 +345,11 @@ def guess_sections(sections, screens, cited):
     return out
 
 
-def build_requirement(rel, P, text, screens, specs, out):
+# A section that cites no screen code is matched against the requirement's own screens, if they are few.
+MAX_FALLBACK_SCREENS = 4
+
+
+def build_requirement(rel, P, text, screens, specs, out, mapped=()):
     sections, reqs, exc, flows, loose = parse_requirement(text, P)
     out["requirements"] += list(reqs.values())
     out["exceptions"] += list(exc.values())
@@ -373,6 +378,8 @@ def build_requirement(rel, P, text, screens, specs, out):
         area = f"A{s['no']:02d}"
         refs = [c for c in expand_refs(s["head"]) if c in screens]
         guessed = [c for c in guesses.get(s["no"], []) if c not in refs]
+        if not refs and not guessed and 0 < len(mapped) <= MAX_FALLBACK_SCREENS:
+            guessed = list(mapped)
         lacks_ui = "UI cần bổ sung" in s["head"] or "cần bổ sung" in s["head"].split("**Giải thích")[0]
         region = {"id": f"{P}.{area}", "name": slug(s["title"]), "title": s["title"],
                   "screens": [c.lower() for c in refs + guessed], "screensGuessed": guessed,
@@ -543,7 +550,7 @@ def md(cluster, R, path):
     for r in R["regions"]:
         L += [f"### `{short(r['id'])}` {esc(r['title'])}", "",
               "Frame: " + (", ".join(f"`{s.upper()}`" for s in r["screens"]) or "chưa có")
-              + (f" (tool đoán theo tên: {', '.join(r['screensGuessed'])})" if r.get("screensGuessed") else "")
+              + (f" (tool đoán:{', '.join(r['screensGuessed'])})" if r.get("screensGuessed") else "")
               + f" · Nguồn nội dung: {SRC[r['content']]}", "",
               "| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |",
               "|---|---|---|---|---|---|---|---|---|"]

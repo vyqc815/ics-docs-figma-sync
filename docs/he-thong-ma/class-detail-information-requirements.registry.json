@@ -1,0 +1,2486 @@
+{
+ "cluster": "class-detail-information-requirements",
+ "title": "Chi tiết lớp học — Tab Thông tin",
+ "figmaPrefix": "M-CDI",
+ "requirements": [
+  {
+   "id": "M-CDI.REQ01",
+   "name": "Thông tin được chỉnh sửa và cơ chế lưu",
+   "text": "Cho phép chỉnh `Mã lớp`, `Link Google Meet`, `Ghi chú`, `Mô tả`, `Loại lớp`; `Ngày bắt đầu` tuân theo REQ12. Không tự lưu; chỉ gửi cập nhật khi bấm `Lưu/Cập nhật`. `Ngày kết thúc` chỉ đọc.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.REQ02",
+   "name": "Mốc khóa Khóa học",
+   "text": "Chỉ được đổi Khóa học trước khi bài học số 1 được mở lần đầu. Mốc đã mở là vĩnh viễn và phải được kiểm tra ở backend.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.REQ03",
+   "name": "Đồng bộ khi đổi Khóa học",
+   "text": "Khóa mới quyết định toàn bộ Bài học, BTVN theo bài, Bài kiểm tra và tổng số buổi. Hệ thống tạo lại lịch đến đủ số buổi mới; cập nhật nguyên tử cùng Khóa học.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.REQ04",
+   "name": "Quyền và điều kiện đổi Trạng thái",
+   "text": "Chỉ `Class Handler` được đổi trạng thái. Bảy trạng thái vận hành được chuyển qua lại, kể cả mở lại từ `Hoàn thành`/`Hủy`; `Xóa` không nằm trong dropdown. Chuyển sang `Khai giảng` cần lịch hợp lệ. Chuyển sang `Đang học` cần Meet, Tiêu chuẩn GV, Quy trình lớp, ít nhất 1 học viên `Đang học` và toàn bộ nhóm này đáp ứng học phí. Có lịch ngay khi tạo hoặc thêm lịch cho lớp `Mới tạo` thì tự chuyển `Khai giảng`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.REQ05",
+   "name": "Loại lớp",
+   "text": "Chỉ có `Lớp chung` và `Lớp 1-1`. Loại lớp là field độc lập với sĩ số; lớp 1-1 có thể có 0, 1 hoặc nhiều học viên. Đổi Loại lớp không tự thêm/xóa học viên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.REQ06",
+   "name": "Validation và toàn vẹn cập nhật",
+   "text": "Backend kiểm tra lại dữ liệu, quyền và phạm vi; không tin field chỉ đọc/cờ điều kiện từ client; một lần cập nhật thất bại không được lưu một phần.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.REQ07",
+   "name": "Xóa lớp",
+   "text": "`Admin` và `Class Handler` đang phụ trách chính được xóa lớp. Phải xác nhận qua hai popup độc lập. Chỉ nút `Xóa lớp` ở popup lần 2 mới gửi request; backend kiểm tra lại quan hệ phụ trách tại thời điểm xóa; xóa mềm bằng trạng thái `Xóa`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.REQ08",
+   "name": "Theo dõi thay đổi",
+   "text": "Ghi nhận tối thiểu lớp, field/trạng thái cũ và mới, người thực hiện và thời điểm cho thao tác chỉnh sửa, đổi khóa, đổi trạng thái và xóa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.REQ09",
+   "name": "Hiển thị an toàn",
+   "text": "Mã lớp, Mô tả và Ghi chú phải được hiển thị như text; không thực thi HTML/script. Lỗi trả về không chứa stack trace, token hoặc định danh kỹ thuật nhạy cảm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.REQ10",
+   "name": "Dữ liệu text và URL",
+   "text": "Không giới hạn số ký tự theo nghiệp vụ đối với Mã lớp, Mô tả và Ghi chú. Mã lớp bắt buộc lưu in hoa và duy nhất toàn hệ thống sau chuẩn hóa, không phân biệt hoa/thường khi kiểm tra trùng. Link Google Meet, nếu có, chỉ chấp nhận URL HTTP(S) hợp lệ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.REQ11",
+   "name": "Lớp không chính thức",
+   "text": "Chỉ `Admin` được chuyển lớp chính thức thành lớp không chính thức. Chuyển đổi là một chiều; sau khi lưu lớp test thì không được bỏ tick để về lớp chính thức. Class Handler chỉ được đổi trạng thái của lớp test, không được tự gán cờ lớp test.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.REQ12",
+   "name": "Ngày và cân bằng lịch",
+   "text": "Ngày bắt đầu chỉ đổi trước khi mở bài 1. Lịch luôn đúng N buổi của khóa học; mọi buổi chèn được tính vào tổng và làm các buổi phía sau tự dời/sinh lại, đánh số lại. Ngày kết thúc luôn bằng ngày buổi N và không cho người dùng sửa.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LOP-040100": {
+   "id": "ADM-LOP-040100",
+   "name": "thong-tin",
+   "title": "Lớp học / Cài đặt / Thông tin",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-040200",
+   "shownOn": "ADM-LOP-040100",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2199:17395",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/cai-dat/thong-tin",
+   "link": "/lop-hoc/cai-dat/thong-tin",
+   "dark": "ADM-LOP-040100-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDI.A01",
+    "M-CDI.A02",
+    "M-CDI.A03",
+    "M-CDI.A04",
+    "M-CDI.A05",
+    "M-CDI.A06",
+    "M-CDI.A07",
+    "M-CDI.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-CDI.A01",
+   "name": "tab-thong-tin-lop-hoc",
+   "title": "Tab Thông tin lớp học",
+   "screens": [
+    "adm-lop-040100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_information_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI.A01.01",
+     "name": "lop-khong-chinh-thuc",
+     "label": "Lớp không chính thức",
+     "spec": "Chỉ `Admin` được chuyển một lớp chính thức thành lớp không chính thức. Đây là chuyển đổi **một chiều**: sau khi đã tick và lưu, không được bỏ tick để chuyển lại thành lớp chính thức. Lớp test bỏ qua điều kiện nghiệp vụ nhưng không bỏ qua phân quyền.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Lớp không chính thức",
+        "figmaId": "2481:114920",
+        "layer": "Lớp không chính thức",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Admin",
+        "figmaId": "3497:50611",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC39"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A01.02",
+     "name": "ma-lop",
+     "label": "Mã lớp",
+     "spec": "Cho phép chỉnh sửa. Bắt buộc lưu bằng chữ in hoa, không được rỗng/chỉ chứa khoảng trắng và không giới hạn số ký tự theo nghiệp vụ. Hệ thống chuẩn hóa sang in hoa rồi kiểm tra trùng trên toàn hệ thống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Mã lớp",
+        "figmaId": "I3004:49982;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7671",
+         "Label": "Mã lớp",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC01",
+      "M-CDI.TC02",
+      "M-CDI.TC03"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A01.03",
+     "name": "link-google-meet",
+     "label": "Link Google Meet",
+     "spec": "Cho phép chỉnh sửa. Nếu có giá trị thì phải là URL `http://` hoặc `https://` hợp lệ. Có thể để trống khi lớp chưa chuyển sang `Đang học`; bắt buộc có URL hợp lệ trước khi lớp chính thức chuyển sang `Đang học`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Link Google Meet",
+        "figmaId": "I3004:49756;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1046:3693",
+         "Label": "Link Google Meet",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "http://"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A01.04",
+     "name": "khoa-hoc",
+     "label": "Khóa học",
+     "spec": "Hiển thị khóa học hiện tại. Cho phép đổi khi bài học đầu tiên chưa từng được mở; bị khóa ngay sau lần đầu mở bài học số 1. Hành vi chi tiết nằm tại khu vực `Dropdown chọn Khóa học`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Khóa học",
+        "figmaId": "I3004:50108;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7627",
+         "Label": "Khoá học",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC01"
+     ],
+     "missingTerms": [
+      "Dropdown chọn Khóa học"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A01.05",
+     "name": "ghi-chu",
+     "label": "Ghi chú",
+     "spec": "Cho phép chỉnh sửa; không bắt buộc. Nội dung phải được lưu và hiển thị an toàn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "2210:14361",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Ghi chú",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC01",
+      "M-CDI.TC02",
+      "M-CDI.TC03"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A01.06",
+     "name": "mo-ta",
+     "label": "Mô tả",
+     "spec": "Cho phép chỉnh sửa; không được rỗng hoặc chỉ chứa khoảng trắng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Mô tả",
+        "figmaId": "2210:14373",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7703",
+         "Label": "Mô tả",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC01",
+      "M-CDI.TC02",
+      "M-CDI.TC03"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A01.07",
+     "name": "ngay-bat-dau",
+     "label": "Ngày bắt đầu",
+     "spec": "Cho phép chỉnh sửa trước khi bài học số 1 được mở lần đầu. Khi lưu ngày mới, hệ thống sinh lại toàn bộ lịch chưa mở theo số buổi của khóa học. Sau khi bài 1 đã mở, field chuyển sang chỉ đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Ngày bắt đầu",
+        "figmaId": "I3004:50122;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2222",
+         "Label": "Ngày bắt đầu",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A01.08",
+     "name": "ngay-ket-thuc",
+     "label": "Ngày kết thúc",
+     "spec": "Field chỉ đọc, người dùng không được chỉnh sửa. Luôn bằng ngày của buổi cuối cùng trong lịch được sinh; tự cập nhật khi lịch thay đổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Ngày kết thúc",
+        "figmaId": "I3004:50041;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2222",
+         "Label": "Ngày kết thúc",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A01.09",
+     "name": "loai-lop",
+     "label": "Loại lớp",
+     "spec": "Cho phép đổi giữa đúng hai giá trị `Lớp chung` và `Lớp 1-1`. Loại lớp không phụ thuộc sĩ số; `Lớp 1-1` có thể có nhiều học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Loại lớp",
+        "figmaId": "I3004:49798;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7617",
+         "Label": "Loại lớp",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC01",
+      "M-CDI.TC02",
+      "M-CDI.TC06",
+      "M-CDI.TC07"
+     ],
+     "missingTerms": [
+      "Lớp chung"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A01.10",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Chỉ `Class Handler` được thay đổi. Các điều kiện chuyển sang `Đang học` được mô tả tại khu vực `Dropdown Trạng thái`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "I3004:50093;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:37119",
+         "Label": "Trạng thái",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC01"
+     ],
+     "missingTerms": [
+      "Class Handler"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A01.11",
+     "name": "luu-cap-nhat",
+     "label": "Lưu/Cập nhật",
+     "spec": "Nút lưu toàn bộ thay đổi đang có trên tab. Không tự lưu theo từng field hoặc khi rời field. Nút chưa xuất hiện trong ảnh tham chiếu nhưng bắt buộc có trong UI triển khai.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC02",
+      "M-CDI.TC03",
+      "M-CDI.TC04"
+     ],
+     "missingTerms": [
+      "Lưu/Cập nhật"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A01.12",
+     "name": "xoa-lop",
+     "label": "Xóa lớp",
+     "spec": "Hiển thị cho `Admin` và `Class Handler` đang là Phụ trách chính của lớp. Mở quy trình xác nhận hai lần. Chưa hoàn tất xác nhận lần hai thì chưa gửi yêu cầu xóa lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Xóa lớp",
+        "figmaId": "3650:46245",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xoá lớp",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Admin",
+        "figmaId": "3497:50611",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI.A02",
+   "name": "dropdown-chon-khoa-hoc",
+   "title": "Dropdown chọn Khóa học",
+   "screens": [
+    "adm-lop-040100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_information_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI.A02.01",
+     "name": "gia-tri-hien-tai",
+     "label": "Giá trị hiện tại",
+     "spec": "Hiển thị đúng khóa học đang gắn với lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Giá trị hiện tại"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A02.02",
+     "name": "o-tim-kiem",
+     "label": "Ô Tìm kiếm",
+     "spec": "Tìm trong danh sách khóa học được phép sử dụng; không tạo khóa học mới và không cho nhập giá trị tự do.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Ô Tìm kiếm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A02.03",
+     "name": "danh-sach-khoa-hoc",
+     "label": "Danh sách khóa học",
+     "spec": "Chỉ hiển thị khóa học đang hoạt động, đã được define và thuộc phạm vi người dùng được phép chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC09"
+     ],
+     "missingTerms": [
+      "Danh sách khóa học"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A02.04",
+     "name": "chon-khoa-hoc-moi",
+     "label": "Chọn khóa học mới",
+     "spec": "Trước lần đầu mở bài 1: cho chọn và lưu. Sau lần đầu mở bài 1: control chỉ đọc/disabled và backend từ chối mọi request đổi khóa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chọn khóa học mới"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI.A03",
+   "name": "nhom-ngay-bat-dau-ngay-ket-thuc-va-lich-",
+   "title": "Nhóm Ngày bắt đầu, Ngày kết thúc và lịch được sinh",
+   "screens": [
+    "adm-lop-040100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_information_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI.A03.01",
+     "name": "ngay-bat-dau",
+     "label": "Ngày bắt đầu",
+     "spec": "Trước khi mở bài 1: cho chọn ngày mới. Sau khi mở bài 1: chỉ đọc và backend từ chối request chỉnh sửa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Ngày bắt đầu",
+        "figmaId": "I3004:50122;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2222",
+         "Label": "Ngày bắt đầu",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC29",
+      "M-CDI.TC30",
+      "M-CDI.TC36"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A03.02",
+     "name": "ngay-ket-thuc",
+     "label": "Ngày kết thúc",
+     "spec": "Luôn chỉ đọc. Bằng ngày của buổi có số thứ tự cuối cùng trong tổng số buổi của khóa học.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Ngày kết thúc",
+        "figmaId": "I3004:50041;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2222",
+         "Label": "Ngày kết thúc",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC29",
+      "M-CDI.TC31",
+      "M-CDI.TC32",
+      "M-CDI.TC33",
+      "M-CDI.TC34",
+      "M-CDI.TC35",
+      "M-CDI.TC36"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A03.03",
+     "name": "lich-co-dinh",
+     "label": "Lịch cố định",
+     "spec": "Là mẫu thứ/giờ dùng để sinh các buổi tự động từ Ngày bắt đầu đến khi đủ số buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lịch cố định"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A03.04",
+     "name": "lich-buoi-duoc-chen",
+     "label": "Lịch/buổi được chèn",
+     "spec": "Mọi buổi học được chèn vào lịch lớp đều được tính vào tổng số buổi khóa học. Hệ thống đưa buổi chèn vào đúng vị trí thời gian rồi tự động dời, sinh lại và đánh số các buổi phía sau để lịch cuối cùng vẫn đủ đúng N buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lịch/buổi được chèn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A03.05",
+     "name": "xoa-huy-mot-buoi-co-tinh-vao-chuong-trin",
+     "label": "Xóa/hủy một buổi có tính vào chương trình",
+     "spec": "Đánh lại số thứ tự các buổi sau và sinh bù một buổi ở khung hợp lệ tiếp theo để tổng số trở lại đúng cấu hình khóa học.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC33"
+     ],
+     "missingTerms": [
+      "Xóa/hủy một buổi có tính vào chương trình"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A03.06",
+     "name": "doi-lich-mot-buoi",
+     "label": "Dời lịch một buổi",
+     "spec": "Chỉ đổi ngày/giờ của chính buổi đó, không tăng/giảm tổng số; sau khi sắp xếp lại phải đánh lại thứ tự theo thời gian nếu cần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Dời lịch một buổi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A03.07",
+     "name": "khung-gio-bi-trung",
+     "label": "Khung giờ bị trùng",
+     "spec": "Không xếp hai buổi của cùng lớp vào cùng thời gian. Bỏ qua khung bị trùng và tiếp tục tìm khung hợp lệ tiếp theo theo lịch cố định.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC35"
+     ],
+     "missingTerms": [
+      "Khung giờ bị trùng"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI.A04",
+   "name": "dropdown-trang-thai",
+   "title": "Dropdown Trạng thái",
+   "screens": [
+    "adm-lop-040100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_information_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI.A04.01",
+     "name": "trang-thai-hien-tai",
+     "label": "Trạng thái hiện tại",
+     "spec": "Luôn hiển thị giá trị mới nhất của lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Trạng thái hiện tại"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A04.02",
+     "name": "danh-sach-trang-thai",
+     "label": "Danh sách trạng thái",
+     "spec": "Các trạng thái vận hành gồm: `Mới tạo`, `Khai giảng`, `Trải nghiệm`, `Đang học`, `Tạm dừng`, `Hoàn thành`, `Hủy`. `Xóa` là trạng thái hệ thống do Admin thực hiện qua nút Xóa lớp, không phải lựa chọn trong dropdown.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC37"
+     ],
+     "missingTerms": [
+      "Danh sách trạng thái",
+      "Mới tạo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A04.03",
+     "name": "trang-thai-dang-hoc",
+     "label": "Trạng thái Đang học",
+     "spec": "Với lớp chính thức, chỉ cho chuyển khi đồng thời có Link Google Meet, đạt Tiêu chuẩn giáo viên, hoàn tất đúng Quy trình lớp, có ít nhất 1 học viên ở trạng thái `Đang học` và **tất cả** học viên ở trạng thái đó đã đáp ứng điều kiện học phí. Cách xác định học phí tuân theo requirement học phí riêng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC18"
+     ],
+     "missingTerms": [
+      "Đang học"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A04.04",
+     "name": "moi-tao-khai-giang-trai-nghiem-dang-hoc-",
+     "label": "Mới tạo, Khai giảng, Trải nghiệm, Đang học, Tạm dừng, Hoàn thành hoặc Hủy",
+     "spec": "Bất kỳ trạng thái vận hành nào khác trong bảy trạng thái | Nếu đích là `Khai giảng` thì lớp phải có lịch dạy hợp lệ. Nếu đích là `Đang học` thì phải đủ điều kiện Meet, Tiêu chuẩn GV, Quy trình lớp và học phí. `Hoàn thành`/`Hủy` vẫn được mở lại sang trạng thái khác như bình thường.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Mới tạo, Khai giảng, Trải nghiệm, Đang học, Tạm dừng, Hoàn thành hoặc Hủy",
+      "Khai giảng"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A04.05",
+     "name": "xoa",
+     "label": "Xóa",
+     "spec": "Không có | Trạng thái hệ thống sau flow xóa của Admin hoặc Phụ trách chính, không đổi qua dropdown.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Xóa",
+        "figmaId": "I3650:46245;1430:10764",
+        "layer": "Button",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xoá lớp",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI.A05",
+   "name": "popup-xac-nhan-xoa-lop-lan-1",
+   "title": "Popup xác nhận xóa lớp — Lần 1",
+   "screens": [
+    "adm-lop-040100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_information_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI.A05.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "`Xóa lớp học?`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tiêu đề",
+      "Xóa lớp học?"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A05.02",
+     "name": "noi-dung",
+     "label": "Nội dung",
+     "spec": "`Bạn đang yêu cầu xóa lớp {Mã lớp}. Hành động này cần được xác nhận thêm một lần.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I3004:49982;3004:58628;1048:1264",
+        "layer": "Tìm nội dung...",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Ô nhập",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Nhập nội dung",
+         "State": "Default",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC22"
+     ],
+     "missingTerms": [
+      "Bạn đang yêu cầu xóa lớp {Mã lớp}. Hành động này cần được xác nhận thêm một lần."
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A05.03",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng popup, giữ nguyên lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Hủy"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A05.04",
+     "name": "tiep-tuc",
+     "label": "Tiếp tục",
+     "spec": "Đóng popup lần 1 và mở popup xác nhận lần 2; chưa thay đổi dữ liệu lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDI.A05",
+       "raw": "mở popup xác nhận lần 2"
+      }
+     ],
+     "testcases": [
+      "M-CDI.TC22",
+      "M-CDI.TC24"
+     ],
+     "missingTerms": [
+      "Tiếp tục"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI.A06",
+   "name": "popup-xac-nhan-xoa-lop-lan-2",
+   "title": "Popup xác nhận xóa lớp — Lần 2",
+   "screens": [
+    "adm-lop-040100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_information_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI.A06.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "`Xác nhận xóa lớp học`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tiêu đề",
+      "Xác nhận xóa lớp học"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A06.02",
+     "name": "noi-dung",
+     "label": "Nội dung",
+     "spec": "`Bạn có chắc chắn muốn xóa lớp {Mã lớp}? Lớp sẽ chuyển sang trạng thái Xóa và không còn được sử dụng cho hoạt động mới.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I3004:49982;3004:58628;1048:1264",
+        "layer": "Tìm nội dung...",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Ô nhập",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Nhập nội dung",
+         "State": "Default",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Bạn có chắc chắn muốn xóa lớp {Mã lớp}? Lớp sẽ chuyển sang trạng thái Xóa và không còn được sử dụng cho hoạt động mới."
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A06.03",
+     "name": "quay-lai",
+     "label": "Quay lại",
+     "spec": "Đóng popup lần 2 và quay lại popup lần 1; không xóa lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC25"
+     ],
+     "missingTerms": [
+      "Quay lại"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A06.04",
+     "name": "xoa-lop",
+     "label": "Xóa lớp",
+     "spec": "Gửi đúng một request xóa lớp sau khi backend kiểm tra lại người dùng là `Admin` hoặc Phụ trách chính của lớp và kiểm tra trạng thái hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Xóa lớp",
+        "figmaId": "3650:46245",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xoá lớp",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Admin",
+        "figmaId": "3497:50611",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDI.TC26"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI.A07",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [
+    "adm-lop-040100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_information_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI.A07.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | Backend xác nhận thao tác thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI.TTC01",
+      "M-CDI.TTC02",
+      "M-CDI.TTC04"
+     ],
+     "missingTerms": [
+      "Thành công",
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A07.02",
+     "name": "thong-tin",
+     "label": "Thông tin",
+     "spec": "`Thông Báo` | Thao tác đã tiếp nhận nhưng dữ liệu cần thời gian đồng bộ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Thông tin",
+        "figmaId": "I2199:19568;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Thông Báo",
+        "figmaId": "3004:49982",
+        "layer": "Molecule/Field",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Molecule/Field",
+        "component": "Molecule/Field",
+        "variant": {
+         "Gợi ý": "Gợi ý hoặc thông báo lỗi",
+         "Có gợi ý": false,
+         "Loại ô": "Ô nhập",
+         "Mật độ": "Gọn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDI.A07.03",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | Dữ liệu/điều kiện cần người dùng kiểm tra.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDI.TTC02"
+     ],
+     "missingTerms": [
+      "Cảnh báo",
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDI.A07.04",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | Backend/network không hoàn tất thao tác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Lỗi",
+        "figmaId": "3004:49982",
+        "layer": "Molecule/Field",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Molecule/Field",
+        "component": "Molecule/Field",
+        "variant": {
+         "Gợi ý": "Gợi ý hoặc thông báo lỗi",
+         "Có gợi ý": false,
+         "Loại ô": "Ô nhập",
+         "Mật độ": "Gọn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-CDI.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-040100"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDI.F01.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "2199:19568",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDI.F01.02",
+     "name": "molecule-field",
+     "label": "Molecule/Field",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Molecule/Field",
+        "figmaId": "3004:50108",
+        "layer": "Molecule/Field",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Field",
+        "component": "Molecule/Field",
+        "variant": {
+         "Gợi ý": "Gợi ý hoặc thông báo lỗi",
+         "Có gợi ý": false,
+         "Loại ô": "Ô nhập",
+         "Mật độ": "Gọn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDI.F01.03",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "3650:46239",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Cập nhật",
+         "Type": "Warning",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDI.F01.04",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040100": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:230175",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Cài đặt"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-CDI.EX01",
+   "text": "Mã lớp hoặc Mô tả rỗng/chỉ chứa khoảng trắng, Mã lớp trùng sau khi chuẩn hóa in hoa, hoặc Link Google Meet không phải URL HTTP(S) hợp lệ → từ chối lưu, báo đúng field và giữ dữ liệu cũ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX02",
+   "text": "Client gửi giá trị `Ngày kết thúc` → bỏ qua/từ chối field này và tính lại từ buổi cuối; không dùng giá trị client để ghi đè.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX04",
+   "text": "Role không có quyền hoặc lớp ngoài phạm vi gửi request cập nhật → backend từ chối và không thay đổi dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX05",
+   "text": "Bài học số 1 đã từng được mở → từ chối mọi request đổi khóa học, kể cả request trực tiếp hoặc UI đang giữ dữ liệu cũ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX06",
+   "text": "Khóa mới thiếu cấu hình số buổi, lịch cố định không còn hợp lệ hoặc không thể sinh/lưu đủ lịch → không đổi khóa; giữ nguyên toàn bộ khóa, số buổi và lịch cũ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX07",
+   "text": "Bài học số 1 được mở trong lúc một người khác đang đổi khóa → tại thời điểm lưu, ưu tiên mốc mở bài và từ chối đổi khóa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX08",
+   "text": "Người không có role `Class Handler` gửi request đổi trạng thái → backend từ chối, kể cả `Admin`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX09",
+   "text": "Lớp chính thức thiếu Meet, Tiêu chuẩn giáo viên, Quy trình lớp, không có học viên ở trạng thái `Đang học`, hoặc có ít nhất một học viên `Đang học` chưa đáp ứng học phí → không chuyển lớp sang `Đang học`; trả đúng toàn bộ điều kiện còn thiếu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX10",
+   "text": "Một điều kiện chuyển trạng thái thay đổi sau khi UI tải nhưng trước khi lưu → backend dùng dữ liệu mới nhất và từ chối nếu không còn đủ điều kiện.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX11",
+   "text": "Xóa lớp thất bại hoặc request bị gửi lặp → không thay đổi một phần; chỉ cho phép một kết quả xóa mềm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX12",
+   "text": "Người dùng không phải `Admin` và không phải `Class Handler` đang phụ trách chính gửi request xóa → backend từ chối; không đổi trạng thái hoặc xóa dữ liệu liên quan.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX13",
+   "text": "Người không có role `Admin` gửi request tick/bỏ tick `Lớp không chính thức` → backend từ chối và giữ nguyên giá trị.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX14",
+   "text": "Bài học số 1 đã mở → không cho đổi Ngày bắt đầu, kể cả request trực tiếp hoặc UI cũ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX15",
+   "text": "Gặp khung giờ trùng khi sinh lịch → bỏ qua khung trùng và tiếp tục theo lịch cố định đến khi đủ N buổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX16",
+   "text": "Không thể sinh/cân bằng đủ N buổi mà không tác động buổi đã mở/hoàn thành → rollback toàn bộ thay đổi lịch.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX17",
+   "text": "Request gửi giá trị ngoài bảy trạng thái vận hành hoặc cố chọn `Xóa` qua dropdown → backend từ chối và giữ nguyên trạng thái nguồn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDI.EX18",
+   "text": "Lớp đã là lớp không chính thức nhưng client gửi request bỏ tick → backend từ chối; lớp test không được chuyển lại thành lớp chính thức.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "M-CDI.FLOW01",
+   "name": "Xem và chỉnh sửa thông tin chung",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ01",
+    "M-CDI.REQ05",
+    "M-CDI.REQ06"
+   ]
+  },
+  {
+   "id": "M-CDI.FLOW02",
+   "name": "Đổi Khóa học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ02",
+    "M-CDI.REQ03"
+   ]
+  },
+  {
+   "id": "M-CDI.FLOW03",
+   "name": "Class Handler đổi Trạng thái",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ04"
+   ]
+  },
+  {
+   "id": "M-CDI.FLOW04",
+   "name": "Xóa lớp với hai lần xác nhận",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ07"
+   ]
+  },
+  {
+   "id": "M-CDI.FLOW05",
+   "name": "Đổi ngày bắt đầu và cân bằng lịch",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ12"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "M-CDI.TC01",
+   "title": "Case 1: Mở tab và hiển thị dữ liệu lớp",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDI.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW01"
+   ],
+   "items": [
+    "M-CDI.A01.02",
+    "M-CDI.A01.04",
+    "M-CDI.A01.05",
+    "M-CDI.A01.06",
+    "M-CDI.A01.09",
+    "M-CDI.A01.10"
+   ]
+  },
+  {
+   "id": "M-CDI.TC02",
+   "title": "Case 2: Chỉnh sửa và lưu các field thông tin chung",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDI.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW01"
+   ],
+   "items": [
+    "M-CDI.A01.02",
+    "M-CDI.A01.05",
+    "M-CDI.A01.06",
+    "M-CDI.A01.09",
+    "M-CDI.A01.11"
+   ]
+  },
+  {
+   "id": "M-CDI.TC03",
+   "title": "Case 3: Validation Mã lớp, Mô tả và URL Meet",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A01",
+   "scenario": "EX01 / REQ06 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ06",
+    "M-CDI.REQ10"
+   ],
+   "exceptions": [
+    "M-CDI.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDI.A01.02",
+    "M-CDI.A01.05",
+    "M-CDI.A01.06",
+    "M-CDI.A01.11"
+   ]
+  },
+  {
+   "id": "M-CDI.TC04",
+   "title": "Case 4: Admin chuyển lớp chính thức thành lớp không chính thức",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A01",
+   "scenario": "Flow 1 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW01"
+   ],
+   "items": [
+    "M-CDI.A01.11"
+   ]
+  },
+  {
+   "id": "M-CDI.TC05",
+   "title": "Case 5: Chặn role khác thay đổi Lớp không chính thức",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A01",
+   "scenario": "EX13 / REQ11 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ11"
+   ],
+   "exceptions": [
+    "M-CDI.EX13"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC39",
+   "title": "Case 39: Không cho chuyển lớp không chính thức về lớp chính thức",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A01",
+   "scenario": "EX18 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ11"
+   ],
+   "exceptions": [
+    "M-CDI.EX18"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDI.A01.01"
+   ]
+  },
+  {
+   "id": "M-CDI.TC06",
+   "title": "Case 6: Đổi Loại lớp thành Lớp 1-1 hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A01",
+   "scenario": "Flow 1 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW01"
+   ],
+   "items": [
+    "M-CDI.A01.09"
+   ]
+  },
+  {
+   "id": "M-CDI.TC07",
+   "title": "Case 7: Đổi thành Lớp 1-1 khi lớp có nhiều học viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A01",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI.A01.09"
+   ]
+  },
+  {
+   "id": "M-CDI.TC08",
+   "title": "Case 8: Role không có quyền gửi request chỉnh sửa trực tiếp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A01",
+   "scenario": "EX04 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "M-CDI.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC09",
+   "title": "Case 9: Mở dropdown và tìm khóa học",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDI.A02",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW02"
+   ],
+   "items": [
+    "M-CDI.A02.03"
+   ]
+  },
+  {
+   "id": "M-CDI.TC10",
+   "title": "Case 10: Đổi khóa học trước khi mở bài đầu tiên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A02",
+   "scenario": "Flow 2 / REQ02 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ02",
+    "M-CDI.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC11",
+   "title": "Case 11: Đổi khóa từ 24 buổi sang 30 buổi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A02",
+   "scenario": "Flow 2 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC12",
+   "title": "Case 12: Khóa đổi khóa học ngay khi mở bài đầu tiên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A02",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC13",
+   "title": "Case 13: Từ chối request đổi khóa sau khi bài 1 đã mở",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A02",
+   "scenario": "EX05 / REQ02 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ02"
+   ],
+   "exceptions": [
+    "M-CDI.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC14",
+   "title": "Case 14: Lỗi khi sinh lịch mới",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A02",
+   "scenario": "EX06 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ03"
+   ],
+   "exceptions": [
+    "M-CDI.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC15",
+   "title": "Case 15: Bài 1 được mở trong lúc người khác đang đổi khóa",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A02",
+   "scenario": "EX07 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ02"
+   ],
+   "exceptions": [
+    "M-CDI.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC29",
+   "title": "Case 29: Đổi Ngày bắt đầu trước khi mở bài 1",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A03",
+   "scenario": "Flow 5 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW05"
+   ],
+   "items": [
+    "M-CDI.A03.01",
+    "M-CDI.A03.02"
+   ]
+  },
+  {
+   "id": "M-CDI.TC30",
+   "title": "Case 30: Khóa Ngày bắt đầu sau khi mở bài 1",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A03",
+   "scenario": "EX14 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ12"
+   ],
+   "exceptions": [
+    "M-CDI.EX14"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDI.A03.01"
+   ]
+  },
+  {
+   "id": "M-CDI.TC31",
+   "title": "Case 31: Ngày kết thúc luôn bằng ngày buổi cuối",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A03",
+   "scenario": "REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI.A03.02"
+   ]
+  },
+  {
+   "id": "M-CDI.TC32",
+   "title": "Case 32: Chèn một buổi và tự điều chỉnh các lịch phía sau",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A03",
+   "scenario": "Flow 5 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW05"
+   ],
+   "items": [
+    "M-CDI.A03.02"
+   ]
+  },
+  {
+   "id": "M-CDI.TC33",
+   "title": "Case 33: Xóa hoặc hủy một buổi có tính vào chương trình",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A03",
+   "scenario": "Flow 5 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW05"
+   ],
+   "items": [
+    "M-CDI.A03.02",
+    "M-CDI.A03.05"
+   ]
+  },
+  {
+   "id": "M-CDI.TC34",
+   "title": "Case 34: Dời một buổi không làm đổi tổng số",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A03",
+   "scenario": "REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI.A03.02"
+   ]
+  },
+  {
+   "id": "M-CDI.TC35",
+   "title": "Case 35: Bỏ qua khung giờ bị trùng khi sinh lịch",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A03",
+   "scenario": "EX15 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ12"
+   ],
+   "exceptions": [
+    "M-CDI.EX15"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDI.A03.02",
+    "M-CDI.A03.07"
+   ]
+  },
+  {
+   "id": "M-CDI.TC36",
+   "title": "Case 36: Không thể cân bằng lịch",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A03",
+   "scenario": "EX16 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ12"
+   ],
+   "exceptions": [
+    "M-CDI.EX16"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDI.A03.01",
+    "M-CDI.A03.02"
+   ]
+  },
+  {
+   "id": "M-CDI.TC16",
+   "title": "Case 16: Class Handler đổi trạng thái hợp lệ",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDI.A04",
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC17",
+   "title": "Case 17: Chỉ Class Handler được đổi trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A04",
+   "scenario": "EX08 / REQ04 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ04"
+   ],
+   "exceptions": [
+    "M-CDI.EX08"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC18",
+   "title": "Case 18: Chuyển lớp chính thức sang Đang học khi đủ điều kiện",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A04",
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW03"
+   ],
+   "items": [
+    "M-CDI.A04.03"
+   ]
+  },
+  {
+   "id": "M-CDI.TC19",
+   "title": "Case 19: Chặn Đang học khi thiếu một hoặc nhiều điều kiện",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A04",
+   "scenario": "EX09 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ04"
+   ],
+   "exceptions": [
+    "M-CDI.EX09"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC20",
+   "title": "Case 20: Lớp không chính thức đổi tự do trạng thái nhưng không bỏ qua quyền",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A04",
+   "scenario": "REQ04 / REQ11 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ04",
+    "M-CDI.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC21",
+   "title": "Case 21: Điều kiện thay đổi trong lúc xác nhận trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A04",
+   "scenario": "EX10 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ04"
+   ],
+   "exceptions": [
+    "M-CDI.EX10"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC37",
+   "title": "Case 37: Hiển thị trạng thái đích và mở lại trạng thái kết thúc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A04",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI.A04.02"
+   ]
+  },
+  {
+   "id": "M-CDI.TC38",
+   "title": "Case 38: Chặn trạng thái không thuộc danh sách vận hành",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A04",
+   "scenario": "EX17 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ04"
+   ],
+   "exceptions": [
+    "M-CDI.EX17"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC40",
+   "title": "Case 40: Tự chuyển Mới tạo sang Khai giảng khi thêm lịch",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A04",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC22",
+   "title": "Case 22: Mở popup xóa lần 1",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A05",
+   "scenario": "Flow 4 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW04"
+   ],
+   "items": [
+    "M-CDI.A05.02",
+    "M-CDI.A05.04"
+   ]
+  },
+  {
+   "id": "M-CDI.TC23",
+   "title": "Case 23: Hủy tại lần xác nhận thứ nhất",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A05",
+   "scenario": "Flow 4 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC24",
+   "title": "Case 24: Tiếp tục sang lần xác nhận thứ hai",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A05",
+   "scenario": "Flow 4 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW04"
+   ],
+   "items": [
+    "M-CDI.A05.04"
+   ]
+  },
+  {
+   "id": "M-CDI.TC25",
+   "title": "Case 25: Quay lại tại lần xác nhận thứ hai",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A06",
+   "scenario": "Flow 4 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW04"
+   ],
+   "items": [
+    "M-CDI.A06.03"
+   ]
+  },
+  {
+   "id": "M-CDI.TC26",
+   "title": "Case 26: Xóa lớp sau hai lần xác nhận",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDI.A06",
+   "scenario": "Flow 4 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDI.FLOW04"
+   ],
+   "items": [
+    "M-CDI.A06.04"
+   ]
+  },
+  {
+   "id": "M-CDI.TC27",
+   "title": "Case 27: Request xóa thất bại hoặc được gửi lặp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A06",
+   "scenario": "EX11 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDI.REQ07"
+   ],
+   "exceptions": [
+    "M-CDI.EX11"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TC28",
+   "title": "Case 28: Backend từ chối Class Handler không phụ trách xóa lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A06",
+   "scenario": "EX12 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "M-CDI.EX12"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TTC01",
+   "title": "Toast Case 1: Thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A07",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI.A07.01"
+   ]
+  },
+  {
+   "id": "M-CDI.TTC02",
+   "title": "Toast Case 2: Cảnh báo",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A07",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI.A07.01",
+    "M-CDI.A07.03"
+   ]
+  },
+  {
+   "id": "M-CDI.TTC03",
+   "title": "Toast Case 3: Lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDI.A07",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDI.TTC04",
+   "title": "Toast Case 4: Thông tin, đóng và chống lặp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDI.A07",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDI.A07.01"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDI.TTC01",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDI.TTC02",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDI.TTC03",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDI.TTC04",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDI.REQ08",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDI.REQ09",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDI.EX02",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/class_management/class_detail_information_requirements.md",
+   "prefix": "M-CDI",
+   "title": "Chi tiết lớp học — Tab Thông tin"
+  }
+ ]
+}

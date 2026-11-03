@@ -1,0 +1,334 @@
+{
+ "cluster": "chua-co-req-adm-task-01",
+ "title": "ADM-TASK-01xx (chưa có requirement)",
+ "figmaPrefix": "ADM-TASK-01",
+ "requirements": [],
+ "screens": {
+  "ADM-TASK-010000": {
+   "id": "ADM-TASK-010000",
+   "name": "task-tuan",
+   "title": "Task tuần",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "ADM-TASK-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4343:79261",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/task-tuan",
+   "link": "/task-tuan",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "ADM-TASK-01.F01",
+    "ADM-TASK-01.F02",
+    "ADM-TASK-01.F03"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "ADM-TASK-01.F01",
+   "name": "header",
+   "title": "Header",
+   "screens": [
+    "adm-task-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-TASK-01.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-task-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "4343:79844",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-TASK-01.F02",
+   "name": "sidebar-menu-admin",
+   "title": "Sidebar · MENU - ADMIN",
+   "screens": [
+    "adm-task-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-TASK-01.F02.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-task-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:237794",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": "Sidebar · MENU - ADMIN",
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Task tuần"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ADM-TASK-01.F03",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-task-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-TASK-01.F03.01",
+     "name": "them-nguoi-phu-trach",
+     "label": "Thêm người phụ trách",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-task-010000": [
+       {
+        "term": "Thêm người phụ trách",
+        "figmaId": "4343:79404",
+        "layer": "Thêm người phụ trách",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thêm người phụ trách",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Add Circle Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TASK-01.F03.02",
+     "name": "avatar-name",
+     "label": "AVATAR + Name",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-task-010000": [
+       {
+        "term": "AVATAR + Name",
+        "figmaId": "4343:79406",
+        "layer": "AVATAR + Name",
+        "confidence": "cao",
+        "region": null,
+        "owner": "AVATAR + Name",
+        "component": "AVATAR + Name",
+        "variant": {
+         "Property 1": "AVATAR + Name"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TASK-01.F03.03",
+     "name": "global-progress-bar",
+     "label": "Global Progress Bar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-task-010000": [
+       {
+        "term": "Global Progress Bar",
+        "figmaId": "4343:82224",
+        "layer": "Global Progress Bar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Global Progress Bar",
+        "component": "Global Progress Bar",
+        "variant": {
+         "Property 1": "Progress ngang ( Không % )"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TASK-01.F03.04",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-task-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "4343:82226",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0/2",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TASK-01.F03.05",
+     "name": "filter-tuan-nay",
+     "label": "Filter · Tuần này",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-task-010000": [
+       {
+        "term": "Filter · Tuần này",
+        "figmaId": "4343:79504",
+        "layer": "Filter · Tuần này",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Tuần này",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Tuần này",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TASK-01.F03.06",
+     "name": "percent",
+     "label": "PERCENT %",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-task-010000": [
+       {
+        "term": "PERCENT %",
+        "figmaId": "4343:82847",
+        "layer": "PERCENT %",
+        "confidence": "cao",
+        "region": null,
+        "owner": "PERCENT %",
+        "component": "PERCENT %",
+        "variant": {
+         "Property 1": "ĐN 1"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-TASK-010000",
+   "text": "man-chinh “Task tuần” chưa được requirement nhắc tới"
+  }
+ ]
+}

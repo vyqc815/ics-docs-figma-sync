@@ -1,0 +1,3542 @@
+{
+ "cluster": "class-detail-overview-requirements",
+ "title": "Chi tiết lớp học — Menu Tổng quan",
+ "figmaPrefix": "M-CDO2",
+ "requirements": [
+  {
+   "id": "M-CDO2.REQ01",
+   "name": "",
+   "text": "Admin/Class Handler/Support/Teacher/Sale được xem theo phạm vi; Teacher không có ON/OFF hoặc payload học phí/ghi chú cài đặt qua Tổng quan.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ02",
+   "name": "",
+   "text": "Sĩ số = (Đang học + Dự thính) / tất cả 7 trạng thái kể cả Xóa; Đi học/BTVN dùng công thức đã chốt; thời gian trung bình của tổng thời gian từng học viên–bài; Tiêu chuẩn lớp–giáo viên; Đã chấm và sửa bài = số bài BTVN + Kiểm tra đã bấm nút Đã Chấm và Sửa Bài Trên Lớp, mỗi bài một lần; không điều hướng các thẻ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ03",
+   "name": "",
+   "text": "Trung bình trực tiếp bài đã chấm, tính KT và BTVN riêng, giữ bài người rời/xóa, loại Chưa nộp/Chưa chấm khỏi cả tử/mẫu, giữ điểm 0 đã chấm, làm tròn kết quả cuối 1 chữ số thập phân.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ04",
+   "name": "",
+   "text": "Mỗi điểm chart theo bài, không lũy kế; chart học viên chỉ tới bài người đó đã học, không hiển thị bài phía sau; đúng phạm vi lớp/học viên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ05",
+   "name": "",
+   "text": "Mặc định OFF; ON hiển thị học phí và ghi chú cài đặt, OFF ẩn; Teacher không có control; không mở rộng tab Hóa đơn/quyền sửa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ06",
+   "name": "",
+   "text": "Toàn bộ danh sách đủ mọi trạng thái kể cả Xóa, không load-more/phân trang; chọn người đầu tiên; click thẻ cập nhật vùng trái; > vào detail; search tên không lọc thống kê lớp. Chấm đỏ số lịch hẹn chưa hoàn tất (Mới, Chưa xử lý, Đang xử lý) của học viên theo phạm vi xem lịch hẹn, chỉ Admin/Class Handler/Support; hover mở popup Danh sách lịch hẹn chỉ đọc; Teacher và Sale không thấy.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ07",
+   "name": "",
+   "text": "Ghi chú cài đặt cùng nguồn ở Cài đặt, chỉ xem bất thường/lịch sử/Copy với mọi role ở Tổng quan, không tự sinh cảnh báo.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ08",
+   "name": "",
+   "text": "Đánh giá nguồn chưa có công thức, không điều hướng; F đỏ/D nâu/E cam; bài gần nhất đã được điểm danh (bỏ bài Chưa điểm danh): thẻ học viên tối đa 3 bài, vùng trái tối đa 6 bài; bốn icon `Class Session Status` theo đi học (Có mặt, Vào trễ, Ra sớm, Vào trễ & Ra sớm) / vắng (Nghỉ CP, Nghỉ KP) và đã nộp / chưa nộp BTVN; hover xem tên tổ hợp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ09",
+   "name": "",
+   "text": "Toàn bộ bảng bài theo số thứ tự tăng dần, không load-more/phân trang; bảy enum điểm danh hiển thị bằng bộ icon `Trạng thái đi học` kèm tooltip; điểm từng dòng là BTVN; tag thời điểm giáo viên mở bài `HH:mm - dd/MM/yyyy` phía trên tên bài, giống nhau cho mọi học viên, bài chưa mở không có tag; icon ghi chú xám không click; chỉ đọc.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ10",
+   "name": "",
+   "text": "Popup hai vùng ghi chú giáo viên theo bài; Admin/Class Handler/Sale/Support và Teacher của lớp xem cả hai (Teacher gồm ghi chú của giáo viên khác trong lớp); không sửa ở Tổng quan, Teacher nhập ghi chú tại function role Giáo viên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ11",
+   "name": "",
+   "text": "i mở chín phần thời gian trên app, HH:mm:ss, không gộp flashcard, không thay 0 cho lỗi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ12",
+   "name": "",
+   "text": "Loading/empty/error rõ ràng, chống stale response, text an toàn, không Toast CRUD cho thao tác đọc; ⌃ chỉ thu gọn/mở vùng thống kê Tổng quan.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.REQ13",
+   "name": "Tooltip nút Back",
+   "text": "Hover mũi tên/mã lớp hiển thị Thông tin gồm Buổi học, toàn bộ Lịch học, SP và nhãn chính, CSKH, Giáo viên, Khai giảng DD/MM/YYYY của đúng lớp. Chưa phân công hiển thị (Chưa có); rời hover thì ẩn; click vẫn quay về Danh sách lớp. Chỉ đọc, không phụ thuộc ON/OFF hoặc học viên được chọn; cùng quyền xem Tổng quan.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LOP-020100": {
+   "id": "ADM-LOP-020100",
+   "name": "tong-quan",
+   "title": "Chi tiết lớp học / Tổng quan",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-020300",
+   "shownOn": "ADM-LOP-020100",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "769:30963",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop-hoc/tong-quan",
+   "link": "/chi-tiet-lop-hoc/tong-quan",
+   "dark": "ADM-LOP-020100-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDO2.A01",
+    "M-CDO2.A02",
+    "M-CDO2.A03",
+    "M-CDO2.A04",
+    "M-CDO2.A05",
+    "M-CDO2.A06",
+    "M-CDO2.A07",
+    "M-CDO2.A08",
+    "M-CDO2.A09",
+    "M-CDO2.A10",
+    "M-CDO2.A11",
+    "M-CDO2.A12",
+    "M-CDO2.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-CDO2.A01",
+   "name": "man-tong-quan-va-phan-quyen",
+   "title": "Màn Tổng quan và phân quyền",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO2.A01.01",
+     "name": "tong-quan-lop",
+     "label": "Tổng Quan Lớp",
+     "spec": "Dữ liệu của đúng class_id đang mở.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Tổng Quan Lớp",
+        "figmaId": "3266:54294",
+        "layer": "Tổng Quan Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC03"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A01.02",
+     "name": "nut-back-ma-lop",
+     "label": "Nút Back / mã lớp",
+     "spec": "Hover hiển thị tooltip Thông tin lớp; click quay về Danh sách lớp. Chi tiết ở UI Nút Back bên dưới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nút Back / mã lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A01.03",
+     "name": "thong-ke-phia-tren",
+     "label": "Thống kê phía trên",
+     "spec": "Các chỉ số toàn lớp; không đổi thành chỉ số của học viên đang chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thống kê phía trên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A01.04",
+     "name": "vung-ben-trai",
+     "label": "Vùng bên trái",
+     "spec": "Tên, chỉ số và bảng bài học của học viên đang chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Vùng bên trái"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A01.05",
+     "name": "danh-sach-ben-phai",
+     "label": "Danh sách bên phải",
+     "spec": "Các học viên của lớp, trạng thái quan hệ lớp, tag, chấm đỏ số lịch hẹn (Admin/Class Handler/Support), tên, mã, email, bài gần đây, đánh giá và dấu >.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Danh sách bên phải"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A01.06",
+     "name": "search",
+     "label": "Search",
+     "spec": "Tìm theo tên học viên; không kế thừa rule không-search của tab Học viên trong Cài đặt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Search",
+        "figmaId": "3266:54252",
+        "layer": "Atom/Input",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC45"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A01.07",
+     "name": "cong-tac-on-off",
+     "label": "Công tắc ON/OFF",
+     "spec": "Admin/Class Handler/Support/Sale sử dụng; Teacher không có control này.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Công tắc ON/OFF"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A01.08",
+     "name": "dau-canh-search",
+     "label": "Dấu ⌃ cạnh search",
+     "spec": "Bấm để thu gọn vùng thống kê Tổng quan toàn lớp phía trên; bấm lại mở rộng. Không thu gọn danh sách hoặc vùng chi tiết học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Dấu ⌃ cạnh search"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.A02",
+   "name": "nut-back-va-tooltip-thong-tin-lop",
+   "title": "Nút Back và tooltip thông tin lớp",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO2.A02.01",
+     "name": "nut-back-ma-lop",
+     "label": "Nút Back / mã lớp",
+     "spec": "Hover vùng nút gồm mũi tên và mã lớp để xem tooltip. Click nút quay về Danh sách lớp; hover chỉ hiển thị thông tin, không điều hướng. Mã lớp lấy từ lớp đang mở, ví dụ `IT_TRI2026`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nút Back / mã lớp",
+      "IT_TRI2026"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A02.02",
+     "name": "tooltip",
+     "label": "Tooltip",
+     "spec": "Khung nền tối, chữ sáng, bo góc và hiển thị ngay dưới nút như ảnh. Tiêu đề `Thông tin:`; các thông tin theo thứ tự Buổi học, Lịch học, SP, CSKH, Giáo viên, Khai giảng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC55",
+      "M-CDO2.TC56",
+      "M-CDO2.TC58"
+     ],
+     "missingTerms": [
+      "Tooltip",
+      "Thông tin:"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A02.03",
+     "name": "buoi-hoc",
+     "label": "Buổi học",
+     "spec": "Số buổi dạng `đã thực hiện/tổng số buổi`, cùng nguồn tiến độ của lớp tại Danh sách lớp, ví dụ `8/12`. Giữ quy tắc xác định buổi đã thực hiện của nguồn; không lấy sĩ số hoặc số học viên nộp BTVN thay số buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Buổi học",
+      "đã thực hiện/tổng số buổi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A02.04",
+     "name": "lich-hoc",
+     "label": "Lịch học",
+     "spec": "Hiển thị đầy đủ lịch học của lớp theo thứ và giờ `HH:mm-HH:mm`. Có thể nhóm các thứ cùng khung giờ như `T3-T5-T7 (09:00-09:10)`; các lịch khác xuống dòng riêng như `T4 (09:00-09:20)` và `T6 (13:00-13:20)`. Không cắt chỉ còn lịch đầu tiên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lịch học",
+      "HH:mm-HH:mm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A02.05",
+     "name": "sp",
+     "label": "SP",
+     "spec": "Hiển thị tên Support được gán cho lớp; người phụ trách chính có nhãn `(chính)` như `Long SP (chính)`. Nếu có nhiều Support, hiển thị đầy đủ người được gán và đúng nhãn chính từ nguồn phân công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "(chính)",
+        "figmaId": "3266:46269",
+        "layer": "Thẻ chỉ số",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "12/12",
+         "Có phần thêm": false,
+         "Tiêu đề": "Sỉ số",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ nhấn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "SP"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A02.06",
+     "name": "cskh",
+     "label": "CSKH",
+     "spec": "Hiển thị nhân sự CSKH của lớp; chưa được gán thì hiển thị `(Chưa có)` như ảnh.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "CSKH",
+        "figmaId": "I4915:224073;4901:206374",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "769:35767",
+         "Label": "CSKH",
+         "Type": "Menu phụ",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC57"
+     ],
+     "missingTerms": [
+      "(Chưa có)"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A02.07",
+     "name": "giao-vien",
+     "label": "Giáo viên",
+     "spec": "Hiển thị tên giáo viên được gán cho lớp từ nguồn phân công; ví dụ `gv01`. Khi có nhiều giáo viên, hiển thị đầy đủ danh sách.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Giáo viên",
+      "gv01"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A02.08",
+     "name": "khai-giang",
+     "label": "Khai giảng",
+     "spec": "Hiển thị ngày khai giảng của lớp theo `DD/MM/YYYY`, ví dụ `27/01/2026`; không dùng ngày tạo lớp thay ngày khai giảng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC57"
+     ],
+     "missingTerms": [
+      "Khai giảng",
+      "DD/MM/YYYY"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.A03",
+   "name": "thong-ke-hoc-tap-trung-binh-cua-lop",
+   "title": "Thống kê học tập trung bình của lớp",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO2.A03.01",
+     "name": "si-so",
+     "label": "Sĩ số",
+     "spec": "Tử số = số học viên Đang học + Dự thính; mẫu số = tất cả học viên của lớp thuộc đủ 7 trạng thái: Đang học, Dự thính, Hoàn thành, Nghỉ học, Rời lớp, Chỉ xem, Xóa. Dấu / phân cách hai số, không đổi sang %.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Sĩ số",
+        "figmaId": "3266:46269",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "12/12",
+         "Có phần thêm": false,
+         "Tiêu đề": "Sỉ số",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ nhấn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC04",
+      "M-CDO2.TC41"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A03.02",
+     "name": "di-hoc",
+     "label": "Đi học",
+     "spec": "Trung bình cộng tỷ lệ đi học của học viên có dữ liệu trong lớp, dùng cùng công thức mức lớp đã chốt tại Danh sách lớp. Không có dữ liệu thì để trống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Đi học",
+        "figmaId": "3266:46270",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "85%",
+         "Có phần thêm": false,
+         "Tiêu đề": "Đi học",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ nhấn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC09"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A03.03",
+     "name": "btvn",
+     "label": "BTVN",
+     "spec": "Trung bình cộng tỷ lệ làm BTVN của học viên có dữ liệu trong lớp, dùng cùng công thức mức lớp đã chốt tại Danh sách lớp. Không có dữ liệu thì để trống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "BTVN",
+        "figmaId": "3266:46271",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "91%",
+         "Có phần thêm": false,
+         "Tiêu đề": "BTVN",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ nhấn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC09",
+      "M-CDO2.TC42"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A03.04",
+     "name": "diem-kt",
+     "label": "Điểm KT",
+     "spec": "Cộng điểm các bài kiểm tra đã chấm của học viên trong lớp rồi chia số bài đã chấm. Giữ bài của học viên trước đó dù đã Rời lớp/Xóa. Làm tròn kết quả đến 1 chữ số thập phân.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Điểm KT",
+        "figmaId": "3266:46272",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "0",
+         "Có phần thêm": false,
+         "Tiêu đề": "Điểm kT",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ nhấn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A03.05",
+     "name": "diem-btvn",
+     "label": "Điểm BTVN",
+     "spec": "Cộng điểm các bài BTVN đã chấm rồi chia số bài BTVN đã chấm, kể cả bài của học viên đã Rời lớp/Xóa. Tính riêng với KT, làm tròn đến 1 chữ số thập phân.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Điểm BTVN",
+        "figmaId": "3266:46274",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "9.5",
+         "Có phần thêm": false,
+         "Tiêu đề": "Điểm bTVN",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ nhấn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A03.06",
+     "name": "thoi-gian-hoc",
+     "label": "Thời gian học",
+     "spec": "Lấy trung bình tổng thời gian từng bài học của từng học viên trên app: cộng các tổng thời gian học viên–bài, chia số bản ghi học viên–bài trong tập tính. Không lấy trung bình các trung bình học viên, không lấy tổng lịch dạy; hiển thị HH:mm:ss.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Thời gian học",
+        "figmaId": "3266:46275",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "00:09:40",
+         "Có phần thêm": false,
+         "Tiêu đề": "Thời gian học",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ nhấn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A03.07",
+     "name": "tieu-chuan",
+     "label": "Tiêu chuẩn",
+     "spec": "% hoàn thành tiêu chuẩn lớp–giáo viên, lấy dữ liệu từ function Tiêu chuẩn; không tự suy ra từ Đi học/BTVN/điểm. Chưa có icon chính thức, không điều hướng khi click.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Tiêu chuẩn",
+        "figmaId": "3266:54002",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "0",
+         "Có phần thêm": false,
+         "Tiêu đề": "Tiêu chuẩn",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC09"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A03.08",
+     "name": "da-cham-va-sua-bai",
+     "label": "Đã chấm và sửa bài",
+     "spec": "Số bài **BTVN và Kiểm tra** của lớp đã có ít nhất một lần giáo viên bấm `Đã Chấm và Sửa Bài Trên Lớp` (xem [Giảng dạy — role Giáo viên](../../teacher_role/class/class_teaching_requirements.md)). Mỗi bài tính một lần; bấm lại không tăng. Chưa có icon chính thức, không điều hướng khi click.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Đã chấm và sửa bài",
+        "figmaId": "3266:54016",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "0",
+         "Có phần thêm": false,
+         "Tiêu đề": "Đã chấm và sửa bài",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC51"
+     ],
+     "missingTerms": [
+      "Đã Chấm và Sửa Bài Trên Lớp"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A03.09",
+     "name": "danh-gia-lop",
+     "label": "Đánh giá lớp",
+     "spec": "Badge theo giá trị được nguồn dữ liệu cung cấp; chưa có công thức tự tính, không click để điều hướng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đánh giá lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.A04",
+   "name": "bieu-do-theo-bai-hoc",
+   "title": "Biểu đồ theo bài học",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO2.A04.01",
+     "name": "truc-bai-hoc",
+     "label": "Trục bài học",
+     "spec": "Theo thứ tự bài học, không theo ngày/tuần lịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Trục bài học"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A04.02",
+     "name": "gia-tri",
+     "label": "Giá trị",
+     "spec": "Mỗi điểm là dữ liệu của bài học tương ứng, không phải trung bình lũy kế qua các bài trước. Đúng phạm vi: biểu đồ lớp ở trên; biểu đồ học viên đang chọn ở bên trái.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Giá trị",
+        "figmaId": "4056:93238",
+        "layer": "Giá trị",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC48"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A04.03",
+     "name": "gioi-han-chart-hoc-vien",
+     "label": "Giới hạn chart học viên",
+     "spec": "Lấy theo bài học của học viên đang chọn; học tới bài nào thì chart hiển thị tới bài đó. Không vẽ các bài phía sau chỉ vì lớp đã mở hoặc học viên khác đã học.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Giới hạn chart học viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A04.04",
+     "name": "duong-vung-cam",
+     "label": "Đường/vùng cam",
+     "spec": "Dùng dữ liệu thực tế; không vẽ đường trang trí giống ảnh khi dữ liệu khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đường/vùng cam"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A04.05",
+     "name": "tooltip",
+     "label": "Tooltip",
+     "spec": "Nội dung/khả năng hover chưa chốt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tooltip"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.A05",
+   "name": "danh-sach-tim-kiem-va-chon-hoc-vien",
+   "title": "Danh sách, tìm kiếm và chọn học viên",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO2.A05.01",
+     "name": "the-hoc-vien",
+     "label": "Thẻ học viên",
+     "spec": "Tag, icon trạng thái quan hệ lớp, chấm đỏ số lịch hẹn, tên, mã, email, 3 bài gần nhất, badge đánh giá và >.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thẻ học viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A05.02",
+     "name": "cham-do-lich-hen",
+     "label": "Chấm đỏ lịch hẹn",
+     "spec": "Chấm đỏ có số ngay trước tên học viên = số lịch hẹn loại đối tượng Học viên của học viên đó có trạng thái `Mới`, `Chưa xử lý`, `Đang xử lý` mà người xem được thấy theo [requirement Lịch hẹn](../../appointment_requirement/appointment_requirements.md): Admin thấy toàn bộ; Class Handler, Support thấy lịch hẹn mình là Người phụ trách hoặc Theo dõi. Bằng 0 thì ẩn. Chỉ Admin, Class Handler, Support thấy; Teacher và Sale không thấy.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chấm đỏ lịch hẹn",
+      "Mới"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A05.03",
+     "name": "hover-cham-do",
+     "label": "Hover chấm đỏ",
+     "spec": "Mở popup `Danh sách lịch hẹn` chỉ đọc của học viên, cùng cột và quy tắc với popup Danh sách lịch hẹn ở [Danh sách giáo viên](../teacher_management/teacher_management_requirements.md): Thời gian, Nội dung, Ghi chú, Người phụ trách, Người theo dõi, Đối tượng, Trạng thái; sắp theo thời gian tăng dần; số dòng bằng số trên chấm đỏ. Không chọn học viên, không điều hướng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDO2.A05",
+       "raw": "Mở popup `Danh sách lịch hẹn` chỉ đọc của học viên"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Hover chấm đỏ",
+      "Danh sách lịch hẹn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A05.04",
+     "name": "the-dang-chon",
+     "label": "Thẻ đang chọn",
+     "spec": "Viền cam theo UI. Chỉ một học viên được chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thẻ đang chọn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A05.05",
+     "name": "click-the",
+     "label": "Click thẻ",
+     "spec": "Chọn theo student_id và class_id; tải chỉ số/bài của học viên đó.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC13",
+      "M-CDO2.TC14",
+      "M-CDO2.TC49"
+     ],
+     "missingTerms": [
+      "Click thẻ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A05.06",
+     "name": "dau",
+     "label": "Dấu >",
+     "spec": "Điều hướng detail đúng học viên, không kích hoạt click chọn thẻ do bubbling.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Dấu >"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A05.07",
+     "name": "search-ten",
+     "label": "Search tên",
+     "spec": "Tìm theo tên học viên trong phạm vi lớp trên toàn bộ dữ liệu, không chỉ phần đã tải.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC49"
+     ],
+     "missingTerms": [
+      "Search tên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A05.08",
+     "name": "toan-bo-danh-sach",
+     "label": "Toàn bộ danh sách",
+     "spec": "Hiển thị đầy đủ học viên thuộc mọi trạng thái của lớp, kể cả Xóa; không load-more, không phân trang. Không phải chỉ tải 3 hoặc một trang đầu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Toàn bộ danh sách"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A05.09",
+     "name": "vung-trai",
+     "label": "Vùng trái",
+     "spec": "Điểm KT, Điểm BTVN, Thời gian học, tỷ lệ BTVN, Đi học, Bài học gần đây (6 bài) và bảng chi tiết.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC12"
+     ],
+     "missingTerms": [
+      "Vùng trái"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.A06",
+   "name": "cong-tac-on-off-hoc-phi-va-ghi-chu-cai-d",
+   "title": "Công tắc ON/OFF: học phí và ghi chú cài đặt",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO2.A06.01",
+     "name": "on-off",
+     "label": "ON/OFF",
+     "spec": "Admin/Class Handler/Support/Sale; mặc định OFF khi mở màn. Không tự khôi phục ON từ lần mở trước.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "ON/OFF"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A06.02",
+     "name": "hoc-phi",
+     "label": "Học phí",
+     "spec": "Tổng học phí học viên đã đóng cho lớp hiện tại, cùng dữ liệu cột Số tiền của tab Học viên; không phải tổng giá trị hóa đơn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC17",
+      "M-CDO2.TC18",
+      "M-CDO2.TC20"
+     ],
+     "missingTerms": [
+      "Học phí"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A06.03",
+     "name": "ghi-chu-cua-lop",
+     "label": "Ghi chú của lớp",
+     "spec": "Dùng field Ghi chú trong Cài đặt lớp/Tab Thông tin; rỗng hiển thị Không có ghi chú.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Ghi chú của lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A06.04",
+     "name": "ghi-chu-duoi-tung-the",
+     "label": "Ghi chú dưới từng thẻ",
+     "spec": "Nội dung hiện tại của ghi chú quan hệ học viên–lớp trong Cài đặt → Học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Ghi chú dưới từng thẻ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A06.05",
+     "name": "icon-lich-su-canh-ghi-chu",
+     "label": "Icon lịch sử cạnh ghi chú",
+     "spec": "Mở lịch sử của đúng ghi chú cài đặt học viên–lớp; nội dung, người sửa/thời điểm, Copy.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Icon lịch sử cạnh ghi chú"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.A07",
+   "name": "ghi-chu-cai-dat-va-lich-su",
+   "title": "Ghi chú cài đặt và lịch sử",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO2.A07.01",
+     "name": "icon-canh-ten-hoc-vien-dang-chon",
+     "label": "Icon cạnh tên học viên đang chọn",
+     "spec": "Mở xem ghi chú cài đặt học viên–lớp và lịch sử theo quyền, không có ô chỉnh/nút lưu. Teacher không được mở nguồn ghi chú cài đặt qua Tổng quan.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Icon cạnh tên học viên đang chọn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A07.02",
+     "name": "popup-lich-su-ghi-chu",
+     "label": "Popup Lịch sử ghi chú",
+     "spec": "Nội dung, avatar/tên người tạo/chỉnh, thời điểm máy chủ; mới nhất trước, đúng class_id + student_id.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Popup Lịch sử ghi chú"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A07.03",
+     "name": "copy",
+     "label": "Copy",
+     "spec": "Copy nội dung của bản được chọn, không kèm metadata; không tạo phiên bản.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC22",
+      "M-CDO2.TC46"
+     ],
+     "missingTerms": [
+      "Copy"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A07.04",
+     "name": "ghi-chu-bat-thuong",
+     "label": "Ghi chú bất thường",
+     "spec": "Hiển thị đúng text được nhập; chưa có rule tự phân loại/tự tạo cảnh báo từ chỉ số.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Ghi chú bất thường"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.A08",
+   "name": "danh-gia-tong-va-bai-hoc-gan-day",
+   "title": "Đánh giá tổng và bài học gần đây",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [
+    "Khác Figma ADM-LOP-020100: khối Bài học gần đây ở vùng trái đang vẽ 4 icon, requirement là 6 bài."
+   ],
+   "items": [
+    {
+     "id": "M-CDO2.A08.01",
+     "name": "badge-danh-gia",
+     "label": "Badge đánh giá",
+     "spec": "F màu đỏ, D màu nâu, E màu cam theo xác nhận; A xanh lá và B xanh dương theo UI tham chiếu. C hoặc màu khác chưa có quy tắc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Badge đánh giá"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A08.02",
+     "name": "gia-tri-danh-gia",
+     "label": "Giá trị đánh giá",
+     "spec": "Hiển thị giá trị nguồn cung cấp; chưa có công thức tự tính từ điểm/đi học/BTVN.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Giá trị đánh giá"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A08.03",
+     "name": "so-bai-hien-thi",
+     "label": "Số bài hiển thị",
+     "spec": "Thẻ học viên ở danh sách bên phải: 3 bài gần nhất. Khối Bài học gần đây ở vùng trái khi chọn học viên: 6 bài gần nhất. Chỉ tính bài **đã được điểm danh** của học viên trong lớp; bài học viên còn Chưa điểm danh không tính. Ít hơn số bài quy định thì chỉ hiện số bài có dữ liệu; sắp từ bài mới nhất.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Số bài hiển thị"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A08.04",
+     "name": "di-hoc-vang",
+     "label": "Đi học / vắng",
+     "spec": "Đi học: Có mặt, Vào trễ, Ra sớm, Vào trễ & Ra sớm. Vắng: Nghỉ CP, Nghỉ KP.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đi học / vắng"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A08.05",
+     "name": "da-nop-btvn",
+     "label": "Đã nộp BTVN",
+     "spec": "Học viên đã nộp BTVN của bài; nộp chưa chấm hoặc điểm 0 vẫn là đã nộp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đã nộp BTVN"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A08.06",
+     "name": "icon-bai-gan-day",
+     "label": "Icon bài gần đây",
+     "spec": "Viền cam = đi học, viền xám = vắng; sách cam = đã nộp BTVN, sách xám = chưa nộp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Icon bài gần đây"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A08.07",
+     "name": "di-hoc-da-nop-btvn",
+     "label": "Đi học + đã nộp BTVN",
+     "spec": "Viền cam, sách cam.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đi học + đã nộp BTVN"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A08.08",
+     "name": "di-hoc-chua-nop-btvn",
+     "label": "Đi học + chưa nộp BTVN",
+     "spec": "Viền cam, sách xám.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đi học + chưa nộp BTVN"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A08.09",
+     "name": "vang-da-nop-btvn",
+     "label": "Vắng + đã nộp BTVN",
+     "spec": "Viền xám, sách cam.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Vắng + đã nộp BTVN"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A08.10",
+     "name": "vang-chua-nop-btvn",
+     "label": "Vắng + chưa nộp BTVN",
+     "spec": "Viền xám, sách xám.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Vắng + chưa nộp BTVN"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A08.11",
+     "name": "hover-icon-bai-gan-day",
+     "label": "Hover icon bài gần đây",
+     "spec": "Hiển thị tên tổ hợp của bài tương ứng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Hover icon bài gần đây"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.A09",
+   "name": "bang-bai-hoc-cua-hoc-vien-va-diem-danh",
+   "title": "Bảng bài học của học viên và điểm danh",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [
+    "Khác Figma ADM-LOP-020100: bảng bài chưa có tag thời điểm mở bài phía trên tên bài."
+   ],
+   "items": [
+    {
+     "id": "M-CDO2.A09.01",
+     "name": "ten-bai-hoc",
+     "label": "Tên bài học",
+     "spec": "Thứ tự bài; tag thời điểm giáo viên mở bài cho lớp dạng `HH:mm - dd/MM/yyyy` (ví dụ `19:18 - 13/07/2026`) đặt **phía trên** tên bài; tên bài. Cùng lớp/cùng bài thì mốc này giống nhau ở mọi học viên, không phải giờ học/nộp của từng người. Bài chưa mở không có tag.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Tên bài học",
+        "figmaId": "4056:93215",
+        "layer": "Tên bài học",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC62"
+     ],
+     "missingTerms": [
+      "HH:mm - dd/MM/yyyy"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A09.02",
+     "name": "ghi-chu",
+     "label": "Ghi chú",
+     "spec": "Ghi chú giáo viên theo học viên–bài; có nội dung dùng icon đỏ và click xem. Không có nội dung dùng icon xám, không click được. Không chỉnh tại Tổng quan.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "4056:93217",
+        "layer": "Ghi chú",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC27",
+      "M-CDO2.TC30"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A09.03",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Icon điểm danh của đúng học viên ở bài/buổi theo bảng bên dưới; không phải trạng thái Đang học/Rời lớp. Hover icon hiển thị tên trạng thái điểm danh tương ứng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "4056:93219",
+        "layer": "Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC28",
+      "M-CDO2.TC29"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A09.04",
+     "name": "diem-so",
+     "label": "Điểm số",
+     "spec": "Điểm BTVN của học viên tại bài đó: điểm cụ thể, Chưa nộp hoặc Chưa chấm. Không lấy điểm kiểm tra thay cho cột này.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Điểm số",
+        "figmaId": "4056:93236",
+        "layer": "Điểm số · Chưa chấm",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC29"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A09.05",
+     "name": "thoi-gian",
+     "label": "Thời gian",
+     "spec": "Thời gian học trên app của học viên cho bài; HH:mm:ss; icon i mở chi tiết từng phần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Thời gian",
+        "figmaId": "4056:93223",
+        "layer": "Thời gian",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC27",
+      "M-CDO2.TC53"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO2.A09.06",
+     "name": "co-mat",
+     "label": "Có mặt",
+     "spec": "Có mặt | Ô viền xanh lá, dấu tick trắng nền xanh lá.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Có mặt"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A09.07",
+     "name": "vao-tre",
+     "label": "Vào trễ",
+     "spec": "Vào trễ | Ô viền cam, lịch có dấu `!` màu cam.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Vào trễ",
+      "!"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A09.08",
+     "name": "ra-som",
+     "label": "Ra sớm",
+     "spec": "Ra sớm | Ô viền cam, đồng hồ màu cam.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Ra sớm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A09.09",
+     "name": "vao-tre-ra-som",
+     "label": "Vào trễ & ra sớm",
+     "spec": "Vào trễ & ra sớm | Ô viền đỏ, đồng hồ có dấu `!` màu đỏ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Vào trễ & ra sớm",
+      "!"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A09.10",
+     "name": "nghi-co-phep",
+     "label": "Nghỉ có phép",
+     "spec": "Nghỉ có phép (cp) | Ô viền cam, lịch có bút màu cam.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nghỉ có phép"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A09.11",
+     "name": "nghi-khong-phep",
+     "label": "Nghỉ không phép",
+     "spec": "Nghỉ không phép (kp) | Ô viền đỏ, biểu tượng cấm màu đỏ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nghỉ không phép"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A09.12",
+     "name": "chua-diem-danh",
+     "label": "Chưa điểm danh",
+     "spec": "Chưa điểm danh | Ô viền đỏ, lịch có dấu `x` màu đỏ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC28"
+     ],
+     "missingTerms": [
+      "Chưa điểm danh",
+      "x"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.A10",
+   "name": "popup-ghi-chu-giao-vien-theo-bai-hoc",
+   "title": "Popup ghi chú giáo viên theo bài học",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO2.A10.01",
+     "name": "cho-hoc-vien",
+     "label": "Cho Học viên",
+     "spec": "Nội dung giáo viên đã ghi theo bài và học viên; chỉ đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC32"
+     ],
+     "missingTerms": [
+      "Cho Học viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A10.02",
+     "name": "cho-team-support",
+     "label": "Cho Team Support",
+     "spec": "Nội dung giáo viên cho team hỗ trợ; chỉ đọc. Admin/Class Handler/Sale/Support và Teacher của lớp được xem cả vùng này và vùng Cho Học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC32"
+     ],
+     "missingTerms": [
+      "Cho Team Support"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A10.03",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng popup, không lưu hay đổi ghi chú.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Hủy"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.A11",
+   "name": "popup-thoi-gian-tung-phan-tren-app",
+   "title": "Popup Thời gian từng phần trên app",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO2.A11.01",
+     "name": "chin-phan",
+     "label": "Chín phần",
+     "spec": "BTVN, Từ vựng, Nghe, Học flashcard, Duyệt kiến thức, Ngữ pháp, Đọc, Lật flashcard, Luyện nhớ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chín phần"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A11.02",
+     "name": "moi-o",
+     "label": "Mỗi ô",
+     "spec": "Icon đúng loại hoạt động, thời gian HH:mm:ss; có nhãn/tooltip phân biệt hoạt động.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Mỗi ô"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A11.03",
+     "name": "00-00-00",
+     "label": "00:00:00",
+     "spec": "Thời gian ghi nhận thực tế bằng 0; không dùng 0 để che lỗi tải hoặc thiếu dữ liệu chưa xác định.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC35"
+     ],
+     "missingTerms": [
+      "00:00:00"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A11.04",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng popup, không thay dữ liệu thời gian.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Hủy"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.A12",
+   "name": "loading-rong-loi-va-an-toan-du-lieu",
+   "title": "Loading, rỗng, lỗi và an toàn dữ liệu",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO2.A12.01",
+     "name": "loading",
+     "label": "Loading",
+     "spec": "Hiển thị tại vùng đang tải; không giữ dữ liệu A dưới tên B.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Loading"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A12.02",
+     "name": "empty",
+     "label": "Empty",
+     "spec": "Chưa có học viên, Không tìm thấy học viên, Chưa có bài học hoặc Chưa có ghi chú tùy nguồn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Empty"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A12.03",
+     "name": "error",
+     "label": "Error",
+     "spec": "Thông báo phù hợp và Thử lại; không biến lỗi thành chỉ số 0.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Error"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO2.A12.04",
+     "name": "toast",
+     "label": "Toast",
+     "spec": "Các thao tác xem/search/chọn/ON-OFF/Copy/Hủy popup không có Toast CRUD thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO2.TC40",
+      "M-CDO2.TC54"
+     ],
+     "missingTerms": [
+      "Toast"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO2.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-020100"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO2.F01.01",
+     "name": "progress-diem-danh-gia-a-f",
+     "label": "Progress/Điểm Đánh Giá (A-F)",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Progress/Điểm Đánh Giá (A-F)",
+        "figmaId": "3266:46263",
+        "layer": "Progress/Điểm Đánh Giá (A-F)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Progress/Điểm Đánh Giá (A-F)",
+        "component": "Progress/Điểm Đánh Giá (A-F)",
+        "variant": {
+         "Property 1": "A nhỏ",
+         "Size": "36x32"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO2.F01.02",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Avatar",
+        "figmaId": "3266:58089",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Nữ 2",
+         "Size": "20"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO2.F01.03",
+     "name": "ghi-chu",
+     "label": "GHI CHÚ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "GHI CHÚ",
+        "figmaId": "3266:57977",
+        "layer": "GHI CHÚ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "GHI CHÚ",
+        "component": "GHI CHÚ",
+        "variant": {
+         "Property 1": "Ghi chú (Default)",
+         "Property 2": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO2.F01.04",
+     "name": "the-chi-so",
+     "label": "Thẻ chỉ số",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Thẻ chỉ số",
+        "figmaId": "3266:54065",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "0",
+         "Có phần thêm": false,
+         "Tiêu đề": "Điểm Kiểm tra",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO2.F01.05",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "4056:93227",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO2.F01.06",
+     "name": "nut-hien-ghi-chu",
+     "label": "Nút · Hiện ghi chú",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Nút · Hiện ghi chú",
+        "figmaId": "4056:94144",
+        "layer": "Nút · Hiện ghi chú",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Nút · Hiện ghi chú",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Hiện ghi chú",
+         "Type": "Outlined Icon",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO2.F01.07",
+     "name": "student-status",
+     "label": "Student Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Student Status",
+        "figmaId": "3304:60088",
+        "layer": "Student Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Student Status",
+        "component": "Student Status",
+        "variant": {
+         "Property 1": "Đang học"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO2.F01.08",
+     "name": "o-dinh-danh",
+     "label": "Ô định danh",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Ô định danh",
+        "figmaId": "3304:60089",
+        "layer": "Ô định danh",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Ô định danh",
+        "component": null,
+        "variant": {
+         "Có Tiền": true,
+         "Có lịch hẹn": false,
+         "Có tag": false,
+         "Có avatar": true,
+         "Tên": "Học viên 1",
+         "Có tag thứ 2": false,
+         "Mã": "102189-mtra60790@gmail.com"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO2.F01.09",
+     "name": "class-session-status",
+     "label": "Class Session Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Class Session Status",
+        "figmaId": "3304:60242",
+        "layer": "Class Session Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Class Session Status",
+        "component": "Class Session Status",
+        "variant": {
+         "Property 1": "Đi Học - Làm BT"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO2.F01.10",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Mouse click",
+        "figmaId": "3304:62376",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO2.F01.11",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3266:46650",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO2.F01.12",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020100": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:224073",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Tổng Quan"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-CDO2.EX01",
+   "text": "Sai role/ngoài lớp/sai quyền ghi chú nội bộ → chặn backend và không trả nội dung không được phép.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.EX02",
+   "text": "Thiếu điểm hoặc enum khác giá trị đã chốt → không tự đổi thành 0/đánh giá/điểm danh khác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.EX03",
+   "text": "Response ngữ cảnh cũ → bỏ qua; không ghi đè học viên/search/lớp hiện tại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.EX04",
+   "text": "Danh sách/search/bảng bài rỗng → empty state đúng vùng, không dữ liệu giả.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.EX05",
+   "text": "Lỗi tải → giữ phần hợp lệ, báo lỗi/thử lại; không coi là kết quả 0 hoặc không có ghi chú.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO2.EX06",
+   "text": "Học viên rời/xóa → bảo toàn bài đã làm/điểm BTVN và KT trong tập tính thống kê lịch sử; không xóa dữ liệu theo quan hệ hiện tại.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [],
+ "testcases": [
+  {
+   "id": "M-CDO2.TC01",
+   "title": "Case 1: Mở Tổng quan đúng lớp",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDO2.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC02",
+   "title": "Case 2: Teacher không có ON/OFF",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A01",
+   "scenario": "REQ01 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ01",
+    "M-CDO2.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC03",
+   "title": "Case 3: Chặn ngoài quyền/phạm vi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A01",
+   "scenario": "EX01 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ01"
+   ],
+   "exceptions": [
+    "M-CDO2.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDO2.A01.01"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC45",
+   "title": "Case 45: Thu gọn và mở thống kê",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO2.A01",
+   "scenario": "REQ01 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ01",
+    "M-CDO2.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A01.06"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC55",
+   "title": "Case 55: Hover nút Back hiển thị đúng lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A02",
+   "scenario": "Flow 7 / REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A02.02"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC56",
+   "title": "Case 56: Nhiều lịch và nhân sự",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A02",
+   "scenario": "REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A02.02"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC57",
+   "title": "Case 57: Chưa phân công và đúng ngày khai giảng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO2.A02",
+   "scenario": "REQ13 / EX05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ13"
+   ],
+   "exceptions": [
+    "M-CDO2.EX05"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDO2.A02.06",
+    "M-CDO2.A02.08"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC58",
+   "title": "Case 58: Rời hover, click Back và đổi lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A02",
+   "scenario": "Flow 7 / REQ13 / EX03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ13"
+   ],
+   "exceptions": [
+    "M-CDO2.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDO2.A02.02"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC04",
+   "title": "Case 4: Tử số sĩ số đúng rule mới",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A03",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A03.01"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC05",
+   "title": "Case 5: Đi học/BTVN trung bình",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A03",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC06",
+   "title": "Case 6: Giữ bài của học viên rời/xóa",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A03",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC07",
+   "title": "Case 7: Chỉ tính bài đã chấm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A03",
+   "scenario": "REQ03 / EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ03"
+   ],
+   "exceptions": [
+    "M-CDO2.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC08",
+   "title": "Case 8: Thời gian học là trung bình",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A03",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC09",
+   "title": "Case 9: Tiêu chuẩn đúng nguồn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A03",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A03.02",
+    "M-CDO2.A03.03",
+    "M-CDO2.A03.07"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC41",
+   "title": "Case 41: Sĩ số đủ mọi trạng thái kể cả Xóa",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A03",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A03.01"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC42",
+   "title": "Case 42: Trung bình theo bài và làm tròn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A03",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A03.03"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC43",
+   "title": "Case 43: Trung bình tổng thời gian học viên–bài",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A03",
+   "scenario": "REQ02 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ02",
+    "M-CDO2.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC51",
+   "title": "Case 51: Đã chấm và sửa bài đếm số bài BTVN + KT",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A03",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A03.08"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC10",
+   "title": "Case 10: Theo thứ tự bài",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A04",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC11",
+   "title": "Case 11: Đổi học viên không lẫn biểu đồ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A04",
+   "scenario": "Flow 2 / EX03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "M-CDO2.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC48",
+   "title": "Case 48: Chart theo bài và dừng đúng tiến độ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A04",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A04.02"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC12",
+   "title": "Case 12: Chọn học viên đầu tiên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A05",
+   "scenario": "Flow 1 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A05.09"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC13",
+   "title": "Case 13: Click thẻ cập nhật vùng trái",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A05",
+   "scenario": "Flow 2 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A05.05"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC14",
+   "title": "Case 14: Dấu > mở detail",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A05",
+   "scenario": "Flow 2 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A05.05"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC15",
+   "title": "Case 15: Search theo tên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A05",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC16",
+   "title": "Case 16: Không có học viên/kết quả",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO2.A05",
+   "scenario": "EX04 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ06"
+   ],
+   "exceptions": [
+    "M-CDO2.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC44",
+   "title": "Case 44: Hiển thị toàn bộ danh sách và bài",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A05",
+   "scenario": "REQ06 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ06",
+    "M-CDO2.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC59",
+   "title": "Case 59: Chấm đỏ đếm lịch hẹn chưa hoàn tất theo phạm vi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A05",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC60",
+   "title": "Case 60: Teacher và Sale không thấy chấm đỏ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A05",
+   "scenario": "REQ06 / EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ06"
+   ],
+   "exceptions": [
+    "M-CDO2.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC49",
+   "title": "Case 49: Hiện và tìm đủ mọi trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A05",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A05.05",
+    "M-CDO2.A05.07"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC17",
+   "title": "Case 17: Mặc định OFF rồi bật ON",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A06",
+   "scenario": "Flow 3 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A06.02"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC18",
+   "title": "Case 18: OFF ẩn dữ liệu bổ sung",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A06",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A06.02"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC19",
+   "title": "Case 19: Sale xem ON không mở rộng quyền",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A06",
+   "scenario": "REQ01 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ01",
+    "M-CDO2.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC20",
+   "title": "Case 20: Không trộn học phí giữa lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A06",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A06.02"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC21",
+   "title": "Case 21: Lịch sử đúng học viên/lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A07",
+   "scenario": "Flow 4 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC22",
+   "title": "Case 22: Copy đúng phiên bản",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO2.A07",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A07.03"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC23",
+   "title": "Case 23: Ghi chú bất thường theo dữ liệu",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A07",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC46",
+   "title": "Case 46: Mọi ghi chú tại Tổng quan chỉ xem",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A07",
+   "scenario": "REQ07 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ07",
+    "M-CDO2.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A07.03"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC24",
+   "title": "Case 24: Badge F/D/E đúng màu",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A08",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC25",
+   "title": "Case 25: Thẻ học viên chỉ 3 bài gần nhất đã điểm danh",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A08",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC61",
+   "title": "Case 61: Vùng trái hiển thị 6 bài gần nhất",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A08",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC26",
+   "title": "Case 26: Phân biệt bốn tổ hợp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A08",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC47",
+   "title": "Case 47: Không điều hướng hoặc tự chốt icon",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO2.A08",
+   "scenario": "REQ02 / REQ08 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ02",
+    "M-CDO2.REQ08",
+    "M-CDO2.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC50",
+   "title": "Case 50: Hover xem trạng thái bài gần đây",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A08",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC27",
+   "title": "Case 27: Bảng đúng học viên được chọn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A09",
+   "scenario": "Flow 2 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A09.02",
+    "M-CDO2.A09.05"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC28",
+   "title": "Case 28: Đủ bảy trạng thái điểm danh",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A09",
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A09.03",
+    "M-CDO2.A09.12"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC29",
+   "title": "Case 29: Điểm BTVN và trạng thái chưa có điểm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A09",
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A09.03",
+    "M-CDO2.A09.04"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC30",
+   "title": "Case 30: Icon ghi chú đỏ/xám",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A09",
+   "scenario": "REQ09 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ09",
+    "M-CDO2.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A09.02"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC53",
+   "title": "Case 53: Mốc mở bài giống nhau ở mọi học viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A09",
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A09.05"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC62",
+   "title": "Case 62: Tag thời gian phía trên tên bài",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO2.A09",
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A09.01"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC31",
+   "title": "Case 31: Mở ghi chú đúng bài/học viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A10",
+   "scenario": "Flow 5 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC32",
+   "title": "Case 32: Năm role xem cả hai vùng ghi chú",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A10",
+   "scenario": "REQ10 / EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ10"
+   ],
+   "exceptions": [
+    "M-CDO2.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDO2.A10.01",
+    "M-CDO2.A10.02"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC52",
+   "title": "Case 52: Icon ghi chú xám không click",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A10",
+   "scenario": "REQ09 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ09",
+    "M-CDO2.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC33",
+   "title": "Case 33: i mở đúng thời gian theo bài",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A11",
+   "scenario": "Flow 6 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC34",
+   "title": "Case 34: Đủ chín phần riêng biệt",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A11",
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC35",
+   "title": "Case 35: Giá trị 0 khác lỗi tải",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A11",
+   "scenario": "EX05 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ11"
+   ],
+   "exceptions": [
+    "M-CDO2.EX05"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDO2.A11.03"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC36",
+   "title": "Case 36: Đóng Thời gian",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO2.A11",
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC37",
+   "title": "Case 37: Đổi học viên/search liên tục",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A12",
+   "scenario": "EX03 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ12"
+   ],
+   "exceptions": [
+    "M-CDO2.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC38",
+   "title": "Case 38: Lỗi tải từng vùng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A12",
+   "scenario": "EX05 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ12"
+   ],
+   "exceptions": [
+    "M-CDO2.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC39",
+   "title": "Case 39: Text ghi chú an toàn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO2.A12",
+   "scenario": "REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO2.TC40",
+   "title": "Case 40: Chỉ đọc không tạo CRUD",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO2.A12",
+   "scenario": "REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A12.04"
+   ]
+  },
+  {
+   "id": "M-CDO2.TC54",
+   "title": "Case 54: Thao tác đọc của Teacher không tạo CRUD",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO2.A12",
+   "scenario": "REQ01 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO2.REQ01",
+    "M-CDO2.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO2.A12.04"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDO2.EX06",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/class_management/class_detail_overview_requirements.md",
+   "prefix": "M-CDO2",
+   "title": "Chi tiết lớp học — Menu Tổng quan"
+  }
+ ]
+}

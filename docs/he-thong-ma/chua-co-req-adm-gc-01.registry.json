@@ -1,0 +1,555 @@
+{
+ "cluster": "chua-co-req-adm-gc-01",
+ "title": "ADM-GC-01xx (chưa có requirement)",
+ "figmaPrefix": "ADM-GC-01",
+ "requirements": [],
+ "screens": {
+  "ADM-GC-010000": {
+   "id": "ADM-GC-010000",
+   "name": "danh-sach-ghi-chu",
+   "title": "Ghi chú / Danh sách ghi chú",
+   "kind": "man-chinh",
+   "parent": "ADM-GC-010001",
+   "shownOn": "ADM-GC-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4083:136049",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/ghi-chu/danh-sach-ghi-chu",
+   "link": "/ghi-chu/danh-sach-ghi-chu",
+   "dark": "ADM-GC-010000-DK",
+   "openedFrom": [
+    "ADM-GC-010001"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "ADM-GC-01.F01"
+   ]
+  },
+  "ADM-GC-010001": {
+   "id": "ADM-GC-010001",
+   "name": "da-sao-chep-ma",
+   "title": "Gift code / Danh sách gift code / Đã sao chép mã",
+   "kind": "man-chinh",
+   "parent": "ADM-GC-010000",
+   "shownOn": "ADM-GC-010001",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5165:186783",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/gift-code/danh-sach-gift-code/da-sao-chep-ma",
+   "link": "/gift-code/danh-sach-gift-code/da-sao-chep-ma",
+   "dark": null,
+   "openedFrom": [
+    "ADM-GC-010000"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "ADM-GC-01.F01"
+   ]
+  },
+  "ADM-GC-010010": {
+   "id": "ADM-GC-010010",
+   "name": "popup-tao-gift-code",
+   "title": "Gift code / Popup tạo gift code",
+   "kind": "popup",
+   "parent": null,
+   "shownOn": null,
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3977:76869",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": null,
+   "dark": "ADM-GC-010010-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-GC-010020": {
+   "id": "ADM-GC-010020",
+   "name": "popup-cap-nhat-gift-code",
+   "title": "Gift code / Popup cập nhật gift code",
+   "kind": "popup",
+   "parent": null,
+   "shownOn": null,
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3977:76954",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": null,
+   "dark": "ADM-GC-010020-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [
+  {
+   "id": "ADM-GC-01.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-gc-010000",
+    "adm-gc-010001"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-GC-01.F01.01",
+     "name": "dropdown-trung-tam",
+     "label": "Dropdown · Trung tâm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010000": [
+       {
+        "term": "Dropdown · Trung tâm",
+        "figmaId": "4713:129156",
+        "layer": "Dropdown · Trung tâm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown · Trung tâm",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Count": false,
+         "Chevron": true,
+         "Clear": false,
+         "Leading": false,
+         "Count Value": "1",
+         "Value": "Trung tâm",
+         "Size": "S",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GC-01.F01.02",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010000": [
+       {
+        "term": "Dropdown",
+        "figmaId": "4083:136063",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Count": false,
+         "Chevron": true,
+         "Clear": false,
+         "Leading": false,
+         "Count Value": "1",
+         "Value": "Loại",
+         "Size": "S",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GC-01.F01.03",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010000": [
+       {
+        "term": "Avatar",
+        "figmaId": "4083:136074",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Nguyễn Văn An",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GC-01.F01.04",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:221051",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Ghi chú"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GC-01.F01.05",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "4083:136568",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GC-01.F01.06",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010001": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "5165:186929",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GC-01.F01.07",
+     "name": "tim-kiem-theo-loai",
+     "label": "Tìm kiếm theo loại",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010001": [
+       {
+        "term": "Tìm kiếm theo loại",
+        "figmaId": "5165:186931",
+        "layer": "Tìm kiếm theo loại",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tìm kiếm theo loại",
+        "component": "Atom/Input",
+        "variant": {
+         "Text": "Tìm nội dung...",
+         "Loại": "Gift code",
+         "State": "Search theo loại",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GC-01.F01.08",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010001": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "5165:186956",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Time": "4 ngày trước",
+         "Name": "Trần Minh Khoa",
+         "Label": "Th2, 14.09.2026",
+         "Icon": false,
+         "Type": "Date không có thứ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GC-01.F01.09",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010001": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "5165:186958",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "6",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GC-01.F01.10",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010001": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "5165:186962",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Đã dùng",
+         "Variant": "Success",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GC-01.F01.11",
+     "name": "phan-trang",
+     "label": "Phân Trang",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010001": [
+       {
+        "term": "Phân Trang",
+        "figmaId": "5165:187092",
+        "layer": "Phân Trang",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Phân Trang",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GC-01.F01.12",
+     "name": "molecule-tooltip",
+     "label": "Molecule/Tooltip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gc-010001": [
+       {
+        "term": "Molecule/Tooltip",
+        "figmaId": "5165:187648",
+        "layer": "Molecule/Tooltip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Tooltip",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Đã sao chép mã BD3194",
+         "Property 1": "Trạng thái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GC-010000",
+   "text": "man-chinh “Ghi chú / Danh sách ghi chú” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GC-010001",
+   "text": "man-chinh “Gift code / Danh sách gift code / Đã sao chép mã” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GC-010010",
+   "text": "popup “Gift code / Popup tạo gift code” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "popup-khong-co-man-cha",
+   "ref": "ADM-GC-010010",
+   "text": "chưa xác định được màn chính để mở"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-GC-010010",
+   "text": "loại popup, màn cha None — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GC-010010",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GC-010020",
+   "text": "popup “Gift code / Popup cập nhật gift code” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "popup-khong-co-man-cha",
+   "ref": "ADM-GC-010020",
+   "text": "chưa xác định được màn chính để mở"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-GC-010020",
+   "text": "loại popup, màn cha None — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GC-010020",
+   "text": "không có prototype link nào đi vào frame"
+  }
+ ]
+}

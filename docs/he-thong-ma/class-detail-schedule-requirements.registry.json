@@ -1,0 +1,2575 @@
+{
+ "cluster": "class-detail-schedule-requirements",
+ "title": "Chi tiết lớp học — Tab Lịch dạy",
+ "figmaPrefix": "M-CDS",
+ "requirements": [
+  {
+   "id": "M-CDS.REQ01",
+   "name": "Lịch tuần",
+   "text": "Hiển thị đúng lịch của lớp theo tuần, ngày/giờ, giáo viên, mã lớp và trạng thái; số thẻ trong một ngày không bị giới hạn ở ba.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.REQ02",
+   "name": "Phân quyền",
+   "text": "Admin/Class Handler/Support được CRUD lịch trong phạm vi; Teacher chỉ xem lịch lớp được phân công tại tab. Lịch giáo viên đã chọn khi bắt đầu buổi học được hoàn thành gián tiếp qua `Hoàn thành buổi học` (requirement Giáo viên — Bài học).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.REQ03",
+   "name": "Lịch cố định",
+   "text": "Hỗ trợ nhiều khung giờ/ngày lặp; chặn trùng lịch lớp và trùng lịch giáo viên trên tất cả lớp; sinh/tái sinh lịch tương lai đến đủ đúng N buổi của khóa học.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.REQ04",
+   "name": "Lịch linh hoạt",
+   "text": "Dấu cộng tạo lịch linh hoạt; hỗ trợ một hoặc nhiều ngày/giờ trong tuần; chặn trùng lịch lớp/giáo viên; lịch chèn tính vào N và làm timeline tương lai tự cân bằng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.REQ05",
+   "name": "Trạng thái",
+   "text": "Cố định màu cam, Linh hoạt xanh dương, Hoàn thành xanh lá, Hủy bỏ xám. Hoàn thành/Hủy bỏ là trạng thái ghi đè màu nhưng không làm mất loại nguồn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.REQ06",
+   "name": "Hoàn thành và lương",
+   "text": "Mỗi lần chuyển hợp lệ từ Đang đợi sang Hoàn thành (tại tab hoặc qua luồng dạy) tạo một khoản lương giáo viên, **ngày tính lương là ngày của lịch**, không phải ngày hoàn thành. Chống lặp theo schedule_id và completion version; tại một thời điểm chỉ một khoản lương hiệu lực, không có trạng thái hoàn thành giả hoặc lương trùng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.REQ07",
+   "name": "Hủy và bù",
+   "text": "Lịch hủy bị trừ khỏi N, không tính lương và tạo đúng một lịch bù ở cuối theo khung cố định; tự tăng ngày kết thúc dự kiến.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.REQ08",
+   "name": "Audit/an toàn",
+   "text": "Lưu người, thời điểm máy chủ, giá trị trước/sau, nguồn lịch, trạng thái và liên kết lịch bù; không tin role, class_id, teacher_id hoặc trạng thái do client tự khai.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.REQ09",
+   "name": "Toast",
+   "text": "Mọi CRUD có phản hồi đúng loại; chỉ thành công sau khi toàn bộ giao dịch liên quan đã hoàn tất.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.REQ10",
+   "name": "Popup thẻ lịch",
+   "text": "Bấm thẻ mở đúng schedule_id với Ngày, Giờ bắt đầu, Giáo viên, Thời gian học và Trạng thái. Role CRUD được sửa lịch Đang đợi; Teacher chỉ xem. Nút Hủy chỉ đóng form; trạng thái Hủy bỏ mới kích hoạt sinh bù.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.REQ11",
+   "name": "Mở lại lịch hoàn thành",
+   "text": "Admin/Class Handler/Support được mở lại lịch Hoàn thành khi nhập lý do. Hệ thống không xóa lương gốc mà tạo bút toán đảo/điều chỉnh, đưa lịch về Đang đợi rồi mới cho sửa/hủy. Hoàn thành lại tạo lần lương mới và chỉ một khoản lương có hiệu lực.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LOP-040500": {
+   "id": "ADM-LOP-040500",
+   "name": "lich-day",
+   "title": "Lớp học / Cài đặt / Lịch dạy",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-040400",
+   "shownOn": "ADM-LOP-040500",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2384:51914",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/cai-dat/lich-day",
+   "link": "/lop-hoc/cai-dat/lich-day",
+   "dark": "ADM-LOP-040500-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDS.A01",
+    "M-CDS.A02",
+    "M-CDS.A05",
+    "M-CDS.A06",
+    "M-CDS.A07",
+    "M-CDS.A08",
+    "M-CDS.F01"
+   ]
+  },
+  "ADM-LOP-040510": {
+   "id": "ADM-LOP-040510",
+   "name": "popup-them-lich-day-co-dinh",
+   "title": "Lớp học / Cài đặt / Lịch dạy / Popup thêm lịch dạy cố định",
+   "kind": "popup",
+   "parent": "ADM-LOP-040500",
+   "shownOn": "ADM-LOP-040500",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2384:59013",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/cai-dat/lich-day/popup-them-lich-day-co-dinh",
+   "link": "/lop-hoc/cai-dat/lich-day?popup=ADM-LOP-040510",
+   "dark": "ADM-LOP-040510-DK",
+   "openedFrom": [
+    "ADM-LOP-040500"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "M-CDS.A03"
+   ]
+  },
+  "ADM-LOP-040520": {
+   "id": "ADM-LOP-040520",
+   "name": "popup-them-lich-day-linh-hoat",
+   "title": "Lớp học / Cài đặt / Lịch dạy / Popup thêm lịch dạy linh hoạt",
+   "kind": "popup",
+   "parent": "ADM-LOP-040500",
+   "shownOn": "ADM-LOP-040500",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2384:59509",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/lop-hoc/cai-dat/lich-day?popup=ADM-LOP-040520",
+   "dark": "ADM-LOP-040520-DK",
+   "openedFrom": [
+    "ADM-LOP-040500"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "M-CDS.A04"
+   ]
+  },
+  "ADM-LOP-040521": {
+   "id": "ADM-LOP-040521",
+   "name": "trung-lich-co-dinh",
+   "title": "Lớp học / Cài đặt / Lịch dạy / Popup thêm lịch dạy linh hoạt / Trùng lịch cố định",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-040520",
+   "shownOn": "ADM-LOP-040500",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2911:43102",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/lop-hoc/cai-dat/lich-day?state=ADM-LOP-040521",
+   "dark": "ADM-LOP-040521-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-CDS.A03"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-CDS.A01",
+   "name": "tab-lich-day-lich-theo-tuan",
+   "title": "Tab Lịch dạy — Lịch theo tuần",
+   "screens": [
+    "adm-lop-040500"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040500"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS.A01.01",
+     "name": "khoang-tuan",
+     "label": "Khoảng tuần",
+     "spec": "Hiển thị ngày đầu và ngày cuối tuần; nút trái/phải chuyển đúng một tuần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Khoảng tuần"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A01.02",
+     "name": "cot-ngay",
+     "label": "Cột ngày",
+     "spec": "Hiển thị thứ, ngày/tháng và làm nổi bật ngày hiện tại nhưng không thay đổi dữ liệu lịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cột ngày"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A01.03",
+     "name": "tag-lich-co-dinh",
+     "label": "Tag lịch cố định",
+     "spec": "Hiển thị các khung lặp như `T2, 20:00`; `X` dùng để bỏ khung cố định theo quyền và rule tái sinh lịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tag lịch cố định",
+      "T2, 20:00"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A01.04",
+     "name": "nut-them-lich-day-co-dinh",
+     "label": "Nút Thêm lịch dạy cố định",
+     "spec": "Mở popup thêm lịch với tab `Thêm Lịch Dạy Cố Định` được chọn sẵn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDS.A03",
+       "raw": "Mở popup thêm lịch với tab `Thêm Lịch Dạy Cố Định` được chọn sẵn"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Thêm lịch dạy cố định"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A01.05",
+     "name": "o-dau-cua-ngay",
+     "label": "Ô dấu + của ngày",
+     "spec": "Mở popup thêm lịch với tab `Thêm Lịch Dạy Linh Hoạt` và tuần/ngày vừa bấm được chọn sẵn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDS.A03",
+       "raw": "Mở popup thêm lịch với tab `Thêm Lịch Dạy Linh Hoạt` và tuần/ngày vừa bấm được chọn sẵn"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "+"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A01.06",
+     "name": "the-lich",
+     "label": "Thẻ lịch",
+     "spec": "Hiển thị tối thiểu giáo viên, mã lớp, giờ bắt đầu–kết thúc và màu/icon trạng thái.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC02"
+     ],
+     "missingTerms": [
+      "Thẻ lịch"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A01.07",
+     "name": "vung-lich",
+     "label": "Vùng lịch",
+     "spec": "Số hàng hiển thị phải mở rộng hoặc cuộn theo số lịch thực tế; ba hàng trong ảnh không phải giới hạn nghiệp vụ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Vùng lịch"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS.A02",
+   "name": "the-lich-va-bon-trang-thai-chinh-thuc",
+   "title": "Thẻ lịch và bốn trạng thái chính thức",
+   "screens": [
+    "adm-lop-040500"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040500"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS.A02.01",
+     "name": "lich-co-dinh",
+     "label": "Lịch cố định",
+     "spec": "Cam | Buổi chưa hoàn thành/chưa hủy, được sinh từ khung lịch cố định.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Lịch cố định",
+        "figmaId": "2384:57689",
+        "layer": "STATUS CALENDAR",
+        "confidence": "cao",
+        "region": null,
+        "owner": "STATUS CALENDAR",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH CỐ ĐỊNH"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC08"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A02.02",
+     "name": "lich-linh-hoat",
+     "label": "Lịch linh hoạt",
+     "spec": "Xanh dương | Buổi chưa hoàn thành/chưa hủy, được thêm linh hoạt vào một ngày/giờ cụ thể.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Lịch linh hoạt",
+        "figmaId": "2384:57707",
+        "layer": "STATUS CALENDAR",
+        "confidence": "cao",
+        "region": null,
+        "owner": "STATUS CALENDAR",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH LINH HOẠT"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC08"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A02.03",
+     "name": "lich-hoan-thanh",
+     "label": "Lịch hoàn thành",
+     "spec": "Xanh lá | Buổi đã hoàn thành; được tính là một buổi học hợp lệ và phát sinh lương cho giáo viên của lịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Lịch hoàn thành",
+        "figmaId": "2384:57687",
+        "layer": "STATUS CALENDAR",
+        "confidence": "cao",
+        "region": null,
+        "owner": "STATUS CALENDAR",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH HOÀN THÀNH"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A02.04",
+     "name": "lich-huy-bo",
+     "label": "Lịch hủy bỏ",
+     "spec": "Xám | Buổi đã hủy; bị loại khỏi số buổi hợp lệ của khóa và không phát sinh lương. Hệ thống phải sinh một buổi bù ở cuối.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Lịch hủy bỏ",
+        "figmaId": "3650:48210",
+        "layer": "STATUS CALENDAR",
+        "confidence": "cao",
+        "region": null,
+        "owner": "STATUS CALENDAR",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH HUỶ BỎ"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS.A03",
+   "name": "popup-them-lich-day-co-dinh",
+   "title": "Popup Thêm Lịch Dạy Cố Định",
+   "screens": [
+    "adm-lop-040510",
+    "adm-lop-040521"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040510",
+    "ADM-LOP-040521"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS.A03.01",
+     "name": "tab-co-dinh-linh-hoat",
+     "label": "Tab Cố định/Linh hoạt",
+     "spec": "Chuyển đúng form; dữ liệu chưa xác nhận của tab kia không được tự lưu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tab Cố định/Linh hoạt"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A03.02",
+     "name": "chon-ngay-bat-dau",
+     "label": "Chọn ngày bắt đầu",
+     "spec": "Ngày bắt đầu áp dụng của cấu hình; khi tạo lịch đầu tiên của lớp phải phù hợp để ngày bắt đầu lớp là buổi 1.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040510": [
+       {
+        "term": "Chọn ngày bắt đầu",
+        "figmaId": "I2384:59020;1739:32355",
+        "layer": "Thứ Ba, 22.09.2026",
+        "confidence": "cao",
+        "region": "Frame 1171274928",
+        "owner": "Time",
+        "component": "Time",
+        "variant": {
+         "Property 1": "CALENDAR"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A03.03",
+     "name": "gio-bat-dau-ket-thuc",
+     "label": "Giờ bắt đầu/kết thúc",
+     "spec": "Giờ kết thúc phải sau giờ bắt đầu; lưu cùng timezone lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Giờ bắt đầu/kết thúc"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A03.04",
+     "name": "thu-2-chu-nhat",
+     "label": "Thứ 2–Chủ Nhật",
+     "spec": "Mỗi dòng chọn ít nhất một ngày trong tuần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thứ 2–Chủ Nhật"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A03.05",
+     "name": "them-lich-day",
+     "label": "+ Thêm lịch dạy",
+     "spec": "Thêm một dòng khung giờ; chưa lưu backend.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040510": [
+       {
+        "term": "+ Thêm lịch dạy",
+        "figmaId": "2384:59178",
+        "layer": "Thêm lịch dạy",
+        "confidence": "cao",
+        "region": "Modal Body Content",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A03.06",
+     "name": "icon-thung-rac",
+     "label": "Icon thùng rác",
+     "spec": "Xóa dòng cấu hình chưa xác nhận hoặc bỏ một khung hiện có theo rule tái sinh lịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Icon thùng rác"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A03.07",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng mà không lưu thay đổi chưa xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040510": [
+       {
+        "term": "Hủy",
+        "figmaId": "I2527:167767;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A03.08",
+     "name": "xac-nhan",
+     "label": "Xác Nhận",
+     "spec": "Validate toàn bộ, lưu cấu hình và sinh/tái sinh lịch tương lai nguyên tử.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040510": [
+       {
+        "term": "Xác Nhận",
+        "figmaId": "I2527:167767;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xác nhận",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC10",
+      "M-CDS.TC11",
+      "M-CDS.TC12",
+      "M-CDS.TC13",
+      "M-CDS.TC14",
+      "M-CDS.TC15"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS.A04",
+   "name": "popup-them-lich-day-linh-hoat",
+   "title": "Popup Thêm Lịch Dạy Linh Hoạt",
+   "screens": [
+    "adm-lop-040520"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040520"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS.A04.01",
+     "name": "khoang-tuan",
+     "label": "Khoảng tuần",
+     "spec": "Mũi tên chuyển tuần cần chọn; các checkbox thứ ánh xạ đúng ngày thực tế trong tuần đó.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS.A04.02",
+     "name": "gio-bat-dau-ket-thuc",
+     "label": "Giờ bắt đầu/kết thúc",
+     "spec": "Áp dụng cho các ngày được chọn trên cùng dòng; giờ kết thúc phải sau giờ bắt đầu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS.A04.03",
+     "name": "thu-trong-tuan",
+     "label": "Thứ trong tuần",
+     "spec": "Mỗi checkbox tạo một lịch linh hoạt ở ngày tương ứng trong tuần đang chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS.A04.04",
+     "name": "them-lich-day",
+     "label": "Thêm lịch dạy",
+     "spec": "Thêm dòng giờ khác để tạo nhiều lịch trong một lần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS.A04.05",
+     "name": "xac-nhan",
+     "label": "Xác Nhận",
+     "spec": "Validate toàn bộ rồi chèn các lịch linh hoạt nguyên tử vào timeline lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC16",
+      "M-CDS.TC17",
+      "M-CDS.TC19"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS.A05",
+   "name": "popup-xem-chinh-sua-khi-bam-the-lich",
+   "title": "Popup xem/chỉnh sửa khi bấm thẻ lịch",
+   "screens": [
+    "adm-lop-040500"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040500"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS.A05.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "Lịch nguồn cố định hiển thị `Chỉnh sửa lịch cố định`; lịch nguồn linh hoạt hiển thị `Chỉnh sửa lịch linh hoạt`. Teacher hoặc lịch bị khóa hiển thị theo chế độ xem, không tạo cảm giác có thể sửa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC21"
+     ],
+     "missingTerms": [
+      "Tiêu đề",
+      "Chỉnh sửa lịch cố định"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A05.02",
+     "name": "thoi-gian-ngay",
+     "label": "Thời gian/Ngày",
+     "spec": "Ngày diễn ra của đúng buổi; cho chỉnh khi lịch chưa hoàn thành/hủy.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thời gian/Ngày"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A05.03",
+     "name": "gio-bat-dau",
+     "label": "Giờ bắt đầu",
+     "spec": "Giờ bắt đầu của buổi; phải kết hợp với Thời gian học để tính giờ kết thúc và kiểm tra trùng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Giờ bắt đầu"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A05.04",
+     "name": "giao-vien",
+     "label": "Giáo viên",
+     "spec": "Chọn trong các giáo viên hợp lệ đã được thêm vào lớp. Khi đổi phải kiểm tra lịch giáo viên trên tất cả lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Giáo viên",
+        "figmaId": "I2384:57888;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC21",
+      "M-CDS.TC24",
+      "M-CDS.TC25"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A05.05",
+     "name": "thoi-gian-hoc",
+     "label": "Thời gian học",
+     "spec": "Chọn thời lượng từ cấu hình cho phép, ví dụ `90 phút`; `Giờ kết thúc = Giờ bắt đầu + Thời gian học`. Không cho thời lượng bằng 0 hoặc âm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thời gian học",
+      "90 phút"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A05.06",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Với lịch chưa kết thúc, cho chọn `Đang đợi`, `Hoàn thành`, `Hủy bỏ`. Lịch `Hoàn thành` có flow `Mở lại` để trở về `Đang đợi`, đảo lương rồi mới cho sửa/hủy. `Đang đợi` giữ màu theo loại nguồn; hai trạng thái kết thúc kích hoạt nghiệp vụ tương ứng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC21",
+      "M-CDS.TC22",
+      "M-CDS.TC26",
+      "M-CDS.TC27"
+     ],
+     "missingTerms": [
+      "Trạng thái",
+      "Đang đợi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A05.07",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Nút đóng popup, nhãn tiếng Việt là `Hủy`; bỏ thay đổi chưa xác nhận. Không phải hành động Hủy bỏ lịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Hủy",
+        "figmaId": "3650:48210",
+        "layer": "STATUS CALENDAR",
+        "confidence": "thap",
+        "region": null,
+        "owner": "STATUS CALENDAR",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH HUỶ BỎ"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hủy",
+        "figmaId": "3650:48210",
+        "layer": "STATUS CALENDAR",
+        "confidence": "thap",
+        "region": null,
+        "owner": "STATUS CALENDAR",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH HUỶ BỎ"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A05.08",
+     "name": "xac-nhan",
+     "label": "Xác nhận",
+     "spec": "Validate phiên bản, quyền, field, trùng lịch và trạng thái; chỉ cập nhật UI sau khi backend commit.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC22",
+      "M-CDS.TC23",
+      "M-CDS.TC24",
+      "M-CDS.TC25",
+      "M-CDS.TC27"
+     ],
+     "missingTerms": [
+      "Xác nhận"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS.A06",
+   "name": "hoan-thanh-va-huy-lich",
+   "title": "Hoàn thành và hủy lịch",
+   "screens": [
+    "adm-lop-040500"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040500"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS.A06.01",
+     "name": "hoan-thanh",
+     "label": "Hoàn thành",
+     "spec": "Kiểm tra lịch/giáo viên → chuyển xanh lá → ghi nhận buổi hợp lệ → tạo lương giáo viên đúng một lần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Hoàn thành",
+        "figmaId": "2384:57687",
+        "layer": "STATUS CALENDAR",
+        "confidence": "thap",
+        "region": null,
+        "owner": "STATUS CALENDAR",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH HOÀN THÀNH"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC28",
+      "M-CDS.TC29",
+      "M-CDS.TC30",
+      "M-CDS.TC35"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A06.02",
+     "name": "hoan-thanh-qua-luong-day",
+     "label": "Hoàn thành qua luồng dạy",
+     "spec": "Khi giáo viên bấm `Hoàn thành buổi học` của bài đã gắn lịch: cùng xử lý như Hoàn thành ở trên (xanh lá, buổi hợp lệ, một khoản lương cho **giáo viên của buổi**), ghi audit nguồn là luồng dạy. Lịch đang gắn với buổi `Đang dạy` / `Chờ hoàn thành` vẫn ở `Đang đợi`, không chọn được cho buổi khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Hoàn thành qua luồng dạy",
+      "Hoàn thành buổi học"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A06.03",
+     "name": "huy-bo",
+     "label": "Hủy bỏ",
+     "spec": "Chuyển xám → loại khỏi số buổi hợp lệ → không tính lương → sinh một lịch cố định bù sau buổi hợp lệ cuối cùng → tăng Ngày kết thúc dự kiến.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Hủy bỏ",
+        "figmaId": "3650:48210",
+        "layer": "STATUS CALENDAR",
+        "confidence": "thap",
+        "region": null,
+        "owner": "STATUS CALENDAR",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH HUỶ BỎ"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A06.04",
+     "name": "sua-lich-chua-hoan-thanh",
+     "label": "Sửa lịch chưa hoàn thành",
+     "spec": "Cho phép role CRUD sửa ngày/giờ/giáo viên theo field UI chi tiết; phải kiểm tra trùng và cân bằng lịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Sửa lịch chưa hoàn thành"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A06.05",
+     "name": "xoa",
+     "label": "Xóa",
+     "spec": "Không xóa vật lý lịch chương trình. Thao tác loại bỏ lịch phải dùng trạng thái Hủy bỏ để giữ audit và kích hoạt sinh bù.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Xóa"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS.A07",
+   "name": "mo-lai-lich-da-hoan-thanh-va-dao-luong",
+   "title": "Mở lại lịch đã hoàn thành và đảo lương",
+   "screens": [
+    "adm-lop-040500"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040500"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS.A07.01",
+     "name": "nut-mo-lai",
+     "label": "Nút Mở lại",
+     "spec": "Chỉ hiển thị cho role CRUD khi lịch đang Hoàn thành; Teacher không thấy hành động này.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Mở lại"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A07.02",
+     "name": "ly-do-dieu-chinh",
+     "label": "Lý do điều chỉnh",
+     "spec": "Bắt buộc nhập, không chỉ có khoảng trắng; lưu vào audit lịch và bút toán lương.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lý do điều chỉnh"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A07.03",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "Nêu rõ lịch sẽ trở về Đang đợi và khoản lương đã phát sinh sẽ được đảo/điều chỉnh.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cảnh báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A07.04",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng popup, giữ nguyên lịch Hoàn thành và khoản lương hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Hủy",
+        "figmaId": "3650:48210",
+        "layer": "STATUS CALENDAR",
+        "confidence": "thap",
+        "region": null,
+        "owner": "STATUS CALENDAR",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH HUỶ BỎ"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A07.05",
+     "name": "xac-nhan-mo-lai",
+     "label": "Xác nhận mở lại",
+     "spec": "Thực hiện đảo lương và đổi trạng thái trong một giao dịch; sau thành công mới mở khóa các field chỉnh sửa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC39"
+     ],
+     "missingTerms": [
+      "Xác nhận mở lại"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS.A08",
+   "name": "toast-phan-hoi-crud-lich",
+   "title": "Toast phản hồi CRUD lịch",
+   "screens": [
+    "adm-lop-040500"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040500"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS.A08.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | `Đã thêm lịch linh hoạt.`, `Đã hoàn thành buổi học.`, `Đã hủy lịch và tạo buổi bù.`, `Đã mở lại lịch và điều chỉnh lương.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC44",
+      "M-CDS.TC45"
+     ],
+     "missingTerms": [
+      "Thành công",
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A08.02",
+     "name": "thong-tin",
+     "label": "Thông tin",
+     "spec": "`Thông Báo` | `Lịch đang được tái tạo, danh sách sẽ cập nhật sau ít phút.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Thông tin",
+        "figmaId": "I2384:57886;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thông Báo"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS.A08.03",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | `Giáo viên đã có lịch trong khung giờ này. Vui lòng chọn thời gian khác.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC45"
+     ],
+     "missingTerms": [
+      "Cảnh báo",
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A08.04",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | `Không thể cập nhật lịch. Vui lòng thử lại.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lỗi",
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-040500"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS.F01.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "2384:57886",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS.F01.02",
+     "name": "time",
+     "label": "Time",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Time",
+        "figmaId": "2384:57636",
+        "layer": "Time",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Time",
+        "component": "Time",
+        "variant": {
+         "Property 1": "Variant4"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS.F01.03",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "3772:85435",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Add Circle Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS.F01.04",
+     "name": "status-calendar",
+     "label": "STATUS CALENDAR",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "STATUS CALENDAR",
+        "figmaId": "2384:57688",
+        "layer": "STATUS CALENDAR",
+        "confidence": "cao",
+        "region": null,
+        "owner": "STATUS CALENDAR",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "Chưa có lịch"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS.F01.05",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Mouse click",
+        "figmaId": "2384:57712",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS.F01.06",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:229271",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Cài đặt"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS.F01.07",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040500": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3497:51175",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-CDS.EX01",
+   "text": "Không có quyền hoặc ngoài phạm vi lớp → không trả control CRUD và backend từ chối request thay đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.EX02",
+   "text": "Giờ kết thúc không sau giờ bắt đầu, dòng không chọn thứ, trùng lịch của lớp hoặc trùng lịch giáo viên tại bất kỳ lớp nào → cảnh báo, không cho tạo/lưu và đánh dấu đúng dòng/ngày.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.EX03",
+   "text": "Cấu hình cố định không thể sinh đủ N lịch hợp lệ → rollback toàn bộ cấu hình/lịch mới.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.EX04",
+   "text": "Một phần tử trong nhóm lịch linh hoạt không hợp lệ hoặc trùng lịch lớp/giáo viên → cảnh báo và không thêm một phần; trả danh sách cần sửa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.EX05",
+   "text": "Request của cùng một lần hoàn thành gửi lặp/đồng thời → một trạng thái hoàn thành, một khoản lương hiệu lực cho completion version đó và một kết quả logic.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.EX06",
+   "text": "Không tìm được khung bù hoặc các khung tiếp theo bị trùng → tiếp tục tìm; nếu không thể xếp thì không commit hủy một phần.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.EX07",
+   "text": "Request hủy lặp → dùng quan hệ lịch hủy–lịch bù đã lưu, không tạo bù/lịch sử/ngày kết thúc lặp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.EX08",
+   "text": "Lịch đã hoàn thành/hủy bị thao tác từ snapshot cũ → từ chối theo version/trạng thái mới nhất và yêu cầu tải lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.EX09",
+   "text": "Tạo/cập nhật lịch thành công nhưng bước liên quan lương, lịch bù hoặc ngày kết thúc lỗi → rollback giao dịch hoặc trả trạng thái phục hồi rõ ràng; không hiển thị thành công giả.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.EX10",
+   "text": "Khoản lương thuộc bảng lương đã khóa → không sửa/xóa kỳ cũ; tạo bút toán điều chỉnh ở kỳ cho phép hoặc từ chối toàn bộ thao tác Mở lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.EX11",
+   "text": "Request Mở lại gửi lặp/đồng thời → một bút toán đảo, một lần chuyển Đang đợi và một audit logic.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "M-CDS.FLOW01",
+   "name": "Xem lịch theo tuần",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ01",
+    "M-CDS.REQ02"
+   ]
+  },
+  {
+   "id": "M-CDS.FLOW02",
+   "name": "Thêm hoặc cập nhật lịch cố định",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ03"
+   ]
+  },
+  {
+   "id": "M-CDS.FLOW03",
+   "name": "Thêm lịch linh hoạt",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ04"
+   ]
+  },
+  {
+   "id": "M-CDS.FLOW04",
+   "name": "Mở thẻ, chỉnh sửa hoặc hoàn thành lịch",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ10",
+    "M-CDS.REQ06"
+   ]
+  },
+  {
+   "id": "M-CDS.FLOW05",
+   "name": "Hủy lịch và sinh buổi bù",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ07"
+   ]
+  },
+  {
+   "id": "M-CDS.FLOW06",
+   "name": "Mở lại lịch hoàn thành và đảo lương",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ11"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "M-CDS.TC01",
+   "title": "Case 1: Mở đúng lịch tuần của lớp",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC02",
+   "title": "Case 2: Chuyển tuần trước và sau",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW01"
+   ],
+   "items": [
+    "M-CDS.A01.06"
+   ]
+  },
+  {
+   "id": "M-CDS.TC03",
+   "title": "Case 3: Dấu cộng mở lịch linh hoạt đúng ngày",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A01",
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC04",
+   "title": "Case 4: Nút thêm cố định mở đúng tab",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A01",
+   "scenario": "Flow 2 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC05",
+   "title": "Case 5: Teacher chỉ xem lịch",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A01",
+   "scenario": "REQ02 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC06",
+   "title": "Case 6: Hiển thị nhiều hơn ba lịch trong ngày",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS.A01",
+   "scenario": "REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC07",
+   "title": "Case 7: Hiển thị đúng bốn trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A02",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC08",
+   "title": "Case 8: Trạng thái ghi đè màu nhưng giữ loại nguồn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A02",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A02.01",
+    "M-CDS.A02.02"
+   ]
+  },
+  {
+   "id": "M-CDS.TC09",
+   "title": "Case 9: Không nhận biết chỉ bằng màu",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS.A02",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC10",
+   "title": "Case 10: Thêm nhiều khung cố định hợp lệ",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS.A03",
+   "scenario": "Flow 2 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW02"
+   ],
+   "items": [
+    "M-CDS.A03.08"
+   ]
+  },
+  {
+   "id": "M-CDS.TC11",
+   "title": "Case 11: Chặn giờ kết thúc không hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A03",
+   "scenario": "EX02 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ03"
+   ],
+   "exceptions": [
+    "M-CDS.EX02"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS.A03.08"
+   ]
+  },
+  {
+   "id": "M-CDS.TC12",
+   "title": "Case 12: Chặn trùng lịch lớp hoặc lịch giáo viên ở lớp khác",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A03",
+   "scenario": "EX02 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ03"
+   ],
+   "exceptions": [
+    "M-CDS.EX02"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS.A03.08"
+   ]
+  },
+  {
+   "id": "M-CDS.TC13",
+   "title": "Case 13: Thêm và xóa dòng trước khi xác nhận",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS.A03",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A03.08"
+   ]
+  },
+  {
+   "id": "M-CDS.TC14",
+   "title": "Case 14: Bỏ khung cố định và tái sinh lịch tương lai",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A03",
+   "scenario": "Flow 2 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW02"
+   ],
+   "items": [
+    "M-CDS.A03.08"
+   ]
+  },
+  {
+   "id": "M-CDS.TC15",
+   "title": "Case 15: Không thể sinh đủ lịch",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A03",
+   "scenario": "EX03 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ03"
+   ],
+   "exceptions": [
+    "M-CDS.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS.A03.08"
+   ]
+  },
+  {
+   "id": "M-CDS.TC16",
+   "title": "Case 16: Tạo lịch linh hoạt từ dấu cộng",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS.A04",
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW03"
+   ],
+   "items": [
+    "M-CDS.A04.05"
+   ]
+  },
+  {
+   "id": "M-CDS.TC17",
+   "title": "Case 17: Thêm nhiều lịch linh hoạt nguyên tử",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A04",
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW03"
+   ],
+   "items": [
+    "M-CDS.A04.05"
+   ]
+  },
+  {
+   "id": "M-CDS.TC18",
+   "title": "Case 18: Chèn lịch và cân bằng về đúng N buổi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A04",
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC19",
+   "title": "Case 19: Một lịch trong nhóm bị trùng lịch lớp hoặc lịch giáo viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A04",
+   "scenario": "EX04 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ04"
+   ],
+   "exceptions": [
+    "M-CDS.EX04"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS.A04.05"
+   ]
+  },
+  {
+   "id": "M-CDS.TC20",
+   "title": "Case 20: Hủy popup linh hoạt",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS.A04",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC21",
+   "title": "Case 21: Mở đúng popup của thẻ được bấm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A05",
+   "scenario": "Flow 4 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW04"
+   ],
+   "items": [
+    "M-CDS.A05.01",
+    "M-CDS.A05.04",
+    "M-CDS.A05.06"
+   ]
+  },
+  {
+   "id": "M-CDS.TC22",
+   "title": "Case 22: Teacher xem popup ở chế độ chỉ đọc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A05",
+   "scenario": "REQ02 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A05.06",
+    "M-CDS.A05.08"
+   ]
+  },
+  {
+   "id": "M-CDS.TC23",
+   "title": "Case 23: Chỉnh ngày, giờ hoặc thời lượng hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A05",
+   "scenario": "REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A05.08"
+   ]
+  },
+  {
+   "id": "M-CDS.TC24",
+   "title": "Case 24: Đổi giáo viên không bị trùng lịch",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A05",
+   "scenario": "REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A05.04",
+    "M-CDS.A05.08"
+   ]
+  },
+  {
+   "id": "M-CDS.TC25",
+   "title": "Case 25: Chặn chỉnh sửa gây trùng lịch",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A05",
+   "scenario": "EX02 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ10"
+   ],
+   "exceptions": [
+    "M-CDS.EX02"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS.A05.04",
+    "M-CDS.A05.08"
+   ]
+  },
+  {
+   "id": "M-CDS.TC26",
+   "title": "Case 26: Nút Hủy chỉ đóng popup",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS.A05",
+   "scenario": "REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A05.06"
+   ]
+  },
+  {
+   "id": "M-CDS.TC27",
+   "title": "Case 27: Đổi trạng thái từ popup",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A05",
+   "scenario": "Flow 4–5 / REQ06–REQ07 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ06",
+    "M-CDS.REQ07",
+    "M-CDS.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW04"
+   ],
+   "items": [
+    "M-CDS.A05.06",
+    "M-CDS.A05.08"
+   ]
+  },
+  {
+   "id": "M-CDS.TC28",
+   "title": "Case 28: Hoàn thành lịch cố định",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS.A06",
+   "scenario": "Flow 4 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW04"
+   ],
+   "items": [
+    "M-CDS.A06.01"
+   ]
+  },
+  {
+   "id": "M-CDS.TC29",
+   "title": "Case 29: Hoàn thành lịch linh hoạt",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A06",
+   "scenario": "Flow 4 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW04"
+   ],
+   "items": [
+    "M-CDS.A06.01"
+   ]
+  },
+  {
+   "id": "M-CDS.TC30",
+   "title": "Case 30: Gửi lặp hoàn thành",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A06",
+   "scenario": "EX05 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ06"
+   ],
+   "exceptions": [
+    "M-CDS.EX05"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS.A06.01"
+   ]
+  },
+  {
+   "id": "M-CDS.TC31",
+   "title": "Case 31: Hủy lịch cố định và sinh buổi bù",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS.A06",
+   "scenario": "Flow 5 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC32",
+   "title": "Case 32: Hủy lịch linh hoạt và sinh buổi bù cố định",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A06",
+   "scenario": "Flow 5 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC33",
+   "title": "Case 33: Khung bù đầu tiên bị trùng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A06",
+   "scenario": "EX06 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ07"
+   ],
+   "exceptions": [
+    "M-CDS.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC34",
+   "title": "Case 34: Hủy lặp không sinh nhiều buổi bù",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A06",
+   "scenario": "EX07 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ07"
+   ],
+   "exceptions": [
+    "M-CDS.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC35",
+   "title": "Case 35: Chặn hoàn thành lịch hủy hoặc sửa trực tiếp lịch hoàn thành",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A06",
+   "scenario": "EX08 / REQ06 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ06",
+    "M-CDS.REQ11"
+   ],
+   "exceptions": [
+    "M-CDS.EX08"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS.A06.01"
+   ]
+  },
+  {
+   "id": "M-CDS.TC36",
+   "title": "Case 36: Không thể sinh lịch bù",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A06",
+   "scenario": "EX06 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ07"
+   ],
+   "exceptions": [
+    "M-CDS.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC37",
+   "title": "Case 37: Hiển thị hành động Mở lại đúng quyền",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A07",
+   "scenario": "Flow 6 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC38",
+   "title": "Case 38: Bắt buộc lý do khi mở lại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A07",
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC39",
+   "title": "Case 39: Mở lại và đảo lương thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A07",
+   "scenario": "Flow 6 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW06"
+   ],
+   "items": [
+    "M-CDS.A07.05"
+   ]
+  },
+  {
+   "id": "M-CDS.TC40",
+   "title": "Case 40: Mở lại rồi hủy lịch",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A07",
+   "scenario": "Flow 6 → Flow 5 / REQ07 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ07",
+    "M-CDS.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW06",
+    "M-CDS.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC41",
+   "title": "Case 41: Hoàn thành lại sau khi mở",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A07",
+   "scenario": "Flow 6 → Flow 4 / REQ06 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ06",
+    "M-CDS.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS.FLOW06",
+    "M-CDS.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC42",
+   "title": "Case 42: Bảng lương đã khóa",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A07",
+   "scenario": "EX10 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ11"
+   ],
+   "exceptions": [
+    "M-CDS.EX10"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC43",
+   "title": "Case 43: Gửi lặp yêu cầu Mở lại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A07",
+   "scenario": "EX11 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ11"
+   ],
+   "exceptions": [
+    "M-CDS.EX11"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS.TC44",
+   "title": "Case 44: Toast thành công đúng thao tác",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A08",
+   "scenario": "Ràng buộc Toast",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A08.01"
+   ]
+  },
+  {
+   "id": "M-CDS.TC45",
+   "title": "Case 45: Toast cảnh báo trùng lịch",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A08",
+   "scenario": "Ràng buộc Toast",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A08.01",
+    "M-CDS.A08.03"
+   ]
+  },
+  {
+   "id": "M-CDS.TC46",
+   "title": "Case 46: Toast lỗi khi giao dịch thất bại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A08",
+   "scenario": "Ràng buộc Toast",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-040510",
+   "text": "popup “Lớp học / Cài đặt / Lịch dạy / Popup thêm lịch dạy cố định” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-040520",
+   "text": "popup “Lớp học / Cài đặt / Lịch dạy / Popup thêm lịch dạy linh hoạt” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-040521",
+   "text": "trang-thai “Lớp học / Cài đặt / Lịch dạy / Popup thêm lịch dạy linh hoạt / Trùng lịch cố định” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-040521",
+   "text": "loại trang-thai, màn cha ADM-LOP-040520 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-040521",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDS.TC44",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDS.TC45",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDS.TC46",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDS.REQ08",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDS.REQ09",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDS.EX01",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDS.EX09",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/class_management/class_detail_schedule_requirements.md",
+   "prefix": "M-CDS",
+   "title": "Chi tiết lớp học — Tab Lịch dạy"
+  }
+ ]
+}

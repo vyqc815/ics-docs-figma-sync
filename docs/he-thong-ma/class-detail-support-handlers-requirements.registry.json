@@ -1,0 +1,1856 @@
+{
+ "cluster": "class-detail-support-handlers-requirements",
+ "title": "Chi tiết lớp học — Tab Trợ giảng & Phụ trách lớp",
+ "figmaPrefix": "M-CDS4",
+ "requirements": [
+  {
+   "id": "M-CDS4.REQ01",
+   "name": "Thuật ngữ và hiển thị",
+   "text": "Tab là `Trợ giảng & Phụ trách lớp`; Trợ giảng ánh xạ role Support, Phụ trách lớp ánh xạ role Class Handler. Mỗi danh sách chỉ có Tên, Email, Xóa; không có Phụ trách chính.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.REQ02",
+   "name": "Chọn Phụ trách lớp có sẵn",
+   "text": "Bấm `+` mở lựa chọn `Chọn phụ trách lớp` hoặc `Tạo phụ trách lớp mới`. Với flow chọn có sẵn, Admin/Class Handler tìm theo tên/email, multi-select các Class Handler đang hoạt động và chưa thuộc lớp; thêm nguyên tử.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.REQ03",
+   "name": "Chọn Trợ giảng có sẵn",
+   "text": "Bấm `+` mở lựa chọn `Chọn trợ giảng` hoặc `Tạo trợ giảng mới`. Với flow chọn có sẵn, Admin/Class Handler tìm theo tên/email, multi-select các Support đang hoạt động và chưa thuộc lớp; không có role Assistant Teacher riêng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.REQ04",
+   "name": "Tạo mới và tự thêm",
+   "text": "Dùng form tạo tài khoản dùng chung. Flow Phụ trách lớp khóa role `Class Handler`; flow Trợ giảng khóa role `Support`. Tạo xong tự thêm vào đúng lớp/khu vực; không cấp quyền chấm điểm; chống tạo trùng khi retry lỗi liên kết.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.REQ05",
+   "name": "Xóa quan hệ",
+   "text": "Bấm X gửi request ngay, không popup xác nhận; chỉ xóa quan hệ với lớp, không xóa tài khoản/lịch sử; idempotent.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.REQ06",
+   "name": "Quyền hỗ trợ, không chấm điểm",
+   "text": "Class Handler và Support được xem/hỗ trợ quản lý theo permission từng function nhưng không được nhập/cập nhật điểm BTVN hoặc bài kiểm tra. Chỉ Giáo viên phụ trách chính có quyền chấm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.REQ07",
+   "name": "Audit và an toàn",
+   "text": "Lưu người/thời điểm cho thao tác chọn có sẵn, tạo mới, tự thêm và xóa; không tin role/phạm vi do client gửi; text hiển thị an toàn và lỗi không lộ thông tin kỹ thuật/dữ liệu nhạy cảm.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LOP-040400": {
+   "id": "ADM-LOP-040400",
+   "name": "tro-giang-support",
+   "title": "Lớp học / Cài đặt / Trợ giảng & support",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-040300",
+   "shownOn": "ADM-LOP-040400",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2384:51368",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/cai-dat/tro-giang-support",
+   "link": "/lop-hoc/cai-dat/tro-giang-support",
+   "dark": "ADM-LOP-040400-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDS4.A01",
+    "M-CDS4.A02",
+    "M-CDS4.A03",
+    "M-CDS4.A04",
+    "M-CDS4.A05",
+    "M-CDS4.A06",
+    "M-CDS4.A07",
+    "M-CDS4.A08",
+    "M-CDS4.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-CDS4.A01",
+   "name": "tab-tro-giang-phu-trach-lop",
+   "title": "Tab Trợ giảng & Phụ trách lớp",
+   "screens": [
+    "adm-lop-040400"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040400"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_support_handlers_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS4.A01.01",
+     "name": "ten-tab",
+     "label": "Tên tab",
+     "spec": "`Trợ giảng & Phụ trách lớp`; không dùng `Trợ giảng & support`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tên tab",
+      "Trợ giảng & Phụ trách lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A01.02",
+     "name": "khu-vuc-tro-giang",
+     "label": "Khu vực Trợ giảng",
+     "spec": "Danh sách tài khoản role `Support` đã được thêm vào lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "Support",
+        "figmaId": "2384:54801",
+        "layer": "Support",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS4.TC01"
+     ],
+     "missingTerms": [
+      "Khu vực Trợ giảng"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS4.A01.03",
+     "name": "khu-vuc-phu-trach-lop",
+     "label": "Khu vực Phụ trách lớp",
+     "spec": "Danh sách tài khoản role `Class Handler` đã được thêm vào lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Khu vực Phụ trách lớp",
+      "Class Handler"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A01.04",
+     "name": "ten",
+     "label": "Tên",
+     "spec": "Hiển thị họ tên của đúng người dùng. Có thể kèm avatar/mã nội bộ nhưng không bắt buộc theo yêu cầu hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "Tên",
+        "figmaId": "2384:54739",
+        "layer": "Tên",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS4.A01.05",
+     "name": "email",
+     "label": "Email",
+     "spec": "Hiển thị email hiện tại của người dùng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS4.TC03"
+     ],
+     "missingTerms": [
+      "Email"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A01.06",
+     "name": "icon-x",
+     "label": "Icon X",
+     "spec": "Xóa người dùng khỏi đúng danh sách của lớp ngay khi bấm; không mở popup xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDS4.A06",
+       "raw": "mở popup xác nhận"
+      }
+     ],
+     "testcases": [
+      "M-CDS4.TC03"
+     ],
+     "missingTerms": [
+      "X"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A01.07",
+     "name": "nut-them",
+     "label": "Nút thêm +",
+     "spec": "Mở popup lựa chọn giữa `Chọn người có sẵn` và `Tạo mới`, giống pattern tại tab Giáo viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDS4.A01",
+       "raw": "Mở popup lựa chọn giữa `Chọn người có sẵn` và `Tạo mới`"
+      }
+     ],
+     "testcases": [
+      "M-CDS4.TC04"
+     ],
+     "missingTerms": [
+      "+"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS4.A02",
+   "name": "popup-chon-cach-them-nhan-su",
+   "title": "Popup chọn cách thêm nhân sự",
+   "screens": [
+    "adm-lop-040400"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040400"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_support_handlers_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS4.A02.01",
+     "name": "khu-vuc-phu-trach-lop",
+     "label": "Khu vực Phụ trách lớp",
+     "spec": "`Chọn phụ trách lớp` | `Tạo phụ trách lớp mới`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Khu vực Phụ trách lớp",
+      "Chọn phụ trách lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A02.02",
+     "name": "khu-vuc-tro-giang",
+     "label": "Khu vực Trợ giảng",
+     "spec": "`Chọn trợ giảng` | `Tạo trợ giảng mới`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Khu vực Trợ giảng",
+      "Chọn trợ giảng"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A02.03",
+     "name": "dong-huy",
+     "label": "Đóng/Hủy",
+     "spec": "Đóng popup, không tạo tài khoản và không thêm quan hệ với lớp | Áp dụng cho cả hai ngữ cảnh",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS4.TC08"
+     ],
+     "missingTerms": [
+      "Đóng/Hủy"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS4.A03",
+   "name": "popup-chon-phu-trach-lop-co-san",
+   "title": "Popup chọn Phụ trách lớp có sẵn",
+   "screens": [
+    "adm-lop-040400"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040400"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_support_handlers_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS4.A03.01",
+     "name": "tim-kiem",
+     "label": "Tìm kiếm",
+     "spec": "Tìm theo tên hoặc email; không phân biệt hoa/thường. Quy tắc dấu tiếng Việt dùng tìm kiếm chung của hệ thống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tìm kiếm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A03.02",
+     "name": "danh-sach-ket-qua",
+     "label": "Danh sách kết quả",
+     "spec": "Chỉ trả tài khoản `Class Handler` đang hoạt động, thuộc phạm vi và chưa được thêm vào lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Danh sách kết quả",
+      "Class Handler"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A03.03",
+     "name": "checkbox",
+     "label": "Checkbox",
+     "spec": "Cho chọn một hoặc nhiều người trong cùng lần thao tác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "Checkbox",
+        "figmaId": "2384:54775",
+        "layer": "Checkbox",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Checkbox",
+        "component": "Checkbox",
+        "variant": {
+         "Checked": "No",
+         "Size": "24",
+         "Disabled": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS4.A03.04",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng popup, không thêm các lựa chọn chưa xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "Hủy",
+        "figmaId": "2384:54753",
+        "layer": "Thanh huy - CSKH",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS4.A03.05",
+     "name": "them",
+     "label": "Thêm",
+     "spec": "Thêm toàn bộ lựa chọn hợp lệ vào danh sách Phụ trách lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS4.TC09",
+      "M-CDS4.TC11",
+      "M-CDS4.TC13"
+     ],
+     "missingTerms": [
+      "Thêm"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS4.A04",
+   "name": "popup-chon-tro-giang-co-san",
+   "title": "Popup chọn Trợ giảng có sẵn",
+   "screens": [
+    "adm-lop-040400"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040400"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_support_handlers_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS4.A04.01",
+     "name": "tim-kiem",
+     "label": "Tìm kiếm",
+     "spec": "Tìm theo tên hoặc email trong tập người dùng role Support.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tìm kiếm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A04.02",
+     "name": "danh-sach-ket-qua",
+     "label": "Danh sách kết quả",
+     "spec": "Chỉ trả Support đang hoạt động, thuộc phạm vi và chưa thuộc danh sách Trợ giảng của lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Danh sách kết quả"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A04.03",
+     "name": "checkbox",
+     "label": "Checkbox",
+     "spec": "Hỗ trợ multi-select.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "Checkbox",
+        "figmaId": "2384:54775",
+        "layer": "Checkbox",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Checkbox",
+        "component": "Checkbox",
+        "variant": {
+         "Checked": "No",
+         "Size": "24",
+         "Disabled": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS4.A04.04",
+     "name": "huy-them",
+     "label": "Hủy/Thêm",
+     "spec": "Hủy không lưu; Thêm tạo các quan hệ Support–lớp hợp lệ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Hủy/Thêm"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS4.A05",
+   "name": "popup-tao-phu-trach-lop-tro-giang-moi-du",
+   "title": "Popup Tạo Phụ trách lớp/Trợ giảng mới dùng chung",
+   "screens": [
+    "adm-lop-040400"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040400"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_support_handlers_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS4.A05.01",
+     "name": "form-tao-tai-khoan",
+     "label": "Form tạo tài khoản",
+     "spec": "Dùng chung component, validation và quy tắc kiểm tra trùng của module quản lý tài khoản/nhân sự; không tạo một bộ rule riêng trong tab lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Form tạo tài khoản"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A05.02",
+     "name": "role",
+     "label": "Role",
+     "spec": "Ẩn hoặc chỉ đọc. Mở từ `Tạo phụ trách lớp mới` thì cố định `Class Handler`; mở từ `Tạo trợ giảng mới` thì cố định `Support`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS4.TC17",
+      "M-CDS4.TC18",
+      "M-CDS4.TC19",
+      "M-CDS4.TC20"
+     ],
+     "missingTerms": [
+      "Role",
+      "Tạo phụ trách lớp mới"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A05.03",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng popup; không tạo tài khoản và không thêm vào lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "Hủy",
+        "figmaId": "2384:54753",
+        "layer": "Thanh huy - CSKH",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS4.A05.04",
+     "name": "xac-nhan-tao",
+     "label": "Xác nhận/Tạo",
+     "spec": "Validate → tạo tài khoản → tạo quan hệ với đúng lớp và đúng khu vực → tải lại danh sách → Toast.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS4.TC18",
+      "M-CDS4.TC20"
+     ],
+     "missingTerms": [
+      "Xác nhận/Tạo"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS4.A06",
+   "name": "icon-xoa-khoi-lop-khong-can-xac-nhan",
+   "title": "Icon Xóa khỏi lớp không cần xác nhận",
+   "screens": [
+    "adm-lop-040400"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040400"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_support_handlers_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS4.A06.01",
+     "name": "icon-x",
+     "label": "Icon X",
+     "spec": "Gắn với đúng user và đúng loại quan hệ đang hiển thị.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "X"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A06.02",
+     "name": "khi-bam",
+     "label": "Khi bấm",
+     "spec": "Gửi một request xóa quan hệ ngay; disable icon trong lúc xử lý để tránh gửi lặp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Khi bấm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A06.03",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "Xóa dòng khỏi đúng khu vực và hiển thị Toast thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS4.TC23",
+      "M-CDS4.TC24",
+      "M-CDS4.TC25"
+     ],
+     "missingTerms": [
+      "Thành công"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A06.04",
+     "name": "that-bai",
+     "label": "Thất bại",
+     "spec": "Giữ/khôi phục dòng, hiển thị lỗi và cho phép thử lại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS4.TC25"
+     ],
+     "missingTerms": [
+      "Thất bại"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS4.A07",
+   "name": "phan-quyen-ho-tro-lop-va-gioi-han-cham-d",
+   "title": "Phân quyền hỗ trợ lớp và giới hạn chấm điểm",
+   "screens": [
+    "adm-lop-040400"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040400"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_support_handlers_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS4.A07.01",
+     "name": "xem-lop",
+     "label": "Xem lớp",
+     "spec": "Có, trong phạm vi được phân công | Có, trong phạm vi được phân công",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Xem lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A07.02",
+     "name": "ho-tro-quan-ly",
+     "label": "Hỗ trợ quản lý",
+     "spec": "Có, theo permission từng function | Có, theo permission từng function",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS4.TC27"
+     ],
+     "missingTerms": [
+      "Hỗ trợ quản lý"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A07.03",
+     "name": "them-xoa-nhan-su-tai-tab-nay",
+     "label": "Thêm/xóa nhân sự tại tab này",
+     "spec": "Class Handler được thao tác | Support chỉ xem",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thêm/xóa nhân sự tại tab này"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A07.04",
+     "name": "cham-diem-btvn",
+     "label": "Chấm điểm BTVN",
+     "spec": "Không | Không",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chấm điểm BTVN"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A07.05",
+     "name": "cham-diem-bai-kiem-tra",
+     "label": "Chấm điểm bài kiểm tra",
+     "spec": "Không | Không",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chấm điểm bài kiểm tra"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS4.A08",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [
+    "adm-lop-040400"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040400"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_support_handlers_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS4.A08.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | `Đã tạo và thêm phụ trách lớp.`, `Đã thêm trợ giảng.`, `Đã xóa trợ giảng khỏi lớp.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS4.TTC01",
+      "M-CDS4.TTC02",
+      "M-CDS4.TTC04"
+     ],
+     "missingTerms": [
+      "Thành công",
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A08.02",
+     "name": "thong-tin",
+     "label": "Thông tin",
+     "spec": "`Thông Báo` | Danh sách đang chờ đồng bộ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "Thông tin",
+        "figmaId": "I2384:54702;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thông Báo"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS4.A08.03",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | User đã thuộc lớp, sai role hoặc không còn hợp lệ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS4.TTC02"
+     ],
+     "missingTerms": [
+      "Cảnh báo",
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS4.A08.04",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | Không thể hoàn tất request.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lỗi",
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS4.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-040400"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS4.F01.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "2384:54702",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS4.F01.02",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "2384:54729",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS4.F01.03",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "Mouse click",
+        "figmaId": "2384:54762",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS4.F01.04",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:229497",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Cài đặt"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS4.F01.05",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040400": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3497:51034",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-CDS4.EX01",
+   "text": "Popup Phụ trách lớp nhận user không phải Class Handler, đã thuộc lớp, bị khóa hoặc ngoài phạm vi → từ chối toàn bộ multi-select.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.EX02",
+   "text": "Popup Trợ giảng nhận user không phải Support, đã thuộc lớp, bị khóa hoặc ngoài phạm vi → từ chối toàn bộ multi-select.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.EX03",
+   "text": "Flow tạo mới nhận dữ liệu trùng/sai validation, role bị sửa hoặc người dùng mất quyền → không tạo tài khoản và quan hệ một phần; trả lỗi đúng field/nguyên nhân.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.EX04",
+   "text": "Tạo tài khoản thành công nhưng gắn lớp thất bại → không hiển thị quan hệ giả; retry bằng ID/idempotency key cũ, không tạo tài khoản trùng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.EX05",
+   "text": "Xóa thất bại, request lặp hoặc quan hệ đã đổi → xử lý idempotent, không xóa nhầm tài khoản/người khác và đồng bộ lại UI.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.EX06",
+   "text": "Class Handler hoặc Support gửi request chấm điểm BTVN/bài kiểm tra → backend từ chối, kể cả người đó đang được phân công vào lớp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS4.EX07",
+   "text": "Role không phải Admin/Class Handler gửi request chọn có sẵn, tạo mới hoặc xóa nhân sự tại tab → backend từ chối; Support chỉ xem.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "M-CDS4.FLOW01",
+   "name": "Xem hai danh sách đúng role",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ01"
+   ]
+  },
+  {
+   "id": "M-CDS4.FLOW02",
+   "name": "Chọn Phụ trách lớp có sẵn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ02"
+   ]
+  },
+  {
+   "id": "M-CDS4.FLOW03",
+   "name": "Chọn Trợ giảng có sẵn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ03"
+   ]
+  },
+  {
+   "id": "M-CDS4.FLOW04",
+   "name": "Tạo nhân sự mới và tự thêm vào lớp",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ04"
+   ]
+  },
+  {
+   "id": "M-CDS4.FLOW05",
+   "name": "Xóa không cần xác nhận",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ05"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "M-CDS4.TC01",
+   "title": "Case 1: Hiển thị đúng tên tab và khu vực",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW01"
+   ],
+   "items": [
+    "M-CDS4.A01.02"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC02",
+   "title": "Case 2: Mapping đúng role vào hai danh sách",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS4.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC03",
+   "title": "Case 3: Hiển thị đúng ba cột",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A01",
+   "scenario": "REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS4.A01.05",
+    "M-CDS4.A01.06"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC04",
+   "title": "Case 4: Danh sách rỗng độc lập",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS4.A01",
+   "scenario": "REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS4.A01.07"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC05",
+   "title": "Case 5: Mở lựa chọn thêm Phụ trách lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A02",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC06",
+   "title": "Case 6: Mở lựa chọn thêm Trợ giảng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A02",
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC07",
+   "title": "Case 7: Điều hướng đúng flow con",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A02",
+   "scenario": "Flow 2–4 / REQ02–REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ02",
+    "M-CDS4.REQ03",
+    "M-CDS4.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC08",
+   "title": "Case 8: Đóng popup lựa chọn",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS4.A02",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS4.A02.03"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC09",
+   "title": "Case 9: Mở popup và tìm theo tên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A03",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW02"
+   ],
+   "items": [
+    "M-CDS4.A03.05"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC10",
+   "title": "Case 10: Tìm Phụ trách lớp theo email",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A03",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC11",
+   "title": "Case 11: Thêm nhiều Phụ trách lớp",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS4.A03",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW02"
+   ],
+   "items": [
+    "M-CDS4.A03.05"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC12",
+   "title": "Case 12: Hủy popup chọn Phụ trách lớp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS4.A03",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC13",
+   "title": "Case 13: Từ chối user sai role, trùng hoặc không còn hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A03",
+   "scenario": "EX01 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ02"
+   ],
+   "exceptions": [
+    "M-CDS4.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS4.A03.05"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC14",
+   "title": "Case 14: Tìm Trợ giảng theo tên hoặc email",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A04",
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC15",
+   "title": "Case 15: Thêm nhiều Trợ giảng",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS4.A04",
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC16",
+   "title": "Case 16: Chặn role sai hoặc Support trùng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A04",
+   "scenario": "EX02 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ03"
+   ],
+   "exceptions": [
+    "M-CDS4.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC17",
+   "title": "Case 17: Mở form tạo Phụ trách lớp đúng role",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A05",
+   "scenario": "Flow 4 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW04"
+   ],
+   "items": [
+    "M-CDS4.A05.02"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC18",
+   "title": "Case 18: Tạo Phụ trách lớp và tự thêm vào lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A05",
+   "scenario": "Flow 4 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW04"
+   ],
+   "items": [
+    "M-CDS4.A05.02",
+    "M-CDS4.A05.04"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC19",
+   "title": "Case 19: Mở form tạo Trợ giảng đúng role",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A05",
+   "scenario": "Flow 4 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW04"
+   ],
+   "items": [
+    "M-CDS4.A05.02"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC20",
+   "title": "Case 20: Tạo Trợ giảng và tự thêm vào lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A05",
+   "scenario": "Flow 4 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW04"
+   ],
+   "items": [
+    "M-CDS4.A05.02",
+    "M-CDS4.A05.04"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC21",
+   "title": "Case 21: Chặn dữ liệu trùng, sai validation hoặc sửa role",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A05",
+   "scenario": "EX03 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ04"
+   ],
+   "exceptions": [
+    "M-CDS4.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC22",
+   "title": "Case 22: Tạo tài khoản thành công nhưng gắn lớp thất bại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A05",
+   "scenario": "EX04 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ04"
+   ],
+   "exceptions": [
+    "M-CDS4.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC23",
+   "title": "Case 23: Xóa Phụ trách lớp ngay khi bấm X",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS4.A06",
+   "scenario": "Flow 5 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW05"
+   ],
+   "items": [
+    "M-CDS4.A06.03"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC24",
+   "title": "Case 24: Xóa Trợ giảng ngay khi bấm X",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A06",
+   "scenario": "Flow 5 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS4.FLOW05"
+   ],
+   "items": [
+    "M-CDS4.A06.03"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC25",
+   "title": "Case 25: Xóa thất bại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A06",
+   "scenario": "EX05 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ05"
+   ],
+   "exceptions": [
+    "M-CDS4.EX05"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS4.A06.03",
+    "M-CDS4.A06.04"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC26",
+   "title": "Case 26: Bấm X lặp hoặc quan hệ đã bị xóa",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS4.A06",
+   "scenario": "EX05 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ05"
+   ],
+   "exceptions": [
+    "M-CDS4.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC27",
+   "title": "Case 27: Class Handler xem và hỗ trợ quản lý lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A07",
+   "scenario": "REQ06 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS4.A07.02"
+   ]
+  },
+  {
+   "id": "M-CDS4.TC28",
+   "title": "Case 28: Support xem và hỗ trợ quản lý lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A07",
+   "scenario": "REQ06 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC29",
+   "title": "Case 29: Backend từ chối Phụ trách lớp chấm điểm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A07",
+   "scenario": "EX06 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ06"
+   ],
+   "exceptions": [
+    "M-CDS4.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TC30",
+   "title": "Case 30: Backend từ chối Trợ giảng chấm điểm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A07",
+   "scenario": "EX06 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS4.REQ06"
+   ],
+   "exceptions": [
+    "M-CDS4.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TTC01",
+   "title": "Toast Case 1: Thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS4.A08.01"
+   ]
+  },
+  {
+   "id": "M-CDS4.TTC02",
+   "title": "Toast Case 2: Cảnh báo",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS4.A08.01",
+    "M-CDS4.A08.03"
+   ]
+  },
+  {
+   "id": "M-CDS4.TTC03",
+   "title": "Toast Case 3: Lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS4.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS4.TTC04",
+   "title": "Toast Case 4: Thông tin và chống lặp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS4.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS4.A08.01"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDS4.TTC01",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDS4.TTC02",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDS4.TTC03",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDS4.TTC04",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDS4.REQ07",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDS4.EX07",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/class_management/class_detail_support_handlers_requirements.md",
+   "prefix": "M-CDS4",
+   "title": "Chi tiết lớp học — Tab Trợ giảng & Phụ trách lớp"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "cluster": "chua-co-req-sys-err-01",
+ "title": "SYS-ERR-01xx (chưa có requirement)",
+ "figmaPrefix": "SYS-ERR-01",
+ "requirements": [],
+ "screens": {
+  "SYS-ERR-010000": {
+   "id": "SYS-ERR-010000",
+   "name": "loi-403-khong-co-quyen-truy-cap",
+   "title": "Lỗi 403 · Không có quyền truy cập",
+   "kind": "trang-thai",
+   "parent": null,
+   "shownOn": null,
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5789:152449",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/loi-403-khong-co-quyen-truy-cap",
+   "link": null,
+   "dark": "SYS-ERR-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "SYS-ERR-010000",
+   "text": "trang-thai “Lỗi 403 · Không có quyền truy cập” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "popup-khong-co-man-cha",
+   "ref": "SYS-ERR-010000",
+   "text": "chưa xác định được màn chính để mở"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "SYS-ERR-010000",
+   "text": "loại trang-thai, màn cha None — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "SYS-ERR-010000",
+   "text": "không có prototype link nào đi vào frame"
+  }
+ ]
+}

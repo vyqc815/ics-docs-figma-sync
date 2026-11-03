@@ -1,0 +1,55 @@
+{
+ "cluster": "chua-co-req-pro-gd-01",
+ "title": "PRO-GD-01xx (chưa có requirement)",
+ "figmaPrefix": "PRO-GD-01",
+ "requirements": [],
+ "screens": {
+  "PRO-GD-010010": {
+   "id": "PRO-GD-010010",
+   "name": "popup-chon-mau-giao-dien",
+   "title": "Hồ sơ / Popup chọn màu giao diện",
+   "kind": "popup",
+   "parent": null,
+   "shownOn": null,
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4273:166221",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": null,
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "PRO-GD-010010",
+   "text": "popup “Hồ sơ / Popup chọn màu giao diện” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "popup-khong-co-man-cha",
+   "ref": "PRO-GD-010010",
+   "text": "chưa xác định được màn chính để mở"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "PRO-GD-010010",
+   "text": "loại popup, màn cha None — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "PRO-GD-010010",
+   "text": "không có prototype link nào đi vào frame"
+  }
+ ]
+}

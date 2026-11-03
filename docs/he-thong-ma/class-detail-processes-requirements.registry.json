@@ -1,0 +1,1715 @@
+{
+ "cluster": "class-detail-processes-requirements",
+ "title": "Chi tiết lớp học — Tiêu chuẩn lớp - giáo viên, CSKH và Quy trình lớp",
+ "figmaPrefix": "M-CDP",
+ "requirements": [
+  {
+   "id": "M-CDP.REQ01",
+   "name": "Nguồn",
+   "text": "Ba loại quy trình được định nghĩa riêng ngoài lớp. Nguồn ICS dùng chung bảng ComGao và theo center. Popup chỉ hiển thị Package từ quy trình Công khai cùng center: tab Tiêu chuẩn lớp - giáo viên lấy Lớp - Giáo viên, CSKH lấy CSKH (Support), Quy trình lớp lấy Lớp học.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDP.REQ02",
+   "name": "Quyền",
+   "text": "Phải được add vào lớp mới được vào Chi tiết lớp và xem tab theo quyền. Chỉ Class Handler/Support của lớp được Thêm và cập nhật Result; không phụ thuộc người đã thêm item. Ngoại lệ: Giáo viên của lớp tick Action `Xác thực` có mình trong Người gán (tab Tiêu chuẩn lớp - giáo viên).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDP.REQ03",
+   "name": "Result",
+   "text": "Lưu riêng theo lớp, loại quy trình và Action Item; tiến độ theo Action Board. Định nghĩa đã Công khai bị khóa thêm/sửa/xóa nên không có tình huống đổi Loại task hoặc xóa item nguồn sau khi gắn vào lớp. Khi nguồn Công khai, cập nhật Result theo quyền lớp. Khi nguồn Vô hiệu, vẫn hiện nội dung/Result cũ nhưng chỉ xem; Công khai lại thì áp dụng quyền cập nhật theo role lớp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDP.REQ04",
+   "name": "Chọn nội dung",
+   "text": "Chọn nhiều cấp; Hủy không lưu; không thêm trùng hoặc tự ghi Result; chỉ lưu nguồn còn Công khai.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDP.REQ05",
+   "name": "Phản hồi",
+   "text": "Lưu thành công/lỗi có một Toast đúng kết quả; Hủy và chỉ xem không có Toast CRUD.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LOP-020600": {
+   "id": "ADM-LOP-020600",
+   "name": "tieu-chuan-lop-giao-vien",
+   "title": "Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-020303",
+   "shownOn": "ADM-LOP-020600",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "769:37409",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien",
+   "link": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien",
+   "dark": "ADM-LOP-020600-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDP.A03",
+    "M-CDP.F01",
+    "M-CDP.F02"
+   ]
+  },
+  "ADM-LOP-020604": {
+   "id": "ADM-LOP-020604",
+   "name": "trong",
+   "title": "Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Trống",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-020600",
+   "shownOn": "ADM-LOP-020600",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2711:52388",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien/trong",
+   "link": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020604",
+   "dark": "ADM-LOP-020604-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-LOP-020610": {
+   "id": "ADM-LOP-020610",
+   "name": "popup-them-tieu-chuan",
+   "title": "Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Popup thêm tiêu chuẩn",
+   "kind": "popup",
+   "parent": "ADM-LOP-020600",
+   "shownOn": "ADM-LOP-020600",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2711:50590",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?popup=ADM-LOP-020610",
+   "dark": "ADM-LOP-020610-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-CDP.A02"
+   ]
+  },
+  "ADM-LOP-020611": {
+   "id": "ADM-LOP-020611",
+   "name": "xem-truoc",
+   "title": "Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Popup thêm tiêu chuẩn / Xem trước",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-020610",
+   "shownOn": "ADM-LOP-020600",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2711:53620",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020611",
+   "dark": "ADM-LOP-020611-DK",
+   "openedFrom": [
+    "ADM-LOP-020610"
+   ],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-LOP-020612": {
+   "id": "ADM-LOP-020612",
+   "name": "xem-tieu-chi",
+   "title": "Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Popup thêm tiêu chuẩn / Xem tiêu chí",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-020611",
+   "shownOn": "ADM-LOP-020600",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2711:54002",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020612",
+   "dark": "ADM-LOP-020612-DK",
+   "openedFrom": [
+    "ADM-LOP-020611"
+   ],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-LOP-020700": {
+   "id": "ADM-LOP-020700",
+   "name": "quy-trinh-lop",
+   "title": "Chi tiết lớp học / Quy trình lớp",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-020600",
+   "shownOn": "ADM-LOP-020700",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2711:61204",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop-hoc/quy-trinh-lop",
+   "link": "/chi-tiet-lop-hoc/quy-trinh-lop",
+   "dark": "ADM-LOP-020700-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDP.A03",
+    "M-CDP.F01",
+    "M-CDP.F02",
+    "M-CDP.F03",
+    "M-CDP.F04",
+    "M-CDP.F05",
+    "M-CDP.F06",
+    "M-CDP.F07"
+   ]
+  },
+  "ADM-LOP-020704": {
+   "id": "ADM-LOP-020704",
+   "name": "trong",
+   "title": "Chi tiết lớp học / Quy trình lớp / Trống",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-020700",
+   "shownOn": "ADM-LOP-020700",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2711:61714",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop-hoc/quy-trinh-lop/trong",
+   "link": "/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020704",
+   "dark": "ADM-LOP-020704-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-LOP-020710": {
+   "id": "ADM-LOP-020710",
+   "name": "popup-them-quy-trinh",
+   "title": "Chi tiết lớp học / Quy trình lớp / Popup thêm quy trình",
+   "kind": "popup",
+   "parent": "ADM-LOP-020700",
+   "shownOn": "ADM-LOP-020700",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3772:87161",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop-hoc/quy-trinh-lop?popup=ADM-LOP-020710",
+   "dark": "ADM-LOP-020710-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-CDP.A01"
+   ]
+  },
+  "ADM-LOP-020711": {
+   "id": "ADM-LOP-020711",
+   "name": "xem-truoc",
+   "title": "Chi tiết lớp học / Quy trình lớp / Popup thêm quy trình / Xem trước",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-020710",
+   "shownOn": "ADM-LOP-020700",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3772:87185",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020711",
+   "dark": "ADM-LOP-020711-DK",
+   "openedFrom": [
+    "ADM-LOP-020710"
+   ],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-LOP-020712": {
+   "id": "ADM-LOP-020712",
+   "name": "xem-tieu-chi",
+   "title": "Chi tiết lớp học / Quy trình lớp / Popup thêm quy trình / Xem tiêu chí",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-020711",
+   "shownOn": "ADM-LOP-020700",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3772:87240",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020712",
+   "dark": "ADM-LOP-020712-DK",
+   "openedFrom": [
+    "ADM-LOP-020711"
+   ],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-LOP-020800": {
+   "id": "ADM-LOP-020800",
+   "name": "cskh",
+   "title": "Chi tiết lớp học / CSKH",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-020700",
+   "shownOn": "ADM-LOP-020800",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2711:64949",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop-hoc/cskh",
+   "link": "/chi-tiet-lop-hoc/cskh",
+   "dark": "ADM-LOP-020800-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDP.A03",
+    "M-CDP.F01",
+    "M-CDP.F02",
+    "M-CDP.F03",
+    "M-CDP.F04",
+    "M-CDP.F05",
+    "M-CDP.F06",
+    "M-CDP.F07"
+   ]
+  },
+  "ADM-LOP-020804": {
+   "id": "ADM-LOP-020804",
+   "name": "trong",
+   "title": "Chi tiết lớp học / CSKH / Trống",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-020800",
+   "shownOn": "ADM-LOP-020800",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2711:65419",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop-hoc/cskh/trong",
+   "link": "/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020804",
+   "dark": "ADM-LOP-020804-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-LOP-020810": {
+   "id": "ADM-LOP-020810",
+   "name": "popup-them-quy-trinh-cskh",
+   "title": "Chi tiết lớp học / CSKH / Popup thêm quy trình CSKH",
+   "kind": "popup",
+   "parent": "ADM-LOP-020800",
+   "shownOn": "ADM-LOP-020800",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2711:65257",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop-hoc/cskh?popup=ADM-LOP-020810",
+   "dark": "ADM-LOP-020810-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-CDP.A01"
+   ]
+  },
+  "ADM-LOP-020811": {
+   "id": "ADM-LOP-020811",
+   "name": "xem-truoc",
+   "title": "Chi tiết lớp học / CSKH / Popup thêm quy trình CSKH / Xem trước",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-020810",
+   "shownOn": "ADM-LOP-020800",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2711:65273",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020811",
+   "dark": "ADM-LOP-020811-DK",
+   "openedFrom": [
+    "ADM-LOP-020810"
+   ],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-LOP-020812": {
+   "id": "ADM-LOP-020812",
+   "name": "xem-tieu-chi",
+   "title": "Chi tiết lớp học / CSKH / Popup thêm quy trình CSKH / Xem tiêu chí",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-020811",
+   "shownOn": "ADM-LOP-020800",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2711:65320",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020812",
+   "dark": "ADM-LOP-020812-DK",
+   "openedFrom": [
+    "ADM-LOP-020811"
+   ],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-LOP-020904": {
+   "id": "ADM-LOP-020904",
+   "name": "trong",
+   "title": "Chi tiết lớp học / Cuộc họp / Trống",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-020800",
+   "shownOn": "ADM-LOP-020800",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "769:38815",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop-hoc/cuoc-hop/trong",
+   "link": "/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020904",
+   "dark": "ADM-LOP-020904-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [
+  {
+   "id": "M-CDP.A01",
+   "name": "ba-tab-quy-trinh-trong-lop",
+   "title": "Ba tab quy trình trong lớp",
+   "screens": [
+    "adm-lop-020710",
+    "adm-lop-020810"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020710",
+    "ADM-LOP-020810"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_processes_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDP.A01.01",
+     "name": "ten-tab",
+     "label": "Tên tab",
+     "spec": "Mỗi tab lấy đúng loại quy trình tương ứng đã định nghĩa ngoài lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDP.A01.02",
+     "name": "tien-do",
+     "label": "Tiến độ",
+     "spec": "Hiển thị tiến độ tổng, Package, Category và số item hoàn thành như `2/7`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDP.TC01"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDP.A01.03",
+     "name": "action-item",
+     "label": "Action Item",
+     "spec": "Mở/thu gọn để xem nội dung và control Result theo loại Action.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDP.A01.04",
+     "name": "nut-them",
+     "label": "Nút Thêm",
+     "spec": "`Thêm tiêu chuẩn` ở tab Tiêu chuẩn lớp - giáo viên; `Thêm quy trình` ở tab CSKH và Quy trình lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDP.A02",
+   "name": "popup-them-noi-dung",
+   "title": "Popup Thêm nội dung",
+   "screens": [
+    "adm-lop-020610"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020610"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_processes_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDP.A02.01",
+     "name": "tieu-chuan-lop-giao-vien-them-tieu-chuan",
+     "label": "Tiêu chuẩn lớp - giáo viên → Thêm tiêu chuẩn",
+     "spec": "Chỉ hiển thị Package từ loại `Lớp - Giáo viên`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDP.A02.02",
+     "name": "cskh-them-quy-trinh",
+     "label": "CSKH → Thêm quy trình",
+     "spec": "Chỉ hiển thị Package từ loại `CSKH` (Support).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDP.A02.03",
+     "name": "quy-trinh-lop-them-quy-trinh",
+     "label": "Quy trình lớp → Thêm quy trình",
+     "spec": "Chỉ hiển thị Package từ loại `Lớp học`; ảnh có Package `Khai giảng`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDP.A02.04",
+     "name": "cay-lua-chon",
+     "label": "Cây lựa chọn",
+     "spec": "Mở/thu gọn, chọn nhiều cấp bằng checkbox; chọn cha chọn các mục con, có thể bỏ chọn mục con.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDP.A02.05",
+     "name": "category-action-item",
+     "label": "Category / Action Item",
+     "spec": "Hiển thị badge tiến độ Category như `10/10` và nhãn loại Action như `Task tiến trình`, `Hướng dẫn`, `Kiểm tra` theo nguồn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDP.TC03"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDP.A02.06",
+     "name": "them-1",
+     "label": "Thêm (1)",
+     "spec": "Xác nhận lựa chọn; ảnh thể hiện một Package được chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDP.A02.07",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng popup, không lưu lựa chọn mới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDP.A03",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [
+    "adm-lop-020600",
+    "adm-lop-020700",
+    "adm-lop-020800"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020600",
+    "ADM-LOP-020700",
+    "ADM-LOP-020800"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_processes_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDP.A03.01",
+     "name": "thanh-cong",
+     "label": "Thành Công",
+     "spec": "Lưu thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDP.TC05"
+     ],
+     "missingTerms": [
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDP.A03.02",
+     "name": "thong-bao",
+     "label": "Thông Báo",
+     "spec": "Chỉ khi thao tác đã tiếp nhận nhưng còn chờ đồng bộ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thông Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDP.A03.03",
+     "name": "canh-bao",
+     "label": "Cảnh Báo",
+     "spec": "Lựa chọn hoặc Result không hợp lệ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDP.A03.04",
+     "name": "co-loi-xay-ra",
+     "label": "Có Lỗi Xảy Ra",
+     "spec": "Lưu thất bại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDP.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-020600",
+    "adm-lop-020700",
+    "adm-lop-020800"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDP.F01.01",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020600": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "3502:77182",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Thêm quy trình",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F01.02",
+     "name": "global-progress-bar",
+     "label": "Global Progress Bar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020600": [
+       {
+        "term": "Global Progress Bar",
+        "figmaId": "3502:77193",
+        "layer": "Global Progress Bar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Global Progress Bar",
+        "component": "Global Progress Bar",
+        "variant": {
+         "Property 1": "Progress ngang ( Không % )"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F01.03",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020600": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "3502:77195",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1/1",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F01.04",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020600": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "2711:51750",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Time": "4 ngày trước",
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Label": "17:00 - 30.09.2026",
+         "Type": "Date"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F01.05",
+     "name": "atom-label",
+     "label": "Atom/Label",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020600": [
+       {
+        "term": "Atom/Label",
+        "figmaId": "3857:71648",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Ghi chú",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F01.06",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020600": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2711:51794",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Kiểm tra sau buổi 8",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F01.07",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020600": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3497:47434",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F01.08",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020600": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:226785",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Tiêu chuẩn Lớp - GV"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F01.09",
+     "name": "atom-badge-type",
+     "label": "Atom/Badge Type",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020700": [
+       {
+        "term": "Atom/Badge Type",
+        "figmaId": "2711:61497",
+        "layer": "Atom/Badge Type",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge Type",
+        "component": "Atom/Badge Type",
+        "variant": {
+         "Variant": "Log",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M-CDP.F02",
+   "name": "row",
+   "title": "Row",
+   "screens": [
+    "adm-lop-020600",
+    "adm-lop-020700",
+    "adm-lop-020800"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDP.F02.01",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020600": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "3857:71646",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Nhập ghi chú...",
+         "State": "Default",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F02.02",
+     "name": "atom-label",
+     "label": "Atom/Label",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020600": [
+       {
+        "term": "Atom/Label",
+        "figmaId": "3857:71662",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "3065:52444",
+         "Label": "Kết quả",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M-CDP.F03",
+   "name": "file",
+   "title": "File",
+   "screens": [
+    "adm-lop-020700",
+    "adm-lop-020800"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDP.F03.01",
+     "name": "atom-uploaded-file-card",
+     "label": "Atom/Uploaded File Card",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020700": [
+       {
+        "term": "Atom/Uploaded File Card",
+        "figmaId": "2711:61388",
+        "layer": "Atom/Uploaded File Card",
+        "confidence": "cao",
+        "region": "File",
+        "owner": "Atom/Uploaded File Card",
+        "component": "Atom/Uploaded File Card",
+        "variant": {
+         "Type": "Menu"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M-CDP.F04",
+   "name": "field-ghi-chu",
+   "title": "Field · Ghi chú",
+   "screens": [
+    "adm-lop-020700",
+    "adm-lop-020800"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDP.F04.01",
+     "name": "atom-label",
+     "label": "Atom/Label",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020700": [
+       {
+        "term": "Atom/Label",
+        "figmaId": "3857:71832",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Ghi chú",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Ghi chú",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F04.02",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020700": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "3772:86479",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Field · Ghi chú",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Nhập ghi chú...",
+         "State": "Default",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M-CDP.F05",
+   "name": "verify",
+   "title": "Verify",
+   "screens": [
+    "adm-lop-020700",
+    "adm-lop-020800"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDP.F05.01",
+     "name": "atom-label",
+     "label": "Atom/Label",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020700": [
+       {
+        "term": "Atom/Label",
+        "figmaId": "3857:71889",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Verify",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "738:25432",
+         "Label": "Người xác thực · Class Handler",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F05.02",
+     "name": "avatar-name",
+     "label": "AVATAR + Name",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020700": [
+       {
+        "term": "AVATAR + Name",
+        "figmaId": "2711:61488",
+        "layer": "AVATAR + Name",
+        "confidence": "cao",
+        "region": "Verify",
+        "owner": "AVATAR + Name",
+        "component": "AVATAR + Name",
+        "variant": {
+         "Property 1": "AVATAR + Name 2"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDP.F05.03",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020700": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "2711:61489",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Verify",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Từ chối",
+         "Type": "Secondary",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M-CDP.F06",
+   "name": "log-entry",
+   "title": "Log Entry",
+   "screens": [
+    "adm-lop-020700",
+    "adm-lop-020800"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDP.F06.01",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020700": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "2711:61501",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": "Log Entry",
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Time": "4 ngày trước",
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Label": "10:15 - 26.08.2026",
+         "Type": "Date"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M-CDP.F07",
+   "name": "molecule-add-new-bar",
+   "title": "Molecule/Add New Bar",
+   "screens": [
+    "adm-lop-020700",
+    "adm-lop-020800"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDP.F07.01",
+     "name": "molecule-add-new-bar",
+     "label": "Molecule/Add New Bar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020700": [
+       {
+        "term": "Molecule/Add New Bar",
+        "figmaId": "2711:61506",
+        "layer": "Molecule/Add New Bar",
+        "confidence": "cao",
+        "region": "Molecule/Add New Bar",
+        "owner": "Molecule/Add New Bar",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Nút": "1075:1478",
+         "Icon trái": false,
+         "Placeholder": "Thêm ghi nhận",
+         "Type": "Box",
+         "Size": "S",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-CDP.EX01",
+   "text": "Khi Thêm nội dung, Package/Category/Action Item không thuộc loại quy trình của tab, khác center với lớp, không còn hợp lệ, quy trình nguồn không còn Công khai hoặc đã gắn trùng → từ chối, không lưu một phần.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDP.EX02",
+   "text": "Chưa được add vào lớp → không vào Chi tiết lớp/tab hoặc đọc dữ liệu qua request; đã thuộc lớp nhưng không có role Class Handler/Support → từ chối Thêm/cập nhật Result.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDP.EX03",
+   "text": "Lưu lỗi → giữ lựa chọn hoặc Result cũ để thử lại; không báo thành công.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDP.EX04",
+   "text": "Cập nhật Result khi nguồn Vô hiệu → từ chối qua UI/request; nội dung và Result đã ghi vẫn hiển thị.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "M-CDP.FLOW01",
+   "name": "Xem tab quy trình",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDP.REQ01"
+   ]
+  },
+  {
+   "id": "M-CDP.FLOW02",
+   "name": "Thêm nội dung",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDP.REQ02",
+    "M-CDP.REQ04",
+    "M-CDP.REQ05"
+   ]
+  },
+  {
+   "id": "M-CDP.FLOW03",
+   "name": "Cập nhật Result",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDP.REQ02",
+    "M-CDP.REQ03",
+    "M-CDP.REQ05"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "M-CDP.TC01",
+   "title": "Case 1: Hiển thị đúng phạm vi lớp và tab",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDP.A01",
+   "scenario": "Flow 1 / REQ01 / EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDP.REQ01"
+   ],
+   "exceptions": [
+    "M-CDP.EX02"
+   ],
+   "flows": [
+    "M-CDP.FLOW01"
+   ],
+   "items": [
+    "M-CDP.A01.02"
+   ]
+  },
+  {
+   "id": "M-CDP.TC02",
+   "title": "Case 2: Result theo quyền và trạng thái nguồn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDP.A01",
+   "scenario": "Flow 3 / REQ02 / REQ03 / EX04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDP.REQ02",
+    "M-CDP.REQ03"
+   ],
+   "exceptions": [
+    "M-CDP.EX04"
+   ],
+   "flows": [
+    "M-CDP.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDP.TC03",
+   "title": "Case 3: Mỗi tab chỉ thấy nguồn của mình",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDP.A02",
+   "scenario": "Flow 2 / REQ01 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDP.REQ01",
+    "M-CDP.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDP.FLOW02"
+   ],
+   "items": [
+    "M-CDP.A02.05"
+   ]
+  },
+  {
+   "id": "M-CDP.TC04",
+   "title": "Case 4: Hủy hoặc lựa chọn không hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDP.A02",
+   "scenario": "Flow 2 / EX01 / EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "M-CDP.EX01",
+    "M-CDP.EX02"
+   ],
+   "flows": [
+    "M-CDP.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDP.TC05",
+   "title": "Case 5: Phản hồi đúng kết quả",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDP.A03",
+   "scenario": "REQ05 / EX03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDP.REQ05"
+   ],
+   "exceptions": [
+    "M-CDP.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDP.A03.01"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020604",
+   "text": "trang-thai “Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Trống” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-020604",
+   "text": "loại trang-thai, màn cha ADM-LOP-020600 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-020604",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020610",
+   "text": "popup “Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Popup thêm tiêu chuẩn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-020610",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020611",
+   "text": "trang-thai “Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Popup thêm tiêu chuẩn / Xem trước” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-020611",
+   "text": "loại trang-thai, màn cha ADM-LOP-020610 — tin cậy trung-binh"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020612",
+   "text": "trang-thai “Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Popup thêm tiêu chuẩn / Xem tiêu chí” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-020612",
+   "text": "loại trang-thai, màn cha ADM-LOP-020611 — tin cậy thap"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020704",
+   "text": "trang-thai “Chi tiết lớp học / Quy trình lớp / Trống” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-020704",
+   "text": "loại trang-thai, màn cha ADM-LOP-020700 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-020704",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020710",
+   "text": "popup “Chi tiết lớp học / Quy trình lớp / Popup thêm quy trình” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-020710",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020711",
+   "text": "trang-thai “Chi tiết lớp học / Quy trình lớp / Popup thêm quy trình / Xem trước” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-020711",
+   "text": "loại trang-thai, màn cha ADM-LOP-020710 — tin cậy trung-binh"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020712",
+   "text": "trang-thai “Chi tiết lớp học / Quy trình lớp / Popup thêm quy trình / Xem tiêu chí” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-020712",
+   "text": "loại trang-thai, màn cha ADM-LOP-020711 — tin cậy thap"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020804",
+   "text": "trang-thai “Chi tiết lớp học / CSKH / Trống” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-020804",
+   "text": "loại trang-thai, màn cha ADM-LOP-020800 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-020804",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020810",
+   "text": "popup “Chi tiết lớp học / CSKH / Popup thêm quy trình CSKH” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-020810",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020811",
+   "text": "trang-thai “Chi tiết lớp học / CSKH / Popup thêm quy trình CSKH / Xem trước” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-020811",
+   "text": "loại trang-thai, màn cha ADM-LOP-020810 — tin cậy trung-binh"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020812",
+   "text": "trang-thai “Chi tiết lớp học / CSKH / Popup thêm quy trình CSKH / Xem tiêu chí” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-020812",
+   "text": "loại trang-thai, màn cha ADM-LOP-020811 — tin cậy thap"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-020904",
+   "text": "trang-thai “Chi tiết lớp học / Cuộc họp / Trống” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-020904",
+   "text": "loại trang-thai, màn cha ADM-LOP-020800 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-020904",
+   "text": "không có prototype link nào đi vào frame"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/class_management/class_detail_processes_requirements.md",
+   "prefix": "M-CDP",
+   "title": "Chi tiết lớp học — Tiêu chuẩn lớp - giáo viên, CSKH và Quy trình lớp"
+  }
+ ]
+}

@@ -5,8 +5,12 @@
    "name": "bai-tap-ve-nha",
    "title": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
    "screens": "^CD-KH-(06\\d{4}|0303(4\\d))$",
-   "requirements": ["course_management/homework-test/homework-test.md"],
-   "prefix": {"course_management/homework-test/homework-test.md": "CM-HW"},
+   "requirements": [
+    "course_management/homework-test/homework-test.md"
+   ],
+   "prefix": {
+    "course_management/homework-test/homework-test.md": "CM-HW"
+   },
    "notes": [
     "`Điểm`: REQ02 nói không có điểm riêng từng câu, Figma không có cột; bảng cột, EX01, REQ05 vẫn có `Điểm`. Phần Import vừa liệt kê vừa nói không có cột này.",
     "Bảng câu hỏi: requirement ghi chưa có cột, lọc `Kiến thức / Kỹ năng` và còn lọc `Trạng thái`; Figma đã có hai mục đầu, không còn lọc `Trạng thái`.",
@@ -14,6 +18,859 @@
     "`CD-KH-060121` → `060125`, `060140`, `060141`, `060150`, `060160`: requirement chưa nhắc mã và phần lớn còn ghi cần bổ sung.",
     "`EX04`: chưa có testcase ghi mã này."
    ]
+  },
+  {
+   "name": "account-management",
+   "title": "Quản lý tài khoản (Master)",
+   "screens": "^(MST\\-TK\\-010000|MST\\-TK\\-010010|MST\\-TK\\-010020|MST\\-TK\\-010030|MST\\-TK\\-020000)$",
+   "requirements": [
+    "account_management/account_management.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "appointment-requirements",
+   "title": "Lịch hẹn — Danh sách, thêm lịch hẹn và Review",
+   "screens": "^(ADM\\-LHN\\-010100|ADM\\-LHN\\-010110|ADM\\-LHN\\-010200|ADM\\-LHN\\-010300|ADM\\-LHN\\-010400|ADM\\-LHN\\-020000)$",
+   "requirements": [
+    "appointment_requirement/appointment_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "overview",
+   "title": "[Phụ trách lớp] Trang chủ — Thống kê tổng quan",
+   "screens": "^(CH\\-TC\\-010000|CH\\-TC\\-010001)$",
+   "requirements": [
+    "class_handler_support/overview/overview.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "process",
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác",
+   "screens": "^(SP\\-TASK\\-010000|SP\\-TASK\\-020000|SP\\-TASK\\-030000|SP\\-TASK\\-030002|SP\\-TASK\\-030003|SP\\-TASK\\-030004|SP\\-TASK\\-030010)$",
+   "requirements": [
+    "class_handler_support/process/process.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "course-management",
+   "title": "Quản lý khoá học",
+   "screens": "^(CD\\-KH\\-010000|CD\\-KH\\-010010|CD\\-KH\\-010013)$",
+   "requirements": [
+    "course_management/course_management.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "knowledge-s1",
+   "title": "Kiến thức (S1)",
+   "screens": "^(CD\\-KH\\-030270|CD\\-KH\\-030400|CD\\-KH\\-030540|CD\\-KH\\-040100|CD\\-KH\\-040110|CD\\-KH\\-040120|CD\\-KH\\-040125|CD\\-KH\\-040140|CD\\-KH\\-040150|CD\\-KH\\-040155|CD\\-KH\\-040160|CD\\-KH\\-040170|CD\\-KH\\-040190|CD\\-KH\\-040195|CD\\-KH\\-040200)$",
+   "requirements": [
+    "course_management/knowledge-s1/knowledge-s1.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "learning-path-s4",
+   "title": "Lộ Trình (S4)",
+   "screens": "^(CD\\-KH\\-020200)$",
+   "requirements": [
+    "course_management/learning-path-s4/learning-path-s4.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "library",
+   "title": "[CD] Thư viện",
+   "screens": "^(CD\\-KH\\-070160|CD\\-KH\\-070161|CD\\-KH\\-070170|CD\\-KH\\-070171|CD\\-KH\\-070301|CD\\-KH\\-070302|CD\\-KH\\-070303|CD\\-KH\\-070304|CD\\-KH\\-070305|CD\\-KH\\-070306|CD\\-KH\\-070307|CD\\-KH\\-070309|CD\\-KH\\-070313)$",
+   "requirements": [
+    "course_management/library/library.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "overview-s2",
+   "title": "Tổng quan (S2)",
+   "screens": "^(CD\\-KH\\-020100)$",
+   "requirements": [
+    "course_management/overview-s2/overview-s2.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "information",
+   "title": "Học Kỳ",
+   "screens": "^(CD\\-KH\\-030100|CD\\-KH\\-030104|CD\\-KH\\-030110|CD\\-KH\\-030120)$",
+   "requirements": [
+    "course_management/semester/information/information.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "lesson",
+   "title": "Học Kỳ - Tab Bài học",
+   "screens": "^(CD\\-KH\\-030200|CD\\-KH\\-030210|CD\\-KH\\-030211|CD\\-KH\\-030230|CD\\-KH\\-030231|CD\\-KH\\-030240|CD\\-KH\\-030241|CD\\-KH\\-030242|CD\\-KH\\-030243|CD\\-KH\\-030244|CD\\-KH\\-030245|CD\\-KH\\-030246|CD\\-KH\\-030247|CD\\-KH\\-030250)$",
+   "requirements": [
+    "course_management/semester/lesson/lesson.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "test",
+   "title": "Học Kỳ - Tab Kiểm tra",
+   "screens": "^(CD\\-KH\\-030300|CD\\-KH\\-030310|CD\\-KH\\-030346|CD\\-KH\\-030350)$",
+   "requirements": [
+    "course_management/semester/test/test.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "skill-s6",
+   "title": "Kỹ năng (S6) — Nghe / Đọc",
+   "screens": "^(CD\\-KH\\-050100|CD\\-KH\\-050110|CD\\-KH\\-050120|CD\\-KH\\-050130|CD\\-KH\\-050140|CD\\-KH\\-050150|CD\\-KH\\-050155|CD\\-KH\\-050160|CD\\-KH\\-050180|CD\\-KH\\-050190|CD\\-KH\\-050200|CD\\-KH\\-050210|CD\\-KH\\-050300|CD\\-KH\\-050400|CD\\-KH\\-070301|CD\\-KH\\-070302|CD\\-KH\\-070305|CD\\-KH\\-070306|CD\\-KH\\-070307|CD\\-KH\\-070309|CD\\-KH\\-070313)$",
+   "requirements": [
+    "course_management/skill-s6/skill-s6.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "category-management",
+   "title": "Quản lý danh sách danh mục",
+   "screens": "^(CD\\-DM\\-010000|CD\\-DM\\-010010|CD\\-DM\\-010020|CD\\-DM\\-010030|CD\\-DM\\-010040|CD\\-DM\\-010057|CD\\-DM\\-010060|CD\\-DM\\-010062)$",
+   "requirements": [
+    "curriculum_management_requirement/category_management/category_management.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "detail-category",
+   "title": "Chi tiết danh mục (Popup)",
+   "screens": "^(CD\\-DM\\-010000|CD\\-DM\\-010010|CD\\-DM\\-010020|CD\\-DM\\-010030|CD\\-DM\\-010040|CD\\-DM\\-010057|CD\\-DM\\-010060|CD\\-DM\\-010062)$",
+   "requirements": [
+    "curriculum_management_requirement/category_management/detail_category.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "level-management",
+   "title": "Quản lý danh sách cấp độ",
+   "screens": "^(CD\\-CDO\\-010000|CD\\-CDO\\-010010|CD\\-CDO\\-010012)$",
+   "requirements": [
+    "curriculum_management_requirement/level_management/level_management.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "level-management-requirements",
+   "title": "Quản lý cấp độ",
+   "screens": "^(CD\\-CDO\\-010000|CD\\-CDO\\-010010|CD\\-CDO\\-010012)$",
+   "requirements": [
+    "curriculum_management_requirement/level_management/level_management_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-creation-requirements",
+   "title": "Tạo lớp học",
+   "screens": "^(ADM\\-LOP\\-010000|ADM\\-LOP\\-010002|ADM\\-LOP\\-010004|ADM\\-LOP\\-010010|ADM\\-LOP\\-010020|ADM\\-LOP\\-010040|ADM\\-LOP\\-010050)$",
+   "requirements": [
+    "management_requirement/class_management/class_creation_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-appointments-requirements",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Lịch hẹn",
+   "screens": "^(ADM\\-LOP\\-050100)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_appointments_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-homework-tests-requirements",
+   "title": "Chi tiết lớp học — Menu Bài tập và kiểm tra",
+   "screens": "^(ADM\\-LOP\\-020300)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_homework_tests_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-information-requirements",
+   "title": "Chi tiết lớp học — Tab Thông tin",
+   "screens": "^(ADM\\-LOP\\-040100)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_information_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-invoices-requirements",
+   "title": "Chi tiết lớp học — Tab Hóa đơn",
+   "screens": "^(ADM\\-LOP\\-040600)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_invoices_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-journal-requirements",
+   "title": "Chi tiết lớp học — Menu Nhật ký",
+   "screens": "^(ADM\\-LOP\\-050100)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_journal_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-kpi-requirements",
+   "title": "Chi tiết lớp học — Tab KPI của Phụ trách lớp",
+   "screens": "^(ADM\\-LOP\\-040700|ADM\\-LOP\\-040710|ADM\\-LOP\\-040712)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_kpi_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-lessons-requirements",
+   "title": "Chi tiết lớp học — Menu Bài học",
+   "screens": "^(ADM\\-LOP\\-030100|ADM\\-LOP\\-030200|ADM\\-LOP\\-030300|ADM\\-LOP\\-030400|ADM\\-LOP\\-030401|ADM\\-LOP\\-030500)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_lessons_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-messages-requirements",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Tin nhắn",
+   "screens": "^(ADM\\-LOP\\-050100)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_messages_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-notes-requirements",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Ghi chú",
+   "screens": "^(ADM\\-LOP\\-050100)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_notes_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-ot-requirements",
+   "title": "Chi tiết lớp học — Tab OT của Phụ trách lớp",
+   "screens": "^(ADM\\-LOP\\-040800|ADM\\-LOP\\-040810|ADM\\-LOP\\-040812)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_ot_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-overview-requirements",
+   "title": "Chi tiết lớp học — Menu Tổng quan",
+   "screens": "^(ADM\\-LOP\\-020100)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_overview_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-processes-requirements",
+   "title": "Chi tiết lớp học — Tiêu chuẩn lớp - giáo viên, CSKH và Quy trình lớp",
+   "screens": "^(ADM\\-LOP\\-020600|ADM\\-LOP\\-020604|ADM\\-LOP\\-020610|ADM\\-LOP\\-020611|ADM\\-LOP\\-020612|ADM\\-LOP\\-020700|ADM\\-LOP\\-020704|ADM\\-LOP\\-020710|ADM\\-LOP\\-020711|ADM\\-LOP\\-020712|ADM\\-LOP\\-020800|ADM\\-LOP\\-020804|ADM\\-LOP\\-020810|ADM\\-LOP\\-020811|ADM\\-LOP\\-020812|ADM\\-LOP\\-020904)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_processes_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-schedule-requirements",
+   "title": "Chi tiết lớp học — Tab Lịch dạy",
+   "screens": "^(ADM\\-LOP\\-040500|ADM\\-LOP\\-040510|ADM\\-LOP\\-040520|ADM\\-LOP\\-040521)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_schedule_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-students-requirements",
+   "title": "Chi tiết lớp học — Tab Học viên",
+   "screens": "^(ADM\\-LOP\\-040200|ADM\\-LOP\\-040210|ADM\\-LOP\\-040220|ADM\\-LOP\\-040230)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_students_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-support-handlers-requirements",
+   "title": "Chi tiết lớp học — Tab Trợ giảng & Phụ trách lớp",
+   "screens": "^(ADM\\-LOP\\-040400)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_support_handlers_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-detail-teachers-requirements",
+   "title": "Chi tiết lớp học — Tab Giáo viên",
+   "screens": "^(ADM\\-LOP\\-040300)$",
+   "requirements": [
+    "management_requirement/class_management/class_detail_teachers_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-management-requirements",
+   "title": "Quản lý danh sách lớp học",
+   "screens": "^(ADM\\-LOP\\-010000|ADM\\-LOP\\-010002|ADM\\-LOP\\-010004|ADM\\-LOP\\-010010|ADM\\-LOP\\-010020|ADM\\-LOP\\-010040|ADM\\-LOP\\-010050)$",
+   "requirements": [
+    "management_requirement/class_management/class_management_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "teacher-salary-requirements",
+   "title": "Lương giáo viên — Admin",
+   "screens": "^(ADM\\-LGV\\-010000)$",
+   "requirements": [
+    "management_requirement/salary_management/teacher_salary_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "management-requirement-schedule-management-teaching-schedule-requirements",
+   "title": "Lịch dạy tổng",
+   "screens": "^(ADM\\-LD\\-010000|ADM\\-LD\\-010010)$",
+   "requirements": [
+    "management_requirement/schedule_management/teaching_schedule_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "student-detail-requirements",
+   "title": "Chi tiết học viên",
+   "screens": "^(ADM\\-HV\\-020100|ADM\\-HV\\-020200|ADM\\-HV\\-020300|ADM\\-HV\\-020400|ADM\\-HV\\-020500|ADM\\-HV\\-020600|ADM\\-HV\\-020610)$",
+   "requirements": [
+    "management_requirement/student_management/student_detail_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "student-management-requirements",
+   "title": "Quản lý học viên",
+   "screens": "^(ADM\\-HV\\-010000|ADM\\-HV\\-010001|ADM\\-HV\\-010010|ADM\\-HV\\-010012|ADM\\-HV\\-010060|ADM\\-HV\\-010062|ADM\\-HV\\-010070|ADM\\-HV\\-010102|ADM\\-HV\\-010202)$",
+   "requirements": [
+    "management_requirement/student_management/student_management_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "teacher-detail-requirements",
+   "title": "[Admin] Chi tiết giáo viên",
+   "screens": "^(ADM\\-GV\\-020100|ADM\\-GV\\-020200|ADM\\-GV\\-020210|ADM\\-GV\\-020300|ADM\\-GV\\-020309|ADM\\-GV\\-020400|ADM\\-GV\\-020500|ADM\\-GV\\-020520|ADM\\-GV\\-020600)$",
+   "requirements": [
+    "management_requirement/teacher_management/teacher_detail_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "teacher-management-requirements",
+   "title": "[Admin] Quản lý danh sách giáo viên",
+   "screens": "^(ADM\\-GV\\-010000|ADM\\-GV\\-010001|ADM\\-GV\\-010010|ADM\\-GV\\-010020|ADM\\-GV\\-010030|ADM\\-GV\\-010040|ADM\\-GV\\-010042|ADM\\-GV\\-010050)$",
+   "requirements": [
+    "management_requirement/teacher_management/teacher_management_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "meeting-schedule",
+   "title": "[Phụ trách lớp, Admin] Lịch Họp",
+   "screens": "^(SP\\-LHP\\-010000|SP\\-LHP\\-010010|SP\\-LHP\\-020000)$",
+   "requirements": [
+    "meeting_schedule/meeting_schedule.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "process-definition-requirements",
+   "title": "Define quy trình",
+   "screens": "^(ADM\\-QT\\-010000|ADM\\-QT\\-010001|ADM\\-QT\\-020000)$",
+   "requirements": [
+    "process_definition_requirement/process_definition_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "receipt",
+   "title": "Hoá Đơn",
+   "screens": "^(ADM\\-HD\\-010000|ADM\\-HD\\-010006|ADM\\-HD\\-010007|ADM\\-HD\\-010010|ADM\\-HD\\-010011|ADM\\-HD\\-010012|ADM\\-HD\\-010013|ADM\\-HD\\-010020|ADM\\-HD\\-010021|ADM\\-HD\\-010022|ADM\\-HD\\-010030|ADM\\-HD\\-010040|ADM\\-HD\\-010050|ADM\\-HD\\-010060|ADM\\-HD\\-010061|ADM\\-HD\\-010070|ADM\\-HD\\-010071|ADM\\-HD\\-010072|ADM\\-HD\\-010073|ADM\\-HD\\-010080|ADM\\-HD\\-010081|ADM\\-HD\\-010082|ADM\\-HD\\-010090|ADM\\-HD\\-010102|ADM\\-HD\\-010103|ADM\\-HD\\-010104|ADM\\-HD\\-010110|ADM\\-HD\\-010111|ADM\\-HD\\-010120|ADM\\-HD\\-010130|ADM\\-HD\\-010202|ADM\\-HD\\-010224|ADM\\-HD\\-010225|ADM\\-HD\\-010230|ADM\\-HD\\-010231|ADM\\-HD\\-010302)$",
+   "requirements": [
+    "receipt_management/receipt/receipt.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "message-template",
+   "title": "Template Tin Nhắn",
+   "screens": "^(ADM\\-TN\\-010000|ADM\\-TN\\-010004)$",
+   "requirements": [
+    "ship_books/message_template/message_template.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "ship-books",
+   "title": "Ship Sách",
+   "screens": "^(ADM\\-SS\\-010000|ADM\\-SS\\-010001|ADM\\-SS\\-010002|ADM\\-SS\\-010010|ADM\\-SS\\-010012|ADM\\-SS\\-010020|ADM\\-SS\\-010032|ADM\\-SS\\-010034|ADM\\-SS\\-010040)$",
+   "requirements": [
+    "ship_books/ship_books/ship_books.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "bug",
+   "title": "Báo lỗi & Góp ý",
+   "screens": "^(ADM\\-GY\\-010000|CD\\-BL\\-010000|CD\\-BL\\-010010|CD\\-BL\\-010011|CD\\-BL\\-010020|CD\\-BL\\-010030|CD\\-BL\\-010040|CD\\-BL\\-010050|CH\\-BL\\-010000|CH\\-BL\\-010010|CH\\-BL\\-010011|CH\\-BL\\-010020|CH\\-BL\\-010030|CH\\-BL\\-010040|CH\\-BL\\-010050|CH\\-BL\\-010070|GV\\-BL\\-010000|GV\\-BL\\-010010|GV\\-BL\\-010020|GV\\-BL\\-010030|GV\\-BL\\-010040)$",
+   "requirements": [
+    "survey_bug/bug/bug.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "01-create-survey",
+   "title": "Tạo khảo sát (Admin)",
+   "screens": "^(ADM\\-KS\\-010000|ADM\\-KS\\-020000|ADM\\-KS\\-030000)$",
+   "requirements": [
+    "survey_bug/survey/01-create-survey/01-create-survey.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "02-assign-survey",
+   "title": "Giao khảo sát & Kết quả (Admin)",
+   "screens": "^(ADM\\-GKS\\-010000|ADM\\-GKS\\-010005|ADM\\-GKS\\-010010|ADM\\-GKS\\-020000|ADM\\-GKS\\-020005|ADM\\-GKS\\-020010|ADM\\-GKS\\-030000)$",
+   "requirements": [
+    "survey_bug/survey/02-assign-survey/02-assign-survey.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "03-take-survey",
+   "title": "Giáo viên làm khảo sát (Web)",
+   "screens": "^(GV\\-KS\\-010000|GV\\-KS\\-010001)$",
+   "requirements": [
+    "survey_bug/survey/03-take-survey/03-take-survey.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "tag-definition-requirements",
+   "title": "Define Tag — Quản lý nhóm và tag",
+   "screens": "^(ADM\\-TAG\\-010000|ADM\\-TAG\\-010010|ADM\\-TAG\\-010020)$",
+   "requirements": [
+    "tag_definition_requirement/tag_definition_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-course-requirements",
+   "title": "[Giáo viên] Chi tiết lớp — Khoá học",
+   "screens": "^(GV\\-LOP\\-080100|GV\\-LOP\\-090100)$",
+   "requirements": [
+    "teacher_role/class/class_course_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-evaluation-requirements",
+   "title": "[Giáo viên] Chi tiết lớp — Đánh giá",
+   "screens": "^(GV\\-LOP\\-100100)$",
+   "requirements": [
+    "teacher_role/class/class_evaluation_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-information-requirements",
+   "title": "[Giáo viên] Chi tiết lớp — Thông tin",
+   "screens": "^(GV\\-LOP\\-110100|GV\\-LOP\\-110200|GV\\-LOP\\-110300)$",
+   "requirements": [
+    "teacher_role/class/class_information_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-overview-requirements",
+   "title": "[Giáo viên] Chi tiết lớp — Tổng quan",
+   "screens": "^(GV\\-LOP\\-010000|GV\\-LOP\\-020000|GV\\-LOP\\-020020|GV\\-LOP\\-020030)$",
+   "requirements": [
+    "teacher_role/class/class_overview_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-process-requirements",
+   "title": "[Giáo viên] Chi tiết lớp — Quy trình",
+   "screens": "^(GV\\-LOP\\-060100|GV\\-LOP\\-070100)$",
+   "requirements": [
+    "teacher_role/class/class_process_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-teaching-requirements",
+   "title": "[Giáo viên] Chi tiết lớp — Giảng dạy",
+   "screens": "^(GV\\-LOP\\-030100|GV\\-LOP\\-030110|GV\\-LOP\\-030120|GV\\-LOP\\-030121|GV\\-LOP\\-030170|GV\\-LOP\\-030200|GV\\-LOP\\-030300|GV\\-LOP\\-030400|GV\\-LOP\\-030401|GV\\-LOP\\-030500|GV\\-LOP\\-040100|GV\\-LOP\\-040110|GV\\-LOP\\-040200|GV\\-LOP\\-040201|GV\\-LOP\\-040204|GV\\-LOP\\-040205|GV\\-LOP\\-040210|GV\\-LOP\\-040211|GV\\-LOP\\-040221|GV\\-LOP\\-040320|GV\\-LOP\\-050100)$",
+   "requirements": [
+    "teacher_role/class/class_teaching_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "class-list-requirements",
+   "title": "[Giáo viên] Lớp — Thống kê tổng quan",
+   "screens": "^(GV\\-LOP\\-010000)$",
+   "requirements": [
+    "teacher_role/class_list/class_list_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "history-and-salary-requirements",
+   "title": "[Giáo viên] Lịch sử & lương",
+   "screens": "^(ADM\\-LGV\\-020010|GV\\-LS\\-010000|GV\\-LS\\-010003|GV\\-LS\\-010004|GV\\-LS\\-010010|GV\\-LS\\-010011|GV\\-LS\\-010012|GV\\-LS\\-010013|GV\\-LS\\-010014|GV\\-LS\\-010015|GV\\-LS\\-010016)$",
+   "requirements": [
+    "teacher_role/history_and_salary/history_and_salary_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "teacher-role-teaching-schedule-teaching-schedule-requirements",
+   "title": "[Giáo viên] Lịch dạy",
+   "screens": "^(GV\\-LD\\-010000|GV\\-LD\\-020000|GV\\-LD\\-020010)$",
+   "requirements": [
+    "teacher_role/teaching_schedule/teaching_schedule_requirements.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "move-video",
+   "title": "Move Video",
+   "screens": "^(ADM\\-MV\\-010000|ADM\\-MV\\-020000|ADM\\-MV\\-020010|ADM\\-MV\\-020020|ADM\\-MV\\-020030)$",
+   "requirements": [
+    "tools/move_video/move_video.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-gc-01",
+   "title": "ADM-GC-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-GC\\-010000|ADM\\-GC\\-010001|ADM\\-GC\\-010010|ADM\\-GC\\-010020)$",
+   "requirements": [],
+   "prefix_figma": "ADM-GC-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-gks-01",
+   "title": "ADM-GKS-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-GKS\\-010020|ADM\\-GKS\\-010030|ADM\\-GKS\\-010040)$",
+   "requirements": [],
+   "prefix_figma": "ADM-GKS-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-gks-02",
+   "title": "ADM-GKS-02xx (chưa có requirement)",
+   "screens": "^(ADM\\-GKS\\-020020|ADM\\-GKS\\-020030|ADM\\-GKS\\-020040)$",
+   "requirements": [],
+   "prefix_figma": "ADM-GKS-02",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-gks-03",
+   "title": "ADM-GKS-03xx (chưa có requirement)",
+   "screens": "^(ADM\\-GKS\\-030020|ADM\\-GKS\\-030030|ADM\\-GKS\\-030040|ADM\\-GKS\\-030045|ADM\\-GKS\\-030050|ADM\\-GKS\\-030060)$",
+   "requirements": [],
+   "prefix_figma": "ADM-GKS-03",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-gv-01",
+   "title": "ADM-GV-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-GV\\-010003)$",
+   "requirements": [],
+   "prefix_figma": "ADM-GV-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-gy-01",
+   "title": "ADM-GY-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-GY\\-010010)$",
+   "requirements": [],
+   "prefix_figma": "ADM-GY-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-hv-01",
+   "title": "ADM-HV-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-HV\\-010004|ADM\\-HV\\-010020|ADM\\-HV\\-010030|ADM\\-HV\\-010040)$",
+   "requirements": [],
+   "prefix_figma": "ADM-HV-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-kpi-01",
+   "title": "ADM-KPI-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-KPI\\-010000)$",
+   "requirements": [],
+   "prefix_figma": "ADM-KPI-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-kpi-02",
+   "title": "ADM-KPI-02xx (chưa có requirement)",
+   "screens": "^(ADM\\-KPI\\-020000)$",
+   "requirements": [],
+   "prefix_figma": "ADM-KPI-02",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-ks-01",
+   "title": "ADM-KS-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-KS\\-010010|ADM\\-KS\\-010020|ADM\\-KS\\-010030)$",
+   "requirements": [],
+   "prefix_figma": "ADM-KS-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-ks-02",
+   "title": "ADM-KS-02xx (chưa có requirement)",
+   "screens": "^(ADM\\-KS\\-020010|ADM\\-KS\\-020020|ADM\\-KS\\-020030)$",
+   "requirements": [],
+   "prefix_figma": "ADM-KS-02",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-ks-03",
+   "title": "ADM-KS-03xx (chưa có requirement)",
+   "screens": "^(ADM\\-KS\\-030010|ADM\\-KS\\-030020|ADM\\-KS\\-030030)$",
+   "requirements": [],
+   "prefix_figma": "ADM-KS-03",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-lgv-02",
+   "title": "ADM-LGV-02xx (chưa có requirement)",
+   "screens": "^(ADM\\-LGV\\-020000)$",
+   "requirements": [],
+   "prefix_figma": "ADM-LGV-02",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-lhn-02",
+   "title": "ADM-LHN-02xx (chưa có requirement)",
+   "screens": "^(ADM\\-LHN\\-020002|ADM\\-LHN\\-020009)$",
+   "requirements": [],
+   "prefix_figma": "ADM-LHN-02",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-lop-02",
+   "title": "ADM-LOP-02xx (chưa có requirement)",
+   "screens": "^(ADM\\-LOP\\-020303|ADM\\-LOP\\-020404|ADM\\-LOP\\-020504|ADM\\-LOP\\-020709|ADM\\-LOP\\-020809)$",
+   "requirements": [],
+   "prefix_figma": "ADM-LOP-02",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-lop-05",
+   "title": "ADM-LOP-05xx (chưa có requirement)",
+   "screens": "^(ADM\\-LOP\\-050204|ADM\\-LOP\\-050304|ADM\\-LOP\\-050404|ADM\\-LOP\\-050406|ADM\\-LOP\\-050407|ADM\\-LOP\\-050408|ADM\\-LOP\\-050410)$",
+   "requirements": [],
+   "prefix_figma": "ADM-LOP-05",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-lsp-01",
+   "title": "ADM-LSP-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-LSP\\-010000)$",
+   "requirements": [],
+   "prefix_figma": "ADM-LSP-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-task-01",
+   "title": "ADM-TASK-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-TASK\\-010000)$",
+   "requirements": [],
+   "prefix_figma": "ADM-TASK-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-task-02",
+   "title": "ADM-TASK-02xx (chưa có requirement)",
+   "screens": "^(ADM\\-TASK\\-020000)$",
+   "requirements": [],
+   "prefix_figma": "ADM-TASK-02",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-task-03",
+   "title": "ADM-TASK-03xx (chưa có requirement)",
+   "screens": "^(ADM\\-TASK\\-030000)$",
+   "requirements": [],
+   "prefix_figma": "ADM-TASK-03",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-tk-01",
+   "title": "ADM-TK-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-TK\\-010000)$",
+   "requirements": [],
+   "prefix_figma": "ADM-TK-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-tl-01",
+   "title": "ADM-TL-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-TL\\-010000)$",
+   "requirements": [],
+   "prefix_figma": "ADM-TL-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-tt-01",
+   "title": "ADM-TT-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-TT\\-010000|ADM\\-TT\\-010001)$",
+   "requirements": [],
+   "prefix_figma": "ADM-TT-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-adm-vc-01",
+   "title": "ADM-VC-01xx (chưa có requirement)",
+   "screens": "^(ADM\\-VC\\-010000|ADM\\-VC\\-010001|ADM\\-VC\\-010010|ADM\\-VC\\-010020)$",
+   "requirements": [],
+   "prefix_figma": "ADM-VC-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-cd-kh-02",
+   "title": "CD-KH-02xx (chưa có requirement)",
+   "screens": "^(CD\\-KH\\-020201|CD\\-KH\\-020210|CD\\-KH\\-020220|CD\\-KH\\-020230|CD\\-KH\\-020240|CD\\-KH\\-020250|CD\\-KH\\-020260|CD\\-KH\\-020261|CD\\-KH\\-020270)$",
+   "requirements": [],
+   "prefix_figma": "CD-KH-02",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-cd-kh-04",
+   "title": "CD-KH-04xx (chưa có requirement)",
+   "screens": "^(CD\\-KH\\-040130|CD\\-KH\\-040180|CD\\-KH\\-040210|CD\\-KH\\-040220|CD\\-KH\\-040230|CD\\-KH\\-040240)$",
+   "requirements": [],
+   "prefix_figma": "CD-KH-04",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-cd-kh-07",
+   "title": "CD-KH-07xx (chưa có requirement)",
+   "screens": "^(CD\\-KH\\-070100|CD\\-KH\\-070101|CD\\-KH\\-070102|CD\\-KH\\-070103|CD\\-KH\\-070110|CD\\-KH\\-070120|CD\\-KH\\-070130|CD\\-KH\\-070140|CD\\-KH\\-070150|CD\\-KH\\-070200|CD\\-KH\\-070210|CD\\-KH\\-070220|CD\\-KH\\-070230|CD\\-KH\\-070300|CD\\-KH\\-070308|CD\\-KH\\-070310|CD\\-KH\\-070320)$",
+   "requirements": [],
+   "prefix_figma": "CD-KH-07",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-cd-ms-01",
+   "title": "CD-MS-01xx (chưa có requirement)",
+   "screens": "^(CD\\-MS\\-010000)$",
+   "requirements": [],
+   "prefix_figma": "CD-MS-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-cd-tl-01",
+   "title": "CD-TL-01xx (chưa có requirement)",
+   "screens": "^(CD\\-TL\\-010000|CD\\-TL\\-010010|CD\\-TL\\-010100|CD\\-TL\\-010210|CD\\-TL\\-010300)$",
+   "requirements": [],
+   "prefix_figma": "CD-TL-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-ch-tc-01",
+   "title": "CH-TC-01xx (chưa có requirement)",
+   "screens": "^(CH\\-TC\\-010002)$",
+   "requirements": [],
+   "prefix_figma": "CH-TC-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-gv-ks-01",
+   "title": "GV-KS-01xx (chưa có requirement)",
+   "screens": "^(GV\\-KS\\-010010|GV\\-KS\\-010011|GV\\-KS\\-010012|GV\\-KS\\-010020|GV\\-KS\\-010021)$",
+   "requirements": [],
+   "prefix_figma": "GV-KS-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-gv-lop-03",
+   "title": "GV-LOP-03xx (chưa có requirement)",
+   "screens": "^(GV\\-LOP\\-030111|GV\\-LOP\\-030130|GV\\-LOP\\-030131|GV\\-LOP\\-030140|GV\\-LOP\\-030141|GV\\-LOP\\-030150|GV\\-LOP\\-030160|GV\\-LOP\\-030161)$",
+   "requirements": [],
+   "prefix_figma": "GV-LOP-03",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-gv-lop-04",
+   "title": "GV-LOP-04xx (chưa có requirement)",
+   "screens": "^(GV\\-LOP\\-040300|GV\\-LOP\\-040301|GV\\-LOP\\-040302|GV\\-LOP\\-040310|GV\\-LOP\\-040311|GV\\-LOP\\-040330|GV\\-LOP\\-040331|GV\\-LOP\\-040332|GV\\-LOP\\-040333|GV\\-LOP\\-040334|GV\\-LOP\\-040335|GV\\-LOP\\-040336|GV\\-LOP\\-040340)$",
+   "requirements": [],
+   "prefix_figma": "GV-LOP-04",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-gv-lop-05",
+   "title": "GV-LOP-05xx (chưa có requirement)",
+   "screens": "^(GV\\-LOP\\-050110)$",
+   "requirements": [],
+   "prefix_figma": "GV-LOP-05",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-gv-tc-01",
+   "title": "GV-TC-01xx (chưa có requirement)",
+   "screens": "^(GV\\-TC\\-010000|GV\\-TC\\-010001|GV\\-TC\\-010002)$",
+   "requirements": [],
+   "prefix_figma": "GV-TC-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-pro-gd-01",
+   "title": "PRO-GD-01xx (chưa có requirement)",
+   "screens": "^(PRO\\-GD\\-010010)$",
+   "requirements": [],
+   "prefix_figma": "PRO-GD-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-sys-err-01",
+   "title": "SYS-ERR-01xx (chưa có requirement)",
+   "screens": "^(SYS\\-ERR\\-010000)$",
+   "requirements": [],
+   "prefix_figma": "SYS-ERR-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-sys-err-02",
+   "title": "SYS-ERR-02xx (chưa có requirement)",
+   "screens": "^(SYS\\-ERR\\-020000)$",
+   "requirements": [],
+   "prefix_figma": "SYS-ERR-02",
+   "auto": true
   }
  ]
 }

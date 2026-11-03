@@ -1,0 +1,3087 @@
+{
+ "cluster": "class-detail-lessons-requirements",
+ "title": "Chi tiết lớp học — Menu Bài học",
+ "figmaPrefix": "M-CDL",
+ "requirements": [
+  {
+   "id": "M-CDL.REQ01",
+   "name": "Danh sách",
+   "text": "Mặc định bài đầu, tải full không phân trang/load-more; card/tiêu đề/tab đúng lớp–bài. Metadata giáo viên/mốc mở từ buổi thực tế.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ02",
+   "name": "Buổi học",
+   "text": "Nhận xét, ghi chú cho Support, bàn giao giáo viên tiếp theo và học viên đúng nguồn; chưa bắt đầu có thông báo. Điểm BTVN/ghi chú/nhận xét vẫn chỉ đọc; click BTVN/điểm không mở chi tiết. Trạng thái điểm danh được sửa theo REQ11.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ03",
+   "name": "Thông tin",
+   "text": "Tiêu đề/Kỹ năng từ bài nguồn và Mô tả đang áp dụng cho bài lớp chỉ đọc tại tab; Mô tả nhập lúc thêm không thay Mô tả Curriculum. Số trong ngoặc tag do Curriculum Development Handler thiết lập, hiển thị nguyên giá trị nguồn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ04",
+   "name": "Nội dung",
+   "text": "Khối/thứ tự nguồn chỉ đọc; không thực thi/sửa action. Thời lượng kế hoạch không phải thời gian app/buổi thực tế.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ05",
+   "name": "Tài nguyên",
+   "text": "Video/PPT/Docs/Excel thuộc Bài giảng/Tài nguyên khác; click tải trực tiếp file gốc; không viewer/player/xem trước hoặc click download thêm. Header thu gọn không tải cả nhóm, không upload/xóa nguồn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ06",
+   "name": "Tỷ lệ",
+   "text": "Chỉ Đang học/Dự thính của chính bài/buổi. Rời lớp từ bài 6 không loại học viên khỏi 5 bài trước đã học; không lọc ngược lịch sử theo trạng thái lớp hiện tại. N_BTVN gồm tất cả người trong tập này; BTVN = số người nộp duy nhất/N_BTVN × 100, 7/10 = 70.0%, không đợi chấm/đạt điểm. N_Đi_học chỉ gồm người đã điểm danh; loại Chưa điểm danh khỏi tử/mẫu. Đi học = số Có mặt/Trễ/Sớm/Trễ & Sớm/N_Đi_học × 100; Nghỉ CP/KP còn trong mẫu nhưng không trong tử. Làm tròn cuối 1 chữ số thập phân. Mẫu số = 0 để chỉ số đó trống, > 0/tử = 0 là 0.0%.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ07",
+   "name": "Ranh giới quyền",
+   "text": "Định nghĩa bài/kỹ năng/nội dung/tài nguyên do Curriculum Development Handler quản lý ở chức năng riêng. Menu lớp chỉ đọc nguồn, bổ sung chọn bài nguồn vào lớp và sửa điểm danh; không chấm BTVN hay sửa ghi chú/nhận xét.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ08",
+   "name": "Phạm vi",
+   "text": "Kiểm tra role/phân công lớp và liên kết nội bộ lớp–bài–buổi–học viên–file/cặp khóa–bài; không ghép theo tên/thứ tự. Không trộn dữ liệu khi đổi ngữ cảnh, tải file trực tiếp cũng kiểm tra quyền.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ09",
+   "name": "Kiến thức",
+   "text": "Giữ tab nhưng vùng nội dung trống; không đưa UI quản trị kiến thức/kỹ năng nguồn vào phạm vi hiện tại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ10",
+   "name": "Ghi chú học viên",
+   "text": "Click icon mở popup có hai vùng Cho Học viên/Cho Team Support, Admin/Class Handler/Support trong lớp được xem, không sửa; Hủy chỉ đóng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ11",
+   "name": "Sửa điểm danh",
+   "text": "Cột Đi học hiển thị bộ icon `Trạng thái đi học` kèm tooltip tên trạng thái. Admin/Class Handler/Support có quyền lớp chọn một trong 6 trạng thái UI để sửa điểm danh sai; lưu đúng dòng, có trước/sau/người sửa/thời điểm, cập nhật Đi học sau thành công. Không đổi bài nộp/điểm/nhận xét/giáo viên buổi, không tự thêm reset Chưa điểm danh.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ12",
+   "name": "Thêm bài lớp",
+   "text": "Admin/Class Handler/Support trong lớp thêm một hoặc nhiều bài bằng popup. Mỗi dòng chọn một khóa rồi một bài thuộc khóa đó; tiêu đề tự lấy đúng bài nguồn và không sửa, chỉ Mô tả được chỉnh. Mỗi dòng thêm một bài lớp, không tạo định nghĩa Curriculum. Validate tất cả dòng, lưu chống lặp và cập nhật danh sách, chưa bắt đầu buổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.REQ13",
+   "name": "Toast",
+   "text": "Thêm bài/sửa điểm danh có một Toast kết quả sau validation/backend; lỗi giữ input/trạng thái cũ. Chỉ xem/chọn bài/tab/xem ghi chú/Hủy/tải file không Toast CRUD.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LOP-030100": {
+   "id": "ADM-LOP-030100",
+   "name": "buoi-hoc",
+   "title": "Lớp học / Bài học / Buổi học",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-030200",
+   "shownOn": "ADM-LOP-030100",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "3497:3712",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/bai-hoc/buoi-hoc",
+   "link": "/lop-hoc/bai-hoc/buoi-hoc",
+   "dark": "ADM-LOP-030100-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDL.F01"
+   ]
+  },
+  "ADM-LOP-030200": {
+   "id": "ADM-LOP-030200",
+   "name": "thong-tin",
+   "title": "Lớp học / Bài học / Thông tin",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-030100",
+   "shownOn": "ADM-LOP-030200",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "3497:64873",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/bai-hoc/thong-tin",
+   "link": "/lop-hoc/bai-hoc/thong-tin",
+   "dark": "ADM-LOP-030200-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDL.F01"
+   ]
+  },
+  "ADM-LOP-030300": {
+   "id": "ADM-LOP-030300",
+   "name": "noi-dung",
+   "title": "Lớp học / Bài học / Nội dung",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-030200",
+   "shownOn": "ADM-LOP-030300",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "3497:65454",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/bai-hoc/noi-dung",
+   "link": "/lop-hoc/bai-hoc/noi-dung",
+   "dark": "ADM-LOP-030300-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDL.F01"
+   ]
+  },
+  "ADM-LOP-030400": {
+   "id": "ADM-LOP-030400",
+   "name": "tai-nguyen",
+   "title": "Lớp học / Bài học / Tài nguyên",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-030300",
+   "shownOn": "ADM-LOP-030400",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4554:24549",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/bai-hoc/tai-nguyen",
+   "link": "/lop-hoc/bai-hoc/tai-nguyen",
+   "dark": "ADM-LOP-030400-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDL.F01"
+   ]
+  },
+  "ADM-LOP-030401": {
+   "id": "ADM-LOP-030401",
+   "name": "tung-muc-trong",
+   "title": "Lớp học / Bài học / Tài nguyên / Từng mục trống",
+   "kind": "trang-thai",
+   "parent": "ADM-LOP-030400",
+   "shownOn": "ADM-LOP-030400",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4554:25922",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/bai-hoc/tai-nguyen/tung-muc-trong",
+   "link": "/lop-hoc/bai-hoc/tai-nguyen?state=ADM-LOP-030401",
+   "dark": "ADM-LOP-030401-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-LOP-030500": {
+   "id": "ADM-LOP-030500",
+   "name": "kien-thuc",
+   "title": "Lớp học / Bài học / Kiến thức",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-030400",
+   "shownOn": "ADM-LOP-030500",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "3497:66616",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/bai-hoc/kien-thuc",
+   "link": "/lop-hoc/bai-hoc/kien-thuc",
+   "dark": "ADM-LOP-030500-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDL.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-CDL.A01",
+   "name": "khung-menu-va-danh-sach-bai-hoc",
+   "title": "Khung menu và Danh sách bài học",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A01.01",
+     "name": "card-bai-hoc",
+     "label": "Card bài học",
+     "spec": "Số thứ tự, tên bài; bài đã mở có giáo viên, mốc mở bài và vòng % BTVN/Đi học. Bài chưa bắt đầu có tên/mô tả, số thứ tự xám và chưa có chỉ số thực tế.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A01.02",
+     "name": "chon-bai-tab",
+     "label": "Chọn bài/tab",
+     "spec": "Bấm card chọn bài, viền cam và tiêu đề bên trái đồng bộ; các tab chuyển bình thường trong bài đang chọn. Không tự mở/bắt đầu buổi hoặc sửa dữ liệu khi chuyển tab.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A01.03",
+     "name": "thu-tu-danh-sach",
+     "label": "Thứ tự/danh sách",
+     "spec": "Đọc đúng thứ tự nguồn đã gán cho lớp và toàn bộ các bài bổ sung. Không kéo-thả/sửa thứ tự từ UI chưa được đặc tả.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A01.04",
+     "name": "giao-vien-va-moc-mo",
+     "label": "Giáo viên và mốc mở",
+     "spec": "Giáo viên thực tế của buổi và mốc mở bài của lớp, dạng HH:mm - dd/MM/yyyy như ảnh; không lấy giờ nộp cá nhân hay sửa Curriculum.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC04"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A01.05",
+     "name": "them-bai-hoc-moi",
+     "label": "Thêm bài học mới",
+     "spec": "Có nút mở popup chọn Khóa học/Bài học nguồn, Tiêu đề và Mô tả theo ảnh mới. Đây là thêm vào lớp, không tạo định nghĩa Curriculum. Admin hoặc Class Handler/Support được add vào lớp được thêm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDL.A01",
+       "raw": "mở popup chọn Khóa học/Bài học nguồn"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A01.06",
+     "name": "tai-du-lieu",
+     "label": "Tải dữ liệu",
+     "spec": "Loading/rỗng/lỗi riêng; lỗi có Thử lại. Response lớp/bài/tab cũ không ghi đè hiện tại. Không có bài thì không chọn bài đầu giả.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.A02",
+   "name": "tab-buoi-hoc-bai-da-bat-dau",
+   "title": "Tab Buổi học — Bài đã bắt đầu",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A02.01",
+     "name": "giao-vien-nhan-xet-lop",
+     "label": "Giáo viên nhận xét lớp",
+     "spec": "Nhận xét giáo viên cho cả lớp tại bài/buổi đang chọn, chỉ đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A02.02",
+     "name": "ghi-chu-cua-giao-vien-gui-cho-support",
+     "label": "Ghi chú của Giáo viên gửi cho Support",
+     "spec": "Ghi chú giáo viên cho team hỗ trợ về buổi này, theo UI mới; chỉ đọc và tách riêng bàn giao giáo viên tiếp theo.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A02.03",
+     "name": "ghi-chu-cua-giao-vien-gui-cho-giao-vien-",
+     "label": "Ghi chú của Giáo viên gửi cho Giáo viên tiếp theo",
+     "spec": "Nội dung bàn giao đúng bài/buổi, chỉ đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A02.04",
+     "name": "hoc-vien",
+     "label": "Học viên",
+     "spec": "Số thứ tự và Họ và tên theo dữ liệu buổi của lớp; không dùng tên làm khóa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A02.05",
+     "name": "di-hoc",
+     "label": "Đi học",
+     "spec": "Icon điểm danh đúng học viên–bài/buổi theo bộ icon `Trạng thái đi học` ([ảnh](./images/attendance-status-icons.png); bảng ghép 7 trạng thái ở [Tổng quan — Bảng bài học](./class_detail_overview_requirements.md)); hover hiện tooltip tên trạng thái. Admin/Class Handler/Support được mở menu chọn trạng thái để sửa giáo viên điểm danh sai.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A02.06",
+     "name": "btvn",
+     "label": "BTVN",
+     "spec": "Chưa nộp / Chưa chấm / điểm đã chấm. Đã nộp chưa chấm hoặc đã chấm 0 vẫn là đã nộp, không dùng điểm KT; không chỉnh/chấm điểm tại menu này. Click trạng thái BTVN hoặc điểm **không mở chi tiết**, không điều hướng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC08",
+      "M-CDL.TC10"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A02.07",
+     "name": "ghi-chu-tung-hoc-vien",
+     "label": "Ghi chú từng học viên",
+     "spec": "Click icon mở popup Ghi chú có hai vùng Cho Học viên và Cho Team Support như UI. Chỉ đọc, không chỉnh ghi chú.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDL.A03",
+       "raw": "mở popup Ghi chú có hai vùng Cho Học viên và Cho Team Support như UI"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.A03",
+   "name": "popup-ghi-chu-tung-hoc-vien",
+   "title": "Popup Ghi chú từng học viên",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A03.01",
+     "name": "ghi-chu-tu-giao-vien-cho-hoc-vien",
+     "label": "Ghi chú từ Giáo viên cho Học viên",
+     "spec": "Vùng chỉ đọc, đúng ghi chú giáo viên dành cho học viên ở bài/buổi đó.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A03.02",
+     "name": "ghi-chu-tu-giao-vien-cho-team-support",
+     "label": "Ghi chú từ Giáo viên cho Team Support",
+     "spec": "Vùng chỉ đọc, đúng ghi chú nội bộ giáo viên cho Team Support của cùng học viên/bài/buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A03.03",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng popup, không lưu/thay đổi ghi chú; không Toast CRUD.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A03.04",
+     "name": "du-lieu-trong-loi",
+     "label": "Dữ liệu trống/lỗi",
+     "spec": "Mỗi vùng trống hiển thị đúng dữ liệu, không tự chép vùng kia; tải lỗi cho thử lại, không biến lỗi thành ghi chú trống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.A04",
+   "name": "sua-diem-danh-cho-hoc-vien",
+   "title": "Sửa điểm danh cho học viên",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A04.01",
+     "name": "menu-diem-danh",
+     "label": "Menu điểm danh",
+     "spec": "Click icon Đi học của dòng học viên mở menu như UI, có search và trạng thái hiện tại được chọn sẵn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A04.02",
+     "name": "lua-chon",
+     "label": "Lựa chọn",
+     "spec": "Có mặt; Vào trễ; Ra sớm; Vào trễ & Ra sớm; Nghỉ CP; Nghỉ KP. Tương ứng source: Nghỉ có phép/Nghỉ không phép. Chọn **một** trạng thái, không tạo tổ hợp nhiều checkbox như Có mặt + Nghỉ KP.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC15"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A04.03",
+     "name": "chua-diem-danh",
+     "label": "Chưa điểm danh",
+     "spec": "Giữ trạng thái chưa có điểm danh theo dữ liệu nguồn. UI mới không có lựa chọn reset Chưa điểm danh; không tự thêm thao tác reset.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC15"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A04.04",
+     "name": "search-trang-thai",
+     "label": "Search trạng thái",
+     "spec": "Tìm theo tên lựa chọn trong menu; không phải search học viên/toàn bộ bài. Thời điểm kích hoạt search còn cần chốt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A04.05",
+     "name": "luu",
+     "label": "Lưu",
+     "spec": "Chọn trạng thái mới gửi cập nhật đúng học viên/buổi; khóa chống lặp, giữ trạng thái đã lưu khi lỗi. Chọn lại trạng thái hiện tại không tạo cập nhật/Toast thừa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A04.06",
+     "name": "ket-qua",
+     "label": "Kết quả",
+     "spec": "Thành công đổi icon/tooltip sang trạng thái mới theo bộ `Trạng thái đi học` và cập nhật % Đi học của đúng bài, một Toast `Cập nhật điểm danh thành công.`; lỗi giữ/trả trạng thái cũ, một Toast lỗi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC17"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A04.07",
+     "name": "dau-vet-sua",
+     "label": "Dấu vết sửa",
+     "spec": "Ghi nhận người sửa, thời điểm và trạng thái trước/sau; không ghi đè danh tính giáo viên đã mở/dạy buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC19"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.A05",
+   "name": "tab-buoi-hoc-bai-hoc-chua-bat-dau",
+   "title": "Tab Buổi học — Bài học chưa bắt đầu",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A05.01",
+     "name": "thong-bao",
+     "label": "Thông báo",
+     "spec": "Chính xác Bài học chưa bắt đầu, theo trạng thái bài/buổi nguồn của lớp; không dựa vào số thứ tự hoặc giờ máy.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A05.02",
+     "name": "du-lieu-buoi",
+     "label": "Dữ liệu buổi",
+     "spec": "Không dựng nhận xét/bảng điểm danh/BTVN/0% giả khi chưa có buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A05.03",
+     "name": "cac-tab-khac",
+     "label": "Các tab khác",
+     "spec": "Vẫn xem Thông tin/Nội dung và tải Tài nguyên định nghĩa nếu có; Kiến thức trống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A05.04",
+     "name": "quyen-thao-tac",
+     "label": "Quyền thao tác",
+     "spec": "Không tự bắt đầu/hoàn thành bài khi xem hoặc tải file; chưa có dòng điểm danh để sửa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.A06",
+   "name": "tab-thong-tin",
+   "title": "Tab Thông tin",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A06.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "Tiêu đề bài từ nguồn, khớp tên bài bên trái/card; ô xám chỉ đọc như ảnh.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC23"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A06.02",
+     "name": "mo-ta",
+     "label": "Mô tả",
+     "spec": "Hiển thị mô tả đang áp dụng cho bài lớp, giữ văn bản/xuống dòng. Bài thêm mới có Mô tả được nhập khi thêm; dữ liệu này lưu cho lớp, không sửa Mô tả Curriculum. Không dùng nhận xét buổi thay thế.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC23"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A06.03",
+     "name": "ky-nang",
+     "label": "Kỹ năng",
+     "spec": "Các tag kỹ năng đã gắn ở nguồn, ví dụ listening, reading, vocabulary, grammar, btvn. Không fix cứng chỉ 5 tag ví dụ; giá trị và số trong ngoặc do Curriculum Development Handler thiết lập, hiển thị đúng nguồn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC23",
+      "M-CDL.TC24"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A06.04",
+     "name": "quyen-thao-tac",
+     "label": "Quyền thao tác",
+     "spec": "Không nút + gắn kỹ năng, không chỉnh tên/mô tả, không Lưu/Xóa như popup quản trị Curriculum.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.A07",
+   "name": "tab-noi-dung",
+   "title": "Tab Nội dung",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A07.01",
+     "name": "khoi-noi-dung",
+     "label": "Khối nội dung",
+     "spec": "Card văn bản, ví dụ 5p Sửa BTVN/Ôn lại bài cũ, Học từ mới, Ngữ pháp, Nghe/Đọc bài khóa, Bài tập trên lớp và dặn dò. Lấy dữ liệu thật, không fix số lượng/dòng mẫu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A07.02",
+     "name": "thu-tu-khoi",
+     "label": "Thứ tự khối",
+     "spec": "Theo thứ tự đã lưu ở chức năng nguồn; số thứ tự/thời lượng trong văn bản giữ đúng dữ liệu. Admin / Class Handler / Support không kéo-thả.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A07.03",
+     "name": "du-lieu-chi-tiet",
+     "label": "Dữ liệu chi tiết",
+     "spec": "Hiển thị phần nội dung đã định nghĩa tương ứng, chỉ đọc. Không chuyển các loại action trong source thành thao tác thực hiện/đánh giá/lưu mới ở menu Admin / Class Handler / Support.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A07.04",
+     "name": "thoi-luong",
+     "label": "Thời lượng",
+     "spec": "Thời lượng kế hoạch trong nội dung không phải thời gian thực tế học trên app hoặc thời gian buổi đã dạy.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC26"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.A08",
+   "name": "tab-tai-nguyen-click-tai-xuong-ngay",
+   "title": "Tab Tài nguyên — Click tải xuống ngay",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A08.01",
+     "name": "bai-giang-tai-nguyen-khac",
+     "label": "Bài giảng/Tài nguyên khác",
+     "spec": "Nhóm theo dữ liệu bài nguồn áp dụng; các loại tải hiện tại là **video, PowerPoint (PPT), tài liệu (Docs) và Excel**. Tên, icon/thumbnail theo file thật.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A08.02",
+     "name": "header-chevron",
+     "label": "Header/chevron",
+     "spec": "Mở/thu gọn cùng nhóm; không tải cả nhóm và không đổi dữ liệu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A08.03",
+     "name": "card-tai-nguyen",
+     "label": "Card tài nguyên",
+     "spec": "Click tên/card tải đúng file/tài nguyên đã chọn với tên/định dạng/nội dung gốc. Video cũng tải ngay, không tự mở player.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A08.04",
+     "name": "tai-loi-thieu-quyen",
+     "label": "Tải lỗi/thiếu quyền",
+     "spec": "Báo đúng lý do, cho thử lại phù hợp; không trả file bài khác hoặc thumbnail thay file.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A08.05",
+     "name": "nguon-tai-nguyen",
+     "label": "Nguồn tài nguyên",
+     "spec": "Không upload/xóa/gỡ/chỉnh nguồn. Phạm vi hiện tại chỉ có video/PPT/Docs/Excel dạng file tải; không có viewer hoặc luồng link ngoài không có file.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.A09",
+   "name": "chi-so-btvn-va-di-hoc-theo-bai",
+   "title": "Chỉ số % BTVN và Đi học theo bài",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A09.01",
+     "name": "tap-tinh-va-2-mau-so",
+     "label": "Tập tính và 2 mẫu số",
+     "spec": "**N_BTVN** là số học viên Đang học/Dự thính được áp dụng cho chính bài/buổi đang xem; **N_Đi_học** là số người trong tập đó đã có điểm danh, **loại Chưa điểm danh**. Trạng thái ngoài Đang học/Dự thính tại bài đó không đóng góp vào tử/mẫu. Thay đổi trạng thái ở bài sau không loại học viên khỏi các bài trước đã học.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A09.02",
+     "name": "btvn",
+     "label": "% BTVN",
+     "spec": "`Số học viên Đang học/Dự thính đã nộp BTVN của bài / N_BTVN × 100`. Ví dụ 10 học viên hợp lệ, 7 đã nộp, 3 chưa nộp → **70.0%**. Nộp chưa chấm/điểm 0 vẫn tính đã nộp; một học viên có nhiều bản nộp chỉ tính một người.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC33",
+      "M-CDL.TC34",
+      "M-CDL.TC36",
+      "M-CDL.TC38",
+      "M-CDL.TC40",
+      "M-CDL.TC41",
+      "M-CDL.TC42"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A09.03",
+     "name": "di-hoc",
+     "label": "% Đi học",
+     "spec": "`Số học viên Đang học/Dự thính được tính đi học tại buổi / N_Đi_học × 100`. Có mặt, Vào trễ, Ra sớm, Vào trễ & Ra sớm tính đi học. **Nghỉ CP/KP không tính tử số nhưng vẫn trong mẫu số** nếu thuộc tập N_Đi_học. **Chưa điểm danh loại khỏi cả tử số và mẫu số Đi học**; không tự tính là vắng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC36",
+      "M-CDL.TC37",
+      "M-CDL.TC40",
+      "M-CDL.TC41",
+      "M-CDL.TC42"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A09.04",
+     "name": "lam-tron",
+     "label": "Làm tròn",
+     "spec": "Chỉ làm tròn tỷ lệ cuối đến **1 chữ số thập phân**, ví dụ 2/3 → 66.7%; không làm tròn từng đóng góp rồi cộng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC39"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A09.05",
+     "name": "khong-co-mau-so",
+     "label": "Không có mẫu số",
+     "spec": "Mỗi chỉ số dùng mẫu số riêng: bằng 0 thì để trống, không chia 0. Có mẫu số > 0 mà tử số = 0 thì 0.0% hợp lệ. Tất cả Chưa điểm danh làm Đi học trống, không có nghĩa BTVN cũng trống nếu N_BTVN > 0.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A09.06",
+     "name": "bai-chua-bat-dau",
+     "label": "Bài chưa bắt đầu",
+     "spec": "Không tạo vòng tỷ lệ khi chưa có buổi như ảnh. Bài đã bắt đầu chưa nộp vẫn có thể có 0.0% BTVN đúng dữ liệu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A09.07",
+     "name": "cap-nhat-sau-sua",
+     "label": "Cập nhật sau sửa",
+     "spec": "Sửa điểm danh thành công tính lại % Đi học đúng bài; không tự đổi tỷ lệ BTVN. Bài nộp mới được ghi nhận tính lại BTVN theo đúng học viên/bài.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.A10",
+   "name": "popup-them-bai-hoc-moi-vao-lop",
+   "title": "Popup Thêm bài học mới vào lớp",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A10.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "Tự hiển thị tiêu đề của bài nguồn sau khi chọn Khóa học/Bài học, **chỉ đọc, không được sửa**. Đổi bài thì cập nhật tiêu đề theo bài mới; mỗi bài được thêm giữ tiêu đề từ nguồn tương ứng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC49"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A10.02",
+     "name": "noi-dung",
+     "label": "Nội dung",
+     "spec": "Một hoặc nhiều dòng chọn bài. Mỗi dòng **chọn một khóa học**, sau đó **hiển thị dropdown bài học thuộc khóa đó và chọn một bài học**. Nút nét đứt Thêm bài học mới thêm dòng chọn tiếp; mỗi dòng phải có cặp khóa–bài riêng, không kế thừa ngầm lựa chọn dòng trước.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC49"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A10.03",
+     "name": "khoa-hoc",
+     "label": "Khóa học",
+     "spec": "Chọn từ danh sách khóa học đã define được phép dùng. Không nhập tên mới tự do, không bắt buộc chỉ khóa học đang gắn với lớp khi user chưa quy định.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A10.04",
+     "name": "bai-hoc",
+     "label": "Bài học",
+     "spec": "Danh sách bài nguồn thuộc đúng khóa học cùng dòng. Chọn khóa học trước; đổi khóa học phải xóa/chọn lại bài không còn thuộc khóa học mới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC43"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A10.05",
+     "name": "mo-ta",
+     "label": "Mô tả",
+     "spec": "Vùng Nhập mô tả theo ảnh, **được chỉnh sửa**. Quy tắc bắt buộc/giới hạn, tự điền và phạm vi áp dụng mô tả khi thêm nhiều bài còn cần chốt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC49",
+      "M-CDL.TC50"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A10.06",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng popup, không thêm vào lớp/đổi nguồn/mở buổi/Toast CRUD.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A10.07",
+     "name": "them",
+     "label": "Thêm",
+     "spec": "Kiểm tra quyền, các cặp khóa học–bài hợp lệ và validation metadata đã chốt; chống gửi lặp. Thành công cập nhật full danh sách và Toast Thêm bài học thành công.; lỗi giữ input/không thêm một phần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC43",
+      "M-CDL.TC45",
+      "M-CDL.TC46",
+      "M-CDL.TC47",
+      "M-CDL.TC48",
+      "M-CDL.TC50"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.A11",
+   "name": "tab-kien-thuc-de-trong",
+   "title": "Tab Kiến thức — Để trống",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A11.01",
+     "name": "nhan-tab",
+     "label": "Nhãn tab",
+     "spec": "Hiển thị `Kiến thức` trong nhóm tab như ảnh.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A11.02",
+     "name": "vung-noi-dung",
+     "label": "Vùng nội dung",
+     "spec": "Khi chọn, để trống; không danh sách/chi tiết/badge/link/thao tác gắn kiến thức hoặc nội dung mẫu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TC51"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A11.03",
+     "name": "nguon-kien-thuc",
+     "label": "Nguồn kiến thức",
+     "spec": "Không đưa UI Kiến thức/Kỹ năng của Curriculum vào menu Admin / Class Handler / Support trong phạm vi hiện tại, dù tài liệu nguồn đã có thiết kế riêng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.A12",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.A12.01",
+     "name": "thanh-cong",
+     "label": "Thành Công",
+     "spec": "Cập nhật điểm danh thành công. / Thêm bài học thành công. sau backend xác nhận lưu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TTC01"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A12.02",
+     "name": "co-loi-xay-ra",
+     "label": "Có Lỗi Xảy Ra",
+     "spec": "Không thể cập nhật điểm danh. Vui lòng thử lại. / Không thể thêm bài học. Vui lòng thử lại. khi lưu lỗi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A12.03",
+     "name": "canh-bao",
+     "label": "Cảnh Báo",
+     "spec": "Vui lòng chọn đầy đủ khóa học và bài học. hoặc lỗi field theo validation; quyền không hợp lệ nêu không có quyền thao tác trên lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDL.TTC03"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A12.04",
+     "name": "thong-bao",
+     "label": "Thông Báo",
+     "spec": "Chỉ dùng khi nguồn có trạng thái đang đồng bộ thực tế; không báo thành công sớm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDL.A12.05",
+     "name": "component",
+     "label": "Component",
+     "spec": "Icon/màu/tiêu đề, vị trí/thời lượng tự đóng/nút × theo UI Toast chung. Đóng Toast không hoàn tác dữ liệu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDL.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-030100",
+    "adm-lop-030200",
+    "adm-lop-030300",
+    "adm-lop-030400",
+    "adm-lop-030500"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDL.F01.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030100": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "3497:54207",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.02",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030100": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "3497:3767",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.03",
+     "name": "molecule-o-dinh-danh",
+     "label": "Molecule/Ô định danh",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030100": [
+       {
+        "term": "Molecule/Ô định danh",
+        "figmaId": "3502:69217",
+        "layer": "Molecule/Ô định danh",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Ô định danh",
+        "component": null,
+        "variant": {
+         "Có Tiền": false,
+         "Có lịch hẹn": false,
+         "Có tag": false,
+         "Có avatar": true,
+         "Tên": "Học viên 1",
+         "Có tag thứ 2": false,
+         "Mã": "MÃ GV: 0001"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.04",
+     "name": "trang-thai-nop-bai-va-diem",
+     "label": "Trạng thái nộp bài và điểm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030100": [
+       {
+        "term": "Trạng thái nộp bài và điểm",
+        "figmaId": "3497:3778",
+        "layer": "Trạng thái nộp bài và điểm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trạng thái nộp bài và điểm",
+        "component": "Trạng thái nộp bài và điểm",
+        "variant": {
+         "Trạng thái": "Chưa chấm",
+         "Cỡ": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.05",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030100": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "3497:54224",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.06",
+     "name": "avatar-name",
+     "label": "AVATAR + Name",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030100": [
+       {
+        "term": "AVATAR + Name",
+        "figmaId": "3497:64471",
+        "layer": "AVATAR + Name",
+        "confidence": "cao",
+        "region": null,
+        "owner": "AVATAR + Name",
+        "component": "AVATAR + Name",
+        "variant": {
+         "Property 1": "AVATAR + Name 3"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.07",
+     "name": "tag-thoi-gian",
+     "label": "Tag thời gian",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030100": [
+       {
+        "term": "Tag thời gian",
+        "figmaId": "3667:80685",
+        "layer": "Tag thời gian",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tag thời gian",
+        "component": "Atom/Tag thời gian",
+        "variant": {
+         "Thời gian": "09:58 - 16.09.2026",
+         "Cỡ": "Nhỏ",
+         "Màu": "Cam"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.08",
+     "name": "percent",
+     "label": "PERCENT %",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030100": [
+       {
+        "term": "PERCENT %",
+        "figmaId": "3497:64371",
+        "layer": "PERCENT %",
+        "confidence": "cao",
+        "region": null,
+        "owner": "PERCENT %",
+        "component": "PERCENT %",
+        "variant": {
+         "Property 1": "ĐN 2"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.09",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030100": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3497:4035",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.10",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030100": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:225429",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Bài học"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.11",
+     "name": "atom-label",
+     "label": "Atom/Label",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030200": [
+       {
+        "term": "Atom/Label",
+        "figmaId": "3497:67317",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36628",
+         "Label": "Tiêu đề",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.12",
+     "name": "background-border",
+     "label": "Background+Border",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030200": [
+       {
+        "term": "Background+Border",
+        "figmaId": "3497:67295",
+        "layer": "Background+Border",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Background+Border",
+        "component": "Background+Border",
+        "variant": {
+         "Label": "Label",
+         "Shape": "Pill",
+         "Color": "Orange"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.13",
+     "name": "atom-id-badge",
+     "label": "Atom/ID Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030400": [
+       {
+        "term": "Atom/ID Badge",
+        "figmaId": "4558:30370",
+        "layer": "Atom/ID Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/ID Badge",
+        "component": "Atom/ID Badge",
+        "variant": {
+         "Type": "10-digit",
+         "Size": "26H",
+         "Item": "01"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.14",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030400": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "4554:29731",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.15",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030400": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "4560:30435",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "+ Thêm tài nguyên",
+         "Type": "Warning",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.16",
+     "name": "molecule-section-header",
+     "label": "Molecule/Section Header",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030400": [
+       {
+        "term": "Molecule/Section Header",
+        "figmaId": "4554:25700",
+        "layer": "Molecule/Section Header",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Section Header",
+        "component": "Molecule/Section Header",
+        "variant": {
+         "Loại": "Tài liệu"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.17",
+     "name": "atom-uploaded-file-card",
+     "label": "Atom/Uploaded File Card",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030400": [
+       {
+        "term": "Atom/Uploaded File Card",
+        "figmaId": "4554:25702",
+        "layer": "Atom/Uploaded File Card",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Uploaded File Card",
+        "component": "Atom/Uploaded File Card",
+        "variant": {
+         "Type": "Menu"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDL.F01.18",
+     "name": "empty-state-illustration",
+     "label": "Empty State / Illustration",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-030500": [
+       {
+        "term": "Empty State / Illustration",
+        "figmaId": "3772:93764",
+        "layer": "Empty State / Illustration",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Empty State / Illustration",
+        "component": "Empty State / Illustration",
+        "variant": {
+         "Type": "Nền trống",
+         "Trung tâm": "Đắc Nhân"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-CDL.EX01",
+   "text": "Thử chỉnh định nghĩa Curriculum/nhận xét/ghi chú/điểm BTVN, upload/xóa file → từ chối; quyền thêm bài lớp/sửa điểm danh không cấp các quyền này.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.EX02",
+   "text": "Tải lỗi → lỗi/Thử lại, không coi là trống/chưa bắt đầu/0%.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.EX03",
+   "text": "Response thuộc lớp/bài/buổi/tab cũ → không ghi đè giao diện hiện tại hoặc lưu dữ liệu sang ngữ cảnh mới.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.EX04",
+   "text": "File mất/tải lỗi → báo đúng lý do, không trả file khác hoặc thumbnail; không chuyển sang viewer để thay yêu cầu tải trực tiếp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.EX05",
+   "text": "Thiếu role/phạm vi lớp/bài/buổi/học viên/file → từ chối cả UI/request trực tiếp, không lộ dữ liệu hoặc lưu ngoài quyền.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.EX06",
+   "text": "Mẫu số của từng chỉ số = 0 → để chỉ số đó trống, không chia 0; > 0/tử = 0 là 0.0% hợp lệ. Tất cả Chưa điểm danh không bị biến thành vắng/0% Đi học.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.EX07",
+   "text": "Sửa điểm danh lỗi/lặp/giá trị sai → không đổi một phần; giữ trạng thái cũ, một Toast lỗi, chỉ lưu trạng thái hợp lệ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.EX08",
+   "text": "Cặp khóa học–bài không hợp lệ hoặc field chưa đúng validation đã chốt → từ chối thêm, báo field/Toast Cảnh Báo; không tạo bài nguồn mới.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDL.EX09",
+   "text": "Thêm bài lỗi/lặp → không nhân bản hoặc thêm một phần, giữ input phù hợp và một Toast kết quả.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "M-CDL.FLOW01",
+   "name": "Mở menu và chọn bài",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ01",
+    "M-CDL.REQ08"
+   ]
+  },
+  {
+   "id": "M-CDL.FLOW02",
+   "name": "Xem Buổi học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ02",
+    "M-CDL.REQ07"
+   ]
+  },
+  {
+   "id": "M-CDL.FLOW03",
+   "name": "Xem định nghĩa",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ03",
+    "M-CDL.REQ04",
+    "M-CDL.REQ09"
+   ]
+  },
+  {
+   "id": "M-CDL.FLOW04",
+   "name": "Click tài nguyên tải ngay",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ05",
+    "M-CDL.REQ08"
+   ]
+  },
+  {
+   "id": "M-CDL.FLOW05",
+   "name": "Tính tỷ lệ theo số học viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06",
+    "M-CDL.REQ08"
+   ]
+  },
+  {
+   "id": "M-CDL.FLOW06",
+   "name": "Xem ghi chú học viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ10",
+    "M-CDL.REQ08"
+   ]
+  },
+  {
+   "id": "M-CDL.FLOW07",
+   "name": "Sửa điểm danh sai",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ11",
+    "M-CDL.REQ13"
+   ]
+  },
+  {
+   "id": "M-CDL.FLOW08",
+   "name": "Thêm bài nguồn vào lớp",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ12",
+    "M-CDL.REQ13"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "M-CDL.TC01",
+   "title": "Case 1: Mặc định bài đầu và tải full",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDL.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC02",
+   "title": "Case 2: Chọn bài và dữ liệu đúng lớp",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDL.A01",
+   "scenario": "Flow 1 / REQ01 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ01",
+    "M-CDL.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC03",
+   "title": "Case 3: Dữ liệu nguồn vẫn chỉ đọc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A01",
+   "scenario": "EX01 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ07"
+   ],
+   "exceptions": [
+    "M-CDL.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC04",
+   "title": "Case 4: Metadata giáo viên và thời gian",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A01",
+   "scenario": "REQ01 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ01",
+    "M-CDL.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A01.04"
+   ]
+  },
+  {
+   "id": "M-CDL.TC05",
+   "title": "Case 5: Tải lỗi/rỗng/response cũ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A01",
+   "scenario": "EX02 / EX03 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ08"
+   ],
+   "exceptions": [
+    "M-CDL.EX02",
+    "M-CDL.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC06",
+   "title": "Case 6: Chuyển tab trong bài đang chọn",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDL.A01",
+   "scenario": "Flow 3 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC07",
+   "title": "Case 7: Ba vùng ghi chú lớp theo UI mới",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDL.A02",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC08",
+   "title": "Case 8: Chưa nộp/Chưa chấm/điểm 0",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A02",
+   "scenario": "REQ02 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ02",
+    "M-CDL.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A02.06"
+   ]
+  },
+  {
+   "id": "M-CDL.TC09",
+   "title": "Case 9: Không sửa điểm BTVN/nhận xét",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A02",
+   "scenario": "EX01 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ07"
+   ],
+   "exceptions": [
+    "M-CDL.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC10",
+   "title": "Case 10: Click BTVN không mở chi tiết",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDL.A02",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A02.06"
+   ]
+  },
+  {
+   "id": "M-CDL.TC11",
+   "title": "Case 11: Mở đúng học viên/bài và hai vùng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A03",
+   "scenario": "Flow 6 / REQ10 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ10",
+    "M-CDL.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC12",
+   "title": "Case 12: Chỉ đọc và Hủy",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A03",
+   "scenario": "REQ10 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ10",
+    "M-CDL.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC13",
+   "title": "Case 13: Ghi chú trống/lỗi/outside scope",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A03",
+   "scenario": "EX02 / EX05 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ10"
+   ],
+   "exceptions": [
+    "M-CDL.EX02",
+    "M-CDL.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC14",
+   "title": "Case 14: Ba role được sửa điểm danh đúng phạm vi",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDL.A04",
+   "scenario": "Flow 7 / REQ11 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ11",
+    "M-CDL.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW07"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC15",
+   "title": "Case 15: Menu 6 trạng thái chọn một và search",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A04",
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A04.02",
+    "M-CDL.A04.03"
+   ]
+  },
+  {
+   "id": "M-CDL.TC53",
+   "title": "Case 53: Icon Đi học đúng trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A04",
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC16",
+   "title": "Case 16: Sửa điểm danh ảnh hưởng tỷ lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A04",
+   "scenario": "REQ06 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06",
+    "M-CDL.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC17",
+   "title": "Case 17: Lỗi/chọn lặp/callback cũ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A04",
+   "scenario": "EX03 / EX07 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ11"
+   ],
+   "exceptions": [
+    "M-CDL.EX03",
+    "M-CDL.EX07"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDL.A04.06"
+   ]
+  },
+  {
+   "id": "M-CDL.TC18",
+   "title": "Case 18: Chặn role/ngoài lớp/sai học viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A04",
+   "scenario": "EX05 / REQ08 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ08",
+    "M-CDL.REQ11"
+   ],
+   "exceptions": [
+    "M-CDL.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC19",
+   "title": "Case 19: Không đổi nhận xét/giáo viên/điểm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A04",
+   "scenario": "REQ07 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ07",
+    "M-CDL.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A04.07"
+   ]
+  },
+  {
+   "id": "M-CDL.TC20",
+   "title": "Case 20: Chưa bắt đầu đúng thông báo",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A05",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC21",
+   "title": "Case 21: Xem nguồn/tải file không mở buổi",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDL.A05",
+   "scenario": "REQ02 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ02",
+    "M-CDL.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC22",
+   "title": "Case 22: Phân biệt chưa bắt đầu/lỗi/0%",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A05",
+   "scenario": "EX02 / REQ02 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ02",
+    "M-CDL.REQ06"
+   ],
+   "exceptions": [
+    "M-CDL.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC23",
+   "title": "Case 23: Thông tin khớp nguồn Curriculum",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A06",
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW03"
+   ],
+   "items": [
+    "M-CDL.A06.01",
+    "M-CDL.A06.02",
+    "M-CDL.A06.03"
+   ]
+  },
+  {
+   "id": "M-CDL.TC24",
+   "title": "Case 24: Trường chỉ đọc và kỹ năng không tạo mới",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A06",
+   "scenario": "EX01 / REQ03 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ03",
+    "M-CDL.REQ07"
+   ],
+   "exceptions": [
+    "M-CDL.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDL.A06.03"
+   ]
+  },
+  {
+   "id": "M-CDL.TC25",
+   "title": "Case 25: Kỹ năng trống hoặc ngoài ví dụ",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDL.A06",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC26",
+   "title": "Case 26: Đúng khối và thứ tự bài",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A07",
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW03"
+   ],
+   "items": [
+    "M-CDL.A07.04"
+   ]
+  },
+  {
+   "id": "M-CDL.TC27",
+   "title": "Case 27: Nội dung chỉ đọc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A07",
+   "scenario": "EX01 / REQ04 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ04",
+    "M-CDL.REQ07"
+   ],
+   "exceptions": [
+    "M-CDL.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC28",
+   "title": "Case 28: Nội dung trống và bài khác",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDL.A07",
+   "scenario": "REQ04 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ04",
+    "M-CDL.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC29",
+   "title": "Case 29: Click bài giảng tải ngay",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A08",
+   "scenario": "Flow 4 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC30",
+   "title": "Case 30: Click video/tài nguyên khác tải ngay",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A08",
+   "scenario": "Flow 4 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC31",
+   "title": "Case 31: Đúng file/quyền/trạng thái lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A08",
+   "scenario": "EX04 / EX05 / REQ05 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ05",
+    "M-CDL.REQ08"
+   ],
+   "exceptions": [
+    "M-CDL.EX04",
+    "M-CDL.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC32",
+   "title": "Case 32: Thu gọn và nguồn chỉ đọc",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDL.A08",
+   "scenario": "REQ05 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ05",
+    "M-CDL.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC33",
+   "title": "Case 33: 7/10 nộp là 70.0%",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A09",
+   "scenario": "Flow 5 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW05"
+   ],
+   "items": [
+    "M-CDL.A09.02"
+   ]
+  },
+  {
+   "id": "M-CDL.TC34",
+   "title": "Case 34: Chưa chấm/0/nộp lặp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A09",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A09.02"
+   ]
+  },
+  {
+   "id": "M-CDL.TC35",
+   "title": "Case 35: Chỉ Đang học/Dự thính",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A09",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC36",
+   "title": "Case 36: CP/KP giảm % và giữ trong mẫu",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A09",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A09.02",
+    "M-CDL.A09.03"
+   ]
+  },
+  {
+   "id": "M-CDL.TC37",
+   "title": "Case 37: Trễ/sớm vẫn tính đi học",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A09",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A09.03"
+   ]
+  },
+  {
+   "id": "M-CDL.TC38",
+   "title": "Case 38: N = 0 và 0% hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A09",
+   "scenario": "EX06 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06"
+   ],
+   "exceptions": [
+    "M-CDL.EX06"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDL.A09.02"
+   ]
+  },
+  {
+   "id": "M-CDL.TC39",
+   "title": "Case 39: Đúng bài/lớp và làm tròn cuối",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A09",
+   "scenario": "REQ06 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06",
+    "M-CDL.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A09.04"
+   ]
+  },
+  {
+   "id": "M-CDL.TC40",
+   "title": "Case 40: Loại Chưa điểm danh riêng Đi học",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A09",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A09.02",
+    "M-CDL.A09.03"
+   ]
+  },
+  {
+   "id": "M-CDL.TC41",
+   "title": "Case 41: Tất cả chưa điểm danh và sửa lần đầu",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A09",
+   "scenario": "REQ06 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06",
+    "M-CDL.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A09.02",
+    "M-CDL.A09.03"
+   ]
+  },
+  {
+   "id": "M-CDL.TC42",
+   "title": "Case 42: Rời lớp bài 6 giữ tỷ lệ 5 bài trước",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A09",
+   "scenario": "Flow 5 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW05"
+   ],
+   "items": [
+    "M-CDL.A09.02",
+    "M-CDL.A09.03"
+   ]
+  },
+  {
+   "id": "M-CDL.TC43",
+   "title": "Case 43: Mở popup và chọn khóa/bài",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A10",
+   "scenario": "Flow 8 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW08"
+   ],
+   "items": [
+    "M-CDL.A10.04",
+    "M-CDL.A10.07"
+   ]
+  },
+  {
+   "id": "M-CDL.TC44",
+   "title": "Case 44: Bài phụ thuộc khóa học",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A10",
+   "scenario": "EX08 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ12"
+   ],
+   "exceptions": [
+    "M-CDL.EX08"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TC45",
+   "title": "Case 45: Thêm hợp lệ và chống lặp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A10",
+   "scenario": "Flow 8 / REQ12 / REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ12",
+    "M-CDL.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW08"
+   ],
+   "items": [
+    "M-CDL.A10.07"
+   ]
+  },
+  {
+   "id": "M-CDL.TC46",
+   "title": "Case 46: Hủy/thiếu cặp nguồn/metadata",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDL.A10",
+   "scenario": "EX08 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ12"
+   ],
+   "exceptions": [
+    "M-CDL.EX08"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDL.A10.07"
+   ]
+  },
+  {
+   "id": "M-CDL.TC47",
+   "title": "Case 47: Thêm lỗi và quyền ngoài lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A10",
+   "scenario": "EX05 / EX09 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ12"
+   ],
+   "exceptions": [
+    "M-CDL.EX05",
+    "M-CDL.EX09"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDL.A10.07"
+   ]
+  },
+  {
+   "id": "M-CDL.TC48",
+   "title": "Case 48: Thêm một hoặc nhiều bài, mỗi dòng chọn nguồn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A10",
+   "scenario": "Flow 8 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW08"
+   ],
+   "items": [
+    "M-CDL.A10.07"
+   ]
+  },
+  {
+   "id": "M-CDL.TC49",
+   "title": "Case 49: Tiêu đề tự điền và khóa sửa; Mô tả được sửa",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A10",
+   "scenario": "REQ12 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ12",
+    "M-CDL.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A10.01",
+    "M-CDL.A10.02",
+    "M-CDL.A10.05"
+   ]
+  },
+  {
+   "id": "M-CDL.TC50",
+   "title": "Case 50: Nhiều dòng có một dòng thiếu lựa chọn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A10",
+   "scenario": "EX08 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ12"
+   ],
+   "exceptions": [
+    "M-CDL.EX08"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDL.A10.05",
+    "M-CDL.A10.07"
+   ]
+  },
+  {
+   "id": "M-CDL.TC51",
+   "title": "Case 51: Kiến thức trống theo yêu cầu",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A11",
+   "scenario": "Flow 3 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDL.FLOW03"
+   ],
+   "items": [
+    "M-CDL.A11.02"
+   ]
+  },
+  {
+   "id": "M-CDL.TC52",
+   "title": "Case 52: Kiến thức không đổi bài hoặc dữ liệu",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDL.A11",
+   "scenario": "REQ01 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ01",
+    "M-CDL.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TTC01",
+   "title": "Toast Case 1: Thành công đúng thao tác",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A12",
+   "scenario": "REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A12.01"
+   ]
+  },
+  {
+   "id": "M-CDL.TTC02",
+   "title": "Toast Case 2: Lỗi giữ dữ liệu và chống trùng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDL.A12",
+   "scenario": "EX07 / EX09 / REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ13"
+   ],
+   "exceptions": [
+    "M-CDL.EX07",
+    "M-CDL.EX09"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDL.TTC03",
+   "title": "Toast Case 3: Validation và Hủy/chỉ đọc",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDL.A12",
+   "scenario": "REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDL.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDL.A12.03"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-030401",
+   "text": "trang-thai “Lớp học / Bài học / Tài nguyên / Từng mục trống” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-030401",
+   "text": "loại trang-thai, màn cha ADM-LOP-030400 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-030401",
+   "text": "không có prototype link nào đi vào frame"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/class_management/class_detail_lessons_requirements.md",
+   "prefix": "M-CDL",
+   "title": "Chi tiết lớp học — Menu Bài học"
+  }
+ ]
+}

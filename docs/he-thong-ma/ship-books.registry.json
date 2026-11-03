@@ -1,0 +1,1125 @@
+{
+ "cluster": "ship-books",
+ "title": "Ship Sách",
+ "figmaPrefix": "SB-SB",
+ "requirements": [
+  {
+   "id": "SB-SB.REQ01",
+   "name": "Giá trị mặc định",
+   "text": "Popup Thêm: Ngày ghi nhận = ngày hôm nay, Trạng thái = Mới.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.REQ02",
+   "name": "Đồng bộ Tên - Mã học viên",
+   "text": "Khi tick \"Chọn học viên có sẵn\", chọn 1 trong 2 dropdown thì dropdown còn lại tự điền theo (2 chiều).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.REQ03",
+   "name": "Popup xác nhận xoá",
+   "text": "Mọi thao tác xoá đơn đều phải qua popup xác nhận trước khi xoá.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.REQ04",
+   "name": "Lưu thông tin gửi tin",
+   "text": "Lưu thời gian gửi + nội dung tin đã gửi theo từng cột (Xác nhận thông tin / Xác nhận gửi sách) của từng đơn. Hover nút hiển thị lại 2 thông tin này. Mỗi cột chỉ gửi 1 lần, không gửi lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.REQ05",
+   "name": "Chọn nhiều + Xuất Excel",
+   "text": "Nút \"Xuất Excel (n)\" chỉ hiện khi có ít nhất 1 đơn được chọn, n = số đơn đã chọn, vị trí bên phải filter Trạng thái. Checkbox header chọn / bỏ chọn tất cả các đơn đang hiển thị theo bộ lọc hiện tại. File Excel gồm các cột: STT, Tên học viên, Số điện thoại, Địa chỉ, Mã học viên, Loại giáo trình, Ghi chú, Lớp, Trung tâm, Trạng thái, Ngày cập nhật.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.REQ06",
+   "name": "Đổi trạng thái tại danh sách",
+   "text": "Dropdown Trạng thái ở từng dòng đổi trực tiếp, lưu ngay và cập nhật cột \"Cập nhật\". Hiện chưa có ràng buộc thứ tự giữa các trạng thái, và không liên kết với việc đã gửi tin.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.REQ07",
+   "name": "Xoá mềm",
+   "text": "Xoá đơn là xoá mềm (đánh dấu xoá, không hiển thị trên danh sách). Chỉ xoá từng đơn, không có xoá hàng loạt.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.REQ08",
+   "name": "Trung tâm",
+   "text": "Danh sách có bộ lọc `Trung tâm` nằm cùng hàng với các bộ lọc khác, cho chọn một hoặc nhiều trung tâm; khi chọn thì danh sách, tổng số và phân trang chỉ tính dữ liệu của các trung tâm đã chọn, kết hợp `AND` với các bộ lọc khác. Không chọn thì hiển thị dữ liệu của mọi trung tâm. Role Admin không dùng ô chọn trung tâm trên header. Khi tạo mới bắt buộc chọn `Trung tâm`; bản ghi được lưu thuộc trung tâm đã chọn. Backend kiểm tra lại trung tâm khi lưu, không chỉ dựa vào UI.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-SS-010000": {
+   "id": "ADM-SS-010000",
+   "name": "danh-sach-don-sach",
+   "title": "Ship sách / Danh sách đơn sách",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "ADM-SS-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2619:196835",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/ship-sach/danh-sach-don-sach",
+   "link": "/ship-sach/danh-sach-don-sach",
+   "dark": "ADM-SS-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "SB-SB.F01"
+   ]
+  },
+  "ADM-SS-010001": {
+   "id": "ADM-SS-010001",
+   "name": "chon-1-don-xuat-excel",
+   "title": "Ship sách / Danh sách đơn sách / Chọn 1 đơn · Xuất Excel",
+   "kind": "trang-thai",
+   "parent": "ADM-SS-010000",
+   "shownOn": "ADM-SS-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2929:44886",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/ship-sach/danh-sach-don-sach/chon-1-don-xuat-excel",
+   "link": "/ship-sach/danh-sach-don-sach?state=ADM-SS-010001",
+   "dark": "ADM-SS-010001-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "SB-SB.A01"
+   ]
+  },
+  "ADM-SS-010002": {
+   "id": "ADM-SS-010002",
+   "name": "chon-tat-ca-xuat-excel",
+   "title": "Ship sách / Danh sách đơn sách / Chọn tất cả · Xuất Excel",
+   "kind": "trang-thai",
+   "parent": "ADM-SS-010000",
+   "shownOn": "ADM-SS-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2929:45640",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/ship-sach/danh-sach-don-sach/chon-tat-ca-xuat-excel",
+   "link": "/ship-sach/danh-sach-don-sach?state=ADM-SS-010002",
+   "dark": "ADM-SS-010002-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "SB-SB.A01"
+   ]
+  },
+  "ADM-SS-010010": {
+   "id": "ADM-SS-010010",
+   "name": "popup-them-don-sach",
+   "title": "Ship sách / Popup thêm đơn sách",
+   "kind": "popup",
+   "parent": "ADM-SS-010000",
+   "shownOn": "ADM-SS-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2619:200673",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/ship-sach/danh-sach-don-sach?popup=ADM-SS-010010",
+   "dark": "ADM-SS-010010-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "SB-SB.A02"
+   ]
+  },
+  "ADM-SS-010012": {
+   "id": "ADM-SS-010012",
+   "name": "da-chon-hoc-vien-co-san",
+   "title": "Ship sách / Popup thêm đơn sách / Đã chọn học viên có sẵn",
+   "kind": "trang-thai",
+   "parent": "ADM-SS-010010",
+   "shownOn": "ADM-SS-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2911:44254",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/ship-sach/danh-sach-don-sach?state=ADM-SS-010012",
+   "dark": "ADM-SS-010012-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-SS-010020": {
+   "id": "ADM-SS-010020",
+   "name": "popup-xac-nhan-xoa-don-sach",
+   "title": "Ship sách / Popup xác nhận xoá đơn sách",
+   "kind": "popup",
+   "parent": "ADM-SS-010000",
+   "shownOn": "ADM-SS-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2619:200765",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/ship-sach/danh-sach-don-sach?popup=ADM-SS-010020",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "SB-SB.A03"
+   ]
+  },
+  "ADM-SS-010032": {
+   "id": "ADM-SS-010032",
+   "name": "dang-mo",
+   "title": "Ship sách / Popup xác nhận gửi tin nhắn / Đang mở",
+   "kind": "dropdown",
+   "parent": "ADM-SS-010000",
+   "shownOn": "ADM-SS-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2911:1552",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/ship-sach/danh-sach-don-sach?popup=ADM-SS-010032",
+   "dark": "ADM-SS-010032-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-SS-010034": {
+   "id": "ADM-SS-010034",
+   "name": "da-chon-mau",
+   "title": "Ship sách / Popup xác nhận gửi tin nhắn / Đã chọn mẫu",
+   "kind": "trang-thai",
+   "parent": "ADM-SS-010000",
+   "shownOn": "ADM-SS-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2911:44525",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/ship-sach/danh-sach-don-sach?state=ADM-SS-010034",
+   "dark": "ADM-SS-010034-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-SS-010040": {
+   "id": "ADM-SS-010040",
+   "name": "popup-cap-nhat-don-sach",
+   "title": "Ship sách / Popup cập nhật đơn sách",
+   "kind": "popup",
+   "parent": "ADM-SS-010000",
+   "shownOn": "ADM-SS-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2929:44627",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/ship-sach/danh-sach-don-sach?popup=ADM-SS-010040",
+   "dark": "ADM-SS-010040-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "SB-SB.A02"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "SB-SB.A01",
+   "name": "trang-1-danh-sach-don-sach",
+   "title": "Trang 1: Danh Sách Đơn Sách",
+   "screens": [
+    "adm-ss-010001",
+    "adm-ss-010002"
+   ],
+   "screensGuessed": [
+    "ADM-SS-010001",
+    "ADM-SS-010002"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "ship_books/ship_books/ship_books.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "SB-SB.A02",
+   "name": "trang-2-popup-them-don-sach-cap-nhat-don",
+   "title": "Trang 2: Popup Thêm đơn sách / Cập nhật đơn sách",
+   "screens": [
+    "adm-ss-010010",
+    "adm-ss-010040"
+   ],
+   "screensGuessed": [
+    "ADM-SS-010010",
+    "ADM-SS-010040"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "ship_books/ship_books/ship_books.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "SB-SB.A03",
+   "name": "trang-3-popup-xac-nhan-gui-tin-nhan",
+   "title": "Trang 3: Popup Xác nhận gửi tin nhắn",
+   "screens": [
+    "adm-ss-010020"
+   ],
+   "screensGuessed": [
+    "ADM-SS-010020"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "ship_books/ship_books/ship_books.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "SB-SB.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-ss-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "SB-SB.F01.01",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "2619:196841",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-SB.F01.02",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "2619:196843",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm học viên",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-SB.F01.03",
+     "name": "dropdown-trung-tam",
+     "label": "Dropdown · Trung tâm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "Dropdown · Trung tâm",
+        "figmaId": "4713:129538",
+        "layer": "Dropdown · Trung tâm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown · Trung tâm",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trung tâm",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-SB.F01.04",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "Dropdown",
+        "figmaId": "2619:196844",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Ngày nhận đơn",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-SB.F01.05",
+     "name": "atom-id-badge",
+     "label": "Atom/ID Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "Atom/ID Badge",
+        "figmaId": "2619:197715",
+        "layer": "Atom/ID Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/ID Badge",
+        "component": "Atom/ID Badge",
+        "variant": {
+         "Type": "6-digit",
+         "Size": "26H",
+         "Item": "01"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-SB.F01.06",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "2619:197718",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xác nhận thông tin",
+         "Type": "Primary",
+         "Size": "XSmall"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-SB.F01.07",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2619:197739",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Badge",
+         "Variant": "Info",
+         "Dropdown": "On"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-SB.F01.08",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "Mouse click",
+        "figmaId": "2929:44775",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-SB.F01.09",
+     "name": "phan-trang",
+     "label": "Phân Trang",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "Phân Trang",
+        "figmaId": "2619:197086",
+        "layer": "Phân Trang",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Phân Trang",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-SB.F01.10",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2619:197135",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-SB.F01.11",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:251382",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Ship sách"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-SB.F01.12",
+     "name": "dd-molecule-menu-item",
+     "label": "DD/Molecule/Menu Item",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ss-010000": [
+       {
+        "term": "DD/Molecule/Menu Item",
+        "figmaId": "2911:1151",
+        "layer": "DD/Molecule/Menu Item",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Molecule/Menu Item",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Submenu": false,
+         "Meta Text": "12",
+         "Leading": false,
+         "Meta": false,
+         "Description": false,
+         "Leading Icon": "2015:30465",
+         "Description Text": "Mô tả phụ",
+         "Label": "Mới",
+         "Type": "Default",
+         "State": "Default",
+         "Size": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "SB-SB.EX01",
+   "text": "Bấm \"Thêm mới\" / \"Cập nhật\" khi thiếu trường bắt buộc → Hiển thị lỗi tại trường thiếu, không lưu, không đóng popup.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.EX02",
+   "text": "Chưa chọn mẫu tin nhắn → Không cho bấm \"Gửi tin nhắn\" (disable) hoặc báo lỗi bắt buộc chọn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.EX03",
+   "text": "Không có template nào đang bật → Dropdown rỗng, không cho gửi tin nhắn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.EX04",
+   "text": "Gửi tin nhắn thất bại → Báo lỗi, giữ popup, nút xác nhận giữ nguyên trạng thái chưa gửi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.EX06",
+   "text": "Đơn đã gửi tin ở cột nào → Nút ở cột đó không cho bấm gửi lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-SB.EX05",
+   "text": "Học viên có sẵn bị đổi lại (đổi Tên hoặc Mã học viên sang người khác) → Cặp Tên / Mã học viên luôn khớp nhau, không để lệch dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "SB-SB.FLOW01",
+   "name": "Thêm đơn sách",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-SB.FLOW02",
+   "name": "Thêm đơn cho học viên có sẵn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-SB.FLOW03",
+   "name": "Cập nhật đơn sách",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-SB.FLOW04",
+   "name": "Xoá đơn sách",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-SB.FLOW05",
+   "name": "Xác nhận thông tin / Xác nhận gửi sách qua tin nhắn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-SB.FLOW06",
+   "name": "Chọn đơn và xuất Excel",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  }
+ ],
+ "testcases": [
+  {
+   "id": "SB-SB.TC01",
+   "title": "Case 1: Thêm đơn sách thành công",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 1",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "SB-SB.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-SB.TC02",
+   "title": "Case 2: Thêm đơn thiếu trường bắt buộc",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "SB-SB.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-SB.TC03",
+   "title": "Case 3: Chọn học viên có sẵn, đồng bộ Tên - Mã",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 2, REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-SB.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "SB-SB.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-SB.TC04",
+   "title": "Case 4: Cập nhật đơn sách",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 3",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "SB-SB.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-SB.TC05",
+   "title": "Case 5: Xoá đơn có popup xác nhận",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 4, REQ03, REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-SB.REQ03",
+    "SB-SB.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "SB-SB.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-SB.TC06",
+   "title": "Case 6: Gửi tin xác nhận thông tin",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 5, REQ04, EX06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-SB.REQ04"
+   ],
+   "exceptions": [
+    "SB-SB.EX06"
+   ],
+   "flows": [
+    "SB-SB.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-SB.TC07",
+   "title": "Case 7: Popup chỉ liệt kê template đang bật",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 5, Ràng buộc",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "SB-SB.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-SB.TC08",
+   "title": "Case 8: Gửi tin nhắn thất bại / chưa chọn template",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX02, EX03, EX04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "SB-SB.EX02",
+    "SB-SB.EX03",
+    "SB-SB.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-SB.TC09",
+   "title": "Case 9: Chọn đơn và xuất Excel",
+   "priority": "Medium",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 6, REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-SB.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "SB-SB.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-SB.TC10",
+   "title": "Case 10: Đổi trạng thái tại danh sách",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-SB.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-SB.TC11",
+   "title": "Case 11: Lọc danh sách theo trung tâm",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-SB.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-SB.TC12",
+   "title": "Case 12: Bắt buộc chọn trung tâm khi tạo",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-SB.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-SS-010001",
+   "text": "trang-thai “Ship sách / Danh sách đơn sách / Chọn 1 đơn · Xuất Excel” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-SS-010001",
+   "text": "loại trang-thai, màn cha ADM-SS-010000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-SS-010001",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-SS-010002",
+   "text": "trang-thai “Ship sách / Danh sách đơn sách / Chọn tất cả · Xuất Excel” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-SS-010002",
+   "text": "loại trang-thai, màn cha ADM-SS-010000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-SS-010002",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-SS-010010",
+   "text": "popup “Ship sách / Popup thêm đơn sách” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-SS-010010",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-SS-010012",
+   "text": "trang-thai “Ship sách / Popup thêm đơn sách / Đã chọn học viên có sẵn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-SS-010012",
+   "text": "loại trang-thai, màn cha ADM-SS-010010 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-SS-010012",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-SS-010020",
+   "text": "popup “Ship sách / Popup xác nhận xoá đơn sách” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-SS-010020",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-SS-010032",
+   "text": "dropdown “Ship sách / Popup xác nhận gửi tin nhắn / Đang mở” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-SS-010034",
+   "text": "trang-thai “Ship sách / Popup xác nhận gửi tin nhắn / Đã chọn mẫu” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-SS-010034",
+   "text": "loại trang-thai, màn cha ADM-SS-010000 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-SS-010034",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-SS-010040",
+   "text": "popup “Ship sách / Popup cập nhật đơn sách” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-SS-010040",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-SB.REQ01",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-SB.EX05",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "ship_books/ship_books/ship_books.md",
+   "prefix": "SB-SB",
+   "title": "Ship Sách"
+  }
+ ]
+}

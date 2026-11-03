@@ -1,0 +1,3167 @@
+{
+ "cluster": "class-detail-students-requirements",
+ "title": "Chi tiết lớp học — Tab Học viên",
+ "figmaPrefix": "M-CDS3",
+ "requirements": [
+  {
+   "id": "M-CDS3.REQ01",
+   "name": "Quyền xem và CRUD",
+   "text": "`Admin`, `Class Handler`, `Support` được xem và CRUD tab trong phạm vi. Không có role Assistant Teacher riêng; Trợ giảng dùng role Support. Backend là nguồn quyết định cuối cùng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ02",
+   "name": "Điều hướng theo vùng bấm",
+   "text": "Vùng trắng cột Tên mở Chi tiết học viên; tên học viên mở menu thao tác nhanh; không nhập nhằng hai hành vi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ03",
+   "name": "Danh sách và load-more",
+   "text": "Không có search/pagination trên main list; dùng load-more khi cuộn với cursor ổn định, trạng thái loading, chống trùng và giữ vị trí cuộn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ04",
+   "name": "Buổi học và cảnh báo vượt buổi",
+   "text": "Cột Buổi học chỉ xem, không dropdown/control sửa. Admin/Class Handler/Support chọn số buổi bắt buộc trong popup Thêm học phí, lưu cùng giao dịch. Vẫn đếm buổi thực tế từ điểm danh hợp lệ; hover cảnh báo Quá buổi học khi thực tế lớn hơn số được phép, bằng nhau chưa quá. Không tự chặn học/đổi trạng thái; tính lại sau thay đổi điểm danh hoặc giao dịch học phí/số buổi hiệu lực.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ05",
+   "name": "Điểm vào thêm học viên",
+   "text": "Popup lựa chọn đúng hai flow Chọn học viên hoặc Tạo học viên mới. Cả `Lớp chung` và `Lớp 1-1` đều được thêm nhiều học viên, không phụ thuộc sĩ số hiện tại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ06",
+   "name": "Chọn học viên có sẵn",
+   "text": "Hỗ trợ tìm tên/mã, lọc theo lớp và multi-select; chặn trùng; Lớp 1-1 áp dụng multi-select giống Lớp chung; thêm nguyên tử.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ07",
+   "name": "Tạo học viên",
+   "text": "Tạo role Student và gắn vào lớp; validation/bảo mật dùng requirement Tài khoản/Học viên/Đăng nhập.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ08",
+   "name": "Ghi chú",
+   "text": "Lưu theo học viên–lớp; có lịch sử bất biến gồm nội dung, người, thời điểm và Copy từng bản ghi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ09",
+   "name": "Trạng thái",
+   "text": "Bộ 7 trạng thái quan hệ học viên trong lớp gồm `Đang học`, `Dự thính`, `Hoàn thành`, `Nghỉ học`, `Rời lớp`, `Chỉ xem`, `Xóa`, dùng đúng icon chính thức đã gắn trong bảng UI. Không có Đặt cọc/Chuyển lớp/Bảo lưu/Học thử trong enum này. Học viên lớp chính thức phải có học phí mới chuyển sang Đang học; lớp test bỏ qua điều kiện này.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ10",
+   "name": "Lịch sử trạng thái",
+   "text": "Lưu cũ → mới, người và thời điểm máy chủ; không trộn giữa các lớp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ11",
+   "name": "Thêm học phí",
+   "text": "Admin/Class Handler/Support chọn hóa đơn đúng học viên, nhập tiền dương, bắt buộc chọn số buổi nguyên 1..N; bỏ filter Trạng Thái; ghi học phí kèm số buổi, trừ số dư, cập nhật badge/tiền/cột chỉ xem nguyên tử. Thiếu số buổi không được lưu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ12",
+   "name": "Badge và tổng tiền",
+   "text": "Badge là số lần đóng học phí; Số tiền là tổng học phí đã đóng của học viên trong lớp hiện tại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ13",
+   "name": "Menu tên học viên",
+   "text": "Có Thêm Tag, Thêm Lịch Hẹn, Xem lịch sử; lịch sử gồm ba tab được đặc tả riêng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.REQ14",
+   "name": "Audit và hiển thị an toàn",
+   "text": "Thao tác CRUD lưu người/thời điểm; text không thực thi HTML/script; lỗi không lộ stack trace, token hay dữ liệu nhạy cảm.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LOP-040200": {
+   "id": "ADM-LOP-040200",
+   "name": "hoc-vien",
+   "title": "Lớp học / Cài đặt / Học viên",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-040100",
+   "shownOn": "ADM-LOP-040200",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2224:21097",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/cai-dat/hoc-vien",
+   "link": "/lop-hoc/cai-dat/hoc-vien",
+   "dark": "ADM-LOP-040200-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDS3.A01",
+    "M-CDS3.A02",
+    "M-CDS3.A03",
+    "M-CDS3.A04",
+    "M-CDS3.A05",
+    "M-CDS3.A09",
+    "M-CDS3.A10",
+    "M-CDS3.F01"
+   ]
+  },
+  "ADM-LOP-040210": {
+   "id": "ADM-LOP-040210",
+   "name": "popup-lich-su-ghi-chu",
+   "title": "Lớp học / Tổng quan / Popup lịch sử ghi chú",
+   "kind": "popup",
+   "parent": "ADM-LOP-040200",
+   "shownOn": "ADM-LOP-040200",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3348:62669",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/lop-hoc/cai-dat/hoc-vien?popup=ADM-LOP-040210",
+   "dark": "ADM-LOP-040210-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-CDS3.A06"
+   ]
+  },
+  "ADM-LOP-040220": {
+   "id": "ADM-LOP-040220",
+   "name": "popup-lich-su-trang-thai",
+   "title": "Lớp học / Cài đặt / Học viên / Popup lịch sử trạng thái",
+   "kind": "popup",
+   "parent": "ADM-LOP-040200",
+   "shownOn": "ADM-LOP-040200",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2409:147786",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/lop-hoc/cai-dat/hoc-vien?popup=ADM-LOP-040220",
+   "dark": "ADM-LOP-040220-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-CDS3.A07"
+   ]
+  },
+  "ADM-LOP-040230": {
+   "id": "ADM-LOP-040230",
+   "name": "popup-them-hoc-phi",
+   "title": "Lớp học / Cài đặt / Học viên / Popup thêm học phí",
+   "kind": "popup",
+   "parent": "ADM-LOP-040200",
+   "shownOn": "ADM-LOP-040200",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2409:147854",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/lop-hoc/cai-dat/hoc-vien?popup=ADM-LOP-040230",
+   "dark": "ADM-LOP-040230-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-CDS3.A08"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-CDS3.A01",
+   "name": "tab-hoc-vien-danh-sach-hoc-vien",
+   "title": "Tab Học viên — Danh sách học viên",
+   "screens": [
+    "adm-lop-040200"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040200"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_students_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS3.A01.01",
+     "name": "ten",
+     "label": "Tên",
+     "spec": "Hiển thị tag học viên, họ tên và mã học viên. Bấm vùng trắng của ô Tên mở Chi tiết học viên; bấm trực tiếp vào tên mở menu thao tác nhanh. Hai vùng bấm phải tách biệt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Tên",
+        "figmaId": "I3372:39340;3138:130001",
+        "layer": "Tên",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS3.A01.02",
+     "name": "tag-hoc-vien",
+     "label": "Tag học viên",
+     "spec": "Badge như `BLK`, `6B` là tag đang gắn với học viên; không phải trạng thái lớp hay trạng thái học viên. Có thể có nhiều tag và phải hiển thị theo dữ liệu thực tế.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tag học viên",
+      "BLK"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A01.03",
+     "name": "email",
+     "label": "Email",
+     "spec": "Hiển thị email của học viên; không dùng email làm định danh để cập nhật quan hệ học viên–lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC01",
+      "M-CDS3.TC04"
+     ],
+     "missingTerms": [
+      "Email"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A01.04",
+     "name": "ghi-chu-trong-lop",
+     "label": "Ghi chú trong lớp",
+     "spec": "Ghi chú chỉ thuộc học viên trong lớp hiện tại. Bấm icon mở popup xem/chỉnh ghi chú; có lối mở Lịch sử ghi chú.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Ghi chú trong lớp",
+        "figmaId": "2224:24093",
+        "layer": "Ghi chú trong lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDS3.A01",
+       "raw": "mở popup xem/chỉnh ghi chú"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS3.A01.05",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Icon màu thể hiện trạng thái hiện tại theo bộ 7 PNG chuẩn bên dưới. `Đang học` dùng bút trắng trên nền cam; icon xanh trong ảnh chụp cũ không còn là chuẩn hiển thị. Bấm icon để chọn trạng thái mới; bấm `Lịch sử` để xem lịch sử thay đổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "2390:60882",
+        "layer": "LOG Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Đang học",
+        "figmaId": "3372:39353",
+        "layer": "Student Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Student Status",
+        "component": "Student Status",
+        "variant": {
+         "Property 1": "Đang học"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC01",
+      "M-CDS3.TC03",
+      "M-CDS3.TC05"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS3.A01.06",
+     "name": "buoi-hoc",
+     "label": "Buổi học",
+     "spec": "Chỉ hiển thị số buổi được phép học đã ghi nhận từ nghiệp vụ học phí; không có dropdown/nút sửa tại cột. Vẫn so sánh số buổi thực tế để cảnh báo vượt buổi khi hover.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Buổi học",
+        "figmaId": "2224:24097",
+        "layer": "Buổi học",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC01",
+      "M-CDS3.TC03"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS3.A01.07",
+     "name": "hoc-phi",
+     "label": "Học phí",
+     "spec": "Badge là số lần học viên đã đóng học phí trong lớp. Bấm thao tác thêm tại dòng học viên để mở popup Thêm học phí.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Học phí",
+        "figmaId": "2384:54349",
+        "layer": "Học phí",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDS3.A08",
+       "raw": "mở popup Thêm học phí"
+      }
+     ],
+     "testcases": [
+      "M-CDS3.TC01",
+      "M-CDS3.TC03"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS3.A01.08",
+     "name": "so-tien",
+     "label": "Số tiền",
+     "spec": "Tổng học phí học viên đã đóng cho lớp hiện tại, hiển thị theo định dạng tiền Việt Nam.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Số tiền",
+        "figmaId": "2384:54352",
+        "layer": "Số tiền",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC01"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS3.A01.09",
+     "name": "tao-hoc-vien-moi",
+     "label": "Tạo học viên mới",
+     "spec": "Mở popup lựa chọn giữa `Chọn học viên` đã có và `Tạo học viên mới`. Chỉ hiển thị/cho thao tác đối với role có quyền CRUD.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDS3.A01",
+       "raw": "Mở popup lựa chọn giữa `Chọn học viên` đã có và `Tạo học viên mới`"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Tạo học viên mới",
+      "Chọn học viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS3.A02",
+   "name": "cot-buoi-hoc-chi-xem-va-canh-bao-vuot-bu",
+   "title": "Cột Buổi học chỉ xem và cảnh báo vượt buổi",
+   "screens": [
+    "adm-lop-040200"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040200"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_students_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS3.A02.01",
+     "name": "gia-tri-hien-tai",
+     "label": "Giá trị hiện tại",
+     "spec": "Chỉ đọc số buổi được phép học đã ghi nhận. Khi có nhiều lần học phí, rule cộng dồn hay thay thế cần chốt; không tự chọn công thức.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Giá trị hiện tại"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A02.02",
+     "name": "chon-so-buoi",
+     "label": "Chọn số buổi",
+     "spec": "Chuyển sang popup Thêm học phí, bắt buộc chọn trước khi lưu. Không mở picker từ cột Buổi học.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC47"
+     ],
+     "missingTerms": [
+      "Chọn số buổi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A02.03",
+     "name": "so-buoi-thuc-te",
+     "label": "Số buổi thực tế",
+     "spec": "Đếm số buổi của lớp mà học viên đã được ghi nhận thực tế tham gia theo dữ liệu điểm danh hợp lệ. Không dùng số lịch đã tạo hoặc số bài học đã mở của cả lớp để thay thế.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC46"
+     ],
+     "missingTerms": [
+      "Số buổi thực tế"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A02.04",
+     "name": "canh-bao-vuot-buoi",
+     "label": "Cảnh báo vượt buổi",
+     "spec": "Khi `Số buổi thực tế > Số buổi được phép`, hover vào field/icon Buổi học hiển thị `Quá buổi học`. Có thể kèm chi tiết `Đã học {A}/{N} buổi`, trong đó A là số thực tế và N là số được phép.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cảnh báo vượt buổi",
+      "Số buổi thực tế > Số buổi được phép"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A02.05",
+     "name": "cap-nhat-hien-thi",
+     "label": "Cập nhật hiển thị",
+     "spec": "Chỉ sau khi thêm học phí kèm số buổi thành công; không thay đổi học viên khác và tính lại cảnh báo từ dữ liệu mới. Không có thao tác cập nhật số buổi độc lập tại cột.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cập nhật hiển thị"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS3.A03",
+   "name": "popup-chon-cach-them-hoc-vien",
+   "title": "Popup chọn cách thêm học viên",
+   "screens": [
+    "adm-lop-040200"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040200"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_students_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS3.A03.01",
+     "name": "chon-hoc-vien",
+     "label": "Chọn học viên",
+     "spec": "Mở popup danh sách học viên đã tồn tại; cho chọn một hoặc nhiều học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDS3.A01",
+       "raw": "Mở popup danh sách học viên đã tồn tại"
+      }
+     ],
+     "testcases": [
+      "M-CDS3.TC11"
+     ],
+     "missingTerms": [
+      "Chọn học viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A03.02",
+     "name": "tao-hoc-vien-moi",
+     "label": "Tạo học viên mới",
+     "spec": "Mở form tạo tài khoản học viên. Khi tạo thành công, học viên mới được thêm vào đúng lớp đang thao tác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC10"
+     ],
+     "missingTerms": [
+      "Tạo học viên mới"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A03.03",
+     "name": "dong-popup",
+     "label": "Đóng popup",
+     "spec": "Đóng mà không thêm/tạo học viên và không giữ lựa chọn chưa xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC10"
+     ],
+     "missingTerms": [
+      "Đóng popup"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS3.A04",
+   "name": "popup-chon-hoc-vien-co-san",
+   "title": "Popup Chọn học viên có sẵn",
+   "screens": [
+    "adm-lop-040200"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040200"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_students_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS3.A04.01",
+     "name": "tim-kiem",
+     "label": "Tìm kiếm",
+     "spec": "Tìm theo tên hoặc mã học viên như placeholder UI; không tìm bằng dữ liệu ngoài phạm vi người dùng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tìm kiếm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A04.02",
+     "name": "chon-lop-hoc",
+     "label": "Chọn lớp học",
+     "spec": "Lọc học viên theo lớp khi cần. Đây không phải filter trạng thái học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chọn lớp học"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A04.03",
+     "name": "danh-sach",
+     "label": "Danh sách",
+     "spec": "Mỗi dòng hiển thị tối thiểu tên, mã và email; checkbox hỗ trợ multi-select.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Danh sách",
+        "figmaId": "2384:54608",
+        "layer": "Danh sách học viên",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC13",
+      "M-CDS3.TC14",
+      "M-CDS3.TC16"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS3.A04.04",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng popup, không thêm các lựa chọn chưa xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Hủy",
+        "figmaId": "2384:54471",
+        "layer": "Đang sinh sống và làm việc tại Thâm Quyến, Trung Quốc. Đã tốt nghiệp cử nhân chuyên ngành Trung Quốc học, khoa Đông phương học, trường Đại học Khoa học Xã hội và Nhân văn TP.HCM, chứng chỉ HSK6.",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS3.A04.05",
+     "name": "them-moi",
+     "label": "Thêm mới",
+     "spec": "Xác nhận thêm toàn bộ học viên đang được chọn vào lớp hiện tại. Trong popup này, `Thêm mới` có nghĩa là thêm quan hệ vào lớp, không tạo tài khoản mới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC14"
+     ],
+     "missingTerms": [
+      "Thêm mới",
+      "Thêm mới"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS3.A05",
+   "name": "form-tao-hoc-vien-moi",
+   "title": "Form Tạo học viên mới",
+   "screens": [
+    "adm-lop-040200"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040200"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_students_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS3.A05.01",
+     "name": "ho-va-ten-gioi-tinh-ngay-sinh-so-dien-th",
+     "label": "Họ và tên, Giới tính, Ngày sinh, Số điện thoại",
+     "spec": "Thông tin cá nhân của học viên; validate theo requirement Tài khoản/Học viên dùng chung.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Họ và tên, Giới tính, Ngày sinh, Số điện thoại"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A05.02",
+     "name": "vai-tro",
+     "label": "Vai trò",
+     "spec": "Cố định là `Student`; người dùng không được tạo role khác từ flow này.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Student",
+        "figmaId": "3372:39339",
+        "layer": "Student Status",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Student Status",
+        "component": "Student Status",
+        "variant": {
+         "Property 1": "Dự thính"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Vai trò"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS3.A05.03",
+     "name": "gmail-mat-khau",
+     "label": "Gmail, Mật khẩu",
+     "spec": "Dữ liệu đăng nhập; validation, kiểm tra trùng và bảo mật theo requirement Đăng nhập/Tài khoản. Mật khẩu phải được che trên UI và không ghi log.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Gmail, Mật khẩu"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A05.04",
+     "name": "ngay-chot-don-level-code",
+     "label": "Ngày chốt đơn, Level, Code",
+     "spec": "Thuộc dữ liệu học viên; danh sách/validation dùng cấu hình hiện hành của hệ thống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Ngày chốt đơn, Level, Code"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A05.05",
+     "name": "them-tai-khoan",
+     "label": "Thêm tài khoản",
+     "spec": "Tạo tài khoản và gắn vào lớp trong một giao dịch nghiệp vụ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC18",
+      "M-CDS3.TC20"
+     ],
+     "missingTerms": [
+      "Thêm tài khoản"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS3.A06",
+   "name": "ghi-chu-trong-lop-va-lich-su-ghi-chu",
+   "title": "Ghi chú trong lớp và Lịch sử ghi chú",
+   "screens": [
+    "adm-lop-040210"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040210"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_students_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS3.A06.01",
+     "name": "noi-dung-ghi-chu",
+     "label": "Nội dung ghi chú",
+     "spec": "Hiển thị và cho `Admin`, `Class Handler`, `Support` chỉnh nội dung hiện tại theo quyền.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A06.02",
+     "name": "icon-lich-su",
+     "label": "Icon lịch sử",
+     "spec": "Mở danh sách lịch sử ghi chú của đúng học viên và lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC24"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A06.03",
+     "name": "moi-ban-ghi-lich-su",
+     "label": "Mỗi bản ghi lịch sử",
+     "spec": "Hiển thị nội dung, người tạo/người chỉnh sửa và thời điểm. Không ghi đè bản ghi cũ khi sửa ghi chú mới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A06.04",
+     "name": "copy",
+     "label": "Copy",
+     "spec": "Sao chép nguyên nội dung của đúng bản ghi vào clipboard; không chỉnh sửa dữ liệu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC25"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS3.A07",
+   "name": "trang-thai-hoc-vien-va-lich-su-thay-doi-",
+   "title": "Trạng thái học viên và Lịch sử thay đổi trạng thái",
+   "screens": [
+    "adm-lop-040220"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040220"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_students_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS3.A07.01",
+     "name": "trang-thai-hien-tai",
+     "label": "Trạng thái hiện tại",
+     "spec": "`Đang học` dùng icon bút trắng trên nền cam theo mẫu chuẩn. Màu/icon phải nhất quán trên danh sách, menu và lịch sử.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A07.02",
+     "name": "trang-thai-hop-le",
+     "label": "Trạng thái hợp lệ",
+     "spec": "`Đang học`, `Hoàn thành`, `Dự thính`, `Rời lớp`, `Nghỉ học`, `Chỉ xem`, `Xóa`. Menu không cần hiển thị lại trạng thái hiện tại như một đích chuyển.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A07.03",
+     "name": "doi-trang-thai",
+     "label": "Đổi trạng thái",
+     "spec": "Bấm trạng thái đích để cập nhật quan hệ học viên–lớp. Chuyển sang `Đang học` chỉ hợp lệ khi học viên đã có học phí trong lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A07.04",
+     "name": "lich-su",
+     "label": "Lịch sử",
+     "spec": "Mỗi bản ghi hiển thị trạng thái cũ → mới, người thay đổi và thời điểm máy chủ; mới nhất trước.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC27",
+      "M-CDS3.TC28",
+      "M-CDS3.TC29",
+      "M-CDS3.TC30",
+      "M-CDS3.TC31",
+      "M-CDS3.TC32",
+      "M-CDS3.TC48"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A07.05",
+     "name": "chi-xem",
+     "label": "Chỉ xem",
+     "spec": "<img src=\"./images/student-status-view-only.png\" alt=\"Chỉ xem\" width=\"60\" height=\"60\"> | Bong bóng hội thoại có mắt trắng trên nền xám.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC48"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A07.06",
+     "name": "du-thinh",
+     "label": "Dự thính",
+     "spec": "<img src=\"./images/student-status-auditing.png\" alt=\"Dự thính\" width=\"60\" height=\"60\"> | Tai trắng trên nền xanh dương.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC48"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A07.07",
+     "name": "dang-hoc",
+     "label": "Đang học",
+     "spec": "<img src=\"./images/student-status-studying.png\" alt=\"Đang học\" width=\"60\" height=\"60\"> | Bút trắng trên nền cam.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC28",
+      "M-CDS3.TC29",
+      "M-CDS3.TC30",
+      "M-CDS3.TC48"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A07.08",
+     "name": "hoan-thanh",
+     "label": "Hoàn thành",
+     "spec": "<img src=\"./images/student-status-completed.png\" alt=\"Hoàn thành\" width=\"60\" height=\"60\"> | Bục có ngôi sao trắng trên nền xanh lá.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC48"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A07.09",
+     "name": "nghi-hoc",
+     "label": "Nghỉ học",
+     "spec": "<img src=\"./images/student-status-stopped.png\" alt=\"Nghỉ học\" width=\"60\" height=\"60\"> | Lịch có dấu X trắng trên nền cam.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC48"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A07.10",
+     "name": "roi-lop",
+     "label": "Rời lớp",
+     "spec": "<img src=\"./images/student-status-left.png\" alt=\"Rời lớp\" width=\"60\" height=\"60\"> | Cửa và mũi tên trắng trên nền đỏ đậm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC48"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A07.11",
+     "name": "xoa",
+     "label": "Xóa",
+     "spec": "<img src=\"./images/student-status-deleted.png\" alt=\"Xóa\" width=\"60\" height=\"60\"> | Túi có dấu X trắng trên nền đỏ tươi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS3.A08",
+   "name": "popup-them-hoc-phi",
+   "title": "Popup Thêm học phí",
+   "screens": [
+    "adm-lop-040230"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040230"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_students_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS3.A08.01",
+     "name": "toi-han",
+     "label": "Tới hạn",
+     "spec": "Filter hóa đơn theo quy tắc tới hạn hiện hành. Danh sách lựa chọn cụ thể cần dùng cấu hình của module Hóa đơn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC34"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A08.02",
+     "name": "trang-thai",
+     "label": "Trạng Thái",
+     "spec": "**Loại bỏ khỏi popup**, không hiển thị và không dùng làm filter.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC34"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A08.03",
+     "name": "chon-hoa-don",
+     "label": "Chọn hóa đơn",
+     "spec": "Bắt buộc chọn một hóa đơn hợp lệ của đúng học viên. Không hiển thị/cho chọn hóa đơn của người khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC34",
+      "M-CDS3.TC35"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A08.04",
+     "name": "gia-tri",
+     "label": "Giá trị",
+     "spec": "Số tiền học phí muốn ghi nhận; phải là số tiền dương hợp lệ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC34",
+      "M-CDS3.TC39"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A08.05",
+     "name": "so-buoi-hoc",
+     "label": "Số buổi học",
+     "spec": "Bắt buộc chọn trong popup Thêm học phí; số nguyên thuộc `1..N`, N là tổng số buổi của lớp theo giới hạn đã chốt trước đó. Không nhập tự do; lưu số buổi cùng lần ghi nhận học phí. Không tự suy ra số buổi từ số tiền.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC34",
+      "M-CDS3.TC50"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A08.06",
+     "name": "ghi-chu-hoc-phi",
+     "label": "Ghi chú học phí",
+     "spec": "Nội dung bổ sung cho lần đóng học phí; hiển thị/lưu an toàn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDS3.A08.07",
+     "name": "them",
+     "label": "Thêm",
+     "spec": "Validate hóa đơn/tiền/Số buổi học, ghi nhận học phí kèm số buổi và trừ giá trị vào số dư hóa đơn trong cùng giao dịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC34",
+      "M-CDS3.TC35",
+      "M-CDS3.TC37",
+      "M-CDS3.TC49",
+      "M-CDS3.TC50"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS3.A09",
+   "name": "menu-thao-tac-tu-ten-hoc-vien",
+   "title": "Menu thao tác từ tên học viên",
+   "screens": [
+    "adm-lop-040200"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040200"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_students_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS3.A09.01",
+     "name": "them-tag",
+     "label": "Thêm Tag",
+     "spec": "Mở flow gắn tag cho đúng học viên. Tag sau khi thêm hiển thị tại cột Tên. Chi tiết quản lý tag dùng requirement riêng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC41"
+     ],
+     "missingTerms": [
+      "Thêm Tag"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A09.02",
+     "name": "them-lich-hen",
+     "label": "Thêm Lịch Hẹn",
+     "spec": "Mở flow tạo lịch hẹn cho đúng học viên. Chi tiết field/validation lịch hẹn dùng requirement riêng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Thêm Lịch Hẹn",
+        "figmaId": "I2384:54075;2015:31836;2384:54069",
+        "layer": "Chỉnh sửa",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Chỉnh sửa",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Meta Text": "12",
+         "Meta": false,
+         "Leading Icon": "2808:45960",
+         "Description Text": "Mô tả phụ",
+         "Label": "Thêm lịch hẹn",
+         "Description": false,
+         "Submenu": false,
+         "Leading": true,
+         "Type": "Default",
+         "State": "Default",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC42"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS3.A09.03",
+     "name": "xem-lich-su",
+     "label": "Xem lịch sử",
+     "spec": "Mở lịch sử học viên gồm ba tab: `Lịch sử hóa đơn`, `Lịch sử lớp`, `Ghi chú`. Nội dung chi tiết ba tab nằm ở function/requirement riêng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Xem lịch sử",
+        "figmaId": "I2384:54075;2015:31836;2384:54070",
+        "layer": "Xem chi tiết",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Xem chi tiết",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Submenu": false,
+         "Meta": false,
+         "Meta Text": "12",
+         "Description Text": "Mô tả phụ",
+         "Description": false,
+         "Leading Icon": "2808:45960",
+         "Leading": true,
+         "Label": "Xem lịch sử",
+         "Type": "Default",
+         "State": "Hover",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TC43"
+     ],
+     "missingTerms": [
+      "Lịch sử hóa đơn"
+     ],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS3.A10",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [
+    "adm-lop-040200"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040200"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_students_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS3.A10.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | Backend xác nhận thao tác thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TTC01",
+      "M-CDS3.TTC02",
+      "M-CDS3.TTC04"
+     ],
+     "missingTerms": [
+      "Thành công",
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A10.02",
+     "name": "thong-tin",
+     "label": "Thông tin",
+     "spec": "`Thông Báo` | Thao tác đã tiếp nhận nhưng danh sách/tổng tiền cần thời gian đồng bộ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Thông tin",
+        "figmaId": "I2224:21185;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thông Báo"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDS3.A10.03",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | Dữ liệu hoặc điều kiện cần người dùng kiểm tra.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS3.TTC02"
+     ],
+     "missingTerms": [
+      "Cảnh báo",
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS3.A10.04",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | Backend/network không hoàn tất thao tác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lỗi",
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDS3.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-040200"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDS3.F01.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "2224:21185",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS3.F01.02",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "2384:54609",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Thêm học viên mới",
+         "Type": "Warning",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS3.F01.03",
+     "name": "o-dinh-danh",
+     "label": "Ô định danh",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Ô định danh",
+        "figmaId": "3372:39340",
+        "layer": "Ô định danh",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Ô định danh",
+        "component": null,
+        "variant": {
+         "Có Tiền": true,
+         "Có lịch hẹn": true,
+         "Có tag": false,
+         "Có avatar": true,
+         "Tên": "Học viên 1",
+         "Có tag thứ 2": false,
+         "Mã": "nguyenquyen12052001@gmail.com"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS3.F01.04",
+     "name": "ghi-chu",
+     "label": "GHI CHÚ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "GHI CHÚ",
+        "figmaId": "2384:54384",
+        "layer": "GHI CHÚ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "GHI CHÚ",
+        "component": "GHI CHÚ",
+        "variant": {
+         "Property 1": "Có Ghi chú",
+         "Property 2": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS3.F01.05",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2553:185441",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "12",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS3.F01.06",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "2384:54033",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "9.445.000đ",
+         "Type": "0 đ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS3.F01.07",
+     "name": "arrow-detail",
+     "label": "ARROW DETAIL",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "ARROW DETAIL",
+        "figmaId": "2384:54036",
+        "layer": "ARROW DETAIL",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ARROW DETAIL",
+        "component": "ARROW DETAIL",
+        "variant": {
+         "Property 1": "Arrow detail (Default)",
+         "Property 2": "No"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS3.F01.08",
+     "name": "student-status",
+     "label": "Student Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Student Status",
+        "figmaId": "3372:39372",
+        "layer": "Student Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Student Status",
+        "component": "Student Status",
+        "variant": {
+         "Property 1": "Rời lớp"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS3.F01.09",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Mouse click",
+        "figmaId": "2391:61278",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS3.F01.10",
+     "name": "menu-panel",
+     "label": "Menu Panel",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Menu Panel",
+        "figmaId": "2391:61286",
+        "layer": "Menu Panel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Menu Panel",
+        "component": "DD/Organism/Menu Panel",
+        "variant": {
+         "Footer": false,
+         "Search": false,
+         "Type": "Action"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS3.F01.11",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:229949",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Cài đặt"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDS3.F01.12",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040200": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3497:50752",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-CDS3.EX01",
+   "text": "Role ngoài `Admin`, `Class Handler`, `Support` hoặc người dùng ngoài phạm vi gửi request CRUD → backend từ chối, không thay đổi dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX02",
+   "text": "Danh sách rỗng hoặc load-more lỗi → giữ dữ liệu đã tải, hiển thị empty/error state và cho thử lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX03",
+   "text": "Dữ liệu một dòng thay đổi trong lúc load-more → hợp nhất theo ID/phiên bản mới nhất, không để snapshot cũ ghi đè.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX04",
+   "text": "Thêm học phí thiếu số buổi hoặc số buổi không nguyên/sai kiểu/ngoài 1..N → từ chối toàn giao dịch. Request chỉnh số buổi độc lập như thao tác cột cũ cũng không được phép.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX06",
+   "text": "Học viên đã thuộc lớp, bị vô hiệu hóa, ngoài phạm vi hoặc thay đổi trong lúc popup đang mở → từ chối thêm; không tạo dữ liệu trùng/một phần.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX07",
+   "text": "Client đổi Vai trò khỏi `Student` trong flow tạo từ lớp → backend từ chối.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX08",
+   "text": "Dữ liệu tài khoản thiếu/sai/trùng → áp dụng validation module Tài khoản/Học viên; không tạo tài khoản hoặc quan hệ lớp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX09",
+   "text": "Gửi lặp hoặc cùng học viên được thêm đồng thời → xử lý idempotent, không tạo tài khoản/quan hệ trùng; không dùng sĩ số lớp 1-1 làm lý do từ chối.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX10",
+   "text": "Hai người cùng chỉnh ghi chú → không âm thầm ghi đè phiên bản mới hơn; giữ audit và yêu cầu xử lý xung đột.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX11",
+   "text": "Lớp chính thức chuyển học viên chưa có học phí sang `Đang học` → từ chối và trả điều kiện còn thiếu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX12",
+   "text": "Trạng thái đích không thuộc danh sách hợp lệ → backend từ chối và không tạo lịch sử thành công giả.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX13",
+   "text": "Hóa đơn không thuộc học viên, giá trị không phải số dương hoặc vượt số dư → không ghi nhận học phí và không đổi badge/tổng tiền.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX14",
+   "text": "Hai request cùng phân bổ một hóa đơn → kiểm tra/khóa số dư tại commit, không để số dư âm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS3.EX15",
+   "text": "Điểm danh hoặc giới hạn Buổi học đã thay đổi nhưng client còn dữ liệu cũ → backend/tầng đồng bộ phải tính lại từ dữ liệu mới nhất; không giữ cảnh báo sai hoặc bỏ sót cảnh báo vượt buổi.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "M-CDS3.FLOW01",
+   "name": "Xem danh sách và tải thêm",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ01",
+    "M-CDS3.REQ02",
+    "M-CDS3.REQ03",
+    "M-CDS3.REQ04"
+   ]
+  },
+  {
+   "id": "M-CDS3.FLOW02",
+   "name": "Thêm học viên đã có",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ05",
+    "M-CDS3.REQ06"
+   ]
+  },
+  {
+   "id": "M-CDS3.FLOW03",
+   "name": "Tạo học viên mới từ lớp",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ07"
+   ]
+  },
+  {
+   "id": "M-CDS3.FLOW04",
+   "name": "Sửa và xem lịch sử ghi chú",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ08"
+   ]
+  },
+  {
+   "id": "M-CDS3.FLOW05",
+   "name": "Đổi và xem lịch sử trạng thái",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ09",
+    "M-CDS3.REQ10"
+   ]
+  },
+  {
+   "id": "M-CDS3.FLOW06",
+   "name": "Thêm học phí",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ11",
+    "M-CDS3.REQ12"
+   ]
+  },
+  {
+   "id": "M-CDS3.FLOW07",
+   "name": "Menu thao tác theo tên học viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ13"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "M-CDS3.TC01",
+   "title": "Case 1: Mở tab và hiển thị đúng danh sách",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS3.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW01"
+   ],
+   "items": [
+    "M-CDS3.A01.03",
+    "M-CDS3.A01.05",
+    "M-CDS3.A01.06",
+    "M-CDS3.A01.07",
+    "M-CDS3.A01.08"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC02",
+   "title": "Case 2: Kiểm tra quyền xem tab",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A01",
+   "scenario": "Ràng buộc quyền / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC03",
+   "title": "Case 3: Support thực hiện CRUD theo quyền",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A01",
+   "scenario": "Ràng buộc quyền / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS3.A01.05",
+    "M-CDS3.A01.06",
+    "M-CDS3.A01.07"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC04",
+   "title": "Case 4: Mở Chi tiết học viên từ vùng trắng cột Tên",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A01",
+   "scenario": "Flow 1 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW01"
+   ],
+   "items": [
+    "M-CDS3.A01.03"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC05",
+   "title": "Case 5: Load-more khi kéo xuống",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A01",
+   "scenario": "Flow 1 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW01"
+   ],
+   "items": [
+    "M-CDS3.A01.05"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC06",
+   "title": "Case 6: Danh sách rỗng hoặc tải thêm thất bại",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A01",
+   "scenario": "EX02 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ03"
+   ],
+   "exceptions": [
+    "M-CDS3.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC07",
+   "title": "Case 7: Dữ liệu cập nhật trong lúc đang load-more",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A01",
+   "scenario": "EX03 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ03"
+   ],
+   "exceptions": [
+    "M-CDS3.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC08",
+   "title": "Case 8: Không chỉnh ở cột Buổi học",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A02",
+   "scenario": "Flow 1 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC09",
+   "title": "Case 9: Từ chối sửa buổi độc lập từ cột",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A02",
+   "scenario": "EX04 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ04"
+   ],
+   "exceptions": [
+    "M-CDS3.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC44",
+   "title": "Case 44: Chưa cảnh báo khi số buổi thực tế bằng giới hạn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A02",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC45",
+   "title": "Case 45: Cảnh báo khi học viên học vượt giới hạn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A02",
+   "scenario": "Flow 1 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC46",
+   "title": "Case 46: Tính lại cảnh báo sau khi thay đổi điểm danh hoặc giới hạn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A02",
+   "scenario": "REQ04 / EX15",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ04"
+   ],
+   "exceptions": [
+    "M-CDS3.EX15"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS3.A02.03"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC47",
+   "title": "Case 47: Support nhận cảnh báo quản lý quá buổi",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A02",
+   "scenario": "Ràng buộc quyền / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS3.A02.02"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC10",
+   "title": "Case 10: Mở và đóng popup lựa chọn",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A03",
+   "scenario": "Flow 2 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW02"
+   ],
+   "items": [
+    "M-CDS3.A03.02",
+    "M-CDS3.A03.03"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC11",
+   "title": "Case 11: Điều hướng đúng theo lựa chọn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A03",
+   "scenario": "Flow 2 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW02"
+   ],
+   "items": [
+    "M-CDS3.A03.01"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC12",
+   "title": "Case 12: Thêm nhiều học viên vào lớp 1-1",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A03",
+   "scenario": "Flow 2 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC13",
+   "title": "Case 13: Tìm kiếm theo tên hoặc mã",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A04",
+   "scenario": "Flow 2 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW02"
+   ],
+   "items": [
+    "M-CDS3.A04.03"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC14",
+   "title": "Case 14: Chọn và thêm nhiều học viên vào lớp chung",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS3.A04",
+   "scenario": "Flow 2 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW02"
+   ],
+   "items": [
+    "M-CDS3.A04.03",
+    "M-CDS3.A04.05"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC15",
+   "title": "Case 15: Hủy lựa chọn nhiều học viên",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A04",
+   "scenario": "Flow 2 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC16",
+   "title": "Case 16: Chặn học viên trùng hoặc không còn hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A04",
+   "scenario": "EX06 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ06"
+   ],
+   "exceptions": [
+    "M-CDS3.EX06"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS3.A04.03"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC17",
+   "title": "Case 17: Lớp 1-1 chọn và thêm nhiều học viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A04",
+   "scenario": "Flow 2 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC18",
+   "title": "Case 18: Tạo học viên mới và thêm vào lớp",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS3.A05",
+   "scenario": "Flow 3 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW03"
+   ],
+   "items": [
+    "M-CDS3.A05.05"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC19",
+   "title": "Case 19: Chặn tạo role khác Student",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A05",
+   "scenario": "EX07 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ07"
+   ],
+   "exceptions": [
+    "M-CDS3.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC20",
+   "title": "Case 20: Validation tài khoản và dữ liệu trùng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A05",
+   "scenario": "EX08 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ07"
+   ],
+   "exceptions": [
+    "M-CDS3.EX08"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS3.A05.05"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC21",
+   "title": "Case 21: Gửi lặp hoặc có thao tác thêm đồng thời",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A05",
+   "scenario": "EX09 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ07"
+   ],
+   "exceptions": [
+    "M-CDS3.EX09"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC22",
+   "title": "Case 22: Mở đúng ghi chú của học viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A06",
+   "scenario": "Flow 4 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC23",
+   "title": "Case 23: Chỉnh sửa và lưu ghi chú",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A06",
+   "scenario": "Flow 4 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC24",
+   "title": "Case 24: Xem lịch sử ghi chú",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A06",
+   "scenario": "Flow 4 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW04"
+   ],
+   "items": [
+    "M-CDS3.A06.02"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC25",
+   "title": "Case 25: Sao chép một bản ghi ghi chú",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A06",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS3.A06.04"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC26",
+   "title": "Case 26: Xung đột khi hai người cùng sửa ghi chú",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A06",
+   "scenario": "EX10 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ08"
+   ],
+   "exceptions": [
+    "M-CDS3.EX10"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC27",
+   "title": "Case 27: Mở menu và đổi trạng thái hợp lệ",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS3.A07",
+   "scenario": "Flow 5 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW05"
+   ],
+   "items": [
+    "M-CDS3.A07.04"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC28",
+   "title": "Case 28: Chuyển sang Đang học khi đã có học phí",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A07",
+   "scenario": "Flow 5 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW05"
+   ],
+   "items": [
+    "M-CDS3.A07.04",
+    "M-CDS3.A07.07"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC29",
+   "title": "Case 29: Chặn chuyển sang Đang học khi chưa có học phí",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A07",
+   "scenario": "EX11 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ09"
+   ],
+   "exceptions": [
+    "M-CDS3.EX11"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS3.A07.04",
+    "M-CDS3.A07.07"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC30",
+   "title": "Case 30: Lớp không chính thức bỏ qua điều kiện học phí",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A07",
+   "scenario": "REQ09 / Ràng buộc lớp test",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS3.A07.04",
+    "M-CDS3.A07.07"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC31",
+   "title": "Case 31: Chuyển học viên sang Xóa",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A07",
+   "scenario": "Flow 5 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW05"
+   ],
+   "items": [
+    "M-CDS3.A07.04"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC32",
+   "title": "Case 32: Xem lịch sử trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A07",
+   "scenario": "Flow 5 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW05"
+   ],
+   "items": [
+    "M-CDS3.A07.04"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC33",
+   "title": "Case 33: Từ chối trạng thái ngoài danh sách",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A07",
+   "scenario": "EX12 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ09"
+   ],
+   "exceptions": [
+    "M-CDS3.EX12"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC48",
+   "title": "Case 48: Hiển thị đúng bộ icon trạng thái chính thức",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A07",
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS3.A07.04",
+    "M-CDS3.A07.05",
+    "M-CDS3.A07.06",
+    "M-CDS3.A07.07",
+    "M-CDS3.A07.08",
+    "M-CDS3.A07.09",
+    "M-CDS3.A07.10"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC34",
+   "title": "Case 34: Popup có số buổi bắt buộc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A08",
+   "scenario": "Flow 6 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW06"
+   ],
+   "items": [
+    "M-CDS3.A08.01",
+    "M-CDS3.A08.02",
+    "M-CDS3.A08.03",
+    "M-CDS3.A08.04",
+    "M-CDS3.A08.05",
+    "M-CDS3.A08.07"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC35",
+   "title": "Case 35: Thêm học phí kèm số buổi",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS3.A08",
+   "scenario": "Flow 6 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW06"
+   ],
+   "items": [
+    "M-CDS3.A08.03",
+    "M-CDS3.A08.07"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC36",
+   "title": "Case 36: Hủy popup không thay học phí hoặc số buổi",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A08",
+   "scenario": "Flow 6 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC37",
+   "title": "Case 37: Từ chối hóa đơn sai học viên hoặc giá trị không hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A08",
+   "scenario": "EX13 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ11"
+   ],
+   "exceptions": [
+    "M-CDS3.EX13"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS3.A08.07"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC38",
+   "title": "Case 38: Xử lý đồng thời trên cùng hóa đơn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A08",
+   "scenario": "EX14 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ11"
+   ],
+   "exceptions": [
+    "M-CDS3.EX14"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC39",
+   "title": "Case 39: Tính badge và tổng tiền theo đúng lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A08",
+   "scenario": "REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS3.A08.04"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC49",
+   "title": "Case 49: Thiếu hoặc sai Số buổi học",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A08",
+   "scenario": "EX04 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ11"
+   ],
+   "exceptions": [
+    "M-CDS3.EX04"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS3.A08.07"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC50",
+   "title": "Case 50: Lỗi lưu số buổi rollback học phí",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A08",
+   "scenario": "EX13 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ11"
+   ],
+   "exceptions": [
+    "M-CDS3.EX13"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDS3.A08.05",
+    "M-CDS3.A08.07"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC51",
+   "title": "Case 51: Thêm học phí lặp không nhân dữ liệu",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A08",
+   "scenario": "REQ11 / Ràng buộc idempotency",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC40",
+   "title": "Case 40: Mở menu bằng tên học viên",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A09",
+   "scenario": "Flow 7 / REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW07"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TC41",
+   "title": "Case 41: Thêm Tag và cập nhật badge",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A09",
+   "scenario": "Flow 7 / REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW07"
+   ],
+   "items": [
+    "M-CDS3.A09.01"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC42",
+   "title": "Case 42: Mở flow Thêm Lịch Hẹn",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A09",
+   "scenario": "Flow 7 / REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW07"
+   ],
+   "items": [
+    "M-CDS3.A09.02"
+   ]
+  },
+  {
+   "id": "M-CDS3.TC43",
+   "title": "Case 43: Mở Xem lịch sử với ba tab",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A09",
+   "scenario": "Flow 7 / REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS3.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDS3.FLOW07"
+   ],
+   "items": [
+    "M-CDS3.A09.03"
+   ]
+  },
+  {
+   "id": "M-CDS3.TTC01",
+   "title": "Toast Case 1: Thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A10",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS3.A10.01"
+   ]
+  },
+  {
+   "id": "M-CDS3.TTC02",
+   "title": "Toast Case 2: Cảnh báo",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A10",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS3.A10.01",
+    "M-CDS3.A10.03"
+   ]
+  },
+  {
+   "id": "M-CDS3.TTC03",
+   "title": "Toast Case 3: Lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS3.A10",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDS3.TTC04",
+   "title": "Toast Case 4: Thông tin, đóng và chống lặp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDS3.A10",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS3.A10.01"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-040210",
+   "text": "popup “Lớp học / Tổng quan / Popup lịch sử ghi chú” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-LOP-040210",
+   "text": "loại popup, màn cha ADM-LOP-040200 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-040210",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-040220",
+   "text": "popup “Lớp học / Cài đặt / Học viên / Popup lịch sử trạng thái” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-040220",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-040230",
+   "text": "popup “Lớp học / Cài đặt / Học viên / Popup thêm học phí” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-040230",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDS3.TTC01",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDS3.TTC02",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDS3.TTC03",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-CDS3.TTC04",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDS3.REQ14",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-CDS3.EX01",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/class_management/class_detail_students_requirements.md",
+   "prefix": "M-CDS3",
+   "title": "Chi tiết lớp học — Tab Học viên"
+  }
+ ]
+}

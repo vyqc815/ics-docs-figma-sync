@@ -94,6 +94,7 @@
     "CM-HW.A02",
     "CM-HW.A03",
     "CM-HW.A07",
+    "CM-HW.A13",
     "CM-HW.F01"
    ]
   },
@@ -348,7 +349,8 @@
    "regions": [
     "CM-HW.A01",
     "CM-HW.A02",
-    "CM-HW.A03"
+    "CM-HW.A03",
+    "CM-HW.A13"
    ]
   },
   "CD-KH-060110": {
@@ -664,7 +666,8 @@
    "regions": [
     "CM-HW.A01",
     "CM-HW.A02",
-    "CM-HW.A03"
+    "CM-HW.A03",
+    "CM-HW.A13"
    ]
   }
  },
@@ -5293,8 +5296,16 @@
    "id": "CM-HW.A13",
    "name": "toast-phan-hoi-crud",
    "title": "Toast phản hồi CRUD",
-   "screens": [],
-   "screensGuessed": [],
+   "screens": [
+    "cd-kh-030340",
+    "cd-kh-060100",
+    "cd-kh-060200"
+   ],
+   "screensGuessed": [
+    "CD-KH-030340",
+    "CD-KH-060100",
+    "CD-KH-060200"
+   ],
    "source": "tu-dien",
    "content": "qc",
    "requirement": "course_management/homework-test/homework-test.md",
@@ -5313,8 +5324,11 @@
      "testcases": [
       "CM-HW.TTC01"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thành công",
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-HW.A13.02",
@@ -5326,8 +5340,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Cảnh báo",
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-HW.A13.03",
@@ -5336,11 +5353,61 @@
      "spec": "`Có Lỗi Xảy Ra` | Lưu, xoá, import, export, tạo câu bằng AI thất bại do backend / network.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030340": [
+       {
+        "term": "Lỗi",
+        "figmaId": "5491:357786",
+        "layer": "Nghe và chọn câu trả lời đúng",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-kh-060100": [
+       {
+        "term": "Lỗi",
+        "figmaId": "I5491:346424;1048:1240",
+        "layer": "Button",
+        "confidence": "thap",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Soát lỗi bằng AI",
+         "Type": "Secondary",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Lỗi",
+        "figmaId": "I5491:347589;1048:1240",
+        "layer": "Button",
+        "confidence": "thap",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Soát lỗi bằng AI",
+         "Type": "Secondary",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "khop"
     }
    ]
   },

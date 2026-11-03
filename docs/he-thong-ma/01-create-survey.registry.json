@@ -1,0 +1,942 @@
+{
+ "cluster": "01-create-survey",
+ "title": "Tạo khảo sát (Admin)",
+ "figmaPrefix": "SB-0CS",
+ "requirements": [
+  {
+   "id": "SB-0CS.REQ01",
+   "name": "Trim dữ liệu",
+   "text": "Trim tên, mô tả, nội dung câu hỏi, đáp án. Chỉ có khoảng trắng = trống.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-0CS.REQ02",
+   "name": "Dòng đáp án trống",
+   "text": "Không lưu, không hiển thị ở Xem trước.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-0CS.REQ03",
+   "name": "Ký hiệu đáp án",
+   "text": "Admin nhập text thuần. A, B, C… do hệ thống tự gắn theo thứ tự khi hiển thị cho người làm và ở kết quả.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-0CS.REQ04",
+   "name": "Empty state",
+   "text": "Tab chưa có khảo sát / chưa chọn khảo sát → panel giữa hiển thị hướng dẫn tạo khảo sát ở danh sách bên phải.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-0CS.REQ05",
+   "name": "Thang đánh giá",
+   "text": "Cố định 1–5 sao.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-0CS.REQ06",
+   "name": "Khảo sát đã giao",
+   "text": "Khảo sát đã thêm vào trang Giao vẫn giữ nguyên (người nhận làm và xem kết quả bình thường) khi khảo sát chuyển Vô hiệu hoặc bị xoá ở trang Tạo.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-0CS.REQ07",
+   "name": "Dùng chung component",
+   "text": "Phần hiển thị câu hỏi ở Xem trước dùng chung với màn Làm khảo sát ([03-take-survey.md](./03-take-survey.md)) và popup Kết quả từng giáo viên ([02-assign-survey.md](./02-assign-survey.md)).",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-KS-010000": {
+   "id": "ADM-KS-010000",
+   "name": "tao-cuoc-khao-sat",
+   "title": "Khảo sát / Tạo khảo sát / Tạo cuộc khảo sát",
+   "kind": "man-chinh",
+   "parent": "ADM-KS-010010",
+   "shownOn": "ADM-KS-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4252:148140",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/khao-sat/tao-khao-sat/tao-cuoc-khao-sat",
+   "link": "/khao-sat/tao-khao-sat/tao-cuoc-khao-sat",
+   "dark": "ADM-KS-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "SB-0CS.A01",
+    "SB-0CS.A02",
+    "SB-0CS.A03",
+    "SB-0CS.F01"
+   ]
+  },
+  "ADM-KS-020000": {
+   "id": "ADM-KS-020000",
+   "name": "tao-cuoc-khao-sat",
+   "title": "Khảo sát / Tạo khảo sát cho lớp / Tạo cuộc khảo sát",
+   "kind": "man-chinh",
+   "parent": "ADM-KS-020010",
+   "shownOn": "ADM-KS-020000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4885:8284",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/khao-sat/tao-khao-sat-cho-lop/tao-cuoc-khao-sat",
+   "link": "/khao-sat/tao-khao-sat-cho-lop/tao-cuoc-khao-sat",
+   "dark": "ADM-KS-020000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "SB-0CS.A01",
+    "SB-0CS.A02",
+    "SB-0CS.A03",
+    "SB-0CS.F01"
+   ]
+  },
+  "ADM-KS-030000": {
+   "id": "ADM-KS-030000",
+   "name": "tao-cuoc-khao-sat",
+   "title": "Khảo sát / Tạo khảo sát học viên / Tạo cuộc khảo sát",
+   "kind": "man-chinh",
+   "parent": "ADM-KS-030010",
+   "shownOn": "ADM-KS-030000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4885:9786",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/khao-sat/tao-khao-sat-hoc-vien/tao-cuoc-khao-sat",
+   "link": "/khao-sat/tao-khao-sat-hoc-vien/tao-cuoc-khao-sat",
+   "dark": "ADM-KS-030000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "SB-0CS.A01",
+    "SB-0CS.A02",
+    "SB-0CS.A03",
+    "SB-0CS.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "SB-0CS.A01",
+   "name": "trang-1-tao-khao-sat-tab-giao-vien-lop",
+   "title": "Trang 1: Tạo khảo sát — tab Giáo viên / Lớp",
+   "screens": [
+    "adm-ks-010000",
+    "adm-ks-020000",
+    "adm-ks-030000"
+   ],
+   "screensGuessed": [
+    "ADM-KS-010000",
+    "ADM-KS-020000",
+    "ADM-KS-030000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "survey_bug/survey/01-create-survey/01-create-survey.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.A02",
+   "name": "trang-2-tao-khao-sat-tab-hoc-vien",
+   "title": "Trang 2: Tạo khảo sát — tab Học viên",
+   "screens": [
+    "adm-ks-010000",
+    "adm-ks-020000",
+    "adm-ks-030000"
+   ],
+   "screensGuessed": [
+    "ADM-KS-010000",
+    "ADM-KS-020000",
+    "ADM-KS-030000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "survey_bug/survey/01-create-survey/01-create-survey.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.A03",
+   "name": "popup-xem-truoc-khao-sat",
+   "title": "Popup: Xem trước khảo sát",
+   "screens": [
+    "adm-ks-010000",
+    "adm-ks-020000",
+    "adm-ks-030000"
+   ],
+   "screensGuessed": [
+    "ADM-KS-010000",
+    "ADM-KS-020000",
+    "ADM-KS-030000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "survey_bug/survey/01-create-survey/01-create-survey.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-ks-010000",
+    "adm-ks-020000",
+    "adm-ks-030000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "SB-0CS.F01.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:243663",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Khảo sát / Tạo khảo sát"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.02",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "4252:148290",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.03",
+     "name": "xem-truoc",
+     "label": "Xem trước",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "Xem trước",
+        "figmaId": "4262:148495",
+        "layer": "Xem trước",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Xem trước",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xem trước",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.04",
+     "name": "luu",
+     "label": "Lưu",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "Lưu",
+        "figmaId": "4262:148497",
+        "layer": "Lưu",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lưu",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Lưu",
+         "Type": "Primary",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.05",
+     "name": "add-new-bar-them-cau-hoi-moi",
+     "label": "Add New Bar · Thêm câu hỏi mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "Add New Bar · Thêm câu hỏi mới",
+        "figmaId": "4262:148565",
+        "layer": "Add New Bar · Thêm câu hỏi mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Thêm câu hỏi mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1075:1478",
+         "Placeholder": "Thêm câu hỏi mới",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.06",
+     "name": "tab-giao-vien",
+     "label": "Tab · Giáo viên",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "Tab · Giáo viên",
+        "figmaId": "4262:148502",
+        "layer": "Tab · Giáo viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Giáo viên",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.07",
+     "name": "tab-lop",
+     "label": "Tab · Lớp",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "Tab · Lớp",
+        "figmaId": "4262:148508",
+        "layer": "Tab · Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Lớp",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.08",
+     "name": "tab-hoc-vien",
+     "label": "Tab · Học viên",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "Tab · Học viên",
+        "figmaId": "4262:148513",
+        "layer": "Tab · Học viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Học viên",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.09",
+     "name": "stt",
+     "label": "STT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "STT",
+        "figmaId": "4262:148520",
+        "layer": "STT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "STT",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.10",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "5019:18368",
+        "layer": "Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trạng thái",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Công khai",
+         "Variant": "Success",
+         "Dropdown": "On"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.11",
+     "name": "keo-tha",
+     "label": "Kéo thả",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "Kéo thả",
+        "figmaId": "4273:149876",
+        "layer": "Kéo thả",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Kéo thả",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Drop & Drag"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.12",
+     "name": "add-new-bar-them-cuoc-khao-sat",
+     "label": "Add New Bar · Thêm cuộc khảo sát",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "Add New Bar · Thêm cuộc khảo sát",
+        "figmaId": "4262:148558",
+        "layer": "Add New Bar · Thêm cuộc khảo sát",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Thêm cuộc khảo sát",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Nút": "1075:1478",
+         "Icon trái": false,
+         "Placeholder": "Thêm cuộc khảo sát",
+         "Type": "Box",
+         "Size": "S",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.13",
+     "name": "panel",
+     "label": "Panel",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-010000": [
+       {
+        "term": "Panel",
+        "figmaId": "5019:18585",
+        "layer": "Panel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Panel",
+        "component": "DD/Organism/Menu Panel",
+        "variant": {
+         "Footer": false,
+         "Search": false,
+         "Type": "Single"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "SB-0CS.F01.14",
+     "name": "loai-khao-sat",
+     "label": "Loại khảo sát",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-ks-030000": [
+       {
+        "term": "Loại khảo sát",
+        "figmaId": "4885:39428",
+        "layer": "Loại khảo sát",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Loại khảo sát",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Bắt buộc",
+         "Size": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "SB-0CS.EX01",
+   "text": "Đổi khảo sát / đổi tab / rời trang khi còn thay đổi chưa lưu → popup \"Bạn có thay đổi chưa lưu\" (Lưu / Bỏ thay đổi / Huỷ).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-0CS.EX02",
+   "text": "Lưu khi có câu hỏi trống nội dung, hoặc câu Trắc nghiệm / Hộp kiểm không có đáp án nào → không lưu, báo lỗi ngay dưới câu đó.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-0CS.EX03",
+   "text": "Chuyển Nháp → Công khai khi chưa có câu hỏi → chặn, toast \"Khảo sát chưa có câu hỏi\". Khi còn thay đổi chưa lưu → yêu cầu lưu trước.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "SB-0CS.EX04",
+   "text": "Xoá hết tên khảo sát trên card rồi blur → khôi phục tên cũ.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "SB-0CS.FLOW01",
+   "name": "Tạo nhanh khảo sát",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-0CS.FLOW02",
+   "name": "Soạn câu hỏi & lưu",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-0CS.FLOW03",
+   "name": "Đổi trạng thái khảo sát",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-0CS.FLOW04",
+   "name": "Nhân bản khảo sát",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "SB-0CS.FLOW05",
+   "name": "Sắp xếp / xoá khảo sát",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  }
+ ],
+ "testcases": [
+  {
+   "id": "SB-0CS.TC01",
+   "title": "Case 1: Tạo nhanh khảo sát",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 1",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "SB-0CS.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.TC02",
+   "title": "Case 2: Soạn & lưu đủ 4 loại câu hỏi",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 2",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "SB-0CS.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.TC03",
+   "title": "Case 3: Nhập đáp án & đổi loại câu",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "UI",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.TC04",
+   "title": "Case 4: Nhân bản, kéo thả, xoá câu",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "UI",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.TC05",
+   "title": "Case 5: Validate khi lưu",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "SB-0CS.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.TC06",
+   "title": "Case 6: Rời khi chưa lưu",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "SB-0CS.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.TC07",
+   "title": "Case 7: Xem trước",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "UI",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.TC08",
+   "title": "Case 8: Đổi trạng thái khảo sát",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3, EX03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "SB-0CS.EX03"
+   ],
+   "flows": [
+    "SB-0CS.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.TC09",
+   "title": "Case 9: Nhân bản & xoá khảo sát",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 4, Flow 5, REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "SB-0CS.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "SB-0CS.FLOW04",
+    "SB-0CS.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "SB-0CS.TC10",
+   "title": "Case 10: Quyền truy cập",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "SB-0CS.TC03",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "SB-0CS.TC04",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "SB-0CS.TC07",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "SB-0CS.TC10",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-0CS.REQ01",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-0CS.REQ02",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-0CS.REQ03",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-0CS.REQ04",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-0CS.REQ05",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-0CS.REQ07",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "SB-0CS.EX04",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "survey_bug/survey/01-create-survey/01-create-survey.md",
+   "prefix": "SB-0CS",
+   "title": "Tạo khảo sát (Admin)"
+  }
+ ]
+}

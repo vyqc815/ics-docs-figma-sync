@@ -1,0 +1,1755 @@
+{
+ "cluster": "meeting-schedule",
+ "title": "[Phụ trách lớp, Admin] Lịch Họp",
+ "figmaPrefix": "MS-MS",
+ "requirements": [
+  {
+   "id": "MS-MS.REQ01",
+   "name": "Badge sidebar",
+   "text": "Đếm cuộc họp user là người tạo hoặc người tham gia, trạng thái Mới tạo + Đang chờ + Đang tham gia; không theo bộ lọc; ẩn khi 0, `99+` khi > 99.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.REQ02",
+   "name": "Phạm vi & quyền",
+   "text": "Admin xem tất cả cuộc họp; Phụ trách lớp chỉ thấy cuộc họp mình tạo hoặc tham gia. Người tạo: sửa, đổi trạng thái, xoá. Người khác: chỉ xem. Quyền sửa/xoá kiểm tra theo `created_by`, không theo role.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.REQ03",
+   "name": "Bộ lọc",
+   "text": "Người tham gia (mặc định chính mình, danh sách mọi role ICS), Trạng thái (4 giá trị), Thời gian (14 giá trị, chọn 1); OR trong bộ lọc, AND giữa bộ lọc.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.REQ04",
+   "name": "Dạng danh sách",
+   "text": "Cột Ngày họp, Giờ họp, Chủ đề, Ghi chú, Người tham gia (4 avatar + `+N`, tooltip tên), Trạng thái (dropdown cho người tạo), icon bút; sắp xếp mới nhất trước; 10 dòng/trang.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.REQ05",
+   "name": "Dạng lịch tuần",
+   "text": "Điều hướng tuần, nút Hôm nay, highlight hôm nay, card theo giờ bắt đầu, `+N cuộc họp` khi trùng ô; không áp bộ lọc Thời gian. Ghi nhớ dạng hiển thị theo user.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.REQ06",
+   "name": "Popup",
+   "text": "Dùng chung Thêm/Chi tiết; field Chủ đề, Thời gian, Trạng thái, Người tham gia, Ghi chú, Link cuộc họp; nhãn Đã trôi qua/Sắp diễn ra; Xoá có xác nhận, xoá mềm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.REQ07",
+   "name": "Toast",
+   "text": "`Thành Công`: `Đã thêm cuộc họp.`, `Đã cập nhật cuộc họp.`, `Đã cập nhật trạng thái.`, `Đã xoá cuộc họp.`; `Cảnh Báo` khi validate lỗi; `Có Lỗi Xảy Ra` khi lỗi. Một thao tác một Toast.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.REQ08",
+   "name": "Log",
+   "text": "Lưu người/thời điểm tạo, sửa, đổi trạng thái, xoá.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.REQ09",
+   "name": "Người tham gia",
+   "text": "Chọn được tài khoản mọi role của ICS (Admin, Phụ trách lớp, Support, Sale, Giáo viên, Trợ giảng, Học viên), chỉ tài khoản đang hoạt động.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "SP-LHP-010000": {
+   "id": "SP-LHP-010000",
+   "name": "dang-danh-sach",
+   "title": "Lịch họp / Dạng danh sách",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "SP-LHP-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "3857:78160",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lich-hop/dang-danh-sach",
+   "link": "/lich-hop/dang-danh-sach",
+   "dark": "SP-LHP-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "MS-MS.A01",
+    "MS-MS.A02",
+    "MS-MS.A04",
+    "MS-MS.F01",
+    "MS-MS.F02"
+   ]
+  },
+  "SP-LHP-010010": {
+   "id": "SP-LHP-010010",
+   "name": "popup-chi-tiet-cuoc-hop",
+   "title": "Lịch họp / Popup chi tiết cuộc họp",
+   "kind": "popup",
+   "parent": "SP-LHP-010000",
+   "shownOn": "SP-LHP-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3857:80154",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/lich-hop/dang-danh-sach?popup=SP-LHP-010010",
+   "dark": "SP-LHP-010010-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "MS-MS.A03"
+   ]
+  },
+  "SP-LHP-020000": {
+   "id": "SP-LHP-020000",
+   "name": "dang-bang",
+   "title": "Lịch họp / Dạng bảng",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "SP-LHP-020000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "3857:79450",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lich-hop/dang-bang",
+   "link": "/lich-hop/dang-bang",
+   "dark": "SP-LHP-020000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "MS-MS.A01",
+    "MS-MS.A02",
+    "MS-MS.A04",
+    "MS-MS.F01",
+    "MS-MS.F02"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "MS-MS.A01",
+   "name": "trang-1-danh-sach-cuoc-hop-dang-danh-sac",
+   "title": "Trang 1: Danh sách cuộc họp — dạng danh sách",
+   "screens": [
+    "sp-lhp-010000",
+    "sp-lhp-020000"
+   ],
+   "screensGuessed": [
+    "SP-LHP-010000",
+    "SP-LHP-020000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "MS-MS.A01.01",
+     "name": "nguoi-tham-gia",
+     "label": "Người tham gia",
+     "spec": "Chọn nhiều, có ô tìm kiếm; mỗi dòng `Tên (Role)`. Lọc cuộc họp có người được chọn là người tạo hoặc người tham gia. Badge số trên nút = số người đã chọn. Danh sách gồm tài khoản mọi role của ICS. Bỏ chọn hết = không lọc theo người (Admin thấy toàn bộ cuộc họp). | Chính người đang đăng nhập",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Người tham gia",
+        "figmaId": "3857:78844",
+        "layer": "Filter · Người tham gia",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Người tham gia",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": true,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Người tham gia",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ],
+      "sp-lhp-020000": [
+       {
+        "term": "Người tham gia",
+        "figmaId": "3857:79592",
+        "layer": "Filter · Người tham gia",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Người tham gia",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": true,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Người tham gia",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC01",
+      "MS-MS.TC1b",
+      "MS-MS.TC03",
+      "MS-MS.TC07",
+      "MS-MS.TC08"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "MS-MS.A01.02",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Chọn nhiều: `Mới tạo`, `Hoàn thành`, `Đang tham gia`, `Đang chờ`; có ô tìm kiếm | Tất cả",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "3857:78845",
+        "layer": "Filter · Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Trạng thái",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ],
+      "sp-lhp-020000": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "3857:79593",
+        "layer": "Filter · Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Trạng thái",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC1b",
+      "MS-MS.TC03",
+      "MS-MS.TC05",
+      "MS-MS.TC06",
+      "MS-MS.TC08"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "MS-MS.A01.03",
+     "name": "thoi-gian",
+     "label": "Thời gian",
+     "spec": "Chọn 1: Tới hạn, Hôm nay, Hôm qua, Tuần này, Tuần trước, Tuần sau, Tháng này, Tháng trước, 3 tháng trước, Tháng sau, Năm nay, Năm trước, Tùy chọn, Hôm nay và hôm qua. Lọc theo ngày họp. | Không giới hạn",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Thời gian",
+        "figmaId": "3857:78846",
+        "layer": "Filter · Thời gian",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Thời gian",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Thời gian",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ],
+      "sp-lhp-020000": [
+       {
+        "term": "Thời gian",
+        "figmaId": "3857:79594",
+        "layer": "Filter · Thời gian",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Thời gian",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Thời gian",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC08",
+      "MS-MS.TC10"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "MS-MS.A01.04",
+     "name": "ngay-hop",
+     "label": "Ngày họp",
+     "spec": "`Thứ, dd.MM.yyyy` (VD `Th6, 13.02.2026`; Chủ Nhật là `CN`).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Ngày họp",
+        "figmaId": "3857:78862",
+        "layer": "Ngày họp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop-mot-phan"
+    },
+    {
+     "id": "MS-MS.A01.05",
+     "name": "gio-hop",
+     "label": "Giờ họp",
+     "spec": "`HH:mm`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Giờ họp",
+        "figmaId": "3857:81003",
+        "layer": "Giờ họp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop-mot-phan"
+    },
+    {
+     "id": "MS-MS.A01.06",
+     "name": "chu-de",
+     "label": "Chủ đề",
+     "spec": "Tối đa 2 dòng, dài hơn cắt `…`, hover hiện đủ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Chủ đề",
+        "figmaId": "3857:78864",
+        "layer": "Chủ đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC03",
+      "MS-MS.TC04"
+     ],
+     "missingTerms": [],
+     "status": "khop-mot-phan"
+    },
+    {
+     "id": "MS-MS.A01.07",
+     "name": "ghi-chu",
+     "label": "Ghi chú",
+     "spec": "Tối đa 1 dòng, cắt `…`; trống hiển thị `Chưa có ghi chú` màu xám.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "I4915:258525;4901:225813",
+        "layer": "Card Menu",
+        "confidence": "cao",
+        "region": "Sidebar · MENU - CLASS HANDLER",
+        "owner": "Card Menu",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "1161:5598",
+         "Label": "Ghi chú",
+         "Type": "Chính thông báo",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "sp-lhp-020000": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "I4915:258298;4901:225813",
+        "layer": "Card Menu",
+        "confidence": "cao",
+        "region": "Sidebar · MENU - CLASS HANDLER",
+        "owner": "Card Menu",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "1161:5598",
+         "Label": "Ghi chú",
+         "Type": "Chính thông báo",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC04",
+      "MS-MS.TC09"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "MS-MS.A01.08",
+     "name": "nguoi-tham-gia",
+     "label": "Người tham gia",
+     "spec": "Avatar xếp chồng, tối đa 4 avatar; còn lại hiển thị vòng `+N`. Hover vùng avatar hiện tooltip danh sách đủ tên người tham gia.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Người tham gia",
+        "figmaId": "3857:78844",
+        "layer": "Filter · Người tham gia",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Người tham gia",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": true,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Người tham gia",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ],
+      "sp-lhp-020000": [
+       {
+        "term": "Người tham gia",
+        "figmaId": "3857:79592",
+        "layer": "Filter · Người tham gia",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Người tham gia",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": true,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Người tham gia",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC01",
+      "MS-MS.TC1b",
+      "MS-MS.TC03",
+      "MS-MS.TC07",
+      "MS-MS.TC08"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "MS-MS.A01.09",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Icon trạng thái kèm mũi tên dropdown. Người tạo bấm để đổi trạng thái ngay (lưu khi chọn); người tham gia chỉ thấy icon, không mở dropdown. Hover icon hiện tên trạng thái.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "3857:78845",
+        "layer": "Filter · Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Trạng thái",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ],
+      "sp-lhp-020000": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "3857:79593",
+        "layer": "Filter · Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Trạng thái",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC1b",
+      "MS-MS.TC03",
+      "MS-MS.TC05",
+      "MS-MS.TC06",
+      "MS-MS.TC08"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "MS-MS.A01.10",
+     "name": "icon-but",
+     "label": "Icon bút",
+     "spec": "Mở popup Chi tiết cuộc họp (Trang 3): người tạo ở chế độ sửa, người tham gia ở chế độ chỉ xem.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Icon bút",
+        "figmaId": "3857:78842",
+        "layer": "Atom/Icon Button",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ],
+      "sp-lhp-020000": [
+       {
+        "term": "Icon bút",
+        "figmaId": "3857:79590",
+        "layer": "Atom/Icon Button",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "opens",
+       "target": "MS-MS.A03",
+       "raw": "Mở popup Chi tiết cuộc họp "
+      }
+     ],
+     "testcases": [
+      "MS-MS.TC05"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "MS-MS.A01.11",
+     "name": "sidebar-menu-class-handler",
+     "label": "Sidebar · MENU - CLASS HANDLER",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Sidebar · MENU - CLASS HANDLER",
+        "figmaId": "4915:258525",
+        "layer": "Sidebar · MENU - CLASS HANDLER",
+        "confidence": "cao",
+        "region": "Sidebar · MENU - CLASS HANDLER",
+        "owner": "Sidebar · MENU - CLASS HANDLER",
+        "component": "MENU - CLASS HANDLER",
+        "variant": {
+         "Trang": "Lịch họp"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "MS-MS.A02",
+   "name": "trang-2-danh-sach-cuoc-hop-dang-lich-tua",
+   "title": "Trang 2: Danh sách cuộc họp — dạng lịch tuần",
+   "screens": [
+    "sp-lhp-010000",
+    "sp-lhp-020000"
+   ],
+   "screensGuessed": [
+    "SP-LHP-010000",
+    "SP-LHP-020000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "MS-MS.A03",
+   "name": "trang-3-popup-chi-tiet-cuoc-hop-them-cuo",
+   "title": "Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp",
+   "screens": [
+    "sp-lhp-010010"
+   ],
+   "screensGuessed": [
+    "SP-LHP-010010"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "needsDesign": true,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "MS-MS.A03.01",
+     "name": "dong-phu-duoi-tieu-de",
+     "label": "Dòng phụ dưới tiêu đề",
+     "spec": "`Thứ, dd.MM.yyyy · HH:mm · <nhãn>`; nhãn `Đã trôi qua` nếu thời điểm họp đã qua, `Sắp diễn ra` nếu chưa tới. Chỉ có ở Chi tiết cuộc họp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "MS-MS.A03.02",
+     "name": "chu-de",
+     "label": "Chủ đề",
+     "spec": "Bắt buộc, tối đa 255 ký tự.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC03",
+      "MS-MS.TC04"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "MS-MS.A03.03",
+     "name": "thoi-gian",
+     "label": "Thời gian",
+     "spec": "Ngày (`dd.MM.yyyy`, date picker) và giờ (`HH:mm`, time picker), đều bắt buộc. Tạo mới mặc định ngày hôm nay, giờ trống. Cho phép chọn thời điểm quá khứ và trùng giờ với cuộc họp khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC08",
+      "MS-MS.TC10"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "MS-MS.A03.04",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Dropdown `Mới tạo`, `Đang chờ`, `Đang tham gia`, `Hoàn thành`. Tạo mới mặc định `Mới tạo`. Không tự đổi theo thời gian.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC1b",
+      "MS-MS.TC03",
+      "MS-MS.TC05",
+      "MS-MS.TC06",
+      "MS-MS.TC08"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "MS-MS.A03.05",
+     "name": "nguoi-tham-gia",
+     "label": "Người tham gia",
+     "spec": "Chip avatar + tên; nút `+` mở danh sách chọn nhiều người (tìm kiếm, mỗi dòng `Tên (Role)`, chỉ tài khoản đang hoạt động). Chọn được tài khoản **mọi role của ICS**, gồm cả Giáo viên, Học viên, Trợ giảng. Hover chip hiện `x` để bỏ. Không bắt buộc; người tạo không tự được thêm vào danh sách.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC01",
+      "MS-MS.TC1b",
+      "MS-MS.TC03",
+      "MS-MS.TC07",
+      "MS-MS.TC08"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "MS-MS.A03.06",
+     "name": "ghi-chu",
+     "label": "Ghi chú",
+     "spec": "Không bắt buộc, tối đa 500 ký tự.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC04",
+      "MS-MS.TC09"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "MS-MS.A03.07",
+     "name": "link-cuoc-hop",
+     "label": "Link cuộc họp",
+     "spec": "Không bắt buộc; phải là URL bắt đầu bằng `http://` hoặc `https://`. Ở chế độ chỉ xem hiển thị dạng link, bấm mở tab mới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "MS-MS.TC06"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "MS-MS.A03.08",
+     "name": "huy",
+     "label": "Huỷ",
+     "spec": "Đóng popup, bỏ thay đổi chưa lưu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "MS-MS.A03.09",
+     "name": "luu",
+     "label": "Lưu",
+     "spec": "Validate → lưu → đóng popup → cập nhật danh sách/lịch và badge sidebar → Toast. Chống bấm lặp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "MS-MS.A03.10",
+     "name": "xoa",
+     "label": "Xoá",
+     "spec": "Chỉ người tạo, ở Chi tiết cuộc họp (UI cần bổ sung nút). Mở popup xác nhận `Xoá cuộc họp?` hiển thị chủ đề + ngày giờ; xác nhận mới xoá.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "MS-MS.A03",
+       "raw": "Mở popup xác nhận `Xoá cuộc họp?` hiển thị chủ đề + ngày giờ"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    }
+   ]
+  },
+  {
+   "id": "MS-MS.A04",
+   "name": "trang-4-dropdown-bo-loc",
+   "title": "Trang 4: Dropdown bộ lọc",
+   "screens": [
+    "sp-lhp-010000",
+    "sp-lhp-020000"
+   ],
+   "screensGuessed": [
+    "SP-LHP-010000",
+    "SP-LHP-020000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "meeting_schedule/meeting_schedule.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "MS-MS.F01",
+   "name": "header",
+   "title": "Header",
+   "screens": [
+    "sp-lhp-010000",
+    "sp-lhp-020000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "MS-MS.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3857:78210",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Phụ Trách Lớp",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "MS-MS.F02",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "sp-lhp-010000",
+    "sp-lhp-020000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "MS-MS.F02.01",
+     "name": "xem-bang",
+     "label": "Xem · Bảng",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Xem · Bảng",
+        "figmaId": "3857:79228",
+        "layer": "Xem · Bảng",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Xem · Bảng",
+        "component": "Atom/Tab",
+        "variant": {
+         "Label": "Bảng",
+         "Icon": "3857:80306",
+         "State": "Inactive",
+         "Kiểu": "Switch icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "MS-MS.F02.02",
+     "name": "xem-danh-sach",
+     "label": "Xem · Danh sách",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Xem · Danh sách",
+        "figmaId": "3857:79230",
+        "layer": "Xem · Danh sách",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Xem · Danh sách",
+        "component": "Atom/Tab",
+        "variant": {
+         "Label": "Danh sách",
+         "Icon": "3857:80312",
+         "State": "Active",
+         "Kiểu": "Switch icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "MS-MS.F02.03",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "3857:80912",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Time": "4 ngày trước",
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Label": "Th6, 13.02.2026",
+         "Type": "Date"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "MS-MS.F02.04",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Avatar",
+        "figmaId": "3857:80710",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Đinh Thu Hương",
+         "Size": "28"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "MS-MS.F02.05",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Mouse click",
+        "figmaId": "3857:80714",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "MS-MS.F02.06",
+     "name": "molecule-tooltip",
+     "label": "Molecule/Tooltip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Molecule/Tooltip",
+        "figmaId": "3857:80715",
+        "layer": "Molecule/Tooltip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Tooltip",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Danh sách phụ trách"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "MS-MS.F02.07",
+     "name": "phan-trang",
+     "label": "Phân Trang",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-010000": [
+       {
+        "term": "Phân Trang",
+        "figmaId": "3857:79012",
+        "layer": "Phân Trang",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Phân Trang",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "MS-MS.F02.08",
+     "name": "time",
+     "label": "Time",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-020000": [
+       {
+        "term": "Time",
+        "figmaId": "3857:84381",
+        "layer": "Time",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Time",
+        "component": "Time",
+        "variant": {
+         "Property 1": "Variant4"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "MS-MS.F02.09",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-020000": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "3857:80046",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Hôm nay",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "MS-MS.F02.10",
+     "name": "cuoc-hop-truoc-buoi-10-huong-dan-luye",
+     "label": "Cuộc họp · [Trước Buổi 10] Hướng dẫn luyệ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-020000": [
+       {
+        "term": "Cuộc họp · [Trước Buổi 10] Hướng dẫn luyệ",
+        "figmaId": "3857:80116",
+        "layer": "Cuộc họp · [Trước Buổi 10] Hướng dẫn luyệ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Cuộc họp · [Trước Buổi 10] Hướng dẫn luyệ",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH CỐ ĐỊNH"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "MS-MS.F02.11",
+     "name": "cuoc-hop-sau-buoi-7-hop-giao-vien-ren",
+     "label": "Cuộc họp · [Sau Buổi 7] Họp Giáo Viên REN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-020000": [
+       {
+        "term": "Cuộc họp · [Sau Buổi 7] Họp Giáo Viên REN",
+        "figmaId": "3857:80125",
+        "layer": "Cuộc họp · [Sau Buổi 7] Họp Giáo Viên REN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Cuộc họp · [Sau Buổi 7] Họp Giáo Viên REN",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH CỐ ĐỊNH"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "MS-MS.F02.12",
+     "name": "them-2-cuoc-hop",
+     "label": "Thêm · +2 cuộc họp",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-lhp-020000": [
+       {
+        "term": "Thêm · +2 cuộc họp",
+        "figmaId": "3857:80152",
+        "layer": "Thêm · +2 cuộc họp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thêm · +2 cuộc họp",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "+2 cuộc họp",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "MS-MS.EX01",
+   "text": "Thiếu Chủ đề / ngày / giờ, Chủ đề > 255 ký tự, Ghi chú > 500 ký tự, Link không phải URL `http(s)` → không lưu, báo lỗi tại field, Toast `Cảnh Báo`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.EX02",
+   "text": "Người không phải người tạo gửi request sửa / đổi trạng thái / xoá → backend từ chối, dữ liệu giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.EX03",
+   "text": "Mở cuộc họp đã bị xoá hoặc user đã bị bỏ khỏi danh sách tham gia → thông báo không còn quyền xem, tải lại danh sách.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.EX04",
+   "text": "Lưu / xoá thất bại → giữ dữ liệu trong popup, Toast `Có Lỗi Xảy Ra`, không cập nhật danh sách giả.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.EX05",
+   "text": "Tải danh sách lỗi → vùng lỗi có `Thử lại`; không hiển thị bảng rỗng giả.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "MS-MS.EX06",
+   "text": "Hai người cùng sửa (người tạo mở 2 tab) → bản lưu sau bị từ chối nếu dữ liệu đã đổi, thông báo tải lại.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "MS-MS.FLOW01",
+   "name": "Xem danh sách / lịch",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "MS-MS.FLOW02",
+   "name": "Tạo cuộc họp",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "MS-MS.FLOW03",
+   "name": "Sửa / đổi trạng thái / xoá",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  }
+ ],
+ "testcases": [
+  {
+   "id": "MS-MS.TC01",
+   "title": "Case 1: Mở danh sách mặc định",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 1 / REQ02 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "MS-MS.REQ02",
+    "MS-MS.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "MS-MS.FLOW01"
+   ],
+   "items": [
+    "MS-MS.A01.01",
+    "MS-MS.A01.08",
+    "MS-MS.A03.05"
+   ]
+  },
+  {
+   "id": "MS-MS.TC1b",
+   "title": "Case 1b: Admin xem tất cả",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 1 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "MS-MS.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "MS-MS.FLOW01"
+   ],
+   "items": [
+    "MS-MS.A01.01",
+    "MS-MS.A01.02",
+    "MS-MS.A01.08",
+    "MS-MS.A01.09",
+    "MS-MS.A03.04",
+    "MS-MS.A03.05"
+   ]
+  },
+  {
+   "id": "MS-MS.TC02",
+   "title": "Case 2: Badge sidebar",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "MS-MS.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "MS-MS.TC03",
+   "title": "Case 3: Tạo cuộc họp",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 2 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "MS-MS.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "MS-MS.FLOW02"
+   ],
+   "items": [
+    "MS-MS.A01.01",
+    "MS-MS.A01.02",
+    "MS-MS.A01.06",
+    "MS-MS.A01.08",
+    "MS-MS.A01.09",
+    "MS-MS.A03.02",
+    "MS-MS.A03.04",
+    "MS-MS.A03.05"
+   ]
+  },
+  {
+   "id": "MS-MS.TC04",
+   "title": "Case 4: Validate form",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "MS-MS.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "MS-MS.A01.06",
+    "MS-MS.A01.07",
+    "MS-MS.A03.02",
+    "MS-MS.A03.06"
+   ]
+  },
+  {
+   "id": "MS-MS.TC05",
+   "title": "Case 5: Người tạo sửa và đổi trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3 / REQ02 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "MS-MS.REQ02",
+    "MS-MS.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "MS-MS.FLOW03"
+   ],
+   "items": [
+    "MS-MS.A01.02",
+    "MS-MS.A01.09",
+    "MS-MS.A01.10",
+    "MS-MS.A03.04"
+   ]
+  },
+  {
+   "id": "MS-MS.TC06",
+   "title": "Case 6: Người tham gia chỉ xem",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ02 / EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "MS-MS.REQ02"
+   ],
+   "exceptions": [
+    "MS-MS.EX02"
+   ],
+   "flows": [],
+   "items": [
+    "MS-MS.A01.02",
+    "MS-MS.A01.09",
+    "MS-MS.A03.04",
+    "MS-MS.A03.07"
+   ]
+  },
+  {
+   "id": "MS-MS.TC07",
+   "title": "Case 7: Xoá cuộc họp",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "MS-MS.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "MS-MS.FLOW03"
+   ],
+   "items": [
+    "MS-MS.A01.01",
+    "MS-MS.A01.08",
+    "MS-MS.A03.05"
+   ]
+  },
+  {
+   "id": "MS-MS.TC08",
+   "title": "Case 8: Bộ lọc kết hợp",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "MS-MS.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "MS-MS.A01.01",
+    "MS-MS.A01.02",
+    "MS-MS.A01.03",
+    "MS-MS.A01.08",
+    "MS-MS.A01.09",
+    "MS-MS.A03.03",
+    "MS-MS.A03.04",
+    "MS-MS.A03.05"
+   ]
+  },
+  {
+   "id": "MS-MS.TC09",
+   "title": "Case 9: Cột Người tham gia và Ghi chú",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "MS-MS.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "MS-MS.A01.07",
+    "MS-MS.A03.06"
+   ]
+  },
+  {
+   "id": "MS-MS.TC10",
+   "title": "Case 10: Dạng lịch tuần",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "MS-MS.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "MS-MS.A01.03",
+    "MS-MS.A03.03"
+   ]
+  },
+  {
+   "id": "MS-MS.TC11",
+   "title": "Case 11: Nhãn thời điểm trong popup",
+   "priority": "Low",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "MS-MS.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "MS-MS.TC12",
+   "title": "Case 12: Lỗi lưu, lỗi tải, cuộc họp đã xoá",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX03 / EX04 / EX05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "MS-MS.EX03",
+    "MS-MS.EX04",
+    "MS-MS.EX05"
+   ],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "SP-LHP-010010",
+   "text": "popup “Lịch họp / Popup chi tiết cuộc họp” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "SP-LHP-010010",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "MS-MS.REQ07",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "MS-MS.REQ08",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "MS-MS.REQ09",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "MS-MS.EX06",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "meeting_schedule/meeting_schedule.md",
+   "prefix": "MS-MS",
+   "title": "[Phụ trách lớp, Admin] Lịch Họp"
+  }
+ ]
+}

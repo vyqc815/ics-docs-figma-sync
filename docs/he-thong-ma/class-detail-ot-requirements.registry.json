@@ -1,0 +1,1659 @@
+{
+ "cluster": "class-detail-ot-requirements",
+ "title": "Chi tiết lớp học — Tab OT của Phụ trách lớp",
+ "figmaPrefix": "M-CDO",
+ "requirements": [
+  {
+   "id": "M-CDO.REQ01",
+   "name": "",
+   "text": "Chỉ Admin/Class Handler xem và CRUD/xác nhận; tự xác nhận OT được phép.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.REQ02",
+   "name": "",
+   "text": "Mỗi khoản một dòng; search tên Handler; giữ Hủy, ẩn Xóa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.REQ03",
+   "name": "",
+   "text": "Một người mỗi khoản; nhiều khoản/người; tiền tùy ý, khối Thông tin OT chỉ đọc với giá trị gốc, không có nút Dùng giá trị gốc; ngày thực hiện và ngày cập nhật riêng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.REQ04",
+   "name": "",
+   "text": "Bốn trạng thái; xác nhận khóa khoản, không mở lại/đảo.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.REQ05",
+   "name": "",
+   "text": "Xóa có xác nhận, xóa mềm khoản chưa xác nhận.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.REQ06",
+   "name": "",
+   "text": "UI ghi chú giống tab Học viên: click icon mở popup có ô gõ/chỉnh nhiều dòng và icon lịch sử; dữ liệu theo class_id + ot_id, lịch sử người/thời điểm và Copy từng bản; chỉ Admin/Class Handler, khoản xác nhận chỉ đọc.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.REQ07",
+   "name": "",
+   "text": "Tách OT khỏi KPI; không hiển thị/cộng OT vào Chi phí PTL/Tổng chi PTL ở danh sách lớp, bất kể trạng thái.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.REQ08",
+   "name": "",
+   "text": "Toast CRUD, tải/rỗng/lỗi rõ ràng.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LOP-040800": {
+   "id": "ADM-LOP-040800",
+   "name": "ot",
+   "title": "Lớp học / Cài đặt / OT",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-040700",
+   "shownOn": "ADM-LOP-040800",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2401:12807",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/cai-dat/ot",
+   "link": "/lop-hoc/cai-dat/ot",
+   "dark": "ADM-LOP-040800-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDO.A01",
+    "M-CDO.A03",
+    "M-CDO.A04",
+    "M-CDO.A05",
+    "M-CDO.A06",
+    "M-CDO.A07",
+    "M-CDO.F01"
+   ]
+  },
+  "ADM-LOP-040810": {
+   "id": "ADM-LOP-040810",
+   "name": "popup-chinh-sua-ot",
+   "title": "Lớp học / Cài đặt / OT / Popup chỉnh sửa OT",
+   "kind": "popup",
+   "parent": "ADM-LOP-040800",
+   "shownOn": "ADM-LOP-040800",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2401:13017",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/lop-hoc/cai-dat/ot?popup=ADM-LOP-040810",
+   "dark": "ADM-LOP-040810-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-CDO.A02"
+   ]
+  },
+  "ADM-LOP-040812": {
+   "id": "ADM-LOP-040812",
+   "name": "dang-mo",
+   "title": "Lớp học / Cài đặt / OT / Popup chỉnh sửa OT / Đang mở",
+   "kind": "dropdown",
+   "parent": "ADM-LOP-040810",
+   "shownOn": "ADM-LOP-040800",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2401:12994",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/lop-hoc/cai-dat/ot?popup=ADM-LOP-040812",
+   "dark": "ADM-LOP-040812-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [
+  {
+   "id": "M-CDO.A01",
+   "name": "tab-ot-danh-sach-va-tim-kiem",
+   "title": "Tab OT — Danh sách và tìm kiếm",
+   "screens": [
+    "adm-lop-040800"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040800"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO.A01.01",
+     "name": "cai-dat-ot-va",
+     "label": "Cài đặt OT và +",
+     "spec": "Mở popup `Gắn OT`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDO.A01",
+       "raw": "Mở popup `Gắn OT`"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Cài đặt OT và +",
+      "Gắn OT"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A01.02",
+     "name": "tim-kiem",
+     "label": "Tìm kiếm",
+     "spec": "Theo tên Handler nhận OT; tìm toàn bộ dữ liệu lớp, không chỉ dòng đã tải.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tìm kiếm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A01.03",
+     "name": "ten",
+     "label": "Tên",
+     "spec": "Người nhận của khoản OT; mỗi khoản đúng một Handler.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "Tên",
+        "figmaId": "2401:12876",
+        "layer": "Tên",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO.A01.04",
+     "name": "ngay-ghi-nhan",
+     "label": "Ngày ghi nhận",
+     "spec": "Ngày của Thời gian thực hiện nhập trong popup; lưu cả giờ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "Ngày ghi nhận",
+        "figmaId": "2401:12878",
+        "layer": "Ngày Ghi Nhận",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO.A01.05",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Mới, Đã xác nhận, Đã hủy; Đã xóa không hiển thị trong bảng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "2401:12880",
+        "layer": "Trạng Thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC04"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO.A01.06",
+     "name": "so-tien",
+     "label": "Số tiền",
+     "spec": "Tiền thực tế đã lưu, định dạng VND và dấu phân cách hàng nghìn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "Số tiền",
+        "figmaId": "2401:12882",
+        "layer": "Số Tiền",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO.A01.07",
+     "name": "ghi-chu",
+     "label": "Ghi chú",
+     "spec": "Mở ghi chú/lịch sử của đúng khoản OT.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "2401:12884",
+        "layer": "Ghi Chú",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO.A01.08",
+     "name": "ngay-cap-nhat",
+     "label": "Ngày cập nhật",
+     "spec": "Lần cập nhật gần nhất do máy chủ ghi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "Ngày cập nhật",
+        "figmaId": "2401:12886",
+        "layer": "Ngày Cập Nhật",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDO.A01.09",
+     "name": "x",
+     "label": "X",
+     "spec": "Popup xác nhận xóa khoản chưa xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "X"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO.A02",
+   "name": "popup-them-va-chinh-sua-ot",
+   "title": "Popup thêm và chỉnh sửa OT",
+   "screens": [
+    "adm-lop-040810"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040810"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO.A02.01",
+     "name": "nguoi-nhan",
+     "label": "Người nhận",
+     "spec": "Bắt buộc một Class Handler, không multi-select và không chọn role khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC05"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDO.A02.02",
+     "name": "so-tien",
+     "label": "Số tiền",
+     "spec": "Nhập tùy ý, không ép bằng giá trị gốc, không áp trần mẫu hoặc kiểm tra tự động điều kiện trong mô tả. Phải là giá trị số có thể đọc/lưu được.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC08"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDO.A02.03",
+     "name": "thoi-gian-thuc-hien",
+     "label": "Thời gian thực hiện",
+     "spec": "Ngày và giờ ghi nhận người dùng nhập.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDO.A02.04",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Mặc định Mới khi thêm; chọn theo rule trạng thái bên dưới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC05"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDO.A02.05",
+     "name": "thong-tin-ot",
+     "label": "Thông tin OT",
+     "spec": "Khối chỉ đọc gồm Tên, Mô tả và Giá trị gốc của cấu hình OT. Giá trị gốc chỉ để tham chiếu, không ép số tiền nhập.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC08"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDO.A02.06",
+     "name": "huy-bo",
+     "label": "Hủy bỏ",
+     "spec": "Đóng form và bỏ draft; không chuyển trạng thái Đã hủy.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC08"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-CDO.A02.07",
+     "name": "cap-nhat",
+     "label": "Cập nhật",
+     "spec": "Nút lưu theo ảnh; validate rồi lưu khoản được gắn/chỉnh và cập nhật danh sách OT sau thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC05",
+      "M-CDO.TC09"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO.A03",
+   "name": "dropdown-trang-thai-va-xac-nhan",
+   "title": "Dropdown trạng thái và xác nhận",
+   "screens": [
+    "adm-lop-040800"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040800"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO.A03.01",
+     "name": "moi",
+     "label": "Mới",
+     "spec": "Có | Không | Sửa, xác nhận, hủy hoặc xóa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Mới"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A03.02",
+     "name": "da-xac-nhan",
+     "label": "Đã xác nhận",
+     "spec": "Có | Không | Khóa mọi thay đổi; Handler được tự xác nhận khoản của mình.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC11"
+     ],
+     "missingTerms": [
+      "Đã xác nhận"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A03.03",
+     "name": "da-huy",
+     "label": "Đã hủy",
+     "spec": "Có | Không | Giữ để xem; có thể xóa nếu chưa xác nhận. Phục hồi chưa chốt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC12"
+     ],
+     "missingTerms": [
+      "Đã hủy"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A03.04",
+     "name": "da-xoa",
+     "label": "Đã xóa",
+     "spec": "Không | Không | Xóa mềm; giữ audit.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đã xóa"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO.A04",
+   "name": "xoa-khoan-ot",
+   "title": "Xóa khoản OT",
+   "screens": [
+    "adm-lop-040800"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040800"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO.A04.01",
+     "name": "popup",
+     "label": "Popup",
+     "spec": "`Xóa khoản OT?` — `Khoản OT của {Handler} với số tiền {tiền} sẽ được ẩn khỏi danh sách. Lịch sử vẫn được lưu.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Popup",
+      "Xóa khoản OT?"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A04.02",
+     "name": "huy-bo",
+     "label": "Hủy bỏ",
+     "spec": "Đóng, giữ dữ liệu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC15"
+     ],
+     "missingTerms": [
+      "Hủy bỏ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A04.03",
+     "name": "xac-nhan-xoa",
+     "label": "Xác nhận xóa",
+     "spec": "Kiểm tra quyền/trạng thái mới nhất, chuyển Đã xóa rồi ẩn dòng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Xác nhận xóa"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO.A05",
+   "name": "ghi-chu-lich-su-va-copy",
+   "title": "Ghi chú, lịch sử và Copy",
+   "screens": [
+    "adm-lop-040800"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040800"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO.A05.01",
+     "name": "popup-ghi-chu",
+     "label": "Popup ghi chú",
+     "spec": "Dùng bố cục của tab Học viên; tiêu đề `Ghi chú OT` và icon lịch sử cạnh tiêu đề. Click không mở đồng thời form chỉnh sửa OT.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC18"
+     ],
+     "missingTerms": [
+      "Popup ghi chú",
+      "Ghi chú OT"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A05.02",
+     "name": "o-nhap-noi-dung-textarea",
+     "label": "Ô nhập nội dung (textarea)",
+     "spec": "Hiển thị nội dung hiện tại; cho gõ/chỉnh văn bản nhiều dòng ở khoản Mới. Nếu chưa có ghi chú, ô nhập trống. Không thêm dropdown loại ghi chú.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Ô nhập nội dung (textarea)"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A05.03",
+     "name": "luu-noi-dung",
+     "label": "Lưu nội dung",
+     "spec": "Theo cơ chế lưu ghi chú của tab Học viên; lưu phiên bản và cập nhật Ngày cập nhật sau backend thành công. Quyền sửa khoản Đã hủy cần chốt riêng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lưu nội dung"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A05.04",
+     "name": "icon-lich-su",
+     "label": "Icon lịch sử",
+     "spec": "Click mở popup `Lịch sử ghi chú` của đúng khoản OT trong lớp, giống UI lịch sử của tab Học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDO.A05",
+       "raw": "mở popup `Lịch sử ghi chú` của đúng khoản OT trong lớp"
+      }
+     ],
+     "testcases": [
+      "M-CDO.TC18",
+      "M-CDO.TC25"
+     ],
+     "missingTerms": [
+      "Icon lịch sử",
+      "Lịch sử ghi chú"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A05.05",
+     "name": "moi-phien-ban",
+     "label": "Mỗi phiên bản",
+     "spec": "Nội dung đầy đủ, avatar/tên người tạo hoặc chỉnh sửa, thời điểm máy chủ; mới nhất trước. Không ghi đè phiên bản cũ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Mỗi phiên bản"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A05.06",
+     "name": "copy",
+     "label": "Copy",
+     "spec": "Icon ở từng bản ghi; copy đúng nội dung của phiên bản được bấm, không kèm metadata.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC18"
+     ],
+     "missingTerms": [
+      "Copy"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO.A06",
+   "name": "tach-ot-khoi-chi-phi-ptl-tren-danh-sach-",
+   "title": "Tách OT khỏi Chi phí PTL trên danh sách lớp",
+   "screens": [
+    "adm-lop-040800"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040800"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO.A06.01",
+     "name": "chi-phi-ptl-cua-lop",
+     "label": "Chi phí PTL của lớp",
+     "spec": "Giữ công thức chỉ cộng KPI Đã xác nhận; không cộng bất kỳ khoản OT nào.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chi phí PTL của lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A06.02",
+     "name": "tong-chi-ptl",
+     "label": "Tổng chi PTL",
+     "spec": "Giữ tổng từ KPI của tập lớp thỏa filter; OT không tác động số tiền.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC20"
+     ],
+     "missingTerms": [
+      "Tổng chi PTL"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A06.03",
+     "name": "chi-so-ot-tai-danh-sach-lop",
+     "label": "Chỉ số OT tại danh sách lớp",
+     "spec": "Không thêm cột/thẻ tổng chi OT vào danh sách lớp trong phạm vi requirement này.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chỉ số OT tại danh sách lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO.A07",
+   "name": "toast-va-trang-thai-tai",
+   "title": "Toast và trạng thái tải",
+   "screens": [
+    "adm-lop-040800"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-040800"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO.A07.01",
+     "name": "loading-rong-loi",
+     "label": "Loading/rỗng/lỗi",
+     "spec": "Loading khi tải; `Chưa có khoản OT.` nếu rỗng; lỗi có Thử lại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Loading/rỗng/lỗi",
+      "Chưa có khoản OT."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A07.02",
+     "name": "thanh-cong",
+     "label": "Thành Công",
+     "spec": "`Đã thêm OT.`, `Đã cập nhật OT.`, `Đã xác nhận OT.`, `Đã xóa OT.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDO.TC22"
+     ],
+     "missingTerms": [
+      "Thành Công",
+      "Đã thêm OT."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A07.03",
+     "name": "canh-bao",
+     "label": "Cảnh Báo",
+     "spec": "`OT đã được xác nhận và không thể chỉnh sửa.` hoặc lỗi field.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cảnh Báo",
+      "OT đã được xác nhận và không thể chỉnh sửa."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A07.04",
+     "name": "co-loi-xay-ra",
+     "label": "Có Lỗi Xảy Ra",
+     "spec": "`Không thể cập nhật OT. Vui lòng thử lại.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Có Lỗi Xảy Ra",
+      "Không thể cập nhật OT. Vui lòng thử lại."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDO.A07.05",
+     "name": "thong-bao",
+     "label": "Thông Báo",
+     "spec": "Chỉ khi chờ đồng bộ thực tế.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thông Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDO.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-040800"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDO.F01.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "2401:12860",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO.F01.02",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "2401:12871",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO.F01.03",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "2401:12872",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO.F01.04",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "3778:3545",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "TỔNG DOANH THU"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO.F01.05",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:228593",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Cài đặt"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDO.F01.06",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-040800": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3497:51598",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-CDO.EX01",
+   "text": "Sai role/ngoài phạm vi → chặn API/dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.EX02",
+   "text": "Thiếu/sai người nhận, nhiều người, tiền hoặc ngày/giờ không đọc/lưu được → lỗi đúng field, không lưu một phần.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.EX03",
+   "text": "Đã xác nhận bị sửa/hủy/xóa → từ chối; không đảo OT/bảng lương.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.EX04",
+   "text": "Request lặp hoặc xung đột version → một kết quả; không sửa khoản vừa khóa hoặc tạo trùng OT/audit.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.EX05",
+   "text": "Lỗi lưu → giữ dữ liệu cũ/draft, cho thử lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDO.EX06",
+   "text": "Response search/lớp cũ → bỏ qua.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [],
+ "testcases": [
+  {
+   "id": "M-CDO.TC01",
+   "title": "Case 1: Mở đúng lớp và quyền",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDO.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC02",
+   "title": "Case 2: Chặn role khác",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A01",
+   "scenario": "EX01 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ01"
+   ],
+   "exceptions": [
+    "M-CDO.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC03",
+   "title": "Case 3: Search tên Handler",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A01",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC04",
+   "title": "Case 4: Nhiều khoản cho một người",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A01",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO.A01.05"
+   ]
+  },
+  {
+   "id": "M-CDO.TC05",
+   "title": "Case 5: Gắn OT với một Handler",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDO.A02",
+   "scenario": "Flow 2 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO.A02.01",
+    "M-CDO.A02.04",
+    "M-CDO.A02.07"
+   ]
+  },
+  {
+   "id": "M-CDO.TC06",
+   "title": "Case 6: Chặn nhiều người hoặc role sai",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A02",
+   "scenario": "EX02 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ03"
+   ],
+   "exceptions": [
+    "M-CDO.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC07",
+   "title": "Case 7: Tiền khác giá trị gốc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A02",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC08",
+   "title": "Case 8: Đúng UI OT và Hủy bỏ draft",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO.A02",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO.A02.02",
+    "M-CDO.A02.05",
+    "M-CDO.A02.06"
+   ]
+  },
+  {
+   "id": "M-CDO.TC09",
+   "title": "Case 9: Hai mốc ngày độc lập",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A02",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO.A02.07"
+   ]
+  },
+  {
+   "id": "M-CDO.TC10",
+   "title": "Case 10: Khóa khoản xác nhận",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A02",
+   "scenario": "EX03 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ04"
+   ],
+   "exceptions": [
+    "M-CDO.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC11",
+   "title": "Case 11: Tự xác nhận OT",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A03",
+   "scenario": "Flow 3 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO.A03.02"
+   ]
+  },
+  {
+   "id": "M-CDO.TC12",
+   "title": "Case 12: Đã hủy vẫn hiển thị",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A03",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO.A03.03"
+   ]
+  },
+  {
+   "id": "M-CDO.TC13",
+   "title": "Case 13: Không mở lại khoản xác nhận",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A03",
+   "scenario": "EX03 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ04"
+   ],
+   "exceptions": [
+    "M-CDO.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC14",
+   "title": "Case 14: Sửa đồng thời với xác nhận",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A03",
+   "scenario": "EX04 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ04"
+   ],
+   "exceptions": [
+    "M-CDO.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC15",
+   "title": "Case 15: Hủy popup xóa",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO.A04",
+   "scenario": "Flow 4 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO.A04.02"
+   ]
+  },
+  {
+   "id": "M-CDO.TC16",
+   "title": "Case 16: Xóa mềm và ẩn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A04",
+   "scenario": "Flow 4 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC17",
+   "title": "Case 17: Sửa ghi chú đúng khoản",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A05",
+   "scenario": "Flow 5 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC18",
+   "title": "Case 18: Lịch sử và Copy",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO.A05",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO.A05.01",
+    "M-CDO.A05.04",
+    "M-CDO.A05.06"
+   ]
+  },
+  {
+   "id": "M-CDO.TC25",
+   "title": "Case 25: Popup và ô gõ giống tab Học viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A05",
+   "scenario": "Flow 5 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO.A05.04"
+   ]
+  },
+  {
+   "id": "M-CDO.TC26",
+   "title": "Case 26: Xung đột hoặc lỗi lưu ghi chú",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A05",
+   "scenario": "EX04–EX05 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ06"
+   ],
+   "exceptions": [
+    "M-CDO.EX04",
+    "M-CDO.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC19",
+   "title": "Case 19: OT xác nhận không cộng chi PTL",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A06",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC20",
+   "title": "Case 20: CRUD OT không đổi tổng theo filter",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A06",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO.A06.02"
+   ]
+  },
+  {
+   "id": "M-CDO.TC21",
+   "title": "Case 21: Xác nhận OT lặp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A06",
+   "scenario": "EX04 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ07"
+   ],
+   "exceptions": [
+    "M-CDO.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC22",
+   "title": "Case 22: Toast thành công",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDO.A07",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDO.A07.02"
+   ]
+  },
+  {
+   "id": "M-CDO.TC23",
+   "title": "Case 23: Lưu lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A07",
+   "scenario": "EX05 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ08"
+   ],
+   "exceptions": [
+    "M-CDO.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDO.TC24",
+   "title": "Case 24: Search response cũ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDO.A07",
+   "scenario": "EX06 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDO.REQ02"
+   ],
+   "exceptions": [
+    "M-CDO.EX06"
+   ],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-040810",
+   "text": "popup “Lớp học / Cài đặt / OT / Popup chỉnh sửa OT” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LOP-040810",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LOP-040812",
+   "text": "dropdown “Lớp học / Cài đặt / OT / Popup chỉnh sửa OT / Đang mở” chưa được requirement nhắc tới"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/class_management/class_detail_ot_requirements.md",
+   "prefix": "M-CDO",
+   "title": "Chi tiết lớp học — Tab OT của Phụ trách lớp"
+  }
+ ]
+}

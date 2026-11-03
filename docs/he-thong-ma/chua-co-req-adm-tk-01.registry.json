@@ -1,0 +1,1053 @@
+{
+ "cluster": "chua-co-req-adm-tk-01",
+ "title": "ADM-TK-01xx (chưa có requirement)",
+ "figmaPrefix": "ADM-TK-01",
+ "requirements": [],
+ "screens": {
+  "ADM-TK-010000": {
+   "id": "ADM-TK-010000",
+   "name": "chi-so",
+   "title": "Thống kê / Chỉ số",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "ADM-TK-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4101:131683",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/thong-ke/chi-so",
+   "link": "/thong-ke/chi-so",
+   "dark": "ADM-TK-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "ADM-TK-01.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "ADM-TK-01.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-tk-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-TK-01.F01.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:245826",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Thống kê / Chỉ số"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.02",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "4101:131816",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.03",
+     "name": "the-chi-so-tong-so-lop",
+     "label": "Thẻ chỉ số · Tổng Số Lớp",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Tổng Số Lớp",
+        "figmaId": "4101:135802",
+        "layer": "Thẻ chỉ số · Tổng Số Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tổng Số Lớp",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "891",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Tổng Số Lớp",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.04",
+     "name": "the-chi-so-lop-dang-hoc",
+     "label": "Thẻ chỉ số · Lớp Đang Học",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Lớp Đang Học",
+        "figmaId": "4101:135812",
+        "layer": "Thẻ chỉ số · Lớp Đang Học",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lớp Đang Học",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "98",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Lớp Đang Học",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.05",
+     "name": "the-chi-so-lop-khai-giang",
+     "label": "Thẻ chỉ số · Lớp Khai Giảng",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Lớp Khai Giảng",
+        "figmaId": "4101:135822",
+        "layer": "Thẻ chỉ số · Lớp Khai Giảng",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lớp Khai Giảng",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "46",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Lớp Khai Giảng",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.06",
+     "name": "the-chi-so-tong-hoc-vien",
+     "label": "Thẻ chỉ số · Tổng Học Viên",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Tổng Học Viên",
+        "figmaId": "4101:135831",
+        "layer": "Thẻ chỉ số · Tổng Học Viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tổng Học Viên",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "6.922",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Tổng Học Viên",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.07",
+     "name": "the-chi-so-hoc-vien-dang-hoc",
+     "label": "Thẻ chỉ số · Học Viên Đang Học",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Học Viên Đang Học",
+        "figmaId": "4101:135841",
+        "layer": "Thẻ chỉ số · Học Viên Đang Học",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Học Viên Đang Học",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "2.118",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Học Viên Đang Học",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.08",
+     "name": "the-chi-so-tong-giao-vien",
+     "label": "Thẻ chỉ số · Tổng Giáo Viên",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Tổng Giáo Viên",
+        "figmaId": "4101:135851",
+        "layer": "Thẻ chỉ số · Tổng Giáo Viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tổng Giáo Viên",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "150",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Tổng Giáo Viên",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.09",
+     "name": "the-chi-so-giao-vien-dang-day",
+     "label": "Thẻ chỉ số · Giáo Viên Đang Dạy",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Giáo Viên Đang Dạy",
+        "figmaId": "4101:135861",
+        "layer": "Thẻ chỉ số · Giáo Viên Đang Dạy",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Giáo Viên Đang Dạy",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "145",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Giáo Viên Đang Dạy",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.10",
+     "name": "filter-ngay-khai-giang",
+     "label": "Filter · Ngày khai giảng",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Filter · Ngày khai giảng",
+        "figmaId": "4101:135875",
+        "layer": "Filter · Ngày khai giảng",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Ngày khai giảng",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Ngày khai giảng",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.11",
+     "name": "filter-thang-nay",
+     "label": "Filter · Tháng này",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Filter · Tháng này",
+        "figmaId": "4101:135887",
+        "layer": "Filter · Tháng này",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Tháng này",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Tháng này",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.12",
+     "name": "filter-khoa-hoc",
+     "label": "Filter · Khoá học",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Filter · Khoá học",
+        "figmaId": "4101:135899",
+        "layer": "Filter · Khoá học",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Khoá học",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Khoá học",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.13",
+     "name": "the-chi-so-ty-le-len-ky",
+     "label": "Thẻ chỉ số · Tỷ Lệ Lên Kỳ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Tỷ Lệ Lên Kỳ",
+        "figmaId": "4101:135912",
+        "layer": "Thẻ chỉ số · Tỷ Lệ Lên Kỳ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tỷ Lệ Lên Kỳ",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "73,7",
+         "Đơn vị": "%",
+         "Tiêu đề": "Tỷ Lệ Lên Kỳ",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.14",
+     "name": "the-chi-so-ty-le-btvn",
+     "label": "Thẻ chỉ số · Tỷ Lệ BTVN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Tỷ Lệ BTVN",
+        "figmaId": "4101:135922",
+        "layer": "Thẻ chỉ số · Tỷ Lệ BTVN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tỷ Lệ BTVN",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "28,2",
+         "Đơn vị": "%",
+         "Tiêu đề": "Tỷ Lệ BTVN",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.15",
+     "name": "the-chi-so-ty-le-di-hoc",
+     "label": "Thẻ chỉ số · Tỷ Lệ Đi Học",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Tỷ Lệ Đi Học",
+        "figmaId": "4101:135932",
+        "layer": "Thẻ chỉ số · Tỷ Lệ Đi Học",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tỷ Lệ Đi Học",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "32,6",
+         "Đơn vị": "%",
+         "Tiêu đề": "Tỷ Lệ Đi Học",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.16",
+     "name": "the-chi-so-lop-hoan-thanh",
+     "label": "Thẻ chỉ số · Lớp Hoàn Thành",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Lớp Hoàn Thành",
+        "figmaId": "4101:135942",
+        "layer": "Thẻ chỉ số · Lớp Hoàn Thành",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lớp Hoàn Thành",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "5/47",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Lớp Hoàn Thành",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.17",
+     "name": "the-chi-so-lop-dat-kpi",
+     "label": "Thẻ chỉ số · Lớp Đạt KPI",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Lớp Đạt KPI",
+        "figmaId": "4101:135952",
+        "layer": "Thẻ chỉ số · Lớp Đạt KPI",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lớp Đạt KPI",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "1/5",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Lớp Đạt KPI",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.18",
+     "name": "the-chi-so-lop-dat-btvn",
+     "label": "Thẻ chỉ số · Lớp Đạt BTVN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Lớp Đạt BTVN",
+        "figmaId": "4101:135962",
+        "layer": "Thẻ chỉ số · Lớp Đạt BTVN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lớp Đạt BTVN",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "14/47",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Lớp Đạt BTVN",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.19",
+     "name": "the-chi-so-khach-moi",
+     "label": "Thẻ chỉ số · Khách Mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Khách Mới",
+        "figmaId": "4101:135989",
+        "layer": "Thẻ chỉ số · Khách Mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Khách Mới",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "113",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Khách Mới",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.20",
+     "name": "the-chi-so-so-hoa-don",
+     "label": "Thẻ chỉ số · Số Hoá Đơn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Số Hoá Đơn",
+        "figmaId": "4101:135999",
+        "layer": "Thẻ chỉ số · Số Hoá Đơn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số Hoá Đơn",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "98",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Số Hoá Đơn",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.21",
+     "name": "the-chi-so-doanh-thu-sale",
+     "label": "Thẻ chỉ số · Doanh Thu SALE",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Doanh Thu SALE",
+        "figmaId": "4101:136009",
+        "layer": "Thẻ chỉ số · Doanh Thu SALE",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Doanh Thu SALE",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "94.074.000",
+         "Đơn vị": "đ",
+         "Tiêu đề": "Doanh Thu SALE",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.22",
+     "name": "the-chi-so-doanh-thu-sp",
+     "label": "Thẻ chỉ số · Doanh Thu SP",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Doanh Thu SP",
+        "figmaId": "4101:136019",
+        "layer": "Thẻ chỉ số · Doanh Thu SP",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Doanh Thu SP",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "58.511.485",
+         "Đơn vị": "đ",
+         "Tiêu đề": "Doanh Thu SP",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.23",
+     "name": "the-chi-so-so-hoan-tien",
+     "label": "Thẻ chỉ số · Số Hoàn Tiền",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Số Hoàn Tiền",
+        "figmaId": "4101:136029",
+        "layer": "Thẻ chỉ số · Số Hoàn Tiền",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số Hoàn Tiền",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "0",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Số Hoàn Tiền",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.24",
+     "name": "the-chi-so-gia-tri-hoan-tien",
+     "label": "Thẻ chỉ số · Giá Trị Hoàn Tiền",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Giá Trị Hoàn Tiền",
+        "figmaId": "4101:136039",
+        "layer": "Thẻ chỉ số · Giá Trị Hoàn Tiền",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Giá Trị Hoàn Tiền",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "0",
+         "Đơn vị": "đ",
+         "Tiêu đề": "Giá Trị Hoàn Tiền",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.25",
+     "name": "the-chi-so-so-buoi-day",
+     "label": "Thẻ chỉ số · Số Buổi Dạy",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Số Buổi Dạy",
+        "figmaId": "4101:136049",
+        "layer": "Thẻ chỉ số · Số Buổi Dạy",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số Buổi Dạy",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": false,
+         "Số liệu": "219",
+         "Đơn vị": "đơn vị",
+         "Tiêu đề": "Số Buổi Dạy",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-TK-01.F01.26",
+     "name": "the-chi-so-doanh-thu-trung-binh-lop",
+     "label": "Thẻ chỉ số · Doanh Thu Trung Bình Lớp",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-tk-010000": [
+       {
+        "term": "Thẻ chỉ số · Doanh Thu Trung Bình Lớp",
+        "figmaId": "4101:136058",
+        "layer": "Thẻ chỉ số · Doanh Thu Trung Bình Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Doanh Thu Trung Bình Lớp",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "3.492.683",
+         "Đơn vị": "đ",
+         "Tiêu đề": "Doanh Thu Trung Bình Lớp",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-TK-010000",
+   "text": "man-chinh “Thống kê / Chỉ số” chưa được requirement nhắc tới"
+  }
+ ]
+}

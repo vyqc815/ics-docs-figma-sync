@@ -1,0 +1,4414 @@
+{
+ "cluster": "teacher-detail-requirements",
+ "title": "[Admin] Chi tiết giáo viên",
+ "figmaPrefix": "M-TD",
+ "requirements": [
+  {
+   "id": "M-TD.REQ01",
+   "name": "Xem chi tiết giáo viên",
+   "text": "`Admin` được xem hồ sơ giáo viên thuộc phạm vi dữ liệu; tab mặc định là `Thông tin cá nhân` với Giới tính, Ngày sinh, Trạng thái, Ghi chú và thông tin ngân hàng; Mã giáo viên và Gmail bị khóa; không có field lương theo giờ. `Class Handler` và `Support` chỉ được truy cập tab `Danh sách lớp` theo REQ11, tab `Log` theo REQ07, tab `Quản lý đăng ký lịch` theo REQ10 và tab `Ghi chú` theo REQ08–REQ09, không được kế thừa quyền xem/cập nhật các tab khác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.REQ02",
+   "name": "Cập nhật Thông tin cá nhân",
+   "text": "Cho phép cập nhật ảnh, Họ tên, Giới tính, Ngày sinh, Số điện thoại, Trạng thái, Ghi chú tổng quan và thông tin ngân hàng. Không có trường cập nhật bắt buộc; dữ liệu có nhập phải đúng định dạng/ràng buộc. Ghi chú tổng quan là dữ liệu riêng, hiển thị tại danh sách giáo viên và không dùng chung với tab `Ghi chú`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.REQ03",
+   "name": "Lấy lại mật khẩu",
+   "text": "Nút `Lấy lại mật khẩu` reset mật khẩu đúng tài khoản giáo viên về `abc12345`, lưu theo cơ chế bảo mật, không ghi plain text vào log và hiển thị notification thành công/thất bại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.REQ04",
+   "name": "Nghỉ việc và không xóa cứng",
+   "text": "Khi cập nhật trạng thái `Nghỉ việc`, hệ thống khóa đăng nhập, loại giáo viên khỏi lịch đăng ký và lớp đang dạy nhưng giữ nguyên hồ sơ, dữ liệu lịch sử và log. Không cung cấp chức năng xóa cứng giáo viên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.REQ05",
+   "name": "Lịch dạy chỉ đọc",
+   "text": "Tab chỉ hiển thị các buổi dạy của đúng giáo viên trong tuần được chọn, không hiển thị lịch đăng ký làm việc và không cho CUD lịch. Hỗ trợ chuyển/chọn tuần (`dd.MM.yyyy`), bật `Theo lớp` để nhóm theo lớp hoặc tắt để gom theo ngày; cả hai chế độ biểu diễn cùng một tập buổi dạy. Hàng chip cạnh thanh tuần tóm tắt lịch đăng ký của giáo viên (chỉ đọc, chip của ngày hiện tại tô sáng); màu viền card theo mốc thời gian: xanh lá đã dạy, cam hôm nay, xanh dương sắp dạy.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.REQ06",
+   "name": "Notification cho thao tác thay đổi",
+   "text": "Mọi thao tác cập nhật tài khoản, reset mật khẩu, đổi trạng thái, cập nhật lương giáo viên theo lớp, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú hoặc CUD comment phải hiển thị đúng một notification thành công/thất bại. Chỉ hiển thị thành công sau khi backend xác nhận và không đưa mật khẩu, stack trace, token hoặc thông tin kỹ thuật nhạy cảm vào nội dung.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.REQ07",
+   "name": "Log hệ thống của giáo viên",
+   "text": "Tab Log chỉ đọc, hiển thị log do hệ thống tự ghi cho giáo viên thuộc phạm vi; mỗi log có Tiêu đề, Mô tả (có thể mở rộng / xem chi tiết), Giờ log, Ngày log, Đối tượng (`Hệ thống` hoặc người thao tác). Hỗ trợ tìm theo lớp, lọc Đối tượng và Thời gian; sắp xếp mới nhất trước, tối đa 50 log/trang. Không có API tạo, sửa, xóa log từ client. Mọi thao tác thay đổi dữ liệu thành công liên quan giáo viên phải sinh đúng một dòng log với Đối tượng là người thao tác thực tế.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.REQ08",
+   "name": "Ghi chú giáo viên",
+   "text": "`Admin`, `Class Handler`, `Support` được tạo ghi chú và xem ghi chú `Công khai` đang `Mới` trong phạm vi. Ghi chú `Riêng tư` và mọi ghi chú `Đóng` chỉ owner được xem. Owner được sửa, xóa, đóng/mở ghi chú của mình. Hỗ trợ các bộ lọc Loại, Độ ưu tiên, Trạng thái và Thời gian tạo; Thời gian mặc định là `Hôm nay`, `Tới hạn` lấy từ đầu hệ thống đến hết hôm nay. Danh sách phân trang tối đa 50 ghi chú người dùng được phép xem/trang và không được làm lộ số lượng dữ liệu ngoài quyền.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.REQ09",
+   "name": "Bình luận ghi chú",
+   "text": "Người có quyền xem ghi chú đang `Mới` được comment. Ghi chú `Đóng` không cho bất kỳ thao tác comment nào. Chỉ người tạo comment được sửa/xóa comment của mình; owner ghi chú không được sửa/xóa comment của người khác. Ghi chú, comment và metadata comment cuối phải hiển thị đúng người cùng ngày, tháng, năm, thời gian.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.REQ10",
+   "name": "Quản lý đăng ký lịch",
+   "text": "`Admin`, `Class Handler`, `Support` được xem và cập nhật lịch đăng ký của giáo viên thuộc phạm vi. Lưới gồm 3 buổi (`Sáng 07h30 - 12h00`, `Chiều 14h00 - 18h00`, `Tối 18h00 - 23h00`) × Thứ 2–Chủ Nhật; tick ô mở popup `Đăng ký khung giờ` (mốc 30 phút trong khung buổi, ghi chú ô); `Fulltime` chọn thêm ô trống bằng giờ trọn buổi, giữ giờ/ghi chú ô đã đăng ký; chủ động bỏ Fulltime bỏ chọn toàn bộ ô trong nháp, chỉ Cập nhật mới lưu; Fulltime tự bỏ tick do gỡ một ô riêng không gỡ các ô còn lại; có ghi chú chung. Bỏ ca đăng ký đang có lịch dạy vẫn cho lưu bình thường, không cảnh báo/chặn và không thay đổi lịch dạy đã xếp. 1 ô buổi đã tick = 1 ca ở danh sách giáo viên. Cập nhật lưu atomically toàn bộ lưới, áp dụng cùng validation/quy tắc với phía giáo viên, cập nhật dữ liệu danh sách và chip ở tab Lịch dạy, ghi nhận đúng actor thực tế và sinh log.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.REQ11",
+   "name": "Danh sách lớp và lương giáo viên theo lớp",
+   "text": "Tab chỉ hiển thị các lớp đã thêm giáo viên đang xem, gồm Trạng thái lớp, Mã lớp, Khóa học, Đánh giá lớp, KPI là tỷ lệ lên kỳ của lớp và cột `LƯƠNG/GIỜ`. Lương là dữ liệu riêng của quan hệ giáo viên–lớp, đơn vị VNĐ/giờ, là số nguyên không âm và cho phép `0`; hiển thị bằng nút màu cam dạng `200.000 đ` kèm icon bút. `Admin`, `Class Handler`, `Support` click nút để mở popup `Chỉnh Sửa Lương`, trong đó có đúng Mã lớp, giá trị hiện tại, tiền tệ VNĐ, đơn vị Giờ, `Hủy` và `Xác Nhận`. Hỗ trợ tìm theo Mã lớp/Tên khóa học, filter Loại lớp, Khóa học cấu hình, đủ tám Trạng thái lớp và Thời gian tạo lớp với cùng danh sách khoảng thời gian của tab Ghi chú; danh sách phân trang tối đa 50 lớp/trang.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-GV-020100": {
+   "id": "ADM-GV-020100",
+   "name": "thong-tin-ca-nhan",
+   "title": "Chi tiết giáo viên / Thông tin cá nhân",
+   "kind": "man-chinh",
+   "parent": "ADM-GV-020200",
+   "shownOn": "ADM-GV-020100",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "1328:4417",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-giao-vien/thong-tin-ca-nhan",
+   "link": "/chi-tiet-giao-vien/thong-tin-ca-nhan",
+   "dark": "ADM-GV-020100-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-TD.F01",
+    "M-TD.F02",
+    "M-TD.F03"
+   ]
+  },
+  "ADM-GV-020200": {
+   "id": "ADM-GV-020200",
+   "name": "danh-sach-lop",
+   "title": "Chi tiết giáo viên / Danh sách lớp",
+   "kind": "man-chinh",
+   "parent": "ADM-GV-020100",
+   "shownOn": "ADM-GV-020200",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "1331:10823",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-giao-vien/danh-sach-lop",
+   "link": "/chi-tiet-giao-vien/danh-sach-lop",
+   "dark": "ADM-GV-020200-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-TD.F01",
+    "M-TD.F02",
+    "M-TD.F03"
+   ]
+  },
+  "ADM-GV-020210": {
+   "id": "ADM-GV-020210",
+   "name": "popup-chinh-sua-luong",
+   "title": "Chi tiết giáo viên / Danh sách lớp / Popup chỉnh sửa lương",
+   "kind": "popup",
+   "parent": "ADM-GV-020200",
+   "shownOn": "ADM-GV-020200",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1540:30533",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-giao-vien/danh-sach-lop?popup=ADM-GV-020210",
+   "dark": "ADM-GV-020210-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-TD.A03"
+   ]
+  },
+  "ADM-GV-020300": {
+   "id": "ADM-GV-020300",
+   "name": "lich-day",
+   "title": "Chi tiết giáo viên / Lịch dạy",
+   "kind": "man-chinh",
+   "parent": "ADM-GV-020200",
+   "shownOn": "ADM-GV-020300",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2008:48438",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-giao-vien/lich-day",
+   "link": "/chi-tiet-giao-vien/lich-day",
+   "dark": "ADM-GV-020300-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-TD.F01",
+    "M-TD.F03"
+   ]
+  },
+  "ADM-GV-020309": {
+   "id": "ADM-GV-020309",
+   "name": "xem-theo-lop",
+   "title": "Chi tiết giáo viên / Lịch dạy / Xem theo lớp",
+   "kind": "trang-thai",
+   "parent": "ADM-GV-020300",
+   "shownOn": "ADM-GV-020300",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2008:50099",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-giao-vien/lich-day/xem-theo-lop",
+   "link": "/chi-tiet-giao-vien/lich-day?state=ADM-GV-020309",
+   "dark": "ADM-GV-020309-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-GV-020400": {
+   "id": "ADM-GV-020400",
+   "name": "log",
+   "title": "Chi tiết giáo viên / Log",
+   "kind": "man-chinh",
+   "parent": "ADM-GV-020300",
+   "shownOn": "ADM-GV-020400",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "1904:6493",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-giao-vien/log",
+   "link": "/chi-tiet-giao-vien/log",
+   "dark": "ADM-GV-020400-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-TD.F01",
+    "M-TD.F03"
+   ]
+  },
+  "ADM-GV-020500": {
+   "id": "ADM-GV-020500",
+   "name": "quan-ly-dang-ky-lich",
+   "title": "Chi tiết giáo viên / Quản lý đăng ký lịch",
+   "kind": "man-chinh",
+   "parent": "ADM-GV-020400",
+   "shownOn": "ADM-GV-020500",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "1540:23966",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-giao-vien/quan-ly-dang-ky-lich",
+   "link": "/chi-tiet-giao-vien/quan-ly-dang-ky-lich",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-TD.F01",
+    "M-TD.F03",
+    "M-TD.F04"
+   ]
+  },
+  "ADM-GV-020520": {
+   "id": "ADM-GV-020520",
+   "name": "popup-dang-ky-khung-gio",
+   "title": "Chi tiết giáo viên / Quản lý đăng ký lịch / Popup đăng ký khung giờ",
+   "kind": "popup",
+   "parent": "ADM-GV-020500",
+   "shownOn": "ADM-GV-020500",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "3674:61905",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-giao-vien/quan-ly-dang-ky-lich?popup=ADM-GV-020520",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-TD.A06"
+   ]
+  },
+  "ADM-GV-020600": {
+   "id": "ADM-GV-020600",
+   "name": "ghi-chu",
+   "title": "Chi tiết giáo viên / Ghi chú",
+   "kind": "man-chinh",
+   "parent": "ADM-GV-020500",
+   "shownOn": "ADM-GV-020600",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "1904:7234",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-giao-vien/ghi-chu",
+   "link": "/chi-tiet-giao-vien/ghi-chu",
+   "dark": "ADM-GV-020600-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-TD.F01",
+    "M-TD.F03"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-TD.A01",
+   "name": "man-hinh-chi-tiet-giao-vien",
+   "title": "Màn hình Chi tiết giáo viên",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.A02",
+   "name": "tab-thong-tin-ca-nhan",
+   "title": "Tab Thông tin cá nhân",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TD.A02.01",
+     "name": "anh-dai-dien",
+     "label": "Ảnh đại diện",
+     "spec": "✅ | Khung tròn có dấu `+` và icon máy ảnh; cho phép chọn/thay ảnh; dung lượng tệp tối đa 25 MB.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC08"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.02",
+     "name": "ma-giao-vien",
+     "label": "Mã giáo viên",
+     "spec": "❌ | Hiển thị code đã tự sinh khi tạo (vd `LS08`); khóa, không cho phép chỉnh sửa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC03",
+      "M-TD.TC04"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.03",
+     "name": "gmail",
+     "label": "Gmail",
+     "spec": "❌ | Hiển thị email hiện tại kèm nhãn `Cố định` và icon khóa; không cho phép chỉnh sửa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC03"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.04",
+     "name": "ho-va-ten",
+     "label": "Họ và tên",
+     "spec": "✅ | Cho phép cập nhật; không áp dụng validation bắt buộc khi cập nhật.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC06"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.05",
+     "name": "gioi-tinh",
+     "label": "Giới tính",
+     "spec": "✅ | Dropdown `Chọn`; không bắt buộc khi cập nhật.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC03"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.06",
+     "name": "ngay-sinh",
+     "label": "Ngày sinh",
+     "spec": "✅ | Date picker `Chọn ngày`; không bắt buộc khi cập nhật.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC03"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.07",
+     "name": "so-dien-thoai",
+     "label": "Số điện thoại",
+     "spec": "✅ | Không bắt buộc; nếu có giá trị phải gồm đúng 10 chữ số và bắt đầu bằng `0`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC05"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.08",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "✅ | Dropdown `Training`, `Thử việc`, `Chính thức`, `Nghỉ việc`; giáo viên mới tạo mặc định `Training`; chuyển sang `Nghỉ việc` kích hoạt quy tắc nghỉ việc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC03",
+      "M-TD.TC10",
+      "M-TD.TC11"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.09",
+     "name": "ghi-chu",
+     "label": "Ghi chú",
+     "spec": "✅ | Không bắt buộc; đây là ghi chú tổng quan riêng của Thông tin cá nhân, dùng để hiển thị tại cột Ghi chú ở danh sách giáo viên và không dùng chung dữ liệu với tab `Ghi chú`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC03",
+      "M-TD.TC07"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.10",
+     "name": "ngan-hang",
+     "label": "Ngân hàng",
+     "spec": "✅ | Không bắt buộc; chọn ngân hàng từ danh sách hỗ trợ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC03",
+      "M-TD.TC06"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.11",
+     "name": "so-tai-khoan",
+     "label": "Số tài khoản",
+     "spec": "✅ | Không bắt buộc; cho phép người dùng nhập.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.12",
+     "name": "ten-chu-tai-khoan",
+     "label": "Tên chủ tài khoản",
+     "spec": "✅ | Không bắt buộc; người dùng nhập và hệ thống tự động chuyển thành chữ in hoa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC06"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.13",
+     "name": "lay-lai-mat-khau",
+     "label": "Lấy lại mật khẩu",
+     "spec": "— | Reset mật khẩu của giáo viên về `abc12345`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC09"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.14",
+     "name": "cap-nhat-tai-khoan",
+     "label": "Cập nhật tài khoản",
+     "spec": "— | Lưu toàn bộ thay đổi của Thông tin cá nhân, ảnh, ghi chú và thông tin ngân hàng trong một lần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC04",
+      "M-TD.TC05"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-TD.A03",
+   "name": "tab-danh-sach-lop",
+   "title": "Tab Danh sách lớp",
+   "screens": [
+    "adm-gv-020210"
+   ],
+   "screensGuessed": [
+    "ADM-GV-020210"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TD.A03.01",
+     "name": "tim-kiem-lop-hoc",
+     "label": "Tìm kiếm lớp học",
+     "spec": "Ô tìm kiếm nằm phía trên bảng; tìm theo Mã lớp hoặc Tên khóa học. Tự tìm sau 2 giây kể từ lần nhập cuối hoặc tìm ngay khi nhấn `Enter`; điều kiện tìm kiếm kết hợp với các bộ lọc và đưa danh sách về trang đầu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC22"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A03.02",
+     "name": "trang-thai-lop",
+     "label": "Trạng thái lớp",
+     "spec": "Cột `#`: icon trạng thái hiện tại của lớp có nội dung nhận biết được (tooltip tên trạng thái); hỗ trợ các trạng thái `Khai giảng`, `Mới tạo`, `Đang học`, `Tạm dừng`, `Hoàn thành`, `Hủy`, `Xóa`, `Trải nghiệm`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A03.03",
+     "name": "ma-lop",
+     "label": "Mã lớp",
+     "spec": "Hiển thị mã lớp của đúng bản ghi; không dùng mã lớp làm khóa phân quyền hoặc khóa liên kết.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC13",
+      "M-TD.TC18",
+      "M-TD.TC22"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A03.04",
+     "name": "khoa-hoc",
+     "label": "Khóa học",
+     "spec": "Tên khóa học đã gắn với lớp, thanh tiến độ và số buổi dạng `đã học/tổng số buổi Buổi` (vd `6/20 Buổi`); dữ liệu phải thuộc đúng lớp và cùng khóa học đang hiển thị, cùng nguồn với `[đã học/tổng]` ở popover Chi tiết Lớp của danh sách giáo viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC13",
+      "M-TD.TC22",
+      "M-TD.TC23"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A03.05",
+     "name": "danh-gia",
+     "label": "Đánh giá",
+     "spec": "Hiển thị đánh giá hiện hành của lớp theo nguồn dữ liệu đánh giá lớp; không tự suy diễn từ KPI hoặc lương.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC13",
+      "M-TD.TC14"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A03.06",
+     "name": "kpi-lop",
+     "label": "KPI lớp",
+     "spec": "Hiển thị tỷ lệ lên kỳ của riêng lớp đó. Công thức mỗi học viên là trung bình cộng tỷ lệ đi học và tỷ lệ BTVN; KPI lớp là trung bình cộng kết quả của tất cả học viên thuộc lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC15"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A03.07",
+     "name": "luong-giao-vien-theo-gio",
+     "label": "Lương giáo viên theo giờ",
+     "spec": "Cột có tiêu đề `LƯƠNG/GIỜ`; mỗi dòng hiển thị mức lương của đúng giáo viên trong đúng lớp bằng nút màu cam kèm icon bút chỉnh sửa, định dạng phân tách hàng nghìn kèm `đ`, ví dụ `200.000 đ`. `Admin`, `Class Handler`, `Support` được mở popup thiết lập/cập nhật.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-TD.A03",
+       "raw": "mở popup thiết lập/cập nhật"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A03.08",
+     "name": "mo-chi-tiet",
+     "label": "Mở chi tiết",
+     "spec": "Icon mũi tên ở cuối dòng được hiển thị theo UI; hành vi điều hướng khi click cần xác nhận tại mục 3.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A03.09",
+     "name": "loai-lop",
+     "label": "Loại lớp",
+     "spec": "`Lớp 1-1`, `Lớp chung`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC23"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A03.10",
+     "name": "khoa-hoc",
+     "label": "Khóa học",
+     "spec": "Lấy động từ danh sách khóa học được cấu hình/define trong hệ thống; kết quả chỉ gồm lớp thuộc khóa học đã chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC13",
+      "M-TD.TC22",
+      "M-TD.TC23"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A03.11",
+     "name": "trang-thai-lop",
+     "label": "Trạng thái lớp",
+     "spec": "`Khai giảng`, `Mới tạo`, `Đang học`, `Tạm dừng`, `Hoàn thành`, `Hủy`, `Xóa`, `Trải nghiệm`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A03.12",
+     "name": "thoi-gian",
+     "label": "Thời gian",
+     "spec": "Lọc theo thời gian tạo lớp (`class.created_at`), mặc định `Hôm nay`; danh sách gồm `Tới hạn`, `Hôm nay`, `Hôm qua`, `Hôm nay và hôm qua`, `Tuần này`, `Tuần trước`, `Tháng này`, `Tháng trước`, `3 tháng trước`, `Năm nay`, `Năm trước`, `Tùy chọn`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC24",
+      "M-TD.TC25"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-TD.A04",
+   "name": "tab-lich-day",
+   "title": "Tab Lịch dạy",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TD.A04.01",
+     "name": "bat",
+     "label": "Bật",
+     "spec": "Mỗi lớp là một nhóm riêng có thanh tiêu đề màu cam ghi mã lớp; bên dưới là lưới bảy cột ngày. Ngày có lịch hiển thị card buổi dạy; ngày không có lịch là ô trống viền nét đứt, không có chữ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A04.02",
+     "name": "tat",
+     "label": "Tắt",
+     "spec": "Lịch được gom theo ngày, không chia thành nhóm lớp. Mỗi cột ngày hiển thị toàn bộ buổi dạy trong ngày, xếp tăng dần theo giờ bắt đầu; nhiều buổi được xếp dọc. Ngày không có buổi dạy là ô trống viền nét đứt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-TD.A05",
+   "name": "tab-log",
+   "title": "Tab Log",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TD.A05.01",
+     "name": "tim-kiem",
+     "label": "Tìm kiếm",
+     "spec": "Ô `Tìm kiếm lớp học`: lọc log theo mã lớp hoặc tên lớp xuất hiện trong mô tả; tự tìm sau 2 giây hoặc nhấn `Enter`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A05.02",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "Tên loại log (vd `Thêm Học Viên`, `Đổi Trạng Thái`, `Chăm Sóc Lớp`).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC37"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A05.03",
+     "name": "mo-ta",
+     "label": "Mô tả",
+     "spec": "Câu mô tả do hệ thống sinh; tên người, học viên, mã lớp được tô màu cam và dẫn tới đối tượng tương ứng. Mô tả dài có khối chi tiết thu gọn / mở rộng (`Thu gọn`). Không có mô tả hiển thị `Trống`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC37",
+      "M-TD.TC38",
+      "M-TD.TC43",
+      "M-TD.TC44"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A05.04",
+     "name": "gio-log-ngay-log",
+     "label": "Giờ log, Ngày log",
+     "spec": "Thời điểm ghi log dạng `hh:mm AM` và `dd.MM.yyyy` theo múi giờ nghiệp vụ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC37"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A05.05",
+     "name": "doi-tuong",
+     "label": "Đối tượng",
+     "spec": "Người thực hiện thao tác (avatar + tên) hoặc `Hệ thống` với log do tiến trình tự động sinh.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC37",
+      "M-TD.TC38",
+      "M-TD.TC39",
+      "M-TD.TC42"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A05.06",
+     "name": "thao-tac",
+     "label": "Thao tác",
+     "spec": "Nút `⋯` mở `Xem chi tiết` (toàn bộ nội dung log); không có sửa / xóa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC37",
+      "M-TD.TC38",
+      "M-TD.TC40",
+      "M-TD.TC41"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A05.07",
+     "name": "bo-loc-doi-tuong",
+     "label": "Bộ lọc Đối tượng",
+     "spec": "Chọn `Hệ thống` hoặc một người dùng cụ thể; không chọn thì hiển thị tất cả.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A05.08",
+     "name": "bo-loc-thoi-gian",
+     "label": "Bộ lọc Thời gian",
+     "spec": "Lọc theo thời điểm ghi log; cùng danh sách khoảng thời gian của tab Ghi chú; giá trị mặc định cần xác nhận tại mục 3.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-TD.A06",
+   "name": "tab-quan-ly-dang-ky-lich",
+   "title": "Tab Quản lý đăng ký lịch",
+   "screens": [
+    "adm-gv-020520"
+   ],
+   "screensGuessed": [
+    "ADM-GV-020520"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TD.A06.01",
+     "name": "fulltime",
+     "label": "Fulltime",
+     "spec": "Checkbox phía trên lưới. Tick = chọn thêm các ô còn trống bằng khung giờ trọn buổi; giữ nguyên khung giờ và ghi chú của các ô đã đăng ký. Bỏ tick bất kỳ ô nào thì `Fulltime` tự bỏ tick. Khi tải tab, `Fulltime` được tick nếu đủ 21 ô đã chọn, kể cả có ô dùng khung giờ riêng. Chủ động bỏ tick Fulltime sẽ bỏ chọn toàn bộ ô đang chọn trong nháp; chỉ bấm Cập nhật mới lưu chính thức. Fulltime tự bỏ tick do gỡ một ô riêng chỉ gỡ ô đó, không gỡ các ô còn lại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC46",
+      "M-TD.TC49",
+      "M-TD.TC49a"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A06.02",
+     "name": "cot-ngay",
+     "label": "Cột ngày",
+     "spec": "`Thứ 2` … `Thứ 7`, `Chủ Nhật`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A06.03",
+     "name": "hang-buoi",
+     "label": "Hàng buổi",
+     "spec": "`Buổi sáng 07h30 - 12h00`, `Buổi chiều 14h00 - 18h00`, `Buổi tối 18h00 - 23h00`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A06.04",
+     "name": "o-buoi-chua-dang-ky",
+     "label": "Ô buổi chưa đăng ký",
+     "spec": "Checkbox trống; tick mở popup `Đăng ký khung giờ` của đúng thứ và buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-TD.A06",
+       "raw": "mở popup `Đăng ký khung giờ` của đúng thứ và buổi"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A06.05",
+     "name": "o-buoi-da-dang-ky",
+     "label": "Ô buổi đã đăng ký",
+     "spec": "Checkbox đã tick, nền cam, hiển thị ghi chú ngắn của ô (vd `Trước 9h tối`, `Toàn buổi trừ lúc 18h30`) và icon bút để mở lại popup sửa khung giờ / ghi chú; hover hiển thị tooltip ghi chú đầy đủ (Figma: `Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này`). Bỏ tick = gỡ đăng ký buổi đó.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A06.06",
+     "name": "popup-dang-ky-khung-gio",
+     "label": "Popup Đăng ký khung giờ",
+     "spec": "Dòng phụ `<Thứ> · <Buổi> (<khung buổi>)`; `Giờ bắt đầu`, `Giờ kết thúc` là dropdown các mốc cách nhau 30 phút trong khung buổi (gợi ý `Chọn trong khung 14h00 – 18h00, mỗi mốc cách nhau 30 phút`); `Ghi chú` không bắt buộc; `Huỷ` đóng không đổi ô; `Xác nhận` lưu tạm vào lưới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC47"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A06.07",
+     "name": "ghi-chu-chung",
+     "label": "Ghi chú (chung)",
+     "spec": "Ô văn bản dưới lưới, không bắt buộc, lưu cùng lịch đăng ký; placeholder `gửi tới người phỏng vấn` trên Figma là copy từ màn giáo viên, requirement đọc là ghi chú chung cho lịch đăng ký.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A06.08",
+     "name": "cap-nhat",
+     "label": "Cập nhật",
+     "spec": "Lưu toàn bộ lưới (các ô đã tick, khung giờ và ghi chú từng ô, ghi chú chung, cờ `Fulltime`) làm lịch đăng ký mới của giáo viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC47",
+      "M-TD.TC49",
+      "M-TD.TC49a",
+      "M-TD.TC50",
+      "M-TD.TC51",
+      "M-TD.TC52"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-TD.A07",
+   "name": "tab-ghi-chu",
+   "title": "Tab Ghi chú",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TD.A07.01",
+     "name": "o-go-nhanh",
+     "label": "Ô gõ nhanh",
+     "spec": "Thanh cố định cuối tab: `Gõ nhanh nội dung ghi chú, nhấn Enter để tạo mới…` kèm dropdown Loại (mặc định `Công khai`), Độ ưu tiên (mặc định `Bình thường`) và nút gửi. `Enter` hoặc nút gửi tạo ghi chú với Nội dung là text đã gõ, Tiêu đề trống. Không có nút `+` hay popup thêm riêng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC56",
+      "M-TD.TC57"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.02",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "Không bắt buộc; nhập / sửa qua `Sửa` trong menu `⋮`; card không có tiêu đề hiển thị dòng đầu của nội dung làm tiêu đề.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC53",
+      "M-TD.TC56",
+      "M-TD.TC58"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.03",
+     "name": "noi-dung",
+     "label": "Nội dung",
+     "spec": "Bắt buộc; hiển thị đầy đủ trong card ghi chú.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC53",
+      "M-TD.TC56",
+      "M-TD.TC57",
+      "M-TD.TC58"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.04",
+     "name": "loai",
+     "label": "Loại",
+     "spec": "Gồm `Công khai` (icon quả địa cầu), `Riêng tư` (icon khóa); mặc định `Công khai`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC53",
+      "M-TD.TC55",
+      "M-TD.TC56",
+      "M-TD.TC58"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.05",
+     "name": "do-uu-tien",
+     "label": "Độ ưu tiên",
+     "spec": "Gồm `Bình thường`, `Quan trọng`, `Rất quan trọng`; hiển thị badge màu trên card; mặc định `Bình thường`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC56",
+      "M-TD.TC58"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.06",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Gồm `Mới`, `Đóng`; ghi chú mới mặc định là `Mới`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC53",
+      "M-TD.TC55",
+      "M-TD.TC56",
+      "M-TD.TC58"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.07",
+     "name": "menu",
+     "label": "Menu ⋮",
+     "spec": "Chỉ owner thấy: `Sửa` (popup Tiêu đề, Nội dung, Loại, Độ ưu tiên), `Đóng` / `Mở lại`, `Xóa` (có xác nhận). Người khác không có menu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.08",
+     "name": "nhan-da-chinh-sua",
+     "label": "Nhãn Đã chỉnh sửa",
+     "spec": "Ghi chú đã được sửa hiển thị nhãn `Đã chỉnh sửa` dưới owner.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.09",
+     "name": "owner",
+     "label": "Owner",
+     "spec": "Hiển thị avatar, tên người tạo và thời gian tạo đầy đủ ngày, tháng, năm, giờ, phút.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC53",
+      "M-TD.TC54",
+      "M-TD.TC55",
+      "M-TD.TC56",
+      "M-TD.TC58",
+      "M-TD.TC59",
+      "M-TD.TC60",
+      "M-TD.TC63",
+      "M-TD.TC64",
+      "M-TD.TC65"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.10",
+     "name": "binh-luan",
+     "label": "Bình luận",
+     "spec": "Hiển thị số lượng; cho phép mở/ẩn danh sách bình luận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.11",
+     "name": "hoat-dong-binh-luan-cuoi",
+     "label": "Hoạt động bình luận cuối",
+     "spec": "Nếu có bình luận, phía bên phải ghi chú hiển thị avatar người comment cuối cùng và đầy đủ ngày, tháng, năm, thời gian của comment cuối cùng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.12",
+     "name": "ghi-chu-cong-khai-moi",
+     "label": "Ghi chú Công khai + Mới",
+     "spec": "Xem, sửa, xóa, đóng, comment | Xem và comment",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.13",
+     "name": "ghi-chu-rieng-tu-moi",
+     "label": "Ghi chú Riêng tư + Mới",
+     "spec": "Xem, sửa, xóa, đóng, comment | Không nhìn thấy và không truy cập được",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.14",
+     "name": "ghi-chu-cong-khai-dong",
+     "label": "Ghi chú Công khai + Đóng",
+     "spec": "Xem, sửa, xóa, mở lại; không comment khi đang đóng | Không nhìn thấy và không truy cập được",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.15",
+     "name": "ghi-chu-rieng-tu-dong",
+     "label": "Ghi chú Riêng tư + Đóng",
+     "spec": "Xem, sửa, xóa, mở lại; không comment khi đang đóng | Không nhìn thấy và không truy cập được",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC71"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.16",
+     "name": "loai",
+     "label": "Loại",
+     "spec": "`Công khai`, `Riêng tư`; trạng thái không chọn giá trị không giới hạn theo Loại. Kết quả vẫn phải tuân thủ quyền riêng tư.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC53",
+      "M-TD.TC55",
+      "M-TD.TC56",
+      "M-TD.TC58"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.17",
+     "name": "do-uu-tien",
+     "label": "Độ ưu tiên",
+     "spec": "`Bình thường`, `Quan trọng`, `Rất quan trọng`; trạng thái không chọn giá trị không giới hạn theo độ ưu tiên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC56",
+      "M-TD.TC58"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.18",
+     "name": "trang-thai-ghi-chu",
+     "label": "Trạng thái ghi chú",
+     "spec": "`Mới`, `Đóng`; trạng thái không chọn giá trị không giới hạn theo trạng thái. Ghi chú đóng vẫn chỉ owner được nhận trong kết quả.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.19",
+     "name": "thoi-gian",
+     "label": "Thời gian",
+     "spec": "Mặc định `Hôm nay`; lọc theo thời gian tạo ghi chú (`created_at`) trong múi giờ nghiệp vụ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC53",
+      "M-TD.TC58",
+      "M-TD.TC61",
+      "M-TD.TC67",
+      "M-TD.TC68"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.20",
+     "name": "toi-han",
+     "label": "Tới hạn",
+     "spec": "Từ thời điểm bắt đầu lưu dữ liệu của hệ thống đến hết ngày hôm nay.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC68"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.21",
+     "name": "hom-nay",
+     "label": "Hôm nay",
+     "spec": "Từ đầu ngày đến hết ngày hôm nay; là giá trị mặc định.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC67",
+      "M-TD.TC68"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.22",
+     "name": "hom-qua",
+     "label": "Hôm qua",
+     "spec": "Toàn bộ ngày liền trước hôm nay.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC68"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.23",
+     "name": "hom-nay-va-hom-qua",
+     "label": "Hôm nay và hôm qua",
+     "spec": "Hợp của toàn bộ ngày hôm qua và ngày hôm nay.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC68"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.24",
+     "name": "tuan-nay",
+     "label": "Tuần này",
+     "spec": "Từ đầu Thứ 2 đến hết Chủ Nhật của tuần hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.25",
+     "name": "tuan-truoc",
+     "label": "Tuần trước",
+     "spec": "Từ đầu Thứ 2 đến hết Chủ Nhật của tuần liền trước.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.26",
+     "name": "thang-nay",
+     "label": "Tháng này",
+     "spec": "Từ ngày đầu đến ngày cuối của tháng hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.27",
+     "name": "thang-truoc",
+     "label": "Tháng trước",
+     "spec": "Từ ngày đầu đến ngày cuối của tháng liền trước.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC68"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.28",
+     "name": "3-thang-truoc",
+     "label": "3 tháng trước",
+     "spec": "Từ đầu ngày cách ngày hiện tại ba tháng đến thời điểm hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC68"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.29",
+     "name": "nam-nay",
+     "label": "Năm nay",
+     "spec": "Từ ngày 01/01 đến ngày 31/12 của năm hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.30",
+     "name": "nam-truoc",
+     "label": "Năm trước",
+     "spec": "Từ ngày 01/01 đến ngày 31/12 của năm liền trước.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A07.31",
+     "name": "tuy-chon",
+     "label": "Tùy chọn",
+     "spec": "Người dùng chọn ngày bắt đầu và ngày kết thúc; bao gồm toàn bộ hai ngày biên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC69"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-TD.A08",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TD.A08.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | Backend xác nhận thao tác thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TTC01",
+      "M-TD.TTC02",
+      "M-TD.TTC04"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A08.02",
+     "name": "thong-tin",
+     "label": "Thông tin",
+     "spec": "`Thông Báo` | Thao tác đã tiếp nhận nhưng dữ liệu cần thời gian đồng bộ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A08.03",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | Dữ liệu/điều kiện cần người dùng kiểm tra.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TTC02"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A08.04",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | Backend/network không hoàn tất thao tác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-TD.F01",
+   "name": "header",
+   "title": "Header",
+   "screens": [
+    "adm-gv-020100",
+    "adm-gv-020200",
+    "adm-gv-020300",
+    "adm-gv-020400",
+    "adm-gv-020500",
+    "adm-gv-020600"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TD.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020100": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2223:84653",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M-TD.F02",
+   "name": "main-scrollable-workspace",
+   "title": "Main - Scrollable Workspace",
+   "screens": [
+    "adm-gv-020100",
+    "adm-gv-020200"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TD.F02.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020100": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "1739:35487",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F02.02",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020100": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "2056:24605",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Cập nhật tài khoản",
+         "Type": "Warning",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F02.03",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020100": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "3994:23674",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "CChọn",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F02.04",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020200": [
+       {
+        "term": "Dropdown",
+        "figmaId": "1505:22911",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Loại lớp",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F02.05",
+     "name": "class-status",
+     "label": "CLass Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020200": [
+       {
+        "term": "CLass Status",
+        "figmaId": "1505:22755",
+        "layer": "CLass Status",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "CLass Status",
+        "component": "CLass Status",
+        "variant": {
+         "Property 1": "Hoàn thành"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F02.06",
+     "name": "global-progress-bar",
+     "label": "Global Progress Bar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020200": [
+       {
+        "term": "Global Progress Bar",
+        "figmaId": "1505:22662",
+        "layer": "Global Progress Bar",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Global Progress Bar",
+        "component": "Global Progress Bar",
+        "variant": {
+         "Property 1": "Progress ngang không có thông số"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F02.07",
+     "name": "progress-diem-danh-gia-a-f",
+     "label": "Progress/Điểm Đánh Giá (A-F)",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020200": [
+       {
+        "term": "Progress/Điểm Đánh Giá (A-F)",
+        "figmaId": "1333:11674",
+        "layer": "Progress/Điểm Đánh Giá (A-F)",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Progress/Điểm Đánh Giá (A-F)",
+        "component": "Progress/Điểm Đánh Giá (A-F)",
+        "variant": {
+         "Property 1": "A nhỏ",
+         "Size": "36x32"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F02.08",
+     "name": "percent",
+     "label": "PERCENT %",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020200": [
+       {
+        "term": "PERCENT %",
+        "figmaId": "1505:22696",
+        "layer": "PERCENT %",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "PERCENT %",
+        "component": "PERCENT %",
+        "variant": {
+         "Property 1": "ĐN 4"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F02.09",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020200": [
+       {
+        "term": "Mouse click",
+        "figmaId": "1333:11732",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": "Main - Scrollable Workspace",
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M-TD.F03",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-gv-020100",
+    "adm-gv-020200",
+    "adm-gv-020300",
+    "adm-gv-020400",
+    "adm-gv-020500",
+    "adm-gv-020600"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TD.F03.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020100": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:235940",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Giáo viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F03.02",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020300": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "2008:50023",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F03.03",
+     "name": "time",
+     "label": "Time",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020300": [
+       {
+        "term": "Time",
+        "figmaId": "2008:48827",
+        "layer": "Time",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Time",
+        "component": "Time",
+        "variant": {
+         "Property 1": "Variant4"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F03.04",
+     "name": "status-calendar",
+     "label": "STATUS CALENDAR",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020300": [
+       {
+        "term": "STATUS CALENDAR",
+        "figmaId": "2008:49668",
+        "layer": "STATUS CALENDAR",
+        "confidence": "cao",
+        "region": null,
+        "owner": "STATUS CALENDAR",
+        "component": "STATUS CALENDAR",
+        "variant": {
+         "Property 1": "LỊCH HOÀN THÀNH"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F03.05",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020400": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "2200:30451",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm lớp học",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F03.06",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020400": [
+       {
+        "term": "Dropdown",
+        "figmaId": "1930:23305",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Đối tượng",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F03.07",
+     "name": "lich-giao-vien-dang-ky",
+     "label": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020400": [
+       {
+        "term": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "figmaId": "1930:23330",
+        "layer": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "component": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "variant": {
+         "Icon": "Đồng hồ",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F03.08",
+     "name": "atom-object-chip",
+     "label": "Atom/Object Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020400": [
+       {
+        "term": "Atom/Object Chip",
+        "figmaId": "2409:143933",
+        "layer": "Atom/Object Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Object Chip",
+        "component": "Atom/Object Chip",
+        "variant": {
+         "Name": "Hệ thống",
+         "Type": "System"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F03.09",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020400": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "1930:23497",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Add Rounded"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F03.10",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020600": [
+       {
+        "term": "Avatar",
+        "figmaId": "3641:79114",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Nguyễn Văn An",
+         "Size": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M-TD.F04",
+   "name": "frame-1171274925",
+   "title": "Frame 1171274925",
+   "screens": [
+    "adm-gv-020500"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TD.F04.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020500": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "1910:17262",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F04.02",
+     "name": "liner-icon",
+     "label": "Liner Icon",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020500": [
+       {
+        "term": "Liner Icon",
+        "figmaId": "2868:59830",
+        "layer": "Liner Icon",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": "Liner Icon",
+        "component": "Liner Icon",
+        "variant": {
+         "Property 1": "Ghi chú"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F04.03",
+     "name": "textarea-ghi-chu",
+     "label": "Textarea · Ghi chú",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020500": [
+       {
+        "term": "Textarea · Ghi chú",
+        "figmaId": "2868:59834",
+        "layer": "Textarea · Ghi chú",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": "Textarea · Ghi chú",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Thêm ghi chú muốn gửi tới người phỏng vấn (nếu có)",
+         "State": "Textarea",
+         "Kiểu": "M"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TD.F04.04",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-020500": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "2868:59838",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Frame 1171274925",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Cập nhật",
+         "Type": "Warning",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-TD.EX01",
+   "text": "Giáo viên không tồn tại hoặc không còn thuộc phạm vi của người dùng hiện tại → từ chối hiển thị, không dùng dữ liệu của giáo viên khác thay thế.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX02",
+   "text": "Tải chi tiết thất bại hoặc hết thời gian chờ → hiển thị lỗi và cho phép thử lại; không hiển thị form với dữ liệu cũ như dữ liệu hiện tại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX03",
+   "text": "Số điện thoại sai định dạng hoặc ảnh đại diện lớn hơn 25 MB → không gửi/lưu dữ liệu không hợp lệ, hiển thị lỗi tại trường và notification thất bại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX04",
+   "text": "Cập nhật Thông tin cá nhân hoặc reset mật khẩu thất bại → không hiển thị thành công giả; dữ liệu đã lưu trước đó và mật khẩu cũ không bị thay đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX05",
+   "text": "Client gửi yêu cầu sửa Mã giáo viên hoặc Email → backend bỏ qua hoặc từ chối thay đổi và giữ nguyên hai giá trị đã khóa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX06",
+   "text": "Admin chuyển tab hoặc quay lại khi có thay đổi chưa lưu → hiển thị cảnh báo; chỉ rời màn hình sau khi Admin xác nhận bỏ thay đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX07",
+   "text": "Giáo viên không có buổi dạy trong tuần được chọn → hiển thị lưới trống (ô nét đứt) đúng theo chế độ; không tái sử dụng dữ liệu tuần hoặc giáo viên khác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX08",
+   "text": "Tải lịch dạy thất bại hoặc hết thời gian chờ → hiển thị lỗi và cho phép thử lại; không dùng lịch đăng ký hoặc dữ liệu cũ thay thế.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX09",
+   "text": "Admin đổi tuần/chế độ khi request cũ chưa hoàn tất → chỉ response của điều kiện mới nhất được phép cập nhật lịch.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX10",
+   "text": "Client gửi request tạo, sửa hoặc xóa log → backend từ chối; log là dữ liệu bất biến và không thay đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX11",
+   "text": "Không có log phù hợp với từ khóa, Đối tượng hoặc Thời gian đang chọn → hiển thị trạng thái không có dữ liệu và giữ điều kiện để chỉnh sửa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX12",
+   "text": "Ghi log thất bại sau một thao tác thành công → không làm thất bại thao tác chính; hệ thống ghi nhận lỗi để đồng bộ log sau, không hiển thị thành công giả cho log.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX13",
+   "text": "Tải danh sách/trang log thất bại hoặc response của trang cũ trả về sau → hiển thị lỗi và cho phép thử lại, chỉ nhận response của trang mới nhất; không coi lỗi là danh sách rỗng và không hiển thị dữ liệu của giáo viên khác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX14",
+   "text": "Người dùng không phải owner truy cập ghi chú `Riêng tư` hoặc ghi chú `Đóng` bằng danh sách, filter hay ID trực tiếp → không trả nội dung hoặc metadata của ghi chú.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX15",
+   "text": "Nội dung ghi chú hoặc Nội dung comment rỗng/chỉ có khoảng trắng → từ chối tạo/cập nhật, hiển thị lỗi validation và notification thất bại; Tiêu đề được phép trống.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX16",
+   "text": "Người không phải owner gửi request cập nhật, xóa, đóng hoặc mở ghi chú → backend từ chối và giữ nguyên dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX17",
+   "text": "Người dùng gửi request sửa/xóa comment do người khác tạo, kể cả khi là owner ghi chú → backend từ chối và giữ nguyên comment.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX18",
+   "text": "Có request tạo/sửa/xóa comment khi ghi chú đang `Đóng` → backend từ chối; owner phải mở lại ghi chú trước.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX19",
+   "text": "Tải danh sách/trang ghi chú thất bại → hiển thị lỗi và cho phép thử lại; không coi lỗi là danh sách rỗng và không dùng dữ liệu cũ/ngoài quyền thay thế.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX20",
+   "text": "Người dùng thay đổi trang hoặc filter khi request cũ chưa hoàn tất → chỉ response của trang và tổ hợp filter mới nhất được phép cập nhật danh sách.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX21",
+   "text": "Khung giờ trong popup trống, ngoài khung buổi hoặc giờ kết thúc không lớn hơn giờ bắt đầu → không lưu ô; tải/cập nhật lịch đăng ký thất bại, hết thời gian chờ hoặc người dùng xác nhận lặp → không lưu lịch một phần/trùng request, giữ dữ liệu chính thức cũ và hiển thị đúng một notification thất bại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX22",
+   "text": "Lịch đăng ký đã được giáo viên hoặc người quản lý khác cập nhật sau khi màn hình tải → không âm thầm ghi đè; xử lý xung đột theo cùng cơ chế của chức năng phía giáo viên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX23",
+   "text": "Lương giáo viên theo lớp là số âm, số thập phân hoặc không phải số → từ chối cập nhật, giữ giá trị đã lưu và hiển thị lỗi tại trường cùng notification thất bại; số nguyên `0` là hợp lệ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX24",
+   "text": "Role không thuộc `Admin`, `Class Handler`, `Support`, người dùng ngoài phạm vi hoặc quan hệ giáo viên–lớp không tồn tại gửi request cập nhật lương → backend từ chối và không thay đổi dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX25",
+   "text": "Tải/tìm/lọc/chuyển trang Danh sách lớp thất bại, hết thời gian chờ hoặc request cũ trả về sau → hiển thị lỗi có thể thử lại và chỉ nhận response của trang, từ khóa và tổ hợp filter mới nhất; không coi lỗi là danh sách rỗng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX26",
+   "text": "Cập nhật lương thất bại hoặc người dùng xác nhận lặp khi request đang xử lý → không tạo nhiều lần cập nhật, giữ lương chính thức cũ và hiển thị đúng một notification thất bại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TD.EX27",
+   "text": "Lương của quan hệ giáo viên–lớp đã được người khác cập nhật sau khi dòng dữ liệu được tải → không âm thầm ghi đè; thông báo xung đột và yêu cầu tải lại theo cơ chế kiểm soát phiên bản.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "M-TD.FLOW01",
+   "name": "Xem chi tiết giáo viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ01"
+   ]
+  },
+  {
+   "id": "M-TD.FLOW02",
+   "name": "Cập nhật Thông tin cá nhân",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ02"
+   ]
+  },
+  {
+   "id": "M-TD.FLOW03",
+   "name": "Lấy lại mật khẩu giáo viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ03"
+   ]
+  },
+  {
+   "id": "M-TD.FLOW04",
+   "name": "Chuyển giáo viên sang Nghỉ việc",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ04"
+   ]
+  },
+  {
+   "id": "M-TD.FLOW05",
+   "name": "Xem lịch dạy theo tuần",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ]
+  },
+  {
+   "id": "M-TD.FLOW06",
+   "name": "Xem log hệ thống của giáo viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ07"
+   ]
+  },
+  {
+   "id": "M-TD.FLOW07",
+   "name": "Xem, lọc và quản lý ghi chú",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08"
+   ]
+  },
+  {
+   "id": "M-TD.FLOW08",
+   "name": "Bình luận ghi chú",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ09"
+   ]
+  },
+  {
+   "id": "M-TD.FLOW09",
+   "name": "Cập nhật lịch đăng ký của giáo viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ10"
+   ]
+  },
+  {
+   "id": "M-TD.FLOW10",
+   "name": "Xem lớp và cập nhật lương giáo viên theo lớp",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "M-TD.TC01",
+   "title": "Case 1: Mở đúng chi tiết giáo viên",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TD.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC02",
+   "title": "Case 2: Từ chối giáo viên không còn hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A01",
+   "scenario": "EX01 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ01"
+   ],
+   "exceptions": [
+    "M-TD.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC72",
+   "title": "Case 72: Từ chối role không có quyền",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A01",
+   "scenario": "EX01 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "M-TD.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC74",
+   "title": "Case 74: Notification khi thao tác thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A01",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC75",
+   "title": "Case 75: Notification khi thao tác thất bại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A01",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC03",
+   "title": "Case 3: Hiển thị Thông tin cá nhân",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A02",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW01"
+   ],
+   "items": [
+    "M-TD.A02.02",
+    "M-TD.A02.03",
+    "M-TD.A02.05",
+    "M-TD.A02.06",
+    "M-TD.A02.08",
+    "M-TD.A02.09",
+    "M-TD.A02.10"
+   ]
+  },
+  {
+   "id": "M-TD.TC04",
+   "title": "Case 4: Cập nhật khi không có trường bắt buộc",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TD.A02",
+   "scenario": "Flow 2 / REQ02 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ02",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW02"
+   ],
+   "items": [
+    "M-TD.A02.02",
+    "M-TD.A02.14"
+   ]
+  },
+  {
+   "id": "M-TD.TC05",
+   "title": "Case 5: Validation số điện thoại khi cập nhật",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A02",
+   "scenario": "EX03 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ02"
+   ],
+   "exceptions": [
+    "M-TD.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "M-TD.A02.07",
+    "M-TD.A02.14"
+   ]
+  },
+  {
+   "id": "M-TD.TC06",
+   "title": "Case 6: Cập nhật thông tin ngân hàng và viết hoa tên chủ tài khoản",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TD.A02",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW02"
+   ],
+   "items": [
+    "M-TD.A02.04",
+    "M-TD.A02.10",
+    "M-TD.A02.12"
+   ]
+  },
+  {
+   "id": "M-TD.TC07",
+   "title": "Case 7: Cập nhật ghi chú tổng quan",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A02",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW02"
+   ],
+   "items": [
+    "M-TD.A02.09"
+   ]
+  },
+  {
+   "id": "M-TD.TC08",
+   "title": "Case 8: Validation ảnh đại diện tối đa 25 MB",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A02",
+   "scenario": "EX03 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ02"
+   ],
+   "exceptions": [
+    "M-TD.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "M-TD.A02.01"
+   ]
+  },
+  {
+   "id": "M-TD.TC09",
+   "title": "Case 9: Lấy lại mật khẩu mặc định",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A02",
+   "scenario": "Flow 3 / REQ03 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ03",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW03"
+   ],
+   "items": [
+    "M-TD.A02.13"
+   ]
+  },
+  {
+   "id": "M-TD.TC10",
+   "title": "Case 10: Chuyển giáo viên sang Nghỉ việc",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TD.A02",
+   "scenario": "Flow 4 / REQ04 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ04",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW04"
+   ],
+   "items": [
+    "M-TD.A02.08"
+   ]
+  },
+  {
+   "id": "M-TD.TC11",
+   "title": "Case 11: Cảnh báo khi rời màn hình có thay đổi chưa lưu",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A02",
+   "scenario": "EX06 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ02"
+   ],
+   "exceptions": [
+    "M-TD.EX06"
+   ],
+   "flows": [],
+   "items": [
+    "M-TD.A02.08"
+   ]
+  },
+  {
+   "id": "M-TD.TC12",
+   "title": "Case 12: Chỉ hiển thị lớp đã thêm giáo viên",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TD.A03",
+   "scenario": "Flow 10 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW10"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC13",
+   "title": "Case 13: Hiển thị đủ thông tin của từng lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "Flow 10 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW10"
+   ],
+   "items": [
+    "M-TD.A03.03",
+    "M-TD.A03.04",
+    "M-TD.A03.05",
+    "M-TD.A03.10"
+   ]
+  },
+  {
+   "id": "M-TD.TC14",
+   "title": "Case 14: Đánh giá lớp độc lập với KPI",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TD.A03.05"
+   ]
+  },
+  {
+   "id": "M-TD.TC15",
+   "title": "Case 15: Tính KPI lớp theo tỷ lệ lên kỳ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TD.A03.06"
+   ]
+  },
+  {
+   "id": "M-TD.TC16",
+   "title": "Case 16: KPI lớp không có mẫu số hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC17",
+   "title": "Case 17: Lương được lưu và hiển thị riêng theo quan hệ giáo viên–lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "Flow 10 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW10"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC18",
+   "title": "Case 18: Mở popup và cập nhật lương đúng lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "Flow 10 / REQ11 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW10"
+   ],
+   "items": [
+    "M-TD.A03.03"
+   ]
+  },
+  {
+   "id": "M-TD.TC19",
+   "title": "Case 19: Hủy chỉnh sửa lương",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC20",
+   "title": "Case 20: Validation lương VNĐ không âm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "EX23 / REQ11 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [
+    "M-TD.EX23"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC21",
+   "title": "Case 21: Kiểm tra quyền cập nhật lương",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "EX24 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [
+    "M-TD.EX24"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC22",
+   "title": "Case 22: Tìm kiếm lớp học",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "Flow 10 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW10"
+   ],
+   "items": [
+    "M-TD.A03.01",
+    "M-TD.A03.03",
+    "M-TD.A03.04",
+    "M-TD.A03.10"
+   ]
+  },
+  {
+   "id": "M-TD.TC23",
+   "title": "Case 23: Lọc theo Loại lớp, Khóa học và Trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "Flow 10 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW10"
+   ],
+   "items": [
+    "M-TD.A03.04",
+    "M-TD.A03.09",
+    "M-TD.A03.10"
+   ]
+  },
+  {
+   "id": "M-TD.TC24",
+   "title": "Case 24: Filter thời gian mặc định Hôm nay",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "Flow 10 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW10"
+   ],
+   "items": [
+    "M-TD.A03.12"
+   ]
+  },
+  {
+   "id": "M-TD.TC25",
+   "title": "Case 25: Filter Tới hạn và các khoảng định sẵn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "Flow 10 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW10"
+   ],
+   "items": [
+    "M-TD.A03.12"
+   ]
+  },
+  {
+   "id": "M-TD.TC26",
+   "title": "Case 26: Filter thời gian Tùy chọn và kết hợp filter",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "Flow 10 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW10"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC27",
+   "title": "Case 27: Phân trang Danh sách lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "Flow 10 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW10"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC28",
+   "title": "Case 28: Tải danh sách hoặc cập nhật lương thất bại/xung đột",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "EX25 / EX26 / EX27 / REQ11 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [
+    "M-TD.EX25",
+    "M-TD.EX26",
+    "M-TD.EX27"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC29",
+   "title": "Case 29: Mở tab Lịch dạy",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TD.A04",
+   "scenario": "Flow 5 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC30",
+   "title": "Case 30: Chuyển và chọn tuần",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A04",
+   "scenario": "Flow 5 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC31",
+   "title": "Case 31: Hiển thị lịch Theo Lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A04",
+   "scenario": "Flow 5 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC32",
+   "title": "Case 32: Hiển thị lịch theo ngày",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A04",
+   "scenario": "Flow 5 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC33",
+   "title": "Case 33: Đổi chế độ không làm thay đổi dữ liệu",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A04",
+   "scenario": "Flow 5 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC34",
+   "title": "Case 34: Giáo viên không có lịch dạy trong tuần",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TD.A04",
+   "scenario": "EX07 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ],
+   "exceptions": [
+    "M-TD.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC35",
+   "title": "Case 35: Tải lịch dạy thất bại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A04",
+   "scenario": "EX08 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ],
+   "exceptions": [
+    "M-TD.EX08"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC36a",
+   "title": "Case 36a: Chip tóm tắt lịch đăng ký",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TD.A04",
+   "scenario": "Flow 5 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC36b",
+   "title": "Case 36b: Màu card theo mốc thời gian",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TD.A04",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC36",
+   "title": "Case 36: Chỉ nhận dữ liệu lịch của request mới nhất",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A04",
+   "scenario": "EX09 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ],
+   "exceptions": [
+    "M-TD.EX09"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC73",
+   "title": "Case 73: Không cho CUD tại tab Lịch dạy",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A04",
+   "scenario": "REQ05 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC37",
+   "title": "Case 37: Hiển thị log đúng giáo viên",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TD.A05",
+   "scenario": "Flow 6 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW06"
+   ],
+   "items": [
+    "M-TD.A05.02",
+    "M-TD.A05.03",
+    "M-TD.A05.04",
+    "M-TD.A05.05",
+    "M-TD.A05.06"
+   ]
+  },
+  {
+   "id": "M-TD.TC38",
+   "title": "Case 38: Tự ghi log khi thao tác thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A05",
+   "scenario": "Flow 6 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW06"
+   ],
+   "items": [
+    "M-TD.A05.03",
+    "M-TD.A05.05",
+    "M-TD.A05.06"
+   ]
+  },
+  {
+   "id": "M-TD.TC39",
+   "title": "Case 39: Log của Hệ thống",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TD.A05",
+   "scenario": "Flow 6 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW06"
+   ],
+   "items": [
+    "M-TD.A05.05"
+   ]
+  },
+  {
+   "id": "M-TD.TC40",
+   "title": "Case 40: Mở rộng mô tả dài và Xem chi tiết",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TD.A05",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TD.A05.06"
+   ]
+  },
+  {
+   "id": "M-TD.TC41",
+   "title": "Case 41: Không cho tạo, sửa, xóa log",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A05",
+   "scenario": "EX10 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ07"
+   ],
+   "exceptions": [
+    "M-TD.EX10"
+   ],
+   "flows": [],
+   "items": [
+    "M-TD.A05.06"
+   ]
+  },
+  {
+   "id": "M-TD.TC42",
+   "title": "Case 42: Lọc theo Đối tượng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A05",
+   "scenario": "Flow 6 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW06"
+   ],
+   "items": [
+    "M-TD.A05.05"
+   ]
+  },
+  {
+   "id": "M-TD.TC43",
+   "title": "Case 43: Lọc theo Thời gian và tìm theo lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A05",
+   "scenario": "Flow 6 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW06"
+   ],
+   "items": [
+    "M-TD.A05.03"
+   ]
+  },
+  {
+   "id": "M-TD.TC44",
+   "title": "Case 44: Tải danh sách log thất bại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A05",
+   "scenario": "EX13 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ07"
+   ],
+   "exceptions": [
+    "M-TD.EX13"
+   ],
+   "flows": [],
+   "items": [
+    "M-TD.A05.03"
+   ]
+  },
+  {
+   "id": "M-TD.TC45",
+   "title": "Case 45: Phân trang danh sách log",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A05",
+   "scenario": "Flow 6 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC46",
+   "title": "Case 46: Hiển thị đúng lịch giáo viên đã đăng ký",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TD.A06",
+   "scenario": "Flow 9 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW09"
+   ],
+   "items": [
+    "M-TD.A06.01"
+   ]
+  },
+  {
+   "id": "M-TD.TC47",
+   "title": "Case 47: Đăng ký buổi mới qua popup",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A06",
+   "scenario": "Flow 9 / REQ10 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ10",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW09"
+   ],
+   "items": [
+    "M-TD.A06.06",
+    "M-TD.A06.08"
+   ]
+  },
+  {
+   "id": "M-TD.TC48",
+   "title": "Case 48: Validation khung giờ trong popup",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A06",
+   "scenario": "EX21 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ10"
+   ],
+   "exceptions": [
+    "M-TD.EX21"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC49",
+   "title": "Case 49: Fulltime",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A06",
+   "scenario": "Flow 9 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW09"
+   ],
+   "items": [
+    "M-TD.A06.01",
+    "M-TD.A06.08"
+   ]
+  },
+  {
+   "id": "M-TD.TC49a",
+   "title": "Case 49a: Chủ động bỏ tick Fulltime",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A06",
+   "scenario": "Flow 9 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW09"
+   ],
+   "items": [
+    "M-TD.A06.01",
+    "M-TD.A06.08"
+   ]
+  },
+  {
+   "id": "M-TD.TC50",
+   "title": "Case 50: Gỡ đăng ký và cập nhật",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A06",
+   "scenario": "Flow 9 / REQ10 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ10",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW09"
+   ],
+   "items": [
+    "M-TD.A06.08"
+   ]
+  },
+  {
+   "id": "M-TD.TC51",
+   "title": "Case 51: Ghi nhận đúng người thao tác thay",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A06",
+   "scenario": "REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TD.A06.08"
+   ]
+  },
+  {
+   "id": "M-TD.TC52",
+   "title": "Case 52: Cập nhật thất bại hoặc xác nhận lặp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A06",
+   "scenario": "EX21 / REQ10 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ10",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [
+    "M-TD.EX21"
+   ],
+   "flows": [],
+   "items": [
+    "M-TD.A06.08"
+   ]
+  },
+  {
+   "id": "M-TD.TC52a",
+   "title": "Case 52a: Xử lý cập nhật đồng thời",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A06",
+   "scenario": "EX22 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ10"
+   ],
+   "exceptions": [
+    "M-TD.EX22"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC53",
+   "title": "Case 53: Xem ghi chú Công khai đang Mới",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TD.A07",
+   "scenario": "Flow 7 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW07"
+   ],
+   "items": [
+    "M-TD.A07.02",
+    "M-TD.A07.03",
+    "M-TD.A07.04",
+    "M-TD.A07.06",
+    "M-TD.A07.09",
+    "M-TD.A07.16",
+    "M-TD.A07.19"
+   ]
+  },
+  {
+   "id": "M-TD.TC54",
+   "title": "Case 54: Bảo vệ ghi chú Riêng tư",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "EX14 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08"
+   ],
+   "exceptions": [
+    "M-TD.EX14"
+   ],
+   "flows": [],
+   "items": [
+    "M-TD.A07.09"
+   ]
+  },
+  {
+   "id": "M-TD.TC55",
+   "title": "Case 55: Ghi chú Đóng chỉ owner được xem và mở lại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "Flow 7 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW07"
+   ],
+   "items": [
+    "M-TD.A07.04",
+    "M-TD.A07.06",
+    "M-TD.A07.09",
+    "M-TD.A07.16"
+   ]
+  },
+  {
+   "id": "M-TD.TC56",
+   "title": "Case 56: Tạo ghi chú bằng ô gõ nhanh",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "Flow 7 / REQ08 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW07"
+   ],
+   "items": [
+    "M-TD.A07.01",
+    "M-TD.A07.02",
+    "M-TD.A07.03",
+    "M-TD.A07.04",
+    "M-TD.A07.05",
+    "M-TD.A07.06",
+    "M-TD.A07.09",
+    "M-TD.A07.16",
+    "M-TD.A07.17"
+   ]
+  },
+  {
+   "id": "M-TD.TC57",
+   "title": "Case 57: Validation nội dung ghi chú và comment",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "EX15 / REQ08 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08",
+    "M-TD.REQ09"
+   ],
+   "exceptions": [
+    "M-TD.EX15"
+   ],
+   "flows": [],
+   "items": [
+    "M-TD.A07.01",
+    "M-TD.A07.03"
+   ]
+  },
+  {
+   "id": "M-TD.TC58",
+   "title": "Case 58: Owner cập nhật ghi chú",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "Flow 7 / REQ08 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW07"
+   ],
+   "items": [
+    "M-TD.A07.02",
+    "M-TD.A07.03",
+    "M-TD.A07.04",
+    "M-TD.A07.05",
+    "M-TD.A07.06",
+    "M-TD.A07.09",
+    "M-TD.A07.16",
+    "M-TD.A07.17",
+    "M-TD.A07.19"
+   ]
+  },
+  {
+   "id": "M-TD.TC59",
+   "title": "Case 59: Owner xóa ghi chú",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "Flow 7 / REQ08 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW07"
+   ],
+   "items": [
+    "M-TD.A07.09"
+   ]
+  },
+  {
+   "id": "M-TD.TC60",
+   "title": "Case 60: Người khác không được quản lý ghi chú",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "EX16 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08"
+   ],
+   "exceptions": [
+    "M-TD.EX16"
+   ],
+   "flows": [],
+   "items": [
+    "M-TD.A07.09"
+   ]
+  },
+  {
+   "id": "M-TD.TC61",
+   "title": "Case 61: Thêm comment vào ghi chú đang Mới",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "Flow 8 / REQ09 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ09",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW08"
+   ],
+   "items": [
+    "M-TD.A07.19"
+   ]
+  },
+  {
+   "id": "M-TD.TC62",
+   "title": "Case 62: Người comment sửa/xóa comment của mình",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "Flow 8 / REQ09 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ09",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW08"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC63",
+   "title": "Case 63: Owner ghi chú không được xóa comment người khác",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "EX17 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ09"
+   ],
+   "exceptions": [
+    "M-TD.EX17"
+   ],
+   "flows": [],
+   "items": [
+    "M-TD.A07.09"
+   ]
+  },
+  {
+   "id": "M-TD.TC64",
+   "title": "Case 64: Ghi chú Đóng chặn mọi thao tác comment",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "EX18 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ09"
+   ],
+   "exceptions": [
+    "M-TD.EX18"
+   ],
+   "flows": [],
+   "items": [
+    "M-TD.A07.09"
+   ]
+  },
+  {
+   "id": "M-TD.TC65",
+   "title": "Case 65: Hiển thị người và thời gian đầy đủ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "REQ08 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08",
+    "M-TD.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TD.A07.09"
+   ]
+  },
+  {
+   "id": "M-TD.TC66",
+   "title": "Case 66: Lọc theo Loại, Độ ưu tiên và Trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "Flow 7 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW07"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC67",
+   "title": "Case 67: Filter thời gian mặc định Hôm nay",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "Flow 7 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW07"
+   ],
+   "items": [
+    "M-TD.A07.19",
+    "M-TD.A07.21"
+   ]
+  },
+  {
+   "id": "M-TD.TC68",
+   "title": "Case 68: Filter Tới hạn và các khoảng thời gian định sẵn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "Flow 7 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW07"
+   ],
+   "items": [
+    "M-TD.A07.19",
+    "M-TD.A07.20",
+    "M-TD.A07.21",
+    "M-TD.A07.22",
+    "M-TD.A07.23",
+    "M-TD.A07.27",
+    "M-TD.A07.28"
+   ]
+  },
+  {
+   "id": "M-TD.TC69",
+   "title": "Case 69: Filter thời gian Tùy chọn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "Flow 7 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW07"
+   ],
+   "items": [
+    "M-TD.A07.31"
+   ]
+  },
+  {
+   "id": "M-TD.TC70",
+   "title": "Case 70: Tải hoặc thay đổi bộ lọc thất bại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "EX19 / EX20 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08"
+   ],
+   "exceptions": [
+    "M-TD.EX19",
+    "M-TD.EX20"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC71",
+   "title": "Case 71: Phân trang danh sách ghi chú",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A07",
+   "scenario": "Flow 7 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TD.FLOW07"
+   ],
+   "items": [
+    "M-TD.A07.15"
+   ]
+  },
+  {
+   "id": "M-TD.TTC01",
+   "title": "Toast Case 1: Thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TD.A08.01"
+   ]
+  },
+  {
+   "id": "M-TD.TTC02",
+   "title": "Toast Case 2: Cảnh báo",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TD.A08.01",
+    "M-TD.A08.03"
+   ]
+  },
+  {
+   "id": "M-TD.TTC03",
+   "title": "Toast Case 3: Lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TTC04",
+   "title": "Toast Case 4: Thông tin, đóng và chống lặp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TD.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TD.A08.01"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GV-020210",
+   "text": "popup “Chi tiết giáo viên / Danh sách lớp / Popup chỉnh sửa lương” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GV-020210",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GV-020309",
+   "text": "trang-thai “Chi tiết giáo viên / Lịch dạy / Xem theo lớp” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-GV-020309",
+   "text": "loại trang-thai, màn cha ADM-GV-020300 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GV-020309",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GV-020520",
+   "text": "popup “Chi tiết giáo viên / Quản lý đăng ký lịch / Popup đăng ký khung giờ” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GV-020520",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-TD.TTC01",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-TD.TTC02",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-TD.TTC03",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-TD.TTC04",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-TD.EX02",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-TD.EX04",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-TD.EX05",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-TD.EX11",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-TD.EX12",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/teacher_management/teacher_detail_requirements.md",
+   "prefix": "M-TD",
+   "title": "[Admin] Chi tiết giáo viên"
+  }
+ ]
+}

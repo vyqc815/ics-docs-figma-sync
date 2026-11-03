@@ -1,0 +1,897 @@
+{
+ "cluster": "chua-co-req-gv-ks-01",
+ "title": "GV-KS-01xx (chưa có requirement)",
+ "figmaPrefix": "GV-KS-01",
+ "requirements": [],
+ "screens": {
+  "GV-KS-010010": {
+   "id": "GV-KS-010010",
+   "name": "lam-khao-sat",
+   "title": "Khảo sát / Làm khảo sát",
+   "kind": "man-chinh",
+   "parent": "GV-KS-010000",
+   "shownOn": "GV-KS-010010",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4686:43794",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/khao-sat/lam-khao-sat",
+   "link": "/khao-sat/lam-khao-sat",
+   "dark": "GV-KS-010010-DK",
+   "openedFrom": [
+    "GV-KS-010000",
+    "GV-KS-010001"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "GV-KS-01.F01",
+    "GV-KS-01.F02",
+    "GV-KS-01.F03"
+   ]
+  },
+  "GV-KS-010011": {
+   "id": "GV-KS-010011",
+   "name": "popup-xac-nhan-gui",
+   "title": "Khảo sát / Popup xác nhận gửi",
+   "kind": "popup",
+   "parent": "GV-KS-010010",
+   "shownOn": "GV-KS-010010",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4686:44210",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/khao-sat/lam-khao-sat?popup=GV-KS-010011",
+   "dark": "GV-KS-010011-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "GV-KS-010012": {
+   "id": "GV-KS-010012",
+   "name": "popup-gui-thanh-cong",
+   "title": "Khảo sát / Popup gửi thành công",
+   "kind": "popup",
+   "parent": "GV-KS-010010",
+   "shownOn": "GV-KS-010010",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4686:44215",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/khao-sat/lam-khao-sat?popup=GV-KS-010012",
+   "dark": "GV-KS-010012-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "GV-KS-010020": {
+   "id": "GV-KS-010020",
+   "name": "da-hoan-thanh",
+   "title": "Khảo sát / Đã hoàn thành",
+   "kind": "man-chinh",
+   "parent": "GV-KS-010010",
+   "shownOn": "GV-KS-010020",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4686:43988",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/khao-sat/da-hoan-thanh",
+   "link": "/khao-sat/da-hoan-thanh",
+   "dark": "GV-KS-010020-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "GV-KS-01.F01",
+    "GV-KS-01.F02",
+    "GV-KS-01.F03"
+   ]
+  },
+  "GV-KS-010021": {
+   "id": "GV-KS-010021",
+   "name": "popup-cau-tra-loi-cua-ban",
+   "title": "Khảo sát / Popup câu trả lời của bạn",
+   "kind": "popup",
+   "parent": "GV-KS-010020",
+   "shownOn": "GV-KS-010020",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4686:44140",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/khao-sat/da-hoan-thanh?popup=GV-KS-010021",
+   "dark": "GV-KS-010021-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [
+  {
+   "id": "GV-KS-01.F01",
+   "name": "header",
+   "title": "Header",
+   "screens": [
+    "gv-ks-010010",
+    "gv-ks-010020"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "GV-KS-01.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "4686:43844",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Giáo Viên",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F01.02",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Component 2",
+        "figmaId": "4686:43846",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Sakumi"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F01.03",
+     "name": "header-vai-tro",
+     "label": "Header/Vai trò",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Header/Vai trò",
+        "figmaId": "4899:187338",
+        "layer": "Header/Vai trò",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "Header/Vai trò",
+        "component": null,
+        "variant": {
+         "Vai trò": "Giáo viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "GV-KS-01.F02",
+   "name": "sidebar",
+   "title": "Sidebar",
+   "screens": [
+    "gv-ks-010010",
+    "gv-ks-010020"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "GV-KS-01.F02.01",
+     "name": "card-menu",
+     "label": "Card Menu",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Card Menu",
+        "figmaId": "6244:56406",
+        "layer": "Card Menu",
+        "confidence": "cao",
+        "region": "Sidebar",
+        "owner": "Card Menu",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "1150:22353",
+         "Label": "Trang chủ",
+         "Type": "Chính",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F02.02",
+     "name": "header-gop-y",
+     "label": "Header/Góp ý",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Header/Góp ý",
+        "figmaId": "4885:104500",
+        "layer": "Header/Góp ý",
+        "confidence": "cao",
+        "region": "Sidebar",
+        "owner": "Header/Góp ý",
+        "component": "Header/Góp ý",
+        "variant": {
+         "Kiểu": "Đầy đủ",
+         "State": "Enable"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F02.03",
+     "name": "header-khao-sat",
+     "label": "Header/Khảo sát",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Header/Khảo sát",
+        "figmaId": "4885:104504",
+        "layer": "Header/Khảo sát",
+        "confidence": "cao",
+        "region": "Sidebar",
+        "owner": "Header/Khảo sát",
+        "component": "Header/Khảo sát",
+        "variant": {
+         "Số thông báo": "2",
+         "Hiện badge": true,
+         "Kiểu": "Đầy đủ",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "GV-KS-01.F03",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "gv-ks-010010",
+    "gv-ks-010020"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "GV-KS-01.F03.01",
+     "name": "luu-nhap",
+     "label": "Lưu nháp",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Lưu nháp",
+        "figmaId": "4686:43931",
+        "layer": "Lưu nháp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lưu nháp",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Lưu nháp",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.02",
+     "name": "gui-khao-sat",
+     "label": "Gửi khảo sát",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Gửi khảo sát",
+        "figmaId": "4686:43932",
+        "layer": "Gửi khảo sát",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Gửi khảo sát",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Gửi khảo sát",
+         "Type": "Primary",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.03",
+     "name": "cau-30",
+     "label": "Câu 30",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Câu 30",
+        "figmaId": "4686:43946",
+        "layer": "Câu 30",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Câu 30",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Câu 30",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.04",
+     "name": "trac-nghiem",
+     "label": "Trắc nghiệm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Trắc nghiệm",
+        "figmaId": "4686:43949",
+        "layer": "Trắc nghiệm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trắc nghiệm",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Trắc nghiệm",
+         "Variant": "Info",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.05",
+     "name": "bat-buoc",
+     "label": "Bắt buộc",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Bắt buộc",
+        "figmaId": "4686:43950",
+        "layer": "Bắt buộc",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Bắt buộc",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Bắt buộc",
+         "Variant": "Danger",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.06",
+     "name": "radio-button",
+     "label": "Radio Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Radio Button",
+        "figmaId": "4686:43953",
+        "layer": "Radio Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Radio Button",
+        "component": "Radio Button",
+        "variant": {
+         "Checked": "No",
+         "Size": "20",
+         "Disabled": "No"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.07",
+     "name": "cau-31",
+     "label": "Câu 31",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Câu 31",
+        "figmaId": "4686:43963",
+        "layer": "Câu 31",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Câu 31",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Câu 31",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.08",
+     "name": "cau-32",
+     "label": "Câu 32",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Câu 32",
+        "figmaId": "4686:43981",
+        "layer": "Câu 32",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Câu 32",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Câu 32",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.09",
+     "name": "doan-ngan",
+     "label": "Đoạn ngắn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Đoạn ngắn",
+        "figmaId": "4686:43984",
+        "layer": "Đoạn ngắn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Đoạn ngắn",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Đoạn ngắn",
+         "Variant": "Warning",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.10",
+     "name": "khong-bat-buoc",
+     "label": "Không bắt buộc",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Không bắt buộc",
+        "figmaId": "4686:43985",
+        "layer": "Không bắt buộc",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Không bắt buộc",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Không bắt buộc",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.11",
+     "name": "cau-tra-loi",
+     "label": "Câu trả lời",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010010": [
+       {
+        "term": "Câu trả lời",
+        "figmaId": "4686:43987",
+        "layer": "Câu trả lời",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Câu trả lời",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Nhập câu trả lời",
+         "State": "Default",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.12",
+     "name": "tab-can-lam",
+     "label": "Tab · Cần làm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010020": [
+       {
+        "term": "Tab · Cần làm",
+        "figmaId": "4686:44123",
+        "layer": "Tab · Cần làm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Cần làm",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": true,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.13",
+     "name": "tab-da-hoan-thanh",
+     "label": "Tab · Đã hoàn thành",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010020": [
+       {
+        "term": "Tab · Đã hoàn thành",
+        "figmaId": "4686:44124",
+        "layer": "Tab · Đã hoàn thành",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Đã hoàn thành",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": true,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.14",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010020": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "4686:44133",
+        "layer": "Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trạng thái",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Đã hoàn thành",
+         "Variant": "Success",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.15",
+     "name": "liner-icon",
+     "label": "Liner Icon",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010020": [
+       {
+        "term": "Liner Icon",
+        "figmaId": "4686:44129",
+        "layer": "Liner Icon",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Liner Icon",
+        "component": "Liner Icon",
+        "variant": {
+         "Property 1": "Thời gian"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-KS-01.F03.16",
+     "name": "xem-lai",
+     "label": "Xem lại",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ks-010020": [
+       {
+        "term": "Xem lại",
+        "figmaId": "4686:44139",
+        "layer": "Xem lại",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Xem lại",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xem lại",
+         "Type": "Primary",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-KS-010010",
+   "text": "man-chinh “Khảo sát / Làm khảo sát” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-KS-010011",
+   "text": "popup “Khảo sát / Popup xác nhận gửi” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-KS-010011",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-KS-010012",
+   "text": "popup “Khảo sát / Popup gửi thành công” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-KS-010012",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-KS-010020",
+   "text": "man-chinh “Khảo sát / Đã hoàn thành” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-KS-010021",
+   "text": "popup “Khảo sát / Popup câu trả lời của bạn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-KS-010021",
+   "text": "không có prototype link nào đi vào frame"
+  }
+ ]
+}

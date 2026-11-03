@@ -1,0 +1,3464 @@
+{
+ "cluster": "teacher-management-requirements",
+ "title": "[Admin] Quản lý danh sách giáo viên",
+ "figmaPrefix": "M-TM",
+ "requirements": [
+  {
+   "id": "M-TM.REQ01",
+   "name": "Hiển thị danh sách giáo viên",
+   "text": "`Admin` xem danh sách theo phạm vi dữ liệu được cấp. Mỗi dòng hiển thị Trạng thái, Giáo viên (avatar, tag, tên, email, badge lịch hẹn chưa hoàn tất), Mã giáo viên, Số lớp, Đang dạy, Lên kỳ, Đi học, BTVN, Đánh giá, Lịch đăng ký, Lịch dạy (icon + số lớp Đang học), Ghi chú và điều hướng chi tiết. Cột đầu dòng hiển thị đúng một trong bốn trạng thái `Training`, `Thử việc`, `Chính thức`, `Nghỉ việc`; không có trạng thái Testing.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.REQ02",
+   "name": "Tìm kiếm, lọc và phân trang",
+   "text": "Từ khóa chỉ tìm theo tên giáo viên; tự tìm kiếm sau 2 giây kể từ lần nhập cuối hoặc tìm ngay khi nhấn `Enter`. `Enter` phải hủy lần debounce đang chờ để không gửi trùng request. Bộ lọc `Trạng Thái` và `Tag` đều hiển thị dạng checkbox, có `Tất cả` và cho tick một hoặc nhiều giá trị. Trong cùng bộ lọc áp dụng OR; giữa tên, Trạng thái và Tag áp dụng AND. Thay đổi điều kiện đưa danh sách về trang đầu; mỗi trang tối đa 10 giáo viên và giữ nguyên điều kiện khi chuyển trang.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.REQ03",
+   "name": "Tổng hợp lớp và chỉ số",
+   "text": "`Số lớp` đếm lớp duy nhất mà giáo viên được thêm; `Đang dạy` và `Lịch dạy` chỉ dùng lớp `Đang học`. `Đi học`, `BTVN`, `Lên kỳ` được tổng hợp từ toàn bộ lớp của giáo viên có trạng thái `Đang học` hoặc `Hoàn thành`, sau đó tính theo công thức tại mục 2.4. Lớp ở trạng thái khác không tham gia tính ba chỉ số. Không tự tính `Đánh giá` từ ba tỷ lệ khi chưa có công thức được duyệt.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.REQ04",
+   "name": "Lịch, lớp và ghi chú",
+   "text": "Lịch đăng ký hiển thị `N ngày (M ca)` (1 ô buổi = 1 ca, tối đa 21) và chi tiết buổi kèm khung giờ theo thứ; icon Lịch dạy kèm badge số lớp Đang học mở popover `Chi tiết Lớp` gộp mọi lớp Đang học với `[đã học/tổng buổi]` và lịch theo thứ; ghi chú chỉ đọc tại danh sách, được xem đầy đủ khi hover và sao chép nguyên văn khi click.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.REQ05",
+   "name": "Điều hướng và tính nhất quán",
+   "text": "Nút cuối dòng mở đúng chi tiết giáo viên. Dữ liệu hover, kết quả request và nội dung clipboard phải gắn với đúng định danh giáo viên/lớp, không tái sử dụng dữ liệu cũ cho đối tượng khác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.REQ06",
+   "name": "Thêm mới giáo viên",
+   "text": "Nút dấu `+` mở popup `Thêm Giáo Viên`. Họ và tên, Vai trò, Gmail, Mật khẩu, Trung tâm và Code là bắt buộc; Giới tính, Ngày sinh, Số điện thoại không bắt buộc. Popup không có Trạng thái và Ghi chú; giáo viên mới nhận trạng thái `Training`, chỉnh sửa tại Chi tiết giáo viên. Nếu có nhập, Số điện thoại phải là chuỗi đúng 10 chữ số và bắt đầu bằng `0`. Vai trò cố định là `Teacher`. Code chỉ đọc, do backend tự sinh duy nhất theo số thứ tự tăng dần và không nhận giá trị ghi đè từ client. Class Handler/Support chỉ được gọi popup dùng chung từ ngữ cảnh Chi tiết lớp theo requirement Tab Giáo viên; không mặc nhiên có quyền màn quản lý giáo viên toàn cục. Tạo thành công tải lại ngữ cảnh gọi và hiển thị notification; tạo thất bại không sinh bản ghi một phần hoặc làm lộ mật khẩu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.REQ07",
+   "name": "Notification khi thêm mới",
+   "text": "Thao tác tạo giáo viên phải hiển thị notification kết quả. Thành công chỉ hiển thị notification sau khi backend xác nhận đã tạo; validation hoặc xử lý thất bại hiển thị notification thất bại. Mỗi request chỉ hiển thị một notification kết quả và không đưa mật khẩu, stack trace hoặc thông tin kỹ thuật nhạy cảm vào nội dung.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.REQ08",
+   "name": "Trung tâm",
+   "text": "Danh sách có bộ lọc `Trung tâm` nằm cùng hàng với các bộ lọc khác, cho chọn một hoặc nhiều trung tâm; khi chọn thì danh sách, tổng số và phân trang chỉ tính dữ liệu của các trung tâm đã chọn, kết hợp `AND` với các bộ lọc khác. Không chọn thì hiển thị dữ liệu của mọi trung tâm. Role Admin không dùng ô chọn trung tâm trên header. Khi tạo mới bắt buộc chọn `Trung tâm`; bản ghi được lưu thuộc trung tâm đã chọn. Backend kiểm tra lại trung tâm khi lưu, không chỉ dựa vào UI. Bộ lọc liệt kê tên trung tâm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.REQ09",
+   "name": "Lịch hẹn và tag từ danh sách",
+   "text": "Click tên giáo viên mở menu `Thêm lịch hẹn`, `Thêm tag`. Thêm lịch hẹn dùng popup và quy tắc của requirement Lịch hẹn với Đối tượng là giáo viên đang chọn, Trung Tâm điền sẵn. Thêm tag chọn nhiều tag theo nhóm của Define Tag và lưu toàn bộ tập tag mới theo định danh giáo viên. Badge lịch hẹn đếm lịch hẹn chưa hoàn tất; hover mở popup `Danh sách lịch hẹn` chỉ đọc. Chỉ `Admin` có các thao tác này; backend kiểm tra quyền và phạm vi.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-GV-010000": {
+   "id": "ADM-GV-010000",
+   "name": "danh-sach-giao-vien",
+   "title": "Danh sách giáo viên",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "ADM-GV-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "1303:5057",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/danh-sach-giao-vien",
+   "link": "/danh-sach-giao-vien",
+   "dark": "ADM-GV-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-TM.A01",
+    "M-TM.A02",
+    "M-TM.A03",
+    "M-TM.A04",
+    "M-TM.A06",
+    "M-TM.A08",
+    "M-TM.F01",
+    "M-TM.F02"
+   ]
+  },
+  "ADM-GV-010001": {
+   "id": "ADM-GV-010001",
+   "name": "hover-menu-thao-tac",
+   "title": "Danh sách giáo viên / Hover menu thao tác",
+   "kind": "dropdown",
+   "parent": "ADM-GV-010000",
+   "shownOn": "ADM-GV-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1657:12040",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/danh-sach-giao-vien/hover-menu-thao-tac",
+   "link": "/danh-sach-giao-vien?popup=ADM-GV-010001",
+   "dark": "ADM-GV-010001-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-TM.A05"
+   ]
+  },
+  "ADM-GV-010010": {
+   "id": "ADM-GV-010010",
+   "name": "popup-tim-kiem-nang-cao",
+   "title": "Danh sách giáo viên / Popup tìm kiếm nâng cao",
+   "kind": "popup",
+   "parent": "ADM-GV-010000",
+   "shownOn": "ADM-GV-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1505:20396",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/danh-sach-giao-vien?popup=ADM-GV-010010",
+   "dark": "ADM-GV-010010-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-GV-010020": {
+   "id": "ADM-GV-010020",
+   "name": "popup-them-giao-vien",
+   "title": "Danh sách giáo viên / Popup thêm giáo viên",
+   "kind": "popup",
+   "parent": "ADM-GV-010000",
+   "shownOn": "ADM-GV-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1479:12897",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/danh-sach-giao-vien?popup=ADM-GV-010020",
+   "dark": "ADM-GV-010020-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-TM.A07"
+   ]
+  },
+  "ADM-GV-010030": {
+   "id": "ADM-GV-010030",
+   "name": "popup-them-tag",
+   "title": "Danh sách giáo viên / Popup thêm tag",
+   "kind": "popup",
+   "parent": "ADM-GV-010000",
+   "shownOn": "ADM-GV-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1739:30436",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/danh-sach-giao-vien?popup=ADM-GV-010030",
+   "dark": "ADM-GV-010030-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-TM.A05"
+   ]
+  },
+  "ADM-GV-010040": {
+   "id": "ADM-GV-010040",
+   "name": "popup-them-lich-hen",
+   "title": "Danh sách giáo viên / Popup thêm lịch hẹn",
+   "kind": "popup",
+   "parent": "ADM-GV-010000",
+   "shownOn": "ADM-GV-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1739:31622",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/danh-sach-giao-vien?popup=ADM-GV-010040",
+   "dark": "ADM-GV-010040-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-TM.A05"
+   ]
+  },
+  "ADM-GV-010042": {
+   "id": "ADM-GV-010042",
+   "name": "dang-mo",
+   "title": "Danh sách giáo viên / Popup thêm lịch hẹn / Đang mở",
+   "kind": "dropdown",
+   "parent": "ADM-GV-010040",
+   "shownOn": "ADM-GV-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1873:39233",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/danh-sach-giao-vien?popup=ADM-GV-010042",
+   "dark": "ADM-GV-010042-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-GV-010050": {
+   "id": "ADM-GV-010050",
+   "name": "popup-danh-sach-lich-hen",
+   "title": "Danh sách giáo viên / Popup danh sách lịch hẹn",
+   "kind": "popup",
+   "parent": "ADM-GV-010000",
+   "shownOn": "ADM-GV-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1877:10069",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/danh-sach-giao-vien?popup=ADM-GV-010050",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "M-TM.A05"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-TM.A01",
+   "name": "trang-1-danh-sach-giao-vien",
+   "title": "Trang 1: Danh sách giáo viên",
+   "screens": [
+    "adm-gv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-GV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TM.A01.01",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Cột đầu dòng: icon trạng thái giáo viên theo bảng Trạng thái giáo viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "3210:28297",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Trạng Thái",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-TM.TC02",
+      "M-TM.TC04",
+      "M-TM.TC05",
+      "M-TM.TC06",
+      "M-TM.TC07",
+      "M-TM.TC34",
+      "M-TM.TC29",
+      "M-TM.TC30",
+      "M-TM.TC35",
+      "M-TM.TC08",
+      "M-TM.TC12",
+      "M-TM.TC13",
+      "M-TM.TC14",
+      "M-TM.TC15"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.02",
+     "name": "giao-vien",
+     "label": "Giáo viên",
+     "spec": "Avatar, các tag (badge màu phía trên tên), tên, email. Badge đỏ cạnh tên = số lịch hẹn **chưa hoàn tất** của giáo viên; không có thì ẩn. Click tên mở menu thao tác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Giáo viên",
+        "figmaId": "I4915:236867;4899:195680",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "1161:5614",
+         "Label": "Giáo viên",
+         "Type": "Con",
+         "State": "Select",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-TM.TC01",
+      "M-TM.TC45",
+      "M-TM.TC02",
+      "M-TM.TC04",
+      "M-TM.TC05",
+      "M-TM.TC07",
+      "M-TM.TC31",
+      "M-TM.TC33",
+      "M-TM.TC25",
+      "M-TM.TC27",
+      "M-TM.TC28",
+      "M-TM.TC29",
+      "M-TM.TC30",
+      "M-TM.TC35",
+      "M-TM.TC03",
+      "M-TM.TC11",
+      "M-TM.TC13",
+      "M-TM.TC14",
+      "M-TM.TC15",
+      "M-TM.TC16"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.03",
+     "name": "ma-giao-vien",
+     "label": "Mã giáo viên",
+     "spec": "Mã do hệ thống sinh khi tạo giáo viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Mã giáo viên",
+        "figmaId": "3210:28306",
+        "layer": "Mã giáo viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.04",
+     "name": "so-lop",
+     "label": "Số lớp",
+     "spec": "Tổng số lớp duy nhất mà giáo viên đã được thêm vào, không phụ thuộc trạng thái lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Số lớp",
+        "figmaId": "3210:28308",
+        "layer": "Số lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-TM.TC11",
+      "M-TM.TC12"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.05",
+     "name": "dang-day",
+     "label": "Đang dạy",
+     "spec": "Tổng số lớp duy nhất mà giáo viên đã được thêm vào và lớp đang ở trạng thái `Đang học`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Đang dạy",
+        "figmaId": "3210:28310",
+        "layer": "Đang dạy",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-TM.TC11",
+      "M-TM.TC12"
+     ],
+     "missingTerms": [
+      "Đang học"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.06",
+     "name": "len-ky",
+     "label": "Lên kỳ",
+     "spec": "Vòng tiến độ hiển thị tỷ lệ kèm ký hiệu `%` (`0%`–`100%`), tính theo REQ03.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Lên kỳ",
+        "figmaId": "3210:28312",
+        "layer": "Lên kỳ",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TM.REQ03",
+       "raw": "REQ03"
+      }
+     ],
+     "testcases": [
+      "M-TM.TC15"
+     ],
+     "missingTerms": [
+      "%"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.07",
+     "name": "di-hoc",
+     "label": "Đi học",
+     "spec": "Vòng tiến độ hiển thị tỷ lệ kèm ký hiệu `%`, tính theo REQ03.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Đi học",
+        "figmaId": "3210:28314",
+        "layer": "Đi học",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TM.REQ03",
+       "raw": "REQ03"
+      }
+     ],
+     "testcases": [
+      "M-TM.TC13"
+     ],
+     "missingTerms": [
+      "%"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.08",
+     "name": "btvn",
+     "label": "BTVN",
+     "spec": "Vòng tiến độ hiển thị tỷ lệ kèm ký hiệu `%`, tính theo REQ03.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "BTVN",
+        "figmaId": "3210:28316",
+        "layer": "BTVN",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TM.REQ03",
+       "raw": "REQ03"
+      }
+     ],
+     "testcases": [
+      "M-TM.TC14"
+     ],
+     "missingTerms": [
+      "%"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.09",
+     "name": "danh-gia",
+     "label": "Đánh giá",
+     "spec": "Badge hạng (vd `A`–`F`) theo kết quả đánh giá giáo viên; chưa có dữ liệu hiển thị `Chưa có`. Hiện chưa có công thức tính hoặc quy tắc quy đổi hạng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Đánh giá",
+        "figmaId": "3210:28318",
+        "layer": "Đánh giá",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "A"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.10",
+     "name": "lich-dang-ky",
+     "label": "Lịch đăng ký",
+     "spec": "`N ngày (M ca)` theo lịch đăng ký hiện hành; hover để xem chi tiết theo thứ; chưa đăng ký hiển thị `Chưa đăng ký lịch`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Lịch đăng ký",
+        "figmaId": "3210:28320",
+        "layer": "Lịch Đăng ký",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-TM.TC28",
+      "M-TM.TC30"
+     ],
+     "missingTerms": [
+      "N ngày (M ca)"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.11",
+     "name": "lich-day",
+     "label": "Lịch dạy",
+     "spec": "Icon lịch kèm badge đỏ = số lớp `Đang học` của giáo viên; bằng 0 thì icon mờ. Hover icon mở popover `Chi tiết Lớp` liệt kê mọi lớp đang dạy.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Lịch dạy",
+        "figmaId": "3210:28322",
+        "layer": "Lịch dạy",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-TM.TC28",
+      "M-TM.TC29",
+      "M-TM.TC11",
+      "M-TM.TC12"
+     ],
+     "missingTerms": [
+      "Đang học"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.12",
+     "name": "ghi-chu",
+     "label": "Ghi chú",
+     "spec": "Icon ghi chú; hover để xem đầy đủ nội dung; click để sao chép; không có ghi chú thì icon mờ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "I4915:236867;4899:195676",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "1161:5598",
+         "Label": "Ghi chú",
+         "Type": "Con",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A01.13",
+     "name": "chi-tiet",
+     "label": "Chi tiết",
+     "spec": "Điều hướng đến đúng chi tiết giáo viên của dòng đang chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Chi tiết",
+        "figmaId": "3210:28400",
+        "layer": "Ghi chú chi tiết",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-TM.TC03"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-TM.A02",
+   "name": "chi-tiet-lich-dang-ky-khi-hover",
+   "title": "Chi tiết lịch đăng ký khi hover",
+   "screens": [
+    "adm-gv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-GV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TM.A02.01",
+     "name": "tong-quan",
+     "label": "Tổng quan",
+     "spec": "Hiển thị theo định dạng `[số ngày] ngày ([số ca] ca)`, ví dụ `5 ngày (12 ca)`; giá trị `7 ngày (40 ca)` trên Figma là dữ liệu mẫu cũ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tổng quan",
+      "[số ngày] ngày ([số ca] ca)"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TM.A02.02",
+     "name": "so-ngay",
+     "label": "Số ngày",
+     "spec": "Số thứ trong tuần có ít nhất một buổi đăng ký.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC18"
+     ],
+     "missingTerms": [
+      "Số ngày"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TM.A02.03",
+     "name": "so-ca",
+     "label": "Số ca",
+     "spec": "Số ô buổi đã đăng ký trong lưới 3 buổi × 7 thứ (1 ô buổi = 1 ca, tối đa 21).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC18"
+     ],
+     "missingTerms": [
+      "Số ca"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TM.A02.04",
+     "name": "popover",
+     "label": "Popover",
+     "spec": "Tiêu đề `Chi tiết lịch đăng ký`; mỗi thứ một dòng `T2` … `CN` liệt kê các buổi đã đăng ký kèm khung giờ, ví dụ `T2: Sáng 07:30 - 09:00 · Tối 18:00 - 23:00`; thứ không đăng ký không hiển thị dòng. Danh sách giờ trên Figma là dữ liệu mẫu cũ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Chi tiết lịch đăng ký",
+        "figmaId": "3210:28472",
+        "layer": "Chi tiết lịch đăng ký",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-TM.TC19"
+     ],
+     "missingTerms": [
+      "Popover"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A02.05",
+     "name": "thu-tu",
+     "label": "Thứ tự",
+     "spec": "Trong cùng một thứ, các buổi hiển thị theo thứ tự sáng, chiều, tối.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC18"
+     ],
+     "missingTerms": [
+      "Thứ tự"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TM.A02.06",
+     "name": "chua-dang-ky",
+     "label": "Chưa đăng ký",
+     "spec": "Hiển thị `Chưa đăng ký lịch` và không mở popover rỗng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Chưa đăng ký",
+        "figmaId": "3210:28368",
+        "layer": "Chưa đăng ký lịch",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Chưa đăng ký lịch",
+        "figmaId": "3210:28368",
+        "layer": "Chưa đăng ký lịch",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-TM.TC19"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-TM.A03",
+   "name": "chi-tiet-lop-dang-day-khi-hover",
+   "title": "Chi tiết lớp đang dạy khi hover",
+   "screens": [
+    "adm-gv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-GV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TM.A03.01",
+     "name": "badge-so-lop",
+     "label": "Badge số lớp",
+     "spec": "Bằng giá trị `Đang dạy`; bằng 0 thì icon mờ và không mở popover.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Đang dạy",
+        "figmaId": "3210:28310",
+        "layer": "Đang dạy",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Badge số lớp"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A03.02",
+     "name": "khoi-lop-trong-popover",
+     "label": "Khối lớp trong popover",
+     "spec": "Mỗi lớp một khối: mã lớp kèm `[số buổi đã học/tổng số buổi]`, ví dụ `DN4CT3 - III [19/24]`; bên dưới là lịch học cố định theo thứ `T2: 19:30 - 21:00`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Khối lớp trong popover",
+      "[số buổi đã học/tổng số buổi]"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TM.A03.03",
+     "name": "so-buoi",
+     "label": "Số buổi",
+     "spec": "`Đã học` = số buổi của lớp đã diễn ra tính tới hiện tại; `tổng` = tổng số buổi của lớp; dùng cùng nguồn với tiến độ `6/20 Buổi` ở tab Danh sách lớp của Chi tiết giáo viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Số buổi",
+        "figmaId": "3210:28333",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đã học"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A03.04",
+     "name": "lich-co-dinh",
+     "label": "Lịch cố định",
+     "spec": "Các thứ hiển thị từ `T2` đến `CN`; trong cùng một thứ, các ca hiển thị theo giờ bắt đầu tăng dần; khoảng giờ dạng `HH:mm - HH:mm`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "T2",
+        "figmaId": "3210:28475",
+        "layer": "T2:",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lịch cố định"
+     ],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-TM.A04",
+   "name": "ghi-chu-giao-vien",
+   "title": "Ghi chú giáo viên",
+   "screens": [
+    "adm-gv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-GV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "M-TM.A05",
+   "name": "menu-thao-tac-tren-dong-them-lich-hen-th",
+   "title": "Menu thao tác trên dòng: Thêm lịch hẹn, Thêm tag và Danh sách lịch hẹn",
+   "screens": [
+    "adm-gv-010001",
+    "adm-gv-010030",
+    "adm-gv-010040",
+    "adm-gv-010050"
+   ],
+   "screensGuessed": [
+    "ADM-GV-010001",
+    "ADM-GV-010030",
+    "ADM-GV-010040",
+    "ADM-GV-010050"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TM.A05.01",
+     "name": "menu-thao-tac",
+     "label": "Menu thao tác",
+     "spec": "2 mục `Thêm lịch hẹn`, `Thêm tag`, mỗi mục có icon `+`; mở cạnh tên của đúng dòng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010001": [
+       {
+        "term": "Menu thao tác",
+        "figmaId": "1657:12040",
+        "layer": "ADM-GV-010001 — Danh sách giáo viên / Hover menu thao tác",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Thêm lịch hẹn",
+        "figmaId": "I3210:31964;2015:31836;3210:31958",
+        "layer": "Chỉnh sửa",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Chỉnh sửa",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Meta Text": "12",
+         "Meta": false,
+         "Leading Icon": "2808:45960",
+         "Description Text": "Mô tả phụ",
+         "Label": "Thêm lịch hẹn",
+         "Description": false,
+         "Submenu": false,
+         "Leading": true,
+         "Type": "Default",
+         "State": "Default",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A05.02",
+     "name": "popup-them-lich-hen",
+     "label": "Popup Thêm lịch hẹn",
+     "spec": "`Trung Tâm` (điền sẵn), `Nội dung`, `Thời gian`, `Độ ưu tiên`, `Người phụ trách` (+, chip có `×`), `Theo dõi` (+), `Ghi chú`, `Huỷ`, `Xác nhận`; nội dung và quy tắc theo requirement Lịch hẹn. Tạo thành công thì badge lịch hẹn của dòng tăng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010001": [
+       {
+        "term": "Trung Tâm",
+        "figmaId": "4713:129455",
+        "layer": "Dropdown · Trung tâm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown · Trung tâm",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trung tâm",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Popup Thêm lịch hẹn"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A05.03",
+     "name": "popup-them-tag",
+     "label": "Popup Thêm tag",
+     "spec": "Ô `Tìm kiếm...` lọc tag theo tên; các nhóm tag thu gọn / mở rộng (vd `Trạng thái GV`, `Khoá giao tiếp`, `Luyện thi`); chip tag đang gán tô màu theo tag, chưa gán màu xám; `Huỷ` đóng không lưu; `Xác nhận` lưu tập tag đang tick.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-gv-010001": [
+       {
+        "term": "Tìm kiếm...",
+        "figmaId": "I1739:33369;1739:32346",
+        "layer": "Tìm Kiếm Nâng Cao",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "Search Advanced",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Popup Thêm tag"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TM.A05.04",
+     "name": "popup-danh-sach-lich-hen",
+     "label": "Popup Danh sách lịch hẹn",
+     "spec": "Bảng chỉ đọc: `Thời gian` (nhãn `Hôm qua` đỏ, `Hôm nay` xanh lá, `Ngày mai` xanh dương, ngày khác hiển thị `dd.MM.yyyy`), `Nội dung`, `Ghi chú`, `Người phụ trách`, `Người theo dõi`, `Đối tượng` (avatar chữ cái), `Trạng thái` (icon trạng thái lịch hẹn). Sắp xếp theo thời gian tăng dần; số dòng bằng số trên badge.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC50"
+     ],
+     "missingTerms": [
+      "Popup Danh sách lịch hẹn",
+      "Thời gian"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-TM.A06",
+   "name": "dieu-huong-den-chi-tiet-giao-vien",
+   "title": "Điều hướng đến chi tiết giáo viên",
+   "screens": [
+    "adm-gv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-GV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "M-TM.A07",
+   "name": "them-moi-giao-vien",
+   "title": "Thêm mới giáo viên",
+   "screens": [
+    "adm-gv-010020"
+   ],
+   "screensGuessed": [
+    "ADM-GV-010020"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TM.A07.01",
+     "name": "ho-va-ten",
+     "label": "Họ và tên",
+     "spec": "✅ | Cho phép nhập họ tên giáo viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC36"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TM.A07.02",
+     "name": "gioi-tinh",
+     "label": "Giới tính",
+     "spec": "❌ | Có thể để trống; nếu chọn thì chọn một giá trị từ danh sách giới tính được cấu hình.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC36",
+      "M-TM.TC37",
+      "M-TM.TC38",
+      "M-TM.TC39"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TM.A07.03",
+     "name": "ngay-sinh",
+     "label": "Ngày sinh",
+     "spec": "❌ | Có thể để trống; nếu chọn thì phải là ngày sinh hợp lệ từ date picker.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC36",
+      "M-TM.TC37",
+      "M-TM.TC38",
+      "M-TM.TC39"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TM.A07.04",
+     "name": "so-dien-thoai",
+     "label": "Số điện thoại",
+     "spec": "❌ | Có thể để trống; nếu nhập phải gồm đúng 10 chữ số và bắt đầu bằng `0`, ví dụ `0912345678`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC36",
+      "M-TM.TC37",
+      "M-TM.TC38",
+      "M-TM.TC39",
+      "M-TM.TC43"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TM.A07.05",
+     "name": "vai-tro",
+     "label": "Vai trò",
+     "spec": "✅ | Tự điền `Teacher`, chỉ đọc và không cho phép thay đổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC36",
+      "M-TM.TC37"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TM.A07.06",
+     "name": "gmail",
+     "label": "Gmail",
+     "spec": "✅ | Cho phép nhập địa chỉ email và phải đúng định dạng email hợp lệ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC36"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TM.A07.07",
+     "name": "mat-khau",
+     "label": "Mật khẩu",
+     "spec": "✅ | Mặc định che nội dung; icon mắt cho phép chuyển đổi hiển thị/ẩn mật khẩu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC36",
+      "M-TM.TC42"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TM.A07.08",
+     "name": "trung-tam",
+     "label": "Trung tâm",
+     "spec": "✅ | Chọn một trung tâm từ danh sách trung tâm; giáo viên được tạo thuộc trung tâm đã chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC36",
+      "M-TM.TC46"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TM.A07.09",
+     "name": "code",
+     "label": "Code",
+     "spec": "✅ | Chỉ đọc; được backend tự sinh tăng dần khi tạo giáo viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC36",
+      "M-TM.TC37",
+      "M-TM.TC41"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TM.A07.10",
+     "name": "huy",
+     "label": "Huỷ",
+     "spec": "— | Đóng popup, không tạo giáo viên và không giữ dữ liệu chưa xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TM.A07.11",
+     "name": "them",
+     "label": "Thêm",
+     "spec": "— | Validation dữ liệu và gửi yêu cầu tạo giáo viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TC36",
+      "M-TM.TC37"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "M-TM.A08",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [
+    "adm-gv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-GV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TM.A08.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | Backend xác nhận thao tác thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TTC01",
+      "M-TM.TTC02",
+      "M-TM.TTC04"
+     ],
+     "missingTerms": [
+      "Thành công",
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TM.A08.02",
+     "name": "thong-tin",
+     "label": "Thông tin",
+     "spec": "`Thông Báo` | Thao tác đã tiếp nhận nhưng dữ liệu cần thời gian đồng bộ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thông tin",
+      "Thông Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TM.A08.03",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | Dữ liệu/điều kiện cần người dùng kiểm tra.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TM.TTC02"
+     ],
+     "missingTerms": [
+      "Cảnh báo",
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TM.A08.04",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | Backend/network không hoàn tất thao tác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lỗi",
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-TM.F01",
+   "name": "header",
+   "title": "Header",
+   "screens": [
+    "adm-gv-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TM.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2223:84131",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M-TM.F02",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-gv-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TM.F02.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:236867",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Giáo viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.02",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "3210:28292",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.03",
+     "name": "menu-panel",
+     "label": "Menu Panel",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Menu Panel",
+        "figmaId": "3210:28294",
+        "layer": "Menu Panel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Menu Panel",
+        "component": "DD/Organism/Menu Panel",
+        "variant": {
+         "Footer": false,
+         "Search": false,
+         "Type": "Multi"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.04",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "3210:28295",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "Search Advanced",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.05",
+     "name": "dropdown-trung-tam",
+     "label": "Dropdown · Trung tâm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Dropdown · Trung tâm",
+        "figmaId": "4713:129420",
+        "layer": "Dropdown · Trung tâm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown · Trung tâm",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trung tâm",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.06",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Dropdown",
+        "figmaId": "3210:28298",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Tag",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.07",
+     "name": "teaching-status",
+     "label": "Teaching status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Teaching status",
+        "figmaId": "3210:28328",
+        "layer": "Teaching status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Teaching status",
+        "component": "Teaching status",
+        "variant": {
+         "Property 1": "Training"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.08",
+     "name": "o-dinh-danh",
+     "label": "Ô định danh",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Ô định danh",
+        "figmaId": "3210:28329",
+        "layer": "Ô định danh",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Ô định danh",
+        "component": null,
+        "variant": {
+         "Có Tiền": true,
+         "Có lịch hẹn": true,
+         "Có tag": false,
+         "Có avatar": true,
+         "Tên": "gv01",
+         "Có tag thứ 2": false,
+         "Mã": "giaovien@gmail.com"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.09",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "3210:28335",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.10",
+     "name": "percent",
+     "label": "PERCENT %",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "PERCENT %",
+        "figmaId": "3210:28337",
+        "layer": "PERCENT %",
+        "confidence": "cao",
+        "region": null,
+        "owner": "PERCENT %",
+        "component": "PERCENT %",
+        "variant": {
+         "Property 1": "ĐN 1"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.11",
+     "name": "progress-diem-danh-gia-a-f",
+     "label": "Progress/Điểm Đánh Giá (A-F)",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Progress/Điểm Đánh Giá (A-F)",
+        "figmaId": "3210:28343",
+        "layer": "Progress/Điểm Đánh Giá (A-F)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Progress/Điểm Đánh Giá (A-F)",
+        "component": "Progress/Điểm Đánh Giá (A-F)",
+        "variant": {
+         "Property 1": "A nhỏ",
+         "Size": "36x32"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.12",
+     "name": "lich-giao-vien-dang-ky",
+     "label": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "figmaId": "3210:28345",
+        "layer": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "component": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "variant": {
+         "Icon": "Lịch",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.13",
+     "name": "ghi-chu",
+     "label": "GHI CHÚ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "GHI CHÚ",
+        "figmaId": "3210:28348",
+        "layer": "GHI CHÚ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "GHI CHÚ",
+        "component": "GHI CHÚ",
+        "variant": {
+         "Property 1": "Có Ghi chú",
+         "Property 2": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.14",
+     "name": "arrow-detail",
+     "label": "ARROW DETAIL",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "ARROW DETAIL",
+        "figmaId": "3210:28349",
+        "layer": "ARROW DETAIL",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ARROW DETAIL",
+        "component": "ARROW DETAIL",
+        "variant": {
+         "Property 1": "Arrow detail (Default)",
+         "Property 2": "No"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.15",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Mouse click",
+        "figmaId": "3210:28373",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.16",
+     "name": "lop-hoc",
+     "label": "Lớp học",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Lớp học",
+        "figmaId": "3210:28394",
+        "layer": "Lớp học",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Lớp học",
+        "component": "Lớp học",
+        "variant": {
+         "Property 1": "Có Lớp"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TM.F02.17",
+     "name": "phan-trang",
+     "label": "Phân Trang",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gv-010000": [
+       {
+        "term": "Phân Trang",
+        "figmaId": "3210:28659",
+        "layer": "Phân Trang",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Phân Trang",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-TM.EX01",
+   "text": "Người dùng không có quyền mở menu, URL hoặc gửi request trực tiếp → hệ thống từ chối truy cập, không trả dữ liệu giáo viên và không thay đổi dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX02",
+   "text": "Tải danh sách thất bại hoặc hết thời gian chờ → hiển thị lỗi và khả năng thử lại; không hiển thị lỗi như danh sách rỗng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX03",
+   "text": "Không có giáo viên phù hợp với điều kiện hiện tại → hiển thị trạng thái không có dữ liệu, giữ từ khóa và bộ lọc để người dùng chỉnh sửa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX04",
+   "text": "Một học viên không có mẫu số điểm danh hoặc bài tập → hệ thống không chia cho 0, không hiển thị `NaN`/vô cực và xử lý theo quy tắc được xác nhận tại mục 3.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX05",
+   "text": "Không tải được chi tiết lịch đăng ký hoặc chi tiết lớp → không hiển thị dữ liệu đã tải của giáo viên/lớp khác thay thế.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX06",
+   "text": "Sao chép clipboard thất bại → ghi chú đã lưu không thay đổi và không sao chép nội dung của dòng khác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX07",
+   "text": "Người dùng thay đổi điều kiện khi request cũ chưa hoàn tất → chỉ kết quả của điều kiện mới nhất được phép cập nhật danh sách.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX08",
+   "text": "Giáo viên bị xóa hoặc không còn thuộc phạm vi trước khi mở chi tiết → không mở dữ liệu của giáo viên khác và hiển thị lỗi phù hợp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX09",
+   "text": "Không có khung giờ hoặc có ít nhất một dòng thiếu ngày, thiếu giờ bắt đầu, thiếu giờ kết thúc hay giờ kết thúc không lớn hơn giờ bắt đầu → không gửi tìm kiếm nâng cao, giữ dữ liệu đã nhập và hiển thị lỗi validation tại dòng/trường liên quan.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX10",
+   "text": "Không có giáo viên có lịch đăng ký phù hợp với toàn bộ khung giờ hoặc tất cả giáo viên phù hợp đều bị loại do có lịch dạy khi tick `Kiểm tra ca làm việc của giáo viên` → hiển thị trạng thái không có dữ liệu và giữ nguyên điều kiện nâng cao để chỉnh sửa.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX11",
+   "text": "Thiếu trường bắt buộc; Họ tên, Gmail, Mật khẩu không hợp lệ; Giới tính, Ngày sinh có nhập nhưng không hợp lệ; hoặc Số điện thoại có nhập nhưng không gồm đúng 10 chữ số/bắt đầu bằng `0` → không tạo giáo viên, hiển thị lỗi tại trường liên quan và giữ dữ liệu đã nhập. Trạng thái không nhận từ client khi tạo mới; giáo viên mới luôn là `Training`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX12",
+   "text": "Có nhiều request tạo giáo viên đồng thời → backend phải sinh code atomically, không cho phép hai giáo viên có cùng code và không tin cậy code do client cung cấp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX13",
+   "text": "Request tạo giáo viên thất bại hoặc bị gửi lặp → không tạo bản ghi một phần/trùng lặp, giữ popup cùng dữ liệu đã nhập, hiển thị đúng một notification thất bại và cho phép thử lại an toàn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX14",
+   "text": "Gán tag hoặc tạo lịch hẹn từ danh sách thất bại → tập tag / lịch hẹn của giáo viên không đổi, popup giữ dữ liệu để thử lại, Toast `Có Lỗi Xảy Ra`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-TM.EX15",
+   "text": "Giáo viên không còn thuộc phạm vi hoặc không tồn tại khi xác nhận gán tag / tạo lịch hẹn → backend từ chối, không gán cho giáo viên khác.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "M-TM.FLOW01",
+   "name": "Xem danh sách giáo viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ01"
+   ]
+  },
+  {
+   "id": "M-TM.FLOW02",
+   "name": "Tìm kiếm, lọc và phân trang",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ]
+  },
+  {
+   "id": "M-TM.FLOW03",
+   "name": "Tổng hợp lớp và tỷ lệ học tập",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ03"
+   ]
+  },
+  {
+   "id": "M-TM.FLOW04",
+   "name": "Xem thông tin hover và sao chép ghi chú",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ04"
+   ]
+  },
+  {
+   "id": "M-TM.FLOW05",
+   "name": "Mở chi tiết giáo viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ05"
+   ]
+  },
+  {
+   "id": "M-TM.FLOW06",
+   "name": "Thêm mới giáo viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ06"
+   ]
+  },
+  {
+   "id": "M-TM.FLOW07",
+   "name": "Thêm lịch hẹn, thêm tag và xem lịch hẹn từ danh sách",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ09"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "M-TM.TC01",
+   "title": "Case 1: Hiển thị danh sách giáo viên",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TM.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW01"
+   ],
+   "items": [
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC45",
+   "title": "Case 45: Lọc danh sách theo trung tâm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC02",
+   "title": "Case 2: Hiển thị đúng trạng thái giáo viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TM.A01.01",
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC04",
+   "title": "Case 4: Lọc theo một trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.01",
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC05",
+   "title": "Case 5: Lọc theo nhiều trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.01",
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC06",
+   "title": "Case 6: Chọn Tất cả trạng thái",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.01"
+   ]
+  },
+  {
+   "id": "M-TM.TC07",
+   "title": "Case 7: Kết hợp điều kiện và giữ khi chuyển trang",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.01",
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC31",
+   "title": "Case 31: Tự động tìm theo tên sau 2 giây",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC32",
+   "title": "Case 32: Nhấn Enter để tìm ngay",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC33",
+   "title": "Case 33: Lọc theo một hoặc nhiều tag",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC34",
+   "title": "Case 34: Chọn Tất cả tag",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.01"
+   ]
+  },
+  {
+   "id": "M-TM.TC25",
+   "title": "Case 25: Hiển thị đúng UI tìm kiếm nâng cao mới",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2A / REQ02A",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC26",
+   "title": "Case 26: Thêm, chỉnh sửa và xóa nhiều khung giờ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2A / REQ02A",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC27",
+   "title": "Case 27: Validation danh sách khung giờ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "EX09 / REQ02A",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [
+    "M-TM.EX09"
+   ],
+   "flows": [],
+   "items": [
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC28",
+   "title": "Case 28: Tìm tất cả giáo viên đã đăng ký khi không kiểm tra ca làm việc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2A / REQ02A",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.02",
+    "M-TM.A01.10",
+    "M-TM.A01.11"
+   ]
+  },
+  {
+   "id": "M-TM.TC29",
+   "title": "Case 29: Chỉ tìm giáo viên chưa có lịch dạy khi kiểm tra ca làm việc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2A / REQ02A / EX10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [
+    "M-TM.EX10"
+   ],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.01",
+    "M-TM.A01.02",
+    "M-TM.A01.11"
+   ]
+  },
+  {
+   "id": "M-TM.TC30",
+   "title": "Case 30: Kết hợp và giữ điều kiện tìm kiếm nâng cao",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2A / REQ02A",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.01",
+    "M-TM.A01.02",
+    "M-TM.A01.10"
+   ]
+  },
+  {
+   "id": "M-TM.TC35",
+   "title": "Case 35: Banner kết quả và xoá điều kiện nâng cao",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 2A / REQ02A",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW02"
+   ],
+   "items": [
+    "M-TM.A01.01",
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC08",
+   "title": "Case 8: Không có kết quả phù hợp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "EX03 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [
+    "M-TM.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "M-TM.A01.01"
+   ]
+  },
+  {
+   "id": "M-TM.TC09",
+   "title": "Case 9: Tải danh sách thất bại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "M-TM.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC10",
+   "title": "Case 10: Chỉ nhận kết quả của điều kiện mới nhất",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "EX07 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ02"
+   ],
+   "exceptions": [
+    "M-TM.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC03",
+   "title": "Case 3: Từ chối role không có quyền tại màn Quản lý giáo viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "EX01 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "M-TM.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "M-TM.A01.02",
+    "M-TM.A01.13"
+   ]
+  },
+  {
+   "id": "M-TM.TC11",
+   "title": "Case 11: Không đếm trùng lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW03"
+   ],
+   "items": [
+    "M-TM.A01.02",
+    "M-TM.A01.04",
+    "M-TM.A01.05",
+    "M-TM.A01.11"
+   ]
+  },
+  {
+   "id": "M-TM.TC12",
+   "title": "Case 12: Tính lớp đang dạy",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW03"
+   ],
+   "items": [
+    "M-TM.A01.01",
+    "M-TM.A01.04",
+    "M-TM.A01.05",
+    "M-TM.A01.11"
+   ]
+  },
+  {
+   "id": "M-TM.TC13",
+   "title": "Case 13: Tính tỷ lệ Đi học",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW03"
+   ],
+   "items": [
+    "M-TM.A01.01",
+    "M-TM.A01.02",
+    "M-TM.A01.07"
+   ]
+  },
+  {
+   "id": "M-TM.TC14",
+   "title": "Case 14: Tính tỷ lệ BTVN",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW03"
+   ],
+   "items": [
+    "M-TM.A01.01",
+    "M-TM.A01.02",
+    "M-TM.A01.08"
+   ]
+  },
+  {
+   "id": "M-TM.TC15",
+   "title": "Case 15: Tính tỷ lệ Lên kỳ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW03"
+   ],
+   "items": [
+    "M-TM.A01.01",
+    "M-TM.A01.02",
+    "M-TM.A01.06"
+   ]
+  },
+  {
+   "id": "M-TM.TC16",
+   "title": "Case 16: Không tự tính Đánh giá",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TM.A01.02"
+   ]
+  },
+  {
+   "id": "M-TM.TC17",
+   "title": "Case 17: Không chia cho 0",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A01",
+   "scenario": "EX04 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ03"
+   ],
+   "exceptions": [
+    "M-TM.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC18",
+   "title": "Case 18: Xem chi tiết lịch đăng ký",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A02",
+   "scenario": "Flow 4 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW04"
+   ],
+   "items": [
+    "M-TM.A02.02",
+    "M-TM.A02.03",
+    "M-TM.A02.05"
+   ]
+  },
+  {
+   "id": "M-TM.TC19",
+   "title": "Case 19: Giáo viên chưa đăng ký lịch",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TM.A02",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TM.A02.04",
+    "M-TM.A02.06"
+   ]
+  },
+  {
+   "id": "M-TM.TC20",
+   "title": "Case 20: Xem chi tiết các lớp đang dạy",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A03",
+   "scenario": "Flow 4 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC20a",
+   "title": "Case 20a: Không có lớp đang dạy",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TM.A03",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC21",
+   "title": "Case 21: Xem và sao chép ghi chú",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A04",
+   "scenario": "Flow 4 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC22",
+   "title": "Case 22: Giáo viên không có ghi chú",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TM.A04",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC47",
+   "title": "Case 47: Mở menu thao tác",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A05",
+   "scenario": "Flow 7 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW07"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC48",
+   "title": "Case 48: Thêm lịch hẹn cho giáo viên",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TM.A05",
+   "scenario": "Flow 7 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW07"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC49",
+   "title": "Case 49: Gán và bỏ tag",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TM.A05",
+   "scenario": "Flow 7 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW07"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC50",
+   "title": "Case 50: Xem danh sách lịch hẹn",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TM.A05",
+   "scenario": "Flow 7 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW07"
+   ],
+   "items": [
+    "M-TM.A05.04"
+   ]
+  },
+  {
+   "id": "M-TM.TC51",
+   "title": "Case 51: Huỷ popup tag / lịch hẹn",
+   "priority": "Low",
+   "smoke": false,
+   "region": "M-TM.A05",
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC23",
+   "title": "Case 23: Mở đúng chi tiết giáo viên",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TM.A06",
+   "scenario": "Flow 5 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC24",
+   "title": "Case 24: Giáo viên không còn tồn tại khi mở chi tiết",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A06",
+   "scenario": "EX08 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ05"
+   ],
+   "exceptions": [
+    "M-TM.EX08"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC36",
+   "title": "Case 36: Mở popup thêm giáo viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A07",
+   "scenario": "Flow 6 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW06"
+   ],
+   "items": [
+    "M-TM.A07.01",
+    "M-TM.A07.02",
+    "M-TM.A07.03",
+    "M-TM.A07.04",
+    "M-TM.A07.05",
+    "M-TM.A07.06",
+    "M-TM.A07.07",
+    "M-TM.A07.08",
+    "M-TM.A07.09",
+    "M-TM.A07.11"
+   ]
+  },
+  {
+   "id": "M-TM.TC37",
+   "title": "Case 37: Tạo giáo viên thành công và tự sinh code tăng dần",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TM.A07",
+   "scenario": "Flow 6 / REQ06 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ06",
+    "M-TM.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW06"
+   ],
+   "items": [
+    "M-TM.A07.02",
+    "M-TM.A07.03",
+    "M-TM.A07.04",
+    "M-TM.A07.05",
+    "M-TM.A07.09",
+    "M-TM.A07.11"
+   ]
+  },
+  {
+   "id": "M-TM.TC38",
+   "title": "Case 38: Cho phép bỏ trống giới tính, ngày sinh, số điện thoại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A07",
+   "scenario": "Flow 6 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW06"
+   ],
+   "items": [
+    "M-TM.A07.02",
+    "M-TM.A07.03",
+    "M-TM.A07.04"
+   ]
+  },
+  {
+   "id": "M-TM.TC39",
+   "title": "Case 39: Validation các trường bắt buộc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A07",
+   "scenario": "EX11 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ06"
+   ],
+   "exceptions": [
+    "M-TM.EX11"
+   ],
+   "flows": [],
+   "items": [
+    "M-TM.A07.02",
+    "M-TM.A07.03",
+    "M-TM.A07.04"
+   ]
+  },
+  {
+   "id": "M-TM.TC40",
+   "title": "Case 40: Hủy thêm giáo viên",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TM.A07",
+   "scenario": "Flow 6 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-TM.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC41",
+   "title": "Case 41: Sinh code duy nhất khi tạo đồng thời",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A07",
+   "scenario": "EX12 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ06"
+   ],
+   "exceptions": [
+    "M-TM.EX12"
+   ],
+   "flows": [],
+   "items": [
+    "M-TM.A07.09"
+   ]
+  },
+  {
+   "id": "M-TM.TC42",
+   "title": "Case 42: Tạo giáo viên thất bại hoặc xác nhận lặp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A07",
+   "scenario": "EX13 / REQ06 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ06",
+    "M-TM.REQ07"
+   ],
+   "exceptions": [
+    "M-TM.EX13"
+   ],
+   "flows": [],
+   "items": [
+    "M-TM.A07.07"
+   ]
+  },
+  {
+   "id": "M-TM.TC43",
+   "title": "Case 43: Validation số điện thoại Việt Nam",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A07",
+   "scenario": "EX11 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ06"
+   ],
+   "exceptions": [
+    "M-TM.EX11"
+   ],
+   "flows": [],
+   "items": [
+    "M-TM.A07.04"
+   ]
+  },
+  {
+   "id": "M-TM.TC44",
+   "title": "Case 44: Không nhận trạng thái từ client khi tạo",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A07",
+   "scenario": "EX11 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ06"
+   ],
+   "exceptions": [
+    "M-TM.EX11"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TM.TC46",
+   "title": "Case 46: Bắt buộc chọn trung tâm khi tạo",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A07",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TM.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TM.A07.08"
+   ]
+  },
+  {
+   "id": "M-TM.TTC01",
+   "title": "Toast Case 1: Thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TM.A08.01"
+   ]
+  },
+  {
+   "id": "M-TM.TTC02",
+   "title": "Toast Case 2: Cảnh báo",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TM.A08.01",
+    "M-TM.A08.03"
+   ]
+  },
+  {
+   "id": "M-TM.TTC03",
+   "title": "Toast Case 3: Lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TM.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TM.TTC04",
+   "title": "Toast Case 4: Thông tin, đóng và chống lặp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-TM.A08",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-TM.A08.01"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GV-010001",
+   "text": "dropdown “Danh sách giáo viên / Hover menu thao tác” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GV-010010",
+   "text": "popup “Danh sách giáo viên / Popup tìm kiếm nâng cao” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GV-010010",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GV-010020",
+   "text": "popup “Danh sách giáo viên / Popup thêm giáo viên” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GV-010020",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GV-010030",
+   "text": "popup “Danh sách giáo viên / Popup thêm tag” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GV-010030",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GV-010040",
+   "text": "popup “Danh sách giáo viên / Popup thêm lịch hẹn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GV-010040",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GV-010042",
+   "text": "dropdown “Danh sách giáo viên / Popup thêm lịch hẹn / Đang mở” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GV-010050",
+   "text": "popup “Danh sách giáo viên / Popup danh sách lịch hẹn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GV-010050",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-TM.TTC01",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-TM.TTC02",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-TM.TTC03",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "M-TM.TTC04",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-TM.EX05",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-TM.EX06",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-TM.EX14",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "M-TM.EX15",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/teacher_management/teacher_management_requirements.md",
+   "prefix": "M-TM",
+   "title": "[Admin] Quản lý danh sách giáo viên"
+  }
+ ]
+}

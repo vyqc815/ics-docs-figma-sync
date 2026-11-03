@@ -1,0 +1,206 @@
+{
+ "cluster": "chua-co-req-gv-lop-05",
+ "title": "GV-LOP-05xx (chưa có requirement)",
+ "figmaPrefix": "GV-LOP-05",
+ "requirements": [],
+ "screens": {
+  "GV-LOP-050110": {
+   "id": "GV-LOP-050110",
+   "name": "co-du-lieu",
+   "title": "Chi tiết lớp / Tự học / Có dữ liệu",
+   "kind": "man-chinh",
+   "parent": "GV-LOP-050100",
+   "shownOn": "GV-LOP-050110",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5425:281325",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/tu-hoc/co-du-lieu",
+   "link": "/chi-tiet-lop/tu-hoc/co-du-lieu",
+   "dark": "GV-LOP-050110-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "GV-LOP-05.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "GV-LOP-05.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "gv-lop-050110"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "GV-LOP-05.F01.01",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-050110": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "5425:281700",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-05.F01.02",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-050110": [
+       {
+        "term": "Component 2",
+        "figmaId": "5425:281389",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Sakumi"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-05.F01.03",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-050110": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "5425:281391",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Giáo Viên",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-05.F01.04",
+     "name": "header-vai-tro",
+     "label": "Header/Vai trò",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-050110": [
+       {
+        "term": "Header/Vai trò",
+        "figmaId": "5425:281392",
+        "layer": "Header/Vai trò",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Header/Vai trò",
+        "component": null,
+        "variant": {
+         "Vai trò": "Giáo viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "GV-LOP-05.F01.05",
+     "name": "sidebar-menu-teacher",
+     "label": "Sidebar · MENU - TEACHER",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-050110": [
+       {
+        "term": "Sidebar · MENU - TEACHER",
+        "figmaId": "5425:281483",
+        "layer": "Sidebar · MENU - TEACHER",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - TEACHER",
+        "component": "MENU - TEACHER",
+        "variant": {
+         "Trang": "Lớp học / Giảng dạy / Tự học"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-050110",
+   "text": "man-chinh “Chi tiết lớp / Tự học / Có dữ liệu” chưa được requirement nhắc tới"
+  }
+ ]
+}

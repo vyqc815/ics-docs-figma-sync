@@ -1,0 +1,2149 @@
+{
+ "cluster": "class-detail-messages-requirements",
+ "title": "Chi tiết lớp học — Menu Nhật ký — Tab Tin nhắn",
+ "figmaPrefix": "M-CDM2",
+ "requirements": [
+  {
+   "id": "M-CDM2.REQ01",
+   "name": "Danh sách",
+   "text": "Item thuộc lớp hiện tại, đủ Tiêu đề/Mô tả/Mẫu/Ngày tạo/Số người đã gửi, + tạo, Gửi chung, mở/thu gọn và **search chỉ theo Tiêu đề tin nhắn** trong lớp hiện tại. Không tự gửi khi tạo/xem/chọn dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.REQ02",
+   "name": "Mẫu tin nhắn",
+   "text": "Tiêu đề/Mô tả đều bắt buộc, không giới hạn ký tự, không chấp nhận chỉ khoảng trắng. Chọn một mẫu có sẵn bắt buộc; template/nội dung/biến từ chức năng nguồn. Tab này không định nghĩa hay sửa mẫu gốc. Metadata và preview theo popup; **nội dung chỉ đọc**, muốn sửa vào chức năng define mẫu. Đổi mẫu không reset count hoặc cho gửi lại người đã thành công; version mẫu khi sửa define còn cần chốt.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.REQ03",
+   "name": "Biến CơmGao",
+   "text": "Lấy các biến của đúng học viên theo mapping nguồn trước gửi; mỗi người có nội dung riêng. Không định nghĩa mapping từ ví dụ ảnh hoặc dùng dữ liệu giả. Lưu được kết quả/nội dung đã gửi mà thay mẫu sau này không viết lại lịch sử.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.REQ04",
+   "name": "Người nhận và nền tảng",
+   "text": "Học viên thuộc lớp, liên kết đúng CơmGao; mỗi dòng chọn Facebook/Instagram/Zalo/TikTok/Website theo UI. Đích gửi phụ thuộc platform đã chọn, không lấy email hiển thị làm địa chỉ chung hoặc tự fallback.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.REQ05",
+   "name": "Gửi",
+   "text": "Gửi một người bằng nút dòng hoặc toàn bộ người đủ điều kiện chưa thành công bằng nút đầu item. Không cho gửi lại học viên đã thành công trong cùng item, kể cả đổi mẫu/platform hoặc user thao tác. Cá nhân hóa theo người, dùng platform riêng, chống lặp chung/riêng. Kết quả hỗn hợp giữ từng kết quả; timeout cần xác định kết quả trước thử lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.REQ06",
+   "name": "Kết quả và count",
+   "text": "S/T đếm học viên duy nhất đã được xác nhận gửi thành công / tổng danh sách nhận của item. Không tăng khi đang chờ/lỗi hoặc đếm thêm vì cùng người gửi nhiều lần. Ghi nhận đúng item/người/platform/nội dung thực tế/thời điểm/kết quả; không suy ra đã đọc.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.REQ07",
+   "name": "Notification",
+   "text": "Tạo/quản lý/gửi có một Toast kết quả logic theo UI chung; gửi chung có tổng kết, không spam từng dòng. Chỉ báo thành công khi được xác nhận; Hủy/chỉ xem/chọn platform không Toast CRUD.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.REQ08",
+   "name": "Quyền và phạm vi",
+   "text": "Admin theo quyền quản trị chung không cần add vào lớp; Class Handler/Support phải được add vào lớp mới được xem/tạo/gửi/đổi mẫu/xóa. Không giới hạn theo người tạo item và không kế thừa owner từ tab khác; Sale/role khác không vào tab. Kiểm tra lại quyền/người nhận/đích trước thay đổi và gửi, kể cả request trực tiếp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.REQ09",
+   "name": "Xóa có xác nhận",
+   "text": "Hover item hiện ×; click mở popup, chưa xóa ngay. Hủy không đổi dữ liệu, confirm mới xóa sau kiểm tra quyền. Xóa thành công bỏ item và một Toast; lỗi giữ item. Không thu hồi tin đã gửi; cơ chế mềm/cứng và lưu kết quả còn cần xác nhận.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LOP-050100": {
+   "id": "ADM-LOP-050100",
+   "name": "nhat-ky",
+   "title": "Lớp học / Nhật ký / Nhật ký",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-050204",
+   "shownOn": "ADM-LOP-050100",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "1105:5472",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lop-hoc/nhat-ky/nhat-ky",
+   "link": "/lop-hoc/nhat-ky/nhat-ky",
+   "dark": "ADM-LOP-050100-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDM2.A01",
+    "M-CDM2.A02",
+    "M-CDM2.A03",
+    "M-CDM2.A04",
+    "M-CDM2.A05",
+    "M-CDM2.A06",
+    "M-CDM2.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-CDM2.A01",
+   "name": "tab-tin-nhan-danh-sach-tin-nhan",
+   "title": "Tab Tin Nhắn — Danh sách tin nhắn",
+   "screens": [
+    "adm-lop-050100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-050100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_messages_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDM2.A01.01",
+     "name": "nut",
+     "label": "Nút +",
+     "spec": "Mở popup `Tạo tin nhắn bán tự động mới`; không gửi tin nhắn khi chỉ mở popup.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDM2.A02",
+       "raw": "Mở popup `Tạo tin nhắn bán tự động mới`"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Nút +",
+      "Tạo tin nhắn bán tự động mới"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A01.02",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "Hiển thị Tiêu đề và Mô tả ở đầu item như ảnh; các field là metadata của tin nhắn lớp, không tự thêm vào nội dung gửi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "2533:20883",
+        "layer": "TIÊU ĐỀ",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TC01"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDM2.A01.03",
+     "name": "tin-nhan",
+     "label": "Tin nhắn",
+     "spec": "Dropdown hiển thị tên mẫu đang dùng, không hiển thị placeholder mẫu như một tin nhắn đã gửi. Cho chọn mẫu theo quyền; đổi mẫu không reset count hoặc mở lại quyền gửi học viên đã thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Tin nhắn",
+        "figmaId": "I1299:21;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TC01",
+      "M-CDM2.TC02",
+      "M-CDM2.TC06"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDM2.A01.04",
+     "name": "ngay-tao",
+     "label": "Ngày tạo",
+     "spec": "Ngày tạo item, định dạng `dd/MM/yyyy` như `28/09/2026` trong ảnh; không thay bằng ngày gửi của học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TC01",
+      "M-CDM2.TC02"
+     ],
+     "missingTerms": [
+      "Ngày tạo",
+      "dd/MM/yyyy"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A01.05",
+     "name": "so-nguoi-da-gui",
+     "label": "Số người đã gửi",
+     "spec": "Hiển thị `S/T`: S là số học viên đã được xác nhận gửi thành công cho item này, T là tổng người nhận trong danh sách. Với 8 học viên chưa gửi hiển thị `0/8`. Gửi thất bại/đang chờ không tăng S; Không cho gửi lại học viên đã thành công trong cùng item.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "S/T",
+        "figmaId": "2533:20875",
+        "layer": "Filter Pills Toolbar",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TC01"
+     ],
+     "missingTerms": [
+      "Số người đã gửi"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDM2.A01.06",
+     "name": "gui-chung",
+     "label": "Gửi chung",
+     "spec": "Nút cam `Gửi` ở đầu item dùng gửi cho toàn bộ danh sách người nhận đủ điều kiện của item, không áp dụng cho mọi item tin nhắn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Gửi chung",
+      "Gửi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A01.07",
+     "name": "mo-thu-gon",
+     "label": "Mở/Thu gọn",
+     "spec": "Chevron bên phải cho mở/thu gọn các dòng học viên; không tạo/gửi/cập nhật dữ liệu nghiệp vụ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Mở/Thu gọn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A01.08",
+     "name": "nut-do",
+     "label": "Nút × đỏ",
+     "spec": "Hiện khi hover item; bấm × mở popup xác nhận xóa, chỉ thực hiện sau confirm. Khác với chevron thu gọn; Hủy không thay đổi danh sách.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDM2.A01",
+       "raw": "mở popup xác nhận xóa"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Nút × đỏ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A01.09",
+     "name": "tim-kiem",
+     "label": "Tìm kiếm",
+     "spec": "Ô `Tìm kiếm...` theo ảnh, **chỉ search theo Tiêu đề tin nhắn** trong lớp hiện tại. Không search Mô tả, tên mẫu, nội dung mẫu hoặc thông tin học viên. Thời điểm kích hoạt còn cần xác nhận. Không tự kế thừa debounce của Nhật Ký sang Tin Nhắn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "I2533:21147;1739:32351",
+        "layer": "Tìm nội dung...",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm lớp học",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Tìm kiếm...",
+        "figmaId": "I2533:21147;1739:32351",
+        "layer": "Tìm nội dung...",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm lớp học",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDM2.A01.10",
+     "name": "tai-du-lieu",
+     "label": "Tải dữ liệu",
+     "spec": "Có loading/rỗng/lỗi và Thử lại. Không trộn item hay số người đã gửi của lớp khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tải dữ liệu"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDM2.A02",
+   "name": "popup-tao-tin-nhan-ban-tu-dong-moi",
+   "title": "Popup Tạo tin nhắn bán tự động mới",
+   "screens": [
+    "adm-lop-050100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-050100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_messages_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDM2.A02.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "**Bắt buộc**, không giới hạn ký tự; không chấp nhận rỗng/chỉ khoảng trắng. Hiển thị xuống dòng khi dài trên item, giữ toàn bộ giá trị đã lưu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "2533:20883",
+        "layer": "TIÊU ĐỀ",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TC07",
+      "M-CDM2.TC13",
+      "M-CDM2.TC14"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDM2.A02.02",
+     "name": "mo-ta",
+     "label": "Mô tả",
+     "spec": "**Bắt buộc**, không giới hạn ký tự; không chấp nhận rỗng/chỉ khoảng trắng. Là metadata bổ sung trên item, không tự thêm vào nội dung gửi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Mô tả",
+        "figmaId": "2533:20885",
+        "layer": "MÔ TẢ",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TC07",
+      "M-CDM2.TC13",
+      "M-CDM2.TC14"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDM2.A02.03",
+     "name": "chon-mau-tin-nhan",
+     "label": "Chọn mẫu tin nhắn",
+     "spec": "Bắt buộc (dấu * trong UI), chọn một mẫu đã định nghĩa ở chức năng riêng. Lấy danh sách mẫu được phép dùng; lưu đúng định danh mẫu, không dùng tên hiển thị làm khóa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chọn mẫu tin nhắn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A02.04",
+     "name": "noi-dung-tin-nhan",
+     "label": "Nội dung tin nhắn",
+     "spec": "Hiển thị nội dung của mẫu đang chọn và các placeholder theo định nghĩa, giữ xuống dòng như ảnh. Nội dung **chỉ đọc** tại popup/tab, không tạo bản nội dung chỉnh riêng. Muốn sửa phải vào chức năng define mẫu; không sửa mẫu gốc qua tab này.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nội dung tin nhắn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A02.05",
+     "name": "huy",
+     "label": "Hủy",
+     "spec": "Đóng popup, không thêm item và không gửi tới học viên; không Toast CRUD.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Hủy",
+        "figmaId": "2533:20899",
+        "layer": "Thuy SP đã follow học viên",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDM2.A02.06",
+     "name": "tao-moi",
+     "label": "Tạo mới",
+     "spec": "Kiểm tra dữ liệu/quyền/mẫu rồi lưu item vào đúng lớp; chống gửi lặp. Thành công đóng popup, cập nhật danh sách và một Toast tạo thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TC07",
+      "M-CDM2.TC09",
+      "M-CDM2.TC10",
+      "M-CDM2.TC11",
+      "M-CDM2.TC13"
+     ],
+     "missingTerms": [
+      "Tạo mới"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDM2.A03",
+   "name": "danh-sach-hoc-vien-va-chon-nen-tang",
+   "title": "Danh sách học viên và chọn nền tảng",
+   "screens": [
+    "adm-lop-050100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-050100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_messages_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDM2.A03.01",
+     "name": "hoc-vien",
+     "label": "Học viên",
+     "spec": "Mỗi dòng có icon/avatar, tên học viên và email như UI. Thông tin PH nếu có hiển thị từ dữ liệu nguồn; không mặc nhiên chuyển người nhận sang phụ huynh chỉ vì tên có PH.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Học viên",
+        "figmaId": "2533:20899",
+        "layer": "Thuy SP đã follow học viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TC15",
+      "M-CDM2.TC19"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDM2.A03.02",
+     "name": "nguon-nguoi-nhan",
+     "label": "Nguồn người nhận",
+     "spec": "Dựa trên [Học viên của lớp](./class_detail_students_requirements.md) và liên kết sang đúng hồ sơ/cuộc hội thoại CơmGao. Cần chốt tập trạng thái học viên được nhận và danh sách có cố định lúc tạo hay cập nhật theo lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nguồn người nhận"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A03.03",
+     "name": "dropdown-nen-tang",
+     "label": "Dropdown nền tảng",
+     "spec": "Có Facebook, Instagram, Zalo, TikTok, Website theo ảnh; chọn một nền tảng trên từng dòng, icon/nhãn đúng platform. Facebook trong ảnh không xác lập mặc định cho mọi học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Dropdown nền tảng"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A03.04",
+     "name": "dich-gui",
+     "label": "Đích gửi",
+     "spec": "Lấy tài khoản/cuộc hội thoại của đúng học viên trên nền tảng đã chọn từ CơmGao. Email trên UI là thông tin hiển thị, không phải đích gửi cho mọi nền tảng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đích gửi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A03.05",
+     "name": "gui-tung-hoc-vien",
+     "label": "Gửi từng học viên",
+     "spec": "Nút Gửi riêng chỉ gửi nội dung của item này cho học viên cùng dòng bằng platform của dòng đó. Nút màu **xám/disabled khi chưa liên kết nền tảng đang chọn**; không suy ra đã gửi chỉ từ màu xám. Nút cam cho gửi khi có liên kết hợp lệ và đủ quyền/dữ liệu. Trong lúc gửi khóa thao tác để chống lặp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Gửi từng học viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A03.06",
+     "name": "thieu-lien-ket-nen-tang",
+     "label": "Thiếu liên kết nền tảng",
+     "spec": "Không tự chuyển sang nền tảng khác hoặc user khác. Hiển thị lý do không gửi được; nút Gửi xám/disabled khi chưa liên kết platform đó. Học viên đã gửi thành công được đánh dấu đã gửi và chặn thao tác, không dùng màu xám trong ảnh để suy ra kết quả.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thiếu liên kết nền tảng"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDM2.A04",
+   "name": "lay-bien-comgao-va-gui-tin-nhan",
+   "title": "Lấy biến CơmGao và gửi tin nhắn",
+   "screens": [
+    "adm-lop-050100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-050100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_messages_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDM2.A04.01",
+     "name": "bien-mau",
+     "label": "Biến mẫu",
+     "spec": "Danh sách biến/ý nghĩa do chức năng mẫu và CơmGao cung cấp. Ảnh có {khach}, {ad}, {name}, {address}, {phone}, {info} là ví dụ, không tự định nghĩa mapping trường nghiệp vụ tại tab này.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Biến mẫu"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A04.02",
+     "name": "thay-bien",
+     "label": "Thay biến",
+     "spec": "Trước khi gửi, lấy dữ liệu CơmGao của đúng người nhận theo mapping nguồn, tạo nội dung riêng và giữ văn bản/xuống dòng. Không tự điền giá trị giả hoặc gửi các biến chưa thay hợp lệ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thay biến"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A04.03",
+     "name": "gui-mot-nguoi",
+     "label": "Gửi một người",
+     "spec": "Nút Gửi ở dòng chỉ xử lý một học viên của item; dùng template/nội dung và platform tương ứng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Gửi một người"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A04.04",
+     "name": "gui-toan-bo",
+     "label": "Gửi toàn bộ",
+     "spec": "Nút Gửi ở đầu item xử lý các học viên đủ điều kiện trong danh sách nhận của item, dùng platform riêng của từng người. Không tự đổi mọi người sang platform của dòng đầu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Gửi toàn bộ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A04.05",
+     "name": "dang-gui",
+     "label": "Đang gửi",
+     "spec": "Khóa/chống gửi lặp cùng item/người nhận khi thao tác đang xử lý; gửi chung và riêng đồng thời không tạo hai lần gửi ngoài ý muốn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đang gửi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A04.06",
+     "name": "ket-qua-tung-nguoi",
+     "label": "Kết quả từng người",
+     "spec": "Ghi nhận người nhận, platform, nội dung thực tế sau thay biến, thời điểm và kết quả đủ để hiển thị/reconcile đúng item; lỗi của một người không khiến những người đã gửi thành công bị ghi nhận thất bại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Kết quả từng người"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A04.07",
+     "name": "so-nguoi-da-gui",
+     "label": "Số người đã gửi",
+     "spec": "Chỉ tăng S sau xác nhận gửi thành công cho học viên chưa được tính; cập nhật đúng item và giữ qua tải lại. Không khẳng định học viên đã đọc/đã nhận chỉ dựa trên thao tác được tiếp nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Số người đã gửi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A04.08",
+     "name": "gui-lai",
+     "label": "Gửi lại",
+     "spec": "**Không cho gửi lại** người đã thành công trong cùng item, cả nút riêng và Gửi chung. Gửi chung bỏ qua người đã thành công; đổi platform/mẫu, refresh hoặc thao tác từ user khác không xóa trạng thái đã gửi hay mở lại quyền gửi. Người chưa gửi thành công còn được gửi sau xử lý lỗi/thiếu liên kết; timeout phải kiểm tra kết quả trước thử lại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TC27",
+      "M-CDM2.TC29"
+     ],
+     "missingTerms": [
+      "Gửi lại"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDM2.A05",
+   "name": "quan-ly-item-tin-nhan-da-tao",
+   "title": "Quản lý item tin nhắn đã tạo",
+   "screens": [
+    "adm-lop-050100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-050100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_messages_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDM2.A05.01",
+     "name": "dropdown-mau-tren-item",
+     "label": "Dropdown mẫu trên item",
+     "spec": "Cho Admin hoặc Class Handler/Support đã được add vào lớp chọn mẫu có sẵn. Khi đổi, nội dung chưa gửi phải khớp mẫu mới; không sửa định nghĩa mẫu gốc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Dropdown mẫu trên item"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A05.02",
+     "name": "sua-tieu-de-mo-ta",
+     "label": "Sửa Tiêu đề/Mô tả",
+     "spec": "Ảnh chưa có editor hoặc cách mở sửa metadata; không tự thêm thao tác bấm dòng để sửa như Nhật Ký.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Sửa Tiêu đề/Mô tả"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A05.03",
+     "name": "nut",
+     "label": "Nút ×",
+     "spec": "Admin hoặc Class Handler/Support đã được add vào lớp hover thấy ×; click mở popup có thông báo `Bạn có chắc muốn xóa tin nhắn này?`, nút `Hủy` / `Xóa`. Chỉ xác nhận Xóa mới xử lý. Xóa mềm/cứng và khả năng xóa sau gửi còn cần chốt. Không đồng nhất với thu gọn item.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDM2.A05",
+       "raw": "mở popup có thông báo `Bạn có chắc muốn xóa tin nhắn này?`"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Nút ×",
+      "Bạn có chắc muốn xóa tin nhắn này?"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A05.04",
+     "name": "tin-nhan-da-gui",
+     "label": "Tin nhắn đã gửi",
+     "spec": "Thay mẫu/xóa item không thay nội dung thực tế đã gửi ra platform hoặc tự thu hồi tin nhắn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tin nhắn đã gửi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A05.05",
+     "name": "xac-nhan-xoa",
+     "label": "Xác nhận xóa",
+     "spec": "Chọn Hủy đóng popup, không request/Toast CRUD. Chọn Xóa kiểm tra lại role/thành viên lớp/item, khóa chống lặp; chỉ bỏ item sau lưu thành công, một Toast `Xóa tin nhắn thành công.`. Lỗi giữ item và Toast `Không thể xóa tin nhắn. Vui lòng thử lại.`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TC35"
+     ],
+     "missingTerms": [
+      "Xác nhận xóa",
+      "Xóa tin nhắn thành công."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A05.06",
+     "name": "du-lieu-ket-qua-gui",
+     "label": "Dữ liệu kết quả gửi",
+     "spec": "Không làm mất/đổi kết quả gửi đã xác nhận của học viên khi đổi dữ liệu hiển thị. Đổi mẫu không mở đợt gửi mới cho học viên đã thành công trong item; người chưa gửi dùng mẫu đang chọn khi gửi. Thay đổi mẫu gốc ở define không viết lại nội dung đã gửi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Dữ liệu kết quả gửi"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDM2.A06",
+   "name": "toast-phan-hoi-crud-va-gui-tin-nhan",
+   "title": "Toast phản hồi CRUD và gửi tin nhắn",
+   "screens": [
+    "adm-lop-050100"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-050100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_messages_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDM2.A06.01",
+     "name": "thanh-cong",
+     "label": "Thành Công",
+     "spec": "Tạo: `Tạo tin nhắn thành công.`; cập nhật: `Cập nhật tin nhắn thành công.`; xóa: `Xóa tin nhắn thành công.`. Gửi riêng khi xác nhận thành công: `Gửi tin nhắn thành công cho {Tên học viên}.`; gửi chung toàn bộ đủ điều kiện thành công: `Đã gửi tin nhắn thành công cho {Số người} học viên.`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TTC01",
+      "M-CDM2.TTC02",
+      "M-CDM2.TTC03",
+      "M-CDM2.TTC04"
+     ],
+     "missingTerms": [
+      "Thành Công",
+      "Tạo tin nhắn thành công."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A06.02",
+     "name": "thong-bao",
+     "label": "Thông Báo",
+     "spec": "Khi thực tế đang xử lý: `Đang gửi tin nhắn. Vui lòng chờ cập nhật kết quả.`; không coi là thành công hoặc tăng count.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDM2.TTC04"
+     ],
+     "missingTerms": [
+      "Thông Báo",
+      "Đang gửi tin nhắn. Vui lòng chờ cập nhật kết quả."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A06.03",
+     "name": "canh-bao",
+     "label": "Cảnh Báo",
+     "spec": "Thiếu Tiêu đề/Mô tả: `Vui lòng nhập đầy đủ tiêu đề và mô tả.`; chưa chọn mẫu: `Vui lòng chọn mẫu tin nhắn.`; thiếu biến/đích gửi nêu lý do của người nhận. Kết quả hỗn hợp: `Kết quả gửi: {S} thành công, {F} thất bại, {K} bỏ qua, {P} đang chờ.`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cảnh Báo",
+      "Vui lòng nhập đầy đủ tiêu đề và mô tả."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A06.04",
+     "name": "co-loi-xay-ra",
+     "label": "Có Lỗi Xảy Ra",
+     "spec": "Tạo: `Không thể tạo tin nhắn. Vui lòng thử lại.`; xóa: `Không thể xóa tin nhắn. Vui lòng thử lại.`; gửi lỗi đã xác định: `Không thể gửi tin nhắn cho {Tên học viên}. Vui lòng kiểm tra và thử lại.`; tải/timeout chưa rõ kết quả không dùng thông báo khẳng định đã thất bại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Có Lỗi Xảy Ra",
+      "Không thể tạo tin nhắn. Vui lòng thử lại."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDM2.A06.05",
+     "name": "dong-va-thoi-luong",
+     "label": "Đóng và thời lượng",
+     "spec": "Icon/màu/vị trí/thời gian tự đóng và nút × theo Toast dùng chung. Đóng Toast không hủy gửi hay hoàn tác dữ liệu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đóng và thời lượng"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDM2.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-050100"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDM2.F01.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "1299:15",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.02",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "2533:21147",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm lớp học",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.03",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Dropdown",
+        "figmaId": "2533:20876",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Đối tượng",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.04",
+     "name": "lich-giao-vien-dang-ky",
+     "label": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "figmaId": "2533:20901",
+        "layer": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "confidence": "cao",
+        "region": null,
+        "owner": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "component": "LỊCH GIÁO VIÊN ĐĂNG KÝ",
+        "variant": {
+         "Icon": "Đồng hồ",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.05",
+     "name": "atom-object-chip",
+     "label": "Atom/Object Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Atom/Object Chip",
+        "figmaId": "2533:20905",
+        "layer": "Atom/Object Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Object Chip",
+        "component": "Atom/Object Chip",
+        "variant": {
+         "Name": "Hệ thống",
+         "Type": "System"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.06",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "2533:21031",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Add Rounded"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.07",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:231079",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Nhật ký"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDM2.F01.08",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-050100": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3497:53466",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-CDM2.EX01",
+   "text": "Tải danh sách/người nhận/mẫu lỗi → trạng thái lỗi và Thử lại, không coi là rỗng hay dữ liệu hợp lệ để gửi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.EX02",
+   "text": "Response thuộc lớp/item/tab cũ → không ghi đè giao diện hiện tại; kết quả đã gửi vẫn liên kết đúng item/người nhận gốc.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.EX03",
+   "text": "Thiếu quyền tab/lớp/thao tác → từ chối UI/request trực tiếp; không trả dữ liệu ngoài quyền và không gửi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.EX04",
+   "text": "Mẫu trống/không tồn tại/không được dùng hoặc metadata vi phạm validation đã chốt → không tạo/cập nhật/gửi, báo field/lý do và Toast phù hợp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.EX05",
+   "text": "Tạo/cập nhật item lỗi hoặc gửi lặp → không nhân bản item, không lưu một phần; giữ input để thử lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.EX06",
+   "text": "Thiếu liên kết CơmGao/đích platform hoặc platform chưa khả dụng → không tự chuyển đích/nền tảng, báo lý do của người nhận, không tăng S.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.EX07",
+   "text": "Thiếu mapping/biến hợp lệ hoặc nguồn CơmGao lỗi → không gửi nội dung sai/chưa thay biến; giữ kết quả riêng từng người.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.EX08",
+   "text": "Gửi chung/riêng hoặc callback trùng → chống gửi lặp cùng item/người nhận đang xử lý, không tính S hai lần. Học viên đã thành công không được gửi lại dù đổi mẫu/platform hay user thao tác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.EX09",
+   "text": "Timeout chưa biết kết quả gửi → không tự gửi lại/đánh dấu chắc chắn thất bại, kiểm tra/reconcile kết quả trước thử lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.EX10",
+   "text": "Học viên đã gửi thành công → chặn gửi lại qua UI/request, kể cả đổi mẫu/platform, không gửi lần mới hoặc tăng count.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDM2.EX11",
+   "text": "Xóa lỗi/gửi lặp hoặc item không còn hợp lệ → không xóa nhầm/nhân đôi thao tác; giữ dữ liệu hiển thị phù hợp, một Toast kết quả.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "M-CDM2.FLOW01",
+   "name": "Xem tab Tin Nhắn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ01",
+    "M-CDM2.REQ08"
+   ]
+  },
+  {
+   "id": "M-CDM2.FLOW02",
+   "name": "Thêm tin nhắn từ mẫu sẵn có",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ02",
+    "M-CDM2.REQ07"
+   ]
+  },
+  {
+   "id": "M-CDM2.FLOW03",
+   "name": "Gửi cho một học viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ03",
+    "M-CDM2.REQ04",
+    "M-CDM2.REQ05",
+    "M-CDM2.REQ06",
+    "M-CDM2.REQ07"
+   ]
+  },
+  {
+   "id": "M-CDM2.FLOW04",
+   "name": "Gửi toàn bộ danh sách",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ03",
+    "M-CDM2.REQ04",
+    "M-CDM2.REQ05",
+    "M-CDM2.REQ06",
+    "M-CDM2.REQ07"
+   ]
+  },
+  {
+   "id": "M-CDM2.FLOW05",
+   "name": "Xác nhận xóa item",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ01",
+    "M-CDM2.REQ07",
+    "M-CDM2.REQ08",
+    "M-CDM2.REQ09"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "M-CDM2.TC01",
+   "title": "Case 1: Xem danh sách đúng lớp",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDM2.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDM2.FLOW01"
+   ],
+   "items": [
+    "M-CDM2.A01.02",
+    "M-CDM2.A01.03",
+    "M-CDM2.A01.04",
+    "M-CDM2.A01.05"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC02",
+   "title": "Case 2: Mở và thu gọn học viên",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDM2.A01",
+   "scenario": "REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDM2.A01.03",
+    "M-CDM2.A01.04"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC03",
+   "title": "Case 3: Count người gửi thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A01",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC04",
+   "title": "Case 4: Tải rỗng/lỗi và response cũ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A01",
+   "scenario": "EX01 / EX02 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ08"
+   ],
+   "exceptions": [
+    "M-CDM2.EX01",
+    "M-CDM2.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC05",
+   "title": "Case 5: Quyền xem tab",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A01",
+   "scenario": "EX03 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ08"
+   ],
+   "exceptions": [
+    "M-CDM2.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC06",
+   "title": "Case 6: Search chỉ theo Tiêu đề tin nhắn",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A01",
+   "scenario": "Flow 1 / REQ01 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ01",
+    "M-CDM2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDM2.FLOW01"
+   ],
+   "items": [
+    "M-CDM2.A01.03"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC07",
+   "title": "Case 7: Mở popup từ +",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDM2.A02",
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDM2.FLOW02"
+   ],
+   "items": [
+    "M-CDM2.A02.01",
+    "M-CDM2.A02.02",
+    "M-CDM2.A02.06"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC08",
+   "title": "Case 8: Đổi mẫu và preview",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A02",
+   "scenario": "REQ02 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ02",
+    "M-CDM2.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC09",
+   "title": "Case 9: Tạo item thành công",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDM2.A02",
+   "scenario": "Flow 2 / REQ02 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ02",
+    "M-CDM2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDM2.FLOW02"
+   ],
+   "items": [
+    "M-CDM2.A02.06"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC10",
+   "title": "Case 10: Chưa chọn hoặc mẫu hết hiệu lực",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A02",
+   "scenario": "EX04 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ02"
+   ],
+   "exceptions": [
+    "M-CDM2.EX04"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDM2.A02.06"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC11",
+   "title": "Case 11: Hủy và tạo lỗi/chống lặp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A02",
+   "scenario": "EX05 / REQ02 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ02",
+    "M-CDM2.REQ07"
+   ],
+   "exceptions": [
+    "M-CDM2.EX05"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDM2.A02.06"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC12",
+   "title": "Case 12: Nội dung mẫu chỉ đọc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A02",
+   "scenario": "REQ02 / EX04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ02"
+   ],
+   "exceptions": [
+    "M-CDM2.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC13",
+   "title": "Case 13: Validation tiêu đề và mô tả bắt buộc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A02",
+   "scenario": "EX04 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ02"
+   ],
+   "exceptions": [
+    "M-CDM2.EX04"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDM2.A02.01",
+    "M-CDM2.A02.02",
+    "M-CDM2.A02.06"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC14",
+   "title": "Case 14: Tiêu đề và mô tả dài không giới hạn",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDM2.A02",
+   "scenario": "REQ01 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ01",
+    "M-CDM2.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDM2.A02.01",
+    "M-CDM2.A02.02"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC15",
+   "title": "Case 15: Đúng học viên và dữ liệu hiển thị",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A03",
+   "scenario": "REQ04 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ04",
+    "M-CDM2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDM2.A03.01"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC16",
+   "title": "Case 16: Chọn nền tảng từng dòng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A03",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC17",
+   "title": "Case 17: Đích gửi đúng CơmGao",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A03",
+   "scenario": "REQ03 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ03",
+    "M-CDM2.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC18",
+   "title": "Case 18: Thiếu liên kết hoặc platform chưa khả dụng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A03",
+   "scenario": "EX06 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ04"
+   ],
+   "exceptions": [
+    "M-CDM2.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC19",
+   "title": "Case 19: Không gửi cho phụ huynh ngoài cấu hình",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A03",
+   "scenario": "REQ04 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ04",
+    "M-CDM2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDM2.A03.01"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC20",
+   "title": "Case 20: Gửi xám do thiếu liên kết platform",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A03",
+   "scenario": "REQ04 / EX06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ04"
+   ],
+   "exceptions": [
+    "M-CDM2.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC21",
+   "title": "Case 21: Thay biến riêng mỗi học viên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A04",
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDM2.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC22",
+   "title": "Case 22: Thiếu biến hoặc CơmGao lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A04",
+   "scenario": "EX07 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ03"
+   ],
+   "exceptions": [
+    "M-CDM2.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC23",
+   "title": "Case 23: Gửi riêng đúng một người",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDM2.A04",
+   "scenario": "Flow 3 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDM2.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC24",
+   "title": "Case 24: Gửi full theo platform mỗi người",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A04",
+   "scenario": "Flow 4 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDM2.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC25",
+   "title": "Case 25: Gửi chung có thành công và lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A04",
+   "scenario": "REQ05 / REQ06 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ05",
+    "M-CDM2.REQ06",
+    "M-CDM2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC26",
+   "title": "Case 26: Chống lặp gửi chung và riêng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A04",
+   "scenario": "EX08 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ05"
+   ],
+   "exceptions": [
+    "M-CDM2.EX08"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC27",
+   "title": "Case 27: Timeout chưa rõ kết quả",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A04",
+   "scenario": "EX09 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ05"
+   ],
+   "exceptions": [
+    "M-CDM2.EX09"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDM2.A04.08"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC28",
+   "title": "Case 28: Lưu kết quả và đếm người duy nhất",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A04",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC29",
+   "title": "Case 29: Không gửi lại qua nút riêng và chung",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A04",
+   "scenario": "EX10 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ05"
+   ],
+   "exceptions": [
+    "M-CDM2.EX10"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDM2.A04.08"
+   ]
+  },
+  {
+   "id": "M-CDM2.TC30",
+   "title": "Case 30: Không còn người gửi được",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDM2.A04",
+   "scenario": "REQ05 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ05",
+    "M-CDM2.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC31",
+   "title": "Case 31: Kiểm tra quyền role và thành viên lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A05",
+   "scenario": "EX03 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ08"
+   ],
+   "exceptions": [
+    "M-CDM2.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC32",
+   "title": "Case 32: Đổi mẫu không sửa mẫu gốc/lịch sử gửi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A05",
+   "scenario": "REQ02 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ02",
+    "M-CDM2.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC33",
+   "title": "Case 33: Hover ×, Hủy và xác nhận xóa",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A05",
+   "scenario": "REQ01 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ01",
+    "M-CDM2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC34",
+   "title": "Case 34: Quản lý item người khác tạo",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A05",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDM2.TC35",
+   "title": "Case 35: Xóa lỗi và chống lặp confirm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A05",
+   "scenario": "Flow 5 / EX11 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ09"
+   ],
+   "exceptions": [
+    "M-CDM2.EX11"
+   ],
+   "flows": [
+    "M-CDM2.FLOW05"
+   ],
+   "items": [
+    "M-CDM2.A05.05"
+   ]
+  },
+  {
+   "id": "M-CDM2.TTC01",
+   "title": "Toast Case 1: Toast tạo item khác Toast gửi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A06",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDM2.A06.01"
+   ]
+  },
+  {
+   "id": "M-CDM2.TTC02",
+   "title": "Toast Case 2: Toast kết quả gửi riêng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A06",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDM2.A06.01"
+   ]
+  },
+  {
+   "id": "M-CDM2.TTC03",
+   "title": "Toast Case 3: Toast kết quả gửi chung hỗn hợp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDM2.A06",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDM2.A06.01"
+   ]
+  },
+  {
+   "id": "M-CDM2.TTC04",
+   "title": "Toast Case 4: Đang gửi và đóng/chống trùng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDM2.A06",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDM2.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDM2.A06.01",
+    "M-CDM2.A06.02"
+   ]
+  }
+ ],
+ "issues": [],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/class_management/class_detail_messages_requirements.md",
+   "prefix": "M-CDM2",
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Tin nhắn"
+  }
+ ]
+}

@@ -1,0 +1,1307 @@
+{
+ "cluster": "account-management",
+ "title": "Quản lý tài khoản (Master)",
+ "figmaPrefix": "AM-AM",
+ "requirements": [
+  {
+   "id": "AM-AM.REQ01",
+   "name": "",
+   "text": "Email là bắt buộc và phải duy nhất trong hệ thống.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.REQ02",
+   "name": "",
+   "text": "Mật khẩu chỉ hiển thị được (qua icon con mắt) khi tài khoản **còn giữ mật khẩu mặc định** (chưa từng đổi). Nếu tài khoản đã tự đổi mật khẩu, hệ thống **không hiển thị** mật khẩu dưới bất kỳ hình thức nào (bấm vào con mắt không có gì để xem).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.REQ03",
+   "name": "",
+   "text": "Mật khẩu mặc định khi tạo mới được hệ thống tự điền sẵn, Master có thể chỉnh sửa trước khi tạo.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.REQ04",
+   "name": "",
+   "text": "Đặt lại mật khẩu = đưa mật khẩu tài khoản đó về đúng giá trị mật khẩu mặc định của hệ thống.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.REQ05",
+   "name": "",
+   "text": "Một tài khoản phải có tối thiểu 1 role tại mọi thời điểm. Lúc tạo bắt buộc chọn >= 1 role. Lúc xóa không cho xóa role cuối cùng còn lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.REQ06",
+   "name": "",
+   "text": "Trạng thái \"Kích hoạt\" mặc định của tài khoản mới tạo luôn là **bật**.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.REQ07",
+   "name": "",
+   "text": "Xóa tài khoản là **soft-delete**",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.REQ08",
+   "name": "",
+   "text": "Master được **gán tự do mọi role** cho tài khoản, không giới hạn/loại trừ kết hợp role nào.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.REQ09",
+   "name": "",
+   "text": "Bất kể Master có **sửa lại giá trị** mật khẩu mặc định lúc tạo hay không, mật khẩu đó vẫn được xem là **mật khẩu khởi tạo** → tài khoản **bắt buộc phải đổi mật khẩu** ở lần đăng nhập đầu tiên. Tương tự, sau khi bị **Đặt lại mật khẩu** (Flow 4), tài khoản cũng **bắt buộc phải đổi mật khẩu** ở lần đăng nhập tiếp theo.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.REQ10",
+   "name": "",
+   "text": "\"Đặt lại mật khẩu\" và \"Tắt kích hoạt\" đều hủy session ở **tất cả thiết bị** mà tài khoản đó đang đăng nhập, không chỉ 1 phiên gần nhất.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "MST-TK-010000": {
+   "id": "MST-TK-010000",
+   "name": "danh-sach-tai-khoan",
+   "title": "Tài khoản / Danh sách tài khoản",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "MST-TK-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2008:35070",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/tai-khoan/danh-sach-tai-khoan",
+   "link": "/tai-khoan/danh-sach-tai-khoan",
+   "dark": "MST-TK-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "AM-AM.A02",
+    "AM-AM.A03",
+    "AM-AM.F01"
+   ]
+  },
+  "MST-TK-010010": {
+   "id": "MST-TK-010010",
+   "name": "popup-them-tai-khoan",
+   "title": "Tài khoản / Popup thêm tài khoản",
+   "kind": "popup",
+   "parent": "MST-TK-010000",
+   "shownOn": "MST-TK-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2148:23743",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/tai-khoan/danh-sach-tai-khoan?popup=MST-TK-010010",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "AM-AM.A01"
+   ]
+  },
+  "MST-TK-010020": {
+   "id": "MST-TK-010020",
+   "name": "popup-xac-nhan-xoa",
+   "title": "Tài khoản / Danh sách tài khoản / Popup xác nhận xoá",
+   "kind": "popup",
+   "parent": "MST-TK-010000",
+   "shownOn": "MST-TK-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1474:666",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/tai-khoan/danh-sach-tai-khoan?popup=MST-TK-010020",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "MST-TK-010030": {
+   "id": "MST-TK-010030",
+   "name": "popup-dat-lai-mat-khau",
+   "title": "Tài khoản / Danh sách tài khoản / Popup đặt lại mật khẩu",
+   "kind": "popup",
+   "parent": "MST-TK-010000",
+   "shownOn": "MST-TK-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1474:678",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/tai-khoan/danh-sach-tai-khoan?popup=MST-TK-010030",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "AM-AM.A01"
+   ]
+  },
+  "MST-TK-020000": {
+   "id": "MST-TK-020000",
+   "name": "chi-tiet-tai-khoan",
+   "title": "Tài khoản / Chi tiết tài khoản",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "MST-TK-020000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "3005:33480",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/tai-khoan/chi-tiet-tai-khoan",
+   "link": "/tai-khoan/chi-tiet-tai-khoan",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "AM-AM.A02",
+    "AM-AM.A03",
+    "AM-AM.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "AM-AM.A01",
+   "name": "trang-1-danh-sach-tai-khoan",
+   "title": "Trang 1: Danh sách tài khoản",
+   "screens": [
+    "mst-tk-010010",
+    "mst-tk-010030"
+   ],
+   "screensGuessed": [
+    "MST-TK-010010",
+    "MST-TK-010030"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "account_management/account_management.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "AM-AM.A02",
+   "name": "trang-2-popup-tao-chinh-sua-tai-khoan",
+   "title": "Trang 2: Popup tạo / chỉnh sửa tài khoản",
+   "screens": [
+    "mst-tk-010000",
+    "mst-tk-020000"
+   ],
+   "screensGuessed": [
+    "MST-TK-010000",
+    "MST-TK-020000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "account_management/account_management.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "AM-AM.A03",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [
+    "mst-tk-010000",
+    "mst-tk-020000"
+   ],
+   "screensGuessed": [
+    "MST-TK-010000",
+    "MST-TK-020000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "account_management/account_management.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "AM-AM.A03.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | Backend xác nhận thao tác thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "AM-AM.TTC01",
+      "AM-AM.TTC02",
+      "AM-AM.TTC04",
+      "AM-AM.TC16",
+      "AM-AM.TC17",
+      "AM-AM.TC18"
+     ],
+     "missingTerms": [
+      "Thành công",
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "AM-AM.A03.02",
+     "name": "thong-tin",
+     "label": "Thông tin",
+     "spec": "`Thông Báo` | Thao tác đã tiếp nhận nhưng dữ liệu cần thời gian đồng bộ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "mst-tk-020000": [
+       {
+        "term": "Thông tin",
+        "figmaId": "3005:41047",
+        "layer": "Thông Tin Cá Nhân",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Thông Báo",
+        "figmaId": "3005:43093",
+        "layer": "Molecule/Field",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Molecule/Field",
+        "component": "Molecule/Field",
+        "variant": {
+         "Gợi ý": "Gợi ý hoặc thông báo lỗi",
+         "Có gợi ý": false,
+         "Loại ô": "Ô nhập",
+         "Mật độ": "Gọn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "AM-AM.TC06",
+      "AM-AM.TC11",
+      "AM-AM.TC12"
+     ],
+     "missingTerms": [],
+     "status": "khop-mot-phan"
+    },
+    {
+     "id": "AM-AM.A03.03",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | Dữ liệu/điều kiện cần người dùng kiểm tra.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "AM-AM.TTC02",
+      "AM-AM.TC16"
+     ],
+     "missingTerms": [
+      "Cảnh báo",
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "AM-AM.A03.04",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | Backend/network không hoàn tất thao tác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "mst-tk-020000": [
+       {
+        "term": "Lỗi",
+        "figmaId": "3005:43093",
+        "layer": "Molecule/Field",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Molecule/Field",
+        "component": "Molecule/Field",
+        "variant": {
+         "Gợi ý": "Gợi ý hoặc thông báo lỗi",
+         "Có gợi ý": false,
+         "Loại ô": "Ô nhập",
+         "Mật độ": "Gọn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "khop-mot-phan"
+    }
+   ]
+  },
+  {
+   "id": "AM-AM.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "mst-tk-010000",
+    "mst-tk-020000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "AM-AM.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "mst-tk-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2223:81695",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Master",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "AM-AM.F01.02",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "mst-tk-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4969:25733",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Quản lý tài khoản"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "AM-AM.F01.03",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "mst-tk-010000": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "2008:38383",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "AM-AM.F01.04",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "mst-tk-010000": [
+       {
+        "term": "Dropdown",
+        "figmaId": "2008:38365",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Vai trò",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "AM-AM.F01.05",
+     "name": "role-component",
+     "label": "Role Component",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "mst-tk-010000": [
+       {
+        "term": "Role Component",
+        "figmaId": "2623:27509",
+        "layer": "Role Component",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Role Component",
+        "component": "Role Component",
+        "variant": {
+         "Name": "Retancle +",
+         "Dropdown": "Có"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "AM-AM.F01.06",
+     "name": "switch",
+     "label": "Switch",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "mst-tk-010000": [
+       {
+        "term": "Switch",
+        "figmaId": "2623:27539",
+        "layer": "Switch",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Switch",
+        "component": "Switch",
+        "variant": {
+         "Size": "Small",
+         "Status": "On",
+         "Title": "No",
+         "Copy": "No"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "AM-AM.F01.07",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "mst-tk-010000": [
+       {
+        "term": "Mouse click",
+        "figmaId": "2623:27744",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "AM-AM.F01.08",
+     "name": "phan-trang",
+     "label": "Phân Trang",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "mst-tk-010000": [
+       {
+        "term": "Phân Trang",
+        "figmaId": "2682:32119",
+        "layer": "Phân Trang",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Phân Trang",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "AM-AM.F01.09",
+     "name": "molecule-field",
+     "label": "Molecule/Field",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "mst-tk-020000": [
+       {
+        "term": "Molecule/Field",
+        "figmaId": "3004:49972",
+        "layer": "Molecule/Field",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Field",
+        "component": "Molecule/Field",
+        "variant": {
+         "Gợi ý": "Gợi ý hoặc thông báo lỗi",
+         "Có gợi ý": false,
+         "Loại ô": "Ô nhập",
+         "Mật độ": "Gọn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "AM-AM.F01.10",
+     "name": "color-theme",
+     "label": "COLOR THEME",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "mst-tk-020000": [
+       {
+        "term": "COLOR THEME",
+        "figmaId": "4030:88770",
+        "layer": "COLOR THEME",
+        "confidence": "cao",
+        "region": null,
+        "owner": "COLOR THEME",
+        "component": "COLOR THEME",
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "AM-AM.F01.11",
+     "name": "popup-footer",
+     "label": "Popup/Footer",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "mst-tk-020000": [
+       {
+        "term": "Popup/Footer",
+        "figmaId": "3005:41448",
+        "layer": "Popup/Footer",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Footer",
+        "component": "Popup/Footer",
+        "variant": {
+         "Type": "Hai nút"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "AM-AM.EX01",
+   "text": "Tạo tài khoản không chọn role nào → chặn submit, báo lỗi \"Vui lòng chọn ít nhất 1 role\".",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.EX02",
+   "text": "Tạo tài khoản với email đã tồn tại → báo lỗi \"Email đã được sử dụng\".",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.EX03",
+   "text": "Đặt lại mật khẩu cho tài khoản đang có phiên đăng nhập → hủy session ở **tất cả thiết bị**, tài khoản phải đăng nhập lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.EX04",
+   "text": "Vô hiệu hóa (tắt kích hoạt) tài khoản đang có phiên đăng nhập → **buộc đăng xuất ngay lập tức trên tất cả thiết bị** (hủy toàn bộ session, giống hành vi đặt lại mật khẩu), đồng thời chặn đăng nhập ở các lần sau.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "AM-AM.EX05",
+   "text": "Master cố **xóa hoặc tắt kích hoạt chính tài khoản Master đang đăng nhập** → hệ thống **chặn hành động**, báo lỗi (tránh tự khóa mình khỏi hệ thống).",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "AM-AM.FLOW01",
+   "name": "Tạo tài khoản",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "AM-AM.FLOW02",
+   "name": "Thêm role cho tài khoản",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "AM-AM.FLOW03",
+   "name": "Bật/Tắt kích hoạt tài khoản",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "AM-AM.FLOW04",
+   "name": "Đặt lại mật khẩu",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "AM-AM.FLOW05",
+   "name": "Xóa tài khoản (soft-delete)",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "AM-AM.FLOW06",
+   "name": "Tắt kích hoạt tài khoản đang có phiên đăng nhập",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  }
+ ],
+ "testcases": [
+  {
+   "id": "AM-AM.TTC01",
+   "title": "Toast Case 1: Thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "AM-AM.A03",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "AM-AM.A03.01"
+   ]
+  },
+  {
+   "id": "AM-AM.TTC02",
+   "title": "Toast Case 2: Cảnh báo",
+   "priority": "High",
+   "smoke": false,
+   "region": "AM-AM.A03",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "AM-AM.A03.01",
+    "AM-AM.A03.03"
+   ]
+  },
+  {
+   "id": "AM-AM.TTC03",
+   "title": "Toast Case 3: Lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "AM-AM.A03",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TTC04",
+   "title": "Toast Case 4: Thông tin, đóng và chống lặp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "AM-AM.A03",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "AM-AM.A03.01"
+   ]
+  },
+  {
+   "id": "AM-AM.TC01",
+   "title": "Case 1: Tạo tài khoản thành công",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 1",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "AM-AM.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC02",
+   "title": "Case 2: Tạo tài khoản thiếu role",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "AM-AM.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC03",
+   "title": "Case 3: Tạo tài khoản email trùng",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "AM-AM.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC04",
+   "title": "Case 4: Thêm role cho tài khoản",
+   "priority": "Medium",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 2",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "AM-AM.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC05",
+   "title": "Case 5: Badge \"+N\" khi nhiều hơn 2 role",
+   "priority": "Low",
+   "smoke": false,
+   "region": null,
+   "scenario": "UI (Badge \"+2\")",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC06",
+   "title": "Case 6: Bấm vào hàng tài khoản mở popup chỉnh sửa",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "UI (Row click)",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "AM-AM.A03.02"
+   ]
+  },
+  {
+   "id": "AM-AM.TC07",
+   "title": "Case 7: Bật kích hoạt tài khoản",
+   "priority": "Medium",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 3",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "AM-AM.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC08",
+   "title": "Case 8: Tắt kích hoạt tài khoản không có phiên đăng nhập",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "AM-AM.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC09",
+   "title": "Case 9: Tắt kích hoạt tài khoản đang có phiên đăng nhập",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 6 / EX04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "AM-AM.EX04"
+   ],
+   "flows": [
+    "AM-AM.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC10",
+   "title": "Case 10: Đặt lại mật khẩu cho tài khoản đang có phiên đăng nhập",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 4 / EX03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "AM-AM.EX03"
+   ],
+   "flows": [
+    "AM-AM.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC11",
+   "title": "Case 11: Xem mật khẩu mặc định",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "AM-AM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "AM-AM.A03.02"
+   ]
+  },
+  {
+   "id": "AM-AM.TC12",
+   "title": "Case 12: Không xem được mật khẩu đã đổi",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "AM-AM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "AM-AM.A03.02"
+   ]
+  },
+  {
+   "id": "AM-AM.TC13",
+   "title": "Case 13: Xóa tài khoản (soft-delete)",
+   "priority": "Medium",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 5 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "AM-AM.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "AM-AM.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC14",
+   "title": "Case 14: Chặn Master tự xóa/tắt kích hoạt chính mình",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "AM-AM.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC15",
+   "title": "Case 15: Không cho xóa role cuối cùng của tài khoản",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "AM-AM.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC16",
+   "title": "Case 16: Master gán role tự do, không giới hạn kết hợp",
+   "priority": "Low",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "AM-AM.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "AM-AM.A03.01",
+    "AM-AM.A03.03"
+   ]
+  },
+  {
+   "id": "AM-AM.TC17",
+   "title": "Case 17: Bắt buộc đổi mật khẩu lần đầu mới tạo (dù Master đã sửa mật khẩu khởi tạo)",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "AM-AM.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "AM-AM.A03.01"
+   ]
+  },
+  {
+   "id": "AM-AM.TC18",
+   "title": "Case 18: Bắt buộc đổi mật khẩu sau khi bị đặt lại",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ09 / Flow 4",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "AM-AM.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "AM-AM.FLOW04"
+   ],
+   "items": [
+    "AM-AM.A03.01"
+   ]
+  },
+  {
+   "id": "AM-AM.TC19",
+   "title": "Case 19: Tìm kiếm kết hợp bộ lọc",
+   "priority": "Medium",
+   "smoke": true,
+   "region": null,
+   "scenario": "UI (Tìm kiếm & bộ lọc)",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "AM-AM.TC20",
+   "title": "Case 20: Role khác không truy cập được màn hình",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "MST-TK-010010",
+   "text": "popup “Tài khoản / Popup thêm tài khoản” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "MST-TK-010010",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "MST-TK-010020",
+   "text": "popup “Tài khoản / Danh sách tài khoản / Popup xác nhận xoá” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "MST-TK-010020",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "MST-TK-010030",
+   "text": "popup “Tài khoản / Danh sách tài khoản / Popup đặt lại mật khẩu” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "MST-TK-010030",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "AM-AM.TTC01",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "AM-AM.TTC02",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "AM-AM.TTC03",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "AM-AM.TTC04",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "AM-AM.TC05",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "AM-AM.TC06",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "AM-AM.TC19",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "AM-AM.TC20",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "AM-AM.REQ01",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "AM-AM.REQ03",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "AM-AM.REQ04",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "AM-AM.REQ06",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "AM-AM.REQ10",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "account_management/account_management.md",
+   "prefix": "AM-AM",
+   "title": "Quản lý tài khoản (Master)"
+  }
+ ]
+}

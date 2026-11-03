@@ -1,0 +1,1531 @@
+{
+ "cluster": "course-management",
+ "title": "Quản lý khoá học",
+ "figmaPrefix": "CM-CM",
+ "requirements": [
+  {
+   "id": "CM-CM.REQ01",
+   "name": "",
+   "text": "Xoá khoá học là xoá mềm, không xoá dữ liệu vật lý; các kỳ học con cũng được xoá mềm, cần có popup xác nhận trước khi xoá. **Chỉ khoá học `Nháp` được xoá**; khoá học `Công Khai` / `Vô hiệu` không được xoá (muốn ngừng dùng thì để/chuyển `Vô hiệu`). Khoá học `Nháp` đang được sử dụng cũng không được xoá (REQ08). Nút Xoá mờ + tooltip với khoá `Công Khai` / `Vô hiệu`; BE luôn kiểm tra lại trạng thái và tham chiếu tại thời điểm xoá, FE hiển thị Toast lỗi với nội dung BE trả về (EX09). Quy tắc **\"chỉ `Nháp` được xoá; `Công Khai`, `Vô hiệu` không được xoá\"** áp dụng chung cho mọi dữ liệu có trạng thái Nháp / Công Khai / Vô hiệu trong Khoá học, Học kỳ, Danh mục, Cấp độ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.REQ02",
+   "name": "",
+   "text": "Danh mục và Cấp độ chỉ nhận giá trị từ danh sách đã define sẵn ở màn hình cấu hình riêng, không cho nhập tự do (áp dụng cả ở màn hình danh sách lẫn trong popup Công khai); Số kỳ tự động tính từ số lượng kỳ học con, không cho nhập/sửa tay.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.REQ03",
+   "name": "",
+   "text": "Danh sách khoá học không phân trang, hiển thị toàn bộ khoá học chưa bị xoá mềm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.REQ04",
+   "name": "",
+   "text": "Khoá học đã Xoá (xoá mềm) không hiển thị trong danh sách và không lọc/tìm kiếm ra được.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.REQ05",
+   "name": "",
+   "text": "Ràng buộc chuyển trạng thái khoá học (3 trạng thái: **Nháp**, **Công Khai**, **Vô hiệu**):",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.REQ06",
+   "name": "ID khoá học",
+   "text": "đúng **9 chữ số** `CCAALLMMM`, chỉ gồm chữ số (giữ số 0 đứng đầu):",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.REQ07",
+   "name": "",
+   "text": "Khi chuyển trạng thái khoá học từ Nháp sang Công Khai, hệ thống **bắt buộc** hiển thị popup \"Kích hoạt công khai khoá học\" yêu cầu điền/xác nhận đầy đủ 4 trường: ID (9 số `CCAALLMMM`, CD chỉ sửa `MMM`), Danh mục, Cấp độ, Mô tả. Popup này luôn hiển thị và yêu cầu xác nhận lại toàn bộ 4 trường **ngay cả khi** các trường đó đã được điền sẵn từ trước ở màn hình danh sách (inline) — không được bỏ qua popup hay tự động công khai chỉ vì dữ liệu inline đã đầy đủ. Trạng thái chỉ đổi thành Công Khai sau khi CD xác nhận thành công trong popup. Chiều Vô hiệu → Công Khai chuyển ngay, không mở popup.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.REQ08",
+   "name": "",
+   "text": "Ràng buộc xoá khoá học: ngoài điều kiện phải đang `Nháp` (REQ01), khoá học **đang được sử dụng** (có lớp học gắn với khoá học, hoặc có học kỳ của khoá nằm trong Tổng ôn của học kỳ thuộc khoá khác — chỉ tính bản ghi chưa xoá mềm) thì **không được xoá**. BE kiểm tra trạng thái, tham chiếu và xoá mềm trong cùng một giao dịch, từ chối nếu không hợp lệ; FE hiển thị Toast lỗi với nội dung BE trả về (EX09). Khoá học `Vô hiệu` không hiển thị để chọn mới ở nơi khác (vd. tạo lớp), dữ liệu đang dùng giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.REQ09",
+   "name": "",
+   "text": "Tìm kiếm khoá học khớp một phần theo ID hoặc Tên khoá học, kích hoạt sau khi nhấn Enter. Tên khoá học chưa giới hạn độ dài.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.REQ11",
+   "name": "Nhân bản khoá học (deep clone)",
+   "text": "Nhân bản được ở mọi trạng thái khoá gốc; bản sao luôn `Nháp`, khoá gốc giữ nguyên. Toàn bộ thao tác thực hiện trong **một giao dịch** (thành công hết hoặc không tạo gì, EX10). Phạm vi:",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "CD-KH-010000": {
+   "id": "CD-KH-010000",
+   "name": "quan-ly-khoa-hoc",
+   "title": "Quản lý khoá học",
+   "kind": "man-chinh",
+   "parent": "CD-KH-020100",
+   "shownOn": "CD-KH-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "5035:375316",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quan-ly-khoa-hoc",
+   "link": "/quan-ly-khoa-hoc",
+   "dark": "CD-KH-010000-DK",
+   "openedFrom": [
+    "CD-KH-020100",
+    "CD-KH-020200",
+    "CD-KH-020201",
+    "CD-KH-020210",
+    "CD-KH-020220",
+    "CD-KH-020230",
+    "CD-KH-020240",
+    "CD-KH-020250",
+    "CD-KH-020260",
+    "CD-KH-020270",
+    "CD-KH-030100",
+    "CD-KH-030104",
+    "CD-KH-030200",
+    "CD-KH-030300",
+    "CD-KH-030340",
+    "CD-KH-030343",
+    "CD-KH-030347"
+   ],
+   "citedByRequirement": true,
+   "regions": [
+    "CM-CM.A01",
+    "CM-CM.A02",
+    "CM-CM.A04",
+    "CM-CM.F01",
+    "CM-CM.F02"
+   ]
+  },
+  "CD-KH-010010": {
+   "id": "CD-KH-010010",
+   "name": "popup-kich-hoat-cong-khai",
+   "title": "Quản lý khoá học / Popup kích hoạt công khai",
+   "kind": "popup",
+   "parent": "CD-KH-010000",
+   "shownOn": "CD-KH-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2011:26470",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/quan-ly-khoa-hoc?popup=CD-KH-010010",
+   "dark": "CD-KH-010010-DK",
+   "openedFrom": [
+    "CD-KH-010000",
+    "CD-KH-020230",
+    "CD-KH-030100",
+    "CD-KH-030104",
+    "CD-KH-030200",
+    "CD-KH-030300",
+    "CD-KH-030342",
+    "CD-KH-030350"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-CM.A03"
+   ]
+  },
+  "CD-KH-010013": {
+   "id": "CD-KH-010013",
+   "name": "id-hop-le",
+   "title": "Quản lý khoá học / Popup kích hoạt công khai / ID hợp lệ",
+   "kind": "trang-thai",
+   "parent": "CD-KH-010010",
+   "shownOn": "CD-KH-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2706:43836",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/quan-ly-khoa-hoc?state=CD-KH-010013",
+   "dark": "CD-KH-010013-DK",
+   "openedFrom": [
+    "CD-KH-010010"
+   ],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [
+  {
+   "id": "CM-CM.A01",
+   "name": "trang-1-danh-sach-khoa-hoc",
+   "title": "Trang 1: Danh sách khoá học",
+   "screens": [
+    "cd-kh-010000"
+   ],
+   "screensGuessed": [
+    "CD-KH-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "course_management/course_management.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.A02",
+   "name": "trang-2-menu-chi-tiet-khoa-hoc",
+   "title": "Trang 2: Menu chi tiết khoá học",
+   "screens": [
+    "cd-kh-010000"
+   ],
+   "screensGuessed": [
+    "CD-KH-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "course_management/course_management.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.A03",
+   "name": "trang-3-popup-xac-nhan-cong-khai-khoa-ho",
+   "title": "Trang 3: Popup xác nhận Công khai khoá học",
+   "screens": [
+    "cd-kh-010010"
+   ],
+   "screensGuessed": [
+    "CD-KH-010010"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "course_management/course_management.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.A04",
+   "name": "trang-4-popup-nhan-ban-khoa-hoc",
+   "title": "Trang 4: Popup Nhân bản khoá học",
+   "screens": [
+    "cd-kh-010000"
+   ],
+   "screensGuessed": [
+    "CD-KH-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "course_management/course_management.md",
+   "needsDesign": true,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM.A04.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "`Nhân bản khoá học`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM.TC26"
+     ],
+     "missingTerms": [
+      "Tiêu đề",
+      "Nhân bản khoá học"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM.A04.02",
+     "name": "noi-dung",
+     "label": "Nội dung",
+     "spec": "`Tạo bản sao của khoá học \"<Tên khoá học>\"? Bản sao ở trạng thái Nháp, sao chép toàn bộ Tổng quan, Lộ trình, Kiến thức, Học kỳ, Bài học, Bài kiểm tra, Bài tập về nhà, Quản lý, Tài liệu. Lớp học và dữ liệu học viên không được sao chép.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I4915:256174;4901:216084",
+        "layer": "Card Menu",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "2808:53556",
+         "Label": "Nội dung",
+         "Type": "Chính",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM.TC14",
+      "CM-CM.TC15",
+      "CM-CM.TC17",
+      "CM-CM.TC26",
+      "CM-CM.TC27",
+      "CM-CM.TC28"
+     ],
+     "missingTerms": [
+      "Tạo bản sao của khoá học \"<Tên khoá học>\"? Bản sao ở trạng thái Nháp, sao chép toàn bộ Tổng quan, Lộ trình, Kiến thức, Học kỳ, Bài học, Bài kiểm tra, Bài tập về nhà, Quản lý, Tài liệu. Lớp học và dữ liệu học viên không được sao chép."
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM.A04.03",
+     "name": "nut",
+     "label": "Nút",
+     "spec": "`Huỷ` — `Nhân bản` (disable + loading trong lúc BE xử lý để tránh gửi lặp)",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nút",
+      "Huỷ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM.A04.04",
+     "name": "toast-thanh-cong",
+     "label": "Toast thành công",
+     "spec": "`Thành Công` — `Đã nhân bản khoá học \"<Tên khoá học> (Bản sao)\".`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Toast thành công",
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM.A04.05",
+     "name": "toast-loi",
+     "label": "Toast lỗi",
+     "spec": "`Có Lỗi Xảy Ra` — nội dung BE trả về; không tạo bản sao dở dang (EX10).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM.TC14",
+      "CM-CM.TC15",
+      "CM-CM.TC16",
+      "CM-CM.TC17"
+     ],
+     "missingTerms": [
+      "Toast lỗi",
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "CM-CM.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "cd-kh-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM.F01.01",
+     "name": "sidebar-menu-cd",
+     "label": "Sidebar · MENU - CD",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "Sidebar · MENU - CD",
+        "figmaId": "4915:256174",
+        "layer": "Sidebar · MENU - CD",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - CD",
+        "component": "MENU - CD",
+        "variant": {
+         "Trang": "Khoá Học"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM.F01.02",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2223:85233",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "CD",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM.F01.03",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "Component 2",
+        "figmaId": "4273:160608",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Đắc Nhân"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM.F01.04",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "2706:20428",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM.F01.05",
+     "name": "dd-molecule-trigger",
+     "label": "DD/Molecule/Trigger",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "DD/Molecule/Trigger",
+        "figmaId": "2706:19433",
+        "layer": "DD/Molecule/Trigger",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Molecule/Trigger",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Danh mục",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM.F01.06",
+     "name": "add-new-bar-them-noi-dung-khoa-hoc-moi",
+     "label": "Add New Bar · Thêm nội dung khoá học mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "Add New Bar · Thêm nội dung khoá học mới",
+        "figmaId": "2702:48160",
+        "layer": "Add New Bar · Thêm nội dung khoá học mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Thêm nội dung khoá học mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1075:1478",
+         "Placeholder": "Thêm nội dung khoá học mới",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM.F01.07",
+     "name": "dd-organism-menu-panel",
+     "label": "DD/Organism/Menu Panel",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "DD/Organism/Menu Panel",
+        "figmaId": "2032:5244",
+        "layer": "DD/Organism/Menu Panel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Organism/Menu Panel",
+        "component": "DD/Organism/Menu Panel",
+        "variant": {
+         "Footer": false,
+         "Search": false,
+         "Type": "Single"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "CM-CM.F02",
+   "name": "row",
+   "title": "Row",
+   "screens": [
+    "cd-kh-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM.F02.01",
+     "name": "id-badge",
+     "label": "ID Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "ID Badge",
+        "figmaId": "1994:25857",
+        "layer": "ID Badge",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "ID Badge",
+        "component": "Atom/ID Badge",
+        "variant": {
+         "Type": "7-digit",
+         "Size": "26H",
+         "Item": "01"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM.F02.02",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "2014:3933",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Khoá học HSK1",
+         "Variant": "Orange",
+         "Dropdown": "On"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM.F02.03",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "2065:22378",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "3",
+         "Type": "Kỳ",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM.F02.04",
+     "name": "atom-status",
+     "label": "Atom/Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "Atom/Status",
+        "figmaId": "1474:15136",
+        "layer": "Atom/Status",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Status",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Công khai",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM.F02.05",
+     "name": "arrow-detail",
+     "label": "ARROW DETAIL",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "ARROW DETAIL",
+        "figmaId": "1391:14535",
+        "layer": "ARROW DETAIL",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "ARROW DETAIL",
+        "component": "ARROW DETAIL",
+        "variant": {
+         "Property 1": "Arrow detail (Default)",
+         "Property 2": "No"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM.F02.06",
+     "name": "dd-organism-menu-panel",
+     "label": "DD/Organism/Menu Panel",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-010000": [
+       {
+        "term": "DD/Organism/Menu Panel",
+        "figmaId": "2706:42930",
+        "layer": "DD/Organism/Menu Panel",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "DD/Organism/Menu Panel",
+        "component": "DD/Organism/Menu Panel",
+        "variant": {
+         "Footer": false,
+         "Search": false,
+         "Type": "Action"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "CM-CM.EX01",
+   "text": "Tên khoá học mới bị bỏ trống hoặc chỉ chứa khoảng trắng → Chặn tạo mới, dữ liệu không thay đổi, disable nút \"+\"/Enter, không có notification hiển thị.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.EX02",
+   "text": "Lọc/tìm kiếm với điều kiện không khớp khoá học nào → Trả về danh sách rỗng, hiển thị \"Không có dữ liệu\".",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.EX03",
+   "text": "Gọi API cập nhật trạng thái hoặc xoá mềm thất bại (lỗi mạng/server) → Giữ nguyên trạng thái/dữ liệu hiện tại trên UI, hiển thị thông báo lỗi, không cập nhật is_deleted/status.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.EX04",
+   "text": "Gọi API đổi trạng thái với transition không hợp lệ (Nháp → Vô hiệu, Công Khai → Nháp, Vô hiệu → Nháp) → BE từ chối, trả lỗi, FE giữ nguyên trạng thái hiện tại, hiển thị thông báo lỗi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.EX05",
+   "text": "Trong popup Công khai, `MMM` không đúng định dạng 3 chữ số `001`–`999` (thiếu số, thừa số, chứa ký tự không phải số, `000`) hoặc ID 9 số trùng với ID khoá học khác (kể cả khoá học đã xoá mềm) → hiển thị lỗi \"ID không hợp lệ. Vui lòng kiểm tra.\" dưới ô ID, chặn nút \"Công khai khoá học\", trạng thái giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.EX06",
+   "text": "Trong popup Công khai, bỏ trống Danh mục và/hoặc Cấp độ và/hoặc Mô tả → hiển thị lỗi bắt buộc dưới từng trường tương ứng, chặn nút \"Công khai khoá học\", trạng thái giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.EX07",
+   "text": "CD nhấn \"Hủy\" hoặc đóng popup (icon \"X\") ở bất kỳ bước nào trước khi xác nhận thành công → đóng popup, không lưu thay đổi, trạng thái khoá học giữ nguyên như trước khi mở popup.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.EX08",
+   "text": "Gọi API xác nhận Công khai thất bại (lỗi mạng/server) → giữ nguyên trạng thái Nháp, popup vẫn mở (hoặc hiển thị lại), hiển thị thông báo lỗi, dữ liệu ID/Danh mục/Cấp độ/Mô tả chưa lưu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.EX09",
+   "text": "Xoá khoá học không ở `Nháp` (`Công Khai` / `Vô hiệu`, gọi API trực tiếp) hoặc khoá học `Nháp` đang được sử dụng (gán cho lớp, có học kỳ nằm trong Tổng ôn của khoá khác), kể cả khi tham chiếu vừa phát sinh ngay trước lúc BE xoá → BE từ chối, trả lỗi (ví dụ `Chỉ xoá được khoá học ở trạng thái Nháp.` hoặc `Khoá học đang được sử dụng, không thể xoá.`); FE đóng popup xác nhận, hiển thị Toast lỗi với đúng nội dung BE trả về, dữ liệu giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.EX10",
+   "text": "Nhân bản khoá học thất bại (lỗi mạng/server, lỗi ở bất kỳ bước sao chép nào) → BE rollback toàn bộ, không tạo khoá học/học kỳ/bài học bản sao dở dang; FE hiển thị Toast lỗi `Có Lỗi Xảy Ra` với nội dung BE trả về, khoá gốc không đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.EX11",
+   "text": "Sửa field ngoài `Tên khoá học` / `Mô tả`, hoặc thêm / sửa / xoá / sắp xếp bất kỳ dữ liệu chi tiết bên trong (học kỳ, bài học, bài kiểm tra, BTVN, bộ câu hỏi, S1, S2, S4, Quản lý, Tài liệu) khi khoá học đang `Công Khai` / `Vô hiệu` (qua UI hoặc gọi API trực tiếp) → UI ở dạng chỉ đọc (ẩn/disable thao tác); BE từ chối, trả lỗi `Khoá học không ở trạng thái Nháp, chỉ được sửa Tên và Mô tả.`, dữ liệu không đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM.EX12",
+   "text": "Chọn Danh mục / Cấp độ (ở danh sách, popup Công khai hoặc khi nhân bản) mà `CCAALL` tương ứng đã dùng hết `MMM` `001`–`999` → BE từ chối, trả lỗi `Đã hết ID khoá học khả dụng cho Danh mục và Cấp độ này.`; FE hiển thị Toast lỗi (ở popup: lỗi dưới ô ID, tắt nút `Công khai khoá học`), Danh mục / Cấp độ / ID giữ như trước; nhân bản thì không tạo bản sao (giống EX10).",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "CM-CM.FLOW01",
+   "name": "Thêm khoá học mới",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-CM.FLOW02",
+   "name": "Lọc / tìm kiếm khoá học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-CM.FLOW03",
+   "name": "Chuyển sang Vô hiệu / Xoá khoá học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-CM.FLOW04",
+   "name": "Xem chi tiết khoá học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-CM.FLOW05",
+   "name": "Chuyển trạng thái Nháp → Công Khai",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-CM.FLOW06",
+   "name": "Nhân bản khoá học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  }
+ ],
+ "testcases": [
+  {
+   "id": "CM-CM.TC01",
+   "title": "Case 1: Thêm khoá học mới (nút \"+\" / Enter)",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 1",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC02",
+   "title": "Case 2: Thêm khoá học với tên trống",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-CM.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC03",
+   "title": "Case 3: Lọc theo Danh mục, Cấp độ, tìm kiếm",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 2",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC04",
+   "title": "Case 4: Lọc không có kết quả",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-CM.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC05",
+   "title": "Case 5: Công Khai → Vô hiệu và menu đổi trạng thái",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 3, REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC06",
+   "title": "Case 6: Chặn chuyển Nháp → Vô hiệu và chuyển về Nháp",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX04, REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ05"
+   ],
+   "exceptions": [
+    "CM-CM.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC07",
+   "title": "Case 7: Xoá mềm khoá học",
+   "priority": "Medium",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 3, REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC23",
+   "title": "Case 23: Không xoá khoá học Công khai / Vô hiệu",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3, REQ01, EX09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ01"
+   ],
+   "exceptions": [
+    "CM-CM.EX09"
+   ],
+   "flows": [
+    "CM-CM.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC08",
+   "title": "Case 8: Xem chi tiết khoá học - mặc định vào Học kỳ",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 4",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC09",
+   "title": "Case 9: Dữ liệu Danh mục/Cấp độ/ID được lưu và hiển thị chính xác",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ02, REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ02",
+    "CM-CM.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC10",
+   "title": "Case 10: Chuyển sang Công Khai luôn mở popup xác nhận đủ trường",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 5, REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC11",
+   "title": "Case 11: Validate dữ liệu trong popup Công khai",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX05, EX06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-CM.EX05",
+    "CM-CM.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC12",
+   "title": "Case 12: Hủy popup Công khai",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-CM.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC13",
+   "title": "Case 13: Xác nhận Công khai thành công",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 5, REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC14",
+   "title": "Case 14: Chặn xoá khoá học đang có lớp học",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 3, REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW03"
+   ],
+   "items": [
+    "CM-CM.A04.02",
+    "CM-CM.A04.05"
+   ]
+  },
+  {
+   "id": "CM-CM.TC15",
+   "title": "Case 15: Chặn xoá khi học kỳ nằm trong Tổng ôn của khoá khác",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3, REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW03"
+   ],
+   "items": [
+    "CM-CM.A04.02",
+    "CM-CM.A04.05"
+   ]
+  },
+  {
+   "id": "CM-CM.TC16",
+   "title": "Case 16: Xoá khoá học đang Nháp chưa được sử dụng",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3, REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW03"
+   ],
+   "items": [
+    "CM-CM.A04.05"
+   ]
+  },
+  {
+   "id": "CM-CM.TC17",
+   "title": "Case 17: BE chặn xoá khoá học đang được sử dụng",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX09, REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ08"
+   ],
+   "exceptions": [
+    "CM-CM.EX09"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM.A04.02",
+    "CM-CM.A04.05"
+   ]
+  },
+  {
+   "id": "CM-CM.TC18",
+   "title": "Case 18: Dropdown chỉ hiện Danh mục/Cấp độ Công Khai",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ02, EX10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ02"
+   ],
+   "exceptions": [
+    "CM-CM.EX10"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC19",
+   "title": "Case 19: Tìm kiếm theo ID / Tên",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 2 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC20",
+   "title": "Case 20: Bộ lọc hiển thị Danh mục / Cấp độ Vô hiệu",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC21",
+   "title": "Case 21: Vô hiệu → Công Khai chuyển ngay, không mở popup",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3 / REQ05, REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ05",
+    "CM-CM.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC22",
+   "title": "Case 22: ID trùng khoá học đã xoá mềm",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX05, REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ06"
+   ],
+   "exceptions": [
+    "CM-CM.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC24",
+   "title": "Case 24: Khoá học Công khai / Vô hiệu chỉ sửa được Tên, Mô tả",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "REQ10, EX11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ10"
+   ],
+   "exceptions": [
+    "CM-CM.EX11"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC25",
+   "title": "Case 25: Khoá học Nháp sửa được toàn bộ",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC26",
+   "title": "Case 26: Mở popup Nhân bản khoá học",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "Trang 4, Flow 6",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW06"
+   ],
+   "items": [
+    "CM-CM.A04.01",
+    "CM-CM.A04.02"
+   ]
+  },
+  {
+   "id": "CM-CM.TC27",
+   "title": "Case 27: Nhân bản khoá học Công khai đầy đủ dữ liệu",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 6, REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM.FLOW06"
+   ],
+   "items": [
+    "CM-CM.A04.02"
+   ]
+  },
+  {
+   "id": "CM-CM.TC28",
+   "title": "Case 28: Sửa bản sao không ảnh hưởng khoá gốc",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-CM.A04.02"
+   ]
+  },
+  {
+   "id": "CM-CM.TC29",
+   "title": "Case 29: Không sao chép lớp học, dữ liệu học viên",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC30",
+   "title": "Case 30: Nhân bản thất bại",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-CM.EX10"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM.TC31",
+   "title": "Case 31: Nhân bản khi Danh mục / Cấp độ gốc đã Vô hiệu",
+   "priority": "Low",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-KH-010010",
+   "text": "popup “Quản lý khoá học / Popup kích hoạt công khai” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-KH-010013",
+   "text": "trang-thai “Quản lý khoá học / Popup kích hoạt công khai / ID hợp lệ” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CD-KH-010013",
+   "text": "loại trang-thai, màn cha CD-KH-010010 — tin cậy trung-binh"
+  },
+  {
+   "kind": "testcase-tro-ma-khong-ton-tai",
+   "ref": "CM-CM.TC24",
+   "text": "trỏ tới CM-CM.REQ10"
+  },
+  {
+   "kind": "testcase-tro-ma-khong-ton-tai",
+   "ref": "CM-CM.TC25",
+   "text": "trỏ tới CM-CM.REQ10"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM.REQ03",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM.REQ04",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM.EX03",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM.EX08",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM.EX12",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "course_management/course_management.md",
+   "prefix": "CM-CM",
+   "title": "Quản lý khoá học"
+  }
+ ]
+}

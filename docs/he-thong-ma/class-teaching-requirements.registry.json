@@ -1,0 +1,7286 @@
+{
+ "cluster": "class-teaching-requirements",
+ "title": "[Giáo viên] Chi tiết lớp — Giảng dạy",
+ "figmaPrefix": "TR-CT",
+ "requirements": [
+  {
+   "id": "TR-CT.REQ01",
+   "name": "Quyền và điểm vào",
+   "text": "Chỉ `Giáo viên phụ trách chính` của lớp được mở màn chấm và chấm điểm/nhận xét BTVN, Kiểm tra. Điểm vào là nút điều hướng trên card bài và dòng học viên đã nộp (lọc sẵn học viên). Bài bổ sung nhiều bài nguồn chọn bài nguồn qua popup trước khi vào.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ02",
+   "name": "Tập học viên hợp lệ",
+   "text": "Chỉ tài khoản role học viên của lớp. BTVN: học viên đã được điểm danh (khác `Chưa điểm danh`) ở buổi của bài đã mở, và **thời điểm mở bài không nằm trong khoảng học viên ở trạng thái `Nghỉ học`, `Rời lớp` hoặc `Xóa`**. Khoảng tính từ lúc học viên chuyển sang một trong ba trạng thái này đến lúc chuyển sang trạng thái khác (chưa chuyển thì đến hiện tại). Bài mở trước hoặc sau khoảng đó vẫn được chấm; `Chỉ xem`, `Dự thính`, `Đang học`, `Hoàn thành` không bị loại. Kiểm tra: học viên hợp lệ theo lượt giao bài kiểm tra. Trong tập này, học viên **đã nộp** được chấm; học viên có câu trả lời nhưng chưa nộp hiển thị `Chỉ xem`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ03",
+   "name": "Danh sách câu và trạng thái",
+   "text": "Liệt kê mọi câu của bài theo thứ tự đề. Câu `Đã chấm` khi mọi câu trả lời của học viên đã nộp có điểm, hoặc câu không có câu trả lời nhưng bài có học viên đã nộp (`Bạn không cần chấm câu hỏi này!`, tỷ lệ 100%). Câu đang chọn là `Đang chấm`. Tỷ lệ điểm = tổng điểm câu trả lời đã chấm / (số câu trả lời đã chấm × 10), làm tròn số nguyên phần trăm. Bộ lọc `Trạng Thái` gồm `Chưa chấm`, `Đã chấm`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ04",
+   "name": "Bộ lọc học viên",
+   "text": "`Chưa Chấm` (mặc định tắt) giữ lại học viên chưa có điểm ở câu và học viên vừa chấm trong lúc lọc cho đến khi đổi câu; `Hiện Tên` (mặc định bật) ẩn/hiện tên; `Học Viên` chọn nhiều học viên có câu trả lời. Bộ lọc chỉ áp dụng cho câu đang chọn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ05",
+   "name": "Loại câu và người chấm",
+   "text": "| Nhãn | Mã loại câu | Người chấm |",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ06",
+   "name": "Lưu điểm câu",
+   "text": "Điểm câu là số nguyên 0–10, lưu ngay khi bấm cho đúng học viên–câu–bài–lớp; được đổi điểm và nhận xét bất kỳ lúc nào, **không có mốc khoá** (kể cả sau khi đã ghi nhận `Đã Chấm và Sửa Bài Trên Lớp` hoặc lớp đã Hoàn thành).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ07",
+   "name": "Điểm bài",
+   "text": "Điểm BTVN/Kiểm tra của học viên = trung bình cộng điểm các câu học viên có câu trả lời trong bài, chỉ tính khi mọi câu đó đã có điểm; lưu giá trị gốc, hiển thị làm tròn 1 chữ số thập phân theo menu Bài tập và Kiểm tra. BTVN của bài bổ sung lưu điểm theo từng bài nguồn; điểm BTVN của bài = trung bình các bài nguồn, chỉ khi mọi bài nguồn đã chấm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ08",
+   "name": "Nhận xét học viên",
+   "text": "Gồm chữ, danh sách file ghi âm, danh sách file ảnh (mỗi file tối đa 25MB), gắn đúng học viên–câu–bài–lớp; thêm/xoá file lưu ngay. Sao chép/dán chuyển cả ba phần; dán thay nội dung hiện có của thẻ đích.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ09",
+   "name": "Nhận xét chung",
+   "text": "Xác nhận qua popup; ghi đè phần chữ nhận xét của mọi học viên có câu trả lời ở câu, không phụ thuộc bộ lọc, giữ nguyên file ghi âm/ảnh.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ10",
+   "name": "Câu hỏi con",
+   "text": "Chấm từng câu con; điểm câu cha = trung bình câu con khi mọi câu con có điểm. Đáp án câu con ghép theo mã câu con, thiếu mã thì theo thứ tự.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ11",
+   "name": "Đã chấm và sửa bài trên lớp",
+   "text": "Chỉ ghi nhận khi mọi câu trả lời của học viên đã nộp có điểm. Bấm không giới hạn số lần; mỗi lần ghi đè người bấm và thời điểm máy chủ, chỉ lưu lần bấm gần nhất. Chip hiển thị avatar, tên và thời điểm của người bấm gần nhất. Bản ghi tách BTVN/Kiểm tra theo bài và lớp. Thẻ `Đã chấm và sửa bài` ở Tổng quan lớp = số bài BTVN + Kiểm tra đã có bản ghi, mỗi bài tính một lần dù bấm nhiều lần.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ12",
+   "name": "Đồng bộ dữ liệu",
+   "text": "Thay đổi điểm/nhận xét được phản ánh ở bảng học viên, card bài, khối Tổng Quan của menu Bài tập và Kiểm tra và các chỉ số Điểm BTVN, Điểm KT, Đã chấm và sửa bài ở Tổng quan lớp sau khi quay lại hoặc tải lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ13",
+   "name": "Danh sách bài",
+   "text": "Tab `BTVN` gồm một BTVN cho mỗi bài học của lớp (kể cả bài bổ sung, không gồm Tự học); tab `Kiểm Tra` gồm bài kiểm tra của khoá học và bài kiểm tra bổ sung do Admin thêm, sắp theo ngày giao tăng dần, bài chưa giao xếp sau. Giáo viên không thêm bài kiểm tra. BTVN tự giao khi bài học mở, giáo viên không giao/thu hồi BTVN; chỉ bài kiểm tra có Giao bài/Thu hồi. Tìm theo tên bài; tải toàn bộ, không phân trang; mặc định tab BTVN và card đầu tiên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ14",
+   "name": "Khối Tổng Quan",
+   "text": "`Đã Chấm K.Tra` = bài kiểm tra Đã chấm / tổng bài kiểm tra; `K.Tra Đã Giao` = bài đã giao / tổng bài kiểm tra; `Đã Chấm BTVN` = BTVN Đã chấm / tổng BTVN; `Điểm K.Tra`, `Điểm BTVN` = trung bình điểm các bài đã chấm (điểm 0 vẫn tính), làm tròn 1 chữ số thập phân, không có thì trống; `Tỉ Lệ Làm BTVN` = trung bình tỷ lệ nộp BTVN của học viên hợp lệ trên các bài đã mở. Tính toàn lớp, không đổi theo card hoặc tìm kiếm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ15",
+   "name": "Badge và card",
+   "text": "Badge = số bài Chưa chấm của tab. Bốn nhãn `Chưa giao`, `Đang đợi nộp bài`, `Chưa chấm`, `Đã chấm` theo dữ liệu giao/nộp/chấm (BTVN Chưa giao = bài học chưa mở). Vòng số đã nộp `S/N` = học viên hợp lệ đã nộp / tổng học viên hợp lệ. Vòng tỷ lệ chấm = C/S × 100, S = 0 là 0%.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ16",
+   "name": "Bảng kết quả học viên",
+   "text": "Gồm tập học viên hợp lệ (REQ02) với Điểm số (trống khi chưa chấm, 0 hợp lệ), tên, thời gian làm bài (tối đa hiển thị 23:59:59), trạng thái nộp và số câu bỏ qua. Bấm dòng Đã nộp mở màn chấm (chỉ Giáo viên phụ trách chính); bấm dòng Chưa nộp hiện Toast `Học viên chưa nộp bài này!`. Vòng trên card có tooltip `Số bài đã nộp` và `Đã chấm`. Giáo viên không có Thiết lập lại nộp bài.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ17",
+   "name": "Giao bài kiểm tra",
+   "text": "Chỉ `Giáo viên phụ trách chính`, qua popup xác nhận; lớp phải `Đang học` hoặc là lớp không chính thức. Thành công lưu lượt giao với ngày giao; bài chưa giao hiển thị xem trước đề.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ18",
+   "name": "Thu hồi bài kiểm tra",
+   "text": "Chỉ `Giáo viên phụ trách chính`, qua popup có cảnh báo xoá dữ liệu. Thành công xoá lượt giao và toàn bộ bài làm, điểm, nhận xét chấm của bài; bài về Chưa giao; giao lại là lượt mới.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ19",
+   "name": "Danh sách bài học",
+   "text": "Toàn bộ bài của lớp theo thứ tự (gồm bài bổ sung), mặc định chọn bài đầu. Card bài đã mở có giáo viên của buổi (người bắt đầu), mốc mở `HH:mm - dd/MM/yyyy`, vòng BTVN/Đi học; card chưa mở chỉ có số thứ tự xám, tên, mô tả. Giáo viên không thêm/sửa/xoá bài.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ20",
+   "name": "Dặn dò trước buổi học",
+   "text": "Bài Chưa mở hiển thị 5 dòng dặn dò cố định và checkbox `Tôi đã đọc ghi chú`; phải tick mới bắt đầu được. Không hiển thị ghi chú hay nhận xét của bài trước (chỉ xem ở bài đã hoàn thành). Mọi giáo viên của lớp được bắt đầu bất kỳ bài chưa mở; lớp phải `Đang học` hoặc là lớp không chính thức.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ21",
+   "name": "Chọn lịch và lương buổi",
+   "text": "Lớp có lịch tuần này thì hiện popup `Chọn lịch dạy` gồm lịch tuần này của chính giáo viên (lịch Hoàn thành không chọn được, lịch huỷ ẩn) và `Không chọn lịch`. Chọn lịch: gắn lịch với buổi và giáo viên, lịch giữ `Đang đợi` (lịch cố định chưa có bản ghi thì tạo bản ghi Đang đợi); lịch đã gắn không chọn được cho buổi khác. Lịch chỉ chuyển `Hoàn thành` và phát sinh lương buổi dạy (một lần) khi bấm `Hoàn thành buổi học`; ngày tính lương là ngày của lịch, không phải ngày hoàn thành. Không chọn lịch hoặc lớp không có lịch tuần này: không phát sinh lương, có Toast `Thông Báo` tương ứng. Mỗi bài một buổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ22",
+   "name": "Điểm danh",
+   "text": "Danh sách gồm học viên `Đang học`, `Dự thính`, `Hoàn thành`. Mỗi học viên một trạng thái trong `Có mặt`, `Vào trễ`, `Ra sớm`, `Vào trễ & Ra sớm`, `Nghỉ CP`, `Nghỉ KP` (mặc định `Chưa điểm danh`). Kết thúc buổi học khi điểm danh đủ và có ghi chú lớp hoặc tick `Không có dặn dò cho học viên`; lưu điểm danh và `Giáo viên nhận xét lớp`, buổi chuyển `Chờ hoàn thành`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ23",
+   "name": "Hoàn thành buổi học",
+   "text": "Ghi chú từng học viên (gửi Support, gửi học viên) không bắt buộc. Ghi chú gửi Support và gửi giáo viên tiếp theo phải có nội dung hoặc tick checkbox `Không có dặn dò` tương ứng. Hoàn thành lưu ghi chú, buổi chuyển `Hoàn thành`, lịch đã gắn chuyển `Hoàn thành` và phát sinh lương, xoá nháp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ24",
+   "name": "Nháp và tiếp tục",
+   "text": "Dữ liệu Bước 1/Bước 2 lưu nháp trên server sau mỗi thay đổi, theo lớp–bài. Mọi giáo viên của lớp tiếp tục được buổi `Đang dạy` (`Vào điểm danh`) hoặc `Chờ hoàn thành` (`Hoàn thành buổi học`) và thấy đúng nháp; giáo viên của buổi giữ nguyên là người bắt đầu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ25",
+   "name": "Bài đã hoàn thành",
+   "text": "Hiển thị `Giáo viên nhận xét lớp`, ghi chú gửi Support, ghi chú gửi giáo viên tiếp theo và bảng học viên (Đi học, BTVN, Ghi chú) chỉ đọc. Giáo viên không sửa sau khi hoàn thành.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ26",
+   "name": "Thông tin, Nội dung, Kiến thức",
+   "text": "Dữ liệu định nghĩa bài học chỉ đọc giống Admin; Kiến thức để trống.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ27",
+   "name": "Tài nguyên",
+   "text": "Bấm file tải ngay. Chỉ tải được tài nguyên của 3 bài đã mở có số thứ tự lớn nhất; bài khác (đã mở trước đó hoặc chưa mở) hiển thị file kèm icon khoá, bấm không tải; áp dụng cả Bài giảng và Tài nguyên khác; backend kiểm tra khi tải.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ28",
+   "name": "% BTVN và Đi học theo bài",
+   "text": "Tính theo số học viên `Đang học`/`Dự thính` của đúng bài: % BTVN = đã nộp / tập; % Đi học = đi học (Có mặt, Vào trễ, Ra sớm, Vào trễ & Ra sớm) / số đã điểm danh trong tập (Nghỉ CP/KP trong mẫu, Chưa điểm danh loại khỏi tử và mẫu). Mẫu số 0 để trống.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ29",
+   "name": "Tự học",
+   "text": "Mọi giáo viên của lớp xem danh sách bài tự học (giữ thứ tự đã lưu, tải toàn bộ, mặc định bài 1) và bảng thời gian app của toàn bộ học viên đủ 7 trạng thái theo 8 phần `Học Flashcard`, `Bài tập`, `Từ vựng`, `Ngữ pháp`, `Đọc`, `Kanji`, `Nghe`, `Bảng chữ`; `HH:mm:ss`, ô vượt 24 giờ hiển thị `23:59:59`. Chỉ đọc: không thêm khóa/bài, không sửa thời gian; xem bảng không tạo thời gian học; Tự học không ảnh hưởng điểm danh, BTVN của bài học chính.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ30",
+   "name": "Icon trạng thái điểm danh",
+   "text": "Bảng hiển thị điểm danh (cột Đi học ở tab Buổi học, cột Trạng thái ở Tổng quan) dùng bộ icon `Trạng thái đi học` theo bảng ghép 7 trạng thái; hover hiện tên trạng thái. Dropdown điểm danh ở Bước 1 chỉ hiển thị chữ.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "GV-LOP-030100": {
+   "id": "GV-LOP-030100",
+   "name": "buoi-hoc",
+   "title": "Chi tiết lớp / Bài học / Buổi học",
+   "kind": "man-chinh",
+   "parent": "GV-LOP-030130",
+   "shownOn": "GV-LOP-030100",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4324:16651",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-hoc/buoi-hoc",
+   "link": "/chi-tiet-lop/bai-hoc/buoi-hoc",
+   "dark": "GV-LOP-030100-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CT.A01",
+    "TR-CT.A08",
+    "TR-CT.F01"
+   ]
+  },
+  "GV-LOP-030110": {
+   "id": "GV-LOP-030110",
+   "name": "dan-do-truoc-buoi-hoc",
+   "title": "Chi tiết lớp / Bài học / Buổi học / Dặn dò trước buổi học",
+   "kind": "man-chinh",
+   "parent": "GV-LOP-030100",
+   "shownOn": "GV-LOP-030110",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "5292:220948",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-hoc/buoi-hoc/dan-do-truoc-buoi-hoc",
+   "link": "/chi-tiet-lop/bai-hoc/buoi-hoc/dan-do-truoc-buoi-hoc",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CT.A01",
+    "TR-CT.F01"
+   ]
+  },
+  "GV-LOP-030120": {
+   "id": "GV-LOP-030120",
+   "name": "popup-chon-lich-day",
+   "title": "Chi tiết lớp / Bài học / Popup chọn lịch dạy",
+   "kind": "popup",
+   "parent": "GV-LOP-030100",
+   "shownOn": "GV-LOP-030100",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5292:222984",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop/bai-hoc/buoi-hoc?popup=GV-LOP-030120",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "TR-CT.A03"
+   ]
+  },
+  "GV-LOP-030121": {
+   "id": "GV-LOP-030121",
+   "name": "popup-bat-dau-buoi-hoc",
+   "title": "Chi tiết lớp / Bài học / Popup bắt đầu buổi học",
+   "kind": "popup",
+   "parent": "GV-LOP-030100",
+   "shownOn": "GV-LOP-030100",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5292:223041",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop/bai-hoc/buoi-hoc?popup=GV-LOP-030121",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "TR-CT.A03"
+   ]
+  },
+  "GV-LOP-030170": {
+   "id": "GV-LOP-030170",
+   "name": "bai-cho-hoan-thanh",
+   "title": "Chi tiết lớp / Bài học / Buổi học / Bài chờ hoàn thành",
+   "kind": "man-chinh",
+   "parent": "GV-LOP-030100",
+   "shownOn": "GV-LOP-030170",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "5292:226685",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-hoc/buoi-hoc/bai-cho-hoan-thanh",
+   "link": "/chi-tiet-lop/bai-hoc/buoi-hoc/bai-cho-hoan-thanh",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CT.A01",
+    "TR-CT.F01"
+   ]
+  },
+  "GV-LOP-030200": {
+   "id": "GV-LOP-030200",
+   "name": "thong-tin",
+   "title": "Chi tiết lớp / Bài học / Thông tin",
+   "kind": "man-chinh",
+   "parent": "GV-LOP-030150",
+   "shownOn": "GV-LOP-030200",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4324:16967",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-hoc/thong-tin",
+   "link": "/chi-tiet-lop/bai-hoc/thong-tin",
+   "dark": "GV-LOP-030200-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CT.A09",
+    "TR-CT.F01"
+   ]
+  },
+  "GV-LOP-030300": {
+   "id": "GV-LOP-030300",
+   "name": "noi-dung",
+   "title": "Chi tiết lớp / Bài học / Nội dung",
+   "kind": "man-chinh",
+   "parent": "GV-LOP-030200",
+   "shownOn": "GV-LOP-030300",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4324:17213",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-hoc/noi-dung",
+   "link": "/chi-tiet-lop/bai-hoc/noi-dung",
+   "dark": "GV-LOP-030300-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CT.A09",
+    "TR-CT.F01"
+   ]
+  },
+  "GV-LOP-030400": {
+   "id": "GV-LOP-030400",
+   "name": "tai-nguyen",
+   "title": "Chi tiết lớp / Bài học / Tài nguyên",
+   "kind": "man-chinh",
+   "parent": "GV-LOP-030300",
+   "shownOn": "GV-LOP-030400",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4324:17511",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-hoc/tai-nguyen",
+   "link": "/chi-tiet-lop/bai-hoc/tai-nguyen",
+   "dark": "GV-LOP-030400-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CT.A10",
+    "TR-CT.F01"
+   ]
+  },
+  "GV-LOP-030401": {
+   "id": "GV-LOP-030401",
+   "name": "tai-nguyen-bi-khoa",
+   "title": "Chi tiết lớp / Bài học / Tài nguyên · Bị khoá",
+   "kind": "trang-thai",
+   "parent": "GV-LOP-030400",
+   "shownOn": "GV-LOP-030400",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5425:282079",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-hoc/tai-nguyen-bi-khoa",
+   "link": "/chi-tiet-lop/bai-hoc/tai-nguyen?state=GV-LOP-030401",
+   "dark": "GV-LOP-030401-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "TR-CT.A10"
+   ]
+  },
+  "GV-LOP-030500": {
+   "id": "GV-LOP-030500",
+   "name": "kien-thuc",
+   "title": "Chi tiết lớp / Bài học / Kiến thức",
+   "kind": "man-chinh",
+   "parent": "GV-LOP-030401",
+   "shownOn": "GV-LOP-030500",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4324:17763",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-hoc/kien-thuc",
+   "link": "/chi-tiet-lop/bai-hoc/kien-thuc",
+   "dark": "GV-LOP-030500-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CT.A09",
+    "TR-CT.F01"
+   ]
+  },
+  "GV-LOP-040100": {
+   "id": "GV-LOP-040100",
+   "name": "btvn",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / BTVN",
+   "kind": "man-chinh",
+   "parent": "GV-LOP-040200",
+   "shownOn": "GV-LOP-040100",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4324:85925",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/btvn",
+   "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/btvn",
+   "dark": "GV-LOP-040100-DK",
+   "openedFrom": [
+    "GV-LOP-040200",
+    "GV-LOP-040201",
+    "GV-LOP-040210",
+    "GV-LOP-040340"
+   ],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CT.A12",
+    "TR-CT.A18",
+    "TR-CT.F01"
+   ]
+  },
+  "GV-LOP-040110": {
+   "id": "GV-LOP-040110",
+   "name": "btvn-bai-hoc-chua-mo",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / BTVN · Bài học chưa mở",
+   "kind": "trang-thai",
+   "parent": "GV-LOP-040100",
+   "shownOn": "GV-LOP-040100",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5425:275048",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/btvn-bai-hoc-chua-mo",
+   "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/btvn?state=GV-LOP-040110",
+   "dark": "GV-LOP-040110-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "GV-LOP-040200": {
+   "id": "GV-LOP-040200",
+   "name": "kiem-tra",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra",
+   "kind": "man-chinh",
+   "parent": "GV-LOP-040110",
+   "shownOn": "GV-LOP-040200",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4324:86231",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra",
+   "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra",
+   "dark": "GV-LOP-040200-DK",
+   "openedFrom": [
+    "GV-LOP-040100",
+    "GV-LOP-040110",
+    "GV-LOP-040221"
+   ],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CT.A14",
+    "TR-CT.A18",
+    "TR-CT.F01"
+   ]
+  },
+  "GV-LOP-040201": {
+   "id": "GV-LOP-040201",
+   "name": "kiem-tra-giao-vien-khong-phu-trach-chinh",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra · Giáo viên không phụ trách chính (chỉ xem)",
+   "kind": "trang-thai",
+   "parent": "GV-LOP-040211",
+   "shownOn": "GV-LOP-040200",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5425:277432",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-giao-vien-khong-phu-trach-chinh-chi-xem",
+   "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?state=GV-LOP-040201",
+   "dark": "GV-LOP-040201-DK",
+   "openedFrom": [
+    "GV-LOP-040211"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "TR-CT.A12"
+   ]
+  },
+  "GV-LOP-040204": {
+   "id": "GV-LOP-040204",
+   "name": "kiem-tra-chua-giao-giao-vien-khong-phu-t",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra · Chưa giao · Giáo viên không phụ trách chính (xem trước đề)",
+   "kind": "trang-thai",
+   "parent": "GV-LOP-040201",
+   "shownOn": "GV-LOP-040200",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "7074:397332",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-chua-giao-giao-vien-khong-phu-trach-chinh-xem-truoc-de",
+   "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?state=GV-LOP-040204",
+   "dark": "GV-LOP-040204-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "TR-CT.A12"
+   ]
+  },
+  "GV-LOP-040205": {
+   "id": "GV-LOP-040205",
+   "name": "kiem-tra-vua-giao",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra · Vừa giao",
+   "kind": "trang-thai",
+   "parent": "GV-LOP-040204",
+   "shownOn": "GV-LOP-040200",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "7074:398519",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-vua-giao",
+   "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?state=GV-LOP-040205",
+   "dark": "GV-LOP-040205-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "TR-CT.A12"
+   ]
+  },
+  "GV-LOP-040210": {
+   "id": "GV-LOP-040210",
+   "name": "kiem-tra-chua-giao-xem-truoc-de",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra · Chưa giao (xem trước đề)",
+   "kind": "trang-thai",
+   "parent": "GV-LOP-040200",
+   "shownOn": "GV-LOP-040200",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5425:276208",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-chua-giao-xem-truoc-de",
+   "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?state=GV-LOP-040210",
+   "dark": "GV-LOP-040210-DK",
+   "openedFrom": [
+    "GV-LOP-040200"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "TR-CT.A12"
+   ]
+  },
+  "GV-LOP-040211": {
+   "id": "GV-LOP-040211",
+   "name": "popup-giao-bai",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Popup Giao bài",
+   "kind": "popup",
+   "parent": "GV-LOP-040210",
+   "shownOn": "GV-LOP-040200",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5425:277378",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?popup=GV-LOP-040211",
+   "dark": "GV-LOP-040211-DK",
+   "openedFrom": [
+    "GV-LOP-040210"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "TR-CT.A16"
+   ]
+  },
+  "GV-LOP-040221": {
+   "id": "GV-LOP-040221",
+   "name": "popup-thu-hoi",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Popup Thu hồi",
+   "kind": "popup",
+   "parent": "GV-LOP-040201",
+   "shownOn": "GV-LOP-040200",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5425:277391",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?popup=GV-LOP-040221",
+   "dark": "GV-LOP-040221-DK",
+   "openedFrom": [
+    "GV-LOP-040201"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "TR-CT.A17"
+   ]
+  },
+  "GV-LOP-040320": {
+   "id": "GV-LOP-040320",
+   "name": "man-cham-bai-tong-quan-cham-bai",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Màn chấm bài · Tổng quan chấm bài",
+   "kind": "trang-thai",
+   "parent": "GV-LOP-040100",
+   "shownOn": "GV-LOP-040100",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5750:77075",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-tong-quan-cham-bai",
+   "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/btvn?state=GV-LOP-040320",
+   "dark": "GV-LOP-040320-DK",
+   "openedFrom": [
+    "GV-LOP-040100",
+    "GV-LOP-040200"
+   ],
+   "citedByRequirement": false,
+   "regions": [
+    "TR-CT.A18"
+   ]
+  },
+  "GV-LOP-050100": {
+   "id": "GV-LOP-050100",
+   "name": "trong",
+   "title": "Chi tiết lớp / Tự học / Trống",
+   "kind": "trang-thai",
+   "parent": "GV-LOP-050110",
+   "shownOn": "GV-LOP-050110",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4333:7910",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/tu-hoc/trong",
+   "link": "/chi-tiet-lop/tu-hoc/co-du-lieu?state=GV-LOP-050100",
+   "dark": "GV-LOP-050100-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CT.A26"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "TR-CT.A01",
+   "name": "bai-hoc-khung-menu-va-danh-sach-bai-hoc",
+   "title": "Bài học — Khung menu và Danh sách bài học",
+   "screens": [
+    "gv-lop-030100",
+    "gv-lop-030110",
+    "gv-lop-030170"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A01.01",
+     "name": "tieu-de-bai",
+     "label": "Tiêu đề bài",
+     "spec": "Tên bài và mô tả ngắn của bài đang chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tiêu đề bài"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A01.02",
+     "name": "card-bai-da-mo",
+     "label": "Card bài đã mở",
+     "spec": "Số thứ tự; avatar và tên **giáo viên của buổi** (người bấm Bắt đầu buổi học); mốc mở bài `HH:mm - dd/MM/yyyy`; tên và mô tả bài; vòng `BTVN` và `Đi học` theo khu vực Chỉ số % BTVN và Đi học.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-030170": [
+       {
+        "term": "Card bài đã mở",
+        "figmaId": "5292:226699",
+        "layer": "Card · Bài đã mở",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC01"
+     ],
+     "missingTerms": [
+      "HH:mm - dd/MM/yyyy"
+     ],
+     "status": "khop-mot-phan"
+    },
+    {
+     "id": "TR-CT.A01.03",
+     "name": "card-bai-chua-mo",
+     "label": "Card bài chưa mở",
+     "spec": "Số thứ tự nền xám, tên bài và mô tả chi tiết (các dòng nội dung bài); không có giáo viên, mốc mở và vòng tỷ lệ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC01"
+     ],
+     "missingTerms": [
+      "Card bài chưa mở"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A01.04",
+     "name": "chon-bai",
+     "label": "Chọn bài",
+     "spec": "Bấm card để chọn: viền cam, tiêu đề và các tab đổi theo bài. Mặc định chọn bài đầu tiên. Chọn bài hoặc đổi tab không tự bắt đầu buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chọn bài"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A01.05",
+     "name": "thu-tu",
+     "label": "Thứ tự",
+     "spec": "Theo thứ tự bài của lớp, gồm cả bài học bổ sung; tải toàn bộ, không phân trang.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thứ tự"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A02",
+   "name": "tab-buoi-hoc-dan-do-truoc-buoi-hoc",
+   "title": "Tab Buổi học — Dặn dò trước buổi học",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A02.01",
+     "name": "dan-do-truoc-buoi-hoc",
+     "label": "Dặn dò trước buổi học",
+     "spec": "5 dòng đánh số cố định: (1) Nhắc nhở học viên làm BTVN hàng ngày. Thời gian trên lớp không đủ để nhớ kiến thức 100%, cần có sự luyện tập. (2) App có rất nhiều chức năng hỗ trợ việc học, giáo viên cần cho học viên sử dụng trên lớp ít nhất 3 lần để HV quen việc sử dụng app, từ đó tận dụng app để học và làm bài. (3) Hỏi thăm học viên vắng học hôm trước. Động viên học viên không hiểu thì hỏi ngay. (4) Các phần quan trọng bắt phải dạy. Phần luyện tập lớp có thể luyện ngay ở trên ứng dụng. (5) Giáo viên nhớ bấm record và làm đúng QUY TRÌNH BUỔI HỌC.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC04"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A02.02",
+     "name": "checkbox-toi-da-doc-ghi-chu",
+     "label": "Checkbox Tôi đã đọc ghi chú",
+     "spec": "Bắt buộc tick.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC04"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A02.03",
+     "name": "nut-bat-dau-buoi-hoc",
+     "label": "Nút Bắt đầu buổi học",
+     "spec": "Bị khoá cho đến khi tick `Tôi đã đọc ghi chú`. Bấm thì chạy luồng Chọn lịch dạy và Bắt đầu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC03"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A03",
+   "name": "popup-chon-lich-day-va-bat-dau-buoi-hoc",
+   "title": "Popup Chọn lịch dạy và Bắt đầu buổi học",
+   "screens": [
+    "gv-lop-030120",
+    "gv-lop-030121"
+   ],
+   "screensGuessed": [
+    "GV-LOP-030120",
+    "GV-LOP-030121"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A03.01",
+     "name": "lop-khong-co-lich-tuan-nay",
+     "label": "Lớp không có lịch tuần này",
+     "spec": "Không hiện popup Chọn lịch dạy; hiện popup `Bắt đầu buổi học` (`Nhấn 'Xác nhận' để bắt đầu buổi học!`). Bắt đầu xong hiển thị Toast `Thông Báo` `Lớp không có lịch để tính lương buổi này`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A03.02",
+     "name": "popup-chon-lich-day",
+     "label": "Popup Chọn lịch dạy",
+     "spec": "Liệt kê lịch tuần hiện tại của lớp do **chính giáo viên** dạy (lịch cố định và linh hoạt): thứ, ngày, giờ. Lịch đã hoàn thành hoặc đã gắn với buổi khác hiển thị nhưng không chọn được; lịch huỷ không hiển thị. Không có lịch của giáo viên thì hiện `Không có lịch dạy tuần này`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC09",
+      "TR-CT.TC10"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A03.03",
+     "name": "lua-chon-khong-chon-lich",
+     "label": "Lựa chọn Không chọn lịch",
+     "spec": "Dòng phụ `Buổi học này sẽ không được tính lương`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A03.04",
+     "name": "nut-huy-bat-dau",
+     "label": "Nút Huỷ / Bắt đầu",
+     "spec": "`Huỷ` đóng popup, không bắt đầu. `Bắt đầu` cần đã chọn một lịch hoặc `Không chọn lịch`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A03.05",
+     "name": "popup-bat-dau-buoi-hoc",
+     "label": "Popup Bắt đầu buổi học",
+     "spec": "Sau khi chọn lịch: nội dung `Nhấn 'Xác nhận' để bắt đầu buổi học!`, nút `Huỷ` / `Xác nhận`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A03.06",
+     "name": "bat-dau-voi-lich",
+     "label": "Bắt đầu với lịch",
+     "spec": "Tạo buổi của bài (giáo viên của buổi, mốc mở = thời điểm máy chủ, trạng thái `Đang dạy`); **gắn** lịch được chọn với buổi và giáo viên, lịch **giữ trạng thái `Đang đợi`** (chưa Hoàn thành, chưa phát sinh lương). Lịch cố định chưa có bản ghi ngày đó thì tạo bản ghi lịch `Đang đợi` theo giờ của lịch cố định. Chuyển sang Bước 1 — Điểm danh.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A03.07",
+     "name": "bat-dau-khong-chon-lich",
+     "label": "Bắt đầu không chọn lịch",
+     "spec": "Tạo buổi như trên, không đổi lịch, không phát sinh lương; Toast `Thông Báo` `Bạn đã bỏ qua chọn lịch, buổi học này sẽ không được tính lương`. Chuyển sang Bước 1.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A04",
+   "name": "buoc-1-diem-danh-va-ghi-chu-cho-lop-hoc",
+   "title": "Bước 1 — Điểm danh và Ghi chú cho lớp học",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A04.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "Icon `<` và tên bài. Bấm `<` quay về menu Bài học; dữ liệu đã nhập vẫn giữ trong nháp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A04.02",
+     "name": "danh-sach-hoc-vien",
+     "label": "Danh sách học viên",
+     "spec": "`Số thứ tự`, `Tên học viên`, `Trạng thái`. Gồm học viên trạng thái `Đang học`, `Dự thính`, `Hoàn thành` của lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A04.03",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Dropdown, mặc định `Chưa điểm danh`; chọn một trong `Có mặt`, `Vào trễ`, `Ra sớm`, `Vào trễ & Ra sớm`, `Nghỉ CP`, `Nghỉ KP`. Lựa chọn và giá trị đã chọn chỉ hiển thị chữ, không có icon.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A04.04",
+     "name": "ghi-chu-cho-lop-hoc",
+     "label": "Ghi chú cho lớp học",
+     "spec": "Ô nhiều dòng, placeholder `Điền ghi chú của giáo viên dành cho học viên ( Gửi cho tất cả học viên )`. Lưu thành `Giáo viên nhận xét lớp` của buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A04.05",
+     "name": "checkbox-khong-co-dan-do-cho-hoc-vien",
+     "label": "Checkbox Không có dặn dò cho học viên",
+     "spec": "Tick khi không có ghi chú cho lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A04.06",
+     "name": "nut-ket-thuc-buoi-hoc",
+     "label": "Nút Kết thúc buổi học",
+     "spec": "Khoá cho đến khi **mọi học viên đã được điểm danh** (không còn `Chưa điểm danh`) **và** có `Ghi chú cho lớp học` hoặc đã tick `Không có dặn dò cho học viên`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A04.07",
+     "name": "popup-ket-thuc-buoi-hoc",
+     "label": "Popup Kết thúc buổi học",
+     "spec": "Nội dung `Giáo viên vui lòng tắt record Google Meet trước khi kết thúc buổi học`, nút `Huỷ` / `Xác nhận`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A04.08",
+     "name": "xac-nhan",
+     "label": "Xác nhận",
+     "spec": "Lưu điểm danh của từng học viên và nhận xét lớp; buổi chuyển `Chờ hoàn thành`; cập nhật tỷ lệ Đi học; chuyển sang Bước 2.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC12"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A05",
+   "name": "buoc-2-ghi-chu-buoi-hoc-va-hoan-thanh",
+   "title": "Bước 2 — Ghi chú buổi học và Hoàn thành",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A05.01",
+     "name": "bang-hoc-vien",
+     "label": "Bảng học viên",
+     "spec": "`Số thứ tự`, `Tên học viên`, `Ghi chú cho học viên (Gửi Support)`, `Ghi chú cho học viên (Gửi học viên)`. Hai ô nhập không bắt buộc, placeholder `Nhập ghi chú mô tả vào đây`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A05.02",
+     "name": "ghi-chu-cua-giao-vien-gui-cho-support",
+     "label": "Ghi chú của Giáo viên gửi cho Support",
+     "spec": "Ô nhiều dòng, placeholder `Điền ghi chú cho Team Support...`; checkbox `Không có dặn dò cho Team Support`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A05.03",
+     "name": "ghi-chu-cua-giao-vien-gui-cho-giao-vien-",
+     "label": "Ghi chú của Giáo viên gửi cho Giáo viên tiếp theo",
+     "spec": "Ô nhiều dòng, placeholder `Điền ghi chú cho giáo viên tiếp theo...`; checkbox `Không có dặn dò cho giáo viên`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A05.04",
+     "name": "nut-hoan-thanh-buoi-hoc",
+     "label": "Nút Hoàn thành buổi học",
+     "spec": "Khoá cho đến khi mỗi khối ghi chú Support và giáo viên tiếp theo có nội dung hoặc đã tick checkbox tương ứng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A05.05",
+     "name": "popup-hoan-thanh-buoi-hoc",
+     "label": "Popup Hoàn thành buổi học",
+     "spec": "Nội dung `Giáo viên vui lòng kiểm tra các ghi chú và tắt record Google Meet trước khi hoàn thành buổi học`, nút `Huỷ` / `Xác nhận`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A05.06",
+     "name": "xac-nhan",
+     "label": "Xác nhận",
+     "spec": "Lưu ghi chú từng học viên, ghi chú gửi Support, ghi chú gửi giáo viên tiếp theo; buổi chuyển `Hoàn thành`; **lịch đã gắn lúc bắt đầu (nếu có) chuyển `Hoàn thành` và phát sinh lương buổi dạy cho giáo viên của buổi, ngày tính lương là ngày của lịch**; xoá nháp; màn hiển thị `Buổi học đã kết thúc`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC17"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A06",
+   "name": "tab-buoi-hoc-bai-dang-day-va-cho-hoan-th",
+   "title": "Tab Buổi học — Bài đang dạy và chờ hoàn thành",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A06.01",
+     "name": "bai-dang-day",
+     "label": "Bài Đang dạy",
+     "spec": "Nút `Vào điểm danh`; bấm mở popup `Tiếp tục buổi học` (`Nhấn 'Xác nhận' để tiếp tục buổi học!`), xác nhận vào Bước 1 với nháp hiện có.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-CT.A06",
+       "raw": "mở popup `Tiếp tục buổi học` "
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A06.02",
+     "name": "bai-cho-hoan-thanh",
+     "label": "Bài Chờ hoàn thành",
+     "spec": "Nút `Hoàn thành buổi học`; bấm vào Bước 2 với nháp hiện có.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A06.03",
+     "name": "nguoi-tiep-tuc",
+     "label": "Người tiếp tục",
+     "spec": "Mọi giáo viên của lớp; giáo viên của buổi vẫn là người đã bấm Bắt đầu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A07",
+   "name": "tab-buoi-hoc-bai-da-hoan-thanh",
+   "title": "Tab Buổi học — Bài đã hoàn thành",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A07.01",
+     "name": "giao-vien-nhan-xet-lop",
+     "label": "Giáo viên nhận xét lớp",
+     "spec": "Ghi chú cho lớp học đã nhập ở Bước 1, chỉ đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A07.02",
+     "name": "ghi-chu-cua-giao-vien-gui-cho-support",
+     "label": "Ghi chú của Giáo viên gửi cho Support",
+     "spec": "Chỉ đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A07.03",
+     "name": "ghi-chu-cua-giao-vien-gui-cho-giao-vien-",
+     "label": "Ghi chú của Giáo viên gửi cho Giáo viên tiếp theo",
+     "spec": "Chỉ đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A07.04",
+     "name": "bang-hoc-vien",
+     "label": "Bảng học viên",
+     "spec": "`Số thứ tự`, `Họ và tên`, `Đi học` (icon trạng thái điểm danh theo khu vực Icon trạng thái điểm danh, hover hiện tên trạng thái), `BTVN` (`Chưa nộp` / `Chưa chấm` / điểm đã chấm), `Ghi chú` (icon).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC22"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A07.05",
+     "name": "icon-ghi-chu",
+     "label": "Icon Ghi chú",
+     "spec": "Mở popup `Ghi chú` hai vùng chỉ đọc `Ghi chú từ Giáo viên cho Học viên` và `Ghi chú từ Giáo viên cho Team Support` của đúng học viên ở bài; icon mờ khi không có ghi chú.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-CT.A04",
+       "raw": "Mở popup `Ghi chú` hai vùng chỉ đọc `Ghi chú từ Giáo viên cho Học viên` và `Ghi chú từ Giáo viên cho Team Support` của đúng học viên ở bài"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A08",
+   "name": "icon-trang-thai-diem-danh",
+   "title": "Icon trạng thái điểm danh",
+   "screens": [
+    "gv-lop-030100"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A08.01",
+     "name": "co-mat",
+     "label": "Có mặt",
+     "spec": "Ô viền xanh lá, dấu tick trắng nền xanh lá.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Có mặt"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A08.02",
+     "name": "vao-tre",
+     "label": "Vào trễ",
+     "spec": "Ô viền cam, lịch có dấu `!` màu cam.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC24"
+     ],
+     "missingTerms": [
+      "Vào trễ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A08.03",
+     "name": "ra-som",
+     "label": "Ra sớm",
+     "spec": "Ô viền cam, đồng hồ màu cam.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC24"
+     ],
+     "missingTerms": [
+      "Ra sớm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A08.04",
+     "name": "vao-tre-ra-som",
+     "label": "Vào trễ & Ra sớm",
+     "spec": "Ô viền đỏ, đồng hồ có dấu `!` màu đỏ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC24"
+     ],
+     "missingTerms": [
+      "Vào trễ & Ra sớm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A08.05",
+     "name": "nghi-cp-nghi-co-phep",
+     "label": "Nghỉ CP (Nghỉ có phép)",
+     "spec": "Ô viền cam, lịch có bút màu cam.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nghỉ CP"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A08.06",
+     "name": "nghi-kp-nghi-khong-phep",
+     "label": "Nghỉ KP (Nghỉ không phép)",
+     "spec": "Ô viền đỏ, biểu tượng cấm màu đỏ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nghỉ KP"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A08.07",
+     "name": "chua-diem-danh",
+     "label": "Chưa điểm danh",
+     "spec": "Ô viền đỏ, lịch có dấu `x` màu đỏ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC24"
+     ],
+     "missingTerms": [
+      "Chưa điểm danh"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A09",
+   "name": "tab-thong-tin-noi-dung-va-kien-thuc",
+   "title": "Tab Thông tin, Nội dung và Kiến thức",
+   "screens": [
+    "gv-lop-030200",
+    "gv-lop-030300",
+    "gv-lop-030500"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A09.01",
+     "name": "thong-tin",
+     "label": "Thông tin",
+     "spec": "`Tiêu đề`, `Mô tả` (giữ xuống dòng), `Kỹ năng` (tag và số trong ngoặc do Curriculum Development Handler thiết lập). Ô xám chỉ đọc; không thêm/gỡ kỹ năng. Không có dữ liệu thì để trống theo dữ liệu thật.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-030200": [
+       {
+        "term": "Thông tin",
+        "figmaId": "I4915:259928;4901:213564",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "769:35769",
+         "Label": "Thông tin",
+         "Type": "Menu phụ",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-030300": [
+       {
+        "term": "Thông tin",
+        "figmaId": "I4915:259721;4901:213564",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "769:35769",
+         "Label": "Thông tin",
+         "Type": "Menu phụ",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-030500": [
+       {
+        "term": "Thông tin",
+        "figmaId": "I4915:259307;4901:213564",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "769:35769",
+         "Label": "Thông tin",
+         "Type": "Menu phụ",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC26"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A09.02",
+     "name": "noi-dung",
+     "label": "Nội dung",
+     "spec": "Các khối nội dung/kế hoạch bài theo thứ tự đã lưu ở nguồn (vd 5p Sửa BTVN, Học từ mới, Ngữ pháp...), chỉ đọc. Không có dữ liệu thì hiện `Không có dữ liệu!` (ảnh Figma GV-LOP-030300 là trạng thái này).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-030200": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I4324:16976;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-030300": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I4324:17222;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-030500": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I4324:17772;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC27"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A09.03",
+     "name": "kien-thuc",
+     "label": "Kiến thức",
+     "spec": "Để trống, hiện `Không có dữ liệu!` (Figma GV-LOP-030500).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-030200": [
+       {
+        "term": "Kiến thức",
+        "figmaId": "I4324:16978;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-030300": [
+       {
+        "term": "Kiến thức",
+        "figmaId": "I4324:17224;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-030500": [
+       {
+        "term": "Kiến thức",
+        "figmaId": "I4324:17774;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A10",
+   "name": "tab-tai-nguyen-khoa-tai-theo-bai",
+   "title": "Tab Tài nguyên — Khoá tải theo bài",
+   "screens": [
+    "gv-lop-030400",
+    "gv-lop-030401"
+   ],
+   "screensGuessed": [
+    "GV-LOP-030401"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A10.01",
+     "name": "nhom-bai-giang-tai-nguyen-khac",
+     "label": "Nhóm Bài giảng / Tài nguyên khác",
+     "spec": "Header có icon `⌃` thu gọn/mở; card file có tên và icon theo loại (video, PPT, Docs, Excel, âm thanh).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-030400": [
+       {
+        "term": "Bài giảng",
+        "figmaId": "4324:17526",
+        "layer": "Bài giảng",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Tài nguyên khác",
+        "figmaId": "4324:27550",
+        "layer": "Tài nguyên khác",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "gv-lop-030401": [
+       {
+        "term": "Bài giảng",
+        "figmaId": "5425:282094",
+        "layer": "Bài giảng",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Tài nguyên khác",
+        "figmaId": "5425:282111",
+        "layer": "Tài nguyên khác",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A10.02",
+     "name": "bai-duoc-tai",
+     "label": "Bài được tải",
+     "spec": "Trong các bài đã mở (Đang dạy, Chờ hoàn thành, Hoàn thành), lấy 3 bài có số thứ tự lớn nhất. Bấm card tải ngay file gốc, không mở xem trước.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Bài được tải"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A10.03",
+     "name": "bai-bi-khoa",
+     "label": "Bài bị khoá",
+     "spec": "Bài đã mở trước 3 bài trên, hoặc bài chưa mở: vẫn thấy danh sách file, mỗi card có icon khoá; bấm không tải, hiện Toast `Thông Báo` `Chỉ tải được tài nguyên của 3 bài đã mở gần nhất`. Áp dụng cả hai nhóm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-030401": [
+       {
+        "term": "Thông Báo",
+        "figmaId": "I5425:282992;2167:28354",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Toast · Tài nguyên bị khoá",
+        "component": "Atom/Toast",
+        "variant": {
+         "Action": true,
+         "Close": true,
+         "Type": "Info"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Bài bị khoá"
+     ],
+     "status": "khop-mot-phan"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A11",
+   "name": "chi-so-btvn-va-di-hoc-theo-bai",
+   "title": "Chỉ số % BTVN và Đi học theo bài",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A11.01",
+     "name": "tap-tinh",
+     "label": "Tập tính",
+     "spec": "Học viên `Đang học` hoặc `Dự thính` tại thời điểm của bài; đổi trạng thái ở bài sau không loại học viên khỏi bài trước.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A11.02",
+     "name": "btvn",
+     "label": "% BTVN",
+     "spec": "`Số học viên đã nộp BTVN của bài / Số học viên trong tập × 100`. Nộp chưa chấm hoặc điểm 0 vẫn tính đã nộp; một học viên nộp nhiều lần tính một người.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC31"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A11.03",
+     "name": "di-hoc",
+     "label": "% Đi học",
+     "spec": "`Số học viên Có mặt, Vào trễ, Ra sớm, Vào trễ & Ra sớm / Số học viên trong tập đã được điểm danh × 100`. Nghỉ CP/KP vẫn ở mẫu số; Chưa điểm danh bị loại khỏi cả tử và mẫu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC32"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A11.04",
+     "name": "lam-tron",
+     "label": "Làm tròn",
+     "spec": "Chỉ làm tròn kết quả cuối; vòng hiển thị số nguyên `%`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A11.05",
+     "name": "mau-so-bang-0",
+     "label": "Mẫu số bằng 0",
+     "spec": "Để trống, không chia 0; tử số 0 với mẫu số > 0 là `0%`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A12",
+   "name": "bai-tap-va-kiem-tra-khung-menu",
+   "title": "Bài tập và Kiểm tra — Khung menu",
+   "screens": [
+    "gv-lop-040100",
+    "gv-lop-040201",
+    "gv-lop-040204",
+    "gv-lop-040205",
+    "gv-lop-040210"
+   ],
+   "screensGuessed": [
+    "GV-LOP-040201",
+    "GV-LOP-040204",
+    "GV-LOP-040205",
+    "GV-LOP-040210"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [
+    "Khác Figma GV-LOP-040100: Figma chưa có nút điều hướng chấm bài trên card; requirement bổ sung nút này cho `Giáo viên phụ trách chính`."
+   ],
+   "items": [
+    {
+     "id": "TR-CT.A12.01",
+     "name": "tab-btvn-kiem-tra",
+     "label": "Tab BTVN / Kiểm Tra",
+     "spec": "Hai danh sách riêng, mỗi tab có badge riêng. Chuyển tab hiển thị đúng loại bài, không trộn điểm hoặc bài nộp giữa hai loại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "BTVN",
+        "figmaId": "I4324:86046;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": true,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Kiểm Tra",
+        "figmaId": "I4324:86047;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-040201": [
+       {
+        "term": "BTVN",
+        "figmaId": "I5425:277580;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": true,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Kiểm Tra",
+        "figmaId": "I5425:277581;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-040204": [
+       {
+        "term": "BTVN",
+        "figmaId": "I7074:397535;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": true,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Kiểm Tra",
+        "figmaId": "I7074:397536;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-040205": [
+       {
+        "term": "BTVN",
+        "figmaId": "I7074:398722;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": true,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Kiểm Tra",
+        "figmaId": "I7074:398723;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-040210": [
+       {
+        "term": "BTVN",
+        "figmaId": "I5425:276356;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": true,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Kiểm Tra",
+        "figmaId": "I5425:276357;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A12.02",
+     "name": "o-tim-kiem",
+     "label": "Ô Tìm kiếm",
+     "spec": "Tìm theo tên bài trong danh sách card của tab đang mở; không tìm theo tên học viên; không đổi số liệu khối Tổng Quan.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "4324:86048",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-040201": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "5425:277582",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-040204": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "7074:397537",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-040205": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "7074:398724",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-040210": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "5425:276358",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A12.03",
+     "name": "card-bai",
+     "label": "Card bài",
+     "spec": "Bấm card để chọn bài: viền cam, tên bài ở vùng trái và bảng kết quả đổi theo bài. Bấm card không mở màn chấm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Card bài"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A12.04",
+     "name": "nut-dieu-huong-cham-bai",
+     "label": "Nút điều hướng chấm bài",
+     "spec": "Trên card bài đã giao có học viên nộp; chỉ hiển thị với `Giáo viên phụ trách chính`; mở màn chấm bài (xem khu vực Màn chấm bài).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "see",
+       "target": "TR-CT.A18",
+       "raw": "xem khu vực Màn chấm bài"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Nút điều hướng chấm bài",
+      "Giáo viên phụ trách chính"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A12.05",
+     "name": "danh-sach-btvn",
+     "label": "Danh sách BTVN",
+     "spec": "Mỗi bài học của lớp có một BTVN (liên kết 1–1), gồm cả bài học bổ sung; không gồm bài Tự học. BTVN tự giao cho học viên khi bài học mở; **không có nút `Giao bài` / `Thu hồi`** ở tab BTVN.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-040205": [
+       {
+        "term": "Giao bài",
+        "figmaId": "I7074:399738;2167:28344",
+        "layer": "Description",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Toast · Giao bài kiểm tra thành công.",
+        "component": "Atom/Toast",
+        "variant": {
+         "Action": true,
+         "Close": true,
+         "Type": "Success"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-040210": [
+       {
+        "term": "Giao bài",
+        "figmaId": "5425:276227",
+        "layer": "Button · Giao bài",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Button · Giao bài",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Giao bài",
+         "Type": "Primary",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Danh sách BTVN"
+     ],
+     "status": "khop-mot-phan"
+    },
+    {
+     "id": "TR-CT.A12.06",
+     "name": "danh-sach-kiem-tra",
+     "label": "Danh sách Kiểm tra",
+     "spec": "Bài kiểm tra của khoá học gắn với lớp và bài kiểm tra bổ sung do Admin thêm cho lớp. Giáo viên **không có** nút Thêm bài kiểm tra; `Giáo viên phụ trách chính` chỉ `Giao bài` và `Thu hồi` bài kiểm tra. Sắp theo ngày giao tăng dần; bài chưa giao xếp sau, theo thứ tự bài.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Danh sách Kiểm tra",
+      "Giáo viên phụ trách chính"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A12.07",
+     "name": "tai-du-lieu",
+     "label": "Tải dữ liệu",
+     "spec": "Tải toàn bộ bài và học viên hợp lệ, không phân trang. Loading/rỗng/lỗi hiển thị riêng từng vùng, lỗi có `Thử lại`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tải dữ liệu",
+      "Thử lại"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A12.08",
+     "name": "the-chi-so",
+     "label": "Thẻ chỉ số",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "Thẻ chỉ số",
+        "figmaId": "4324:85934",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "03/09",
+         "Đơn vị": "bài",
+         "Tiêu đề": "Đã chấm K.tra",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.A12.09",
+     "name": "trang-thai-nop-bai-va-diem",
+     "label": "Trạng thái nộp bài và điểm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "Trạng thái nộp bài và điểm",
+        "figmaId": "4324:98883",
+        "layer": "Trạng thái nộp bài và điểm",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Trạng thái nộp bài và điểm",
+        "component": "Trạng thái nộp bài và điểm",
+        "variant": {
+         "Trạng thái": "Điểm",
+         "Cỡ": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.A12.10",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "4324:98890",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "0",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.A12.11",
+     "name": "molecule-o-dinh-danh",
+     "label": "Molecule/Ô định danh",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "Molecule/Ô định danh",
+        "figmaId": "4324:98917",
+        "layer": "Molecule/Ô định danh",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Molecule/Ô định danh",
+        "component": null,
+        "variant": {
+         "Có Tiền": false,
+         "Có lịch hẹn": false,
+         "Có tag": false,
+         "Có avatar": true,
+         "Tên": "Hà Phan (bé là Nguyễn Hà Nguyên Anh)",
+         "Có tag thứ 2": false,
+         "Mã": "Học viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.A12.12",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "4324:86046",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": true,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.A12.13",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "4324:99243",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.A12.14",
+     "name": "percent",
+     "label": "PERCENT %",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "PERCENT %",
+        "figmaId": "4324:99249",
+        "layer": "PERCENT %",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "PERCENT %",
+        "component": "PERCENT %",
+        "variant": {
+         "Property 1": "ĐN 3"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.A12.15",
+     "name": "nut-cham-bai",
+     "label": "Nút · Chấm bài",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "Nút · Chấm bài",
+        "figmaId": "5425:274636",
+        "layer": "Nút · Chấm bài",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Nút · Chấm bài",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Chấm bài",
+         "Type": "Outlined",
+         "Size": "XSmall"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.A12.16",
+     "name": "button-thu-hoi",
+     "label": "Button · Thu hồi",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040200": [
+       {
+        "term": "Button · Thu hồi",
+        "figmaId": "4324:99732",
+        "layer": "Button · Thu hồi",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Button · Thu hồi",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Thu hồi",
+         "Type": "Danger",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.A12.17",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-040200": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "4324:86355",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A13",
+   "name": "khoi-tong-quan",
+   "title": "Khối Tổng Quan",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A13.01",
+     "name": "da-cham-k-tra",
+     "label": "Đã Chấm K.Tra",
+     "spec": "Dạng `A/B bài`, số có 2 chữ số (vd `03/09`): A = số bài kiểm tra có trạng thái `Đã chấm`; B = tổng số bài kiểm tra của lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC40"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A13.02",
+     "name": "k-tra-da-giao",
+     "label": "K.Tra Đã Giao",
+     "spec": "Dạng `A/B bài`, số có 2 chữ số: A = số bài kiểm tra đã giao; B = tổng số bài kiểm tra của lớp. Trạng thái giao lấy theo việc giáo viên đã bấm Giao bài, không suy từ việc có người nộp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC40"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A13.03",
+     "name": "diem-k-tra",
+     "label": "Điểm K.Tra",
+     "spec": "Cộng điểm các bài kiểm tra học viên đã được chấm rồi chia số bài đã chấm; giữ kết quả của học viên đã Rời lớp/Xóa; làm tròn kết quả cuối 1 chữ số thập phân. Chưa nộp/chưa chấm không tham gia; điểm 0 đã chấm vẫn tính. Không có bài đã chấm thì để trống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC39"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A13.04",
+     "name": "da-cham-btvn",
+     "label": "Đã Chấm BTVN",
+     "spec": "Dạng `A/B bài`, số có 2 chữ số: A = số BTVN có trạng thái `Đã chấm`; B = tổng số BTVN của lớp. Không cộng Tự học hoặc Kiểm tra.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A13.05",
+     "name": "ti-le-lam-btvn",
+     "label": "Tỉ Lệ Làm BTVN",
+     "spec": "Chỉ tính trên các bài học đã mở (đang chờ hoặc đã hoàn thành). Trung bình cộng tỷ lệ nộp BTVN của các học viên hợp lệ có dữ liệu, hiển thị `%`; không có dữ liệu thì để trống. Không dùng tỷ lệ chấm của card thay thế.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A13.06",
+     "name": "diem-btvn",
+     "label": "Điểm BTVN",
+     "spec": "Chỉ tính trên các bài học đã mở. Cộng điểm các BTVN học viên đã được chấm rồi chia số bài đã chấm; làm tròn 1 chữ số thập phân; điểm 0 đã chấm vẫn tính; không có bài đã chấm thì để trống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A13.07",
+     "name": "icon",
+     "label": "Icon ⌃",
+     "spec": "Chỉ thu gọn/mở khối, không đổi dữ liệu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A14",
+   "name": "tab-badge-va-card-bai",
+   "title": "Tab, badge và card bài",
+   "screens": [
+    "gv-lop-040200"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [
+    "Khác Figma GV-LOP-040200: Figma chưa có frame card `Chưa giao` đang chọn (xem trước đề) và nút `Giao bài`; hai thành phần này đặc tả theo ICS cũ."
+   ],
+   "items": [
+    {
+     "id": "TR-CT.A14.01",
+     "name": "badge-tab",
+     "label": "Badge tab",
+     "spec": "Số bài của tab có trạng thái `Chưa chấm`; mỗi bài đếm một lần dù có nhiều bài nộp chưa chấm; bằng 0 thì ẩn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Badge tab",
+      "Chưa chấm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A14.02",
+     "name": "nhan-trang-thai-btvn",
+     "label": "Nhãn trạng thái BTVN",
+     "spec": "`Chưa giao`: bài học chưa mở. `Đang đợi nộp bài`: bài đã mở, chưa học viên hợp lệ nào nộp. `Chưa chấm`: còn bài nộp của học viên hợp lệ chưa có điểm. `Đã chấm`: mọi bài đã nộp đều có điểm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-040200": [
+       {
+        "term": "Chưa giao",
+        "figmaId": "4324:99813",
+        "layer": "Trạng thái nộp bài và điểm",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Trạng thái nộp bài và điểm",
+        "component": "Trạng thái nộp bài và điểm",
+        "variant": {
+         "Trạng thái": "Chưa giao",
+         "Cỡ": "16 tag"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nhãn trạng thái BTVN"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A14.03",
+     "name": "nhan-trang-thai-kiem-tra",
+     "label": "Nhãn trạng thái Kiểm tra",
+     "spec": "`Chưa giao`: giáo viên chưa giao. `Đang đợi nộp bài`: đã giao, chưa có bài nộp. `Chưa chấm`: còn bài nộp chưa có điểm. `Đã chấm`: mọi bài đã nộp đều có điểm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-040200": [
+       {
+        "term": "Chưa giao",
+        "figmaId": "4324:99813",
+        "layer": "Trạng thái nộp bài và điểm",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Trạng thái nộp bài và điểm",
+        "component": "Trạng thái nộp bài và điểm",
+        "variant": {
+         "Trạng thái": "Chưa giao",
+         "Cỡ": "16 tag"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nhãn trạng thái Kiểm tra"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A14.04",
+     "name": "vong-so-da-nop",
+     "label": "Vòng số đã nộp",
+     "spec": "Dạng `S/N`: S = số học viên hợp lệ đã nộp; N = tổng học viên hợp lệ của bài (REQ02). Vòng tô theo tỷ lệ S/N. Rê chuột hiện tooltip `Số bài đã nộp`. Bài chưa giao không hiển thị.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-040200": [
+       {
+        "term": "S/N",
+        "figmaId": "4324:86350",
+        "layer": "Tabs Navigation",
+        "confidence": "thap",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "TR-CT.REQ02",
+       "raw": "REQ02"
+      }
+     ],
+     "testcases": [
+      "TR-CT.TC43"
+     ],
+     "missingTerms": [
+      "Vòng số đã nộp"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A14.05",
+     "name": "vong-ty-le-cham",
+     "label": "Vòng tỷ lệ chấm",
+     "spec": "`C / S × 100`, làm tròn số nguyên `%`: C = số bài đã nộp có điểm, S = số bài đã nộp. S = 0 hiển thị `0%`. Điểm 0 vẫn tính là đã chấm. Rê chuột hiện tooltip `Đã chấm`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Vòng tỷ lệ chấm",
+      "C / S × 100"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A14.06",
+     "name": "mo-ta",
+     "label": "Mô tả",
+     "spec": "Mô tả bài nguồn (nhiều dòng), không thay bằng nội dung bài làm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-040200": [
+       {
+        "term": "Mô tả",
+        "figmaId": "4324:99744",
+        "layer": "Mô tả",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A15",
+   "name": "bang-ket-qua-hoc-vien",
+   "title": "Bảng kết quả học viên",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A15.01",
+     "name": "diem-so",
+     "label": "ĐIỂM SỐ",
+     "spec": "Điểm bài đã chấm (REQ07), hiển thị 1 chữ số thập phân; điểm 0 hiển thị `0`. Đã nộp chưa chấm hoặc chưa nộp thì để trống, không hiển thị 0.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "TR-CT.REQ07",
+       "raw": "REQ07"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A15.02",
+     "name": "ten-hoc-vien",
+     "label": "TÊN HỌC VIÊN",
+     "spec": "Avatar, tên, dòng `Học viên`. Danh sách là tập học viên hợp lệ của bài (REQ02).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "TR-CT.REQ02",
+       "raw": "REQ02"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A15.03",
+     "name": "thoi-gian-lam-bai",
+     "label": "THỜI GIAN LÀM BÀI",
+     "spec": "Thời gian làm bài trên app dạng `HH:mm:ss`; vượt 24 giờ hiển thị tối đa `23:59:59`. Chưa nộp để trống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A15.04",
+     "name": "nop-bai",
+     "label": "NỘP BÀI",
+     "spec": "Badge `Đã nộp` (xanh) hoặc `Chưa nộp` (đỏ).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC47a"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A15.05",
+     "name": "so-cau-bo-qua",
+     "label": "SỐ CÂU BỎ QUA",
+     "spec": "Số câu học viên bỏ qua trong bài nộp; 0 hiển thị xám, lớn hơn 0 hiển thị cam. Chưa nộp để trống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A15.06",
+     "name": "bam-dong",
+     "label": "Bấm dòng",
+     "spec": "Dòng `Đã nộp`: `Giáo viên phụ trách chính` mở màn chấm bài, lọc sẵn học viên đó. Dòng `Chưa nộp`: Toast `Thông Báo` `Học viên chưa nộp bài này!`, không điều hướng. Giáo viên khác: không điều hướng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC47a"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A15.07",
+     "name": "thiet-lap-lai-nop-bai",
+     "label": "Thiết lập lại nộp bài",
+     "spec": "Không có icon làm mới trên dòng học viên; chỉ Admin, Class Handler, Support thiết lập lại bài nộp theo requirement Admin.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A16",
+   "name": "kiem-tra-chua-giao-xem-truoc-de-va-giao-",
+   "title": "Kiểm tra chưa giao — Xem trước đề và Giao bài",
+   "screens": [
+    "gv-lop-040211"
+   ],
+   "screensGuessed": [
+    "GV-LOP-040211"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A16.01",
+     "name": "xem-truoc-de",
+     "label": "Xem trước đề",
+     "spec": "Liệt kê lần lượt các câu: hướng dẫn, đề, đoạn văn, âm thanh (phát được), hình, đáp án `A`–`D`. Chỉ xem, không chọn đáp án. Đề không có câu thì hiển thị `Không có dữ liệu`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A16.02",
+     "name": "nut-giao-bai",
+     "label": "Nút Giao bài",
+     "spec": "Chỉ `Giáo viên phụ trách chính`. Bấm mở popup `Giao bài` với nội dung `Nhấn 'Xác nhận' để giao bài kiểm tra này`, nút `Huỷ` / `Xác nhận`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-CT.A16",
+       "raw": "mở popup `Giao bài` với nội dung `Nhấn 'Xác nhận' để giao bài kiểm tra này`"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A16.03",
+     "name": "dieu-kien-giao",
+     "label": "Điều kiện giao",
+     "spec": "Lớp ở trạng thái `Đang học`, hoặc lớp không chính thức (Lớp demo). Không đạt thì không giao, hiển thị Toast `Cảnh Báo` `Lớp chưa bắt đầu!`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A16.04",
+     "name": "giao-thanh-cong",
+     "label": "Giao thành công",
+     "spec": "Lưu lượt giao: lớp, bài kiểm tra, giáo viên giao, ngày giao. Card chuyển `Đang đợi nộp bài`; nút đổi thành `Thu hồi`; vùng trái chuyển sang bảng kết quả. Học viên hợp lệ thấy bài trên app.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A17",
+   "name": "thu-hoi-bai-kiem-tra",
+   "title": "Thu hồi bài kiểm tra",
+   "screens": [
+    "gv-lop-040221"
+   ],
+   "screensGuessed": [
+    "GV-LOP-040221"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A17.01",
+     "name": "nut-thu-hoi",
+     "label": "Nút Thu hồi",
+     "spec": "Bấm mở popup `Thu hồi`, nội dung `Bạn muốn thu hồi bài kiểm tra này? Toàn bộ bài làm và điểm của học viên sẽ bị xoá.`, nút `Huỷ` / `Xác nhận`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-CT.A17",
+       "raw": "mở popup `Thu hồi`"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A17.02",
+     "name": "thu-hoi-thanh-cong",
+     "label": "Thu hồi thành công",
+     "spec": "Xoá lượt giao và **toàn bộ bài làm, điểm, nhận xét chấm** của học viên ở bài này; bài về `Chưa giao`; nút đổi thành `Giao bài`; vùng trái về xem trước đề. Học viên không còn thấy bài trên app.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A18",
+   "name": "man-cham-bai-khung-man-va-dieu-huong",
+   "title": "Màn chấm bài — Khung màn và điều hướng",
+   "screens": [
+    "gv-lop-040100",
+    "gv-lop-040200",
+    "gv-lop-040320"
+   ],
+   "screensGuessed": [
+    "GV-LOP-040320"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A18.01",
+     "name": "diem-vao-tu-card-bai",
+     "label": "Điểm vào từ card bài",
+     "spec": "Card BTVN/Kiểm tra trong menu Bài tập và Kiểm tra có nút điều hướng sang màn chấm. Nút chỉ hiển thị với `Giáo viên phụ trách chính`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Điểm vào từ card bài",
+      "Giáo viên phụ trách chính"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A18.02",
+     "name": "diem-vao-tu-dong-hoc-vien",
+     "label": "Điểm vào từ dòng học viên",
+     "spec": "Bấm dòng học viên **đã nộp** trong bảng của bài đang chọn mở cùng màn chấm của bài, bộ lọc `Học Viên` được chọn sẵn học viên đó. Dòng học viên chưa nộp không điều hướng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "Học Viên",
+        "figmaId": "4324:98884",
+        "layer": "Molecule/Ô định danh",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "gv-lop-040200": [
+       {
+        "term": "Học Viên",
+        "figmaId": "4324:99389",
+        "layer": "Molecule/Ô định danh",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "gv-lop-040320": [
+       {
+        "term": "Học Viên",
+        "figmaId": "5751:83725",
+        "layer": "Học viên",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Điểm vào từ dòng học viên"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A18.03",
+     "name": "bai-bo-sung-nhieu-bai-nguon",
+     "label": "Bài bổ sung nhiều bài nguồn",
+     "spec": "BTVN của bài học bổ sung gồm nhiều bài nguồn: trước khi vào màn chấm hiển thị popup chọn một bài nguồn; màn chấm mở đúng bài nguồn được chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Bài bổ sung nhiều bài nguồn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A18.04",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "Icon `<` và tên bài: BTVN dùng tên bài học, Kiểm tra dùng tên bài kiểm tra. Bấm `<` quay về menu Bài tập và Kiểm tra.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I4324:85934;3004:47242",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "03/09",
+         "Đơn vị": "bài",
+         "Tiêu đề": "Đã chấm K.tra",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-040200": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I4324:86240;3004:47242",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "03/09",
+         "Đơn vị": "bài",
+         "Tiêu đề": "Đã chấm K.tra",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-040320": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "5750:77079",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC55"
+     ],
+     "missingTerms": [
+      "<"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A18.05",
+     "name": "da-cham-va-sua-bai-tren-lop",
+     "label": "Đã Chấm và Sửa Bài Trên Lớp",
+     "spec": "Nút cam ở góc phải; chi tiết tại khu vực Nút Đã Chấm và Sửa Bài Trên Lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đã Chấm và Sửa Bài Trên Lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A18.06",
+     "name": "vung-trai",
+     "label": "Vùng trái",
+     "spec": "Chi tiết câu đang chọn, bộ lọc học viên, `Nhận xét chung` và danh sách thẻ học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-040320": [
+       {
+        "term": "Vùng trái",
+        "figmaId": "5750:77089",
+        "layer": "Vùng trái · Chi tiết câu",
+        "confidence": "thap",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nhận xét chung"
+     ],
+     "status": "khop-mot-phan"
+    },
+    {
+     "id": "TR-CT.A18.07",
+     "name": "vung-phai",
+     "label": "Vùng phải",
+     "spec": "Danh sách `Câu hỏi` của bài với trạng thái chấm, nhãn loại câu và tỷ lệ điểm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-040100": [
+       {
+        "term": "Câu hỏi",
+        "figmaId": "4324:99321",
+        "layer": "Mô tả",
+        "confidence": "thap",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "gv-lop-040320": [
+       {
+        "term": "Vùng phải",
+        "figmaId": "5750:77205",
+        "layer": "Vùng phải · Câu hỏi",
+        "confidence": "thap",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Câu hỏi",
+        "figmaId": "5750:77207",
+        "layer": "Câu Hỏi",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop-mot-phan"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A19",
+   "name": "danh-sach-cau-hoi-va-trang-thai-cham",
+   "title": "Danh sách Câu hỏi và trạng thái chấm",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A19.01",
+     "name": "icon-trang-thai",
+     "label": "Icon trạng thái",
+     "spec": "`Đã chấm`: ô tick nền cam nhạt, dấu tick cam. `Đang chấm`: câu đang chọn, viền cam. `Chưa chấm`: ô tick xám. Hover hiển thị tên trạng thái.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A19.02",
+     "name": "nhan-loai-cau",
+     "label": "Nhãn loại câu",
+     "spec": "Một trong `Trắc nghiệm`, `Hình ảnh`, `Viết`, `Đọc`, `Sắp xếp`, `Nối từ`, `Nói`, `Câu hỏi con` theo bảng Loại câu ở REQ05.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "TR-CT.REQ05",
+       "raw": "REQ05"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A19.03",
+     "name": "de-bai",
+     "label": "Đề bài",
+     "spec": "Hướng dẫn của câu và nội dung câu hỏi, tối đa 2 dòng mỗi phần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A19.04",
+     "name": "vong-ty-le-diem",
+     "label": "Vòng tỷ lệ điểm",
+     "spec": "`Tổng điểm các câu trả lời đã chấm / (số câu trả lời đã chấm × 10)`, hiển thị `%` làm tròn số nguyên. Chỉ hiển thị khi câu ở trạng thái `Đã chấm` hoặc đang được chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A19.05",
+     "name": "bo-loc-trang-thai",
+     "label": "Bộ lọc Trạng Thái",
+     "spec": "Chọn một hoặc nhiều giá trị `Chưa chấm`, `Đã chấm`; không chọn thì hiển thị mọi câu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A20",
+   "name": "chi-tiet-cau-hoi-va-bo-loc-hoc-vien",
+   "title": "Chi tiết câu hỏi và bộ lọc học viên",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A20.01",
+     "name": "cau-n",
+     "label": "Câu N",
+     "spec": "Chip số thứ tự câu trong bài, kèm hướng dẫn của câu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A20.02",
+     "name": "noi-dung-cau",
+     "label": "Nội dung câu",
+     "spec": "Đề bài, đoạn văn (nếu có), trình phát âm thanh `00:00 / 00:00` (nếu có), hình ảnh (nếu có) và các đáp án `A`–`D` (chữ hoặc hình) theo dữ liệu câu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A20.03",
+     "name": "chua-cham",
+     "label": "Chưa Chấm",
+     "spec": "Checkbox. Bật thì chỉ hiển thị học viên chưa có điểm ở câu này; học viên vừa được chấm trong lúc lọc vẫn hiển thị đến khi đổi câu. Mặc định tắt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC67"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A20.04",
+     "name": "hien-ten",
+     "label": "Hiện Tên",
+     "spec": "Checkbox, mặc định bật. Tắt thì ẩn tên học viên trên thẻ, chỉ giữ số thứ tự, để chấm khách quan.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC68"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A20.05",
+     "name": "hoc-vien",
+     "label": "Học Viên",
+     "spec": "Dropdown chọn một hoặc nhiều học viên có câu trả lời ở câu này; không chọn thì hiển thị mọi học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC69"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A20.06",
+     "name": "the-hoc-vien",
+     "label": "Thẻ học viên",
+     "spec": "Chi tiết tại khu vực Thẻ học viên. Thứ tự thẻ đánh số từ 1 theo danh sách sau lọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A21",
+   "name": "the-hoc-vien-diem-va-dap-an",
+   "title": "Thẻ học viên — điểm và đáp án",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A21.01",
+     "name": "so-thu-tu",
+     "label": "Số thứ tự",
+     "spec": "Số thứ tự thẻ trong danh sách sau lọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.02",
+     "name": "ten-hoc-vien",
+     "label": "Tên học viên",
+     "spec": "Hiển thị khi `Hiện Tên` bật, tối đa 2 dòng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.03",
+     "name": "nhan-chi-xem",
+     "label": "Nhãn Chỉ xem",
+     "spec": "Hiển thị trên thẻ của học viên có câu trả lời nhưng **chưa nộp bài**; thẻ không bấm điểm, không nhận xét được.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC75"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.04",
+     "name": "day-diem-0-10",
+     "label": "Dãy điểm 0–10",
+     "spec": "11 nút số nguyên; điểm đã lưu được viền và chữ cam. Câu trả lời chưa chấm không có nút nào được chọn. Bấm một số để lưu ngay điểm đó. Không hiển thị với câu có câu con (điểm chấm ở từng câu con).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.05",
+     "name": "thu-gon-mo-rong",
+     "label": "Thu gọn / mở rộng",
+     "spec": "Icon `⌃` thu gọn hoặc mở thẻ; mặc định mở.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.06",
+     "name": "dap-an-cua-hoc-vien",
+     "label": "Đáp án của học viên",
+     "spec": "Hiển thị theo loại câu ở bảng dưới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.07",
+     "name": "trac-nghiem-tu-vung-1-trac-nghiem-cau-5-",
+     "label": "Trắc nghiệm từ vựng (1), Trắc nghiệm câu (5), Văn bản (6)",
+     "spec": "Ô chữ chứa đáp án học viên chọn hoặc nhập.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.08",
+     "name": "sap-xep-7",
+     "label": "Sắp xếp (7)",
+     "spec": "Ô chữ chứa các từ học viên sắp xếp, nối bằng dấu cách.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.09",
+     "name": "noi-cot-8",
+     "label": "Nối cột (8)",
+     "spec": "Ô chữ, mỗi cặp nối một dòng dạng `vế trái-vế phải`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.10",
+     "name": "noi-22-viet-dang-chu-44",
+     "label": "Nói (22), Viết dạng chữ (44)",
+     "spec": "Ô chữ chứa nội dung học viên nói (nhận diện lời nói) hoặc viết.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.11",
+     "name": "ve-4-chon-anh-2-trac-nghiem-hinh-anh-11",
+     "label": "Vẽ (4), Chọn ảnh (2), Trắc nghiệm hình ảnh (11)",
+     "spec": "Ảnh bài làm hoặc ảnh đáp án học viên chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.12",
+     "name": "ghi-am-3-nhap-vai-10",
+     "label": "Ghi âm (3), Nhập vai (10)",
+     "spec": "Danh sách chip `File ghi âm N`; bấm chip để nghe.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A21.13",
+     "name": "hoc-vien-bo-qua-cau",
+     "label": "Học viên bỏ qua câu",
+     "spec": "Ô chữ `Học viên đã bỏ qua câu này!`; vẫn chấm được.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A22",
+   "name": "nhan-xet-cua-giao-vien",
+   "title": "Nhận xét của giáo viên",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A22.01",
+     "name": "o-nhan-xet-cua-giao-vien",
+     "label": "Ô Nhận xét của giáo viên",
+     "spec": "Nhập nhiều dòng; lưu khi giáo viên xác nhận nhập (rời ô hoặc Enter theo component nhập chung). Rỗng là chưa có nhận xét.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A22.02",
+     "name": "icon-micro",
+     "label": "Icon micro",
+     "spec": "Mở popup ghi âm. Ghi xong thì tải file lên (tối đa 25MB mỗi file), trong lúc tải hiển thị chip `Đang tải...`; tải xong thêm chip `File ghi âm N` vào nhận xét.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-CT.A21",
+       "raw": "Mở popup ghi âm"
+      }
+     ],
+     "testcases": [
+      "TR-CT.TC79"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A22.03",
+     "name": "icon-tai-lieu",
+     "label": "Icon tài liệu",
+     "spec": "Mở popup tải ảnh lên, chỉ nhận định dạng ảnh, tối đa 25MB mỗi file. Tải xong thêm chip `File ảnh N`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-CT.A22",
+       "raw": "Mở popup tải ảnh lên"
+      }
+     ],
+     "testcases": [
+      "TR-CT.TC80"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A22.04",
+     "name": "chip-file-ghi-am-n-file-anh-n",
+     "label": "Chip File ghi âm N / File ảnh N",
+     "spec": "Bấm để nghe hoặc xem ảnh; `×` xoá file khỏi nhận xét. Đánh số theo thứ tự thêm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A22.05",
+     "name": "icon-sao-chep",
+     "label": "Icon sao chép",
+     "spec": "Sao chép nhận xét của thẻ (chữ, ảnh, ghi âm) vào bộ nhớ tạm; hiển thị Toast `Thông Báo` với nội dung `Đã sao chép`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A22.06",
+     "name": "icon-dan",
+     "label": "Icon dán",
+     "spec": "Dán nhận xét đã sao chép vào thẻ hiện tại, thay nội dung chữ, ảnh và ghi âm hiện có của thẻ. Dữ liệu bộ nhớ tạm không đúng định dạng thì hiển thị Toast `Thông Báo` với nội dung `Dữ liệu không hợp lệ`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC82"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A23",
+   "name": "nhan-xet-chung-cua-cau",
+   "title": "Nhận xét chung của câu",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A23.01",
+     "name": "o-nhan-xet-chung",
+     "label": "Ô Nhận xét chung",
+     "spec": "Nhập nhiều dòng; chỉ hiển thị khi câu có ít nhất một học viên có câu trả lời. Mặc định trống mỗi lần mở câu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC87"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A23.02",
+     "name": "xac-nhan-nhap",
+     "label": "Xác nhận nhập",
+     "spec": "Mở popup xác nhận trước khi áp dụng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-CT.A23",
+       "raw": "Mở popup xác nhận trước khi áp dụng"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A23.03",
+     "name": "popup-xac-nhan",
+     "label": "Popup xác nhận",
+     "spec": "Tiêu đề `Áp dụng nhận xét chung`; nội dung `Nhận xét này sẽ thay thế nhận xét của giáo viên cho tất cả học viên trong câu này. Bạn có muốn tiếp tục?`; nút `Huỷ` / `Xác nhận`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A23.04",
+     "name": "xac-nhan",
+     "label": "Xác nhận",
+     "spec": "Ghi đè nội dung chữ `Nhận xét của giáo viên` của mọi học viên có câu trả lời ở câu này; hiển thị tiến độ cập nhật cho đến khi xong.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC85"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A24",
+   "name": "cau-hoi-con",
+   "title": "Câu hỏi con",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A24.01",
+     "name": "tab-cau-hoi-n",
+     "label": "Tab Câu hỏi N",
+     "spec": "Mỗi câu con một tab trong thẻ học viên, đánh số từ 1.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A24.02",
+     "name": "noi-dung-cau-con",
+     "label": "Nội dung câu con",
+     "spec": "Đề, đáp án `A`–`D` (nếu có) và phần giải thích (nếu có) của câu con.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A24.03",
+     "name": "dap-an-cua-hoc-vien",
+     "label": "Đáp án của học viên",
+     "spec": "Theo bảng hiển thị đáp án ở khu vực Thẻ học viên, theo loại của câu con.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A24.04",
+     "name": "day-diem-0-10",
+     "label": "Dãy điểm 0–10",
+     "spec": "Chấm từng câu con. Câu con thuộc loại app chấm đã có điểm sẵn, giáo viên được sửa đè.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A25",
+   "name": "nut-da-cham-va-sua-bai-tren-lop",
+   "title": "Nút Đã Chấm và Sửa Bài Trên Lớp",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A25.01",
+     "name": "nut-da-cham-va-sua-bai-tren-lop",
+     "label": "Nút Đã Chấm và Sửa Bài Trên Lớp",
+     "spec": "Luôn hiển thị khi bài tải xong. Chỉ ghi nhận khi **mọi câu** có **mọi câu trả lời của học viên đã nộp** đều có điểm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A25.02",
+     "name": "chua-cham-het",
+     "label": "Chưa chấm hết",
+     "spec": "Không ghi nhận; hiển thị Toast `Thông Báo` với nội dung `Vui lòng chấm hết bài cho học viên!`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A25.03",
+     "name": "ghi-nhan",
+     "label": "Ghi nhận",
+     "spec": "Mỗi lần bấm hợp lệ **ghi đè** bản ghi của bài bằng người bấm và thời điểm máy chủ của lần bấm đó. Chỉ lưu lần bấm gần nhất, không lưu danh sách các lần bấm trước.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC92",
+      "TR-CT.TC94"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A25.04",
+     "name": "chip-nguoi-bam",
+     "label": "Chip người bấm",
+     "spec": "Dưới nút: avatar, tên và thời điểm cập nhật dạng `HH:mm - dd/MM/yyyy` của giáo viên bấm gần nhất. Chưa ai bấm thì không hiển thị.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A26",
+   "name": "tu-hoc-danh-sach-bai-va-bang-thoi-gian",
+   "title": "Tự học — Danh sách bài và bảng thời gian",
+   "screens": [
+    "gv-lop-050100"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [
+    "Khác Figma GV-LOP-050100: Figma chỉ có trạng thái chưa có khóa tự học; trạng thái có dữ liệu theo UI của requirement Admin, bỏ các nút thêm."
+   ],
+   "items": [
+    {
+     "id": "TR-CT.A26.01",
+     "name": "chua-co-khoa-tu-hoc",
+     "label": "Chưa có khóa tự học",
+     "spec": "Cả hai vùng hiển thị icon rỗng và `Bảng dữ liệu này đang trống`; không có nút `Thêm khóa tự học`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-050100": [
+       {
+        "term": "Bảng dữ liệu này đang trống",
+        "figmaId": "4333:7924",
+        "layer": "Bảng dữ liệu này đang trống",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chưa có khóa tự học"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A26.02",
+     "name": "card-bai",
+     "label": "Card bài",
+     "spec": "Số thứ tự và tên bài theo danh sách tự học của lớp (bài của khóa tự học và bài bổ sung), giữ thứ tự đã lưu. Bấm card để chọn: viền cam, bảng thời gian đổi theo bài.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC96",
+      "TR-CT.TC100"
+     ],
+     "missingTerms": [
+      "Card bài"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A26.03",
+     "name": "tai-du-lieu",
+     "label": "Tải dữ liệu",
+     "spec": "Tải toàn bộ bài và học viên, không phân trang; có dữ liệu thì mặc định chọn bài 1.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tải dữ liệu"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A26.04",
+     "name": "bang-thoi-gian",
+     "label": "Bảng thời gian",
+     "spec": "Cột `Số thứ tự`, `Tên học viên` và 8 cột `Học Flashcard`, `Bài tập`, `Từ vựng`, `Ngữ pháp`, `Đọc`, `Kanji`, `Nghe`, `Bảng chữ`. Mỗi ô là tổng thời gian app ghi nhận của đúng học viên–bài–phần, `HH:mm:ss`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC97"
+     ],
+     "missingTerms": [
+      "Bảng thời gian",
+      "Số thứ tự"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A26.05",
+     "name": "hoc-vien-trong-bang",
+     "label": "Học viên trong bảng",
+     "spec": "Toàn bộ học viên của lớp ở đủ 7 trạng thái `Đang học`, `Dự thính`, `Hoàn thành`, `Nghỉ học`, `Rời lớp`, `Chỉ xem`, `Xóa`; học viên rời lớp vẫn giữ thời gian cũ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Học viên trong bảng",
+      "Đang học"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A26.06",
+     "name": "vuot-24-gio",
+     "label": "Vượt 24 giờ",
+     "spec": "Ô có tổng thời gian vượt 24 giờ hiển thị tối đa `23:59:59`; dữ liệu gốc giữ nguyên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Vượt 24 giờ",
+      "23:59:59"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A26.07",
+     "name": "00-00-00",
+     "label": "00:00:00",
+     "spec": "Chưa có thời gian học hoặc tổng bằng 0. Tải lỗi không hiển thị thành `00:00:00`; vùng lỗi có `Thử lại`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TC98",
+      "TR-CT.TC100"
+     ],
+     "missingTerms": [
+      "00:00:00"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.A27",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A27.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | Giao bài: `Giao bài kiểm tra thành công.`; thu hồi: `Thu hồi bài kiểm tra thành công.`; áp dụng nhận xét chung xong: `Đã cập nhật nhận xét chung.`; ghi nhận nút: `Đã ghi nhận chấm và sửa bài trên lớp.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TTC01",
+      "TR-CT.TTC04"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A27.02",
+     "name": "thong-tin",
+     "label": "Thông tin",
+     "spec": "`Thông Báo` | `Lớp không có lịch để tính lương buổi này`; `Bạn đã bỏ qua chọn lịch, buổi học này sẽ không được tính lương`; `Chỉ tải được tài nguyên của 3 bài đã mở gần nhất`; `Đã sao chép`; `Dữ liệu không hợp lệ`; `Vui lòng chấm hết bài cho học viên!`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CT.TTC03"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A27.03",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | `Lớp chưa bắt đầu!` khi bắt đầu buổi học hoặc giao bài kiểm tra lúc lớp chưa ở trạng thái Đang học; `File vượt quá dung lượng cho phép (25MB).` khi file ghi âm hoặc ảnh nhận xét lớn hơn 25MB.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CT.A27.04",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | Bắt đầu, kết thúc, hoàn thành buổi học; lưu điểm, nhận xét, tải file, nhận xét chung hoặc ghi nhận nút thất bại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CT.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "gv-lop-030100",
+    "gv-lop-030110",
+    "gv-lop-030170",
+    "gv-lop-030200",
+    "gv-lop-030300",
+    "gv-lop-030400",
+    "gv-lop-030500",
+    "gv-lop-040100",
+    "gv-lop-040200"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.F01.01",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "4324:16658",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.02",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "4324:16676",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.03",
+     "name": "molecule-o-dinh-danh",
+     "label": "Molecule/Ô định danh",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "Molecule/Ô định danh",
+        "figmaId": "4324:16677",
+        "layer": "Molecule/Ô định danh",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Ô định danh",
+        "component": null,
+        "variant": {
+         "Có Tiền": false,
+         "Có lịch hẹn": false,
+         "Có tag": false,
+         "Có avatar": true,
+         "Tên": "Phương Nga (mẹ là Trang Quỳnh)",
+         "Có tag thứ 2": false,
+         "Mã": "Học viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.04",
+     "name": "trang-thai-nop-bai-va-diem",
+     "label": "Trạng thái nộp bài và điểm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "Trạng thái nộp bài và điểm",
+        "figmaId": "4324:16681",
+        "layer": "Trạng thái nộp bài và điểm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trạng thái nộp bài và điểm",
+        "component": "Trạng thái nộp bài và điểm",
+        "variant": {
+         "Trạng thái": "Điểm",
+         "Cỡ": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.05",
+     "name": "avatar-name",
+     "label": "AVATAR + Name",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "AVATAR + Name",
+        "figmaId": "4324:16775",
+        "layer": "AVATAR + Name",
+        "confidence": "cao",
+        "region": null,
+        "owner": "AVATAR + Name",
+        "component": "AVATAR + Name",
+        "variant": {
+         "Property 1": "AVATAR + Name 3"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.06",
+     "name": "tag-thoi-gian",
+     "label": "Tag thời gian",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "Tag thời gian",
+        "figmaId": "4324:16776",
+        "layer": "Tag thời gian",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tag thời gian",
+        "component": "Atom/Tag thời gian",
+        "variant": {
+         "Thời gian": "19:16 - 13/07/2026",
+         "Cỡ": "Nhỏ",
+         "Màu": "Cam"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.07",
+     "name": "percent",
+     "label": "PERCENT %",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "PERCENT %",
+        "figmaId": "4324:16780",
+        "layer": "PERCENT %",
+        "confidence": "cao",
+        "region": null,
+        "owner": "PERCENT %",
+        "component": "PERCENT %",
+        "variant": {
+         "Property 1": "ĐN 2"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.08",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "Component 2",
+        "figmaId": "4324:19386",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Sakumi"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.09",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "4324:19388",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Giáo Viên",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.10",
+     "name": "header-vai-tro",
+     "label": "Header/Vai trò",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "Header/Vai trò",
+        "figmaId": "4899:187415",
+        "layer": "Header/Vai trò",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Header/Vai trò",
+        "component": null,
+        "variant": {
+         "Vai trò": "Giáo viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.11",
+     "name": "sidebar-menu-teacher",
+     "label": "Sidebar · MENU - TEACHER",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "Sidebar · MENU - TEACHER",
+        "figmaId": "4915:260135",
+        "layer": "Sidebar · MENU - TEACHER",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - TEACHER",
+        "component": "MENU - TEACHER",
+        "variant": {
+         "Trang": "Lớp học / Giảng dạy / Bài học"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.12",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030110": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "5292:221839",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Bắt đầu buổi học",
+         "Type": "Neutral",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.13",
+     "name": "atom-label",
+     "label": "Atom/Label",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030200": [
+       {
+        "term": "Atom/Label",
+        "figmaId": "4324:16981",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36628",
+         "Label": "Tiêu đề",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.14",
+     "name": "background-border",
+     "label": "Background+Border",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030200": [
+       {
+        "term": "Background+Border",
+        "figmaId": "4324:16992",
+        "layer": "Background+Border",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Background+Border",
+        "component": "Background+Border",
+        "variant": {
+         "Label": "Label",
+         "Shape": "Pill",
+         "Color": "Orange"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.15",
+     "name": "empty-state-illustration",
+     "label": "Empty State / Illustration",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030300": [
+       {
+        "term": "Empty State / Illustration",
+        "figmaId": "4324:27520",
+        "layer": "Empty State / Illustration",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Empty State / Illustration",
+        "component": "Empty State / Illustration",
+        "variant": {
+         "Type": "Nền trống",
+         "Trung tâm": "Đắc Nhân"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.16",
+     "name": "mini-audio-badge",
+     "label": "Mini Audio Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030400": [
+       {
+        "term": "Mini Audio Badge",
+        "figmaId": "4324:27566",
+        "layer": "Mini Audio Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mini Audio Badge",
+        "component": "Liner Icon",
+        "variant": {
+         "Property 1": "Âm thanh"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CT.F01.17",
+     "name": "main-large-audio-icon",
+     "label": "Main Large Audio Icon",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-030400": [
+       {
+        "term": "Main Large Audio Icon",
+        "figmaId": "4324:27564",
+        "layer": "Main Large Audio Icon",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Main Large Audio Icon",
+        "component": "Liner Icon",
+        "variant": {
+         "Property 1": "Âm thanh"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "TR-CT.EX01",
+   "text": "Giáo viên không phải `Giáo viên phụ trách chính` của lớp → không có nút điều hướng chấm, `Giao bài`, `Thu hồi`; mở URL hoặc gửi request chấm/giao/thu hồi bị backend từ chối, không lưu dữ liệu. Giáo viên không thuộc lớp không xem được menu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX02",
+   "text": "Bấm `Đã Chấm và Sửa Bài Trên Lớp` khi còn câu trả lời chưa chấm → Toast `Thông Báo` `Vui lòng chấm hết bài cho học viên!`; không ghi nhận, chip giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX03",
+   "text": "Dán nhận xét với dữ liệu bộ nhớ tạm sai định dạng → Toast `Thông Báo` `Dữ liệu không hợp lệ`; nhận xét giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX04",
+   "text": "Lưu điểm, nhận xét hoặc nhận xét chung thất bại → Toast `Có Lỗi Xảy Ra`; không tính lại điểm bài từ dữ liệu chưa lưu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX05",
+   "text": "Tải file ghi âm hoặc ảnh thất bại → bỏ chip `Đang tải...`, không thêm file; Toast `Có Lỗi Xảy Ra`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX06",
+   "text": "Bài Kiểm tra bị `Thu hồi` trong lúc đang chấm → request chấm tiếp theo bị từ chối vì bài làm đã bị xoá; giáo viên quay lại menu Bài tập và Kiểm tra để tải dữ liệu mới.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX07",
+   "text": "Học viên có câu trả lời nhưng chưa nộp bài → thẻ `Chỉ xem`; backend từ chối request chấm/nhận xét cho học viên đó.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX08",
+   "text": "Bài chưa có học viên nộp → vùng thẻ hiển thị `Chưa có học sinh nộp bài`; không có thẻ để chấm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX09",
+   "text": "File ghi âm hoặc ảnh nhận xét lớn hơn 25MB → không tải lên, không thêm chip; Toast `Cảnh Báo` `File vượt quá dung lượng cho phép (25MB).`",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX10",
+   "text": "Giao bài kiểm tra khi lớp chính thức chưa ở trạng thái `Đang học` → Toast `Cảnh Báo` `Lớp chưa bắt đầu!`; bài vẫn `Chưa giao`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX11",
+   "text": "Giao hoặc thu hồi thất bại do backend/network → Toast `Có Lỗi Xảy Ra`; trạng thái bài và dữ liệu bài làm giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX12",
+   "text": "Bắt đầu buổi học khi lớp chính thức chưa ở trạng thái `Đang học` → Toast `Cảnh Báo` `Lớp chưa bắt đầu!`; không tạo buổi, không đổi lịch.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX13",
+   "text": "Sửa điểm danh hoặc ghi chú sau khi buổi đã `Hoàn thành`, hoặc sửa điểm danh khi buổi đã `Chờ hoàn thành` → backend từ chối; dữ liệu giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX14",
+   "text": "Tải tài nguyên của bài bị khoá → không tải; Toast `Thông Báo` `Chỉ tải được tài nguyên của 3 bài đã mở gần nhất`; request trực tiếp bị từ chối.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX15",
+   "text": "Hai giáo viên cùng bắt đầu một bài → chỉ tạo một buổi; người sau vào tiếp tục buổi đã có, không chọn lịch lần hai; mỗi buổi phát sinh lương tối đa một lần khi Hoàn thành.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX16",
+   "text": "Bắt đầu, Kết thúc hoặc Hoàn thành buổi thất bại do backend/network → Toast `Có Lỗi Xảy Ra`; trạng thái buổi giữ nguyên, nháp không mất.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX17",
+   "text": "Giáo viên gửi request thêm khóa tự học hoặc thêm bài tự học → backend từ chối; danh sách Tự học giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX18",
+   "text": "Tải danh sách bài hoặc bảng thời gian Tự học lỗi → vùng lỗi có `Thử lại`; không hiển thị rỗng hoặc `00:00:00` giả.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX19",
+   "text": "Bấm dòng học viên `Chưa nộp` ở bảng kết quả → Toast `Thông Báo` `Học viên chưa nộp bài này!`; không mở màn chấm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX20",
+   "text": "Giáo viên gửi request thiết lập lại bài nộp của học viên → backend từ chối; bài nộp giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "TR-CT.FLOW01",
+   "name": "Xem bài học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ19"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW02",
+   "name": "Bắt đầu buổi học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ20",
+    "TR-CT.REQ21"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW03",
+   "name": "Điểm danh và Kết thúc buổi học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ22"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW04",
+   "name": "Ghi chú và Hoàn thành buổi học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ23"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW05",
+   "name": "Mở màn chấm bài",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ01"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW06",
+   "name": "Chấm điểm một câu cho một học viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ06"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW07",
+   "name": "Tính điểm bài của học viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ07"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW08",
+   "name": "Nhận xét học viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ08"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW09",
+   "name": "Nhận xét chung",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ09"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW10",
+   "name": "Chấm câu hỏi con",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ10"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW11",
+   "name": "Ghi nhận Đã chấm và sửa bài trên lớp",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ11"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW12",
+   "name": "Xem kết quả Bài tập và Kiểm tra",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ13"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW13",
+   "name": "Giao bài kiểm tra",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ17"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW14",
+   "name": "Thu hồi bài kiểm tra",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ18"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW15",
+   "name": "Xem Tự học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ29"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "TR-CT.TC01",
+   "title": "Case 1: Mở menu Bài học",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A01",
+   "scenario": "Flow 1 / REQ19",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ19"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW01"
+   ],
+   "items": [
+    "TR-CT.A01.02",
+    "TR-CT.A01.03"
+   ]
+  },
+  {
+   "id": "TR-CT.TC02",
+   "title": "Case 2: Chọn bài không bắt đầu buổi",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A01",
+   "scenario": "REQ19",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ19"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC03",
+   "title": "Case 3: Khoá nút khi chưa đọc",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A02",
+   "scenario": "Flow 2 / REQ20",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ20"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW02"
+   ],
+   "items": [
+    "TR-CT.A02.03"
+   ]
+  },
+  {
+   "id": "TR-CT.TC04",
+   "title": "Case 4: Không hiển thị ghi chú bài trước",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A02",
+   "scenario": "REQ20",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ20"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A02.01",
+    "TR-CT.A02.02"
+   ]
+  },
+  {
+   "id": "TR-CT.TC05",
+   "title": "Case 5: Lớp chưa bắt đầu",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A02",
+   "scenario": "EX12 / REQ20",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ20"
+   ],
+   "exceptions": [
+    "TR-CT.EX12"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC06",
+   "title": "Case 6: Bắt đầu bài không theo thứ tự",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A02",
+   "scenario": "REQ20",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ20"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC07",
+   "title": "Case 7: Bắt đầu với lịch",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A03",
+   "scenario": "Flow 2 / REQ21",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ21"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC08",
+   "title": "Case 8: Không chọn lịch",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A03",
+   "scenario": "Flow 2 / REQ21",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ21"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC09",
+   "title": "Case 9: Lớp không có lịch tuần này",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A03",
+   "scenario": "REQ21",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ21"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A03.02"
+   ]
+  },
+  {
+   "id": "TR-CT.TC10",
+   "title": "Case 10: Lịch đã hoàn thành không chọn được",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A03",
+   "scenario": "REQ21",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ21"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A03.02"
+   ]
+  },
+  {
+   "id": "TR-CT.TC11",
+   "title": "Case 11: Huỷ không bắt đầu",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A03",
+   "scenario": "Flow 2",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC12",
+   "title": "Case 12: Kết thúc buổi học",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A04",
+   "scenario": "Flow 3 / REQ22",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ22"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW03"
+   ],
+   "items": [
+    "TR-CT.A04.08"
+   ]
+  },
+  {
+   "id": "TR-CT.TC13",
+   "title": "Case 13: Khoá nút khi còn chưa điểm danh",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A04",
+   "scenario": "REQ22",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ22"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC14",
+   "title": "Case 14: Không có dặn dò",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A04",
+   "scenario": "REQ22",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ22"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC15",
+   "title": "Case 15: Danh sách học viên điểm danh",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A04",
+   "scenario": "REQ22",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ22"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC16",
+   "title": "Case 16: Nháp lưu trên server",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A04",
+   "scenario": "REQ24",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ24"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC17",
+   "title": "Case 17: Hoàn thành buổi học",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A05",
+   "scenario": "Flow 4 / REQ23",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ23"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW04"
+   ],
+   "items": [
+    "TR-CT.A05.06"
+   ]
+  },
+  {
+   "id": "TR-CT.TC18",
+   "title": "Case 18: Khoá nút khi thiếu ghi chú",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A05",
+   "scenario": "REQ23",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ23"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC19",
+   "title": "Case 19: Ghi chú hiển thị ở bài đã hoàn thành",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A05",
+   "scenario": "REQ20 / REQ23 / REQ25",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ20",
+    "TR-CT.REQ23",
+    "TR-CT.REQ25"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC20",
+   "title": "Case 20: Tiếp tục buổi Đang dạy",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A06",
+   "scenario": "Flow 3 / REQ24",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ24"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC21",
+   "title": "Case 21: Tiếp tục buổi Chờ hoàn thành",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A06",
+   "scenario": "Flow 4 / REQ24",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ24"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC22",
+   "title": "Case 22: Xem kết quả buổi",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A07",
+   "scenario": "REQ25",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ25"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A07.04"
+   ]
+  },
+  {
+   "id": "TR-CT.TC23",
+   "title": "Case 23: Không sửa sau hoàn thành",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A07",
+   "scenario": "EX13 / REQ25",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ25"
+   ],
+   "exceptions": [
+    "TR-CT.EX13"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC24",
+   "title": "Case 24: Icon đúng trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A08",
+   "scenario": "REQ30",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ30"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A08.02",
+    "TR-CT.A08.03",
+    "TR-CT.A08.04",
+    "TR-CT.A08.07"
+   ]
+  },
+  {
+   "id": "TR-CT.TC25",
+   "title": "Case 25: Dropdown Bước 1 chỉ chữ",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A08",
+   "scenario": "REQ22 / REQ30",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ22",
+    "TR-CT.REQ30"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC26",
+   "title": "Case 26: Thông tin đúng nguồn",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A09",
+   "scenario": "REQ26",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ26"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A09.01"
+   ]
+  },
+  {
+   "id": "TR-CT.TC27",
+   "title": "Case 27: Nội dung theo thứ tự",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A09",
+   "scenario": "REQ26",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ26"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A09.02"
+   ]
+  },
+  {
+   "id": "TR-CT.TC28",
+   "title": "Case 28: Tải tài nguyên bài được phép",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A10",
+   "scenario": "REQ27",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ27"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC29",
+   "title": "Case 29: Bài bị khoá",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A10",
+   "scenario": "EX14 / REQ27",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ27"
+   ],
+   "exceptions": [
+    "TR-CT.EX14"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC30",
+   "title": "Case 30: Khoá dịch theo bài mới mở",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A10",
+   "scenario": "REQ27",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ27"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC31",
+   "title": "Case 31: 7/10 nộp",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A11",
+   "scenario": "REQ28",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ28"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A11.02"
+   ]
+  },
+  {
+   "id": "TR-CT.TC32",
+   "title": "Case 32: Nghỉ CP/KP trong mẫu",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A11",
+   "scenario": "REQ28",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ28"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A11.03"
+   ]
+  },
+  {
+   "id": "TR-CT.TC33",
+   "title": "Case 33: Mở menu và chọn bài",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A12",
+   "scenario": "Flow 12 / REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW12"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC34",
+   "title": "Case 34: Danh sách BTVN và Kiểm tra đúng nguồn",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A12",
+   "scenario": "REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC35",
+   "title": "Case 35: Tìm theo tên bài",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A12",
+   "scenario": "REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC36",
+   "title": "Case 36: Giáo viên không phải phụ trách chính chỉ xem",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A12",
+   "scenario": "EX01 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "TR-CT.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC37",
+   "title": "Case 37: Lỗi tải dữ liệu",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A12",
+   "scenario": "REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC38",
+   "title": "Case 38: Đủ sáu thẻ phạm vi toàn lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A13",
+   "scenario": "REQ14",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ14"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC39",
+   "title": "Case 39: Điểm trung bình tính cả điểm 0",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A13",
+   "scenario": "REQ14",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ14"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A13.03"
+   ]
+  },
+  {
+   "id": "TR-CT.TC40",
+   "title": "Case 40: K.Tra Đã Giao theo thao tác giao",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A13",
+   "scenario": "REQ14 / REQ17",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ14",
+    "TR-CT.REQ17"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A13.01",
+    "TR-CT.A13.02"
+   ]
+  },
+  {
+   "id": "TR-CT.TC41",
+   "title": "Case 41: Badge đếm bài chưa chấm",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A14",
+   "scenario": "REQ15",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ15"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC42",
+   "title": "Case 42: Đủ bốn nhãn trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A14",
+   "scenario": "REQ15",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ15"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC43",
+   "title": "Case 43: Vòng đã nộp trên tổng",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A14",
+   "scenario": "REQ15",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ15"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A14.04"
+   ]
+  },
+  {
+   "id": "TR-CT.TC44",
+   "title": "Case 44: Tỷ lệ chấm trên bài đã nộp",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A14",
+   "scenario": "REQ15",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ15"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC45",
+   "title": "Case 45: Ba trạng thái dòng",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A15",
+   "scenario": "Flow 12 / REQ16",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ16"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW12"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC46",
+   "title": "Case 46: Thời gian vượt 24 giờ",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A15",
+   "scenario": "REQ16",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ16"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC47",
+   "title": "Case 47: BTVN bài chưa mở",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A15",
+   "scenario": "REQ16",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ16"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC47a",
+   "title": "Case 47a: Bấm dòng Chưa nộp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A15",
+   "scenario": "EX19 / REQ16",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ16"
+   ],
+   "exceptions": [
+    "TR-CT.EX19"
+   ],
+   "flows": [],
+   "items": [
+    "TR-CT.A15.04",
+    "TR-CT.A15.06"
+   ]
+  },
+  {
+   "id": "TR-CT.TC47b",
+   "title": "Case 47b: Không có Thiết lập lại nộp bài",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A15",
+   "scenario": "EX20 / REQ16",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ16"
+   ],
+   "exceptions": [
+    "TR-CT.EX20"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC48",
+   "title": "Case 48: Xem trước đề chưa giao",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A16",
+   "scenario": "REQ17",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ17"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC49",
+   "title": "Case 49: Giao bài thành công",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A16",
+   "scenario": "Flow 13 / REQ17",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ17"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW13"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC50",
+   "title": "Case 50: Lớp chưa bắt đầu",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A16",
+   "scenario": "EX10 / REQ17",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ17"
+   ],
+   "exceptions": [
+    "TR-CT.EX10"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC51",
+   "title": "Case 51: Huỷ giao bài",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A16",
+   "scenario": "Flow 13 / REQ17",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ17"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW13"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC52",
+   "title": "Case 52: Thu hồi xoá bài làm và điểm",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A17",
+   "scenario": "Flow 14 / REQ18",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ18"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW14"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC53",
+   "title": "Case 53: Huỷ thu hồi",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A17",
+   "scenario": "Flow 14 / REQ18",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ18"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW14"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC54",
+   "title": "Case 54: Giao lại sau thu hồi",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A17",
+   "scenario": "REQ17 / REQ18",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ17",
+    "TR-CT.REQ18"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC55",
+   "title": "Case 55: Mở màn chấm từ card bài",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A18",
+   "scenario": "Flow 5 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW05"
+   ],
+   "items": [
+    "TR-CT.A18.04"
+   ]
+  },
+  {
+   "id": "TR-CT.TC56",
+   "title": "Case 56: Mở màn chấm từ dòng học viên đã nộp",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A18",
+   "scenario": "Flow 5 / REQ01 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ01",
+    "TR-CT.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC57",
+   "title": "Case 57: Dòng học viên chưa nộp không điều hướng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A18",
+   "scenario": "REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC58",
+   "title": "Case 58: Bài bổ sung chọn bài nguồn",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A18",
+   "scenario": "Flow 5 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC59",
+   "title": "Case 59: Giáo viên không phải phụ trách chính",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A18",
+   "scenario": "EX01 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "TR-CT.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC60",
+   "title": "Case 60: Quay về sau khi chấm",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A18",
+   "scenario": "Flow 6 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC61",
+   "title": "Case 61: Hiển thị đủ câu và nhãn loại",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A19",
+   "scenario": "REQ03 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ03",
+    "TR-CT.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC62",
+   "title": "Case 62: Trạng thái Đã chấm và tỷ lệ điểm",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A19",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC63",
+   "title": "Case 63: Câu còn câu trả lời chưa chấm",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A19",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC64",
+   "title": "Case 64: Câu không cần chấm",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A19",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC65",
+   "title": "Case 65: Lọc theo Trạng Thái",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A19",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC66",
+   "title": "Case 66: Hiển thị nội dung câu",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A20",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC67",
+   "title": "Case 67: Lọc Chưa Chấm",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A20",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A20.03"
+   ]
+  },
+  {
+   "id": "TR-CT.TC68",
+   "title": "Case 68: Ẩn tên học viên",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A20",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A20.04"
+   ]
+  },
+  {
+   "id": "TR-CT.TC69",
+   "title": "Case 69: Lọc Học Viên",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A20",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A20.05"
+   ]
+  },
+  {
+   "id": "TR-CT.TC70",
+   "title": "Case 70: Không có học viên nộp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A20",
+   "scenario": "EX08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "TR-CT.EX08"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC71",
+   "title": "Case 71: Chấm điểm câu giáo viên chấm",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A21",
+   "scenario": "Flow 6 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC72",
+   "title": "Case 72: Sửa đè điểm app chấm",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A21",
+   "scenario": "Flow 6 / REQ05 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ05",
+    "TR-CT.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC73",
+   "title": "Case 73: Đáp án đúng theo loại câu",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A21",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC74",
+   "title": "Case 74: Học viên bỏ qua câu",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A21",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC75",
+   "title": "Case 75: Học viên chưa nộp chỉ xem",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A21",
+   "scenario": "EX07 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ02"
+   ],
+   "exceptions": [
+    "TR-CT.EX07"
+   ],
+   "flows": [],
+   "items": [
+    "TR-CT.A21.03"
+   ]
+  },
+  {
+   "id": "TR-CT.TC76",
+   "title": "Case 76: Lưu điểm lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A21",
+   "scenario": "EX04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "TR-CT.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC77",
+   "title": "Case 77: Loại học viên theo khoảng trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A21",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC78",
+   "title": "Case 78: Nhập nhận xét chữ",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A22",
+   "scenario": "Flow 8 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW08"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC79",
+   "title": "Case 79: Ghi âm nhận xét",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A22",
+   "scenario": "Flow 8 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW08"
+   ],
+   "items": [
+    "TR-CT.A22.02"
+   ]
+  },
+  {
+   "id": "TR-CT.TC80",
+   "title": "Case 80: Tải ảnh nhận xét",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A22",
+   "scenario": "Flow 8 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW08"
+   ],
+   "items": [
+    "TR-CT.A22.03"
+   ]
+  },
+  {
+   "id": "TR-CT.TC81",
+   "title": "Case 81: Sao chép và dán nhận xét",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A22",
+   "scenario": "Flow 8 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW08"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC82",
+   "title": "Case 82: Dán dữ liệu không hợp lệ",
+   "priority": "Low",
+   "smoke": false,
+   "region": "TR-CT.A22",
+   "scenario": "EX03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "TR-CT.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "TR-CT.A22.06"
+   ]
+  },
+  {
+   "id": "TR-CT.TC83",
+   "title": "Case 83: Tải file lỗi",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A22",
+   "scenario": "EX05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "TR-CT.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC84",
+   "title": "Case 84: File vượt 25MB",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A22",
+   "scenario": "EX09 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ08"
+   ],
+   "exceptions": [
+    "TR-CT.EX09"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC85",
+   "title": "Case 85: Áp dụng nhận xét chung",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A23",
+   "scenario": "Flow 9 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW09"
+   ],
+   "items": [
+    "TR-CT.A23.04"
+   ]
+  },
+  {
+   "id": "TR-CT.TC86",
+   "title": "Case 86: Huỷ áp dụng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A23",
+   "scenario": "Flow 9 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW09"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC87",
+   "title": "Case 87: Áp dụng khi đang lọc",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A23",
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A23.01"
+   ]
+  },
+  {
+   "id": "TR-CT.TC88",
+   "title": "Case 88: Lỗi giữa chừng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A23",
+   "scenario": "EX04 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ09"
+   ],
+   "exceptions": [
+    "TR-CT.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC89",
+   "title": "Case 89: Chấm đủ câu con",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A24",
+   "scenario": "Flow 10 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW10"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC90",
+   "title": "Case 90: Chưa đủ câu con",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A24",
+   "scenario": "REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC91",
+   "title": "Case 91: Ghi nhận khi đã chấm hết",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A25",
+   "scenario": "Flow 11 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW11"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC92",
+   "title": "Case 92: Chưa chấm hết",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A25",
+   "scenario": "EX02 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ11"
+   ],
+   "exceptions": [
+    "TR-CT.EX02"
+   ],
+   "flows": [],
+   "items": [
+    "TR-CT.A25.03"
+   ]
+  },
+  {
+   "id": "TR-CT.TC93",
+   "title": "Case 93: Giáo viên khác bấm lại",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A25",
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC94",
+   "title": "Case 94: Học viên chỉ xem không chặn ghi nhận",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A25",
+   "scenario": "REQ02 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ02",
+    "TR-CT.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A25.03"
+   ]
+  },
+  {
+   "id": "TR-CT.TC95",
+   "title": "Case 95: Lớp chưa có khóa tự học",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A26",
+   "scenario": "Flow 15 / REQ29",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ29"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW15"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC96",
+   "title": "Case 96: Xem bảng thời gian bài tự học",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A26",
+   "scenario": "Flow 15 / REQ29",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ29"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW15"
+   ],
+   "items": [
+    "TR-CT.A26.02"
+   ]
+  },
+  {
+   "id": "TR-CT.TC97",
+   "title": "Case 97: Đủ học viên mọi trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A26",
+   "scenario": "REQ29",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ29"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A26.04"
+   ]
+  },
+  {
+   "id": "TR-CT.TC98",
+   "title": "Case 98: Vượt 24 giờ và zero thật",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A26",
+   "scenario": "REQ29",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ29"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A26.07"
+   ]
+  },
+  {
+   "id": "TR-CT.TC99",
+   "title": "Case 99: Không thêm khóa/bài",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A26",
+   "scenario": "EX17 / REQ29",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ29"
+   ],
+   "exceptions": [
+    "TR-CT.EX17"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC100",
+   "title": "Case 100: Lỗi tải bảng thời gian",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A26",
+   "scenario": "EX18 / REQ29",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ29"
+   ],
+   "exceptions": [
+    "TR-CT.EX18"
+   ],
+   "flows": [],
+   "items": [
+    "TR-CT.A26.02",
+    "TR-CT.A26.07"
+   ]
+  },
+  {
+   "id": "TR-CT.TTC01",
+   "title": "Toast Case 1: Thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A27",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A27.01"
+   ]
+  },
+  {
+   "id": "TR-CT.TTC02",
+   "title": "Toast Case 2: Thông báo",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A27",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TTC03",
+   "title": "Toast Case 3: Lỗi xử lý",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A27",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A27.02"
+   ]
+  },
+  {
+   "id": "TR-CT.TTC04",
+   "title": "Toast Case 4: Không lặp Toast khi chấm",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A27",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CT.A27.01"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-030120",
+   "text": "popup “Chi tiết lớp / Bài học / Popup chọn lịch dạy” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-LOP-030120",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-030121",
+   "text": "popup “Chi tiết lớp / Bài học / Popup bắt đầu buổi học” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-030121",
+   "text": "loại popup, màn cha GV-LOP-030100 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-LOP-030121",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-030401",
+   "text": "trang-thai “Chi tiết lớp / Bài học / Tài nguyên · Bị khoá” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-030401",
+   "text": "loại trang-thai, màn cha GV-LOP-030400 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-LOP-030401",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-040110",
+   "text": "trang-thai “Chi tiết lớp / Bài tập và Kiểm tra / BTVN · Bài học chưa mở” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-040110",
+   "text": "loại trang-thai, màn cha GV-LOP-040100 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-LOP-040110",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-040201",
+   "text": "trang-thai “Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra · Giáo viên không phụ trách chính (chỉ xem)” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-040201",
+   "text": "loại trang-thai, màn cha GV-LOP-040211 — tin cậy thap"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-040204",
+   "text": "trang-thai “Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra · Chưa giao · Giáo viên không phụ trách chính (xem trước đề)” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-040204",
+   "text": "loại trang-thai, màn cha GV-LOP-040201 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-LOP-040204",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-040205",
+   "text": "trang-thai “Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra · Vừa giao” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-040205",
+   "text": "loại trang-thai, màn cha GV-LOP-040204 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-LOP-040205",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-040210",
+   "text": "trang-thai “Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra · Chưa giao (xem trước đề)” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-040210",
+   "text": "loại trang-thai, màn cha GV-LOP-040200 — tin cậy trung-binh"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-040211",
+   "text": "popup “Chi tiết lớp / Bài tập và Kiểm tra / Popup Giao bài” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-040221",
+   "text": "popup “Chi tiết lớp / Bài tập và Kiểm tra / Popup Thu hồi” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-040221",
+   "text": "loại popup, màn cha GV-LOP-040201 — tin cậy thap"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "GV-LOP-040320",
+   "text": "trang-thai “Chi tiết lớp / Bài tập và Kiểm tra / Màn chấm bài · Tổng quan chấm bài” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-040320",
+   "text": "loại trang-thai, màn cha GV-LOP-040100 — tin cậy thap"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-050100",
+   "text": "loại trang-thai, màn cha GV-LOP-050110 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-LOP-050100",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "TR-CT.TTC01",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "TR-CT.TTC02",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "TR-CT.TTC03",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "TR-CT.TTC04",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "TR-CT.REQ07",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "TR-CT.EX06",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "TR-CT.EX11",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "TR-CT.EX15",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "TR-CT.EX16",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "teacher_role/class/class_teaching_requirements.md",
+   "prefix": "TR-CT",
+   "title": "[Giáo viên] Chi tiết lớp — Giảng dạy"
+  }
+ ]
+}

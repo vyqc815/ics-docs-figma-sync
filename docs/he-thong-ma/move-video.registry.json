@@ -1,0 +1,866 @@
+{
+ "cluster": "move-video",
+ "title": "Move Video",
+ "figmaPrefix": "T-MV",
+ "requirements": [
+  {
+   "id": "T-MV.REQ01",
+   "name": "Nguồn danh sách",
+   "text": "Danh sách = các file record trong folder tổng `MEET RECORDINGS SS` trên Drive của tài khoản Gmail đã xác minh, chưa bị xoá mềm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ02",
+   "name": "Quy tắc xác định buổi học",
+   "text": "Link cuộc họp → DB → class → id → course_id → các lesson cùng course_id mới nhất được mở → tên buổi học.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ03",
+   "name": "Điều kiện lớp",
+   "text": "Chỉ class có status **In progress** mới được sử dụng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ04",
+   "name": "Folder và tên file đích",
+   "text": "Class code = tên folder trong drive `SCREEN RECORDING`. Tên file đích mặc định `ngày_tên lesson` do hệ thống đặt khi move; user có thể sửa ở popup.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ05",
+   "name": "Phân loại trạng thái",
+   "text": "Mỗi dòng được gán trạng thái theo bảng bên dưới; quyết định màu badge, icon và thông báo. Chỉ dùng các thông báo trong bảng này.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ06",
+   "name": "Hiển thị lỗi",
+   "text": "Mọi lỗi hiển thị ngay trong danh sách (cột Bài học), không dùng popup lỗi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ07",
+   "name": "Filter",
+   "text": "Lọc theo **ngày tạo file trên Drive**, cho chọn 1 ngày hoặc khoảng ngày, đặt cạnh nút Xác minh lại, mặc định là tất cả.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ08",
+   "name": "Popup Đổi tên video",
+   "text": "Dùng cho cả dòng xanh và không xanh; tên rỗng không cho Xác nhận.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ09",
+   "name": "Đổi tên hai nơi",
+   "text": "Cả icon bút và nút Move đều mở popup Đổi tên video. Icon bút: đổi tên file ở folder tổng. Move: đổi tên file ở folder của lớp rồi move.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ10",
+   "name": "Copy tên video",
+   "text": "Icon copy bên trái tên video copy tên video.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ11",
+   "name": "Đổi tên và di chuyển hàng loạt",
+   "text": "Chỉ áp dụng cho các dòng xanh; không xử lý dòng cam/đỏ. Bấm là move luôn, không popup.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ12",
+   "name": "Xoá mềm",
+   "text": "Bấm Xoá hiện popup xác nhận. Dòng đã xoá không hiển thị trong danh sách nữa. Trên Drive, tên file được thêm hậu tố `_deleted_{account người xoá}` (ví dụ `..._deleted_dacnham`).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ13",
+   "name": "Sau khi move thành công",
+   "text": "File không còn trong folder tổng nên dòng biến mất khỏi danh sách.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ14",
+   "name": "Xác minh lại",
+   "text": "Nút `Xác minh lại` lấy lại danh sách file mới nhất từ Drive.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.REQ15",
+   "name": "Màu badge khi nhiều lỗi",
+   "text": "Mặc định cam; nếu có lỗi loại đỏ thì badge đỏ. Các lỗi đều hiển thị trong cột Bài học.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-MV-010000": {
+   "id": "ADM-MV-010000",
+   "name": "xac-minh-gmail",
+   "title": "Move video / Xác minh Gmail",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "ADM-MV-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2391:65872",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/move-video/xac-minh-gmail",
+   "link": "/move-video/xac-minh-gmail",
+   "dark": "ADM-MV-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "T-MV.A01",
+    "T-MV.A02",
+    "T-MV.F01"
+   ]
+  },
+  "ADM-MV-020000": {
+   "id": "ADM-MV-020000",
+   "name": "danh-sach-video",
+   "title": "Move video / Danh sách video",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "ADM-MV-020000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2391:66064",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/move-video/danh-sach-video",
+   "link": "/move-video/danh-sach-video",
+   "dark": "ADM-MV-020000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "T-MV.A01",
+    "T-MV.A02",
+    "T-MV.F01"
+   ]
+  },
+  "ADM-MV-020010": {
+   "id": "ADM-MV-020010",
+   "name": "popup-doi-ten-video",
+   "title": "Move video / Danh sách video / Popup đổi tên video",
+   "kind": "popup",
+   "parent": "ADM-MV-020000",
+   "shownOn": "ADM-MV-020000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2391:66541",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/move-video/danh-sach-video?popup=ADM-MV-020010",
+   "dark": "ADM-MV-020010-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "T-MV.A03"
+   ]
+  },
+  "ADM-MV-020020": {
+   "id": "ADM-MV-020020",
+   "name": "popup-xac-nhan-xoa",
+   "title": "Move video / Danh sách video / Popup xác nhận xoá",
+   "kind": "popup",
+   "parent": "ADM-MV-020000",
+   "shownOn": "ADM-MV-020000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2391:66560",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/move-video/danh-sach-video?popup=ADM-MV-020020",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "T-MV.A03"
+   ]
+  },
+  "ADM-MV-020030": {
+   "id": "ADM-MV-020030",
+   "name": "popup-doi-ten-move-video",
+   "title": "Move video / Danh sách video / Popup đổi tên & move video",
+   "kind": "popup",
+   "parent": "ADM-MV-020000",
+   "shownOn": "ADM-MV-020000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2478:111049",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/move-video/danh-sach-video?popup=ADM-MV-020030",
+   "dark": "ADM-MV-020030-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "T-MV.A03"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "T-MV.A01",
+   "name": "trang-1-xac-minh-gmail",
+   "title": "Trang 1: Xác minh Gmail",
+   "screens": [
+    "adm-mv-010000",
+    "adm-mv-020000"
+   ],
+   "screensGuessed": [
+    "ADM-MV-010000",
+    "ADM-MV-020000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "tools/move_video/move_video.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "T-MV.A02",
+   "name": "trang-2-danh-sach-video",
+   "title": "Trang 2: Danh sách video",
+   "screens": [
+    "adm-mv-010000",
+    "adm-mv-020000"
+   ],
+   "screensGuessed": [
+    "ADM-MV-010000",
+    "ADM-MV-020000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "tools/move_video/move_video.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "T-MV.A03",
+   "name": "trang-3-popup-doi-ten-video-va-xac-nhan-",
+   "title": "Trang 3: Popup Đổi tên video và xác nhận xoá",
+   "screens": [
+    "adm-mv-020010",
+    "adm-mv-020020",
+    "adm-mv-020030"
+   ],
+   "screensGuessed": [
+    "ADM-MV-020010",
+    "ADM-MV-020020",
+    "ADM-MV-020030"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "tools/move_video/move_video.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "T-MV.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-mv-010000",
+    "adm-mv-020000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "T-MV.F01.01",
+     "name": "empty-state-gmail",
+     "label": "Empty State / Gmail",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-mv-010000": [
+       {
+        "term": "Empty State / Gmail",
+        "figmaId": "2619:203719",
+        "layer": "Empty State / Gmail",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Empty State / Gmail",
+        "component": "Empty State / Gmail",
+        "variant": {
+         "Màu": "Cam"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "T-MV.F01.02",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-mv-010000": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "2409:148203",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xác Minh",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "T-MV.F01.03",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-mv-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:240882",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Tools / move video"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "T-MV.F01.04",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-mv-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2706:23582",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "T-MV.F01.05",
+     "name": "filter-thoi-gian",
+     "label": "Filter · Thời gian",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-mv-020000": [
+       {
+        "term": "Filter · Thời gian",
+        "figmaId": "3772:93338",
+        "layer": "Filter · Thời gian",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Thời gian",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Tuần này",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "T-MV.F01.06",
+     "name": "mv-row-video",
+     "label": "MV/Row · Video",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-mv-020000": [
+       {
+        "term": "MV/Row · Video",
+        "figmaId": "2409:150819",
+        "layer": "MV/Row · Video",
+        "confidence": "cao",
+        "region": null,
+        "owner": "MV/Row · Video",
+        "component": "MV/Row · Video",
+        "variant": {
+         "Trường hợp": "Không thấy link",
+         "State": "Hover"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "T-MV.EX01",
+   "text": "Chưa xác thực tài khoản Google khi thao tác (chưa liên kết hoặc hết phiên) → hiển thị \"Bạn chưa xác thực tài khoản google\" (`txtNotLoggedIn`), yêu cầu xác minh lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.EX02",
+   "text": "Reload trang → mất liên kết Google, quay lại bước đăng nhập Google.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.EX03",
+   "text": "Move dòng không xanh mà BE kiểm tra vẫn không hợp lệ → hiển thị đúng lỗi tương ứng (bảng 2.3) trong danh sách, file không bị đổi tên/move, dòng giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.EX04",
+   "text": "File không còn trong `MEET RECORDINGS SS` khi move → hiển thị lỗi \"Không tìm thấy file video trong drive MEET RECORDINGS SS\" (`txtErrorInvalidFile`) trong danh sách.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.EX05",
+   "text": "Trùng tên file video trong `MEET RECORDINGS SS` → \"Trùng tên file video trong drive MEET RECORDINGS SS\" (`txtErrorDuplicateVideo`).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.EX06",
+   "text": "Trùng link meet hoặc trùng video khi move → \"Trùng link meet hoặc trùng video, vui lòng kiểm tra lại\" (`txtDuplicateLinkOrVideo`) trong danh sách.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.EX07",
+   "text": "Đổi tên và di chuyển hàng loạt mà có dòng xanh move thất bại → \"Vẫn còn một số link video bị lỗi, vui lòng kiểm tra lại\" (`txtStillSomeErrorVideo`).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.EX08",
+   "text": "User bấm Huỷ ở popup → đóng popup, không gọi API, không thay đổi gì.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.EX09",
+   "text": "Tên rỗng ở popup → nút Xác nhận không cho bấm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "T-MV.EX10",
+   "text": "Huỷ ở popup xác nhận xoá → không xoá, các dòng vẫn giữ trạng thái tick.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "T-MV.FLOW01",
+   "name": "Đăng nhập, xác minh Gmail và vào danh sách",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "T-MV.FLOW02",
+   "name": "Xác định lớp, buổi học và tên đề xuất cho từng file",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "T-MV.FLOW03",
+   "name": "Move 1 file (nút Move)",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "T-MV.FLOW04",
+   "name": "Đổi tên file ở folder tổng (icon bút)",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "T-MV.FLOW05",
+   "name": "Đổi tên và di chuyển hàng loạt",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "T-MV.FLOW06",
+   "name": "Xoá nhiều file (xoá mềm)",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "T-MV.FLOW07",
+   "name": "Xác minh lại",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  }
+ ],
+ "testcases": [
+  {
+   "id": "T-MV.TC01",
+   "title": "Case 1: Đăng nhập Google và xác minh",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 1, EX02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "T-MV.EX02"
+   ],
+   "flows": [
+    "T-MV.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "T-MV.TC02",
+   "title": "Case 2: Hiển thị và phân loại danh sách",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 2, REQ02, REQ03, REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "T-MV.REQ02",
+    "T-MV.REQ03",
+    "T-MV.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "T-MV.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "T-MV.TC03",
+   "title": "Case 3: Filter theo ngày tạo",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "T-MV.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "T-MV.TC04",
+   "title": "Case 4: Move dòng xanh, huỷ popup, tên rỗng",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3, EX08, EX09, REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "T-MV.REQ08"
+   ],
+   "exceptions": [
+    "T-MV.EX08",
+    "T-MV.EX09"
+   ],
+   "flows": [
+    "T-MV.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "T-MV.TC05",
+   "title": "Case 5: Move dòng không xanh thành công",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 3",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [
+    "T-MV.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "T-MV.TC06",
+   "title": "Case 6: Move bị lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX03, EX04, EX05, EX06, REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "T-MV.REQ06"
+   ],
+   "exceptions": [
+    "T-MV.EX03",
+    "T-MV.EX04",
+    "T-MV.EX05",
+    "T-MV.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "T-MV.TC07",
+   "title": "Case 7: Icon bút và icon copy",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 4, REQ09, REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "T-MV.REQ09",
+    "T-MV.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [
+    "T-MV.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "T-MV.TC08",
+   "title": "Case 8: Đổi tên và di chuyển hàng loạt",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 5, EX07, REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "T-MV.REQ11"
+   ],
+   "exceptions": [
+    "T-MV.EX07"
+   ],
+   "flows": [
+    "T-MV.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "T-MV.TC09",
+   "title": "Case 9: Xoá mềm nhiều file",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 6, REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "T-MV.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [
+    "T-MV.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "T-MV.TC10",
+   "title": "Case 10: Xác minh lại và hết phiên Google",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 7, EX01, REQ14",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "T-MV.REQ14"
+   ],
+   "exceptions": [
+    "T-MV.EX01"
+   ],
+   "flows": [
+    "T-MV.FLOW07"
+   ],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-MV-020010",
+   "text": "popup “Move video / Danh sách video / Popup đổi tên video” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-MV-020010",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-MV-020020",
+   "text": "popup “Move video / Danh sách video / Popup xác nhận xoá” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-MV-020020",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-MV-020030",
+   "text": "popup “Move video / Danh sách video / Popup đổi tên & move video” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-MV-020030",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "T-MV.REQ01",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "T-MV.REQ04",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "T-MV.REQ13",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "T-MV.REQ15",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "T-MV.EX10",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "tools/move_video/move_video.md",
+   "prefix": "T-MV",
+   "title": "Move Video"
+  }
+ ]
+}

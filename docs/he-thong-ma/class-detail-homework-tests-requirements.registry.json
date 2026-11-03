@@ -1,0 +1,2019 @@
+{
+ "cluster": "class-detail-homework-tests-requirements",
+ "title": "Chi tiết lớp học — Menu Bài tập và kiểm tra",
+ "figmaPrefix": "M-CDH",
+ "requirements": [
+  {
+   "id": "M-CDH.REQ01",
+   "name": "Khung",
+   "text": "Tab/card/bảng đồng bộ theo lớp–loại bài–bài. Click chỉ chọn bảng, không vào chi tiết chấm. Tải full không phân trang; search theo tên bài học/bài danh sách. Mặc định tab/bài, thứ tự và thời điểm search cần chốt.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.REQ02",
+   "name": "Tổng Quan",
+   "text": "Sáu thẻ đúng UI, phạm vi toàn lớp, **cùng nguồn/công thức Tổng quan lớp**; điểm BTVN/KT trung bình theo bài học viên đã chấm, làm tròn 1 chữ số thập phân, điểm 0 vẫn tính. Không trộn tỷ lệ làm với tỷ lệ chấm card.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.REQ03",
+   "name": "Badge/count",
+   "text": "Badge là số bài Chưa chấm của từng tab, mỗi bài đếm một lần; card là S/U (đã nộp/chưa nộp) của học viên Đang học/Dự thính, 3/15 = tổng 18 người. Không lấy U làm mẫu số % chấm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.REQ04",
+   "name": "Trạng thái bài",
+   "text": "Kiểm tra có Đã chấm / Chưa chấm / Đang đợi nộp bài / Chưa giao; chỉ đọc. Chưa giao là chưa được giáo viên giao; đã giao/S=0 là Đang đợi nộp bài; có bài nộp chưa chấm là Chưa chấm; chấm xong mọi bài đã nộp là Đã chấm, không đợi người chưa nộp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.REQ05",
+   "name": "Tỷ lệ chấm",
+   "text": "C/S × 100 trên từng card, S chỉ bài học viên đã nộp, C bài đã chấm trong S; 3/3 là 100% dù còn người chưa nộp. Điểm 0 tính đã chấm, không cộng trùng lịch sử nộp; S=0 không chia 0.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.REQ06",
+   "name": "Học viên",
+   "text": "Chưa nộp, Đã nộp hoặc điểm khi đã chấm; bảng/count chỉ học viên Đang học/Dự thính, giữ kết quả khi Rời lớp/Xóa. Thời gian HH:mm:ss, vượt 24 giờ max 23:59:59, số câu bỏ qua đúng phiên; chưa có điểm khác điểm 0.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.REQ07",
+   "name": "Quyền",
+   "text": "Admin và Class Handler/Support được add vào lớp được xem/reset BTVN/KT từng học viên; không thêm/giao/chấm/sửa nội dung hoặc mở chi tiết chấm của giáo viên ở menu quản trị này.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.REQ08",
+   "name": "Reset",
+   "text": "Đúng một học viên–loại–bài–phiên; kiểm tra quyền, chống lặp. Click icon từng học viên mở popup xác nhận; Hủy không lưu; xác nhận reset toàn bộ bài làm/kết quả hiện hành về Chưa nộp/không điểm để học viên làm lại. Không reset đề hoặc người/bài khác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.REQ09",
+   "name": "Đồng bộ",
+   "text": "Kết quả reset/thay đổi nộp/chấm phản ánh dòng, count, % chấm, badge và thống kê liên quan từ cùng dữ liệu; không ảnh hưởng người/bài/lớp khác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.REQ10",
+   "name": "Toast",
+   "text": "Reset có một Toast kết quả sau backend; chỉ xem/search/chọn tab/card không Toast CRUD.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.REQ11",
+   "name": "Liên kết bài",
+   "text": "Bao nhiêu bài học lớp thì bấy nhiêu BTVN, liên kết 1–1; Kiểm tra lấy từ khoá học và bài bổ sung, giáo viên không thêm; giáo viên chỉ giao/thu hồi bài kiểm tra, BTVN tự giao khi bài học mở và không thu hồi. Tự học không liên quan tập bài này.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LOP-020300": {
+   "id": "ADM-LOP-020300",
+   "name": "bai-tap-ve-nha",
+   "title": "Chi tiết lớp học / Bài tập về nhà",
+   "kind": "man-chinh",
+   "parent": "ADM-LOP-020100",
+   "shownOn": "ADM-LOP-020300",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "769:36562",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop-hoc/bai-tap-ve-nha",
+   "link": "/chi-tiet-lop-hoc/bai-tap-ve-nha",
+   "dark": "ADM-LOP-020300-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-CDH.A01",
+    "M-CDH.A02",
+    "M-CDH.A03",
+    "M-CDH.A04",
+    "M-CDH.A05",
+    "M-CDH.A06",
+    "M-CDH.A07",
+    "M-CDH.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-CDH.A01",
+   "name": "khung-menu-bai-tap-va-kiem-tra",
+   "title": "Khung menu Bài tập và kiểm tra",
+   "screens": [
+    "adm-lop-020300"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020300"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_homework_tests_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDH.A01.01",
+     "name": "chon-tab",
+     "label": "Chọn tab",
+     "spec": "BTVN và Kiểm tra có danh sách/badge riêng. Chuyển tab hiển thị dữ liệu đúng loại; không trộn điểm hoặc bài nộp giữa hai loại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chọn tab"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A01.02",
+     "name": "chon-card",
+     "label": "Chọn card",
+     "spec": "Viền cam và tên bài vùng trái đồng bộ; bấm card chỉ chọn bảng kết quả, không mở trang chi tiết bài làm/chấm bài.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chọn card"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A01.03",
+     "name": "search",
+     "label": "Search",
+     "spec": "Ô Tìm kiếm ở phía danh sách bài như ảnh. **Search theo tên bài học/bài đang hiển thị trong danh sách**, không theo tên học viên. Thời điểm kích hoạt search và cách xử lý khi đổi tab còn cần chốt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Search",
+        "figmaId": "3497:68735",
+        "layer": "Atom/Input",
+        "confidence": "thap",
+        "region": "MainContent",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDH.TC04"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDH.A01.04",
+     "name": "them-bai-kiem-tra",
+     "label": "Thêm bài kiểm tra",
+     "spec": "Ảnh nguồn có nút Thêm bài kiểm tra nhưng phạm vi **Admin/Class Handler/Support chỉ xem và reset**: không cấp quyền thêm/giao bài ở menu quản trị này. Danh sách Kiểm tra gồm bài kiểm tra của khoá học và bài kiểm tra bổ sung được thêm ở chức năng riêng. **Giáo viên không thêm bài kiểm tra**; Giáo viên phụ trách chính chỉ `Giao bài` và `Thu hồi` bài kiểm tra. BTVN tự giao khi bài học mở, giáo viên không giao/thu hồi BTVN. Không tạo Kiểm tra theo số bài học/BTVN.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thêm bài kiểm tra",
+      "Giao bài"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A01.05",
+     "name": "loading-rong-loi",
+     "label": "Loading/rỗng/lỗi",
+     "spec": "Hiển thị riêng theo vùng, có Thử lại khi lỗi; không biến lỗi thành danh sách rỗng, số 0 hoặc Chưa nộp. Response lớp/tab/bài cũ không ghi đè lựa chọn hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Loading/rỗng/lỗi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A01.06",
+     "name": "the-chi-so",
+     "label": "Thẻ chỉ số",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Thẻ chỉ số",
+        "figmaId": "3502:69730",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "01/11",
+         "Đơn vị": "bài",
+         "Tiêu đề": "Đã chấm K.tra",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDH.A01.07",
+     "name": "trang-thai-nop-bai-va-diem",
+     "label": "Trạng thái nộp bài và điểm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Trạng thái nộp bài và điểm",
+        "figmaId": "3497:67536",
+        "layer": "Trạng thái nộp bài và điểm",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Trạng thái nộp bài và điểm",
+        "component": "Trạng thái nộp bài và điểm",
+        "variant": {
+         "Trạng thái": "Điểm",
+         "Cỡ": "24"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDH.A01.08",
+     "name": "molecule-o-dinh-danh",
+     "label": "Molecule/Ô định danh",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Molecule/Ô định danh",
+        "figmaId": "3502:69119",
+        "layer": "Molecule/Ô định danh",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Molecule/Ô định danh",
+        "component": null,
+        "variant": {
+         "Có Tiền": false,
+         "Có lịch hẹn": false,
+         "Có tag": false,
+         "Có avatar": true,
+         "Tên": "Bích Thùy",
+         "Có tag thứ 2": false,
+         "Mã": "MÃ HV: 0001"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDH.A01.09",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "3502:69506",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Số buổi",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDH.A01.10",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "3497:68719",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": true,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDH.A01.11",
+     "name": "atom-badge",
+     "label": "Atom/Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Atom/Badge",
+        "figmaId": "3497:68608",
+        "layer": "Atom/Badge",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Atom/Badge",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "1",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDH.A01.12",
+     "name": "percent",
+     "label": "PERCENT %",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "PERCENT %",
+        "figmaId": "3497:68616",
+        "layer": "PERCENT %",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "PERCENT %",
+        "component": "PERCENT %",
+        "variant": {
+         "Property 1": "ĐN 3"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M-CDH.A02",
+   "name": "khoi-tong-quan",
+   "title": "Khối Tổng Quan",
+   "screens": [
+    "adm-lop-020300"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020300"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_homework_tests_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDH.A02.01",
+     "name": "da-cham-kiem-tra",
+     "label": "Đã chấm kiểm tra",
+     "spec": "Hiển thị dạng A/B như 01/12, lấy số đã chấm/tổng Kiểm tra theo **cùng nguồn và công thức Tổng quan lớp**. Không tự thay bằng cặp số đã nộp/chưa nộp hoặc % chấm của card.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đã chấm kiểm tra"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A02.02",
+     "name": "kiem-tra-da-giao",
+     "label": "Kiểm tra đã giao",
+     "spec": "Hiển thị số bài kiểm tra đã giao/tổng bài của lớp như 04/12; lấy trạng thái giao từ nguồn, không dựa vào có người nộp mới coi đã giao.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Kiểm tra đã giao",
+        "figmaId": "I3502:69731;3108:127769",
+        "layer": "Ô biểu tượng",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Ô biểu tượng",
+        "component": "Atom/Ô biểu tượng",
+        "variant": {
+         "Biểu tượng": "Kiểm tra đã giao",
+         "Cỡ": "32"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDH.A02.03",
+     "name": "diem-kt",
+     "label": "Điểm KT",
+     "spec": "Điểm trung bình KT của lớp theo quy tắc đã chốt ở Tổng quan lớp: cộng điểm các bài học viên đã chấm/chia số bài đã chấm, giữ kết quả lịch sử; làm tròn 1 chữ số thập phân. Chưa nộp/chưa chấm không tham gia, điểm 0 đã chấm vẫn tính.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDH.TC07"
+     ],
+     "missingTerms": [
+      "Điểm KT"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A02.04",
+     "name": "da-cham-btvn",
+     "label": "Đã chấm BTVN",
+     "spec": "Dạng A/B như 03/18, tính riêng BTVN theo **cùng nguồn và công thức Tổng quan lớp**; tập bài BTVN gắn với bài học lớp, không cộng Tự học hoặc Kiểm tra.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Đã chấm BTVN",
+        "figmaId": "3502:69733",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "01/12",
+         "Đơn vị": "bài",
+         "Tiêu đề": "đã chấm bTVN",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDH.A02.05",
+     "name": "ti-le-lam-btvn",
+     "label": "Tỉ lệ làm BTVN",
+     "spec": "Trung bình cộng tỷ lệ làm/nộp BTVN của các học viên có dữ liệu, cùng nguồn và công thức Tổng quan lớp; không có dữ liệu thì để trống. Không dùng tỷ lệ chấm C/S của card để thay Tỉ lệ làm BTVN.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Tỉ lệ làm BTVN",
+        "figmaId": "3502:69734",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "78",
+         "Đơn vị": "%",
+         "Tiêu đề": "tỉ lệ làm BTVN",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDH.TC08"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDH.A02.06",
+     "name": "diem-btvn",
+     "label": "Điểm BTVN",
+     "spec": "Điểm trung bình các bài BTVN học viên đã được chấm, tách KT; cùng quy tắc trung bình theo bài/làm tròn 1 chữ số thập phân. Không có bài đã chấm thì để trống, không tự tạo 0.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Điểm BTVN",
+        "figmaId": "3502:69735",
+        "layer": "Thẻ chỉ số",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Thẻ chỉ số",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Có biểu tượng": true,
+         "Có đơn vị": true,
+         "Số liệu": "8.8",
+         "Đơn vị": "bài",
+         "Tiêu đề": "Điểm BTVN",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDH.A02.07",
+     "name": "chevron",
+     "label": "Chevron",
+     "spec": "Chỉ mở/thu gọn vùng Tổng Quan; không đổi dữ liệu hay reset.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDH.TC06"
+     ],
+     "missingTerms": [
+      "Chevron"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDH.A03",
+   "name": "tab-btvn-kiem-tra-badge-va-card-bai",
+   "title": "Tab BTVN/Kiểm tra, badge và card bài",
+   "screens": [
+    "adm-lop-020300"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020300"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_homework_tests_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDH.A03.01",
+     "name": "badge-tab",
+     "label": "Badge tab",
+     "spec": "Đếm số bài thuộc nhóm chưa chấm của đúng loại BTVN hoặc Kiểm tra; mỗi bài chỉ đếm một lần dù có nhiều bài nộp chưa chấm. Không cộng bài của tab còn lại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Badge tab"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A03.02",
+     "name": "trang-thai-card",
+     "label": "Trạng thái card",
+     "spec": "Kiểm tra có 4 nhãn: **Đã chấm / Chưa chấm / Đang đợi nộp bài / Chưa giao**. **Chưa giao**: giáo viên chưa giao; **Đang đợi nộp bài**: đã giao, chưa có bài nộp; **Chưa chấm**: có bài nộp còn chưa được chấm; **Đã chấm**: giáo viên đã chấm xong các bài đã nộp. Có người chưa nộp không ngăn trạng thái Đã chấm nếu toàn bộ bài đã nộp đã chấm. Chỉ đọc; không có dropdown quản trị đổi trạng thái.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDH.TC10"
+     ],
+     "missingTerms": [
+      "Trạng thái card"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A03.03",
+     "name": "so-nop-bai",
+     "label": "Số nộp bài",
+     "spec": "**S / U = số học viên đã nộp / số học viên chưa nộp** của bài, chỉ trong tập học viên **Đang học hoặc Dự thính**. Ví dụ 3/15 là 3 đã nộp và 15 chưa nộp, tổng tập là 18; **không phải 3 trên tổng 15**. U = N − S; người đã chấm vẫn nằm trong S.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Số nộp bài"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A03.04",
+     "name": "vong",
+     "label": "Vòng %",
+     "spec": "Tỷ lệ đã chấm trong số bài học viên đã nộp của card; công thức ở UI riêng bên dưới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDH.TC11",
+      "M-CDH.TC12"
+     ],
+     "missingTerms": [
+      "Vòng %"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A03.05",
+     "name": "card-chua-giao",
+     "label": "Card Chưa giao",
+     "spec": "Hiển thị nhãn xám như ảnh, không giả có người nộp hoặc 0 điểm. Chọn để xem trạng thái nếu nguồn cho phép, không tự giao đề.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Card Chưa giao"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A03.06",
+     "name": "mo-ta",
+     "label": "Mô tả",
+     "spec": "Hiển thị mô tả bài nguồn nếu có, không thay bằng nội dung câu trả lời của học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Mô tả",
+        "figmaId": "3497:69048",
+        "layer": "Mô tả",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-CDH.A04",
+   "name": "ty-le-cham-bai-tren-tung-card",
+   "title": "Tỷ lệ chấm bài trên từng card",
+   "screens": [
+    "adm-lop-020300"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020300"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_homework_tests_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDH.A04.01",
+     "name": "so-da-nop-s",
+     "label": "Số đã nộp S",
+     "spec": "Đếm bài nộp hiện hành của học viên **Đang học/Dự thính** ở đúng lớp–loại BTVN/KT–bài; cùng học viên nộp nhiều lần không cộng nhiều người. Sau reset người đó về Chưa nộp, không tính phiên/điểm cũ vào S/C; nộp lại thì được tính lại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Số đã nộp S"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A04.02",
+     "name": "so-da-cham-c",
+     "label": "Số đã chấm C",
+     "spec": "Trong tập S, đếm bài đã chấm hoàn tất; dựa vào trạng thái đã chấm, không dùng điểm > 0. Điểm 0 được chấm vẫn tính vào C.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Số đã chấm C"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A04.03",
+     "name": "vi-du-3-3",
+     "label": "Ví dụ 3/3",
+     "spec": "3 học viên đã nộp và cả 3 được giáo viên chấm → **100%**, bất kể còn bao nhiêu học viên chưa nộp. Không lấy C chia sĩ số toàn lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Ví dụ 3/3"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A04.04",
+     "name": "vi-du-0-3",
+     "label": "Ví dụ 0/3",
+     "spec": "3 học viên đã nộp nhưng chưa bài nào chấm → **0%**.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Ví dụ 0/3"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A04.05",
+     "name": "s-0",
+     "label": "S = 0",
+     "spec": "Không chia cho 0, không tự báo 100% vì không có việc chấm. Hiển thị trống/0% khi chưa có bài nộp và cách làm tròn tỷ lệ cần chốt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "S = 0"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A04.06",
+     "name": "sau-khi-du-lieu-thay-doi",
+     "label": "Sau khi dữ liệu thay đổi",
+     "spec": "Nhận bài nộp/chấm/reset từ nguồn thì tính lại C/S của đúng card; cập nhật badge/trạng thái theo dữ liệu thống nhất, không đổi card khác không liên quan.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Sau khi dữ liệu thay đổi"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDH.A05",
+   "name": "bang-trang-thai-ket-qua-cua-tung-hoc-vie",
+   "title": "Bảng trạng thái/kết quả của từng học viên",
+   "screens": [
+    "adm-lop-020300"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020300"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_homework_tests_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDH.A05.01",
+     "name": "ten-hoc-vien",
+     "label": "Tên học viên",
+     "spec": "Dòng thuộc đúng lớp/bài đang chọn, theo định danh học viên. **Chỉ học viên Đang học hoặc Dự thính** trong bảng/count hiện hành; đây là trạng thái **học viên**, không phải trạng thái bài học. **Giữ kết quả đã làm khi học viên Rời lớp/Xóa**, không xóa điểm/bài nộp lịch sử vì đổi trạng thái. Thứ tự hiển thị còn cần chốt; không dùng full trạng thái của Tự học.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Tên học viên",
+        "figmaId": "3497:67513",
+        "layer": "Tên học viên",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDH.A05.02",
+     "name": "chua-nop",
+     "label": "Chưa nộp",
+     "spec": "Hiển thị badge Chưa nộp ở cột Nộp bài như ảnh; không dựng điểm/thời gian/số câu bỏ qua của bài khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Chưa nộp",
+        "figmaId": "3497:67596",
+        "layer": "Trạng thái nộp bài và điểm",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Trạng thái nộp bài và điểm",
+        "component": "Trạng thái nộp bài và điểm",
+        "variant": {
+         "Trạng thái": "Chưa Nộp",
+         "Cỡ": "24"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDH.TC18"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDH.A05.03",
+     "name": "da-nop-chua-cham",
+     "label": "Đã nộp chưa chấm",
+     "spec": "Thể hiện trạng thái Đã nộp; điểm để trống/chưa có điểm, không tự lấy 0. Thời gian/số câu bỏ qua lấy dữ liệu phiên nộp nếu có.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Đã nộp chưa chấm"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A05.04",
+     "name": "da-cham",
+     "label": "Đã chấm",
+     "spec": "Hiển thị điểm giáo viên đã chấm ở cột Điểm số. Điểm 0 hợp lệ phải hiện 0; trạng thái nộp vẫn là đã nộp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Đã chấm",
+        "figmaId": "3497:69045",
+        "layer": "Trạng thái nộp bài và điểm",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": "Trạng thái nộp bài và điểm",
+        "component": "Trạng thái nộp bài và điểm",
+        "variant": {
+         "Trạng thái": "Đã chấm",
+         "Cỡ": "16 tag"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDH.A05.05",
+     "name": "thoi-gian-lam-bai",
+     "label": "Thời gian làm bài",
+     "spec": "Thời gian thực làm bài từ nguồn app, dạng HH:mm:ss như ảnh; không lấy thời gian tự học, lịch dạy hoặc thời gian từ khi Admin mở bảng. Giới hạn hiển thị **giống Tự học: vượt 24 giờ hiển thị tối đa 23:59:59**, không quay về 00:00:00; vẫn giữ thời gian thực đã ghi nhận. Chỉ kế thừa cách hiển thị thời gian, không lấy dữ liệu thời gian ôn tập.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Thời gian làm bài",
+        "figmaId": "3497:67521",
+        "layer": "Thời gian làm bài",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-CDH.TC23"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDH.A05.06",
+     "name": "so-cau-bo-qua",
+     "label": "Số câu bỏ qua",
+     "spec": "Số câu bỏ qua của phiên bài nộp đang hiển thị, 0 hợp lệ. Không tự quy đổi thành câu sai/điểm trừ khi chưa có rule.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Số câu bỏ qua",
+        "figmaId": "3497:67517",
+        "layer": "số câu bỏ qua",
+        "confidence": "cao",
+        "region": "MainContent",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-CDH.A05.07",
+     "name": "reset-tung-dong",
+     "label": "Reset từng dòng",
+     "spec": "Icon vòng mũi tên theo ảnh, thao tác đúng một học viên–loại bài–bài. Không reset cả lớp hoặc đưa user vào trang chấm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Reset từng dòng"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDH.A06",
+   "name": "reset-btvn-kiem-tra-cho-hoc-vien",
+   "title": "Reset BTVN/Kiểm tra cho học viên",
+   "screens": [
+    "adm-lop-020300"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020300"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_homework_tests_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDH.A06.01",
+     "name": "pham-vi",
+     "label": "Phạm vi",
+     "spec": "Reset đúng một học viên và một BTVN hoặc Kiểm tra của lớp đang xem. Kiểm tra quyền và liên kết bài nộp trước khi lưu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDH.TC25"
+     ],
+     "missingTerms": [
+      "Phạm vi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A06.02",
+     "name": "xac-nhan",
+     "label": "Xác nhận",
+     "spec": "Popup `Xác nhận reset BTVN` hoặc `Xác nhận reset bài kiểm tra`, hiển thị tên học viên/tên bài. Nội dung: `Bạn có muốn reset [BTVN/bài kiểm tra] của [Tên học viên]? Toàn bộ bài làm và kết quả của bài này sẽ được reset để học viên làm lại.` Nút **Hủy** / **Reset**. Mở popup chưa reset dữ liệu; Hủy chỉ đóng, không Toast CRUD.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "M-CDH.A06",
+       "raw": "Mở popup chưa reset dữ liệu"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Xác nhận",
+      "Xác nhận reset BTVN"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A06.03",
+     "name": "ket-qua-reset",
+     "label": "Kết quả reset",
+     "spec": "**Toàn bộ dữ liệu bài làm/kết quả hiện hành của bài đó được reset**: nội dung/câu trả lời/tệp bài nộp, điểm, nhận xét chấm, trạng thái/thời điểm nộp, thời gian làm bài và số câu bỏ qua. Về **Chưa nộp**, không còn điểm/kết quả cũ; thời gian/số câu bỏ qua trở về dữ liệu ban đầu. **Học viên được làm và nộp lại**. Không xóa đề, bài được giao hoặc bài của học viên khác. Cách lưu audit/lịch sử ở DB còn cần chốt riêng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Kết quả reset"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A06.04",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "Cập nhật lại dòng và các count/%/badge/Tổng Quan bị ảnh hưởng theo dữ liệu mới. Toast `Reset BTVN thành công.` / `Reset bài kiểm tra thành công.`; không đổi học viên hoặc bài khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDH.TC24",
+      "M-CDH.TC27",
+      "M-CDH.TC28"
+     ],
+     "missingTerms": [
+      "Thành công",
+      "Reset BTVN thành công."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A06.05",
+     "name": "loi-chong-lap",
+     "label": "Lỗi/chống lặp",
+     "spec": "Khóa thao tác khi đang lưu, không thực hiện hai reset từ một thao tác; lỗi giữ kết quả cũ và một Toast lỗi. Kiểm tra lại quyền ở backend.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lỗi/chống lặp"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDH.A07",
+   "name": "toast-phan-hoi-reset",
+   "title": "Toast phản hồi reset",
+   "screens": [
+    "adm-lop-020300"
+   ],
+   "screensGuessed": [
+    "ADM-LOP-020300"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/class_management/class_detail_homework_tests_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDH.A07.01",
+     "name": "thanh-cong",
+     "label": "Thành Công",
+     "spec": "`Reset BTVN thành công.` / `Reset bài kiểm tra thành công.` đúng loại thao tác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDH.TC29"
+     ],
+     "missingTerms": [
+      "Thành Công",
+      "Reset BTVN thành công."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A07.02",
+     "name": "co-loi-xay-ra",
+     "label": "Có Lỗi Xảy Ra",
+     "spec": "`Không thể reset BTVN. Vui lòng thử lại.` / `Không thể reset bài kiểm tra. Vui lòng thử lại.` khi thất bại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Có Lỗi Xảy Ra",
+      "Không thể reset BTVN. Vui lòng thử lại."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A07.03",
+     "name": "canh-bao",
+     "label": "Cảnh Báo",
+     "spec": "Khi bài/phiên không còn đủ điều kiện hoặc không có quyền, báo lý do nghiệp vụ; điều kiện reset chi tiết theo mục 3.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A07.04",
+     "name": "thong-bao",
+     "label": "Thông Báo",
+     "spec": "Chỉ sử dụng khi có trạng thái đồng bộ thực tế, không báo thành công sớm.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thông Báo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDH.A07.05",
+     "name": "component",
+     "label": "Component",
+     "spec": "[Toast chung](../../images/01-toast-crud.png), icon/màu/tiêu đề/nút × theo component chuẩn; vị trí/thời lượng theo chức năng dùng chung.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Component"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-CDH.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lop-020300"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-CDH.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3497:45916",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-CDH.F01.02",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lop-020300": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:225881",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lớp Học / Bài tập và Kiểm tra"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "M-CDH.EX01",
+   "text": "Admin/Class Handler/Support thử thêm/giao bài, sửa đề/điểm/chấm hoặc mở chức năng Teacher → không được phép; reset không cấp quyền chấm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.EX02",
+   "text": "Tải lỗi → báo lỗi/Thử lại, không dựng số 0, Chưa nộp hoặc danh sách rỗng giả.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.EX03",
+   "text": "Response lớp/tab/bài cũ → không ghi đè ngữ cảnh hiện tại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.EX04",
+   "text": "Số đã nộp S = 0 → không chia 0 hoặc dựng 100%; cách hiển thị cần chốt.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.EX05",
+   "text": "Sai quyền/liên kết lớp–học viên–loại–bài–phiên → không đọc/reset ngoài phạm vi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDH.EX06",
+   "text": "Reset lỗi/lặp hoặc dữ liệu đã đổi → không thay dữ liệu một phần, giữ/tải lại kết quả phù hợp và một Toast kết quả.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "M-CDH.FLOW01",
+   "name": "Mở menu và chọn loại bài",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ01",
+    "M-CDH.REQ03"
+   ]
+  },
+  {
+   "id": "M-CDH.FLOW02",
+   "name": "Xem kết quả học viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ06",
+    "M-CDH.REQ07"
+   ]
+  },
+  {
+   "id": "M-CDH.FLOW03",
+   "name": "Tính tỷ lệ chấm của card",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ05"
+   ]
+  },
+  {
+   "id": "M-CDH.FLOW04",
+   "name": "Reset một học viên",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ08",
+    "M-CDH.REQ09",
+    "M-CDH.REQ10"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "M-CDH.TC01",
+   "title": "Case 1: Chọn tab/card chỉ xem bảng",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDH.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDH.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC02",
+   "title": "Case 2: Ba role quản trị không thêm/giao/chấm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A01",
+   "scenario": "EX01 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ07"
+   ],
+   "exceptions": [
+    "M-CDH.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC03",
+   "title": "Case 3: Lỗi/rỗng/response cũ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A01",
+   "scenario": "EX02 / EX03 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ01"
+   ],
+   "exceptions": [
+    "M-CDH.EX02",
+    "M-CDH.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC04",
+   "title": "Case 4: Full danh sách và search bài",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A01",
+   "scenario": "REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDH.A01.03"
+   ]
+  },
+  {
+   "id": "M-CDH.TC05",
+   "title": "Case 5: BTVN theo bài học, Kiểm tra thêm riêng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A01",
+   "scenario": "REQ01 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ01",
+    "M-CDH.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC06",
+   "title": "Case 6: Đủ sáu thẻ, phạm vi toàn lớp",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDH.A02",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDH.A02.07"
+   ]
+  },
+  {
+   "id": "M-CDH.TC07",
+   "title": "Case 7: Điểm trung bình không bỏ điểm 0",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A02",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDH.A02.03"
+   ]
+  },
+  {
+   "id": "M-CDH.TC08",
+   "title": "Case 8: Không lấy tỷ lệ chấm thay tỷ lệ làm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A02",
+   "scenario": "REQ02 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ02",
+    "M-CDH.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDH.A02.05"
+   ]
+  },
+  {
+   "id": "M-CDH.TC09",
+   "title": "Case 9: Badge đếm bài, không đếm bài nộp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A03",
+   "scenario": "REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC10",
+   "title": "Case 10: Đủ bốn nhãn Kiểm tra và chỉ đọc",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A03",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDH.A03.02"
+   ]
+  },
+  {
+   "id": "M-CDH.TC11",
+   "title": "Case 11: Card không mở chức năng chấm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A03",
+   "scenario": "REQ01 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ01",
+    "M-CDH.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDH.A03.04"
+   ]
+  },
+  {
+   "id": "M-CDH.TC12",
+   "title": "Case 12: Card 3/15 là 3 đã nộp và 15 chưa nộp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A03",
+   "scenario": "REQ03 / REQ05 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ03",
+    "M-CDH.REQ05",
+    "M-CDH.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDH.A03.04"
+   ]
+  },
+  {
+   "id": "M-CDH.TC13",
+   "title": "Case 13: Nhãn trạng thái theo giao/nộp/chấm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A03",
+   "scenario": "REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC14",
+   "title": "Case 14: Ba bài nộp đều chấm là 100%",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A04",
+   "scenario": "Flow 3 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDH.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC15",
+   "title": "Case 15: Chưa chấm 3 bài nộp là 0%",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A04",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC16",
+   "title": "Case 16: Điểm 0 và nộp lại không cộng người",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A04",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC17",
+   "title": "Case 17: Không có bài nộp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A04",
+   "scenario": "EX04 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ05"
+   ],
+   "exceptions": [
+    "M-CDH.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC18",
+   "title": "Case 18: Ba trạng thái học viên không bị gộp",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDH.A05",
+   "scenario": "Flow 2 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDH.FLOW02"
+   ],
+   "items": [
+    "M-CDH.A05.02"
+   ]
+  },
+  {
+   "id": "M-CDH.TC19",
+   "title": "Case 19: Thời gian và bỏ qua đúng phiên",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A05",
+   "scenario": "REQ06 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ06",
+    "M-CDH.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC20",
+   "title": "Case 20: Không vào bài làm chi tiết để chấm",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A05",
+   "scenario": "EX01 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ07"
+   ],
+   "exceptions": [
+    "M-CDH.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC21",
+   "title": "Case 21: Reset gắn đúng dòng",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A05",
+   "scenario": "Flow 4 / REQ08 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ08",
+    "M-CDH.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDH.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC22",
+   "title": "Case 22: Tập trạng thái học viên và giữ kết quả lịch sử",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A05",
+   "scenario": "REQ02 / REQ06 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ02",
+    "M-CDH.REQ06",
+    "M-CDH.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC23",
+   "title": "Case 23: Thời gian vượt 24 giờ giống Tự học",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A05",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDH.A05.05"
+   ]
+  },
+  {
+   "id": "M-CDH.TC24",
+   "title": "Case 24: Reset đúng một bài/học viên và cập nhật UI",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDH.A06",
+   "scenario": "Flow 4 / REQ08 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ08",
+    "M-CDH.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDH.FLOW04"
+   ],
+   "items": [
+    "M-CDH.A06.04"
+   ]
+  },
+  {
+   "id": "M-CDH.TC25",
+   "title": "Case 25: Reset lỗi/thiếu quyền/chống lặp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A06",
+   "scenario": "EX05 / EX06 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ08"
+   ],
+   "exceptions": [
+    "M-CDH.EX05",
+    "M-CDH.EX06"
+   ],
+   "flows": [],
+   "items": [
+    "M-CDH.A06.01"
+   ]
+  },
+  {
+   "id": "M-CDH.TC26",
+   "title": "Case 26: Popup reset và Hủy không thay dữ liệu",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A06",
+   "scenario": "Flow 4 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDH.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "M-CDH.TC27",
+   "title": "Case 27: Reset toàn bộ và học viên làm lại",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A06",
+   "scenario": "Flow 4 / REQ08 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ08",
+    "M-CDH.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "M-CDH.FLOW04"
+   ],
+   "items": [
+    "M-CDH.A06.04"
+   ]
+  },
+  {
+   "id": "M-CDH.TC28",
+   "title": "Case 28: Reset đổi count và tỷ lệ trên tập đã nộp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A06",
+   "scenario": "REQ03 / REQ04 / REQ05 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ03",
+    "M-CDH.REQ04",
+    "M-CDH.REQ05",
+    "M-CDH.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDH.A06.04"
+   ]
+  },
+  {
+   "id": "M-CDH.TC29",
+   "title": "Case 29: Toast đúng loại reset",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDH.A07",
+   "scenario": "REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDH.A07.01"
+   ]
+  },
+  {
+   "id": "M-CDH.TC30",
+   "title": "Case 30: Lỗi/chỉ xem/đóng Toast",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "M-CDH.A07",
+   "scenario": "EX06 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDH.REQ10"
+   ],
+   "exceptions": [
+    "M-CDH.EX06"
+   ],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/class_management/class_detail_homework_tests_requirements.md",
+   "prefix": "M-CDH",
+   "title": "Chi tiết lớp học — Menu Bài tập và kiểm tra"
+  }
+ ]
+}

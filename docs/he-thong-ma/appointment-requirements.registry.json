@@ -1,0 +1,2090 @@
+{
+ "cluster": "appointment-requirements",
+ "title": "Lịch hẹn — Danh sách, thêm lịch hẹn và Review",
+ "figmaPrefix": "A-AP",
+ "requirements": [
+  {
+   "id": "A-AP.REQ01",
+   "name": "Bốn loại",
+   "text": "Hẹn lớp chọn lớp, Học viên chọn học viên, Hoá đơn chọn hoá đơn và hiển thị số tiền cùng học viên gắn với hoá đơn, Giáo viên chọn giáo viên; mỗi lịch hẹn thuộc đúng một loại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ02",
+   "name": "Dữ liệu chung",
+   "text": "ICS dùng chung bảng lịch hẹn ComGao; menu và màn hình nguồn đọc/ghi cùng bản ghi, không đồng bộ bằng bản sao. Đặc biệt Hẹn lớp dùng cùng bản ghi trong Manage Class.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ03",
+   "name": "Quyền xem",
+   "text": "Admin xem toàn bộ; Người phụ trách và Người theo dõi xem được lịch hẹn được gán. Người theo dõi chỉ đọc.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ04",
+   "name": "Danh sách",
+   "text": "Hiển thị bảy cột dữ liệu và ô thao tác xóa cuối hàng, đúng đối tượng và phân công; 50 dòng/trang. Badge tab đếm lịch hẹn đến hạn của từng loại, badge menu đếm lịch hẹn đến hạn ở cả bốn loại theo phạm vi được xem; tổng dưới bảng là tổng lịch hẹn của tab, không phải badge.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ05",
+   "name": "Bộ lọc",
+   "text": "Lọc theo năm field trên cùng tab; riêng hai bộ lọc Người theo dõi và Người phụ trách chỉ có tác dụng với Admin, role khác luôn chỉ thấy lịch hẹn của chính mình; Ưu tiên có bốn mức, Trạng thái có `Mới`/`Chưa xử lý`/`Đang xử lý`/`Đã xử lý`, hỗ trợ chọn nhiều và `Tất cả`. Danh sách và Review mở mặc định với `Tới hạn` và ba trạng thái `Mới`/`Chưa xử lý`/`Đang xử lý`; `Đã xử lý` bỏ chọn. Thời gian có các preset và `Tuỳ Chọn`; ngày thuộc `Tới Hạn` hiển thị đỏ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ06",
+   "name": "Form tạo",
+   "text": "Form chung tại menu Lịch Hẹn gồm Trung tâm, Nội dung, Ghi chú, Thời gian, Đối tượng, Độ ưu tiên, Trạng thái, Người phụ trách, Theo dõi. Mọi field đều bắt buộc trừ Ghi chú, Người phụ trách và Theo dõi. Nội dung nhập tự do, Ghi chú không giới hạn độ dài, Thời gian không giới hạn mốc. Người tạo được chọn sẵn ở Người phụ trách nếu thuộc nhóm role được gán, và có thể gỡ/thêm người; khi tạo và khi sửa đều được bỏ hết Người phụ trách. Form chung chỉ gán user thuộc bốn nhóm Trợ giảng/Support/Nhân viên kinh doanh/Phụ trách lớp vào Người phụ trách hoặc Theo dõi; riêng flow tạo từ Danh sách học viên chỉ gán Trợ giảng/Support/Nhân viên kinh doanh, chỉ ngày không giờ, Đối tượng tự lấy học viên và Trạng thái tự Mới theo UI chuẩn riêng. Không dùng dữ liệu mẫu trên ảnh làm mặc định.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ07",
+   "name": "Liên kết",
+   "text": "Lưu đúng một đối tượng và các user được gán; tạo thành công xuất hiện ở đúng tab và màn nguồn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ08",
+   "name": "Quyền sửa",
+   "text": "Chỉ user thuộc Người phụ trách được đổi ưu tiên/trạng thái trên lịch hẹn đó; không cấp quyền sửa chỉ vì là Admin hoặc Theo dõi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ09",
+   "name": "Phản hồi",
+   "text": "Tạo/cập nhật/xóa chỉ hoàn tất sau khi lưu; Toast theo component chung, mỗi thao tác một kết quả.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ10",
+   "name": "Review",
+   "text": "Nút `Review` mở Bảng chia lịch hẹn với bốn tab và bộ lọc Trạng thái/Thời gian mặc định như danh sách; thẻ lấy từ đúng bản ghi ComGao trong phạm vi được xem.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ11",
+   "name": "Cấu trúc và sắp xếp bảng",
+   "text": "Bảng có cột tùy chỉnh với tiêu đề/màu user tự chọn, là cấu hình chung theo từng tab cho mọi người xem; không giới hạn số cột/độ dài tiêu đề. Hỗ trợ thêm, đổi màu, chỉ xóa cột trống, kéo một thẻ giữa các vị trí/cột và kéo cả cột/cụm thẻ để sắp xếp. Kéo thả chỉ đổi nhóm/vị trí trên Review, không đổi field lịch hẹn; không nhân bản/mất thẻ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ12",
+   "name": "Quyền Review",
+   "text": "Chỉ Admin và Class Handler được thay đổi bảng bằng các thao tác trên; các role còn lại chỉ xem và lọc, dù là Người phụ trách lịch hẹn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ13",
+   "name": "Xóa lịch hẹn",
+   "text": "Người phụ trách thấy biểu tượng thùng rác cố định ở cuối hàng của cả bốn tab, không cần hover; bấm để mở popup xác nhận rồi xóa. Hủy/không có quyền/lỗi không xóa; thành công bỏ khỏi danh sách/Review. Không có trạng thái `Đã xoá`. `SOS` là badge FE hiển thị theo Độ ưu tiên `Quan trọng`, không là field riêng và không là mức ưu tiên thứ năm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.REQ14",
+   "name": "Trung tâm",
+   "text": "Danh sách có bộ lọc `Trung tâm` nằm cùng hàng với các bộ lọc khác, cho chọn một hoặc nhiều trung tâm; khi chọn thì danh sách, tổng số và phân trang chỉ tính dữ liệu của các trung tâm đã chọn, kết hợp `AND` với các bộ lọc khác. Không chọn thì hiển thị dữ liệu của mọi trung tâm. Role Admin không dùng ô chọn trung tâm trên header. Khi tạo mới bắt buộc chọn `Trung tâm`; bản ghi được lưu thuộc trung tâm đã chọn. Backend kiểm tra lại trung tâm khi lưu, không chỉ dựa vào UI.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "ADM-LHN-010100": {
+   "id": "ADM-LHN-010100",
+   "name": "hen-lop",
+   "title": "Lịch hẹn / Hẹn lớp",
+   "kind": "man-chinh",
+   "parent": "ADM-LHN-010200",
+   "shownOn": "ADM-LHN-010100",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "1693:21877",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lich-hen/hen-lop",
+   "link": "/lich-hen/hen-lop",
+   "dark": "ADM-LHN-010100-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "A-AP.F01"
+   ]
+  },
+  "ADM-LHN-010110": {
+   "id": "ADM-LHN-010110",
+   "name": "popup-them-lich-hen",
+   "title": "Lịch hẹn / Hẹn lớp / Popup thêm lịch hẹn",
+   "kind": "popup",
+   "parent": "ADM-LHN-010100",
+   "shownOn": "ADM-LHN-010100",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "2370:27393",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/lich-hen/hen-lop?popup=ADM-LHN-010110",
+   "dark": "ADM-LHN-010110-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "A-AP.A03"
+   ]
+  },
+  "ADM-LHN-010200": {
+   "id": "ADM-LHN-010200",
+   "name": "hoc-vien",
+   "title": "Lịch hẹn / Học viên",
+   "kind": "man-chinh",
+   "parent": "ADM-LHN-010100",
+   "shownOn": "ADM-LHN-010200",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2367:24368",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lich-hen/hoc-vien",
+   "link": "/lich-hen/hoc-vien",
+   "dark": "ADM-LHN-010200-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "A-AP.F01"
+   ]
+  },
+  "ADM-LHN-010300": {
+   "id": "ADM-LHN-010300",
+   "name": "hoa-don",
+   "title": "Lịch hẹn / Hoá đơn",
+   "kind": "man-chinh",
+   "parent": "ADM-LHN-010200",
+   "shownOn": "ADM-LHN-010300",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2367:24897",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lich-hen/hoa-don",
+   "link": "/lich-hen/hoa-don",
+   "dark": "ADM-LHN-010300-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "A-AP.F01"
+   ]
+  },
+  "ADM-LHN-010400": {
+   "id": "ADM-LHN-010400",
+   "name": "giao-vien",
+   "title": "Lịch hẹn / Giáo viên",
+   "kind": "man-chinh",
+   "parent": "ADM-LHN-010300",
+   "shownOn": "ADM-LHN-010400",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2367:25148",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/lich-hen/giao-vien",
+   "link": "/lich-hen/giao-vien",
+   "dark": "ADM-LHN-010400-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "A-AP.F01"
+   ]
+  },
+  "ADM-LHN-020000": {
+   "id": "ADM-LHN-020000",
+   "name": "bang-chia-lich-hen",
+   "title": "Bảng chia lịch hẹn",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "ADM-LHN-020000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "2371:35868",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/bang-chia-lich-hen",
+   "link": "/bang-chia-lich-hen",
+   "dark": "ADM-LHN-020000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "A-AP.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "A-AP.A01",
+   "name": "trang-1-danh-sach-lich-hen",
+   "title": "Trang 1: Danh Sách Lịch Hẹn",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "appointment_requirement/appointment_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "A-AP.A01.01",
+     "name": "bon-tab",
+     "label": "Bốn tab",
+     "spec": "`Hẹn lớp`, `Học viên`, `Hoá đơn`, `Giáo viên`; mỗi tab chỉ liệt kê lịch hẹn thuộc loại đối tượng đó, không nhân bản bản ghi khi chuyển tab.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TC01"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A01.02",
+     "name": "bang",
+     "label": "Bảng",
+     "spec": "Bảy cột dữ liệu `Thời gian`, `Nội dung`, `Ghi chú`, `Người phụ trách`, `Đối tượng`, `Độ ưu tiên`, `Trạng thái` và một ô thao tác xóa ở cuối mỗi hàng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TC01"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A01.03",
+     "name": "thoi-gian-ghi-chu",
+     "label": "Thời gian / Ghi chú",
+     "spec": "Hiện `Hôm nay`, `Ngày mai` hoặc ngày `dd.MM.yyyy` theo ngày hẹn. Ngày quá hạn (trước hôm nay) hiện màu đỏ, `Hôm nay` hiện màu xanh lá, ngày chưa tới hạn hiện màu xám. Ghi chú dài có `Xem thêm` / `Thu gọn`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A01.04",
+     "name": "nguoi-phu-trach",
+     "label": "Người phụ trách",
+     "spec": "Hiện avatar người được gán; `+N` là số người còn lại; rê chuột vào cụm avatar hiện danh sách tên toàn bộ Người phụ trách. Không gộp `Theo dõi` vào cột này.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A01.05",
+     "name": "doi-tuong",
+     "label": "Đối tượng",
+     "spec": "Tab Hẹn lớp hiển thị **lớp** (mã lớp); [Học viên](./images/03-appointments-student.png) hiển thị **học viên**; [Hoá đơn](./images/04-appointments-invoice.png) hiển thị **số tiền hoá đơn và học viên** gắn với hoá đơn; [Giáo viên](./images/05-appointments-teacher.png) hiển thị **giáo viên**. Giá trị lấy từ đúng đối tượng liên kết. Ở tab Học viên, rê chuột vào avatar hiện tooltip gồm Tên, Sđt, Gmail và `Lớp đang học` (mã lớp kèm trạng thái của học viên trong lớp); mỗi dòng có nút sao chép.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TC03"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A01.06",
+     "name": "badge-phan-trang",
+     "label": "Badge / phân trang",
+     "spec": "Lịch hẹn có Độ ưu tiên `Quan trọng` hiển thị badge `SOS` ngay phía trên Nội dung. Badge do FE tự hiển thị theo Độ ưu tiên backend trả về; backend không lưu cờ SOS riêng và không thêm mức ưu tiên thứ năm. Badge tại mỗi tab đếm lịch hẹn đến hạn của loại đó; badge menu Lịch Hẹn đếm lịch hẹn đến hạn ở cả bốn loại trong phạm vi được xem. Footer hiển thị tổng **lịch hẹn** và 50 dòng/trang; `Trước`, số trang, `Sau`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A01.07",
+     "name": "xoa",
+     "label": "Xóa",
+     "spec": "Biểu tượng thùng rác nằm cố định ở cuối mỗi hàng của cả bốn tab đối với user có quyền xóa; không cần hover. Bấm để mở popup xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "A-AP.A06",
+       "raw": "mở popup xác nhận"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "A-AP.A02",
+   "name": "bo-loc-va-lua-chon-uu-tien-trang-thai",
+   "title": "Bộ lọc và lựa chọn Ưu tiên / Trạng thái",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "appointment_requirement/appointment_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "A-AP.A02.01",
+     "name": "trung-tam",
+     "label": "Trung tâm",
+     "spec": "Chọn một hoặc nhiều trung tâm; không chọn thì hiển thị lịch hẹn của mọi trung tâm trong phạm vi được xem.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A02.02",
+     "name": "nguoi-theo-doi-nguoi-phu-trach",
+     "label": "Người theo dõi / Người phụ trách",
+     "spec": "Chọn người dùng để lọc theo đúng field phân công, không dùng lẫn hai danh sách. Chỉ `Admin` dùng được hai bộ lọc này để lọc theo người. Các role khác luôn chỉ thấy lịch hẹn mà chính mình là Người phụ trách hoặc Theo dõi; chọn hai bộ lọc này không làm thay đổi danh sách.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A02.03",
+     "name": "thoi-gian",
+     "label": "Thời gian",
+     "spec": "Các lựa chọn trong UI: `Tới Hạn`, `Hôm Nay`, `Hôm Qua`, `Tuần Này`, `Tuần Trước`, `Tuần Sau`, `Tháng Này`, `Tháng Trước`, `3 Tháng Trước`, `Tháng Sau`, `Năm Nay`, `Năm Trước`, `Hôm Nay & Hôm Qua`, `Tuỳ Chọn`; Tuỳ Chọn dùng khoảng ngày. Màu ngày theo quy tắc ở cột Thời gian.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A02.04",
+     "name": "do-uu-tien",
+     "label": "Độ ưu tiên",
+     "spec": "Lọc nhiều mức: `Ưu tiên cao`, `Quan trọng`, `Bình thường`, `Ưu tiên thấp`, hoặc `Tất cả`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A02.05",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Lọc nhiều trạng thái: `Mới`, `Chưa xử lý`, `Đang xử lý`, `Đã xử lý`, hoặc `Tất cả`. Mặc định chọn ba trạng thái đầu; không có lựa chọn `Đã xoá` dù ảnh tham chiếu cũ còn hiển thị.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TC05",
+      "A-AP.TC06"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "A-AP.A03",
+   "name": "popup-them-lich-hen-moi",
+   "title": "Popup Thêm lịch hẹn mới",
+   "screens": [
+    "adm-lhn-010110"
+   ],
+   "screensGuessed": [
+    "ADM-LHN-010110"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "appointment_requirement/appointment_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "A-AP.A03.01",
+     "name": "noi-dung",
+     "label": "Nội dung",
+     "spec": "**Bắt buộc**, nhập tự do, không cần chọn nội dung từ nguồn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A03.02",
+     "name": "ghi-chu",
+     "label": "Ghi chú",
+     "spec": "Không bắt buộc, được để trống; nhập tự do, không giới hạn độ dài; hiển thị ở cột Ghi chú sau khi lưu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A03.03",
+     "name": "thoi-gian",
+     "label": "Thời gian",
+     "spec": "**Bắt buộc**, chọn ngày hẹn bằng lịch chọn ngày, không chọn giờ; hiển thị dạng `dd.MM.yyyy`. Không giới hạn mốc thời gian theo xác nhận. Ngày mẫu `01.01.2000` trong ảnh không là giá trị mặc định. Có [ảnh lịch chọn ngày](./images/06-date-picker.png).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A03.04",
+     "name": "trung-tam",
+     "label": "Trung tâm",
+     "spec": "**Bắt buộc**, chọn một trung tâm từ danh sách trung tâm; lịch hẹn được tạo thuộc trung tâm đã chọn. Danh sách Đối tượng lấy theo trung tâm đã chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TC21"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A03.05",
+     "name": "doi-tuong",
+     "label": "Đối tượng",
+     "spec": "**Bắt buộc**, chọn đúng một đối tượng theo tab: Hẹn lớp → lớp, Học viên → học viên, Hoá đơn → hoá đơn (hiển thị số tiền và học viên), Giáo viên → giáo viên. Class Handler/Support chỉ chọn đối tượng thuộc phạm vi họ được phép truy cập; Admin theo phạm vi Admin.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TC07"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A03.06",
+     "name": "do-uu-tien",
+     "label": "Độ ưu tiên",
+     "spec": "**Bắt buộc**, chọn một trong `Ưu tiên cao`, `Quan trọng`, `Bình thường`, `Ưu tiên thấp` theo [menu UI](./images/10-priority-options.png). Giá trị mặc định chưa được chốt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A03.07",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "**Bắt buộc**, chọn một trong `Mới`, `Chưa xử lý`, `Đang xử lý`, `Đã xử lý`; bỏ `Đã xoá` trong [ảnh menu cũ](./images/07-status-options.png). Giá trị mặc định của form chưa được chốt; không lấy bộ lọc mặc định làm giá trị form.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A03.08",
+     "name": "nguoi-phu-trach",
+     "label": "Người phụ trách",
+     "spec": "Không bắt buộc, được để trống; chọn một hoặc nhiều user thuộc bốn nhóm role: `Trợ giảng` (Teaching Assistant), `Support`, `Nhân viên kinh doanh` (Sale), `Phụ trách lớp` (Class Handler). Nút `+` mở danh sách chọn có ô `Tìm kiếm...` và bốn nhóm role thu gọn/mở được, chọn bằng checkbox. Mở popup mặc định đã chọn chính người tạo nếu người tạo thuộc một trong bốn nhóm này; người tạo có thể gỡ mình ra hoặc thêm người khác. Khi tạo và khi sửa đều được bỏ hết Người phụ trách.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "A-AP.A03",
+       "raw": "Mở popup mặc định đã chọn chính người tạo nếu người tạo thuộc một trong bốn nhóm này"
+      }
+     ],
+     "testcases": [
+      "A-AP.TC08",
+      "A-AP.TC09"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A03.09",
+     "name": "theo-doi",
+     "label": "Theo dõi",
+     "spec": "Không bắt buộc; tìm/chọn nhiều user thuộc cùng bốn nhóm role với Người phụ trách, nhóm theo role, dùng cùng kiểu danh sách chọn với Người phụ trách. Người được thêm chỉ xem lịch hẹn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TC09"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A03.10",
+     "name": "huy-them-lich-hen",
+     "label": "Hủy / Thêm lịch hẹn",
+     "spec": "Hủy đóng popup không lưu; Thêm kiểm tra dữ liệu/quyền rồi tạo đúng một lịch hẹn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "A-AP.A04",
+   "name": "chinh-do-uu-tien-va-trang-thai-tren-dong",
+   "title": "Chỉnh Độ ưu tiên và Trạng thái trên dòng",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "appointment_requirement/appointment_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "A-AP.A04.01",
+     "name": "do-uu-tien",
+     "label": "Độ ưu tiên",
+     "spec": "Dropdown hiển thị bốn mức chính thức, icon/màu theo UI. Chọn mức khác cập nhật cùng bản ghi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A04.02",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Dropdown có `Mới`, `Chưa xử lý`, `Đang xử lý`, `Đã xử lý` với icon/màu theo UI. Không có `Đã xoá`; xóa dùng biểu tượng thùng rác cuối hàng và popup xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TC11"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A04.03",
+     "name": "nguoi-sua",
+     "label": "Người sửa",
+     "spec": "Chỉ user thuộc `Người phụ trách` của chính lịch hẹn được lưu thay đổi, trong phạm vi được phép. Admin xem toàn bộ nhưng không tự sửa lịch hẹn nếu không được gán Người phụ trách.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "A-AP.A05",
+   "name": "popup-review-bang-chia-lich-hen",
+   "title": "Popup Review — Bảng chia lịch hẹn",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "appointment_requirement/appointment_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "A-AP.A05.01",
+     "name": "tab-bo-loc",
+     "label": "Tab / bộ lọc",
+     "spec": "Bốn tab `Hẹn lớp`, `Học viên`, `Hoá đơn`, `Giáo viên` và bộ lọc `Trạng thái`, `Thời gian`. Mặc định `Tới hạn` và chọn `Mới`, `Chưa xử lý`, `Đang xử lý`; `Đã xử lý` bỏ chọn. Chữ `Lịch Họp` cạnh Giáo viên trong ảnh Review cũ là sai. Chỉ lọc các lịch hẹn người dùng được xem.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A05.02",
+     "name": "cot-cum-the",
+     "label": "Cột/cụm thẻ",
+     "spec": "Mỗi cột có tiêu đề và màu do user có quyền quản lý cột tự chọn. Ô `Nhập tiêu đề mục mới` và nút `+` thêm cột; biểu tượng màu mở [bảng chọn màu](./images/15-review-color-picker.png). Thùng rác chỉ xóa **cột trống**; cột còn lịch hẹn không được xóa. **Không giới hạn số cột hoặc độ dài tiêu đề.** Tiêu đề `Ví Dụ: Thứ 2/3/...` là dữ liệu mẫu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A05.03",
+     "name": "the-lich-hen",
+     "label": "Thẻ lịch hẹn",
+     "spec": "Hiển thị ngày hẹn (tới hạn/quá hạn màu đỏ), avatar/`+N` người phụ trách, nội dung, ghi chú ngắn, đối tượng, icon trạng thái và ưu tiên. Dữ liệu thẻ lấy từ bản ghi lịch hẹn ở tab tương ứng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A05.04",
+     "name": "keo-tha-the",
+     "label": "Kéo thả thẻ",
+     "spec": "Admin/Class Handler kéo [một thẻ](./images/13-review-drag-card.png) sang vị trí/cột khác; vùng đích có viền nét đứt như ảnh.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TC17"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A05.05",
+     "name": "keo-tha-cum",
+     "label": "Kéo thả cụm",
+     "spec": "Admin/Class Handler kéo [cả cột/cụm thẻ](./images/14-review-drag-group.png) để đổi vị trí cột; các thẻ trong cụm đi cùng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "A-AP.A06",
+   "name": "nut-xoa-va-popup-xac-nhan-lich-hen",
+   "title": "Nút xóa và popup xác nhận lịch hẹn",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "appointment_requirement/appointment_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "A-AP.A06.01",
+     "name": "bieu-tuong-xoa",
+     "label": "Biểu tượng xóa",
+     "spec": "Nằm ở ô cuối hàng, luôn hiển thị không cần hover nếu user thuộc `Người phụ trách` của lịch hẹn đó; không hiển thị cho người chỉ Theo dõi hoặc Admin không được gán phụ trách.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A06.02",
+     "name": "popup-xac-nhan",
+     "label": "Popup xác nhận",
+     "spec": "Cho biết lịch hẹn sắp xóa, có `Hủy` và hành động xác nhận `Xóa`; chưa xác nhận thì không thay đổi dữ liệu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TC19"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A06.03",
+     "name": "ket-qua",
+     "label": "Kết quả",
+     "spec": "Xác nhận thành công xóa lịch hẹn khỏi danh sách/tab và Review tương ứng, cập nhật tổng/badge theo dữ liệu nguồn. Không chuyển sang trạng thái `Đã xoá`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "A-AP.A07",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "appointment_requirement/appointment_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "A-AP.A07.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | Tạo/cập nhật/xóa lịch hẹn hoặc thay đổi bảng Review đã được lưu thành công.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TTC01",
+      "A-AP.TTC04"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A07.02",
+     "name": "thong-tin",
+     "label": "Thông tin",
+     "spec": "`Thông Báo` | Hệ thống đã nhận thao tác nhưng dữ liệu đang đồng bộ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A07.03",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | Dữ liệu không hợp lệ hoặc mất quyền sửa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "A-AP.TTC03"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "A-AP.A07.04",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | Tạo/cập nhật/xóa/sắp xếp không hoàn tất do lỗi xử lý.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "A-AP.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lhn-010100",
+    "adm-lhn-010200",
+    "adm-lhn-010300",
+    "adm-lhn-010400",
+    "adm-lhn-020000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "A-AP.F01.01",
+     "name": "atom-icon-button",
+     "label": "Atom/Icon Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Atom/Icon Button",
+        "figmaId": "2367:19676",
+        "layer": "Atom/Icon Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Icon Button",
+        "component": "Atom/Icon Button",
+        "variant": {
+         "Icon": "Plus Button Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.02",
+     "name": "dropdown-trung-tam",
+     "label": "Dropdown · Trung tâm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Dropdown · Trung tâm",
+        "figmaId": "4713:129180",
+        "layer": "Dropdown · Trung tâm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown · Trung tâm",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trung tâm",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.03",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Dropdown",
+        "figmaId": "2367:19681",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Người theo dõi",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.04",
+     "name": "atom-button",
+     "label": "Atom/Button",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Atom/Button",
+        "figmaId": "2367:19703",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Review",
+         "Type": "Warning",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.05",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "2245:88770",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.06",
+     "name": "thoi-gian-lich-hen",
+     "label": "Thời gian lịch hẹn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Thời gian lịch hẹn",
+        "figmaId": "2367:19740",
+        "layer": "Thời gian lịch hẹn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thời gian lịch hẹn",
+        "component": "Thời gian lịch hẹn",
+        "variant": {
+         "Thời gian": "Trễ lịch",
+         "Size": "28H"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.07",
+     "name": "atom-tag-solid",
+     "label": "Atom/Tag Solid",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Atom/Tag Solid",
+        "figmaId": "2409:142557",
+        "layer": "Atom/Tag Solid",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Tag Solid",
+        "component": "Atom/Tag Solid",
+        "variant": {
+         "Label": "SOS",
+         "Size": "16H",
+         "Tone": "Dark Red"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.08",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Avatar",
+        "figmaId": "2367:19797",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Đinh Thu Hương",
+         "Size": "28"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.09",
+     "name": "atom-id-badge",
+     "label": "Atom/ID Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Atom/ID Badge",
+        "figmaId": "2370:26005",
+        "layer": "Atom/ID Badge",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/ID Badge",
+        "component": "Atom/ID Badge",
+        "variant": {
+         "Type": "Mã lớp",
+         "Size": "26H",
+         "Item": "03"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.10",
+     "name": "mouse-click",
+     "label": "Mouse click",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Mouse click",
+        "figmaId": "2370:26396",
+        "layer": "Mouse click",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Mouse click",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.11",
+     "name": "phan-trang",
+     "label": "Phân Trang",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Phân Trang",
+        "figmaId": "2367:19116",
+        "layer": "Phân Trang",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Phân Trang",
+        "component": null,
+        "variant": {},
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.12",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "4273:161903",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.13",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010100": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:223227",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Quản lý / Lịch hẹn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.14",
+     "name": "molecule-tooltip",
+     "label": "Molecule/Tooltip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010200": [
+       {
+        "term": "Molecule/Tooltip",
+        "figmaId": "2860:45510",
+        "layer": "Molecule/Tooltip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Tooltip",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Thông tin liên hệ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.15",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-010300": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "2860:45955",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "3.480.000 đ",
+         "Type": "TỔNG DOANH THU"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.16",
+     "name": "color",
+     "label": "COLOR",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-020000": [
+       {
+        "term": "COLOR",
+        "figmaId": "2425:104406",
+        "layer": "COLOR",
+        "confidence": "cao",
+        "region": null,
+        "owner": "COLOR",
+        "component": "COLOR",
+        "variant": {
+         "Property 1": "Bánh xe màu"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.17",
+     "name": "status-lich-hen",
+     "label": "Status lịch hẹn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-020000": [
+       {
+        "term": "Status lịch hẹn",
+        "figmaId": "2371:36496",
+        "layer": "Status lịch hẹn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Status lịch hẹn",
+        "component": "Status lịch hẹn",
+        "variant": {
+         "Trạng thái": "Chưa xử lý",
+         "Size": "24",
+         "Kiểu": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.18",
+     "name": "status-do-uu-tien",
+     "label": "Status Độ ưu tiên",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-020000": [
+       {
+        "term": "Status Độ ưu tiên",
+        "figmaId": "2371:36497",
+        "layer": "Status Độ ưu tiên",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Status Độ ưu tiên",
+        "component": "Status Độ ưu tiên",
+        "variant": {
+         "Mức độ": "Ít Quan Trọng",
+         "Size": "24",
+         "Kiểu": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "A-AP.F01.19",
+     "name": "add-new-bar-nhap-tieu-de-muc-moi",
+     "label": "Add New Bar · Nhập tiêu đề mục mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lhn-020000": [
+       {
+        "term": "Add New Bar · Nhập tiêu đề mục mới",
+        "figmaId": "2702:48118",
+        "layer": "Add New Bar · Nhập tiêu đề mục mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Nhập tiêu đề mục mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Nút": "1075:1478",
+         "Icon trái": false,
+         "Placeholder": "Nhập tiêu đề mục mới",
+         "Type": "Box",
+         "Size": "S",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "A-AP.EX01",
+   "text": "Thiếu field bắt buộc, ngày/đối tượng không hợp lệ hoặc gán người ngoài phạm vi → không tạo lịch hẹn, chỉ rõ field lỗi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.EX02",
+   "text": "Người không thuộc `Người phụ trách` cố sửa, kể cả Admin chỉ có quyền xem hoặc Người trong `Theo dõi` → từ chối, không thay đổi bản ghi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.EX03",
+   "text": "Lỗi tải/lưu hoặc request lặp → không sinh bản ghi/trạng thái trùng; giữ dữ liệu đã lưu, cho thử lại phù hợp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.EX04",
+   "text": "Role ngoài Admin/Class Handler cố thêm/xóa/đổi màu cột hoặc kéo thả Review, hoặc Admin/Class Handler cố xóa cột còn lịch hẹn → từ chối, bảng không đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "A-AP.EX05",
+   "text": "User không thuộc Người phụ trách cố xóa, hoặc hủy xác nhận/xóa thất bại → giữ lịch hẹn; không chuyển thành trạng thái `Đã xoá`.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "A-AP.FLOW01",
+   "name": "Xem lịch hẹn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ01",
+    "A-AP.REQ02",
+    "A-AP.REQ03",
+    "A-AP.REQ04"
+   ]
+  },
+  {
+   "id": "A-AP.FLOW02",
+   "name": "Lọc danh sách",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ05"
+   ]
+  },
+  {
+   "id": "A-AP.FLOW03",
+   "name": "Thêm lịch hẹn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ06",
+    "A-AP.REQ07",
+    "A-AP.REQ09"
+   ]
+  },
+  {
+   "id": "A-AP.FLOW04",
+   "name": "Cập nhật ưu tiên hoặc trạng thái",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ08",
+    "A-AP.REQ09"
+   ]
+  },
+  {
+   "id": "A-AP.FLOW05",
+   "name": "Xem Review",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ10",
+    "A-AP.REQ12"
+   ]
+  },
+  {
+   "id": "A-AP.FLOW06",
+   "name": "Sắp xếp Bảng chia lịch hẹn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ11",
+    "A-AP.REQ12"
+   ]
+  },
+  {
+   "id": "A-AP.FLOW07",
+   "name": "Xóa lịch hẹn",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ13"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "A-AP.TC01",
+   "title": "Case 1: Chuyển bốn tab",
+   "priority": "High",
+   "smoke": true,
+   "region": "A-AP.A01",
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW01"
+   ],
+   "items": [
+    "A-AP.A01.01",
+    "A-AP.A01.02"
+   ]
+  },
+  {
+   "id": "A-AP.TC02",
+   "title": "Case 2: Cùng bản ghi với màn nguồn",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A01",
+   "scenario": "Flow 1 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "A-AP.TC03",
+   "title": "Case 3: Người Theo dõi chỉ đọc",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A01",
+   "scenario": "Flow 1 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW01"
+   ],
+   "items": [
+    "A-AP.A01.05"
+   ]
+  },
+  {
+   "id": "A-AP.TC04",
+   "title": "Case 4: Dòng, badge và phân trang",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "A-AP.A01",
+   "scenario": "Flow 1 / REQ04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "A-AP.TC20",
+   "title": "Case 20: Lọc danh sách theo trung tâm",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A01",
+   "scenario": "REQ14",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ14"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "A-AP.TC05",
+   "title": "Case 5: Lọc kết hợp",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A02",
+   "scenario": "Flow 2 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW02"
+   ],
+   "items": [
+    "A-AP.A02.05"
+   ]
+  },
+  {
+   "id": "A-AP.TC06",
+   "title": "Case 6: Tất cả và Tuỳ Chọn",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "A-AP.A02",
+   "scenario": "Flow 2 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW02"
+   ],
+   "items": [
+    "A-AP.A02.05"
+   ]
+  },
+  {
+   "id": "A-AP.TC07",
+   "title": "Case 7: Mở popup đúng tab",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A03",
+   "scenario": "Flow 3 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW03"
+   ],
+   "items": [
+    "A-AP.A03.05"
+   ]
+  },
+  {
+   "id": "A-AP.TC08",
+   "title": "Case 8: Mặc định và thay Người phụ trách",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A03",
+   "scenario": "Flow 3 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW03"
+   ],
+   "items": [
+    "A-AP.A03.08"
+   ]
+  },
+  {
+   "id": "A-AP.TC09",
+   "title": "Case 9: Tạo lịch hẹn",
+   "priority": "High",
+   "smoke": true,
+   "region": "A-AP.A03",
+   "scenario": "Flow 3 / REQ06 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ06",
+    "A-AP.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW03"
+   ],
+   "items": [
+    "A-AP.A03.08",
+    "A-AP.A03.09"
+   ]
+  },
+  {
+   "id": "A-AP.TC10",
+   "title": "Case 10: Hủy hoặc thiếu field",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A03",
+   "scenario": "EX01 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ06"
+   ],
+   "exceptions": [
+    "A-AP.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "A-AP.TC21",
+   "title": "Case 21: Bắt buộc chọn trung tâm khi tạo",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A03",
+   "scenario": "REQ14",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ14"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "A-AP.A03.04"
+   ]
+  },
+  {
+   "id": "A-AP.TC11",
+   "title": "Case 11: Người phụ trách cập nhật",
+   "priority": "High",
+   "smoke": true,
+   "region": "A-AP.A04",
+   "scenario": "Flow 4 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW04"
+   ],
+   "items": [
+    "A-AP.A04.02"
+   ]
+  },
+  {
+   "id": "A-AP.TC12",
+   "title": "Case 12: Từ chối người không phụ trách",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A04",
+   "scenario": "EX02 / REQ03 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ03",
+    "A-AP.REQ08"
+   ],
+   "exceptions": [
+    "A-AP.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "A-AP.TC13",
+   "title": "Case 13: Mở Review và lọc",
+   "priority": "High",
+   "smoke": true,
+   "region": "A-AP.A05",
+   "scenario": "Flow 5 / REQ10",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ10"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "A-AP.TC14",
+   "title": "Case 14: Sắp xếp thẻ và cụm",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A05",
+   "scenario": "Flow 6 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "A-AP.TC15",
+   "title": "Case 15: Thêm cột và đổi màu",
+   "priority": "High",
+   "smoke": true,
+   "region": "A-AP.A05",
+   "scenario": "Flow 6 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "A-AP.TC16",
+   "title": "Case 16: Chỉ xóa cột trống",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A05",
+   "scenario": "Flow 6 / REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "A-AP.TC17",
+   "title": "Case 17: Role khác chỉ xem",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A05",
+   "scenario": "EX04 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ12"
+   ],
+   "exceptions": [
+    "A-AP.EX04"
+   ],
+   "flows": [],
+   "items": [
+    "A-AP.A05.04"
+   ]
+  },
+  {
+   "id": "A-AP.TC18",
+   "title": "Case 18: Xác nhận xóa",
+   "priority": "High",
+   "smoke": true,
+   "region": "A-AP.A06",
+   "scenario": "Flow 7 / REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ13"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW07"
+   ],
+   "items": []
+  },
+  {
+   "id": "A-AP.TC19",
+   "title": "Case 19: Hủy hoặc không có quyền",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A06",
+   "scenario": "EX05 / REQ13",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ13"
+   ],
+   "exceptions": [
+    "A-AP.EX05"
+   ],
+   "flows": [],
+   "items": [
+    "A-AP.A06.02"
+   ]
+  },
+  {
+   "id": "A-AP.TTC01",
+   "title": "Toast Case 1: Thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A07",
+   "scenario": "Flow 3 / Flow 4 / Flow 6 / Flow 7 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [
+    "A-AP.FLOW03",
+    "A-AP.FLOW04",
+    "A-AP.FLOW06",
+    "A-AP.FLOW07"
+   ],
+   "items": [
+    "A-AP.A07.01"
+   ]
+  },
+  {
+   "id": "A-AP.TTC02",
+   "title": "Toast Case 2: Thông tin",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "A-AP.A07",
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "A-AP.TTC03",
+   "title": "Toast Case 3: Cảnh báo",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A07",
+   "scenario": "EX01 / EX02 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ09"
+   ],
+   "exceptions": [
+    "A-AP.EX01",
+    "A-AP.EX02"
+   ],
+   "flows": [],
+   "items": [
+    "A-AP.A07.03"
+   ]
+  },
+  {
+   "id": "A-AP.TTC04",
+   "title": "Toast Case 4: Lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "A-AP.A07",
+   "scenario": "EX03 / REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "A-AP.REQ09"
+   ],
+   "exceptions": [
+    "A-AP.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "A-AP.A07.01"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-LHN-010110",
+   "text": "popup “Lịch hẹn / Hẹn lớp / Popup thêm lịch hẹn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-LHN-010110",
+   "text": "không có prototype link nào đi vào frame"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "appointment_requirement/appointment_requirements.md",
+   "prefix": "A-AP",
+   "title": "Lịch hẹn — Danh sách, thêm lịch hẹn và Review"
+  }
+ ]
+}

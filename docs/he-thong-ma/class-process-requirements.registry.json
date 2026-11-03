@@ -1,0 +1,1124 @@
+{
+ "cluster": "class-process-requirements",
+ "title": "[Giáo viên] Chi tiết lớp — Quy trình",
+ "figmaPrefix": "TR-CP",
+ "requirements": [
+  {
+   "id": "TR-CP.REQ01",
+   "name": "Phạm vi xem Tiêu chuẩn lớp",
+   "text": "Mọi giáo viên của lớp xem toàn bộ nội dung Tiêu chuẩn lớp (loại `Lớp - Giáo viên`) đã thêm vào lớp, không lọc theo người được gán; tiến độ tổng và badge Category theo quy tắc Action Board, cùng nguồn thẻ `Tiêu chuẩn` ở Tổng quan lớp.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.REQ02",
+   "name": "Chỉ đọc",
+   "text": "Không có nút `Thêm tiêu chuẩn`; không kéo thả, không sửa định nghĩa, ghi chú, file; control Result các loại khác `verify` được gán chỉ đọc.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.REQ03",
+   "name": "Tick xác nhận Xác thực ở Tiêu chuẩn lớp",
+   "text": "Action Xác thực (`verify`) có giáo viên trong assignee: tick một lần, không bỏ tick, chỉ khi nguồn còn Công khai; Result lưu theo lớp–item; tiến độ tính lại ngay.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.REQ04",
+   "name": "Phạm vi xem buổi họp",
+   "text": "Giáo viên chỉ thấy buổi họp của lớp mà mình nằm trong danh sách người tham gia và trạng thái khác `Mới tạo`. Lọc quyền ở backend trước khi trả danh sách, gom nhóm và đếm; không tải toàn bộ rồi ẩn ở client.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.REQ05",
+   "name": "Card chỉ đọc",
+   "text": "Card hiển thị số thứ tự, `N người tham gia` (popup danh sách người tham gia), tiêu đề, ngày giờ (`Chưa có lịch` nếu trống), trạng thái. Không có nút thêm buổi, thêm người, đổi trạng thái, sửa tiêu đề, xoá.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.REQ06",
+   "name": "Nhóm cùng thời gian",
+   "text": "Gom buổi cùng ngày và giờ:phút bắt đầu trong tập buổi giáo viên được xem; từ hai buổi hiển thị số lượng và popup liệt kê (số người tham gia, ngày giờ, trạng thái, tiêu đề). Cách gom giống requirement Admin Tab Cuộc họp REQ09.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.REQ07",
+   "name": "Nội dung buổi họp",
+   "text": "Hiển thị mô tả, Package → Category → Action Item theo thứ tự đã lưu, badge tiến độ theo quy tắc Action Board của buổi, chi tiết item (mô tả, ghi chú, file, Result), Biên bản cuộc họp (thu gọn, chỉ khi có nội dung). Tất cả chỉ đọc, trừ REQ08.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.REQ08",
+   "name": "Tick xác nhận Xác thực trong buổi họp",
+   "text": "Action loại Xác thực (`verify`) có giáo viên trong assignee: giáo viên bấm tick một lần để lưu Result đã xác nhận của buổi (kèm người, thời điểm); không bỏ tick. Item verify không gán giáo viên và mọi loại item khác: chỉ xem. Backend kiểm tra đủ bốn điều kiện ở Flow 4 mỗi lần lưu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.REQ09",
+   "name": "Đồng bộ",
+   "text": "Sau khi tick, badge tiến độ Category và tiến độ buổi cập nhật ngay; Result của buổi khác và Action Board lớp không đổi. Đổi buổi không dùng dữ liệu buổi cũ.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "GV-LOP-060100": {
+   "id": "GV-LOP-060100",
+   "name": "trong",
+   "title": "Chi tiết lớp / Tiêu chuẩn lớp / Trống",
+   "kind": "trang-thai",
+   "parent": null,
+   "shownOn": null,
+   "kindConfidence": "thap",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4333:13208",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/tieu-chuan-lop/trong",
+   "link": null,
+   "dark": "GV-LOP-060100-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CP.A01"
+   ]
+  },
+  "GV-LOP-070100": {
+   "id": "GV-LOP-070100",
+   "name": "trong",
+   "title": "Chi tiết lớp / Cuộc họp / Trống",
+   "kind": "trang-thai",
+   "parent": null,
+   "shownOn": null,
+   "kindConfidence": "thap",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4333:13911",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-lop/cuoc-hop/trong",
+   "link": null,
+   "dark": "GV-LOP-070100-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "TR-CP.A02"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "TR-CP.A01",
+   "name": "tieu-chuan-lop-cay-tieu-chuan-va-tien-do",
+   "title": "Tiêu chuẩn lớp — Cây tiêu chuẩn và tiến độ",
+   "screens": [
+    "gv-lop-060100"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_process_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CP.A01.01",
+     "name": "tien-do-tong",
+     "label": "Tiến độ tổng",
+     "spec": "Thanh tiến độ của lớp theo quy tắc Action Board (từ Action `Kiểm tra`, `Đánh giá`, `Task tiến trình`); chỉ hiển thị. Cùng giá trị với thẻ `Tiêu chuẩn` ở Tổng quan lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-060100": [
+       {
+        "term": "Kiểm tra",
+        "figmaId": "I4915:260963;4901:214201;2245:87908",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "769:35762",
+         "Label": "Bài tập và Kiểm tra",
+         "Type": "Menu phụ",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "TR-CP.TC02",
+      "TR-CP.TC05"
+     ],
+     "missingTerms": [
+      "Tiến độ tổng"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CP.A01.02",
+     "name": "cay-package-category-action-item",
+     "label": "Cây Package → Category → Action Item",
+     "spec": "Toàn bộ nội dung đã thêm vào lớp, theo thứ tự đã lưu; mỗi Category có badge `x/y` số item hoàn thành. Không lọc theo người được gán.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cây Package → Category → Action Item",
+      "x/y"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CP.A01.03",
+     "name": "mo-rong-item",
+     "label": "Mở rộng item",
+     "spec": "Icon `⌃`/`⌄` xem mô tả, ghi chú, file hướng dẫn (bấm tải), Result. Chỉ đọc với mọi loại trừ `verify` được gán.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Mở rộng item",
+      "⌃"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CP.A01.04",
+     "name": "action-xac-thuc-verify-duoc-gan",
+     "label": "Action Xác thực (verify) được gán",
+     "spec": "Assignee chứa giáo viên đang đăng nhập: ô tick cam bấm được; bấm thì lưu Result `đã xác nhận` (người, thời điểm), không bỏ tick; tiến độ Category/tổng tính lại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "verify"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CP.A01.05",
+     "name": "action-xac-thuc-verify-khong-gan-loai-kh",
+     "label": "Action Xác thực (verify) không gán, loại khác",
+     "spec": "Chỉ xem; control Result (ô check, đánh giá, tiến độ, deadline, log, ghi chú) hiển thị mờ hoặc chỉ đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "verify"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CP.A01.06",
+     "name": "nut-them-tieu-chuan",
+     "label": "Nút Thêm tiêu chuẩn",
+     "spec": "Không hiển thị với giáo viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CP.TC01"
+     ],
+     "missingTerms": [
+      "Thêm tiêu chuẩn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CP.A01.07",
+     "name": "khong-co-noi-dung",
+     "label": "Không có nội dung",
+     "spec": "Hiển thị `Bảng dữ liệu này đang trống` (Figma GV-LOP-060100).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-060100": [
+       {
+        "term": "Bảng dữ liệu này đang trống",
+        "figmaId": "4333:13216",
+        "layer": "Bảng dữ liệu này đang trống",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Không có nội dung"
+     ],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "TR-CP.A02",
+   "name": "cuoc-hop-khung-man-va-danh-sach-buoi-hop",
+   "title": "Cuộc họp — Khung màn và Danh sách buổi họp",
+   "screens": [
+    "gv-lop-070100"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_process_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CP.A02.01",
+     "name": "danh-sach-buoi-hop",
+     "label": "Danh sách buổi họp",
+     "spec": "Chỉ các buổi họp của lớp hiện tại có giáo viên trong danh sách người tham gia và **không ở trạng thái `Mới tạo`**. Buổi không mời giáo viên không hiển thị, không đếm, không mở được bằng URL.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-070100": [
+       {
+        "term": "Danh sách buổi họp",
+        "figmaId": "4333:13923",
+        "layer": "Danh sách buổi họp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Mới tạo"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CP.A02.02",
+     "name": "card-buoi-hop",
+     "label": "Card buổi họp",
+     "spec": "Số thứ tự; `N người tham gia` (bấm mở popup Danh sách người tham gia); tiêu đề; ngày `dd/MM/yyyy` và giờ `HH:mm` (chưa có lịch hiển thị `Chưa có lịch`); trạng thái. Mọi thành phần chỉ đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-CP.A02",
+       "raw": "mở popup Danh sách người tham gia"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Card buổi họp",
+      "N người tham gia"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CP.A02.03",
+     "name": "chon-buoi",
+     "label": "Chọn buổi",
+     "spec": "Bấm card để chọn: viền cam, vùng trái đổi theo buổi. Mặc định chọn buổi đầu tiên của danh sách. Chọn buổi không đổi trạng thái buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chọn buổi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CP.A02.04",
+     "name": "so-nguoi-tham-gia",
+     "label": "Số người tham gia",
+     "spec": "Số user duy nhất trong danh sách người tham gia đã lưu của buổi; không phải sĩ số lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Số người tham gia"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CP.A02.05",
+     "name": "badge-cung-thoi-gian",
+     "label": "Badge cùng thời gian",
+     "spec": "Các buổi giáo viên được xem có cùng ngày và giờ:phút bắt đầu gom thành nhóm; từ hai buổi hiển thị số lượng, bấm mở popup liệt kê từng buổi (số người tham gia, ngày giờ, trạng thái, tiêu đề). Chỉ đếm buổi giáo viên được xem.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-CP.A02",
+       "raw": "mở popup liệt kê từng buổi "
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Badge cùng thời gian"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CP.A02.06",
+     "name": "khong-co-buoi",
+     "label": "Không có buổi",
+     "spec": "Hiển thị `Chưa có dữ liệu`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-070100": [
+       {
+        "term": "Chưa có dữ liệu",
+        "figmaId": "4333:13926",
+        "layer": "Chưa có dữ liệu",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Không có buổi"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CP.A02.07",
+     "name": "loading-loi",
+     "label": "Loading/lỗi",
+     "spec": "Loading riêng vùng danh sách; lỗi có `Thử lại`, không dựng danh sách rỗng giả.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Loading/lỗi",
+      "Thử lại"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "TR-CP.A03",
+   "name": "noi-dung-buoi-hop-va-action-item",
+   "title": "Nội dung buổi họp và Action Item",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_process_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CP.A03.01",
+     "name": "tieu-de-vung",
+     "label": "Tiêu đề vùng",
+     "spec": "`Nội dung buổi họp`. Không có nút `Thêm nội dung buổi họp`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CP.A03.02",
+     "name": "mo-ta",
+     "label": "Mô tả",
+     "spec": "Mô tả của buổi đang chọn, định dạng văn bản, chỉ đọc; không có mô tả thì ẩn khối.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CP.TC11"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CP.A03.03",
+     "name": "package-category-action-item",
+     "label": "Package / Category / Action Item",
+     "spec": "Hiển thị theo thứ tự đã lưu của buổi; mỗi Category có badge tiến độ `x/y` theo quy tắc Action Board của buổi. Giáo viên không kéo thả, không thêm/xoá/nhân bản item.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CP.A03.04",
+     "name": "mo-rong-item",
+     "label": "Mở rộng item",
+     "spec": "Icon `⌃`/`⌄` mở/thu gọn chi tiết item (mô tả, ghi chú, file hướng dẫn, Result). Chỉ đọc với mọi loại trừ `verify` được gán.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CP.A03.05",
+     "name": "action-xac-thuc-verify-duoc-gan",
+     "label": "Action Xác thực (verify) được gán",
+     "spec": "Item có danh sách người xác nhận (assignee) chứa giáo viên đang đăng nhập: hiển thị ô tick cam có thể bấm. Bấm thì lưu Result `đã xác nhận` của **buổi này** cho giáo viên, ghi thời điểm; sau khi tick ô chuyển trạng thái đã tick và **không bỏ tick được**. Tiến độ Category/buổi tính lại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CP.A03.06",
+     "name": "action-xac-thuc-verify-khong-gan-giao-vi",
+     "label": "Action Xác thực (verify) không gán giáo viên",
+     "spec": "Ô tick hiển thị mờ, không bấm được.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CP.A03.07",
+     "name": "action-item-loai-khac-check-progress-eva",
+     "label": "Action Item loại khác (check, progress, evaluate, task, deadline, log, instruct)",
+     "spec": "Chỉ xem Result, ghi chú, file; không có control sửa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CP.A03.08",
+     "name": "bien-ban-cuoc-hop",
+     "label": "Biên bản cuộc họp",
+     "spec": "Khối `Biên bản cuộc họp` phía dưới, có `⌃` mở/thu gọn (mặc định thu gọn); chỉ hiển thị khi có nội dung; chỉ đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CP.TC16"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  },
+  {
+   "id": "TR-CP.A04",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_process_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CP.A04.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | Không dùng: tick thành công thể hiện bằng ô đổi trạng thái.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CP.TTC02"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CP.A04.02",
+     "name": "thong-tin",
+     "label": "Thông tin",
+     "spec": "`Thông Báo` | Không dùng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "TR-CP.TTC01"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CP.A04.03",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | Không dùng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "TR-CP.A04.04",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | Lưu tick xác nhận thất bại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "TR-CP.EX01",
+   "text": "Giáo viên gửi request thêm tiêu chuẩn, sửa Result item không phải `verify` được gán, sửa ghi chú hoặc định nghĩa → backend từ chối.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.EX02",
+   "text": "Nguồn quy trình của item chuyển `Vô hiệu` → tick Xác thực (`verify`) bị chặn; nội dung và Result cũ vẫn hiển thị.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.EX03",
+   "text": "Lớp chưa được thêm tiêu chuẩn → hiển thị `Bảng dữ liệu này đang trống`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.EX04",
+   "text": "Giáo viên không có trong danh sách người tham gia của buổi, hoặc buổi ở trạng thái `Mới tạo` → không hiển thị trong danh sách, không đếm vào nhóm cùng thời gian; mở bằng URL hoặc request trực tiếp bị từ chối.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.EX05",
+   "text": "Giáo viên không được mời buổi nào của lớp → danh sách hiển thị `Chưa có dữ liệu`, vùng trái trống.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.EX06",
+   "text": "Giáo viên gửi request tạo/sửa/xoá buổi họp, đổi trạng thái, sửa người tham gia, sửa nội dung Action Board, sửa biên bản, hoặc cập nhật Result của item không phải `verify` được gán → backend từ chối, dữ liệu giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.EX07",
+   "text": "Lưu tick xác nhận thất bại do backend/network → Toast `Có Lỗi Xảy Ra`; ô về trạng thái chưa tick.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CP.EX08",
+   "text": "Giáo viên bị gỡ khỏi danh sách người tham gia sau khi đang mở buổi → request tiếp theo bị từ chối; tải lại thì buổi biến mất khỏi danh sách.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "TR-CP.FLOW01",
+   "name": "Xem Tiêu chuẩn lớp",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ01",
+    "TR-CP.REQ02"
+   ]
+  },
+  {
+   "id": "TR-CP.FLOW02",
+   "name": "Tick xác nhận Action Xác thực ở Tiêu chuẩn lớp",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ03"
+   ]
+  },
+  {
+   "id": "TR-CP.FLOW03",
+   "name": "Xem buổi họp được mời",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ04",
+    "TR-CP.REQ07"
+   ]
+  },
+  {
+   "id": "TR-CP.FLOW04",
+   "name": "Tick xác nhận Action Xác thực trong buổi họp",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ08"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "TR-CP.TC01",
+   "title": "Case 1: Xem tiêu chuẩn và tiến độ",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CP.A01",
+   "scenario": "Flow 1 / REQ01 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ01",
+    "TR-CP.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CP.FLOW01"
+   ],
+   "items": [
+    "TR-CP.A01.06"
+   ]
+  },
+  {
+   "id": "TR-CP.TC02",
+   "title": "Case 2: Tick Xác thực được gán",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CP.A01",
+   "scenario": "Flow 2 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CP.FLOW02"
+   ],
+   "items": [
+    "TR-CP.A01.01"
+   ]
+  },
+  {
+   "id": "TR-CP.TC03",
+   "title": "Case 3: Item khác chỉ xem",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CP.A01",
+   "scenario": "EX01 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ02"
+   ],
+   "exceptions": [
+    "TR-CP.EX01"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TC04",
+   "title": "Case 4: Nguồn Vô hiệu",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CP.A01",
+   "scenario": "EX02 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ03"
+   ],
+   "exceptions": [
+    "TR-CP.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TC05",
+   "title": "Case 5: Lớp chưa có tiêu chuẩn",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CP.A01",
+   "scenario": "EX03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "TR-CP.EX03"
+   ],
+   "flows": [],
+   "items": [
+    "TR-CP.A01.01"
+   ]
+  },
+  {
+   "id": "TR-CP.TC06",
+   "title": "Case 6: Chỉ thấy buổi được mời",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CP.A02",
+   "scenario": "Flow 3 / REQ04 / EX04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ04"
+   ],
+   "exceptions": [
+    "TR-CP.EX04"
+   ],
+   "flows": [
+    "TR-CP.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TC07",
+   "title": "Case 7: Card chỉ đọc",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CP.A02",
+   "scenario": "REQ04 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ04",
+    "TR-CP.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TC08",
+   "title": "Case 8: Popup người tham gia",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CP.A02",
+   "scenario": "REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TC09",
+   "title": "Case 9: Nhóm cùng thời gian theo quyền",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CP.A02",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TC10",
+   "title": "Case 10: Không có buổi",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CP.A02",
+   "scenario": "EX05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "TR-CP.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TC11",
+   "title": "Case 11: Xem nội dung buổi",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CP.A03",
+   "scenario": "Flow 3 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CP.FLOW03"
+   ],
+   "items": [
+    "TR-CP.A03.02"
+   ]
+  },
+  {
+   "id": "TR-CP.TC12",
+   "title": "Case 12: Tick Xác thực được gán",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CP.A03",
+   "scenario": "Flow 4 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CP.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TC13",
+   "title": "Case 13: Xác thực không gán",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CP.A03",
+   "scenario": "EX06 / REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ08"
+   ],
+   "exceptions": [
+    "TR-CP.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TC14",
+   "title": "Case 14: Không bỏ tick",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CP.A03",
+   "scenario": "REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TC15",
+   "title": "Case 15: Item loại khác chỉ xem",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CP.A03",
+   "scenario": "EX06 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ07"
+   ],
+   "exceptions": [
+    "TR-CP.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TC16",
+   "title": "Case 16: Biên bản chỉ đọc",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CP.A03",
+   "scenario": "REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CP.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CP.A03.08"
+   ]
+  },
+  {
+   "id": "TR-CP.TC17",
+   "title": "Case 17: Tick lỗi",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CP.A03",
+   "scenario": "EX07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "TR-CP.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CP.TTC01",
+   "title": "Toast Case 1: Lỗi xử lý",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CP.A04",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CP.A04.02"
+   ]
+  },
+  {
+   "id": "TR-CP.TTC02",
+   "title": "Toast Case 2: Không Toast khi chỉ đọc",
+   "priority": "Low",
+   "smoke": false,
+   "region": "TR-CP.A04",
+   "scenario": "Ràng buộc Toast CRUD",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "TR-CP.A04.01"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "popup-khong-co-man-cha",
+   "ref": "GV-LOP-060100",
+   "text": "chưa xác định được màn chính để mở"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-060100",
+   "text": "loại trang-thai, màn cha None — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-LOP-060100",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "popup-khong-co-man-cha",
+   "ref": "GV-LOP-070100",
+   "text": "chưa xác định được màn chính để mở"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "GV-LOP-070100",
+   "text": "loại trang-thai, màn cha None — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "GV-LOP-070100",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "TR-CP.TTC01",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "TR-CP.TTC02",
+   "text": "testcase không ghi REQ/EX/Flow"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "TR-CP.REQ09",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "TR-CP.EX08",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "teacher_role/class/class_process_requirements.md",
+   "prefix": "TR-CP",
+   "title": "[Giáo viên] Chi tiết lớp — Quy trình"
+  }
+ ]
+}

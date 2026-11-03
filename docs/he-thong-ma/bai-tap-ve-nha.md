@@ -113,7 +113,7 @@ Frame: `CD-KH-060130` · Nguồn nội dung: QC
 
 ### `A05` Popup Chọn loại câu
 
-Frame: `CD-KH-060110`, `CD-KH-030348` (tool đoán theo tên: CD-KH-030348) · Nguồn nội dung: QC
+Frame: `CD-KH-060110`, `CD-KH-030348` (tool đoán:CD-KH-030348) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -128,7 +128,7 @@ Frame: `CD-KH-060110`, `CD-KH-030348` (tool đoán theo tên: CD-KH-030348) · N
 
 ### `A06` Popup Soạn câu hỏi
 
-Frame: `CD-KH-060120`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125` (tool đoán theo tên: CD-KH-060121, CD-KH-060122, CD-KH-060123, CD-KH-060124, CD-KH-060125) · Nguồn nội dung: QC
+Frame: `CD-KH-060120`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125` (tool đoán:CD-KH-060121, CD-KH-060122, CD-KH-060123, CD-KH-060124, CD-KH-060125) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -151,7 +151,7 @@ Frame: `CD-KH-060120`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-06
 
 ### `A07` Import / Export Excel
 
-Frame: `CD-KH-030340`, `CD-KH-060140`, `CD-KH-060141` (tool đoán theo tên: CD-KH-060140, CD-KH-060141) · Nguồn nội dung: QC
+Frame: `CD-KH-030340`, `CD-KH-060140`, `CD-KH-060141` (tool đoán:CD-KH-060140, CD-KH-060141) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -164,7 +164,7 @@ Frame: `CD-KH-030340`, `CD-KH-060140`, `CD-KH-060141` (tool đoán theo tên: CD
 
 ### `A08` Soát lỗi bằng AI
 
-Frame: `CD-KH-060150` (tool đoán theo tên: CD-KH-060150) · Nguồn nội dung: QC
+Frame: `CD-KH-060150` (tool đoán:CD-KH-060150) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -219,13 +219,13 @@ Frame: `CD-KH-030347` · Nguồn nội dung: QC
 
 ### `A13` Toast phản hồi CRUD
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `CD-KH-030340`, `CD-KH-060100`, `CD-KH-060200` (tool đoán:CD-KH-030340, CD-KH-060100, CD-KH-060200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A13.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa sync | QC |
-| `A13.02` | canh-bao |  |  | — |  |  | Chưa sync | QC |
-| `A13.03` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A13.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa thấy trên Figma | QC |
+| `A13.02` | canh-bao |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A13.03` | loi |  | `5491:357786` Nghe và chọn câu trả lời đúng | — |  |  | Khớp | QC |
 
 ### `F01` (ngoài Body)
 
@@ -331,9 +331,9 @@ Frame: `CD-KH-030340` · Nguồn nội dung: Figma
 - `A07` Khác Figma: nút Import / Export mới có ở CD-KH-030340; chưa có popup kết quả import.
 - `A09` Khác Figma CD-KH-030341 / 030342: dòng phụ dưới `Số câu` ghi `Tối đa 50 câu mỗi lần`; requirement không giới hạn.
 - `A12` Khác Figma CD-KH-030347: tag câu mới ghi `Mới`; requirement dùng tag `AI`.
-- Chưa thấy trên Figma (14): `A01.04`, `A01.05`, `A03.04`, `A03.09`, `A07.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A11.01`, `A11.03`, `A11.04`, `A12.02`, `A12.03`
+- Chưa thấy trên Figma (16): `A01.04`, `A01.05`, `A03.04`, `A03.09`, `A07.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A11.01`, `A11.03`, `A11.04`, `A12.02`, `A12.03`, `A13.01`, `A13.02`
 - Requirement ghi thiếu, Figma đã có (6): `A02.03`, `A06.12`, `A06.13`, `A06.14`, `A06.15`, `A06.16`
-- Chưa sync (11): `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`, `A13.01`, `A13.02`, `A13.03`
+- Chưa sync (8): `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`
 - Phân loại cần design duyệt (18): `CD-KH-030342`, `CD-KH-030343`, `CD-KH-030344`, `CD-KH-030345`, `CD-KH-030346`, `CD-KH-030347`, `CD-KH-030349`, `CD-KH-060120`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060130`, `CD-KH-060140`, `CD-KH-060141`, `CD-KH-060150`, `CD-KH-060160`
 - Thiếu prototype link đi vào (8): `CD-KH-030346`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060130`, `CD-KH-060140`
 - Frame Figma chưa có requirement (10): `CD-KH-030348`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060140`, `CD-KH-060141`, `CD-KH-060150`, `CD-KH-060160`

@@ -1,0 +1,2101 @@
+{
+ "cluster": "teacher-salary-requirements",
+ "title": "Lương giáo viên — Admin",
+ "figmaPrefix": "M-TS",
+ "requirements": [],
+ "screens": {
+  "ADM-LGV-010000": {
+   "id": "ADM-LGV-010000",
+   "name": "luong-giao-vien",
+   "title": "Lương / Lương giáo viên",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "ADM-LGV-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "4101:138376",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/luong/luong-giao-vien",
+   "link": "/luong/luong-giao-vien",
+   "dark": "ADM-LGV-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "M-TS.A01",
+    "M-TS.A02",
+    "M-TS.A03",
+    "M-TS.A04",
+    "M-TS.A05",
+    "M-TS.A06",
+    "M-TS.A07",
+    "M-TS.A08",
+    "M-TS.A09",
+    "M-TS.A10",
+    "M-TS.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "M-TS.A01",
+   "name": "tong-quan",
+   "title": "Tổng quan",
+   "screens": [
+    "adm-lgv-010000"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/salary_management/teacher_salary_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TS.A01.01",
+     "name": "tim-kiem",
+     "label": "Tìm kiếm",
+     "spec": "**Đã chốt:** placeholder `Tìm giáo viên...`; chỉ tìm theo tên, email hoặc mã giáo viên, không tìm mã lớp. Kết hợp với kỳ thống kê để xác định danh sách giáo viên hợp lệ; các phát sinh trong kỳ của giáo viên khớp được giữ đầy đủ. Không đổi nội dung file xuất thành tìm theo lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "4101:139264",
+        "layer": "Tìm kiếm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tìm kiếm",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm giáo viên, lớp...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Tìm giáo viên...",
+        "figmaId": "I4101:139264;1739:32351",
+        "layer": "Tìm nội dung...",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Tìm kiếm",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm giáo viên, lớp...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TS.A01.02",
+     "name": "pham-vi-thong-ke",
+     "label": "Phạm vi thống kê",
+     "spec": "**Đã chốt:** đợt này chỉ xem thống kê và Export; bỏ bộ lọc trạng thái chốt/thanh toán đang vẽ trong Figma. Không có luồng chốt lương hoặc đánh dấu thanh toán tại màn này. Trạng thái KPI/OT vẫn dùng để xác định khoản hợp lệ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Phạm vi thống kê"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A01.03",
+     "name": "thoi-gian",
+     "label": "Thời gian",
+     "spec": "Mặc định Tháng này theo Figma. Dropdown gồm Tới hạn, Hôm nay, Hôm qua, Tuần này, Tuần trước, Tuần sau, Tháng này, Tháng trước, 3 tháng trước, Tháng sau, Năm nay, Năm trước, Hôm nay & Hôm qua, Tùy chọn. Cách tính theo bộ lọc chung; không tự đổi nhãn 3 tháng trước thành 3 tháng gần đây.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thời gian"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A01.04",
+     "name": "sau-the-toan-trang",
+     "label": "Sáu thẻ toàn trang",
+     "spec": "Số lớp, Số buổi đã dạy, Lương buổi dạy, Lương KPI, Lương OT, Tổng lương. Chỉ giáo viên/lớp có buổi Hoàn thành hoặc KPI/OT Đã xác nhận trong kỳ. **Đã chốt:** Số lớp toàn trang đếm class_id không trùng trong tập phát sinh hợp lệ. G/H cùng có phát sinh tại A thì toàn trang là 1 lớp; số lớp cá nhân của G và H đều có A. Tổng tiền vẫn cộng khoản riêng của cả hai, không loại theo class_id.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Sáu thẻ toàn trang"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A01.05",
+     "name": "bon-the-giao-vien-dang-chon",
+     "label": "Bốn thẻ giáo viên đang chọn",
+     "spec": "**Đã chốt:** Lương buổi dạy, Lương KPI, Lương OT, Tổng lương, kèm tên giáo viên; luôn là tổng cá nhân trên toàn bộ lớp phát sinh trong kỳ. Chọn lớp con chỉ lọc bảng chi tiết, không thay bốn thẻ này. Không trộn số của giáo viên khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Bốn thẻ giáo viên đang chọn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A01.06",
+     "name": "danh-sach-giao-vien",
+     "label": "Danh sách giáo viên",
+     "spec": "**Đã chốt:** chỉ liệt kê giáo viên có buổi Hoàn thành hoặc KPI/OT Đã xác nhận trong kỳ; các lớp con dùng cùng điều kiện phát sinh. Kể cả giáo viên/lớp chỉ có KPI/OT được xác nhận, hoặc buổi Hoàn thành không lịch tiền 0, vẫn thuộc danh sách. Avatar, họ tên, email, số lớp, tổng lương và checkbox. Bấm giáo viên chọn xem chi tiết bên trái và mở danh sách lớp con, không điều hướng sang trang khác. Giáo viên đang xem có nền/viền nhấn. **Đã chốt:** khi mở màn mặc định chọn giáo viên đầu tiên của danh sách hợp lệ; đổi giáo viên bỏ lựa chọn lớp cũ. Danh sách rỗng thì không chọn ngầm người ngoài kết quả và hiển thị trạng thái rỗng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Danh sách giáo viên",
+        "figmaId": "4101:139152",
+        "layer": "Danh sách lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TS.A01.07",
+     "name": "lop-con-cua-giao-vien",
+     "label": "Lớp con của giáo viên",
+     "spec": "Icon trạng thái, mã lớp, số buổi và tiền của lớp. **Đã chốt:** bấm lớp con chọn class_id để lọc vùng chi tiết/các tab của giáo viên đang xem ngay tại trang; không mở Chi tiết lớp. Chọn xem không thay tập checkbox Export.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lớp con của giáo viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A01.08",
+     "name": "checkbox-va-export",
+     "label": "Checkbox và Export",
+     "spec": "Figma hiển thị checkbox từng giáo viên, checkbox đầu danh sách và Export (1). **Đã chốt:** checkbox chỉ dùng chọn giáo viên cho Export, độc lập với giáo viên/lớp đang xem; tick không đổi vùng chi tiết, bấm chọn xem không tự tick. Export chỉ đọc, không tạo/chuyển trạng thái chốt/thanh toán. **File Excel .xlsx theo mẫu Bảng tổng hợp lương giáo viên** ở mục dưới. **Đã chốt:** checkbox đầu danh sách chọn/bỏ chọn tất cả giáo viên trên trang hiện tại; giữ lựa chọn các trang khác. Chuyển trang giữ tập chọn theo teacher_id; đổi kỳ hoặc điều kiện tìm kiếm xóa toàn bộ tập chọn. Chưa chọn ai thì Export bị vô hiệu hóa; Export (n) là số giáo viên được chọn trên mọi trang.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Checkbox và Export"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A01.09",
+     "name": "tooltip-tong-luong-giao-vien",
+     "label": "Tooltip tổng lương giáo viên",
+     "spec": "Figma thể hiện KPI, OT và số buổi; giá trị theo đúng giáo viên/kỳ đang xem.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tooltip tổng lương giáo viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A01.10",
+     "name": "tooltip-tong-luong-lop",
+     "label": "Tooltip tổng lương lớp",
+     "spec": "Figma thể hiện KPI và OT của lớp; không lấy dữ liệu lớp khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tooltip tổng lương lớp"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-TS.A02",
+   "name": "tab-lop-hoc",
+   "title": "Tab Lớp học",
+   "screens": [
+    "adm-lgv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-LGV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/salary_management/teacher_salary_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TS.A02.01",
+     "name": "lop",
+     "label": "Lớp",
+     "spec": "Icon trạng thái và mã lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Lớp",
+        "figmaId": "4101:139331",
+        "layer": "Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TS.A02.02",
+     "name": "tien-do",
+     "label": "Tiến độ",
+     "spec": "Buổi hoàn thành / tổng buổi, dùng công thức tiến độ lớp chung.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Tiến độ",
+        "figmaId": "4101:139333",
+        "layer": "Sĩ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TS.A02.03",
+     "name": "si-so",
+     "label": "Sĩ số",
+     "spec": "Theo thành phần sĩ số lớp dùng chung; Figma có mẫu 7/14(2), không tự coi đây là sĩ số điểm danh một buổi.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Sĩ số",
+        "figmaId": "4101:139335",
+        "layer": "Sĩ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TS.A02.04",
+     "name": "so-buoi",
+     "label": "Số buổi",
+     "spec": "Buổi đã dạy của giáo viên đang chọn tại lớp trong kỳ, theo quy tắc buổi Hoàn thành.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Số buổi",
+        "figmaId": "4101:139337",
+        "layer": "Sĩ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TS.A02.05",
+     "name": "luong-buoi",
+     "label": "Lương buổi",
+     "spec": "Tổng tiền buổi dạy đã ghi nhận tại lớp trong kỳ; phân biệt với đơn giá theo giờ của quan hệ giáo viên–lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Lương buổi",
+        "figmaId": "4101:139339",
+        "layer": "Sĩ số",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TS.A02.06",
+     "name": "kpi-ot",
+     "label": "KPI / OT",
+     "spec": "Tổng khoản thực tế Đã xác nhận của đúng giáo viên/lớp/loại trong kỳ Ngày ghi nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "KPI / OT",
+        "figmaId": "4101:138874",
+        "layer": "Tabs · Lớp học / Buổi dạy / KPI / OT",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-TS.A02.07",
+     "name": "tong-luong",
+     "label": "Tổng lương",
+     "spec": "Lương buổi + KPI + OT của lớp; khác bảng lớp bên phải màn Giáo viên đã chốt chỉ tiền buổi. Chỉ liệt kê lớp có buổi Hoàn thành hoặc KPI/OT Đã xác nhận trong kỳ; lớp không có phát sinh hợp lệ bị loại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Tổng lương",
+        "figmaId": "4101:138871",
+        "layer": "Thẻ chỉ số · Tổng lương",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tổng lương",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "6/6",
+         "Có đơn vị": false,
+         "Biểu tượng": "2925:35763",
+         "Có phần thêm": false,
+         "Tiêu đề": "Tổng lương",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-TS.A03",
+   "name": "cac-tab-buoi-day-kpi-ot",
+   "title": "Các tab Buổi dạy / KPI / OT",
+   "screens": [
+    "adm-lgv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-LGV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/salary_management/teacher_salary_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TS.A03.01",
+     "name": "buoi-day",
+     "label": "Buổi dạy",
+     "spec": "LỚP, TÊN BUỔI HỌC, SĨ SỐ, THỜI GIAN, LƯƠNG BUỔI DẠY. Icon trạng thái/mã lớp, tên bài/mô tả, sĩ số điểm danh của buổi theo quy tắc dùng chung. Thời gian `dd.MM.yyyy` và `HH:mm`, theo ngày tính lương; tiền buổi không lịch là 0 kèm cảnh báo. Thời gian giảm dần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Buổi dạy",
+        "figmaId": "I4101:139550;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "dd.MM.yyyy"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TS.A03.02",
+     "name": "kpi",
+     "label": "KPI",
+     "spec": "LỚP, LOẠI KPI, NGÀY GHI NHẬN, TRẠNG THÁI, TIỀN THƯỞNG. Tên từ title cấu hình tham chiếu; Ngày ghi nhận `dd.MM.yyyy`; tiền value thực tế. Giữ Mới/Đã xác nhận/Đã hủy trong bảng, ẩn Đã xóa; chỉ confirmed tham gia tổng. Ngày ghi nhận giảm dần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "KPI",
+        "figmaId": "I4101:138869;3266:53996",
+        "layer": "Ô biểu tượng",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Ô biểu tượng",
+        "component": "Atom/Ô biểu tượng",
+        "variant": {
+         "Biểu tượng": "KPI",
+         "Cỡ": "24"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "dd.MM.yyyy"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "M-TS.A03.03",
+     "name": "ot",
+     "label": "OT",
+     "spec": "LỚP, LOẠI OT, NGÀY GHI NHẬN, TRẠNG THÁI, TIỀN THƯỞNG. Tên/mô tả từ cấu hình OT; khoản thực tế theo type=ot; giữ Mới/Đã xác nhận/Đã hủy, ẩn Đã xóa, chỉ confirmed tham gia tổng. Không nhân số phút trong tên. Ngày ghi nhận giảm dần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "OT",
+        "figmaId": "I4101:138877;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "M-TS.A04",
+   "name": "chon-giao-vien-de-export",
+   "title": "Chọn giáo viên để Export",
+   "screens": [
+    "adm-lgv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-LGV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/salary_management/teacher_salary_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "M-TS.A05",
+   "name": "file-excel-tong-hop-luong-giao-vien",
+   "title": "File Excel tổng hợp lương giáo viên",
+   "screens": [
+    "adm-lgv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-LGV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/salary_management/teacher_salary_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TS.A05.01",
+     "name": "1",
+     "label": "1",
+     "spec": "STT | Đánh số dòng giáo viên từ 1 trong file.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "1"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A05.02",
+     "name": "2",
+     "label": "2",
+     "spec": "MÃ GIÁO VIÊN | `UserModel.code`; dùng mã hồ sơ, không tự thay bằng số thứ tự hoặc userId.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "2",
+      "UserModel.code"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A05.03",
+     "name": "3",
+     "label": "3",
+     "spec": "TÊN GIÁO VIÊN | Tên giáo viên trong hồ sơ đúng người được xuất.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "3"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A05.04",
+     "name": "4",
+     "label": "4",
+     "spec": "SỐ TÀI KHOẢN | `bankAccountNumber`; ghi kiểu text để giữ số 0 đầu và tránh ký hiệu khoa học.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "4",
+      "bankAccountNumber"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A05.05",
+     "name": "5",
+     "label": "5",
+     "spec": "TÊN NGƯỜI THỤ HƯỞNG | `bankAccountName`; không tự lấy tên giáo viên thay khi trống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "5",
+      "bankAccountName"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A05.06",
+     "name": "6",
+     "label": "6",
+     "spec": "NGÂN HÀNG THỤ HƯỞNG/CHI NHÁNH | `bankName` theo dữ liệu hồ sơ. Model cũ đã đọc chưa có field chi nhánh riêng; không tự tạo tên chi nhánh hoặc mặc định ngân hàng trong ảnh.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "6",
+      "bankName"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A05.07",
+     "name": "7",
+     "label": "7",
+     "spec": "SỐ LỚP | Số class_id không trùng có phát sinh hợp lệ của giáo viên trong kỳ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "7"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A05.08",
+     "name": "8",
+     "label": "8",
+     "spec": "SỐ BUỔI | Số buổi Hoàn thành của giáo viên trong kỳ theo quy tắc ngày tính lương; kể cả buổi không lịch có tiền 0.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "8"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A05.09",
+     "name": "9",
+     "label": "9",
+     "spec": "LƯƠNG BUỔI DẠY | Tổng tiền buổi đã ghi nhận của giáo viên trong kỳ; giữ lương lịch sử.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "9"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A05.10",
+     "name": "10",
+     "label": "10",
+     "spec": "KPI | Tổng value KPI Đã xác nhận của giáo viên, theo Ngày ghi nhận trong kỳ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "10"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A05.11",
+     "name": "11",
+     "label": "11",
+     "spec": "OT | Tổng value OT Đã xác nhận của giáo viên, theo Ngày ghi nhận trong kỳ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "11"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A05.12",
+     "name": "12",
+     "label": "12",
+     "spec": "TỔNG LƯƠNG | Lương buổi dạy + KPI + OT của chính dòng giáo viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "12"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-TS.A06",
+   "name": "quy-tac-da-co-tu-cac-requirement-lien-qu",
+   "title": "Quy tắc đã có từ các requirement liên quan",
+   "screens": [
+    "adm-lgv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-LGV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/salary_management/teacher_salary_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "M-TS.A07",
+   "name": "luong-xem-du-lieu",
+   "title": "Luồng xem dữ liệu",
+   "screens": [
+    "adm-lgv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-LGV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/salary_management/teacher_salary_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "M-TS.A08",
+   "name": "sai-lech-du-lieu-mau-figma",
+   "title": "Sai lệch dữ liệu mẫu Figma",
+   "screens": [
+    "adm-lgv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-LGV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/salary_management/teacher_salary_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TS.A08.01",
+     "name": "case-1-dung-giao-vien",
+     "label": "Case 1: Đúng giáo viên",
+     "spec": "High | REQ01 | **Given** G/H cùng dạy A<br>**When** chọn G<br>**Then** bốn thẻ và tab chỉ chứa dữ liệu của G | Không cộng buổi/khoản H vào G.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ01",
+       "raw": "REQ01"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 1: Đúng giáo viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.02",
+     "name": "case-2-ngay-lich-khac-hoan-thanh",
+     "label": "Case 2: Ngày lịch khác hoàn thành",
+     "spec": "High | REQ02 | **Given** lịch 30/9, hoàn thành 2/10<br>**When** chọn tháng 9<br>**Then** buổi có lịch thuộc tháng 9 | Không tính hai lần hoặc chuyển sang tháng 10 theo thao tác Hoàn thành.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ02",
+       "raw": "REQ02"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 2: Ngày lịch khác hoàn thành"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.03",
+     "name": "case-3-buoi-khong-lich",
+     "label": "Case 3: Buổi không lịch",
+     "spec": "High | REQ03 | **Given** buổi Hoàn thành không lịch<br>**When** xem kỳ chứa thời điểm hoàn thành<br>**Then** tăng số buổi, tiền 0 | Có cảnh báo, không lấy đơn giá hiện tại bù vào.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ03",
+       "raw": "REQ03"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 3: Buổi không lịch"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.04",
+     "name": "case-4-khong-hoi-to",
+     "label": "Case 4: Không hồi tố",
+     "spec": "High | REQ03 / REQ06 | **Given** buổi cũ đã chốt tiền, đơn giá lớp sau đó thay đổi<br>**When** xem lịch sử<br>**Then** tiền buổi cũ giữ nguyên | Không tính lại bằng rate hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ03",
+       "raw": "REQ03"
+      },
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ06",
+       "raw": "REQ06"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 4: Không hồi tố"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.05",
+     "name": "case-5-kpi-ot-xac-nhan",
+     "label": "Case 5: KPI/OT xác nhận",
+     "spec": "High | REQ04 | **Given** khoản đủ Mới/Đã xác nhận/Đã hủy/Đã xóa, nhiều owner/type<br>**When** tổng hợp G<br>**Then** chỉ confirmed của G đúng loại trong kỳ được cộng | Không cộng nhầm KPI thành OT hoặc khoản người khác.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ04",
+       "raw": "REQ04"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 5: KPI/OT xác nhận"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.06",
+     "name": "case-6-tong-theo-cong-thuc",
+     "label": "Case 6: Tổng theo công thức",
+     "spec": "High | REQ05 | **Given** tiền buổi 1050000, KPI 500000, OT 0<br>**When** xem tổng<br>**Then** Tổng lương 1550000 | Không sao chép 1540000 của Figma hoặc cộng lại các dòng chi tiết.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ05",
+       "raw": "REQ05"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 6: Tổng theo công thức"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.07",
+     "name": "case-7-khoan-khong-co-buoi",
+     "label": "Case 7: Khoản không có buổi",
+     "spec": "High | REQ04–REQ05 | **Given** G có KPI/OT xác nhận trong kỳ nhưng không có buổi<br>**When** tổng hợp<br>**Then** vẫn giữ khoản hợp lệ trong tổng | G và lớp vẫn được liệt kê dù không có buổi; không suy ra tổng bằng 0 từ bảng buổi trống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ04",
+       "raw": "REQ04"
+      },
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ05",
+       "raw": "REQ05"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 7: Khoản không có buổi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.08",
+     "name": "case-8-request-tra-sai-thu-tu",
+     "label": "Case 8: Request trả sai thứ tự",
+     "spec": "High | REQ07 | **Given** đổi giáo viên/kỳ liên tiếp<br>**When** response cũ về sau<br>**Then** chỉ lựa chọn mới nhất hiển thị | Không trộn tên G với bảng H hoặc tổng kỳ cũ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ07",
+       "raw": "REQ07"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 8: Request trả sai thứ tự"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.09",
+     "name": "case-9-loi-du-lieu",
+     "label": "Case 9: Lỗi dữ liệu",
+     "spec": "High | REQ07 | **Given** tải tổng thất bại<br>**When** render<br>**Then** hiện lỗi và Thử lại | Không giả tổng 0 hoặc dùng số mẫu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ07",
+       "raw": "REQ07"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 9: Lỗi dữ liệu"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.10",
+     "name": "case-10-duyet-khac-ap-dung-luong",
+     "label": "Case 10: Duyệt khác áp dụng lương",
+     "spec": "High | REQ06 | **Given** đề xuất đã được Admin duyệt, chưa chỉnh lương thủ công<br>**When** xem Lương GV<br>**Then** không tự thay đơn giá thực tế | Giữ tiền lịch sử; mức đề xuất không thành đơn giá tự động.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ06",
+       "raw": "REQ06"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 10: Duyệt khác áp dụng lương"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.11",
+     "name": "case-11-chi-thong-ke-va-export",
+     "label": "Case 11: Chỉ thống kê và Export",
+     "spec": "High | REQ08 | **Given** mở Lương GV<br>**When** xem bộ lọc và thực hiện Export<br>**Then** không có bộ lọc chốt/thanh toán hoặc thao tác chuyển trạng thái | Export không tạo kỳ lương đã chốt hoặc bản ghi đã thanh toán.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ08",
+       "raw": "REQ08"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 11: Chỉ thống kê và Export"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.12",
+     "name": "case-12-tap-phat-sinh-trong-ky",
+     "label": "Case 12: Tập phát sinh trong kỳ",
+     "spec": "High | REQ01 | **Given** G có buổi Hoàn thành không lịch tiền 0; H chỉ có OT confirmed; I chỉ có KPI Mới; J không phát sinh<br>**When** tải danh sách<br>**Then** hiển thị G/H và lớp phát sinh tương ứng, loại I/J | Không yêu cầu tiền buổi lớn hơn 0; KPI/OT Mới không đủ điều kiện liệt kê.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ01",
+       "raw": "REQ01"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 12: Tập phát sinh trong kỳ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.13",
+     "name": "case-13-chon-xem-doc-lap-export",
+     "label": "Case 13: Chọn xem độc lập Export",
+     "spec": "High | REQ08–REQ09 | **Given** đang xem G/lớp A và đã tick H để Export<br>**When** chọn G/lớp B rồi tick thêm I<br>**Then** chi tiết vẫn G/B, tập Export là H/I | Chọn xem không tự tick G; tick I không đổi chi tiết sang I; không điều hướng Chi tiết lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ08",
+       "raw": "REQ08"
+      },
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ09",
+       "raw": "REQ09"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 13: Chọn xem độc lập Export"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.14",
+     "name": "case-14-loc-lop-dung-giao-vien",
+     "label": "Case 14: Lọc lớp đúng giáo viên",
+     "spec": "High | REQ09 | **Given** G dạy A/B; H cũng dạy A<br>**When** chọn G rồi lớp A và đổi tab<br>**Then** bảng chi tiết chỉ dữ liệu của G/A trong kỳ | Không lấy H/A hoặc G/B; các tab giữ đúng phạm vi đang xem.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ09",
+       "raw": "REQ09"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 14: Lọc lớp đúng giáo viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.15",
+     "name": "case-15-dung-mau-excel",
+     "label": "Case 15: Đúng mẫu Excel",
+     "spec": "High | REQ08 | **Given** đã tick giáo viên có dữ liệu trong kỳ<br>**When** Export<br>**Then** nhận .xlsx có đúng tiêu đề, khoảng thời gian, 12 cột đúng thứ tự và dòng Tổng cộng | Header xanh/chữ trắng, ô tổng vàng; mỗi giáo viên một dòng; không tự thêm sheet chi tiết.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ08",
+       "raw": "REQ08"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 15: Đúng mẫu Excel"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.16",
+     "name": "case-16-bao-toan-thong-tin-tai-khoan",
+     "label": "Case 16: Bảo toàn thông tin tài khoản",
+     "spec": "High | REQ08 | **Given** số tài khoản dạng chuỗi có số 0 đầu và chuỗi dài, hoặc hồ sơ thiếu ngân hàng<br>**When** Export rồi mở file<br>**Then** tài khoản giữ nguyên dạng text, ô thiếu để trống | Không ký hiệu khoa học, không tự điền ngân hàng/người thụ hưởng từ ảnh mẫu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ08",
+       "raw": "REQ08"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 16: Bảo toàn thông tin tài khoản"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.17",
+     "name": "case-17-tong-excel-dung-pham-vi",
+     "label": "Case 17: Tổng Excel đúng phạm vi",
+     "spec": "High | REQ05 / REQ08 | **Given** tick G/H, không tick I; đang xem riêng lớp A của G<br>**When** Export<br>**Then** chỉ dòng G/H với đầy đủ phát sinh từng người trong kỳ và Tổng cộng đúng các dòng xuất | Không xuất I, không chỉ lấy lớp A; các ô số/tiền là số; tổng lương bằng tiền buổi + KPI + OT.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ05",
+       "raw": "REQ05"
+      },
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ08",
+       "raw": "REQ08"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 17: Tổng Excel đúng phạm vi"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.18",
+     "name": "case-18-checkbox-qua-nhieu-trang",
+     "label": "Case 18: Checkbox qua nhiều trang",
+     "spec": "High | REQ08 | **Given** đã chọn G ở trang 1 và H ở trang 2<br>**When** chọn tất cả rồi bỏ chọn tất cả ở trang 2<br>**Then** chỉ thay tập chọn trang 2, G vẫn được giữ | Export (n) đếm toàn bộ tập chọn; chọn xem không làm mất tập chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ08",
+       "raw": "REQ08"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 18: Checkbox qua nhiều trang"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.19",
+     "name": "case-19-doi-loc-xoa-tap-chon",
+     "label": "Case 19: Đổi lọc xóa tập chọn",
+     "spec": "High | REQ08 | **Given** đã chọn giáo viên qua nhiều trang<br>**When** đổi kỳ hoặc điều kiện tìm kiếm có hiệu lực<br>**Then** xóa toàn bộ tập chọn, Export (0) bị vô hiệu hóa | Không tự xuất người đang xem; response cũ không khôi phục lựa chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ08",
+       "raw": "REQ08"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 19: Đổi lọc xóa tập chọn"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.20",
+     "name": "case-20-so-lop-toan-trang-khong-trung",
+     "label": "Case 20: Số lớp toàn trang không trùng",
+     "spec": "High | REQ01 / REQ05 | **Given** G và H cùng có phát sinh tại A, không có lớp khác; G có tiền 200000, H có tiền 300000<br>**When** tính tổng<br>**Then** Số lớp toàn trang 1, cá nhân G/H mỗi người 1 lớp; Tổng lương 500000 | Excel xuất G/H có 2 dòng; Tổng cộng Số lớp trong file bằng 2 theo tổng các dòng, khác thẻ toàn trang khử trùng; tiền không bị loại theo class_id.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ01",
+       "raw": "REQ01"
+      },
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ05",
+       "raw": "REQ05"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 20: Số lớp toàn trang không trùng"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.21",
+     "name": "case-21-tim-dung-truong",
+     "label": "Case 21: Tìm đúng trường",
+     "spec": "High | REQ10 | **Given** có tên/email/mã giáo viên và mã lớp khác nhau<br>**When** tìm theo từng trường<br>**Then** tên/email/mã giáo viên cho kết quả khớp; không khớp chỉ vì mã lớp | Placeholder Tìm giáo viên...; giữ đầy đủ phát sinh trong kỳ của người khớp; đổi tìm kiếm xóa tập Export.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ10",
+       "raw": "REQ10"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 21: Tìm đúng trường"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.22",
+     "name": "case-22-mac-dinh-va-doi-giao-vien",
+     "label": "Case 22: Mặc định và đổi giáo viên",
+     "spec": "High | REQ09 | **Given** danh sách có G/H<br>**When** mở màn, chọn G/A rồi chuyển sang H<br>**Then** ban đầu chọn giáo viên đầu tiên; khi sang H thì không giữ lớp A của G | Rỗng không chọn ngầm; tên và bảng đúng người mới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ09",
+       "raw": "REQ09"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 22: Mặc định và đổi giáo viên"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.23",
+     "name": "case-23-loc-lop-khong-doi-tong-ca-nhan",
+     "label": "Case 23: Lọc lớp không đổi tổng cá nhân",
+     "spec": "High | REQ05 / REQ09 | **Given** G có tiền lớp A=200000, B=300000, không KPI/OT<br>**When** chọn lớp A và đổi tab<br>**Then** bảng chỉ G/A, bốn thẻ vẫn tổng G với Tổng lương 500000 | Không thay tổng cá nhân bằng 200000 hoặc chỉ tính trang hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ05",
+       "raw": "REQ05"
+      },
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ09",
+       "raw": "REQ09"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 23: Lọc lớp không đổi tổng cá nhân"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.24",
+     "name": "case-24-tab-dung-cau-truc-chung-va-phan-",
+     "label": "Case 24: Tab dùng cấu trúc chung và phân trang",
+     "spec": "High | REQ10 | **Given** G/A có hơn 50 dòng dữ liệu trong một tab<br>**When** xem từng tab và chuyển trang<br>**Then** đúng cột/định dạng đã chốt, tối đa 50 dòng/trang, giữ scope G/A/kỳ | Chỉ đọc, không nút sửa/xóa/xác nhận; chuyển scope về trang đầu; không lấy khoản của Admin đang đăng nhập.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ10",
+       "raw": "REQ10"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 24: Tab dùng cấu trúc chung và phân trang"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-TS.A09",
+   "name": "da-chot",
+   "title": "Đã chốt",
+   "screens": [
+    "adm-lgv-010000"
+   ],
+   "screensGuessed": [
+    "ADM-LGV-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/salary_management/teacher_salary_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "M-TS.A10",
+   "name": "can-xac-nhan",
+   "title": "Cần xác nhận",
+   "screens": [
+    "adm-lgv-010000"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "management_requirement/salary_management/teacher_salary_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TS.A10.01",
+     "name": "anh-mau-excel-nguoi-dung-cung-cap-ngay-1",
+     "label": "Ảnh mẫu Excel người dùng cung cấp ngày 17/10/2026",
+     "spec": "Tiêu đề, khoảng thời gian, 12 cột, header xanh/chữ trắng và dòng tổng vàng. Số liệu/tài khoản mẫu không phải giá trị mặc định.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Ảnh mẫu Excel người dùng cung cấp ngày 17/10/2026"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A10.02",
+     "name": "pls-repository-api-lib-model-user-user-m",
+     "label": "pls_repository_api/lib/model/user/user_model.dart:20, :39",
+     "spec": "Có code, bankAccountNumber, bankAccountName, bankName; chưa có field chi nhánh riêng ở model đã đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "pls_repository_api/lib/model/user/user_model.dart:20",
+      ":39"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A10.03",
+     "name": "figma-page-4101-128323-frame-4101-138376",
+     "label": "Figma page 4101:128323, frame 4101:138376",
+     "spec": "Đúng Admin, mã ADM-LGV-010000; sáu thẻ tổng, bốn thẻ cá nhân, bốn tab, danh sách giáo viên/checkbox/Export.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "4101:128323",
+      "4101:138376"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A10.04",
+     "name": "figma-dropdown-4101-140492",
+     "label": "Figma dropdown 4101:140492",
+     "spec": "Danh sách thời gian và ba trạng thái chốt/thanh toán đọc trực tiếp trên canvas; đây là thiết kế, không chứng minh đã có backend.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "4101:140492"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A10.05",
+     "name": "pls-repository-api-lib-services-admin-ad",
+     "label": "pls_repository_api/lib/services/admin/admin_read.dart:538",
+     "spec": "Service gọi getLessonResultCompletedFilterDate; chưa có tổng tiền màn hình.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "pls_repository_api/lib/services/admin/admin_read.dart:538"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A10.06",
+     "name": "pls-repository-api-lib-repositories-fire",
+     "label": "pls_repository_api/lib/repositories/firebase/lesson_repository.dart:170",
+     "spec": "Query Completed và date_time hai biên, không owner filter; cần áp quy tắc ngày tính lương mới đã chốt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "pls_repository_api/lib/repositories/firebase/lesson_repository.dart:170"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A10.07",
+     "name": "pls-repository-api-lib-repositories-fire",
+     "label": "pls_repository_api/lib/repositories/firebase/class_kpi_result_repository.dart:209",
+     "spec": "Query time hai biên; không tự lọc owner/type/status hoặc cộng tiền.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "pls_repository_api/lib/repositories/firebase/class_kpi_result_repository.dart:209"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A10.08",
+     "name": "pls-repository-api-lib-model-course-less",
+     "label": "pls_repository_api/lib/model/course/lesson_result_model.dart:7",
+     "spec": "Có teacherId/classId/dateTime/status; chưa có snapshot lương ở model đã đọc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "pls_repository_api/lib/model/course/lesson_result_model.dart:7"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A10.09",
+     "name": "pls-repository-api-lib-model-user-user-c",
+     "label": "pls_repository_api/lib/model/user/user_class_model.dart:11",
+     "spec": "rate theo quan hệ userId/classId. Không lấy UserModel.salary làm đơn giá mọi lớp.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "pls_repository_api/lib/model/user/user_class_model.dart:11"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A10.10",
+     "name": "teacher-detail-teacher-history-salary-re",
+     "label": "Teacher detail / Teacher history & salary requirements",
+     "spec": "Ngày tính lương, buổi không lịch, giữ tiền lịch sử, confirmed KPI/OT; đơn giá theo giờ riêng từng lớp, duyệt đề xuất và chỉnh lương thủ công tách nhau.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Teacher detail / Teacher history & salary requirements"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "M-TS.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-lgv-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "M-TS.F01.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:248915",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Lương / Lương giáo viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.02",
+     "name": "filter-trang-thai",
+     "label": "Filter · Trạng thái",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Filter · Trạng thái",
+        "figmaId": "4101:139252",
+        "layer": "Filter · Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Trạng thái",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.03",
+     "name": "filter-thang-nay",
+     "label": "Filter · Tháng này",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Filter · Tháng này",
+        "figmaId": "4101:138862",
+        "layer": "Filter · Tháng này",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Tháng này",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Tháng này",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.04",
+     "name": "the-chi-so-so-lop",
+     "label": "Thẻ chỉ số · Số lớp",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Thẻ chỉ số · Số lớp",
+        "figmaId": "4101:138866",
+        "layer": "Thẻ chỉ số · Số lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số lớp",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "6/6",
+         "Có đơn vị": false,
+         "Biểu tượng": "1966:7617",
+         "Có phần thêm": false,
+         "Tiêu đề": "Số lớp",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.05",
+     "name": "the-chi-so-so-buoi-da-day",
+     "label": "Thẻ chỉ số · Số buổi đã dạy",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Thẻ chỉ số · Số buổi đã dạy",
+        "figmaId": "4101:138867",
+        "layer": "Thẻ chỉ số · Số buổi đã dạy",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Số buổi đã dạy",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "26.7%",
+         "Có đơn vị": false,
+         "Biểu tượng": "1053:2222",
+         "Có phần thêm": false,
+         "Tiêu đề": "Số buổi đã dạy",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.06",
+     "name": "the-chi-so-luong-buoi-day",
+     "label": "Thẻ chỉ số · Lương buổi dạy",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Thẻ chỉ số · Lương buổi dạy",
+        "figmaId": "4101:138868",
+        "layer": "Thẻ chỉ số · Lương buổi dạy",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lương buổi dạy",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "14.8%",
+         "Có đơn vị": false,
+         "Biểu tượng": "2925:24887",
+         "Có phần thêm": false,
+         "Tiêu đề": "Lương buổi dạy",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.07",
+     "name": "the-chi-so-luong-kpi",
+     "label": "Thẻ chỉ số · Lương KPI",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Thẻ chỉ số · Lương KPI",
+        "figmaId": "4101:138869",
+        "layer": "Thẻ chỉ số · Lương KPI",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lương KPI",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "13.5%",
+         "Có đơn vị": false,
+         "Biểu tượng": "3065:43736",
+         "Có phần thêm": false,
+         "Tiêu đề": "Lương KPI",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.08",
+     "name": "the-chi-so-luong-ot",
+     "label": "Thẻ chỉ số · Lương OT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Thẻ chỉ số · Lương OT",
+        "figmaId": "4101:138870",
+        "layer": "Thẻ chỉ số · Lương OT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Lương OT",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "0%",
+         "Có đơn vị": false,
+         "Biểu tượng": "1053:2224",
+         "Có phần thêm": false,
+         "Tiêu đề": "Lương OT",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.09",
+     "name": "the-chi-so-tong-luong",
+     "label": "Thẻ chỉ số · Tổng lương",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Thẻ chỉ số · Tổng lương",
+        "figmaId": "4101:139579",
+        "layer": "Thẻ chỉ số · Tổng lương",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Thẻ chỉ số · Tổng lương",
+        "component": "Thẻ chỉ số",
+        "variant": {
+         "Có biểu tượng": true,
+         "Đơn vị": "đơn vị",
+         "Số liệu": "6/6",
+         "Có đơn vị": false,
+         "Biểu tượng": "2925:35763",
+         "Có phần thêm": false,
+         "Tiêu đề": "Tổng lương",
+         "Loại": "Tuỳ chỉnh",
+         "Trạng thái": "Mặc định",
+         "Kết quả": "Thường",
+         "Kiểu": "Biểu đồ icon"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.10",
+     "name": "atom-side-tab",
+     "label": "Atom/Side Tab",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Atom/Side Tab",
+        "figmaId": "4101:138875",
+        "layer": "Atom/Side Tab",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Side Tab",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.11",
+     "name": "class-status",
+     "label": "CLass Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "CLass Status",
+        "figmaId": "4101:139368",
+        "layer": "CLass Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "CLass Status",
+        "component": "CLass Status",
+        "variant": {
+         "Property 1": "Đang học"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.12",
+     "name": "atom-chip",
+     "label": "Atom/Chip",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Atom/Chip",
+        "figmaId": "4101:139395",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "TỔNG DOANH THU"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.13",
+     "name": "export",
+     "label": "Export",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Export",
+        "figmaId": "4101:139610",
+        "layer": "Export",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Export",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Export (1)",
+         "Type": "Primary",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "M-TS.F01.14",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-lgv-010000": [
+       {
+        "term": "Avatar",
+        "figmaId": "4101:139628",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Nữ 1",
+         "Size": "32"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [],
+ "requirementFiles": [
+  {
+   "file": "management_requirement/salary_management/teacher_salary_requirements.md",
+   "prefix": "M-TS",
+   "title": "Lương giáo viên — Admin"
+  }
+ ]
+}

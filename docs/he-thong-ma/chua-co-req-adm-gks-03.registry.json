@@ -1,0 +1,954 @@
+{
+ "cluster": "chua-co-req-adm-gks-03",
+ "title": "ADM-GKS-03xx (chưa có requirement)",
+ "figmaPrefix": "ADM-GKS-03",
+ "requirements": [],
+ "screens": {
+  "ADM-GKS-030020": {
+   "id": "ADM-GKS-030020",
+   "name": "ket-qua-khao-sat",
+   "title": "Khảo sát / Giao khảo sát học viên / Kết quả khảo sát",
+   "kind": "man-chinh",
+   "parent": "ADM-GKS-030000",
+   "shownOn": "ADM-GKS-030020",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4885:41300",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat",
+   "link": "/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat",
+   "dark": "ADM-GKS-030020-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "ADM-GKS-03.F01"
+   ]
+  },
+  "ADM-GKS-030030": {
+   "id": "ADM-GKS-030030",
+   "name": "popup-ket-qua-ca-trung-tam",
+   "title": "Khảo sát / Giao khảo sát học viên / Popup kết quả cả trung tâm",
+   "kind": "popup",
+   "parent": "ADM-GKS-030020",
+   "shownOn": "ADM-GKS-030020",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4885:41573",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030030",
+   "dark": "ADM-GKS-030030-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-GKS-030040": {
+   "id": "ADM-GKS-030040",
+   "name": "popup-chon-cuoc-khao-sat",
+   "title": "Khảo sát / Giao khảo sát học viên / Popup chọn cuộc khảo sát",
+   "kind": "popup",
+   "parent": "ADM-GKS-030020",
+   "shownOn": "ADM-GKS-030020",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "4885:41625",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030040",
+   "dark": "ADM-GKS-030040-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-GKS-030045": {
+   "id": "ADM-GKS-030045",
+   "name": "dropdown-chon-loai-giao-khao-sat",
+   "title": "Khảo sát / Giao khảo sát học viên / Dropdown chọn loại giao khảo sát",
+   "kind": "dropdown",
+   "parent": "ADM-GKS-030020",
+   "shownOn": "ADM-GKS-030020",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5019:5801",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/khao-sat/giao-khao-sat-hoc-vien/dropdown-chon-loai-giao-khao-sat",
+   "link": "/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030045",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-GKS-030050": {
+   "id": "ADM-GKS-030050",
+   "name": "popup-giao-khao-sat-bat-buoc",
+   "title": "Khảo sát / Giao khảo sát học viên / Popup giao khảo sát · Bắt buộc",
+   "kind": "popup",
+   "parent": "ADM-GKS-030045",
+   "shownOn": "ADM-GKS-030020",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5019:5589",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030050",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "ADM-GKS-030060": {
+   "id": "ADM-GKS-030060",
+   "name": "popup-giao-khao-sat-tuy-chon",
+   "title": "Khảo sát / Giao khảo sát học viên / Popup giao khảo sát · Tuỳ chọn",
+   "kind": "popup",
+   "parent": "ADM-GKS-030045",
+   "shownOn": "ADM-GKS-030020",
+   "kindConfidence": "thap",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "5019:5728",
+   "inFigma": true,
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "link": "/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030060",
+   "dark": null,
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [
+  {
+   "id": "ADM-GKS-03.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "adm-gks-030020"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "ADM-GKS-03.F01.01",
+     "name": "sidebar-menu-admin",
+     "label": "Sidebar · MENU - ADMIN",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Sidebar · MENU - ADMIN",
+        "figmaId": "4915:243972",
+        "layer": "Sidebar · MENU - ADMIN",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - ADMIN",
+        "component": "MENU - ADMIN",
+        "variant": {
+         "Trang": "Khảo sát / Giao Khảo sát"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.02",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "4885:41436",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.03",
+     "name": "giao-khao-sat",
+     "label": "Giao khảo sát",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Giao khảo sát",
+        "figmaId": "4885:41444",
+        "layer": "Giao khảo sát",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Giao khảo sát",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Giao khảo sát",
+         "Type": "Primary",
+         "Size": "Small"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.04",
+     "name": "tab-giao-khao-sat",
+     "label": "Tab · Giao khảo sát",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Tab · Giao khảo sát",
+        "figmaId": "4885:41446",
+        "layer": "Tab · Giao khảo sát",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Giao khảo sát",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.05",
+     "name": "tab-ket-qua-khao-sat",
+     "label": "Tab · Kết quả khảo sát",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Tab · Kết quả khảo sát",
+        "figmaId": "4885:41447",
+        "layer": "Tab · Kết quả khảo sát",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Kết quả khảo sát",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.06",
+     "name": "cau-30",
+     "label": "Câu 30",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Câu 30",
+        "figmaId": "4885:41450",
+        "layer": "Câu 30",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Câu 30",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Câu 3",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.07",
+     "name": "trac-nghiem",
+     "label": "Trắc nghiệm",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Trắc nghiệm",
+        "figmaId": "4885:41453",
+        "layer": "Trắc nghiệm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trắc nghiệm",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Trắc nghiệm",
+         "Variant": "Info",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.08",
+     "name": "bat-buoc",
+     "label": "Bắt buộc",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Bắt buộc",
+        "figmaId": "4885:41454",
+        "layer": "Bắt buộc",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Bắt buộc",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Bắt buộc",
+         "Variant": "Danger",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.09",
+     "name": "avatar",
+     "label": "Avatar",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Avatar",
+        "figmaId": "4885:41461",
+        "layer": "Avatar",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Avatar",
+        "component": "Avatar",
+        "variant": {
+         "Count": "+2",
+         "Name": "Bùi Quang Huy",
+         "Size": "32"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.10",
+     "name": "cau-31",
+     "label": "Câu 31",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Câu 31",
+        "figmaId": "4885:41490",
+        "layer": "Câu 31",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Câu 31",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Câu 4",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.11",
+     "name": "cau-32",
+     "label": "Câu 32",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Câu 32",
+        "figmaId": "4885:41530",
+        "layer": "Câu 32",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Câu 32",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Câu 5",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.12",
+     "name": "doan-ngan",
+     "label": "Đoạn ngắn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Đoạn ngắn",
+        "figmaId": "4885:41533",
+        "layer": "Đoạn ngắn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Đoạn ngắn",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Đoạn ngắn",
+         "Variant": "Warning",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.13",
+     "name": "khong-bat-buoc",
+     "label": "Không bắt buộc",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Không bắt buộc",
+        "figmaId": "4885:41534",
+        "layer": "Không bắt buộc",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Không bắt buộc",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "Không bắt buộc",
+         "Variant": "Neutral",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.14",
+     "name": "tab-giao-vien",
+     "label": "Tab · Giáo viên",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Tab · Giáo viên",
+        "figmaId": "4885:41548",
+        "layer": "Tab · Giáo viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Giáo viên",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.15",
+     "name": "tab-lop",
+     "label": "Tab · Lớp",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Tab · Lớp",
+        "figmaId": "4885:41549",
+        "layer": "Tab · Lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Lớp",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.16",
+     "name": "tab-hoc-vien",
+     "label": "Tab · Học viên",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Tab · Học viên",
+        "figmaId": "4885:41550",
+        "layer": "Tab · Học viên",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Học viên",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.17",
+     "name": "stt",
+     "label": "STT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "STT",
+        "figmaId": "4885:41553",
+        "layer": "STT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "STT",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "1",
+         "Type": "Square",
+         "Size": "Medium",
+         "State": "Inactive"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.18",
+     "name": "loai-khao-sat",
+     "label": "Loại khảo sát",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Loại khảo sát",
+        "figmaId": "4885:42254",
+        "layer": "Loại khảo sát",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Loại khảo sát",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Tuỳ chọn",
+         "Size": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.19",
+     "name": "trang-thai-giao",
+     "label": "Trạng thái giao",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Trạng thái giao",
+        "figmaId": "4885:59186",
+        "layer": "Trạng thái giao",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trạng thái giao",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Thu hồi",
+         "Size": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.20",
+     "name": "so-luong",
+     "label": "Số lượng",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Số lượng",
+        "figmaId": "4885:41560",
+        "layer": "Số lượng",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Số lượng",
+        "component": "Atom/Badge",
+        "variant": {
+         "Label": "36 học viên được giao",
+         "Variant": "Orange",
+         "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.21",
+     "name": "chon-cuoc-khao-sat",
+     "label": "Chọn cuộc khảo sát",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Chọn cuộc khảo sát",
+        "figmaId": "4885:69124",
+        "layer": "Chọn cuộc khảo sát",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Chọn cuộc khảo sát",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Count Value": "1",
+         "Count": false,
+         "Chevron": true,
+         "Clear": false,
+         "Leading Icon": "2015:30465",
+         "Leading": false,
+         "Value": "Giá trị đã chọn",
+         "Placeholder": "Chọn cuộc khảo sát đã tạo",
+         "Size": "S",
+         "State": "Default",
+         "Content": "Add"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.22",
+     "name": "panel",
+     "label": "Panel",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Panel",
+        "figmaId": "5070:43515",
+        "layer": "Panel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Panel",
+        "component": "DD/Organism/Menu Panel",
+        "variant": {
+         "Footer": false,
+         "Search": false,
+         "Type": "Single"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "ADM-GKS-03.F01.23",
+     "name": "tooltip-danh-sach-nguoi-chon",
+     "label": "Tooltip · Danh sách người chọn",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-gks-030020": [
+       {
+        "term": "Tooltip · Danh sách người chọn",
+        "figmaId": "5138:163971",
+        "layer": "Tooltip · Danh sách người chọn",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tooltip · Danh sách người chọn",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Danh sách có avatar"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [],
+ "flows": [],
+ "testcases": [],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GKS-030020",
+   "text": "man-chinh “Khảo sát / Giao khảo sát học viên / Kết quả khảo sát” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GKS-030030",
+   "text": "popup “Khảo sát / Giao khảo sát học viên / Popup kết quả cả trung tâm” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-GKS-030030",
+   "text": "loại popup, màn cha ADM-GKS-030020 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GKS-030030",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GKS-030040",
+   "text": "popup “Khảo sát / Giao khảo sát học viên / Popup chọn cuộc khảo sát” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-GKS-030040",
+   "text": "loại popup, màn cha ADM-GKS-030020 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GKS-030040",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GKS-030045",
+   "text": "dropdown “Khảo sát / Giao khảo sát học viên / Dropdown chọn loại giao khảo sát” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-GKS-030045",
+   "text": "loại dropdown, màn cha ADM-GKS-030020 — tin cậy thap"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GKS-030050",
+   "text": "popup “Khảo sát / Giao khảo sát học viên / Popup giao khảo sát · Bắt buộc” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-GKS-030050",
+   "text": "loại popup, màn cha ADM-GKS-030045 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GKS-030050",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "ADM-GKS-030060",
+   "text": "popup “Khảo sát / Giao khảo sát học viên / Popup giao khảo sát · Tuỳ chọn” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "ADM-GKS-030060",
+   "text": "loại popup, màn cha ADM-GKS-030045 — tin cậy thap"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "ADM-GKS-030060",
+   "text": "không có prototype link nào đi vào frame"
+  }
+ ]
+}
