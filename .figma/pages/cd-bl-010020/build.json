@@ -1,0 +1,22 @@
+{
+  "route": "/frames/cd-bl-010020",
+  "pageFile": "components/figma/cd-bl-010020/index.tsx",
+  "docFile": "docs/pages/frames/cd-bl-010020.md",
+  "sections": [
+    {
+      "nodeId": "5371:42363",
+      "component": "PopupHeader48",
+      "file": "components/figma/shared/PopupHeader48.tsx"
+    },
+    {
+      "nodeId": "5371:42364",
+      "component": "Body18",
+      "file": "components/figma/shared/Body18.tsx"
+    },
+    {
+      "nodeId": "5371:42406",
+      "component": "PopupFooter27",
+      "file": "components/figma/shared/PopupFooter27.tsx"
+    }
+  ]
+}

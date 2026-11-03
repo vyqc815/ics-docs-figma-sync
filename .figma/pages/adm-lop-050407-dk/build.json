@@ -1,0 +1,17 @@
+{
+  "route": "/frames/adm-lop-050407-dk",
+  "pageFile": "components/figma/adm-lop-050407-dk/index.tsx",
+  "docFile": "docs/pages/frames/adm-lop-050407-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:119528",
+      "component": "PopupHeader",
+      "file": "components/figma/adm-lop-050407-dk/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "4056:119529",
+      "component": "PopupFooter",
+      "file": "components/figma/adm-lop-050407-dk/PopupFooter.tsx"
+    }
+  ]
+}

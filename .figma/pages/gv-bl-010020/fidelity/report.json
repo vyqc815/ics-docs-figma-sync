@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 600,
+    "height": 577,
+    "mismatched": 1258,
+    "percent": 0.363,
+    "shapePercent": 0.009,
+    "textPercent": 0.92,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "5031:375278",
+      "name": "Ở tab Kiến thức, từ 再见 đang ghi pinyin “zaì jiàn”. Kết quả mong đợi: “zàijiàn”. Kết quả thực tế: sai dấu thanh ở chữ 再.",
+      "pixels": 712,
+      "percent": 2.3
+    },
+    {
+      "id": "5031:375280",
+      "name": "Kết quả xử lý",
+      "pixels": 31,
+      "percent": 1.8
+    },
+    {
+      "id": "5019:367139",
+      "name": "Tệp đính kèm",
+      "pixels": 155,
+      "percent": 1.3
+    },
+    {
+      "id": "I5031:373247;2514:153342",
+      "name": "Description",
+      "pixels": 143,
+      "percent": 1.1
+    },
+    {
+      "id": "I5031:375269;1725:17090",
+      "name": "Label",
+      "pixels": 7,
+      "percent": 0.6
+    },
+    {
+      "id": "5031:375275",
+      "name": "Nguồn lỗi",
+      "pixels": 8,
+      "percent": 0.6
+    },
+    {
+      "id": "5031:375282",
+      "name": "Chưa có kết quả. CD phụ trách khoá sẽ cập nhật khi xử lý xong.",
+      "pixels": 73,
+      "percent": 0.6
+    },
+    {
+      "id": "I5031:373247;2514:153341",
+      "name": "Title",
+      "pixels": 41,
+      "percent": 0.3
+    },
+    {
+      "id": "5019:367143",
+      "name": "sai-pinyin-zaijian.png",
+      "pixels": 30,
+      "percent": 0.3
+    },
+    {
+      "id": "I5031:375264;1725:17108",
+      "name": "Label",
+      "pixels": 1,
+      "percent": 0.2
+    },
+    {
+      "id": "5019:367136",
+      "name": "Mô tả bug",
+      "pixels": 27,
+      "percent": 0.2
+    },
+    {
+      "id": "I5031:375262;1048:1253",
+      "name": "Badge",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5031:375276",
+      "name": "Giáo trình › BD105-I · Ôn tập HSK4 (Buổi 1) › Kiến thức",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5019:367144",
+      "name": "PNG · 248 KB",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5031:375283",
+      "name": "Bạn chỉ xem được trạng thái. Trạng thái do CD phụ trách khoá cập nhật.",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 40,
+      "y": 360,
+      "width": 32,
+      "height": 24,
+      "pixels": 27,
+      "node": {
+        "id": "5031:374382",
+        "name": "Định dạng · PNG",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 37,
+    "missing": [],
+    "withinThreshold": 37,
+    "buckets": {
+      "≤0.5px": 37,
+      "≤1px": 37,
+      "≤2px": 37,
+      "≤4px": 37,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5031:375276",
+        "name": "Giáo trình › BD105-I · Ôn tập HSK4 (Buổi 1) › Kiến thức",
+        "role": "text",
+        "delta": 0.23,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.23,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5031:375280",
+        "name": "Kết quả xử lý",
+        "role": "text",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5031:373247",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5031:373247;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5031:373247;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5031:373247;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5031:373247;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5031:373248",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:367127",
+        "name": "Nhãn",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5031:375262",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5031:375262;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5031:375264",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5031:375264;1725:17107",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5031:375264;1725:17108",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5031:375269",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5031:375269;1725:17089",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5031:375269;1725:17090",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5031:375274",
+        "name": "Khối · Nguồn",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5031:375275",
+        "name": "Nguồn lỗi",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:367135",
+        "name": "Khối · Mô tả bug",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:367136",
+        "name": "Mô tả bug",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5031:375277",
+        "name": "Overlay+Border",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5031:375278",
+        "name": "Ở tab Kiến thức, từ 再见 đang ghi pinyin “zaì jiàn”. Kết quả mong đợi: “zàijiàn”. Kết quả thực tế: sai dấu thanh ở chữ 再.",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:367138",
+        "name": "Khối · Tệp đính kèm",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:367139",
+        "name": "Tệp đính kèm",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.23,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/gv-bl-010020",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 680,
+    "height": 565,
+    "mismatched": 386,
+    "percent": 0.1,
+    "shapePercent": 0.003,
+    "textPercent": 0.283,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2711:65274;2514:153355",
+      "name": "Description",
+      "pixels": 158,
+      "percent": 1.1
+    },
+    {
+      "id": "2711:65291",
+      "name": "Xử lý yêu cầu & khiếu nại",
+      "pixels": 126,
+      "percent": 1.1
+    },
+    {
+      "id": "2711:65297",
+      "name": "Chăm sóc giữa khoá",
+      "pixels": 48,
+      "percent": 0.4
+    },
+    {
+      "id": "2711:65278",
+      "name": "Quy trình CSKH",
+      "pixels": 9,
+      "percent": 0.1
+    },
+    {
+      "id": "2711:65313",
+      "name": "Nghỉ học",
+      "pixels": 8,
+      "percent": 0.1
+    },
+    {
+      "id": "2711:65317",
+      "name": "Quy trình đánh giá",
+      "pixels": 14,
+      "percent": 0.1
+    },
+    {
+      "id": "I2711:65319;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I2711:65274;2514:153354",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "2711:65285",
+      "name": "Chăm sóc đầu khoá",
+      "pixels": 3,
+      "percent": 0
+    },
+    {
+      "id": "I2711:65286;811:10098",
+      "name": "Value",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I2711:65292;811:10098",
+      "name": "Value",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I2711:65298;811:10098",
+      "name": "Value",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "2711:65303",
+      "name": "Gia hạn & tái đăng ký",
+      "pixels": 5,
+      "percent": 0
+    },
+    {
+      "id": "I2711:65304;811:10098",
+      "name": "Value",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "2711:65309",
+      "name": "Chăm sóc sau khoá",
+      "pixels": 2,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 32,
+      "y": 88,
+      "width": 24,
+      "height": 24,
+      "pixels": 12,
+      "node": {
+        "id": "2711:65277",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 58,
+    "missing": [],
+    "withinThreshold": 58,
+    "buckets": {
+      "≤0.5px": 58,
+      "≤1px": 58,
+      "≤2px": 58,
+      "≤4px": 58,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2711:65274",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:65274;2514:153353",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:65274;2514:153354",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:65274;2514:153355",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65275",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65276",
+        "name": "Option · Quy trình CSKH",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65277",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65278",
+        "name": "Quy trình CSKH",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65279",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65280",
+        "name": "Danh mục · Quy trình CSKH",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65281",
+        "name": "Category Option · Chăm sóc đầu khoá",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65282",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65283",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65284",
+        "name": "Card",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65285",
+        "name": "Chăm sóc đầu khoá",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65286",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:65286;811:10098",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65287",
+        "name": "Category Option · Xử lý yêu cầu & khiếu nại",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65288",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65289",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65290",
+        "name": "Card",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65291",
+        "name": "Xử lý yêu cầu & khiếu nại",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65292",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:65292;811:10098",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:65293",
+        "name": "Category Option · Chăm sóc giữa khoá",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-lop-020811",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

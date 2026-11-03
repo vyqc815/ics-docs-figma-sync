@@ -1,0 +1,544 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 680,
+    "height": 1329,
+    "mismatched": 4252,
+    "percent": 0.47,
+    "shapePercent": 0.018,
+    "textPercent": 1.337,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "2711:54057",
+      "name": "Tại Đắc Nhân Trí Thức Truyền Từ Tâm",
+      "pixels": 776,
+      "percent": 6.5
+    },
+    {
+      "id": "2711:54146",
+      "name": "Tỷ lệ làm bài đạt tối thiểu 80%",
+      "pixels": 411,
+      "percent": 3.9
+    },
+    {
+      "id": "2711:54139",
+      "name": "Nhắc nhở và push động lực học viên làm BTVN mỗi buổi",
+      "pixels": 388,
+      "percent": 3.7
+    },
+    {
+      "id": "2711:54160",
+      "name": "3 buổi đầu của mỗi kì cho lớp làm BTVN tại lớp 10p cuối giờ",
+      "pixels": 335,
+      "percent": 3.2
+    },
+    {
+      "id": "2711:54181",
+      "name": "Truyền đạt mindset bài tập về nhà cho học viên",
+      "pixels": 334,
+      "percent": 3.2
+    },
+    {
+      "id": "2711:54027",
+      "name": "Không Khí Và Tương Tác Lớp Học",
+      "pixels": 361,
+      "percent": 3
+    },
+    {
+      "id": "2711:54153",
+      "name": "Sửa bài tập về nhà đầu buổi",
+      "pixels": 254,
+      "percent": 2.4
+    },
+    {
+      "id": "2711:54174",
+      "name": "Hoàn thành chấm điểm BTVN trước giờ dạy",
+      "pixels": 257,
+      "percent": 2.4
+    },
+    {
+      "id": "2711:54167",
+      "name": "Show điểm + review BTVN buổi học trước",
+      "pixels": 218,
+      "percent": 2.1
+    },
+    {
+      "id": "2711:54021",
+      "name": "Tỷ Lệ Đi Học",
+      "pixels": 242,
+      "percent": 2
+    },
+    {
+      "id": "I2711:54003;2514:153355",
+      "name": "Description",
+      "pixels": 150,
+      "percent": 1
+    },
+    {
+      "id": "2711:54061",
+      "name": "Tiêu Chuẩn Kiến Thức & Kỹ Năng",
+      "pixels": 116,
+      "percent": 0.9
+    },
+    {
+      "id": "2711:54039",
+      "name": "Đảm Bảo Chất Lượng Buổi Học",
+      "pixels": 91,
+      "percent": 0.8
+    },
+    {
+      "id": "2711:54008",
+      "name": "Tiêu Chuẩn Chung",
+      "pixels": 19,
+      "percent": 0.2
+    },
+    {
+      "id": "2711:54045",
+      "name": "Đảm Quy Trình & Quy Định Của Buổi Học",
+      "pixels": 18,
+      "percent": 0.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 64,
+      "y": 184,
+      "width": 24,
+      "height": 32,
+      "pixels": 21,
+      "node": {
+        "id": "2711:54101",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 64,
+      "y": 288,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "2711:54150",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 64,
+      "y": 336,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "2711:54157",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 64,
+      "y": 384,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "2711:54164",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 64,
+      "y": 432,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "2711:54171",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 64,
+      "y": 480,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "2711:54178",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 64,
+      "y": 248,
+      "width": 24,
+      "height": 16,
+      "pixels": 14,
+      "node": {
+        "id": "2711:54143",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 32,
+      "y": 88,
+      "width": 24,
+      "height": 24,
+      "pixels": 12,
+      "node": {
+        "id": "2711:54007",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 72,
+      "y": 232,
+      "width": 8,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "2711:54142",
+        "name": "Tiêu chí · Tỷ lệ làm bài đạt tối thiểu 80",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 136,
+    "missing": [],
+    "withinThreshold": 136,
+    "buckets": {
+      "≤0.5px": 136,
+      "≤1px": 136,
+      "≤2px": 136,
+      "≤4px": 136,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2711:54003",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:54003;2514:153353",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:54003;2514:153354",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:54003;2514:153355",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54004",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54005",
+        "name": "Option · Tiêu Chuẩn Chung",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54006",
+        "name": "Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54007",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54008",
+        "name": "Tiêu Chuẩn Chung",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54009",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54010",
+        "name": "Danh mục · Tiêu Chuẩn Chung",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54011",
+        "name": "Category Option · BTVN",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54012",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54013",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54014",
+        "name": "Card",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54015",
+        "name": "BTVN",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54016",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:54016;811:10098",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54099",
+        "name": "Tiêu chí · BTVN",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54100",
+        "name": "Tiêu chí · Nhắc nhở và push động lực học ",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54101",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54103",
+        "name": "Card",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54139",
+        "name": "Nhắc nhở và push động lực học viên làm BTVN mỗi buổi",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54140",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:54142",
+        "name": "Tiêu chí · Tỷ lệ làm bài đạt tối thiểu 80",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-lop-020612",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

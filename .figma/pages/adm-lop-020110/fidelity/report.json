@@ -1,0 +1,430 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 762,
+    "mismatched": 4340,
+    "percent": 1.187,
+    "shapePercent": 0.009,
+    "textPercent": 1.946,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "3348:62675",
+      "name": "Note",
+      "pixels": 1489,
+      "percent": 2.3
+    },
+    {
+      "id": "3348:62687",
+      "name": "Note",
+      "pixels": 1292,
+      "percent": 2.3
+    },
+    {
+      "id": "3348:62681",
+      "name": "Note",
+      "pixels": 1398,
+      "percent": 2.2
+    },
+    {
+      "id": "I3348:62670;2514:153348",
+      "name": "Title",
+      "pixels": 129,
+      "percent": 1.1
+    },
+    {
+      "id": "3348:62676",
+      "name": "Timestamp",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "3348:62682",
+      "name": "Timestamp",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "3348:62688",
+      "name": "Timestamp",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "3348:62693",
+      "name": "Note",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "3348:62694",
+      "name": "Timestamp",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "3348:62699",
+      "name": "Note",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 440,
+      "y": 600,
+      "width": 16,
+      "height": 16,
+      "pixels": 24,
+      "node": {
+        "id": "3348:62689",
+        "name": "Copy",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 32,
+      "y": 592,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "I3348:62685;1672:16204",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 39,
+    "missing": [],
+    "withinThreshold": 39,
+    "buckets": {
+      "≤0.5px": 39,
+      "≤1px": 39,
+      "≤2px": 39,
+      "≤4px": 39,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3348:62670",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3348:62670;2514:153347",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3348:62670;2711:67901",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3348:62670;2514:153348",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62671",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62672",
+        "name": "Note Item",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62673",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3348:62673;1672:16200",
+        "name": "Ellipse 75",
+        "role": "image",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62674",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62675",
+        "name": "Note",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62676",
+        "name": "Timestamp",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62677",
+        "name": "Copy",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62678",
+        "name": "Note Item",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62679",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3348:62679;1672:16200",
+        "name": "Ellipse 75",
+        "role": "image",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62680",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62681",
+        "name": "Note",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62682",
+        "name": "Timestamp",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62683",
+        "name": "Copy",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62684",
+        "name": "Note Item",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62685",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3348:62685;1672:16204",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62686",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62687",
+        "name": "Note",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3348:62688",
+        "name": "Timestamp",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-lop-020110",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

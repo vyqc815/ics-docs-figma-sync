@@ -1,0 +1,17 @@
+{
+  "route": "/quy-trinh/ca-truc-da-chon-them-nguoi",
+  "pageFile": "components/figma/sp-task-030001/index.tsx",
+  "docFile": "docs/pages/quy-trinh/ca-truc-da-chon-them-nguoi.md",
+  "sections": [
+    {
+      "nodeId": "6935:391843",
+      "component": "Body",
+      "file": "components/figma/sp-task-030001/Body.tsx"
+    },
+    {
+      "nodeId": "6935:391980",
+      "component": "Section2",
+      "file": "components/figma/sp-task-030001/Section2.tsx"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T02:57:14.983Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { PopupHeader13 } from "../shared/PopupHeader13";
+import { PopupHeader64 } from "../shared/PopupHeader64";
 import { Body } from "./Body";
 import { PopupFooter } from "./PopupFooter";
 
@@ -11,7 +11,7 @@ import { PopupFooter } from "./PopupFooter";
 export function CdKh060141Page() {
   return (
     <main className={`[--color-border-button:#cbd5e1] [--color-brand-orange:#e65100] [--color-neutral-white:#ffffff] [--color-text-primary:#334155] [--text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[560px] h-[229px] flex flex-col justify-start items-start gap-[24px] overflow-hidden bg-[color:var(--color-neutral-white,#ffffff)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="5672:75298">
-      <PopupHeader13 />
+      <PopupHeader64 />
       <Body />
       <PopupFooter />
     </main>

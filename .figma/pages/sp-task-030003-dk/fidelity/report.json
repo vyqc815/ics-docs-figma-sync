@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 268,
+    "height": 246,
+    "mismatched": 55,
+    "percent": 0.083,
+    "shapePercent": 0.008,
+    "textPercent": 0.266,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:147493;1505:20361",
+      "name": "CN",
+      "pixels": 24,
+      "percent": 5
+    },
+    {
+      "id": "I4056:147493;1505:20351",
+      "name": "T3",
+      "pixels": 8,
+      "percent": 2
+    },
+    {
+      "id": "I4056:147493;1505:20349",
+      "name": "T2",
+      "pixels": 7,
+      "percent": 1.8
+    },
+    {
+      "id": "I4056:147493;1505:20355",
+      "name": "T5",
+      "pixels": 6,
+      "percent": 1.5
+    },
+    {
+      "id": "I4056:147493;1505:20357",
+      "name": "T6",
+      "pixels": 4,
+      "percent": 1
+    },
+    {
+      "id": "I4056:147493;1505:20359",
+      "name": "T7",
+      "pixels": 1,
+      "percent": 0.3
+    },
+    {
+      "id": "I4056:147493;1505:20196",
+      "name": "Tháng 03 /2025",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:147493;1505:20353",
+      "name": "T4",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:147493;1505:20370",
+      "name": "24",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:147493;1505:20372",
+      "name": "25",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:147493;1505:20374",
+      "name": "26",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:147493;1505:20376",
+      "name": "27",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:147493;1505:20378",
+      "name": "28",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:147493;1505:20380",
+      "name": "1",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:147493;1505:20382",
+      "name": "2",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 98,
+    "missing": [],
+    "withinThreshold": 98,
+    "buckets": {
+      "≤0.5px": 98,
+      "≤1px": 98,
+      "≤2px": 98,
+      "≤4px": 98,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4056:147493;1505:20191",
+        "name": " POPUP Chọn lịch họp",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20192",
+        "name": "Month Year line",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20365",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20195",
+        "name": "Frame 427323724",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20196",
+        "name": "Tháng 03 /2025",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20362",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20200",
+        "name": " Day & Date",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20216",
+        "name": "Date line",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20217",
+        "name": "Date Number line 04",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20348",
+        "name": "Date-Time/Ngày (Normal-Selected)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20349",
+        "name": "T2",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20350",
+        "name": "Date-Time/Ngày (Normal-Selected)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20351",
+        "name": "T3",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20352",
+        "name": "Date-Time/Ngày (Normal-Selected)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20353",
+        "name": "T4",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20354",
+        "name": "Date-Time/Ngày (Normal-Selected)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20355",
+        "name": "T5",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20356",
+        "name": "Date-Time/Ngày (Normal-Selected)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20357",
+        "name": "T6",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20358",
+        "name": "Date-Time/Ngày (Normal-Selected)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20359",
+        "name": "T7",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20360",
+        "name": "Date-Time/Ngày (Normal-Selected)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20361",
+        "name": "CN",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20368",
+        "name": "Date Number line 5",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147493;1505:20369",
+        "name": "Date-Time/Ngày (Normal-Selected)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/sp-task-030003-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

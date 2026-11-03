@@ -1,0 +1,444 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 327,
+    "mismatched": 4036,
+    "percent": 2.571,
+    "shapePercent": 1.49,
+    "textPercent": 2.982,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5425:281227;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 290,
+      "percent": 13
+    },
+    {
+      "id": "I5425:281227;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 77,
+      "percent": 11.5
+    },
+    {
+      "id": "5425:281237",
+      "name": "Bài 1 · EINFÜHRUNG UND DAS ALPHABET",
+      "pixels": 514,
+      "percent": 8.1
+    },
+    {
+      "id": "5425:281238",
+      "name": "12/14 đã nộp",
+      "pixels": 88,
+      "percent": 6.8
+    },
+    {
+      "id": "5425:281247",
+      "name": "11/12 đã nộp",
+      "pixels": 87,
+      "percent": 6.7
+    },
+    {
+      "id": "5425:281243",
+      "name": "11/14 đã nộp",
+      "pixels": 75,
+      "percent": 5.8
+    },
+    {
+      "id": "5425:281242",
+      "name": "Bài 3 · MONOPHTHONG",
+      "pixels": 309,
+      "percent": 4.9
+    },
+    {
+      "id": "5425:281246",
+      "name": "Bài 4 · DIPHTHONG",
+      "pixels": 256,
+      "percent": 4
+    },
+    {
+      "id": "I5425:281224;2514:153348",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5425:281226",
+      "name": "Bài học bổ sung \"Ôn tập 1\" gồm nhiều bài nguồn. Chọn một bài để chấm:",
+      "pixels": 2,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 24,
+      "y": 152,
+      "width": 432,
+      "height": 40,
+      "pixels": 946,
+      "node": {
+        "id": "5425:281242",
+        "name": "Bài 3 · MONOPHTHONG",
+        "role": "text"
+      }
+    },
+    {
+      "x": 24,
+      "y": 200,
+      "width": 432,
+      "height": 8,
+      "pixels": 842,
+      "node": {
+        "id": "5425:281225",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 320,
+      "y": 280,
+      "width": 144,
+      "height": 8,
+      "pixels": 278,
+      "node": {
+        "id": "I5425:281227;2514:153363",
+        "name": "Atom/Button",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 320,
+      "y": 304,
+      "width": 144,
+      "height": 16,
+      "pixels": 272,
+      "node": {
+        "id": "I5425:281227;2514:153363",
+        "name": "Atom/Button",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 24,
+    "missing": [],
+    "withinThreshold": 24,
+    "buckets": {
+      "≤0.5px": 4,
+      "≤1px": 4,
+      "≤2px": 24,
+      "≤4px": 24,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5425:281225",
+        "name": "Body",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281226",
+        "name": "Bài học bổ sung \"Ôn tập 1\" gồm nhiều bài nguồn. Chọn một bài để chấm:",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281235",
+        "name": "Bài nguồn",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281236",
+        "name": "Radio Button",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281237",
+        "name": "Bài 1 · EINFÜHRUNG UND DAS ALPHABET",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281238",
+        "name": "12/14 đã nộp",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281239",
+        "name": "Bài nguồn",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281240",
+        "name": "Radio Button",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:281240;2015:30488",
+        "name": "Dot",
+        "role": "shape",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281242",
+        "name": "Bài 3 · MONOPHTHONG",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281243",
+        "name": "11/14 đã nộp",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281244",
+        "name": "Bài nguồn",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281245",
+        "name": "Radio Button",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281246",
+        "name": "Bài 4 · DIPHTHONG",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281247",
+        "name": "11/12 đã nộp",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281227",
+        "name": "Popup/Footer",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:281227;2514:153361",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:281227;2514:153361;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:281227;2514:153363",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:281227;2514:153363;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5425:281224",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:281224;2514:153347",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:281224;2711:67901",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5425:281224;2514:153348",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2,
+    "over": []
+  },
+  "failures": [
+    "1.490% of non-text pixels differ (limit 0.5%)."
+  ],
+  "url": "http://localhost:3000/frames/gv-lop-040310",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

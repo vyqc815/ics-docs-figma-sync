@@ -1,0 +1,450 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 329,
+    "mismatched": 1356,
+    "percent": 0.859,
+    "shapePercent": 0.505,
+    "textPercent": 0.967,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5751:83823;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 466,
+      "percent": 12.5
+    },
+    {
+      "id": "I5751:83823;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 77,
+      "percent": 11.5
+    },
+    {
+      "id": "5751:83848",
+      "name": "Sau khi hoàn thành, điểm và nhận xét gửi tới học viên. Bạn vẫn có thể sửa điểm sau đó; học viên sẽ nhận thông báo cập nhật.",
+      "pixels": 15,
+      "percent": 0.1
+    },
+    {
+      "id": "I5751:83820;2514:153348",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5751:83822",
+      "name": "MINITEST 5 – PERSÖNLICHE DATEN · 3/5 học viên đã nộp",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5751:83833",
+      "name": "App chấm (4 câu)",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5751:83835",
+      "name": "Đã khoá",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5751:83837",
+      "name": "GV chấm (3 câu + 3 câu con)",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5751:83839",
+      "name": "Đã chấm đủ",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5751:83841",
+      "name": "Điểm GV sửa so với AI gợi ý",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5751:83843",
+      "name": "2 / 9 lượt",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5751:83845",
+      "name": "Điểm trung bình lớp",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5751:83847",
+      "name": "7,8 / 10",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 256,
+      "y": 280,
+      "width": 208,
+      "height": 8,
+      "pixels": 402,
+      "node": {
+        "id": "I5751:83823;2514:153363",
+        "name": "Atom/Button",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 256,
+      "y": 312,
+      "width": 208,
+      "height": 8,
+      "pixels": 396,
+      "node": {
+        "id": "I5751:83823;2514:153363",
+        "name": "Atom/Button",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 25,
+    "missing": [],
+    "withinThreshold": 25,
+    "buckets": {
+      "≤0.5px": 17,
+      "≤1px": 18,
+      "≤2px": 25,
+      "≤4px": 25,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5751:83821",
+        "name": "Body",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83848",
+        "name": "Sau khi hoàn thành, điểm và nhận xét gửi tới học viên. Bạn vẫn có thể sửa điểm sau đó; học viên sẽ nhận thông báo cập nhật.",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83823",
+        "name": "Popup/Footer",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5751:83823;2514:153361",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5751:83823;2514:153361;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5751:83823;2514:153363",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5751:83823;2514:153363;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83841",
+        "name": "Điểm GV sửa so với AI gợi ý",
+        "role": "text",
+        "delta": 0.77,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.77,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83843",
+        "name": "2 / 9 lượt",
+        "role": "text",
+        "delta": 0.31,
+        "dx": -0.31,
+        "dy": 0,
+        "dw": 0.31,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83845",
+        "name": "Điểm trung bình lớp",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83820",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5751:83820;2514:153347",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5751:83820;2711:67901",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5751:83820;2514:153348",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83822",
+        "name": "MINITEST 5 – PERSÖNLICHE DATEN · 3/5 học viên đã nộp",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83831",
+        "name": "Tóm tắt",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83832",
+        "name": "Dòng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83833",
+        "name": "App chấm (4 câu)",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83835",
+        "name": "Đã khoá",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83836",
+        "name": "Dòng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83837",
+        "name": "GV chấm (3 câu + 3 câu con)",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83839",
+        "name": "Đã chấm đủ",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83840",
+        "name": "Dòng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83844",
+        "name": "Dòng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:83847",
+        "name": "7,8 / 10",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2,
+    "over": []
+  },
+  "failures": [
+    "0.505% of non-text pixels differ (limit 0.5%)."
+  ],
+  "url": "http://localhost:3000/frames/gv-lop-040340",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

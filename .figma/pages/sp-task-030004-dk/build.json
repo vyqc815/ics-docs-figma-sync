@@ -1,0 +1,17 @@
+{
+  "route": "/frames/sp-task-030004-dk",
+  "pageFile": "components/figma/sp-task-030004-dk/index.tsx",
+  "docFile": "docs/pages/frames/sp-task-030004-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:147496",
+      "component": "TriggerCa",
+      "file": "components/figma/sp-task-030004-dk/TriggerCa.tsx"
+    },
+    {
+      "nodeId": "4056:147497",
+      "component": "PanelCa",
+      "file": "components/figma/sp-task-030004-dk/PanelCa.tsx"
+    }
+  ]
+}

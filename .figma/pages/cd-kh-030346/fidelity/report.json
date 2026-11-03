@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 720,
+    "height": 608,
+    "mismatched": 2572,
+    "percent": 0.588,
+    "shapePercent": 0,
+    "textPercent": 1.877,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5609:31823;2808:42324",
+      "name": "Tìm nội dung...",
+      "pixels": 1802,
+      "percent": 6.2
+    },
+    {
+      "id": "I5609:31820;1048:1288",
+      "name": "Tab",
+      "pixels": 105,
+      "percent": 2.6
+    },
+    {
+      "id": "5609:31846",
+      "name": "Không tạo được bảng Generate. Dữ liệu bạn đã nhập vẫn được giữ, hãy thử lại.",
+      "pixels": 275,
+      "percent": 2.1
+    },
+    {
+      "id": "I5609:31819;1048:1286",
+      "name": "Tab",
+      "pixels": 22,
+      "percent": 1.1
+    },
+    {
+      "id": "I5609:31822;2015:30530",
+      "name": "Label",
+      "pixels": 28,
+      "percent": 0.9
+    },
+    {
+      "id": "5609:31834",
+      "name": "Sau khi Generate sẽ hiện bảng 30 dòng. Mỗi dòng gồm prompt, kiến thức hoặc kỹ năng và loại câu; bạn sửa từng dòng trước khi tạo câu hỏi.",
+      "pixels": 203,
+      "percent": 0.8
+    },
+    {
+      "id": "I5609:31816;2514:153355",
+      "name": "Description",
+      "pixels": 110,
+      "percent": 0.7
+    },
+    {
+      "id": "I5609:31830;2015:30530",
+      "name": "Label",
+      "pixels": 14,
+      "percent": 0.7
+    },
+    {
+      "id": "I5609:31826;2015:30530",
+      "name": "Label",
+      "pixels": 5,
+      "percent": 0.5
+    },
+    {
+      "id": "I5609:31835;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I5609:31816;2514:153354",
+      "name": "Title",
+      "pixels": 6,
+      "percent": 0
+    },
+    {
+      "id": "I5609:31822;2015:30531",
+      "name": "Required",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5609:31826;2015:30531",
+      "name": "Required",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5609:31827;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5609:31828",
+      "name": "Không giới hạn số câu mỗi lần",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 44,
+    "missing": [],
+    "withinThreshold": 44,
+    "buckets": {
+      "≤0.5px": 40,
+      "≤1px": 44,
+      "≤2px": 44,
+      "≤4px": 44,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5609:31832",
+        "name": "Chọn một hoặc nhiều dạng: Trắc nghiệm, Sắp xếp, Nối từ, Đọc, Viết, Hình ảnh…",
+        "role": "text",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31818",
+        "name": "Chế độ Generate",
+        "role": "container",
+        "delta": 0.61,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.61,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31820",
+        "name": "Chế độ · Chọn kiến thức & kỹ năng",
+        "role": "instance",
+        "delta": 0.61,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.61,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:31820;1048:1288",
+        "name": "Tab",
+        "role": "text",
+        "delta": 0.61,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.61,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31816",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:31816;2514:153353",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:31816;2514:153354",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:31816;2514:153355",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31817",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31843",
+        "name": "Báo lỗi",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31844",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31846",
+        "name": "Không tạo được bảng Generate. Dữ liệu bạn đã nhập vẫn được giữ, hãy thử lại.",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31819",
+        "name": "Chế độ · Nhập prompt",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:31819;1048:1286",
+        "name": "Tab",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31821",
+        "name": "Field · Prompt theo yêu cầu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31822",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:31822;2015:30530",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:31822;2015:30531",
+        "name": "Required",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31823",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:31823;2808:42323",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:31823;2808:42324",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31824",
+        "name": "Hàng · Số câu & Dạng câu hỏi",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31825",
+        "name": "Field · Số câu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:31826",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:31826;2015:30530",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.67,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/cd-kh-030346",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

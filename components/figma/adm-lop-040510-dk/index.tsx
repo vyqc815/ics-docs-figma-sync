@@ -3,17 +3,17 @@
  * Exported: 2026-11-03T01:19:05.579Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { PopupHeader7 } from "../shared/PopupHeader7";
+import { PopupHeader31 } from "../shared/PopupHeader31";
 import { Body } from "./Body";
-import { PopupFooter2 } from "../shared/PopupFooter2";
+import { PopupFooter10 } from "../shared/PopupFooter10";
 
 /** Figma frame "ADM-LOP-040510-DK — Lớp học / Cài đặt / Lịch dạy / Popup thêm lịch dạy cố định" — 800×568px. */
 export function AdmLop040510DkPage() {
   return (
     <main className={`[--bg-brand-tint:#102218] [--bg-surface:#18181a] [--border-brand:#1e4d31] [--border-default:#27272a] [--border-strong:#3f3f46] [--brand-primary:#16a34a] [--color-neutral-white:#ffffff] [--color-semantic-error-strong:#ff0000] [--text-primary:#ededef] [--text-secondary:#a1a1aa] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[800px] h-[568px] flex flex-col justify-start items-start gap-[12px] bg-[color:var(--bg-surface,#18181a)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="4056:117322">
-      <PopupHeader7 />
+      <PopupHeader31 />
       <Body />
-      <PopupFooter2 />
+      <PopupFooter10 />
     </main>
   );
 }

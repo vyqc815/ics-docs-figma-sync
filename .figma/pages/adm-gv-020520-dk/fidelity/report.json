@@ -1,0 +1,411 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 393,
+    "mismatched": 256,
+    "percent": 0.136,
+    "shapePercent": 0,
+    "textPercent": 0.472,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:126946;2015:30536",
+      "name": "Text",
+      "pixels": 151,
+      "percent": 1.9
+    },
+    {
+      "id": "I4056:126936;2514:153342",
+      "name": "Description",
+      "pixels": 84,
+      "percent": 0.8
+    },
+    {
+      "id": "I4056:126950;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 2,
+      "percent": 0.3
+    },
+    {
+      "id": "I4056:126942;2148:20906",
+      "name": "Chọn",
+      "pixels": 9,
+      "percent": 0.2
+    },
+    {
+      "id": "I4056:126945;2148:20906",
+      "name": "Chọn",
+      "pixels": 9,
+      "percent": 0.2
+    },
+    {
+      "id": "I4056:126944;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I4056:126936;2514:153341",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:126941;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:126948;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:126949;2808:42324",
+      "name": "Tìm nội dung...",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:126950;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 36,
+    "missing": [],
+    "withinThreshold": 36,
+    "buckets": {
+      "≤0.5px": 36,
+      "≤1px": 36,
+      "≤2px": 36,
+      "≤4px": 36,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:126944",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126944;2808:48145",
+        "name": "Nhãn trường",
+        "role": "text",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126936",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126936;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126936;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126936;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126936;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126937",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126938",
+        "name": "Khung giờ",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126939",
+        "name": "Chọn giờ",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126940",
+        "name": "Field · Giờ bắt đầu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126941",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126941;2808:48144",
+        "name": "Liner Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126941;2808:48145",
+        "name": "Nhãn trường",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126942",
+        "name": "Select · Giờ bắt đầu",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126942;2148:20906",
+        "name": "Chọn",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126942;2148:21002",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126943",
+        "name": "Field · Giờ kết thúc",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126944;2808:48144",
+        "name": "Liner Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126945",
+        "name": "Select · Giờ kết thúc",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126945;2148:20906",
+        "name": "Chọn",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126945;2148:21002",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126946",
+        "name": "Atom/Helper",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:126946;2015:30536",
+        "name": "Text",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:126947",
+        "name": "Ghi chú",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.09,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-gv-020520-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

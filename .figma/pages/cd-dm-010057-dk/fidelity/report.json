@@ -1,0 +1,423 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 550,
+    "height": 588,
+    "mismatched": 901,
+    "percent": 0.279,
+    "shapePercent": 0,
+    "textPercent": 2.427,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:145811",
+      "name": "Hướng dẫn giảng dạy",
+      "pixels": 213,
+      "percent": 6.3
+    },
+    {
+      "id": "4056:145823",
+      "name": "“Khoá Học Tổng Hợp”",
+      "pixels": 154,
+      "percent": 4.6
+    },
+    {
+      "id": "4056:145819",
+      "name": "Áp dụng thành công!",
+      "pixels": 146,
+      "percent": 4.4
+    },
+    {
+      "id": "4056:145813",
+      "name": "Đã áp dụng: Hướng dẫn giảng dạy B1",
+      "pixels": 98,
+      "percent": 2
+    },
+    {
+      "id": "4056:145793",
+      "name": "Đã áp dụng 2/5 nội dung",
+      "pixels": 60,
+      "percent": 1.9
+    },
+    {
+      "id": "4056:145820",
+      "name": "Đã lưu và áp dụng cấu hình cho danh mục",
+      "pixels": 97,
+      "percent": 1.8
+    },
+    {
+      "id": "4056:145803",
+      "name": "Đã áp dụng: Tiêu chuẩn giáo trình B1",
+      "pixels": 81,
+      "percent": 1.7
+    },
+    {
+      "id": "4056:145801",
+      "name": "Tiêu chuẩn giáo trình",
+      "pixels": 38,
+      "percent": 1.2
+    },
+    {
+      "id": "4056:145791",
+      "name": "Mindset",
+      "pixels": 14,
+      "percent": 1.1
+    },
+    {
+      "id": "I4056:145794;1048:1247",
+      "name": "Badge",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:145804;1048:1247",
+      "name": "Badge",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:145814;1048:1247",
+      "name": "Badge",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:145832;1048:1230",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 47,
+    "missing": [],
+    "withinThreshold": 47,
+    "buckets": {
+      "≤0.5px": 40,
+      "≤1px": 47,
+      "≤2px": 47,
+      "≤4px": 47,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:145817",
+        "name": "Heading 2 - Heading Titles:margin",
+        "role": "container",
+        "delta": 0.86,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.86,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145818",
+        "name": "Heading 2 - Heading Titles",
+        "role": "container",
+        "delta": 0.86,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.86,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145819",
+        "name": "Áp dụng thành công!",
+        "role": "text",
+        "delta": 0.86,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.86,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145821",
+        "name": "Margin",
+        "role": "container",
+        "delta": 0.63,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.63,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145822",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.63,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.63,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145823",
+        "name": "“Khoá Học Tổng Hợp”",
+        "role": "text",
+        "delta": 0.63,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.63,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145811",
+        "name": "Hướng dẫn giảng dạy",
+        "role": "text",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145825",
+        "name": "Big Green Success Checkmark Icon:margin",
+        "role": "icon",
+        "delta": 0.03,
+        "dx": -0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145815",
+        "name": "SuccessHeaderAndCelebration:margin",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145816",
+        "name": "SuccessHeaderAndCelebration",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145820",
+        "name": "Đã lưu và áp dụng cấu hình cho danh mục",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145824",
+        "name": "Floating Colorful Confetti Elements",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145783",
+        "name": "3 Summary Configuration Cards:margin",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145784",
+        "name": "3 Summary Configuration Cards",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145785",
+        "name": "Card 1: Mindset",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145786",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145787",
+        "name": "Pink Icon Container",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145789",
+        "name": "Text info",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145790",
+        "name": "Heading 3",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145791",
+        "name": "Mindset",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145792",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145793",
+        "name": "Đã áp dụng 2/5 nội dung",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145794",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145794;1048:1247",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145795",
+        "name": "Card 2: Tiêu chuẩn giáo trình",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.86,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/cd-dm-010057-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

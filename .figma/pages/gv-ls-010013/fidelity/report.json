@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 600,
+    "height": 730,
+    "mismatched": 802,
+    "percent": 0.183,
+    "shapePercent": 0,
+    "textPercent": 0.574,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4895:105860;1048:1249",
+      "name": "Badge",
+      "pixels": 22,
+      "percent": 2.6
+    },
+    {
+      "id": "4895:105869",
+      "name": "Mức đề xuất vượt khung lương hiện tại. Bạn có thể đề xuất lại sau 6 tháng.",
+      "pixels": 166,
+      "percent": 1.7
+    },
+    {
+      "id": "I4895:105829;2514:153341",
+      "name": "Title",
+      "pixels": 239,
+      "percent": 1.6
+    },
+    {
+      "id": "I4895:105829;2514:153342",
+      "name": "Description",
+      "pixels": 182,
+      "percent": 1.5
+    },
+    {
+      "id": "4895:105857",
+      "name": "Duyệt mức 240.000 đ, áp dụng từ kỳ lương tháng 04/2026.",
+      "pixels": 146,
+      "percent": 1.5
+    },
+    {
+      "id": "I4895:105848;1048:1247",
+      "name": "Badge",
+      "pixels": 7,
+      "percent": 0.6
+    },
+    {
+      "id": "I4899:106684;1048:1255",
+      "name": "Badge",
+      "pixels": 3,
+      "percent": 0.4
+    },
+    {
+      "id": "I4895:105837;1048:1251",
+      "name": "Badge",
+      "pixels": 4,
+      "percent": 0.3
+    },
+    {
+      "id": "4895:105841",
+      "name": "240.000 đ → 280.000 đ (+16,7%)",
+      "pixels": 8,
+      "percent": 0.2
+    },
+    {
+      "id": "4895:105853",
+      "name": "220.000 đ → 240.000 đ (+9,1%)",
+      "pixels": 7,
+      "percent": 0.2
+    },
+    {
+      "id": "4895:105865",
+      "name": "220.000 đ → 260.000 đ (+18,2%)",
+      "pixels": 9,
+      "percent": 0.2
+    },
+    {
+      "id": "4895:105863",
+      "name": "Gửi ngày 05.09.2025",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "4895:105839",
+      "name": "Gửi ngày 12.10.2026",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4895:105842",
+      "name": "Lý do: Có bằng cấp / chứng chỉ cao hơn",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4895:105844",
+      "name": "Lý do của admin",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 53,
+    "missing": [],
+    "withinThreshold": 53,
+    "buckets": {
+      "≤0.5px": 49,
+      "≤1px": 53,
+      "≤2px": 53,
+      "≤4px": 53,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4895:105860",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.84,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4895:105860;1048:1249",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.84,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105863",
+        "name": "Gửi ngày 05.09.2025",
+        "role": "text",
+        "delta": 0.84,
+        "dx": 0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105864",
+        "name": "Spacer",
+        "role": "container",
+        "delta": 0.84,
+        "dx": 0.84,
+        "dy": 0,
+        "dw": -0.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105829",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4895:105829;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4895:105829;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4895:105829;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4895:105829;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105834",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105835",
+        "name": "Đề xuất · 12.10.2026",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105836",
+        "name": "Hàng trên",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105837",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4895:105837;1048:1251",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105839",
+        "name": "Gửi ngày 12.10.2026",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105840",
+        "name": "Spacer",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105841",
+        "name": "240.000 đ → 280.000 đ (+16,7%)",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105842",
+        "name": "Lý do: Có bằng cấp / chứng chỉ cao hơn",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105843",
+        "name": "Phản hồi của admin",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105844",
+        "name": "Lý do của admin",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105845",
+        "name": "Quản lý đang xem xét đề xuất của bạn.",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105846",
+        "name": "Đề xuất · 12.03.2026",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105847",
+        "name": "Hàng trên",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4895:105848",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4895:105848;1048:1247",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.84,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/gv-ls-010013",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

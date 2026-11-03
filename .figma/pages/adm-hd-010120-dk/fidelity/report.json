@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 389,
+    "mismatched": 1813,
+    "percent": 0.476,
+    "shapePercent": 0,
+    "textPercent": 1.973,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:131875",
+      "name": "Tiếng Trung Sơ Cấp I - HSK2 (v2026) NEW",
+      "pixels": 323,
+      "percent": 6.2
+    },
+    {
+      "id": "4056:131889",
+      "name": "Nhập Môn Tiếng Trung (NEW - v2026+)",
+      "pixels": 286,
+      "percent": 5.8
+    },
+    {
+      "id": "I4056:131858;2514:153341",
+      "name": "Title",
+      "pixels": 1027,
+      "percent": 3.9
+    },
+    {
+      "id": "I4056:131873;2200:30223",
+      "name": "ID",
+      "pixels": 17,
+      "percent": 1.8
+    },
+    {
+      "id": "I4056:131887;2200:30223",
+      "name": "ID",
+      "pixels": 16,
+      "percent": 1.3
+    },
+    {
+      "id": "I4056:131894;2245:108222",
+      "name": "C",
+      "pixels": 7,
+      "percent": 1.1
+    },
+    {
+      "id": "I4056:131880;2245:108231",
+      "name": "F",
+      "pixels": 6,
+      "percent": 0.9
+    },
+    {
+      "id": "4056:131884",
+      "name": "Đạt KPI",
+      "pixels": 5,
+      "percent": 0.9
+    },
+    {
+      "id": "4056:131898",
+      "name": "Đạt KPI",
+      "pixels": 5,
+      "percent": 0.9
+    },
+    {
+      "id": "I4056:131858;2514:153342",
+      "name": "Description",
+      "pixels": 120,
+      "percent": 0.6
+    },
+    {
+      "id": "I4056:131861;2177:28928",
+      "name": "Chi tiết NV",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:131862;2177:28936",
+      "name": "Nhiệm vụ con",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:131863;2177:28928",
+      "name": "Chi tiết NV",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:131865;3004:47242",
+      "name": "Tiêu đề",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:131865;3004:47244",
+      "name": "Số liệu",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 93,
+    "missing": [],
+    "withinThreshold": 93,
+    "buckets": {
+      "≤0.5px": 93,
+      "≤1px": 93,
+      "≤2px": 93,
+      "≤4px": 93,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:131862",
+        "name": "Tab · Lịch sử lớp",
+        "role": "instance",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131862;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131862;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:131863",
+        "name": "Tab · Ghi chú",
+        "role": "instance",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131863;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131863;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:131858",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131858;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131858;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131858;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131858;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:131859",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:131860",
+        "name": "Tabs",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:131861",
+        "name": "Tab · Lịch sử hoá đơn",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131861;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131861;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131862;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:131864",
+        "name": "Thống kê",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:131865",
+        "name": "Chỉ số · Số lớp",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131865;3004:47241",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131865;3004:47242",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131865;3004:47243",
+        "name": "Số liệu + đơn vị",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131865;3004:47244",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:131866",
+        "name": "Chỉ số · Lên kỳ",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:131866;3004:47241",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.34,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-hd-010120-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

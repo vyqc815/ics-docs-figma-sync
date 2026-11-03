@@ -1,0 +1,12 @@
+{
+  "route": "/frames/adm-gv-010050-dk",
+  "pageFile": "components/figma/adm-gv-010050-dk/index.tsx",
+  "docFile": "docs/pages/frames/adm-gv-010050-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:124473",
+      "component": "TableScrollContainer",
+      "file": "components/figma/adm-gv-010050-dk/TableScrollContainer.tsx"
+    }
+  ]
+}

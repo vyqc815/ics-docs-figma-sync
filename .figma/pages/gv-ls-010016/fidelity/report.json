@@ -1,0 +1,417 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 319,
+    "mismatched": 488,
+    "percent": 0.319,
+    "shapePercent": 0,
+    "textPercent": 0.747,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4899:106647;2514:153342",
+      "name": "Description",
+      "pixels": 285,
+      "percent": 2.9
+    },
+    {
+      "id": "I4899:106647;2514:153341",
+      "name": "Title",
+      "pixels": 168,
+      "percent": 1.4
+    },
+    {
+      "id": "4899:106656",
+      "name": "240.000 đ → 280.000 đ (+16,7%)",
+      "pixels": 19,
+      "percent": 0.3
+    },
+    {
+      "id": "I4899:106671;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 6,
+      "percent": 0.3
+    },
+    {
+      "id": "4899:106659",
+      "name": "12.10.2026",
+      "pixels": 8,
+      "percent": 0.1
+    },
+    {
+      "id": "I4899:106671;2514:153363;1048:1234",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "4899:106655",
+      "name": "Mức đề xuất",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4899:106658",
+      "name": "Ngày gửi",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4899:106661",
+      "name": "Trạng thái",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4899:106662",
+      "name": "Mới",
+      "pixels": 1,
+      "percent": 0
+    },
+    {
+      "id": "I4899:106663;2808:43023",
+      "name": "Kỳ học này hiện có 3 nội dung tổng ôn đã sử dụng.",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4899:106663;2808:43025",
+      "name": "Sau khi bỏ, các nội dung liên quan sẽ không còn được áp dụng.",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 28,
+    "missing": [],
+    "withinThreshold": 28,
+    "buckets": {
+      "≤0.5px": 28,
+      "≤1px": 28,
+      "≤2px": 28,
+      "≤4px": 28,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4899:106647",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106647;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106647;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106647;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106647;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106652",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106653",
+        "name": "Tóm tắt",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106654",
+        "name": "Mức đề xuất",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106655",
+        "name": "Mức đề xuất",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106656",
+        "name": "240.000 đ → 280.000 đ (+16,7%)",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106657",
+        "name": "Ngày gửi",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106658",
+        "name": "Ngày gửi",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106659",
+        "name": "12.10.2026",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106660",
+        "name": "Trạng thái",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106661",
+        "name": "Trạng thái",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106662",
+        "name": "Mới",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106663",
+        "name": "Atom/Alert",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106663;3058:111677",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106663;2808:43021",
+        "name": "Alert Text",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106663;2808:43022",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106663;2808:43023",
+        "name": "Kỳ học này hiện có 3 nội dung tổng ôn đã sử dụng.",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106663;2808:43024",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106663;2808:43025",
+        "name": "Sau khi bỏ, các nội dung liên quan sẽ không còn được áp dụng.",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106671",
+        "name": "Popup/Footer",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106671;2514:153361",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/gv-ls-010016",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

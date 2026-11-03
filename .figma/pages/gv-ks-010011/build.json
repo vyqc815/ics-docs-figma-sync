@@ -1,0 +1,27 @@
+{
+  "route": "/frames/gv-ks-010011",
+  "pageFile": "components/figma/gv-ks-010011/index.tsx",
+  "docFile": "docs/pages/frames/gv-ks-010011.md",
+  "sections": [
+    {
+      "nodeId": "4686:44211",
+      "component": "MinhHoa",
+      "file": "components/figma/gv-ks-010011/MinhHoa.tsx"
+    },
+    {
+      "nodeId": "4686:44212",
+      "component": "GuiKhaoSat",
+      "file": "components/figma/gv-ks-010011/GuiKhaoSat.tsx"
+    },
+    {
+      "nodeId": "4686:44213",
+      "component": "BanDaTraLoi3132CauSauKhiGuiC",
+      "file": "components/figma/gv-ks-010011/BanDaTraLoi3132CauSauKhiGuiC.tsx"
+    },
+    {
+      "nodeId": "4686:44214",
+      "component": "PopupFooter",
+      "file": "components/figma/gv-ks-010011/PopupFooter.tsx"
+    }
+  ]
+}

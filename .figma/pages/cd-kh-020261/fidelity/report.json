@@ -1,0 +1,201 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 192,
+    "mismatched": 151,
+    "percent": 0.164,
+    "shapePercent": 0,
+    "textPercent": 0.438,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6518:356229;2514:153366;1048:1232",
+      "name": "Button",
+      "pixels": 25,
+      "percent": 3.7
+    },
+    {
+      "id": "I6518:356229;2514:153368;1048:1234",
+      "name": "Button",
+      "pixels": 68,
+      "percent": 3.5
+    },
+    {
+      "id": "6518:356228",
+      "name": "Bài 6 “声母 1” và 2 nội dung đã tick (Phát âm, Nghe hiểu) sẽ bị xoá. Số buổi của 2 cột này giảm tương ứng.",
+      "pixels": 58,
+      "percent": 0.3
+    },
+    {
+      "id": "I6518:356226;2514:153348",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 11,
+    "missing": [],
+    "withinThreshold": 11,
+    "buckets": {
+      "≤0.5px": 4,
+      "≤1px": 11,
+      "≤2px": 11,
+      "≤4px": 11,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6518:356227",
+        "name": "Body",
+        "role": "container",
+        "delta": 1,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:356228",
+        "name": "Bài 6 “声母 1” và 2 nội dung đã tick (Phát âm, Nghe hiểu) sẽ bị xoá. Số buổi của 2 cột này giảm tương ứng.",
+        "role": "text",
+        "delta": 1,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:356229",
+        "name": "Popup/Footer",
+        "role": "instance",
+        "delta": 1,
+        "dx": 0,
+        "dy": 1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:356229;2514:153366",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 1,
+        "dx": 0,
+        "dy": 1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:356229;2514:153366;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 1,
+        "dx": 0,
+        "dy": 1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:356229;2514:153368",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 1,
+        "dx": 0,
+        "dy": 1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:356229;2514:153368;1048:1234",
+        "name": "Button",
+        "role": "text",
+        "delta": 1,
+        "dx": 0,
+        "dy": 1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:356226",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:356226;2514:153347",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:356226;2711:67901",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:356226;2514:153348",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/cd-kh-020261",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

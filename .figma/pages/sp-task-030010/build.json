@@ -1,0 +1,12 @@
+{
+  "route": "/frames/sp-task-030010",
+  "pageFile": "components/figma/sp-task-030010/index.tsx",
+  "docFile": "docs/pages/frames/sp-task-030010.md",
+  "sections": [
+    {
+      "nodeId": "3857:76120",
+      "component": "FormGridLayoutBalancedRows1To4",
+      "file": "components/figma/sp-task-030010/FormGridLayoutBalancedRows1To4.tsx"
+    }
+  ]
+}

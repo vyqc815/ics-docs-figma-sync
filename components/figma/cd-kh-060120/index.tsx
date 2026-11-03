@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { PopupHeader } from "./PopupHeader";
 import { Body } from "./Body";
-import { PopupFooter9 } from "../shared/PopupFooter9";
+import { PopupFooter41 } from "../shared/PopupFooter41";
 
 /** Figma frame "CD-KH-060120 — Bài tập về nhà / Popup soạn câu hỏi · Trắc nghiệm" — 640×1034px. */
 export function CdKh060120Page() {
@@ -13,7 +13,7 @@ export function CdKh060120Page() {
     <main className={`[--bg-surface:#ffffff] [--brand-primary:#e65100] [--color-border-button:#cbd5e1] [--color-border-default:#e2e8f0] [--color-brand-orange:#e65100] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-fff5ec:#fff5ec] [--color-neutral-200:#d9d9d9] [--color-neutral-500:#757575] [--color-neutral-white:#ffffff] [--color-semantic-danger:#ed4038] [--color-semantic-warning:#e65100] [--color-text-muted:#cbd5e1] [--color-text-primary:#334155] [--color-text-secondary:#64748b] [--text-primary:#334155] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[640px] h-[1034px] flex flex-col justify-start items-start gap-[24px] overflow-hidden bg-[color:var(--color-neutral-white,#ffffff)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="5491:348805">
       <PopupHeader />
       <Body />
-      <PopupFooter9 />
+      <PopupFooter41 />
     </main>
   );
 }

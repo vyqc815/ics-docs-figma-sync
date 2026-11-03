@@ -1,0 +1,327 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 560,
+    "height": 304,
+    "mismatched": 224,
+    "percent": 0.132,
+    "shapePercent": 0,
+    "textPercent": 0.521,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6015:54644;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 9,
+      "percent": 1
+    },
+    {
+      "id": "6015:54640",
+      "name": "Dòng 12: Kiến thức / Kỹ năng \"Ngữ âm\" không có trong danh sách (Từ vựng, Ngữ pháp, Mẫu câu, Hanzi, Phát âm · Nghe, Nói, Đọc, Viết)",
+      "pixels": 108,
+      "percent": 0.8
+    },
+    {
+      "id": "I6015:54632;2514:153348",
+      "name": "Title",
+      "pixels": 97,
+      "percent": 0.7
+    },
+    {
+      "id": "6015:54634",
+      "name": "File có 3 dòng lỗi, chưa thêm câu nào. Sửa file rồi import lại.",
+      "pixels": 10,
+      "percent": 0.1
+    },
+    {
+      "id": "6015:54637",
+      "name": "Dòng 5: thiếu Loại câu",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6015:54643",
+      "name": "Dòng 21: thiếu Câu hỏi",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I6015:54644;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 20,
+    "missing": [],
+    "withinThreshold": 20,
+    "buckets": {
+      "≤0.5px": 19,
+      "≤1px": 19,
+      "≤2px": 19,
+      "≤4px": 20,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6015:54640",
+        "name": "Dòng 12: Kiến thức / Kỹ năng \"Ngữ âm\" không có trong danh sách (Từ vựng, Ngữ pháp, Mẫu câu, Hanzi, Phát âm · Nghe, Nói, Đọc, Viết)",
+        "role": "text",
+        "delta": 2.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54632",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54632;2514:153347",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54632;2711:67901",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54632;2514:153348",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54633",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54634",
+        "name": "File có 3 dòng lỗi, chưa thêm câu nào. Sửa file rồi import lại.",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54635",
+        "name": "Lỗi",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54636",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54637",
+        "name": "Dòng 5: thiếu Loại câu",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54638",
+        "name": "Lỗi",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54639",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54641",
+        "name": "Lỗi",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54642",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54643",
+        "name": "Dòng 21: thiếu Câu hỏi",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54644",
+        "name": "Popup/Footer",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54644;2514:153361",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54644;2514:153361;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54644;2514:153363",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54644;2514:153363;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.38,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/cd-kh-060140-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

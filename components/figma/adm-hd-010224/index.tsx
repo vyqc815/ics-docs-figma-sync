@@ -3,14 +3,14 @@
  * Exported: 2026-11-03T01:50:57.270Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { PopupHeader3 } from "../shared/PopupHeader3";
+import { PopupHeader23 } from "../shared/PopupHeader23";
 import { Body } from "./Body";
 
 /** Figma frame "ADM-HD-010224 — Hoá đơn / Popup hồ sơ học viên / Ghi chú / Trống" — 980×548px. */
 export function AdmHd010224Page() {
   return (
     <main className={`[--bg-subtle:#f1f5f9] [--bg-surface:#ffffff] [--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-eff6ff:#eff6ff] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[980px] h-[548px] flex flex-col justify-start items-start gap-[12px] [padding:0_0_24px_0] overflow-hidden bg-[color:var(--color-neutral-white,#ffffff)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="2731:75800">
-      <PopupHeader3 />
+      <PopupHeader23 />
       <Body />
     </main>
   );

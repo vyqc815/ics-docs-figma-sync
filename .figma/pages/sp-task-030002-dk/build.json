@@ -1,0 +1,17 @@
+{
+  "route": "/frames/sp-task-030002-dk",
+  "pageFile": "components/figma/sp-task-030002-dk/index.tsx",
+  "docFile": "docs/pages/frames/sp-task-030002-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:147491",
+      "component": "TriggerTuanNay",
+      "file": "components/figma/sp-task-030002-dk/TriggerTuanNay.tsx"
+    },
+    {
+      "nodeId": "4056:147492",
+      "component": "TimeCalendar",
+      "file": "components/figma/sp-task-030002-dk/TimeCalendar.tsx"
+    }
+  ]
+}

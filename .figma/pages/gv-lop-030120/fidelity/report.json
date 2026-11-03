@@ -1,0 +1,429 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 560,
+    "height": 455,
+    "mismatched": 271,
+    "percent": 0.106,
+    "shapePercent": 0.001,
+    "textPercent": 0.545,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5292:222985;2514:153342",
+      "name": "Description",
+      "pixels": 239,
+      "percent": 2
+    },
+    {
+      "id": "5292:223039",
+      "name": "Không chọn lịch",
+      "pixels": 11,
+      "percent": 0.5
+    },
+    {
+      "id": "5292:223021",
+      "name": "Hoàn thành",
+      "pixels": 3,
+      "percent": 0.3
+    },
+    {
+      "id": "5292:223026",
+      "name": "Thứ 4 · 14/10/2026",
+      "pixels": 7,
+      "percent": 0.3
+    },
+    {
+      "id": "5292:223034",
+      "name": "Đã gắn buổi khác",
+      "pixels": 2,
+      "percent": 0.1
+    },
+    {
+      "id": "5292:223040",
+      "name": "Buổi học này sẽ không được tính lương",
+      "pixels": 5,
+      "percent": 0.1
+    },
+    {
+      "id": "I5292:223001;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I5292:222985;2514:153341",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5292:223018",
+      "name": "Thứ 2 · 12/10/2026",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5292:223019",
+      "name": "19:30 - 21:00",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5292:223027",
+      "name": "19:30 - 21:00",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5292:223031",
+      "name": "Thứ 6 · 16/10/2026",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5292:223032",
+      "name": "19:30 - 21:00",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I5292:223001;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 37,
+    "missing": [],
+    "withinThreshold": 37,
+    "buckets": {
+      "≤0.5px": 37,
+      "≤1px": 37,
+      "≤2px": 37,
+      "≤4px": 37,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5292:223040",
+        "name": "Buổi học này sẽ không được tính lương",
+        "role": "text",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:222985",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5292:222985;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5292:222985;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5292:222985;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5292:222985;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:222986",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223015",
+        "name": "Lịch · Thứ 2 · 12/10/2026",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223016",
+        "name": "Radio Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223017",
+        "name": "Thông tin",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223018",
+        "name": "Thứ 2 · 12/10/2026",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223019",
+        "name": "19:30 - 21:00",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223020",
+        "name": "Tag",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223021",
+        "name": "Hoàn thành",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223022",
+        "name": "Lịch · Thứ 4 · 14/10/2026",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223023",
+        "name": "Radio Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5292:223023;2911:43098",
+        "name": "Dot",
+        "role": "shape",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223025",
+        "name": "Thông tin",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223026",
+        "name": "Thứ 4 · 14/10/2026",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223027",
+        "name": "19:30 - 21:00",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223028",
+        "name": "Lịch · Thứ 6 · 16/10/2026",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223029",
+        "name": "Radio Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223030",
+        "name": "Thông tin",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223031",
+        "name": "Thứ 6 · 16/10/2026",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5292:223032",
+        "name": "19:30 - 21:00",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.14,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/gv-lop-030120",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

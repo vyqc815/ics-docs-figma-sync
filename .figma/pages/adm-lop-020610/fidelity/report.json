@@ -1,0 +1,430 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 680,
+    "height": 546,
+    "mismatched": 401,
+    "percent": 0.108,
+    "shapePercent": 0.003,
+    "textPercent": 0.289,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2711:50591;2514:153355",
+      "name": "Description",
+      "pixels": 150,
+      "percent": 1
+    },
+    {
+      "id": "2711:50607",
+      "name": "Tiêu Chuẩn Kiến Thức & Kỹ Năng",
+      "pixels": 116,
+      "percent": 0.9
+    },
+    {
+      "id": "2711:50602",
+      "name": "Tiêu Chuẩn Chung",
+      "pixels": 19,
+      "percent": 0.2
+    },
+    {
+      "id": "2711:50612",
+      "name": "[Meeting cố định] Họp bàn giao đầu tiên",
+      "pixels": 20,
+      "percent": 0.2
+    },
+    {
+      "id": "2711:50632",
+      "name": "[Meeting Ngoại lệ] Họp ngoại lệ",
+      "pixels": 19,
+      "percent": 0.2
+    },
+    {
+      "id": "2711:50637",
+      "name": "[Meeting cố định] Họp Bàn Giao",
+      "pixels": 22,
+      "percent": 0.2
+    },
+    {
+      "id": "2711:50617",
+      "name": "[Meeting cố định] Họp lần 2",
+      "pixels": 14,
+      "percent": 0.1
+    },
+    {
+      "id": "2711:50622",
+      "name": "[Meeting cố định] Họp lần 3",
+      "pixels": 14,
+      "percent": 0.1
+    },
+    {
+      "id": "2711:50627",
+      "name": "[Meeting cố định] Họp lần 4",
+      "pixels": 14,
+      "percent": 0.1
+    },
+    {
+      "id": "I2711:50640;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I2711:50591;2514:153354",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I2711:50640;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 32,
+      "y": 88,
+      "width": 24,
+      "height": 24,
+      "pixels": 12,
+      "node": {
+        "id": "2711:50600",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 42,
+    "missing": [],
+    "withinThreshold": 42,
+    "buckets": {
+      "≤0.5px": 42,
+      "≤1px": 42,
+      "≤2px": 42,
+      "≤4px": 42,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2711:50591",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:50591;2514:153353",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:50591;2514:153354",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2711:50591;2514:153355",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50598",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50599",
+        "name": "Option · Tiêu Chuẩn Chung",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50600",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50602",
+        "name": "Tiêu Chuẩn Chung",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50603",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50605",
+        "name": "Option · Tiêu Chuẩn Kiến Thức & Kỹ Năng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50606",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50607",
+        "name": "Tiêu Chuẩn Kiến Thức & Kỹ Năng",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50608",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50610",
+        "name": "Option · [Meeting cố định] Họp bàn giao đầu tiên",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50611",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50612",
+        "name": "[Meeting cố định] Họp bàn giao đầu tiên",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50613",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50615",
+        "name": "Option · [Meeting cố định] Họp lần 2",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50616",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50617",
+        "name": "[Meeting cố định] Họp lần 2",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50618",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50620",
+        "name": "Option · [Meeting cố định] Họp lần 3",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50621",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50622",
+        "name": "[Meeting cố định] Họp lần 3",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2711:50623",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-lop-020610",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

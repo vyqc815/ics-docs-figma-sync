@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { PopupHeader } from "./PopupHeader";
 import { Body } from "./Body";
-import { PopupFooter } from "../shared/PopupFooter";
+import { PopupFooter9 } from "../shared/PopupFooter9";
 
 /** Figma frame "ADM-LOP-010020 — Danh sách lớp học / Popup thêm lịch dạy cố định" — 800×520px. */
 export function AdmLop010020Page() {
@@ -13,7 +13,7 @@ export function AdmLop010020Page() {
     <main className={`[--color-border-button:#cbd5e1] [--color-border-default:#e2e8f0] [--color-brand-orange:#e65100] [--color-extended-9ca3af:#9ca3af] [--color-extended-ea580c:#ea580c] [--color-extended-fdba74:#fdba74] [--color-extended-ffedd5:#ffedd5] [--color-extended-fff5ec:#fff5ec] [--color-extended-fff7ed:#fff7ed] [--color-extended-fff8f2:#fff8f2] [--color-neutral-white:#ffffff] [--color-semantic-error-strong:#ff0000] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[800px] h-[520px] flex flex-col justify-start items-start gap-[12px] bg-[color:var(--color-neutral-white,#ffffff)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="2008:45644">
       <PopupHeader />
       <Body />
-      <PopupFooter />
+      <PopupFooter9 />
     </main>
   );
 }

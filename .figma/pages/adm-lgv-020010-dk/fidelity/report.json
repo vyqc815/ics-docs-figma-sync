@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 600,
+    "height": 643,
+    "mismatched": 1147,
+    "percent": 0.297,
+    "shapePercent": 0.002,
+    "textPercent": 0.92,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4899:118721;1048:1234",
+      "name": "Button",
+      "pixels": 87,
+      "percent": 7.3
+    },
+    {
+      "id": "I4899:118715;3004:58620;2911:43272",
+      "name": "Required",
+      "pixels": 9,
+      "percent": 4.8
+    },
+    {
+      "id": "I4899:118715;3004:58623",
+      "name": "Helper",
+      "pixels": 243,
+      "percent": 2.6
+    },
+    {
+      "id": "I4899:118715;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 45,
+      "percent": 2.1
+    },
+    {
+      "id": "I4899:118709;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 60,
+      "percent": 2
+    },
+    {
+      "id": "I4899:118715;3004:58628;3004:60386;3004:60353",
+      "name": "Đơn vị",
+      "pixels": 13,
+      "percent": 2
+    },
+    {
+      "id": "I4899:118717;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 41,
+      "percent": 2
+    },
+    {
+      "id": "I4899:118710;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 52,
+      "percent": 1.8
+    },
+    {
+      "id": "I4899:118712;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 42,
+      "percent": 1.7
+    },
+    {
+      "id": "I4899:118693;2514:153342",
+      "name": "Description",
+      "pixels": 205,
+      "percent": 1.6
+    },
+    {
+      "id": "4899:118719",
+      "name": "Helper",
+      "pixels": 116,
+      "percent": 1.3
+    },
+    {
+      "id": "I4899:118693;2514:153341",
+      "name": "Title",
+      "pixels": 185,
+      "percent": 1.2
+    },
+    {
+      "id": "I4899:118718;2808:42360",
+      "name": "0/500",
+      "pixels": 9,
+      "percent": 1.1
+    },
+    {
+      "id": "I4899:118723;1048:1232",
+      "name": "Button",
+      "pixels": 27,
+      "percent": 0.8
+    },
+    {
+      "id": "I4899:118709;3004:58628;1739:32457",
+      "name": "0000000009",
+      "pixels": 1,
+      "percent": 0.1
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 66,
+    "missing": [],
+    "withinThreshold": 66,
+    "buckets": {
+      "≤0.5px": 60,
+      "≤1px": 63,
+      "≤2px": 66,
+      "≤4px": 66,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4899:118722",
+        "name": "Spacer",
+        "role": "container",
+        "delta": 1.38,
+        "dx": 1.36,
+        "dy": 0,
+        "dw": -1.37,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118721",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 1.36,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:118721;1048:1234",
+        "name": "Button",
+        "role": "text",
+        "delta": 1.36,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:118715;3004:58623",
+        "name": "Helper",
+        "role": "text",
+        "delta": 0.73,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:118709;3004:58620",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:118709;3004:58620;2808:48145",
+        "name": "Nhãn trường",
+        "role": "text",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118723",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:118723;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118693",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:118693;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:118693;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:118693;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:118693;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118694",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118695",
+        "name": "Số liệu giáo viên",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118696",
+        "name": "Chỉ số · Buổi đã dạy (6 tháng)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118697",
+        "name": "Buổi đã dạy (6 tháng)",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118698",
+        "name": "68 buổi",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118699",
+        "name": "Chỉ số · KPI trung bình",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118700",
+        "name": "KPI trung bình",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118701",
+        "name": "92%",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118702",
+        "name": "Chỉ số · Đánh giá TB",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118703",
+        "name": "Đánh giá TB",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118704",
+        "name": "4,8 / 5",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:118705",
+        "name": "Chỉ số · Điều chỉnh gần nhất",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.38,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-lgv-020010-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

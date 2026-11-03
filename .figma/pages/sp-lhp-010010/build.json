@@ -1,0 +1,22 @@
+{
+  "route": "/frames/sp-lhp-010010",
+  "pageFile": "components/figma/sp-lhp-010010/index.tsx",
+  "docFile": "docs/pages/frames/sp-lhp-010010.md",
+  "sections": [
+    {
+      "nodeId": "3857:80155",
+      "component": "PopupHeader",
+      "file": "components/figma/sp-lhp-010010/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "3857:80156",
+      "component": "Body",
+      "file": "components/figma/sp-lhp-010010/Body.tsx"
+    },
+    {
+      "nodeId": "3857:80177",
+      "component": "PopupFooter",
+      "file": "components/figma/sp-lhp-010010/PopupFooter.tsx"
+    }
+  ]
+}

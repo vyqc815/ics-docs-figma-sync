@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 720,
+    "height": 790,
+    "mismatched": 576,
+    "percent": 0.101,
+    "shapePercent": 0,
+    "textPercent": 0.605,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4885:8963",
+      "name": "Nội dung câu hỏi",
+      "pixels": 235,
+      "percent": 3.9
+    },
+    {
+      "id": "4885:8977",
+      "name": "Nội dung câu hỏi",
+      "pixels": 121,
+      "percent": 2.5
+    },
+    {
+      "id": "4885:8960",
+      "name": "a",
+      "pixels": 24,
+      "percent": 1
+    },
+    {
+      "id": "4885:8957",
+      "name": "Nội dung câu hỏi",
+      "pixels": 58,
+      "percent": 0.8
+    },
+    {
+      "id": "I4885:8989;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 21,
+      "percent": 0.7
+    },
+    {
+      "id": "I4885:8950;2514:153348",
+      "name": "Title",
+      "pixels": 75,
+      "percent": 0.4
+    },
+    {
+      "id": "I4885:8989;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 8,
+      "percent": 0.4
+    },
+    {
+      "id": "4885:8987",
+      "name": "Nội dung câu hỏi",
+      "pixels": 24,
+      "percent": 0.3
+    },
+    {
+      "id": "4885:8972",
+      "name": "Nội dung câu hỏi",
+      "pixels": 10,
+      "percent": 0.2
+    },
+    {
+      "id": "4885:8953",
+      "name": "Tên khảo sát",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4885:8954",
+      "name": "Mô tả khảo sát",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4885:8966",
+      "name": "1",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4885:8969",
+      "name": "2",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4885:8974;1048:1264",
+      "name": "Tìm nội dung...",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4885:8988;1048:1264",
+      "name": "Tìm nội dung...",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 42,
+    "missing": [],
+    "withinThreshold": 42,
+    "buckets": {
+      "≤0.5px": 41,
+      "≤1px": 42,
+      "≤2px": 42,
+      "≤4px": 42,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4885:8977",
+        "name": "Nội dung câu hỏi",
+        "role": "text",
+        "delta": 0.78,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.78,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8989;2514:153361",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": -0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8989;2514:153361;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.06,
+        "dx": -0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8989;2514:153363",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": -0.06,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8989;2514:153363;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.06,
+        "dx": -0.06,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8958",
+        "name": "Lựa chọn · a",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8960",
+        "name": "a",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8987",
+        "name": "Nội dung câu hỏi",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8957",
+        "name": "Nội dung câu hỏi",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8950",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8950;2514:153347",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8950;2711:67901",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8950;2514:153348",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8951",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8952",
+        "name": "Giới thiệu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8953",
+        "name": "Tên khảo sát",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8954",
+        "name": "Mô tả khảo sát",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8955",
+        "name": "Câu 1",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8956",
+        "name": "Câu hỏi",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8959",
+        "name": "Radio Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8961",
+        "name": "Câu 2",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8962",
+        "name": "Câu hỏi",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8963",
+        "name": "Nội dung câu hỏi",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8964",
+        "name": "Lựa chọn · 1",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8965",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.78,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-ks-020030",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

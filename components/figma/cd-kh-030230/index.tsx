@@ -3,17 +3,17 @@
  * Exported: 2026-11-03T02:17:54.823Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { PopupHeader10 } from "../shared/PopupHeader10";
+import { PopupHeader59 } from "../shared/PopupHeader59";
 import { Body } from "./Body";
-import { PopupFooter6 } from "../shared/PopupFooter6";
+import { PopupFooter32 } from "../shared/PopupFooter32";
 
 /** Figma frame "CD-KH-030230 — Học kỳ / Bài học / Popup chi tiết bài học (3)" — 980×980px. */
 export function CdKh030230Page() {
   return (
     <main className={`[--color-border-button:#cbd5e1] [--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-0c4a6e:#0c4a6e] [--color-extended-1f2937:#1f2937] [--color-extended-78350f:#78350f] [--color-extended-7dd3fc:#7dd3fc] [--color-extended-bae6fd:#bae6fd] [--color-extended-ecfdf5:#ecfdf5] [--color-extended-f0f9ff:#f0f9ff] [--color-extended-faf5ff:#faf5ff] [--color-extended-faf8f5:#faf8f5] [--color-extended-fcd34d:#fcd34d] [--color-extended-fde68a:#fde68a] [--color-extended-fdf4ec:#fdf4ec] [--color-extended-fef3c7:#fef3c7] [--color-extended-ffedd5:#ffedd5] [--color-extended-fffbeb:#fffbeb] [--color-neutral-900:#000000] [--color-neutral-white:#ffffff] [--color-semantic-danger:#ed4038] [--color-surface-input:#f1f5f9] [--color-text-muted:#cbd5e1] [--color-text-placeholder:#cccccc] [--color-text-primary:#334155] [--color-text-secondary:#64748b] [--text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[980px] h-[980px] flex flex-col justify-start items-start gap-[24px] overflow-hidden bg-[color:var(--color-neutral-white,#ffffff)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="1073:4361">
-      <PopupHeader10 />
+      <PopupHeader59 />
       <Body />
-      <PopupFooter6 />
+      <PopupFooter32 />
     </main>
   );
 }

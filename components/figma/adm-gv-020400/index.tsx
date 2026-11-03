@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T03:19:06.855Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body3 } from "../shared/Body3";
+import { Body7 } from "../shared/Body7";
 import { MainScrollableWorkspace } from "./MainScrollableWorkspace";
 import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
 
@@ -11,7 +11,7 @@ import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
 export function AdmGv020400Page() {
   return (
     <main className={`[--color-border-button:#cbd5e1] [--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-f8fafc:#f8fafc] [--color-extended-fed7aa:#fed7aa] [--color-extended-ffeddd:#ffeddd] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-surface-input:#f1f5f9] [--color-text-muted:#cbd5e1] [--color-text-placeholder:#cccccc] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1027px] overflow-hidden bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="1904:6493">
-      <Body3 />
+      <Body7 />
       <MainScrollableWorkspace />
       <SidebarMenuAdmin />
     </main>

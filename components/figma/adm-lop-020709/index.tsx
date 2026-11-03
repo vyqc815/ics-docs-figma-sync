@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:19:01.583Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body8 } from "../shared/Body8";
+import { Body14 } from "../shared/Body14";
 import { Maincontent } from "./Maincontent";
 import { Header29 } from "../shared/Header29";
 import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
@@ -12,7 +12,7 @@ import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
 export function AdmLop020709Page() {
   return (
     <main className={`[--bg-canvas:#f8fafc] [--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-cccccc:#cccccc] [--color-extended-f8fafc:#f8fafc] [--color-extended-fed7aa:#fed7aa] [--color-extended-ffeddd:#ffeddd] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-text-muted:#cbd5e1] [--color-text-placeholder:#cccccc] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[2190px] bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="2711:61860">
-      <Body8 />
+      <Body14 />
       <Maincontent />
       <Header29 />
       <SidebarMenuAdmin />

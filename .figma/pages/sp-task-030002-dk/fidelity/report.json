@@ -1,0 +1,375 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 152,
+    "height": 220,
+    "mismatched": 215,
+    "percent": 0.643,
+    "shapePercent": 0,
+    "textPercent": 2.37,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:147492;1505:19753",
+      "name": "07:30",
+      "pixels": 55,
+      "percent": 4.3
+    },
+    {
+      "id": "I4056:147492;1505:19761",
+      "name": "08:30",
+      "pixels": 54,
+      "percent": 3.8
+    },
+    {
+      "id": "I4056:147492;1505:19765",
+      "name": "09:00",
+      "pixels": 49,
+      "percent": 3
+    },
+    {
+      "id": "I4056:147492;1505:19748",
+      "name": "07:00",
+      "pixels": 21,
+      "percent": 1.9
+    },
+    {
+      "id": "I4056:147492;1505:19769",
+      "name": "09:30",
+      "pixels": 21,
+      "percent": 1.9
+    },
+    {
+      "id": "I4056:147492;1505:19757",
+      "name": "08:00",
+      "pixels": 15,
+      "percent": 1.2
+    },
+    {
+      "id": "I4056:147491;2015:36134",
+      "name": "Value",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 24,
+    "missing": [],
+    "withinThreshold": 24,
+    "buckets": {
+      "≤0.5px": 22,
+      "≤1px": 24,
+      "≤2px": 24,
+      "≤4px": 24,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4056:147492;1505:19752",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.55,
+        "dx": -0.28,
+        "dy": 0,
+        "dw": 0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19753",
+        "name": "07:30",
+        "role": "text",
+        "delta": 0.55,
+        "dx": -0.28,
+        "dy": 0,
+        "dw": 0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19764",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.31,
+        "dx": -0.16,
+        "dy": 0,
+        "dw": 0.31,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19765",
+        "name": "09:00",
+        "role": "text",
+        "delta": 0.31,
+        "dx": -0.16,
+        "dy": 0,
+        "dw": 0.31,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19760",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.11,
+        "dx": -0.06,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19761",
+        "name": "08:30",
+        "role": "text",
+        "delta": 0.11,
+        "dx": -0.06,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147491",
+        "name": "Trigger · Tuần này",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147491;2015:36133",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147491;2015:36134",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147491;2015:36138",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:147492",
+        "name": "TIME CALENDAR",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19745",
+        "name": "Button",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19747",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19748",
+        "name": "07:00",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19749",
+        "name": "Mouse click",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19750",
+        "name": "Button",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19754",
+        "name": "Button",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19756",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19757",
+        "name": "08:00",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19758",
+        "name": "Button",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19762",
+        "name": "Button",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19766",
+        "name": "Button",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19768",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:147492;1505:19769",
+        "name": "09:30",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.55,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/sp-task-030002-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

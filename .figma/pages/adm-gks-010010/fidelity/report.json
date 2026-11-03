@@ -1,0 +1,568 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 720,
+    "height": 803,
+    "mismatched": 267,
+    "percent": 0.046,
+    "shapePercent": 0.015,
+    "textPercent": 0.217,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4273:153175;2514:153348",
+      "name": "Title",
+      "pixels": 141,
+      "percent": 0.8
+    },
+    {
+      "id": "I4885:58878;2015:36008",
+      "name": "Value",
+      "pixels": 25,
+      "percent": 0.7
+    },
+    {
+      "id": "4273:153193",
+      "name": "Chọn tất cả",
+      "pixels": 11,
+      "percent": 0.7
+    },
+    {
+      "id": "4273:153194",
+      "name": "Đã chọn 1 giáo viên",
+      "pixels": 3,
+      "percent": 0.1
+    },
+    {
+      "id": "I4273:153242;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I4885:58891;1739:32351",
+      "name": "Tìm nội dung...",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4273:153200",
+      "name": "Vũ Khánh Linh  ·  156",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4273:153201",
+      "name": "khanhlinhworld57@gmail.com",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4273:153205",
+      "name": "Bùi Thị Thanh Thảo  ·  162",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4273:153206",
+      "name": "thaobuithanh14@gmail.com",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4273:153210",
+      "name": "Nguyễn Thị Sơn  ·  161",
+      "pixels": 1,
+      "percent": 0
+    },
+    {
+      "id": "4273:153211",
+      "name": "nguyenson16062003@gmail.com",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4273:153215",
+      "name": "Bùi Thị Lệ  ·  137",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4273:153216",
+      "name": "buithile282@gmail.com",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4273:153220",
+      "name": "Nguyễn Thị Mỹ Tâm  ·  163",
+      "pixels": 1,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 32,
+      "y": 160,
+      "width": 24,
+      "height": 16,
+      "pixels": 12,
+      "node": {
+        "id": "4273:153197",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 80,
+      "y": 376,
+      "width": 16,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "4273:153212",
+        "name": "Giáo viên · Bùi Thị Lệ",
+        "role": "container"
+      }
+    },
+    {
+      "x": 72,
+      "y": 504,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "I4273:154159;3228:62856",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 80,
+      "y": 240,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I4273:154151;3228:62836",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 72,
+      "y": 344,
+      "width": 16,
+      "height": 16,
+      "pixels": 8,
+      "node": {
+        "id": "I4273:154155;3228:62840",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 80,
+      "y": 144,
+      "width": 24,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "I4273:154149;3228:62834",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 72,
+      "y": 440,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "I4273:154157;3228:62846",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 72,
+      "y": 168,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4273:154149;3228:62834",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 72,
+      "y": 408,
+      "width": 24,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4273:153217",
+        "name": "Giáo viên · Nguyễn Thị Mỹ Tâm",
+        "role": "container"
+      }
+    },
+    {
+      "x": 88,
+      "y": 560,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4273:154161;3228:62860",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 72,
+      "y": 568,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4273:154161;3228:62860",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 86,
+    "missing": [],
+    "withinThreshold": 86,
+    "buckets": {
+      "≤0.5px": 86,
+      "≤1px": 86,
+      "≤2px": 86,
+      "≤4px": 86,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4273:153240",
+        "name": "Trần Linh Hằng  ·  164",
+        "role": "text",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:153194",
+        "name": "Đã chọn 1 giáo viên",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:153175",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:153175;2514:153347",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:153175;2711:67901",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:153175;2514:153348",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:153183",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:42720",
+        "name": "Hàng tìm kiếm",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:58878",
+        "name": "Dropdown · Trung tâm",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:58878;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:58878;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:58878;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:58891",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:58891;1739:32348",
+        "name": "Frame 427321959",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:58891;1739:32349",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:58891;1739:32351",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:153190",
+        "name": "Chọn tất cả",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:153191",
+        "name": "Checkbox · Chọn tất cả",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:153192",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:153193",
+        "name": "Chọn tất cả",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:153195",
+        "name": "Danh sách giáo viên",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:153196",
+        "name": "Giáo viên · Vũ Khánh Linh",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:153197",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:154149",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:154149;3228:62834",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.08,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-gks-010010",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

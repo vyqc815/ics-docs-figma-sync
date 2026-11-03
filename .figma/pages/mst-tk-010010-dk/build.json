@@ -1,0 +1,17 @@
+{
+  "route": "/frames/mst-tk-010010-dk",
+  "pageFile": "components/figma/mst-tk-010010-dk/index.tsx",
+  "docFile": "docs/pages/frames/mst-tk-010010-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:138799",
+      "component": "PopupHeader",
+      "file": "components/figma/mst-tk-010010-dk/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "4056:138800",
+      "component": "Section2",
+      "file": "components/figma/mst-tk-010010-dk/Section2.tsx"
+    }
+  ]
+}

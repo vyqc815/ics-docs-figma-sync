@@ -1,0 +1,17 @@
+{
+  "route": "/frames/adm-hv-010102",
+  "pageFile": "components/figma/adm-hv-010102/index.tsx",
+  "docFile": "docs/pages/frames/adm-hv-010102.md",
+  "sections": [
+    {
+      "nodeId": "3269:74936",
+      "component": "Dropdown",
+      "file": "components/figma/adm-hv-010102/Dropdown.tsx"
+    },
+    {
+      "nodeId": "3269:74669",
+      "component": "DropdownLocTrangThai",
+      "file": "components/figma/adm-hv-010102/DropdownLocTrangThai.tsx"
+    }
+  ]
+}

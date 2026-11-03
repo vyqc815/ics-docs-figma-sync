@@ -1,0 +1,411 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 680,
+    "height": 304,
+    "mismatched": 345,
+    "percent": 0.167,
+    "shapePercent": 0,
+    "textPercent": 0.529,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "6015:1898",
+      "name": "Sau khi xác nhận, cấp độ sẽ chuyển sang trạng thái Công khai và không được chỉnh sửa ID này",
+      "pixels": 322,
+      "percent": 2.6
+    },
+    {
+      "id": "6015:1888",
+      "name": "Trạng thái hiện tại",
+      "pixels": 19,
+      "percent": 0.8
+    },
+    {
+      "id": "I6015:1899;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 2,
+      "percent": 0.3
+    },
+    {
+      "id": "I6015:1857;2514:153358",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6015:1864",
+      "name": "Cấp độ:",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6015:1866",
+      "name": "Tên khoá học",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6015:1869",
+      "name": "ID cấp độ *:",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6015:1872",
+      "name": "8565966",
+      "pixels": 2,
+      "percent": 0
+    },
+    {
+      "id": "6015:1878",
+      "name": "ID có thể sử dụng.",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6015:1891",
+      "name": "Nháp",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I6015:1899;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 35,
+    "missing": [],
+    "withinThreshold": 35,
+    "buckets": {
+      "≤0.5px": 34,
+      "≤1px": 34,
+      "≤2px": 35,
+      "≤4px": 35,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6015:1898",
+        "name": "Sau khi xác nhận, cấp độ sẽ chuyển sang trạng thái Công khai và không được chỉnh sửa ID này",
+        "role": "text",
+        "delta": 1.3,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1861",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1862",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1865",
+        "name": "Input · Tên khoá học",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1866",
+        "name": "Tên khoá học",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1867",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1870",
+        "name": "ID khoá học · Input",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1871",
+        "name": "Input · ID khoá học",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1872",
+        "name": "8565966",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1873",
+        "name": "Frame 1171274927",
+        "role": "icon",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1878",
+        "name": "ID có thể sử dụng.",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1886",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": -0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1887",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": -0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1888",
+        "name": "Trạng thái hiện tại",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": -0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1857",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:1857;2514:153357",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:1857;2514:153358",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1858",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1859",
+        "name": "Meta Summary Section:margin",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1860",
+        "name": "Meta Summary Section",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1863",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1864",
+        "name": "Cấp độ:",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1868",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1869",
+        "name": "ID cấp độ *:",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:1889",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.3,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/cd-cdo-010010-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { PopupHeader } from "./PopupHeader";
 import { Body } from "./Body";
-import { PopupFooter8 } from "../shared/PopupFooter8";
+import { PopupFooter34 } from "../shared/PopupFooter34";
 
 /** Figma frame "CD-KH-030310-DK — Học kỳ / Kiểm tra / Popup cấu hình bài kiểm tra" — 980×723px. */
 export function CdKh030310DkPage() {
@@ -13,7 +13,7 @@ export function CdKh030310DkPage() {
     <main className={`[--bg-canvas:#121213] [--border-default:#27272a] [--color-extended-c2410c:#c2410c] [--color-neutral-white:#ffffff] [--color-text-muted:#cbd5e1] [--text-primary:#ededef] [--text-secondary:#a1a1aa] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[980px] h-[723px] flex flex-col justify-start items-start gap-[24px] bg-[color:#18181a] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="6015:64397">
       <PopupHeader />
       <Body />
-      <PopupFooter8 />
+      <PopupFooter34 />
     </main>
   );
 }

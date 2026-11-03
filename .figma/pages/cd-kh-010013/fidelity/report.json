@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 680,
+    "height": 508,
+    "mismatched": 962,
+    "percent": 0.278,
+    "shapePercent": 0.002,
+    "textPercent": 0.865,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I3004:49999;3004:58620;2911:43272",
+      "name": "Required",
+      "pixels": 8,
+      "percent": 4.2
+    },
+    {
+      "id": "I3004:49941;3004:58620;2911:43272",
+      "name": "Required",
+      "pixels": 8,
+      "percent": 4.2
+    },
+    {
+      "id": "I3004:49726;3004:58620;2911:43272",
+      "name": "Required",
+      "pixels": 8,
+      "percent": 4.2
+    },
+    {
+      "id": "2706:43876",
+      "name": "Sau khi xác nhận, khoá học sẽ được công khai và không thể chỉnh sửa. Đề nghị bạn kiểm tra kỹ trước khi thực hiện.",
+      "pixels": 810,
+      "percent": 3.4
+    },
+    {
+      "id": "I3004:49999;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 36,
+      "percent": 2.7
+    },
+    {
+      "id": "I3004:49941;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 16,
+      "percent": 2.4
+    },
+    {
+      "id": "I3004:49726;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 10,
+      "percent": 1.3
+    },
+    {
+      "id": "2706:43856",
+      "name": "Nháp",
+      "pixels": 6,
+      "percent": 0.7
+    },
+    {
+      "id": "I3004:49999;3004:58628;2148:20906",
+      "name": "Chọn",
+      "pixels": 29,
+      "percent": 0.4
+    },
+    {
+      "id": "I3004:49941;3004:58628;2148:20906",
+      "name": "Chọn",
+      "pixels": 22,
+      "percent": 0.3
+    },
+    {
+      "id": "I2706:43877;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I2706:43837;2514:153358",
+      "name": "Title",
+      "pixels": 1,
+      "percent": 0
+    },
+    {
+      "id": "2706:43844",
+      "name": "Khoá học:",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4513:9697",
+      "name": "Tên khoá học",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "2706:43848",
+      "name": "ID khoá học *:",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 592,
+      "y": 104,
+      "width": 16,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "2706:43855",
+        "name": "Background",
+        "role": "shape"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 61,
+    "missing": [],
+    "withinThreshold": 61,
+    "buckets": {
+      "≤0.5px": 61,
+      "≤1px": 61,
+      "≤2px": 61,
+      "≤4px": 61,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2706:43841",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43842",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4513:9696",
+        "name": "Input · Tên khoá học",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4513:9697",
+        "name": "Tên khoá học",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43846",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4513:9698",
+        "name": "ID khoá học · Input",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4513:9699",
+        "name": "Input · ID khoá học",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4513:9700",
+        "name": "8565966",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4513:9701",
+        "name": "Frame 1171274927",
+        "role": "icon",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4513:9706",
+        "name": "ID có thể sử dụng.",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43851",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": -0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43852",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": -0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43853",
+        "name": "Trạng thái hiện tại",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": -0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43837",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2706:43837;2514:153357",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2706:43837;2514:153358",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43838",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43839",
+        "name": "Meta Summary Section:margin",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43840",
+        "name": "Meta Summary Section",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43843",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43844",
+        "name": "Khoá học:",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43847",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43848",
+        "name": "ID khoá học *:",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43854",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2706:43855",
+        "name": "Background",
+        "role": "shape",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.19,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/cd-kh-010013",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

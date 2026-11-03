@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:56:24.624Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { PopupHeader2 } from "../shared/PopupHeader2";
+import { PopupHeader16 } from "../shared/PopupHeader16";
 import { Body } from "./Body";
 import { TooltipLienHe } from "./TooltipLienHe";
 import { TooltipThongTinLop } from "./TooltipThongTinLop";
@@ -12,7 +12,7 @@ import { TooltipThongTinLop } from "./TooltipThongTinLop";
 export function AdmHd010022DkPage() {
   return (
     <main className={`[--bg-brand-tint:#102218] [--bg-brand-tint-strong:#153020] [--bg-canvas:#121213] [--bg-danger:#2a1618] [--bg-info:#10202e] [--bg-strong:#2a2a2e] [--bg-subtle:#202023] [--bg-surface:#18181a] [--bg-warning:#29230f] [--border-default:#27272a] [--border-strong:#3f3f46] [--border-subtle:#1f1f22] [--brand-primary:#16a34a] [--color-neutral-white:#ffffff] [--status-danger-text:#f87171] [--text-muted:#71717a] [--text-primary:#ededef] [--text-secondary:#a1a1aa] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[980px] h-[714px] flex flex-col justify-start items-start gap-[12px] [padding:0_0_24px_0] bg-[color:var(--bg-surface,#18181a)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="4056:134333">
-      <PopupHeader2 />
+      <PopupHeader16 />
       <Body />
       <TooltipLienHe />
       <TooltipThongTinLop />

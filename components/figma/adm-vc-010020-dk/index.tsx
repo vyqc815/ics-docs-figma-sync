@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { PopupHeader } from "./PopupHeader";
 import { Body } from "./Body";
-import { PopupFooter } from "./PopupFooter";
+import { PopupFooter2 } from "../shared/PopupFooter2";
 
 /** Figma frame "ADM-VC-010020-DK — Voucher / Popup chỉnh sửa voucher" — 920×587px. */
 export function AdmVc010020DkPage() {
@@ -13,7 +13,7 @@ export function AdmVc010020DkPage() {
     <main className={`[--bg-brand-tint:#102218] [--bg-brand-tint-strong:#153020] [--bg-canvas:#121213] [--bg-hover:#0e0e0f] [--bg-subtle:#202023] [--bg-surface:#18181a] [--border-brand:#1e4d31] [--border-default:#27272a] [--border-strong:#3f3f46] [--brand-primary:#16a34a] [--color-neutral-white:#ffffff] [--status-danger:#ef4444] [--status-danger-text:#f87171] [--text-muted:#71717a] [--text-primary:#ededef] [--text-secondary:#a1a1aa] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[920px] h-[587px] flex flex-col justify-start items-start gap-[12px] overflow-hidden bg-[color:var(--bg-surface,#18181a)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="4056:130025">
       <PopupHeader />
       <Body />
-      <PopupFooter />
+      <PopupFooter2 />
     </main>
   );
 }

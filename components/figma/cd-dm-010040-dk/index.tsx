@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T02:56:17.825Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { PopupHeader9 } from "../shared/PopupHeader9";
+import { PopupHeader54 } from "../shared/PopupHeader54";
 import { Body } from "./Body";
 import { PopupFooter } from "./PopupFooter";
 
@@ -11,7 +11,7 @@ import { PopupFooter } from "./PopupFooter";
 export function CdDm010040DkPage() {
   return (
     <main className={`[--bg-brand-tint:#102218] [--bg-danger:#2a1618] [--bg-info:#10202e] [--bg-purple:#221a30] [--bg-success:#12251a] [--bg-surface:#18181a] [--border-brand:#1e4d31] [--border-default:#27272a] [--border-strong:#3f3f46] [--border-subtle:#1f1f22] [--brand-primary:#16a34a] [--color-neutral-white:#ffffff] [--status-danger-text:#f87171] [--text-muted:#71717a] [--text-primary:#ededef] [--text-secondary:#a1a1aa] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[960px] h-[717px] flex flex-col justify-start items-start gap-[12px] overflow-hidden bg-[color:var(--bg-surface,#18181a)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="4056:145659">
-      <PopupHeader9 />
+      <PopupHeader54 />
       <Body />
       <PopupFooter />
     </main>

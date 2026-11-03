@@ -1,0 +1,12 @@
+{
+  "route": "/frames/sp-task-030003-dk",
+  "pageFile": "components/figma/sp-task-030003-dk/index.tsx",
+  "docFile": "docs/pages/frames/sp-task-030003-dk.md",
+  "sections": [
+    {
+      "nodeId": "I4056:147493;1505:20191",
+      "component": "PopupChonLichHop",
+      "file": "components/figma/sp-task-030003-dk/PopupChonLichHop.tsx"
+    }
+  ]
+}

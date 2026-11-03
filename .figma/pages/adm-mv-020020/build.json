@@ -1,0 +1,17 @@
+{
+  "route": "/frames/adm-mv-020020",
+  "pageFile": "components/figma/adm-mv-020020/index.tsx",
+  "docFile": "docs/pages/frames/adm-mv-020020.md",
+  "sections": [
+    {
+      "nodeId": "2527:167400",
+      "component": "PopupHeader",
+      "file": "components/figma/adm-mv-020020/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "2527:167407",
+      "component": "PopupFooter23",
+      "file": "components/figma/shared/PopupFooter23.tsx"
+    }
+  ]
+}

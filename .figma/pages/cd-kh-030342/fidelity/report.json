@@ -1,0 +1,508 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 720,
+    "height": 1458,
+    "mismatched": 1883,
+    "percent": 0.179,
+    "shapePercent": 0.01,
+    "textPercent": 0.411,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5491:358501;3857:80275",
+      "name": "Tab",
+      "pixels": 140,
+      "percent": 4.4
+    },
+    {
+      "id": "I6579:74228;2015:30530",
+      "name": "Label",
+      "pixels": 41,
+      "percent": 3
+    },
+    {
+      "id": "I6579:74188;2015:31180",
+      "name": "Value",
+      "pixels": 66,
+      "percent": 2.8
+    },
+    {
+      "id": "I5491:358499;3857:80277",
+      "name": "Tab",
+      "pixels": 41,
+      "percent": 2.4
+    },
+    {
+      "id": "6579:75999",
+      "name": "Từ vựng · 3 cụm",
+      "pixels": 18,
+      "percent": 1.1
+    },
+    {
+      "id": "I6579:74232;2015:31836;6579:74240;2015:30609",
+      "name": "Label",
+      "pixels": 114,
+      "percent": 0.9
+    },
+    {
+      "id": "5491:358583",
+      "name": "Sau khi Generate sẽ hiện bảng 30 dòng. Mỗi dòng gồm prompt, kiến thức hoặc kỹ năng và loại câu; bạn sửa từng dòng trước khi tạo câu hỏi.",
+      "pixels": 203,
+      "percent": 0.8
+    },
+    {
+      "id": "I5491:358484;2514:153355",
+      "name": "Description",
+      "pixels": 110,
+      "percent": 0.7
+    },
+    {
+      "id": "I6536:385357;2015:31836;6536:385360;2015:30635",
+      "name": "Label",
+      "pixels": 81,
+      "percent": 0.7
+    },
+    {
+      "id": "I5491:358566;2015:30530",
+      "name": "Label",
+      "pixels": 14,
+      "percent": 0.7
+    },
+    {
+      "id": "I6536:385357;2015:31836;6536:385449;2015:30609",
+      "name": "Label",
+      "pixels": 74,
+      "percent": 0.6
+    },
+    {
+      "id": "I6579:74232;2015:31836;6579:74236;2015:30635",
+      "name": "Label",
+      "pixels": 81,
+      "percent": 0.6
+    },
+    {
+      "id": "I6536:385357;2015:31836;6536:385359;2015:30609",
+      "name": "Label",
+      "pixels": 60,
+      "percent": 0.5
+    },
+    {
+      "id": "I6536:385357;2015:31836;6536:385361;2015:30635",
+      "name": "Label",
+      "pixels": 57,
+      "percent": 0.5
+    },
+    {
+      "id": "I6579:74232;2015:31836;6579:74235;2015:30609",
+      "name": "Label",
+      "pixels": 60,
+      "percent": 0.5
+    }
+  ],
+  "regions": [
+    {
+      "x": 24,
+      "y": 488,
+      "width": 24,
+      "height": 24,
+      "pixels": 19,
+      "node": {
+        "id": "I6536:385357;2015:31836;6536:385436;2015:30629",
+        "name": "Control",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 1024,
+      "width": 24,
+      "height": 24,
+      "pixels": 19,
+      "node": {
+        "id": "I6579:74232;2015:31836;6579:74239;2015:30629",
+        "name": "Control",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 312,
+      "width": 24,
+      "height": 16,
+      "pixels": 18,
+      "node": {
+        "id": "I6536:385357;2015:31836;6536:385360;2015:30629",
+        "name": "Control",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 368,
+      "width": 24,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "I6536:385357;2015:31836;6536:385361;2015:30629",
+        "name": "Control",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 848,
+      "width": 24,
+      "height": 16,
+      "pixels": 18,
+      "node": {
+        "id": "I6579:74232;2015:31836;6579:74236;2015:30629",
+        "name": "Control",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 904,
+      "width": 24,
+      "height": 16,
+      "pixels": 18,
+      "node": {
+        "id": "I6579:74232;2015:31836;6579:74237;2015:30629",
+        "name": "Control",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 163,
+    "missing": [],
+    "withinThreshold": 163,
+    "buckets": {
+      "≤0.5px": 159,
+      "≤1px": 163,
+      "≤2px": 163,
+      "≤4px": 163,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5491:358498",
+        "name": "Chế độ Generate",
+        "role": "container",
+        "delta": 0.94,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358501",
+        "name": "Chế độ · Chọn kiến thức & kỹ năng",
+        "role": "instance",
+        "delta": 0.94,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:358501;3857:80275",
+        "name": "Tab",
+        "role": "text",
+        "delta": 0.94,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358581",
+        "name": "Chọn một hoặc nhiều dạng: Trắc nghiệm, Sắp xếp, Nối từ, Đọc, Viết, Hình ảnh…",
+        "role": "text",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:74233",
+        "name": "Đã chọn 5 nhóm kiến thức · 116 mục",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:75998",
+        "name": "Chip · Từ vựng",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:75999",
+        "name": "Từ vựng · 3 cụm",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76000",
+        "name": "✕",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76001",
+        "name": "Chip · Ngữ pháp",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76002",
+        "name": "Ngữ pháp · 2 cụm",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76003",
+        "name": "✕",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76004",
+        "name": "Chip · Mẫu câu",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76005",
+        "name": "Mẫu câu · 2 cụm",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76006",
+        "name": "✕",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76007",
+        "name": "Chip · Hanzi",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76008",
+        "name": "Hanzi · 1 cụm",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76009",
+        "name": "✕",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76010",
+        "name": "Chip · Phát âm",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76011",
+        "name": "Phát âm · 1 cụm",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:76012",
+        "name": "✕",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:74227",
+        "name": "Hàng · Kỹ năng",
+        "role": "container",
+        "delta": 0.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:74228",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6579:74228;2015:30530",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6579:74228;2015:30531",
+        "name": "Required",
+        "role": "text",
+        "delta": 0.25,
+        "dx": 0.25,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:74230",
+        "name": "DD/Molecule/Trigger · Kỹ năng",
+        "role": "instance",
+        "delta": 0.25,
+        "dx": 0.25,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.94,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/cd-kh-030342",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

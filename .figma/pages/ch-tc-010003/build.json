@@ -1,0 +1,17 @@
+{
+  "route": "/trang-chu/thong-ke-theo-thang",
+  "pageFile": "components/figma/ch-tc-010003/index.tsx",
+  "docFile": "docs/pages/trang-chu/thong-ke-theo-thang.md",
+  "sections": [
+    {
+      "nodeId": "7015:11856",
+      "component": "Body",
+      "file": "components/figma/ch-tc-010003/Body.tsx"
+    },
+    {
+      "nodeId": "7015:11992",
+      "component": "Section2",
+      "file": "components/figma/ch-tc-010003/Section2.tsx"
+    }
+  ]
+}

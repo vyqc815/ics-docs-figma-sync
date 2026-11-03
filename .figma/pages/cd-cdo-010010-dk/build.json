@@ -1,0 +1,22 @@
+{
+  "route": "/frames/cd-cdo-010010-dk",
+  "pageFile": "components/figma/cd-cdo-010010-dk/index.tsx",
+  "docFile": "docs/pages/frames/cd-cdo-010010-dk.md",
+  "sections": [
+    {
+      "nodeId": "6015:1857",
+      "component": "PopupHeader52",
+      "file": "components/figma/shared/PopupHeader52.tsx"
+    },
+    {
+      "nodeId": "6015:1858",
+      "component": "Body",
+      "file": "components/figma/cd-cdo-010010-dk/Body.tsx"
+    },
+    {
+      "nodeId": "6015:1899",
+      "component": "PopupFooter",
+      "file": "components/figma/cd-cdo-010010-dk/PopupFooter.tsx"
+    }
+  ]
+}

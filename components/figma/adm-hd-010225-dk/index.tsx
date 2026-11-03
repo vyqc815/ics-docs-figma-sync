@@ -3,14 +3,14 @@
  * Exported: 2026-11-03T02:00:08.537Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { PopupHeader4 } from "../shared/PopupHeader4";
+import { PopupHeader24 } from "../shared/PopupHeader24";
 import { Body } from "./Body";
 
 /** Figma frame "ADM-HD-010225-DK — Hoá đơn / Popup hồ sơ học viên / Ghi chú / Có ghi chú & bình luận" — 980×1038px. */
 export function AdmHd010225DkPage() {
   return (
     <main className={`[--bg-brand-tint:#102218] [--bg-canvas:#121213] [--bg-danger:#2a1618] [--bg-info:#10202e] [--bg-strong:#2a2a2e] [--bg-subtle:#202023] [--bg-surface:#18181a] [--border-brand:#1e4d31] [--border-default:#27272a] [--border-subtle:#1f1f22] [--brand-primary:#16a34a] [--status-danger:#ef4444] [--text-muted:#71717a] [--text-primary:#ededef] [--text-secondary:#a1a1aa] [--tone-blue-border:#28487d] [--tone-rose-border:#7b2a39] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[980px] h-[1038px] flex flex-col justify-start items-start gap-[12px] [padding:0_0_24px_0] overflow-hidden bg-[color:var(--bg-surface,#18181a)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="4056:137363">
-      <PopupHeader4 />
+      <PopupHeader24 />
       <Body />
     </main>
   );

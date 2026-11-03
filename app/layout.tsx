@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
 import { Be_Vietnam_Pro } from "next/font/google";
 
+import { FrameHost } from "@/components/frames/frame-host";
 import { Providers } from "@/components/providers";
 import "./globals.css";
 
@@ -16,11 +17,15 @@ export const metadata: Metadata = {
   description: "Quản lý nội dung hiển thị trên website bán hàng",
 };
 
-/** Root layout: global styles and client providers. */
+/** Root layout: global styles, client providers and the popup/state frames opened by `?popup=` / `?state=`. */
 const RootLayout = ({ children }: { children: ReactNode }): React.JSX.Element => (
   <html lang="vi">
     <body className={`${font.variable} font-sans`}>
-      <Providers>{children}</Providers>
+      <Providers>
+        <Suspense fallback={children}>
+          <FrameHost>{children}</FrameHost>
+        </Suspense>
+      </Providers>
     </body>
   </html>
 );

@@ -1,0 +1,484 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 800,
+    "height": 273,
+    "mismatched": 488,
+    "percent": 0.223,
+    "shapePercent": 0.01,
+    "textPercent": 0.875,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2384:59534;1739:32361",
+      "name": "18:30",
+      "pixels": 57,
+      "percent": 7
+    },
+    {
+      "id": "I2384:59527;1739:32803",
+      "name": "18:30",
+      "pixels": 43,
+      "percent": 5.3
+    },
+    {
+      "id": "I2384:59516;2008:48177",
+      "name": "31.01.2026 - 06.01.2026",
+      "pixels": 160,
+      "percent": 5
+    },
+    {
+      "id": "I2384:59515;2177:28936",
+      "name": "Nhiệm vụ con",
+      "pixels": 124,
+      "percent": 4
+    },
+    {
+      "id": "2384:59533",
+      "name": "Giờ kết thúc",
+      "pixels": 45,
+      "percent": 2.9
+    },
+    {
+      "id": "2384:59526",
+      "name": "Giờ bắt đầu",
+      "pixels": 26,
+      "percent": 1.7
+    },
+    {
+      "id": "2384:59543",
+      "name": "Thứ 4",
+      "pixels": 4,
+      "percent": 0.3
+    },
+    {
+      "id": "2384:59539",
+      "name": "Thứ 2",
+      "pixels": 3,
+      "percent": 0.2
+    },
+    {
+      "id": "2384:59541",
+      "name": "Thứ 3",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "2384:59545",
+      "name": "Thứ 5",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "2384:59549",
+      "name": "Thứ 7",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I2527:167779;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I2527:167779;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I2527:167773;2514:153358",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "2384:59530",
+      "name": "–",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 440,
+      "y": 136,
+      "width": 16,
+      "height": 24,
+      "pixels": 6,
+      "node": {
+        "id": "I2384:59558;2911:43098",
+        "name": "Dot",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 40,
+      "y": 136,
+      "width": 16,
+      "height": 16,
+      "pixels": 5,
+      "node": {
+        "id": "I2384:59527;1739:32801",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 160,
+      "y": 136,
+      "width": 16,
+      "height": 16,
+      "pixels": 5,
+      "node": {
+        "id": "I2384:59534;1739:32359",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 112,
+      "y": 144,
+      "width": 8,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "I2384:59527;1739:32804",
+        "name": "Action Icon",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 80,
+    "missing": [],
+    "withinThreshold": 80,
+    "buckets": {
+      "≤0.5px": 79,
+      "≤1px": 80,
+      "≤2px": 80,
+      "≤4px": 80,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2911:43101",
+        "name": "Helper",
+        "role": "text",
+        "delta": 0.78,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.78,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59523",
+        "name": "Frame 427326015",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59528",
+        "name": "Dash Separator:margin:align-flex-end",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59529",
+        "name": "Dash Separator:margin",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59530",
+        "name": "–",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59531",
+        "name": "Frame 427326014",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59532",
+        "name": "Label",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59533",
+        "name": "Giờ kết thúc",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59534",
+        "name": "Time",
+        "role": "instance",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:59534;1739:32358",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:59534;1739:32359",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:59534;1739:32360",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:59534;1739:32361",
+        "name": "18:30",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2384:59534;1739:32362",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59535",
+        "name": "Vector 2",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59536",
+        "name": "Frame 1171274922",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59537",
+        "name": "Frame 427323673",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59538",
+        "name": "Frame 427323677",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59539",
+        "name": "Thứ 2",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59552",
+        "name": "Frame 427325137",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59553",
+        "name": "Component 153",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59554",
+        "name": "Radio",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59540",
+        "name": "Frame 427323684",
+        "role": "container",
+        "delta": 0.45,
+        "dx": -0.45,
+        "dy": 0,
+        "dw": 0.07,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59541",
+        "name": "Thứ 3",
+        "role": "text",
+        "delta": 0.45,
+        "dx": -0.45,
+        "dy": 0,
+        "dw": 0.07,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2384:59555",
+        "name": "Component 160",
+        "role": "container",
+        "delta": 0.45,
+        "dx": -0.45,
+        "dy": 0,
+        "dw": 0.07,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.78,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-lop-040520",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

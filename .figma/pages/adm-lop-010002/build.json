@@ -1,0 +1,12 @@
+{
+  "route": "/frames/adm-lop-010002",
+  "pageFile": "components/figma/adm-lop-010002/index.tsx",
+  "docFile": "docs/pages/frames/adm-lop-010002.md",
+  "sections": [
+    {
+      "nodeId": "1991:28316",
+      "component": "FormGridLayoutBalancedRows1To4",
+      "file": "components/figma/adm-lop-010002/FormGridLayoutBalancedRows1To4.tsx"
+    }
+  ]
+}

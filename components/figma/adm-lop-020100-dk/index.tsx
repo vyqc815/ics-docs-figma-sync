@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T03:27:27.302Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body4 } from "../shared/Body4";
+import { Body8 } from "../shared/Body8";
 import { Maincontent } from "./Maincontent";
 import { Header26 } from "../shared/Header26";
 import { SidebarRail } from "./SidebarRail";
@@ -12,7 +12,7 @@ import { SidebarRail } from "./SidebarRail";
 export function AdmLop020100DkPage() {
   return (
     <main className={`[--bg-brand-tint:#102218] [--bg-brand-tint-strong:#153020] [--bg-canvas:#121213] [--bg-danger:#2a1618] [--bg-hover:#0e0e0f] [--bg-strong:#2a2a2e] [--bg-subtle:#202023] [--bg-success:#12251a] [--bg-surface:#18181a] [--border-brand:#1e4d31] [--border-default:#27272a] [--border-strong:#3f3f46] [--border-subtle:#1f1f22] [--brand-accent:#a78bfa] [--brand-primary:#16a34a] [--chrome-bg:#0b0b0c] [--chrome-ring-dark:#0b0b0c] [--chrome-ring-light:#0b0b0c] [--color-extended-a7f3d0:#a7f3d0] [--color-extended-fecdd3:#fecdd3] [--color-neutral-white:#ffffff] [--color-semantic-success:#2d9732] [--status-danger:#ef4444] [--status-danger-text:#f87171] [--status-success-text:#4ade80] [--text-muted:#71717a] [--text-on-brand:#ffffff] [--text-primary:#ededef] [--text-secondary:#a1a1aa] [--tone-green-border:#146048] [--tone-rose-border:#7b2a39] [--tone-violet-bg:#282239] [--tone-violet-border:#4c377d] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1059px] bg-[color:var(--bg-canvas,#121213)] ${fontVariables}`} data-figma-id="4056:109839">
-      <Body4 />
+      <Body8 />
       <Maincontent />
       <Header26 />
       <SidebarRail />

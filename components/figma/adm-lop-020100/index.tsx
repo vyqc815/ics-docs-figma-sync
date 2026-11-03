@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T03:27:24.406Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body4 } from "../shared/Body4";
+import { Body8 } from "../shared/Body8";
 import { Maincontent } from "./Maincontent";
 import { Header } from "./Header";
 import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
@@ -12,7 +12,7 @@ import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
 export function AdmLop020100Page() {
   return (
     <main className={`[--bg-brand-tint-strong:#ffedd5] [--bg-success:#ecfdf5] [--bg-surface:#ffffff] [--brand-primary:#e65100] [--color-border-button:#cbd5e1] [--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-a7f3d0:#a7f3d0] [--color-extended-d1fae5:#d1fae5] [--color-extended-f59e0b:#f59e0b] [--color-extended-f8fafc:#f8fafc] [--color-extended-f97316:#f97316] [--color-extended-fecdd3:#fecdd3] [--color-extended-fed7aa:#fed7aa] [--color-extended-ffedd5:#ffedd5] [--color-extended-fff7ed:#fff7ed] [--color-extended-fffaf8:#fffaf8] [--color-main-color-neutral-3:#ffffff] [--color-neutral-white:#ffffff] [--color-semantic-error-text:#e11d48] [--color-semantic-success:#2d9732] [--color-semantic-success-text:#059669] [--color-text-placeholder:#cccccc] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1059px] bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="769:30963">
-      <Body4 />
+      <Body8 />
       <Maincontent />
       <Header />
       <SidebarMenuAdmin />

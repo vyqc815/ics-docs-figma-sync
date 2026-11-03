@@ -1,0 +1,580 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 680,
+    "height": 1257,
+    "mismatched": 3967,
+    "percent": 0.464,
+    "shapePercent": 0.026,
+    "textPercent": 1.457,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I3772:87276;1055:2277",
+      "name": "Badge",
+      "pixels": 94,
+      "percent": 6.6
+    },
+    {
+      "id": "3772:87295",
+      "name": "Tỷ lệ khách phản hồi trên 90%",
+      "pixels": 444,
+      "percent": 5.1
+    },
+    {
+      "id": "I3772:87271;1055:2275",
+      "name": "Badge",
+      "pixels": 88,
+      "percent": 4.9
+    },
+    {
+      "id": "I3772:87286;1055:2265",
+      "name": "Badge",
+      "pixels": 54,
+      "percent": 4.6
+    },
+    {
+      "id": "I3772:87281;1055:2273",
+      "name": "Badge",
+      "pixels": 76,
+      "percent": 4.2
+    },
+    {
+      "id": "I3772:87291;1055:2271",
+      "name": "Badge",
+      "pixels": 39,
+      "percent": 4.2
+    },
+    {
+      "id": "I3772:87306;1055:2269",
+      "name": "Badge",
+      "pixels": 21,
+      "percent": 4.2
+    },
+    {
+      "id": "I3772:87296;1055:2261",
+      "name": "Badge",
+      "pixels": 47,
+      "percent": 4
+    },
+    {
+      "id": "I3772:87311;1055:2267",
+      "name": "Badge",
+      "pixels": 46,
+      "percent": 4
+    },
+    {
+      "id": "I3772:87316;1055:2267",
+      "name": "Badge",
+      "pixels": 46,
+      "percent": 4
+    },
+    {
+      "id": "3772:87258",
+      "name": "[Trước 2 ngày] Công tác khai giảng - ICS + GG Chat + Giáo viên",
+      "pixels": 386,
+      "percent": 3.4
+    },
+    {
+      "id": "I3772:87301;1055:2263",
+      "name": "Badge",
+      "pixels": 28,
+      "percent": 3.4
+    },
+    {
+      "id": "3772:87305",
+      "name": "Video hướng dẫn tạo lịch hẹn trên ICS",
+      "pixels": 321,
+      "percent": 3.4
+    },
+    {
+      "id": "3772:87327",
+      "name": "[Sau buổi 1] Tổng kết & phản hồi",
+      "pixels": 382,
+      "percent": 3.3
+    },
+    {
+      "id": "3772:87300",
+      "name": "Mức độ hài lòng của khách",
+      "pixels": 255,
+      "percent": 2.8
+    }
+  ],
+  "regions": [
+    {
+      "x": 96,
+      "y": 360,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "3772:87273",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 416,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "3772:87278",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 480,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "3772:87283",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 536,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "3772:87288",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 592,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "3772:87293",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 648,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "3772:87298",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 712,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "3772:87303",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 768,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "3772:87308",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 824,
+      "width": 24,
+      "height": 32,
+      "pixels": 21,
+      "node": {
+        "id": "3772:87313",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 312,
+      "width": 24,
+      "height": 16,
+      "pixels": 14,
+      "node": {
+        "id": "3772:87268",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 32,
+      "y": 88,
+      "width": 24,
+      "height": 24,
+      "pixels": 12,
+      "node": {
+        "id": "3772:87244",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 296,
+      "width": 8,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "3772:87267",
+        "name": "Tiêu chí · Kịch bản follow khách mỗi tuần",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 127,
+    "missing": [],
+    "withinThreshold": 127,
+    "buckets": {
+      "≤0.5px": 127,
+      "≤1px": 127,
+      "≤2px": 127,
+      "≤4px": 127,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3772:87241",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3772:87241;2514:153353",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3772:87241;2514:153354",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3772:87241;2514:153355",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87242",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87243",
+        "name": "Option · Khai giảng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87244",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87245",
+        "name": "Khai giảng",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87246",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87247",
+        "name": "Danh mục · Khai giảng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87248",
+        "name": "Category Option · [Trước 3-5 ngày] Gọi khách đầu khoá",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87249",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87250",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87251",
+        "name": "Card",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87252",
+        "name": "[Trước 3-5 ngày] Gọi khách đầu khoá",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87253",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3772:87253;2011:30138",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87254",
+        "name": "Category Option · [Trước 2 ngày] Công tác khai giảng - ICS + GG Chat + Giáo viên",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87255",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87256",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87257",
+        "name": "Card",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87258",
+        "name": "[Trước 2 ngày] Công tác khai giảng - ICS + GG Chat + Giáo viên",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87259",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3772:87259;811:10098",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3772:87260",
+        "name": "Category Option · [Theo sát khách] Follow khách mỗi tuần",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-lop-020712",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

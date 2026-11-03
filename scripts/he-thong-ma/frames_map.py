@@ -24,6 +24,8 @@ def main():
     for p in pages:
         code = p["name"].upper()
         f = frames.get(code)
+        if f and f["loai"] == "ban-toi":  # a dark frame opens the way its light twin does
+            f = {**f, "loai": (frames.get(code[:-3]) or {}).get("loai", ""), "manHienThi": f.get("manHienThi")}
         kind = KIND.get(f["loai"] if f else "")
         index = f"{w}/components/figma/{p['name']}/index.tsx"
         if not kind or not os.path.exists(index):

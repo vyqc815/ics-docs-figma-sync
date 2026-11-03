@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:09:45.181Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body13 } from "../shared/Body13";
+import { Body23 } from "../shared/Body23";
 import { Maincontent } from "./Maincontent";
 import { Header } from "./Header";
 import { SidebarRail } from "./SidebarRail";
@@ -13,7 +13,7 @@ import { TooltipHoverNutBackThongTinLop } from "./TooltipHoverNutBackThongTinLop
 export function GvLop020000DkPage() {
   return (
     <main className={`[--bg-brand-tint:#102218] [--bg-brand-tint-strong:#153020] [--bg-canvas:#121213] [--bg-strong:#2a2a2e] [--bg-subtle:#202023] [--bg-surface:#18181a] [--border-brand:#1e4d31] [--border-default:#27272a] [--border-strong:#3f3f46] [--brand-primary:#16a34a] [--chrome-bg:#0b0b0c] [--chrome-ring-dark:#0b0b0c] [--chrome-ring-light:#0b0b0c] [--color-main-color-neutral-3:#ffffff] [--color-neutral-white:#ffffff] [--color-semantic-success:#2d9732] [--org-border:#3f3f46] [--org-sakumi-bg:#202023] [--org-sakumi-fg:#f0587b] [--text-muted:#71717a] [--text-on-brand:#ffffff] [--text-primary:#ededef] [--text-secondary:#a1a1aa] [--tone-blue-border:#28487d] [--tone-green-border:#146048] [--tone-rose-border:#7b2a39] [--tone-rose-text:#fda4af] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[847px] overflow-hidden bg-[color:var(--bg-canvas,#121213)] ${fontVariables}`} data-figma-id="4324:15165">
-      <Body13 />
+      <Body23 />
       <Maincontent />
       <Header />
       <SidebarRail />

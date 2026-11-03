@@ -3,14 +3,14 @@
  * Exported: 2026-11-03T01:16:31.142Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { PopupHeader5 } from "../shared/PopupHeader5";
+import { PopupHeader27 } from "../shared/PopupHeader27";
 import { Body } from "./Body";
 
 /** Figma frame "ADM-HV-010020 — Danh sách học viên / Popup lịch sử / Hoá đơn" — 1224×759px. */
 export function AdmHv010020Page() {
   return (
     <main className={`[--bg-strong:#e2e8f0] [--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-0369a1:#0369a1] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-f8f8fa:#f8f8fa] [--color-extended-f8fafc:#f8fafc] [--color-extended-ffedd5:#ffedd5] [--color-extended-fff5ec:#fff5ec] [--color-extended-fff7ed:#fff7ed] [--color-neutral-white:#ffffff] [--color-text-muted:#cbd5e1] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1224px] h-[759px] flex flex-col justify-start items-start gap-[12px] [padding:0_0_24px_0] bg-[color:var(--color-neutral-white,#ffffff)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="2263:48470">
-      <PopupHeader5 />
+      <PopupHeader27 />
       <Body />
     </main>
   );

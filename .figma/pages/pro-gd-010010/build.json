@@ -1,0 +1,22 @@
+{
+  "route": "/frames/pro-gd-010010",
+  "pageFile": "components/figma/pro-gd-010010/index.tsx",
+  "docFile": "docs/pages/frames/pro-gd-010010.md",
+  "sections": [
+    {
+      "nodeId": "4273:166222",
+      "component": "PopupHeader",
+      "file": "components/figma/pro-gd-010010/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "4273:166223",
+      "component": "Body",
+      "file": "components/figma/pro-gd-010010/Body.tsx"
+    },
+    {
+      "nodeId": "4273:166273",
+      "component": "PopupFooter",
+      "file": "components/figma/pro-gd-010010/PopupFooter.tsx"
+    }
+  ]
+}

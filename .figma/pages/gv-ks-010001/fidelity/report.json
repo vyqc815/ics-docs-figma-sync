@@ -1,0 +1,180 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 334,
+    "mismatched": 480,
+    "percent": 0.299,
+    "shapePercent": 0.299,
+    "textPercent": 0,
+    "sizeMismatch": true
+  },
+  "textNodes": [
+    {
+      "id": "4686:44207",
+      "name": "Bạn có khảo sát mới",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4686:44208",
+      "name": "Admin đã giao cho bạn “KHẢO SÁT THÔNG TI",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4686:44209;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4686:44209;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 0,
+      "y": 328,
+      "width": 480,
+      "height": 6,
+      "pixels": 480,
+      "node": {
+        "id": "4686:44209",
+        "name": "Popup/Footer",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 8,
+    "missing": [],
+    "withinThreshold": 8,
+    "buckets": {
+      "≤0.5px": 8,
+      "≤1px": 8,
+      "≤2px": 8,
+      "≤4px": 8,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4686:44206",
+        "name": "Minh hoạ",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4686:44207",
+        "name": "Bạn có khảo sát mới",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4686:44208",
+        "name": "Admin đã giao cho bạn “KHẢO SÁT THÔNG TI",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4686:44209",
+        "name": "Popup/Footer",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:44209;2514:153361",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:44209;2514:153361;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:44209;2514:153363",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4686:44209;2514:153363;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.01,
+    "over": []
+  },
+  "failures": [
+    "Rendered size differs from the reference render."
+  ],
+  "url": "http://localhost:3000/frames/gv-ks-010001",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

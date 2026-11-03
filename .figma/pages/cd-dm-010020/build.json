@@ -5,8 +5,8 @@
   "sections": [
     {
       "nodeId": "2527:167974",
-      "component": "PopupHeader8",
-      "file": "components/figma/shared/PopupHeader8.tsx"
+      "component": "PopupHeader53",
+      "file": "components/figma/shared/PopupHeader53.tsx"
     },
     {
       "nodeId": "2527:167986",
@@ -15,8 +15,8 @@
     },
     {
       "nodeId": "2527:167981",
-      "component": "PopupFooter4",
-      "file": "components/figma/shared/PopupFooter4.tsx"
+      "component": "PopupFooter30",
+      "file": "components/figma/shared/PopupFooter30.tsx"
     }
   ],
   "idAlias": {

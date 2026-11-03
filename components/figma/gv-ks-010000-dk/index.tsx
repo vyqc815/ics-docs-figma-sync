@@ -3,14 +3,14 @@
  * Exported: 2026-11-03T01:10:20.490Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body12 } from "../shared/Body12";
+import { Body22 } from "../shared/Body22";
 import { MainKhaoSat } from "../shared/MainKhaoSat";
 
 /** Figma frame "GV-KS-010000-DK — Khảo sát / Danh sách khảo sát" — 1440×810px. */
 export function GvKs010000DkPage() {
   return (
     <main className={`[--bg-brand-tint:#102218] [--bg-brand-tint-strong:#153020] [--bg-canvas:#121213] [--bg-subtle:#202023] [--bg-surface:#18181a] [--border-default:#27272a] [--border-strong:#3f3f46] [--brand-primary:#16a34a] [--chrome-bg:#0b0b0c] [--color-neutral-white:#ffffff] [--org-border:#3f3f46] [--org-sakumi-bg:#202023] [--org-sakumi-fg:#f0587b] [--text-primary:#ededef] [--text-secondary:#a1a1aa] [--tone-yellow-bg:#372b18] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] bg-[color:var(--bg-canvas,#121213)] ${fontVariables}`} data-figma-id="4885:59798">
-      <Body12 />
+      <Body22 />
       <MainKhaoSat />
     </main>
   );

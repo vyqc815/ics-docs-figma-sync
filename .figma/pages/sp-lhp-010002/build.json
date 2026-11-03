@@ -1,0 +1,22 @@
+{
+  "route": "/lich-hop/dropdown-loc-trang-thai",
+  "pageFile": "components/figma/sp-lhp-010002/index.tsx",
+  "docFile": "docs/pages/lich-hop/dropdown-loc-trang-thai.md",
+  "sections": [
+    {
+      "nodeId": "6935:384442",
+      "component": "Body27",
+      "file": "components/figma/shared/Body27.tsx"
+    },
+    {
+      "nodeId": "6935:384579",
+      "component": "Section2",
+      "file": "components/figma/sp-lhp-010002/Section2.tsx"
+    },
+    {
+      "nodeId": "6935:385187",
+      "component": "DropdownTrangThai",
+      "file": "components/figma/sp-lhp-010002/DropdownTrangThai.tsx"
+    }
+  ]
+}

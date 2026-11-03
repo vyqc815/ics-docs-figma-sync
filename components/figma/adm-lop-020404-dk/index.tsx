@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:18:59.678Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body5 } from "../shared/Body5";
+import { Body11 } from "../shared/Body11";
 import { Header30 } from "../shared/Header30";
 import { SidebarRail } from "./SidebarRail";
 
@@ -11,7 +11,7 @@ import { SidebarRail } from "./SidebarRail";
 export function AdmLop020404DkPage() {
   return (
     <main className={`[--bg-brand-tint-strong:#153020] [--bg-canvas:#121213] [--bg-strong:#2a2a2e] [--bg-subtle:#202023] [--bg-surface:#18181a] [--border-default:#27272a] [--border-strong:#3f3f46] [--chrome-bg:#0b0b0c] [--chrome-ring-dark:#0b0b0c] [--chrome-ring-light:#0b0b0c] [--color-neutral-white:#ffffff] [--text-on-brand:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] bg-[color:var(--bg-canvas,#121213)] ${fontVariables}`} data-figma-id="4056:112842">
-      <Body5 />
+      <Body11 />
       <Header30 />
       <SidebarRail />
     </main>

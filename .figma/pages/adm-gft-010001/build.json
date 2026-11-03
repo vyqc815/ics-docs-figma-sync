@@ -1,0 +1,35 @@
+{
+  "route": "/gift-code/danh-sach-gift-code/da-sao-chep-ma",
+  "pageFile": "components/figma/adm-gft-010001/index.tsx",
+  "docFile": "docs/pages/gift-code/danh-sach-gift-code/da-sao-chep-ma.md",
+  "sections": [
+    {
+      "nodeId": "5165:186784",
+      "component": "Bg",
+      "file": "components/figma/shared/Bg.tsx"
+    },
+    {
+      "nodeId": "5165:186873",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-gft-010001/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "5165:186874",
+      "component": "Header2",
+      "file": "components/figma/shared/Header2.tsx"
+    },
+    {
+      "nodeId": "5165:186924",
+      "component": "MainGiftCode",
+      "file": "components/figma/adm-gft-010001/MainGiftCode.tsx"
+    },
+    {
+      "nodeId": "5165:187648",
+      "component": "MoleculeTooltip",
+      "file": "components/figma/adm-gft-010001/MoleculeTooltip.tsx"
+    }
+  ],
+  "idAlias": {
+    "5165:186784": "3857:85664"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "route": "/frames/cd-kh-050155",
+  "pageFile": "components/figma/cd-kh-050155/index.tsx",
+  "docFile": "docs/pages/frames/cd-kh-050155.md",
+  "sections": [
+    {
+      "nodeId": "6646:120234",
+      "component": "PopupGoKhoiKhoa",
+      "file": "components/figma/cd-kh-050155/PopupGoKhoiKhoa.tsx"
+    }
+  ]
+}

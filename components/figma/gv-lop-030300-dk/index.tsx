@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:09:51.853Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body4 } from "../shared/Body4";
+import { Body8 } from "../shared/Body8";
 import { Maincontent } from "./Maincontent";
 import { Header72 } from "../shared/Header72";
 import { SidebarRail } from "./SidebarRail";
@@ -12,7 +12,7 @@ import { SidebarRail } from "./SidebarRail";
 export function GvLop030300DkPage() {
   return (
     <main className={`[--bg-brand-tint:#102218] [--bg-canvas:#121213] [--bg-strong:#2a2a2e] [--bg-surface:#18181a] [--border-brand:#1e4d31] [--border-default:#27272a] [--border-strong:#3f3f46] [--brand-primary:#16a34a] [--chrome-bg:#0b0b0c] [--chrome-ring-dark:#0b0b0c] [--chrome-ring-light:#0b0b0c] [--color-neutral-white:#ffffff] [--org-border:#3f3f46] [--org-sakumi-bg:#202023] [--org-sakumi-fg:#f0587b] [--text-on-brand:#ffffff] [--text-primary:#ededef] [--text-secondary:#a1a1aa] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1059px] overflow-hidden bg-[color:var(--bg-canvas,#121213)] ${fontVariables}`} data-figma-id="4324:31014">
-      <Body4 />
+      <Body8 />
       <Maincontent />
       <Header72 />
       <SidebarRail />

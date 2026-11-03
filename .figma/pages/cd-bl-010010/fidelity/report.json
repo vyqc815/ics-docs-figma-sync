@@ -1,0 +1,604 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 793,
+    "mismatched": 1321,
+    "percent": 0.347,
+    "shapePercent": 0.151,
+    "textPercent": 0.717,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5300:51168;2015:30530",
+      "name": "Label",
+      "pixels": 228,
+      "percent": 10.9
+    },
+    {
+      "id": "I5300:51169;1061:1316",
+      "name": "Kéo thả file vào đây hoặc chọn file",
+      "pixels": 114,
+      "percent": 2.6
+    },
+    {
+      "id": "I5300:51152;2015:30530",
+      "name": "Label",
+      "pixels": 36,
+      "percent": 2.2
+    },
+    {
+      "id": "I5300:51145;2514:153342",
+      "name": "Description",
+      "pixels": 246,
+      "percent": 1.3
+    },
+    {
+      "id": "I5364:369371;2015:30530",
+      "name": "Label",
+      "pixels": 22,
+      "percent": 1.3
+    },
+    {
+      "id": "I5300:51149;2015:30530",
+      "name": "Label",
+      "pixels": 8,
+      "percent": 1.2
+    },
+    {
+      "id": "I5300:51171;2015:30530",
+      "name": "Label",
+      "pixels": 30,
+      "percent": 1.1
+    },
+    {
+      "id": "I5300:51156;2015:30530",
+      "name": "Label",
+      "pixels": 16,
+      "percent": 1.1
+    },
+    {
+      "id": "I5300:51165;2015:30530",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 1
+    },
+    {
+      "id": "I5300:51159;2015:30530",
+      "name": "Label",
+      "pixels": 11,
+      "percent": 0.9
+    },
+    {
+      "id": "I5300:51162;2015:30530",
+      "name": "Label",
+      "pixels": 9,
+      "percent": 0.7
+    },
+    {
+      "id": "I5300:51160;2015:31000",
+      "name": "Value",
+      "pixels": 3,
+      "percent": 0.1
+    },
+    {
+      "id": "I5300:51173;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I5300:51173;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I5300:51145;2514:153341",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 256,
+      "y": 616,
+      "width": 72,
+      "height": 8,
+      "pixels": 70,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 344,
+      "y": 616,
+      "width": 72,
+      "height": 8,
+      "pixels": 63,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 64,
+      "y": 712,
+      "width": 72,
+      "height": 16,
+      "pixels": 56,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 72,
+      "y": 616,
+      "width": 72,
+      "height": 8,
+      "pixels": 54,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 16,
+      "y": 640,
+      "width": 8,
+      "height": 56,
+      "pixels": 53,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 168,
+      "y": 616,
+      "width": 64,
+      "height": 8,
+      "pixels": 50,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 344,
+      "y": 712,
+      "width": 64,
+      "height": 16,
+      "pixels": 50,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 248,
+      "y": 712,
+      "width": 72,
+      "height": 16,
+      "pixels": 48,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 160,
+      "y": 712,
+      "width": 64,
+      "height": 16,
+      "pixels": 46,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 456,
+      "y": 640,
+      "width": 8,
+      "height": 56,
+      "pixels": 40,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 24,
+      "y": 712,
+      "width": 24,
+      "height": 16,
+      "pixels": 16,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 432,
+      "y": 712,
+      "width": 24,
+      "height": 16,
+      "pixels": 13,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 24,
+      "y": 616,
+      "width": 24,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 440,
+      "y": 616,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "5300:51169",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 83,
+    "missing": [],
+    "withinThreshold": 83,
+    "buckets": {
+      "≤0.5px": 77,
+      "≤1px": 80,
+      "≤2px": 83,
+      "≤4px": 83,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I5300:51169;1061:1317",
+        "name": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "role": "text",
+        "delta": 1.64,
+        "dx": -0.83,
+        "dy": 0,
+        "dw": 1.64,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5300:51168",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 1.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5300:51168;2015:30530",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5300:51152",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5300:51152;2015:30530",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5300:51152;2015:30531",
+        "name": "Required",
+        "role": "text",
+        "delta": 0.53,
+        "dx": 0.53,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5300:51145",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5300:51145;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5300:51145;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5300:51145;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5300:51145;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5300:51146",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:369369",
+        "name": "Hàng · Độ nghiêm trọng & Trung tâm",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5300:51170",
+        "name": "Field · Độ nghiêm trọng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5300:51171",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5300:51171;2015:30530",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5300:51172",
+        "name": "Độ nghiêm trọng",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5300:51172;2015:30954",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5300:51172;2015:30955",
+        "name": "Placeholder",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5300:51172;2015:30958",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:369370",
+        "name": "Field · Trung tâm",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:369371",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:369371;2015:30530",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5364:369371;2015:30531",
+        "name": "Required",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5364:369372",
+        "name": "Trung tâm",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.64,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/cd-bl-010010",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

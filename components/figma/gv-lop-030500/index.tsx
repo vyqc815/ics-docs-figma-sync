@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:09:49.360Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body4 } from "../shared/Body4";
+import { Body8 } from "../shared/Body8";
 import { Maincontent } from "./Maincontent";
 import { Header76 } from "../shared/Header76";
 import { SidebarMenuTeacher } from "./SidebarMenuTeacher";
@@ -12,7 +12,7 @@ import { SidebarMenuTeacher } from "./SidebarMenuTeacher";
 export function GvLop030500Page() {
   return (
     <main className={`[--bg-surface:#ffffff] [--brand-primary:#e65100] [--color-border-default:#e2e8f0] [--color-brand-orange:#e65100] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-text-primary:#334155] [--color-text-secondary:#64748b] [--org-border:#ffffff] [--org-sakumi-bg:#e33f64] [--org-sakumi-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1059px] overflow-hidden bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="4324:17763">
-      <Body4 />
+      <Body8 />
       <Maincontent />
       <Header76 />
       <SidebarMenuTeacher />

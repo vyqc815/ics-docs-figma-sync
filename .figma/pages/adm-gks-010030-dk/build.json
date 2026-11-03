@@ -1,0 +1,17 @@
+{
+  "route": "/frames/adm-gks-010030-dk",
+  "pageFile": "components/figma/adm-gks-010030-dk/index.tsx",
+  "docFile": "docs/pages/frames/adm-gks-010030-dk.md",
+  "sections": [
+    {
+      "nodeId": "4343:57936",
+      "component": "PopupHeader",
+      "file": "components/figma/adm-gks-010030-dk/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "4343:57937",
+      "component": "Body2",
+      "file": "components/figma/shared/Body2.tsx"
+    }
+  ]
+}

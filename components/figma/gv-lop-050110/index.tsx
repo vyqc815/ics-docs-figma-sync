@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T02:57:06.581Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body15 } from "../shared/Body15";
+import { Body25 } from "../shared/Body25";
 import { Maincontent } from "./Maincontent";
 import { Header } from "./Header";
 import { SidebarMenuTeacher } from "./SidebarMenuTeacher";
@@ -12,7 +12,7 @@ import { SidebarMenuTeacher } from "./SidebarMenuTeacher";
 export function GvLop050110Page() {
   return (
     <main className={`[--bg-surface:#ffffff] [--brand-primary:#e65100] [--color-brand-orange:#e65100] [--color-extended-1e293b:#1e293b] [--color-extended-eeeeee:#eeeeee] [--color-extended-f8f9fa:#f8f9fa] [--color-extended-ff9537:#ff9537] [--color-extended-fff5ec:#fff5ec] [--color-neutral-200:#d9d9d9] [--color-neutral-500:#757575] [--color-neutral-white:#ffffff] [--color-text-primary:#334155] [--org-border:#ffffff] [--org-sakumi-bg:#e33f64] [--org-sakumi-fg:#ffffff] [--text-primary:#334155] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[834px] overflow-hidden bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="5425:281325">
-      <Body15 />
+      <Body25 />
       <Maincontent />
       <Header />
       <SidebarMenuTeacher />

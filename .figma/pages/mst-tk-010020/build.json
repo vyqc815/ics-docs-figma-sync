@@ -1,0 +1,24 @@
+{
+  "route": "/frames/mst-tk-010020",
+  "pageFile": "components/figma/mst-tk-010020/index.tsx",
+  "docFile": "docs/pages/frames/mst-tk-010020.md",
+  "sections": [
+    {
+      "nodeId": "2527:167374",
+      "component": "PopupHeader",
+      "file": "components/figma/mst-tk-010020/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "2527:167381",
+      "component": "PopupFooter19",
+      "file": "components/figma/shared/PopupFooter19.tsx"
+    }
+  ],
+  "idAlias": {
+    "2527:167381": "3705:83796",
+    "I2527:167381;2514:153366": "I3705:83796;2514:153366",
+    "I2527:167381;2514:153366;1048:1232": "I3705:83796;2514:153366;1048:1232",
+    "I2527:167381;2514:153368": "I3705:83796;2514:153368",
+    "I2527:167381;2514:153368;1048:1230": "I3705:83796;2514:153368;1048:1230"
+  }
+}

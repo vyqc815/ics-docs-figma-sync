@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:19:01.039Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body6 } from "../shared/Body6";
+import { Body12 } from "../shared/Body12";
 import { Maincontent } from "./Maincontent";
 import { Header31 } from "../shared/Header31";
 import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
@@ -12,7 +12,7 @@ import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
 export function AdmLop020704Page() {
   return (
     <main className={`[--bg-canvas:#f8fafc] [--color-border-default:#e2e8f0] [--color-brand-orange:#e65100] [--color-extended-fed7aa:#fed7aa] [--color-neutral-white:#ffffff] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[810px] overflow-hidden bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="2711:61714">
-      <Body6 />
+      <Body12 />
       <Maincontent />
       <Header31 />
       <SidebarMenuAdmin />

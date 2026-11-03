@@ -1,0 +1,436 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 680,
+    "height": 304,
+    "mismatched": 749,
+    "percent": 0.362,
+    "shapePercent": 0.007,
+    "textPercent": 1.122,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "6025:210843",
+      "name": "Sau khi xác nhận, danh mục sẽ chuyển sang trạng thái Công khai và không được chỉnh sửa ID này",
+      "pixels": 682,
+      "percent": 5.4
+    },
+    {
+      "id": "6025:210836",
+      "name": "Nháp",
+      "pixels": 6,
+      "percent": 0.7
+    },
+    {
+      "id": "6025:210807",
+      "name": "Tên khoá học",
+      "pixels": 44,
+      "percent": 0.6
+    },
+    {
+      "id": "I6025:210844;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I6025:210798;2514:153358",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6025:210805",
+      "name": "Danh mục:",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6025:210810",
+      "name": "ID danh mục *:",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6025:210813",
+      "name": "0000001",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6025:210819",
+      "name": "ID không hợp lệ. Vui lòng kiểm tra.",
+      "pixels": 2,
+      "percent": 0
+    },
+    {
+      "id": "6025:210833",
+      "name": "Trạng thái hiện tại",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I6025:210844;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 40,
+      "y": 208,
+      "width": 16,
+      "height": 8,
+      "pixels": 8,
+      "node": {
+        "id": "6025:210838",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 592,
+      "y": 88,
+      "width": 16,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "6025:210835",
+        "name": "Background",
+        "role": "shape"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 35,
+    "missing": [],
+    "withinThreshold": 35,
+    "buckets": {
+      "≤0.5px": 34,
+      "≤1px": 34,
+      "≤2px": 35,
+      "≤4px": 35,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6025:210843",
+        "name": "Sau khi xác nhận, danh mục sẽ chuyển sang trạng thái Công khai và không được chỉnh sửa ID này",
+        "role": "text",
+        "delta": 1.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210802",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210803",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210806",
+        "name": "Input · Tên khoá học",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210807",
+        "name": "Tên khoá học",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210808",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210811",
+        "name": "ID khoá học · Input",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210812",
+        "name": "Input · ID khoá học",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210813",
+        "name": "0000001",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210814",
+        "name": "Frame 1171274927",
+        "role": "icon",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210819",
+        "name": "ID không hợp lệ. Vui lòng kiểm tra.",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210831",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": -0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210832",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": -0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210833",
+        "name": "Trạng thái hiện tại",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0.19,
+        "dy": 0,
+        "dw": -0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210798",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6025:210798;2514:153357",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6025:210798;2514:153358",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210799",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210800",
+        "name": "Meta Summary Section:margin",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210801",
+        "name": "Meta Summary Section",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210804",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210805",
+        "name": "Danh mục:",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210809",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210810",
+        "name": "ID danh mục *:",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6025:210834",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.52,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/cd-dm-010062",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

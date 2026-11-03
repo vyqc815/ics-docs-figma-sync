@@ -1,0 +1,27 @@
+{
+  "route": "/frames/cd-dm-010057",
+  "pageFile": "components/figma/cd-dm-010057/index.tsx",
+  "docFile": "docs/pages/frames/cd-dm-010057.md",
+  "sections": [
+    {
+      "nodeId": "689:14190",
+      "component": "Section1",
+      "file": "components/figma/cd-dm-010057/Section1.tsx"
+    },
+    {
+      "nodeId": "689:14237",
+      "component": "SuccessheaderandcelebrationMargin",
+      "file": "components/figma/cd-dm-010057/SuccessheaderandcelebrationMargin.tsx"
+    },
+    {
+      "nodeId": "689:14253",
+      "component": "ConfirmClosePrimaryActionButton",
+      "file": "components/figma/cd-dm-010057/ConfirmClosePrimaryActionButton.tsx"
+    },
+    {
+      "nodeId": "2527:168085",
+      "component": "Close",
+      "file": "components/figma/cd-dm-010057/Close.tsx"
+    }
+  ]
+}

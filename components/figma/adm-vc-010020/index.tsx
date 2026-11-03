@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { PopupHeader } from "./PopupHeader";
 import { Body } from "./Body";
-import { PopupFooter } from "./PopupFooter";
+import { PopupFooter } from "../shared/PopupFooter";
 
 /** Figma frame "ADM-VC-010020 — Voucher / Popup chỉnh sửa voucher" — 920×587px. */
 export function AdmVc010020Page() {

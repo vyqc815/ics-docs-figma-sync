@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:50:57.046Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { PopupHeader } from "../shared/PopupHeader";
+import { PopupHeader15 } from "../shared/PopupHeader15";
 import { Body } from "./Body";
 import { TooltipTrangThaiHover } from "./TooltipTrangThaiHover";
 
@@ -11,7 +11,7 @@ import { TooltipTrangThaiHover } from "./TooltipTrangThaiHover";
 export function AdmHd010020Page() {
   return (
     <main className={`[--bg-strong:#e2e8f0] [--bg-surface:#ffffff] [--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-cbd5e1:#cbd5e1] [--color-extended-f8fafc:#f8fafc] [--color-extended-fff5ec:#fff5ec] [--color-neutral-900:#000000] [--color-neutral-white:#ffffff] [--color-semantic-error-text:#e11d48] [--color-text-muted:#cbd5e1] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[980px] h-[525px] flex flex-col justify-start items-start gap-[12px] [padding:0_0_24px_0] bg-[color:var(--color-neutral-white,#ffffff)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="2731:75565">
-      <PopupHeader />
+      <PopupHeader15 />
       <Body />
       <TooltipTrangThaiHover />
     </main>

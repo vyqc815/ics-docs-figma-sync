@@ -1,0 +1,417 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 241,
+    "height": 413,
+    "mismatched": 77,
+    "percent": 0.077,
+    "shapePercent": 0,
+    "textPercent": 0.191,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:119962;2015:36008",
+      "name": "Value",
+      "pixels": 7,
+      "percent": 1.3
+    },
+    {
+      "id": "I4056:119963;2015:31630;4056:122673;2015:31341",
+      "name": "Title",
+      "pixels": 17,
+      "percent": 0.4
+    },
+    {
+      "id": "I4056:119963;2015:31630;4056:122668;2015:30796",
+      "name": "Label",
+      "pixels": 10,
+      "percent": 0.3
+    },
+    {
+      "id": "I4056:119963;2015:31630;4056:122670;2015:31341",
+      "name": "Title",
+      "pixels": 11,
+      "percent": 0.3
+    },
+    {
+      "id": "I4056:119963;2015:31630;4056:122665;2015:30796",
+      "name": "Label",
+      "pixels": 6,
+      "percent": 0.2
+    },
+    {
+      "id": "I4056:119963;2015:31630;4056:122667;2015:30796",
+      "name": "Label",
+      "pixels": 8,
+      "percent": 0.2
+    },
+    {
+      "id": "I4056:119963;2015:31630;4056:122671;2015:31341",
+      "name": "Title",
+      "pixels": 6,
+      "percent": 0.2
+    },
+    {
+      "id": "I4056:119963;2015:31630;4056:122664;2015:31341",
+      "name": "Title",
+      "pixels": 3,
+      "percent": 0.1
+    },
+    {
+      "id": "I4056:119963;2015:31630;4056:122669;2015:30796",
+      "name": "Label",
+      "pixels": 5,
+      "percent": 0.1
+    },
+    {
+      "id": "I4056:119963;2015:31630;4056:122672;2015:31341",
+      "name": "Title",
+      "pixels": 3,
+      "percent": 0.1
+    },
+    {
+      "id": "I4056:119963;2015:31623;3269:75052",
+      "name": "Text",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4056:119963;2015:31630;4056:122666;2015:30796",
+      "name": "Label",
+      "pixels": 1,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 53,
+    "missing": [],
+    "withinThreshold": 53,
+    "buckets": {
+      "≤0.5px": 53,
+      "≤1px": 53,
+      "≤2px": 53,
+      "≤4px": 53,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:119962",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119962;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119962;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119962;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:119963",
+        "name": "Dropdown · Lọc · Tag",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31623",
+        "name": "Search",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31623;3269:75049",
+        "name": "Field",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31623;3269:75050",
+        "name": "Liner Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31623;3269:75051",
+        "name": "Input",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31623;3269:75052",
+        "name": "Text",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630",
+        "name": "Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122664",
+        "name": "Nhóm · Nghỉ học",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122664;2015:31340",
+        "name": "Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122664;2015:31341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122664;3269:72963",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122665",
+        "name": "BL - Bảo Lưu Nghỉ Học",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122665;2015:30792",
+        "name": "Control",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122665;2015:30795",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122665;2015:30796",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122666",
+        "name": "BC - Bỏ Cọc",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122666;2015:30792",
+        "name": "Control",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122666;2015:30795",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122666;2015:30796",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122667",
+        "name": "CL - Đã Chuyển Lớp",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:119963;2015:31630;4056:122667;2015:30792",
+        "name": "Control",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-hv-010202-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

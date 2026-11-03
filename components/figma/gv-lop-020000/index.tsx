@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:09:44.075Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body13 } from "../shared/Body13";
+import { Body23 } from "../shared/Body23";
 import { Maincontent } from "./Maincontent";
 import { Header } from "./Header";
 import { SidebarMenuTeacher } from "./SidebarMenuTeacher";
@@ -13,7 +13,7 @@ import { TooltipHoverNutBackThongTinLop } from "./TooltipHoverNutBackThongTinLop
 export function GvLop020000Page() {
   return (
     <main className={`[--bg-brand-tint-strong:#ffedd5] [--bg-surface:#ffffff] [--brand-primary:#e65100] [--color-border-button:#cbd5e1] [--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-dc2626:#dc2626] [--color-extended-f59e0b:#f59e0b] [--color-extended-f8fafc:#f8fafc] [--color-extended-f97316:#f97316] [--color-extended-ffedd5:#ffedd5] [--color-extended-fff7ed:#fff7ed] [--color-extended-fffaf8:#fffaf8] [--color-main-color-neutral-3:#ffffff] [--color-neutral-900:#000000] [--color-neutral-white:#ffffff] [--color-semantic-success:#2d9732] [--color-text-placeholder:#cccccc] [--color-text-primary:#334155] [--color-text-secondary:#64748b] [--org-border:#ffffff] [--org-sakumi-bg:#e33f64] [--org-sakumi-fg:#ffffff] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[847px] overflow-hidden bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="4324:4861">
-      <Body13 />
+      <Body23 />
       <Maincontent />
       <Header />
       <SidebarMenuTeacher />

@@ -3,17 +3,17 @@
  * Exported: 2026-11-03T02:44:48.672Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { PopupHeader11 } from "../shared/PopupHeader11";
+import { PopupHeader60 } from "../shared/PopupHeader60";
 import { Body } from "./Body";
-import { PopupFooter7 } from "../shared/PopupFooter7";
+import { PopupFooter33 } from "../shared/PopupFooter33";
 
 /** Figma frame "CD-KH-030210-DK — Học kỳ / Bài học / Popup chi tiết bài học (1)" — 980×545px. */
 export function CdKh030210DkPage() {
   return (
     <main className={`[--border-default:#27272a] [--color-border-button:#cbd5e1] [--color-extended-2563eb:#2563eb] [--color-extended-9333ea:#9333ea] [--color-extended-d1fae5:#d1fae5] [--color-extended-dbeafe:#dbeafe] [--color-extended-ecfdf5:#ecfdf5] [--color-extended-eff6ff:#eff6ff] [--color-extended-f3e8ff:#f3e8ff] [--color-neutral-white:#ffffff] [--color-text-placeholder:#cccccc] [--text-primary:#ededef] [--text-secondary:#a1a1aa] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[980px] h-[545px] flex flex-col justify-start items-start gap-[24px] bg-[color:#18181a] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="6015:64458">
-      <PopupHeader11 />
+      <PopupHeader60 />
       <Body />
-      <PopupFooter7 />
+      <PopupFooter33 />
     </main>
   );
 }

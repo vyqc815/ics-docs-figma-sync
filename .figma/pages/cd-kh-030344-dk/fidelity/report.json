@@ -1,0 +1,207 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 194,
+    "mismatched": 331,
+    "percent": 0.355,
+    "shapePercent": 0,
+    "textPercent": 0.715,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6579:392823;2514:153354",
+      "name": "Title",
+      "pixels": 123,
+      "percent": 1
+    },
+    {
+      "id": "I6579:392823;2514:153355",
+      "name": "Description",
+      "pixels": 99,
+      "percent": 1
+    },
+    {
+      "id": "6579:392827",
+      "name": "AI đang sinh prompt cho từng dòng và phân bổ kiến thức / kỹ năng. Bạn có thể huỷ để nhập lại.",
+      "pixels": 107,
+      "percent": 0.6
+    },
+    {
+      "id": "I6579:392825;6019:81729",
+      "name": "30%",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6579:392826",
+      "name": "Đang tạo 30 dòng theo yêu cầu của bạn… (9/30 dòng)",
+      "pixels": 2,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 11,
+    "missing": [],
+    "withinThreshold": 11,
+    "buckets": {
+      "≤0.5px": 11,
+      "≤1px": 11,
+      "≤2px": 11,
+      "≤4px": 11,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6579:392823",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6579:392823;2514:153353",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6579:392823;2514:153354",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6579:392823;2514:153355",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:392824",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:392825",
+        "name": "Global Progress Bar",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6579:392825;6019:81687",
+        "name": "Track",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6579:392825;6019:81688",
+        "name": "Fill · đang chạy",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6579:392825;6019:81729",
+        "name": "30%",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:392826",
+        "name": "Đang tạo 30 dòng theo yêu cầu của bạn… (9/30 dòng)",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:392827",
+        "name": "AI đang sinh prompt cho từng dòng và phân bổ kiến thức / kỹ năng. Bạn có thể huỷ để nhập lại.",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/cd-kh-030344-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

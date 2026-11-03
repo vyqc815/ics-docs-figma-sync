@@ -1,0 +1,192 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 315,
+    "mismatched": 710,
+    "percent": 0.47,
+    "shapePercent": 0.341,
+    "textPercent": 0.944,
+    "sizeMismatch": true
+  },
+  "textNodes": [
+    {
+      "id": "I4885:60394;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 186,
+      "percent": 6.3
+    },
+    {
+      "id": "I4885:60394;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 8,
+      "percent": 0.4
+    },
+    {
+      "id": "4885:60392",
+      "name": "Gửi khảo sát thành công",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4885:60393",
+      "name": "Cảm ơn bạn đã tham gia khảo sát. Câu trả",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 0,
+      "y": 312,
+      "width": 480,
+      "height": 3,
+      "pixels": 480,
+      "node": {
+        "id": "4885:60394",
+        "name": "Popup/Footer",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 224,
+      "y": 104,
+      "width": 32,
+      "height": 24,
+      "pixels": 29,
+      "node": {
+        "id": "4885:60391",
+        "name": "Minh hoạ",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 8,
+    "missing": [],
+    "withinThreshold": 8,
+    "buckets": {
+      "≤0.5px": 4,
+      "≤1px": 8,
+      "≤2px": 8,
+      "≤4px": 8,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4885:60394;2514:153361",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.69,
+        "dx": -0.69,
+        "dy": -0.01,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:60394;2514:153361;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.69,
+        "dx": -0.69,
+        "dy": -0.01,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:60394;2514:153363",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.67,
+        "dx": -0.67,
+        "dy": -0.01,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:60394;2514:153363;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.67,
+        "dx": -0.67,
+        "dy": -0.01,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:60391",
+        "name": "Minh hoạ",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:60392",
+        "name": "Gửi khảo sát thành công",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:60393",
+        "name": "Cảm ơn bạn đã tham gia khảo sát. Câu trả",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:60394",
+        "name": "Popup/Footer",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.69,
+    "over": []
+  },
+  "failures": [
+    "Rendered size differs from the reference render."
+  ],
+  "url": "http://localhost:3000/frames/gv-ks-010012-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

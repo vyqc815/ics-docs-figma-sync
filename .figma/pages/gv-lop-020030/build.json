@@ -1,0 +1,27 @@
+{
+  "route": "/frames/gv-lop-020030",
+  "pageFile": "components/figma/gv-lop-020030/index.tsx",
+  "docFile": "docs/pages/frames/gv-lop-020030.md",
+  "sections": [
+    {
+      "nodeId": "5413:255497",
+      "component": "PopupHeader",
+      "file": "components/figma/gv-lop-020030/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "5413:255498",
+      "component": "Section2",
+      "file": "components/figma/gv-lop-020030/Section2.tsx"
+    },
+    {
+      "nodeId": "5413:255546",
+      "component": "PopupFooter43",
+      "file": "components/figma/shared/PopupFooter43.tsx"
+    }
+  ],
+  "idAlias": {
+    "5413:255546": "5413:255582",
+    "I5413:255546;2514:153361": "I5413:255582;2514:153361",
+    "I5413:255546;2514:153361;1048:1232": "I5413:255582;2514:153361;1048:1232"
+  }
+}

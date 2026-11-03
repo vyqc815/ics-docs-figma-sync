@@ -5,7 +5,7 @@
 import { fontVariables } from "./fonts";
 import { PopupHeader } from "./PopupHeader";
 import { Body } from "./Body";
-import { PopupFooter3 } from "../shared/PopupFooter3";
+import { PopupFooter29 } from "../shared/PopupFooter29";
 
 /** Figma frame "CD-KH-030310 — Học kỳ / Kiểm tra / Popup cấu hình bài kiểm tra" — 980×723px. */
 export function CdKh030310Page() {
@@ -13,7 +13,7 @@ export function CdKh030310Page() {
     <main className={`[--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-c2410c:#c2410c] [--color-extended-f8fafc:#f8fafc] [--color-extended-ffedd5:#ffedd5] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-semantic-danger:#ed4038] [--color-text-muted:#cbd5e1] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[980px] h-[723px] flex flex-col justify-start items-start gap-[24px] bg-[color:var(--color-neutral-white,#ffffff)] rounded-[16px] [box-shadow:0_8px_24px_0_rgba(15,23,42,0.12)] ${fontVariables}`} data-figma-id="1496:16304">
       <PopupHeader />
       <Body />
-      <PopupFooter3 />
+      <PopupFooter29 />
     </main>
   );
 }

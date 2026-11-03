@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T03:27:29.253Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body4 } from "../shared/Body4";
+import { Body8 } from "../shared/Body8";
 import { Maincontent } from "./Maincontent";
 import { Header33 } from "../shared/Header33";
 import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
@@ -12,7 +12,7 @@ import { SidebarMenuAdmin } from "./SidebarMenuAdmin";
 export function AdmLop030100Page() {
   return (
     <main className={`[--bg-surface:#ffffff] [--brand-primary:#e65100] [--color-border-default:#e2e8f0] [--color-border-subtle:#f1f5f9] [--color-brand-orange:#e65100] [--color-extended-f8fafc:#f8fafc] [--color-extended-fed7aa:#fed7aa] [--color-extended-fff5ec:#fff5ec] [--color-neutral-white:#ffffff] [--color-semantic-error-strong:#ff0000] [--color-text-muted:#cbd5e1] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1059px] bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="3497:3712">
-      <Body4 />
+      <Body8 />
       <Maincontent />
       <Header33 />
       <SidebarMenuAdmin />

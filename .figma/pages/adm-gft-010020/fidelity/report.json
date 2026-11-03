@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 450,
+    "mismatched": 517,
+    "percent": 0.239,
+    "shapePercent": 0.001,
+    "textPercent": 0.771,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I3977:76959;2911:43272",
+      "name": "Required",
+      "pixels": 8,
+      "percent": 4.2
+    },
+    {
+      "id": "I3977:76966;2911:43272",
+      "name": "Required",
+      "pixels": 8,
+      "percent": 4.2
+    },
+    {
+      "id": "I3977:76969;2911:43272",
+      "name": "Required",
+      "pixels": 8,
+      "percent": 4.2
+    },
+    {
+      "id": "I3977:76972;2911:43272",
+      "name": "Required",
+      "pixels": 8,
+      "percent": 4.2
+    },
+    {
+      "id": "I3977:76962;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 50,
+      "percent": 2.6
+    },
+    {
+      "id": "I3977:76966;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 55,
+      "percent": 2.4
+    },
+    {
+      "id": "I3977:76959;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 28,
+      "percent": 2.3
+    },
+    {
+      "id": "I3977:76975;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 23,
+      "percent": 2.3
+    },
+    {
+      "id": "I3977:76972;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 37,
+      "percent": 2.1
+    },
+    {
+      "id": "I3977:76969;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 42,
+      "percent": 2
+    },
+    {
+      "id": "I3977:76955;2514:153342",
+      "name": "Description",
+      "pixels": 185,
+      "percent": 1.9
+    },
+    {
+      "id": "I3977:76976;2808:42233",
+      "name": "Tìm nội dung...",
+      "pixels": 52,
+      "percent": 0.6
+    },
+    {
+      "id": "3977:77035",
+      "name": "Thông báo lỗi",
+      "pixels": 7,
+      "percent": 0.3
+    },
+    {
+      "id": "I3977:76977;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I3977:76955;2514:153341",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 58,
+    "missing": [],
+    "withinThreshold": 58,
+    "buckets": {
+      "≤0.5px": 58,
+      "≤1px": 58,
+      "≤2px": 58,
+      "≤4px": 58,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3977:76962",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76962;2808:48145",
+        "name": "Nhãn trường",
+        "role": "text",
+        "delta": 0.16,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:76955",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76955;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76955;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76955;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76955;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:76956",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:76957",
+        "name": "Hàng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:76958",
+        "name": "Field · Gift code",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:76959",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76959;2808:48144",
+        "name": "Liner Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76959;2808:48145",
+        "name": "Nhãn trường",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76959;2911:43272",
+        "name": "Required",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:76960",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76960;1739:32457",
+        "name": "0000000009",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:76961",
+        "name": "Field · Mã người nhận",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76962;2808:48144",
+        "name": "Liner Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:77033",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:77033;1739:32457",
+        "name": "0000000009",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:76964",
+        "name": "Hàng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:76965",
+        "name": "Field · Số tháng miễn phí",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:76966",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76966;2808:48144",
+        "name": "Liner Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:76966;2808:48145",
+        "name": "Nhãn trường",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.16,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-gft-010020",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

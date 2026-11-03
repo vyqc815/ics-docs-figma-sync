@@ -1,0 +1,12 @@
+{
+  "route": "/frames/adm-lop-010004",
+  "pageFile": "components/figma/adm-lop-010004/index.tsx",
+  "docFile": "docs/pages/frames/adm-lop-010004.md",
+  "sections": [
+    {
+      "nodeId": "3634:78208",
+      "component": "DropdownAnHienCot",
+      "file": "components/figma/adm-lop-010004/DropdownAnHienCot.tsx"
+    }
+  ]
+}

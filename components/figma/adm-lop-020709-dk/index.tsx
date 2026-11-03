@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:19:02.527Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body8 } from "../shared/Body8";
+import { Body14 } from "../shared/Body14";
 import { Maincontent } from "./Maincontent";
 import { Header28 } from "../shared/Header28";
 import { SidebarRail } from "./SidebarRail";
@@ -12,7 +12,7 @@ import { SidebarRail } from "./SidebarRail";
 export function AdmLop020709DkPage() {
   return (
     <main className={`[--bg-brand-tint:#102218] [--bg-brand-tint-strong:#153020] [--bg-canvas:#121213] [--bg-strong:#2a2a2e] [--bg-subtle:#202023] [--bg-success:#12251a] [--bg-surface:#18181a] [--bg-warning:#29230f] [--border-brand:#1e4d31] [--border-default:#27272a] [--border-strong:#3f3f46] [--border-subtle:#1f1f22] [--brand-primary:#16a34a] [--chrome-bg:#0b0b0c] [--chrome-ring-dark:#0b0b0c] [--chrome-ring-light:#0b0b0c] [--color-neutral-white:#ffffff] [--text-muted:#71717a] [--text-on-brand:#ffffff] [--text-primary:#ededef] [--text-secondary:#a1a1aa] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[2190px] bg-[color:var(--bg-canvas,#121213)] ${fontVariables}`} data-figma-id="4056:114318">
-      <Body8 />
+      <Body14 />
       <Maincontent />
       <Header28 />
       <SidebarRail />

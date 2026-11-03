@@ -1,0 +1,462 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 525,
+    "height": 515,
+    "mismatched": 1104,
+    "percent": 0.408,
+    "shapePercent": 0.326,
+    "textPercent": 0.469,
+    "sizeMismatch": true
+  },
+  "textNodes": [
+    {
+      "id": "I4273:166222;2514:153342",
+      "name": "Description",
+      "pixels": 171,
+      "percent": 1.6
+    },
+    {
+      "id": "4273:166272",
+      "name": "DARK MODE",
+      "pixels": 22,
+      "percent": 0.9
+    },
+    {
+      "id": "4273:166229",
+      "name": "Cam · Mặc định",
+      "pixels": 9,
+      "percent": 0.4
+    },
+    {
+      "id": "4273:166240",
+      "name": "Tím",
+      "pixels": 4,
+      "percent": 0.2
+    },
+    {
+      "id": "4273:166246",
+      "name": "Xanh lá",
+      "pixels": 4,
+      "percent": 0.2
+    },
+    {
+      "id": "4273:166267",
+      "name": "Xám đậm",
+      "pixels": 6,
+      "percent": 0.2
+    },
+    {
+      "id": "4273:166251",
+      "name": "Xanh ngọc",
+      "pixels": 2,
+      "percent": 0.1
+    },
+    {
+      "id": "4273:166256",
+      "name": "Hồng",
+      "pixels": 2,
+      "percent": 0.1
+    },
+    {
+      "id": "4273:166262",
+      "name": "Đỏ",
+      "pixels": 2,
+      "percent": 0.1
+    },
+    {
+      "id": "I4273:166222;2514:153341",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4273:166235",
+      "name": "Xanh dương",
+      "pixels": 1,
+      "percent": 0
+    },
+    {
+      "id": "I4273:166273;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4273:166273;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 0,
+      "y": 512,
+      "width": 525,
+      "height": 3,
+      "pixels": 525,
+      "node": {
+        "id": "4273:166273",
+        "name": "Popup/Footer",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 32,
+      "y": 88,
+      "width": 128,
+      "height": 72,
+      "pixels": 290,
+      "node": {
+        "id": "4273:166226",
+        "name": "COLOR THEME",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 48,
+      "y": 88,
+      "width": 32,
+      "height": 56,
+      "pixels": 66,
+      "node": {
+        "id": "4273:166226",
+        "name": "COLOR THEME",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 60,
+    "missing": [],
+    "withinThreshold": 60,
+    "buckets": {
+      "≤0.5px": 60,
+      "≤1px": 60,
+      "≤2px": 60,
+      "≤4px": 60,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4273:166223",
+        "name": "Body",
+        "role": "container",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.04,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166260",
+        "name": "Nhãn",
+        "role": "container",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": -0.04,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166261",
+        "name": "Màu",
+        "role": "shape",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166262",
+        "name": "Đỏ",
+        "role": "text",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": -0.04,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166265",
+        "name": "Nhãn",
+        "role": "container",
+        "delta": 0.04,
+        "dx": -0.01,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166266",
+        "name": "Màu",
+        "role": "shape",
+        "delta": 0.04,
+        "dx": -0.01,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166267",
+        "name": "Xám đậm",
+        "role": "text",
+        "delta": 0.04,
+        "dx": -0.01,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166270",
+        "name": "Nhãn",
+        "role": "container",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166271",
+        "name": "Màu",
+        "role": "shape",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166272",
+        "name": "DARK MODE",
+        "role": "text",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166273",
+        "name": "Popup/Footer",
+        "role": "instance",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:166273;2514:153361",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:166273;2514:153361;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:166273;2514:153363",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4273:166273;2514:153363;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.04,
+        "dx": 0,
+        "dy": -0.04,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166244",
+        "name": "Nhãn",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": -0.03,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166245",
+        "name": "Màu",
+        "role": "shape",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": -0.03,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166246",
+        "name": "Xanh lá",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": -0.03,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166249",
+        "name": "Nhãn",
+        "role": "container",
+        "delta": 0.03,
+        "dx": -0.01,
+        "dy": -0.03,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166250",
+        "name": "Màu",
+        "role": "shape",
+        "delta": 0.03,
+        "dx": -0.01,
+        "dy": -0.03,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166251",
+        "name": "Xanh ngọc",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.01,
+        "dy": -0.03,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166254",
+        "name": "Nhãn",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": -0.03,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166255",
+        "name": "Màu",
+        "role": "shape",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": -0.03,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166256",
+        "name": "Hồng",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": -0.03,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4273:166257",
+        "name": "Hàng",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": -0.03,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.04,
+    "over": []
+  },
+  "failures": [
+    "Rendered size differs from the reference render."
+  ],
+  "url": "http://localhost:3000/frames/pro-gd-010010",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

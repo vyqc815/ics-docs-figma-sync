@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 949,
+    "height": 236,
+    "mismatched": 1055,
+    "percent": 0.471,
+    "shapePercent": 0,
+    "textPercent": 1.797,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:124484",
+      "name": "Người phụ trách",
+      "pixels": 140,
+      "percent": 5.6
+    },
+    {
+      "id": "4056:124486",
+      "name": "Người theo dõi",
+      "pixels": 122,
+      "percent": 5.2
+    },
+    {
+      "id": "4056:124480",
+      "name": "Nội dung",
+      "pixels": 65,
+      "percent": 4.6
+    },
+    {
+      "id": "I4056:124515;2409:141122",
+      "name": "Initials",
+      "pixels": 10,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:124478",
+      "name": "Thời gian",
+      "pixels": 53,
+      "percent": 3.7
+    },
+    {
+      "id": "4056:124488",
+      "name": "Đối tượng",
+      "pixels": 82,
+      "percent": 3.6
+    },
+    {
+      "id": "4056:124490",
+      "name": "trạng thái",
+      "pixels": 67,
+      "percent": 3.6
+    },
+    {
+      "id": "I4056:124517;2409:141122",
+      "name": "Initials",
+      "pixels": 9,
+      "percent": 3.6
+    },
+    {
+      "id": "4056:124523",
+      "name": "nội dung về quy trình giảng dạy mới",
+      "pixels": 220,
+      "percent": 3.2
+    },
+    {
+      "id": "4056:124482",
+      "name": "Ghi chú",
+      "pixels": 61,
+      "percent": 1.6
+    },
+    {
+      "id": "4056:124510",
+      "name": "nội dung b",
+      "pixels": 41,
+      "percent": 1.1
+    },
+    {
+      "id": "4056:124511",
+      "name": "dsadasasfa",
+      "pixels": 44,
+      "percent": 1.1
+    },
+    {
+      "id": "I4056:124513;2409:141125",
+      "name": "Initials",
+      "pixels": 2,
+      "percent": 1
+    },
+    {
+      "id": "I4056:124509;1877:9113",
+      "name": "Hôm nay",
+      "pixels": 10,
+      "percent": 0.9
+    },
+    {
+      "id": "4056:124497",
+      "name": "- Quy trình - Quy trình 1 - Quy trình - Quy trình 1",
+      "pixels": 112,
+      "percent": 0.8
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 69,
+    "missing": [],
+    "withinThreshold": 69,
+    "buckets": {
+      "≤0.5px": 69,
+      "≤1px": 69,
+      "≤2px": 69,
+      "≤4px": 69,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4056:124509;1877:9113",
+        "name": "Hôm nay",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124473",
+        "name": "Table Scroll Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124474",
+        "name": "Table",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124475",
+        "name": "Frame 427321948",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124476",
+        "name": "Frame 427326027",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124477",
+        "name": "Cell",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124478",
+        "name": "Thời gian",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124479",
+        "name": "Cell",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124480",
+        "name": "Nội dung",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124481",
+        "name": "Cell",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124482",
+        "name": "Ghi chú",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124483",
+        "name": "Cell",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124484",
+        "name": "Người phụ trách",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124485",
+        "name": "Cell",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124486",
+        "name": "Người theo dõi",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124487",
+        "name": "Cell",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124488",
+        "name": "Đối tượng",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124489",
+        "name": "Cell",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124490",
+        "name": "trạng thái",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124491",
+        "name": "Table Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124492",
+        "name": "Teachers Row List",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124493",
+        "name": "Frame 427321962",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124494",
+        "name": "Frame 427326026",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:124495",
+        "name": "Thời gian lịch hẹn",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:124495;1877:9117",
+        "name": "Hôm qua",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.03,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-gv-010050-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

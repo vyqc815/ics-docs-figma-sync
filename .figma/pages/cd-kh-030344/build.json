@@ -1,0 +1,17 @@
+{
+  "route": "/frames/cd-kh-030344",
+  "pageFile": "components/figma/cd-kh-030344/index.tsx",
+  "docFile": "docs/pages/frames/cd-kh-030344.md",
+  "sections": [
+    {
+      "nodeId": "5609:31773",
+      "component": "PopupHeader",
+      "file": "components/figma/cd-kh-030344/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "5609:31774",
+      "component": "Body",
+      "file": "components/figma/cd-kh-030344/Body.tsx"
+    }
+  ]
+}

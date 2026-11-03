@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:18:57.331Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body10 } from "../shared/Body10";
+import { Body16 } from "../shared/Body16";
 import { Maincontent } from "./Maincontent";
 import { Header36 } from "../shared/Header36";
 import { SidebarMenuAdmin7 } from "../shared/SidebarMenuAdmin7";
@@ -12,7 +12,7 @@ import { SidebarMenuAdmin7 } from "../shared/SidebarMenuAdmin7";
 export function AdmLop030401Page() {
   return (
     <main className={`[--bg-canvas:#f8fafc] [--bg-surface:#ffffff] [--border-strong:#cbd5e1] [--brand-primary:#e65100] [--color-border-button:#cbd5e1] [--color-brand-orange:#e65100] [--color-extended-ecfdf5:#ecfdf5] [--color-extended-f0f9ff:#f0f9ff] [--color-extended-faf5ff:#faf5ff] [--color-extended-fed7aa:#fed7aa] [--color-extended-fff5ec:#fff5ec] [--color-extended-fffbeb:#fffbeb] [--color-neutral-white:#ffffff] [--color-text-muted:#cbd5e1] [--color-text-placeholder:#cccccc] [--color-text-primary:#334155] [--color-text-secondary:#64748b] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[1059px] bg-[color:#f8fafc] ${fontVariables}`} data-figma-id="4554:25922">
-      <Body10 />
+      <Body16 />
       <Maincontent />
       <Header36 />
       <SidebarMenuAdmin7 />

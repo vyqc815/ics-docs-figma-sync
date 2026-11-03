@@ -1,0 +1,22 @@
+{
+  "route": "/frames/adm-tag-010020",
+  "pageFile": "components/figma/adm-tag-010020/index.tsx",
+  "docFile": "docs/pages/frames/adm-tag-010020.md",
+  "sections": [
+    {
+      "nodeId": "3065:69666",
+      "component": "PopupHeader",
+      "file": "components/figma/adm-tag-010020/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "3065:69667",
+      "component": "Body",
+      "file": "components/figma/adm-tag-010020/Body.tsx"
+    },
+    {
+      "nodeId": "3065:69681",
+      "component": "PopupFooter",
+      "file": "components/figma/adm-tag-010020/PopupFooter.tsx"
+    }
+  ]
+}

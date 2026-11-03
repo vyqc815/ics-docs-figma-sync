@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 720,
+    "height": 680,
+    "mismatched": 1733,
+    "percent": 0.354,
+    "shapePercent": 0,
+    "textPercent": 1.433,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4885:61368;2514:153341",
+      "name": "Title",
+      "pixels": 1397,
+      "percent": 7.4
+    },
+    {
+      "id": "4885:61386",
+      "name": "Câu 29: Cách trình bày các dạng bài tập ",
+      "pixels": 165,
+      "percent": 1.4
+    },
+    {
+      "id": "I4885:61374;1048:1253",
+      "name": "Badge",
+      "pixels": 15,
+      "percent": 1.1
+    },
+    {
+      "id": "4885:61379",
+      "name": "C. Trung bình",
+      "pixels": 32,
+      "percent": 1.1
+    },
+    {
+      "id": "I4885:61384;1048:1253",
+      "name": "Badge",
+      "pixels": 15,
+      "percent": 1.1
+    },
+    {
+      "id": "I4885:61394;1048:1253",
+      "name": "Badge",
+      "pixels": 15,
+      "percent": 1.1
+    },
+    {
+      "id": "I4885:61404;1048:1253",
+      "name": "Badge",
+      "pixels": 15,
+      "percent": 1.1
+    },
+    {
+      "id": "I4885:61415;1048:1255",
+      "name": "Badge",
+      "pixels": 13,
+      "percent": 0.7
+    },
+    {
+      "id": "I4885:61375;1048:1249",
+      "name": "Badge",
+      "pixels": 4,
+      "percent": 0.4
+    },
+    {
+      "id": "I4885:61385;1048:1249",
+      "name": "Badge",
+      "pixels": 4,
+      "percent": 0.4
+    },
+    {
+      "id": "I4885:61395;1048:1249",
+      "name": "Badge",
+      "pixels": 4,
+      "percent": 0.4
+    },
+    {
+      "id": "I4885:61405;1048:1249",
+      "name": "Badge",
+      "pixels": 4,
+      "percent": 0.4
+    },
+    {
+      "id": "I4885:61368;2514:153342",
+      "name": "Description",
+      "pixels": 27,
+      "percent": 0.2
+    },
+    {
+      "id": "4885:61376",
+      "name": "Câu 28: Mức độ trực quan của các Icon ch",
+      "pixels": 15,
+      "percent": 0.1
+    },
+    {
+      "id": "4885:61399",
+      "name": "C. Tương đối đồng bộ",
+      "pixels": 4,
+      "percent": 0.1
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 70,
+    "missing": [],
+    "withinThreshold": 70,
+    "buckets": {
+      "≤0.5px": 68,
+      "≤1px": 70,
+      "≤2px": 70,
+      "≤4px": 70,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4885:61417",
+        "name": "Câu trả lời",
+        "role": "container",
+        "delta": 0.61,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0.61,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61418",
+        "name": "Chưa trả lời",
+        "role": "text",
+        "delta": 0.61,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0.61,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61407",
+        "name": "Câu trả lời",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61409",
+        "name": "B. Máy tính",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61377",
+        "name": "Câu trả lời",
+        "role": "container",
+        "delta": 0.33,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0.33,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61379",
+        "name": "C. Trung bình",
+        "role": "text",
+        "delta": 0.33,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0.33,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61371",
+        "name": "Câu 28",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:61371;1050:2411",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61372",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61373",
+        "name": "Tags",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61374",
+        "name": "Trắc nghiệm",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:61374;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61375",
+        "name": "Bắt buộc",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:61375;1048:1249",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61376",
+        "name": "Câu 28: Mức độ trực quan của các Icon ch",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61378",
+        "name": "Đã trả lời",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61381",
+        "name": "Câu 29",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:61381;1050:2411",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61382",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61383",
+        "name": "Tags",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61384",
+        "name": "Trắc nghiệm",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:61384;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61385",
+        "name": "Bắt buộc",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:61385;1048:1249",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:61386",
+        "name": "Câu 29: Cách trình bày các dạng bài tập ",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.61,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-gks-020030-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

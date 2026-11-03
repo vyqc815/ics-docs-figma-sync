@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 800,
+    "height": 273,
+    "mismatched": 411,
+    "percent": 0.188,
+    "shapePercent": 0,
+    "textPercent": 0.729,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:117513;1739:32361",
+      "name": "18:30",
+      "pixels": 55,
+      "percent": 6.7
+    },
+    {
+      "id": "I4056:117496;2008:48177",
+      "name": "31.01.2026 - 06.01.2026",
+      "pixels": 162,
+      "percent": 5.1
+    },
+    {
+      "id": "I4056:117506;1739:32803",
+      "name": "18:30",
+      "pixels": 41,
+      "percent": 5
+    },
+    {
+      "id": "4056:117512",
+      "name": "Giờ kết thúc",
+      "pixels": 33,
+      "percent": 2.1
+    },
+    {
+      "id": "I4056:117494;2177:28928",
+      "name": "Chi tiết NV",
+      "pixels": 59,
+      "percent": 2
+    },
+    {
+      "id": "4056:117505",
+      "name": "Giờ bắt đầu",
+      "pixels": 19,
+      "percent": 1.2
+    },
+    {
+      "id": "I4056:117495;2177:28936",
+      "name": "Nhiệm vụ con",
+      "pixels": 34,
+      "percent": 1.1
+    },
+    {
+      "id": "I4056:117547;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 2,
+      "percent": 0.3
+    },
+    {
+      "id": "4056:117518",
+      "name": "Thứ 2",
+      "pixels": 3,
+      "percent": 0.2
+    },
+    {
+      "id": "4056:117522",
+      "name": "Thứ 4",
+      "pixels": 2,
+      "percent": 0.1
+    },
+    {
+      "id": "4056:117528",
+      "name": "Thứ 7",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I4056:117490;2514:153358",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4056:117509",
+      "name": "–",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4056:117520",
+      "name": "Thứ 3",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4056:117524",
+      "name": "Thứ 5",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 83,
+    "missing": [],
+    "withinThreshold": 83,
+    "buckets": {
+      "≤0.5px": 82,
+      "≤1px": 83,
+      "≤2px": 83,
+      "≤4px": 83,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:117546",
+        "name": "Helper",
+        "role": "text",
+        "delta": 0.78,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.78,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117502",
+        "name": "Frame 427326015",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117507",
+        "name": "Dash Separator:margin:align-flex-end",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117508",
+        "name": "Dash Separator:margin",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117509",
+        "name": "–",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117510",
+        "name": "Frame 427326014",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117511",
+        "name": "Label",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117512",
+        "name": "Giờ kết thúc",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117513",
+        "name": "Time",
+        "role": "instance",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:117513;1739:32358",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:117513;1739:32359",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:117513;1739:32360",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:117513;1739:32361",
+        "name": "18:30",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:117513;1739:32362",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117514",
+        "name": "Vector 2",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117515",
+        "name": "Frame 1171274922",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117516",
+        "name": "Frame 427323673",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117517",
+        "name": "Frame 427323677",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117518",
+        "name": "Thứ 2",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117531",
+        "name": "Frame 427325137",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117532",
+        "name": "Component 153",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117533",
+        "name": "Radio",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117519",
+        "name": "Frame 427323684",
+        "role": "container",
+        "delta": 0.45,
+        "dx": -0.45,
+        "dy": 0,
+        "dw": 0.07,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117520",
+        "name": "Thứ 3",
+        "role": "text",
+        "delta": 0.45,
+        "dx": -0.45,
+        "dy": 0,
+        "dw": 0.07,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117534",
+        "name": "Component 160",
+        "role": "container",
+        "delta": 0.45,
+        "dx": -0.45,
+        "dy": 0,
+        "dw": 0.07,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.78,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-lop-040520-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

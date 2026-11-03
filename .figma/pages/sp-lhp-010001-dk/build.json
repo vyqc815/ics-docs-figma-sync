@@ -1,0 +1,22 @@
+{
+  "route": "/lich-hop/dropdown-loc-nguoi-tham-gia-dk",
+  "pageFile": "components/figma/sp-lhp-010001-dk/index.tsx",
+  "docFile": "docs/pages/lich-hop/dropdown-loc-nguoi-tham-gia-dk.md",
+  "sections": [
+    {
+      "nodeId": "6935:385967",
+      "component": "Body26",
+      "file": "components/figma/shared/Body26.tsx"
+    },
+    {
+      "nodeId": "6935:386103",
+      "component": "Section2",
+      "file": "components/figma/sp-lhp-010001-dk/Section2.tsx"
+    },
+    {
+      "nodeId": "6935:386485",
+      "component": "DropdownNguoiThamGia",
+      "file": "components/figma/sp-lhp-010001-dk/DropdownNguoiThamGia.tsx"
+    }
+  ]
+}

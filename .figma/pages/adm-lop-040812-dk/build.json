@@ -1,0 +1,22 @@
+{
+  "route": "/frames/adm-lop-040812-dk",
+  "pageFile": "components/figma/adm-lop-040812-dk/index.tsx",
+  "docFile": "docs/pages/frames/adm-lop-040812-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:118324",
+      "component": "PopupHeader",
+      "file": "components/figma/adm-lop-040812-dk/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "4056:118325",
+      "component": "Body",
+      "file": "components/figma/adm-lop-040812-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:118342",
+      "component": "PopupFooter",
+      "file": "components/figma/adm-lop-040812-dk/PopupFooter.tsx"
+    }
+  ]
+}

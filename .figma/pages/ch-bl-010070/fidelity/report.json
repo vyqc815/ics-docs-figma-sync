@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 515,
+    "mismatched": 566,
+    "percent": 0.229,
+    "shapePercent": 0,
+    "textPercent": 0.766,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5371:40448;2015:30513",
+      "name": "Label",
+      "pixels": 32,
+      "percent": 4
+    },
+    {
+      "id": "I5371:40426;1048:1255",
+      "name": "Badge",
+      "pixels": 38,
+      "percent": 3.4
+    },
+    {
+      "id": "I5371:40456;1048:1255",
+      "name": "Badge",
+      "pixels": 38,
+      "percent": 3.4
+    },
+    {
+      "id": "I5371:40304;2514:153342",
+      "name": "Description",
+      "pixels": 288,
+      "percent": 1.5
+    },
+    {
+      "id": "I5371:40410;1725:17126",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 0.9
+    },
+    {
+      "id": "5371:40428",
+      "name": "Tồn đọng 3 ngày",
+      "pixels": 13,
+      "percent": 0.8
+    },
+    {
+      "id": "5371:40437",
+      "name": "Sai pinyin từ 再见",
+      "pixels": 17,
+      "percent": 0.8
+    },
+    {
+      "id": "I5371:40336;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 9,
+      "percent": 0.8
+    },
+    {
+      "id": "I5371:40407;1725:17144",
+      "name": "Label",
+      "pixels": 10,
+      "percent": 0.7
+    },
+    {
+      "id": "I5371:40420;1725:17126",
+      "name": "Label",
+      "pixels": 11,
+      "percent": 0.7
+    },
+    {
+      "id": "5371:40458",
+      "name": "Tồn đọng 11 ngày",
+      "pixels": 12,
+      "percent": 0.7
+    },
+    {
+      "id": "5371:40423",
+      "name": "Không lưu được điểm bài tập",
+      "pixels": 21,
+      "percent": 0.6
+    },
+    {
+      "id": "I5371:40304;2514:153341",
+      "name": "Title",
+      "pixels": 42,
+      "percent": 0.3
+    },
+    {
+      "id": "I5371:40440;1048:1251",
+      "name": "Badge",
+      "pixels": 4,
+      "percent": 0.3
+    },
+    {
+      "id": "5371:40442",
+      "name": "Tồn đọng 9 ngày",
+      "pixels": 5,
+      "percent": 0.3
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 62,
+    "missing": [],
+    "withinThreshold": 62,
+    "buckets": {
+      "≤0.5px": 61,
+      "≤1px": 62,
+      "≤2px": 62,
+      "≤4px": 62,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5371:40423",
+        "name": "Không lưu được điểm bài tập",
+        "role": "text",
+        "delta": 0.86,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.86,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40417",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40425",
+        "name": "Trạng thái",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40428",
+        "name": "Tồn đọng 3 ngày",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40431",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40439",
+        "name": "Trạng thái",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40442",
+        "name": "Tồn đọng 9 ngày",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40445",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40455",
+        "name": "Trạng thái",
+        "role": "container",
+        "delta": 0.27,
+        "dx": -0.27,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40458",
+        "name": "Tồn đọng 11 ngày",
+        "role": "text",
+        "delta": 0.27,
+        "dx": -0.27,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40426",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:40426;1048:1255",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40456",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:40456;1048:1255",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40407",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:40407;1725:17143",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:40407;1725:17144",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40410",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:40410;1725:17125",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:40410;1725:17126",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40413",
+        "name": "sp",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0.06,
+        "dy": 0,
+        "dw": -0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5371:40304",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:40304;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:40304;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5371:40304;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.86,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/ch-bl-010070",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

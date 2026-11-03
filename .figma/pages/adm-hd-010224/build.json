@@ -5,13 +5,20 @@
   "sections": [
     {
       "nodeId": "2731:75801",
-      "component": "PopupHeader3",
-      "file": "components/figma/shared/PopupHeader3.tsx"
+      "component": "PopupHeader23",
+      "file": "components/figma/shared/PopupHeader23.tsx"
     },
     {
       "nodeId": "2731:75810",
       "component": "Body",
       "file": "components/figma/adm-hd-010224/Body.tsx"
     }
-  ]
+  ],
+  "idAlias": {
+    "2731:75801": "2731:75710",
+    "I2731:75801;2514:153340": "I2731:75710;2514:153340",
+    "I2731:75801;2711:67900": "I2731:75710;2711:67900",
+    "I2731:75801;2514:153341": "I2731:75710;2514:153341",
+    "I2731:75801;2514:153342": "I2731:75710;2514:153342"
+  }
 }

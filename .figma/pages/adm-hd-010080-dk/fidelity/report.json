@@ -1,0 +1,250 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 242,
+    "mismatched": 502,
+    "percent": 0.432,
+    "shapePercent": 0.41,
+    "textPercent": 0.136,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:135454",
+      "name": "Thêm Tag",
+      "pixels": 9,
+      "percent": 0.5
+    },
+    {
+      "id": "4056:135456",
+      "name": "Thêm Lịch Hẹn",
+      "pixels": 10,
+      "percent": 0.4
+    },
+    {
+      "id": "4056:135458",
+      "name": "Xem lịch sử",
+      "pixels": 7,
+      "percent": 0.3
+    },
+    {
+      "id": "I4056:135451;2514:153358",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 16,
+      "y": 112,
+      "width": 448,
+      "height": 112,
+      "pixels": 361,
+      "node": {
+        "id": "4056:135452",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 16,
+      "y": 112,
+      "width": 288,
+      "height": 40,
+      "pixels": 101,
+      "node": {
+        "id": "4056:135455",
+        "name": "Thêm Lịch Hẹn",
+        "role": "container"
+      }
+    },
+    {
+      "x": 312,
+      "y": 112,
+      "width": 72,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "4056:135455",
+        "name": "Thêm Lịch Hẹn",
+        "role": "container"
+      }
+    },
+    {
+      "x": 392,
+      "y": 112,
+      "width": 32,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4056:135455",
+        "name": "Thêm Lịch Hẹn",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 11,
+    "missing": [],
+    "withinThreshold": 11,
+    "buckets": {
+      "≤0.5px": 11,
+      "≤1px": 11,
+      "≤2px": 11,
+      "≤4px": 11,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:135451",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:135451;2514:153357",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:135451;2514:153358",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:135452",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:135453",
+        "name": "Thêm Tag · Hover",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:135454",
+        "name": "Thêm Tag",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:135455",
+        "name": "Thêm Lịch Hẹn",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:135456",
+        "name": "Thêm Lịch Hẹn",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:135457",
+        "name": "Xem lịch sử",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:135458",
+        "name": "Xem lịch sử",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:135459",
+        "name": "Mouse click",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 0,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-hd-010080-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

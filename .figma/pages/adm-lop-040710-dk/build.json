@@ -1,0 +1,29 @@
+{
+  "route": "/frames/adm-lop-040710-dk",
+  "pageFile": "components/figma/adm-lop-040710-dk/index.tsx",
+  "docFile": "docs/pages/frames/adm-lop-040710-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:118109",
+      "component": "PopupHeader",
+      "file": "components/figma/adm-lop-040710-dk/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "4056:118110",
+      "component": "Body",
+      "file": "components/figma/adm-lop-040710-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:118128",
+      "component": "PopupFooter2",
+      "file": "components/figma/shared/PopupFooter2.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:118128": "4056:130422",
+    "I4056:118128;2514:153361": "I4056:130422;2514:153361",
+    "I4056:118128;2514:153361;1048:1232": "I4056:130422;2514:153361;1048:1232",
+    "I4056:118128;2514:153363": "I4056:130422;2514:153363",
+    "I4056:118128;2514:153363;1048:1230": "I4056:130422;2514:153363;1048:1230"
+  }
+}

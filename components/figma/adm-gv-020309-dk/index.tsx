@@ -3,7 +3,7 @@
  * Exported: 2026-11-03T01:18:56.171Z. Re-running the generator overwrites this file. */
 
 import { fontVariables } from "./fonts";
-import { Body2 } from "../shared/Body2";
+import { Body6 } from "../shared/Body6";
 import { MainScrollableWorkspace } from "./MainScrollableWorkspace";
 import { Sidebar2 } from "../shared/Sidebar2";
 
@@ -11,7 +11,7 @@ import { Sidebar2 } from "../shared/Sidebar2";
 export function AdmGv020309DkPage() {
   return (
     <main className={`[--bg-brand-tint:#102218] [--bg-brand-tint-strong:#153020] [--bg-canvas:#121213] [--bg-info:#10202e] [--bg-strong:#2a2a2e] [--bg-subtle:#202023] [--bg-success:#12251a] [--bg-surface:#18181a] [--border-brand:#1e4d31] [--border-default:#27272a] [--border-strong:#3f3f46] [--brand-primary:#16a34a] [--chrome-bg:#0b0b0c] [--color-neutral-white:#ffffff] [--text-on-brand:#ffffff] [--text-primary:#ededef] [--text-secondary:#a1a1aa] relative [margin:0_auto] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale] w-[1440px] h-[954px] overflow-hidden bg-[color:var(--bg-canvas,#121213)] ${fontVariables}`} data-figma-id="4056:125305">
-      <Body2 />
+      <Body6 />
       <MainScrollableWorkspace />
       <Sidebar2 />
     </main>

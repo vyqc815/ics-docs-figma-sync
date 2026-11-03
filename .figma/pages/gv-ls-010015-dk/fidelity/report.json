@@ -1,0 +1,429 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 480,
+    "height": 356,
+    "mismatched": 905,
+    "percent": 0.53,
+    "shapePercent": 0.001,
+    "textPercent": 1.213,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4899:111946;2808:43032",
+      "name": "Số câu hỏi và tổng điểm có thể được cập nhật tự động dựa trên nội dung trong tab Bộ câu hỏi.",
+      "pixels": 404,
+      "percent": 6.2
+    },
+    {
+      "id": "I4899:111931;2514:153342",
+      "name": "Description",
+      "pixels": 303,
+      "percent": 3.1
+    },
+    {
+      "id": "I4899:111946;2808:43031",
+      "name": "Lưu ý",
+      "pixels": 83,
+      "percent": 1.3
+    },
+    {
+      "id": "I4899:111947;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 28,
+      "percent": 0.9
+    },
+    {
+      "id": "4899:111939",
+      "name": "280.000 đ (+16,7%)",
+      "pixels": 24,
+      "percent": 0.4
+    },
+    {
+      "id": "4899:111936",
+      "name": "240.000 đ",
+      "pixels": 17,
+      "percent": 0.3
+    },
+    {
+      "id": "4899:111945",
+      "name": "Đã dạy 30 buổi trong năm, KPI đạt 95%, hoàn thành HSK 6.",
+      "pixels": 35,
+      "percent": 0.3
+    },
+    {
+      "id": "4899:111942",
+      "name": "Có bằng cấp / chứng chỉ cao hơn",
+      "pixels": 8,
+      "percent": 0.1
+    },
+    {
+      "id": "I4899:111931;2514:153341",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4899:111935",
+      "name": "Lương hiện tại",
+      "pixels": 1,
+      "percent": 0
+    },
+    {
+      "id": "4899:111938",
+      "name": "Mức đề xuất",
+      "pixels": 1,
+      "percent": 0
+    },
+    {
+      "id": "4899:111941",
+      "name": "Lý do",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "4899:111944",
+      "name": "Chi tiết",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I4899:111947;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 29,
+    "missing": [],
+    "withinThreshold": 29,
+    "buckets": {
+      "≤0.5px": 29,
+      "≤1px": 29,
+      "≤2px": 29,
+      "≤4px": 29,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4899:111946;2808:43030",
+        "name": "Paragraph",
+        "role": "container",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:111946;2808:43031",
+        "name": "Lưu ý",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:111946;2808:43032",
+        "name": "Số câu hỏi và tổng điểm có thể được cập nhật tự động dựa trên nội dung trong tab Bộ câu hỏi.",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111931",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:111931;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:111931;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:111931;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:111931;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111932",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111933",
+        "name": "Tóm tắt",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111934",
+        "name": "Lương hiện tại",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111935",
+        "name": "Lương hiện tại",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111936",
+        "name": "240.000 đ",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111937",
+        "name": "Mức đề xuất",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111938",
+        "name": "Mức đề xuất",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111939",
+        "name": "280.000 đ (+16,7%)",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111940",
+        "name": "Lý do",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111941",
+        "name": "Lý do",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111942",
+        "name": "Có bằng cấp / chứng chỉ cao hơn",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111943",
+        "name": "Chi tiết",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111944",
+        "name": "Chi tiết",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111945",
+        "name": "Đã dạy 30 buổi trong năm, KPI đạt 95%, hoàn thành HSK 6.",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111946",
+        "name": "Atom/Alert",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:111946;2808:43028",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:111947",
+        "name": "Popup/Footer",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.19,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/gv-ls-010015-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

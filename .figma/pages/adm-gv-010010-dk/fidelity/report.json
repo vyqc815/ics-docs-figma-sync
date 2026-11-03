@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 680,
+    "height": 546,
+    "mismatched": 742,
+    "percent": 0.2,
+    "shapePercent": 0,
+    "textPercent": 0.739,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:123773",
+      "name": "Kiểm tra ca làm việc của giáo viên",
+      "pixels": 231,
+      "percent": 5.4
+    },
+    {
+      "id": "4056:123670",
+      "name": "Ngày",
+      "pixels": 19,
+      "percent": 2.6
+    },
+    {
+      "id": "I4056:123656;2514:153355",
+      "name": "Description",
+      "pixels": 251,
+      "percent": 1.8
+    },
+    {
+      "id": "4056:123703",
+      "name": "Họ và tên",
+      "pixels": 21,
+      "percent": 1.7
+    },
+    {
+      "id": "4056:123735",
+      "name": "Họ và tên",
+      "pixels": 21,
+      "percent": 1.7
+    },
+    {
+      "id": "4056:123678",
+      "name": "Giờ bắt đầu",
+      "pixels": 25,
+      "percent": 1.6
+    },
+    {
+      "id": "4056:123689",
+      "name": "Giờ kết thúc",
+      "pixels": 25,
+      "percent": 1.6
+    },
+    {
+      "id": "4056:123711",
+      "name": "Giờ bắt đầu",
+      "pixels": 25,
+      "percent": 1.6
+    },
+    {
+      "id": "4056:123722",
+      "name": "Giờ kết thúc",
+      "pixels": 25,
+      "percent": 1.6
+    },
+    {
+      "id": "4056:123743",
+      "name": "Giờ bắt đầu",
+      "pixels": 25,
+      "percent": 1.6
+    },
+    {
+      "id": "4056:123754",
+      "name": "Giờ kết thúc",
+      "pixels": 25,
+      "percent": 1.6
+    },
+    {
+      "id": "4056:123662",
+      "name": "Thêm Khung Giờ",
+      "pixels": 39,
+      "percent": 0.3
+    },
+    {
+      "id": "I4056:123780;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 2,
+      "percent": 0.3
+    },
+    {
+      "id": "4056:123779",
+      "name": "Chỉ hiển thị giáo viên có thể dạy trong các khung giờ đã chọn.",
+      "pixels": 6,
+      "percent": 0.1
+    },
+    {
+      "id": "I4056:123656;2514:153354",
+      "name": "Title",
+      "pixels": 2,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 117,
+    "missing": [],
+    "withinThreshold": 117,
+    "buckets": {
+      "≤0.5px": 117,
+      "≤1px": 117,
+      "≤2px": 117,
+      "≤4px": 117,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:123684",
+        "name": "Dash Separator:margin:align-flex-end",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123685",
+        "name": "Dash Separator:margin",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123686",
+        "name": "–",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123717",
+        "name": "Dash Separator:margin:align-flex-end",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123718",
+        "name": "Dash Separator:margin",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123719",
+        "name": "–",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123749",
+        "name": "Dash Separator:margin:align-flex-end",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123750",
+        "name": "Dash Separator:margin",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123751",
+        "name": "–",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123682",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.33,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123715",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.33,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123747",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.33,
+        "dx": 0.33,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123772",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123773",
+        "name": "Kiểm tra ca làm việc của giáo viên",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123774",
+        "name": "Button - Info Tooltip Icon",
+        "role": "icon",
+        "delta": 0.27,
+        "dx": -0.27,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123676",
+        "name": "Frame 427326013",
+        "role": "container",
+        "delta": 0.17,
+        "dx": 0.16,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123677",
+        "name": "Label",
+        "role": "container",
+        "delta": 0.17,
+        "dx": 0.16,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123679",
+        "name": "Time Picker",
+        "role": "container",
+        "delta": 0.17,
+        "dx": 0.16,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123680",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.17,
+        "dx": 0.16,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123681",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0.16,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123687",
+        "name": "Frame 427326014",
+        "role": "container",
+        "delta": 0.17,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123688",
+        "name": "Label",
+        "role": "container",
+        "delta": 0.17,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123689",
+        "name": "Giờ kết thúc",
+        "role": "text",
+        "delta": 0.17,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123690",
+        "name": "Time Picker",
+        "role": "container",
+        "delta": 0.17,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:123691",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.17,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.5,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-gv-010010-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

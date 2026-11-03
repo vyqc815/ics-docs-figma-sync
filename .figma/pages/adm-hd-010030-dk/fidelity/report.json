@@ -1,0 +1,628 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 680,
+    "height": 1099,
+    "mismatched": 2450,
+    "percent": 0.328,
+    "shapePercent": 0.071,
+    "textPercent": 1.012,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:133848",
+      "name": "Tệp đính kèm",
+      "pixels": 226,
+      "percent": 13.5
+    },
+    {
+      "id": "I4056:133808;3004:58623",
+      "name": "Helper",
+      "pixels": 630,
+      "percent": 8.9
+    },
+    {
+      "id": "I4056:133842;2015:36008",
+      "name": "Value",
+      "pixels": 49,
+      "percent": 7.4
+    },
+    {
+      "id": "4056:133836",
+      "name": "Người phụ trách",
+      "pixels": 140,
+      "percent": 6.5
+    },
+    {
+      "id": "I4056:133846;2015:36008",
+      "name": "Value",
+      "pixels": 43,
+      "percent": 6.5
+    },
+    {
+      "id": "4056:133841",
+      "name": "Tên người phụ trách",
+      "pixels": 73,
+      "percent": 3.5
+    },
+    {
+      "id": "I4056:133827;3004:58628;3004:60386;3004:60353",
+      "name": "Đơn vị",
+      "pixels": 18,
+      "percent": 2.6
+    },
+    {
+      "id": "I4056:133853;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 18,
+      "percent": 2.4
+    },
+    {
+      "id": "I4056:133809;3004:58650;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 31,
+      "percent": 2.3
+    },
+    {
+      "id": "I4056:133819;3004:58609;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 40,
+      "percent": 2.1
+    },
+    {
+      "id": "I4056:133859;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 27,
+      "percent": 2.1
+    },
+    {
+      "id": "I4056:133808;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 32,
+      "percent": 2
+    },
+    {
+      "id": "I4056:133856;3004:58620;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 25,
+      "percent": 2
+    },
+    {
+      "id": "I4056:133824;3004:58620;2911:43272",
+      "name": "Required",
+      "pixels": 4,
+      "percent": 1.9
+    },
+    {
+      "id": "I4056:133828;3004:58650;2911:43272",
+      "name": "Required",
+      "pixels": 4,
+      "percent": 1.9
+    }
+  ],
+  "regions": [
+    {
+      "x": 368,
+      "y": 584,
+      "width": 56,
+      "height": 8,
+      "pixels": 42,
+      "node": {
+        "id": "4056:133849",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 176,
+      "y": 584,
+      "width": 56,
+      "height": 8,
+      "pixels": 40,
+      "node": {
+        "id": "4056:133849",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 456,
+      "y": 584,
+      "width": 56,
+      "height": 8,
+      "pixels": 40,
+      "node": {
+        "id": "4056:133849",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 552,
+      "y": 584,
+      "width": 56,
+      "height": 8,
+      "pixels": 40,
+      "node": {
+        "id": "4056:133849",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 168,
+      "y": 688,
+      "width": 56,
+      "height": 8,
+      "pixels": 40,
+      "node": {
+        "id": "4056:133806",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 80,
+      "y": 584,
+      "width": 56,
+      "height": 8,
+      "pixels": 36,
+      "node": {
+        "id": "4056:133849",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 264,
+      "y": 688,
+      "width": 56,
+      "height": 8,
+      "pixels": 36,
+      "node": {
+        "id": "4056:133806",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 360,
+      "y": 688,
+      "width": 56,
+      "height": 8,
+      "pixels": 36,
+      "node": {
+        "id": "4056:133806",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 456,
+      "y": 688,
+      "width": 48,
+      "height": 8,
+      "pixels": 36,
+      "node": {
+        "id": "4056:133806",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 544,
+      "y": 688,
+      "width": 56,
+      "height": 8,
+      "pixels": 36,
+      "node": {
+        "id": "4056:133806",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 264,
+      "y": 584,
+      "width": 56,
+      "height": 8,
+      "pixels": 35,
+      "node": {
+        "id": "4056:133849",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 16,
+      "y": 616,
+      "width": 8,
+      "height": 40,
+      "pixels": 34,
+      "node": {
+        "id": "4056:133849",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 80,
+      "y": 688,
+      "width": 48,
+      "height": 8,
+      "pixels": 34,
+      "node": {
+        "id": "4056:133806",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 656,
+      "y": 616,
+      "width": 8,
+      "height": 48,
+      "pixels": 30,
+      "node": {
+        "id": "4056:133849",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 256,
+      "y": 512,
+      "width": 16,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "I4056:133844;2130:25376",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 640,
+      "y": 688,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4056:133806",
+        "name": "Body",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 186,
+    "missing": [],
+    "withinThreshold": 186,
+    "buckets": {
+      "≤0.5px": 169,
+      "≤1px": 183,
+      "≤2px": 186,
+      "≤4px": 186,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4056:133808;3004:58623",
+        "name": "Helper",
+        "role": "text",
+        "delta": 1.81,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.81,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:133849;1061:1317",
+        "name": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "role": "text",
+        "delta": 1.2,
+        "dx": -0.61,
+        "dy": 0,
+        "dw": 1.2,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133848",
+        "name": "Tệp đính kèm",
+        "role": "text",
+        "delta": 1.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133839",
+        "name": "Người phụ trách · 1",
+        "role": "container",
+        "delta": 0.72,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.72,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133841",
+        "name": "Tên người phụ trách",
+        "role": "text",
+        "delta": 0.72,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.72,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133842",
+        "name": "Số KPI",
+        "role": "instance",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:133842;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:133842;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:133842;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133843",
+        "name": "Người phụ trách · 2",
+        "role": "container",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133844",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:133844;2130:25376",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133845",
+        "name": "Tên người phụ trách",
+        "role": "text",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133846",
+        "name": "Số KPI",
+        "role": "instance",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:133846;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:133846;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:133846;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.72,
+        "dx": 0.72,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133835",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0.16,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133836",
+        "name": "Người phụ trách",
+        "role": "text",
+        "delta": 0.16,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133837",
+        "name": "Nút thêm người phụ trách",
+        "role": "icon",
+        "delta": 0.16,
+        "dx": 0.16,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133824",
+        "name": "Molecule/Field",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:133824;3004:58628",
+        "name": "Ô nhập",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:133824;3004:58628;1048:1266",
+        "name": "Đã nhập xong",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:133828",
+        "name": "Molecule/Field",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:133828;3004:58651",
+        "name": "Ô chọn",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.81,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/frames/adm-hd-010030-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

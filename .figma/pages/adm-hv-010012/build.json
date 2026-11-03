@@ -1,0 +1,17 @@
+{
+  "route": "/frames/adm-hv-010012",
+  "pageFile": "components/figma/adm-hv-010012/index.tsx",
+  "docFile": "docs/pages/frames/adm-hv-010012.md",
+  "sections": [
+    {
+      "nodeId": "3256:27023",
+      "component": "DropdownChonCapDo",
+      "file": "components/figma/adm-hv-010012/DropdownChonCapDo.tsx"
+    },
+    {
+      "nodeId": "3269:75069",
+      "component": "Row1HoVaTen",
+      "file": "components/figma/adm-hv-010012/Row1HoVaTen.tsx"
+    }
+  ]
+}
