@@ -10,9 +10,10 @@ on:
   workflow_call:
   workflow_dispatch:
 
+# Queue, never cancel: a push and requirements.yml can both ask for a deploy; a cancelled run kills the other's build.
 concurrency:
   group: deploy
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
