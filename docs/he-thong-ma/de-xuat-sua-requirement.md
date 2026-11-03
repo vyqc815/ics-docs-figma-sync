@@ -17,11 +17,13 @@
 
 Figma: `CD-KH-060100` và `CD-KH-060200` đã bỏ thẻ Tổng điểm, bảng không có cột `Điểm`.
 
-**Đề xuất: bỏ `Điểm` riêng từng câu, theo `REQ02`.** `REQ02`, `REQ06`, phần Import và Figma đều thống nhất không có điểm riêng, chỉ `REQ05`, `EX01` và bảng cột còn sót. Sửa:
-- `REQ05`: bỏ `Điểm` khỏi danh sách field bắt buộc.
-- `EX01`: bỏ `Điểm` khỏi danh sách field thiếu thì báo lỗi.
-- Bảng cột: bỏ cột `Điểm`.
-- Testcase nào kiểm `Điểm` khi soạn câu: bỏ hoặc đổi thành kiểm "không có field Điểm".
+**Đã chốt (design, 2026-11-03): giữ `Điểm` riêng từng câu, theo `REQ05`.** `REQ05`, `EX01` và bảng cột giữ nguyên. Cần sửa cho khớp:
+- `REQ02`: bỏ câu "Không có Tổng điểm và điểm riêng từng câu".
+- `REQ06` và bảng Import — dòng bắt buộc: thêm cột `Điểm` vào file Import / Export.
+- Testcase nào kiểm "không có Điểm" hoặc Import không có cột `Điểm`: sửa theo.
+- Figma: `CD-KH-060100`, `CD-KH-060200` thêm cột `Điểm` vào bảng câu hỏi; popup soạn câu hỏi (`CD-KH-060120` → `060125`) thêm field `Điểm`. Đây là việc của design; tool không tự sửa màn.
+
+**QC cần chốt thêm:** `REQ02` đang ghi "mọi câu thang 10, điểm bài là trung bình các câu" và thẻ tổng quan có tag `Thang 10`. Khi mỗi câu có `Điểm` riêng, điểm bài tính thế nào (tổng điểm các câu, hay vẫn quy về thang 10), và có hiện lại `Tổng điểm` trên thẻ tổng quan không.
 
 ## 2. Bảng câu hỏi (ghi chú "Khác Figma" đã cũ)
 
