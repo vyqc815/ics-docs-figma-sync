@@ -23,13 +23,11 @@ Figma: `CD-KH-060100` và `CD-KH-060200` đã bỏ thẻ Tổng điểm, bảng 
 - Bảng cột: bỏ cột `Điểm`.
 - Testcase nào kiểm `Điểm` khi soạn câu: bỏ hoặc đổi thành kiểm "không có field Điểm".
 
-## 2. Bảng câu hỏi (ghi chú đã cũ, một điểm cần chốt)
+## 2. Bảng câu hỏi (ghi chú "Khác Figma" đã cũ)
 
-Requirement ghi bảng chưa có cột `Kiến thức / Kỹ năng`, có lọc `Kiến thức / Kỹ năng` và lọc `Trạng thái`. Figma hiện đã có cột và lọc `Kiến thức / Kỹ năng`, nhưng không có lọc `Trạng thái`.
+`REQ03` ghi bảng có cột `Kiến thức / Kỹ năng`, lọc `Loại câu`, `Kiến thức / Kỹ năng` và **không có lọc `Trạng thái`**. Ghi chú "Khác Figma" ở khu vực `A03` lại ghi Figma chưa có cột `Kiến thức / Kỹ năng` và còn lọc `Trạng thái`. Figma hiện đã có cột và lọc `Kiến thức / Kỹ năng`, không có lọc `Trạng thái`, tức là đã khớp `REQ03`.
 
-**Đề xuất:**
-- QC xoá ghi chú "chưa có cột `Kiến thức / Kỹ năng`", vì Figma đã có.
-- Lọc `Trạng thái`: giữ theo requirement. Design thêm lọc này vào Figma (`FIX-004` trong danh sách sửa Figma). Nếu QC thấy không cần lọc này nữa thì bỏ khỏi requirement và đóng `FIX-004`.
+**Đề xuất:** QC xoá ghi chú "Khác Figma" ở `A03`. `FIX-004` trong danh sách sửa Figma không cần làm; design chỉ cần kiểm `CD-KH-030340` cũng đã có cột và lọc `Kiến thức / Kỹ năng`.
 
 ## 3. Tab Kiểm tra (ghi chú đã cũ)
 
