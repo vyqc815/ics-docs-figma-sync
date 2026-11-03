@@ -54,8 +54,8 @@ const Overview = async ({ searchParams }: { searchParams: Promise<{ q?: string }
         <Stat label="Trang chưa gắn mã" value={unmappedPages().length} tone="amber" hint={<Link href="/hub/chua-gan-ma" className="hover:text-(--hub-accent)">Xem danh sách →</Link>} />
       </div>
 
-      <Panel title="Cụm có requirement" action={<Link href="/hub/cum" className="text-sm text-(--hub-accent)">Tất cả cụm →</Link>}>
-        <ClusterGrid onlyWithRequirement />
+      <Panel title={`Cụm màn (${clusters().length})`}>
+        <ClusterGrid />
       </Panel>
     </>
   );

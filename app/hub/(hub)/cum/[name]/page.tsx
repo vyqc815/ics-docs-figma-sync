@@ -26,7 +26,7 @@ const ClusterPage = async ({ params, searchParams }: { params: Promise<{ name: s
 
   return (
     <>
-      <PageHead back="/hub/cum" title={r.title} sub={`Cụm ${name}${r.requirementFiles.length ? ` · ${r.requirementFiles.map((f) => f.prefix).join(", ")}` : ""}`} />
+      <PageHead back="/hub" title={r.title} sub={`Cụm ${name}${r.requirementFiles.length ? ` · ${r.requirementFiles.map((f) => f.prefix).join(", ")}` : ""}`} />
       <div className="mb-5 grid grid-cols-2 gap-3 md:grid-cols-4">
         <Stat label="Màn" value={s.screens} />
         <Stat label="Item" value={s.items} hint={`${s.matched} thấy trên Figma`} tone="green" />

@@ -2,11 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpenText, CircleAlert, Layers, LayoutGrid, MonitorSmartphone } from "lucide-react";
+import { BookOpenText, CircleAlert, LayoutGrid, MonitorSmartphone } from "lucide-react";
 
 const ITEMS = [
   { href: "/hub", label: "Tổng quan", icon: LayoutGrid, exact: true },
-  { href: "/hub/cum", label: "Cụm màn", icon: Layers },
   { href: "/hub/requirement", label: "Requirement", icon: BookOpenText },
   { href: "/hub/man", label: "Màn hình", icon: MonitorSmartphone },
   { href: "/hub/chua-gan-ma", label: "Chưa gắn mã", icon: CircleAlert },
@@ -18,7 +17,8 @@ export function QcNav(): React.JSX.Element {
   return (
     <nav className="hub-scroll flex gap-1 overflow-x-auto lg:mt-10 lg:flex-col lg:overflow-visible">
       {ITEMS.map(({ href, label, icon: Icon, exact }) => {
-        const active = exact ? path === href : path === href || path.startsWith(`${href}/`);
+        // a cluster page (/hub/cum/…) belongs to the overview, where the clusters are listed
+        const active = exact ? path === href || path.startsWith("/hub/cum/") : path === href || path.startsWith(`${href}/`);
         return (
           <Link
             key={href}
