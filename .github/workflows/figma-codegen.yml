@@ -1,7 +1,7 @@
 # Sinh lại code + MD cho màn design vừa sửa, 3 lượt/ngày (8h30, 12h30, 16h30 giờ VN, thứ 2–7), trước mỗi lượt deploy
 # gộp 30 phút (deploy.yml). Đọc Figma qua REST (figma-page export --rest): không cần Figma Desktop.
 #   changes → export --rest + build các màn đổi → nén page-spec → commit → deploy lượt kế tiếp đưa lên demo/Hub.
-# Màn mới vẽ chưa có trong figma.pages.json thì chưa tự thêm (cần đăng ký màn, figma-page add/discover).
+# Màn mới vẽ (frame có mã trong phạm vi "scan") được tự đăng ký trước khi so.
 # Cần secret PIPELINE_TOKEN (đọc repo figma-console-mcp-pls) và FIGMA_ACCESS_TOKEN.
 name: Figma codegen
 
@@ -51,6 +51,10 @@ jobs:
           key: codegen-snapshot-${{ github.run_id }}
           restore-keys: codegen-snapshot-
 
+      # Register frames design drew since the last run (the scope saved in figma.pages.json "scan").
+      - name: New screens
+        run: $FIGMA_PAGE discover --rest
+
       - name: Which screens changed
         id: changed
         run: |
@@ -79,11 +83,10 @@ jobs:
           python3 scripts/he-thong-ma/spec_slim.py
 
       - name: Commit
-        if: steps.changed.outputs.names != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A components app docs public lib .figma/specs .figma/token-table.json
+          git add -A components app docs public lib .figma/specs .figma/token-table.json figma.pages.json
           if git diff --cached --quiet; then echo "Không có gì đổi trong code."; exit 0; fi
           git commit -m "Sinh lại code + MD từ Figma: ${{ steps.changed.outputs.names }}"
           git push
