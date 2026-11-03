@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Danh sách tài khoản
+### Trang 1: Danh sách tài khoản
 ![alt text](image.png)
 
 **Mô tả:**
@@ -14,7 +14,7 @@
 - Ô tìm kiếm "Tìm kiếm học viên": tìm theo **tên hoặc email**.
 - Bộ lọc "Tất cả": gồm lọc theo **trạng thái kích hoạt** và lọc theo **role**, có thể **kết hợp đồng thời** với nhau và với ô tìm kiếm.
 
-### Trang 2: Trang 2: Popup tạo / chỉnh sửa tài khoản
+### Trang 2: Popup tạo / chỉnh sửa tài khoản
 ![Trang 2](image-2.png)
 
 **Mô tả:**

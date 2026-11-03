@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Tạo khảo sát — tab Giáo viên / Lớp
+### Trang 1: Tạo khảo sát — tab Giáo viên / Lớp
 ![alt text](image.png)
 
 ![Trang 1](image-1.png)
@@ -29,7 +29,7 @@
 - Ô **"Thêm câu hỏi mới"**: `Enter` hoặc (+) → thêm câu cuối danh sách, loại mặc định Trắc nghiệm, nội dung = text đã nhập (ô trống thì thêm câu rỗng), focus vào câu mới.
 - Nút **"Lưu"**: lưu toàn bộ câu hỏi của khảo sát đang chọn trong 1 lần gọi API.
 
-### Trang 2: Trang 2: Tạo khảo sát — tab Học viên
+### Trang 2: Tạo khảo sát — tab Học viên
 ![alt text](image-2.png)
 
 **Mô tả:**

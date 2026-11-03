@@ -4,7 +4,7 @@ Menu Quy trình định nghĩa nguồn Action Board theo cấu trúc **Package �
 
 ## 1. UI
 
-### Trang 1: Trang 1: Danh sách loại quy trình
+### Trang 1: Danh sách loại quy trình
 ![Trang 1](./images/01-process-list.png)
 
 *Danh sách loại quy trình — nhấn để xem ảnh gốc*
@@ -77,7 +77,7 @@ Menu Quy trình định nghĩa nguồn Action Board theo cấu trúc **Package �
 - Backend kiểm tra lại trạng thái lúc xóa: quy trình vừa được chuyển Công khai bởi người khác thì từ chối.
 - Thành công → đóng popup, bỏ dòng khỏi danh sách, cập nhật tổng số/phân trang, Toast `Thành Công`. Lỗi → giữ dữ liệu, Toast `Có Lỗi Xảy Ra`.
 
-### Trang 4: Trang 2: Chi tiết loại quy trình
+### Trang 4: Chi tiết loại quy trình
 ![Trang 4](./images/02-process-detail.png)
 
 *Cấu hình Action Board nguồn — nhấn để xem ảnh gốc*

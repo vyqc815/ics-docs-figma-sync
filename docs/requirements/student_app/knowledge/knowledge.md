@@ -6,7 +6,7 @@ Mỗi loại dùng chung bộ thao tác: danh sách theo cụm, chi tiết mục
 
 ## 1. UI
 
-### Trang 1: Danh sách theo cụm
+### Trang 1: HV-KTH-010000 — Danh sách theo cụm
 ![Trang 1](./images/01-tu-vung-theo-cum.png)
 
 *Từ vựng theo cụm: chip từ, bật / tắt dịch nghĩa, popup xem nhanh — nhấn để xem ảnh gốc*
@@ -32,7 +32,7 @@ Mỗi loại dùng chung bộ thao tác: danh sách theo cụm, chi tiết mục
 - Cụm không có mục nào gắn với phạm vi thì không hiện.
 - Không có dữ liệu: `Hiện chưa có nội dung <loại> cho cấp độ này`.
 
-### Trang 2: Danh sách thẻ và chọn nhiều
+### Trang 2: HV-KTH-010001 — Danh sách thẻ và chọn nhiều
 ![Trang 2](./images/04-tu-vung-danh-sach.png)
 
 *Thẻ mục: tag Đã thuộc / Chưa thuộc, ⭐ lưu, loa, Xem chi tiết; chế độ chọn nhiều với thanh "Thêm vào thư viện 03" — nhấn để xem ảnh gốc*
@@ -61,7 +61,7 @@ Mỗi loại dùng chung bộ thao tác: danh sách theo cụm, chi tiết mục
 - Nhấn `Thêm vào thư viện` lưu toàn bộ tick, gỡ toàn bộ bỏ tick; Toast một lần.
 - Ngữ pháp không có bước cụm: mở từ Chi tiết bài đi thẳng vào danh sách thẻ.
 
-### Trang 3: Chi tiết mục
+### Trang 3: HV-KTH-020000 — Chi tiết mục
 ![Trang 3](./images/06-chi-tiet-tu-vung.png)
 
 *Chi tiết từ vựng (hình, từ, phiên âm, nghĩa, ví dụ); chi tiết ngữ pháp (cấu trúc, giải thích, cách dùng, ghi nhớ) — nhấn để xem ảnh gốc*
@@ -91,7 +91,7 @@ Mỗi loại dùng chung bộ thao tác: danh sách theo cụm, chi tiết mục
 - Loa phát audio của mục, không có thì TTS.
 - Ảnh Chi tiết Hán tự: khối Cách viết dùng nét SVG của S1; chưa có SVG thì ẩn khối.
 
-### Trang 4: Duyệt
+### Trang 4: HV-KTH-020010 — Duyệt
 **Mô tả:**
 
 - Xem lần lượt mục của phạm vi dạng thẻ một mặt, tự đánh giá `Đã thuộc` / `Cần học lại`, có `Quay lại`; kết thúc hiện tổng kết và `Duyệt lại`. Giống bước Duyệt kiến thức trong [Bài học](../lesson/lesson.md) nhưng chỉ cho loại đang mở.
@@ -105,7 +105,7 @@ Mỗi loại dùng chung bộ thao tác: danh sách theo cụm, chi tiết mục
 - `Đã thuộc` cập nhật trạng thái thuộc và % tiến độ; `Cần học lại` đưa mục về Chưa thuộc.
 - Không có mục: `Không có <loại> nào để duyệt` + `Quay lại`.
 
-### Trang 5: Luyện tập
+### Trang 5: HV-KTH-020020 — Luyện tập
 ![Trang 5](./images/14-han-tu-luyen-tap.png)
 
 *Popup chọn chế độ luyện tập (Hanzi): Chi tiết, Luyện viết, Flashcard, Trắc nghiệm, Thử thách 1, Thử thách 2 — nhấn để xem ảnh gốc*

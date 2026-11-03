@@ -1,0 +1,297 @@
+{
+ "note": "Mã màn dự kiến cho requirement chưa có frame Figma có mã (2026-11-03). Design vẽ frame thì đặt đúng mã này; trang chỉ là khu vực của màn thì dùng chung mã màn.",
+ "codes": {
+  "ADM-AB-010000": {
+   "requirement": "action_board_requirement/action_board_requirements.md",
+   "pages": [
+    "Trang 1: Action Board tổng quát",
+    "Trang 2: Khu vực cây Package",
+    "Trang 3: Khu vực Category và Action",
+    "Trang 5: Danh sách Action trong Category",
+    "Trang 9: Khu vực kết quả theo người sở hữu"
+   ]
+  },
+  "ADM-AB-010010": {
+   "requirement": "action_board_requirement/action_board_requirements.md",
+   "pages": [
+    "Trang 4: Popup chọn loại Action"
+   ]
+  },
+  "ADM-AB-010001": {
+   "requirement": "action_board_requirement/action_board_requirements.md",
+   "pages": [
+    "Trang 6: Nội dung Action loại Deadline, Xác thực và Log"
+   ]
+  },
+  "ADM-AB-010002": {
+   "requirement": "action_board_requirement/action_board_requirements.md",
+   "pages": [
+    "Trang 7: Nội dung Action loại Hướng dẫn"
+   ]
+  },
+  "ADM-AB-010003": {
+   "requirement": "action_board_requirement/action_board_requirements.md",
+   "pages": [
+    "Trang 8: Nội dung Action loại Media"
+   ]
+  },
+  "SYS-DN-010000": {
+   "requirement": "login_ics/login_requirements.md",
+   "pages": [
+    "Trang 1: Đăng nhập"
+   ]
+  },
+  "SYS-DN-020000": {
+   "requirement": "login_ics/login_requirements.md",
+   "pages": [
+    "Trang 2: Quên mật khẩu"
+   ]
+  },
+  "SYS-DN-030000": {
+   "requirement": "login_ics/login_requirements.md",
+   "pages": [
+    "Trang 3: Đặt lại mật khẩu từ email"
+   ]
+  },
+  "SYS-DN-040000": {
+   "requirement": "login_ics/login_requirements.md",
+   "pages": [
+    "Trang 4: Đổi mật khẩu trong hồ sơ cá nhân"
+   ]
+  },
+  "SYS-DN-050000": {
+   "requirement": "login_ics/login_requirements.md",
+   "pages": [
+    "Trang 5: Chọn tài khoản"
+   ]
+  },
+  "SYS-DN-050010": {
+   "requirement": "login_ics/login_requirements.md",
+   "pages": [
+    "Trang 6: Thêm tài khoản"
+   ]
+  },
+  "SYS-DN-060000": {
+   "requirement": "login_ics/login_requirements.md",
+   "pages": [
+    "Trang 7: Chọn trung tâm sau đăng nhập"
+   ]
+  },
+  "HV-TK-010000": {
+   "requirement": "student_app/account/account.md",
+   "pages": [
+    "Trang 1: Đăng nhập"
+   ]
+  },
+  "HV-TK-020000": {
+   "requirement": "student_app/account/account.md",
+   "pages": [
+    "Trang 2: Hồ sơ và Đổi mật khẩu"
+   ]
+  },
+  "HV-TK-030000": {
+   "requirement": "student_app/account/account.md",
+   "pages": [
+    "Trang 3: Cài đặt"
+   ]
+  },
+  "HV-TK-030010": {
+   "requirement": "student_app/account/account.md",
+   "pages": [
+    "Trang 4: Góp ý"
+   ]
+  },
+  "HV-BC-010000": {
+   "requirement": "student_app/alphabet/alphabet.md",
+   "pages": [
+    "Trang 1: Bảng phát âm Pinyin (Đắc Nhân)"
+   ]
+  },
+  "HV-BC-020000": {
+   "requirement": "student_app/alphabet/alphabet.md",
+   "pages": [
+    "Trang 2: Bảng chữ Kana (Sakumi)"
+   ]
+  },
+  "HV-BC-030000": {
+   "requirement": "student_app/alphabet/alphabet.md",
+   "pages": [
+    "Trang 3: Bảng chữ Hangul (Saechang)"
+   ]
+  },
+  "HV-BC-040000": {
+   "requirement": "student_app/alphabet/alphabet.md",
+   "pages": [
+    "Trang 4: Trung tâm không có Bảng chữ"
+   ]
+  },
+  "HV-LOP-010000": {
+   "requirement": "student_app/course/course.md",
+   "pages": [
+    "Trang 1: Tab Tổng quan"
+   ]
+  },
+  "HV-LOP-020000": {
+   "requirement": "student_app/course/course.md",
+   "pages": [
+    "Trang 2: Tab Tự học"
+   ]
+  },
+  "HV-TC-010000": {
+   "requirement": "student_app/home_trial/home_trial.md",
+   "pages": [
+    "Trang 1: Màn chính học viên"
+   ]
+  },
+  "HV-TC-020000": {
+   "requirement": "student_app/home_trial/home_trial.md",
+   "pages": [
+    "Trang 2: Màn chính trải nghiệm theo cấp độ"
+   ]
+  },
+  "HV-TC-020010": {
+   "requirement": "student_app/home_trial/home_trial.md",
+   "pages": [
+    "Trang 3: Popup Trải nghiệm miễn phí 30 ngày"
+   ]
+  },
+  "HV-TC-030000": {
+   "requirement": "student_app/home_trial/home_trial.md",
+   "pages": [
+    "Trang 4: VIP, mã quà tặng, khôi phục, quảng cáo"
+   ]
+  },
+  "HV-KTH-010000": {
+   "requirement": "student_app/knowledge/knowledge.md",
+   "pages": [
+    "Trang 1: Danh sách theo cụm"
+   ]
+  },
+  "HV-KTH-010001": {
+   "requirement": "student_app/knowledge/knowledge.md",
+   "pages": [
+    "Trang 2: Danh sách thẻ và chọn nhiều"
+   ]
+  },
+  "HV-KTH-020000": {
+   "requirement": "student_app/knowledge/knowledge.md",
+   "pages": [
+    "Trang 3: Chi tiết mục"
+   ]
+  },
+  "HV-KTH-020010": {
+   "requirement": "student_app/knowledge/knowledge.md",
+   "pages": [
+    "Trang 4: Duyệt"
+   ]
+  },
+  "HV-KTH-020020": {
+   "requirement": "student_app/knowledge/knowledge.md",
+   "pages": [
+    "Trang 5: Luyện tập"
+   ]
+  },
+  "HV-BH-010000": {
+   "requirement": "student_app/lesson/lesson.md",
+   "pages": [
+    "Trang 1: Danh sách bài học"
+   ]
+  },
+  "HV-BH-020000": {
+   "requirement": "student_app/lesson/lesson.md",
+   "pages": [
+    "Trang 2: Chi tiết bài học"
+   ]
+  },
+  "HV-BH-020010": {
+   "requirement": "student_app/lesson/lesson.md",
+   "pages": [
+    "Trang 3: Duyệt kiến thức"
+   ]
+  },
+  "HV-BH-020020": {
+   "requirement": "student_app/lesson/lesson.md",
+   "pages": [
+    "Trang 4: Học qua Flashcard"
+   ]
+  },
+  "HV-BH-020030": {
+   "requirement": "student_app/lesson/lesson.md",
+   "pages": [
+    "Trang 5: Luyện nhớ chuyên sâu"
+   ]
+  },
+  "HV-BH-020040": {
+   "requirement": "student_app/lesson/lesson.md",
+   "pages": [
+    "Trang 6: Bài tập củng cố"
+   ]
+  },
+  "HV-TV-010000": {
+   "requirement": "student_app/library/library.md",
+   "pages": [
+    "Trang 1: Màn Thư viện và tab Kiến thức"
+   ]
+  },
+  "HV-TV-020000": {
+   "requirement": "student_app/library/library.md",
+   "pages": [
+    "Trang 2: Tab Kỹ năng"
+   ]
+  },
+  "HV-TV-030000": {
+   "requirement": "student_app/library/library.md",
+   "pages": [
+    "Trang 3: Tab Tiến trình"
+   ]
+  },
+  "HV-KN-010000": {
+   "requirement": "student_app/skill/skill.md",
+   "pages": [
+    "Trang 1: Danh sách bài kỹ năng"
+   ]
+  },
+  "HV-KN-020000": {
+   "requirement": "student_app/skill/skill.md",
+   "pages": [
+    "Trang 2: Chi tiết bài Nghe"
+   ]
+  },
+  "HV-KN-030000": {
+   "requirement": "student_app/skill/skill.md",
+   "pages": [
+    "Trang 3: Chi tiết bài Đọc"
+   ]
+  },
+  "HV-KN-040000": {
+   "requirement": "student_app/skill/skill.md",
+   "pages": [
+    "Trang 4: Chi tiết bài Nói và luyện nói"
+   ]
+  },
+  "HV-KN-050000": {
+   "requirement": "student_app/skill/skill.md",
+   "pages": [
+    "Trang 5: Luyện tập Nghe / Đọc"
+   ]
+  },
+  "HV-KT-010000": {
+   "requirement": "student_app/test/test.md",
+   "pages": [
+    "Trang 1: Danh sách bài kiểm tra"
+   ]
+  },
+  "HV-KT-020000": {
+   "requirement": "student_app/test/test.md",
+   "pages": [
+    "Trang 2: Làm bài kiểm tra"
+   ]
+  },
+  "HV-KT-030000": {
+   "requirement": "student_app/test/test.md",
+   "pages": [
+    "Trang 3: Kết quả kiểm tra"
+   ]
+  }
+ }
+}

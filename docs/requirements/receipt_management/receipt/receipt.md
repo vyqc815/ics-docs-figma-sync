@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Danh Sách Hoá Đơn
+### Trang 1: Danh Sách Hoá Đơn
 ![alt text](image.png)
 
 **Mô tả:**
@@ -48,7 +48,7 @@
 - **Cột Liên kết:** học viên đã liên kết hoá đơn, kèm số lượng, hover hiển thị danh sách học viên (Tên, Email, SĐT có icon copy).
 - Nút **ba chấm** mở menu: Thêm học phí, Chỉnh sửa, Copy, Lịch sử hành động, Xuất hoá đơn, Xoá hoá đơn. **Hiện chỉ làm 4 mục:** Thêm học phí, Chỉnh sửa, Copy, Xoá hoá đơn. **Lịch sử hành động** và **Xuất hoá đơn** hiển thị nhưng **disable**.
 
-### Trang 2: Trang 2: Popup Thêm hoá đơn / Chỉnh sửa hoá đơn
+### Trang 2: Popup Thêm hoá đơn / Chỉnh sửa hoá đơn
 ![alt text](image-2.png)
 ![alt text](image-3.png)
 ![alt text](image-4.png)
@@ -75,7 +75,7 @@
 - **Tệp đính kèm:** kéo thả hoặc chọn file, hỗ trợ PDF, DOC, DOCX, PPT, PPTX, tối đa 20MB. Hiển thị ở cột Hình của danh sách.
 - Nhóm "Thông tin thêm" (không bắt buộc): Ghi chú, Email, Số điện thoại, Lớp dự kiến (nhập mã lớp), Thông tin, Hiểu khách, Ngày hẹn. **Giờ ghi nhận** (HH:MM) không bắt buộc.
 
-### Trang 3: Trang 3: Popup Chọn học viên liên kết hoá đơn
+### Trang 3: Popup Chọn học viên liên kết hoá đơn
 ![alt text](image-5.png)
 
 **Mô tả:**
@@ -86,7 +86,7 @@
 - Có nút **Thêm học viên**: bấm vào sẽ mở **popup Thêm học phí ở chế độ không tick "Chọn học viên có sẵn"** (nhập Tên, Email và chọn Level, xem Trang 4). Học viên mới được tạo và liên kết vào hoá đơn.
 - Chọn 1 học viên trong danh sách → mở popup Thêm học phí (Trang 4) với học viên đó.
 
-### Trang 4: Trang 4: Popup Thêm học phí
+### Trang 4: Popup Thêm học phí
 ![alt text](image-6.png)
 ![alt text](image-7.png)
 

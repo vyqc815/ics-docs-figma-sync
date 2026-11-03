@@ -6,7 +6,7 @@ Có ảnh Đăng nhập (4 màn) và nút Góp ý; Hồ sơ, Đổi mật khẩu
 
 ## 1. UI
 
-### Trang 1: Đăng nhập
+### Trang 1: HV-TK-010000 — Đăng nhập
 ![Trang 1](./images/01-dang-nhap.png)
 
 *Đăng nhập: mặc định, đang nhập, lỗi `Sai email hoặc mật khẩu`, popup Quên mật khẩu — nhấn để xem ảnh gốc*
@@ -29,7 +29,7 @@ Có ảnh Đăng nhập (4 màn) và nút Góp ý; Hồ sơ, Đổi mật khẩu
 - Đăng nhập thành công: lưu phiên, vào Màn chính học viên; nếu có dữ liệu trải nghiệm trên máy thì hỏi gộp (xem [Màn chính và trải nghiệm](../home_trial/home_trial.md)).
 - Sai 5 lần liên tiếp: khoá 15 phút, thông báo `Bạn đã nhập sai quá nhiều lần, thử lại sau 15 phút`.
 
-### Trang 2: Hồ sơ và Đổi mật khẩu
+### Trang 2: HV-TK-020000 — Hồ sơ và Đổi mật khẩu
 **Mô tả:**
 
 - Cài đặt → `Chỉnh sửa hồ sơ`: xem / sửa thông tin cá nhân; nút `Đổi mật khẩu`.
@@ -49,7 +49,7 @@ Có ảnh Đăng nhập (4 màn) và nút Góp ý; Hồ sơ, Đổi mật khẩu
 - Trường chưa có dữ liệu để trống cho học viên điền.
 - Sửa hồ sơ ở app cập nhật Họ tên, SĐT, Tỉnh / Thành phố của học viên trên ICS (Support thấy).
 
-### Trang 3: Cài đặt
+### Trang 3: HV-TK-030000 — Cài đặt
 **Mô tả:**
 
 - Màn ⚙ từ header: `Chỉnh sửa hồ sơ` (học viên), `Nâng cấp VIP` / `Dùng mã quà tặng` / `Khôi phục thanh toán` (chế độ trải nghiệm chưa VIP, xem [Màn chính và trải nghiệm](../home_trial/home_trial.md)), `Điều khoản`, `Chính sách riêng tư`, `Phiên bản`, `Đăng xuất` (học viên) / `Đăng nhập` (trải nghiệm).
@@ -61,7 +61,7 @@ Có ảnh Đăng nhập (4 màn) và nút Góp ý; Hồ sơ, Đổi mật khẩu
 
 - Mục VIP ẩn với học viên có lớp Đang học và người dùng đã VIP.
 
-### Trang 4: Góp ý
+### Trang 4: HV-TK-030010 — Góp ý
 ![Trang 4](./images/05-nut-gop-y.png)
 
 *Khối Gửi góp ý đến trung tâm ở tab Tổng quan — nhấn để xem ảnh gốc*

@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Action Board tổng quát
+### Trang 1: ADM-AB-010000 — Action Board tổng quát
 ![Trang 1](./images/action-board-training-process.png)
 
 *Ví dụ Action Board kiểu Pack - Sub - Role tại màn hình Đào tạo → Quy trình — nhấn để xem ảnh gốc*
@@ -56,7 +56,7 @@
 - `A01.22` **Nhật ký công việc**: Action Board type: `PACK`
 - `A01.23` **Review**: Action Board type: `PACK`
 
-### Trang 2: Khu vực cây Package
+### Trang 2: ADM-AB-010000 — Khu vực cây Package
 **Field:**
 
 - `A02.01` **Tên Package**: Bắt buộc khi tạo; FE loại khoảng trắng đầu/cuối để kiểm tra rỗng; code hiện tại chưa quy định giới hạn độ dài hoặc kiểm tra trùng tên.
@@ -74,7 +74,7 @@
 - Khi Package bị tắt, màn hình định nghĩa vẫn có thể tải node chưa bị xóa; màn hình theo người sở hữu chỉ tải Package đang hoạt động.
 - Khi xóa một Package cha, code hiện tại chỉ đổi trạng thái node được chọn; chưa có xử lý cascade trạng thái xuống toàn bộ node con.
 
-### Trang 3: Khu vực Category và Action
+### Trang 3: ADM-AB-010000 — Khu vực Category và Action
 **Field Category:**
 
 - `A03.01` **Tên Category**: Bắt buộc khi tạo; FE trim để kiểm tra rỗng; chưa có giới hạn độ dài hoặc kiểm tra trùng tên.
@@ -102,7 +102,7 @@
 - Tại `Review`, Action tạo mới mặc định là `Đánh giá` và UI không hiển thị dropdown đổi loại.
 - Ngoài `Review`, Action tạo mới mặc định là loại đầu tiên trong danh sách loại hợp lệ; với danh sách mặc định hiện tại là `Kiểm tra`.
 
-### Trang 4: Popup chọn loại Action
+### Trang 4: ADM-AB-010010 — Popup chọn loại Action
 ![Trang 4](./images/action-board-action-type-menu.png)
 
 *Dropdown chọn loại Action trên màn hình Quy trình đào tạo — nhấn để xem ảnh gốc*
@@ -122,7 +122,7 @@
 - Tại màn hình `Review`, dropdown đổi loại không hiển thị.
 - Người không có quyền định nghĩa không được hiển thị dropdown đổi loại Action.
 
-### Trang 5: Danh sách Action trong Category
+### Trang 5: ADM-AB-010000 — Danh sách Action trong Category
 ![Trang 5](./images/action-board-action-types-overview.png)
 
 *Category hiển thị các Action Kiểm tra, Hướng dẫn, Task tiến trình, Task nhập liệu, Đánh giá, Media và Nhận xét — nhấn để xem ảnh gốc*
@@ -140,7 +140,7 @@
 - Nút chevron phải phản ánh đúng trạng thái mở/đóng của từng Action và không làm đổi Action đang chọn trong cây Package.
 - Thứ tự Action sau kéo thả phải được giữ nguyên khi tải lại trang.
 
-### Trang 6: Nội dung Action loại Deadline, Xác thực và Log
+### Trang 6: ADM-AB-010001 — Nội dung Action loại Deadline, Xác thực và Log
 ![Trang 6](./images/action-board-deadline-verification-log.png)
 
 *Ba loại Action mới với các control tương ứng khi được mở rộng — nhấn để xem ảnh gốc*
@@ -164,7 +164,7 @@
 - Giá trị đã lưu phải được khôi phục đúng khi tải lại trang; mở/đóng Action không được tự thay đổi dữ liệu.
 - Ảnh tham chiếu chỉ xác nhận thành phần và trạng thái rỗng của UI. Kiểu dữ liệu, quy tắc bắt buộc, quyền cập nhật, validation và ảnh hưởng tới tiến độ cần được chốt trước khi triển khai backend.
 
-### Trang 7: Nội dung Action loại Hướng dẫn
+### Trang 7: ADM-AB-010002 — Nội dung Action loại Hướng dẫn
 ![Trang 7](./images/action-board-instruction-upload.png)
 
 *Action Hướng dẫn mở rộng với mô tả và vùng kéo thả/chọn file — nhấn để xem ảnh gốc*
@@ -183,7 +183,7 @@
 - Nếu upload thất bại, file ở trạng thái lỗi và không được thêm vào danh sách `files` đã lưu của Action.
 - Code hiện tại không truyền giới hạn số file, dung lượng mỗi file hoặc tổng dung lượng cho vùng upload này.
 
-### Trang 8: Nội dung Action loại Media
+### Trang 8: ADM-AB-010003 — Nội dung Action loại Media
 ![Trang 8](./images/action-board-media-input.png)
 
 *Action Media mở rộng với ô Nhập URL và vùng upload ảnh/video — nhấn để xem ảnh gốc*
@@ -204,7 +204,7 @@
 - Chỉ ghi log thời lượng xem khi video đã được xem lớn hơn `0` giây.
 - Code hiện tại không truyền giới hạn dung lượng/số file và chưa có validation định dạng URL tại input.
 
-### Trang 9: Khu vực kết quả theo người sở hữu
+### Trang 9: ADM-AB-010000 — Khu vực kết quả theo người sở hữu
 **Field:**
 
 - `A09.01` **Người sở hữu**: Bắt buộc để tạo kết quả; thường là ID ứng viên/người được đào tạo.

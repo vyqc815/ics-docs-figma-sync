@@ -4,7 +4,7 @@ Menu **Thống Kê** của role `Class Handler` (Phụ trách lớp): tổng h�
 
 ## 1. UI
 
-### Trang 1: Trang 1: Thống kê
+### Trang 1: Thống kê
 ![Trang 1](./images/statistics.png)
 
 **Mô tả:**
@@ -48,7 +48,7 @@ Menu **Thống Kê** của role `Class Handler` (Phụ trách lớp): tổng h�
 - Không làm tròn trung gian; chỉ làm tròn kết quả cuối. Không chia 0, không NaN; không có dữ liệu hiển thị `0` / `0%` / `0 đ`.
 - Đang tải hoặc tải lỗi không hiển thị `0` giả.
 
-### Trang 2: Trang 2: Dropdown Trình độ và Học kỳ
+### Trang 2: Dropdown Trình độ và Học kỳ
 ![Trang 2](./images/filter-level-semester.png)
 
 **Mô tả:**

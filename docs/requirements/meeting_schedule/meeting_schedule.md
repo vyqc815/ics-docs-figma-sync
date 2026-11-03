@@ -4,7 +4,7 @@ Menu **Lịch Họp** ở sidebar của role `Class Handler` (Phụ trách lớp
 
 ## 1. UI
 
-### Trang 1: Trang 1: Danh sách cuộc họp — dạng danh sách
+### Trang 1: Danh sách cuộc họp — dạng danh sách
 ![Trang 1](./images/list-view.png)
 
 **Mô tả:**
@@ -48,7 +48,7 @@ Menu **Lịch Họp** ở sidebar của role `Class Handler` (Phụ trách lớp
 - Sắp xếp theo ngày giờ họp giảm dần (mới nhất trước). Phân trang 10 cuộc họp/trang, có `Hiển thị x - y trong tổng số N cuộc họp`, `Trước`, số trang, `Sau`.
 - Không có dữ liệu → `Bảng dữ liệu này đang trống`.
 
-### Trang 2: Trang 2: Danh sách cuộc họp — dạng lịch tuần
+### Trang 2: Danh sách cuộc họp — dạng lịch tuần
 ![Trang 2](./images/calendar-view.png)
 
 **Mô tả:**
@@ -65,7 +65,7 @@ Menu **Lịch Họp** ở sidebar của role `Class Handler` (Phụ trách lớp
 - Dạng lịch áp dụng bộ lọc `Người tham gia` và `Trạng thái`; **không áp dụng** `Thời gian` (dùng điều hướng tuần thay thế), nút `Thời gian` bị disable khi ở dạng lịch.
 - Dạng hiển thị đang chọn được ghi nhớ theo người dùng khi tải lại trang.
 
-### Trang 3: Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp
+### Trang 3: Popup Chi tiết cuộc họp / Thêm cuộc họp
 ![Trang 3](./images/meeting-detail.png)
 
 **Mô tả:**
@@ -88,7 +88,7 @@ Menu **Lịch Họp** ở sidebar của role `Class Handler` (Phụ trách lớp
 - Người không phải người tạo (người tham gia, hoặc Admin xem cuộc họp của người khác) mở popup ở chế độ chỉ xem: mọi field disable, ẩn `+`, `x` trên chip, `Lưu`, `Xoá`; chỉ còn nút đóng.
 - Xoá là xoá mềm: cuộc họp biến mất khỏi danh sách/lịch của người tạo và người tham gia, không tính vào badge.
 
-### Trang 4: Trang 4: Dropdown bộ lọc
+### Trang 4: Dropdown bộ lọc
 ![Người tham gia](./images/filter-participant.png)
 ![Trạng thái](./images/filter-status.png)
 ![Thời gian](./images/filter-time.png)

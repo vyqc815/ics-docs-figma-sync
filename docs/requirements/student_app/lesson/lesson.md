@@ -6,7 +6,7 @@ App dùng chung cho mọi trung tâm; ví dụ trong ảnh là tiếng Trung (Đ
 
 ## 1. UI
 
-### Trang 1: Danh sách bài học
+### Trang 1: HV-BH-010000 — Danh sách bài học
 ![Trang 1](./images/01-danh-sach-bai-hoc.png)
 
 *Tab Bài học: thẻ buổi học với trạng thái học, điểm danh, tiến độ — nhấn để xem ảnh gốc*
@@ -29,7 +29,7 @@ App dùng chung cho mọi trung tâm; ví dụ trong ảnh là tiếng Trung (Đ
 - `Nợ BTVN` ưu tiên hiển thị thay `Hoàn thành` khi học viên chưa nộp bài tập củng cố của buổi đã hoàn thành.
 - Lớp chưa có buổi học: hiển thị `Chưa có buổi học nào được tạo cho lớp này`.
 
-### Trang 2: Chi tiết bài học
+### Trang 2: HV-BH-020000 — Chi tiết bài học
 ![Trang 2](./images/02-chi-tiet-bai-hoc.png)
 
 *Chi tiết bài học: Phần bắt buộc dạng timeline, Kiến thức, Kỹ năng; thẻ Bài tập củng cố có badge điểm — nhấn để xem ảnh gốc*
@@ -51,7 +51,7 @@ App dùng chung cho mọi trung tâm; ví dụ trong ảnh là tiếng Trung (Đ
 - Bài không có nội dung ở một mục thì ẩn mục đó; toàn bộ trống hiện `Chưa có nội dung học tập cho buổi học này`.
 - Tiến độ của thẻ Kiến thức / Kỹ năng tính trên số mục `Đã thuộc` / tổng mục của loại đó trong bài.
 
-### Trang 3: Duyệt kiến thức
+### Trang 3: HV-BH-020010 — Duyệt kiến thức
 ![Trang 3](./images/04-duyet-da-thuoc.png)
 
 *Thẻ duyệt: từ trọng tâm, nghĩa, ví dụ highlight; thẻ Hanzi có từ liên quan và loa — nhấn để xem ảnh gốc*
@@ -77,7 +77,7 @@ App dùng chung cho mọi trung tâm; ví dụ trong ảnh là tiếng Trung (Đ
 - Bước hoàn thành khi đi hết thẻ cuối, bất kể số `Cần học lại`; thoát giữa chừng giữ vị trí thẻ để lần sau tiếp tục.
 - Bài không có kiến thức: `Không có nội dung để duyệt`, bước tự tính hoàn thành.
 
-### Trang 4: Học qua Flashcard
+### Trang 4: HV-BH-020020 — Học qua Flashcard
 ![Trang 4](./images/08-flashcard-mat-truoc.png)
 
 *Flashcard: mặt trước nghĩa (loại 3), mặt có hình + từ + ví dụ (loại 2), mặt sau — nhấn để xem ảnh gốc*
@@ -110,7 +110,7 @@ App dùng chung cho mọi trung tâm; ví dụ trong ảnh là tiếng Trung (Đ
 - Tuỳ chỉnh được nhớ cho lần sau trong cùng thiết bị.
 - Không còn thẻ chưa thuộc và `Xem tất cả` tắt: hiện màn hoàn thành ngay kèm gợi ý bật `Xem tất cả`.
 
-### Trang 5: Luyện nhớ chuyên sâu
+### Trang 5: HV-BH-020030 — Luyện nhớ chuyên sâu
 ![Trang 5](./images/15-luyen-nho-flashcard.png)
 
 *Bước Học qua FlashCard (Tiếp theo → Hoàn thành) và Nối từ cùng nghĩa — nhấn để xem ảnh gốc*
@@ -141,7 +141,7 @@ App dùng chung cho mọi trung tâm; ví dụ trong ảnh là tiếng Trung (Đ
 - Trả lời sai không trừ điểm, chỉ phải làm lại câu đó cho đúng; không có `Đã thuộc` / lưu thư viện trong bước này.
 - Thoát giữa chừng giữ tiến độ phiên để tiếp tục.
 
-### Trang 6: Bài tập củng cố
+### Trang 6: HV-BH-020040 — Bài tập củng cố
 **Mô tả:**
 
 - Bước 4 Phần bắt buộc: bài tập về nhà (BTVN) của bài, được giao tự động khi giáo viên mở bài; học viên làm liên tiếp các câu, nộp, chờ giáo viên chấm phần tự luận và xem kết quả. Bộ câu hỏi do CD soạn ở [Bài tập về nhà và Kiểm tra](../../course_management/homework-test/homework-test.md); chấm theo [Giáo viên — Giảng dạy](../../teacher_role/class/class_teaching_requirements.md).

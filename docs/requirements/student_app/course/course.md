@@ -4,7 +4,7 @@ Màn **chi tiết lớp** của app học viên, mở từ thẻ khoá học ở
 
 ## 1. UI
 
-### Trang 1: Tab Tổng quan
+### Trang 1: HV-LOP-010000 — Tab Tổng quan
 ![Trang 1](./images/01-tong-quan.png)
 
 *Tổng quan: vòng số buổi, 4 chỉ số, nút Gửi góp ý đến trung tâm — nhấn để xem ảnh gốc*
@@ -28,7 +28,7 @@ Màn **chi tiết lớp** của app học viên, mở từ thẻ khoá học ở
 - Khác ảnh: ảnh ghi mọi thanh 30% (dữ liệu mẫu); hai thanh điểm hiển thị kèm số điểm `x.x` ở cuối thanh.
 - Lớp `Hoàn thành` / `Huỷ bỏ` vẫn xem được tổng quan.
 
-### Trang 2: Tab Tự học
+### Trang 2: HV-LOP-020000 — Tab Tự học
 ![Trang 2](./images/02-tu-hoc.png)
 
 *Tự học: thẻ bài tự học với tên gốc + tên dịch, tiến độ — nhấn để xem ảnh gốc*

@@ -6,7 +6,7 @@ Mục **Bảng chữ** của app học viên khác theo trung tâm: **Đắc Nh�
 
 ## 1. UI
 
-### Trang 1: Bảng phát âm Pinyin (Đắc Nhân)
+### Trang 1: HV-BC-010000 — Bảng phát âm Pinyin (Đắc Nhân)
 ![Trang 1](./images/01-thanh-mau.png)
 
 *Ba tab: Thanh mẫu theo nhóm, Vận mẫu theo nhóm, bảng Pinyin thanh mẫu × vận mẫu — nhấn để xem ảnh gốc*
@@ -34,7 +34,7 @@ Mục **Bảng chữ** của app học viên khác theo trung tâm: **Đắc Nh�
 - Audio: thanh mẫu 1 file; vận mẫu và âm tiết theo thanh (file `pinyin_<thanh>.mp3` của S1); không có file thì TTS.
 - Ô mờ là âm có trong bảng chuẩn nhưng S1 chưa có dữ liệu; bấm không mở.
 
-### Trang 2: Bảng chữ Kana (Sakumi)
+### Trang 2: HV-BC-020000 — Bảng chữ Kana (Sakumi)
 **Mô tả:**
 
 - Màn `Bảng Chữ` cho tiếng Nhật: chuyển `Hiragana` / `Katakana`; 3 tab theo Loại của S1: `Cơ bản` (Âm cơ bản 46), `Biến âm` (Âm đục 20 + Âm bán đục 5), `Kết hợp` (Âm ghép 33); lưới 5 cột nguyên âm `a i u e o` × hàng phụ âm; chữ Đã thuộc nền cam.
@@ -62,7 +62,7 @@ Mục **Bảng chữ** của app học viên khác theo trung tâm: **Đắc Nh�
 - Âm ngắt `っ` và trường âm không là ô riêng (quyết định S1), hiển thị trong ví dụ.
 - Từ bài học chỉ hiện chữ gắn với bài (ô khác mờ); từ 247 toàn bảng.
 
-### Trang 3: Bảng chữ Hangul (Saechang)
+### Trang 3: HV-BC-030000 — Bảng chữ Hangul (Saechang)
 **Mô tả:**
 
 - Màn `Bảng Chữ` cho tiếng Hàn: tab `Phụ âm` (Phụ âm thường 9, bật hơi 5, căng 5), `Nguyên âm` (đơn 10, ghép 11), `Bảng ghép` (lưới 14 phụ âm × 10 nguyên âm = 140 âm tiết, nhóm `Bảng ghép cơ bản` / `Phụ âm căng` / `Nguyên âm ghép` / `Patchim`); cùng bộ thao tác với Kana.
@@ -76,7 +76,7 @@ Mục **Bảng chữ** của app học viên khác theo trung tâm: **Đắc Nh�
 
 - Chưa có sheet dữ liệu Hangul; field theo Figma Thư viện CD (S1 Phụ lục A.7.2). Từ ví dụ, audio cần dữ liệu CD nhập.
 
-### Trang 4: Trung tâm không có Bảng chữ
+### Trang 4: HV-BC-040000 — Trung tâm không có Bảng chữ
 **Mô tả:**
 
 - Betreux, Creative English, Créatis: không có thẻ `Bảng chữ` ở Chi tiết bài học và khối `BẢNG CHỮ` ở màn chính; vị trí thẻ thay bằng `Mẫu câu` (xem [Kiến thức](../knowledge/knowledge.md)).

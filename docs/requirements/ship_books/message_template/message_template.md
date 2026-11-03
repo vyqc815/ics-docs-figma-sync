@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Danh Sách Tin Nhắn
+### Trang 1: Danh Sách Tin Nhắn
 ![alt text](image.png)
 
 **Mô tả:**

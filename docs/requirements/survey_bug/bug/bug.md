@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Chi tiết bài học – Tab Bug (Thêm Bug)
+### Trang 1: Chi tiết bài học – Tab Bug (Thêm Bug)
 ![alt text](image.png)
 
 **Mô tả:**
@@ -20,7 +20,7 @@
 - Nút **Huỷ**: xoá dữ liệu đã nhập, đưa form về mặc định.
 - Chỉ GV, CD thấy form Thêm Bug.
 
-### Trang 2: Trang 2: Danh sách Báo lỗi & góp ý
+### Trang 2: Danh sách Báo lỗi & góp ý
 ![alt text](image-1.png)
 
 **Mô tả:**
@@ -49,7 +49,7 @@
 - Click vào dòng / Chỉnh sửa (trong menu 3 chấm) → popup Chi tiết báo lỗi (Trang 4).
 - Sắp xếp mặc định: Ngày báo cáo mới nhất lên đầu.
 
-### Trang 3: Trang 3: Popup Gửi báo lỗi
+### Trang 3: Popup Gửi báo lỗi
 ![alt text](image-2.png)
 
 **Mô tả:**
@@ -65,7 +65,7 @@
 - Loại mặc định = Bug; dấu `*` và quy tắc Tệp đính kèm giống Trang 1.
 - Không có trường Trạng thái, Kết quả xử lý (tạo mới = Chưa đọc).
 
-### Trang 4: Trang 4: Popup Chi tiết báo lỗi
+### Trang 4: Popup Chi tiết báo lỗi
 ![alt text](image-3.png)
 
 **Mô tả:**
@@ -80,7 +80,7 @@
 - Tệp đính kèm: hiển thị các file đã có (tên, định dạng, dung lượng), bấm để xem/tải; có thể thêm file. Loại = Bug thì phải còn ít nhất 1 file.
 - Không có quyền sửa → toàn bộ trường chỉ đọc, ẩn nút **Lưu thay đổi**.
 
-### Trang 5: Trang 5: Popup Xác nhận hoàn thành
+### Trang 5: Popup Xác nhận hoàn thành
 ![alt text](image-4.png)
 
 **Mô tả:**
@@ -92,7 +92,7 @@
 - Kết quả xử lý\*: bắt buộc nhập mới cho xác nhận hoàn thành.
 - **Huỷ bỏ** → đóng popup, dropdown giữ nguyên trạng thái cũ.
 
-### Trang 6: Trang 6: Popup Xem kết quả
+### Trang 6: Popup Xem kết quả
 ![alt text](image-5.png)
 
 **Mô tả:**
@@ -103,7 +103,7 @@
 - Toàn bộ chỉ đọc; Kết quả xử lý hiển thị dạng text; chỉ có nút **Đóng**.
 - Quy tắc hiển thị Nguồn lỗi giống Trang 5.
 
-### Trang 7: Trang 7: Popup nhắc bug chưa xử lý (PTL)
+### Trang 7: Popup nhắc bug chưa xử lý (PTL)
 ![alt text](image-6.png)
 
 **Mô tả:**

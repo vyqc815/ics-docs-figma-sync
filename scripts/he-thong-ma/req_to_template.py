@@ -138,7 +138,8 @@ def convert(src):
         if tests:
             tc_tables.append(tests)
         codes = list(dict.fromkeys(c for c in re.findall(CODE, head + "\n" + body) if c in FRAMES and not c.endswith("-DK")))
-        out.append(f"### Trang {no}: " + (f"{', '.join(codes)} — " if codes else "") + head.strip())
+        name = re.sub(r"^Trang \d+:\s*", "", head.strip())  # some originals already say "Trang N:"
+        out.append(f"### Trang {no}: " + (f"{', '.join(codes)} — " if codes else "") + name)
         body = html_images(body, no)
         n, pieces, pos = 0, [], 0
         for s, e, block in table_blocks(body):

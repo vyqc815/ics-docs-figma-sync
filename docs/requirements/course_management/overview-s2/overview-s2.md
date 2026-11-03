@@ -4,7 +4,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Tổng quan (S2)
+### Trang 1: Tổng quan (S2)
 ![alt text](image.png)
 
 **Mô tả:**

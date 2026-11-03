@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Danh sách bài học (Tab Bài học)
+### Trang 1: Danh sách bài học (Tab Bài học)
 ![alt text](image.png)
 
 - CD **chỉ xem** danh sách bài học của học kỳ đang chọn; nhấn card để mở popup "Chi tiết bài học".

@@ -4,7 +4,7 @@ Requirement sáu tab Chi tiết học viên được tách riêng tại [Chi ti�
 
 ## 1. UI
 
-### Trang 1: Trang 1: Danh sách học viên
+### Trang 1: Danh sách học viên
 ![Trang 1](./images/01-student-list.png)
 
 *Danh sách học viên — nhấn để xem ảnh gốc*

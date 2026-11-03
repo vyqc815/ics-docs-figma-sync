@@ -4,7 +4,7 @@ Menu **Quy Trình** của role `Class Handler` (Phụ trách lớp) gồm 5 menu
 
 ## 1. UI
 
-### Trang 1: Trang 1: Task Hôm Nay / Task Tuần Này / Task Tháng Này / Ca Trực
+### Trang 1: Task Hôm Nay / Task Tuần Này / Task Tháng Này / Ca Trực
 ![Trang 1](./images/task-list.png)
 
 **Mô tả:**
@@ -83,7 +83,7 @@ Menu **Quy Trình** của role `Class Handler` (Phụ trách lớp) gồm 5 menu
 - Task Khác: tiến độ chung của các quy trình user đã chọn.
 - Không có quy trình → `0%`.
 
-### Trang 2: Trang 2: Task Khác và Popup chọn quy trình
+### Trang 2: Task Khác và Popup chọn quy trình
 **Mô tả:**
 
 - `Task Khác` dùng quy trình loại `Khác`. Khác 3 menu con còn lại: Phụ trách lớp tự **chọn nhiều quy trình** cần làm bằng nút `Chọn quy trình`; không chia kỳ nên không có cột Thời gian. Chưa có ảnh UI.
@@ -104,7 +104,7 @@ Menu **Quy Trình** của role `Class Handler` (Phụ trách lớp) gồm 5 menu
 - Backend kiểm tra lúc lưu lựa chọn: quy trình phải còn `Công khai` và đúng loại `Khác`.
 - Lưu thành công không cần Toast; lỗi có Toast `Có Lỗi Xảy Ra`, giữ lựa chọn cũ.
 
-### Trang 3: Trang 3: Ca Trực
+### Trang 3: Ca Trực
 ![Trang 3](./images/shift.png)
 
 **Mô tả:**
@@ -127,7 +127,7 @@ Menu **Quy Trình** của role `Class Handler` (Phụ trách lớp) gồm 5 menu
 - `%` ở sidebar của Ca Trực = tiến độ hôm nay, ca hiện tại, của quy trình đang chọn.
 - Ảnh là bản cũ, chưa có dropdown `Quy trình`. Testcase xem Case 10a.
 
-### Trang 4: Trang 4: Popup thêm người vào Danh sách Support
+### Trang 4: Popup thêm người vào Danh sách Support
 ![Trang 4](./images/add-user-time-filter.png)
 
 **Mô tả:**

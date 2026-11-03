@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Đăng nhập
+### Trang 1: SYS-DN-010000 — Đăng nhập
 **Mô tả:**
 
 - Người dùng nhập tài khoản (email)/mật khẩu để đăng nhập; màn hình đăng nhập không có bước chọn trung tâm.
@@ -21,7 +21,7 @@
 - Mỗi role có access token riêng. Đăng nhập thành công mặc định dùng role đầu tiên của tài khoản; muốn dùng role khác thì đổi role, không cần đăng nhập lại.
 - Password mặc định được che. Icon mắt chỉ đổi trạng thái hiển thị, không đổi giá trị.
 
-### Trang 2: Trang 2: Quên mật khẩu
+### Trang 2: SYS-DN-020000 — Quên mật khẩu
 **Mô tả:**
 
 - Người dùng nhập email để yêu cầu nhận liên kết đặt lại mật khẩu.
@@ -37,7 +37,7 @@
 - Kết quả tiếp nhận yêu cầu không được tiết lộ email có tồn tại hoặc có đủ điều kiện hay không.
 - Backend chưa có API cho luồng quên mật khẩu; testcase của trang này chưa kiểm tra được ở tầng API.
 
-### Trang 3: Trang 3: Đặt lại mật khẩu từ email
+### Trang 3: SYS-DN-030000 — Đặt lại mật khẩu từ email
 **Mô tả:**
 
 - Người dùng mở liên kết trong email và đặt mật khẩu mới trên trang do Firebase cung cấp.
@@ -53,7 +53,7 @@
 - Chỉ thay đổi mật khẩu sau khi liên kết và mật khẩu mới đều hợp lệ; mở liên kết chưa làm đổi mật khẩu.
 - Backend chưa có API cho luồng quên mật khẩu; testcase của trang này chưa kiểm tra được ở tầng API.
 
-### Trang 4: Trang 4: Đổi mật khẩu trong hồ sơ cá nhân
+### Trang 4: SYS-DN-040000 — Đổi mật khẩu trong hồ sơ cá nhân
 **Mô tả:**
 
 - Người dùng đã đăng nhập vào hồ sơ cá nhân để đổi mật khẩu của chính mình.
@@ -68,7 +68,7 @@
 - API nhận `password` trống sẽ đưa mật khẩu về mặc định, nên FE không được gửi request khi mật khẩu mới để trống.
 - Đổi mật khẩu trong hồ sơ cá nhân khác với Quên mật khẩu: không gửi email, không dùng liên kết.
 
-### Trang 5: Trang 5: Chọn tài khoản
+### Trang 5: SYS-DN-050000 — Chọn tài khoản
 **Mô tả:**
 
 - Màn hình liệt kê các tài khoản đã từng đăng nhập trên thiết bị để người dùng chọn lại hoặc thêm tài khoản mới mà không cần đăng xuất.
@@ -91,7 +91,7 @@
 - Bấm `Đăng xuất` chỉ kết thúc phiên của tài khoản đang dùng; tài khoản vẫn nằm trong danh sách với nhãn `Đã đăng xuất`.
 - Sau khi đăng nhập, người dùng chuyển tài khoản, thêm tài khoản, đổi role (`Chuyển vị trí`) và đăng xuất từ menu tài khoản trên header.
 
-### Trang 6: Trang 6: Thêm tài khoản
+### Trang 6: SYS-DN-050010 — Thêm tài khoản
 **Mô tả:**
 
 - Người dùng đăng nhập thêm 1 tài khoản khác vào danh sách tài khoản trên thiết bị.
@@ -109,7 +109,7 @@
 - Thêm thất bại khi đang đăng nhập thì giữ nguyên phiên của tài khoản hiện tại.
 - Quy tắc kiểm tra dữ liệu và thông báo lỗi giống Trang 1.
 
-### Trang 7: Trang 7: Chọn trung tâm sau đăng nhập
+### Trang 7: SYS-DN-060000 — Chọn trung tâm sau đăng nhập
 **Mô tả:**
 
 - Sau khi đăng nhập, người dùng chọn trung tâm làm việc bằng nút chọn trung tâm ở cuối thanh menu bên trái.

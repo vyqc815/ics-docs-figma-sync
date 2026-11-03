@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Giao khảo sát — tab Giáo viên
+### Trang 1: Giao khảo sát — tab Giáo viên
 ![alt text](image-5.png)
 
 **Mô tả:**
@@ -24,7 +24,7 @@
   - "Xem kết quả" chỉ enable khi Đã hoàn thành → Popup 6.
   - Menu 3 chấm: **Giao** (enable khi Đã thu hồi) · **Thu hồi** (enable khi Chưa làm / Đang làm) · **Xoá** (có xác nhận).
 
-### Trang 2: Trang 2: Giao khảo sát — tab Lớp / Học viên
+### Trang 2: Giao khảo sát — tab Lớp / Học viên
 ![alt text](image-10.png)
 ![alt text](image.png)
 
@@ -75,7 +75,7 @@
 - Chọn Trung tâm → Khoá học (thuộc trung tâm đã chọn) → Buổi học (thuộc khoá đã chọn), mỗi bước chọn nhiều.
 - Lớp nào thuộc khoá đã chọn học tới buổi đã chọn thì HV lớp đó nhận khảo sát (lớp mở trước hay sau lúc giao đều như nhau).
 
-### Trang 7: Trang 3: Giao khảo sát — tab "Kết quả khảo sát"
+### Trang 7: Giao khảo sát — tab "Kết quả khảo sát"
 ![alt text](image-3.png)
 
 **Mô tả:**

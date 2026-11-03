@@ -6,7 +6,7 @@ Công thức dùng chung, không tính lại khác: [Giáo viên — Lớp](../.
 
 ## 1. UI
 
-### Trang 1: Trang 1: Thống kê tổng quan
+### Trang 1: Thống kê tổng quan
 ![Trang 1](./images/overview.png)
 
 **Mô tả:**

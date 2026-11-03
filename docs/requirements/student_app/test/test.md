@@ -6,7 +6,7 @@ Có ảnh danh sách; màn làm bài và kết quả chưa có ảnh.
 
 ## 1. UI
 
-### Trang 1: Danh sách bài kiểm tra
+### Trang 1: HV-KT-010000 — Danh sách bài kiểm tra
 ![Trang 1](./images/01-danh-sach-kiem-tra.png)
 
 *Tab Kiểm tra: thẻ bài với ngày, tag điểm danh, badge điểm — nhấn để xem ảnh gốc*
@@ -24,7 +24,7 @@ Có ảnh danh sách; màn làm bài và kết quả chưa có ảnh.
 - Chỉ hiện bài trạng thái `Đang đợi nộp bài` trở đi của lớp; bài `Chưa giao` hoặc bị giáo viên `Thu hồi` không hiện (thu hồi xoá bài làm và điểm).
 - Khác ảnh: ảnh dùng badge điểm cho mọi thẻ; requirement thêm trạng thái `Chưa làm` / `Đang làm` / `Chờ chấm` trước khi có điểm.
 
-### Trang 2: Làm bài kiểm tra
+### Trang 2: HV-KT-020000 — Làm bài kiểm tra
 **Mô tả:**
 
 - Màn làm bài: thời gian tính từ lúc vào, tạm dừng khi thoát, câu hỏi thứ tự cố định, nộp bài ở câu cuối.
@@ -42,7 +42,7 @@ Có ảnh danh sách; màn làm bài và kết quả chưa có ảnh.
 - Mỗi bài một lần làm; làm lại chỉ khi giáo viên thu hồi và giao lại (bài về `Chưa làm`).
 - Khác spec cũ: 11 loại câu ánh xạ về 8 loại của CD (bảng ánh xạ ở [Bài học](../lesson/lesson.md), khu vực Bài tập củng cố); không thêm loại mới.
 
-### Trang 3: Kết quả kiểm tra
+### Trang 3: HV-KT-030000 — Kết quả kiểm tra
 **Mô tả:**
 
 - Sau khi nộp: câu app tự chấm hiện ngay, câu giáo viên chấm `Chờ chấm`; giáo viên chấm xong: điểm tổng, thời gian làm, từng câu đúng / sai, đáp án đúng, nhận xét giáo viên.

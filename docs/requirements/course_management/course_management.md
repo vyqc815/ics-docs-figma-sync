@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Danh sách khoá học
+### Trang 1: Danh sách khoá học
 ![alt text](image-1.png)
 
 **Mô tả:**
@@ -22,7 +22,7 @@
 - Icon **">"** cuối mỗi dòng: điều hướng đến trang Học kỳ (Trang 2).
 - Danh sách không phân trang.
 
-### Trang 2: Trang 2: Menu chi tiết khoá học
+### Trang 2: Menu chi tiết khoá học
 ![Trang 2](image-4.png)
 
 **Mô tả:**
@@ -33,7 +33,7 @@
 - Mặc định khi bấm vào 1 khoá học, hệ thống tự động chọn mục **Học Kỳ**.
 - Nhóm **Quản Lý** và **Tài Liệu** hiện chỉ mới có 2 tab lớn ở ngoài, nội dung mục con bên trong chưa chốt, sẽ bổ sung sau ở file khác.
 
-### Trang 3: Trang 3: Popup xác nhận Công khai khoá học
+### Trang 3: Popup xác nhận Công khai khoá học
 ![Trang 3](image-2.png)
 
 **Mô tả:**
@@ -48,7 +48,7 @@
 - Sau lần công khai đầu tiên, ID/Danh mục/Cấp độ và toàn bộ dữ liệu chi tiết bên trong bị khoá vĩnh viễn, kể cả khi khoá học chuyển Vô hiệu rồi Công Khai lại (khoá học không thể về `Nháp`). Tên và Mô tả vẫn sửa được ở `Công Khai` / `Vô hiệu` (REQ10).
 - 2 nút hành động: **Hủy** (đóng popup, giữ nguyên trạng thái hiện tại) và **Công khai khoá học** (chỉ bấm được khi toàn bộ trường hợp lệ).
 
-### Trang 4: Trang 4: Popup Nhân bản khoá học
+### Trang 4: Popup Nhân bản khoá học
 **Mô tả:**
 - Mở khi CD chọn `Nhân bản` ở menu thao tác của một khoá học (có ở mọi trạng thái `Nháp` / `Công Khai` / `Vô hiệu`). **UI cần bổ sung** trên Figma.
 

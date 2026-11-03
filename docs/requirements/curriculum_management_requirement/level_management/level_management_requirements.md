@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Danh sách cấp độ
+### Trang 1: Danh sách cấp độ
 ![Trang 1](./images/01-level-list.png)
 
 *Danh sách cấp độ — nhấn để xem ảnh gốc*

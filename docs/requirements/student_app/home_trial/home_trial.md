@@ -6,7 +6,7 @@ App học viên có hai chế độ: **Học viên** (đã đăng nhập, có l�
 
 ## 1. UI
 
-### Trang 1: Màn chính học viên
+### Trang 1: HV-TC-010000 — Màn chính học viên
 ![Trang 1](./images/01-man-chinh-hoc-vien.png)
 
 *Màn chính: banner Thư viện học tập, Khoá học của bạn, Ưu đãi; thẻ khoá Chưa bắt đầu mờ — nhấn để xem ảnh gốc*
@@ -27,7 +27,7 @@ App học viên có hai chế độ: **Học viên** (đã đăng nhập, có l�
 - Thứ tự thẻ: `Chưa hoàn thành` → `Chưa bắt đầu` → `Hoàn thành`, trong nhóm mới nhất trước.
 - Học viên thuộc nhiều trung tâm: dropdown chọn trung tâm; dữ liệu theo trung tâm đang chọn.
 
-### Trang 2: Màn chính trải nghiệm theo cấp độ
+### Trang 2: HV-TC-020000 — Màn chính trải nghiệm theo cấp độ
 ![Trang 2](./images/02-man-chinh-247.png)
 
 *Màn chính trải nghiệm: banner quảng cáo, Thư viện, Bảng phát âm, Kiến thức nền, Kỹ năng; màn Chọn trình độ với mục Dành cho học viên — nhấn để xem ảnh gốc*
@@ -50,7 +50,7 @@ App học viên có hai chế độ: **Học viên** (đã đăng nhập, có l�
 - Nội dung trải nghiệm = khoá học `Công khai` gắn cấp độ đó của trung tâm; cấp độ chưa có nội dung: `Hiện chưa có nội dung cho cấp độ này`.
 - Học viên đã đăng nhập cũng vào được chế độ này qua dropdown header; dữ liệu Đã thuộc / thư viện khi đó lưu theo tài khoản.
 
-### Trang 3: Popup Trải nghiệm miễn phí 30 ngày
+### Trang 3: HV-TC-020010 — Popup Trải nghiệm miễn phí 30 ngày
 ![Trang 3](./images/03-popup-trai-nghiem.png)
 
 *Popup Trải nghiệm miễn phí khoá học 30 ngày, Đồng Ý, Còn lại 29 ngày — nhấn để xem ảnh gốc*
@@ -71,7 +71,7 @@ App học viên có hai chế độ: **Học viên** (đã đăng nhập, có l�
 - Trong thời gian trải nghiệm: không quảng cáo, mở mọi nội dung 👑 của cấp độ đã chọn.
 - Học viên đã đăng nhập (có lớp) không thấy popup và không bị giới hạn.
 
-### Trang 4: VIP, mã quà tặng, khôi phục, quảng cáo
+### Trang 4: HV-TC-030000 — VIP, mã quà tặng, khôi phục, quảng cáo
 **Mô tả:**
 
 - Theo spec Sakumi 247, áp dụng cho chế độ trải nghiệm của mọi trung tâm.

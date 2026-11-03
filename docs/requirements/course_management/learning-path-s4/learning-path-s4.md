@@ -4,7 +4,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Nội dung buổi học (Lộ Trình S4)
+### Trang 1: Nội dung buổi học (Lộ Trình S4)
 ![alt text](image.png)
 
 **Mô tả:**

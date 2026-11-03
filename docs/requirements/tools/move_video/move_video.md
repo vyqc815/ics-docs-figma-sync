@@ -2,7 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1: Xác minh Gmail
+### Trang 1: Xác minh Gmail
 ![alt text](image.png)
 
 **Mô tả:**
@@ -13,7 +13,7 @@
 - Card tài khoản ở góc trái trên hiển thị tài khoản Gmail vừa đăng nhập (avatar, tên, email).
 - Nút **Xác Minh**: xác minh account Google và lấy file record từ Google Drive về. Xác minh thành công mới vào được Trang 2.
 
-### Trang 2: Trang 2: Danh sách video
+### Trang 2: Danh sách video
 ![alt text](image-1.png)
 
 **Mô tả:**
@@ -37,7 +37,7 @@
 - **Cột cuối:** checkbox chọn nhiều để xoá; checkbox ở header dùng chọn tất cả.
 - **Nút Xoá:** chỉ hiển thị khi đã tick chọn ít nhất 1 dòng, nằm ở hàng tiêu đề (cùng hàng với TÊN VIDEO, MÃ LỚP, BÀI HỌC). Bấm Xoá hiện **popup xác nhận**. Figma chưa vẽ nút và popup này.
 
-### Trang 3: Trang 3: Popup Đổi tên video và xác nhận xoá
+### Trang 3: Popup Đổi tên video và xác nhận xoá
 ![alt text](image-2.png)
 
 **Mô tả:**

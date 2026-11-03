@@ -4,7 +4,7 @@
 
 ## 1. UI
 
-### Trang 1: ADM-LD-010000 — Trang 1: Lịch dạy tổng theo tuần
+### Trang 1: ADM-LD-010000 — Lịch dạy tổng theo tuần
 ![Trang 1](./images/teaching-schedule-overview.png)
 
 *Lịch dạy tổng: thanh tuần, tìm kiếm, bộ lọc và lưới 7 ngày (Figma ADM-LD-010000) — nhấn để xem ảnh gốc*

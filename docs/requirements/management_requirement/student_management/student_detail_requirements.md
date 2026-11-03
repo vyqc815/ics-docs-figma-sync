@@ -9,7 +9,7 @@
 - Danh sách lớp/Học phí **phân trang từng trang**; Ghi chú/Quy trình học viên/Log **load more**. Số dòng/lượt theo cấu hình chung; không lấy số mẫu trên ảnh làm quy định riêng. Thống kê/tổng tiến độ tính toàn bộ dữ liệu của học viên, không giới hạn trong trang/lượt đã tải.
 - Chỉ tải tab trong phạm vi quyền; loading, rỗng và lỗi phân biệt rõ. Khi đổi học viên hoặc đổi điều kiện, response cũ không được ghi đè dữ liệu mới.
 
-### Trang 2: Trang 1: Chi tiết học viên — Thông tin cá nhân
+### Trang 2: Chi tiết học viên — Thông tin cá nhân
 ![Trang 2](./images/26-student-detail-personal.png)
 
 *Chi tiết học viên — tab Thông tin cá nhân — nhấn để xem ảnh gốc*
@@ -51,7 +51,7 @@
 - Nút `Xác nhận`: gửi yêu cầu đặt lại mật khẩu của đúng học viên đang xem.
 - Trong thời gian xử lý, vô hiệu hóa nút `Xác nhận` để tránh gửi yêu cầu lặp.
 
-### Trang 4: Trang 2: Chi tiết học viên — Danh sách lớp
+### Trang 4: Chi tiết học viên — Danh sách lớp
 ![Trang 4](./images/27-student-detail-classes.png)
 
 *Danh sách lớp — sáu thẻ thống kê và bảng lớp của học viên*
@@ -63,7 +63,7 @@
 - **Phân trang từng trang:** footer có phạm vi đang hiển thị/tổng số **lớp**, Trước, số trang và Sau. Đổi trang thay tập dòng đang hiển thị, giữ đúng student_id; không nối thêm như load more. Trang đầu/cuối vô hiệu hóa Trước/Sau tương ứng. Ảnh chưa có footer nhưng phân trang vẫn phải có theo yêu cầu đã chốt; số dòng/trang theo cấu hình phân trang chung.
 - Tên khóa rút gọn theo UI; số `7/7`, `45%`, `80`, `B`, mã lớp lặp trong ảnh là mẫu, không hard-code. BTVN vẫn hiển thị tỷ lệ theo requirement lịch sử.
 
-### Trang 5: Trang 3: Chi tiết học viên — Học phí
+### Trang 5: Chi tiết học viên — Học phí
 ![Trang 5](./images/28-student-detail-tuition.png)
 
 *Học phí — thẻ thống kê, hóa đơn và chi tiết phân bổ mở rộng*
@@ -74,7 +74,7 @@
 - Cho phép thao tác học phí/hóa đơn hiện có như lịch sử: Thêm học phí hai bước, chỉnh sửa, Copy tên, Xóa có xác nhận; các mục đang disable giữ nguyên theo requirement Hóa đơn. **Không tạo hóa đơn mới** tại tab này. Xóa hóa đơn đồng bộ học phí/số dư mọi học viên liên kết theo requirement Hóa đơn; Hủy/lỗi không lưu dở dang.
 - **Phân trang từng trang theo hóa đơn**, không phân trang từng phân bổ học phí. Footer dùng số/tổng **hóa đơn**, sửa nhãn mẫu `lớp học` trong ảnh thành `hóa đơn`. Cuộn ngang để xem đủ cột; đổi trang thay các dòng hóa đơn, không nối thêm. Thẻ thống kê vẫn lấy toàn bộ dữ liệu.
 
-### Trang 6: Trang 4: Chi tiết học viên — Log
+### Trang 6: Chi tiết học viên — Log
 ![Trang 6](./images/29-student-detail-log.png)
 
 *Log — tìm kiếm, bộ lọc và nhật ký của học viên*
@@ -89,7 +89,7 @@
 - Với sự kiện thêm học viên vào lớp/đóng tiền đã chốt ở Nhật ký lớp, Log học viên hiển thị sự kiện liên quan **đúng student_id**; tên người thực hiện/lớp/hóa đơn/số tiền theo action nguồn. Cùng sự kiện không tạo trùng log khi retry; không đưa log của học viên khác trong cùng lớp vào. Không tự mở rộng action tự ghi từ các dòng mẫu trong ảnh.
 - **Load more** theo log: tải tiếp nối dòng mới, không lặp log_id; giữ dòng/mô tả đã mở, lỗi giữ dữ liệu cũ và cho thử lại, hết dữ liệu dừng tải. Đổi search/filter hoặc học viên bắt đầu lại từ lượt đầu. Những phần chưa chốt ở Nhật ký lớp (thứ tự, chọn một/nhiều Đối tượng, editor) vẫn kế thừa trạng thái cần xác nhận của nguồn.
 
-### Trang 7: Trang 5: Chi tiết học viên — Quy trình học viên
+### Trang 7: Chi tiết học viên — Quy trình học viên
 ![Trang 7](./images/30-student-detail-processes.png)
 
 *Quy trình học viên — Package, Category và Action Item*
@@ -102,7 +102,7 @@
 - Chỉ nội dung nguồn Công khai được thêm; Nháp/Vô hiệu không xuất hiện trong nguồn chọn mới. Quy trình đã gắn chuyển Vô hiệu vẫn hiện nội dung/Result cũ nhưng chỉ xem; khi Công khai lại áp dụng quyền cập nhật tương ứng.
 - **Admin và các user được gán cho học viên** được Thêm quy trình và cập nhật Result trong phạm vi học viên đó. User được gán là Người phụ trách hoặc Người theo dõi theo quyền học viên đã chốt; không phụ thuộc người đã thêm item. Backend kiểm tra quyền này cùng trạng thái nguồn lúc lưu; không dùng quan hệ thành viên lớp thay cho quan hệ với học viên.
 
-### Trang 8: Trang 6: Chi tiết học viên — Ghi chú
+### Trang 8: Chi tiết học viên — Ghi chú
 ![Trang 8](./images/31-student-detail-notes.png)
 
 *Ghi chú — danh sách card, bộ lọc và bình luận*

@@ -4,7 +4,7 @@ Menu **Lịch Hẹn** của ICS có bốn tab: **Hẹn lớp**, **Học viên**,
 
 ## 1. UI
 
-### Trang 1: Trang 1: Danh Sách Lịch Hẹn
+### Trang 1: Danh Sách Lịch Hẹn
 ![Trang 1](./images/01-appointments-class.png)
 
 *Danh sách Hẹn lớp; ba tab còn lại theo cùng bố cục — nhấn để xem ảnh gốc*

@@ -4,7 +4,7 @@ Flow chọn/tạo giáo viên từ một lớp và quyền Giáo viên phụ tr�
 
 ## 1. UI
 
-### Trang 1: Trang 1: Danh sách giáo viên
+### Trang 1: Danh sách giáo viên
 ![Trang 1](./images/teacher-list.png)
 
 *Danh sách giáo viên: bộ lọc Trung tâm, popover Chi tiết lịch đăng ký, Chi tiết Lớp và Ghi chú chi tiết — nhấn để xem ảnh gốc*

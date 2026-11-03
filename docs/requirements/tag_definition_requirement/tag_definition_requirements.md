@@ -6,7 +6,7 @@ Pre-coding/Definition of Done: [Tag Management — Pre-Coding](../../pre_coding/
 
 ## 1. UI
 
-### Trang 1: Trang 1: Tag quản lý và Nhóm
+### Trang 1: Tag quản lý và Nhóm
 ![Trang 1](./images/01-tag-groups.png)
 
 *Tag quản lý bên trái, Nhóm bên phải — nhấn để xem ảnh gốc*

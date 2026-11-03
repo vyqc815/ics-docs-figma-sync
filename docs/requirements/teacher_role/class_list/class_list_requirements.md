@@ -4,7 +4,7 @@ Tài liệu đặc tả menu **Lớp** của role Giáo viên: thống kê tổn
 
 ## 1. UI
 
-### Trang 1: GV-LOP-010000 — Trang 1: Thống kê tổng quan
+### Trang 1: GV-LOP-010000 — Thống kê tổng quan
 ![Trang 1](./images/class-list.png)
 
 *Thống kê tổng quan: hàng thẻ chỉ số, khối lớp đang chọn bên trái, Danh sách lớp bên phải (Figma GV-LOP-010000) — nhấn để xem ảnh gốc*
