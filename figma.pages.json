@@ -964,16 +964,6 @@
       "route": "/bao-loi/danh-sach-bao-loi"
     },
     {
-      "name": "ch-tc-010000",
-      "nodeId": "3778:20022",
-      "route": "/trang-chu/thong-ke-tong-quan"
-    },
-    {
-      "name": "ch-tc-010000-dk",
-      "nodeId": "4056:146090",
-      "route": "/trang-chu/thong-ke-tong-quan-dk"
-    },
-    {
       "name": "ch-tc-010003",
       "nodeId": "7015:11855",
       "route": "/trang-chu/thong-ke-theo-thang"

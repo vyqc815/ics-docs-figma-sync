@@ -28,9 +28,9 @@
   "class_handler_support/overview/overview.md": {
    "title": "[Phụ trách lớp] Trang chủ — Thống kê tổng quan",
    "screens": [
-    "CH-TC-010000"
+    "CH-TC-010003"
    ],
-   "source": "ghép theo tiêu đề"
+   "source": "design xác nhận: Thống kê tổng quan đã thay bằng Thống kê theo tháng (2026-11-03)"
   },
   "class_handler_support/process/process.md": {
    "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác",

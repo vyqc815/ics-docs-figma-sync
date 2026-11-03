@@ -40,7 +40,7 @@
   {
    "name": "overview",
    "title": "[Phụ trách lớp] Trang chủ — Thống kê tổng quan",
-   "screens": "^(CH\\-TC\\-010000)$",
+   "screens": "^(CH\\-TC\\-010001|CH\\-TC\\-010003)$",
    "requirements": [
     "class_handler_support/overview/overview.md"
    ],
@@ -819,7 +819,7 @@
   {
    "name": "chua-co-req-ch-tc-01",
    "title": "CH-TC-01xx (chưa có requirement)",
-   "screens": "^(CH\\-TC\\-010001|CH\\-TC\\-010002|CH\\-TC\\-010003)$",
+   "screens": "^(CH\\-TC\\-010002)$",
    "requirements": [],
    "prefix_figma": "CH-TC-01",
    "auto": true
