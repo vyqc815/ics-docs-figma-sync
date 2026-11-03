@@ -94,7 +94,6 @@
     "CM-HW.A02",
     "CM-HW.A03",
     "CM-HW.A07",
-    "CM-HW.A13",
     "CM-HW.F01"
    ]
   },
@@ -225,9 +224,7 @@
     "CD-KH-030343"
    ],
    "citedByRequirement": true,
-   "regions": [
-    "CM-HW.A11"
-   ]
+   "regions": []
   },
   "CD-KH-030346": {
    "id": "CD-KH-030346",
@@ -274,7 +271,8 @@
    ],
    "citedByRequirement": true,
    "regions": [
-    "CM-HW.A12"
+    "CM-HW.A12",
+    "CM-HW.A13"
    ]
   },
   "CD-KH-030348": {
@@ -349,8 +347,7 @@
    "regions": [
     "CM-HW.A01",
     "CM-HW.A02",
-    "CM-HW.A03",
-    "CM-HW.A13"
+    "CM-HW.A03"
    ]
   },
   "CD-KH-060110": {
@@ -561,9 +558,7 @@
    "dark": "CD-KH-060140-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CM-HW.A07"
-   ]
+   "regions": []
   },
   "CD-KH-060141": {
    "id": "CD-KH-060141",
@@ -587,9 +582,7 @@
     "CD-KH-060200"
    ],
    "citedByRequirement": false,
-   "regions": [
-    "CM-HW.A07"
-   ]
+   "regions": []
   },
   "CD-KH-060150": {
    "id": "CD-KH-060150",
@@ -666,8 +659,7 @@
    "regions": [
     "CM-HW.A01",
     "CM-HW.A02",
-    "CM-HW.A03",
-    "CM-HW.A13"
+    "CM-HW.A03"
    ]
   }
  },
@@ -4715,9 +4707,7 @@
    "name": "import-export-excel",
    "title": "Import / Export Excel",
    "screens": [
-    "cd-kh-030340",
-    "cd-kh-060140",
-    "cd-kh-060141"
+    "cd-kh-030340"
    ],
    "screensGuessed": [
     "CD-KH-060140",
@@ -4758,7 +4748,7 @@
      "missingTerms": [
       "Cột file"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-HW.A07.02",
@@ -4794,7 +4784,7 @@
      "missingTerms": [
       "<Khoá học>_<Bài>.xlsx"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-HW.A07.03",
@@ -4823,7 +4813,7 @@
      "missingTerms": [
       "Import — dòng bắt buộc"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-HW.A07.04",
@@ -4832,27 +4822,14 @@
      "spec": "Có dòng thiếu field bắt buộc hoặc sai giá trị → **chặn cả file**, không thêm câu nào, hiển thị danh sách lỗi theo số dòng (vd `Dòng 5: thiếu Loại câu`).",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-060140": [
-       {
-        "term": "Dòng 5: thiếu Loại câu",
-        "figmaId": "5672:75289",
-        "layer": "Dòng 5: thiếu Loại câu",
-        "confidence": "cao",
-        "region": "Lỗi",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Import — lỗi dữ liệu"
+      "Import — lỗi dữ liệu",
+      "Dòng 5: thiếu Loại câu"
      ],
-     "status": "khop-mot-phan"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-HW.A07.05",
@@ -4896,8 +4873,11 @@
      "missingTerms": [
       "Import — thành công"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-030340"
    ]
   },
   {
@@ -4960,8 +4940,8 @@
       "CM-HW.TC28"
      ],
      "missingTerms": [
-      "Kết quả",
-      "Không tìm thấy lỗi."
+      "Không tìm thấy lỗi.",
+      "Kết quả"
      ],
      "status": "chua-thay-tren-figma"
     },
@@ -5416,8 +5396,7 @@
    "name": "generate-bang-n-dong",
    "title": "Generate — Bảng N dòng",
    "screens": [
-    "cd-kh-030343",
-    "cd-kh-030345"
+    "cd-kh-030343"
    ],
    "screensGuessed": [],
    "source": "tu-dien",
@@ -5523,7 +5502,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-HW.A11.03",
@@ -5595,8 +5574,11 @@
      "missingTerms": [
       "<"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-030343"
    ]
   },
   {
@@ -5686,9 +5668,7 @@
    "name": "toast-phan-hoi-crud",
    "title": "Toast phản hồi CRUD",
    "screens": [
-    "cd-kh-030340",
-    "cd-kh-060100",
-    "cd-kh-060200"
+    "cd-kh-030347"
    ],
    "screensGuessed": [
     "CD-KH-030340",
@@ -5708,16 +5688,46 @@
      "spec": "`Thành Công` | `Đã thêm câu hỏi.`; `Đã cập nhật câu hỏi.`; `Đã xoá N câu hỏi.`; `Đã import N câu hỏi.`; `Đã thêm N câu hỏi vào cuối danh sách bài tập.`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030347": [
+       {
+        "term": "Thành công",
+        "figmaId": "I5609:34554;2167:28343",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Toast · Tạo xong",
+        "component": "Atom/Toast",
+        "variant": {
+         "Action": true,
+         "Close": true,
+         "Type": "Success"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Thành Công",
+        "figmaId": "I5609:34554;2167:28343",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Toast · Tạo xong",
+        "component": "Atom/Toast",
+        "variant": {
+         "Action": true,
+         "Close": true,
+         "Type": "Success"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-HW.TTC01"
      ],
-     "missingTerms": [
-      "Thành công",
-      "Thành Công"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "CM-HW.A13.02",
@@ -5743,51 +5753,17 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-030340": [
+      "cd-kh-030347": [
        {
         "term": "Lỗi",
-        "figmaId": "5491:357786",
-        "layer": "Nghe và chọn câu trả lời đúng",
+        "figmaId": "5609:34083",
+        "layer": "Đọc đoạn văn và trả lời 3 câu",
         "confidence": "thap",
         "region": null,
         "owner": null,
         "component": null,
         "variant": null,
         "inCode": false
-       }
-      ],
-      "cd-kh-060100": [
-       {
-        "term": "Lỗi",
-        "figmaId": "I5491:346424;1048:1240",
-        "layer": "Button",
-        "confidence": "thap",
-        "region": "Panel · Danh sách kiến thức",
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Soát lỗi bằng AI",
-         "Type": "Secondary",
-         "Size": "Small"
-        },
-        "inCode": true
-       }
-      ],
-      "cd-kh-060200": [
-       {
-        "term": "Lỗi",
-        "figmaId": "I5491:347589;1048:1240",
-        "layer": "Button",
-        "confidence": "thap",
-        "region": "Panel · Danh sách kiến thức",
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Soát lỗi bằng AI",
-         "Type": "Secondary",
-         "Size": "Small"
-        },
-        "inCode": true
        }
       ]
      },
@@ -5798,6 +5774,9 @@
      ],
      "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-030347"
    ]
   },
   {

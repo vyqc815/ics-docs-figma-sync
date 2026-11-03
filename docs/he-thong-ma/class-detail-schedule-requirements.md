@@ -31,14 +31,14 @@ Requirement: `management_requirement/class_management/class_detail_schedule_requ
 
 ### `A01` Tab Lịch dạy — Lịch theo tuần
 
-Frame: `ADM-LOP-040500` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040510` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | khoang-tuan |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.02` | cot-ngay |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.03` | tag-lich-co-dinh |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.04` | nut-them-lich-day-co-dinh |  |  | — | opens `A03` |  | Chưa khớp tự động | QC |
+| `A01.04` | nut-them-lich-day-co-dinh | `Popup/Header`  | `I2527:167761;2514:153358` Title | — | opens `A03` |  | Khớp | QC |
 | `A01.05` | o-dau-cua-ngay |  |  | — | opens `A03` |  | Chưa khớp tự động | QC |
 | `A01.06` | the-lich |  |  | — |  | `TC02` | Chưa khớp tự động | QC |
 | `A01.07` | vung-lich |  |  | — |  |  | Chưa khớp tự động | QC |
@@ -56,12 +56,12 @@ Frame: `ADM-LOP-040500` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
 
 ### `A03` Popup Thêm Lịch Dạy Cố Định
 
-Frame: `ADM-LOP-040510`, `ADM-LOP-040521` (tool đoán:ADM-LOP-040510, ADM-LOP-040521) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040510` (tool đoán:ADM-LOP-040510, ADM-LOP-040521) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A03.01` | tab-co-dinh-linh-hoat |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.02` | chon-ngay-bat-dau | `Time`  | `I2384:59020;1739:32355` Thứ Ba, 22.09.2026 | — |  |  | Khớp một phần | QC |
+| `A03.02` | chon-ngay-bat-dau | `Time`  | `I2384:59020;1739:32355` Thứ Ba, 22.09.2026 | — |  |  | Khớp | QC |
 | `A03.03` | gio-bat-dau-ket-thuc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.04` | thu-2-chu-nhat |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.05` | them-lich-day |  | `2384:59178` Thêm lịch dạy | — |  |  | Khớp | QC |
@@ -71,31 +71,31 @@ Frame: `ADM-LOP-040510`, `ADM-LOP-040521` (tool đoán:ADM-LOP-040510, ADM-LOP-0
 
 ### `A04` Popup Thêm Lịch Dạy Linh Hoạt
 
-Frame: `ADM-LOP-040520` (tool đoán:ADM-LOP-040520) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040510` (tool đoán:ADM-LOP-040520) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A04.01` | khoang-tuan |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.02` | gio-bat-dau-ket-thuc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.03` | thu-trong-tuan |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.04` | them-lich-day | `Popup/Header`  | `I2527:167773;2514:153358` Title | — |  |  | Khớp | QC |
-| `A04.05` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167779;2514:153363` Atom/Button | — |  | `TC16`, `TC17`, `TC19` | Khớp | QC |
+| `A04.04` | them-lich-day |  | `2384:59178` Thêm lịch dạy | — |  |  | Khớp | QC |
+| `A04.05` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167767;2514:153363` Atom/Button | — |  | `TC16`, `TC17`, `TC19` | Khớp | QC |
 
 ### `A05` Popup xem/chỉnh sửa khi bấm thẻ lịch
 
-Frame: `ADM-LOP-040500` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040510`, `ADM-LOP-040520`, `ADM-LOP-040521` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | tieu-de |  |  | — |  | `TC21` | Chưa khớp tự động | QC |
+| `A05.01` | tieu-de | `Popup/Header`  | `I2527:167761;2514:153357` Tiêu đề | — |  | `TC21` | Khớp | QC |
 | `A05.02` | thoi-gian-ngay |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.03` | gio-bat-dau |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.04` | giao-vien | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I2384:57888;2177:28928` Chi tiết NV | — |  | `TC21`, `TC24`, `TC25`, `TC27b`, `TC27c` | Khớp | QC |
+| `A05.03` | gio-bat-dau |  | `2384:59030` Giờ bắt đầu | — |  |  | Khớp | QC |
+| `A05.04` | giao-vien |  |  | — |  | `TC21`, `TC24`, `TC25`, `TC27b`, `TC27c` | Chưa khớp tự động | QC |
 | `A05.05` | thoi-gian-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A05.06` | luong-gio |  |  | — |  | `TC27a`, `TC27b`, `TC27c`, `TC27e` | Chưa khớp tự động | QC |
 | `A05.07` | trang-thai |  |  | — |  | `TC21`, `TC22`, `TC26`, `TC27` | Chưa khớp tự động | QC |
-| `A05.08` | huy | `STATUS CALENDAR`  | `3650:48210` STATUS CALENDAR; `3650:48210` STATUS CALENDAR | — |  |  | Khớp | QC |
-| `A05.09` | xac-nhan |  |  | — |  | `TC22`, `TC23`, `TC24`, `TC25`, `TC27b`, `TC27c`, `TC27d`, `TC27` | Chưa khớp tự động | QC |
+| `A05.08` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167767;2514:153361` Atom/Button; `I2527:167767;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+| `A05.09` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167767;2514:153363` Atom/Button | — |  | `TC22`, `TC23`, `TC24`, `TC25`, `TC27b`, `TC27c`, `TC27d`, `TC27` | Khớp | QC |
 
 ### `A06` Hoàn thành và hủy lịch
 
@@ -111,14 +111,14 @@ Frame: `ADM-LOP-040500` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
 
 ### `A07` Mở lại lịch đã hoàn thành và đảo lương
 
-Frame: `ADM-LOP-040500` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040510` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A07.01` | nut-mo-lai |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.02` | ly-do-dieu-chinh |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.03` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A07.04` | huy | `STATUS CALENDAR`  | `3650:48210` STATUS CALENDAR | — |  |  | Khớp | QC |
+| `A07.04` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167767;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 | `A07.05` | xac-nhan-mo-lai |  |  | — |  | `TC39` | Chưa khớp tự động | QC |
 
 ### `A08` Toast phản hồi CRUD lịch
@@ -240,7 +240,7 @@ Frame: `ADM-LOP-040500` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (31): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A03.01`, `A03.03`, `A03.04`, `A03.06`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.05`, `A05.06`, `A05.07`, `A05.09`, `A06.02`, `A06.04`, `A06.05`, `A07.01`, `A07.02`, `A07.03`, `A07.05`, `A08.01`, `A08.03`, `A08.04`
+- Chưa khớp tự động (28): `A01.01`, `A01.02`, `A01.03`, `A01.05`, `A01.06`, `A01.07`, `A03.01`, `A03.03`, `A03.04`, `A03.06`, `A04.01`, `A04.02`, `A04.03`, `A05.02`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A06.02`, `A06.04`, `A06.05`, `A07.01`, `A07.02`, `A07.03`, `A07.05`, `A08.01`, `A08.03`, `A08.04`
 - Frame Figma chưa có requirement (3): `ADM-LOP-040510`, `ADM-LOP-040520`, `ADM-LOP-040521`
 - Thiếu prototype link đi vào (1): `ADM-LOP-040521`
 - Testcase không trỏ REQ (3): `TC44`, `TC45`, `TC46`

@@ -51,13 +51,13 @@ Frame: `CD-KH-010010` (tool đoán:CD-KH-010010) · Nguồn nội dung: QC
 
 ### `A04` Trang 4: Popup Nhân bản khoá học
 
-Frame: `CD-KH-010000` (tool đoán:CD-KH-010000) · Nguồn nội dung: QC
+Frame: `CD-KH-010010`, `CD-KH-010013` (tool đoán:CD-KH-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | tieu-de |  |  | — |  | `TC26` | Chưa khớp tự động | QC |
-| `A04.02` | noi-dung | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:256174;4901:216084` Card Menu | — |  | `TC14`, `TC15`, `TC17`, `TC26`, `TC27`, `TC28` | Khớp | QC |
-| `A04.03` | nut |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.01` | tieu-de | `Popup/Header`  | `I2527:168013;2514:153357` Tiêu đề | — |  | `TC26` | Khớp | QC |
+| `A04.02` | noi-dung | `Atom/Input` State=Default, Kiểu=Chuẩn | `I3004:49814;3004:58628;1048:1264` Tìm nội dung... | — |  | `TC14`, `TC15`, `TC17`, `TC26`, `TC27`, `TC28` | Khớp | QC |
+| `A04.03` | nut | `Atom/Button` Type=Secondary, Size=Medium; `Popup/Footer` Type=Hai nút | `2527:168019` Popup/Footer; `I2527:168019;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 | `A04.04` | toast-thanh-cong |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.05` | toast-loi |  |  | — |  | `TC14`, `TC15`, `TC16`, `TC17` | Chưa khớp tự động | QC |
 
@@ -160,7 +160,7 @@ Frame: `CD-KH-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (4): `A04.01`, `A04.03`, `A04.04`, `A04.05`
+- Chưa khớp tự động (2): `A04.04`, `A04.05`
 - Frame Figma chưa có requirement (2): `CD-KH-010010`, `CD-KH-010013`
 - Testcase trỏ mã không tồn tại (2): `TC24`, `TC25`
 - REQ/EX chưa có testcase (5): `REQ03`, `REQ04`, `EX03`, `EX08`, `EX12`

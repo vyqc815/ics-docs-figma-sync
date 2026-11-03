@@ -59,25 +59,25 @@ Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tieu-de-vung |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | mo-ta |  |  | — |  | `TC11` | Chưa sync | QC |
-| `A03.03` | package-category-action-item |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | mo-rong-item |  |  | — |  |  | Chưa sync | QC |
-| `A03.05` | action-xac-thuc-verify-duoc-gan |  |  | — |  |  | Chưa sync | QC |
-| `A03.06` | action-xac-thuc-verify-khong-gan-giao-vi |  |  | — |  |  | Chưa sync | QC |
-| `A03.07` | action-item-loai-khac-check-progress-eva |  |  | — |  |  | Chưa sync | QC |
-| `A03.08` | bien-ban-cuoc-hop |  |  | — |  | `TC16` | Chưa sync | QC |
+| `A03.01` | tieu-de-vung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | mo-ta |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
+| `A03.03` | package-category-action-item |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | mo-rong-item |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | action-xac-thuc-verify-duoc-gan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.06` | action-xac-thuc-verify-khong-gan-giao-vi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.07` | action-item-loai-khac-check-progress-eva |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.08` | bien-ban-cuoc-hop |  |  | — |  | `TC16` | Chưa khớp tự động | QC |
 
 ### `A04` Toast phản hồi CRUD
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `GV-LOP-060100` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | thanh-cong |  |  | — |  | `TTC02` | Chưa sync | QC |
-| `A04.02` | thong-tin |  |  | — |  | `TTC01` | Chưa sync | QC |
-| `A04.03` | canh-bao |  |  | — |  |  | Chưa sync | QC |
-| `A04.04` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A04.01` | thanh-cong |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A04.02` | thong-tin | `Card Menu v2 (Test)` Type=Menu phụ, State=Default | `I4915:260963;4901:214212` Card Menu v2 (Test) | — |  | `TTC01` | Khớp | QC |
+| `A04.03` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ## 5. Nghiệp vụ
 
@@ -134,8 +134,7 @@ Frame: chưa có · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (10): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.07`
-- Chưa sync (12): `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A04.01`, `A04.02`, `A04.03`, `A04.04`
+- Chưa khớp tự động (21): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.07`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A04.01`, `A04.03`, `A04.04`
 - Popup chưa có màn cha (2): `GV-LOP-060100`, `GV-LOP-070100`
 - Phân loại cần design duyệt (2): `GV-LOP-060100`, `GV-LOP-070100`
 - Thiếu prototype link đi vào (2): `GV-LOP-060100`, `GV-LOP-070100`

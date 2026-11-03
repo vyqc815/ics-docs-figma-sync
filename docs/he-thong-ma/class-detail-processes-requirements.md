@@ -40,14 +40,14 @@ Requirement: `management_requirement/class_management/class_detail_processes_req
 
 ### `A01` Ba tab quy trình trong lớp
 
-Frame: `ADM-LOP-020710`, `ADM-LOP-020810` (tool đoán:ADM-LOP-020710, ADM-LOP-020810) · Nguồn nội dung: QC
+Frame: `ADM-LOP-020604` (tool đoán:ADM-LOP-020710, ADM-LOP-020810) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | ten-tab |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.02` | tien-do |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
 | `A01.03` | action-item |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.04` | nut-them |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.04` | nut-them | `Atom/Button` Type=Primary, Size=Medium | `2711:52528` Atom/Button | — |  |  | Khớp | QC |
 
 ### `A02` Popup Thêm nội dung
 
@@ -175,7 +175,7 @@ Frame: `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (12): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A03.04`
+- Chưa khớp tự động (11): `A01.01`, `A01.02`, `A01.03`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A03.04`
 - Frame Figma chưa có requirement (13): `ADM-LOP-020604`, `ADM-LOP-020610`, `ADM-LOP-020611`, `ADM-LOP-020612`, `ADM-LOP-020704`, `ADM-LOP-020710`, `ADM-LOP-020711`, `ADM-LOP-020712`, `ADM-LOP-020804`, `ADM-LOP-020810`, `ADM-LOP-020811`, `ADM-LOP-020812`, `ADM-LOP-020904`
 - Phân loại cần design duyệt (4): `ADM-LOP-020604`, `ADM-LOP-020704`, `ADM-LOP-020804`, `ADM-LOP-020904`
 - Thiếu prototype link đi vào (7): `ADM-LOP-020604`, `ADM-LOP-020610`, `ADM-LOP-020704`, `ADM-LOP-020710`, `ADM-LOP-020804`, `ADM-LOP-020810`, `ADM-LOP-020904`

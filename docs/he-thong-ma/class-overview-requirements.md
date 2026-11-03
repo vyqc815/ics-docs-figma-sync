@@ -45,20 +45,18 @@ Frame: `GV-LOP-020000` · Nguồn nội dung: QC
 
 ### `A02` Nút Back và tooltip thông tin lớp
 
-Frame: `GV-LOP-010000` · Nguồn nội dung: QC
+Frame: `GV-LOP-020000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | nut-back-ma-lop | `MENU - TEACHER`  | `4915:258752` Sidebar · MENU - TEACHER | — |  |  | Khớp | QC |
-| `A02.02` | tooltip |  |  | — |  | `TC05`, `TC06`, `TC08` | Chưa khớp tự động | QC |
-| `A02.03` | buoi-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.04` | lich-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.05` | sp | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:258752;6244:32838` Card Menu | — |  |  | Khớp | QC |
-| `A02.06` | cskh |  |  | — |  | `TC07` | Chưa khớp tự động | QC |
-| `A02.07` | giao-vien | `ACCOUNT` Size=Default | `3868:95485` ACCOUNT | — |  |  | Khớp | QC |
-| `A02.08` | khai-giang |  |  | — |  | `TC07` | Chưa khớp tự động | QC |
-| `A02.09` | component-2 | `Switch Center`  | `4273:161193` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
-| `A02.10` | header-vai-tro |  | `4899:187387` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
+| `A02.01` | nut-back-ma-lop |  | `4324:4865` Tổng Quan Lớp | — |  |  | Khớp | QC |
+| `A02.02` | tooltip | `Card Menu v2 (Test)` Type=Menu phụ, State=Default; `Molecule/Tooltip`  | `5413:254526` Tooltip · Hover nút Back (Thông tin lớp); `I4915:259100;4901:212249` Card Menu v2 (Test) | — |  | `TC05`, `TC06`, `TC08` | Khớp | QC |
+| `A02.03` | buoi-hoc | `Molecule/Tooltip`  | `I5413:254526;3004:73496` Buổi học | — |  |  | Khớp | QC |
+| `A02.04` | lich-hoc | `Molecule/Tooltip`  | `I5413:254526;3004:73498` Lịch học | — |  |  | Khớp | QC |
+| `A02.05` | sp | `Molecule/Tooltip`  | `I5413:254526;3004:73497` Khai giảng | — |  |  | Khớp | QC |
+| `A02.06` | cskh | `ICON MENU` ; `Molecule/Tooltip`  | `I4915:259100;4901:212246;2245:87904` Icon; `I5413:254526;3004:73498` Lịch học | — |  | `TC07` | Khớp | QC |
+| `A02.07` | giao-vien | `ACCOUNT` Size=Default | `4324:6278` ACCOUNT | — |  |  | Khớp | QC |
+| `A02.08` | khai-giang | `Molecule/Tooltip`  | `I5413:254526;3004:73497` Khai giảng | — |  | `TC07` | Khớp | QC |
 
 ### `A03` Thống kê học tập trung bình của lớp
 
@@ -78,15 +76,15 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-02000
 
 ### `A04` Biểu đồ theo bài học
 
-Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-020000) · Nguồn nội dung: QC
+Frame: `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A04.01` | truc-bai-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.02` | gia-tri |  | `4324:4927` Giá trị | — |  |  | Khớp một phần | QC |
+| `A04.02` | gia-tri |  | `4324:4927` Giá trị | — |  |  | Khớp | QC |
 | `A04.03` | gioi-han-chart-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.04` | duong-vung-cam |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.05` | tooltip | `Molecule/Tooltip`  | `5413:254526` Tooltip · Hover nút Back (Thông tin lớp) | — |  |  | Khớp một phần | QC |
+| `A04.05` | tooltip | `Molecule/Tooltip`  | `5413:254526` Tooltip · Hover nút Back (Thông tin lớp) | — |  |  | Khớp | QC |
 
 ### `A05` Danh sách, tìm kiếm và chọn học viên
 
@@ -103,12 +101,12 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-02000
 
 ### `A06` Đánh giá tổng và bài học gần đây
 
-Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-020000) · Nguồn nội dung: QC
+Frame: `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A06.01` | badge-danh-gia |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A06.02` | so-bai-hien-thi |  | `4324:5081` Danh sách học viên | — |  |  | Khớp một phần | QC |
+| `A06.02` | so-bai-hien-thi |  | `4324:5081` Danh sách học viên | — |  |  | Khớp | QC |
 | `A06.03` | di-hoc-vang |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A06.04` | da-nop-btvn |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A06.05` | icon-bai |  |  | — |  | `TC26` | Chưa khớp tự động | QC |
@@ -116,15 +114,15 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-02000
 
 ### `A07` Bảng bài học của học viên và điểm danh
 
-Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-020000) · Nguồn nội dung: QC
+Frame: `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | ten-bai-hoc |  | `4324:4904` Tên bài học | — |  | `TC32` | Khớp một phần | QC |
-| `A07.02` | ghi-chu |  | `4324:4906` Ghi chú | — | opens `A08` | `TC29` | Khớp một phần | QC |
-| `A07.03` | trang-thai | `DD/Molecule/Trigger` Size=XS, State=Default | `3868:95575` Filter · Trạng thái | — |  | `TC30` | Khớp | QC |
-| `A07.04` | diem-nop-bai |  | `4324:4910` ĐIỂM / NỘP BÀI; `4324:4930` Chưa nộp | — |  |  | Khớp một phần | QC |
-| `A07.05` | thoi-gian | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `I3868:95633;3065:71108` Tiêu đề | — | opens `A09` | `TC29` | Khớp | QC |
+| `A07.01` | ten-bai-hoc |  | `4324:4904` Tên bài học | — |  | `TC32` | Khớp | QC |
+| `A07.02` | ghi-chu |  | `4324:4906` Ghi chú | — | opens `A08` | `TC29` | Khớp | QC |
+| `A07.03` | trang-thai |  | `4324:4908` Trạng thái | — |  | `TC30` | Khớp | QC |
+| `A07.04` | diem-nop-bai |  | `4324:4910` ĐIỂM / NỘP BÀI; `4324:4930` Chưa nộp | — |  |  | Khớp | QC |
+| `A07.05` | thoi-gian |  | `4324:4912` Thời gian | — | opens `A09` | `TC29` | Khớp | QC |
 | `A07.06` | co-mat |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.07` | vao-tre |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.08` | ra-som |  |  | — |  |  | Chưa khớp tự động | QC |
@@ -165,35 +163,46 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-02000
 | `A10.02` | rong |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A10.03` | loi | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:258752;4901:212605;2245:87768` Label | — |  |  | Khớp một phần | QC |
 | `A10.04` | toast |  |  | — |  | `TC41` | Chưa khớp tự động | QC |
+| `A10.05` | sidebar-menu-teacher | `MENU - TEACHER`  | `4915:258752` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
 
-### `F01` (ngoài Body)
+### `F01` Header
+
+Frame: `GV-LOP-010000` · Nguồn nội dung: Figma
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `F01.01` | account | `ACCOUNT` Size=Default | `3868:95485` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | component-2 | `Switch Center`  | `4273:161193` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | header-vai-tro |  | `4899:187387` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
+
+### `F02` (ngoài Body)
 
 Frame: `GV-LOP-010000`, `GV-LOP-020000` · Nguồn nội dung: Figma
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `F01.01` | filter-loai-lop | `DD/Molecule/Trigger` Size=XS, State=Default | `3868:95574` Filter · Loại lớp | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | filter-trinh-do | `DD/Molecule/Trigger` Size=XS, State=Default | `3868:95576` Filter · Trình độ | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | ket-qua-diem-danh-gia | `Kết quả · Điểm đánh giá`  | `6725:364190` Kết quả · Điểm đánh giá | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | the-chi-so-buoi-da-day | `Thẻ chỉ số` Kiểu=Biểu đồ cột tháng | `6757:364993` Thẻ chỉ số · Buổi đã dạy | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | the-chi-so-luong-cung | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `6725:362403` Thẻ chỉ số · Lương cứng | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | the-chi-so-luong-kpi | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `6725:362415` Thẻ chỉ số · Lương KPI | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | global-progress-bar | `Global Progress Bar`  | `3868:95651` Global Progress Bar | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | progress-diem-danh-gia-a-f | `Progress/Điểm Đánh Giá (A-F)` Size=28x24 | `3868:95653` Progress/Điểm Đánh Giá (A-F) | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | percent | `PERCENT %`  | `3868:95655` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | class-status | `CLass Status`  | `3868:96266` CLass Status | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | avatar | `Avatar` Size=20 | `4324:4888` Avatar | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.12` | the-chi-so | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4324:4894` Thẻ chỉ số | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.13` | atom-badge | `Atom/Badge`  | `4324:4916` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.14` | tag-thoi-gian | `Atom/Tag thời gian`  | `5413:75131` Tag thời gian | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.15` | o-dinh-danh |  | `4324:5087` Ô định danh | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.16` | class-session-status | `Class Session Status`  | `4324:5089` Class Session Status | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.17` | student-status | `Student Status`  | `4324:5097` Student Status | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.18` | mouse-click |  | `4324:5128` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.19` | component-2 | `Switch Center`  | `4324:5211` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.20` | account | `ACCOUNT` Size=Default | `4324:6278` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.21` | header-vai-tro |  | `4899:187401` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.22` | sidebar-menu-teacher | `MENU - TEACHER`  | `4915:259100` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.01` | filter-loai-lop | `DD/Molecule/Trigger` Size=XS, State=Default | `3868:95574` Filter · Loại lớp | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.02` | filter-trang-thai | `DD/Molecule/Trigger` Size=XS, State=Default | `3868:95575` Filter · Trạng thái | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.03` | filter-trinh-do | `DD/Molecule/Trigger` Size=XS, State=Default | `3868:95576` Filter · Trình độ | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.04` | ket-qua-diem-danh-gia | `Kết quả · Điểm đánh giá`  | `6725:364190` Kết quả · Điểm đánh giá | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.05` | the-chi-so-buoi-da-day | `Thẻ chỉ số` Kiểu=Biểu đồ cột tháng | `6757:364993` Thẻ chỉ số · Buổi đã dạy | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.06` | the-chi-so-luong-cung | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `6725:362403` Thẻ chỉ số · Lương cứng | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.07` | the-chi-so-luong-kpi | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `6725:362415` Thẻ chỉ số · Lương KPI | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.08` | global-progress-bar | `Global Progress Bar`  | `3868:95651` Global Progress Bar | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.09` | progress-diem-danh-gia-a-f | `Progress/Điểm Đánh Giá (A-F)` Size=28x24 | `3868:95653` Progress/Điểm Đánh Giá (A-F) | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.10` | percent | `PERCENT %`  | `3868:95655` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.11` | class-status | `CLass Status`  | `3868:96266` CLass Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.12` | avatar | `Avatar` Size=20 | `4324:4888` Avatar | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.13` | the-chi-so | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4324:4894` Thẻ chỉ số | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.14` | atom-badge | `Atom/Badge`  | `4324:4916` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.15` | tag-thoi-gian | `Atom/Tag thời gian`  | `5413:75131` Tag thời gian | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.16` | o-dinh-danh |  | `4324:5087` Ô định danh | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.17` | class-session-status | `Class Session Status`  | `4324:5089` Class Session Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.18` | student-status | `Student Status`  | `4324:5097` Student Status | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.19` | mouse-click |  | `4324:5128` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.20` | component-2 | `Switch Center`  | `4324:5211` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.21` | header-vai-tro |  | `4899:187401` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.22` | sidebar-menu-teacher | `MENU - TEACHER`  | `4915:259100` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -274,7 +283,7 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - `A01` Khác Figma GV-LOP-020000: khối `Bài Học Gần Đây` ở vùng trái đang vẽ 4 icon, requirement là 6 bài; bảng bài học chưa có tag thời điểm mở bài phía trên tên bài.
-- Chưa khớp tự động (35): `A01.02`, `A01.03`, `A01.04`, `A01.07`, `A02.02`, `A02.03`, `A02.04`, `A02.06`, `A02.08`, `A03.09`, `A04.01`, `A04.03`, `A04.04`, `A05.01`, `A05.02`, `A05.03`, `A05.06`, `A06.01`, `A06.03`, `A06.04`, `A06.05`, `A06.06`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`, `A07.12`, `A08.03`, `A09.01`, `A09.02`, `A10.01`, `A10.02`, `A10.04`
+- Chưa khớp tự động (30): `A01.02`, `A01.03`, `A01.04`, `A01.07`, `A03.09`, `A04.01`, `A04.03`, `A04.04`, `A05.01`, `A05.02`, `A05.03`, `A05.06`, `A06.01`, `A06.03`, `A06.04`, `A06.05`, `A06.06`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`, `A07.12`, `A08.03`, `A09.01`, `A09.02`, `A10.01`, `A10.02`, `A10.04`
 - Frame Figma chưa có requirement (2): `GV-LOP-020020`, `GV-LOP-020030`
 - Thiếu prototype link đi vào (2): `GV-LOP-020020`, `GV-LOP-020030`
 

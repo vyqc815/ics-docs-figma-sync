@@ -129,9 +129,7 @@
    "dark": "CD-KH-030270-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "CM-KS.A16"
-   ]
+   "regions": []
   },
   "CD-KH-030400": {
    "id": "CD-KH-030400",
@@ -201,7 +199,7 @@
     "CM-KS.A06",
     "CM-KS.A07",
     "CM-KS.A11",
-    "CM-KS.A17",
+    "CM-KS.A16",
     "CM-KS.F01"
    ]
   },
@@ -224,9 +222,7 @@
    "dark": "CD-KH-040110-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CM-KS.A09"
-   ]
+   "regions": []
   },
   "CD-KH-040120": {
    "id": "CD-KH-040120",
@@ -386,7 +382,8 @@
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
-    "CM-KS.A12"
+    "CM-KS.A12",
+    "CM-KS.A17"
    ]
   },
   "CD-KH-040190": {
@@ -461,7 +458,6 @@
     "CM-KS.A06",
     "CM-KS.A07",
     "CM-KS.A11",
-    "CM-KS.A17",
     "CM-KS.F01"
    ]
   }
@@ -3044,8 +3040,8 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Ngữ pháp",
-      "tên điểm ngữ pháp, ý nghĩa, cấu trúc"
+      "tên điểm ngữ pháp, ý nghĩa, cấu trúc",
+      "Ngữ pháp"
      ],
      "status": "chua-thay-tren-figma"
     },
@@ -3060,8 +3056,8 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Mẫu câu",
-      "câu, phiên âm, nghĩa"
+      "câu, phiên âm, nghĩa",
+      "Mẫu câu"
      ],
      "status": "chua-thay-tren-figma"
     },
@@ -3539,8 +3535,8 @@
       "CM-KS.TC25e"
      ],
      "missingTerms": [
-      "Ví dụ",
-      "Ví dụ n"
+      "Ví dụ n",
+      "Ví dụ"
      ],
      "status": "chua-thay-tren-figma"
     },
@@ -3618,7 +3614,6 @@
    "name": "chon-nhieu-va-thao-tac-hang-loat",
    "title": "Chọn nhiều và thao tác hàng loạt",
    "screens": [
-    "cd-kh-040110",
     "cd-kh-040120"
    ],
    "screensGuessed": [
@@ -3711,7 +3706,7 @@
      ],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-KS.A09.05",
@@ -3759,8 +3754,11 @@
       "CM-KS.TC26a"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-040120"
    ]
   },
   {
@@ -5093,8 +5091,8 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Tiêu đề",
-      "Gỡ N mục khỏi khoá học?"
+      "Gỡ N mục khỏi khoá học?",
+      "Tiêu đề"
      ],
      "status": "chua-thay-tren-figma"
     },
@@ -5109,8 +5107,8 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Nội dung",
-      "Từ 你 · nǐ sẽ bị gỡ khỏi Kiến thức (S1), khỏi cụm và khỏi bài học mà cụm liên kết:"
+      "Từ 你 · nǐ sẽ bị gỡ khỏi Kiến thức (S1), khỏi cụm và khỏi bài học mà cụm liên kết:",
+      "Nội dung"
      ],
      "status": "chua-thay-tren-figma"
     },
@@ -5227,7 +5225,7 @@
    "name": "cum-lien-ket-voi-chi-tiet-bai-hoc",
    "title": "Cụm liên kết với Chi tiết bài học",
    "screens": [
-    "cd-kh-030270"
+    "cd-kh-040100"
    ],
    "screensGuessed": [],
    "source": "tu-dien",
@@ -5246,8 +5244,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Nguồn dữ liệu",
+      "Thứ tự trong cụm"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-KS.A16.02",
@@ -5256,11 +5257,32 @@
      "spec": "Mặc định `Từ vựng`; đổi loại thì hiện cụm của loại đó.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-040100": [
+       {
+        "term": "Từ vựng",
+        "figmaId": "I4846:158294;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tab · Từ vựng",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": true
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Bộ lọc loại"
+     ],
+     "status": "khop"
     },
     {
      "id": "CM-KS.A16.03",
@@ -5272,8 +5294,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tiêu đề khung",
+      "Cụm từ vựng: Gia đình · 16 từ"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-KS.A16.04",
@@ -5285,9 +5310,14 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Đồng bộ"
+     ],
+     "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-040100"
    ]
   },
   {
@@ -5295,8 +5325,7 @@
    "name": "toast-phan-hoi-crud",
    "title": "Toast phản hồi CRUD",
    "screens": [
-    "cd-kh-040100",
-    "cd-kh-040200"
+    "cd-kh-040170"
    ],
    "screensGuessed": [
     "CD-KH-040100",
@@ -5335,44 +5364,19 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-040100": [
+      "cd-kh-040170": [
        {
         "term": "Thông tin",
-        "figmaId": "I4846:158419;1725:17144",
-        "layer": "Label",
-        "confidence": "thap",
-        "region": "Panel · Danh sách từ vựng",
-        "owner": "Atom/Tag",
-        "component": "Atom/Tag",
+        "figmaId": "4846:172104",
+        "layer": "Liner Icon",
+        "confidence": "cao",
+        "region": "Cột kết quả",
+        "owner": "Liner Icon",
+        "component": "Liner Icon",
         "variant": {
-         "Close": false,
-         "Label": "2 thiếu thông tin",
-         "Color": "Amber",
-         "Size": "Small",
-         "Dropdown": "No",
-         "Shape": "Bo góc"
+         "Property 1": "Thông tin"
         },
-        "inCode": true
-       }
-      ],
-      "cd-kh-040200": [
-       {
-        "term": "Thông tin",
-        "figmaId": "I4846:168511;1725:17144",
-        "layer": "Label",
-        "confidence": "thap",
-        "region": "Panel · Danh sách kiến thức",
-        "owner": "Atom/Tag",
-        "component": "Atom/Tag",
-        "variant": {
-         "Close": false,
-         "Label": "4 thiếu thông tin",
-         "Color": "Amber",
-         "Size": "Small",
-         "Dropdown": "No",
-         "Shape": "Bo góc"
-        },
-        "inCode": true
+        "inCode": false
        }
       ]
      },
@@ -5408,49 +5412,18 @@
      "spec": "`Có Lỗi Xảy Ra` | Backend / network / AI không hoàn tất thao tác.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-040100": [
-       {
-        "term": "Lỗi",
-        "figmaId": "I5003:16563;1048:1240",
-        "layer": "Button",
-        "confidence": "thap",
-        "region": "Panel · Danh sách từ vựng",
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Soát lỗi bằng AI",
-         "Type": "Secondary",
-         "Size": "Small"
-        },
-        "inCode": true
-       }
-      ],
-      "cd-kh-040200": [
-       {
-        "term": "Lỗi",
-        "figmaId": "I5003:16565;1048:1240",
-        "layer": "Button",
-        "confidence": "thap",
-        "region": "Panel · Danh sách kiến thức",
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Soát lỗi bằng AI",
-         "Type": "Secondary",
-         "Size": "Small"
-        },
-        "inCode": true
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Có Lỗi Xảy Ra"
+      "Có Lỗi Xảy Ra",
+      "Lỗi"
      ],
-     "status": "khop"
+     "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-040170"
    ]
   },
   {

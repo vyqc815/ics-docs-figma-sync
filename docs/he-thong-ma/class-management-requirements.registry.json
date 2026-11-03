@@ -196,9 +196,7 @@
    "dark": "ADM-LOP-010020-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "M-CM.A08"
-   ]
+   "regions": []
   },
   "ADM-LOP-010040": {
    "id": "ADM-LOP-010040",
@@ -3113,7 +3111,6 @@
    "name": "popup-them-lich-hen-cho-lop",
    "title": "Popup Thêm lịch hẹn cho lớp",
    "screens": [
-    "adm-lop-010020",
     "adm-lop-010050"
    ],
    "screensGuessed": [
@@ -3159,7 +3156,7 @@
       "M-CM.TC54"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "M-CM.A08.02",
@@ -3194,7 +3191,7 @@
       "M-CM.TC54"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "M-CM.A08.03",
@@ -3230,7 +3227,7 @@
      "missingTerms": [
       "Ưu tiên thấp"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "M-CM.A08.04",
@@ -3267,7 +3264,7 @@
      "missingTerms": [
       "Admin"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "M-CM.A08.05",
@@ -3306,7 +3303,7 @@
      "missingTerms": [
       "Admin"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "M-CM.A08.06",
@@ -3341,7 +3338,7 @@
       "M-CM.TC54"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "M-CM.A08.07",
@@ -3351,23 +3348,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-lop-010020": [
-       {
-        "term": "Hủy",
-        "figmaId": "I2527:167755;2514:153361",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Huỷ",
-         "Type": "Secondary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ],
       "adm-lop-010050": [
        {
         "term": "Hủy",
@@ -3399,23 +3379,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-lop-010020": [
-       {
-        "term": "Xác Nhận",
-        "figmaId": "I2527:167755;2514:153363",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Xác nhận",
-         "Type": "Primary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ],
       "adm-lop-010050": [
        {
         "term": "Xác Nhận",
@@ -3442,6 +3405,9 @@
      "missingTerms": [],
      "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "adm-lop-010050"
    ]
   },
   {

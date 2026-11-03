@@ -82,7 +82,6 @@
    "citedByRequirement": true,
    "regions": [
     "M-CDK.A01",
-    "M-CDK.A03",
     "M-CDK.A04",
     "M-CDK.A05",
     "M-CDK.A06",
@@ -132,7 +131,9 @@
    "dark": "ADM-LOP-040712-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "M-CDK.A03"
+   ]
   }
  },
  "regions": [
@@ -552,7 +553,7 @@
    "name": "dropdown-trang-thai-va-xac-nhan",
    "title": "Dropdown trạng thái và xác nhận",
    "screens": [
-    "adm-lop-040700"
+    "adm-lop-040712"
    ],
    "screensGuessed": [
     "ADM-LOP-040700"
@@ -570,13 +571,37 @@
      "spec": "Có | Không | Sửa, xác nhận, hủy hoặc xóa.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040712": [
+       {
+        "term": "Mới",
+        "figmaId": "2245:107779",
+        "layer": "DD/Molecule/Trigger",
+        "confidence": "cao",
+        "region": "Trạng thái",
+        "owner": "DD/Molecule/Trigger",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Count": false,
+         "Chevron": true,
+         "Count Value": "1",
+         "Clear": false,
+         "Leading": false,
+         "Value": "Mới",
+         "Size": "M",
+         "State": "Open",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Mới"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "M-CDK.A03.02",
@@ -585,15 +610,39 @@
      "spec": "Có | Có | Khóa mọi thay đổi; Handler được tự xác nhận khoản của mình.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040712": [
+       {
+        "term": "Đã xác nhận",
+        "figmaId": "I2245:107799;2015:31432;2245:107802",
+        "layer": "DD/Molecule/Menu Item",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Molecule/Menu Item",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Meta Text": "12",
+         "Description Text": "Mô tả phụ",
+         "Label": "Đã xác nhận",
+         "Description": false,
+         "Submenu": false,
+         "Leading": false,
+         "Meta": false,
+         "Type": "Default",
+         "State": "Default",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDK.TC11"
      ],
-     "missingTerms": [
-      "Đã xác nhận"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "M-CDK.A03.03",
@@ -602,15 +651,39 @@
      "spec": "Có | Không | Giữ để xem; có thể xóa nếu chưa xác nhận. Phục hồi chưa chốt.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040712": [
+       {
+        "term": "Đã hủy",
+        "figmaId": "I2245:107799;2015:31432;2245:107803",
+        "layer": "DD/Molecule/Menu Item",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Molecule/Menu Item",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Meta Text": "12",
+         "Description Text": "Mô tả phụ",
+         "Label": "Đã hủy",
+         "Description": false,
+         "Submenu": false,
+         "Leading": false,
+         "Meta": false,
+         "Type": "Default",
+         "State": "Default",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDK.TC12"
      ],
-     "missingTerms": [
-      "Đã hủy"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "M-CDK.A03.04",
@@ -619,14 +692,41 @@
      "spec": "Không | Không | Xóa mềm; giữ audit.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040712": [
+       {
+        "term": "Đã xóa",
+        "figmaId": "I2245:107799;2015:31432;2245:107804",
+        "layer": "DD/Molecule/Menu Item",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Molecule/Menu Item",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Meta Text": "12",
+         "Description Text": "Mô tả phụ",
+         "Label": "Đã xóa",
+         "Description": false,
+         "Submenu": false,
+         "Leading": false,
+         "Meta": false,
+         "Type": "Default",
+         "State": "Default",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Đã xóa"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "adm-lop-040712"
    ]
   },
   {
@@ -656,8 +756,8 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Popup",
-      "Xóa khoản KPI?"
+      "Xóa khoản KPI?",
+      "Popup"
      ],
      "status": "chua-thay-tren-figma"
     },

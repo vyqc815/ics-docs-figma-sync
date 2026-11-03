@@ -40,20 +40,20 @@ Requirement: `management_requirement/student_management/student_management_requi
 
 ### `A01` Trang 1: Danh sách học viên
 
-Frame: `ADM-HV-010102`, `ADM-HV-010202` (tool đoán:ADM-HV-010102, ADM-HV-010202) · Nguồn nội dung: QC
+Frame: `ADM-HV-010000`, `ADM-HV-010001` (tool đoán:ADM-HV-010102, ADM-HV-010202) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | ten-hoc-vien |  |  | — |  | `TC20`, `TC14`, `TC04` | Chưa khớp tự động | QC |
+| `A01.01` | ten-hoc-vien | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `I3210:26919;2015:31836;3210:26913` Chỉnh sửa | — |  | `TC20`, `TC14`, `TC04` | Khớp một phần | QC |
 | `A01.02` | mui-ten-cuoi-dong |  |  | — |  | `TC54` | Chưa khớp tự động | QC |
-| `A01.03` | gmail |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
-| `A01.04` | ngay-chot-don |  |  | — |  | `TC01`, `TC50` | Chưa khớp tự động | QC |
-| `A01.05` | so-lop |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
-| `A01.06` | so-bill |  |  | — |  | `TC01`, `TC52`, `TC55` | Chưa khớp tự động | QC |
-| `A01.07` | lop-hien-tai | `DD/Molecule/Menu Item` Type=Checkbox, State=Default, Size=S | `I3269:74669;2015:31501;3269:74736` Đang học | — |  | `TC01` | Khớp một phần | QC |
-| `A01.08` | ghi-chu |  |  | — |  | `TC01`, `TC31`, `TC53` | Chưa khớp tự động | QC |
-| `A01.09` | tong-doanh-thu |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
-| `A01.10` | hoan-tien |  |  | — |  | `TC01`, `TC55` | Chưa khớp tự động | QC |
+| `A01.03` | gmail | `ACCOUNT` Size=Default | `3210:25842` Gmail; `I2223:83725;1391:17268` admin@gmail.com | — |  | `TC01` | Khớp | QC |
+| `A01.04` | ngay-chot-don |  | `3210:25824` Ngày chốt đơn | — |  | `TC01`, `TC50` | Khớp | QC |
+| `A01.05` | so-lop |  | `3210:25826` Số lớp | — |  | `TC01` | Khớp | QC |
+| `A01.06` | so-bill |  | `3210:25828` Số bill | — |  | `TC01`, `TC52`, `TC55` | Khớp | QC |
+| `A01.07` | lop-hien-tai | `Student Status`  | `3210:25830` Lớp hiện tại; `3210:25859` Student Status | — |  | `TC01` | Khớp | QC |
+| `A01.08` | ghi-chu | `Card Menu v2 (Test)` Type=Con, State=Default | `I4915:233468;4899:195421` Card Menu v2 (Test) | — |  | `TC01`, `TC31`, `TC53` | Khớp | QC |
+| `A01.09` | tong-doanh-thu | `Atom/Chip` Type=Hoàn tiền; `Atom/Chip` Type=TỔNG DOANH THU | `3210:25854` Atom/Chip; `3210:25856` Atom/Chip | — |  | `TC01` | Khớp | QC |
+| `A01.10` | hoan-tien | `Atom/Chip` Type=Hoàn tiền | `3210:25856` Atom/Chip; `3210:25856` Atom/Chip | — |  | `TC01`, `TC55` | Khớp | QC |
 
 ### `A02` Popup Thêm học viên
 
@@ -131,22 +131,22 @@ Frame: `ADM-HV-010000` (tool đoán:ADM-HV-010000) · Nguồn nội dung: QC
 
 ### `A08` Lịch sử lớp
 
-Frame: `ADM-HV-010062` (tool đoán:ADM-HV-010062) · Nguồn nội dung: QC
+Frame: `ADM-HV-010000`, `ADM-HV-010001` (tool đoán:ADM-HV-010062) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | so-lop |  |  | — |  | `TC64`, `TC77`, `TC79`, `TC83` | Chưa khớp tự động | QC |
+| `A08.01` | so-lop |  | `3210:25826` Số lớp | — |  | `TC64`, `TC77`, `TC79`, `TC83` | Khớp | QC |
 | `A08.02` | len-ky |  |  | — |  | `TC28`, `TC64`, `TC79`, `TC83` | Chưa khớp tự động | QC |
 | `A08.03` | di-hoc |  |  | — |  | `TC64`, `TC74`, `TC75`, `TC83` | Chưa khớp tự động | QC |
 | `A08.04` | btvn |  |  | — |  | `TC64`, `TC74`, `TC75`, `TC83` | Chưa khớp tự động | QC |
 | `A08.05` | dat-kpi |  |  | — |  | `TC28`, `TC64`, `TC79`, `TC83` | Chưa khớp tự động | QC |
 | `A08.06` | danh-gia |  |  | — |  | `TC28`, `TC64`, `TC81`, `TC83` | Chưa khớp tự động | QC |
 | `A08.07` | ma-lop |  |  | — |  | `TC28` | Chưa khớp tự động | QC |
-| `A08.08` | khoa-hoc |  |  | — |  | `TC28` | Chưa khớp tự động | QC |
+| `A08.08` | khoa-hoc | `Molecule/Tooltip`  | `I3269:72184;1448:8825` Đang sinh sống và làm việc tại Thâm Quyến, Trung Quốc. Đã tốt nghiệp cử nhân chuyên ngành Trung Quốc học, khoa Đông phương học, trường Đại học Khoa học Xã hội và Nhân văn TP.HCM, chứng chỉ HSK6. | — |  | `TC28` | Khớp một phần | QC |
 | `A08.09` | danh-gia |  |  | — |  | `TC28`, `TC64`, `TC81`, `TC83` | Chưa khớp tự động | QC |
-| `A08.10` | kpi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.10` | kpi | `ICON MENU`  | `I4915:233468;4899:195427;2245:87854` ICON MENU | — |  |  | Khớp | QC |
 | `A08.11` | mui-ten-cuoi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A08.12` | hoan-thanh |  |  | — |  | `TC28`, `TC77`, `TC78`, `TC79`, `TC83` | Chưa khớp tự động | QC |
+| `A08.12` | hoan-thanh | `Student Status`  | `3210:25975` Student Status | — |  | `TC28`, `TC77`, `TC78`, `TC79`, `TC83` | Khớp | QC |
 | `A08.13` | chua-hoan-thanh |  |  | — |  | `TC78`, `TC83` | Chưa khớp tự động | QC |
 | `A08.14` | 8-5 |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A08.15` | 7-va-8-5 |  |  | — |  |  | Chưa khớp tự động | QC |
@@ -378,7 +378,7 @@ Frame: `ADM-HV-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (51): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.08`, `A01.09`, `A01.10`, `A02.10`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.12`, `A07.13`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.09`, `A08.10`, `A08.11`, `A08.12`, `A08.13`, `A08.14`, `A08.15`, `A08.16`, `A08.17`, `A08.18`, `A08.19`, `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`, `A10.03`, `A10.04`
+- Chưa khớp tự động (39): `A01.02`, `A02.10`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.12`, `A07.13`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.09`, `A08.11`, `A08.13`, `A08.14`, `A08.15`, `A08.16`, `A08.17`, `A08.18`, `A08.19`, `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`, `A10.03`, `A10.04`
 - Frame Figma chưa có requirement (8): `ADM-HV-010001`, `ADM-HV-010010`, `ADM-HV-010012`, `ADM-HV-010060`, `ADM-HV-010062`, `ADM-HV-010070`, `ADM-HV-010102`, `ADM-HV-010202`
 - Thiếu prototype link đi vào (3): `ADM-HV-010010`, `ADM-HV-010060`, `ADM-HV-010070`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`

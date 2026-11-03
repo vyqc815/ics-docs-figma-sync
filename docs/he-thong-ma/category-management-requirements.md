@@ -82,20 +82,20 @@ Frame: `CD-DM-010000` (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
 
 ### `A05` Tab Tổng quan
 
-Frame: `CD-DM-010000` (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
+Frame: `CD-DM-010010` (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A05.01` | danh-sach-khoa-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.02` | tim-kiem-khoa-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.03` | them-khoa-hoc |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
+| `A05.02` | tim-kiem-khoa-hoc | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `2702:46349` Atom/Input | — |  |  | Khớp | QC |
+| `A05.03` | them-khoa-hoc | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `I2702:48230;5056:365849` Placeholder | — |  | `TC08` | Khớp | QC |
 | `A05.04` | id-khoa-hoc-tam-thoi |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.05` | id-cong-khai-cua-khoa-hoc | `Atom/Status` Size=M | `3065:53348` Atom/Status | — |  |  | Khớp | QC |
-| `A05.06` | ten-khoa-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.07` | mo-ta-khoa-hoc |  | `3065:53306` Nhập mô tả khoá học | — |  | `TC08` | Khớp | QC |
-| `A05.08` | so-ky |  |  | — |  | `TC09` | Chưa khớp tự động | QC |
-| `A05.09` | cap-do | `Card Menu v2 (Test)` Type=Chính, State=Select | `I4915:257163;4901:217035;2245:87774` Label | — |  | `TC08` | Khớp | QC |
-| `A05.10` | trang-thai | `Atom/Status` Size=M; `DD/Molecule/Trigger` Size=XS, State=Default | `3065:53785` DD/Molecule/Trigger; `3065:53348` Atom/Status | — |  | `TC02`, `TC03`, `TC04`, `TC05`, `TC08`, `TC10`, `TC11`, `TC14`, `TC18`, `TC21`, `TC22`, `TC23`, `TC24`, `TC26` | Khớp | QC |
+| `A05.05` | id-cong-khai-cua-khoa-hoc |  | `1725:17395` Nhập mô tả khoá học | — |  |  | Khớp | QC |
+| `A05.06` | ten-khoa-hoc |  | `1725:17378` Tên khoá học | — |  |  | Khớp | QC |
+| `A05.07` | mo-ta-khoa-hoc |  | `1725:17380` Mô tả khoá học | — |  | `TC08` | Khớp | QC |
+| `A05.08` | so-ky |  | `1725:17382` Số kỳ | — |  | `TC09` | Khớp | QC |
+| `A05.09` | cap-do |  | `1725:17384` Cấp độ | — |  | `TC08` | Khớp | QC |
+| `A05.10` | trang-thai |  | `1725:17386` Trạng thái; `1725:17395` Nhập mô tả khoá học | — |  | `TC02`, `TC03`, `TC04`, `TC05`, `TC08`, `TC10`, `TC11`, `TC14`, `TC18`, `TC21`, `TC22`, `TC23`, `TC24`, `TC26` | Khớp | QC |
 
 ### `A06` Popup Kích hoạt công khai khóa học
 
@@ -194,7 +194,7 @@ Frame: `CD-DM-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (18): `A02.01`, `A03.01`, `A03.02`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.06`, `A05.08`, `A07.02`, `A07.03`, `A07.05`
+- Chưa khớp tự động (14): `A02.01`, `A03.01`, `A03.02`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A05.01`, `A05.04`, `A07.02`, `A07.03`, `A07.05`
 - Frame Figma chưa có requirement (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Thiếu prototype link đi vào (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Phân loại cần design duyệt (3): `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`

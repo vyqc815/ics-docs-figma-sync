@@ -115,7 +115,6 @@
    "regions": [
     "CM-CM.A01",
     "CM-CM.A02",
-    "CM-CM.A04",
     "CM-CM.F01",
     "CM-CM.F02"
    ]
@@ -149,7 +148,8 @@
    ],
    "citedByRequirement": false,
    "regions": [
-    "CM-CM.A03"
+    "CM-CM.A03",
+    "CM-CM.A04"
    ]
   },
   "CD-KH-010013": {
@@ -173,7 +173,9 @@
     "CD-KH-010010"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CM-CM.A04"
+   ]
   }
  },
  "regions": [
@@ -233,7 +235,8 @@
    "name": "trang-4-popup-nhan-ban-khoa-hoc",
    "title": "Trang 4: Popup Nhân bản khoá học",
    "screens": [
-    "cd-kh-010000"
+    "cd-kh-010010",
+    "cd-kh-010013"
    ],
    "screensGuessed": [
     "CD-KH-010000"
@@ -251,16 +254,50 @@
      "spec": "`Nhân bản khoá học`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-010010": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I2527:168013;2514:153357",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "No",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-010013": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I2706:43837;2514:153357",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "No",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-CM.TC26"
      ],
      "missingTerms": [
-      "Tiêu đề",
       "Nhân bản khoá học"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "CM-CM.A04.02",
@@ -270,21 +307,38 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-010000": [
+      "cd-kh-010010": [
        {
         "term": "Nội dung",
-        "figmaId": "I4915:256174;4901:216084",
-        "layer": "Card Menu",
+        "figmaId": "I3004:49814;3004:58628;1048:1264",
+        "layer": "Tìm nội dung...",
         "confidence": "cao",
-        "region": null,
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
+        "region": "Form Elements",
+        "owner": "Ô nhập",
+        "component": "Atom/Input",
         "variant": {
-         "Icon": "2808:53556",
-         "Label": "Nội dung",
-         "Type": "Chính",
+         "Loại": "Gift code",
+         "Text": "Nhập mô tả",
          "State": "Default",
-         "Expanded": "No"
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-010013": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I3004:49726;3004:58628;1048:1264",
+        "layer": "Tìm nội dung...",
+        "confidence": "cao",
+        "region": "Form Elements",
+        "owner": "Ô nhập",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Nhập mô tả",
+         "State": "Default",
+         "Kiểu": "Chuẩn"
         },
         "inCode": false
        }
@@ -311,14 +365,72 @@
      "spec": "`Huỷ` — `Nhân bản` (disable + loading trong lúc BE xử lý để tránh gửi lặp)",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-010010": [
+       {
+        "term": "Nút",
+        "figmaId": "2527:168019",
+        "layer": "Popup/Footer",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Footer",
+        "component": "Popup/Footer",
+        "variant": {
+         "Type": "Hai nút"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Huỷ",
+        "figmaId": "I2527:168019;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-010013": [
+       {
+        "term": "Nút",
+        "figmaId": "2706:43877",
+        "layer": "Popup/Footer",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Footer",
+        "component": "Popup/Footer",
+        "variant": {
+         "Type": "Hai nút"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Huỷ",
+        "figmaId": "I2706:43877;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Nút",
-      "Huỷ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "CM-CM.A04.04",
@@ -357,6 +469,10 @@
      ],
      "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-010010",
+    "cd-kh-010013"
    ]
   },
   {

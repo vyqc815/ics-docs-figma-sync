@@ -298,10 +298,12 @@
    "openedFrom": [],
    "citedByRequirement": true,
    "regions": [
+    "M-SM.A01",
     "M-SM.A03",
     "M-SM.A04",
     "M-SM.A06",
     "M-SM.A07",
+    "M-SM.A08",
     "M-SM.A09",
     "M-SM.A10",
     "M-SM.F01"
@@ -326,7 +328,10 @@
    "dark": "ADM-HV-010001-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "M-SM.A01",
+    "M-SM.A08"
+   ]
   },
   "ADM-HV-010010": {
    "id": "ADM-HV-010010",
@@ -414,9 +419,7 @@
    "dark": "ADM-HV-010062-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "M-SM.A08"
-   ]
+   "regions": []
   },
   "ADM-HV-010070": {
    "id": "ADM-HV-010070",
@@ -460,9 +463,7 @@
    "dark": "ADM-HV-010102-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "M-SM.A01"
-   ]
+   "regions": []
   },
   "ADM-HV-010202": {
    "id": "ADM-HV-010202",
@@ -483,9 +484,7 @@
    "dark": "ADM-HV-010202-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "M-SM.A01"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -494,8 +493,8 @@
    "name": "trang-1-danh-sach-hoc-vien",
    "title": "Trang 1: Danh sách học viên",
    "screens": [
-    "adm-hv-010102",
-    "adm-hv-010202"
+    "adm-hv-010000",
+    "adm-hv-010001"
    ],
    "screensGuessed": [
     "ADM-HV-010102",
@@ -514,7 +513,33 @@
      "spec": "Bấm tên mở menu `Thêm lịch hẹn` / `Xem lịch sử`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-010001": [
+       {
+        "term": "Thêm lịch hẹn",
+        "figmaId": "I3210:26919;2015:31836;3210:26913",
+        "layer": "Chỉnh sửa",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Chỉnh sửa",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Meta Text": "12",
+         "Meta": false,
+         "Leading Icon": "2808:45960",
+         "Description Text": "Mô tả phụ",
+         "Label": "Thêm lịch hẹn",
+         "Description": false,
+         "Submenu": false,
+         "Leading": true,
+         "Type": "Default",
+         "State": "Default",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SM.TC20",
@@ -522,10 +547,9 @@
       "M-SM.TC04"
      ],
      "missingTerms": [
-      "Tên học viên",
-      "Thêm lịch hẹn"
+      "Tên học viên"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop-mot-phan"
     },
     {
      "id": "M-SM.A01.02",
@@ -551,100 +575,59 @@
      "spec": "Hiển thị email học viên; nhãn Gmail không giới hạn domain `@gmail.com`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
-     "relations": [],
-     "testcases": [
-      "M-SM.TC01"
-     ],
-     "missingTerms": [
-      "Gmail",
-      "@gmail.com"
-     ],
-     "status": "chua-thay-tren-figma"
-    },
-    {
-     "id": "M-SM.A01.04",
-     "name": "ngay-chot-don",
-     "label": "Ngày chốt đơn",
-     "spec": "Hiển thị ngày chốt đơn của học viên theo định dạng trong UI; không dùng Ngày chốt đơn để sắp xếp danh sách; thứ tự lấy theo ngày tạo học viên.",
-     "source": "tu-dien",
-     "content": "qc",
-     "matches": {},
-     "relations": [],
-     "testcases": [
-      "M-SM.TC01",
-      "M-SM.TC50"
-     ],
-     "missingTerms": [
-      "Ngày chốt đơn"
-     ],
-     "status": "chua-thay-tren-figma"
-    },
-    {
-     "id": "M-SM.A01.05",
-     "name": "so-lop",
-     "label": "Số lớp",
-     "spec": "Tổng tất cả lớp học viên đã được thêm vào, không chỉ lớp hiện tại. Hover/bấm badge để xem mã các lớp tương ứng. Giá trị 0 dùng badge xám, không mở danh sách rỗng.",
-     "source": "tu-dien",
-     "content": "qc",
-     "matches": {},
-     "relations": [],
-     "testcases": [
-      "M-SM.TC01"
-     ],
-     "missingTerms": [
-      "Số lớp"
-     ],
-     "status": "chua-thay-tren-figma"
-    },
-    {
-     "id": "M-SM.A01.06",
-     "name": "so-bill",
-     "label": "Số bill",
-     "spec": "Số hóa đơn được thêm/liên kết với học viên. Chỉ hiển thị số; bấm hoặc hover không mở danh sách, popup hay điều hướng. Giá trị 0 dùng badge xám.",
-     "source": "tu-dien",
-     "content": "qc",
-     "matches": {},
-     "relations": [],
-     "testcases": [
-      "M-SM.TC01",
-      "M-SM.TC52",
-      "M-SM.TC55"
-     ],
-     "missingTerms": [
-      "Số bill"
-     ],
-     "status": "chua-thay-tren-figma"
-    },
-    {
-     "id": "M-SM.A01.07",
-     "name": "lop-hien-tai",
-     "label": "Lớp hiện tại",
-     "spec": "Chỉ gồm lớp mà **đồng thời** status học viên trong lớp là `Đang học` và trạng thái của lớp cũng là `Đang học`. Badge đỏ là số lớp đáp ứng cả hai điều kiện; hover icon chỉ hiển thị mã lớp, ví dụ `DN1-122`, không hiển thị tên lớp. Không có lớp đáp ứng thì hiển thị text `Chưa có`.",
-     "source": "tu-dien",
-     "content": "qc",
      "matches": {
-      "adm-hv-010102": [
+      "adm-hv-010000": [
        {
-        "term": "Đang học",
-        "figmaId": "I3269:74669;2015:31501;3269:74736",
-        "layer": "Đang học",
+        "term": "Gmail",
+        "figmaId": "3210:25842",
+        "layer": "Gmail",
         "confidence": "cao",
         "region": null,
-        "owner": "Đang học",
-        "component": "DD/Molecule/Menu Item",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "@gmail.com",
+        "figmaId": "I2223:83725;1391:17268",
+        "layer": "admin@gmail.com",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
         "variant": {
-         "Leading Icon": "2015:30465",
-         "Meta": false,
-         "Description Text": "Mô tả phụ",
-         "Description": false,
-         "Submenu": false,
-         "Leading": false,
-         "Meta Text": "12",
-         "Label": "Đang học",
-         "Type": "Checkbox",
-         "State": "Default",
-         "Size": "S"
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ],
+      "adm-hv-010001": [
+       {
+        "term": "Gmail",
+        "figmaId": "3210:26388",
+        "layer": "Gmail",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "@gmail.com",
+        "figmaId": "I2263:36178;1391:17268",
+        "layer": "admin@gmail.com",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Admin",
+         "Theme": "Dark",
+         "Size": "Default"
         },
         "inCode": false
        }
@@ -654,10 +637,205 @@
      "testcases": [
       "M-SM.TC01"
      ],
-     "missingTerms": [
-      "Lớp hiện tại"
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-SM.A01.04",
+     "name": "ngay-chot-don",
+     "label": "Ngày chốt đơn",
+     "spec": "Hiển thị ngày chốt đơn của học viên theo định dạng trong UI; không dùng Ngày chốt đơn để sắp xếp danh sách; thứ tự lấy theo ngày tạo học viên.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-hv-010000": [
+       {
+        "term": "Ngày chốt đơn",
+        "figmaId": "3210:25824",
+        "layer": "Ngày chốt đơn",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "adm-hv-010001": [
+       {
+        "term": "Ngày chốt đơn",
+        "figmaId": "3210:26370",
+        "layer": "Ngày chốt đơn",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-SM.TC01",
+      "M-SM.TC50"
      ],
-     "status": "khop-mot-phan"
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-SM.A01.05",
+     "name": "so-lop",
+     "label": "Số lớp",
+     "spec": "Tổng tất cả lớp học viên đã được thêm vào, không chỉ lớp hiện tại. Hover/bấm badge để xem mã các lớp tương ứng. Giá trị 0 dùng badge xám, không mở danh sách rỗng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-hv-010000": [
+       {
+        "term": "Số lớp",
+        "figmaId": "3210:25826",
+        "layer": "Số lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "adm-hv-010001": [
+       {
+        "term": "Số lớp",
+        "figmaId": "3210:26372",
+        "layer": "Số lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-SM.TC01"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-SM.A01.06",
+     "name": "so-bill",
+     "label": "Số bill",
+     "spec": "Số hóa đơn được thêm/liên kết với học viên. Chỉ hiển thị số; bấm hoặc hover không mở danh sách, popup hay điều hướng. Giá trị 0 dùng badge xám.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-hv-010000": [
+       {
+        "term": "Số bill",
+        "figmaId": "3210:25828",
+        "layer": "Số bill",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "adm-hv-010001": [
+       {
+        "term": "Số bill",
+        "figmaId": "3210:26374",
+        "layer": "Số bill",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-SM.TC01",
+      "M-SM.TC52",
+      "M-SM.TC55"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "M-SM.A01.07",
+     "name": "lop-hien-tai",
+     "label": "Lớp hiện tại",
+     "spec": "Chỉ gồm lớp mà **đồng thời** status học viên trong lớp là `Đang học` và trạng thái của lớp cũng là `Đang học`. Badge đỏ là số lớp đáp ứng cả hai điều kiện; hover icon chỉ hiển thị mã lớp, ví dụ `DN1-122`, không hiển thị tên lớp. Không có lớp đáp ứng thì hiển thị text `Chưa có`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "adm-hv-010000": [
+       {
+        "term": "Lớp hiện tại",
+        "figmaId": "3210:25830",
+        "layer": "Lớp hiện tại",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Đang học",
+        "figmaId": "3210:25859",
+        "layer": "Student Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Student Status",
+        "component": "Student Status",
+        "variant": {
+         "Property 1": "Đang học"
+        },
+        "inCode": false
+       }
+      ],
+      "adm-hv-010001": [
+       {
+        "term": "Lớp hiện tại",
+        "figmaId": "3210:26376",
+        "layer": "Lớp hiện tại",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Đang học",
+        "figmaId": "3210:26405",
+        "layer": "Student Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Student Status",
+        "component": "Student Status",
+        "variant": {
+         "Property 1": "Đang học"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "M-SM.TC01"
+     ],
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "M-SM.A01.08",
@@ -666,18 +844,68 @@
      "spec": "Hover/bấm icon mở nội dung ghi chú của đúng học viên theo popup `Ghi Chú Chi Tiết` trong ảnh. Màu cam khi có ghi chú, xám khi không có; không dùng màu cam để biểu thị chưa xử lý. Không hiển thị ghi chú ngoài quyền truy cập.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-010000": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "I4915:233468;4899:195421",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "1161:5598",
+         "Label": "Ghi chú",
+         "Type": "Con",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "adm-hv-010001": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "I4915:231305;4899:195421",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "1161:5598",
+         "Label": "Ghi chú",
+         "Type": "Con",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Ghi Chú Chi Tiết",
+        "figmaId": "3269:72184",
+        "layer": "Tooltip · Ghi chú (hover / click)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tooltip · Ghi chú (hover / click)",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Ghi chú chi tiết"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SM.TC01",
       "M-SM.TC31",
       "M-SM.TC53"
      ],
-     "missingTerms": [
-      "Ghi chú",
-      "Ghi Chú Chi Tiết"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "M-SM.A01.09",
@@ -686,16 +914,86 @@
      "spec": "Tổng số tiền các hóa đơn của học viên trừ tổng số tiền hóa đơn có trạng thái `Hoàn tiền`; hiển thị badge cam như UI.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-010000": [
+       {
+        "term": "Tổng doanh thu",
+        "figmaId": "3210:25854",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "TỔNG DOANH THU"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hoàn tiền",
+        "figmaId": "3210:25856",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "Hoàn tiền"
+        },
+        "inCode": false
+       }
+      ],
+      "adm-hv-010001": [
+       {
+        "term": "Tổng doanh thu",
+        "figmaId": "3210:26400",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "TỔNG DOANH THU"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hoàn tiền",
+        "figmaId": "3210:26402",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "Hoàn tiền"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SM.TC01"
      ],
-     "missingTerms": [
-      "Tổng doanh thu",
-      "Hoàn tiền"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "M-SM.A01.10",
@@ -704,18 +1002,92 @@
      "spec": "Tổng số tiền của các bill có trạng thái `Hoàn tiền`, xác định theo trạng thái bill. Khi có giá trị hiển thị số đỏ/viền đỏ; không có hoàn tiền hiển thị `0 đ` nền xám.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-010000": [
+       {
+        "term": "Hoàn tiền",
+        "figmaId": "3210:25856",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "Hoàn tiền"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hoàn tiền",
+        "figmaId": "3210:25856",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "Hoàn tiền"
+        },
+        "inCode": false
+       }
+      ],
+      "adm-hv-010001": [
+       {
+        "term": "Hoàn tiền",
+        "figmaId": "3210:26402",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "Hoàn tiền"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hoàn tiền",
+        "figmaId": "3210:26402",
+        "layer": "Atom/Chip",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "Th2, 14.09.2026",
+         "Type": "Hoàn tiền"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SM.TC01",
       "M-SM.TC55"
      ],
-     "missingTerms": [
-      "Hoàn tiền",
-      "Hoàn tiền"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "adm-hv-010000",
+    "adm-hv-010001"
    ]
   },
   {
@@ -1851,7 +2223,8 @@
    "name": "lich-su-lop",
    "title": "Lịch sử lớp",
    "screens": [
-    "adm-hv-010062"
+    "adm-hv-010000",
+    "adm-hv-010001"
    ],
    "screensGuessed": [
     "ADM-HV-010062"
@@ -1869,7 +2242,34 @@
      "spec": "`Số lớp chính thức / tổng số lớp trong lịch sử học viên`. Ví dụ có 1 lớp chính thức trong 6 lớp thì hiển thị `1/6`. Lớp chính thức là lớp không tick Lớp không chính thức, theo [Tạo lớp học](../class_management/class_creation_requirements.md#lớp-không-chính-thức). Mỗi class_id được đếm một lần.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-010000": [
+       {
+        "term": "Số Lớp",
+        "figmaId": "3210:25826",
+        "layer": "Số lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "adm-hv-010001": [
+       {
+        "term": "Số Lớp",
+        "figmaId": "3210:26372",
+        "layer": "Số lớp",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SM.TC64",
@@ -1878,10 +2278,9 @@
       "M-SM.TC83"
      ],
      "missingTerms": [
-      "Số Lớp",
       "Số lớp chính thức / tổng số lớp trong lịch sử học viên"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "M-SM.A08.02",
@@ -1899,8 +2298,8 @@
       "M-SM.TC83"
      ],
      "missingTerms": [
-      "Lên Kỳ",
-      "getUpTerm()"
+      "getUpTerm()",
+      "Lên Kỳ"
      ],
      "status": "chua-thay-tren-figma"
     },
@@ -2010,16 +2409,32 @@
      "spec": "Tên khóa học, thanh tiến độ và số `x/N Buổi` là **tiến độ của cả lớp**. Ví dụ lớp đã học 6/20 buổi thì mọi học viên xem lớp này đều thấy 6/20, dù số buổi đi học của từng người khác nhau. Không dùng số buổi học viên đã điểm danh làm x.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-010001": [
+       {
+        "term": "Khoá học",
+        "figmaId": "I3269:72184;1448:8825",
+        "layer": "Đang sinh sống và làm việc tại Thâm Quyến, Trung Quốc. Đã tốt nghiệp cử nhân chuyên ngành Trung Quốc học, khoa Đông phương học, trường Đại học Khoa học Xã hội và Nhân văn TP.HCM, chứng chỉ HSK6.",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Tooltip · Ghi chú (hover / click)",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Ghi chú chi tiết"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SM.TC28"
      ],
      "missingTerms": [
-      "Khoá học",
       "x/N Buổi"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop-mot-phan"
     },
     {
      "id": "M-SM.A08.09",
@@ -2049,13 +2464,42 @@
      "spec": "Vòng tròn % cuối dòng lấy **getUpTerm() của cả lớp**, theo nhánh Hoàn thành/chưa Hoàn thành bên dưới. Vẫn tính và hiển thị ở dòng lớp không chính thức, nhưng lớp đó không tham gia ba thẻ Lên Kỳ/Đạt Kpi/Đánh Giá.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-010000": [
+       {
+        "term": "KPI",
+        "figmaId": "I4915:233468;4899:195427;2245:87854",
+        "layer": "ICON MENU",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ICON MENU",
+        "component": "ICON MENU",
+        "variant": {
+         "ICON MENU": "KPI"
+        },
+        "inCode": false
+       }
+      ],
+      "adm-hv-010001": [
+       {
+        "term": "KPI",
+        "figmaId": "I4915:231305;4899:195427;2245:87854",
+        "layer": "ICON MENU",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ICON MENU",
+        "component": "ICON MENU",
+        "variant": {
+         "ICON MENU": "KPI"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "KPI"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "M-SM.A08.11",
@@ -2079,7 +2523,38 @@
      "spec": "Số HV có mã `UpSale`, `Force`, `SuperUpSale`, `Completed` (Lên kỳ, Bắt buộc lên kỳ, Lên khóa, Hoàn thành). | Tổng HV sau khi loại `Remove`, `Moved`, `Audit`, `Testing`, `Viewer`. Nghỉ học/Bảo lưu/Bỏ cọc/Rời lớp vẫn trong mẫu số.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-010000": [
+       {
+        "term": "Hoàn thành",
+        "figmaId": "3210:25975",
+        "layer": "Student Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Student Status",
+        "component": "Student Status",
+        "variant": {
+         "Property 1": "Hoàn thành"
+        },
+        "inCode": false
+       }
+      ],
+      "adm-hv-010001": [
+       {
+        "term": "Hoàn thành",
+        "figmaId": "3210:26521",
+        "layer": "Student Status",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Student Status",
+        "component": "Student Status",
+        "variant": {
+         "Property 1": "Hoàn thành"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SM.TC28",
@@ -2089,10 +2564,9 @@
       "M-SM.TC83"
      ],
      "missingTerms": [
-      "Hoàn thành",
       "UpSale"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "M-SM.A08.13",
@@ -2203,6 +2677,10 @@
      ],
      "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "adm-hv-010000",
+    "adm-hv-010001"
    ]
   },
   {

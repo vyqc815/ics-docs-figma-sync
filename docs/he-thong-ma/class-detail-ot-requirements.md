@@ -54,14 +54,14 @@ Frame: `ADM-LOP-040810` (tool đoán:ADM-LOP-040810) · Nguồn nội dung: QC
 
 ### `A03` Dropdown trạng thái và xác nhận
 
-Frame: `ADM-LOP-040800` (tool đoán:ADM-LOP-040800) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040812` (tool đoán:ADM-LOP-040800) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | moi |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.02` | da-xac-nhan |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
-| `A03.03` | da-huy |  |  | — |  | `TC12` | Chưa khớp tự động | QC |
-| `A03.04` | da-xoa |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.01` | moi | `DD/Molecule/Trigger` Size=M, State=Open | `2925:24937` DD/Molecule/Trigger | — |  |  | Khớp | QC |
+| `A03.02` | da-xac-nhan | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `I2533:37282;2015:31432;2533:37279` DD/Molecule/Menu Item | — |  | `TC11` | Khớp | QC |
+| `A03.03` | da-huy | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `I2533:37282;2015:31432;2533:37280` DD/Molecule/Menu Item | — |  | `TC12` | Khớp | QC |
+| `A03.04` | da-xoa | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `I2533:37282;2015:31432;2533:37281` DD/Molecule/Menu Item | — |  |  | Khớp | QC |
 
 ### `A04` Xóa khoản OT
 
@@ -180,7 +180,7 @@ Frame: `ADM-LOP-040800` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (27): `A01.01`, `A01.02`, `A01.09`, `A02.01`, `A02.02`, `A02.06`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`
+- Chưa khớp tự động (23): `A01.01`, `A01.02`, `A01.09`, `A02.01`, `A02.02`, `A02.06`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`
 - Frame Figma chưa có requirement (2): `ADM-LOP-040810`, `ADM-LOP-040812`
 - Thiếu prototype link đi vào (1): `ADM-LOP-040810`
 

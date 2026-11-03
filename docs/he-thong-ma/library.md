@@ -39,54 +39,54 @@ Requirement: `course_management/library/library.md` — [CD] Thư viện (tiền
 
 ### `A01` Khung chung của Thư viện
 
-Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
+Frame: `CD-KH-070160`, `CD-KH-070170` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | tieu-de-mo-ta |  | `5729:91619` Tiêu đề trang | có |  |  | Khớp một phần | QC |
+| `A01.01` | tieu-de-mo-ta |  | `5729:91619` Tiêu đề trang | có |  |  | Khớp | QC |
 | `A01.02` | thanh-tab |  |  | — |  | `TC04` | Chưa khớp tự động | QC |
 | `A01.03` | o-tim-kiem |  |  | — |  | `TC03` | Chưa khớp tự động | QC |
 | `A01.04` | loc-nang-cao |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A01.05` | loc-cap-do | `DD/Molecule/Trigger` Size=S, State=Default | `5729:91632` Bộ lọc · Cấp độ | có |  | `TC01` | Khớp một phần | QC |
+| `A01.05` | loc-cap-do | `DD/Molecule/Trigger` Size=S, State=Default | `5729:91632` Bộ lọc · Cấp độ | có |  | `TC01` | Khớp | QC |
 | `A01.06` | badge-tong-so |  |  | — |  | `TC01`, `TC02` | Chưa khớp tự động | QC |
-| `A01.07` | xoa-bo-loc | `Atom/Button` Type=Outlined, Size=Small | `5729:91635` Xoá bộ lọc | có |  | `TC03` | Khớp một phần | QC |
-| `A01.08` | cot-cum |  | `5729:92951` Cụm | có |  |  | Khớp một phần | QC |
-| `A01.09` | cot-dang-dung-o |  | `5729:93307` Đang dùng ở | có |  | `TC05` | Khớp một phần | QC |
+| `A01.07` | xoa-bo-loc | `Atom/Button` Type=Outlined, Size=Small | `5729:91635` Xoá bộ lọc | có |  | `TC03` | Khớp | QC |
+| `A01.08` | cot-cum |  | `5729:92951` Cụm | có |  |  | Khớp | QC |
+| `A01.09` | cot-dang-dung-o |  | `5729:93307` Đang dùng ở | có |  | `TC05` | Khớp | QC |
 | `A01.10` | cot-nang-cao |  |  | — |  |  | Chưa có thiết kế | QC |
 | `A01.11` | cot-trang-thai |  | `5729:93309` Trạng thái | có |  |  | Khớp | QC |
 | `A01.12` | menu-cuoi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.13` | o-trong |  | `5729:91870` Hiển thị 1–50 trong 104 chữ | có |  |  | Khớp | QC |
-| `A01.14` | phan-trang |  | `5729:91869` Footer · Phân trang | có |  |  | Khớp một phần | QC |
+| `A01.14` | phan-trang |  | `5729:91869` Footer · Phân trang | có |  |  | Khớp | QC |
 
 ### `A02` Trạng thái và xoá mục
 
-Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
+Frame: `CD-KH-070160`, `CD-KH-070170` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A02.01` | doi-trang-thai |  |  | — |  | `TC06`, `TC07` | Chưa khớp tự động | QC |
-| `A02.02` | xoa | `Atom/Button` Type=Outlined, Size=Small | `I5729:91635;1430:10764` Button | có | opens `A02` |  | Khớp một phần | QC |
-| `A02.03` | muc-cong-khai | `Atom/Badge`  | `5729:93334` Atom/Badge | có |  |  | Khớp một phần | QC |
+| `A02.02` | xoa | `Atom/Button` Type=Outlined, Size=Small | `I5729:91635;1430:10764` Button | có | opens `A02` |  | Khớp | QC |
+| `A02.03` | muc-cong-khai | `Atom/Badge`  | `5729:93334` Atom/Badge | có |  |  | Khớp | QC |
 | `A02.04` | muc-dang-dung | `Atom/Badge`  | `5729:93466` Atom/Badge | có |  |  | Khớp | QC |
 
 ### `A03` Thư viện kiến thức
 
-Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
+Frame: `CD-KH-070160`, `CD-KH-070170` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A03.01` | thanh-tab | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I5729:91623;2177:28928` Chi tiết NV | có | see `A04` | `TC12` | Khớp | QC |
-| `A03.02` | cot-tab-tu-vung |  | `5729:92517` STT | có |  |  | Khớp một phần | QC |
-| `A03.03` | cot-tab-ngu-phap |  | `5729:92517` STT | có |  |  | Khớp một phần | QC |
-| `A03.04` | cot-tab-mau-cau |  | `5729:92517` STT | có |  |  | Khớp một phần | QC |
-| `A03.05` | cot-tab-hanzi |  | `5729:92517` STT | có |  |  | Khớp một phần | QC |
-| `A03.06` | cot-tab-kanji |  | `5729:92517` STT | có |  |  | Khớp một phần | QC |
-| `A03.07` | cot-tab-phat-am |  | `5729:92517` STT | có |  |  | Khớp một phần | QC |
+| `A03.02` | cot-tab-tu-vung |  | `5729:92517` STT | có |  |  | Khớp | QC |
+| `A03.03` | cot-tab-ngu-phap |  | `5729:92517` STT | có |  |  | Khớp | QC |
+| `A03.04` | cot-tab-mau-cau |  | `5729:92517` STT | có |  |  | Khớp | QC |
+| `A03.05` | cot-tab-hanzi |  | `5729:92517` STT | có |  |  | Khớp | QC |
+| `A03.06` | cot-tab-kanji |  | `5729:92517` STT | có |  |  | Khớp | QC |
+| `A03.07` | cot-tab-phat-am |  | `5729:92517` STT | có |  |  | Khớp | QC |
 | `A03.08` | badge-tong-so |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Thư viện kiến thức — tab Bảng chữ
 
-Frame: `CD-KH-070160`, `CD-KH-070161`, `CD-KH-070170`, `CD-KH-070171` · Nguồn nội dung: QC
+Frame: `CD-KH-070160`, `CD-KH-070161`, `CD-KH-070170` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -96,29 +96,29 @@ Frame: `CD-KH-070160`, `CD-KH-070161`, `CD-KH-070170`, `CD-KH-070171` · Nguồn
 | `A04.04` | luoi-tieng-nhat |  | `5729:92519` Hiragana | có |  |  | Khớp một phần | QC |
 | `A04.05` | danh-sach-tieng-han |  | `5729:92517` STT | có |  |  | Khớp một phần | QC |
 | `A04.06` | loai-han |  | `5729:92525` Loại | có |  | `TC16` | Khớp | QC |
-| `A04.07` | luoi-tieng-han |  | `5729:96796` Phụ âm × Nguyên âm | có |  |  | Khớp một phần | QC |
+| `A04.07` | luoi-tieng-han |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.08` | panel-chi-tiet-chu |  | `5729:95411` Chi tiết chữ | có |  | `TC17` | Khớp một phần | QC |
 | `A04.09` | tim-kiem-cap-do-o-dang-luoi |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.10` | menu |  |  | — |  |  | Chưa có thiết kế | QC |
 
 ### `A05` Thư viện kỹ năng
 
-Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
+Frame: `CD-KH-070160`, `CD-KH-070170` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | cot-tab-nghe |  | `5729:92517` STT | có |  |  | Khớp một phần | QC |
-| `A05.02` | cot-tab-doc |  | `5729:92517` STT | có |  |  | Khớp một phần | QC |
-| `A05.03` | cot-tab-viet |  | `5729:92517` STT | có |  |  | Khớp một phần | QC |
-| `A05.04` | cot-tab-noi |  | `5729:92517` STT | có |  |  | Khớp một phần | QC |
+| `A05.01` | cot-tab-nghe |  | `5729:92517` STT | có |  |  | Khớp | QC |
+| `A05.02` | cot-tab-doc |  | `5729:92517` STT | có |  |  | Khớp | QC |
+| `A05.03` | cot-tab-viet |  | `5729:92517` STT | có |  |  | Khớp | QC |
+| `A05.04` | cot-tab-noi |  | `5729:92517` STT | có |  |  | Khớp | QC |
 | `A05.05` | so-cau-hoi |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A05.06` | phat-am-thanh |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A05.07` | badge-tong-so |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.08` | tim-kiem | `Atom/Input` State=Search, Kiểu=S | `5729:91631` Tìm kiếm | có |  |  | Khớp một phần | QC |
+| `A05.08` | tim-kiem | `Atom/Input` State=Search, Kiểu=S | `5729:91631` Tìm kiếm | có |  |  | Khớp | QC |
 
 ### `A06` Thư viện bài tập
 
-Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
+Frame: `CD-KH-070160`, `CD-KH-070170` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -133,49 +133,49 @@ Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` (tool đoán:CD-KH-070160,
 | `A06.09` | tab-btvn-mau |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A06.10` | tab-kiem-tra-mau |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A06.11` | bam-dong-tab-mau |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.12` | tim-kiem | `Atom/Input` State=Search, Kiểu=S | `5729:91631` Tìm kiếm | có |  |  | Khớp một phần | QC |
+| `A06.12` | tim-kiem | `Atom/Input` State=Search, Kiểu=S | `5729:91631` Tìm kiếm | có |  |  | Khớp | QC |
 
 ### `A07` Thư viện bài tập — Chi tiết câu hỏi
 
-Frame: `CD-KH-070301`, `CD-KH-070302`, `CD-KH-070303`, `CD-KH-070304`, `CD-KH-070305` · Nguồn nội dung: QC
+Frame: `CD-KH-070304`, `CD-KH-070305` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A07.01` | nut |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A07.02` | tieu-de |  | `6163:81281` Tiêu đề; `6163:81282` Tiêu đề trang | có |  |  | Khớp | QC |
-| `A07.03` | chip-ngon-ngu |  | `6163:332014` Chúng tôi đều rất thích học tiếng Trung. | có |  |  | Khớp một phần | QC |
-| `A07.04` | huy | `Atom/Button` Type=Outlined, Size=Small | `6163:332048` Atom/Button | có |  |  | Khớp một phần | QC |
-| `A07.05` | luu-cau-hoi | `Atom/Button` Type=Primary, Size=Small | `6163:332049` Atom/Button | có |  | `TC33`, `TC39`, `TC41` | Khớp một phần | QC |
+| `A07.02` | tieu-de |  | `6163:332042` Tiêu đề; `6163:332043` Tiêu đề trang | có |  |  | Khớp | QC |
+| `A07.03` | chip-ngon-ngu |  | `6163:332073` Chúng tôi đều rất thích học tiếng Trung. | có |  |  | Khớp | QC |
+| `A07.04` | huy | `Atom/Button` Type=Outlined, Size=Small | `6163:332048` Atom/Button | có |  |  | Khớp | QC |
+| `A07.05` | luu-cau-hoi | `Atom/Button` Type=Primary, Size=Small | `6163:332049` Atom/Button | có |  | `TC33`, `TC39`, `TC41` | Khớp | QC |
 | `A07.06` | che-do-chi-xem | `Atom/Button` Type=Primary, Size=Small | `6163:332049` Atom/Button | có |  |  | Requirement ghi thiếu, Figma đã có | QC |
-| `A07.07` | kich-ban |  | `6163:82102` Kịch bản | có |  | `TC33` | Khớp một phần | QC |
+| `A07.07` | kich-ban |  |  | — |  | `TC33` | Chưa khớp tự động | QC |
 | `A07.08` | audio-theo-kich-ban |  |  | — |  |  | Chưa có thiết kế | QC |
 | `A07.09` | lua-chon-dap-an |  |  | — |  |  | Chưa có thiết kế | QC |
 | `A07.10` | luot-thoai |  |  | — |  | `TC34` | Chưa khớp tự động | QC |
 | `A07.11` | them-luot |  |  | — |  | `TC34` | Chưa khớp tự động | QC |
 | `A07.12` | o-chon-doi-tuong |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A07.13` | panel-doi-tuong |  | `6163:82144` Đối tượng | có |  | `TC33` | Khớp một phần | QC |
-| `A07.14` | hien-thi-cho-hoc-vien |  | `6163:82164` Hiển thị cho học viên | có |  |  | Khớp | QC |
-| `A07.15` | van-ban |  | `6163:82425` Văn bản | có |  | `TC35`, `TC36`, `TC37` | Khớp một phần | QC |
-| `A07.16` | sua-cau |  | `6163:82425` Văn bản | có |  | `TC42a` | Khớp một phần | QC |
+| `A07.13` | panel-doi-tuong |  |  | — |  | `TC33` | Chưa khớp tự động | QC |
+| `A07.14` | hien-thi-cho-hoc-vien |  | `6163:332105` Hiển thị cho học viên | có |  |  | Khớp | QC |
+| `A07.15` | van-ban |  | `6163:332053` Văn bản | có |  | `TC35`, `TC36`, `TC37` | Khớp | QC |
+| `A07.16` | sua-cau |  | `6579:360680` Đang sửa câu 2 · lưu hoặc huỷ câu đang sửa trước khi sửa câu hỏi.; `6163:332053` Văn bản | có |  | `TC42a` | Khớp | QC |
 | `A07.17` | tu-khoa-n |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A07.18` | popup-chi-tiet-tu-khoa |  | `6163:82169` Toggle · Dịch nghĩa | có |  |  | Khớp một phần | QC |
+| `A07.18` | popup-chi-tiet-tu-khoa |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.19` | dat-lam-tu-khoa |  |  | — |  | `TC36` | Chưa khớp tự động | QC |
 | `A07.20` | popup-them-tu-khoa |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.21` | sua-tu-khoa |  |  | — |  | `TC37` | Chưa khớp tự động | QC |
 | `A07.22` | bo-tu-khoa |  |  | — |  | `TC37` | Chưa khớp tự động | QC |
 | `A07.23` | chon-tu-co-san |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A07.24` | cau-con-dap-an |  | `6163:82186` Đọc đoạn văn và trả lời 3 câu · Kỹ năng: Đọc | có |  |  | Requirement ghi thiếu, Figma đã có | QC |
-| `A07.25` | hien-thi-cho-hoc-vien |  | `6163:82164` Hiển thị cho học viên | có |  |  | Khớp | QC |
+| `A07.24` | cau-con-dap-an |  | `6163:332044` Đọc đoạn văn và trả lời 3 câu · Kỹ năng: Đọc | có |  |  | Requirement ghi thiếu, Figma đã có | QC |
+| `A07.25` | hien-thi-cho-hoc-vien |  | `6163:332105` Hiển thị cho học viên | có |  |  | Khớp | QC |
 
 ### `A08` Toast phản hồi CRUD
 
-Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
+Frame: `CD-KH-070301` (tool đoán:CD-KH-070160, CD-KH-070170, CD-KH-070304) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A08.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa khớp tự động | QC |
 | `A08.02` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
-| `A08.03` | loi |  | `6163:332044` Đọc đoạn văn và trả lời 3 câu · Kỹ năng: Đọc | có |  |  | Khớp một phần | QC |
+| `A08.03` | loi |  | `6518:373118` Học viên nghe xong rồi trả lời | có |  |  | Khớp | QC |
 
 ### `F01` (ngoài Body)
 
@@ -191,9 +191,10 @@ Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` · Nguồn nội dung: Fig
 | `F01.06` | tab-phat-am | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `5729:91629` Tab · Phát âm | có |  |  | Chỉ có trên Figma | Figma |
 | `F01.07` | nut-xem-dang-bang-chu | `Atom/Button` Type=Outlined, Size=Small | `5729:93806` Nút · Xem dạng bảng chữ | có |  |  | Chỉ có trên Figma | Figma |
 | `F01.08` | atom-badge | `Atom/Badge`  | `5729:93363` Atom/Badge | có |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | atom-button | `Atom/Button` Type=Secondary, Size=Small | `6163:332861` Atom/Button | có |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | molecule-add-new-bar-them-cau | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `6518:384161` Molecule/Add New Bar · Thêm câu | có |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | atom-label | `Atom/Label`  | `6518:383963` Atom/Label | có |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | trang-thai-cau | `Atom/Status` Size=S | `6518:373357` Trạng thái câu | có |  |  | Chỉ có trên Figma | Figma |
+| `F01.10` | atom-button | `Atom/Button` Type=Secondary, Size=Small | `6163:332861` Atom/Button | có |  |  | Chỉ có trên Figma | Figma |
+| `F01.11` | molecule-add-new-bar-them-cau | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `6518:384161` Molecule/Add New Bar · Thêm câu | có |  |  | Chỉ có trên Figma | Figma |
+| `F01.12` | atom-label | `Atom/Label`  | `6518:383963` Atom/Label | có |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -282,7 +283,7 @@ Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` · Nguồn nội dung: Fig
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (30): `A01.02`, `A01.03`, `A01.06`, `A01.12`, `A02.01`, `A03.08`, `A04.09`, `A05.05`, `A05.06`, `A05.07`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A06.05`, `A06.07`, `A06.08`, `A06.09`, `A06.10`, `A07.01`, `A07.10`, `A07.11`, `A07.12`, `A07.17`, `A07.19`, `A07.20`, `A07.21`, `A07.22`, `A08.01`, `A08.02`
+- Chưa khớp tự động (34): `A01.02`, `A01.03`, `A01.06`, `A01.12`, `A02.01`, `A03.08`, `A04.07`, `A04.09`, `A05.05`, `A05.06`, `A05.07`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A06.05`, `A06.07`, `A06.08`, `A06.09`, `A06.10`, `A07.01`, `A07.07`, `A07.10`, `A07.11`, `A07.12`, `A07.13`, `A07.17`, `A07.18`, `A07.19`, `A07.20`, `A07.21`, `A07.22`, `A08.01`, `A08.02`
 - Requirement ghi thiếu, Figma đã có (2): `A07.06`, `A07.24`
 - Phân loại cần design duyệt (10): `CD-KH-070161`, `CD-KH-070171`, `CD-KH-070301`, `CD-KH-070302`, `CD-KH-070303`, `CD-KH-070305`, `CD-KH-070306`, `CD-KH-070307`, `CD-KH-070309`, `CD-KH-070313`
 - Thiếu prototype link đi vào (4): `CD-KH-070161`, `CD-KH-070171`, `CD-KH-070303`, `CD-KH-070313`

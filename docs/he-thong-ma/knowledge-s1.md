@@ -208,16 +208,16 @@ Frame: `CD-KH-040195` (tool đoán:CD-KH-040195) · Nguồn nội dung: QC
 
 ### `A09` Chọn nhiều và thao tác hàng loạt
 
-Frame: `CD-KH-040110`, `CD-KH-040120` (tool đoán:CD-KH-040110, CD-KH-040120) · Nguồn nội dung: QC
+Frame: `CD-KH-040120` (tool đoán:CD-KH-040110, CD-KH-040120) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A09.01` | da-chon-n-tu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A09.02` | chon-tat-ca-n-tu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A09.03` | dien-thieu-bang-ai-k |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A09.04` | them-vao-cum-go-khoi-cum | `Atom/Button` Type=Outlined, Size=XSmall | `4846:161820` Atom/Button | — | opens `A09` |  | Khớp một phần | QC |
+| `A09.04` | them-vao-cum-go-khoi-cum | `Atom/Button` Type=Outlined, Size=XSmall | `4846:161820` Atom/Button | — | opens `A09` |  | Khớp | QC |
 | `A09.05` | xoa-n |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A09.06` | bo-chon | `Atom/Button` Type=Neutral, Size=XSmall | `4846:161827` Atom/Button | — |  | `TC26a` | Khớp một phần | QC |
+| `A09.06` | bo-chon | `Atom/Button` Type=Neutral, Size=XSmall | `4846:161827` Atom/Button | — |  | `TC26a` | Khớp | QC |
 
 ### `A10` Popup Thêm vào cụm / Gỡ khỏi cụm
 
@@ -306,25 +306,25 @@ Frame: `CD-KH-040155` (tool đoán:CD-KH-040155) · Nguồn nội dung: QC
 
 ### `A16` Cụm liên kết với Chi tiết bài học
 
-Frame: `CD-KH-030270` · Nguồn nội dung: QC
+Frame: `CD-KH-040100` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A16.01` | nguon-du-lieu |  |  | — |  |  | Chưa sync | QC |
-| `A16.02` | bo-loc-loai |  |  | — |  |  | Chưa sync | QC |
-| `A16.03` | tieu-de-khung |  |  | — |  |  | Chưa sync | QC |
-| `A16.04` | dong-bo |  |  | — |  |  | Chưa sync | QC |
+| `A16.01` | nguon-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A16.02` | bo-loc-loai | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `I4846:158294;2177:28936` Nhiệm vụ con | có |  |  | Khớp | QC |
+| `A16.03` | tieu-de-khung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A16.04` | dong-bo |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A17` Toast phản hồi CRUD
 
-Frame: `CD-KH-040100`, `CD-KH-040200` (tool đoán:CD-KH-040100, CD-KH-040200) · Nguồn nội dung: QC
+Frame: `CD-KH-040170` (tool đoán:CD-KH-040100, CD-KH-040200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A17.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC04` | Chưa khớp tự động | QC |
-| `A17.02` | thong-tin | `Atom/Tag` Size=Small | `I4846:158419;1725:17144` Label | có |  |  | Khớp | QC |
+| `A17.02` | thong-tin | `Liner Icon`  | `4846:172104` Liner Icon | — |  |  | Khớp | QC |
 | `A17.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
-| `A17.04` | loi | `Atom/Button` Type=Secondary, Size=Small | `I5003:16563;1048:1240` Button | có |  |  | Khớp | QC |
+| `A17.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -465,9 +465,8 @@ Frame: `CD-KH-040100`, `CD-KH-040200` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (78): `A01.01`, `A01.02`, `A01.06`, `A01.09`, `A01.10`, `A01.11`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.13`, `A02.15`, `A02.17`, `A02.18`, `A02.19`, `A02.20`, `A02.22`, `A02.23`, `A02.24`, `A02.25`, `A02.26`, `A02.27`, `A02.28`, `A02.29`, `A03.02`, `A03.03`, `A03.05`, `A03.06`, `A04.02`, `A04.04`, `A04.07`, `A05.02`, `A05.04`, `A05.07`, `A05.08`, `A05.10`, `A05.11`, `A05.12`, `A05.13`, `A05.14`, `A05.15`, `A05.16`, `A06.01`, `A06.02`, `A07.01`, `A07.02`, `A07.04`, `A07.05`, `A07.06`, `A08.02`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.10`, `A09.01`, `A09.02`, `A09.03`, `A09.05`, `A10.04`, `A11.07`, `A13.01`, `A13.02`, `A13.03`, `A13.04`, `A13.07`, `A13.08`, `A13.09`, `A14.05`, `A14.06`, `A15.01`, `A15.02`, `A15.06`, `A17.01`, `A17.03`
+- Chưa khớp tự động (82): `A01.01`, `A01.02`, `A01.06`, `A01.09`, `A01.10`, `A01.11`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.13`, `A02.15`, `A02.17`, `A02.18`, `A02.19`, `A02.20`, `A02.22`, `A02.23`, `A02.24`, `A02.25`, `A02.26`, `A02.27`, `A02.28`, `A02.29`, `A03.02`, `A03.03`, `A03.05`, `A03.06`, `A04.02`, `A04.04`, `A04.07`, `A05.02`, `A05.04`, `A05.07`, `A05.08`, `A05.10`, `A05.11`, `A05.12`, `A05.13`, `A05.14`, `A05.15`, `A05.16`, `A06.01`, `A06.02`, `A07.01`, `A07.02`, `A07.04`, `A07.05`, `A07.06`, `A08.02`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.10`, `A09.01`, `A09.02`, `A09.03`, `A09.05`, `A10.04`, `A11.07`, `A13.01`, `A13.02`, `A13.03`, `A13.04`, `A13.07`, `A13.08`, `A13.09`, `A14.05`, `A14.06`, `A15.01`, `A15.02`, `A15.06`, `A16.01`, `A16.03`, `A16.04`, `A17.01`, `A17.03`, `A17.04`
 - Requirement ghi thiếu, Figma đã có (1): `A03.09`
-- Chưa sync (4): `A16.01`, `A16.02`, `A16.03`, `A16.04`
 - Requirement nhắc mã Figma không có (3): `CD-KH-030270`, `CD-KH-030400`, `CD-KH-030540`
 - Frame Figma chưa có requirement (10): `CD-KH-040110`, `CD-KH-040120`, `CD-KH-040125`, `CD-KH-040140`, `CD-KH-040150`, `CD-KH-040155`, `CD-KH-040160`, `CD-KH-040170`, `CD-KH-040190`, `CD-KH-040195`
 - Phân loại cần design duyệt (6): `CD-KH-040110`, `CD-KH-040120`, `CD-KH-040125`, `CD-KH-040140`, `CD-KH-040190`, `CD-KH-040195`

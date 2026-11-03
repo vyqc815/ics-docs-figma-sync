@@ -47,13 +47,13 @@ Frame: `CD-KH-030200` (tool đoán:CD-KH-030200) · Nguồn nội dung: QC
 
 ### `A02` Popup: Chi tiết bài học - Tab Thông tin
 
-Frame: `CD-KH-030210`, `CD-KH-030230`, `CD-KH-030240`, `CD-KH-030250` (tool đoán:CD-KH-030210, CD-KH-030230, CD-KH-030240, CD-KH-030250) · Nguồn nội dung: QC
+Frame: `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247` (tool đoán:CD-KH-030210, CD-KH-030230, CD-KH-030240, CD-KH-030250) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | tieu-de | `Liner Icon`  | `I2911:43802;2808:48144` Liner Icon | — |  |  | Khớp một phần | QC |
-| `A02.02` | noi-dung | `Liner Icon`  | `I1076:4995;868:21213` Liner Icon | — |  |  | Khớp | QC |
-| `A02.03` | nut | `Popup/Footer` Type=Hai nút | `2527:167888` Popup/Footer | — |  |  | Khớp | QC |
+| `A02.01` | tieu-de | `Popup/Header`  | `I7193:403632;2514:153340` Tiêu đề | — |  |  | Khớp | QC |
+| `A02.02` | noi-dung | `Atom/Input` State=Search, Kiểu=S | `I7193:403897;2808:42278` Tìm nội dung... | — |  |  | Khớp | QC |
+| `A02.03` | nut |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Popup: Chi tiết bài học - Tab Nội dung
 
@@ -172,7 +172,7 @@ Frame: `CD-KH-030200` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (11): `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`, `A03.11`
+- Chưa khớp tự động (12): `A02.03`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`, `A03.11`
 - Frame Figma chưa có requirement (13): `CD-KH-030210`, `CD-KH-030211`, `CD-KH-030230`, `CD-KH-030231`, `CD-KH-030240`, `CD-KH-030241`, `CD-KH-030242`, `CD-KH-030243`, `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247`, `CD-KH-030250`
 - Phân loại cần design duyệt (12): `CD-KH-030211`, `CD-KH-030230`, `CD-KH-030231`, `CD-KH-030240`, `CD-KH-030241`, `CD-KH-030242`, `CD-KH-030243`, `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247`, `CD-KH-030250`
 - Thiếu prototype link đi vào (9): `CD-KH-030211`, `CD-KH-030231`, `CD-KH-030241`, `CD-KH-030242`, `CD-KH-030243`, `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247`

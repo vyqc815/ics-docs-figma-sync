@@ -109,14 +109,11 @@
    "openedFrom": [],
    "citedByRequirement": true,
    "regions": [
-    "TR-CO.A02",
     "TR-CO.A03",
-    "TR-CO.A04",
     "TR-CO.A05",
-    "TR-CO.A06",
-    "TR-CO.A07",
     "TR-CO.A10",
-    "TR-CO.F01"
+    "TR-CO.F01",
+    "TR-CO.F02"
    ]
   },
   "GV-LOP-020000": {
@@ -140,13 +137,14 @@
    "citedByRequirement": true,
    "regions": [
     "TR-CO.A01",
+    "TR-CO.A02",
     "TR-CO.A03",
     "TR-CO.A04",
     "TR-CO.A05",
     "TR-CO.A06",
     "TR-CO.A07",
     "TR-CO.A10",
-    "TR-CO.F01"
+    "TR-CO.F02"
    ]
   },
   "GV-LOP-020020": {
@@ -368,7 +366,7 @@
    "name": "nut-back-va-tooltip-thong-tin-lop",
    "title": "Nút Back và tooltip thông tin lớp",
    "screens": [
-    "gv-lop-010000"
+    "gv-lop-020000"
    ],
    "screensGuessed": [],
    "source": "tu-dien",
@@ -385,18 +383,16 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "gv-lop-010000": [
+      "gv-lop-020000": [
        {
         "term": "Lớp",
-        "figmaId": "4915:258752",
-        "layer": "Sidebar · MENU - TEACHER",
+        "figmaId": "4324:4865",
+        "layer": "Tổng Quan Lớp",
         "confidence": "cao",
-        "region": "Sidebar · MENU - TEACHER",
-        "owner": "Sidebar · MENU - TEACHER",
-        "component": "MENU - TEACHER",
-        "variant": {
-         "Trang": "Lớp"
-        },
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
         "inCode": false
        }
       ]
@@ -415,18 +411,49 @@
      "spec": "Nền tối, chữ sáng, hiển thị ngay dưới nút. Tiêu đề `Thông tin:`; thứ tự Buổi học, Lịch học, SP, CSKH, Giáo viên, Khai giảng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-020000": [
+       {
+        "term": "Tooltip",
+        "figmaId": "5413:254526",
+        "layer": "Tooltip · Hover nút Back (Thông tin lớp)",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Tooltip · Hover nút Back (Thông tin lớp)",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Thông tin lớp"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Thông tin:",
+        "figmaId": "I4915:259100;4901:212249",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "769:35769",
+         "Label": "Thông tin",
+         "Type": "Menu phụ",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-CO.TC05",
       "TR-CO.TC06",
       "TR-CO.TC08"
      ],
-     "missingTerms": [
-      "Tooltip",
-      "Thông tin:"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "TR-CO.A02.03",
@@ -435,14 +462,30 @@
      "spec": "`đã thực hiện/tổng số buổi`, cùng nguồn tiến độ của lớp ở Danh sách lớp (vd `8/12`); không lấy sĩ số thay số buổi.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-020000": [
+       {
+        "term": "Buổi học",
+        "figmaId": "I5413:254526;3004:73496",
+        "layer": "Buổi học",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tooltip · Hover nút Back (Thông tin lớp)",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Thông tin lớp"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Buổi học",
       "đã thực hiện/tổng số buổi"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "TR-CO.A02.04",
@@ -451,14 +494,30 @@
      "spec": "Đầy đủ lịch học theo thứ và giờ `HH:mm-HH:mm`; nhóm các thứ cùng khung giờ (vd `T3-T5-T7 (09:00-09:10)`), lịch khác xuống dòng; không cắt còn lịch đầu tiên.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-020000": [
+       {
+        "term": "Lịch học",
+        "figmaId": "I5413:254526;3004:73498",
+        "layer": "Lịch học",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tooltip · Hover nút Back (Thông tin lớp)",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Thông tin lớp"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Lịch học",
       "HH:mm-HH:mm"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "TR-CO.A02.05",
@@ -468,21 +527,18 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "gv-lop-010000": [
+      "gv-lop-020000": [
        {
         "term": "(chính)",
-        "figmaId": "I4915:258752;6244:32838",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - TEACHER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
+        "figmaId": "I5413:254526;3004:73497",
+        "layer": "Khai giảng",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Tooltip · Hover nút Back (Thông tin lớp)",
+        "component": "Molecule/Tooltip",
         "variant": {
-         "Icon": "1150:22353",
-         "Label": "Trang chủ",
-         "Type": "Chính",
-         "State": "Default",
-         "Expanded": "No"
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Thông tin lớp"
         },
         "inCode": false
        }
@@ -502,16 +558,43 @@
      "spec": "Nhân sự CSKH của lớp; chưa gán thì `(Chưa có)`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-020000": [
+       {
+        "term": "CSKH",
+        "figmaId": "I4915:259100;4901:212246;2245:87904",
+        "layer": "Icon",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Icon",
+        "component": "ICON MENU",
+        "variant": {
+         "ICON MENU": "CSKH"
+        },
+        "inCode": false
+       },
+       {
+        "term": "(Chưa có)",
+        "figmaId": "I5413:254526;3004:73498",
+        "layer": "Lịch học",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Tooltip · Hover nút Back (Thông tin lớp)",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Thông tin lớp"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-CO.TC07"
      ],
-     "missingTerms": [
-      "CSKH",
-      "(Chưa có)"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "TR-CO.A02.07",
@@ -521,13 +604,13 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "gv-lop-010000": [
+      "gv-lop-020000": [
        {
         "term": "Giáo viên",
-        "figmaId": "3868:95485",
+        "figmaId": "4324:6278",
         "layer": "ACCOUNT",
         "confidence": "cao",
-        "region": "Header",
+        "region": null,
         "owner": "ACCOUNT",
         "component": "ACCOUNT",
         "variant": {
@@ -551,75 +634,36 @@
      "spec": "Ngày khai giảng `DD/MM/YYYY`; không dùng ngày tạo lớp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-020000": [
+       {
+        "term": "Khai giảng",
+        "figmaId": "I5413:254526;3004:73497",
+        "layer": "Khai giảng",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Tooltip · Hover nút Back (Thông tin lớp)",
+        "component": "Molecule/Tooltip",
+        "variant": {
+         "Tên trạng thái": "Xác nhận",
+         "Property 1": "Thông tin lớp"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-CO.TC07"
      ],
      "missingTerms": [
-      "Khai giảng",
       "DD/MM/YYYY"
      ],
-     "status": "chua-thay-tren-figma"
-    },
-    {
-     "id": "TR-CO.A02.09",
-     "name": "component-2",
-     "label": "Component 2",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-lop-010000": [
-       {
-        "term": "Component 2",
-        "figmaId": "4273:161193",
-        "layer": "Component 2",
-        "confidence": "cao",
-        "region": "Header",
-        "owner": "Component 2",
-        "component": "Switch Center",
-        "variant": {
-         "Property 1": "Sakumi"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "TR-CO.A02.10",
-     "name": "header-vai-tro",
-     "label": "Header/Vai trò",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-lop-010000": [
-       {
-        "term": "Header/Vai trò",
-        "figmaId": "4899:187387",
-        "layer": "Header/Vai trò",
-        "confidence": "cao",
-        "region": "Header",
-        "owner": "Header/Vai trò",
-        "component": null,
-        "variant": {
-         "Vai trò": "Giáo viên"
-        },
-        "inCode": false
-       }
-      ]
-     }
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "gv-lop-020000"
    ]
   },
   {
@@ -1185,7 +1229,6 @@
    "name": "bieu-do-theo-bai-hoc",
    "title": "Biểu đồ theo bài học",
    "screens": [
-    "gv-lop-010000",
     "gv-lop-020000"
    ],
    "screensGuessed": [
@@ -1238,7 +1281,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "TR-CO.A04.03",
@@ -1298,8 +1341,11 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "gv-lop-020000"
    ]
   },
   {
@@ -1490,7 +1536,6 @@
    "name": "danh-gia-tong-va-bai-hoc-gan-day",
    "title": "Đánh giá tổng và bài học gần đây",
    "screens": [
-    "gv-lop-010000",
     "gv-lop-020000"
    ],
    "screensGuessed": [
@@ -1546,7 +1591,7 @@
      "missingTerms": [
       "Số bài hiển thị"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "TR-CO.A06.03",
@@ -1612,6 +1657,9 @@
      ],
      "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "gv-lop-020000"
    ]
   },
   {
@@ -1619,7 +1667,6 @@
    "name": "bang-bai-hoc-cua-hoc-vien-va-diem-danh",
    "title": "Bảng bài học của học viên và điểm danh",
    "screens": [
-    "gv-lop-010000",
     "gv-lop-020000"
    ],
    "screensGuessed": [
@@ -1661,7 +1708,7 @@
      "missingTerms": [
       "HH:mm - dd/MM/yyyy"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "TR-CO.A07.02",
@@ -1696,7 +1743,7 @@
       "TR-CO.TC29"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "TR-CO.A07.03",
@@ -1706,31 +1753,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "gv-lop-010000": [
-       {
-        "term": "Trạng thái",
-        "figmaId": "3868:95575",
-        "layer": "Filter · Trạng thái",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Trạng thái",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trạng thái",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ],
       "gv-lop-020000": [
        {
         "term": "Trạng thái",
@@ -1788,7 +1810,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "TR-CO.A07.05",
@@ -1798,31 +1820,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "gv-lop-010000": [
-       {
-        "term": "Thời gian",
-        "figmaId": "I3868:95633;3065:71108",
-        "layer": "Tiêu đề",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Thẻ chỉ số · Thời gian học",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có biểu tượng": true,
-         "Đơn vị": "đơn vị",
-         "Số liệu": "00:15:19",
-         "Có đơn vị": false,
-         "Có phần thêm": false,
-         "Tiêu đề": "Thời gian học",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ nhấn"
-        },
-        "inCode": false
-       }
-      ],
       "gv-lop-020000": [
        {
         "term": "Thời gian",
@@ -1957,6 +1954,9 @@
      ],
      "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "gv-lop-020000"
    ]
   },
   {
@@ -2297,11 +2297,143 @@
       "Toast"
      ],
      "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CO.A10.05",
+     "name": "sidebar-menu-teacher",
+     "label": "Sidebar · MENU - TEACHER",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-010000": [
+       {
+        "term": "Sidebar · MENU - TEACHER",
+        "figmaId": "4915:258752",
+        "layer": "Sidebar · MENU - TEACHER",
+        "confidence": "cao",
+        "region": "Sidebar · MENU - TEACHER",
+        "owner": "Sidebar · MENU - TEACHER",
+        "component": "MENU - TEACHER",
+        "variant": {
+         "Trang": "Lớp"
+        },
+        "inCode": false
+       }
+      ]
+     }
     }
    ]
   },
   {
    "id": "TR-CO.F01",
+   "name": "header",
+   "title": "Header",
+   "screens": [
+    "gv-lop-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CO.F01.01",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "3868:95485",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "Giáo Viên",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CO.F01.02",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-010000": [
+       {
+        "term": "Component 2",
+        "figmaId": "4273:161193",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Sakumi"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CO.F01.03",
+     "name": "header-vai-tro",
+     "label": "Header/Vai trò",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-010000": [
+       {
+        "term": "Header/Vai trò",
+        "figmaId": "4899:187387",
+        "layer": "Header/Vai trò",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "Header/Vai trò",
+        "component": null,
+        "variant": {
+         "Vai trò": "Giáo viên"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "TR-CO.F02",
    "name": "ngoai-body",
    "title": "(ngoài Body)",
    "screens": [
@@ -2314,7 +2446,7 @@
    "figmaDiffNotes": [],
    "items": [
     {
-     "id": "TR-CO.F01.01",
+     "id": "TR-CO.F02.01",
      "name": "filter-loai-lop",
      "label": "Filter · Loại lớp",
      "spec": "",
@@ -2353,7 +2485,46 @@
      }
     },
     {
-     "id": "TR-CO.F01.02",
+     "id": "TR-CO.F02.02",
+     "name": "filter-trang-thai",
+     "label": "Filter · Trạng thái",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-lop-010000": [
+       {
+        "term": "Filter · Trạng thái",
+        "figmaId": "3868:95575",
+        "layer": "Filter · Trạng thái",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Trạng thái",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-CO.F02.03",
      "name": "filter-trinh-do",
      "label": "Filter · Trình độ",
      "spec": "",
@@ -2392,7 +2563,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.03",
+     "id": "TR-CO.F02.04",
      "name": "ket-qua-diem-danh-gia",
      "label": "Kết quả · Điểm đánh giá",
      "spec": "",
@@ -2421,7 +2592,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.04",
+     "id": "TR-CO.F02.05",
      "name": "the-chi-so-buoi-da-day",
      "label": "Thẻ chỉ số · Buổi đã dạy",
      "spec": "",
@@ -2460,7 +2631,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.05",
+     "id": "TR-CO.F02.06",
      "name": "the-chi-so-luong-cung",
      "label": "Thẻ chỉ số · Lương cứng",
      "spec": "",
@@ -2499,7 +2670,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.06",
+     "id": "TR-CO.F02.07",
      "name": "the-chi-so-luong-kpi",
      "label": "Thẻ chỉ số · Lương KPI",
      "spec": "",
@@ -2538,7 +2709,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.07",
+     "id": "TR-CO.F02.08",
      "name": "global-progress-bar",
      "label": "Global Progress Bar",
      "spec": "",
@@ -2567,7 +2738,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.08",
+     "id": "TR-CO.F02.09",
      "name": "progress-diem-danh-gia-a-f",
      "label": "Progress/Điểm Đánh Giá (A-F)",
      "spec": "",
@@ -2597,7 +2768,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.09",
+     "id": "TR-CO.F02.10",
      "name": "percent",
      "label": "PERCENT %",
      "spec": "",
@@ -2626,7 +2797,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.10",
+     "id": "TR-CO.F02.11",
      "name": "class-status",
      "label": "CLass Status",
      "spec": "",
@@ -2655,7 +2826,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.11",
+     "id": "TR-CO.F02.12",
      "name": "avatar",
      "label": "Avatar",
      "spec": "",
@@ -2686,7 +2857,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.12",
+     "id": "TR-CO.F02.13",
      "name": "the-chi-so",
      "label": "Thẻ chỉ số",
      "spec": "",
@@ -2725,7 +2896,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.13",
+     "id": "TR-CO.F02.14",
      "name": "atom-badge",
      "label": "Atom/Badge",
      "spec": "",
@@ -2756,7 +2927,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.14",
+     "id": "TR-CO.F02.15",
      "name": "tag-thoi-gian",
      "label": "Tag thời gian",
      "spec": "",
@@ -2787,7 +2958,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.15",
+     "id": "TR-CO.F02.16",
      "name": "o-dinh-danh",
      "label": "Ô định danh",
      "spec": "",
@@ -2822,7 +2993,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.16",
+     "id": "TR-CO.F02.17",
      "name": "class-session-status",
      "label": "Class Session Status",
      "spec": "",
@@ -2851,7 +3022,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.17",
+     "id": "TR-CO.F02.18",
      "name": "student-status",
      "label": "Student Status",
      "spec": "",
@@ -2880,7 +3051,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.18",
+     "id": "TR-CO.F02.19",
      "name": "mouse-click",
      "label": "Mouse click",
      "spec": "",
@@ -2907,7 +3078,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.19",
+     "id": "TR-CO.F02.20",
      "name": "component-2",
      "label": "Component 2",
      "spec": "",
@@ -2936,38 +3107,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.20",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-lop-020000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "4324:6278",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Giáo Viên",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "TR-CO.F01.21",
+     "id": "TR-CO.F02.21",
      "name": "header-vai-tro",
      "label": "Header/Vai trò",
      "spec": "",
@@ -2996,7 +3136,7 @@
      }
     },
     {
-     "id": "TR-CO.F01.22",
+     "id": "TR-CO.F02.22",
      "name": "sidebar-menu-teacher",
      "label": "Sidebar · MENU - TEACHER",
      "spec": "",

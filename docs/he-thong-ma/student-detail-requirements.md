@@ -40,18 +40,18 @@ Frame: chưa có · Nguồn nội dung: QC
 
 ### `A02` Trang 1: Chi tiết học viên — Thông tin cá nhân
 
-Frame: chưa có · Nguồn nội dung: QC
+Frame: `ADM-HV-020100` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | anh-dai-dien |  |  | — |  | `TC01`, `TC05`, `TC10` | Chưa sync | QC |
-| `A02.02` | ho-va-ten |  |  | — |  | `TC02` | Chưa sync | QC |
-| `A02.03` | ngay-sinh |  |  | — |  | `TC01`, `TC02` | Chưa sync | QC |
-| `A02.04` | gioi-tinh |  |  | — |  | `TC01`, `TC02` | Chưa sync | QC |
-| `A02.05` | ma-nguoi-dung |  |  | — |  | `TC01`, `TC02`, `TC03` | Chưa sync | QC |
-| `A02.06` | so-dien-thoai |  |  | — |  | `TC01`, `TC02` | Chưa sync | QC |
-| `A02.07` | email |  |  | — |  | `TC01`, `TC02`, `TC03` | Chưa sync | QC |
-| `A02.08` | ghi-chu |  |  | — |  | `TC01`, `TC02`, `TC04` | Chưa sync | QC |
+| `A02.01` | anh-dai-dien |  |  | — |  | `TC01`, `TC05`, `TC10` | Chưa khớp tự động | QC |
+| `A02.02` | ho-va-ten |  | `1648:11807` Họ và tên | — |  | `TC02` | Khớp | QC |
+| `A02.03` | ngay-sinh |  | `1648:11797` Ngày sinh | — |  | `TC01`, `TC02` | Khớp | QC |
+| `A02.04` | gioi-tinh |  | `1648:11788` Giới tính; `1648:11741` Heading 3 - Teacher Name & Code | — |  | `TC01`, `TC02` | Khớp | QC |
+| `A02.05` | ma-nguoi-dung |  | `1648:11767` Mã người dùng; `1648:11741` Heading 3 - Teacher Name & Code | — |  | `TC01`, `TC02`, `TC03` | Khớp | QC |
+| `A02.06` | so-dien-thoai |  | `1648:11813` Số điện thoại | — |  | `TC01`, `TC02` | Khớp | QC |
+| `A02.07` | email |  | `1648:11764` Row 1: Mã người dùng & Email | — |  | `TC01`, `TC02`, `TC03` | Khớp | QC |
+| `A02.08` | ghi-chu | `Card Menu v2 (Test)` Type=Con, State=Default | `I4915:233159;4899:195421` Card Menu v2 (Test) | — |  | `TC01`, `TC02`, `TC04` | Khớp | QC |
 
 ### `A03` Popup xác nhận lấy lại mật khẩu — UI cần bổ sung
 
@@ -101,10 +101,10 @@ Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A09.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa sync | QC |
-| `A09.02` | thong-tin |  |  | — |  |  | Chưa sync | QC |
-| `A09.03` | canh-bao |  |  | — |  | `TTC02` | Chưa sync | QC |
-| `A09.04` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A09.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
+| `A09.02` | thong-tin |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A09.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -260,7 +260,7 @@ Frame: `ADM-HV-020300` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa sync (12): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A09.01`, `A09.02`, `A09.03`, `A09.04`
+- Chưa khớp tự động (5): `A02.01`, `A09.01`, `A09.02`, `A09.03`, `A09.04`
 - Frame Figma chưa có requirement (1): `ADM-HV-020610`
 - Thiếu prototype link đi vào (1): `ADM-HV-020610`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`

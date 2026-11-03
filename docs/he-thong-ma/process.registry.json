@@ -89,8 +89,6 @@
    "citedByRequirement": true,
    "regions": [
     "CHS-PR.A02",
-    "CHS-PR.A03",
-    "CHS-PR.A04",
     "CHS-PR.F01",
     "CHS-PR.F02"
    ]
@@ -139,8 +137,6 @@
    "citedByRequirement": true,
    "regions": [
     "CHS-PR.A02",
-    "CHS-PR.A03",
-    "CHS-PR.A04",
     "CHS-PR.F01",
     "CHS-PR.F02"
    ]
@@ -190,7 +186,6 @@
    "regions": [
     "CHS-PR.A02",
     "CHS-PR.A03",
-    "CHS-PR.A04",
     "CHS-PR.F01",
     "CHS-PR.F02"
    ]
@@ -300,7 +295,9 @@
    "dark": "SP-TASK-030010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CHS-PR.A04"
+   ]
   }
  },
  "regions": [
@@ -1449,8 +1446,6 @@
    "name": "trang-3-ca-truc",
    "title": "Trang 3: Ca Trực",
    "screens": [
-    "sp-task-010000",
-    "sp-task-020000",
     "sp-task-030000"
    ],
    "screensGuessed": [
@@ -1472,44 +1467,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Quy trình",
-        "figmaId": "I4915:257614;4901:224371",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1150:22358",
-         "Label": "Quy trình",
-         "Type": "Chính dropdown",
-         "State": "Default",
-         "Expanded": "Yes"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020000": [
-       {
-        "term": "Quy trình",
-        "figmaId": "I4915:257842;4901:224926",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1150:22358",
-         "Label": "Quy trình",
-         "Type": "Chính dropdown",
-         "State": "Default",
-         "Expanded": "Yes"
-        },
-        "inCode": false
-       }
-      ],
       "sp-task-030000": [
        {
         "term": "Quy trình",
@@ -1543,56 +1500,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Tuần Này",
-        "figmaId": "3845:49782",
-        "layer": "Filter · Tuần này",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Tuần này",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "Tuần này",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020000": [
-       {
-        "term": "Tuần Này",
-        "figmaId": "3857:74167",
-        "layer": "Filter · Tuần này",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Tuần này",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "Tuần này",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ],
       "sp-task-030000": [
        {
         "term": "Tuần Này",
@@ -1663,7 +1570,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CHS-PR.A03.04",
@@ -1703,36 +1610,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Tối",
-        "figmaId": "I6935:389044;1904:8731",
-        "layer": "Trần Nguyễn Hoài Phương",
-        "confidence": "thap",
-        "region": null,
-        "owner": "AVATAR + Name",
-        "component": "AVATAR + Name",
-        "variant": {
-         "Property 1": "AVATAR + Name"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020000": [
-       {
-        "term": "Tối",
-        "figmaId": "I6935:389058;1904:8731",
-        "layer": "Trần Nguyễn Hoài Phương",
-        "confidence": "thap",
-        "region": null,
-        "owner": "AVATAR + Name",
-        "component": "AVATAR + Name",
-        "variant": {
-         "Property 1": "AVATAR + Name"
-        },
-        "inCode": false
-       }
-      ],
       "sp-task-030000": [
        {
         "term": "Tối",
@@ -1754,6 +1631,9 @@
      "missingTerms": [],
      "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "sp-task-030000"
    ]
   },
   {
@@ -1761,9 +1641,7 @@
    "name": "trang-4-popup-them-nguoi-vao-danh-sach-s",
    "title": "Trang 4: Popup thêm người vào Danh sách Support",
    "screens": [
-    "sp-task-010000",
-    "sp-task-020000",
-    "sp-task-030000"
+    "sp-task-030010"
    ],
    "screensGuessed": [
     "SP-TASK-010000",
@@ -1783,13 +1661,30 @@
      "spec": "Tìm theo tên hoặc email, không phân biệt hoa thường, tìm trên tất cả nhóm.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "sp-task-030010": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "3857:76121",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm...",
+         "State": "Search",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tìm kiếm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "CHS-PR.A04.02",
@@ -1798,14 +1693,27 @@
      "spec": "Chia theo role: `Trợ giảng`, `Support`, `Nhân viên kinh doanh`, `Phụ trách lớp`; mỗi nhóm mở/thu gọn được. Chỉ hiển thị tài khoản đang hoạt động.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "sp-task-030010": [
+       {
+        "term": "Trợ giảng",
+        "figmaId": "3857:76126",
+        "layer": "Trợ giảng",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Nhóm người dùng",
-      "Trợ giảng"
+      "Nhóm người dùng"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "CHS-PR.A04.03",
@@ -1815,44 +1723,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "sp-task-010000": [
+      "sp-task-030010": [
        {
         "term": "Checkbox",
-        "figmaId": "3857:72444",
-        "layer": "Checkbox",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Checkbox",
-        "component": "Checkbox",
-        "variant": {
-         "Checked": "Yes",
-         "Size": "20",
-         "Disabled": "No"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020000": [
-       {
-        "term": "Checkbox",
-        "figmaId": "3857:74959",
-        "layer": "Checkbox",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Checkbox",
-        "component": "Checkbox",
-        "variant": {
-         "Checked": "Yes",
-         "Size": "20",
-         "Disabled": "No"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-030000": [
-       {
-        "term": "Checkbox",
-        "figmaId": "3857:76000",
+        "figmaId": "3857:76132",
         "layer": "Checkbox",
         "confidence": "cao",
         "region": null,
@@ -1872,6 +1746,9 @@
      "missingTerms": [],
      "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "sp-task-030010"
    ]
   },
   {
@@ -2152,6 +2029,45 @@
     },
     {
      "id": "CHS-PR.F02.08",
+     "name": "filter-tuan-nay",
+     "label": "Filter · Tuần này",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "sp-task-010000": [
+       {
+        "term": "Filter · Tuần này",
+        "figmaId": "3845:49782",
+        "layer": "Filter · Tuần này",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Filter · Tuần này",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Tuần này",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CHS-PR.F02.09",
      "name": "percent",
      "label": "PERCENT %",
      "spec": "",

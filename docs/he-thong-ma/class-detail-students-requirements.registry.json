@@ -126,7 +126,6 @@
     "M-CDS3.A01",
     "M-CDS3.A02",
     "M-CDS3.A03",
-    "M-CDS3.A04",
     "M-CDS3.A05",
     "M-CDS3.A09",
     "M-CDS3.A10",
@@ -199,6 +198,7 @@
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
+    "M-CDS3.A04",
     "M-CDS3.A08"
    ]
   }
@@ -655,7 +655,7 @@
    "name": "popup-chon-hoc-vien-co-san",
    "title": "Popup Chọn học viên có sẵn",
    "screens": [
-    "adm-lop-040200"
+    "adm-lop-040230"
    ],
    "screensGuessed": [
     "ADM-LOP-040200"
@@ -703,29 +703,17 @@
      "spec": "Mỗi dòng hiển thị tối thiểu tên, mã và email; checkbox hỗ trợ multi-select.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040200": [
-       {
-        "term": "Danh sách",
-        "figmaId": "2384:54608",
-        "layer": "Danh sách học viên",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDS3.TC13",
       "M-CDS3.TC14",
       "M-CDS3.TC16"
      ],
-     "missingTerms": [],
-     "status": "khop"
+     "missingTerms": [
+      "Danh sách"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDS3.A04.04",
@@ -735,16 +723,20 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-lop-040200": [
+      "adm-lop-040230": [
        {
         "term": "Hủy",
-        "figmaId": "2384:54471",
-        "layer": "Đang sinh sống và làm việc tại Thâm Quyến, Trung Quốc. Đã tốt nghiệp cử nhân chuyên ngành Trung Quốc học, khoa Đông phương học, trường Đại học Khoa học Xã hội và Nhân văn TP.HCM, chứng chỉ HSK6.",
-        "confidence": "thap",
+        "figmaId": "I2527:167815;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
         "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
         "inCode": false
        }
       ]
@@ -767,11 +759,13 @@
       "M-CDS3.TC14"
      ],
      "missingTerms": [
-      "Thêm mới",
       "Thêm mới"
      ],
      "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "adm-lop-040230"
    ]
   },
   {

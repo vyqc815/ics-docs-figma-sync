@@ -101,7 +101,6 @@
     "CM-LI.A04",
     "CM-LI.A05",
     "CM-LI.A06",
-    "CM-LI.A08",
     "CM-LI.F01"
    ]
   },
@@ -154,7 +153,6 @@
     "CM-LI.A04",
     "CM-LI.A05",
     "CM-LI.A06",
-    "CM-LI.A08",
     "CM-LI.F01"
    ]
   },
@@ -177,9 +175,7 @@
    "dark": "CD-KH-070171-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "CM-LI.A04"
-   ]
+   "regions": []
   },
   "CD-KH-070301": {
    "id": "CD-KH-070301",
@@ -205,7 +201,7 @@
    ],
    "citedByRequirement": true,
    "regions": [
-    "CM-LI.A07"
+    "CM-LI.A08"
    ]
   },
   "CD-KH-070302": {
@@ -232,9 +228,7 @@
     "CD-KH-070309"
    ],
    "citedByRequirement": true,
-   "regions": [
-    "CM-LI.A07"
-   ]
+   "regions": []
   },
   "CD-KH-070303": {
    "id": "CD-KH-070303",
@@ -255,9 +249,7 @@
    "dark": "CD-KH-070303-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "CM-LI.A07"
-   ]
+   "regions": []
   },
   "CD-KH-070304": {
    "id": "CD-KH-070304",
@@ -284,13 +276,7 @@
    ],
    "citedByRequirement": true,
    "regions": [
-    "CM-LI.A01",
-    "CM-LI.A02",
-    "CM-LI.A03",
-    "CM-LI.A05",
-    "CM-LI.A06",
     "CM-LI.A07",
-    "CM-LI.A08",
     "CM-LI.F01"
    ]
   },
@@ -423,8 +409,7 @@
    "title": "Khung chung của Thư viện",
    "screens": [
     "cd-kh-070160",
-    "cd-kh-070170",
-    "cd-kh-070304"
+    "cd-kh-070170"
    ],
    "screensGuessed": [
     "CD-KH-070160",
@@ -477,7 +462,7 @@
      "missingTerms": [
       "Tiêu đề / mô tả"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A01.02",
@@ -593,7 +578,7 @@
       "CM-LI.TC01"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A01.06",
@@ -662,7 +647,7 @@
       "CM-LI.TC03"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A01.08",
@@ -702,7 +687,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A01.09",
@@ -744,7 +729,7 @@
       "CM-LI.TC05"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A01.10",
@@ -792,22 +777,6 @@
         "owner": null,
         "component": null,
         "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070304": [
-       {
-        "term": "Trạng thái",
-        "figmaId": "6518:373357",
-        "layer": "Trạng thái câu",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Trạng thái câu",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Nháp",
-         "Size": "S"
-        },
         "inCode": true
        }
       ]
@@ -865,19 +834,6 @@
         "variant": null,
         "inCode": true
        }
-      ],
-      "cd-kh-070304": [
-       {
-        "term": "— trống —",
-        "figmaId": "6163:332867",
-        "layer": "Sửa văn bản → phiên âm & dịch câu có thể bấm \"Tự tạo\" lại. Từ khoá trong câu được giữ nếu từ đó vẫn còn.",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
       ]
      },
      "relations": [],
@@ -927,8 +883,12 @@
      "missingTerms": [
       "Hiển thị 1–50 trong N …"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-070160",
+    "cd-kh-070170"
    ]
   },
   {
@@ -937,8 +897,7 @@
    "title": "Trạng thái và xoá mục",
    "screens": [
     "cd-kh-070160",
-    "cd-kh-070170",
-    "cd-kh-070304"
+    "cd-kh-070170"
    ],
    "screensGuessed": [
     "CD-KH-070160",
@@ -1021,7 +980,7 @@
      ],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A02.03",
@@ -1069,7 +1028,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A02.04",
@@ -1112,22 +1071,6 @@
         },
         "inCode": true
        }
-      ],
-      "cd-kh-070304": [
-       {
-        "term": "Nháp",
-        "figmaId": "6518:373357",
-        "layer": "Trạng thái câu",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Trạng thái câu",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Nháp",
-         "Size": "S"
-        },
-        "inCode": true
-       }
       ]
      },
      "relations": [],
@@ -1137,6 +1080,10 @@
      ],
      "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-070160",
+    "cd-kh-070170"
    ]
   },
   {
@@ -1145,8 +1092,7 @@
    "title": "Thư viện kiến thức",
    "screens": [
     "cd-kh-070160",
-    "cd-kh-070170",
-    "cd-kh-070304"
+    "cd-kh-070170"
    ],
    "screensGuessed": [
     "CD-KH-070160",
@@ -1200,19 +1146,6 @@
          "Icon": "No",
          "Kiểu": "Gạch trái"
         },
-        "inCode": true
-       }
-      ],
-      "cd-kh-070304": [
-       {
-        "term": "Từ Vựng",
-        "figmaId": "6163:332119",
-        "layer": "Dịch từ vựng",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
         "inCode": true
        }
       ]
@@ -1272,7 +1205,7 @@
      "missingTerms": [
       "Cột tab Từ vựng"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A03.03",
@@ -1314,7 +1247,7 @@
      "missingTerms": [
       "Cột tab Ngữ pháp"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A03.04",
@@ -1356,7 +1289,7 @@
      "missingTerms": [
       "Cột tab Mẫu câu"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A03.05",
@@ -1398,7 +1331,7 @@
      "missingTerms": [
       "Cột tab Hanzi"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A03.06",
@@ -1440,7 +1373,7 @@
      "missingTerms": [
       "Cột tab Kanji"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A03.07",
@@ -1482,7 +1415,7 @@
      "missingTerms": [
       "Cột tab Phát âm"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A03.08",
@@ -1500,6 +1433,10 @@
      ],
      "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-070160",
+    "cd-kh-070170"
    ]
   },
   {
@@ -1509,8 +1446,7 @@
    "screens": [
     "cd-kh-070160",
     "cd-kh-070161",
-    "cd-kh-070170",
-    "cd-kh-070171"
+    "cd-kh-070170"
    ],
    "screensGuessed": [],
    "source": "tu-dien",
@@ -1607,19 +1543,6 @@
         "variant": null,
         "inCode": true
        }
-      ],
-      "cd-kh-070171": [
-       {
-        "term": "Loại",
-        "figmaId": "5729:95454",
-        "layer": "Nav · Loại kiến thức",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
       ]
      },
      "relations": [],
@@ -1653,19 +1576,6 @@
         "term": "Hàng",
         "figmaId": "5729:95205",
         "layer": "Hàng",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070171": [
-       {
-        "term": "Hàng",
-        "figmaId": "5729:95945",
-        "layer": "Hàng ㄱ",
         "confidence": "cao",
         "region": null,
         "owner": null,
@@ -1814,19 +1724,6 @@
         "variant": null,
         "inCode": true
        }
-      ],
-      "cd-kh-070171": [
-       {
-        "term": "Loại",
-        "figmaId": "5729:95454",
-        "layer": "Nav · Loại kiến thức",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
       ]
      },
      "relations": [],
@@ -1843,27 +1740,14 @@
      "spec": "Nhãn `Phụ âm × Nguyên âm`; nhóm `Bảng ghép cơ bản` / `Phụ âm căng` / `Nguyên âm ghép` / `Patchim`; lưới 14 phụ âm (hàng) × 10 nguyên âm (cột) = 140 âm tiết, mỗi ô gồm âm tiết + romaja.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-070171": [
-       {
-        "term": "Phụ âm × Nguyên âm",
-        "figmaId": "5729:96796",
-        "layer": "Phụ âm × Nguyên âm",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Lưới tiếng Hàn"
+      "Lưới tiếng Hàn",
+      "Phụ âm × Nguyên âm"
      ],
-     "status": "khop-mot-phan"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-LI.A04.08",
@@ -1877,19 +1761,6 @@
        {
         "term": "Chi tiết chữ",
         "figmaId": "5729:95411",
-        "layer": "Chi tiết chữ",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070171": [
-       {
-        "term": "Chi tiết chữ",
-        "figmaId": "5729:96808",
         "layer": "Chi tiết chữ",
         "confidence": "cao",
         "region": null,
@@ -1937,6 +1808,11 @@
      ],
      "status": "chua-co-thiet-ke"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-070160",
+    "cd-kh-070161",
+    "cd-kh-070170"
    ]
   },
   {
@@ -1945,8 +1821,7 @@
    "title": "Thư viện kỹ năng",
    "screens": [
     "cd-kh-070160",
-    "cd-kh-070170",
-    "cd-kh-070304"
+    "cd-kh-070170"
    ],
    "screensGuessed": [
     "CD-KH-070160",
@@ -1999,7 +1874,7 @@
      "missingTerms": [
       "Cột tab Nghe"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A05.02",
@@ -2041,7 +1916,7 @@
      "missingTerms": [
       "Cột tab Đọc"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A05.03",
@@ -2083,7 +1958,7 @@
      "missingTerms": [
       "Cột tab Viết"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A05.04",
@@ -2125,7 +2000,7 @@
      "missingTerms": [
       "Cột tab Nói"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A05.05",
@@ -2221,8 +2096,12 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-070160",
+    "cd-kh-070170"
    ]
   },
   {
@@ -2231,8 +2110,7 @@
    "title": "Thư viện bài tập",
    "screens": [
     "cd-kh-070160",
-    "cd-kh-070170",
-    "cd-kh-070304"
+    "cd-kh-070170"
    ],
    "screensGuessed": [
     "CD-KH-070160",
@@ -2358,22 +2236,6 @@
         "owner": null,
         "component": null,
         "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070304": [
-       {
-        "term": "Trạng thái",
-        "figmaId": "6518:373357",
-        "layer": "Trạng thái câu",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Trạng thái câu",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Nháp",
-         "Size": "S"
-        },
         "inCode": true
        }
       ]
@@ -2513,8 +2375,12 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-070160",
+    "cd-kh-070170"
    ]
   },
   {
@@ -2522,9 +2388,6 @@
    "name": "thu-vien-bai-tap-chi-tiet-cau-hoi",
    "title": "Thư viện bài tập — Chi tiết câu hỏi",
    "screens": [
-    "cd-kh-070301",
-    "cd-kh-070302",
-    "cd-kh-070303",
     "cd-kh-070304",
     "cd-kh-070305"
    ],
@@ -2558,78 +2421,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-070301": [
-       {
-        "term": "Tiêu đề",
-        "figmaId": "6163:81281",
-        "layer": "Tiêu đề",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       },
-       {
-        "term": "Chi tiết câu hỏi",
-        "figmaId": "6163:81282",
-        "layer": "Tiêu đề trang",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070302": [
-       {
-        "term": "Tiêu đề",
-        "figmaId": "6163:82184",
-        "layer": "Tiêu đề",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       },
-       {
-        "term": "Chi tiết câu hỏi",
-        "figmaId": "6163:82185",
-        "layer": "Tiêu đề trang",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070303": [
-       {
-        "term": "Tiêu đề",
-        "figmaId": "6163:82888",
-        "layer": "Tiêu đề",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       },
-       {
-        "term": "Chi tiết câu hỏi",
-        "figmaId": "6163:82889",
-        "layer": "Tiêu đề trang",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
       "cd-kh-070304": [
        {
         "term": "Tiêu đề",
@@ -2692,19 +2483,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-070302": [
-       {
-        "term": "Tiếng Trung",
-        "figmaId": "6163:332014",
-        "layer": "Chúng tôi đều rất thích học tiếng Trung.",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
       "cd-kh-070304": [
        {
         "term": "Tiếng Trung",
@@ -2737,7 +2515,7 @@
      "missingTerms": [
       "Chip ngôn ngữ"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A07.04",
@@ -2785,7 +2563,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A07.05",
@@ -2837,7 +2615,7 @@
       "CM-LI.TC41"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A07.06",
@@ -2896,27 +2674,15 @@
      "spec": "Thanh audio (nút phát, tiến độ, `mm:ss / mm:ss`) và danh sách **lượt thoại**; chú thích `Mỗi lượt gắn với một đối tượng`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-070301": [
-       {
-        "term": "Kịch bản",
-        "figmaId": "6163:82102",
-        "layer": "Kịch bản",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-LI.TC33"
      ],
-     "missingTerms": [],
-     "status": "khop-mot-phan"
+     "missingTerms": [
+      "Kịch bản"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-LI.A07.08",
@@ -2962,8 +2728,8 @@
       "CM-LI.TC34"
      ],
      "missingTerms": [
-      "Lượt thoại",
-      "A"
+      "A",
+      "Lượt thoại"
      ],
      "status": "chua-thay-tren-figma"
     },
@@ -3008,27 +2774,15 @@
      "spec": "Mỗi đối tượng: `Object A · Lý Hoa`, `Giọng Nữ 2 · 2 lượt`, menu `⋮`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-070301": [
-       {
-        "term": "Đối tượng",
-        "figmaId": "6163:82144",
-        "layer": "Đối tượng",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-LI.TC33"
      ],
-     "missingTerms": [],
-     "status": "khop-mot-phan"
+     "missingTerms": [
+      "Đối tượng"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-LI.A07.14",
@@ -3038,45 +2792,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-070301": [
-       {
-        "term": "Hiển thị cho học viên",
-        "figmaId": "6163:82164",
-        "layer": "Hiển thị cho học viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070302": [
-       {
-        "term": "Hiển thị cho học viên",
-        "figmaId": "6163:82487",
-        "layer": "Hiển thị cho học viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070303": [
-       {
-        "term": "Hiển thị cho học viên",
-        "figmaId": "6163:82945",
-        "layer": "Hiển thị cho học viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
       "cd-kh-070304": [
        {
         "term": "Hiển thị cho học viên",
@@ -3117,32 +2832,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-070302": [
-       {
-        "term": "Văn bản",
-        "figmaId": "6163:82425",
-        "layer": "Văn bản",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070303": [
-       {
-        "term": "Văn bản",
-        "figmaId": "6163:82901",
-        "layer": "Văn bản",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
       "cd-kh-070304": [
        {
         "term": "Văn bản",
@@ -3177,7 +2866,7 @@
       "CM-LI.TC37"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A07.16",
@@ -3187,32 +2876,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-070302": [
-       {
-        "term": "Văn bản",
-        "figmaId": "6163:82425",
-        "layer": "Văn bản",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070303": [
-       {
-        "term": "Văn bản",
-        "figmaId": "6163:82901",
-        "layer": "Văn bản",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
       "cd-kh-070304": [
        {
         "term": "Sửa câu",
@@ -3256,7 +2919,7 @@
       "CM-LI.TC42a"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LI.A07.17",
@@ -3280,27 +2943,14 @@
      "spec": "Bấm từ khoá (trong văn bản hoặc danh sách): chữ, phiên âm, từ loại, `Nghĩa`, `Chi tiết từ`, `Ví dụ`; tiếng Nhật thêm ô `Hiragana`, `Katakana`. Menu `⋮`: `Sửa từ khoá`, `Bỏ từ khoá`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-070301": [
-       {
-        "term": "Nghĩa",
-        "figmaId": "6163:82169",
-        "layer": "Toggle · Dịch nghĩa",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Popup chi tiết từ khoá"
+      "Popup chi tiết từ khoá",
+      "Nghĩa"
      ],
-     "status": "khop-mot-phan"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-LI.A07.19",
@@ -3393,32 +3043,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-070302": [
-       {
-        "term": "trả lời 3 câu",
-        "figmaId": "6163:82186",
-        "layer": "Đọc đoạn văn và trả lời 3 câu · Kỹ năng: Đọc",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070303": [
-       {
-        "term": "trả lời 3 câu",
-        "figmaId": "6163:82890",
-        "layer": "Đọc đoạn văn và trả lời 3 câu · Kỹ năng: Đọc",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
       "cd-kh-070304": [
        {
         "term": "trả lời 3 câu",
@@ -3461,45 +3085,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-070301": [
-       {
-        "term": "Hiển thị cho học viên",
-        "figmaId": "6163:82164",
-        "layer": "Hiển thị cho học viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070302": [
-       {
-        "term": "Hiển thị cho học viên",
-        "figmaId": "6163:82487",
-        "layer": "Hiển thị cho học viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
-      "cd-kh-070303": [
-       {
-        "term": "Hiển thị cho học viên",
-        "figmaId": "6163:82945",
-        "layer": "Hiển thị cho học viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": true
-       }
-      ],
       "cd-kh-070304": [
        {
         "term": "Hiển thị cho học viên",
@@ -3532,6 +3117,10 @@
      "missingTerms": [],
      "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-070304",
+    "cd-kh-070305"
    ]
   },
   {
@@ -3539,9 +3128,7 @@
    "name": "toast-phan-hoi-crud",
    "title": "Toast phản hồi CRUD",
    "screens": [
-    "cd-kh-070160",
-    "cd-kh-070170",
-    "cd-kh-070304"
+    "cd-kh-070301"
    ],
    "screensGuessed": [
     "CD-KH-070160",
@@ -3598,12 +3185,12 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-070304": [
+      "cd-kh-070301": [
        {
         "term": "Lỗi",
-        "figmaId": "6163:332044",
-        "layer": "Đọc đoạn văn và trả lời 3 câu · Kỹ năng: Đọc",
-        "confidence": "thap",
+        "figmaId": "6518:373118",
+        "layer": "Học viên nghe xong rồi trả lời",
+        "confidence": "cao",
         "region": null,
         "owner": null,
         "component": null,
@@ -3617,8 +3204,11 @@
      "missingTerms": [
       "Có Lỗi Xảy Ra"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-070301"
    ]
   },
   {
@@ -3891,6 +3481,36 @@
     },
     {
      "id": "CM-LI.F01.09",
+     "name": "trang-thai-cau",
+     "label": "Trạng thái câu",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-070304": [
+       {
+        "term": "Trạng thái câu",
+        "figmaId": "6518:373357",
+        "layer": "Trạng thái câu",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trạng thái câu",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Nháp",
+         "Size": "S"
+        },
+        "inCode": true
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-LI.F01.10",
      "name": "atom-button",
      "label": "Atom/Button",
      "spec": "",
@@ -3921,7 +3541,7 @@
      }
     },
     {
-     "id": "CM-LI.F01.10",
+     "id": "CM-LI.F01.11",
      "name": "molecule-add-new-bar-them-cau",
      "label": "Molecule/Add New Bar · Thêm câu",
      "spec": "",
@@ -3955,7 +3575,7 @@
      }
     },
     {
-     "id": "CM-LI.F01.11",
+     "id": "CM-LI.F01.12",
      "name": "atom-label",
      "label": "Atom/Label",
      "spec": "",

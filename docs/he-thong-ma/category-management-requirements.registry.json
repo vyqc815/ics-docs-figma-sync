@@ -49,7 +49,6 @@
     "CM-CM3.A01",
     "CM-CM3.A02",
     "CM-CM3.A04",
-    "CM-CM3.A05",
     "CM-CM3.A06",
     "CM-CM3.F01"
    ]
@@ -73,7 +72,9 @@
    "dark": "CD-DM-010010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CM-CM3.A05"
+   ]
   },
   "CD-DM-010020": {
    "id": "CD-DM-010020",
@@ -748,7 +749,6 @@
       "CM-CM3.TC05"
      ],
      "missingTerms": [
-      "Subject ID hợp lệ",
       "Subject ID hợp lệ"
      ],
      "status": "chua-thay-tren-figma"
@@ -908,7 +908,7 @@
    "name": "tab-tong-quan",
    "title": "Tab Tổng quan",
    "screens": [
-    "cd-dm-010000"
+    "cd-dm-010010"
    ],
    "screensGuessed": [
     "CD-DM-010000"
@@ -941,14 +941,32 @@
      "spec": "Sau khi người dùng ngừng nhập `2 giây`, lọc trong danh mục hiện tại theo keyword khớp một phần với ID, Tên hoặc Mô tả khóa học; không yêu cầu khớp chính xác 100%.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010010": [
+       {
+        "term": "Tìm kiếm khóa học",
+        "figmaId": "2702:46349",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Modal Body Content",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm khoá học...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Tìm kiếm khóa học",
       "2 giây"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "CM-CM3.A05.03",
@@ -957,15 +975,34 @@
      "spec": "Mở form tạo khóa học mới và gắn khóa học vào danh mục hiện tại.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010010": [
+       {
+        "term": "Thêm khóa học",
+        "figmaId": "I2702:48230;5056:365849",
+        "layer": "Placeholder",
+        "confidence": "thap",
+        "region": "Modal Body Content",
+        "owner": "Add New Bar · Thêm khoá học mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1075:1478",
+         "Placeholder": "Thêm khoá học mới",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-CM3.TC08"
      ],
-     "missingTerms": [
-      "Thêm khóa học"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "CM-CM3.A05.04",
@@ -990,19 +1027,16 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-dm-010000": [
+      "cd-dm-010010": [
        {
         "term": "Nháp",
-        "figmaId": "3065:53348",
-        "layer": "Atom/Status",
-        "confidence": "cao",
-        "region": "Row",
-        "owner": "Atom/Status",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Nháp",
-         "Size": "M"
-        },
+        "figmaId": "1725:17395",
+        "layer": "Nhập mô tả khoá học",
+        "confidence": "thap",
+        "region": "Modal Body Content",
+        "owner": null,
+        "component": null,
+        "variant": null,
         "inCode": false
        }
       ]
@@ -1021,13 +1055,25 @@
      "spec": "Bắt buộc, không áp dụng giới hạn độ dài nghiệp vụ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010010": [
+       {
+        "term": "Tên khóa học",
+        "figmaId": "1725:17378",
+        "layer": "Tên khoá học",
+        "confidence": "cao",
+        "region": "Modal Body Content",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tên khóa học"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "CM-CM3.A05.07",
@@ -1037,13 +1083,13 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-dm-010000": [
+      "cd-dm-010010": [
        {
         "term": "Mô tả khóa học",
-        "figmaId": "3065:53306",
-        "layer": "Nhập mô tả khoá học",
+        "figmaId": "1725:17380",
+        "layer": "Mô tả khoá học",
         "confidence": "cao",
-        "region": "Row",
+        "region": "Modal Body Content",
         "owner": null,
         "component": null,
         "variant": null,
@@ -1065,16 +1111,29 @@
      "spec": "Field chỉ đọc. Khóa học và kỳ có quan hệ `1:n`; hệ thống đếm số kỳ đang liên kết với khóa học và cập nhật khi quan hệ khóa học–kỳ được thêm hoặc xóa.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010010": [
+       {
+        "term": "Số kỳ",
+        "figmaId": "1725:17382",
+        "layer": "Số kỳ",
+        "confidence": "cao",
+        "region": "Modal Body Content",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-CM3.TC09"
      ],
      "missingTerms": [
-      "Số kỳ",
       "1:n"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "CM-CM3.A05.09",
@@ -1084,22 +1143,16 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-dm-010000": [
+      "cd-dm-010010": [
        {
         "term": "Cấp độ",
-        "figmaId": "I4915:257163;4901:217035;2245:87774",
-        "layer": "Label",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "470:992",
-         "Label": "Danh Mục & Cấp Độ",
-         "Type": "Chính",
-         "State": "Select",
-         "Expanded": "No"
-        },
+        "figmaId": "1725:17384",
+        "layer": "Cấp độ",
+        "confidence": "cao",
+        "region": "Modal Body Content",
+        "owner": null,
+        "component": null,
+        "variant": null,
         "inCode": false
        }
       ]
@@ -1121,42 +1174,27 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-dm-010000": [
+      "cd-dm-010010": [
        {
         "term": "Trạng thái",
-        "figmaId": "3065:53785",
-        "layer": "DD/Molecule/Trigger",
+        "figmaId": "1725:17386",
+        "layer": "Trạng thái",
         "confidence": "cao",
-        "region": null,
-        "owner": "DD/Molecule/Trigger",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trạng thái",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
+        "region": "Modal Body Content",
+        "owner": null,
+        "component": null,
+        "variant": null,
         "inCode": false
        },
        {
         "term": "Nháp",
-        "figmaId": "3065:53348",
-        "layer": "Atom/Status",
-        "confidence": "cao",
-        "region": "Row",
-        "owner": "Atom/Status",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Nháp",
-         "Size": "M"
-        },
+        "figmaId": "1725:17395",
+        "layer": "Nhập mô tả khoá học",
+        "confidence": "thap",
+        "region": "Modal Body Content",
+        "owner": null,
+        "component": null,
+        "variant": null,
         "inCode": false
        }
       ]
@@ -1181,6 +1219,9 @@
      "missingTerms": [],
      "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-dm-010010"
    ]
   },
   {

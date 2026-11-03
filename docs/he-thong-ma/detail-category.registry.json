@@ -77,7 +77,9 @@
    "dark": "CD-DM-010010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CM-DC.A02"
+   ]
   },
   "CD-DM-010020": {
    "id": "CD-DM-010020",
@@ -190,9 +192,7 @@
    "dark": "CD-DM-010060-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CM-DC.A02"
-   ]
+   "regions": []
   },
   "CD-DM-010062": {
    "id": "CD-DM-010062",
@@ -239,7 +239,7 @@
    "name": "tab-tong-quan",
    "title": "Tab Tổng quan",
    "screens": [
-    "cd-dm-010060"
+    "cd-dm-010010"
    ],
    "screensGuessed": [
     "CD-DM-010060"
@@ -257,7 +257,21 @@
      "spec": "9 chữ số `CCAALLMMM` theo [Quản lý khoá học](../../course_management/course_management.md) REQ06: `AA` = ID danh mục hiện tại, `LL` = ID cấp độ đã chọn, `MMM` do hệ thống cấp. Chưa chọn Cấp độ thì `LL` = `00`. Không nhập tay lúc thêm nhanh; khi còn `Nháp` chỉ sửa được `MMM` (trong popup Kích hoạt công khai khoá học); khóa vĩnh viễn kể từ khi rời `Nháp`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010010": [
+       {
+        "term": "ID",
+        "figmaId": "1725:17376",
+        "layer": "ID",
+        "confidence": "cao",
+        "region": "Modal Body Content",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [
       {
        "type": "governed-by",
@@ -267,10 +281,9 @@
      ],
      "testcases": [],
      "missingTerms": [
-      "ID",
       "CCAALLMMM"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "CM-DC.A02.02",
@@ -280,13 +293,13 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-dm-010060": [
+      "cd-dm-010010": [
        {
         "term": "Tên khóa học",
-        "figmaId": "6025:210757",
+        "figmaId": "1725:17378",
         "layer": "Tên khoá học",
         "confidence": "cao",
-        "region": "Meta Summary Section:margin",
+        "region": "Modal Body Content",
         "owner": null,
         "component": null,
         "variant": null,
@@ -306,13 +319,25 @@
      "spec": "Không bắt buộc",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010010": [
+       {
+        "term": "Mô tả khóa học",
+        "figmaId": "1725:17380",
+        "layer": "Mô tả khoá học",
+        "confidence": "cao",
+        "region": "Modal Body Content",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Mô tả khóa học"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "CM-DC.A02.04",
@@ -321,7 +346,21 @@
      "spec": "Chọn từ danh sách đã định nghĩa tại feature `Quản lý cấp độ`; không bắt buộc, mặc định `Không` nếu chưa chọn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010010": [
+       {
+        "term": "Cấp độ",
+        "figmaId": "1725:17384",
+        "layer": "Cấp độ",
+        "confidence": "cao",
+        "region": "Modal Body Content",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-DC.TC01",
@@ -329,10 +368,9 @@
       "CM-DC.TC12"
      ],
      "missingTerms": [
-      "Cấp độ",
       "Quản lý cấp độ"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "CM-DC.A02.05",
@@ -341,14 +379,27 @@
      "spec": "Chỉ đọc. Khóa học – kỳ có quan hệ `1:n`; hệ thống tự đếm và cập nhật khi quan hệ được thêm/xóa.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010010": [
+       {
+        "term": "Số kỳ",
+        "figmaId": "1725:17382",
+        "layer": "Số kỳ",
+        "confidence": "cao",
+        "region": "Modal Body Content",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Số kỳ",
       "1:n"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "CM-DC.A02.06",
@@ -358,13 +409,13 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-dm-010060": [
+      "cd-dm-010010": [
        {
         "term": "Trạng thái",
-        "figmaId": "6025:210789",
-        "layer": "Sau khi xác nhận, danh mục sẽ chuyển sang trạng thái Công khai và không được chỉnh sửa ID này",
-        "confidence": "thap",
-        "region": "Aside - Warning Alert Box",
+        "figmaId": "1725:17386",
+        "layer": "Trạng thái",
+        "confidence": "cao",
+        "region": "Modal Body Content",
         "owner": null,
         "component": null,
         "variant": null,
@@ -372,10 +423,10 @@
        },
        {
         "term": "Nháp",
-        "figmaId": "6025:210782",
-        "layer": "Nháp",
-        "confidence": "cao",
-        "region": "Meta Summary Section:margin",
+        "figmaId": "1725:17395",
+        "layer": "Nhập mô tả khoá học",
+        "confidence": "thap",
+        "region": "Modal Body Content",
         "owner": null,
         "component": null,
         "variant": null,
@@ -405,15 +456,36 @@
      "spec": "Sau khi ngừng nhập `2 giây`, lọc trong danh mục hiện tại theo keyword khớp một phần với ID, Tên hoặc Mô tả.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010010": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "I2702:46349;1739:32351",
+        "layer": "Tìm nội dung...",
+        "confidence": "thap",
+        "region": "Modal Body Content",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm khoá học...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Tìm kiếm",
       "2 giây"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-dm-010010"
    ]
   },
   {

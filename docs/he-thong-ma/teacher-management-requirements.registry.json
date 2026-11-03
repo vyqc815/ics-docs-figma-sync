@@ -117,9 +117,7 @@
    "dark": "ADM-GV-010001-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "M-TM.A05"
-   ]
+   "regions": []
   },
   "ADM-GV-010010": {
    "id": "ADM-GV-010010",
@@ -184,9 +182,7 @@
    "dark": "ADM-GV-010030-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "M-TM.A05"
-   ]
+   "regions": []
   },
   "ADM-GV-010040": {
    "id": "ADM-GV-010040",
@@ -251,9 +247,7 @@
    "dark": "ADM-GV-010050-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "M-TM.A05"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -1044,10 +1038,7 @@
    "name": "menu-thao-tac-tren-dong-them-lich-hen-th",
    "title": "Menu thao tác trên dòng: Thêm lịch hẹn, Thêm tag và Danh sách lịch hẹn",
    "screens": [
-    "adm-gv-010001",
-    "adm-gv-010030",
-    "adm-gv-010040",
-    "adm-gv-010050"
+    "adm-gv-010040"
    ],
    "screensGuessed": [
     "ADM-GV-010001",
@@ -1069,42 +1060,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-gv-010001": [
-       {
-        "term": "Menu thao tác",
-        "figmaId": "1657:12040",
-        "layer": "ADM-GV-010001 — Danh sách giáo viên / Hover menu thao tác",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       },
-       {
-        "term": "Thêm lịch hẹn",
-        "figmaId": "I3210:31964;2015:31836;3210:31958",
-        "layer": "Chỉnh sửa",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Chỉnh sửa",
-        "component": "DD/Molecule/Menu Item",
-        "variant": {
-         "Meta Text": "12",
-         "Meta": false,
-         "Leading Icon": "2808:45960",
-         "Description Text": "Mô tả phụ",
-         "Label": "Thêm lịch hẹn",
-         "Description": false,
-         "Submenu": false,
-         "Leading": true,
-         "Type": "Default",
-         "State": "Default",
-         "Size": "M"
-        },
-        "inCode": false
-       }
-      ],
       "adm-gv-010040": [
        {
         "term": "Thêm lịch hẹn",
@@ -1125,8 +1080,10 @@
      },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "khop-mot-phan"
+     "missingTerms": [
+      "Menu thao tác"
+     ],
+     "status": "khop"
     },
     {
      "id": "M-TM.A05.02",
@@ -1136,31 +1093,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-gv-010001": [
-       {
-        "term": "Trung Tâm",
-        "figmaId": "4713:129455",
-        "layer": "Dropdown · Trung tâm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Dropdown · Trung tâm",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trung tâm",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ],
       "adm-gv-010040": [
        {
         "term": "Popup Thêm lịch hẹn",
@@ -1194,7 +1126,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "M-TM.A05.03",
@@ -1203,59 +1135,14 @@
      "spec": "Ô `Tìm kiếm...` lọc tag theo tên; các nhóm tag thu gọn / mở rộng (vd `Trạng thái GV`, `Khoá giao tiếp`, `Luyện thi`); chip tag đang gán tô màu theo tag, chưa gán màu xám; `Huỷ` đóng không lưu; `Xác nhận` lưu tập tag đang tick.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-gv-010001": [
-       {
-        "term": "Tìm kiếm...",
-        "figmaId": "I1739:33369;1739:32346",
-        "layer": "Tìm Kiếm Nâng Cao",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm nội dung...",
-         "State": "Search Advanced",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ],
-      "adm-gv-010030": [
-       {
-        "term": "Popup Thêm tag",
-        "figmaId": "1739:30436",
-        "layer": "ADM-GV-010030 — Danh sách giáo viên / Popup thêm tag",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       },
-       {
-        "term": "Tìm kiếm...",
-        "figmaId": "1739:32540",
-        "layer": "Atom/Input",
-        "confidence": "cao",
-        "region": "Atom/Input",
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm kiếm...",
-         "State": "Search",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "khop-mot-phan"
+     "missingTerms": [
+      "Tìm kiếm...",
+      "Popup Thêm tag"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-TM.A05.04",
@@ -1282,39 +1169,20 @@
         },
         "inCode": false
        }
-      ],
-      "adm-gv-010050": [
-       {
-        "term": "Popup Danh sách lịch hẹn",
-        "figmaId": "1877:10069",
-        "layer": "ADM-GV-010050 — Danh sách giáo viên / Popup danh sách lịch hẹn",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       },
-       {
-        "term": "Thời gian",
-        "figmaId": "1877:10075",
-        "layer": "Thời gian",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
       ]
      },
      "relations": [],
      "testcases": [
       "M-TM.TC50"
      ],
-     "missingTerms": [],
-     "status": "khop-mot-phan"
+     "missingTerms": [
+      "Popup Danh sách lịch hẹn"
+     ],
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "adm-gv-010040"
    ]
   },
   {

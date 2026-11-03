@@ -55,14 +55,14 @@ Frame: `ADM-LOP-040710` (tool đoán:ADM-LOP-040710) · Nguồn nội dung: QC
 
 ### `A03` Dropdown trạng thái và xác nhận
 
-Frame: `ADM-LOP-040700` (tool đoán:ADM-LOP-040700) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040712` (tool đoán:ADM-LOP-040700) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | moi |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.02` | da-xac-nhan |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
-| `A03.03` | da-huy |  |  | — |  | `TC12` | Chưa khớp tự động | QC |
-| `A03.04` | da-xoa |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.01` | moi | `DD/Molecule/Trigger` Size=M, State=Open | `2245:107779` DD/Molecule/Trigger | — |  |  | Khớp | QC |
+| `A03.02` | da-xac-nhan | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `I2245:107799;2015:31432;2245:107802` DD/Molecule/Menu Item | — |  | `TC11` | Khớp | QC |
+| `A03.03` | da-huy | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `I2245:107799;2015:31432;2245:107803` DD/Molecule/Menu Item | — |  | `TC12` | Khớp | QC |
+| `A03.04` | da-xoa | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `I2245:107799;2015:31432;2245:107804` DD/Molecule/Menu Item | — |  |  | Khớp | QC |
 
 ### `A04` Xóa khoản KPI
 
@@ -180,7 +180,7 @@ Frame: `ADM-LOP-040700` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (29): `A01.01`, `A01.02`, `A01.09`, `A02.01`, `A02.02`, `A02.03`, `A02.06`, `A02.07`, `A02.08`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`
+- Chưa khớp tự động (25): `A01.01`, `A01.02`, `A01.09`, `A02.01`, `A02.02`, `A02.03`, `A02.06`, `A02.07`, `A02.08`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`
 - Frame Figma chưa có requirement (2): `ADM-LOP-040710`, `ADM-LOP-040712`
 - Thiếu prototype link đi vào (1): `ADM-LOP-040710`
 

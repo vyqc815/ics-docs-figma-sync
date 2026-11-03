@@ -87,7 +87,6 @@
     "CM-IN.A01",
     "CM-IN.A02",
     "CM-IN.A04",
-    "CM-IN.A05",
     "CM-IN.F01"
    ]
   },
@@ -111,7 +110,7 @@
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
-    "CM-IN.A03"
+    "CM-IN.A05"
    ]
   },
   "CD-KH-030110": {
@@ -136,7 +135,10 @@
     "CD-KH-030104"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CM-IN.A03",
+    "CM-IN.A05"
+   ]
   },
   "CD-KH-030120": {
    "id": "CD-KH-030120",
@@ -160,7 +162,10 @@
     "CD-KH-030104"
    ],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CM-IN.A03",
+    "CM-IN.A05"
+   ]
   }
  },
  "regions": [
@@ -484,7 +489,8 @@
    "name": "trang-1-3-popup-kich-hoat-cong-khai-hoc-",
    "title": "Trang 1.3: Popup Kích hoạt công khai học kỳ",
    "screens": [
-    "cd-kh-030104"
+    "cd-kh-030110",
+    "cd-kh-030120"
    ],
    "screensGuessed": [
     "CD-KH-030104"
@@ -502,14 +508,48 @@
      "spec": "`Kích hoạt công khai học kỳ`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030110": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I2527:167869;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030120": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I2527:167413;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Tiêu đề",
       "Kích hoạt công khai học kỳ"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     },
     {
      "id": "CM-IN.A03.02",
@@ -588,27 +628,76 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-030104": [
+      "cd-kh-030110": [
        {
         "term": "Nút",
-        "figmaId": "6006:129340",
-        "layer": "Nút",
+        "figmaId": "2527:167876",
+        "layer": "Popup/Footer",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Footer",
+        "component": "Popup/Footer",
+        "variant": {
+         "Type": "Hai nút"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Huỷ",
+        "figmaId": "I2527:167876;2514:153361",
+        "layer": "Atom/Button",
         "confidence": "cao",
         "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030120": [
+       {
+        "term": "Nút",
+        "figmaId": "2527:167420",
+        "layer": "Popup/Footer",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Footer",
+        "component": "Popup/Footer",
+        "variant": {
+         "Type": "Hai nút"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Huỷ",
+        "figmaId": "I2527:167420;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
         "inCode": false
        }
       ]
      },
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Huỷ"
-     ],
+     "missingTerms": [],
      "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-030110",
+    "cd-kh-030120"
    ]
   },
   {
@@ -633,7 +722,9 @@
    "name": "popup-nhan-ban-hoc-ky",
    "title": "Popup Nhân bản học kỳ",
    "screens": [
-    "cd-kh-030100"
+    "cd-kh-030104",
+    "cd-kh-030110",
+    "cd-kh-030120"
    ],
    "screensGuessed": [
     "CD-KH-030100"
@@ -651,14 +742,48 @@
      "spec": "`Nhân bản học kỳ`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030110": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I2527:167869;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030120": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I2527:167413;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Tiêu đề",
       "Nhân bản học kỳ"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop-mot-phan"
     },
     {
      "id": "CM-IN.A05.02",
@@ -668,10 +793,10 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-030100": [
+      "cd-kh-030104": [
        {
         "term": "Nội dung",
-        "figmaId": "I4915:255632;4901:220701;2245:87904",
+        "figmaId": "I6006:129240;4901:220701;2245:87904",
         "layer": "Icon",
         "confidence": "cao",
         "region": null,
@@ -679,6 +804,39 @@
         "component": "ICON MENU",
         "variant": {
          "ICON MENU": "Nội dung"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030110": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I1496:16200;1739:32505",
+        "layer": "Tìm nội dung...",
+        "confidence": "cao",
+        "region": "Scrollable list of terms",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm...",
+         "State": "Search",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030120": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I2808:43035;2808:43023",
+        "layer": "Kỳ học này hiện có 3 nội dung tổng ôn đã sử dụng.",
+        "confidence": "thap",
+        "region": "Atom/Alert",
+        "owner": "Atom/Alert",
+        "component": "Atom/Alert",
+        "variant": {
+         "Type": "Info"
         },
         "inCode": false
        }
@@ -702,14 +860,85 @@
      "spec": "`Huỷ` — `Nhân bản` (disable + loading trong lúc BE xử lý)",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-030104": [
+       {
+        "term": "Nút",
+        "figmaId": "6006:129340",
+        "layer": "Nút",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-kh-030110": [
+       {
+        "term": "Nút",
+        "figmaId": "2527:167876",
+        "layer": "Popup/Footer",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Footer",
+        "component": "Popup/Footer",
+        "variant": {
+         "Type": "Hai nút"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Huỷ",
+        "figmaId": "I2527:167876;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030120": [
+       {
+        "term": "Nút",
+        "figmaId": "2527:167420",
+        "layer": "Popup/Footer",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Footer",
+        "component": "Popup/Footer",
+        "variant": {
+         "Type": "Hai nút"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Huỷ",
+        "figmaId": "I2527:167420;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Nút",
-      "Huỷ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop"
     },
     {
      "id": "CM-IN.A05.04",
@@ -731,6 +960,11 @@
      ],
      "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-030104",
+    "cd-kh-030110",
+    "cd-kh-030120"
    ]
   },
   {

@@ -52,16 +52,16 @@ Frame: `CD-KH-030100` (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
 
 ### `A03` Trang 1.3: Popup Kích hoạt công khai học kỳ
 
-Frame: `CD-KH-030104` (tool đoán:CD-KH-030104) · Nguồn nội dung: QC
+Frame: `CD-KH-030110`, `CD-KH-030120` (tool đoán:CD-KH-030104) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.01` | tieu-de | `Popup/Header`  | `I2527:167869;2514:153353` Tiêu đề | — |  |  | Khớp | QC |
 | `A03.02` | hien-thi |  |  | — |  | `TC01`, `TC08`, `TC10`, `TC11` | Chưa khớp tự động | QC |
 | `A03.03` | o-id-hoc-ky |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.04` | thong-bao-duoi-o-id |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.05` | luu-y |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.06` | nut |  | `6006:129340` Nút | — |  |  | Khớp | QC |
+| `A03.06` | nut | `Atom/Button` Type=Secondary, Size=Medium; `Popup/Footer` Type=Hai nút | `2527:167876` Popup/Footer; `I2527:167876;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 
 ### `A04` Popup xoá học kỳ
 
@@ -72,13 +72,13 @@ Frame: `CD-KH-030100` (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
 
 ### `A05` Popup Nhân bản học kỳ
 
-Frame: `CD-KH-030100` (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
+Frame: `CD-KH-030104`, `CD-KH-030110`, `CD-KH-030120` (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.02` | noi-dung | `ICON MENU`  | `I4915:255632;4901:220701;2245:87904` Icon | — |  | `TC03`, `TC04`, `TC08` | Khớp | QC |
-| `A05.03` | nut |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.01` | tieu-de | `Popup/Header`  | `I2527:167869;2514:153353` Tiêu đề | — |  |  | Khớp một phần | QC |
+| `A05.02` | noi-dung | `ICON MENU`  | `I6006:129240;4901:220701;2245:87904` Icon | — |  | `TC03`, `TC04`, `TC08` | Khớp | QC |
+| `A05.03` | nut |  | `6006:129340` Nút | — |  |  | Khớp | QC |
 | `A05.04` | toast |  |  | — |  | `TC04`, `TC06`, `TC16` | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
@@ -152,7 +152,7 @@ Frame: `CD-KH-030100` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (11): `A02.01`, `A02.07`, `A02.08`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A05.01`, `A05.03`, `A05.04`
+- Chưa khớp tự động (8): `A02.01`, `A02.07`, `A02.08`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A05.04`
 - Frame Figma chưa có requirement (3): `CD-KH-030104`, `CD-KH-030110`, `CD-KH-030120`
 - Phân loại cần design duyệt (1): `CD-KH-030104`
 - Thiếu prototype link đi vào (1): `CD-KH-030104`

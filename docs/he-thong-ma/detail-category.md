@@ -40,17 +40,17 @@ Frame: `CD-DM-010000` (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
 
 ### `A02` Tab Tổng quan
 
-Frame: `CD-DM-010060` (tool đoán:CD-DM-010060) · Nguồn nội dung: QC
+Frame: `CD-DM-010010` (tool đoán:CD-DM-010060) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | id |  |  | — | governed-by `REQ06` |  | Chưa khớp tự động | QC |
-| `A02.02` | ten-khoa-hoc |  | `6025:210757` Tên khoá học | — |  |  | Khớp | QC |
-| `A02.03` | mo-ta-khoa-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.04` | cap-do |  |  | — |  | `TC01`, `TC03`, `TC12` | Chưa khớp tự động | QC |
-| `A02.05` | so-ky |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.06` | trang-thai |  | `6025:210789` Sau khi xác nhận, danh mục sẽ chuyển sang trạng thái Công khai và không được chỉnh sửa ID này; `6025:210782` Nháp | — | governed-by `REQ05` | `TC01`, `TC05`, `TC07` | Khớp | QC |
-| `A02.07` | tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.01` | id |  | `1725:17376` ID | — | governed-by `REQ06` |  | Khớp | QC |
+| `A02.02` | ten-khoa-hoc |  | `1725:17378` Tên khoá học | — |  |  | Khớp | QC |
+| `A02.03` | mo-ta-khoa-hoc |  | `1725:17380` Mô tả khoá học | — |  |  | Khớp | QC |
+| `A02.04` | cap-do |  | `1725:17384` Cấp độ | — |  | `TC01`, `TC03`, `TC12` | Khớp | QC |
+| `A02.05` | so-ky |  | `1725:17382` Số kỳ | — |  |  | Khớp | QC |
+| `A02.06` | trang-thai |  | `1725:17386` Trạng thái; `1725:17395` Nhập mô tả khoá học | — | governed-by `REQ05` | `TC01`, `TC05`, `TC07` | Khớp | QC |
+| `A02.07` | tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `I2702:46349;1739:32351` Tìm nội dung... | — |  |  | Khớp | QC |
 
 ### `A03` Tab Mindset, Tiêu chuẩn giáo trình và Hướng dẫn giảng dạy
 
@@ -136,7 +136,7 @@ Frame: `CD-DM-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (8): `A02.01`, `A02.03`, `A02.04`, `A02.05`, `A02.07`, `A03.02`, `A03.03`, `A03.04`
+- Chưa khớp tự động (3): `A03.02`, `A03.03`, `A03.04`
 - Frame Figma chưa có requirement (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Thiếu prototype link đi vào (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Phân loại cần design duyệt (3): `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`

@@ -151,16 +151,16 @@ Frame: `CD-KH-060120`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-06
 
 ### `A07` Import / Export Excel
 
-Frame: `CD-KH-030340`, `CD-KH-060140`, `CD-KH-060141` (tool đoán:CD-KH-060140, CD-KH-060141) · Nguồn nội dung: QC
+Frame: `CD-KH-030340` (tool đoán:CD-KH-060140, CD-KH-060141) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | cot-file |  | `5491:357722` STT | — |  |  | Khớp một phần | QC |
-| `A07.02` | export | `Atom/Button` Type=Outlined, Size=Small | `I5491:357675;1430:10764` Button | — |  | `TC22`, `TC26` | Khớp một phần | QC |
-| `A07.03` | import-dong-bat-buoc |  | `5491:357722` STT | — |  |  | Khớp một phần | QC |
-| `A07.04` | import-loi-du-lieu |  | `5672:75289` Dòng 5: thiếu Loại câu | — |  |  | Khớp một phần | QC |
+| `A07.01` | cot-file |  | `5491:357722` STT | — |  |  | Khớp | QC |
+| `A07.02` | export | `Atom/Button` Type=Outlined, Size=Small | `I5491:357675;1430:10764` Button | — |  | `TC22`, `TC26` | Khớp | QC |
+| `A07.03` | import-dong-bat-buoc |  | `5491:357722` STT | — |  |  | Khớp | QC |
+| `A07.04` | import-loi-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.05` | import-cau-trung |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A07.06` | import-thanh-cong |  | `5491:357722` STT | — |  |  | Khớp một phần | QC |
+| `A07.06` | import-thanh-cong |  | `5491:357722` STT | — |  |  | Khớp | QC |
 
 ### `A08` Soát lỗi bằng AI
 
@@ -197,15 +197,15 @@ Frame: `CD-KH-030344`, `CD-KH-030346` · Nguồn nội dung: QC
 
 ### `A11` Generate — Bảng N dòng
 
-Frame: `CD-KH-030343`, `CD-KH-030345` · Nguồn nội dung: QC
+Frame: `CD-KH-030343` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A11.01` | dong-tom-tat |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A11.02` | cot | `DD/Molecule/Trigger` Size=S, State=Default | `5491:358961` STT; `5491:358963` Prompt | — |  |  | Khớp một phần | QC |
+| `A11.02` | cot | `DD/Molecule/Trigger` Size=S, State=Default | `5491:358961` STT; `5491:358963` Prompt | — |  |  | Khớp | QC |
 | `A11.03` | thanh-chon |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A11.04` | them-n-cau-da-chon |  |  | — |  | `TC37` | Chưa khớp tự động | QC |
-| `A11.05` | huy-nut | `Atom/Button` Type=Outlined, Size=Small | `5491:358909` Atom/Button | — | opens `A11` |  | Khớp một phần | QC |
+| `A11.05` | huy-nut | `Atom/Button` Type=Outlined, Size=Small | `5491:358909` Atom/Button | — | opens `A11` |  | Khớp | QC |
 
 ### `A12` Generate — Sau khi tạo
 
@@ -219,13 +219,13 @@ Frame: `CD-KH-030347` · Nguồn nội dung: QC
 
 ### `A13` Toast phản hồi CRUD
 
-Frame: `CD-KH-030340`, `CD-KH-060100`, `CD-KH-060200` (tool đoán:CD-KH-030340, CD-KH-060100, CD-KH-060200) · Nguồn nội dung: QC
+Frame: `CD-KH-030347` (tool đoán:CD-KH-030340, CD-KH-060100, CD-KH-060200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A13.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa khớp tự động | QC |
+| `A13.01` | thanh-cong | `Atom/Toast` Type=Success | `I5609:34554;2167:28343` Title; `I5609:34554;2167:28343` Title | — |  | `TTC01` | Khớp | QC |
 | `A13.02` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A13.03` | loi |  | `5491:357786` Nghe và chọn câu trả lời đúng | — |  |  | Khớp | QC |
+| `A13.03` | loi |  | `5609:34083` Đọc đoạn văn và trả lời 3 câu | — |  |  | Khớp | QC |
 
 ### `F01` (ngoài Body)
 
@@ -331,7 +331,7 @@ Frame: `CD-KH-030340` · Nguồn nội dung: Figma
 - `A07` Khác Figma: nút Import / Export mới có ở CD-KH-030340; chưa có popup kết quả import.
 - `A09` Khác Figma CD-KH-030341 / 030342: dòng phụ dưới `Số câu` ghi `Tối đa 50 câu mỗi lần`; requirement không giới hạn.
 - `A12` Khác Figma CD-KH-030347: tag câu mới ghi `Mới`; requirement dùng tag `AI`.
-- Chưa khớp tự động (16): `A01.04`, `A01.05`, `A03.04`, `A03.09`, `A07.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A11.01`, `A11.03`, `A11.04`, `A12.02`, `A12.03`, `A13.01`, `A13.02`
+- Chưa khớp tự động (16): `A01.04`, `A01.05`, `A03.04`, `A03.09`, `A07.04`, `A07.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A11.01`, `A11.03`, `A11.04`, `A12.02`, `A12.03`, `A13.02`
 - Requirement ghi thiếu, Figma đã có (6): `A02.03`, `A06.12`, `A06.13`, `A06.14`, `A06.15`, `A06.16`
 - Phân loại cần design duyệt (4): `CD-KH-030343`, `CD-KH-030347`, `CD-KH-060130`, `CD-KH-060160`
 - Thiếu prototype link đi vào (8): `CD-KH-030346`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060130`, `CD-KH-060140`

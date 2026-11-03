@@ -144,9 +144,7 @@
     "CD-KH-030250"
    ],
    "citedByRequirement": false,
-   "regions": [
-    "CM-LE.A02"
-   ]
+   "regions": []
   },
   "CD-KH-030211": {
    "id": "CD-KH-030211",
@@ -195,9 +193,7 @@
     "CD-KH-030250"
    ],
    "citedByRequirement": false,
-   "regions": [
-    "CM-LE.A02"
-   ]
+   "regions": []
   },
   "CD-KH-030231": {
    "id": "CD-KH-030231",
@@ -244,9 +240,7 @@
     "CD-KH-030250"
    ],
    "citedByRequirement": false,
-   "regions": [
-    "CM-LE.A02"
-   ]
+   "regions": []
   },
   "CD-KH-030241": {
    "id": "CD-KH-030241",
@@ -333,6 +327,7 @@
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
+    "CM-LE.A02",
     "CM-LE.A05"
    ]
   },
@@ -356,6 +351,7 @@
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
+    "CM-LE.A02",
     "CM-LE.A06"
    ]
   },
@@ -378,7 +374,9 @@
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "CM-LE.A02"
+   ]
   },
   "CD-KH-030247": {
    "id": "CD-KH-030247",
@@ -400,6 +398,7 @@
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
+    "CM-LE.A02",
     "CM-LE.A05"
    ]
   },
@@ -427,9 +426,7 @@
     "CD-KH-030240"
    ],
    "citedByRequirement": false,
-   "regions": [
-    "CM-LE.A02"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -455,10 +452,10 @@
    "name": "popup-chi-tiet-bai-hoc-tab-thong-tin",
    "title": "Popup: Chi tiết bài học - Tab Thông tin",
    "screens": [
-    "cd-kh-030210",
-    "cd-kh-030230",
-    "cd-kh-030240",
-    "cd-kh-030250"
+    "cd-kh-030244",
+    "cd-kh-030245",
+    "cd-kh-030246",
+    "cd-kh-030247"
    ],
    "screensGuessed": [
     "CD-KH-030210",
@@ -480,17 +477,70 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-030210": [
+      "cd-kh-030244": [
        {
         "term": "Tiêu đề",
-        "figmaId": "I2911:43802;2808:48144",
-        "layer": "Liner Icon",
-        "confidence": "thap",
-        "region": "Main - ModalBody",
-        "owner": "Liner Icon",
-        "component": "Liner Icon",
+        "figmaId": "I7193:403632;2514:153340",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
         "variant": {
-         "Property 1": "TTiêu đề"
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030245": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I7193:403963;2514:153340",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030246": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I7193:404274;2514:153340",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-030247": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I7193:404535;2514:153340",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
         },
         "inCode": false
        }
@@ -501,7 +551,7 @@
      "missingTerms": [
       "Bỏ thay đổi"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "CM-LE.A02.02",
@@ -511,62 +561,74 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "cd-kh-030210": [
+      "cd-kh-030244": [
        {
         "term": "Nội dung",
-        "figmaId": "I1076:4995;868:21213",
-        "layer": "Liner Icon",
+        "figmaId": "I7193:403897;2808:42278",
+        "layer": "Tìm nội dung...",
         "confidence": "cao",
-        "region": "ModalHeader",
-        "owner": "Liner Icon",
-        "component": "Liner Icon",
+        "region": "3 cột · Loại | Cụm | Mục",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
         "variant": {
-         "Property 1": "Nội dung"
+         "Loại": "Gift code",
+         "Text": "Tìm trong cụm 02. Học tập…",
+         "State": "Search",
+         "Kiểu": "S"
         },
         "inCode": false
        }
       ],
-      "cd-kh-030230": [
+      "cd-kh-030245": [
        {
         "term": "Nội dung",
-        "figmaId": "I1073:4390;868:21213",
-        "layer": "Liner Icon",
+        "figmaId": "I7193:404214;2808:42278",
+        "layer": "Tìm nội dung...",
         "confidence": "cao",
-        "region": "ModalHeader",
-        "owner": "Liner Icon",
-        "component": "Liner Icon",
+        "region": "3 cột · Loại | Cụm | Mục",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
         "variant": {
-         "Property 1": "Nội dung"
+         "Loại": "Gift code",
+         "Text": "Tìm bài kỹ năng…",
+         "State": "Search",
+         "Kiểu": "S"
         },
         "inCode": false
        }
       ],
-      "cd-kh-030240": [
+      "cd-kh-030246": [
        {
         "term": "Nội dung",
-        "figmaId": "I1076:6326;868:21213",
-        "layer": "Liner Icon",
+        "figmaId": "I7193:404517;2808:42278",
+        "layer": "Tìm nội dung...",
         "confidence": "cao",
-        "region": "ModalHeader",
-        "owner": "Liner Icon",
-        "component": "Liner Icon",
+        "region": "3 cột · Loại | Cụm | Mục",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
         "variant": {
-         "Property 1": "Nội dung"
+         "Loại": "Gift code",
+         "Text": "Tìm bài kỹ năng…",
+         "State": "Search",
+         "Kiểu": "S"
         },
         "inCode": false
        }
       ],
-      "cd-kh-030250": [
+      "cd-kh-030247": [
        {
         "term": "Nội dung",
-        "figmaId": "I2808:52038;868:21207",
-        "layer": "Liner Icon",
+        "figmaId": "I7193:404787;2808:42278",
+        "layer": "Tìm nội dung...",
         "confidence": "cao",
-        "region": "Nội dung chính",
-        "owner": "Liner Icon",
-        "component": "Liner Icon",
+        "region": "3 cột · Loại | Cụm | Mục",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
         "variant": {
-         "Property 1": "Nội dung"
+         "Loại": "Gift code",
+         "Text": "Tìm trong cụm 05. Ở nhà hàng…",
+         "State": "Search",
+         "Kiểu": "S"
         },
         "inCode": false
        }
@@ -586,75 +648,21 @@
      "spec": "`Ở lại`, `Bỏ thay đổi`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030210": [
-       {
-        "term": "Nút",
-        "figmaId": "2527:167888",
-        "layer": "Popup/Footer",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Popup/Footer",
-        "component": "Popup/Footer",
-        "variant": {
-         "Type": "Hai nút"
-        },
-        "inCode": false
-       }
-      ],
-      "cd-kh-030230": [
-       {
-        "term": "Nút",
-        "figmaId": "2527:167900",
-        "layer": "Popup/Footer",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Popup/Footer",
-        "component": "Popup/Footer",
-        "variant": {
-         "Type": "Hai nút"
-        },
-        "inCode": false
-       }
-      ],
-      "cd-kh-030240": [
-       {
-        "term": "Nút",
-        "figmaId": "2527:167912",
-        "layer": "Popup/Footer",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Popup/Footer",
-        "component": "Popup/Footer",
-        "variant": {
-         "Type": "Hai nút"
-        },
-        "inCode": false
-       }
-      ],
-      "cd-kh-030250": [
-       {
-        "term": "Nút",
-        "figmaId": "2808:52098",
-        "layer": "Popup/Footer",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Popup/Footer",
-        "component": "Popup/Footer",
-        "variant": {
-         "Type": "Một nút"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Ở lại"
+      "Ở lại",
+      "Nút"
      ],
-     "status": "khop"
+     "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "cd-kh-030244",
+    "cd-kh-030245",
+    "cd-kh-030246",
+    "cd-kh-030247"
    ]
   },
   {

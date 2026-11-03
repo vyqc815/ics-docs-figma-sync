@@ -70,14 +70,14 @@ Frame: `ADM-LOP-040200` (tool đoán:ADM-LOP-040200) · Nguồn nội dung: QC
 
 ### `A04` Popup Chọn học viên có sẵn
 
-Frame: `ADM-LOP-040200` (tool đoán:ADM-LOP-040200) · Nguồn nội dung: QC
+Frame: `ADM-LOP-040230` (tool đoán:ADM-LOP-040200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A04.01` | tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.02` | chon-lop-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.03` | danh-sach |  | `2384:54608` Danh sách học viên | — |  | `TC13`, `TC14`, `TC16` | Khớp | QC |
-| `A04.04` | huy |  | `2384:54471` Đang sinh sống và làm việc tại Thâm Quyến, Trung Quốc. Đã tốt nghiệp cử nhân chuyên ngành Trung Quốc học, khoa Đông phương học, trường Đại học Khoa học Xã hội và Nhân văn TP.HCM, chứng chỉ HSK6. | — |  |  | Khớp | QC |
+| `A04.03` | danh-sach |  |  | — |  | `TC13`, `TC14`, `TC16` | Chưa khớp tự động | QC |
+| `A04.04` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167815;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 | `A04.05` | them-moi |  |  | — |  | `TC14` | Chưa khớp tự động | QC |
 
 ### `A05` Form Tạo học viên mới
@@ -277,7 +277,7 @@ Frame: `ADM-LOP-040200` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (29): `A01.02`, `A01.03`, `A01.09`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A04.01`, `A04.02`, `A04.05`, `A05.01`, `A05.03`, `A05.04`, `A05.05`, `A06.01`, `A06.02`, `A06.03`, `A07.05`, `A07.09`, `A07.10`, `A08.05`, `A09.01`, `A10.01`, `A10.03`, `A10.04`
+- Chưa khớp tự động (30): `A01.02`, `A01.03`, `A01.09`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A04.01`, `A04.02`, `A04.03`, `A04.05`, `A05.01`, `A05.03`, `A05.04`, `A05.05`, `A06.01`, `A06.02`, `A06.03`, `A07.05`, `A07.09`, `A07.10`, `A08.05`, `A09.01`, `A10.01`, `A10.03`, `A10.04`
 - Frame Figma chưa có requirement (3): `ADM-LOP-040210`, `ADM-LOP-040220`, `ADM-LOP-040230`
 - Thiếu prototype link đi vào (3): `ADM-LOP-040210`, `ADM-LOP-040220`, `ADM-LOP-040230`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`

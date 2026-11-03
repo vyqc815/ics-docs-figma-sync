@@ -101,9 +101,7 @@
    "dark": "ADM-LGV-020010-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "TR-HAS.A04"
-   ]
+   "regions": []
   },
   "GV-LS-010000": {
    "id": "GV-LS-010000",
@@ -231,7 +229,6 @@
    ],
    "citedByRequirement": true,
    "regions": [
-    "TR-HAS.A06",
     "TR-HAS.F01",
     "TR-HAS.F02"
    ]
@@ -1427,7 +1424,6 @@
    "name": "popup-de-xuat-tang-luong",
    "title": "Popup Đề xuất tăng lương",
    "screens": [
-    "adm-lgv-020010",
     "gv-ls-010010",
     "gv-ls-010012"
    ],
@@ -1491,23 +1487,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-lgv-020010": [
-       {
-        "term": "Tiêu đề",
-        "figmaId": "I4899:118051;2514:153340",
-        "layer": "Tiêu đề",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Popup/Header",
-        "component": "Popup/Header",
-        "variant": {
-         "Close": "Yes",
-         "Description": "Yes",
-         "Icon": "No"
-        },
-        "inCode": false
-       }
-      ],
       "gv-ls-010010": [
        {
         "term": "Tiêu đề",
@@ -1586,24 +1565,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-lgv-020010": [
-       {
-        "term": "Lương buổi dạy hiện tại",
-        "figmaId": "I4899:118067;3004:58620",
-        "layer": "Atom/Label",
-        "confidence": "cao",
-        "region": "Lương",
-        "owner": "Atom/Label",
-        "component": "Atom/Label",
-        "variant": {
-         "Required": false,
-         "Icon": "2925:24887",
-         "Label": "Lương buổi dạy hiện tại",
-         "Có icon": "Yes"
-        },
-        "inCode": false
-       }
-      ],
       "gv-ls-010010": [
        {
         "term": "Lương buổi dạy hiện tại",
@@ -1694,7 +1655,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A04.09",
@@ -1704,19 +1665,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-lgv-020010": [
-       {
-        "term": "Lý do đề xuất",
-        "figmaId": "4899:118069",
-        "layer": "Lý do đề xuất",
-        "confidence": "cao",
-        "region": "Lý do đề xuất",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
       "gv-ls-010010": [
        {
         "term": "Lý do đề xuất",
@@ -1782,21 +1730,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-lgv-020010": [
-       {
-        "term": "Lý do khác",
-        "figmaId": "I4899:118075;2808:48144",
-        "layer": "Liner Icon",
-        "confidence": "cao",
-        "region": "Field · Ghi chú phản hồi",
-        "owner": "Liner Icon",
-        "component": "Liner Icon",
-        "variant": {
-         "Property 1": "Lý do khác"
-        },
-        "inCode": false
-       }
-      ],
       "gv-ls-010010": [
        {
         "term": "Lý do khác",
@@ -1847,22 +1780,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-lgv-020010": [
-       {
-        "term": "VND",
-        "figmaId": "I4899:118073;3004:58628;3004:60386",
-        "layer": "Đơn vị tiền",
-        "confidence": "cao",
-        "region": "Molecule/Field",
-        "owner": "Đơn vị tiền",
-        "component": "Atom/Nút đơn vị tiền",
-        "variant": {
-         "Đơn vị": "VND",
-         "State": "Mặc định"
-        },
-        "inCode": false
-       }
-      ],
       "gv-ls-010010": [
        {
         "term": "VND",
@@ -1953,7 +1870,7 @@
      "missingTerms": [
       "Khối trùng / dropdown không nhãn"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A04.14",
@@ -2001,7 +1918,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A04.15",
@@ -2057,8 +1974,12 @@
       "TR-HAS.TC15a"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "gv-ls-010010",
+    "gv-ls-010012"
    ]
   },
   {
@@ -2208,7 +2129,6 @@
    "name": "trang-thai-de-xuat-va-huy-de-xuat",
    "title": "Trạng thái đề xuất và hủy đề xuất",
    "screens": [
-    "gv-ls-010011",
     "gv-ls-010014",
     "gv-ls-010016"
    ],
@@ -2242,21 +2162,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "gv-ls-010011": [
-       {
-        "term": "Mới",
-        "figmaId": "4760:16947",
-        "layer": "CLass Status",
-        "confidence": "thap",
-        "region": null,
-        "owner": "CLass Status",
-        "component": "CLass Status",
-        "variant": {
-         "Property 1": "Mới tạo"
-        },
-        "inCode": false
-       }
-      ],
       "gv-ls-010014": [
        {
         "term": "Mới",
@@ -2299,31 +2204,16 @@
      "spec": "Banner vàng/cam với mức và ngày gửi; không có nút hủy. Gọi request hủy trực tiếp vẫn phải bị từ chối.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ls-010011": [
-       {
-        "term": "Đang xử lý",
-        "figmaId": "4899:105946",
-        "layer": "Trạng thái đề xuất",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Trạng thái đề xuất",
-        "component": "Molecule/Trạng thái đề xuất tăng lương",
-        "variant": {
-         "Chi tiết": "· 240.000 đ → 280.000 đ · Gửi 12.10.2026",
-         "Trạng thái": "Đang xử lý"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "TR-HAS.TC25",
       "TR-HAS.TC26a"
      ],
-     "missingTerms": [],
-     "status": "khop-mot-phan"
+     "missingTerms": [
+      "Đang xử lý"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-HAS.A06.04",
@@ -2338,8 +2228,8 @@
       "TR-HAS.TC26"
      ],
      "missingTerms": [
-      "Đã duyệt",
-      "Từ chối"
+      "Từ chối",
+      "Đã duyệt"
      ],
      "status": "chua-thay-tren-figma"
     },
@@ -2471,7 +2361,7 @@
       "TR-HAS.TC21"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A06.10",
@@ -2488,6 +2378,10 @@
      ],
      "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "gv-ls-010014",
+    "gv-ls-010016"
    ]
   },
   {
@@ -3227,6 +3121,36 @@
          "Label": "Mới",
          "Variant": "Info",
          "Dropdown": "Off"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "TR-HAS.F02.14",
+     "name": "trang-thai-de-xuat",
+     "label": "Trạng thái đề xuất",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "gv-ls-010011": [
+       {
+        "term": "Trạng thái đề xuất",
+        "figmaId": "4899:105946",
+        "layer": "Trạng thái đề xuất",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trạng thái đề xuất",
+        "component": "Molecule/Trạng thái đề xuất tăng lương",
+        "variant": {
+         "Chi tiết": "· 240.000 đ → 280.000 đ · Gửi 12.10.2026",
+         "Trạng thái": "Đang xử lý"
         },
         "inCode": false
        }

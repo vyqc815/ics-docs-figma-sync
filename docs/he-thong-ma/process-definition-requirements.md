@@ -63,53 +63,53 @@ Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-02000
 
 ### `A03` Trang 1b: Xóa quy trình
 
-Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
+Frame: `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A03.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.02` | noi-dung | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `I2702:35217;1739:32351` Tìm nội dung... | — |  |  | Khớp | QC |
-| `A03.03` | huy-xoa | `Atom/Input` State=Filled, Kiểu=Chuẩn | `I2702:35911;1048:1266` Đã nhập xong; `3058:120687` Nút xoá | — |  |  | Khớp một phần | QC |
+| `A03.02` | noi-dung | `Atom/Input` State=Default, Kiểu=Chuẩn | `I2702:47869;1048:1264` Tìm nội dung... | — |  |  | Khớp | QC |
+| `A03.03` | huy-xoa | `Atom/Input` State=Filled, Kiểu=Chuẩn | `I2702:35911;1048:1266` Đã nhập xong; `3058:120687` Nút xoá | — |  |  | Khớp | QC |
 
 ### `A04` Trang 2: Chi tiết loại quy trình
 
-Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
+Frame: `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A04.01` | quay-lai |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.02` | danh-sach-package |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.03` | them-moi-package | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `2706:35135` Add New Bar · Thêm mới | — |  |  | Khớp một phần | QC |
-| `A04.04` | category | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2702:48139` Add New Bar · Nhập danh mục mới | — |  | `TC05`, `TC06` | Khớp một phần | QC |
-| `A04.05` | action-item | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `3108:122528` Add New Bar · Nhập nội dung mới | — |  | `TC05` | Khớp | QC |
-| `A04.06` | keo-tha | `Atom/Dropzone` Kiểu=Mặc định | `I2702:47717;1061:1316` Kéo thả file vào đây hoặc chọn file | — |  | `TC07` | Khớp một phần | QC |
+| `A04.03` | them-moi-package | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `2706:35135` Add New Bar · Thêm mới | — |  |  | Khớp | QC |
+| `A04.04` | category | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2702:48139` Add New Bar · Nhập danh mục mới | — |  | `TC05`, `TC06` | Khớp | QC |
+| `A04.05` | action-item | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2702:48146` Add New Bar · Nhập nội dung mới | — |  | `TC05` | Khớp | QC |
+| `A04.06` | keo-tha | `Atom/Dropzone` Kiểu=Mặc định | `I2702:47717;1061:1316` Kéo thả file vào đây hoặc chọn file | — |  | `TC07` | Khớp | QC |
 | `A04.07` | toggle-package |  |  | — |  | `TC07` | Chưa khớp tự động | QC |
 
 ### `A05` Dropdown Loại task và field cấu hình
 
-Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
+Frame: `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | huong-dan | `Atom/Badge Type` Size=M; `Atom/Uploaded File Card` Type=Close | `2702:47701` Atom/Badge Type; `I2702:47724;1061:1321` MP4 | — |  | `TC09` | Khớp một phần | QC |
-| `A05.02` | task-tien-trinh | `Atom/Badge Type` Size=M | `2702:47753` Atom/Badge Type | — |  |  | Khớp một phần | QC |
-| `A05.03` | task-nhap-lieu | `Atom/Badge Type` Size=M | `2702:47775` Atom/Badge Type | — |  |  | Khớp một phần | QC |
-| `A05.04` | kiem-tra |  | `2702:35855` Quy trình kiểm tra | — |  |  | Khớp | QC |
-| `A05.05` | danh-gia |  | `2702:35882` Quy trình đánh giá | — |  |  | Khớp | QC |
-| `A05.06` | media | `Atom/Badge Type` Size=M; `Atom/Uploaded File Card` Type=Close | `2702:47851` Atom/Badge Type; `I2702:47881;1061:1321` MP4 | — |  | `TC09` | Khớp một phần | QC |
-| `A05.07` | deadline | `Atom/Badge Type` Size=M; `Atom/Input` State=CChọn, Kiểu=Chuẩn | `2702:47900` Atom/Badge Type; `I2711:53799;2148:20906` Chọn | — |  |  | Khớp một phần | QC |
-| `A05.08` | xac-thuc | `Atom/Badge Type` Size=M; `Atom/Input` State=CChọn, Kiểu=Chuẩn | `2702:47941` Atom/Badge Type; `I2711:53812;2148:20906` Chọn | — |  |  | Khớp một phần | QC |
-| `A05.09` | log | `LOGO CENTER`  | `I4915:239029;4915:214021` LOGO CENTER | — |  |  | Khớp | QC |
+| `A05.01` | huong-dan | `Atom/Badge Type` Size=M; `Atom/Uploaded File Card` Type=Close | `2702:47701` Atom/Badge Type; `I2702:47724;1061:1321` MP4 | — |  | `TC09` | Khớp | QC |
+| `A05.02` | task-tien-trinh | `Atom/Badge Type` Size=M | `2702:47753` Atom/Badge Type | — |  |  | Khớp | QC |
+| `A05.03` | task-nhap-lieu | `Atom/Badge Type` Size=M | `2702:47775` Atom/Badge Type | — |  |  | Khớp | QC |
+| `A05.04` | kiem-tra | `Atom/Badge Type` Size=M | `2702:47798` Atom/Badge Type | — |  |  | Khớp | QC |
+| `A05.05` | danh-gia | `Atom/Badge Type` Size=M; `Atom/Input` State=CChọn, Kiểu=Chuẩn | `2702:47821` Atom/Badge Type; `2702:47838` Atom/Input | — |  |  | Khớp | QC |
+| `A05.06` | media | `Atom/Badge Type` Size=M; `Atom/Uploaded File Card` Type=Close | `2702:47851` Atom/Badge Type; `I2702:47881;1061:1321` MP4 | — |  | `TC09` | Khớp | QC |
+| `A05.07` | deadline | `Atom/Badge Type` Size=M; `Atom/Input` State=CChọn, Kiểu=Chuẩn | `2702:47900` Atom/Badge Type; `I2711:53799;2148:20906` Chọn | — |  |  | Khớp | QC |
+| `A05.08` | xac-thuc | `Atom/Badge Type` Size=M; `Atom/Input` State=CChọn, Kiểu=Chuẩn | `2702:47941` Atom/Badge Type; `I2711:53812;2148:20906` Chọn | — |  |  | Khớp | QC |
+| `A05.09` | log | `Atom/Badge Type` Size=M; `Atom/Input` State=CChọn, Kiểu=Chuẩn | `2702:47976` Atom/Badge Type; `I2711:53824;2148:20906` Chọn | — |  |  | Khớp | QC |
 
 ### `A06` Sử dụng nguồn trong lớp
 
-Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
+Frame: `ADM-QT-010000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A06.01` | noi-dung-da-them |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A06.02` | result |  |  | — |  | `TC10` | Chưa khớp tự động | QC |
-| `A06.03` | tab-trong-lop | `Atom/Badge`  | `I6823:374912;2015:30345` Badge | — |  |  | Khớp một phần | QC |
+| `A06.03` | tab-trong-lop | `Atom/Badge`  | `I6823:374912;2015:30345` Badge | — |  |  | Khớp | QC |
 | `A06.04` | quy-trinh-cua-phu-trach-lop |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A07` Toast phản hồi CRUD
@@ -134,14 +134,15 @@ Frame: `ADM-QT-010000`, `ADM-QT-020000` · Nguồn nội dung: Figma
 | `F01.03` | atom-badge | `Atom/Badge`  | `6823:374912` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
 | `F01.04` | avatar-name | `AVATAR + Name`  | `2702:35730` AVATAR + Name | — |  |  | Chỉ có trên Figma | Figma |
 | `F01.05` | atom-status | `Atom/Status` Size=M | `2702:48937` Atom/Status | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | phan-trang |  | `2702:35460` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:239029` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | account | `ACCOUNT` Size=Default | `2683:210310` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | atom-icon-button | `Atom/Icon Button`  | `2706:40371` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | mouse-click |  | `2706:40378` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | atom-dropzone | `Atom/Dropzone` Kiểu=Mặc định | `2702:47717` Atom/Dropzone | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.12` | atom-uploaded-file-card | `Atom/Uploaded File Card` Type=Close | `2702:47724` Atom/Uploaded File Card | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.13` | switch | `Switch` Size=Small | `2706:35142` Switch | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.06` | add-new-bar-nhap-noi-dung-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `3108:122528` Add New Bar · Nhập nội dung mới | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.07` | phan-trang |  | `2702:35460` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.08` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:239029` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.09` | account | `ACCOUNT` Size=Default | `2683:210310` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.10` | atom-icon-button | `Atom/Icon Button`  | `2706:40371` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.11` | mouse-click |  | `2706:40378` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.12` | atom-dropzone | `Atom/Dropzone` Kiểu=Mặc định | `2702:47717` Atom/Dropzone | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.13` | atom-uploaded-file-card | `Atom/Uploaded File Card` Type=Close | `2702:47724` Atom/Uploaded File Card | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.14` | switch | `Switch` Size=Small | `2706:35142` Switch | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 

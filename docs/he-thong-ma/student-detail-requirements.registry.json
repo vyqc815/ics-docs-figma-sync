@@ -137,6 +137,7 @@
    "openedFrom": [],
    "citedByRequirement": true,
    "regions": [
+    "M-SD.A02",
     "M-SD.F01"
    ]
   },
@@ -301,7 +302,9 @@
    "id": "M-SD.A02",
    "name": "trang-1-chi-tiet-hoc-vien-thong-tin-ca-n",
    "title": "Trang 1: Chi tiết học viên — Thông tin cá nhân",
-   "screens": [],
+   "screens": [
+    "adm-hv-020100"
+   ],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -323,8 +326,11 @@
       "M-SD.TC05",
       "M-SD.TC10"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Ảnh đại diện",
+      "25 MB"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-SD.A02.02",
@@ -333,13 +339,27 @@
      "spec": "Có | Có | Hiển thị họ tên hiện tại; không được để trống hoặc chỉ chứa khoảng trắng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-020100": [
+       {
+        "term": "Họ và tên",
+        "figmaId": "1648:11807",
+        "layer": "Họ và tên",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SD.TC02"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-SD.A02.03",
@@ -348,14 +368,28 @@
      "spec": "Có | Có | Hiển thị ngày sinh hiện tại và cho phép chọn lại ngày.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-020100": [
+       {
+        "term": "Ngày sinh",
+        "figmaId": "1648:11797",
+        "layer": "Ngày sinh",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SD.TC01",
       "M-SD.TC02"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-SD.A02.04",
@@ -364,14 +398,39 @@
      "spec": "Có | Có | Hiển thị giá trị hiện tại và cho phép chọn `Nam`, `Nữ` hoặc `Không xác định`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-020100": [
+       {
+        "term": "Giới tính",
+        "figmaId": "1648:11788",
+        "layer": "Giới tính",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Nam",
+        "figmaId": "1648:11741",
+        "layer": "Heading 3 - Teacher Name & Code",
+        "confidence": "thap",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SD.TC01",
       "M-SD.TC02"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-SD.A02.05",
@@ -380,7 +439,32 @@
      "spec": "Có | Không | Chính là `Code` 6 chữ số được hệ thống sinh tăng dần theo cấp độ 1..9 tại [Thêm học viên](./student_management_requirements.md#dropdown-chọn-cấp-độ-và-code-học-viên), ví dụ Cấp độ 1 bắt đầu từ 100000. Field luôn ở trạng thái chỉ đọc; không được sinh lại hoặc thay đổi khi cập nhật chi tiết.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-020100": [
+       {
+        "term": "Mã người dùng",
+        "figmaId": "1648:11767",
+        "layer": "Mã người dùng",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Code",
+        "figmaId": "1648:11741",
+        "layer": "Heading 3 - Teacher Name & Code",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SD.TC01",
@@ -388,7 +472,7 @@
       "M-SD.TC03"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-SD.A02.06",
@@ -397,14 +481,28 @@
      "spec": "Có | Có | Cho phép thay đổi; số điện thoại phải đúng định dạng theo case tạo học viên và được phép trùng với học viên khác.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-020100": [
+       {
+        "term": "Số điện thoại",
+        "figmaId": "1648:11813",
+        "layer": "Số điện thoại",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SD.TC01",
       "M-SD.TC02"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-SD.A02.07",
@@ -413,7 +511,21 @@
      "spec": "Có | Không | Hiển thị email đã dùng khi tạo học viên. Field luôn ở trạng thái chỉ đọc và không được cập nhật tại màn hình chi tiết.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-020100": [
+       {
+        "term": "Email",
+        "figmaId": "1648:11764",
+        "layer": "Row 1: Mã người dùng & Email",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SD.TC01",
@@ -421,7 +533,7 @@
       "M-SD.TC03"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-SD.A02.08",
@@ -430,7 +542,27 @@
      "spec": "Không | Có | Cho phép nhập, sửa hoặc xóa toàn bộ nội dung. Không áp dụng giới hạn nội dung hoặc độ dài ở tầng nghiệp vụ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-hv-020100": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "I4915:233159;4899:195421",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "1161:5598",
+         "Label": "Ghi chú",
+         "Type": "Con",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-SD.TC01",
@@ -438,8 +570,11 @@
       "M-SD.TC04"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "adm-hv-020100"
    ]
   },
   {
@@ -551,7 +686,7 @@
       "M-SD.TTC04"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-SD.A09.02",
@@ -564,7 +699,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-SD.A09.03",
@@ -579,7 +714,7 @@
       "M-SD.TTC02"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-SD.A09.04",
@@ -592,7 +727,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     }
    ]
   },

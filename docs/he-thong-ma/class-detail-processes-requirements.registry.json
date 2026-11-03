@@ -84,7 +84,9 @@
    "dark": "ADM-LOP-020604-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": []
+   "regions": [
+    "M-CDP.A01"
+   ]
   },
   "ADM-LOP-020610": {
    "id": "ADM-LOP-020610",
@@ -225,9 +227,7 @@
    "dark": "ADM-LOP-020710-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "M-CDP.A01"
-   ]
+   "regions": []
   },
   "ADM-LOP-020711": {
    "id": "ADM-LOP-020711",
@@ -345,9 +345,7 @@
    "dark": "ADM-LOP-020810-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "M-CDP.A01"
-   ]
+   "regions": []
   },
   "ADM-LOP-020811": {
    "id": "ADM-LOP-020811",
@@ -423,8 +421,7 @@
    "name": "ba-tab-quy-trinh-trong-lop",
    "title": "Ba tab quy trình trong lớp",
    "screens": [
-    "adm-lop-020710",
-    "adm-lop-020810"
+    "adm-lop-020604"
    ],
    "screensGuessed": [
     "ADM-LOP-020710",
@@ -464,8 +461,8 @@
       "M-CDP.TC01"
      ],
      "missingTerms": [
-      "Tiến độ",
-      "2/7"
+      "2/7",
+      "Tiến độ"
      ],
      "status": "chua-thay-tren-figma"
     },
@@ -491,15 +488,35 @@
      "spec": "`Thêm tiêu chuẩn` ở tab Tiêu chuẩn lớp - giáo viên; `Thêm quy trình` ở tab CSKH và Quy trình lớp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-020604": [
+       {
+        "term": "Thêm tiêu chuẩn",
+        "figmaId": "2711:52528",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Thêm tiêu chuẩn",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Nút Thêm",
-      "Thêm tiêu chuẩn"
+      "Nút Thêm"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "adm-lop-020604"
    ]
   },
   {

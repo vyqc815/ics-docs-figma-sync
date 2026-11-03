@@ -88,7 +88,8 @@
    "openedFrom": [],
    "citedByRequirement": true,
    "regions": [
-    "TR-CP.A01"
+    "TR-CP.A01",
+    "TR-CP.A04"
    ]
   },
   "GV-LOP-070100": {
@@ -464,7 +465,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CP.A03.02",
@@ -479,7 +480,7 @@
       "TR-CP.TC11"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CP.A03.03",
@@ -492,7 +493,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CP.A03.04",
@@ -505,7 +506,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CP.A03.05",
@@ -518,7 +519,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CP.A03.06",
@@ -531,7 +532,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CP.A03.07",
@@ -544,7 +545,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CP.A03.08",
@@ -559,7 +560,7 @@
       "TR-CP.TC16"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-thay-tren-figma"
     }
    ]
   },
@@ -567,7 +568,9 @@
    "id": "TR-CP.A04",
    "name": "toast-phan-hoi-crud",
    "title": "Toast phản hồi CRUD",
-   "screens": [],
+   "screens": [
+    "gv-lop-060100"
+   ],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -587,8 +590,11 @@
      "testcases": [
       "TR-CP.TTC02"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thành công",
+      "Thành Công"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CP.A04.02",
@@ -597,13 +603,35 @@
      "spec": "`Thông Báo` | Không dùng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-060100": [
+       {
+        "term": "Thông tin",
+        "figmaId": "I4915:260963;4901:214212",
+        "layer": "Card Menu v2 (Test)",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Card Menu v2 (Test)",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "769:35769",
+         "Label": "Thông tin",
+         "Type": "Menu phụ",
+         "State": "Default",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-CP.TTC01"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thông Báo"
+     ],
+     "status": "khop"
     },
     {
      "id": "TR-CP.A04.03",
@@ -615,8 +643,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Cảnh báo",
+      "Cảnh Báo"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CP.A04.04",
@@ -628,9 +659,15 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Lỗi",
+      "Có Lỗi Xảy Ra"
+     ],
+     "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "gv-lop-060100"
    ]
   }
  ],

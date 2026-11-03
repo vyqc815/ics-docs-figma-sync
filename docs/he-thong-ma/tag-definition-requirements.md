@@ -28,24 +28,24 @@ Requirement: `tag_definition_requirement/tag_definition_requirements.md` — Def
 
 ### `A01` Trang 1: Tag quản lý và Nhóm
 
-Frame: `ADM-TAG-010020` (tool đoán:ADM-TAG-010020) · Nguồn nội dung: QC
+Frame: `ADM-TAG-010000` (tool đoán:ADM-TAG-010020) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | tag-quan-ly |  |  | — | opens `A01` |  | Chưa khớp tự động | QC |
-| `A01.02` | nhom | `Popup/Header`  | `I3065:69666;2514:153358` Title | — |  | `TC01` | Khớp | QC |
-| `A01.03` | them-nhom-moi | `Popup/Header`  | `I3065:69666;2514:153358` Title | — | opens `A02` |  | Khớp | QC |
+| `A01.01` | tag-quan-ly | `Role Component`  | `3065:64802` Tag quản lý; `I3065:68021;139:67075` Thêm chức vụ | — | opens `A01` |  | Khớp | QC |
+| `A01.02` | nhom |  | `3065:67847` Nhóm | — |  | `TC01` | Khớp | QC |
+| `A01.03` | them-nhom-moi | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `3065:67890` Add New Bar · Thêm mới | — | opens `A02` |  | Khớp | QC |
 | `A01.04` | chinh-sua-xoa |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Popup Thêm nhóm mới
 
-Frame: `ADM-TAG-010000` (tool đoán:ADM-TAG-010000) · Nguồn nội dung: QC
+Frame: `ADM-TAG-010020` (tool đoán:ADM-TAG-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | ten-nhom |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.02` | mo-ta |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.03` | loai | `Loại tag`  | `3065:67854` Loại tag; `3065:67860` Loại tag | — |  | `TC02`, `TC03` | Khớp | QC |
+| `A02.01` | ten-nhom | `Atom/Label`  | `I3065:69670;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A02.02` | mo-ta | `Atom/Label`  | `I3065:69671;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A02.03` | loai | `Atom/Label`  | `I3065:69673;3004:58620` Atom/Label | — |  | `TC02`, `TC03` | Khớp | QC |
 | `A02.04` | them-huy |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Popup Thêm tag
@@ -81,8 +81,7 @@ Frame: `ADM-TAG-010000` · Nguồn nội dung: Figma
 | `F01.02` | atom-tag-solid | `Atom/Tag Solid` Size=26H | `3065:68045` Atom/Tag Solid | — |  |  | Chỉ có trên Figma | Figma |
 | `F01.03` | mouse-click |  | `3065:68897` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
 | `F01.04` | role-component | `Role Component`  | `3065:68021` Role Component | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | loai-tag | `Loại tag`  | `3065:67866` Loại tag | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | add-new-bar-them-moi | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `3065:67890` Add New Bar · Thêm mới | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.05` | loai-tag | `Loại tag`  | `3065:67854` Loại tag | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -129,7 +128,7 @@ Frame: `ADM-TAG-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (13): `A01.01`, `A01.04`, `A02.01`, `A02.02`, `A02.04`, `A03.01`, `A03.02`, `A03.03`, `A03.05`, `A04.01`, `A04.02`, `A04.03`, `A04.04`
+- Chưa khớp tự động (10): `A01.04`, `A02.04`, `A03.01`, `A03.02`, `A03.03`, `A03.05`, `A04.01`, `A04.02`, `A04.03`, `A04.04`
 - Frame Figma chưa có requirement (2): `ADM-TAG-010010`, `ADM-TAG-010020`
 - Thiếu prototype link đi vào (2): `ADM-TAG-010010`, `ADM-TAG-010020`
 - REQ/EX chưa có testcase (2): `EX02`, `EX03`

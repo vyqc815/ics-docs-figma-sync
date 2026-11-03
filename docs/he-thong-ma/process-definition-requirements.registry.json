@@ -110,9 +110,6 @@
    "citedByRequirement": true,
    "regions": [
     "PD-PD.A02",
-    "PD-PD.A03",
-    "PD-PD.A04",
-    "PD-PD.A05",
     "PD-PD.A06",
     "PD-PD.A07",
     "PD-PD.F01"
@@ -165,7 +162,6 @@
     "PD-PD.A03",
     "PD-PD.A04",
     "PD-PD.A05",
-    "PD-PD.A06",
     "PD-PD.A07",
     "PD-PD.F01"
    ]
@@ -777,7 +773,6 @@
    "name": "trang-1b-xoa-quy-trinh",
    "title": "Trang 1b: Xóa quy trình",
    "screens": [
-    "adm-qt-010000",
     "adm-qt-020000"
    ],
    "screensGuessed": [
@@ -814,24 +809,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-qt-010000": [
-       {
-        "term": "Nội dung",
-        "figmaId": "I2702:35217;1739:32351",
-        "layer": "Tìm nội dung...",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm kiếm loại quy trình",
-         "State": "Search Compact",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ],
       "adm-qt-020000": [
        {
         "term": "Nội dung",
@@ -899,8 +876,11 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "adm-qt-020000"
    ]
   },
   {
@@ -908,7 +888,6 @@
    "name": "trang-2-chi-tiet-loai-quy-trinh",
    "title": "Trang 2: Chi tiết loại quy trình",
    "screens": [
-    "adm-qt-010000",
     "adm-qt-020000"
    ],
    "screensGuessed": [
@@ -985,7 +964,7 @@
      "missingTerms": [
       "Thêm mới Package"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "PD-PD.A04.04",
@@ -1024,7 +1003,7 @@
      "missingTerms": [
       "Category"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "PD-PD.A04.05",
@@ -1034,26 +1013,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-qt-010000": [
-       {
-        "term": "Nhập nội dung mới",
-        "figmaId": "3108:122528",
-        "layer": "Add New Bar · Nhập nội dung mới",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Add New Bar · Nhập nội dung mới",
-        "component": "Molecule/Add New Bar",
-        "variant": {
-         "Icon trái": false,
-         "Nút": "1080:1498",
-         "Placeholder": "Nhập quy trình mới",
-         "Type": "Box",
-         "Size": "M",
-         "State": "Default"
-        },
-        "inCode": false
-       }
-      ],
       "adm-qt-020000": [
        {
         "term": "Nhập nội dung mới",
@@ -1114,7 +1073,7 @@
       "PD-PD.TC07"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "PD-PD.A04.07",
@@ -1133,6 +1092,9 @@
      ],
      "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "adm-qt-020000"
    ]
   },
   {
@@ -1140,7 +1102,6 @@
    "name": "dropdown-loai-task-va-field-cau-hinh",
    "title": "Dropdown Loại task và field cấu hình",
    "screens": [
-    "adm-qt-010000",
     "adm-qt-020000"
    ],
    "screensGuessed": [
@@ -1196,7 +1157,7 @@
       "PD-PD.TC09"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "PD-PD.A05.02",
@@ -1226,7 +1187,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "PD-PD.A05.03",
@@ -1256,7 +1217,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "PD-PD.A05.04",
@@ -1266,19 +1227,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-qt-010000": [
-       {
-        "term": "Kiểm tra",
-        "figmaId": "2702:35855",
-        "layer": "Quy trình kiểm tra",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
       "adm-qt-020000": [
        {
         "term": "Kiểm tra",
@@ -1309,19 +1257,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-qt-010000": [
-       {
-        "term": "Đánh giá",
-        "figmaId": "2702:35882",
-        "layer": "Quy trình đánh giá",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
       "adm-qt-020000": [
        {
         "term": "Đánh giá",
@@ -1403,7 +1338,7 @@
       "PD-PD.TC09"
      ],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "PD-PD.A05.07",
@@ -1449,7 +1384,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "PD-PD.A05.08",
@@ -1495,7 +1430,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "PD-PD.A05.09",
@@ -1505,22 +1440,6 @@
      "source": "tu-dien",
      "content": "qc",
      "matches": {
-      "adm-qt-010000": [
-       {
-        "term": "Log",
-        "figmaId": "I4915:239029;4915:214021",
-        "layer": "LOGO CENTER",
-        "confidence": "thap",
-        "region": null,
-        "owner": "LOGO CENTER",
-        "component": "LOGO CENTER",
-        "variant": {
-         "Property 1": "ICS",
-         "Property 2": "yes"
-        },
-        "inCode": false
-       }
-      ],
       "adm-qt-020000": [
        {
         "term": "Log",
@@ -1559,6 +1478,9 @@
      "missingTerms": [],
      "status": "khop"
     }
+   ],
+   "screensFromItems": [
+    "adm-qt-020000"
    ]
   },
   {
@@ -1566,8 +1488,7 @@
    "name": "su-dung-nguon-trong-lop",
    "title": "Sử dụng nguồn trong lớp",
    "screens": [
-    "adm-qt-010000",
-    "adm-qt-020000"
+    "adm-qt-010000"
    ],
    "screensGuessed": [
     "ADM-QT-010000",
@@ -1642,7 +1563,7 @@
      "missingTerms": [
       "Tab trong lớp"
      ],
-     "status": "khop-mot-phan"
+     "status": "khop"
     },
     {
      "id": "PD-PD.A06.04",
@@ -1660,6 +1581,9 @@
      ],
      "status": "chua-thay-tren-figma"
     }
+   ],
+   "screensFromItems": [
+    "adm-qt-010000"
    ]
   },
   {
@@ -1924,6 +1848,40 @@
     },
     {
      "id": "PD-PD.F01.06",
+     "name": "add-new-bar-nhap-noi-dung-moi",
+     "label": "Add New Bar · Nhập nội dung mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "adm-qt-010000": [
+       {
+        "term": "Add New Bar · Nhập nội dung mới",
+        "figmaId": "3108:122528",
+        "layer": "Add New Bar · Nhập nội dung mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Nhập nội dung mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1080:1498",
+         "Placeholder": "Nhập quy trình mới",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "PD-PD.F01.07",
      "name": "phan-trang",
      "label": "Phân Trang",
      "spec": "",
@@ -1950,7 +1908,7 @@
      }
     },
     {
-     "id": "PD-PD.F01.07",
+     "id": "PD-PD.F01.08",
      "name": "sidebar-menu-admin",
      "label": "Sidebar · MENU - ADMIN",
      "spec": "",
@@ -1979,7 +1937,7 @@
      }
     },
     {
-     "id": "PD-PD.F01.08",
+     "id": "PD-PD.F01.09",
      "name": "account",
      "label": "ACCOUNT",
      "spec": "",
@@ -2010,7 +1968,7 @@
      }
     },
     {
-     "id": "PD-PD.F01.09",
+     "id": "PD-PD.F01.10",
      "name": "atom-icon-button",
      "label": "Atom/Icon Button",
      "spec": "",
@@ -2039,7 +1997,7 @@
      }
     },
     {
-     "id": "PD-PD.F01.10",
+     "id": "PD-PD.F01.11",
      "name": "mouse-click",
      "label": "Mouse click",
      "spec": "",
@@ -2066,7 +2024,7 @@
      }
     },
     {
-     "id": "PD-PD.F01.11",
+     "id": "PD-PD.F01.12",
      "name": "atom-dropzone",
      "label": "Atom/Dropzone",
      "spec": "",
@@ -2096,7 +2054,7 @@
      }
     },
     {
-     "id": "PD-PD.F01.12",
+     "id": "PD-PD.F01.13",
      "name": "atom-uploaded-file-card",
      "label": "Atom/Uploaded File Card",
      "spec": "",
@@ -2125,7 +2083,7 @@
      }
     },
     {
-     "id": "PD-PD.F01.13",
+     "id": "PD-PD.F01.14",
      "name": "switch",
      "label": "Switch",
      "spec": "",

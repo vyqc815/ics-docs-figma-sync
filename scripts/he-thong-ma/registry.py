@@ -386,7 +386,11 @@ def build_requirement(rel, P, text, screens, specs, out, mapped=()):
                   "source": "tu-dien", "content": "qc", "requirement": rel, "needsDesign": lacks_ui,
                   "figmaDiffNotes": [l.strip("- ").strip() for l in s["head"].splitlines() if "Khác Figma" in l], "items": []}
         regions.append(region)
-        synced = [c for c in region["screens"] if specs.nodes(c)]
+        cited_here = [c for c in region["screens"] if specs.nodes(c)]
+        # match items against every synced main screen of the cluster too: a section's image caption
+        # often names a popup, while its items sit on the main screen
+        synced = list(dict.fromkeys(cited_here + [c.lower() for c in screens
+                                                  if not c.endswith("-DK") and specs.nodes(c.lower())]))
         n = 0
         for block in re.findall(r"((?:^\|.*\n)+)", s["head"] + "\n", flags=re.M):
             rows = block.strip().splitlines()
@@ -443,6 +447,26 @@ def build_requirement(rel, P, text, screens, specs, out, mapped=()):
                 for r in re.findall(r"REQ\d+", detail):
                     item["relations"].append({"type": "governed-by", "target": f"{P}.{r}", "raw": r})
                 region["items"].append(item)
+        # keep the frames that hold this region's items; fall back to the cited ones when nothing matched
+        hits = collections.Counter(scr for it in region["items"] for scr, ms in it["matches"].items()
+                                   if any(m["confidence"] == "cao" for m in ms))
+        if hits:
+            best = max(hits.values())
+            good = lambda scr, floor=2: hits[scr] >= max(floor, 0.6 * best)
+            # the frames the section itself names win when they hold the items; others only replace them
+            keep = [c for c in cited_here if good(c, 1)] or [scr for scr in synced if good(scr)] or [hits.most_common(1)[0][0]]
+        else:
+            keep = cited_here
+        if keep != region["screens"]:
+            region["screensFromItems"] = keep
+        region["screens"] = keep
+        for it in region["items"]:
+            terms = list(dict.fromkeys(it.get("missingTerms", []) + [m["term"] for ms in it["matches"].values() for m in ms]))
+            it["matches"] = {scr: ms for scr, ms in it["matches"].items() if scr in keep}
+            found = {m["term"] for ms in it["matches"].values() for m in ms}
+            if it["status"] in ("khop", "khop-mot-phan", "chua-thay-tren-figma"):
+                it["status"] = ("khop" if len(it["matches"]) == len(keep) else "khop-mot-phan") if it["matches"] else "chua-thay-tren-figma"
+            it["missingTerms"] = [t for t in terms if t not in found] if keep else []
 
     seen_tc = collections.Counter()
     pairs = [(s["tests"], region) for s, region in zip(sections, regions)] + [(loose, None)]

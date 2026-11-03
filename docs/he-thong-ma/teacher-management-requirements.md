@@ -87,14 +87,14 @@ Frame: `ADM-GV-010000` (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
 
 ### `A05` Menu thao tác trên dòng: Thêm lịch hẹn, Thêm tag và Danh sách lịch hẹn
 
-Frame: `ADM-GV-010001`, `ADM-GV-010030`, `ADM-GV-010040`, `ADM-GV-010050` (tool đoán:ADM-GV-010001, ADM-GV-010030, ADM-GV-010040, ADM-GV-010050) · Nguồn nội dung: QC
+Frame: `ADM-GV-010040` (tool đoán:ADM-GV-010001, ADM-GV-010030, ADM-GV-010040, ADM-GV-010050) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | menu-thao-tac | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `1657:12040` ADM-GV-010001 — Danh sách giáo viên / Hover menu thao tác; `I3210:31964;2015:31836;3210:31958` Chỉnh sửa | — |  |  | Khớp một phần | QC |
-| `A05.02` | popup-them-lich-hen | `DD/Molecule/Trigger` Size=XS, State=Default | `4713:129455` Dropdown · Trung tâm | — |  |  | Khớp một phần | QC |
-| `A05.03` | popup-them-tag | `Atom/Input` State=Search Advanced, Kiểu=Chuẩn | `I1739:33369;1739:32346` Tìm Kiếm Nâng Cao | — |  |  | Khớp một phần | QC |
-| `A05.04` | popup-danh-sach-lich-hen | `Atom/Label`  | `1832:36668` Atom/Label | — |  | `TC50` | Khớp một phần | QC |
+| `A05.01` | menu-thao-tac | `Popup/Header`  | `I2527:167725;2514:153358` Title | — |  |  | Khớp | QC |
+| `A05.02` | popup-them-lich-hen | `Atom/Label`  | `1739:31622` ADM-GV-010040 — Danh sách giáo viên / Popup thêm lịch hẹn; `4835:162374` Atom/Label | — |  |  | Khớp | QC |
+| `A05.03` | popup-them-tag |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.04` | popup-danh-sach-lich-hen | `Atom/Label`  | `1832:36668` Atom/Label | — |  | `TC50` | Khớp | QC |
 
 ### `A06` Điều hướng đến chi tiết giáo viên
 
@@ -263,7 +263,7 @@ Frame: `ADM-GV-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (9): `A02.01`, `A02.02`, `A02.03`, `A02.05`, `A03.02`, `A08.01`, `A08.02`, `A08.03`, `A08.04`
+- Chưa khớp tự động (10): `A02.01`, `A02.02`, `A02.03`, `A02.05`, `A03.02`, `A05.03`, `A08.01`, `A08.02`, `A08.03`, `A08.04`
 - Frame Figma chưa có requirement (7): `ADM-GV-010001`, `ADM-GV-010010`, `ADM-GV-010020`, `ADM-GV-010030`, `ADM-GV-010040`, `ADM-GV-010042`, `ADM-GV-010050`
 - Thiếu prototype link đi vào (5): `ADM-GV-010010`, `ADM-GV-010020`, `ADM-GV-010030`, `ADM-GV-010040`, `ADM-GV-010050`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`

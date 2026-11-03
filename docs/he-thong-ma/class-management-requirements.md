@@ -167,18 +167,18 @@ Frame: `ADM-LOP-010010`, `ADM-LOP-010040` (tool đoán:ADM-LOP-010010, ADM-LOP-0
 
 ### `A08` Popup Thêm lịch hẹn cho lớp
 
-Frame: `ADM-LOP-010020`, `ADM-LOP-010050` (tool đoán:ADM-LOP-010020, ADM-LOP-010050) · Nguồn nội dung: QC
+Frame: `ADM-LOP-010050` (tool đoán:ADM-LOP-010020, ADM-LOP-010050) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | noi-dung | `Atom/Label`  | `1991:23454` Atom/Label | — |  | `TC51`, `TC54` | Khớp một phần | QC |
-| `A08.02` | thoi-gian | `Atom/Label`  | `1991:23458` Atom/Label | — |  | `TC51`, `TC54` | Khớp một phần | QC |
-| `A08.03` | do-uu-tien | `Atom/Label`  | `1991:23465` Atom/Label | — |  | `TC51` | Khớp một phần | QC |
-| `A08.04` | nguoi-phu-trach | `Atom/Label`  | `1991:23470` Atom/Label | — |  | `TC51`, `TC55` | Khớp một phần | QC |
-| `A08.05` | theo-doi | `Atom/Label`  | `1991:23547` Atom/Label | — |  | `TC51`, `TC53`, `TC54`, `TC55` | Khớp một phần | QC |
-| `A08.06` | ghi-chu | `Atom/Label`  | `1991:23557` Atom/Label | — |  | `TC51`, `TC54` | Khớp một phần | QC |
-| `A08.07` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167755;2514:153361` Atom/Button | — |  |  | Khớp | QC |
-| `A08.08` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167755;2514:153363` Atom/Button | — |  | `TC53`, `TC55` | Khớp | QC |
+| `A08.01` | noi-dung | `Atom/Label`  | `1991:23454` Atom/Label | — |  | `TC51`, `TC54` | Khớp | QC |
+| `A08.02` | thoi-gian | `Atom/Label`  | `1991:23458` Atom/Label | — |  | `TC51`, `TC54` | Khớp | QC |
+| `A08.03` | do-uu-tien | `Atom/Label`  | `1991:23465` Atom/Label | — |  | `TC51` | Khớp | QC |
+| `A08.04` | nguoi-phu-trach | `Atom/Label`  | `1991:23470` Atom/Label | — |  | `TC51`, `TC55` | Khớp | QC |
+| `A08.05` | theo-doi | `Atom/Label`  | `1991:23547` Atom/Label | — |  | `TC51`, `TC53`, `TC54`, `TC55` | Khớp | QC |
+| `A08.06` | ghi-chu | `Atom/Label`  | `1991:23557` Atom/Label | — |  | `TC51`, `TC54` | Khớp | QC |
+| `A08.07` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167658;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+| `A08.08` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167658;2514:153363` Atom/Button | — |  | `TC53`, `TC55` | Khớp | QC |
 
 ### `A09` Toast phản hồi CRUD
 

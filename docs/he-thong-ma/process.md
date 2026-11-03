@@ -72,26 +72,26 @@ Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` (tool đoán:SP-TASK
 
 ### `A03` Trang 3: Ca Trực
 
-Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` (tool đoán:SP-TASK-010000, SP-TASK-020000, SP-TASK-030000) · Nguồn nội dung: QC
+Frame: `SP-TASK-030000` (tool đoán:SP-TASK-010000, SP-TASK-020000, SP-TASK-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | dropdown-quy-trinh | `Card Menu v2 (Test)` Type=Chính dropdown, State=Default | `I4915:257614;4901:224371` Card Menu | — |  |  | Khớp | QC |
-| `A03.02` | dropdown-khoang-thoi-gian | `DD/Molecule/Trigger` Size=XS, State=Active | `3845:49782` Filter · Tuần này | — |  |  | Khớp | QC |
-| `A03.03` | dropdown-ca | `DD/Molecule/Trigger` Size=XS, State=Default | `3857:76690` Filter · Ca | — |  |  | Khớp một phần | QC |
+| `A03.01` | dropdown-quy-trinh | `Card Menu v2 (Test)` Type=Chính dropdown, State=Default | `I4915:258070;4901:225148` Card Menu | — |  |  | Khớp | QC |
+| `A03.02` | dropdown-khoang-thoi-gian | `DD/Molecule/Trigger` Size=XS, State=Active | `3857:76093` Filter · Tuần này | — |  |  | Khớp | QC |
+| `A03.03` | dropdown-ca | `DD/Molecule/Trigger` Size=XS, State=Default | `3857:76690` Filter · Ca | — |  |  | Khớp | QC |
 | `A03.04` | sang |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.05` | chieu |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.06` | toi | `AVATAR + Name`  | `I6935:389044;1904:8731` Trần Nguyễn Hoài Phương | — |  |  | Khớp | QC |
+| `A03.06` | toi | `AVATAR + Name`  | `I6935:389072;1904:8731` Trần Nguyễn Hoài Phương | — |  |  | Khớp | QC |
 
 ### `A04` Trang 4: Popup thêm người vào Danh sách Support
 
-Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` (tool đoán:SP-TASK-010000, SP-TASK-020000, SP-TASK-030000) · Nguồn nội dung: QC
+Frame: `SP-TASK-030010` (tool đoán:SP-TASK-010000, SP-TASK-020000, SP-TASK-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | o-tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.02` | nhom-nguoi-dung |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.03` | checkbox | `Checkbox` Size=20 | `3857:72444` Checkbox | — |  |  | Khớp | QC |
+| `A04.01` | o-tim-kiem | `Atom/Input` State=Search, Kiểu=Chuẩn | `3857:76121` Atom/Input | — |  |  | Khớp | QC |
+| `A04.02` | nhom-nguoi-dung |  | `3857:76126` Trợ giảng | — |  |  | Khớp | QC |
+| `A04.03` | checkbox | `Checkbox` Size=20 | `3857:76132` Checkbox | — |  |  | Khớp | QC |
 
 ### `F01` Header
 
@@ -114,7 +114,8 @@ Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` · Nguồn nội dun
 | `F02.05` | atom-chip | `Atom/Chip` Type=Date | `3857:72447` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
 | `F02.06` | atom-label | `Atom/Label`  | `3857:72450` Atom/Label | — |  |  | Chỉ có trên Figma | Figma |
 | `F02.07` | atom-badge | `Atom/Badge`  | `3857:72467` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.08` | percent | `PERCENT %`  | `3845:49796` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.08` | filter-tuan-nay | `DD/Molecule/Trigger` Size=XS, State=Active | `3845:49782` Filter · Tuần này | — |  |  | Chỉ có trên Figma | Figma |
+| `F02.09` | percent | `PERCENT %`  | `3845:49796` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -169,7 +170,7 @@ Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` · Nguồn nội dun
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (11): `A01.07`, `A01.09`, `A01.13`, `A01.14`, `A02.01`, `A02.03`, `A02.04`, `A03.04`, `A03.05`, `A04.01`, `A04.02`
+- Chưa khớp tự động (9): `A01.07`, `A01.09`, `A01.13`, `A01.14`, `A02.01`, `A02.03`, `A02.04`, `A03.04`, `A03.05`
 - Frame Figma chưa có requirement (7): `SP-TASK-010001`, `SP-TASK-020001`, `SP-TASK-030001`, `SP-TASK-030002`, `SP-TASK-030003`, `SP-TASK-030004`, `SP-TASK-030010`
 - Phân loại cần design duyệt (3): `SP-TASK-010001`, `SP-TASK-020001`, `SP-TASK-030001`
 - Thiếu prototype link đi vào (4): `SP-TASK-010001`, `SP-TASK-020001`, `SP-TASK-030001`, `SP-TASK-030010`

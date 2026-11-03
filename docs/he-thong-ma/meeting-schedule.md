@@ -68,7 +68,7 @@ Frame: `SP-LHP-010010` (tool đoán:SP-LHP-010010) · Nguồn nội dung: QC
 | `A03.07` | link-cuoc-hop | `Atom/Label`  | `3857:80266` Atom/Label | — |  | `TC06` | Khớp | QC |
 | `A03.08` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I3857:80177;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 | `A03.09` | luu | `Atom/Button` Type=Primary, Size=Medium | `I3857:80177;2514:153363` Atom/Button | — |  |  | Khớp | QC |
-| `A03.10` | xoa |  |  | — | opens `A03` |  | Chưa có thiết kế | QC |
+| `A03.10` | xoa |  |  | — | opens `A03` |  | Requirement ghi thiếu, Figma đã có | QC |
 
 ### `A04` Trang 4: Dropdown bộ lọc
 
@@ -152,6 +152,7 @@ Frame: `SP-LHP-010000`, `SP-LHP-020000` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - Chưa khớp tự động (1): `A03.01`
+- Requirement ghi thiếu, Figma đã có (1): `A03.10`
 - Frame Figma chưa có requirement (4): `SP-LHP-010001`, `SP-LHP-010002`, `SP-LHP-010003`, `SP-LHP-010010`
 - Phân loại cần design duyệt (2): `SP-LHP-010002`, `SP-LHP-010003`
 - Thiếu prototype link đi vào (1): `SP-LHP-010010`
