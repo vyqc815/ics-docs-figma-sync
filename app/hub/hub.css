@@ -1,0 +1,140 @@
+/* QC hub: dark panels with a violet accent (Shield Swap style). Scoped to .hub (not "qc": Vietnamese ad-block lists hide .qc = quảng cáo) so the demo screens keep their own theme. */
+.hub {
+  --hub-page: #05060a;
+  --hub-shell: #0d0f15;
+  --hub-panel: #141720;
+  --hub-panel-2: #1a1e29;
+  --hub-panel-3: #222736;
+  --hub-line: #252a38;
+  --hub-text: #e8eaf0;
+  --hub-muted: #8b91a3;
+  --hub-faint: #5d6375;
+  --hub-accent: #9b8cff;
+  --hub-accent-strong: #8572ff;
+  --hub-accent-soft: rgb(155 140 255 / 0.14);
+  --hub-green: #4ade80;
+  --hub-amber: #f5a524;
+  --hub-red: #f87171;
+  color: var(--hub-text);
+  background: var(--hub-page);
+  color-scheme: dark;
+}
+
+.hub ::selection {
+  background: var(--hub-accent-soft);
+}
+
+.hub-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.hub-scroll::-webkit-scrollbar-thumb {
+  background: var(--hub-panel-3);
+  border-radius: 8px;
+}
+
+/* Requirement Markdown */
+.hub-md {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--hub-text);
+}
+.hub-md h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+.hub-md h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 36px 0 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--hub-line);
+}
+.hub-md h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 28px 0 10px;
+  scroll-margin-top: 90px;
+}
+.hub-md h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 18px 0 8px;
+  color: var(--hub-muted);
+}
+.hub-md p,
+.hub-md ul,
+.hub-md ol {
+  margin: 8px 0;
+}
+.hub-md ul,
+.hub-md ol {
+  padding-left: 22px;
+}
+.hub-md ul {
+  list-style: disc;
+}
+.hub-md ol {
+  list-style: decimal;
+}
+.hub-md li::marker {
+  color: var(--hub-faint);
+}
+.hub-md a {
+  color: var(--hub-accent);
+}
+.hub-md hr {
+  display: none;
+}
+.hub-md code {
+  font-size: 12px;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--hub-panel-3);
+  color: var(--hub-accent);
+}
+.hub-md pre {
+  background: var(--hub-panel-2);
+  border: 1px solid var(--hub-line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  overflow-x: auto;
+}
+.hub-md pre code {
+  background: none;
+  padding: 0;
+  color: var(--hub-text);
+}
+.hub-md blockquote {
+  border-left: 3px solid var(--hub-accent);
+  padding-left: 12px;
+  color: var(--hub-muted);
+}
+.hub-md img {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--hub-line);
+  margin: 10px 0;
+  background: #fff;
+}
+.hub-md table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 13px;
+}
+.hub-md th,
+.hub-md td {
+  border: 1px solid var(--hub-line);
+  padding: 7px 10px;
+  vertical-align: top;
+  min-width: 90px;
+}
+.hub-md th {
+  background: var(--hub-panel-2);
+  color: var(--hub-muted);
+  font-weight: 600;
+  text-align: left;
+}

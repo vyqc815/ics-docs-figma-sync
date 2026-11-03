@@ -11,7 +11,7 @@ const RequirementView = async ({ searchParams }: { searchParams: Promise<{ f?: s
   if (!text) notFound();
   return (
     <Panel className="max-w-5xl">
-      <p className="mb-4 font-mono text-xs text-(--qc-faint)">docs/requirements/{f}</p>
+      <p className="mb-4 font-mono text-xs text-(--hub-faint)">docs/requirements/{f}</p>
       <RequirementMarkdown file={f} text={text} />
     </Panel>
   );

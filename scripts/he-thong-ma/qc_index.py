@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sinh `docs/he-thong-ma/qc-index.json`: mục lục cho web QC Hub (/qc): danh sách file requirement, trang, mã màn.
+"""Sinh `docs/he-thong-ma/qc-index.json`: mục lục cho web QC Hub (/hub): danh sách file requirement, trang, mã màn.
 
 Mỗi file requirement: đường dẫn, tiền tố mã, tên, các trang (số, tên, mã màn), ảnh gốc kèm theo;
 cùng danh sách file dữ liệu hệ thống mã (registry, frame, mã dự kiến, khoá mã).

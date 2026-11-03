@@ -2,7 +2,7 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
 
 /**
- * One shared team password for the QC hub (/qc), set as QC_WEB_PASSWORD on Vercel. The cookie holds an
+ * One shared team password for the QC hub (/hub), set as QC_WEB_PASSWORD on Vercel. The cookie holds an
  * HMAC of the password, so changing the password signs everyone out.
  */
 export const COOKIE = "qc_hub";

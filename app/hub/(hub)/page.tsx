@@ -24,19 +24,19 @@ const Overview = async ({ searchParams }: { searchParams: Promise<{ q?: string }
       </PageHead>
 
       {q && (
-        <Panel title={`Kết quả cho “${q}”`} action={<span className="text-sm text-(--qc-muted)">{hits.length} kết quả</span>} className="mb-6">
+        <Panel title={`Kết quả cho “${q}”`} action={<span className="text-sm text-(--hub-muted)">{hits.length} kết quả</span>} className="mb-6">
           {hits.length === 0 ? (
-            <p className="text-sm text-(--qc-muted)">Không thấy. Thử mã ngắn hơn, ví dụ “040200” hoặc “REQ02”.</p>
+            <p className="text-sm text-(--hub-muted)">Không thấy. Thử mã ngắn hơn, ví dụ “040200” hoặc “REQ02”.</p>
           ) : (
-            <ul className="divide-y divide-(--qc-line)/60">
+            <ul className="divide-y divide-(--hub-line)/60">
               {hits.map((h) => (
                 <li key={`${h.kind}-${h.code}-${h.href}`}>
-                  <Link href={h.href} className="flex items-center gap-3 py-2.5 hover:text-(--qc-accent)">
+                  <Link href={h.href} className="flex items-center gap-3 py-2.5 hover:text-(--hub-accent)">
                     <Tag tone={KIND_TONE[h.kind]}>{h.kind}</Tag>
-                    <span className="font-mono text-[13px] text-(--qc-accent)">{h.code}</span>
+                    <span className="font-mono text-[13px] text-(--hub-accent)">{h.code}</span>
                     <span className="min-w-0 flex-1 truncate">{h.title}</span>
-                    {h.sub && <span className="hidden truncate text-xs text-(--qc-faint) md:block md:max-w-[35%]">{h.sub}</span>}
-                    <ArrowUpRight className="size-4 shrink-0 text-(--qc-faint)" />
+                    {h.sub && <span className="hidden truncate text-xs text-(--hub-faint) md:block md:max-w-[35%]">{h.sub}</span>}
+                    <ArrowUpRight className="size-4 shrink-0 text-(--hub-faint)" />
                   </Link>
                 </li>
               ))}
@@ -48,13 +48,13 @@ const Overview = async ({ searchParams }: { searchParams: Promise<{ q?: string }
       <div className="mb-6 grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
         <Stat label="Cụm màn" value={clusters().length} />
         <Stat label="Frame Figma" value={Object.keys(frames()).length} hint={`${Object.keys(reserved()).length} mã dự kiến`} />
-        <Stat label="File requirement" value={<Link href="/qc/requirement" className="hover:text-(--qc-accent)">{files}</Link>} />
+        <Stat label="File requirement" value={<Link href="/hub/requirement" className="hover:text-(--hub-accent)">{files}</Link>} />
         <Stat label="Item requirement" value={items} hint={`${Math.round((matched / Math.max(items, 1)) * 100)}% thấy trên Figma`} tone="green" />
         <Stat label="Testcase" value={sum("testcases")} />
-        <Stat label="Trang chưa gắn mã" value={unmappedPages().length} tone="amber" hint={<Link href="/qc/chua-gan-ma" className="hover:text-(--qc-accent)">Xem danh sách →</Link>} />
+        <Stat label="Trang chưa gắn mã" value={unmappedPages().length} tone="amber" hint={<Link href="/hub/chua-gan-ma" className="hover:text-(--hub-accent)">Xem danh sách →</Link>} />
       </div>
 
-      <Panel title="Cụm có requirement" action={<Link href="/qc/cum" className="text-sm text-(--qc-accent)">Tất cả cụm →</Link>}>
+      <Panel title="Cụm có requirement" action={<Link href="/hub/cum" className="text-sm text-(--hub-accent)">Tất cả cụm →</Link>}>
         <ClusterGrid onlyWithRequirement />
       </Panel>
     </>

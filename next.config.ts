@@ -10,9 +10,9 @@ const nextConfig: NextConfig = {
     "/figma/[name]/spec": figmaSources,
     "/figma/[name]/code": figmaSources,
     "/api/figma-source": figmaSources,
-    // QC hub (/qc) reads requirements, registries and the screen map at request time
-    "/qc": qcSources,
-    "/qc/**": qcSources,
+    // QC hub (/hub) reads requirements, registries and the screen map at request time
+    "/hub": qcSources,
+    "/hub/**": qcSources,
   },
 };
 

@@ -35,7 +35,7 @@ const ScreensPage = async ({ searchParams }: { searchParams: Promise<{ loai?: st
             name="q"
             defaultValue={q}
             placeholder="Lọc theo mã hoặc tên…"
-            className="w-full rounded-2xl border border-(--qc-line) bg-(--qc-panel) px-4 py-2.5 text-sm outline-none placeholder:text-(--qc-faint) focus:border-(--qc-accent)"
+            className="w-full rounded-2xl border border-(--hub-line) bg-(--hub-panel) px-4 py-2.5 text-sm outline-none placeholder:text-(--hub-faint) focus:border-(--hub-accent)"
           />
         </form>
       </PageHead>
@@ -43,19 +43,19 @@ const ScreensPage = async ({ searchParams }: { searchParams: Promise<{ loai?: st
         {KINDS.map(([k, label]) => (
           <Link
             key={k}
-            href={`/qc/man?loai=${k}${q ? `&q=${encodeURIComponent(q)}` : ""}`}
-            className={`rounded-full px-3 py-1 text-xs ${k === loai ? "bg-(--qc-accent-strong) text-white" : "bg-(--qc-panel-2) text-(--qc-muted) hover:text-(--qc-text)"}`}
+            href={`/hub/man?loai=${k}${q ? `&q=${encodeURIComponent(q)}` : ""}`}
+            className={`rounded-full px-3 py-1 text-xs ${k === loai ? "bg-(--hub-accent-strong) text-white" : "bg-(--hub-panel-2) text-(--hub-muted) hover:text-(--hub-text)"}`}
           >
             {label}
           </Link>
         ))}
       </div>
       <Panel>
-        <ul className="divide-y divide-(--qc-line)/60 text-[13px]">
+        <ul className="divide-y divide-(--hub-line)/60 text-[13px]">
           {list.map((r) => (
             <li key={r.code}>
-              <Link href={`/qc/man/${r.code}`} className="flex items-center gap-3 py-2.5 hover:text-(--qc-accent)">
-                <span className="w-[150px] shrink-0 font-mono text-(--qc-accent)">{r.code}</span>
+              <Link href={`/hub/man/${r.code}`} className="flex items-center gap-3 py-2.5 hover:text-(--hub-accent)">
+                <span className="w-[150px] shrink-0 font-mono text-(--hub-accent)">{r.code}</span>
                 <span className="min-w-0 flex-1 truncate">{r.title}</span>
                 {requirementPages(r.code).length > 0 && <Tag tone="green">Có requirement</Tag>}
                 {r.kind === "du-kien" ? <Tag tone="gray">Chưa vẽ</Tag> : <KindTag kind={r.kind} />}

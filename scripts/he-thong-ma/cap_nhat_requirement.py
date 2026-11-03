@@ -15,7 +15,7 @@ Các bước:
      (kiem_noi_dung.py). Thiếu ở bất kỳ file nào thì dừng, không đụng docs/requirements.
   4. Dựng lại cụm + registry + danh sách sửa Figma theo bộ mới.
   5. Thay docs/requirements; ghi mã dự kiến, mã trang, ảnh Figma mới nhất, bảng màn -> requirement cho bot báo,
-     mục lục cho web QC Hub (/qc).
+     mục lục cho web QC Hub (/hub).
   6. Đóng zip gửi QC (mặc định cạnh thư mục repo, tên theo ngày, không ghi đè).
 Xong thì xem `git diff`, commit, push.
 """
@@ -64,13 +64,13 @@ def main():
     ap.add_argument("source", help="zip của QC, hoặc thư mục requirements gốc")
     ap.add_argument("--work", default=os.path.abspath(os.path.join(HERE, "..", "..")))
     ap.add_argument("--out")
-    ap.add_argument("--no-zip", action="store_true", help="không đóng zip gửi QC (web QC Hub /qc đọc thẳng từ repo)")
+    ap.add_argument("--no-zip", action="store_true", help="không đóng zip gửi QC (web QC Hub /hub đọc thẳng từ repo)")
     ap.add_argument("--summary", help="ghi tóm tắt Markdown (cho tin báo Google Chat)")
     args = ap.parse_args()
     w = args.work
     tmp = tempfile.mkdtemp(prefix="cap-nhat-req-")
     source = os.path.abspath(os.path.expanduser(args.source))
-    originals = f"{w}/qc/requirements"
+    originals = f"{w}/hub/requirements"
     if os.path.isdir(source):
         src = source
     else:  # zip mới: thay bản gốc trong repo để lần sau sửa tiếp ở đó

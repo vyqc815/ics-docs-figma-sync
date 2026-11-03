@@ -12,19 +12,19 @@ export function ClusterGrid({ onlyWithRequirement = false }: { onlyWithRequireme
   return (
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       {list.map((c) => (
-        <Link key={c.name} href={`/qc/cum/${c.name}`} className="group overflow-hidden rounded-2xl bg-(--qc-panel-2) transition-colors hover:bg-(--qc-panel-3)">
-          <div className="aspect-[16/9] overflow-hidden bg-(--qc-panel-3)">{c.cover && <LiveShot code={c.cover.id} className="h-full rounded-none" />}</div>
+        <Link key={c.name} href={`/hub/cum/${c.name}`} className="group overflow-hidden rounded-2xl bg-(--hub-panel-2) transition-colors hover:bg-(--hub-panel-3)">
+          <div className="aspect-[16/9] overflow-hidden bg-(--hub-panel-3)">{c.cover && <LiveShot code={c.cover.id} className="h-full rounded-none" />}</div>
           <div className="p-4">
-            <p className="line-clamp-2 min-h-[40px] text-[15px] leading-5 font-medium group-hover:text-(--qc-accent)">{c.title}</p>
-            <div className="mt-3 grid grid-cols-4 gap-2 text-center text-[11px] text-(--qc-muted)">
+            <p className="line-clamp-2 min-h-[40px] text-[15px] leading-5 font-medium group-hover:text-(--hub-accent)">{c.title}</p>
+            <div className="mt-3 grid grid-cols-4 gap-2 text-center text-[11px] text-(--hub-muted)">
               {[
                 ["Màn", c.s.screens],
                 ["File", c.s.files],
                 ["Item", c.s.items],
                 ["Case", c.s.testcases],
               ].map(([k, v]) => (
-                <div key={k} className="rounded-lg bg-(--qc-panel) py-1.5">
-                  <p className="text-[14px] font-semibold text-(--qc-text)">{v}</p>
+                <div key={k} className="rounded-lg bg-(--hub-panel) py-1.5">
+                  <p className="text-[14px] font-semibold text-(--hub-text)">{v}</p>
                   {k}
                 </div>
               ))}

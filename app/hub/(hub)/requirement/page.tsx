@@ -13,19 +13,19 @@ const RequirementsPage = (): React.JSX.Element => {
       <div className="space-y-5">
         {[...groups].map(([group, list]) => (
           <Panel key={group} title={<span className="font-mono text-[15px]">{group}</span>}>
-            <ul className="divide-y divide-(--qc-line)/60 text-[13px]">
+            <ul className="divide-y divide-(--hub-line)/60 text-[13px]">
               {list.map((f) => {
                 const cluster = clusterOfFile(f.path);
                 const mapped = f.pages.filter((p) => p.screens.length).length;
                 const href = cluster
-                  ? `/qc/cum/${cluster}?tab=requirement&file=${encodeURIComponent(f.path)}`
-                  : `/qc/requirement/xem?f=${encodeURIComponent(f.path)}`;
+                  ? `/hub/cum/${cluster}?tab=requirement&file=${encodeURIComponent(f.path)}`
+                  : `/hub/requirement/xem?f=${encodeURIComponent(f.path)}`;
                 return (
                   <li key={f.path}>
-                    <Link href={href} className="flex items-center gap-3 py-2.5 hover:text-(--qc-accent)">
-                      <span className="w-[90px] shrink-0 font-mono text-(--qc-accent)">{f.prefix || "—"}</span>
+                    <Link href={href} className="flex items-center gap-3 py-2.5 hover:text-(--hub-accent)">
+                      <span className="w-[90px] shrink-0 font-mono text-(--hub-accent)">{f.prefix || "—"}</span>
                       <span className="min-w-0 flex-1 truncate">{f.title}</span>
-                      <span className="hidden text-xs text-(--qc-faint) md:block">
+                      <span className="hidden text-xs text-(--hub-faint) md:block">
                         {mapped}/{f.pages.length} trang có mã màn
                       </span>
                       {!cluster && <Tag tone="gray">Chưa có màn Figma</Tag>}

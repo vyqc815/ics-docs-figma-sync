@@ -6,7 +6,7 @@ Tài liệu này dành cho team dựng web QC. Làm đúng các quy tắc dướ
 
 | Dữ liệu | Lấy ở đâu | Ghi chú |
 |---|---|---|
-| Requirement theo template, có mã | Web QC Hub `/qc` (mục 1b), hoặc `docs/requirements/**.md` trên GitHub nhánh `main` | Chỉ đọc. **Không sửa file này**: lần chuyển sau sẽ ghi đè |
+| Requirement theo template, có mã | Web QC Hub `/hub` (mục 1b), hoặc `docs/requirements/**.md` trên GitHub nhánh `main` | Chỉ đọc. **Không sửa file này**: lần chuyển sau sẽ ghi đè |
 | Requirement gốc | File gốc của QC | **QC chỉ sửa ở file gốc**, gửi bản mới để chuyển lại |
 | Mã màn → loại, màn cha, frame | `docs/he-thong-ma/figma-frames.json` | `loai`: `man-chinh`, `popup`, `trang-thai`, `dropdown`, `ban-toi` |
 | Mã màn → route trên demo | `figma.pages.json` (`name` = mã viết thường, `route`) | Popup/trạng thái mở trên màn cha bằng `?popup=MÃ` / `?state=MÃ` |
@@ -15,15 +15,15 @@ Tài liệu này dành cho team dựng web QC. Làm đúng các quy tắc dướ
 
 ## 1b. Web QC Hub (thay cho web QC riêng)
 
-Xem trực tiếp tại `https://ics-figma-demo.vercel.app/qc` (mật khẩu chung của team). Luôn là bản mới nhất trên `main`:
+Xem trực tiếp tại `https://ics-figma-demo.vercel.app/hub` (mật khẩu chung của team). Luôn là bản mới nhất trên `main`:
 
 | Trang | Có gì |
 |---|---|
-| Tổng quan `/qc` | Số liệu, ô tìm mọi mã (màn, item, REQ, testcase, tên), các cụm có requirement |
-| Cụm `/qc/cum/<cụm>` | 4 tab: Màn hình (ảnh Figma trực tiếp, mở demo/Figma), Requirement (file theo template, mục lục trang), Item (khớp layer Figma, trạng thái), Testcase (lọc theo REQ, Priority) |
-| Requirement `/qc/requirement` | Đủ mọi file QC, kể cả file chưa có màn Figma |
-| Màn `/qc/man/<MÃ>` | Ảnh Figma, trang requirement nhắc tới màn, item trên màn, testcase liên quan |
-| Chưa gắn mã `/qc/chua-gan-ma` | Trang requirement chưa nối được với frame Figma |
+| Tổng quan `/hub` | Số liệu, ô tìm mọi mã (màn, item, REQ, testcase, tên), các cụm có requirement |
+| Cụm `/hub/cum/<cụm>` | 4 tab: Màn hình (ảnh Figma trực tiếp, mở demo/Figma), Requirement (file theo template, mục lục trang), Item (khớp layer Figma, trạng thái), Testcase (lọc theo REQ, Priority) |
+| Requirement `/hub/requirement` | Đủ mọi file QC, kể cả file chưa có màn Figma |
+| Màn `/hub/man/<MÃ>` | Ảnh Figma, trang requirement nhắc tới màn, item trên màn, testcase liên quan |
+| Chưa gắn mã `/hub/chua-gan-ma` | Trang requirement chưa nối được với frame Figma |
 
 QC sửa bản gốc ở `qc/requirements` trên GitHub → vài phút sau web tự cập nhật (xem `.github/workflows/requirements.yml`). Không cần gửi zip.
 

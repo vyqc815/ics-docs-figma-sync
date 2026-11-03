@@ -15,7 +15,7 @@ const TYPES: Record<string, string> = {
   ".webp": "image/webp",
 };
 
-/** GET /qc/anh/<path> → an image a requirement links to, only for signed-in hub users. */
+/** GET /hub/anh/<path> → an image a requirement links to, only for signed-in hub users. */
 export async function GET(_req: Request, { params }: { params: Promise<{ path: string[] }> }): Promise<Response> {
   if (!(await signedIn())) return new Response("Cần đăng nhập.", { status: 401 });
   const file = normalize(join(REQ_DIR, ...(await params).path.map(decodeURIComponent)));

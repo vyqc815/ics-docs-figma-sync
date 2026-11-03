@@ -13,9 +13,9 @@ const UnmappedPage = (): React.JSX.Element => {
         sub={`${rows.length} trang · toast không có frame riêng, hoặc màn chưa vẽ trên Figma. Gắn mã: sửa docs/he-thong-ma/ma-trang-duyet.json`}
       />
       <Panel>
-        <div className="overflow-x-auto qc-scroll">
+        <div className="overflow-x-auto hub-scroll">
           <table className="w-full min-w-[720px] text-[13px]">
-            <thead className="text-left text-(--qc-faint)">
+            <thead className="text-left text-(--hub-faint)">
               <tr>
                 <th className="py-2 pr-3 font-medium">File</th>
                 <th className="py-2 pr-3 font-medium">Trang</th>
@@ -23,16 +23,16 @@ const UnmappedPage = (): React.JSX.Element => {
                 <th className="py-2 font-medium">Frame ứng viên</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-(--qc-line)/60">
+            <tbody className="divide-y divide-(--hub-line)/60">
               {rows.map((r) => {
                 const c = clusterOfFile(r.file);
                 const no = r.page.match(/^Trang (\d+)/)?.[1];
                 return (
                   <tr key={`${r.file}-${r.page}`} className="align-top">
-                    <td className="py-2.5 pr-3 font-mono text-[11px] text-(--qc-muted)">{r.file}</td>
+                    <td className="py-2.5 pr-3 font-mono text-[11px] text-(--hub-muted)">{r.file}</td>
                     <td className="py-2.5 pr-3">
                       {c ? (
-                        <Link href={`/qc/cum/${c}?tab=requirement&file=${encodeURIComponent(r.file)}#trang-${no}`} className="hover:text-(--qc-accent)">
+                        <Link href={`/hub/cum/${c}?tab=requirement&file=${encodeURIComponent(r.file)}#trang-${no}`} className="hover:text-(--hub-accent)">
                           {r.page}
                         </Link>
                       ) : (
@@ -47,7 +47,7 @@ const UnmappedPage = (): React.JSX.Element => {
                         .split(", ")
                         .filter(Boolean)
                         .map((code) => (
-                          <Link key={code} href={`/qc/man/${code}`} className="mr-2 text-(--qc-accent) hover:underline">
+                          <Link key={code} href={`/hub/man/${code}`} className="mr-2 text-(--hub-accent) hover:underline">
                             {code}
                           </Link>
                         ))}
