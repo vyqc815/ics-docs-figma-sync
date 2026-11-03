@@ -138,3 +138,18 @@
   font-weight: 600;
   text-align: left;
 }
+
+/* QC screenshot replaced by the live Figma image on the same page: kept as a small link */
+.hub-md .hub-qc-shot {
+  display: inline-block;
+  margin: 2px 8px 2px 0;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--hub-muted);
+  background: var(--hub-panel-2);
+}
+.hub-md .hub-qc-shot:hover {
+  color: var(--hub-accent);
+}
