@@ -299,6 +299,13 @@
     "Trang 1: Thống kê"
    ],
    "note": "đã có frame trên Figma"
+  },
+  "CD-KH-030248": {
+   "requirement": "course_management/knowledge-s1/knowledge-s1.md",
+   "pages": [
+    "Trang 13: Cụm liên kết với Chi tiết bài học"
+   ],
+   "note": "Tab Kiến thức (chỉ xem) của Chi tiết bài học, thay popup CD-KH-030270 đã bỏ; design cần vẽ frame và đặt mã này"
   }
  }
 }

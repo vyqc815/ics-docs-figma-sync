@@ -494,7 +494,7 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 
 - Gỡ không xoá bản ghi thư viện; khoá khác đang dùng bản ghi không bị ảnh hưởng.
 
-### Trang 16: Cụm liên kết với Chi tiết bài học
+### Trang 16: CD-KH-030248 — Cụm liên kết với Chi tiết bài học
 ![Trang 16](./images/19-popup-them-vao-bai.png)
 
 *Figma `CD-KH-030270` vẽ popup thêm từng mục vào bài học — <b>đã bỏ</b>, bài học chỉ hiển thị mục của cụm đã liên kết; cần vẽ lại tab chỉ xem — nhấn để xem ảnh gốc*
