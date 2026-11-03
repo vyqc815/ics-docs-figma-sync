@@ -1,6 +1,6 @@
 # [Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -42,14 +42,14 @@ Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` (tool đoán:SP-TASK
 | `A01.04` | cot-thoi-gian |  | `3845:49781` Thời gian | — |  | `TC04` | Khớp | QC |
 | `A01.05` | task-hom-nay | `Card Menu v2 (Test)` Type=Con progress, State=Select | `I4915:257614;4901:224373` Card Menu | — |  | `TC01`, `TC02`, `TC04`, `TC05`, `TC06`, `TC07`, `TC09` | Khớp | QC |
 | `A01.06` | task-tuan-nay | `Card Menu v2 (Test)` Type=Con progress, State=Default | `I4915:257614;4901:224374` Card Menu | — |  | `TC04`, `TC05`, `TC06` | Khớp | QC |
-| `A01.07` | task-thang-nay |  |  | — |  | `TC04`, `TC05`, `TC06`, `TC07`, `TC09` | Chưa thấy trên Figma | QC |
+| `A01.07` | task-thang-nay |  |  | — |  | `TC04`, `TC05`, `TC06`, `TC07`, `TC09` | Chưa khớp tự động | QC |
 | `A01.08` | ca-truc | `Card Menu v2 (Test)` Type=Con progress, State=Default | `I4915:257614;4901:224375` Card Menu | — |  | `TC06`, `TC10a` | Khớp | QC |
-| `A01.09` | task-khac |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.09` | task-khac |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.10` | kiem-tra | `Atom/Badge`  | `I3857:72467;1048:1255` Badge | — |  | `TC03` | Khớp | QC |
 | `A01.11` | danh-gia |  | `3857:72475` Task · Đánh giá · Thường xuyên nhắc nhở học  | — |  |  | Khớp | QC |
 | `A01.12` | task-tien-trinh |  | `3857:72440` Task · Task tiến trình · Nhắc nhở học viên trước bu | — |  |  | Khớp | QC |
-| `A01.13` | task-nhap-lieu |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.14` | huong-dan-media |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.13` | task-nhap-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.14` | huong-dan-media |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.15` | deadline-xac-thuc-log | `LOGO CENTER`  | `I4915:257614;4901:224383` LOGO CENTER | — |  |  | Khớp | QC |
 
 ### `A02` Trang 2: Task Khác và Popup chọn quy trình
@@ -58,10 +58,10 @@ Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` (tool đoán:SP-TASK
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | nut-chon-quy-trinh |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.01` | nut-chon-quy-trinh |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.02` | danh-sach-task |  | `3845:49699` Danh sách task | — |  | `TC11`, `TC13` | Khớp | QC |
-| `A02.03` | popup-o-tim-kiem |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.04` | popup-danh-sach |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.03` | popup-o-tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.04` | popup-danh-sach |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.05` | popup-huy-xac-nhan | `Atom/Input` State=Counter, Kiểu=Chuẩn | `I3857:72491;1056:1242` Đã nhập xong | — |  |  | Khớp | QC |
 | `A02.06` | atom-input | `Atom/Input` State=Default, Kiểu=Chuẩn | `3857:72454` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
 | `A02.07` | atom-label | `Atom/Label`  | `3857:72487` Atom/Label | — |  |  | Chỉ có trên Figma | Figma |
@@ -75,8 +75,8 @@ Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` (tool đoán:SP-TASK
 | `A03.01` | dropdown-quy-trinh | `Card Menu v2 (Test)` Type=Chính dropdown, State=Default | `I4915:257614;4901:224371` Card Menu | — |  |  | Khớp | QC |
 | `A03.02` | dropdown-khoang-thoi-gian | `DD/Molecule/Trigger` Size=XS, State=Active | `3845:49782` Filter · Tuần này | — |  |  | Khớp | QC |
 | `A03.03` | dropdown-ca | `DD/Molecule/Trigger` Size=XS, State=Default | `3857:76690` Filter · Ca | — |  |  | Khớp một phần | QC |
-| `A03.04` | sang |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.05` | chieu |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.04` | sang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | chieu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.06` | toi | `AVATAR + Name`  | `I6935:389044;1904:8731` Trần Nguyễn Hoài Phương | — |  |  | Khớp | QC |
 
 ### `A04` Trang 4: Popup thêm người vào Danh sách Support
@@ -85,8 +85,8 @@ Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` (tool đoán:SP-TASK
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | o-tim-kiem |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.02` | nhom-nguoi-dung |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.01` | o-tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | nhom-nguoi-dung |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.03` | checkbox | `Checkbox` Size=20 | `3857:72444` Checkbox | — |  |  | Khớp | QC |
 
 ### `F01` Header
@@ -165,7 +165,7 @@ Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` · Nguồn nội dun
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (11): `A01.07`, `A01.09`, `A01.13`, `A01.14`, `A02.01`, `A02.03`, `A02.04`, `A03.04`, `A03.05`, `A04.01`, `A04.02`
+- Chưa khớp tự động (11): `A01.07`, `A01.09`, `A01.13`, `A01.14`, `A02.01`, `A02.03`, `A02.04`, `A03.04`, `A03.05`, `A04.01`, `A04.02`
 - Frame Figma chưa có requirement (4): `SP-TASK-030002`, `SP-TASK-030003`, `SP-TASK-030004`, `SP-TASK-030010`
 - Thiếu prototype link đi vào (1): `SP-TASK-030010`
 - REQ/EX chưa có testcase (3): `REQ09`, `EX06`, `EX07`

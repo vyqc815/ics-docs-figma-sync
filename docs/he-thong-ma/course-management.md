@@ -1,6 +1,6 @@
 # Quản lý khoá học
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -55,11 +55,11 @@ Frame: `CD-KH-010000` (tool đoán:CD-KH-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | tieu-de |  |  | — |  | `TC26` | Chưa thấy trên Figma | QC |
+| `A04.01` | tieu-de |  |  | — |  | `TC26` | Chưa khớp tự động | QC |
 | `A04.02` | noi-dung | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:256174;4901:216084` Card Menu | — |  | `TC14`, `TC15`, `TC17`, `TC26`, `TC27`, `TC28` | Khớp | QC |
-| `A04.03` | nut |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.04` | toast-thanh-cong |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.05` | toast-loi |  |  | — |  | `TC14`, `TC15`, `TC16`, `TC17` | Chưa thấy trên Figma | QC |
+| `A04.03` | nut |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.04` | toast-thanh-cong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.05` | toast-loi |  |  | — |  | `TC14`, `TC15`, `TC16`, `TC17` | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -160,7 +160,7 @@ Frame: `CD-KH-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (4): `A04.01`, `A04.03`, `A04.04`, `A04.05`
+- Chưa khớp tự động (4): `A04.01`, `A04.03`, `A04.04`, `A04.05`
 - Frame Figma chưa có requirement (2): `CD-KH-010010`, `CD-KH-010013`
 - Phân loại cần design duyệt (1): `CD-KH-010013`
 - Testcase trỏ mã không tồn tại (2): `TC24`, `TC25`

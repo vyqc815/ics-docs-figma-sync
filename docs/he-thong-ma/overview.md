@@ -1,6 +1,6 @@
 # [Phụ trách lớp] Trang chủ — Thống kê tổng quan
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -36,8 +36,8 @@ Frame: `CH-TC-010000` (tool đoán:CH-TC-010000) · Nguồn nội dung: QC
 | `A01.04` | trang-thai-nut-hien-thi-gia-tri-dang-cho | `DD/Molecule/Trigger` Size=XS, State=Active | `3778:20160` Filter · Đang học | — |  |  | Khớp | QC |
 | `A01.05` | thoi-gian-nut-hien-thi-gia-tri-dang-chon | `DD/Molecule/Trigger` Size=XS, State=Active | `3778:20161` Filter · Tháng này | — |  |  | Khớp | QC |
 | `A01.06` | che-do-loc | `DD/Molecule/Trigger` Size=XS, State=Active | `3778:20162` Filter · Chế độ lọc | — |  | `TC03` | Khớp | QC |
-| `A01.07` | ngay-bat-dau-du-kien-chinh-thuc |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.08` | ngay-ket-thuc-du-kien-chinh-thuc |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.07` | ngay-bat-dau-du-kien-chinh-thuc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.08` | ngay-ket-thuc-du-kien-chinh-thuc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.09` | doanh-thu | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3778:24833` Thẻ chỉ số · Doanh thu | — |  | `TC04`, `TC13` | Khớp | QC |
 | `A01.10` | so-kpi | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3778:24840` Thẻ chỉ số · Số KPI | — |  | `TC04`, `TC13` | Khớp | QC |
 | `A01.11` | kpi-nhan-duoc | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3778:24847` Thẻ chỉ số · KPI nhận được | — |  | `TC04`, `TC13` | Khớp | QC |
@@ -46,7 +46,7 @@ Frame: `CH-TC-010000` (tool đoán:CH-TC-010000) · Nguồn nội dung: QC
 | `A01.14` | di-hoc | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3778:24869` Thẻ chỉ số · Đi học | — |  | `TC06`, `TC09` | Khớp | QC |
 | `A01.15` | btvn | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3778:24876` Thẻ chỉ số · BTVN | — |  | `TC06`, `TC09` | Khớp | QC |
 | `A01.16` | len-ky | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3778:24883` Thẻ chỉ số · Lên kỳ | — |  | `TC12`, `TC09` | Khớp | QC |
-| `A01.17` | badge-hang-tong |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.17` | badge-hang-tong |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.18` | hoan-thanh | `CLass Status`  | `3778:34502` CLass Status | — |  | `TC02`, `TC12` | Khớp | QC |
 | `A01.19` | chua-hoan-thanh-dang-hoc | `DD/Molecule/Trigger` Size=XS, State=Active | `3778:20160` Filter · Đang học | — |  |  | Khớp | QC |
 
@@ -128,7 +128,7 @@ Frame: `CH-TC-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (3): `A01.07`, `A01.08`, `A01.17`
+- Chưa khớp tự động (3): `A01.07`, `A01.08`, `A01.17`
 - Frame Figma chưa có requirement (1): `CH-TC-010001`
 - Phân loại cần design duyệt (1): `CH-TC-010001`
 - REQ/EX chưa có testcase (1): `REQ07`

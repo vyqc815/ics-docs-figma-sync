@@ -1,6 +1,6 @@
 # Chi tiết lớp học — Tab Thông tin
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -41,7 +41,7 @@ Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 | `A01.08` | ngay-ket-thuc | `Atom/Label`  | `I3004:50041;3004:58620` Atom/Label | — |  |  | Khớp | QC |
 | `A01.09` | loai-lop | `Atom/Label`  | `I3004:49798;3004:58620` Atom/Label | — |  | `TC01`, `TC02`, `TC06`, `TC07` | Khớp | QC |
 | `A01.10` | trang-thai | `Atom/Label`  | `I3004:50093;3004:58620` Atom/Label | — |  | `TC01` | Khớp | QC |
-| `A01.11` | luu-cap-nhat |  |  | — |  | `TC02`, `TC03`, `TC04` | Chưa thấy trên Figma | QC |
+| `A01.11` | luu-cap-nhat |  |  | — |  | `TC02`, `TC03`, `TC04` | Chưa khớp tự động | QC |
 | `A01.12` | xoa-lop | `ACCOUNT` Size=Default; `Atom/Button` Type=Outlined, Size=Small | `3650:46245` Atom/Button; `3497:50611` ACCOUNT | — |  |  | Khớp | QC |
 
 ### `A02` Dropdown chọn Khóa học
@@ -50,10 +50,10 @@ Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | gia-tri-hien-tai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.02` | o-tim-kiem |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.03` | danh-sach-khoa-hoc |  |  | — |  | `TC09` | Chưa thấy trên Figma | QC |
-| `A02.04` | chon-khoa-hoc-moi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.01` | gia-tri-hien-tai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.02` | o-tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.03` | danh-sach-khoa-hoc |  |  | — |  | `TC09` | Chưa khớp tự động | QC |
+| `A02.04` | chon-khoa-hoc-moi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Nhóm Ngày bắt đầu, Ngày kết thúc và lịch được sinh
 
@@ -63,11 +63,11 @@ Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 |---|---|---|---|---|---|---|---|---|
 | `A03.01` | ngay-bat-dau | `Atom/Label`  | `I3004:50122;3004:58620` Atom/Label | — |  | `TC29`, `TC30`, `TC36` | Khớp | QC |
 | `A03.02` | ngay-ket-thuc | `Atom/Label`  | `I3004:50041;3004:58620` Atom/Label | — |  | `TC29`, `TC31`, `TC32`, `TC33`, `TC34`, `TC35`, `TC36` | Khớp | QC |
-| `A03.03` | lich-co-dinh |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.04` | lich-buoi-duoc-chen |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.05` | xoa-huy-mot-buoi-co-tinh-vao-chuong-trin |  |  | — |  | `TC33` | Chưa thấy trên Figma | QC |
-| `A03.06` | doi-lich-mot-buoi |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.07` | khung-gio-bi-trung |  |  | — |  | `TC35` | Chưa thấy trên Figma | QC |
+| `A03.03` | lich-co-dinh |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | lich-buoi-duoc-chen |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | xoa-huy-mot-buoi-co-tinh-vao-chuong-trin |  |  | — |  | `TC33` | Chưa khớp tự động | QC |
+| `A03.06` | doi-lich-mot-buoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.07` | khung-gio-bi-trung |  |  | — |  | `TC35` | Chưa khớp tự động | QC |
 
 ### `A04` Dropdown Trạng thái
 
@@ -75,10 +75,10 @@ Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | trang-thai-hien-tai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.02` | danh-sach-trang-thai |  |  | — |  | `TC37` | Chưa thấy trên Figma | QC |
-| `A04.03` | trang-thai-dang-hoc |  |  | — |  | `TC18` | Chưa thấy trên Figma | QC |
-| `A04.04` | moi-tao-khai-giang-trai-nghiem-dang-hoc- |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.01` | trang-thai-hien-tai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | danh-sach-trang-thai |  |  | — |  | `TC37` | Chưa khớp tự động | QC |
+| `A04.03` | trang-thai-dang-hoc |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
+| `A04.04` | moi-tao-khai-giang-trai-nghiem-dang-hoc- |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.05` | xoa | `Atom/Button` Type=Outlined, Size=Small | `I3650:46245;1430:10764` Button | — |  |  | Khớp | QC |
 
 ### `A05` Popup xác nhận xóa lớp — Lần 1
@@ -87,10 +87,10 @@ Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | tieu-de |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A05.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A05.02` | noi-dung | `Atom/Input` State=Default, Kiểu=Chuẩn | `I3004:49982;3004:58628;1048:1264` Tìm nội dung... | — |  | `TC22` | Khớp | QC |
-| `A05.03` | huy |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.04` | tiep-tuc |  |  | — | opens `A05` | `TC22`, `TC24` | Chưa thấy trên Figma | QC |
+| `A05.03` | huy |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.04` | tiep-tuc |  |  | — | opens `A05` | `TC22`, `TC24` | Chưa khớp tự động | QC |
 
 ### `A06` Popup xác nhận xóa lớp — Lần 2
 
@@ -98,9 +98,9 @@ Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | tieu-de |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A06.02` | noi-dung | `Atom/Input` State=Default, Kiểu=Chuẩn | `I3004:49982;3004:58628;1048:1264` Tìm nội dung... | — |  |  | Khớp | QC |
-| `A06.03` | quay-lai |  |  | — |  | `TC25` | Chưa thấy trên Figma | QC |
+| `A06.03` | quay-lai |  |  | — |  | `TC25` | Chưa khớp tự động | QC |
 | `A06.04` | xoa-lop | `ACCOUNT` Size=Default; `Atom/Button` Type=Outlined, Size=Small | `3650:46245` Atom/Button; `3497:50611` ACCOUNT | — |  | `TC26` | Khớp | QC |
 
 ### `A07` Toast phản hồi CRUD
@@ -109,9 +109,9 @@ Frame: `ADM-LOP-040100` (tool đoán:ADM-LOP-040100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa thấy trên Figma | QC |
+| `A07.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
 | `A07.02` | thong-tin | `Atom/Side Tab` State=Active, Kiểu=Gạch trái; `Molecule/Field`  | `I2199:19568;2177:28936` Nhiệm vụ con; `3004:49982` Molecule/Field | — |  |  | Khớp | QC |
-| `A07.03` | canh-bao |  |  | — |  | `TTC02` | Chưa thấy trên Figma | QC |
+| `A07.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
 | `A07.04` | loi | `Molecule/Field`  | `3004:49982` Molecule/Field | — |  |  | Khớp | QC |
 
 ### `F01` (ngoài Body)
@@ -217,7 +217,7 @@ Frame: `ADM-LOP-040100` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (21): `A01.11`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A05.01`, `A05.03`, `A05.04`, `A06.01`, `A06.03`, `A07.01`, `A07.03`
+- Chưa khớp tự động (21): `A01.11`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A05.01`, `A05.03`, `A05.04`, `A06.01`, `A06.03`, `A07.01`, `A07.03`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`
 - REQ/EX chưa có testcase (3): `REQ08`, `REQ09`, `EX02`
 

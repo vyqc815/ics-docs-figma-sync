@@ -1,6 +1,6 @@
 # [Giáo viên] Lịch sử & lương
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -41,28 +41,28 @@ Frame: `GV-LS-010000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | bo-loc-thoi-gian |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.02` | tuy-chon |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.01` | bo-loc-thoi-gian |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.02` | tuy-chon |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.03` | so-lop | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97125` Thẻ chỉ số · Số lớp | — |  | `TC7b` | Khớp | QC |
 | `A01.04` | so-buoi-da-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97126` Thẻ chỉ số · Số buổi đã dạy | — |  |  | Khớp | QC |
 | `A01.05` | luong-buoi-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97127` Thẻ chỉ số · Lương buổi dạy | — |  | `TC7a` | Khớp | QC |
 | `A01.06` | luong-kpi | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97128` Thẻ chỉ số · Lương KPI | — |  |  | Khớp | QC |
 | `A01.07` | luong-ot | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97129` Thẻ chỉ số · Lương OT | — |  |  | Khớp | QC |
 | `A01.08` | tong-luong | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:99317` Thẻ chỉ số · Tổng lương | — |  | `TC7a` | Khớp | QC |
-| `A01.09` | ba-tab |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.10` | dinh-dang-tien |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.09` | ba-tab |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.10` | dinh-dang-tien |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.11` | lop | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:263183;4901:212425` Card Menu | — |  |  | Khớp | QC |
 | `A01.12` | ten-buoi-hoc |  | `3868:99377` Tên buổi học | — |  |  | Khớp | QC |
 | `A01.13` | si-so |  | `3868:99379` Sĩ số | — |  | `TC05` | Khớp | QC |
 | `A01.14` | thoi-gian |  | `3868:99381` Thời gian | — |  | `TC7b` | Khớp | QC |
 | `A01.15` | luong-buoi-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:97127` Thẻ chỉ số · Lương buổi dạy | — |  | `TC7a` | Khớp | QC |
-| `A01.16` | sap-xep |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.17` | khong-co-buoi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.16` | sap-xep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.17` | khong-co-buoi |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.18` | lop | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:263183;4901:212425` Card Menu | — |  |  | Khớp | QC |
 | `A01.19` | so-buoi |  | `3868:99703` Số buổi | — |  | `TC03`, `TC7b` | Khớp | QC |
 | `A01.20` | tong-luong | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3868:99317` Thẻ chỉ số · Tổng lương | — |  | `TC7a` | Khớp | QC |
-| `A01.21` | tuong-tac-dong-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.22` | phan-trang |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.21` | tuong-tac-dong-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.22` | phan-trang |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.23` | sidebar-menu-teacher | `MENU - TEACHER`  | `4915:263183` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
 
 ### `A02` Tab KPI
@@ -76,8 +76,8 @@ Frame: `GV-LS-010003` · Nguồn nội dung: QC
 | `A02.03` | ngay-ghi-nhan |  | `3868:102238` Ngày ghi nhận | — |  |  | Khớp | QC |
 | `A02.04` | trang-thai |  | `3868:102240` Trạng thái | — |  |  | Khớp | QC |
 | `A02.05` | tien-thuong |  | `3868:102242` Tiền thưởng | — |  |  | Khớp | QC |
-| `A02.06` | sap-xep |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.07` | trang-thai-rong |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.06` | sap-xep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.07` | trang-thai-rong |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Tab OT
 
@@ -90,8 +90,8 @@ Frame: `GV-LS-010004` · Nguồn nội dung: QC
 | `A03.03` | ngay-ghi-nhan |  | `3868:102730` Ngày ghi nhận | — |  | `TC13`, `TC14a` | Khớp | QC |
 | `A03.04` | trang-thai |  | `3868:102732` Trạng thái | — |  | `TC14` | Khớp | QC |
 | `A03.05` | tien-thuong |  | `3868:102734` Tiền thưởng | — |  |  | Khớp | QC |
-| `A03.06` | quyen |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.07` | rong-loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.06` | quyen |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.07` | rong-loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Popup Đề xuất tăng lương
 
@@ -133,16 +133,16 @@ Frame: `GV-LS-010011`, `GV-LS-010014`, `GV-LS-010016` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | chua-co-de-xuat-dang-cho |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.01` | chua-co-de-xuat-dang-cho |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A06.02` | moi | `CLass Status`  | `4760:16947` CLass Status | — |  |  | Khớp | QC |
 | `A06.03` | dang-xu-ly | `Molecule/Trạng thái đề xuất tăng lương`  | `4899:105946` Trạng thái đề xuất | — |  | `TC25`, `TC26a` | Khớp một phần | QC |
-| `A06.04` | da-duyet-tu-choi |  |  | — |  | `TC26` | Chưa thấy trên Figma | QC |
-| `A06.05` | da-huy |  |  | — |  | `TC23`, `TC25` | Chưa thấy trên Figma | QC |
-| `A06.06` | de-xuat-dang-cho |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.07` | du-lieu-xac-nhan |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.08` | giu-de-xuat |  |  | — |  | `TC22` | Chưa thấy trên Figma | QC |
+| `A06.04` | da-duyet-tu-choi |  |  | — |  | `TC26` | Chưa khớp tự động | QC |
+| `A06.05` | da-huy |  |  | — |  | `TC23`, `TC25` | Chưa khớp tự động | QC |
+| `A06.06` | de-xuat-dang-cho |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.07` | du-lieu-xac-nhan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.08` | giu-de-xuat |  |  | — |  | `TC22` | Chưa khớp tự động | QC |
 | `A06.09` | huy-de-xuat | `Molecule/Trạng thái đề xuất tăng lương`  | `I4899:106093;4899:105924` Huỷ đề xuất | — |  | `TC21` | Khớp một phần | QC |
-| `A06.10` | huy-va-gui-lai |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.10` | huy-va-gui-lai |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A07` Popup Lịch sử đề xuất tăng lương
 
@@ -262,7 +262,7 @@ Frame: `GV-LS-010000`, `GV-LS-010003`, `GV-LS-010004`, `GV-LS-010011`, `GV-LS-01
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (19): `A01.01`, `A01.02`, `A01.09`, `A01.10`, `A01.16`, `A01.17`, `A01.21`, `A01.22`, `A02.06`, `A02.07`, `A03.06`, `A03.07`, `A06.01`, `A06.04`, `A06.05`, `A06.06`, `A06.07`, `A06.08`, `A06.10`
+- Chưa khớp tự động (19): `A01.01`, `A01.02`, `A01.09`, `A01.10`, `A01.16`, `A01.17`, `A01.21`, `A01.22`, `A02.06`, `A02.07`, `A03.06`, `A03.07`, `A06.01`, `A06.04`, `A06.05`, `A06.06`, `A06.07`, `A06.08`, `A06.10`
 - Chưa sync (26): `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A04.09`, `A04.10`, `A04.11`, `A04.12`, `A04.13`, `A04.14`, `A04.15`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`
 - Thiếu prototype link đi vào (2): `ADM-LGV-020010`, `GV-LS-010012`
 - Phân loại cần design duyệt (1): `GV-LS-010012`

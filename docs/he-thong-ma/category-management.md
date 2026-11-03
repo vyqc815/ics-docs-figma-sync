@@ -1,6 +1,6 @@
 # Quản lý danh sách danh mục
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -39,11 +39,11 @@ Frame: `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040` (tool đoán:CD-DM-010020,
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | id |  | `1758:4996` 01 | — | governed-by `REQ01` |  | Khớp | QC |
-| `A01.02` | ten-danh-muc |  |  | — |  | `TC06` | Chưa thấy trên Figma | QC |
-| `A01.03` | mo-ta-danh-muc |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.04` | cau-hinh-mindset-tieu-chuan-giao-trinh-h |  |  | — |  | `TC21` | Chưa thấy trên Figma | QC |
-| `A01.05` | so-khoa-hoc |  |  | — |  | `TC01` | Chưa thấy trên Figma | QC |
-| `A01.06` | trang-thai |  |  | — | governed-by `REQ02` | `TC01`, `TC06`, `TC07`, `TC08`, `TC09`, `TC11`, `TC13`, `TC14`, `TC17`, `TC18`, `TC25`, `TC27` | Chưa thấy trên Figma | QC |
+| `A01.02` | ten-danh-muc |  |  | — |  | `TC06` | Chưa khớp tự động | QC |
+| `A01.03` | mo-ta-danh-muc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.04` | cau-hinh-mindset-tieu-chuan-giao-trinh-h |  |  | — |  | `TC21` | Chưa khớp tự động | QC |
+| `A01.05` | so-khoa-hoc |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
+| `A01.06` | trang-thai |  |  | — | governed-by `REQ02` | `TC01`, `TC06`, `TC07`, `TC08`, `TC09`, `TC11`, `TC13`, `TC14`, `TC17`, `TC18`, `TC25`, `TC27` | Chưa khớp tự động | QC |
 
 ### `A02` Xóa danh mục
 
@@ -51,8 +51,8 @@ Frame: `CD-DM-010000` (tool đoán:CD-DM-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | popup-xac-nhan-xoa |  |  | — |  | `TC20` | Chưa thấy trên Figma | QC |
-| `A02.02` | toast-loi-khong-duoc-xoa |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.01` | popup-xac-nhan-xoa |  |  | — |  | `TC20` | Chưa khớp tự động | QC |
+| `A02.02` | toast-loi-khong-duoc-xoa |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Popup Kích hoạt công khai danh mục
 
@@ -161,7 +161,7 @@ Frame: `CD-DM-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (7): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A02.01`, `A02.02`
+- Chưa khớp tự động (7): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A02.01`, `A02.02`
 - Chưa sync (10): `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`
 - Frame Figma chưa có requirement (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Thiếu prototype link đi vào (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`

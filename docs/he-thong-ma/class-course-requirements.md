@@ -1,6 +1,6 @@
 # [Giáo viên] Chi tiết lớp — Khoá học
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -29,9 +29,9 @@ Frame: `GV-LOP-080100` · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | danh-sach-ben-phai |  | `4333:16299` Danh Sách | — |  |  | Khớp | QC |
-| `A01.02` | tieu-de-ben-trai |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.02` | tieu-de-ben-trai |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.03` | khoi-noi-dung |  | `4333:16362` Chân dung học viên | — |  |  | Khớp | QC |
-| `A01.04` | nguon |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.04` | nguon |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.05` | khong-co-du-lieu |  | `4333:16299` Danh Sách | — |  |  | Khớp | QC |
 
 ### `A02` Hướng dẫn giảng dạy
@@ -41,8 +41,8 @@ Frame: `GV-LOP-090100` · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A02.01` | danh-sach |  | `4333:14614` Danh sách | — |  |  | Khớp | QC |
-| `A02.02` | vung-trai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.03` | khi-co-du-lieu |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.02` | vung-trai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.03` | khi-co-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -83,7 +83,7 @@ Frame: `GV-LOP-080100` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (4): `A01.02`, `A01.04`, `A02.02`, `A02.03`
+- Chưa khớp tự động (4): `A01.02`, `A01.04`, `A02.02`, `A02.03`
 - Popup chưa có màn cha (1): `GV-LOP-090100`
 - Phân loại cần design duyệt (1): `GV-LOP-090100`
 - Thiếu prototype link đi vào (1): `GV-LOP-090100`

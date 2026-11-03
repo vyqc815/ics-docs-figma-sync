@@ -1,6 +1,6 @@
 # Chi tiết lớp học — Tab Giáo viên
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -32,9 +32,9 @@ Frame: `ADM-LOP-040300` (tool đoán:ADM-LOP-040300) · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | ten |  | `I3138:130161;3138:130001` Tên | — |  |  | Khớp | QC |
-| `A01.02` | email |  |  | — |  | `TC01` | Chưa thấy trên Figma | QC |
+| `A01.02` | email |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
 | `A01.03` | phu-trach-chinh |  | `2384:50902` PHỤ TRÁCH CHÍNH | — |  | `TC01`, `TC02` | Khớp | QC |
-| `A01.04` | xoa |  |  | — | opens `A06` |  | Chưa thấy trên Figma | QC |
+| `A01.04` | xoa |  |  | — | opens `A06` |  | Chưa khớp tự động | QC |
 | `A01.05` | them-giao-vien-vao-lop | `Atom/Button` Type=Warning, Size=Medium | `2384:54527` Atom/Button | — | opens `A01` |  | Khớp | QC |
 
 ### `A02` Popup chọn cách thêm giáo viên
@@ -43,9 +43,9 @@ Frame: `ADM-LOP-040300` (tool đoán:ADM-LOP-040300) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | chon-giao-vien |  |  | — | opens `A02` | `TC06` | Chưa thấy trên Figma | QC |
-| `A02.02` | tao-giao-vien-moi |  |  | — | opens `A04` | `TC06` | Chưa thấy trên Figma | QC |
-| `A02.03` | dong-popup |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.01` | chon-giao-vien |  |  | — | opens `A02` | `TC06` | Chưa khớp tự động | QC |
+| `A02.02` | tao-giao-vien-moi |  |  | — | opens `A04` | `TC06` | Chưa khớp tự động | QC |
+| `A02.03` | dong-popup |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Popup Chọn giáo viên hiện có
 
@@ -53,10 +53,10 @@ Frame: `ADM-LOP-040300` (tool đoán:ADM-LOP-040300) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tim-kiem |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.01` | tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.02` | danh-sach |  | `2384:54526` Danh sách giáo viên | — |  | `TC07`, `TC10`, `TC11`, `TC28` | Khớp | QC |
 | `A03.03` | huy |  | `I3138:130161;3138:130001` Tên | — |  |  | Khớp | QC |
-| `A03.04` | them-moi |  |  | — |  | `TC08` | Chưa thấy trên Figma | QC |
+| `A03.04` | them-moi |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
 
 ### `A04` Popup Tạo giáo viên mới dùng chung
 
@@ -64,13 +64,13 @@ Frame: `ADM-LOP-040300` (tool đoán:ADM-LOP-040300) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | ho-va-ten |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.02` | ma-giao-vien-code |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.03` | email-so-dien-thoai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.04` | trang-thai |  |  | — |  | `TC12`, `TC14`, `TC16` | Chưa thấy trên Figma | QC |
-| `A04.05` | ghi-chu |  |  | — |  | `TC12` | Chưa thấy trên Figma | QC |
+| `A04.01` | ho-va-ten |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | ma-giao-vien-code |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.03` | email-so-dien-thoai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.04` | trang-thai |  |  | — |  | `TC12`, `TC14`, `TC16` | Chưa khớp tự động | QC |
+| `A04.05` | ghi-chu |  |  | — |  | `TC12` | Chưa khớp tự động | QC |
 | `A04.06` | cac-field-khac |  | `2384:50908` Teachers Row List | — |  |  | Khớp | QC |
-| `A04.07` | xac-nhan |  |  | — |  | `TC13`, `TC14`, `TC15` | Chưa thấy trên Figma | QC |
+| `A04.07` | xac-nhan |  |  | — |  | `TC13`, `TC14`, `TC15` | Chưa khớp tự động | QC |
 
 ### `A05` Checkbox Giáo viên phụ trách chính và quyền chấm điểm
 
@@ -78,10 +78,10 @@ Frame: `ADM-LOP-040300` (tool đoán:ADM-LOP-040300) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | checkbox-chua-chon |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.02` | checkbox-da-chon |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.03` | chuyen-tu-a-sang-b |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.04` | kiem-tra-quyen-cham-diem |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A05.01` | checkbox-chua-chon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.02` | checkbox-da-chon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.03` | chuyen-tu-a-sang-b |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.04` | kiem-tra-quyen-cham-diem |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A06` Popup xác nhận xóa giáo viên khỏi lớp
 
@@ -89,11 +89,11 @@ Frame: `ADM-LOP-040300` (tool đoán:ADM-LOP-040300) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | tieu-de |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.02` | noi-dung-thuong |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.03` | canh-bao-giao-vien-chinh |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.02` | noi-dung-thuong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.03` | canh-bao-giao-vien-chinh |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A06.04` | huy |  | `I3138:130161;3138:130001` Tên | — |  |  | Khớp | QC |
-| `A06.05` | xoa |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.05` | xoa |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A07` Điều hướng đến Chi tiết giáo viên
 
@@ -101,8 +101,8 @@ Frame: `ADM-LOP-040300` (tool đoán:ADM-LOP-040300) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | vung-bam |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.02` | dich-den |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A07.01` | vung-bam |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.02` | dich-den |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A08` Toast phản hồi CRUD
 
@@ -110,10 +110,10 @@ Frame: `ADM-LOP-040300` (tool đoán:ADM-LOP-040300) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa thấy trên Figma | QC |
+| `A08.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
 | `A08.02` | thong-tin | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I2384:53549;2177:28928` Chi tiết NV | — |  |  | Khớp | QC |
-| `A08.03` | canh-bao |  |  | — |  | `TTC02` | Chưa thấy trên Figma | QC |
-| `A08.04` | loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A08.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A08.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -195,7 +195,7 @@ Frame: `ADM-LOP-040300` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (26): `A01.02`, `A01.04`, `A02.01`, `A02.02`, `A02.03`, `A03.01`, `A03.04`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.07`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A06.01`, `A06.02`, `A06.03`, `A06.05`, `A07.01`, `A07.02`, `A08.01`, `A08.03`, `A08.04`
+- Chưa khớp tự động (26): `A01.02`, `A01.04`, `A02.01`, `A02.02`, `A02.03`, `A03.01`, `A03.04`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.07`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A06.01`, `A06.02`, `A06.03`, `A06.05`, `A07.01`, `A07.02`, `A08.01`, `A08.03`, `A08.04`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`
 - REQ/EX chưa có testcase (2): `REQ09`, `EX08`
 

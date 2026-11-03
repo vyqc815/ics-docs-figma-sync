@@ -1,6 +1,6 @@
 # Lịch dạy tổng
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -30,8 +30,8 @@ Frame: `ADM-LD-010000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | khoang-tuan |  |  | — | see `A03` | `TC02` | Chưa thấy trên Figma | QC |
-| `A01.02` | cot-ngay |  |  | — |  | `TC02` | Chưa thấy trên Figma | QC |
+| `A01.01` | khoang-tuan |  |  | — | see `A03` | `TC02` | Chưa khớp tự động | QC |
+| `A01.02` | cot-ngay |  |  | — |  | `TC02` | Chưa khớp tự động | QC |
 | `A01.03` | tim-lop-giao-vien | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `4101:129471` Tìm kiếm | — |  |  | Khớp | QC |
 | `A01.04` | theo-lop |  | `5822:13473` Value | — |  | `TC01`, `TC02`, `TC06` | Khớp | QC |
 | `A01.05` | trung-tam | `DD/Molecule/Trigger` Size=XS, State=Default | `5835:2577` Filter · Trung tâm | — |  | `TC04` | Khớp | QC |
@@ -40,14 +40,14 @@ Frame: `ADM-LD-010000` · Nguồn nội dung: QC
 | `A01.08` | trinh-do | `DD/Molecule/Trigger` Size=XS, State=Active | `4101:129500` Filter · Trình độ | — |  | `TC04` | Khớp | QC |
 | `A01.09` | hoc-ky | `DD/Molecule/Trigger` Size=XS, State=Default | `4101:129512` Filter · Học kỳ | — |  |  | Khớp | QC |
 | `A01.10` | ap-dung-bo-loc |  | `5822:13473` Value | — |  |  | Khớp | QC |
-| `A01.11` | the-lich |  |  | — |  | `TC01` | Chưa thấy trên Figma | QC |
-| `A01.12` | nhieu-lich-trong-ngay |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.13` | ngay-khong-co-lich |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.14` | loading-rong-loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.11` | the-lich |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
+| `A01.12` | nhieu-lich-trong-ngay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.13` | ngay-khong-co-lich |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.14` | loading-rong-loi |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.15` | lich-co-dinh | `STATUS CALENDAR`  | `4101:129217` Lịch · DN1311-I · 09:00 - 10:30 | — |  |  | Khớp | QC |
-| `A01.16` | lich-linh-hoat |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.16` | lich-linh-hoat |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.17` | lich-hoan-thanh | `STATUS CALENDAR`  | `4101:129219` Lịch · DN350 · 09:00 - 10:30 | — |  |  | Khớp | QC |
-| `A01.18` | lich-huy-bo |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.18` | lich-huy-bo |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Chế độ Theo lớp
 
@@ -55,9 +55,9 @@ Frame: `ADM-LD-010010` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | nhom-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.02` | luoi-trong-nhom |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.03` | cuon |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.01` | nhom-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.02` | luoi-trong-nhom |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.03` | cuon |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Dropdown Tuần
 
@@ -65,10 +65,10 @@ Frame: `ADM-LD-010000`, `ADM-LD-010010` (tool đoán:ADM-LD-010000, ADM-LD-01001
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | mo |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.02` | danh-sach |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.01` | mo |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | danh-sach |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.03` | chon | `DD/Molecule/Trigger` Size=XS, State=Default | `5835:2577` Filter · Trung tâm; `5822:13473` Value | — |  |  | Khớp | QC |
-| `A03.04` | dong |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.04` | dong |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Dropdown Giáo viên
 
@@ -78,9 +78,9 @@ Frame: `ADM-LD-010000`, `ADM-LD-010010` (tool đoán:ADM-LD-010000, ADM-LD-01001
 |---|---|---|---|---|---|---|---|---|
 | `A04.01` | nut-giao-vien | `DD/Molecule/Trigger` Size=XS, State=Default | `4101:129476` Filter · Giáo viên | — |  |  | Khớp | QC |
 | `A04.02` | tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `4101:129471` Tìm kiếm | — |  |  | Khớp | QC |
-| `A04.03` | danh-sach |  |  | — |  | `TC14` | Chưa thấy trên Figma | QC |
+| `A04.03` | danh-sach |  |  | — |  | `TC14` | Chưa khớp tự động | QC |
 | `A04.04` | chon | `DD/Molecule/Trigger` Size=XS, State=Default | `5835:2577` Filter · Trung tâm | — |  | `TC14` | Khớp | QC |
-| `A04.05` | dong-panel |  |  | — |  | `TC14` | Chưa thấy trên Figma | QC |
+| `A04.05` | dong-panel |  |  | — |  | `TC14` | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -156,7 +156,7 @@ Frame: `ADM-LD-010000`, `ADM-LD-010010` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (16): `A01.01`, `A01.02`, `A01.11`, `A01.12`, `A01.13`, `A01.14`, `A01.16`, `A01.18`, `A02.01`, `A02.02`, `A02.03`, `A03.01`, `A03.02`, `A03.04`, `A04.03`, `A04.05`
+- Chưa khớp tự động (16): `A01.01`, `A01.02`, `A01.11`, `A01.12`, `A01.13`, `A01.14`, `A01.16`, `A01.18`, `A02.01`, `A02.02`, `A02.03`, `A03.01`, `A03.02`, `A03.04`, `A04.03`, `A04.05`
 - REQ/EX chưa có testcase (1): `EX04`
 
 ## 9. Chi tiết dựng

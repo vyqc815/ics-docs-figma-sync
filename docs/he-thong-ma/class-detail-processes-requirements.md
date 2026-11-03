@@ -1,6 +1,6 @@
 # Chi tiết lớp học — Tiêu chuẩn lớp - giáo viên, CSKH và Quy trình lớp
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -69,10 +69,10 @@ Frame: `ADM-LOP-020600`, `ADM-LOP-020700`, `ADM-LOP-020800` (tool đoán:ADM-LOP
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | thanh-cong |  |  | — |  | `TC05` | Chưa thấy trên Figma | QC |
-| `A03.02` | thong-bao |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.03` | canh-bao |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.04` | co-loi-xay-ra |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.01` | thanh-cong |  |  | — |  | `TC05` | Chưa khớp tự động | QC |
+| `A03.02` | thong-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.03` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | co-loi-xay-ra |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -175,7 +175,7 @@ Frame: `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (4): `A03.01`, `A03.02`, `A03.03`, `A03.04`
+- Chưa khớp tự động (4): `A03.01`, `A03.02`, `A03.03`, `A03.04`
 - Chưa sync (11): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`
 - Frame Figma chưa có requirement (13): `ADM-LOP-020604`, `ADM-LOP-020610`, `ADM-LOP-020611`, `ADM-LOP-020612`, `ADM-LOP-020704`, `ADM-LOP-020710`, `ADM-LOP-020711`, `ADM-LOP-020712`, `ADM-LOP-020804`, `ADM-LOP-020810`, `ADM-LOP-020811`, `ADM-LOP-020812`, `ADM-LOP-020904`
 - Phân loại cần design duyệt (10): `ADM-LOP-020604`, `ADM-LOP-020611`, `ADM-LOP-020612`, `ADM-LOP-020704`, `ADM-LOP-020711`, `ADM-LOP-020712`, `ADM-LOP-020804`, `ADM-LOP-020811`, `ADM-LOP-020812`, `ADM-LOP-020904`

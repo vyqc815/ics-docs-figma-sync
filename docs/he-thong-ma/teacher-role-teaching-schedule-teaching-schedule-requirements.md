@@ -1,6 +1,6 @@
 # [Giáo viên] Lịch dạy
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -34,20 +34,20 @@ Frame: `GV-LD-010000` · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | tieu-de-tab | `MENU - TEACHER`  | `5425:257921` Sidebar · MENU - TEACHER | — |  |  | Khớp | QC |
-| `A01.02` | tuan-dang-xem |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.03` | mui-ten-trai-phai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.04` | cot-ngay |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.02` | tuan-dang-xem |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.03` | mui-ten-trai-phai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.04` | cot-ngay |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.05` | theo-lop |  | `5413:53455` Value | — |  |  | Khớp | QC |
-| `A01.06` | thanh-nhom-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.07` | the-lich |  |  | — |  | `TC03`, `TC8a` | Chưa thấy trên Figma | QC |
-| `A01.08` | sap-xep-the |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.09` | o-khong-co-lich |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.10` | nhieu-lich-trong-ngay |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.11` | vien-the-tai-menu-nay |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.12` | lich-huy-bo |  |  | — |  | `TC7a` | Chưa thấy trên Figma | QC |
-| `A01.13` | trang-thai-lich |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.06` | thanh-nhom-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.07` | the-lich |  |  | — |  | `TC03`, `TC8a` | Chưa khớp tự động | QC |
+| `A01.08` | sap-xep-the |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.09` | o-khong-co-lich |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.10` | nhieu-lich-trong-ngay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.11` | vien-the-tai-menu-nay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.12` | lich-huy-bo |  |  | — |  | `TC7a` | Chưa khớp tự động | QC |
+| `A01.13` | trang-thai-lich |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.14` | luong | `ICON MENU`  | `I5425:257921;4901:212752;2245:87764` Icon | — |  | `TC07`, `TC7a`, `TC08`, `TC8a` | Khớp | QC |
-| `A01.15` | khac-man-quan-ly-lich-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.15` | khac-man-quan-ly-lich-lop |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Tab Quản lý đăng ký lịch
 
@@ -55,12 +55,12 @@ Frame: `GV-LD-020000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | cot-thu |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.01` | cot-thu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.02` | hang-buoi |  | `5413:49209` 07h30 - 12h00 | — |  |  | Khớp | QC |
-| `A02.03` | o-chua-dang-ky |  |  | — | opens `A03` |  | Chưa thấy trên Figma | QC |
+| `A02.03` | o-chua-dang-ky |  |  | — | opens `A03` |  | Chưa khớp tự động | QC |
 | `A02.04` | o-da-dang-ky |  | `5413:49274` Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này | — |  |  | Khớp | QC |
-| `A02.05` | icon-but |  |  | — | opens `A02` | `TC12` | Chưa thấy trên Figma | QC |
-| `A02.06` | bo-tick-mot-o |  |  | — |  | `TC12` | Chưa thấy trên Figma | QC |
+| `A02.05` | icon-but |  |  | — | opens `A02` | `TC12` | Chưa khớp tự động | QC |
+| `A02.06` | bo-tick-mot-o |  |  | — |  | `TC12` | Chưa khớp tự động | QC |
 | `A02.07` | bat-fulltime |  | `5413:49187` Fulltime | — |  | `TC13` | Khớp | QC |
 | `A02.08` | bo-tick-fulltime |  | `5413:49187` Fulltime | — |  | `TC14a` | Khớp | QC |
 | `A02.09` | trang-thai-fulltime |  | `5413:49187` Fulltime | — |  |  | Khớp | QC |
@@ -167,7 +167,7 @@ Frame: `GV-LD-020000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (16): `A01.02`, `A01.03`, `A01.04`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.15`, `A02.01`, `A02.03`, `A02.05`, `A02.06`
+- Chưa khớp tự động (16): `A01.02`, `A01.03`, `A01.04`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.15`, `A02.01`, `A02.03`, `A02.05`, `A02.06`
 - Chưa sync (6): `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`
 - Phân loại cần design duyệt (1): `GV-LD-010000`
 - Thiếu prototype link đi vào (2): `GV-LD-010000`, `GV-LD-020010`

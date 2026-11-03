@@ -1,6 +1,6 @@
 # Chi tiết lớp học — Tab KPI của Phụ trách lớp
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -28,15 +28,15 @@ Frame: `ADM-LOP-040700` (tool đoán:ADM-LOP-040700) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | cai-dat-kpi-va |  |  | — | opens `A01` |  | Chưa thấy trên Figma | QC |
-| `A01.02` | tim-kiem |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.01` | cai-dat-kpi-va |  |  | — | opens `A01` |  | Chưa khớp tự động | QC |
+| `A01.02` | tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.03` | ten |  | `2389:60832` Tên | — |  |  | Khớp | QC |
 | `A01.04` | ngay-ghi-nhan |  | `2389:60834` Ngày Ghi Nhận | — |  |  | Khớp | QC |
 | `A01.05` | trang-thai |  | `2389:60836` Trạng Thái | — |  | `TC04` | Khớp | QC |
 | `A01.06` | so-tien |  | `2389:60838` Số Tiền | — |  |  | Khớp | QC |
 | `A01.07` | ghi-chu |  | `2389:60840` Ghi Chú | — |  |  | Khớp | QC |
 | `A01.08` | ngay-cap-nhat |  | `2389:60842` Ngày Cập Nhật | — |  |  | Khớp | QC |
-| `A01.09` | x |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.09` | x |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Popup thêm và chỉnh sửa KPI
 
@@ -59,10 +59,10 @@ Frame: `ADM-LOP-040700` (tool đoán:ADM-LOP-040700) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | moi |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.02` | da-xac-nhan |  |  | — |  | `TC11` | Chưa thấy trên Figma | QC |
-| `A03.03` | da-huy |  |  | — |  | `TC12` | Chưa thấy trên Figma | QC |
-| `A03.04` | da-xoa |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.01` | moi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | da-xac-nhan |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
+| `A03.03` | da-huy |  |  | — |  | `TC12` | Chưa khớp tự động | QC |
+| `A03.04` | da-xoa |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Xóa khoản KPI
 
@@ -70,9 +70,9 @@ Frame: `ADM-LOP-040700` (tool đoán:ADM-LOP-040700) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | popup |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.02` | huy-bo |  |  | — |  | `TC15` | Chưa thấy trên Figma | QC |
-| `A04.03` | xac-nhan-xoa |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.01` | popup |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | huy-bo |  |  | — |  | `TC15` | Chưa khớp tự động | QC |
+| `A04.03` | xac-nhan-xoa |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A05` Ghi chú, lịch sử và Copy
 
@@ -80,12 +80,12 @@ Frame: `ADM-LOP-040700` (tool đoán:ADM-LOP-040700) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | popup-ghi-chu |  |  | — |  | `TC18` | Chưa thấy trên Figma | QC |
-| `A05.02` | o-nhap-noi-dung-textarea |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.03` | luu-noi-dung |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.04` | icon-lich-su |  |  | — | opens `A05` | `TC18`, `TC25` | Chưa thấy trên Figma | QC |
-| `A05.05` | moi-phien-ban |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.06` | copy |  |  | — |  | `TC18` | Chưa thấy trên Figma | QC |
+| `A05.01` | popup-ghi-chu |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
+| `A05.02` | o-nhap-noi-dung-textarea |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.03` | luu-noi-dung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.04` | icon-lich-su |  |  | — | opens `A05` | `TC18`, `TC25` | Chưa khớp tự động | QC |
+| `A05.05` | moi-phien-ban |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.06` | copy |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
 
 ### `A06` Tổng chi PTL
 
@@ -93,8 +93,8 @@ Frame: `ADM-LOP-040700` (tool đoán:ADM-LOP-040700) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | chi-phi-ptl-cua-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.02` | tong-chi-ptl |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.01` | chi-phi-ptl-cua-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.02` | tong-chi-ptl |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A07` Toast và trạng thái tải
 
@@ -102,11 +102,11 @@ Frame: `ADM-LOP-040700` (tool đoán:ADM-LOP-040700) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | loading-rong-loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.02` | thanh-cong |  |  | — |  | `TC22` | Chưa thấy trên Figma | QC |
-| `A07.03` | canh-bao |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.04` | co-loi-xay-ra |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.05` | thong-bao |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A07.01` | loading-rong-loi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.02` | thanh-cong |  |  | — |  | `TC22` | Chưa khớp tự động | QC |
+| `A07.03` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.04` | co-loi-xay-ra |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.05` | thong-bao |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -180,7 +180,7 @@ Frame: `ADM-LOP-040700` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (23): `A01.01`, `A01.02`, `A01.09`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`
+- Chưa khớp tự động (23): `A01.01`, `A01.02`, `A01.09`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`
 - Chưa sync (8): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`
 - Frame Figma chưa có requirement (2): `ADM-LOP-040710`, `ADM-LOP-040712`
 - Thiếu prototype link đi vào (1): `ADM-LOP-040710`

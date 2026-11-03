@@ -1,6 +1,6 @@
 # Tạo lớp học
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -111,10 +111,10 @@ Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A10.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa thấy trên Figma | QC |
-| `A10.02` | thong-tin |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A10.03` | canh-bao |  |  | — |  | `TTC02` | Chưa thấy trên Figma | QC |
-| `A10.04` | loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A10.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
+| `A10.02` | thong-tin |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A10.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A10.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -210,7 +210,7 @@ Frame: `ADM-LOP-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (4): `A10.01`, `A10.02`, `A10.03`, `A10.04`
+- Chưa khớp tự động (4): `A10.01`, `A10.02`, `A10.03`, `A10.04`
 - Chưa sync (15): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.14`, `A01.15`
 - Frame Figma chưa có requirement (6): `ADM-LOP-010002`, `ADM-LOP-010004`, `ADM-LOP-010010`, `ADM-LOP-010020`, `ADM-LOP-010040`, `ADM-LOP-010050`
 - Thiếu prototype link đi vào (4): `ADM-LOP-010010`, `ADM-LOP-010020`, `ADM-LOP-010040`, `ADM-LOP-010050`

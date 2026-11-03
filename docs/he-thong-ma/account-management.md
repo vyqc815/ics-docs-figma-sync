@@ -1,6 +1,6 @@
 # Quản lý tài khoản (Master)
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -51,9 +51,9 @@ Frame: `MST-TK-010000`, `MST-TK-020000` (tool đoán:MST-TK-010000, MST-TK-02000
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04`, `TC16`, `TC17`, `TC18` | Chưa thấy trên Figma | QC |
+| `A03.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04`, `TC16`, `TC17`, `TC18` | Chưa khớp tự động | QC |
 | `A03.02` | thong-tin | `Molecule/Field`  | `3005:41047` Thông Tin Cá Nhân; `3005:43093` Molecule/Field | — |  | `TC06`, `TC11`, `TC12` | Khớp một phần | QC |
-| `A03.03` | canh-bao |  |  | — |  | `TTC02`, `TC16` | Chưa thấy trên Figma | QC |
+| `A03.03` | canh-bao |  |  | — |  | `TTC02`, `TC16` | Chưa khớp tự động | QC |
 | `A03.04` | loi | `Molecule/Field`  | `3005:43093` Molecule/Field | — |  |  | Khớp một phần | QC |
 
 ### `F01` (ngoài Body)
@@ -132,7 +132,7 @@ Frame: `MST-TK-010000`, `MST-TK-020000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (2): `A03.01`, `A03.03`
+- Chưa khớp tự động (2): `A03.01`, `A03.03`
 - Frame Figma chưa có requirement (4): `MST-TK-010010`, `MST-TK-010020`, `MST-TK-010030`, `PRO-GD-010010`
 - Thiếu prototype link đi vào (4): `MST-TK-010010`, `MST-TK-010020`, `MST-TK-010030`, `PRO-GD-010010`
 - Phân loại cần design duyệt (1): `PRO-GD-010010`

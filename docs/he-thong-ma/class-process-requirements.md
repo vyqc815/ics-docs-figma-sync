@@ -1,6 +1,6 @@
 # [Giáo viên] Chi tiết lớp — Quy trình
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -32,11 +32,11 @@ Frame: `GV-LOP-060100` · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | tien-do-tong | `Card Menu v2 (Test)` Type=Menu phụ, State=Default | `I4915:260963;4901:214201;2245:87908` Label | — |  | `TC02`, `TC05` | Khớp | QC |
-| `A01.02` | cay-package-category-action-item |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.03` | mo-rong-item |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.04` | action-xac-thuc-verify-duoc-gan |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.05` | action-xac-thuc-verify-khong-gan-loai-kh |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.06` | nut-them-tieu-chuan |  |  | — |  | `TC01` | Chưa thấy trên Figma | QC |
+| `A01.02` | cay-package-category-action-item |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.03` | mo-rong-item |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.04` | action-xac-thuc-verify-duoc-gan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.05` | action-xac-thuc-verify-khong-gan-loai-kh |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.06` | nut-them-tieu-chuan |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
 | `A01.07` | khong-co-noi-dung |  | `4333:13216` Bảng dữ liệu này đang trống | — |  |  | Khớp | QC |
 
 ### `A02` Cuộc họp — Khung màn và Danh sách buổi họp
@@ -46,12 +46,12 @@ Frame: `GV-LOP-070100` · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A02.01` | danh-sach-buoi-hop |  | `4333:13923` Danh sách buổi họp | — |  |  | Khớp | QC |
-| `A02.02` | card-buoi-hop |  |  | — | opens `A02` |  | Chưa thấy trên Figma | QC |
-| `A02.03` | chon-buoi |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.04` | so-nguoi-tham-gia |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.05` | badge-cung-thoi-gian |  |  | — | opens `A02` |  | Chưa thấy trên Figma | QC |
+| `A02.02` | card-buoi-hop |  |  | — | opens `A02` |  | Chưa khớp tự động | QC |
+| `A02.03` | chon-buoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.04` | so-nguoi-tham-gia |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.05` | badge-cung-thoi-gian |  |  | — | opens `A02` |  | Chưa khớp tự động | QC |
 | `A02.06` | khong-co-buoi |  | `4333:13926` Chưa có dữ liệu | — |  |  | Khớp | QC |
-| `A02.07` | loading-loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.07` | loading-loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Nội dung buổi họp và Action Item
 
@@ -134,7 +134,7 @@ Frame: chưa có · Nguồn nội dung: QC
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (10): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.07`
+- Chưa khớp tự động (10): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.07`
 - Chưa sync (12): `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A04.01`, `A04.02`, `A04.03`, `A04.04`
 - Popup chưa có màn cha (2): `GV-LOP-060100`, `GV-LOP-070100`
 - Phân loại cần design duyệt (2): `GV-LOP-060100`, `GV-LOP-070100`

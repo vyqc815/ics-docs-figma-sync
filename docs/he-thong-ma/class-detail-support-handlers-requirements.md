@@ -1,6 +1,6 @@
 # Chi tiết lớp học — Tab Trợ giảng & Phụ trách lớp
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -31,13 +31,13 @@ Frame: `ADM-LOP-040400` (tool đoán:ADM-LOP-040400) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | ten-tab |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.01` | ten-tab |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.02` | khu-vuc-tro-giang |  | `2384:54801` Support | — |  | `TC01` | Khớp | QC |
-| `A01.03` | khu-vuc-phu-trach-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.03` | khu-vuc-phu-trach-lop |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.04` | ten |  | `2384:54739` Tên | — |  |  | Khớp | QC |
-| `A01.05` | email |  |  | — |  | `TC03` | Chưa thấy trên Figma | QC |
-| `A01.06` | icon-x |  |  | — | opens `A06` | `TC03` | Chưa thấy trên Figma | QC |
-| `A01.07` | nut-them |  |  | — | opens `A01` | `TC04` | Chưa thấy trên Figma | QC |
+| `A01.05` | email |  |  | — |  | `TC03` | Chưa khớp tự động | QC |
+| `A01.06` | icon-x |  |  | — | opens `A06` | `TC03` | Chưa khớp tự động | QC |
+| `A01.07` | nut-them |  |  | — | opens `A01` | `TC04` | Chưa khớp tự động | QC |
 
 ### `A02` Popup chọn cách thêm nhân sự
 
@@ -45,9 +45,9 @@ Frame: `ADM-LOP-040400` (tool đoán:ADM-LOP-040400) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | khu-vuc-phu-trach-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.02` | khu-vuc-tro-giang |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.03` | dong-huy |  |  | — |  | `TC08` | Chưa thấy trên Figma | QC |
+| `A02.01` | khu-vuc-phu-trach-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.02` | khu-vuc-tro-giang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.03` | dong-huy |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
 
 ### `A03` Popup chọn Phụ trách lớp có sẵn
 
@@ -55,11 +55,11 @@ Frame: `ADM-LOP-040400` (tool đoán:ADM-LOP-040400) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tim-kiem |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.02` | danh-sach-ket-qua |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.01` | tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | danh-sach-ket-qua |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.03` | checkbox | `Checkbox` Size=24 | `2384:54775` Checkbox | — |  |  | Khớp | QC |
 | `A03.04` | huy |  | `2384:54753` Thanh huy - CSKH | — |  |  | Khớp | QC |
-| `A03.05` | them |  |  | — |  | `TC09`, `TC11`, `TC13` | Chưa thấy trên Figma | QC |
+| `A03.05` | them |  |  | — |  | `TC09`, `TC11`, `TC13` | Chưa khớp tự động | QC |
 
 ### `A04` Popup chọn Trợ giảng có sẵn
 
@@ -67,10 +67,10 @@ Frame: `ADM-LOP-040400` (tool đoán:ADM-LOP-040400) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | tim-kiem |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.02` | danh-sach-ket-qua |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.01` | tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | danh-sach-ket-qua |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.03` | checkbox | `Checkbox` Size=24 | `2384:54775` Checkbox | — |  |  | Khớp | QC |
-| `A04.04` | huy-them |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.04` | huy-them |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A05` Popup Tạo Phụ trách lớp/Trợ giảng mới dùng chung
 
@@ -78,10 +78,10 @@ Frame: `ADM-LOP-040400` (tool đoán:ADM-LOP-040400) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | form-tao-tai-khoan |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.02` | role |  |  | — |  | `TC17`, `TC18`, `TC19`, `TC20` | Chưa thấy trên Figma | QC |
+| `A05.01` | form-tao-tai-khoan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.02` | role |  |  | — |  | `TC17`, `TC18`, `TC19`, `TC20` | Chưa khớp tự động | QC |
 | `A05.03` | huy |  | `2384:54753` Thanh huy - CSKH | — |  |  | Khớp | QC |
-| `A05.04` | xac-nhan-tao |  |  | — |  | `TC18`, `TC20` | Chưa thấy trên Figma | QC |
+| `A05.04` | xac-nhan-tao |  |  | — |  | `TC18`, `TC20` | Chưa khớp tự động | QC |
 
 ### `A06` Icon Xóa khỏi lớp không cần xác nhận
 
@@ -89,10 +89,10 @@ Frame: `ADM-LOP-040400` (tool đoán:ADM-LOP-040400) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | icon-x |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.02` | khi-bam |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.03` | thanh-cong |  |  | — |  | `TC23`, `TC24`, `TC25` | Chưa thấy trên Figma | QC |
-| `A06.04` | that-bai |  |  | — |  | `TC25` | Chưa thấy trên Figma | QC |
+| `A06.01` | icon-x |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.02` | khi-bam |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.03` | thanh-cong |  |  | — |  | `TC23`, `TC24`, `TC25` | Chưa khớp tự động | QC |
+| `A06.04` | that-bai |  |  | — |  | `TC25` | Chưa khớp tự động | QC |
 
 ### `A07` Phân quyền hỗ trợ lớp và giới hạn chấm điểm
 
@@ -100,11 +100,11 @@ Frame: `ADM-LOP-040400` (tool đoán:ADM-LOP-040400) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | xem-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.02` | ho-tro-quan-ly |  |  | — |  | `TC27` | Chưa thấy trên Figma | QC |
-| `A07.03` | them-xoa-nhan-su-tai-tab-nay |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.04` | cham-diem-btvn |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.05` | cham-diem-bai-kiem-tra |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A07.01` | xem-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.02` | ho-tro-quan-ly |  |  | — |  | `TC27` | Chưa khớp tự động | QC |
+| `A07.03` | them-xoa-nhan-su-tai-tab-nay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.04` | cham-diem-btvn |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.05` | cham-diem-bai-kiem-tra |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A08` Toast phản hồi CRUD
 
@@ -112,10 +112,10 @@ Frame: `ADM-LOP-040400` (tool đoán:ADM-LOP-040400) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa thấy trên Figma | QC |
+| `A08.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
 | `A08.02` | thong-tin | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I2384:54702;2177:28928` Chi tiết NV | — |  |  | Khớp | QC |
-| `A08.03` | canh-bao |  |  | — |  | `TTC02` | Chưa thấy trên Figma | QC |
-| `A08.04` | loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A08.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A08.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -196,7 +196,7 @@ Frame: `ADM-LOP-040400` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (29): `A01.01`, `A01.03`, `A01.05`, `A01.06`, `A01.07`, `A02.01`, `A02.02`, `A02.03`, `A03.01`, `A03.02`, `A03.05`, `A04.01`, `A04.02`, `A04.04`, `A05.01`, `A05.02`, `A05.04`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A08.01`, `A08.03`, `A08.04`
+- Chưa khớp tự động (29): `A01.01`, `A01.03`, `A01.05`, `A01.06`, `A01.07`, `A02.01`, `A02.02`, `A02.03`, `A03.01`, `A03.02`, `A03.05`, `A04.01`, `A04.02`, `A04.04`, `A05.01`, `A05.02`, `A05.04`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A08.01`, `A08.03`, `A08.04`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`
 - REQ/EX chưa có testcase (2): `REQ07`, `EX07`
 

@@ -1,6 +1,6 @@
 # Chi tiết lớp học — Tab Lịch dạy
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -35,13 +35,13 @@ Frame: `ADM-LOP-040500` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | khoang-tuan |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.02` | cot-ngay |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.03` | tag-lich-co-dinh |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.04` | nut-them-lich-day-co-dinh |  |  | — | opens `A03` |  | Chưa thấy trên Figma | QC |
-| `A01.05` | o-dau-cua-ngay |  |  | — | opens `A03` |  | Chưa thấy trên Figma | QC |
-| `A01.06` | the-lich |  |  | — |  | `TC02` | Chưa thấy trên Figma | QC |
-| `A01.07` | vung-lich |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.01` | khoang-tuan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.02` | cot-ngay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.03` | tag-lich-co-dinh |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.04` | nut-them-lich-day-co-dinh |  |  | — | opens `A03` |  | Chưa khớp tự động | QC |
+| `A01.05` | o-dau-cua-ngay |  |  | — | opens `A03` |  | Chưa khớp tự động | QC |
+| `A01.06` | the-lich |  |  | — |  | `TC02` | Chưa khớp tự động | QC |
+| `A01.07` | vung-lich |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Thẻ lịch và bốn trạng thái chính thức
 
@@ -60,12 +60,12 @@ Frame: `ADM-LOP-040510`, `ADM-LOP-040521` (tool đoán:ADM-LOP-040510, ADM-LOP-0
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tab-co-dinh-linh-hoat |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.01` | tab-co-dinh-linh-hoat |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.02` | chon-ngay-bat-dau | `Time`  | `I2384:59020;1739:32355` Thứ Ba, 22.09.2026 | — |  |  | Khớp | QC |
-| `A03.03` | gio-bat-dau-ket-thuc |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.04` | thu-2-chu-nhat |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.03` | gio-bat-dau-ket-thuc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | thu-2-chu-nhat |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.05` | them-lich-day |  | `2384:59178` Thêm lịch dạy | — |  |  | Khớp | QC |
-| `A03.06` | icon-thung-rac |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.06` | icon-thung-rac |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.07` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167767;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 | `A03.08` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167767;2514:153363` Atom/Button | — |  | `TC10`, `TC11`, `TC12`, `TC13`, `TC14`, `TC15` | Khớp | QC |
 
@@ -87,14 +87,14 @@ Frame: `ADM-LOP-040500` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | tieu-de |  |  | — |  | `TC21` | Chưa thấy trên Figma | QC |
-| `A05.02` | thoi-gian-ngay |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.03` | gio-bat-dau |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A05.01` | tieu-de |  |  | — |  | `TC21` | Chưa khớp tự động | QC |
+| `A05.02` | thoi-gian-ngay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.03` | gio-bat-dau |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A05.04` | giao-vien | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I2384:57888;2177:28928` Chi tiết NV | — |  | `TC21`, `TC24`, `TC25` | Khớp | QC |
-| `A05.05` | thoi-gian-hoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.06` | trang-thai |  |  | — |  | `TC21`, `TC22`, `TC26`, `TC27` | Chưa thấy trên Figma | QC |
+| `A05.05` | thoi-gian-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.06` | trang-thai |  |  | — |  | `TC21`, `TC22`, `TC26`, `TC27` | Chưa khớp tự động | QC |
 | `A05.07` | huy | `STATUS CALENDAR`  | `3650:48210` STATUS CALENDAR; `3650:48210` STATUS CALENDAR | — |  |  | Khớp | QC |
-| `A05.08` | xac-nhan |  |  | — |  | `TC22`, `TC23`, `TC24`, `TC25`, `TC27` | Chưa thấy trên Figma | QC |
+| `A05.08` | xac-nhan |  |  | — |  | `TC22`, `TC23`, `TC24`, `TC25`, `TC27` | Chưa khớp tự động | QC |
 
 ### `A06` Hoàn thành và hủy lịch
 
@@ -103,10 +103,10 @@ Frame: `ADM-LOP-040500` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A06.01` | hoan-thanh | `STATUS CALENDAR`  | `2384:57687` STATUS CALENDAR | — |  | `TC28`, `TC29`, `TC30`, `TC35` | Khớp | QC |
-| `A06.02` | hoan-thanh-qua-luong-day |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.02` | hoan-thanh-qua-luong-day |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A06.03` | huy-bo | `STATUS CALENDAR`  | `3650:48210` STATUS CALENDAR | — |  |  | Khớp | QC |
-| `A06.04` | sua-lich-chua-hoan-thanh |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.05` | xoa |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.04` | sua-lich-chua-hoan-thanh |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.05` | xoa |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A07` Mở lại lịch đã hoàn thành và đảo lương
 
@@ -114,11 +114,11 @@ Frame: `ADM-LOP-040500` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | nut-mo-lai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.02` | ly-do-dieu-chinh |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.03` | canh-bao |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A07.01` | nut-mo-lai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.02` | ly-do-dieu-chinh |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.03` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.04` | huy | `STATUS CALENDAR`  | `3650:48210` STATUS CALENDAR | — |  |  | Khớp | QC |
-| `A07.05` | xac-nhan-mo-lai |  |  | — |  | `TC39` | Chưa thấy trên Figma | QC |
+| `A07.05` | xac-nhan-mo-lai |  |  | — |  | `TC39` | Chưa khớp tự động | QC |
 
 ### `A08` Toast phản hồi CRUD lịch
 
@@ -126,10 +126,10 @@ Frame: `ADM-LOP-040500` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | thanh-cong |  |  | — |  | `TC44`, `TC45` | Chưa thấy trên Figma | QC |
+| `A08.01` | thanh-cong |  |  | — |  | `TC44`, `TC45` | Chưa khớp tự động | QC |
 | `A08.02` | thong-tin | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I2384:57886;2177:28928` Chi tiết NV | — |  |  | Khớp | QC |
-| `A08.03` | canh-bao |  |  | — |  | `TC45` | Chưa thấy trên Figma | QC |
-| `A08.04` | loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A08.03` | canh-bao |  |  | — |  | `TC45` | Chưa khớp tự động | QC |
+| `A08.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -232,7 +232,7 @@ Frame: `ADM-LOP-040500` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (27): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A03.01`, `A03.03`, `A03.04`, `A03.06`, `A05.01`, `A05.02`, `A05.03`, `A05.05`, `A05.06`, `A05.08`, `A06.02`, `A06.04`, `A06.05`, `A07.01`, `A07.02`, `A07.03`, `A07.05`, `A08.01`, `A08.03`, `A08.04`
+- Chưa khớp tự động (27): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A03.01`, `A03.03`, `A03.04`, `A03.06`, `A05.01`, `A05.02`, `A05.03`, `A05.05`, `A05.06`, `A05.08`, `A06.02`, `A06.04`, `A06.05`, `A07.01`, `A07.02`, `A07.03`, `A07.05`, `A08.01`, `A08.03`, `A08.04`
 - Chưa sync (5): `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`
 - Frame Figma chưa có requirement (3): `ADM-LOP-040510`, `ADM-LOP-040520`, `ADM-LOP-040521`
 - Phân loại cần design duyệt (1): `ADM-LOP-040521`

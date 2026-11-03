@@ -1,6 +1,6 @@
 # Lộ Trình (S4)
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -34,10 +34,10 @@ Frame: `CD-KH-020200` (tool đoán:CD-KH-020200) · Nguồn nội dung: QC
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | tick-tong-buoi | `Atom/Status` Size=S | `2808:53251` Trạng thái số buổi | — |  |  | Khớp | QC |
 | `A01.02` | tick-tong-buoi | `Atom/Status` Size=S | `2808:53235` Trạng thái số buổi | — |  |  | Khớp | QC |
-| `A01.03` | tick-tong-buoi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.03` | tick-tong-buoi |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.04` | 90-100 | `Atom/Chip` Type=Thời gian · 90–100% | `2808:53136` Atom/Chip · Thời gian | — |  |  | Khớp | QC |
-| `A01.05` | 80-90 |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.06` | 0-va-80 |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.05` | 80-90 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.06` | 0-va-80 |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.07` | 00-00-00 | `Atom/Chip` Type=Thời gian · Chưa có | `2808:53166` Atom/Chip · Thời gian | — |  |  | Khớp | QC |
 | `A01.08` | 100 | `Atom/Chip` Type=Thời gian · 90–100% | `2808:53136` Atom/Chip · Thời gian | — |  |  | Khớp | QC |
 
@@ -106,7 +106,7 @@ Frame: `CD-KH-020200` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (3): `A01.03`, `A01.05`, `A01.06`
+- Chưa khớp tự động (3): `A01.03`, `A01.05`, `A01.06`
 - Testcase không trỏ REQ (11): `TC01`, `TC02`, `TC03`, `TC04`, `TC05`, `TC06`, `TC07`, `TC08`, `TC09`, `TC10`, `TC11`
 - REQ/EX chưa có testcase (19): `REQ01`, `REQ02`, `REQ03`, `REQ04`, `REQ05`, `REQ06`, `REQ07`, `REQ08`, `REQ09`, `REQ10`, `EX01`, `EX02`, `EX03`, `EX04`, `EX05`, `EX06`, `EX07`, `EX08`, `EX09`
 

@@ -510,7 +510,7 @@ def issues(out, screens):
 
 
 # ---------------------------------------------------------------- md
-STATUS = {"khop": "Khớp", "khop-mot-phan": "Khớp một phần", "chua-thay-tren-figma": "Chưa thấy trên Figma",
+STATUS = {"khop": "Khớp", "khop-mot-phan": "Khớp một phần", "chua-thay-tren-figma": "Chưa khớp tự động",
           "chua-co-spec": "Chưa sync", "chua-co-thiet-ke": "Chưa có thiết kế",
           "req-ghi-thieu-nhung-figma-co": "Requirement ghi thiếu, Figma đã có", "chi-co-tren-figma": "Chỉ có trên Figma"}
 KIND = {"man-chinh": "Màn chính", "popup": "Popup", "trang-thai": "Trạng thái", "dropdown": "Dropdown", "chua-co-frame": "Chưa có frame"}
@@ -532,7 +532,9 @@ def md(cluster, R, path):
     mains = [s for s in S.values() if s["kind"] == "man-chinh"]
     subs = [s for s in S.values() if s["kind"] not in ("man-chinh",)]
     L = [f"# {R['title']}", "", "> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, "
-         "Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.", "",
+         "Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. "
+         "*Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync "
+         "hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.", "",
          "## 1. Định danh", "", "| Mã | Tên | Route | Bản tối | Nguồn |", "|---|---|---|---|---|"]
     for s in mains:
         L.append(f"| `{s['id']}` | {esc(s['title'] or '—')} | `{s['route'] or '—'}` | {('`' + s['dark'] + '`') if s['dark'] else '—'} | {SRC[s['source']]} |")

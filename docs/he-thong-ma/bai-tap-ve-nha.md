@@ -1,6 +1,6 @@
 # Bài tập về nhà và Kiểm tra (CD-KH-06xx)
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -59,8 +59,8 @@ Frame: `CD-KH-060100`, `CD-KH-060200` · Nguồn nội dung: QC
 | `A01.01` | tab-btvn | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `I5491:347473;2177:28936` Nhiệm vụ con | có |  | `TC01` | Khớp | QC |
 | `A01.02` | tab-kiem-tra | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I5491:347475;2177:28928` Chi tiết NV | có |  | `TC03` | Khớp | QC |
 | `A01.03` | o-tim-bai-hoc-tim-bai-kiem-tra | `Atom/Input` State=Search, Kiểu=S | `5491:346599` Atom/Input | có |  |  | Khớp | QC |
-| `A01.04` | chon-bai |  |  | — |  | `TC01` | Chưa thấy trên Figma | QC |
-| `A01.05` | ky-cong-khai-vo-hieu |  |  | — | governed-by `REQ09` |  | Chưa thấy trên Figma | QC |
+| `A01.04` | chon-bai |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
+| `A01.05` | ky-cong-khai-vo-hieu |  |  | — | governed-by `REQ09` |  | Chưa khớp tự động | QC |
 | `A01.06` | tab-btvn | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `5491:347473` Tab · BTVN | có |  |  | Chỉ có trên Figma | Figma |
 | `A01.07` | tab-kiem-tra | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `5491:347475` Tab · Kiểm tra | có |  |  | Chỉ có trên Figma | Figma |
 | `A01.08` | tab-btvn | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `5491:348636` Tab · BTVN | có |  |  | Chỉ có trên Figma | Figma |
@@ -91,12 +91,12 @@ Frame: `CD-KH-030340`, `CD-KH-060100`, `CD-KH-060200` · Nguồn nội dung: QC
 | `A03.01` | cot |  | `5491:357722` STT; `5491:357670` Bộ câu hỏi | — |  |  | Khớp | QC |
 | `A03.02` | dap-an-dung |  | `5609:33851` Đáp án đúng | — |  |  | Khớp | QC |
 | `A03.03` | cau-hoi-con | `Atom/Tag` Size=Small | `5491:357885` Atom/Tag; `5609:33883` 7.1 | — |  | `TC09` | Khớp | QC |
-| `A03.04` | tag-ai |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.04` | tag-ai |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.05` | o-tim-cau-hoi | `Atom/Input` State=Search, Kiểu=S | `5491:346420` Atom/Input | có |  |  | Khớp một phần | QC |
 | `A03.06` | loc-loai-cau | `DD/Molecule/Trigger` Size=S, State=Default | `5491:357687` DD/Molecule/Trigger | — |  | `TC10` | Khớp | QC |
 | `A03.07` | loc-kien-thuc-ky-nang | `DD/Molecule/Trigger` Size=S, State=Default | `5491:357699` DD/Molecule/Trigger | — |  |  | Khớp | QC |
 | `A03.08` | checkbox | `Checkbox` Size=16 | `5491:357720` Checkbox | — |  |  | Khớp | QC |
-| `A03.09` | menu |  |  | — | opens `A06` |  | Chưa thấy trên Figma | QC |
+| `A03.09` | menu |  |  | — | opens `A06` |  | Chưa khớp tự động | QC |
 | `A03.10` | nhap-nhanh-cuoi-bang | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `5491:346577` Molecule/Add New Bar | có | opens `A05` |  | Khớp một phần | QC |
 | `A03.11` | phan-trang |  | `5491:346579` Footer · Phân trang | có |  |  | Khớp một phần | QC |
 
@@ -159,7 +159,7 @@ Frame: `CD-KH-030340`, `CD-KH-060140`, `CD-KH-060141` (tool đoán:CD-KH-060140,
 | `A07.02` | export | `Atom/Button` Type=Outlined, Size=Small | `I5491:357675;1430:10764` Button | — |  | `TC22`, `TC26` | Khớp một phần | QC |
 | `A07.03` | import-dong-bat-buoc |  | `5491:357722` STT | — |  |  | Khớp một phần | QC |
 | `A07.04` | import-loi-du-lieu |  | `5672:75289` Dòng 5: thiếu Loại câu | — |  |  | Khớp một phần | QC |
-| `A07.05` | import-cau-trung |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A07.05` | import-cau-trung |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.06` | import-thanh-cong |  | `5491:357722` STT | — |  |  | Khớp một phần | QC |
 
 ### `A08` Soát lỗi bằng AI
@@ -168,10 +168,10 @@ Frame: `CD-KH-060150` (tool đoán:CD-KH-060150) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | pham-vi |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.02` | van-de-phat-hien |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.03` | ket-qua |  |  | — |  | `TC27`, `TC28` | Chưa thấy trên Figma | QC |
-| `A08.04` | xu-ly |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A08.01` | pham-vi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.02` | van-de-phat-hien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.03` | ket-qua |  |  | — |  | `TC27`, `TC28` | Chưa khớp tự động | QC |
+| `A08.04` | xu-ly |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A09` Generate bài tập bằng AI — Popup nhập yêu cầu
 
@@ -201,10 +201,10 @@ Frame: `CD-KH-030343`, `CD-KH-030345` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A11.01` | dong-tom-tat |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A11.01` | dong-tom-tat |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A11.02` | cot | `DD/Molecule/Trigger` Size=S, State=Default | `5491:358961` STT; `5491:358963` Prompt | — |  |  | Khớp | QC |
-| `A11.03` | thanh-chon |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A11.04` | them-n-cau-da-chon |  |  | — |  | `TC37` | Chưa thấy trên Figma | QC |
+| `A11.03` | thanh-chon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A11.04` | them-n-cau-da-chon |  |  | — |  | `TC37` | Chưa khớp tự động | QC |
 | `A11.05` | huy-nut | `Atom/Button` Type=Outlined, Size=Small | `5491:358909` Atom/Button | — | opens `A11` |  | Khớp | QC |
 
 ### `A12` Generate — Sau khi tạo
@@ -214,8 +214,8 @@ Frame: `CD-KH-030347` · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A12.01` | cau-moi | `Atom/Badge`  | `5609:34491` Atom/Badge | — |  |  | Khớp | QC |
-| `A12.02` | badge-tong |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A12.03` | the-tong-quan |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A12.02` | badge-tong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A12.03` | the-tong-quan |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A13` Toast phản hồi CRUD
 
@@ -223,8 +223,8 @@ Frame: `CD-KH-030340`, `CD-KH-060100`, `CD-KH-060200` (tool đoán:CD-KH-030340,
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A13.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa thấy trên Figma | QC |
-| `A13.02` | canh-bao |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A13.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa khớp tự động | QC |
+| `A13.02` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A13.03` | loi |  | `5491:357786` Nghe và chọn câu trả lời đúng | — |  |  | Khớp | QC |
 
 ### `F01` (ngoài Body)
@@ -331,7 +331,7 @@ Frame: `CD-KH-030340` · Nguồn nội dung: Figma
 - `A07` Khác Figma: nút Import / Export mới có ở CD-KH-030340; chưa có popup kết quả import.
 - `A09` Khác Figma CD-KH-030341 / 030342: dòng phụ dưới `Số câu` ghi `Tối đa 50 câu mỗi lần`; requirement không giới hạn.
 - `A12` Khác Figma CD-KH-030347: tag câu mới ghi `Mới`; requirement dùng tag `AI`.
-- Chưa thấy trên Figma (16): `A01.04`, `A01.05`, `A03.04`, `A03.09`, `A07.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A11.01`, `A11.03`, `A11.04`, `A12.02`, `A12.03`, `A13.01`, `A13.02`
+- Chưa khớp tự động (16): `A01.04`, `A01.05`, `A03.04`, `A03.09`, `A07.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A11.01`, `A11.03`, `A11.04`, `A12.02`, `A12.03`, `A13.01`, `A13.02`
 - Requirement ghi thiếu, Figma đã có (6): `A02.03`, `A06.12`, `A06.13`, `A06.14`, `A06.15`, `A06.16`
 - Chưa sync (8): `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`
 - Phân loại cần design duyệt (16): `CD-KH-030343`, `CD-KH-030344`, `CD-KH-030345`, `CD-KH-030346`, `CD-KH-030347`, `CD-KH-060120`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060130`, `CD-KH-060140`, `CD-KH-060141`, `CD-KH-060150`, `CD-KH-060160`

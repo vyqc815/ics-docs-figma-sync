@@ -1,6 +1,6 @@
 # Tổng quan (S2)
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -50,7 +50,7 @@ Frame: `CD-KH-020100` (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
 | `A02.04` | so-buoi | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25145` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC07`, `TC11`, `TC12`, `TC17` | Khớp | QC |
 | `A02.05` | thoi-gian-hoc |  | `1448:6755` Thời gian học | — |  | `TC04`, `TC07`, `TC11`, `TC16` | Khớp | QC |
 | `A02.06` | tong-thoi-gian | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25164` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC05`, `TC07`, `TC13`, `TC16`, `TC17` | Khớp | QC |
-| `A02.07` |  |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.07` |  |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.08` | thao-tac |  | `1448:6761` Thao tác | — |  | `TC06`, `TC07`, `TC10`, `TC15` | Khớp | QC |
 
 ### `A03` Khu vực: Thêm nội dung buổi học mới
@@ -131,7 +131,7 @@ Frame: `CD-KH-020100` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (1): `A02.07`
+- Chưa khớp tự động (1): `A02.07`
 - Testcase không trỏ REQ (2): `TC01`, `TC10`
 - REQ/EX chưa có testcase (1): `REQ03`
 

@@ -1,6 +1,6 @@
 # Quản lý cấp độ
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -50,10 +50,10 @@ Frame: `CD-CDO-010000` (tool đoán:CD-CDO-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa thấy trên Figma | QC |
-| `A03.02` | thong-tin |  |  | — |  | `TC09` | Chưa thấy trên Figma | QC |
-| `A03.03` | canh-bao |  |  | — |  | `TTC02` | Chưa thấy trên Figma | QC |
-| `A03.04` | loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
+| `A03.02` | thong-tin |  |  | — |  | `TC09` | Chưa khớp tự động | QC |
+| `A03.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A03.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -110,7 +110,7 @@ Frame: `CD-CDO-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (4): `A03.01`, `A03.02`, `A03.03`, `A03.04`
+- Chưa khớp tự động (4): `A03.01`, `A03.02`, `A03.03`, `A03.04`
 - Frame Figma chưa có requirement (2): `CD-CDO-010010`, `CD-CDO-010012`
 - Thiếu prototype link đi vào (2): `CD-CDO-010010`, `CD-CDO-010012`
 - Phân loại cần design duyệt (1): `CD-CDO-010012`

@@ -1,6 +1,6 @@
 # Học Kỳ - Tab Kiểm tra
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -35,13 +35,13 @@ Frame: `CD-KH-030300` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | card-bai-kiem-tra |  |  | — | opens `A01` |  | Chưa thấy trên Figma | QC |
+| `A01.01` | card-bai-kiem-tra |  |  | — | opens `A01` |  | Chưa khớp tự động | QC |
 | `A01.02` | chip-thoi-gian | `Atom/Info Badge` Type=Duration | `I2860:37178;1207:1810` 30m | — |  | `TC01` | Khớp | QC |
-| `A01.03` | chip-so-cau |  |  | — |  | `TC01` | Chưa thấy trên Figma | QC |
+| `A01.03` | chip-so-cau |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
 | `A01.04` | them-bai-kiem-tra-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2702:48181` Add New Bar · Thêm bài kiểm tra mới | — | opens `A01` |  | Khớp | QC |
-| `A01.05` | keo-tha |  |  | — |  | `TC05` | Chưa thấy trên Figma | QC |
+| `A01.05` | keo-tha |  |  | — |  | `TC05` | Chưa khớp tự động | QC |
 | `A01.06` | xoa-bai |  |  | — |  | `TC05` | Chưa có thiết kế | QC |
-| `A01.07` | thu-tu-mac-dinh |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.07` | thu-tu-mac-dinh |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Popup bài kiểm tra — Tab Thông tin
 
@@ -75,8 +75,8 @@ Frame: `CD-KH-030300` (tool đoán:CD-KH-030300) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa thấy trên Figma | QC |
-| `A04.02` | canh-bao |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa khớp tự động | QC |
+| `A04.02` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.03` | loi | `Card Menu v2 (Test)` Type=Menu phụ, State=Default | `I4915:255361;4901:220694;2245:87908` Label | — |  |  | Khớp | QC |
 
 ### `F01` (ngoài Body)
@@ -149,7 +149,7 @@ Frame: `CD-KH-030300` · Nguồn nội dung: Figma
 - `A01` Khác Figma CD-KH-030300: card chưa có menu `⋮` để xoá bài.
 - `A02` Khác Figma CD-KH-030310: ô `Số câu hỏi` đang vẽ như ô nhập, requirement là chỉ đọc; ô `Tổng điểm` trên Figma cần bỏ. Dòng Lưu ý ghi `Số câu hỏi và tổng điểm có thể được cập nhật`.
 - `A03` Khác Figma: bộ câu hỏi đang vẽ thành màn riêng `CD-KH-030340` (mở từ `>`); requirement đặt trong tab `Bộ Câu Hỏi` của popup (**UI cần bổ sung**).
-- Chưa thấy trên Figma (6): `A01.01`, `A01.03`, `A01.05`, `A01.07`, `A04.01`, `A04.02`
+- Chưa khớp tự động (6): `A01.01`, `A01.03`, `A01.05`, `A01.07`, `A04.01`, `A04.02`
 - Frame Figma chưa có requirement (2): `CD-KH-030346`, `CD-KH-030350`
 - Phân loại cần design duyệt (2): `CD-KH-030346`, `CD-KH-030350`
 - Thiếu prototype link đi vào (2): `CD-KH-030346`, `CD-KH-030350`

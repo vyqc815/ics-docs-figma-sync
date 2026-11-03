@@ -1,6 +1,6 @@
 # Chi tiết lớp học — Menu Tổng quan
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -27,13 +27,13 @@ Frame: `ADM-LOP-020100` (tool đoán:ADM-LOP-020100) · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | tong-quan-lop |  | `3266:54294` Tổng Quan Lớp | — |  | `TC03` | Khớp | QC |
-| `A01.02` | nut-back-ma-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.03` | thong-ke-phia-tren |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.04` | vung-ben-trai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.05` | danh-sach-ben-phai |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.02` | nut-back-ma-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.03` | thong-ke-phia-tren |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.04` | vung-ben-trai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.05` | danh-sach-ben-phai |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.06` | search | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `3266:54252` Atom/Input | — |  | `TC45` | Khớp | QC |
-| `A01.07` | cong-tac-on-off |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.08` | dau-canh-search |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.07` | cong-tac-on-off |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.08` | dau-canh-search |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Nút Back và tooltip thông tin lớp
 
@@ -41,14 +41,14 @@ Frame: `ADM-LOP-020100` (tool đoán:ADM-LOP-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | nut-back-ma-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.02` | tooltip |  |  | — |  | `TC55`, `TC56`, `TC58` | Chưa thấy trên Figma | QC |
-| `A02.03` | buoi-hoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.04` | lich-hoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.01` | nut-back-ma-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.02` | tooltip |  |  | — |  | `TC55`, `TC56`, `TC58` | Chưa khớp tự động | QC |
+| `A02.03` | buoi-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.04` | lich-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.05` | sp | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `3266:46269` Thẻ chỉ số | — |  |  | Khớp | QC |
 | `A02.06` | cskh | `Card Menu v2 (Test)` Type=Menu phụ, State=Default | `I4915:224073;4901:206374` Card Menu v2 (Test) | — |  | `TC57` | Khớp | QC |
-| `A02.07` | giao-vien |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.08` | khai-giang |  |  | — |  | `TC57` | Chưa thấy trên Figma | QC |
+| `A02.07` | giao-vien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.08` | khai-giang |  |  | — |  | `TC57` | Chưa khớp tự động | QC |
 
 ### `A03` Thống kê học tập trung bình của lớp
 
@@ -64,7 +64,7 @@ Frame: `ADM-LOP-020100` (tool đoán:ADM-LOP-020100) · Nguồn nội dung: QC
 | `A03.06` | thoi-gian-hoc | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `3266:46275` Thẻ chỉ số | — |  |  | Khớp | QC |
 | `A03.07` | tieu-chuan | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3266:54002` Thẻ chỉ số | — |  | `TC09` | Khớp | QC |
 | `A03.08` | da-cham-va-sua-bai | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `3266:54016` Thẻ chỉ số | — |  | `TC51` | Khớp | QC |
-| `A03.09` | danh-gia-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.09` | danh-gia-lop |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Biểu đồ theo bài học
 
@@ -72,11 +72,11 @@ Frame: `ADM-LOP-020100` (tool đoán:ADM-LOP-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | truc-bai-hoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.01` | truc-bai-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.02` | gia-tri |  | `4056:93238` Giá trị | — |  | `TC48` | Khớp | QC |
-| `A04.03` | gioi-han-chart-hoc-vien |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.04` | duong-vung-cam |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.05` | tooltip |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.03` | gioi-han-chart-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.04` | duong-vung-cam |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.05` | tooltip |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A05` Danh sách, tìm kiếm và chọn học viên
 
@@ -84,15 +84,15 @@ Frame: `ADM-LOP-020100` (tool đoán:ADM-LOP-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | the-hoc-vien |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.02` | cham-do-lich-hen |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.03` | hover-cham-do |  |  | — | opens `A05` |  | Chưa thấy trên Figma | QC |
-| `A05.04` | the-dang-chon |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.05` | click-the |  |  | — |  | `TC13`, `TC14`, `TC49` | Chưa thấy trên Figma | QC |
-| `A05.06` | dau |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.07` | search-ten |  |  | — |  | `TC49` | Chưa thấy trên Figma | QC |
-| `A05.08` | toan-bo-danh-sach |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.09` | vung-trai |  |  | — |  | `TC12` | Chưa thấy trên Figma | QC |
+| `A05.01` | the-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.02` | cham-do-lich-hen |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.03` | hover-cham-do |  |  | — | opens `A05` |  | Chưa khớp tự động | QC |
+| `A05.04` | the-dang-chon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.05` | click-the |  |  | — |  | `TC13`, `TC14`, `TC49` | Chưa khớp tự động | QC |
+| `A05.06` | dau |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.07` | search-ten |  |  | — |  | `TC49` | Chưa khớp tự động | QC |
+| `A05.08` | toan-bo-danh-sach |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.09` | vung-trai |  |  | — |  | `TC12` | Chưa khớp tự động | QC |
 
 ### `A06` Công tắc ON/OFF: học phí và ghi chú cài đặt
 
@@ -100,11 +100,11 @@ Frame: `ADM-LOP-020100` (tool đoán:ADM-LOP-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | on-off |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.02` | hoc-phi |  |  | — |  | `TC17`, `TC18`, `TC20` | Chưa thấy trên Figma | QC |
-| `A06.03` | ghi-chu-cua-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.04` | ghi-chu-duoi-tung-the |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.05` | icon-lich-su-canh-ghi-chu |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.01` | on-off |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.02` | hoc-phi |  |  | — |  | `TC17`, `TC18`, `TC20` | Chưa khớp tự động | QC |
+| `A06.03` | ghi-chu-cua-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.04` | ghi-chu-duoi-tung-the |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.05` | icon-lich-su-canh-ghi-chu |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A07` Ghi chú cài đặt và lịch sử
 
@@ -112,10 +112,10 @@ Frame: `ADM-LOP-020100` (tool đoán:ADM-LOP-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | icon-canh-ten-hoc-vien-dang-chon |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.02` | popup-lich-su-ghi-chu |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.03` | copy |  |  | — |  | `TC22`, `TC46` | Chưa thấy trên Figma | QC |
-| `A07.04` | ghi-chu-bat-thuong |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A07.01` | icon-canh-ten-hoc-vien-dang-chon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.02` | popup-lich-su-ghi-chu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.03` | copy |  |  | — |  | `TC22`, `TC46` | Chưa khớp tự động | QC |
+| `A07.04` | ghi-chu-bat-thuong |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A08` Đánh giá tổng và bài học gần đây
 
@@ -123,17 +123,17 @@ Frame: `ADM-LOP-020100` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | badge-danh-gia |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.02` | gia-tri-danh-gia |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.03` | so-bai-hien-thi |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.04` | di-hoc-vang |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.05` | da-nop-btvn |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.06` | icon-bai-gan-day |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.07` | di-hoc-da-nop-btvn |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.08` | di-hoc-chua-nop-btvn |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.09` | vang-da-nop-btvn |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.10` | vang-chua-nop-btvn |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.11` | hover-icon-bai-gan-day |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A08.01` | badge-danh-gia |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.02` | gia-tri-danh-gia |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.03` | so-bai-hien-thi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.04` | di-hoc-vang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.05` | da-nop-btvn |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.06` | icon-bai-gan-day |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.07` | di-hoc-da-nop-btvn |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.08` | di-hoc-chua-nop-btvn |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.09` | vang-da-nop-btvn |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.10` | vang-chua-nop-btvn |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.11` | hover-icon-bai-gan-day |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A09` Bảng bài học của học viên và điểm danh
 
@@ -146,13 +146,13 @@ Frame: `ADM-LOP-020100` · Nguồn nội dung: QC
 | `A09.03` | trang-thai |  | `4056:93219` Trạng thái | — |  | `TC28`, `TC29` | Khớp | QC |
 | `A09.04` | diem-so |  | `4056:93236` Điểm số · Chưa chấm | — |  | `TC29` | Khớp | QC |
 | `A09.05` | thoi-gian |  | `4056:93223` Thời gian | — |  | `TC27`, `TC53` | Khớp | QC |
-| `A09.06` | co-mat |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.07` | vao-tre |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.08` | ra-som |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.09` | vao-tre-ra-som |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.10` | nghi-co-phep |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.11` | nghi-khong-phep |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.12` | chua-diem-danh |  |  | — |  | `TC28` | Chưa thấy trên Figma | QC |
+| `A09.06` | co-mat |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.07` | vao-tre |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.08` | ra-som |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.09` | vao-tre-ra-som |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.10` | nghi-co-phep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.11` | nghi-khong-phep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.12` | chua-diem-danh |  |  | — |  | `TC28` | Chưa khớp tự động | QC |
 
 ### `A10` Popup ghi chú giáo viên theo bài học
 
@@ -160,9 +160,9 @@ Frame: `ADM-LOP-020100` (tool đoán:ADM-LOP-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A10.01` | cho-hoc-vien |  |  | — |  | `TC32` | Chưa thấy trên Figma | QC |
-| `A10.02` | cho-team-support |  |  | — |  | `TC32` | Chưa thấy trên Figma | QC |
-| `A10.03` | huy |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A10.01` | cho-hoc-vien |  |  | — |  | `TC32` | Chưa khớp tự động | QC |
+| `A10.02` | cho-team-support |  |  | — |  | `TC32` | Chưa khớp tự động | QC |
+| `A10.03` | huy |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A11` Popup Thời gian từng phần trên app
 
@@ -170,10 +170,10 @@ Frame: `ADM-LOP-020100` (tool đoán:ADM-LOP-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A11.01` | chin-phan |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A11.02` | moi-o |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A11.03` | 00-00-00 |  |  | — |  | `TC35` | Chưa thấy trên Figma | QC |
-| `A11.04` | huy |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A11.01` | chin-phan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A11.02` | moi-o |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A11.03` | 00-00-00 |  |  | — |  | `TC35` | Chưa khớp tự động | QC |
+| `A11.04` | huy |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A12` Loading, rỗng, lỗi và an toàn dữ liệu
 
@@ -181,10 +181,10 @@ Frame: `ADM-LOP-020100` (tool đoán:ADM-LOP-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A12.01` | loading |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A12.02` | empty |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A12.03` | error |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A12.04` | toast |  |  | — |  | `TC40`, `TC54` | Chưa thấy trên Figma | QC |
+| `A12.01` | loading |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A12.02` | empty |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A12.03` | error |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A12.04` | toast |  |  | — |  | `TC40`, `TC54` | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -307,7 +307,7 @@ Frame: `ADM-LOP-020100` · Nguồn nội dung: Figma
 
 - `A08` Khác Figma ADM-LOP-020100: khối Bài học gần đây ở vùng trái đang vẽ 4 icon, requirement là 6 bài.
 - `A09` Khác Figma ADM-LOP-020100: bảng bài chưa có tag thời điểm mở bài phía trên tên bài.
-- Chưa thấy trên Figma (64): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.07`, `A01.08`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.07`, `A02.08`, `A03.09`, `A04.01`, `A04.03`, `A04.04`, `A04.05`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A05.09`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A06.05`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.09`, `A08.10`, `A08.11`, `A09.06`, `A09.07`, `A09.08`, `A09.09`, `A09.10`, `A09.11`, `A09.12`, `A10.01`, `A10.02`, `A10.03`, `A11.01`, `A11.02`, `A11.03`, `A11.04`, `A12.01`, `A12.02`, `A12.03`, `A12.04`
+- Chưa khớp tự động (64): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.07`, `A01.08`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.07`, `A02.08`, `A03.09`, `A04.01`, `A04.03`, `A04.04`, `A04.05`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A05.09`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A06.05`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.09`, `A08.10`, `A08.11`, `A09.06`, `A09.07`, `A09.08`, `A09.09`, `A09.10`, `A09.11`, `A09.12`, `A10.01`, `A10.02`, `A10.03`, `A11.01`, `A11.02`, `A11.03`, `A11.04`, `A12.01`, `A12.02`, `A12.03`, `A12.04`
 - REQ/EX chưa có testcase (1): `EX06`
 
 ## 9. Chi tiết dựng

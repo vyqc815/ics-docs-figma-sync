@@ -1,6 +1,6 @@
 # Học Kỳ
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -40,14 +40,14 @@ Frame: `CD-KH-030100` (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | ten-mo-ta-dau-tab |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.01` | ten-mo-ta-dau-tab |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.02` | ten-hoc-ky | `Atom/Label`  | `I3004:49766;3004:58620` Atom/Label | — |  | `TC01`, `TC02`, `TC03`, `TC04` | Khớp | QC |
 | `A02.03` | ma-hoc-ky | `Atom/Label`  | `I3004:49712;3004:58620` Atom/Label | — |  | `TC04` | Khớp | QC |
 | `A02.04` | id-hoc-ky | `Atom/Label`  | `I3004:49872;3004:58620` Atom/Label | — | governed-by `REQ02` | `TC05`, `TC5b`, `TC06` | Khớp | QC |
 | `A02.05` | code | `Atom/Label`  | `I3004:49928;3004:58620` Atom/Label; `I3004:49928;3004:58620` Atom/Label | — |  | `TC01`, `TC04` | Khớp | QC |
 | `A02.06` | so-buoi-hoc | `Atom/Label`  | `I3004:50030;3004:58620` Atom/Label | — |  | `TC04` | Khớp | QC |
-| `A02.07` | trinh-do-danh-muc |  |  | — |  | `TC04` | Chưa thấy trên Figma | QC |
-| `A02.08` | data-token-type-text-data-version-so |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.07` | trinh-do-danh-muc |  |  | — |  | `TC04` | Chưa khớp tự động | QC |
+| `A02.08` | data-token-type-text-data-version-so |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.09` | tong-on |  | `1185:2854` Tổng ôn | — |  | `TC03`, `TC04`, `TC5b`, `TC09`, `TC11` | Khớp | QC |
 
 ### `A03` Trang 1.3: Popup Kích hoạt công khai học kỳ
@@ -56,11 +56,11 @@ Frame: `CD-KH-030104` (tool đoán:CD-KH-030104) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tieu-de |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.02` | hien-thi |  |  | — |  | `TC01`, `TC08`, `TC10`, `TC11` | Chưa thấy trên Figma | QC |
-| `A03.03` | o-id-hoc-ky |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.04` | thong-bao-duoi-o-id |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.05` | luu-y |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | hien-thi |  |  | — |  | `TC01`, `TC08`, `TC10`, `TC11` | Chưa khớp tự động | QC |
+| `A03.03` | o-id-hoc-ky |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | thong-bao-duoi-o-id |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | luu-y |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.06` | nut |  | `6006:129340` Nút | — |  |  | Khớp | QC |
 
 ### `A04` Popup xoá học kỳ
@@ -76,10 +76,10 @@ Frame: `CD-KH-030100` (tool đoán:CD-KH-030100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | tieu-de |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A05.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A05.02` | noi-dung | `ICON MENU`  | `I4915:255632;4901:220701;2245:87904` Icon | — |  | `TC03`, `TC04`, `TC08` | Khớp | QC |
-| `A05.03` | nut |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.04` | toast |  |  | — |  | `TC04`, `TC06`, `TC16` | Chưa thấy trên Figma | QC |
+| `A05.03` | nut |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.04` | toast |  |  | — |  | `TC04`, `TC06`, `TC16` | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -152,7 +152,7 @@ Frame: `CD-KH-030100` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (11): `A02.01`, `A02.07`, `A02.08`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A05.01`, `A05.03`, `A05.04`
+- Chưa khớp tự động (11): `A02.01`, `A02.07`, `A02.08`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A05.01`, `A05.03`, `A05.04`
 - Frame Figma chưa có requirement (3): `CD-KH-030104`, `CD-KH-030110`, `CD-KH-030120`
 - Phân loại cần design duyệt (1): `CD-KH-030104`
 - Thiếu prototype link đi vào (1): `CD-KH-030104`

@@ -1,6 +1,6 @@
 # [Giáo viên] Chi tiết lớp — Giảng dạy
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -61,11 +61,11 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170` · Nguồn nội dung: 
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | tieu-de-bai |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.01` | tieu-de-bai |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.02` | card-bai-da-mo |  | `5292:226699` Card · Bài đã mở | — |  | `TC01` | Khớp một phần | QC |
-| `A01.03` | card-bai-chua-mo |  |  | — |  | `TC01` | Chưa thấy trên Figma | QC |
-| `A01.04` | chon-bai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.05` | thu-tu |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.03` | card-bai-chua-mo |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
+| `A01.04` | chon-bai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.05` | thu-tu |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Tab Buổi học — Dặn dò trước buổi học
 
@@ -147,13 +147,13 @@ Frame: `GV-LOP-030100` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | co-mat |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.02` | vao-tre |  |  | — |  | `TC24` | Chưa thấy trên Figma | QC |
-| `A08.03` | ra-som |  |  | — |  | `TC24` | Chưa thấy trên Figma | QC |
-| `A08.04` | vao-tre-ra-som |  |  | — |  | `TC24` | Chưa thấy trên Figma | QC |
-| `A08.05` | nghi-cp-nghi-co-phep |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.06` | nghi-kp-nghi-khong-phep |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.07` | chua-diem-danh |  |  | — |  | `TC24` | Chưa thấy trên Figma | QC |
+| `A08.01` | co-mat |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.02` | vao-tre |  |  | — |  | `TC24` | Chưa khớp tự động | QC |
+| `A08.03` | ra-som |  |  | — |  | `TC24` | Chưa khớp tự động | QC |
+| `A08.04` | vao-tre-ra-som |  |  | — |  | `TC24` | Chưa khớp tự động | QC |
+| `A08.05` | nghi-cp-nghi-co-phep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.06` | nghi-kp-nghi-khong-phep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.07` | chua-diem-danh |  |  | — |  | `TC24` | Chưa khớp tự động | QC |
 
 ### `A09` Tab Thông tin, Nội dung và Kiến thức
 
@@ -172,7 +172,7 @@ Frame: `GV-LOP-030400`, `GV-LOP-030401` (tool đoán:GV-LOP-030401) · Nguồn n
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A10.01` | nhom-bai-giang-tai-nguyen-khac |  | `4324:17526` Bài giảng; `4324:27550` Tài nguyên khác | — |  |  | Khớp | QC |
-| `A10.02` | bai-duoc-tai |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A10.02` | bai-duoc-tai |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A10.03` | bai-bi-khoa | `Atom/Toast` Type=Info | `I5425:282992;2167:28354` Title | — |  |  | Khớp một phần | QC |
 
 ### `A11` Chỉ số % BTVN và Đi học theo bài
@@ -195,11 +195,11 @@ Frame: `GV-LOP-040100`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-L
 |---|---|---|---|---|---|---|---|---|
 | `A12.01` | tab-btvn-kiem-tra | `Atom/Side Tab` State=Active, Kiểu=Gạch trái; `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I4324:86046;2177:28936` Nhiệm vụ con; `I4324:86047;2177:28928` Chi tiết NV | — |  |  | Khớp | QC |
 | `A12.02` | o-tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `4324:86048` Atom/Input | — |  |  | Khớp | QC |
-| `A12.03` | card-bai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A12.04` | nut-dieu-huong-cham-bai |  |  | — | see `A18` |  | Chưa thấy trên Figma | QC |
+| `A12.03` | card-bai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A12.04` | nut-dieu-huong-cham-bai |  |  | — | see `A18` |  | Chưa khớp tự động | QC |
 | `A12.05` | danh-sach-btvn | `Atom/Toast` Type=Success | `I7074:399738;2167:28344` Description | — |  |  | Khớp một phần | QC |
-| `A12.06` | danh-sach-kiem-tra |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A12.07` | tai-du-lieu |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A12.06` | danh-sach-kiem-tra |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A12.07` | tai-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A12.08` | the-chi-so | `Thẻ chỉ số` Kiểu=Chuẩn | `4324:85934` Thẻ chỉ số | — |  |  | Chỉ có trên Figma | Figma |
 | `A12.09` | trang-thai-nop-bai-va-diem | `Trạng thái nộp bài và điểm`  | `4324:98883` Trạng thái nộp bài và điểm | — |  |  | Chỉ có trên Figma | Figma |
 | `A12.10` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `4324:98890` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
@@ -231,11 +231,11 @@ Frame: `GV-LOP-040200` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A14.01` | badge-tab |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A14.01` | badge-tab |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A14.02` | nhan-trang-thai-btvn | `Trạng thái nộp bài và điểm`  | `4324:99813` Trạng thái nộp bài và điểm | — |  |  | Khớp | QC |
 | `A14.03` | nhan-trang-thai-kiem-tra | `Trạng thái nộp bài và điểm`  | `4324:99813` Trạng thái nộp bài và điểm | — |  |  | Khớp | QC |
 | `A14.04` | vong-so-da-nop |  | `4324:86350` Tabs Navigation | — | governed-by `REQ02` | `TC43` | Khớp | QC |
-| `A14.05` | vong-ty-le-cham |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A14.05` | vong-ty-le-cham |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A14.06` | mo-ta |  | `4324:99744` Mô tả | — |  |  | Khớp | QC |
 
 ### `A15` Bảng kết quả học viên
@@ -278,11 +278,11 @@ Frame: `GV-LOP-040100`, `GV-LOP-040200`, `GV-LOP-040320` (tool đoán:GV-LOP-040
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A18.01` | diem-vao-tu-card-bai |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A18.01` | diem-vao-tu-card-bai |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A18.02` | diem-vao-tu-dong-hoc-vien |  | `4324:98884` Molecule/Ô định danh | — |  |  | Khớp | QC |
-| `A18.03` | bai-bo-sung-nhieu-bai-nguon |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A18.03` | bai-bo-sung-nhieu-bai-nguon |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A18.04` | tieu-de | `Thẻ chỉ số` Kiểu=Chuẩn | `I4324:85934;3004:47242` Tiêu đề | — |  | `TC55` | Khớp | QC |
-| `A18.05` | da-cham-va-sua-bai-tren-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A18.05` | da-cham-va-sua-bai-tren-lop |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A18.06` | vung-trai |  | `5750:77089` Vùng trái · Chi tiết câu | — |  |  | Khớp một phần | QC |
 | `A18.07` | vung-phai |  | `4324:99321` Mô tả | — |  |  | Khớp một phần | QC |
 
@@ -384,12 +384,12 @@ Frame: `GV-LOP-050100` · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A26.01` | chua-co-khoa-tu-hoc |  | `4333:7924` Bảng dữ liệu này đang trống | — |  |  | Khớp | QC |
-| `A26.02` | card-bai |  |  | — |  | `TC96`, `TC100` | Chưa thấy trên Figma | QC |
-| `A26.03` | tai-du-lieu |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A26.04` | bang-thoi-gian |  |  | — |  | `TC97` | Chưa thấy trên Figma | QC |
-| `A26.05` | hoc-vien-trong-bang |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A26.06` | vuot-24-gio |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A26.07` | 00-00-00 |  |  | — |  | `TC98`, `TC100` | Chưa thấy trên Figma | QC |
+| `A26.02` | card-bai |  |  | — |  | `TC96`, `TC100` | Chưa khớp tự động | QC |
+| `A26.03` | tai-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A26.04` | bang-thoi-gian |  |  | — |  | `TC97` | Chưa khớp tự động | QC |
+| `A26.05` | hoc-vien-trong-bang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A26.06` | vuot-24-gio |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A26.07` | 00-00-00 |  |  | — |  | `TC98`, `TC100` | Chưa khớp tự động | QC |
 
 ### `A27` Toast phản hồi CRUD
 
@@ -604,7 +604,7 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 - `A12` Khác Figma GV-LOP-040100: Figma chưa có nút điều hướng chấm bài trên card; requirement bổ sung nút này cho `Giáo viên phụ trách chính`.
 - `A14` Khác Figma GV-LOP-040200: Figma chưa có frame card `Chưa giao` đang chọn (xem trước đề) và nút `Giao bài`; hai thành phần này đặc tả theo ICS cũ.
 - `A26` Khác Figma GV-LOP-050100: Figma chỉ có trạng thái chưa có khóa tự học; trạng thái có dữ liệu theo UI của requirement Admin, bỏ các nút thêm.
-- Chưa thấy trên Figma (27): `A01.01`, `A01.03`, `A01.04`, `A01.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A10.02`, `A12.03`, `A12.04`, `A12.06`, `A12.07`, `A14.01`, `A14.05`, `A18.01`, `A18.03`, `A18.05`, `A26.02`, `A26.03`, `A26.04`, `A26.05`, `A26.06`, `A26.07`
+- Chưa khớp tự động (27): `A01.01`, `A01.03`, `A01.04`, `A01.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A10.02`, `A12.03`, `A12.04`, `A12.06`, `A12.07`, `A14.01`, `A14.05`, `A18.01`, `A18.03`, `A18.05`, `A26.02`, `A26.03`, `A26.04`, `A26.05`, `A26.06`, `A26.07`
 - Chưa sync (103): `A02.01`, `A02.02`, `A02.03`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A11.01`, `A11.02`, `A11.03`, `A11.04`, `A11.05`, `A13.01`, `A13.02`, `A13.03`, `A13.04`, `A13.05`, `A13.06`, `A13.07`, `A15.01`, `A15.02`, `A15.03`, `A15.04`, `A15.05`, `A15.06`, `A15.07`, `A16.01`, `A16.02`, `A16.03`, `A16.04`, `A17.01`, `A17.02`, `A19.01`, `A19.02`, `A19.03`, `A19.04`, `A19.05`, `A20.01`, `A20.02`, `A20.03`, `A20.04`, `A20.05`, `A20.06`, `A21.01`, `A21.02`, `A21.03`, `A21.04`, `A21.05`, `A21.06`, `A21.07`, `A21.08`, `A21.09`, `A21.10`, `A21.11`, `A21.12`, `A21.13`, `A22.01`, `A22.02`, `A22.03`, `A22.04`, `A22.05`, `A22.06`, `A23.01`, `A23.02`, `A23.03`, `A23.04`, `A24.01`, `A24.02`, `A24.03`, `A24.04`, `A25.01`, `A25.02`, `A25.03`, `A25.04`, `A27.01`, `A27.02`, `A27.03`, `A27.04`
 - Frame Figma chưa có requirement (11): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040211`, `GV-LOP-040221`, `GV-LOP-040320`
 - Thiếu prototype link đi vào (7): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-050100`

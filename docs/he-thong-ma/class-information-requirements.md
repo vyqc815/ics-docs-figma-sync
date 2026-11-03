@@ -1,6 +1,6 @@
 # [Giáo viên] Chi tiết lớp — Thông tin
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -53,7 +53,7 @@ Frame: `GV-LOP-110200` · Nguồn nội dung: QC
 | `A02.05` | trang-thai |  | `4333:20624` Ngày ghi nhận | — |  |  | Khớp | QC |
 | `A02.06` | so-tien |  | `4333:20626` Trạng thái | — |  | `TC05` | Khớp | QC |
 | `A02.07` | ngay-cap-nhat |  | `4333:20628` Tiền thưởng | — |  |  | Khớp | QC |
-| `A02.08` | sap-xep |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.08` | sap-xep |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.09` | khong-co-khoan |  | `4333:20719` Bảng dữ liệu này đang trống | — |  |  | Khớp | QC |
 
 ### `A03` Tab Lịch sử & lương
@@ -62,7 +62,7 @@ Frame: `GV-LOP-110300` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | dropdown-thoi-gian |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.01` | dropdown-thoi-gian |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.02` | trang-thai-lop | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4333:21048` Thẻ chỉ số · Trạng thái lớp | — |  | `TC14` | Khớp | QC |
 | `A03.03` | so-buoi-da-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4333:21049` Thẻ chỉ số · Số buổi đã dạy | — |  |  | Khớp | QC |
 | `A03.04` | luong-buoi-day | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4333:21050` Thẻ chỉ số · Lương buổi dạy | — |  |  | Khớp | QC |
@@ -137,7 +137,7 @@ Frame: `GV-LOP-110100`, `GV-LOP-110200`, `GV-LOP-110300` · Nguồn nội dung: 
 **Tool báo, cần người xem**
 
 - `A01` Mọi field hiển thị cùng một kiểu ô xám chỉ đọc như `Mã lớp`, `Ghi chú`, `Mô tả`. Khác Figma GV-LOP-110100: Figma còn vẽ mũi tên dropdown ở Khóa học, Loại lớp, Trạng thái và icon lịch ở Ngày bắt đầu/kết thúc; cần sửa Figma bỏ các control này.
-- Chưa thấy trên Figma (2): `A02.08`, `A03.01`
+- Chưa khớp tự động (2): `A02.08`, `A03.01`
 - REQ/EX chưa có testcase (2): `REQ05`, `EX03`
 
 ## 9. Chi tiết dựng

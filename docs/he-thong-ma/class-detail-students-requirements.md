@@ -1,6 +1,6 @@
 # Chi tiết lớp học — Tab Học viên
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -37,14 +37,14 @@ Frame: `ADM-LOP-040200` (tool đoán:ADM-LOP-040200) · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | ten |  | `I3372:39340;3138:130001` Tên | — |  |  | Khớp | QC |
-| `A01.02` | tag-hoc-vien |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.03` | email |  |  | — |  | `TC01`, `TC04` | Chưa thấy trên Figma | QC |
+| `A01.02` | tag-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.03` | email |  |  | — |  | `TC01`, `TC04` | Chưa khớp tự động | QC |
 | `A01.04` | ghi-chu-trong-lop |  | `2224:24093` Ghi chú trong lớp | — | opens `A01` |  | Khớp | QC |
 | `A01.05` | trang-thai | `Student Status`  | `2390:60882` LOG Trạng thái; `3372:39353` Student Status | — |  | `TC01`, `TC03`, `TC05` | Khớp | QC |
 | `A01.06` | buoi-hoc |  | `2224:24097` Buổi học | — |  | `TC01`, `TC03` | Khớp | QC |
 | `A01.07` | hoc-phi |  | `2384:54349` Học phí | — | opens `A08` | `TC01`, `TC03` | Khớp | QC |
 | `A01.08` | so-tien |  | `2384:54352` Số tiền | — |  | `TC01` | Khớp | QC |
-| `A01.09` | tao-hoc-vien-moi |  |  | — | opens `A01` |  | Chưa thấy trên Figma | QC |
+| `A01.09` | tao-hoc-vien-moi |  |  | — | opens `A01` |  | Chưa khớp tự động | QC |
 
 ### `A02` Cột Buổi học chỉ xem và cảnh báo vượt buổi
 
@@ -52,11 +52,11 @@ Frame: `ADM-LOP-040200` (tool đoán:ADM-LOP-040200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | gia-tri-hien-tai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.02` | chon-so-buoi |  |  | — |  | `TC47` | Chưa thấy trên Figma | QC |
-| `A02.03` | so-buoi-thuc-te |  |  | — |  | `TC46` | Chưa thấy trên Figma | QC |
-| `A02.04` | canh-bao-vuot-buoi |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.05` | cap-nhat-hien-thi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.01` | gia-tri-hien-tai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.02` | chon-so-buoi |  |  | — |  | `TC47` | Chưa khớp tự động | QC |
+| `A02.03` | so-buoi-thuc-te |  |  | — |  | `TC46` | Chưa khớp tự động | QC |
+| `A02.04` | canh-bao-vuot-buoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.05` | cap-nhat-hien-thi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Popup chọn cách thêm học viên
 
@@ -64,9 +64,9 @@ Frame: `ADM-LOP-040200` (tool đoán:ADM-LOP-040200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | chon-hoc-vien |  |  | — | opens `A01` | `TC11` | Chưa thấy trên Figma | QC |
-| `A03.02` | tao-hoc-vien-moi |  |  | — |  | `TC10` | Chưa thấy trên Figma | QC |
-| `A03.03` | dong-popup |  |  | — |  | `TC10` | Chưa thấy trên Figma | QC |
+| `A03.01` | chon-hoc-vien |  |  | — | opens `A01` | `TC11` | Chưa khớp tự động | QC |
+| `A03.02` | tao-hoc-vien-moi |  |  | — |  | `TC10` | Chưa khớp tự động | QC |
+| `A03.03` | dong-popup |  |  | — |  | `TC10` | Chưa khớp tự động | QC |
 
 ### `A04` Popup Chọn học viên có sẵn
 
@@ -74,11 +74,11 @@ Frame: `ADM-LOP-040200` (tool đoán:ADM-LOP-040200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | tim-kiem |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.02` | chon-lop-hoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.01` | tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | chon-lop-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.03` | danh-sach |  | `2384:54608` Danh sách học viên | — |  | `TC13`, `TC14`, `TC16` | Khớp | QC |
 | `A04.04` | huy |  | `2384:54471` Đang sinh sống và làm việc tại Thâm Quyến, Trung Quốc. Đã tốt nghiệp cử nhân chuyên ngành Trung Quốc học, khoa Đông phương học, trường Đại học Khoa học Xã hội và Nhân văn TP.HCM, chứng chỉ HSK6. | — |  |  | Khớp | QC |
-| `A04.05` | them-moi |  |  | — |  | `TC14` | Chưa thấy trên Figma | QC |
+| `A04.05` | them-moi |  |  | — |  | `TC14` | Chưa khớp tự động | QC |
 
 ### `A05` Form Tạo học viên mới
 
@@ -86,11 +86,11 @@ Frame: `ADM-LOP-040200` (tool đoán:ADM-LOP-040200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | ho-va-ten-gioi-tinh-ngay-sinh-so-dien-th |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A05.01` | ho-va-ten-gioi-tinh-ngay-sinh-so-dien-th |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A05.02` | vai-tro | `Student Status`  | `3372:39339` Student Status | — |  |  | Khớp | QC |
-| `A05.03` | gmail-mat-khau |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.04` | ngay-chot-don-level-code |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.05` | them-tai-khoan |  |  | — |  | `TC18`, `TC20` | Chưa thấy trên Figma | QC |
+| `A05.03` | gmail-mat-khau |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.04` | ngay-chot-don-level-code |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.05` | them-tai-khoan |  |  | — |  | `TC18`, `TC20` | Chưa khớp tự động | QC |
 
 ### `A06` Ghi chú trong lớp và Lịch sử ghi chú
 
@@ -141,7 +141,7 @@ Frame: `ADM-LOP-040200` (tool đoán:ADM-LOP-040200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A09.01` | them-tag |  |  | — |  | `TC41` | Chưa thấy trên Figma | QC |
+| `A09.01` | them-tag |  |  | — |  | `TC41` | Chưa khớp tự động | QC |
 | `A09.02` | them-lich-hen | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `I2384:54075;2015:31836;2384:54069` Chỉnh sửa | — |  | `TC42` | Khớp | QC |
 | `A09.03` | xem-lich-su | `DD/Molecule/Menu Item` Type=Default, State=Hover, Size=M | `I2384:54075;2015:31836;2384:54070` Xem chi tiết | — |  | `TC43` | Khớp | QC |
 
@@ -151,10 +151,10 @@ Frame: `ADM-LOP-040200` (tool đoán:ADM-LOP-040200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A10.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa thấy trên Figma | QC |
+| `A10.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
 | `A10.02` | thong-tin | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I2224:21185;2177:28928` Chi tiết NV | — |  |  | Khớp | QC |
-| `A10.03` | canh-bao |  |  | — |  | `TTC02` | Chưa thấy trên Figma | QC |
-| `A10.04` | loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A10.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A10.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -277,7 +277,7 @@ Frame: `ADM-LOP-040200` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (22): `A01.02`, `A01.03`, `A01.09`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A04.01`, `A04.02`, `A04.05`, `A05.01`, `A05.03`, `A05.04`, `A05.05`, `A09.01`, `A10.01`, `A10.03`, `A10.04`
+- Chưa khớp tự động (22): `A01.02`, `A01.03`, `A01.09`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A04.01`, `A04.02`, `A04.05`, `A05.01`, `A05.03`, `A05.04`, `A05.05`, `A09.01`, `A10.01`, `A10.03`, `A10.04`
 - Chưa sync (22): `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`
 - Frame Figma chưa có requirement (3): `ADM-LOP-040210`, `ADM-LOP-040220`, `ADM-LOP-040230`
 - Phân loại cần design duyệt (1): `ADM-LOP-040210`

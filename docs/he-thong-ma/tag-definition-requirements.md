@@ -1,6 +1,6 @@
 # Define Tag — Quản lý nhóm và tag
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -43,10 +43,10 @@ Frame: `ADM-TAG-010000` (tool đoán:ADM-TAG-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | ten-nhom |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.02` | mo-ta |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.01` | ten-nhom |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.02` | mo-ta |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.03` | loai | `Loại tag`  | `3065:67854` Loại tag; `3065:67860` Loại tag | — |  | `TC02`, `TC03` | Khớp | QC |
-| `A02.04` | them-huy |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.04` | them-huy |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Popup Thêm tag
 
@@ -66,10 +66,10 @@ Frame: `ADM-TAG-010000` (tool đoán:ADM-TAG-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC03` | Chưa thấy trên Figma | QC |
-| `A04.02` | canh-bao |  |  | — |  | `TTC02` | Chưa thấy trên Figma | QC |
-| `A04.03` | co-loi-xay-ra |  |  | — |  | `TTC03` | Chưa thấy trên Figma | QC |
-| `A04.04` | thong-bao |  |  | — |  | `TTC04` | Chưa thấy trên Figma | QC |
+| `A04.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC03` | Chưa khớp tự động | QC |
+| `A04.02` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A04.03` | co-loi-xay-ra |  |  | — |  | `TTC03` | Chưa khớp tự động | QC |
+| `A04.04` | thong-bao |  |  | — |  | `TTC04` | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -129,7 +129,7 @@ Frame: `ADM-TAG-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (7): `A02.01`, `A02.02`, `A02.04`, `A04.01`, `A04.02`, `A04.03`, `A04.04`
+- Chưa khớp tự động (7): `A02.01`, `A02.02`, `A02.04`, `A04.01`, `A04.02`, `A04.03`, `A04.04`
 - Chưa sync (9): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`
 - Frame Figma chưa có requirement (2): `ADM-TAG-010010`, `ADM-TAG-010020`
 - Thiếu prototype link đi vào (2): `ADM-TAG-010010`, `ADM-TAG-010020`

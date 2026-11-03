@@ -1,6 +1,6 @@
 # [Giáo viên] Lớp — Thống kê tổng quan
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -29,12 +29,12 @@ Frame: `GV-LOP-010000` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | trung-tam |  |  | — |  | `TC01`, `TC05` | Chưa thấy trên Figma | QC |
+| `A01.01` | trung-tam |  |  | — |  | `TC01`, `TC05` | Chưa khớp tự động | QC |
 | `A01.02` | tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `3868:96252` Tìm kiếm | — |  |  | Khớp | QC |
 | `A01.03` | loai-lop | `DD/Molecule/Trigger` Size=XS, State=Default | `6247:155103` Filter · Loại lớp | — |  |  | Khớp | QC |
 | `A01.04` | trang-thai | `DD/Molecule/Trigger` Size=XS, State=Default | `3868:95575` Filter · Trạng thái | — |  | `TC01`, `TC02` | Khớp | QC |
 | `A01.05` | trinh-do | `DD/Molecule/Trigger` Size=XS, State=Default | `3868:95576` Filter · Trình độ | — |  |  | Khớp | QC |
-| `A01.06` | tap-lop-thoa-bo-loc |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.06` | tap-lop-thoa-bo-loc |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Hàng thẻ chỉ số
 
@@ -43,11 +43,11 @@ Frame: `GV-LOP-010000` (tool đoán:GV-LOP-010000) · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A02.01` | so-lop |  | `3868:95625` Chỉ số lớp | — |  | `TC06` | Khớp | QC |
-| `A02.02` | len-ky |  |  | — |  | `TC07` | Chưa thấy trên Figma | QC |
+| `A02.02` | len-ky |  |  | — |  | `TC07` | Chưa khớp tự động | QC |
 | `A02.03` | di-hoc | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `6725:364226` Thẻ chỉ số · Đi học | — |  | `TC09` | Khớp | QC |
 | `A02.04` | btvn | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `3868:95629` Thẻ chỉ số · BTVN | — |  | `TC09` | Khớp | QC |
-| `A02.05` | dat-kpi |  |  | — |  | `TC08` | Chưa thấy trên Figma | QC |
-| `A02.06` | badge-hang |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.05` | dat-kpi |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
+| `A02.06` | badge-hang |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A03` Khối lớp đang chọn
 
@@ -62,7 +62,7 @@ Frame: `GV-LOP-010000` (tool đoán:GV-LOP-010000) · Nguồn nội dung: QC
 | `A03.05` | di-hoc-btvn | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `6725:364226` Thẻ chỉ số · Đi học; `3868:95629` Thẻ chỉ số · BTVN | — |  |  | Khớp | QC |
 | `A03.06` | diem-kt-diem-btvn | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `3868:95631` Thẻ chỉ số · Điểm KT; `3868:95632` Thẻ chỉ số · Điểm BTVN | — |  |  | Khớp | QC |
 | `A03.07` | thoi-gian-hoc | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `3868:95633` Thẻ chỉ số · Thời gian học | — |  |  | Khớp | QC |
-| `A03.08` | bieu-do-nho |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.08` | bieu-do-nho |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Danh sách lớp
 
@@ -70,15 +70,15 @@ Frame: `GV-LOP-010000` (tool đoán:GV-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | icon-trang-thai-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.01` | icon-trang-thai-lop |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.02` | ma-lop |  | `3868:95641` Cell · Mã lớp | — |  |  | Khớp | QC |
-| `A04.03` | ten-khoa-hoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.04` | thanh-tien-do-x-y-buoi |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.05` | badge-hang |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.06` | vong |  |  | — |  | `TC15` | Chưa thấy trên Figma | QC |
-| `A04.07` |  |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.08` | card-dang-chon |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.09` | sap-xep |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.03` | ten-khoa-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.04` | thanh-tien-do-x-y-buoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.05` | badge-hang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.06` | vong |  |  | — |  | `TC15` | Chưa khớp tự động | QC |
+| `A04.07` |  |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.08` | card-dang-chon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.09` | sap-xep |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` Header
 
@@ -155,7 +155,7 @@ Frame: `GV-LOP-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (14): `A01.01`, `A01.06`, `A02.02`, `A02.05`, `A02.06`, `A03.08`, `A04.01`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A04.09`
+- Chưa khớp tự động (14): `A01.01`, `A01.06`, `A02.02`, `A02.05`, `A02.06`, `A03.08`, `A04.01`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A04.09`
 - REQ/EX chưa có testcase (3): `REQ05`, `EX02`, `EX03`
 
 ## 9. Chi tiết dựng

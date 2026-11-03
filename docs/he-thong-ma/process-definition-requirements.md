@@ -1,6 +1,6 @@
 # Define quy trình
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -37,15 +37,15 @@ Frame: `ADM-QT-010001` (tool đoán:ADM-QT-010001) · Nguồn nội dung: QC
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | danh-sach |  | `6823:374956` Danh sách loại quy trình | — |  | `TC01`, `TC22`, `TC23` | Khớp | QC |
 | `A01.02` | tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `I6823:374958;1739:32351` Tìm nội dung...; `6823:375024` Nghỉ học | — |  |  | Khớp | QC |
-| `A01.03` | bo-loc |  |  | — |  | `TC01` | Chưa thấy trên Figma | QC |
+| `A01.03` | bo-loc |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
 | `A01.04` | sap-xep |  | `6823:374979` Ngày cập nhật | — |  |  | Khớp | QC |
 | `A01.05` | loai-quy-trinh | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M; `DD/Molecule/Trigger` Size=XS, State=Default | `6823:374960` Dropdown · Loại quy trình; `I6823:375294;2015:31501;6823:377347` Lớp & giáo viên | — |  | `TC17` | Khớp | QC |
 | `A01.06` | trang-thai-quy-trinh | `Atom/Status` Size=M | `6823:375036` Atom/Status | — |  |  | Khớp | QC |
 | `A01.07` | nhap-quy-trinh-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `6823:375117` Add New Bar · Nhập nội dung mới | — |  | `TC02`, `TC23` | Khớp | QC |
-| `A01.08` | thong-tin-quy-trinh |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.09` | nut-xoa-cuoi-dong |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.10` | nut-nhan-ban-cuoi-dong |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.11` | mui-ten-cuoi-dong |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.08` | thong-tin-quy-trinh |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.09` | nut-xoa-cuoi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.10` | nut-nhan-ban-cuoi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.11` | mui-ten-cuoi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.12` | phan-trang |  | `6823:375119` Phân Trang | — |  | `TC01` | Khớp | QC |
 | `A01.13` | nhap | `Atom/Status` Size=M | `6823:375036` Atom/Status | — |  | `TC02`, `TC03`, `TC04`, `TC22`, `TC23`, `TC12` | Khớp | QC |
 | `A01.14` | cong-khai | `Atom/Status` Size=M | `6823:374998` Atom/Status | — |  | `TC03`, `TC04`, `TC22`, `TC12` | Khớp | QC |
@@ -57,7 +57,7 @@ Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-02000
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | ten-quy-trinh-moi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.01` | ten-quy-trinh-moi |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.02` | loai-quy-trinh | `DD/Molecule/Trigger` Size=XS, State=Default | `6823:374939` Dropdown · Loại quy trình | — |  |  | Khớp | QC |
 | `A02.03` | huy-xac-nhan | `Atom/Input` State=Filled, Kiểu=Chuẩn | `I2702:35911;1048:1266` Đã nhập xong; `2702:47939` Xác nhận bạn vắng đã học bù | — |  |  | Khớp một phần | QC |
 
@@ -67,7 +67,7 @@ Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-02000
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tieu-de |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.02` | noi-dung | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `I2702:35217;1739:32351` Tìm nội dung... | — |  |  | Khớp | QC |
 | `A03.03` | huy-xoa | `Atom/Input` State=Filled, Kiểu=Chuẩn | `I2702:35911;1048:1266` Đã nhập xong; `3058:120687` Nút xoá | — |  |  | Khớp một phần | QC |
 
@@ -77,13 +77,13 @@ Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-02000
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | quay-lai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.02` | danh-sach-package |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.01` | quay-lai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | danh-sach-package |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.03` | them-moi-package | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `2706:35135` Add New Bar · Thêm mới | — |  |  | Khớp một phần | QC |
 | `A04.04` | category | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2702:48139` Add New Bar · Nhập danh mục mới | — |  | `TC05`, `TC06` | Khớp một phần | QC |
 | `A04.05` | action-item | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `3108:122528` Add New Bar · Nhập nội dung mới | — |  | `TC05` | Khớp | QC |
 | `A04.06` | keo-tha | `Atom/Dropzone` Kiểu=Mặc định | `I2702:47717;1061:1316` Kéo thả file vào đây hoặc chọn file | — |  | `TC07` | Khớp một phần | QC |
-| `A04.07` | toggle-package |  |  | — |  | `TC07` | Chưa thấy trên Figma | QC |
+| `A04.07` | toggle-package |  |  | — |  | `TC07` | Chưa khớp tự động | QC |
 
 ### `A05` Dropdown Loại task và field cấu hình
 
@@ -107,10 +107,10 @@ Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-02000
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | noi-dung-da-them |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.02` | result |  |  | — |  | `TC10` | Chưa thấy trên Figma | QC |
+| `A06.01` | noi-dung-da-them |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.02` | result |  |  | — |  | `TC10` | Chưa khớp tự động | QC |
 | `A06.03` | tab-trong-lop | `Atom/Badge`  | `I6823:374912;2015:30345` Badge | — |  |  | Khớp một phần | QC |
-| `A06.04` | quy-trinh-cua-phu-trach-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.04` | quy-trinh-cua-phu-trach-lop |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A07` Toast phản hồi CRUD
 
@@ -118,10 +118,10 @@ Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-02000
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | thanh-cong |  |  | — |  | `TC11` | Chưa thấy trên Figma | QC |
-| `A07.02` | thong-bao |  |  | — |  | `TC11` | Chưa thấy trên Figma | QC |
-| `A07.03` | canh-bao |  |  | — |  | `TC11` | Chưa thấy trên Figma | QC |
-| `A07.04` | co-loi-xay-ra |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A07.01` | thanh-cong |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
+| `A07.02` | thong-bao |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
+| `A07.03` | canh-bao |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
+| `A07.04` | co-loi-xay-ra |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -207,7 +207,7 @@ Frame: `ADM-QT-010000`, `ADM-QT-020000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (17): `A01.03`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A02.01`, `A03.01`, `A04.01`, `A04.02`, `A04.07`, `A06.01`, `A06.02`, `A06.04`, `A07.01`, `A07.02`, `A07.03`, `A07.04`
+- Chưa khớp tự động (17): `A01.03`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A02.01`, `A03.01`, `A04.01`, `A04.02`, `A04.07`, `A06.01`, `A06.02`, `A06.04`, `A07.01`, `A07.02`, `A07.03`, `A07.04`
 - Frame Figma chưa có requirement (1): `ADM-QT-010001`
 
 ## 9. Chi tiết dựng

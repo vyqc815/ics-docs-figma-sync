@@ -1,6 +1,6 @@
 # Kiến thức (S1)
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -53,17 +53,17 @@ Frame: `CD-KH-040100`, `CD-KH-040200` (tool đoán:CD-KH-040100, CD-KH-040200) �
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | switch-center-header |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.02` | tab-loai-kien-thuc |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.01` | switch-center-header |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.02` | tab-loai-kien-thuc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.03` | tieu-de-bang | `Atom/Tag` Size=Small | `4846:158414` Atom/Tag | có |  |  | Khớp một phần | QC |
 | `A01.04` | preview-mobile | `Atom/Button` Type=Outlined, Size=Small | `4846:158423` Atom/Button | có | see `A14` |  | Khớp | QC |
 | `A01.05` | them | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `I4846:158697;5056:365849` Placeholder | có |  | `TC02`, `TC4a`, `TC4b` | Khớp | QC |
-| `A01.06` | them-bang-ai |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.06` | them-bang-ai |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.07` | thanh-cong-cu | `Atom/Button` Type=Secondary, Size=Small | `5003:16563` Atom/Button | có |  |  | Khớp | QC |
 | `A01.08` | panel-cum |  | `4846:158306` Panel · Cụm từ vựng; `5003:16498` Số cụm | có | see `A11` | `TC04` | Khớp | QC |
-| `A01.09` | sakumi |  |  | — |  | `TC02` | Chưa thấy trên Figma | QC |
-| `A01.10` | saechang |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.11` | dac-nhan-creative-english-betreux-creati |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.09` | sakumi |  |  | — |  | `TC02` | Chưa khớp tự động | QC |
+| `A01.10` | saechang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.11` | dac-nhan-creative-english-betreux-creati |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.12` | nut-them-tu-dropdown | `Atom/Button` Type=Outlined Icon, Size=Small | `4846:158427` Nút Thêm từ (dropdown) | có |  |  | Chỉ có trên Figma | Figma |
 | `A01.13` | atom-input | `Atom/Input` State=Search, Kiểu=S | `4846:158432` Atom/Input | có |  |  | Chỉ có trên Figma | Figma |
 | `A01.14` | dd-molecule-trigger | `DD/Molecule/Trigger` Size=S, State=Default | `4846:158439` DD/Molecule/Trigger | có |  |  | Chỉ có trên Figma | Figma |
@@ -85,31 +85,31 @@ Frame: `CD-KH-040100`, `CD-KH-040200` (tool đoán:CD-KH-040100, CD-KH-040200) �
 | `A02.02` | ngu-phap | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I4846:158300;2177:28928` Chi tiết NV | có |  | `TC7a` | Khớp | QC |
 | `A02.03` | mau-cau | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I5003:14880;2177:28928` Chi tiết NV | có |  |  | Khớp | QC |
 | `A02.04` | hanzi | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I5003:14885;2177:28928` Chi tiết NV | có |  |  | Khớp | QC |
-| `A02.05` | kanji |  |  | — |  | `TC08` | Chưa thấy trên Figma | QC |
-| `A02.06` | phat-am-tieng-trung-pinyin |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.07` | bang-chu-tieng-nhat-kana |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.08` | bang-chu-tieng-han-hangul |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.09` | tu-vung-tieng-trung |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.10` | kanji |  |  | — |  | `TC08` | Chưa thấy trên Figma | QC |
+| `A02.05` | kanji |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
+| `A02.06` | phat-am-tieng-trung-pinyin |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.07` | bang-chu-tieng-nhat-kana |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.08` | bang-chu-tieng-han-hangul |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.09` | tu-vung-tieng-trung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.10` | kanji |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
 | `A02.11` | hanzi | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I5003:14885;2177:28928` Chi tiết NV | có |  |  | Khớp | QC |
 | `A02.12` | tu-loai |  | `4846:158478` Từ loại | có |  | `TC05`, `TC07` | Khớp một phần | QC |
-| `A02.13` | phien-am-tung-chu-furigana |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.13` | phien-am-tung-chu-furigana |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.14` | vi-du |  | `4846:168532` Ví dụ | có |  | `TC7a` | Khớp một phần | QC |
-| `A02.15` | cach-dung-luu-y-ngu-phap |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.15` | cach-dung-luu-y-ngu-phap |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.16` | mo-rong |  | `4846:158655` Không, đừng | có |  |  | Khớp một phần | QC |
-| `A02.17` | nghia-han-tu |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.18` | bo-thu-kanji-han-tu |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.19` | chuoi-tim-kiem-kanji |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.20` | audio |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.17` | nghia-han-tu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.18` | bo-thu-kanji-han-tu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.19` | chuoi-tim-kiem-kanji |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.20` | audio |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.21` | phien-am |  | `4846:158474` Phiên âm; `4846:158494` nǐ | có |  | `TC7a` | Khớp một phần | QC |
-| `A02.22` | video-ngu-phap |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.23` | hiragana-katakana-bang-chu-nhat |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.24` | loai-bang-chu-nhat |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.25` | hang-bang-chu-nhat |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.26` | loai-bang-chu-han |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.27` | phien-am-bang-chu-han |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.28` | loai-am-nhom-thanh-dieu-phat-am |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.29` | audio-phat-am |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.22` | video-ngu-phap |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.23` | hiragana-katakana-bang-chu-nhat |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.24` | loai-bang-chu-nhat |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.25` | hang-bang-chu-nhat |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.26` | loai-bang-chu-han |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.27` | phien-am-bang-chu-han |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.28` | loai-am-nhom-thanh-dieu-phat-am |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.29` | audio-phat-am |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.30` | cum | `Atom/Tag` Size=Small | `4846:158480` Cụm; `4846:158500` Atom/Tag | có |  |  | Khớp | QC |
 
 ### `A03` Bảng danh sách, tìm kiếm, sắp xếp và lọc
@@ -119,11 +119,11 @@ Frame: `CD-KH-040100`, `CD-KH-040200` (tool đoán:CD-KH-040100, CD-KH-040200) �
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A03.01` | checkbox | `Checkbox` Size=16 | `4846:158468` Checkbox | có |  |  | Khớp | QC |
-| `A03.02` | stt-tay-nam-keo-tha |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.03` | cot-field |  |  | — |  | `TC12b` | Chưa thấy trên Figma | QC |
+| `A03.02` | stt-tay-nam-keo-tha |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.03` | cot-field |  |  | — |  | `TC12b` | Chưa khớp tự động | QC |
 | `A03.04` | cum | `Atom/Tag` Size=Small | `4846:158480` Cụm; `4846:158608` Atom/Tag | có | opens `A10` |  | Khớp | QC |
-| `A03.05` |  |  |  | — | see `A07` |  | Chưa thấy trên Figma | QC |
-| `A03.06` | tim-kiem |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.05` |  |  |  | — | see `A07` |  | Chưa khớp tự động | QC |
+| `A03.06` | tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.07` | sap-xep | `DD/Molecule/Trigger` Size=S, State=Default | `I4846:158439;2015:31180` Value; `I4846:158439;2015:31180` Value | có |  | `TC12` | Khớp | QC |
 | `A03.08` | trang-thai | `DD/Molecule/Trigger` Size=S, State=Default | `I4846:158451;2015:31180` Value; `4846:158324` Tất cả | có |  |  | Khớp | QC |
 | `A03.09` | phan-trang |  | `4846:158705` Footer · Phân trang | có |  |  | Khớp | QC |
@@ -136,12 +136,12 @@ Frame: `CD-KH-040150` (tool đoán:CD-KH-040150) · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A04.01` | tieu-de-mo-ta | `Popup/Header`  | `I4846:171725;2514:153341` Title | — |  |  | Khớp | QC |
-| `A04.02` | tim-kiem |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.02` | tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.03` | kho | `DD/Molecule/Trigger` Size=S, State=Default; `Popup/Header`  | `I4846:171725;2514:153342` Description; `I4846:171730;2015:31180` Value | — |  |  | Khớp | QC |
-| `A04.04` | cap-do-tu-loai |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.04` | cap-do-tu-loai |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.05` | danh-sach |  | `4846:171830` Đã có | — |  |  | Khớp | QC |
 | `A04.06` | them-vao-cum | `DD/Molecule/Trigger` Size=S, State=Default | `4846:171844` Thêm vào cụm:; `4846:171845` DD/Molecule/Trigger | — |  | `TC15` | Khớp | QC |
-| `A04.07` | chan-popup |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.07` | chan-popup |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A05` Popup Thêm theo list
 
@@ -150,21 +150,21 @@ Frame: `CD-KH-040160` (tool đoán:CD-KH-040160) · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A05.01` | tieu-de-mo-ta | `Popup/Header`  | `I4846:171903;2514:153341` Title | — |  |  | Khớp | QC |
-| `A05.02` | o-van-ban |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A05.02` | o-van-ban |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A05.03` | tach-cot-bang |  | `4846:171918` Tách cột bằng: dấu phẩy; `4846:171918` Tách cột bằng: dấu phẩy | — |  |  | Khớp | QC |
-| `A05.04` | ai-tu-dien-con-thieu |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A05.04` | ai-tu-dien-con-thieu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A05.05` | tu-chia-cum-bang-ai-sau-khi-import |  | `4846:171925` Tự chia cụm bằng AI sau khi import | — |  |  | Khớp | QC |
 | `A05.06` | xem-truoc | `Atom/Badge`  | `4846:171927` Bảng xem trước; `4846:171938` Atom/Badge | — |  | `TC17`, `TC18`, `TC19`, `TC19a` | Khớp | QC |
-| `A05.07` | them-vao-cum |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.08` | chan-popup |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A05.07` | them-vao-cum |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.08` | chan-popup |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A05.09` | tu-vung | `Popup/Header`  | `I4846:171903;2514:153341` Title; `I4846:171903;2514:153342` Description | — |  |  | Khớp | QC |
-| `A05.10` | ngu-phap |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.11` | mau-cau |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.12` | han-tu |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.13` | kanji |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.14` | phat-am-tieng-trung |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.15` | bang-chu-tieng-nhat |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.16` | bang-chu-tieng-han |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A05.10` | ngu-phap |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.11` | mau-cau |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.12` | han-tu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.13` | kanji |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.14` | phat-am-tieng-trung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.15` | bang-chu-tieng-nhat |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.16` | bang-chu-tieng-han |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A06` Nhập nhanh cuối bảng
 
@@ -172,8 +172,8 @@ Frame: `CD-KH-040100`, `CD-KH-040200` (tool đoán:CD-KH-040100, CD-KH-040200) �
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | o-nhap |  |  | — |  | `TC20` | Chưa thấy trên Figma | QC |
-| `A06.02` | enter |  |  | — |  | `TC20`, `TC21`, `TC22` | Chưa thấy trên Figma | QC |
+| `A06.01` | o-nhap |  |  | — |  | `TC20` | Chưa khớp tự động | QC |
+| `A06.02` | enter |  |  | — |  | `TC20`, `TC21`, `TC22` | Chưa khớp tự động | QC |
 
 ### `A07` Menu thao tác dòng và sửa mục
 
@@ -181,12 +181,12 @@ Frame: `CD-KH-040100`, `CD-KH-040200` (tool đoán:CD-KH-040100, CD-KH-040200) �
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | sua-nhanh-inline |  |  | — |  | `TC23` | Chưa thấy trên Figma | QC |
-| `A07.02` | mo-chi-tiet |  |  | — | see `A08` |  | Chưa thấy trên Figma | QC |
+| `A07.01` | sua-nhanh-inline |  |  | — |  | `TC23` | Chưa khớp tự động | QC |
+| `A07.02` | mo-chi-tiet |  |  | — | see `A08` |  | Chưa khớp tự động | QC |
 | `A07.03` | dien-thieu-bang-ai | `Atom/Button` Type=Secondary, Size=Small | `4846:158463` Atom/Button | có |  |  | Khớp | QC |
-| `A07.04` | them-vao-cum-go-khoi-cum |  |  | — | opens `A05` |  | Chưa thấy trên Figma | QC |
-| `A07.05` | nhan-ban |  |  | — |  | `TC25` | Chưa thấy trên Figma | QC |
-| `A07.06` | xoa-khoi-danh-sach |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A07.04` | them-vao-cum-go-khoi-cum |  |  | — | opens `A05` |  | Chưa khớp tự động | QC |
+| `A07.05` | nhan-ban |  |  | — |  | `TC25` | Chưa khớp tự động | QC |
+| `A07.06` | xoa-khoi-danh-sach |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A08` Chi tiết mục (drawer)
 
@@ -195,15 +195,15 @@ Frame: `CD-KH-040195` (tool đoán:CD-KH-040195) · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A08.01` | tieu-de |  | `5004:36544` Toolbar · Tiêu đề & hành động | có |  |  | Khớp | QC |
-| `A08.02` | field-bat-buoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A08.02` | field-bat-buoc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A08.03` | tu-loai |  | `5004:36570` Từ loại | có |  | `TC25e` | Khớp | QC |
-| `A08.04` | han-viet |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.05` | tao-lai |  |  | — |  | `TC25c` | Chưa thấy trên Figma | QC |
-| `A08.06` | mo-rong |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.07` | audio |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.08` | vi-du |  |  | — |  | `TC25a`, `TC25b`, `TC25e` | Chưa thấy trên Figma | QC |
+| `A08.04` | han-viet |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.05` | tao-lai |  |  | — |  | `TC25c` | Chưa khớp tự động | QC |
+| `A08.06` | mo-rong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.07` | audio |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.08` | vi-du |  |  | — |  | `TC25a`, `TC25b`, `TC25e` | Chưa khớp tự động | QC |
 | `A08.09` | cum | `Atom/Tag` Size=Small | `5004:36572` Cụm; `5004:36590` Atom/Tag | có | opens `A10` |  | Khớp | QC |
-| `A08.10` | chan-drawer |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A08.10` | chan-drawer |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A09` Chọn nhiều và thao tác hàng loạt
 
@@ -211,11 +211,11 @@ Frame: `CD-KH-040110`, `CD-KH-040120` (tool đoán:CD-KH-040110, CD-KH-040120) �
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A09.01` | da-chon-n-tu |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.02` | chon-tat-ca-n-tu |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.03` | dien-thieu-bang-ai-k |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A09.01` | da-chon-n-tu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.02` | chon-tat-ca-n-tu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.03` | dien-thieu-bang-ai-k |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A09.04` | them-vao-cum-go-khoi-cum | `Atom/Button` Type=Outlined, Size=XSmall | `4846:161820` Atom/Button | — | opens `A09` |  | Khớp một phần | QC |
-| `A09.05` | xoa-n |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A09.05` | xoa-n |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A09.06` | bo-chon | `Atom/Button` Type=Neutral, Size=XSmall | `4846:161827` Atom/Button | — |  | `TC26a` | Khớp một phần | QC |
 
 ### `A10` Popup Thêm vào cụm / Gỡ khỏi cụm
@@ -227,7 +227,7 @@ Frame: `CD-KH-040125` (tool đoán:CD-KH-040125) · Nguồn nội dung: QC
 | `A10.01` | tieu-de |  | `4846:176093` Toolbar · Tiêu đề & hành động | — |  |  | Khớp | QC |
 | `A10.02` | tim-cum | `Atom/Input` State=Search, Kiểu=S | `4911:11844` Atom/Input | — |  |  | Khớp | QC |
 | `A10.03` | danh-sach-cum | `Atom/Tag` Size=Small | `4911:11845` Danh sách cụm; `4846:176143` Atom/Tag | — |  |  | Khớp | QC |
-| `A10.04` | huy-luu |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A10.04` | huy-luu |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A11` Panel Cụm và Số cụm
 
@@ -241,7 +241,7 @@ Frame: `CD-KH-040100`, `CD-KH-040200` (tool đoán:CD-KH-040100, CD-KH-040200) �
 | `A11.04` | tim-cum | `Atom/Input` State=Search, Kiểu=S | `4846:158314` Atom/Input | có |  |  | Khớp | QC |
 | `A11.05` | tat-ca |  | `4846:158324` Tất cả | có |  |  | Khớp | QC |
 | `A11.06` | chua-phan-cum | `Atom/Tag` Size=Small | `4846:158500` Atom/Tag | có |  | `TC32` | Khớp | QC |
-| `A11.07` | dong-cum |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A11.07` | dong-cum |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A11.08` | them-cum-moi | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `4846:158404` Molecule/Add New Bar | có |  | `TC31` | Khớp | QC |
 
 ### `A12` Popup Chia cụm bằng AI
@@ -266,15 +266,15 @@ Frame: `CD-KH-040190` (tool đoán:CD-KH-040190) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A13.01` | popup-them-bang-ai |  |  | — |  | `TC38a` | Chưa thấy trên Figma | QC |
-| `A13.02` | diem-goi-dien-thieu |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A13.03` | field-chinh-bat-buoc-truoc-khi-dien-thie |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A13.04` | thanh-tien-do-dien-thieu |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A13.01` | popup-them-bang-ai |  |  | — |  | `TC38a` | Chưa khớp tự động | QC |
+| `A13.02` | diem-goi-dien-thieu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A13.03` | field-chinh-bat-buoc-truoc-khi-dien-thie |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A13.04` | thanh-tien-do-dien-thieu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A13.05` | ket-qua-dien-thieu |  | `5003:17898` Giá trị cũ giữ nguyên tới khi duyệt | có |  |  | Khớp | QC |
 | `A13.06` | diem-goi-soat-loi | `Atom/Button` Type=Secondary, Size=Small | `5003:16788` Atom/Button | có |  |  | Khớp | QC |
-| `A13.07` | thanh-ket-qua-soat-loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A13.08` | o-ai-nghi-sai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A13.09` | tao-lai-chi-tiet-muc |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A13.07` | thanh-ket-qua-soat-loi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A13.08` | o-ai-nghi-sai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A13.09` | tao-lai-chi-tiet-muc |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A14` Preview mobile
 
@@ -286,8 +286,8 @@ Frame: `CD-KH-040140` (tool đoán:CD-KH-040140) · Nguồn nội dung: QC
 | `A14.02` | thiet-bi | `DD/Molecule/Trigger` Size=XS, State=Default | `4911:12381` Chọn thiết bị; `4911:12381` Chọn thiết bị | có |  |  | Khớp | QC |
 | `A14.03` | tab-dang-the | `Atom/Tab` State=Active, Kiểu=Khung | `4846:171644` Atom/Tab | có |  |  | Khớp | QC |
 | `A14.04` | the | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `I4846:171017;5056:365849` Placeholder; `4846:171655` Tất cả · 3/398 | có |  |  | Khớp | QC |
-| `A14.05` | thong-tin-thieu |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A14.06` | dieu-huong |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A14.05` | thong-tin-thieu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A14.06` | dieu-huong |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A15` Popup xác nhận gỡ mục khỏi khoá
 
@@ -319,9 +319,9 @@ Frame: `CD-KH-040100`, `CD-KH-040200` (tool đoán:CD-KH-040100, CD-KH-040200) �
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A17.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC04` | Chưa thấy trên Figma | QC |
+| `A17.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC04` | Chưa khớp tự động | QC |
 | `A17.02` | thong-tin | `Atom/Tag` Size=Small | `I4846:158419;1725:17144` Label | có |  |  | Khớp | QC |
-| `A17.03` | canh-bao |  |  | — |  | `TTC02` | Chưa thấy trên Figma | QC |
+| `A17.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
 | `A17.04` | loi | `Atom/Button` Type=Secondary, Size=Small | `I5003:16563;1048:1240` Button | có |  |  | Khớp | QC |
 
 ### `F01` (ngoài Body)
@@ -460,7 +460,7 @@ Frame: `CD-KH-040100`, `CD-KH-040200` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (75): `A01.01`, `A01.02`, `A01.06`, `A01.09`, `A01.10`, `A01.11`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.13`, `A02.15`, `A02.17`, `A02.18`, `A02.19`, `A02.20`, `A02.22`, `A02.23`, `A02.24`, `A02.25`, `A02.26`, `A02.27`, `A02.28`, `A02.29`, `A03.02`, `A03.03`, `A03.05`, `A03.06`, `A04.02`, `A04.04`, `A04.07`, `A05.02`, `A05.04`, `A05.07`, `A05.08`, `A05.10`, `A05.11`, `A05.12`, `A05.13`, `A05.14`, `A05.15`, `A05.16`, `A06.01`, `A06.02`, `A07.01`, `A07.02`, `A07.04`, `A07.05`, `A07.06`, `A08.02`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.10`, `A09.01`, `A09.02`, `A09.03`, `A09.05`, `A10.04`, `A11.07`, `A13.01`, `A13.02`, `A13.03`, `A13.04`, `A13.07`, `A13.08`, `A13.09`, `A14.05`, `A14.06`, `A17.01`, `A17.03`
+- Chưa khớp tự động (75): `A01.01`, `A01.02`, `A01.06`, `A01.09`, `A01.10`, `A01.11`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.13`, `A02.15`, `A02.17`, `A02.18`, `A02.19`, `A02.20`, `A02.22`, `A02.23`, `A02.24`, `A02.25`, `A02.26`, `A02.27`, `A02.28`, `A02.29`, `A03.02`, `A03.03`, `A03.05`, `A03.06`, `A04.02`, `A04.04`, `A04.07`, `A05.02`, `A05.04`, `A05.07`, `A05.08`, `A05.10`, `A05.11`, `A05.12`, `A05.13`, `A05.14`, `A05.15`, `A05.16`, `A06.01`, `A06.02`, `A07.01`, `A07.02`, `A07.04`, `A07.05`, `A07.06`, `A08.02`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.10`, `A09.01`, `A09.02`, `A09.03`, `A09.05`, `A10.04`, `A11.07`, `A13.01`, `A13.02`, `A13.03`, `A13.04`, `A13.07`, `A13.08`, `A13.09`, `A14.05`, `A14.06`, `A17.01`, `A17.03`
 - Chưa sync (10): `A15.01`, `A15.02`, `A15.03`, `A15.04`, `A15.05`, `A15.06`, `A16.01`, `A16.02`, `A16.03`, `A16.04`
 - Requirement nhắc mã Figma không có (3): `CD-KH-030270`, `CD-KH-030400`, `CD-KH-030540`
 - Frame Figma chưa có requirement (10): `CD-KH-040110`, `CD-KH-040120`, `CD-KH-040125`, `CD-KH-040140`, `CD-KH-040150`, `CD-KH-040155`, `CD-KH-040160`, `CD-KH-040170`, `CD-KH-040190`, `CD-KH-040195`

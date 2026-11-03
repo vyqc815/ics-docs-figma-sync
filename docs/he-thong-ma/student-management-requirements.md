@@ -1,6 +1,6 @@
 # Quản lý học viên
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -115,19 +115,19 @@ Frame: `ADM-HV-010000` (tool đoán:ADM-HV-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | the-so-hoa-don |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.02` | the-tong-hoc-phi |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.03` | bang-hoa-don |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.04` | ten-hoa-don |  |  | — | governed-by `REQ01` | `TC44` | Chưa thấy trên Figma | QC |
-| `A07.05` | trang-thai-loai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.06` | hieu-khach-ghi-chu |  |  | — |  | `TC72` | Chưa thấy trên Figma | QC |
-| `A07.07` | ghi-nhan-ngay-hen |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.08` | lop-du-kien |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.09` | so-tien-da-dong |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.10` | kpi-hoc-phi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A07.01` | the-so-hoa-don |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.02` | the-tong-hoc-phi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.03` | bang-hoa-don |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.04` | ten-hoa-don |  |  | — | governed-by `REQ01` | `TC44` | Chưa khớp tự động | QC |
+| `A07.05` | trang-thai-loai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.06` | hieu-khach-ghi-chu |  |  | — |  | `TC72` | Chưa khớp tự động | QC |
+| `A07.07` | ghi-nhan-ngay-hen |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.08` | lop-du-kien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.09` | so-tien-da-dong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.10` | kpi-hoc-phi |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.11` | hinh | `Card Menu v2 (Test)` Type=Chính dropdown, State=Default | `I4915:233468;4899:195420` Card Menu v2 (Test) | — |  | `TC70`, `TC44`, `TC73` | Khớp | QC |
-| `A07.12` | phu-trach-lien-ket |  |  | — |  | `TC72` | Chưa thấy trên Figma | QC |
-| `A07.13` | cuon-ngang |  |  | — |  | `TC27`, `TC63` | Chưa thấy trên Figma | QC |
+| `A07.12` | phu-trach-lien-ket |  |  | — |  | `TC72` | Chưa khớp tự động | QC |
+| `A07.13` | cuon-ngang |  |  | — |  | `TC27`, `TC63` | Chưa khớp tự động | QC |
 
 ### `A08` Lịch sử lớp
 
@@ -161,12 +161,12 @@ Frame: `ADM-HV-010000` (tool đoán:ADM-HV-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A09.01` | editor |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.02` | gui |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.03` | so-binh-luan |  |  | — |  | `TC67` | Chưa thấy trên Figma | QC |
-| `A09.04` | card-binh-luan |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.05` | binh-luan-ghi-chu |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A09.06` | lam-moi-binh-luan |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A09.01` | editor |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.02` | gui |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.03` | so-binh-luan |  |  | — |  | `TC67` | Chưa khớp tự động | QC |
+| `A09.04` | card-binh-luan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.05` | binh-luan-ghi-chu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.06` | lam-moi-binh-luan |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A10` Toast phản hồi CRUD
 
@@ -174,10 +174,10 @@ Frame: `ADM-HV-010000` (tool đoán:ADM-HV-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A10.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa thấy trên Figma | QC |
-| `A10.02` | thong-tin |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A10.03` | canh-bao |  |  | — |  | `TTC02` | Chưa thấy trên Figma | QC |
-| `A10.04` | loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A10.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
+| `A10.02` | thong-tin |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A10.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A10.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -376,7 +376,7 @@ Frame: `ADM-HV-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (22): `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.12`, `A07.13`, `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`, `A10.03`, `A10.04`
+- Chưa khớp tự động (22): `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.12`, `A07.13`, `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`, `A10.03`, `A10.04`
 - Chưa sync (48): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.11`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.09`, `A08.10`, `A08.11`, `A08.12`, `A08.13`, `A08.14`, `A08.15`, `A08.16`, `A08.17`, `A08.18`, `A08.19`
 - Frame Figma chưa có requirement (8): `ADM-HV-010001`, `ADM-HV-010010`, `ADM-HV-010012`, `ADM-HV-010060`, `ADM-HV-010062`, `ADM-HV-010070`, `ADM-HV-010102`, `ADM-HV-010202`
 - Thiếu prototype link đi vào (3): `ADM-HV-010010`, `ADM-HV-010060`, `ADM-HV-010070`

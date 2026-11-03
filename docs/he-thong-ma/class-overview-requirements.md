@@ -1,6 +1,6 @@
 # [Giáo viên] Chi tiết lớp — Tổng quan
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -36,12 +36,12 @@ Frame: `GV-LOP-020000` · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | tieu-de-tong-quan-lop |  | `4324:4865` Tổng Quan Lớp | — |  |  | Khớp | QC |
-| `A01.02` | nut-back-ma-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.03` | thong-ke-phia-tren |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.04` | vung-ben-trai |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.02` | nut-back-ma-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.03` | thong-ke-phia-tren |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.04` | vung-ben-trai |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.05` | danh-sach-hoc-vien-ben-phai |  | `4324:5081` Danh sách học viên | — |  |  | Khớp | QC |
 | `A01.06` | o-tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `4324:4867` Atom/Input | — |  | `TC04` | Khớp | QC |
-| `A01.07` | icon-canh-o-tim-kiem |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.07` | icon-canh-o-tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Nút Back và tooltip thông tin lớp
 
@@ -50,13 +50,13 @@ Frame: `GV-LOP-010000` · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A02.01` | nut-back-ma-lop | `MENU - TEACHER`  | `4915:258752` Sidebar · MENU - TEACHER | — |  |  | Khớp | QC |
-| `A02.02` | tooltip |  |  | — |  | `TC05`, `TC06`, `TC08` | Chưa thấy trên Figma | QC |
-| `A02.03` | buoi-hoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.04` | lich-hoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A02.02` | tooltip |  |  | — |  | `TC05`, `TC06`, `TC08` | Chưa khớp tự động | QC |
+| `A02.03` | buoi-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.04` | lich-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.05` | sp | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:258752;6244:32838` Card Menu | — |  |  | Khớp | QC |
-| `A02.06` | cskh |  |  | — |  | `TC07` | Chưa thấy trên Figma | QC |
+| `A02.06` | cskh |  |  | — |  | `TC07` | Chưa khớp tự động | QC |
 | `A02.07` | giao-vien | `ACCOUNT` Size=Default | `3868:95485` ACCOUNT | — |  |  | Khớp | QC |
-| `A02.08` | khai-giang |  |  | — |  | `TC07` | Chưa thấy trên Figma | QC |
+| `A02.08` | khai-giang |  |  | — |  | `TC07` | Chưa khớp tự động | QC |
 | `A02.09` | component-2 | `Switch Center`  | `4273:161193` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
 | `A02.10` | header-vai-tro |  | `4899:187387` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
 
@@ -74,7 +74,7 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-02000
 | `A03.06` | thoi-gian-hoc | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `3868:95633` Thẻ chỉ số · Thời gian học | — |  | `TC13` | Khớp | QC |
 | `A03.07` | tieu-chuan | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4324:4879` Thẻ chỉ số | — |  | `TC14` | Khớp một phần | QC |
 | `A03.08` | da-cham-va-sua-bai | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `4324:4880` Thẻ chỉ số | — |  | `TC15` | Khớp một phần | QC |
-| `A03.09` | danh-gia-lop |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.09` | danh-gia-lop |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Biểu đồ theo bài học
 
@@ -82,10 +82,10 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-02000
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | truc-bai-hoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.01` | truc-bai-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.02` | gia-tri |  | `4324:4927` Giá trị | — |  |  | Khớp một phần | QC |
-| `A04.03` | gioi-han-chart-hoc-vien |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.04` | duong-vung-cam |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A04.03` | gioi-han-chart-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.04` | duong-vung-cam |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A04.05` | tooltip | `Molecule/Tooltip`  | `5413:254526` Tooltip · Hover nút Back (Thông tin lớp) | — |  |  | Khớp một phần | QC |
 
 ### `A05` Danh sách, tìm kiếm và chọn học viên
@@ -94,12 +94,12 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-02000
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | the-hoc-vien |  |  | — |  | `TC20` | Chưa thấy trên Figma | QC |
-| `A05.02` | the-dang-chon |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.03` | bam-the |  |  | — |  | `TC19` | Chưa thấy trên Figma | QC |
+| `A05.01` | the-hoc-vien |  |  | — |  | `TC20` | Chưa khớp tự động | QC |
+| `A05.02` | the-dang-chon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.03` | bam-the |  |  | — |  | `TC19` | Chưa khớp tự động | QC |
 | `A05.04` | tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `3868:96252` Tìm kiếm | — |  |  | Khớp | QC |
 | `A05.05` | pham-vi-danh-sach | `CLass Status`  | `3868:95642` CLass Status | — |  |  | Khớp | QC |
-| `A05.06` | vung-trai |  |  | — |  | `TC18` | Chưa thấy trên Figma | QC |
+| `A05.06` | vung-trai |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
 
 ### `A06` Đánh giá tổng và bài học gần đây
 
@@ -107,12 +107,12 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-02000
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | badge-danh-gia |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.01` | badge-danh-gia |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A06.02` | so-bai-hien-thi |  | `4324:5081` Danh sách học viên | — |  |  | Khớp một phần | QC |
-| `A06.03` | di-hoc-vang |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.04` | da-nop-btvn |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.05` | icon-bai |  |  | — |  | `TC26` | Chưa thấy trên Figma | QC |
-| `A06.06` | hover-icon-bai |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.03` | di-hoc-vang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.04` | da-nop-btvn |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.05` | icon-bai |  |  | — |  | `TC26` | Chưa khớp tự động | QC |
+| `A06.06` | hover-icon-bai |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A07` Bảng bài học của học viên và điểm danh
 
@@ -125,13 +125,13 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-02000
 | `A07.03` | trang-thai | `DD/Molecule/Trigger` Size=XS, State=Default | `3868:95575` Filter · Trạng thái | — |  | `TC30` | Khớp | QC |
 | `A07.04` | diem-nop-bai |  | `4324:4910` ĐIỂM / NỘP BÀI; `4324:4930` Chưa nộp | — |  |  | Khớp một phần | QC |
 | `A07.05` | thoi-gian | `Thẻ chỉ số` Kiểu=Biểu đồ nhấn | `I3868:95633;3065:71108` Tiêu đề | — | opens `A09` | `TC29` | Khớp | QC |
-| `A07.06` | co-mat |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.07` | vao-tre |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.08` | ra-som |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.09` | vao-tre-ra-som |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.10` | nghi-co-phep |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.11` | nghi-khong-phep |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A07.12` | chua-diem-danh |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A07.06` | co-mat |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.07` | vao-tre |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.08` | ra-som |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.09` | vao-tre-ra-som |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.10` | nghi-co-phep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.11` | nghi-khong-phep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.12` | chua-diem-danh |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A08` Popup ghi chú giáo viên theo bài học
 
@@ -161,10 +161,10 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` (tool đoán:GV-LOP-010000, GV-LOP-02000
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A10.01` | loading |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A10.02` | rong |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A10.01` | loading |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A10.02` | rong |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A10.03` | loi | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:258752;4901:212605;2245:87768` Label | — |  |  | Khớp một phần | QC |
-| `A10.04` | toast |  |  | — |  | `TC41` | Chưa thấy trên Figma | QC |
+| `A10.04` | toast |  |  | — |  | `TC41` | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -274,7 +274,7 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - `A01` Khác Figma GV-LOP-020000: khối `Bài Học Gần Đây` ở vùng trái đang vẽ 4 icon, requirement là 6 bài; bảng bài học chưa có tag thời điểm mở bài phía trên tên bài.
-- Chưa thấy trên Figma (32): `A01.02`, `A01.03`, `A01.04`, `A01.07`, `A02.02`, `A02.03`, `A02.04`, `A02.06`, `A02.08`, `A03.09`, `A04.01`, `A04.03`, `A04.04`, `A05.01`, `A05.02`, `A05.03`, `A05.06`, `A06.01`, `A06.03`, `A06.04`, `A06.05`, `A06.06`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`, `A07.12`, `A10.01`, `A10.02`, `A10.04`
+- Chưa khớp tự động (32): `A01.02`, `A01.03`, `A01.04`, `A01.07`, `A02.02`, `A02.03`, `A02.04`, `A02.06`, `A02.08`, `A03.09`, `A04.01`, `A04.03`, `A04.04`, `A05.01`, `A05.02`, `A05.03`, `A05.06`, `A06.01`, `A06.03`, `A06.04`, `A06.05`, `A06.06`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`, `A07.12`, `A10.01`, `A10.02`, `A10.04`
 - Chưa sync (8): `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A09.01`, `A09.02`, `A09.03`, `A09.04`
 - Frame Figma chưa có requirement (2): `GV-LOP-020020`, `GV-LOP-020030`
 - Thiếu prototype link đi vào (2): `GV-LOP-020020`, `GV-LOP-020030`

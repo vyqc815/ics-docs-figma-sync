@@ -1,6 +1,6 @@
 # Học Kỳ - Tab Bài học
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -61,17 +61,17 @@ Frame: `CD-KH-030200` (tool đoán:CD-KH-030200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | them-nhom |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.02` | them-noi-dung |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.03` | gioi-han |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.04` | xoa |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.05` | keo-tha |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.06` | badge-tab |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.07` | 90-100 |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.08` | 80-90 |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.09` | 0-va-80 |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.10` | 00-00-00 |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.11` | 100 |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.01` | them-nhom |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | them-noi-dung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.03` | gioi-han |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.04` | xoa |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | keo-tha |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.06` | badge-tab |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.07` | 90-100 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.08` | 80-90 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.09` | 0-va-80 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.10` | 00-00-00 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.11` | 100 |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Popup: Chi tiết bài học - Tab Tài nguyên
 
@@ -172,7 +172,7 @@ Frame: `CD-KH-030200` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (11): `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`, `A03.11`
+- Chưa khớp tự động (11): `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`, `A03.11`
 - Frame Figma chưa có requirement (13): `CD-KH-030210`, `CD-KH-030211`, `CD-KH-030230`, `CD-KH-030231`, `CD-KH-030240`, `CD-KH-030241`, `CD-KH-030242`, `CD-KH-030243`, `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247`, `CD-KH-030250`
 - Phân loại cần design duyệt (12): `CD-KH-030211`, `CD-KH-030230`, `CD-KH-030231`, `CD-KH-030240`, `CD-KH-030241`, `CD-KH-030242`, `CD-KH-030243`, `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247`, `CD-KH-030250`
 - Thiếu prototype link đi vào (9): `CD-KH-030211`, `CD-KH-030231`, `CD-KH-030241`, `CD-KH-030242`, `CD-KH-030243`, `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247`

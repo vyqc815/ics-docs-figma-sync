@@ -1,6 +1,6 @@
 # Chi tiết lớp học — Menu Nhật ký
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -39,8 +39,8 @@ Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 | `A01.04` | ngay-log |  | `2533:20889` NGÀY LOG | — |  |  | Khớp | QC |
 | `A01.05` | doi-tuong | `Atom/Object Chip` Type=System; `DD/Molecule/Trigger` Size=XS, State=Active | `2533:20876` Dropdown; `2533:20905` Atom/Object Chip | — |  | `TC02` | Khớp | QC |
 | `A01.06` | mo-rong-thu-gon |  | `2533:20927` Thu gọn | — |  |  | Khớp | QC |
-| `A01.07` | thao-tac-sua |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A01.08` | icon-thung-rac |  |  | — | opens `A04` |  | Chưa thấy trên Figma | QC |
+| `A01.07` | thao-tac-sua |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.08` | icon-thung-rac |  |  | — | opens `A04` |  | Chưa khớp tự động | QC |
 | `A01.09` | khu-vuc-them-nhat-ky |  | `2533:20883` TIÊU ĐỀ | — | opens `A01` |  | Khớp | QC |
 
 ### `A02` Tìm kiếm và filter Đối tượng / Thời gian
@@ -50,22 +50,22 @@ Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A02.01` | tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `I2533:21147;1739:32351` Tìm nội dung...; `2533:21147` Atom/Input | — |  |  | Khớp | QC |
-| `A02.02` | filter-doi-tuong |  |  | — |  | `TC08`, `TC17` | Chưa thấy trên Figma | QC |
-| `A02.03` | filter-thoi-gian |  |  | — |  | `TC13` | Chưa thấy trên Figma | QC |
-| `A02.04` | ket-hop-dieu-kien |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.05` | bo-dieu-kien |  |  | — |  | `TC11` | Chưa thấy trên Figma | QC |
-| `A02.06` | toi-han |  |  | — |  | `TC13` | Chưa thấy trên Figma | QC |
-| `A02.07` | hom-nay |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.08` | hom-qua |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.09` | hom-nay-va-hom-qua |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.10` | tuan-nay |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.11` | tuan-truoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.12` | thang-nay |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.13` | thang-truoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.14` | 3-thang-truoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.15` | nam-nay |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.16` | nam-truoc |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.17` | tuy-chon |  |  | — |  | `TC14` | Chưa thấy trên Figma | QC |
+| `A02.02` | filter-doi-tuong |  |  | — |  | `TC08`, `TC17` | Chưa khớp tự động | QC |
+| `A02.03` | filter-thoi-gian |  |  | — |  | `TC13` | Chưa khớp tự động | QC |
+| `A02.04` | ket-hop-dieu-kien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.05` | bo-dieu-kien |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
+| `A02.06` | toi-han |  |  | — |  | `TC13` | Chưa khớp tự động | QC |
+| `A02.07` | hom-nay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.08` | hom-qua |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.09` | hom-nay-va-hom-qua |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.10` | tuan-nay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.11` | tuan-truoc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.12` | thang-nay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.13` | thang-truoc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.14` | 3-thang-truoc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.15` | nam-nay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.16` | nam-truoc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.17` | tuy-chon |  |  | — |  | `TC14` | Chưa khớp tự động | QC |
 
 ### `A03` Tạo, sửa và xóa nhật ký viết tay
 
@@ -73,14 +73,14 @@ Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | them-nhat-ky |  |  | — |  | `TC18` | Chưa thấy trên Figma | QC |
+| `A03.01` | them-nhat-ky |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
 | `A03.02` | tieu-de |  | `2533:20883` TIÊU ĐỀ | — |  | `TC18`, `TC19`, `TC20`, `TC21`, `TC23`, `TC25` | Khớp | QC |
 | `A03.03` | noi-dung | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `I2533:21147;1739:32351` Tìm nội dung...; `2533:21014` Trống | — |  | `TC18`, `TC19`, `TC20`, `TC21`, `TC23`, `TC25`, `TC27` | Khớp | QC |
-| `A03.04` | nguoi-tao-doi-tuong |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.05` | ngay-gio-log |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.06` | sua |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A03.07` | xoa |  |  | — | opens `A04` |  | Chưa thấy trên Figma | QC |
-| `A03.08` | chua-luu-huy |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.04` | nguoi-tao-doi-tuong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.05` | ngay-gio-log |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.06` | sua |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.07` | xoa |  |  | — | opens `A04` |  | Chưa khớp tự động | QC |
+| `A03.08` | chua-luu-huy |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Popup xác nhận xóa nhật ký
 
@@ -88,9 +88,9 @@ Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | noi-dung-xac-nhan |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A04.02` | huy-dong |  |  | — |  | `TC31` | Chưa thấy trên Figma | QC |
-| `A04.03` | xac-nhan |  |  | — |  | `TC32` | Chưa thấy trên Figma | QC |
+| `A04.01` | noi-dung-xac-nhan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | huy-dong |  |  | — |  | `TC31` | Chưa khớp tự động | QC |
+| `A04.03` | xac-nhan |  |  | — |  | `TC32` | Chưa khớp tự động | QC |
 
 ### `A05` Log Hệ thống — Thêm học viên vào lớp và đóng tiền
 
@@ -100,8 +100,8 @@ Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 |---|---|---|---|---|---|---|---|---|
 | `A05.01` | them-hoc-vien-vao-lop |  | `2533:20944` Thêm Học Viên | — |  |  | Khớp | QC |
 | `A05.02` | dong-tien |  | `2533:20961` Thêm Học Phí | — |  | `TC34` | Khớp | QC |
-| `A05.03` | nguoi-thuc-hien |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A05.04` | ngay-gio-log |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A05.03` | nguoi-thuc-hien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.04` | ngay-gio-log |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A06` Toast phản hồi CRUD
 
@@ -109,19 +109,19 @@ Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC03` | Chưa thấy trên Figma | QC |
+| `A06.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC03` | Chưa khớp tự động | QC |
 | `A06.02` | thong-tin |  | `2533:20924` Giúp học viên thực hành theo dõi lớp học, nắm được tình trạng học tập của học viên và rèn kỹ năng tổng hợp – báo cáo thông tin lớp. | — |  |  | Khớp | QC |
-| `A06.03` | canh-bao |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.04` | loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.05` | tao-thanh-cong |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.06` | sua-thanh-cong |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.07` | xoa-thanh-cong |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.08` | tao-that-bai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.09` | sua-that-bai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.10` | xoa-that-bai |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.11` | thieu-quyen |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.12` | tieu-de-thieu-khong-hop-le |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A06.13` | dang-dong-bo-neu-flow-co-trang-thai-nay |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A06.03` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.05` | tao-thanh-cong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.06` | sua-thanh-cong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.07` | xoa-thanh-cong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.08` | tao-that-bai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.09` | sua-that-bai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.10` | xoa-that-bai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.11` | thieu-quyen |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.12` | tieu-de-thieu-khong-hop-le |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.13` | dang-dong-bo-neu-flow-co-trang-thai-nay |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -218,7 +218,7 @@ Frame: `ADM-LOP-050100` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (41): `A01.07`, `A01.08`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.11`, `A02.12`, `A02.13`, `A02.14`, `A02.15`, `A02.16`, `A02.17`, `A03.01`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A04.01`, `A04.02`, `A04.03`, `A05.03`, `A05.04`, `A06.01`, `A06.03`, `A06.04`, `A06.05`, `A06.06`, `A06.07`, `A06.08`, `A06.09`, `A06.10`, `A06.11`, `A06.12`, `A06.13`
+- Chưa khớp tự động (41): `A01.07`, `A01.08`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.11`, `A02.12`, `A02.13`, `A02.14`, `A02.15`, `A02.16`, `A02.17`, `A03.01`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A04.01`, `A04.02`, `A04.03`, `A05.03`, `A05.04`, `A06.01`, `A06.03`, `A06.04`, `A06.05`, `A06.06`, `A06.07`, `A06.08`, `A06.09`, `A06.10`, `A06.11`, `A06.12`, `A06.13`
 - REQ/EX chưa có testcase (1): `EX06`
 
 ## 9. Chi tiết dựng

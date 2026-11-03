@@ -1,6 +1,6 @@
 # Chi tiết danh mục (Popup)
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -59,9 +59,9 @@ Frame: `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057` (tool đo�
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A03.01` | tim-kiem | `Atom/Input` State=Search, Kiểu=Chuẩn | `I2702:46381;1739:32505` Tìm nội dung... | — |  |  | Khớp một phần | QC |
-| `A03.02` | package-category |  |  | — |  | `TC08` | Chưa thấy trên Figma | QC |
-| `A03.03` | action-item |  |  | — |  | `TC08` | Chưa thấy trên Figma | QC |
-| `A03.04` | luu-ap-dung |  |  | — |  | `TC08`, `TC11` | Chưa thấy trên Figma | QC |
+| `A03.02` | package-category |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
+| `A03.03` | action-item |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
+| `A03.04` | luu-ap-dung |  |  | — |  | `TC08`, `TC11` | Chưa khớp tự động | QC |
 
 ### `F01` (ngoài Body)
 
@@ -136,7 +136,7 @@ Frame: `CD-DM-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (3): `A03.02`, `A03.03`, `A03.04`
+- Chưa khớp tự động (3): `A03.02`, `A03.03`, `A03.04`
 - Chưa sync (7): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`
 - Frame Figma chưa có requirement (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Thiếu prototype link đi vào (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`

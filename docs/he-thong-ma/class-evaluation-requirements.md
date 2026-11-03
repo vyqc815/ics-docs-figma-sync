@@ -1,6 +1,6 @@
 # [Giáo viên] Chi tiết lớp — Đánh giá
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -28,7 +28,7 @@ Frame: `GV-LOP-100100` · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A01.01` | menu-danh-gia | `Card Menu v2 (Test)` Type=Menu phụ, State=Select | `I4915:261791;4901:215081` Card Menu v2 (Test) | — |  | `TC01` | Khớp | QC |
-| `A01.02` | hinh-minh-hoa |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A01.02` | hinh-minh-hoa |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.03` | tieu-de |  | `4333:17252` Không có quyền truy cập | — |  |  | Khớp | QC |
 | `A01.04` | mo-ta |  | `4333:17304` Bạn chưa được cấp quyền cho trang này | — |  | `TC01` | Khớp | QC |
 | `A01.05` | nut-quay-ve-trang-chu | `Atom/Button` Type=Primary, Size=Small | `4333:17305` Button · Quay về trang chủ | — |  |  | Khớp | QC |
@@ -69,7 +69,7 @@ Frame: `GV-LOP-100100` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (1): `A01.02`
+- Chưa khớp tự động (1): `A01.02`
 
 ## 9. Chi tiết dựng
 

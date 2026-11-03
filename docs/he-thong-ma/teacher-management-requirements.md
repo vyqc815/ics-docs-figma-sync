@@ -1,6 +1,6 @@
 # [Admin] Quản lý danh sách giáo viên
 
-> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt.
+> Sinh tự động từ registry (`scripts/he-thong-ma/registry.py`). Cột Nguồn: QC = requirement, Figma = mã/tên design đặt, Tự điền = tool cấp theo quy ước nền, cần người duyệt. *Chưa khớp tự động*: tool không tìm thấy chữ này trên màn đã sync; thường do item nằm trong popup chưa sync hoặc nhãn là câu mô tả, không hẳn là Figma thiếu.
 
 ## 1. Định danh
 
@@ -60,11 +60,11 @@ Frame: `ADM-GV-010000` (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | tong-quan |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A02.02` | so-ngay |  |  | — |  | `TC18` | Chưa thấy trên Figma | QC |
-| `A02.03` | so-ca |  |  | — |  | `TC18` | Chưa thấy trên Figma | QC |
+| `A02.01` | tong-quan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.02` | so-ngay |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
+| `A02.03` | so-ca |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
 | `A02.04` | popover |  | `3210:28472` Chi tiết lịch đăng ký | — |  | `TC19` | Khớp | QC |
-| `A02.05` | thu-tu |  |  | — |  | `TC18` | Chưa thấy trên Figma | QC |
+| `A02.05` | thu-tu |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
 | `A02.06` | chua-dang-ky |  | `3210:28368` Chưa đăng ký lịch; `3210:28368` Chưa đăng ký lịch | — |  | `TC19` | Khớp | QC |
 
 ### `A03` Chi tiết lớp đang dạy khi hover
@@ -74,7 +74,7 @@ Frame: `ADM-GV-010000` (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A03.01` | badge-so-lop |  | `3210:28310` Đang dạy | — |  |  | Khớp | QC |
-| `A03.02` | khoi-lop-trong-popover |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A03.02` | khoi-lop-trong-popover |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.03` | so-buoi | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `3210:28333` Atom/Number Badge | — |  |  | Khớp | QC |
 | `A03.04` | lich-co-dinh |  | `3210:28475` T2: | — |  |  | Khớp | QC |
 
@@ -94,7 +94,7 @@ Frame: `ADM-GV-010001`, `ADM-GV-010030`, `ADM-GV-010040`, `ADM-GV-010050` (tool 
 | `A05.01` | menu-thao-tac | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `1657:12040` ADM-GV-010001 — Danh sách giáo viên / Hover menu thao tác; `I3210:31964;2015:31836;3210:31958` Chỉnh sửa | — |  |  | Khớp | QC |
 | `A05.02` | popup-them-lich-hen | `DD/Molecule/Trigger` Size=XS, State=Default | `4713:129455` Dropdown · Trung tâm | — |  |  | Khớp | QC |
 | `A05.03` | popup-them-tag | `Atom/Input` State=Search Advanced, Kiểu=Chuẩn | `I1739:33369;1739:32346` Tìm Kiếm Nâng Cao | — |  |  | Khớp | QC |
-| `A05.04` | popup-danh-sach-lich-hen |  |  | — |  | `TC50` | Chưa thấy trên Figma | QC |
+| `A05.04` | popup-danh-sach-lich-hen |  |  | — |  | `TC50` | Chưa khớp tự động | QC |
 
 ### `A06` Điều hướng đến chi tiết giáo viên
 
@@ -127,10 +127,10 @@ Frame: `ADM-GV-010000` (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa thấy trên Figma | QC |
-| `A08.02` | thong-tin |  |  | — |  |  | Chưa thấy trên Figma | QC |
-| `A08.03` | canh-bao |  |  | — |  | `TTC02` | Chưa thấy trên Figma | QC |
-| `A08.04` | loi |  |  | — |  |  | Chưa thấy trên Figma | QC |
+| `A08.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
+| `A08.02` | thong-tin |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
+| `A08.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `F01` Header
 
@@ -263,7 +263,7 @@ Frame: `ADM-GV-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa thấy trên Figma (10): `A02.01`, `A02.02`, `A02.03`, `A02.05`, `A03.02`, `A05.04`, `A08.01`, `A08.02`, `A08.03`, `A08.04`
+- Chưa khớp tự động (10): `A02.01`, `A02.02`, `A02.03`, `A02.05`, `A03.02`, `A05.04`, `A08.01`, `A08.02`, `A08.03`, `A08.04`
 - Chưa sync (11): `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`
 - Frame Figma chưa có requirement (7): `ADM-GV-010001`, `ADM-GV-010010`, `ADM-GV-010020`, `ADM-GV-010030`, `ADM-GV-010040`, `ADM-GV-010042`, `ADM-GV-010050`
 - Thiếu prototype link đi vào (5): `ADM-GV-010010`, `ADM-GV-010020`, `ADM-GV-010030`, `ADM-GV-010040`, `ADM-GV-010050`
