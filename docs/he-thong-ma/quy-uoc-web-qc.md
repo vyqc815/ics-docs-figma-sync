@@ -22,9 +22,9 @@ Mỗi file đúng template `template_req_docs.md`. Đọc theo dòng, không đo
 | Tên feature | `# <tên>` (dòng đầu) | Tên hiển thị |
 | Trang có mã | `### Trang N: CD-KH-060100 — <tên>` hoặc nhiều mã `### Trang N: CD-KH-060100, CD-KH-060200 — <tên>` | **Khoá là mã màn**, không phải số N. Mã: `[A-Z]{2,4}(-[A-Z]{1,4})+-\d{6}(-DK)?` |
 | Trang chưa có mã | `### Trang N: <tên>` | Màn chưa có frame, hoặc phần không phải màn (Toast…) |
-| Ảnh Figma mới nhất | `![Figma mới nhất · <MÃ>](https://ics-figma-demo.vercel.app/api/figma-frame/<MÃ>.png)` | **Hiển thị trực tiếp từ link**, không tải về lưu lại; ảnh tự đổi khi design sửa (trễ tối đa ~1 phút) |
+| Ảnh Figma mới nhất | `![Figma mới nhất · <MÃ>](https://ics-figma-demo.vercel.app/api/figma-frame/<MÃ>.png)` | **Hiển thị trực tiếp từ link**, không tải về lưu lại; ảnh tự đổi khi design sửa (trễ tối đa ~5 phút). Màn chưa vẽ hiện thẻ "Chưa có thiết kế", vẽ xong tự thành ảnh thật |
 | Ảnh gốc QC | `![Trang N](./images/…)` | Đường dẫn tương đối trong thư mục của file |
-| Item | `` - `A03.07` **<tên>**: <mô tả> `` trong "Điểm cần lưu ý" | Mã item `A03.07` có phạm vi **trong file**; khoá toàn cục ở mục 3 |
+| Item | `` - `A03.07` **<tên>**: <mô tả> `` trong "Điểm cần lưu ý" | Mã item `A03.07` có phạm vi **trong file**; khoá toàn cục ở mục 3. Mã đã khoá: không đổi khi QC chèn/xoá dòng |
 | Flow | `**Flow N: <tên>**` + khối ```` ``` ```` | Khoá `Flow N` trong file |
 | Ngoại lệ | `- **EX01:** <nội dung>` | Khoá `EX01` trong file |
 | Yêu cầu | bảng `\| Mã \| Tên yêu cầu \| Mô tả \|`, dòng `\| REQ01 \| … \|` | Khoá `REQ01` trong file |
@@ -50,7 +50,7 @@ Mỗi file đúng template `template_req_docs.md`. Đọc theo dòng, không đo
 1. **Màn ↔ Figma ↔ demo:** mã trong tiêu đề Trang = mã ở đầu tên frame Figma = `name` (viết thường) trong `figma.pages.json`. Link demo: `https://ics-figma-demo.vercel.app<route>`; popup/trạng thái: route màn cha + `?popup=MÃ` / `?state=MÃ`.
 2. **Testcase ↔ yêu cầu:** đọc cột Scenario, tách các mã `Flow \d+`, `REQ\d+`, `EX\d+`, ghép tiền tố file.
 3. **Item ↔ màn:** item thuộc Trang chứa nó; registry cho biết thêm layer Figma khớp (`items[].matches`).
-4. **Mã dự kiến:** mã có trong `ma-du-kien.json` nhưng chưa có trong `figma-frames.json` là màn chưa vẽ; ảnh "Figma mới nhất" sẽ trống cho tới khi design vẽ.
+4. **Mã dự kiến:** mã có trong `ma-du-kien.json` nhưng chưa có trong `figma-frames.json` là màn chưa vẽ; ảnh "Figma mới nhất" hiện thẻ "Chưa có thiết kế" cho tới khi design vẽ.
 
 ## 5. Web nên tự kiểm và báo
 
@@ -65,7 +65,7 @@ Mỗi file đúng template `template_req_docs.md`. Đọc theo dòng, không đo
 - Mỗi lần có bản mới: **nhập lại cả bộ**, thay theo khoá toàn cục; bản ghi nào không còn trong bộ mới thì đánh dấu đã bỏ, không giữ dữ liệu cũ lẫn vào.
 - Đối chiếu bằng mã, **không bằng số Trang hay thứ tự dòng**.
 - Ảnh "Figma mới nhất" không cần nhập lại: link luôn trả ảnh hiện tại.
-- Lưu ý: mã item hiện đánh theo thứ tự dòng trong bảng gốc; chèn hoặc xoá dòng giữa bảng có thể làm dịch mã các dòng sau. Khi hệ thống khoá mã item xong sẽ thông báo; trước đó, testcase nên trỏ REQ thay vì trỏ mã item.
+- Mã khu vực (`A03`) và mã item (`A03.07`) đã khoá (`docs/he-thong-ma/khoa-ma.json`): QC chèn/xoá dòng hay mục thì mã cũ giữ nguyên, dòng mới lấy số kế tiếp, số của dòng bị xoá không cấp lại. QC **sửa chữ trong nhãn** dòng thì dòng đó nhận mã mới (mã cũ coi như bỏ).
 
 ## 7. Không làm
 

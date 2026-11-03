@@ -9,7 +9,7 @@ Các bước:
   3. Chuyển template (req_to_template.py, mã item đã khoá) và kiểm từng file đủ nội dung + đủ testcase
      (kiem_noi_dung.py). Thiếu ở bất kỳ file nào thì dừng, không đụng docs/requirements.
   4. Dựng lại cụm + registry + danh sách sửa Figma theo bộ mới.
-  5. Thay docs/requirements; ghi mã dự kiến, mã trang, ảnh Figma mới nhất.
+  5. Thay docs/requirements; ghi mã dự kiến, mã trang, ảnh Figma mới nhất, bảng màn -> requirement cho bot báo.
   6. Đóng zip gửi QC (mặc định cạnh thư mục repo, tên theo ngày, không ghi đè).
 Xong thì xem `git diff`, commit, push.
 """
@@ -91,10 +91,17 @@ def main():
         problems += [f"{rel}: {m}" for m in missing(open(s, encoding="utf-8").read(), text)]
         for img in IMAGE.findall(text):
             a = os.path.normpath(os.path.join(os.path.dirname(s), img))
-            if a.startswith(src) and os.path.isfile(a):
-                b = os.path.join(new, os.path.relpath(a, src))
+            if not a.startswith(src + os.sep):
+                continue
+            img_rel = os.path.relpath(a, src)
+            kept = os.path.join(w, "docs", "requirements", img_rel)  # zip mới thiếu ảnh mà repo đang có: giữ
+            found = a if os.path.isfile(a) else kept if os.path.isfile(kept) else None
+            if found:
+                b = os.path.join(new, img_rel)
                 os.makedirs(os.path.dirname(b), exist_ok=True)
-                shutil.copy2(a, b)
+                shutil.copy2(found, b)
+            else:
+                print(f"thiếu ảnh: {rel} -> {img}")
     if problems:
         print("\n".join(problems[:50]))
         sys.exit(f"DỪNG: {len(problems)} chỗ thiếu nội dung, docs/requirements chưa đổi. Bản nháp ở {tmp}")
@@ -115,6 +122,7 @@ def main():
     run(f"{HERE}/apply_reserved_codes.py", "--work", w)
     run(f"{HERE}/apply_page_codes.py", "--work", w)
     run(f"{HERE}/add_live_images.py", "--work", w)
+    run(f"{HERE}/screen_requirements.py", "--work", w)
 
     # 6. zip gửi QC
     out = out_path(w, args.out)

@@ -463,7 +463,6 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 
 ![Figma mới nhất · GV-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040100.png)
 
-
 ![Figma mới nhất · GV-LOP-040320](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040320.png)
 
 **Mô tả:**
@@ -486,7 +485,6 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 ### Trang 21: GV-LOP-040200, GV-LOP-040201 — Thẻ học viên — điểm và đáp án
 
 ![Figma mới nhất · GV-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040200.png)
-
 
 ![Figma mới nhất · GV-LOP-040201](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040201.png)
 

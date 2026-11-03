@@ -12,6 +12,7 @@
  * Env: FIGMA_ACCESS_TOKEN (bắt buộc), GOOGLE_CHAT_WEBHOOK_URL (không có thì chỉ in ra),
  * FIGMA_PROJECT (tên dự án; mỗi dự án một luồng trong Space chung),
  * RUN_URL (link tới lượt chạy, kèm vào tin nhắn).
+ * Dưới mỗi màn đổi ghi kèm trang requirement cần xem lại (scripts/figma/screen-requirements.json).
  * Exit: 0 = không đổi hoặc lần đầu, 3 = có đổi (đã báo), 1 = lỗi.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -27,6 +28,9 @@ const config = JSON.parse(readFileSync(join(root, "figma.pages.json"), "utf-8"))
 const snapshotPath = join(root, config.specDir ?? ".figma/pages", "snapshot.json");
 const reportPath = join(root, "figma-changes.md");
 const project = process.env.FIGMA_PROJECT || config.fileKey;
+/** Screen code → requirement pages about it (screen_requirements.py), so QC knows what to re-check. */
+const reqPath = join(root, "scripts/figma/screen-requirements.json");
+const requirements = existsSync(reqPath) ? JSON.parse(readFileSync(reqPath, "utf-8")) : {};
 
 if (process.env.CHAT_TEST === "true") {
 	await postToChat(
@@ -119,6 +123,8 @@ function chatText(changed, deleted) {
 		lines.push(`• *${p.frameName}*: ${Object.entries(counts).map(([k, n]) => `${LABEL[k] ?? k} ${n}`).join(" · ")}`);
 		for (const c of p.changes.filter((c) => c.kind === "text").slice(0, 2))
 			lines.push(`    ${q(c.before)} → ${q(c.after)}`);
+		for (const r of (requirements[p.page.toUpperCase()] ?? []).slice(0, 2))
+			lines.push(`    ↳ Xem lại: ${r.prefix ? `${r.prefix} · ` : ""}${r.title} · Trang ${r.pages.join(", ")}`);
 	}
 	if (deleted.length) lines.push("", `*Frame bị xoá trên Figma:* ${deleted.join(", ")}`);
 	let text = lines.join("\n");
