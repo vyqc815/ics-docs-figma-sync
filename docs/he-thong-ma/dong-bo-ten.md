@@ -82,3 +82,37 @@ Có thể frame tối đang mang nhầm mã của một popup khác; design xem 
 
 - `[CŨ] GV-TC-010000 (bản sao lạ)` ở trang Trang chủ: bản sao cũ, nên xoá hoặc chuyển ra trang lưu trữ.
 - Trang Component System còn bản sao màn có mã (`Bản sao · ADM-LOP-010000`, …). Tool đã bỏ qua trang này, không cần đổi.
+
+## Kế hoạch nhóm 3 và 4 (2026-11-03)
+
+Nguyên tắc: chỉ đổi **tên** frame, không đổi nội dung màn; mỗi đợt đổi trên Figma đều lưu phiên bản trước và kiểm lại qua REST; design duyệt danh sách trước khi đổi.
+
+### Nhóm 3 — 2 bản tối khác tên bản sáng
+
+| Mã | Bản sáng | Bản tối |
+|---|---|---|
+| `ADM-GKS-020030` | Popup kết quả cả lớp | Popup kết quả từng học viên |
+| `ADM-GKS-030030` | Popup kết quả cả trung tâm | Popup kết quả cá nhân |
+
+1. Tool so chữ và bố cục của hai frame (chỉ đọc).
+2. Nếu cùng một popup, chỉ khác tên → đổi tên bản tối cho giống bản sáng.
+3. Nếu là popup khác → bản tối cần mã riêng (popup "kết quả từng học viên / cá nhân") và có thể còn thiếu bản sáng; design quyết.
+
+### Nhóm 4 — 88 frame cỡ màn hình chưa có mã
+
+Phân loại sơ bộ theo tên:
+
+| Loại | Số frame | Đề xuất |
+|---|---:|---|
+| Thành phần, không phải màn (`BG`, `Flash Screen`, `Body`, `Frame 4273…`) | ~30 | Không cấp mã; tool bỏ qua khi soát |
+| Nháp / bản cũ / bản sao (`· bản cũ`, `Phương án 1`, `_Bản sao / …`) | ~23 | Không cấp mã; đề xuất chuyển sang trang lưu trữ (design quyết) |
+| Màn Đăng nhập thật (trang LOG IN) | ~14 | Cấp đúng mã dự kiến `SYS-DN-…` đã ghi trong requirement Đăng nhập → khớp 1:1 ngay |
+| "Dùng lại UI trang … (Admin)" ở các trang Phụ trách lớp | ~10 | Không phải màn riêng; ghi vào registry là dùng chung màn `ADM-…` tương ứng |
+| Màn Phụ trách lớp: KPI, Thống kê, Trang chủ | ~11 | Cấp mã họ `CH-…` (vd `CH-KPI-010000`, `CH-TK-010000`) sau khi design xác nhận là màn thật |
+
+Các bước:
+1. **Tool lập bảng đề xuất** (chỉ đọc): từng frame, loại, mã đề xuất, ảnh nhỏ để design xem nhanh.
+2. **Design duyệt** bảng, giống lần duyệt 70 mã.
+3. **Đổi tên trên Figma** cho các frame được cấp mã (lưu phiên bản trước, REST kiểm 100%).
+4. **Đồng bộ**: thêm vào danh sách màn, xuất, sinh code, check; cập nhật registry và tiêu đề Trang của requirement.
+5. **Giữ sạch về sau**: báo trong luồng Google Chat `figma-ICS` khi có frame cỡ màn hình mới chưa có mã hoặc trùng mã.
