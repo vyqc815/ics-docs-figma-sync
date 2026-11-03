@@ -9,7 +9,7 @@
    "name": "chi-so",
    "title": "Thống kê / Chỉ số",
    "kind": "man-chinh",
-   "parent": null,
+   "parent": "CH-TK-010000",
    "shownOn": "ADM-TK-010000",
    "kindConfidence": "trung-binh",
    "source": "figma",

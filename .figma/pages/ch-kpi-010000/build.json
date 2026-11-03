@@ -1,0 +1,17 @@
+{
+  "route": "/phu-trach-lop/kpi",
+  "pageFile": "components/figma/ch-kpi-010000/index.tsx",
+  "docFile": "docs/pages/phu-trach-lop/kpi.md",
+  "sections": [
+    {
+      "nodeId": "3821:48600",
+      "component": "Body",
+      "file": "components/figma/ch-kpi-010000/Body.tsx"
+    },
+    {
+      "nodeId": "3821:48727",
+      "component": "Section2",
+      "file": "components/figma/ch-kpi-010000/Section2.tsx"
+    }
+  ]
+}

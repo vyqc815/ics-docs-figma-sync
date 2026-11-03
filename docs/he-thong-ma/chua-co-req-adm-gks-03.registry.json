@@ -43,7 +43,7 @@
    "synced": true,
    "route": "/frames/adm-gks-030030",
    "link": "/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat?popup=ADM-GKS-030030",
-   "dark": "ADM-GKS-030030-DK",
+   "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": []

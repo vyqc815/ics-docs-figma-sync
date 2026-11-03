@@ -43,8 +43,11 @@
   },
   "class_handler_support/statistics/statistics.md": {
    "title": "[Phụ trách lớp] Thống kê",
-   "screens": [],
-   "note": "Chưa thấy màn Thống kê của Phụ trách lớp (chỉ có ADM-TK-010000 của Admin)"
+   "screens": [
+    "CH-TK-010000"
+   ],
+   "note": "Chưa thấy màn Thống kê của Phụ trách lớp (chỉ có ADM-TK-010000 của Admin)",
+   "source": "design cấp mã CH-TK-010000 cho frame Thống kê (2026-11-03)"
   },
   "course_management/course_management.md": {
    "title": "Quản lý khoá học",

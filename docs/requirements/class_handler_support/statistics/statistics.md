@@ -4,7 +4,7 @@ Menu **Thống Kê** của role `Class Handler` (Phụ trách lớp): tổng h�
 
 ## 1. UI
 
-### Trang 1: Thống kê
+### Trang 1: CH-TK-010000 — Thống kê
 ![Trang 1](./images/statistics.png)
 
 **Mô tả:**

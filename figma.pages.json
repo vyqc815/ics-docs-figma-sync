@@ -3169,9 +3169,9 @@
       "route": "/frames/adm-gks-020030"
     },
     {
-      "name": "adm-gks-020030-dk",
+      "name": "adm-gks-020031-dk",
       "nodeId": "4885:61367",
-      "route": "/frames/adm-gks-020030-dk"
+      "route": "/frames/adm-gks-020031-dk"
     },
     {
       "name": "adm-gks-020040",
@@ -3189,9 +3189,9 @@
       "route": "/frames/adm-gks-030030"
     },
     {
-      "name": "adm-gks-030030-dk",
+      "name": "adm-gks-030031-dk",
       "nodeId": "4885:62559",
-      "route": "/frames/adm-gks-030030-dk"
+      "route": "/frames/adm-gks-030031-dk"
     },
     {
       "name": "adm-gks-030040",
@@ -4632,6 +4632,26 @@
       "name": "sp-task-030010-dk",
       "nodeId": "4056:147422",
       "route": "/frames/sp-task-030010-dk"
+    },
+    {
+      "name": "ch-kpi-010000",
+      "nodeId": "3821:48599",
+      "route": "/phu-trach-lop/kpi"
+    },
+    {
+      "name": "ch-kpi-010000-dk",
+      "nodeId": "4056:148399",
+      "route": "/phu-trach-lop/kpi-dk"
+    },
+    {
+      "name": "ch-tk-010000",
+      "nodeId": "3857:81006",
+      "route": "/phu-trach-lop/thong-ke"
+    },
+    {
+      "name": "ch-tk-010000-dk",
+      "nodeId": "4056:148553",
+      "route": "/phu-trach-lop/thong-ke-dk"
     }
   ]
 }

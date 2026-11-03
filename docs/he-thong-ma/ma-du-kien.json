@@ -292,6 +292,13 @@
    "pages": [
     "Trang 3: Kết quả kiểm tra"
    ]
+  },
+  "CH-TK-010000": {
+   "requirement": "class_handler_support/statistics/statistics.md",
+   "pages": [
+    "Trang 1: Thống kê"
+   ],
+   "note": "đã có frame trên Figma"
   }
  }
 }

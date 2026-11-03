@@ -1,0 +1,17 @@
+{
+  "route": "/phu-trach-lop/thong-ke",
+  "pageFile": "components/figma/ch-tk-010000/index.tsx",
+  "docFile": "docs/pages/phu-trach-lop/thong-ke.md",
+  "sections": [
+    {
+      "nodeId": "3857:81007",
+      "component": "Body",
+      "file": "components/figma/ch-tk-010000/Body.tsx"
+    },
+    {
+      "nodeId": "3857:82084",
+      "component": "MainThongKe",
+      "file": "components/figma/ch-tk-010000/MainThongKe.tsx"
+    }
+  ]
+}

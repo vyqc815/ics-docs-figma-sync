@@ -116,3 +116,23 @@ Các bước:
 3. **Đổi tên trên Figma** cho các frame được cấp mã (lưu phiên bản trước, REST kiểm 100%).
 4. **Đồng bộ**: thêm vào danh sách màn, xuất, sinh code, check; cập nhật registry và tiêu đề Trang của requirement.
 5. **Giữ sạch về sau**: báo trong luồng Google Chat `figma-ICS` khi có frame cỡ màn hình mới chưa có mã hoặc trùng mã.
+
+## Kết quả nhóm 3 và 4 (2026-11-03)
+
+**Nhóm 3 — xong.** Hai frame `-DK` không phải bản tối của popup cùng mã mà là popup khác (kết quả của một học viên):
+- `ADM-GKS-020030-DK` "Popup kết quả từng học viên" → `ADM-GKS-020031-DK`
+- `ADM-GKS-030030-DK` "Popup kết quả cá nhân" → `ADM-GKS-030031-DK`
+
+Design cần bổ sung: bản sáng của 2 popup này, và bản tối của `ADM-GKS-020030` (kết quả cả lớp), `ADM-GKS-030030` (kết quả cả trung tâm).
+
+**Nhóm 4 — trên Figma hiện còn 53 frame cỡ màn hình chưa có mã** (88 lúc soát gồm cả frame con trong màn):
+
+| Loại | Số | Xử lý |
+|---|---:|---|
+| KPI, Thống kê (Phụ trách lớp), sáng + tối | 4 | **Đã cấp mã** `CH-KPI-010000(-DK)`, `CH-TK-010000(-DK)`; requirement Thống kê nối vào `CH-TK-010000` |
+| "Dùng lại UI trang … (Admin / Phụ trách lớp)" | 25 | Trang giữ chỗ, không phải màn riêng; không cấp mã |
+| "_Bản sao / Tài khoản / Danh sách tài khoản" | 4 | Bản sao; không cấp mã |
+| Đăng nhập: Phương án 1–6, các Option, Màn chờ bản cũ | 16 | Đang là phương án thiết kế; cấp mã `SYS-DN-010000` cho phương án được chốt |
+| Đăng nhập: Đổi tài khoản (3 bản), Lần đầu đăng nhập · Chọn màu giao diện | 4 | Cấp mã `SYS-DN-…` cùng lúc chốt phương án |
+
+Mỗi đợt đổi trên Figma đều lưu phiên bản trước ("Trước khi đổi mã 2 popup kết quả cá nhân", "Trước khi cấp mã KPI và Thống kê (Phụ trách lớp)") và đã kiểm lại qua REST.

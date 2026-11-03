@@ -56,6 +56,15 @@
    "auto": true
   },
   {
+   "name": "statistics",
+   "title": "[Phụ trách lớp] Thống kê",
+   "screens": "^(CH\\-TK\\-010000)$",
+   "requirements": [
+    "class_handler_support/statistics/statistics.md"
+   ],
+   "auto": true
+  },
+  {
    "name": "course-management",
    "title": "Quản lý khoá học",
    "screens": "^(CD\\-KH\\-010000|CD\\-KH\\-010010|CD\\-KH\\-010013)$",
@@ -814,6 +823,14 @@
    "screens": "^(CD\\-TL\\-010000|CD\\-TL\\-010010|CD\\-TL\\-010100|CD\\-TL\\-010210|CD\\-TL\\-010300)$",
    "requirements": [],
    "prefix_figma": "CD-TL-01",
+   "auto": true
+  },
+  {
+   "name": "chua-co-req-ch-kpi-01",
+   "title": "CH-KPI-01xx (chưa có requirement)",
+   "screens": "^(CH\\-KPI\\-010000)$",
+   "requirements": [],
+   "prefix_figma": "CH-KPI-01",
    "auto": true
   },
   {

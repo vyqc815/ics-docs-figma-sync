@@ -263,7 +263,7 @@
    "daDuyet": true,
    "manHienThi": "ADM-GKS-020020",
    "parentInPageList": true,
-   "hasDark": true,
+   "hasDark": false,
    "canDuyet": false
   },
   {
@@ -323,7 +323,7 @@
    "daDuyet": true,
    "manHienThi": "ADM-GKS-030020",
    "parentInPageList": true,
-   "hasDark": true,
+   "hasDark": false,
    "canDuyet": false
   },
   {
@@ -557,7 +557,7 @@
     "ganNhat": "ADM-GV-020200"
    },
    "manHienThi": "ADM-GV-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -705,7 +705,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -735,7 +735,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -765,7 +765,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -882,7 +882,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -941,7 +941,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -971,7 +971,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -1001,7 +1001,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -1060,7 +1060,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -1090,7 +1090,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -1297,7 +1297,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-HD-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -1355,7 +1355,7 @@
     "ganNhat": "ADM-HV-010000"
    },
    "manHienThi": "ADM-HV-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -1440,7 +1440,7 @@
     "ganNhat": "ADM-HV-010040"
    },
    "manHienThi": "ADM-HV-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -1910,7 +1910,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-LOP-020600",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -1942,7 +1942,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-LOP-020600",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -2003,7 +2003,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-LOP-020700",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -2035,7 +2035,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-LOP-020700",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -2096,7 +2096,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-LOP-020800",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -2128,7 +2128,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-LOP-020800",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -2277,7 +2277,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-LOP-040500",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -2335,7 +2335,7 @@
     "ganNhat": "ADM-LOP-040700"
    },
    "manHienThi": "ADM-LOP-040700",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -2393,7 +2393,7 @@
     "ganNhat": "ADM-LOP-040800"
    },
    "manHienThi": "ADM-LOP-040800",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -2659,7 +2659,7 @@
    },
    "daDuyet": true,
    "manHienThi": "ADM-SS-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -3038,7 +3038,7 @@
    },
    "daDuyet": true,
    "manHienThi": "CD-CDO-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -3127,7 +3127,7 @@
    },
    "daDuyet": true,
    "manHienThi": "CD-DM-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -3205,7 +3205,7 @@
    },
    "daDuyet": true,
    "manHienThi": "CD-KH-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -3391,7 +3391,7 @@
     "ganNhat": "CD-KH-030340"
    },
    "manHienThi": "CD-KH-030340",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -3428,7 +3428,7 @@
    },
    "daDuyet": true,
    "manHienThi": "CD-KH-030340",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -3553,7 +3553,7 @@
     "ganNhat": "CD-KH-030340"
    },
    "manHienThi": "CD-KH-030340",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -4851,7 +4851,7 @@
    },
    "daDuyet": true,
    "manHienThi": "GV-LS-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
@@ -4918,7 +4918,7 @@
     "ganNhat": "GV-LS-010014"
    },
    "manHienThi": "GV-LS-010000",
-   "parentInPageList": false,
+   "parentInPageList": true,
    "hasDark": true,
    "canDuyet": false
   },
