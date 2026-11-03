@@ -1,117 +1,197 @@
 # Chi tiết lớp học — Tab Lịch dạy
 
+Requirement này đặc tả màn **Chi tiết lớp học → Tab Lịch dạy**. Quy tắc số buổi, ngày bắt đầu, ngày kết thúc dự kiến và tái sinh lịch khi đổi khóa học được dùng chung với [Tạo lớp học](./class_creation_requirements.md) và [Tab Thông tin](./class_detail_information_requirements.md). Nhân sự giáo viên của lớp được đặc tả tại [Tab Giáo viên](./class_detail_teachers_requirements.md).
+
 ## 1. UI
 
-### Trang 1: ADM-LOP-040500 — Lớp học / Cài đặt / Lịch dạy
+### Trang 1: Tab Lịch dạy — Lịch theo tuần
+![Trang 1](./images/26-class-detail-schedule.png)
 
-![Trang 1](./images/adm-lop-040500.png)
+*Lịch dạy theo tuần của lớp — nhấn để xem ảnh gốc*
 
 **Mô tả:**
+
 - Hiển thị các lịch dạy của đúng lớp theo từng tuần từ Thứ 2 đến Chủ Nhật.
 - `Admin`, `Class Handler` và `Support` được xem và CRUD lịch trong phạm vi lớp được phân quyền.
 - `Teacher` được xem lịch của lớp mà giáo viên được phân công nhưng không được tạo, sửa, hoàn thành, hủy hoặc xóa lịch **tại tab này**. Lịch mà giáo viên đã chọn khi `Bắt đầu buổi học` sẽ tự chuyển `Hoàn thành` khi giáo viên bấm `Hoàn thành buổi học` (xem [requirement Giáo viên — Bài học](../../teacher_role/class/class_teaching_requirements.md)); đây là hoàn thành qua luồng dạy, không phải thao tác tại tab Lịch dạy.
-- Quy tắc số buổi, ngày bắt đầu, ngày kết thúc dự kiến và tái sinh lịch khi đổi khóa học dùng chung với [Tạo lớp học](./class_creation_requirements.md) và [Tab Thông tin](./class_detail_information_requirements.md). Nhân sự giáo viên của lớp: [Tab Giáo viên](./class_detail_teachers_requirements.md).
+
+**Giải thích field/thành phần:**
+
+- `A01.01` **Khoảng tuần**: Hiển thị ngày đầu và ngày cuối tuần; nút trái/phải chuyển đúng một tuần.
+- `A01.02` **Cột ngày**: Hiển thị thứ, ngày/tháng và làm nổi bật ngày hiện tại nhưng không thay đổi dữ liệu lịch.
+- `A01.03` **Tag lịch cố định**: Hiển thị các khung lặp như `T2, 20:00`; `X` dùng để bỏ khung cố định theo quyền và rule tái sinh lịch.
+- `A01.04` **Nút `Thêm lịch dạy cố định`**: Mở popup thêm lịch với tab `Thêm Lịch Dạy Cố Định` được chọn sẵn.
+- `A01.05` **Ô dấu `+` của ngày**: Mở popup thêm lịch với tab `Thêm Lịch Dạy Linh Hoạt` và tuần/ngày vừa bấm được chọn sẵn.
+- `A01.06` **Thẻ lịch**: Hiển thị tối thiểu giáo viên, mã lớp, giờ bắt đầu–kết thúc và màu/icon trạng thái.
+- `A01.07` **Vùng lịch**: Số hàng hiển thị phải mở rộng hoặc cuộn theo số lịch thực tế; ba hàng trong ảnh không phải giới hạn nghiệp vụ.
 
 **Điểm cần lưu ý:**
+
 - Dùng `schedule_id` và `class_id` để tải/thao tác; không dùng mã lớp, tên giáo viên hoặc vị trí ô làm khóa.
 - Chuyển tuần chỉ thay phạm vi hiển thị, không tạo, sửa hoặc tự đổi trạng thái lịch.
 - Lịch được tải theo timezone của cơ sở/lớp; thời điểm lưu ở backend phải có timezone rõ ràng để không lệch ngày.
 - Nếu lớp `Mới tạo` có lịch hợp lệ đầu tiên thì tự chuyển sang `Khai giảng` theo requirement trạng thái lớp.
 - Teacher chỉ thấy dữ liệu trong phạm vi lớp được phân công; việc ẩn nút CRUD không thay thế kiểm tra quyền backend.
-- `A01.01` Khoảng tuần: hiển thị ngày đầu và ngày cuối tuần; nút trái/phải chuyển đúng một tuần.
-- `A01.02` Cột ngày: hiển thị thứ, ngày/tháng và làm nổi bật ngày hiện tại nhưng không thay đổi dữ liệu lịch.
-- `A01.03` Tag lịch cố định: hiển thị các khung lặp như `T2, 20:00`; `X` dùng để bỏ khung cố định theo quyền và rule tái sinh lịch.
-- `A01.04` Nút `Thêm lịch dạy cố định`: mở popup thêm lịch với tab `Thêm Lịch Dạy Cố Định` được chọn sẵn (Trang 2).
-- `A01.05` Ô dấu `+` của ngày: mở popup thêm lịch với tab `Thêm Lịch Dạy Linh Hoạt` và tuần/ngày vừa bấm được chọn sẵn (Trang 3).
-- `A01.06` Thẻ lịch: hiển thị tối thiểu giáo viên, mã lớp, giờ bắt đầu–kết thúc và màu/icon trạng thái.
-- `A01.07` Vùng lịch: số hàng hiển thị phải mở rộng hoặc cuộn theo số lịch thực tế; ba hàng trong ảnh không phải giới hạn nghiệp vụ.
-- Mỗi lịch có loại nguồn `Cố định` hoặc `Linh hoạt` và trạng thái xử lý. Khi hoàn thành hoặc hủy, màu hoàn thành/hủy được ưu tiên hiển thị nhưng loại nguồn vẫn được giữ trong dữ liệu/audit. `Hoàn thành` và `Hủy bỏ` là trạng thái, không phải loại lịch. Tên/tooltip trạng thái phải có ngoài màu để hỗ trợ accessibility.
 
-  ![Lịch cố định](./images/schedule-status-fixed.png) ![Lịch hoàn thành](./images/schedule-status-completed.png) ![Lịch linh hoạt](./images/schedule-status-flexible.png) ![Lịch hủy bỏ](./images/schedule-status-cancelled.png)
+### Trang 2: Thẻ lịch và bốn trạng thái chính thức
+![Trang 2](./images/schedule-status-fixed.png)
 
-- `A02.01` Lịch cố định (cam): buổi chưa hoàn thành/chưa hủy, được sinh từ khung lịch cố định.
-- `A02.02` Lịch linh hoạt (xanh dương): buổi chưa hoàn thành/chưa hủy, được thêm linh hoạt vào một ngày/giờ cụ thể.
-- `A02.03` Lịch hoàn thành (xanh lá): buổi đã hoàn thành; được tính là một buổi học hợp lệ và phát sinh lương cho giáo viên của lịch.
-- `A02.04` Lịch hủy bỏ (xám): buổi đã hủy; bị loại khỏi số buổi hợp lệ của khóa và không phát sinh lương. Hệ thống phải sinh một buổi bù ở cuối.
-- Không thể đồng thời hoàn thành và hủy cùng một lịch. Backend phải kiểm tra trạng thái mới nhất và version khi cập nhật. Chỉ lịch `Hoàn thành` mới được ghi nhận lương giáo viên. Trong cùng một lần hoàn thành, request gửi lặp chỉ tạo một khoản lương; nếu lịch được Mở lại rồi hoàn thành lại, lần mới có thể tạo khoản lương mới nhưng tại một thời điểm chỉ một khoản của schedule có hiệu lực.
-- Popup xem/chỉnh sửa khi bấm một thẻ lịch mở popup của đúng `schedule_id`. `Admin`, `Class Handler` và `Support` được chỉnh lịch chưa hoàn thành; `Teacher` mở cùng popup ở chế độ chỉ xem (control read-only, không gửi request cập nhật).
-- `A05.01` Tiêu đề popup: lịch nguồn cố định hiển thị `Chỉnh sửa lịch cố định`; lịch nguồn linh hoạt hiển thị `Chỉnh sửa lịch linh hoạt`. Teacher hoặc lịch bị khóa hiển thị theo chế độ xem, không tạo cảm giác có thể sửa.
-- `A05.02` Thời gian/Ngày: ngày diễn ra của đúng buổi; cho chỉnh khi lịch chưa hoàn thành/hủy.
-- `A05.03` Giờ bắt đầu: kết hợp với Thời gian học để tính giờ kết thúc và kiểm tra trùng.
-- `A05.04` Giáo viên: chọn trong các giáo viên hợp lệ đã được thêm vào lớp. Khi đổi phải kiểm tra lịch giáo viên trên tất cả lớp.
-- `A05.05` Thời gian học: chọn thời lượng từ cấu hình cho phép, ví dụ `90 phút`; `Giờ kết thúc = Giờ bắt đầu + Thời gian học`. Không cho thời lượng bằng 0 hoặc âm.
-- `A05.06` Trạng thái: với lịch chưa kết thúc, cho chọn `Đang đợi`, `Hoàn thành`, `Hủy bỏ`. Lịch `Hoàn thành` có flow `Mở lại` để trở về `Đang đợi`, đảo lương rồi mới cho sửa/hủy. `Đang đợi` giữ màu theo loại nguồn; hai trạng thái kết thúc kích hoạt nghiệp vụ tương ứng. Lịch `Hủy bỏ` mở ở chế độ chỉ xem.
-- `A05.07` Hủy: nút đóng popup, bỏ thay đổi chưa xác nhận; không phải hành động Hủy bỏ lịch. `Hủy` ở chân popup chỉ đóng form, `Hủy bỏ` trong dropdown Trạng thái mới là nghiệp vụ hủy lịch và sinh bù; hai hành động phải có câu chữ/thiết kế phân biệt rõ.
-- `A05.08` Xác nhận: validate phiên bản, quyền, field, trùng lịch và trạng thái; chỉ cập nhật UI sau khi backend commit. Thay đổi ngày, giờ bắt đầu, thời lượng hoặc giáo viên phải kiểm tra cả trùng lịch của lớp hiện tại và trùng lịch giáo viên trên tất cả lớp; có trùng thì cảnh báo và không cho xác nhận.
-- Chỉnh một buổi cố định chỉ tạo override cho occurrence đó, không âm thầm sửa toàn bộ khung lặp. Nguồn lịch vẫn là `Cố định` để audit; các lần tái sinh sau không ghi đè occurrence đã override.
-- Chuyển `Đang đợi → Hoàn thành` phải tạo lương đúng một lần trong cùng giao dịch. Chuyển `Đang đợi → Hủy bỏ` phải loại buổi khỏi N, sinh bù và cập nhật ngày kết thúc trong cùng giao dịch.
-- Không dùng hover làm thao tác xóa trực tiếp. Hover chỉ hiển thị tooltip/trạng thái hoặc affordance mở chi tiết; mọi cập nhật thực hiện trong popup.
-- `A06.01` Hoàn thành: kiểm tra lịch/giáo viên → chuyển xanh lá → ghi nhận buổi hợp lệ → tạo lương giáo viên đúng một lần. Không cho hoàn thành lịch đã hủy.
-- `A06.02` Hoàn thành qua luồng dạy: khi giáo viên bấm `Hoàn thành buổi học` của bài đã gắn lịch, xử lý như Hoàn thành (xanh lá, buổi hợp lệ, một khoản lương cho **giáo viên của buổi**), ghi audit nguồn là luồng dạy. Lịch đang gắn với buổi `Đang dạy` / `Chờ hoàn thành` vẫn ở `Đang đợi`, không chọn được cho buổi khác.
-- `A06.03` Hủy bỏ: chuyển xám → loại khỏi số buổi hợp lệ → không tính lương → sinh một lịch cố định bù sau buổi hợp lệ cuối cùng → tăng Ngày kết thúc dự kiến. Buổi hủy vẫn hiển thị màu xám trong tuần/lịch sử nhưng không nằm trong tập N buổi hợp lệ. Lịch bù tạo tại khung cố định hợp lệ đầu tiên **sau buổi hợp lệ cuối cùng hiện tại**; nếu khung đó trùng thì bỏ qua và tìm khung kế tiếp. Mỗi lịch hủy tạo đúng một lịch bù; request hủy gửi lặp không tạo nhiều lịch bù hoặc kéo dài ngày kết thúc nhiều lần.
-- `A06.04` Sửa lịch chưa hoàn thành: role CRUD sửa ngày/giờ/giáo viên theo field popup; phải kiểm tra trùng và cân bằng lịch. Lịch đã hoàn thành không được sửa/hủy trực tiếp; phải đi qua flow `Mở lại`.
-- `A06.05` Xóa: không xóa vật lý lịch chương trình. Thao tác loại bỏ lịch phải dùng trạng thái Hủy bỏ để giữ audit và kích hoạt sinh bù.
-- Hoàn thành và tạo lương phải nhất quán: không có trạng thái xanh lá mà thiếu khoản lương, hoặc tạo lương khi trạng thái chưa hoàn thành. Lớp không chính thức được nới điều kiện nội dung/bài học để test nhưng vẫn phải chống ghi lương trùng, lưu audit và kiểm tra quyền.
-- `A07.01` Nút `Mở lại`: chỉ hiển thị cho role CRUD (`Admin`, `Class Handler`, `Support`) khi lịch đang Hoàn thành; Teacher không thấy hành động này.
-- `A07.02` Lý do điều chỉnh: bắt buộc nhập, không chỉ có khoảng trắng; lưu vào audit lịch và bút toán lương.
-- `A07.03` Cảnh báo: nêu rõ lịch sẽ trở về Đang đợi và khoản lương đã phát sinh sẽ được đảo/điều chỉnh.
-- `A07.04` Hủy: đóng popup, giữ nguyên lịch Hoàn thành và khoản lương hiện tại.
-- `A07.05` Xác nhận mở lại: thực hiện đảo lương và đổi trạng thái trong một giao dịch; sau thành công mới mở khóa các field chỉnh sửa. Không xóa vật lý khoản lương cũ; tạo bút toán đảo/điều chỉnh liên kết khoản lương gốc. Sau khi mở lại, lịch trở về `Đang đợi` với màu theo nguồn ban đầu (cam nếu Cố định, xanh dương nếu Linh hoạt). Điểm danh, bài học, BTVN, bài kiểm tra hoặc dữ liệu liên quan đã phát sinh không bị xóa; giữ audit và hiển thị cảnh báo dữ liệu phụ thuộc. Nếu bảng lương đã khóa/chốt, không sửa trực tiếp kỳ cũ: tạo bút toán điều chỉnh ở kỳ cho phép gần nhất, nếu chưa thể thì không mở lại một phần. Request mở lại gửi lặp phải idempotent. Nếu hoàn thành lại, tạo lần ghi nhận lương mới, chỉ một khoản hiệu lực; khoản cũ và bút toán đảo vẫn giữ trong lịch sử.
-- `A08.01` Toast `Thành Công`: `Đã thêm lịch linh hoạt.`, `Đã hoàn thành buổi học.`, `Đã hủy lịch và tạo buổi bù.`, `Đã mở lại lịch và điều chỉnh lương.`
-- `A08.02` Toast `Thông Báo`: `Lịch đang được tái tạo, danh sách sẽ cập nhật sau ít phút.`
-- `A08.03` Toast `Cảnh Báo`: `Giáo viên đã có lịch trong khung giờ này. Vui lòng chọn thời gian khác.`
-- `A08.04` Toast `Có Lỗi Xảy Ra`: `Không thể cập nhật lịch. Vui lòng thử lại.`
-- Chỉ báo thành công sau khi toàn bộ thay đổi liên quan đã commit (lịch, lịch bù, ngày kết thúc và lương nếu có). Hủy popup, chuyển tuần, mở thẻ hoặc validation field chưa gửi backend không có Toast thành công. Không hiển thị stack trace, ID nội bộ nhạy cảm hoặc chi tiết tính lương trong Toast.
+*Bộ màu/icon trạng thái lịch chính thức*
 
-### Trang 2: ADM-LOP-040510 — Popup thêm lịch dạy cố định
+**Mô tả:** Mỗi lịch có loại nguồn `Cố định` hoặc `Linh hoạt` và trạng thái xử lý. Khi hoàn thành hoặc hủy, màu hoàn thành/hủy được ưu tiên hiển thị nhưng loại nguồn vẫn được giữ trong dữ liệu/audit.
 
-![Trang 2](./images/adm-lop-040510.png)
+**Giải thích field/thành phần:**
 
-**Mô tả:**
-- Cho phép role CRUD cấu hình một hoặc nhiều khung giờ lặp theo thứ. Hệ thống dùng các khung này để sinh lịch đến khi đủ đúng số buổi của khóa học.
+- `A02.01` **Lịch cố định**: Màu: Cam; Ý nghĩa nghiệp vụ: Buổi chưa hoàn thành/chưa hủy, được sinh từ khung lịch cố định.
+- `A02.02` **Lịch linh hoạt**: Màu: Xanh dương; Ý nghĩa nghiệp vụ: Buổi chưa hoàn thành/chưa hủy, được thêm linh hoạt vào một ngày/giờ cụ thể.
+- `A02.03` **Lịch hoàn thành**: Màu: Xanh lá; Ý nghĩa nghiệp vụ: Buổi đã hoàn thành; được tính là một buổi học hợp lệ và phát sinh lương cho giáo viên của lịch.
+- `A02.04` **Lịch hủy bỏ**: Màu: Xám; Ý nghĩa nghiệp vụ: Buổi đã hủy; bị loại khỏi số buổi hợp lệ của khóa và không phát sinh lương. Hệ thống phải sinh một buổi bù ở cuối.
 
 **Điểm cần lưu ý:**
-- `A03.01` Tab Cố định/Linh hoạt: chuyển đúng form; dữ liệu chưa xác nhận của tab kia không được tự lưu.
-- `A03.02` Chọn ngày bắt đầu: ngày bắt đầu áp dụng của cấu hình; khi tạo lịch đầu tiên của lớp phải phù hợp để ngày bắt đầu lớp là buổi 1.
-- `A03.03` Giờ bắt đầu/kết thúc: giờ kết thúc phải sau giờ bắt đầu (không cho bằng hoặc trước); lưu cùng timezone lớp.
-- `A03.04` Thứ 2–Chủ Nhật: mỗi dòng chọn ít nhất một ngày trong tuần.
-- `A03.05` `+ Thêm lịch dạy`: thêm một dòng khung giờ; chưa lưu backend.
-- `A03.06` Icon thùng rác: xóa dòng cấu hình chưa xác nhận hoặc bỏ một khung hiện có theo rule tái sinh lịch.
-- `A03.07` Hủy: đóng mà không lưu thay đổi chưa xác nhận.
-- `A03.08` Xác Nhận: validate toàn bộ, lưu cấu hình và sinh/tái sinh lịch tương lai nguyên tử.
-- Không cho hai khung của cùng lớp trùng thời gian. Đồng thời phải kiểm tra lịch của giáo viên được phân công trên **tất cả lớp**; nếu giáo viên đã có lịch giao nhau thì hiển thị cảnh báo (`Đã trùng lịch dạy`) và không cho xác nhận.
+
+- `Hoàn thành` và `Hủy bỏ` là trạng thái, không phải loại lịch. Lịch hoàn thành/hủy vẫn phải lưu nguồn ban đầu là Cố định hay Linh hoạt.
+- Tên/tooltip trạng thái phải có ngoài màu để hỗ trợ accessibility.
+- Không thể đồng thời hoàn thành và hủy cùng một lịch. Backend phải kiểm tra trạng thái mới nhất và version khi cập nhật.
+- Chỉ lịch ở trạng thái `Hoàn thành` mới được ghi nhận lương giáo viên; lịch cố định/linh hoạt chưa hoàn thành và lịch hủy không tính lương.
+- Trong cùng một lần hoàn thành, request gửi lặp chỉ được tạo một khoản lương. Nếu lịch được Mở lại rồi hoàn thành lại, lần hoàn thành mới có thể tạo khoản lương mới nhưng tại một thời điểm chỉ một khoản của schedule có hiệu lực.
+
+### Trang 3: Popup Thêm Lịch Dạy Cố Định
+![Trang 3](./images/27-class-schedule-add-fixed.png)
+
+*Thêm các khung lịch cố định — nhấn để xem ảnh gốc*
+
+**Mô tả:** Cho phép role CRUD cấu hình một hoặc nhiều khung giờ lặp theo thứ. Hệ thống dùng các khung này để sinh lịch đến khi đủ đúng số buổi của khóa học.
+
+**Giải thích field/thành phần:**
+
+- `A03.01` **Tab Cố định/Linh hoạt**: Chuyển đúng form; dữ liệu chưa xác nhận của tab kia không được tự lưu.
+- `A03.02` **Chọn ngày bắt đầu**: Ngày bắt đầu áp dụng của cấu hình; khi tạo lịch đầu tiên của lớp phải phù hợp để ngày bắt đầu lớp là buổi 1.
+- `A03.03` **Giờ bắt đầu/kết thúc**: Giờ kết thúc phải sau giờ bắt đầu; lưu cùng timezone lớp.
+- `A03.04` **Thứ 2–Chủ Nhật**: Mỗi dòng chọn ít nhất một ngày trong tuần.
+- `A03.05` **`+ Thêm lịch dạy`**: Thêm một dòng khung giờ; chưa lưu backend.
+- `A03.06` **Icon thùng rác**: Xóa dòng cấu hình chưa xác nhận hoặc bỏ một khung hiện có theo rule tái sinh lịch.
+- `A03.07` **Hủy**: Đóng mà không lưu thay đổi chưa xác nhận.
+- `A03.08` **Xác Nhận**: Validate toàn bộ, lưu cấu hình và sinh/tái sinh lịch tương lai nguyên tử.
+
+**Điểm cần lưu ý:**
+
+- Không cho hai khung của cùng lớp trùng thời gian. Đồng thời phải kiểm tra lịch của giáo viên được phân công trên **tất cả lớp**; nếu giáo viên đã có lịch giao nhau thì hiển thị cảnh báo và không cho xác nhận.
+- Mỗi dòng phải có ít nhất một thứ; không cho giờ kết thúc bằng hoặc trước giờ bắt đầu.
 - Khi thêm/sửa/bỏ khung, chỉ tái sinh phần lịch chưa mở/chưa hoàn thành. Không thay đổi lịch đã hoàn thành hoặc lịch hủy dùng làm lịch sử.
 - Tổng lịch hợp lệ của chương trình luôn bằng `N` là số buổi khóa học. Các lịch tương lai được đánh số/tái sinh theo thứ tự thời gian đến đủ N.
 - Nếu không còn khung cố định hợp lệ để sinh đủ N buổi thì không lưu một phần; giữ cấu hình/lịch cũ và trả lỗi xử lý được.
 - Ngày kết thúc dự kiến là ngày của buổi hợp lệ thứ N sau khi sinh lịch; người dùng không sửa trực tiếp.
 
-### Trang 3: ADM-LOP-040520 — Popup thêm lịch dạy linh hoạt
+### Trang 4: Popup Thêm Lịch Dạy Linh Hoạt
+![Trang 4](./images/28-class-schedule-add-flexible.png)
 
-![Trang 3](./images/adm-lop-040520.png)
+*Thêm một hoặc nhiều lịch linh hoạt trong tuần được chọn — nhấn để xem ảnh gốc*
 
-**Mô tả:**
-- Cho phép thêm một hoặc nhiều lịch linh hoạt tại ngày/giờ cụ thể. Bấm dấu `+` ở một ngày trên lịch tuần mở trực tiếp form này và chọn sẵn ngày tương ứng.
+**Mô tả:** Cho phép thêm một hoặc nhiều lịch linh hoạt tại ngày/giờ cụ thể. Bấm dấu `+` ở một ngày trên lịch tuần mở trực tiếp form này và chọn sẵn ngày tương ứng.
+
+**Giải thích field/thành phần:**
+
+- `A04.01` **Khoảng tuần**: Mũi tên chuyển tuần cần chọn; các checkbox thứ ánh xạ đúng ngày thực tế trong tuần đó.
+- `A04.02` **Giờ bắt đầu/kết thúc**: Áp dụng cho các ngày được chọn trên cùng dòng; giờ kết thúc phải sau giờ bắt đầu.
+- `A04.03` **Thứ trong tuần**: Mỗi checkbox tạo một lịch linh hoạt ở ngày tương ứng trong tuần đang chọn.
+- `A04.04` **Thêm lịch dạy**: Thêm dòng giờ khác để tạo nhiều lịch trong một lần.
+- `A04.05` **Xác Nhận**: Validate toàn bộ rồi chèn các lịch linh hoạt nguyên tử vào timeline lớp.
 
 **Điểm cần lưu ý:**
-- `A04.01` Khoảng tuần: mũi tên chuyển tuần cần chọn; các checkbox thứ ánh xạ đúng ngày thực tế trong tuần đó.
-- `A04.02` Giờ bắt đầu/kết thúc: áp dụng cho các ngày được chọn trên cùng dòng; giờ kết thúc phải sau giờ bắt đầu.
-- `A04.03` Thứ trong tuần: mỗi checkbox tạo một lịch linh hoạt ở ngày tương ứng trong tuần đang chọn.
-- `A04.04` Thêm lịch dạy: thêm dòng giờ khác để tạo nhiều lịch trong một lần.
-- `A04.05` Xác Nhận: validate toàn bộ rồi chèn các lịch linh hoạt nguyên tử vào timeline lớp.
+
 - Lịch linh hoạt được tính vào tổng N buổi của khóa học. Khi chèn vào giữa timeline, hệ thống sắp xếp lại và điều chỉnh các lịch cố định phía sau để cuối cùng vẫn có đúng N buổi hợp lệ.
 - Không được sửa hoặc đẩy lùi các lịch đã mở/hoàn thành. Chỉ điều chỉnh phần lịch tương lai chưa mở.
 - Nhiều lịch linh hoạt trong một lần phải lưu nguyên tử; nếu một lịch trùng lịch lớp hoặc trùng lịch giáo viên ở bất kỳ lớp nào thì cảnh báo, chặn xác nhận và không thêm một phần.
-- Lịch linh hoạt hiển thị xanh dương cho đến khi được hoàn thành hoặc hủy. Việc chèn có thể làm thay đổi buổi N và Ngày kết thúc dự kiến; hệ thống cập nhật sau khi commit thành công.
+- Lịch linh hoạt phải hiển thị xanh dương cho đến khi được hoàn thành hoặc hủy.
+- Việc chèn có thể làm thay đổi buổi N và Ngày kết thúc dự kiến; hệ thống cập nhật sau khi commit thành công.
 
-### Trang 4: ADM-LOP-040521 — Popup thêm lịch dạy linh hoạt / Trùng lịch cố định
+### Trang 5: Popup xem/chỉnh sửa khi bấm thẻ lịch
+![Trang 5](./images/29-class-schedule-edit-popup.png)
 
-![Trang 4](./images/adm-lop-040521.png)
+*Bấm một thẻ lịch để xem hoặc chỉnh sửa đúng buổi học — nhấn để xem ảnh gốc*
 
-**Mô tả:**
-- Trạng thái popup thêm lịch linh hoạt khi khung giờ chọn trùng với lịch cố định của lớp (hiện cảnh báo dạng `Trùng với lịch cố định (Thứ 4 · 18:30 – 20:30)`).
+**Mô tả:** Bấm vào một thẻ lịch mở popup của đúng `schedule_id`. `Admin`, `Class Handler` và `Support` được chỉnh lịch chưa hoàn thành; `Teacher` mở cùng popup ở chế độ chỉ xem.
+
+**Giải thích field/thành phần:**
+
+- `A05.01` **Tiêu đề**: Lịch nguồn cố định hiển thị `Chỉnh sửa lịch cố định`; lịch nguồn linh hoạt hiển thị `Chỉnh sửa lịch linh hoạt`. Teacher hoặc lịch bị khóa hiển thị theo chế độ xem, không tạo cảm giác có thể sửa.
+- `A05.02` **Thời gian/Ngày**: Ngày diễn ra của đúng buổi; cho chỉnh khi lịch chưa hoàn thành/hủy.
+- `A05.03` **Giờ bắt đầu**: Giờ bắt đầu của buổi; phải kết hợp với Thời gian học để tính giờ kết thúc và kiểm tra trùng.
+- `A05.04` **Giáo viên**: Chọn trong các giáo viên hợp lệ đã được thêm vào lớp. Khi đổi phải kiểm tra lịch giáo viên trên tất cả lớp.
+- `A05.05` **Thời gian học**: Chọn thời lượng từ cấu hình cho phép, ví dụ `90 phút`; `Giờ kết thúc = Giờ bắt đầu + Thời gian học`. Không cho thời lượng bằng 0 hoặc âm.
+- `A05.06` **Trạng thái**: Với lịch chưa kết thúc, cho chọn `Đang đợi`, `Hoàn thành`, `Hủy bỏ`. Lịch `Hoàn thành` có flow `Mở lại` để trở về `Đang đợi`, đảo lương rồi mới cho sửa/hủy. `Đang đợi` giữ màu theo loại nguồn; hai trạng thái kết thúc kích hoạt nghiệp vụ tương ứng.
+- `A05.07` **Hủy**: Nút đóng popup, nhãn tiếng Việt là `Hủy`; bỏ thay đổi chưa xác nhận. Không phải hành động Hủy bỏ lịch.
+- `A05.08` **Xác nhận**: Validate phiên bản, quyền, field, trùng lịch và trạng thái; chỉ cập nhật UI sau khi backend commit.
 
 **Điểm cần lưu ý:**
-- Cảnh báo trùng là lỗi chặn: không cho `Xác nhận`, không có lựa chọn bỏ qua để vẫn tạo; nhóm lịch không bị thêm một phần (EX04).
+
+- `Hủy` ở chân popup chỉ đóng form; `Hủy bỏ` trong dropdown Trạng thái mới là nghiệp vụ hủy lịch và sinh buổi bù. Hai hành động phải có câu chữ/thiết kế phân biệt rõ.
+- Thay đổi ngày, giờ bắt đầu, thời lượng hoặc giáo viên phải kiểm tra cả trùng lịch của lớp hiện tại và trùng lịch giáo viên trên tất cả lớp. Có trùng thì cảnh báo và không cho xác nhận.
+- Chỉnh một buổi cố định chỉ tạo override cho occurrence đó, không âm thầm sửa toàn bộ khung lặp phía trên. Nguồn lịch vẫn là `Cố định` để audit; các lần tái sinh sau không được ghi đè occurrence đã override.
+- Chuyển `Đang đợi → Hoàn thành` phải tạo lương đúng một lần trong cùng giao dịch. Chuyển `Đang đợi → Hủy bỏ` phải loại buổi khỏi N, sinh bù và cập nhật ngày kết thúc trong cùng giao dịch.
+- Lịch `Hủy bỏ` mở ở chế độ chỉ xem. Lịch `Hoàn thành` hiển thị dữ liệu khóa và hành động `Mở lại` cho Admin/Class Handler/Support; chỉ sau khi mở lại và đảo lương thành công mới cho sửa field hoặc hủy lịch.
+- Teacher xem được toàn bộ field của lịch trong phạm vi nhưng các control là read-only; không gửi request cập nhật.
+- Không dùng hover làm thao tác xóa trực tiếp. Hover chỉ được hiển thị tooltip/trạng thái hoặc affordance mở chi tiết; mọi cập nhật thực hiện trong popup.
+
+### Trang 6: Hoàn thành và hủy lịch
+**Mô tả:** Role CRUD có thể cập nhật một lịch hợp lệ thành `Hoàn thành` hoặc `Hủy bỏ`. Hoàn thành làm phát sinh lương giáo viên; hủy loại buổi khỏi chương trình và tự sinh một buổi bù ở cuối theo lịch cố định. Lịch còn được **Hoàn thành qua luồng dạy** của giáo viên: giáo viên chọn lịch khi `Bắt đầu buổi học` (lịch được gắn buổi, giữ `Đang đợi`) và lịch chuyển `Hoàn thành` khi giáo viên bấm `Hoàn thành buổi học`.
+
+**Giải thích field/thành phần:**
+
+- `A06.01` **Hoàn thành**: Xử lý bắt buộc: Kiểm tra lịch/giáo viên → chuyển xanh lá → ghi nhận buổi hợp lệ → tạo lương giáo viên đúng một lần.
+- `A06.02` **Hoàn thành qua luồng dạy**: Xử lý bắt buộc: Khi giáo viên bấm `Hoàn thành buổi học` của bài đã gắn lịch: cùng xử lý như Hoàn thành ở trên (xanh lá, buổi hợp lệ, một khoản lương cho **giáo viên của buổi**), ghi audit nguồn là luồng dạy. Lịch đang gắn với buổi `Đang dạy` / `Chờ hoàn thành` vẫn ở `Đang đợi`, không chọn được cho buổi khác.
+- `A06.03` **Hủy bỏ**: Xử lý bắt buộc: Chuyển xám → loại khỏi số buổi hợp lệ → không tính lương → sinh một lịch cố định bù sau buổi hợp lệ cuối cùng → tăng Ngày kết thúc dự kiến.
+- `A06.04` **Sửa lịch chưa hoàn thành**: Xử lý bắt buộc: Cho phép role CRUD sửa ngày/giờ/giáo viên theo field UI chi tiết; phải kiểm tra trùng và cân bằng lịch.
+- `A06.05` **Xóa**: Xử lý bắt buộc: Không xóa vật lý lịch chương trình. Thao tác loại bỏ lịch phải dùng trạng thái Hủy bỏ để giữ audit và kích hoạt sinh bù.
+
+**Điểm cần lưu ý:**
+
+- Buổi hủy vẫn hiển thị màu xám trong tuần/lịch sử nhưng không nằm trong tập N buổi hợp lệ.
+- Lịch bù được tạo tại khung cố định hợp lệ đầu tiên **sau buổi hợp lệ cuối cùng hiện tại**. Nếu khung đó trùng thì bỏ qua và tìm khung cố định kế tiếp.
+- Mỗi lịch hủy tạo đúng một lịch bù. Request hủy gửi lặp không được tạo nhiều lịch bù hoặc kéo dài ngày kết thúc nhiều lần.
+- Sau khi sinh bù, Ngày kết thúc dự kiến tự đổi thành ngày của buổi hợp lệ thứ N mới.
+- Hoàn thành và tạo lương phải nhất quán: không được có trạng thái xanh lá nhưng thiếu khoản lương, hoặc tạo lương khi trạng thái chưa hoàn thành.
+- Không cho hoàn thành lịch đã hủy. Lịch đã hoàn thành không được sửa/hủy trực tiếp; phải đi qua flow `Mở lại`, đảo lương và trở về `Đang đợi` trước.
+- Lớp không chính thức được nới điều kiện nội dung/bài học để test nhưng vẫn phải chống ghi lương trùng, lưu audit và kiểm tra quyền.
+
+### Trang 7: Mở lại lịch đã hoàn thành và đảo lương
+**Mô tả:** Cho phép `Admin`, `Class Handler` và `Support` mở lại một lịch đã `Hoàn thành` để sửa hoặc hủy. Đây là nghiệp vụ điều chỉnh có ảnh hưởng tài chính nên phải đảo khoản lương hiệu lực và lưu toàn bộ audit trước khi lịch trở về `Đang đợi`.
+
+**Giải thích field/thành phần:**
+
+- `A07.01` **Nút `Mở lại`**: Chỉ hiển thị cho role CRUD khi lịch đang Hoàn thành; Teacher không thấy hành động này.
+- `A07.02` **Lý do điều chỉnh**: Bắt buộc nhập, không chỉ có khoảng trắng; lưu vào audit lịch và bút toán lương.
+- `A07.03` **Cảnh báo**: Nêu rõ lịch sẽ trở về Đang đợi và khoản lương đã phát sinh sẽ được đảo/điều chỉnh.
+- `A07.04` **Hủy**: Đóng popup, giữ nguyên lịch Hoàn thành và khoản lương hiện tại.
+- `A07.05` **Xác nhận mở lại**: Thực hiện đảo lương và đổi trạng thái trong một giao dịch; sau thành công mới mở khóa các field chỉnh sửa.
+
+**Điểm cần lưu ý:**
+
+- Không xóa vật lý khoản lương cũ. Phải tạo bút toán đảo/điều chỉnh liên kết với khoản lương gốc để lịch sử tài chính có thể truy vết.
+- Sau khi mở lại thành công, lịch trở về `Đang đợi` và hiển thị màu theo nguồn ban đầu: cam nếu Cố định, xanh dương nếu Linh hoạt.
+- Nếu người dùng tiếp tục chọn `Hủy bỏ`, hệ thống dùng flow hủy bình thường: loại khỏi N, không còn lương hiệu lực, sinh lịch bù ở cuối và cập nhật ngày kết thúc.
+- Nếu lịch được hoàn thành lại, hệ thống tạo lần ghi nhận lương mới; tại một thời điểm chỉ có một khoản lương **hiệu lực** cho schedule. Khoản cũ và bút toán đảo vẫn giữ trong lịch sử.
+- Điểm danh, bài học, BTVN, bài kiểm tra hoặc dữ liệu liên quan đã phát sinh không được xóa theo flow mở lại; phải giữ audit và hiển thị cảnh báo dữ liệu phụ thuộc.
+- Nếu bảng lương đã khóa/chốt, không sửa trực tiếp kỳ cũ. Hệ thống tạo bút toán điều chỉnh ở kỳ cho phép gần nhất; nếu chưa thể tạo điều chỉnh thì không mở lại một phần.
+- Request mở lại gửi lặp phải idempotent: chỉ một bút toán đảo và một lần chuyển về Đang đợi.
+
+### Trang 8: Toast phản hồi CRUD lịch
+![Trang 8](../../images/01-toast-crud.png)
+
+*Toast phản hồi tạo, cập nhật, hoàn thành và hủy lịch — nhấn để xem ảnh gốc*
+
+**Mô tả:** Hiển thị kết quả CRUD sau phản hồi backend.
+
+**Điểm cần lưu ý:**
+
+- `A08.01` **Thành công**: Tiêu đề: `Thành Công`; Ví dụ nội dung: `Đã thêm lịch linh hoạt.`, `Đã hoàn thành buổi học.`, `Đã hủy lịch và tạo buổi bù.`, `Đã mở lại lịch và điều chỉnh lương.`
+- `A08.02` **Thông tin**: Tiêu đề: `Thông Báo`; Ví dụ nội dung: `Lịch đang được tái tạo, danh sách sẽ cập nhật sau ít phút.`
+- `A08.03` **Cảnh báo**: Tiêu đề: `Cảnh Báo`; Ví dụ nội dung: `Giáo viên đã có lịch trong khung giờ này. Vui lòng chọn thời gian khác.`
+- `A08.04` **Lỗi**: Tiêu đề: `Có Lỗi Xảy Ra`; Ví dụ nội dung: `Không thể cập nhật lịch. Vui lòng thử lại.`
+
+- Chỉ báo thành công sau khi toàn bộ thay đổi liên quan đã commit, gồm lịch, lịch bù, ngày kết thúc và lương nếu có.
+- Hủy popup, chuyển tuần, mở thẻ hoặc validation field chưa gửi backend không hiển thị Toast thành công.
+- Không hiển thị stack trace, ID nội bộ nhạy cảm hoặc chi tiết tính lương trong Toast.
 
 ---
 
@@ -119,40 +199,40 @@
 
 ### 2.1. Flow chính
 
-**Flow 1: Xem lịch theo tuần**
+**Flow 1 / REQ01–REQ02: Xem lịch theo tuần**
 
-```
-Mở Chi tiết lớp → Tab Lịch dạy (Trang 1)
+```text
+Mở Chi tiết lớp → Tab Lịch dạy
       → Backend kiểm tra quyền và phạm vi lớp
       → Tải cấu hình cố định + lịch thuộc tuần
       → Render đúng ngày/giờ/trạng thái
       → Teacher chỉ xem; Admin/Class Handler/Support có control CRUD
 ```
 
-**Flow 2: Thêm hoặc cập nhật lịch cố định**
+**Flow 2 / REQ03: Thêm hoặc cập nhật lịch cố định**
 
-```
-Bấm Thêm lịch dạy cố định (Trang 2)
+```text
+Bấm Thêm lịch dạy cố định
       → Nhập ngày áp dụng, khung giờ và thứ
       → Validate giờ, trùng lịch và khả năng sinh đủ N buổi
       → Lưu cấu hình + tái sinh lịch tương lai nguyên tử
       → Cập nhật ngày kết thúc dự kiến và Toast
 ```
 
-**Flow 3: Thêm lịch linh hoạt**
+**Flow 3 / REQ04: Thêm lịch linh hoạt**
 
-```
-Bấm + tại ngày hoặc chọn tab Lịch Linh Hoạt (Trang 3)
+```text
+Bấm + tại ngày hoặc chọn tab Lịch Linh Hoạt
       → Chọn tuần, ngày và giờ
-      → Validate toàn bộ nhóm lịch (trùng → Trang 4)
+      → Validate toàn bộ nhóm lịch
       → Chèn vào timeline, tính vào N
       → Điều chỉnh lịch cố định phía sau để tổng vẫn đúng N
       → Cập nhật buổi N/ngày kết thúc và Toast
 ```
 
-**Flow 4: Mở thẻ, chỉnh sửa hoặc hoàn thành lịch**
+**Flow 4 / REQ10, REQ06: Mở thẻ, chỉnh sửa hoặc hoàn thành lịch**
 
-```
+```text
 Bấm thẻ lịch → tải popup theo schedule_id
       → Teacher: chỉ xem
       → Role CRUD: sửa field hoặc chọn trạng thái
@@ -161,9 +241,9 @@ Bấm thẻ lịch → tải popup theo schedule_id
       → Commit cùng giao dịch → cập nhật thẻ và Toast
 ```
 
-**Flow 5: Hủy lịch và sinh buổi bù**
+**Flow 5 / REQ07: Hủy lịch và sinh buổi bù**
 
-```
+```text
 Role CRUD chọn Hủy bỏ
       → Backend kiểm tra lịch chưa hoàn thành
       → Loại lịch khỏi tập N buổi hợp lệ, không tính lương
@@ -173,9 +253,9 @@ Role CRUD chọn Hủy bỏ
       → Commit nguyên tử → lịch cũ màu xám + Toast
 ```
 
-**Flow 6: Mở lại lịch hoàn thành và đảo lương**
+**Flow 6 / REQ11: Mở lại lịch hoàn thành và đảo lương**
 
-```
+```text
 Role CRUD mở lịch Hoàn thành → chọn Mở lại
       → Nhập lý do bắt buộc → xác nhận
       → Backend kiểm tra quyền, version và trạng thái bảng lương
@@ -217,7 +297,9 @@ Role CRUD mở lịch Hoàn thành → chọn Mở lại
 
 ### 2.4. Ràng buộc
 
-#### Quyền
+#### Ràng buộc khác
+
+**Quyền tại tab Lịch dạy**
 
 | Role | Xem lịch | Tạo cố định/linh hoạt | Sửa lịch | Hoàn thành | Hủy bỏ | Mở lại hoàn thành |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -227,23 +309,34 @@ Role CRUD mở lịch Hoàn thành → chọn Mở lại
 | Teacher được phân công | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | Role khác | Theo permission/phạm vi | ❌ | ❌ | ❌ | ❌ | ❌ |
 
-#### Ràng buộc khác
-
 - Teacher không hoàn thành lịch tại tab; lịch được hoàn thành gián tiếp khi giáo viên bấm `Hoàn thành buổi học` ở menu Bài học (lịch đã chọn lúc bắt đầu buổi).
-- `N` lấy từ khóa học hiện tại của lớp. Tập N buổi hợp lệ gồm lịch Cố định/Linh hoạt chưa hủy và lịch Hoàn thành; không gồm lịch Hủy bỏ.
-- Chèn lịch linh hoạt: tính vào N và cân bằng lại phần lịch cố định tương lai. Hủy bất kỳ lịch Cố định/Linh hoạt nào: trừ lịch đó khỏi N, giữ bản ghi xám và sinh một lịch cố định bù ở cuối.
+
+#### Số buổi và ngày kết thúc
+
+- `N` lấy từ khóa học hiện tại của lớp.
+- Tập N buổi hợp lệ gồm lịch Cố định/Linh hoạt chưa hủy và lịch Hoàn thành; không gồm lịch Hủy bỏ.
+- Chèn lịch linh hoạt: tính vào N và cân bằng lại phần lịch cố định tương lai.
+- Hủy bất kỳ lịch Cố định/Linh hoạt nào: trừ lịch đó khỏi N, giữ bản ghi xám và sinh một lịch cố định bù ở cuối.
 - Ngày kết thúc dự kiến luôn bằng ngày của buổi hợp lệ thứ N; không lấy ngày của lịch hủy và không cho nhập thủ công.
 - Không sửa, dời hoặc tái sinh đè lên lịch đã hoàn thành.
-- Chỉ lịch `Hoàn thành` mới phát sinh lương. Khoản lương gắn `schedule_id`, `teacher_id`, `class_id`, thời điểm hoàn thành và rule lương áp dụng; cách tính số tiền dẫn chiếu requirement lương giáo viên.
+
+#### Lương giáo viên
+
+- Chỉ lịch `Hoàn thành` mới phát sinh lương.
+- Khoản lương gắn `schedule_id`, `teacher_id`, `class_id`, thời điểm hoàn thành và rule lương áp dụng; cách tính số tiền dẫn chiếu requirement lương giáo viên.
 - **Ngày tính lương là ngày của lịch**, không phải ngày bấm Hoàn thành. Ví dụ giáo viên chọn lịch ngày 15 để bắt đầu buổi, ngày 20 mới bấm `Hoàn thành buổi học` thì khoản lương thuộc ngày 15. Hoàn thành qua luồng dạy gắn `teacher_id` là giáo viên của buổi (người bấm Bắt đầu buổi học).
 - Unique/idempotency bảo đảm một lịch chỉ có một khoản lương hiệu lực tại một thời điểm. Mở lại giữ khoản gốc, tạo bút toán đảo; hoàn thành lại có thể tạo khoản mới nhưng khoản cũ không còn hiệu lực.
-- Lịch hủy không phát sinh lương. Nếu lịch đã có lương thì không được hủy theo flow thông thường; muốn hủy lịch đã Hoàn thành phải Mở lại và đảo lương thành công trước, sau đó mới Hủy bỏ.
+- Lịch hủy không phát sinh lương. Nếu lịch đã có lương thì không được hủy theo flow thông thường trong requirement này.
+- Muốn hủy lịch đã Hoàn thành phải Mở lại và đảo lương thành công trước, sau đó mới thực hiện Hủy bỏ.
+
+#### Tính toàn vẹn và đồng thời
+
 - Thêm nhóm lịch, tái sinh, hoàn thành + tính lương, hủy + sinh bù + đổi ngày kết thúc, và mở lại + đảo lương phải nguyên tử theo từng thao tác logic.
 - Kiểm tra trùng lịch lớp và lịch của giáo viên trên toàn hệ thống ở backend tại thời điểm commit; validation client chỉ hỗ trợ trải nghiệm. Cảnh báo trùng là lỗi chặn, người dùng không được bỏ qua để tiếp tục tạo.
 - Dùng version/updated_at hoặc cơ chế tương đương để ngăn snapshot cũ ghi đè trạng thái mới.
 - Audit không bị xóa khi hủy lịch hoặc tái sinh timeline.
 
-![Toast CRUD](../../images/01-toast-crud.png)
+---
 
 ---
 
@@ -253,21 +346,52 @@ Role CRUD mở lịch Hoàn thành → chọn Mở lại
 
 | Tên testcase | Priority | Scenario | Role | Pre-condition | Given/When/Then | Expected Result |
 |---|---|---|---|---|---|---|
-| Case 1: Mở đúng lịch tuần, chuyển tuần, hiển thị nhiều lịch | High | Flow 1 / REQ01 | Role có quyền xem | Lớp có lịch ở nhiều tuần; một ngày có trên ba lịch hợp lệ | **Given:** mở tab Lịch dạy<br>**When:** dữ liệu tải thành công, bấm mũi tên trái/phải<br>**Then:** hiển thị đúng tuần và đúng class_id, dịch đúng một tuần | - Không trộn lớp khác, thẻ nằm đúng ngày/giờ, không thay đổi dữ liệu khi tải<br>- Header và dữ liệu cùng khoảng ngày, không nhân đôi thẻ<br>- Không mất lịch thứ tư trở đi, có scroll/mở rộng phù hợp |
-| Case 2: Nút thêm cố định và dấu cộng mở đúng tab | High | Flow 2 / Flow 3 / REQ03 / REQ04 | Admin / Class Handler / Support | Tab lịch đang mở | **Given:** bấm `Thêm lịch dạy cố định`; lần khác bấm `+` tại một ngày<br>**When:** popup mở<br>**Then:** chọn sẵn tab Cố định, hoặc tab Linh hoạt với ngày/tuần đó | - Chưa tạo lịch trước khi xác nhận, giữ đúng class_id<br>- Hiển thị cấu hình cố định hiện tại nếu có |
-| Case 3: Teacher chỉ xem lịch và popup | High | REQ02 / REQ10 / EX01 / Ràng buộc quyền | Teacher | Giáo viên được phân công lớp | **Given:** Teacher mở tab và bấm một thẻ lịch<br>**When:** xem lịch, popup và thử gọi API CRUD<br>**Then:** chỉ được đọc | - Không có/disable nút thêm, X, Mở lại và hành động trạng thái; không có nút xác nhận cập nhật<br>- Backend từ chối request thay đổi<br>- Không lộ lịch ngoài phạm vi |
-| Case 4: Bốn trạng thái, màu và loại nguồn | High | REQ05 | Role có quyền xem | Có lịch đủ bốn trạng thái; một lịch linh hoạt đã hoàn thành, một lịch cố định đã hủy | **Given:** tuần tải thành công<br>**When:** render thẻ, focus/hover thẻ<br>**Then:** màu/icon/tên đúng mapping | - Cố định cam, Linh hoạt xanh dương, Hoàn thành xanh lá, Hủy bỏ xám<br>- Lịch linh hoạt hoàn thành xanh lá nhưng audit vẫn Linh hoạt; lịch cố định hủy xám, audit vẫn Cố định<br>- Tooltip/aria-label có tên trạng thái |
-| Case 5: Thêm nhiều khung cố định hợp lệ | High | Flow 2 / REQ03 | Admin / Class Handler / Support | Khóa học có N buổi | **Given:** thêm rồi xóa một dòng chưa Xác Nhận (chỉ đổi draft); nhập nhiều khung hợp lệ<br>**When:** Xác Nhận<br>**Then:** lưu cấu hình và sinh lịch | - Backend chưa đổi trước khi xác nhận, Hủy trả về dữ liệu cũ<br>- Có đúng N lịch hợp lệ, sắp theo thời gian, ngày kết thúc là buổi N, Toast thành công |
-| Case 6: Chặn giờ không hợp lệ và trùng lịch | High | EX02 / REQ03 | Admin / Class Handler / Support | Khung mới trùng lịch của lớp hoặc lịch giáo viên ở lớp khác; popup đang mở | **Given:** giờ kết thúc bằng/trước giờ bắt đầu; hoặc chọn khoảng thời gian giao nhau<br>**When:** xác nhận<br>**Then:** cảnh báo và không lưu | - Đánh dấu đúng dòng, giữ dữ liệu để sửa, không sinh lịch một phần<br>- Nêu đúng giáo viên/ngày/khung giờ trùng, không có lựa chọn bỏ qua, không ghi đè lịch cũ<br>- Backend kiểm tra lại trên toàn hệ thống khi commit |
-| Case 7: Bỏ khung cố định và không thể sinh đủ lịch | High | Flow 2 / REQ03 / EX03 | Admin / Class Handler / Support | Lớp có lịch hoàn thành và lịch tương lai | **Given:** bỏ một khung cố định; lần khác cấu hình không thể tạo đủ N buổi<br>**When:** xác nhận<br>**Then:** tái sinh phần tương lai; hoặc từ chối toàn bộ | - Không đổi buổi hoàn thành/hủy lịch sử, tổng hợp lệ vẫn N, đánh số liên tục, cập nhật ngày kết thúc<br>- Trường hợp không đủ: giữ cấu hình/lịch cũ, không có lịch nửa chừng, nêu rõ cần bổ sung khung |
-| Case 8: Thêm lịch linh hoạt, nhiều lịch và cân bằng về N | High | Flow 3 / REQ04 | Admin / Class Handler / Support | Lớp đã có đủ N lịch, phần sau chưa mở | **Given:** bấm `+` tại ngày D hoặc chọn nhiều ngày/dòng giờ, chèn ở giữa timeline<br>**When:** xác nhận, commit thành công<br>**Then:** thêm tất cả trong một giao dịch và điều chỉnh các lịch cố định sau đó | - Thẻ xanh dương, đúng class_id/ngày/giờ, Toast thành công<br>- Không tạo trùng, timeline sắp theo thời gian<br>- Tổng lịch hợp lệ vẫn N, không đổi lịch đã mở/hoàn thành, đánh số lại liên tục, ngày kết thúc theo buổi N |
-| Case 9: Nhóm lịch linh hoạt có phần tử trùng, Hủy popup | High | EX04 / REQ04 | Admin / Class Handler / Support | Chọn nhiều lịch, có một lịch trùng lớp hiện tại hoặc lịch giáo viên ở lớp khác; có draft chưa lưu | **Given:** một phần tử không hợp lệ; sau đó bấm Hủy khi đã nhập lịch<br>**When:** xác nhận; bấm Hủy<br>**Then:** cảnh báo và từ chối toàn bộ nhóm; Hủy đóng popup | - Không thêm một phần, chỉ rõ giáo viên/ngày/giờ trùng, cho sửa và thử lại<br>- Hủy: không tạo lịch, không cân bằng lại timeline, không Toast thành công |
-| Case 10: Popup thẻ lịch — mở đúng, chỉnh sửa và nút Hủy | High | Flow 4 / REQ10 / EX02 | Admin / Class Handler / Support | Tuần có nhiều lịch; lịch Đang đợi; giáo viên mới thuộc lớp và rảnh | **Given:** bấm thẻ lịch A; đổi ngày/giờ/thời lượng/giáo viên (hợp lệ, rồi gây trùng); sửa field rồi bấm `Hủy`<br>**When:** Xác nhận<br>**Then:** popup tải theo schedule_id của A; cập nhật đúng occurrence; trùng thì chặn; `Hủy` chỉ đóng form | - Đúng ngày, giờ, giáo viên, thời lượng, trạng thái, tiêu đề đúng loại nguồn; không lấy dữ liệu lịch B<br>- Tính lại giờ kết thúc, không đổi khung lặp chung, kiểm tra lịch toàn hệ thống, Toast thành công<br>- Trùng: cảnh báo, giữ dữ liệu cũ<br>- `Hủy` không chuyển Hủy bỏ, không sinh lịch bù |
-| Case 11: Hoàn thành lịch và gửi lặp | High | Flow 4 / REQ06 / EX05 | Admin / Class Handler / Support | Lịch cố định và lịch linh hoạt hợp lệ, có giáo viên | **Given:** lịch cam và lịch xanh dương; chọn Hoàn thành từ popup; gửi lặp request<br>**When:** backend xử lý<br>**Then:** cập nhật trạng thái và lương, kết quả idempotent | - Thẻ xanh lá, vẫn lưu nguồn Cố định/Linh hoạt, lương đúng giáo viên/lịch, một audit và Toast<br>- Một khoản lương, không nhân đôi Toast/audit<br>- Không chỉ đổi màu ở client |
-| Case 12: Hủy lịch và sinh buổi bù | High | Flow 5 / REQ07 / EX06 | Admin / Class Handler / Support | Có lịch cố định/linh hoạt tương lai và khung cố định hợp lệ; khung bù đầu tiên có thể bị trùng | **Given:** hủy một lịch màu cam và một lịch xanh dương<br>**When:** backend commit<br>**Then:** chuyển xám và sinh bù ở cuối bằng khung cố định hợp lệ | - Lịch hủy không tính trong N, không tính lương; chỉ một lịch bù màu cam; tổng hợp lệ vẫn N<br>- Khung trùng thì tìm khung kế tiếp, không tạo lịch chồng<br>- Ngày kết thúc theo lịch bù thực tế; audit giữ nguồn ban đầu |
-| Case 13: Hủy lặp, snapshot cũ và không thể sinh bù | High | EX06 / EX07 / EX08 / REQ06 / REQ07 | Admin / Class Handler / Support | Lịch đã hủy có compensation_schedule_id; lịch đã ở trạng thái kết thúc; không còn khung cố định hợp lệ | **Given:** gửi lại request hủy; hoàn thành lịch đã hủy hoặc sửa lịch hoàn thành chưa Mở lại; yêu cầu hủy khi không tìm được thời gian bù<br>**When:** backend kiểm tra version/trạng thái<br>**Then:** trả trạng thái hiện tại / từ chối, không commit nửa chừng | - Không tạo lịch bù thứ hai, không tăng ngày kết thúc thêm, không ghi lương<br>- Không đổi trạng thái, yêu cầu tải lại dữ liệu mới nhất<br>- Không sinh được bù: giữ trạng thái lịch cũ, không thay N/ngày kết thúc, báo cần bổ sung lịch cố định |
-| Case 14: Mở lại lịch hoàn thành và đảo lương | High | Flow 6 / REQ11 / Ràng buộc quyền | Admin / Class Handler / Support; Teacher | Lịch Hoàn thành có một khoản lương hiệu lực | **Given:** mở popup thẻ lịch; lý do trống rồi lý do hợp lệ; sau đó chọn Hủy bỏ hoặc Hoàn thành lại<br>**When:** xác nhận Mở lại<br>**Then:** đảo lương, đưa lịch về Đang đợi | - Chỉ role CRUD thấy Mở lại, Teacher chỉ xem<br>- Lý do trống: báo lỗi đúng field, lịch vẫn Hoàn thành, lương vẫn hiệu lực<br>- Không xóa lương gốc, có bút toán đảo liên kết, thẻ trở về màu nguồn, có audit/Toast<br>- Hủy bỏ: xám, không lương hiệu lực, một lịch bù, cập nhật ngày kết thúc; Hoàn thành lại: một khoản lương mới hiệu lực |
-| Case 15: Mở lại khi bảng lương khóa, gửi lặp và Toast | High | EX09 / EX10 / EX11 / REQ09 | Admin / Class Handler / Support | Khoản lương thuộc kỳ đã chốt; cùng idempotency key gửi lại; lỗi backend/network; lịch trùng | **Given:** yêu cầu Mở lại; gửi lặp; thao tác thất bại; xác nhận lịch trùng<br>**When:** backend xử lý<br>**Then:** tạo điều chỉnh ở kỳ cho phép hoặc từ chối nguyên tử; hiển thị Toast đúng loại | - Không sửa/xóa kỳ đã khóa; không đổi lịch nếu chưa xử lý được điều chỉnh<br>- Một bút toán đảo, một audit logic<br>- Thành công: một Toast đúng thao tác, không báo sớm; trùng: Toast Cảnh Báo, không lưu một phần; lỗi: UI giữ/khôi phục trạng thái cũ, không có lương/lịch bù/bút toán đảo giả, cho thử lại |
+| Case 1: Mở đúng lịch tuần của lớp | High · Smoke | Flow 1 / REQ01 | Role có quyền xem | Lớp có lịch ở nhiều tuần | **Given** mở tab Lịch dạy<br>**When** dữ liệu tải thành công<br>**Then** hiển thị đúng tuần và đúng class_id | - Không trộn lớp khác<br>- Thẻ nằm đúng ngày/giờ<br>- Không thay đổi dữ liệu khi tải |
+| Case 2: Chuyển tuần trước và sau | High | Flow 1 / REQ01 | Role có quyền xem | Có lịch ở các tuần liền kề | **Given** tuần hiện tại đang hiển thị<br>**When** bấm mũi tên trái/phải<br>**Then** tải tuần tương ứng | - Mỗi lần dịch đúng một tuần<br>- Header và dữ liệu cùng khoảng ngày<br>- Không nhân đôi thẻ lịch |
+| Case 3: Dấu cộng mở lịch linh hoạt đúng ngày | High | Flow 3 / REQ04 | `Admin`, `Class Handler` hoặc `Support` | Tuần đang mở | **Given** bấm `+` tại một ngày<br>**When** popup mở<br>**Then** chọn sẵn tab Linh hoạt và ngày/tuần đó | - Không mở tab Cố định<br>- Giữ đúng class_id<br>- Chưa tạo lịch trước khi xác nhận |
+| Case 4: Nút thêm cố định mở đúng tab | High | Flow 2 / REQ03 | Role CRUD | Tab lịch đang mở | **Given** bấm `Thêm lịch dạy cố định`<br>**When** popup mở<br>**Then** tab Cố định được chọn | - Không tự lưu<br>- Giữ đúng lớp<br>- Hiển thị cấu hình cố định hiện tại nếu có |
+| Case 5: Teacher chỉ xem lịch | High | REQ02 / Ràng buộc quyền | `Teacher` | Giáo viên được phân công lớp | **Given** Teacher mở tab<br>**When** xem lịch và thử gọi API CRUD<br>**Then** chỉ được đọc | - Không có/disable nút thêm, X và hành động trạng thái<br>- Backend từ chối request thay đổi<br>- Không lộ lịch ngoài phạm vi |
+| Case 6: Hiển thị nhiều hơn ba lịch trong ngày | Medium | REQ01 | Role có quyền xem | Một ngày có trên ba lịch hợp lệ | **Given** tuần có nhiều lịch cùng ngày<br>**When** render lịch<br>**Then** hiển thị/truy cập được tất cả | - Không mất lịch thứ tư trở đi<br>- Không chồng thẻ che nội dung<br>- Có scroll/mở rộng phù hợp |
+| Case 7: Hiển thị đúng bốn trạng thái | High | REQ05 | Role có quyền xem | Có lịch thuộc đủ bốn trạng thái | **Given** tuần tải thành công<br>**When** render các thẻ<br>**Then** màu/icon/tên đúng mapping | - Cố định cam<br>- Hoàn thành xanh lá<br>- Linh hoạt xanh dương<br>- Hủy bỏ xám |
+| Case 8: Trạng thái ghi đè màu nhưng giữ loại nguồn | High | REQ05 | Role có quyền xem | Có một lịch linh hoạt đã hoàn thành và một lịch cố định đã hủy | **Given** backend trả loại nguồn và trạng thái<br>**When** render<br>**Then** dùng màu trạng thái | - Lịch linh hoạt hoàn thành hiển thị xanh lá nhưng audit vẫn là Linh hoạt<br>- Lịch cố định hủy hiển thị xám nhưng audit vẫn là Cố định |
+| Case 9: Không nhận biết chỉ bằng màu | Medium | REQ05 | Role có quyền xem | Có nhiều trạng thái | **Given** focus/hover thẻ lịch<br>**When** xem nội dung hỗ trợ<br>**Then** có tên trạng thái | - Tooltip/aria-label đúng<br>- Không tráo tên với màu<br>- Có thể phân biệt khi không nhìn màu |
+| Case 10: Thêm nhiều khung cố định hợp lệ | High · Smoke | Flow 2 / REQ03 | Role CRUD | Khóa học có N buổi | **Given** nhập nhiều khung hợp lệ<br>**When** Xác Nhận<br>**Then** lưu cấu hình và sinh lịch | - Có đúng N lịch hợp lệ<br>- Sắp theo thời gian<br>- Ngày kết thúc là buổi N<br>- Toast thành công |
+| Case 11: Chặn giờ kết thúc không hợp lệ | High | EX02 / REQ03 | Role CRUD | Popup đang mở | **Given** giờ kết thúc bằng/trước giờ bắt đầu<br>**When** xác nhận<br>**Then** không lưu | - Đánh dấu đúng dòng<br>- Giữ dữ liệu để sửa<br>- Không sinh lịch một phần |
+| Case 12: Chặn trùng lịch lớp hoặc lịch giáo viên ở lớp khác | High | EX02 / REQ03 | Role CRUD | Khung mới trùng lịch của lớp hoặc trùng lịch giáo viên đã được phân công ở một lớp khác | **Given** chọn khoảng thời gian giao nhau<br>**When** validation chạy<br>**Then** hiển thị cảnh báo trùng lịch và chặn xác nhận | - Không tạo lịch trùng<br>- Nêu đúng giáo viên/ngày/khung giờ bị trùng<br>- Không ghi đè lịch cũ<br>- Backend kiểm tra lại trên toàn hệ thống khi commit |
+| Case 13: Thêm và xóa dòng trước khi xác nhận | Medium | REQ03 | Role CRUD | Popup đang mở | **Given** thêm rồi xóa một dòng<br>**When** chưa Xác Nhận<br>**Then** chỉ thay đổi draft | - Backend chưa đổi<br>- Hủy trả về dữ liệu cũ<br>- Không có Toast CRUD |
+| Case 14: Bỏ khung cố định và tái sinh lịch tương lai | High | Flow 2 / REQ03 | Role CRUD | Lớp có lịch hoàn thành và lịch tương lai | **Given** bỏ một khung cố định<br>**When** xác nhận<br>**Then** tái sinh phần tương lai bằng các khung còn lại | - Không đổi buổi hoàn thành/hủy lịch sử<br>- Tổng hợp lệ vẫn N<br>- Đánh số liên tục<br>- Cập nhật ngày kết thúc |
+| Case 15: Không thể sinh đủ lịch | High | EX03 / REQ03 | Role CRUD | Không còn khung hợp lệ | **Given** cấu hình không thể tạo đủ N buổi<br>**When** xác nhận<br>**Then** từ chối toàn bộ | - Giữ cấu hình/lịch cũ<br>- Không có lịch nửa chừng<br>- Nêu rõ cần bổ sung khung |
+| Case 16: Tạo lịch linh hoạt từ dấu cộng | High · Smoke | Flow 3 / REQ04 | Role CRUD | Tuần đang hiển thị | **Given** bấm `+` tại ngày D<br>**When** nhập giờ và xác nhận<br>**Then** tạo lịch linh hoạt tại D | - Thẻ xanh dương<br>- Đúng class_id/ngày/giờ<br>- Có Toast thành công |
+| Case 17: Thêm nhiều lịch linh hoạt nguyên tử | High | Flow 3 / REQ04 | Role CRUD | Các ngày/giờ hợp lệ | **Given** chọn nhiều ngày/dòng giờ<br>**When** xác nhận<br>**Then** thêm tất cả trong một giao dịch | - Không mất lựa chọn<br>- Không tạo trùng<br>- Timeline sắp theo thời gian |
+| Case 18: Chèn lịch và cân bằng về đúng N buổi | High | Flow 3 / REQ04 | Role CRUD | Lớp đã có đủ N lịch, phần sau chưa mở | **Given** chèn lịch linh hoạt ở giữa<br>**When** commit thành công<br>**Then** điều chỉnh các lịch cố định sau đó | - Tổng lịch hợp lệ vẫn N<br>- Không đổi lịch đã mở/hoàn thành<br>- Đánh số lại liên tục<br>- Ngày kết thúc cập nhật theo buổi N |
+| Case 19: Một lịch trong nhóm bị trùng lịch lớp hoặc lịch giáo viên | High | EX04 / REQ04 | Role CRUD | Chọn nhiều lịch, có một lịch trùng với lớp hiện tại hoặc lịch của giáo viên tại lớp khác | **Given** một phần tử không hợp lệ<br>**When** xác nhận<br>**Then** cảnh báo và từ chối toàn bộ nhóm | - Không thêm một phần<br>- Chỉ rõ giáo viên/ngày/giờ trùng<br>- Không cho bỏ qua cảnh báo để vẫn tạo<br>- Cho phép sửa và thử lại |
+| Case 20: Hủy popup linh hoạt | Medium | REQ04 | Role CRUD | Có draft chưa lưu | **Given** đã nhập lịch<br>**When** bấm Hủy<br>**Then** đóng popup | - Không tạo lịch<br>- Không cân bằng lại timeline<br>- Không có Toast thành công |
+| Case 21: Mở đúng popup của thẻ được bấm | High | Flow 4 / REQ10 | Role có quyền xem | Tuần có nhiều lịch | **Given** bấm thẻ lịch A<br>**When** popup mở<br>**Then** tải theo schedule_id của A | - Đúng ngày, giờ, giáo viên, thời lượng, trạng thái<br>- Không lấy dữ liệu lịch B<br>- Tiêu đề đúng loại nguồn |
+| Case 22: Teacher xem popup ở chế độ chỉ đọc | High | REQ02 / Ràng buộc quyền | `Teacher` | Được phân công lớp | **Given** Teacher bấm một thẻ lịch<br>**When** popup mở<br>**Then** chỉ xem dữ liệu | - Không sửa field/trạng thái<br>- Không có nút xác nhận cập nhật<br>- API sửa trực tiếp bị từ chối |
+| Case 23: Chỉnh ngày, giờ hoặc thời lượng hợp lệ | High | REQ10 | Role CRUD | Lịch đang Đang đợi | **Given** nhập giá trị mới không trùng<br>**When** Xác nhận<br>**Then** cập nhật đúng occurrence | - Tính lại giờ kết thúc<br>- Không đổi khung lặp chung<br>- Không ghi đè lịch khác<br>- Toast thành công |
+| Case 24: Đổi giáo viên không bị trùng lịch | High | REQ10 | Role CRUD | Giáo viên mới thuộc lớp và rảnh | **Given** chọn giáo viên mới<br>**When** Xác nhận<br>**Then** cập nhật teacher_id của lịch | - Kiểm tra lịch toàn hệ thống<br>- Thẻ hiển thị giáo viên mới<br>- Không tác động lịch khác |
+| Case 25: Chặn chỉnh sửa gây trùng lịch | High | EX02 / REQ10 | Role CRUD | Thời gian mới trùng lớp hoặc lịch giáo viên ở lớp khác | **Given** sửa field tạo khoảng giao nhau<br>**When** Xác nhận<br>**Then** cảnh báo và không lưu | - Nêu đúng giáo viên/ngày/giờ trùng<br>- Không có lựa chọn bỏ qua<br>- Giữ dữ liệu cũ ở backend |
+| Case 26: Nút Hủy chỉ đóng popup | Medium | REQ10 | Role CRUD | Có thay đổi chưa xác nhận | **Given** đã sửa field<br>**When** bấm `Hủy` ở chân popup<br>**Then** đóng form | - Không chuyển trạng thái Hủy bỏ<br>- Không sinh lịch bù<br>- Không lưu draft/Toast thành công |
+| Case 27: Đổi trạng thái từ popup | High | Flow 4–5 / REQ06–REQ07 / REQ10 | Role CRUD | Lịch đang Đang đợi | **Given** lần lượt chọn Hoàn thành và Hủy bỏ trên các lịch hợp lệ<br>**When** Xác nhận<br>**Then** chạy đúng nghiệp vụ trạng thái | - Hoàn thành: xanh lá và tính lương một lần<br>- Hủy bỏ: xám, không lương, sinh bù và cập nhật ngày kết thúc<br>- Không chỉ đổi màu ở client |
+| Case 28: Hoàn thành lịch cố định | High · Smoke | Flow 4 / REQ06 | Role CRUD | Lịch cố định hợp lệ, có giáo viên | **Given** lịch màu cam<br>**When** đánh dấu Hoàn thành<br>**Then** cập nhật trạng thái và lương | - Thẻ xanh lá<br>- Vẫn lưu nguồn Cố định<br>- Lương đúng giáo viên/lịch<br>- Một audit và Toast |
+| Case 29: Hoàn thành lịch linh hoạt | High | Flow 4 / REQ06 | Role CRUD | Lịch linh hoạt hợp lệ, có giáo viên | **Given** lịch màu xanh dương<br>**When** hoàn thành<br>**Then** xử lý như buổi hợp lệ | - Thẻ xanh lá<br>- Vẫn lưu nguồn Linh hoạt<br>- Tính lương đúng một lần |
+| Case 30: Gửi lặp hoàn thành | High | EX05 / REQ06 | Role CRUD | Lịch đã hoàn thành | **Given** request hoàn thành bị gửi lặp<br>**When** backend xử lý<br>**Then** kết quả idempotent | - Một trạng thái hoàn thành<br>- Một khoản lương<br>- Không nhân đôi Toast/audit logic |
+| Case 31: Hủy lịch cố định và sinh buổi bù | High · Smoke | Flow 5 / REQ07 | Role CRUD | Có lịch cố định tương lai và khung cố định hợp lệ | **Given** hủy một lịch màu cam<br>**When** backend commit<br>**Then** chuyển xám và sinh bù ở cuối | - Lịch hủy không tính trong N<br>- Lịch bù màu cam<br>- Tổng hợp lệ vẫn N<br>- Ngày kết thúc tăng theo buổi bù |
+| Case 32: Hủy lịch linh hoạt và sinh buổi bù cố định | High | Flow 5 / REQ07 | Role CRUD | Có lịch linh hoạt và cấu hình cố định | **Given** hủy lịch xanh dương<br>**When** commit<br>**Then** dùng khung cố định để bù ở cuối | - Lịch cũ màu xám<br>- Không tính lương<br>- Chỉ một lịch bù<br>- Giữ nguồn Linh hoạt trong audit lịch hủy |
+| Case 33: Khung bù đầu tiên bị trùng | High | EX06 / REQ07 | Role CRUD | Khung cố định kế tiếp đã có lịch trùng | **Given** cần sinh bù<br>**When** gặp thời gian trùng<br>**Then** tìm khung hợp lệ tiếp theo | - Không tạo lịch chồng<br>- Vẫn đủ N<br>- Ngày kết thúc theo lịch bù thực tế |
+| Case 34: Hủy lặp không sinh nhiều buổi bù | High | EX07 / REQ07 | Role CRUD | Lịch đã hủy và đã có compensation_schedule_id | **Given** request hủy gửi lại<br>**When** backend xử lý<br>**Then** trả trạng thái hiện tại | - Không tạo lịch bù thứ hai<br>- Không tăng ngày kết thúc thêm lần nữa<br>- Không ghi lương |
+| Case 35: Chặn hoàn thành lịch hủy hoặc sửa trực tiếp lịch hoàn thành | High | EX08 / REQ06 / REQ11 | Role CRUD | Lịch đã ở trạng thái kết thúc | **Given** gửi thao tác hoàn thành lịch đã hủy hoặc sửa field lịch hoàn thành mà chưa Mở lại<br>**When** backend kiểm tra version/trạng thái<br>**Then** từ chối | - Không đổi trạng thái<br>- Không thay lương<br>- Lịch hoàn thành phải đi qua flow Mở lại<br>- Yêu cầu tải lại dữ liệu mới nhất |
+| Case 36: Không thể sinh lịch bù | High | EX06 / REQ07 | Role CRUD | Không có khung cố định hợp lệ | **Given** yêu cầu hủy<br>**When** backend không tìm được thời gian bù<br>**Then** không commit nửa chừng | - Giữ trạng thái lịch cũ<br>- Không thay N/ngày kết thúc<br>- Báo cần bổ sung lịch cố định |
+| Case 37: Hiển thị hành động Mở lại đúng quyền | High | Flow 6 / REQ11 | Kiểm thử role CRUD và Teacher | Lịch đã Hoàn thành | **Given** mở popup thẻ lịch<br>**When** kiểm tra action<br>**Then** chỉ role CRUD thấy Mở lại | - Admin/Class Handler/Support thấy action<br>- Teacher chỉ xem<br>- Backend vẫn kiểm tra quyền |
+| Case 38: Bắt buộc lý do khi mở lại | High | REQ11 | Role CRUD | Popup Mở lại đang mở | **Given** lý do trống/chỉ khoảng trắng<br>**When** xác nhận<br>**Then** không thực hiện | - Báo lỗi đúng field<br>- Lịch vẫn Hoàn thành<br>- Lương vẫn hiệu lực |
+| Case 39: Mở lại và đảo lương thành công | High | Flow 6 / REQ11 | Role CRUD | Lịch Hoàn thành có một khoản lương hiệu lực | **Given** nhập lý do hợp lệ<br>**When** xác nhận Mở lại<br>**Then** đảo lương và đưa lịch về Đang đợi | - Không xóa khoản lương gốc<br>- Có bút toán đảo liên kết<br>- Không còn lương hiệu lực cho lịch<br>- Thẻ trở về màu nguồn<br>- Có audit/Toast |
+| Case 40: Mở lại rồi hủy lịch | High | Flow 6 → Flow 5 / REQ07 / REQ11 | Role CRUD | Lịch đã mở lại thành Đang đợi | **Given** chọn Hủy bỏ<br>**When** xác nhận<br>**Then** chạy flow hủy | - Lịch màu xám<br>- Không có lương hiệu lực<br>- Sinh đúng một lịch bù<br>- Cập nhật ngày kết thúc |
+| Case 41: Hoàn thành lại sau khi mở | High | Flow 6 → Flow 4 / REQ06 / REQ11 | Role CRUD | Lịch đã mở lại và chỉnh hợp lệ | **Given** chọn Hoàn thành lại<br>**When** xác nhận<br>**Then** tạo lần lương mới | - Một khoản lương mới hiệu lực<br>- Lương gốc và bút toán đảo vẫn có audit<br>- Không tạo hai khoản hiệu lực cùng lúc |
+| Case 42: Bảng lương đã khóa | High | EX10 / REQ11 | Role CRUD | Khoản lương thuộc kỳ đã chốt | **Given** yêu cầu Mở lại<br>**When** backend xử lý<br>**Then** tạo điều chỉnh ở kỳ cho phép hoặc từ chối nguyên tử | - Không sửa/xóa kỳ đã khóa<br>- Không đổi lịch nếu chưa xử lý được điều chỉnh<br>- Nêu rõ lý do và hướng xử lý |
+| Case 43: Gửi lặp yêu cầu Mở lại | High | EX11 / REQ11 | Role CRUD | Request đầu đã thành công hoặc đang xử lý | **Given** cùng idempotency key được gửi lại<br>**When** backend xử lý<br>**Then** trả kết quả hiện tại | - Một bút toán đảo<br>- Một audit logic<br>- Không đảo lương hai lần |
+| Case 44: Toast thành công đúng thao tác | High | Ràng buộc Toast | Role CRUD | Backend commit thành công | **Given** tạo/sửa/hoàn thành/hủy/mở lại lịch<br>**When** nhận kết quả thành công<br>**Then** hiển thị một Toast | - Nội dung đúng thao tác<br>- Không báo sớm<br>- UI đã đồng bộ dữ liệu |
+| Case 45: Toast cảnh báo trùng lịch | High | Ràng buộc Toast | Role CRUD | Lịch trùng lớp hoặc trùng lịch giáo viên ở lớp khác | **Given** xác nhận lịch không hợp lệ<br>**When** backend/validation từ chối<br>**Then** hiển thị cảnh báo và không cho tạo | - Không lưu một phần<br>- Nêu giáo viên/ngày/khung cần sửa<br>- Không có lựa chọn bỏ qua cảnh báo<br>- Không hiển thị thành công |
+| Case 46: Toast lỗi khi giao dịch thất bại | High | Ràng buộc Toast | Role CRUD | Lỗi backend/network | **Given** thao tác đã gửi<br>**When** giao dịch thất bại<br>**Then** hiển thị lỗi | - UI giữ/khôi phục trạng thái cũ<br>- Không có lương/lịch bù/bút toán đảo giả<br>- Cho phép thử lại an toàn |
 
 ---
 

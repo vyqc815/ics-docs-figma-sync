@@ -1,33 +1,43 @@
 # [Giáo viên] Chi tiết lớp — Khoá học
 
+Tài liệu đặc tả nhóm menu **Khoá học** trong Chi tiết lớp của role Giáo viên: Mindset khoá học và Hướng dẫn giảng dạy. Cả hai chỉ xem, dữ liệu do Curriculum Development Handler (CD) nhập cho khoá học gắn với lớp. UI tham chiếu: Figma `GV-LOP-080100` và `GV-LOP-090100`; nội dung trong ảnh là dữ liệu mẫu.
+
 ## 1. UI
 
-### Trang 1: GV-LOP-080100 — Chi tiết lớp / Mindset khoá học / Học viên
+### Trang 1: GV-LOP-080100 — Mindset khoá học
+![Trang 1](./images/course-mindset.png)
 
-![Trang 1](./images/gv-lop-080100.png)
+*Mindset khoá học: Danh sách mục bên phải, nội dung mục đang chọn bên trái (Figma GV-LOP-080100) — nhấn để xem ảnh gốc*
 
 **Mô tả:**
-- Giáo viên của lớp xem Mindset của khoá học gắn với lớp để nắm chân dung học viên, mục tiêu và tư duy thiết kế, dạy học của khoá. Chỉ đọc; danh sách mục ở bên phải, nội dung mục đang chọn ở bên trái.
+
+- Giáo viên của lớp xem Mindset của khoá học gắn với lớp để nắm chân dung học viên, mục tiêu và tư duy thiết kế, dạy học của khoá. Chỉ đọc.
 
 **Điểm cần lưu ý:**
-- `A01.01` `Danh Sách` (bên phải): các mục Mindset theo thứ tự CD đã lưu, ví dụ `HỌC VIÊN`, `MỤC TIÊU ĐẦU RA CỦA KHÓA HỌC`, `MINDSET THIẾT KẾ KHÓA HỌC`, `MINDSET DẠY VÀ HỌC`. Số mục và tên theo dữ liệu, không cố định 4 mục. Bấm mục để xem; mục đang chọn viền cam; mặc định chọn mục đầu tiên.
-- `A01.02` Tiêu đề bên trái: tên mục đang chọn.
-- `A01.03` Khối nội dung: mục đang chọn gồm các nhóm nội dung (ví dụ `Chân dung học viên`, `Vấn đề của học viên`, `Kỳ vọng của học viên`), mỗi nhóm có icon `⌃` thu gọn/mở, mặc định mở; nội dung là văn bản nhiều dòng giữ xuống dòng, hiển thị thuần, không thực thi HTML/script.
-- `A01.04` Nguồn: Mindset của **khoá học gắn với lớp** do CD nhập ở màn Mindset thiết kế khoá học; lớp đổi khoá học thì hiển thị theo khoá mới.
-- `A01.05` Không có dữ liệu: khoá học chưa có Mindset thì `Danh Sách` hiển thị `Chưa có dữ liệu`, vùng trái trống.
+
+- `A01.01` **`Danh Sách` (bên phải)**: Các mục Mindset của khoá học theo thứ tự CD đã lưu, ví dụ `HỌC VIÊN`, `MỤC TIÊU ĐẦU RA CỦA KHÓA HỌC`, `MINDSET THIẾT KẾ KHÓA HỌC`, `MINDSET DẠY VÀ HỌC`. Số mục và tên theo dữ liệu, không cố định 4 mục. Bấm mục để xem; mục đang chọn viền cam; mặc định chọn mục đầu tiên.
+- `A01.02` **Tiêu đề bên trái**: Tên mục đang chọn.
+- `A01.03` **Khối nội dung**: Mục đang chọn gồm các nhóm nội dung (ví dụ `Chân dung học viên`, `Vấn đề của học viên`, `Kỳ vọng của học viên`), mỗi nhóm có icon `⌃` thu gọn/mở, mặc định mở; nội dung là văn bản nhiều dòng giữ xuống dòng.
+- `A01.04` **Nguồn**: Mindset của **khoá học gắn với lớp** do CD nhập ở màn Mindset thiết kế khoá học; lớp đổi khoá học thì hiển thị theo khoá mới.
+- `A01.05` **Không có dữ liệu**: Khoá học chưa có Mindset: `Danh Sách` hiển thị `Chưa có dữ liệu`, vùng trái trống.
+
 - Không có nút thêm, sửa, xoá, kéo thả; không có file đính kèm trong UI hiện tại.
+- Văn bản hiển thị thuần, không thực thi HTML/script.
 
-### Trang 2: GV-LOP-090100 — Chi tiết lớp / Hướng dẫn giảng dạy / Trống
+### Trang 2: GV-LOP-090100 — Hướng dẫn giảng dạy
+![Trang 2](./images/teaching-guide-empty.png)
 
-![Trang 2](./images/gv-lop-090100.png)
+*Hướng dẫn giảng dạy: hiện chỉ có trạng thái trống (Figma GV-LOP-090100) — nhấn để xem ảnh gốc*
 
 **Mô tả:**
+
 - Menu `Hướng dẫn giảng dạy` hiển thị hướng dẫn giảng dạy của khoá học gắn với lớp do CD nhập, chỉ đọc. Hiện CD chưa có màn nhập nên giáo viên thấy trạng thái trống.
 
 **Điểm cần lưu ý:**
-- `A02.01` `Danh Sách`: khối bên phải; chưa có dữ liệu hiển thị hộp thư trống và `Chưa có dữ liệu`.
-- `A02.02` Vùng trái: trống khi chưa có dữ liệu.
-- `A02.03` Khi có dữ liệu: dự kiến bố cục giống Mindset khoá học (danh sách mục bên phải, nội dung bên trái); chốt khi CD có màn nhập.
+
+- `A02.01` **`Danh Sách`**: Khối bên phải; chưa có dữ liệu hiển thị hộp thư trống và `Chưa có dữ liệu`.
+- `A02.02` **Vùng trái**: Trống khi chưa có dữ liệu.
+- `A02.03` **Khi có dữ liệu**: Dự kiến bố cục giống Mindset khoá học (danh sách mục bên phải, nội dung bên trái); chốt khi CD có màn nhập.
 
 ---
 
@@ -35,9 +45,9 @@
 
 ### 2.1. Flow chính
 
-**Flow 1: Xem Mindset khoá học, Hướng dẫn giảng dạy**
+**Flow 1 / REQ01 / REQ02: Xem Mindset khoá học, Hướng dẫn giảng dạy**
 
-```
+```text
 Giáo viên vào Chi tiết lớp → Khoá học → Mindset khoá học (hoặc Hướng dẫn giảng dạy)
       → Hệ thống lấy khoá học gắn với lớp, tải nội dung CD đã nhập
       → Có dữ liệu: danh sách mục bên phải, chọn mục đầu, nội dung bên trái
@@ -68,7 +78,11 @@ Giáo viên vào Chi tiết lớp → Khoá học → Mindset khoá học (hoặ
 
 #### Ràng buộc khác
 
+**Phạm vi dữ liệu**
+
 - Chỉ Mindset / Hướng dẫn giảng dạy của khoá học gắn với lớp mà giáo viên được thêm vào; backend kiểm tra.
+
+---
 
 ---
 
@@ -78,12 +92,13 @@ Giáo viên vào Chi tiết lớp → Khoá học → Mindset khoá học (hoặ
 
 | Tên testcase | Priority | Scenario | Role | Pre-condition | Given/When/Then | Expected Result |
 |---|---|---|---|---|---|---|
-| Case 1: Xem Mindset | High | Flow 1 / REQ01 | Giáo viên | Khoá học của lớp có 4 mục Mindset | **Given:** mở Khoá học → Mindset khoá học<br>**When:** tải xong<br>**Then:** danh sách 4 mục, chọn sẵn mục đầu, nội dung nhóm mở | - Bấm mục khác đổi nội dung<br>- Không có control sửa |
-| Case 2: Thu gọn nhóm | Low | REQ01 | Giáo viên | Mục có 3 nhóm | **Given:** bấm `⌃` của một nhóm<br>**When:** thu gọn<br>**Then:** chỉ nhóm đó ẩn nội dung | - Không đổi dữ liệu |
-| Case 3: Khoá chưa có Mindset | Medium | Flow 1 / EX01 | Giáo viên | Khoá học chưa nhập Mindset | **Given:** mở menu Mindset khoá học<br>**When:** tải xong<br>**Then:** `Chưa có dữ liệu` | - Không lỗi |
-| Case 4: Đúng khoá của lớp | High | REQ01 / Ràng buộc khác | Giáo viên | Hai lớp gắn hai khoá khác nhau | **Given:** mở Mindset ở từng lớp<br>**When:** so sánh<br>**Then:** mỗi lớp hiện Mindset của khoá mình | - Không trộn dữ liệu giữa các khoá |
-| Case 5: Hướng dẫn giảng dạy trạng thái trống | Medium | Flow 1 / REQ02 / EX01 | Giáo viên | Khoá chưa có hướng dẫn giảng dạy | **Given:** mở Khoá học → Hướng dẫn giảng dạy<br>**When:** tải xong<br>**Then:** `Chưa có dữ liệu` | - Không lỗi, không control sửa |
-| Case 6: Chặn sửa nội dung | High | EX02 / Ràng buộc quyền | Giáo viên | Giáo viên của lớp | **Given:** gửi request sửa nội dung Mindset hoặc Hướng dẫn giảng dạy<br>**When:** backend xử lý<br>**Then:** từ chối | - Dữ liệu không đổi<br>- Giáo viên chỉ xem được khoá gắn với lớp mình |
+| Case 1: Xem Mindset | High · Smoke | Flow 1 / REQ01 | Giáo viên | Khoá học của lớp có 4 mục Mindset | **Given** mở Khoá học → Mindset khoá học<br>**When** tải xong<br>**Then** danh sách 4 mục, chọn sẵn mục đầu, nội dung nhóm mở | - Bấm mục khác đổi nội dung<br>- Không có control sửa |
+| Case 2: Thu gọn nhóm | Low | REQ01 | Giáo viên | Mục có 3 nhóm | **Given** bấm `⌃` của một nhóm<br>**When** thu gọn<br>**Then** chỉ nhóm đó ẩn nội dung | - Không đổi dữ liệu |
+| Case 3: Khoá chưa có Mindset | Medium | EX01 | Giáo viên | Khoá học chưa nhập Mindset | **Given** mở menu<br>**When** tải xong<br>**Then** `Chưa có dữ liệu` | - Không lỗi |
+| Case 4: Đúng khoá của lớp | High | REQ01 | Giáo viên | Hai lớp gắn hai khoá khác nhau | **Given** mở Mindset ở từng lớp<br>**When** so sánh<br>**Then** mỗi lớp hiện Mindset của khoá mình | - Không trộn |
+| Case 5: Trạng thái trống | Medium | Flow 1 / EX01 | Giáo viên | Khoá chưa có hướng dẫn giảng dạy | **Given** mở Khoá học → Hướng dẫn giảng dạy<br>**When** tải xong<br>**Then** `Chưa có dữ liệu` | - Không lỗi, không control sửa |
+
+---
 
 ---
 

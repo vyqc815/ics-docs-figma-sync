@@ -2,9 +2,8 @@
 
 ## 1. UI
 
-### Trang 1: ADM-MV-010000 — Move video / Xác minh Gmail
-
-![Trang 1](./images/adm-mv-010000.png)
+### Trang 1: Trang 1: Xác minh Gmail
+![alt text](image.png)
 
 **Mô tả:**
 - Bước xác minh tài khoản Google (có Google Drive chứa các file record) trước khi vào danh sách video. Vào từ menu **Tool > Move Video**.
@@ -14,55 +13,45 @@
 - Card tài khoản ở góc trái trên hiển thị tài khoản Gmail vừa đăng nhập (avatar, tên, email).
 - Nút **Xác Minh**: xác minh account Google và lấy file record từ Google Drive về. Xác minh thành công mới vào được Trang 2.
 
-### Trang 2: ADM-MV-020000 — Move video / Danh sách video
-
-![Trang 2](./images/adm-mv-020000.png)
+### Trang 2: Trang 2: Danh sách video
+![alt text](image-1.png)
 
 **Mô tả:**
 - Hiển thị các file record Google Meet nằm trong folder tổng `MEET RECORDINGS SS` (giáo viên dạy xong record thì file tự vào folder này). Người dùng đổi tên và di chuyển file sang folder của lớp trong drive `SCREEN RECORDING`.
 
 **Điểm cần lưu ý:**
-- Nút `Đổi tên và di chuyển`: chạy giống nút Move nhưng áp dụng cho **tất cả** file có trạng thái mã lớp màu **xanh**; bấm là move luôn, **không hiện popup**.
-- Nút `Xác minh lại`: xác minh lại tài khoản Google và lấy lại danh sách file từ Drive.
-- Filter theo **ngày tạo trên Drive** đặt cạnh nút `Xác minh lại`, chọn **1 ngày hoặc khoảng ngày**, mặc định là tất cả.
-- Cột Tên video: tên gốc dạng `DN1134 meet.google.com/ort-xvvd-ebo - 2026/09/28 19:02 GMT+07:00 – Recording`; ở folder tổng file chưa biết thuộc lớp và bài học nào. Icon **copy** (bên trái) copy tên video; icon **bút** (bên phải) mở popup Đổi tên video (Trang 3) để đổi tên file ở **folder tổng**.
-- Cột Mã lớp dạng badge màu: tìm được lớp thì hiển thị mã lớp, không tìm được thì hiển thị nhãn lỗi. Màu **xanh** là hợp lệ, sẵn sàng đổi tên và move; màu **cam / đỏ** là có lỗi; icon trong badge theo từng loại lỗi (bảng ở mục 2.3).
-- Cột Bài học: dòng xanh hiển thị **tên video đề xuất** (icon bút xanh); dòng không xanh hiển thị icon cảnh báo đỏ + thông báo lỗi. Một file dính nhiều lỗi thì hiển thị đủ các lỗi trong cột Bài học; màu badge mặc định **cam**, có lỗi loại đỏ thì badge **đỏ**.
-- Nút **Move** hiển thị ở **mọi** dòng (cả xanh và không xanh), bấm mở popup đổi tên & move (Trang 4).
-- Cột cuối: checkbox chọn nhiều để xoá; checkbox ở header chọn tất cả. Nút **Xoá** chỉ hiển thị khi đã tick ít nhất 1 dòng, nằm ở hàng tiêu đề (cùng hàng với TÊN VIDEO, MÃ LỚP, BÀI HỌC); bấm Xoá hiện popup xác nhận (Trang 5).
+- **Nút trên cùng:**
+  - `Đổi tên và di chuyển`: chạy giống nút Move nhưng áp dụng cho **tất cả** file có trạng thái mã lớp màu **xanh**. Bấm là move luôn, **không hiện popup**.
+  - `Xác minh lại`: xác minh lại tài khoản Google và lấy lại danh sách file từ Drive.
+  - **Filter theo ngày tạo trên Drive** đặt cạnh nút `Xác minh lại` (Figma chưa vẽ), cho chọn **1 ngày hoặc khoảng ngày**, mặc định là tất cả.
+- **Cột Tên video:**
+  - Tên video gốc có dạng `DN1134 meet.google.com/ort-xvvd-ebo - 2026/09/28 19:02 GMT+07:00 – Recording`. Ở folder tổng, file chưa biết thuộc lớp và bài học nào.
+  - Icon **copy** (bên trái): copy tên video.
+  - Icon **bút** (bên phải): mở popup Đổi tên video để đổi tên file ở **folder tổng**.
+- **Cột Mã lớp** dạng badge màu, tìm được lớp thì hiển thị mã lớp, không tìm được thì hiển thị nhãn lỗi. Màu **xanh** là hợp lệ, sẵn sàng đổi tên và move; màu **cam/đỏ** là có lỗi. Icon trong badge theo từng loại lỗi (xem bảng ở 2.3).
+- **Cột Bài học:**
+  - Xanh: hiển thị **tên video đề xuất** (icon bút xanh).
+  - Không xanh: icon cảnh báo đỏ + thông báo lỗi.
+  - 1 file dính nhiều lỗi thì hiển thị đủ các lỗi trong cột Bài học. Màu badge: mặc định **cam**; nếu có lỗi loại đỏ thì badge **đỏ**.
+- **Nút Move** hiển thị ở **mọi** dòng (cả xanh và không xanh), bấm mở popup Đổi tên video.
+- **Cột cuối:** checkbox chọn nhiều để xoá; checkbox ở header dùng chọn tất cả.
+- **Nút Xoá:** chỉ hiển thị khi đã tick chọn ít nhất 1 dòng, nằm ở hàng tiêu đề (cùng hàng với TÊN VIDEO, MÃ LỚP, BÀI HỌC). Bấm Xoá hiện **popup xác nhận**. Figma chưa vẽ nút và popup này.
 
-### Trang 3: ADM-MV-020010 — Move video / Danh sách video / Popup đổi tên video
-
-![Trang 3](./images/adm-mv-020010.png)
-
-**Mô tả:**
-- Popup đổi tên file ở **folder tổng**, mở từ icon bút cạnh tên video; nút `Huỷ` / `Xác nhận`.
-
-**Điểm cần lưu ý:**
-- Popup mở cho cả dòng xanh và không xanh. Ô `Tên video` điền sẵn tên đề xuất (mặc định `ngày_tên lesson`); dòng chưa có tên đề xuất thì điền sẵn tên hiện tại. **Tên rỗng thì không cho Xác nhận.**
-- Dòng ghi chú đỏ cố định: `* Vui lòng kiểm tra lại để chắc chắn bài học đã được mở`.
-- `Huỷ` đóng popup, không thay đổi gì. `Xác nhận` từ icon bút: chỉ đổi tên file ở **folder tổng**, không move.
-
-### Trang 4: ADM-MV-020030 — Move video / Danh sách video / Popup đổi tên & move video
-
-![Trang 4](./images/adm-mv-020030.png)
+### Trang 3: Trang 3: Popup Đổi tên video và xác nhận xoá
+![alt text](image-2.png)
 
 **Mô tả:**
-- Popup xác nhận / chỉnh tên file trước khi đổi tên và move sang folder của lớp, mở từ nút Move; nút `Huỷ` / `Đổi tên & move`.
+- Popup xác nhận/chỉnh tên file trước khi đổi tên và move sang folder của lớp.
+- Popup xác nhận xoá hiện khi xoá video
 
 **Điểm cần lưu ý:**
-- Dùng chung ô `Tên video` và ghi chú đỏ với Trang 3, mở cho cả dòng xanh và không xanh; tên rỗng không cho xác nhận.
-- Từ Move: đổi tên file ở **folder của lớp** rồi move.
+- Popup mở cho **cả** dòng xanh và không xanh, và dùng chung cho 2 nơi: nút **Move** (đổi tên file ở folder lớp) và icon **bút** cạnh tên video (đổi tên file ở folder tổng).
+- Ô nhập `Tên video` điền sẵn tên đề xuất của hệ thống (mặc định `ngày_tên lesson`); dòng chưa có tên đề xuất thì điền sẵn tên hiện tại. Muốn đổi thì sửa. **Tên rỗng thì không cho Xác nhận.**
+- Dòng ghi chú đỏ cố định: "* Vui lòng kiểm tra lại để chắc chắn bài học đã được mở".
+- Nút `Huỷ` đóng popup, không thay đổi gì. Nút `Xác nhận` thực hiện đổi tên và move.
+- Nút `Xác nhận` từ Move: đổi tên file ở **folder của lớp** rồi move. Từ icon bút: chỉ đổi tên file ở **folder tổng**, không move.
 
-### Trang 5: ADM-MV-020020 — Move video / Danh sách video / Popup xác nhận xoá
-
-![Trang 5](./images/adm-mv-020020.png)
-
-**Mô tả:**
-- Popup `Xác nhận xoá` hiện khi bấm Xoá các dòng đã tick, nút `Huỷ` / `Xoá`.
-
-**Điểm cần lưu ý:**
-- `Huỷ` không xoá, các dòng vẫn giữ trạng thái tick. Xoá là xoá mềm (REQ12).
+---
 
 ---
 
@@ -74,83 +63,84 @@
 
 ```
 User mở Tool > Move Video → chưa liên kết Google (lần đầu hoặc sau reload)
-  → User đăng nhập Google (giao diện đăng nhập của Google)
-  → FE hiển thị Trang 1 (card tài khoản + nút Xác Minh)
-  → User bấm Xác Minh → BE xác minh account, lấy file từ MEET RECORDINGS SS
-  → FE hiển thị Trang 2 (Danh sách video)
+→ User đăng nhập Google (giao diện đăng nhập của Google)
+→ FE hiển thị Trang 1 (card tài khoản + nút Xác Minh)
+→ User bấm Xác Minh → BE xác minh account, lấy file từ MEET RECORDINGS SS
+→ FE hiển thị Trang 2 (Danh sách video)
 ```
 
 **Flow 2: Xác định lớp, buổi học và tên đề xuất cho từng file**
 
 ```
 Tên video (chứa link cuộc họp) → tìm trong DB → class → class.id → course_id
-  → các lesson có cùng course_id, lesson mới nhất được mở → tên buổi học
-  → tên đề xuất mặc định "ngày_tên lesson"; class code = tên folder trong drive SCREEN RECORDING
+→ các lesson có cùng course_id, lesson mới nhất được mở → tên buổi học
+→ tên đề xuất mặc định "ngày_tên lesson"; class code = tên folder trong drive SCREEN RECORDING
         ↓ (nếu bước nào không thoả)
-   gán lỗi tương ứng (bảng 2.3), badge cam/đỏ và thông báo ở cột Bài học
+   gán lỗi tương ứng (bảng 2.3), hiển thị badge cam/đỏ và thông báo ở cột Bài học
         ↓ (nếu thoả toàn bộ)
    badge xanh + tên đề xuất
 ```
 
-Điều kiện: chỉ class có status **In progress** mới được sử dụng.
+> Điều kiện: chỉ class có status **In progress** mới được sử dụng.
 
 **Flow 3: Move 1 file (nút Move)**
 
 ```
-Bấm Move ở 1 dòng → popup đổi tên & move (Trang 4, điền sẵn tên đề xuất / tên hiện tại)
-  → sửa tên nếu cần → Xác nhận → FE gọi API → BE xử lý:
-       ├─ Dòng xanh: đổi tên file → move sang folder lớp → thành công
-       └─ Dòng không xanh: BE kiểm tra lại với tên đã nhập
-              ├─ Được: đổi tên, move sang folder lớp → thành công
-              └─ Không: trả lỗi tương ứng
-  → FE: thành công → toast "Đổi tên và di chuyển video thành công", cập nhật danh sách
-        thất bại → hiển thị lỗi tương ứng ngay trong danh sách (cột Bài học), giữ nguyên dòng
+User bấm Move ở 1 dòng → FE mở popup Đổi tên video (điền sẵn tên đề xuất/tên hiện tại)
+→ User sửa tên nếu cần → bấm Xác nhận → FE gọi API
+→ BE xử lý:
+     ├─ Dòng xanh: đổi tên file → move sang folder lớp → thành công
+     └─ Dòng không xanh: BE kiểm tra lại với tên đã nhập
+            ├─ Được  → đổi tên, move sang folder lớp → thành công
+            └─ Không → trả về lỗi tương ứng
+→ FE: thành công → toast "Đổi tên và di chuyển video thành công", cập nhật danh sách
+      thất bại   → hiển thị lỗi tương ứng ngay trong danh sách (cột Bài học), giữ nguyên dòng
 ```
 
 **Flow 4: Đổi tên file ở folder tổng (icon bút)**
 
 ```
-Bấm icon bút cạnh tên video → popup Đổi tên video (Trang 3) → nhập tên mới → Xác nhận
-  → BE đổi tên file ở folder tổng MEET RECORDINGS SS
-  → FE cập nhật tên video và tính lại trạng thái dòng
+User bấm icon bút cạnh tên video → FE mở popup Đổi tên video → User nhập tên mới → Xác nhận → BE đổi tên file ở folder tổng MEET RECORDINGS SS
+→ FE cập nhật tên video và tính lại trạng thái dòng
 ```
 
 **Flow 5: Đổi tên và di chuyển hàng loạt**
 
 ```
-Bấm "Đổi tên và di chuyển" (không popup) → FE gọi API cho tất cả dòng xanh (dùng tên đề xuất)
-  → BE đổi tên + move từng file → FE cập nhật danh sách
-        ↓ (có dòng xanh move thất bại)                          ↓ (tất cả dòng xanh thành công)
-  dòng đó hiển thị lỗi + toast                               toast "Đổi tên và di chuyển video thành công"
-  "Vẫn còn một số link video bị lỗi, vui lòng kiểm tra lại"
+User bấm "Đổi tên và di chuyển" (không có popup) → FE gọi API cho tất cả dòng xanh (dùng tên đề xuất)
+→ BE đổi tên + move từng file → FE cập nhật danh sách
+        ↓ (nếu có dòng xanh move thất bại)
+   dòng đó hiển thị lỗi trong danh sách + toast "Vẫn còn một số link video bị lỗi, vui lòng kiểm tra lại"
+        ↓ (nếu tất cả dòng xanh thành công)
+   toast "Đổi tên và di chuyển video thành công"
 ```
 
 **Flow 6: Xoá nhiều file (xoá mềm)**
 
 ```
-Tick checkbox (nhiều dòng hoặc chọn tất cả) → nút Xoá xuất hiện ở hàng tiêu đề → bấm Xoá
-  → popup xác nhận (Trang 5) → xác nhận (Huỷ thì không xoá)
-  → BE xoá mềm trên hệ thống + đổi tên file trên Drive thêm hậu tố _deleted_{account người xoá}
-  → FE ẩn các dòng đã xoá khỏi danh sách
+User tick checkbox (nhiều dòng hoặc chọn tất cả) → nút Xoá xuất hiện ở hàng tiêu đề → User bấm Xoá
+→ FE hiện popup xác nhận → User xác nhận (Huỷ thì không xoá)
+→ BE xoá mềm trên hệ thống + đổi tên file trên Drive thêm hậu tố _deleted_{account người xoá}
+→ FE ẩn các dòng đã xoá khỏi danh sách
 ```
 
 **Flow 7: Xác minh lại**
 
 ```
-Bấm "Xác minh lại" → BE xác minh lại tài khoản Google → lấy lại file từ Drive → FE cập nhật danh sách
+User bấm "Xác minh lại" → BE xác minh lại tài khoản Google → lấy lại file từ Drive → FE cập nhật danh sách
 ```
 
 ### 2.2. Ngoại lệ
 
-- **EX01:** Chưa xác thực tài khoản Google khi thao tác (chưa liên kết hoặc hết phiên) → hiển thị `Bạn chưa xác thực tài khoản google` (`txtNotLoggedIn`), yêu cầu xác minh lại.
+- **EX01:** Chưa xác thực tài khoản Google khi thao tác (chưa liên kết hoặc hết phiên) → hiển thị "Bạn chưa xác thực tài khoản google" (`txtNotLoggedIn`), yêu cầu xác minh lại.
 - **EX02:** Reload trang → mất liên kết Google, quay lại bước đăng nhập Google.
-- **EX03:** Move dòng không xanh mà BE kiểm tra vẫn không hợp lệ → hiển thị đúng lỗi tương ứng (bảng 2.3) trong danh sách, file không bị đổi tên / move, dòng giữ nguyên.
-- **EX04:** File không còn trong `MEET RECORDINGS SS` khi move → lỗi `Không tìm thấy file video trong drive MEET RECORDINGS SS` (`txtErrorInvalidFile`) trong danh sách.
-- **EX05:** Trùng tên file video trong `MEET RECORDINGS SS` → `Trùng tên file video trong drive MEET RECORDINGS SS` (`txtErrorDuplicateVideo`).
-- **EX06:** Trùng link meet hoặc trùng video khi move → `Trùng link meet hoặc trùng video, vui lòng kiểm tra lại` (`txtDuplicateLinkOrVideo`) trong danh sách.
-- **EX07:** Đổi tên và di chuyển hàng loạt mà có dòng xanh move thất bại → `Vẫn còn một số link video bị lỗi, vui lòng kiểm tra lại` (`txtStillSomeErrorVideo`).
-- **EX08:** Bấm Huỷ ở popup → đóng popup, không gọi API, không thay đổi gì.
-- **EX09:** Tên rỗng ở popup → nút xác nhận không cho bấm.
+- **EX03:** Move dòng không xanh mà BE kiểm tra vẫn không hợp lệ → hiển thị đúng lỗi tương ứng (bảng 2.3) trong danh sách, file không bị đổi tên/move, dòng giữ nguyên.
+- **EX04:** File không còn trong `MEET RECORDINGS SS` khi move → hiển thị lỗi "Không tìm thấy file video trong drive MEET RECORDINGS SS" (`txtErrorInvalidFile`) trong danh sách.
+- **EX05:** Trùng tên file video trong `MEET RECORDINGS SS` → "Trùng tên file video trong drive MEET RECORDINGS SS" (`txtErrorDuplicateVideo`).
+- **EX06:** Trùng link meet hoặc trùng video khi move → "Trùng link meet hoặc trùng video, vui lòng kiểm tra lại" (`txtDuplicateLinkOrVideo`) trong danh sách.
+- **EX07:** Đổi tên và di chuyển hàng loạt mà có dòng xanh move thất bại → "Vẫn còn một số link video bị lỗi, vui lòng kiểm tra lại" (`txtStillSomeErrorVideo`).
+- **EX08:** User bấm Huỷ ở popup → đóng popup, không gọi API, không thay đổi gì.
+- **EX09:** Tên rỗng ở popup → nút Xác nhận không cho bấm.
 - **EX10:** Huỷ ở popup xác nhận xoá → không xoá, các dòng vẫn giữ trạng thái tick.
 
 ### 2.3. Yêu cầu khác
@@ -163,11 +153,11 @@ Bấm "Xác minh lại" → BE xác minh lại tài khoản Google → lấy l�
 | REQ04 | Folder và tên file đích | Class code = tên folder trong drive `SCREEN RECORDING`. Tên file đích mặc định `ngày_tên lesson` do hệ thống đặt khi move; user có thể sửa ở popup. |
 | REQ05 | Phân loại trạng thái | Mỗi dòng được gán trạng thái theo bảng bên dưới; quyết định màu badge, icon và thông báo. Chỉ dùng các thông báo trong bảng này. |
 | REQ06 | Hiển thị lỗi | Mọi lỗi hiển thị ngay trong danh sách (cột Bài học), không dùng popup lỗi. |
-| REQ07 | Filter | Lọc theo **ngày tạo file trên Drive**, chọn 1 ngày hoặc khoảng ngày, đặt cạnh nút Xác minh lại, mặc định là tất cả. |
-| REQ08 | Popup Đổi tên video | Dùng cho cả dòng xanh và không xanh; tên rỗng không cho xác nhận. |
-| REQ09 | Đổi tên hai nơi | Cả icon bút và nút Move đều mở popup đổi tên. Icon bút: đổi tên file ở folder tổng. Move: đổi tên file ở folder của lớp rồi move. |
+| REQ07 | Filter | Lọc theo **ngày tạo file trên Drive**, cho chọn 1 ngày hoặc khoảng ngày, đặt cạnh nút Xác minh lại, mặc định là tất cả. |
+| REQ08 | Popup Đổi tên video | Dùng cho cả dòng xanh và không xanh; tên rỗng không cho Xác nhận. |
+| REQ09 | Đổi tên hai nơi | Cả icon bút và nút Move đều mở popup Đổi tên video. Icon bút: đổi tên file ở folder tổng. Move: đổi tên file ở folder của lớp rồi move. |
 | REQ10 | Copy tên video | Icon copy bên trái tên video copy tên video. |
-| REQ11 | Đổi tên và di chuyển hàng loạt | Chỉ áp dụng cho các dòng xanh; không xử lý dòng cam / đỏ. Bấm là move luôn, không popup. |
+| REQ11 | Đổi tên và di chuyển hàng loạt | Chỉ áp dụng cho các dòng xanh; không xử lý dòng cam/đỏ. Bấm là move luôn, không popup. |
 | REQ12 | Xoá mềm | Bấm Xoá hiện popup xác nhận. Dòng đã xoá không hiển thị trong danh sách nữa. Trên Drive, tên file được thêm hậu tố `_deleted_{account người xoá}` (ví dụ `..._deleted_dacnham`). |
 | REQ13 | Sau khi move thành công | File không còn trong folder tổng nên dòng biến mất khỏi danh sách. |
 | REQ14 | Xác minh lại | Nút `Xác minh lại` lấy lại danh sách file mới nhất từ Drive. |
@@ -175,7 +165,7 @@ Bấm "Xác minh lại" → BE xác minh lại tài khoản Google → lấy l�
 
 **Bảng lỗi hiển thị trong danh sách:**
 
-| Nhãn / badge | Màu | Icon | Thông báo cột Bài học | Hằng số |
+| Nhãn/badge | Màu | Icon | Thông báo cột Bài học | Hằng số |
 |---|---|---|---|---|
 | Mã lớp (hợp lệ) | Xanh | - | Tên video đề xuất | - |
 | Không thấy link | Đỏ | Link gạch chéo | Không tìm thấy Link Google Meet trên Database | `txtErrorNotFoundLinkGGMeetOnDB` |
@@ -215,26 +205,23 @@ Bấm "Xác minh lại" → BE xác minh lại tài khoản Google → lấy l�
 
 ---
 
+---
+
 ## 3. Testcase
 
 ### Feature: Move Video
 
 | Tên testcase | Priority | Scenario | Role | Pre-condition | Given/When/Then | Expected Result |
 |---|---|---|---|---|---|---|
-| Case 1: Đăng nhập Google và xác minh | High | Flow 1 / EX02 | CD | Chưa liên kết Google | **Given:** mở Tool > Move Video<br>**When:** đăng nhập Google, bấm Xác Minh; sau đó reload trang<br>**Then:** xem màn hình | - Sau đăng nhập hiển thị Trang 1 với card tài khoản và nút Xác Minh<br>- Xác minh thành công thì vào Trang 2, danh sách lấy từ MEET RECORDINGS SS<br>- Reload thì mất liên kết, quay lại đăng nhập Google |
-| Case 2: Hiển thị và phân loại danh sách | High | Flow 2 / REQ02 / REQ03 / REQ05 | CD | Folder tổng có file: link khớp lớp In progress hợp lệ; link không có trên DB; lớp không có folder; link trùng giữa các lớp; nhiều buổi trong cùng khoảng thời gian | **Given:** đã xác minh Google<br>**When:** vào Trang 2<br>**Then:** xem cột Mã lớp và Bài học từng dòng | - Dòng hợp lệ: badge xanh, hiển thị tên đề xuất<br>- Các dòng còn lại: badge đúng màu / icon và đúng thông báo theo bảng 2.3<br>- Lớp không In progress không được dùng để xác định lớp |
-| Case 3: Filter theo ngày tạo | Medium | REQ07 | CD | Folder tổng có file tạo ở nhiều ngày | **Given:** đang ở Trang 2 (mặc định tất cả)<br>**When:** chọn 1 ngày; sau đó chọn khoảng ngày; sau đó bỏ filter<br>**Then:** xem danh sách | - Chọn 1 ngày hoặc khoảng ngày: chỉ hiển thị file có ngày tạo trên Drive khớp<br>- Bỏ filter thì hiển thị tất cả |
-| Case 4: Move dòng xanh, huỷ popup, tên rỗng | High | Flow 3 / EX08 / EX09 / REQ08 | CD | Có dòng xanh (ví dụ DN411-III) | **Given:** dòng xanh<br>**When:** (a) bấm Move, bấm Huỷ; (b) bấm Move, xoá trống tên; (c) bấm Move, giữ hoặc sửa tên, xác nhận<br>**Then:** xem popup, danh sách và folder lớp trên Drive | - Popup điền sẵn tên đề xuất `ngày_tên lesson`<br>- (a) không gọi API, dòng giữ nguyên<br>- (b) không xác nhận được<br>- (c) file đổi tên theo tên trong popup, nằm trong folder DN411-III của SCREEN RECORDING, toast `Đổi tên và di chuyển video thành công`, dòng biến mất |
-| Case 5: Move dòng không xanh thành công | High | Flow 3 / REQ13 | CD | Có dòng cam "Tìm thấy quá nhiều buổi học..." xác định được lớp | **Given:** dòng cam<br>**When:** bấm Move, nhập tên hợp lệ, xác nhận<br>**Then:** xem kết quả | - Popup điền sẵn tên hiện tại của file<br>- BE kiểm tra lại đạt, file đổi tên và move sang folder lớp<br>- Toast thành công, dòng biến mất |
-| Case 6: Move bị lỗi | High | EX03 / EX04 / EX05 / EX06 / REQ06 | CD | Có các dòng: Không thấy link, Không thấy folder, Không thấy ID, Không thấy lớp trong thời gian cho phép, Trùng tên file, Trùng link giữa các lớp; 1 file đã bị move khỏi folder tổng nhưng chưa refresh | **Given:** từng dòng lỗi<br>**When:** bấm Move, nhập tên, xác nhận<br>**Then:** xem danh sách | - Đúng thông báo lỗi của từng dòng theo bảng 2.3, ngay trong danh sách (không popup lỗi)<br>- File đã khỏi folder tổng: `Không tìm thấy file video trong drive MEET RECORDINGS SS`<br>- Trùng link hoặc video: `Trùng link meet hoặc trùng video, vui lòng kiểm tra lại`<br>- Không file nào bị move, dòng giữ nguyên<br>- Dòng dính nhiều lỗi: hiển thị đủ các lỗi, badge cam, có lỗi loại đỏ thì badge đỏ (REQ15) |
-| Case 7: Icon bút và icon copy | Medium | Flow 4 / REQ09 / REQ10 | CD | Có ít nhất 1 dòng | **Given:** đang ở Trang 2<br>**When:** bấm icon copy; bấm icon bút, nhập tên mới, xác nhận<br>**Then:** xem kết quả | - Icon copy: copy tên video vào clipboard<br>- Icon bút: hiện popup đổi tên; xác nhận thì file ở folder tổng MEET RECORDINGS SS được đổi tên, tên video và trạng thái dòng cập nhật; tên rỗng không xác nhận được<br>- Không di chuyển file |
-| Case 8: Đổi tên và di chuyển hàng loạt | High | Flow 5 / EX07 / REQ11 | CD | Danh sách có 3 dòng xanh và 2 dòng không xanh | **Given:** đang ở Trang 2<br>**When:** bấm "Đổi tên và di chuyển"<br>**Then:** xem danh sách và thông báo | - Không hiện popup, move luôn<br>- Chỉ 3 dòng xanh được đổi tên và move, 2 dòng không xanh không bị ảnh hưởng<br>- Tất cả dòng xanh thành công: `Đổi tên và di chuyển video thành công`<br>- Có dòng xanh thất bại: dòng đó hiển thị lỗi trong danh sách và toast `Vẫn còn một số link video bị lỗi, vui lòng kiểm tra lại` |
-| Case 9: Xoá mềm nhiều file | High | Flow 6 / EX10 / REQ12 | CD | Danh sách có nhiều dòng | **Given:** chưa tick dòng nào<br>**When:** tick 2 dòng (kiểm tra nút Xoá), tick checkbox header, bấm Xoá rồi Huỷ; bấm Xoá lần nữa rồi xác nhận<br>**Then:** xem danh sách và Drive | - Nút Xoá chỉ hiển thị khi có dòng được tick, nằm ở hàng tiêu đề<br>- Tick header chọn tất cả dòng<br>- Bấm Xoá hiện popup xác nhận; Huỷ thì không xoá gì, dòng vẫn tick<br>- Sau khi xác nhận, dòng đã xoá không hiện trong danh sách nữa<br>- Trên Drive, tên file có hậu tố `_deleted_{account người xoá}`, file vẫn còn |
-| Case 10: Xác minh lại và hết phiên Google | High | Flow 7 / EX01 / REQ14 | CD | Đã vào Trang 2; folder tổng vừa có file mới | **Given:** đang ở Trang 2<br>**When:** (a) bấm Xác minh lại; (b) phiên Google hết hạn rồi bấm Move<br>**Then:** xem kết quả | - (a) danh sách cập nhật gồm file mới<br>- (b) hiển thị `Bạn chưa xác thực tài khoản google`, yêu cầu xác minh lại |
-| Case 11: Role khác bị chặn | High | Ràng buộc quyền | Các role khác | Đã đăng nhập, không phải CD | **Given:** user không phải CD<br>**When:** mở Tool > Move Video hoặc gọi trực tiếp API move / xoá<br>**Then:** hệ thống từ chối | - Không truy cập được màn hình, không move, không xoá<br>- Dữ liệu và file Drive không đổi |
+| Case 1: Đăng nhập Google và xác minh | High · Smoke | Flow 1, EX02 | CD | Chưa liên kết Google | **Given:** Mở Tool > Move Video<br>**When:** Đăng nhập Google, bấm Xác Minh; sau đó reload trang<br>**Then:** Xem màn hình | - Sau đăng nhập hiển thị Trang 1 với card tài khoản và nút Xác Minh<br>- Xác minh thành công thì vào Trang 2, danh sách lấy từ MEET RECORDINGS SS<br>- Reload thì mất liên kết, quay lại đăng nhập Google |
+| Case 2: Hiển thị và phân loại danh sách | High · Smoke | Flow 2, REQ02, REQ03, REQ05 | CD | Folder tổng có file: link khớp lớp In progress hợp lệ; link không có trên DB; lớp không có folder; link trùng giữa các lớp; nhiều buổi trong cùng khoảng thời gian | **Given:** Đã xác minh Google<br>**When:** Vào Trang 2<br>**Then:** Xem cột Mã lớp và Bài học từng dòng | - Dòng hợp lệ: badge xanh, hiển thị tên đề xuất<br>- Các dòng còn lại: badge đúng màu/icon và đúng thông báo theo bảng 2.3<br>- Lớp không In progress không được dùng để xác định lớp |
+| Case 3: Filter theo ngày tạo | Medium | REQ07 | CD | Folder tổng có file tạo ở nhiều ngày | **Given:** Đang ở Trang 2 (mặc định tất cả)<br>**When:** Chọn 1 ngày; sau đó chọn khoảng ngày; sau đó bỏ filter<br>**Then:** Xem danh sách | - Chọn 1 ngày hoặc khoảng ngày: chỉ hiển thị file có ngày tạo trên Drive khớp<br>- Bỏ filter thì hiển thị tất cả |
+| Case 4: Move dòng xanh, huỷ popup, tên rỗng | High | Flow 3, EX08, EX09, REQ08 | CD | Có dòng xanh (ví dụ DN411-III) | **Given:** Dòng xanh<br>**When:** (a) Bấm Move, bấm Huỷ; (b) Bấm Move, xoá trống tên; (c) Bấm Move, giữ hoặc sửa tên, bấm Xác nhận<br>**Then:** Xem popup, danh sách và folder lớp trên Drive | - Popup điền sẵn tên đề xuất `ngày_tên lesson`<br>- (a) Không gọi API, dòng giữ nguyên<br>- (b) Không bấm Xác nhận được<br>- (c) File được đổi tên theo tên trong popup, nằm trong folder DN411-III của SCREEN RECORDING, toast "Đổi tên và di chuyển video thành công", dòng biến mất |
+| Case 5: Move dòng không xanh thành công | High · Smoke | Flow 3 | CD | Có dòng cam "Tìm thấy quá nhiều buổi học..." xác định được lớp | **Given:** Dòng cam<br>**When:** Bấm Move, nhập tên hợp lệ, bấm Xác nhận<br>**Then:** Xem kết quả | - Popup điền sẵn tên hiện tại của file<br>- BE kiểm tra lại đạt, file đổi tên và move sang folder lớp<br>- Toast thành công, dòng biến mất |
+| Case 6: Move bị lỗi | High | EX03, EX04, EX05, EX06, REQ06 | CD | Có các dòng: Không thấy link, Không thấy folder, Không thấy ID, Không thấy lớp trong thời gian cho phép, Trùng tên file, Trùng link giữa các lớp; 1 file đã bị move khỏi folder tổng nhưng chưa refresh | **Given:** Từng dòng lỗi<br>**When:** Bấm Move, nhập tên, bấm Xác nhận<br>**Then:** Xem danh sách | - Hiển thị đúng thông báo lỗi của từng dòng theo bảng 2.3, ngay trong danh sách (không popup lỗi)<br>- File chưa move khỏi folder tổng: "Không tìm thấy file video trong drive MEET RECORDINGS SS"<br>- Trùng link hoặc video: "Trùng link meet hoặc trùng video, vui lòng kiểm tra lại"<br>- Không file nào bị move, dòng giữ nguyên<br>- Dòng dính nhiều lỗi: hiển thị đủ các lỗi, badge cam, có lỗi loại đỏ thì badge đỏ |
+| Case 7: Icon bút và icon copy | Medium | Flow 4, REQ09, REQ10 | CD | Có ít nhất 1 dòng | **Given:** Đang ở Trang 2<br>**When:** Bấm icon copy; bấm icon bút, nhập tên mới, Xác nhận<br>**Then:** Xem kết quả | - Icon copy: copy tên video vào clipboard<br>- Icon bút: hiện popup Đổi tên video; Xác nhận thì file ở folder tổng MEET RECORDINGS SS được đổi tên, tên video và trạng thái dòng cập nhật; tên rỗng không Xác nhận được<br>- Không di chuyển file |
+| Case 8: Đổi tên và di chuyển hàng loạt | High | Flow 5, EX07, REQ11 | CD | Danh sách có 3 dòng xanh và 2 dòng không xanh | **Given:** Đang ở Trang 2<br>**When:** Bấm "Đổi tên và di chuyển"<br>**Then:** Xem danh sách và thông báo | - Không hiện popup, move luôn<br>- Chỉ 3 dòng xanh được đổi tên và move, 2 dòng không xanh không bị ảnh hưởng<br>- Tất cả dòng xanh thành công: "Đổi tên và di chuyển video thành công"<br>- Có dòng xanh thất bại: dòng đó hiển thị lỗi trong danh sách và toast "Vẫn còn một số link video bị lỗi, vui lòng kiểm tra lại" |
+| Case 9: Xoá mềm nhiều file | High | Flow 6, REQ12 | CD | Danh sách có nhiều dòng | **Given:** Chưa tick dòng nào<br>**When:** Tick 2 dòng (kiểm tra nút Xoá), tick checkbox header, bấm Xoá, sau đó Huỷ; bấm Xoá lần nữa rồi xác nhận<br>**Then:** Xem danh sách và Drive | - Nút Xoá chỉ hiển thị khi có dòng được tick, nằm ở hàng tiêu đề<br>- Tick header chọn tất cả dòng<br>- Bấm Xoá hiện popup xác nhận; Huỷ thì không xoá gì<br>- Sau khi xác nhận, các dòng đã xoá không hiện trong danh sách nữa<br>- Trên Drive, tên file có hậu tố `_deleted_{account người xoá}`, file vẫn còn |
+| Case 10: Xác minh lại và hết phiên Google | High | Flow 7, EX01, REQ14 | CD | Đã vào Trang 2; folder tổng vừa có file mới | **Given:** Đang ở Trang 2<br>**When:** (a) Bấm Xác minh lại; (b) Phiên Google hết hạn rồi bấm Move<br>**Then:** Xem kết quả | - (a) Danh sách cập nhật gồm file mới<br>- (b) Hiển thị "Bạn chưa xác thực tài khoản google", yêu cầu xác minh lại |
 
----
-
-## 4. Câu hỏi cần xác nhận
-
-- **Q01:** Cột checkbox chọn nhiều và nút `Xoá` ở hàng tiêu đề (hiện khi tick dòng) chưa thấy trên frame danh sách video `ADM-MV-020000`; cần bổ sung thiết kế.
+### Feature: Move Video

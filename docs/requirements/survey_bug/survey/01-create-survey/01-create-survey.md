@@ -2,12 +2,13 @@
 
 ## 1. UI
 
-### Trang 1: ADM-KS-010000 — Khảo sát / Tạo khảo sát / Tạo cuộc khảo sát
+### Trang 1: Trang 1: Tạo khảo sát — tab Giáo viên / Lớp
+![alt text](image.png)
 
-![Trang 1](./images/adm-ks-010000.png)
+![Trang 1](image-1.png)
 
 **Mô tả:**
-- Admin tạo khảo sát và soạn câu hỏi, tab `Giáo viên`. Panel phải: danh sách khảo sát theo tab đối tượng (Giáo viên / Lớp / Học viên). Panel giữa: soạn câu hỏi cho khảo sát đang chọn.
+- Admin tạo khảo sát và soạn câu hỏi. Panel phải: danh sách khảo sát theo tab đối tượng (Giáo viên / Lớp / Học viên). Panel giữa: soạn câu hỏi cho khảo sát đang chọn.
 
 **Điểm cần lưu ý:**
 - Tab **Giáo viên** và **Lớp** giống hệt nhau, chỉ khác danh sách. Khảo sát tạo ở tab nào chỉ giao được cho đối tượng của tab đó.
@@ -20,32 +21,36 @@
 - Khảo sát **Công khai / Vô hiệu**: panel giữa và card chỉ xem — ẩn nút "Lưu", ô "Thêm câu hỏi mới", icon nhân bản / xoá câu, kéo thả; hiện thông báo "Khảo sát không thể sửa. Nhân bản để tạo bản mới." "Xem trước" vẫn dùng được.
 - Câu hỏi đang focus: viền cam + icon kéo thả để đổi thứ tự. "Câu N" tự đánh lại số sau khi kéo thả / xoá / nhân bản.
 - Dropdown loại câu hỏi: **Trắc nghiệm** (chọn 1), **Hộp kiểm** (chọn nhiều), **Đoạn ngắn**, **Đánh giá**.
-  - Trắc nghiệm / Hộp kiểm: dòng cuối "Nhập câu trả lời" là dòng thêm mới — gõ vào thì thành đáp án và sinh dòng trống mới bên dưới. (X) xoá đáp án. `Enter` ở một đáp án → focus dòng kế tiếp.
+  - Trắc nghiệm / Hộp kiểm: dòng cuối "Nhập câu trả lời" là dòng thêm mới — gõ vào thì thành đáp án và sinh dòng trống mới bên dưới. (X) xoá đáp án. `Enter` ở 1 đáp án → focus dòng kế tiếp.
   - Đoạn ngắn: chỉ hiển thị ô "Câu trả lời ngắn" disable (minh hoạ).
   - Đánh giá: cố định 5 sao, không click được (minh hoạ).
   - Đổi Trắc nghiệm ↔ Hộp kiểm: giữ đáp án. Đổi sang Đoạn ngắn / Đánh giá: bỏ đáp án.
 - Icon nhân bản ở câu hỏi: chèn bản sao ngay dưới câu hiện tại. Icon thùng rác: xoá câu (chỉ mất hẳn khi bấm Lưu).
 - Ô **"Thêm câu hỏi mới"**: `Enter` hoặc (+) → thêm câu cuối danh sách, loại mặc định Trắc nghiệm, nội dung = text đã nhập (ô trống thì thêm câu rỗng), focus vào câu mới.
-- Nút **"Lưu"**: lưu toàn bộ câu hỏi của khảo sát đang chọn trong một lần gọi API.
-- Popup **Xem trước khảo sát** (nút "Xem trước"): xem khảo sát đúng như người làm nhìn thấy; dùng dữ liệu đang soạn trên màn hình (kể cả chưa lưu); chỉ xem, không chọn / nhập được; không hiển thị dòng đáp án trống. "Quay lại chỉnh sửa" → đóng popup. "Lưu khảo sát" → giống nút Lưu (có validate), lưu thành công thì đóng popup; khảo sát không phải Nháp → ẩn "Lưu khảo sát".
+- Nút **"Lưu"**: lưu toàn bộ câu hỏi của khảo sát đang chọn trong 1 lần gọi API.
 
-### Trang 2: ADM-KS-020000 — Khảo sát / Tạo khảo sát cho lớp / Tạo cuộc khảo sát
-
-![Trang 2](./images/adm-ks-020000.png)
+### Trang 2: Trang 2: Tạo khảo sát — tab Học viên
+![alt text](image-2.png)
 
 **Mô tả:**
-- Tab `Lớp`: giống hệt tab Giáo viên (Trang 1), chỉ khác danh sách khảo sát ở panel phải (khảo sát dành cho lớp); khảo sát tạo ở tab này chỉ giao được cho đối tượng Lớp.
-
-### Trang 3: ADM-KS-030000 — Khảo sát / Tạo khảo sát học viên / Tạo cuộc khảo sát
-
-![Trang 3](./images/adm-ks-030000.png)
-
-**Mô tả:**
-- Tab `Học viên`: giống tab Giáo viên, thêm **loại khảo sát** cho từng khảo sát.
+- Giống tab Giáo viên, thêm **loại khảo sát** cho từng khảo sát.
 
 **Điểm cần lưu ý:**
 - Mỗi card có dropdown loại: **Bắt buộc** (tag đỏ) / **Tuỳ chọn** (tag xanh). Tạo nhanh mặc định là Tuỳ chọn. Đổi loại → lưu ngay; chỉ đổi được khi khảo sát Nháp.
 - Loại khảo sát quyết định popup chọn người nhận khi giao (xem [02-assign-survey.md](./02-assign-survey.md)).
+
+### Trang 3: Popup: Xem trước khảo sát
+![alt text](image-3.png)
+
+**Mô tả:**
+- Xem khảo sát đúng như người làm nhìn thấy.
+
+**Điểm cần lưu ý:**
+- Dùng dữ liệu đang soạn trên màn hình (kể cả chưa lưu).
+- Chỉ xem, không chọn / nhập được. Không hiển thị dòng đáp án trống.
+- "Quay lại chỉnh sửa" → đóng popup. "Lưu khảo sát" → giống nút Lưu (có validate), lưu thành công thì đóng popup; khảo sát không phải Nháp → ẩn "Lưu khảo sát".
+
+---
 
 ---
 
@@ -57,17 +62,18 @@
 
 ```
 Chọn tab (GV / Lớp / HV) → nhập tên ở "Thêm cuộc khảo sát" → Enter / (+)
-  → API tạo khảo sát (đối tượng = tab, trạng thái = Nháp; tab HV: loại = Tuỳ chọn)
-  → thêm card cuối danh sách → tự chọn card → panel giữa trống, focus "Thêm câu hỏi mới"
+→ API tạo khảo sát (đối tượng = tab, trạng thái = Nháp; tab HV: loại = Tuỳ chọn)
+→ thêm card cuối danh sách → tự chọn card → panel giữa trống, focus "Thêm câu hỏi mới"
 ```
 
-**Flow 2: Soạn câu hỏi và lưu** *(chỉ khảo sát Nháp)*
+**Flow 2: Soạn câu hỏi & lưu** *(chỉ khảo sát Nháp)*
 
 ```
 Chọn card → API lấy câu hỏi → thêm / sửa / xoá / nhân bản / kéo thả câu hỏi
-  → bấm "Lưu" (hoặc "Lưu khảo sát" trong Xem trước) → FE validate
+→ bấm "Lưu" (hoặc "Lưu khảo sát" trong Xem trước) → FE validate
       ├─ (lỗi) → báo lỗi dưới từng câu lỗi → scroll tới câu lỗi đầu tiên
-      └─ (hợp lệ) → API lưu toàn bộ câu hỏi (thứ tự, loại, nội dung, bắt buộc, đáp án) → toast "Lưu thành công"
+      └─ (hợp lệ) → API lưu toàn bộ câu hỏi (thứ tự, loại, nội dung, bắt buộc, đáp án)
+                  → toast "Lưu thành công"
 ```
 
 **Flow 3: Đổi trạng thái khảo sát**
@@ -84,8 +90,8 @@ Chọn trạng thái ở tag dropdown trên card
 
 ```
 Bấm icon nhân bản trên card → API tạo khảo sát mới cùng tab:
-  tên "{tên cũ} (bản sao)", copy mô tả, loại (HV), toàn bộ câu hỏi; trạng thái = Nháp
-  → card mới ở cuối danh sách, được chọn → sửa như khảo sát Nháp
+tên "{tên cũ} (bản sao)", copy mô tả, loại (HV), toàn bộ câu hỏi; trạng thái = Nháp
+→ card mới ở cuối danh sách, được chọn → sửa như khảo sát Nháp
 ```
 
 **Flow 5: Sắp xếp / xoá khảo sát**
@@ -139,19 +145,23 @@ Bấm thùng rác trên card → popup xác nhận → API xoá mềm → bỏ c
 
 ---
 
+---
+
 ## 3. Testcase
 
-### Feature: Tạo khảo sát
+### Feature: Tạo khảo sát (Admin)
 
 | Tên testcase | Priority | Scenario | Role | Pre-condition | Given/When/Then | Expected Result |
 |---|---|---|---|---|---|---|
-| Case 1: Tạo nhanh khảo sát và empty state | High | Flow 1 / REQ04 | Admin | Ở trang Tạo khảo sát; tab chưa có khảo sát | **Given:** tab Giáo viên, sau đó tab Học viên<br>**When:** nhập tên rồi `Enter` (lần 2 bấm +); bấm `Enter` khi ô trống<br>**Then:** kiểm tra danh sách | - Card mới ở cuối list, trạng thái "Nháp", được chọn, ô nhập xoá trắng<br>- Tab HV: card có tag "Tuỳ chọn"<br>- Ô trống: không tạo<br>- Tab chưa có khảo sát / chưa chọn: panel giữa hiện hướng dẫn |
-| Case 2: Soạn và lưu đủ 4 loại câu hỏi | High | Flow 2 / REQ03 / REQ05 | Admin | Khảo sát Nháp, chưa có câu hỏi | **Given:** khảo sát trống<br>**When:** thêm Trắc nghiệm (2 đáp án, bắt buộc), Hộp kiểm (2 đáp án), Đoạn ngắn, Đánh giá → Lưu<br>**Then:** F5 trang | - Toast lưu thành công<br>- Sau F5 đúng thứ tự, loại, đáp án, cờ bắt buộc<br>- Đánh giá cố định 5 sao; đáp án gắn A, B, C… theo thứ tự khi hiển thị |
-| Case 3: Nhập đáp án, đổi loại, nhân bản, kéo thả, xoá câu | Medium | Flow 2 / REQ01 / REQ02 | Admin | Khảo sát Nháp có 3 câu, có câu Trắc nghiệm 1 đáp án | **Given:** câu Trắc nghiệm và câu 1, 2, 3<br>**When:** gõ vào dòng "Nhập câu trả lời"; bấm (X) một đáp án; đổi sang Hộp kiểm rồi Đoạn ngắn; nhân bản câu 1; kéo câu cuối lên đầu; xoá một câu; Lưu<br>**Then:** F5 trang | - Gõ → thành đáp án mới, sinh dòng trống mới; (X) xoá đáp án; dòng trống không lưu<br>- Hộp kiểm giữ đáp án; Đoạn ngắn bỏ đáp án, hiện ô "Câu trả lời ngắn" disable<br>- Bản sao nằm ngay dưới câu gốc; "Câu N" đánh số liên tục từ 1<br>- Sau F5 đúng thứ tự; dữ liệu được trim |
-| Case 4: Validate khi lưu | High | EX02 / REQ01 | Admin | Khảo sát Nháp | **Given:** một câu trống nội dung (hoặc chỉ khoảng trắng), một câu Hộp kiểm không có đáp án<br>**When:** bấm Lưu<br>**Then:** kiểm tra màn hình | - Không gọi API lưu<br>- 2 câu báo lỗi ngay dưới câu, scroll tới câu lỗi đầu tiên |
-| Case 5: Rời khi chưa lưu | High | EX01 | Admin | Có thay đổi chưa lưu | **Given:** đã sửa câu hỏi, chưa Lưu<br>**When:** chọn khảo sát khác / đổi tab / đổi menu; chọn "Bỏ thay đổi"<br>**Then:** kiểm tra dữ liệu | - Hiện popup "Bạn có thay đổi chưa lưu" (Lưu / Bỏ thay đổi / Huỷ)<br>- Bỏ thay đổi → dữ liệu về bản đã lưu |
-| Case 6: Xem trước | Medium | Flow 2 / REQ02 / REQ07 | Admin | Có câu chưa lưu; khảo sát Công khai | **Given:** có câu mới chưa lưu, có dòng đáp án trống<br>**When:** bấm "Xem trước" → "Lưu khảo sát"; mở Xem trước ở khảo sát Công khai<br>**Then:** kiểm tra popup | - Hiển thị cả câu chưa lưu, không hiện dòng trống, không chọn được<br>- "Lưu khảo sát" lưu như nút Lưu và đóng popup; khảo sát không phải Nháp thì ẩn "Lưu khảo sát"<br>- Hiển thị câu hỏi giống màn Làm khảo sát |
-| Case 7: Đổi trạng thái khảo sát | High | Flow 3 / EX03 | Admin | KS A Nháp có câu hỏi, KS B Nháp chưa có câu hỏi; KS C đang có thay đổi chưa lưu | **Given:** 3 khảo sát trên<br>**When:** chuyển B → Công khai; chuyển C → Công khai; chuyển A → Công khai → Vô hiệu → Công khai<br>**Then:** kiểm tra trang Tạo và dropdown ở trang Giao | - B: bị chặn, toast "Khảo sát chưa có câu hỏi"; C: yêu cầu lưu trước<br>- A Công khai: có popup xác nhận, panel chỉ xem với thông báo "Khảo sát không thể sửa. Nhân bản để tạo bản mới.", dropdown không còn "Nháp"<br>- A Vô hiệu: vẫn chỉ xem, ẩn khỏi dropdown trang Giao; Công khai lại thì hiện |
-| Case 8: Nhân bản, xoá và khảo sát đã giao | High | Flow 4 / Flow 5 / REQ06 | Admin | KS A Công khai đã thêm vào trang Giao | **Given:** đang chọn KS A<br>**When:** nhân bản A; sửa bản sao → Lưu; kéo thả đổi thứ tự card; xoá A<br>**Then:** kiểm tra trang Tạo và trang Giao | - Bản sao "A (bản sao)" Nháp, đủ câu hỏi, sửa được, không ảnh hưởng A<br>- Kéo thả lưu thứ tự mới<br>- Xoá A có popup xác nhận, A biến mất ở trang Tạo (xoá mềm), card đầu tiên / empty state được chọn<br>- Trang Giao: A vẫn còn, làm và xem kết quả bình thường |
-| Case 9: Tab Học viên và đổi tên khảo sát | Medium | Flow 1 / EX04 | Admin | Tab Học viên có KS Nháp và KS Công khai | **Given:** KS Nháp trên tab Học viên<br>**When:** đổi loại Bắt buộc ↔ Tuỳ chọn; xoá hết tên trên card rồi blur; thử đổi loại ở KS Công khai<br>**Then:** kiểm tra card | - Loại đổi lưu ngay (Bắt buộc tag đỏ, Tuỳ chọn tag xanh), chỉ đổi được khi Nháp<br>- Tên trống khi blur: khôi phục tên cũ<br>- Tab Giáo viên / Lớp không có loại khảo sát |
-| Case 10: Quyền truy cập | High | Ràng buộc quyền | Giáo viên, Học viên | Đăng nhập GV hoặc HV | **Given:** tài khoản GV hoặc HV<br>**When:** truy cập URL trang Tạo khảo sát<br>**Then:** kiểm tra | - Không thấy menu<br>- Truy cập URL bị chặn / chuyển trang |
+| Case 1: Tạo nhanh khảo sát | High | Flow 1 | Admin | Ở trang Tạo khảo sát | **Given:** Tab Giáo viên, sau đó tab Học viên<br>**When:** Nhập tên rồi `Enter` (lần 2 bấm +); bấm `Enter` khi ô trống<br>**Then:** Kiểm tra danh sách | - Card mới ở cuối list, trạng thái "Nháp", được chọn, ô nhập xoá trắng<br>- Tab HV: card có tag "Tuỳ chọn"<br>- Ô trống: không tạo |
+| Case 2: Soạn & lưu đủ 4 loại câu hỏi | High | Flow 2 | Admin | Khảo sát Nháp, chưa có câu hỏi | **Given:** Khảo sát trống<br>**When:** Thêm Trắc nghiệm (2 đáp án, bắt buộc), Hộp kiểm (2 đáp án), Đoạn ngắn, Đánh giá → Lưu<br>**Then:** F5 trang | - Toast lưu thành công<br>- Sau F5 đúng thứ tự, loại, đáp án, cờ bắt buộc |
+| Case 3: Nhập đáp án & đổi loại câu | Medium | UI | Admin | Có câu Trắc nghiệm 1 đáp án | **Given:** Câu Trắc nghiệm<br>**When:** Gõ vào dòng "Nhập câu trả lời"; bấm (X) 1 đáp án; đổi sang Hộp kiểm rồi Đoạn ngắn<br>**Then:** Kiểm tra câu hỏi | - Gõ → thành đáp án mới, sinh dòng trống mới; (X) xoá đáp án<br>- Hộp kiểm giữ đáp án; Đoạn ngắn bỏ đáp án, hiện ô "Câu trả lời ngắn" disable |
+| Case 4: Nhân bản, kéo thả, xoá câu | Medium | UI | Admin | Khảo sát Nháp có 3 câu | **Given:** Câu 1, 2, 3<br>**When:** Nhân bản câu 1; kéo câu cuối lên đầu; xoá 1 câu; Lưu<br>**Then:** F5 trang | - Bản sao nằm ngay dưới câu gốc<br>- "Câu N" đánh số liên tục từ 1<br>- Sau F5 đúng thứ tự |
+| Case 5: Validate khi lưu | High | EX02 | Admin | Khảo sát Nháp | **Given:** 1 câu trống nội dung, 1 câu Hộp kiểm không có đáp án<br>**When:** Bấm Lưu<br>**Then:** Kiểm tra màn hình | - Không gọi API lưu<br>- 2 câu báo lỗi, scroll tới câu lỗi đầu tiên |
+| Case 6: Rời khi chưa lưu | High | EX01 | Admin | Có thay đổi chưa lưu | **Given:** Đã sửa câu hỏi, chưa Lưu<br>**When:** Chọn khảo sát khác / đổi tab / đổi menu<br>**Then:** Chọn "Bỏ thay đổi" | - Hiện popup xác nhận<br>- Bỏ thay đổi → dữ liệu về bản đã lưu |
+| Case 7: Xem trước | Medium | UI | Admin | Có câu chưa lưu | **Given:** Có câu mới chưa lưu, có dòng đáp án trống<br>**When:** Bấm "Xem trước" → "Lưu khảo sát"<br>**Then:** Kiểm tra popup | - Hiển thị cả câu chưa lưu, không hiện dòng trống, không chọn được<br>- "Lưu khảo sát" lưu như nút Lưu và đóng popup |
+| Case 8: Đổi trạng thái khảo sát | High | Flow 3, EX03 | Admin | KS A Nháp có câu hỏi, KS B Nháp chưa có câu hỏi | **Given:** 2 khảo sát trên<br>**When:** Chuyển B → Công khai; chuyển A → Công khai → Vô hiệu → Công khai<br>**Then:** Kiểm tra trang Tạo & dropdown ở trang Giao | - B: bị chặn, toast<br>- A Công khai: có popup xác nhận, panel chỉ xem, dropdown không còn "Nháp"<br>- A Vô hiệu: vẫn chỉ xem, ẩn khỏi dropdown trang Giao; Công khai lại thì hiện |
+| Case 9: Nhân bản & xoá khảo sát | High | Flow 4, Flow 5, REQ06 | Admin | KS A Công khai đã thêm vào trang Giao | **Given:** Đang chọn KS A<br>**When:** Nhân bản A; sửa bản sao → Lưu; xoá A<br>**Then:** Kiểm tra trang Tạo & trang Giao | - Bản sao "A (bản sao)" Nháp, đủ câu hỏi, sửa được, không ảnh hưởng A<br>- Xoá A có popup xác nhận, A biến mất ở trang Tạo<br>- Trang Giao: A vẫn còn, làm & xem kết quả bình thường |
+| Case 10: Quyền truy cập | High | Ràng buộc quyền | Giáo viên | Đăng nhập GV | **Given:** Tài khoản GV<br>**When:** Truy cập URL trang Tạo khảo sát<br>**Then:** Kiểm tra | - Không thấy menu<br>- Truy cập URL bị chặn / chuyển trang |
+
+### Feature: Tạo khảo sát
