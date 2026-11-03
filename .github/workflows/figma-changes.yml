@@ -1,18 +1,22 @@
 # Báo màn Figma đã đổi vào Google Chat.
-# Quét mỗi 30 phút từ 7h đến 19h giờ Việt Nam (thứ 2–7), hoặc bấm tay. Không dùng webhook Figma (cần gói trả phí).
-# Figma chưa sửa thì dừng sau 1 request (~1 phút Actions); 30 phút giữ tổng dưới 2.000 phút miễn phí/tháng cùng deploy.
+# Quét mỗi giờ từ 7h đến 19h giờ Việt Nam (thứ 2–7), hoặc bấm tay. Không dùng webhook Figma (cần gói trả phí).
+# Figma chưa sửa thì dừng sau 1 request (~1 phút Actions). Gần chạm 1.800 phút/tháng thì chỉ quét 4 giờ/lần và báo Chat.
 # Mốc so sánh giữ trong cache của Actions; cache mất thì lượt sau chỉ lưu mốc mới, không báo.
 name: Figma changes
 
 on:
   schedule:
-    - cron: "*/30 0-12 * * 1-6"
+    - cron: "0 0-12 * * 1-6"
   workflow_dispatch:
     inputs:
       test:
         description: "Chỉ gửi một tin thử vào Google Chat"
         type: boolean
         default: false
+
+permissions:
+  contents: read
+  actions: read
 
 concurrency:
   group: figma-changes
@@ -33,7 +37,32 @@ jobs:
         with:
           node-version: 22
 
+      # Gần chạm quota miễn phí: chỉ quét lúc 7h, 11h, 15h, 19h và nhắc vào Chat lúc 7h.
+      - name: Actions minutes
+        id: quota
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/figma/actions-minutes.mjs
+          hour=$(date -u +%H)
+          if grep -q "tight=true" "$GITHUB_OUTPUT" && [ "${{ github.event_name }}" = "schedule" ] && [ $((10#$hour % 4)) != 0 ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Warn about quota
+        if: steps.quota.outputs.tight == 'true' && github.event_name == 'schedule' && steps.quota.outputs.skip != 'true'
+        env:
+          GOOGLE_CHAT_WEBHOOK_URL: ${{ secrets.GOOGLE_CHAT_WEBHOOK_URL }}
+        run: |
+          [ "$(date -u +%H)" = "00" ] || exit 0
+          node -e '
+            const u = new URL(process.env.GOOGLE_CHAT_WEBHOOK_URL);
+            u.searchParams.set("threadKey", "figma-ICS"); u.searchParams.set("messageReplyOption", "REPLY_MESSAGE_FALLBACK_TO_NEW_THREAD");
+            fetch(u, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text:
+              "*[ICS] Sắp hết phút GitHub Actions miễn phí tháng này* (~${{ steps.quota.outputs.minutes }} phút). Báo Figma giãn còn 4 giờ/lần tới đầu tháng." }) });'
+
       - name: Restore snapshot
+        if: steps.quota.outputs.skip != 'true'
         uses: actions/cache/restore@v4
         with:
           path: .figma/pages/snapshot.json
@@ -41,6 +70,7 @@ jobs:
           restore-keys: figma-snapshot-
 
       - name: Compare and notify
+        if: steps.quota.outputs.skip != 'true'
         id: notify
         env:
           FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}

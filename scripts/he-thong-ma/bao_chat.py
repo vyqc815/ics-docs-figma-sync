@@ -15,7 +15,7 @@ kind = sys.argv[1]
 if kind == "ok":
     body = open(sys.argv[2], encoding="utf-8").read().strip()
     text = (f"*[{project}] Requirement đã cập nhật từ bản gốc QC*\n{body}\n"
-            f"Web QC Hub (/hub) hiện bản mới sau khi deploy xong (version {os.environ.get('QC_VERSION', '?')}).")
+            f"Web QC Hub (/hub) có bản mới ở lượt deploy kế tiếp (9h, 13h hoặc 17h) (version {os.environ.get('QC_VERSION', '?')}).")
 elif kind == "khong-doi":
     text = f"*[{project}] Bản gốc QC vừa sửa*, kết quả sau khi chuyển không khác bản đang có, không cần cập nhật."
 else:

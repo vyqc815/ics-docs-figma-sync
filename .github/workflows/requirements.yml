@@ -1,6 +1,7 @@
 # QC sửa bản gốc ở qc/requirements (GitHub web: sửa file .md, hoặc "Add file → Upload files" cho ảnh)
-# → chuyển template, gắn mã, dựng registry (cap_nhat_requirement.py) → commit → deploy demo → báo Google Chat.
-# Web QC đọc bản đã gắn mã qua /api/qc. Kiểm thiếu nội dung thì dừng, giữ bản cũ và báo lỗi.
+# → chuyển template, gắn mã, dựng registry (cap_nhat_requirement.py) → commit → báo Google Chat.
+# Lên Hub ở lượt deploy gộp kế tiếp (9h, 13h, 17h; deploy.yml), để giữ phút Actions miễn phí.
+# Web QC Hub (/hub) đọc bản đã gắn mã. Kiểm thiếu nội dung thì dừng, giữ bản cũ và báo lỗi.
 name: Requirement QC
 
 on:
@@ -67,9 +68,3 @@ jobs:
       - name: Fail when stopped
         if: steps.run.outputs.ok != 'true'
         run: exit 1
-
-  deploy:
-    needs: update
-    if: needs.update.outputs.changed == 'true'
-    uses: ./.github/workflows/deploy.yml
-    secrets: inherit

@@ -1,22 +1,48 @@
 # Deploy demo lên Vercel từ GitHub: build trên máy GitHub (máy build gói Hobby của Vercel thiếu RAM) rồi đẩy bản đã build.
-# Chạy khi push lên main, khi requirement QC vừa cập nhật (requirements.yml gọi), hoặc bấm tay.
+# Gộp deploy 3 lượt/ngày (9h, 13h, 17h giờ VN, thứ 2–7) để giữ phút Actions miễn phí: lượt nào main không có
+# commit mới từ lần deploy thành công trước thì bỏ qua (~1 phút). Cần gấp thì bấm "Run workflow".
 # Cần secret VERCEL_TOKEN (vercel.com → Account Settings → Tokens).
 name: Deploy demo
 
 on:
-  push:
-    branches: [main]
-    paths-ignore: ["qc/**", ".figma/**", ".github/workflows/figma-changes.yml", ".github/workflows/requirements.yml"]
+  schedule:
+    - cron: "0 2,6,10 * * 1-6"
   workflow_call:
   workflow_dispatch:
 
-# Queue, never cancel: a push and requirements.yml can both ask for a deploy; a cancelled run kills the other's build.
+permissions:
+  contents: read
+  actions: read
+
+# Queue, never cancel: a cancelled run kills the other's build.
 concurrency:
   group: deploy
   cancel-in-progress: false
 
 jobs:
+  news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      deploy: ${{ steps.check.outputs.deploy }}
+    steps:
+      - name: Anything new since the last deploy?
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          last=$(gh run list -R "$GITHUB_REPOSITORY" -w "Deploy demo" -s success -L 1 --json headSha -q '.[0].headSha')
+          head=$(gh api "repos/$GITHUB_REPOSITORY/commits/main" -q .sha)
+          echo "lần deploy trước: $last · main: $head"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$last" = "$head" ]; then
+            echo "Không có gì mới, bỏ qua."; echo "deploy=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          fi
+
   deploy:
+    needs: news
+    if: needs.news.outputs.deploy == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
@@ -44,7 +70,7 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          ref: main # requirements.yml vừa commit lên main
+          ref: main # requirements.yml có thể vừa commit lên main
 
       - uses: actions/setup-node@v4
         with:
@@ -52,6 +78,14 @@ jobs:
           cache: npm
 
       - run: npm ci
+
+      # Next keeps compiled pages in .next/cache: a rebuild only redoes what changed (~20 → ~6–8 minutes).
+      - name: Restore build cache
+        uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: next-${{ hashFiles('package-lock.json') }}-${{ github.sha }}
+          restore-keys: next-${{ hashFiles('package-lock.json') }}-
 
       - name: Build
         run: |
