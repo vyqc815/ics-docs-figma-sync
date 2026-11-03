@@ -1,11 +1,12 @@
 # Báo màn Figma đã đổi vào Google Chat.
-# Chạy lúc 7h, 11h, 15h, 19h giờ Việt Nam (thứ 2–7), hoặc bấm tay.
+# Quét mỗi 30 phút từ 7h đến 19h giờ Việt Nam (thứ 2–7), hoặc bấm tay. Không dùng webhook Figma (cần gói trả phí).
+# Figma chưa sửa thì dừng sau 1 request (~1 phút Actions); 30 phút giữ tổng dưới 2.000 phút miễn phí/tháng cùng deploy.
 # Mốc so sánh giữ trong cache của Actions; cache mất thì lượt sau chỉ lưu mốc mới, không báo.
 name: Figma changes
 
 on:
   schedule:
-    - cron: "0 0,4,8,12 * * 1-6"
+    - cron: "*/30 0-12 * * 1-6"
   workflow_dispatch:
     inputs:
       test:

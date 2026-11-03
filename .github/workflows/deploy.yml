@@ -6,7 +6,7 @@ name: Deploy demo
 on:
   push:
     branches: [main]
-    paths-ignore: ["qc/**", ".figma/**"]
+    paths-ignore: ["qc/**", ".figma/**", ".github/workflows/figma-changes.yml", ".github/workflows/requirements.yml"]
   workflow_call:
   workflow_dispatch:
 
