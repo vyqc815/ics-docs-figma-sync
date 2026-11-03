@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Code2, FileText, MonitorPlay, PenTool } from "lucide-react";
+import { Code2, PenTool } from "lucide-react";
 
 import { KindTag, LiveShot, PageHead, Panel, PriorityTag, StatusTag, TabBar, Tag } from "@/components/qc/ui";
 import { builtPage, clusterOfFile, clustersOf, figmaUrl, frames, registry, requirementPages, reserved } from "@/lib/qc/data";
@@ -31,9 +31,9 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
   const views = [
     { key: "figma", label: "Figma", href: `${base}figma` },
     ...(demo ? [{ key: "demo", label: "Demo thật", href: `${base}demo` }] : []),
-    ...(built ? [{ key: "code", label: "Code", href: `${base}code` }, { key: "spec", label: "Spec MD", href: `${base}spec` }] : []),
+    ...(built ? [{ key: "spec", label: "Spec MD", href: `${base}spec` }] : []),
   ];
-  const frameSrc = xem === "demo" ? demo : xem === "code" ? built?.code : xem === "spec" ? built?.spec : undefined;
+  const view = xem === "demo" && demo ? "demo" : xem === "spec" && built ? "spec" : "figma";
 
   return (
     <>
@@ -49,40 +49,34 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
       </PageHead>
       <Panel className="mb-6">
         <div className="mb-4">
-          <TabBar tabs={views} active={frameSrc ? xem : "figma"} />
+          <TabBar tabs={views} active={view} />
         </div>
-        {frameSrc ? (
-          <iframe src={frameSrc} title={`${code} · ${xem}`} className="h-[78vh] min-h-[560px] w-full rounded-xl border border-(--hub-line) bg-white" />
-        ) : (
-          <LiveShot code={code} className="min-h-[260px]" live />
+        {view === "figma" && <LiveShot code={code} className="min-h-[260px]" live />}
+        {view === "demo" && demo && (
+          <>
+            <iframe src={demo} title={`${code} · demo`} className="h-[78vh] min-h-[560px] w-full rounded-xl border border-(--hub-line) bg-white" />
+          </>
         )}
-        <div className="mt-4 flex flex-wrap gap-2 text-sm">
-            {demo && (
-              <a href={demo} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 hover:text-(--hub-accent)">
-                <MonitorPlay className="size-4" /> Mở demo
-              </a>
-            )}
-            {frame && (
-              <a href={figmaUrl(frame.id)} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 hover:text-(--hub-accent)">
-                <PenTool className="size-4" /> Mở Figma
-              </a>
-            )}
-            {built && (
-              <>
-                <a href={built.code} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 hover:text-(--hub-accent)">
+        {view === "spec" && built && (
+          <iframe src={`${built.spec}?embed=1`} title={`${code} · spec`} className="h-[78vh] min-h-[560px] w-full rounded-xl border border-(--hub-line) bg-white" />
+        )}
+        {(frame || built) && (
+          <details className="group mt-3">
+            <summary className="flex list-none items-center gap-2 text-sm [&::-webkit-details-marker]:hidden">
+              {frame && (
+                <a href={figmaUrl(frame.id)} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 hover:text-(--hub-accent)">
+                  <PenTool className="size-4" /> Mở Figma ↗
+                </a>
+              )}
+              {built && (
+                <span className="flex cursor-pointer items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 select-none hover:text-(--hub-accent) group-open:text-(--hub-accent)">
                   <Code2 className="size-4" /> Xem code
-                </a>
-                <a href={built.spec} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 hover:text-(--hub-accent)">
-                  <FileText className="size-4" /> Spec
-                </a>
-              </>
-            )}
-            {frame?.parent && frame.parent !== code && (
-              <Link href={`/hub/man/${frame.parent}`} className="rounded-xl bg-(--hub-panel-2) px-3 py-2 text-(--hub-muted) hover:text-(--hub-accent)">
-                Màn cha: <span className="font-mono">{frame.parent}</span>
-              </Link>
-            )}
-        </div>
+                </span>
+              )}
+            </summary>
+            {built && <iframe src={`${built.code}?embed=1`} title={`${code} · code`} loading="lazy" className="mt-3 h-[70vh] w-full rounded-xl bg-white" />}
+          </details>
+        )}
       </Panel>
 
       <div className="grid gap-6 xl:grid-cols-2">

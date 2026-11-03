@@ -7,20 +7,20 @@ import { figmaSource, markdownHtml, pageByName } from "@/lib/figma-source";
 
 export const dynamic = "force-dynamic";
 
-type Props = { params: Promise<{ name: string }> };
+type Props = { params: Promise<{ name: string }>; searchParams: Promise<{ embed?: string }> };
 
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => ({
   title: `${(await params).name.toUpperCase()} · Spec MD`,
 });
 
 /** A screen's page Markdown, rendered. */
-const SpecPage = async ({ params }: Props): Promise<React.JSX.Element> => {
+const SpecPage = async ({ params, searchParams }: Props): Promise<React.JSX.Element> => {
   const page = pageByName((await params).name);
   if (!page) notFound();
   const src = figmaSource(page);
 
   return (
-    <ViewerShell page={page} active="spec" hasCode={src.files.length > 0}>
+    <ViewerShell page={page} active="spec" hasCode={src.files.length > 0} embed={(await searchParams).embed === "1"}>
       {src.doc ? (
         <>
           <div className="fv-bar">

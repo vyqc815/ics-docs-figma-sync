@@ -36,20 +36,26 @@ const STYLES = `
 .fv-md a { color:var(--tag); }
 `;
 
-/** Header shared by a screen's spec and code views: name, route, tabs and the live demo. */
+/**
+ * Header shared by a screen's spec and code views: name, route, tabs and the live demo.
+ * `embed` (?embed=1, inside the QC hub) shows the content only: the hub has its own tabs.
+ */
 export const ViewerShell = ({
   page,
   active,
   hasCode,
+  embed = false,
   children,
 }: {
   page: FigmaPage;
   active: "spec" | "code";
   hasCode: boolean;
+  embed?: boolean;
   children: React.ReactNode;
 }): React.JSX.Element => (
   <div className="fv">
     <style>{STYLES}</style>
+    {!embed && (
     <header className="fv-head">
       <div className="fv-wrap">
         <div className="fv-top">
@@ -79,6 +85,7 @@ export const ViewerShell = ({
         </nav>
       </div>
     </header>
+    )}
     <main className="fv-wrap">{children}</main>
   </div>
 );

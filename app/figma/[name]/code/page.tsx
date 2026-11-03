@@ -8,7 +8,7 @@ import { figmaSource, highlightTsx, pageByName } from "@/lib/figma-source";
 
 export const dynamic = "force-dynamic";
 
-type Props = { params: Promise<{ name: string }>; searchParams: Promise<{ file?: string }> };
+type Props = { params: Promise<{ name: string }>; searchParams: Promise<{ file?: string; embed?: string }> };
 
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => ({
   title: `${(await params).name.toUpperCase()} · Code`,
@@ -22,18 +22,18 @@ const CodePage = async ({ params, searchParams }: Props): Promise<React.JSX.Elem
   const page = pageByName((await params).name);
   if (!page) notFound();
   const src = figmaSource(page);
-  const wanted = (await searchParams).file;
+  const { file: wanted, embed } = await searchParams;
   const file = src.files.find((f) => label(f.path) === wanted) ?? src.files[0];
 
   return (
-    <ViewerShell page={page} active="code" hasCode={src.files.length > 0}>
+    <ViewerShell page={page} active="code" hasCode={src.files.length > 0} embed={embed === "1"}>
       {file ? (
         <>
           <nav className="fv-files">
             {src.files.map((f) => (
               <Link
                 key={f.path}
-                href={`/figma/${page.name}/code?file=${encodeURIComponent(label(f.path))}`}
+                href={`/figma/${page.name}/code?file=${encodeURIComponent(label(f.path))}${embed === "1" ? "&embed=1" : ""}`}
                 className="fv-chip"
                 aria-current={f === file ? "page" : undefined}
               >

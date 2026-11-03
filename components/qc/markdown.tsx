@@ -7,8 +7,9 @@ import { FigmaShot } from "@/components/qc/figma-shot";
 const QC_SHOT = "qc-shot:";
 
 /**
- * On a page that has a live Figma image, the screenshots QC attached are only shown as a link: the live
- * image is the current design, the screenshot may be old. Display only; the requirement file is unchanged.
+ * On a page that has a live Figma image, the screenshots QC attached are hidden: the live image is the
+ * current design, a screenshot may be old. Pages with no screen code keep QC's screenshot (nothing to
+ * replace it with). Display only; the requirement file is unchanged.
  */
 function preferFigma(text: string): string {
   return text
@@ -39,12 +40,8 @@ export function RequirementMarkdown({ file, text }: { file: string; text: string
           },
           img: ({ src, alt }) => {
             const url = typeof src === "string" ? src : undefined;
-            if (alt?.startsWith(QC_SHOT))
-              return (
-                <a href={url} target="_blank" rel="noreferrer" className="hub-qc-shot">
-                  Ảnh QC chụp{alt.length > QC_SHOT.length ? ` · ${alt.slice(QC_SHOT.length)}` : ""} ↗
-                </a>
-              );
+            // the page has the live Figma image: QC's screenshot is not shown at all
+            if (alt?.startsWith(QC_SHOT)) return null;
             const code = url?.match(/\/api\/figma-frame\/([A-Z0-9-]+)\.png$/)?.[1];
             if (code) return <FigmaShot code={code} live liveBase={url?.split("/api/")[0] ?? ""} className="my-2.5" />;
             // eslint-disable-next-line @next/next/no-img-element
