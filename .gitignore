@@ -13,6 +13,7 @@ next-env.d.ts
 # keep only what the fidelity check of pages with code needs.
 .figma/pages/*/page-spec.json
 .figma/pages/*/assets/
+.figma/pages/snapshot.json
 !.figma/pages/thu-vien-kien-thuc/page-spec.json
 
 # figma-page check: screenshots and diffs are rebuilt on every check.

@@ -1,0 +1,71 @@
+# Báo màn Figma đã đổi vào Google Chat.
+# Chạy lúc 7h, 11h, 15h, 19h giờ Việt Nam (thứ 2–7), hoặc bấm tay.
+# Mốc so sánh giữ trong cache của Actions; cache mất thì lượt sau chỉ lưu mốc mới, không báo.
+name: Figma changes
+
+on:
+  schedule:
+    - cron: "0 0,4,8,12 * * 1-6"
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "Chỉ gửi một tin thử vào Google Chat"
+        type: boolean
+        default: false
+
+concurrency:
+  group: figma-changes
+  cancel-in-progress: false
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            figma.pages.json
+            scripts/figma
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Restore snapshot
+        uses: actions/cache/restore@v4
+        with:
+          path: .figma/pages/snapshot.json
+          key: figma-snapshot-${{ github.run_id }}
+          restore-keys: figma-snapshot-
+
+      - name: Compare and notify
+        id: notify
+        env:
+          FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+          GOOGLE_CHAT_WEBHOOK_URL: ${{ secrets.GOOGLE_CHAT_WEBHOOK_URL }}
+          FIGMA_PROJECT: ICS
+          CHAT_TEST: ${{ inputs.test == true }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set +e
+          node scripts/figma/notify-changes.mjs
+          code=$?
+          # 3 = có màn đổi và đã báo; không phải lỗi.
+          if [ "$code" = 3 ]; then echo "changed=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          exit $code
+
+      - name: Save snapshot
+        if: hashFiles('.figma/pages/snapshot.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .figma/pages/snapshot.json
+          key: figma-snapshot-${{ github.run_id }}
+
+      - name: Keep full report
+        if: steps.notify.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: figma-changes
+          path: figma-changes.md
+          retention-days: 30
