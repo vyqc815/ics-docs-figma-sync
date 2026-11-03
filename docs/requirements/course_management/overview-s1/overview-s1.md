@@ -2,7 +2,10 @@
 
 ## 1. UI
 
-### Trang 1: Tổng quan (S1)
+### Trang 1: CD-KH-020100 — Tổng quan (S1)
+
+![Figma mới nhất · CD-KH-020100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-020100.png)
+
 ![alt text](image.png)
 
 **Mô tả:**
@@ -17,7 +20,10 @@
 
 ---
 
-### Trang 2: Khu vực: Bảng "Nội dung buổi học"
+### Trang 2: CD-KH-020100 — Khu vực: Bảng "Nội dung buổi học"
+
+![Figma mới nhất · CD-KH-020100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-020100.png)
+
 **Mô tả:**
 - Liệt kê toàn bộ nội dung cần dạy đã được định nghĩa, mỗi dòng là 1 nội dung với thông tin phân bổ số buổi và thời gian tương ứng.
 
@@ -38,7 +44,10 @@
 
 ---
 
-### Trang 3: Khu vực: Thêm nội dung buổi học mới
+### Trang 3: CD-KH-020100 — Khu vực: Thêm nội dung buổi học mới
+
+![Figma mới nhất · CD-KH-020100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-020100.png)
+
 **Mô tả:**
 - Cho phép CD tạo nhanh một nội dung buổi học mới chỉ với thao tác nhập tên và nhấn Enter.
 
@@ -48,7 +57,10 @@
 
 ---
 
-### Trang 4: Toast phản hồi CRUD
+### Trang 4: CD-KH-020100 — Toast phản hồi CRUD
+
+![Figma mới nhất · CD-KH-020100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-020100.png)
+
 ![Trang 4](../../images/01-toast-crud.png)
 
 *Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc*

@@ -4,7 +4,10 @@ Requirement này chỉ đặc tả màn danh sách. Các chức năng liên quan
 
 ## 1. UI
 
-### Trang 1: Màn hình Danh sách lớp
+### Trang 1: ADM-LOP-010000 — Màn hình Danh sách lớp
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 ![Trang 1](./images/01-class-list-main.png)
 
 *Danh sách lớp và nhóm cột bên trái — nhấn để xem ảnh gốc*
@@ -35,7 +38,10 @@ Requirement này chỉ đặc tả màn danh sách. Các chức năng liên quan
 - Mỗi trang hiển thị tối đa 50 lớp.
 - Danh sách có bộ lọc `Trung tâm` nằm cùng hàng với các bộ lọc khác, cho chọn một hoặc nhiều trung tâm; khi chọn thì danh sách, tổng số và phân trang chỉ tính dữ liệu của các trung tâm đã chọn, kết hợp `AND` với các bộ lọc khác. Không chọn thì hiển thị dữ liệu của mọi trung tâm. Role Admin không dùng ô chọn trung tâm trên header.
 
-### Trang 2: Thẻ thống kê tổng quan
+### Trang 2: ADM-LOP-010000 — Thẻ thống kê tổng quan
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 **Mô tả:**
 
 - Tám thẻ tổng quan phản ánh toàn bộ tập lớp thuộc phạm vi người dùng và đang thỏa các bộ lọc hiện tại.
@@ -102,7 +108,10 @@ Requirement này chỉ đặc tả màn danh sách. Các chức năng liên quan
 
 Trong các testcase bên dưới, bộ lọc trả về đúng 2 lớp A và B, trừ khi testcase nêu thêm lớp khác. Dữ liệu của lớp ngoài bộ lọc và các khoản chưa đủ điều kiện tính phải bị bỏ qua.
 
-### Trang 3: Trạng thái lớp
+### Trang 3: ADM-LOP-010000 — Trạng thái lớp
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 **Mô tả:**
 
 - Trạng thái lớp cho biết giai đoạn vận hành hiện tại của từng lớp trên danh sách.
@@ -123,7 +132,10 @@ Trong các testcase bên dưới, bộ lọc trả về đúng 2 lớp A và B, 
 - Trạng thái phải có nội dung nhận biết được ngoài màu sắc để hỗ trợ tooltip/accessibility.
 - `Hủy` và `Xóa` là hai trạng thái khác nhau, không được dùng chung giá trị nghiệp vụ chỉ vì đều có icon dấu X.
 
-### Trang 4: Thông tin hiển thị trên mỗi lớp
+### Trang 4: ADM-LOP-010000 — Thông tin hiển thị trên mỗi lớp
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 **Mô tả:**
 
 - Mỗi hàng tổng hợp thông tin nhận diện, vận hành, kết quả học tập, tài chính, lịch và người phụ trách của đúng một lớp.
@@ -170,7 +182,10 @@ Trong các testcase bên dưới, bộ lọc trả về đúng 2 lớp A và B, 
 - Hover đúng ô `Ghi chú SP` hoặc `Ghi chú Sale` hiển thị popover toàn bộ nội dung của chính lớp và đúng loại ghi chú.
 - Rời chuột/focus đóng popover; danh sách không cho nhập hoặc sửa ghi chú trực tiếp.
 
-### Trang 5: Bộ lọc và Tag học viên
+### Trang 5: ADM-LOP-010000 — Bộ lọc và Tag học viên
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 **Mô tả:**
 
 - Khu vực bộ lọc dùng để thu hẹp đồng thời danh sách lớp và toàn bộ thẻ thống kê tổng quan.
@@ -219,7 +234,10 @@ Trong các testcase bên dưới, bộ lọc trả về đúng 2 lớp A và B, 
 - Thay đổi bất kỳ filter hoặc toán tử AND/OR đưa danh sách về trang đầu và tính lại toàn bộ thẻ thống kê.
 - Chuyển trang giữ nguyên filter, toán tử Tag HV và vị trí lựa chọn.
 
-### Trang 6: Menu thao tác tại Mã lớp
+### Trang 6: ADM-LOP-010000 — Menu thao tác tại Mã lớp
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 ![Trang 6](./images/03-class-code-actions.png)
 
 *Click Mã lớp để mở menu Thêm tag và Thêm lịch hẹn — nhấn để xem ảnh gốc*
@@ -263,7 +281,10 @@ Trong các testcase bên dưới, bộ lọc trả về đúng 2 lớp A và B, 
 - Chỉ hiển thị tag và nhóm tag từ dữ liệu define trong phạm vi hiện tại.
 - Không tạo quan hệ tag trùng và không cho role `Sale` vượt quyền bằng request trực tiếp.
 
-### Trang 8: Popup Thêm lịch hẹn cho lớp
+### Trang 8: ADM-LOP-010050 — Popup Thêm lịch hẹn cho lớp
+
+![Figma mới nhất · ADM-LOP-010050](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010050.png)
+
 ![Trang 8](./images/05-add-class-appointment.png)
 
 *Cấu trúc popup Thêm Lịch Hẹn tham khảo; lịch hẹn được gắn với lớp đang chọn — nhấn để xem ảnh gốc*
@@ -295,7 +316,10 @@ Trong các testcase bên dưới, bộ lọc trả về đúng 2 lớp A và B, 
 - `Xác Nhận` phải chống gửi lặp. Mọi thao tác tạo/cập nhật lịch hẹn thành công hoặc thất bại có đúng một notification kết quả.
 - Xóa lịch hẹn được đặc tả ở [menu Lịch Hẹn](../../appointment_requirement/appointment_requirements.md#nut-xoa-va-popup-xac-nhan-lich-hen); không dùng trạng thái `Đã xoá`.
 
-### Trang 9: Toast phản hồi CRUD
+### Trang 9: ADM-LOP-010000 — Toast phản hồi CRUD
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 ![Trang 9](../../images/01-toast-crud.png)
 
 *Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc*

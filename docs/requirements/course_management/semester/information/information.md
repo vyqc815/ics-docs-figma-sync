@@ -2,7 +2,10 @@
 
 ## 1. UI
 
-### Trang 1: Trang 1.1: Danh sách kỳ (bên phải)
+### Trang 1: CD-KH-030100 — Trang 1.1: Danh sách kỳ (bên phải)
+
+![Figma mới nhất · CD-KH-030100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030100.png)
+
 ![alt text](image.png)
 
 **Mô tả:**
@@ -17,7 +20,10 @@
 - **Rule đổi trạng thái** (như Danh mục): `Nháp → Công khai/Vô hiệu` (một chiều); `Công khai ↔ Vô hiệu` (hai chiều); **không về `Nháp`**. Figma dropdown đang hiện cả 3 lựa chọn, **hành vi đúng**: học kỳ `Công khai`/`Vô hiệu` ẩn `Nháp`; học kỳ `Nháp` hiện đủ 3 (`Nháp` là mục đang chọn). Không cần vẽ lại Figma.
 - Menu "⋮": **Nhân bản**, **Xoá** (xoá mềm, có popup xác nhận). **Chỉ học kỳ `Nháp` có `Xoá`**; học kỳ `Công khai` / `Vô hiệu` không có `Xoá` (muốn ngừng dùng thì để/chuyển `Vô hiệu`). Học kỳ `Nháp` **chỉ xoá được khi chưa được sử dụng**; đang được sử dụng thì chỉ được chuyển sang `Vô hiệu` (xem REQ01, Flow 4). `Nhân bản` có ở mọi trạng thái học kỳ (khi khoá học `Nháp`). Ô "Thêm mới" ở cuối danh sách là điểm thêm học kỳ duy nhất.
 
-### Trang 2: Trang 1.2: Tab Thông tin (bên trái)
+### Trang 2: CD-KH-030100 — Trang 1.2: Tab Thông tin (bên trái)
+
+![Figma mới nhất · CD-KH-030100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030100.png)
+
 **Quyền sửa theo trạng thái (quan trọng, xem REQ05):**
 - Điều kiện chung: khoá học phải đang `Nháp`. Khoá học `Công khai` / `Vô hiệu` → toàn bộ học kỳ chỉ đọc, kể cả Tên / Mô tả học kỳ (`course_management.md` REQ10).
 - **Học kỳ `Nháp`:** sửa được toàn bộ tab Thông tin (gồm Tổng ôn, ID học kỳ), tab Bài Học, tab Kiểm Tra (kể cả bộ câu hỏi).
@@ -39,7 +45,12 @@
 
 **Tổng ôn:** nút "+ Thêm kỳ" chọn học kỳ từ **cùng khoá và khoá khác**; không chọn chính học kỳ đang xem, không chọn trùng, không giới hạn số lượng/trạng thái. Card hiển thị tên, `Code • Trình độ`, số bài học, nút `×` để gỡ. Chỉ thêm / gỡ được khi học kỳ đang xem `Nháp` và khoá học `Nháp`; ngược lại ẩn "+ Thêm kỳ" và nút `×`.
 
-### Trang 3: Trang 1.3: Popup Kích hoạt công khai học kỳ
+### Trang 3: CD-KH-030110, CD-KH-030120 — Trang 1.3: Popup Kích hoạt công khai học kỳ
+
+![Figma mới nhất · CD-KH-030110](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030110.png)
+
+![Figma mới nhất · CD-KH-030120](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030120.png)
+
 Bắt buộc hiển thị khi chuyển `Nháp → Công khai`.
 
 - `A03.01` **Tiêu đề**: `Kích hoạt công khai học kỳ`
@@ -59,7 +70,14 @@ Bắt buộc hiển thị khi chuyển `Nháp → Công khai`.
 - Không có lựa chọn "xoá bắt buộc". Muốn xoá học kỳ đang nằm trong Tổng ôn thì CD phải tự gỡ học kỳ khỏi Tổng ôn của học kỳ kia trước (nếu học kỳ kia còn sửa được).
 - Popup xoá chỉ mở với học kỳ `Nháp` (học kỳ `Công khai` / `Vô hiệu` không có `Xoá`, xem REQ01).
 
-### Trang 5: Popup Nhân bản học kỳ
+### Trang 5: CD-KH-030104, CD-KH-030110, CD-KH-030120 — Popup Nhân bản học kỳ
+
+![Figma mới nhất · CD-KH-030104](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030104.png)
+
+![Figma mới nhất · CD-KH-030110](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030110.png)
+
+![Figma mới nhất · CD-KH-030120](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030120.png)
+
 Mở khi CD chọn "⋮" → `Nhân bản` (chỉ khi khoá học `Nháp`; học kỳ nguồn ở trạng thái nào cũng được). **UI cần bổ sung** trên Figma.
 
 - `A05.01` **Tiêu đề**: `Nhân bản học kỳ`

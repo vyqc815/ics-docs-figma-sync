@@ -4,7 +4,10 @@ Requirement này đặc tả **Chi tiết lớp học → Menu Nhật ký → Ta
 
 ## 1. UI
 
-### Trang 1: Menu Nhật ký — Danh sách nhật ký
+### Trang 1: ADM-LOP-050100 — Menu Nhật ký — Danh sách nhật ký
+
+![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
+
 ![Trang 1](./images/31-class-detail-journal.png)
 
 *Danh sách nhật ký trong Chi tiết lớp — nhấn để xem ảnh gốc*
@@ -37,7 +40,10 @@ Requirement này đặc tả **Chi tiết lớp học → Menu Nhật ký → Ta
 - Nội dung dạng checklist trong dòng `Flow Hằng Ngày` của ảnh chưa được xác định là thành phần tương tác; không tự thêm nghiệp vụ tick/hoàn thành công việc từ ảnh.
 - Loading, lỗi tải và danh sách rỗng phải phân biệt rõ; có thể thử lại khi tải lỗi. Không hiển thị dữ liệu lớp cũ như dữ liệu lớp mới.
 
-### Trang 2: Tìm kiếm và filter Đối tượng / Thời gian
+### Trang 2: ADM-LOP-050100 — Tìm kiếm và filter Đối tượng / Thời gian
+
+![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
+
 **Mô tả:** Thu hẹp danh sách nhật ký của lớp hiện tại theo Tiêu đề, người tạo/nguồn và thời gian log đang hiển thị.
 
 **Giải thích field/thành phần:**
@@ -75,7 +81,10 @@ Requirement này đặc tả **Chi tiết lớp học → Menu Nhật ký → Ta
 - Search chỉ so khớp Tiêu đề; không đưa dòng vào kết quả chỉ vì từ khóa nằm ở Mô tả, tên user hay tên hóa đơn.
 - Sửa thành công cập nhật thời điểm log nên kết quả filter thời gian phải được tính lại theo ngày/giờ mới, không tiếp tục lọc bằng ngày tạo cũ.
 
-### Trang 3: Tạo, sửa và xóa nhật ký viết tay
+### Trang 3: ADM-LOP-050100 — Tạo, sửa và xóa nhật ký viết tay
+
+![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
+
 **Mô tả:** `Class Handler` và `Support` ghi nội dung nhật ký cho lớp được phân quyền. Tài khoản tạo nhật ký là chủ sở hữu của nhật ký đó.
 
 **Giải thích field/thành phần:**
@@ -114,7 +123,10 @@ Requirement này đặc tả **Chi tiết lớp học → Menu Nhật ký → Ta
 
 **Điểm cần lưu ý:** Không mở popup này cho log Hệ thống hoặc nhật ký người khác. Xóa thất bại giữ nguyên dòng và báo lỗi; không xóa trước khi backend thành công.
 
-### Trang 5: Log Hệ thống — Thêm học viên vào lớp và đóng tiền
+### Trang 5: ADM-LOP-050100 — Log Hệ thống — Thêm học viên vào lớp và đóng tiền
+
+![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
+
 **Mô tả:** Hệ thống tự ghi nhật ký cho hai action đã chốt khi thao tác nghiệp vụ được lưu thành công. Người dùng không cần tạo thêm nhật ký thủ công.
 
 **Giải thích field/thành phần:**
@@ -137,7 +149,10 @@ Requirement này đặc tả **Chi tiết lớp học → Menu Nhật ký → Ta
 - Chỉ ghi hai action trong phạm vi đã chốt; không tự ghi thêm action Follow, đổi trạng thái, thêm tag, sửa/xóa nhật ký hoặc sửa/xóa học phí khi chưa có requirement.
 - Tự ghi log không tạo thêm Toast CRUD độc lập bên cạnh Toast của thao tác thêm vào lớp/đóng tiền.
 
-### Trang 6: Toast phản hồi CRUD
+### Trang 6: ADM-LOP-050100 — Toast phản hồi CRUD
+
+![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
+
 ![Trang 6](../../images/01-toast-crud.png)
 
 *Toast phản hồi tạo, sửa và xóa nhật ký — nhấn để xem ảnh gốc*

@@ -4,7 +4,12 @@ Requirement sáu tab Chi tiết học viên được tách riêng tại [Chi ti�
 
 ## 1. UI
 
-### Trang 1: Danh sách học viên
+### Trang 1: ADM-HV-010000, ADM-HV-010001 — Danh sách học viên
+
+![Figma mới nhất · ADM-HV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010000.png)
+
+![Figma mới nhất · ADM-HV-010001](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010001.png)
+
 ![Trang 1](./images/01-student-list.png)
 
 *Danh sách học viên — nhấn để xem ảnh gốc*
@@ -50,7 +55,10 @@ Requirement sáu tab Chi tiết học viên được tách riêng tại [Chi ti�
 - Ví dụ học viên có 3 bill `1.000.000`, `2.000.000`, `3.000.000 đ`: ban đầu doanh thu `6.000.000 đ`. Khi bill `3.000.000 đ` có trạng thái `Hoàn tiền`, cột Hoàn tiền là `3.000.000 đ`, cột Tổng doanh thu còn `3.000.000 đ`; Số bill vẫn là 3 vì vẫn có 3 hóa đơn liên kết.
 - Sau khi thêm/liên kết, chỉnh sửa số tiền hoặc đổi trạng thái bill thành công, tải lại các số liệu của đúng học viên từ dữ liệu hóa đơn đã lưu; không dùng số tiền mẫu trong ảnh.
 
-### Trang 2: Popup Thêm học viên
+### Trang 2: ADM-HV-010010 — Popup Thêm học viên
+
+![Figma mới nhất · ADM-HV-010010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010010.png)
+
 ![Trang 2](./images/02-create-student-account.png)
 
 *Popup Thêm học viên — UI mới*
@@ -73,7 +81,10 @@ Requirement sáu tab Chi tiết học viên được tách riêng tại [Chi ti�
 - `A02.10` **Chọn cấp độ (Level)**: Bắt buộc, chỉ chọn một trong `Cấp độ 1` đến `Cấp độ 9`; placeholder `Chọn` không hợp lệ.
 - `A02.11` **Code**: Bắt buộc, hệ thống tự tìm mã và hiển thị sau khi chọn cấp độ, chỉ đọc; đúng 6 chữ số, tăng dần theo cấp độ và duy nhất trong cùng center. Được trùng giữa các center khác nhau; kiểm tra lại khi lưu.
 
-### Trang 3: Bộ lọc Tag
+### Trang 3: ADM-HV-010000 — Bộ lọc Tag
+
+![Figma mới nhất · ADM-HV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010000.png)
+
 ![Trang 3](./images/03-tag-filter.png)
 
 *UI mới — tìm kiếm tag và các nhóm thu gọn/mở rộng*
@@ -86,13 +97,21 @@ Requirement sáu tab Chi tiết học viên được tách riêng tại [Chi ti�
 - Thu gọn nhóm hoặc đổi keyword tìm tag không làm mất các tag đã chọn; không bỏ chọn tag chỉ vì tag đó tạm không xuất hiện trong kết quả tìm kiếm. Mở lại nhóm/popup phản ánh các checkbox đang chọn của điều kiện lọc hiện tại.
 - Chọn/bỏ chọn checkbox cập nhật bộ lọc danh sách; Tag kết hợp bằng AND với filter logic Trạng thái và keyword tên học viên. Bỏ chọn hết tag thì không áp dụng điều kiện Tag, vẫn giữ các điều kiện còn lại.
 
-### Trang 4: Số lớp và Lớp hiện tại
+### Trang 4: ADM-HV-010000 — Số lớp và Lớp hiện tại
+
+![Figma mới nhất · ADM-HV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010000.png)
+
 - `Số lớp` đếm tất cả lớp học viên đã được thêm; hover/bấm badge hiển thị mã các lớp này theo ảnh hover mới phía trên.
 - `Lớp hiện tại` chỉ gồm các lớp đồng thời có status học viên trong lớp `Đang học` **và** status lớp `Đang học`. Hover icon chỉ hiển thị mã lớp; badge là số lớp thỏa cả hai điều kiện, không lấy toàn bộ Số lớp.
 - Học viên không có lớp hiện tại hiển thị `Chưa có` theo requirement hiện có, không mở tooltip/popup danh sách lớp rỗng.
 - `Số bill` chỉ hiển thị số hóa đơn, không có thao tác mở danh sách khi hover/bấm.
 
-### Trang 5: Thêm lịch hẹn
+### Trang 5: ADM-HV-010060, ADM-HV-010070 — Thêm lịch hẹn
+
+![Figma mới nhất · ADM-HV-010060](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010060.png)
+
+![Figma mới nhất · ADM-HV-010070](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010070.png)
+
 ![Trang 5](./images/05-add-appointment.png)
 
 *Popup Thêm lịch hẹn — UI chuẩn mới*
@@ -109,13 +128,19 @@ Requirement sáu tab Chi tiết học viên được tách riêng tại [Chi ti�
 - `A05.07` **Hủy**: Yêu cầu UI và quy tắc đã có: Đóng popup mà không tạo lịch hẹn và không tăng badge lịch hẹn.
 - `A05.08` **Xác nhận**: Yêu cầu UI và quy tắc đã có: Submit lịch hẹn của đúng học viên; validation và phản hồi theo requirement Lịch Hẹn.
 
-### Trang 6: Lịch sử học viên
+### Trang 6: ADM-HV-010000 — Lịch sử học viên
+
+![Figma mới nhất · ADM-HV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010000.png)
+
 - Từ menu tên học viên, chọn `Xem lịch sử` mở popup `Lịch sử học viên` của đúng học viên.
 - Popup có ba tab theo thứ tự: `Học phí`, `Lịch sử lớp`, `Ghi chú`. Mặc định mở `Học phí` (nghiệp vụ hóa đơn), thay nhãn UI cũ `Lịch sử hóa đơn`.
 - Tab active có chữ cam, nền cam nhạt, thanh chỉ báo cam bên trái theo ảnh; chuyển tab giữ ngữ cảnh học viên đang xem.
 - UI chuẩn cho từng tab được gắn bên dưới; tên, số tiền, mã lớp, ngày giờ, người và các tỷ lệ trong ảnh chỉ là dữ liệu minh họa.
 
-### Trang 7: Học phí — danh sách hóa đơn
+### Trang 7: ADM-HV-010000 — Học phí — danh sách hóa đơn
+
+![Figma mới nhất · ADM-HV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010000.png)
+
 ![Trang 7](./images/08-invoice-history-expanded.png)
 
 *UI chuẩn tab Học phí — thẻ tổng hợp, bảng hóa đơn và chi tiết phân bổ*
@@ -144,7 +169,12 @@ Requirement sáu tab Chi tiết học viên được tách riêng tại [Chi ti�
 - Có thể có nhiều dòng phân bổ của cùng học viên cho nhiều lớp; phân biệt bằng bản ghi phân bổ, không gộp chỉ vì cùng tên/email/mã học viên.
 - Công thức đã chốt: `Số Hoá Đơn = số hóa đơn tạo cho học viên`; `Tổng Học Phí = tổng số tiền đã dùng trong các hóa đơn của học viên`. Các con số trên ảnh chỉ minh họa bố cục; dùng dữ liệu thực tế theo hai công thức này.
 
-### Trang 8: Lịch sử lớp
+### Trang 8: ADM-HV-010000, ADM-HV-010001 — Lịch sử lớp
+
+![Figma mới nhất · ADM-HV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010000.png)
+
+![Figma mới nhất · ADM-HV-010001](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010001.png)
+
 ![Trang 8](./images/22-student-class-history.png)
 
 *Tab Lịch sử lớp — 6 thẻ tổng hợp, tiến độ khóa học, đánh giá và KPI*
@@ -211,7 +241,10 @@ Gọi `r_lớp = getUpTerm() × 100%`. Đây là tỷ lệ tính trên **danh s�
 - Điểm lớp Q = -1 thì badge dòng trống theo `getEvaluate()`. Thẻ tổng hợp trống khi đang tải hoặc không có lớp chính thức; có lớp chính thức nhưng không còn Q ≥ 0 sau lọc thì `getAverage()` trả 0, thẻ là F theo source.
 - Các helper dữ liệu hợp lệ/điểm BTVN/điểm kiểm tra của công thức Đánh giá theo source ICS cũ được ghi trong file đối chiếu. Việc áp dụng công thức Đánh giá không thay phạm vi hoặc độ chính xác của hai thẻ Đi Học/BTVN đã chốt.
 
-### Trang 9: Ghi chú — danh sách, bình luận và popup thêm
+### Trang 9: ADM-HV-010000 — Ghi chú — danh sách, bình luận và popup thêm
+
+![Figma mới nhất · ADM-HV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010000.png)
+
 ![Trang 9](./images/23-student-notes-history.png)
 
 *UI Ghi chú mới — metadata người tạo/bình luận, menu và ô nhập bình luận*
@@ -250,7 +283,10 @@ Gọi `r_lớp = getUpTerm() × 100%`. Đây là tỷ lệ tính trên **danh s�
 - Tiêu đề, nội dung ghi chú và bình luận không giới hạn độ dài ở tầng nghiệp vụ. Nội dung trong popup Thêm ghi chú là văn bản thuần, không có toolbar hoặc định dạng chữ; ô bình luận cũng dùng văn bản thuần theo UI mới, không có toolbar định dạng.
 - Chọn `Tùy chọn` hiển thị khoảng `Từ ngày` và `Đến ngày` để user chọn ngày/tháng/năm.
 
-### Trang 10: Toast phản hồi CRUD
+### Trang 10: ADM-HV-010000 — Toast phản hồi CRUD
+
+![Figma mới nhất · ADM-HV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-010000.png)
+
 ![Trang 10](../../images/01-toast-crud.png)
 
 *Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc*

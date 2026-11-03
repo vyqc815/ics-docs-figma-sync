@@ -33,7 +33,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Lịch dạy*
 - Nếu lớp `Mới tạo` có lịch hợp lệ đầu tiên thì tự chuyển sang `Khai giảng` theo requirement trạng thái lớp.
 - Teacher chỉ thấy dữ liệu trong phạm vi lớp được phân công; việc ẩn nút CRUD không thay thế kiểm tra quyền backend.
 
-### Trang 2: Thẻ lịch và bốn trạng thái chính thức
+### Trang 2: ADM-LOP-040500 — Thẻ lịch và bốn trạng thái chính thức
+
+![Figma mới nhất · ADM-LOP-040500](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040500.png)
+
 ![Trang 2](./images/schedule-status-fixed.png)
 
 *Bộ màu/icon trạng thái lịch chính thức*
@@ -55,7 +58,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Lịch dạy*
 - Chỉ lịch ở trạng thái `Hoàn thành` mới được ghi nhận lương giáo viên; lịch cố định/linh hoạt chưa hoàn thành và lịch hủy không tính lương.
 - Trong cùng một lần hoàn thành, request gửi lặp chỉ được tạo một khoản lương. Nếu lịch được Mở lại rồi hoàn thành lại, lần hoàn thành mới có thể tạo khoản lương mới nhưng tại một thời điểm chỉ một khoản của schedule có hiệu lực.
 
-### Trang 3: Popup Thêm Lịch Dạy Cố Định
+### Trang 3: ADM-LOP-040510 — Popup Thêm Lịch Dạy Cố Định
+
+![Figma mới nhất · ADM-LOP-040510](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040510.png)
+
 ![Trang 3](./images/27-class-schedule-add-fixed.png)
 
 *Thêm các khung lịch cố định — nhấn để xem ảnh gốc*
@@ -82,7 +88,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Lịch dạy*
 - Nếu không còn khung cố định hợp lệ để sinh đủ N buổi thì không lưu một phần; giữ cấu hình/lịch cũ và trả lỗi xử lý được.
 - Ngày kết thúc dự kiến là ngày của buổi hợp lệ thứ N sau khi sinh lịch; người dùng không sửa trực tiếp.
 
-### Trang 4: Popup Thêm Lịch Dạy Linh Hoạt
+### Trang 4: ADM-LOP-040510 — Popup Thêm Lịch Dạy Linh Hoạt
+
+![Figma mới nhất · ADM-LOP-040510](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040510.png)
+
 ![Trang 4](./images/28-class-schedule-add-flexible.png)
 
 *Thêm một hoặc nhiều lịch linh hoạt trong tuần được chọn — nhấn để xem ảnh gốc*
@@ -105,7 +114,14 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Lịch dạy*
 - Lịch linh hoạt phải hiển thị xanh dương cho đến khi được hoàn thành hoặc hủy.
 - Việc chèn có thể làm thay đổi buổi N và Ngày kết thúc dự kiến; hệ thống cập nhật sau khi commit thành công.
 
-### Trang 5: Popup xem/chỉnh sửa khi bấm thẻ lịch
+### Trang 5: ADM-LOP-040510, ADM-LOP-040520, ADM-LOP-040521 — Popup xem/chỉnh sửa khi bấm thẻ lịch
+
+![Figma mới nhất · ADM-LOP-040510](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040510.png)
+
+![Figma mới nhất · ADM-LOP-040520](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040520.png)
+
+![Figma mới nhất · ADM-LOP-040521](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040521.png)
+
 ![Trang 5](./images/29-class-schedule-edit-popup.png)
 
 *Bấm một thẻ lịch để xem hoặc chỉnh sửa đúng buổi học — nhấn để xem ảnh gốc*
@@ -143,7 +159,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Lịch dạy*
 - Lưu audit `Lương/giờ` trước/sau, người và thời điểm sửa.
 - Không dùng hover làm thao tác xóa trực tiếp. Hover chỉ được hiển thị tooltip/trạng thái hoặc affordance mở chi tiết; mọi cập nhật thực hiện trong popup.
 
-### Trang 6: Hoàn thành và hủy lịch
+### Trang 6: ADM-LOP-040500 — Hoàn thành và hủy lịch
+
+![Figma mới nhất · ADM-LOP-040500](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040500.png)
+
 **Mô tả:** Role CRUD có thể cập nhật một lịch hợp lệ thành `Hoàn thành` hoặc `Hủy bỏ`. Hoàn thành làm phát sinh lương giáo viên; hủy loại buổi khỏi chương trình và tự sinh một buổi bù ở cuối theo lịch cố định. Lịch còn được **Hoàn thành qua luồng dạy** của giáo viên: giáo viên chọn lịch khi `Bắt đầu buổi học` (lịch được gắn buổi, giữ `Đang đợi`) và lịch chuyển `Hoàn thành` khi giáo viên bấm `Hoàn thành buổi học`.
 
 **Giải thích field/thành phần:**
@@ -185,7 +204,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Lịch dạy*
 - Nếu bảng lương đã khóa/chốt, không sửa trực tiếp kỳ cũ. Hệ thống tạo bút toán điều chỉnh ở kỳ cho phép gần nhất; nếu chưa thể tạo điều chỉnh thì không mở lại một phần.
 - Request mở lại gửi lặp phải idempotent: chỉ một bút toán đảo và một lần chuyển về Đang đợi.
 
-### Trang 8: Toast phản hồi CRUD lịch
+### Trang 8: ADM-LOP-040500 — Toast phản hồi CRUD lịch
+
+![Figma mới nhất · ADM-LOP-040500](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040500.png)
+
 ![Trang 8](../../images/01-toast-crud.png)
 
 *Toast phản hồi tạo, cập nhật, hoàn thành và hủy lịch — nhấn để xem ảnh gốc*

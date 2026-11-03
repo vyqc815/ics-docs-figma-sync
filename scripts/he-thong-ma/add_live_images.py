@@ -28,7 +28,8 @@ def main():
             head = m[0]
             codes = [c for c in re.findall(CODE, head.split(" — ")[0]) if c in ids]
             lines = [f"![Figma mới nhất · {c}]({args.base}/api/figma-frame/{c}.png)" for c in codes]
-            lines = [l for l in lines if l not in text]
+            below = re.split(r"^#{1,3} ", text[m.end():], maxsplit=1, flags=re.M)[0]  # this page only
+            lines = [l for l in lines if l not in below]
             added += len(lines)
             return head + ("\n\n" + "\n\n".join(lines) + "\n" if lines else "")
         new = re.sub(r"^### Trang \d+: .*$", rep, text, flags=re.M)

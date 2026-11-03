@@ -6,7 +6,10 @@ Pre-coding/Definition of Done: [Tag Management — Pre-Coding](../../pre_coding/
 
 ## 1. UI
 
-### Trang 1: Tag quản lý và Nhóm
+### Trang 1: ADM-TAG-010000 — Tag quản lý và Nhóm
+
+![Figma mới nhất · ADM-TAG-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-TAG-010000.png)
+
 ![Trang 1](./images/01-tag-groups.png)
 
 *Tag quản lý bên trái, Nhóm bên phải — nhấn để xem ảnh gốc*
@@ -26,7 +29,10 @@ Pre-coding/Definition of Done: [Tag Management — Pre-Coding](../../pre_coding/
 - Các tên nhóm/tag trong ảnh chỉ là dữ liệu mẫu, không phải danh sách cố định.
 - Khi thêm tag, `Tên tag` và `Màu sắc` là bắt buộc; `Mô tả` không bắt buộc. Không kiểm tra trùng Tên nhóm/Tên tag; cho phép trùng tên.
 
-### Trang 2: Popup Thêm nhóm mới
+### Trang 2: ADM-TAG-010020 — Popup Thêm nhóm mới
+
+![Figma mới nhất · ADM-TAG-010020](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-TAG-010020.png)
+
 ![Trang 2](./images/02-add-tag-group.png)
 
 *Loại nhóm dùng đúng năm giá trị mới — nhấn để xem ảnh gốc*
@@ -48,7 +54,10 @@ Pre-coding/Definition of Done: [Tag Management — Pre-Coding](../../pre_coding/
 - Không dùng các mục `CSKH`, `Sale`, `Quản lý` còn thấy trong ảnh popup cũ.
 - Không áp đặt giá trị mặc định hoặc giới hạn nhập liệu cho các field; dữ liệu mẫu trong ảnh không phải mặc định bắt buộc.
 
-### Trang 3: Popup Thêm tag
+### Trang 3: ADM-TAG-010010 — Popup Thêm tag
+
+![Figma mới nhất · ADM-TAG-010010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-TAG-010010.png)
+
 ![Trang 3](./images/03-add-tag.png)
 
 *Popup Thêm tag; tag luôn thuộc một nhóm và kế thừa Loại của nhóm, không áp dụng trường Loại trong ảnh — nhấn để xem ảnh gốc*
@@ -73,7 +82,10 @@ Pre-coding/Definition of Done: [Tag Management — Pre-Coding](../../pre_coding/
 - `Tên tag` và `Màu sắc` là bắt buộc khi thêm tag; thiếu thì không lưu và báo lỗi tại field thiếu. `Mô tả` không bắt buộc, được để trống. Không có giới hạn nghiệp vụ bổ sung.
 - Tag không có field `Ngày thống kê` và `Riêng tư`; nếu ảnh popup còn các field này thì không áp dụng.
 
-### Trang 4: Toast phản hồi CRUD
+### Trang 4: ADM-TAG-010000 — Toast phản hồi CRUD
+
+![Figma mới nhất · ADM-TAG-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-TAG-010000.png)
+
 ![Trang 4](../images/01-toast-crud.png)
 
 *Toast dùng chung sau thao tác thay đổi dữ liệu — nhấn để xem ảnh gốc*

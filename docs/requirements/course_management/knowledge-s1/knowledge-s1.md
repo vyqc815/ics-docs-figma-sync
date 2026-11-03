@@ -14,7 +14,12 @@ thẳng vào thư viện. Kiến thức chỉ được sửa tại S1; Chi tiế
 
 ## 1. UI
 
-### Trang 1: Khung màn hình và tab loại kiến thức
+### Trang 1: CD-KH-040100, CD-KH-040200 — Khung màn hình và tab loại kiến thức
+
+![Figma mới nhất · CD-KH-040100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040100.png)
+
+![Figma mới nhất · CD-KH-040200](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040200.png)
+
 ![Trang 1](./images/01-tu-vung.png)
 
 *Kiến thức (S1) — tab Từ vựng, menu Thêm từ đang mở — nhấn để xem ảnh gốc*
@@ -56,7 +61,12 @@ thẳng vào thư viện. Kiến thức chỉ được sửa tại S1; Chi tiế
 - Bảng chữ và Phát âm giữ **đúng cấu trúc dữ liệu app học viên đang dùng** (Phụ lục A.6, A.7). Mỗi loại có dữ liệu
   và audio riêng, không loại nào lấy dữ liệu của loại kia.
 
-### Trang 2: Field của từng loại kiến thức
+### Trang 2: CD-KH-040100, CD-KH-040200 — Field của từng loại kiến thức
+
+![Figma mới nhất · CD-KH-040100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040100.png)
+
+![Figma mới nhất · CD-KH-040200](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040200.png)
+
 **Mô tả:**
 
 - Mỗi loại có bộ field riêng (theo dữ liệu `HSK1 - DATA`, sheet `kanji` khoá N5, `BẢNG CHỮ - N5 (ver 2.2)` và
@@ -114,7 +124,12 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
   `1 trường trống · Từ loại`).
 - Badge `N thiếu thông tin` và bộ lọc Trạng thái tính theo field bắt buộc của bảng trên.
 
-### Trang 3: Bảng danh sách, tìm kiếm, sắp xếp và lọc
+### Trang 3: CD-KH-040100, CD-KH-040200 — Bảng danh sách, tìm kiếm, sắp xếp và lọc
+
+![Figma mới nhất · CD-KH-040100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040100.png)
+
+![Figma mới nhất · CD-KH-040200](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040200.png)
+
 ![Trang 3](./images/02-menu-dong.png)
 
 *Đang xem cụm `01. Gia đình`, sửa nhanh dòng 03 và menu ⋮ của một dòng — nhấn để xem ảnh gốc*
@@ -169,7 +184,10 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - Kéo thả chỉ đổi **thứ tự mục trong cụm** (là thứ tự hiển thị ở bài học liên kết); các kiểu sắp xếp khác chỉ để xem.
 - Bảng mọi tab dùng cột `Cụm` (không có cột `Bài học`).
 
-### Trang 4: Menu thêm, Popup Thêm từ thư viện dữ liệu
+### Trang 4: CD-KH-040150 — Menu thêm, Popup Thêm từ thư viện dữ liệu
+
+![Figma mới nhất · CD-KH-040150](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040150.png)
+
 ![Trang 4](./images/09-popup-thu-vien.png)
 
 *Popup Thêm từ thư viện dữ liệu — nhấn để xem ảnh gốc*
@@ -200,7 +218,10 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - Thư viện có màn quản lý riêng (menu CD `Thư Viện Kiến Thức`: Từ Vựng, Ngữ Pháp, Hanzi, Ký Tự, Phát Âm) — thuộc
   requirement riêng, ngoài phạm vi tài liệu này.
 
-### Trang 5: Popup Thêm theo list
+### Trang 5: CD-KH-040160 — Popup Thêm theo list
+
+![Figma mới nhất · CD-KH-040160](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040160.png)
+
 ![Trang 5](./images/10-popup-theo-list.png)
 
 *Popup Thêm theo list — dán / nhập, mỗi dòng 1 mục — nhấn để xem ảnh gốc*
@@ -260,7 +281,12 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - Đang chọn cụm thì mục mới thuộc cụm đó; đang ở `Tất cả` thì thuộc `Chưa phân cụm`.
 - Ô trống hoặc chỉ khoảng trắng: không tạo mục.
 
-### Trang 7: Menu thao tác dòng và sửa mục
+### Trang 7: CD-KH-040100, CD-KH-040200 — Menu thao tác dòng và sửa mục
+
+![Figma mới nhất · CD-KH-040100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040100.png)
+
+![Figma mới nhất · CD-KH-040200](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040200.png)
+
 **Mô tả:**
 
 - Menu ⋮ của mỗi dòng (ảnh `02-menu-dong.png` ở khu vực Bảng danh sách) gồm các thao tác trên 1 mục.
@@ -277,7 +303,10 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - Sửa ở S1 là sửa **bản ghi thư viện**; mọi khoá và bài học đang dùng mục thấy nội dung mới.
 - Sắp xếp thứ tự dùng tay nắm kéo thả trên dòng, không có mục riêng trong menu.
 
-### Trang 8: Chi tiết mục (drawer)
+### Trang 8: CD-KH-040195 — Chi tiết mục (drawer)
+
+![Figma mới nhất · CD-KH-040195](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040195.png)
+
 ![Trang 8](./images/18-chi-tiet-muc.png)
 
 *Drawer Chi tiết từ vựng của `爸爸`: đủ field, danh sách ví dụ (ảnh cũ còn nhãn AI chờ duyệt — đã bỏ, mỗi field có `↻ Tạo lại`) — nhấn để xem ảnh gốc*
@@ -310,7 +339,10 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - Field hệ thống tự sinh (Phiên âm từng chữ, Chuỗi tìm kiếm Kanji) không hiện để sửa.
 - Mục đang được AI xử lý thì drawer chỉ đọc (xem khu vực AI).
 
-### Trang 9: Chọn nhiều và thao tác hàng loạt
+### Trang 9: CD-KH-040120 — Chọn nhiều và thao tác hàng loạt
+
+![Figma mới nhất · CD-KH-040120](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040120.png)
+
 ![Trang 9](./images/03-chon-nhieu.png)
 
 *Thanh thao tác khi chọn 3 từ — nhấn để xem ảnh gốc*
@@ -334,7 +366,10 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
   `Thêm vào cụm / Gỡ khỏi cụm`, `Xoá (N)` mờ (ảnh `07-ai-dien-thieu.png`).
 - `Soát lỗi bằng AI` không nằm ở thanh hàng loạt; nút ở thanh công cụ luôn chạy cho toàn bộ mục của tab.
 
-### Trang 10: Popup Thêm vào cụm / Gỡ khỏi cụm
+### Trang 10: CD-KH-040125 — Popup Thêm vào cụm / Gỡ khỏi cụm
+
+![Figma mới nhất · CD-KH-040125](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040125.png)
+
 ![Trang 10](./images/04-them-go-cum.png)
 
 *Popup `Cụm của 3 mục` — Figma đang vẽ tick nhiều cụm, <b>cần cập nhật</b> sang chọn 1 cụm — nhấn để xem ảnh gốc*
@@ -356,7 +391,12 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - Mục bị gỡ khỏi cụm thì về `Chưa phân cụm`; mục `Chưa phân cụm` không xuất hiện ở bài học nào.
 - Chuyển mục sang cụm khác thì bài học liên kết cụm cũ không còn mục, bài học liên kết cụm mới có thêm mục; không cần cảnh báo, không có popup phụ.
 
-### Trang 11: Panel Cụm và Số cụm
+### Trang 11: CD-KH-040100, CD-KH-040200 — Panel Cụm và Số cụm
+
+![Figma mới nhất · CD-KH-040100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040100.png)
+
+![Figma mới nhất · CD-KH-040200](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040200.png)
+
 **Mô tả:**
 
 - Panel bên phải của mỗi tab quản lý cụm của **loại đó** (mỗi loại có bộ cụm riêng): xem số mục mỗi cụm, chọn cụm để
@@ -380,7 +420,10 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - Cụm là mắt xích duy nhất giữa mục và bài học: thêm mục vào cụm thì bài học liên kết thấy ngay; gỡ mục khỏi cụm thì bài học không còn mục đó.
 - Nhân bản khoá học sao chép cụm, mục trong cụm và liên kết cụm ↔ bài học sang bản sao.
 
-### Trang 12: Popup Chia cụm bằng AI
+### Trang 12: CD-KH-040170 — Popup Chia cụm bằng AI
+
+![Figma mới nhất · CD-KH-040170](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040170.png)
+
 ![Trang 12](./images/11-popup-chia-cum-ai.png)
 
 *Popup Chia cụm bằng AI — AI đưa từ vào các cụm đang có — nhấn để xem ảnh gốc*
@@ -411,7 +454,10 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - Hoàn tác sau khi áp dụng là chức năng của `Log cập nhật` (requirement riêng), không nằm trong S1; dòng ghi chú
   `Có thể hoàn tác trong Log cập nhật` trên popup chỉ dẫn sang đó.
 
-### Trang 13: AI: Thêm bằng AI, Điền thiếu, Soát lỗi, Tạo lại
+### Trang 13: CD-KH-040190 — AI: Thêm bằng AI, Điền thiếu, Soát lỗi, Tạo lại
+
+![Figma mới nhất · CD-KH-040190](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040190.png)
+
 ![Trang 13](./images/07-ai-dien-thieu.png)
 
 *Điền thiếu bằng AI đang chạy (ảnh cũ còn nhãn AI · Duyệt / Hoàn tác — đã bỏ, xem mô tả) — nhấn để xem ảnh gốc*
@@ -450,7 +496,10 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
   không mở Chi tiết mục để sửa, `Xoá`, `Thêm vào cụm / Gỡ khỏi cụm` mờ; thanh hàng loạt chỉ còn `Dừng`, `Bỏ chọn`.
   Mục khác và Nhập nhanh vẫn thao tác bình thường. API thay đổi mục đang xử lý bị từ chối (EX10).
 
-### Trang 14: Preview mobile
+### Trang 14: CD-KH-040140 — Preview mobile
+
+![Figma mới nhất · CD-KH-040140](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040140.png)
+
 ![Trang 14](./images/06-preview-mobile.png)
 
 *Preview mobile theo từ đang chọn — nhấn để xem ảnh gốc*
@@ -474,7 +523,10 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - **UI cần bổ sung:** Preview cho Ngữ pháp, Mẫu câu, Hán tự, Kanji, Bảng chữ, Phát âm — vẽ theo màn app học viên
   sau khi có ảnh / mô tả màn app (mục 3).
 
-### Trang 15: Popup xác nhận gỡ mục khỏi khoá
+### Trang 15: CD-KH-040155 — Popup xác nhận gỡ mục khỏi khoá
+
+![Figma mới nhất · CD-KH-040155](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040155.png)
+
 ![Trang 15](./images/13-popup-go-muc.png)
 
 *Popup gỡ mục khỏi khoá học, liệt kê bài đang dùng — nhấn để xem ảnh gốc*

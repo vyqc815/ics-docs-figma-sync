@@ -4,7 +4,10 @@ Tab **Chi tiết lớp học → Menu Nhật ký → Ghi Chú** có chức năng
 
 ## 1. UI
 
-### Trang 1: Tab Ghi Chú — Danh sách và bộ lọc
+### Trang 1: ADM-LOP-050100 — Tab Ghi Chú — Danh sách và bộ lọc
+
+![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
+
 ![Trang 1](./images/32-class-detail-notes.png)
 
 *UI Ghi Chú lớp do người dùng cung cấp — nhấn để xem ảnh gốc*
@@ -79,7 +82,10 @@ Tab **Chi tiết lớp học → Menu Nhật ký → Ghi Chú** có chức năng
 - Sau khi tạo ghi chú thành công, danh sách trở về trang đầu để hiển thị bản ghi mới. Cập nhật/đóng/mở giữ trang nếu bản ghi vẫn phù hợp bộ lọc; nếu thao tác làm trang hiện tại không còn hợp lệ, chuyển đến trang hợp lệ gần nhất.
 - Khi chuyển trang hoặc đổi filter liên tục, chỉ response của trang và tổ hợp filter mới nhất được phép cập nhật danh sách; không lặp hoặc bỏ sót ghi chú giữa các trang.
 
-### Trang 2: Popup tạo và cập nhật ghi chú lớp
+### Trang 2: ADM-LOP-050100 — Popup tạo và cập nhật ghi chú lớp
+
+![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
+
 ![Trang 2](../teacher_management/images/teacher-detail-notes-create.png)
 
 *Ảnh tham chiếu chức năng Ghi chú tại Chi tiết giáo viên; triển khai tương tự cho lớp học — nhấn để xem ảnh gốc*
@@ -109,7 +115,10 @@ Tab **Chi tiết lớp học → Menu Nhật ký → Ghi Chú** có chức năng
 - Editor Nội dung dùng toolbar rich text trong UI: hoàn tác/làm lại, font/kiểu chữ, đậm/nghiêng/gạch chân, màu chữ/xóa định dạng, căn lề, danh sách và thụt lề. Thao tác định dạng không tạo comment hay thay đổi quyền sở hữu.
 - Sau sửa, hiển thị `Đã chỉnh sửa` và thời điểm cập nhật theo UI; thời gian tạo không đổi, filter Thời gian vẫn dùng thời gian tạo.
 
-### Trang 3: Xóa, đóng và mở lại ghi chú lớp
+### Trang 3: ADM-LOP-050100 — Xóa, đóng và mở lại ghi chú lớp
+
+![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
+
 **Mô tả:** Owner quản lý ghi chú của mình bằng cùng thao tác/xác nhận như Ghi chú giáo viên. Xóa ghi chú có bước xác nhận.
 
 **Giải thích field/thành phần:**
@@ -126,7 +135,10 @@ Tab **Chi tiết lớp học → Menu Nhật ký → Ghi Chú** có chức năng
 - Xóa mềm ghi chú làm ghi chú cùng phần comment của nó không còn truy cập qua tab; dữ liệu ghi chú/comment vẫn được giữ. Xóa mềm comment chỉ ẩn đúng comment đó, cập nhật count và metadata comment cuối từ các comment chưa xóa.
 - Xóa mềm không tự cấp quyền khôi phục hoặc xem dữ liệu đã xóa qua UI; yêu cầu audit/khôi phục chưa được chốt.
 
-### Trang 4: Bình luận ghi chú lớp
+### Trang 4: ADM-LOP-050100 — Bình luận ghi chú lớp
+
+![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
+
 ![Trang 4](./images/32-class-detail-notes.png)
 
 *Khu vực mở/ẩn bình luận và ô nhập bình luận theo UI Ghi Chú lớp — nhấn để xem ảnh gốc*
@@ -156,7 +168,10 @@ Tab **Chi tiết lớp học → Menu Nhật ký → Ghi Chú** có chức năng
 
 - Số lượng comment, danh sách comment và metadata cuối phải thuộc đúng ghi chú/lớp; kiểm tra lại trạng thái/quyền khi gửi request.
 
-### Trang 5: Toast phản hồi CRUD
+### Trang 5: ADM-LOP-050100 — Toast phản hồi CRUD
+
+![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
+
 ![Trang 5](../../images/01-toast-crud.png)
 
 *Phản hồi ghi chú và bình luận — nhấn để xem ảnh gốc*

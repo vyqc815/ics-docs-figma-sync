@@ -4,7 +4,10 @@ Requirement này đặc tả popup tạo lớp, lịch dạy cố định và tr
 
 ## 1. UI
 
-### Trang 1: Popup Thêm lớp học
+### Trang 1: ADM-LOP-010010 — Popup Thêm lớp học
+
+![Figma mới nhất · ADM-LOP-010010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010010.png)
+
 ![Trang 1](./images/06-add-class.png)
 
 *Popup Thêm Lớp Học — nhấn để xem ảnh gốc*
@@ -39,7 +42,10 @@ Chỉ người dùng có role `Admin` hoặc `Class Handler` được bấm nút
 - `Admin` và `Class Handler` đều được chọn Loại lớp `Lớp demo` (lớp không chính thức). Role khác không được tạo lớp, kể cả lớp demo; backend phải từ chối nếu gửi request trực tiếp.
 - Bấm `Hủy` không lưu dữ liệu; bấm `Xác Nhận` nhiều lần hoặc gửi lặp không được tạo lớp trùng.
 
-### Trang 2: Lớp không chính thức
+### Trang 2: ADM-LOP-010000 — Lớp không chính thức
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 **Mô tả:**
 
 `Lớp không chính thức` là lớp có Loại lớp `Lớp demo`, do `Admin` hoặc `Class Handler` tạo để phục vụ test. Không có checkbox riêng.
@@ -58,7 +64,10 @@ Chỉ người dùng có role `Admin` hoặc `Class Handler` được bấm nút
 - Role ngoài `Admin` và `Class Handler` không được tạo `Lớp demo`, kể cả bằng request trực tiếp; quyền đổi trạng thái lớp test sau khi tạo vẫn tuân theo requirement Chi tiết lớp.
 - Sau khi lớp đã được tạo là `Lớp demo`, không cho phép đổi Loại lớp sang `Lớp chung` hoặc `Lớp 1-1`.
 
-### Trang 3: Khóa học, Số buổi và lịch được sinh
+### Trang 3: ADM-LOP-010000 — Khóa học, Số buổi và lịch được sinh
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 **Mô tả:**
 
 Giải thích quan hệ giữa khóa học đã define, tổng Số buổi và lịch dạy được sinh cho lớp.
@@ -78,7 +87,10 @@ Giải thích quan hệ giữa khóa học đã define, tổng Số buổi và l
 - Nếu không tải được danh sách Khóa học hoặc khóa học không có cấu hình Số buổi, không được tạo lớp với dữ liệu thiếu/sai.
 - `Ngày kết thúc` luôn được tính từ ngày của buổi cuối. Nếu lịch được sinh lại do đổi khóa học, ngày bắt đầu hoặc mẫu lịch, field này phải cập nhật trong cùng giao dịch.
 
-### Trang 4: Loại lớp
+### Trang 4: ADM-LOP-010000 — Loại lớp
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 **Mô tả:**
 
 Field `Loại lớp` xác định lớp học chung, lớp 1-1 hay lớp demo (lớp không chính thức).
@@ -117,7 +129,10 @@ Popup dùng để khai báo mẫu lịch lặp và sinh đủ số buổi của 
 - Giờ kết thúc phải sau Giờ bắt đầu.
 - Không cho xác nhận khi các khung giờ bị trùng theo quy tắc lịch của hệ thống; hiển thị lỗi tại khung giờ liên quan.
 
-### Trang 6: Bộ chọn Phụ trách chính / CSKH chính
+### Trang 6: ADM-LOP-010000 — Bộ chọn Phụ trách chính / CSKH chính
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 ![Trang 6](./images/08-class-user-picker.png)
 
 *Bộ chọn người dùng có tìm kiếm và nhóm theo role — nhấn để xem ảnh gốc*
@@ -137,7 +152,10 @@ Bộ chọn dùng để gán đúng người chịu trách nhiệm chính và CS
 - Không cho chọn người dùng sai role bằng thao tác trên UI hoặc bằng request trực tiếp.
 - Chỉ lưu người dùng đã chọn vào đúng field đang thao tác; không tự gán cùng một lựa chọn cho field khác.
 
-### Trang 7: Phân quyền tạo lớp và dữ liệu bắt buộc
+### Trang 7: ADM-LOP-010000 — Phân quyền tạo lớp và dữ liệu bắt buộc
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 **Mô tả:**
 
 Quy định người được mở popup/tạo lớp và validation bắt buộc trước khi lưu.
@@ -152,7 +170,10 @@ Quy định người được mở popup/tạo lớp và validation bắt buộc
 - Nếu thiếu một trong sáu field, hoặc giá trị text bắt buộc chỉ chứa khoảng trắng, hệ thống không gửi/lưu lớp và hiển thị lỗi tại đúng field.
 - Backend phải kiểm tra lại toàn bộ field bắt buộc và role của người được gán; không chỉ dựa vào validation phía giao diện.
 
-### Trang 8: Trạng thái sau khi tạo lớp
+### Trang 8: ADM-LOP-010000 — Trạng thái sau khi tạo lớp
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 **Mô tả:**
 
 Giải thích trạng thái ban đầu của lớp sau khi người dùng xác nhận tạo lớp.
@@ -170,7 +191,10 @@ Tên trạng thái chính thức dùng trong requirement là `Mới tạo`, `Kha
 - Không cho chuyển `Mới tạo` sang `Khai giảng` khi chưa có lịch dạy.
 - Link Meet không quyết định trạng thái `Mới tạo` hay `Khai giảng`; điều kiện phân biệt là lớp có lịch dạy hay chưa.
 
-### Trang 9: Ràng buộc liên quan đến trạng thái Đang học
+### Trang 9: ADM-LOP-010000 — Ràng buộc liên quan đến trạng thái Đang học
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 **Mô tả:**
 
 Thao tác chuyển trạng thái được thực hiện tại màn Chi tiết lớp và sẽ được đặc tả đầy đủ trong requirement Chi tiết lớp. Requirement này ghi nhận các ràng buộc nghiệp vụ dùng chung:
@@ -190,7 +214,10 @@ Thao tác chuyển trạng thái được thực hiện tại màn Chi tiết l�
 - Cách xác định học viên “đã đóng học phí” tuân theo requirement học phí riêng và không được tự định nghĩa trong requirement lớp.
 - Các điều kiện nghiệp vụ trong mục này không áp dụng cho lớp có Loại lớp `Lớp demo`, nhưng quyền và phạm vi dữ liệu vẫn phải được kiểm tra.
 
-### Trang 10: Toast phản hồi CRUD
+### Trang 10: ADM-LOP-010000 — Toast phản hồi CRUD
+
+![Figma mới nhất · ADM-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010000.png)
+
 ![Trang 10](../../images/01-toast-crud.png)
 
 *Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc*
