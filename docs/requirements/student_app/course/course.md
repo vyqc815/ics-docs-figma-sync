@@ -5,6 +5,9 @@ Màn **chi tiết lớp** của app học viên, mở từ thẻ khoá học ở
 ## 1. UI
 
 ### Trang 1: HV-LOP-010000 — Tab Tổng quan
+
+![Figma mới nhất · HV-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/HV-LOP-010000.png)
+
 ![Trang 1](./images/01-tong-quan.png)
 
 *Tổng quan: vòng số buổi, 4 chỉ số, nút Gửi góp ý đến trung tâm — nhấn để xem ảnh gốc*
@@ -29,6 +32,9 @@ Màn **chi tiết lớp** của app học viên, mở từ thẻ khoá học ở
 - Lớp `Hoàn thành` / `Huỷ bỏ` vẫn xem được tổng quan.
 
 ### Trang 2: HV-LOP-020000 — Tab Tự học
+
+![Figma mới nhất · HV-LOP-020000](https://ics-figma-demo.vercel.app/api/figma-frame/HV-LOP-020000.png)
+
 ![Trang 2](./images/02-tu-hoc.png)
 
 *Tự học: thẻ bài tự học với tên gốc + tên dịch, tiến độ — nhấn để xem ảnh gốc*

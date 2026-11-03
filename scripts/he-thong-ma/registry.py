@@ -14,6 +14,10 @@ Requirements are read only, never changed.
 """
 import argparse, collections, json, os, re, sys, unicodedata, zipfile
 
+from khoa_ma import Lock
+
+LOCK = Lock()  # mã khu vực / item đã khoá, dùng chung với req_to_template.py
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 CODE = r"[A-Z]{2,4}(?:-[A-Z]{1,4})+-\d{6}"
 
@@ -355,6 +359,8 @@ def build_requirement(rel, P, text, screens, specs, out, mapped=()):
     out["exceptions"] += list(exc.values())
     out["flows"] += list(flows.values())
     title_of = {s["no"]: s["title"] for s in sections}
+    LOCK.start(rel)
+    area_of = {s["no"]: LOCK.area(rel, s["title"], s["no"]) for s in sections}
 
     def target_section(phrase):
         words = norm(phrase.replace("`", "")).split()
@@ -375,7 +381,7 @@ def build_requirement(rel, P, text, screens, specs, out, mapped=()):
     guesses = guess_sections(sections, screens, cited)
     regions = []
     for s in sections:
-        area = f"A{s['no']:02d}"
+        area = f"A{area_of[s['no']]:02d}"
         refs = [c for c in expand_refs(s["head"]) if c in screens]
         guessed = [c for c in guesses.get(s["no"], []) if c not in refs]
         if not refs and not guessed and 0 < len(mapped) <= MAX_FALLBACK_SCREENS:
@@ -398,8 +404,8 @@ def build_requirement(rel, P, text, screens, specs, out, mapped=()):
                 continue
             for row in rows[2:]:
                 c = cells(row)
-                n += 1
                 label = c[0]
+                n = LOCK.item(rel, area_of[s["no"]], label)
                 terms = TERM.findall(label) or [re.sub(r"[*`]", "", label).strip()]
                 detail = " | ".join(c[1:])
                 if not TERM.findall(label):
@@ -440,10 +446,10 @@ def build_requirement(rel, P, text, screens, specs, out, mapped=()):
                     item["status"] = "chua-co-spec"
                 for m in re.finditer(r"[Mm]ở popup ([^.;,)(]+)", detail):
                     sec = target_section(m[1])
-                    item["relations"].append({"type": "opens", "target": f"{P}.A{sec:02d}" if sec else None, "raw": m[0]})
+                    item["relations"].append({"type": "opens", "target": f"{P}.A{area_of[sec]:02d}" if sec else None, "raw": m[0]})
                 for m in re.finditer(r"[Xx]em khu vực ([^.;,)(]+)", detail):
                     sec = target_section(m[1])
-                    item["relations"].append({"type": "see", "target": f"{P}.A{sec:02d}" if sec else None, "raw": m[0]})
+                    item["relations"].append({"type": "see", "target": f"{P}.A{area_of[sec]:02d}" if sec else None, "raw": m[0]})
                 for r in re.findall(r"REQ\d+", detail):
                     item["relations"].append({"type": "governed-by", "target": f"{P}.{r}", "raw": r})
                 region["items"].append(item)
@@ -661,6 +667,7 @@ def main():
             n = md(c, R, f"{args.out}/{name}.md")
             print(f"{args.out}/{name}.md", n, "dòng")
         print(json.dumps(summary(R), ensure_ascii=False))
+    LOCK.save()
 
 
 if __name__ == "__main__":

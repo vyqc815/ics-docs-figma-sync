@@ -55,8 +55,8 @@ def main():
         def rep(m):
             title = m[2].strip()
             r = regions.get((rel, title))
-            if m[1] in approved.get(rel, {}):
-                codes, why = approved[rel][m[1]].split(", "), "design duyệt"
+            if title in approved.get(rel, {}):
+                codes, why = approved[rel][title].split(", "), "design duyệt"
             else:
                 codes, why = pick(r, ids) if r else ([], "không có trong registry")
             if not codes:

@@ -7,6 +7,9 @@ Các màn **Kỹ năng** của app học viên: **Nghe**, **Đọc**, **Nói**. 
 ## 1. UI
 
 ### Trang 1: HV-KN-010000 — Danh sách bài kỹ năng
+
+![Figma mới nhất · HV-KN-010000](https://ics-figma-demo.vercel.app/api/figma-frame/HV-KN-010000.png)
+
 ![Trang 1](./images/01-nghe-danh-sach.png)
 
 *Danh sách bài nghe: tag Đã thuộc / Chưa thuộc, ⭐, loa, Xem chi tiết; chế độ chọn nhiều — nhấn để xem ảnh gốc*
@@ -26,6 +29,9 @@ Các màn **Kỹ năng** của app học viên: **Nghe**, **Đọc**, **Nói**. 
 - Phạm vi: từ bài học chỉ bài kỹ năng gắn bài; từ 247 toàn cấp độ; từ Thư viện bài đã lưu.
 
 ### Trang 2: HV-KN-020000 — Chi tiết bài Nghe
+
+![Figma mới nhất · HV-KN-020000](https://ics-figma-demo.vercel.app/api/figma-frame/HV-KN-020000.png)
+
 ![Trang 2](./images/03-nghe-chi-tiet.png)
 
 *Trình phát audio, nút Phiên âm / Dịch nghĩa / Phụ đề / Tăng tốc, nút Luyện Tập; vùng khối thoại (trống trong ảnh) — nhấn để xem ảnh gốc*
@@ -47,6 +53,9 @@ Các màn **Kỹ năng** của app học viên: **Nghe**, **Đọc**, **Nói**. 
 - Khác ảnh: ảnh vẽ vùng khối thoại trống; requirement hiển thị khối thoại ngay dưới hàng nút.
 
 ### Trang 3: HV-KN-030000 — Chi tiết bài Đọc
+
+![Figma mới nhất · HV-KN-030000](https://ics-figma-demo.vercel.app/api/figma-frame/HV-KN-030000.png)
+
 **Mô tả:**
 
 - Đọc đoạn văn chia câu, từ vựng được highlight để tra nghĩa, tuỳ chỉnh chế độ dịch và cỡ chữ, 💡 Đã thuộc, ⭐ lưu, `Luyện Tập`.
@@ -64,6 +73,9 @@ Các màn **Kỹ năng** của app học viên: **Nghe**, **Đọc**, **Nói**. 
 - 💡 Đã thuộc cập nhật % Đọc; ⭐ lưu thư viện.
 
 ### Trang 4: HV-KN-040000 — Chi tiết bài Nói và luyện nói
+
+![Figma mới nhất · HV-KN-040000](https://ics-figma-demo.vercel.app/api/figma-frame/HV-KN-040000.png)
+
 **Mô tả:**
 
 - Bài Nói gồm 2 tab `Từ vựng` và `Câu`; mỗi mục có gốc, nghĩa, audio mẫu và 3 tim đánh giá phát âm; bấm mục vào màn luyện nói: nghe mẫu, nhấn giữ mic ghi âm, app chấm và hiện số tim; đạt 3 tim = Đã thuộc.
@@ -82,6 +94,9 @@ Các màn **Kỹ năng** của app học viên: **Nghe**, **Đọc**, **Nói**. 
 - Bài Nói lấy từ tab Nói của S6; nếu trung tâm chưa có bài Nói thì kỹ năng không hiện.
 
 ### Trang 5: HV-KN-050000 — Luyện tập Nghe / Đọc
+
+![Figma mới nhất · HV-KN-050000](https://ics-figma-demo.vercel.app/api/figma-frame/HV-KN-050000.png)
+
 **Mô tả:**
 
 - Popup `Luyện Tập` của bài Nghe / Đọc có 3 chế độ dùng khối thoại / câu của bài và bộ câu hỏi của bài.

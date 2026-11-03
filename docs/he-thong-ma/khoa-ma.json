@@ -1,0 +1,4434 @@
+{
+ "account_management/account_management.md": {
+  "areas": {
+   "danh sach tai khoan": 1,
+   "popup tao chinh sua tai khoan": 2,
+   "toast phan hoi crud": 3
+  },
+  "items": {
+   "3": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "action_board_requirement/action_board_requirements.md": {
+  "areas": {
+   "action board tong quat": 1,
+   "danh sach action trong category": 5,
+   "khu vuc category va action": 3,
+   "khu vuc cay package": 2,
+   "khu vuc ket qua theo nguoi so huu": 9,
+   "noi dung action loai deadline xac thuc va log": 6,
+   "noi dung action loai huong dan": 7,
+   "noi dung action loai media": 8,
+   "popup chon loai action": 4,
+   "toast phan hoi crud": 10
+  },
+  "items": {
+   "1": {
+    "act": 3,
+    "ban giao nghiep vu": 21,
+    "ban giao tai khoan": 19,
+    "ban giao tai lieu": 20,
+    "cac vong phong van": 12,
+    "cate": 2,
+    "cau hoi thong tin phong van": 10,
+    "danh gia sau dao tao": 16,
+    "dau ra dao tao": 15,
+    "mo ta cong viec": 9,
+    "nhat ky cong viec": 22,
+    "onboarding": 18,
+    "pack": 1,
+    "pack 2subs": 5,
+    "pack 3subs": 6,
+    "pack roles": 7,
+    "pack subs": 4,
+    "pack subs roles": 8,
+    "quy trinh dao tao": 13,
+    "review": 23,
+    "tai lieu dao tao": 14,
+    "thu viec sau dao tao": 17,
+    "tieu chuan ung vien": 11
+   },
+   "10": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   },
+   "2": {
+    "loai node": 3,
+    "mo ta package": 2,
+    "parent": 4,
+    "role node": 7,
+    "ten package": 1,
+    "thu tu": 6,
+    "trang thai": 5
+   },
+   "3": {
+    "category": 9,
+    "file": 11,
+    "loai action": 10,
+    "mo ta action": 8,
+    "mo ta category": 2,
+    "package": 3,
+    "tag": 4,
+    "ten action": 7,
+    "ten category": 1,
+    "thu tu": 6,
+    "thu tu#2": 14,
+    "trang thai": 5,
+    "trang thai#2": 13,
+    "url media": 12
+   },
+   "6": {
+    "deadline": 1,
+    "deadline#2": 2,
+    "deadline#3": 3,
+    "log": 8,
+    "log#2": 9,
+    "xac thuc": 4,
+    "xac thuc#2": 5,
+    "xac thuc#3": 6,
+    "xac thuc#4": 7
+   },
+   "7": {
+    "danh sach file": 4,
+    "file huong dan": 2,
+    "loai file": 3,
+    "mo ta": 1
+   },
+   "8": {
+    "file media": 2,
+    "loai file": 3,
+    "preview": 4,
+    "url": 1
+   },
+   "9": {
+    "danh gia": 3,
+    "file url": 5,
+    "ghi chu": 4,
+    "kiem tra": 2,
+    "nguoi so huu": 1,
+    "tag category theo nguoi so huu": 7,
+    "task": 6
+   }
+  }
+ },
+ "appointment_requirement/appointment_requirements.md": {
+  "areas": {
+   "bo loc va lua chon uu tien trang thai": 2,
+   "chinh do uu tien va trang thai tren dong": 4,
+   "danh sach lich hen": 1,
+   "nut xoa va popup xac nhan lich hen": 6,
+   "popup review bang chia lich hen": 5,
+   "popup them lich hen moi": 3,
+   "toast phan hoi crud": 7
+  },
+  "items": {
+   "1": {
+    "badge phan trang": 6,
+    "bang": 2,
+    "bon tab": 1,
+    "doi tuong": 5,
+    "nguoi phu trach": 4,
+    "thoi gian ghi chu": 3,
+    "xoa": 7
+   },
+   "2": {
+    "do uu tien": 4,
+    "nguoi theo doi nguoi phu trach": 2,
+    "thoi gian": 3,
+    "trang thai": 5,
+    "trung tam": 1
+   },
+   "3": {
+    "do uu tien": 6,
+    "doi tuong": 5,
+    "ghi chu": 2,
+    "huy them lich hen": 10,
+    "nguoi phu trach": 8,
+    "noi dung": 1,
+    "theo doi": 9,
+    "thoi gian": 3,
+    "trang thai": 7,
+    "trung tam": 4
+   },
+   "4": {
+    "do uu tien": 1,
+    "nguoi sua": 3,
+    "trang thai": 2
+   },
+   "5": {
+    "cot cum the": 2,
+    "keo tha cum": 5,
+    "keo tha the": 4,
+    "tab bo loc": 1,
+    "the lich hen": 3
+   },
+   "6": {
+    "bieu tuong xoa": 1,
+    "ket qua": 3,
+    "popup xac nhan": 2
+   },
+   "7": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "class_handler_support/overview/overview.md": {
+  "areas": {
+   "thong ke tong quan": 1
+  },
+  "items": {
+   "1": {
+    "badge hang tong": 17,
+    "btvn": 15,
+    "che do loc": 6,
+    "chua hoan thanh dang hoc": 19,
+    "di hoc": 14,
+    "doanh thu": 9,
+    "hoan thanh": 18,
+    "khoa hoc": 3,
+    "kpi lop": 12,
+    "kpi nhan duoc": 11,
+    "len ky": 16,
+    "loai lop": 2,
+    "ngay bat dau du kien chinh thuc": 7,
+    "ngay ket thuc du kien chinh thuc": 8,
+    "so kpi": 10,
+    "so lop": 13,
+    "thoi gian nut hien thi gia tri dang chon": 5,
+    "trang thai nut hien thi gia tri dang chon": 4,
+    "trung tam": 1
+   }
+  }
+ },
+ "class_handler_support/process/process.md": {
+  "areas": {
+   "ca truc": 3,
+   "popup them nguoi vao danh sach support": 4,
+   "task hom nay task tuan nay task thang nay ca truc": 1,
+   "task khac va popup chon quy trinh": 2
+  },
+  "items": {
+   "1": {
+    "ca truc": 8,
+    "cot thoi gian": 4,
+    "danh gia": 11,
+    "danh sach task": 3,
+    "deadline xac thuc log": 15,
+    "dropdown quy trinh": 2,
+    "huong dan media": 14,
+    "kiem tra": 10,
+    "sidebar": 1,
+    "task hom nay": 5,
+    "task khac": 9,
+    "task nhap lieu": 13,
+    "task thang nay": 7,
+    "task tien trinh": 12,
+    "task tuan nay": 6
+   },
+   "2": {
+    "danh sach task": 2,
+    "nut chon quy trinh": 1,
+    "popup danh sach": 4,
+    "popup huy xac nhan": 5,
+    "popup o tim kiem": 3
+   },
+   "3": {
+    "chieu": 5,
+    "dropdown ca": 3,
+    "dropdown khoang thoi gian": 2,
+    "dropdown quy trinh": 1,
+    "sang": 4,
+    "toi": 6
+   },
+   "4": {
+    "checkbox": 3,
+    "nhom nguoi dung": 2,
+    "o tim kiem": 1
+   }
+  }
+ },
+ "class_handler_support/statistics/statistics.md": {
+  "areas": {
+   "dropdown trinh do va hoc ky": 2,
+   "thong ke": 1
+  },
+  "items": {
+   "1": {
+    "doanh thu": 13,
+    "doanh thu#2": 14,
+    "hoc ky": 4,
+    "kpi": 5,
+    "kpi#2": 6,
+    "lop": 7,
+    "lop#2": 8,
+    "lop#3": 9,
+    "thoi gian nut hien thi gia tri dang chon": 2,
+    "ti le": 10,
+    "ti le#2": 11,
+    "ti le#3": 12,
+    "trinh do": 3,
+    "trung tam": 1
+   }
+  }
+ },
+ "course_management/course_management.md": {
+  "areas": {
+   "danh sach khoa hoc": 1,
+   "menu chi tiet khoa hoc": 2,
+   "popup nhan ban khoa hoc": 4,
+   "popup xac nhan cong khai khoa hoc": 3
+  },
+  "items": {
+   "4": {
+    "noi dung": 2,
+    "nut": 3,
+    "tieu de": 1,
+    "toast loi": 5,
+    "toast thanh cong": 4
+   }
+  }
+ },
+ "course_management/homework-test/homework-test.md": {
+  "areas": {
+   "bai chua co cau hoi": 4,
+   "bang cau hoi": 3,
+   "bo cau hoi thanh cong cu va the tong quan": 2,
+   "generate bai tap bang ai popup nhap yeu cau": 9,
+   "generate bang n dong": 11,
+   "generate dang tao bang va loi": 10,
+   "generate sau khi tao": 12,
+   "import export excel": 7,
+   "khung man cay ky va bai": 1,
+   "popup chon loai cau": 5,
+   "popup soan cau hoi": 6,
+   "soat loi bang ai": 8,
+   "toast phan hoi crud": 13
+  },
+  "items": {
+   "1": {
+    "chon bai": 4,
+    "ky cong khai vo hieu": 5,
+    "o tim bai hoc tim bai kiem tra": 3,
+    "tab btvn": 1,
+    "tab kiem tra": 2
+   },
+   "10": {
+    "dang tao bang generate": 1,
+    "loi": 2
+   },
+   "11": {
+    "cot": 2,
+    "dong tom tat": 1,
+    "huy nut": 5,
+    "thanh chon": 3,
+    "them n cau da chon": 4
+   },
+   "12": {
+    "badge tong": 2,
+    "cau moi": 1,
+    "the tong quan": 3
+   },
+   "13": {
+    "canh bao": 2,
+    "loi": 3,
+    "thanh cong": 1
+   },
+   "2": {
+    "import excel export excel": 2,
+    "preview mobile": 3,
+    "soat loi bang ai": 6,
+    "tao cau hoi bang ai": 5,
+    "the co cau theo dang cau": 9,
+    "the thoi gian lam bai": 8,
+    "the tong so cau": 7,
+    "them cau hoi": 4,
+    "tieu de": 1
+   },
+   "3": {
+    "cau hoi con": 3,
+    "checkbox": 8,
+    "cot": 1,
+    "dap an dung": 2,
+    "loc kien thuc ky nang": 7,
+    "loc loai cau": 6,
+    "menu": 9,
+    "nhap nhanh cuoi bang": 10,
+    "o tim cau hoi": 5,
+    "phan trang": 11,
+    "tag ai": 4
+   },
+   "4": {
+    "import excel": 4,
+    "tao cau hoi bang ai": 3,
+    "them cau hoi": 2,
+    "tieu de": 1
+   },
+   "5": {
+    "cau hoi con": 8,
+    "doc": 5,
+    "hinh anh": 7,
+    "noi": 4,
+    "noi tu": 3,
+    "sap xep": 2,
+    "trac nghiem": 1,
+    "viet": 6
+   },
+   "6": {
+    "cau hoi con": 16,
+    "dap an": 8,
+    "doc viet hinh anh": 15,
+    "giai thich dap an": 9,
+    "hinh anh am thanh": 7,
+    "huong dan": 5,
+    "huy luu cau hoi": 10,
+    "kien thuc ky nang": 4,
+    "loai cau": 3,
+    "noi": 14,
+    "noi dung cau hoi": 6,
+    "noi tu": 13,
+    "sap xep": 12,
+    "so cau": 2,
+    "tieu de": 1,
+    "trac nghiem": 11
+   },
+   "7": {
+    "cot file": 1,
+    "export": 2,
+    "import cau trung": 5,
+    "import dong bat buoc": 3,
+    "import loi du lieu": 4,
+    "import thanh cong": 6
+   },
+   "8": {
+    "ket qua": 3,
+    "pham vi": 1,
+    "van de phat hien": 2,
+    "xu ly": 4
+   },
+   "9": {
+    "dang cau hoi": 4,
+    "ghi chu": 5,
+    "huy generate": 6,
+    "so cau": 3,
+    "tab chon kien thuc ky nang": 2,
+    "tab nhap prompt": 1
+   }
+  }
+ },
+ "course_management/knowledge-s1/knowledge-s1.md": {
+  "areas": {
+   "ai them bang ai dien thieu soat loi tao lai": 13,
+   "bang danh sach tim kiem sap xep va loc": 3,
+   "chi tiet muc drawer": 8,
+   "chon nhieu va thao tac hang loat": 9,
+   "cum lien ket voi chi tiet bai hoc": 16,
+   "field cua tung loai kien thuc": 2,
+   "khung man hinh va tab loai kien thuc": 1,
+   "menu thao tac dong va sua muc": 7,
+   "menu them popup them tu thu vien du lieu": 4,
+   "nhap nhanh cuoi bang": 6,
+   "panel cum va so cum": 11,
+   "popup chia cum bang ai": 12,
+   "popup them theo list": 5,
+   "popup them vao cum go khoi cum": 10,
+   "popup xac nhan go muc khoi khoa": 15,
+   "preview mobile": 14,
+   "toast phan hoi crud": 17
+  },
+  "items": {
+   "1": {
+    "dac nhan creative english betreux creatis": 11,
+    "panel cum": 8,
+    "preview mobile": 4,
+    "saechang": 10,
+    "sakumi": 9,
+    "switch center header": 1,
+    "tab loai kien thuc": 2,
+    "thanh cong cu": 7,
+    "them": 5,
+    "them bang ai": 6,
+    "tieu de bang": 3
+   },
+   "10": {
+    "danh sach cum": 3,
+    "huy luu": 4,
+    "tieu de": 1,
+    "tim cum": 2
+   },
+   "11": {
+    "chia cum bang ai": 3,
+    "chua phan cum": 6,
+    "dong cum": 7,
+    "popup lien ket bai hoc": 8,
+    "so cum": 2,
+    "tat ca": 5,
+    "tat ca cum badge n cum": 1,
+    "them cum moi": 9,
+    "tim cum": 4
+   },
+   "12": {
+    "de xuat cua ai": 7,
+    "ghi chu pham vi": 8,
+    "goi y nhanh": 4,
+    "huy tao lai ap dung m cum": 9,
+    "pham vi chia cum": 2,
+    "so tu cum": 3,
+    "tao de xuat": 6,
+    "tieu de mo ta": 1,
+    "yeu cau them cho ai prompt": 5
+   },
+   "13": {
+    "diem goi dien thieu": 2,
+    "diem goi soat loi": 6,
+    "field chinh bat buoc truoc khi dien thieu": 3,
+    "ket qua dien thieu": 5,
+    "o ai nghi sai": 8,
+    "popup them bang ai": 1,
+    "tao lai chi tiet muc": 9,
+    "thanh ket qua soat loi": 7,
+    "thanh tien do dien thieu": 4
+   },
+   "14": {
+    "dieu huong": 6,
+    "nut": 1,
+    "tab dang the": 3,
+    "the": 4,
+    "thiet bi": 2,
+    "thong tin thieu": 5
+   },
+   "15": {
+    "ghi chu": 3,
+    "huy": 4,
+    "muc chua phan cum hoac cum chua lien ket": 6,
+    "noi dung": 2,
+    "tieu de": 1,
+    "xac nhan go": 5
+   },
+   "16": {
+    "bo loc loai": 2,
+    "dong bo": 4,
+    "nguon du lieu": 1,
+    "tieu de khung": 3
+   },
+   "17": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   },
+   "2": {
+    "audio": 20,
+    "audio phat am": 29,
+    "bang chu tieng han hangul": 8,
+    "bang chu tieng nhat kana": 7,
+    "bo thu kanji han tu": 18,
+    "cach dung luu y ngu phap": 15,
+    "chuoi tim kiem kanji": 19,
+    "cum": 30,
+    "hang bang chu nhat": 25,
+    "hanzi": 4,
+    "hanzi#2": 11,
+    "hiragana katakana bang chu nhat": 23,
+    "kanji": 5,
+    "kanji#2": 10,
+    "loai am nhom thanh dieu phat am": 28,
+    "loai bang chu han": 26,
+    "loai bang chu nhat": 24,
+    "mau cau": 3,
+    "nang cao": 16,
+    "nghia han tu": 17,
+    "ngu phap": 2,
+    "phat am tieng trung pinyin": 6,
+    "phien am": 21,
+    "phien am bang chu han": 27,
+    "phien am tung chu furigana": 13,
+    "tu loai": 12,
+    "tu vung": 1,
+    "tu vung tieng trung": 9,
+    "vi du": 14,
+    "video ngu phap": 22
+   },
+   "3": {
+    "?": 5,
+    "checkbox": 1,
+    "cot field": 3,
+    "cum": 4,
+    "nang cao": 9,
+    "nhap nhanh": 11,
+    "phan trang": 10,
+    "sap xep": 7,
+    "stt tay nam keo tha": 2,
+    "tim kiem": 6,
+    "trang thai": 8
+   },
+   "4": {
+    "cap do tu loai": 4,
+    "chan popup": 7,
+    "danh sach": 5,
+    "kho": 3,
+    "them vao cum": 6,
+    "tieu de mo ta": 1,
+    "tim kiem": 2
+   },
+   "5": {
+    "ai tu dien con thieu": 4,
+    "bang chu tieng han": 16,
+    "bang chu tieng nhat": 15,
+    "chan popup": 8,
+    "han tu": 12,
+    "kanji": 13,
+    "mau cau": 11,
+    "ngu phap": 10,
+    "o van ban": 2,
+    "phat am tieng trung": 14,
+    "tach cot bang": 3,
+    "them vao cum": 7,
+    "tieu de mo ta": 1,
+    "tu chia cum bang ai sau khi import": 5,
+    "tu vung": 9,
+    "xem truoc": 6
+   },
+   "6": {
+    "enter": 2,
+    "o nhap": 1
+   },
+   "7": {
+    "dien thieu bang ai": 3,
+    "mo chi tiet": 2,
+    "nhan ban": 5,
+    "sua nhanh inline": 1,
+    "them vao cum go khoi cum": 4,
+    "xoa khoi danh sach": 6
+   },
+   "8": {
+    "audio": 7,
+    "chan drawer": 10,
+    "cum": 9,
+    "field bat buoc": 2,
+    "han viet": 4,
+    "nang cao": 6,
+    "tao lai": 5,
+    "tieu de": 1,
+    "tu loai": 3,
+    "vi du": 8
+   },
+   "9": {
+    "bo chon": 6,
+    "chon tat ca n tu": 2,
+    "da chon n tu": 1,
+    "dien thieu bang ai k": 3,
+    "them vao cum go khoi cum": 4,
+    "xoa n": 5
+   }
+  }
+ },
+ "course_management/learning-path-s2/learning-path-s2.md": {
+  "areas": {
+   "noi dung buoi hoc lo trinh s2": 1
+  },
+  "items": {}
+ },
+ "course_management/library/library.md": {
+  "areas": {
+   "khung chung cua thu vien": 1,
+   "thu vien bai tap": 6,
+   "thu vien bai tap chi tiet cau hoi": 7,
+   "thu vien kien thuc": 3,
+   "thu vien kien thuc tab bang chu": 4,
+   "thu vien ky nang": 5,
+   "toast phan hoi crud": 8,
+   "trang thai va xoa muc": 2
+  },
+  "items": {
+   "1": {
+    "badge tong so": 6,
+    "cot cum": 8,
+    "cot dang dung o": 9,
+    "cot nang cao": 10,
+    "cot trang thai": 11,
+    "loc cap do": 5,
+    "loc nang cao": 4,
+    "menu cuoi dong": 12,
+    "o tim kiem": 3,
+    "o trong": 13,
+    "phan trang": 14,
+    "thanh tab": 2,
+    "tieu de mo ta": 1,
+    "xoa bo loc": 7
+   },
+   "2": {
+    "doi trang thai": 1,
+    "muc cong khai": 3,
+    "muc dang dung": 4,
+    "xoa": 2
+   },
+   "3": {
+    "badge tong so": 8,
+    "cot tab hanzi": 5,
+    "cot tab kanji": 6,
+    "cot tab mau cau": 4,
+    "cot tab ngu phap": 3,
+    "cot tab phat am": 7,
+    "cot tab tu vung": 2,
+    "thanh tab": 1
+   },
+   "4": {
+    "danh sach tieng han": 5,
+    "danh sach tieng nhat": 1,
+    "hang nhat": 3,
+    "loai han": 6,
+    "loai nhat": 2,
+    "luoi tieng han": 7,
+    "luoi tieng nhat": 4,
+    "menu": 10,
+    "panel chi tiet chu": 8,
+    "tim kiem cap do o dang luoi": 9
+   },
+   "5": {
+    "badge tong so": 7,
+    "cot tab doc": 2,
+    "cot tab nghe": 1,
+    "cot tab noi": 4,
+    "cot tab viet": 3,
+    "phat am thanh": 6,
+    "so cau hoi": 5,
+    "tim kiem": 8
+   },
+   "6": {
+    "bam dong cau hoi": 8,
+    "bam dong tab mau": 11,
+    "cau hoi con": 5,
+    "dap an dung": 3,
+    "kien thuc ky nang": 4,
+    "loai cau": 2,
+    "tab btvn mau": 9,
+    "tab kiem tra mau": 10,
+    "tab ngan hang cau hoi": 1,
+    "tag ai": 7,
+    "tim kiem": 12,
+    "trang thai": 6
+   },
+   "7": {
+    "audio theo kich ban": 8,
+    "bo tu khoa": 22,
+    "cau con dap an": 24,
+    "che do chi xem": 6,
+    "chip ngon ngu": 3,
+    "chon tu co san": 23,
+    "dat lam tu khoa": 19,
+    "hien thi cho hoc vien": 14,
+    "hien thi cho hoc vien#2": 25,
+    "huy": 4,
+    "kich ban": 7,
+    "lua chon dap an": 9,
+    "luot thoai": 10,
+    "luu cau hoi": 5,
+    "nut": 1,
+    "o chon doi tuong": 12,
+    "panel doi tuong": 13,
+    "popup chi tiet tu khoa": 18,
+    "popup them tu khoa": 20,
+    "sua cau": 16,
+    "sua tu khoa": 21,
+    "them luot": 11,
+    "tieu de": 2,
+    "tu khoa n": 17,
+    "van ban": 15
+   },
+   "8": {
+    "canh bao": 2,
+    "loi": 3,
+    "thanh cong": 1
+   }
+  }
+ },
+ "course_management/overview-s1/overview-s1.md": {
+  "areas": {
+   "khu vuc bang noi dung buoi hoc": 2,
+   "khu vuc them noi dung buoi hoc moi": 3,
+   "toast phan hoi crud": 4,
+   "tong quan s1": 1
+  },
+  "items": {
+   "1": {
+    "so buoi": 1,
+    "thoi gian con lai": 5,
+    "thoi gian moi buoi": 2,
+    "thoi gian thuc te": 4,
+    "tong thoi gian": 3
+   },
+   "2": {
+    "?": 7,
+    "id": 1,
+    "mo ta": 3,
+    "so buoi": 4,
+    "ten": 2,
+    "thao tac": 8,
+    "thoi gian hoc": 5,
+    "tong thoi gian": 6
+   },
+   "4": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "course_management/semester/information/information.md": {
+  "areas": {
+   "popup nhan ban hoc ky": 5,
+   "popup xoa hoc ky": 4,
+   "trang 1 1 danh sach ky ben phai": 1,
+   "trang 1 2 tab thong tin ben trai": 2,
+   "trang 1 3 popup kich hoat cong khai hoc ky": 3
+  },
+  "items": {
+   "2": {
+    "code": 5,
+    "data token type text data version so": 8,
+    "id hoc ky": 4,
+    "ma hoc ky": 3,
+    "so buoi hoc": 6,
+    "ten hoc ky": 2,
+    "ten mo ta dau tab": 1,
+    "tong on": 9,
+    "trinh do danh muc": 7
+   },
+   "3": {
+    "hien thi": 2,
+    "luu y": 5,
+    "nut": 6,
+    "o id hoc ky": 3,
+    "thong bao duoi o id": 4,
+    "tieu de": 1
+   },
+   "5": {
+    "noi dung": 2,
+    "nut": 3,
+    "tieu de": 1,
+    "toast": 4
+   }
+  }
+ },
+ "course_management/semester/lesson/lesson.md": {
+  "areas": {
+   "danh sach bai hoc tab bai hoc": 1,
+   "popup chi tiet bai hoc tab kien thuc": 5,
+   "popup chi tiet bai hoc tab ky nang moi ui can bo sung figma": 6,
+   "popup chi tiet bai hoc tab noi dung": 3,
+   "popup chi tiet bai hoc tab tai nguyen": 4,
+   "popup chi tiet bai hoc tab thong tin": 2
+  },
+  "items": {
+   "2": {
+    "noi dung": 2,
+    "nut": 3,
+    "tieu de": 1
+   },
+   "3": {
+    "0 va 80": 9,
+    "00 00 00": 10,
+    "100": 11,
+    "80 90": 8,
+    "90 100": 7,
+    "badge tab": 6,
+    "gioi han": 3,
+    "keo tha": 5,
+    "them nhom": 1,
+    "them noi dung": 2,
+    "xoa": 4
+   }
+  }
+ },
+ "course_management/semester/test/test.md": {
+  "areas": {
+   "danh sach bai kiem tra": 1,
+   "popup bai kiem tra tab bo cau hoi": 3,
+   "popup bai kiem tra tab thong tin": 2,
+   "toast phan hoi crud": 4
+  },
+  "items": {
+   "1": {
+    "card bai kiem tra": 1,
+    "chip so cau": 3,
+    "chip thoi gian": 2,
+    "keo tha": 5,
+    "them bai kiem tra moi": 4,
+    "thu tu mac dinh": 7,
+    "xoa bai": 6
+   },
+   "2": {
+    "diem dat": 6,
+    "do kho": 2,
+    "dong": 8,
+    "hop luu y": 7,
+    "mo ta": 3,
+    "so cau hoi": 5,
+    "thoi gian lam bai": 4,
+    "tieu de": 1
+   },
+   "3": {
+    "bang cau hoi": 3,
+    "nut thao tac": 1,
+    "the tong quan": 2,
+    "them sua cau import export generate soat loi": 4
+   },
+   "4": {
+    "canh bao": 2,
+    "loi": 3,
+    "thanh cong": 1
+   }
+  }
+ },
+ "course_management/skill-s6/skill-s6.md": {
+  "areas": {
+   "bang bai doc": 3,
+   "bang bai nghe": 2,
+   "chon nhieu va thao tac hang loat": 10,
+   "cum lien ket voi chi tiet bai hoc": 20,
+   "drawer chi tiet bai doc": 7,
+   "drawer chi tiet bai nghe": 6,
+   "import export excel": 15,
+   "khung man hinh va tab ky nang": 1,
+   "man trong": 14,
+   "menu thao tac dong va popup them vao cum go khoi cum": 8,
+   "nhap nhanh": 9,
+   "panel cum va so cum": 4,
+   "popup go khoi khoa": 13,
+   "popup tao bai moi": 12,
+   "popup them bai tu thu vien": 11,
+   "preview mobile": 19,
+   "soat loi bang ai": 18,
+   "tao cau hoi bang ai tab doc": 17,
+   "tim kiem loc va sap xep": 5,
+   "toast phan hoi crud": 21,
+   "transcript bang ai": 16
+  },
+  "items": {
+   "1": {
+    "footer": 6,
+    "hang tim kiem": 4,
+    "khoa hoc": 2,
+    "nhap nhanh": 5,
+    "tab ky nang": 1,
+    "them bai nghe": 7,
+    "toolbar tieu de": 3
+   },
+   "10": {
+    "bo chon": 7,
+    "chon tat ca n bai nghe": 2,
+    "da chon n bai nghe": 1,
+    "go khoi khoa n": 6,
+    "soat loi ai": 4,
+    "them vao cum go khoi cum": 5,
+    "transcript ai k nghe tao cau hoi bang ai k doc": 3
+   },
+   "11": {
+    "bang": 6,
+    "cap do": 4,
+    "dang cau": 5,
+    "footer": 8,
+    "kho": 3,
+    "o tim": 2,
+    "them vao cum": 7,
+    "tieu de": 1
+   },
+   "12": {
+    "am thanh nghe": 5,
+    "doan van doc": 6,
+    "footer": 8,
+    "mo ta": 4,
+    "tao transcript bang ai sau khi tai len nghe": 7,
+    "ten bai": 2,
+    "them vao cum": 3,
+    "tieu de": 1
+   },
+   "13": {
+    "ghi chu": 3,
+    "noi dung": 2,
+    "nut": 4,
+    "tieu de": 1
+   },
+   "14": {
+    "panel cum": 2,
+    "toolbar": 1
+   },
+   "15": {
+    "export": 12,
+    "import dong bat buoc": 9,
+    "import loi du lieu": 10,
+    "import sheet": 8,
+    "import thanh cong": 11,
+    "listening": 2,
+    "listening lesson bat buoc": 1,
+    "listening question": 3,
+    "reading": 5,
+    "reading lesson bat buoc": 4,
+    "reading question": 6,
+    "reading vocabulary": 7
+   },
+   "16": {
+    "bang": 2,
+    "duyet": 3,
+    "thanh ai": 1
+   },
+   "17": {
+    "nut toolbar menu dong hang loat": 1,
+    "thanh ai": 2
+   },
+   "18": {
+    "bang": 2,
+    "duyet": 3,
+    "thanh ai": 1
+   },
+   "19": {
+    "bai truoc bai sau": 5,
+    "hien thi": 3,
+    "mo chi tiet bai nghe": 4,
+    "tab": 2,
+    "tieu de": 1
+   },
+   "2": {
+    "am thanh": 4,
+    "bai nghe": 3,
+    "checkbox": 1,
+    "cum": 5,
+    "menu": 7,
+    "nang cao": 6,
+    "nhan ai duoi ten": 8,
+    "stt tay nam keo tha": 2
+   },
+   "20": {
+    "bo loc loai": 2,
+    "dong bo": 4,
+    "nguon du lieu": 1,
+    "tieu de khung": 3
+   },
+   "21": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   },
+   "3": {
+    "bai doc": 2,
+    "cot khac": 4,
+    "doan van": 3,
+    "stt checkbox cum menu": 1
+   },
+   "4": {
+    "chia cum bang ai": 3,
+    "chua phan cum": 6,
+    "dong cum": 4,
+    "popup lien ket bai hoc": 5,
+    "so cum": 2,
+    "tat ca cum badge n cum": 1,
+    "them cum moi": 7
+   },
+   "5": {
+    "cum": 2,
+    "nang cao": 5,
+    "o tim": 1,
+    "sap xep": 3,
+    "trang thai": 4
+   },
+   "6": {
+    "am thanh": 6,
+    "cau hoi": 8,
+    "cum": 4,
+    "footer": 9,
+    "kich ban n luot": 7,
+    "mo ta": 3,
+    "nang cao": 5,
+    "ten bai": 2,
+    "tieu de": 1
+   },
+   "7": {
+    "audio doc mau": 3,
+    "doan van": 2,
+    "ten bai mo ta cum nang cao cau hoi footer": 1,
+    "tu vung lien quan": 4
+   },
+   "8": {
+    "go khoi khoa": 4,
+    "mo chi tiet": 1,
+    "popup danh sach cum": 6,
+    "popup huy luu": 7,
+    "popup tim cum": 5,
+    "them vao cum go khoi cum": 2,
+    "transcript ai nghe tao cau hoi bang ai doc": 3
+   },
+   "9": {
+    "ket qua": 2,
+    "o nhap": 1
+   }
+  }
+ },
+ "curriculum_management_requirement/category_management/category_management_requirements.md": {
+  "areas": {
+   "danh sach danh muc": 1,
+   "form them danh muc": 2,
+   "popup ap dung thanh cong": 8,
+   "popup chi tiet danh muc": 4,
+   "popup kich hoat cong khai danh muc": 3,
+   "popup kich hoat cong khai khoa hoc": 6,
+   "tab mindset tieu chuan giao trinh va huong dan giang day": 7,
+   "tab tong quan": 5
+  },
+  "items": {
+   "2": {
+    "id danh muc tam thoi": 1,
+    "mo ta danh muc": 4,
+    "so khoa hoc": 5,
+    "subject id": 2,
+    "ten danh muc": 3,
+    "trang thai": 6
+   },
+   "3": {
+    "chon cach lay subject id": 2,
+    "huong dan nhap": 9,
+    "huy dong": 11,
+    "loi tu dong tao": 4,
+    "nhap thu cong": 5,
+    "subject id bi trung": 7,
+    "subject id hop le": 6,
+    "subject id sai dinh dang": 8,
+    "thong tin danh muc": 1,
+    "tu dong tao": 3,
+    "xac nhan": 10
+   },
+   "5": {
+    "cap do": 9,
+    "danh sach khoa hoc": 1,
+    "id cong khai cua khoa hoc": 5,
+    "id khoa hoc tam thoi": 4,
+    "mo ta khoa hoc": 7,
+    "so ky": 8,
+    "ten khoa hoc": 6,
+    "them khoa hoc": 3,
+    "tim kiem khoa hoc": 2,
+    "trang thai": 10
+   },
+   "7": {
+    "action item": 3,
+    "luu ap dung": 5,
+    "package category": 2,
+    "tim kiem": 1,
+    "xem truoc noi dung": 4
+   }
+  }
+ },
+ "curriculum_management_requirement/category_management/detail_category.md": {
+  "areas": {
+   "popup chi tiet danh muc": 1,
+   "tab mindset tieu chuan giao trinh va huong dan giang day": 3,
+   "tab tong quan": 2
+  },
+  "items": {
+   "2": {
+    "cap do": 4,
+    "id": 1,
+    "mo ta khoa hoc": 3,
+    "so ky": 5,
+    "ten khoa hoc": 2,
+    "tim kiem": 7,
+    "trang thai": 6
+   },
+   "3": {
+    "action item": 3,
+    "luu ap dung": 4,
+    "package category": 2,
+    "tim kiem": 1
+   }
+  }
+ },
+ "curriculum_management_requirement/level_management/level_management.md": {
+  "areas": {
+   "popup kich hoat cong khai cap do": 4,
+   "thanh them cap do moi": 2,
+   "trang danh sach cap do": 1,
+   "xoa cap do": 3
+  },
+  "items": {
+   "1": {
+    "id": 1,
+    "ma cap do": 4,
+    "mo ta cap do": 3,
+    "ten cap do": 2,
+    "trang thai": 5
+   },
+   "3": {
+    "popup xac nhan xoa": 1,
+    "toast loi khong duoc xoa": 2
+   },
+   "4": {
+    "bieu tuong ket qua kiem tra": 7,
+    "cap do": 1,
+    "ghi chu canh bao": 9,
+    "id cap do": 3,
+    "ma cap do": 6,
+    "nut cong khai cap do": 10,
+    "nut huy bieu tuong x": 11,
+    "nut lam moi id bieu tuong xoay": 5,
+    "o nhap id": 4,
+    "thong bao trang thai": 8,
+    "trang thai hien tai": 2
+   }
+  }
+ },
+ "curriculum_management_requirement/level_management/level_management_requirements.md": {
+  "areas": {
+   "danh sach cap do": 1,
+   "form them cap nhat cap do": 2,
+   "toast phan hoi crud": 3
+  },
+  "items": {
+   "2": {
+    "id": 1,
+    "ma cap do": 4,
+    "mo ta cap do": 3,
+    "ten cap do": 2,
+    "trang thai": 5
+   },
+   "3": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "login_ics/login_requirements.md": {
+  "areas": {
+   "chon tai khoan": 5,
+   "chon trung tam sau dang nhap": 7,
+   "dang nhap": 1,
+   "dat lai mat khau tu email": 3,
+   "doi mat khau trong ho so ca nhan": 4,
+   "quen mat khau": 2,
+   "them tai khoan": 6
+  },
+  "items": {}
+ },
+ "management_requirement/class_management/class_creation_requirements.md": {
+  "areas": {
+   "bo chon phu trach chinh cskh chinh": 6,
+   "khoa hoc so buoi va lich duoc sinh": 3,
+   "loai lop": 4,
+   "lop khong chinh thuc": 2,
+   "phan quyen tao lop va du lieu bat buoc": 7,
+   "popup them lich day co dinh": 5,
+   "popup them lop hoc": 1,
+   "rang buoc lien quan den trang thai dang hoc": 9,
+   "toast phan hoi crud": 10,
+   "trang thai sau khi tao lop": 8
+  },
+  "items": {
+   "1": {
+    "cskh chinh": 12,
+    "ghi chu": 9,
+    "huy": 14,
+    "khoa hoc": 3,
+    "link google meet": 10,
+    "loai lop": 5,
+    "lop khong chinh thuc": 1,
+    "ma lop": 6,
+    "mo ta": 8,
+    "ngay bat dau ngay ket thuc": 7,
+    "phu trach chinh": 11,
+    "so buoi": 4,
+    "them lich day": 13,
+    "trung tam": 2,
+    "xac nhan": 15
+   },
+   "10": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_appointments_requirements.md": {
+  "areas": {
+   "chinh sua lich hen chi owner": 3,
+   "phan trang danh sach lich hen": 2,
+   "tab lich hen danh sach lich hen cua lop": 1,
+   "toast phan hoi crud": 4
+  },
+  "items": {
+   "1": {
+    "do uu tien": 7,
+    "doi tuong": 6,
+    "ghi chu": 4,
+    "nguoi phu trach": 5,
+    "nguoi theo doi": 9,
+    "noi dung": 3,
+    "tab lich hen": 1,
+    "thoi gian": 2,
+    "trang thai": 8,
+    "trang thai tai": 10
+   },
+   "2": {
+    "dieu huong": 4,
+    "khoang dang xem": 3,
+    "so dong moi trang": 1,
+    "thu tu": 5,
+    "tong so": 2
+   },
+   "3": {
+    "dang luu": 4,
+    "dropdown do uu tien": 1,
+    "dropdown trang thai": 2,
+    "ket qua": 5,
+    "quyen chinh": 3
+   },
+   "4": {
+    "canh bao": 3,
+    "loi": 2,
+    "thanh cong": 1,
+    "thong tin": 4
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_homework_tests_requirements.md": {
+  "areas": {
+   "bang trang thai ket qua cua tung hoc vien": 5,
+   "khoi tong quan": 2,
+   "khung menu bai tap va kiem tra": 1,
+   "reset btvn kiem tra cho hoc vien": 6,
+   "tab btvn kiem tra badge va card bai": 3,
+   "toast phan hoi reset": 7,
+   "ty le cham bai tren tung card": 4
+  },
+  "items": {
+   "1": {
+    "chon card": 2,
+    "chon tab": 1,
+    "loading rong loi": 5,
+    "search": 3,
+    "them bai kiem tra": 4
+   },
+   "2": {
+    "chevron": 7,
+    "da cham btvn": 4,
+    "da cham kiem tra": 1,
+    "diem btvn": 6,
+    "diem kt": 3,
+    "kiem tra da giao": 2,
+    "ti le lam btvn": 5
+   },
+   "3": {
+    "badge tab": 1,
+    "card chua giao": 5,
+    "mo ta": 6,
+    "so nop bai": 3,
+    "trang thai card": 2,
+    "vong": 4
+   },
+   "4": {
+    "s 0": 5,
+    "sau khi du lieu thay doi": 6,
+    "so da cham c": 2,
+    "so da nop s": 1,
+    "vi du 0 3": 4,
+    "vi du 3 3": 3
+   },
+   "5": {
+    "chua nop": 2,
+    "da cham": 4,
+    "da nop chua cham": 3,
+    "reset tung dong": 7,
+    "so cau bo qua": 6,
+    "ten hoc vien": 1,
+    "thoi gian lam bai": 5
+   },
+   "6": {
+    "ket qua reset": 3,
+    "loi chong lap": 5,
+    "pham vi": 1,
+    "thanh cong": 4,
+    "xac nhan": 2
+   },
+   "7": {
+    "canh bao": 3,
+    "co loi xay ra": 2,
+    "component": 5,
+    "thanh cong": 1,
+    "thong bao": 4
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_information_requirements.md": {
+  "areas": {
+   "dropdown chon khoa hoc": 2,
+   "dropdown trang thai": 4,
+   "nhom ngay bat dau ngay ket thuc va lich duoc sinh": 3,
+   "popup xac nhan xoa lop lan 1": 5,
+   "popup xac nhan xoa lop lan 2": 6,
+   "tab thong tin lop hoc": 1,
+   "toast phan hoi crud": 7
+  },
+  "items": {
+   "1": {
+    "ghi chu": 5,
+    "khoa hoc": 4,
+    "link google meet": 3,
+    "loai lop": 9,
+    "lop khong chinh thuc": 1,
+    "luu cap nhat": 11,
+    "ma lop": 2,
+    "mo ta": 6,
+    "ngay bat dau": 7,
+    "ngay ket thuc": 8,
+    "trang thai": 10,
+    "xoa lop": 12
+   },
+   "2": {
+    "chon khoa hoc moi": 4,
+    "danh sach khoa hoc": 3,
+    "gia tri hien tai": 1,
+    "o tim kiem": 2
+   },
+   "3": {
+    "doi lich mot buoi": 6,
+    "khung gio bi trung": 7,
+    "lich buoi duoc chen": 4,
+    "lich co dinh": 3,
+    "ngay bat dau": 1,
+    "ngay ket thuc": 2,
+    "xoa huy mot buoi co tinh vao chuong trinh": 5
+   },
+   "4": {
+    "danh sach trang thai": 2,
+    "moi tao khai giang trai nghiem dang hoc tam dung hoan thanh hoac huy": 4,
+    "trang thai dang hoc": 3,
+    "trang thai hien tai": 1,
+    "xoa": 5
+   },
+   "5": {
+    "huy": 3,
+    "noi dung": 2,
+    "tiep tuc": 4,
+    "tieu de": 1
+   },
+   "6": {
+    "noi dung": 2,
+    "quay lai": 3,
+    "tieu de": 1,
+    "xoa lop": 4
+   },
+   "7": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_invoices_requirements.md": {
+  "areas": {
+   "cot gia tri va gia tri dung trong lop": 3,
+   "filter hoc vien va cot ngay tao hoa don": 2,
+   "load more danh sach hoa don": 5,
+   "tab hoa don bang hoa don da dung": 1,
+   "trang thai tai rong loi va dong bo": 4
+  },
+  "items": {
+   "1": {
+    "gia tri": 6,
+    "gia tri dung trong lop": 7,
+    "moi dong": 8,
+    "ngay tao hoa don": 5,
+    "tab": 1,
+    "ten hoa don": 3,
+    "ten hoc vien": 4,
+    "tieu de": 2
+   },
+   "2": {
+    "chon nhieu hoc vien": 2,
+    "cot ngay tao hoa don": 4,
+    "filter hoc vien": 1,
+    "ket qua rong": 5,
+    "khong chon hoc vien": 3
+   },
+   "3": {
+    "dinh dang": 3,
+    "gia tri": 1,
+    "gia tri dung trong lop": 2
+   },
+   "4": {
+    "dong bo": 4,
+    "loading": 1,
+    "loi": 3,
+    "rong": 2
+   },
+   "5": {
+    "het du lieu": 4,
+    "loading cuoi bang": 2,
+    "loi tai them": 3,
+    "vung cuon": 1
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_journal_requirements.md": {
+  "areas": {
+   "log he thong them hoc vien vao lop va dong tien": 5,
+   "menu nhat ky danh sach nhat ky": 1,
+   "popup xac nhan xoa nhat ky": 4,
+   "tao sua va xoa nhat ky viet tay": 3,
+   "tim kiem va filter doi tuong thoi gian": 2,
+   "toast phan hoi crud": 6
+  },
+  "items": {
+   "1": {
+    "doi tuong": 5,
+    "gio log": 3,
+    "icon thung rac": 8,
+    "khu vuc them nhat ky": 9,
+    "mo rong thu gon": 6,
+    "mo ta": 2,
+    "ngay log": 4,
+    "thao tac sua": 7,
+    "tieu de": 1
+   },
+   "2": {
+    "3 thang truoc": 14,
+    "bo dieu kien": 5,
+    "filter doi tuong": 2,
+    "filter thoi gian": 3,
+    "hom nay": 7,
+    "hom nay va hom qua": 9,
+    "hom qua": 8,
+    "ket hop dieu kien": 4,
+    "nam nay": 15,
+    "nam truoc": 16,
+    "thang nay": 12,
+    "thang truoc": 13,
+    "tim kiem": 1,
+    "toi han": 6,
+    "tuan nay": 10,
+    "tuan truoc": 11,
+    "tuy chon": 17
+   },
+   "3": {
+    "chua luu huy": 8,
+    "ngay gio log": 5,
+    "nguoi tao doi tuong": 4,
+    "noi dung": 3,
+    "sua": 6,
+    "them nhat ky": 1,
+    "tieu de": 2,
+    "xoa": 7
+   },
+   "4": {
+    "huy dong": 2,
+    "noi dung xac nhan": 1,
+    "xac nhan": 3
+   },
+   "5": {
+    "dong tien": 2,
+    "ngay gio log": 4,
+    "nguoi thuc hien": 3,
+    "them hoc vien vao lop": 1
+   },
+   "6": {
+    "canh bao": 3,
+    "dang dong bo neu flow co trang thai nay": 13,
+    "loi": 4,
+    "sua thanh cong": 6,
+    "sua that bai": 9,
+    "tao thanh cong": 5,
+    "tao that bai": 8,
+    "thanh cong": 1,
+    "thieu quyen": 11,
+    "thong tin": 2,
+    "tieu de thieu khong hop le": 12,
+    "xoa thanh cong": 7,
+    "xoa that bai": 10
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_kpi_requirements.md": {
+  "areas": {
+   "dropdown trang thai va xac nhan": 3,
+   "ghi chu lich su va copy": 5,
+   "popup them va chinh sua kpi": 2,
+   "tab kpi danh sach va tim kiem": 1,
+   "toast va trang thai tai": 7,
+   "tong chi ptl": 6,
+   "xoa khoan kpi": 4
+  },
+  "items": {
+   "1": {
+    "cai dat kpi va": 1,
+    "ghi chu": 7,
+    "ngay cap nhat": 8,
+    "ngay ghi nhan": 4,
+    "so tien": 6,
+    "ten": 3,
+    "tim kiem": 2,
+    "trang thai": 5,
+    "x": 9
+   },
+   "2": {
+    "dung gia tri goc": 3,
+    "huy bo": 7,
+    "nguoi nhan": 1,
+    "so tien": 2,
+    "ten mo ta gia tri goc": 6,
+    "them cap nhat": 8,
+    "thoi gian thuc hien": 4,
+    "trang thai": 5
+   },
+   "3": {
+    "da huy": 3,
+    "da xac nhan": 2,
+    "da xoa": 4,
+    "moi": 1
+   },
+   "4": {
+    "huy bo": 2,
+    "popup": 1,
+    "xac nhan xoa": 3
+   },
+   "5": {
+    "copy": 6,
+    "icon lich su": 4,
+    "luu noi dung": 3,
+    "moi phien ban": 5,
+    "o nhap noi dung textarea": 2,
+    "popup ghi chu": 1
+   },
+   "6": {
+    "chi phi ptl cua lop": 1,
+    "tong chi ptl": 2
+   },
+   "7": {
+    "canh bao": 3,
+    "co loi xay ra": 4,
+    "loading rong loi": 1,
+    "thanh cong": 2,
+    "thong bao": 5
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_lessons_requirements.md": {
+  "areas": {
+   "chi so btvn va di hoc theo bai": 9,
+   "khung menu va danh sach bai hoc": 1,
+   "popup ghi chu tung hoc vien": 3,
+   "popup them bai hoc moi vao lop": 10,
+   "sua diem danh cho hoc vien": 4,
+   "tab buoi hoc bai da bat dau": 2,
+   "tab buoi hoc bai hoc chua bat dau": 5,
+   "tab kien thuc de trong": 11,
+   "tab noi dung": 7,
+   "tab tai nguyen click tai xuong ngay": 8,
+   "tab thong tin": 6,
+   "toast phan hoi crud": 12
+  },
+  "items": {
+   "1": {
+    "card bai hoc": 1,
+    "chon bai tab": 2,
+    "giao vien va moc mo": 4,
+    "tai du lieu": 6,
+    "them bai hoc moi": 5,
+    "thu tu danh sach": 3
+   },
+   "10": {
+    "bai hoc": 4,
+    "huy": 6,
+    "khoa hoc": 3,
+    "mo ta": 5,
+    "noi dung": 2,
+    "them": 7,
+    "tieu de": 1
+   },
+   "11": {
+    "nguon kien thuc": 3,
+    "nhan tab": 1,
+    "vung noi dung": 2
+   },
+   "12": {
+    "canh bao": 3,
+    "co loi xay ra": 2,
+    "component": 5,
+    "thanh cong": 1,
+    "thong bao": 4
+   },
+   "2": {
+    "btvn": 6,
+    "di hoc": 5,
+    "ghi chu cua giao vien gui cho giao vien tiep theo": 3,
+    "ghi chu cua giao vien gui cho support": 2,
+    "ghi chu tung hoc vien": 7,
+    "giao vien nhan xet lop": 1,
+    "hoc vien": 4
+   },
+   "3": {
+    "du lieu trong loi": 4,
+    "ghi chu tu giao vien cho hoc vien": 1,
+    "ghi chu tu giao vien cho team support": 2,
+    "huy": 3
+   },
+   "4": {
+    "chua diem danh": 3,
+    "dau vet sua": 7,
+    "ket qua": 6,
+    "lua chon": 2,
+    "luu": 5,
+    "menu diem danh": 1,
+    "search trang thai": 4
+   },
+   "5": {
+    "cac tab khac": 3,
+    "du lieu buoi": 2,
+    "quyen thao tac": 4,
+    "thong bao": 1
+   },
+   "6": {
+    "ky nang": 3,
+    "mo ta": 2,
+    "quyen thao tac": 4,
+    "tieu de": 1
+   },
+   "7": {
+    "du lieu chi tiet": 3,
+    "khoi noi dung": 1,
+    "thoi luong": 4,
+    "thu tu khoi": 2
+   },
+   "8": {
+    "bai giang tai nguyen khac": 1,
+    "card tai nguyen": 3,
+    "header chevron": 2,
+    "nguon tai nguyen": 5,
+    "tai loi thieu quyen": 4
+   },
+   "9": {
+    "bai chua bat dau": 6,
+    "btvn": 2,
+    "cap nhat sau sua": 7,
+    "di hoc": 3,
+    "khong co mau so": 5,
+    "lam tron": 4,
+    "tap tinh va 2 mau so": 1
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_meetings_requirements.md": {
+  "areas": {
+   "chon ngay va gio hop": 4,
+   "khung tab cuoc hop va danh sach buoi hop": 1,
+   "log hoat dong cuoc hop": 11,
+   "noi dung va bien ban cuoc hop": 7,
+   "popup chon nguoi tham gia": 3,
+   "popup danh sach cuoc hop cung thoi gian": 8,
+   "popup them quy trinh va noi dung buoi hop": 6,
+   "tao moi va chinh sua thong tin buoi hop": 2,
+   "thong bao qua han": 10,
+   "toast phan hoi crud": 12,
+   "trang thai cuoc hop": 5,
+   "xac nhan xoa buoi hop": 9
+  },
+  "items": {
+   "1": {
+    "card buoi hop": 2,
+    "danh sach buoi hop": 1,
+    "dau canh nguoi tham gia": 4,
+    "loading rong loi": 8,
+    "ngay gio trang thai": 5,
+    "so luong cuoc hop cung thoi gian": 7,
+    "so nguoi tham gia": 3,
+    "them buoi hop them buoi hop moi": 6
+   },
+   "10": {
+    "dong bo": 4,
+    "qua han": 2,
+    "thong bao": 3,
+    "trang thai khi toi gio qua han": 1
+   },
+   "11": {
+    "chi doc": 4,
+    "du lieu moi thay doi": 2,
+    "lich su": 1,
+    "pham vi": 3
+   },
+   "12": {
+    "dong bo": 5,
+    "loi": 4,
+    "thanh cong": 1,
+    "thanh cong luu rieng": 2,
+    "validation": 3
+   },
+   "2": {
+    "huy": 8,
+    "mo ta cuoc hop": 5,
+    "nguoi tham gia": 2,
+    "them luu": 7,
+    "them quy trinh them noi dung buoi hop": 6,
+    "thoi gian hop": 3,
+    "tieu de cuoc hop": 1,
+    "trang thai": 4
+   },
+   "3": {
+    "bo nguoi tham gia": 6,
+    "chon nhieu": 3,
+    "dong user": 2,
+    "huy": 5,
+    "them": 4,
+    "tim kiem": 1
+   },
+   "4": {
+    "gio phut": 2,
+    "ngay": 1,
+    "ok huy": 3,
+    "thoi diem cuoc hop": 4
+   },
+   "5": {
+    "dang cho": 4,
+    "dang tham gia": 2,
+    "dieu kien doi": 6,
+    "hoan thanh": 3,
+    "moi tao": 1,
+    "nguoi doi": 5,
+    "thay doi theo thoi gian": 7
+   },
+   "6": {
+    "action item": 4,
+    "category": 3,
+    "checkbox cha con": 5,
+    "nguon": 1,
+    "package": 2,
+    "sua danh sach quy trinh": 7,
+    "them huy": 6
+   },
+   "7": {
+    "bien ban": 5,
+    "luu bien ban": 7,
+    "mo ta": 1,
+    "noi dung action board da gan": 2,
+    "result cua action item": 3,
+    "tay nam cham": 4,
+    "toolbar bien ban": 6
+   },
+   "8": {
+    "badge so luong": 1,
+    "chon mot cuoc hop": 3,
+    "dong popup": 4,
+    "moi dong popup": 2,
+    "trung thoi gian": 5
+   },
+   "9": {
+    "doi tuong": 1,
+    "huy": 2,
+    "thanh cong": 4,
+    "xac nhan xoa": 3
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_messages_requirements.md": {
+  "areas": {
+   "danh sach hoc vien va chon nen tang": 3,
+   "lay bien comgao va gui tin nhan": 4,
+   "popup tao tin nhan ban tu dong moi": 2,
+   "quan ly item tin nhan da tao": 5,
+   "tab tin nhan danh sach tin nhan": 1,
+   "toast phan hoi crud va gui tin nhan": 6
+  },
+  "items": {
+   "1": {
+    "gui chung": 6,
+    "mo thu gon": 7,
+    "ngay tao": 4,
+    "nut": 1,
+    "nut do": 8,
+    "so nguoi da gui": 5,
+    "tai du lieu": 10,
+    "tieu de": 2,
+    "tim kiem": 9,
+    "tin nhan": 3
+   },
+   "2": {
+    "chon mau tin nhan": 3,
+    "huy": 5,
+    "mo ta": 2,
+    "noi dung tin nhan": 4,
+    "tao moi": 6,
+    "tieu de": 1
+   },
+   "3": {
+    "dich gui": 4,
+    "dropdown nen tang": 3,
+    "gui tung hoc vien": 5,
+    "hoc vien": 1,
+    "nguon nguoi nhan": 2,
+    "thieu lien ket nen tang": 6
+   },
+   "4": {
+    "bien mau": 1,
+    "dang gui": 5,
+    "gui lai": 8,
+    "gui mot nguoi": 3,
+    "gui toan bo": 4,
+    "ket qua tung nguoi": 6,
+    "so nguoi da gui": 7,
+    "thay bien": 2
+   },
+   "5": {
+    "dropdown mau tren item": 1,
+    "du lieu ket qua gui": 6,
+    "nut": 3,
+    "sua tieu de mo ta": 2,
+    "tin nhan da gui": 4,
+    "xac nhan xoa": 5
+   },
+   "6": {
+    "canh bao": 3,
+    "co loi xay ra": 4,
+    "dong va thoi luong": 5,
+    "thanh cong": 1,
+    "thong bao": 2
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_notes_requirements.md": {
+  "areas": {
+   "binh luan ghi chu lop": 4,
+   "popup tao va cap nhat ghi chu lop": 2,
+   "tab ghi chu danh sach va bo loc": 1,
+   "toast phan hoi crud": 5,
+   "xoa dong va mo lai ghi chu lop": 3
+  },
+  "items": {
+   "1": {
+    "3 thang truoc": 27,
+    "binh luan": 7,
+    "control tren card": 10,
+    "do uu tien": 4,
+    "do uu tien#2": 16,
+    "ghi chu cong khai dong": 13,
+    "ghi chu cong khai moi": 11,
+    "ghi chu rieng tu dong": 14,
+    "ghi chu rieng tu moi": 12,
+    "hoat dong binh luan cuoi": 8,
+    "hom nay": 20,
+    "hom nay va hom qua": 22,
+    "hom qua": 21,
+    "loai": 3,
+    "loai#2": 15,
+    "nam nay": 28,
+    "nam truoc": 29,
+    "noi dung": 2,
+    "owner": 6,
+    "thang nay": 25,
+    "thang truoc": 26,
+    "thoi gian": 18,
+    "thoi gian cap nhat": 9,
+    "tieu de": 1,
+    "toi han": 19,
+    "trang thai": 5,
+    "trang thai ghi chu": 17,
+    "tuan nay": 23,
+    "tuan truoc": 24,
+    "tuy chon": 30
+   },
+   "2": {
+    "do uu tien": 4,
+    "huy dong chua luu": 8,
+    "loai": 3,
+    "noi dung": 2,
+    "owner va lop": 6,
+    "them xac nhan cap nhat": 7,
+    "tieu de": 1,
+    "trang thai": 5
+   },
+   "3": {
+    "binh luan khi dong": 4,
+    "dong": 2,
+    "mo lai": 3,
+    "xoa": 1
+   },
+   "4": {
+    "comment cuoi tren card": 6,
+    "danh sach binh luan": 2,
+    "mo an binh luan": 5,
+    "o binh luan": 1,
+    "sua xoa": 4,
+    "tra loi": 3
+   },
+   "5": {
+    "canh bao": 3,
+    "cap nhat comment": 11,
+    "cap nhat ghi chu": 6,
+    "dong ghi chu": 8,
+    "loi": 4,
+    "mo lai ghi chu": 9,
+    "tao comment": 10,
+    "tao ghi chu": 5,
+    "thanh cong": 1,
+    "thong tin": 2,
+    "xoa comment": 12,
+    "xoa ghi chu": 7
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_ot_requirements.md": {
+  "areas": {
+   "dropdown trang thai va xac nhan": 3,
+   "ghi chu lich su va copy": 5,
+   "popup them va chinh sua ot": 2,
+   "tab ot danh sach va tim kiem": 1,
+   "tach ot khoi chi phi ptl tren danh sach lop": 6,
+   "toast va trang thai tai": 7,
+   "xoa khoan ot": 4
+  },
+  "items": {
+   "1": {
+    "cai dat ot va": 1,
+    "ghi chu": 7,
+    "ngay cap nhat": 8,
+    "ngay ghi nhan": 4,
+    "so tien": 6,
+    "ten": 3,
+    "tim kiem": 2,
+    "trang thai": 5,
+    "x": 9
+   },
+   "2": {
+    "cap nhat": 7,
+    "huy bo": 6,
+    "nguoi nhan": 1,
+    "so tien": 2,
+    "thoi gian thuc hien": 3,
+    "thong tin ot": 5,
+    "trang thai": 4
+   },
+   "3": {
+    "da huy": 3,
+    "da xac nhan": 2,
+    "da xoa": 4,
+    "moi": 1
+   },
+   "4": {
+    "huy bo": 2,
+    "popup": 1,
+    "xac nhan xoa": 3
+   },
+   "5": {
+    "copy": 6,
+    "icon lich su": 4,
+    "luu noi dung": 3,
+    "moi phien ban": 5,
+    "o nhap noi dung textarea": 2,
+    "popup ghi chu": 1
+   },
+   "6": {
+    "chi phi ptl cua lop": 1,
+    "chi so ot tai danh sach lop": 3,
+    "tong chi ptl": 2
+   },
+   "7": {
+    "canh bao": 3,
+    "co loi xay ra": 4,
+    "loading rong loi": 1,
+    "thanh cong": 2,
+    "thong bao": 5
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_overview_requirements.md": {
+  "areas": {
+   "bang bai hoc cua hoc vien va diem danh": 9,
+   "bieu do theo bai hoc": 4,
+   "cong tac on off hoc phi va ghi chu cai dat": 6,
+   "danh gia tong va bai hoc gan day": 8,
+   "danh sach tim kiem va chon hoc vien": 5,
+   "ghi chu cai dat va lich su": 7,
+   "loading rong loi va an toan du lieu": 12,
+   "man tong quan va phan quyen": 1,
+   "nut back va tooltip thong tin lop": 2,
+   "popup ghi chu giao vien theo bai hoc": 10,
+   "popup thoi gian tung phan tren app": 11,
+   "thong ke hoc tap trung binh cua lop": 3
+  },
+  "items": {
+   "1": {
+    "cong tac on off": 7,
+    "danh sach ben phai": 5,
+    "dau canh search": 8,
+    "nut back ma lop": 2,
+    "search": 6,
+    "thong ke phia tren": 3,
+    "tong quan lop": 1,
+    "vung ben trai": 4
+   },
+   "10": {
+    "cho hoc vien": 1,
+    "cho team support": 2,
+    "huy": 3
+   },
+   "11": {
+    "00 00 00": 3,
+    "chin phan": 1,
+    "huy": 4,
+    "moi o": 2
+   },
+   "12": {
+    "empty": 2,
+    "error": 3,
+    "loading": 1,
+    "toast": 4
+   },
+   "2": {
+    "buoi hoc": 3,
+    "cskh": 6,
+    "giao vien": 7,
+    "khai giang": 8,
+    "lich hoc": 4,
+    "nut back ma lop": 1,
+    "sp": 5,
+    "tooltip": 2
+   },
+   "3": {
+    "btvn": 3,
+    "da cham va sua bai": 8,
+    "danh gia lop": 9,
+    "di hoc": 2,
+    "diem btvn": 5,
+    "diem kt": 4,
+    "si so": 1,
+    "thoi gian hoc": 6,
+    "tieu chuan": 7
+   },
+   "4": {
+    "duong vung cam": 4,
+    "gia tri": 2,
+    "gioi han chart hoc vien": 3,
+    "tooltip": 5,
+    "truc bai hoc": 1
+   },
+   "5": {
+    "cham do lich hen": 2,
+    "click the": 5,
+    "dau": 6,
+    "hover cham do": 3,
+    "search ten": 7,
+    "the dang chon": 4,
+    "the hoc vien": 1,
+    "toan bo danh sach": 8,
+    "vung trai": 9
+   },
+   "6": {
+    "ghi chu cua lop": 3,
+    "ghi chu duoi tung the": 4,
+    "hoc phi": 2,
+    "icon lich su canh ghi chu": 5,
+    "on off": 1
+   },
+   "7": {
+    "copy": 3,
+    "ghi chu bat thuong": 4,
+    "icon canh ten hoc vien dang chon": 1,
+    "popup lich su ghi chu": 2
+   },
+   "8": {
+    "badge danh gia": 1,
+    "da nop btvn": 5,
+    "di hoc chua nop btvn": 8,
+    "di hoc da nop btvn": 7,
+    "di hoc vang": 4,
+    "gia tri danh gia": 2,
+    "hover icon bai gan day": 11,
+    "icon bai gan day": 6,
+    "so bai hien thi": 3,
+    "vang chua nop btvn": 10,
+    "vang da nop btvn": 9
+   },
+   "9": {
+    "chua diem danh": 12,
+    "co mat": 6,
+    "diem so": 4,
+    "ghi chu": 2,
+    "nghi co phep": 10,
+    "nghi khong phep": 11,
+    "ra som": 8,
+    "ten bai hoc": 1,
+    "thoi gian": 5,
+    "trang thai": 3,
+    "vao tre": 7,
+    "vao tre ra som": 9
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_processes_requirements.md": {
+  "areas": {
+   "ba tab quy trinh trong lop": 1,
+   "popup them noi dung": 2,
+   "toast phan hoi crud": 3
+  },
+  "items": {
+   "1": {
+    "action item": 3,
+    "nut them": 4,
+    "ten tab": 1,
+    "tien do": 2
+   },
+   "2": {
+    "category action item": 5,
+    "cay lua chon": 4,
+    "cskh them quy trinh": 2,
+    "huy": 7,
+    "quy trinh lop them quy trinh": 3,
+    "them 1": 6,
+    "tieu chuan lop giao vien them tieu chuan": 1
+   },
+   "3": {
+    "canh bao": 3,
+    "co loi xay ra": 4,
+    "thanh cong": 1,
+    "thong bao": 2
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_schedule_requirements.md": {
+  "areas": {
+   "hoan thanh va huy lich": 6,
+   "mo lai lich da hoan thanh va dao luong": 7,
+   "popup them lich day co dinh": 3,
+   "popup them lich day linh hoat": 4,
+   "popup xem chinh sua khi bam the lich": 5,
+   "tab lich day lich theo tuan": 1,
+   "the lich va bon trang thai chinh thuc": 2,
+   "toast phan hoi crud lich": 8
+  },
+  "items": {
+   "1": {
+    "cot ngay": 2,
+    "khoang tuan": 1,
+    "nut them lich day co dinh": 4,
+    "o dau cua ngay": 5,
+    "tag lich co dinh": 3,
+    "the lich": 6,
+    "vung lich": 7
+   },
+   "2": {
+    "lich co dinh": 1,
+    "lich hoan thanh": 3,
+    "lich huy bo": 4,
+    "lich linh hoat": 2
+   },
+   "3": {
+    "chon ngay bat dau": 2,
+    "gio bat dau ket thuc": 3,
+    "huy": 7,
+    "icon thung rac": 6,
+    "tab co dinh linh hoat": 1,
+    "them lich day": 5,
+    "thu 2 chu nhat": 4,
+    "xac nhan": 8
+   },
+   "4": {
+    "gio bat dau ket thuc": 2,
+    "khoang tuan": 1,
+    "them lich day": 4,
+    "thu trong tuan": 3,
+    "xac nhan": 5
+   },
+   "5": {
+    "giao vien": 4,
+    "gio bat dau": 3,
+    "huy": 8,
+    "luong gio": 6,
+    "thoi gian hoc": 5,
+    "thoi gian ngay": 2,
+    "tieu de": 1,
+    "trang thai": 7,
+    "xac nhan": 9
+   },
+   "6": {
+    "hoan thanh": 1,
+    "hoan thanh qua luong day": 2,
+    "huy bo": 3,
+    "sua lich chua hoan thanh": 4,
+    "xoa": 5
+   },
+   "7": {
+    "canh bao": 3,
+    "huy": 4,
+    "ly do dieu chinh": 2,
+    "nut mo lai": 1,
+    "xac nhan mo lai": 5
+   },
+   "8": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_self_study_requirements.md": {
+  "areas": {
+   "bang thoi gian hoc theo hoc vien va tung phan": 5,
+   "danh sach bai tu hoc va chon bai": 3,
+   "hoc vien on tap tu do tren app va ghi nhan thoi gian": 6,
+   "khung menu va trang thai chua co khoa tu hoc": 1,
+   "popup them khoa tu hoc va dropdown khoa hoc": 2,
+   "them mot hoac nhieu bai tu hoc rieng": 4,
+   "toast phan hoi crud": 7
+  },
+  "items": {
+   "1": {
+    "hai vung du lieu": 1,
+    "loading loi": 4,
+    "ngu canh lop": 3,
+    "them khoa tu hoc": 2
+   },
+   "2": {
+    "chon khoa hoc": 1,
+    "huy": 4,
+    "loai khoa nguon": 2,
+    "sau khi them": 5,
+    "them": 3,
+    "them khoa tiep theo": 6
+   },
+   "3": {
+    "bai khong bi khoa theo tien do": 5,
+    "card bai": 1,
+    "chon bai": 2,
+    "tai toan bo khoa": 4,
+    "thu tu": 3
+   },
+   "4": {
+    "huy": 5,
+    "khoa hoc bai hoc": 2,
+    "mo ta": 3,
+    "them": 4,
+    "tieu de": 1
+   },
+   "5": {
+    "00 00 00": 8,
+    "bai tap": 3,
+    "chi doc": 9,
+    "dinh danh dong": 1,
+    "gia tri thoi gian": 6,
+    "gioi han hien thi": 7,
+    "hoc flashcard": 2,
+    "kanji nghe bang chu": 5,
+    "tu vung ngu phap doc": 4
+   },
+   "6": {
+    "bat dau tinh nguon ghi nhan": 4,
+    "hoc lai": 3,
+    "khong co rang buoc on tap": 2,
+    "tach du lieu chuong trinh chinh": 5,
+    "truy cap bai": 1
+   },
+   "7": {
+    "canh bao": 2,
+    "co loi xay ra": 3,
+    "thanh cong": 1,
+    "thong bao": 4,
+    "ui toast": 5
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_students_requirements.md": {
+  "areas": {
+   "cot buoi hoc chi xem va canh bao vuot buoi": 2,
+   "form tao hoc vien moi": 5,
+   "ghi chu trong lop va lich su ghi chu": 6,
+   "menu thao tac tu ten hoc vien": 9,
+   "popup chon cach them hoc vien": 3,
+   "popup chon hoc vien co san": 4,
+   "popup them hoc phi": 8,
+   "tab hoc vien danh sach hoc vien": 1,
+   "toast phan hoi crud": 10,
+   "trang thai hoc vien va lich su thay doi trang thai": 7
+  },
+  "items": {
+   "1": {
+    "buoi hoc": 6,
+    "email": 3,
+    "ghi chu trong lop": 4,
+    "hoc phi": 7,
+    "so tien": 8,
+    "tag hoc vien": 2,
+    "tao hoc vien moi": 9,
+    "ten": 1,
+    "trang thai": 5
+   },
+   "10": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   },
+   "2": {
+    "canh bao vuot buoi": 4,
+    "cap nhat hien thi": 5,
+    "chon so buoi": 2,
+    "gia tri hien tai": 1,
+    "so buoi thuc te": 3
+   },
+   "3": {
+    "chon hoc vien": 1,
+    "dong popup": 3,
+    "tao hoc vien moi": 2
+   },
+   "4": {
+    "chon lop hoc": 2,
+    "danh sach": 3,
+    "huy": 4,
+    "them moi": 5,
+    "tim kiem": 1
+   },
+   "5": {
+    "gmail mat khau": 3,
+    "ho va ten gioi tinh ngay sinh so dien thoai": 1,
+    "ngay chot don level code": 4,
+    "them tai khoan": 5,
+    "vai tro": 2
+   },
+   "6": {
+    "copy": 4,
+    "icon lich su": 2,
+    "moi ban ghi lich su": 3,
+    "noi dung ghi chu": 1
+   },
+   "7": {
+    "chi xem": 5,
+    "dang hoc": 7,
+    "doi trang thai": 3,
+    "du thinh": 6,
+    "hoan thanh": 8,
+    "lich su": 4,
+    "nghi hoc": 9,
+    "roi lop": 10,
+    "trang thai hien tai": 1,
+    "trang thai hop le": 2,
+    "xoa": 11
+   },
+   "8": {
+    "chon hoa don": 3,
+    "ghi chu hoc phi": 6,
+    "gia tri": 4,
+    "so buoi hoc": 5,
+    "them": 7,
+    "toi han": 1,
+    "trang thai": 2
+   },
+   "9": {
+    "them lich hen": 2,
+    "them tag": 1,
+    "xem lich su": 3
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_support_handlers_requirements.md": {
+  "areas": {
+   "icon xoa khoi lop khong can xac nhan": 6,
+   "phan quyen ho tro lop va gioi han cham diem": 7,
+   "popup chon cach them nhan su": 2,
+   "popup chon phu trach lop co san": 3,
+   "popup chon tro giang co san": 4,
+   "popup tao phu trach lop tro giang moi dung chung": 5,
+   "tab tro giang phu trach lop": 1,
+   "toast phan hoi crud": 8
+  },
+  "items": {
+   "1": {
+    "email": 5,
+    "icon x": 6,
+    "khu vuc phu trach lop": 3,
+    "khu vuc tro giang": 2,
+    "nut them": 7,
+    "ten": 4,
+    "ten tab": 1
+   },
+   "2": {
+    "dong huy": 3,
+    "khu vuc phu trach lop": 1,
+    "khu vuc tro giang": 2
+   },
+   "3": {
+    "checkbox": 3,
+    "danh sach ket qua": 2,
+    "huy": 4,
+    "them": 5,
+    "tim kiem": 1
+   },
+   "4": {
+    "checkbox": 3,
+    "danh sach ket qua": 2,
+    "huy them": 4,
+    "tim kiem": 1
+   },
+   "5": {
+    "form tao tai khoan": 1,
+    "huy": 3,
+    "role": 2,
+    "xac nhan tao": 4
+   },
+   "6": {
+    "icon x": 1,
+    "khi bam": 2,
+    "thanh cong": 3,
+    "that bai": 4
+   },
+   "7": {
+    "cham diem bai kiem tra": 5,
+    "cham diem btvn": 4,
+    "ho tro quan ly": 2,
+    "them xoa nhan su tai tab nay": 3,
+    "xem lop": 1
+   },
+   "8": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "management_requirement/class_management/class_detail_teachers_requirements.md": {
+  "areas": {
+   "checkbox giao vien phu trach chinh va quyen cham diem": 5,
+   "dieu huong den chi tiet giao vien": 7,
+   "popup chon cach them giao vien": 2,
+   "popup chon giao vien hien co": 3,
+   "popup tao giao vien moi dung chung": 4,
+   "popup xac nhan xoa giao vien khoi lop": 6,
+   "tab giao vien danh sach giao vien trong lop": 1,
+   "toast phan hoi crud": 8
+  },
+  "items": {
+   "1": {
+    "email": 2,
+    "phu trach chinh": 3,
+    "ten": 1,
+    "them giao vien vao lop": 5,
+    "xoa": 4
+   },
+   "2": {
+    "chon giao vien": 1,
+    "dong popup": 3,
+    "tao giao vien moi": 2
+   },
+   "3": {
+    "danh sach": 2,
+    "huy": 3,
+    "them moi": 4,
+    "tim kiem": 1
+   },
+   "4": {
+    "cac field khac": 6,
+    "email so dien thoai": 3,
+    "ghi chu": 5,
+    "ho va ten": 1,
+    "ma giao vien code": 2,
+    "trang thai": 4,
+    "xac nhan": 7
+   },
+   "5": {
+    "checkbox chua chon": 1,
+    "checkbox da chon": 2,
+    "chuyen tu a sang b": 3,
+    "kiem tra quyen cham diem": 4
+   },
+   "6": {
+    "canh bao giao vien chinh": 3,
+    "huy": 4,
+    "noi dung thuong": 2,
+    "tieu de": 1,
+    "xoa": 5
+   },
+   "7": {
+    "dich den": 2,
+    "vung bam": 1
+   },
+   "8": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "management_requirement/class_management/class_management_requirements.md": {
+  "areas": {
+   "bo loc va tag hoc vien": 5,
+   "man hinh danh sach lop": 1,
+   "menu thao tac tai ma lop": 6,
+   "popup them lich hen cho lop": 8,
+   "popup them tag cho lop": 7,
+   "the thong ke tong quan": 2,
+   "thong tin hien thi tren moi lop": 4,
+   "toast phan hoi crud": 9,
+   "trang thai lop": 3
+  },
+  "items": {
+   "2": {
+    "chi xem": 22,
+    "dang hoc": 17,
+    "di hoc": 7,
+    "di hoc#2": 15,
+    "doanh thu": 1,
+    "doanh thu#2": 9,
+    "du thinh": 19,
+    "hoan thanh": 18,
+    "hoc phi da dong": 24,
+    "kpi handler da xac nhan": 26,
+    "luong gv cua buoi da hoan thanh": 25,
+    "nghi hoc": 21,
+    "roi lop": 20,
+    "si so": 27,
+    "si so tb": 8,
+    "si so tb#2": 16,
+    "so lop": 4,
+    "so lop#2": 12,
+    "tong chi ptl": 3,
+    "tong chi ptl#2": 11,
+    "tong luong gv": 2,
+    "tong luong gv#2": 10,
+    "tong si so": 5,
+    "tong si so#2": 13,
+    "ty le btvn": 6,
+    "ty le btvn cua lop": 28,
+    "ty le btvn#2": 14,
+    "ty le di hoc cua lop": 29,
+    "xoa": 23
+   },
+   "3": {
+    "dang hoc": 1,
+    "hoan thanh": 2,
+    "huy": 3,
+    "khai giang": 4,
+    "moi tao": 5,
+    "tam dung": 6,
+    "trai nghiem": 8,
+    "xoa": 7
+   },
+   "4": {
+    "btvn": 4,
+    "buoi gan nhat": 15,
+    "chi phi gv so buoi day": 17,
+    "chi phi ptl": 18,
+    "danh gia": 2,
+    "di hoc": 3,
+    "diem btvn": 10,
+    "diem so bai kt": 9,
+    "doanh thu": 16,
+    "follow": 22,
+    "ghi chu sale": 13,
+    "ghi chu sp": 12,
+    "gv": 7,
+    "ket qua": 23,
+    "khoa hoc tien do": 6,
+    "lich day": 11,
+    "ma lop hoc": 1,
+    "ngay bat dau": 14,
+    "ptl": 8,
+    "quy trinh": 21,
+    "si so kpi": 5,
+    "sua btvn": 19,
+    "tag hv": 24,
+    "tieu chuan": 20
+   },
+   "5": {
+    "3 thang truoc": 20,
+    "bat dau": 9,
+    "cskh": 8,
+    "hoc ky": 5,
+    "hom nay": 13,
+    "hom nay va hom qua": 15,
+    "hom qua": 14,
+    "ket thuc": 10,
+    "loai lop": 2,
+    "nam nay": 21,
+    "nam truoc": 22,
+    "phu trach": 7,
+    "tag": 6,
+    "tag hv": 11,
+    "thang nay": 18,
+    "thang truoc": 19,
+    "toi han": 12,
+    "trang thai": 3,
+    "trinh do": 4,
+    "trung tam": 1,
+    "tuan nay": 16,
+    "tuan truoc": 17,
+    "tuy chon": 23
+   },
+   "8": {
+    "do uu tien": 3,
+    "ghi chu": 6,
+    "huy": 7,
+    "nguoi phu trach": 4,
+    "noi dung": 1,
+    "theo doi": 5,
+    "thoi gian": 2,
+    "xac nhan": 8
+   },
+   "9": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "management_requirement/salary_management/teacher_salary_requirements.md": {
+  "areas": {
+   "cac tab buoi day kpi ot": 3,
+   "can xac nhan": 10,
+   "chon giao vien de export": 4,
+   "da chot": 9,
+   "file excel tong hop luong giao vien": 5,
+   "luong xem du lieu": 7,
+   "quy tac da co tu cac requirement lien quan": 6,
+   "sai lech du lieu mau figma": 8,
+   "tab lop hoc": 2,
+   "tong quan": 1
+  },
+  "items": {
+   "1": {
+    "bon the giao vien dang chon": 5,
+    "checkbox va export": 8,
+    "danh sach giao vien": 6,
+    "lop con cua giao vien": 7,
+    "pham vi thong ke": 2,
+    "sau the toan trang": 4,
+    "thoi gian": 3,
+    "tim kiem": 1,
+    "tooltip tong luong giao vien": 9,
+    "tooltip tong luong lop": 10
+   },
+   "10": {
+    "anh mau excel nguoi dung cung cap ngay 17 10 2026": 1,
+    "figma dropdown 4101 140492": 4,
+    "figma page 4101 128323 frame 4101 138376": 3,
+    "pls repository api lib model course lesson result model dart 7": 8,
+    "pls repository api lib model user user class model dart 11": 9,
+    "pls repository api lib model user user model dart 20 39": 2,
+    "pls repository api lib repositories firebase class kpi result repository dart 209": 7,
+    "pls repository api lib repositories firebase lesson repository dart 170": 6,
+    "pls repository api lib services admin admin read dart 538": 5,
+    "teacher detail teacher history salary requirements": 10
+   },
+   "2": {
+    "kpi ot": 6,
+    "lop": 1,
+    "luong buoi": 5,
+    "si so": 3,
+    "so buoi": 4,
+    "tien do": 2,
+    "tong luong": 7
+   },
+   "3": {
+    "buoi day": 1,
+    "kpi": 2,
+    "ot": 3
+   },
+   "5": {
+    "1": 1,
+    "10": 10,
+    "11": 11,
+    "12": 12,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9
+   },
+   "8": {
+    "case 1 dung giao vien": 1,
+    "case 10 duyet khac ap dung luong": 10,
+    "case 11 chi thong ke va export": 11,
+    "case 12 tap phat sinh trong ky": 12,
+    "case 13 chon xem doc lap export": 13,
+    "case 14 loc lop dung giao vien": 14,
+    "case 15 dung mau excel": 15,
+    "case 16 bao toan thong tin tai khoan": 16,
+    "case 17 tong excel dung pham vi": 17,
+    "case 18 checkbox qua nhieu trang": 18,
+    "case 19 doi loc xoa tap chon": 19,
+    "case 2 ngay lich khac hoan thanh": 2,
+    "case 20 so lop toan trang khong trung": 20,
+    "case 21 tim dung truong": 21,
+    "case 22 mac dinh va doi giao vien": 22,
+    "case 23 loc lop khong doi tong ca nhan": 23,
+    "case 24 tab dung cau truc chung va phan trang": 24,
+    "case 3 buoi khong lich": 3,
+    "case 4 khong hoi to": 4,
+    "case 5 kpi ot xac nhan": 5,
+    "case 6 tong theo cong thuc": 6,
+    "case 7 khoan khong co buoi": 7,
+    "case 8 request tra sai thu tu": 8,
+    "case 9 loi du lieu": 9
+   }
+  }
+ },
+ "management_requirement/schedule_management/teaching_schedule_requirements.md": {
+  "areas": {
+   "che do theo lop": 2,
+   "dropdown giao vien": 4,
+   "dropdown tuan": 3,
+   "lich day tong theo tuan": 1
+  },
+  "items": {
+   "1": {
+    "ap dung bo loc": 10,
+    "cot ngay": 2,
+    "giao vien": 6,
+    "hoc ky": 9,
+    "khoang tuan": 1,
+    "lich co dinh": 15,
+    "lich hoan thanh": 17,
+    "lich huy bo": 18,
+    "lich linh hoat": 16,
+    "loading rong loi": 14,
+    "loai lop": 7,
+    "ngay khong co lich": 13,
+    "nhieu lich trong ngay": 12,
+    "the lich": 11,
+    "theo lop": 4,
+    "tim lop giao vien": 3,
+    "trinh do": 8,
+    "trung tam": 5
+   },
+   "2": {
+    "cuon": 3,
+    "luoi trong nhom": 2,
+    "nhom lop": 1
+   },
+   "3": {
+    "chon": 3,
+    "danh sach": 2,
+    "dong": 4,
+    "mo": 1
+   },
+   "4": {
+    "chon": 4,
+    "danh sach": 3,
+    "dong panel": 5,
+    "nut giao vien": 1,
+    "tim kiem": 2
+   }
+  }
+ },
+ "management_requirement/student_management/student_detail_requirements.md": {
+  "areas": {
+   "chi tiet hoc vien danh sach lop": 4,
+   "chi tiet hoc vien ghi chu": 8,
+   "chi tiet hoc vien hoc phi": 5,
+   "chi tiet hoc vien log": 6,
+   "chi tiet hoc vien quy trinh hoc vien": 7,
+   "chi tiet hoc vien thong tin ca nhan": 2,
+   "khung chi tiet hoc vien va dieu huong": 1,
+   "popup xac nhan lay lai mat khau ui can bo sung": 3,
+   "toast phan hoi crud": 9
+  },
+  "items": {
+   "2": {
+    "anh dai dien": 1,
+    "email": 7,
+    "ghi chu": 8,
+    "gioi tinh": 4,
+    "ho va ten": 2,
+    "ma nguoi dung": 5,
+    "ngay sinh": 3,
+    "so dien thoai": 6
+   },
+   "9": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "management_requirement/student_management/student_management_requirements.md": {
+  "areas": {
+   "bo loc tag": 3,
+   "danh sach hoc vien": 1,
+   "ghi chu danh sach binh luan va popup them": 9,
+   "hoc phi danh sach hoa don": 7,
+   "lich su hoc vien": 6,
+   "lich su lop": 8,
+   "popup them hoc vien": 2,
+   "so lop va lop hien tai": 4,
+   "them lich hen": 5,
+   "toast phan hoi crud": 10
+  },
+  "items": {
+   "1": {
+    "ghi chu": 8,
+    "gmail": 3,
+    "hoan tien": 10,
+    "lop hien tai": 7,
+    "mui ten cuoi dong": 2,
+    "ngay chot don": 4,
+    "so bill": 6,
+    "so lop": 5,
+    "ten hoc vien": 1,
+    "tong doanh thu": 9
+   },
+   "10": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   },
+   "2": {
+    "chon cap do level": 10,
+    "code": 11,
+    "gioi tinh": 3,
+    "gmail email": 7,
+    "ho va ten": 2,
+    "mat khau": 8,
+    "ngay chot don": 9,
+    "ngay sinh": 4,
+    "so dien thoai": 5,
+    "trung tam": 1,
+    "vai tro": 6
+   },
+   "5": {
+    "do uu tien": 3,
+    "ghi chu": 6,
+    "huy": 7,
+    "nguoi phu trach": 4,
+    "noi dung": 1,
+    "theo doi": 5,
+    "thoi gian": 2,
+    "xac nhan": 8
+   },
+   "7": {
+    "bang hoa don": 3,
+    "cuon ngang": 13,
+    "ghi nhan ngay hen": 7,
+    "hieu khach ghi chu": 6,
+    "hinh": 11,
+    "kpi hoc phi": 10,
+    "lop du kien": 8,
+    "phu trach lien ket": 12,
+    "so tien da dong": 9,
+    "ten hoa don": 4,
+    "the so hoa don": 1,
+    "the tong hoc phi": 2,
+    "trang thai loai": 5
+   },
+   "8": {
+    "2": 19,
+    "2 va 4": 18,
+    "4 va 5 5": 17,
+    "5 5 va 7": 16,
+    "7 va 8 5": 15,
+    "8 5": 14,
+    "btvn": 4,
+    "chua hoan thanh": 13,
+    "danh gia": 6,
+    "danh gia#2": 9,
+    "dat kpi": 5,
+    "di hoc": 3,
+    "hoan thanh": 12,
+    "khoa hoc": 8,
+    "kpi": 10,
+    "len ky": 2,
+    "ma lop": 7,
+    "mui ten cuoi dong": 11,
+    "so lop": 1
+   },
+   "9": {
+    "binh luan ghi chu": 5,
+    "card binh luan": 4,
+    "editor": 1,
+    "gui": 2,
+    "lam moi binh luan": 6,
+    "so binh luan": 3
+   }
+  }
+ },
+ "management_requirement/teacher_management/teacher_detail_requirements.md": {
+  "areas": {
+   "man hinh chi tiet giao vien": 1,
+   "tab danh sach lop": 3,
+   "tab ghi chu": 7,
+   "tab lich day": 4,
+   "tab log": 5,
+   "tab quan ly dang ky lich": 6,
+   "tab thong tin ca nhan": 2,
+   "toast phan hoi crud": 8
+  },
+  "items": {
+   "2": {
+    "anh dai dien": 1,
+    "cap nhat tai khoan": 15,
+    "ghi chu": 9,
+    "gioi tinh": 5,
+    "gmail": 3,
+    "ho va ten": 4,
+    "lay lai mat khau": 14,
+    "luong gio": 13,
+    "ma giao vien": 2,
+    "ngan hang": 10,
+    "ngay sinh": 6,
+    "so dien thoai": 7,
+    "so tai khoan": 11,
+    "ten chu tai khoan": 12,
+    "trang thai": 8
+   },
+   "3": {
+    "danh gia": 5,
+    "khoa hoc": 4,
+    "khoa hoc#2": 9,
+    "kpi lop": 6,
+    "loai lop": 8,
+    "ma lop": 3,
+    "mo chi tiet": 7,
+    "thoi gian": 11,
+    "tim kiem lop hoc": 1,
+    "trang thai lop": 2,
+    "trang thai lop#2": 10
+   },
+   "4": {
+    "bat": 1,
+    "tat": 2
+   },
+   "5": {
+    "bo loc doi tuong": 7,
+    "bo loc thoi gian": 8,
+    "doi tuong": 5,
+    "gio log ngay log": 4,
+    "mo ta": 3,
+    "thao tac": 6,
+    "tieu de": 2,
+    "tim kiem": 1
+   },
+   "6": {
+    "cap nhat": 8,
+    "cot ngay": 2,
+    "fulltime": 1,
+    "ghi chu chung": 7,
+    "hang buoi": 3,
+    "o buoi chua dang ky": 4,
+    "o buoi da dang ky": 5,
+    "popup dang ky khung gio": 6
+   },
+   "7": {
+    "3 thang truoc": 28,
+    "binh luan": 10,
+    "do uu tien": 5,
+    "do uu tien#2": 17,
+    "ghi chu cong khai dong": 14,
+    "ghi chu cong khai moi": 12,
+    "ghi chu rieng tu dong": 15,
+    "ghi chu rieng tu moi": 13,
+    "hoat dong binh luan cuoi": 11,
+    "hom nay": 21,
+    "hom nay va hom qua": 23,
+    "hom qua": 22,
+    "loai": 4,
+    "loai#2": 16,
+    "menu": 7,
+    "nam nay": 29,
+    "nam truoc": 30,
+    "nhan da chinh sua": 8,
+    "noi dung": 3,
+    "o go nhanh": 1,
+    "owner": 9,
+    "thang nay": 26,
+    "thang truoc": 27,
+    "thoi gian": 19,
+    "tieu de": 2,
+    "toi han": 20,
+    "trang thai": 6,
+    "trang thai ghi chu": 18,
+    "tuan nay": 24,
+    "tuan truoc": 25,
+    "tuy chon": 31
+   },
+   "8": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "management_requirement/teacher_management/teacher_management_requirements.md": {
+  "areas": {
+   "chi tiet lich dang ky khi hover": 2,
+   "chi tiet lop dang day khi hover": 3,
+   "danh sach giao vien": 1,
+   "dieu huong den chi tiet giao vien": 6,
+   "ghi chu giao vien": 4,
+   "menu thao tac tren dong them lich hen them tag va danh sach lich hen": 5,
+   "them moi giao vien": 7,
+   "toast phan hoi crud": 8
+  },
+  "items": {
+   "1": {
+    "btvn": 8,
+    "chi tiet": 13,
+    "dang day": 5,
+    "danh gia": 9,
+    "di hoc": 7,
+    "ghi chu": 12,
+    "giao vien": 2,
+    "len ky": 6,
+    "lich dang ky": 10,
+    "lich day": 11,
+    "ma giao vien": 3,
+    "so lop": 4,
+    "trang thai": 1
+   },
+   "2": {
+    "chua dang ky": 6,
+    "popover": 4,
+    "so ca": 3,
+    "so ngay": 2,
+    "thu tu": 5,
+    "tong quan": 1
+   },
+   "3": {
+    "badge so lop": 1,
+    "khoi lop trong popover": 2,
+    "lich co dinh": 4,
+    "so buoi": 3
+   },
+   "5": {
+    "menu thao tac": 1,
+    "popup danh sach lich hen": 4,
+    "popup them lich hen": 2,
+    "popup them tag": 3
+   },
+   "7": {
+    "code": 9,
+    "gioi tinh": 2,
+    "gmail": 6,
+    "ho va ten": 1,
+    "huy": 10,
+    "mat khau": 7,
+    "ngay sinh": 3,
+    "so dien thoai": 4,
+    "them": 11,
+    "trung tam": 8,
+    "vai tro": 5
+   },
+   "8": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "meeting_schedule/meeting_schedule.md": {
+  "areas": {
+   "danh sach cuoc hop dang danh sach": 1,
+   "danh sach cuoc hop dang lich tuan": 2,
+   "dropdown bo loc": 4,
+   "popup chi tiet cuoc hop them cuoc hop": 3
+  },
+  "items": {
+   "1": {
+    "chu de": 6,
+    "ghi chu": 7,
+    "gio hop": 5,
+    "icon but": 10,
+    "ngay hop": 4,
+    "nguoi tham gia": 1,
+    "nguoi tham gia#2": 8,
+    "thoi gian": 3,
+    "trang thai": 2,
+    "trang thai#2": 9
+   },
+   "3": {
+    "chu de": 2,
+    "dong phu duoi tieu de": 1,
+    "ghi chu": 6,
+    "huy": 8,
+    "link cuoc hop": 7,
+    "luu": 9,
+    "nguoi tham gia": 5,
+    "thoi gian": 3,
+    "trang thai": 4,
+    "xoa": 10
+   }
+  }
+ },
+ "process_definition_requirement/process_definition_requirements.md": {
+  "areas": {
+   "chi tiet loai quy trinh": 4,
+   "danh sach loai quy trinh": 1,
+   "dropdown loai task va field cau hinh": 5,
+   "su dung nguon trong lop": 6,
+   "toast phan hoi crud": 7,
+   "trang 1a nhan ban quy trinh": 2,
+   "trang 1b xoa quy trinh": 3
+  },
+  "items": {
+   "1": {
+    "bo loc": 3,
+    "cong khai": 14,
+    "danh sach": 1,
+    "loai quy trinh": 5,
+    "mui ten cuoi dong": 11,
+    "nhap": 13,
+    "nhap quy trinh moi": 7,
+    "nut nhan ban cuoi dong": 10,
+    "nut xoa cuoi dong": 9,
+    "phan trang": 12,
+    "sap xep": 4,
+    "thong tin quy trinh": 8,
+    "tim kiem": 2,
+    "trang thai quy trinh": 6,
+    "vo hieu": 15
+   },
+   "2": {
+    "huy xac nhan": 3,
+    "loai quy trinh": 2,
+    "ten quy trinh moi": 1
+   },
+   "3": {
+    "huy xoa": 3,
+    "noi dung": 2,
+    "tieu de": 1
+   },
+   "4": {
+    "action item": 5,
+    "category": 4,
+    "danh sach package": 2,
+    "keo tha": 6,
+    "quay lai": 1,
+    "them moi package": 3,
+    "toggle package": 7
+   },
+   "5": {
+    "danh gia": 5,
+    "deadline": 7,
+    "huong dan": 1,
+    "kiem tra": 4,
+    "log": 9,
+    "media": 6,
+    "task nhap lieu": 3,
+    "task tien trinh": 2,
+    "xac thuc": 8
+   },
+   "6": {
+    "noi dung da them": 1,
+    "quy trinh cua phu trach lop": 4,
+    "result": 2,
+    "tab trong lop": 3
+   },
+   "7": {
+    "canh bao": 3,
+    "co loi xay ra": 4,
+    "thanh cong": 1,
+    "thong bao": 2
+   }
+  }
+ },
+ "receipt_management/receipt/receipt.md": {
+  "areas": {
+   "danh sach hoa don": 1,
+   "popup chon hoc vien lien ket hoa don": 3,
+   "popup them hoa don chinh sua hoa don": 2,
+   "popup them hoc phi": 4
+  },
+  "items": {}
+ },
+ "receipt_management/tuition_detail/tuition_detail.md": {
+  "areas": {
+   "item hoc phi phan hoc phi xo xuong cua hoa don va menu hoc vien": 1,
+   "popup danh sach lich hen": 4,
+   "popup ho so hoc vien tab ghi chu": 7,
+   "popup ho so hoc vien tab lich su hoa don": 5,
+   "popup ho so hoc vien tab lich su lop": 6,
+   "popup them ghi chu": 8,
+   "popup them lich hen chinh sua lich hen": 3,
+   "popup them tag": 2
+  },
+  "items": {}
+ },
+ "ship_books/message_template/message_template.md": {
+  "areas": {
+   "danh sach tin nhan": 1
+  },
+  "items": {}
+ },
+ "ship_books/ship_books/ship_books.md": {
+  "areas": {
+   "danh sach don sach": 1,
+   "popup them don sach cap nhat don sach": 2,
+   "popup xac nhan gui tin nhan": 3
+  },
+  "items": {}
+ },
+ "student_app/account/account.md": {
+  "areas": {
+   "cai dat": 3,
+   "dang nhap": 1,
+   "gop y": 4,
+   "ho so va doi mat khau": 2,
+   "toast phan hoi crud": 5
+  },
+  "items": {
+   "1": {
+    "dang nhap": 4,
+    "email": 2,
+    "logo tieu de": 1,
+    "mat khau": 3,
+    "quen mat khau": 5
+   },
+   "2": {
+    "anh dai dien": 1,
+    "doi mat khau": 7,
+    "email": 3,
+    "ho va ten": 2,
+    "luu thong tin": 6,
+    "so dien thoai": 4,
+    "tinh thanh pho": 5
+   },
+   "3": {
+    "dang xuat": 1,
+    "dieu khoan chinh sach rieng tu": 2
+   },
+   "4": {
+    "an danh": 4,
+    "gui gop y": 5,
+    "huy": 6,
+    "loai gop y": 1,
+    "noi dung gop y": 2,
+    "tep dinh kem": 3
+   },
+   "5": {
+    "canh bao": 2,
+    "loi": 3,
+    "thanh cong": 1
+   }
+  }
+ },
+ "student_app/alphabet/alphabet.md": {
+  "areas": {
+   "bang chu hangul saechang": 3,
+   "bang chu kana sakumi": 2,
+   "bang phat am pinyin dac nhan": 1,
+   "toast phan hoi crud": 5,
+   "trung tam khong co bang chu": 4
+  },
+  "items": {
+   "1": {
+    "bam o": 6,
+    "dropdown thanh dieu": 5,
+    "header": 1,
+    "luyen tap": 7,
+    "tab pinyin": 4,
+    "tab thanh mau": 2,
+    "tab van mau": 3,
+    "tien do": 8
+   },
+   "2": {
+    "?": 5,
+    "chi tiet": 9,
+    "chi tiet chu": 4,
+    "duyet bai": 7,
+    "flashcard": 11,
+    "header": 1,
+    "hoc": 8,
+    "luoi": 3,
+    "luyen tap": 6,
+    "luyen viet": 10,
+    "nut bo chu": 2,
+    "thu thach 1": 13,
+    "thu thach 2": 14,
+    "trac nghiem": 12
+   },
+   "3": {
+    "chi tiet jamo": 3,
+    "luyen tap": 4,
+    "tab bang ghep": 2,
+    "tab phu am nguyen am": 1
+   },
+   "5": {
+    "loi": 2,
+    "thanh cong": 1
+   }
+  }
+ },
+ "student_app/course/course.md": {
+  "areas": {
+   "tab tong quan": 1,
+   "tab tu hoc": 2
+  },
+  "items": {
+   "1": {
+    "diem bai tap ve nha": 6,
+    "diem kiem tra": 7,
+    "header": 1,
+    "khoi gop y": 8,
+    "thanh tab": 2,
+    "ti le di hoc": 4,
+    "ti le lam bai tap ve nha": 5,
+    "vong x y buoi": 3
+   },
+   "2": {
+    "bam the": 2,
+    "the bai tu hoc": 1,
+    "thoi gian hoc": 3,
+    "trong": 4
+   }
+  }
+ },
+ "student_app/home_trial/home_trial.md": {
+  "areas": {
+   "man chinh hoc vien": 1,
+   "man chinh trai nghiem theo cap do": 2,
+   "popup trai nghiem mien phi 30 ngay": 3,
+   "toast phan hoi crud": 5,
+   "vip ma qua tang khoi phuc quang cao": 4
+  },
+  "items": {
+   "1": {
+    "banner thu vien hoc tap": 2,
+    "header": 1,
+    "khoa hoc cua ban": 3,
+    "trang thai lop": 4,
+    "trong": 6,
+    "uu dai cua ban": 5
+   },
+   "2": {
+    "bang phat am bang chu": 4,
+    "banner quang cao": 2,
+    "banner thu vien hoc tap": 3,
+    "chon trinh do": 8,
+    "header": 1,
+    "kien thuc nen": 5,
+    "ky nang": 6,
+    "thanh tab duoi": 7
+   },
+   "3": {
+    "con lai n ngay": 3,
+    "dong y": 2,
+    "khi hien": 4,
+    "noi dung": 1
+   },
+   "4": {
+    "khoi phuc thanh toan": 6,
+    "ma qua tang": 5,
+    "popup ban mien phi": 2,
+    "popup gioi han free": 1,
+    "quang cao": 3,
+    "thanh toan vip": 4
+   },
+   "5": {
+    "canh bao": 2,
+    "loi": 3,
+    "thanh cong": 1
+   }
+  }
+ },
+ "student_app/knowledge/knowledge.md": {
+  "areas": {
+   "chi tiet muc": 3,
+   "danh sach the va chon nhieu": 2,
+   "danh sach theo cum": 1,
+   "duyet": 4,
+   "luyen tap": 5,
+   "toast phan hoi crud": 6
+  },
+  "items": {
+   "1": {
+    "bam chip": 4,
+    "chip muc": 3,
+    "header": 1,
+    "icon dich": 6,
+    "the cum": 2,
+    "xem chi tiet": 5
+   },
+   "2": {
+    "icon": 6,
+    "icon loc": 5,
+    "o hanzi kanji": 4,
+    "the mau cau": 3,
+    "the ngu phap": 2,
+    "the tu vung": 1,
+    "tren the": 7
+   },
+   "3": {
+    "?": 6,
+    "?#2": 7,
+    "hanzi": 3,
+    "kanji": 4,
+    "mau cau": 5,
+    "n n": 8,
+    "ngu phap": 2,
+    "tu vung": 1
+   },
+   "4": {
+    "nut": 2,
+    "the": 1,
+    "tong ket": 3
+   },
+   "5": {
+    "chi tiet chu": 12,
+    "flashcard": 6,
+    "hanzi kanji": 3,
+    "hoc": 5,
+    "luyen viet chu": 10,
+    "mau cau": 4,
+    "ngu phap": 2,
+    "thu thach 1 2 chu": 11,
+    "thu thach tu vung": 7,
+    "trac nghiem chu": 9,
+    "trac nghiem ngu phap": 8,
+    "tu vung": 1
+   },
+   "6": {
+    "canh bao": 2,
+    "loi": 3,
+    "thanh cong": 1
+   }
+  }
+ },
+ "student_app/lesson/lesson.md": {
+  "areas": {
+   "bai tap cung co": 6,
+   "chi tiet bai hoc": 2,
+   "danh sach bai hoc": 1,
+   "duyet kien thuc": 3,
+   "hoc qua flashcard": 4,
+   "luyen nho chuyen sau": 5,
+   "toast phan hoi crud": 7
+  },
+  "items": {
+   "1": {
+    "header": 1,
+    "tag diem danh": 5,
+    "tag trang thai hoc": 4,
+    "thanh tab": 2,
+    "thanh tien do": 6,
+    "the buoi hoc": 3,
+    "thu tu": 7
+   },
+   "2": {
+    "badge diem buoc 4": 3,
+    "bam the": 6,
+    "header": 1,
+    "kien thuc": 4,
+    "ky nang": 5,
+    "phan bat buoc": 2
+   },
+   "3": {
+    "header": 1,
+    "nut": 4,
+    "thanh tien do": 2,
+    "the": 3,
+    "tong ket": 5
+   },
+   "4": {
+    "hoan thanh": 8,
+    "loa": 7,
+    "loai 1": 3,
+    "loai 2": 4,
+    "loai 3": 5,
+    "popup tuy chinh": 6,
+    "thanh tien do": 1,
+    "the": 2
+   },
+   "5": {
+    "card noi dung": 3,
+    "hoan thanh": 7,
+    "hoc qua flashcard": 2,
+    "noi tu cung nghia": 4,
+    "sap xep thanh cau": 6,
+    "thanh tien do": 1,
+    "trac nghiem": 5
+   },
+   "6": {
+    "loai cau": 2,
+    "man ket qua chua cham": 4,
+    "man ket qua da cham": 5,
+    "man lam bai": 1,
+    "nop bai": 3,
+    "trang thai buoc 4": 6
+   },
+   "7": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "student_app/library/library.md": {
+  "areas": {
+   "man thu vien va tab kien thuc": 1,
+   "tab ky nang": 2,
+   "tab tien trinh": 3,
+   "toast phan hoi crud": 4
+  },
+  "items": {
+   "1": {
+    "duyet": 3,
+    "khoi loai": 2,
+    "luyen tap": 4,
+    "tong": 1,
+    "trong": 5
+   },
+   "2": {
+    "duyet": 2,
+    "khoi nghe doc noi": 1,
+    "luyen tap": 3,
+    "trong": 4
+   },
+   "3": {
+    "bieu do duong": 4,
+    "khoi tong": 5,
+    "loc loai noi dung": 2,
+    "loc thoi gian": 3,
+    "vong": 1
+   },
+   "4": {
+    "canh bao": 2,
+    "loi": 3,
+    "thanh cong": 1
+   }
+  }
+ },
+ "student_app/skill/skill.md": {
+  "areas": {
+   "chi tiet bai doc": 3,
+   "chi tiet bai nghe": 2,
+   "chi tiet bai noi va luyen noi": 4,
+   "danh sach bai ky nang": 1,
+   "luyen tap nghe doc": 5,
+   "toast phan hoi crud": 6
+  },
+  "items": {
+   "1": {
+    "chon nhieu": 3,
+    "header": 1,
+    "the bai": 2,
+    "trong": 4
+   },
+   "2": {
+    "header": 1,
+    "khoi thoai": 4,
+    "luyen tap": 5,
+    "nut lop": 3,
+    "trinh phat": 2
+   },
+   "3": {
+    "header": 1,
+    "luyen tap": 4,
+    "noi dung": 2,
+    "popup tuy chinh": 3
+   },
+   "4": {
+    "cham": 4,
+    "header": 1,
+    "man luyen noi": 3,
+    "tab": 2
+   },
+   "5": {
+    "flashcard": 2,
+    "hoc": 1,
+    "trac nghiem": 3
+   },
+   "6": {
+    "canh bao": 2,
+    "loi": 3,
+    "thanh cong": 1
+   }
+  }
+ },
+ "student_app/test/test.md": {
+  "areas": {
+   "danh sach bai kiem tra": 1,
+   "ket qua kiem tra": 3,
+   "lam bai kiem tra": 2,
+   "toast phan hoi crud": 4
+  },
+  "items": {
+   "1": {
+    "the bai": 1,
+    "thu tu": 2,
+    "trong": 3
+   },
+   "2": {
+    "dieu huong": 3,
+    "header": 1,
+    "nop": 4,
+    "than": 2
+   },
+   "3": {
+    "cho cham": 1,
+    "da cham": 2,
+    "xem lai": 3
+   },
+   "4": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "survey_bug/bug/bug.md": {
+  "areas": {
+   "chi tiet bai hoc tab bug them bug": 1,
+   "danh sach bao loi gop y": 2,
+   "popup chi tiet bao loi": 4,
+   "popup gui bao loi": 3,
+   "popup nhac bug chua xu ly ptl": 7,
+   "popup xac nhan hoan thanh": 5,
+   "popup xem ket qua": 6
+  },
+  "items": {}
+ },
+ "survey_bug/survey/01-create-survey/01-create-survey.md": {
+  "areas": {
+   "popup xem truoc khao sat": 3,
+   "tao khao sat tab giao vien lop": 1,
+   "tao khao sat tab hoc vien": 2
+  },
+  "items": {}
+ },
+ "survey_bug/survey/02-assign-survey/02-assign-survey.md": {
+  "areas": {
+   "giao khao sat tab giao vien": 1,
+   "giao khao sat tab ket qua khao sat": 7,
+   "giao khao sat tab lop hoc vien": 2,
+   "popup 1 chon giao vien tab giao vien": 3,
+   "popup 2 chon lop tab lop": 4,
+   "popup 3 chon trung tam tab hoc vien khao sat tuy chon": 5,
+   "popup 4 chon buoi hoc tab hoc vien khao sat bat buoc": 6,
+   "popup 5 ket qua cua 1 lop trung tam": 8,
+   "popup 6 ket qua tung giao vien": 9
+  },
+  "items": {}
+ },
+ "survey_bug/survey/03-take-survey/03-take-survey.md": {
+  "areas": {
+   "khao sat cua toi tab can lam": 2,
+   "khao sat cua toi tab da hoan thanh": 3,
+   "lam khao sat": 4,
+   "popup thong bao khao sat moi": 1
+  },
+  "items": {}
+ },
+ "tag_definition_requirement/tag_definition_requirements.md": {
+  "areas": {
+   "popup them nhom moi": 2,
+   "popup them tag": 3,
+   "tag quan ly va nhom": 1,
+   "toast phan hoi crud": 4
+  },
+  "items": {
+   "1": {
+    "chinh sua xoa": 4,
+    "nhom": 2,
+    "tag quan ly": 1,
+    "them nhom moi": 3
+   },
+   "2": {
+    "loai": 3,
+    "mo ta": 2,
+    "ten nhom": 1,
+    "them huy": 4
+   },
+   "3": {
+    "loai": 3,
+    "mau sac": 4,
+    "nhom": 2,
+    "ten tag mo ta": 1,
+    "them huy bo": 5
+   },
+   "4": {
+    "canh bao": 2,
+    "co loi xay ra": 3,
+    "thanh cong": 1,
+    "thong bao": 4
+   }
+  }
+ },
+ "teacher_role/class/class_course_requirements.md": {
+  "areas": {
+   "huong dan giang day": 2,
+   "mindset khoa hoc": 1
+  },
+  "items": {
+   "1": {
+    "danh sach ben phai": 1,
+    "khoi noi dung": 3,
+    "khong co du lieu": 5,
+    "nguon": 4,
+    "tieu de ben trai": 2
+   },
+   "2": {
+    "danh sach": 1,
+    "khi co du lieu": 3,
+    "vung trai": 2
+   }
+  }
+ },
+ "teacher_role/class/class_evaluation_requirements.md": {
+  "areas": {
+   "man khong co quyen truy cap": 1
+  },
+  "items": {
+   "1": {
+    "hinh minh hoa": 2,
+    "menu danh gia": 1,
+    "mo ta": 4,
+    "nut quay ve trang chu": 5,
+    "tieu de": 3
+   }
+  }
+ },
+ "teacher_role/class/class_information_requirements.md": {
+  "areas": {
+   "tab kpi kpi cua toi": 2,
+   "tab lich su luong": 3,
+   "tab thong tin": 1
+  },
+  "items": {
+   "1": {
+    "ghi chu": 4,
+    "khoa hoc": 3,
+    "link google meet": 2,
+    "loai lop": 7,
+    "ma lop": 1,
+    "mo ta": 5,
+    "ngay bat dau ngay ket thuc": 6,
+    "trang thai": 8
+   },
+   "2": {
+    "khong co khoan": 9,
+    "ngay cap nhat": 7,
+    "ngay ghi nhan": 4,
+    "sap xep": 8,
+    "so tien": 6,
+    "ten": 3,
+    "tieu de": 1,
+    "tim kiem": 2,
+    "trang thai": 5
+   },
+   "3": {
+    "bang buoi day": 7,
+    "cot lop": 8,
+    "cot luong buoi day": 12,
+    "cot si so": 10,
+    "cot ten buoi hoc": 9,
+    "cot thoi gian": 11,
+    "dropdown thoi gian": 1,
+    "khong co buoi": 13,
+    "luong buoi day": 4,
+    "luong kpi": 5,
+    "so buoi da day": 3,
+    "tong luong": 6,
+    "trang thai lop": 2
+   }
+  }
+ },
+ "teacher_role/class/class_overview_requirements.md": {
+  "areas": {
+   "bang bai hoc cua hoc vien va diem danh": 7,
+   "bieu do theo bai hoc": 4,
+   "danh gia tong va bai hoc gan day": 6,
+   "danh sach tim kiem va chon hoc vien": 5,
+   "loading rong loi va an toan du lieu": 10,
+   "nut back va tooltip thong tin lop": 2,
+   "popup ghi chu giao vien theo bai hoc": 8,
+   "popup thoi gian tung phan tren app": 9,
+   "thong ke hoc tap trung binh cua lop": 3,
+   "tong quan khung man va phan quyen": 1
+  },
+  "items": {
+   "1": {
+    "danh sach hoc vien ben phai": 5,
+    "icon canh o tim kiem": 7,
+    "nut back ma lop": 2,
+    "o tim kiem": 6,
+    "thong ke phia tren": 3,
+    "tieu de tong quan lop": 1,
+    "vung ben trai": 4
+   },
+   "10": {
+    "loading": 1,
+    "loi": 3,
+    "rong": 2,
+    "toast": 4
+   },
+   "2": {
+    "buoi hoc": 3,
+    "cskh": 6,
+    "giao vien": 7,
+    "khai giang": 8,
+    "lich hoc": 4,
+    "nut back ma lop": 1,
+    "sp": 5,
+    "tooltip": 2
+   },
+   "3": {
+    "btvn": 3,
+    "da cham va sua bai": 8,
+    "danh gia lop": 9,
+    "di hoc": 2,
+    "diem btvn": 5,
+    "diem kt": 4,
+    "si so": 1,
+    "thoi gian hoc": 6,
+    "tieu chuan": 7
+   },
+   "4": {
+    "duong vung cam": 4,
+    "gia tri": 2,
+    "gioi han chart hoc vien": 3,
+    "tooltip": 5,
+    "truc bai hoc": 1
+   },
+   "5": {
+    "bam the": 3,
+    "pham vi danh sach": 5,
+    "the dang chon": 2,
+    "the hoc vien": 1,
+    "tim kiem": 4,
+    "vung trai": 6
+   },
+   "6": {
+    "badge danh gia": 1,
+    "da nop btvn": 4,
+    "di hoc vang": 3,
+    "hover icon bai": 6,
+    "icon bai": 5,
+    "so bai hien thi": 2
+   },
+   "7": {
+    "chua diem danh": 12,
+    "co mat": 6,
+    "diem nop bai": 4,
+    "ghi chu": 2,
+    "nghi co phep": 10,
+    "nghi khong phep": 11,
+    "ra som": 8,
+    "ten bai hoc": 1,
+    "thoi gian": 5,
+    "trang thai": 3,
+    "vao tre": 7,
+    "vao tre ra som": 9
+   },
+   "8": {
+    "ghi chu tu giao vien cho hoc vien": 1,
+    "ghi chu tu giao vien cho team support": 2,
+    "huy": 4,
+    "pham vi xem": 3
+   },
+   "9": {
+    "00 00 00": 3,
+    "chin phan": 1,
+    "huy": 4,
+    "moi o": 2
+   }
+  }
+ },
+ "teacher_role/class/class_process_requirements.md": {
+  "areas": {
+   "cuoc hop khung man va danh sach buoi hop": 2,
+   "noi dung buoi hop va action item": 3,
+   "tieu chuan lop cay tieu chuan va tien do": 1,
+   "toast phan hoi crud": 4
+  },
+  "items": {
+   "1": {
+    "action xac thuc verify duoc gan": 4,
+    "action xac thuc verify khong gan loai khac": 5,
+    "cay package category action item": 2,
+    "khong co noi dung": 7,
+    "mo rong item": 3,
+    "nut them tieu chuan": 6,
+    "tien do tong": 1
+   },
+   "2": {
+    "badge cung thoi gian": 5,
+    "card buoi hop": 2,
+    "chon buoi": 3,
+    "danh sach buoi hop": 1,
+    "khong co buoi": 6,
+    "loading loi": 7,
+    "so nguoi tham gia": 4
+   },
+   "3": {
+    "action item loai khac check progress evaluate task deadline log instruct": 7,
+    "action xac thuc verify duoc gan": 5,
+    "action xac thuc verify khong gan giao vien": 6,
+    "bien ban cuoc hop": 8,
+    "mo rong item": 4,
+    "mo ta": 2,
+    "package category action item": 3,
+    "tieu de vung": 1
+   },
+   "4": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   }
+  }
+ },
+ "teacher_role/class/class_teaching_requirements.md": {
+  "areas": {
+   "bai hoc khung menu va danh sach bai hoc": 1,
+   "bai tap va kiem tra khung menu": 12,
+   "bang ket qua hoc vien": 15,
+   "buoc 1 diem danh va ghi chu cho lop hoc": 4,
+   "buoc 2 ghi chu buoi hoc va hoan thanh": 5,
+   "cau hoi con": 24,
+   "chi so btvn va di hoc theo bai": 11,
+   "chi tiet cau hoi va bo loc hoc vien": 20,
+   "danh sach cau hoi va trang thai cham": 19,
+   "icon trang thai diem danh": 8,
+   "khoi tong quan": 13,
+   "kiem tra chua giao xem truoc de va giao bai": 16,
+   "man cham bai khung man va dieu huong": 18,
+   "nhan xet chung cua cau": 23,
+   "nhan xet cua giao vien": 22,
+   "nut da cham va sua bai tren lop": 25,
+   "popup chon lich day va bat dau buoi hoc": 3,
+   "tab badge va card bai": 14,
+   "tab buoi hoc bai da hoan thanh": 7,
+   "tab buoi hoc bai dang day va cho hoan thanh": 6,
+   "tab buoi hoc dan do truoc buoi hoc": 2,
+   "tab tai nguyen khoa tai theo bai": 10,
+   "tab thong tin noi dung va kien thuc": 9,
+   "the hoc vien diem va dap an": 21,
+   "thu hoi bai kiem tra": 17,
+   "toast phan hoi crud": 27,
+   "tu hoc danh sach bai va bang thoi gian": 26
+  },
+  "items": {
+   "1": {
+    "card bai chua mo": 3,
+    "card bai da mo": 2,
+    "chon bai": 4,
+    "thu tu": 5,
+    "tieu de bai": 1
+   },
+   "10": {
+    "bai bi khoa": 3,
+    "bai duoc tai": 2,
+    "nhom bai giang tai nguyen khac": 1
+   },
+   "11": {
+    "btvn": 2,
+    "di hoc": 3,
+    "lam tron": 4,
+    "mau so bang 0": 5,
+    "tap tinh": 1
+   },
+   "12": {
+    "card bai": 3,
+    "danh sach btvn": 5,
+    "danh sach kiem tra": 6,
+    "nut dieu huong cham bai": 4,
+    "o tim kiem": 2,
+    "tab btvn kiem tra": 1,
+    "tai du lieu": 7
+   },
+   "13": {
+    "da cham btvn": 4,
+    "da cham k tra": 1,
+    "diem btvn": 6,
+    "diem k tra": 3,
+    "icon": 7,
+    "k tra da giao": 2,
+    "ti le lam btvn": 5
+   },
+   "14": {
+    "badge tab": 1,
+    "mo ta": 6,
+    "nhan trang thai btvn": 2,
+    "nhan trang thai kiem tra": 3,
+    "vong so da nop": 4,
+    "vong ty le cham": 5
+   },
+   "15": {
+    "bam dong": 6,
+    "diem so": 1,
+    "nop bai": 4,
+    "so cau bo qua": 5,
+    "ten hoc vien": 2,
+    "thiet lap lai nop bai": 7,
+    "thoi gian lam bai": 3
+   },
+   "16": {
+    "dieu kien giao": 3,
+    "giao thanh cong": 4,
+    "nut giao bai": 2,
+    "xem truoc de": 1
+   },
+   "17": {
+    "nut thu hoi": 1,
+    "thu hoi thanh cong": 2
+   },
+   "18": {
+    "bai bo sung nhieu bai nguon": 3,
+    "da cham va sua bai tren lop": 5,
+    "diem vao tu card bai": 1,
+    "diem vao tu dong hoc vien": 2,
+    "tieu de": 4,
+    "vung phai": 7,
+    "vung trai": 6
+   },
+   "19": {
+    "bo loc trang thai": 5,
+    "de bai": 3,
+    "icon trang thai": 1,
+    "nhan loai cau": 2,
+    "vong ty le diem": 4
+   },
+   "2": {
+    "checkbox toi da doc ghi chu": 2,
+    "dan do truoc buoi hoc": 1,
+    "nut bat dau buoi hoc": 3
+   },
+   "20": {
+    "cau n": 1,
+    "chua cham": 3,
+    "hien ten": 4,
+    "hoc vien": 5,
+    "noi dung cau": 2,
+    "the hoc vien": 6
+   },
+   "21": {
+    "dap an cua hoc vien": 6,
+    "day diem 0 10": 4,
+    "ghi am 3 nhap vai 10": 12,
+    "hoc vien bo qua cau": 13,
+    "nhan chi xem": 3,
+    "noi 22 viet dang chu 44": 10,
+    "noi cot 8": 9,
+    "sap xep 7": 8,
+    "so thu tu": 1,
+    "ten hoc vien": 2,
+    "thu gon mo rong": 5,
+    "trac nghiem tu vung 1 trac nghiem cau 5 van ban 6": 7,
+    "ve 4 chon anh 2 trac nghiem hinh anh 11": 11
+   },
+   "22": {
+    "chip file ghi am n file anh n": 4,
+    "icon dan": 6,
+    "icon micro": 2,
+    "icon sao chep": 5,
+    "icon tai lieu": 3,
+    "o nhan xet cua giao vien": 1
+   },
+   "23": {
+    "o nhan xet chung": 1,
+    "popup xac nhan": 3,
+    "xac nhan": 4,
+    "xac nhan nhap": 2
+   },
+   "24": {
+    "dap an cua hoc vien": 3,
+    "day diem 0 10": 4,
+    "noi dung cau con": 2,
+    "tab cau hoi n": 1
+   },
+   "25": {
+    "chip nguoi bam": 4,
+    "chua cham het": 2,
+    "ghi nhan": 3,
+    "nut da cham va sua bai tren lop": 1
+   },
+   "26": {
+    "00 00 00": 7,
+    "bang thoi gian": 4,
+    "card bai": 2,
+    "chua co khoa tu hoc": 1,
+    "hoc vien trong bang": 5,
+    "tai du lieu": 3,
+    "vuot 24 gio": 6
+   },
+   "27": {
+    "canh bao": 3,
+    "loi": 4,
+    "thanh cong": 1,
+    "thong tin": 2
+   },
+   "3": {
+    "bat dau khong chon lich": 7,
+    "bat dau voi lich": 6,
+    "lop khong co lich tuan nay": 1,
+    "lua chon khong chon lich": 3,
+    "nut huy bat dau": 4,
+    "popup bat dau buoi hoc": 5,
+    "popup chon lich day": 2
+   },
+   "4": {
+    "checkbox khong co dan do cho hoc vien": 5,
+    "danh sach hoc vien": 2,
+    "ghi chu cho lop hoc": 4,
+    "nut ket thuc buoi hoc": 6,
+    "popup ket thuc buoi hoc": 7,
+    "tieu de": 1,
+    "trang thai": 3,
+    "xac nhan": 8
+   },
+   "5": {
+    "bang hoc vien": 1,
+    "ghi chu cua giao vien gui cho giao vien tiep theo": 3,
+    "ghi chu cua giao vien gui cho support": 2,
+    "nut hoan thanh buoi hoc": 4,
+    "popup hoan thanh buoi hoc": 5,
+    "xac nhan": 6
+   },
+   "6": {
+    "bai cho hoan thanh": 2,
+    "bai dang day": 1,
+    "nguoi tiep tuc": 3
+   },
+   "7": {
+    "bang hoc vien": 4,
+    "ghi chu cua giao vien gui cho giao vien tiep theo": 3,
+    "ghi chu cua giao vien gui cho support": 2,
+    "giao vien nhan xet lop": 1,
+    "icon ghi chu": 5
+   },
+   "8": {
+    "chua diem danh": 7,
+    "co mat": 1,
+    "nghi cp nghi co phep": 5,
+    "nghi kp nghi khong phep": 6,
+    "ra som": 3,
+    "vao tre": 2,
+    "vao tre ra som": 4
+   },
+   "9": {
+    "kien thuc": 3,
+    "noi dung": 2,
+    "thong tin": 1
+   }
+  }
+ },
+ "teacher_role/class_list/class_list_requirements.md": {
+  "areas": {
+   "danh sach lop": 4,
+   "hang the chi so": 2,
+   "khoi lop dang chon": 3,
+   "thong ke tong quan": 1
+  },
+  "items": {
+   "1": {
+    "loai lop": 3,
+    "tap lop thoa bo loc": 6,
+    "tim kiem": 2,
+    "trang thai": 4,
+    "trinh do": 5,
+    "trung tam": 1
+   },
+   "2": {
+    "badge hang": 6,
+    "btvn": 4,
+    "dat kpi": 5,
+    "di hoc": 3,
+    "len ky": 2,
+    "so lop": 1
+   },
+   "3": {
+    "bieu do nho": 8,
+    "di hoc btvn": 5,
+    "diem kt diem btvn": 6,
+    "ket qua": 1,
+    "khung gio hoc": 3,
+    "ngay bat dau ngay ket thuc": 2,
+    "si so": 4,
+    "thoi gian hoc": 7
+   },
+   "4": {
+    "?": 7,
+    "badge hang": 5,
+    "card dang chon": 8,
+    "icon trang thai lop": 1,
+    "ma lop": 2,
+    "sap xep": 9,
+    "ten khoa hoc": 3,
+    "thanh tien do x y buoi": 4,
+    "vong": 6
+   }
+  }
+ },
+ "teacher_role/history_and_salary/history_and_salary_requirements.md": {
+  "areas": {
+   "popup de xuat tang luong": 4,
+   "popup lich su de xuat tang luong": 7,
+   "popup xac nhan gui de xuat": 5,
+   "tab kpi": 2,
+   "tab ot": 3,
+   "tong quan va tab buoi day": 1,
+   "trang thai de xuat va huy de xuat": 6
+  },
+  "items": {
+   "1": {
+    "ba tab": 9,
+    "bo loc thoi gian": 1,
+    "dinh dang tien": 10,
+    "khong co buoi": 17,
+    "lop": 11,
+    "lop#2": 18,
+    "luong buoi day": 5,
+    "luong buoi day#2": 15,
+    "luong kpi": 6,
+    "luong ot": 7,
+    "phan trang": 22,
+    "sap xep": 16,
+    "si so": 13,
+    "so buoi": 19,
+    "so buoi da day": 4,
+    "so lop": 3,
+    "ten buoi hoc": 12,
+    "thoi gian": 14,
+    "tong luong": 8,
+    "tong luong#2": 20,
+    "tuong tac dong lop": 21,
+    "tuy chon": 2
+   },
+   "2": {
+    "loai kpi": 2,
+    "lop": 1,
+    "ngay ghi nhan": 3,
+    "sap xep": 6,
+    "tien thuong": 5,
+    "trang thai": 4,
+    "trang thai rong": 7
+   },
+   "3": {
+    "loai ot": 2,
+    "lop": 1,
+    "ngay ghi nhan": 3,
+    "quyen": 6,
+    "rong loi": 7,
+    "tien thuong": 5,
+    "trang thai": 4
+   },
+   "4": {
+    "admin flow admin duyet de xuat tang luong page 4895 105908": 2,
+    "cac ly do": 10,
+    "dropdown tien te": 12,
+    "giao vien flow giao vien de xuat tang luong page 3772 93114": 1,
+    "gui de xuat": 15,
+    "huy": 14,
+    "ket qua tra ve giao vien": 3,
+    "khoi trung dropdown khong nhan": 13,
+    "luong buoi day hien tai": 7,
+    "ly do de xuat": 9,
+    "ly do khac chi tiet": 11,
+    "muc luong de xuat": 8,
+    "pham vi de xuat": 6,
+    "thong bao chu ky": 5,
+    "tieu de": 4
+   },
+   "5": {
+    "noi dung": 1,
+    "quay lai chinh sua": 4,
+    "thong bao": 3,
+    "ty le tang": 2,
+    "xac nhan gui": 5
+   },
+   "6": {
+    "chua co de xuat dang cho": 1,
+    "da duyet tu choi": 4,
+    "da huy": 5,
+    "dang xu ly": 3,
+    "de xuat dang cho": 6,
+    "du lieu xac nhan": 7,
+    "giu de xuat": 8,
+    "huy de xuat": 9,
+    "huy va gui lai": 10,
+    "moi": 2
+   },
+   "7": {
+    "dong": 5,
+    "moi muc lich su": 2,
+    "phan hoi": 4,
+    "rong loi": 6,
+    "sap xep": 3,
+    "tieu de": 1
+   }
+  }
+ },
+ "teacher_role/teaching_schedule/teaching_schedule_requirements.md": {
+  "areas": {
+   "popup dang ky khung gio": 3,
+   "tab lich day": 1,
+   "tab quan ly dang ky lich": 2
+  },
+  "items": {
+   "1": {
+    "cot ngay": 4,
+    "khac man quan ly lich lop": 15,
+    "lich huy bo": 12,
+    "luong": 14,
+    "mui ten trai phai": 3,
+    "nhieu lich trong ngay": 10,
+    "o khong co lich": 9,
+    "sap xep the": 8,
+    "thanh nhom lop": 6,
+    "the lich": 7,
+    "theo lop": 5,
+    "tieu de tab": 1,
+    "trang thai lich": 13,
+    "tuan dang xem": 2,
+    "vien the tai menu nay": 11
+   },
+   "2": {
+    "bat fulltime": 7,
+    "bo tick fulltime": 8,
+    "bo tick mot o": 6,
+    "cap nhat": 11,
+    "cot thu": 1,
+    "ghi chu chung": 10,
+    "hang buoi": 2,
+    "icon but": 5,
+    "o chua dang ky": 3,
+    "o da dang ky": 4,
+    "trang thai fulltime": 9
+   },
+   "3": {
+    "dong phu": 2,
+    "ghi chu": 4,
+    "gio bat dau gio ket thuc": 3,
+    "huy": 5,
+    "tieu de": 1,
+    "xac nhan": 6
+   }
+  }
+ },
+ "tools/move_video/move_video.md": {
+  "areas": {
+   "danh sach video": 2,
+   "popup doi ten video va xac nhan xoa": 3,
+   "xac minh gmail": 1
+  },
+  "items": {}
+ }
+}

@@ -7,6 +7,9 @@ Chưa có ảnh màn Thư viện; đặc tả theo spec.
 ## 1. UI
 
 ### Trang 1: HV-TV-010000 — Màn Thư viện và tab Kiến thức
+
+![Figma mới nhất · HV-TV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/HV-TV-010000.png)
+
 **Mô tả:**
 
 - Màn gồm header `Thư viện học tập`, vòng % tổng, 3 tab. Tab `Kiến thức` liệt kê các mục theo loại: Từ vựng, Ngữ pháp, Chữ (Hanzi / Kanji), Mẫu câu, Bảng chữ (theo trung tâm); mỗi mục có % riêng, dòng tag xem nhanh và nút `Chi tiết`; dưới cùng nút `Duyệt` và `Luyện tập` chung cho tab.
@@ -23,6 +26,9 @@ Chưa có ảnh màn Thư viện; đặc tả theo spec.
 - Trạng thái Đã thuộc dùng chung với mọi màn (REQ của Kiến thức).
 
 ### Trang 2: HV-TV-020000 — Tab Kỹ năng
+
+![Figma mới nhất · HV-TV-020000](https://ics-figma-demo.vercel.app/api/figma-frame/HV-TV-020000.png)
+
 **Mô tả:**
 
 - Liệt kê bài Nghe, Đọc, Nói đã lưu theo khối với % riêng và nút `Chi tiết`; `Duyệt` và `Luyện tập` chung.
@@ -37,6 +43,9 @@ Chưa có ảnh màn Thư viện; đặc tả theo spec.
 - Bài Nói lưu được nhưng Duyệt / Luyện tập chỉ áp dụng Nghe, Đọc; Nói luyện ở màn bài.
 
 ### Trang 3: HV-TV-030000 — Tab Tiến trình
+
+![Figma mới nhất · HV-TV-030000](https://ics-figma-demo.vercel.app/api/figma-frame/HV-TV-030000.png)
+
 **Mô tả:**
 
 - Thống kê việc học trong Thư viện: vòng `% Tiến trình tổng`, bộ lọc loại nội dung và thời gian, biểu đồ đường số nội dung hoàn thành theo ngày, các khối tổng theo mốc thời gian.

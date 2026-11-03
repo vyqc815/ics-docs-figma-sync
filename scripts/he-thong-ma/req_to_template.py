@@ -5,13 +5,15 @@ Chuyển máy móc, không viết lại câu chữ:
   - mỗi mục `###` của phần UI thành `### Trang N: <mã màn> — <tên mục>`; mã màn lấy từ các mã Figma
     mà chính mục đó nhắc tới (thường ở chú thích ảnh);
   - mỗi dòng bảng trong mục UI thành một dòng "Điểm cần lưu ý" mở đầu bằng mã item `Axx.yy`,
-    đánh số đúng như registry.py (mục thứ xx của phần UI, dòng thứ yy tính qua mọi bảng của mục);
+    đánh số đúng như registry.py; mã đã khoá trong khoa-ma.json (khoa_ma.py), chèn/xoá dòng không dịch mã cũ;
   - mọi bảng testcase gom về `## 3. Testcase`, đủ mọi case; cột "Loại test" ghép vào Priority;
   - REQ dạng gạch đầu dòng thành bảng; "Cần xác nhận" thành Q01…; mục ngoài template giữ ở cuối.
 
   req_to_template.py <file gốc> <file ra>
 """
 import json, os, re, sys
+
+from khoa_ma import Lock, rel_of
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CODE = r"[A-Z]{2,4}(?:-[A-Z]{1,4})+-\d{6}(?:-DK)?"
@@ -59,14 +61,15 @@ def table_blocks(text):
     return [(m.start(), m.end(), m[0]) for m in re.finditer(r"(?:^\|.*\n?)+", text, re.M) if m[0].strip().count("\n") >= 2]
 
 
-def table_to_notes(block, area, start):
+def table_to_notes(block, area, number):
+    """number(label) -> mã item đã khoá của dòng."""
     rows = block.strip().split("\n")
     head = cells(rows[0])
-    out, n = [], start
+    out = []
     for row in rows[2:]:
         c = cells(row)
-        n += 1
         label = unesc(c[0])
+        n = number(label)
         rest = []
         for i, v in enumerate(c[1:], 1):
             v = unesc(v)
@@ -75,7 +78,7 @@ def table_to_notes(block, area, start):
             h = head[i] if i < len(head) else ""  # a stray "|" in a cell makes extra cells: keep them
             rest.append(v if h.lower() in ("yêu cầu", "mô tả", "nội dung", "") else f"{unesc(h)}: {v}")
         out.append(f"- `{area}.{n:02d}` **{label}**" + (f": {'; '.join(rest)}" if rest else ""))
-    return "\n".join(out), n
+    return "\n".join(out)
 
 
 TC_COLS = ["Tên testcase", "Priority", "Scenario", "Role", "Pre-condition", "Given/When/Then", "Expected Result"]
@@ -108,7 +111,10 @@ def tc_rows(block):
     return out
 
 
-def convert(src):
+def convert(src, lock=None):
+    lock = lock or Lock()
+    rel = rel_of(src)
+    lock.start(rel)
     text = open(src, encoding="utf-8").read().replace("\r\n", "\n")
     title, _, rest = text.partition("\n")
     h2 = split_h(rest, 2)
@@ -133,7 +139,8 @@ def convert(src):
     if lead:
         out += [lead, ""]
     for no, (head, body) in enumerate(pages[1:], 1):
-        area = f"A{no:02d}"
+        area_no = lock.area(rel, head, no)
+        area = f"A{area_no:02d}"
         body, _, tests = body.partition("\n#### Testcase")
         if tests:
             tc_tables.append(tests)
@@ -141,9 +148,9 @@ def convert(src):
         name = re.sub(r"^Trang \d+:\s*", "", head.strip())  # some originals already say "Trang N:"
         out.append(f"### Trang {no}: " + (f"{', '.join(codes)} — " if codes else "") + name)
         body = html_images(body, no)
-        n, pieces, pos = 0, [], 0
+        pieces, pos = [], 0
         for s, e, block in table_blocks(body):
-            notes, n = table_to_notes(block, area, n)
+            notes = table_to_notes(block, area, lambda label: lock.item(rel, area_no, label))
             pieces += [body[pos:s], notes + "\n"]
             pos = e
         body = "".join(pieces) + body[pos:]
@@ -231,4 +238,6 @@ def convert(src):
 if __name__ == "__main__":
     src, dst = sys.argv[1:3]
     os.makedirs(os.path.dirname(dst), exist_ok=True)
-    open(dst, "w", encoding="utf-8").write(convert(src))
+    lock = Lock()
+    open(dst, "w", encoding="utf-8").write(convert(src, lock))
+    lock.save()

@@ -3,6 +3,9 @@
 ## 1. UI
 
 ### Trang 1: ADM-AB-010000 — Action Board tổng quát
+
+![Figma mới nhất · ADM-AB-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-AB-010000.png)
+
 ![Trang 1](./images/action-board-training-process.png)
 
 *Ví dụ Action Board kiểu Pack - Sub - Role tại màn hình Đào tạo → Quy trình — nhấn để xem ảnh gốc*
@@ -57,6 +60,9 @@
 - `A01.23` **Review**: Action Board type: `PACK`
 
 ### Trang 2: ADM-AB-010000 — Khu vực cây Package
+
+![Figma mới nhất · ADM-AB-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-AB-010000.png)
+
 **Field:**
 
 - `A02.01` **Tên Package**: Bắt buộc khi tạo; FE loại khoảng trắng đầu/cuối để kiểm tra rỗng; code hiện tại chưa quy định giới hạn độ dài hoặc kiểm tra trùng tên.
@@ -75,6 +81,9 @@
 - Khi xóa một Package cha, code hiện tại chỉ đổi trạng thái node được chọn; chưa có xử lý cascade trạng thái xuống toàn bộ node con.
 
 ### Trang 3: ADM-AB-010000 — Khu vực Category và Action
+
+![Figma mới nhất · ADM-AB-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-AB-010000.png)
+
 **Field Category:**
 
 - `A03.01` **Tên Category**: Bắt buộc khi tạo; FE trim để kiểm tra rỗng; chưa có giới hạn độ dài hoặc kiểm tra trùng tên.
@@ -103,6 +112,9 @@
 - Ngoài `Review`, Action tạo mới mặc định là loại đầu tiên trong danh sách loại hợp lệ; với danh sách mặc định hiện tại là `Kiểm tra`.
 
 ### Trang 4: ADM-AB-010010 — Popup chọn loại Action
+
+![Figma mới nhất · ADM-AB-010010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-AB-010010.png)
+
 ![Trang 4](./images/action-board-action-type-menu.png)
 
 *Dropdown chọn loại Action trên màn hình Quy trình đào tạo — nhấn để xem ảnh gốc*
@@ -123,6 +135,9 @@
 - Người không có quyền định nghĩa không được hiển thị dropdown đổi loại Action.
 
 ### Trang 5: ADM-AB-010000 — Danh sách Action trong Category
+
+![Figma mới nhất · ADM-AB-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-AB-010000.png)
+
 ![Trang 5](./images/action-board-action-types-overview.png)
 
 *Category hiển thị các Action Kiểm tra, Hướng dẫn, Task tiến trình, Task nhập liệu, Đánh giá, Media và Nhận xét — nhấn để xem ảnh gốc*
@@ -141,6 +156,9 @@
 - Thứ tự Action sau kéo thả phải được giữ nguyên khi tải lại trang.
 
 ### Trang 6: ADM-AB-010001 — Nội dung Action loại Deadline, Xác thực và Log
+
+![Figma mới nhất · ADM-AB-010001](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-AB-010001.png)
+
 ![Trang 6](./images/action-board-deadline-verification-log.png)
 
 *Ba loại Action mới với các control tương ứng khi được mở rộng — nhấn để xem ảnh gốc*
@@ -165,6 +183,9 @@
 - Ảnh tham chiếu chỉ xác nhận thành phần và trạng thái rỗng của UI. Kiểu dữ liệu, quy tắc bắt buộc, quyền cập nhật, validation và ảnh hưởng tới tiến độ cần được chốt trước khi triển khai backend.
 
 ### Trang 7: ADM-AB-010002 — Nội dung Action loại Hướng dẫn
+
+![Figma mới nhất · ADM-AB-010002](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-AB-010002.png)
+
 ![Trang 7](./images/action-board-instruction-upload.png)
 
 *Action Hướng dẫn mở rộng với mô tả và vùng kéo thả/chọn file — nhấn để xem ảnh gốc*
@@ -184,6 +205,9 @@
 - Code hiện tại không truyền giới hạn số file, dung lượng mỗi file hoặc tổng dung lượng cho vùng upload này.
 
 ### Trang 8: ADM-AB-010003 — Nội dung Action loại Media
+
+![Figma mới nhất · ADM-AB-010003](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-AB-010003.png)
+
 ![Trang 8](./images/action-board-media-input.png)
 
 *Action Media mở rộng với ô Nhập URL và vùng upload ảnh/video — nhấn để xem ảnh gốc*
@@ -205,6 +229,9 @@
 - Code hiện tại không truyền giới hạn dung lượng/số file và chưa có validation định dạng URL tại input.
 
 ### Trang 9: ADM-AB-010000 — Khu vực kết quả theo người sở hữu
+
+![Figma mới nhất · ADM-AB-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-AB-010000.png)
+
 **Field:**
 
 - `A09.01` **Người sở hữu**: Bắt buộc để tạo kết quả; thường là ID ứng viên/người được đào tạo.

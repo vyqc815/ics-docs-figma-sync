@@ -1,146 +1,146 @@
 {
- "ghiChu": "Mã màn cho trang requirement do design duyệt tay (2026-11-03). apply_page_codes.py dùng file này trước, rồi mới tự khớp theo registry. Khoá: file → số Trang → mã.",
+ "ghiChu": "Mã màn cho trang requirement do design duyệt tay (2026-11-03). apply_page_codes.py dùng file này trước, rồi mới tự khớp theo registry. Khoá: file → tên trang (không kèm \"Trang N:\") → mã, nên QC chèn hay xoá trang không làm lệch.",
  "pages": {
   "account_management/account_management.md": {
-   "1": "MST-TK-010000",
-   "2": "MST-TK-010010"
+   "Danh sách tài khoản": "MST-TK-010000",
+   "Popup tạo / chỉnh sửa tài khoản": "MST-TK-010010"
   },
   "appointment_requirement/appointment_requirements.md": {
-   "1": "ADM-LHN-010100, ADM-LHN-010200, ADM-LHN-010300, ADM-LHN-010400",
-   "2": "ADM-LHN-010100",
-   "4": "ADM-LHN-010100"
+   "Danh Sách Lịch Hẹn": "ADM-LHN-010100, ADM-LHN-010200, ADM-LHN-010300, ADM-LHN-010400",
+   "Bộ lọc và lựa chọn Ưu tiên / Trạng thái": "ADM-LHN-010100",
+   "Chỉnh Độ ưu tiên và Trạng thái trên dòng": "ADM-LHN-010100"
   },
   "course_management/course_management.md": {
-   "3": "CD-KH-010010"
+   "Popup xác nhận Công khai khoá học": "CD-KH-010010"
   },
   "course_management/knowledge-s1/knowledge-s1.md": {
-   "6": "CD-KH-040130"
+   "Nhập nhanh cuối bảng": "CD-KH-040130"
   },
   "course_management/semester/lesson/lesson.md": {
-   "2": "CD-KH-030210",
-   "5": "CD-KH-030241, CD-KH-030244",
-   "6": "CD-KH-030242, CD-KH-030245"
+   "Popup: Chi tiết bài học - Tab Thông tin": "CD-KH-030210",
+   "Popup: Chi tiết bài học - Tab Kiến thức": "CD-KH-030241, CD-KH-030244",
+   "Popup: Chi tiết bài học - Tab Kỹ năng (mới — **UI cần bổ sung Figma**)": "CD-KH-030242, CD-KH-030245"
   },
   "course_management/skill-s6/skill-s6.md": {
-   "2": "CD-KH-050100",
-   "4": "CD-KH-050100",
-   "5": "CD-KH-050100",
-   "8": "CD-KH-050100"
+   "Bảng bài nghe": "CD-KH-050100",
+   "Panel Cụm và Số cụm": "CD-KH-050100",
+   "Tìm kiếm, lọc và sắp xếp": "CD-KH-050100",
+   "Menu thao tác dòng và Popup Thêm vào cụm / Gỡ khỏi cụm": "CD-KH-050100"
   },
   "curriculum_management_requirement/category_management/category_management_requirements.md": {
-   "4": "CD-DM-010010",
-   "6": "CD-DM-010060",
-   "7": "CD-DM-010020, CD-DM-010030, CD-DM-010040",
-   "8": "CD-DM-010057"
+   "Popup Chi tiết danh mục": "CD-DM-010010",
+   "Popup Kích hoạt công khai khóa học": "CD-DM-010060",
+   "Tab Mindset, Tiêu chuẩn giáo trình và Hướng dẫn giảng dạy": "CD-DM-010020, CD-DM-010030, CD-DM-010040",
+   "Popup Áp dụng thành công": "CD-DM-010057"
   },
   "curriculum_management_requirement/category_management/detail_category.md": {
-   "1": "CD-DM-010010",
-   "3": "CD-DM-010020, CD-DM-010030, CD-DM-010040"
+   "Popup Chi tiết danh mục": "CD-DM-010010",
+   "Tab Mindset, Tiêu chuẩn giáo trình và Hướng dẫn giảng dạy": "CD-DM-010020, CD-DM-010030, CD-DM-010040"
   },
   "management_requirement/class_management/class_creation_requirements.md": {
-   "5": "ADM-LOP-010020"
+   "Popup Thêm Lịch Dạy Cố Định": "ADM-LOP-010020"
   },
   "management_requirement/class_management/class_detail_lessons_requirements.md": {
-   "1": "ADM-LOP-030100",
-   "2": "ADM-LOP-030100",
-   "5": "ADM-LOP-030100",
-   "7": "ADM-LOP-030300",
-   "8": "ADM-LOP-030400",
-   "9": "ADM-LOP-030100",
-   "11": "ADM-LOP-030500"
+   "Khung menu và Danh sách bài học": "ADM-LOP-030100",
+   "Tab Buổi học — Bài đã bắt đầu": "ADM-LOP-030100",
+   "Tab Buổi học — Bài học chưa bắt đầu": "ADM-LOP-030100",
+   "Tab Nội dung": "ADM-LOP-030300",
+   "Tab Tài nguyên — Click tải xuống ngay": "ADM-LOP-030400",
+   "Chỉ số % BTVN và Đi học theo bài": "ADM-LOP-030100",
+   "Tab Kiến thức — Để trống": "ADM-LOP-030500"
   },
   "management_requirement/class_management/class_detail_meetings_requirements.md": {
-   "1": "ADM-LOP-020904"
+   "Khung tab Cuộc họp và danh sách buổi họp": "ADM-LOP-020904"
   },
   "management_requirement/class_management/class_detail_overview_requirements.md": {
-   "10": "ADM-LOP-020110"
+   "Popup ghi chú giáo viên theo bài học": "ADM-LOP-020110"
   },
   "management_requirement/class_management/class_detail_processes_requirements.md": {
-   "1": "ADM-LOP-020600, ADM-LOP-020700, ADM-LOP-020800"
+   "Ba tab quy trình trong lớp": "ADM-LOP-020600, ADM-LOP-020700, ADM-LOP-020800"
   },
   "management_requirement/class_management/class_detail_schedule_requirements.md": {
-   "1": "ADM-LOP-040500",
-   "7": "ADM-LOP-040500"
+   "Tab Lịch dạy — Lịch theo tuần": "ADM-LOP-040500",
+   "Mở lại lịch đã hoàn thành và đảo lương": "ADM-LOP-040500"
   },
   "management_requirement/class_management/class_detail_self_study_requirements.md": {
-   "1": "ADM-LOP-020404"
+   "Khung menu và trạng thái chưa có khóa tự học": "ADM-LOP-020404"
   },
   "management_requirement/class_management/class_management_requirements.md": {
-   "7": "ADM-LOP-010040"
+   "Popup Thêm tag cho lớp": "ADM-LOP-010040"
   },
   "management_requirement/student_management/student_detail_requirements.md": {
-   "1": "ADM-HV-020100",
-   "4": "ADM-HV-020200",
-   "5": "ADM-HV-020300",
-   "6": "ADM-HV-020400",
-   "7": "ADM-HV-020500"
+   "Khung Chi tiết học viên và điều hướng": "ADM-HV-020100",
+   "Chi tiết học viên — Danh sách lớp": "ADM-HV-020200",
+   "Chi tiết học viên — Học phí": "ADM-HV-020300",
+   "Chi tiết học viên — Log": "ADM-HV-020400",
+   "Chi tiết học viên — Quy trình học viên": "ADM-HV-020500"
   },
   "management_requirement/teacher_management/teacher_detail_requirements.md": {
-   "1": "ADM-GV-020100",
-   "4": "ADM-GV-020300"
+   "Màn hình Chi tiết giáo viên": "ADM-GV-020100",
+   "Tab Lịch dạy": "ADM-GV-020300"
   },
   "meeting_schedule/meeting_schedule.md": {
-   "2": "SP-LHP-020000",
-   "4": "SP-LHP-010001, SP-LHP-010002, SP-LHP-010003"
+   "Danh sách cuộc họp — dạng lịch tuần": "SP-LHP-020000",
+   "Dropdown bộ lọc": "SP-LHP-010001, SP-LHP-010002, SP-LHP-010003"
   },
   "receipt_management/receipt/receipt.md": {
-   "1": "ADM-HD-010000",
-   "2": "ADM-HD-010010, ADM-HD-010030",
-   "3": "ADM-HD-010050",
-   "4": "ADM-HD-010060"
+   "Danh Sách Hoá Đơn": "ADM-HD-010000",
+   "Popup Thêm hoá đơn / Chỉnh sửa hoá đơn": "ADM-HD-010010, ADM-HD-010030",
+   "Popup Chọn học viên liên kết hoá đơn": "ADM-HD-010050",
+   "Popup Thêm học phí": "ADM-HD-010060"
   },
   "receipt_management/tuition_detail/tuition_detail.md": {
-   "2": "ADM-HD-010090",
-   "3": "ADM-HD-010110, ADM-HD-010111",
-   "4": "ADM-HD-010130",
-   "5": "ADM-HD-010020",
-   "6": "ADM-HD-010120",
-   "7": "ADM-HD-010225",
-   "8": "ADM-HD-010230"
+   "Popup Thêm tag": "ADM-HD-010090",
+   "Popup Thêm lịch hẹn / Chỉnh sửa lịch hẹn": "ADM-HD-010110, ADM-HD-010111",
+   "Popup Danh sách lịch hẹn": "ADM-HD-010130",
+   "Popup Hồ sơ học viên - tab Lịch sử hoá đơn": "ADM-HD-010020",
+   "Popup Hồ sơ học viên - tab Lịch sử lớp": "ADM-HD-010120",
+   "Popup Hồ sơ học viên - tab Ghi chú": "ADM-HD-010225",
+   "Popup Thêm ghi chú": "ADM-HD-010230"
   },
   "ship_books/ship_books/ship_books.md": {
-   "1": "ADM-SS-010000",
-   "2": "ADM-SS-010010, ADM-SS-010040",
-   "3": "ADM-SS-010034"
+   "Danh Sách Đơn Sách": "ADM-SS-010000",
+   "Popup Thêm đơn sách / Cập nhật đơn sách": "ADM-SS-010010, ADM-SS-010040",
+   "Popup Xác nhận gửi tin nhắn": "ADM-SS-010034"
   },
   "survey_bug/bug/bug.md": {
-   "2": "CD-BL-010000, CH-BL-010000, GV-BL-010000",
-   "3": "CD-BL-010010, CD-BL-010011, GV-BL-010010",
-   "4": "CD-BL-010020, CD-BL-010030, GV-BL-010020",
-   "5": "CD-BL-010050, CH-BL-010050",
-   "6": "CD-BL-010030, GV-BL-010030",
-   "7": "CH-BL-010070"
+   "Danh sách Báo lỗi & góp ý": "CD-BL-010000, CH-BL-010000, GV-BL-010000",
+   "Popup Gửi báo lỗi": "CD-BL-010010, CD-BL-010011, GV-BL-010010",
+   "Popup Chi tiết báo lỗi": "CD-BL-010020, CD-BL-010030, GV-BL-010020",
+   "Popup Xác nhận hoàn thành": "CD-BL-010050, CH-BL-010050",
+   "Popup Xem kết quả": "CD-BL-010030, GV-BL-010030",
+   "Popup nhắc bug chưa xử lý (PTL)": "CH-BL-010070"
   },
   "survey_bug/survey/01-create-survey/01-create-survey.md": {
-   "1": "ADM-KS-010000, ADM-KS-020000",
-   "2": "ADM-KS-030000",
-   "3": "ADM-KS-010030, ADM-KS-020030, ADM-KS-030030"
+   "Tạo khảo sát — tab Giáo viên / Lớp": "ADM-KS-010000, ADM-KS-020000",
+   "Tạo khảo sát — tab Học viên": "ADM-KS-030000",
+   "Popup: Xem trước khảo sát": "ADM-KS-010030, ADM-KS-020030, ADM-KS-030030"
   },
   "survey_bug/survey/02-assign-survey/02-assign-survey.md": {
-   "1": "ADM-GKS-010000",
-   "2": "ADM-GKS-020000, ADM-GKS-030000",
-   "5": "ADM-GKS-010005, ADM-GKS-020005",
-   "6": "ADM-GKS-030050",
-   "7": "ADM-GKS-010020, ADM-GKS-020020, ADM-GKS-030020",
-   "8": "ADM-GKS-020030, ADM-GKS-030030",
-   "9": "ADM-GKS-010030"
+   "Giao khảo sát — tab Giáo viên": "ADM-GKS-010000",
+   "Giao khảo sát — tab Lớp / Học viên": "ADM-GKS-020000, ADM-GKS-030000",
+   "Popup 3: Chọn trung tâm (tab Học viên — khảo sát Tuỳ chọn)": "ADM-GKS-010005, ADM-GKS-020005",
+   "Popup 4: Chọn buổi học (tab Học viên — khảo sát Bắt buộc)": "ADM-GKS-030050",
+   "Giao khảo sát — tab \"Kết quả khảo sát\"": "ADM-GKS-010020, ADM-GKS-020020, ADM-GKS-030020",
+   "Popup 5: Kết quả của 1 lớp / trung tâm": "ADM-GKS-020030, ADM-GKS-030030",
+   "Popup 6: Kết quả từng giáo viên": "ADM-GKS-010030"
   },
   "teacher_role/class/class_teaching_requirements.md": {
-   "4": "GV-LOP-030130, GV-LOP-030140",
-   "6": "GV-LOP-030160, GV-LOP-030170",
-   "11": "GV-LOP-030100",
-   "13": "GV-LOP-040100, GV-LOP-040200",
-   "15": "GV-LOP-040100, GV-LOP-040200",
-   "17": "GV-LOP-040221",
-   "19": "GV-LOP-040320",
-   "23": "GV-LOP-040300",
-   "24": "GV-LOP-040301",
-   "25": "GV-LOP-040300"
+   "Bước 1 — Điểm danh và Ghi chú cho lớp học": "GV-LOP-030130, GV-LOP-030140",
+   "Tab Buổi học — Bài đang dạy và chờ hoàn thành": "GV-LOP-030160, GV-LOP-030170",
+   "Chỉ số % BTVN và Đi học theo bài": "GV-LOP-030100",
+   "Khối Tổng Quan": "GV-LOP-040100, GV-LOP-040200",
+   "Bảng kết quả học viên": "GV-LOP-040100, GV-LOP-040200",
+   "Thu hồi bài kiểm tra": "GV-LOP-040221",
+   "Danh sách Câu hỏi và trạng thái chấm": "GV-LOP-040320",
+   "Nhận xét chung của câu": "GV-LOP-040300",
+   "Câu hỏi con": "GV-LOP-040301",
+   "Nút Đã Chấm và Sửa Bài Trên Lớp": "GV-LOP-040300"
   },
   "tools/move_video/move_video.md": {
-   "1": "ADM-MV-010000",
-   "2": "ADM-MV-020000",
-   "3": "ADM-MV-020010, ADM-MV-020020"
+   "Xác minh Gmail": "ADM-MV-010000",
+   "Danh sách video": "ADM-MV-020000",
+   "Popup Đổi tên video và xác nhận xoá": "ADM-MV-020010, ADM-MV-020020"
   }
  }
 }

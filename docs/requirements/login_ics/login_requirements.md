@@ -3,6 +3,9 @@
 ## 1. UI
 
 ### Trang 1: SYS-DN-010000 — Đăng nhập
+
+![Figma mới nhất · SYS-DN-010000](https://ics-figma-demo.vercel.app/api/figma-frame/SYS-DN-010000.png)
+
 **Mô tả:**
 
 - Người dùng nhập tài khoản (email)/mật khẩu để đăng nhập; màn hình đăng nhập không có bước chọn trung tâm.
@@ -22,6 +25,9 @@
 - Password mặc định được che. Icon mắt chỉ đổi trạng thái hiển thị, không đổi giá trị.
 
 ### Trang 2: SYS-DN-020000 — Quên mật khẩu
+
+![Figma mới nhất · SYS-DN-020000](https://ics-figma-demo.vercel.app/api/figma-frame/SYS-DN-020000.png)
+
 **Mô tả:**
 
 - Người dùng nhập email để yêu cầu nhận liên kết đặt lại mật khẩu.
@@ -38,6 +44,9 @@
 - Backend chưa có API cho luồng quên mật khẩu; testcase của trang này chưa kiểm tra được ở tầng API.
 
 ### Trang 3: SYS-DN-030000 — Đặt lại mật khẩu từ email
+
+![Figma mới nhất · SYS-DN-030000](https://ics-figma-demo.vercel.app/api/figma-frame/SYS-DN-030000.png)
+
 **Mô tả:**
 
 - Người dùng mở liên kết trong email và đặt mật khẩu mới trên trang do Firebase cung cấp.
@@ -54,6 +63,9 @@
 - Backend chưa có API cho luồng quên mật khẩu; testcase của trang này chưa kiểm tra được ở tầng API.
 
 ### Trang 4: SYS-DN-040000 — Đổi mật khẩu trong hồ sơ cá nhân
+
+![Figma mới nhất · SYS-DN-040000](https://ics-figma-demo.vercel.app/api/figma-frame/SYS-DN-040000.png)
+
 **Mô tả:**
 
 - Người dùng đã đăng nhập vào hồ sơ cá nhân để đổi mật khẩu của chính mình.
@@ -69,6 +81,9 @@
 - Đổi mật khẩu trong hồ sơ cá nhân khác với Quên mật khẩu: không gửi email, không dùng liên kết.
 
 ### Trang 5: SYS-DN-050000 — Chọn tài khoản
+
+![Figma mới nhất · SYS-DN-050000](https://ics-figma-demo.vercel.app/api/figma-frame/SYS-DN-050000.png)
+
 **Mô tả:**
 
 - Màn hình liệt kê các tài khoản đã từng đăng nhập trên thiết bị để người dùng chọn lại hoặc thêm tài khoản mới mà không cần đăng xuất.
@@ -92,6 +107,9 @@
 - Sau khi đăng nhập, người dùng chuyển tài khoản, thêm tài khoản, đổi role (`Chuyển vị trí`) và đăng xuất từ menu tài khoản trên header.
 
 ### Trang 6: SYS-DN-050010 — Thêm tài khoản
+
+![Figma mới nhất · SYS-DN-050010](https://ics-figma-demo.vercel.app/api/figma-frame/SYS-DN-050010.png)
+
 **Mô tả:**
 
 - Người dùng đăng nhập thêm 1 tài khoản khác vào danh sách tài khoản trên thiết bị.
@@ -110,6 +128,9 @@
 - Quy tắc kiểm tra dữ liệu và thông báo lỗi giống Trang 1.
 
 ### Trang 7: SYS-DN-060000 — Chọn trung tâm sau đăng nhập
+
+![Figma mới nhất · SYS-DN-060000](https://ics-figma-demo.vercel.app/api/figma-frame/SYS-DN-060000.png)
+
 **Mô tả:**
 
 - Sau khi đăng nhập, người dùng chọn trung tâm làm việc bằng nút chọn trung tâm ở cuối thanh menu bên trái.
