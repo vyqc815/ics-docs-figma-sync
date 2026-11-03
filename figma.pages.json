@@ -3046,512 +3046,512 @@
     {
       "name": "cd-kh-060110",
       "nodeId": "5491:348706",
-      "route": "/bai-tap-ve-nha/popup-chon-loai-cau"
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060110"
     },
     {
       "name": "cd-kh-060120",
       "nodeId": "5491:348805",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-trac-nghiem"
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060120"
     },
     {
       "name": "cd-kh-060121",
       "nodeId": "5672:74620",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-sap-xep"
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060121"
     },
     {
       "name": "cd-kh-060122",
       "nodeId": "5672:74752",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-noi-tu"
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060122"
     },
     {
       "name": "cd-kh-060123",
       "nodeId": "5672:74887",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-noi"
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060123"
     },
     {
       "name": "cd-kh-060124",
       "nodeId": "5672:75018",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-viet"
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060124"
     },
     {
       "name": "cd-kh-060125",
       "nodeId": "5672:75135",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-cau-hoi-con"
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060125"
     },
     {
       "name": "cd-kh-060140",
       "nodeId": "5672:75273",
-      "route": "/bai-tap-ve-nha/ket-qua-import"
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060140"
     },
     {
       "name": "cd-kh-060141",
       "nodeId": "5672:75298",
-      "route": "/bai-tap-ve-nha/ket-qua-import-cd-kh-060141"
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060141"
     },
     {
       "name": "cd-kh-060150",
       "nodeId": "5672:75315",
-      "route": "/bai-tap-ve-nha/soat-loi-bang-ai"
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060150"
     },
     {
       "name": "adm-gft-010010",
       "nodeId": "3977:76869",
-      "route": "/gift-code/popup-tao-gift-code"
+      "route": "/frames/adm-gft-010010"
     },
     {
       "name": "adm-gft-010010-dk",
       "nodeId": "4056:130374",
-      "route": "/gift-code/popup-tao-gift-code-dk"
+      "route": "/frames/adm-gft-010010-dk"
     },
     {
       "name": "adm-gft-010020",
       "nodeId": "3977:76954",
-      "route": "/gift-code/popup-cap-nhat-gift-code"
+      "route": "/frames/adm-gft-010020"
     },
     {
       "name": "adm-gft-010020-dk",
       "nodeId": "4056:130398",
-      "route": "/gift-code/popup-cap-nhat-gift-code-dk"
+      "route": "/frames/adm-gft-010020-dk"
     },
     {
       "name": "adm-gks-010005",
       "nodeId": "5138:152878",
-      "route": "/khao-sat/giao-khao-sat/popup-chon-trung-tam"
+      "route": "/frames/adm-gks-010005"
     },
     {
       "name": "adm-gks-010010",
       "nodeId": "4273:153174",
-      "route": "/khao-sat/giao-khao-sat/popup-chon-giao-vien"
+      "route": "/frames/adm-gks-010010"
     },
     {
       "name": "adm-gks-010010-dk",
       "nodeId": "4343:57597",
-      "route": "/khao-sat/giao-khao-sat/popup-chon-giao-vien-dk"
+      "route": "/frames/adm-gks-010010-dk"
     },
     {
       "name": "adm-gks-010030",
       "nodeId": "4273:153857",
-      "route": "/khao-sat/giao-khao-sat/popup-ket-qua-ca-nhan"
+      "route": "/frames/adm-gks-010030"
     },
     {
       "name": "adm-gks-010030-dk",
       "nodeId": "4343:57935",
-      "route": "/khao-sat/giao-khao-sat/popup-ket-qua-ca-nhan-dk"
+      "route": "/frames/adm-gks-010030-dk"
     },
     {
       "name": "adm-gks-010040",
       "nodeId": "4273:153940",
-      "route": "/khao-sat/giao-khao-sat/popup-chon-cuoc-khao-sat"
+      "route": "/frames/adm-gks-010040"
     },
     {
       "name": "adm-gks-010040-dk",
       "nodeId": "4343:57987",
-      "route": "/khao-sat/giao-khao-sat/popup-chon-cuoc-khao-sat-dk"
+      "route": "/frames/adm-gks-010040-dk"
     },
     {
       "name": "adm-gks-020005",
       "nodeId": "5138:153136",
-      "route": "/khao-sat/giao-khao-sat-lop/popup-chon-trung-tam"
+      "route": "/frames/adm-gks-020005"
     },
     {
       "name": "adm-gks-020010",
       "nodeId": "4885:39937",
-      "route": "/khao-sat/giao-khao-sat-lop/popup-chon-lop"
+      "route": "/frames/adm-gks-020010"
     },
     {
       "name": "adm-gks-020010-dk",
       "nodeId": "4885:61021",
-      "route": "/khao-sat/giao-khao-sat-lop/popup-chon-lop-dk"
+      "route": "/frames/adm-gks-020010-dk"
     },
     {
       "name": "adm-gks-020030",
       "nodeId": "4885:40275",
-      "route": "/khao-sat/giao-khao-sat-lop/popup-ket-qua-ca-lop"
+      "route": "/frames/adm-gks-020030"
     },
     {
       "name": "adm-gks-020031-dk",
       "nodeId": "4885:61367",
-      "route": "/khao-sat/giao-khao-sat-lop/popup-ket-qua-tung-hoc-vien-dk"
+      "route": "/frames/adm-gks-020031-dk"
     },
     {
       "name": "adm-gks-020040",
       "nodeId": "4885:40327",
-      "route": "/khao-sat/giao-khao-sat-lop/popup-chon-cuoc-khao-sat"
+      "route": "/frames/adm-gks-020040"
     },
     {
       "name": "adm-gks-020040-dk",
       "nodeId": "4885:61419",
-      "route": "/khao-sat/giao-khao-sat-lop/popup-chon-cuoc-khao-sat-dk"
+      "route": "/frames/adm-gks-020040-dk"
     },
     {
       "name": "adm-gks-030030",
       "nodeId": "4885:41573",
-      "route": "/khao-sat/giao-khao-sat-hoc-vien/popup-ket-qua-ca-trung-tam"
+      "route": "/frames/adm-gks-030030"
     },
     {
       "name": "adm-gks-030031-dk",
       "nodeId": "4885:62559",
-      "route": "/khao-sat/giao-khao-sat-hoc-vien/popup-ket-qua-ca-nhan-dk"
+      "route": "/frames/adm-gks-030031-dk"
     },
     {
       "name": "adm-gks-030040",
       "nodeId": "4885:41625",
-      "route": "/khao-sat/giao-khao-sat-hoc-vien/popup-chon-cuoc-khao-sat"
+      "route": "/frames/adm-gks-030040"
     },
     {
       "name": "adm-gks-030040-dk",
       "nodeId": "4885:62611",
-      "route": "/khao-sat/giao-khao-sat-hoc-vien/popup-chon-cuoc-khao-sat-dk"
+      "route": "/frames/adm-gks-030040-dk"
     },
     {
       "name": "adm-gks-030050",
       "nodeId": "5019:5589",
-      "route": "/khao-sat/giao-khao-sat-hoc-vien/popup-giao-khao-sat-bat-buoc"
+      "route": "/frames/adm-gks-030050"
     },
     {
       "name": "adm-gks-030060",
       "nodeId": "5019:5728",
-      "route": "/khao-sat/giao-khao-sat-hoc-vien/popup-giao-khao-sat-tuy-chon"
+      "route": "/frames/adm-gks-030060"
     },
     {
       "name": "adm-gv-010010",
       "nodeId": "1505:20396",
-      "route": "/danh-sach-giao-vien/popup-tim-kiem-nang-cao"
+      "route": "/frames/adm-gv-010010"
     },
     {
       "name": "adm-gv-010010-dk",
       "nodeId": "4056:123655",
-      "route": "/danh-sach-giao-vien/popup-tim-kiem-nang-cao-dk"
+      "route": "/frames/adm-gv-010010-dk"
     },
     {
       "name": "adm-gv-010020",
       "nodeId": "1479:12897",
-      "route": "/danh-sach-giao-vien/popup-them-giao-vien"
+      "route": "/frames/adm-gv-010020"
     },
     {
       "name": "adm-gv-010020-dk",
       "nodeId": "4056:123781",
-      "route": "/danh-sach-giao-vien/popup-them-giao-vien-dk"
+      "route": "/frames/adm-gv-010020-dk"
     },
     {
       "name": "adm-gv-010030",
       "nodeId": "1739:30436",
-      "route": "/danh-sach-giao-vien/popup-them-tag"
+      "route": "/frames/adm-gv-010030"
     },
     {
       "name": "adm-gv-010030-dk",
       "nodeId": "4056:124263",
-      "route": "/danh-sach-giao-vien/popup-them-tag-dk"
+      "route": "/frames/adm-gv-010030-dk"
     },
     {
       "name": "adm-gv-010040",
       "nodeId": "1739:31622",
-      "route": "/danh-sach-giao-vien/popup-them-lich-hen"
+      "route": "/frames/adm-gv-010040"
     },
     {
       "name": "adm-gv-010040-dk",
       "nodeId": "4056:124313",
-      "route": "/danh-sach-giao-vien/popup-them-lich-hen-dk"
+      "route": "/frames/adm-gv-010040-dk"
     },
     {
       "name": "adm-gv-010042",
       "nodeId": "1873:39233",
-      "route": "/danh-sach-giao-vien/popup-them-lich-hen/dang-mo"
+      "route": "/frames/adm-gv-010042"
     },
     {
       "name": "adm-gv-010042-dk",
       "nodeId": "4056:124361",
-      "route": "/danh-sach-giao-vien/popup-them-lich-hen/dang-mo-dk"
+      "route": "/frames/adm-gv-010042-dk"
     },
     {
       "name": "adm-gv-010050",
       "nodeId": "1877:10069",
-      "route": "/danh-sach-giao-vien/popup-danh-sach-lich-hen"
+      "route": "/frames/adm-gv-010050"
     },
     {
       "name": "adm-gv-010050-dk",
       "nodeId": "4056:124472",
-      "route": "/danh-sach-giao-vien/popup-danh-sach-lich-hen-dk"
+      "route": "/frames/adm-gv-010050-dk"
     },
     {
       "name": "adm-gv-020210",
       "nodeId": "1540:30533",
-      "route": "/chi-tiet-giao-vien/danh-sach-lop/popup-chinh-sua-luong"
+      "route": "/frames/adm-gv-020210"
     },
     {
       "name": "adm-gv-020210-dk",
       "nodeId": "4056:126122",
-      "route": "/chi-tiet-giao-vien/danh-sach-lop/popup-chinh-sua-luong-dk"
+      "route": "/frames/adm-gv-020210-dk"
     },
     {
       "name": "adm-gv-020520",
       "nodeId": "3674:61905",
-      "route": "/chi-tiet-giao-vien/quan-ly-dang-ky-lich/popup-dang-ky-khung-gio"
+      "route": "/frames/adm-gv-020520"
     },
     {
       "name": "adm-gv-020520-dk",
       "nodeId": "4056:126935",
-      "route": "/chi-tiet-giao-vien/quan-ly-dang-ky-lich/popup-dang-ky-khung-gio-dk"
+      "route": "/frames/adm-gv-020520-dk"
     },
     {
       "name": "adm-hd-010010",
       "nodeId": "2731:75346",
-      "route": "/hoa-don/popup-them-hoa-don"
+      "route": "/frames/adm-hd-010010"
     },
     {
       "name": "adm-hd-010010-dk",
       "nodeId": "4056:131634",
-      "route": "/hoa-don/popup-them-hoa-don-dk"
+      "route": "/frames/adm-hd-010010-dk"
     },
     {
       "name": "adm-hd-010011",
       "nodeId": "3004:60619",
-      "route": "/hoa-don/popup-them-hoa-don/chon-don-vi-tien"
+      "route": "/frames/adm-hd-010011"
     },
     {
       "name": "adm-hd-010011-dk",
       "nodeId": "4056:133871",
-      "route": "/hoa-don/popup-them-hoa-don/chon-don-vi-tien-dk"
+      "route": "/frames/adm-hd-010011-dk"
     },
     {
       "name": "adm-hd-010012",
       "nodeId": "3004:65451",
-      "route": "/hoa-don/popup-them-hoa-don/chon-hoc-vien-co-san"
+      "route": "/frames/adm-hd-010012"
     },
     {
       "name": "adm-hd-010012-dk",
       "nodeId": "4056:133977",
-      "route": "/hoa-don/popup-them-hoa-don/chon-hoc-vien-co-san-dk"
+      "route": "/frames/adm-hd-010012-dk"
     },
     {
       "name": "adm-hd-010013",
       "nodeId": "3004:65498",
-      "route": "/hoa-don/popup-them-hoa-don/chon-hoc-vien-co-san/mo-danh-sach"
+      "route": "/frames/adm-hd-010013"
     },
     {
       "name": "adm-hd-010013-dk",
       "nodeId": "4056:134034",
-      "route": "/hoa-don/popup-them-hoa-don/chon-hoc-vien-co-san/mo-danh-sach-dk"
+      "route": "/frames/adm-hd-010013-dk"
     },
     {
       "name": "adm-hd-010030",
       "nodeId": "3004:15021",
-      "route": "/hoa-don/popup-chinh-sua-hoa-don"
+      "route": "/frames/adm-hd-010030"
     },
     {
       "name": "adm-hd-010030-dk",
       "nodeId": "4056:133804",
-      "route": "/hoa-don/popup-chinh-sua-hoa-don-dk"
+      "route": "/frames/adm-hd-010030-dk"
     },
     {
       "name": "adm-hd-010050",
       "nodeId": "2997:13731",
-      "route": "/hoa-don/popup-chon-hoc-vien-da-lien-ket"
+      "route": "/frames/adm-hd-010050"
     },
     {
       "name": "adm-hd-010050-dk",
       "nodeId": "4056:133741",
-      "route": "/hoa-don/popup-chon-hoc-vien-da-lien-ket-dk"
+      "route": "/frames/adm-hd-010050-dk"
     },
     {
       "name": "adm-hd-010060",
       "nodeId": "2997:13559",
-      "route": "/hoa-don/popup-them-hoc-phi"
+      "route": "/frames/adm-hd-010060"
     },
     {
       "name": "adm-hd-010060-dk",
       "nodeId": "4056:133723",
-      "route": "/hoa-don/popup-them-hoc-phi-dk"
+      "route": "/frames/adm-hd-010060-dk"
     },
     {
       "name": "adm-hd-010061",
       "nodeId": "2997:14096",
-      "route": "/hoa-don/popup-them-hoc-phi/hoc-vien-moi"
+      "route": "/frames/adm-hd-010061"
     },
     {
       "name": "adm-hd-010061-dk",
       "nodeId": "4056:133763",
-      "route": "/hoa-don/popup-them-hoc-phi/hoc-vien-moi-dk"
+      "route": "/frames/adm-hd-010061-dk"
     },
     {
       "name": "adm-hd-010070",
       "nodeId": "3004:61802",
-      "route": "/hoa-don/popup-them-nguoi-phu-trach"
+      "route": "/frames/adm-hd-010070"
     },
     {
       "name": "adm-hd-010070-dk",
       "nodeId": "4056:133934",
-      "route": "/hoa-don/popup-them-nguoi-phu-trach-dk"
+      "route": "/frames/adm-hd-010070-dk"
     },
     {
       "name": "adm-hd-010071",
       "nodeId": "3004:61931",
-      "route": "/hoa-don/popup-them-nguoi-phu-trach/chon-nguoi-phu-trach"
+      "route": "/frames/adm-hd-010071"
     },
     {
       "name": "adm-hd-010071-dk",
       "nodeId": "4056:133942",
-      "route": "/hoa-don/popup-them-nguoi-phu-trach/chon-nguoi-phu-trach-dk"
+      "route": "/frames/adm-hd-010071-dk"
     },
     {
       "name": "adm-hd-010072",
       "nodeId": "3004:62128",
-      "route": "/hoa-don/popup-them-nguoi-phu-trach/chon-trang-thai"
+      "route": "/frames/adm-hd-010072"
     },
     {
       "name": "adm-hd-010072-dk",
       "nodeId": "4056:133952",
-      "route": "/hoa-don/popup-them-nguoi-phu-trach/chon-trang-thai-dk"
+      "route": "/frames/adm-hd-010072-dk"
     },
     {
       "name": "adm-hd-010073",
       "nodeId": "3004:62345",
-      "route": "/hoa-don/popup-them-nguoi-phu-trach/chon-so-kpi"
+      "route": "/frames/adm-hd-010073"
     },
     {
       "name": "adm-hd-010073-dk",
       "nodeId": "4056:133962",
-      "route": "/hoa-don/popup-them-nguoi-phu-trach/chon-so-kpi-dk"
+      "route": "/frames/adm-hd-010073-dk"
     },
     {
       "name": "adm-hd-010080",
       "nodeId": "3058:99388",
-      "route": "/hoa-don/popup-them-thao-tac-hoc-vien"
+      "route": "/frames/adm-hd-010080"
     },
     {
       "name": "adm-hd-010080-dk",
       "nodeId": "4056:135450",
-      "route": "/hoa-don/popup-them-thao-tac-hoc-vien-dk"
+      "route": "/frames/adm-hd-010080-dk"
     },
     {
       "name": "adm-hd-010081",
       "nodeId": "3058:96236",
-      "route": "/hoa-don/popup-them/chon-xem-lich-su"
+      "route": "/frames/adm-hd-010081"
     },
     {
       "name": "adm-hd-010081-dk",
       "nodeId": "4056:134690",
-      "route": "/hoa-don/popup-them/chon-xem-lich-su-dk"
+      "route": "/frames/adm-hd-010081-dk"
     },
     {
       "name": "adm-hd-010082",
       "nodeId": "3058:108224",
-      "route": "/hoa-don/popup-them/chon-them-lich-hen"
+      "route": "/frames/adm-hd-010082"
     },
     {
       "name": "adm-hd-010082-dk",
       "nodeId": "4056:137320",
-      "route": "/hoa-don/popup-them/chon-them-lich-hen-dk"
+      "route": "/frames/adm-hd-010082-dk"
     },
     {
       "name": "adm-hd-010090",
       "nodeId": "3058:96343",
-      "route": "/hoa-don/popup-them-tag"
+      "route": "/frames/adm-hd-010090"
     },
     {
       "name": "adm-hd-010090-dk",
       "nodeId": "4056:134709",
-      "route": "/hoa-don/popup-them-tag-dk"
+      "route": "/frames/adm-hd-010090-dk"
     },
     {
       "name": "adm-hd-010110",
       "nodeId": "3058:96427",
-      "route": "/hoa-don/popup-them-lich-hen"
+      "route": "/frames/adm-hd-010110"
     },
     {
       "name": "adm-hd-010110-dk",
       "nodeId": "4056:134738",
-      "route": "/hoa-don/popup-them-lich-hen-dk"
+      "route": "/frames/adm-hd-010110-dk"
     },
     {
       "name": "adm-hd-010111",
       "nodeId": "3058:96531",
-      "route": "/hoa-don/popup-cap-nhat-lich-hen"
+      "route": "/frames/adm-hd-010111"
     },
     {
       "name": "adm-hd-010111-dk",
       "nodeId": "4056:134786",
-      "route": "/hoa-don/popup-cap-nhat-lich-hen-dk"
+      "route": "/frames/adm-hd-010111-dk"
     },
     {
       "name": "adm-hd-010120",
       "nodeId": "2731:75709",
-      "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-lop"
+      "route": "/frames/adm-hd-010120"
     },
     {
       "name": "adm-hd-010120-dk",
       "nodeId": "4056:131857",
-      "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-lop-dk"
+      "route": "/frames/adm-hd-010120-dk"
     },
     {
       "name": "adm-hd-010130",
       "nodeId": "3058:96637",
-      "route": "/hoa-don/popup-danh-sach-lich-hen"
+      "route": "/frames/adm-hd-010130"
     },
     {
       "name": "adm-hd-010130-dk",
       "nodeId": "4056:134834",
-      "route": "/hoa-don/popup-danh-sach-lich-hen-dk"
+      "route": "/frames/adm-hd-010130-dk"
     },
     {
       "name": "adm-hd-010230",
       "nodeId": "2731:75906",
-      "route": "/hoa-don/popup-ho-so-hoc-vien/popup-them-ghi-chu"
+      "route": "/frames/adm-hd-010230"
     },
     {
       "name": "adm-hd-010230-dk",
       "nodeId": "4056:131931",
-      "route": "/hoa-don/popup-ho-so-hoc-vien/popup-them-ghi-chu-dk"
+      "route": "/frames/adm-hd-010230-dk"
     },
     {
       "name": "adm-hd-010231",
       "nodeId": "3058:111717",
-      "route": "/hoa-don/popup-ho-so-hoc-vien/popup-them-ghi-chu/mo-loai"
+      "route": "/frames/adm-hd-010231"
     },
     {
       "name": "adm-hd-010231-dk",
       "nodeId": "4056:137479",
-      "route": "/hoa-don/popup-ho-so-hoc-vien/popup-them-ghi-chu/mo-loai-dk"
+      "route": "/frames/adm-hd-010231-dk"
     },
     {
       "name": "adm-hv-010010",
       "nodeId": "2263:35406",
-      "route": "/danh-sach-hoc-vien/popup-them-hoc-vien"
+      "route": "/frames/adm-hv-010010"
     },
     {
       "name": "adm-hv-010010-dk",
       "nodeId": "4056:119911",
-      "route": "/danh-sach-hoc-vien/popup-them-hoc-vien-dk"
+      "route": "/frames/adm-hv-010010-dk"
     },
     {
       "name": "adm-hv-010012",
       "nodeId": "3269:75081",
-      "route": "/danh-sach-hoc-vien/popup-them-hoc-vien/dropdown-cap-do"
+      "route": "/frames/adm-hv-010012"
     },
     {
       "name": "adm-hv-010012-dk",
       "nodeId": "4056:119964",
-      "route": "/danh-sach-hoc-vien/popup-them-hoc-vien/dropdown-cap-do-dk"
+      "route": "/frames/adm-hv-010012-dk"
     },
     {
       "name": "adm-hv-010060",
       "nodeId": "2263:45940",
-      "route": "/danh-sach-hoc-vien/popup-them-lich-hen"
+      "route": "/frames/adm-hv-010060"
     },
     {
       "name": "adm-hv-010060-dk",
       "nodeId": "4056:122492",
-      "route": "/danh-sach-hoc-vien/popup-them-lich-hen-dk"
+      "route": "/frames/adm-hv-010060-dk"
     },
     {
       "name": "adm-hv-010062",
       "nodeId": "2263:45761",
-      "route": "/danh-sach-hoc-vien/popup-them-lich-hen/dang-mo"
+      "route": "/frames/adm-hv-010062"
     },
     {
       "name": "adm-hv-010062-dk",
       "nodeId": "4056:122540",
-      "route": "/danh-sach-hoc-vien/popup-them-lich-hen/dang-mo-dk"
+      "route": "/frames/adm-hv-010062-dk"
     },
     {
       "name": "adm-hv-010070",
@@ -3561,92 +3561,92 @@
     {
       "name": "adm-hv-010102",
       "nodeId": "3269:74948",
-      "route": "/danh-sach-hoc-vien/dropdown-trang-thai"
+      "route": "/frames/adm-hv-010102"
     },
     {
       "name": "adm-hv-010102-dk",
       "nodeId": "4056:119958",
-      "route": "/danh-sach-hoc-vien/dropdown-trang-thai-dk"
+      "route": "/frames/adm-hv-010102-dk"
     },
     {
       "name": "adm-hv-010202",
       "nodeId": "3269:74975",
-      "route": "/danh-sach-hoc-vien/dropdown-tag"
+      "route": "/frames/adm-hv-010202"
     },
     {
       "name": "adm-hv-010202-dk",
       "nodeId": "4056:119961",
-      "route": "/danh-sach-hoc-vien/dropdown-tag-dk"
+      "route": "/frames/adm-hv-010202-dk"
     },
     {
       "name": "adm-hv-020610",
       "nodeId": "2263:47063",
-      "route": "/chi-tiet-hoc-vien/ghi-chu/popup-them-ghi-chu"
+      "route": "/frames/adm-hv-020610"
     },
     {
       "name": "adm-hv-020610-dk",
       "nodeId": "4056:121632",
-      "route": "/chi-tiet-hoc-vien/ghi-chu/popup-them-ghi-chu-dk"
+      "route": "/frames/adm-hv-020610-dk"
     },
     {
       "name": "adm-ks-010030",
       "nodeId": "4271:149782",
-      "route": "/khao-sat/tao-khao-sat/popup-xem-truoc"
+      "route": "/frames/adm-ks-010030"
     },
     {
       "name": "adm-ks-010030-dk",
       "nodeId": "4343:72230",
-      "route": "/khao-sat/tao-khao-sat/popup-xem-truoc-dk"
+      "route": "/frames/adm-ks-010030-dk"
     },
     {
       "name": "adm-ks-020030",
       "nodeId": "4885:8949",
-      "route": "/khao-sat/tao-khao-sat-cho-lop/popup-xem-truoc"
+      "route": "/frames/adm-ks-020030"
     },
     {
       "name": "adm-ks-020030-dk",
       "nodeId": "4885:63865",
-      "route": "/khao-sat/tao-khao-sat-cho-lop/popup-xem-truoc-dk"
+      "route": "/frames/adm-ks-020030-dk"
     },
     {
       "name": "adm-ks-030030",
       "nodeId": "4885:10451",
-      "route": "/khao-sat/tao-khao-sat-hoc-vien/popup-xem-truoc"
+      "route": "/frames/adm-ks-030030"
     },
     {
       "name": "adm-ks-030030-dk",
       "nodeId": "4885:65348",
-      "route": "/khao-sat/tao-khao-sat-hoc-vien/popup-xem-truoc-dk"
+      "route": "/frames/adm-ks-030030-dk"
     },
     {
       "name": "adm-lgv-020010",
       "nodeId": "4899:118050",
-      "route": "/luong/de-xuat-tang-luong/popup-duyet-de-xuat"
+      "route": "/frames/adm-lgv-020010"
     },
     {
       "name": "adm-lgv-020010-dk",
       "nodeId": "4899:118692",
-      "route": "/luong/de-xuat-tang-luong/popup-duyet-de-xuat-dk"
+      "route": "/frames/adm-lgv-020010-dk"
     },
     {
       "name": "adm-lhn-010110",
       "nodeId": "2370:27393",
-      "route": "/lich-hen/hen-lop/popup-them-lich-hen"
+      "route": "/frames/adm-lhn-010110"
     },
     {
       "name": "adm-lhn-010110-dk",
       "nodeId": "4056:106350",
-      "route": "/lich-hen/hen-lop/popup-them-lich-hen-dk"
+      "route": "/frames/adm-lhn-010110-dk"
     },
     {
       "name": "adm-lop-010002",
       "nodeId": "1991:28315",
-      "route": "/danh-sach-lop-hoc/dropdown-chon-nhan-su-dang-mo"
+      "route": "/frames/adm-lop-010002"
     },
     {
       "name": "adm-lop-010002-dk",
       "nodeId": "4056:108239",
-      "route": "/danh-sach-lop-hoc/dropdown-chon-nhan-su-dang-mo-dk"
+      "route": "/frames/adm-lop-010002-dk"
     },
     {
       "name": "adm-lop-010004",
@@ -3656,927 +3656,927 @@
     {
       "name": "adm-lop-010010",
       "nodeId": "1991:28268",
-      "route": "/danh-sach-lop-hoc/popup-them-lop-hoc"
+      "route": "/frames/adm-lop-010010"
     },
     {
       "name": "adm-lop-010010-dk",
       "nodeId": "4056:108303",
-      "route": "/danh-sach-lop-hoc/popup-them-lop-hoc-dk"
+      "route": "/frames/adm-lop-010010-dk"
     },
     {
       "name": "adm-lop-010040",
       "nodeId": "1991:23381",
-      "route": "/danh-sach-lop-hoc/popup-them-tag"
+      "route": "/frames/adm-lop-010040"
     },
     {
       "name": "adm-lop-010040-dk",
       "nodeId": "4056:109600",
-      "route": "/danh-sach-lop-hoc/popup-them-tag-dk"
+      "route": "/frames/adm-lop-010040-dk"
     },
     {
       "name": "adm-lop-010050",
       "nodeId": "1991:23448",
-      "route": "/danh-sach-lop-hoc/popup-them-lich-hen"
+      "route": "/frames/adm-lop-010050"
     },
     {
       "name": "adm-lop-010050-dk",
       "nodeId": "4056:109650",
-      "route": "/danh-sach-lop-hoc/popup-them-lich-hen-dk"
+      "route": "/frames/adm-lop-010050-dk"
     },
     {
       "name": "adm-lop-020110",
       "nodeId": "3348:62669",
-      "route": "/lop-hoc/tong-quan/popup-lich-su-ghi-chu"
+      "route": "/frames/adm-lop-020110"
     },
     {
       "name": "adm-lop-020110-dk",
       "nodeId": "4056:110724",
-      "route": "/lop-hoc/tong-quan/popup-lich-su-ghi-chu-dk"
+      "route": "/frames/adm-lop-020110-dk"
     },
     {
       "name": "adm-lop-020610",
       "nodeId": "2711:50590",
-      "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien/popup-them-tieu-chuan"
+      "route": "/frames/adm-lop-020610"
     },
     {
       "name": "adm-lop-020610-dk",
       "nodeId": "4056:113419",
-      "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien/popup-them-tieu-chuan-dk"
+      "route": "/frames/adm-lop-020610-dk"
     },
     {
       "name": "adm-lop-020611",
       "nodeId": "2711:53620",
-      "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien/popup-them-tieu-chuan/xem-truoc"
+      "route": "/frames/adm-lop-020611"
     },
     {
       "name": "adm-lop-020611-dk",
       "nodeId": "4056:113455",
-      "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien/popup-them-tieu-chuan/xem-truoc-dk"
+      "route": "/frames/adm-lop-020611-dk"
     },
     {
       "name": "adm-lop-020612",
       "nodeId": "2711:54002",
-      "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien/popup-them-tieu-chuan/xem-tieu-chi"
+      "route": "/frames/adm-lop-020612"
     },
     {
       "name": "adm-lop-020612-dk",
       "nodeId": "4056:113695",
-      "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien/popup-them-tieu-chuan/xem-tieu-chi-dk"
+      "route": "/frames/adm-lop-020612-dk"
     },
     {
       "name": "adm-lop-020710",
       "nodeId": "3772:87161",
-      "route": "/chi-tiet-lop-hoc/quy-trinh-lop/popup-them-quy-trinh"
+      "route": "/frames/adm-lop-020710"
     },
     {
       "name": "adm-lop-020710-dk",
       "nodeId": "4056:114663",
-      "route": "/chi-tiet-lop-hoc/quy-trinh-lop/popup-them-quy-trinh-dk"
+      "route": "/frames/adm-lop-020710-dk"
     },
     {
       "name": "adm-lop-020711",
       "nodeId": "3772:87185",
-      "route": "/chi-tiet-lop-hoc/quy-trinh-lop/popup-them-quy-trinh/xem-truoc"
+      "route": "/frames/adm-lop-020711"
     },
     {
       "name": "adm-lop-020711-dk",
       "nodeId": "4056:114687",
-      "route": "/chi-tiet-lop-hoc/quy-trinh-lop/popup-them-quy-trinh/xem-truoc-dk"
+      "route": "/frames/adm-lop-020711-dk"
     },
     {
       "name": "adm-lop-020712",
       "nodeId": "3772:87240",
-      "route": "/chi-tiet-lop-hoc/quy-trinh-lop/popup-them-quy-trinh/xem-tieu-chi"
+      "route": "/frames/adm-lop-020712"
     },
     {
       "name": "adm-lop-020712-dk",
       "nodeId": "4056:114742",
-      "route": "/chi-tiet-lop-hoc/quy-trinh-lop/popup-them-quy-trinh/xem-tieu-chi-dk"
+      "route": "/frames/adm-lop-020712-dk"
     },
     {
       "name": "adm-lop-020810",
       "nodeId": "2711:65257",
-      "route": "/chi-tiet-lop-hoc/cskh/popup-them-quy-trinh-cskh"
+      "route": "/frames/adm-lop-020810"
     },
     {
       "name": "adm-lop-020810-dk",
       "nodeId": "4056:115187",
-      "route": "/chi-tiet-lop-hoc/cskh/popup-them-quy-trinh-cskh-dk"
+      "route": "/frames/adm-lop-020810-dk"
     },
     {
       "name": "adm-lop-020811",
       "nodeId": "2711:65273",
-      "route": "/chi-tiet-lop-hoc/cskh/popup-them-quy-trinh-cskh/xem-truoc"
+      "route": "/frames/adm-lop-020811"
     },
     {
       "name": "adm-lop-020811-dk",
       "nodeId": "4056:115203",
-      "route": "/chi-tiet-lop-hoc/cskh/popup-them-quy-trinh-cskh/xem-truoc-dk"
+      "route": "/frames/adm-lop-020811-dk"
     },
     {
       "name": "adm-lop-020812",
       "nodeId": "2711:65320",
-      "route": "/chi-tiet-lop-hoc/cskh/popup-them-quy-trinh-cskh/xem-tieu-chi"
+      "route": "/frames/adm-lop-020812"
     },
     {
       "name": "adm-lop-020812-dk",
       "nodeId": "4056:115250",
-      "route": "/chi-tiet-lop-hoc/cskh/popup-them-quy-trinh-cskh/xem-tieu-chi-dk"
+      "route": "/frames/adm-lop-020812-dk"
     },
     {
       "name": "adm-lop-040210",
       "nodeId": "2409:147699",
-      "route": "/lop-hoc/cai-dat/hoc-vien/popup-lich-su-ghi-chu"
+      "route": "/frames/adm-lop-040210"
     },
     {
       "name": "adm-lop-040210-dk",
       "nodeId": "4056:116535",
-      "route": "/lop-hoc/cai-dat/hoc-vien/popup-lich-su-ghi-chu-dk"
+      "route": "/frames/adm-lop-040210-dk"
     },
     {
       "name": "adm-lop-040220",
       "nodeId": "2409:147786",
-      "route": "/lop-hoc/cai-dat/hoc-vien/popup-lich-su-trang-thai"
+      "route": "/frames/adm-lop-040220"
     },
     {
       "name": "adm-lop-040220-dk",
       "nodeId": "4056:116567",
-      "route": "/lop-hoc/cai-dat/hoc-vien/popup-lich-su-trang-thai-dk"
+      "route": "/frames/adm-lop-040220-dk"
     },
     {
       "name": "adm-lop-040230",
       "nodeId": "2409:147854",
-      "route": "/lop-hoc/cai-dat/hoc-vien/popup-them-hoc-phi"
+      "route": "/frames/adm-lop-040230"
     },
     {
       "name": "adm-lop-040230-dk",
       "nodeId": "4056:116589",
-      "route": "/lop-hoc/cai-dat/hoc-vien/popup-them-hoc-phi-dk"
+      "route": "/frames/adm-lop-040230-dk"
     },
     {
       "name": "adm-lop-040520",
       "nodeId": "2384:59509",
-      "route": "/lop-hoc/cai-dat/lich-day/popup-them-lich-day-linh-hoat"
+      "route": "/frames/adm-lop-040520"
     },
     {
       "name": "adm-lop-040520-dk",
       "nodeId": "4056:117489",
-      "route": "/lop-hoc/cai-dat/lich-day/popup-them-lich-day-linh-hoat-dk"
+      "route": "/frames/adm-lop-040520-dk"
     },
     {
       "name": "adm-lop-040521",
       "nodeId": "2911:43102",
-      "route": "/lop-hoc/cai-dat/lich-day/popup-them-lich-day-linh-hoat/trung-lich-co-dinh"
+      "route": "/frames/adm-lop-040521"
     },
     {
       "name": "adm-lop-040521-dk",
       "nodeId": "4056:117548",
-      "route": "/lop-hoc/cai-dat/lich-day/popup-them-lich-day-linh-hoat/trung-lich-co-dinh-dk"
+      "route": "/frames/adm-lop-040521-dk"
     },
     {
       "name": "adm-lop-040710",
       "nodeId": "2245:107872",
-      "route": "/lop-hoc/cai-dat/kpi/popup-chinh-sua-kpi"
+      "route": "/frames/adm-lop-040710"
     },
     {
       "name": "adm-lop-040710-dk",
       "nodeId": "4056:118108",
-      "route": "/lop-hoc/cai-dat/kpi/popup-chinh-sua-kpi-dk"
+      "route": "/frames/adm-lop-040710-dk"
     },
     {
       "name": "adm-lop-040712",
       "nodeId": "2245:107748",
-      "route": "/lop-hoc/cai-dat/kpi/popup-chinh-sua-kpi/dang-mo"
+      "route": "/frames/adm-lop-040712"
     },
     {
       "name": "adm-lop-040712-dk",
       "nodeId": "4056:118088",
-      "route": "/lop-hoc/cai-dat/kpi/popup-chinh-sua-kpi/dang-mo-dk"
+      "route": "/frames/adm-lop-040712-dk"
     },
     {
       "name": "adm-lop-040810",
       "nodeId": "2401:13017",
-      "route": "/lop-hoc/cai-dat/ot/popup-chinh-sua-ot"
+      "route": "/frames/adm-lop-040810"
     },
     {
       "name": "adm-lop-040810-dk",
       "nodeId": "4056:118343",
-      "route": "/lop-hoc/cai-dat/ot/popup-chinh-sua-ot-dk"
+      "route": "/frames/adm-lop-040810-dk"
     },
     {
       "name": "adm-lop-040812",
       "nodeId": "2401:12994",
-      "route": "/lop-hoc/cai-dat/ot/popup-chinh-sua-ot/dang-mo"
+      "route": "/frames/adm-lop-040812"
     },
     {
       "name": "adm-lop-040812-dk",
       "nodeId": "4056:118323",
-      "route": "/lop-hoc/cai-dat/ot/popup-chinh-sua-ot/dang-mo-dk"
+      "route": "/frames/adm-lop-040812-dk"
     },
     {
       "name": "adm-lop-050406",
       "nodeId": "3705:83794",
-      "route": "/lop-hoc/nhat-ky/tin-nhan/popup-xac-nhan-xoa"
+      "route": "/frames/adm-lop-050406"
     },
     {
       "name": "adm-lop-050406-dk",
       "nodeId": "4056:119524",
-      "route": "/lop-hoc/nhat-ky/tin-nhan/popup-xac-nhan-xoa-dk"
+      "route": "/frames/adm-lop-050406-dk"
     },
     {
       "name": "adm-lop-050407",
       "nodeId": "3705:83804",
-      "route": "/lop-hoc/nhat-ky/tin-nhan/popup-xac-nhan-gui"
+      "route": "/frames/adm-lop-050407"
     },
     {
       "name": "adm-lop-050407-dk",
       "nodeId": "4056:119527",
-      "route": "/lop-hoc/nhat-ky/tin-nhan/popup-xac-nhan-gui-dk"
+      "route": "/frames/adm-lop-050407-dk"
     },
     {
       "name": "adm-lop-050408",
       "nodeId": "3705:83818",
-      "route": "/lop-hoc/nhat-ky/tin-nhan/popup-tao-tin-nhan"
+      "route": "/frames/adm-lop-050408"
     },
     {
       "name": "adm-lop-050408-dk",
       "nodeId": "4056:119530",
-      "route": "/lop-hoc/nhat-ky/tin-nhan/popup-tao-tin-nhan-dk"
+      "route": "/frames/adm-lop-050408-dk"
     },
     {
       "name": "adm-lop-050410",
       "nodeId": "1474:15650",
-      "route": "/lop-hoc/nhat-ky/tin-nhan/popup-tao-tin-nhan-ban-tu-dong"
+      "route": "/frames/adm-lop-050410"
     },
     {
       "name": "adm-lop-050410-dk",
       "nodeId": "4056:119508",
-      "route": "/lop-hoc/nhat-ky/tin-nhan/popup-tao-tin-nhan-ban-tu-dong-dk"
+      "route": "/frames/adm-lop-050410-dk"
     },
     {
       "name": "adm-mv-020010",
       "nodeId": "2391:66541",
-      "route": "/move-video/danh-sach-video/popup-doi-ten-video"
+      "route": "/frames/adm-mv-020010"
     },
     {
       "name": "adm-mv-020010-dk",
       "nodeId": "4056:130761",
-      "route": "/move-video/danh-sach-video/popup-doi-ten-video-dk"
+      "route": "/frames/adm-mv-020010-dk"
     },
     {
       "name": "adm-mv-020020",
       "nodeId": "2391:66560",
-      "route": "/move-video/danh-sach-video/popup-xac-nhan-xoa"
+      "route": "/frames/adm-mv-020020"
     },
     {
       "name": "adm-mv-020020-dk",
       "nodeId": "4056:130783",
-      "route": "/move-video/danh-sach-video/popup-xac-nhan-xoa-dk"
+      "route": "/frames/adm-mv-020020-dk"
     },
     {
       "name": "adm-mv-020030",
       "nodeId": "2478:111049",
-      "route": "/move-video/danh-sach-video/popup-doi-ten-move-video"
+      "route": "/frames/adm-mv-020030"
     },
     {
       "name": "adm-mv-020030-dk",
       "nodeId": "4056:130772",
-      "route": "/move-video/danh-sach-video/popup-doi-ten-move-video-dk"
+      "route": "/frames/adm-mv-020030-dk"
     },
     {
       "name": "adm-ss-010010",
       "nodeId": "2619:200673",
-      "route": "/ship-sach/popup-them-don-sach"
+      "route": "/frames/adm-ss-010010"
     },
     {
       "name": "adm-ss-010010-dk",
       "nodeId": "4056:139307",
-      "route": "/ship-sach/popup-them-don-sach-dk"
+      "route": "/frames/adm-ss-010010-dk"
     },
     {
       "name": "adm-ss-010012",
       "nodeId": "2911:44254",
-      "route": "/ship-sach/popup-them-don-sach/da-chon-hoc-vien-co-san"
+      "route": "/frames/adm-ss-010012"
     },
     {
       "name": "adm-ss-010012-dk",
       "nodeId": "4056:139339",
-      "route": "/ship-sach/popup-them-don-sach/da-chon-hoc-vien-co-san-dk"
+      "route": "/frames/adm-ss-010012-dk"
     },
     {
       "name": "adm-ss-010020",
       "nodeId": "2619:200765",
-      "route": "/ship-sach/popup-xac-nhan-xoa-don-sach"
+      "route": "/frames/adm-ss-010020"
     },
     {
       "name": "adm-ss-010020-dk",
       "nodeId": "4056:139330",
-      "route": "/ship-sach/popup-xac-nhan-xoa-don-sach-dk"
+      "route": "/frames/adm-ss-010020-dk"
     },
     {
       "name": "adm-ss-010032",
       "nodeId": "2911:1552",
-      "route": "/ship-sach/popup-xac-nhan-gui-tin-nhan/dang-mo"
+      "route": "/frames/adm-ss-010032"
     },
     {
       "name": "adm-ss-010032-dk",
       "nodeId": "4056:139333",
-      "route": "/ship-sach/popup-xac-nhan-gui-tin-nhan/dang-mo-dk"
+      "route": "/frames/adm-ss-010032-dk"
     },
     {
       "name": "adm-ss-010034",
       "nodeId": "2911:44525",
-      "route": "/ship-sach/popup-xac-nhan-gui-tin-nhan/da-chon-mau"
+      "route": "/frames/adm-ss-010034"
     },
     {
       "name": "adm-ss-010034-dk",
       "nodeId": "4056:139370",
-      "route": "/ship-sach/popup-xac-nhan-gui-tin-nhan/da-chon-mau-dk"
+      "route": "/frames/adm-ss-010034-dk"
     },
     {
       "name": "adm-ss-010040",
       "nodeId": "2929:44627",
-      "route": "/ship-sach/popup-cap-nhat-don-sach"
+      "route": "/frames/adm-ss-010040"
     },
     {
       "name": "adm-ss-010040-dk",
       "nodeId": "4056:139377",
-      "route": "/ship-sach/popup-cap-nhat-don-sach-dk"
+      "route": "/frames/adm-ss-010040-dk"
     },
     {
       "name": "adm-tag-010010",
       "nodeId": "3065:69413",
-      "route": "/tag/popup-them-tag"
+      "route": "/frames/adm-tag-010010"
     },
     {
       "name": "adm-tag-010010-dk",
       "nodeId": "4056:130996",
-      "route": "/tag/popup-them-tag-dk"
+      "route": "/frames/adm-tag-010010-dk"
     },
     {
       "name": "adm-tag-010020",
       "nodeId": "3065:69665",
-      "route": "/tag/popup-them-nhom-tag"
+      "route": "/frames/adm-tag-010020"
     },
     {
       "name": "adm-tag-010020-dk",
       "nodeId": "4056:131013",
-      "route": "/tag/popup-them-nhom-tag-dk"
+      "route": "/frames/adm-tag-010020-dk"
     },
     {
       "name": "cd-bl-010010",
       "nodeId": "5300:51144",
-      "route": "/bao-loi/popup-gui-bao-loi-doi-tuong-ppt-pdf-btvn"
+      "route": "/frames/cd-bl-010010"
     },
     {
       "name": "cd-bl-010011",
       "nodeId": "5300:51175",
-      "route": "/bao-loi/popup-gui-bao-loi-doi-tuong-khac"
+      "route": "/frames/cd-bl-010011"
     },
     {
       "name": "cd-bl-010020",
       "nodeId": "5371:42362",
-      "route": "/bao-loi/popup-chi-tiet-bao-loi-dang-xu-ly"
+      "route": "/frames/cd-bl-010020"
     },
     {
       "name": "cd-bl-010030",
       "nodeId": "5274:365488",
-      "route": "/bao-loi/popup-chi-tiet-bao-loi-hoan-thanh"
+      "route": "/frames/cd-bl-010030"
     },
     {
       "name": "cd-bl-010050",
       "nodeId": "5300:27142",
-      "route": "/bao-loi/popup-chi-tiet-bao-loi-hoan-thanh-nhap-ket-qua-xu-ly"
+      "route": "/frames/cd-bl-010050"
     },
     {
       "name": "cd-cdo-010010",
       "nodeId": "1901:3763",
-      "route": "/quan-ly-cap-do/popup-kich-hoat-cong-khai"
+      "route": "/frames/cd-cdo-010010"
     },
     {
       "name": "cd-cdo-010010-dk",
       "nodeId": "6015:1856",
-      "route": "/quan-ly-cap-do/popup-kich-hoat-cong-khai-dk"
+      "route": "/frames/cd-cdo-010010-dk"
     },
     {
       "name": "cd-cdo-010012",
       "nodeId": "1901:3819",
-      "route": "/quan-ly-cap-do/popup-kich-hoat-cong-khai/dien-sai"
+      "route": "/frames/cd-cdo-010012"
     },
     {
       "name": "cd-cdo-010012-dk",
       "nodeId": "6015:1906",
-      "route": "/quan-ly-cap-do/popup-kich-hoat-cong-khai/dien-sai-dk"
+      "route": "/frames/cd-cdo-010012-dk"
     },
     {
       "name": "cd-dm-010057",
       "nodeId": "689:14188",
-      "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/quan-ly-danh-muc/thanh-cong"
+      "route": "/frames/cd-dm-010057"
     },
     {
       "name": "cd-dm-010057-dk",
       "nodeId": "4056:145782",
-      "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/quan-ly-danh-muc/thanh-cong-dk"
+      "route": "/frames/cd-dm-010057-dk"
     },
     {
       "name": "cd-dm-010060",
       "nodeId": "1854:20955",
-      "route": "/quan-ly-danh-muc/popup-kich-hoat-cong-khai"
+      "route": "/frames/cd-dm-010060"
     },
     {
       "name": "cd-dm-010060-dk",
       "nodeId": "4056:145960",
-      "route": "/quan-ly-danh-muc/popup-kich-hoat-cong-khai-dk"
+      "route": "/frames/cd-dm-010060-dk"
     },
     {
       "name": "cd-dm-010062",
       "nodeId": "1854:21305",
-      "route": "/quan-ly-danh-muc/popup-kich-hoat-cong-khai/dien-sai"
+      "route": "/frames/cd-dm-010062"
     },
     {
       "name": "cd-dm-010062-dk",
       "nodeId": "4056:146004",
-      "route": "/quan-ly-danh-muc/popup-kich-hoat-cong-khai/dien-sai-dk"
+      "route": "/frames/cd-dm-010062-dk"
     },
     {
       "name": "cd-kh-010010",
       "nodeId": "2011:26470",
-      "route": "/quan-ly-khoa-hoc/popup-kich-hoat-cong-khai"
+      "route": "/frames/cd-kh-010010"
     },
     {
       "name": "cd-kh-010010-dk",
       "nodeId": "6015:66058",
-      "route": "/quan-ly-khoa-hoc/popup-kich-hoat-cong-khai-dk"
+      "route": "/frames/cd-kh-010010-dk"
     },
     {
       "name": "cd-kh-010013",
       "nodeId": "2706:43836",
-      "route": "/quan-ly-khoa-hoc/popup-kich-hoat-cong-khai/id-hop-le"
+      "route": "/frames/cd-kh-010013"
     },
     {
       "name": "cd-kh-010013-dk",
       "nodeId": "6015:66098",
-      "route": "/quan-ly-khoa-hoc/popup-kich-hoat-cong-khai/id-hop-le-dk"
+      "route": "/frames/cd-kh-010013-dk"
     },
     {
       "name": "cd-kh-020261",
       "nodeId": "6518:356225",
-      "route": "/lo-trinh/popup-xoa-bai-hoc"
+      "route": "/frames/cd-kh-020261"
     },
     {
       "name": "cd-kh-020261-dk",
       "nodeId": "6518:372995",
-      "route": "/lo-trinh/popup-xoa-bai-hoc-dk"
+      "route": "/frames/cd-kh-020261-dk"
     },
     {
       "name": "cd-kh-030110",
       "nodeId": "1496:16189",
-      "route": "/hoc-ky/thong-tin/popup-them-ky-vao-tong-on"
+      "route": "/frames/cd-kh-030110"
     },
     {
       "name": "cd-kh-030110-dk",
       "nodeId": "6015:64368",
-      "route": "/hoc-ky/thong-tin/popup-them-ky-vao-tong-on-dk"
+      "route": "/frames/cd-kh-030110-dk"
     },
     {
       "name": "cd-kh-030120",
       "nodeId": "1496:16214",
-      "route": "/hoc-ky/thong-tin/popup-bo-ky-khoi-tong-on"
+      "route": "/frames/cd-kh-030120"
     },
     {
       "name": "cd-kh-030120-dk",
       "nodeId": "6015:64384",
-      "route": "/hoc-ky/thong-tin/popup-bo-ky-khoi-tong-on-dk"
+      "route": "/frames/cd-kh-030120-dk"
     },
     {
       "name": "cd-kh-030341",
       "nodeId": "5491:358429",
-      "route": "/hoc-ky/kiem-tra/popup-generate-nhap-prompt"
+      "route": "/frames/cd-kh-030341"
     },
     {
       "name": "cd-kh-030341-dk",
       "nodeId": "6015:62283",
-      "route": "/hoc-ky/kiem-tra/popup-generate-nhap-prompt-dk"
+      "route": "/frames/cd-kh-030341-dk"
     },
     {
       "name": "cd-kh-030342",
       "nodeId": "5491:358483",
-      "route": "/hoc-ky/kiem-tra/popup-generate-chon-kien-thuc-ky-nang"
+      "route": "/frames/cd-kh-030342"
     },
     {
       "name": "cd-kh-030342-dk",
       "nodeId": "6646:135456",
-      "route": "/hoc-ky/kiem-tra/popup-generate-chon-kien-thuc-ky-nang-dk"
+      "route": "/frames/cd-kh-030342-dk"
     },
     {
       "name": "cd-kh-030344",
       "nodeId": "5609:31772",
-      "route": "/hoc-ky/kiem-tra/generate-dang-tao-bang"
+      "route": "/frames/cd-kh-030344"
     },
     {
       "name": "cd-kh-030344-dk",
       "nodeId": "6579:392822",
-      "route": "/hoc-ky/kiem-tra/generate-dang-tao-bang-dk"
+      "route": "/frames/cd-kh-030344-dk"
     },
     {
       "name": "cd-kh-030345",
       "nodeId": "5609:31794",
-      "route": "/hoc-ky/kiem-tra/generate-xac-nhan-bo-bang"
+      "route": "/frames/cd-kh-030345"
     },
     {
       "name": "cd-kh-030345-dk",
       "nodeId": "6015:63369",
-      "route": "/hoc-ky/kiem-tra/generate-xac-nhan-bo-bang-dk"
+      "route": "/frames/cd-kh-030345-dk"
     },
     {
       "name": "cd-kh-030346",
       "nodeId": "5609:31815",
-      "route": "/hoc-ky/kiem-tra/generate-loi"
+      "route": "/frames/cd-kh-030346"
     },
     {
       "name": "cd-kh-030346-dk",
       "nodeId": "6015:63345",
-      "route": "/hoc-ky/kiem-tra/generate-loi-dk"
+      "route": "/frames/cd-kh-030346-dk"
     },
     {
       "name": "cd-kh-030348",
       "nodeId": "5614:35400",
-      "route": "/hoc-ky/kiem-tra/popup-chon-loai-cau"
+      "route": "/frames/cd-kh-030348"
     },
     {
       "name": "cd-kh-030348-dk",
       "nodeId": "6015:63425",
-      "route": "/hoc-ky/kiem-tra/popup-chon-loai-cau-dk"
+      "route": "/frames/cd-kh-030348-dk"
     },
     {
       "name": "cd-kh-030349",
       "nodeId": "5614:35448",
-      "route": "/hoc-ky/kiem-tra/popup-soan-cau-hoi-trac-nghiem"
+      "route": "/frames/cd-kh-030349"
     },
     {
       "name": "cd-kh-030349-dk",
       "nodeId": "6015:63473",
-      "route": "/hoc-ky/kiem-tra/popup-soan-cau-hoi-trac-nghiem-dk"
+      "route": "/frames/cd-kh-030349-dk"
     },
     {
       "name": "cd-kh-030350",
       "nodeId": "6579:75268",
-      "route": "/hoc-ky/kiem-tra/generate-loi-tab-chon-kien-thuc-ky-nang"
+      "route": "/frames/cd-kh-030350"
     },
     {
       "name": "cd-kh-030350-dk",
       "nodeId": "6646:135826",
-      "route": "/hoc-ky/kiem-tra/generate-loi-tab-chon-kien-thuc-ky-nang-dk"
+      "route": "/frames/cd-kh-030350-dk"
     },
     {
       "name": "cd-kh-040155",
       "nodeId": "5003:17910",
-      "route": "/kien-thuc-s1/tu-vung/popup-go-muc-khoi-khoa"
+      "route": "/frames/cd-kh-040155"
     },
     {
       "name": "cd-kh-040155-dk",
       "nodeId": "6015:50716",
-      "route": "/kien-thuc-s1/tu-vung/popup-go-muc-khoi-khoa-dk"
+      "route": "/frames/cd-kh-040155-dk"
     },
     {
       "name": "cd-kh-050155",
       "nodeId": "6646:120233",
-      "route": "/ky-nang-s6/nghe/popup-go-bai-khoi-khoa"
+      "route": "/frames/cd-kh-050155"
     },
     {
       "name": "cd-kh-050155-dk",
       "nodeId": "6646:132286",
-      "route": "/ky-nang-s6/nghe/popup-go-bai-khoi-khoa-dk"
+      "route": "/frames/cd-kh-050155-dk"
     },
     {
       "name": "cd-kh-060110-dk",
       "nodeId": "6015:54107",
-      "route": "/bai-tap-ve-nha/popup-chon-loai-cau-dk"
+      "route": "/frames/cd-kh-060110-dk"
     },
     {
       "name": "cd-kh-060120-dk",
       "nodeId": "6019:66093",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-trac-nghiem-dk"
+      "route": "/frames/cd-kh-060120-dk"
     },
     {
       "name": "cd-kh-060121-dk",
       "nodeId": "6019:66201",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-sap-xep-dk"
+      "route": "/frames/cd-kh-060121-dk"
     },
     {
       "name": "cd-kh-060122-dk",
       "nodeId": "6019:66310",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-noi-tu-dk"
+      "route": "/frames/cd-kh-060122-dk"
     },
     {
       "name": "cd-kh-060123-dk",
       "nodeId": "6019:66422",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-noi-dk"
+      "route": "/frames/cd-kh-060123-dk"
     },
     {
       "name": "cd-kh-060124-dk",
       "nodeId": "6019:66530",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-viet-dk"
+      "route": "/frames/cd-kh-060124-dk"
     },
     {
       "name": "cd-kh-060125-dk",
       "nodeId": "6019:66624",
-      "route": "/bai-tap-ve-nha/popup-soan-cau-hoi-cau-hoi-con-dk"
+      "route": "/frames/cd-kh-060125-dk"
     },
     {
       "name": "cd-kh-060140-dk",
       "nodeId": "6015:54631",
-      "route": "/bai-tap-ve-nha/ket-qua-import-dk"
+      "route": "/frames/cd-kh-060140-dk"
     },
     {
       "name": "cd-kh-060141-dk",
       "nodeId": "6015:54645",
-      "route": "/bai-tap-ve-nha/ket-qua-import-dk-cd-kh-060141-dk"
+      "route": "/frames/cd-kh-060141-dk"
     },
     {
       "name": "cd-kh-060150-dk",
       "nodeId": "6015:54653",
-      "route": "/bai-tap-ve-nha/soat-loi-bang-ai-dk"
+      "route": "/frames/cd-kh-060150-dk"
     },
     {
       "name": "cd-kh-070103",
       "nodeId": "5672:64312",
-      "route": "/thu-vien/popup-xoa-muc"
+      "route": "/frames/cd-kh-070103"
     },
     {
       "name": "cd-kh-070103-dk",
       "nodeId": "6015:57582",
-      "route": "/thu-vien/popup-xoa-muc-dk"
+      "route": "/frames/cd-kh-070103-dk"
     },
     {
       "name": "ch-bl-010010",
       "nodeId": "5300:51074",
-      "route": "/bao-loi/popup-gui-bao-loi-doi-tuong-ppt-pdf-btvn-ch-bl-010010"
+      "route": "/frames/ch-bl-010010"
     },
     {
       "name": "ch-bl-010011",
       "nodeId": "5300:51109",
-      "route": "/bao-loi/popup-gui-bao-loi-doi-tuong-khac-ch-bl-010011"
+      "route": "/frames/ch-bl-010011"
     },
     {
       "name": "ch-bl-010020",
       "nodeId": "5274:364127",
-      "route": "/bao-loi/popup-chi-tiet-bao-loi-dang-xu-ly-ch-bl-010020"
+      "route": "/frames/ch-bl-010020"
     },
     {
       "name": "ch-bl-010030",
       "nodeId": "5274:364154",
-      "route": "/bao-loi/popup-chi-tiet-bao-loi-hoan-thanh-ch-bl-010030"
+      "route": "/frames/ch-bl-010030"
     },
     {
       "name": "ch-bl-010050",
       "nodeId": "5300:26756",
-      "route": "/bao-loi/popup-chi-tiet-bao-loi-hoan-thanh-nhap-ket-qua-xu-ly-ch-bl-010050"
+      "route": "/frames/ch-bl-010050"
     },
     {
       "name": "ch-bl-010070",
       "nodeId": "5371:40303",
-      "route": "/bao-loi/popup-nhac-bao-loi-chua-xu-ly-moi-ngay"
+      "route": "/frames/ch-bl-010070"
     },
     {
       "name": "gv-bl-010010",
       "nodeId": "5300:51046",
-      "route": "/bao-loi/popup-gui-bao-loi-giao-trinh"
+      "route": "/frames/gv-bl-010010"
     },
     {
       "name": "gv-bl-010020",
       "nodeId": "5031:373246",
-      "route": "/bao-loi/popup-chi-tiet-bao-loi-dang-mo"
+      "route": "/frames/gv-bl-010020"
     },
     {
       "name": "gv-bl-010030",
       "nodeId": "5031:373275",
-      "route": "/bao-loi/popup-chi-tiet-bao-loi-da-giai-quyet"
+      "route": "/frames/gv-bl-010030"
     },
     {
       "name": "gv-ks-010001",
       "nodeId": "4686:44205",
-      "route": "/khao-sat/popup-thong-bao-khao-sat-moi"
+      "route": "/frames/gv-ks-010001"
     },
     {
       "name": "gv-ks-010001-dk",
       "nodeId": "4885:60380",
-      "route": "/khao-sat/popup-thong-bao-khao-sat-moi-dk"
+      "route": "/frames/gv-ks-010001-dk"
     },
     {
       "name": "gv-ks-010011",
       "nodeId": "4686:44210",
-      "route": "/khao-sat/popup-xac-nhan-gui"
+      "route": "/frames/gv-ks-010011"
     },
     {
       "name": "gv-ks-010011-dk",
       "nodeId": "4885:60385",
-      "route": "/khao-sat/popup-xac-nhan-gui-dk"
+      "route": "/frames/gv-ks-010011-dk"
     },
     {
       "name": "gv-ks-010012",
       "nodeId": "4686:44215",
-      "route": "/khao-sat/popup-gui-thanh-cong"
+      "route": "/frames/gv-ks-010012"
     },
     {
       "name": "gv-ks-010012-dk",
       "nodeId": "4885:60390",
-      "route": "/khao-sat/popup-gui-thanh-cong-dk"
+      "route": "/frames/gv-ks-010012-dk"
     },
     {
       "name": "gv-ks-010021",
       "nodeId": "4686:44140",
-      "route": "/khao-sat/popup-cau-tra-loi-cua-ban"
+      "route": "/frames/gv-ks-010021"
     },
     {
       "name": "gv-ks-010021-dk",
       "nodeId": "4885:60315",
-      "route": "/khao-sat/popup-cau-tra-loi-cua-ban-dk"
+      "route": "/frames/gv-ks-010021-dk"
     },
     {
       "name": "gv-ld-020010",
       "nodeId": "5413:49911",
-      "route": "/lich-day/quan-ly-dang-ky-lich/popup-dang-ky-khung-gio"
+      "route": "/frames/gv-ld-020010"
     },
     {
       "name": "gv-ld-020010-dk",
       "nodeId": "5425:274125",
-      "route": "/lich-day/quan-ly-dang-ky-lich/popup-dang-ky-khung-gio-dk"
+      "route": "/frames/gv-ld-020010-dk"
     },
     {
       "name": "gv-lop-020020",
       "nodeId": "5413:255556",
-      "route": "/chi-tiet-lop/tong-quan/popup-ghi-chu-theo-bai"
+      "route": "/frames/gv-lop-020020"
     },
     {
       "name": "gv-lop-020020-dk",
       "nodeId": "5413:256726",
-      "route": "/chi-tiet-lop/tong-quan/popup-ghi-chu-theo-bai-dk"
+      "route": "/frames/gv-lop-020020-dk"
     },
     {
       "name": "gv-lop-020030",
       "nodeId": "5413:255496",
-      "route": "/chi-tiet-lop/tong-quan/popup-thoi-gian-tung-phan"
+      "route": "/frames/gv-lop-020030"
     },
     {
       "name": "gv-lop-020030-dk",
       "nodeId": "5413:256583",
-      "route": "/chi-tiet-lop/tong-quan/popup-thoi-gian-tung-phan-dk"
+      "route": "/frames/gv-lop-020030-dk"
     },
     {
       "name": "gv-lop-030120",
       "nodeId": "5292:222984",
-      "route": "/chi-tiet-lop/bai-hoc/popup-chon-lich-day"
+      "route": "/frames/gv-lop-030120"
     },
     {
       "name": "gv-lop-030121",
       "nodeId": "5292:223041",
-      "route": "/chi-tiet-lop/bai-hoc/popup-bat-dau-buoi-hoc"
+      "route": "/frames/gv-lop-030121"
     },
     {
       "name": "gv-lop-030131",
       "nodeId": "5292:224358",
-      "route": "/chi-tiet-lop/bai-hoc/popup-ket-thuc-buoi-hoc"
+      "route": "/frames/gv-lop-030131"
     },
     {
       "name": "gv-lop-030141",
       "nodeId": "5292:224370",
-      "route": "/chi-tiet-lop/bai-hoc/popup-hoan-thanh-buoi-hoc"
+      "route": "/frames/gv-lop-030141"
     },
     {
       "name": "gv-lop-030161",
       "nodeId": "5292:224382",
-      "route": "/chi-tiet-lop/bai-hoc/popup-tiep-tuc-buoi-hoc"
+      "route": "/frames/gv-lop-030161"
     },
     {
       "name": "gv-lop-040211",
       "nodeId": "5425:277378",
-      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-giao-bai"
+      "route": "/frames/gv-lop-040211"
     },
     {
       "name": "gv-lop-040211-dk",
       "nodeId": "5425:284090",
-      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-giao-bai-dk"
+      "route": "/frames/gv-lop-040211-dk"
     },
     {
       "name": "gv-lop-040221",
       "nodeId": "5425:277391",
-      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-thu-hoi"
+      "route": "/frames/gv-lop-040221"
     },
     {
       "name": "gv-lop-040221-dk",
       "nodeId": "5425:284096",
-      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-thu-hoi-dk"
+      "route": "/frames/gv-lop-040221-dk"
     },
     {
       "name": "gv-lop-040310",
       "nodeId": "5425:281223",
-      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-chon-bai-nguon"
+      "route": "/frames/gv-lop-040310"
     },
     {
       "name": "gv-lop-040310-dk",
       "nodeId": "5425:285631",
-      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-chon-bai-nguon-dk"
+      "route": "/frames/gv-lop-040310-dk"
     },
     {
       "name": "gv-lop-040311",
       "nodeId": "5425:281249",
-      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-ap-dung-nhan-xet-chung"
+      "route": "/frames/gv-lop-040311"
     },
     {
       "name": "gv-lop-040311-dk",
       "nodeId": "5425:285649",
-      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-ap-dung-nhan-xet-chung-dk"
+      "route": "/frames/gv-lop-040311-dk"
     },
     {
       "name": "gv-lop-040340",
       "nodeId": "5751:83819",
-      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-hoan-thanh-cham"
+      "route": "/frames/gv-lop-040340"
     },
     {
       "name": "gv-lop-040340-dk",
       "nodeId": "5756:86901",
-      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-hoan-thanh-cham-dk"
+      "route": "/frames/gv-lop-040340-dk"
     },
     {
       "name": "gv-ls-010010",
       "nodeId": "4760:16671",
-      "route": "/lich-su-luong/popup-de-xuat-tang-luong"
+      "route": "/frames/gv-ls-010010"
     },
     {
       "name": "gv-ls-010010-dk",
       "nodeId": "4899:111626",
-      "route": "/lich-su-luong/popup-de-xuat-tang-luong-dk"
+      "route": "/frames/gv-ls-010010-dk"
     },
     {
       "name": "gv-ls-010012",
       "nodeId": "4814:159271",
-      "route": "/lich-su-luong/popup-de-xuat-tang-luong/chon-ly-do"
+      "route": "/frames/gv-ls-010012"
     },
     {
       "name": "gv-ls-010012-dk",
       "nodeId": "4899:111721",
-      "route": "/lich-su-luong/popup-de-xuat-tang-luong/chon-ly-do-dk"
+      "route": "/frames/gv-ls-010012-dk"
     },
     {
       "name": "gv-ls-010013",
       "nodeId": "4895:105828",
-      "route": "/lich-su-luong/popup-lich-su-de-xuat"
+      "route": "/frames/gv-ls-010013"
     },
     {
       "name": "gv-ls-010013-dk",
       "nodeId": "4899:111874",
-      "route": "/lich-su-luong/popup-lich-su-de-xuat-dk"
+      "route": "/frames/gv-ls-010013-dk"
     },
     {
       "name": "gv-ls-010015",
       "nodeId": "4899:106613",
-      "route": "/lich-su-luong/popup-xac-nhan-gui-de-xuat"
+      "route": "/frames/gv-ls-010015"
     },
     {
       "name": "gv-ls-010015-dk",
       "nodeId": "4899:111930",
-      "route": "/lich-su-luong/popup-xac-nhan-gui-de-xuat-dk"
+      "route": "/frames/gv-ls-010015-dk"
     },
     {
       "name": "gv-ls-010016",
       "nodeId": "4899:106646",
-      "route": "/lich-su-luong/popup-xac-nhan-huy-de-xuat"
+      "route": "/frames/gv-ls-010016"
     },
     {
       "name": "gv-ls-010016-dk",
       "nodeId": "4899:111961",
-      "route": "/lich-su-luong/popup-xac-nhan-huy-de-xuat-dk"
+      "route": "/frames/gv-ls-010016-dk"
     },
     {
       "name": "mst-tk-010010",
       "nodeId": "2148:23743",
-      "route": "/tai-khoan/popup-them-tai-khoan"
+      "route": "/frames/mst-tk-010010"
     },
     {
       "name": "mst-tk-010010-dk",
       "nodeId": "4056:138798",
-      "route": "/tai-khoan/popup-them-tai-khoan-dk"
+      "route": "/frames/mst-tk-010010-dk"
     },
     {
       "name": "mst-tk-010020",
       "nodeId": "1474:666",
-      "route": "/tai-khoan/danh-sach-tai-khoan/popup-xac-nhan-xoa"
+      "route": "/frames/mst-tk-010020"
     },
     {
       "name": "mst-tk-010020-dk",
       "nodeId": "4056:137793",
-      "route": "/tai-khoan/danh-sach-tai-khoan/popup-xac-nhan-xoa-dk"
+      "route": "/frames/mst-tk-010020-dk"
     },
     {
       "name": "mst-tk-010030",
       "nodeId": "1474:678",
-      "route": "/tai-khoan/danh-sach-tai-khoan/popup-dat-lai-mat-khau"
+      "route": "/frames/mst-tk-010030"
     },
     {
       "name": "mst-tk-010030-dk",
       "nodeId": "4056:137797",
-      "route": "/tai-khoan/danh-sach-tai-khoan/popup-dat-lai-mat-khau-dk"
+      "route": "/frames/mst-tk-010030-dk"
     },
     {
       "name": "pro-gd-010010",
@@ -4586,22 +4586,22 @@
     {
       "name": "sp-lhp-010010",
       "nodeId": "3857:80154",
-      "route": "/lich-hop/popup-chi-tiet-cuoc-hop"
+      "route": "/frames/sp-lhp-010010"
     },
     {
       "name": "sp-lhp-010010-dk",
       "nodeId": "4056:148362",
-      "route": "/lich-hop/popup-chi-tiet-cuoc-hop-dk"
+      "route": "/frames/sp-lhp-010010-dk"
     },
     {
       "name": "sp-task-030002",
       "nodeId": "3857:76187",
-      "route": "/quy-trinh/ca-truc/dropdown-thoi-gian-dang-mo"
+      "route": "/frames/sp-task-030002"
     },
     {
       "name": "sp-task-030002-dk",
       "nodeId": "4056:147490",
-      "route": "/quy-trinh/ca-truc/dropdown-thoi-gian-dang-mo-dk"
+      "route": "/frames/sp-task-030002-dk"
     },
     {
       "name": "sp-task-030003",
@@ -4616,47 +4616,47 @@
     {
       "name": "sp-task-030004",
       "nodeId": "3857:76843",
-      "route": "/quy-trinh/ca-truc/dropdown-ca-dang-mo"
+      "route": "/frames/sp-task-030004"
     },
     {
       "name": "sp-task-030004-dk",
       "nodeId": "4056:147495",
-      "route": "/quy-trinh/ca-truc/dropdown-ca-dang-mo-dk"
+      "route": "/frames/sp-task-030004-dk"
     },
     {
       "name": "sp-task-030010",
       "nodeId": "3857:76119",
-      "route": "/quy-trinh/ca-truc/dialog-nguoi-phu-trach"
+      "route": "/frames/sp-task-030010"
     },
     {
       "name": "sp-task-030010-dk",
       "nodeId": "4056:147422",
-      "route": "/quy-trinh/ca-truc/dialog-nguoi-phu-trach-dk"
+      "route": "/frames/sp-task-030010-dk"
     },
     {
       "name": "ch-kpi-010000",
       "nodeId": "3821:48599",
-      "route": "/kpi"
+      "route": "/phu-trach-lop/kpi"
     },
     {
       "name": "ch-kpi-010000-dk",
       "nodeId": "4056:148399",
-      "route": "/kpi-dk"
+      "route": "/phu-trach-lop/kpi-dk"
     },
     {
       "name": "ch-tk-010000",
       "nodeId": "3857:81006",
-      "route": "/thong-ke"
+      "route": "/phu-trach-lop/thong-ke"
     },
     {
       "name": "ch-tk-010000-dk",
       "nodeId": "4056:148553",
-      "route": "/thong-ke-dk"
+      "route": "/phu-trach-lop/thong-ke-dk"
     },
     {
       "name": "gv-ks-010003-dk",
       "nodeId": "4885:105184",
-      "route": "/khao-sat/dropdown-thong-bao-khao-sat-dk"
+      "route": "/frames/gv-ks-010003-dk"
     }
   ],
   "scan": {
