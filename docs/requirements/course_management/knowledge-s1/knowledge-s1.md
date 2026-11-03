@@ -261,7 +261,10 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - Field dài (Cách dùng, Ví dụ, Thành phần, Thứ tự nét…) không nhập qua list; để AI điền hoặc nhập ở Chi tiết mục.
 - Dòng trống không tạo mục.
 
-### Trang 6: Nhập nhanh cuối bảng
+### Trang 6: CD-KH-040130 — Nhập nhanh cuối bảng
+
+![Figma mới nhất · CD-KH-040130](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040130.png)
+
 ![Trang 6](./images/05-nhap-nhanh.png)
 
 *Ô nhập nhanh cuối bảng, đang gõ `电影` — nhấn để xem ảnh gốc*

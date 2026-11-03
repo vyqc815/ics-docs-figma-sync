@@ -2,7 +2,12 @@
 
 ## 1. UI
 
-### Trang 1: Tạo khảo sát — tab Giáo viên / Lớp
+### Trang 1: ADM-KS-010000, ADM-KS-020000 — Tạo khảo sát — tab Giáo viên / Lớp
+
+![Figma mới nhất · ADM-KS-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-KS-010000.png)
+
+![Figma mới nhất · ADM-KS-020000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-KS-020000.png)
+
 ![alt text](image.png)
 
 ![Trang 1](image-1.png)
@@ -29,7 +34,10 @@
 - Ô **"Thêm câu hỏi mới"**: `Enter` hoặc (+) → thêm câu cuối danh sách, loại mặc định Trắc nghiệm, nội dung = text đã nhập (ô trống thì thêm câu rỗng), focus vào câu mới.
 - Nút **"Lưu"**: lưu toàn bộ câu hỏi của khảo sát đang chọn trong 1 lần gọi API.
 
-### Trang 2: Tạo khảo sát — tab Học viên
+### Trang 2: ADM-KS-030000 — Tạo khảo sát — tab Học viên
+
+![Figma mới nhất · ADM-KS-030000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-KS-030000.png)
+
 ![alt text](image-2.png)
 
 **Mô tả:**
@@ -39,7 +47,14 @@
 - Mỗi card có dropdown loại: **Bắt buộc** (tag đỏ) / **Tuỳ chọn** (tag xanh). Tạo nhanh mặc định là Tuỳ chọn. Đổi loại → lưu ngay; chỉ đổi được khi khảo sát Nháp.
 - Loại khảo sát quyết định popup chọn người nhận khi giao (xem [02-assign-survey.md](./02-assign-survey.md)).
 
-### Trang 3: Popup: Xem trước khảo sát
+### Trang 3: ADM-KS-010030, ADM-KS-020030, ADM-KS-030030 — Popup: Xem trước khảo sát
+
+![Figma mới nhất · ADM-KS-010030](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-KS-010030.png)
+
+![Figma mới nhất · ADM-KS-020030](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-KS-020030.png)
+
+![Figma mới nhất · ADM-KS-030030](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-KS-030030.png)
+
 ![alt text](image-3.png)
 
 **Mô tả:**

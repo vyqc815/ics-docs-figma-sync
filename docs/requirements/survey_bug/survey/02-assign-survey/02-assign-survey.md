@@ -2,7 +2,10 @@
 
 ## 1. UI
 
-### Trang 1: Giao khảo sát — tab Giáo viên
+### Trang 1: ADM-GKS-010000 — Giao khảo sát — tab Giáo viên
+
+![Figma mới nhất · ADM-GKS-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-010000.png)
+
 ![alt text](image-5.png)
 
 **Mô tả:**
@@ -24,7 +27,12 @@
   - "Xem kết quả" chỉ enable khi Đã hoàn thành → Popup 6.
   - Menu 3 chấm: **Giao** (enable khi Đã thu hồi) · **Thu hồi** (enable khi Chưa làm / Đang làm) · **Xoá** (có xác nhận).
 
-### Trang 2: Giao khảo sát — tab Lớp / Học viên
+### Trang 2: ADM-GKS-020000, ADM-GKS-030000 — Giao khảo sát — tab Lớp / Học viên
+
+![Figma mới nhất · ADM-GKS-020000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-020000.png)
+
+![Figma mới nhất · ADM-GKS-030000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-030000.png)
+
 ![alt text](image-10.png)
 ![alt text](image.png)
 
@@ -68,20 +76,35 @@
 - Lớp đã có trong bảng **vẫn chọn lại được** để giao cho HV mới vào lớp (HV đã có thì bỏ qua).
 - Lớp 0 học viên → disable.
 
-### Trang 5: Popup 3: Chọn trung tâm (tab Học viên — khảo sát Tuỳ chọn)
+### Trang 5: ADM-GKS-010005, ADM-GKS-020005 — Popup 3: Chọn trung tâm (tab Học viên — khảo sát Tuỳ chọn)
+
+![Figma mới nhất · ADM-GKS-010005](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-010005.png)
+
+![Figma mới nhất · ADM-GKS-020005](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-020005.png)
+
 ![alt text](image-1.png)
 
 **Điểm cần lưu ý:**
 - Chọn 1 hoặc nhiều trung tâm → giao cho HV của các trung tâm đã chọn.
 
-### Trang 6: Popup 4: Chọn buổi học (tab Học viên — khảo sát Bắt buộc)
+### Trang 6: ADM-GKS-030050 — Popup 4: Chọn buổi học (tab Học viên — khảo sát Bắt buộc)
+
+![Figma mới nhất · ADM-GKS-030050](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-030050.png)
+
 ![alt text](image-2.png)
 
 **Điểm cần lưu ý:**
 - Chọn Trung tâm → Khoá học (thuộc trung tâm đã chọn) → Buổi học (thuộc khoá đã chọn), mỗi bước chọn nhiều.
 - Lớp nào thuộc khoá đã chọn học tới buổi đã chọn thì HV lớp đó nhận khảo sát (lớp mở trước hay sau lúc giao đều như nhau).
 
-### Trang 7: Giao khảo sát — tab "Kết quả khảo sát"
+### Trang 7: ADM-GKS-010020, ADM-GKS-020020, ADM-GKS-030020 — Giao khảo sát — tab "Kết quả khảo sát"
+
+![Figma mới nhất · ADM-GKS-010020](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-010020.png)
+
+![Figma mới nhất · ADM-GKS-020020](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-020020.png)
+
+![Figma mới nhất · ADM-GKS-030020](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-030020.png)
+
 ![alt text](image-3.png)
 
 **Mô tả:**
@@ -96,7 +119,12 @@
   - Avatar: tối đa 3 người + "và N người khác". Hover avatar → tên; hover "và N người khác" → danh sách tên những người còn lại.
 - **Đoạn ngắn:** danh sách câu trả lời kèm avatar người trả lời; bỏ qua bài để trống; hiển thị 10 câu trả lời, "Xem thêm" để tải tiếp.
 
-### Trang 8: Popup 5: Kết quả của 1 lớp / trung tâm
+### Trang 8: ADM-GKS-020030, ADM-GKS-030030 — Popup 5: Kết quả của 1 lớp / trung tâm
+
+![Figma mới nhất · ADM-GKS-020030](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-020030.png)
+
+![Figma mới nhất · ADM-GKS-030030](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-030030.png)
+
 ![alt text](image-13.png)
 ![alt text](image-14.png)
 
@@ -105,7 +133,10 @@
 - Tiêu đề: "Kết quả khảo sát - {Mã lớp / Tên trung tâm}".
 - Nội dung và cách hiển thị giống tab "Kết quả khảo sát", nhưng chỉ tính bài của HV thuộc lớp / trung tâm đó.
 
-### Trang 9: Popup 6: Kết quả từng giáo viên
+### Trang 9: ADM-GKS-010030 — Popup 6: Kết quả từng giáo viên
+
+![Figma mới nhất · ADM-GKS-010030](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GKS-010030.png)
+
 ![alt text](image-4.png)
 
 **Điểm cần lưu ý:**

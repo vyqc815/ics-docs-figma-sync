@@ -53,7 +53,10 @@ Menu **Lịch Họp** ở sidebar của role `Class Handler` (Phụ trách lớp
 - Sắp xếp theo ngày giờ họp giảm dần (mới nhất trước). Phân trang 10 cuộc họp/trang, có `Hiển thị x - y trong tổng số N cuộc họp`, `Trước`, số trang, `Sau`.
 - Không có dữ liệu → `Bảng dữ liệu này đang trống`.
 
-### Trang 2: Danh sách cuộc họp — dạng lịch tuần
+### Trang 2: SP-LHP-020000 — Danh sách cuộc họp — dạng lịch tuần
+
+![Figma mới nhất · SP-LHP-020000](https://ics-figma-demo.vercel.app/api/figma-frame/SP-LHP-020000.png)
+
 ![Trang 2](./images/calendar-view.png)
 
 **Mô tả:**
@@ -96,7 +99,14 @@ Menu **Lịch Họp** ở sidebar của role `Class Handler` (Phụ trách lớp
 - Người không phải người tạo (người tham gia, hoặc Admin xem cuộc họp của người khác) mở popup ở chế độ chỉ xem: mọi field disable, ẩn `+`, `x` trên chip, `Lưu`, `Xoá`; chỉ còn nút đóng.
 - Xoá là xoá mềm: cuộc họp biến mất khỏi danh sách/lịch của người tạo và người tham gia, không tính vào badge.
 
-### Trang 4: Dropdown bộ lọc
+### Trang 4: SP-LHP-010001, SP-LHP-010002, SP-LHP-010003 — Dropdown bộ lọc
+
+![Figma mới nhất · SP-LHP-010001](https://ics-figma-demo.vercel.app/api/figma-frame/SP-LHP-010001.png)
+
+![Figma mới nhất · SP-LHP-010002](https://ics-figma-demo.vercel.app/api/figma-frame/SP-LHP-010002.png)
+
+![Figma mới nhất · SP-LHP-010003](https://ics-figma-demo.vercel.app/api/figma-frame/SP-LHP-010003.png)
+
 ![Người tham gia](./images/filter-participant.png)
 ![Trạng thái](./images/filter-status.png)
 ![Thời gian](./images/filter-time.png)

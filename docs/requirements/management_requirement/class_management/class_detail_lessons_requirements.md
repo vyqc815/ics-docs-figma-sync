@@ -4,7 +4,10 @@
 
 ## 1. UI
 
-### Trang 1: Khung menu và Danh sách bài học
+### Trang 1: ADM-LOP-030100 — Khung menu và Danh sách bài học
+
+![Figma mới nhất · ADM-LOP-030100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-030100.png)
+
 ![Trang 1](./images/46-class-detail-lessons-session.png)
 
 *Khung menu Bài học và danh sách bên phải — nhấn để xem ảnh gốc*
@@ -29,7 +32,10 @@
 - Nhận xét/bàn giao, điểm danh và bài nộp là dữ liệu buổi thực tế; Thông tin/Nội dung/Tài nguyên là định nghĩa bài nguồn được áp dụng. Không trộn hai nhóm.
 - Mở tab/chọn bài/tải file không tự bắt đầu hay hoàn thành bài; không Toast CRUD cho chỉ xem.
 
-### Trang 2: Tab Buổi học — Bài đã bắt đầu
+### Trang 2: ADM-LOP-030100 — Tab Buổi học — Bài đã bắt đầu
+
+![Figma mới nhất · ADM-LOP-030100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-030100.png)
+
 ![Trang 2](./images/51-class-lesson-student-note.png)
 
 *UI buổi học mới và popup ghi chú học viên — nhấn để xem ảnh gốc*
@@ -100,7 +106,10 @@ Click icon Ghi chú ở dòng học viên để xem popup `Ghi chú`, theo ảnh
 - Nghỉ CP và Nghỉ KP không tính vào số đi học, vẫn thuộc mẫu số nếu học viên Đang học/Dự thính; sửa từ Có mặt sang Nghỉ làm giảm % Đi học, không đổi % BTVN.
 - Không mở điểm danh cho bài chưa bắt đầu hoặc dòng học viên/buổi không tồn tại.
 
-### Trang 5: Tab Buổi học — Bài học chưa bắt đầu
+### Trang 5: ADM-LOP-030100 — Tab Buổi học — Bài học chưa bắt đầu
+
+![Figma mới nhất · ADM-LOP-030100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-030100.png)
+
 ![Trang 5](./images/50-class-detail-lesson-not-started.png)
 
 *Buổi học chưa bắt đầu — nhấn để xem ảnh gốc*
@@ -142,7 +151,10 @@ Chọn bài chưa bắt đầu hiển thị `Bài học chưa bắt đầu` ở 
 - Tên tag và số trong ngoặc **do Curriculum Development Handler thiết lập**; hiển thị nguyên giá trị nguồn, không tính lại theo học viên lớp hoặc tỷ lệ BTVN.
 - Khi chưa có kỹ năng/mô tả, hiển thị trạng thái trống theo dữ liệu thật, không thêm tag mẫu. Bấm tag không tự tạo flow chỉnh hoặc điều hướng khi chưa có đặc tả.
 
-### Trang 7: Tab Nội dung
+### Trang 7: ADM-LOP-030300 — Tab Nội dung
+
+![Figma mới nhất · ADM-LOP-030300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-030300.png)
+
 ![Trang 7](./images/48-class-detail-lesson-content.png)
 
 *Các khối nội dung theo thứ tự nguồn — nhấn để xem ảnh gốc*
@@ -161,7 +173,10 @@ Chọn bài chưa bắt đầu hiển thị `Bài học chưa bắt đầu` ở 
 - Nguồn bài học có action board; menu Admin / Class Handler / Support hiển thị theo UI hiện tại, không thêm các form tạo/sửa/thực thi action của role Curriculum Development Handler.
 - Không tự tính tổng thời gian hoặc % hoàn thành khối khi ảnh/yêu cầu chưa cung cấp. Nội dung trống phải phản ánh đúng nguồn.
 
-### Trang 8: Tab Tài nguyên — Click tải xuống ngay
+### Trang 8: ADM-LOP-030400 — Tab Tài nguyên — Click tải xuống ngay
+
+![Figma mới nhất · ADM-LOP-030400](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-030400.png)
+
 ![Trang 8](./images/49-class-detail-lesson-resources.png)
 
 *Bài giảng/Tài nguyên khác: click file để tải ngay — nhấn để xem ảnh gốc*
@@ -183,7 +198,10 @@ Hiển thị hai nhóm Bài giảng và Tài nguyên khác. **Click một tài n
 - Đây là hành vi mới thay cho mô tả preview của bản trước; không giữ flow xem trước hoặc yêu cầu nút download bổ sung.
 - Kiểm tra quyền lớp/bài/tài nguyên khi tải trực tiếp URL/request. Tải file không thay tiến độ, điểm danh hay bắt đầu bài.
 
-### Trang 9: Chỉ số % BTVN và Đi học theo bài
+### Trang 9: ADM-LOP-030100 — Chỉ số % BTVN và Đi học theo bài
+
+![Figma mới nhất · ADM-LOP-030100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-030100.png)
+
 **Mô tả:**
 
 **Tính theo số học viên**, không lấy trung bình % số bài nộp của từng người và không dùng điểm BTVN. Tập được tính chỉ có học viên **Đang học hoặc Dự thính theo trạng thái tham gia của từng bài/buổi**, không lọc ngược toàn bộ lịch sử bằng trạng thái lớp hiện tại.
@@ -233,7 +251,10 @@ Nút Thêm bài học mới mở popup như 2 ảnh mới. Có thể thêm **m�
 - Tạo thành công chưa tự bắt đầu buổi/điểm danh/chấm bài. Thứ tự đặt bài bổ sung, trùng bài nguồn và ảnh hưởng lịch/số buổi cần chốt khi chưa có rule.
 - Admin/Class Handler/Support trong lớp được thêm một hoặc nhiều bài. **Mỗi dòng tương ứng một bài được thêm**, luôn chọn đủ khóa và bài nguồn; không gộp nội dung nhiều bài nguồn thành một bài hoặc sửa tiêu đề nguồn. Kiểm tra toàn bộ dòng trước khi lưu, không bỏ qua dòng thiếu lựa chọn.
 
-### Trang 11: Tab Kiến thức — Để trống
+### Trang 11: ADM-LOP-030500 — Tab Kiến thức — Để trống
+
+![Figma mới nhất · ADM-LOP-030500](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-030500.png)
+
 **Mô tả:** Tab Kiến thức hiện chưa có UI/định nghĩa áp dụng cho menu Admin / Class Handler / Support nên giữ tab và vùng nội dung trống theo yêu cầu người dùng.
 
 **Giải thích field/thành phần:**

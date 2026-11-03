@@ -83,7 +83,12 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Lịch đã gắn chỉ chuyển `Hoàn thành` và **phát sinh lương buổi dạy** khi giáo viên bấm `Hoàn thành buổi học` ở Bước 2 (khác ICS cũ chuyển ngay khi bắt đầu); lương buổi dạy tính theo lương/giờ của giáo viên ở lớp.
 - **Ngày tính lương là ngày của lịch đã chọn**, không phải ngày bấm Hoàn thành: chọn lịch ngày 15 để bắt đầu, ngày 20 mới hoàn thành buổi thì lương thuộc ngày 15.
 
-### Trang 4: Bước 1 — Điểm danh và Ghi chú cho lớp học
+### Trang 4: GV-LOP-030130, GV-LOP-030140 — Bước 1 — Điểm danh và Ghi chú cho lớp học
+
+![Figma mới nhất · GV-LOP-030130](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030130.png)
+
+![Figma mới nhất · GV-LOP-030140](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030140.png)
+
 ![Trang 4](./images/lesson-attendance-status.png)
 
 *Bước 1: chọn trạng thái điểm danh từng học viên, Ghi chú cho lớp học và nút Kết thúc buổi học (UI ICS cũ) — nhấn để xem ảnh gốc*
@@ -137,7 +142,12 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Sau khi Hoàn thành, giáo viên chỉ xem; không sửa điểm danh, nhận xét hoặc ghi chú.
 - Mỗi thay đổi lưu nháp lên server như Bước 1.
 
-### Trang 6: Tab Buổi học — Bài đang dạy và chờ hoàn thành
+### Trang 6: GV-LOP-030160, GV-LOP-030170 — Tab Buổi học — Bài đang dạy và chờ hoàn thành
+
+![Figma mới nhất · GV-LOP-030160](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030160.png)
+
+![Figma mới nhất · GV-LOP-030170](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030170.png)
+
 **Mô tả:**
 
 - Bài đã bắt đầu nhưng chưa hoàn thành: tab `Buổi học` hiển thị `Bài học đã mở` và nút tiếp tục.
@@ -240,7 +250,10 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Ví dụ lớp đã mở bài 1–6: tải được bài 4, 5, 6; bài 1–3 và bài 7 trở đi bị khoá. Mở thêm bài 7 thì bài 4 bị khoá.
 - Backend kiểm tra khoá khi tải bằng URL/request trực tiếp.
 
-### Trang 11: Chỉ số % BTVN và Đi học theo bài
+### Trang 11: GV-LOP-030100 — Chỉ số % BTVN và Đi học theo bài
+
+![Figma mới nhất · GV-LOP-030100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030100.png)
+
 **Mô tả:**
 
 - Hai vòng trên card bài đã mở, tính theo số học viên của đúng bài, giống Admin.
@@ -281,7 +294,12 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Mặc định mở tab `BTVN` và chọn card đầu tiên của danh sách.
 - Khác Figma GV-LOP-040100: Figma chưa có nút điều hướng chấm bài trên card; requirement bổ sung nút này cho `Giáo viên phụ trách chính`.
 
-### Trang 13: Khối Tổng Quan
+### Trang 13: GV-LOP-040100, GV-LOP-040200 — Khối Tổng Quan
+
+![Figma mới nhất · GV-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040100.png)
+
+![Figma mới nhất · GV-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040200.png)
+
 **Mô tả:**
 
 - Sáu thẻ thống kê toàn lớp: `Đã Chấm K.Tra`, `K.Tra Đã Giao`, `Điểm K.Tra`, `Đã Chấm BTVN`, `Tỉ Lệ Làm BTVN`, `Điểm BTVN`. Icon `⌃` thu gọn hoặc mở khối.
@@ -325,7 +343,12 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Khác Figma GV-LOP-040200: Figma chưa có frame card `Chưa giao` đang chọn (xem trước đề) và nút `Giao bài`; hai thành phần này đặc tả theo ICS cũ.
 - Vòng số đã nộp của role Giáo viên tính `đã nộp / tổng học viên hợp lệ` (theo ICS cũ), khác cách hiển thị `đã nộp / chưa nộp` của requirement Admin.
 
-### Trang 15: Bảng kết quả học viên
+### Trang 15: GV-LOP-040100, GV-LOP-040200 — Bảng kết quả học viên
+
+![Figma mới nhất · GV-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040100.png)
+
+![Figma mới nhất · GV-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040200.png)
+
 **Mô tả:**
 
 - Bảng vùng trái của bài đang chọn gồm `ĐIỂM SỐ`, `TÊN HỌC VIÊN`, `THỜI GIAN LÀM BÀI`, `NỘP BÀI`, `SỐ CÂU BỎ QUA`.
@@ -363,7 +386,10 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Tập học viên hợp lệ của bài kiểm tra xác định theo ngày giao (REQ02).
 - Giáo viên khác của lớp vẫn xem trước đề nhưng không có nút `Giao bài`.
 
-### Trang 17: Thu hồi bài kiểm tra
+### Trang 17: GV-LOP-040221 — Thu hồi bài kiểm tra
+
+![Figma mới nhất · GV-LOP-040221](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040221.png)
+
 **Mô tả:**
 
 - Bài kiểm tra đã giao có nút `Thu hồi` cạnh tên bài, chỉ hiển thị với `Giáo viên phụ trách chính`.
@@ -408,7 +434,10 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Giáo viên khác của lớp (không phải `Giáo viên phụ trách chính`) không thấy nút điều hướng và không mở được màn chấm, kể cả bằng URL.
 - Ảnh UI Giáo viên trên Figma (GV-LOP-040100, GV-LOP-040200) chưa có nút điều hướng trên card và chưa có màn chấm; dùng ảnh UI ICS cũ làm tham chiếu.
 
-### Trang 19: Danh sách Câu hỏi và trạng thái chấm
+### Trang 19: GV-LOP-040320 — Danh sách Câu hỏi và trạng thái chấm
+
+![Figma mới nhất · GV-LOP-040320](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040320.png)
+
 ![Trang 19](./images/grading-multiple-choice.png)
 
 *Danh sách Câu hỏi bên phải: icon trạng thái chấm, nhãn loại câu, đề bài và vòng tỷ lệ điểm (UI ICS cũ) — nhấn để xem ảnh gốc*
@@ -518,7 +547,10 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Nhận xét độc lập với điểm: có thể nhận xét trước khi chấm và ngược lại.
 - Nội dung chữ hiển thị dạng văn bản thuần, không thực thi HTML/script.
 
-### Trang 23: Nhận xét chung của câu
+### Trang 23: GV-LOP-040300 — Nhận xét chung của câu
+
+![Figma mới nhất · GV-LOP-040300](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040300.png)
+
 **Mô tả:**
 
 - Ô `Nhận xét chung` phía trên danh sách thẻ dùng để áp **một nhận xét chữ cho mọi học viên** có câu trả lời ở câu đang chọn.
@@ -535,7 +567,10 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - `Huỷ` đóng popup, không đổi nhận xét nào, không hiển thị Toast.
 - Áp dụng cho mọi học viên có câu trả lời của câu, không phụ thuộc bộ lọc đang bật.
 
-### Trang 24: Câu hỏi con
+### Trang 24: GV-LOP-040301 — Câu hỏi con
+
+![Figma mới nhất · GV-LOP-040301](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040301.png)
+
 **Mô tả:**
 
 - Câu có nhiều câu nhỏ (`Câu hỏi con`) được chấm theo từng câu con trong thẻ học viên.
@@ -551,7 +586,10 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Thẻ học viên của câu cha không hiển thị dãy điểm chung.
 - Câu con ghép đáp án theo mã câu con; dữ liệu cũ không có mã thì ghép theo thứ tự câu con.
 
-### Trang 25: Nút Đã Chấm và Sửa Bài Trên Lớp
+### Trang 25: GV-LOP-040300 — Nút Đã Chấm và Sửa Bài Trên Lớp
+
+![Figma mới nhất · GV-LOP-040300](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040300.png)
+
 **Mô tả:**
 
 - Giáo viên bấm nút sau khi đã chấm xong và sửa bài cho học viên trên lớp. Hệ thống ghi nhận người bấm và thời điểm của **lần bấm gần nhất**; bài đã được ghi nhận (BTVN hoặc Kiểm tra) được tính một lần vào thẻ `Đã chấm và sửa bài` ở [Tổng quan lớp](./class_overview_requirements.md).

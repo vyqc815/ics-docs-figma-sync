@@ -17,7 +17,10 @@
 
 ---
 
-### Trang 2: Popup: Chi tiết bài học - Tab Thông tin
+### Trang 2: CD-KH-030210 — Popup: Chi tiết bài học - Tab Thông tin
+
+![Figma mới nhất · CD-KH-030210](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030210.png)
+
 ![alt text](image-1.png)
 
 - Đầu popup: mã bài học, tên, học kỳ, thời lượng, ngày tạo, ngày cập nhật, **5 tab** (Thông tin, Nội dung, Tài nguyên, Kiến thức, **Kỹ năng**) kèm badge số lượng.
@@ -84,7 +87,12 @@ Popup xóa nhóm: tiêu đề `Xoá nhóm nội dung`; nội dung `Nhóm "{tên 
 
 ---
 
-### Trang 5: Popup: Chi tiết bài học - Tab Kiến thức
+### Trang 5: CD-KH-030241, CD-KH-030244 — Popup: Chi tiết bài học - Tab Kiến thức
+
+![Figma mới nhất · CD-KH-030241](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030241.png)
+
+![Figma mới nhất · CD-KH-030244](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030244.png)
+
 ![alt text](image-4.png)
 
 > Figma hiện vẽ tab Kiến thức gộp 2 tab nhỏ Kiến thức / Kỹ năng, panel chi tiết bên phải và nút "+". Requirement mới **tách Kỹ năng thành tab riêng**, tab **chỉ xem theo cụm đã liên kết**, bỏ nút "+" → **UI cần cập nhật Figma**.
@@ -98,7 +106,12 @@ Popup xóa nhóm: tiêu đề `Xoá nhóm nội dung`; nội dung `Nhóm "{tên 
 - **Đồng bộ:** thêm / gỡ / chuyển mục trong cụm, đổi tên cụm, đổi hoặc bỏ liên kết ở S1 → tab cập nhật ngay khi mở lại; không cần "Lưu thay đổi".
 - **Badge tab = số loại kiến thức có cụm liên kết với bài** (vd bài có cụm Từ vựng, Ngữ pháp, Mẫu câu → `3`), không phải số mục.
 
-### Trang 6: Popup: Chi tiết bài học - Tab Kỹ năng (mới — **UI cần bổ sung Figma**)
+### Trang 6: CD-KH-030242, CD-KH-030245 — Popup: Chi tiết bài học - Tab Kỹ năng (mới — **UI cần bổ sung Figma**)
+
+![Figma mới nhất · CD-KH-030242](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030242.png)
+
+![Figma mới nhất · CD-KH-030245](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030245.png)
+
 - Tương tự tab Kiến thức; dữ liệu lấy từ **Kỹ năng (S6)**: với mỗi loại kỹ năng, bài học có tối đa 1 cụm liên kết (lập tại S6 › panel Cụm); tab hiển thị bài kỹ năng của cụm đó, chỉ xem.
 - **Bộ lọc Loại:** `Nghe` (mặc định), `Đọc`, `Viết`, `Nói`, luôn hiện đủ 4; loại chưa liên kết hiện `Chưa có cụm <loại> liên kết với bài này` + hướng dẫn liên kết tại S6.
 - Tiêu đề khung trái `Cụm nghe: <tên cụm> · N bài`; dòng = tên bài + mô tả ngắn, chấm cam khi thiếu thông tin, tag `Nâng cao` khi Có; khung phải chi tiết bài (field theo drawer S6), chỉ xem.

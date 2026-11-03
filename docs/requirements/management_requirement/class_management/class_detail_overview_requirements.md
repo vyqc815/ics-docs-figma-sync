@@ -255,7 +255,10 @@ Nút Back ở góc trên trái gồm mũi tên quay lại và mã lớp đang xe
 - Bảng bài hiển thị toàn bộ, không load-more/phân trang; sắp theo số thứ tự bài học tăng dần. Không cắt bảng theo số bài của vùng Bài học gần đây.
 - Khác Figma ADM-LOP-020100: bảng bài chưa có tag thời điểm mở bài phía trên tên bài.
 
-### Trang 10: Popup ghi chú giáo viên theo bài học
+### Trang 10: ADM-LOP-020110 — Popup ghi chú giáo viên theo bài học
+
+![Figma mới nhất · ADM-LOP-020110](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020110.png)
+
 ![Trang 10](./images/41-class-overview-lesson-note.png)
 
 **Mô tả:** Click ghi chú bài mở popup Ghi chú, có hai vùng theo UI mới: Ghi chú từ Giáo viên cho Học viên và Ghi chú từ Giáo viên cho Team Support.

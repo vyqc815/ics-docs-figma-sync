@@ -105,7 +105,10 @@ Field `Loại lớp` xác định lớp học chung, lớp 1-1 hay lớp demo (l
 - Backend chỉ chấp nhận một trong ba giá trị hợp lệ; request gửi loại lớp khác phải bị từ chối.
 - `Lớp 1-1` là một giá trị phân loại lớp, không phải điều kiện sĩ số. Lớp 1-1 có thể có 0, 1 hoặc nhiều học viên.
 
-### Trang 5: Popup Thêm Lịch Dạy Cố Định
+### Trang 5: ADM-LOP-010020 — Popup Thêm Lịch Dạy Cố Định
+
+![Figma mới nhất · ADM-LOP-010020](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010020.png)
+
 ![Trang 5](./images/07-add-fixed-schedule.png)
 
 *Popup Thêm Lịch Dạy Cố Định — nhấn để xem ảnh gốc*

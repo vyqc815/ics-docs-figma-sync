@@ -39,7 +39,10 @@
 - Mặc định khi bấm vào 1 khoá học, hệ thống tự động chọn mục **Học Kỳ**.
 - Nhóm **Quản Lý** và **Tài Liệu** hiện chỉ mới có 2 tab lớn ở ngoài, nội dung mục con bên trong chưa chốt, sẽ bổ sung sau ở file khác.
 
-### Trang 3: Popup xác nhận Công khai khoá học
+### Trang 3: CD-KH-010010 — Popup xác nhận Công khai khoá học
+
+![Figma mới nhất · CD-KH-010010](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-010010.png)
+
 ![Trang 3](image-2.png)
 
 **Mô tả:**

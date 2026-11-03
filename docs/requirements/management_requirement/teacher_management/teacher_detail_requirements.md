@@ -2,7 +2,10 @@
 
 ## 1. UI
 
-### Trang 1: Màn hình Chi tiết giáo viên
+### Trang 1: ADM-GV-020100 — Màn hình Chi tiết giáo viên
+
+![Figma mới nhất · ADM-GV-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-020100.png)
+
 **Mô tả:**
 
 - Màn hình tập trung hồ sơ và toàn bộ dữ liệu vận hành của đúng giáo viên được chọn từ danh sách.
@@ -129,7 +132,10 @@
 - Khi đổi bộ lọc liên tục, chỉ response của tổ hợp điều kiện mới nhất được phép cập nhật danh sách.
 - Trạng thái loading, rỗng và lỗi phải được phân biệt. Lỗi tải dữ liệu không được hiển thị như danh sách rỗng và phải cho phép thử lại.
 
-### Trang 4: Tab Lịch dạy
+### Trang 4: ADM-GV-020300 — Tab Lịch dạy
+
+![Figma mới nhất · ADM-GV-020300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-GV-020300.png)
+
 ![Trang 4](./images/teacher-detail-schedule-by-day.png)
 
 *Tab Lịch dạy khi tắt `Theo lớp`: thanh tuần, hàng chip tóm tắt lịch đăng ký, card 3 màu — nhấn để xem ảnh gốc*

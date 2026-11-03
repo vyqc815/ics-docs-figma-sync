@@ -4,7 +4,10 @@ Menu Tự học dùng để giao bài ôn tập cho học viên trên app và xe
 
 ## 1. UI
 
-### Trang 1: Khung menu và trạng thái chưa có khóa tự học
+### Trang 1: ADM-LOP-020404 — Khung menu và trạng thái chưa có khóa tự học
+
+![Figma mới nhất · ADM-LOP-020404](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020404.png)
+
 ![Trang 1](./images/55-class-self-study-empty.png)
 
 *Tự học — Hai vùng chưa có dữ liệu — nhấn để xem ảnh gốc*

@@ -8,7 +8,10 @@ Ngày ghi nhận: **29/09/2026**; cập nhật quyền, người tham gia và Ac
 
 ## 1. UI
 
-### Trang 1: Khung tab Cuộc họp và danh sách buổi họp
+### Trang 1: ADM-LOP-020904 — Khung tab Cuộc họp và danh sách buổi họp
+
+![Figma mới nhất · ADM-LOP-020904](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020904.png)
+
 ![Trang 1](./images/61-class-meeting-main-status.png)
 
 *Ảnh 6 — khung tab và menu trạng thái; ảnh chỉ có 3 trạng thái, yêu cầu phải có thêm Đang chờ*

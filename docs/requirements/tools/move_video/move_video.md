@@ -2,7 +2,10 @@
 
 ## 1. UI
 
-### Trang 1: Xác minh Gmail
+### Trang 1: ADM-MV-010000 — Xác minh Gmail
+
+![Figma mới nhất · ADM-MV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-MV-010000.png)
+
 ![alt text](image.png)
 
 **Mô tả:**
@@ -13,7 +16,10 @@
 - Card tài khoản ở góc trái trên hiển thị tài khoản Gmail vừa đăng nhập (avatar, tên, email).
 - Nút **Xác Minh**: xác minh account Google và lấy file record từ Google Drive về. Xác minh thành công mới vào được Trang 2.
 
-### Trang 2: Danh sách video
+### Trang 2: ADM-MV-020000 — Danh sách video
+
+![Figma mới nhất · ADM-MV-020000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-MV-020000.png)
+
 ![alt text](image-1.png)
 
 **Mô tả:**
@@ -37,7 +43,12 @@
 - **Cột cuối:** checkbox chọn nhiều để xoá; checkbox ở header dùng chọn tất cả.
 - **Nút Xoá:** chỉ hiển thị khi đã tick chọn ít nhất 1 dòng, nằm ở hàng tiêu đề (cùng hàng với TÊN VIDEO, MÃ LỚP, BÀI HỌC). Bấm Xoá hiện **popup xác nhận**. Figma chưa vẽ nút và popup này.
 
-### Trang 3: Popup Đổi tên video và xác nhận xoá
+### Trang 3: ADM-MV-020010, ADM-MV-020020 — Popup Đổi tên video và xác nhận xoá
+
+![Figma mới nhất · ADM-MV-020010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-MV-020010.png)
+
+![Figma mới nhất · ADM-MV-020020](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-MV-020020.png)
+
 ![alt text](image-2.png)
 
 **Mô tả:**

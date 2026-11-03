@@ -48,7 +48,10 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
   chi tiết, Preview.
 - Tab `Viết`, `Nói` bấm được, dùng cùng mô hình panel Cụm; bảng và field theo requirement riêng (chưa viết).
 
-### Trang 2: Bảng bài nghe
+### Trang 2: CD-KH-050100 — Bảng bài nghe
+
+![Figma mới nhất · CD-KH-050100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050100.png)
+
 **Mô tả:**
 
 - Danh sách bài nghe của khoá, mỗi dòng một bản ghi thư viện kỹ năng loại Nghe.
@@ -93,7 +96,10 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
   không tính thiếu.
 - Tab Đọc lọc theo cụm bằng panel Cụm như tab Nghe.
 
-### Trang 4: Panel Cụm và Số cụm
+### Trang 4: CD-KH-050100 — Panel Cụm và Số cụm
+
+![Figma mới nhất · CD-KH-050100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050100.png)
+
 **Mô tả:**
 
 - Panel bên phải của mỗi tab quản lý cụm của **kỹ năng đó** (Nghe, Đọc, Viết, Nói mỗi tab một bộ cụm riêng), giống
@@ -120,7 +126,10 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
   `Chưa phân cụm` thì bài mới vào `Chưa phân cụm`.
 - Cụm là mắt xích duy nhất giữa bài kỹ năng và bài học; màn S6 hiện liên kết qua chip bài học trên dòng cụm.
 
-### Trang 5: Tìm kiếm, lọc và sắp xếp
+### Trang 5: CD-KH-050100 — Tìm kiếm, lọc và sắp xếp
+
+![Figma mới nhất · CD-KH-050100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050100.png)
+
 **Mô tả:**
 
 - Thu hẹp bảng trái; các điều kiện kết hợp với nhau và với cụm đang chọn ở panel Cụm.
@@ -191,7 +200,10 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Từ vựng liên quan chỉ là tham chiếu, sửa từ ở S1 thì đoạn văn thấy nội dung mới; gỡ từ khỏi khoá ở S1 thì tự mất
   khỏi danh sách này.
 
-### Trang 8: Menu thao tác dòng và Popup Thêm vào cụm / Gỡ khỏi cụm
+### Trang 8: CD-KH-050100 — Menu thao tác dòng và Popup Thêm vào cụm / Gỡ khỏi cụm
+
+![Figma mới nhất · CD-KH-050100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050100.png)
+
 **Mô tả:**
 
 - Menu `⋮` cuối dòng; popup gán bài vào **một** cụm (chuyển cụm nếu đã có), hoặc gỡ khỏi cụm (giống popup cụm của S1, **UI cần bổ sung**).

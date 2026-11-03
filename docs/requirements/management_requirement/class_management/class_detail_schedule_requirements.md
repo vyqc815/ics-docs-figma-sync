@@ -4,7 +4,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Lịch dạy*
 
 ## 1. UI
 
-### Trang 1: Tab Lịch dạy — Lịch theo tuần
+### Trang 1: ADM-LOP-040500 — Tab Lịch dạy — Lịch theo tuần
+
+![Figma mới nhất · ADM-LOP-040500](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040500.png)
+
 ![Trang 1](./images/26-class-detail-schedule.png)
 
 *Lịch dạy theo tuần của lớp — nhấn để xem ảnh gốc*
@@ -183,7 +186,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Lịch dạy*
 - Không cho hoàn thành lịch đã hủy. Lịch đã hoàn thành không được sửa/hủy trực tiếp; phải đi qua flow `Mở lại`, đảo lương và trở về `Đang đợi` trước.
 - Lớp không chính thức được nới điều kiện nội dung/bài học để test nhưng vẫn phải chống ghi lương trùng, lưu audit và kiểm tra quyền.
 
-### Trang 7: Mở lại lịch đã hoàn thành và đảo lương
+### Trang 7: ADM-LOP-040500 — Mở lại lịch đã hoàn thành và đảo lương
+
+![Figma mới nhất · ADM-LOP-040500](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040500.png)
+
 **Mô tả:** Cho phép `Admin`, `Class Handler` và `Support` mở lại một lịch đã `Hoàn thành` để sửa hoặc hủy. Đây là nghiệp vụ điều chỉnh có ảnh hưởng tài chính nên phải đảo khoản lương hiệu lực và lưu toàn bộ audit trước khi lịch trở về `Đang đợi`.
 
 **Giải thích field/thành phần:**

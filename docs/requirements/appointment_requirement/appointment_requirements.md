@@ -4,7 +4,16 @@ Menu **Lịch Hẹn** của ICS có bốn tab: **Hẹn lớp**, **Học viên**,
 
 ## 1. UI
 
-### Trang 1: Danh Sách Lịch Hẹn
+### Trang 1: ADM-LHN-010100, ADM-LHN-010200, ADM-LHN-010300, ADM-LHN-010400 — Danh Sách Lịch Hẹn
+
+![Figma mới nhất · ADM-LHN-010100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LHN-010100.png)
+
+![Figma mới nhất · ADM-LHN-010200](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LHN-010200.png)
+
+![Figma mới nhất · ADM-LHN-010300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LHN-010300.png)
+
+![Figma mới nhất · ADM-LHN-010400](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LHN-010400.png)
+
 ![Trang 1](./images/01-appointments-class.png)
 
 *Danh sách Hẹn lớp; ba tab còn lại theo cùng bố cục — nhấn để xem ảnh gốc*
@@ -28,7 +37,10 @@ Menu **Lịch Hẹn** của ICS có bốn tab: **Hẹn lớp**, **Học viên**,
 - `Theo dõi` được xem lịch hẹn được gán nhưng mọi control thay đổi là chỉ đọc; việc xem lịch hẹn không tự mở quyền xem toàn bộ đối tượng liên kết.
 - Nút `Review` mở `Bảng chia lịch hẹn` theo phần bên dưới. Lịch hẹn đến hạn có ngày hẹn từ hôm nay trở về trước và được tính vào badge theo phạm vi xem; badge `SOS` hiện khi Độ ưu tiên là `Quan trọng`, ẩn khi đổi sang mức khác.
 
-### Trang 2: Bộ lọc và lựa chọn Ưu tiên / Trạng thái
+### Trang 2: ADM-LHN-010100 — Bộ lọc và lựa chọn Ưu tiên / Trạng thái
+
+![Figma mới nhất · ADM-LHN-010100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LHN-010100.png)
+
 ![Trang 2](./images/11-time-filter.png)
 
 *Bộ lọc Thời gian, Độ ưu tiên và Trạng thái; ảnh cũ còn mục Đã xoá nhưng không áp dụng*
@@ -90,7 +102,10 @@ Form chung theo bảng dưới; riêng popup tạo từ Danh sách học viên �
 - Người tạo chỉ được chọn sẵn làm Người phụ trách nếu thuộc một role được gán của flow này; Người phụ trách được để trống. Chọn nhiều user, Theo dõi không bắt buộc và một user có thể ở cả hai field.
 - Các quy tắc form chung về bốn nhóm role không áp dụng thay thế các điểm riêng đã chốt ở flow học viên này. Validation Nội dung/Ghi chú/Độ ưu tiên, bản ghi dùng chung, quyền sửa/xóa và phản hồi vẫn theo requirement này.
 
-### Trang 4: Chỉnh Độ ưu tiên và Trạng thái trên dòng
+### Trang 4: ADM-LHN-010100 — Chỉnh Độ ưu tiên và Trạng thái trên dòng
+
+![Figma mới nhất · ADM-LHN-010100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LHN-010100.png)
+
 **Mô tả:**
 
 - Người có trong `Người phụ trách` thay đổi độ ưu tiên/trạng thái của lịch hẹn qua dropdown ở bảng. Người trong `Theo dõi` chỉ xem.

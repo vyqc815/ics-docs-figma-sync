@@ -2,7 +2,10 @@
 
 ## 1. UI
 
-### Trang 1: Khung Chi tiết học viên và điều hướng
+### Trang 1: ADM-HV-020100 — Khung Chi tiết học viên và điều hướng
+
+![Figma mới nhất · ADM-HV-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-020100.png)
+
 - Mở từ mũi tên cuối dòng Danh sách học viên; tiêu đề `Chi Tiết Học Viên` có nút quay lại danh sách.
 - Sáu tab đúng thứ tự: **Thông tin cá nhân → Danh sách lớp → Học phí → Log → Quy trình học viên → Ghi chú**. Mặc định mở Thông tin cá nhân. Tab active dùng chữ cam, nền cam nhạt và vạch cam bên trái theo ảnh.
 - Tất cả tab dùng cùng student_id đang chọn; chuyển tab không tạo tài khoản hoặc bản sao dữ liệu. Dữ liệu của các tab dùng chung phải đồng nhất với popup Lịch sử học viên và module nguồn.
@@ -54,7 +57,10 @@
 - Nút `Xác nhận`: gửi yêu cầu đặt lại mật khẩu của đúng học viên đang xem.
 - Trong thời gian xử lý, vô hiệu hóa nút `Xác nhận` để tránh gửi yêu cầu lặp.
 
-### Trang 4: Chi tiết học viên — Danh sách lớp
+### Trang 4: ADM-HV-020200 — Chi tiết học viên — Danh sách lớp
+
+![Figma mới nhất · ADM-HV-020200](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-020200.png)
+
 ![Trang 4](./images/27-student-detail-classes.png)
 
 *Danh sách lớp — sáu thẻ thống kê và bảng lớp của học viên*
@@ -66,7 +72,10 @@
 - **Phân trang từng trang:** footer có phạm vi đang hiển thị/tổng số **lớp**, Trước, số trang và Sau. Đổi trang thay tập dòng đang hiển thị, giữ đúng student_id; không nối thêm như load more. Trang đầu/cuối vô hiệu hóa Trước/Sau tương ứng. Ảnh chưa có footer nhưng phân trang vẫn phải có theo yêu cầu đã chốt; số dòng/trang theo cấu hình phân trang chung.
 - Tên khóa rút gọn theo UI; số `7/7`, `45%`, `80`, `B`, mã lớp lặp trong ảnh là mẫu, không hard-code. BTVN vẫn hiển thị tỷ lệ theo requirement lịch sử.
 
-### Trang 5: Chi tiết học viên — Học phí
+### Trang 5: ADM-HV-020300 — Chi tiết học viên — Học phí
+
+![Figma mới nhất · ADM-HV-020300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-020300.png)
+
 ![Trang 5](./images/28-student-detail-tuition.png)
 
 *Học phí — thẻ thống kê, hóa đơn và chi tiết phân bổ mở rộng*
@@ -77,7 +86,10 @@
 - Cho phép thao tác học phí/hóa đơn hiện có như lịch sử: Thêm học phí hai bước, chỉnh sửa, Copy tên, Xóa có xác nhận; các mục đang disable giữ nguyên theo requirement Hóa đơn. **Không tạo hóa đơn mới** tại tab này. Xóa hóa đơn đồng bộ học phí/số dư mọi học viên liên kết theo requirement Hóa đơn; Hủy/lỗi không lưu dở dang.
 - **Phân trang từng trang theo hóa đơn**, không phân trang từng phân bổ học phí. Footer dùng số/tổng **hóa đơn**, sửa nhãn mẫu `lớp học` trong ảnh thành `hóa đơn`. Cuộn ngang để xem đủ cột; đổi trang thay các dòng hóa đơn, không nối thêm. Thẻ thống kê vẫn lấy toàn bộ dữ liệu.
 
-### Trang 6: Chi tiết học viên — Log
+### Trang 6: ADM-HV-020400 — Chi tiết học viên — Log
+
+![Figma mới nhất · ADM-HV-020400](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-020400.png)
+
 ![Trang 6](./images/29-student-detail-log.png)
 
 *Log — tìm kiếm, bộ lọc và nhật ký của học viên*
@@ -92,7 +104,10 @@
 - Với sự kiện thêm học viên vào lớp/đóng tiền đã chốt ở Nhật ký lớp, Log học viên hiển thị sự kiện liên quan **đúng student_id**; tên người thực hiện/lớp/hóa đơn/số tiền theo action nguồn. Cùng sự kiện không tạo trùng log khi retry; không đưa log của học viên khác trong cùng lớp vào. Không tự mở rộng action tự ghi từ các dòng mẫu trong ảnh.
 - **Load more** theo log: tải tiếp nối dòng mới, không lặp log_id; giữ dòng/mô tả đã mở, lỗi giữ dữ liệu cũ và cho thử lại, hết dữ liệu dừng tải. Đổi search/filter hoặc học viên bắt đầu lại từ lượt đầu. Những phần chưa chốt ở Nhật ký lớp (thứ tự, chọn một/nhiều Đối tượng, editor) vẫn kế thừa trạng thái cần xác nhận của nguồn.
 
-### Trang 7: Chi tiết học viên — Quy trình học viên
+### Trang 7: ADM-HV-020500 — Chi tiết học viên — Quy trình học viên
+
+![Figma mới nhất · ADM-HV-020500](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-020500.png)
+
 ![Trang 7](./images/30-student-detail-processes.png)
 
 *Quy trình học viên — Package, Category và Action Item*

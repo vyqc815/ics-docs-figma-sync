@@ -256,7 +256,10 @@ Trong các testcase bên dưới, bộ lọc trả về đúng 2 lớp A và B, 
 
 - Menu phải giữ đúng định danh lớp đã click; không dùng mã hiển thị làm khóa cập nhật.
 
-### Trang 7: Popup Thêm tag cho lớp
+### Trang 7: ADM-LOP-010040 — Popup Thêm tag cho lớp
+
+![Figma mới nhất · ADM-LOP-010040](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-010040.png)
+
 ![Trang 7](./images/04-add-class-tags.png)
 
 *Cấu trúc popup Thêm Tag tham khảo; trong màn này đối tượng nhận tag là lớp được chọn — nhấn để xem ảnh gốc*

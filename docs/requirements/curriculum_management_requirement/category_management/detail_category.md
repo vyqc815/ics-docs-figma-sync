@@ -2,7 +2,10 @@
 
 ## 1. UI
 
-### Trang 1: Popup Chi tiết danh mục
+### Trang 1: CD-DM-010010 — Popup Chi tiết danh mục
+
+![Figma mới nhất · CD-DM-010010](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010010.png)
+
 **Mô tả:**
 
 - Hiển thị thông tin của đúng danh mục được chọn, gồm 4 tab: `Tổng quan`, `Mindset`, `Tiêu chuẩn giáo trình`, `Hướng dẫn giảng dạy`.
@@ -31,7 +34,14 @@
 - `A02.06` **Trạng thái**: `Nháp` (mặc định) / `Công Khai` / `Vô hiệu`, theo rule chuyển trạng thái của khóa học (`course_management.md` REQ05): `Nháp → Công Khai` (qua popup Công khai khoá học), `Công Khai ↔ Vô hiệu`, không về `Nháp`.
 - `A02.07` **Tìm kiếm**: Sau khi ngừng nhập `2 giây`, lọc trong danh mục hiện tại theo keyword khớp một phần với ID, Tên hoặc Mô tả.
 
-### Trang 3: Tab Mindset, Tiêu chuẩn giáo trình và Hướng dẫn giảng dạy
+### Trang 3: CD-DM-010020, CD-DM-010030, CD-DM-010040 — Tab Mindset, Tiêu chuẩn giáo trình và Hướng dẫn giảng dạy
+
+![Figma mới nhất · CD-DM-010020](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010020.png)
+
+![Figma mới nhất · CD-DM-010030](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010030.png)
+
+![Figma mới nhất · CD-DM-010040](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010040.png)
+
 ![Trang 3](./images/03-category-mindset.png)
 
 *Ba tab cấu hình nội dung cho danh mục — nhấn để xem ảnh gốc*

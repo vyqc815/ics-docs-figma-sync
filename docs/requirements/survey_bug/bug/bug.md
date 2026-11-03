@@ -20,7 +20,14 @@
 - Nút **Huỷ**: xoá dữ liệu đã nhập, đưa form về mặc định.
 - Chỉ GV, CD thấy form Thêm Bug.
 
-### Trang 2: Danh sách Báo lỗi & góp ý
+### Trang 2: CD-BL-010000, CH-BL-010000, GV-BL-010000 — Danh sách Báo lỗi & góp ý
+
+![Figma mới nhất · CD-BL-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CD-BL-010000.png)
+
+![Figma mới nhất · CH-BL-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CH-BL-010000.png)
+
+![Figma mới nhất · GV-BL-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-BL-010000.png)
+
 ![alt text](image-1.png)
 
 **Mô tả:**
@@ -49,7 +56,14 @@
 - Click vào dòng / Chỉnh sửa (trong menu 3 chấm) → popup Chi tiết báo lỗi (Trang 4).
 - Sắp xếp mặc định: Ngày báo cáo mới nhất lên đầu.
 
-### Trang 3: Popup Gửi báo lỗi
+### Trang 3: CD-BL-010010, CD-BL-010011, GV-BL-010010 — Popup Gửi báo lỗi
+
+![Figma mới nhất · CD-BL-010010](https://ics-figma-demo.vercel.app/api/figma-frame/CD-BL-010010.png)
+
+![Figma mới nhất · CD-BL-010011](https://ics-figma-demo.vercel.app/api/figma-frame/CD-BL-010011.png)
+
+![Figma mới nhất · GV-BL-010010](https://ics-figma-demo.vercel.app/api/figma-frame/GV-BL-010010.png)
+
 ![alt text](image-2.png)
 
 **Mô tả:**
@@ -65,7 +79,14 @@
 - Loại mặc định = Bug; dấu `*` và quy tắc Tệp đính kèm giống Trang 1.
 - Không có trường Trạng thái, Kết quả xử lý (tạo mới = Chưa đọc).
 
-### Trang 4: Popup Chi tiết báo lỗi
+### Trang 4: CD-BL-010020, CD-BL-010030, GV-BL-010020 — Popup Chi tiết báo lỗi
+
+![Figma mới nhất · CD-BL-010020](https://ics-figma-demo.vercel.app/api/figma-frame/CD-BL-010020.png)
+
+![Figma mới nhất · CD-BL-010030](https://ics-figma-demo.vercel.app/api/figma-frame/CD-BL-010030.png)
+
+![Figma mới nhất · GV-BL-010020](https://ics-figma-demo.vercel.app/api/figma-frame/GV-BL-010020.png)
+
 ![alt text](image-3.png)
 
 **Mô tả:**
@@ -80,7 +101,12 @@
 - Tệp đính kèm: hiển thị các file đã có (tên, định dạng, dung lượng), bấm để xem/tải; có thể thêm file. Loại = Bug thì phải còn ít nhất 1 file.
 - Không có quyền sửa → toàn bộ trường chỉ đọc, ẩn nút **Lưu thay đổi**.
 
-### Trang 5: Popup Xác nhận hoàn thành
+### Trang 5: CD-BL-010050, CH-BL-010050 — Popup Xác nhận hoàn thành
+
+![Figma mới nhất · CD-BL-010050](https://ics-figma-demo.vercel.app/api/figma-frame/CD-BL-010050.png)
+
+![Figma mới nhất · CH-BL-010050](https://ics-figma-demo.vercel.app/api/figma-frame/CH-BL-010050.png)
+
 ![alt text](image-4.png)
 
 **Mô tả:**
@@ -92,7 +118,12 @@
 - Kết quả xử lý\*: bắt buộc nhập mới cho xác nhận hoàn thành.
 - **Huỷ bỏ** → đóng popup, dropdown giữ nguyên trạng thái cũ.
 
-### Trang 6: Popup Xem kết quả
+### Trang 6: CD-BL-010030, GV-BL-010030 — Popup Xem kết quả
+
+![Figma mới nhất · CD-BL-010030](https://ics-figma-demo.vercel.app/api/figma-frame/CD-BL-010030.png)
+
+![Figma mới nhất · GV-BL-010030](https://ics-figma-demo.vercel.app/api/figma-frame/GV-BL-010030.png)
+
 ![alt text](image-5.png)
 
 **Mô tả:**
@@ -103,7 +134,10 @@
 - Toàn bộ chỉ đọc; Kết quả xử lý hiển thị dạng text; chỉ có nút **Đóng**.
 - Quy tắc hiển thị Nguồn lỗi giống Trang 5.
 
-### Trang 7: Popup nhắc bug chưa xử lý (PTL)
+### Trang 7: CH-BL-010070 — Popup nhắc bug chưa xử lý (PTL)
+
+![Figma mới nhất · CH-BL-010070](https://ics-figma-demo.vercel.app/api/figma-frame/CH-BL-010070.png)
+
 ![alt text](image-6.png)
 
 **Mô tả:**

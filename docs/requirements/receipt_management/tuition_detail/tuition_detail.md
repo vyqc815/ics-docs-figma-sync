@@ -14,7 +14,10 @@ c# Chi Tiết Học Phí
 - **Tag** đã thêm hiển thị **phía trên tên học viên** trong item học phí (chính vùng bấm vào tên). Nhãn **Mới** cạnh tên học viên trong chi tiết hóa đơn là **tag** của item học phí.
 - **Hình tròn số lượng lịch hẹn** hiển thị **phía trước tên học viên** khi học viên đã có lịch hẹn. Bấm vào hình tròn mở popup Danh sách lịch hẹn.
 
-### Trang 2: Popup Thêm tag
+### Trang 2: ADM-HD-010090 — Popup Thêm tag
+
+![Figma mới nhất · ADM-HD-010090](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HD-010090.png)
+
 ![alt text](image-2.png)
 ![alt text](image-6.png)
 
@@ -26,7 +29,12 @@ c# Chi Tiết Học Phí
 - Các tag đã gắn cho item được **tick sẵn**. **Gỡ tag = bỏ chọn tag** cần gỡ trong danh sách này rồi xác nhận.
 - Sau khi thêm, tag hiển thị phía trên tên học viên ở item học phí.
 
-### Trang 3: Popup Thêm lịch hẹn / Chỉnh sửa lịch hẹn
+### Trang 3: ADM-HD-010110, ADM-HD-010111 — Popup Thêm lịch hẹn / Chỉnh sửa lịch hẹn
+
+![Figma mới nhất · ADM-HD-010110](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HD-010110.png)
+
+![Figma mới nhất · ADM-HD-010111](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HD-010111.png)
+
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-7.png)
@@ -44,7 +52,10 @@ c# Chi Tiết Học Phí
 - **Người phụ trách** và **Theo dõi:** cho **chọn nhiều** người, **mặc định điền sẵn người đang đăng nhập**.
 - **Ghi chú:** không bắt buộc.
 
-### Trang 4: Popup Danh sách lịch hẹn
+### Trang 4: ADM-HD-010130 — Popup Danh sách lịch hẹn
+
+![Figma mới nhất · ADM-HD-010130](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HD-010130.png)
+
 ![alt text](image-5.png)
 
 **Mô tả:**
@@ -53,7 +64,10 @@ c# Chi Tiết Học Phí
 **Điểm cần lưu ý:**
 - Bấm vào 1 lịch hẹn bất kỳ → mở popup **Chỉnh sửa lịch hẹn** (giống popup Thêm lịch hẹn, có dữ liệu của lịch hẹn đó).
 
-### Trang 5: Popup Hồ sơ học viên - tab Lịch sử hoá đơn
+### Trang 5: ADM-HD-010020 — Popup Hồ sơ học viên - tab Lịch sử hoá đơn
+
+![Figma mới nhất · ADM-HD-010020](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HD-010020.png)
+
 ![alt text](image-8.png)
 ![alt text](image-9.png)
 ![alt text](image-10.png)
@@ -73,7 +87,10 @@ c# Chi Tiết Học Phí
 
 - **Xóa hóa đơn đồng bộ học phí:** sau xác nhận xóa mềm, các khoản học phí của hóa đơn đã xóa không còn hiệu lực; tính lại học phí, số dư của tất cả học viên liên kết và dữ liệu học phí theo lớp liên quan từ các hóa đơn/khoản học phí còn hiệu lực. Tải lại bảng/thẻ thống kê ở các màn liên quan. Hủy/lỗi giữ nguyên toàn bộ dữ liệu; không tự tạo giao dịch hoàn tiền.
 
-### Trang 6: Popup Hồ sơ học viên - tab Lịch sử lớp
+### Trang 6: ADM-HD-010120 — Popup Hồ sơ học viên - tab Lịch sử lớp
+
+![Figma mới nhất · ADM-HD-010120](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HD-010120.png)
+
 ![alt text](image-11.png)
 
 **Mô tả:**
@@ -85,7 +102,10 @@ c# Chi Tiết Học Phí
 - Các tỷ lệ Đi học/BTVN từng lớp lấy từ dữ liệu của học viên; tiến độ x/N Buổi lấy theo cả lớp; thẻ tổng hợp theo [Lịch sử lớp học viên](../../management_requirement/student_management/student_management_requirements.md#lịch-sử-lớp). Ba thẻ Lên kỳ/Đạt KPI/Đánh giá theo công thức ICS cũ đã chốt tại requirement học viên. Mũ xanh là trạng thái lớp Hoàn thành; badge Đánh giá theo getEvaluate(scoreEvaluateClass), vòng % theo getUpTerm của cả lớp. Không có lớp chính thức: Lên kỳ/Đạt KPI 0%, Đánh giá trống; không chia 0.
 - **Bấm vào 1 lớp** → chuyển sang trang chi tiết lớp đó **nằm dưới popup**; khi tắt popup Hồ sơ học viên sẽ thấy trang chi tiết lớp.
 
-### Trang 7: Popup Hồ sơ học viên - tab Ghi chú
+### Trang 7: ADM-HD-010225 — Popup Hồ sơ học viên - tab Ghi chú
+
+![Figma mới nhất · ADM-HD-010225](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HD-010225.png)
+
 ![alt text](image-12.png)
 ![alt text](image-13.png)
 
@@ -102,7 +122,10 @@ c# Chi Tiết Học Phí
   - Ghi chú **Riêng tư** hoặc **Đã đóng** chỉ owner ghi chú (người tạo ghi chú) xem được, gồm cả bình luận; user khác không nhận dữ liệu kể cả gọi trực tiếp.
 - **Bình luận:** link "n bình luận" / "Ẩn bình luận" để mở / ẩn danh sách bình luận. Mỗi bình luận hiển thị avatar, tên, thời gian, nội dung, theo card mới; ô bình luận là văn bản thuần, không có toolbar hoặc nút Trả lời riêng. Ô **"Nhập bình luận của bạn"** kèm nút gửi ở cuối danh sách bình luận.
 
-### Trang 8: Popup Thêm ghi chú
+### Trang 8: ADM-HD-010230 — Popup Thêm ghi chú
+
+![Figma mới nhất · ADM-HD-010230](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HD-010230.png)
+
 ![alt text](image-14.png)
 
 **Mô tả:**

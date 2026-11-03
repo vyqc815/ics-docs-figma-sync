@@ -83,7 +83,10 @@
 - Sau khi xác nhận thành công, danh mục chuyển sang `Công khai` và có thể được sử dụng theo quyền truy cập hiện tại.
 - Nếu thao tác tạo danh mục/khóa học hoặc công khai thất bại, hệ thống phải hiển thị notification lỗi, giữ lại dữ liệu người dùng đã nhập và không ghi nhận thay đổi một phần. Nội dung chữ chính xác của các notification này cần được bổ sung vào thiết kế; riêng lỗi tự động tạo Subject ID sử dụng notification và hành động `Thử lại` đã quy định ở trên.
 
-### Trang 4: Popup Chi tiết danh mục
+### Trang 4: CD-DM-010010 — Popup Chi tiết danh mục
+
+![Figma mới nhất · CD-DM-010010](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010010.png)
+
 **Mô tả:**
 
 - Popup hiển thị thông tin của đúng danh mục được chọn.
@@ -109,13 +112,23 @@
 - `A05.09` **Cấp độ**: Chỉ được chọn từ danh sách cấp độ đã được định nghĩa tại feature `Quản lý cấp độ`.
 - `A05.10` **Trạng thái**: Gồm `Nháp`, `Công khai`, `Vô hiệu hóa`; mặc định khi tạo là `Nháp`. Cho phép chuyển từ bất kỳ trạng thái hiện tại sang một trong hai trạng thái còn lại. Khi chuyển đến `Công khai`, ID công khai phải hợp lệ; chuyển sang trạng thái khác không xóa ID đã có.
 
-### Trang 6: Popup Kích hoạt công khai khóa học
+### Trang 6: CD-DM-010060 — Popup Kích hoạt công khai khóa học
+
+![Figma mới nhất · CD-DM-010060](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010060.png)
+
 - Khóa học sử dụng cùng trình tự, trạng thái giao diện, điều kiện bật nút, xử lý lỗi và nguyên tắc kiểm tra lại như popup `Kích hoạt công khai danh mục`.
 - Nội dung trên popup phải đổi đúng theo đối tượng đang thao tác: tiêu đề, tên đối tượng, ID tạm thời, trạng thái hiện tại và thông báo kết quả đều hiển thị thông tin khóa học.
 - Việc kích hoạt chỉ thành công khi ID công khai của khóa học đã được kiểm tra hợp lệ; sau đó hệ thống lưu ID và chuyển khóa học từ `Nháp` sang `Công khai` trong cùng một giao dịch.
 - Tên chính thức và định dạng của ID công khai dành cho khóa học cần được xác nhận vì bộ UI hiện tại chỉ minh họa `Subject ID` của danh mục.
 
-### Trang 7: Tab Mindset, Tiêu chuẩn giáo trình và Hướng dẫn giảng dạy
+### Trang 7: CD-DM-010020, CD-DM-010030, CD-DM-010040 — Tab Mindset, Tiêu chuẩn giáo trình và Hướng dẫn giảng dạy
+
+![Figma mới nhất · CD-DM-010020](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010020.png)
+
+![Figma mới nhất · CD-DM-010030](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010030.png)
+
+![Figma mới nhất · CD-DM-010040](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010040.png)
+
 #### Tab Mindset
 
 ![Trang 7](./images/03-category-mindset.png)
@@ -151,7 +164,10 @@
 - Không yêu cầu quyền `Định nghĩa nội dung` cho thao tác chọn và áp dụng, vì thao tác này không tạo, sửa hoặc xóa cấu trúc dữ liệu nguồn.
 - Sau khi lưu thành công, hệ thống hiển thị xác nhận `Áp dụng thành công!` và tóm tắt nội dung đã áp dụng.
 
-### Trang 8: Popup Áp dụng thành công
+### Trang 8: CD-DM-010057 — Popup Áp dụng thành công
+
+![Figma mới nhất · CD-DM-010057](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010057.png)
+
 ![Trang 8](./images/06-category-apply-success.png)
 
 *Kết quả áp dụng cấu hình cho danh mục — nhấn để xem ảnh gốc*

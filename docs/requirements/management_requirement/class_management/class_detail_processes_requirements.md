@@ -4,7 +4,14 @@ Ba tab dùng cùng Action Board, chỉ khác tên và loại quy trình. Package
 
 ## 1. UI
 
-### Trang 1: Ba tab quy trình trong lớp
+### Trang 1: ADM-LOP-020600, ADM-LOP-020700, ADM-LOP-020800 — Ba tab quy trình trong lớp
+
+![Figma mới nhất · ADM-LOP-020600](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020600.png)
+
+![Figma mới nhất · ADM-LOP-020700](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020700.png)
+
+![Figma mới nhất · ADM-LOP-020800](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020800.png)
+
 ![Trang 1](./images/69-class-teacher-standard-board.png)
 
 *Ảnh tab Tiêu chuẩn lớp - giáo viên; CSKH và Quy trình lớp dùng cùng bố cục.*

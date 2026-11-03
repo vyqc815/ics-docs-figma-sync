@@ -2,7 +2,10 @@
 
 ## 1. UI
 
-### Trang 1: Danh Sách Đơn Sách
+### Trang 1: ADM-SS-010000 — Danh Sách Đơn Sách
+
+![Figma mới nhất · ADM-SS-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-SS-010000.png)
+
 ![alt text](image.png)
 ![alt text](image-6.png)
 ![alt text](image-7.png)
@@ -26,7 +29,12 @@
 - Thanh công cụ: ô tìm kiếm học viên, filter Ngày nhận đơn, filter Trạng thái. Có phân trang.
 - Danh sách có bộ lọc `Trung tâm` nằm cùng hàng với các bộ lọc khác, cho chọn một hoặc nhiều trung tâm; khi chọn thì danh sách, tổng số và phân trang chỉ tính dữ liệu của các trung tâm đã chọn, kết hợp `AND` với các bộ lọc khác. Không chọn thì hiển thị dữ liệu của mọi trung tâm. Role Admin không dùng ô chọn trung tâm trên header.
 
-### Trang 2: Popup Thêm đơn sách / Cập nhật đơn sách
+### Trang 2: ADM-SS-010010, ADM-SS-010040 — Popup Thêm đơn sách / Cập nhật đơn sách
+
+![Figma mới nhất · ADM-SS-010010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-SS-010010.png)
+
+![Figma mới nhất · ADM-SS-010040](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-SS-010040.png)
+
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
@@ -43,7 +51,10 @@
   - Chọn Tên → Mã học viên tự điền theo. Chọn Mã học viên → Tên tự điền theo (đồng bộ 2 chiều).
 - Popup Cập nhật: điền sẵn toàn bộ dữ liệu của đơn đang chọn, nút xác nhận đổi từ "Thêm mới" thành "Cập nhật".
 
-### Trang 3: Popup Xác nhận gửi tin nhắn
+### Trang 3: ADM-SS-010034 — Popup Xác nhận gửi tin nhắn
+
+![Figma mới nhất · ADM-SS-010034](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-SS-010034.png)
+
 ![alt text](image-4.png)
 ![alt text](image-5.png)
 
