@@ -57,371 +57,340 @@ Requirement: `teacher_role/class/class_teaching_requirements.md` — [Giáo viê
 
 ### `A01` Bài học — Khung menu và Danh sách bài học
 
-Frame: `GV-LOP-030170` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | tieu-de-bai |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.02` | card-bai-da-mo |  | `5292:226699` Card · Bài đã mở | — |  | `TC01` | Khớp | QC |
-| `A01.03` | card-bai-chua-mo |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
-| `A01.04` | chon-bai |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.05` | thu-tu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.01` | tieu-de-bai |  |  | — |  |  | Chưa sync | QC |
+| `A01.02` | card-bai-da-mo |  |  | — |  | `TC01` | Chưa sync | QC |
+| `A01.03` | card-bai-chua-mo |  |  | — |  | `TC01` | Chưa sync | QC |
+| `A01.04` | chon-bai |  |  | — |  |  | Chưa sync | QC |
+| `A01.05` | thu-tu |  |  | — |  |  | Chưa sync | QC |
 
 ### `A02` Tab Buổi học — Dặn dò trước buổi học
 
-Frame: `GV-LOP-030110` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | dan-do-truoc-buoi-hoc |  | `5292:221813` Dặn dò trước buổi học | — |  | `TC04` | Khớp | QC |
-| `A02.02` | checkbox-toi-da-doc-ghi-chu |  | `5292:221837` Tôi đã đọc ghi chú | — |  | `TC04` | Khớp | QC |
-| `A02.03` | nut-bat-dau-buoi-hoc | `Atom/Button` Type=Neutral, Size=Medium | `5292:221839` Atom/Button | — |  | `TC03` | Khớp | QC |
+| `A02.01` | dan-do-truoc-buoi-hoc |  |  | — |  | `TC04` | Chưa sync | QC |
+| `A02.02` | checkbox-toi-da-doc-ghi-chu |  |  | — |  | `TC04` | Chưa sync | QC |
+| `A02.03` | nut-bat-dau-buoi-hoc |  |  | — |  | `TC03` | Chưa sync | QC |
 
 ### `A03` Popup Chọn lịch dạy và Bắt đầu buổi học
 
-Frame: `GV-LOP-030120`, `GV-LOP-030121` (tool đoán:GV-LOP-030120, GV-LOP-030121) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:GV-LOP-030120, GV-LOP-030121) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | lop-khong-co-lich-tuan-nay | `Popup/Header`  | `I5292:223042;2514:153348` Title | — |  |  | Khớp một phần | QC |
-| `A03.02` | popup-chon-lich-day | `Popup/Header`  | `I5292:222985;2514:153341` Title | — |  | `TC09`, `TC10` | Khớp một phần | QC |
-| `A03.03` | lua-chon-khong-chon-lich |  | `5292:223039` Không chọn lịch | — |  |  | Khớp một phần | QC |
-| `A03.04` | nut-huy-bat-dau | `Atom/Button` Type=Primary, Size=Medium; `Atom/Button` Type=Secondary, Size=Medium | `I5292:223001;2514:153361` Atom/Button; `I5292:223001;2514:153363` Atom/Button | — |  |  | Khớp | QC |
-| `A03.05` | popup-bat-dau-buoi-hoc | `Popup/Header`  | `I5292:223042;2514:153348` Title | — |  |  | Khớp một phần | QC |
-| `A03.06` | bat-dau-voi-lich |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.07` | bat-dau-khong-chon-lich |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.01` | lop-khong-co-lich-tuan-nay |  |  | — |  |  | Chưa sync | QC |
+| `A03.02` | popup-chon-lich-day |  |  | — |  | `TC09`, `TC10` | Chưa sync | QC |
+| `A03.03` | lua-chon-khong-chon-lich |  |  | — |  |  | Chưa sync | QC |
+| `A03.04` | nut-huy-bat-dau |  |  | — |  |  | Chưa sync | QC |
+| `A03.05` | popup-bat-dau-buoi-hoc |  |  | — |  |  | Chưa sync | QC |
+| `A03.06` | bat-dau-voi-lich |  |  | — |  |  | Chưa sync | QC |
+| `A03.07` | bat-dau-khong-chon-lich |  |  | — |  |  | Chưa sync | QC |
 
 ### `A04` Bước 1 — Điểm danh và Ghi chú cho lớp học
 
-Frame: `GV-LOP-030121`, `GV-LOP-040100`, `GV-LOP-040200`, `GV-LOP-040201`, `GV-LOP-040205`, `GV-LOP-040211`, `GV-LOP-040221`, `GV-LOP-040320` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | tieu-de | `Popup/Header`  | `I5292:223042;2514:153347` Tiêu đề | — |  |  | Khớp | QC |
-| `A04.02` | danh-sach-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.03` | trang-thai |  | `4324:98889` Column 3: Trạng thái | — |  |  | Khớp một phần | QC |
-| `A04.04` | ghi-chu-cho-lop-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.05` | checkbox-khong-co-dan-do-cho-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.06` | nut-ket-thuc-buoi-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.07` | popup-ket-thuc-buoi-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.08` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I5292:223058;2514:153363` Atom/Button | — |  | `TC12` | Khớp một phần | QC |
-| `A04.09` | trang-thai-nop-bai-va-diem | `Trạng thái nộp bài và điểm`  | `4324:98883` Trạng thái nộp bài và điểm | — |  |  | Chỉ có trên Figma | Figma |
-| `A04.10` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `4324:98890` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `A04.11` | molecule-o-dinh-danh |  | `4324:98917` Molecule/Ô định danh | — |  |  | Chỉ có trên Figma | Figma |
-| `A04.12` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `4324:86046` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
-| `A04.13` | atom-badge | `Atom/Badge`  | `4324:99243` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `A04.14` | percent | `PERCENT %`  | `4324:99249` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
-| `A04.15` | nut-cham-bai | `Atom/Button` Type=Outlined, Size=XSmall | `5425:274636` Nút · Chấm bài | — |  |  | Chỉ có trên Figma | Figma |
-| `A04.16` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `4324:86355` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
+| `A04.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
+| `A04.02` | danh-sach-hoc-vien |  |  | — |  |  | Chưa sync | QC |
+| `A04.03` | trang-thai |  |  | — |  |  | Chưa sync | QC |
+| `A04.04` | ghi-chu-cho-lop-hoc |  |  | — |  |  | Chưa sync | QC |
+| `A04.05` | checkbox-khong-co-dan-do-cho-hoc-vien |  |  | — |  |  | Chưa sync | QC |
+| `A04.06` | nut-ket-thuc-buoi-hoc |  |  | — |  |  | Chưa sync | QC |
+| `A04.07` | popup-ket-thuc-buoi-hoc |  |  | — |  |  | Chưa sync | QC |
+| `A04.08` | xac-nhan |  |  | — |  | `TC12` | Chưa sync | QC |
 
 ### `A05` Bước 2 — Ghi chú buổi học và Hoàn thành
 
-Frame: `GV-LOP-030100`, `GV-LOP-030170` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | bang-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.02` | ghi-chu-cua-giao-vien-gui-cho-support |  | `5292:228056` Ghi chú của Giáo viên gửi cho Support | — |  |  | Khớp một phần | QC |
-| `A05.03` | ghi-chu-cua-giao-vien-gui-cho-giao-vien- |  | `5292:228060` Ghi chú của Giáo viên gửi cho Giáo viên tiếp theo | — |  |  | Khớp một phần | QC |
-| `A05.04` | nut-hoan-thanh-buoi-hoc | `Atom/Button` Type=Primary, Size=Medium | `5292:226714` Atom/Button | — |  |  | Khớp một phần | QC |
-| `A05.05` | popup-hoan-thanh-buoi-hoc | `Atom/Button` Type=Primary, Size=Medium | `5292:226714` Atom/Button | — |  |  | Khớp một phần | QC |
-| `A05.06` | xac-nhan |  | `5292:226702` Chờ hoàn thành | — |  | `TC17` | Khớp một phần | QC |
+| `A05.01` | bang-hoc-vien |  |  | — |  |  | Chưa sync | QC |
+| `A05.02` | ghi-chu-cua-giao-vien-gui-cho-support |  |  | — |  |  | Chưa sync | QC |
+| `A05.03` | ghi-chu-cua-giao-vien-gui-cho-giao-vien- |  |  | — |  |  | Chưa sync | QC |
+| `A05.04` | nut-hoan-thanh-buoi-hoc |  |  | — |  |  | Chưa sync | QC |
+| `A05.05` | popup-hoan-thanh-buoi-hoc |  |  | — |  |  | Chưa sync | QC |
+| `A05.06` | xac-nhan |  |  | — |  | `TC17` | Chưa sync | QC |
 
 ### `A06` Tab Buổi học — Bài đang dạy và chờ hoàn thành
 
-Frame: `GV-LOP-030170` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | bai-dang-day |  |  | — | opens `A06` |  | Chưa khớp tự động | QC |
-| `A06.02` | bai-cho-hoan-thanh |  | `5292:226702` Chờ hoàn thành | — |  |  | Khớp | QC |
-| `A06.03` | nguoi-tiep-tuc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.01` | bai-dang-day |  |  | — | opens `A06` |  | Chưa sync | QC |
+| `A06.02` | bai-cho-hoan-thanh |  |  | — |  |  | Chưa sync | QC |
+| `A06.03` | nguoi-tiep-tuc |  |  | — |  |  | Chưa sync | QC |
 
 ### `A07` Tab Buổi học — Bài đã hoàn thành
 
-Frame: `GV-LOP-030100` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | giao-vien-nhan-xet-lop |  | `5292:228052` Giáo viên nhận xét lớp | — |  |  | Khớp | QC |
-| `A07.02` | ghi-chu-cua-giao-vien-gui-cho-support |  | `5292:228056` Ghi chú của Giáo viên gửi cho Support | — |  |  | Khớp | QC |
-| `A07.03` | ghi-chu-cua-giao-vien-gui-cho-giao-vien- |  | `5292:228060` Ghi chú của Giáo viên gửi cho Giáo viên tiếp theo | — |  |  | Khớp | QC |
-| `A07.04` | bang-hoc-vien |  |  | — |  | `TC22` | Chưa khớp tự động | QC |
-| `A07.05` | icon-ghi-chu |  | `4324:16672` Ghi chú | — | opens `A04` |  | Khớp | QC |
+| `A07.01` | giao-vien-nhan-xet-lop |  |  | — |  |  | Chưa sync | QC |
+| `A07.02` | ghi-chu-cua-giao-vien-gui-cho-support |  |  | — |  |  | Chưa sync | QC |
+| `A07.03` | ghi-chu-cua-giao-vien-gui-cho-giao-vien- |  |  | — |  |  | Chưa sync | QC |
+| `A07.04` | bang-hoc-vien |  |  | — |  | `TC22` | Chưa sync | QC |
+| `A07.05` | icon-ghi-chu |  |  | — | opens `A04` |  | Chưa sync | QC |
 
 ### `A08` Icon trạng thái điểm danh
 
-Frame: `GV-LOP-030100` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | co-mat |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A08.02` | vao-tre |  |  | — |  | `TC24` | Chưa khớp tự động | QC |
-| `A08.03` | ra-som |  |  | — |  | `TC24` | Chưa khớp tự động | QC |
-| `A08.04` | vao-tre-ra-som |  |  | — |  | `TC24` | Chưa khớp tự động | QC |
-| `A08.05` | nghi-cp-nghi-co-phep |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A08.06` | nghi-kp-nghi-khong-phep |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A08.07` | chua-diem-danh |  |  | — |  | `TC24` | Chưa khớp tự động | QC |
+| `A08.01` | co-mat |  |  | — |  |  | Chưa sync | QC |
+| `A08.02` | vao-tre |  |  | — |  | `TC24` | Chưa sync | QC |
+| `A08.03` | ra-som |  |  | — |  | `TC24` | Chưa sync | QC |
+| `A08.04` | vao-tre-ra-som |  |  | — |  | `TC24` | Chưa sync | QC |
+| `A08.05` | nghi-cp-nghi-co-phep |  |  | — |  |  | Chưa sync | QC |
+| `A08.06` | nghi-kp-nghi-khong-phep |  |  | — |  |  | Chưa sync | QC |
+| `A08.07` | chua-diem-danh |  |  | — |  | `TC24` | Chưa sync | QC |
 
 ### `A09` Tab Thông tin, Nội dung và Kiến thức
 
-Frame: `GV-LOP-030200`, `GV-LOP-030300`, `GV-LOP-030500` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A09.01` | thong-tin | `Card Menu v2 (Test)` Type=Menu phụ, State=Default | `I4915:259928;4901:213564` Card Menu v2 (Test) | — |  | `TC26` | Khớp | QC |
-| `A09.02` | noi-dung | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I4324:16976;2177:28928` Chi tiết NV | — |  | `TC27` | Khớp | QC |
-| `A09.03` | kien-thuc | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I4324:16978;2177:28928` Chi tiết NV | — |  |  | Khớp | QC |
+| `A09.01` | thong-tin |  |  | — |  | `TC26` | Chưa sync | QC |
+| `A09.02` | noi-dung |  |  | — |  | `TC27` | Chưa sync | QC |
+| `A09.03` | kien-thuc |  |  | — |  |  | Chưa sync | QC |
 
 ### `A10` Tab Tài nguyên — Khoá tải theo bài
 
-Frame: `GV-LOP-030401` (tool đoán:GV-LOP-030401) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:GV-LOP-030401) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A10.01` | nhom-bai-giang-tai-nguyen-khac |  | `5425:282094` Bài giảng; `5425:282111` Tài nguyên khác | — |  |  | Khớp | QC |
-| `A10.02` | bai-duoc-tai |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A10.03` | bai-bi-khoa | `Atom/Toast` Type=Info | `I5425:282992;2167:28354` Title | — |  |  | Khớp | QC |
+| `A10.01` | nhom-bai-giang-tai-nguyen-khac |  |  | — |  |  | Chưa sync | QC |
+| `A10.02` | bai-duoc-tai |  |  | — |  |  | Chưa sync | QC |
+| `A10.03` | bai-bi-khoa |  |  | — |  |  | Chưa sync | QC |
 
 ### `A11` Chỉ số % BTVN và Đi học theo bài
 
-Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-LOP-030300`, `GV-LOP-030400`, `GV-LOP-030401`, `GV-LOP-030500` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A11.01` | tap-tinh |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A11.02` | btvn |  | `4324:16756` BTVN | — |  | `TC31` | Khớp | QC |
-| `A11.03` | di-hoc |  | `4324:16757` Đi học | — |  | `TC32` | Khớp | QC |
-| `A11.04` | lam-tron |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A11.05` | mau-so-bang-0 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A11.01` | tap-tinh |  |  | — |  |  | Chưa sync | QC |
+| `A11.02` | btvn |  |  | — |  | `TC31` | Chưa sync | QC |
+| `A11.03` | di-hoc |  |  | — |  | `TC32` | Chưa sync | QC |
+| `A11.04` | lam-tron |  |  | — |  |  | Chưa sync | QC |
+| `A11.05` | mau-so-bang-0 |  |  | — |  |  | Chưa sync | QC |
 
 ### `A12` Bài tập và Kiểm tra — Khung menu
 
-Frame: `GV-LOP-040100`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210` (tool đoán:GV-LOP-040201, GV-LOP-040204, GV-LOP-040205, GV-LOP-040210) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:GV-LOP-040201, GV-LOP-040204, GV-LOP-040205, GV-LOP-040210) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A12.01` | tab-btvn-kiem-tra | `Atom/Side Tab` State=Active, Kiểu=Gạch trái; `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I4324:86046;2177:28936` Nhiệm vụ con; `I4324:86047;2177:28928` Chi tiết NV | — |  |  | Khớp | QC |
-| `A12.02` | o-tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `4324:86048` Atom/Input | — |  |  | Khớp | QC |
-| `A12.03` | card-bai |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A12.04` | nut-dieu-huong-cham-bai |  |  | — | see `A18` |  | Chưa khớp tự động | QC |
-| `A12.05` | danh-sach-btvn | `Atom/Toast` Type=Success | `I7074:399738;2167:28344` Description | — |  |  | Khớp một phần | QC |
-| `A12.06` | danh-sach-kiem-tra |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A12.07` | tai-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A12.01` | tab-btvn-kiem-tra |  |  | — |  |  | Chưa sync | QC |
+| `A12.02` | o-tim-kiem |  |  | — |  |  | Chưa sync | QC |
+| `A12.03` | card-bai |  |  | — |  |  | Chưa sync | QC |
+| `A12.04` | nut-dieu-huong-cham-bai |  |  | — | see `A18` |  | Chưa sync | QC |
+| `A12.05` | danh-sach-btvn |  |  | — |  |  | Chưa sync | QC |
+| `A12.06` | danh-sach-kiem-tra |  |  | — |  |  | Chưa sync | QC |
+| `A12.07` | tai-du-lieu |  |  | — |  |  | Chưa sync | QC |
 
 ### `A13` Khối Tổng Quan
 
-Frame: `GV-LOP-040100`, `GV-LOP-040110`, `GV-LOP-040200`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A13.01` | da-cham-k-tra | `Thẻ chỉ số` Kiểu=Chuẩn | `4324:85934` Thẻ chỉ số | — |  | `TC40` | Khớp | QC |
-| `A13.02` | k-tra-da-giao | `Thẻ chỉ số` Kiểu=Chuẩn | `4324:85935` Thẻ chỉ số | — |  | `TC40` | Khớp | QC |
-| `A13.03` | diem-k-tra | `Thẻ chỉ số` Kiểu=Chuẩn | `4324:85936` Thẻ chỉ số | — |  | `TC39` | Khớp | QC |
-| `A13.04` | da-cham-btvn | `Thẻ chỉ số` Kiểu=Chuẩn | `4324:85937` Thẻ chỉ số | — |  |  | Khớp | QC |
-| `A13.05` | ti-le-lam-btvn | `Thẻ chỉ số` Kiểu=Chuẩn | `4324:85938` Thẻ chỉ số | — |  |  | Khớp | QC |
-| `A13.06` | diem-btvn | `Thẻ chỉ số` Kiểu=Chuẩn | `4324:85939` Thẻ chỉ số | — |  |  | Khớp | QC |
-| `A13.07` | icon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A13.01` | da-cham-k-tra |  |  | — |  | `TC40` | Chưa sync | QC |
+| `A13.02` | k-tra-da-giao |  |  | — |  | `TC40` | Chưa sync | QC |
+| `A13.03` | diem-k-tra |  |  | — |  | `TC39` | Chưa sync | QC |
+| `A13.04` | da-cham-btvn |  |  | — |  |  | Chưa sync | QC |
+| `A13.05` | ti-le-lam-btvn |  |  | — |  |  | Chưa sync | QC |
+| `A13.06` | diem-btvn |  |  | — |  |  | Chưa sync | QC |
+| `A13.07` | icon |  |  | — |  |  | Chưa sync | QC |
 
 ### `A14` Tab, badge và card bài
 
-Frame: `GV-LOP-040200` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A14.01` | badge-tab |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A14.02` | nhan-trang-thai-btvn | `Trạng thái nộp bài và điểm`  | `4324:99813` Trạng thái nộp bài và điểm | — |  |  | Khớp | QC |
-| `A14.03` | nhan-trang-thai-kiem-tra | `Trạng thái nộp bài và điểm`  | `4324:99813` Trạng thái nộp bài và điểm | — |  |  | Khớp | QC |
-| `A14.04` | vong-so-da-nop |  | `4324:86350` Tabs Navigation | — | governed-by `REQ02` | `TC43` | Khớp | QC |
-| `A14.05` | vong-ty-le-cham |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A14.06` | mo-ta |  | `4324:99744` Mô tả | — |  |  | Khớp | QC |
+| `A14.01` | badge-tab |  |  | — |  |  | Chưa sync | QC |
+| `A14.02` | nhan-trang-thai-btvn |  |  | — |  |  | Chưa sync | QC |
+| `A14.03` | nhan-trang-thai-kiem-tra |  |  | — |  |  | Chưa sync | QC |
+| `A14.04` | vong-so-da-nop |  |  | — | governed-by `REQ02` | `TC43` | Chưa sync | QC |
+| `A14.05` | vong-ty-le-cham |  |  | — |  |  | Chưa sync | QC |
+| `A14.06` | mo-ta |  |  | — |  |  | Chưa sync | QC |
 
 ### `A15` Bảng kết quả học viên
 
-Frame: `GV-LOP-040100`, `GV-LOP-040200`, `GV-LOP-040201`, `GV-LOP-040205` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A15.01` | diem-so |  | `4324:85946` Điểm số | — | governed-by `REQ07` |  | Khớp | QC |
-| `A15.02` | ten-hoc-vien |  | `4324:85948` Tên học viên | — | governed-by `REQ02` |  | Khớp | QC |
-| `A15.03` | thoi-gian-lam-bai |  | `4324:85950` Thời gian làm bài | — |  |  | Khớp | QC |
-| `A15.04` | nop-bai |  | `4324:85952` nộp bài | — |  | `TC47a` | Khớp | QC |
-| `A15.05` | so-cau-bo-qua |  | `4324:85954` số câu bỏ qua | — |  |  | Khớp | QC |
-| `A15.06` | bam-dong | `Trạng thái nộp bài và điểm`  | `4324:98888` Trạng thái nộp bài và điểm | — |  | `TC47a` | Khớp một phần | QC |
-| `A15.07` | thiet-lap-lai-nop-bai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A15.01` | diem-so |  |  | — | governed-by `REQ07` |  | Chưa sync | QC |
+| `A15.02` | ten-hoc-vien |  |  | — | governed-by `REQ02` |  | Chưa sync | QC |
+| `A15.03` | thoi-gian-lam-bai |  |  | — |  |  | Chưa sync | QC |
+| `A15.04` | nop-bai |  |  | — |  | `TC47a` | Chưa sync | QC |
+| `A15.05` | so-cau-bo-qua |  |  | — |  |  | Chưa sync | QC |
+| `A15.06` | bam-dong |  |  | — |  | `TC47a` | Chưa sync | QC |
+| `A15.07` | thiet-lap-lai-nop-bai |  |  | — |  |  | Chưa sync | QC |
 
 ### `A16` Kiểm tra chưa giao — Xem trước đề và Giao bài
 
-Frame: `GV-LOP-040210` (tool đoán:GV-LOP-040211) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:GV-LOP-040211) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A16.01` | xem-truoc-de |  | `5425:276208` GV-LOP-040210 — Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra · Chưa giao (xem trước đề) | — |  |  | Khớp | QC |
-| `A16.02` | nut-giao-bai | `Atom/Button` Type=Primary, Size=Small | `5425:276227` Button · Giao bài | — | opens `A16` |  | Khớp | QC |
-| `A16.03` | dieu-kien-giao |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A16.04` | giao-thanh-cong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A16.01` | xem-truoc-de |  |  | — |  |  | Chưa sync | QC |
+| `A16.02` | nut-giao-bai |  |  | — | opens `A16` |  | Chưa sync | QC |
+| `A16.03` | dieu-kien-giao |  |  | — |  |  | Chưa sync | QC |
+| `A16.04` | giao-thanh-cong |  |  | — |  |  | Chưa sync | QC |
 
 ### `A17` Thu hồi bài kiểm tra
 
-Frame: `GV-LOP-040200`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210` (tool đoán:GV-LOP-040221) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:GV-LOP-040221) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A17.01` | nut-thu-hoi | `Atom/Button` Type=Danger, Size=Small | `4324:99732` Button · Thu hồi | — | opens `A17` |  | Khớp | QC |
-| `A17.02` | thu-hoi-thanh-cong | `Trạng thái nộp bài và điểm`  | `4324:99813` Trạng thái nộp bài và điểm | — |  |  | Khớp | QC |
+| `A17.01` | nut-thu-hoi |  |  | — | opens `A17` |  | Chưa sync | QC |
+| `A17.02` | thu-hoi-thanh-cong |  |  | — |  |  | Chưa sync | QC |
 
 ### `A18` Màn chấm bài — Khung màn và điều hướng
 
-Frame: `GV-LOP-040100`, `GV-LOP-040200`, `GV-LOP-040320` (tool đoán:GV-LOP-040320) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:GV-LOP-040320) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A18.01` | diem-vao-tu-card-bai |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A18.02` | diem-vao-tu-dong-hoc-vien |  | `4324:98884` Molecule/Ô định danh | — |  |  | Khớp | QC |
-| `A18.03` | bai-bo-sung-nhieu-bai-nguon |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A18.04` | tieu-de | `Thẻ chỉ số` Kiểu=Chuẩn | `I4324:85934;3004:47242` Tiêu đề | — |  | `TC55` | Khớp | QC |
-| `A18.05` | da-cham-va-sua-bai-tren-lop |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A18.06` | vung-trai |  | `5750:77089` Vùng trái · Chi tiết câu | — |  |  | Khớp một phần | QC |
-| `A18.07` | vung-phai |  | `4324:99321` Mô tả | — |  |  | Khớp một phần | QC |
+| `A18.01` | diem-vao-tu-card-bai |  |  | — |  |  | Chưa sync | QC |
+| `A18.02` | diem-vao-tu-dong-hoc-vien |  |  | — |  |  | Chưa sync | QC |
+| `A18.03` | bai-bo-sung-nhieu-bai-nguon |  |  | — |  |  | Chưa sync | QC |
+| `A18.04` | tieu-de |  |  | — |  | `TC55` | Chưa sync | QC |
+| `A18.05` | da-cham-va-sua-bai-tren-lop |  |  | — |  |  | Chưa sync | QC |
+| `A18.06` | vung-trai |  |  | — |  |  | Chưa sync | QC |
+| `A18.07` | vung-phai |  |  | — |  |  | Chưa sync | QC |
 
 ### `A19` Danh sách Câu hỏi và trạng thái chấm
 
-Frame: `GV-LOP-040100`, `GV-LOP-040200`, `GV-LOP-040201`, `GV-LOP-040205`, `GV-LOP-040320` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A19.01` | icon-trang-thai | `Trạng thái nộp bài và điểm`  | `4324:99245` Trạng thái nộp bài và điểm | — |  |  | Khớp | QC |
-| `A19.02` | nhan-loai-cau | `Atom/Badge`  | `5750:77214` Atom/Badge | — | governed-by `REQ05` |  | Khớp một phần | QC |
-| `A19.03` | de-bai |  | `4324:85942` Tiêu đề bài tập | — |  |  | Khớp một phần | QC |
-| `A19.04` | vong-ty-le-diem |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A19.05` | bo-loc-trang-thai |  | `4324:98889` Column 3: Trạng thái | — |  |  | Khớp | QC |
+| `A19.01` | icon-trang-thai |  |  | — |  |  | Chưa sync | QC |
+| `A19.02` | nhan-loai-cau |  |  | — | governed-by `REQ05` |  | Chưa sync | QC |
+| `A19.03` | de-bai |  |  | — |  |  | Chưa sync | QC |
+| `A19.04` | vong-ty-le-diem |  |  | — |  |  | Chưa sync | QC |
+| `A19.05` | bo-loc-trang-thai |  |  | — |  |  | Chưa sync | QC |
 
 ### `A20` Chi tiết câu hỏi và bộ lọc học viên
 
-Frame: `GV-LOP-040100`, `GV-LOP-040320` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A20.01` | cau-n |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A20.02` | noi-dung-cau |  | `5750:77211` Nội dung câu | — |  |  | Khớp một phần | QC |
-| `A20.03` | chua-cham | `Trạng thái nộp bài và điểm`  | `4324:99269` Trạng thái nộp bài và điểm | — |  | `TC67` | Khớp | QC |
-| `A20.04` | hien-ten |  |  | — |  | `TC68` | Chưa khớp tự động | QC |
-| `A20.05` | hoc-vien |  | `4324:98884` Molecule/Ô định danh | — |  | `TC69` | Khớp | QC |
-| `A20.06` | the-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A20.01` | cau-n |  |  | — |  |  | Chưa sync | QC |
+| `A20.02` | noi-dung-cau |  |  | — |  |  | Chưa sync | QC |
+| `A20.03` | chua-cham |  |  | — |  | `TC67` | Chưa sync | QC |
+| `A20.04` | hien-ten |  |  | — |  | `TC68` | Chưa sync | QC |
+| `A20.05` | hoc-vien |  |  | — |  | `TC69` | Chưa sync | QC |
+| `A20.06` | the-hoc-vien |  |  | — |  |  | Chưa sync | QC |
 
 ### `A21` Thẻ học viên — điểm và đáp án
 
-Frame: `GV-LOP-040200`, `GV-LOP-040201` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A21.01` | so-thu-tu |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A21.02` | ten-hoc-vien |  | `4324:86254` Tên học viên | — |  |  | Khớp | QC |
-| `A21.03` | nhan-chi-xem |  | `5425:277432` GV-LOP-040201 — Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra · Giáo viên không phụ trách chính (chỉ xem) | — |  | `TC75` | Khớp một phần | QC |
-| `A21.04` | day-diem-0-10 | `Trạng thái nộp bài và điểm`  | `I4324:99448;3304:59609` 9.8 | — |  |  | Khớp | QC |
-| `A21.05` | thu-gon-mo-rong |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A21.06` | dap-an-cua-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A21.07` | trac-nghiem-tu-vung-1-trac-nghiem-cau-5- |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A21.08` | sap-xep-7 |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A21.09` | noi-cot-8 |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A21.10` | noi-22-viet-dang-chu-44 |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A21.11` | ve-4-chon-anh-2-trac-nghiem-hinh-anh-11 |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A21.12` | ghi-am-3-nhap-vai-10 |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A21.13` | hoc-vien-bo-qua-cau |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A21.01` | so-thu-tu |  |  | — |  |  | Chưa sync | QC |
+| `A21.02` | ten-hoc-vien |  |  | — |  |  | Chưa sync | QC |
+| `A21.03` | nhan-chi-xem |  |  | — |  | `TC75` | Chưa sync | QC |
+| `A21.04` | day-diem-0-10 |  |  | — |  |  | Chưa sync | QC |
+| `A21.05` | thu-gon-mo-rong |  |  | — |  |  | Chưa sync | QC |
+| `A21.06` | dap-an-cua-hoc-vien |  |  | — |  |  | Chưa sync | QC |
+| `A21.07` | trac-nghiem-tu-vung-1-trac-nghiem-cau-5- |  |  | — |  |  | Chưa sync | QC |
+| `A21.08` | sap-xep-7 |  |  | — |  |  | Chưa sync | QC |
+| `A21.09` | noi-cot-8 |  |  | — |  |  | Chưa sync | QC |
+| `A21.10` | noi-22-viet-dang-chu-44 |  |  | — |  |  | Chưa sync | QC |
+| `A21.11` | ve-4-chon-anh-2-trac-nghiem-hinh-anh-11 |  |  | — |  |  | Chưa sync | QC |
+| `A21.12` | ghi-am-3-nhap-vai-10 |  |  | — |  |  | Chưa sync | QC |
+| `A21.13` | hoc-vien-bo-qua-cau |  |  | — |  |  | Chưa sync | QC |
 
 ### `A22` Nhận xét của giáo viên
 
-Frame: `GV-LOP-030401` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A22.01` | o-nhan-xet-cua-giao-vien |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A22.02` | icon-micro |  |  | — | opens `A21` | `TC79` | Chưa khớp tự động | QC |
-| `A22.03` | icon-tai-lieu |  |  | — | opens `A22` | `TC80` | Chưa khớp tự động | QC |
-| `A22.04` | chip-file-ghi-am-n-file-anh-n |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A22.05` | icon-sao-chep | `Atom/Toast` Type=Info | `I5425:282992;2167:28354` Title | — |  |  | Khớp | QC |
-| `A22.06` | icon-dan | `Atom/Toast` Type=Info | `I5425:282992;2167:28354` Title | — |  | `TC82` | Khớp | QC |
+| `A22.01` | o-nhan-xet-cua-giao-vien |  |  | — |  |  | Chưa sync | QC |
+| `A22.02` | icon-micro |  |  | — | opens `A21` | `TC79` | Chưa sync | QC |
+| `A22.03` | icon-tai-lieu |  |  | — | opens `A22` | `TC80` | Chưa sync | QC |
+| `A22.04` | chip-file-ghi-am-n-file-anh-n |  |  | — |  |  | Chưa sync | QC |
+| `A22.05` | icon-sao-chep |  |  | — |  |  | Chưa sync | QC |
+| `A22.06` | icon-dan |  |  | — |  | `TC82` | Chưa sync | QC |
 
 ### `A23` Nhận xét chung của câu
 
-Frame: `GV-LOP-030121` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A23.01` | o-nhan-xet-chung |  |  | — |  | `TC87` | Chưa khớp tự động | QC |
-| `A23.02` | xac-nhan-nhap |  |  | — | opens `A23` |  | Chưa khớp tự động | QC |
-| `A23.03` | popup-xac-nhan |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A23.04` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I5292:223058;2514:153363` Atom/Button | — |  | `TC85` | Khớp | QC |
+| `A23.01` | o-nhan-xet-chung |  |  | — |  | `TC87` | Chưa sync | QC |
+| `A23.02` | xac-nhan-nhap |  |  | — | opens `A23` |  | Chưa sync | QC |
+| `A23.03` | popup-xac-nhan |  |  | — |  |  | Chưa sync | QC |
+| `A23.04` | xac-nhan |  |  | — |  | `TC85` | Chưa sync | QC |
 
 ### `A24` Câu hỏi con
 
-Frame: `GV-LOP-030100` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A24.01` | tab-cau-hoi-n |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A24.02` | noi-dung-cau-con |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A24.03` | dap-an-cua-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A24.04` | day-diem-0-10 | `Atom/Badge`  | `4324:21262` Atom/Badge | — |  |  | Khớp | QC |
+| `A24.01` | tab-cau-hoi-n |  |  | — |  |  | Chưa sync | QC |
+| `A24.02` | noi-dung-cau-con |  |  | — |  |  | Chưa sync | QC |
+| `A24.03` | dap-an-cua-hoc-vien |  |  | — |  |  | Chưa sync | QC |
+| `A24.04` | day-diem-0-10 |  |  | — |  |  | Chưa sync | QC |
 
 ### `A25` Nút Đã Chấm và Sửa Bài Trên Lớp
 
-Frame: `GV-LOP-030401` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A25.01` | nut-da-cham-va-sua-bai-tren-lop |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A25.02` | chua-cham-het | `Atom/Toast` Type=Info | `I5425:282992;2167:28354` Title | — |  |  | Khớp | QC |
-| `A25.03` | ghi-nhan |  |  | — |  | `TC92`, `TC94` | Chưa khớp tự động | QC |
-| `A25.04` | chip-nguoi-bam |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A25.01` | nut-da-cham-va-sua-bai-tren-lop |  |  | — |  |  | Chưa sync | QC |
+| `A25.02` | chua-cham-het |  |  | — |  |  | Chưa sync | QC |
+| `A25.03` | ghi-nhan |  |  | — |  | `TC92`, `TC94` | Chưa sync | QC |
+| `A25.04` | chip-nguoi-bam |  |  | — |  |  | Chưa sync | QC |
 
 ### `A26` Tự học — Danh sách bài và bảng thời gian
 
-Frame: `GV-LOP-050100` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A26.01` | chua-co-khoa-tu-hoc |  | `4333:7924` Bảng dữ liệu này đang trống | — |  |  | Khớp | QC |
-| `A26.02` | card-bai |  |  | — |  | `TC96`, `TC100` | Chưa khớp tự động | QC |
-| `A26.03` | tai-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A26.04` | bang-thoi-gian |  |  | — |  | `TC97` | Chưa khớp tự động | QC |
-| `A26.05` | hoc-vien-trong-bang |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A26.06` | vuot-24-gio |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A26.07` | 00-00-00 |  |  | — |  | `TC98`, `TC100` | Chưa khớp tự động | QC |
+| `A26.01` | chua-co-khoa-tu-hoc |  |  | — |  |  | Chưa sync | QC |
+| `A26.02` | card-bai |  |  | — |  | `TC96`, `TC100` | Chưa sync | QC |
+| `A26.03` | tai-du-lieu |  |  | — |  |  | Chưa sync | QC |
+| `A26.04` | bang-thoi-gian |  |  | — |  | `TC97` | Chưa sync | QC |
+| `A26.05` | hoc-vien-trong-bang |  |  | — |  |  | Chưa sync | QC |
+| `A26.06` | vuot-24-gio |  |  | — |  |  | Chưa sync | QC |
+| `A26.07` | 00-00-00 |  |  | — |  | `TC98`, `TC100` | Chưa sync | QC |
 
 ### `A27` Toast phản hồi CRUD
 
-Frame: `GV-LOP-040205` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A27.01` | thanh-cong | `Atom/Toast` Type=Success | `I7074:399738;2167:28343` Title; `I7074:399738;2167:28343` Title | — |  | `TTC01`, `TTC04` | Khớp | QC |
-| `A27.02` | thong-tin | `Card Menu v2 (Test)` Type=Menu phụ, State=Default | `I7074:398953;4901:213780` Card Menu v2 (Test) | — |  | `TTC03` | Khớp | QC |
-| `A27.03` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A27.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
-
-### `F01` (ngoài Body)
-
-Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-LOP-030300`, `GV-LOP-030400`, `GV-LOP-030500`, `GV-LOP-040100`, `GV-LOP-040200` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `4324:16658` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | atom-badge | `Atom/Badge`  | `4324:16676` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | molecule-o-dinh-danh |  | `4324:16677` Molecule/Ô định danh | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | trang-thai-nop-bai-va-diem | `Trạng thái nộp bài và điểm`  | `4324:16681` Trạng thái nộp bài và điểm | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | avatar-name | `AVATAR + Name`  | `4324:16775` AVATAR + Name | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | tag-thoi-gian | `Atom/Tag thời gian`  | `4324:16776` Tag thời gian | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | percent | `PERCENT %`  | `4324:16780` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | component-2 | `Switch Center`  | `4324:19386` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | account | `ACCOUNT` Size=Default | `4324:19388` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | header-vai-tro |  | `4899:187415` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | sidebar-menu-teacher | `MENU - TEACHER`  | `4915:260135` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.12` | atom-label | `Atom/Label`  | `4324:16981` Atom/Label | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.13` | background-border | `Background+Border`  | `4324:16992` Background+Border | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.14` | empty-state-illustration | `Empty State / Illustration` Type=Nền trống | `4324:27520` Empty State / Illustration | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.15` | mini-audio-badge | `Liner Icon`  | `4324:27566` Mini Audio Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.16` | main-large-audio-icon | `Liner Icon`  | `4324:27564` Main Large Audio Icon | — |  |  | Chỉ có trên Figma | Figma |
+| `A27.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC04` | Chưa sync | QC |
+| `A27.02` | thong-tin |  |  | — |  | `TTC03` | Chưa sync | QC |
+| `A27.03` | canh-bao |  |  | — |  |  | Chưa sync | QC |
+| `A27.04` | loi |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -601,7 +570,7 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 - `A12` Khác Figma GV-LOP-040100: Figma chưa có nút điều hướng chấm bài trên card; requirement bổ sung nút này cho `Giáo viên phụ trách chính`.
 - `A14` Khác Figma GV-LOP-040200: Figma chưa có frame card `Chưa giao` đang chọn (xem trước đề) và nút `Giao bài`; hai thành phần này đặc tả theo ICS cũ.
 - `A26` Khác Figma GV-LOP-050100: Figma chỉ có trạng thái chưa có khóa tự học; trạng thái có dữ liệu theo UI của requirement Admin, bỏ các nút thêm.
-- Chưa khớp tự động (74): `A01.01`, `A01.03`, `A01.04`, `A01.05`, `A03.06`, `A03.07`, `A04.02`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A05.01`, `A06.01`, `A06.03`, `A07.04`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A10.02`, `A11.01`, `A11.04`, `A11.05`, `A12.03`, `A12.04`, `A12.06`, `A12.07`, `A13.07`, `A14.01`, `A14.05`, `A15.07`, `A16.03`, `A16.04`, `A18.01`, `A18.03`, `A18.05`, `A19.04`, `A20.01`, `A20.04`, `A20.06`, `A21.01`, `A21.05`, `A21.06`, `A21.07`, `A21.08`, `A21.09`, `A21.10`, `A21.11`, `A21.12`, `A21.13`, `A22.01`, `A22.02`, `A22.03`, `A22.04`, `A23.01`, `A23.02`, `A23.03`, `A24.01`, `A24.02`, `A24.03`, `A25.01`, `A25.03`, `A25.04`, `A26.02`, `A26.03`, `A26.04`, `A26.05`, `A26.06`, `A26.07`, `A27.03`, `A27.04`
+- Chưa sync (148): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A02.01`, `A02.02`, `A02.03`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A09.01`, `A09.02`, `A09.03`, `A10.01`, `A10.02`, `A10.03`, `A11.01`, `A11.02`, `A11.03`, `A11.04`, `A11.05`, `A12.01`, `A12.02`, `A12.03`, `A12.04`, `A12.05`, `A12.06`, `A12.07`, `A13.01`, `A13.02`, `A13.03`, `A13.04`, `A13.05`, `A13.06`, `A13.07`, `A14.01`, `A14.02`, `A14.03`, `A14.04`, `A14.05`, `A14.06`, `A15.01`, `A15.02`, `A15.03`, `A15.04`, `A15.05`, `A15.06`, `A15.07`, `A16.01`, `A16.02`, `A16.03`, `A16.04`, `A17.01`, `A17.02`, `A18.01`, `A18.02`, `A18.03`, `A18.04`, `A18.05`, `A18.06`, `A18.07`, `A19.01`, `A19.02`, `A19.03`, `A19.04`, `A19.05`, `A20.01`, `A20.02`, `A20.03`, `A20.04`, `A20.05`, `A20.06`, `A21.01`, `A21.02`, `A21.03`, `A21.04`, `A21.05`, `A21.06`, `A21.07`, `A21.08`, `A21.09`, `A21.10`, `A21.11`, `A21.12`, `A21.13`, `A22.01`, `A22.02`, `A22.03`, `A22.04`, `A22.05`, `A22.06`, `A23.01`, `A23.02`, `A23.03`, `A23.04`, `A24.01`, `A24.02`, `A24.03`, `A24.04`, `A25.01`, `A25.02`, `A25.03`, `A25.04`, `A26.01`, `A26.02`, `A26.03`, `A26.04`, `A26.05`, `A26.06`, `A26.07`, `A27.01`, `A27.02`, `A27.03`, `A27.04`
 - Frame Figma chưa có requirement (11): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040211`, `GV-LOP-040221`, `GV-LOP-040320`
 - Thiếu prototype link đi vào (7): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-050100`
 - Phân loại cần design duyệt (8): `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040320`, `GV-LOP-050100`

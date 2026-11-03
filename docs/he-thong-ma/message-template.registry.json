@@ -102,15 +102,13 @@
    "nodeId": "2711:68773",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/tin-nhan/danh-sach-mau-tin-nhan",
    "link": "/tin-nhan/danh-sach-mau-tin-nhan",
    "dark": "ADM-TN-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "SB-MT.F01"
-   ]
+   "regions": []
   },
   "ADM-TN-010004": {
    "id": "ADM-TN-010004",
@@ -125,15 +123,13 @@
    "nodeId": "3228:62216",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/tin-nhan/danh-sach-mau-tin-nhan/tin-nhan-moi-noi-dung-trong",
    "link": "/tin-nhan/danh-sach-mau-tin-nhan?state=ADM-TN-010004",
    "dark": "ADM-TN-010004-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-MT.A01"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -141,9 +137,7 @@
    "id": "SB-MT.A01",
    "name": "trang-1-danh-sach-tin-nhan",
    "title": "Trang 1: Danh Sách Tin Nhắn",
-   "screens": [
-    "adm-tn-010004"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-TN-010004"
    ],
@@ -152,217 +146,8 @@
    "requirement": "ship_books/message_template/message_template.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
-  },
-  {
-   "id": "SB-MT.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-tn-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "SB-MT.F01.01",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-tn-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "2711:69075",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-MT.F01.02",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-tn-010000": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:251998",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "tin nhắn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-MT.F01.03",
-     "name": "atom-input",
-     "label": "Atom/Input",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-tn-010000": [
-       {
-        "term": "Atom/Input",
-        "figmaId": "2711:70262",
-        "layer": "Atom/Input",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm kiếm tin nhắn",
-         "State": "Search Compact",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-MT.F01.04",
-     "name": "dropdown",
-     "label": "Dropdown",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-tn-010000": [
-       {
-        "term": "Dropdown",
-        "figmaId": "2711:70264",
-        "layer": "Dropdown",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Dropdown",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trạng thái",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-MT.F01.05",
-     "name": "atom-button",
-     "label": "Atom/Button",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-tn-010000": [
-       {
-        "term": "Atom/Button",
-        "figmaId": "2711:70317",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Khách hàng",
-         "Type": "Outlined Icon",
-         "Size": "XSmall"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-MT.F01.06",
-     "name": "molecule-add-new-bar",
-     "label": "Molecule/Add New Bar",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-tn-010000": [
-       {
-        "term": "Molecule/Add New Bar",
-        "figmaId": "2711:70455",
-        "layer": "Molecule/Add New Bar",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Molecule/Add New Bar",
-        "component": "Molecule/Add New Bar",
-        "variant": {
-         "Icon trái": false,
-         "Nút": "1075:1478",
-         "Placeholder": "Thêm tin nhắn mới",
-         "Type": "Box",
-         "Size": "M",
-         "State": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "items": [],
+   "screensFromItems": []
   }
  ],
  "exceptions": [

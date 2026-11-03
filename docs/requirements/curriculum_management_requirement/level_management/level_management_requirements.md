@@ -2,10 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: CD-CDO-010000 — Danh sách cấp độ
-
-![Figma mới nhất · CD-CDO-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CD-CDO-010000.png)
-
+### Trang 1: Danh sách cấp độ
 ![Trang 1](./images/01-level-list.png)
 
 *Danh sách cấp độ — nhấn để xem ảnh gốc*
@@ -25,10 +22,7 @@
 - Cho phép chuyển hai chiều giữa mọi trạng thái: `Nháp` ↔ `Công khai`, `Nháp` ↔ `Vô hiệu hóa` và `Công khai` ↔ `Vô hiệu hóa`.
 - Chỉ cấp độ ở trạng thái `Công khai` được hiển thị để chọn mới tại feature sử dụng cấp độ.
 
-### Trang 2: CD-CDO-010000 — Form thêm/cập nhật cấp độ
-
-![Figma mới nhất · CD-CDO-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CD-CDO-010000.png)
-
+### Trang 2: Form thêm/cập nhật cấp độ
 - `A02.01` **ID**: Hiển thị trên danh sách. Quy tắc sinh, định dạng, độ dài, tính bắt buộc và khả năng chỉnh sửa chưa được định nghĩa; xem mục `Cần xác nhận`.
 - `A02.02` **Tên cấp độ**: Bắt buộc, không được chỉ chứa khoảng trắng.
 - `A02.03` **Mô tả cấp độ**: Bắt buộc, không được chỉ chứa khoảng trắng.
@@ -44,10 +38,7 @@
 
 ---
 
-### Trang 3: CD-CDO-010000 — Toast phản hồi CRUD
-
-![Figma mới nhất · CD-CDO-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CD-CDO-010000.png)
-
+### Trang 3: Toast phản hồi CRUD
 ![Trang 3](../../images/01-toast-crud.png)
 
 *Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc*

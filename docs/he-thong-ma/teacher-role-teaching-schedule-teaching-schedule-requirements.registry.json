@@ -95,15 +95,13 @@
    "nodeId": "5413:46957",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lich-day/xem-theo-lop",
    "link": "/lich-day/quan-ly-dang-ky-lich?state=GV-LD-010000",
    "dark": "GV-LD-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "TR-TS.A01"
-   ]
+   "regions": []
   },
   "GV-LD-020000": {
    "id": "GV-LD-020000",
@@ -118,17 +116,13 @@
    "nodeId": "5413:49118",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lich-day/quan-ly-dang-ky-lich",
    "link": "/lich-day/quan-ly-dang-ky-lich",
    "dark": "GV-LD-020000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "TR-TS.A02",
-    "TR-TS.F01",
-    "TR-TS.F02"
-   ]
+   "regions": []
   },
   "GV-LD-020010": {
    "id": "GV-LD-020010",
@@ -143,15 +137,13 @@
    "nodeId": "5413:49911",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/gv-ld-020010",
    "link": "/lich-day/quan-ly-dang-ky-lich?popup=GV-LD-020010",
    "dark": "GV-LD-020010-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "TR-TS.A03"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -159,9 +151,7 @@
    "id": "TR-TS.A01",
    "name": "tab-lich-day",
    "title": "Tab Lịch dạy",
-   "screens": [
-    "gv-ld-010000"
-   ],
+   "screens": [],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -176,29 +166,11 @@
      "spec": "Tiêu đề `Lịch Dạy`; tab `Lịch dạy` và `Quản lý đăng ký lịch`. Mặc định mở tab Lịch dạy.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-010000": [
-       {
-        "term": "Lịch Dạy",
-        "figmaId": "5425:257921",
-        "layer": "Sidebar · MENU - TEACHER",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - TEACHER",
-        "component": "MENU - TEACHER",
-        "variant": {
-         "Trang": "Lịch dạy"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tiêu đề / tab"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.02",
@@ -210,11 +182,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tuần đang xem",
-      "dd.MM.yyyy - dd.MM.yyyy"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.03",
@@ -226,10 +195,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Mũi tên trái / phải"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.04",
@@ -241,11 +208,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Cột ngày",
-      "dd.MM"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.05",
@@ -254,25 +218,11 @@
      "spec": "Bật: nhóm lịch theo lớp, mỗi nhóm có thanh tiêu đề mã lớp. Tắt: gom theo ngày, không chia nhóm lớp. Mặc định bật theo frame tham chiếu; quy tắc ghi nhớ lựa chọn giữa các lần mở cần xác nhận.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-010000": [
-       {
-        "term": "Theo lớp",
-        "figmaId": "5413:53455",
-        "layer": "Value",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.06",
@@ -284,10 +234,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thanh nhóm lớp"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.07",
@@ -302,11 +250,8 @@
       "TR-TS.TC03",
       "TR-TS.TC8a"
      ],
-     "missingTerms": [
-      "Thẻ lịch",
-      "hh:mm am/pm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.08",
@@ -318,10 +263,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Sắp xếp thẻ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.09",
@@ -333,11 +276,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Ô không có lịch",
-      "+"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.10",
@@ -349,10 +289,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Nhiều lịch trong ngày"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.11",
@@ -364,10 +302,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Viền thẻ tại menu này"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.12",
@@ -381,11 +317,8 @@
      "testcases": [
       "TR-TS.TC7a"
      ],
-     "missingTerms": [
-      "Lịch Hủy bỏ",
-      "Hủy bỏ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.13",
@@ -397,10 +330,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Trạng thái lịch"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.14",
@@ -409,23 +340,7 @@
      "spec": "Viền xanh lá không chứng minh đã Hoàn thành hay đã được tính lương. Hoàn thành qua luồng Bài học và lịch được gắn mới làm phát sinh lương theo requirement đã chốt.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-010000": [
-       {
-        "term": "Lương",
-        "figmaId": "I5425:257921;4901:212752;2245:87764",
-        "layer": "Icon",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Icon",
-        "component": "ICON MENU",
-        "variant": {
-         "ICON MENU": "Lương"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "TR-TS.TC07",
@@ -434,7 +349,7 @@
       "TR-TS.TC8a"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A01.15",
@@ -446,20 +361,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Khác màn quản lý lịch lớp"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "TR-TS.A02",
    "name": "tab-quan-ly-dang-ky-lich",
    "title": "Tab Quản lý đăng ký lịch",
-   "screens": [
-    "gv-ld-020000"
-   ],
+   "screens": [],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -477,10 +389,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Cột thứ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A02.02",
@@ -489,27 +399,11 @@
      "spec": "Sáng `07h30 - 12h00`, Chiều `14h00 - 18h00`, Tối `18h00 - 23h00`. Mỗi cặp thứ–buổi là một ô, tối đa 21 ô.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "07h30 - 12h00",
-        "figmaId": "5413:49209",
-        "layer": "07h30 - 12h00",
-        "confidence": "cao",
-        "region": "Frame 1171274925",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Hàng buổi"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A02.03",
@@ -527,11 +421,8 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [
-      "Ô chưa đăng ký",
-      "Đăng ký khung giờ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A02.04",
@@ -540,25 +431,11 @@
      "spec": "Checkbox tick, nền cam, ghi chú ngắn nếu có và icon bút. Hover hiện ghi chú đầy đủ; không dùng câu hướng dẫn tooltip trên ảnh làm nội dung ghi chú.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "Ô đã đăng ký",
-        "figmaId": "5413:49274",
-        "layer": "Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này",
-        "confidence": "thap",
-        "region": "Frame 1171274925",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A02.05",
@@ -578,10 +455,8 @@
      "testcases": [
       "TR-TS.TC12"
      ],
-     "missingTerms": [
-      "Icon bút"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A02.06",
@@ -595,10 +470,8 @@
      "testcases": [
       "TR-TS.TC12"
      ],
-     "missingTerms": [
-      "Bỏ tick một ô"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A02.07",
@@ -607,27 +480,13 @@
      "spec": "**Đã chốt:** chọn các ô còn trống với khung giờ trọn buổi; giữ nguyên giờ và ghi chú của ô đã đăng ký, không ghi đè bằng trọn buổi.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "Fulltime",
-        "figmaId": "5413:49187",
-        "layer": "Fulltime",
-        "confidence": "cao",
-        "region": "Frame 1171274925",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "TR-TS.TC13"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A02.08",
@@ -636,27 +495,13 @@
      "spec": "**Đã chốt:** bỏ chọn tất cả ô đang được chọn trong nháp. Chỉ lưu chính thức khi bấm `Cập nhật`; không tự sửa lịch dạy đã xếp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "Fulltime",
-        "figmaId": "5413:49187",
-        "layer": "Fulltime",
-        "confidence": "cao",
-        "region": "Frame 1171274925",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "TR-TS.TC14a"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A02.09",
@@ -665,25 +510,11 @@
      "spec": "Tick khi đủ 21 ô được chọn, kể cả có ô được chỉnh giờ riêng; bỏ chọn một ô thì tự bỏ tick. Fulltime tại đây là chọn đủ ô, không dùng để thay thế dữ liệu giờ cụ thể từng ô. Chủ động bỏ tick Fulltime sẽ bỏ chọn toàn bộ ô đang được chọn trong nháp; chưa cập nhật backend.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "Fulltime",
-        "figmaId": "5413:49187",
-        "layer": "Fulltime",
-        "confidence": "cao",
-        "region": "Frame 1171274925",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A02.10",
@@ -692,34 +523,13 @@
      "spec": "Trường văn bản dưới lưới, không bắt buộc, độc lập với ghi chú từng ô. Placeholder `gửi tới người phỏng vấn` trên Figma là nội dung mẫu chưa phù hợp ngữ cảnh, cần thống nhất lại nhãn gợi ý.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "gửi tới người phỏng vấn",
-        "figmaId": "I5413:49270;2808:42324",
-        "layer": "Tìm nội dung...",
-        "confidence": "thap",
-        "region": "Frame 1171274925",
-        "owner": "Textarea · Ghi chú",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Thêm ghi chú muốn gửi tới người phỏng vấn (nếu có)",
-         "State": "Textarea",
-         "Kiểu": "M"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "TR-TS.TC10"
      ],
-     "missingTerms": [
-      "Ghi chú chung"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A02.11",
@@ -728,25 +538,7 @@
      "spec": "Lưu toàn bộ nháp gồm tập ô, giờ, ghi chú từng ô và ghi chú chung. Chỉ sau lưu thành công dữ liệu mới thành lịch đăng ký chính thức.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "Cập nhật",
-        "figmaId": "5413:49272",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": "Frame 1171274925",
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Cập nhật",
-         "Type": "Warning",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "TR-TS.TC14",
@@ -758,110 +550,16 @@
       "TR-TS.TC20a"
      ],
      "missingTerms": [],
-     "status": "khop"
-    },
-    {
-     "id": "TR-TS.A02.12",
-     "name": "atom-side-tab",
-     "label": "Atom/Side Tab",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "Atom/Side Tab",
-        "figmaId": "5413:49180",
-        "layer": "Atom/Side Tab",
-        "confidence": "cao",
-        "region": "Frame 1171274925",
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "TR-TS.A02.13",
-     "name": "liner-icon",
-     "label": "Liner Icon",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "Liner Icon",
-        "figmaId": "5413:49268",
-        "layer": "Liner Icon",
-        "confidence": "cao",
-        "region": "Frame 1171274925",
-        "owner": "Liner Icon",
-        "component": "Liner Icon",
-        "variant": {
-         "Property 1": "Ghi chú"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "TR-TS.A02.14",
-     "name": "textarea-ghi-chu",
-     "label": "Textarea · Ghi chú",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "Textarea · Ghi chú",
-        "figmaId": "5413:49270",
-        "layer": "Textarea · Ghi chú",
-        "confidence": "cao",
-        "region": "Frame 1171274925",
-        "owner": "Textarea · Ghi chú",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Thêm ghi chú muốn gửi tới người phỏng vấn (nếu có)",
-         "State": "Textarea",
-         "Kiểu": "M"
-        },
-        "inCode": false
-       }
-      ]
-     }
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "TR-TS.A03",
    "name": "popup-dang-ky-khung-gio",
    "title": "Popup Đăng ký khung giờ",
-   "screens": [
-    "gv-ld-020010"
-   ],
+   "screens": [],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -876,44 +574,11 @@
      "spec": "`Đăng ký khung giờ`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020010": [
-       {
-        "term": "Tiêu đề",
-        "figmaId": "I5413:49912;2514:153340",
-        "layer": "Tiêu đề",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Popup/Header",
-        "component": "Popup/Header",
-        "variant": {
-         "Close": "Yes",
-         "Description": "Yes",
-         "Icon": "No"
-        },
-        "inCode": false
-       },
-       {
-        "term": "Đăng ký khung giờ",
-        "figmaId": "I5413:49912;2514:153341",
-        "layer": "Title",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Popup/Header",
-        "component": "Popup/Header",
-        "variant": {
-         "Close": "Yes",
-         "Description": "Yes",
-         "Icon": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A03.02",
@@ -922,33 +587,13 @@
      "spec": "Đúng thứ, buổi và khung tương ứng ô đã bấm, ví dụ `Thứ 3 · Buổi chiều (14h00 – 18h00)`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020010": [
-       {
-        "term": "Thứ 3 · Buổi chiều (14h00 – 18h00)",
-        "figmaId": "I5413:49912;2514:153342",
-        "layer": "Description",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Popup/Header",
-        "component": "Popup/Header",
-        "variant": {
-         "Close": "Yes",
-         "Description": "Yes",
-         "Icon": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "TR-TS.TC21"
      ],
-     "missingTerms": [
-      "Dòng phụ"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A03.03",
@@ -957,46 +602,11 @@
      "spec": "Bắt buộc. Chọn các mốc cách nhau 30 phút, nằm trong khung của buổi. Buổi sáng gồm các mốc 07:30–12:00, chiều 14:00–18:00, tối 18:00–23:00. Giờ kết thúc phải lớn hơn giờ bắt đầu.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020010": [
-       {
-        "term": "Giờ bắt đầu",
-        "figmaId": "5413:49917",
-        "layer": "Atom/Label",
-        "confidence": "cao",
-        "region": "Khung giờ",
-        "owner": "Atom/Label",
-        "component": "Atom/Label",
-        "variant": {
-         "Required": false,
-         "Icon": "1053:2224",
-         "Label": "Giờ bắt đầu",
-         "Có icon": "Yes"
-        },
-        "inCode": false
-       },
-       {
-        "term": "Giờ kết thúc",
-        "figmaId": "5413:49920",
-        "layer": "Atom/Label",
-        "confidence": "cao",
-        "region": "Khung giờ",
-        "owner": "Atom/Label",
-        "component": "Atom/Label",
-        "variant": {
-         "Required": false,
-         "Icon": "1053:2224",
-         "Label": "Giờ kết thúc",
-         "Có icon": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A03.04",
@@ -1005,33 +615,14 @@
      "spec": "Không bắt buộc, chỉ thuộc ô đang sửa; không ghi đè ghi chú chung. Giới hạn ký tự cần xác nhận.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020010": [
-       {
-        "term": "Ghi chú",
-        "figmaId": "5413:49924",
-        "layer": "Atom/Label",
-        "confidence": "cao",
-        "region": "Ghi chú",
-        "owner": "Atom/Label",
-        "component": "Atom/Label",
-        "variant": {
-         "Required": false,
-         "Icon": "1832:36661",
-         "Label": "Ghi chú",
-         "Có icon": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "TR-TS.TC24",
       "TR-TS.TC25"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A03.05",
@@ -1040,29 +631,11 @@
      "spec": "Đóng popup, không thay đổi nháp của ô; ô mới vẫn trống, ô đang sửa giữ giờ/ghi chú trước khi mở.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020010": [
-       {
-        "term": "Huỷ",
-        "figmaId": "I5413:49926;2514:153361",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Huỷ",
-         "Type": "Secondary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-TS.A03.06",
@@ -1071,180 +644,17 @@
      "spec": "Validate và lưu vào nháp lưới; chưa ghi backend. Nếu thiếu giờ hoặc khoảng không hợp lệ, báo lỗi tại field và giữ popup để sửa.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-020010": [
-       {
-        "term": "Xác nhận",
-        "figmaId": "I5413:49926;2514:153363",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Xác nhận",
-         "Type": "Primary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "TR-TS.TC22",
       "TR-TS.TC25"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "TR-TS.F01",
-   "name": "header",
-   "title": "Header",
-   "screens": [
-    "gv-ld-020000"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "TR-TS.F01.01",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "5425:258303",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": "Header",
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Giáo Viên",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "TR-TS.F01.02",
-     "name": "component-2",
-     "label": "Component 2",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "Component 2",
-        "figmaId": "5425:258305",
-        "layer": "Component 2",
-        "confidence": "cao",
-        "region": "Header",
-        "owner": "Component 2",
-        "component": "Switch Center",
-        "variant": {
-         "Property 1": "Sakumi"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "TR-TS.F01.03",
-     "name": "header-vai-tro",
-     "label": "Header/Vai trò",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "Header/Vai trò",
-        "figmaId": "5425:258306",
-        "layer": "Header/Vai trò",
-        "confidence": "cao",
-        "region": "Header",
-        "owner": "Header/Vai trò",
-        "component": null,
-        "variant": {
-         "Vai trò": "Giáo viên"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  },
-  {
-   "id": "TR-TS.F02",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "gv-ld-020000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "TR-TS.F02.01",
-     "name": "sidebar-menu-teacher",
-     "label": "Sidebar · MENU - TEACHER",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-ld-020000": [
-       {
-        "term": "Sidebar · MENU - TEACHER",
-        "figmaId": "5425:258114",
-        "layer": "Sidebar · MENU - TEACHER",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - TEACHER",
-        "component": "MENU - TEACHER",
-        "variant": {
-         "Trang": "Lịch dạy"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

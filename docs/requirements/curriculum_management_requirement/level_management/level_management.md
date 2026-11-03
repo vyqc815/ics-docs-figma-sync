@@ -2,10 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: CD-CDO-010000 — Trang danh sách cấp độ
-
-![Figma mới nhất · CD-CDO-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CD-CDO-010000.png)
-
+### Trang 1: Trang danh sách cấp độ
 ![Trang 1](./images/01-level-list.png)
 
 *Danh sách cấp độ — nhấn để xem ảnh gốc*
@@ -28,20 +25,14 @@
 - `A01.04` **Mã cấp độ**: Không bắt buộc lúc tạo mới, mặc định rỗng. Bắt buộc phải có giá trị trước khi cấp độ được chuyển sang `Công Khai`. Được phép trùng với cấp độ khác (Mã cấp độ không phải định danh như ID, hệ thống không kiểm tra trùng). Hệ thống tự cắt khoảng trắng đầu/cuối trước khi lưu. Không ràng buộc định dạng; lưu và hiển thị đúng chữ hoa/thường như CD nhập (phân biệt hoa thường). Chỉ sửa được khi cấp độ đang `Nháp`; bị khóa, không được sửa kể từ khi cấp độ được `Công Khai`. Là mã tham chiếu hiển thị mà feature `Quản lý danh mục` dùng khi chọn cấp độ cho khóa học, ví dụ `HSK1`, `HSK2`.
 - `A01.05` **Trạng thái**: 3 trạng thái `Nháp` (mặc định) / `Công Khai` / `Vô hiệu hóa`, theo rule chuyển trạng thái ở REQ02. Menu đổi trạng thái: đang `Nháp` chỉ hiện `Công Khai`; đang `Công Khai` chỉ hiện `Vô hiệu hóa`; đang `Vô hiệu hóa` chỉ hiện `Công Khai`.
 
-### Trang 2: CD-CDO-010000 — Thanh "Thêm cấp độ mới"
-
-![Figma mới nhất · CD-CDO-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CD-CDO-010000.png)
-
+### Trang 2: Thanh "Thêm cấp độ mới"
 **Điểm cần lưu ý:**
 
 - Chỉ có **1 input**: `Tên cấp độ`, giống danh mục. Nhấn nút `+` / phím `Enter` để tạo.
 - `Mô tả cấp độ` và `Mã cấp độ` để trống lúc tạo nhanh, có placeholder, bổ sung sau inline hoặc ngay tại popup Kích hoạt công khai (đối với Mã cấp độ).
 - `ID` tự sinh 2 chữ số, duy nhất; `Trạng thái` mặc định `Nháp`.
 
-### Trang 3: CD-CDO-010000 — Xóa cấp độ
-
-![Figma mới nhất · CD-CDO-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CD-CDO-010000.png)
-
+### Trang 3: Xóa cấp độ
 **Mô tả:**
 
 - Mỗi dòng cấp độ có thao tác `Xóa`. **Chỉ bấm được khi cấp độ đang `Nháp`**; cấp độ `Công Khai` / `Vô hiệu hóa`: `Xóa` hiện mờ, hover hiện tooltip `Chỉ xóa được cấp độ ở trạng thái Nháp. Chuyển Vô hiệu hóa nếu muốn ngừng dùng.`
@@ -57,10 +48,7 @@
 - FE chỉ disable `Xóa` theo trạng thái (không phải `Nháp`); backend luôn kiểm tra lại trạng thái và tham chiếu tại thời điểm xóa, FE chỉ hiển thị Toast theo kết quả backend trả về.
 - Cấp độ `Nháp` không thể đang được sử dụng vì chỉ cấp độ `Công Khai` mới được gắn vào khóa học (cùng rule với danh mục).
 
-### Trang 4: CD-CDO-010010 — Popup Kích hoạt công khai cấp độ
-
-![Figma mới nhất · CD-CDO-010010](https://ics-figma-demo.vercel.app/api/figma-frame/CD-CDO-010010.png)
-
+### Trang 4: Popup Kích hoạt công khai cấp độ
 ![Trang 4](../category_management/images/07-category-publish.png)
 
 *Popup Kích hoạt công khai cấp độ — giống Kích hoạt công khai danh mục - file `category_management.md`*

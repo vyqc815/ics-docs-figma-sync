@@ -23,36 +23,6 @@
 
 ## 4. Khu vực và item
 
-### `F01` (ngoài Body)
-
-Frame: `CD-TL-010000`, `CD-TL-010100` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | sidebar-menu-cd | `MENU - CD`  | `6133:123478` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | account | `ACCOUNT` Size=Default | `6133:123527` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | component-2 | `Switch Center`  | `6133:123528` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | atom-badge | `Atom/Badge`  | `6133:126656` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | atom-tab | `Atom/Tab` State=Active, Kiểu=Gạch chân | `6133:124176` Atom/Tab | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F02` Card · Văn bản
-
-Frame: `CD-TL-010000`, `CD-TL-010100` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F02.01` | atom-button | `Atom/Button` Type=Secondary, Size=Medium | `6133:124210` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F03` Card · Giọng & kết quả
-
-Frame: `CD-TL-010000`, `CD-TL-010100` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F03.01` | atom-tab | `Atom/Tab` State=Active, Kiểu=Switch | `6133:124218` Atom/Tab | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.02` | atom-audio-player | `Atom/Audio Player` State=Chưa phát | `6133:124275` Atom/Audio Player | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.03` | atom-button | `Atom/Button` Type=Secondary, Size=Medium | `6133:124285` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
-
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

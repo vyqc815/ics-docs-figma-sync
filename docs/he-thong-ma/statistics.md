@@ -24,40 +24,31 @@ Requirement: `class_handler_support/statistics/statistics.md` — [Phụ trách 
 
 ### `A01` Trang 1: Thống kê
 
-Frame: `CH-TK-010000` (tool đoán:CH-TK-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:CH-TK-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | trung-tam | `DD/Molecule/Trigger` Size=XS, State=Default | `6935:381681` Filter · Trung tâm | — |  | `TC11` | Khớp | QC |
-| `A01.02` | thoi-gian-nut-hien-thi-gia-tri-dang-chon | `DD/Molecule/Trigger` Size=XS, State=Active | `3857:82088` Filter · Tháng này | — |  |  | Khớp | QC |
-| `A01.03` | trinh-do | `DD/Molecule/Trigger` Size=XS, State=Default | `3857:82108` Filter · Trình độ | — |  | `TC01`, `TC04`, `TC07` | Khớp | QC |
-| `A01.04` | hoc-ky | `DD/Molecule/Trigger` Size=XS, State=Default | `3857:82120` Filter · Học kỳ | — |  | `TC01`, `TC04`, `TC07` | Khớp | QC |
-| `A01.05` | kpi | `Card Menu v2 (Test)` Type=Chính, State=Default; `Thẻ chỉ số` Kiểu=Chuẩn | `I4969:25446;4901:227392` Card Menu; `3857:82943` Thẻ chỉ số · KPI Cá Nhân | — |  |  | Khớp | QC |
-| `A01.06` | kpi | `Card Menu v2 (Test)` Type=Chính, State=Default; `Thẻ chỉ số` Kiểu=Chuẩn | `I4969:25446;4901:227392` Card Menu; `3857:82944` Thẻ chỉ số · Tiền KPI Lớp | — |  |  | Khớp | QC |
-| `A01.07` | lop | `Thẻ chỉ số` Kiểu=Chuẩn | `3857:82155` Lớp; `3857:82918` Thẻ chỉ số · Số Lớp Bắt Đầu | — |  |  | Khớp | QC |
-| `A01.08` | lop | `Thẻ chỉ số` Kiểu=Chuẩn | `3857:82155` Lớp; `3857:82919` Thẻ chỉ số · Số Lớp Kết Thúc | — |  |  | Khớp | QC |
-| `A01.09` | lop | `Thẻ chỉ số` Kiểu=Chuẩn | `3857:82155` Lớp; `3857:82920` Thẻ chỉ số · Tổng Số Lớp | — |  |  | Khớp | QC |
-| `A01.10` | ti-le | `Thẻ chỉ số` Kiểu=Chuẩn | `3857:82184` Tỉ lệ; `3857:82202` Thẻ chỉ số · Đi Học | — |  | `TC07`, `TC09` | Khớp | QC |
-| `A01.11` | ti-le | `Thẻ chỉ số` Kiểu=Chuẩn | `3857:82184` Tỉ lệ; `3857:82890` Thẻ chỉ số · Bài Tập Về Nhà | — |  | `TC07`, `TC09` | Khớp | QC |
-| `A01.12` | ti-le | `Thẻ chỉ số` Kiểu=Chuẩn | `3857:82184` Tỉ lệ; `3857:82899` Thẻ chỉ số · Lên Kỳ | — |  | `TC07`, `TC09` | Khớp | QC |
-| `A01.13` | doanh-thu | `Thẻ chỉ số` Kiểu=Chuẩn | `3857:82212` Doanh thu; `3857:82968` Thẻ chỉ số · Tổng Doanh Thu Lớp | — |  | `TC03`, `TC07`, `TC09` | Khớp | QC |
-| `A01.14` | doanh-thu | `Thẻ chỉ số` Kiểu=Chuẩn | `3857:82212` Doanh thu; `3857:82969` Thẻ chỉ số · Doanh Thu Trung Bình | — |  | `TC03`, `TC07`, `TC09` | Khớp | QC |
-| `A01.15` | sidebar-menu-class-handler | `MENU - CLASS HANDLER`  | `4969:25446` Sidebar · MENU - CLASS HANDLER | — |  |  | Chỉ có trên Figma | Figma |
+| `A01.01` | trung-tam |  |  | — |  | `TC11` | Chưa sync | QC |
+| `A01.02` | thoi-gian-nut-hien-thi-gia-tri-dang-chon |  |  | — |  |  | Chưa sync | QC |
+| `A01.03` | trinh-do |  |  | — |  | `TC01`, `TC04`, `TC07` | Chưa sync | QC |
+| `A01.04` | hoc-ky |  |  | — |  | `TC01`, `TC04`, `TC07` | Chưa sync | QC |
+| `A01.05` | kpi |  |  | — |  |  | Chưa sync | QC |
+| `A01.06` | kpi |  |  | — |  |  | Chưa sync | QC |
+| `A01.07` | lop |  |  | — |  |  | Chưa sync | QC |
+| `A01.08` | lop |  |  | — |  |  | Chưa sync | QC |
+| `A01.09` | lop |  |  | — |  |  | Chưa sync | QC |
+| `A01.10` | ti-le |  |  | — |  | `TC07`, `TC09` | Chưa sync | QC |
+| `A01.11` | ti-le |  |  | — |  | `TC07`, `TC09` | Chưa sync | QC |
+| `A01.12` | ti-le |  |  | — |  | `TC07`, `TC09` | Chưa sync | QC |
+| `A01.13` | doanh-thu |  |  | — |  | `TC03`, `TC07`, `TC09` | Chưa sync | QC |
+| `A01.14` | doanh-thu |  |  | — |  | `TC03`, `TC07`, `TC09` | Chưa sync | QC |
 
 ### `A02` Trang 2: Dropdown Trình độ và Học kỳ
 
-Frame: `CH-TK-010000` (tool đoán:CH-TK-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:CH-TK-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-
-### `F01` Header
-
-Frame: `CH-TK-010000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | account | `ACCOUNT` Size=Default | `3857:81056` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -100,6 +91,7 @@ Frame: `CH-TK-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
+- Chưa sync (14): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.14`
 - Testcase không trỏ REQ (1): `TC10`
 - REQ/EX chưa có testcase (3): `REQ01`, `EX03`, `EX04`
 

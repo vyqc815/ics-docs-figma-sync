@@ -29,115 +29,92 @@ Requirement: `management_requirement/class_management/class_creation_requirement
 
 ### `A01` Popup Thêm lớp học
 
-Frame: `ADM-LOP-010010` (tool đoán:ADM-LOP-010010) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010010) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | lop-khong-chinh-thuc | `Atom/Label`  | `1991:28272` Lớp không chính thức; `3065:60157` Atom/Label | — |  |  | Khớp | QC |
-| `A01.02` | trung-tam | `Atom/Label`  | `4835:162332` Atom/Label; `3065:60154` Atom/Label | — |  | `TC25` | Khớp | QC |
-| `A01.03` | khoa-hoc | `Atom/Label`  | `3065:60154` Atom/Label | — |  | `TC20` | Khớp | QC |
-| `A01.04` | so-buoi |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.05` | loai-lop | `Atom/Label`  | `3065:60157` Atom/Label | — |  |  | Khớp | QC |
-| `A01.06` | ma-lop | `Atom/Label`  | `1991:28284` Atom/Label | — |  | `TC24` | Khớp | QC |
-| `A01.07` | ngay-bat-dau-ngay-ket-thuc | `Atom/Label`  | `1991:28288` Atom/Label | — |  |  | Khớp | QC |
-| `A01.08` | mo-ta | `Atom/Label`  | `1991:28294` Atom/Label | — |  | `TC24` | Khớp | QC |
-| `A01.09` | ghi-chu | `Atom/Label`  | `1991:28297` Atom/Label | — |  |  | Khớp | QC |
-| `A01.10` | link-google-meet |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.11` | phu-trach-chinh | `Atom/Label`  | `1991:28305` Atom/Label | — |  |  | Khớp | QC |
-| `A01.12` | cskh-chinh | `Atom/Label`  | `1991:28382` Atom/Label | — |  |  | Khớp | QC |
-| `A01.13` | them-lich-day | `Atom/Label`  | `1991:28394` Atom/Label | — | opens `A05` |  | Khớp | QC |
-| `A01.14` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167646;2514:153361` Atom/Button | — |  |  | Khớp | QC |
-| `A01.15` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167646;2514:153363` Atom/Button | — |  | `TC24`, `TC25` | Khớp | QC |
+| `A01.01` | lop-khong-chinh-thuc |  |  | — |  |  | Chưa sync | QC |
+| `A01.02` | trung-tam |  |  | — |  | `TC25` | Chưa sync | QC |
+| `A01.03` | khoa-hoc |  |  | — |  | `TC20` | Chưa sync | QC |
+| `A01.04` | so-buoi |  |  | — |  |  | Chưa sync | QC |
+| `A01.05` | loai-lop |  |  | — |  |  | Chưa sync | QC |
+| `A01.06` | ma-lop |  |  | — |  | `TC24` | Chưa sync | QC |
+| `A01.07` | ngay-bat-dau-ngay-ket-thuc |  |  | — |  |  | Chưa sync | QC |
+| `A01.08` | mo-ta |  |  | — |  | `TC24` | Chưa sync | QC |
+| `A01.09` | ghi-chu |  |  | — |  |  | Chưa sync | QC |
+| `A01.10` | link-google-meet |  |  | — |  |  | Chưa sync | QC |
+| `A01.11` | phu-trach-chinh |  |  | — |  |  | Chưa sync | QC |
+| `A01.12` | cskh-chinh |  |  | — |  |  | Chưa sync | QC |
+| `A01.13` | them-lich-day |  |  | — | opens `A05` |  | Chưa sync | QC |
+| `A01.14` | huy |  |  | — |  |  | Chưa sync | QC |
+| `A01.15` | xac-nhan |  |  | — |  | `TC24`, `TC25` | Chưa sync | QC |
 
 ### `A02` Lớp không chính thức
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A03` Khóa học, Số buổi và lịch được sinh
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A04` Loại lớp
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A05` Popup Thêm Lịch Dạy Cố Định
 
-Frame: `ADM-LOP-010020`, `ADM-LOP-010050` (tool đoán:ADM-LOP-010020, ADM-LOP-010050) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010020, ADM-LOP-010050) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A06` Bộ chọn Phụ trách chính / CSKH chính
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A07` Phân quyền tạo lớp và dữ liệu bắt buộc
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A08` Trạng thái sau khi tạo lớp
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A09` Ràng buộc liên quan đến trạng thái Đang học
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A10` Toast phản hồi CRUD
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A10.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
-| `A10.02` | thong-tin |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A10.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
-| `A10.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
-
-### `F01` (ngoài Body)
-
-Frame: `ADM-LOP-010000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-icon-button | `Atom/Icon Button`  | `2623:12578` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | dropdown-trung-tam | `DD/Molecule/Trigger` Size=XS, State=Default | `4713:129348` Dropdown · Trung tâm | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Default | `2623:12580` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | the-chi-so | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75289` Thẻ chỉ số | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | dropdown-an-hien-cot | `DD/Organism/Menu Panel` Type=Multi | `3634:78208` Dropdown · Ẩn hiện cột | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | class-status | `CLass Status`  | `2623:12721` CLass Status | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | atom-tag-solid | `Atom/Tag Solid` Size=16H | `2623:12725` Atom/Tag Solid | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | progress-diem-danh-gia-a-f | `Progress/Điểm Đánh Giá (A-F)` Size=36x32 | `2623:12729` Progress/Điểm Đánh Giá (A-F) | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | percent | `PERCENT %`  | `2623:12731` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | global-progress-bar | `Global Progress Bar`  | `2623:12738` Global Progress Bar | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | atom-avatar-initials | `Atom/Avatar Initials`  | `2623:12740` Atom/Avatar Initials | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.12` | atom-chip | `Atom/Chip` Type=Date | `2623:12754` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.13` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `2623:19289` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.14` | phan-trang |  | `2623:13246` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.15` | account | `ACCOUNT` Size=Default | `2623:13295` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.16` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:223538` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `A10.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa sync | QC |
+| `A10.02` | thong-tin |  |  | — |  |  | Chưa sync | QC |
+| `A10.03` | canh-bao |  |  | — |  | `TTC02` | Chưa sync | QC |
+| `A10.04` | loi |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -210,7 +187,7 @@ Frame: `ADM-LOP-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (6): `A01.04`, `A01.10`, `A10.01`, `A10.02`, `A10.03`, `A10.04`
+- Chưa sync (19): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.14`, `A01.15`, `A10.01`, `A10.02`, `A10.03`, `A10.04`
 - Frame Figma chưa có requirement (6): `ADM-LOP-010002`, `ADM-LOP-010004`, `ADM-LOP-010010`, `ADM-LOP-010020`, `ADM-LOP-010040`, `ADM-LOP-010050`
 - Thiếu prototype link đi vào (4): `ADM-LOP-010010`, `ADM-LOP-010020`, `ADM-LOP-010040`, `ADM-LOP-010050`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`

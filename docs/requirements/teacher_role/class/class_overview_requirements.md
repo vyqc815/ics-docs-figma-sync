@@ -59,12 +59,7 @@ Tài liệu đặc tả menu **Tổng quan** trong Chi tiết lớp của role G
 - Dữ liệu tải lỗi không hiển thị thành `(Chưa có)`.
 - Đổi lớp thì tooltip theo lớp mới; response của lớp cũ không ghi đè.
 
-### Trang 3: GV-LOP-010000, GV-LOP-020000 — Thống kê học tập trung bình của lớp
-
-![Figma mới nhất · GV-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-010000.png)
-
-![Figma mới nhất · GV-LOP-020000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-020000.png)
-
+### Trang 3: Thống kê học tập trung bình của lớp
 **Mô tả:**
 
 - 8 thẻ chỉ số toàn lớp: `Sĩ Số`, `Đi Học`, `BTVN`, `Điểm KT`, `Điểm BTVN`, `Thời Gian Học`, `Tiêu Chuẩn`, `Đã Chấm Và Sửa Bài`; bên phải là badge đánh giá lớp.
@@ -88,10 +83,7 @@ Tài liệu đặc tả menu **Tổng quan** trong Chi tiết lớp của role G
 - Tìm kiếm, chọn học viên không làm đổi thống kê toàn lớp.
 - Thẻ `Đã chấm và sửa bài` đếm theo bài, không theo số lần bấm, vì hệ thống chỉ lưu lần bấm gần nhất của mỗi bài.
 
-### Trang 4: GV-LOP-020000 — Biểu đồ theo bài học
-
-![Figma mới nhất · GV-LOP-020000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-020000.png)
-
+### Trang 4: Biểu đồ theo bài học
 **Mô tả:**
 
 - Các thẻ chỉ số có biểu đồ đường màu cam theo bài học: biểu đồ lớp ở thống kê phía trên, biểu đồ học viên ở vùng trái.
@@ -108,12 +100,7 @@ Tài liệu đặc tả menu **Tổng quan** trong Chi tiết lớp của role G
 - Bài học viên đã học xác định từ tiến độ học viên–bài, không dùng bài mới nhất giáo viên mở cho cả lớp.
 - Thiếu dữ liệu không dựng thành đường 0.
 
-### Trang 5: GV-LOP-010000, GV-LOP-020000 — Danh sách, tìm kiếm và chọn học viên
-
-![Figma mới nhất · GV-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-010000.png)
-
-![Figma mới nhất · GV-LOP-020000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-020000.png)
-
+### Trang 5: Danh sách, tìm kiếm và chọn học viên
 **Mô tả:**
 
 - `Danh Sách Học Viên` hiển thị toàn bộ học viên của lớp. Mặc định chọn học viên đầu tiên; bấm thẻ để đổi học viên ở vùng trái.
@@ -132,10 +119,7 @@ Tài liệu đặc tả menu **Tổng quan** trong Chi tiết lớp của role G
 - Giáo viên không vào chi tiết học viên từ màn này.
 - API danh sách học viên không trả số lịch hẹn cho Giáo viên.
 
-### Trang 6: GV-LOP-020000 — Đánh giá tổng và bài học gần đây
-
-![Figma mới nhất · GV-LOP-020000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-020000.png)
-
+### Trang 6: Đánh giá tổng và bài học gần đây
 **Mô tả:**
 
 - Mỗi thẻ học viên có badge đánh giá tổng và trạng thái 3 bài gần nhất; vùng trái có khối `Bài Học Gần Đây` gồm 6 bài gần nhất của học viên đang chọn.
@@ -156,10 +140,7 @@ Tài liệu đặc tả menu **Tổng quan** trong Chi tiết lớp của role G
 - Badge và icon không điều hướng.
 - Bộ icon bài gần đây khác bộ icon điểm danh của cột Trạng thái ở bảng bài học.
 
-### Trang 7: GV-LOP-020000 — Bảng bài học của học viên và điểm danh
-
-![Figma mới nhất · GV-LOP-020000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-020000.png)
-
+### Trang 7: Bảng bài học của học viên và điểm danh
 **Mô tả:**
 
 - Bảng ở vùng trái gồm `TÊN BÀI HỌC`, `GHI CHÚ`, `TRẠNG THÁI`, `ĐIỂM / NỘP BÀI`, `THỜI GIAN` của học viên đang chọn.
@@ -184,10 +165,7 @@ Tài liệu đặc tả menu **Tổng quan** trong Chi tiết lớp của role G
 - Điểm 0 là điểm hợp lệ, khác `Chưa nộp`/`Chưa chấm`.
 - Hiển thị toàn bộ bài, sắp theo số thứ tự tăng dần, không phân trang.
 
-### Trang 8: GV-LOP-020020 — Popup ghi chú giáo viên theo bài học
-
-![Figma mới nhất · GV-LOP-020020](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-020020.png)
-
+### Trang 8: Popup ghi chú giáo viên theo bài học
 ![Trang 8](../../management_requirement/class_management/images/41-class-overview-lesson-note.png)
 
 *Popup Ghi chú theo bài học (ảnh requirement Admin) — nhấn để xem ảnh gốc*
@@ -207,10 +185,7 @@ Tài liệu đặc tả menu **Tổng quan** trong Chi tiết lớp của role G
 - Một vùng trống thì hiển thị trống riêng vùng đó; không nối hai vùng thành một.
 - Dữ liệu theo lớp, học viên và bài; không chỉ theo học viên.
 
-### Trang 9: GV-LOP-020030 — Popup Thời gian từng phần trên app
-
-![Figma mới nhất · GV-LOP-020030](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-020030.png)
-
+### Trang 9: Popup Thời gian từng phần trên app
 ![Trang 9](../../management_requirement/class_management/images/40-class-overview-learning-time.png)
 
 *Popup Thời gian từng phần trên app (ảnh requirement Admin) — nhấn để xem ảnh gốc*
@@ -229,10 +204,7 @@ Tài liệu đặc tả menu **Tổng quan** trong Chi tiết lớp của role G
 - Học flashcard và Lật flashcard là hai phần riêng.
 - Popup không hiển thị thời gian toàn lớp hoặc tổng nhiều bài.
 
-### Trang 10: GV-LOP-010000 — Loading, rỗng, lỗi và an toàn dữ liệu
-
-![Figma mới nhất · GV-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-010000.png)
-
+### Trang 10: Loading, rỗng, lỗi và an toàn dữ liệu
 **Mô tả:**
 
 - Phân biệt đang tải, không có dữ liệu và lỗi ở thống kê, danh sách, bảng bài và popup; chống response cũ ghi đè học viên đang chọn.

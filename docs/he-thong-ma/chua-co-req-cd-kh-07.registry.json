@@ -38,7 +38,7 @@
    "nodeId": "5672:62187",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/kien-thuc-menu-nhap-chua-dung",
    "link": null,
    "dark": "CD-KH-070101-DK",
@@ -61,7 +61,7 @@
    "nodeId": "5672:63250",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/kien-thuc-menu-cong-khai-dang-dung",
    "link": null,
    "dark": "CD-KH-070102-DK",
@@ -84,7 +84,7 @@
    "nodeId": "5672:64312",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-kh-070103",
    "link": null,
    "dark": "CD-KH-070103-DK",
@@ -108,15 +108,13 @@
    "nodeId": "5672:64382",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/kien-thuc/ngu-phap",
    "link": "/thu-vien/kien-thuc/ngu-phap",
    "dark": "CD-KH-070110-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   },
   "CD-KH-070120": {
    "id": "CD-KH-070120",
@@ -131,15 +129,13 @@
    "nodeId": "5672:65680",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/kien-thuc/mau-cau",
    "link": "/thu-vien/kien-thuc/mau-cau",
    "dark": "CD-KH-070120-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   },
   "CD-KH-070130": {
    "id": "CD-KH-070130",
@@ -154,15 +150,13 @@
    "nodeId": "5672:66990",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/kien-thuc/hanzi",
    "link": "/thu-vien/kien-thuc/hanzi",
    "dark": "CD-KH-070130-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   },
   "CD-KH-070140": {
    "id": "CD-KH-070140",
@@ -177,15 +171,13 @@
    "nodeId": "5672:68344",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/kien-thuc/phat-am",
    "link": "/thu-vien/kien-thuc/phat-am",
    "dark": "CD-KH-070140-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   },
   "CD-KH-070150": {
    "id": "CD-KH-070150",
@@ -200,15 +192,13 @@
    "nodeId": "5672:76669",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/kien-thuc/kanji",
    "link": "/thu-vien/kien-thuc/kanji",
    "dark": "CD-KH-070150-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   },
   "CD-KH-070200": {
    "id": "CD-KH-070200",
@@ -223,15 +213,13 @@
    "nodeId": "5491:353761",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/ky-nang/nghe",
    "link": "/thu-vien/ky-nang/nghe",
    "dark": "CD-KH-070200-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   },
   "CD-KH-070210": {
    "id": "CD-KH-070210",
@@ -246,15 +234,13 @@
    "nodeId": "5505:23723",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/ky-nang/doc",
    "link": "/thu-vien/ky-nang/doc",
    "dark": "CD-KH-070210-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   },
   "CD-KH-070220": {
    "id": "CD-KH-070220",
@@ -269,15 +255,13 @@
    "nodeId": "5672:69716",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/ky-nang/viet",
    "link": "/thu-vien/ky-nang/viet",
    "dark": "CD-KH-070220-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   },
   "CD-KH-070230": {
    "id": "CD-KH-070230",
@@ -292,15 +276,13 @@
    "nodeId": "5672:70935",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/ky-nang/noi",
    "link": "/thu-vien/ky-nang/noi",
    "dark": "CD-KH-070230-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   },
   "CD-KH-070300": {
    "id": "CD-KH-070300",
@@ -315,7 +297,7 @@
    "nodeId": "5491:354867",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/bai-tap",
    "link": "/thu-vien/bai-tap",
    "dark": "CD-KH-070300-DK",
@@ -332,9 +314,7 @@
     "CD-KH-070313"
    ],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   },
   "CD-KH-070308": {
    "id": "CD-KH-070308",
@@ -349,7 +329,7 @@
    "nodeId": "6518:373772",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening-tieng-nhat",
    "link": "/thu-vien/bai-tap?state=CD-KH-070308",
    "dark": "CD-KH-070308-DK",
@@ -370,15 +350,13 @@
    "nodeId": "5672:72154",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/bai-tap/btvn-mau",
    "link": "/thu-vien/bai-tap/btvn-mau",
    "dark": "CD-KH-070310-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   },
   "CD-KH-070320": {
    "id": "CD-KH-070320",
@@ -393,714 +371,16 @@
    "nodeId": "5672:73387",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/thu-vien/bai-tap/kiem-tra-mau",
    "link": "/thu-vien/bai-tap/kiem-tra-mau",
    "dark": "CD-KH-070320-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-07.F01"
-   ]
+   "regions": []
   }
  },
- "regions": [
-  {
-   "id": "CD-KH-07.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "cd-kh-070110",
-    "cd-kh-070120",
-    "cd-kh-070130",
-    "cd-kh-070140",
-    "cd-kh-070150",
-    "cd-kh-070200",
-    "cd-kh-070210",
-    "cd-kh-070220",
-    "cd-kh-070230",
-    "cd-kh-070300",
-    "cd-kh-070310",
-    "cd-kh-070320"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CD-KH-07.F01.01",
-     "name": "tab-tu-vung",
-     "label": "Tab · Từ vựng",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070110": [
-       {
-        "term": "Tab · Từ vựng",
-        "figmaId": "5672:64390",
-        "layer": "Tab · Từ vựng",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Từ vựng",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.02",
-     "name": "tab-ngu-phap",
-     "label": "Tab · Ngữ pháp",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070110": [
-       {
-        "term": "Tab · Ngữ pháp",
-        "figmaId": "5672:64391",
-        "layer": "Tab · Ngữ pháp",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Ngữ pháp",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Active",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.03",
-     "name": "tab-mau-cau",
-     "label": "Tab · Mẫu câu",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070110": [
-       {
-        "term": "Tab · Mẫu câu",
-        "figmaId": "5672:64392",
-        "layer": "Tab · Mẫu câu",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Mẫu câu",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.04",
-     "name": "tab-hanzi",
-     "label": "Tab · Hanzi",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070110": [
-       {
-        "term": "Tab · Hanzi",
-        "figmaId": "5672:64393",
-        "layer": "Tab · Hanzi",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Hanzi",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.05",
-     "name": "tab-bang-chu",
-     "label": "Tab · Bảng chữ",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070110": [
-       {
-        "term": "Tab · Bảng chữ",
-        "figmaId": "5729:91585",
-        "layer": "Tab · Bảng chữ",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Bảng chữ",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.06",
-     "name": "tab-phat-am",
-     "label": "Tab · Phát âm",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070110": [
-       {
-        "term": "Tab · Phát âm",
-        "figmaId": "5672:64394",
-        "layer": "Tab · Phát âm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Phát âm",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.07",
-     "name": "tim-kiem",
-     "label": "Tìm kiếm",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070110": [
-       {
-        "term": "Tìm kiếm",
-        "figmaId": "5672:64396",
-        "layer": "Tìm kiếm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tìm kiếm",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm cấu trúc, ý nghĩa…",
-         "State": "Search",
-         "Kiểu": "S"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.08",
-     "name": "bo-loc-cap-do",
-     "label": "Bộ lọc · Cấp độ",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070110": [
-       {
-        "term": "Bộ lọc · Cấp độ",
-        "figmaId": "5672:64397",
-        "layer": "Bộ lọc · Cấp độ",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Bộ lọc · Cấp độ",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Count": false,
-         "Chevron": true,
-         "Clear": false,
-         "Leading": false,
-         "Count Value": "1",
-         "Value": "Cấp độ: Tất cả",
-         "Size": "S",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.09",
-     "name": "xoa-bo-loc",
-     "label": "Xoá bộ lọc",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070110": [
-       {
-        "term": "Xoá bộ lọc",
-        "figmaId": "5672:64400",
-        "layer": "Xoá bộ lọc",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Xoá bộ lọc",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Xoá bộ lọc",
-         "Type": "Outlined",
-         "Size": "Small"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.10",
-     "name": "atom-badge",
-     "label": "Atom/Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070110": [
-       {
-        "term": "Atom/Badge",
-        "figmaId": "5672:65467",
-        "layer": "Atom/Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Badge",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "Công khai",
-         "Variant": "Success",
-         "Dropdown": "Off"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.11",
-     "name": "liner-icon",
-     "label": "Liner Icon",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070140": [
-       {
-        "term": "Liner Icon",
-        "figmaId": "5672:69688",
-        "layer": "Liner Icon",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Liner Icon",
-        "component": "Liner Icon",
-        "variant": {
-         "Property 1": "Âm thanh"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.12",
-     "name": "tab-kanji",
-     "label": "Tab · Kanji",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070150": [
-       {
-        "term": "Tab · Kanji",
-        "figmaId": "5672:76681",
-        "layer": "Tab · Kanji",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Kanji",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Active",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.13",
-     "name": "tab-nghe",
-     "label": "Tab · Nghe",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070200": [
-       {
-        "term": "Tab · Nghe",
-        "figmaId": "5505:24311",
-        "layer": "Tab · Nghe",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Nghe",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Active",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.14",
-     "name": "tab-doc",
-     "label": "Tab · Đọc",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070200": [
-       {
-        "term": "Tab · Đọc",
-        "figmaId": "5505:24317",
-        "layer": "Tab · Đọc",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Đọc",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.15",
-     "name": "tab-viet",
-     "label": "Tab · Viết",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070200": [
-       {
-        "term": "Tab · Viết",
-        "figmaId": "5505:24322",
-        "layer": "Tab · Viết",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Viết",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.16",
-     "name": "tab-noi",
-     "label": "Tab · Nói",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070200": [
-       {
-        "term": "Tab · Nói",
-        "figmaId": "5505:24327",
-        "layer": "Tab · Nói",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Nói",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.17",
-     "name": "global-progress-bar",
-     "label": "Global Progress Bar",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070200": [
-       {
-        "term": "Global Progress Bar",
-        "figmaId": "5505:24400",
-        "layer": "Global Progress Bar",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Global Progress Bar",
-        "component": "Global Progress Bar",
-        "variant": {
-         "Property 1": "Progress ngang ( Không % )"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.18",
-     "name": "tab-ngan-hang-cau-hoi",
-     "label": "Tab · Ngân hàng câu hỏi",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070300": [
-       {
-        "term": "Tab · Ngân hàng câu hỏi",
-        "figmaId": "5505:23203",
-        "layer": "Tab · Ngân hàng câu hỏi",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Ngân hàng câu hỏi",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Active",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.19",
-     "name": "tab-btvn-mau",
-     "label": "Tab · BTVN mẫu",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070300": [
-       {
-        "term": "Tab · BTVN mẫu",
-        "figmaId": "5505:23209",
-        "layer": "Tab · BTVN mẫu",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · BTVN mẫu",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.20",
-     "name": "tab-kiem-tra-mau",
-     "label": "Tab · Kiểm tra mẫu",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070300": [
-       {
-        "term": "Tab · Kiểm tra mẫu",
-        "figmaId": "5505:23214",
-        "layer": "Tab · Kiểm tra mẫu",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Kiểm tra mẫu",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-07.F01.21",
-     "name": "tag-ai",
-     "label": "Tag · AI",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-070300": [
-       {
-        "term": "Tag · AI",
-        "figmaId": "5672:61894",
-        "layer": "Tag · AI",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tag · AI",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "AI",
-         "Variant": "Purple",
-         "Dropdown": "Off"
-        },
-        "inCode": true
-       }
-      ]
-     }
-    }
-   ]
-  }
- ],
+ "regions": [],
  "exceptions": [],
  "flows": [],
  "testcases": [],

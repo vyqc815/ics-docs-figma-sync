@@ -33,46 +33,28 @@ Requirement: `account_management/account_management.md` — Quản lý tài kho�
 
 ### `A01` Trang 1: Danh sách tài khoản
 
-Frame: `MST-TK-010010`, `MST-TK-010030` (tool đoán:MST-TK-010010, MST-TK-010030) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:MST-TK-010010, MST-TK-010030) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Trang 2: Popup tạo / chỉnh sửa tài khoản
 
-Frame: `MST-TK-010000`, `MST-TK-020000` (tool đoán:MST-TK-010000, MST-TK-020000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:MST-TK-010000, MST-TK-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A03` Toast phản hồi CRUD
 
-Frame: `MST-TK-010000`, `MST-TK-020000` (tool đoán:MST-TK-010000, MST-TK-020000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:MST-TK-010000, MST-TK-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04`, `TC16`, `TC17`, `TC18` | Chưa khớp tự động | QC |
-| `A03.02` | thong-tin | `Molecule/Field`  | `3005:41047` Thông Tin Cá Nhân; `3005:43093` Molecule/Field | — |  | `TC06`, `TC11`, `TC12` | Khớp một phần | QC |
-| `A03.03` | canh-bao |  |  | — |  | `TTC02`, `TC16` | Chưa khớp tự động | QC |
-| `A03.04` | loi | `Molecule/Field`  | `3005:43093` Molecule/Field | — |  |  | Khớp một phần | QC |
-
-### `F01` (ngoài Body)
-
-Frame: `MST-TK-010000`, `MST-TK-020000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | account | `ACCOUNT` Size=Default | `2223:81695` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | sidebar-menu-admin | `MENU - ADMIN`  | `4969:25733` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `2008:38383` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Default | `2008:38365` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | role-component | `Role Component`  | `2623:27509` Role Component | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | switch | `Switch` Size=Small | `2623:27539` Switch | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | mouse-click |  | `2623:27744` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | phan-trang |  | `2682:32119` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | molecule-field | `Molecule/Field`  | `3004:49972` Molecule/Field | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | color-theme | `COLOR THEME`  | `4030:88770` COLOR THEME | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | popup-footer | `Popup/Footer` Type=Hai nút | `3005:41448` Popup/Footer | — |  |  | Chỉ có trên Figma | Figma |
+| `A03.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04`, `TC16`, `TC17`, `TC18` | Chưa sync | QC |
+| `A03.02` | thong-tin |  |  | — |  | `TC06`, `TC11`, `TC12` | Chưa sync | QC |
+| `A03.03` | canh-bao |  |  | — |  | `TTC02`, `TC16` | Chưa sync | QC |
+| `A03.04` | loi |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -132,7 +114,7 @@ Frame: `MST-TK-010000`, `MST-TK-020000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (2): `A03.01`, `A03.03`
+- Chưa sync (4): `A03.01`, `A03.02`, `A03.03`, `A03.04`
 - Frame Figma chưa có requirement (4): `MST-TK-010010`, `MST-TK-010020`, `MST-TK-010030`, `PRO-GD-010010`
 - Thiếu prototype link đi vào (4): `MST-TK-010010`, `MST-TK-010020`, `MST-TK-010030`, `PRO-GD-010010`
 - Testcase không trỏ REQ (8): `TTC01`, `TTC02`, `TTC03`, `TTC04`, `TC05`, `TC06`, `TC19`, `TC20`

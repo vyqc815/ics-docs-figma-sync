@@ -4,10 +4,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Cài đặt → T
 
 ## 1. UI
 
-### Trang 1: ADM-LOP-040600 — Tab Hóa đơn — Bảng Hóa đơn đã dùng
-
-![Figma mới nhất · ADM-LOP-040600](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040600.png)
-
+### Trang 1: Tab Hóa đơn — Bảng Hóa đơn đã dùng
 ![Trang 1](./images/30-class-detail-invoices.png)
 
 *Ảnh tham chiếu bố cục cũ — UI cần bổ sung cột Tên học viên, cột Ngày tạo hóa đơn và filter Học viên chọn một/nhiều người; không có filter ngày tạo; nhấn để xem ảnh gốc*
@@ -34,10 +31,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Cài đặt → T
 - Danh sách dùng load-more khi cuộn xuống gần cuối, không có phân trang theo số trang. Chỉ bổ sung filter `Học viên`, cho phép chọn một hoặc nhiều người; không có filter `Ngày tạo hóa đơn`.
 - Cột Tên học viên không phải nút mở/chỉnh sửa học viên. Cột Ngày tạo hóa đơn chỉ hiển thị, không có thao tác chỉnh ngày tại tab.
 
-### Trang 2: ADM-LOP-040600 — Filter Học viên và cột Ngày tạo hóa đơn
-
-![Figma mới nhất · ADM-LOP-040600](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040600.png)
-
+### Trang 2: Filter Học viên và cột Ngày tạo hóa đơn
 **Mô tả:** Cho phép Admin / Class Handler / Support lọc hóa đơn đã dùng trong lớp theo một hoặc nhiều học viên. Ngày tạo hóa đơn là cột chỉ xem ngày tạo gốc tại Cơm Gạo, không phải bộ lọc. Filter chỉ thay đổi tập dòng hiển thị, không cập nhật hóa đơn hoặc học phí.
 
 **Giải thích field/thành phần:**
@@ -58,10 +52,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Cài đặt → T
 - Không dùng ngày ICS nhận đồng bộ, ngày ghi nhận học phí hoặc ngày sửa gần nhất thay cho Ngày tạo hóa đơn. Thiếu ngày tạo gốc thì đánh dấu cột ngày không khả dụng, không tự gán ngày thay thế và không loại hóa đơn khỏi bảng/filter Học viên chỉ vì thiếu ngày.
 - Trường hợp một hóa đơn liên kết nhiều học viên chưa được chốt cách hiển thị tên/lọc; không tự đổi quy tắc một dòng mỗi invoice_id.
 
-### Trang 3: ADM-LOP-040600 — Cột Giá trị và Giá trị dùng trong lớp
-
-![Figma mới nhất · ADM-LOP-040600](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040600.png)
-
+### Trang 3: Cột Giá trị và Giá trị dùng trong lớp
 **Mô tả:** Hai cột tiền phản ánh hai dữ liệu khác nhau: giá trị toàn bộ hóa đơn và phần học phí đã ghi nhận từ hóa đơn vào lớp hiện tại.
 
 **Giải thích field/thành phần:**
@@ -78,10 +69,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Cài đặt → T
 - Không cộng theo tên hóa đơn vì hai hóa đơn khác nhau có thể trùng tên; phải dùng ID.
 - Việc hoàn/hủy giao dịch học phí sẽ tuân theo requirement học phí riêng. Tab này không tự đặt quy tắc giảm học phí hoặc xóa lịch sử.
 
-### Trang 4: ADM-LOP-040600 — Trạng thái tải, rỗng, lỗi và đồng bộ
-
-![Figma mới nhất · ADM-LOP-040600](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040600.png)
-
+### Trang 4: Trạng thái tải, rỗng, lỗi và đồng bộ
 **Mô tả:** Phản ánh đúng quá trình đọc dữ liệu. Khi học phí được thêm ở tab Học viên, lần mở/tải lại tab Hóa đơn phải hiển thị dữ liệu đã lưu mới nhất.
 
 **Giải thích field/thành phần:**
@@ -97,10 +85,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Cài đặt → T
 - Response của lớp cũ không được ghi đè khi người dùng đã chuyển sang lớp khác.
 - Không có Toast CRUD vì tab không thực hiện CRUD. Lỗi đọc dữ liệu hiển thị ngay tại bảng.
 
-### Trang 5: ADM-LOP-040600 — Load-more danh sách hóa đơn
-
-![Figma mới nhất · ADM-LOP-040600](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040600.png)
-
+### Trang 5: Load-more danh sách hóa đơn
 **Mô tả:** Khi người dùng cuộn gần cuối các dòng đã tải, hệ thống tự tải thêm hóa đơn của lớp hiện tại và nối vào bảng.
 
 **Giải thích field/thành phần:**

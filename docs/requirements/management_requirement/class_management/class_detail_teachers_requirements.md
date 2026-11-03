@@ -4,10 +4,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Giáo viên**
 
 ## 1. UI
 
-### Trang 1: ADM-LOP-040300 — Tab Giáo viên — Danh sách giáo viên trong lớp
-
-![Figma mới nhất · ADM-LOP-040300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040300.png)
-
+### Trang 1: Tab Giáo viên — Danh sách giáo viên trong lớp
 ![Trang 1](./images/22-class-detail-teachers.png)
 
 *Danh sách giáo viên đã được thêm vào lớp — nhấn để xem ảnh gốc*
@@ -103,10 +100,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Giáo viên**
 - Nếu tạo tài khoản thành công nhưng thêm vào lớp thất bại, hệ thống phải trả kết quả rõ ràng và không hiển thị quan hệ lớp chưa được tạo; cách rollback tài khoản dùng quy tắc chung module Giáo viên.
 - Không lưu hoặc hiển thị mật khẩu trong Toast, log, lịch sử hay response sau tạo.
 
-### Trang 5: ADM-LOP-040300 — Checkbox Giáo viên phụ trách chính và quyền chấm điểm
-
-![Figma mới nhất · ADM-LOP-040300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040300.png)
-
+### Trang 5: Checkbox Giáo viên phụ trách chính và quyền chấm điểm
 **Mô tả:** Cho phép Admin/Class Handler/Support chỉ định tối đa một giáo viên trong lớp làm Giáo viên phụ trách chính. Đây là giáo viên duy nhất được nhập/cập nhật điểm BTVN và bài kiểm tra của lớp.
 
 **Giải thích field/thành phần:**
@@ -141,10 +135,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Giáo viên**
 - Cho phép xóa giáo viên chính mà không cần chọn người thay thế. Sau khi xóa, lớp tạm thời không có giáo viên được chấm điểm BTVN/bài kiểm tra cho đến khi gán người mới.
 - Request xóa lặp chỉ tạo một kết quả; không phát sinh lỗi vì quan hệ đã được xóa.
 
-### Trang 7: ADM-LOP-040300 — Điều hướng đến Chi tiết giáo viên
-
-![Figma mới nhất · ADM-LOP-040300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040300.png)
-
+### Trang 7: Điều hướng đến Chi tiết giáo viên
 **Mô tả:** Bấm vào vùng giáo viên tại cột Tên mở đúng màn Chi tiết giáo viên.
 
 **Giải thích field/thành phần:**
@@ -158,10 +149,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Giáo viên**
 - Bấm checkbox hoặc thùng rác không được điều hướng ngoài ý muốn.
 - Nếu giáo viên không còn tồn tại/ngoài phạm vi, không mở hồ sơ khác thay thế.
 
-### Trang 8: ADM-LOP-040300 — Toast phản hồi CRUD
-
-![Figma mới nhất · ADM-LOP-040300](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040300.png)
-
+### Trang 8: Toast phản hồi CRUD
 ![Trang 8](../../images/01-toast-crud.png)
 
 *Toast phản hồi thêm, tạo, đổi phụ trách và xóa giáo viên — nhấn để xem ảnh gốc*

@@ -2,10 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: CD-DM-010000 — Danh sách danh mục
-
-![Figma mới nhất · CD-DM-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010000.png)
-
+### Trang 1: Danh sách danh mục
 ![Trang 1](./images/01-category-list.png)
 
 *Danh sách danh mục — nhấn để xem ảnh gốc*
@@ -29,10 +26,7 @@
 - Tìm kiếm danh mục được kích hoạt sau khi người dùng ngừng nhập `2 giây`; hệ thống tìm theo keyword khớp một phần với `ID`, `Tên danh mục` hoặc `Mô tả danh mục`, không yêu cầu nội dung khớp chính xác 100%.
 - Danh mục và khóa học có quan hệ `1:n`: một danh mục có nhiều khóa học; mỗi khóa học thuộc một danh mục.
 
-### Trang 2: CD-DM-010000 — Form thêm danh mục
-
-![Figma mới nhất · CD-DM-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010000.png)
-
+### Trang 2: Form thêm danh mục
 - `A02.01` **ID danh mục tạm thời**: Có thể được hệ thống sinh để nhận diện bản nháp và chỉ dùng hiển thị. Không được xem là `Subject ID` công khai.
 - `A02.02` **Subject ID**: Không bắt buộc khi lưu `Nháp`. Bắt buộc khi chuyển sang `Công khai`; được hệ thống tự động tạo mới hoặc do người dùng nhập thủ công. Phải đúng định dạng và duy nhất toàn hệ thống.
 - `A02.03` **Tên danh mục**: Bắt buộc, không áp dụng giới hạn độ dài nghiệp vụ.
@@ -40,10 +34,7 @@
 - `A02.05` **Số khóa học**: Field chỉ đọc, do hệ thống tự tính; danh mục mới chưa có khóa học hiển thị `0`.
 - `A02.06` **Trạng thái**: Gồm `Nháp`, `Công khai`, `Vô hiệu hóa`; mặc định khi tạo là `Nháp`. Cho phép chuyển từ bất kỳ trạng thái hiện tại sang một trong hai trạng thái còn lại. Khi chuyển đến `Công khai`, Subject ID phải hợp lệ; chuyển sang trạng thái khác không xóa Subject ID đã có.
 
-### Trang 3: CD-DM-010060 — Popup Kích hoạt công khai danh mục
-
-![Figma mới nhất · CD-DM-010060](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010060.png)
-
+### Trang 3: Popup Kích hoạt công khai danh mục
 ![Trang 3](./images/07-category-publish-initial.png)
 
 *Bước đầu chọn cách lấy Subject ID — nhấn để xem ảnh gốc*
@@ -93,10 +84,7 @@
 - Popup gồm bốn tab: `Tổng quan`, `Mindset`, `Tiêu chuẩn giáo trình`, `Hướng dẫn giảng dạy`.
 - Tab mặc định khi mở popup là `Tổng quan`.
 
-### Trang 5: CD-DM-010010 — Tab Tổng quan
-
-![Figma mới nhất · CD-DM-010010](https://ics-figma-demo.vercel.app/api/figma-frame/CD-DM-010010.png)
-
+### Trang 5: Tab Tổng quan
 ![Trang 5](./images/02-category-overview.png)
 
 *Tab Tổng quan và danh sách khóa học thuộc danh mục — nhấn để xem ảnh gốc*

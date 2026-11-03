@@ -40,107 +40,39 @@ Requirement: `management_requirement/class_management/class_detail_processes_req
 
 ### `A01` Ba tab quy trình trong lớp
 
-Frame: `ADM-LOP-020604` (tool đoán:ADM-LOP-020710, ADM-LOP-020810) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-020710, ADM-LOP-020810) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | ten-tab |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.02` | tien-do |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
-| `A01.03` | action-item |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.04` | nut-them | `Atom/Button` Type=Primary, Size=Medium | `2711:52528` Atom/Button | — |  |  | Khớp | QC |
+| `A01.01` | ten-tab |  |  | — |  |  | Chưa sync | QC |
+| `A01.02` | tien-do |  |  | — |  | `TC01` | Chưa sync | QC |
+| `A01.03` | action-item |  |  | — |  |  | Chưa sync | QC |
+| `A01.04` | nut-them |  |  | — |  |  | Chưa sync | QC |
 
 ### `A02` Popup Thêm nội dung
 
-Frame: `ADM-LOP-020610` (tool đoán:ADM-LOP-020610) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-020610) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | tieu-chuan-lop-giao-vien-them-tieu-chuan | `Popup/Header`  | `I2711:50591;2514:153354` Title | — |  |  | Khớp | QC |
-| `A02.02` | cskh-them-quy-trinh |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.03` | quy-trinh-lop-them-quy-trinh |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.04` | cay-lua-chon |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.05` | category-action-item |  |  | — |  | `TC03` | Chưa khớp tự động | QC |
-| `A02.06` | them-1 | `Atom/Button` Type=Primary, Size=Medium | `I2711:50640;2514:153363` Atom/Button | — |  |  | Khớp | QC |
-| `A02.07` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2711:50640;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+| `A02.01` | tieu-chuan-lop-giao-vien-them-tieu-chuan |  |  | — |  |  | Chưa sync | QC |
+| `A02.02` | cskh-them-quy-trinh |  |  | — |  |  | Chưa sync | QC |
+| `A02.03` | quy-trinh-lop-them-quy-trinh |  |  | — |  |  | Chưa sync | QC |
+| `A02.04` | cay-lua-chon |  |  | — |  |  | Chưa sync | QC |
+| `A02.05` | category-action-item |  |  | — |  | `TC03` | Chưa sync | QC |
+| `A02.06` | them-1 |  |  | — |  |  | Chưa sync | QC |
+| `A02.07` | huy |  |  | — |  |  | Chưa sync | QC |
 
 ### `A03` Toast phản hồi CRUD
 
-Frame: `ADM-LOP-020600`, `ADM-LOP-020700`, `ADM-LOP-020800` (tool đoán:ADM-LOP-020600, ADM-LOP-020700, ADM-LOP-020800) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-020600, ADM-LOP-020700, ADM-LOP-020800) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | thanh-cong |  |  | — |  | `TC05` | Chưa khớp tự động | QC |
-| `A03.02` | thong-bao |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.03` | canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.04` | co-loi-xay-ra |  |  | — |  |  | Chưa khớp tự động | QC |
-
-### `F01` (ngoài Body)
-
-Frame: `ADM-LOP-020600`, `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-button | `Atom/Button` Type=Primary, Size=Medium | `3502:77182` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | global-progress-bar | `Global Progress Bar`  | `3502:77193` Global Progress Bar | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `3502:77195` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | atom-chip | `Atom/Chip` Type=Date | `2711:51750` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | atom-label | `Atom/Label`  | `3857:71648` Atom/Label | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | atom-badge | `Atom/Badge`  | `2711:51794` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | account | `ACCOUNT` Size=Default | `3497:47434` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:226785` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | atom-badge-type | `Atom/Badge Type` Size=M | `2711:61497` Atom/Badge Type | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F02` Row
-
-Frame: `ADM-LOP-020600`, `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F02.01` | atom-input | `Atom/Input` State=Default, Kiểu=Chuẩn | `3857:71646` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.02` | atom-label | `Atom/Label`  | `3857:71662` Atom/Label | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F03` File
-
-Frame: `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F03.01` | atom-uploaded-file-card | `Atom/Uploaded File Card` Type=Menu | `2711:61388` Atom/Uploaded File Card | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F04` Field · Ghi chú
-
-Frame: `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F04.01` | atom-label | `Atom/Label`  | `3857:71832` Atom/Label | — |  |  | Chỉ có trên Figma | Figma |
-| `F04.02` | atom-input | `Atom/Input` State=Default, Kiểu=Chuẩn | `3772:86479` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F05` Verify
-
-Frame: `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F05.01` | atom-label | `Atom/Label`  | `3857:71889` Atom/Label | — |  |  | Chỉ có trên Figma | Figma |
-| `F05.02` | avatar-name | `AVATAR + Name`  | `2711:61488` AVATAR + Name | — |  |  | Chỉ có trên Figma | Figma |
-| `F05.03` | atom-button | `Atom/Button` Type=Secondary, Size=Small | `2711:61489` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F06` Log Entry
-
-Frame: `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F06.01` | atom-chip | `Atom/Chip` Type=Date | `2711:61501` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F07` Molecule/Add New Bar
-
-Frame: `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F07.01` | molecule-add-new-bar | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `2711:61506` Molecule/Add New Bar | — |  |  | Chỉ có trên Figma | Figma |
+| `A03.01` | thanh-cong |  |  | — |  | `TC05` | Chưa sync | QC |
+| `A03.02` | thong-bao |  |  | — |  |  | Chưa sync | QC |
+| `A03.03` | canh-bao |  |  | — |  |  | Chưa sync | QC |
+| `A03.04` | co-loi-xay-ra |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -175,7 +107,7 @@ Frame: `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (11): `A01.01`, `A01.02`, `A01.03`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A03.04`
+- Chưa sync (15): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A03.01`, `A03.02`, `A03.03`, `A03.04`
 - Frame Figma chưa có requirement (13): `ADM-LOP-020604`, `ADM-LOP-020610`, `ADM-LOP-020611`, `ADM-LOP-020612`, `ADM-LOP-020704`, `ADM-LOP-020710`, `ADM-LOP-020711`, `ADM-LOP-020712`, `ADM-LOP-020804`, `ADM-LOP-020810`, `ADM-LOP-020811`, `ADM-LOP-020812`, `ADM-LOP-020904`
 - Phân loại cần design duyệt (4): `ADM-LOP-020604`, `ADM-LOP-020704`, `ADM-LOP-020804`, `ADM-LOP-020904`
 - Thiếu prototype link đi vào (7): `ADM-LOP-020604`, `ADM-LOP-020610`, `ADM-LOP-020704`, `ADM-LOP-020710`, `ADM-LOP-020804`, `ADM-LOP-020810`, `ADM-LOP-020904`

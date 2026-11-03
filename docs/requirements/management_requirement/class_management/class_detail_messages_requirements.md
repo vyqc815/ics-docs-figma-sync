@@ -4,10 +4,7 @@ Requirement **Chi tiết lớp học → Nhật ký → Tin Nhắn** theo ba ả
 
 ## 1. UI
 
-### Trang 1: ADM-LOP-050100 — Tab Tin Nhắn — Danh sách tin nhắn
-
-![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
-
+### Trang 1: Tab Tin Nhắn — Danh sách tin nhắn
 ![Trang 1](./images/44-class-detail-messages-list.png)
 
 *UI do người dùng cung cấp — nhấn để xem ảnh gốc*
@@ -36,10 +33,7 @@ Requirement **Chi tiết lớp học → Nhật ký → Tin Nhắn** theo ba ả
 - Chỉ tạo item vào danh sách khi thao tác Tạo mới thành công. Nhãn bán tự động không có nghĩa tự gửi ngay, chạy theo lịch hoặc gửi khi thay đổi dữ liệu CơmGao.
 - Mở/thu gọn hay tải lại giữ đúng item và kết quả gửi đã lưu; không tự phát sinh lần gửi mới. Search theo Tiêu đề đã chốt; thời điểm kích hoạt, thứ tự và phân trang còn ghi tại mục 3.
 
-### Trang 2: ADM-LOP-050100 — Popup Tạo tin nhắn bán tự động mới
-
-![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
-
+### Trang 2: Popup Tạo tin nhắn bán tự động mới
 ![Trang 2](./images/43-class-detail-message-create.png)
 
 *UI do người dùng cung cấp — nhấn để xem ảnh gốc*
@@ -64,10 +58,7 @@ Requirement **Chi tiết lớp học → Nhật ký → Tin Nhắn** theo ba ả
 - Danh sách mẫu và quy tắc biến thuộc chức năng nguồn; trường hợp không có mẫu hoặc mẫu không còn khả dụng phải báo rõ, không tạo item với mẫu không hợp lệ.
 - Giữ dữ liệu nhập khi lưu lỗi để thử lại; không tạo nhiều item nếu bấm/callback lặp. Không tự thêm UI tạo mẫu ở đây.
 
-### Trang 3: ADM-LOP-050100 — Danh sách học viên và chọn nền tảng
-
-![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
-
+### Trang 3: Danh sách học viên và chọn nền tảng
 ![Trang 3](./images/45-class-detail-message-platforms.png)
 
 *UI do người dùng cung cấp — nhấn để xem ảnh gốc*
@@ -91,10 +82,7 @@ Requirement **Chi tiết lớp học → Nhật ký → Tin Nhắn** theo ba ả
 - Chỉ hiển thị/cho dùng đích gửi được phép của học viên đúng lớp; không ghép hồ sơ dựa trên tên/email trùng. Nếu liên kết không xác định duy nhất, báo thiếu thông tin để xử lý, không đoán.
 - Danh sách 5 nền tảng là thiết kế mục tiêu; không suy ra trạng thái tích hợp gửi từ chức năng mở link nền tảng trong CơmGao. Nền tảng chưa khả dụng phải có lý do rõ, không báo gửi thành công giả.
 
-### Trang 4: ADM-LOP-050100 — Lấy biến CơmGao và gửi tin nhắn
-
-![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
-
+### Trang 4: Lấy biến CơmGao và gửi tin nhắn
 **Mô tả:**
 
 - Gửi từng học viên hoặc toàn bộ danh sách nhận của một item. Nội dung được cá nhân hóa theo từng học viên, không dùng một nội dung đã thay biến của học viên A để gửi cho B.
@@ -117,10 +105,7 @@ Requirement **Chi tiết lớp học → Nhật ký → Tin Nhắn** theo ba ả
 - Khi timeout chưa biết tin nhắn đã gửi hay chưa, giữ trạng thái chưa xác định để kiểm tra kết quả trước thử lại; không tự phát lại và gây trùng. Kết quả gửi ra nền tảng không được hoàn tác bằng cách xóa item trong ICS.
 - Chỉ ghi nhận/lưu và gửi khi người dùng bấm thao tác được cấp quyền. Tạo item, chọn mẫu/platform hoặc mở tab không kích hoạt gửi.
 
-### Trang 5: ADM-LOP-050100 — Quản lý item tin nhắn đã tạo
-
-![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
-
+### Trang 5: Quản lý item tin nhắn đã tạo
 **Mô tả:**
 
 - Admin hoặc Class Handler/Support đã được add vào lớp được quản lý item, kể cả do người khác tạo. Nội dung mẫu chỉ đọc; muốn sửa phải vào define ở chức năng riêng. Hover hiện ×, click mở popup xác nhận và confirm mới xóa item khỏi danh sách; không thu hồi tin đã gửi.
@@ -139,10 +124,7 @@ Requirement **Chi tiết lớp học → Nhật ký → Tin Nhắn** theo ba ả
 - Kiểm tra quyền thao tác cả trên UI và backend, giữ đúng lớp và item. Chỉ người có quyền được thao tác, không dựa vào tên hiển thị.
 - Không đặt count về 0 hoặc tự gửi lại khi đổi mẫu. Hủy popup xóa không thay đổi item/Toast CRUD; lưu xóa lỗi giữ item và cho thử lại.
 
-### Trang 6: ADM-LOP-050100 — Toast phản hồi CRUD và gửi tin nhắn
-
-![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
-
+### Trang 6: Toast phản hồi CRUD và gửi tin nhắn
 ![Trang 6](../../images/01-toast-crud.png)
 
 *Toast Thành Công, Thông Báo, Cảnh Báo và Có Lỗi Xảy Ra — nhấn để xem ảnh gốc*

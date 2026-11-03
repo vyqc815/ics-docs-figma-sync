@@ -35,87 +35,60 @@ Requirement: `class_handler_support/process/process.md` — [Phụ trách lớp]
 
 ### `A01` Trang 1: Task Hôm Nay / Task Tuần Này / Task Tháng Này / Ca Trực
 
-Frame: `SP-TASK-010001`, `SP-TASK-020001`, `SP-TASK-030001` (tool đoán:SP-TASK-010001, SP-TASK-020001, SP-TASK-030001) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:SP-TASK-010001, SP-TASK-020001, SP-TASK-030001) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | sidebar | `Card Menu v2 (Test)` Type=Chính dropdown, State=Default; `MENU - CLASS HANDLER`  | `6935:389261` Sidebar · MENU - CLASS HANDLER; `I6935:389261;4901:224371` Card Menu | — |  | `TC02`, `TC06`, `TC09`, `TC10a` | Khớp | QC |
-| `A01.02` | dropdown-quy-trinh | `Card Menu v2 (Test)` Type=Chính dropdown, State=Default | `I6935:389261;4901:224371` Card Menu | — |  | `TC01` | Khớp | QC |
-| `A01.03` | danh-sach-task |  | `6935:389275` Danh sách task | — |  | `TC02` | Khớp | QC |
-| `A01.04` | cot-thoi-gian |  | `6935:389389` Thời gian | — |  | `TC04` | Khớp | QC |
-| `A01.05` | task-hom-nay | `Card Menu v2 (Test)` Type=Con progress, State=Select | `I6935:389261;4901:224373` Card Menu | — |  | `TC01`, `TC02`, `TC04`, `TC05`, `TC06`, `TC07`, `TC09` | Khớp | QC |
-| `A01.06` | task-tuan-nay | `Card Menu v2 (Test)` Type=Con progress, State=Default | `I6935:389261;4901:224374` Card Menu | — |  | `TC04`, `TC05`, `TC06` | Khớp | QC |
-| `A01.07` | task-thang-nay |  |  | — |  | `TC04`, `TC05`, `TC06`, `TC07`, `TC09` | Chưa khớp tự động | QC |
-| `A01.08` | ca-truc | `Card Menu v2 (Test)` Type=Con progress, State=Default | `I6935:389261;4901:224375` Card Menu | — |  | `TC06`, `TC10a` | Khớp | QC |
-| `A01.09` | task-khac |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.10` | kiem-tra | `Atom/Badge`  | `I6935:389320;1048:1255` Badge | — |  | `TC03` | Khớp | QC |
-| `A01.11` | danh-gia |  | `6935:389328` Task · Đánh giá · Thường xuyên nhắc nhở học  | — |  |  | Khớp | QC |
-| `A01.12` | task-tien-trinh |  | `6935:389293` Task · Task tiến trình · Nhắc nhở học viên trước bu | — |  |  | Khớp | QC |
-| `A01.13` | task-nhap-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.14` | huong-dan-media |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.15` | deadline-xac-thuc-log | `LOGO CENTER`  | `I6935:389261;4901:224383` LOGO CENTER | — |  |  | Khớp | QC |
-| `A01.16` | sidebar-menu-class-handler | `MENU - CLASS HANDLER`  | `4915:257614` Sidebar · MENU - CLASS HANDLER | — |  |  | Chỉ có trên Figma | Figma |
+| `A01.01` | sidebar |  |  | — |  | `TC02`, `TC06`, `TC09`, `TC10a` | Chưa sync | QC |
+| `A01.02` | dropdown-quy-trinh |  |  | — |  | `TC01` | Chưa sync | QC |
+| `A01.03` | danh-sach-task |  |  | — |  | `TC02` | Chưa sync | QC |
+| `A01.04` | cot-thoi-gian |  |  | — |  | `TC04` | Chưa sync | QC |
+| `A01.05` | task-hom-nay |  |  | — |  | `TC01`, `TC02`, `TC04`, `TC05`, `TC06`, `TC07`, `TC09` | Chưa sync | QC |
+| `A01.06` | task-tuan-nay |  |  | — |  | `TC04`, `TC05`, `TC06` | Chưa sync | QC |
+| `A01.07` | task-thang-nay |  |  | — |  | `TC04`, `TC05`, `TC06`, `TC07`, `TC09` | Chưa sync | QC |
+| `A01.08` | ca-truc |  |  | — |  | `TC06`, `TC10a` | Chưa sync | QC |
+| `A01.09` | task-khac |  |  | — |  |  | Chưa sync | QC |
+| `A01.10` | kiem-tra |  |  | — |  | `TC03` | Chưa sync | QC |
+| `A01.11` | danh-gia |  |  | — |  |  | Chưa sync | QC |
+| `A01.12` | task-tien-trinh |  |  | — |  |  | Chưa sync | QC |
+| `A01.13` | task-nhap-lieu |  |  | — |  |  | Chưa sync | QC |
+| `A01.14` | huong-dan-media |  |  | — |  |  | Chưa sync | QC |
+| `A01.15` | deadline-xac-thuc-log |  |  | — |  |  | Chưa sync | QC |
 
 ### `A02` Trang 2: Task Khác và Popup chọn quy trình
 
-Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` (tool đoán:SP-TASK-010000, SP-TASK-020000, SP-TASK-030000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:SP-TASK-010000, SP-TASK-020000, SP-TASK-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | nut-chon-quy-trinh |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.02` | danh-sach-task |  | `3845:49699` Danh sách task | — |  | `TC11`, `TC13` | Khớp | QC |
-| `A02.03` | popup-o-tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.04` | popup-danh-sach |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.05` | popup-huy-xac-nhan | `Atom/Input` State=Counter, Kiểu=Chuẩn | `I3857:72491;1056:1242` Đã nhập xong | — |  |  | Khớp | QC |
-| `A02.06` | atom-input | `Atom/Input` State=Default, Kiểu=Chuẩn | `3857:72454` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
-| `A02.07` | atom-label | `Atom/Label`  | `3857:72487` Atom/Label | — |  |  | Chỉ có trên Figma | Figma |
+| `A02.01` | nut-chon-quy-trinh |  |  | — |  |  | Chưa sync | QC |
+| `A02.02` | danh-sach-task |  |  | — |  | `TC11`, `TC13` | Chưa sync | QC |
+| `A02.03` | popup-o-tim-kiem |  |  | — |  |  | Chưa sync | QC |
+| `A02.04` | popup-danh-sach |  |  | — |  |  | Chưa sync | QC |
+| `A02.05` | popup-huy-xac-nhan |  |  | — |  |  | Chưa sync | QC |
 
 ### `A03` Trang 3: Ca Trực
 
-Frame: `SP-TASK-030000` (tool đoán:SP-TASK-010000, SP-TASK-020000, SP-TASK-030000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:SP-TASK-010000, SP-TASK-020000, SP-TASK-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | dropdown-quy-trinh | `Card Menu v2 (Test)` Type=Chính dropdown, State=Default | `I4915:258070;4901:225148` Card Menu | — |  |  | Khớp | QC |
-| `A03.02` | dropdown-khoang-thoi-gian | `DD/Molecule/Trigger` Size=XS, State=Active | `3857:76093` Filter · Tuần này | — |  |  | Khớp | QC |
-| `A03.03` | dropdown-ca | `DD/Molecule/Trigger` Size=XS, State=Default | `3857:76690` Filter · Ca | — |  |  | Khớp | QC |
-| `A03.04` | sang |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.05` | chieu |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.06` | toi | `AVATAR + Name`  | `I6935:389072;1904:8731` Trần Nguyễn Hoài Phương | — |  |  | Khớp | QC |
+| `A03.01` | dropdown-quy-trinh |  |  | — |  |  | Chưa sync | QC |
+| `A03.02` | dropdown-khoang-thoi-gian |  |  | — |  |  | Chưa sync | QC |
+| `A03.03` | dropdown-ca |  |  | — |  |  | Chưa sync | QC |
+| `A03.04` | sang |  |  | — |  |  | Chưa sync | QC |
+| `A03.05` | chieu |  |  | — |  |  | Chưa sync | QC |
+| `A03.06` | toi |  |  | — |  |  | Chưa sync | QC |
 
 ### `A04` Trang 4: Popup thêm người vào Danh sách Support
 
-Frame: `SP-TASK-030010` (tool đoán:SP-TASK-010000, SP-TASK-020000, SP-TASK-030000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:SP-TASK-010000, SP-TASK-020000, SP-TASK-030000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | o-tim-kiem | `Atom/Input` State=Search, Kiểu=Chuẩn | `3857:76121` Atom/Input | — |  |  | Khớp | QC |
-| `A04.02` | nhom-nguoi-dung |  | `3857:76126` Trợ giảng | — |  |  | Khớp | QC |
-| `A04.03` | checkbox | `Checkbox` Size=20 | `3857:76132` Checkbox | — |  |  | Khớp | QC |
-
-### `F01` Header
-
-Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | account | `ACCOUNT` Size=Default | `3821:45908` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F02` (ngoài Body)
-
-Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F02.01` | them-nguoi-phu-trach | `Atom/Icon Button`  | `3845:49696` Thêm người phụ trách | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.02` | avatar-name | `AVATAR + Name`  | `6935:389044` AVATAR + Name | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.03` | global-progress-bar | `Global Progress Bar`  | `3857:72427` Global Progress Bar | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.04` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `3857:72429` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.05` | atom-chip | `Atom/Chip` Type=Date | `3857:72447` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.06` | atom-label | `Atom/Label`  | `3857:72450` Atom/Label | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.07` | atom-badge | `Atom/Badge`  | `3857:72467` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.08` | filter-tuan-nay | `DD/Molecule/Trigger` Size=XS, State=Active | `3845:49782` Filter · Tuần này | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.09` | percent | `PERCENT %`  | `3845:49796` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
+| `A04.01` | o-tim-kiem |  |  | — |  |  | Chưa sync | QC |
+| `A04.02` | nhom-nguoi-dung |  |  | — |  |  | Chưa sync | QC |
+| `A04.03` | checkbox |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -170,7 +143,7 @@ Frame: `SP-TASK-010000`, `SP-TASK-020000`, `SP-TASK-030000` · Nguồn nội dun
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (9): `A01.07`, `A01.09`, `A01.13`, `A01.14`, `A02.01`, `A02.03`, `A02.04`, `A03.04`, `A03.05`
+- Chưa sync (29): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.14`, `A01.15`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A04.01`, `A04.02`, `A04.03`
 - Frame Figma chưa có requirement (7): `SP-TASK-010001`, `SP-TASK-020001`, `SP-TASK-030001`, `SP-TASK-030002`, `SP-TASK-030003`, `SP-TASK-030004`, `SP-TASK-030010`
 - Phân loại cần design duyệt (3): `SP-TASK-010001`, `SP-TASK-020001`, `SP-TASK-030001`
 - Thiếu prototype link đi vào (4): `SP-TASK-010001`, `SP-TASK-020001`, `SP-TASK-030001`, `SP-TASK-030010`

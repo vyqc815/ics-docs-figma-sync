@@ -123,17 +123,13 @@
    "nodeId": "2391:65872",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/move-video/xac-minh-gmail",
    "link": "/move-video/xac-minh-gmail",
    "dark": "ADM-MV-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "T-MV.A01",
-    "T-MV.A02",
-    "T-MV.F01"
-   ]
+   "regions": []
   },
   "ADM-MV-020000": {
    "id": "ADM-MV-020000",
@@ -148,17 +144,13 @@
    "nodeId": "2391:66064",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/move-video/danh-sach-video",
    "link": "/move-video/danh-sach-video",
    "dark": "ADM-MV-020000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "T-MV.A01",
-    "T-MV.A02",
-    "T-MV.F01"
-   ]
+   "regions": []
   },
   "ADM-MV-020010": {
    "id": "ADM-MV-020010",
@@ -173,15 +165,13 @@
    "nodeId": "2391:66541",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-mv-020010",
    "link": "/move-video/danh-sach-video?popup=ADM-MV-020010",
    "dark": "ADM-MV-020010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "T-MV.A03"
-   ]
+   "regions": []
   },
   "ADM-MV-020020": {
    "id": "ADM-MV-020020",
@@ -196,15 +186,13 @@
    "nodeId": "2391:66560",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-mv-020020",
    "link": "/move-video/danh-sach-video?popup=ADM-MV-020020",
    "dark": "ADM-MV-020020-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "T-MV.A03"
-   ]
+   "regions": []
   },
   "ADM-MV-020030": {
    "id": "ADM-MV-020030",
@@ -219,15 +207,13 @@
    "nodeId": "2478:111049",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-mv-020030",
    "link": "/move-video/danh-sach-video?popup=ADM-MV-020030",
    "dark": "ADM-MV-020030-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "T-MV.A03"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -235,10 +221,7 @@
    "id": "T-MV.A01",
    "name": "trang-1-xac-minh-gmail",
    "title": "Trang 1: Xác minh Gmail",
-   "screens": [
-    "adm-mv-010000",
-    "adm-mv-020000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-MV-010000",
     "ADM-MV-020000"
@@ -248,16 +231,14 @@
    "requirement": "tools/move_video/move_video.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "T-MV.A02",
    "name": "trang-2-danh-sach-video",
    "title": "Trang 2: Danh sách video",
-   "screens": [
-    "adm-mv-010000",
-    "adm-mv-020000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-MV-010000",
     "ADM-MV-020000"
@@ -267,17 +248,14 @@
    "requirement": "tools/move_video/move_video.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "T-MV.A03",
    "name": "trang-3-popup-doi-ten-video-va-xac-nhan-",
    "title": "Trang 3: Popup Đổi tên video và xác nhận xoá",
-   "screens": [
-    "adm-mv-020010",
-    "adm-mv-020020",
-    "adm-mv-020030"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-MV-020010",
     "ADM-MV-020020",
@@ -288,211 +266,8 @@
    "requirement": "tools/move_video/move_video.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
-  },
-  {
-   "id": "T-MV.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-mv-010000",
-    "adm-mv-020000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "T-MV.F01.01",
-     "name": "empty-state-gmail",
-     "label": "Empty State / Gmail",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-mv-010000": [
-       {
-        "term": "Empty State / Gmail",
-        "figmaId": "2619:203719",
-        "layer": "Empty State / Gmail",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Empty State / Gmail",
-        "component": "Empty State / Gmail",
-        "variant": {
-         "Màu": "Cam"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "T-MV.F01.02",
-     "name": "atom-button",
-     "label": "Atom/Button",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-mv-010000": [
-       {
-        "term": "Atom/Button",
-        "figmaId": "2409:148203",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Xác Minh",
-         "Type": "Primary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "T-MV.F01.03",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-mv-010000": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:240882",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "Tools / move video"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "T-MV.F01.04",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-mv-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "2706:23582",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "T-MV.F01.05",
-     "name": "filter-thoi-gian",
-     "label": "Filter · Thời gian",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-mv-020000": [
-       {
-        "term": "Filter · Thời gian",
-        "figmaId": "3772:93338",
-        "layer": "Filter · Thời gian",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Thời gian",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "Tuần này",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "T-MV.F01.06",
-     "name": "mv-row-video",
-     "label": "MV/Row · Video",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-mv-020000": [
-       {
-        "term": "MV/Row · Video",
-        "figmaId": "2409:150819",
-        "layer": "MV/Row · Video",
-        "confidence": "cao",
-        "region": null,
-        "owner": "MV/Row · Video",
-        "component": "MV/Row · Video",
-        "variant": {
-         "Trường hợp": "Không thấy link",
-         "State": "Hover"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "items": [],
+   "screensFromItems": []
   }
  ],
  "exceptions": [

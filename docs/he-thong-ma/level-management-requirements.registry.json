@@ -39,18 +39,13 @@
    "nodeId": "689:12942",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quan-ly-cap-do",
    "link": "/quan-ly-cap-do",
    "dark": "CD-CDO-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "CM-LM2.A01",
-    "CM-LM2.A02",
-    "CM-LM2.A03",
-    "CM-LM2.F01"
-   ]
+   "regions": []
   },
   "CD-CDO-010010": {
    "id": "CD-CDO-010010",
@@ -65,7 +60,7 @@
    "nodeId": "1901:3763",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-cdo-010010",
    "link": "/quan-ly-cap-do?popup=CD-CDO-010010",
    "dark": "CD-CDO-010010-DK",
@@ -86,7 +81,7 @@
    "nodeId": "1901:3819",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-cdo-010012",
    "link": "/quan-ly-cap-do?state=CD-CDO-010012",
    "dark": "CD-CDO-010012-DK",
@@ -100,9 +95,7 @@
    "id": "CM-LM2.A01",
    "name": "trang-1-danh-sach-cap-do",
    "title": "Trang 1: Danh sách cấp độ",
-   "screens": [
-    "cd-cdo-010000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-CDO-010000"
    ],
@@ -111,15 +104,14 @@
    "requirement": "curriculum_management_requirement/level_management/level_management_requirements.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "CM-LM2.A02",
    "name": "form-them-cap-nhat-cap-do",
    "title": "Form thêm/cập nhật cấp độ",
-   "screens": [
-    "cd-cdo-010000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-CDO-010000"
    ],
@@ -136,27 +128,11 @@
      "spec": "Hiển thị trên danh sách. Quy tắc sinh, định dạng, độ dài, tính bắt buộc và khả năng chỉnh sửa chưa được định nghĩa; xem mục `Cần xác nhận`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "ID",
-        "figmaId": "1910:19801",
-        "layer": "ID",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Cần xác nhận"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM2.A02.02",
@@ -165,25 +141,11 @@
      "spec": "Bắt buộc, không được chỉ chứa khoảng trắng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Tên cấp độ",
-        "figmaId": "1910:19803",
-        "layer": "Tên cấp độ",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM2.A02.03",
@@ -192,27 +154,13 @@
      "spec": "Bắt buộc, không được chỉ chứa khoảng trắng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Mô tả cấp độ",
-        "figmaId": "1910:19805",
-        "layer": "Mô tả cấp độ",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-LM2.TC09"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM2.A02.04",
@@ -221,21 +169,7 @@
      "spec": "Bắt buộc và không được trùng. Đây là mã tham chiếu mà feature `Quản lý danh mục` sử dụng khi người dùng chọn cấp độ cho khóa học thuộc danh mục, ví dụ `HSK1`, `HSK2`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Mã cấp độ",
-        "figmaId": "1910:19807",
-        "layer": "Mã cấp độ",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-LM2.TC01",
@@ -244,10 +178,8 @@
       "CM-LM2.TC04",
       "CM-LM2.TC05"
      ],
-     "missingTerms": [
-      "Quản lý danh mục"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM2.A02.05",
@@ -256,35 +188,7 @@
      "spec": "Gồm `Nháp`, `Công khai`, `Vô hiệu hóa`; mặc định là `Nháp`. Cho phép chuyển từ trạng thái hiện tại sang một trong hai trạng thái còn lại.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Trạng thái",
-        "figmaId": "1910:19810",
-        "layer": "Trạng thái",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       },
-       {
-        "term": "Nháp",
-        "figmaId": "1901:2093",
-        "layer": "Atom/Status",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Status",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Nháp",
-         "Size": "M"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-LM2.TC01",
@@ -293,17 +197,16 @@
       "CM-LM2.TC06"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "CM-LM2.A03",
    "name": "toast-phan-hoi-crud",
    "title": "Toast phản hồi CRUD",
-   "screens": [
-    "cd-cdo-010000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-CDO-010000"
    ],
@@ -327,11 +230,8 @@
       "CM-LM2.TTC02",
       "CM-LM2.TTC04"
      ],
-     "missingTerms": [
-      "Thành công",
-      "Thành Công"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM2.A03.02",
@@ -345,11 +245,8 @@
      "testcases": [
       "CM-LM2.TC09"
      ],
-     "missingTerms": [
-      "Thông tin",
-      "Thông Báo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM2.A03.03",
@@ -363,11 +260,8 @@
      "testcases": [
       "CM-LM2.TTC02"
      ],
-     "missingTerms": [
-      "Cảnh báo",
-      "Cảnh Báo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM2.A03.04",
@@ -379,242 +273,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Lỗi",
-      "Có Lỗi Xảy Ra"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "CM-LM2.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "cd-cdo-010000"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CM-LM2.F01.01",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "2223:86219",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM2.F01.02",
-     "name": "component-2",
-     "label": "Component 2",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Component 2",
-        "figmaId": "4273:160803",
-        "layer": "Component 2",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Component 2",
-        "component": "Switch Center",
-        "variant": {
-         "Property 1": "Sakumi"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM2.F01.03",
-     "name": "id-badge",
-     "label": "ID Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "ID Badge",
-        "figmaId": "1994:25893",
-        "layer": "ID Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ID Badge",
-        "component": "Atom/ID Badge",
-        "variant": {
-         "Type": "6-digit",
-         "Size": "26H",
-         "Item": "01"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM2.F01.04",
-     "name": "atom-badge",
-     "label": "Atom/Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Atom/Badge",
-        "figmaId": "2409:144867",
-        "layer": "Atom/Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Badge",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "HSK3",
-         "Variant": "Danger",
-         "Dropdown": "Off"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM2.F01.05",
-     "name": "atom-status",
-     "label": "Atom/Status",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Atom/Status",
-        "figmaId": "1901:1951",
-        "layer": "Atom/Status",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Status",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Công khai",
-         "Size": "M"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM2.F01.06",
-     "name": "add-new-bar-them-danh-muc-moi",
-     "label": "Add New Bar · Thêm danh mục mới",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Add New Bar · Thêm danh mục mới",
-        "figmaId": "2702:48237",
-        "layer": "Add New Bar · Thêm danh mục mới",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Add New Bar · Thêm danh mục mới",
-        "component": "Molecule/Add New Bar",
-        "variant": {
-         "Icon trái": true,
-         "Nút": "1080:1498",
-         "Placeholder": "Thêm danh mục mới",
-         "Type": "Box",
-         "Size": "M",
-         "State": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM2.F01.07",
-     "name": "sidebar-menu-cd",
-     "label": "Sidebar · MENU - CD",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Sidebar · MENU - CD",
-        "figmaId": "4915:256939",
-        "layer": "Sidebar · MENU - CD",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - CD",
-        "component": "MENU - CD",
-        "variant": {
-         "Trang": "Danh Mục & Cấp Độ"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

@@ -31,118 +31,97 @@ Requirement: `process_definition_requirement/process_definition_requirements.md`
 
 ### `A01` Trang 1: Danh sách loại quy trình
 
-Frame: `ADM-QT-010001` (tool đoán:ADM-QT-010001) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-QT-010001) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | danh-sach |  | `6823:374956` Danh sách loại quy trình | — |  | `TC01`, `TC22`, `TC23` | Khớp | QC |
-| `A01.02` | tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `I6823:374958;1739:32351` Tìm nội dung...; `6823:375024` Nghỉ học | — |  |  | Khớp | QC |
-| `A01.03` | bo-loc |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
-| `A01.04` | sap-xep |  | `6823:374979` Ngày cập nhật | — |  |  | Khớp | QC |
-| `A01.05` | loai-quy-trinh | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M; `DD/Molecule/Trigger` Size=XS, State=Default | `6823:374960` Dropdown · Loại quy trình; `I6823:375294;2015:31501;6823:377347` Lớp & giáo viên | — |  | `TC17` | Khớp | QC |
-| `A01.06` | trang-thai-quy-trinh | `Atom/Status` Size=M | `6823:375036` Atom/Status | — |  |  | Khớp | QC |
-| `A01.07` | nhap-quy-trinh-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `6823:375117` Add New Bar · Nhập nội dung mới | — |  | `TC02`, `TC23` | Khớp | QC |
-| `A01.08` | thong-tin-quy-trinh |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.09` | nut-xoa-cuoi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.10` | nut-nhan-ban-cuoi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.11` | mui-ten-cuoi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.12` | phan-trang |  | `6823:375119` Phân Trang | — |  | `TC01` | Khớp | QC |
-| `A01.13` | nhap | `Atom/Status` Size=M | `6823:375036` Atom/Status | — |  | `TC02`, `TC03`, `TC04`, `TC22`, `TC23`, `TC12` | Khớp | QC |
-| `A01.14` | cong-khai | `Atom/Status` Size=M | `6823:374998` Atom/Status | — |  | `TC03`, `TC04`, `TC22`, `TC12` | Khớp | QC |
-| `A01.15` | vo-hieu | `Atom/Status` Size=M | `6823:375055` Atom/Status | — |  | `TC03`, `TC04`, `TC24` | Khớp | QC |
+| `A01.01` | danh-sach |  |  | — |  | `TC01`, `TC22`, `TC23` | Chưa sync | QC |
+| `A01.02` | tim-kiem |  |  | — |  |  | Chưa sync | QC |
+| `A01.03` | bo-loc |  |  | — |  | `TC01` | Chưa sync | QC |
+| `A01.04` | sap-xep |  |  | — |  |  | Chưa sync | QC |
+| `A01.05` | loai-quy-trinh |  |  | — |  | `TC17` | Chưa sync | QC |
+| `A01.06` | trang-thai-quy-trinh |  |  | — |  |  | Chưa sync | QC |
+| `A01.07` | nhap-quy-trinh-moi |  |  | — |  | `TC02`, `TC23` | Chưa sync | QC |
+| `A01.08` | thong-tin-quy-trinh |  |  | — |  |  | Chưa sync | QC |
+| `A01.09` | nut-xoa-cuoi-dong |  |  | — |  |  | Chưa sync | QC |
+| `A01.10` | nut-nhan-ban-cuoi-dong |  |  | — |  |  | Chưa sync | QC |
+| `A01.11` | mui-ten-cuoi-dong |  |  | — |  |  | Chưa sync | QC |
+| `A01.12` | phan-trang |  |  | — |  | `TC01` | Chưa sync | QC |
+| `A01.13` | nhap |  |  | — |  | `TC02`, `TC03`, `TC04`, `TC22`, `TC23`, `TC12` | Chưa sync | QC |
+| `A01.14` | cong-khai |  |  | — |  | `TC03`, `TC04`, `TC22`, `TC12` | Chưa sync | QC |
+| `A01.15` | vo-hieu |  |  | — |  | `TC03`, `TC04`, `TC24` | Chưa sync | QC |
 
 ### `A02` Trang 1a: Nhân bản quy trình
 
-Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | ten-quy-trinh-moi |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.02` | loai-quy-trinh | `DD/Molecule/Trigger` Size=XS, State=Default | `6823:374939` Dropdown · Loại quy trình | — |  |  | Khớp | QC |
-| `A02.03` | huy-xac-nhan | `Atom/Input` State=Filled, Kiểu=Chuẩn | `I2702:35911;1048:1266` Đã nhập xong; `2702:47939` Xác nhận bạn vắng đã học bù | — |  |  | Khớp một phần | QC |
+| `A02.01` | ten-quy-trinh-moi |  |  | — |  |  | Chưa sync | QC |
+| `A02.02` | loai-quy-trinh |  |  | — |  |  | Chưa sync | QC |
+| `A02.03` | huy-xac-nhan |  |  | — |  |  | Chưa sync | QC |
 
 ### `A03` Trang 1b: Xóa quy trình
 
-Frame: `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.02` | noi-dung | `Atom/Input` State=Default, Kiểu=Chuẩn | `I2702:47869;1048:1264` Tìm nội dung... | — |  |  | Khớp | QC |
-| `A03.03` | huy-xoa | `Atom/Input` State=Filled, Kiểu=Chuẩn | `I2702:35911;1048:1266` Đã nhập xong; `3058:120687` Nút xoá | — |  |  | Khớp | QC |
+| `A03.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
+| `A03.02` | noi-dung |  |  | — |  |  | Chưa sync | QC |
+| `A03.03` | huy-xoa |  |  | — |  |  | Chưa sync | QC |
 
 ### `A04` Trang 2: Chi tiết loại quy trình
 
-Frame: `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | quay-lai |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.02` | danh-sach-package |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.03` | them-moi-package | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `2706:35135` Add New Bar · Thêm mới | — |  |  | Khớp | QC |
-| `A04.04` | category | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2702:48139` Add New Bar · Nhập danh mục mới | — |  | `TC05`, `TC06` | Khớp | QC |
-| `A04.05` | action-item | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2702:48146` Add New Bar · Nhập nội dung mới | — |  | `TC05` | Khớp | QC |
-| `A04.06` | keo-tha | `Atom/Dropzone` Kiểu=Mặc định | `I2702:47717;1061:1316` Kéo thả file vào đây hoặc chọn file | — |  | `TC07` | Khớp | QC |
-| `A04.07` | toggle-package |  |  | — |  | `TC07` | Chưa khớp tự động | QC |
+| `A04.01` | quay-lai |  |  | — |  |  | Chưa sync | QC |
+| `A04.02` | danh-sach-package |  |  | — |  |  | Chưa sync | QC |
+| `A04.03` | them-moi-package |  |  | — |  |  | Chưa sync | QC |
+| `A04.04` | category |  |  | — |  | `TC05`, `TC06` | Chưa sync | QC |
+| `A04.05` | action-item |  |  | — |  | `TC05` | Chưa sync | QC |
+| `A04.06` | keo-tha |  |  | — |  | `TC07` | Chưa sync | QC |
+| `A04.07` | toggle-package |  |  | — |  | `TC07` | Chưa sync | QC |
 
 ### `A05` Dropdown Loại task và field cấu hình
 
-Frame: `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | huong-dan | `Atom/Badge Type` Size=M; `Atom/Uploaded File Card` Type=Close | `2702:47701` Atom/Badge Type; `I2702:47724;1061:1321` MP4 | — |  | `TC09` | Khớp | QC |
-| `A05.02` | task-tien-trinh | `Atom/Badge Type` Size=M | `2702:47753` Atom/Badge Type | — |  |  | Khớp | QC |
-| `A05.03` | task-nhap-lieu | `Atom/Badge Type` Size=M | `2702:47775` Atom/Badge Type | — |  |  | Khớp | QC |
-| `A05.04` | kiem-tra | `Atom/Badge Type` Size=M | `2702:47798` Atom/Badge Type | — |  |  | Khớp | QC |
-| `A05.05` | danh-gia | `Atom/Badge Type` Size=M; `Atom/Input` State=CChọn, Kiểu=Chuẩn | `2702:47821` Atom/Badge Type; `2702:47838` Atom/Input | — |  |  | Khớp | QC |
-| `A05.06` | media | `Atom/Badge Type` Size=M; `Atom/Uploaded File Card` Type=Close | `2702:47851` Atom/Badge Type; `I2702:47881;1061:1321` MP4 | — |  | `TC09` | Khớp | QC |
-| `A05.07` | deadline | `Atom/Badge Type` Size=M; `Atom/Input` State=CChọn, Kiểu=Chuẩn | `2702:47900` Atom/Badge Type; `I2711:53799;2148:20906` Chọn | — |  |  | Khớp | QC |
-| `A05.08` | xac-thuc | `Atom/Badge Type` Size=M; `Atom/Input` State=CChọn, Kiểu=Chuẩn | `2702:47941` Atom/Badge Type; `I2711:53812;2148:20906` Chọn | — |  |  | Khớp | QC |
-| `A05.09` | log | `Atom/Badge Type` Size=M; `Atom/Input` State=CChọn, Kiểu=Chuẩn | `2702:47976` Atom/Badge Type; `I2711:53824;2148:20906` Chọn | — |  |  | Khớp | QC |
+| `A05.01` | huong-dan |  |  | — |  | `TC09` | Chưa sync | QC |
+| `A05.02` | task-tien-trinh |  |  | — |  |  | Chưa sync | QC |
+| `A05.03` | task-nhap-lieu |  |  | — |  |  | Chưa sync | QC |
+| `A05.04` | kiem-tra |  |  | — |  |  | Chưa sync | QC |
+| `A05.05` | danh-gia |  |  | — |  |  | Chưa sync | QC |
+| `A05.06` | media |  |  | — |  | `TC09` | Chưa sync | QC |
+| `A05.07` | deadline |  |  | — |  |  | Chưa sync | QC |
+| `A05.08` | xac-thuc |  |  | — |  |  | Chưa sync | QC |
+| `A05.09` | log |  |  | — |  |  | Chưa sync | QC |
 
 ### `A06` Sử dụng nguồn trong lớp
 
-Frame: `ADM-QT-010000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | noi-dung-da-them |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A06.02` | result |  |  | — |  | `TC10` | Chưa khớp tự động | QC |
-| `A06.03` | tab-trong-lop | `Atom/Badge`  | `I6823:374912;2015:30345` Badge | — |  |  | Khớp | QC |
-| `A06.04` | quy-trinh-cua-phu-trach-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.01` | noi-dung-da-them |  |  | — |  |  | Chưa sync | QC |
+| `A06.02` | result |  |  | — |  | `TC10` | Chưa sync | QC |
+| `A06.03` | tab-trong-lop |  |  | — |  |  | Chưa sync | QC |
+| `A06.04` | quy-trinh-cua-phu-trach-lop |  |  | — |  |  | Chưa sync | QC |
 
 ### `A07` Toast phản hồi CRUD
 
-Frame: `ADM-QT-010000`, `ADM-QT-020000` (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-QT-010000, ADM-QT-020000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | thanh-cong |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
-| `A07.02` | thong-bao |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
-| `A07.03` | canh-bao |  |  | — |  | `TC11` | Chưa khớp tự động | QC |
-| `A07.04` | co-loi-xay-ra |  |  | — |  |  | Chưa khớp tự động | QC |
-
-### `F01` (ngoài Body)
-
-Frame: `ADM-QT-010000`, `ADM-QT-020000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `2702:35217` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Default | `2702:35218` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | atom-badge | `Atom/Badge`  | `6823:374912` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | avatar-name | `AVATAR + Name`  | `2702:35730` AVATAR + Name | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | atom-status | `Atom/Status` Size=M | `2702:48937` Atom/Status | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | add-new-bar-nhap-noi-dung-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `3108:122528` Add New Bar · Nhập nội dung mới | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | phan-trang |  | `2702:35460` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:239029` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | account | `ACCOUNT` Size=Default | `2683:210310` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | atom-icon-button | `Atom/Icon Button`  | `2706:40371` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | mouse-click |  | `2706:40378` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.12` | atom-dropzone | `Atom/Dropzone` Kiểu=Mặc định | `2702:47717` Atom/Dropzone | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.13` | atom-uploaded-file-card | `Atom/Uploaded File Card` Type=Close | `2702:47724` Atom/Uploaded File Card | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.14` | switch | `Switch` Size=Small | `2706:35142` Switch | — |  |  | Chỉ có trên Figma | Figma |
+| `A07.01` | thanh-cong |  |  | — |  | `TC11` | Chưa sync | QC |
+| `A07.02` | thong-bao |  |  | — |  | `TC11` | Chưa sync | QC |
+| `A07.03` | canh-bao |  |  | — |  | `TC11` | Chưa sync | QC |
+| `A07.04` | co-loi-xay-ra |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -208,7 +187,7 @@ Frame: `ADM-QT-010000`, `ADM-QT-020000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (17): `A01.03`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A02.01`, `A03.01`, `A04.01`, `A04.02`, `A04.07`, `A06.01`, `A06.02`, `A06.04`, `A07.01`, `A07.02`, `A07.03`, `A07.04`
+- Chưa sync (45): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.14`, `A01.15`, `A02.01`, `A02.02`, `A02.03`, `A03.01`, `A03.02`, `A03.03`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A05.09`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A07.01`, `A07.02`, `A07.03`, `A07.04`
 - Frame Figma chưa có requirement (1): `ADM-QT-010001`
 
 ## 9. Chi tiết dựng

@@ -67,23 +67,13 @@
    "nodeId": "2384:51368",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lop-hoc/cai-dat/tro-giang-support",
    "link": "/lop-hoc/cai-dat/tro-giang-support",
    "dark": "ADM-LOP-040400-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "M-CDS4.A01",
-    "M-CDS4.A02",
-    "M-CDS4.A03",
-    "M-CDS4.A04",
-    "M-CDS4.A05",
-    "M-CDS4.A06",
-    "M-CDS4.A07",
-    "M-CDS4.A08",
-    "M-CDS4.F01"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -91,9 +81,7 @@
    "id": "M-CDS4.A01",
    "name": "tab-tro-giang-phu-trach-lop",
    "title": "Tab Trợ giảng & Phụ trách lớp",
-   "screens": [
-    "adm-lop-040400"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040400"
    ],
@@ -113,11 +101,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tên tab",
-      "Trợ giảng & Phụ trách lớp"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A01.02",
@@ -126,29 +111,13 @@
      "spec": "Danh sách tài khoản role `Support` đã được thêm vào lớp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "Support",
-        "figmaId": "2384:54801",
-        "layer": "Support",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDS4.TC01"
      ],
-     "missingTerms": [
-      "Khu vực Trợ giảng"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A01.03",
@@ -160,11 +129,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Khu vực Phụ trách lớp",
-      "Class Handler"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A01.04",
@@ -173,25 +139,11 @@
      "spec": "Hiển thị họ tên của đúng người dùng. Có thể kèm avatar/mã nội bộ nhưng không bắt buộc theo yêu cầu hiện tại.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "Tên",
-        "figmaId": "2384:54739",
-        "layer": "Tên",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A01.05",
@@ -205,10 +157,8 @@
      "testcases": [
       "M-CDS4.TC03"
      ],
-     "missingTerms": [
-      "Email"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A01.06",
@@ -228,10 +178,8 @@
      "testcases": [
       "M-CDS4.TC03"
      ],
-     "missingTerms": [
-      "X"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A01.07",
@@ -251,20 +199,17 @@
      "testcases": [
       "M-CDS4.TC04"
      ],
-     "missingTerms": [
-      "+"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDS4.A02",
    "name": "popup-chon-cach-them-nhan-su",
    "title": "Popup chọn cách thêm nhân sự",
-   "screens": [
-    "adm-lop-040400"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040400"
    ],
@@ -284,11 +229,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Khu vực Phụ trách lớp",
-      "Chọn phụ trách lớp"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A02.02",
@@ -300,11 +242,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Khu vực Trợ giảng",
-      "Chọn trợ giảng"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A02.03",
@@ -318,20 +257,17 @@
      "testcases": [
       "M-CDS4.TC08"
      ],
-     "missingTerms": [
-      "Đóng/Hủy"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDS4.A03",
    "name": "popup-chon-phu-trach-lop-co-san",
    "title": "Popup chọn Phụ trách lớp có sẵn",
-   "screens": [
-    "adm-lop-040400"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040400"
    ],
@@ -351,10 +287,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tìm kiếm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A03.02",
@@ -366,11 +300,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Danh sách kết quả",
-      "Class Handler"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A03.03",
@@ -379,29 +310,11 @@
      "spec": "Cho chọn một hoặc nhiều người trong cùng lần thao tác.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "Checkbox",
-        "figmaId": "2384:54775",
-        "layer": "Checkbox",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Checkbox",
-        "component": "Checkbox",
-        "variant": {
-         "Checked": "No",
-         "Size": "24",
-         "Disabled": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A03.04",
@@ -410,25 +323,11 @@
      "spec": "Đóng popup, không thêm các lựa chọn chưa xác nhận.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "Hủy",
-        "figmaId": "2384:54753",
-        "layer": "Thanh huy - CSKH",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A03.05",
@@ -444,20 +343,17 @@
       "M-CDS4.TC11",
       "M-CDS4.TC13"
      ],
-     "missingTerms": [
-      "Thêm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDS4.A04",
    "name": "popup-chon-tro-giang-co-san",
    "title": "Popup chọn Trợ giảng có sẵn",
-   "screens": [
-    "adm-lop-040400"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040400"
    ],
@@ -477,10 +373,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tìm kiếm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A04.02",
@@ -492,10 +386,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Danh sách kết quả"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A04.03",
@@ -504,29 +396,11 @@
      "spec": "Hỗ trợ multi-select.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "Checkbox",
-        "figmaId": "2384:54775",
-        "layer": "Checkbox",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Checkbox",
-        "component": "Checkbox",
-        "variant": {
-         "Checked": "No",
-         "Size": "24",
-         "Disabled": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A04.04",
@@ -538,20 +412,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Hủy/Thêm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDS4.A05",
    "name": "popup-tao-phu-trach-lop-tro-giang-moi-du",
    "title": "Popup Tạo Phụ trách lớp/Trợ giảng mới dùng chung",
-   "screens": [
-    "adm-lop-040400"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040400"
    ],
@@ -571,10 +442,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Form tạo tài khoản"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A05.02",
@@ -591,11 +460,8 @@
       "M-CDS4.TC19",
       "M-CDS4.TC20"
      ],
-     "missingTerms": [
-      "Role",
-      "Tạo phụ trách lớp mới"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A05.03",
@@ -604,25 +470,11 @@
      "spec": "Đóng popup; không tạo tài khoản và không thêm vào lớp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "Hủy",
-        "figmaId": "2384:54753",
-        "layer": "Thanh huy - CSKH",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A05.04",
@@ -637,20 +489,17 @@
       "M-CDS4.TC18",
       "M-CDS4.TC20"
      ],
-     "missingTerms": [
-      "Xác nhận/Tạo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDS4.A06",
    "name": "icon-xoa-khoi-lop-khong-can-xac-nhan",
    "title": "Icon Xóa khỏi lớp không cần xác nhận",
-   "screens": [
-    "adm-lop-040400"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040400"
    ],
@@ -670,10 +519,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "X"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A06.02",
@@ -685,10 +532,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Khi bấm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A06.03",
@@ -704,10 +549,8 @@
       "M-CDS4.TC24",
       "M-CDS4.TC25"
      ],
-     "missingTerms": [
-      "Thành công"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A06.04",
@@ -721,20 +564,17 @@
      "testcases": [
       "M-CDS4.TC25"
      ],
-     "missingTerms": [
-      "Thất bại"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDS4.A07",
    "name": "phan-quyen-ho-tro-lop-va-gioi-han-cham-d",
    "title": "Phân quyền hỗ trợ lớp và giới hạn chấm điểm",
-   "screens": [
-    "adm-lop-040400"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040400"
    ],
@@ -754,10 +594,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Xem lớp"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A07.02",
@@ -771,10 +609,8 @@
      "testcases": [
       "M-CDS4.TC27"
      ],
-     "missingTerms": [
-      "Hỗ trợ quản lý"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A07.03",
@@ -786,10 +622,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thêm/xóa nhân sự tại tab này"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A07.04",
@@ -801,10 +635,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Chấm điểm BTVN"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A07.05",
@@ -816,20 +648,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Chấm điểm bài kiểm tra"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDS4.A08",
    "name": "toast-phan-hoi-crud",
    "title": "Toast phản hồi CRUD",
-   "screens": [
-    "adm-lop-040400"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040400"
    ],
@@ -853,11 +682,8 @@
       "M-CDS4.TTC02",
       "M-CDS4.TTC04"
      ],
-     "missingTerms": [
-      "Thành công",
-      "Thành Công"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A08.02",
@@ -866,32 +692,11 @@
      "spec": "`Thông Báo` | Danh sách đang chờ đồng bộ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "Thông tin",
-        "figmaId": "I2384:54702;2177:28928",
-        "layer": "Chi tiết NV",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thông Báo"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A08.03",
@@ -905,11 +710,8 @@
      "testcases": [
       "M-CDS4.TTC02"
      ],
-     "missingTerms": [
-      "Cảnh báo",
-      "Cảnh Báo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS4.A08.04",
@@ -921,175 +723,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Lỗi",
-      "Có Lỗi Xảy Ra"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "M-CDS4.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-lop-040400"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "M-CDS4.F01.01",
-     "name": "atom-side-tab",
-     "label": "Atom/Side Tab",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "Atom/Side Tab",
-        "figmaId": "2384:54702",
-        "layer": "Atom/Side Tab",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDS4.F01.02",
-     "name": "atom-icon-button",
-     "label": "Atom/Icon Button",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "Atom/Icon Button",
-        "figmaId": "2384:54729",
-        "layer": "Atom/Icon Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Icon Button",
-        "component": "Atom/Icon Button",
-        "variant": {
-         "Icon": "Plus Button Add"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDS4.F01.03",
-     "name": "mouse-click",
-     "label": "Mouse click",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "Mouse click",
-        "figmaId": "2384:54762",
-        "layer": "Mouse click",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Mouse click",
-        "component": null,
-        "variant": {},
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDS4.F01.04",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:229497",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "Quản lý / Lớp Học / Cài đặt"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDS4.F01.05",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040400": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "3497:51034",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

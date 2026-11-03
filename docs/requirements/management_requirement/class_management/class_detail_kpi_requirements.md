@@ -4,10 +4,7 @@ Tab này quản lý khoản KPI của `Class Handler` (PTL). Chỉ KPI **Đã x�
 
 ## 1. UI
 
-### Trang 1: ADM-LOP-040700 — Tab KPI — Danh sách và tìm kiếm
-
-![Figma mới nhất · ADM-LOP-040700](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040700.png)
-
+### Trang 1: Tab KPI — Danh sách và tìm kiếm
 ![Trang 1](./images/31-class-detail-kpi.png)
 
 *Danh sách KPI — nhấn để xem ảnh gốc*
@@ -33,10 +30,7 @@ Tab này quản lý khoản KPI của `Class Handler` (PTL). Chỉ KPI **Đã x�
 - Đã hủy vẫn hiển thị và được tìm kiếm; Đã xóa ẩn khỏi danh sách, giữ audit.
 - Bấm tên/vùng thông tin mở popup sửa hoặc xem; thao tác trạng thái, ghi chú và X không đồng thời mở form sửa.
 
-### Trang 2: ADM-LOP-040710 — Popup thêm và chỉnh sửa KPI
-
-![Figma mới nhất · ADM-LOP-040710](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040710.png)
-
+### Trang 2: Popup thêm và chỉnh sửa KPI
 ![Trang 2](./images/32-class-kpi-edit-popup.png)
 
 *Form thêm dùng cùng field với form chỉnh sửa — nhấn để xem ảnh gốc*
@@ -62,10 +56,7 @@ Tab này quản lý khoản KPI của `Class Handler` (PTL). Chỉ KPI **Đã x�
 - Ngày cập nhật lấy máy chủ khi tạo/sửa/trạng thái/ghi chú thành công; xem/search/Hủy draft không đổi mốc này.
 - Khoản xác nhận khóa người nhận, tiền, thời gian, ghi chú và trạng thái. Không có flow mở lại/đảo KPI.
 
-### Trang 3: ADM-LOP-040712 — Dropdown trạng thái và xác nhận
-
-![Figma mới nhất · ADM-LOP-040712](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040712.png)
-
+### Trang 3: Dropdown trạng thái và xác nhận
 ![Trang 3](./images/33-class-kpi-status-popup.png)
 
 *Bốn trạng thái KPI — nhấn để xem ảnh gốc*
@@ -86,10 +77,7 @@ Tab này quản lý khoản KPI của `Class Handler` (PTL). Chỉ KPI **Đã x�
 - Chọn Đã xóa trong dropdown phải dùng cùng popup xác nhận như X.
 - Xác nhận ghi nhận chi phí; không đồng nghĩa đã thanh toán cho Handler.
 
-### Trang 4: ADM-LOP-040700 — Xóa khoản KPI
-
-![Figma mới nhất · ADM-LOP-040700](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040700.png)
-
+### Trang 4: Xóa khoản KPI
 **Mô tả:** X hoặc Đã xóa mở popup xác nhận cho khoản chưa xác nhận.
 
 **Giải thích field/thành phần:**
@@ -104,10 +92,7 @@ Tab này quản lý khoản KPI của `Class Handler` (PTL). Chỉ KPI **Đã x�
 - Không có X hoạt động trên khoản xác nhận; API cũng chặn.
 - Xóa lặp không tạo nhiều thao tác logic.
 
-### Trang 5: ADM-LOP-040700 — Ghi chú, lịch sử và Copy
-
-![Figma mới nhất · ADM-LOP-040700](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040700.png)
-
+### Trang 5: Ghi chú, lịch sử và Copy
 ![Trang 5](./images/16-class-detail-student-note.png)
 
 *Dùng lại UI popup ghi chú của tab Học viên; tiêu đề khi dùng cho KPI là Ghi chú KPI.*
@@ -138,10 +123,7 @@ Tab này quản lý khoản KPI của `Class Handler` (PTL). Chỉ KPI **Đã x�
 - Không âm thầm ghi đè khi hai người sửa cùng phiên bản; cảnh báo xung đột và cho tải lại. Lưu lỗi giữ draft, không tạo lịch sử thành công giả.
 - Sửa ghi chú không thay đổi tiền, trạng thái KPI hoặc Tổng chi PTL.
 
-### Trang 6: ADM-LOP-040700 — Tổng chi PTL
-
-![Figma mới nhất · ADM-LOP-040700](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040700.png)
-
+### Trang 6: Tổng chi PTL
 **Mô tả:** Chi phí PTL từng lớp cộng KPI Đã xác nhận; Tổng chi PTL cộng chi phí của tất cả lớp thỏa filter danh sách.
 
 **Giải thích field/thành phần:**
@@ -156,10 +138,7 @@ Tab này quản lý khoản KPI của `Class Handler` (PTL). Chỉ KPI **Đã x�
 - Ví dụ Mới 100.000đ, xác nhận 200.000đ và 300.000đ, hủy 400.000đ → chi PTL 500.000đ.
 - Lưu trạng thái và đồng bộ tổng nhất quán; xác nhận lặp không cộng lại.
 
-### Trang 7: ADM-LOP-040700 — Toast và trạng thái tải
-
-![Figma mới nhất · ADM-LOP-040700](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040700.png)
-
+### Trang 7: Toast và trạng thái tải
 ![Trang 7](../../images/01-toast-crud.png)
 
 **Mô tả:** CRUD có Toast sau backend; loading/rỗng/lỗi tại bảng.

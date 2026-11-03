@@ -67,7 +67,7 @@
    "nodeId": "497:18242",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/hoc-ky/kiem-tra",
    "link": "/hoc-ky/kiem-tra",
    "dark": "CD-KH-030300-DK",
@@ -77,12 +77,7 @@
     "CD-KH-030200"
    ],
    "citedByRequirement": true,
-   "regions": [
-    "CM-TE.A01",
-    "CM-TE.A03",
-    "CM-TE.A04",
-    "CM-TE.F01"
-   ]
+   "regions": []
   },
   "CD-KH-030310": {
    "id": "CD-KH-030310",
@@ -97,7 +92,7 @@
    "nodeId": "1496:16304",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/hoc-ky/kiem-tra/popup-cau-hinh-bai-kiem-tra",
    "link": "/hoc-ky/kiem-tra?popup=CD-KH-030310",
    "dark": "CD-KH-030310-DK",
@@ -105,9 +100,7 @@
     "CD-KH-030300"
    ],
    "citedByRequirement": true,
-   "regions": [
-    "CM-TE.A02"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -115,9 +108,7 @@
    "id": "CM-TE.A01",
    "name": "danh-sach-bai-kiem-tra",
    "title": "Danh sách bài kiểm tra",
-   "screens": [
-    "cd-kh-030300"
-   ],
+   "screens": [],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -143,11 +134,8 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [
-      "Card bài kiểm tra",
-      "ID"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-TE.A01.02",
@@ -156,31 +144,13 @@
      "spec": "Thời gian làm bài rút gọn: `30m`, `1h30m`; chưa cấu hình hiển thị `—`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "30m",
-        "figmaId": "I2860:37178;1207:1810",
-        "layer": "30m",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Info Badge",
-        "component": "Atom/Info Badge",
-        "variant": {
-         "Type": "Duration"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-TE.TC01"
      ],
-     "missingTerms": [
-      "Chip thời gian"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-TE.A01.03",
@@ -194,11 +164,8 @@
      "testcases": [
       "CM-TE.TC01"
      ],
-     "missingTerms": [
-      "Chip số câu",
-      "0"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-TE.A01.04",
@@ -207,28 +174,7 @@
      "spec": "Ô nhập cuối danh sách; nhập tên và Enter (hoặc bấm `+`) tạo bài mới ở cuối, rồi mở popup bài vừa tạo ở tab Thông tin.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Thêm bài kiểm tra mới",
-        "figmaId": "2702:48181",
-        "layer": "Add New Bar · Thêm bài kiểm tra mới",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Add New Bar · Thêm bài kiểm tra mới",
-        "component": "Molecule/Add New Bar",
-        "variant": {
-         "Icon trái": false,
-         "Nút": "1075:1478",
-         "Placeholder": "Thêm bài kiểm tra mới",
-         "Type": "Box",
-         "Size": "M",
-         "State": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [
       {
        "type": "opens",
@@ -238,7 +184,7 @@
      ],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-TE.A01.05",
@@ -252,10 +198,8 @@
      "testcases": [
       "CM-TE.TC05"
      ],
-     "missingTerms": [
-      "Kéo thả"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-TE.A01.06",
@@ -269,10 +213,7 @@
      "testcases": [
       "CM-TE.TC05"
      ],
-     "missingTerms": [
-      "Xoá bài",
-      "⋮"
-     ],
+     "missingTerms": [],
      "status": "chua-co-thiet-ke"
     },
     {
@@ -285,20 +226,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thứ tự mặc định"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "CM-TE.A02",
    "name": "popup-bai-kiem-tra-tab-thong-tin",
    "title": "Popup bài kiểm tra — Tab Thông tin",
-   "screens": [
-    "cd-kh-030310"
-   ],
+   "screens": [],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -315,30 +253,11 @@
      "spec": "Bắt buộc; không để trống hoặc chỉ khoảng trắng. Tên trên card cập nhật theo.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030310": [
-       {
-        "term": "Tiêu đề",
-        "figmaId": "2911:43712",
-        "layer": "Atom/Label",
-        "confidence": "cao",
-        "region": "Modal Body Form",
-        "owner": "Atom/Label",
-        "component": "Atom/Label",
-        "variant": {
-         "Required": true,
-         "Icon": "1832:36628",
-         "Label": "Tiêu đề",
-         "Có icon": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-TE.A02.02",
@@ -347,32 +266,13 @@
      "spec": "Bắt buộc; một trong `1 - Dễ`, `Bình thường`, `Khó`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030310": [
-       {
-        "term": "Độ khó",
-        "figmaId": "2911:43717",
-        "layer": "Atom/Label",
-        "confidence": "cao",
-        "region": "Modal Body Form",
-        "owner": "Atom/Label",
-        "component": "Atom/Label",
-        "variant": {
-         "Required": true,
-         "Icon": "2263:35671",
-         "Label": "Độ khó",
-         "Có icon": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-TE.TC07"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-TE.A02.03",
@@ -381,32 +281,13 @@
      "spec": "Không bắt buộc; nhiều dòng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030310": [
-       {
-        "term": "Mô tả",
-        "figmaId": "2911:43722",
-        "layer": "Atom/Label",
-        "confidence": "cao",
-        "region": "Modal Body Form",
-        "owner": "Atom/Label",
-        "component": "Atom/Label",
-        "variant": {
-         "Required": false,
-         "Icon": "1966:7703",
-         "Label": "Mô tả",
-         "Có icon": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-TE.TC08"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-TE.A02.04",
@@ -415,25 +296,11 @@
      "spec": "Bắt buộc; 3 ô `Giờ` : `Phút` : `Giây`, tổng > 0; phút và giây 0–59.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030310": [
-       {
-        "term": "Thời gian làm bài",
-        "figmaId": "1496:16365",
-        "layer": "Thời gian làm bài *",
-        "confidence": "cao",
-        "region": "Modal Body Form",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-TE.A02.05",
@@ -442,32 +309,13 @@
      "spec": "**Tự tính** từ bộ câu hỏi (số câu cha), chỉ đọc.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030310": [
-       {
-        "term": "Số câu hỏi",
-        "figmaId": "2911:43727",
-        "layer": "Atom/Label",
-        "confidence": "cao",
-        "region": "Modal Body Form",
-        "owner": "Atom/Label",
-        "component": "Atom/Label",
-        "variant": {
-         "Required": false,
-         "Icon": "738:25432",
-         "Label": "Số câu hỏi",
-         "Có icon": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-TE.TC08"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-TE.A02.06",
@@ -476,32 +324,13 @@
      "spec": "Không bắt buộc; số từ 0 đến 10 (điểm bài của học viên tính trên thang 10, là trung bình điểm các câu).",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030310": [
-       {
-        "term": "Điểm đạt",
-        "figmaId": "2911:43737",
-        "layer": "Atom/Label",
-        "confidence": "cao",
-        "region": "Modal Body Form",
-        "owner": "Atom/Label",
-        "component": "Atom/Label",
-        "variant": {
-         "Required": false,
-         "Icon": "738:25432",
-         "Label": "Điểm đạt",
-         "Có icon": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-TE.TC09"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-TE.A02.07",
@@ -510,27 +339,11 @@
      "spec": "`Số câu hỏi được cập nhật tự động dựa trên nội dung trong tab Bộ câu hỏi.`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030310": [
-       {
-        "term": "Lưu ý",
-        "figmaId": "2808:43043",
-        "layer": "Atom/Alert",
-        "confidence": "cao",
-        "region": "Modal Body Form",
-        "owner": "Atom/Alert",
-        "component": "Atom/Alert",
-        "variant": {
-         "Type": "Lưu ý"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-TE.A02.08",
@@ -539,41 +352,22 @@
      "spec": "Đóng popup; dữ liệu đã lưu tự động.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030310": [
-       {
-        "term": "Đóng",
-        "figmaId": "I2527:167935;2514:153371",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Đóng",
-         "Type": "Primary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-TE.TC07"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "CM-TE.A03",
    "name": "popup-bai-kiem-tra-tab-bo-cau-hoi",
    "title": "Popup bài kiểm tra — Tab Bộ Câu Hỏi",
-   "screens": [
-    "cd-kh-030300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-KH-030300"
    ],
@@ -595,11 +389,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Nút thao tác",
-      "Import Excel"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-TE.A03.02",
@@ -611,11 +402,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thẻ tổng quan",
-      "Tổng số câu"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-TE.A03.03",
@@ -627,11 +415,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Bảng câu hỏi",
-      "STT"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-TE.A03.04",
@@ -643,21 +428,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thêm / sửa câu, Import / Export, Generate, Soát lỗi",
-      "homework-test.md"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "CM-TE.A04",
    "name": "toast-phan-hoi-crud",
    "title": "Toast phản hồi CRUD",
-   "screens": [
-    "cd-kh-030300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-KH-030300"
    ],
@@ -679,11 +460,8 @@
      "testcases": [
       "CM-TE.TTC01"
      ],
-     "missingTerms": [
-      "Thành công",
-      "Thành Công"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-TE.A04.02",
@@ -695,11 +473,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Cảnh báo",
-      "Cảnh Báo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-TE.A04.03",
@@ -708,484 +483,14 @@
      "spec": "`Có Lỗi Xảy Ra` | Thêm, xoá, sắp xếp, lưu tự động thất bại do backend / network.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Lỗi",
-        "figmaId": "I4915:255361;4901:220694;2245:87908",
-        "layer": "Label",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Card Menu v2 (Test)",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "2808:53558",
-         "Label": "lỗi dữ liệu",
-         "Type": "Menu phụ",
-         "State": "Default",
-         "Expanded": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Có Lỗi Xảy Ra"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "CM-TE.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "cd-kh-030300"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CM-TE.F01.01",
-     "name": "component-2",
-     "label": "Component 2",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Component 2",
-        "figmaId": "497:18281",
-        "layer": "Component 2",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Component 2",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.02",
-     "name": "component-3",
-     "label": "Component 3",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Component 3",
-        "figmaId": "497:18282",
-        "layer": "Component 3",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Component 3",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.03",
-     "name": "atom-side-tab",
-     "label": "Atom/Side Tab",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Atom/Side Tab",
-        "figmaId": "497:18283",
-        "layer": "Atom/Side Tab",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Active",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.04",
-     "name": "atom-id-badge",
-     "label": "Atom/ID Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Atom/ID Badge",
-        "figmaId": "2003:26053",
-        "layer": "Atom/ID Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/ID Badge",
-        "component": "Atom/ID Badge",
-        "variant": {
-         "Type": "10-digit",
-         "Size": "20H",
-         "Item": "01"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.05",
-     "name": "atom-info-badge",
-     "label": "Atom/Info Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Atom/Info Badge",
-        "figmaId": "2860:37178",
-        "layer": "Atom/Info Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Info Badge",
-        "component": "Atom/Info Badge",
-        "variant": {
-         "Type": "Duration"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.06",
-     "name": "atom-icon-button",
-     "label": "Atom/Icon Button",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Atom/Icon Button",
-        "figmaId": "2860:37202",
-        "layer": "Atom/Icon Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Icon Button",
-        "component": "Atom/Icon Button",
-        "variant": {
-         "Icon": "Drop & Drag"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.07",
-     "name": "mouse-click",
-     "label": "Mouse click",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Mouse click",
-        "figmaId": "2860:37209",
-        "layer": "Mouse click",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Mouse click",
-        "component": null,
-        "variant": {},
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.08",
-     "name": "bo-loc-hoc-ky-cap-do",
-     "label": "Bộ lọc · Học kỳ (cấp độ)",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Bộ lọc · Học kỳ (cấp độ)",
-        "figmaId": "5614:59006",
-        "layer": "Bộ lọc · Học kỳ (cấp độ)",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Bộ lọc · Học kỳ (cấp độ)",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "HSK1",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.09",
-     "name": "atom-status",
-     "label": "Atom/Status",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Atom/Status",
-        "figmaId": "2860:37016",
-        "layer": "Atom/Status",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Status",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Công khai",
-         "Size": "S"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.10",
-     "name": "dd-organism-menu-panel",
-     "label": "DD/Organism/Menu Panel",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "DD/Organism/Menu Panel",
-        "figmaId": "6006:130496",
-        "layer": "DD/Organism/Menu Panel",
-        "confidence": "cao",
-        "region": null,
-        "owner": "DD/Organism/Menu Panel",
-        "component": "DD/Organism/Menu Panel",
-        "variant": {
-         "Footer": false,
-         "Search": false,
-         "Type": "Action"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.11",
-     "name": "add-new-bar-them-moi",
-     "label": "Add New Bar · Thêm mới",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Add New Bar · Thêm mới",
-        "figmaId": "2860:37040",
-        "layer": "Add New Bar · Thêm mới",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Add New Bar · Thêm mới",
-        "component": "Molecule/Add New Bar",
-        "variant": {
-         "Nút": "1075:1478",
-         "Icon trái": false,
-         "Placeholder": "Thêm mới",
-         "Type": "Box",
-         "Size": "S",
-         "State": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.12",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "2860:13738",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "CD",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.13",
-     "name": "component-2",
-     "label": "Component 2",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Component 2",
-        "figmaId": "4273:160653",
-        "layer": "Component 2",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Component 2",
-        "component": "Switch Center",
-        "variant": {
-         "Property 1": "Đắc Nhân"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-TE.F01.14",
-     "name": "sidebar-menu-cd",
-     "label": "Sidebar · MENU - CD",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-030300": [
-       {
-        "term": "Sidebar · MENU - CD",
-        "figmaId": "4915:255361",
-        "layer": "Sidebar · MENU - CD",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - CD",
-        "component": "MENU - CD",
-        "variant": {
-         "Trang": "Khoá học / Quy trình / Học kỳ"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

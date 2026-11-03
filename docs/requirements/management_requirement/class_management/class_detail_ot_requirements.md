@@ -4,10 +4,7 @@ Tab OT dùng cùng logic phân quyền, người nhận, trạng thái và ghi c
 
 ## 1. UI
 
-### Trang 1: ADM-LOP-040800 — Tab OT — Danh sách và tìm kiếm
-
-![Figma mới nhất · ADM-LOP-040800](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040800.png)
-
+### Trang 1: Tab OT — Danh sách và tìm kiếm
 ![Trang 1](./images/34-class-detail-ot.png)
 
 *Danh sách OT — nhấn để xem ảnh gốc*
@@ -33,10 +30,7 @@ Tab OT dùng cùng logic phân quyền, người nhận, trạng thái và ghi c
 - Đã hủy vẫn hiển thị và được tìm kiếm; Đã xóa ẩn khỏi danh sách, giữ audit.
 - Bấm tên/vùng thông tin mở popup sửa hoặc xem; thao tác trạng thái, ghi chú và X không đồng thời mở form sửa.
 
-### Trang 2: ADM-LOP-040810 — Popup thêm và chỉnh sửa OT
-
-![Figma mới nhất · ADM-LOP-040810](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040810.png)
-
+### Trang 2: Popup thêm và chỉnh sửa OT
 ![Trang 2](./images/35-class-ot-edit-popup.png)
 
 *Form thêm dùng cùng field với form chỉnh sửa — nhấn để xem ảnh gốc*
@@ -62,10 +56,7 @@ Tab OT dùng cùng logic phân quyền, người nhận, trạng thái và ghi c
 - Ngày cập nhật lấy máy chủ khi tạo/sửa/trạng thái/ghi chú thành công; xem/search/Hủy draft không đổi mốc này.
 - Khoản xác nhận khóa người nhận, tiền, thời gian, ghi chú và trạng thái. Không có flow mở lại/đảo OT.
 
-### Trang 3: ADM-LOP-040812 — Dropdown trạng thái và xác nhận
-
-![Figma mới nhất · ADM-LOP-040812](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040812.png)
-
+### Trang 3: Dropdown trạng thái và xác nhận
 ![Trang 3](./images/36-class-ot-status-popup.png)
 
 *Bốn trạng thái OT — nhấn để xem ảnh gốc*
@@ -86,10 +77,7 @@ Tab OT dùng cùng logic phân quyền, người nhận, trạng thái và ghi c
 - Chọn Đã xóa trong dropdown phải dùng cùng popup xác nhận như X.
 - Xác nhận khoản OT không đồng nghĩa đã thanh toán cho Handler, không cộng vào chỉ số chi PTL hoặc tự tạo KPI.
 
-### Trang 4: ADM-LOP-040800 — Xóa khoản OT
-
-![Figma mới nhất · ADM-LOP-040800](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040800.png)
-
+### Trang 4: Xóa khoản OT
 **Mô tả:** X hoặc Đã xóa mở popup xác nhận cho khoản chưa xác nhận.
 
 **Giải thích field/thành phần:**
@@ -104,10 +92,7 @@ Tab OT dùng cùng logic phân quyền, người nhận, trạng thái và ghi c
 - Không có X hoạt động trên khoản xác nhận; API cũng chặn.
 - Xóa lặp không tạo nhiều thao tác logic.
 
-### Trang 5: ADM-LOP-040800 — Ghi chú, lịch sử và Copy
-
-![Figma mới nhất · ADM-LOP-040800](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040800.png)
-
+### Trang 5: Ghi chú, lịch sử và Copy
 ![Trang 5](./images/16-class-detail-student-note.png)
 
 *Dùng lại UI popup ghi chú của tab Học viên; tiêu đề khi dùng cho OT là Ghi chú OT.*
@@ -138,10 +123,7 @@ Tab OT dùng cùng logic phân quyền, người nhận, trạng thái và ghi c
 - Không âm thầm ghi đè khi hai người sửa cùng phiên bản; cảnh báo xung đột và cho tải lại. Lưu lỗi giữ draft, không tạo lịch sử thành công giả.
 - Sửa ghi chú không thay đổi tiền, trạng thái OT hoặc Tổng chi PTL.
 
-### Trang 6: ADM-LOP-040800 — Tách OT khỏi Chi phí PTL trên danh sách lớp
-
-![Figma mới nhất · ADM-LOP-040800](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040800.png)
-
+### Trang 6: Tách OT khỏi Chi phí PTL trên danh sách lớp
 **Mô tả:** Tab OT chỉ hiển thị/quản lý khoản OT của lớp. Không đưa OT vào Chi phí PTL hoặc Tổng chi PTL trên danh sách lớp như KPI.
 
 **Giải thích field/thành phần:**
@@ -158,10 +140,7 @@ Tab OT dùng cùng logic phân quyền, người nhận, trạng thái và ghi c
 - OT có định danh và loại khoản riêng; không dùng chung bản ghi KPI rồi thay nhãn hiển thị.
 - Nghiệp vụ tổng hợp/chi trả OT ở màn khác nằm ngoài phạm vi; không suy diễn OT không được thanh toán.
 
-### Trang 7: ADM-LOP-040800 — Toast và trạng thái tải
-
-![Figma mới nhất · ADM-LOP-040800](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040800.png)
-
+### Trang 7: Toast và trạng thái tải
 ![Trang 7](../../images/01-toast-crud.png)
 
 **Mô tả:** CRUD có Toast sau backend; loading/rỗng/lỗi tại bảng.

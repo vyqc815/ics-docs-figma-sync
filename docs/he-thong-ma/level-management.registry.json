@@ -74,18 +74,13 @@
    "nodeId": "689:12942",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quan-ly-cap-do",
    "link": "/quan-ly-cap-do",
    "dark": "CD-CDO-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "CM-LM.A01",
-    "CM-LM.A02",
-    "CM-LM.A03",
-    "CM-LM.F01"
-   ]
+   "regions": []
   },
   "CD-CDO-010010": {
    "id": "CD-CDO-010010",
@@ -100,15 +95,13 @@
    "nodeId": "1901:3763",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-cdo-010010",
    "link": "/quan-ly-cap-do?popup=CD-CDO-010010",
    "dark": "CD-CDO-010010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CM-LM.A04"
-   ]
+   "regions": []
   },
   "CD-CDO-010012": {
    "id": "CD-CDO-010012",
@@ -123,7 +116,7 @@
    "nodeId": "1901:3819",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-cdo-010012",
    "link": "/quan-ly-cap-do?state=CD-CDO-010012",
    "dark": "CD-CDO-010012-DK",
@@ -137,9 +130,7 @@
    "id": "CM-LM.A01",
    "name": "trang-danh-sach-cap-do",
    "title": "Trang danh sách cấp độ",
-   "screens": [
-    "cd-cdo-010000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-CDO-010000"
    ],
@@ -156,36 +147,7 @@
      "spec": "Bắt buộc ngay khi tạo mới. 2 chữ số (`01`–`99`, xem REQ01), duy nhất toàn hệ thống (tính cả cấp độ đã xóa mềm), tự động sinh. Sửa tự do khi còn `Nháp`; khóa vĩnh viễn kể từ khi rời `Nháp`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "ID",
-        "figmaId": "1910:19801",
-        "layer": "ID",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       },
-       {
-        "term": "01",
-        "figmaId": "1994:25893",
-        "layer": "ID Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ID Badge",
-        "component": "Atom/ID Badge",
-        "variant": {
-         "Type": "6-digit",
-         "Size": "26H",
-         "Item": "01"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [
       {
        "type": "governed-by",
@@ -195,7 +157,7 @@
      ],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM.A01.02",
@@ -204,27 +166,13 @@
      "spec": "Bắt buộc, không giới hạn độ dài. Được phép trùng với cấp độ khác. Hệ thống tự cắt khoảng trắng đầu/cuối trước khi lưu. Sửa được ở mọi trạng thái.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Tên cấp độ",
-        "figmaId": "1910:19803",
-        "layer": "Tên cấp độ",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-LM.TC03"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM.A01.03",
@@ -233,25 +181,11 @@
      "spec": "Không bắt buộc, không giới hạn độ dài. Sửa được ở mọi trạng thái.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Mô tả cấp độ",
-        "figmaId": "1910:19805",
-        "layer": "Mô tả cấp độ",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM.A01.04",
@@ -260,35 +194,7 @@
      "spec": "Không bắt buộc lúc tạo mới, mặc định rỗng. Bắt buộc phải có giá trị trước khi cấp độ được chuyển sang `Công Khai`. Được phép trùng với cấp độ khác (Mã cấp độ không phải định danh như ID, hệ thống không kiểm tra trùng). Hệ thống tự cắt khoảng trắng đầu/cuối trước khi lưu. Không ràng buộc định dạng; lưu và hiển thị đúng chữ hoa/thường như CD nhập (phân biệt hoa thường). Chỉ sửa được khi cấp độ đang `Nháp`; bị khóa, không được sửa kể từ khi cấp độ được `Công Khai`. Là mã tham chiếu hiển thị mà feature `Quản lý danh mục` dùng khi chọn cấp độ cho khóa học, ví dụ `HSK1`, `HSK2`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Mã cấp độ",
-        "figmaId": "1910:19807",
-        "layer": "Mã cấp độ",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       },
-       {
-        "term": "Công Khai",
-        "figmaId": "1901:1951",
-        "layer": "Atom/Status",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Status",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Công khai",
-         "Size": "M"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-LM.TC01",
@@ -302,7 +208,7 @@
       "CM-LM.TC23"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM.A01.05",
@@ -311,35 +217,7 @@
      "spec": "3 trạng thái `Nháp` (mặc định) / `Công Khai` / `Vô hiệu hóa`, theo rule chuyển trạng thái ở REQ02. Menu đổi trạng thái: đang `Nháp` chỉ hiện `Công Khai`; đang `Công Khai` chỉ hiện `Vô hiệu hóa`; đang `Vô hiệu hóa` chỉ hiện `Công Khai`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Trạng thái",
-        "figmaId": "1910:19810",
-        "layer": "Trạng thái",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       },
-       {
-        "term": "Nháp",
-        "figmaId": "1901:2093",
-        "layer": "Atom/Status",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Status",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Nháp",
-         "Size": "M"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [
       {
        "type": "governed-by",
@@ -357,17 +235,16 @@
       "CM-LM.TC19"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "CM-LM.A02",
    "name": "thanh-them-cap-do-moi",
    "title": "Thanh \"Thêm cấp độ mới\"",
-   "screens": [
-    "cd-cdo-010000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-CDO-010000"
    ],
@@ -376,15 +253,14 @@
    "requirement": "curriculum_management_requirement/level_management/level_management.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "CM-LM.A03",
    "name": "xoa-cap-do",
    "title": "Xóa cấp độ",
-   "screens": [
-    "cd-cdo-010000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-CDO-010000"
    ],
@@ -406,11 +282,8 @@
      "testcases": [
       "CM-LM.TC18"
      ],
-     "missingTerms": [
-      "Popup xác nhận xóa",
-      "Xóa cấp độ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-LM.A03.02",
@@ -422,21 +295,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Toast lỗi không được xóa",
-      "Có Lỗi Xảy Ra"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "CM-LM.A04",
    "name": "popup-kich-hoat-cong-khai-cap-do",
    "title": "Popup Kích hoạt công khai cấp độ",
-   "screens": [
-    "cd-cdo-010010"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-CDO-010010"
    ],
@@ -453,21 +322,7 @@
      "spec": "Hiển thị (chỉ đọc) đúng Tên cấp độ đang thao tác.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010010": [
-       {
-        "term": "Cấp độ",
-        "figmaId": "4687:5175",
-        "layer": "Cấp độ:",
-        "confidence": "cao",
-        "region": "Meta Summary Section:margin",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-LM.TC01",
@@ -491,7 +346,7 @@
       "CM-LM.TC23"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-LM.A04.02",
@@ -500,36 +355,11 @@
      "spec": "Hiển thị badge trạng thái hiện tại (`Nháp`) trước khi chuyển.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010010": [
-       {
-        "term": "Trạng thái hiện tại",
-        "figmaId": "4687:5192",
-        "layer": "Trạng thái hiện tại",
-        "confidence": "cao",
-        "region": "Meta Summary Section:margin",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       },
-       {
-        "term": "Nháp",
-        "figmaId": "4687:5195",
-        "layer": "Nháp",
-        "confidence": "cao",
-        "region": "Meta Summary Section:margin",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-LM.A04.03",
@@ -538,25 +368,11 @@
      "spec": "Hiển thị ID hiện tại (2 chữ số) mà cấp độ đã có sẵn từ lúc tạo.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010010": [
-       {
-        "term": "ID cấp độ",
-        "figmaId": "4687:5180",
-        "layer": "ID cấp độ *:",
-        "confidence": "cao",
-        "region": "Meta Summary Section:margin",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-LM.A04.04",
@@ -568,10 +384,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Ô nhập ID"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-LM.A04.05",
@@ -583,10 +397,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Nút làm mới ID (biểu tượng xoay)"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-LM.A04.06",
@@ -608,10 +420,8 @@
       "CM-LM.TC19",
       "CM-LM.TC23"
      ],
-     "missingTerms": [
-      "Mã cấp độ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-LM.A04.07",
@@ -623,10 +433,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Biểu tượng kết quả kiểm tra"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-LM.A04.08",
@@ -635,27 +443,11 @@
      "spec": "ID: `ID có thể sử dụng` / `ID đang bị trùng` / `ID sai định dạng`. Mã cấp độ (khi đang trống): `Mã cấp độ có thể sử dụng` / `Mã cấp độ không được để trống`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010010": [
-       {
-        "term": "ID có thể sử dụng",
-        "figmaId": "4687:5189",
-        "layer": "ID có thể sử dụng.",
-        "confidence": "cao",
-        "region": "Meta Summary Section:margin",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thông báo trạng thái"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-LM.A04.09",
@@ -667,11 +459,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Ghi chú cảnh báo",
-      "Sau khi xác nhận, cấp độ sẽ chuyển sang trạng thái Công khai, chỉ còn sửa được Tên và Mô tả. ID và Mã cấp độ sẽ bị khóa"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-LM.A04.10",
@@ -680,31 +469,13 @@
      "spec": "Chỉ bật khi ID hợp lệ, chưa trùng **và** Mã cấp độ có giá trị. Khi bấm, backend kiểm tra lại lần cuối rồi lưu ID, lưu Mã cấp độ (nếu vừa nhập) và chuyển trạng thái sang `Công Khai` trong cùng một giao dịch.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010010": [
-       {
-        "term": "Công khai cấp độ",
-        "figmaId": "I2527:168067;2514:153363",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Công khai cấp độ",
-         "Type": "Primary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-LM.TC07"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-LM.A04.11",
@@ -713,262 +484,14 @@
      "spec": "Đóng popup, không lưu thay đổi ID/Mã cấp độ vừa nhập, không đổi trạng thái cấp độ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-cdo-010010": [
-       {
-        "term": "Hủy",
-        "figmaId": "I2527:168067;2514:153361",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Huỷ",
-         "Type": "Secondary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "X"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     }
-   ]
-  },
-  {
-   "id": "CM-LM.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "cd-cdo-010000"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CM-LM.F01.01",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "2223:86219",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM.F01.02",
-     "name": "component-2",
-     "label": "Component 2",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Component 2",
-        "figmaId": "4273:160803",
-        "layer": "Component 2",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Component 2",
-        "component": "Switch Center",
-        "variant": {
-         "Property 1": "Sakumi"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM.F01.03",
-     "name": "atom-badge",
-     "label": "Atom/Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Atom/Badge",
-        "figmaId": "2409:144867",
-        "layer": "Atom/Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Badge",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "HSK3",
-         "Variant": "Danger",
-         "Dropdown": "Off"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM.F01.04",
-     "name": "id-badge",
-     "label": "ID Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "ID Badge",
-        "figmaId": "1994:25895",
-        "layer": "ID Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ID Badge",
-        "component": "Atom/ID Badge",
-        "variant": {
-         "Type": "6-digit",
-         "Size": "26H",
-         "Item": "01"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM.F01.05",
-     "name": "atom-status",
-     "label": "Atom/Status",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Atom/Status",
-        "figmaId": "1901:2115",
-        "layer": "Atom/Status",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Status",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Vô hiệu",
-         "Size": "M"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM.F01.06",
-     "name": "add-new-bar-them-danh-muc-moi",
-     "label": "Add New Bar · Thêm danh mục mới",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Add New Bar · Thêm danh mục mới",
-        "figmaId": "2702:48237",
-        "layer": "Add New Bar · Thêm danh mục mới",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Add New Bar · Thêm danh mục mới",
-        "component": "Molecule/Add New Bar",
-        "variant": {
-         "Icon trái": true,
-         "Nút": "1080:1498",
-         "Placeholder": "Thêm danh mục mới",
-         "Type": "Box",
-         "Size": "M",
-         "State": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-LM.F01.07",
-     "name": "sidebar-menu-cd",
-     "label": "Sidebar · MENU - CD",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-cdo-010000": [
-       {
-        "term": "Sidebar · MENU - CD",
-        "figmaId": "4915:256939",
-        "layer": "Sidebar · MENU - CD",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - CD",
-        "component": "MENU - CD",
-        "variant": {
-         "Trang": "Danh Mục & Cấp Độ"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

@@ -4,10 +4,7 @@ Tab **Chi tiết lớp học → Menu Nhật ký → Lịch Hẹn** hiển thị
 
 ## 1. UI
 
-### Trang 1: ADM-LOP-050100 — Tab Lịch Hẹn — Danh sách lịch hẹn của lớp
-
-![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
-
+### Trang 1: Tab Lịch Hẹn — Danh sách lịch hẹn của lớp
 ![Trang 1](./images/42-class-detail-appointments.png)
 
 *Ảnh tham chiếu bảng Lịch Hẹn do người dùng cung cấp — nhấn để xem ảnh gốc*
@@ -40,10 +37,7 @@ Tab **Chi tiết lớp học → Menu Nhật ký → Lịch Hẹn** hiển thị
 - Bấm mở rộng/Thu gọn hoặc xem avatar/Đối tượng chỉ thay đổi hiển thị. Dropdown ưu tiên/trạng thái cho owner chỉnh trực tiếp; ảnh chưa có editor Nội dung/Thời gian/Phân công nên cách chỉnh các field này cần chốt riêng.
 - Tab này không tự thêm trạng thái `Đã xoá`; người có quyền xóa thực hiện qua danh sách ở menu Lịch Hẹn theo requirement mới.
 
-### Trang 2: ADM-LOP-050100 — Phân trang danh sách lịch hẹn
-
-![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
-
+### Trang 2: Phân trang danh sách lịch hẹn
 **Mô tả:** Xem danh sách theo từng trang, footer và nút chuyển trang theo ảnh.
 
 **Giải thích field/thành phần:**
@@ -60,10 +54,7 @@ Tab **Chi tiết lớp học → Menu Nhật ký → Lịch Hẹn** hiển thị
 - Chuyển trang không tạo/sửa/xóa lịch hẹn, không phát sinh Toast CRUD. Response của trang cũ không ghi đè trang vừa chọn.
 - Nếu số trang giảm sau dữ liệu thay đổi, tải trang hợp lệ gần nhất; không để số trang đang chọn vượt quá tổng trang.
 
-### Trang 3: ADM-LOP-050100 — Chỉnh sửa lịch hẹn — Chỉ owner
-
-![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
-
+### Trang 3: Chỉnh sửa lịch hẹn — Chỉ owner
 **Mô tả:** Owner được chỉnh lịch hẹn; Người theo dõi chỉ được xem trong phạm vi quyền, không có quyền sửa chỉ vì được gán Theo dõi.
 
 **Giải thích field/thành phần:**
@@ -81,10 +72,7 @@ Tab **Chi tiết lớp học → Menu Nhật ký → Lịch Hẹn** hiển thị
 - Chọn lại giá trị hiện có không tạo thao tác cập nhật hoặc Toast mới. Lưu thất bại giữ/trả lại giá trị đã lưu, không báo thành công sớm.
 - Mọi user trong Người phụ trách đều là owner, không chỉ người đầu tiên. Người theo dõi chỉ được sửa nếu đồng thời có trong Người phụ trách và có quyền vào tab; quyền sửa đến từ Người phụ trách. Người tạo/Admin không được vượt quy tắc owner.
 
-### Trang 4: ADM-LOP-050100 — Toast phản hồi CRUD
-
-![Figma mới nhất · ADM-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-050100.png)
-
+### Trang 4: Toast phản hồi CRUD
 ![Trang 4](../../images/01-toast-crud.png)
 
 *Toast theo UI dùng chung — nhấn để xem ảnh gốc*

@@ -40,18 +40,18 @@ Frame: chưa có · Nguồn nội dung: QC
 
 ### `A02` Trang 1: Chi tiết học viên — Thông tin cá nhân
 
-Frame: `ADM-HV-020100` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | anh-dai-dien |  |  | — |  | `TC01`, `TC05`, `TC10` | Chưa khớp tự động | QC |
-| `A02.02` | ho-va-ten |  | `1648:11807` Họ và tên | — |  | `TC02` | Khớp | QC |
-| `A02.03` | ngay-sinh |  | `1648:11797` Ngày sinh | — |  | `TC01`, `TC02` | Khớp | QC |
-| `A02.04` | gioi-tinh |  | `1648:11788` Giới tính; `1648:11741` Heading 3 - Teacher Name & Code | — |  | `TC01`, `TC02` | Khớp | QC |
-| `A02.05` | ma-nguoi-dung |  | `1648:11767` Mã người dùng; `1648:11741` Heading 3 - Teacher Name & Code | — |  | `TC01`, `TC02`, `TC03` | Khớp | QC |
-| `A02.06` | so-dien-thoai |  | `1648:11813` Số điện thoại | — |  | `TC01`, `TC02` | Khớp | QC |
-| `A02.07` | email |  | `1648:11764` Row 1: Mã người dùng & Email | — |  | `TC01`, `TC02`, `TC03` | Khớp | QC |
-| `A02.08` | ghi-chu | `Card Menu v2 (Test)` Type=Con, State=Default | `I4915:233159;4899:195421` Card Menu v2 (Test) | — |  | `TC01`, `TC02`, `TC04` | Khớp | QC |
+| `A02.01` | anh-dai-dien |  |  | — |  | `TC01`, `TC05`, `TC10` | Chưa sync | QC |
+| `A02.02` | ho-va-ten |  |  | — |  | `TC02` | Chưa sync | QC |
+| `A02.03` | ngay-sinh |  |  | — |  | `TC01`, `TC02` | Chưa sync | QC |
+| `A02.04` | gioi-tinh |  |  | — |  | `TC01`, `TC02` | Chưa sync | QC |
+| `A02.05` | ma-nguoi-dung |  |  | — |  | `TC01`, `TC02`, `TC03` | Chưa sync | QC |
+| `A02.06` | so-dien-thoai |  |  | — |  | `TC01`, `TC02` | Chưa sync | QC |
+| `A02.07` | email |  |  | — |  | `TC01`, `TC02`, `TC03` | Chưa sync | QC |
+| `A02.08` | ghi-chu |  |  | — |  | `TC01`, `TC02`, `TC04` | Chưa sync | QC |
 
 ### `A03` Popup xác nhận lấy lại mật khẩu — UI cần bổ sung
 
@@ -90,7 +90,7 @@ Frame: chưa có · Nguồn nội dung: QC
 
 ### `A08` Trang 6: Chi tiết học viên — Ghi chú
 
-Frame: `ADM-HV-020610` (tool đoán:ADM-HV-020610) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-HV-020610) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -101,80 +101,10 @@ Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A09.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
-| `A09.02` | thong-tin |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A09.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
-| `A09.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
-
-### `F01` (ngoài Body)
-
-Frame: `ADM-HV-020100`, `ADM-HV-020200`, `ADM-HV-020300`, `ADM-HV-020400`, `ADM-HV-020500`, `ADM-HV-020600` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `1648:11873` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | atom-button | `Atom/Button` Type=Secondary, Size=Small | `1657:10231` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | account | `ACCOUNT` Size=Default | `2223:83783` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:233159` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | the-chi-so-so-lop | `Thẻ chỉ số` Kiểu=Gọn in hoa 13 | `3108:125417` Thẻ chỉ số · Số lớp | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | the-chi-so-len-ky | `Thẻ chỉ số` Kiểu=Gọn in hoa 13 | `3108:125431` Thẻ chỉ số · Lên kỳ | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | the-chi-so-di-hoc | `Thẻ chỉ số` Kiểu=Gọn in hoa 13 | `3108:125447` Thẻ chỉ số · Đi học | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | the-chi-so-btvn | `Thẻ chỉ số` Kiểu=Gọn in hoa 13 | `3108:125458` Thẻ chỉ số · BTVN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | the-chi-so-dat-kpi | `Thẻ chỉ số` Kiểu=Gọn in hoa 13 | `3108:125469` Thẻ chỉ số · Đạt kpi | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | the-chi-so-danh-gia | `Thẻ chỉ số` Kiểu=Gọn in hoa 13 | `3108:125485` Thẻ chỉ số · Đánh giá | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | class-status | `CLass Status`  | `1648:12590` CLass Status | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.12` | global-progress-bar | `Global Progress Bar`  | `1648:12597` Global Progress Bar | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.13` | progress-diem-danh-gia-a-f | `Progress/Điểm Đánh Giá (A-F)` Size=36x32 | `1648:12599` Progress/Điểm Đánh Giá (A-F) | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.14` | percent | `PERCENT %`  | `1648:12601` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.15` | mouse-click |  | `1648:12626` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.16` | the-chi-so-so-hoa-don | `Thẻ chỉ số` Kiểu=Gọn in hoa 14 | `3108:125497` Thẻ chỉ số · Số hoá đơn | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.17` | the-chi-so-tong-hoc-phi | `Thẻ chỉ số` Kiểu=Gọn in hoa 14 | `3108:125510` Thẻ chỉ số · Tổng học phí | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.18` | phan-trang |  | `1805:17859` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.19` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `2200:30441` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.20` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Active | `1930:23232` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.21` | lich-giao-vien-dang-ky | `LỊCH GIÁO VIÊN ĐĂNG KÝ` State=Default | `1930:22862` LỊCH GIÁO VIÊN ĐĂNG KÝ | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.22` | atom-object-chip | `Atom/Object Chip` Type=System | `2409:143889` Atom/Object Chip | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.23` | atom-icon-button | `Atom/Icon Button`  | `1474:14540` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.24` | avatar | `Avatar` Size=24 | `3641:79031` Avatar | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F02` Row · HD000123
-
-Frame: `ADM-HV-020300` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F02.01` | atom-badge | `Atom/Badge`  | `3269:63090` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `3269:63093` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.03` | avatar-count | `Avatar` Size=24 | `3269:63352` Avatar + Count | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F03` Chi tiết học phí
-
-Frame: `ADM-HV-020300` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F03.01` | atom-tag-solid | `Atom/Tag Solid` Size=20H | `3269:62894` Atom/Tag Solid | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.02` | atom-badge | `Atom/Badge`  | `3269:62901` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F04` Row · HD000124
-
-Frame: `ADM-HV-020300` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F04.01` | atom-badge | `Atom/Badge`  | `3269:63207` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F04.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `3269:63210` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F04.03` | avatar-count | `Avatar` Size=24 | `3269:63354` Avatar + Count | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F05` Row · HD000125
-
-Frame: `ADM-HV-020300` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F05.01` | atom-badge | `Atom/Badge`  | `3269:62816` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F05.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `3269:62819` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F05.03` | avatar-count | `Avatar` Size=24 | `3269:62827` Avatar + Count | — |  |  | Chỉ có trên Figma | Figma |
+| `A09.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa sync | QC |
+| `A09.02` | thong-tin |  |  | — |  |  | Chưa sync | QC |
+| `A09.03` | canh-bao |  |  | — |  | `TTC02` | Chưa sync | QC |
+| `A09.04` | loi |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -260,7 +190,7 @@ Frame: `ADM-HV-020300` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (5): `A02.01`, `A09.01`, `A09.02`, `A09.03`, `A09.04`
+- Chưa sync (12): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A09.01`, `A09.02`, `A09.03`, `A09.04`
 - Frame Figma chưa có requirement (1): `ADM-HV-020610`
 - Thiếu prototype link đi vào (1): `ADM-HV-020610`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`

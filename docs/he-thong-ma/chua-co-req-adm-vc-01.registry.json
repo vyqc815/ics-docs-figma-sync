@@ -17,15 +17,13 @@
    "nodeId": "3857:84715",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/voucher/danh-sach-voucher",
    "link": "/voucher/danh-sach-voucher",
    "dark": "ADM-VC-010000-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "ADM-VC-01.F01"
-   ]
+   "regions": []
   },
   "ADM-VC-010001": {
    "id": "ADM-VC-010001",
@@ -40,7 +38,7 @@
    "nodeId": "3977:74774",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/voucher/danh-sach-voucher/xem-truoc-voucher",
    "link": "/voucher/danh-sach-voucher?state=ADM-VC-010001",
    "dark": "ADM-VC-010001-DK",
@@ -61,7 +59,7 @@
    "nodeId": "3977:75750",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/voucher/popup-tao-voucher",
    "link": "/voucher/danh-sach-voucher?popup=ADM-VC-010010",
    "dark": "ADM-VC-010010-DK",
@@ -82,7 +80,7 @@
    "nodeId": "3977:75870",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/voucher/popup-chinh-sua-voucher",
    "link": "/voucher/danh-sach-voucher?popup=ADM-VC-010020",
    "dark": "ADM-VC-010020-DK",
@@ -91,263 +89,7 @@
    "regions": []
   }
  },
- "regions": [
-  {
-   "id": "ADM-VC-01.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-vc-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "ADM-VC-01.F01.01",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-vc-010000": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:239955",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "Tools / voucher"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "ADM-VC-01.F01.02",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-vc-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "3857:84864",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "ADM-VC-01.F01.03",
-     "name": "atom-icon-button",
-     "label": "Atom/Icon Button",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-vc-010000": [
-       {
-        "term": "Atom/Icon Button",
-        "figmaId": "3977:73799",
-        "layer": "Atom/Icon Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Icon Button",
-        "component": "Atom/Icon Button",
-        "variant": {
-         "Icon": "Plus Button Add"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "ADM-VC-01.F01.04",
-     "name": "tim-kiem",
-     "label": "Tìm kiếm",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-vc-010000": [
-       {
-        "term": "Tìm kiếm",
-        "figmaId": "3977:74265",
-        "layer": "Tìm kiếm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tìm kiếm",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm mã voucher, mã học viên...",
-         "State": "Search Compact",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "ADM-VC-01.F01.05",
-     "name": "atom-tag-han-dung",
-     "label": "Atom/Tag hạn dùng",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-vc-010000": [
-       {
-        "term": "Atom/Tag hạn dùng",
-        "figmaId": "3977:74281",
-        "layer": "Atom/Tag hạn dùng",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Tag hạn dùng",
-        "component": "Atom/Tag hạn dùng",
-        "variant": {
-         "Trạng thái": "Còn hạn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "ADM-VC-01.F01.06",
-     "name": "atom-chip",
-     "label": "Atom/Chip",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-vc-010000": [
-       {
-        "term": "Atom/Chip",
-        "figmaId": "3977:74287",
-        "layer": "Atom/Chip",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Chip",
-        "component": "Atom/Chip",
-        "variant": {
-         "Icon": false,
-         "Name": "Trần Minh Khoa",
-         "Time": "4 ngày trước",
-         "Label": "2.500.000 đ",
-         "Type": "Money Outline"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "ADM-VC-01.F01.07",
-     "name": "atom-badge",
-     "label": "Atom/Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-vc-010000": [
-       {
-        "term": "Atom/Badge",
-        "figmaId": "3977:74295",
-        "layer": "Atom/Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Badge",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "Chưa sử dụng",
-         "Variant": "Info",
-         "Dropdown": "Off"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "ADM-VC-01.F01.08",
-     "name": "phan-trang",
-     "label": "Phân Trang",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-vc-010000": [
-       {
-        "term": "Phân Trang",
-        "figmaId": "3977:74002",
-        "layer": "Phân Trang",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Phân Trang",
-        "component": null,
-        "variant": {},
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  }
- ],
+ "regions": [],
  "exceptions": [],
  "flows": [],
  "testcases": [],

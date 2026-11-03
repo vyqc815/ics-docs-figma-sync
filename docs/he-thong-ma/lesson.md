@@ -40,79 +40,59 @@ Requirement: `course_management/semester/lesson/lesson.md` — Học Kỳ - Tab 
 
 ### `A01` Trang 1: Danh sách bài học (Tab Bài học)
 
-Frame: `CD-KH-030200` (tool đoán:CD-KH-030200) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:CD-KH-030200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Popup: Chi tiết bài học - Tab Thông tin
 
-Frame: `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247` (tool đoán:CD-KH-030210, CD-KH-030230, CD-KH-030240, CD-KH-030250) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:CD-KH-030210, CD-KH-030230, CD-KH-030240, CD-KH-030250) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | tieu-de | `Popup/Header`  | `I7193:403632;2514:153340` Tiêu đề | — |  |  | Khớp | QC |
-| `A02.02` | noi-dung | `Atom/Input` State=Search, Kiểu=S | `I7193:403897;2808:42278` Tìm nội dung... | — |  |  | Khớp | QC |
-| `A02.03` | nut |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.01` | tieu-de |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A02.02` | noi-dung |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A02.03` | nut |  |  | — |  |  | Chưa có thiết kế | QC |
 
 ### `A03` Popup: Chi tiết bài học - Tab Nội dung
 
-Frame: `CD-KH-030200` (tool đoán:CD-KH-030200) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:CD-KH-030200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | them-nhom |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.02` | them-noi-dung |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.03` | gioi-han |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.04` | xoa |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.05` | keo-tha |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.06` | badge-tab |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.07` | 90-100 |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.08` | 80-90 |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.09` | 0-va-80 |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.10` | 00-00-00 |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.11` | 100 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.01` | them-nhom |  |  | — |  |  | Chưa sync | QC |
+| `A03.02` | them-noi-dung |  |  | — |  |  | Chưa sync | QC |
+| `A03.03` | gioi-han |  |  | — |  |  | Chưa sync | QC |
+| `A03.04` | xoa |  |  | — |  |  | Chưa sync | QC |
+| `A03.05` | keo-tha |  |  | — |  |  | Chưa sync | QC |
+| `A03.06` | badge-tab |  |  | — |  |  | Chưa sync | QC |
+| `A03.07` | 90-100 |  |  | — |  |  | Chưa sync | QC |
+| `A03.08` | 80-90 |  |  | — |  |  | Chưa sync | QC |
+| `A03.09` | 0-va-80 |  |  | — |  |  | Chưa sync | QC |
+| `A03.10` | 00-00-00 |  |  | — |  |  | Chưa sync | QC |
+| `A03.11` | 100 |  |  | — |  |  | Chưa sync | QC |
 
 ### `A04` Popup: Chi tiết bài học - Tab Tài nguyên
 
-Frame: `CD-KH-030200` (tool đoán:CD-KH-030200) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:CD-KH-030200) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A05` Popup: Chi tiết bài học - Tab Kiến thức
 
-Frame: `CD-KH-030211`, `CD-KH-030244`, `CD-KH-030247` (tool đoán:CD-KH-030211, CD-KH-030244, CD-KH-030247) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:CD-KH-030211, CD-KH-030244, CD-KH-030247) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A06` Popup: Chi tiết bài học - Tab Kỹ năng (mới — **UI cần bổ sung Figma**)
 
-Frame: `CD-KH-030242`, `CD-KH-030245` (tool đoán:CD-KH-030242, CD-KH-030245) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:CD-KH-030242, CD-KH-030245) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-
-### `F01` (ngoài Body)
-
-Frame: `CD-KH-030200` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-side-tab | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `497:20715` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | component-2 | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `497:20716` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | component-3 | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `497:20717` Component 3 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | atom-id-badge | `Atom/ID Badge` Type=10-digit, Size=20H | `2003:26066` Atom/ID Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | background-border | `Background+Border`  | `1076:6692` Background+Border | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | atom-icon-button | `Atom/Icon Button`  | `2860:13064` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | mouse-click |  | `2860:13068` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | bo-loc-hoc-ky-cap-do | `DD/Molecule/Trigger` Size=XS, State=Default | `5614:58994` Bộ lọc · Học kỳ (cấp độ) | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | atom-status | `Atom/Status` Size=S | `2860:36843` Atom/Status | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | add-new-bar-them-moi | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `2860:36867` Add New Bar · Thêm mới | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | sidebar-menu-cd | `MENU - CD`  | `4915:255090` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.12` | account | `ACCOUNT` Size=Default | `2860:13787` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.13` | component-2 | `Switch Center`  | `4273:160668` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -172,7 +152,7 @@ Frame: `CD-KH-030200` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (12): `A02.03`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`, `A03.11`
+- Chưa sync (11): `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`, `A03.11`
 - Frame Figma chưa có requirement (13): `CD-KH-030210`, `CD-KH-030211`, `CD-KH-030230`, `CD-KH-030231`, `CD-KH-030240`, `CD-KH-030241`, `CD-KH-030242`, `CD-KH-030243`, `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247`, `CD-KH-030250`
 - Phân loại cần design duyệt (12): `CD-KH-030211`, `CD-KH-030230`, `CD-KH-030231`, `CD-KH-030240`, `CD-KH-030241`, `CD-KH-030242`, `CD-KH-030243`, `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247`, `CD-KH-030250`
 - Thiếu prototype link đi vào (9): `CD-KH-030211`, `CD-KH-030231`, `CD-KH-030241`, `CD-KH-030242`, `CD-KH-030243`, `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247`

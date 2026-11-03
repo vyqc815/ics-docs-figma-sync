@@ -22,22 +22,6 @@
 
 ## 4. Khu vực và item
 
-### `F01` (ngoài Body)
-
-Frame: `ADM-GFT-010000`, `ADM-GFT-010001` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:240264` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | account | `ACCOUNT` Size=Default | `3857:85799` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | atom-icon-button | `Atom/Icon Button`  | `3977:76312` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | tim-kiem-theo-loai | `Atom/Input` State=Search theo loại, Kiểu=Chuẩn | `3977:76492` Tìm kiếm theo loại | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | atom-chip | `Atom/Chip` Type=Date không có thứ | `3977:76515` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | atom-number-badge | `Atom/Number Badge` Type=Square, Size=Medium, State=Active | `3977:76520` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | atom-badge | `Atom/Badge`  | `3977:76526` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | phan-trang |  | `3977:76485` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | molecule-tooltip | `Molecule/Tooltip`  | `5165:187648` Molecule/Tooltip | — |  |  | Chỉ có trên Figma | Figma |
-
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

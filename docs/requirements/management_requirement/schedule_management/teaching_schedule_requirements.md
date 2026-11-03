@@ -64,12 +64,7 @@
 - `A02.02` **Lưới trong nhóm**: 7 cột ngày như chế độ thường; ngày không có lịch của lớp đó là ô trống viền nét đứt `Không có lịch`.
 - `A02.03` **Cuộn**: Các nhóm xếp dọc, cuộn toàn trang; header ngày của mỗi nhóm hiển thị lại.
 
-### Trang 3: ADM-LD-010000, ADM-LD-010010 — Dropdown Tuần
-
-![Figma mới nhất · ADM-LD-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LD-010000.png)
-
-![Figma mới nhất · ADM-LD-010010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LD-010010.png)
-
+### Trang 3: Dropdown Tuần
 ![Trang 3](./images/teaching-schedule-week-picker.png)
 
 *Bấm vào khoảng tuần mở danh sách chọn nhanh tuần, tuần đang chọn tô cam (Figma Dropdown · Tuần) — nhấn để xem ảnh gốc*
@@ -85,12 +80,7 @@
 - `A03.03` **Chọn**: Bấm một tuần → tải tuần đó, đóng dropdown, giữ bộ lọc và chế độ `Theo lớp`.
 - `A03.04` **Đóng**: Bấm ngoài dropdown; không đổi tuần.
 
-### Trang 4: ADM-LD-010000, ADM-LD-010010 — Dropdown Giáo viên
-
-![Figma mới nhất · ADM-LD-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LD-010000.png)
-
-![Figma mới nhất · ADM-LD-010010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LD-010010.png)
-
+### Trang 4: Dropdown Giáo viên
 ![Trang 4](./images/teaching-schedule-teacher-filter.png)
 
 *Dropdown Giáo viên: ô tìm kiếm và danh sách checkbox (Figma Dropdown · Giáo viên) — nhấn để xem ảnh gốc*

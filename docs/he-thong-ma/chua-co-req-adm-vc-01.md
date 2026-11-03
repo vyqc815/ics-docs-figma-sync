@@ -22,21 +22,6 @@
 
 ## 4. Khu vực và item
 
-### `F01` (ngoài Body)
-
-Frame: `ADM-VC-010000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:239955` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | account | `ACCOUNT` Size=Default | `3857:84864` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | atom-icon-button | `Atom/Icon Button`  | `3977:73799` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | tim-kiem | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `3977:74265` Tìm kiếm | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | atom-tag-han-dung | `Atom/Tag hạn dùng`  | `3977:74281` Atom/Tag hạn dùng | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | atom-chip | `Atom/Chip` Type=Money Outline | `3977:74287` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | atom-badge | `Atom/Badge`  | `3977:74295` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | phan-trang |  | `3977:74002` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
-
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

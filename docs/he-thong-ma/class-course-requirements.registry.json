@@ -32,16 +32,13 @@
    "nodeId": "4333:15552",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/chi-tiet-lop/mindset-khoa-hoc/hoc-vien",
    "link": "/chi-tiet-lop/mindset-khoa-hoc/hoc-vien",
    "dark": "GV-LOP-080100-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "TR-CC.A01",
-    "TR-CC.F01"
-   ]
+   "regions": []
   },
   "GV-LOP-090100": {
    "id": "GV-LOP-090100",
@@ -56,15 +53,13 @@
    "nodeId": "4333:14602",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/chi-tiet-lop/huong-dan-giang-day/trong",
    "link": null,
    "dark": "GV-LOP-090100-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "TR-CC.A02"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -72,9 +67,7 @@
    "id": "TR-CC.A01",
    "name": "mindset-khoa-hoc",
    "title": "Mindset khoá học",
-   "screens": [
-    "gv-lop-080100"
-   ],
+   "screens": [],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -89,25 +82,11 @@
      "spec": "Các mục Mindset của khoá học theo thứ tự CD đã lưu, ví dụ `HỌC VIÊN`, `MỤC TIÊU ĐẦU RA CỦA KHÓA HỌC`, `MINDSET THIẾT KẾ KHÓA HỌC`, `MINDSET DẠY VÀ HỌC`. Số mục và tên theo dữ liệu, không cố định 4 mục. Bấm mục để xem; mục đang chọn viền cam; mặc định chọn mục đầu tiên.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-lop-080100": [
-       {
-        "term": "Danh Sách",
-        "figmaId": "4333:16299",
-        "layer": "Danh Sách",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-CC.A01.02",
@@ -119,10 +98,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tiêu đề bên trái"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-CC.A01.03",
@@ -131,27 +108,11 @@
      "spec": "Mục đang chọn gồm các nhóm nội dung (ví dụ `Chân dung học viên`, `Vấn đề của học viên`, `Kỳ vọng của học viên`), mỗi nhóm có icon `⌃` thu gọn/mở, mặc định mở; nội dung là văn bản nhiều dòng giữ xuống dòng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-lop-080100": [
-       {
-        "term": "Chân dung học viên",
-        "figmaId": "4333:16362",
-        "layer": "Chân dung học viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Khối nội dung"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-CC.A01.04",
@@ -163,10 +124,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Nguồn"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-CC.A01.05",
@@ -175,37 +134,20 @@
      "spec": "Khoá học chưa có Mindset: `Danh Sách` hiển thị `Chưa có dữ liệu`, vùng trái trống.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-lop-080100": [
-       {
-        "term": "Danh Sách",
-        "figmaId": "4333:16299",
-        "layer": "Danh Sách",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Không có dữ liệu"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "TR-CC.A02",
    "name": "huong-dan-giang-day",
    "title": "Hướng dẫn giảng dạy",
-   "screens": [
-    "gv-lop-090100"
-   ],
+   "screens": [],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -220,25 +162,11 @@
      "spec": "Khối bên phải; chưa có dữ liệu hiển thị hộp thư trống và `Chưa có dữ liệu`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-lop-090100": [
-       {
-        "term": "Danh Sách",
-        "figmaId": "4333:14614",
-        "layer": "Danh sách",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-CC.A02.02",
@@ -250,10 +178,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Vùng trái"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "TR-CC.A02.03",
@@ -265,144 +191,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Khi có dữ liệu"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "TR-CC.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "gv-lop-080100"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "TR-CC.F01.01",
-     "name": "component-2",
-     "label": "Component 2",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-lop-080100": [
-       {
-        "term": "Component 2",
-        "figmaId": "4333:15616",
-        "layer": "Component 2",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Component 2",
-        "component": "Switch Center",
-        "variant": {
-         "Property 1": "Sakumi"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "TR-CC.F01.02",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-lop-080100": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "4333:15618",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Giáo Viên",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "TR-CC.F01.03",
-     "name": "header-vai-tro",
-     "label": "Header/Vai trò",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-lop-080100": [
-       {
-        "term": "Header/Vai trò",
-        "figmaId": "4899:187555",
-        "layer": "Header/Vai trò",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Header/Vai trò",
-        "component": null,
-        "variant": {
-         "Vai trò": "Giáo viên"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "TR-CC.F01.04",
-     "name": "sidebar-menu-teacher",
-     "label": "Sidebar · MENU - TEACHER",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-lop-080100": [
-       {
-        "term": "Sidebar · MENU - TEACHER",
-        "figmaId": "4915:261377",
-        "layer": "Sidebar · MENU - TEACHER",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - TEACHER",
-        "component": "MENU - TEACHER",
-        "variant": {
-         "Trang": "Lớp học / Khoá học / Mindset khoá học"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

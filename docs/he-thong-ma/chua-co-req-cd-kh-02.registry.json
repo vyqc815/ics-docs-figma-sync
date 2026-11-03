@@ -17,15 +17,13 @@
    "nodeId": "6518:337169",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lo-trinh/cuon-ngang-toi-cot-cuoi",
    "link": "/lo-trinh/cuon-ngang-toi-cot-cuoi",
    "dark": "CD-KH-020201-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-02.F01"
-   ]
+   "regions": []
   },
   "CD-KH-020210": {
    "id": "CD-KH-020210",
@@ -40,7 +38,7 @@
    "nodeId": "6518:339712",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lo-trinh/o-da-khoa-tooltip-du-buoi",
    "link": "/lo-trinh/cuon-ngang-toi-cot-cuoi?state=CD-KH-020210",
    "dark": "CD-KH-020210-DK",
@@ -61,7 +59,7 @@
    "nodeId": "6518:341098",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lo-trinh/tick-vuot-thoi-luong-canh-bao",
    "link": "/lo-trinh/cuon-ngang-toi-cot-cuoi?state=CD-KH-020220",
    "dark": "CD-KH-020220-DK",
@@ -82,7 +80,7 @@
    "nodeId": "6518:342631",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lo-trinh/dropdown-chon-ky",
    "link": "/lo-trinh/cuon-ngang-toi-cot-cuoi?popup=CD-KH-020230",
    "dark": "CD-KH-020230-DK",
@@ -103,15 +101,13 @@
    "nodeId": "6518:344243",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lo-trinh/keo-tha-doi-thu-tu",
    "link": "/lo-trinh/keo-tha-doi-thu-tu",
    "dark": "CD-KH-020240-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-02.F01"
-   ]
+   "regions": []
   },
   "CD-KH-020250": {
    "id": "CD-KH-020250",
@@ -126,7 +122,7 @@
    "nodeId": "6518:345449",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lo-trinh/sua-ten-bai-loi-de-trong-phim-tat",
    "link": "/lo-trinh/keo-tha-doi-thu-tu?state=CD-KH-020250",
    "dark": "CD-KH-020250-DK",
@@ -147,15 +143,13 @@
    "nodeId": "6518:346934",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lo-trinh/them-nhanh-bai-hoc",
    "link": "/lo-trinh/them-nhanh-bai-hoc",
    "dark": "CD-KH-020260-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CD-KH-02.F01"
-   ]
+   "regions": []
   },
   "CD-KH-020261": {
    "id": "CD-KH-020261",
@@ -170,7 +164,7 @@
    "nodeId": "6518:356225",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-kh-020261",
    "link": "/lo-trinh/them-nhanh-bai-hoc?popup=CD-KH-020261",
    "dark": "CD-KH-020261-DK",
@@ -191,7 +185,7 @@
    "nodeId": "6518:338414",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lo-trinh/chua-co-bai-hoc",
    "link": "/lo-trinh/them-nhanh-bai-hoc?state=CD-KH-020270",
    "dark": "CD-KH-020270-DK",
@@ -200,344 +194,7 @@
    "regions": []
   }
  },
- "regions": [
-  {
-   "id": "CD-KH-02.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "cd-kh-020201",
-    "cd-kh-020240",
-    "cd-kh-020260"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CD-KH-02.F01.01",
-     "name": "trang-thai-so-buoi",
-     "label": "Trạng thái số buổi",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020201": [
-       {
-        "term": "Trạng thái số buổi",
-        "figmaId": "6518:337192",
-        "layer": "Trạng thái số buổi",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Trạng thái số buổi",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Đủ buổi",
-         "Size": "S"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-02.F01.02",
-     "name": "dropdown",
-     "label": "Dropdown",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020201": [
-       {
-        "term": "Dropdown",
-        "figmaId": "6518:337271",
-        "layer": "Dropdown",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Dropdown",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Count": false,
-         "Leading Icon": "1994:25956",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": true,
-         "Chevron": true,
-         "Value": "Nhập Môn Tiếng Trung (HSK1) · HK I",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-02.F01.03",
-     "name": "atom-chip-thoi-gian",
-     "label": "Atom/Chip · Thời gian",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020201": [
-       {
-        "term": "Atom/Chip · Thời gian",
-        "figmaId": "6518:337273",
-        "layer": "Atom/Chip · Thời gian",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Chip · Thời gian",
-        "component": "Atom/Chip",
-        "variant": {
-         "Icon": false,
-         "Name": "Trần Minh Khoa",
-         "Time": "4 ngày trước",
-         "Label": "01:30:00",
-         "Type": "Thời gian · 90–100%"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-02.F01.04",
-     "name": "input-ten-bai-hoc",
-     "label": "Input · Tên bài học",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020201": [
-       {
-        "term": "Input · Tên bài học",
-        "figmaId": "6518:337362",
-        "layer": "Input · Tên bài học",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Input · Tên bài học",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "期中考试 1",
-         "State": "Sửa trực tiếp",
-         "Kiểu": "S"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-02.F01.05",
-     "name": "input-mo-ta",
-     "label": "Input · Mô tả",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020201": [
-       {
-        "term": "Input · Mô tả",
-        "figmaId": "6518:337363",
-        "layer": "Input · Mô tả",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Input · Mô tả",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Kiểm tra giữa kỳ 1",
-         "State": "Text",
-         "Kiểu": "S"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-02.F01.06",
-     "name": "molecule-add-new-bar-them-bai-hoc",
-     "label": "Molecule/Add New Bar · Thêm bài học",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020201": [
-       {
-        "term": "Molecule/Add New Bar · Thêm bài học",
-        "figmaId": "6518:338077",
-        "layer": "Molecule/Add New Bar · Thêm bài học",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Molecule/Add New Bar · Thêm bài học",
-        "component": "Molecule/Add New Bar",
-        "variant": {
-         "Icon trái": false,
-         "Nút": "1075:1478",
-         "Placeholder": "Nhập nhanh tên bài học — nhấn Enter để thêm dòng mới",
-         "Type": "Box",
-         "Size": "M",
-         "State": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-02.F01.07",
-     "name": "sidebar-menu-cd",
-     "label": "Sidebar · MENU - CD",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020201": [
-       {
-        "term": "Sidebar · MENU - CD",
-        "figmaId": "6518:338197",
-        "layer": "Sidebar · MENU - CD",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - CD",
-        "component": "MENU - CD",
-        "variant": {
-         "Trang": "Khoá học / Quy trình / Lộ trình (S4)"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-02.F01.08",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020201": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "6518:338246",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "CD",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-02.F01.09",
-     "name": "component-2",
-     "label": "Component 2",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020201": [
-       {
-        "term": "Component 2",
-        "figmaId": "6518:338247",
-        "layer": "Component 2",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Component 2",
-        "component": "Switch Center",
-        "variant": {
-         "Property 1": "Đắc Nhân"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CD-KH-02.F01.10",
-     "name": "toast-da-them-bai-hoc",
-     "label": "Toast · Đã thêm bài học",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020260": [
-       {
-        "term": "Toast · Đã thêm bài học",
-        "figmaId": "6518:356213",
-        "layer": "Toast · Đã thêm bài học",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Toast · Đã thêm bài học",
-        "component": "Atom/Toast",
-        "variant": {
-         "Action": false,
-         "Close": true,
-         "Type": "Success"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  }
- ],
+ "regions": [],
  "exceptions": [],
  "flows": [],
  "testcases": [],

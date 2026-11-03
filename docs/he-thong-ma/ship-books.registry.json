@@ -74,15 +74,13 @@
    "nodeId": "2619:196835",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/ship-sach/danh-sach-don-sach",
    "link": "/ship-sach/danh-sach-don-sach",
    "dark": "ADM-SS-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "SB-SB.F01"
-   ]
+   "regions": []
   },
   "ADM-SS-010001": {
    "id": "ADM-SS-010001",
@@ -97,15 +95,13 @@
    "nodeId": "2929:44886",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/ship-sach/danh-sach-don-sach/chon-1-don-xuat-excel",
    "link": "/ship-sach/danh-sach-don-sach?state=ADM-SS-010001",
    "dark": "ADM-SS-010001-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-SB.A01"
-   ]
+   "regions": []
   },
   "ADM-SS-010002": {
    "id": "ADM-SS-010002",
@@ -120,15 +116,13 @@
    "nodeId": "2929:45640",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/ship-sach/danh-sach-don-sach/chon-tat-ca-xuat-excel",
    "link": "/ship-sach/danh-sach-don-sach?state=ADM-SS-010002",
    "dark": "ADM-SS-010002-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-SB.A01"
-   ]
+   "regions": []
   },
   "ADM-SS-010010": {
    "id": "ADM-SS-010010",
@@ -143,15 +137,13 @@
    "nodeId": "2619:200673",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-ss-010010",
    "link": "/ship-sach/danh-sach-don-sach?popup=ADM-SS-010010",
    "dark": "ADM-SS-010010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-SB.A02"
-   ]
+   "regions": []
   },
   "ADM-SS-010012": {
    "id": "ADM-SS-010012",
@@ -166,7 +158,7 @@
    "nodeId": "2911:44254",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-ss-010012",
    "link": "/ship-sach/danh-sach-don-sach?state=ADM-SS-010012",
    "dark": "ADM-SS-010012-DK",
@@ -187,15 +179,13 @@
    "nodeId": "2619:200765",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-ss-010020",
    "link": "/ship-sach/danh-sach-don-sach?popup=ADM-SS-010020",
    "dark": "ADM-SS-010020-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-SB.A03"
-   ]
+   "regions": []
   },
   "ADM-SS-010032": {
    "id": "ADM-SS-010032",
@@ -210,7 +200,7 @@
    "nodeId": "2911:1552",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-ss-010032",
    "link": "/ship-sach/danh-sach-don-sach?popup=ADM-SS-010032",
    "dark": "ADM-SS-010032-DK",
@@ -231,7 +221,7 @@
    "nodeId": "2911:44525",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-ss-010034",
    "link": "/ship-sach/danh-sach-don-sach?state=ADM-SS-010034",
    "dark": "ADM-SS-010034-DK",
@@ -252,15 +242,13 @@
    "nodeId": "2929:44627",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-ss-010040",
    "link": "/ship-sach/danh-sach-don-sach?popup=ADM-SS-010040",
    "dark": "ADM-SS-010040-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-SB.A02"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -268,10 +256,7 @@
    "id": "SB-SB.A01",
    "name": "trang-1-danh-sach-don-sach",
    "title": "Trang 1: Danh Sách Đơn Sách",
-   "screens": [
-    "adm-ss-010001",
-    "adm-ss-010002"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-SS-010001",
     "ADM-SS-010002"
@@ -281,16 +266,14 @@
    "requirement": "ship_books/ship_books/ship_books.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-SB.A02",
    "name": "trang-2-popup-them-don-sach-cap-nhat-don",
    "title": "Trang 2: Popup Thêm đơn sách / Cập nhật đơn sách",
-   "screens": [
-    "adm-ss-010010",
-    "adm-ss-010040"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-SS-010010",
     "ADM-SS-010040"
@@ -300,15 +283,14 @@
    "requirement": "ship_books/ship_books/ship_books.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-SB.A03",
    "name": "trang-3-popup-xac-nhan-gui-tin-nhan",
    "title": "Trang 3: Popup Xác nhận gửi tin nhắn",
-   "screens": [
-    "adm-ss-010020"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-SS-010020"
    ],
@@ -317,406 +299,8 @@
    "requirement": "ship_books/ship_books/ship_books.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
-  },
-  {
-   "id": "SB-SB.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-ss-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "SB-SB.F01.01",
-     "name": "atom-icon-button",
-     "label": "Atom/Icon Button",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "Atom/Icon Button",
-        "figmaId": "2619:196841",
-        "layer": "Atom/Icon Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Icon Button",
-        "component": "Atom/Icon Button",
-        "variant": {
-         "Icon": "Plus Button Add"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-SB.F01.02",
-     "name": "atom-input",
-     "label": "Atom/Input",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "Atom/Input",
-        "figmaId": "2619:196843",
-        "layer": "Atom/Input",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm kiếm học viên",
-         "State": "Search Compact",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-SB.F01.03",
-     "name": "dropdown-trung-tam",
-     "label": "Dropdown · Trung tâm",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "Dropdown · Trung tâm",
-        "figmaId": "4713:129538",
-        "layer": "Dropdown · Trung tâm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Dropdown · Trung tâm",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trung tâm",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-SB.F01.04",
-     "name": "dropdown",
-     "label": "Dropdown",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "Dropdown",
-        "figmaId": "2619:196844",
-        "layer": "Dropdown",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Dropdown",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Ngày nhận đơn",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-SB.F01.05",
-     "name": "atom-id-badge",
-     "label": "Atom/ID Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "Atom/ID Badge",
-        "figmaId": "2619:197715",
-        "layer": "Atom/ID Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/ID Badge",
-        "component": "Atom/ID Badge",
-        "variant": {
-         "Type": "6-digit",
-         "Size": "26H",
-         "Item": "01"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-SB.F01.06",
-     "name": "atom-button",
-     "label": "Atom/Button",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "Atom/Button",
-        "figmaId": "2619:197718",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Xác nhận thông tin",
-         "Type": "Primary",
-         "Size": "XSmall"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-SB.F01.07",
-     "name": "atom-badge",
-     "label": "Atom/Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "Atom/Badge",
-        "figmaId": "2619:197739",
-        "layer": "Atom/Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Badge",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "Badge",
-         "Variant": "Info",
-         "Dropdown": "On"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-SB.F01.08",
-     "name": "mouse-click",
-     "label": "Mouse click",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "Mouse click",
-        "figmaId": "2929:44775",
-        "layer": "Mouse click",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Mouse click",
-        "component": null,
-        "variant": {},
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-SB.F01.09",
-     "name": "phan-trang",
-     "label": "Phân Trang",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "Phân Trang",
-        "figmaId": "2619:197086",
-        "layer": "Phân Trang",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Phân Trang",
-        "component": null,
-        "variant": {},
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-SB.F01.10",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "2619:197135",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-SB.F01.11",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:251382",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "Ship sách"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-SB.F01.12",
-     "name": "dd-molecule-menu-item",
-     "label": "DD/Molecule/Menu Item",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ss-010000": [
-       {
-        "term": "DD/Molecule/Menu Item",
-        "figmaId": "2911:1151",
-        "layer": "DD/Molecule/Menu Item",
-        "confidence": "cao",
-        "region": null,
-        "owner": "DD/Molecule/Menu Item",
-        "component": "DD/Molecule/Menu Item",
-        "variant": {
-         "Submenu": false,
-         "Meta Text": "12",
-         "Leading": false,
-         "Meta": false,
-         "Description": false,
-         "Leading Icon": "2015:30465",
-         "Description Text": "Mô tả phụ",
-         "Label": "Mới",
-         "Type": "Default",
-         "State": "Default",
-         "Size": "S"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "items": [],
+   "screensFromItems": []
   }
  ],
  "exceptions": [

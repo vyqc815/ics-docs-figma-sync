@@ -102,18 +102,13 @@
    "nodeId": "4193:146265",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/gop-y/hoc-vien",
    "link": "/gop-y/hoc-vien",
    "dark": "ADM-GY-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "SB-BU.A01",
-    "SB-BU.A05",
-    "SB-BU.A06",
-    "SB-BU.F01"
-   ]
+   "regions": []
   },
   "CD-BL-010000": {
    "id": "CD-BL-010000",
@@ -128,20 +123,13 @@
    "nodeId": "5274:364989",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/bao-loi/danh-sach-bao-loi",
    "link": "/bao-loi/danh-sach-bao-loi",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "SB-BU.A01",
-    "SB-BU.A05",
-    "SB-BU.A06",
-    "SB-BU.F01",
-    "SB-BU.F02",
-    "SB-BU.F03"
-   ]
+   "regions": []
   },
   "CD-BL-010010": {
    "id": "CD-BL-010010",
@@ -156,15 +144,13 @@
    "nodeId": "5300:51144",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-bl-010010",
    "link": "/bao-loi/danh-sach-bao-loi?popup=CD-BL-010010",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A03"
-   ]
+   "regions": []
   },
   "CD-BL-010011": {
    "id": "CD-BL-010011",
@@ -179,15 +165,13 @@
    "nodeId": "5300:51175",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-bl-010011",
    "link": "/bao-loi/danh-sach-bao-loi?popup=CD-BL-010011",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A03"
-   ]
+   "regions": []
   },
   "CD-BL-010020": {
    "id": "CD-BL-010020",
@@ -202,15 +186,13 @@
    "nodeId": "5371:42362",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-bl-010020",
    "link": "/bao-loi/danh-sach-bao-loi?popup=CD-BL-010020",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A04"
-   ]
+   "regions": []
   },
   "CD-BL-010030": {
    "id": "CD-BL-010030",
@@ -225,15 +207,13 @@
    "nodeId": "5274:365488",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-bl-010030",
    "link": "/bao-loi/danh-sach-bao-loi?popup=CD-BL-010030",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A04"
-   ]
+   "regions": []
   },
   "CD-BL-010040": {
    "id": "CD-BL-010040",
@@ -248,15 +228,13 @@
    "nodeId": "5274:365264",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/bao-loi/chua-co-bao-loi",
    "link": "/bao-loi/danh-sach-bao-loi?state=CD-BL-010040",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A02"
-   ]
+   "regions": []
   },
   "CD-BL-010050": {
    "id": "CD-BL-010050",
@@ -271,15 +249,13 @@
    "nodeId": "5300:27142",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-bl-010050",
    "link": "/bao-loi/danh-sach-bao-loi?popup=CD-BL-010050",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A04"
-   ]
+   "regions": []
   },
   "CH-BL-010000": {
    "id": "CH-BL-010000",
@@ -294,20 +270,13 @@
    "nodeId": "5364:369985",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/bao-loi/danh-sach-bao-loi-ch-bl-010000",
    "link": "/bao-loi/danh-sach-bao-loi-ch-bl-010000",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "SB-BU.A01",
-    "SB-BU.A05",
-    "SB-BU.A06",
-    "SB-BU.F01",
-    "SB-BU.F02",
-    "SB-BU.F04"
-   ]
+   "regions": []
   },
   "CH-BL-010010": {
    "id": "CH-BL-010010",
@@ -322,15 +291,13 @@
    "nodeId": "5300:51074",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/ch-bl-010010",
    "link": "/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010010",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A03"
-   ]
+   "regions": []
   },
   "CH-BL-010011": {
    "id": "CH-BL-010011",
@@ -345,15 +312,13 @@
    "nodeId": "5300:51109",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/ch-bl-010011",
    "link": "/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010011",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A03"
-   ]
+   "regions": []
   },
   "CH-BL-010020": {
    "id": "CH-BL-010020",
@@ -368,15 +333,13 @@
    "nodeId": "5274:364127",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/ch-bl-010020",
    "link": "/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010020",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A04"
-   ]
+   "regions": []
   },
   "CH-BL-010030": {
    "id": "CH-BL-010030",
@@ -391,15 +354,13 @@
    "nodeId": "5274:364154",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/ch-bl-010030",
    "link": "/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010030",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A04"
-   ]
+   "regions": []
   },
   "CH-BL-010040": {
    "id": "CH-BL-010040",
@@ -414,15 +375,13 @@
    "nodeId": "5274:363930",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/bao-loi/chua-co-bao-loi-ch-bl-010040",
    "link": "/bao-loi/danh-sach-bao-loi-ch-bl-010000?state=CH-BL-010040",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A02"
-   ]
+   "regions": []
   },
   "CH-BL-010050": {
    "id": "CH-BL-010050",
@@ -437,15 +396,13 @@
    "nodeId": "5300:26756",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/ch-bl-010050",
    "link": "/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010050",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A04"
-   ]
+   "regions": []
   },
   "CH-BL-010070": {
    "id": "CH-BL-010070",
@@ -460,15 +417,13 @@
    "nodeId": "5371:40303",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/ch-bl-010070",
    "link": "/bao-loi/danh-sach-bao-loi-ch-bl-010000?popup=CH-BL-010070",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A07"
-   ]
+   "regions": []
   },
   "GV-BL-010000": {
    "id": "GV-BL-010000",
@@ -483,20 +438,13 @@
    "nodeId": "5019:364967",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/bao-loi/danh-sach-bao-loi-gv-bl-010000",
    "link": "/bao-loi/danh-sach-bao-loi-gv-bl-010000",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "SB-BU.A01",
-    "SB-BU.A05",
-    "SB-BU.A06",
-    "SB-BU.F01",
-    "SB-BU.F02",
-    "SB-BU.F05"
-   ]
+   "regions": []
   },
   "GV-BL-010010": {
    "id": "GV-BL-010010",
@@ -511,15 +459,13 @@
    "nodeId": "5300:51046",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/gv-bl-010010",
    "link": "/bao-loi/danh-sach-bao-loi-gv-bl-010000?popup=GV-BL-010010",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A03"
-   ]
+   "regions": []
   },
   "GV-BL-010020": {
    "id": "GV-BL-010020",
@@ -534,15 +480,13 @@
    "nodeId": "5031:373246",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/gv-bl-010020",
    "link": "/bao-loi/danh-sach-bao-loi-gv-bl-010000?popup=GV-BL-010020",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A04"
-   ]
+   "regions": []
   },
   "GV-BL-010030": {
    "id": "GV-BL-010030",
@@ -557,15 +501,13 @@
    "nodeId": "5031:373275",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/gv-bl-010030",
    "link": "/bao-loi/danh-sach-bao-loi-gv-bl-010000?popup=GV-BL-010030",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A04"
-   ]
+   "regions": []
   },
   "GV-BL-010040": {
    "id": "GV-BL-010040",
@@ -580,15 +522,13 @@
    "nodeId": "5019:366839",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/bao-loi/chua-co-bao-loi-gv-bl-010040",
    "link": "/bao-loi/danh-sach-bao-loi-gv-bl-010000?state=GV-BL-010040",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-BU.A02"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -596,12 +536,7 @@
    "id": "SB-BU.A01",
    "name": "trang-1-chi-tiet-bai-hoc-tab-bug-them-bu",
    "title": "Trang 1: Chi tiết bài học – Tab Bug (Thêm Bug)",
-   "screens": [
-    "cd-bl-010000",
-    "ch-bl-010000",
-    "gv-bl-010000",
-    "adm-gy-010000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-BL-010000",
     "CH-BL-010000",
@@ -613,17 +548,14 @@
    "requirement": "survey_bug/bug/bug.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-BU.A02",
    "name": "trang-2-danh-sach-bao-loi-gop-y",
    "title": "Trang 2: Danh sách Báo lỗi & góp ý",
-   "screens": [
-    "cd-bl-010040",
-    "ch-bl-010040",
-    "gv-bl-010040"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-BL-010040",
     "CH-BL-010040",
@@ -634,19 +566,14 @@
    "requirement": "survey_bug/bug/bug.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-BU.A03",
    "name": "trang-3-popup-gui-bao-loi",
    "title": "Trang 3: Popup Gửi báo lỗi",
-   "screens": [
-    "cd-bl-010010",
-    "cd-bl-010011",
-    "ch-bl-010010",
-    "ch-bl-010011",
-    "gv-bl-010010"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-BL-010010",
     "CD-BL-010011",
@@ -659,22 +586,14 @@
    "requirement": "survey_bug/bug/bug.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-BU.A04",
    "name": "trang-4-popup-chi-tiet-bao-loi",
    "title": "Trang 4: Popup Chi tiết báo lỗi",
-   "screens": [
-    "cd-bl-010020",
-    "cd-bl-010030",
-    "cd-bl-010050",
-    "ch-bl-010020",
-    "ch-bl-010030",
-    "ch-bl-010050",
-    "gv-bl-010020",
-    "gv-bl-010030"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-BL-010020",
     "CD-BL-010030",
@@ -690,18 +609,14 @@
    "requirement": "survey_bug/bug/bug.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-BU.A05",
    "name": "trang-5-popup-xac-nhan-hoan-thanh",
    "title": "Trang 5: Popup Xác nhận hoàn thành",
-   "screens": [
-    "cd-bl-010000",
-    "ch-bl-010000",
-    "gv-bl-010000",
-    "adm-gy-010000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-BL-010000",
     "CH-BL-010000",
@@ -713,18 +628,14 @@
    "requirement": "survey_bug/bug/bug.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-BU.A06",
    "name": "trang-6-popup-xem-ket-qua",
    "title": "Trang 6: Popup Xem kết quả",
-   "screens": [
-    "cd-bl-010000",
-    "ch-bl-010000",
-    "gv-bl-010000",
-    "adm-gy-010000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-BL-010000",
     "CH-BL-010000",
@@ -736,15 +647,14 @@
    "requirement": "survey_bug/bug/bug.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-BU.A07",
    "name": "trang-7-popup-nhac-bug-chua-xu-ly-ptl",
    "title": "Trang 7: Popup nhắc bug chưa xử lý (PTL)",
-   "screens": [
-    "ch-bl-010070"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CH-BL-010070"
    ],
@@ -753,1210 +663,8 @@
    "requirement": "survey_bug/bug/bug.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
-  },
-  {
-   "id": "SB-BU.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-gy-010000",
-    "cd-bl-010000",
-    "ch-bl-010000",
-    "gv-bl-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "SB-BU.F01.01",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gy-010000": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:250458",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "Góp ý"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.02",
-     "name": "tab-hoc-vien",
-     "label": "Tab · Học viên",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gy-010000": [
-       {
-        "term": "Tab · Học viên",
-        "figmaId": "4193:148087",
-        "layer": "Tab · Học viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Học viên",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Active",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.03",
-     "name": "tab-giao-vien",
-     "label": "Tab · Giáo viên",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gy-010000": [
-       {
-        "term": "Tab · Giáo viên",
-        "figmaId": "4193:148093",
-        "layer": "Tab · Giáo viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Giáo viên",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.04",
-     "name": "filter-trang-thai",
-     "label": "Filter · Trạng thái",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gy-010000": [
-       {
-        "term": "Filter · Trạng thái",
-        "figmaId": "4193:146792",
-        "layer": "Filter · Trạng thái",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Trạng thái",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trạng thái",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.05",
-     "name": "filter-thang-nay",
-     "label": "Filter · Tháng này",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gy-010000": [
-       {
-        "term": "Filter · Tháng này",
-        "figmaId": "4193:146793",
-        "layer": "Filter · Tháng này",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Tháng này",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "Tháng này",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.06",
-     "name": "avatar",
-     "label": "Avatar",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gy-010000": [
-       {
-        "term": "Avatar",
-        "figmaId": "4193:146846",
-        "layer": "Avatar",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Avatar",
-        "component": "Avatar",
-        "variant": {
-         "Count": "+2",
-         "Name": "Đỗ Ngọc Hà",
-         "Size": "32"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.07",
-     "name": "thoi-gian-gui",
-     "label": "Thời gian gửi",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gy-010000": [
-       {
-        "term": "Thời gian gửi",
-        "figmaId": "4193:146837",
-        "layer": "Thời gian gửi",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thời gian gửi",
-        "component": "Atom/Chip",
-        "variant": {
-         "Time": "4 ngày trước",
-         "Name": "Trần Minh Khoa",
-         "Label": "10:54 · 09.01.2025",
-         "Icon": false,
-         "Type": "Date không có thứ"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.08",
-     "name": "trang-thai",
-     "label": "Trạng thái",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gy-010000": [
-       {
-        "term": "Trạng thái",
-        "figmaId": "4193:146841",
-        "layer": "Trạng thái",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Trạng thái",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "Hoàn thành",
-         "Variant": "Success",
-         "Dropdown": "On"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.09",
-     "name": "ghi-chu",
-     "label": "Ghi chú",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gy-010000": [
-       {
-        "term": "Ghi chú",
-        "figmaId": "4193:146851",
-        "layer": "Ghi chú",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Ghi chú",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "hihihi",
-         "State": "Filled",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.10",
-     "name": "avatar",
-     "label": "Avatar",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gy-010000": [
-       {
-        "term": "Avatar",
-        "figmaId": "4193:146864",
-        "layer": "Avatar",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Avatar",
-        "component": "Atom/Avatar Initials",
-        "variant": {
-         "Initials": "?",
-         "Style": "Soft",
-         "Tone": "Gray"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.11",
-     "name": "filter-trung-tam",
-     "label": "Filter · Trung tâm",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Filter · Trung tâm",
-        "figmaId": "5364:369535",
-        "layer": "Filter · Trung tâm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Trung tâm",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Trung tâm",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trung tâm",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.12",
-     "name": "filter-loai",
-     "label": "Filter · Loại",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Filter · Loại",
-        "figmaId": "5274:365132",
-        "layer": "Filter · Loại",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Loại",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Loại",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Loại",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.13",
-     "name": "filter-doi-tuong",
-     "label": "Filter · Đối tượng",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Filter · Đối tượng",
-        "figmaId": "5274:367753",
-        "layer": "Filter · Đối tượng",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Đối tượng",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Đối tượng",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Đối tượng",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.14",
-     "name": "filter-muc-do-nghiem-trong",
-     "label": "Filter · Mức độ nghiêm trọng",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Filter · Mức độ nghiêm trọng",
-        "figmaId": "5274:365133",
-        "layer": "Filter · Mức độ nghiêm trọng",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Mức độ nghiêm trọng",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Mức độ nghiêm trọng",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Mức độ nghiêm trọng",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.15",
-     "name": "nut-gui-bao-loi",
-     "label": "Nút · Gửi báo lỗi",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Nút · Gửi báo lỗi",
-        "figmaId": "5274:365136",
-        "layer": "Nút · Gửi báo lỗi",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Nút · Gửi báo lỗi",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "+ Gửi báo lỗi",
-         "Type": "Primary",
-         "Size": "Small"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.16",
-     "name": "the-chi-so-tong-bao-loi",
-     "label": "Thẻ chỉ số · Tổng báo lỗi",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Thẻ chỉ số · Tổng báo lỗi",
-        "figmaId": "5274:365140",
-        "layer": "Thẻ chỉ số · Tổng báo lỗi",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Tổng báo lỗi",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có biểu tượng": true,
-         "Đơn vị": "hoàn thành",
-         "Có đơn vị": true,
-         "Biểu tượng": "1966:7617",
-         "Số liệu": "3/6",
-         "Có phần thêm": false,
-         "Tiêu đề": "Tổng báo lỗi",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ icon"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.17",
-     "name": "the-chi-so-loi-nghiem-trong",
-     "label": "Thẻ chỉ số · Lỗi nghiêm trọng",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Thẻ chỉ số · Lỗi nghiêm trọng",
-        "figmaId": "5274:365141",
-        "layer": "Thẻ chỉ số · Lỗi nghiêm trọng",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Lỗi nghiêm trọng",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có biểu tượng": true,
-         "Đơn vị": "hoàn thành",
-         "Có đơn vị": true,
-         "Biểu tượng": "1053:2222",
-         "Số liệu": "1/2",
-         "Có phần thêm": false,
-         "Tiêu đề": "Lỗi nghiêm trọng",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ icon"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.18",
-     "name": "the-chi-so-gop-y",
-     "label": "Thẻ chỉ số · Góp ý",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Thẻ chỉ số · Góp ý",
-        "figmaId": "5274:365142",
-        "layer": "Thẻ chỉ số · Góp ý",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số · Góp ý",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có biểu tượng": true,
-         "Đơn vị": "hoàn thành",
-         "Có đơn vị": true,
-         "Biểu tượng": "2925:24887",
-         "Số liệu": "0/1",
-         "Có phần thêm": false,
-         "Tiêu đề": "Góp ý",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Biểu đồ icon"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.19",
-     "name": "atom-badge",
-     "label": "Atom/Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Atom/Badge",
-        "figmaId": "5274:365176",
-        "layer": "Atom/Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Badge",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "Chưa đọc",
-         "Variant": "Neutral",
-         "Dropdown": "On"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.20",
-     "name": "menu-5-trung-tam-con-lai",
-     "label": "③ Menu · 5 trung tâm còn lại",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "③ Menu · 5 trung tâm còn lại",
-        "figmaId": "5371:41173",
-        "layer": "③ Menu · 5 trung tâm còn lại",
-        "confidence": "cao",
-        "region": null,
-        "owner": "③ Menu · 5 trung tâm còn lại",
-        "component": "DD/Organism/Menu Panel",
-        "variant": {
-         "Footer": false,
-         "Search": false,
-         "Type": "Single"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.21",
-     "name": "menu-doi-tuong",
-     "label": "Menu · Đối tượng",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Menu · Đối tượng",
-        "figmaId": "5371:41240",
-        "layer": "Menu · Đối tượng",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Menu · Đối tượng",
-        "component": "DD/Organism/Menu Panel",
-        "variant": {
-         "Footer": false,
-         "Search": false,
-         "Type": "Single"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.22",
-     "name": "menu-4-muc-do",
-     "label": "② Menu · 4 mức độ",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "② Menu · 4 mức độ",
-        "figmaId": "5371:41297",
-        "layer": "② Menu · 4 mức độ",
-        "confidence": "cao",
-        "region": null,
-        "owner": "② Menu · 4 mức độ",
-        "component": "DD/Organism/Menu Panel",
-        "variant": {
-         "Footer": false,
-         "Search": false,
-         "Type": "Single"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.23",
-     "name": "menu-loai",
-     "label": "Menu · Loại",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Menu · Loại",
-        "figmaId": "5371:41355",
-        "layer": "Menu · Loại",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Menu · Loại",
-        "component": "DD/Organism/Menu Panel",
-        "variant": {
-         "Footer": false,
-         "Search": false,
-         "Type": "Single"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.24",
-     "name": "menu-trang-thai",
-     "label": "Menu · Trạng thái",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Menu · Trạng thái",
-        "figmaId": "5371:41392",
-        "layer": "Menu · Trạng thái",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Menu · Trạng thái",
-        "component": "DD/Organism/Menu Panel",
-        "variant": {
-         "Footer": false,
-         "Search": false,
-         "Type": "Single"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.25",
-     "name": "o-sua-truc-tiep-tieu-de",
-     "label": "Ô sửa trực tiếp · Tiêu đề",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Ô sửa trực tiếp · Tiêu đề",
-        "figmaId": "5371:41436",
-        "layer": "Ô sửa trực tiếp · Tiêu đề",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Ô sửa trực tiếp · Tiêu đề",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Sai pinyin từ 再见",
-         "State": "Sửa trực tiếp",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.26",
-     "name": "menu-thao-tac-dong-chinh-sua-xoa-bug",
-     "label": "Menu · Thao tác dòng (Chỉnh sửa / Xoá bug)",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Menu · Thao tác dòng (Chỉnh sửa / Xoá bug)",
-        "figmaId": "5371:41442",
-        "layer": "Menu · Thao tác dòng (Chỉnh sửa / Xoá bug)",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Menu · Thao tác dòng (Chỉnh sửa / Xoá bug)",
-        "component": "DD/Organism/Menu Panel",
-        "variant": {
-         "Footer": false,
-         "Search": false,
-         "Type": "Action"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.27",
-     "name": "filter-bug-cua-toi",
-     "label": "Filter · Bug của tôi",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-bl-010000": [
-       {
-        "term": "Filter · Bug của tôi",
-        "figmaId": "5371:43296",
-        "layer": "Filter · Bug của tôi",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Bug của tôi",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Bug của tôi",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "Bug của tôi",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F01.28",
-     "name": "menu-bug-cua-toi",
-     "label": "Menu · Bug của tôi",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-bl-010000": [
-       {
-        "term": "Menu · Bug của tôi",
-        "figmaId": "5371:43435",
-        "layer": "Menu · Bug của tôi",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Menu · Bug của tôi",
-        "component": "DD/Organism/Menu Panel",
-        "variant": {
-         "Footer": false,
-         "Search": false,
-         "Type": "Single"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  },
-  {
-   "id": "SB-BU.F02",
-   "name": "header",
-   "title": "Header",
-   "screens": [
-    "cd-bl-010000",
-    "ch-bl-010000",
-    "gv-bl-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "SB-BU.F02.01",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "5274:365039",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": "Header",
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "CD",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F02.02",
-     "name": "component-2",
-     "label": "Component 2",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Component 2",
-        "figmaId": "5274:365041",
-        "layer": "Component 2",
-        "confidence": "cao",
-        "region": "Header",
-        "owner": "Component 2",
-        "component": "Switch Center",
-        "variant": {
-         "Property 1": "Sakumi"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-BU.F02.03",
-     "name": "header-vai-tro",
-     "label": "Header/Vai trò",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-bl-010000": [
-       {
-        "term": "Header/Vai trò",
-        "figmaId": "5019:365020",
-        "layer": "Header/Vai trò",
-        "confidence": "cao",
-        "region": "Header",
-        "owner": "Header/Vai trò",
-        "component": null,
-        "variant": {
-         "Vai trò": "Giáo viên"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  },
-  {
-   "id": "SB-BU.F03",
-   "name": "sidebar-menu-cd",
-   "title": "Sidebar · MENU - CD",
-   "screens": [
-    "cd-bl-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "SB-BU.F03.01",
-     "name": "sidebar-menu-cd",
-     "label": "Sidebar · MENU - CD",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-bl-010000": [
-       {
-        "term": "Sidebar · MENU - CD",
-        "figmaId": "5274:365124",
-        "layer": "Sidebar · MENU - CD",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CD",
-        "owner": "Sidebar · MENU - CD",
-        "component": "MENU - CD",
-        "variant": {
-         "Trang": "Báo lỗi"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  },
-  {
-   "id": "SB-BU.F04",
-   "name": "sidebar-menu-class-handler",
-   "title": "Sidebar · MENU - CLASS HANDLER",
-   "screens": [
-    "ch-bl-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "SB-BU.F04.01",
-     "name": "sidebar-menu-class-handler",
-     "label": "Sidebar · MENU - CLASS HANDLER",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "ch-bl-010000": [
-       {
-        "term": "Sidebar · MENU - CLASS HANDLER",
-        "figmaId": "5364:370118",
-        "layer": "Sidebar · MENU - CLASS HANDLER",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Sidebar · MENU - CLASS HANDLER",
-        "component": "MENU - CLASS HANDLER",
-        "variant": {
-         "Trang": "Báo lỗi"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  },
-  {
-   "id": "SB-BU.F05",
-   "name": "sidebar-menu-teacher",
-   "title": "Sidebar · MENU - TEACHER",
-   "screens": [
-    "gv-bl-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "SB-BU.F05.01",
-     "name": "sidebar-menu-teacher",
-     "label": "Sidebar · MENU - TEACHER",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "gv-bl-010000": [
-       {
-        "term": "Sidebar · MENU - TEACHER",
-        "figmaId": "5019:365102",
-        "layer": "Sidebar · MENU - TEACHER",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - TEACHER",
-        "owner": "Sidebar · MENU - TEACHER",
-        "component": "MENU - TEACHER",
-        "variant": {
-         "Trang": "Báo lỗi"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "items": [],
+   "screensFromItems": []
   }
  ],
  "exceptions": [

@@ -129,10 +129,7 @@ Chọn bài chưa bắt đầu hiển thị `Bài học chưa bắt đầu` ở 
 
 - Bài chưa bắt đầu khác bài đã bắt đầu có 0% BTVN hợp lệ và khác lỗi request.
 
-### Trang 6: ADM-LOP-030200 — Tab Thông tin
-
-![Figma mới nhất · ADM-LOP-030200](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-030200.png)
-
+### Trang 6: Tab Thông tin
 ![Trang 6](./images/47-class-detail-lesson-information.png)
 
 *Thông tin bài học chỉ đọc — nhấn để xem ảnh gốc*

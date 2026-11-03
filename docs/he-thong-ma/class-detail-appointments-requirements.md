@@ -25,69 +25,55 @@ Requirement: `management_requirement/class_management/class_detail_appointments_
 
 ### `A01` Tab Lịch Hẹn — Danh sách lịch hẹn của lớp
 
-Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | tab-lich-hen |  |  | — |  | `TC03` | Chưa khớp tự động | QC |
-| `A01.02` | thoi-gian | `DD/Molecule/Trigger` Size=XS, State=Default | `2533:20877` Dropdown | — |  | `TC05` | Khớp | QC |
-| `A01.03` | noi-dung | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `I2533:21147;1739:32351` Tìm nội dung... | — |  | `TC06`, `TC07` | Khớp | QC |
-| `A01.04` | ghi-chu | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I1299:17;2177:28928` Chi tiết NV; `2533:20927` Thu gọn | — |  |  | Khớp | QC |
-| `A01.05` | nguoi-phu-trach |  |  | — |  | `TC04` | Chưa khớp tự động | QC |
-| `A01.06` | doi-tuong | `DD/Molecule/Trigger` Size=XS, State=Active | `2533:20876` Dropdown | — |  | `TC12` | Khớp | QC |
-| `A01.07` | do-uu-tien |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.08` | trang-thai |  | `2533:20995` Đổi Trạng Thái | — |  | `TC09` | Khớp | QC |
-| `A01.09` | nguoi-theo-doi |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.10` | trang-thai-tai |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.01` | tab-lich-hen |  |  | — |  | `TC03` | Chưa sync | QC |
+| `A01.02` | thoi-gian |  |  | — |  | `TC05` | Chưa sync | QC |
+| `A01.03` | noi-dung |  |  | — |  | `TC06`, `TC07` | Chưa sync | QC |
+| `A01.04` | ghi-chu |  |  | — |  |  | Chưa sync | QC |
+| `A01.05` | nguoi-phu-trach |  |  | — |  | `TC04` | Chưa sync | QC |
+| `A01.06` | doi-tuong |  |  | — |  | `TC12` | Chưa sync | QC |
+| `A01.07` | do-uu-tien |  |  | — |  |  | Chưa sync | QC |
+| `A01.08` | trang-thai |  |  | — |  | `TC09` | Chưa sync | QC |
+| `A01.09` | nguoi-theo-doi |  |  | — |  |  | Chưa sync | QC |
+| `A01.10` | trang-thai-tai |  |  | — |  |  | Chưa sync | QC |
 
 ### `A02` Phân trang danh sách lịch hẹn
 
-Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | so-dong-moi-trang |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.02` | tong-so | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I1299:19;2177:28928` Chi tiết NV | — |  |  | Khớp | QC |
-| `A02.03` | khoang-dang-xem |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.04` | dieu-huong |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.05` | thu-tu |  |  | — |  | `TC16` | Chưa khớp tự động | QC |
+| `A02.01` | so-dong-moi-trang |  |  | — |  |  | Chưa sync | QC |
+| `A02.02` | tong-so |  |  | — |  |  | Chưa sync | QC |
+| `A02.03` | khoang-dang-xem |  |  | — |  |  | Chưa sync | QC |
+| `A02.04` | dieu-huong |  |  | — |  |  | Chưa sync | QC |
+| `A02.05` | thu-tu |  |  | — |  | `TC16` | Chưa sync | QC |
 
 ### `A03` Chỉnh sửa lịch hẹn — Chỉ owner
 
-Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | dropdown-do-uu-tien |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.02` | dropdown-trang-thai |  |  | — |  | `TC24` | Chưa khớp tự động | QC |
-| `A03.03` | quyen-chinh |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.04` | dang-luu |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.05` | ket-qua |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.01` | dropdown-do-uu-tien |  |  | — |  |  | Chưa sync | QC |
+| `A03.02` | dropdown-trang-thai |  |  | — |  | `TC24` | Chưa sync | QC |
+| `A03.03` | quyen-chinh |  |  | — |  |  | Chưa sync | QC |
+| `A03.04` | dang-luu |  |  | — |  |  | Chưa sync | QC |
+| `A03.05` | ket-qua |  |  | — |  |  | Chưa sync | QC |
 
 ### `A04` Toast phản hồi CRUD
 
-Frame: `ADM-LOP-050100` (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-050100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa khớp tự động | QC |
-| `A04.02` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.03` | canh-bao |  |  | — |  | `TTC03` | Chưa khớp tự động | QC |
-| `A04.04` | thong-tin |  | `2533:20924` Giúp học viên thực hành theo dõi lớp học, nắm được tình trạng học tập của học viên và rèn kỹ năng tổng hợp – báo cáo thông tin lớp. | — |  |  | Khớp | QC |
-
-### `F01` (ngoài Body)
-
-Frame: `ADM-LOP-050100` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-side-tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `1299:15` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `2533:21147` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | lich-giao-vien-dang-ky | `LỊCH GIÁO VIÊN ĐĂNG KÝ` State=Default | `2533:20901` LỊCH GIÁO VIÊN ĐĂNG KÝ | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | atom-object-chip | `Atom/Object Chip` Type=System | `2533:20905` Atom/Object Chip | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | atom-icon-button | `Atom/Icon Button`  | `2533:21031` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:231079` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | account | `ACCOUNT` Size=Default | `3497:53466` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `A04.01` | thanh-cong |  |  | — |  | `TTC01` | Chưa sync | QC |
+| `A04.02` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A04.03` | canh-bao |  |  | — |  | `TTC03` | Chưa sync | QC |
+| `A04.04` | thong-tin |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -149,7 +135,7 @@ Frame: `ADM-LOP-050100` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (17): `A01.01`, `A01.05`, `A01.07`, `A01.09`, `A01.10`, `A02.01`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A04.01`, `A04.02`, `A04.03`
+- Chưa sync (24): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A04.01`, `A04.02`, `A04.03`, `A04.04`
 - REQ/EX chưa có testcase (1): `EX04`
 
 ## 9. Chi tiết dựng

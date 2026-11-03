@@ -2,10 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: CD-KH-020200 — Nội dung buổi học (Lộ Trình S2)
-
-![Figma mới nhất · CD-KH-020200](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-020200.png)
-
+### Trang 1: Nội dung buổi học (Lộ Trình S2)
 ![alt text](image.png)
 
 **Mô tả:**

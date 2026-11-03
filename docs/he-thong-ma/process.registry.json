@@ -81,17 +81,13 @@
    "nodeId": "3821:45858",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quy-trinh/task-hom-nay",
    "link": "/quy-trinh/task-hom-nay",
    "dark": "SP-TASK-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "CHS-PR.A02",
-    "CHS-PR.F01",
-    "CHS-PR.F02"
-   ]
+   "regions": []
   },
   "SP-TASK-010001": {
    "id": "SP-TASK-010001",
@@ -106,15 +102,13 @@
    "nodeId": "6935:389124",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quy-trinh/task-hom-nay-da-chon-them-nguoi",
    "link": "/quy-trinh/task-hom-nay?state=SP-TASK-010001",
    "dark": "SP-TASK-010001-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CHS-PR.A01"
-   ]
+   "regions": []
   },
   "SP-TASK-020000": {
    "id": "SP-TASK-020000",
@@ -129,17 +123,13 @@
    "nodeId": "3857:73905",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quy-trinh/task-tuan-nay",
    "link": "/quy-trinh/task-tuan-nay",
    "dark": "SP-TASK-020000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "CHS-PR.A02",
-    "CHS-PR.F01",
-    "CHS-PR.F02"
-   ]
+   "regions": []
   },
   "SP-TASK-020001": {
    "id": "SP-TASK-020001",
@@ -154,15 +144,13 @@
    "nodeId": "6935:390606",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quy-trinh/task-tuan-nay-da-chon-them-nguoi",
    "link": "/quy-trinh/task-tuan-nay?state=SP-TASK-020001",
    "dark": "SP-TASK-020001-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CHS-PR.A01"
-   ]
+   "regions": []
   },
   "SP-TASK-030000": {
    "id": "SP-TASK-030000",
@@ -177,18 +165,13 @@
    "nodeId": "3857:75831",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quy-trinh/ca-truc",
    "link": "/quy-trinh/ca-truc",
    "dark": "SP-TASK-030000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "CHS-PR.A02",
-    "CHS-PR.A03",
-    "CHS-PR.F01",
-    "CHS-PR.F02"
-   ]
+   "regions": []
   },
   "SP-TASK-030001": {
    "id": "SP-TASK-030001",
@@ -203,15 +186,13 @@
    "nodeId": "6935:391842",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quy-trinh/ca-truc-da-chon-them-nguoi",
    "link": "/quy-trinh/ca-truc?state=SP-TASK-030001",
    "dark": "SP-TASK-030001-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CHS-PR.A01"
-   ]
+   "regions": []
   },
   "SP-TASK-030002": {
    "id": "SP-TASK-030002",
@@ -226,7 +207,7 @@
    "nodeId": "3857:76187",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/sp-task-030002",
    "link": "/quy-trinh/ca-truc?popup=SP-TASK-030002",
    "dark": "SP-TASK-030002-DK",
@@ -247,7 +228,7 @@
    "nodeId": "3857:76190",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/sp-task-030003",
    "link": "/quy-trinh/ca-truc?popup=SP-TASK-030003",
    "dark": "SP-TASK-030003-DK",
@@ -268,7 +249,7 @@
    "nodeId": "3857:76843",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/sp-task-030004",
    "link": "/quy-trinh/ca-truc?popup=SP-TASK-030004",
    "dark": "SP-TASK-030004-DK",
@@ -289,15 +270,13 @@
    "nodeId": "3857:76119",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/sp-task-030010",
    "link": "/quy-trinh/ca-truc?popup=SP-TASK-030010",
    "dark": "SP-TASK-030010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CHS-PR.A04"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -305,11 +284,7 @@
    "id": "CHS-PR.A01",
    "name": "trang-1-task-hom-nay-task-tuan-nay-task-",
    "title": "Trang 1: Task Hôm Nay / Task Tuần Này / Task Tháng Này / Ca Trực",
-   "screens": [
-    "sp-task-010001",
-    "sp-task-020001",
-    "sp-task-030001"
-   ],
+   "screens": [],
    "screensGuessed": [
     "SP-TASK-010001",
     "SP-TASK-020001",
@@ -328,104 +303,7 @@
      "spec": "Menu `Quy Trình` gồm 5 menu con `Task Hôm Nay`, `Task Tuần Này`, `Task Tháng Này`, `Ca Trực`, `Task Khác`, mỗi menu có thanh `%`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010001": [
-       {
-        "term": "Sidebar",
-        "figmaId": "6935:389261",
-        "layer": "Sidebar · MENU - CLASS HANDLER",
-        "confidence": "thap",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Sidebar · MENU - CLASS HANDLER",
-        "component": "MENU - CLASS HANDLER",
-        "variant": {
-         "Trang": "Quy trình / Task hôm nay"
-        },
-        "inCode": false
-       },
-       {
-        "term": "Quy Trình",
-        "figmaId": "I6935:389261;4901:224371",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1150:22358",
-         "Label": "Quy trình",
-         "Type": "Chính dropdown",
-         "State": "Default",
-         "Expanded": "Yes"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020001": [
-       {
-        "term": "Sidebar",
-        "figmaId": "6935:390743",
-        "layer": "Sidebar · MENU - CLASS HANDLER",
-        "confidence": "thap",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Sidebar · MENU - CLASS HANDLER",
-        "component": "MENU - CLASS HANDLER",
-        "variant": {
-         "Trang": "Quy trình / Task tuần này"
-        },
-        "inCode": false
-       },
-       {
-        "term": "Quy Trình",
-        "figmaId": "I6935:390743;4901:224926",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1150:22358",
-         "Label": "Quy trình",
-         "Type": "Chính dropdown",
-         "State": "Default",
-         "Expanded": "Yes"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-030001": [
-       {
-        "term": "Sidebar",
-        "figmaId": "6935:391979",
-        "layer": "Sidebar · MENU - CLASS HANDLER",
-        "confidence": "thap",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Sidebar · MENU - CLASS HANDLER",
-        "component": "MENU - CLASS HANDLER",
-        "variant": {
-         "Trang": "Quy trình / Ca trực"
-        },
-        "inCode": false
-       },
-       {
-        "term": "Quy Trình",
-        "figmaId": "I6935:391979;4901:225148",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1150:22358",
-         "Label": "Quy trình",
-         "Type": "Chính dropdown",
-         "State": "Default",
-         "Expanded": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-PR.TC02",
@@ -434,7 +312,7 @@
       "CHS-PR.TC10a"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.02",
@@ -443,71 +321,13 @@
      "spec": "Cùng hàng tiêu đề `Danh sách task`. Chọn 1 trong các quy trình `Công khai` đúng loại của menu con. Mặc định quy trình Công khai đứng đầu danh sách Define của loại tương ứng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010001": [
-       {
-        "term": "Quy trình",
-        "figmaId": "I6935:389261;4901:224371",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1150:22358",
-         "Label": "Quy trình",
-         "Type": "Chính dropdown",
-         "State": "Default",
-         "Expanded": "Yes"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020001": [
-       {
-        "term": "Quy trình",
-        "figmaId": "I6935:390743;4901:224926",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1150:22358",
-         "Label": "Quy trình",
-         "Type": "Chính dropdown",
-         "State": "Default",
-         "Expanded": "Yes"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-030001": [
-       {
-        "term": "Quy trình",
-        "figmaId": "I6935:391979;4901:225148",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1150:22358",
-         "Label": "Quy trình",
-         "Type": "Chính dropdown",
-         "State": "Default",
-         "Expanded": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-PR.TC01"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.03",
@@ -516,53 +336,13 @@
      "spec": "Category và Action Item của quy trình đang chọn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010001": [
-       {
-        "term": "Danh sách task",
-        "figmaId": "6935:389275",
-        "layer": "Danh sách task",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "sp-task-020001": [
-       {
-        "term": "Danh sách task",
-        "figmaId": "6935:390757",
-        "layer": "Danh sách task",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "sp-task-030001": [
-       {
-        "term": "Danh sách task",
-        "figmaId": "6935:391993",
-        "layer": "Danh sách task",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-PR.TC02"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.04",
@@ -571,53 +351,13 @@
      "spec": "Dropdown khoảng thời gian và danh sách kỳ kèm vòng `%`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010001": [
-       {
-        "term": "Thời gian",
-        "figmaId": "6935:389389",
-        "layer": "Thời gian",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "sp-task-020001": [
-       {
-        "term": "Thời gian",
-        "figmaId": "6935:390850",
-        "layer": "Thời gian",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "sp-task-030001": [
-       {
-        "term": "Thời gian",
-        "figmaId": "6935:392107",
-        "layer": "Thời gian",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-PR.TC04"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.05",
@@ -626,65 +366,7 @@
      "spec": "`Ngày` | Ngày | `Tuần Này` → 7 dòng ngày (Thứ 2 – Chủ Nhật) | Tiến độ **hôm nay**",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010001": [
-       {
-        "term": "Task Hôm Nay",
-        "figmaId": "I6935:389261;4901:224373",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1988:19312",
-         "Label": "Task hôm nay",
-         "Type": "Con progress",
-         "State": "Select",
-         "Expanded": "No"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020001": [
-       {
-        "term": "Task Hôm Nay",
-        "figmaId": "I6935:390743;4901:224928",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1988:19312",
-         "Label": "Task hôm nay",
-         "Type": "Con progress",
-         "State": "Default",
-         "Expanded": "No"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-030001": [
-       {
-        "term": "Task Hôm Nay",
-        "figmaId": "I6935:391979;4901:225150",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1988:19312",
-         "Label": "Task hôm nay",
-         "Type": "Con progress",
-         "State": "Default",
-         "Expanded": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-PR.TC01",
@@ -696,7 +378,7 @@
       "CHS-PR.TC09"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.06",
@@ -705,65 +387,7 @@
      "spec": "`Tuần` | Tuần (Thứ 2 – Chủ Nhật) | `Tuần Này` → 1 dòng tuần | Tiến độ **tuần này**",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010001": [
-       {
-        "term": "Task Tuần Này",
-        "figmaId": "I6935:389261;4901:224374",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1988:19312",
-         "Label": "Task tuần này",
-         "Type": "Con progress",
-         "State": "Default",
-         "Expanded": "No"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020001": [
-       {
-        "term": "Task Tuần Này",
-        "figmaId": "I6935:390743;4901:224929",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1988:19312",
-         "Label": "Task tuần này",
-         "Type": "Con progress",
-         "State": "Select",
-         "Expanded": "No"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-030001": [
-       {
-        "term": "Task Tuần Này",
-        "figmaId": "I6935:391979;4901:225151",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1988:19312",
-         "Label": "Task tuần này",
-         "Type": "Con progress",
-         "State": "Default",
-         "Expanded": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-PR.TC04",
@@ -771,7 +395,7 @@
       "CHS-PR.TC06"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.07",
@@ -789,10 +413,8 @@
       "CHS-PR.TC07",
       "CHS-PR.TC09"
      ],
-     "missingTerms": [
-      "Task Tháng Này"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.08",
@@ -801,72 +423,14 @@
      "spec": "`Ca trực` | Ngày + Ca | `Tuần Này` → 7 dòng ngày; Ca = ca hiện tại | Tiến độ **hôm nay, ca hiện tại**",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010001": [
-       {
-        "term": "Ca Trực",
-        "figmaId": "I6935:389261;4901:224375",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1988:19312",
-         "Label": "Ca trực",
-         "Type": "Con progress",
-         "State": "Default",
-         "Expanded": "No"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020001": [
-       {
-        "term": "Ca Trực",
-        "figmaId": "I6935:390743;4901:224930",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1988:19312",
-         "Label": "Ca trực",
-         "Type": "Con progress",
-         "State": "Default",
-         "Expanded": "No"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-030001": [
-       {
-        "term": "Ca Trực",
-        "figmaId": "I6935:391979;4901:225152",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1988:19312",
-         "Label": "Ca trực",
-         "Type": "Con progress",
-         "State": "Select",
-         "Expanded": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-PR.TC06",
       "CHS-PR.TC10a"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.09",
@@ -878,10 +442,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Task Khác"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.10",
@@ -890,65 +452,13 @@
      "spec": "Checkbox trước tên Action (hoàn thành / chưa) | Có: tick = 100%",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010001": [
-       {
-        "term": "Kiểm tra",
-        "figmaId": "I6935:389320;1048:1255",
-        "layer": "Badge",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Atom/Badge",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "Kiểm tra sau buổi 8",
-         "Variant": "Neutral",
-         "Dropdown": "Off"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020001": [
-       {
-        "term": "Kiểm tra",
-        "figmaId": "I6935:390802;1048:1255",
-        "layer": "Badge",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Atom/Badge",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "Kiểm tra sau buổi 8",
-         "Variant": "Neutral",
-         "Dropdown": "Off"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-030001": [
-       {
-        "term": "Kiểm tra",
-        "figmaId": "I6935:392038;1048:1255",
-        "layer": "Badge",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Atom/Badge",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "Kiểm tra sau buổi 8",
-         "Variant": "Neutral",
-         "Dropdown": "Off"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-PR.TC03"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.11",
@@ -957,51 +467,11 @@
      "spec": "Dropdown `Kết quả` theo Loại đánh giá đã cấu hình (VD `Đạt` / `Không đạt`) | Có: `Đạt` = 100%, `Không đạt` = 0% (thang 5 mức theo Action Board)",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010001": [
-       {
-        "term": "Đánh giá",
-        "figmaId": "6935:389328",
-        "layer": "Task · Đánh giá · Thường xuyên nhắc nhở học ",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "sp-task-020001": [
-       {
-        "term": "Đánh giá",
-        "figmaId": "6935:390810",
-        "layer": "Task · Đánh giá · Thường xuyên nhắc nhở học ",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "sp-task-030001": [
-       {
-        "term": "Đánh giá",
-        "figmaId": "6935:392046",
-        "layer": "Task · Đánh giá · Thường xuyên nhắc nhở học ",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.12",
@@ -1010,51 +480,11 @@
      "spec": "Thanh tiến độ kéo được 0–100%, hiển thị `%` bên phải | Có: theo `%` đã kéo",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010001": [
-       {
-        "term": "Task tiến trình",
-        "figmaId": "6935:389293",
-        "layer": "Task · Task tiến trình · Nhắc nhở học viên trước bu",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "sp-task-020001": [
-       {
-        "term": "Task tiến trình",
-        "figmaId": "6935:390775",
-        "layer": "Task · Task tiến trình · Nhắc nhở học viên trước bu",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "sp-task-030001": [
-       {
-        "term": "Task tiến trình",
-        "figmaId": "6935:392011",
-        "layer": "Task · Task tiến trình · Nhắc nhở học viên trước bu",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.13",
@@ -1066,10 +496,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Task nhập liệu"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.14",
@@ -1081,11 +509,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Hướng dẫn",
-      "Media"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A01.15",
@@ -1094,104 +519,20 @@
      "spec": "Hiển thị field theo Action Board | Không",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010001": [
-       {
-        "term": "Log",
-        "figmaId": "I6935:389261;4901:224383",
-        "layer": "LOGO CENTER",
-        "confidence": "thap",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "LOGO CENTER",
-        "component": "LOGO CENTER",
-        "variant": {
-         "Property 1": "ICS",
-         "Property 2": "yes"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020001": [
-       {
-        "term": "Log",
-        "figmaId": "I6935:390743;4901:224948",
-        "layer": "LOGO CENTER",
-        "confidence": "thap",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "LOGO CENTER",
-        "component": "LOGO CENTER",
-        "variant": {
-         "Property 1": "ICS",
-         "Property 2": "yes"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-030001": [
-       {
-        "term": "Log",
-        "figmaId": "I6935:391979;4901:225170",
-        "layer": "LOGO CENTER",
-        "confidence": "thap",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "LOGO CENTER",
-        "component": "LOGO CENTER",
-        "variant": {
-         "Property 1": "ICS",
-         "Property 2": "yes"
-        },
-        "inCode": false
-       }
-      ]
-     },
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [
-      "Deadline",
-      "Xác thực"
-     ],
-     "status": "khop"
-    },
-    {
-     "id": "CHS-PR.A01.16",
-     "name": "sidebar-menu-class-handler",
-     "label": "Sidebar · MENU - CLASS HANDLER",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Sidebar · MENU - CLASS HANDLER",
-        "figmaId": "4915:257614",
-        "layer": "Sidebar · MENU - CLASS HANDLER",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Sidebar · MENU - CLASS HANDLER",
-        "component": "MENU - CLASS HANDLER",
-        "variant": {
-         "Trang": "Quy trình / Task hôm nay"
-        },
-        "inCode": false
-       }
-      ]
-     }
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "CHS-PR.A02",
    "name": "trang-2-task-khac-va-popup-chon-quy-trin",
    "title": "Trang 2: Task Khác và Popup chọn quy trình",
-   "screens": [
-    "sp-task-010000",
-    "sp-task-020000",
-    "sp-task-030000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "SP-TASK-010000",
     "SP-TASK-020000",
@@ -1213,10 +554,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Chọn quy trình"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A02.02",
@@ -1225,54 +564,14 @@
      "spec": "Các quy trình đã chọn, mỗi quy trình là một khối có tiêu đề tên quy trình (mở/thu gọn), bên trong là Category → Action Item như Trang 1. Xếp theo thứ tự chọn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Danh sách task",
-        "figmaId": "3845:49699",
-        "layer": "Danh sách task",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "sp-task-020000": [
-       {
-        "term": "Danh sách task",
-        "figmaId": "3857:74052",
-        "layer": "Danh sách task",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "sp-task-030000": [
-       {
-        "term": "Danh sách task",
-        "figmaId": "3857:75978",
-        "layer": "Danh sách task",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CHS-PR.TC11",
       "CHS-PR.TC13"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A02.03",
@@ -1284,10 +583,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tìm kiếm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A02.04",
@@ -1299,11 +596,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Popup — Danh sách",
-      "Công khai"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A02.05",
@@ -1312,142 +606,20 @@
      "spec": "Hủy đóng popup, không đổi lựa chọn. Xác nhận lưu toàn bộ lựa chọn và tải lại Danh sách task.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Hủy",
-        "figmaId": "I3857:72491;1056:1242",
-        "layer": "Đã nhập xong",
-        "confidence": "thap",
-        "region": "Row",
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Giáo viên nhắc chuyên cần ở đầu và cuối buổi.",
-         "State": "Counter",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-020000": [
-       {
-        "term": "Hủy",
-        "figmaId": "I3857:75006;1056:1242",
-        "layer": "Đã nhập xong",
-        "confidence": "thap",
-        "region": "Row",
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Giáo viên nhắc chuyên cần ở đầu và cuối buổi.",
-         "State": "Counter",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ],
-      "sp-task-030000": [
-       {
-        "term": "Hủy",
-        "figmaId": "I3857:76047;1056:1242",
-        "layer": "Đã nhập xong",
-        "confidence": "thap",
-        "region": "Row",
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Giáo viên nhắc chuyên cần ở đầu và cuối buổi.",
-         "State": "Counter",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [
-      "Xác nhận"
-     ],
-     "status": "khop"
-    },
-    {
-     "id": "CHS-PR.A02.06",
-     "name": "atom-input",
-     "label": "Atom/Input",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Atom/Input",
-        "figmaId": "3857:72454",
-        "layer": "Atom/Input",
-        "confidence": "cao",
-        "region": "Row",
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Nhập ghi chú...",
-         "State": "Default",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-PR.A02.07",
-     "name": "atom-label",
-     "label": "Atom/Label",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Atom/Label",
-        "figmaId": "3857:72487",
-        "layer": "Atom/Label",
-        "confidence": "cao",
-        "region": "Row",
-        "owner": "Atom/Label",
-        "component": "Atom/Label",
-        "variant": {
-         "Required": false,
-         "Icon": "3065:52444",
-         "Label": "Kết quả",
-         "Có icon": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     }
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "CHS-PR.A03",
    "name": "trang-3-ca-truc",
    "title": "Trang 3: Ca Trực",
-   "screens": [
-    "sp-task-030000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "SP-TASK-010000",
     "SP-TASK-020000",
@@ -1466,31 +638,11 @@
      "spec": "Quy trình Công khai loại `Ca trực`; mặc định quy trình đứng đầu danh sách Define loại Ca trực.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-030000": [
-       {
-        "term": "Quy trình",
-        "figmaId": "I4915:258070;4901:225148",
-        "layer": "Card Menu",
-        "confidence": "cao",
-        "region": "Sidebar · MENU - CLASS HANDLER",
-        "owner": "Card Menu",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "1150:22358",
-         "Label": "Quy trình",
-         "Type": "Chính dropdown",
-         "State": "Default",
-         "Expanded": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A03.02",
@@ -1499,39 +651,11 @@
      "spec": "Như Trang 1; mặc định `Tuần Này` (7 dòng ngày).",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-030000": [
-       {
-        "term": "Tuần Này",
-        "figmaId": "3857:76093",
-        "layer": "Filter · Tuần này",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Tuần này",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "Tuần này",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Dropdown khoảng thời gian"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A03.03",
@@ -1540,37 +664,11 @@
      "spec": "Chọn 1 trong `Sáng`, `Chiều`, `Tối`; mặc định ca của thời điểm hiện tại.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-030000": [
-       {
-        "term": "Ca",
-        "figmaId": "3857:76690",
-        "layer": "Filter · Ca",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Ca",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Ca",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A03.04",
@@ -1582,10 +680,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Sáng"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A03.05",
@@ -1597,10 +693,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Chiều"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A03.06",
@@ -1609,40 +703,20 @@
      "spec": "18:00 – 23:59",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-030000": [
-       {
-        "term": "Tối",
-        "figmaId": "I6935:389072;1904:8731",
-        "layer": "Trần Nguyễn Hoài Phương",
-        "confidence": "thap",
-        "region": null,
-        "owner": "AVATAR + Name",
-        "component": "AVATAR + Name",
-        "variant": {
-         "Property 1": "AVATAR + Name"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
    ],
-   "screensFromItems": [
-    "sp-task-030000"
-   ]
+   "screensFromItems": []
   },
   {
    "id": "CHS-PR.A04",
    "name": "trang-4-popup-them-nguoi-vao-danh-sach-s",
    "title": "Trang 4: Popup thêm người vào Danh sách Support",
-   "screens": [
-    "sp-task-030010"
-   ],
+   "screens": [],
    "screensGuessed": [
     "SP-TASK-010000",
     "SP-TASK-020000",
@@ -1661,30 +735,11 @@
      "spec": "Tìm theo tên hoặc email, không phân biệt hoa thường, tìm trên tất cả nhóm.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-030010": [
-       {
-        "term": "Tìm kiếm",
-        "figmaId": "3857:76121",
-        "layer": "Atom/Input",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm kiếm...",
-         "State": "Search",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A04.02",
@@ -1693,27 +748,11 @@
      "spec": "Chia theo role: `Trợ giảng`, `Support`, `Nhân viên kinh doanh`, `Phụ trách lớp`; mỗi nhóm mở/thu gọn được. Chỉ hiển thị tài khoản đang hoạt động.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-030010": [
-       {
-        "term": "Trợ giảng",
-        "figmaId": "3857:76126",
-        "layer": "Trợ giảng",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Nhóm người dùng"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CHS-PR.A04.03",
@@ -1722,380 +761,14 @@
      "spec": "Chọn nhiều; người đã có trong danh sách hiển thị sẵn trạng thái đã tick.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "sp-task-030010": [
-       {
-        "term": "Checkbox",
-        "figmaId": "3857:76132",
-        "layer": "Checkbox",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Checkbox",
-        "component": "Checkbox",
-        "variant": {
-         "Checked": "Yes",
-         "Size": "20",
-         "Disabled": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
    ],
-   "screensFromItems": [
-    "sp-task-030010"
-   ]
-  },
-  {
-   "id": "CHS-PR.F01",
-   "name": "header",
-   "title": "Header",
-   "screens": [
-    "sp-task-010000",
-    "sp-task-020000",
-    "sp-task-030000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CHS-PR.F01.01",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "3821:45908",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": "Header",
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Phụ Trách Lớp",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  },
-  {
-   "id": "CHS-PR.F02",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "sp-task-010000",
-    "sp-task-020000",
-    "sp-task-030000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CHS-PR.F02.01",
-     "name": "them-nguoi-phu-trach",
-     "label": "Thêm người phụ trách",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Thêm người phụ trách",
-        "figmaId": "3845:49696",
-        "layer": "Thêm người phụ trách",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thêm người phụ trách",
-        "component": "Atom/Icon Button",
-        "variant": {
-         "Icon": "Add Circle Small"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-PR.F02.02",
-     "name": "avatar-name",
-     "label": "AVATAR + Name",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "AVATAR + Name",
-        "figmaId": "6935:389044",
-        "layer": "AVATAR + Name",
-        "confidence": "cao",
-        "region": null,
-        "owner": "AVATAR + Name",
-        "component": "AVATAR + Name",
-        "variant": {
-         "Property 1": "AVATAR + Name"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-PR.F02.03",
-     "name": "global-progress-bar",
-     "label": "Global Progress Bar",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Global Progress Bar",
-        "figmaId": "3857:72427",
-        "layer": "Global Progress Bar",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Global Progress Bar",
-        "component": "Global Progress Bar",
-        "variant": {
-         "Property 1": "Progress ngang ( Không % )"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-PR.F02.04",
-     "name": "atom-number-badge",
-     "label": "Atom/Number Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Atom/Number Badge",
-        "figmaId": "3857:72429",
-        "layer": "Atom/Number Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Number Badge",
-        "component": "Atom/Number Badge",
-        "variant": {
-         "Value": "1/1",
-         "Type": "Số buổi",
-         "Size": "Medium",
-         "State": "Active"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-PR.F02.05",
-     "name": "atom-chip",
-     "label": "Atom/Chip",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Atom/Chip",
-        "figmaId": "3857:72447",
-        "layer": "Atom/Chip",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Chip",
-        "component": "Atom/Chip",
-        "variant": {
-         "Time": "4 ngày trước",
-         "Icon": false,
-         "Name": "Trần Minh Khoa",
-         "Label": "17:00 - 30.09.2026",
-         "Type": "Date"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-PR.F02.06",
-     "name": "atom-label",
-     "label": "Atom/Label",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Atom/Label",
-        "figmaId": "3857:72450",
-        "layer": "Atom/Label",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Label",
-        "component": "Atom/Label",
-        "variant": {
-         "Required": false,
-         "Icon": "1832:36661",
-         "Label": "Ghi chú",
-         "Có icon": "Yes"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-PR.F02.07",
-     "name": "atom-badge",
-     "label": "Atom/Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Atom/Badge",
-        "figmaId": "3857:72467",
-        "layer": "Atom/Badge",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Badge",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "Kiểm tra sau buổi 8",
-         "Variant": "Neutral",
-         "Dropdown": "Off"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-PR.F02.08",
-     "name": "filter-tuan-nay",
-     "label": "Filter · Tuần này",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "Filter · Tuần này",
-        "figmaId": "3845:49782",
-        "layer": "Filter · Tuần này",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Tuần này",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "Tuần này",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CHS-PR.F02.09",
-     "name": "percent",
-     "label": "PERCENT %",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "sp-task-010000": [
-       {
-        "term": "PERCENT %",
-        "figmaId": "3845:49796",
-        "layer": "PERCENT %",
-        "confidence": "cao",
-        "region": null,
-        "owner": "PERCENT %",
-        "component": "PERCENT %",
-        "variant": {
-         "Property 1": "ĐN 1"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

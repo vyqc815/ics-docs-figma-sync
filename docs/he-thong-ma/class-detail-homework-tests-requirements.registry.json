@@ -95,22 +95,13 @@
    "nodeId": "769:36562",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/chi-tiet-lop-hoc/bai-tap-ve-nha",
    "link": "/chi-tiet-lop-hoc/bai-tap-ve-nha",
    "dark": "ADM-LOP-020300-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "M-CDH.A01",
-    "M-CDH.A02",
-    "M-CDH.A03",
-    "M-CDH.A04",
-    "M-CDH.A05",
-    "M-CDH.A06",
-    "M-CDH.A07",
-    "M-CDH.F01"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -118,9 +109,7 @@
    "id": "M-CDH.A01",
    "name": "khung-menu-bai-tap-va-kiem-tra",
    "title": "Khung menu Bài tập và kiểm tra",
-   "screens": [
-    "adm-lop-020300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-020300"
    ],
@@ -140,10 +129,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Chọn tab"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A01.02",
@@ -155,10 +142,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Chọn card"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A01.03",
@@ -167,32 +152,13 @@
      "spec": "Ô Tìm kiếm ở phía danh sách bài như ảnh. **Search theo tên bài học/bài đang hiển thị trong danh sách**, không theo tên học viên. Thời điểm kích hoạt search và cách xử lý khi đổi tab còn cần chốt.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Search",
-        "figmaId": "3497:68735",
-        "layer": "Atom/Input",
-        "confidence": "thap",
-        "region": "MainContent",
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm kiếm",
-         "State": "Search Compact",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDH.TC04"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A01.04",
@@ -204,11 +170,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thêm bài kiểm tra",
-      "Giao bài"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A01.05",
@@ -220,248 +183,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Loading/rỗng/lỗi"
-     ],
-     "status": "chua-thay-tren-figma"
-    },
-    {
-     "id": "M-CDH.A01.06",
-     "name": "the-chi-so",
-     "label": "Thẻ chỉ số",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
      "missingTerms": [],
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Thẻ chỉ số",
-        "figmaId": "3502:69730",
-        "layer": "Thẻ chỉ số",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Thẻ chỉ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có phần thêm": false,
-         "Có biểu tượng": true,
-         "Có đơn vị": true,
-         "Số liệu": "01/11",
-         "Đơn vị": "bài",
-         "Tiêu đề": "Đã chấm K.tra",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDH.A01.07",
-     "name": "trang-thai-nop-bai-va-diem",
-     "label": "Trạng thái nộp bài và điểm",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Trạng thái nộp bài và điểm",
-        "figmaId": "3497:67536",
-        "layer": "Trạng thái nộp bài và điểm",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Trạng thái nộp bài và điểm",
-        "component": "Trạng thái nộp bài và điểm",
-        "variant": {
-         "Trạng thái": "Điểm",
-         "Cỡ": "24"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDH.A01.08",
-     "name": "molecule-o-dinh-danh",
-     "label": "Molecule/Ô định danh",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Molecule/Ô định danh",
-        "figmaId": "3502:69119",
-        "layer": "Molecule/Ô định danh",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Molecule/Ô định danh",
-        "component": null,
-        "variant": {
-         "Có Tiền": false,
-         "Có lịch hẹn": false,
-         "Có tag": false,
-         "Có avatar": true,
-         "Tên": "Bích Thùy",
-         "Có tag thứ 2": false,
-         "Mã": "MÃ HV: 0001"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDH.A01.09",
-     "name": "atom-number-badge",
-     "label": "Atom/Number Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Atom/Number Badge",
-        "figmaId": "3502:69506",
-        "layer": "Atom/Number Badge",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Atom/Number Badge",
-        "component": "Atom/Number Badge",
-        "variant": {
-         "Value": "1",
-         "Type": "Số buổi",
-         "Size": "Medium",
-         "State": "Active"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDH.A01.10",
-     "name": "atom-side-tab",
-     "label": "Atom/Side Tab",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Atom/Side Tab",
-        "figmaId": "3497:68719",
-        "layer": "Atom/Side Tab",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": true,
-         "State": "Active",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDH.A01.11",
-     "name": "atom-badge",
-     "label": "Atom/Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Atom/Badge",
-        "figmaId": "3497:68608",
-        "layer": "Atom/Badge",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Atom/Badge",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "1",
-         "Variant": "Orange",
-         "Dropdown": "Off"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDH.A01.12",
-     "name": "percent",
-     "label": "PERCENT %",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "PERCENT %",
-        "figmaId": "3497:68616",
-        "layer": "PERCENT %",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "PERCENT %",
-        "component": "PERCENT %",
-        "variant": {
-         "Property 1": "ĐN 3"
-        },
-        "inCode": false
-       }
-      ]
-     }
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDH.A02",
    "name": "khoi-tong-quan",
    "title": "Khối Tổng Quan",
-   "screens": [
-    "adm-lop-020300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-020300"
    ],
@@ -481,10 +213,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Đã chấm kiểm tra"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A02.02",
@@ -493,28 +223,11 @@
      "spec": "Hiển thị số bài kiểm tra đã giao/tổng bài của lớp như 04/12; lấy trạng thái giao từ nguồn, không dựa vào có người nộp mới coi đã giao.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Kiểm tra đã giao",
-        "figmaId": "I3502:69731;3108:127769",
-        "layer": "Ô biểu tượng",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Ô biểu tượng",
-        "component": "Atom/Ô biểu tượng",
-        "variant": {
-         "Biểu tượng": "Kiểm tra đã giao",
-         "Cỡ": "32"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A02.03",
@@ -528,10 +241,8 @@
      "testcases": [
       "M-CDH.TC07"
      ],
-     "missingTerms": [
-      "Điểm KT"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A02.04",
@@ -540,37 +251,11 @@
      "spec": "Dạng A/B như 03/18, tính riêng BTVN theo **cùng nguồn và công thức Tổng quan lớp**; tập bài BTVN gắn với bài học lớp, không cộng Tự học hoặc Kiểm tra.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Đã chấm BTVN",
-        "figmaId": "3502:69733",
-        "layer": "Thẻ chỉ số",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Thẻ chỉ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có phần thêm": false,
-         "Có biểu tượng": true,
-         "Có đơn vị": true,
-         "Số liệu": "01/12",
-         "Đơn vị": "bài",
-         "Tiêu đề": "đã chấm bTVN",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A02.05",
@@ -579,39 +264,13 @@
      "spec": "Trung bình cộng tỷ lệ làm/nộp BTVN của các học viên có dữ liệu, cùng nguồn và công thức Tổng quan lớp; không có dữ liệu thì để trống. Không dùng tỷ lệ chấm C/S của card để thay Tỉ lệ làm BTVN.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Tỉ lệ làm BTVN",
-        "figmaId": "3502:69734",
-        "layer": "Thẻ chỉ số",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Thẻ chỉ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có phần thêm": false,
-         "Có biểu tượng": true,
-         "Có đơn vị": true,
-         "Số liệu": "78",
-         "Đơn vị": "%",
-         "Tiêu đề": "tỉ lệ làm BTVN",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDH.TC08"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A02.06",
@@ -620,37 +279,11 @@
      "spec": "Điểm trung bình các bài BTVN học viên đã được chấm, tách KT; cùng quy tắc trung bình theo bài/làm tròn 1 chữ số thập phân. Không có bài đã chấm thì để trống, không tự tạo 0.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Điểm BTVN",
-        "figmaId": "3502:69735",
-        "layer": "Thẻ chỉ số",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Thẻ chỉ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có phần thêm": false,
-         "Có biểu tượng": true,
-         "Có đơn vị": true,
-         "Số liệu": "8.8",
-         "Đơn vị": "bài",
-         "Tiêu đề": "Điểm BTVN",
-         "Loại": "Tuỳ chỉnh",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A02.07",
@@ -664,20 +297,17 @@
      "testcases": [
       "M-CDH.TC06"
      ],
-     "missingTerms": [
-      "Chevron"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDH.A03",
    "name": "tab-btvn-kiem-tra-badge-va-card-bai",
    "title": "Tab BTVN/Kiểm tra, badge và card bài",
-   "screens": [
-    "adm-lop-020300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-020300"
    ],
@@ -697,10 +327,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Badge tab"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A03.02",
@@ -714,10 +342,8 @@
      "testcases": [
       "M-CDH.TC10"
      ],
-     "missingTerms": [
-      "Trạng thái card"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A03.03",
@@ -729,10 +355,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Số nộp bài"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A03.04",
@@ -747,10 +371,8 @@
       "M-CDH.TC11",
       "M-CDH.TC12"
      ],
-     "missingTerms": [
-      "Vòng %"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A03.05",
@@ -762,10 +384,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Card Chưa giao"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A03.06",
@@ -774,35 +394,20 @@
      "spec": "Hiển thị mô tả bài nguồn nếu có, không thay bằng nội dung câu trả lời của học viên.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Mô tả",
-        "figmaId": "3497:69048",
-        "layer": "Mô tả",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDH.A04",
    "name": "ty-le-cham-bai-tren-tung-card",
    "title": "Tỷ lệ chấm bài trên từng card",
-   "screens": [
-    "adm-lop-020300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-020300"
    ],
@@ -822,10 +427,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Số đã nộp S"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A04.02",
@@ -837,10 +440,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Số đã chấm C"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A04.03",
@@ -852,10 +453,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Ví dụ 3/3"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A04.04",
@@ -867,10 +466,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Ví dụ 0/3"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A04.05",
@@ -882,10 +479,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "S = 0"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A04.06",
@@ -897,20 +492,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Sau khi dữ liệu thay đổi"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDH.A05",
    "name": "bang-trang-thai-ket-qua-cua-tung-hoc-vie",
    "title": "Bảng trạng thái/kết quả của từng học viên",
-   "screens": [
-    "adm-lop-020300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-020300"
    ],
@@ -927,25 +519,11 @@
      "spec": "Dòng thuộc đúng lớp/bài đang chọn, theo định danh học viên. **Chỉ học viên Đang học hoặc Dự thính** trong bảng/count hiện hành; đây là trạng thái **học viên**, không phải trạng thái bài học. **Giữ kết quả đã làm khi học viên Rời lớp/Xóa**, không xóa điểm/bài nộp lịch sử vì đổi trạng thái. Thứ tự hiển thị còn cần chốt; không dùng full trạng thái của Tự học.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Tên học viên",
-        "figmaId": "3497:67513",
-        "layer": "Tên học viên",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A05.02",
@@ -954,30 +532,13 @@
      "spec": "Hiển thị badge Chưa nộp ở cột Nộp bài như ảnh; không dựng điểm/thời gian/số câu bỏ qua của bài khác.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Chưa nộp",
-        "figmaId": "3497:67596",
-        "layer": "Trạng thái nộp bài và điểm",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Trạng thái nộp bài và điểm",
-        "component": "Trạng thái nộp bài và điểm",
-        "variant": {
-         "Trạng thái": "Chưa Nộp",
-         "Cỡ": "24"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDH.TC18"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A05.03",
@@ -989,10 +550,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Đã nộp chưa chấm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A05.04",
@@ -1001,28 +560,11 @@
      "spec": "Hiển thị điểm giáo viên đã chấm ở cột Điểm số. Điểm 0 hợp lệ phải hiện 0; trạng thái nộp vẫn là đã nộp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Đã chấm",
-        "figmaId": "3497:69045",
-        "layer": "Trạng thái nộp bài và điểm",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": "Trạng thái nộp bài và điểm",
-        "component": "Trạng thái nộp bài và điểm",
-        "variant": {
-         "Trạng thái": "Đã chấm",
-         "Cỡ": "16 tag"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A05.05",
@@ -1031,27 +573,13 @@
      "spec": "Thời gian thực làm bài từ nguồn app, dạng HH:mm:ss như ảnh; không lấy thời gian tự học, lịch dạy hoặc thời gian từ khi Admin mở bảng. Giới hạn hiển thị **giống Tự học: vượt 24 giờ hiển thị tối đa 23:59:59**, không quay về 00:00:00; vẫn giữ thời gian thực đã ghi nhận. Chỉ kế thừa cách hiển thị thời gian, không lấy dữ liệu thời gian ôn tập.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Thời gian làm bài",
-        "figmaId": "3497:67521",
-        "layer": "Thời gian làm bài",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDH.TC23"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A05.06",
@@ -1060,25 +588,11 @@
      "spec": "Số câu bỏ qua của phiên bài nộp đang hiển thị, 0 hợp lệ. Không tự quy đổi thành câu sai/điểm trừ khi chưa có rule.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Số câu bỏ qua",
-        "figmaId": "3497:67517",
-        "layer": "số câu bỏ qua",
-        "confidence": "cao",
-        "region": "MainContent",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A05.07",
@@ -1090,20 +604,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Reset từng dòng"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDH.A06",
    "name": "reset-btvn-kiem-tra-cho-hoc-vien",
    "title": "Reset BTVN/Kiểm tra cho học viên",
-   "screens": [
-    "adm-lop-020300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-020300"
    ],
@@ -1125,10 +636,8 @@
      "testcases": [
       "M-CDH.TC25"
      ],
-     "missingTerms": [
-      "Phạm vi"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A06.02",
@@ -1146,11 +655,8 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [
-      "Xác nhận",
-      "Xác nhận reset BTVN"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A06.03",
@@ -1162,10 +668,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Kết quả reset"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A06.04",
@@ -1181,11 +685,8 @@
       "M-CDH.TC27",
       "M-CDH.TC28"
      ],
-     "missingTerms": [
-      "Thành công",
-      "Reset BTVN thành công."
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A06.05",
@@ -1197,20 +698,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Lỗi/chống lặp"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDH.A07",
    "name": "toast-phan-hoi-reset",
    "title": "Toast phản hồi reset",
-   "screens": [
-    "adm-lop-020300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-020300"
    ],
@@ -1232,11 +730,8 @@
      "testcases": [
       "M-CDH.TC29"
      ],
-     "missingTerms": [
-      "Thành Công",
-      "Reset BTVN thành công."
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A07.02",
@@ -1248,11 +743,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Có Lỗi Xảy Ra",
-      "Không thể reset BTVN. Vui lòng thử lại."
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A07.03",
@@ -1264,10 +756,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Cảnh Báo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A07.04",
@@ -1279,10 +769,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thông Báo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDH.A07.05",
@@ -1294,86 +782,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Component"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "M-CDH.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-lop-020300"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "M-CDH.F01.01",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "3497:45916",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDH.F01.02",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-020300": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:225881",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "Quản lý / Lớp Học / Bài tập và Kiểm tra"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

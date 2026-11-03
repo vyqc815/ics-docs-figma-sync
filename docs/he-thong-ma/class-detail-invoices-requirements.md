@@ -26,74 +26,62 @@ Requirement: `management_requirement/class_management/class_detail_invoices_requ
 
 ### `A01` Tab Hóa đơn — Bảng Hóa đơn đã dùng
 
-Frame: `ADM-LOP-040600` (tool đoán:ADM-LOP-040600) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-040600) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | tab | `Atom/Side Tab` State=Active, Kiểu=Gạch trái; `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `2389:60695` Atom/Side Tab; `I2389:60700;2177:28936` Nhiệm vụ con | — |  |  | Khớp | QC |
-| `A01.02` | tieu-de |  | `2389:60801` Hoá đơn đã dùng | — |  | `TC01` | Khớp | QC |
-| `A01.03` | ten-hoa-don |  | `2389:60724` Tên Hoá Đơn | — |  | `TC01` | Khớp | QC |
-| `A01.04` | ten-hoc-vien |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
-| `A01.05` | ngay-tao-hoa-don |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
-| `A01.06` | gia-tri |  | `2389:60726` Giá Trị | — |  | `TC01`, `TC02` | Khớp | QC |
-| `A01.07` | gia-tri-dung-trong-lop |  | `2389:60728` Giá Trị Dùng Trong Lớp | — |  | `TC01` | Khớp | QC |
-| `A01.08` | moi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.01` | tab |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A01.02` | tieu-de |  |  | — |  | `TC01` | Chưa có thiết kế | QC |
+| `A01.03` | ten-hoa-don |  |  | — |  | `TC01` | Chưa có thiết kế | QC |
+| `A01.04` | ten-hoc-vien |  |  | — |  | `TC01` | Chưa có thiết kế | QC |
+| `A01.05` | ngay-tao-hoa-don |  |  | — |  | `TC01` | Chưa có thiết kế | QC |
+| `A01.06` | gia-tri |  |  | — |  | `TC01`, `TC02` | Chưa có thiết kế | QC |
+| `A01.07` | gia-tri-dung-trong-lop |  |  | — |  | `TC01` | Chưa có thiết kế | QC |
+| `A01.08` | moi-dong |  |  | — |  |  | Chưa có thiết kế | QC |
 
 ### `A02` Filter Học viên và cột Ngày tạo hóa đơn
 
-Frame: `ADM-LOP-040600` (tool đoán:ADM-LOP-040600) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-040600) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | filter-hoc-vien | `DD/Molecule/Trigger` Size=XS, State=Default | `2527:185007` Filter Học viên | — |  |  | Khớp | QC |
-| `A02.02` | chon-nhieu-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.03` | khong-chon-hoc-vien |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.04` | cot-ngay-tao-hoa-don |  |  | — |  | `TC23` | Chưa khớp tự động | QC |
-| `A02.05` | ket-qua-rong |  |  | — |  | `TC26` | Chưa khớp tự động | QC |
+| `A02.01` | filter-hoc-vien |  |  | — |  |  | Chưa sync | QC |
+| `A02.02` | chon-nhieu-hoc-vien |  |  | — |  |  | Chưa sync | QC |
+| `A02.03` | khong-chon-hoc-vien |  |  | — |  |  | Chưa sync | QC |
+| `A02.04` | cot-ngay-tao-hoa-don |  |  | — |  | `TC23` | Chưa sync | QC |
+| `A02.05` | ket-qua-rong |  |  | — |  | `TC26` | Chưa sync | QC |
 
 ### `A03` Cột Giá trị và Giá trị dùng trong lớp
 
-Frame: `ADM-LOP-040600` (tool đoán:ADM-LOP-040600) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-040600) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | gia-tri |  | `2389:60726` Giá Trị | — |  | `TC05`, `TC06`, `TC07`, `TC09` | Khớp | QC |
-| `A03.02` | gia-tri-dung-trong-lop |  | `2389:60728` Giá Trị Dùng Trong Lớp | — |  | `TC05` | Khớp | QC |
-| `A03.03` | dinh-dang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.01` | gia-tri |  |  | — |  | `TC05`, `TC06`, `TC07`, `TC09` | Chưa sync | QC |
+| `A03.02` | gia-tri-dung-trong-lop |  |  | — |  | `TC05` | Chưa sync | QC |
+| `A03.03` | dinh-dang |  |  | — |  |  | Chưa sync | QC |
 
 ### `A04` Trạng thái tải, rỗng, lỗi và đồng bộ
 
-Frame: `ADM-LOP-040600` (tool đoán:ADM-LOP-040600) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-040600) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | loading |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.02` | rong |  | `2389:60728` Giá Trị Dùng Trong Lớp | — |  | `TC10`, `TC12` | Khớp | QC |
-| `A04.03` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.04` | dong-bo |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.01` | loading |  |  | — |  |  | Chưa sync | QC |
+| `A04.02` | rong |  |  | — |  | `TC10`, `TC12` | Chưa sync | QC |
+| `A04.03` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A04.04` | dong-bo |  |  | — |  |  | Chưa sync | QC |
 
 ### `A05` Load-more danh sách hóa đơn
 
-Frame: `ADM-LOP-040600` (tool đoán:ADM-LOP-040600) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-040600) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | vung-cuon |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.02` | loading-cuoi-bang |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.03` | loi-tai-them |  |  | — |  | `TC17` | Chưa khớp tự động | QC |
-| `A05.04` | het-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
-
-### `F01` (ngoài Body)
-
-Frame: `ADM-LOP-040600` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-side-tab | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `2389:60696` Atom/Side Tab | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | avatar | `Avatar` Size=28 | `2527:184986` Avatar | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | atom-chip | `Atom/Chip` Type=TỔNG DOANH THU | `3561:76398` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:229045` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | account | `ACCOUNT` Size=Default | `3497:51316` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `A05.01` | vung-cuon |  |  | — |  |  | Chưa sync | QC |
+| `A05.02` | loading-cuoi-bang |  |  | — |  |  | Chưa sync | QC |
+| `A05.03` | loi-tai-them |  |  | — |  | `TC17` | Chưa sync | QC |
+| `A05.04` | het-du-lieu |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -160,7 +148,7 @@ Frame: `ADM-LOP-040600` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (15): `A01.04`, `A01.05`, `A01.08`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.03`, `A04.01`, `A04.03`, `A04.04`, `A05.01`, `A05.02`, `A05.03`, `A05.04`
+- Chưa sync (16): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A05.01`, `A05.02`, `A05.03`, `A05.04`
 
 ## 9. Chi tiết dựng
 

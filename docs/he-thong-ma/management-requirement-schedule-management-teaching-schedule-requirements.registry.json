@@ -60,7 +60,7 @@
    "nodeId": "4101:129181",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lich/lich-day-tong",
    "link": "/lich/lich-day-tong",
    "dark": "ADM-LD-010000-DK",
@@ -68,12 +68,7 @@
     "ADM-LD-010010"
    ],
    "citedByRequirement": true,
-   "regions": [
-    "M-TS2.A01",
-    "M-TS2.A03",
-    "M-TS2.A04",
-    "M-TS2.F01"
-   ]
+   "regions": []
   },
   "ADM-LD-010010": {
    "id": "ADM-LD-010010",
@@ -88,7 +83,7 @@
    "nodeId": "5822:38379",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lich/lich-day-tong/theo-lop",
    "link": "/lich/lich-day-tong/theo-lop",
    "dark": "ADM-LD-010010-DK",
@@ -96,12 +91,7 @@
     "ADM-LD-010000"
    ],
    "citedByRequirement": true,
-   "regions": [
-    "M-TS2.A02",
-    "M-TS2.A03",
-    "M-TS2.A04",
-    "M-TS2.F01"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -109,9 +99,7 @@
    "id": "M-TS2.A01",
    "name": "trang-1-lich-day-tong-theo-tuan",
    "title": "Trang 1: Lịch dạy tổng theo tuần",
-   "screens": [
-    "adm-ld-010000"
-   ],
+   "screens": [],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -137,11 +125,8 @@
      "testcases": [
       "M-TS2.TC02"
      ],
-     "missingTerms": [
-      "Khoảng tuần",
-      "dd.MM.yyyy - dd.MM.yyyy"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.02",
@@ -155,11 +140,8 @@
      "testcases": [
       "M-TS2.TC02"
      ],
-     "missingTerms": [
-      "Cột ngày",
-      "Thứ 2 … Thứ 7"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.03",
@@ -168,30 +150,11 @@
      "spec": "Tìm theo mã lớp hoặc tên giáo viên của thẻ lịch, không phân biệt hoa thường; lọc trên toàn bộ lịch của tuần.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Tìm lớp, giáo viên...",
-        "figmaId": "4101:129471",
-        "layer": "Tìm kiếm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tìm kiếm",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm lớp, giáo viên...",
-         "State": "Search Compact",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.04",
@@ -200,21 +163,7 @@
      "spec": "Checkbox, mặc định tắt. Bật: nhóm lịch theo lớp, mỗi nhóm có thanh tiêu đề mã lớp và lưới 7 ngày riêng, nhóm sắp theo mã lớp tăng dần. Tắt: gom theo ngày, mỗi cột xếp dọc các thẻ theo giờ bắt đầu tăng dần. Hai chế độ cùng tập lịch.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Theo lớp",
-        "figmaId": "5822:13473",
-        "layer": "Value",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-TS2.TC01",
@@ -222,7 +171,7 @@
       "M-TS2.TC06"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.05",
@@ -231,39 +180,13 @@
      "spec": "Chọn một hoặc nhiều trung tâm; không chọn thì hiển thị lịch của mọi trung tâm. Đứng ngay sau `Theo lớp`, trước `Giáo viên`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Trung tâm",
-        "figmaId": "5835:2577",
-        "layer": "Filter · Trung tâm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Trung tâm",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trung tâm",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-TS2.TC04"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.06",
@@ -272,33 +195,7 @@
      "spec": "Dropdown có ô tìm kiếm và checkbox, chọn nhiều giáo viên; danh sách là giáo viên đang hoạt động của các trung tâm được lọc, sắp theo tên. Không chọn thì mọi giáo viên.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Giáo viên",
-        "figmaId": "4101:129476",
-        "layer": "Filter · Giáo viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Giáo viên",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Giáo viên",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-TS2.TC04",
@@ -308,7 +205,7 @@
       "M-TS2.TC12"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.07",
@@ -317,39 +214,13 @@
      "spec": "Chọn nhiều: `Lớp 1-1`, `Lớp chung`, `Lớp demo`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Loại lớp",
-        "figmaId": "4101:129488",
-        "layer": "Filter · Loại lớp",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Loại lớp",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Loại lớp",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-TS2.TC04"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.08",
@@ -358,39 +229,13 @@
      "spec": "Chọn nhiều từ dữ liệu định nghĩa (vd `HSK1`); hiển thị giá trị đang chọn trên nút.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Trình độ",
-        "figmaId": "4101:129500",
-        "layer": "Filter · Trình độ",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Trình độ",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "HSK1",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-TS2.TC04"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.09",
@@ -399,37 +244,11 @@
      "spec": "Chọn nhiều từ dữ liệu định nghĩa học kỳ của khoá học.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Học kỳ",
-        "figmaId": "4101:129512",
-        "layer": "Filter · Học kỳ",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Học kỳ",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Học kỳ",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.10",
@@ -438,27 +257,11 @@
      "spec": "Trong cùng bộ lọc là OR, giữa các bộ lọc là AND; đổi bộ lọc hoặc tìm kiếm thì lọc lại ngay trên tuần đang xem, giữ tuần và chế độ `Theo lớp`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Theo lớp",
-        "figmaId": "5822:13473",
-        "layer": "Value",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Áp dụng bộ lọc"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.11",
@@ -472,11 +275,8 @@
      "testcases": [
       "M-TS2.TC01"
      ],
-     "missingTerms": [
-      "Thẻ lịch",
-      "HH:mm - HH:mm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.12",
@@ -488,10 +288,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Nhiều lịch trong ngày"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.13",
@@ -503,11 +301,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Ngày không có lịch",
-      "Không có lịch"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.14",
@@ -519,11 +314,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Loading / rỗng / lỗi",
-      "Thử lại"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.15",
@@ -532,27 +324,11 @@
      "spec": "Cam | Buổi chưa hoàn thành, sinh từ khung cố định.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch cố định",
-        "figmaId": "4101:129217",
-        "layer": "Lịch · DN1311-I · 09:00 - 10:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN1311-I · 09:00 - 10:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.16",
@@ -564,10 +340,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Lịch linh hoạt"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.17",
@@ -576,27 +350,11 @@
      "spec": "Xanh lá | Buổi đã hoàn thành (tại tab lớp hoặc qua luồng dạy của giáo viên).",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch hoàn thành",
-        "figmaId": "4101:129219",
-        "layer": "Lịch · DN350 · 09:00 - 10:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN350 · 09:00 - 10:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH HOÀN THÀNH"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A01.18",
@@ -608,20 +366,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Lịch hủy bỏ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-TS2.A02",
    "name": "che-do-theo-lop",
    "title": "Chế độ Theo lớp",
-   "screens": [
-    "adm-ld-010010"
-   ],
+   "screens": [],
    "screensGuessed": [],
    "source": "tu-dien",
    "content": "qc",
@@ -639,10 +394,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Nhóm lớp"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A02.02",
@@ -654,11 +407,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Lưới trong nhóm",
-      "Không có lịch"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A02.03",
@@ -670,21 +420,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Cuộn"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-TS2.A03",
    "name": "dropdown-tuan",
    "title": "Dropdown Tuần",
-   "screens": [
-    "adm-ld-010000",
-    "adm-ld-010010"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LD-010000",
     "ADM-LD-010010"
@@ -705,10 +451,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Mở"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A03.02",
@@ -720,11 +464,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Danh sách",
-      "dd.MM.yyyy - dd.MM.yyyy"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A03.03",
@@ -733,84 +474,11 @@
      "spec": "Bấm một tuần → tải tuần đó, đóng dropdown, giữ bộ lọc và chế độ `Theo lớp`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Chọn",
-        "figmaId": "5835:2577",
-        "layer": "Filter · Trung tâm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Trung tâm",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trung tâm",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       },
-       {
-        "term": "Theo lớp",
-        "figmaId": "5822:13473",
-        "layer": "Value",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "adm-ld-010010": [
-       {
-        "term": "Chọn",
-        "figmaId": "5835:2664",
-        "layer": "Filter · Trung tâm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Trung tâm",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trung tâm",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       },
-       {
-        "term": "Theo lớp",
-        "figmaId": "5822:38387",
-        "layer": "Value",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A03.04",
@@ -822,21 +490,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Đóng"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-TS2.A04",
    "name": "dropdown-giao-vien",
    "title": "Dropdown Giáo viên",
-   "screens": [
-    "adm-ld-010000",
-    "adm-ld-010010"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LD-010000",
     "ADM-LD-010010"
@@ -854,62 +518,11 @@
      "spec": "Bấm mở/đóng panel; đang chọn thì viền cam và hiển thị số người đã chọn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Giáo viên",
-        "figmaId": "4101:129476",
-        "layer": "Filter · Giáo viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Giáo viên",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Giáo viên",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ],
-      "adm-ld-010010": [
-       {
-        "term": "Giáo viên",
-        "figmaId": "5822:38389",
-        "layer": "Filter · Giáo viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Giáo viên",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Giáo viên",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A04.02",
@@ -918,48 +531,11 @@
      "spec": "Lọc danh sách theo tên, không phân biệt hoa thường, không dấu vẫn khớp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Tìm kiếm...",
-        "figmaId": "4101:129471",
-        "layer": "Tìm kiếm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tìm kiếm",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm lớp, giáo viên...",
-         "State": "Search Compact",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ],
-      "adm-ld-010010": [
-       {
-        "term": "Tìm kiếm...",
-        "figmaId": "5822:38384",
-        "layer": "Tìm kiếm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tìm kiếm",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm lớp, giáo viên...",
-         "State": "Search Compact",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A04.03",
@@ -973,10 +549,8 @@
      "testcases": [
       "M-TS2.TC14"
      ],
-     "missingTerms": [
-      "Danh sách"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A04.04",
@@ -985,64 +559,13 @@
      "spec": "Tick/bỏ tick áp dụng ngay cho lưới; bỏ hết tick = mọi giáo viên.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Chọn",
-        "figmaId": "5835:2577",
-        "layer": "Filter · Trung tâm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Trung tâm",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trung tâm",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ],
-      "adm-ld-010010": [
-       {
-        "term": "Chọn",
-        "figmaId": "5835:2664",
-        "layer": "Filter · Trung tâm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Trung tâm",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trung tâm",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-TS2.TC14"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-TS2.A04.05",
@@ -1056,726 +579,11 @@
      "testcases": [
       "M-TS2.TC14"
      ],
-     "missingTerms": [
-      "Đóng panel"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "M-TS2.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-ld-010000",
-    "adm-ld-010010"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "M-TS2.F01.01",
-     "name": "time",
-     "label": "Time",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Time",
-        "figmaId": "4101:129184",
-        "layer": "Time",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Time",
-        "component": "Time",
-        "variant": {
-         "Property 1": "Variant4"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.02",
-     "name": "lich-dn1134-ii-08-30-10-00",
-     "label": "Lịch · DN1134-II · 08:30 - 10:00",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN1134-II · 08:30 - 10:00",
-        "figmaId": "4101:129218",
-        "layer": "Lịch · DN1134-II · 08:30 - 10:00",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN1134-II · 08:30 - 10:00",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.03",
-     "name": "lich-dn1316-i-07-00-08-30",
-     "label": "Lịch · DN1316-I · 07:00 - 08:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN1316-I · 07:00 - 08:30",
-        "figmaId": "4101:129221",
-        "layer": "Lịch · DN1316-I · 07:00 - 08:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN1316-I · 07:00 - 08:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.04",
-     "name": "lich-dn1313-i-09-00-10-30",
-     "label": "Lịch · DN1313-I · 09:00 - 10:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN1313-I · 09:00 - 10:30",
-        "figmaId": "4101:129223",
-        "layer": "Lịch · DN1313-I · 09:00 - 10:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN1313-I · 09:00 - 10:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.05",
-     "name": "lich-dn350-09-00-10-30",
-     "label": "Lịch · DN350 · 09:00 - 10:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN350 · 09:00 - 10:30",
-        "figmaId": "4101:129744",
-        "layer": "Lịch · DN350 · 09:00 - 10:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN350 · 09:00 - 10:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH HOÀN THÀNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.06",
-     "name": "lich-dn1314-i-19-00-20-30",
-     "label": "Lịch · DN1314-I · 19:00 - 20:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN1314-I · 19:00 - 20:30",
-        "figmaId": "4101:129745",
-        "layer": "Lịch · DN1314-I · 19:00 - 20:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN1314-I · 19:00 - 20:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.07",
-     "name": "lich-dn356-09-00-10-30",
-     "label": "Lịch · DN356 · 09:00 - 10:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN356 · 09:00 - 10:30",
-        "figmaId": "4101:129746",
-        "layer": "Lịch · DN356 · 09:00 - 10:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN356 · 09:00 - 10:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH HOÀN THÀNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.08",
-     "name": "lich-dn346-09-00-10-30",
-     "label": "Lịch · DN346 · 09:00 - 10:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN346 · 09:00 - 10:30",
-        "figmaId": "4101:129750",
-        "layer": "Lịch · DN346 · 09:00 - 10:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN346 · 09:00 - 10:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.09",
-     "name": "lich-dn341-19-30-21-00",
-     "label": "Lịch · DN341 · 19:30 - 21:00",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN341 · 19:30 - 21:00",
-        "figmaId": "4101:129823",
-        "layer": "Lịch · DN341 · 19:30 - 21:00",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN341 · 19:30 - 21:00",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH HOÀN THÀNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.10",
-     "name": "lich-dn1315-i-18-30-20-00",
-     "label": "Lịch · DN1315-I · 18:30 - 20:00",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN1315-I · 18:30 - 20:00",
-        "figmaId": "4101:129824",
-        "layer": "Lịch · DN1315-I · 18:30 - 20:00",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN1315-I · 18:30 - 20:00",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.11",
-     "name": "lich-dn339-18-00-19-30",
-     "label": "Lịch · DN339 · 18:00 - 19:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN339 · 18:00 - 19:30",
-        "figmaId": "4101:129828",
-        "layer": "Lịch · DN339 · 18:00 - 19:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN339 · 18:00 - 19:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.12",
-     "name": "lich-dn-3-18-00-19-30",
-     "label": "Lịch · DN[3] · 18:00 - 19:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN[3] · 18:00 - 19:30",
-        "figmaId": "4101:129917",
-        "layer": "Lịch · DN[3] · 18:00 - 19:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN[3] · 18:00 - 19:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.13",
-     "name": "lich-dn344-20-00-21-30",
-     "label": "Lịch · DN344 · 20:00 - 21:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN344 · 20:00 - 21:30",
-        "figmaId": "4101:129918",
-        "layer": "Lịch · DN344 · 20:00 - 21:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN344 · 20:00 - 21:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.14",
-     "name": "lich-dn345-19-00-20-30",
-     "label": "Lịch · DN345 · 19:00 - 20:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN345 · 19:00 - 20:30",
-        "figmaId": "4101:129919",
-        "layer": "Lịch · DN345 · 19:00 - 20:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN345 · 19:00 - 20:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.15",
-     "name": "lich-dn1205-ii-14-45-16-15",
-     "label": "Lịch · DN1205-II · 14:45 - 16:15",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN1205-II · 14:45 - 16:15",
-        "figmaId": "4101:129922",
-        "layer": "Lịch · DN1205-II · 14:45 - 16:15",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN1205-II · 14:45 - 16:15",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.16",
-     "name": "lich-dn347-20-00-21-30",
-     "label": "Lịch · DN347 · 20:00 - 21:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Lịch · DN347 · 20:00 - 21:30",
-        "figmaId": "4101:129997",
-        "layer": "Lịch · DN347 · 20:00 - 21:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN347 · 20:00 - 21:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH HOÀN THÀNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.17",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:239337",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "Lịch / Lịch dạy"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.18",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "4101:129377",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.19",
-     "name": "filter-loai-lop",
-     "label": "Filter · Loại lớp",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010010": [
-       {
-        "term": "Filter · Loại lớp",
-        "figmaId": "5822:38390",
-        "layer": "Filter · Loại lớp",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Loại lớp",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Loại lớp",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.20",
-     "name": "filter-trinh-do",
-     "label": "Filter · Trình độ",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010010": [
-       {
-        "term": "Filter · Trình độ",
-        "figmaId": "5822:38391",
-        "layer": "Filter · Trình độ",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Trình độ",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Leading Icon": "2015:30465",
-         "Placeholder": "Chọn...",
-         "Chevron": true,
-         "Count Value": "1",
-         "Count": false,
-         "Clear": false,
-         "Leading": false,
-         "Value": "HSK1",
-         "Size": "XS",
-         "State": "Active",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.21",
-     "name": "filter-hoc-ky",
-     "label": "Filter · Học kỳ",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010010": [
-       {
-        "term": "Filter · Học kỳ",
-        "figmaId": "5822:38392",
-        "layer": "Filter · Học kỳ",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter · Học kỳ",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Học kỳ",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.22",
-     "name": "lich-dn1311-i-09-00-10-30",
-     "label": "Lịch · DN1311-I · 09:00 - 10:30",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010010": [
-       {
-        "term": "Lịch · DN1311-I · 09:00 - 10:30",
-        "figmaId": "5822:38935",
-        "layer": "Lịch · DN1311-I · 09:00 - 10:30",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Lịch · DN1311-I · 09:00 - 10:30",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-TS2.F01.23",
-     "name": "status-calendar",
-     "label": "STATUS CALENDAR",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-ld-010010": [
-       {
-        "term": "STATUS CALENDAR",
-        "figmaId": "5822:38944",
-        "layer": "STATUS CALENDAR",
-        "confidence": "cao",
-        "region": null,
-        "owner": "STATUS CALENDAR",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "Ô trống"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

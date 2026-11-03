@@ -102,18 +102,13 @@
    "nodeId": "2384:51914",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lop-hoc/cai-dat/lich-day",
    "link": "/lop-hoc/cai-dat/lich-day",
    "dark": "ADM-LOP-040500-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "M-CDS.A02",
-    "M-CDS.A06",
-    "M-CDS.A08",
-    "M-CDS.F01"
-   ]
+   "regions": []
   },
   "ADM-LOP-040510": {
    "id": "ADM-LOP-040510",
@@ -128,7 +123,7 @@
    "nodeId": "2384:59013",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lop-hoc/cai-dat/lich-day/popup-them-lich-day-co-dinh",
    "link": "/lop-hoc/cai-dat/lich-day?popup=ADM-LOP-040510",
    "dark": "ADM-LOP-040510-DK",
@@ -136,13 +131,7 @@
     "ADM-LOP-040500"
    ],
    "citedByRequirement": false,
-   "regions": [
-    "M-CDS.A01",
-    "M-CDS.A03",
-    "M-CDS.A04",
-    "M-CDS.A05",
-    "M-CDS.A07"
-   ]
+   "regions": []
   },
   "ADM-LOP-040520": {
    "id": "ADM-LOP-040520",
@@ -157,7 +146,7 @@
    "nodeId": "2384:59509",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-lop-040520",
    "link": "/lop-hoc/cai-dat/lich-day?popup=ADM-LOP-040520",
    "dark": "ADM-LOP-040520-DK",
@@ -165,9 +154,7 @@
     "ADM-LOP-040500"
    ],
    "citedByRequirement": false,
-   "regions": [
-    "M-CDS.A05"
-   ]
+   "regions": []
   },
   "ADM-LOP-040521": {
    "id": "ADM-LOP-040521",
@@ -182,15 +169,13 @@
    "nodeId": "2911:43102",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-lop-040521",
    "link": "/lop-hoc/cai-dat/lich-day?state=ADM-LOP-040521",
    "dark": "ADM-LOP-040521-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "M-CDS.A05"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -198,9 +183,7 @@
    "id": "M-CDS.A01",
    "name": "tab-lich-day-lich-theo-tuan",
    "title": "Tab Lịch dạy — Lịch theo tuần",
-   "screens": [
-    "adm-lop-040510"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040500"
    ],
@@ -220,10 +203,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Khoảng tuần"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A01.02",
@@ -235,10 +216,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Cột ngày"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A01.03",
@@ -250,11 +229,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tag lịch cố định",
-      "T2, 20:00"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A01.04",
@@ -263,25 +239,7 @@
      "spec": "Mở popup thêm lịch với tab `Thêm Lịch Dạy Cố Định` được chọn sẵn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "Thêm lịch dạy cố định",
-        "figmaId": "I2527:167761;2514:153358",
-        "layer": "Title",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Popup/Header",
-        "component": "Popup/Header",
-        "variant": {
-         "Close": "No",
-         "Description": "No",
-         "Icon": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [
       {
        "type": "opens",
@@ -291,7 +249,7 @@
      ],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A01.05",
@@ -309,10 +267,8 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [
-      "+"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A01.06",
@@ -326,10 +282,8 @@
      "testcases": [
       "M-CDS.TC02"
      ],
-     "missingTerms": [
-      "Thẻ lịch"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A01.07",
@@ -341,23 +295,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Vùng lịch"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
    ],
-   "screensFromItems": [
-    "adm-lop-040510"
-   ]
+   "screensFromItems": []
   },
   {
    "id": "M-CDS.A02",
    "name": "the-lich-va-bon-trang-thai-chinh-thuc",
    "title": "Thẻ lịch và bốn trạng thái chính thức",
-   "screens": [
-    "adm-lop-040500"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040500"
    ],
@@ -374,29 +322,13 @@
      "spec": "Cam | Buổi chưa hoàn thành/chưa hủy, được sinh từ khung lịch cố định.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Lịch cố định",
-        "figmaId": "2384:57689",
-        "layer": "STATUS CALENDAR",
-        "confidence": "cao",
-        "region": null,
-        "owner": "STATUS CALENDAR",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDS.TC08"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A02.02",
@@ -405,29 +337,13 @@
      "spec": "Xanh dương | Buổi chưa hoàn thành/chưa hủy, được thêm linh hoạt vào một ngày/giờ cụ thể.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Lịch linh hoạt",
-        "figmaId": "2384:57707",
-        "layer": "STATUS CALENDAR",
-        "confidence": "cao",
-        "region": null,
-        "owner": "STATUS CALENDAR",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH LINH HOẠT"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDS.TC08"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A02.03",
@@ -436,27 +352,11 @@
      "spec": "Xanh lá | Buổi đã hoàn thành; được tính là một buổi học hợp lệ và phát sinh lương cho giáo viên của lịch.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Lịch hoàn thành",
-        "figmaId": "2384:57687",
-        "layer": "STATUS CALENDAR",
-        "confidence": "cao",
-        "region": null,
-        "owner": "STATUS CALENDAR",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH HOÀN THÀNH"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A02.04",
@@ -465,37 +365,20 @@
      "spec": "Xám | Buổi đã hủy; bị loại khỏi số buổi hợp lệ của khóa và không phát sinh lương. Hệ thống phải sinh một buổi bù ở cuối.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Lịch hủy bỏ",
-        "figmaId": "3650:48210",
-        "layer": "STATUS CALENDAR",
-        "confidence": "cao",
-        "region": null,
-        "owner": "STATUS CALENDAR",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH HUỶ BỎ"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDS.A03",
    "name": "popup-them-lich-day-co-dinh",
    "title": "Popup Thêm Lịch Dạy Cố Định",
-   "screens": [
-    "adm-lop-040510"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040510",
     "ADM-LOP-040521"
@@ -516,10 +399,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tab Cố định/Linh hoạt"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A03.02",
@@ -528,27 +409,11 @@
      "spec": "Ngày bắt đầu áp dụng của cấu hình; khi tạo lịch đầu tiên của lớp phải phù hợp để ngày bắt đầu lớp là buổi 1.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "Chọn ngày bắt đầu",
-        "figmaId": "I2384:59020;1739:32355",
-        "layer": "Thứ Ba, 22.09.2026",
-        "confidence": "cao",
-        "region": "Frame 1171274928",
-        "owner": "Time",
-        "component": "Time",
-        "variant": {
-         "Property 1": "CALENDAR"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A03.03",
@@ -560,10 +425,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Giờ bắt đầu/kết thúc"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A03.04",
@@ -575,10 +438,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thứ 2–Chủ Nhật"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A03.05",
@@ -587,25 +448,11 @@
      "spec": "Thêm một dòng khung giờ; chưa lưu backend.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "+ Thêm lịch dạy",
-        "figmaId": "2384:59178",
-        "layer": "Thêm lịch dạy",
-        "confidence": "cao",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A03.06",
@@ -617,10 +464,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Icon thùng rác"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A03.07",
@@ -629,29 +474,11 @@
      "spec": "Đóng mà không lưu thay đổi chưa xác nhận.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "Hủy",
-        "figmaId": "I2527:167767;2514:153361",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Huỷ",
-         "Type": "Secondary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A03.08",
@@ -660,25 +487,7 @@
      "spec": "Validate toàn bộ, lưu cấu hình và sinh/tái sinh lịch tương lai nguyên tử.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "Xác Nhận",
-        "figmaId": "I2527:167767;2514:153363",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Xác nhận",
-         "Type": "Primary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDS.TC10",
@@ -689,20 +498,16 @@
       "M-CDS.TC15"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
    ],
-   "screensFromItems": [
-    "adm-lop-040510"
-   ]
+   "screensFromItems": []
   },
   {
    "id": "M-CDS.A04",
    "name": "popup-them-lich-day-linh-hoat",
    "title": "Popup Thêm Lịch Dạy Linh Hoạt",
-   "screens": [
-    "adm-lop-040510"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040520"
    ],
@@ -722,10 +527,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Khoảng tuần"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A04.02",
@@ -737,10 +540,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Giờ bắt đầu/kết thúc"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A04.03",
@@ -752,10 +553,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thứ trong tuần"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A04.04",
@@ -764,25 +563,11 @@
      "spec": "Thêm dòng giờ khác để tạo nhiều lịch trong một lần.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "Thêm lịch dạy",
-        "figmaId": "2384:59178",
-        "layer": "Thêm lịch dạy",
-        "confidence": "cao",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A04.05",
@@ -791,25 +576,7 @@
      "spec": "Validate toàn bộ rồi chèn các lịch linh hoạt nguyên tử vào timeline lớp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "Xác Nhận",
-        "figmaId": "I2527:167767;2514:153363",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Xác nhận",
-         "Type": "Primary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDS.TC16",
@@ -817,22 +584,16 @@
       "M-CDS.TC19"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
    ],
-   "screensFromItems": [
-    "adm-lop-040510"
-   ]
+   "screensFromItems": []
   },
   {
    "id": "M-CDS.A05",
    "name": "popup-xem-chinh-sua-khi-bam-the-lich",
    "title": "Popup xem/chỉnh sửa khi bấm thẻ lịch",
-   "screens": [
-    "adm-lop-040510",
-    "adm-lop-040520",
-    "adm-lop-040521"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040500"
    ],
@@ -849,67 +610,13 @@
      "spec": "Lịch nguồn cố định hiển thị `Chỉnh sửa lịch cố định`; lịch nguồn linh hoạt hiển thị `Chỉnh sửa lịch linh hoạt`. Teacher hoặc lịch bị khóa hiển thị theo chế độ xem, không tạo cảm giác có thể sửa.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "Tiêu đề",
-        "figmaId": "I2527:167761;2514:153357",
-        "layer": "Tiêu đề",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Popup/Header",
-        "component": "Popup/Header",
-        "variant": {
-         "Close": "No",
-         "Description": "No",
-         "Icon": "No"
-        },
-        "inCode": false
-       }
-      ],
-      "adm-lop-040520": [
-       {
-        "term": "Tiêu đề",
-        "figmaId": "I2527:167773;2514:153357",
-        "layer": "Tiêu đề",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Popup/Header",
-        "component": "Popup/Header",
-        "variant": {
-         "Close": "No",
-         "Description": "No",
-         "Icon": "No"
-        },
-        "inCode": false
-       }
-      ],
-      "adm-lop-040521": [
-       {
-        "term": "Tiêu đề",
-        "figmaId": "I2911:43103;2514:153357",
-        "layer": "Tiêu đề",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Popup/Header",
-        "component": "Popup/Header",
-        "variant": {
-         "Close": "No",
-         "Description": "No",
-         "Icon": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDS.TC21"
      ],
-     "missingTerms": [
-      "Chỉnh sửa lịch cố định"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A05.02",
@@ -921,10 +628,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thời gian/Ngày"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A05.03",
@@ -933,51 +638,11 @@
      "spec": "Giờ bắt đầu của buổi; phải kết hợp với Thời gian học để tính giờ kết thúc và kiểm tra trùng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "Giờ bắt đầu",
-        "figmaId": "2384:59030",
-        "layer": "Giờ bắt đầu",
-        "confidence": "cao",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "adm-lop-040520": [
-       {
-        "term": "Giờ bắt đầu",
-        "figmaId": "2384:59526",
-        "layer": "Giờ bắt đầu",
-        "confidence": "cao",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ],
-      "adm-lop-040521": [
-       {
-        "term": "Giờ bắt đầu",
-        "figmaId": "2911:43118",
-        "layer": "Giờ bắt đầu",
-        "confidence": "cao",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A05.04",
@@ -995,10 +660,8 @@
       "M-CDS.TC27b",
       "M-CDS.TC27c"
      ],
-     "missingTerms": [
-      "Giáo viên"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A05.05",
@@ -1010,11 +673,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thời gian học",
-      "90 phút"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A05.06",
@@ -1031,11 +691,8 @@
       "M-CDS.TC27c",
       "M-CDS.TC27e"
      ],
-     "missingTerms": [
-      "Lương/giờ",
-      "đ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A05.07",
@@ -1052,11 +709,8 @@
       "M-CDS.TC26",
       "M-CDS.TC27"
      ],
-     "missingTerms": [
-      "Trạng thái",
-      "Đang đợi"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A05.08",
@@ -1065,108 +719,11 @@
      "spec": "Nút đóng popup, nhãn tiếng Việt là `Hủy`; bỏ thay đổi chưa xác nhận. Không phải hành động Hủy bỏ lịch.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "Hủy",
-        "figmaId": "I2527:167767;2514:153361",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Huỷ",
-         "Type": "Secondary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       },
-       {
-        "term": "Hủy",
-        "figmaId": "I2527:167767;2514:153361",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Huỷ",
-         "Type": "Secondary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ],
-      "adm-lop-040520": [
-       {
-        "term": "Hủy",
-        "figmaId": "I2527:167779;2514:153361",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Huỷ",
-         "Type": "Secondary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       },
-       {
-        "term": "Hủy",
-        "figmaId": "I2527:167779;2514:153361",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Huỷ",
-         "Type": "Secondary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ],
-      "adm-lop-040521": [
-       {
-        "term": "Hủy",
-        "figmaId": "I2911:43160;2514:153361",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Huỷ",
-         "Type": "Secondary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       },
-       {
-        "term": "Hủy",
-        "figmaId": "I2911:43160;2514:153361",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Huỷ",
-         "Type": "Secondary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A05.09",
@@ -1175,59 +732,7 @@
      "spec": "Validate phiên bản, quyền, field, trùng lịch và trạng thái; chỉ cập nhật UI sau khi backend commit.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "Xác nhận",
-        "figmaId": "I2527:167767;2514:153363",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Xác nhận",
-         "Type": "Primary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ],
-      "adm-lop-040520": [
-       {
-        "term": "Xác nhận",
-        "figmaId": "I2527:167779;2514:153363",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Xác nhận",
-         "Type": "Primary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ],
-      "adm-lop-040521": [
-       {
-        "term": "Xác nhận",
-        "figmaId": "I2911:43160;2514:153363",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Xác nhận",
-         "Type": "Primary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDS.TC22",
@@ -1240,22 +745,16 @@
       "M-CDS.TC27"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
    ],
-   "screensFromItems": [
-    "adm-lop-040510",
-    "adm-lop-040520",
-    "adm-lop-040521"
-   ]
+   "screensFromItems": []
   },
   {
    "id": "M-CDS.A06",
    "name": "hoan-thanh-va-huy-lich",
    "title": "Hoàn thành và hủy lịch",
-   "screens": [
-    "adm-lop-040500"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040500"
    ],
@@ -1272,23 +771,7 @@
      "spec": "Kiểm tra lịch/giáo viên → chuyển xanh lá → ghi nhận buổi hợp lệ → tạo lương giáo viên đúng một lần.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Hoàn thành",
-        "figmaId": "2384:57687",
-        "layer": "STATUS CALENDAR",
-        "confidence": "thap",
-        "region": null,
-        "owner": "STATUS CALENDAR",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH HOÀN THÀNH"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDS.TC28",
@@ -1297,7 +780,7 @@
       "M-CDS.TC35"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A06.02",
@@ -1309,11 +792,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Hoàn thành qua luồng dạy",
-      "Hoàn thành buổi học"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A06.03",
@@ -1322,27 +802,11 @@
      "spec": "Chuyển xám → loại khỏi số buổi hợp lệ → không tính lương → sinh một lịch cố định bù sau buổi hợp lệ cuối cùng → tăng Ngày kết thúc dự kiến.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Hủy bỏ",
-        "figmaId": "3650:48210",
-        "layer": "STATUS CALENDAR",
-        "confidence": "thap",
-        "region": null,
-        "owner": "STATUS CALENDAR",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH HUỶ BỎ"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A06.04",
@@ -1354,10 +818,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Sửa lịch chưa hoàn thành"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A06.05",
@@ -1369,20 +831,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Xóa"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDS.A07",
    "name": "mo-lai-lich-da-hoan-thanh-va-dao-luong",
    "title": "Mở lại lịch đã hoàn thành và đảo lương",
-   "screens": [
-    "adm-lop-040510"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040500"
    ],
@@ -1402,10 +861,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Mở lại"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A07.02",
@@ -1417,10 +874,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Lý do điều chỉnh"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A07.03",
@@ -1432,10 +887,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Cảnh báo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A07.04",
@@ -1444,29 +897,11 @@
      "spec": "Đóng popup, giữ nguyên lịch Hoàn thành và khoản lương hiện tại.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040510": [
-       {
-        "term": "Hủy",
-        "figmaId": "I2527:167767;2514:153361",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Huỷ",
-         "Type": "Secondary",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A07.05",
@@ -1480,23 +915,17 @@
      "testcases": [
       "M-CDS.TC39"
      ],
-     "missingTerms": [
-      "Xác nhận mở lại"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
    ],
-   "screensFromItems": [
-    "adm-lop-040510"
-   ]
+   "screensFromItems": []
   },
   {
    "id": "M-CDS.A08",
    "name": "toast-phan-hoi-crud-lich",
    "title": "Toast phản hồi CRUD lịch",
-   "screens": [
-    "adm-lop-040500"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040500"
    ],
@@ -1519,11 +948,8 @@
       "M-CDS.TC44",
       "M-CDS.TC45"
      ],
-     "missingTerms": [
-      "Thành công",
-      "Thành Công"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A08.02",
@@ -1532,32 +958,11 @@
      "spec": "`Thông Báo` | `Lịch đang được tái tạo, danh sách sẽ cập nhật sau ít phút.`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Thông tin",
-        "figmaId": "I2384:57886;2177:28928",
-        "layer": "Chi tiết NV",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thông Báo"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A08.03",
@@ -1571,11 +976,8 @@
      "testcases": [
       "M-CDS.TC45"
      ],
-     "missingTerms": [
-      "Cảnh báo",
-      "Cảnh Báo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDS.A08.04",
@@ -1587,233 +989,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Lỗi",
-      "Có Lỗi Xảy Ra"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "M-CDS.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-lop-040500"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "M-CDS.F01.01",
-     "name": "atom-side-tab",
-     "label": "Atom/Side Tab",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Atom/Side Tab",
-        "figmaId": "2384:57886",
-        "layer": "Atom/Side Tab",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDS.F01.02",
-     "name": "time",
-     "label": "Time",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Time",
-        "figmaId": "2384:57636",
-        "layer": "Time",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Time",
-        "component": "Time",
-        "variant": {
-         "Property 1": "Variant4"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDS.F01.03",
-     "name": "atom-icon-button",
-     "label": "Atom/Icon Button",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Atom/Icon Button",
-        "figmaId": "3772:85435",
-        "layer": "Atom/Icon Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Icon Button",
-        "component": "Atom/Icon Button",
-        "variant": {
-         "Icon": "Add Circle Small"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDS.F01.04",
-     "name": "status-calendar",
-     "label": "STATUS CALENDAR",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "STATUS CALENDAR",
-        "figmaId": "2384:57688",
-        "layer": "STATUS CALENDAR",
-        "confidence": "cao",
-        "region": null,
-        "owner": "STATUS CALENDAR",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "Chưa có lịch"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDS.F01.05",
-     "name": "mouse-click",
-     "label": "Mouse click",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Mouse click",
-        "figmaId": "2384:57712",
-        "layer": "Mouse click",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Mouse click",
-        "component": null,
-        "variant": {},
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDS.F01.06",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:229271",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "Quản lý / Lớp Học / Cài đặt"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDS.F01.07",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040500": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "3497:51175",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

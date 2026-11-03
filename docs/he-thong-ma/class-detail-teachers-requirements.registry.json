@@ -81,23 +81,13 @@
    "nodeId": "2384:50822",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lop-hoc/cai-dat/giao-vien",
    "link": "/lop-hoc/cai-dat/giao-vien",
    "dark": "ADM-LOP-040300-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "M-CDT.A01",
-    "M-CDT.A02",
-    "M-CDT.A03",
-    "M-CDT.A04",
-    "M-CDT.A05",
-    "M-CDT.A06",
-    "M-CDT.A07",
-    "M-CDT.A08",
-    "M-CDT.F01"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -105,9 +95,7 @@
    "id": "M-CDT.A01",
    "name": "tab-giao-vien-danh-sach-giao-vien-trong-",
    "title": "Tab Giáo viên — Danh sách giáo viên trong lớp",
-   "screens": [
-    "adm-lop-040300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040300"
    ],
@@ -124,25 +112,11 @@
      "spec": "Hiển thị avatar, họ tên và mã giáo viên. Bấm vào giáo viên mở đúng màn Chi tiết giáo viên theo quyền của người dùng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Tên",
-        "figmaId": "I3138:130161;3138:130001",
-        "layer": "Tên",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A01.02",
@@ -156,10 +130,8 @@
      "testcases": [
       "M-CDT.TC01"
      ],
-     "missingTerms": [
-      "Email"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A01.03",
@@ -168,28 +140,14 @@
      "spec": "Checkbox thể hiện giáo viên có quyền chấm điểm BTVN và bài kiểm tra của lớp hay không. Mỗi lớp tối đa một checkbox được chọn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Phụ trách chính",
-        "figmaId": "2384:50902",
-        "layer": "PHỤ TRÁCH CHÍNH",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDT.TC01",
       "M-CDT.TC02"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A01.04",
@@ -207,10 +165,8 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [
-      "Xóa"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A01.05",
@@ -219,25 +175,7 @@
      "spec": "Mở popup lựa chọn giữa `Chọn giáo viên` hiện có và `Tạo giáo viên mới`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Thêm giáo viên vào lớp",
-        "figmaId": "2384:54527",
-        "layer": "Atom/Button",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Button",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Thêm giáo viên vào lớp",
-         "Type": "Warning",
-         "Size": "Medium"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [
       {
        "type": "opens",
@@ -246,20 +184,17 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [
-      "Chọn giáo viên"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDT.A02",
    "name": "popup-chon-cach-them-giao-vien",
    "title": "Popup chọn cách thêm giáo viên",
-   "screens": [
-    "adm-lop-040300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040300"
    ],
@@ -287,10 +222,8 @@
      "testcases": [
       "M-CDT.TC06"
      ],
-     "missingTerms": [
-      "Chọn giáo viên"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A02.02",
@@ -310,10 +243,8 @@
      "testcases": [
       "M-CDT.TC06"
      ],
-     "missingTerms": [
-      "Tạo giáo viên mới"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A02.03",
@@ -325,20 +256,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Đóng popup"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDT.A03",
    "name": "popup-chon-giao-vien-hien-co",
    "title": "Popup Chọn giáo viên hiện có",
-   "screens": [
-    "adm-lop-040300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040300"
    ],
@@ -358,10 +286,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tìm kiếm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A03.02",
@@ -370,21 +296,7 @@
      "spec": "Mỗi dòng hiển thị tối thiểu tên, mã và email; checkbox hỗ trợ multi-select.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Danh sách",
-        "figmaId": "2384:54526",
-        "layer": "Danh sách giáo viên",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDT.TC07",
@@ -393,7 +305,7 @@
       "M-CDT.TC28"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A03.03",
@@ -402,25 +314,11 @@
      "spec": "Đóng popup và bỏ các lựa chọn chưa xác nhận.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Hủy",
-        "figmaId": "I3138:130161;3138:130001",
-        "layer": "Tên",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A03.04",
@@ -434,20 +332,17 @@
      "testcases": [
       "M-CDT.TC08"
      ],
-     "missingTerms": [
-      "Thêm mới"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDT.A04",
    "name": "popup-tao-giao-vien-moi-dung-chung",
    "title": "Popup Tạo giáo viên mới dùng chung",
-   "screens": [
-    "adm-lop-040300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040300"
    ],
@@ -467,10 +362,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Họ và tên"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A04.02",
@@ -482,10 +375,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Mã giáo viên/Code"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A04.03",
@@ -497,10 +388,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Email, Số điện thoại"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A04.04",
@@ -516,11 +405,8 @@
       "M-CDT.TC14",
       "M-CDT.TC16"
      ],
-     "missingTerms": [
-      "Trạng thái",
-      "Training"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A04.05",
@@ -534,10 +420,8 @@
      "testcases": [
       "M-CDT.TC12"
      ],
-     "missingTerms": [
-      "Ghi chú"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A04.06",
@@ -546,27 +430,11 @@
      "spec": "Giới tính, Ngày sinh, Vai trò `Teacher`, Mật khẩu và các field hiện có tiếp tục theo popup tạo giáo viên dùng chung.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Teacher",
-        "figmaId": "2384:50908",
-        "layer": "Teachers Row List",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Các field khác"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A04.07",
@@ -582,20 +450,17 @@
       "M-CDT.TC14",
       "M-CDT.TC15"
      ],
-     "missingTerms": [
-      "Xác Nhận"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDT.A05",
    "name": "checkbox-giao-vien-phu-trach-chinh-va-qu",
    "title": "Checkbox Giáo viên phụ trách chính và quyền chấm điểm",
-   "screens": [
-    "adm-lop-040300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040300"
    ],
@@ -615,10 +480,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Checkbox chưa chọn"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A05.02",
@@ -630,10 +493,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Checkbox đã chọn"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A05.03",
@@ -645,10 +506,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Chuyển từ A sang B"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A05.04",
@@ -660,20 +519,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Kiểm tra quyền chấm điểm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDT.A06",
    "name": "popup-xac-nhan-xoa-giao-vien-khoi-lop",
    "title": "Popup xác nhận xóa giáo viên khỏi lớp",
-   "screens": [
-    "adm-lop-040300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040300"
    ],
@@ -693,11 +549,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Tiêu đề",
-      "Xóa giáo viên khỏi lớp?"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A06.02",
@@ -709,11 +562,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Nội dung thường",
-      "Bạn có chắc chắn muốn xóa giáo viên {Tên giáo viên} khỏi lớp {Mã lớp}?"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A06.03",
@@ -725,11 +575,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Cảnh báo giáo viên chính",
-      "Sau khi xóa, lớp sẽ không có giáo viên được quyền chấm điểm BTVN và bài kiểm tra cho đến khi gán phụ trách chính mới."
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A06.04",
@@ -738,25 +585,11 @@
      "spec": "Đóng popup, không thay đổi quan hệ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Hủy",
-        "figmaId": "I3138:130161;3138:130001",
-        "layer": "Tên",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A06.05",
@@ -768,20 +601,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Xóa"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDT.A07",
    "name": "dieu-huong-den-chi-tiet-giao-vien",
    "title": "Điều hướng đến Chi tiết giáo viên",
-   "screens": [
-    "adm-lop-040300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040300"
    ],
@@ -801,10 +631,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Vùng bấm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A07.02",
@@ -816,21 +644,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Đích đến",
-      "teacher_id"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDT.A08",
    "name": "toast-phan-hoi-crud",
    "title": "Toast phản hồi CRUD",
-   "screens": [
-    "adm-lop-040300"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040300"
    ],
@@ -854,11 +678,8 @@
       "M-CDT.TTC02",
       "M-CDT.TTC04"
      ],
-     "missingTerms": [
-      "Thành công",
-      "Thành Công"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A08.02",
@@ -867,32 +688,11 @@
      "spec": "`Thông Báo` | Dữ liệu quan hệ/lịch cần thời gian đồng bộ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Thông tin",
-        "figmaId": "I2384:53549;2177:28928",
-        "layer": "Chi tiết NV",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Thông Báo"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A08.03",
@@ -906,11 +706,8 @@
      "testcases": [
       "M-CDT.TTC02"
      ],
-     "missingTerms": [
-      "Cảnh báo",
-      "Cảnh Báo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDT.A08.04",
@@ -922,181 +719,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Lỗi",
-      "Có Lỗi Xảy Ra"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "M-CDT.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-lop-040300"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "M-CDT.F01.01",
-     "name": "atom-side-tab",
-     "label": "Atom/Side Tab",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Atom/Side Tab",
-        "figmaId": "2384:53549",
-        "layer": "Atom/Side Tab",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDT.F01.02",
-     "name": "o-dinh-danh",
-     "label": "Ô định danh",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Ô định danh",
-        "figmaId": "3138:130161",
-        "layer": "Ô định danh",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Ô định danh",
-        "component": null,
-        "variant": {
-         "Có Tiền": true,
-         "Có lịch hẹn": false,
-         "Có tag": false,
-         "Có avatar": true,
-         "Tên": "Bích Thùy",
-         "Có tag thứ 2": false,
-         "Mã": "Bichthuy00111@gmail.com"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDT.F01.03",
-     "name": "mouse-click",
-     "label": "Mouse click",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Mouse click",
-        "figmaId": "2384:50947",
-        "layer": "Mouse click",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Mouse click",
-        "component": null,
-        "variant": {},
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDT.F01.04",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:229723",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "Quản lý / Lớp Học / Cài đặt"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDT.F01.05",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040300": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "3497:50893",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

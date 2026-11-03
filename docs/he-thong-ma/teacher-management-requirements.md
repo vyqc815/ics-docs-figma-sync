@@ -36,133 +36,101 @@ Requirement: `management_requirement/teacher_management/teacher_management_requi
 
 ### `A01` Trang 1: Danh sách giáo viên
 
-Frame: `ADM-GV-010000` (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | trang-thai | `DD/Molecule/Trigger` Size=XS, State=Active | `3210:28297` Dropdown | — |  | `TC02`, `TC04`, `TC05`, `TC06`, `TC07`, `TC34`, `TC29`, `TC30`, `TC35`, `TC08`, `TC12`, `TC13`, `TC14`, `TC15` | Khớp | QC |
-| `A01.02` | giao-vien | `Card Menu v2 (Test)` Type=Con, State=Select | `I4915:236867;4899:195680` Card Menu v2 (Test) | — |  | `TC01`, `TC45`, `TC02`, `TC04`, `TC05`, `TC07`, `TC31`, `TC33`, `TC25`, `TC27`, `TC28`, `TC29`, `TC30`, `TC35`, `TC03`, `TC11`, `TC13`, `TC14`, `TC15`, `TC16` | Khớp | QC |
-| `A01.03` | ma-giao-vien |  | `3210:28306` Mã giáo viên | — |  |  | Khớp | QC |
-| `A01.04` | so-lop |  | `3210:28308` Số lớp | — |  | `TC11`, `TC12` | Khớp | QC |
-| `A01.05` | dang-day |  | `3210:28310` Đang dạy | — |  | `TC11`, `TC12` | Khớp | QC |
-| `A01.06` | len-ky |  | `3210:28312` Lên kỳ | — | governed-by `REQ03` | `TC15` | Khớp | QC |
-| `A01.07` | di-hoc |  | `3210:28314` Đi học | — | governed-by `REQ03` | `TC13` | Khớp | QC |
-| `A01.08` | btvn |  | `3210:28316` BTVN | — | governed-by `REQ03` | `TC14` | Khớp | QC |
-| `A01.09` | danh-gia |  | `3210:28318` Đánh giá | — |  |  | Khớp | QC |
-| `A01.10` | lich-dang-ky |  | `3210:28320` Lịch Đăng ký | — |  | `TC28`, `TC30` | Khớp | QC |
-| `A01.11` | lich-day |  | `3210:28322` Lịch dạy | — |  | `TC28`, `TC29`, `TC11`, `TC12` | Khớp | QC |
-| `A01.12` | ghi-chu | `Card Menu v2 (Test)` Type=Con, State=Default | `I4915:236867;4899:195676` Card Menu v2 (Test) | — |  |  | Khớp | QC |
-| `A01.13` | chi-tiet |  | `3210:28400` Ghi chú chi tiết | — |  | `TC03` | Khớp | QC |
+| `A01.01` | trang-thai |  |  | — |  | `TC02`, `TC04`, `TC05`, `TC06`, `TC07`, `TC34`, `TC29`, `TC30`, `TC35`, `TC08`, `TC12`, `TC13`, `TC14`, `TC15` | Chưa sync | QC |
+| `A01.02` | giao-vien |  |  | — |  | `TC01`, `TC45`, `TC02`, `TC04`, `TC05`, `TC07`, `TC31`, `TC33`, `TC25`, `TC27`, `TC28`, `TC29`, `TC30`, `TC35`, `TC03`, `TC11`, `TC13`, `TC14`, `TC15`, `TC16` | Chưa sync | QC |
+| `A01.03` | ma-giao-vien |  |  | — |  |  | Chưa sync | QC |
+| `A01.04` | so-lop |  |  | — |  | `TC11`, `TC12` | Chưa sync | QC |
+| `A01.05` | dang-day |  |  | — |  | `TC11`, `TC12` | Chưa sync | QC |
+| `A01.06` | len-ky |  |  | — | governed-by `REQ03` | `TC15` | Chưa sync | QC |
+| `A01.07` | di-hoc |  |  | — | governed-by `REQ03` | `TC13` | Chưa sync | QC |
+| `A01.08` | btvn |  |  | — | governed-by `REQ03` | `TC14` | Chưa sync | QC |
+| `A01.09` | danh-gia |  |  | — |  |  | Chưa sync | QC |
+| `A01.10` | lich-dang-ky |  |  | — |  | `TC28`, `TC30` | Chưa sync | QC |
+| `A01.11` | lich-day |  |  | — |  | `TC28`, `TC29`, `TC11`, `TC12` | Chưa sync | QC |
+| `A01.12` | ghi-chu |  |  | — |  |  | Chưa sync | QC |
+| `A01.13` | chi-tiet |  |  | — |  | `TC03` | Chưa sync | QC |
 
 ### `A02` Chi tiết lịch đăng ký khi hover
 
-Frame: `ADM-GV-010000` (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | tong-quan |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.02` | so-ngay |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
-| `A02.03` | so-ca |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
-| `A02.04` | popover |  | `3210:28472` Chi tiết lịch đăng ký | — |  | `TC19` | Khớp | QC |
-| `A02.05` | thu-tu |  |  | — |  | `TC18` | Chưa khớp tự động | QC |
-| `A02.06` | chua-dang-ky |  | `3210:28368` Chưa đăng ký lịch; `3210:28368` Chưa đăng ký lịch | — |  | `TC19` | Khớp | QC |
+| `A02.01` | tong-quan |  |  | — |  |  | Chưa sync | QC |
+| `A02.02` | so-ngay |  |  | — |  | `TC18` | Chưa sync | QC |
+| `A02.03` | so-ca |  |  | — |  | `TC18` | Chưa sync | QC |
+| `A02.04` | popover |  |  | — |  | `TC19` | Chưa sync | QC |
+| `A02.05` | thu-tu |  |  | — |  | `TC18` | Chưa sync | QC |
+| `A02.06` | chua-dang-ky |  |  | — |  | `TC19` | Chưa sync | QC |
 
 ### `A03` Chi tiết lớp đang dạy khi hover
 
-Frame: `ADM-GV-010000` (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | badge-so-lop |  | `3210:28310` Đang dạy | — |  |  | Khớp | QC |
-| `A03.02` | khoi-lop-trong-popover |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.03` | so-buoi | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `3210:28333` Atom/Number Badge | — |  |  | Khớp | QC |
-| `A03.04` | lich-co-dinh |  | `3210:28475` T2: | — |  |  | Khớp | QC |
+| `A03.01` | badge-so-lop |  |  | — |  |  | Chưa sync | QC |
+| `A03.02` | khoi-lop-trong-popover |  |  | — |  |  | Chưa sync | QC |
+| `A03.03` | so-buoi |  |  | — |  |  | Chưa sync | QC |
+| `A03.04` | lich-co-dinh |  |  | — |  |  | Chưa sync | QC |
 
 ### `A04` Ghi chú giáo viên
 
-Frame: `ADM-GV-010000` (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A05` Menu thao tác trên dòng: Thêm lịch hẹn, Thêm tag và Danh sách lịch hẹn
 
-Frame: `ADM-GV-010040` (tool đoán:ADM-GV-010001, ADM-GV-010030, ADM-GV-010040, ADM-GV-010050) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-GV-010001, ADM-GV-010030, ADM-GV-010040, ADM-GV-010050) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | menu-thao-tac | `Popup/Header`  | `I2527:167725;2514:153358` Title | — |  |  | Khớp | QC |
-| `A05.02` | popup-them-lich-hen | `Atom/Label`  | `1739:31622` ADM-GV-010040 — Danh sách giáo viên / Popup thêm lịch hẹn; `4835:162374` Atom/Label | — |  |  | Khớp | QC |
-| `A05.03` | popup-them-tag |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.04` | popup-danh-sach-lich-hen | `Atom/Label`  | `1832:36668` Atom/Label | — |  | `TC50` | Khớp | QC |
+| `A05.01` | menu-thao-tac |  |  | — |  |  | Chưa sync | QC |
+| `A05.02` | popup-them-lich-hen |  |  | — |  |  | Chưa sync | QC |
+| `A05.03` | popup-them-tag |  |  | — |  |  | Chưa sync | QC |
+| `A05.04` | popup-danh-sach-lich-hen |  |  | — |  | `TC50` | Chưa sync | QC |
 
 ### `A06` Điều hướng đến chi tiết giáo viên
 
-Frame: `ADM-GV-010000` (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A07` Thêm mới giáo viên
 
-Frame: `ADM-GV-010020` (tool đoán:ADM-GV-010020) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-GV-010020) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | ho-va-ten | `Atom/Label`  | `1739:36477` Atom/Label | — |  | `TC36` | Khớp | QC |
-| `A07.02` | gioi-tinh | `Atom/Label`  | `1739:36467` Atom/Label | — |  | `TC36`, `TC37`, `TC38`, `TC39` | Khớp | QC |
-| `A07.03` | ngay-sinh | `Atom/Label`  | `1739:36495` Atom/Label | — |  | `TC36`, `TC37`, `TC38`, `TC39` | Khớp | QC |
-| `A07.04` | so-dien-thoai | `Atom/Label`  | `1739:36487` Atom/Label | — |  | `TC36`, `TC37`, `TC38`, `TC39`, `TC43` | Khớp | QC |
-| `A07.05` | vai-tro | `Atom/Input` State=Disabled, Kiểu=Chuẩn; `Atom/Label`  | `1739:36499` Atom/Label; `I1739:32604;1739:32457` 0000000009 | — |  | `TC36`, `TC37` | Khớp | QC |
-| `A07.06` | gmail | `Atom/Label`  | `1739:36513` Atom/Label | — |  | `TC36` | Khớp | QC |
-| `A07.07` | mat-khau | `Atom/Label`  | `1739:36521` Atom/Label | — |  | `TC36`, `TC42` | Khớp | QC |
-| `A07.08` | trung-tam | `Atom/Label`  | `4835:162368` Atom/Label | — |  | `TC36`, `TC46` | Khớp | QC |
-| `A07.09` | code | `Atom/Label`  | `1739:36531` Atom/Label | — |  | `TC36`, `TC37`, `TC41` | Khớp | QC |
-| `A07.10` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167719;2514:153361` Atom/Button | — |  |  | Khớp | QC |
-| `A07.11` | them | `Atom/Button` Type=Primary, Size=Medium | `I2527:167719;2514:153363` Atom/Button | — |  | `TC36`, `TC37` | Khớp | QC |
+| `A07.01` | ho-va-ten |  |  | — |  | `TC36` | Chưa sync | QC |
+| `A07.02` | gioi-tinh |  |  | — |  | `TC36`, `TC37`, `TC38`, `TC39` | Chưa sync | QC |
+| `A07.03` | ngay-sinh |  |  | — |  | `TC36`, `TC37`, `TC38`, `TC39` | Chưa sync | QC |
+| `A07.04` | so-dien-thoai |  |  | — |  | `TC36`, `TC37`, `TC38`, `TC39`, `TC43` | Chưa sync | QC |
+| `A07.05` | vai-tro |  |  | — |  | `TC36`, `TC37` | Chưa sync | QC |
+| `A07.06` | gmail |  |  | — |  | `TC36` | Chưa sync | QC |
+| `A07.07` | mat-khau |  |  | — |  | `TC36`, `TC42` | Chưa sync | QC |
+| `A07.08` | trung-tam |  |  | — |  | `TC36`, `TC46` | Chưa sync | QC |
+| `A07.09` | code |  |  | — |  | `TC36`, `TC37`, `TC41` | Chưa sync | QC |
+| `A07.10` | huy |  |  | — |  |  | Chưa sync | QC |
+| `A07.11` | them |  |  | — |  | `TC36`, `TC37` | Chưa sync | QC |
 
 ### `A08` Toast phản hồi CRUD
 
-Frame: `ADM-GV-010000` (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-GV-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
-| `A08.02` | thong-tin |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A08.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
-| `A08.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
-
-### `F01` Header
-
-Frame: `ADM-GV-010000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | account | `ACCOUNT` Size=Default | `2223:84131` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F02` (ngoài Body)
-
-Frame: `ADM-GV-010000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F02.01` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:236867` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.02` | atom-icon-button | `Atom/Icon Button`  | `3210:28292` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.03` | menu-panel | `DD/Organism/Menu Panel` Type=Multi | `3210:28294` Menu Panel | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.04` | atom-input | `Atom/Input` State=Search Advanced, Kiểu=Chuẩn | `3210:28295` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.05` | dropdown-trung-tam | `DD/Molecule/Trigger` Size=XS, State=Default | `4713:129420` Dropdown · Trung tâm | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.06` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Default | `3210:28298` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.07` | teaching-status | `Teaching status`  | `3210:28328` Teaching status | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.08` | o-dinh-danh |  | `3210:28329` Ô định danh | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.09` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `3210:28335` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.10` | percent | `PERCENT %`  | `3210:28337` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.11` | progress-diem-danh-gia-a-f | `Progress/Điểm Đánh Giá (A-F)` Size=36x32 | `3210:28343` Progress/Điểm Đánh Giá (A-F) | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.12` | lich-giao-vien-dang-ky | `LỊCH GIÁO VIÊN ĐĂNG KÝ` State=Default | `3210:28345` LỊCH GIÁO VIÊN ĐĂNG KÝ | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.13` | ghi-chu | `GHI CHÚ`  | `3210:28348` GHI CHÚ | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.14` | arrow-detail | `ARROW DETAIL`  | `3210:28349` ARROW DETAIL | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.15` | mouse-click |  | `3210:28373` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.16` | lop-hoc | `Lớp học`  | `3210:28394` Lớp học | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.17` | phan-trang |  | `3210:28659` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
+| `A08.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa sync | QC |
+| `A08.02` | thong-tin |  |  | — |  |  | Chưa sync | QC |
+| `A08.03` | canh-bao |  |  | — |  | `TTC02` | Chưa sync | QC |
+| `A08.04` | loi |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -263,7 +231,7 @@ Frame: `ADM-GV-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (10): `A02.01`, `A02.02`, `A02.03`, `A02.05`, `A03.02`, `A05.03`, `A08.01`, `A08.02`, `A08.03`, `A08.04`
+- Chưa sync (42): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`, `A08.01`, `A08.02`, `A08.03`, `A08.04`
 - Frame Figma chưa có requirement (7): `ADM-GV-010001`, `ADM-GV-010010`, `ADM-GV-010020`, `ADM-GV-010030`, `ADM-GV-010040`, `ADM-GV-010042`, `ADM-GV-010050`
 - Thiếu prototype link đi vào (5): `ADM-GV-010010`, `ADM-GV-010020`, `ADM-GV-010030`, `ADM-GV-010040`, `ADM-GV-010050`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`

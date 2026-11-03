@@ -21,33 +21,6 @@
 
 ## 4. Khu vực và item
 
-### `F01` (ngoài Body)
-
-Frame: `ADM-KS-030010`, `ADM-KS-030020` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:241500` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | account | `ACCOUNT` Size=Default | `4885:10108` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | xem-truoc | `Atom/Button` Type=Outlined, Size=Small | `4885:10116` Xem trước | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | luu | `Atom/Button` Type=Primary, Size=Small | `4885:10117` Lưu | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | so-cau | `Atom/Badge`  | `4885:10120` Số câu | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | loai-cau-hoi | `DD/Molecule/Trigger` Size=S, State=Default | `4885:10121` Loại câu hỏi | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | noi-dung-cau-hoi | `Atom/Input` State=Filled, Kiểu=Chuẩn | `4885:10122` Nội dung câu hỏi | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | radio | `Radio Button` Size=16 | `4885:10125` Radio | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | lua-chon | `Atom/Input` State=Filled, Kiểu=Chuẩn | `4885:10126` Lựa chọn | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | keo-tha | `Atom/Icon Button`  | `4885:10140` Kéo thả | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | add-new-bar-them-cau-hoi-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `4885:10167` Add New Bar · Thêm câu hỏi mới | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.12` | tab-giao-vien | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `4885:10173` Tab · Giáo viên | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.13` | tab-lop | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `4885:10174` Tab · Lớp | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.14` | tab-hoc-vien | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `4885:10175` Tab · Học viên | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.15` | stt | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `4885:10178` STT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.16` | trang-thai | `Atom/Badge`  | `5019:18488` Trạng thái | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.17` | loai-khao-sat | `Atom/Status` Size=S | `4885:39473` Loại khảo sát | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.18` | add-new-bar-them-cuoc-khao-sat | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `4885:10205` Add New Bar · Thêm cuộc khảo sát | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.19` | panel | `DD/Organism/Menu Panel` Type=Single | `5070:43530` Panel | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.20` | xem-truoc-cau-tra-loi | `Atom/Input` State=Disabled, Kiểu=Chuẩn | `4885:10357` Xem trước câu trả lời | — |  |  | Chỉ có trên Figma | Figma |
-
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

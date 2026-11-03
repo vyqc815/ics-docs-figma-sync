@@ -6,12 +6,7 @@ Menu **Thư viện** của role **CD** gồm 3 mục **Kiến thức**, **Kỹ n
 
 ## 1. UI
 
-### Trang 1: CD-KH-070160, CD-KH-070170 — Khung chung của Thư viện
-
-![Figma mới nhất · CD-KH-070160](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070160.png)
-
-![Figma mới nhất · CD-KH-070170](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070170.png)
-
+### Trang 1: Khung chung của Thư viện
 ![Trang 1](./images/01-kien-thuc-tu-vung.png)
 
 *Thư viện kiến thức, tab Từ vựng (trung tâm Đắc Nhân) — nhấn để xem ảnh gốc*
@@ -42,12 +37,7 @@ Menu **Thư viện** của role **CD** gồm 3 mục **Kiến thức**, **Kỹ n
 - Kiến thức, Kỹ năng: bấm dòng không mở form sửa; thao tác duy nhất là menu `⋮`. Bài tập: bấm dòng câu hỏi mở Chi
   tiết câu hỏi (xem khu vực Thư viện bài tập — Chi tiết câu hỏi).
 
-### Trang 2: CD-KH-070160, CD-KH-070170 — Trạng thái và xoá mục
-
-![Figma mới nhất · CD-KH-070160](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070160.png)
-
-![Figma mới nhất · CD-KH-070170](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070170.png)
-
+### Trang 2: Trạng thái và xoá mục
 ![Trang 2](./images/11-menu-nhap-chua-dung.png)
 
 *Menu ⋮ của mục Nháp, chưa dùng: Đổi trạng thái (Công khai / Vô hiệu) và Xoá — nhấn để xem ảnh gốc*
@@ -76,12 +66,7 @@ Menu **Thư viện** của role **CD** gồm 3 mục **Kiến thức**, **Kỹ n
 - Backend kiểm tra lại trạng thái và việc đang dùng khi nhận request đổi trạng thái hoặc xoá; request không hợp lệ bị từ chối kèm Toast `Cảnh Báo`.
 - Xoá mềm: mục không còn hiển thị, không tìm thấy ở Thư viện, S1, S6 và popup thêm từ thư viện.
 
-### Trang 3: CD-KH-070160, CD-KH-070170 — Thư viện kiến thức
-
-![Figma mới nhất · CD-KH-070160](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070160.png)
-
-![Figma mới nhất · CD-KH-070170](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070170.png)
-
+### Trang 3: Thư viện kiến thức
 ![Trang 3](./images/02-kien-thuc-ngu-phap.png)
 
 *Tab Ngữ pháp: cột Cấu trúc (kèm ví dụ), Ý nghĩa — nhấn để xem ảnh gốc*
@@ -171,12 +156,7 @@ Menu **Thư viện** của role **CD** gồm 3 mục **Kiến thức**, **Kỹ n
 - Thêm và sửa Bảng chữ làm tại S1; cấu trúc field theo [Kiến thức (S1)](../knowledge-s1/knowledge-s1.md) Phụ lục A.7.
 - Dạng lưới chỉ có ở Thư viện; S1 không có nút `Xem dạng bảng chữ`.
 
-### Trang 5: CD-KH-070160, CD-KH-070170 — Thư viện kỹ năng
-
-![Figma mới nhất · CD-KH-070160](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070160.png)
-
-![Figma mới nhất · CD-KH-070170](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070170.png)
-
+### Trang 5: Thư viện kỹ năng
 ![Trang 5](./images/15-ky-nang-nghe.png)
 
 *Thư viện kỹ năng, tab Nghe — nhấn để xem ảnh gốc*
@@ -212,12 +192,7 @@ Menu **Thư viện** của role **CD** gồm 3 mục **Kiến thức**, **Kỹ n
 - Kỹ năng theo source ICS cũ gồm Nghe, Đọc, Viết, Nói (`SkillLibraryType`).
 - Bài kỹ năng không có cột `Cụm`.
 
-### Trang 6: CD-KH-070160, CD-KH-070170 — Thư viện bài tập
-
-![Figma mới nhất · CD-KH-070160](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070160.png)
-
-![Figma mới nhất · CD-KH-070170](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070170.png)
-
+### Trang 6: Thư viện bài tập
 ![Trang 6](./images/19-bai-tap-ngan-hang-cau-hoi.png)
 
 *Thư viện bài tập, tab Ngân hàng câu hỏi (câu 07 đang mở câu hỏi con) — nhấn để xem ảnh gốc*

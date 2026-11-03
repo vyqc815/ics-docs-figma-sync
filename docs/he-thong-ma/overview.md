@@ -26,71 +26,29 @@ Requirement: `class_handler_support/overview/overview.md` — [Phụ trách lớ
 
 ### `A01` Trang 1: Thống kê tổng quan
 
-Frame: `CH-TC-010003` (tool đoán:CH-TC-010003) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:CH-TC-010003) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | trung-tam |  |  | — |  | `TC01`, `TC02` | Chưa khớp tự động | QC |
-| `A01.02` | loai-lop |  |  | — |  | `TC04` | Chưa khớp tự động | QC |
-| `A01.03` | khoa-hoc |  | `7015:12024` Khoá học & tiến độ | — |  | `TC04` | Khớp | QC |
-| `A01.04` | trang-thai-nut-hien-thi-gia-tri-dang-cho | `CLass Status`  | `7015:12037` CLass Status | — |  |  | Khớp | QC |
-| `A01.05` | thoi-gian-nut-hien-thi-gia-tri-dang-chon |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.06` | che-do-loc |  |  | — |  | `TC03` | Chưa khớp tự động | QC |
-| `A01.07` | ngay-bat-dau-du-kien-chinh-thuc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.08` | ngay-ket-thuc-du-kien-chinh-thuc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.09` | doanh-thu |  |  | — |  | `TC04`, `TC13` | Chưa khớp tự động | QC |
-| `A01.10` | so-kpi | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `7015:12015` Thẻ chỉ số · KPI | — |  | `TC04`, `TC13` | Khớp | QC |
-| `A01.11` | kpi-nhan-duoc |  |  | — |  | `TC04`, `TC13` | Chưa khớp tự động | QC |
-| `A01.12` | kpi-lop |  |  | — |  | `TC05`, `TC09` | Chưa khớp tự động | QC |
-| `A01.13` | so-lop | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `7015:12008` Thẻ chỉ số · Số lớp | — |  | `TC01`, `TC09` | Khớp | QC |
-| `A01.14` | di-hoc | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `7015:12010` Thẻ chỉ số · Đi học | — |  | `TC06`, `TC09` | Khớp | QC |
-| `A01.15` | btvn | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `7015:12011` Thẻ chỉ số · BTVN | — |  | `TC06`, `TC09` | Khớp | QC |
-| `A01.16` | len-ky | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `7015:12009` Thẻ chỉ số · Lên kỳ | — |  | `TC12`, `TC09` | Khớp | QC |
-| `A01.17` | badge-hang-tong |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.18` | hoan-thanh |  |  | — |  | `TC02`, `TC12` | Chưa khớp tự động | QC |
-| `A01.19` | chua-hoan-thanh-dang-hoc | `CLass Status`  | `7015:12037` CLass Status | — |  |  | Khớp | QC |
-
-### `F01` Header
-
-Frame: `CH-TC-010003` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | account | `ACCOUNT` Size=Default | `7015:13208` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F02` Sidebar · MENU - CLASS HANDLER
-
-Frame: `CH-TC-010003` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F02.01` | sidebar-menu-class-handler | `MENU - CLASS HANDLER`  | `7015:13210` Sidebar · MENU - CLASS HANDLER | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F03` (ngoài Body)
-
-Frame: `CH-TC-010003` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F03.01` | the-chi-so-dat-kpi | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `7015:12012` Thẻ chỉ số · Đạt KPI | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.02` | the-chi-so-luong-cung | `Thẻ chỉ số` Kiểu=Biểu đồ icon | `7015:12014` Thẻ chỉ số · Lương cứng | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.03` | progress-diem-danh-gia-a-f | `Progress/Điểm Đánh Giá (A-F)` Size=36x32 | `7015:12017` Progress/Điểm Đánh Giá (A-F) | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.04` | global-progress-bar | `Global Progress Bar`  | `7015:12046` Global Progress Bar | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.05` | percent-di-hoc | `PERCENT %`  | `7015:12048` PERCENT % · Đi học | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.06` | percent-btvn | `PERCENT %`  | `7015:12050` PERCENT % · BTVN | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.07` | percent | `PERCENT %`  | `7015:12054` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.08` | class-status | `CLass Status`  | `7015:12059` CLass Status | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.09` | filter-nam | `DD/Molecule/Trigger` Size=XS, State=Default | `7015:12217` Filter · Năm | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.10` | thang-t10-2026 | `Item tháng`  | `7015:12228` Tháng · T10/2026 | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.11` | thang-t9-2026 | `Item tháng`  | `7015:12229` Tháng · T9/2026 | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.12` | thang-t8-2026 | `Item tháng`  | `7015:12230` Tháng · T8/2026 | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.13` | thang-t7-2026 | `Item tháng`  | `7015:12231` Tháng · T7/2026 | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.14` | thang-t6-2026 | `Item tháng`  | `7015:12232` Tháng · T6/2026 | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.15` | thang-t5-2026 | `Item tháng`  | `7015:12233` Tháng · T5/2026 | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.16` | thang-t4-2026 | `Item tháng`  | `7015:12234` Tháng · T4/2026 | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.17` | thang-t3-2026 | `Item tháng`  | `7015:12235` Tháng · T3/2026 | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.18` | thang-t2-2026 | `Item tháng`  | `7015:12236` Tháng · T2/2026 | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.19` | thang-t1-2026 | `Item tháng`  | `7015:12237` Tháng · T1/2026 | — |  |  | Chỉ có trên Figma | Figma |
+| `A01.01` | trung-tam |  |  | — |  | `TC01`, `TC02` | Chưa sync | QC |
+| `A01.02` | loai-lop |  |  | — |  | `TC04` | Chưa sync | QC |
+| `A01.03` | khoa-hoc |  |  | — |  | `TC04` | Chưa sync | QC |
+| `A01.04` | trang-thai-nut-hien-thi-gia-tri-dang-cho |  |  | — |  |  | Chưa sync | QC |
+| `A01.05` | thoi-gian-nut-hien-thi-gia-tri-dang-chon |  |  | — |  |  | Chưa sync | QC |
+| `A01.06` | che-do-loc |  |  | — |  | `TC03` | Chưa sync | QC |
+| `A01.07` | ngay-bat-dau-du-kien-chinh-thuc |  |  | — |  |  | Chưa sync | QC |
+| `A01.08` | ngay-ket-thuc-du-kien-chinh-thuc |  |  | — |  |  | Chưa sync | QC |
+| `A01.09` | doanh-thu |  |  | — |  | `TC04`, `TC13` | Chưa sync | QC |
+| `A01.10` | so-kpi |  |  | — |  | `TC04`, `TC13` | Chưa sync | QC |
+| `A01.11` | kpi-nhan-duoc |  |  | — |  | `TC04`, `TC13` | Chưa sync | QC |
+| `A01.12` | kpi-lop |  |  | — |  | `TC05`, `TC09` | Chưa sync | QC |
+| `A01.13` | so-lop |  |  | — |  | `TC01`, `TC09` | Chưa sync | QC |
+| `A01.14` | di-hoc |  |  | — |  | `TC06`, `TC09` | Chưa sync | QC |
+| `A01.15` | btvn |  |  | — |  | `TC06`, `TC09` | Chưa sync | QC |
+| `A01.16` | len-ky |  |  | — |  | `TC12`, `TC09` | Chưa sync | QC |
+| `A01.17` | badge-hang-tong |  |  | — |  |  | Chưa sync | QC |
+| `A01.18` | hoan-thanh |  |  | — |  | `TC02`, `TC12` | Chưa sync | QC |
+| `A01.19` | chua-hoan-thanh-dang-hoc |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -137,7 +95,7 @@ Frame: `CH-TC-010003` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (11): `A01.01`, `A01.02`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.11`, `A01.12`, `A01.17`, `A01.18`
+- Chưa sync (19): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.14`, `A01.15`, `A01.16`, `A01.17`, `A01.18`, `A01.19`
 - Frame Figma chưa có requirement (1): `CH-TC-010001`
 - Phân loại cần design duyệt (1): `CH-TC-010001`
 - REQ/EX chưa có testcase (1): `REQ07`

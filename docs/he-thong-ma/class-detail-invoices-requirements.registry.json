@@ -81,20 +81,13 @@
    "nodeId": "2384:52460",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/lop-hoc/cai-dat/hoa-don",
    "link": "/lop-hoc/cai-dat/hoa-don",
    "dark": "ADM-LOP-040600-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "M-CDI2.A01",
-    "M-CDI2.A02",
-    "M-CDI2.A03",
-    "M-CDI2.A04",
-    "M-CDI2.A05",
-    "M-CDI2.F01"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -102,9 +95,7 @@
    "id": "M-CDI2.A01",
    "name": "tab-hoa-don-bang-hoa-don-da-dung",
    "title": "Tab Hóa đơn — Bảng Hóa đơn đã dùng",
-   "screens": [
-    "adm-lop-040600"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040600"
    ],
@@ -121,46 +112,11 @@
      "spec": "Nhãn `Hóa đơn`; làm nổi bật khi đang chọn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Tab",
-        "figmaId": "2389:60695",
-        "layer": "Atom/Side Tab",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       },
-       {
-        "term": "Hóa đơn",
-        "figmaId": "I2389:60700;2177:28936",
-        "layer": "Nhiệm vụ con",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Active",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "M-CDI2.A01.02",
@@ -169,29 +125,13 @@
      "spec": "`Hóa đơn đã dùng`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Hóa đơn đã dùng",
-        "figmaId": "2389:60801",
-        "layer": "Hoá đơn đã dùng",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDI2.TC01"
      ],
-     "missingTerms": [
-      "Tiêu đề"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "M-CDI2.A01.03",
@@ -200,27 +140,13 @@
      "spec": "Hiển thị tên/mô tả hóa đơn lấy từ dữ liệu hóa đơn; cho xuống dòng để đọc đầy đủ như ảnh.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Tên hóa đơn",
-        "figmaId": "2389:60724",
-        "layer": "Tên Hoá Đơn",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDI2.TC01"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "M-CDI2.A01.04",
@@ -234,10 +160,8 @@
      "testcases": [
       "M-CDI2.TC01"
      ],
-     "missingTerms": [
-      "Tên học viên"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "M-CDI2.A01.05",
@@ -251,10 +175,8 @@
      "testcases": [
       "M-CDI2.TC01"
      ],
-     "missingTerms": [
-      "Ngày tạo hóa đơn"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "M-CDI2.A01.06",
@@ -263,28 +185,14 @@
      "spec": "Tổng giá trị của hóa đơn, không phải số dư còn lại hoặc học phí của riêng lớp này.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Giá trị",
-        "figmaId": "2389:60726",
-        "layer": "Giá Trị",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDI2.TC01",
       "M-CDI2.TC02"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "M-CDI2.A01.07",
@@ -293,27 +201,13 @@
      "spec": "Tổng học phí được ghi nhận từ hóa đơn đó vào **lớp đang xem**.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Giá trị dùng trong lớp",
-        "figmaId": "2389:60728",
-        "layer": "Giá Trị Dùng Trong Lớp",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDI2.TC01"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "M-CDI2.A01.08",
@@ -325,20 +219,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Mỗi dòng"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDI2.A02",
    "name": "filter-hoc-vien-va-cot-ngay-tao-hoa-don",
    "title": "Filter Học viên và cột Ngày tạo hóa đơn",
-   "screens": [
-    "adm-lop-040600"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040600"
    ],
@@ -355,37 +246,11 @@
      "spec": "Cho phép chọn một hoặc nhiều học viên liên kết với hóa đơn trong lớp hiện tại bằng student_id; hiển thị tên để người dùng nhận biết, không so khớp chuỗi trong Tên hóa đơn. Khả năng tìm kiếm trong control chờ xác nhận.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Filter Học viên",
-        "figmaId": "2527:185007",
-        "layer": "Filter Học viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Filter Học viên",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Học viên",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A02.02",
@@ -397,10 +262,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Chọn nhiều học viên"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A02.03",
@@ -412,10 +275,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Không chọn học viên"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A02.04",
@@ -429,10 +290,8 @@
      "testcases": [
       "M-CDI2.TC23"
      ],
-     "missingTerms": [
-      "Cột Ngày tạo hóa đơn"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A02.05",
@@ -446,21 +305,17 @@
      "testcases": [
       "M-CDI2.TC26"
      ],
-     "missingTerms": [
-      "Kết quả rỗng",
-      "Không có hóa đơn phù hợp với bộ lọc."
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDI2.A03",
    "name": "cot-gia-tri-va-gia-tri-dung-trong-lop",
    "title": "Cột Giá trị và Giá trị dùng trong lớp",
-   "screens": [
-    "adm-lop-040600"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040600"
    ],
@@ -477,21 +332,7 @@
      "spec": "Lấy tổng giá trị hóa đơn từ nguồn quản lý hóa đơn. | Hóa đơn 1.000.000đ luôn hiển thị 1.000.000đ dù đã dùng một phần.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Giá trị",
-        "figmaId": "2389:60726",
-        "layer": "Giá Trị",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDI2.TC05",
@@ -500,7 +341,7 @@
       "M-CDI2.TC09"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A03.02",
@@ -509,27 +350,13 @@
      "spec": "Cộng các lần ghi nhận học phí thuộc cùng invoice_id và class_id đang xem. | Dùng 100.000đ rồi 200.000đ trong lớp A thì hiển thị 300.000đ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Giá trị dùng trong lớp",
-        "figmaId": "2389:60728",
-        "layer": "Giá Trị Dùng Trong Lớp",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDI2.TC05"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A03.03",
@@ -541,21 +368,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Định dạng",
-      "1.000.000 đ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDI2.A04",
    "name": "trang-thai-tai-rong-loi-va-dong-bo",
    "title": "Trạng thái tải, rỗng, lỗi và đồng bộ",
-   "screens": [
-    "adm-lop-040600"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040600"
    ],
@@ -575,10 +398,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Loading"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A04.02",
@@ -587,30 +408,14 @@
      "spec": "`Chưa có hóa đơn được sử dụng trong lớp này.`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Rỗng",
-        "figmaId": "2389:60728",
-        "layer": "Giá Trị Dùng Trong Lớp",
-        "confidence": "thap",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "M-CDI2.TC10",
       "M-CDI2.TC12"
      ],
-     "missingTerms": [
-      "Chưa có hóa đơn được sử dụng trong lớp này."
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A04.03",
@@ -622,11 +427,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Lỗi",
-      "Không thể tải thông tin hóa đơn và học phí. Vui lòng thử lại."
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A04.04",
@@ -638,20 +440,17 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Đồng bộ"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "M-CDI2.A05",
    "name": "load-more-danh-sach-hoa-don",
    "title": "Load-more danh sách hóa đơn",
-   "screens": [
-    "adm-lop-040600"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-LOP-040600"
    ],
@@ -671,10 +470,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Vùng cuộn"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A05.02",
@@ -686,10 +483,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Loading cuối bảng"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A05.03",
@@ -703,10 +498,8 @@
      "testcases": [
       "M-CDI2.TC17"
      ],
-     "missingTerms": [
-      "Lỗi tải thêm"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "M-CDI2.A05.04",
@@ -718,182 +511,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Hết dữ liệu"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "M-CDI2.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-lop-040600"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "M-CDI2.F01.01",
-     "name": "atom-side-tab",
-     "label": "Atom/Side Tab",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Atom/Side Tab",
-        "figmaId": "2389:60696",
-        "layer": "Atom/Side Tab",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Side Tab",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDI2.F01.02",
-     "name": "avatar",
-     "label": "Avatar",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Avatar",
-        "figmaId": "2527:184986",
-        "layer": "Avatar",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Avatar",
-        "component": "Avatar",
-        "variant": {
-         "Count": "+2",
-         "Name": "Nguyễn Văn An",
-         "Size": "28"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDI2.F01.03",
-     "name": "atom-chip",
-     "label": "Atom/Chip",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Atom/Chip",
-        "figmaId": "3561:76398",
-        "layer": "Atom/Chip",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Chip",
-        "component": "Atom/Chip",
-        "variant": {
-         "Icon": false,
-         "Name": "Trần Minh Khoa",
-         "Time": "4 ngày trước",
-         "Label": "Th2, 14.09.2026",
-         "Type": "TỔNG DOANH THU"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDI2.F01.04",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:229045",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "Quản lý / Lớp Học / Cài đặt"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "M-CDI2.F01.05",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-lop-040600": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "3497:51316",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

@@ -222,10 +222,7 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Bài bị gỡ khỏi cụm thì về `Chưa phân cụm`, vẫn còn trong khoá, không xuất hiện ở bài học nào.
 - Sau khi lưu, bài có thể biến mất khỏi bảng nếu đang lọc theo cụm vừa gỡ; Toast nêu rõ kết quả.
 
-### Trang 9: CD-KH-050140 — Nhập nhanh
-
-![Figma mới nhất · CD-KH-050140](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050140.png)
-
+### Trang 9: Nhập nhanh
 **Mô tả:**
 
 - Dòng cuối bảng tạo nhanh bài chỉ với tên, các field khác bổ sung sau ở drawer.

@@ -88,7 +88,7 @@
    "nodeId": "470:2142",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/chi-tiet-khoa-hoc/tong-quan",
    "link": "/chi-tiet-khoa-hoc/tong-quan",
    "dark": "CD-KH-020100-DK",
@@ -111,14 +111,7 @@
     "CD-KH-030347"
    ],
    "citedByRequirement": true,
-   "regions": [
-    "CM-OS.A01",
-    "CM-OS.A02",
-    "CM-OS.A03",
-    "CM-OS.A04",
-    "CM-OS.F01",
-    "CM-OS.F02"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -126,9 +119,7 @@
    "id": "CM-OS.A01",
    "name": "trang-1-tong-quan-s1",
    "title": "Trang 1: Tổng quan (S1)",
-   "screens": [
-    "cd-kh-020100"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-KH-020100"
    ],
@@ -145,33 +136,7 @@
      "spec": "Tổng số buổi học của khoá học | Ban đầu là **0**, do CD tự nhập tay",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Số buổi",
-        "figmaId": "2812:25145",
-        "layer": "Thẻ chỉ số",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có biểu tượng": true,
-         "Có đơn vị": true,
-         "Đơn vị": "đơn vị",
-         "Tiêu đề": "Nhãn",
-         "Có phần thêm": false,
-         "Số liệu": "18",
-         "Loại": "Số buổi",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-OS.TC02",
@@ -179,7 +144,7 @@
       "CM-OS.TC07"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A01.02",
@@ -188,39 +153,13 @@
      "spec": "Thời lượng chuẩn của 1 buổi học | Ban đầu là **0**, do CD tự nhập tay",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Thời gian mỗi buổi",
-        "figmaId": "2812:25154",
-        "layer": "Thẻ chỉ số",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có phần thêm": false,
-         "Có biểu tượng": true,
-         "Có đơn vị": true,
-         "Biểu tượng": "1053:2222",
-         "Đơn vị": "đơn vị",
-         "Số liệu": "0",
-         "Tiêu đề": "Nhãn",
-         "Loại": "Thời gian mỗi buổi",
-         "Trạng thái": "Đã nhập",
-         "Kết quả": "Thường",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-OS.TC02"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A01.03",
@@ -229,33 +168,7 @@
      "spec": "Tổng thời gian toàn khoá học | Tự tính = Số buổi × Thời gian mỗi buổi",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Tổng thời gian",
-        "figmaId": "2812:25164",
-        "layer": "Thẻ chỉ số",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có phần thêm": false,
-         "Có đơn vị": true,
-         "Tiêu đề": "Nhãn",
-         "Đơn vị": "đơn vị",
-         "Có biểu tượng": true,
-         "Số liệu": "0",
-         "Loại": "Tổng thời gian",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-OS.TC02",
@@ -264,7 +177,7 @@
       "CM-OS.TC07"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A01.04",
@@ -273,39 +186,13 @@
      "spec": "Tổng thời gian đã được phân bổ vào các nội dung bên dưới | Tự tính = tổng cột \"Tổng thời gian\" của bảng nội dung",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Thời gian thực tế",
-        "figmaId": "2812:25174",
-        "layer": "Thẻ chỉ số",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Có phần thêm": false,
-         "Có biểu tượng": true,
-         "Biểu tượng": "1053:2222",
-         "Đơn vị": "đơn vị",
-         "Số liệu": "0",
-         "Tiêu đề": "Nhãn",
-         "Có đơn vị": true,
-         "Loại": "Thời gian thực tế",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-OS.TC05"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A01.05",
@@ -314,50 +201,23 @@
      "spec": "Phần thời gian chưa phân bổ | Tự tính = Tổng thời gian − Thời gian thực tế",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Thời gian còn lại",
-        "figmaId": "2812:25184",
-        "layer": "Thẻ chỉ số",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có phần thêm": false,
-         "Có đơn vị": true,
-         "Có biểu tượng": true,
-         "Số liệu": "0",
-         "Đơn vị": "đơn vị",
-         "Tiêu đề": "Nhãn",
-         "Loại": "Thời gian còn lại",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-OS.TC05",
       "CM-OS.TC07"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "CM-OS.A02",
    "name": "khu-vuc-bang-noi-dung-buoi-hoc",
    "title": "Khu vực: Bảng \"Nội dung buổi học\"",
-   "screens": [
-    "cd-kh-020100"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-KH-020100"
    ],
@@ -374,25 +234,11 @@
      "spec": "❌ | Mã tự sinh, hiển thị dạng badge",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "ID",
-        "figmaId": "1448:6747",
-        "layer": "ID",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A02.02",
@@ -401,25 +247,11 @@
      "spec": "✅ | Tên nội dung, hiển thị in đậm",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Tên",
-        "figmaId": "1448:6749",
-        "layer": "Tên",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A02.03",
@@ -428,25 +260,11 @@
      "spec": "✅ | Hiển thị placeholder xám \"Nhập mô tả nội dung bài học\" khi chưa có dữ liệu",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Mô tả",
-        "figmaId": "1448:6751",
-        "layer": "Mô tả",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A02.04",
@@ -455,33 +273,7 @@
      "spec": "✅ | Hiển thị dạng badge số",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Số buổi",
-        "figmaId": "2812:25145",
-        "layer": "Thẻ chỉ số",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có biểu tượng": true,
-         "Có đơn vị": true,
-         "Đơn vị": "đơn vị",
-         "Tiêu đề": "Nhãn",
-         "Có phần thêm": false,
-         "Số liệu": "18",
-         "Loại": "Số buổi",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-OS.TC02",
@@ -489,7 +281,7 @@
       "CM-OS.TC07"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A02.05",
@@ -498,28 +290,14 @@
      "spec": "✅ | Badge định dạng giờ:phút:giây; là thời lượng của riêng nội dung đó trong 1 buổi, khác với \"Thời gian mỗi buổi\" ở card tổng quan",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Thời gian học",
-        "figmaId": "1448:6755",
-        "layer": "Thời gian học",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-OS.TC04",
       "CM-OS.TC07"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A02.06",
@@ -528,33 +306,7 @@
      "spec": "❌ | Tự tính = Số buổi × Thời gian học",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Tổng thời gian",
-        "figmaId": "2812:25164",
-        "layer": "Thẻ chỉ số",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Thẻ chỉ số",
-        "component": "Thẻ chỉ số",
-        "variant": {
-         "Biểu tượng": "1053:2222",
-         "Có phần thêm": false,
-         "Có đơn vị": true,
-         "Tiêu đề": "Nhãn",
-         "Đơn vị": "đơn vị",
-         "Có biểu tượng": true,
-         "Số liệu": "0",
-         "Loại": "Tổng thời gian",
-         "Trạng thái": "Mặc định",
-         "Kết quả": "Thường",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-OS.TC02",
@@ -563,7 +315,7 @@
       "CM-OS.TC07"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A02.07",
@@ -575,10 +327,8 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "%"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A02.08",
@@ -587,21 +337,7 @@
      "spec": "— | Gồm icon chuyển loại thao tác (Tự chọn/Giảng dạy) và icon thùng rác để xoá",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Thao tác",
-        "figmaId": "1448:6761",
-        "layer": "Thao tác",
-        "confidence": "cao",
-        "region": null,
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-OS.TC06",
@@ -609,17 +345,16 @@
       "CM-OS.TC10"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     }
-   ]
+   ],
+   "screensFromItems": []
   },
   {
    "id": "CM-OS.A03",
    "name": "khu-vuc-them-noi-dung-buoi-hoc-moi",
    "title": "Khu vực: Thêm nội dung buổi học mới",
-   "screens": [
-    "cd-kh-020100"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-KH-020100"
    ],
@@ -628,15 +363,14 @@
    "requirement": "course_management/overview-s1/overview-s1.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "CM-OS.A04",
    "name": "toast-phan-hoi-crud",
    "title": "Toast phản hồi CRUD",
-   "screens": [
-    "cd-kh-020100"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-KH-020100"
    ],
@@ -660,11 +394,8 @@
       "CM-OS.TTC02",
       "CM-OS.TTC04"
      ],
-     "missingTerms": [
-      "Thành công",
-      "Thành Công"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A04.02",
@@ -679,11 +410,8 @@
       "CM-OS.TC02",
       "CM-OS.TC04"
      ],
-     "missingTerms": [
-      "Thông tin",
-      "Thông Báo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A04.03",
@@ -698,11 +426,8 @@
       "CM-OS.TTC02",
       "CM-OS.TC07"
      ],
-     "missingTerms": [
-      "Cảnh báo",
-      "Cảnh Báo"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-OS.A04.04",
@@ -711,249 +436,14 @@
      "spec": "`Có Lỗi Xảy Ra` | Backend/network không hoàn tất thao tác.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Lỗi",
-        "figmaId": "I4915:255903;4901:220870;2245:87908",
-        "layer": "Label",
-        "confidence": "thap",
-        "region": null,
-        "owner": "Card Menu v2 (Test)",
-        "component": "Card Menu v2 (Test)",
-        "variant": {
-         "Icon": "2808:53558",
-         "Label": "lỗi dữ liệu",
-         "Type": "Menu phụ",
-         "State": "Default",
-         "Expanded": "No"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "Có Lỗi Xảy Ra"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "CM-OS.F01",
-   "name": "row",
-   "title": "Row",
-   "screens": [
-    "cd-kh-020100"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CM-OS.F01.01",
-     "name": "atom-id-badge",
-     "label": "Atom/ID Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Atom/ID Badge",
-        "figmaId": "2409:144771",
-        "layer": "Atom/ID Badge",
-        "confidence": "cao",
-        "region": "Row",
-        "owner": "Atom/ID Badge",
-        "component": "Atom/ID Badge",
-        "variant": {
-         "Type": "6-digit",
-         "Size": "26H",
-         "Item": "01"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-OS.F01.02",
-     "name": "atom-number-badge",
-     "label": "Atom/Number Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Atom/Number Badge",
-        "figmaId": "2812:25761",
-        "layer": "Atom/Number Badge",
-        "confidence": "cao",
-        "region": "Row",
-        "owner": "Atom/Number Badge",
-        "component": "Atom/Number Badge",
-        "variant": {
-         "Value": "1",
-         "Type": "Số buổi",
-         "Size": "Medium",
-         "State": "Active"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  },
-  {
-   "id": "CM-OS.F02",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "cd-kh-020100"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CM-OS.F02.01",
-     "name": "add-new-bar-them-noi-dung-khoa-hoc-moi",
-     "label": "Add New Bar · Thêm nội dung khoá học mới",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Add New Bar · Thêm nội dung khoá học mới",
-        "figmaId": "2812:32946",
-        "layer": "Add New Bar · Thêm nội dung khoá học mới",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Add New Bar · Thêm nội dung khoá học mới",
-        "component": "Molecule/Add New Bar",
-        "variant": {
-         "Icon trái": false,
-         "Nút": "1075:1478",
-         "Placeholder": "Thêm nội dung buổi học",
-         "Type": "Box",
-         "Size": "M",
-         "State": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-OS.F02.02",
-     "name": "sidebar-menu-cd",
-     "label": "Sidebar · MENU - CD",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Sidebar · MENU - CD",
-        "figmaId": "4915:255903",
-        "layer": "Sidebar · MENU - CD",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - CD",
-        "component": "MENU - CD",
-        "variant": {
-         "Trang": "Khoá học / Quy trình / Tổng quan (S2)"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-OS.F02.03",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "2812:32932",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "CD",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-OS.F02.04",
-     "name": "component-2",
-     "label": "Component 2",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-kh-020100": [
-       {
-        "term": "Component 2",
-        "figmaId": "4273:160623",
-        "layer": "Component 2",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Component 2",
-        "component": "Switch Center",
-        "variant": {
-         "Property 1": "Đắc Nhân"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

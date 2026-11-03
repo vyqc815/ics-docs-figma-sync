@@ -27,23 +27,6 @@
 
 ## 4. Khu vực và item
 
-### `F01` (ngoài Body)
-
-Frame: `CD-KH-020201`, `CD-KH-020240`, `CD-KH-020260` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | trang-thai-so-buoi | `Atom/Status` Size=S | `6518:337192` Trạng thái số buổi | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Default | `6518:337271` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | atom-chip-thoi-gian | `Atom/Chip` Type=Thời gian · 90–100% | `6518:337273` Atom/Chip · Thời gian | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | input-ten-bai-hoc | `Atom/Input` State=Sửa trực tiếp, Kiểu=S | `6518:337362` Input · Tên bài học | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | input-mo-ta | `Atom/Input` State=Text, Kiểu=S | `6518:337363` Input · Mô tả | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | molecule-add-new-bar-them-bai-hoc | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `6518:338077` Molecule/Add New Bar · Thêm bài học | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | sidebar-menu-cd | `MENU - CD`  | `6518:338197` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | account | `ACCOUNT` Size=Default | `6518:338246` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | component-2 | `Switch Center`  | `6518:338247` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | toast-da-them-bai-hoc | `Atom/Toast` Type=Success | `6518:356213` Toast · Đã thêm bài học | — |  |  | Chỉ có trên Figma | Figma |
-
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

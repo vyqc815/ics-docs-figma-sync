@@ -12,10 +12,7 @@
 - Danh sách lớp/Học phí **phân trang từng trang**; Ghi chú/Quy trình học viên/Log **load more**. Số dòng/lượt theo cấu hình chung; không lấy số mẫu trên ảnh làm quy định riêng. Thống kê/tổng tiến độ tính toàn bộ dữ liệu của học viên, không giới hạn trong trang/lượt đã tải.
 - Chỉ tải tab trong phạm vi quyền; loading, rỗng và lỗi phân biệt rõ. Khi đổi học viên hoặc đổi điều kiện, response cũ không được ghi đè dữ liệu mới.
 
-### Trang 2: ADM-HV-020100 — Chi tiết học viên — Thông tin cá nhân
-
-![Figma mới nhất · ADM-HV-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-020100.png)
-
+### Trang 2: Chi tiết học viên — Thông tin cá nhân
 ![Trang 2](./images/26-student-detail-personal.png)
 
 *Chi tiết học viên — tab Thông tin cá nhân — nhấn để xem ảnh gốc*
@@ -120,10 +117,7 @@
 - Chỉ nội dung nguồn Công khai được thêm; Nháp/Vô hiệu không xuất hiện trong nguồn chọn mới. Quy trình đã gắn chuyển Vô hiệu vẫn hiện nội dung/Result cũ nhưng chỉ xem; khi Công khai lại áp dụng quyền cập nhật tương ứng.
 - **Admin và các user được gán cho học viên** được Thêm quy trình và cập nhật Result trong phạm vi học viên đó. User được gán là Người phụ trách hoặc Người theo dõi theo quyền học viên đã chốt; không phụ thuộc người đã thêm item. Backend kiểm tra quyền này cùng trạng thái nguồn lúc lưu; không dùng quan hệ thành viên lớp thay cho quan hệ với học viên.
 
-### Trang 8: ADM-HV-020610 — Chi tiết học viên — Ghi chú
-
-![Figma mới nhất · ADM-HV-020610](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-HV-020610.png)
-
+### Trang 8: Chi tiết học viên — Ghi chú
 ![Trang 8](./images/31-student-detail-notes.png)
 
 *Ghi chú — danh sách card, bộ lọc và bình luận*

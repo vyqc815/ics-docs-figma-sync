@@ -24,10 +24,7 @@ Trạng thái: Bản nháp đối chiếu Figma và source cũ; các mục Cần
 - `A01.09` **Tooltip tổng lương giáo viên**: Yêu cầu / kết quả đối chiếu: Figma thể hiện KPI, OT và số buổi; giá trị theo đúng giáo viên/kỳ đang xem.
 - `A01.10` **Tooltip tổng lương lớp**: Yêu cầu / kết quả đối chiếu: Figma thể hiện KPI và OT của lớp; không lấy dữ liệu lớp khác.
 
-### Trang 2: ADM-LGV-010000 — Tab Lớp học
-
-![Figma mới nhất · ADM-LGV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LGV-010000.png)
-
+### Trang 2: Tab Lớp học
 - `A02.01` **Lớp**: Icon trạng thái và mã lớp.
 - `A02.02` **Tiến độ**: Buổi hoàn thành / tổng buổi, dùng công thức tiến độ lớp chung.
 - `A02.03` **Sĩ số**: Theo thành phần sĩ số lớp dùng chung; Figma có mẫu 7/14(2), không tự coi đây là sĩ số điểm danh một buổi.
@@ -36,10 +33,7 @@ Trạng thái: Bản nháp đối chiếu Figma và source cũ; các mục Cần
 - `A02.06` **KPI / OT**: Tổng khoản thực tế Đã xác nhận của đúng giáo viên/lớp/loại trong kỳ Ngày ghi nhận.
 - `A02.07` **Tổng lương**: Lương buổi + KPI + OT của lớp; khác bảng lớp bên phải màn Giáo viên đã chốt chỉ tiền buổi. Chỉ liệt kê lớp có buổi Hoàn thành hoặc KPI/OT Đã xác nhận trong kỳ; lớp không có phát sinh hợp lệ bị loại.
 
-### Trang 3: ADM-LGV-010000 — Các tab Buổi dạy / KPI / OT
-
-![Figma mới nhất · ADM-LGV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LGV-010000.png)
-
+### Trang 3: Các tab Buổi dạy / KPI / OT
 **Đã chốt:** dùng cùng cấu trúc cột, định dạng và cách hiển thị với [Lịch sử & lương — Giáo viên](../../teacher_role/history_and_salary/history_and_salary_requirements.md). Đây là quyết định tái sử dụng cấu trúc đã chốt vì section Figma Admin đã đọc chưa có frame riêng cho ba tab; không coi ảnh giao diện Giáo viên là ảnh Admin.
 
 - `A03.01` **Buổi dạy**: Cột và cách hiển thị: LỚP, TÊN BUỔI HỌC, SĨ SỐ, THỜI GIAN, LƯƠNG BUỔI DẠY. Icon trạng thái/mã lớp, tên bài/mô tả, sĩ số điểm danh của buổi theo quy tắc dùng chung. Thời gian `dd.MM.yyyy` và `HH:mm`, theo ngày tính lương; tiền buổi không lịch là 0 kèm cảnh báo. Thời gian giảm dần.
@@ -53,20 +47,14 @@ Trạng thái: Bản nháp đối chiếu Figma và source cũ; các mục Cần
 - Khi không có dữ liệu, Buổi dạy hiển thị `Không có buổi dạy nào`; KPI/OT dùng trạng thái rỗng cùng màn Giáo viên. Lỗi có Thử lại, không giả thành bảng rỗng hoặc tổng 0.
 - Điều kiện liệt kê giáo viên/lớp vẫn theo phát sinh hợp lệ đã chốt; có khoản Mới/Đã hủy trong bảng không tự làm giáo viên/lớp chưa có phát sinh hợp lệ xuất hiện trong danh sách.
 
-### Trang 4: ADM-LGV-010000 — Chọn giáo viên để Export
-
-![Figma mới nhất · ADM-LGV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LGV-010000.png)
-
+### Trang 4: Chọn giáo viên để Export
 - Tập chọn lưu bằng teacher_id, độc lập với giáo viên/lớp đang xem và thứ tự dòng.
 - Checkbox đầu danh sách chỉ chọn/bỏ chọn trang hiện tại; không tác động lựa chọn ở trang khác. Khi một phần giáo viên trên trang được tick, hiển thị trạng thái chọn một phần.
 - Chuyển trang giữ lựa chọn. Đổi khoảng thời gian hoặc điều kiện tìm kiếm có hiệu lực thì xóa tập chọn và đưa số lượng Export về 0; response cũ không khôi phục tập chọn.
 - Export (n) đếm toàn bộ giáo viên đã chọn qua các trang, không chỉ trang hiện tại. Chưa chọn ai thì nút bị vô hiệu hóa; không tự xuất giáo viên đang xem.
 - File xuất đầy đủ lớp/khoản hợp lệ trong kỳ của những giáo viên đã chọn, không giới hạn bởi lớp đang lọc xem tại chỗ. Backend kiểm tra quyền và phạm vi dữ liệu trước khi xuất.
 
-### Trang 5: ADM-LGV-010000 — File Excel tổng hợp lương giáo viên
-
-![Figma mới nhất · ADM-LGV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LGV-010000.png)
-
+### Trang 5: File Excel tổng hợp lương giáo viên
 ![Mẫu bảng tổng hợp lương giáo viên do người dùng cung cấp](./images/teacher-salary-excel-reference.png)
 
 - **Đã chốt theo mẫu người dùng:** xuất `.xlsx`, bảng tổng hợp mỗi giáo viên một dòng, không chia theo lớp. Mẫu này thay phương án nhiều sheet chi tiết đã đề xuất; chưa yêu cầu thêm sheet Buổi dạy/KPI/OT.

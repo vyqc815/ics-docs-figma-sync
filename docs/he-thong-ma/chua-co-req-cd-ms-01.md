@@ -19,20 +19,6 @@
 
 ## 4. Khu vực và item
 
-### `F01` (ngoài Body)
-
-Frame: `CD-MS-010000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | mouse-click |  | `2706:43133` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | atom-icon-button | `Atom/Icon Button`  | `2706:43129` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | molecule-add-new-bar | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2706:26008` Molecule/Add New Bar | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | add-new-bar-them-moi | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `2702:48216` Add New Bar · Thêm mới | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | sidebar-menu-cd | `MENU - CD`  | `4915:256669` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | account | `ACCOUNT` Size=Default | `2860:4697` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | component-2 | `Switch Center`  | `4273:160773` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
-
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

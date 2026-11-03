@@ -34,183 +34,162 @@ Requirement: `management_requirement/class_management/class_management_requireme
 
 ### `A01` Màn hình Danh sách lớp
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Thẻ thống kê tổng quan
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | doanh-thu | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75289` Thẻ chỉ số | — |  | `TC10` | Khớp | QC |
-| `A02.02` | tong-luong-gv | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75300` Thẻ chỉ số | — |  | `TC11` | Khớp | QC |
-| `A02.03` | tong-chi-ptl |  |  | — |  | `TC12` | Chưa khớp tự động | QC |
-| `A02.04` | so-lop | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75322` Thẻ chỉ số | — |  | `TC16` | Khớp | QC |
-| `A02.05` | tong-si-so | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75333` Thẻ chỉ số | — |  | `TC13`, `TC16` | Khớp | QC |
-| `A02.06` | ty-le-btvn | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75344` Thẻ chỉ số | — |  | `TC14` | Khớp | QC |
-| `A02.07` | di-hoc | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75355` Thẻ chỉ số | — |  | `TC15` | Khớp | QC |
-| `A02.08` | si-so-tb | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75356` Thẻ chỉ số | — |  | `TC16` | Khớp | QC |
-| `A02.09` | doanh-thu | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75289` Thẻ chỉ số | — |  | `TC10` | Khớp | QC |
-| `A02.10` | tong-luong-gv | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75300` Thẻ chỉ số | — |  | `TC11` | Khớp | QC |
-| `A02.11` | tong-chi-ptl |  |  | — |  | `TC12` | Chưa khớp tự động | QC |
-| `A02.12` | so-lop | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75322` Thẻ chỉ số | — |  | `TC16` | Khớp | QC |
-| `A02.13` | tong-si-so | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75333` Thẻ chỉ số | — |  | `TC13`, `TC16` | Khớp | QC |
-| `A02.14` | ty-le-btvn | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75344` Thẻ chỉ số | — |  | `TC14` | Khớp | QC |
-| `A02.15` | di-hoc | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75355` Thẻ chỉ số | — |  | `TC15` | Khớp | QC |
-| `A02.16` | si-so-tb | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75356` Thẻ chỉ số | — |  | `TC16` | Khớp | QC |
-| `A02.17` | dang-hoc | `CLass Status`  | `2623:12721` CLass Status | — |  |  | Khớp | QC |
-| `A02.18` | hoan-thanh | `CLass Status`  | `2623:12773` CLass Status | — |  | `TC11`, `TC13` | Khớp | QC |
-| `A02.19` | du-thinh |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.20` | roi-lop |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.21` | nghi-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.22` | chi-xem |  |  | — |  | `TC13` | Chưa khớp tự động | QC |
-| `A02.23` | xoa |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.24` | hoc-phi-da-dong |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.25` | luong-gv-cua-buoi-da-hoan-thanh |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.26` | kpi-handler-da-xac-nhan |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.27` | si-so | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `I3065:75333;3108:125046` Tiêu đề | — |  | `TC13`, `TC16` | Khớp | QC |
-| `A02.28` | ty-le-btvn-cua-lop |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.29` | ty-le-di-hoc-cua-lop |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.01` | doanh-thu |  |  | — |  | `TC10` | Chưa sync | QC |
+| `A02.02` | tong-luong-gv |  |  | — |  | `TC11` | Chưa sync | QC |
+| `A02.03` | tong-chi-ptl |  |  | — |  | `TC12` | Chưa sync | QC |
+| `A02.04` | so-lop |  |  | — |  | `TC16` | Chưa sync | QC |
+| `A02.05` | tong-si-so |  |  | — |  | `TC13`, `TC16` | Chưa sync | QC |
+| `A02.06` | ty-le-btvn |  |  | — |  | `TC14` | Chưa sync | QC |
+| `A02.07` | di-hoc |  |  | — |  | `TC15` | Chưa sync | QC |
+| `A02.08` | si-so-tb |  |  | — |  | `TC16` | Chưa sync | QC |
+| `A02.09` | doanh-thu |  |  | — |  | `TC10` | Chưa sync | QC |
+| `A02.10` | tong-luong-gv |  |  | — |  | `TC11` | Chưa sync | QC |
+| `A02.11` | tong-chi-ptl |  |  | — |  | `TC12` | Chưa sync | QC |
+| `A02.12` | so-lop |  |  | — |  | `TC16` | Chưa sync | QC |
+| `A02.13` | tong-si-so |  |  | — |  | `TC13`, `TC16` | Chưa sync | QC |
+| `A02.14` | ty-le-btvn |  |  | — |  | `TC14` | Chưa sync | QC |
+| `A02.15` | di-hoc |  |  | — |  | `TC15` | Chưa sync | QC |
+| `A02.16` | si-so-tb |  |  | — |  | `TC16` | Chưa sync | QC |
+| `A02.17` | dang-hoc |  |  | — |  |  | Chưa sync | QC |
+| `A02.18` | hoan-thanh |  |  | — |  | `TC11`, `TC13` | Chưa sync | QC |
+| `A02.19` | du-thinh |  |  | — |  |  | Chưa sync | QC |
+| `A02.20` | roi-lop |  |  | — |  |  | Chưa sync | QC |
+| `A02.21` | nghi-hoc |  |  | — |  |  | Chưa sync | QC |
+| `A02.22` | chi-xem |  |  | — |  | `TC13` | Chưa sync | QC |
+| `A02.23` | xoa |  |  | — |  |  | Chưa sync | QC |
+| `A02.24` | hoc-phi-da-dong |  |  | — |  |  | Chưa sync | QC |
+| `A02.25` | luong-gv-cua-buoi-da-hoan-thanh |  |  | — |  |  | Chưa sync | QC |
+| `A02.26` | kpi-handler-da-xac-nhan |  |  | — |  |  | Chưa sync | QC |
+| `A02.27` | si-so |  |  | — |  | `TC13`, `TC16` | Chưa sync | QC |
+| `A02.28` | ty-le-btvn-cua-lop |  |  | — |  |  | Chưa sync | QC |
+| `A02.29` | ty-le-di-hoc-cua-lop |  |  | — |  |  | Chưa sync | QC |
 
 ### `A03` Trạng thái lớp
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | dang-hoc | `CLass Status`  | `2623:12721` CLass Status | — |  | `TC17` | Khớp | QC |
-| `A03.02` | hoan-thanh | `CLass Status`  | `2623:12773` CLass Status | — |  | `TC17` | Khớp | QC |
-| `A03.03` | huy | `Atom/Chip` Type=Last Update | `I2623:12767;1590:873` Trần Minh Khoa | — |  |  | Khớp | QC |
-| `A03.04` | khai-giang | `CLass Status`  | `2623:12987` CLass Status | — |  | `TC17` | Khớp | QC |
-| `A03.05` | moi-tao | `CLass Status`  | `2623:12828` CLass Status | — |  | `TC17` | Khớp | QC |
-| `A03.06` | tam-dung |  |  | — |  | `TC17` | Chưa khớp tự động | QC |
-| `A03.07` | xoa |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.08` | trai-nghiem | `CLass Status`  | `2623:13038` CLass Status | — |  | `TC17` | Khớp | QC |
+| `A03.01` | dang-hoc |  |  | — |  | `TC17` | Chưa sync | QC |
+| `A03.02` | hoan-thanh |  |  | — |  | `TC17` | Chưa sync | QC |
+| `A03.03` | huy |  |  | — |  |  | Chưa sync | QC |
+| `A03.04` | khai-giang |  |  | — |  | `TC17` | Chưa sync | QC |
+| `A03.05` | moi-tao |  |  | — |  | `TC17` | Chưa sync | QC |
+| `A03.06` | tam-dung |  |  | — |  | `TC17` | Chưa sync | QC |
+| `A03.07` | xoa |  |  | — |  |  | Chưa sync | QC |
+| `A03.08` | trai-nghiem |  |  | — |  | `TC17` | Chưa sync | QC |
 
 ### `A04` Thông tin hiển thị trên mỗi lớp
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | ma-lop-hoc | `Atom/Tag Solid` Size=16H; `DD/Molecule/Menu Item` Type=Checkbox, State=Disabled, Size=M | `I3634:78208;2015:31501;3634:78294` Mã lớp học; `2623:12725` Atom/Tag Solid | — |  | `TC21` | Khớp | QC |
-| `A04.02` | danh-gia | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M; `Progress/Điểm Đánh Giá (A-F)` Size=36x32 | `I3634:78208;2015:31501;3634:78311` Đánh giá; `2623:12729` Progress/Điểm Đánh Giá (A-F) | — |  |  | Khớp | QC |
-| `A04.03` | di-hoc | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75355` Thẻ chỉ số | — |  |  | Khớp | QC |
-| `A04.04` | btvn | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78345` BTVN | — |  | `TC24` | Khớp | QC |
-| `A04.05` | si-so-kpi | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78362` Sĩ số KPI | — |  |  | Khớp | QC |
-| `A04.06` | khoa-hoc-tien-do | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78379` Khoá học & tiến độ | — |  |  | Khớp | QC |
-| `A04.07` | gv | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78396` GV | — |  |  | Khớp | QC |
-| `A04.08` | ptl | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78413` PTL | — |  |  | Khớp | QC |
-| `A04.09` | diem-so-bai-kt |  |  | — |  | `TC24` | Chưa khớp tự động | QC |
-| `A04.10` | diem-btvn | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78464` Điểm BTVN | — |  |  | Khớp | QC |
-| `A04.11` | lich-day | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78481` Lịch dạy | — |  | `TC27` | Khớp | QC |
-| `A04.12` | ghi-chu-sp | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78498` Ghi chú SP | — |  | `TC29` | Khớp | QC |
-| `A04.13` | ghi-chu-sale | `DD/Molecule/Menu Item` Type=Checkbox, State=Default, Size=M | `I3634:78208;2015:31501;3634:78514` Ghi chú Sale | — |  |  | Khớp | QC |
-| `A04.14` | ngay-bat-dau | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M; `DD/Molecule/Trigger` Size=XS, State=Default | `I3634:78208;2015:31501;3634:78531` Ngày bắt đầu; `2623:12587` Dropdown | — |  | `TC30` | Khớp | QC |
-| `A04.15` | buoi-gan-nhat | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78548` Buổi gần nhất; `2623:12864` Chưa học | — |  | `TC31` | Khớp | QC |
-| `A04.16` | doanh-thu | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75289` Thẻ chỉ số | — |  | `TC26` | Khớp | QC |
-| `A04.17` | chi-phi-gv-so-buoi-day |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A04.18` | chi-phi-ptl | `DD/Molecule/Menu Item` Type=Checkbox, State=Default, Size=M | `I3634:78208;2015:31501;3634:78615` Chi phí PTL | — |  |  | Khớp | QC |
-| `A04.19` | sua-btvn | `DD/Molecule/Menu Item` Type=Checkbox, State=Default, Size=M | `I3634:78208;2015:31501;3634:78631` Sửa BTVN | — |  | `TC24` | Khớp | QC |
-| `A04.20` | tieu-chuan | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78648` Tiêu chuẩn | — |  |  | Khớp | QC |
-| `A04.21` | quy-trinh | `Card Menu v2 (Test)` Type=Chính, State=Default | `I4915:223538;4915:205578` Card Menu v2 (Test) | — |  | `TC25` | Khớp | QC |
-| `A04.22` | follow | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78682` Follow | — |  | `TC28` | Khớp | QC |
-| `A04.23` | ket-qua | `DD/Molecule/Menu Item` Type=Checkbox, State=Selected, Size=M | `I3634:78208;2015:31501;3634:78699` Kết quả | — |  | `TC23`, `TC24` | Khớp | QC |
-| `A04.24` | tag-hv |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.01` | ma-lop-hoc |  |  | — |  | `TC21` | Chưa sync | QC |
+| `A04.02` | danh-gia |  |  | — |  |  | Chưa sync | QC |
+| `A04.03` | di-hoc |  |  | — |  |  | Chưa sync | QC |
+| `A04.04` | btvn |  |  | — |  | `TC24` | Chưa sync | QC |
+| `A04.05` | si-so-kpi |  |  | — |  |  | Chưa sync | QC |
+| `A04.06` | khoa-hoc-tien-do |  |  | — |  |  | Chưa sync | QC |
+| `A04.07` | gv |  |  | — |  |  | Chưa sync | QC |
+| `A04.08` | ptl |  |  | — |  |  | Chưa sync | QC |
+| `A04.09` | diem-so-bai-kt |  |  | — |  | `TC24` | Chưa sync | QC |
+| `A04.10` | diem-btvn |  |  | — |  |  | Chưa sync | QC |
+| `A04.11` | lich-day |  |  | — |  | `TC27` | Chưa sync | QC |
+| `A04.12` | ghi-chu-sp |  |  | — |  | `TC29` | Chưa sync | QC |
+| `A04.13` | ghi-chu-sale |  |  | — |  |  | Chưa sync | QC |
+| `A04.14` | ngay-bat-dau |  |  | — |  | `TC30` | Chưa sync | QC |
+| `A04.15` | buoi-gan-nhat |  |  | — |  | `TC31` | Chưa sync | QC |
+| `A04.16` | doanh-thu |  |  | — |  | `TC26` | Chưa sync | QC |
+| `A04.17` | chi-phi-gv-so-buoi-day |  |  | — |  |  | Chưa sync | QC |
+| `A04.18` | chi-phi-ptl |  |  | — |  |  | Chưa sync | QC |
+| `A04.19` | sua-btvn |  |  | — |  | `TC24` | Chưa sync | QC |
+| `A04.20` | tieu-chuan |  |  | — |  |  | Chưa sync | QC |
+| `A04.21` | quy-trinh |  |  | — |  | `TC25` | Chưa sync | QC |
+| `A04.22` | follow |  |  | — |  | `TC28` | Chưa sync | QC |
+| `A04.23` | ket-qua |  |  | — |  | `TC23`, `TC24` | Chưa sync | QC |
+| `A04.24` | tag-hv |  |  | — |  |  | Chưa sync | QC |
 
 ### `A05` Bộ lọc và Tag học viên
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | trung-tam | `DD/Molecule/Trigger` Size=XS, State=Default | `4713:129348` Dropdown · Trung tâm | — |  |  | Khớp | QC |
-| `A05.02` | loai-lop | `DD/Molecule/Trigger` Size=XS, State=Default | `2623:12580` Dropdown | — |  | `TC32` | Khớp | QC |
-| `A05.03` | trang-thai | `DD/Molecule/Trigger` Size=XS, State=Default | `2623:12581` Dropdown | — |  | `TC34`, `TC42` | Khớp | QC |
-| `A05.04` | trinh-do | `DD/Molecule/Trigger` Size=XS, State=Default | `2623:12582` Dropdown | — |  |  | Khớp | QC |
-| `A05.05` | hoc-ky | `DD/Molecule/Trigger` Size=XS, State=Default | `2623:12583` Dropdown | — |  |  | Khớp | QC |
-| `A05.06` | tag | `DD/Molecule/Trigger` Size=XS, State=Default | `2623:12584` Dropdown | — |  |  | Khớp | QC |
-| `A05.07` | phu-trach | `DD/Molecule/Trigger` Size=XS, State=Default | `2623:12585` Dropdown | — |  |  | Khớp | QC |
-| `A05.08` | cskh | `DD/Molecule/Trigger` Size=XS, State=Default | `2623:12586` Dropdown | — |  |  | Khớp | QC |
-| `A05.09` | bat-dau | `DD/Molecule/Trigger` Size=XS, State=Default | `2623:12587` Dropdown | — |  | `TC35`, `TC36` | Khớp | QC |
-| `A05.10` | ket-thuc | `DD/Molecule/Trigger` Size=XS, State=Default | `2623:12588` Dropdown | — |  | `TC35`, `TC36` | Khớp | QC |
-| `A05.11` | tag-hv | `Action Icon` Size=18 | `I3634:78208;2015:31501;3634:78293` Kéo sắp xếp | — |  | `TC37`, `TC38`, `TC39`, `TC40` | Khớp | QC |
-| `A05.12` | toi-han |  |  | — |  | `TC36` | Chưa khớp tự động | QC |
-| `A05.13` | hom-nay | `ICON MENU`  | `I4915:223538;4915:205575;1988:19329` Icon | — |  | `TC36` | Khớp | QC |
-| `A05.14` | hom-qua | `Atom/Chip` Type=Last Update | `2623:12755` Atom/Chip | — |  |  | Khớp | QC |
-| `A05.15` | hom-nay-va-hom-qua |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.16` | tuan-nay |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.17` | tuan-truoc | `Atom/Chip` Type=Last Update | `I2623:12980;1590:872` 4 ngày trước | — |  |  | Khớp | QC |
-| `A05.18` | thang-nay |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.19` | thang-truoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.20` | 3-thang-truoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.21` | nam-nay |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.22` | nam-truoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.23` | tuy-chon |  |  | — |  | `TC36` | Chưa khớp tự động | QC |
+| `A05.01` | trung-tam |  |  | — |  |  | Chưa sync | QC |
+| `A05.02` | loai-lop |  |  | — |  | `TC32` | Chưa sync | QC |
+| `A05.03` | trang-thai |  |  | — |  | `TC34`, `TC42` | Chưa sync | QC |
+| `A05.04` | trinh-do |  |  | — |  |  | Chưa sync | QC |
+| `A05.05` | hoc-ky |  |  | — |  |  | Chưa sync | QC |
+| `A05.06` | tag |  |  | — |  |  | Chưa sync | QC |
+| `A05.07` | phu-trach |  |  | — |  |  | Chưa sync | QC |
+| `A05.08` | cskh |  |  | — |  |  | Chưa sync | QC |
+| `A05.09` | bat-dau |  |  | — |  | `TC35`, `TC36` | Chưa sync | QC |
+| `A05.10` | ket-thuc |  |  | — |  | `TC35`, `TC36` | Chưa sync | QC |
+| `A05.11` | tag-hv |  |  | — |  | `TC37`, `TC38`, `TC39`, `TC40` | Chưa sync | QC |
+| `A05.12` | toi-han |  |  | — |  | `TC36` | Chưa sync | QC |
+| `A05.13` | hom-nay |  |  | — |  | `TC36` | Chưa sync | QC |
+| `A05.14` | hom-qua |  |  | — |  |  | Chưa sync | QC |
+| `A05.15` | hom-nay-va-hom-qua |  |  | — |  |  | Chưa sync | QC |
+| `A05.16` | tuan-nay |  |  | — |  |  | Chưa sync | QC |
+| `A05.17` | tuan-truoc |  |  | — |  |  | Chưa sync | QC |
+| `A05.18` | thang-nay |  |  | — |  |  | Chưa sync | QC |
+| `A05.19` | thang-truoc |  |  | — |  |  | Chưa sync | QC |
+| `A05.20` | 3-thang-truoc |  |  | — |  |  | Chưa sync | QC |
+| `A05.21` | nam-nay |  |  | — |  |  | Chưa sync | QC |
+| `A05.22` | nam-truoc |  |  | — |  |  | Chưa sync | QC |
+| `A05.23` | tuy-chon |  |  | — |  | `TC36` | Chưa sync | QC |
 
 ### `A06` Menu thao tác tại Mã lớp
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A07` Popup Thêm tag cho lớp
 
-Frame: `ADM-LOP-010010`, `ADM-LOP-010040` (tool đoán:ADM-LOP-010010, ADM-LOP-010040) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010010, ADM-LOP-010040) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A08` Popup Thêm lịch hẹn cho lớp
 
-Frame: `ADM-LOP-010050` (tool đoán:ADM-LOP-010020, ADM-LOP-010050) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010020, ADM-LOP-010050) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | noi-dung | `Atom/Label`  | `1991:23454` Atom/Label | — |  | `TC51`, `TC54` | Khớp | QC |
-| `A08.02` | thoi-gian | `Atom/Label`  | `1991:23458` Atom/Label | — |  | `TC51`, `TC54` | Khớp | QC |
-| `A08.03` | do-uu-tien | `Atom/Label`  | `1991:23465` Atom/Label | — |  | `TC51` | Khớp | QC |
-| `A08.04` | nguoi-phu-trach | `Atom/Label`  | `1991:23470` Atom/Label | — |  | `TC51`, `TC55` | Khớp | QC |
-| `A08.05` | theo-doi | `Atom/Label`  | `1991:23547` Atom/Label | — |  | `TC51`, `TC53`, `TC54`, `TC55` | Khớp | QC |
-| `A08.06` | ghi-chu | `Atom/Label`  | `1991:23557` Atom/Label | — |  | `TC51`, `TC54` | Khớp | QC |
-| `A08.07` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167658;2514:153361` Atom/Button | — |  |  | Khớp | QC |
-| `A08.08` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167658;2514:153363` Atom/Button | — |  | `TC53`, `TC55` | Khớp | QC |
+| `A08.01` | noi-dung |  |  | — |  | `TC51`, `TC54` | Chưa sync | QC |
+| `A08.02` | thoi-gian |  |  | — |  | `TC51`, `TC54` | Chưa sync | QC |
+| `A08.03` | do-uu-tien |  |  | — |  | `TC51` | Chưa sync | QC |
+| `A08.04` | nguoi-phu-trach |  |  | — |  | `TC51`, `TC55` | Chưa sync | QC |
+| `A08.05` | theo-doi |  |  | — |  | `TC51`, `TC53`, `TC54`, `TC55` | Chưa sync | QC |
+| `A08.06` | ghi-chu |  |  | — |  | `TC51`, `TC54` | Chưa sync | QC |
+| `A08.07` | huy |  |  | — |  |  | Chưa sync | QC |
+| `A08.08` | xac-nhan |  |  | — |  | `TC53`, `TC55` | Chưa sync | QC |
 
 ### `A09` Toast phản hồi CRUD
 
-Frame: `ADM-LOP-010000` (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-LOP-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A09.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa khớp tự động | QC |
-| `A09.02` | thong-tin |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A09.03` | canh-bao |  |  | — |  | `TTC02` | Chưa khớp tự động | QC |
-| `A09.04` | loi |  |  | — |  |  | Chưa khớp tự động | QC |
-
-### `F01` (ngoài Body)
-
-Frame: `ADM-LOP-010000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-icon-button | `Atom/Icon Button`  | `2623:12578` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | the-chi-so | `Thẻ chỉ số` Kiểu=Gọn chữ thường | `3065:75311` Thẻ chỉ số | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | dropdown-an-hien-cot | `DD/Organism/Menu Panel` Type=Multi | `3634:78208` Dropdown · Ẩn hiện cột | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | atom-tag-solid | `Atom/Tag Solid` Size=16H | `2623:12726` Atom/Tag Solid | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | percent | `PERCENT %`  | `2623:12731` PERCENT % | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | global-progress-bar | `Global Progress Bar`  | `2623:12738` Global Progress Bar | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | atom-avatar-initials | `Atom/Avatar Initials`  | `2623:12740` Atom/Avatar Initials | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | atom-chip | `Atom/Chip` Type=Date | `2623:12754` Atom/Chip | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `2623:19289` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | progress-diem-danh-gia-a-f | `Progress/Điểm Đánh Giá (A-F)` Size=36x32 | `2623:12783` Progress/Điểm Đánh Giá (A-F) | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | class-status | `CLass Status`  | `2623:12883` CLass Status | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.12` | phan-trang |  | `2623:13246` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.13` | account | `ACCOUNT` Size=Default | `2623:13295` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.14` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:223538` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
+| `A09.01` | thanh-cong |  |  | — |  | `TTC01`, `TTC02`, `TTC04` | Chưa sync | QC |
+| `A09.02` | thong-tin |  |  | — |  |  | Chưa sync | QC |
+| `A09.03` | canh-bao |  |  | — |  | `TTC02` | Chưa sync | QC |
+| `A09.04` | loi |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -319,7 +298,7 @@ Frame: `ADM-LOP-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (30): `A02.03`, `A02.11`, `A02.19`, `A02.20`, `A02.21`, `A02.22`, `A02.23`, `A02.24`, `A02.25`, `A02.26`, `A02.28`, `A02.29`, `A03.06`, `A03.07`, `A04.09`, `A04.17`, `A04.24`, `A05.12`, `A05.15`, `A05.16`, `A05.18`, `A05.19`, `A05.20`, `A05.21`, `A05.22`, `A05.23`, `A09.01`, `A09.02`, `A09.03`, `A09.04`
+- Chưa sync (96): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.11`, `A02.12`, `A02.13`, `A02.14`, `A02.15`, `A02.16`, `A02.17`, `A02.18`, `A02.19`, `A02.20`, `A02.21`, `A02.22`, `A02.23`, `A02.24`, `A02.25`, `A02.26`, `A02.27`, `A02.28`, `A02.29`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A04.09`, `A04.10`, `A04.11`, `A04.12`, `A04.13`, `A04.14`, `A04.15`, `A04.16`, `A04.17`, `A04.18`, `A04.19`, `A04.20`, `A04.21`, `A04.22`, `A04.23`, `A04.24`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A05.09`, `A05.10`, `A05.11`, `A05.12`, `A05.13`, `A05.14`, `A05.15`, `A05.16`, `A05.17`, `A05.18`, `A05.19`, `A05.20`, `A05.21`, `A05.22`, `A05.23`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A09.01`, `A09.02`, `A09.03`, `A09.04`
 - Frame Figma chưa có requirement (6): `ADM-LOP-010002`, `ADM-LOP-010004`, `ADM-LOP-010010`, `ADM-LOP-010020`, `ADM-LOP-010040`, `ADM-LOP-010050`
 - Thiếu prototype link đi vào (4): `ADM-LOP-010010`, `ADM-LOP-010020`, `ADM-LOP-010040`, `ADM-LOP-010050`
 - Testcase không trỏ REQ (5): `TC59`, `TTC01`, `TTC02`, `TTC03`, `TTC04`

@@ -1,6 +1,6 @@
 {
- "version": "31675ccb7a8231ce",
- "generatedAt": "2026-11-03T20:58:49+07:00",
+ "version": "9aa4ccb2eaec949c",
+ "generatedAt": "2026-11-03T14:17:37+00:00",
  "liveImage": "https://ics-figma-demo.vercel.app/api/figma-frame/{code}.png",
  "files": [
   {
@@ -138,11 +138,9 @@
    "registry": "he-thong-ma/appointment-requirements.registry.json",
    "screens": [
     "ADM-LHN-010100",
-    "ADM-LHN-010110",
     "ADM-LHN-010200",
     "ADM-LHN-010300",
-    "ADM-LHN-010400",
-    "ADM-LHN-020000"
+    "ADM-LHN-010400"
    ],
    "pages": [
     {
@@ -165,9 +163,7 @@
     {
      "no": 3,
      "title": "Popup Thêm lịch hẹn mới",
-     "screens": [
-      "ADM-LHN-010110"
-     ]
+     "screens": []
     },
     {
      "no": 4,
@@ -178,18 +174,13 @@
     },
     {
      "no": 5,
-     "title": "Popup Review — Bảng chia lịch hẹn",
-     "screens": [
-      "ADM-LHN-020000"
-     ]
+     "title": "Bảng chia lịch hẹn",
+     "screens": []
     },
     {
      "no": 6,
      "title": "Nút xóa và popup xác nhận lịch hẹn",
-     "screens": [
-      "ADM-LHN-010110",
-      "ADM-LHN-020000"
-     ]
+     "screens": []
     },
     {
      "no": 7,
@@ -211,16 +202,12 @@
    "title": "[Phụ trách lớp] Trang chủ — Thống kê tổng quan",
    "prefix": "CHS-OV",
    "registry": "he-thong-ma/overview.registry.json",
-   "screens": [
-    "CH-TC-010003"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Thống kê tổng quan",
-     "screens": [
-      "CH-TC-010003"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -232,47 +219,27 @@
    "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác",
    "prefix": "CHS-PR",
    "registry": "he-thong-ma/process.registry.json",
-   "screens": [
-    "SP-TASK-010000",
-    "SP-TASK-010001",
-    "SP-TASK-020000",
-    "SP-TASK-020001",
-    "SP-TASK-030000",
-    "SP-TASK-030001",
-    "SP-TASK-030010"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Task Hôm Nay / Task Tuần Này / Task Tháng Này / Ca Trực",
-     "screens": [
-      "SP-TASK-010001",
-      "SP-TASK-020001",
-      "SP-TASK-030001"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Task Khác và Popup chọn quy trình",
-     "screens": [
-      "SP-TASK-010000",
-      "SP-TASK-020000",
-      "SP-TASK-030000"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Ca Trực",
-     "screens": [
-      "SP-TASK-030000"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Popup thêm người vào Danh sách Support",
-     "screens": [
-      "SP-TASK-030010"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -300,9 +267,7 @@
     {
      "no": 2,
      "title": "Dropdown Trình độ và Học kỳ",
-     "screens": [
-      "CH-TK-010000"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -316,24 +281,18 @@
    "prefix": "CM-CM",
    "registry": "he-thong-ma/course-management.registry.json",
    "screens": [
-    "CD-KH-010000",
-    "CD-KH-010010",
-    "CD-KH-010013"
+    "CD-KH-010010"
    ],
    "pages": [
     {
      "no": 1,
      "title": "Danh sách khoá học",
-     "screens": [
-      "CD-KH-010000"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Menu chi tiết khoá học",
-     "screens": [
-      "CD-KH-010000"
-     ]
+     "screens": []
     },
     {
      "no": 3,
@@ -345,10 +304,7 @@
     {
      "no": 4,
      "title": "Popup Nhân bản khoá học",
-     "screens": [
-      "CD-KH-010010",
-      "CD-KH-010013"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -375,7 +331,6 @@
     "CD-KH-060110",
     "CD-KH-060120",
     "CD-KH-060130",
-    "CD-KH-060150",
     "CD-KH-060200"
    ],
    "pages": [
@@ -434,9 +389,7 @@
     {
      "no": 8,
      "title": "Soát lỗi bằng AI",
-     "screens": [
-      "CD-KH-060150"
-     ]
+     "screens": []
     },
     {
      "no": 9,
@@ -499,57 +452,33 @@
    "registry": "he-thong-ma/knowledge-s1.registry.json",
    "screens": [
     "CD-KH-030248",
-    "CD-KH-040100",
-    "CD-KH-040120",
-    "CD-KH-040125",
-    "CD-KH-040130",
-    "CD-KH-040140",
-    "CD-KH-040150",
-    "CD-KH-040155",
-    "CD-KH-040160",
-    "CD-KH-040170",
-    "CD-KH-040190",
-    "CD-KH-040195",
-    "CD-KH-040200"
+    "CD-KH-040130"
    ],
    "pages": [
     {
      "no": 1,
      "title": "Khung màn hình và tab loại kiến thức",
-     "screens": [
-      "CD-KH-040100",
-      "CD-KH-040200"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Field của từng loại kiến thức",
-     "screens": [
-      "CD-KH-040100",
-      "CD-KH-040200"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Bảng danh sách, tìm kiếm, sắp xếp và lọc",
-     "screens": [
-      "CD-KH-040100",
-      "CD-KH-040200"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Menu thêm, Popup Thêm từ thư viện dữ liệu",
-     "screens": [
-      "CD-KH-040150"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Popup Thêm theo list",
-     "screens": [
-      "CD-KH-040160"
-     ]
+     "screens": []
     },
     {
      "no": 6,
@@ -561,67 +490,47 @@
     {
      "no": 7,
      "title": "Menu thao tác dòng và sửa mục",
-     "screens": [
-      "CD-KH-040100",
-      "CD-KH-040200"
-     ]
+     "screens": []
     },
     {
      "no": 8,
      "title": "Chi tiết mục (drawer)",
-     "screens": [
-      "CD-KH-040195"
-     ]
+     "screens": []
     },
     {
      "no": 9,
      "title": "Chọn nhiều và thao tác hàng loạt",
-     "screens": [
-      "CD-KH-040120"
-     ]
+     "screens": []
     },
     {
      "no": 10,
      "title": "Popup Thêm vào cụm / Gỡ khỏi cụm",
-     "screens": [
-      "CD-KH-040125"
-     ]
+     "screens": []
     },
     {
      "no": 11,
      "title": "Panel Cụm và Số cụm",
-     "screens": [
-      "CD-KH-040100",
-      "CD-KH-040200"
-     ]
+     "screens": []
     },
     {
      "no": 12,
      "title": "Popup Chia cụm bằng AI",
-     "screens": [
-      "CD-KH-040170"
-     ]
+     "screens": []
     },
     {
      "no": 13,
      "title": "AI: Thêm bằng AI, Điền thiếu, Soát lỗi, Tạo lại",
-     "screens": [
-      "CD-KH-040190"
-     ]
+     "screens": []
     },
     {
      "no": 14,
      "title": "Preview mobile",
-     "screens": [
-      "CD-KH-040140"
-     ]
+     "screens": []
     },
     {
      "no": 15,
      "title": "Popup xác nhận gỡ mục khỏi khoá",
-     "screens": [
-      "CD-KH-040155"
-     ]
+     "screens": []
     },
     {
      "no": 16,
@@ -664,16 +573,12 @@
    "title": "Lộ Trình (S2)",
    "prefix": "CM-LPS",
    "registry": "he-thong-ma/learning-path-s2.registry.json",
-   "screens": [
-    "CD-KH-020200"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Nội dung buổi học (Lộ Trình S2)",
-     "screens": [
-      "CD-KH-020200"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -700,26 +605,17 @@
     {
      "no": 1,
      "title": "Khung chung của Thư viện",
-     "screens": [
-      "CD-KH-070160",
-      "CD-KH-070170"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Trạng thái và xoá mục",
-     "screens": [
-      "CD-KH-070160",
-      "CD-KH-070170"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Thư viện kiến thức",
-     "screens": [
-      "CD-KH-070160",
-      "CD-KH-070170"
-     ]
+     "screens": []
     },
     {
      "no": 4,
@@ -734,18 +630,12 @@
     {
      "no": 5,
      "title": "Thư viện kỹ năng",
-     "screens": [
-      "CD-KH-070160",
-      "CD-KH-070170"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Thư viện bài tập",
-     "screens": [
-      "CD-KH-070160",
-      "CD-KH-070170"
-     ]
+     "screens": []
     },
     {
      "no": 7,
@@ -798,37 +688,27 @@
    "title": "Tổng quan (S1)",
    "prefix": "CM-OS",
    "registry": "he-thong-ma/overview-s1.registry.json",
-   "screens": [
-    "CD-KH-020100"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Tổng quan (S1)",
-     "screens": [
-      "CD-KH-020100"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Khu vực: Bảng \"Nội dung buổi học\"",
-     "screens": [
-      "CD-KH-020100"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Khu vực: Thêm nội dung buổi học mới",
-     "screens": [
-      "CD-KH-020100"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "CD-KH-020100"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -841,34 +721,22 @@
    "title": "Học Kỳ",
    "prefix": "CM-IN",
    "registry": "he-thong-ma/information.registry.json",
-   "screens": [
-    "CD-KH-030100",
-    "CD-KH-030104",
-    "CD-KH-030110",
-    "CD-KH-030120"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Trang 1.1: Danh sách kỳ (bên phải)",
-     "screens": [
-      "CD-KH-030100"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Trang 1.2: Tab Thông tin (bên trái)",
-     "screens": [
-      "CD-KH-030100"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Trang 1.3: Popup Kích hoạt công khai học kỳ",
-     "screens": [
-      "CD-KH-030110",
-      "CD-KH-030120"
-     ]
+     "screens": []
     },
     {
      "no": 4,
@@ -878,11 +746,7 @@
     {
      "no": 5,
      "title": "Popup Nhân bản học kỳ",
-     "screens": [
-      "CD-KH-030104",
-      "CD-KH-030110",
-      "CD-KH-030120"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -895,7 +759,6 @@
    "prefix": "CM-LE",
    "registry": "he-thong-ma/lesson.registry.json",
    "screens": [
-    "CD-KH-030200",
     "CD-KH-030210",
     "CD-KH-030241",
     "CD-KH-030242",
@@ -906,9 +769,7 @@
     {
      "no": 1,
      "title": "Danh sách bài học (Tab Bài học)",
-     "screens": [
-      "CD-KH-030200"
-     ]
+     "screens": []
     },
     {
      "no": 2,
@@ -920,16 +781,12 @@
     {
      "no": 3,
      "title": "Popup: Chi tiết bài học - Tab Nội dung",
-     "screens": [
-      "CD-KH-030200"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Popup: Chi tiết bài học - Tab Tài nguyên",
-     "screens": [
-      "CD-KH-030200"
-     ]
+     "screens": []
     },
     {
      "no": 5,
@@ -992,9 +849,7 @@
     {
      "no": 4,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "CD-KH-030300"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -1085,9 +940,7 @@
     {
      "no": 9,
      "title": "Nhập nhanh",
-     "screens": [
-      "CD-KH-050140"
-     ]
+     "screens": []
     },
     {
      "no": 10,
@@ -1187,7 +1040,6 @@
    "prefix": "CM-CM3",
    "registry": "he-thong-ma/category-management-requirements.registry.json",
    "screens": [
-    "CD-DM-010000",
     "CD-DM-010010",
     "CD-DM-010020",
     "CD-DM-010030",
@@ -1199,23 +1051,17 @@
     {
      "no": 1,
      "title": "Danh sách danh mục",
-     "screens": [
-      "CD-DM-010000"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Form thêm danh mục",
-     "screens": [
-      "CD-DM-010000"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Popup Kích hoạt công khai danh mục",
-     "screens": [
-      "CD-DM-010060"
-     ]
+     "screens": []
     },
     {
      "no": 4,
@@ -1227,9 +1073,7 @@
     {
      "no": 5,
      "title": "Tab Tổng quan",
-     "screens": [
-      "CD-DM-010010"
-     ]
+     "screens": []
     },
     {
      "no": 6,
@@ -1291,9 +1135,7 @@
     {
      "no": 2,
      "title": "Tab Tổng quan",
-     "screens": [
-      "CD-DM-010010"
-     ]
+     "screens": []
     },
     {
      "no": 3,
@@ -1316,38 +1158,27 @@
    "title": "Quản lý danh sách cấp độ",
    "prefix": "CM-LM",
    "registry": "he-thong-ma/level-management.registry.json",
-   "screens": [
-    "CD-CDO-010000",
-    "CD-CDO-010010"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Trang danh sách cấp độ",
-     "screens": [
-      "CD-CDO-010000"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Thanh \"Thêm cấp độ mới\"",
-     "screens": [
-      "CD-CDO-010000"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Xóa cấp độ",
-     "screens": [
-      "CD-CDO-010000"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Popup Kích hoạt công khai cấp độ",
-     "screens": [
-      "CD-CDO-010010"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -1360,30 +1191,22 @@
    "title": "Quản lý cấp độ",
    "prefix": "CM-LM2",
    "registry": "he-thong-ma/level-management-requirements.registry.json",
-   "screens": [
-    "CD-CDO-010000"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Danh sách cấp độ",
-     "screens": [
-      "CD-CDO-010000"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Form thêm/cập nhật cấp độ",
-     "screens": [
-      "CD-CDO-010000"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "CD-CDO-010000"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -1464,38 +1287,28 @@
    "prefix": "M-CC",
    "registry": "he-thong-ma/class-creation-requirements.registry.json",
    "screens": [
-    "ADM-LOP-010000",
-    "ADM-LOP-010010",
     "ADM-LOP-010020"
    ],
    "pages": [
     {
      "no": 1,
      "title": "Popup Thêm lớp học",
-     "screens": [
-      "ADM-LOP-010010"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Lớp không chính thức",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Khóa học, Số buổi và lịch được sinh",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Loại lớp",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 5,
@@ -1507,37 +1320,27 @@
     {
      "no": 6,
      "title": "Bộ chọn Phụ trách chính / CSKH chính",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 7,
      "title": "Phân quyền tạo lớp và dữ liệu bắt buộc",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 8,
      "title": "Trạng thái sau khi tạo lớp",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 9,
      "title": "Ràng buộc liên quan đến trạng thái Đang học",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 10,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -1552,37 +1355,27 @@
    "title": "Chi tiết lớp học — Menu Nhật ký — Tab Lịch hẹn",
    "prefix": "M-CDA",
    "registry": "he-thong-ma/class-detail-appointments-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-050100"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
-     "title": "Tab Lịch Hẹn — Danh sách lịch hẹn của lớp",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "title": "Danh sách lịch hẹn của lớp",
+     "screens": []
     },
     {
      "no": 2,
      "title": "Phân trang danh sách lịch hẹn",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     },
     {
      "no": 3,
-     "title": "Chỉnh sửa lịch hẹn — Chỉ owner",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "title": "Chỉ owner",
+     "screens": []
     },
     {
      "no": 4,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -1595,58 +1388,42 @@
    "title": "Chi tiết lớp học — Menu Bài tập và kiểm tra",
    "prefix": "M-CDH",
    "registry": "he-thong-ma/class-detail-homework-tests-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-020300"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Khung menu Bài tập và kiểm tra",
-     "screens": [
-      "ADM-LOP-020300"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Khối Tổng Quan",
-     "screens": [
-      "ADM-LOP-020300"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Tab BTVN/Kiểm tra, badge và card bài",
-     "screens": [
-      "ADM-LOP-020300"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Tỷ lệ chấm bài trên từng card",
-     "screens": [
-      "ADM-LOP-020300"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Bảng trạng thái/kết quả của từng học viên",
-     "screens": [
-      "ADM-LOP-020300"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Reset BTVN/Kiểm tra cho học viên",
-     "screens": [
-      "ADM-LOP-020300"
-     ]
+     "screens": []
     },
     {
      "no": 7,
      "title": "Toast phản hồi reset",
-     "screens": [
-      "ADM-LOP-020300"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -1659,58 +1436,42 @@
    "title": "Chi tiết lớp học — Tab Thông tin",
    "prefix": "M-CDI",
    "registry": "he-thong-ma/class-detail-information-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-040100"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Tab Thông tin lớp học",
-     "screens": [
-      "ADM-LOP-040100"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Dropdown chọn Khóa học",
-     "screens": [
-      "ADM-LOP-040100"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Nhóm Ngày bắt đầu, Ngày kết thúc và lịch được sinh",
-     "screens": [
-      "ADM-LOP-040100"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Dropdown Trạng thái",
-     "screens": [
-      "ADM-LOP-040100"
-     ]
+     "screens": []
     },
     {
      "no": 5,
-     "title": "Popup xác nhận xóa lớp — Lần 1",
-     "screens": [
-      "ADM-LOP-040100"
-     ]
+     "title": "Lần 1",
+     "screens": []
     },
     {
      "no": 6,
-     "title": "Popup xác nhận xóa lớp — Lần 2",
-     "screens": [
-      "ADM-LOP-040100"
-     ]
+     "title": "Lần 2",
+     "screens": []
     },
     {
      "no": 7,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-LOP-040100"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -1724,44 +1485,32 @@
    "title": "Chi tiết lớp học — Tab Hóa đơn",
    "prefix": "M-CDI2",
    "registry": "he-thong-ma/class-detail-invoices-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-040600"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
-     "title": "Tab Hóa đơn — Bảng Hóa đơn đã dùng",
-     "screens": [
-      "ADM-LOP-040600"
-     ]
+     "title": "Bảng Hóa đơn đã dùng",
+     "screens": []
     },
     {
      "no": 2,
      "title": "Filter Học viên và cột Ngày tạo hóa đơn",
-     "screens": [
-      "ADM-LOP-040600"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Cột Giá trị và Giá trị dùng trong lớp",
-     "screens": [
-      "ADM-LOP-040600"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Trạng thái tải, rỗng, lỗi và đồng bộ",
-     "screens": [
-      "ADM-LOP-040600"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Load-more danh sách hóa đơn",
-     "screens": [
-      "ADM-LOP-040600"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -1773,30 +1522,22 @@
    "title": "Chi tiết lớp học — Menu Nhật ký",
    "prefix": "M-CDJ",
    "registry": "he-thong-ma/class-detail-journal-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-050100"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
-     "title": "Menu Nhật ký — Danh sách nhật ký",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "title": "Danh sách nhật ký",
+     "screens": []
     },
     {
      "no": 2,
      "title": "Tìm kiếm và filter Đối tượng / Thời gian",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Tạo, sửa và xóa nhật ký viết tay",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     },
     {
      "no": 4,
@@ -1805,17 +1546,13 @@
     },
     {
      "no": 5,
-     "title": "Log Hệ thống — Thêm học viên vào lớp và đóng tiền",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "title": "Thêm học viên vào lớp và đóng tiền",
+     "screens": []
     },
     {
      "no": 6,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -1828,60 +1565,42 @@
    "title": "Chi tiết lớp học — Tab KPI của Phụ trách lớp",
    "prefix": "M-CDK",
    "registry": "he-thong-ma/class-detail-kpi-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-040700",
-    "ADM-LOP-040710",
-    "ADM-LOP-040712"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
-     "title": "Tab KPI — Danh sách và tìm kiếm",
-     "screens": [
-      "ADM-LOP-040700"
-     ]
+     "title": "Danh sách và tìm kiếm",
+     "screens": []
     },
     {
      "no": 2,
      "title": "Popup thêm và chỉnh sửa KPI",
-     "screens": [
-      "ADM-LOP-040710"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Dropdown trạng thái và xác nhận",
-     "screens": [
-      "ADM-LOP-040712"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Xóa khoản KPI",
-     "screens": [
-      "ADM-LOP-040700"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Ghi chú, lịch sử và Copy",
-     "screens": [
-      "ADM-LOP-040700"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Tổng chi PTL",
-     "screens": [
-      "ADM-LOP-040700"
-     ]
+     "screens": []
     },
     {
      "no": 7,
      "title": "Toast và trạng thái tải",
-     "screens": [
-      "ADM-LOP-040700"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -1900,7 +1619,6 @@
    "registry": "he-thong-ma/class-detail-lessons-requirements.registry.json",
    "screens": [
     "ADM-LOP-030100",
-    "ADM-LOP-030200",
     "ADM-LOP-030300",
     "ADM-LOP-030400",
     "ADM-LOP-030500"
@@ -1940,9 +1658,7 @@
     {
      "no": 6,
      "title": "Tab Thông tin",
-     "screens": [
-      "ADM-LOP-030200"
-     ]
+     "screens": []
     },
     {
      "no": 7,
@@ -2085,51 +1801,37 @@
    "title": "Chi tiết lớp học — Menu Nhật ký — Tab Tin nhắn",
    "prefix": "M-CDM2",
    "registry": "he-thong-ma/class-detail-messages-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-050100"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
-     "title": "Tab Tin Nhắn — Danh sách tin nhắn",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "title": "Danh sách tin nhắn",
+     "screens": []
     },
     {
      "no": 2,
      "title": "Popup Tạo tin nhắn bán tự động mới",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Danh sách học viên và chọn nền tảng",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Lấy biến CơmGao và gửi tin nhắn",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Quản lý item tin nhắn đã tạo",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Toast phản hồi CRUD và gửi tin nhắn",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -2144,44 +1846,32 @@
    "title": "Chi tiết lớp học — Menu Nhật ký — Tab Ghi chú",
    "prefix": "M-CDN",
    "registry": "he-thong-ma/class-detail-notes-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-050100"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
-     "title": "Tab Ghi Chú — Danh sách và bộ lọc",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "title": "Danh sách và bộ lọc",
+     "screens": []
     },
     {
      "no": 2,
      "title": "Popup tạo và cập nhật ghi chú lớp",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Xóa, đóng và mở lại ghi chú lớp",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Bình luận ghi chú lớp",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-LOP-050100"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -2195,60 +1885,42 @@
    "title": "Chi tiết lớp học — Tab OT của Phụ trách lớp",
    "prefix": "M-CDO",
    "registry": "he-thong-ma/class-detail-ot-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-040800",
-    "ADM-LOP-040810",
-    "ADM-LOP-040812"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
-     "title": "Tab OT — Danh sách và tìm kiếm",
-     "screens": [
-      "ADM-LOP-040800"
-     ]
+     "title": "Danh sách và tìm kiếm",
+     "screens": []
     },
     {
      "no": 2,
      "title": "Popup thêm và chỉnh sửa OT",
-     "screens": [
-      "ADM-LOP-040810"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Dropdown trạng thái và xác nhận",
-     "screens": [
-      "ADM-LOP-040812"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Xóa khoản OT",
-     "screens": [
-      "ADM-LOP-040800"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Ghi chú, lịch sử và Copy",
-     "screens": [
-      "ADM-LOP-040800"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Tách OT khỏi Chi phí PTL trên danh sách lớp",
-     "screens": [
-      "ADM-LOP-040800"
-     ]
+     "screens": []
     },
     {
      "no": 7,
      "title": "Toast và trạng thái tải",
-     "screens": [
-      "ADM-LOP-040800"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -2273,51 +1945,37 @@
     {
      "no": 1,
      "title": "Màn Tổng quan và phân quyền",
-     "screens": [
-      "ADM-LOP-020100"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Nút Back và tooltip thông tin lớp",
-     "screens": [
-      "ADM-LOP-020100"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Thống kê học tập trung bình của lớp",
-     "screens": [
-      "ADM-LOP-020100"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Biểu đồ theo bài học",
-     "screens": [
-      "ADM-LOP-020100"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Danh sách, tìm kiếm và chọn học viên",
-     "screens": [
-      "ADM-LOP-020100"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Công tắc ON/OFF: học phí và ghi chú cài đặt",
-     "screens": [
-      "ADM-LOP-020100"
-     ]
+     "screens": []
     },
     {
      "no": 7,
      "title": "Ghi chú cài đặt và lịch sử",
-     "screens": [
-      "ADM-LOP-020110"
-     ]
+     "screens": []
     },
     {
      "no": 8,
@@ -2348,9 +2006,7 @@
     {
      "no": 12,
      "title": "Loading, rỗng, lỗi và an toàn dữ liệu",
-     "screens": [
-      "ADM-LOP-020100"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -2371,7 +2027,6 @@
    "registry": "he-thong-ma/class-detail-processes-requirements.registry.json",
    "screens": [
     "ADM-LOP-020600",
-    "ADM-LOP-020610",
     "ADM-LOP-020700",
     "ADM-LOP-020800"
    ],
@@ -2388,9 +2043,7 @@
     {
      "no": 2,
      "title": "Popup Thêm nội dung",
-     "screens": [
-      "ADM-LOP-020610"
-     ]
+     "screens": []
     },
     {
      "no": 3,
@@ -2410,10 +2063,7 @@
    "prefix": "M-CDS",
    "registry": "he-thong-ma/class-detail-schedule-requirements.registry.json",
    "screens": [
-    "ADM-LOP-040500",
-    "ADM-LOP-040510",
-    "ADM-LOP-040520",
-    "ADM-LOP-040521"
+    "ADM-LOP-040500"
    ],
    "pages": [
     {
@@ -2426,39 +2076,27 @@
     {
      "no": 2,
      "title": "Thẻ lịch và bốn trạng thái chính thức",
-     "screens": [
-      "ADM-LOP-040500"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Popup Thêm Lịch Dạy Cố Định",
-     "screens": [
-      "ADM-LOP-040510"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Popup Thêm Lịch Dạy Linh Hoạt",
-     "screens": [
-      "ADM-LOP-040510"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Popup xem/chỉnh sửa khi bấm thẻ lịch",
-     "screens": [
-      "ADM-LOP-040510",
-      "ADM-LOP-040520",
-      "ADM-LOP-040521"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Hoàn thành và hủy lịch",
-     "screens": [
-      "ADM-LOP-040500"
-     ]
+     "screens": []
     },
     {
      "no": 7,
@@ -2470,9 +2108,7 @@
     {
      "no": 8,
      "title": "Toast phản hồi CRUD lịch",
-     "screens": [
-      "ADM-LOP-040500"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -2545,26 +2181,17 @@
    "title": "Chi tiết lớp học — Tab Học viên",
    "prefix": "M-CDS3",
    "registry": "he-thong-ma/class-detail-students-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-040200",
-    "ADM-LOP-040210",
-    "ADM-LOP-040220",
-    "ADM-LOP-040230"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
-     "title": "Tab Học viên — Danh sách học viên",
-     "screens": [
-      "ADM-LOP-040200"
-     ]
+     "title": "Danh sách học viên",
+     "screens": []
     },
     {
      "no": 2,
      "title": "Cột Buổi học chỉ xem và cảnh báo vượt buổi",
-     "screens": [
-      "ADM-LOP-040200"
-     ]
+     "screens": []
     },
     {
      "no": 3,
@@ -2579,44 +2206,32 @@
     {
      "no": 5,
      "title": "Form Tạo học viên mới",
-     "screens": [
-      "ADM-LOP-040200"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Ghi chú trong lớp và Lịch sử ghi chú",
-     "screens": [
-      "ADM-LOP-040210"
-     ]
+     "screens": []
     },
     {
      "no": 7,
      "title": "Trạng thái học viên và Lịch sử thay đổi trạng thái",
-     "screens": [
-      "ADM-LOP-040220"
-     ]
+     "screens": []
     },
     {
      "no": 8,
      "title": "Popup Thêm học phí",
-     "screens": [
-      "ADM-LOP-040230"
-     ]
+     "screens": []
     },
     {
      "no": 9,
      "title": "Menu thao tác từ tên học viên",
-     "screens": [
-      "ADM-LOP-040200"
-     ]
+     "screens": []
     },
     {
      "no": 10,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-LOP-040200"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -2639,16 +2254,12 @@
    "title": "Chi tiết lớp học — Tab Trợ giảng & Phụ trách lớp",
    "prefix": "M-CDS4",
    "registry": "he-thong-ma/class-detail-support-handlers-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-040400"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Tab Trợ giảng & Phụ trách lớp",
-     "screens": [
-      "ADM-LOP-040400"
-     ]
+     "screens": []
     },
     {
      "no": 2,
@@ -2658,16 +2269,12 @@
     {
      "no": 3,
      "title": "Popup chọn Phụ trách lớp có sẵn",
-     "screens": [
-      "ADM-LOP-040400"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Popup chọn Trợ giảng có sẵn",
-     "screens": [
-      "ADM-LOP-040400"
-     ]
+     "screens": []
     },
     {
      "no": 5,
@@ -2677,23 +2284,17 @@
     {
      "no": 6,
      "title": "Icon Xóa khỏi lớp không cần xác nhận",
-     "screens": [
-      "ADM-LOP-040400"
-     ]
+     "screens": []
     },
     {
      "no": 7,
      "title": "Phân quyền hỗ trợ lớp và giới hạn chấm điểm",
-     "screens": [
-      "ADM-LOP-040400"
-     ]
+     "screens": []
     },
     {
      "no": 8,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-LOP-040400"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -2706,16 +2307,12 @@
    "title": "Chi tiết lớp học — Tab Giáo viên",
    "prefix": "M-CDT",
    "registry": "he-thong-ma/class-detail-teachers-requirements.registry.json",
-   "screens": [
-    "ADM-LOP-040300"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
-     "title": "Tab Giáo viên — Danh sách giáo viên trong lớp",
-     "screens": [
-      "ADM-LOP-040300"
-     ]
+     "title": "Danh sách giáo viên trong lớp",
+     "screens": []
     },
     {
      "no": 2,
@@ -2735,9 +2332,7 @@
     {
      "no": 5,
      "title": "Checkbox Giáo viên phụ trách chính và quyền chấm điểm",
-     "screens": [
-      "ADM-LOP-040300"
-     ]
+     "screens": []
     },
     {
      "no": 6,
@@ -2747,16 +2342,12 @@
     {
      "no": 7,
      "title": "Điều hướng đến Chi tiết giáo viên",
-     "screens": [
-      "ADM-LOP-040300"
-     ]
+     "screens": []
     },
     {
      "no": 8,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-LOP-040300"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -2773,52 +2364,38 @@
    "prefix": "M-CM",
    "registry": "he-thong-ma/class-management-requirements.registry.json",
    "screens": [
-    "ADM-LOP-010000",
-    "ADM-LOP-010040",
-    "ADM-LOP-010050"
+    "ADM-LOP-010040"
    ],
    "pages": [
     {
      "no": 1,
      "title": "Màn hình Danh sách lớp",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Thẻ thống kê tổng quan",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Trạng thái lớp",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Thông tin hiển thị trên mỗi lớp",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Bộ lọc và Tag học viên",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Menu thao tác tại Mã lớp",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 7,
@@ -2830,16 +2407,12 @@
     {
      "no": 8,
      "title": "Popup Thêm lịch hẹn cho lớp",
-     "screens": [
-      "ADM-LOP-010050"
-     ]
+     "screens": []
     },
     {
      "no": 9,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-LOP-010000"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -2870,30 +2443,22 @@
     {
      "no": 2,
      "title": "Tab Lớp học",
-     "screens": [
-      "ADM-LGV-010000"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Các tab Buổi dạy / KPI / OT",
-     "screens": [
-      "ADM-LGV-010000"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Chọn giáo viên để Export",
-     "screens": [
-      "ADM-LGV-010000"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "File Excel tổng hợp lương giáo viên",
-     "screens": [
-      "ADM-LGV-010000"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -2927,18 +2492,12 @@
     {
      "no": 3,
      "title": "Dropdown Tuần",
-     "screens": [
-      "ADM-LD-010000",
-      "ADM-LD-010010"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Dropdown Giáo viên",
-     "screens": [
-      "ADM-LD-010000",
-      "ADM-LD-010010"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -2958,8 +2517,7 @@
     "ADM-HV-020200",
     "ADM-HV-020300",
     "ADM-HV-020400",
-    "ADM-HV-020500",
-    "ADM-HV-020610"
+    "ADM-HV-020500"
    ],
    "pages": [
     {
@@ -2971,10 +2529,8 @@
     },
     {
      "no": 2,
-     "title": "Chi tiết học viên — Thông tin cá nhân",
-     "screens": [
-      "ADM-HV-020100"
-     ]
+     "title": "Thông tin cá nhân",
+     "screens": []
     },
     {
      "no": 3,
@@ -3011,10 +2567,8 @@
     },
     {
      "no": 8,
-     "title": "Chi tiết học viên — Ghi chú",
-     "screens": [
-      "ADM-HV-020610"
-     ]
+     "title": "Ghi chú",
+     "screens": []
     },
     {
      "no": 9,
@@ -3038,86 +2592,57 @@
    "title": "Quản lý học viên",
    "prefix": "M-SM",
    "registry": "he-thong-ma/student-management-requirements.registry.json",
-   "screens": [
-    "ADM-HV-010000",
-    "ADM-HV-010001",
-    "ADM-HV-010010",
-    "ADM-HV-010060",
-    "ADM-HV-010070"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Danh sách học viên",
-     "screens": [
-      "ADM-HV-010000",
-      "ADM-HV-010001"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Popup Thêm học viên",
-     "screens": [
-      "ADM-HV-010010"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Bộ lọc Tag",
-     "screens": [
-      "ADM-HV-010000"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Số lớp và Lớp hiện tại",
-     "screens": [
-      "ADM-HV-010000"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Thêm lịch hẹn",
-     "screens": [
-      "ADM-HV-010060",
-      "ADM-HV-010070"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Lịch sử học viên",
-     "screens": [
-      "ADM-HV-010000"
-     ]
+     "screens": []
     },
     {
      "no": 7,
-     "title": "Học phí — danh sách hóa đơn",
-     "screens": [
-      "ADM-HV-010000"
-     ]
+     "title": "danh sách hóa đơn",
+     "screens": []
     },
     {
      "no": 8,
      "title": "Lịch sử lớp",
-     "screens": [
-      "ADM-HV-010000",
-      "ADM-HV-010001"
-     ]
+     "screens": []
     },
     {
      "no": 9,
-     "title": "Ghi chú — danh sách, bình luận và popup thêm",
-     "screens": [
-      "ADM-HV-010000"
-     ]
+     "title": "danh sách, bình luận và popup thêm",
+     "screens": []
     },
     {
      "no": 10,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-HV-010000"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -3140,11 +2665,7 @@
    "registry": "he-thong-ma/teacher-detail-requirements.registry.json",
    "screens": [
     "ADM-GV-020100",
-    "ADM-GV-020200",
-    "ADM-GV-020300",
-    "ADM-GV-020400",
-    "ADM-GV-020520",
-    "ADM-GV-020600"
+    "ADM-GV-020300"
    ],
    "pages": [
     {
@@ -3157,16 +2678,12 @@
     {
      "no": 2,
      "title": "Tab Thông tin cá nhân",
-     "screens": [
-      "ADM-GV-020100"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Tab Danh sách lớp",
-     "screens": [
-      "ADM-GV-020200"
-     ]
+     "screens": []
     },
     {
      "no": 4,
@@ -3178,23 +2695,17 @@
     {
      "no": 5,
      "title": "Tab Log",
-     "screens": [
-      "ADM-GV-020400"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Tab Quản lý đăng ký lịch",
-     "screens": [
-      "ADM-GV-020520"
-     ]
+     "screens": []
     },
     {
      "no": 7,
      "title": "Tab Ghi chú",
-     "screens": [
-      "ADM-GV-020600"
-     ]
+     "screens": []
     },
     {
      "no": 8,
@@ -3219,67 +2730,47 @@
    "title": "[Admin] Quản lý danh sách giáo viên",
    "prefix": "M-TM",
    "registry": "he-thong-ma/teacher-management-requirements.registry.json",
-   "screens": [
-    "ADM-GV-010000",
-    "ADM-GV-010020",
-    "ADM-GV-010040"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Danh sách giáo viên",
-     "screens": [
-      "ADM-GV-010000"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Chi tiết lịch đăng ký khi hover",
-     "screens": [
-      "ADM-GV-010000"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Chi tiết lớp đang dạy khi hover",
-     "screens": [
-      "ADM-GV-010000"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Ghi chú giáo viên",
-     "screens": [
-      "ADM-GV-010000"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Menu thao tác trên dòng: Thêm lịch hẹn, Thêm tag và Danh sách lịch hẹn",
-     "screens": [
-      "ADM-GV-010040"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Điều hướng đến chi tiết giáo viên",
-     "screens": [
-      "ADM-GV-010000"
-     ]
+     "screens": []
     },
     {
      "no": 7,
      "title": "Thêm mới giáo viên",
-     "screens": [
-      "ADM-GV-010020"
-     ]
+     "screens": []
     },
     {
      "no": 8,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-GV-010000"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -3297,21 +2788,16 @@
    "prefix": "MS-MS",
    "registry": "he-thong-ma/meeting-schedule.registry.json",
    "screens": [
-    "SP-LHP-010000",
     "SP-LHP-010001",
     "SP-LHP-010002",
     "SP-LHP-010003",
-    "SP-LHP-010010",
     "SP-LHP-020000"
    ],
    "pages": [
     {
      "no": 1,
-     "title": "Danh sách cuộc họp — dạng danh sách",
-     "screens": [
-      "SP-LHP-010000",
-      "SP-LHP-020000"
-     ]
+     "title": "dạng danh sách",
+     "screens": []
     },
     {
      "no": 2,
@@ -3323,9 +2809,7 @@
     {
      "no": 3,
      "title": "Popup Chi tiết cuộc họp / Thêm cuộc họp",
-     "screens": [
-      "SP-LHP-010010"
-     ]
+     "screens": []
     },
     {
      "no": 4,
@@ -3351,54 +2835,37 @@
    "title": "Define quy trình",
    "prefix": "PD-PD",
    "registry": "he-thong-ma/process-definition-requirements.registry.json",
-   "screens": [
-    "ADM-QT-010000",
-    "ADM-QT-010001",
-    "ADM-QT-020000"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Danh sách loại quy trình",
-     "screens": [
-      "ADM-QT-010001"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Trang 1a: Nhân bản quy trình",
-     "screens": [
-      "ADM-QT-010000",
-      "ADM-QT-020000"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Trang 1b: Xóa quy trình",
-     "screens": [
-      "ADM-QT-020000"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Chi tiết loại quy trình",
-     "screens": [
-      "ADM-QT-020000"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Dropdown Loại task và field cấu hình",
-     "screens": [
-      "ADM-QT-020000"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Sử dụng nguồn trong lớp",
-     "screens": [
-      "ADM-QT-010000"
-     ]
+     "screens": []
     },
     {
      "no": 7,
@@ -3561,16 +3028,12 @@
    "title": "Template Tin Nhắn",
    "prefix": "SB-MT",
    "registry": "he-thong-ma/message-template.registry.json",
-   "screens": [
-    "ADM-TN-010004"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Danh Sách Tin Nhắn",
-     "screens": [
-      "ADM-TN-010004"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -4237,12 +3700,10 @@
    "screens": [
     "ADM-GKS-010000",
     "ADM-GKS-010005",
-    "ADM-GKS-010010",
     "ADM-GKS-010020",
     "ADM-GKS-010030",
     "ADM-GKS-020000",
     "ADM-GKS-020005",
-    "ADM-GKS-020010",
     "ADM-GKS-020020",
     "ADM-GKS-020030",
     "ADM-GKS-030000",
@@ -4269,16 +3730,12 @@
     {
      "no": 3,
      "title": "Popup 1: Chọn giáo viên (tab Giáo viên)",
-     "screens": [
-      "ADM-GKS-010010"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Popup 2: Chọn lớp (tab Lớp)",
-     "screens": [
-      "ADM-GKS-020010"
-     ]
+     "screens": []
     },
     {
      "no": 5,
@@ -4341,38 +3798,27 @@
    "title": "Giáo viên làm khảo sát (Web)",
    "prefix": "SB-0TS",
    "registry": "he-thong-ma/03-take-survey.registry.json",
-   "screens": [
-    "GV-KS-010000",
-    "GV-KS-010001"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Popup: Thông báo khảo sát mới",
-     "screens": [
-      "GV-KS-010001"
-     ]
+     "screens": []
     },
     {
      "no": 2,
-     "title": "Khảo sát của tôi — tab Cần làm",
-     "screens": [
-      "GV-KS-010000"
-     ]
+     "title": "tab Cần làm",
+     "screens": []
     },
     {
      "no": 3,
-     "title": "Khảo sát của tôi — tab Đã hoàn thành",
-     "screens": [
-      "GV-KS-010000"
-     ]
+     "title": "tab Đã hoàn thành",
+     "screens": []
     },
     {
      "no": 4,
      "title": "Làm khảo sát",
-     "screens": [
-      "GV-KS-010000"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -4389,39 +3835,27 @@
    "title": "Define Tag — Quản lý nhóm và tag",
    "prefix": "TD-TD",
    "registry": "he-thong-ma/tag-definition-requirements.registry.json",
-   "screens": [
-    "ADM-TAG-010000",
-    "ADM-TAG-010010",
-    "ADM-TAG-010020"
-   ],
+   "screens": [],
    "pages": [
     {
      "no": 1,
      "title": "Tag quản lý và Nhóm",
-     "screens": [
-      "ADM-TAG-010000"
-     ]
+     "screens": []
     },
     {
      "no": 2,
      "title": "Popup Thêm nhóm mới",
-     "screens": [
-      "ADM-TAG-010020"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Popup Thêm tag",
-     "screens": [
-      "ADM-TAG-010010"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "ADM-TAG-010000"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -4528,9 +3962,7 @@
    "registry": "he-thong-ma/class-overview-requirements.registry.json",
    "screens": [
     "GV-LOP-010000",
-    "GV-LOP-020000",
-    "GV-LOP-020020",
-    "GV-LOP-020030"
+    "GV-LOP-020000"
    ],
    "pages": [
     {
@@ -4550,60 +3982,42 @@
     {
      "no": 3,
      "title": "Thống kê học tập trung bình của lớp",
-     "screens": [
-      "GV-LOP-010000",
-      "GV-LOP-020000"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Biểu đồ theo bài học",
-     "screens": [
-      "GV-LOP-020000"
-     ]
+     "screens": []
     },
     {
      "no": 5,
      "title": "Danh sách, tìm kiếm và chọn học viên",
-     "screens": [
-      "GV-LOP-010000",
-      "GV-LOP-020000"
-     ]
+     "screens": []
     },
     {
      "no": 6,
      "title": "Đánh giá tổng và bài học gần đây",
-     "screens": [
-      "GV-LOP-020000"
-     ]
+     "screens": []
     },
     {
      "no": 7,
      "title": "Bảng bài học của học viên và điểm danh",
-     "screens": [
-      "GV-LOP-020000"
-     ]
+     "screens": []
     },
     {
      "no": 8,
      "title": "Popup ghi chú giáo viên theo bài học",
-     "screens": [
-      "GV-LOP-020020"
-     ]
+     "screens": []
     },
     {
      "no": 9,
      "title": "Popup Thời gian từng phần trên app",
-     "screens": [
-      "GV-LOP-020030"
-     ]
+     "screens": []
     },
     {
      "no": 10,
      "title": "Loading, rỗng, lỗi và an toàn dữ liệu",
-     "screens": [
-      "GV-LOP-010000"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -4661,8 +4075,6 @@
    "screens": [
     "GV-LOP-030100",
     "GV-LOP-030110",
-    "GV-LOP-030120",
-    "GV-LOP-030121",
     "GV-LOP-030130",
     "GV-LOP-030140",
     "GV-LOP-030160",
@@ -4670,13 +4082,9 @@
     "GV-LOP-030200",
     "GV-LOP-030300",
     "GV-LOP-030400",
-    "GV-LOP-030401",
     "GV-LOP-030500",
     "GV-LOP-040100",
     "GV-LOP-040200",
-    "GV-LOP-040201",
-    "GV-LOP-040205",
-    "GV-LOP-040210",
     "GV-LOP-040221",
     "GV-LOP-040300",
     "GV-LOP-040301",
@@ -4695,18 +4103,13 @@
     },
     {
      "no": 2,
-     "title": "Tab Buổi học — Dặn dò trước buổi học",
-     "screens": [
-      "GV-LOP-030110"
-     ]
+     "title": "Dặn dò trước buổi học",
+     "screens": []
     },
     {
      "no": 3,
      "title": "Popup Chọn lịch dạy và Bắt đầu buổi học",
-     "screens": [
-      "GV-LOP-030120",
-      "GV-LOP-030121"
-     ]
+     "screens": []
     },
     {
      "no": 4,
@@ -4718,11 +4121,8 @@
     },
     {
      "no": 5,
-     "title": "Bước 2 — Ghi chú buổi học và Hoàn thành",
-     "screens": [
-      "GV-LOP-030100",
-      "GV-LOP-030170"
-     ]
+     "title": "Ghi chú buổi học và Hoàn thành",
+     "screens": []
     },
     {
      "no": 6,
@@ -4734,10 +4134,8 @@
     },
     {
      "no": 7,
-     "title": "Tab Buổi học — Bài đã hoàn thành",
-     "screens": [
-      "GV-LOP-030100"
-     ]
+     "title": "Bài đã hoàn thành",
+     "screens": []
     },
     {
      "no": 8,
@@ -4801,10 +4199,8 @@
     },
     {
      "no": 16,
-     "title": "Kiểm tra chưa giao — Xem trước đề và Giao bài",
-     "screens": [
-      "GV-LOP-040210"
-     ]
+     "title": "Xem trước đề và Giao bài",
+     "screens": []
     },
     {
      "no": 17,
@@ -4831,25 +4227,17 @@
     {
      "no": 20,
      "title": "Chi tiết câu hỏi và bộ lọc học viên",
-     "screens": [
-      "GV-LOP-040100",
-      "GV-LOP-040320"
-     ]
+     "screens": []
     },
     {
      "no": 21,
-     "title": "Thẻ học viên — điểm và đáp án",
-     "screens": [
-      "GV-LOP-040200",
-      "GV-LOP-040201"
-     ]
+     "title": "điểm và đáp án",
+     "screens": []
     },
     {
      "no": 22,
      "title": "Nhận xét của giáo viên",
-     "screens": [
-      "GV-LOP-030401"
-     ]
+     "screens": []
     },
     {
      "no": 23,
@@ -4882,9 +4270,7 @@
     {
      "no": 27,
      "title": "Toast phản hồi CRUD",
-     "screens": [
-      "GV-LOP-040205"
-     ]
+     "screens": []
     }
    ],
    "images": [
@@ -4928,23 +4314,17 @@
     {
      "no": 2,
      "title": "Hàng thẻ chỉ số",
-     "screens": [
-      "GV-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 3,
      "title": "Khối lớp đang chọn",
-     "screens": [
-      "GV-LOP-010000"
-     ]
+     "screens": []
     },
     {
      "no": 4,
      "title": "Danh sách lớp",
-     "screens": [
-      "GV-LOP-010000"
-     ]
+     "screens": []
     }
    ],
    "images": [

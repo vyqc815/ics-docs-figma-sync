@@ -4,10 +4,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Thông tin**.
 
 ## 1. UI
 
-### Trang 1: ADM-LOP-040100 — Tab Thông tin lớp học
-
-![Figma mới nhất · ADM-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040100.png)
-
+### Trang 1: Tab Thông tin lớp học
 ![Trang 1](./images/09-class-detail-information.png)
 
 *Chi tiết lớp học — Tab Thông tin — nhấn để xem ảnh gốc*
@@ -43,10 +40,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Thông tin**.
 - Cập nhật thành công hiển thị notification: `Cập nhật thông tin lớp học thành công.`
 - Cập nhật thất bại hiển thị notification: `Không thể cập nhật thông tin lớp học. Vui lòng thử lại.` Validation tại field vẫn phải hiển thị đúng nguyên nhân cụ thể.
 
-### Trang 2: ADM-LOP-040100 — Dropdown chọn Khóa học
-
-![Figma mới nhất · ADM-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040100.png)
-
+### Trang 2: Dropdown chọn Khóa học
 ![Trang 2](./images/10-class-detail-course-picker.png)
 
 *Dropdown chọn Khóa học có tìm kiếm — nhấn để xem ảnh gốc*
@@ -74,10 +68,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Thông tin**.
 - Thành công hiển thị: `Đổi khóa học thành công. Bài học, bài kiểm tra và lịch dạy đã được cập nhật.`
 - Nếu bài 1 đã mở, hiển thị: `Không thể đổi khóa học vì bài học đầu tiên đã được mở.`
 
-### Trang 3: ADM-LOP-040100 — Nhóm Ngày bắt đầu, Ngày kết thúc và lịch được sinh
-
-![Figma mới nhất · ADM-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040100.png)
-
+### Trang 3: Nhóm Ngày bắt đầu, Ngày kết thúc và lịch được sinh
 **Mô tả:**
 
 - `Ngày bắt đầu` là ngày của buổi 1 và chỉ được chỉnh trước khi bài học số 1 được mở lần đầu.
@@ -104,10 +95,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Thông tin**.
 - Đổi ngày bắt đầu thành công hiển thị: `Cập nhật ngày bắt đầu và lịch dạy thành công.`
 - Sau khi bài 1 đã mở, hiển thị: `Không thể đổi ngày bắt đầu vì bài học đầu tiên đã được mở.`
 
-### Trang 4: ADM-LOP-040100 — Dropdown Trạng thái
-
-![Figma mới nhất · ADM-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040100.png)
-
+### Trang 4: Dropdown Trạng thái
 **Mô tả:**
 
 - Hiển thị trạng thái hiện tại của lớp.
@@ -135,10 +123,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Thông tin**.
 - Đổi trạng thái thành công hiển thị: `Cập nhật trạng thái lớp học thành công.`
 - Thiếu điều kiện vào `Đang học` hiển thị: `Không thể chuyển lớp sang Đang học. Vui lòng hoàn tất: {danh sách điều kiện còn thiếu}.`
 
-### Trang 5: ADM-LOP-040100 — Popup xác nhận xóa lớp — Lần 1
-
-![Figma mới nhất · ADM-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040100.png)
-
+### Trang 5: Popup xác nhận xóa lớp — Lần 1
 **Mô tả:**
 
 - Chỉ xuất hiện khi `Admin` hoặc `Class Handler` đang phụ trách chính bấm `Xóa lớp`.
@@ -154,10 +139,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Thông tin**.
 - Không được dùng một lần bấm để vượt qua cả hai bước xác nhận.
 - Đóng popup bằng nút Hủy, icon đóng hoặc phím Escape đều không được xóa lớp.
 
-### Trang 6: ADM-LOP-040100 — Popup xác nhận xóa lớp — Lần 2
-
-![Figma mới nhất · ADM-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040100.png)
-
+### Trang 6: Popup xác nhận xóa lớp — Lần 2
 **Mô tả:**
 
 - Là bước xác nhận cuối cùng sau khi người dùng đã xác nhận lần 1.
@@ -176,10 +158,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Thông tin**.
 - Thành công hiển thị: `Đã xóa lớp học {Mã lớp}.`
 - Thất bại hiển thị: `Không thể xóa lớp học. Vui lòng thử lại.`
 
-### Trang 7: ADM-LOP-040100 — Toast phản hồi CRUD
-
-![Figma mới nhất · ADM-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040100.png)
-
+### Trang 7: Toast phản hồi CRUD
 ![Trang 7](../../images/01-toast-crud.png)
 
 *Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc*

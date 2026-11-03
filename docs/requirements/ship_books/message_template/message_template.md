@@ -2,10 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: ADM-TN-010004 — Danh Sách Tin Nhắn
-
-![Figma mới nhất · ADM-TN-010004](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-TN-010004.png)
-
+### Trang 1: Danh Sách Tin Nhắn
 ![alt text](image.png)
 
 **Mô tả:**

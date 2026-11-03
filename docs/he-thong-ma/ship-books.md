@@ -36,43 +36,24 @@ Requirement: `ship_books/ship_books/ship_books.md` — Ship Sách (tiền tố `
 
 ### `A01` Trang 1: Danh Sách Đơn Sách
 
-Frame: `ADM-SS-010001`, `ADM-SS-010002` (tool đoán:ADM-SS-010001, ADM-SS-010002) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-SS-010001, ADM-SS-010002) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Trang 2: Popup Thêm đơn sách / Cập nhật đơn sách
 
-Frame: `ADM-SS-010010`, `ADM-SS-010040` (tool đoán:ADM-SS-010010, ADM-SS-010040) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-SS-010010, ADM-SS-010040) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A03` Trang 3: Popup Xác nhận gửi tin nhắn
 
-Frame: `ADM-SS-010020` (tool đoán:ADM-SS-010020) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:ADM-SS-010020) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-
-### `F01` (ngoài Body)
-
-Frame: `ADM-SS-010000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-icon-button | `Atom/Icon Button`  | `2619:196841` Atom/Icon Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | atom-input | `Atom/Input` State=Search Compact, Kiểu=Chuẩn | `2619:196843` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | dropdown-trung-tam | `DD/Molecule/Trigger` Size=XS, State=Default | `4713:129538` Dropdown · Trung tâm | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | dropdown | `DD/Molecule/Trigger` Size=XS, State=Default | `2619:196844` Dropdown | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | atom-id-badge | `Atom/ID Badge` Type=6-digit, Size=26H | `2619:197715` Atom/ID Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | atom-button | `Atom/Button` Type=Primary, Size=XSmall | `2619:197718` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | atom-badge | `Atom/Badge`  | `2619:197739` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | mouse-click |  | `2929:44775` Mouse click | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | phan-trang |  | `2619:197086` Phân Trang | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | account | `ACCOUNT` Size=Default | `2619:197135` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | sidebar-menu-admin | `MENU - ADMIN`  | `4915:251382` Sidebar · MENU - ADMIN | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.12` | dd-molecule-menu-item | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=S | `2911:1151` DD/Molecule/Menu Item | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 

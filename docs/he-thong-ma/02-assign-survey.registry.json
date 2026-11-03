@@ -67,21 +67,13 @@
    "nodeId": "4273:152630",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/khao-sat/giao-khao-sat/danh-sach-nguoi-duoc-giao",
    "link": "/khao-sat/giao-khao-sat/danh-sach-nguoi-duoc-giao",
    "dark": "ADM-GKS-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "SB-0AS.A01",
-    "SB-0AS.A02",
-    "SB-0AS.A06",
-    "SB-0AS.A07",
-    "SB-0AS.A08",
-    "SB-0AS.A09",
-    "SB-0AS.F01"
-   ]
+   "regions": []
   },
   "ADM-GKS-010005": {
    "id": "ADM-GKS-010005",
@@ -96,15 +88,13 @@
    "nodeId": "5138:152878",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-gks-010005",
    "link": "/khao-sat/giao-khao-sat/danh-sach-nguoi-duoc-giao?popup=ADM-GKS-010005",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-0AS.A05"
-   ]
+   "regions": []
   },
   "ADM-GKS-010010": {
    "id": "ADM-GKS-010010",
@@ -119,15 +109,13 @@
    "nodeId": "4273:153174",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-gks-010010",
    "link": "/khao-sat/giao-khao-sat/danh-sach-nguoi-duoc-giao?popup=ADM-GKS-010010",
    "dark": "ADM-GKS-010010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-0AS.A03"
-   ]
+   "regions": []
   },
   "ADM-GKS-020000": {
    "id": "ADM-GKS-020000",
@@ -142,21 +130,13 @@
    "nodeId": "4885:39632",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/khao-sat/giao-khao-sat-lop/danh-sach-lop-duoc-giao",
    "link": "/khao-sat/giao-khao-sat-lop/danh-sach-lop-duoc-giao",
    "dark": "ADM-GKS-020000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "SB-0AS.A01",
-    "SB-0AS.A02",
-    "SB-0AS.A06",
-    "SB-0AS.A07",
-    "SB-0AS.A08",
-    "SB-0AS.A09",
-    "SB-0AS.F01"
-   ]
+   "regions": []
   },
   "ADM-GKS-020005": {
    "id": "ADM-GKS-020005",
@@ -171,15 +151,13 @@
    "nodeId": "5138:153136",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-gks-020005",
    "link": "/khao-sat/giao-khao-sat-lop/danh-sach-lop-duoc-giao?popup=ADM-GKS-020005",
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-0AS.A05"
-   ]
+   "regions": []
   },
   "ADM-GKS-020010": {
    "id": "ADM-GKS-020010",
@@ -194,15 +172,13 @@
    "nodeId": "4885:39937",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/adm-gks-020010",
    "link": "/khao-sat/giao-khao-sat-lop/danh-sach-lop-duoc-giao?popup=ADM-GKS-020010",
    "dark": "ADM-GKS-020010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "SB-0AS.A04"
-   ]
+   "regions": []
   },
   "ADM-GKS-030000": {
    "id": "ADM-GKS-030000",
@@ -217,21 +193,13 @@
    "nodeId": "4885:40930",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/khao-sat/giao-khao-sat-hoc-vien/danh-sach-hoc-vien-duoc-giao",
    "link": "/khao-sat/giao-khao-sat-hoc-vien/danh-sach-hoc-vien-duoc-giao",
    "dark": "ADM-GKS-030000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "SB-0AS.A01",
-    "SB-0AS.A02",
-    "SB-0AS.A06",
-    "SB-0AS.A07",
-    "SB-0AS.A08",
-    "SB-0AS.A09",
-    "SB-0AS.F01"
-   ]
+   "regions": []
   }
  },
  "regions": [
@@ -239,11 +207,7 @@
    "id": "SB-0AS.A01",
    "name": "trang-1-giao-khao-sat-tab-giao-vien",
    "title": "Trang 1: Giao khảo sát — tab Giáo viên",
-   "screens": [
-    "adm-gks-010000",
-    "adm-gks-020000",
-    "adm-gks-030000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-GKS-010000",
     "ADM-GKS-020000",
@@ -254,17 +218,14 @@
    "requirement": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-0AS.A02",
    "name": "trang-2-giao-khao-sat-tab-lop-hoc-vien",
    "title": "Trang 2: Giao khảo sát — tab Lớp / Học viên",
-   "screens": [
-    "adm-gks-010000",
-    "adm-gks-020000",
-    "adm-gks-030000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-GKS-010000",
     "ADM-GKS-020000",
@@ -275,15 +236,14 @@
    "requirement": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-0AS.A03",
    "name": "popup-1-chon-giao-vien-tab-giao-vien",
    "title": "Popup 1: Chọn giáo viên (tab Giáo viên)",
-   "screens": [
-    "adm-gks-010010"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-GKS-010010"
    ],
@@ -292,15 +252,14 @@
    "requirement": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-0AS.A04",
    "name": "popup-2-chon-lop-tab-lop",
    "title": "Popup 2: Chọn lớp (tab Lớp)",
-   "screens": [
-    "adm-gks-020010"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-GKS-020010"
    ],
@@ -309,16 +268,14 @@
    "requirement": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-0AS.A05",
    "name": "popup-3-chon-trung-tam-tab-hoc-vien-khao",
    "title": "Popup 3: Chọn trung tâm (tab Học viên — khảo sát Tuỳ chọn)",
-   "screens": [
-    "adm-gks-010005",
-    "adm-gks-020005"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-GKS-010005",
     "ADM-GKS-020005"
@@ -328,17 +285,14 @@
    "requirement": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-0AS.A06",
    "name": "popup-4-chon-buoi-hoc-tab-hoc-vien-khao-",
    "title": "Popup 4: Chọn buổi học (tab Học viên — khảo sát Bắt buộc)",
-   "screens": [
-    "adm-gks-010000",
-    "adm-gks-020000",
-    "adm-gks-030000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-GKS-010000",
     "ADM-GKS-020000",
@@ -349,17 +303,14 @@
    "requirement": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-0AS.A07",
    "name": "trang-3-giao-khao-sat-tab-ket-qua-khao-s",
    "title": "Trang 3: Giao khảo sát — tab \"Kết quả khảo sát\"",
-   "screens": [
-    "adm-gks-010000",
-    "adm-gks-020000",
-    "adm-gks-030000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-GKS-010000",
     "ADM-GKS-020000",
@@ -370,17 +321,14 @@
    "requirement": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-0AS.A08",
    "name": "popup-5-ket-qua-cua-1-lop-trung-tam",
    "title": "Popup 5: Kết quả của 1 lớp / trung tâm",
-   "screens": [
-    "adm-gks-010000",
-    "adm-gks-020000",
-    "adm-gks-030000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-GKS-010000",
     "ADM-GKS-020000",
@@ -391,17 +339,14 @@
    "requirement": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "SB-0AS.A09",
    "name": "popup-6-ket-qua-tung-giao-vien",
    "title": "Popup 6: Kết quả từng giáo viên",
-   "screens": [
-    "adm-gks-010000",
-    "adm-gks-020000",
-    "adm-gks-030000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "ADM-GKS-010000",
     "ADM-GKS-020000",
@@ -412,657 +357,8 @@
    "requirement": "survey_bug/survey/02-assign-survey/02-assign-survey.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
-  },
-  {
-   "id": "SB-0AS.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "adm-gks-010000",
-    "adm-gks-020000",
-    "adm-gks-030000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "SB-0AS.F01.01",
-     "name": "giao-khao-sat",
-     "label": "Giao khảo sát",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Giao khảo sát",
-        "figmaId": "5070:4920",
-        "layer": "Giao khảo sát",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Giao khảo sát",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Giao khảo sát",
-         "Type": "Primary",
-         "Size": "Small"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.02",
-     "name": "tab-giao-khao-sat",
-     "label": "Tab · Giao khảo sát",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Tab · Giao khảo sát",
-        "figmaId": "5070:4922",
-        "layer": "Tab · Giao khảo sát",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Giao khảo sát",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Active",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.03",
-     "name": "tab-ket-qua-khao-sat",
-     "label": "Tab · Kết quả khảo sát",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Tab · Kết quả khảo sát",
-        "figmaId": "5070:4923",
-        "layer": "Tab · Kết quả khảo sát",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Kết quả khảo sát",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.04",
-     "name": "dropdown-trung-tam",
-     "label": "Dropdown · Trung tâm",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Dropdown · Trung tâm",
-        "figmaId": "5138:150693",
-        "layer": "Dropdown · Trung tâm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Dropdown · Trung tâm",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trung tâm",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.05",
-     "name": "avatar",
-     "label": "Avatar",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Avatar",
-        "figmaId": "5070:4937",
-        "layer": "Avatar",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Avatar",
-        "component": "Avatar",
-        "variant": {
-         "Count": "+2",
-         "Name": "Nguyễn Văn An",
-         "Size": "32"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.06",
-     "name": "trang-thai",
-     "label": "Trạng thái",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Trạng thái",
-        "figmaId": "5070:4944",
-        "layer": "Trạng thái",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Trạng thái",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "Đã hoàn thành",
-         "Variant": "Success",
-         "Dropdown": "Off"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.07",
-     "name": "xem-ket-qua",
-     "label": "Xem kết quả",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Xem kết quả",
-        "figmaId": "5070:4946",
-        "layer": "Xem kết quả",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Xem kết quả",
-        "component": "Atom/Button",
-        "variant": {
-         "Label": "Xem kết quả",
-         "Type": "Primary",
-         "Size": "Small"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.08",
-     "name": "tab-giao-vien",
-     "label": "Tab · Giáo viên",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Tab · Giáo viên",
-        "figmaId": "5070:5052",
-        "layer": "Tab · Giáo viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Giáo viên",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Active",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.09",
-     "name": "tab-lop",
-     "label": "Tab · Lớp",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Tab · Lớp",
-        "figmaId": "5070:5053",
-        "layer": "Tab · Lớp",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Lớp",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.10",
-     "name": "tab-hoc-vien",
-     "label": "Tab · Học viên",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Tab · Học viên",
-        "figmaId": "5070:5054",
-        "layer": "Tab · Học viên",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Tab · Học viên",
-        "component": "Atom/Side Tab",
-        "variant": {
-         "Có số đếm": false,
-         "State": "Inactive",
-         "Icon": "No",
-         "Kiểu": "Gạch trái"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.11",
-     "name": "stt",
-     "label": "STT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "STT",
-        "figmaId": "5070:5057",
-        "layer": "STT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "STT",
-        "component": "Atom/Number Badge",
-        "variant": {
-         "Value": "1",
-         "Type": "Square",
-         "Size": "Medium",
-         "State": "Inactive"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.12",
-     "name": "trang-thai-giao",
-     "label": "Trạng thái giao",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Trạng thái giao",
-        "figmaId": "5070:5060",
-        "layer": "Trạng thái giao",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Trạng thái giao",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Thu hồi",
-         "Size": "S"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.13",
-     "name": "so-luong",
-     "label": "Số lượng",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Số lượng",
-        "figmaId": "5070:5067",
-        "layer": "Số lượng",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Số lượng",
-        "component": "Atom/Badge",
-        "variant": {
-         "Label": "12 người được giao",
-         "Variant": "Orange",
-         "Dropdown": "Off"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.14",
-     "name": "chon-cuoc-khao-sat",
-     "label": "Chọn cuộc khảo sát",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Chọn cuộc khảo sát",
-        "figmaId": "5070:5095",
-        "layer": "Chọn cuộc khảo sát",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Chọn cuộc khảo sát",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Count Value": "1",
-         "Count": false,
-         "Chevron": true,
-         "Clear": false,
-         "Leading Icon": "2015:30465",
-         "Leading": false,
-         "Value": "Giá trị đã chọn",
-         "Placeholder": "Chọn...",
-         "Size": "S",
-         "State": "Default",
-         "Content": "Add"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.15",
-     "name": "sidebar-menu-admin",
-     "label": "Sidebar · MENU - ADMIN",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Sidebar · MENU - ADMIN",
-        "figmaId": "4915:245517",
-        "layer": "Sidebar · MENU - ADMIN",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - ADMIN",
-        "component": "MENU - ADMIN",
-        "variant": {
-         "Trang": "Khảo sát / Giao Khảo sát"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.16",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "4273:152766",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "Admin",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.17",
-     "name": "panel",
-     "label": "Panel",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-010000": [
-       {
-        "term": "Panel",
-        "figmaId": "5019:18702",
-        "layer": "Panel",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Panel",
-        "component": "DD/Organism/Menu Panel",
-        "variant": {
-         "Footer": false,
-         "Search": false,
-         "Type": "Single"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.18",
-     "name": "percent",
-     "label": "PERCENT %",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-020000": [
-       {
-        "term": "PERCENT %",
-        "figmaId": "5070:5207",
-        "layer": "PERCENT %",
-        "confidence": "cao",
-        "region": null,
-        "owner": "PERCENT %",
-        "component": "PERCENT %",
-        "variant": {
-         "Property 1": "ĐN 1"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.19",
-     "name": "logo-trung-tam",
-     "label": "Logo trung tâm",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-030000": [
-       {
-        "term": "Logo trung tâm",
-        "figmaId": "5070:38376",
-        "layer": "Logo trung tâm",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Logo trung tâm",
-        "component": "Atom/Logo trung tâm",
-        "variant": {
-         "Trung tâm": "Sakumi"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "SB-0AS.F01.20",
-     "name": "loai-khao-sat",
-     "label": "Loại khảo sát",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "adm-gks-030000": [
-       {
-        "term": "Loại khảo sát",
-        "figmaId": "4885:42227",
-        "layer": "Loại khảo sát",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Loại khảo sát",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Tuỳ chọn",
-         "Size": "S"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "items": [],
+   "screensFromItems": []
   }
  ],
  "exceptions": [

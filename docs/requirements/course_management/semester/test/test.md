@@ -83,10 +83,7 @@ Tab **Kiểm tra** trong màn **Học kỳ** của khoá học (role **CD**): đ
 - Bộ câu hỏi này cũng là bộ câu hỏi hiển thị ở menu Bài Tập Về Nhà → tab Kiểm tra; sửa ở một nơi thì nơi kia thấy ngay.
 - Khác Figma: bộ câu hỏi đang vẽ thành màn riêng `CD-KH-030340` (mở từ `>`); requirement đặt trong tab `Bộ Câu Hỏi` của popup (**UI cần bổ sung**).
 
-### Trang 4: CD-KH-030300 — Toast phản hồi CRUD
-
-![Figma mới nhất · CD-KH-030300](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030300.png)
-
+### Trang 4: Toast phản hồi CRUD
 ![Trang 4](../../../images/01-toast-crud.png)
 
 *Toast Thành Công, Thông Báo, Cảnh Báo và Có Lỗi Xảy Ra — nhấn để xem ảnh gốc*

@@ -2,10 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: GV-KS-010001 — Popup: Thông báo khảo sát mới
-
-![Figma mới nhất · GV-KS-010001](https://ics-figma-demo.vercel.app/api/figma-frame/GV-KS-010001.png)
-
+### Trang 1: Popup: Thông báo khảo sát mới
 ![alt text](image.png)
 
 **Mô tả:**
@@ -16,10 +13,7 @@
 - 1 khảo sát → nêu tên khảo sát. ≥ 2 khảo sát → gộp 1 popup: "Bạn có N khảo sát cần hoàn thành".
 - "Làm ngay" → chuyển tới **Khảo sát của tôi** (tab Cần làm). "Để sau" → đóng, lần vào web sau hiện lại.
 
-### Trang 2: GV-KS-010000 — Khảo sát của tôi — tab Cần làm
-
-![Figma mới nhất · GV-KS-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-KS-010000.png)
-
+### Trang 2: Khảo sát của tôi — tab Cần làm
 ![alt text](image-1.png)
 
 **Mô tả:**
@@ -33,10 +27,7 @@
 - Khảo sát bị thu hồi / bị xoá → không còn trong danh sách.
 - Danh sách, số trên tab và badge **lọc theo trung tâm đang chọn** ở header (dropdown "Sakumi"); đổi trung tâm → tải lại. Khảo sát thuộc trung tâm admin đã chọn khi giao.
 
-### Trang 3: GV-KS-010000 — Khảo sát của tôi — tab Đã hoàn thành
-
-![Figma mới nhất · GV-KS-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-KS-010000.png)
-
+### Trang 3: Khảo sát của tôi — tab Đã hoàn thành
 ![alt text](image-2.png)
 
 **Mô tả:**
@@ -46,10 +37,7 @@
 - Tag "Đã hoàn thành" và thanh tiến độ màu xanh lá; "Đã trả lời x/y câu" — x có thể < y do câu không bắt buộc được bỏ trống.
 - "Xem lại" → mở trang Làm khảo sát ở chế độ chỉ xem: hiển thị câu trả lời đã gửi, không chọn / nhập được, ẩn "Lưu nháp" và "Gửi khảo sát".
 
-### Trang 4: GV-KS-010000 — Làm khảo sát
-
-![Figma mới nhất · GV-KS-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-KS-010000.png)
-
+### Trang 4: Làm khảo sát
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)

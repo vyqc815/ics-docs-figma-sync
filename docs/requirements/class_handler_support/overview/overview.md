@@ -6,10 +6,7 @@ Công thức dùng chung, không tính lại khác: [Giáo viên — Lớp](../.
 
 ## 1. UI
 
-### Trang 1: CH-TC-010003 — Thống kê tổng quan
-
-![Figma mới nhất · CH-TC-010003](https://ics-figma-demo.vercel.app/api/figma-frame/CH-TC-010003.png)
-
+### Trang 1: Thống kê tổng quan
 ![Trang 1](./images/overview.png)
 
 **Mô tả:**

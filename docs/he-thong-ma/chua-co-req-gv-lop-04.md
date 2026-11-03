@@ -31,48 +31,6 @@
 
 ## 4. Khu vực và item
 
-### `F01` MainContent
-
-Frame: `GV-LOP-040300` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-button | `Atom/Button` Type=Primary, Size=Medium | `5425:278895` Atom/Button | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | atom-badge | `Atom/Badge`  | `5425:279197` Atom/Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | trinh-phat-am-thanh | `Atom/Audio Player` State=Chưa phát | `5741:417307` Trình phát âm thanh | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | dd-molecule-trigger | `DD/Molecule/Trigger` Size=XS, State=Default | `5425:279217` DD/Molecule/Trigger | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.05` | atom-input | `Atom/Input` State=Textarea, Kiểu=S | `5425:279232` Atom/Input | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.06` | so-thu-tu | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Inactive | `5425:293927` Số thứ tự | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.07` | hoc-vien | `AVATAR + Name`  | `5425:293731` Học viên | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.08` | diem-0 | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `5425:293861` Điểm 0 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.09` | diem-1 | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `5425:293863` Điểm 1 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.10` | diem-2 | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `5425:293865` Điểm 2 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.11` | diem-3 | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `5425:293867` Điểm 3 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.12` | diem-4 | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `5425:293869` Điểm 4 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.13` | diem-5 | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `5425:293871` Điểm 5 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.14` | diem-6 | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `5425:293873` Điểm 6 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.15` | diem-7 | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `5425:293875` Điểm 7 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.16` | diem-8 | `Atom/Number Badge` Type=Square, Size=Medium, State=Active | `5425:293877` Điểm 8 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.17` | diem-9 | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `5425:293879` Điểm 9 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.18` | diem-10 | `Atom/Number Badge` Type=Square, Size=Medium, State=Inactive | `5425:293881` Điểm 10 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.19` | ghi-am-1-m4a | `Atom/Uploaded File Card` Type=Menu | `5425:293948` ghi-am-1.m4a | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.20` | ghi-am-2-m4a | `Atom/Uploaded File Card` Type=Menu | `5425:293963` ghi-am-2.m4a | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.21` | o-nhan-xet | `Atom/Input` State=Textarea, Kiểu=S | `5425:294005` Ô nhận xét | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.22` | nhan-xet-giao-vien-m4a | `Atom/Uploaded File Card` Type=Close | `5425:293978` nhan-xet-giao-vien.m4a | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.23` | o-dap-an | `Atom/Input` State=Disabled, Kiểu=Chuẩn | `5425:294014` Ô đáp án | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.24` | ty-le-diem | `PERCENT %`  | `5425:293760` Tỷ lệ điểm | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F02` (ngoài Body)
-
-Frame: `GV-LOP-040300` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F02.01` | component-2 | `Switch Center`  | `5425:278789` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.02` | account | `ACCOUNT` Size=Default | `5425:278791` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.03` | header-vai-tro |  | `5425:278792` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.04` | sidebar-menu-teacher | `MENU - TEACHER`  | `5425:278883` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
-
 ## 5. Nghiệp vụ
 
 | Mã | Tên | Nội dung |

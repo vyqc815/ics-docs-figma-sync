@@ -46,17 +46,13 @@
    "nodeId": "714:16696",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quan-ly-danh-muc",
    "link": "/quan-ly-danh-muc",
    "dark": "CD-DM-010000-DK",
    "openedFrom": [],
    "citedByRequirement": true,
-   "regions": [
-    "CM-DC.A01",
-    "CM-DC.F01",
-    "CM-DC.F02"
-   ]
+   "regions": []
   },
   "CD-DM-010010": {
    "id": "CD-DM-010010",
@@ -71,15 +67,13 @@
    "nodeId": "1725:17306",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do",
    "link": "/quan-ly-danh-muc?popup=CD-DM-010010",
    "dark": "CD-DM-010010-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CM-DC.A02"
-   ]
+   "regions": []
   },
   "CD-DM-010020": {
    "id": "CD-DM-010020",
@@ -94,15 +88,13 @@
    "nodeId": "1758:4876",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/mindset",
    "link": "/quan-ly-danh-muc?state=CD-DM-010020",
    "dark": "CD-DM-010020-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CM-DC.A03"
-   ]
+   "regions": []
   },
   "CD-DM-010030": {
    "id": "CD-DM-010030",
@@ -117,15 +109,13 @@
    "nodeId": "1758:5127",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/tieu-chuan-giao-trinh",
    "link": "/quan-ly-danh-muc?state=CD-DM-010030",
    "dark": "CD-DM-010030-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CM-DC.A03"
-   ]
+   "regions": []
   },
   "CD-DM-010040": {
    "id": "CD-DM-010040",
@@ -140,15 +130,13 @@
    "nodeId": "1758:5335",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/huong-dan-giang-day",
    "link": "/quan-ly-danh-muc?state=CD-DM-010040",
    "dark": "CD-DM-010040-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CM-DC.A03"
-   ]
+   "regions": []
   },
   "CD-DM-010057": {
    "id": "CD-DM-010057",
@@ -163,15 +151,13 @@
    "nodeId": "689:14188",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-dm-010057",
    "link": "/quan-ly-danh-muc?state=CD-DM-010057",
    "dark": "CD-DM-010057-DK",
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CM-DC.A03"
-   ]
+   "regions": []
   },
   "CD-DM-010060": {
    "id": "CD-DM-010060",
@@ -186,7 +172,7 @@
    "nodeId": "1854:20955",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-dm-010060",
    "link": "/quan-ly-danh-muc?popup=CD-DM-010060",
    "dark": "CD-DM-010060-DK",
@@ -207,7 +193,7 @@
    "nodeId": "1854:21305",
    "inFigma": true,
    "inPageList": true,
-   "synced": true,
+   "synced": false,
    "route": "/frames/cd-dm-010062",
    "link": "/quan-ly-danh-muc?state=CD-DM-010062",
    "dark": "CD-DM-010062-DK",
@@ -221,9 +207,7 @@
    "id": "CM-DC.A01",
    "name": "popup-chi-tiet-danh-muc",
    "title": "Popup Chi tiết danh mục",
-   "screens": [
-    "cd-dm-010000"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-DM-010000"
    ],
@@ -232,15 +216,14 @@
    "requirement": "curriculum_management_requirement/category_management/detail_category.md",
    "needsDesign": false,
    "figmaDiffNotes": [],
-   "items": []
+   "items": [],
+   "screensFromItems": []
   },
   {
    "id": "CM-DC.A02",
    "name": "tab-tong-quan",
    "title": "Tab Tổng quan",
-   "screens": [
-    "cd-dm-010010"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-DM-010060"
    ],
@@ -257,21 +240,7 @@
      "spec": "9 chữ số `CCAALLMMM` theo [Quản lý khoá học](../../course_management/course_management.md) REQ06: `AA` = ID danh mục hiện tại, `LL` = ID cấp độ đã chọn, `MMM` do hệ thống cấp. Chưa chọn Cấp độ thì `LL` = `00`. Không nhập tay lúc thêm nhanh; khi còn `Nháp` chỉ sửa được `MMM` (trong popup Kích hoạt công khai khoá học); khóa vĩnh viễn kể từ khi rời `Nháp`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-dm-010010": [
-       {
-        "term": "ID",
-        "figmaId": "1725:17376",
-        "layer": "ID",
-        "confidence": "cao",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [
       {
        "type": "governed-by",
@@ -280,10 +249,8 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [
-      "CCAALLMMM"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-DC.A02.02",
@@ -292,25 +259,11 @@
      "spec": "Bắt buộc, không giới hạn độ dài nghiệp vụ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-dm-010010": [
-       {
-        "term": "Tên khóa học",
-        "figmaId": "1725:17378",
-        "layer": "Tên khoá học",
-        "confidence": "cao",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-DC.A02.03",
@@ -319,25 +272,11 @@
      "spec": "Không bắt buộc",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-dm-010010": [
-       {
-        "term": "Mô tả khóa học",
-        "figmaId": "1725:17380",
-        "layer": "Mô tả khoá học",
-        "confidence": "cao",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-DC.A02.04",
@@ -346,31 +285,15 @@
      "spec": "Chọn từ danh sách đã định nghĩa tại feature `Quản lý cấp độ`; không bắt buộc, mặc định `Không` nếu chưa chọn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-dm-010010": [
-       {
-        "term": "Cấp độ",
-        "figmaId": "1725:17384",
-        "layer": "Cấp độ",
-        "confidence": "cao",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [
       "CM-DC.TC01",
       "CM-DC.TC03",
       "CM-DC.TC12"
      ],
-     "missingTerms": [
-      "Quản lý cấp độ"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-DC.A02.05",
@@ -379,27 +302,11 @@
      "spec": "Chỉ đọc. Khóa học – kỳ có quan hệ `1:n`; hệ thống tự đếm và cập nhật khi quan hệ được thêm/xóa.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-dm-010010": [
-       {
-        "term": "Số kỳ",
-        "figmaId": "1725:17382",
-        "layer": "Số kỳ",
-        "confidence": "cao",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "1:n"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-DC.A02.06",
@@ -408,32 +315,7 @@
      "spec": "`Nháp` (mặc định) / `Công Khai` / `Vô hiệu`, theo rule chuyển trạng thái của khóa học (`course_management.md` REQ05): `Nháp → Công Khai` (qua popup Công khai khoá học), `Công Khai ↔ Vô hiệu`, không về `Nháp`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-dm-010010": [
-       {
-        "term": "Trạng thái",
-        "figmaId": "1725:17386",
-        "layer": "Trạng thái",
-        "confidence": "cao",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       },
-       {
-        "term": "Nháp",
-        "figmaId": "1725:17395",
-        "layer": "Nhập mô tả khoá học",
-        "confidence": "thap",
-        "region": "Modal Body Content",
-        "owner": null,
-        "component": null,
-        "variant": null,
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [
       {
        "type": "governed-by",
@@ -447,7 +329,7 @@
       "CM-DC.TC07"
      ],
      "missingTerms": [],
-     "status": "khop"
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-DC.A02.07",
@@ -456,48 +338,20 @@
      "spec": "Sau khi ngừng nhập `2 giây`, lọc trong danh mục hiện tại theo keyword khớp một phần với ID, Tên hoặc Mô tả.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-dm-010010": [
-       {
-        "term": "Tìm kiếm",
-        "figmaId": "I2702:46349;1739:32351",
-        "layer": "Tìm nội dung...",
-        "confidence": "thap",
-        "region": "Modal Body Content",
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm kiếm khoá học...",
-         "State": "Search Compact",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "2 giây"
-     ],
-     "status": "khop"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
    ],
-   "screensFromItems": [
-    "cd-dm-010010"
-   ]
+   "screensFromItems": []
   },
   {
    "id": "CM-DC.A03",
    "name": "tab-mindset-tieu-chuan-giao-trinh-va-huo",
    "title": "Tab Mindset, Tiêu chuẩn giáo trình và Hướng dẫn giảng dạy",
-   "screens": [
-    "cd-dm-010020",
-    "cd-dm-010030",
-    "cd-dm-010040",
-    "cd-dm-010057"
-   ],
+   "screens": [],
    "screensGuessed": [
     "CD-DM-010020",
     "CD-DM-010030",
@@ -517,32 +371,11 @@
      "spec": "Sau khi ngừng nhập `2 giây`, lọc theo keyword khớp một phần với tên package/category hoặc tiêu đề action item.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "cd-dm-010020": [
-       {
-        "term": "Tìm kiếm",
-        "figmaId": "I2702:46381;1739:32505",
-        "layer": "Tìm nội dung...",
-        "confidence": "thap",
-        "region": "Modal Body: 2 Columns Layout",
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm kiếm mindset...",
-         "State": "Search",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [
-      "2 giây"
-     ],
-     "status": "khop-mot-phan"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-DC.A03.02",
@@ -556,10 +389,8 @@
      "testcases": [
       "CM-DC.TC08"
      ],
-     "missingTerms": [
-      "Package/category"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-DC.A03.03",
@@ -573,10 +404,8 @@
      "testcases": [
       "CM-DC.TC08"
      ],
-     "missingTerms": [
-      "Action item"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     },
     {
      "id": "CM-DC.A03.04",
@@ -591,388 +420,11 @@
       "CM-DC.TC08",
       "CM-DC.TC11"
      ],
-     "missingTerms": [
-      "Lưu/Áp dụng"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "chua-co-spec"
     }
-   ]
-  },
-  {
-   "id": "CM-DC.F01",
-   "name": "ngoai-body",
-   "title": "(ngoài Body)",
-   "screens": [
-    "cd-dm-010000"
    ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CM-DC.F01.01",
-     "name": "sidebar-menu-cd",
-     "label": "Sidebar · MENU - CD",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-dm-010000": [
-       {
-        "term": "Sidebar · MENU - CD",
-        "figmaId": "4915:257163",
-        "layer": "Sidebar · MENU - CD",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Sidebar · MENU - CD",
-        "component": "MENU - CD",
-        "variant": {
-         "Trang": "Danh Mục & Cấp Độ"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-DC.F01.02",
-     "name": "account",
-     "label": "ACCOUNT",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-dm-010000": [
-       {
-        "term": "ACCOUNT",
-        "figmaId": "2223:86161",
-        "layer": "ACCOUNT",
-        "confidence": "cao",
-        "region": null,
-        "owner": "ACCOUNT",
-        "component": "ACCOUNT",
-        "variant": {
-         "Role": "CD",
-         "Theme": "Dark",
-         "Size": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-DC.F01.03",
-     "name": "component-2",
-     "label": "Component 2",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-dm-010000": [
-       {
-        "term": "Component 2",
-        "figmaId": "4273:160833",
-        "layer": "Component 2",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Component 2",
-        "component": "Switch Center",
-        "variant": {
-         "Property 1": "Sakumi"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-DC.F01.04",
-     "name": "atom-input",
-     "label": "Atom/Input",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-dm-010000": [
-       {
-        "term": "Atom/Input",
-        "figmaId": "3065:53784",
-        "layer": "Atom/Input",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Atom/Input",
-        "component": "Atom/Input",
-        "variant": {
-         "Loại": "Gift code",
-         "Text": "Tìm nội dung...",
-         "State": "Search Compact",
-         "Kiểu": "Chuẩn"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-DC.F01.05",
-     "name": "dd-molecule-trigger",
-     "label": "DD/Molecule/Trigger",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-dm-010000": [
-       {
-        "term": "DD/Molecule/Trigger",
-        "figmaId": "3065:53785",
-        "layer": "DD/Molecule/Trigger",
-        "confidence": "cao",
-        "region": null,
-        "owner": "DD/Molecule/Trigger",
-        "component": "DD/Molecule/Trigger",
-        "variant": {
-         "Placeholder": "Chọn...",
-         "Clear": false,
-         "Count Value": "1",
-         "Leading": false,
-         "Leading Icon": "2015:30465",
-         "Count": false,
-         "Chevron": true,
-         "Value": "Trạng thái",
-         "Size": "XS",
-         "State": "Default",
-         "Content": "Value"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-DC.F01.06",
-     "name": "add-new-bar-them-noi-dung-khoa-hoc-moi",
-     "label": "Add New Bar · Thêm nội dung khoá học mới",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-dm-010000": [
-       {
-        "term": "Add New Bar · Thêm nội dung khoá học mới",
-        "figmaId": "3065:53528",
-        "layer": "Add New Bar · Thêm nội dung khoá học mới",
-        "confidence": "cao",
-        "region": null,
-        "owner": "Add New Bar · Thêm nội dung khoá học mới",
-        "component": "Molecule/Add New Bar",
-        "variant": {
-         "Icon trái": false,
-         "Nút": "1075:1478",
-         "Placeholder": "Thêm nội dung khoá học mới",
-         "Type": "Box",
-         "Size": "M",
-         "State": "Default"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
-  },
-  {
-   "id": "CM-DC.F02",
-   "name": "row",
-   "title": "Row",
-   "screens": [
-    "cd-dm-010000"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
-    {
-     "id": "CM-DC.F02.01",
-     "name": "id-badge",
-     "label": "ID Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-dm-010000": [
-       {
-        "term": "ID Badge",
-        "figmaId": "3065:53304",
-        "layer": "ID Badge",
-        "confidence": "cao",
-        "region": "Row",
-        "owner": "ID Badge",
-        "component": "Atom/ID Badge",
-        "variant": {
-         "Type": "7-digit",
-         "Size": "26H",
-         "Item": "01"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-DC.F02.02",
-     "name": "atom-number-badge",
-     "label": "Atom/Number Badge",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-dm-010000": [
-       {
-        "term": "Atom/Number Badge",
-        "figmaId": "3065:53310",
-        "layer": "Atom/Number Badge",
-        "confidence": "cao",
-        "region": "Row",
-        "owner": "Atom/Number Badge",
-        "component": "Atom/Number Badge",
-        "variant": {
-         "Value": "2",
-         "Type": "Kỳ",
-         "Size": "Medium",
-         "State": "Active"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-DC.F02.03",
-     "name": "atom-status",
-     "label": "Atom/Status",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-dm-010000": [
-       {
-        "term": "Atom/Status",
-        "figmaId": "3065:53314",
-        "layer": "Atom/Status",
-        "confidence": "cao",
-        "region": "Row",
-        "owner": "Atom/Status",
-        "component": "Atom/Status",
-        "variant": {
-         "Status": "Công khai",
-         "Size": "M"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-DC.F02.04",
-     "name": "arrow-detail",
-     "label": "ARROW DETAIL",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-dm-010000": [
-       {
-        "term": "ARROW DETAIL",
-        "figmaId": "3065:53318",
-        "layer": "ARROW DETAIL",
-        "confidence": "cao",
-        "region": "Row",
-        "owner": "ARROW DETAIL",
-        "component": "ARROW DETAIL",
-        "variant": {
-         "Property 1": "Arrow detail (Default)",
-         "Property 2": "No"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    },
-    {
-     "id": "CM-DC.F02.05",
-     "name": "dd-organism-menu-panel",
-     "label": "DD/Organism/Menu Panel",
-     "spec": "",
-     "source": "tu-dien",
-     "content": "figma",
-     "status": "chi-co-tren-figma",
-     "relations": [],
-     "testcases": [],
-     "missingTerms": [],
-     "matches": {
-      "cd-dm-010000": [
-       {
-        "term": "DD/Organism/Menu Panel",
-        "figmaId": "3065:53331",
-        "layer": "DD/Organism/Menu Panel",
-        "confidence": "cao",
-        "region": "Row",
-        "owner": "DD/Organism/Menu Panel",
-        "component": "DD/Organism/Menu Panel",
-        "variant": {
-         "Footer": false,
-         "Search": false,
-         "Type": "Action"
-        },
-        "inCode": false
-       }
-      ]
-     }
-    }
-   ]
+   "screensFromItems": []
   }
  ],
  "exceptions": [

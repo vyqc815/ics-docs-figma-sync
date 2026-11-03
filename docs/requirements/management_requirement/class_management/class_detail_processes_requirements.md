@@ -33,10 +33,7 @@ Ba tab dùng cùng Action Board, chỉ khác tên và loại quy trình. Package
 - Người chưa được add vào lớp không vào được Chi tiết lớp hoặc ba tab này, kể cả khi biết URL hay ID lớp.
 - Result không lẫn giữa các lớp, ba loại quy trình hoặc với định nghĩa nguồn. Định nghĩa đã Công khai bị khóa thêm/sửa/xóa; khi Công khai, cập nhật Result theo quyền. Quy trình chuyển Vô hiệu vẫn hiện nội dung/Result đã ghi nhưng chỉ xem; không xóa kết quả cũ.
 
-### Trang 2: ADM-LOP-020610 — Popup Thêm nội dung
-
-![Figma mới nhất · ADM-LOP-020610](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020610.png)
-
+### Trang 2: Popup Thêm nội dung
 ![Trang 2](./images/70-class-process-picker.png)
 
 *Ảnh popup Thêm quy trình của tab Quy trình lớp; chỉ hiển thị Package được định nghĩa cho loại này.*

@@ -26,64 +26,31 @@ Requirement: `survey_bug/survey/03-take-survey/03-take-survey.md` — Giáo viê
 
 ### `A01` Popup: Thông báo khảo sát mới
 
-Frame: `GV-KS-010001` (tool đoán:GV-KS-010001) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:GV-KS-010001) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A02` Trang 1: Khảo sát của tôi — tab Cần làm
 
-Frame: `GV-KS-010000` (tool đoán:GV-KS-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:GV-KS-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A03` Trang 2: Khảo sát của tôi — tab Đã hoàn thành
 
-Frame: `GV-KS-010000` (tool đoán:GV-KS-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:GV-KS-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
 ### `A04` Trang 3: Làm khảo sát
 
-Frame: `GV-KS-010000` (tool đoán:GV-KS-010000) · Nguồn nội dung: QC
+Frame: chưa có (tool đoán:GV-KS-010000) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-
-### `F01` Header
-
-Frame: `GV-KS-010000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | account | `ACCOUNT` Size=Default | `4686:43682` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | component-2 | `Switch Center`  | `4686:43684` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | header-vai-tro |  | `4899:187331` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F02` Sidebar
-
-Frame: `GV-KS-010000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F02.01` | card-menu | `Card Menu v2 (Test)` Type=Chính, State=Default | `6244:56401` Card Menu | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.02` | header-gop-y | `Header/Góp ý` Kiểu=Đầy đủ, State=Enable | `4885:104488` Header/Góp ý | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.03` | header-khao-sat | `Header/Khảo sát` Kiểu=Đầy đủ, State=Active | `4885:104492` Header/Khảo sát | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F03` (ngoài Body)
-
-Frame: `GV-KS-010000` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F03.01` | tab-can-lam | `Atom/Side Tab` State=Active, Kiểu=Gạch trái | `4686:43767` Tab · Cần làm | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.02` | tab-da-hoan-thanh | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `4686:43768` Tab · Đã hoàn thành | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.03` | trang-thai | `Atom/Badge`  | `4686:43777` Trạng thái | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.04` | liner-icon | `Liner Icon`  | `4686:43773` Liner Icon | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.05` | tiep-tuc-lam | `Atom/Button` Type=Primary, Size=Small | `4686:43783` Tiếp tục làm | — |  |  | Chỉ có trên Figma | Figma |
-| `F03.06` | lam-khao-sat | `Atom/Button` Type=Primary, Size=Small | `4686:43793` Làm khảo sát | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 

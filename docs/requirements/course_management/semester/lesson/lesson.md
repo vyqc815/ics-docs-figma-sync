@@ -2,10 +2,7 @@
 
 ## 1. UI
 
-### Trang 1: CD-KH-030200 — Danh sách bài học (Tab Bài học)
-
-![Figma mới nhất · CD-KH-030200](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030200.png)
-
+### Trang 1: Danh sách bài học (Tab Bài học)
 ![alt text](image.png)
 
 - CD **chỉ xem** danh sách bài học của học kỳ đang chọn; nhấn card để mở popup "Chi tiết bài học".
@@ -41,10 +38,7 @@
 
 ---
 
-### Trang 3: CD-KH-030200 — Popup: Chi tiết bài học - Tab Nội dung
-
-![Figma mới nhất · CD-KH-030200](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030200.png)
-
+### Trang 3: Popup: Chi tiết bài học - Tab Nội dung
 ![alt text](image-2.png)
 
 **Cột trái - Nội dung** (2 cấp: Nhóm nội dung → Nội dung, chỉ có 1 loại nội dung nhập text; bỏ popup 9 loại action cũ):
@@ -72,10 +66,7 @@ Popup xóa nhóm: tiêu đề `Xoá nhóm nội dung`; nội dung `Nhóm "{tên 
 
 ---
 
-### Trang 4: CD-KH-030200 — Popup: Chi tiết bài học - Tab Tài nguyên
-
-![Figma mới nhất · CD-KH-030200](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030200.png)
-
+### Trang 4: Popup: Chi tiết bài học - Tab Tài nguyên
 ![alt text](image-3.png)
 ![alt text](image-5.png)
 

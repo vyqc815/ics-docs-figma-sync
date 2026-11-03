@@ -24,36 +24,25 @@ Requirement: `teacher_role/class/class_course_requirements.md` — [Giáo viên]
 
 ### `A01` Mindset khoá học
 
-Frame: `GV-LOP-080100` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | danh-sach-ben-phai |  | `4333:16299` Danh Sách | — |  |  | Khớp | QC |
-| `A01.02` | tieu-de-ben-trai |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.03` | khoi-noi-dung |  | `4333:16362` Chân dung học viên | — |  |  | Khớp | QC |
-| `A01.04` | nguon |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.05` | khong-co-du-lieu |  | `4333:16299` Danh Sách | — |  |  | Khớp | QC |
+| `A01.01` | danh-sach-ben-phai |  |  | — |  |  | Chưa sync | QC |
+| `A01.02` | tieu-de-ben-trai |  |  | — |  |  | Chưa sync | QC |
+| `A01.03` | khoi-noi-dung |  |  | — |  |  | Chưa sync | QC |
+| `A01.04` | nguon |  |  | — |  |  | Chưa sync | QC |
+| `A01.05` | khong-co-du-lieu |  |  | — |  |  | Chưa sync | QC |
 
 ### `A02` Hướng dẫn giảng dạy
 
-Frame: `GV-LOP-090100` · Nguồn nội dung: QC
+Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | danh-sach |  | `4333:14614` Danh sách | — |  |  | Khớp | QC |
-| `A02.02` | vung-trai |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.03` | khi-co-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
-
-### `F01` (ngoài Body)
-
-Frame: `GV-LOP-080100` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F01.01` | component-2 | `Switch Center`  | `4333:15616` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | account | `ACCOUNT` Size=Default | `4333:15618` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.03` | header-vai-tro |  | `4899:187555` Header/Vai trò | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.04` | sidebar-menu-teacher | `MENU - TEACHER`  | `4915:261377` Sidebar · MENU - TEACHER | — |  |  | Chỉ có trên Figma | Figma |
+| `A02.01` | danh-sach |  |  | — |  |  | Chưa sync | QC |
+| `A02.02` | vung-trai |  |  | — |  |  | Chưa sync | QC |
+| `A02.03` | khi-co-du-lieu |  |  | — |  |  | Chưa sync | QC |
 
 ## 5. Nghiệp vụ
 
@@ -83,7 +72,7 @@ Frame: `GV-LOP-080100` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (4): `A01.02`, `A01.04`, `A02.02`, `A02.03`
+- Chưa sync (8): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A02.01`, `A02.02`, `A02.03`
 - Popup chưa có màn cha (1): `GV-LOP-090100`
 - Phân loại cần design duyệt (1): `GV-LOP-090100`
 - Thiếu prototype link đi vào (1): `GV-LOP-090100`

@@ -4,10 +4,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Trợ giảng
 
 ## 1. UI
 
-### Trang 1: ADM-LOP-040400 — Tab Trợ giảng & Phụ trách lớp
-
-![Figma mới nhất · ADM-LOP-040400](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040400.png)
-
+### Trang 1: Tab Trợ giảng & Phụ trách lớp
 ![Trang 1](./images/25-class-detail-support-handlers.png)
 
 *Ảnh UI hiện tại dùng sai tên khu vực; cần sửa theo mapping trong requirement — nhấn để xem ảnh gốc*
@@ -54,10 +51,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Trợ giảng
 - Không hiển thị lựa chọn sai ngữ cảnh, ví dụ bấm `+` Trợ giảng nhưng lại có nút tạo Phụ trách lớp.
 - `Support` chỉ xem tab nên không thấy hoặc không thao tác được nút `+` và popup này.
 
-### Trang 3: ADM-LOP-040400 — Popup chọn Phụ trách lớp có sẵn
-
-![Figma mới nhất · ADM-LOP-040400](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040400.png)
-
+### Trang 3: Popup chọn Phụ trách lớp có sẵn
 **Mô tả:** Sau khi chọn `Chọn phụ trách lớp`, `Admin` hoặc `Class Handler` tìm và thêm một hoặc nhiều tài khoản `Class Handler` hiện có vào lớp.
 
 **Giải thích field/thành phần:**
@@ -75,10 +69,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Trợ giảng
 - Thêm nhiều người phải nguyên tử. Nếu có lựa chọn không còn hợp lệ tại thời điểm lưu, không thêm một phần.
 - Việc thêm Phụ trách lớp không cấp quyền chấm điểm BTVN/bài kiểm tra.
 
-### Trang 4: ADM-LOP-040400 — Popup chọn Trợ giảng có sẵn
-
-![Figma mới nhất · ADM-LOP-040400](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040400.png)
-
+### Trang 4: Popup chọn Trợ giảng có sẵn
 **Mô tả:** Sau khi chọn `Chọn trợ giảng`, `Admin` hoặc `Class Handler` tìm và thêm một hoặc nhiều tài khoản `Support` hiện có vào lớp.
 
 **Giải thích field/thành phần:**
@@ -112,10 +103,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Trợ giảng
 - Nếu tạo tài khoản thành công nhưng bước gắn vào lớp thất bại, không hiển thị dòng quan hệ giả. Khi thử lại phải dùng ID tài khoản đã tạo hoặc cơ chế idempotency, không tạo tài khoản trùng.
 - Không đưa mật khẩu hoặc dữ liệu nhạy cảm vào Toast, log nghiệp vụ hay response sau tạo.
 
-### Trang 6: ADM-LOP-040400 — Icon Xóa khỏi lớp không cần xác nhận
-
-![Figma mới nhất · ADM-LOP-040400](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040400.png)
-
+### Trang 6: Icon Xóa khỏi lớp không cần xác nhận
 **Mô tả:** `Admin` hoặc `Class Handler` bấm icon `X` tại một dòng để xóa ngay Phụ trách lớp hoặc Trợ giảng khỏi lớp; không hiển thị popup xác nhận.
 
 **Giải thích field/thành phần:**
@@ -132,10 +120,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Trợ giảng
 - Xóa khỏi một khu vực không được xóa nhầm quan hệ khác của cùng người dùng hoặc người khác.
 - Request gửi lặp phải idempotent; dữ liệu cuối cùng nhất quán với trạng thái backend.
 
-### Trang 7: ADM-LOP-040400 — Phân quyền hỗ trợ lớp và giới hạn chấm điểm
-
-![Figma mới nhất · ADM-LOP-040400](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040400.png)
-
+### Trang 7: Phân quyền hỗ trợ lớp và giới hạn chấm điểm
 **Mô tả:** Phụ trách lớp (`Class Handler`) và Trợ giảng (`Support`) hỗ trợ giáo viên trong vận hành lớp nhưng không được chấm điểm chính thức.
 
 **Giải thích field/thành phần:**
@@ -152,10 +137,7 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Trợ giảng
 - Backend của BTVN và bài kiểm tra phải kiểm tra người chấm là Giáo viên phụ trách chính hiện tại; không dựa vào việc user thuộc lớp với role Class Handler/Support.
 - Lớp không có Giáo viên phụ trách chính thì không Class Handler hoặc Support nào được thay thế để chấm điểm.
 
-### Trang 8: ADM-LOP-040400 — Toast phản hồi CRUD
-
-![Figma mới nhất · ADM-LOP-040400](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-040400.png)
-
+### Trang 8: Toast phản hồi CRUD
 ![Trang 8](../../images/01-toast-crud.png)
 
 *Toast phản hồi thêm và xóa nhân sự khỏi lớp — nhấn để xem ảnh gốc*
