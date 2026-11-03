@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
     "/figma/[name]/spec": figmaSources,
     "/figma/[name]/code": figmaSources,
     "/api/figma-source": figmaSources,
+    // QC web reads requirements and the code system through /api/qc (key-protected)
+    "/api/qc/[...path]": ["./docs/requirements/**/*", "./docs/he-thong-ma/**/*"],
   },
 };
 
