@@ -6,6 +6,8 @@
 
 Hai frame cùng mã, cùng tên; một frame nền tối. Đề xuất thêm `-DK` vào mã của frame nền tối.
 
+**Đã làm 2026-11-03:** đổi tên cả 19 frame dưới đây (chỉ tên, không đổi nội dung); REST xác nhận 19/19. Phiên bản Figma trước khi đổi: *"Trước khi đổi tên 19 bản tối thiếu -DK"*.
+
 | Mã hiện tại | Tên frame | Frame nền tối | Đổi thành | Ghi chú |
 |---|---|---|---|---|
 | `ADM-GV-010050` | Danh sách giáo viên / Popup danh sách lịch hẹn | `4056:124472` | `ADM-GV-010050-DK` |  |
