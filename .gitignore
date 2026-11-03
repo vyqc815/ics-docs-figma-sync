@@ -6,3 +6,5 @@ users.yml
 .dev-credentials
 .env
 docs
+sync/dev_marks.json
+sessions.json

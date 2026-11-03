@@ -17,7 +17,7 @@ scripts/dev.sh                                               # http://127.0.0.1:
 
 | Quyền | Được làm |
 |---|---|
-| viewer | Xem docs, Figma, lịch sử, tra cứu màn hình |
+| dev | Xem docs, Figma, lịch sử, tra cứu màn hình; đánh dấu tiến độ làm của riêng mình |
 | admin | + menu Đồng bộ, Đánh dấu đã đồng bộ |
 
 Hướng dẫn chi tiết từng nút: menu tài khoản (góc phải) › Hướng dẫn sử dụng.

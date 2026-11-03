@@ -34,6 +34,8 @@
 </div>
 {% endif %}
 
+{% if s %}<section class="dev-updates card" data-doc="{{ s.path }}" hidden></section>{% endif %}
+
 <div class="split {% if s and s.frames %}has-figma{% endif %}">
   <div class="split-doc card">
     {% if s %}<a class="tool-btn doc-download" href="{{ base_url }}/api/docs/raw?doc={{ s.path | urlencode }}" download

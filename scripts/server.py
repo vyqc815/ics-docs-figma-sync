@@ -1,6 +1,6 @@
 """Serves the built site behind a login, plus the admin API.
 
-  viewer: read the site
+  dev: read the site, keep own "done up to here" marks
   admin : + mark synced, sync Figma (index + check), rebuild the site
 
 Run with scripts/dev.sh (builds first). Listens on 127.0.0.1:8000.
@@ -17,6 +17,7 @@ from urllib.parse import parse_qs, quote, unquote, urlparse
 
 import auth
 import figma_check
+import dev_updates
 import figma_index
 import sync_lib as lib
 from mark_synced import mark
@@ -116,11 +117,31 @@ class Handler(BaseHTTPRequestHandler):
     def _user(self):
         return auth.session(self._sid())
 
+    def _account_sids(self):
+        """Every account signed in on this browser (cookie `sids`), still valid, one per user."""
+        raw = next((p.split("=", 1)[1] for p in (c.strip() for c in self.headers.get("Cookie", "").split(";"))
+                    if p.startswith("sids=")), "")
+        out, seen = [], set()
+        for sid in [self._sid()] + raw.split("."):
+            if not sid:
+                continue
+            s = auth.session(sid)
+            if s and s["user"] not in seen:
+                seen.add(s["user"])
+                out.append(sid)
+        return out
+
+    def _cookies(self, active, sids):
+        if not active:
+            return [("Set-Cookie", f"sid=; Max-Age=0; {COOKIE_FLAGS}"), ("Set-Cookie", f"sids=; Max-Age=0; {COOKIE_FLAGS}")]
+        keep = f"Max-Age={auth.SESSION_TTL}; {COOKIE_FLAGS}"
+        return [("Set-Cookie", f"sid={active}; {keep}"), ("Set-Cookie", f"sids={'.'.join(sids)}; {keep}")]
+
     def _json(self, code, body, headers=None):
         data = json.dumps(body, ensure_ascii=False).encode()
         self.send_response(code)
         self.send_header("Content-Type", "application/json; charset=utf-8")
-        for k, v in (headers or {}).items():
+        for k, v in (headers.items() if isinstance(headers, dict) else headers or []):
             self.send_header(k, v)
         self.end_headers()
         self.wfile.write(data)
@@ -155,8 +176,15 @@ class Handler(BaseHTTPRequestHandler):
             return self._file(LOGIN_PAGE)
         user = self._user()
         if path == "/api/me":
-            return self._json(200, {"user": user["user"], "role": user["role"], "docs_pull": DOCS_PULL}
-                              if user else {"user": None})
+            if not user:
+                return self._json(200, {"user": None})
+            active = self._sid()
+            accounts = [dict(user=s["user"], roles=s["roles"], active=sid == active)
+                        for sid in self._account_sids() for s in [auth.session(sid)]]
+            if not any(a["active"] for a in accounts):
+                accounts.insert(0, {"user": user["user"], "roles": user["roles"], "active": True})
+            return self._json(200, {"user": user["user"], "role": user["role"], "roles": user["roles"],
+                                    "accounts": accounts, "docs_pull": DOCS_PULL})
         if path == "/api/users":
             if not user or user["role"] != "admin":
                 return self._json(403, {"ok": False, "message": "Chỉ admin xem được danh sách tài khoản"})
@@ -165,6 +193,22 @@ class Handler(BaseHTTPRequestHandler):
             self.send_response(302)
             self.send_header("Location", f"{BASE_PATH}/login?next=" + quote(self.path))
             return self.end_headers()
+        if path == "/api/dev/updates":
+            try:
+                return self._json(200, dict(ok=True, **dev_updates.updates(user["user"], (query.get("doc") or [""])[0], user["role"] == "admin")))
+            except lib.SyncError as e:
+                return self._json(400, {"ok": False, "message": str(e)})
+        if path == "/api/dev/overview":
+            if user["role"] != "admin":
+                return self._json(403, {"ok": False, "message": "Chỉ admin xem được tiến độ dev"})
+            return self._json(200, dict(ok=True, **dev_updates.overview(auth.list_users())))
+        if path == "/api/dev/marks":
+            try:
+                return self._json(200, {"ok": True, "marks": dev_updates.doc_marks((query.get("doc") or [""])[0])})
+            except lib.SyncError as e:
+                return self._json(400, {"ok": False, "message": str(e)})
+        if path == "/api/dev/summary":
+            return self._json(200, {"ok": True, "docs": dev_updates.summary(user["user"])})
         if path == "/api/docs/raw":
             return self._raw_doc((query.get("doc") or [""])[0])
         target = (SITE / unquote(path).lstrip("/")).resolve()
@@ -189,29 +233,42 @@ class Handler(BaseHTTPRequestHandler):
         path, _ = self._route()
         body = self._body()
         if path == "/api/login":
-            sid = auth.login(body.get("username", ""), body.get("password", ""))
+            name = body.get("username", "")
+            sid = auth.login(name, body.get("password", ""))
             if not sid:
                 return self._json(401, {"ok": False, "message": "Sai tài khoản hoặc mật khẩu"})
-            return self._json(200, {"ok": True}, {"Set-Cookie": f"sid={sid}; {COOKIE_FLAGS}"})
+            others = [s for s in self._account_sids() if auth.session(s)["user"] != name]
+            return self._json(200, {"ok": True}, self._cookies(sid, [sid] + others))
         if path == "/api/logout":
-            auth.logout(self._sid())
-            return self._json(200, {"ok": True}, {"Set-Cookie": f"sid=; Max-Age=0; {COOKIE_FLAGS}"})
+            active = self._sid()
+            auth.logout(active)
+            rest = [s for s in self._account_sids() if s != active]
+            return self._json(200, {"ok": True, "switched": bool(rest)}, self._cookies(rest[0] if rest else None, rest))
+        if path == "/api/session/switch":
+            sids = self._account_sids()
+            sid = next((s for s in sids if auth.session(s)["user"] == body.get("user")), None)
+            if not sid:
+                return self._json(400, {"ok": False, "message": "Tài khoản này chưa đăng nhập trên trình duyệt"})
+            return self._json(200, {"ok": True, "message": f"Đã chuyển sang {body.get('user')}"}, self._cookies(sid, sids))
 
         user = self._user()
         if not user:
             return self._json(401, {"ok": False, "message": "Cần đăng nhập"})
         account_actions = {
+            "/api/session/role": lambda: auth.set_role(self._sid(), body.get("role")),
+            "/api/dev/mark": lambda: dev_updates.mark(user["user"], body.get("doc", ""), body.get("sha"), body.get("upto")),
+            "/api/dev/rollback": lambda: dev_updates.rollback(user["user"], body.get("doc", "")),
             "/api/account/password": lambda: auth.change_password(user["user"], body.get("old"), body.get("new")),
             "/api/users/save": lambda: auth.save_user(user["user"], body.get("username", "").strip(),
-                                                      body.get("role"), body.get("password") or None),
+                                                      body.get("roles") or body.get("role"), body.get("password") or None),
             "/api/users/delete": lambda: auth.delete_user(user["user"], body.get("username", "")),
         }
         if path in account_actions:
-            if path != "/api/account/password" and user["role"] != "admin":
+            if path.startswith("/api/users") and user["role"] != "admin":
                 return self._json(403, {"ok": False, "message": "Chỉ admin quản lý tài khoản"})
             try:
                 return self._json(200, {"ok": True, "message": account_actions[path]()})
-            except auth.AccountError as e:
+            except (auth.AccountError, lib.SyncError) as e:
                 return self._json(400, {"ok": False, "message": str(e)})
         if user["role"] != "admin":
             return self._json(403, {"ok": False, "message": "Chỉ admin được thực hiện thao tác này"})

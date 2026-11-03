@@ -78,6 +78,11 @@
       tagsLink.textContent = "Tag";
       bar.append(screens, tagsLink);
       if (me.role === "admin") {
+        var progress = document.createElement("a");
+        progress.className = "btn";
+        progress.href = root() + "dev-progress.html";
+        progress.textContent = "Tiến độ dev";
+        bar.append(progress);
         var items = ADMIN_ITEMS.filter(function (a) { return me.docs_pull || a[0] !== "/api/docs/pull"; });
         bar.append(menu("Đồng bộ", "admin-only", items.map(function (a) {
           return item(a[1], a[2], { "data-admin": a[0] });
@@ -88,13 +93,22 @@
       chip.innerHTML = '<span class="avatar"></span><span class="uname"></span><span class="role-badge"></span>';
       chip.querySelector(".avatar").textContent = me.user.slice(0, 2);
       chip.querySelector(".uname").textContent = me.user;
-      chip.querySelector(".role-badge").textContent = me.role === "admin" ? "Admin" : "Xem";
-      var accountItems = [
-        item("Hướng dẫn sử dụng", "Bấm vào đâu để làm gì", { "data-help": "" }),
+      chip.querySelector(".role-badge").textContent = me.role === "admin" ? "Admin" : "Dev";
+      var ROLE_NAMES = { admin: "Admin", dev: "Dev" };
+      var accountItems = [];
+      (me.roles || []).filter(function (r) { return r !== me.role; }).forEach(function (r) {
+        accountItems.push(item("Chuyển sang quyền " + ROLE_NAMES[r], "Đang dùng quyền " + ROLE_NAMES[me.role], { "data-switch-role": r }));
+      });
+      (me.accounts || []).filter(function (a) { return !a.active; }).forEach(function (a) {
+        accountItems.push(item("Chuyển sang " + a.user, a.roles.map(function (r) { return ROLE_NAMES[r]; }).join(", "), { "data-switch-user": a.user }));
+      });
+      accountItems.push(item("Thêm tài khoản khác", "Đăng nhập thêm, chuyển qua lại không cần nhập lại", { "data-add-account": "" }));
+      accountItems.push(item("Hướng dẫn sử dụng", "Bấm vào đâu để làm gì", { "data-help": "" }));
+      accountItems = accountItems.concat([
         item("Đổi mật khẩu", "", { "data-account": "password" }),
-      ];
+      ]);
       if (me.role === "admin") accountItems.push(item("Quản lý tài khoản", "Tạo, phân quyền, đặt lại mật khẩu", { "data-account": "users" }));
-      accountItems.push(item("Đăng xuất", "", { "data-logout": "" }));
+      accountItems.push(item("Đăng xuất", (me.accounts || []).length > 1 ? "Chỉ đăng xuất " + me.user : "", { "data-logout": "" }));
       bar.append(menu(chip, "account-menu", accountItems));
       body.dataset.user = me.user;
       var search = document.querySelector(".md-header__inner .md-search");
@@ -118,7 +132,19 @@
     if (!e.target.closest(".dropdown-menu")) closeMenus();
     var admin = e.target.closest("[data-admin]");
     if (admin) runAdmin(admin);
-    if (e.target.closest("[data-logout]")) api("/api/logout").then(function () { location.href = url("/login"); });
+    if (e.target.closest("[data-logout]")) api("/api/logout").then(function (res) {
+      if (res.switched) location.reload(); else location.href = url("/login");
+    });
+    var sw = e.target.closest("[data-switch-role], [data-switch-user]");
+    if (sw) {
+      closeMenus();
+      var role = sw.getAttribute("data-switch-role");
+      api(role ? "/api/session/role" : "/api/session/switch", role ? { role: role } : { user: sw.getAttribute("data-switch-user") })
+        .then(function (res) { toast(res.message, res.ok ? "" : "error"); if (res.ok) location.reload(); });
+    }
+    if (e.target.closest("[data-add-account]")) {
+      location.href = url("/login") + "?add=1&next=" + encodeURIComponent(location.pathname + location.search);
+    }
     if (e.target.closest("[data-help]")) { closeMenus(); openHelp(); }
   });
   function runAdmin(btn) {

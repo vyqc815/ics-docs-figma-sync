@@ -32,8 +32,7 @@ def fetch_nodes(session, file_key, node_ids, batch=50):
     ids = sorted(set(node_ids))
     merged = {"nodes": {}}
     for i in range(0, len(ids), batch):
-        r = session.get(f"{API}/files/{file_key}/nodes", params={"ids": ",".join(ids[i:i + batch])}, timeout=120)
-        r.raise_for_status()
+        r = lib.figma_get(session, f"{API}/files/{file_key}/nodes", params={"ids": ",".join(ids[i:i + batch])}, timeout=120)
         data = r.json()
         merged["nodes"].update(data.get("nodes") or {})
         merged["lastModified"] = data.get("lastModified")
@@ -41,8 +40,7 @@ def fetch_nodes(session, file_key, node_ids, batch=50):
 
 
 def fetch_thumbs(session, file_key, node_ids):
-    r = session.get(f"{API}/images/{file_key}", params={"ids": ",".join(node_ids), "format": "png", "scale": 1}, timeout=60)
-    r.raise_for_status()
+    r = lib.figma_get(session, f"{API}/images/{file_key}", params={"ids": ",".join(node_ids), "format": "png", "scale": 1}, timeout=60)
     return r.json().get("images", {})
 
 

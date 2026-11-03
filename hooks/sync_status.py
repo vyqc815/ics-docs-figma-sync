@@ -27,6 +27,14 @@ hide: [toc]
 
 <div id="tag-browser" class="tag-browser"></div>
 """
+DEV_MD = """---
+title: Tiến độ dev
+hide: [toc]
+---
+# Tiến độ dev
+
+<div id="dev-overview" class="dev-overview"></div>
+"""
 REVIEW_ORDER = ["both", "ui", "docs", "no_baseline"]
 _cache = {}
 _index = {}
@@ -66,6 +74,7 @@ def on_files(files, config):
     if _index.get("frames"):
         files.append(File.generated(config, "figma-screens.md", content=SCREENS_MD))
     files.append(File.generated(config, "tags.md", content=TAGS_MD))
+    files.append(File.generated(config, "dev-progress.md", content=DEV_MD))
     if not files.get_file_from_path("index.md"):
         files.append(File.generated(config, "index.md", content=home_markdown(state)))
     config.extra["sync_map"] = status_map

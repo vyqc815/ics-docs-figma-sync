@@ -75,10 +75,20 @@
     b.addEventListener("click", onClick);
     return b;
   }
-  function roleSelect(value) {
-    var s = el("select", "figma-select");
-    [["viewer", "Xem"], ["admin", "Admin"]].forEach(function (r) { s.append(new Option(r[1], r[0], false, r[0] === value)); });
-    return s;
+  // Checkboxes: one account may hold several roles.
+  function rolePicker(values, name) {
+    var wrap = el("span", "role-picker");
+    [["dev", "Dev"], ["admin", "Admin"]].forEach(function (r) {
+      var lab = el("label", "role-check"), cb = el("input");
+      cb.type = "checkbox"; cb.value = r[0]; cb.checked = values.indexOf(r[0]) !== -1;
+      if (name) cb.name = name;
+      lab.append(cb, el("span", "", r[1]));
+      wrap.append(lab);
+    });
+    wrap.values = function () {
+      return Array.from(wrap.querySelectorAll("input:checked")).map(function (c) { return c.value; });
+    };
+    return wrap;
   }
   function openUsers() {
     var box = el("div", "users-box");
@@ -95,7 +105,7 @@
     box.innerHTML = "";
     var me = document.body.dataset.user;
     var table = el("table", "users-table");
-    table.innerHTML = '<colgroup><col><col style="width:9rem"><col style="width:6rem"></colgroup>' +
+    table.innerHTML = '<colgroup><col><col style="width:11rem"><col style="width:6rem"></colgroup>' +
       '<thead><tr><th>Tài khoản</th><th class="c">Quyền</th><th class="c">Thao tác</th></tr></thead>';
     var tbody = el("tbody");
     users.forEach(function (u) {
@@ -104,12 +114,11 @@
       var avatar = el("span", "avatar", u.username.slice(0, 2));
       name.append(avatar, el("span", "", u.username));
       if (u.username === me) name.append(el("span", "pill", "Bạn"));
-      var roleTd = el("td", "c"), sel = roleSelect(u.role);
-      sel.className = "role-select";
-      sel.disabled = u.username === me;
-      sel.title = u.username === me ? "Không thể tự đổi quyền của chính mình" : "Đổi quyền";
+      var roleTd = el("td", "c"), sel = rolePicker(u.roles);
+      if (u.username === me) sel.querySelector("input[value=admin]").disabled = true;
+      sel.title = u.username === me ? "Không thể tự bỏ quyền admin của chính mình" : "Đổi quyền";
       sel.addEventListener("change", function () {
-        SyncUI.api("/api/users/save", { username: u.username, role: sel.value }).then(function (res) {
+        SyncUI.api("/api/users/save", { username: u.username, roles: sel.values() }).then(function (res) {
           SyncUI.toast(res.message, res.ok ? "" : "error");
           load(box);
         });
@@ -135,8 +144,8 @@
     box.append(wrap);
 
     box.append(el("h3", "", "Tạo tài khoản mới"));
-    var role = field("Quyền", "select", "role");
-    role.querySelector("select").replaceWith(Object.assign(roleSelect("viewer"), { name: "role" }));
+    var role = field("Quyền", "select", "role"), picker = rolePicker(["dev"]);
+    role.querySelector("select").replaceWith(picker);
     var f = form([
       field("Tên tài khoản", "text", "username", { autocomplete: "off", placeholder: "nguyen.van.a" }),
       role,
@@ -145,7 +154,8 @@
     f.querySelector("[data-close]").remove();
     f.addEventListener("submit", function (e) {
       e.preventDefault();
-      var v = { username: f.username.value.trim(), role: f.role.value, password: f.password.value };
+      var v = { username: f.username.value.trim(), roles: picker.values(), password: f.password.value };
+      if (!v.roles.length) return fail(f, "Chọn ít nhất một quyền");
       if (!/^[\p{L}\p{N}_.@-]{2,32}$/u.test(v.username)) return fail(f, "Tên tài khoản 2-32 ký tự, không có dấu cách");
       if (v.password.length < MIN) return fail(f, "Mật khẩu phải từ " + MIN + " ký tự");
       if (users.some(function (u) { return u.username === v.username; })) return fail(f, "Tài khoản này đã tồn tại");
@@ -161,7 +171,7 @@
     f.addEventListener("submit", function (e) {
       e.preventDefault();
       if (f.password.value.length < MIN) return fail(f, "Mật khẩu phải từ " + MIN + " ký tự");
-      submitTo(f, "/api/users/save", { username: u.username, role: u.role, password: f.password.value }, function () { load(box); });
+      submitTo(f, "/api/users/save", { username: u.username, roles: u.roles, password: f.password.value }, function () { load(box); });
     });
     box.prepend(f);
     f.password.focus();

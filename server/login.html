@@ -42,6 +42,10 @@
   </form>
 <script>
   var form = document.getElementById("form"), err = document.getElementById("error"), btn = document.getElementById("submit");
+  if (new URLSearchParams(location.search).get("add")) {
+    document.querySelector("h1").textContent = "Thêm tài khoản";
+    document.querySelector("h1 + p").textContent = "Các tài khoản đã đăng nhập vẫn được giữ, chuyển qua lại trong menu tài khoản.";
+  }
   form.addEventListener("input", function () { err.textContent = ""; });
   form.addEventListener("submit", function (e) {
     e.preventDefault();

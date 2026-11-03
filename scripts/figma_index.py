@@ -39,8 +39,7 @@ def _session():
 
 
 def fetch_navigation(session, key):
-    r = session.get(f"{API}/files/{key}/nodes", params={"ids": lib.NAV_NODE}, timeout=300)
-    r.raise_for_status()
+    r = lib.figma_get(session, f"{API}/files/{key}/nodes", params={"ids": lib.NAV_NODE}, timeout=300)
     node = (r.json().get("nodes") or {}).get(lib.NAV_NODE)
     if not node:
         raise lib.SyncError(f"Không thấy frame NAVIGATION {lib.NAV_NODE}, kiểm tra navigation_node trong sync/config.yml")
@@ -48,8 +47,7 @@ def fetch_navigation(session, key):
 
 
 def fetch_frames(session, key):
-    r = session.get(f"{API}/files/{key}", params={"depth": 6}, timeout=600)
-    r.raise_for_status()
+    r = lib.figma_get(session, f"{API}/files/{key}", params={"depth": 6}, timeout=600)
     return r.json()
 
 

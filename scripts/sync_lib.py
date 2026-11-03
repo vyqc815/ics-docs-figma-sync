@@ -330,3 +330,18 @@ def set_web_tags(doc, tags):
             meta.pop(rel)
     write_central_meta(meta)
     return f"Đã lưu {len(clean)} tag" if clean else "Đã xoá tag gắn trên web"
+
+
+def figma_get(session, url, params=None, timeout=120, retries=3, max_wait=90):
+    """GET the Figma API, waiting out 429 rate limits (Retry-After) a few times before giving up."""
+    import time
+    for attempt in range(retries + 1):
+        r = session.get(url, params=params, timeout=timeout)
+        if r.status_code != 429:
+            r.raise_for_status()
+            return r
+        wait = int(r.headers.get("Retry-After") or 0) or 10 * 2 ** attempt
+        if attempt == retries or wait > max_wait:
+            mins = max(1, round(wait / 60))
+            raise SyncError(f"Figma đang giới hạn số lần gọi API (429). Thử lại sau khoảng {mins} phút.")
+        time.sleep(wait)

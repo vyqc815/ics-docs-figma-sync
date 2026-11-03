@@ -1,40 +1,30 @@
 name: Figma check
 
+# Mỗi giờ SSH vào server rồi chạy kiểm tra Figma ngay trên đó, sau đó build lại site.
+# Server đã có docs (repo BE) và FIGMA_TOKEN trong .env, nên Action không cần token repo docs hay token Figma.
+# Dùng chung secrets với deploy.yml: DEPLOY_HOST, DEPLOY_USER, DEPLOY_SSH_KEY, DEPLOY_PORT (nếu SSH không ở port 22).
 on:
   schedule: [{ cron: "0 * * * *" }]   # mỗi giờ
   workflow_dispatch:
 
-permissions:
-  contents: write
+concurrency: deploy   # không chạy chồng lúc đang deploy
 
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      # docs là symlink tới repo FE: checkout repo FE vào đúng chỗ
-      - uses: actions/checkout@v4
-        with:
-          repository: ${{ vars.DOCS_REPO }}        # vd duongtb1992/fe_ics_2026
-          ref: ${{ vars.DOCS_BRANCH }}             # vd sprint/sprint01
-          token: ${{ secrets.DOCS_REPO_TOKEN }}
-          path: _fe
-          fetch-depth: 0
-      - run: rm -f docs && ln -s _fe/docs/requirements docs
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
-      - run: pip install -r requirements.txt
-      - run: python scripts/figma_check.py --thumbs
-        env: { FIGMA_TOKEN: "${{ secrets.FIGMA_TOKEN }}" }
-      - name: Commit snapshot
+      - name: Kiểm tra Figma trên server
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
         run: |
-          git config user.name "figma-bot"
-          git config user.email "figma-bot@users.noreply.github.com"
-          git add sync/
-          git diff --cached --quiet || git commit -m "chore: figma snapshot" && git push
-      - run: mkdocs build
-      - uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy site --project-name=ics-docs-figma-sync
+          mkdir -p ~/.ssh && echo "$SSH_KEY" > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
+          ssh -i ~/.ssh/id_deploy -p "${PORT:-22}" -o StrictHostKeyChecking=accept-new "$USER@$HOST" '
+            set -e
+            cd /opt/docs-figma/app
+            set -a; [ -f .env ] && . ./.env; set +a
+            .venv/bin/python scripts/figma_check.py --thumbs
+            .venv/bin/mkdocs build -q
+          '

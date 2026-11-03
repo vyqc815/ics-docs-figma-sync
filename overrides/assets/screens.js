@@ -75,32 +75,44 @@
     });
     filters.append(reset);
 
-    function matches(f) {
-      var q = state.q.trim().toUpperCase();
+    function filtered(f) {
       if (state.group && f.role + "-" + f.menu !== state.group) return false;
       if (state.type && f.type !== state.type) return false;
       if (state.theme === "light" && f.dark) return false;
       if (state.theme === "dark" && !f.dark) return false;
-      if (!matchStatus(f, state.status)) return false;
-      if (!q) return true;
-      return f.code.indexOf(q) === 0 || f.code.replace(/-/g, "").indexOf(q.replace(/-/g, "")) === 0 ||
-        f.title.toUpperCase().indexOf(q) !== -1;
+      return matchStatus(f, state.status);
+    }
+
+    // Code prefix match first; otherwise every word of the query (any order, accent-insensitive) must appear
+    // somewhere in the title path ("Học viên / Trạng thái" ← "trạng thái học viên"), ranked by closeness.
+    function score(f) {
+      var raw = state.q.trim();
+      if (!raw) return 1;
+      var S = window.SyncSearch, up = raw.toUpperCase().replace(/\s+/g, "");
+      if (f.code.indexOf(up) === 0 || f.code.replace(/-/g, "").indexOf(up.replace(/-/g, "")) === 0) return 1000 - f.code.length;
+      var toks = S.tokens(raw), q = S.norm(raw).trim(), title = S.norm(f.title), last = S.norm(f.title.split(" / ").slice(-1)[0]);
+      var code = f.code.toLowerCase();
+      if (!toks.every(function (t) { return title.indexOf(t) !== -1 || code.indexOf(t) !== -1; })) return 0;
+      return 1 + S.scoreField(last, q, toks, 5).s + S.scoreField(title, q, toks, 2).s + (title.indexOf(q) !== -1 ? 20 : 0);
     }
 
     function draw() {
       items.innerHTML = "";
-      var shown = data.frames.filter(matches), lastGroup = null;
+      var lastGroup = null, ranked = !!state.q.trim();
+      var shown = data.frames.filter(filtered).map(function (f, i) { return { f: f, s: score(f), i: i }; })
+        .filter(function (x) { return x.s > 0; });
+      if (ranked) shown.sort(function (a, b) { return b.s - a.s || a.i - b.i; });
       count.textContent = shown.length + " / " + data.frames.length + " mã" + (data.updated ? " · sync " + data.updated : "");
-      shown.slice(0, 800).forEach(function (f) {
-        var g = f.role + "-" + f.menu;
-        if (g !== lastGroup) {
+      shown.slice(0, 800).forEach(function (x) {
+        var f = x.f, g = f.role + "-" + f.menu;
+        if (!ranked && g !== lastGroup) {
           lastGroup = g;
           items.append(el("div", "sb-route", g + " · " + (data.groups[g] || "")));
         }
         var b = el("button", "sb-item" + (state.current === f.code ? " is-on" : "") + (f.removed ? " is-removed" : ""));
         b.dataset.kind = f.kind;
         b.dataset.code = f.code;
-        b.append(el("code", "", f.code + " "), document.createTextNode(f.title.split(" / ").slice(-1)[0]));
+        b.append(el("code", "", f.code + " "), document.createTextNode(ranked ? f.title : f.title.split(" / ").slice(-1)[0]));
         if (f.todo) b.append(el("span", "sb-flag is-todo", "Chưa làm"));
         if (f.final) b.append(el("span", "sb-flag is-final", "Final"));
         if (f.dark) b.append(el("span", "sb-flag is-todo", "Dark"));
