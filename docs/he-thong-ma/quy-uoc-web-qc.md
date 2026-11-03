@@ -6,28 +6,12 @@ Tài liệu này dành cho team dựng web QC. Làm đúng các quy tắc dướ
 
 | Dữ liệu | Lấy ở đâu | Ghi chú |
 |---|---|---|
-| Requirement theo template, có mã | API `/api/qc/…` (mục 1b), hoặc `docs/requirements/**.md` trên GitHub nhánh `main`, hoặc zip được gửi | Chỉ đọc. **Không sửa file này**: lần chuyển sau sẽ ghi đè |
+| Requirement theo template, có mã | `docs/requirements/**.md` trên GitHub nhánh `main`, hoặc zip được gửi | Chỉ đọc. **Không sửa file này**: lần chuyển sau sẽ ghi đè |
 | Requirement gốc | File gốc của QC | **QC chỉ sửa ở file gốc**, gửi bản mới để chuyển lại |
 | Mã màn → loại, màn cha, frame | `docs/he-thong-ma/figma-frames.json` | `loai`: `man-chinh`, `popup`, `trang-thai`, `dropdown`, `ban-toi` |
 | Mã màn → route trên demo | `figma.pages.json` (`name` = mã viết thường, `route`) | Popup/trạng thái mở trên màn cha bằng `?popup=MÃ` / `?state=MÃ` |
 | Mã dự kiến (màn chưa vẽ) | `docs/he-thong-ma/ma-du-kien.json` | Hiển thị "chưa có thiết kế", không báo lỗi |
 | Tiền tố mã theo file, item, REQ, testcase đã chuẩn hoá | `docs/he-thong-ma/<cụm>.registry.json` (`requirementFiles[].prefix`) | Dùng để ghép khoá toàn cục |
-
-## 1b. Lấy dữ liệu qua API (khuyến nghị, thay cho zip)
-
-Demo phục vụ sẵn toàn bộ requirement và dữ liệu hệ thống mã, luôn là bản mới nhất trên `main`:
-
-| Link (`https://ics-figma-demo.vercel.app/api/qc/…`) | Trả về |
-|---|---|
-| `index.json` | Mục lục: mỗi file requirement có `path`, `prefix`, `title`, `registry`, `screens`, `pages[]` (`no`, `title`, `screens`), `images[]`; kèm `data` (đường dẫn file hệ thống mã), `registries[]`, `liveImage`, `generatedAt` |
-| `requirements/<đường dẫn>.md` | Requirement theo template, có mã |
-| `requirements/<đường dẫn ảnh>` | Ảnh gốc QC; link ảnh tương đối trong file `.md` tính theo thư mục của chính file đó |
-| `he-thong-ma/<file>.json` / `.md` | Registry, `figma-frames.json`, `ma-du-kien.json`, `khoa-ma.json`, `clusters.json`, quy ước này |
-
-- **Khoá:** gửi header `x-qc-key: <khoá>` (hoặc `Authorization: Bearer <khoá>`). Thiếu hoặc sai khoá trả `401`. Khoá do design giữ, gửi riêng cho team web QC.
-- **Gọi từ server của web QC**, không gọi từ trình duyệt, để khoá không lộ. Server QC tải về rồi trả cho người dùng.
-- **Cập nhật:** đọc `index.json` định kỳ (ví dụ mỗi 15 phút) hoặc khi người dùng bấm làm mới; `generatedAt` đổi nghĩa là có bản mới thì nhập lại theo mục 6.
-- Ảnh "Figma mới nhất" vẫn lấy từ `/api/figma-frame/<MÃ>.png`, không cần khoá.
 
 ## 2. Cấu trúc file và cách đọc
 

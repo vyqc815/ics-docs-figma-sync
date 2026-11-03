@@ -9,8 +9,7 @@ Các bước:
   3. Chuyển template (req_to_template.py, mã item đã khoá) và kiểm từng file đủ nội dung + đủ testcase
      (kiem_noi_dung.py). Thiếu ở bất kỳ file nào thì dừng, không đụng docs/requirements.
   4. Dựng lại cụm + registry + danh sách sửa Figma theo bộ mới.
-  5. Thay docs/requirements; ghi mã dự kiến, mã trang, ảnh Figma mới nhất, bảng màn -> requirement cho bot báo,
-     mục lục cho web QC đọc qua /api/qc.
+  5. Thay docs/requirements; ghi mã dự kiến, mã trang, ảnh Figma mới nhất, bảng màn -> requirement cho bot báo.
   6. Đóng zip gửi QC (mặc định cạnh thư mục repo, tên theo ngày, không ghi đè).
 Xong thì xem `git diff`, commit, push.
 """
@@ -124,7 +123,6 @@ def main():
     run(f"{HERE}/apply_page_codes.py", "--work", w)
     run(f"{HERE}/add_live_images.py", "--work", w)
     run(f"{HERE}/screen_requirements.py", "--work", w)
-    run(f"{HERE}/qc_index.py", "--work", w)
 
     # 6. zip gửi QC
     out = out_path(w, args.out)
