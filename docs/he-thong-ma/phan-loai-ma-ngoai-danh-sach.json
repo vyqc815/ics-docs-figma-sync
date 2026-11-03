@@ -1,0 +1,4864 @@
+{
+ "fileKey": "rRVs5HX0kIHffbS0V40djG",
+ "note": "Sinh tự động từ Figma REST; chưa đưa vào figma.pages.json.",
+ "codes": [
+  {
+   "code": "ADM-GC-010010",
+   "title": "Gift code / Popup tạo gift code",
+   "nodeId": "3977:76869",
+   "page": "├─ GIFT CODE",
+   "container": "GIFT CODE",
+   "size": [
+    480.0,
+    506.0
+   ],
+   "loai": "popup",
+   "parent": null,
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup tạo gift code”; mã gần nhất ADM-GC-010000 (“Ghi chú / Danh sách ghi chú”) thuộc nhóm khác — tiền tố mã có thể bị trùng",
+   "goiY": {
+    "theoTen": null,
+    "theoMa": null,
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": null,
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GC-010020",
+   "title": "Gift code / Popup cập nhật gift code",
+   "nodeId": "3977:76954",
+   "page": "├─ GIFT CODE",
+   "container": "GIFT CODE",
+   "size": [
+    480.0,
+    450.0
+   ],
+   "loai": "popup",
+   "parent": null,
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup cập nhật gift code”; mã gần nhất ADM-GC-010000 (“Ghi chú / Danh sách ghi chú”) thuộc nhóm khác — tiền tố mã có thể bị trùng",
+   "goiY": {
+    "theoTen": null,
+    "theoMa": null,
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": null,
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GKS-010005",
+   "title": "Khảo sát / Giao khảo sát / Popup chọn trung tâm",
+   "nodeId": "5138:152878",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát",
+   "size": [
+    720.0,
+    803.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chọn trung tâm”",
+   "goiY": {
+    "theoTen": "ADM-GKS-010000",
+    "theoMa": "ADM-GKS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-GKS-010010",
+   "title": "Khảo sát / Giao khảo sát / Popup chọn giáo viên",
+   "nodeId": "4273:153174",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát",
+   "size": [
+    720.0,
+    803.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chọn giáo viên”",
+   "goiY": {
+    "theoTen": "ADM-GKS-010000",
+    "theoMa": "ADM-GKS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-GKS-010030",
+   "title": "Khảo sát / Giao khảo sát / Popup kết quả cá nhân",
+   "nodeId": "4273:153857",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát",
+   "size": [
+    720.0,
+    680.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-010020",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup kết quả cá nhân”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-GKS-010020",
+    "theoMa": "ADM-GKS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-010020",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GKS-010040",
+   "title": "Khảo sát / Giao khảo sát / Popup chọn cuộc khảo sát",
+   "nodeId": "4273:153940",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát",
+   "size": [
+    720.0,
+    261.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-010020",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-GKS-010020",
+    "theoMa": "ADM-GKS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-010020",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GKS-020005",
+   "title": "Khảo sát / Giao khảo sát lớp / Popup chọn trung tâm",
+   "nodeId": "5138:153136",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát lớp",
+   "size": [
+    720.0,
+    803.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-020000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chọn trung tâm”",
+   "goiY": {
+    "theoTen": "ADM-GKS-020000",
+    "theoMa": "ADM-GKS-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-020000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-GKS-020010",
+   "title": "Khảo sát / Giao khảo sát lớp / Popup chọn lớp",
+   "nodeId": "4885:39937",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát lớp",
+   "size": [
+    720.0,
+    803.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-020000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chọn lớp”",
+   "goiY": {
+    "theoTen": "ADM-GKS-020000",
+    "theoMa": "ADM-GKS-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-020000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-GKS-020030",
+   "title": "Khảo sát / Giao khảo sát lớp / Popup kết quả cả lớp",
+   "nodeId": "4885:40275",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát lớp",
+   "size": [
+    720.0,
+    1506.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-020020",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup kết quả cả lớp”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-GKS-020020",
+    "theoMa": "ADM-GKS-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-020020",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GKS-020040",
+   "title": "Khảo sát / Giao khảo sát lớp / Popup chọn cuộc khảo sát",
+   "nodeId": "4885:40327",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát lớp",
+   "size": [
+    720.0,
+    261.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-020020",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-GKS-020020",
+    "theoMa": "ADM-GKS-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-020020",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GKS-030030",
+   "title": "Khảo sát / Giao khảo sát học viên / Popup kết quả cả trung tâm",
+   "nodeId": "4885:41573",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát học viên",
+   "size": [
+    720.0,
+    1447.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-030020",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup kết quả cả trung tâm”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-GKS-030020",
+    "theoMa": "ADM-GKS-030000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-030020",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GKS-030040",
+   "title": "Khảo sát / Giao khảo sát học viên / Popup chọn cuộc khảo sát",
+   "nodeId": "4885:41625",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát học viên",
+   "size": [
+    720.0,
+    267.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-030020",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup chọn cuộc khảo sát”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-GKS-030020",
+    "theoMa": "ADM-GKS-030000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-030020",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GKS-030050",
+   "title": "Khảo sát / Giao khảo sát học viên / Popup giao khảo sát · Bắt buộc",
+   "nodeId": "5019:5589",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát học viên",
+   "size": [
+    720.0,
+    436.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-030045",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup giao khảo sát · Bắt buộc”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-GKS-030045",
+    "theoMa": "ADM-GKS-030000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-030020",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GKS-030060",
+   "title": "Khảo sát / Giao khảo sát học viên / Popup giao khảo sát · Tuỳ chọn",
+   "nodeId": "5019:5728",
+   "page": "└─ GIAO KHẢO SÁT",
+   "container": "FLOW giao khảo sát học viên",
+   "size": [
+    720.0,
+    282.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GKS-030045",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup giao khảo sát · Tuỳ chọn”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-GKS-030045",
+    "theoMa": "ADM-GKS-030000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GKS-030020",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GV-010010",
+   "title": "Danh sách giáo viên / Popup tìm kiếm nâng cao",
+   "nodeId": "1505:20396",
+   "page": "├─ GIÁO VIÊN",
+   "container": "DANH SÁCH GIÁO VIÊN",
+   "size": [
+    680.0,
+    546.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GV-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup tìm kiếm nâng cao”",
+   "goiY": {
+    "theoTen": "ADM-GV-010000",
+    "theoMa": "ADM-GV-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GV-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-GV-010020",
+   "title": "Danh sách giáo viên / Popup thêm giáo viên",
+   "nodeId": "1479:12897",
+   "page": "├─ GIÁO VIÊN",
+   "container": "DANH SÁCH GIÁO VIÊN",
+   "size": [
+    680.0,
+    473.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GV-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm giáo viên”",
+   "goiY": {
+    "theoTen": "ADM-GV-010000",
+    "theoMa": "ADM-GV-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GV-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-GV-010030",
+   "title": "Danh sách giáo viên / Popup thêm tag",
+   "nodeId": "1739:30436",
+   "page": "├─ GIÁO VIÊN",
+   "container": "ADD TAG & LỊCH HẸN",
+   "size": [
+    480.0,
+    322.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GV-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm tag”",
+   "goiY": {
+    "theoTen": "ADM-GV-010000",
+    "theoMa": "ADM-GV-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GV-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-GV-010040",
+   "title": "Danh sách giáo viên / Popup thêm lịch hẹn",
+   "nodeId": "1739:31622",
+   "page": "├─ GIÁO VIÊN",
+   "container": "ADD TAG & LỊCH HẸN",
+   "size": [
+    680.0,
+    571.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GV-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm lịch hẹn”",
+   "goiY": {
+    "theoTen": "ADM-GV-010000",
+    "theoMa": "ADM-GV-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GV-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-GV-010042",
+   "title": "Danh sách giáo viên / Popup thêm lịch hẹn / Đang mở",
+   "nodeId": "1873:39233",
+   "page": "├─ GIÁO VIÊN",
+   "container": "ADD TAG & LỊCH HẸN",
+   "size": [
+    680.0,
+    571.0
+   ],
+   "loai": "dropdown",
+   "parent": "ADM-GV-010040",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Đang mở”",
+   "goiY": {
+    "theoTen": "ADM-GV-010040",
+    "theoMa": "ADM-GV-010040",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GV-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-GV-010050",
+   "title": "Danh sách giáo viên / Popup danh sách lịch hẹn",
+   "nodeId": "1877:10069",
+   "page": "├─ GIÁO VIÊN",
+   "container": "ADD TAG & LỊCH HẸN",
+   "size": [
+    949.0,
+    236.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GV-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup danh sách lịch hẹn”",
+   "goiY": {
+    "theoTen": "ADM-GV-010000",
+    "theoMa": "ADM-GV-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GV-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-GV-020210",
+   "title": "Chi tiết giáo viên / Danh sách lớp / Popup chỉnh sửa lương",
+   "nodeId": "1540:30533",
+   "page": "├─ GIÁO VIÊN",
+   "container": "Chi tiết giáo viên",
+   "size": [
+    480.0,
+    186.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GV-020200",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chỉnh sửa lương”",
+   "goiY": {
+    "theoTen": "ADM-GV-020200",
+    "theoMa": "ADM-GV-020200",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GV-020200",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-GV-020310",
+   "title": null,
+   "nodeId": null,
+   "page": null,
+   "container": null,
+   "size": null,
+   "loai": "chua-ro",
+   "parent": null,
+   "tinCay": "thap",
+   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú",
+   "goiY": {},
+   "manHienThi": null,
+   "parentInPageList": false,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GV-020320",
+   "title": null,
+   "nodeId": null,
+   "page": null,
+   "container": null,
+   "size": null,
+   "loai": "chua-ro",
+   "parent": null,
+   "tinCay": "thap",
+   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú",
+   "goiY": {},
+   "manHienThi": null,
+   "parentInPageList": false,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-GV-020520",
+   "title": "Chi tiết giáo viên / Quản lý đăng ký lịch / Popup đăng ký khung giờ",
+   "nodeId": "3674:61905",
+   "page": "├─ GIÁO VIÊN",
+   "container": "QUẢN LÝ ĐĂNG KÝ LỊCH",
+   "size": [
+    480.0,
+    393.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-GV-020500",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup đăng ký khung giờ”",
+   "goiY": {
+    "theoTen": "ADM-GV-020500",
+    "theoMa": "ADM-GV-020500",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-GV-020500",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HD-010010",
+   "title": "Hoá đơn / Popup thêm hoá đơn",
+   "nodeId": "2731:75346",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    680.0,
+    1174.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HD-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm hoá đơn”",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010000",
+    "prototype": [
+     "ADM-HD-010000"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HD-010011",
+   "title": "Hoá đơn / Popup thêm hoá đơn / Chọn đơn vị tiền",
+   "nodeId": "3004:60619",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    680.0,
+    1174.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010010",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Chọn đơn vị tiền”",
+   "goiY": {
+    "theoTen": "ADM-HD-010010",
+    "theoMa": "ADM-HD-010010",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HD-010012",
+   "title": "Hoá đơn / Popup thêm hoá đơn / Chọn học viên có sẵn",
+   "nodeId": "3004:65451",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    680.0,
+    1174.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010010",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Chọn học viên có sẵn”",
+   "goiY": {
+    "theoTen": "ADM-HD-010010",
+    "theoMa": "ADM-HD-010010",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HD-010013",
+   "title": "Hoá đơn / Popup thêm hoá đơn / Chọn học viên có sẵn / Mở danh sách",
+   "nodeId": "3004:65498",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    680.0,
+    1174.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010012",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "trạng thái của popup: “Mở danh sách”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-HD-010012",
+    "theoMa": "ADM-HD-010010",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HD-010030",
+   "title": "Hoá đơn / Popup chỉnh sửa hoá đơn",
+   "nodeId": "3004:15021",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    680.0,
+    1099.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HD-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chỉnh sửa hoá đơn”",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HD-010050",
+   "title": "Hoá đơn / Popup chọn học viên đã liên kết",
+   "nodeId": "2997:13731",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    480.0,
+    303.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HD-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chọn học viên đã liên kết”",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HD-010060",
+   "title": "Hoá đơn / Popup thêm học phí",
+   "nodeId": "2997:13559",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    680.0,
+    502.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HD-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm học phí”",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HD-010061",
+   "title": "Hoá đơn / Popup thêm học phí / Học viên mới",
+   "nodeId": "2997:14096",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    680.0,
+    502.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010060",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "bước/trạng thái trong popup: “Học viên mới”",
+   "goiY": {
+    "theoTen": "ADM-HD-010060",
+    "theoMa": "ADM-HD-010060",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HD-010070",
+   "title": "Hoá đơn / Popup thêm người phụ trách",
+   "nodeId": "3004:61802",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    480.0,
+    264.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HD-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm người phụ trách”",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HD-010071",
+   "title": "Hoá đơn / Popup thêm người phụ trách / Chọn người phụ trách",
+   "nodeId": "3004:61931",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    480.0,
+    264.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010070",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Chọn người phụ trách”",
+   "goiY": {
+    "theoTen": "ADM-HD-010070",
+    "theoMa": "ADM-HD-010070",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HD-010072",
+   "title": "Hoá đơn / Popup thêm người phụ trách / Chọn trạng thái",
+   "nodeId": "3004:62128",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    480.0,
+    264.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010070",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Chọn trạng thái”",
+   "goiY": {
+    "theoTen": "ADM-HD-010070",
+    "theoMa": "ADM-HD-010070",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HD-010073",
+   "title": "Hoá đơn / Popup thêm người phụ trách / Chọn số KPI",
+   "nodeId": "3004:62345",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    480.0,
+    264.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010070",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Chọn số KPI”",
+   "goiY": {
+    "theoTen": "ADM-HD-010070",
+    "theoMa": "ADM-HD-010070",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HD-010080",
+   "title": "Hoá đơn / Popup thêm (thao tác học viên)",
+   "nodeId": "3058:99388",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    480.0,
+    242.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HD-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm (thao tác học viên)”",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HD-010081",
+   "title": "Hoá đơn / Popup thêm / Chọn Xem lịch sử",
+   "nodeId": "3058:96236",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    480.0,
+    242.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010000",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "trạng thái của popup: “Chọn Xem lịch sử”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010080",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HD-010082",
+   "title": "Hoá đơn / Popup thêm / Chọn Thêm Lịch Hẹn",
+   "nodeId": "3058:108224",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    480.0,
+    242.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010000",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "trạng thái của popup: “Chọn Thêm Lịch Hẹn”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010080",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HD-010090",
+   "title": "Hoá đơn / Popup thêm tag",
+   "nodeId": "3058:96343",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    480.0,
+    224.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HD-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm tag”",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HD-010110",
+   "title": "Hoá đơn / Popup thêm lịch hẹn",
+   "nodeId": "3058:96427",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    680.0,
+    571.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HD-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm lịch hẹn”",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HD-010111",
+   "title": "Hoá đơn / Popup cập nhật lịch hẹn",
+   "nodeId": "3058:96531",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    680.0,
+    500.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HD-010000",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup cập nhật lịch hẹn”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010110",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HD-010120",
+   "title": "Hoá đơn / Popup hồ sơ học viên / Lịch sử lớp",
+   "nodeId": "2731:75709",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    980.0,
+    389.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010020",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "bước/trạng thái trong popup: “Lịch sử lớp”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010000",
+    "prototype": [
+     "ADM-HD-010020"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HD-010130",
+   "title": "Hoá đơn / Popup danh sách lịch hẹn",
+   "nodeId": "3058:96637",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    975.0,
+    162.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HD-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup danh sách lịch hẹn”",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HD-010230",
+   "title": "Hoá đơn / Popup hồ sơ học viên / Popup thêm ghi chú",
+   "nodeId": "2731:75906",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    480.0,
+    339.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HD-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm ghi chú”",
+   "goiY": {
+    "theoTen": "ADM-HD-010000",
+    "theoMa": "ADM-HD-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HD-010231",
+   "title": "Hoá đơn / Popup hồ sơ học viên / Popup thêm ghi chú / Mở Loại",
+   "nodeId": "3058:111717",
+   "page": "└─ HOÁ ĐƠN",
+   "container": "HOÁ ĐƠN",
+   "size": [
+    480.0,
+    339.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-HD-010230",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Mở Loại”",
+   "goiY": {
+    "theoTen": "ADM-HD-010230",
+    "theoMa": "ADM-HD-010230",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HD-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HV-010010",
+   "title": "Danh sách học viên / Popup thêm học viên",
+   "nodeId": "2263:35406",
+   "page": "├─ HỌC VIÊN",
+   "container": "DANH SÁCH HỌC VIÊN",
+   "size": [
+    680.0,
+    544.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HV-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm học viên”",
+   "goiY": {
+    "theoTen": "ADM-HV-010000",
+    "theoMa": "ADM-HV-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HV-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HV-010012",
+   "title": "Danh sách học viên / Popup thêm học viên / Dropdown cấp độ",
+   "nodeId": "3269:75081",
+   "page": "├─ HỌC VIÊN",
+   "container": "DANH SÁCH HỌC VIÊN",
+   "size": [
+    314.0,
+    441.0
+   ],
+   "loai": "dropdown",
+   "parent": "ADM-HV-010010",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Dropdown cấp độ”",
+   "goiY": {
+    "theoTen": "ADM-HV-010010",
+    "theoMa": "ADM-HV-010010",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HV-010000",
+   "parentInPageList": false,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HV-010050",
+   "title": "Danh sách học viên / Popup thêm ghi chú",
+   "nodeId": null,
+   "page": null,
+   "container": null,
+   "size": null,
+   "loai": "popup",
+   "parent": "ADM-HV-010000",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú (“Danh sách học viên / Popup thêm ghi chú”); tên: “Popup thêm ghi chú”",
+   "goiY": {
+    "theoTen": "ADM-HV-010000",
+    "theoMa": "ADM-HV-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HV-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-HV-010060",
+   "title": "Danh sách học viên / Popup thêm lịch hẹn",
+   "nodeId": "2263:45940",
+   "page": "├─ HỌC VIÊN",
+   "container": "LỊCH HẸN & XEM LỊCH SỬ",
+   "size": [
+    680.0,
+    571.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HV-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm lịch hẹn”",
+   "goiY": {
+    "theoTen": "ADM-HV-010000",
+    "theoMa": "ADM-HV-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HV-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HV-010062",
+   "title": "Danh sách học viên / Popup thêm lịch hẹn / Đang mở",
+   "nodeId": "2263:45761",
+   "page": "├─ HỌC VIÊN",
+   "container": "LỊCH HẸN & XEM LỊCH SỬ",
+   "size": [
+    680.0,
+    571.0
+   ],
+   "loai": "dropdown",
+   "parent": "ADM-HV-010060",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Đang mở”",
+   "goiY": {
+    "theoTen": "ADM-HV-010060",
+    "theoMa": "ADM-HV-010060",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HV-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HV-010070",
+   "title": "Danh sách học viên / Popup danh sách lịch hẹn",
+   "nodeId": "2533:37338",
+   "page": "└─ Nhật ký",
+   "container": "Nhật ký",
+   "size": [
+    1108.0,
+    236.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HV-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup danh sách lịch hẹn”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-HV-010000",
+    "theoMa": "ADM-HV-010000",
+    "prototype": [],
+    "namTrong": "ADM-LOP-050304"
+   },
+   "manHienThi": "ADM-HV-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HV-010102",
+   "title": "Danh sách học viên / Dropdown · Trạng thái",
+   "nodeId": "3269:74948",
+   "page": "├─ HỌC VIÊN",
+   "container": "DANH SÁCH HỌC VIÊN",
+   "size": [
+    241.0,
+    142.0
+   ],
+   "loai": "dropdown",
+   "parent": "ADM-HV-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Dropdown · Trạng thái”",
+   "goiY": {
+    "theoTen": "ADM-HV-010000",
+    "theoMa": "ADM-HV-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HV-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HV-010202",
+   "title": "Danh sách học viên / Dropdown · Tag",
+   "nodeId": "3269:74975",
+   "page": "├─ HỌC VIÊN",
+   "container": "DANH SÁCH HỌC VIÊN",
+   "size": [
+    241.0,
+    413.0
+   ],
+   "loai": "dropdown",
+   "parent": "ADM-HV-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Dropdown · Tag”",
+   "goiY": {
+    "theoTen": "ADM-HV-010000",
+    "theoMa": "ADM-HV-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HV-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-HV-020610",
+   "title": "Chi tiết học viên / Ghi chú / Popup thêm ghi chú",
+   "nodeId": "2263:47063",
+   "page": "├─ HỌC VIÊN",
+   "container": "CHI TIẾT HỌC VIÊN",
+   "size": [
+    480.0,
+    331.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-HV-020600",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm ghi chú”",
+   "goiY": {
+    "theoTen": "ADM-HV-020600",
+    "theoMa": "ADM-HV-020600",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-HV-020600",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-KS-010030",
+   "title": "Khảo sát / Tạo khảo sát / Popup xem trước",
+   "nodeId": "4271:149782",
+   "page": "├─ TẠO KHẢO SÁT",
+   "container": "FLOW tạo khảo sát giáo viên",
+   "size": [
+    720.0,
+    802.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-KS-010020",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-KS-010020",
+    "theoMa": "ADM-KS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-KS-010020",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-KS-020030",
+   "title": "Khảo sát / Tạo khảo sát cho lớp / Popup xem trước",
+   "nodeId": "4885:8949",
+   "page": "├─ TẠO KHẢO SÁT",
+   "container": "FLOW tạo khảo sát cho lớp",
+   "size": [
+    720.0,
+    790.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-KS-020020",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-KS-020020",
+    "theoMa": "ADM-KS-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-KS-020020",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-KS-030030",
+   "title": "Khảo sát / Tạo khảo sát học viên / Popup xem trước",
+   "nodeId": "4885:10451",
+   "page": "├─ TẠO KHẢO SÁT",
+   "container": "FLOW tạo khảo sát học viên",
+   "size": [
+    720.0,
+    790.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-KS-030020",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup xem trước”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-KS-030020",
+    "theoMa": "ADM-KS-030000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-KS-030020",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LGV-020010",
+   "title": "Lương / Đề xuất tăng lương / Popup duyệt đề xuất",
+   "nodeId": "4899:118050",
+   "page": "└─ ĐỀ XUẤT TĂNG LƯƠNG",
+   "container": "FLOW admin duyệt đề xuất tăng lương",
+   "size": [
+    600.0,
+    643.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LGV-020000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup duyệt đề xuất”",
+   "goiY": {
+    "theoTen": "ADM-LGV-020000",
+    "theoMa": "ADM-LGV-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LGV-020000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LHN-010110",
+   "title": "Lịch hẹn / Hẹn lớp / Popup thêm lịch hẹn",
+   "nodeId": "2370:27393",
+   "page": "├─ LỊCH HẸN",
+   "container": "LỊCH HẸN",
+   "size": [
+    680.0,
+    552.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LHN-010100",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm lịch hẹn”",
+   "goiY": {
+    "theoTen": "ADM-LHN-010100",
+    "theoMa": "ADM-LHN-010100",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LHN-010100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-010002",
+   "title": "Danh sách lớp học / Dropdown chọn nhân sự (đang mở)",
+   "nodeId": "1991:28315",
+   "page": "├─ LỚP HỌC",
+   "container": "LIST LỚP HỌC",
+   "size": [
+    211.0,
+    300.0
+   ],
+   "loai": "dropdown",
+   "parent": "ADM-LOP-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Dropdown chọn nhân sự (đang mở)”",
+   "goiY": {
+    "theoTen": "ADM-LOP-010000",
+    "theoMa": "ADM-LOP-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-010004",
+   "title": "Danh sách lớp học / Ẩn hiện cột",
+   "nodeId": "3634:78207",
+   "page": "├─ LỚP HỌC",
+   "container": "LIST LỚP HỌC",
+   "size": [
+    200.0,
+    1053.0
+   ],
+   "loai": "dropdown",
+   "parent": "ADM-LOP-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Ẩn hiện cột”",
+   "goiY": {
+    "theoTen": "ADM-LOP-010000",
+    "theoMa": "ADM-LOP-010000",
+    "prototype": [],
+    "namTrong": "ADM-LOP-010000"
+   },
+   "manHienThi": "ADM-LOP-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-010010",
+   "title": "Danh sách lớp học / Popup thêm lớp học",
+   "nodeId": "1991:28268",
+   "page": "├─ LỚP HỌC",
+   "container": "LIST LỚP HỌC",
+   "size": [
+    680.0,
+    939.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm lớp học”",
+   "goiY": {
+    "theoTen": "ADM-LOP-010000",
+    "theoMa": "ADM-LOP-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-010040",
+   "title": "Danh sách lớp học / Popup thêm tag",
+   "nodeId": "1991:23381",
+   "page": "├─ LỚP HỌC",
+   "container": "ADD LỊCH HẸN",
+   "size": [
+    480.0,
+    322.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm tag”",
+   "goiY": {
+    "theoTen": "ADM-LOP-010000",
+    "theoMa": "ADM-LOP-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-010050",
+   "title": "Danh sách lớp học / Popup thêm lịch hẹn",
+   "nodeId": "1991:23448",
+   "page": "├─ LỚP HỌC",
+   "container": "ADD LỊCH HẸN",
+   "size": [
+    680.0,
+    571.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm lịch hẹn”",
+   "goiY": {
+    "theoTen": "ADM-LOP-010000",
+    "theoMa": "ADM-LOP-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-020610",
+   "title": "Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Popup thêm tiêu chuẩn",
+   "nodeId": "2711:50590",
+   "page": "├─ Tiêu chuẩn lớp giáo viên",
+   "container": "Tiêu chuẩn lớp giáo viên",
+   "size": [
+    680.0,
+    546.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-020600",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm tiêu chuẩn”",
+   "goiY": {
+    "theoTen": "ADM-LOP-020600",
+    "theoMa": "ADM-LOP-020600",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-020600",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-020611",
+   "title": "Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Popup thêm tiêu chuẩn / Xem trước",
+   "nodeId": "2711:53620",
+   "page": "├─ Tiêu chuẩn lớp giáo viên",
+   "container": "Tiêu chuẩn lớp giáo viên",
+   "size": [
+    680.0,
+    982.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020610",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Xem trước”",
+   "goiY": {
+    "theoTen": "ADM-LOP-020610",
+    "theoMa": "ADM-LOP-020610",
+    "prototype": [
+     "ADM-LOP-020610"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-020600",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LOP-020612",
+   "title": "Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên / Popup thêm tiêu chuẩn / Xem tiêu chí",
+   "nodeId": "2711:54002",
+   "page": "├─ Tiêu chuẩn lớp giáo viên",
+   "container": "Tiêu chuẩn lớp giáo viên",
+   "size": [
+    680.0,
+    1329.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020611",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "trạng thái của popup: “Xem tiêu chí”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-LOP-020610",
+    "theoMa": "ADM-LOP-020610",
+    "prototype": [
+     "ADM-LOP-020611"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-020600",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LOP-020710",
+   "title": "Chi tiết lớp học / Quy trình lớp / Popup thêm quy trình",
+   "nodeId": "3772:87161",
+   "page": "├─ Quy trình lớp",
+   "container": "Quy trình lớp",
+   "size": [
+    680.0,
+    393.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-020700",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm quy trình”",
+   "goiY": {
+    "theoTen": "ADM-LOP-020700",
+    "theoMa": "ADM-LOP-020700",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-020700",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-020711",
+   "title": "Chi tiết lớp học / Quy trình lớp / Popup thêm quy trình / Xem trước",
+   "nodeId": "3772:87185",
+   "page": "├─ Quy trình lớp",
+   "container": "Quy trình lớp",
+   "size": [
+    680.0,
+    667.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020710",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Xem trước”",
+   "goiY": {
+    "theoTen": "ADM-LOP-020710",
+    "theoMa": "ADM-LOP-020710",
+    "prototype": [
+     "ADM-LOP-020710"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-020700",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LOP-020712",
+   "title": "Chi tiết lớp học / Quy trình lớp / Popup thêm quy trình / Xem tiêu chí",
+   "nodeId": "3772:87240",
+   "page": "├─ Quy trình lớp",
+   "container": "Quy trình lớp",
+   "size": [
+    680.0,
+    1257.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020711",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "trạng thái của popup: “Xem tiêu chí”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-LOP-020710",
+    "theoMa": "ADM-LOP-020710",
+    "prototype": [
+     "ADM-LOP-020711"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-020700",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LOP-020810",
+   "title": "Chi tiết lớp học / CSKH / Popup thêm quy trình CSKH",
+   "nodeId": "2711:65257",
+   "page": "├─ CSKH",
+   "container": "CSKH",
+   "size": [
+    680.0,
+    291.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-020800",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm quy trình CSKH”",
+   "goiY": {
+    "theoTen": "ADM-LOP-020800",
+    "theoMa": "ADM-LOP-020800",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-020800",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-020811",
+   "title": "Chi tiết lớp học / CSKH / Popup thêm quy trình CSKH / Xem trước",
+   "nodeId": "2711:65273",
+   "page": "├─ CSKH",
+   "container": "CSKH",
+   "size": [
+    680.0,
+    565.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020810",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Xem trước”",
+   "goiY": {
+    "theoTen": "ADM-LOP-020810",
+    "theoMa": "ADM-LOP-020810",
+    "prototype": [
+     "ADM-LOP-020810"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-020800",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LOP-020812",
+   "title": "Chi tiết lớp học / CSKH / Popup thêm quy trình CSKH / Xem tiêu chí",
+   "nodeId": "2711:65320",
+   "page": "├─ CSKH",
+   "container": "CSKH",
+   "size": [
+    680.0,
+    1010.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-020811",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "trạng thái của popup: “Xem tiêu chí”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "ADM-LOP-020810",
+    "theoMa": "ADM-LOP-020810",
+    "prototype": [
+     "ADM-LOP-020811"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-020800",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LOP-040210",
+   "title": "Lớp học / Tổng quan / Popup lịch sử ghi chú",
+   "nodeId": "3348:62669",
+   "page": "├─ Tổng quan",
+   "container": "Tổng Quan",
+   "size": [
+    480.0,
+    762.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-040200",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "cao",
+   "tinCayCha": "trung-binh",
+   "lyDo": "tên: “Popup lịch sử ghi chú”",
+   "goiY": {
+    "theoTen": null,
+    "theoMa": "ADM-LOP-040200",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-040200",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LOP-040220",
+   "title": "Lớp học / Cài đặt / Học viên / Popup lịch sử trạng thái",
+   "nodeId": "2409:147786",
+   "page": "├─ Cài đặt",
+   "container": "Học viên",
+   "size": [
+    480.0,
+    216.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-040200",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup lịch sử trạng thái”",
+   "goiY": {
+    "theoTen": "ADM-LOP-040200",
+    "theoMa": "ADM-LOP-040200",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-040200",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-040230",
+   "title": "Lớp học / Cài đặt / Học viên / Popup thêm học phí",
+   "nodeId": "2409:147854",
+   "page": "├─ Cài đặt",
+   "container": "Học viên",
+   "size": [
+    480.0,
+    369.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-040200",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm học phí”",
+   "goiY": {
+    "theoTen": "ADM-LOP-040200",
+    "theoMa": "ADM-LOP-040200",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-040200",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-040520",
+   "title": "Lớp học / Cài đặt / Lịch dạy / Popup thêm lịch dạy linh hoạt",
+   "nodeId": "2384:59509",
+   "page": "├─ Cài đặt",
+   "container": "Lịch dạy",
+   "size": [
+    800.0,
+    273.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-040500",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm lịch dạy linh hoạt”",
+   "goiY": {
+    "theoTen": "ADM-LOP-040500",
+    "theoMa": "ADM-LOP-040500",
+    "prototype": [
+     "ADM-LOP-040500"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-040500",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-040521",
+   "title": "Lớp học / Cài đặt / Lịch dạy / Popup thêm lịch dạy linh hoạt / Trùng lịch cố định",
+   "nodeId": "2911:43102",
+   "page": "├─ Cài đặt",
+   "container": "Lịch dạy",
+   "size": [
+    800.0,
+    273.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-LOP-040520",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "bước/trạng thái trong popup: “Trùng lịch cố định”",
+   "goiY": {
+    "theoTen": "ADM-LOP-040520",
+    "theoMa": "ADM-LOP-040520",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-040500",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LOP-040710",
+   "title": "Lớp học / Cài đặt / KPI / Popup chỉnh sửa KPI",
+   "nodeId": "2245:107872",
+   "page": "├─ Cài đặt",
+   "container": "KPI",
+   "size": [
+    480.0,
+    488.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-040700",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chỉnh sửa KPI”",
+   "goiY": {
+    "theoTen": "ADM-LOP-040700",
+    "theoMa": "ADM-LOP-040700",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-040700",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-040712",
+   "title": "Lớp học / Cài đặt / KPI / Popup chỉnh sửa KPI / Đang mở",
+   "nodeId": "2245:107748",
+   "page": "├─ Cài đặt",
+   "container": "KPI",
+   "size": [
+    480.0,
+    503.0
+   ],
+   "loai": "dropdown",
+   "parent": "ADM-LOP-040710",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Đang mở”",
+   "goiY": {
+    "theoTen": "ADM-LOP-040710",
+    "theoMa": "ADM-LOP-040710",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-040700",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-040810",
+   "title": "Lớp học / Cài đặt / OT / Popup chỉnh sửa OT",
+   "nodeId": "2401:13017",
+   "page": "├─ Cài đặt",
+   "container": "OT",
+   "size": [
+    480.0,
+    507.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-040800",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chỉnh sửa OT”",
+   "goiY": {
+    "theoTen": "ADM-LOP-040800",
+    "theoMa": "ADM-LOP-040800",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-040800",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-040812",
+   "title": "Lớp học / Cài đặt / OT / Popup chỉnh sửa OT / Đang mở",
+   "nodeId": "2401:12994",
+   "page": "├─ Cài đặt",
+   "container": "OT",
+   "size": [
+    480.0,
+    503.0
+   ],
+   "loai": "dropdown",
+   "parent": "ADM-LOP-040810",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Đang mở”",
+   "goiY": {
+    "theoTen": "ADM-LOP-040810",
+    "theoMa": "ADM-LOP-040810",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-040800",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-LOP-050406",
+   "title": "Lớp học / Nhật ký / Tin nhắn / Popup xác nhận xoá",
+   "nodeId": "3705:83794",
+   "page": "└─ Nhật ký",
+   "container": "Nhật ký",
+   "size": [
+    400.0,
+    154.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-050404",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "cao",
+   "tinCayCha": "trung-binh",
+   "lyDo": "tên: “Popup xác nhận xoá”",
+   "goiY": {
+    "theoTen": "ADM-LOP-050404",
+    "theoMa": null,
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-050404",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LOP-050407",
+   "title": "Lớp học / Nhật ký / Tin nhắn / Popup xác nhận gửi",
+   "nodeId": "3705:83804",
+   "page": "└─ Nhật ký",
+   "container": "Nhật ký",
+   "size": [
+    400.0,
+    154.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-050404",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "cao",
+   "tinCayCha": "trung-binh",
+   "lyDo": "tên: “Popup xác nhận gửi”",
+   "goiY": {
+    "theoTen": "ADM-LOP-050404",
+    "theoMa": null,
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-050404",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LOP-050408",
+   "title": "Lớp học / Nhật ký / Tin nhắn / Popup tạo tin nhắn",
+   "nodeId": "3705:83818",
+   "page": "└─ Nhật ký",
+   "container": "Nhật ký",
+   "size": [
+    480.0,
+    331.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-050404",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "cao",
+   "tinCayCha": "trung-binh",
+   "lyDo": "tên: “Popup tạo tin nhắn”",
+   "goiY": {
+    "theoTen": "ADM-LOP-050404",
+    "theoMa": null,
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-050404",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-LOP-050410",
+   "title": "Lớp học / Nhật ký / Tin nhắn / Popup tạo tin nhắn bán tự động",
+   "nodeId": "1474:15650",
+   "page": "└─ Nhật ký",
+   "container": "Nhật ký",
+   "size": [
+    480.0,
+    430.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-LOP-050404",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "cao",
+   "tinCayCha": "trung-binh",
+   "lyDo": "tên: “Popup tạo tin nhắn bán tự động”",
+   "goiY": {
+    "theoTen": "ADM-LOP-050404",
+    "theoMa": null,
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-LOP-050404",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-MV-020010",
+   "title": "Move video / Danh sách video / Popup đổi tên video",
+   "nodeId": "2391:66541",
+   "page": "└─ MOVE VIDEO",
+   "container": "TOOL > Move video",
+   "size": [
+    480.0,
+    211.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-MV-020000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup đổi tên video”",
+   "goiY": {
+    "theoTen": "ADM-MV-020000",
+    "theoMa": "ADM-MV-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-MV-020000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-MV-020020",
+   "title": "Move video / Danh sách video / Popup xác nhận xoá",
+   "nodeId": "2391:66560",
+   "page": "└─ MOVE VIDEO",
+   "container": "TOOL > Move video",
+   "size": [
+    400.0,
+    154.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-MV-020000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup xác nhận xoá”",
+   "goiY": {
+    "theoTen": "ADM-MV-020000",
+    "theoMa": "ADM-MV-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-MV-020000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-MV-020030",
+   "title": "Move video / Danh sách video / Popup đổi tên & move video",
+   "nodeId": "2478:111049",
+   "page": "└─ MOVE VIDEO",
+   "container": "TOOL > Move video",
+   "size": [
+    480.0,
+    211.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-MV-020000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup đổi tên & move video”",
+   "goiY": {
+    "theoTen": "ADM-MV-020000",
+    "theoMa": "ADM-MV-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-MV-020000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-SS-010010",
+   "title": "Ship sách / Popup thêm đơn sách",
+   "nodeId": "2619:200673",
+   "page": "├─ SHIP SÁCH",
+   "container": "SHIP SÁCH",
+   "size": [
+    680.0,
+    644.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-SS-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm đơn sách”",
+   "goiY": {
+    "theoTen": "ADM-SS-010000",
+    "theoMa": "ADM-SS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-SS-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-SS-010012",
+   "title": "Ship sách / Popup thêm đơn sách / Đã chọn học viên có sẵn",
+   "nodeId": "2911:44254",
+   "page": "├─ SHIP SÁCH",
+   "container": "SHIP SÁCH",
+   "size": [
+    680.0,
+    644.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-SS-010010",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Đã chọn học viên có sẵn”",
+   "goiY": {
+    "theoTen": "ADM-SS-010010",
+    "theoMa": "ADM-SS-010010",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-SS-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-SS-010020",
+   "title": "Ship sách / Popup xác nhận xoá đơn sách",
+   "nodeId": "2619:200765",
+   "page": "├─ SHIP SÁCH",
+   "container": "SHIP SÁCH",
+   "size": [
+    400.0,
+    154.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-SS-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup xác nhận xoá đơn sách”",
+   "goiY": {
+    "theoTen": "ADM-SS-010000",
+    "theoMa": "ADM-SS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-SS-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-SS-010032",
+   "title": "Ship sách / Popup xác nhận gửi tin nhắn / Đang mở",
+   "nodeId": "2911:1552",
+   "page": "├─ SHIP SÁCH",
+   "container": "SHIP SÁCH",
+   "size": [
+    480.0,
+    189.0
+   ],
+   "loai": "dropdown",
+   "parent": "ADM-SS-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Đang mở”",
+   "goiY": {
+    "theoTen": "ADM-SS-010000",
+    "theoMa": "ADM-SS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-SS-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-SS-010034",
+   "title": "Ship sách / Popup xác nhận gửi tin nhắn / Đã chọn mẫu",
+   "nodeId": "2911:44525",
+   "page": "├─ SHIP SÁCH",
+   "container": "SHIP SÁCH",
+   "size": [
+    480.0,
+    383.0
+   ],
+   "loai": "trang-thai",
+   "parent": "ADM-SS-010000",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Đã chọn mẫu”",
+   "goiY": {
+    "theoTen": "ADM-SS-010000",
+    "theoMa": "ADM-SS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-SS-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "ADM-SS-010040",
+   "title": "Ship sách / Popup cập nhật đơn sách",
+   "nodeId": "2929:44627",
+   "page": "├─ SHIP SÁCH",
+   "container": "SHIP SÁCH",
+   "size": [
+    680.0,
+    597.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-SS-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup cập nhật đơn sách”",
+   "goiY": {
+    "theoTen": "ADM-SS-010000",
+    "theoMa": "ADM-SS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-SS-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-TAG-010010",
+   "title": "Tag / Popup thêm tag",
+   "nodeId": "3065:69413",
+   "page": "├─ TAG",
+   "container": "TAG",
+   "size": [
+    452.0,
+    408.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-TAG-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm tag”",
+   "goiY": {
+    "theoTen": "ADM-TAG-010000",
+    "theoMa": "ADM-TAG-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-TAG-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "ADM-TAG-010020",
+   "title": "Tag / Popup thêm nhóm tag",
+   "nodeId": "3065:69665",
+   "page": "├─ TAG",
+   "container": "TAG",
+   "size": [
+    452.0,
+    424.0
+   ],
+   "loai": "popup",
+   "parent": "ADM-TAG-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm nhóm tag”",
+   "goiY": {
+    "theoTen": "ADM-TAG-010000",
+    "theoMa": "ADM-TAG-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "ADM-TAG-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-BL-010010",
+   "title": "Báo lỗi / Popup gửi báo lỗi · Đối tượng PPT, PDF, BTVN",
+   "nodeId": "5300:51144",
+   "page": "└─ BÁO LỖI",
+   "container": "FLOW CD báo lỗi & góp ý",
+   "size": [
+    480.0,
+    793.0
+   ],
+   "loai": "popup",
+   "parent": "CD-BL-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng PPT, PDF, BTVN”",
+   "goiY": {
+    "theoTen": "CD-BL-010000",
+    "theoMa": "CD-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-BL-010011",
+   "title": "Báo lỗi / Popup gửi báo lỗi · Đối tượng Khác",
+   "nodeId": "5300:51175",
+   "page": "└─ BÁO LỖI",
+   "container": "FLOW CD báo lỗi & góp ý",
+   "size": [
+    480.0,
+    793.0
+   ],
+   "loai": "popup",
+   "parent": "CD-BL-010000",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng Khác”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-BL-010000",
+    "theoMa": "CD-BL-010010",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-BL-010020",
+   "title": "Báo lỗi / Popup chi tiết báo lỗi · Đang xử lý",
+   "nodeId": "5371:42362",
+   "page": "└─ BÁO LỖI",
+   "container": "FLOW CD báo lỗi & góp ý",
+   "size": [
+    600.0,
+    1004.0
+   ],
+   "loai": "popup",
+   "parent": "CD-BL-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Đang xử lý”",
+   "goiY": {
+    "theoTen": "CD-BL-010000",
+    "theoMa": "CD-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-BL-010030",
+   "title": "Báo lỗi / Popup chi tiết báo lỗi · Hoàn thành",
+   "nodeId": "5274:365488",
+   "page": "└─ BÁO LỖI",
+   "container": "FLOW CD báo lỗi & góp ý",
+   "size": [
+    600.0,
+    1004.0
+   ],
+   "loai": "popup",
+   "parent": "CD-BL-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành”",
+   "goiY": {
+    "theoTen": "CD-BL-010000",
+    "theoMa": "CD-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-BL-010050",
+   "title": "Báo lỗi / Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý",
+   "nodeId": "5300:27142",
+   "page": "└─ BÁO LỖI",
+   "container": "FLOW CD báo lỗi & góp ý",
+   "size": [
+    600.0,
+    627.0
+   ],
+   "loai": "popup",
+   "parent": "CD-BL-010040",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-BL-010040",
+    "theoMa": "CD-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-CDO-010010",
+   "title": "Quản lý cấp độ / Popup kích hoạt công khai",
+   "nodeId": "1901:3763",
+   "page": "├─ CẤP ĐỘ",
+   "container": "CẤP ĐỘ",
+   "size": [
+    680.0,
+    304.0
+   ],
+   "loai": "popup",
+   "parent": "CD-CDO-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup kích hoạt công khai”",
+   "goiY": {
+    "theoTen": "CD-CDO-010000",
+    "theoMa": "CD-CDO-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-CDO-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-CDO-010012",
+   "title": "Quản lý cấp độ / Popup kích hoạt công khai / Điền sai",
+   "nodeId": "1901:3819",
+   "page": "├─ CẤP ĐỘ",
+   "container": "CẤP ĐỘ",
+   "size": [
+    680.0,
+    304.0
+   ],
+   "loai": "trang-thai",
+   "parent": "CD-CDO-010010",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Điền sai”",
+   "goiY": {
+    "theoTen": "CD-CDO-010010",
+    "theoMa": "CD-CDO-010010",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-CDO-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-DM-010057",
+   "title": "Quản lý danh mục / Popup danh mục & cấp độ / Quản lý danh mục / Thành công",
+   "nodeId": "689:14188",
+   "page": "├─ DANH MỤC",
+   "container": "DANH MỤC",
+   "size": [
+    550.0,
+    588.0
+   ],
+   "loai": "trang-thai",
+   "parent": "CD-DM-010010",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "trạng thái của popup: “Thành công”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-DM-010010",
+    "theoMa": "CD-DM-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-DM-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-DM-010060",
+   "title": "Quản lý danh mục / Popup kích hoạt công khai",
+   "nodeId": "1854:20955",
+   "page": "├─ DANH MỤC",
+   "container": "DANH MỤC · Bổ sung",
+   "size": [
+    680.0,
+    304.0
+   ],
+   "loai": "popup",
+   "parent": "CD-DM-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup kích hoạt công khai”",
+   "goiY": {
+    "theoTen": "CD-DM-010000",
+    "theoMa": "CD-DM-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-DM-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-DM-010062",
+   "title": "Quản lý danh mục / Popup kích hoạt công khai / Điền sai",
+   "nodeId": "1854:21305",
+   "page": "├─ DANH MỤC",
+   "container": "DANH MỤC · Bổ sung",
+   "size": [
+    680.0,
+    304.0
+   ],
+   "loai": "trang-thai",
+   "parent": "CD-DM-010060",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Điền sai”",
+   "goiY": {
+    "theoTen": "CD-DM-010060",
+    "theoMa": "CD-DM-010060",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-DM-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-010010",
+   "title": "Quản lý khoá học / Popup kích hoạt công khai",
+   "nodeId": "2011:26470",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quản lý khoá học",
+   "size": [
+    680.0,
+    508.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup kích hoạt công khai”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-010000",
+    "theoMa": "CD-KH-010000",
+    "prototype": [
+     "CD-KH-010000",
+     "CD-KH-010000-DK",
+     "CD-KH-020230",
+     "CD-KH-020230-DK",
+     "CD-KH-030100",
+     "CD-KH-030100-DK",
+     "CD-KH-030104",
+     "CD-KH-030104-DK",
+     "CD-KH-030200",
+     "CD-KH-030200-DK",
+     "CD-KH-030300",
+     "CD-KH-030300-DK",
+     "CD-KH-030342",
+     "CD-KH-030342-DK",
+     "CD-KH-030350",
+     "CD-KH-030350-DK"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-KH-010012",
+   "title": null,
+   "nodeId": null,
+   "page": null,
+   "container": null,
+   "size": null,
+   "loai": "chua-ro",
+   "parent": null,
+   "tinCay": "thap",
+   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú",
+   "goiY": {},
+   "manHienThi": null,
+   "parentInPageList": false,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-010013",
+   "title": "Quản lý khoá học / Popup kích hoạt công khai / ID hợp lệ",
+   "nodeId": "2706:43836",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quản lý khoá học",
+   "size": [
+    680.0,
+    508.0
+   ],
+   "loai": "trang-thai",
+   "parent": "CD-KH-010010",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “ID hợp lệ”",
+   "goiY": {
+    "theoTen": "CD-KH-010010",
+    "theoMa": "CD-KH-010010",
+    "prototype": [
+     "CD-KH-010010"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-020261",
+   "title": "Lộ trình / Popup xoá bài học",
+   "nodeId": "6518:356225",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 4 · Lộ trình (S4)",
+   "size": [
+    480.0,
+    192.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-020260",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup xoá bài học”",
+   "goiY": {
+    "theoTen": "CD-KH-020260",
+    "theoMa": "CD-KH-020260",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-020260",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-KH-030110",
+   "title": "Học kỳ / Thông tin / Popup thêm kỳ vào Tổng ôn",
+   "nodeId": "1496:16189",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 2 · Học kỳ",
+   "size": [
+    480.0,
+    436.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-030100",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm kỳ vào Tổng ôn”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-030100",
+    "theoMa": "CD-KH-030100",
+    "prototype": [
+     "CD-KH-030100",
+     "CD-KH-030104"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-030100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-KH-030120",
+   "title": "Học kỳ / Thông tin / Popup bỏ kỳ khỏi Tổng ôn",
+   "nodeId": "1496:16214",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 2 · Học kỳ",
+   "size": [
+    400.0,
+    300.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-030100",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup bỏ kỳ khỏi Tổng ôn”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-030100",
+    "theoMa": "CD-KH-030100",
+    "prototype": [
+     "CD-KH-030100",
+     "CD-KH-030104"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-030100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-KH-030220",
+   "title": null,
+   "nodeId": null,
+   "page": null,
+   "container": null,
+   "size": null,
+   "loai": "chua-ro",
+   "parent": null,
+   "tinCay": "thap",
+   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú",
+   "goiY": {},
+   "manHienThi": null,
+   "parentInPageList": false,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-030320",
+   "title": "Học kỳ / Kiểm tra / Popup danh sách câu hỏi",
+   "nodeId": null,
+   "page": null,
+   "container": null,
+   "size": null,
+   "loai": "popup",
+   "parent": "CD-KH-030300",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú (“Học kỳ / Kiểm tra / Popup danh sách câu hỏi”); tên: “Popup danh sách câu hỏi”",
+   "goiY": {
+    "theoTen": "CD-KH-030300",
+    "theoMa": "CD-KH-030300",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-030300",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-030330",
+   "title": null,
+   "nodeId": null,
+   "page": null,
+   "container": null,
+   "size": null,
+   "loai": "chua-ro",
+   "parent": null,
+   "tinCay": "thap",
+   "lyDo": "không còn frame, mã chỉ ghi trong bảng mục lục/ghi chú",
+   "goiY": {},
+   "manHienThi": null,
+   "parentInPageList": false,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-030341",
+   "title": "Học kỳ / Kiểm tra / Popup Generate · Nhập prompt",
+   "nodeId": "5491:358429",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 2 · Học kỳ / Kiểm tra · Luồng Generate bài tập",
+   "size": [
+    720.0,
+    547.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-030340",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup Generate · Nhập prompt”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-030300",
+    "theoMa": "CD-KH-030340",
+    "prototype": [
+     "CD-KH-030340",
+     "CD-KH-030342",
+     "CD-KH-030342-DK",
+     "CD-KH-030350",
+     "CD-KH-030350-DK"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-030340",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-KH-030342",
+   "title": "Học kỳ / Kiểm tra / Popup Generate · Chọn kiến thức & kỹ năng",
+   "nodeId": "5491:358483",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 2 · Học kỳ / Kiểm tra · Luồng Generate bài tập",
+   "size": [
+    720.0,
+    1458.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-030341",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup Generate · Chọn kiến thức & kỹ năng”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-030300",
+    "theoMa": "CD-KH-030340",
+    "prototype": [
+     "CD-KH-030341"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-030340",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-030344",
+   "title": "Học kỳ / Kiểm tra / Generate · Đang tạo bảng",
+   "nodeId": "5609:31772",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 2 · Học kỳ / Kiểm tra · Luồng Generate bài tập",
+   "size": [
+    480.0,
+    194.0
+   ],
+   "loai": "trang-thai",
+   "parent": "CD-KH-030341",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "trạng thái của màn: “Generate · Đang tạo bảng”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-030300",
+    "theoMa": "CD-KH-030340",
+    "prototype": [
+     "CD-KH-030341",
+     "CD-KH-030342",
+     "CD-KH-030342-DK",
+     "CD-KH-030346",
+     "CD-KH-030350",
+     "CD-KH-030350-DK"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-030340",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-030345",
+   "title": "Học kỳ / Kiểm tra / Generate · Xác nhận bỏ bảng",
+   "nodeId": "5609:31794",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 2 · Học kỳ / Kiểm tra · Luồng Generate bài tập",
+   "size": [
+    480.0,
+    188.0
+   ],
+   "loai": "trang-thai",
+   "parent": "CD-KH-030343",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "trạng thái của màn: “Generate · Xác nhận bỏ bảng”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-030300",
+    "theoMa": "CD-KH-030340",
+    "prototype": [
+     "CD-KH-030343",
+     "CD-KH-030343-DK"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-030340",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-030346",
+   "title": "Học kỳ / Kiểm tra / Generate · Lỗi",
+   "nodeId": "5609:31815",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 2 · Học kỳ / Kiểm tra · Luồng Generate bài tập",
+   "size": [
+    720.0,
+    608.0
+   ],
+   "loai": "trang-thai",
+   "parent": "CD-KH-030300",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "trạng thái của màn: “Generate · Lỗi”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-030300",
+    "theoMa": "CD-KH-030340",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-030300",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-030348",
+   "title": "Học kỳ / Kiểm tra / Popup chọn loại câu",
+   "nodeId": "5614:35400",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 2 · Học kỳ / Kiểm tra · Luồng Generate bài tập",
+   "size": [
+    720.0,
+    519.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-030340",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chọn loại câu”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-030300",
+    "theoMa": "CD-KH-030340",
+    "prototype": [
+     "CD-KH-030340"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-030340",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-KH-030349",
+   "title": "Học kỳ / Kiểm tra / Popup soạn câu hỏi · Trắc nghiệm",
+   "nodeId": "5614:35448",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 2 · Học kỳ / Kiểm tra · Luồng Generate bài tập",
+   "size": [
+    640.0,
+    1053.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-030348",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup soạn câu hỏi · Trắc nghiệm”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-030300",
+    "theoMa": "CD-KH-030340",
+    "prototype": [
+     "CD-KH-030348"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-030340",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-030350",
+   "title": "Học kỳ / Kiểm tra / Generate · Lỗi (tab Chọn kiến thức & kỹ năng)",
+   "nodeId": "6579:75268",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 2 · Học kỳ / Kiểm tra · Luồng Generate bài tập",
+   "size": [
+    720.0,
+    1519.0
+   ],
+   "loai": "trang-thai",
+   "parent": "CD-KH-030300",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của màn: “Generate · Lỗi (tab Chọn kiến thức & kỹ năng)”",
+   "goiY": {
+    "theoTen": "CD-KH-030300",
+    "theoMa": "CD-KH-030300",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-030300",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-040155",
+   "title": "Kiến thức (S1) / Từ vựng / Popup gỡ mục khỏi khoá",
+   "nodeId": "5003:17910",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 1 · Kiến thức (S1) · Từ vựng & Kiến thức",
+   "size": [
+    800.0,
+    304.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-040100",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup gỡ mục khỏi khoá”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-040100",
+    "theoMa": "CD-KH-040150",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-040100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-050155",
+   "title": "Kỹ năng (S6) / Nghe / Popup gỡ bài khỏi khoá",
+   "nodeId": "6646:120233",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 5 · Kỹ năng (S6) · Nghe / Đọc / Viết / Nói",
+   "size": [
+    800.0,
+    304.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-050100",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup gỡ bài khỏi khoá”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-050100",
+    "theoMa": "CD-KH-050150",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-050100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-060110",
+   "title": "Bài tập về nhà / Popup chọn loại câu",
+   "nodeId": "5491:348706",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 6 · Bài tập về nhà · BTVN & Kiểm tra",
+   "size": [
+    720.0,
+    519.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-060100",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chọn loại câu”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-060100",
+    "theoMa": "CD-KH-060100",
+    "prototype": [
+     "CD-KH-060100",
+     "CD-KH-060200"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-060100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "CD-KH-060120",
+   "title": "Bài tập về nhà / Popup soạn câu hỏi · Trắc nghiệm",
+   "nodeId": "5491:348805",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 6 · Bài tập về nhà · BTVN & Kiểm tra",
+   "size": [
+    640.0,
+    1034.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-060110",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup soạn câu hỏi · Trắc nghiệm”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-060100",
+    "theoMa": "CD-KH-060100",
+    "prototype": [
+     "CD-KH-060110"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-060100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-060121",
+   "title": "Bài tập về nhà / Popup soạn câu hỏi · Sắp xếp",
+   "nodeId": "5672:74620",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 6 · Bài tập về nhà · BTVN & Kiểm tra",
+   "size": [
+    640.0,
+    1010.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-060100",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup soạn câu hỏi · Sắp xếp”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-060100",
+    "theoMa": "CD-KH-060120",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-060100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-060122",
+   "title": "Bài tập về nhà / Popup soạn câu hỏi · Nối từ",
+   "nodeId": "5672:74752",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 6 · Bài tập về nhà · BTVN & Kiểm tra",
+   "size": [
+    640.0,
+    1058.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-060100",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup soạn câu hỏi · Nối từ”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-060100",
+    "theoMa": "CD-KH-060120",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-060100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-060123",
+   "title": "Bài tập về nhà / Popup soạn câu hỏi · Nói",
+   "nodeId": "5672:74887",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 6 · Bài tập về nhà · BTVN & Kiểm tra",
+   "size": [
+    640.0,
+    1007.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-060100",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup soạn câu hỏi · Nói”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-060100",
+    "theoMa": "CD-KH-060120",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-060100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-060124",
+   "title": "Bài tập về nhà / Popup soạn câu hỏi · Viết",
+   "nodeId": "5672:75018",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 6 · Bài tập về nhà · BTVN & Kiểm tra",
+   "size": [
+    640.0,
+    989.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-060100",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup soạn câu hỏi · Viết”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-060100",
+    "theoMa": "CD-KH-060120",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-060100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-060125",
+   "title": "Bài tập về nhà / Popup soạn câu hỏi · Câu hỏi con",
+   "nodeId": "5672:75135",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 6 · Bài tập về nhà · BTVN & Kiểm tra",
+   "size": [
+    640.0,
+    1010.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-060100",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup soạn câu hỏi · Câu hỏi con”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-060100",
+    "theoMa": "CD-KH-060120",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-060100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-060140",
+   "title": "Bài tập về nhà / Kết quả Import",
+   "nodeId": "5672:75273",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 6 · Bài tập về nhà · BTVN & Kiểm tra",
+   "size": [
+    560.0,
+    304.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-060130",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Kết quả Import”, không ghi chữ Popup; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-060130",
+    "theoMa": "CD-KH-060100",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-060100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-060141",
+   "title": "Bài tập về nhà / Kết quả Import",
+   "nodeId": "5672:75298",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 6 · Bài tập về nhà · BTVN & Kiểm tra",
+   "size": [
+    560.0,
+    229.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-060100",
+   "tinCay": "thap",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Kết quả Import”, không ghi chữ Popup; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-060130",
+    "theoMa": "CD-KH-060140",
+    "prototype": [
+     "CD-KH-060100",
+     "CD-KH-060200"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-060100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-060150",
+   "title": "Bài tập về nhà / Soát lỗi bằng AI",
+   "nodeId": "5672:75315",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Quy trình › 6 · Bài tập về nhà · BTVN & Kiểm tra",
+   "size": [
+    560.0,
+    422.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-060100",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Soát lỗi bằng AI”, không ghi chữ Popup; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-060130",
+    "theoMa": "CD-KH-060100",
+    "prototype": [
+     "CD-KH-060100",
+     "CD-KH-060141",
+     "CD-KH-060200"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-060100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "CD-KH-070103",
+   "title": "Thư viện / Popup xoá mục",
+   "nodeId": "5672:64312",
+   "page": "├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
+   "container": "Thư viện · Kiến thức / Kỹ năng / Bài tập",
+   "size": [
+    480.0,
+    171.0
+   ],
+   "loai": "popup",
+   "parent": "CD-KH-070102",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup xoá mục”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CD-KH-070102",
+    "theoMa": "CD-KH-070100",
+    "prototype": [
+     "CD-KH-070101",
+     "CD-KH-070101-DK",
+     "CD-KH-070102",
+     "CD-KH-070102-DK"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "CD-KH-070100",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "CH-BL-010010",
+   "title": "Báo lỗi / Popup gửi báo lỗi · Đối tượng PPT, PDF, BTVN",
+   "nodeId": "5300:51074",
+   "page": "└─ BÁO LỖI",
+   "container": "FLOW class handler báo lỗi & góp ý",
+   "size": [
+    480.0,
+    793.0
+   ],
+   "loai": "popup",
+   "parent": "CH-BL-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng PPT, PDF, BTVN”",
+   "goiY": {
+    "theoTen": "CH-BL-010000",
+    "theoMa": "CH-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CH-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "CH-BL-010011",
+   "title": "Báo lỗi / Popup gửi báo lỗi · Đối tượng Khác",
+   "nodeId": "5300:51109",
+   "page": "└─ BÁO LỖI",
+   "container": "FLOW class handler báo lỗi & góp ý",
+   "size": [
+    480.0,
+    793.0
+   ],
+   "loai": "popup",
+   "parent": "CH-BL-010000",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup gửi báo lỗi · Đối tượng Khác”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CH-BL-010000",
+    "theoMa": "CH-BL-010010",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CH-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "CH-BL-010020",
+   "title": "Báo lỗi / Popup chi tiết báo lỗi · Đang xử lý",
+   "nodeId": "5274:364127",
+   "page": "└─ BÁO LỖI",
+   "container": "FLOW class handler báo lỗi & góp ý",
+   "size": [
+    600.0,
+    1004.0
+   ],
+   "loai": "popup",
+   "parent": "CH-BL-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Đang xử lý”",
+   "goiY": {
+    "theoTen": "CH-BL-010000",
+    "theoMa": "CH-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CH-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "CH-BL-010030",
+   "title": "Báo lỗi / Popup chi tiết báo lỗi · Hoàn thành",
+   "nodeId": "5274:364154",
+   "page": "└─ BÁO LỖI",
+   "container": "FLOW class handler báo lỗi & góp ý",
+   "size": [
+    600.0,
+    1004.0
+   ],
+   "loai": "popup",
+   "parent": "CH-BL-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành”",
+   "goiY": {
+    "theoTen": "CH-BL-010000",
+    "theoMa": "CH-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CH-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "CH-BL-010050",
+   "title": "Báo lỗi / Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý",
+   "nodeId": "5300:26756",
+   "page": "└─ BÁO LỖI",
+   "container": "FLOW class handler báo lỗi & góp ý",
+   "size": [
+    600.0,
+    627.0
+   ],
+   "loai": "popup",
+   "parent": "CH-BL-010040",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Hoàn thành · Nhập kết quả xử lý”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CH-BL-010040",
+    "theoMa": "CH-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CH-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "CH-BL-010070",
+   "title": "Báo lỗi / Popup nhắc báo lỗi chưa xử lý (mỗi ngày)",
+   "nodeId": "5371:40303",
+   "page": "└─ BÁO LỖI",
+   "container": "FLOW class handler báo lỗi & góp ý",
+   "size": [
+    480.0,
+    515.0
+   ],
+   "loai": "popup",
+   "parent": "CH-BL-010040",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup nhắc báo lỗi chưa xử lý (mỗi ngày)”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "CH-BL-010040",
+    "theoMa": "CH-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "CH-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "GV-BL-010010",
+   "title": "Báo lỗi / Popup gửi báo lỗi · Giáo trình",
+   "nodeId": "5300:51046",
+   "page": "├─ BÁO LỖI",
+   "container": "FLOW giáo viên báo lỗi & góp ý",
+   "size": [
+    480.0,
+    793.0
+   ],
+   "loai": "popup",
+   "parent": "GV-BL-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup gửi báo lỗi · Giáo trình”",
+   "goiY": {
+    "theoTen": "GV-BL-010000",
+    "theoMa": "GV-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-BL-010020",
+   "title": "Báo lỗi / Popup chi tiết báo lỗi · Đang mở",
+   "nodeId": "5031:373246",
+   "page": "├─ BÁO LỖI",
+   "container": "FLOW giáo viên báo lỗi & góp ý",
+   "size": [
+    600.0,
+    577.0
+   ],
+   "loai": "popup",
+   "parent": "GV-BL-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Đang mở”",
+   "goiY": {
+    "theoTen": "GV-BL-010000",
+    "theoMa": "GV-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-BL-010030",
+   "title": "Báo lỗi / Popup chi tiết báo lỗi · Đã giải quyết",
+   "nodeId": "5031:373275",
+   "page": "├─ BÁO LỖI",
+   "container": "FLOW giáo viên báo lỗi & góp ý",
+   "size": [
+    600.0,
+    596.0
+   ],
+   "loai": "popup",
+   "parent": "GV-BL-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chi tiết báo lỗi · Đã giải quyết”",
+   "goiY": {
+    "theoTen": "GV-BL-010000",
+    "theoMa": "GV-BL-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-BL-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-KS-010001",
+   "title": "Khảo sát / Popup thông báo khảo sát mới",
+   "nodeId": "4686:44205",
+   "page": "└─ KHẢO SÁT",
+   "container": "FLOW giáo viên nhận & làm khảo sát",
+   "size": [
+    480.0,
+    333.10198974609375
+   ],
+   "loai": "popup",
+   "parent": "GV-KS-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thông báo khảo sát mới”",
+   "goiY": {
+    "theoTen": "GV-KS-010000",
+    "theoMa": "GV-KS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-KS-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-KS-010003",
+   "title": "Khảo sát / Dropdown thông báo khảo sát",
+   "nodeId": null,
+   "page": null,
+   "container": null,
+   "size": null,
+   "loai": "dropdown",
+   "parent": "GV-KS-010000",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "chỉ có frame bản tối -DK; tên: “Dropdown thông báo khảo sát”",
+   "goiY": {
+    "theoTen": "GV-KS-010000",
+    "theoMa": "GV-KS-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-KS-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "GV-KS-010011",
+   "title": "Khảo sát / Popup xác nhận gửi",
+   "nodeId": "4686:44210",
+   "page": "└─ KHẢO SÁT",
+   "container": "FLOW giáo viên nhận & làm khảo sát",
+   "size": [
+    480.0,
+    314.10198974609375
+   ],
+   "loai": "popup",
+   "parent": "GV-KS-010010",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup xác nhận gửi”",
+   "goiY": {
+    "theoTen": "GV-KS-010010",
+    "theoMa": "GV-KS-010010",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-KS-010010",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-KS-010012",
+   "title": "Khảo sát / Popup gửi thành công",
+   "nodeId": "4686:44215",
+   "page": "└─ KHẢO SÁT",
+   "container": "FLOW giáo viên nhận & làm khảo sát",
+   "size": [
+    480.0,
+    314.10198974609375
+   ],
+   "loai": "popup",
+   "parent": "GV-KS-010010",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup gửi thành công”",
+   "goiY": {
+    "theoTen": "GV-KS-010010",
+    "theoMa": "GV-KS-010010",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-KS-010010",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-KS-010021",
+   "title": "Khảo sát / Popup câu trả lời của bạn",
+   "nodeId": "4686:44140",
+   "page": "└─ KHẢO SÁT",
+   "container": "FLOW giáo viên nhận & làm khảo sát",
+   "size": [
+    720.0,
+    680.0
+   ],
+   "loai": "popup",
+   "parent": "GV-KS-010020",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup câu trả lời của bạn”",
+   "goiY": {
+    "theoTen": "GV-KS-010020",
+    "theoMa": "GV-KS-010020",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-KS-010020",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LD-020010",
+   "title": "Lịch dạy / Quản lý đăng ký lịch / Popup đăng ký khung giờ",
+   "nodeId": "5413:49911",
+   "page": "├─ LỊCH DẠY",
+   "container": "LỊCH DẠY",
+   "size": [
+    480.0,
+    393.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LD-020000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup đăng ký khung giờ”",
+   "goiY": {
+    "theoTen": "GV-LD-020000",
+    "theoMa": "GV-LD-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LD-020000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LOP-020020",
+   "title": "Chi tiết lớp / Tổng quan / Popup Ghi chú theo bài",
+   "nodeId": "5413:255556",
+   "page": "├─ TỔNG QUAN",
+   "container": "TỔNG QUAN",
+   "size": [
+    560.0,
+    424.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-020000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup Ghi chú theo bài”",
+   "goiY": {
+    "theoTen": "GV-LOP-020000",
+    "theoMa": "GV-LOP-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-020000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LOP-020030",
+   "title": "Chi tiết lớp / Tổng quan / Popup Thời gian từng phần",
+   "nodeId": "5413:255496",
+   "page": "├─ TỔNG QUAN",
+   "container": "TỔNG QUAN",
+   "size": [
+    568.0,
+    334.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-020000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup Thời gian từng phần”",
+   "goiY": {
+    "theoTen": "GV-LOP-020000",
+    "theoMa": "GV-LOP-020000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-020000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LOP-030120",
+   "title": "Chi tiết lớp / Bài học / Popup chọn lịch dạy",
+   "nodeId": "5292:222984",
+   "page": "├─ BÀI HỌC",
+   "container": "BÀI HỌC",
+   "size": [
+    560.0,
+    455.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-030100",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chọn lịch dạy”",
+   "goiY": {
+    "theoTen": "GV-LOP-030100",
+    "theoMa": "GV-LOP-030100",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-030100",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LOP-030121",
+   "title": "Chi tiết lớp / Bài học / Popup bắt đầu buổi học",
+   "nodeId": "5292:223041",
+   "page": "├─ BÀI HỌC",
+   "container": "BÀI HỌC",
+   "size": [
+    480.0,
+    147.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-030100",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup bắt đầu buổi học”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "GV-LOP-030100",
+    "theoMa": "GV-LOP-030120",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-030100",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "GV-LOP-030131",
+   "title": "Chi tiết lớp / Bài học / Popup kết thúc buổi học",
+   "nodeId": "5292:224358",
+   "page": "├─ BÀI HỌC",
+   "container": "BÀI HỌC",
+   "size": [
+    480.0,
+    147.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-030130",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup kết thúc buổi học”",
+   "goiY": {
+    "theoTen": "GV-LOP-030130",
+    "theoMa": "GV-LOP-030130",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-030130",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LOP-030141",
+   "title": "Chi tiết lớp / Bài học / Popup hoàn thành buổi học",
+   "nodeId": "5292:224370",
+   "page": "├─ BÀI HỌC",
+   "container": "BÀI HỌC",
+   "size": [
+    480.0,
+    168.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-030140",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup hoàn thành buổi học”",
+   "goiY": {
+    "theoTen": "GV-LOP-030140",
+    "theoMa": "GV-LOP-030140",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-030140",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LOP-030161",
+   "title": "Chi tiết lớp / Bài học / Popup tiếp tục buổi học",
+   "nodeId": "5292:224382",
+   "page": "├─ BÀI HỌC",
+   "container": "BÀI HỌC",
+   "size": [
+    480.0,
+    147.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-030150",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup tiếp tục buổi học”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "GV-LOP-030150",
+    "theoMa": "GV-LOP-030160",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-030150",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "GV-LOP-040211",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Popup Giao bài",
+   "nodeId": "5425:277378",
+   "page": "├─ BÀI TẬP VỀ NHÀ VÀ KIỂM TRA",
+   "container": "BÀI TẬP VỀ NHÀ VÀ KIỂM TRA",
+   "size": [
+    480.0,
+    147.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-040210",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup Giao bài”",
+   "goiY": {
+    "theoTen": "GV-LOP-040210",
+    "theoMa": "GV-LOP-040210",
+    "prototype": [
+     "GV-LOP-040210"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-040200",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LOP-040221",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Popup Thu hồi",
+   "nodeId": "5425:277391",
+   "page": "├─ BÀI TẬP VỀ NHÀ VÀ KIỂM TRA",
+   "container": "BÀI TẬP VỀ NHÀ VÀ KIỂM TRA",
+   "size": [
+    480.0,
+    168.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-040201",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup Thu hồi”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "GV-LOP-040210",
+    "theoMa": "GV-LOP-040200",
+    "prototype": [
+     "GV-LOP-040201"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-040200",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "GV-LOP-040310",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Popup chọn bài nguồn",
+   "nodeId": "5425:281223",
+   "page": "├─ BÀI TẬP VỀ NHÀ VÀ KIỂM TRA",
+   "container": "BÀI TẬP VỀ NHÀ VÀ KIỂM TRA",
+   "size": [
+    480.0,
+    327.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-040302",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup chọn bài nguồn”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "GV-LOP-040302",
+    "theoMa": "GV-LOP-040300",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-040300",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "GV-LOP-040311",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Popup áp dụng nhận xét chung",
+   "nodeId": "5425:281249",
+   "page": "├─ BÀI TẬP VỀ NHÀ VÀ KIỂM TRA",
+   "container": "BÀI TẬP VỀ NHÀ VÀ KIỂM TRA",
+   "size": [
+    480.0,
+    168.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-040302",
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup áp dụng nhận xét chung”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "GV-LOP-040302",
+    "theoMa": "GV-LOP-040310",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-040300",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "GV-LOP-040340",
+   "title": "Chi tiết lớp / Bài tập và Kiểm tra / Popup Hoàn thành chấm",
+   "nodeId": "5751:83819",
+   "page": "├─ BÀI TẬP VỀ NHÀ VÀ KIỂM TRA",
+   "container": "Flow GV · Mở bài → Điểm danh → Chấm điểm (theo cách chấm)",
+   "size": [
+    480.0,
+    329.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LOP-040300",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup Hoàn thành chấm”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "GV-LOP-040335",
+    "theoMa": "GV-LOP-040300",
+    "prototype": [
+     "GV-LOP-040300",
+     "GV-LOP-040301",
+     "GV-LOP-040302",
+     "GV-LOP-040330",
+     "GV-LOP-040331",
+     "GV-LOP-040332",
+     "GV-LOP-040333",
+     "GV-LOP-040334",
+     "GV-LOP-040335"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LOP-040300",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LS-010010",
+   "title": "Lịch sử & lương / Popup đề xuất tăng lương",
+   "nodeId": "4760:16671",
+   "page": "├─ LỊCH SỬ VÀ LƯƠNG",
+   "container": "FLOW giáo viên đề xuất tăng lương",
+   "size": [
+    560.0,
+    517.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LS-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup đề xuất tăng lương”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "GV-LS-010004",
+    "theoMa": "GV-LS-010000",
+    "prototype": [
+     "GV-LS-010000",
+     "GV-LS-010003",
+     "GV-LS-010004"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LS-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LS-010012",
+   "title": "Lịch sử & lương / Popup đề xuất tăng lương / Chọn lý do",
+   "nodeId": "4814:159271",
+   "page": "├─ LỊCH SỬ VÀ LƯƠNG",
+   "container": "FLOW giáo viên đề xuất tăng lương",
+   "size": [
+    560.0,
+    517.0
+   ],
+   "loai": "trang-thai",
+   "parent": "GV-LS-010010",
+   "tinCay": "trung-binh",
+   "tinCayLoai": "trung-binh",
+   "tinCayCha": "cao",
+   "lyDo": "trạng thái của popup: “Chọn lý do”",
+   "goiY": {
+    "theoTen": "GV-LS-010010",
+    "theoMa": "GV-LS-010010",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LS-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": true
+  },
+  {
+   "code": "GV-LS-010013",
+   "title": "Lịch sử & lương / Popup lịch sử đề xuất",
+   "nodeId": "4895:105828",
+   "page": "├─ LỊCH SỬ VÀ LƯƠNG",
+   "container": "FLOW giáo viên đề xuất tăng lương",
+   "size": [
+    600.0,
+    730.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LS-010011",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup lịch sử đề xuất”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "GV-LS-010011",
+    "theoMa": "GV-LS-010010",
+    "prototype": [
+     "GV-LS-010000",
+     "GV-LS-010003",
+     "GV-LS-010004",
+     "GV-LS-010011",
+     "GV-LS-010014"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LS-010011",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LS-010015",
+   "title": "Lịch sử & lương / Popup xác nhận gửi đề xuất",
+   "nodeId": "4899:106613",
+   "page": "├─ LỊCH SỬ VÀ LƯƠNG",
+   "container": "FLOW giáo viên đề xuất tăng lương",
+   "size": [
+    480.0,
+    356.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LS-010010",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup xác nhận gửi đề xuất”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "GV-LS-010014",
+    "theoMa": "GV-LS-010010",
+    "prototype": [
+     "GV-LS-010010",
+     "GV-LS-010010-DK"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LS-010000",
+   "parentInPageList": false,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "GV-LS-010016",
+   "title": "Lịch sử & lương / Popup xác nhận huỷ đề xuất",
+   "nodeId": "4899:106646",
+   "page": "├─ LỊCH SỬ VÀ LƯƠNG",
+   "container": "FLOW giáo viên đề xuất tăng lương",
+   "size": [
+    480.0,
+    319.0
+   ],
+   "loai": "popup",
+   "parent": "GV-LS-010014",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup xác nhận huỷ đề xuất”; màn cha có nhiều gợi ý",
+   "goiY": {
+    "theoTen": "GV-LS-010014",
+    "theoMa": "GV-LS-010010",
+    "prototype": [
+     "GV-LS-010014"
+    ],
+    "namTrong": null
+   },
+   "manHienThi": "GV-LS-010014",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "MST-TK-010010",
+   "title": "Tài khoản / Popup thêm tài khoản",
+   "nodeId": "2148:23743",
+   "page": "└─ QUẢN LÝ TÀI KHOẢN",
+   "container": "Quản lý danh sách tài khoản",
+   "size": [
+    548.0,
+    264.0
+   ],
+   "loai": "popup",
+   "parent": "MST-TK-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup thêm tài khoản”",
+   "goiY": {
+    "theoTen": "MST-TK-010000",
+    "theoMa": "MST-TK-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "MST-TK-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "MST-TK-010020",
+   "title": "Tài khoản / Danh sách tài khoản / Popup xác nhận xoá",
+   "nodeId": "1474:666",
+   "page": "└─ QUẢN LÝ TÀI KHOẢN",
+   "container": "Quản lý danh sách tài khoản",
+   "size": [
+    400.0,
+    154.0
+   ],
+   "loai": "popup",
+   "parent": "MST-TK-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup xác nhận xoá”",
+   "goiY": {
+    "theoTen": "MST-TK-010000",
+    "theoMa": "MST-TK-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "MST-TK-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "MST-TK-010030",
+   "title": "Tài khoản / Danh sách tài khoản / Popup đặt lại mật khẩu",
+   "nodeId": "1474:678",
+   "page": "└─ QUẢN LÝ TÀI KHOẢN",
+   "container": "Quản lý danh sách tài khoản",
+   "size": [
+    400.0,
+    154.0
+   ],
+   "loai": "popup",
+   "parent": "MST-TK-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup đặt lại mật khẩu”",
+   "goiY": {
+    "theoTen": "MST-TK-010000",
+    "theoMa": "MST-TK-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "MST-TK-010000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "PRO-GD-010010",
+   "title": "Hồ sơ / Popup chọn màu giao diện",
+   "nodeId": "4273:166221",
+   "page": "🚪  LOG IN · COLOR THEME · PROFILE",
+   "container": "_Đăng nhập / Lần đầu đăng nhập · Chọn màu giao diện",
+   "size": [
+    525.0,
+    514.1799926757812
+   ],
+   "loai": "popup",
+   "parent": null,
+   "tinCay": "thap",
+   "tinCayLoai": "cao",
+   "tinCayCha": "thap",
+   "lyDo": "tên: “Popup chọn màu giao diện”",
+   "goiY": {
+    "theoTen": null,
+    "theoMa": null,
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": null,
+   "parentInPageList": false,
+   "hasDark": false,
+   "canDuyet": true
+  },
+  {
+   "code": "SP-LHP-010010",
+   "title": "Lịch họp / Popup chi tiết cuộc họp",
+   "nodeId": "3857:80154",
+   "page": "├─ LỊCH HỌP",
+   "container": "LỊCH HỌP",
+   "size": [
+    480.0,
+    580.0
+   ],
+   "loai": "popup",
+   "parent": "SP-LHP-010000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Popup chi tiết cuộc họp”",
+   "goiY": {
+    "theoTen": "SP-LHP-010000",
+    "theoMa": "SP-LHP-010000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "SP-LHP-010000",
+   "parentInPageList": true,
+   "hasDark": true,
+   "canDuyet": false
+  },
+  {
+   "code": "SP-TASK-030002",
+   "title": "Quy trình / Ca trực / Dropdown thời gian (đang mở)",
+   "nodeId": "3857:76187",
+   "page": "└─ Ca trực",
+   "container": "CA TRỰC",
+   "size": [
+    152.0,
+    220.0
+   ],
+   "loai": "dropdown",
+   "parent": "SP-TASK-030000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Dropdown thời gian (đang mở)”",
+   "goiY": {
+    "theoTen": "SP-TASK-030000",
+    "theoMa": "SP-TASK-030000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "SP-TASK-030000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "SP-TASK-030004",
+   "title": "Quy trình / Ca trực / Dropdown ca (đang mở)",
+   "nodeId": "3857:76843",
+   "page": "└─ Ca trực",
+   "container": "CA TRỰC",
+   "size": [
+    160.0,
+    162.0
+   ],
+   "loai": "dropdown",
+   "parent": "SP-TASK-030000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Dropdown ca (đang mở)”",
+   "goiY": {
+    "theoTen": "SP-TASK-030000",
+    "theoMa": "SP-TASK-030000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "SP-TASK-030000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  },
+  {
+   "code": "SP-TASK-030010",
+   "title": "Quy trình / Ca trực / Dialog người phụ trách",
+   "nodeId": "3857:76119",
+   "page": "└─ Ca trực",
+   "container": "CA TRỰC",
+   "size": [
+    211.0,
+    295.0
+   ],
+   "loai": "popup",
+   "parent": "SP-TASK-030000",
+   "tinCay": "cao",
+   "tinCayLoai": "cao",
+   "tinCayCha": "cao",
+   "lyDo": "tên: “Dialog người phụ trách”",
+   "goiY": {
+    "theoTen": "SP-TASK-030000",
+    "theoMa": "SP-TASK-030000",
+    "prototype": [],
+    "namTrong": null
+   },
+   "manHienThi": "SP-TASK-030000",
+   "parentInPageList": true,
+   "hasDark": false,
+   "canDuyet": false
+  }
+ ]
+}

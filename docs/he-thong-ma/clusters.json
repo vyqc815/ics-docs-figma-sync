@@ -1,0 +1,19 @@
+{
+ "note": "Cụm cho scripts/he-thong-ma/registry.py. screens: regex mã màn thuộc cụm. requirements: bỏ trống thì lấy theo docs/requirements-map.json. prefix: ghi đè tiền tố REQ theo file. notes: độ lệch đã đối chiếu tay.",
+ "clusters": [
+  {
+   "name": "bai-tap-ve-nha",
+   "title": "Bài tập về nhà và Kiểm tra (CD-KH-06xx)",
+   "screens": "^CD-KH-(06\\d{4}|0303(4\\d))$",
+   "requirements": ["course_management/homework-test/homework-test.md"],
+   "prefix": {"course_management/homework-test/homework-test.md": "CM-HW"},
+   "notes": [
+    "`Điểm`: REQ02 nói không có điểm riêng từng câu, Figma không có cột; bảng cột, EX01, REQ05 vẫn có `Điểm`. Phần Import vừa liệt kê vừa nói không có cột này.",
+    "Bảng câu hỏi: requirement ghi chưa có cột, lọc `Kiến thức / Kỹ năng` và còn lọc `Trạng thái`; Figma đã có hai mục đầu, không còn lọc `Trạng thái`.",
+    "Tab Kiểm tra: requirement ghi Figma là danh sách phẳng; layer `CD-KH-060200` đã có HK I, II, III.",
+    "`CD-KH-060121` → `060125`, `060140`, `060141`, `060150`, `060160`: requirement chưa nhắc mã và phần lớn còn ghi cần bổ sung.",
+    "`EX04`: chưa có testcase ghi mã này."
+   ]
+  }
+ ]
+}
