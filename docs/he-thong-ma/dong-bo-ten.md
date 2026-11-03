@@ -34,6 +34,8 @@ Hai frame cùng mã, cùng tên; một frame nền tối. Đề xuất thêm `-D
 
 Frame thứ hai là màn hoặc trạng thái khác nhưng trùng mã với màn chính. Đề xuất cấp mã con còn trống cùng nhóm (4 số đầu giống màn cha); bản tối đổi theo.
 
+**Đã làm 2026-11-03:** 9 màn + 9 bản tối (18 frame, chỉ đổi mã trong tên); REST xác nhận 18/18. Phiên bản Figma trước khi đổi: *"Trước khi cấp mã mới cho 9 màn trùng mã"*. Khác bảng dưới một chỗ: popup *Tổng quan / Lịch sử ghi chú* nhận `ADM-LOP-020110` (họ `0201xx` của Tổng quan) thay vì `ADM-LOP-040211`; popup ở Cài đặt giữ `ADM-LOP-040210`. **Chưa làm:** `ADM-GC` (Gift code) chờ chọn tiền tố mới cho cả module.
+
 | Mã hiện tại | Màn giữ mã | Frame cần mã mới | Đề xuất mã mới | Bản tối đi kèm |
 |---|---|---|---|---|
 | `ADM-GC-010000` | Ghi chú / Danh sách ghi chú | Gift code / Danh sách gift code (`3857:85663`) | `ADM-GC-010002` | `4056:130074` → `ADM-GC-010002-DK` |
