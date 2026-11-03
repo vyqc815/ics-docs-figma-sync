@@ -17,7 +17,7 @@
 **Điểm cần lưu ý:**
 
 - Khi đổi tab, hệ thống giữ đúng giáo viên đang xem; không được tải hoặc hiển thị dữ liệu của giáo viên khác.
-- `Class Handler` và `Support` được truy cập tab `Danh sách lớp`, tab `Log` (chỉ xem), tab `Quản lý đăng ký lịch` và tab `Ghi chú`; tại tab `Danh sách lớp`, hai role này được cập nhật lương giáo viên theo từng lớp. Quyền này không đồng nghĩa được xem hoặc thao tác tại các tab khác.
+- `Class Handler` và `Support` được truy cập tab `Danh sách lớp`, tab `Log` (chỉ xem), tab `Quản lý đăng ký lịch`, tab `Ghi chú` và tab `Thông tin cá nhân`; tại tab `Thông tin cá nhân` hai role này chỉ được cập nhật `Lương/giờ`, các field khác chỉ xem. Quyền này không đồng nghĩa được xem hoặc thao tác tại các tab khác.
 
 ### Trang 2: Tab Thông tin cá nhân
 ![Trang 2](./images/teacher-detail-personal-info.png)
@@ -28,7 +28,7 @@
 
 - Tab hiển thị hồ sơ, trạng thái, ghi chú và thông tin ngân hàng của đúng giáo viên đang xem.
 - Tab gồm khối avatar (ảnh, tên, mã giáo viên, nút `Lấy lại mật khẩu`, `Cập nhật tài khoản`) bên trái và 2 khối `THÔNG TIN cá nhân`, `THÔNG TIN NGÂN HÀNG` (ghi chú `Dùng chi trả thù lao & lương`) bên phải.
-- Không có field lương theo giờ trong tab này; lương được quản lý theo từng lớp tại tab `Danh sách lớp`.
+- Tab có field `Lương/giờ` (VNĐ/giờ): mức lương theo giờ cố định của giáo viên, dùng làm mặc định cho mọi buổi dạy. Không còn lương theo từng lớp.
 - `Mã giáo viên` và `Email` là thông tin cố định, bị khóa và không cho cập nhật.
 - Không cung cấp thao tác xóa cứng giáo viên trên màn hình này.
 
@@ -46,8 +46,9 @@
 - `A02.10` **Ngân hàng**: Cho cập nhật: ✅; Không bắt buộc; chọn ngân hàng từ danh sách hỗ trợ.
 - `A02.11` **Số tài khoản**: Cho cập nhật: ✅; Không bắt buộc; cho phép người dùng nhập.
 - `A02.12` **Tên chủ tài khoản**: Cho cập nhật: ✅; Không bắt buộc; người dùng nhập và hệ thống tự động chuyển thành chữ in hoa.
-- `A02.13` **`Lấy lại mật khẩu`**: Cho cập nhật: —; Reset mật khẩu của giáo viên về `abc12345`.
-- `A02.14` **`Cập nhật tài khoản`**: Cho cập nhật: —; Lưu toàn bộ thay đổi của Thông tin cá nhân, ảnh, ghi chú và thông tin ngân hàng trong một lần.
+- `A02.13` **Lương/giờ**: Cho cập nhật: ✅; Số nguyên **lớn hơn 0**, đơn vị `VNĐ/giờ`; hiển thị phân tách hàng nghìn kèm `đ` (vd `200.000 đ`). Là mức mặc định cho các buổi dạy của giáo viên; xem quy tắc lương bên dưới.
+- `A02.14` **`Lấy lại mật khẩu`**: Cho cập nhật: —; Reset mật khẩu của giáo viên về `abc12345`.
+- `A02.15` **`Cập nhật tài khoản`**: Cho cập nhật: —; Lưu toàn bộ thay đổi của Thông tin cá nhân, ảnh, ghi chú và thông tin ngân hàng trong một lần.
 
 **Điểm cần lưu ý:**
 
@@ -59,6 +60,14 @@
 - `Cập nhật tài khoản` gửi toàn bộ thay đổi trong một thao tác logic. Thành công hoặc thất bại đều phải có đúng một notification kết quả theo REQ06.
 - Nếu chuyển tab hoặc quay lại khi có thay đổi chưa lưu, hệ thống phải hiển thị cảnh báo xác nhận trước khi rời màn hình.
 
+**Quy tắc Lương/giờ trong hồ sơ:**
+
+- `Lương/giờ` là thuộc tính của giáo viên, không lưu theo lớp. Mọi buổi dạy của giáo viên lấy mức này làm mặc định khi buổi chưa được chỉnh lương riêng.
+- Tiền một buổi = `Lương/giờ` của buổi × thời lượng buổi (giờ), ví dụ `200.000 đ/giờ × 90 phút = 300.000 đ`; tiền được chốt khi buổi chuyển `Hoàn thành` (xem [Tab Lịch dạy của lớp](../class_management/class_detail_schedule_requirements.md)).
+- Đổi `Lương/giờ` chỉ áp dụng cho các buổi **chưa hoàn thành** và **chưa được chỉnh lương riêng**. Buổi đã hoàn thành giữ nguyên tiền đã chốt; không hồi tố.
+- `Admin`, `Class Handler` và `Support` được cập nhật `Lương/giờ` tại tab này (Class Handler/Support chỉ sửa được field này, các field khác read-only); giá trị được lưu cùng thao tác `Cập nhật tài khoản` và ghi log (mức cũ → mức mới).
+- Validation: chỉ chấp nhận số nguyên lớn hơn 0; từ chối `0`, số âm, số thập phân hoặc giá trị không phải số.
+
 **Quy tắc tài khoản và nghỉ việc:**
 
 - `Lấy lại mật khẩu` tự reset mật khẩu về đúng giá trị `abc12345`; mật khẩu phải được lưu an toàn và không ghi plain text vào log.
@@ -69,18 +78,14 @@
 ### Trang 3: Tab Danh sách lớp
 ![Trang 3](./images/teacher-detail-class-list.png)
 
-*Tab Danh sách lớp và cột Lương/giờ — nhấn để xem ảnh gốc*
-
-![Trang 3](./images/teacher-detail-class-salary-edit.png)
-
-*Popup Chỉnh Sửa Lương của một lớp — nhấn để xem ảnh gốc*
+*Tab Danh sách lớp (cột Lương/giờ trong ảnh đã bỏ) — nhấn để xem ảnh gốc*
 
 **Mô tả:**
 
 - Tab `Danh sách lớp` chỉ hiển thị những lớp mà giáo viên đang xem đã được thêm hoặc phân công; không hiển thị lớp chưa có quan hệ với giáo viên này.
-- `Admin`, `Class Handler` và `Support` được xem danh sách lớp trong phạm vi dữ liệu được cấp và được thiết lập/cập nhật `Lương giáo viên theo giờ` riêng cho giáo viên tại từng lớp.
-- Lương không phải thuộc tính chung trong hồ sơ giáo viên. Giá trị lương được lưu trên quan hệ `giáo viên–lớp`, vì vậy cùng một giáo viên có thể có mức lương khác nhau ở các lớp khác nhau.
-- Ngoài cập nhật lương theo từng lớp, tab này không cung cấp thao tác thêm giáo viên vào lớp, gỡ giáo viên khỏi lớp hoặc cập nhật thông tin lớp.
+- `Admin`, `Class Handler` và `Support` được xem danh sách lớp trong phạm vi dữ liệu được cấp.
+- **Đã bỏ lương theo lớp:** tab không có cột `LƯƠNG/GIỜ` và popup `Chỉnh sửa lương`. Lương/giờ nằm trong hồ sơ giáo viên (tab `Thông tin cá nhân`) và có thể chỉnh riêng từng buổi tại tab Lịch dạy của lớp.
+- Tab này chỉ để xem; không cung cấp thao tác thêm giáo viên vào lớp, gỡ giáo viên khỏi lớp hoặc cập nhật thông tin lớp.
 
 **Giải thích field/thành phần:**
 
@@ -90,8 +95,7 @@
 - `A03.04` **Khóa học**: Tên khóa học đã gắn với lớp, thanh tiến độ và số buổi dạng `đã học/tổng số buổi Buổi` (vd `6/20 Buổi`); dữ liệu phải thuộc đúng lớp và cùng khóa học đang hiển thị, cùng nguồn với `[đã học/tổng]` ở popover Chi tiết Lớp của danh sách giáo viên.
 - `A03.05` **Đánh giá**: Hiển thị đánh giá hiện hành của lớp theo nguồn dữ liệu đánh giá lớp; không tự suy diễn từ KPI hoặc lương.
 - `A03.06` **KPI lớp**: Hiển thị tỷ lệ lên kỳ của riêng lớp đó. Công thức mỗi học viên là trung bình cộng tỷ lệ đi học và tỷ lệ BTVN; KPI lớp là trung bình cộng kết quả của tất cả học viên thuộc lớp.
-- `A03.07` **Lương giáo viên theo giờ**: Cột có tiêu đề `LƯƠNG/GIỜ`; mỗi dòng hiển thị mức lương của đúng giáo viên trong đúng lớp bằng nút màu cam kèm icon bút chỉnh sửa, định dạng phân tách hàng nghìn kèm `đ`, ví dụ `200.000 đ`. `Admin`, `Class Handler`, `Support` được mở popup thiết lập/cập nhật.
-- `A03.08` **Mở chi tiết**: Icon mũi tên ở cuối dòng được hiển thị theo UI; hành vi điều hướng khi click cần xác nhận tại mục 3.
+- `A03.07` **Mở chi tiết**: Icon mũi tên ở cuối dòng được hiển thị theo UI; hành vi điều hướng khi click cần xác nhận tại mục 3.
 
 **Điểm cần lưu ý:**
 
@@ -102,27 +106,12 @@
 - Kết quả hiển thị theo tỷ lệ phần trăm. Khi không có mẫu số hợp lệ, UI phải hiển thị trạng thái không có dữ liệu hoặc giá trị quy ước đã được chốt; tuyệt đối không hiển thị `NaN`, `Infinity` hoặc tỷ lệ âm.
 - Đánh giá lớp là dữ liệu độc lập với KPI lớp; requirement hiện tại chưa quy định công thức đánh giá.
 
-**Quy tắc lương giáo viên theo lớp:**
-
-- Dữ liệu lương được định danh tối thiểu bằng `teacher_id` và `class_id`; backend không tin cậy mã/tên hiển thị do client gửi để xác định quan hệ cần cập nhật.
-- Giá trị lương có đơn vị `VNĐ/giờ`, phải là số nguyên không âm và cho phép `0`.
-- Ngoài bảng, lương hiển thị đầy đủ có phân tách hàng nghìn kèm `đ`, ví dụ `200.000 đ`; đây chỉ là định dạng hiển thị, không thay đổi giá trị lưu.
-- Click nút lương hoặc icon bút mở popup `Chỉnh sửa lương`. Popup hiển thị `Lớp: <Mã lớp>` của đúng dòng, ô tiền lương đang có theo định dạng phân tách hàng nghìn (ví dụ `200.000`), chọn tiền tệ `đ`, đơn vị cố định `Giờ`, nút `Huỷ` và nút `Xác nhận`.
-- Tiền tệ của requirement này cố định là `VNĐ`; nếu UI hiển thị control dạng dropdown thì chỉ giá trị VNĐ được áp dụng. Đơn vị tính cố định theo giờ và không cho sửa thành đơn vị khác.
-- `Hủy` đóng popup, không gửi request, không thay đổi lương và không hiển thị notification CUD.
-- `Xác Nhận` validation giá trị rồi gửi đúng một request cập nhật. Trong khi xử lý phải vô hiệu hóa xác nhận lặp.
-- Khi mở chỉnh sửa, hệ thống giữ nguyên giá trị hiện tại cho đến khi người dùng xác nhận. Cập nhật thành công đóng popup, cập nhật nút lương tại đúng dòng và chỉ thay đổi lương tại đúng quan hệ giáo viên–lớp đang thao tác, không làm thay đổi lương ở lớp khác.
-- Khi cập nhật thất bại, popup giữ giá trị người dùng vừa nhập để sửa/thử lại; giá trị chính thức ngoài bảng không được thay đổi.
-- Backend phải kiểm tra role, phạm vi giáo viên, phạm vi lớp và sự tồn tại của quan hệ giáo viên–lớp trước khi cập nhật.
-- Hệ thống ghi nhận đúng người thao tác và thời điểm cập nhật. Cập nhật thành công hoặc thất bại phải có đúng một notification kết quả theo REQ06.
-- Khi hai người cùng cập nhật một quan hệ, hệ thống không được âm thầm để response cũ ghi đè giá trị mới hơn; phải áp dụng cơ chế kiểm soát phiên bản hoặc xung đột.
-
 **Bộ lọc:**
 
-- `A03.09` **Loại lớp**: Giá trị/Quy tắc: `Lớp 1-1`, `Lớp chung`.
-- `A03.10` **Khóa học**: Giá trị/Quy tắc: Lấy động từ danh sách khóa học được cấu hình/define trong hệ thống; kết quả chỉ gồm lớp thuộc khóa học đã chọn.
-- `A03.11` **Trạng thái lớp**: Giá trị/Quy tắc: `Khai giảng`, `Mới tạo`, `Đang học`, `Tạm dừng`, `Hoàn thành`, `Hủy`, `Xóa`, `Trải nghiệm`.
-- `A03.12` **Thời gian**: Giá trị/Quy tắc: Lọc theo thời gian tạo lớp (`class.created_at`), mặc định `Hôm nay`; danh sách gồm `Tới hạn`, `Hôm nay`, `Hôm qua`, `Hôm nay và hôm qua`, `Tuần này`, `Tuần trước`, `Tháng này`, `Tháng trước`, `3 tháng trước`, `Năm nay`, `Năm trước`, `Tùy chọn`.
+- `A03.08` **Loại lớp**: Giá trị/Quy tắc: `Lớp 1-1`, `Lớp chung`.
+- `A03.09` **Khóa học**: Giá trị/Quy tắc: Lấy động từ danh sách khóa học được cấu hình/define trong hệ thống; kết quả chỉ gồm lớp thuộc khóa học đã chọn.
+- `A03.10` **Trạng thái lớp**: Giá trị/Quy tắc: `Khai giảng`, `Mới tạo`, `Đang học`, `Tạm dừng`, `Hoàn thành`, `Hủy`, `Xóa`, `Trải nghiệm`.
+- `A03.11` **Thời gian**: Giá trị/Quy tắc: Lọc theo thời gian tạo lớp (`class.created_at`), mặc định `Hôm nay`; danh sách gồm `Tới hạn`, `Hôm nay`, `Hôm qua`, `Hôm nay và hôm qua`, `Tuần này`, `Tuần trước`, `Tháng này`, `Tháng trước`, `3 tháng trước`, `Năm nay`, `Năm trước`, `Tùy chọn`.
 
 - `Tới hạn` lấy từ thời điểm bắt đầu có dữ liệu trong hệ thống đến hết ngày hôm nay theo múi giờ nghiệp vụ.
 - `Tùy chọn` cho phép chọn ngày bắt đầu và kết thúc, bao gồm toàn bộ hai ngày biên; từ chối ngày bắt đầu sau ngày kết thúc.
@@ -185,7 +174,7 @@
 
 - Tab `Log` hiển thị **log hệ thống tự ghi** cho mọi thay đổi liên quan đến đúng giáo viên đang xem; tab **chỉ đọc**, không có thao tác tạo, sửa hoặc xóa log bằng tay.
 - Các role `Admin`, `Class Handler`, `Support` được xem log trong phạm vi dữ liệu được cấp.
-- Hệ thống ghi log khi có thao tác thành công liên quan tới giáo viên: cập nhật hồ sơ, đổi trạng thái, reset mật khẩu, thêm / gỡ giáo viên khỏi lớp, cập nhật lương theo lớp, cập nhật lịch đăng ký, gán tag, tạo lịch hẹn, cũng như thao tác của chính giáo viên với học viên / lớp (vd `Thuy SP đã thêm học viên Thanh Thảo vào lớp NS0001`).
+- Hệ thống ghi log khi có thao tác thành công liên quan tới giáo viên: cập nhật hồ sơ, đổi trạng thái, reset mật khẩu, thêm / gỡ giáo viên khỏi lớp, cập nhật Lương/giờ, cập nhật lịch đăng ký, gán tag, tạo lịch hẹn, cũng như thao tác của chính giáo viên với học viên / lớp (vd `Thuy SP đã thêm học viên Thanh Thảo vào lớp NS0001`).
 
 **Giải thích field/thành phần:**
 
@@ -465,20 +454,14 @@ Admin, Class Handler hoặc Support mở tab Quản lý đăng ký lịch
       → Thất bại/xung đột: không ghi đè dữ liệu mới hơn, giữ lựa chọn phù hợp để thử lại và hiển thị notification thất bại
 ```
 
-**Flow 10 / REQ11: Xem lớp và cập nhật lương giáo viên theo lớp**
+**Flow 10 / REQ11: Xem danh sách lớp của giáo viên**
 
 ```text
 Admin, Class Handler hoặc Support mở tab Danh sách lớp
       → Hệ thống kiểm tra role, phạm vi giáo viên và chỉ tải các lớp đã thêm giáo viên này
-      → Hệ thống hiển thị Trạng thái, Mã lớp, Khóa học, Đánh giá, KPI lớp và Lương giáo viên theo giờ của từng quan hệ
+      → Hệ thống hiển thị Trạng thái, Mã lớp, Khóa học, Đánh giá và KPI lớp (không có cột lương)
       → Người dùng có thể tìm theo Mã lớp/Tên khóa học và kết hợp filter Loại lớp, Khóa học, Trạng thái, Thời gian tạo lớp
       → Mỗi trang tối đa 50 lớp; chuyển trang giữ từ khóa/filter, đổi từ khóa/filter trở về trang đầu
-      → Người dùng click nút lương/icon bút để mở popup Chỉnh Sửa Lương của đúng lớp
-      → Hủy: đóng popup, không gửi request và không thay đổi dữ liệu
-      → Xác Nhận: nhập số nguyên VNĐ/giờ không âm, backend kiểm tra và gửi đúng một request
-      → Backend kiểm tra role, phạm vi lớp, quan hệ giáo viên–lớp và phiên bản dữ liệu
-      → Thành công: chỉ cập nhật lương của đúng quan hệ, ghi nhận actor/thời gian và hiển thị notification thành công
-      → Thất bại/xung đột: giữ giá trị đã lưu, không ghi đè dữ liệu mới hơn và hiển thị notification thất bại
 ```
 
 ### 2.2. Ngoại lệ
@@ -505,27 +488,25 @@ Admin, Class Handler hoặc Support mở tab Danh sách lớp
 - **EX20:** Người dùng thay đổi trang hoặc filter khi request cũ chưa hoàn tất → chỉ response của trang và tổ hợp filter mới nhất được phép cập nhật danh sách.
 - **EX21:** Khung giờ trong popup trống, ngoài khung buổi hoặc giờ kết thúc không lớn hơn giờ bắt đầu → không lưu ô; tải/cập nhật lịch đăng ký thất bại, hết thời gian chờ hoặc người dùng xác nhận lặp → không lưu lịch một phần/trùng request, giữ dữ liệu chính thức cũ và hiển thị đúng một notification thất bại.
 - **EX22:** Lịch đăng ký đã được giáo viên hoặc người quản lý khác cập nhật sau khi màn hình tải → không âm thầm ghi đè; xử lý xung đột theo cùng cơ chế của chức năng phía giáo viên.
-- **EX23:** Lương giáo viên theo lớp là số âm, số thập phân hoặc không phải số → từ chối cập nhật, giữ giá trị đã lưu và hiển thị lỗi tại trường cùng notification thất bại; số nguyên `0` là hợp lệ.
-- **EX24:** Role không thuộc `Admin`, `Class Handler`, `Support`, người dùng ngoài phạm vi hoặc quan hệ giáo viên–lớp không tồn tại gửi request cập nhật lương → backend từ chối và không thay đổi dữ liệu.
+- **EX23:** `Lương/giờ` trong hồ sơ là `0`, số âm, số thập phân hoặc không phải số → từ chối cập nhật, giữ giá trị đã lưu và hiển thị lỗi tại trường cùng notification thất bại.
+- **EX24:** Role ngoài `Admin`/`Class Handler`/`Support`, người dùng ngoài phạm vi, hoặc Class Handler/Support sửa field khác ngoài `Lương/giờ` gửi request cập nhật `Lương/giờ` trong hồ sơ → backend từ chối và không thay đổi dữ liệu.
 - **EX25:** Tải/tìm/lọc/chuyển trang Danh sách lớp thất bại, hết thời gian chờ hoặc request cũ trả về sau → hiển thị lỗi có thể thử lại và chỉ nhận response của trang, từ khóa và tổ hợp filter mới nhất; không coi lỗi là danh sách rỗng.
-- **EX26:** Cập nhật lương thất bại hoặc người dùng xác nhận lặp khi request đang xử lý → không tạo nhiều lần cập nhật, giữ lương chính thức cũ và hiển thị đúng một notification thất bại.
-- **EX27:** Lương của quan hệ giáo viên–lớp đã được người khác cập nhật sau khi dòng dữ liệu được tải → không âm thầm ghi đè; thông báo xung đột và yêu cầu tải lại theo cơ chế kiểm soát phiên bản.
 
 ### 2.3. Yêu cầu khác
 
 | Mã | Tên yêu cầu | Mô tả |
 |---|---|---|
-| REQ01 | Xem chi tiết giáo viên | `Admin` được xem hồ sơ giáo viên thuộc phạm vi dữ liệu; tab mặc định là `Thông tin cá nhân` với Giới tính, Ngày sinh, Trạng thái, Ghi chú và thông tin ngân hàng; Mã giáo viên và Gmail bị khóa; không có field lương theo giờ. `Class Handler` và `Support` chỉ được truy cập tab `Danh sách lớp` theo REQ11, tab `Log` theo REQ07, tab `Quản lý đăng ký lịch` theo REQ10 và tab `Ghi chú` theo REQ08–REQ09, không được kế thừa quyền xem/cập nhật các tab khác. |
+| REQ01 | Xem chi tiết giáo viên | `Admin` được xem hồ sơ giáo viên thuộc phạm vi dữ liệu; tab mặc định là `Thông tin cá nhân` với Giới tính, Ngày sinh, Trạng thái, Ghi chú và thông tin ngân hàng; Mã giáo viên và Gmail bị khóa; có field `Lương/giờ` (Admin, Class Handler, Support cập nhật). `Class Handler` và `Support` chỉ được truy cập tab `Thông tin cá nhân` (chỉ sửa `Lương/giờ`), tab `Danh sách lớp` theo REQ11, tab `Log` theo REQ07, tab `Quản lý đăng ký lịch` theo REQ10 và tab `Ghi chú` theo REQ08–REQ09, không được kế thừa quyền xem/cập nhật các tab khác. |
 | REQ02 | Cập nhật Thông tin cá nhân | Cho phép cập nhật ảnh, Họ tên, Giới tính, Ngày sinh, Số điện thoại, Trạng thái, Ghi chú tổng quan và thông tin ngân hàng. Không có trường cập nhật bắt buộc; dữ liệu có nhập phải đúng định dạng/ràng buộc. Ghi chú tổng quan là dữ liệu riêng, hiển thị tại danh sách giáo viên và không dùng chung với tab `Ghi chú`. |
 | REQ03 | Lấy lại mật khẩu | Nút `Lấy lại mật khẩu` reset mật khẩu đúng tài khoản giáo viên về `abc12345`, lưu theo cơ chế bảo mật, không ghi plain text vào log và hiển thị notification thành công/thất bại. |
 | REQ04 | Nghỉ việc và không xóa cứng | Khi cập nhật trạng thái `Nghỉ việc`, hệ thống khóa đăng nhập, loại giáo viên khỏi lịch đăng ký và lớp đang dạy nhưng giữ nguyên hồ sơ, dữ liệu lịch sử và log. Không cung cấp chức năng xóa cứng giáo viên. |
 | REQ05 | Lịch dạy chỉ đọc | Tab chỉ hiển thị các buổi dạy của đúng giáo viên trong tuần được chọn, không hiển thị lịch đăng ký làm việc và không cho CUD lịch. Hỗ trợ chuyển/chọn tuần (`dd.MM.yyyy`), bật `Theo lớp` để nhóm theo lớp hoặc tắt để gom theo ngày; cả hai chế độ biểu diễn cùng một tập buổi dạy. Hàng chip cạnh thanh tuần tóm tắt lịch đăng ký của giáo viên (chỉ đọc, chip của ngày hiện tại tô sáng); màu viền card theo mốc thời gian: xanh lá đã dạy, cam hôm nay, xanh dương sắp dạy. |
-| REQ06 | Notification cho thao tác thay đổi | Mọi thao tác cập nhật tài khoản, reset mật khẩu, đổi trạng thái, cập nhật lương giáo viên theo lớp, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú hoặc CUD comment phải hiển thị đúng một notification thành công/thất bại. Chỉ hiển thị thành công sau khi backend xác nhận và không đưa mật khẩu, stack trace, token hoặc thông tin kỹ thuật nhạy cảm vào nội dung. |
+| REQ06 | Notification cho thao tác thay đổi | Mọi thao tác cập nhật tài khoản, reset mật khẩu, đổi trạng thái, cập nhật Lương/giờ, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú hoặc CUD comment phải hiển thị đúng một notification thành công/thất bại. Chỉ hiển thị thành công sau khi backend xác nhận và không đưa mật khẩu, stack trace, token hoặc thông tin kỹ thuật nhạy cảm vào nội dung. |
 | REQ07 | Log hệ thống của giáo viên | Tab Log chỉ đọc, hiển thị log do hệ thống tự ghi cho giáo viên thuộc phạm vi; mỗi log có Tiêu đề, Mô tả (có thể mở rộng / xem chi tiết), Giờ log, Ngày log, Đối tượng (`Hệ thống` hoặc người thao tác). Hỗ trợ tìm theo lớp, lọc Đối tượng và Thời gian; sắp xếp mới nhất trước, tối đa 50 log/trang. Không có API tạo, sửa, xóa log từ client. Mọi thao tác thay đổi dữ liệu thành công liên quan giáo viên phải sinh đúng một dòng log với Đối tượng là người thao tác thực tế. |
 | REQ08 | Ghi chú giáo viên | `Admin`, `Class Handler`, `Support` được tạo ghi chú và xem ghi chú `Công khai` đang `Mới` trong phạm vi. Ghi chú `Riêng tư` và mọi ghi chú `Đóng` chỉ owner được xem. Owner được sửa, xóa, đóng/mở ghi chú của mình. Hỗ trợ các bộ lọc Loại, Độ ưu tiên, Trạng thái và Thời gian tạo; Thời gian mặc định là `Hôm nay`, `Tới hạn` lấy từ đầu hệ thống đến hết hôm nay. Danh sách phân trang tối đa 50 ghi chú người dùng được phép xem/trang và không được làm lộ số lượng dữ liệu ngoài quyền. |
 | REQ09 | Bình luận ghi chú | Người có quyền xem ghi chú đang `Mới` được comment. Ghi chú `Đóng` không cho bất kỳ thao tác comment nào. Chỉ người tạo comment được sửa/xóa comment của mình; owner ghi chú không được sửa/xóa comment của người khác. Ghi chú, comment và metadata comment cuối phải hiển thị đúng người cùng ngày, tháng, năm, thời gian. |
 | REQ10 | Quản lý đăng ký lịch | `Admin`, `Class Handler`, `Support` được xem và cập nhật lịch đăng ký của giáo viên thuộc phạm vi. Lưới gồm 3 buổi (`Sáng 07h30 - 12h00`, `Chiều 14h00 - 18h00`, `Tối 18h00 - 23h00`) × Thứ 2–Chủ Nhật; tick ô mở popup `Đăng ký khung giờ` (mốc 30 phút trong khung buổi, ghi chú ô); `Fulltime` chọn thêm ô trống bằng giờ trọn buổi, giữ giờ/ghi chú ô đã đăng ký; chủ động bỏ Fulltime bỏ chọn toàn bộ ô trong nháp, chỉ Cập nhật mới lưu; Fulltime tự bỏ tick do gỡ một ô riêng không gỡ các ô còn lại; có ghi chú chung. Bỏ ca đăng ký đang có lịch dạy vẫn cho lưu bình thường, không cảnh báo/chặn và không thay đổi lịch dạy đã xếp. 1 ô buổi đã tick = 1 ca ở danh sách giáo viên. Cập nhật lưu atomically toàn bộ lưới, áp dụng cùng validation/quy tắc với phía giáo viên, cập nhật dữ liệu danh sách và chip ở tab Lịch dạy, ghi nhận đúng actor thực tế và sinh log. |
-| REQ11 | Danh sách lớp và lương giáo viên theo lớp | Tab chỉ hiển thị các lớp đã thêm giáo viên đang xem, gồm Trạng thái lớp, Mã lớp, Khóa học, Đánh giá lớp, KPI là tỷ lệ lên kỳ của lớp và cột `LƯƠNG/GIỜ`. Lương là dữ liệu riêng của quan hệ giáo viên–lớp, đơn vị VNĐ/giờ, là số nguyên không âm và cho phép `0`; hiển thị bằng nút màu cam dạng `200.000 đ` kèm icon bút. `Admin`, `Class Handler`, `Support` click nút để mở popup `Chỉnh Sửa Lương`, trong đó có đúng Mã lớp, giá trị hiện tại, tiền tệ VNĐ, đơn vị Giờ, `Hủy` và `Xác Nhận`. Hỗ trợ tìm theo Mã lớp/Tên khóa học, filter Loại lớp, Khóa học cấu hình, đủ tám Trạng thái lớp và Thời gian tạo lớp với cùng danh sách khoảng thời gian của tab Ghi chú; danh sách phân trang tối đa 50 lớp/trang. |
+| REQ11 | Danh sách lớp | Tab chỉ hiển thị các lớp đã thêm giáo viên đang xem, gồm Trạng thái lớp, Mã lớp, Khóa học, Đánh giá lớp và KPI là tỷ lệ lên kỳ của lớp. Không có lương theo lớp; lương lấy từ `Lương/giờ` trong hồ sơ và có thể chỉnh riêng từng buổi tại tab Lịch dạy của lớp. Hỗ trợ tìm theo Mã lớp/Tên khóa học, filter Loại lớp, Khóa học cấu hình, đủ tám Trạng thái lớp và Thời gian tạo lớp với cùng danh sách khoảng thời gian của tab Ghi chú; danh sách phân trang tối đa 50 lớp/trang. |
 
 ### 2.4. Ràng buộc
 
@@ -540,12 +521,12 @@ Admin, Class Handler hoặc Support mở tab Danh sách lớp
 
 **Quyền tại tab Danh sách lớp:**
 
-| Role | Xem danh sách lớp đã thêm giáo viên | Tìm kiếm/Lọc/Phân trang | Cập nhật lương giáo viên theo lớp | Thêm/Gỡ giáo viên khỏi lớp | Cập nhật thông tin lớp |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Admin | ✅ | ✅ | ✅ | ❌ | ❌ |
-| Class Handler | ✅ | ✅ | ✅ | ❌ | ❌ |
-| Support | ✅ | ✅ | ✅ | ❌ | ❌ |
-| Các role khác | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Role | Xem danh sách lớp đã thêm giáo viên | Tìm kiếm/Lọc/Phân trang | Thêm/Gỡ giáo viên khỏi lớp | Cập nhật thông tin lớp |
+|---|:---:|:---:|:---:|:---:|
+| Admin | ✅ | ✅ | ❌ | ❌ |
+| Class Handler | ✅ | ✅ | ❌ | ❌ |
+| Support | ✅ | ✅ | ❌ | ❌ |
+| Các role khác | ❌ | ❌ | ❌ | ❌ |
 
 **Quyền tại tab Ghi chú:**
 
@@ -562,12 +543,12 @@ Admin, Class Handler hoặc Support mở tab Danh sách lớp
 
 - Giáo viên được nhận diện bằng định danh nội bộ, không dùng tên, email hoặc mã hiển thị làm khóa liên kết.
 - `Admin` chỉ được xem và cập nhật giáo viên thuộc phạm vi được cấp.
-- `Class Handler` và `Support` chỉ được truy cập tab `Danh sách lớp`, tab `Log`, tab `Quản lý đăng ký lịch` và tab `Ghi chú` trong phạm vi được cấp theo requirement này; quyền với các tab khác không được mở rộng.
+- `Class Handler` và `Support` chỉ được truy cập tab `Thông tin cá nhân` (chỉ sửa `Lương/giờ`), tab `Danh sách lớp`, tab `Log`, tab `Quản lý đăng ký lịch` và tab `Ghi chú` trong phạm vi được cấp theo requirement này; quyền với các tab khác không được mở rộng.
 - Mã giáo viên và Email phải được bảo vệ ở cả UI và backend.
 - Mật khẩu mặc định sau reset không được trả về trong API đọc, log hoặc notification.
 - Tab `Lịch dạy` chỉ đọc; dữ liệu lịch phải thuộc đúng giáo viên và đúng tuần đang chọn.
-- Danh sách lớp chỉ được truy vấn từ quan hệ lớp có đúng định danh giáo viên đang xem và nằm trong phạm vi người dùng. Giá trị lương phải được đọc/cập nhật bằng định danh nội bộ của quan hệ `giáo viên–lớp`, không bằng mã hoặc tên hiển thị.
-- Backend phải validation lương không âm, kiểm tra quyền `Admin`/`Class Handler`/`Support`, ghi nhận actor và kiểm soát xung đột; client không được tự gán `teacher_id`, `class_id` hoặc actor ngoài ngữ cảnh đã được cấp.
+- Danh sách lớp chỉ được truy vấn từ quan hệ lớp có đúng định danh giáo viên đang xem và nằm trong phạm vi người dùng.
+- Backend phải validation `Lương/giờ` là số nguyên > 0, chỉ cho `Admin`/`Class Handler`/`Support` cập nhật trong hồ sơ (Class Handler/Support không được ghi field khác) và ghi nhận actor; client không được tự gán `teacher_id` hoặc actor ngoài ngữ cảnh đã được cấp.
 - Log phải thuộc đúng giáo viên và do hệ thống ghi; `Đối tượng` lấy từ danh tính đã xác thực của người thao tác hoặc `Hệ thống`; backend không nhận log do client gửi.
 - Log là dữ liệu bất biến: không có API sửa/xóa; mọi role, kể cả `Admin`, không xóa được log.
 - Lịch đăng ký phải thuộc đúng giáo viên; request cập nhật phải ghi nhận actor đang đăng nhập và không được cho phép client ghi đè định danh giáo viên/actor ngoài phạm vi.
@@ -577,7 +558,7 @@ Admin, Class Handler hoặc Support mở tab Danh sách lớp
 
 #### Notification
 
-- Áp dụng cho `Cập nhật tài khoản`, `Lấy lại mật khẩu`, thay đổi trạng thái giáo viên, cập nhật lương giáo viên theo lớp, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú và CUD comment.
+- Áp dụng cho `Cập nhật tài khoản`, `Lấy lại mật khẩu`, thay đổi trạng thái giáo viên, cập nhật Lương/giờ, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú và CUD comment.
 - Khi thành công, notification chỉ hiển thị sau khi backend xác nhận dữ liệu đã được ghi nhận.
 - Khi validation phía client chặn thao tác, hiển thị lỗi tại trường liên quan và một notification thất bại tổng quát.
 - Khi backend trả lỗi hoặc hết thời gian chờ, hiển thị notification thất bại và không hiển thị notification thành công.
@@ -599,7 +580,7 @@ Admin, Class Handler hoặc Support mở tab Danh sách lớp
 | Case 72: Từ chối role không có quyền | High | EX01 / Ràng buộc quyền | Các role khác | Người dùng đã đăng nhập nhưng không thuộc role được cấp quyền | **Given** người dùng không có quyền với màn hình hoặc tab được yêu cầu<br>**When** mở URL hoặc gửi request trực tiếp<br>**Then** hệ thống từ chối | - Không nhận dữ liệu ngoài quyền<br>- Không thực hiện được thao tác thay đổi<br>- Dữ liệu không thay đổi |
 | Case 74: Notification khi thao tác thành công | High | REQ06 | Admin / Class Handler / Support | Có thao tác thay đổi hợp lệ trong phạm vi quyền | **Given** người dùng xác nhận thao tác thay đổi<br>**When** backend trả kết quả thành công<br>**Then** hệ thống hiển thị notification thành công | - Nội dung đúng thao tác và đúng giáo viên/đối tượng<br>- Chỉ hiển thị sau khi backend xác nhận<br>- Mỗi request chỉ có một notification |
 | Case 75: Notification khi thao tác thất bại | High | REQ06 | Admin / Class Handler / Support | Thao tác bị validation, lỗi quyền, lỗi backend hoặc hết thời gian chờ | **Given** người dùng thực hiện thao tác thay đổi<br>**When** thao tác bị từ chối hoặc thất bại<br>**Then** hệ thống hiển thị notification thất bại | - Không hiển thị notification thành công<br>- Mỗi request chỉ có một notification thất bại<br>- Không hiển thị mật khẩu hoặc thông tin kỹ thuật nhạy cảm<br>- Không hiển thị dữ liệu như đã thay đổi khi backend chưa ghi nhận |
-| Case 3: Hiển thị Thông tin cá nhân | High | Flow 1 / REQ01 | Admin | Giáo viên tồn tại trong phạm vi | **Given** Admin mở chi tiết giáo viên<br>**When** dữ liệu tải thành công<br>**Then** tab `Thông tin cá nhân` được hiển thị | - Hiển thị đúng giáo viên<br>- Có trường Giới tính, Ngày sinh, Trạng thái, Ghi chú và khối thông tin ngân hàng<br>- Không có field lương theo giờ<br>- Mã giáo viên và Gmail bị khóa<br>- Không hiển thị hành động xóa cứng |
+| Case 3: Hiển thị Thông tin cá nhân | High | Flow 1 / REQ01 | Admin | Giáo viên tồn tại trong phạm vi | **Given** Admin mở chi tiết giáo viên<br>**When** dữ liệu tải thành công<br>**Then** tab `Thông tin cá nhân` được hiển thị | - Hiển thị đúng giáo viên<br>- Có trường Giới tính, Ngày sinh, Trạng thái, Ghi chú, Lương/giờ và khối thông tin ngân hàng<br>- Mã giáo viên và Gmail bị khóa<br>- Không hiển thị hành động xóa cứng |
 | Case 4: Cập nhật khi không có trường bắt buộc | High · Smoke | Flow 2 / REQ02 / REQ06 | Admin | Tab Thông tin cá nhân đã tải | **Given** Admin chỉ thay đổi một hoặc nhiều trường tùy chọn<br>**When** chọn `Cập nhật tài khoản`<br>**Then** hệ thống không yêu cầu nhập lại các trường khác | - Chỉ validation trường có giá trị thay đổi/cung cấp<br>- Lưu toàn bộ thay đổi trong một thao tác logic<br>- Mã giáo viên và Email không thay đổi<br>- Hiển thị đúng một notification kết quả |
 | Case 5: Validation số điện thoại khi cập nhật | High | EX03 / REQ02 | Admin | Tab Thông tin cá nhân đã tải | **Given** Admin cập nhật Số điện thoại hoặc để trống<br>**When** chọn `Cập nhật tài khoản`<br>**Then** hệ thống validation trường Số điện thoại | - Cho phép để trống<br>- Chấp nhận đúng 10 chữ số và bắt đầu bằng `0`<br>- Từ chối sai độ dài, không bắt đầu bằng `0`, có chữ hoặc ký tự phân cách<br>- Giữ số `0` đầu tiên |
 | Case 6: Cập nhật thông tin ngân hàng và viết hoa tên chủ tài khoản | Medium | Flow 2 / REQ02 | Admin | Tab Thông tin cá nhân đã tải | **Given** các trường ngân hàng đang trống hoặc đã có dữ liệu<br>**When** Admin nhập/chỉnh sửa rồi cập nhật<br>**Then** hệ thống lưu thông tin đã nhập | - Không báo lỗi bắt buộc khi để trống<br>- Tên chủ tài khoản được chuyển thành chữ in hoa<br>- Giá trị do người dùng nhập, không tự thay bằng Họ và tên giáo viên |
@@ -609,22 +590,21 @@ Admin, Class Handler hoặc Support mở tab Danh sách lớp
 | Case 10: Chuyển giáo viên sang Nghỉ việc | High · Smoke | Flow 4 / REQ04 / REQ06 | Admin | Giáo viên đang hoạt động, có thể có lịch đăng ký hoặc lớp đang dạy | **Given** Admin chọn trạng thái `Nghỉ việc`<br>**When** cập nhật thành công<br>**Then** hệ thống áp dụng nghiệp vụ nghỉ việc | - Khóa đăng nhập của giáo viên<br>- Loại giáo viên khỏi lịch đăng ký và lớp đang dạy<br>- Không xóa cứng hồ sơ, lịch sử hoặc log<br>- Hiển thị đúng một notification thành công |
 | Case 11: Cảnh báo khi rời màn hình có thay đổi chưa lưu | High | EX06 / REQ02 | Admin | Admin đã thay đổi dữ liệu nhưng chưa cập nhật | **Given** form đang ở trạng thái có thay đổi chưa lưu<br>**When** chuyển tab hoặc bấm quay lại<br>**Then** hệ thống hiển thị cảnh báo xác nhận | - Ở lại tiếp tục giữ dữ liệu đã nhập<br>- Xác nhận rời sẽ bỏ thay đổi chưa lưu và điều hướng<br>- Không gửi request cập nhật ngoài ý muốn |
 | Case 12: Chỉ hiển thị lớp đã thêm giáo viên | High · Smoke | Flow 10 / REQ11 | Admin / Class Handler / Support | Giáo viên được thêm vào một số lớp và chưa được thêm vào các lớp khác | **Given** người dùng mở tab Danh sách lớp<br>**When** dữ liệu tải thành công<br>**Then** hệ thống chỉ hiển thị lớp có quan hệ với giáo viên đang xem | - Không hiển thị lớp chưa thêm giáo viên<br>- Không trộn lớp của giáo viên khác<br>- Mỗi quan hệ hợp lệ chỉ tạo một dòng |
-| Case 13: Hiển thị đủ thông tin của từng lớp | High | Flow 10 / REQ11 | Admin / Class Handler / Support | Giáo viên có lớp thuộc nhiều trạng thái và khóa học | **Given** danh sách lớp đã tải<br>**When** người dùng xem từng dòng<br>**Then** hệ thống hiển thị đúng Trạng thái, Mã lớp, Khóa học, Đánh giá, KPI và Lương | - Dữ liệu trên cùng dòng thuộc cùng một lớp<br>- Trạng thái có nội dung nhận biết được<br>- Tiến độ/số buổi nếu có thuộc đúng khóa học và lớp |
+| Case 13: Hiển thị đủ thông tin của từng lớp | High | Flow 10 / REQ11 | Admin / Class Handler / Support | Giáo viên có lớp thuộc nhiều trạng thái và khóa học | **Given** danh sách lớp đã tải<br>**When** người dùng xem từng dòng<br>**Then** hệ thống hiển thị đúng Trạng thái, Mã lớp, Khóa học, Đánh giá và KPI | - Dữ liệu trên cùng dòng thuộc cùng một lớp<br>- Trạng thái có nội dung nhận biết được<br>- Tiến độ/số buổi nếu có thuộc đúng khóa học và lớp |
 | Case 14: Đánh giá lớp độc lập với KPI | Medium | REQ11 | Admin / Class Handler / Support | Lớp có dữ liệu đánh giá và KPI khác nhau | **Given** hai nguồn dữ liệu có giá trị khác nhau<br>**When** dòng lớp hiển thị<br>**Then** hệ thống giữ đúng từng giá trị | - Không dùng KPI thay cho đánh giá<br>- Không tự tính đánh giá từ lương hoặc tiến độ<br>- Trạng thái chưa có đánh giá được hiển thị nhất quán |
 | Case 15: Tính KPI lớp theo tỷ lệ lên kỳ | High | REQ11 | Admin / Class Handler / Support | Lớp có học viên với dữ liệu đi học và BTVN hợp lệ | **Given** mỗi học viên có tỷ lệ đi học và tỷ lệ BTVN<br>**When** hệ thống tính KPI lớp<br>**Then** tính tỷ lệ lên kỳ từng học viên rồi lấy trung bình cộng toàn lớp | - Công thức học viên là `(Đi học + BTVN) / 2`<br>- Chỉ dùng học viên thuộc đúng lớp<br>- Hiển thị phần trăm đúng quy tắc làm tròn được chốt |
 | Case 16: KPI lớp không có mẫu số hợp lệ | High | REQ11 | Admin / Class Handler / Support | Lớp chưa có học viên hoặc dữ liệu chưa đủ để tính | **Given** hệ thống không có mẫu số hợp lệ<br>**When** hiển thị KPI<br>**Then** dùng trạng thái không có dữ liệu hoặc giá trị quy ước | - Không hiển thị `NaN`, `Infinity` hoặc số âm<br>- Không lấy KPI của lớp khác thay thế |
-| Case 17: Lương được lưu và hiển thị riêng theo quan hệ giáo viên–lớp | High | Flow 10 / REQ11 | Admin / Class Handler / Support | Cùng giáo viên có lương khác nhau ở hai lớp | **Given** người dùng mở danh sách lớp<br>**When** dữ liệu tải thành công<br>**Then** mỗi dòng hiển thị đúng nút lương của quan hệ tương ứng | - Lương không lấy từ hồ sơ chung giáo viên<br>- Hai lớp có thể hiển thị hai mức lương khác nhau<br>- Cột có tiêu đề LƯƠNG/GIỜ<br>- Nút màu cam hiển thị `200.000 đ` và icon bút chỉnh sửa |
-| Case 18: Mở popup và cập nhật lương đúng lớp | High | Flow 10 / REQ11 / REQ06 | Admin / Class Handler / Support | Người dùng có quyền và quan hệ giáo viên–lớp tồn tại | **Given** người dùng click nút lương/icon bút tại một dòng<br>**When** popup mở, người dùng nhập giá trị hợp lệ và chọn `Xác Nhận`<br>**Then** hệ thống lưu lương cho đúng giáo viên và đúng lớp | - Popup có tiêu đề Chỉnh Sửa Lương và đúng Mã lớp<br>- Hiển thị giá trị hiện tại, tiền tệ VNĐ và đơn vị Giờ<br>- Chỉ gửi một request dù click lặp khi đang xử lý<br>- Thành công đóng popup và cập nhật đúng nút lương<br>- Không thay đổi lương ở lớp khác<br>- Ghi nhận actor/thời điểm và hiển thị đúng một notification thành công |
-| Case 19: Hủy chỉnh sửa lương | High | REQ11 | Admin / Class Handler / Support | Popup Chỉnh Sửa Lương đang Mới và người dùng đã thay đổi giá trị | **Given** giá trị trong popup khác giá trị đang lưu<br>**When** người dùng chọn `Hủy`<br>**Then** hệ thống đóng popup mà không cập nhật | - Không gửi request thay đổi<br>- Nút lương ngoài bảng giữ nguyên<br>- Không ảnh hưởng lớp khác<br>- Không hiển thị notification CUD |
-| Case 20: Validation lương VNĐ không âm | High | EX23 / REQ11 / REQ06 | Admin / Class Handler / Support | Người dùng đang sửa lương | **Given** người dùng lần lượt nhập `0`, số nguyên dương, số âm, số thập phân hoặc giá trị không phải số<br>**When** chọn `Xác Nhận`<br>**Then** hệ thống chỉ chấp nhận số nguyên không âm | - Cho phép `0` và số nguyên dương<br>- Từ chối số âm, số thập phân hoặc không phải số<br>- Hỗ trợ định dạng phân tách hàng nghìn nhưng lưu đúng giá trị số<br>- Giữ giá trị chính thức khi bị từ chối<br>- Hiển thị đúng một notification kết quả khi xác nhận bị validation hoặc backend từ chối |
-| Case 21: Kiểm tra quyền cập nhật lương | High | EX24 / REQ11 | Các role được cấp quyền và role khác | Quan hệ giáo viên–lớp tồn tại | **Given** người dùng mở UI hoặc gọi API cập nhật lương<br>**When** hệ thống kiểm tra quyền và phạm vi<br>**Then** chỉ Admin, Class Handler, Support hợp lệ được cập nhật | - Role khác không thấy thao tác chỉnh sửa<br>- Backend từ chối request trái quyền<br>- Lương không thay đổi khi bị từ chối |
 | Case 22: Tìm kiếm lớp học | High | Flow 10 / REQ11 | Admin / Class Handler / Support | Có lớp khớp và không khớp Mã lớp/Tên khóa học | **Given** người dùng nhập từ khóa tại ô Tìm kiếm lớp học<br>**When** ngừng gõ 2 giây hoặc nhấn `Enter`<br>**Then** hệ thống tìm theo Mã lớp hoặc Tên khóa học và trở về trang đầu | - Không gửi request trước đủ 2 giây nếu vẫn đang gõ<br>- Enter tìm ngay và hủy debounce đang chờ<br>- Kết hợp từ khóa theo AND với các filter hiện tại<br>- Không hiển thị lớp chưa thêm giáo viên<br>- Chuyển trang giữ nguyên từ khóa |
 | Case 23: Lọc theo Loại lớp, Khóa học và Trạng thái | High | Flow 10 / REQ11 | Admin / Class Handler / Support | Có lớp thuộc nhiều loại, khóa học và tám trạng thái | **Given** người dùng chọn một hoặc nhiều điều kiện lọc<br>**When** danh sách tải lại<br>**Then** hệ thống áp dụng giao các điều kiện | - Loại lớp chỉ gồm Lớp 1-1/Lớp chung<br>- Khóa học lấy từ cấu hình hiện hành<br>- Trạng thái hỗ trợ đủ tám giá trị đã quy định<br>- Kết quả vẫn thuộc đúng giáo viên |
 | Case 24: Filter thời gian mặc định Hôm nay | High | Flow 10 / REQ11 | Admin / Class Handler / Support | Có lớp tạo hôm nay và ngày khác | **Given** người dùng mở tab lần đầu<br>**When** danh sách tải<br>**Then** filter Thời gian mặc định là Hôm nay | - Lọc theo `class.created_at` từ đầu đến hết ngày hôm nay<br>- Dùng đúng múi giờ nghiệp vụ<br>- Không dùng thời gian cập nhật lương |
 | Case 25: Filter Tới hạn và các khoảng định sẵn | High | Flow 10 / REQ11 | Admin / Class Handler / Support | Có lớp được tạo tại các mốc biên | **Given** người dùng lần lượt chọn các khoảng thời gian định sẵn<br>**When** danh sách tải<br>**Then** hệ thống lọc đúng theo `class.created_at` | - Tới hạn lấy từ đầu hệ thống đến hết hôm nay<br>- Hỗ trợ đủ Hôm qua, Hôm nay và hôm qua, tuần/tháng/năm hiện tại hoặc trước đó và 3 tháng trước<br>- Bao gồm đúng các mốc biên |
 | Case 26: Filter thời gian Tùy chọn và kết hợp filter | High | Flow 10 / REQ11 | Admin / Class Handler / Support | Có lớp trong và ngoài khoảng chọn | **Given** người dùng chọn khoảng ngày hợp lệ cùng các filter khác<br>**When** áp dụng filter<br>**Then** hệ thống trả giao của toàn bộ điều kiện | - Bao gồm toàn bộ hai ngày biên<br>- Từ chối ngày bắt đầu sau ngày kết thúc<br>- Chỉ response mới nhất được hiển thị |
 | Case 27: Phân trang Danh sách lớp | High | Flow 10 / REQ11 | Admin / Class Handler / Support | Có hơn 50 lớp thỏa từ khóa, quyền và bộ lọc hiện tại | **Given** danh sách lớp đang có nhiều trang<br>**When** người dùng chọn số trang, `Trước` hoặc `Sau`<br>**Then** hệ thống tải đúng tối đa 50 lớp của trang được chọn | - Hiển thị đúng khoảng dữ liệu, tổng kết quả và trang hiện tại<br>- Giữ nguyên từ khóa và toàn bộ bộ lọc khi chuyển trang<br>- `Trước`/`Sau` vô hiệu hóa đúng ở trang biên<br>- Thay đổi từ khóa/filter đưa danh sách về trang đầu<br>- Không lặp hoặc bỏ sót lớp giữa các trang |
-| Case 28: Tải danh sách hoặc cập nhật lương thất bại/xung đột | High | EX25 / EX26 / EX27 / REQ11 / REQ06 | Admin / Class Handler / Support | API lỗi, hết thời gian chờ, response sai thứ tự hoặc dữ liệu đã được người khác cập nhật | **Given** người dùng tải/tìm/lọc danh sách hoặc cập nhật lương<br>**When** xảy ra lỗi hay xung đột<br>**Then** hệ thống giữ dữ liệu nhất quán và hiển thị trạng thái phù hợp | - Không coi lỗi tải là danh sách rỗng<br>- Response cũ không ghi đè điều kiện mới<br>- Không âm thầm ghi đè lương mới hơn<br>- Popup giữ giá trị vừa nhập khi cập nhật thất bại<br>- Cập nhật thất bại hiển thị đúng một notification thất bại và cho phép thử lại |
+| Case 28: Tải danh sách thất bại | High | EX25 / REQ11 | Admin / Class Handler / Support | API lỗi, hết thời gian chờ hoặc response sai thứ tự | **Given** người dùng tải/tìm/lọc danh sách<br>**When** xảy ra lỗi<br>**Then** hệ thống hiển thị trạng thái lỗi phù hợp | - Không coi lỗi tải là danh sách rỗng<br>- Response cũ không ghi đè điều kiện mới<br>- Cho phép thử lại |
+| Case 17: Không còn lương theo lớp | High | REQ11 | Admin / Class Handler / Support | Giáo viên có nhiều lớp | **Given** mở tab Danh sách lớp<br>**When** dữ liệu tải xong<br>**Then** không có cột/popup lương | - Không có cột `LƯƠNG/GIỜ`<br>- Không có popup `Chỉnh sửa lương`<br>- Không có API cập nhật lương theo lớp |
+| Case 18: Cập nhật Lương/giờ trong hồ sơ | High · Smoke | REQ02 / REQ06 | Admin | Giáo viên có buổi đã hoàn thành và buổi chưa hoàn thành | **Given** Admin đổi Lương/giờ từ `200.000` thành `250.000`<br>**When** chọn `Cập nhật tài khoản`<br>**Then** hệ thống lưu mức mới | - Buổi chưa hoàn thành, chưa chỉnh riêng dùng `250.000`<br>- Buổi đã hoàn thành giữ tiền đã chốt<br>- Buổi đã chỉnh lương riêng giữ mức riêng<br>- Ghi log mức cũ → mức mới, đúng một notification |
+| Case 19: Validation Lương/giờ | High | EX23 / REQ02 | Admin | Đang sửa hồ sơ | **Given** nhập `0`, số dương, số âm, số thập phân, chữ<br>**When** cập nhật<br>**Then** chỉ chấp nhận số nguyên > 0 | - Từ chối `0`<br>- Từ chối giá trị còn lại, giữ giá trị đã lưu<br>- Lưu đúng số khi nhập có phân tách hàng nghìn |
+| Case 20: Class Handler/Support sửa Lương/giờ trong hồ sơ | High | REQ01 / EX24 | Class Handler / Support / role khác | Giáo viên trong phạm vi | **Given** Class Handler/Support mở tab Thông tin cá nhân<br>**When** sửa Lương/giờ và cập nhật<br>**Then** lưu thành công | - Chỉ Lương/giờ sửa được, field khác read-only<br>- Request đổi field khác bị từ chối<br>- Role khác gửi request cập nhật Lương/giờ bị từ chối, giá trị không đổi |
 | Case 29: Mở tab Lịch dạy | High · Smoke | Flow 5 / REQ05 | Admin | Giáo viên tồn tại trong phạm vi | **Given** Admin đang ở chi tiết giáo viên<br>**When** chọn tab `Lịch dạy`<br>**Then** hệ thống tải lịch tuần hiện tại | - Chỉ hiển thị buổi dạy của đúng giáo viên<br>- Tuần bắt đầu từ Thứ 2 và kết thúc Chủ Nhật<br>- Không hiển thị lịch đăng ký làm việc<br>- Không có thao tác thêm, sửa hoặc xóa lịch |
 | Case 30: Chuyển và chọn tuần | High | Flow 5 / REQ05 | Admin | Giáo viên có lịch ở nhiều tuần | **Given** tuần hiện tại đang hiển thị<br>**When** Admin dùng mũi tên hoặc chọn một tuần trong danh sách<br>**Then** hệ thống tải đúng tuần được chọn | - Khoảng ngày và bảy tiêu đề ngày cập nhật đúng<br>- Không trộn dữ liệu tuần cũ<br>- Ngày hiện tại chỉ được đánh dấu khi thuộc tuần đang xem |
 | Case 31: Hiển thị lịch Theo Lớp | High | Flow 5 / REQ05 | Admin | Tuần được chọn có nhiều lớp và ngày trống | **Given** tùy chọn `Theo Lớp` đang bật<br>**When** lịch tải thành công<br>**Then** hệ thống nhóm lịch theo từng lớp | - Mỗi lớp có đúng một nhóm riêng với thanh tiêu đề mã lớp<br>- Mỗi nhóm có đủ bảy cột ngày<br>- Card hiển thị đúng tên giáo viên, mã lớp và giờ<br>- Ô không có buổi là ô trống nét đứt<br>- Không trộn buổi giữa các lớp |
@@ -637,7 +617,7 @@ Admin, Class Handler hoặc Support mở tab Danh sách lớp
 | Case 36: Chỉ nhận dữ liệu lịch của request mới nhất | High | EX09 / REQ05 | Admin | Hai request tuần/chế độ phản hồi không đúng thứ tự | **Given** request cũ đang xử lý<br>**When** Admin đổi tuần hoặc chế độ và request mới hoàn tất trước<br>**Then** hệ thống giữ kết quả mới nhất | - Response cũ không ghi đè dữ liệu hiện tại<br>- Tuần, chế độ và lịch hiển thị nhất quán |
 | Case 73: Không cho CUD tại tab Lịch dạy | High | REQ05 / Ràng buộc quyền | Admin | Tab Lịch dạy đã tải | **Given** Admin đang xem lịch dạy<br>**When** kiểm tra UI hoặc gửi request CUD thông qua ngữ cảnh tab này<br>**Then** hệ thống không cung cấp/không chấp nhận thao tác CUD lịch | - Không có nút thêm, sửa, xóa, đăng ký hoặc hủy lịch<br>- Lịch dạy không thay đổi |
 | Case 37: Hiển thị log đúng giáo viên | High · Smoke | Flow 6 / REQ07 | Admin / Class Handler / Support | Giáo viên có log do nhiều người và hệ thống ghi | **Given** người dùng có quyền mở tab Log<br>**When** dữ liệu tải thành công<br>**Then** hệ thống hiển thị log của đúng giáo viên | - Có Tiêu đề, Mô tả, Giờ log, Ngày log, Đối tượng, Thao tác<br>- Sắp xếp mới nhất trước<br>- Không hiển thị log của giáo viên khác |
-| Case 38: Tự ghi log khi thao tác thành công | High | Flow 6 / REQ07 | Admin / Class Handler / Support | Người dùng cập nhật lương một lớp của giáo viên | **Given** cập nhật lương thành công<br>**When** mở tab Log<br>**Then** có một dòng log mới ở đầu danh sách | - Đối tượng là người vừa thao tác<br>- Mô tả nêu mã lớp và mức lương mới<br>- Thao tác thất bại không sinh log |
+| Case 38: Tự ghi log khi thao tác thành công | High | Flow 6 / REQ07 | Admin / Class Handler / Support | Admin cập nhật Lương/giờ của giáo viên | **Given** cập nhật Lương/giờ thành công<br>**When** mở tab Log<br>**Then** có một dòng log mới ở đầu danh sách | - Đối tượng là người vừa thao tác<br>- Mô tả nêu mức lương cũ và mới<br>- Thao tác thất bại không sinh log |
 | Case 39: Log của Hệ thống | Medium | Flow 6 / REQ07 | Admin / Class Handler / Support | Có tiến trình tự động tạo log cho giáo viên | **Given** tiến trình tự động chạy xong<br>**When** xem dòng log tương ứng<br>**Then** cột Đối tượng hiển thị `Hệ thống` | - Không gán cho người dùng nào<br>- Lọc Đối tượng = `Hệ thống` thấy dòng này |
 | Case 40: Mở rộng mô tả dài và Xem chi tiết | Medium | REQ07 | Admin / Class Handler / Support | Có log mô tả dài kèm khối chi tiết | **Given** dòng log hiển thị khối chi tiết<br>**When** bấm `Thu gọn` rồi `⋯` → `Xem chi tiết`<br>**Then** khối chi tiết ẩn / hiện và popup chi tiết hiển thị toàn bộ nội dung | - Không có thao tác sửa / xóa trong menu `⋯`<br>- Dữ liệu log không đổi |
 | Case 41: Không cho tạo, sửa, xóa log | High | EX10 / REQ07 | Admin / Class Handler / Support | Tab Log đã tải | **Given** người dùng kiểm tra UI hoặc gọi API tạo/sửa/xóa log trực tiếp<br>**When** hệ thống xử lý<br>**Then** UI không có thao tác và backend từ chối | - Log không thay đổi<br>- Không tiết lộ dữ liệu ngoài phạm vi |
@@ -698,27 +678,25 @@ Admin, Class Handler hoặc Support mở tab Danh sách lớp
 - **Q08:** Số buổi dạng `đã học/tổng số buổi` và thanh tiến độ trong ảnh UI được tính theo trạng thái buổi học nào; có bắt buộc hiển thị khi khóa học chưa cấu hình tổng số buổi hay không.
 - **Q09:** Bộ lọc `Loại lớp`, `Khóa học`, `Trạng thái` cho phép chọn một hay nhiều giá trị trong cùng bộ lọc; danh sách giá trị và phép giao giữa các bộ lọc đã được xác định.
 - **Q10:** Filter Thời gian của Danh sách lớp hiện được đặc tả theo `class.created_at`; cần xác nhận có đổi sang ngày khai giảng, ngày giáo viên được thêm vào lớp hoặc một trường nghiệp vụ khác hay không.
-- **Q11:** Giá trị tối đa của Lương giáo viên theo giờ; định dạng số nguyên, phân tách hàng nghìn, đơn vị VNĐ/giờ, điều kiện không âm và giá trị `0` đã được chốt.
-- **Q12:** Khi cập nhật lương, mức lương mới áp dụng từ thời điểm cập nhật, từ buổi dạy kế tiếp hay hồi tố cho các buổi/lương đã phát sinh trước đó.
-- **Q13:** Cách xử lý xung đột cập nhật lương cụ thể: chặn và tải lại, ghi đè có xác nhận hay hỗ trợ lịch sử phiên bản.
-- **Q14:** Thứ tự sắp xếp mặc định của Danh sách lớp và hành động khi click vào một dòng/mã lớp; phân trang tối đa 50 lớp/trang đã được chốt.
-- **Q15:** Những trạng thái buổi học nào được hiển thị trong Lịch dạy; cách xử lý buổi bị hủy, dời lịch, học bù hoặc thay giáo viên.
-- **Q16:** Số tuần hiển thị trong danh sách chọn tuần, giới hạn được phép xem về quá khứ/tương lai và có cần tải thêm khi cuộn hay không.
-- **Q17:** Tùy chọn `Theo Lớp` có mặc định bật cho mọi lần mở tab hay ghi nhớ lựa chọn gần nhất của Admin.
-- **Q18:** Click card buổi dạy có hoàn toàn không có hành động hay được phép điều hướng tới màn chỉ đọc của lớp/buổi học; tab hiện tại không cho phép CUD lịch.
-- **Q19:** Múi giờ nghiệp vụ dùng để xác định tuần, ngày hiện tại và giờ của buổi dạy.
-- **Q20:** Danh sách đầy đủ các loại log (Tiêu đề) được ghi cho giáo viên, thời gian lưu log và giá trị mặc định của bộ lọc Thời gian ở tab Log.
-- **Q21:** Khung giờ 3 buổi (`07h30 - 12h00`, `14h00 - 18h00`, `18h00 - 23h00`) là cố định toàn hệ thống hay cấu hình theo trung tâm.
-- **Q22:** Lịch đăng ký lặp cố định theo tuần hay có ngày bắt đầu/kết thúc hiệu lực; UI hiện tại thể hiện theo thứ trong tuần.
-- **Q23:** Có cho phép cập nhật thành lịch rỗng khi bỏ chọn toàn bộ checkbox hay phải giữ tối thiểu một ca.
+- **Q11:** Giá trị tối đa của `Lương/giờ`; định dạng số nguyên, phân tách hàng nghìn, đơn vị VNĐ/giờ, điều kiện lớn hơn 0 đã được chốt.
+- **Q12:** Thứ tự sắp xếp mặc định của Danh sách lớp và hành động khi click vào một dòng/mã lớp; phân trang tối đa 50 lớp/trang đã được chốt.
+- **Q13:** Những trạng thái buổi học nào được hiển thị trong Lịch dạy; cách xử lý buổi bị hủy, dời lịch, học bù hoặc thay giáo viên.
+- **Q14:** Số tuần hiển thị trong danh sách chọn tuần, giới hạn được phép xem về quá khứ/tương lai và có cần tải thêm khi cuộn hay không.
+- **Q15:** Tùy chọn `Theo Lớp` có mặc định bật cho mọi lần mở tab hay ghi nhớ lựa chọn gần nhất của Admin.
+- **Q16:** Click card buổi dạy có hoàn toàn không có hành động hay được phép điều hướng tới màn chỉ đọc của lớp/buổi học; tab hiện tại không cho phép CUD lịch.
+- **Q17:** Múi giờ nghiệp vụ dùng để xác định tuần, ngày hiện tại và giờ của buổi dạy.
+- **Q18:** Danh sách đầy đủ các loại log (Tiêu đề) được ghi cho giáo viên, thời gian lưu log và giá trị mặc định của bộ lọc Thời gian ở tab Log.
+- **Q19:** Khung giờ 3 buổi (`07h30 - 12h00`, `14h00 - 18h00`, `18h00 - 23h00`) là cố định toàn hệ thống hay cấu hình theo trung tâm.
+- **Q20:** Lịch đăng ký lặp cố định theo tuần hay có ngày bắt đầu/kết thúc hiệu lực; UI hiện tại thể hiện theo thứ trong tuần.
+- **Q21:** Có cho phép cập nhật thành lịch rỗng khi bỏ chọn toàn bộ checkbox hay phải giữ tối thiểu một ca.
 
-- **Q24:** Giáo viên trạng thái `Nghỉ việc` có được xem/cập nhật tab Quản lý đăng ký lịch hay tab bị khóa hoàn toàn.
-- **Q25:** Cách xử lý xung đột đồng thời cụ thể: chặn và tải lại, ghi đè có xác nhận hay hỗ trợ hợp nhất từng ca.
-- **Q26:** Vị trí hiển thị audit người cập nhật lịch thay và có cần hiển thị lịch sử các lần thay đổi hay không.
-- **Q27:** Số ký tự tối đa của Tiêu đề, Nội dung ghi chú và Nội dung comment; có cho phép xuống dòng hoặc định dạng rich text hay không.
-- **Q28:** Thứ tự sắp xếp mặc định của danh sách Ghi chú; phân trang tối đa 50 ghi chú được phép xem/trang đã được chốt.
-- **Q29:** Xóa ghi chú/comment là xóa mềm hay xóa cứng; có cần lưu audit và cho phép khôi phục hay không.
-- **Q30:** Khi comment được chỉnh sửa, có hiển thị thời gian cập nhật và nhãn `Đã chỉnh sửa` hay không (ghi chú đã có nhãn theo Figma).
-- **Q31:** Các filter Loại, Độ ưu tiên và Trạng thái là chọn một giá trị hay cho phép chọn nhiều giá trị trong cùng filter.
-- **Q32:** Định dạng ngày giờ hiển thị cho ghi chú/comment và múi giờ nghiệp vụ; filter thời gian đã chốt dùng `created_at` của ghi chú.
-- **Q33:** Nội dung chính xác, vị trí hiển thị, thời gian tự đóng và khả năng đóng thủ công của notification thành công/thất bại cho từng thao tác cập nhật tài khoản, reset mật khẩu, đổi trạng thái, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú và CUD comment.
+- **Q22:** Giáo viên trạng thái `Nghỉ việc` có được xem/cập nhật tab Quản lý đăng ký lịch hay tab bị khóa hoàn toàn.
+- **Q23:** Cách xử lý xung đột đồng thời cụ thể: chặn và tải lại, ghi đè có xác nhận hay hỗ trợ hợp nhất từng ca.
+- **Q24:** Vị trí hiển thị audit người cập nhật lịch thay và có cần hiển thị lịch sử các lần thay đổi hay không.
+- **Q25:** Số ký tự tối đa của Tiêu đề, Nội dung ghi chú và Nội dung comment; có cho phép xuống dòng hoặc định dạng rich text hay không.
+- **Q26:** Thứ tự sắp xếp mặc định của danh sách Ghi chú; phân trang tối đa 50 ghi chú được phép xem/trang đã được chốt.
+- **Q27:** Xóa ghi chú/comment là xóa mềm hay xóa cứng; có cần lưu audit và cho phép khôi phục hay không.
+- **Q28:** Khi comment được chỉnh sửa, có hiển thị thời gian cập nhật và nhãn `Đã chỉnh sửa` hay không (ghi chú đã có nhãn theo Figma).
+- **Q29:** Các filter Loại, Độ ưu tiên và Trạng thái là chọn một giá trị hay cho phép chọn nhiều giá trị trong cùng filter.
+- **Q30:** Định dạng ngày giờ hiển thị cho ghi chú/comment và múi giờ nghiệp vụ; filter thời gian đã chốt dùng `created_at` của ghi chú.
+- **Q31:** Nội dung chính xác, vị trí hiển thị, thời gian tự đóng và khả năng đóng thủ công của notification thành công/thất bại cho từng thao tác cập nhật tài khoản, reset mật khẩu, đổi trạng thái, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú và CUD comment.

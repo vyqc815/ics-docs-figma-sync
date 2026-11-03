@@ -124,9 +124,9 @@
    "content": "figma",
    "nodeId": "1991:28315",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-010002",
    "link": "/danh-sach-lop-hoc?popup=ADM-LOP-010002",
    "dark": "ADM-LOP-010002-DK",
    "openedFrom": [],
@@ -145,9 +145,9 @@
    "content": "figma",
    "nodeId": "3634:78207",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-010004",
    "link": "/danh-sach-lop-hoc?popup=ADM-LOP-010004",
    "dark": null,
    "openedFrom": [],
@@ -166,9 +166,9 @@
    "content": "figma",
    "nodeId": "1991:28268",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-010010",
    "link": "/danh-sach-lop-hoc?popup=ADM-LOP-010010",
    "dark": "ADM-LOP-010010-DK",
    "openedFrom": [],
@@ -212,9 +212,9 @@
    "content": "figma",
    "nodeId": "1991:23381",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-010040",
    "link": "/danh-sach-lop-hoc?popup=ADM-LOP-010040",
    "dark": "ADM-LOP-010040-DK",
    "openedFrom": [],
@@ -235,9 +235,9 @@
    "content": "figma",
    "nodeId": "1991:23448",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-010050",
    "link": "/danh-sach-lop-hoc?popup=ADM-LOP-010050",
    "dark": "ADM-LOP-010050-DK",
    "openedFrom": [],
@@ -3133,16 +3133,33 @@
      "spec": "Bắt buộc; nhập tự do.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010050": [
+       {
+        "term": "Nội dung",
+        "figmaId": "1991:23454",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Row 1: Họ và tên",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36628",
+         "Label": "Nội dung",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CM.TC51",
       "M-CM.TC54"
      ],
-     "missingTerms": [
-      "Nội dung"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop-mot-phan"
     },
     {
      "id": "M-CM.A08.02",
@@ -3151,16 +3168,33 @@
      "spec": "Bắt buộc; chọn ngày/giờ hẹn, không giới hạn mốc thời gian.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010050": [
+       {
+        "term": "Thời gian",
+        "figmaId": "1991:23458",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427326005",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2222",
+         "Label": "Thời gian",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CM.TC51",
       "M-CM.TC54"
      ],
-     "missingTerms": [
-      "Thời gian"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop-mot-phan"
     },
     {
      "id": "M-CM.A08.03",
@@ -3169,16 +3203,34 @@
      "spec": "Bắt buộc; chọn một trong `Ưu tiên thấp`, `Bình thường`, `Quan trọng`, `Ưu tiên cao` theo [Requirement Lịch Hẹn](../../appointment_requirement/appointment_requirements.md). Giá trị mặc định cần xác nhận.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010050": [
+       {
+        "term": "Độ ưu tiên",
+        "figmaId": "1991:23465",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427326005",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:37119",
+         "Label": "Độ ưu tiên",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CM.TC51"
      ],
      "missingTerms": [
-      "Độ ưu tiên",
       "Ưu tiên thấp"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop-mot-phan"
     },
     {
      "id": "M-CM.A08.04",
@@ -3187,17 +3239,35 @@
      "spec": "Bắt buộc; mặc định chọn người tạo nếu người đó có role `Admin`, `Class Handler` hoặc `Support`; có thể gỡ/thêm người khác và khi lưu phải có ít nhất một người. Sale tạo từ màn này phải tự chọn người phụ trách hợp lệ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010050": [
+       {
+        "term": "Người phụ trách",
+        "figmaId": "1991:23470",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427325811",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "738:25432",
+         "Label": "Người phụ trách",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CM.TC51",
       "M-CM.TC55"
      ],
      "missingTerms": [
-      "Người phụ trách",
       "Admin"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop-mot-phan"
     },
     {
      "id": "M-CM.A08.05",
@@ -3206,7 +3276,26 @@
      "spec": "Không bắt buộc; có thể chọn nhiều user thuộc `Admin`, `Class Handler`, `Support`. Người chỉ Theo dõi được xem lịch hẹn và không sửa/xóa.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010050": [
+       {
+        "term": "Theo dõi",
+        "figmaId": "1991:23547",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427326006",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "738:25432",
+         "Label": "Theo dõi",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CM.TC51",
@@ -3215,10 +3304,9 @@
       "M-CM.TC55"
      ],
      "missingTerms": [
-      "Theo dõi",
       "Admin"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop-mot-phan"
     },
     {
      "id": "M-CM.A08.06",
@@ -3227,16 +3315,33 @@
      "spec": "Bắt buộc; nhập tự do, không giới hạn độ dài.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010050": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "1991:23557",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Row 1: Họ và tên",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Ghi chú",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CM.TC51",
       "M-CM.TC54"
      ],
-     "missingTerms": [
-      "Ghi chú"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop-mot-phan"
     },
     {
      "id": "M-CM.A08.07",
@@ -3250,6 +3355,23 @@
        {
         "term": "Hủy",
         "figmaId": "I2527:167755;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "adm-lop-010050": [
+       {
+        "term": "Hủy",
+        "figmaId": "I2527:167658;2514:153361",
         "layer": "Atom/Button",
         "confidence": "cao",
         "region": null,
@@ -3281,6 +3403,23 @@
        {
         "term": "Xác Nhận",
         "figmaId": "I2527:167755;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xác nhận",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "adm-lop-010050": [
+       {
+        "term": "Xác Nhận",
+        "figmaId": "I2527:167658;2514:153363",
         "layer": "Atom/Button",
         "confidence": "cao",
         "region": null,

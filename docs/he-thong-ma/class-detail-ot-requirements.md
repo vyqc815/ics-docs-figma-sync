@@ -44,13 +44,13 @@ Frame: `ADM-LOP-040810` (tool đoán:ADM-LOP-040810) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | nguoi-nhan |  |  | — |  | `TC05` | Chưa sync | QC |
-| `A02.02` | so-tien |  |  | — |  | `TC08` | Chưa sync | QC |
-| `A02.03` | thoi-gian-thuc-hien |  |  | — |  |  | Chưa sync | QC |
-| `A02.04` | trang-thai |  |  | — |  | `TC05` | Chưa sync | QC |
-| `A02.05` | thong-tin-ot |  |  | — |  | `TC08` | Chưa sync | QC |
-| `A02.06` | huy-bo |  |  | — |  | `TC08` | Chưa sync | QC |
-| `A02.07` | cap-nhat |  |  | — |  | `TC05`, `TC09` | Chưa sync | QC |
+| `A02.01` | nguoi-nhan |  |  | — |  | `TC05` | Chưa khớp tự động | QC |
+| `A02.02` | so-tien |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
+| `A02.03` | thoi-gian-thuc-hien | `Atom/Label`  | `2925:24983` Atom/Label | — |  |  | Khớp | QC |
+| `A02.04` | trang-thai | `Atom/Label`  | `2925:24988` Atom/Label | — |  | `TC05` | Khớp | QC |
+| `A02.05` | thong-tin-ot |  | `2402:67801` Thông tin OT: | — |  | `TC08` | Khớp | QC |
+| `A02.06` | huy-bo |  |  | — |  | `TC08` | Chưa khớp tự động | QC |
+| `A02.07` | cap-nhat | `Atom/Button` Type=Primary, Size=Medium | `I2527:167480;2514:153363` Atom/Button | — |  | `TC05`, `TC09` | Khớp | QC |
 
 ### `A03` Dropdown trạng thái và xác nhận
 
@@ -180,8 +180,7 @@ Frame: `ADM-LOP-040800` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (24): `A01.01`, `A01.02`, `A01.09`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`
-- Chưa sync (7): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`
+- Chưa khớp tự động (27): `A01.01`, `A01.02`, `A01.09`, `A02.01`, `A02.02`, `A02.06`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`
 - Frame Figma chưa có requirement (2): `ADM-LOP-040810`, `ADM-LOP-040812`
 - Thiếu prototype link đi vào (1): `ADM-LOP-040810`
 

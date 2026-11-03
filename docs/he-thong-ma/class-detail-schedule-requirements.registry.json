@@ -69,7 +69,7 @@
   {
    "id": "M-CDS.REQ10",
    "name": "Popup thẻ lịch",
-   "text": "Bấm thẻ mở đúng schedule_id với Ngày, Giờ bắt đầu, Giáo viên, Thời gian học và Trạng thái. Role CRUD được sửa lịch Đang đợi; Teacher chỉ xem. Nút Hủy chỉ đóng form; trạng thái Hủy bỏ mới kích hoạt sinh bù.",
+   "text": "Bấm thẻ mở đúng schedule_id với Ngày, Giờ bắt đầu, Giáo viên, Thời gian học, Lương/giờ và Trạng thái. Role CRUD được sửa lịch Đang đợi; Teacher chỉ xem. Nút Hủy chỉ đóng form; trạng thái Hủy bỏ mới kích hoạt sinh bù.",
    "source": "qc",
    "content": "qc"
   },
@@ -77,6 +77,13 @@
    "id": "M-CDS.REQ11",
    "name": "Mở lại lịch hoàn thành",
    "text": "Admin/Class Handler/Support được mở lại lịch Hoàn thành khi nhập lý do. Hệ thống không xóa lương gốc mà tạo bút toán đảo/điều chỉnh, đưa lịch về Đang đợi rồi mới cho sửa/hủy. Hoàn thành lại tạo lần lương mới và chỉ một khoản lương có hiệu lực.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "M-CDS.REQ12",
+   "name": "Lương/giờ của buổi",
+   "text": "Mỗi lịch có `Lương/giờ`, mặc định theo hồ sơ giáo viên của buổi; Role CRUD chỉnh riêng được cho từng buổi chưa hoàn thành/hủy, Teacher chỉ xem. Đổi giáo viên reset theo hồ sơ giáo viên mới. Tiền buổi = Lương/giờ × thời lượng (giờ), chốt khi Hoàn thành; đổi hồ sơ không hồi tố buổi đã hoàn thành và không ghi đè buổi đã chỉnh riêng. Không còn lương theo lớp.",
    "source": "qc",
    "content": "qc"
   }
@@ -148,9 +155,9 @@
    "content": "figma",
    "nodeId": "2384:59509",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-040520",
    "link": "/lop-hoc/cai-dat/lich-day?popup=ADM-LOP-040520",
    "dark": "ADM-LOP-040520-DK",
    "openedFrom": [
@@ -173,9 +180,9 @@
    "content": "figma",
    "nodeId": "2911:43102",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-040521",
    "link": "/lop-hoc/cai-dat/lich-day?state=ADM-LOP-040521",
    "dark": "ADM-LOP-040521-DK",
    "openedFrom": [],
@@ -522,7 +529,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "khop"
+     "status": "khop-mot-phan"
     },
     {
      "id": "M-CDS.A03.03",
@@ -574,6 +581,23 @@
         "variant": null,
         "inCode": false
        }
+      ],
+      "adm-lop-040521": [
+       {
+        "term": "+ Thêm lịch dạy",
+        "figmaId": "I2911:43103;2514:153358",
+        "layer": "Title",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "No",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
       ]
      },
      "relations": [],
@@ -620,6 +644,23 @@
         },
         "inCode": false
        }
+      ],
+      "adm-lop-040521": [
+       {
+        "term": "Hủy",
+        "figmaId": "I2911:43160;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
       ]
      },
      "relations": [],
@@ -639,6 +680,23 @@
        {
         "term": "Xác Nhận",
         "figmaId": "I2527:167767;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xác nhận",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "adm-lop-040521": [
+       {
+        "term": "Xác Nhận",
+        "figmaId": "I2911:43160;2514:153363",
         "layer": "Atom/Button",
         "confidence": "cao",
         "region": null,
@@ -693,8 +751,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Khoảng tuần"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDS.A04.02",
@@ -706,8 +766,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Giờ bắt đầu/kết thúc"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDS.A04.03",
@@ -719,8 +781,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thứ trong tuần"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDS.A04.04",
@@ -729,11 +793,29 @@
      "spec": "Thêm dòng giờ khác để tạo nhiều lịch trong một lần.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040520": [
+       {
+        "term": "Thêm lịch dạy",
+        "figmaId": "I2527:167773;2514:153358",
+        "layer": "Title",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "No",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDS.A04.05",
@@ -742,7 +824,25 @@
      "spec": "Validate toàn bộ rồi chèn các lịch linh hoạt nguyên tử vào timeline lớp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040520": [
+       {
+        "term": "Xác Nhận",
+        "figmaId": "I2527:167779;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xác nhận",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDS.TC16",
@@ -750,7 +850,7 @@
       "M-CDS.TC19"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ]
   },
@@ -849,7 +949,9 @@
      "testcases": [
       "M-CDS.TC21",
       "M-CDS.TC24",
-      "M-CDS.TC25"
+      "M-CDS.TC25",
+      "M-CDS.TC27b",
+      "M-CDS.TC27c"
      ],
      "missingTerms": [],
      "status": "khop"
@@ -872,6 +974,27 @@
     },
     {
      "id": "M-CDS.A05.06",
+     "name": "luong-gio",
+     "label": "Lương/giờ",
+     "spec": "Lương/giờ của giáo viên cho **riêng buổi này**, VNĐ/giờ, số nguyên **lớn hơn 0**, hiển thị phân tách hàng nghìn kèm `đ`. Mặc định lấy `Lương/giờ` trong hồ sơ giáo viên của buổi. Role CRUD sửa được khi lịch chưa hoàn thành/hủy; Teacher chỉ xem. Bên dưới hiển thị `Tiền buổi dự kiến = Lương/giờ × Thời gian học` (vd `200.000 đ × 1,5 giờ = 300.000 đ`).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-CDS.TC27a",
+      "M-CDS.TC27b",
+      "M-CDS.TC27c",
+      "M-CDS.TC27e"
+     ],
+     "missingTerms": [
+      "Lương/giờ",
+      "đ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-CDS.A05.07",
      "name": "trang-thai",
      "label": "Trạng thái",
      "spec": "Với lịch chưa kết thúc, cho chọn `Đang đợi`, `Hoàn thành`, `Hủy bỏ`. Lịch `Hoàn thành` có flow `Mở lại` để trở về `Đang đợi`, đảo lương rồi mới cho sửa/hủy. `Đang đợi` giữ màu theo loại nguồn; hai trạng thái kết thúc kích hoạt nghiệp vụ tương ứng.",
@@ -892,7 +1015,7 @@
      "status": "chua-thay-tren-figma"
     },
     {
-     "id": "M-CDS.A05.07",
+     "id": "M-CDS.A05.08",
      "name": "huy",
      "label": "Hủy",
      "spec": "Nút đóng popup, nhãn tiếng Việt là `Hủy`; bỏ thay đổi chưa xác nhận. Không phải hành động Hủy bỏ lịch.",
@@ -934,7 +1057,7 @@
      "status": "khop"
     },
     {
-     "id": "M-CDS.A05.08",
+     "id": "M-CDS.A05.09",
      "name": "xac-nhan",
      "label": "Xác nhận",
      "spec": "Validate phiên bản, quyền, field, trùng lịch và trạng thái; chỉ cập nhật UI sau khi backend commit.",
@@ -947,6 +1070,9 @@
       "M-CDS.TC23",
       "M-CDS.TC24",
       "M-CDS.TC25",
+      "M-CDS.TC27b",
+      "M-CDS.TC27c",
+      "M-CDS.TC27d",
       "M-CDS.TC27"
      ],
      "missingTerms": [
@@ -2033,7 +2159,7 @@
    "items": [
     "M-CDS.A05.01",
     "M-CDS.A05.04",
-    "M-CDS.A05.06"
+    "M-CDS.A05.07"
    ]
   },
   {
@@ -2051,8 +2177,8 @@
    "exceptions": [],
    "flows": [],
    "items": [
-    "M-CDS.A05.06",
-    "M-CDS.A05.08"
+    "M-CDS.A05.07",
+    "M-CDS.A05.09"
    ]
   },
   {
@@ -2070,7 +2196,7 @@
    "exceptions": [],
    "flows": [],
    "items": [
-    "M-CDS.A05.08"
+    "M-CDS.A05.09"
    ]
   },
   {
@@ -2089,7 +2215,7 @@
    "flows": [],
    "items": [
     "M-CDS.A05.04",
-    "M-CDS.A05.08"
+    "M-CDS.A05.09"
    ]
   },
   {
@@ -2110,7 +2236,7 @@
    "flows": [],
    "items": [
     "M-CDS.A05.04",
-    "M-CDS.A05.08"
+    "M-CDS.A05.09"
    ]
   },
   {
@@ -2128,8 +2254,123 @@
    "exceptions": [],
    "flows": [],
    "items": [
+    "M-CDS.A05.07"
+   ]
+  },
+  {
+   "id": "M-CDS.TC27a",
+   "title": "Case 27a: Lương/giờ mặc định từ hồ sơ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A05",
+   "scenario": "REQ10 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ10",
+    "M-CDS.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
     "M-CDS.A05.06"
    ]
+  },
+  {
+   "id": "M-CDS.TC27b",
+   "title": "Case 27b: Chỉnh Lương/giờ riêng một buổi",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS.A05",
+   "scenario": "REQ10 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ10",
+    "M-CDS.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A05.04",
+    "M-CDS.A05.06",
+    "M-CDS.A05.09"
+   ]
+  },
+  {
+   "id": "M-CDS.TC27c",
+   "title": "Case 27c: Đổi giáo viên thì reset Lương/giờ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A05",
+   "scenario": "REQ10 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ10",
+    "M-CDS.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A05.04",
+    "M-CDS.A05.06",
+    "M-CDS.A05.09"
+   ]
+  },
+  {
+   "id": "M-CDS.TC27d",
+   "title": "Case 27d: Validation Lương/giờ buổi",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A05",
+   "scenario": "REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A05.09"
+   ]
+  },
+  {
+   "id": "M-CDS.TC27e",
+   "title": "Case 27e: Khóa Lương/giờ khi đã hoàn thành và Teacher chỉ xem",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-CDS.A05",
+   "scenario": "REQ02 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ02",
+    "M-CDS.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "M-CDS.A05.06"
+   ]
+  },
+  {
+   "id": "M-CDS.TC27f",
+   "title": "Case 27f: Tính tiền buổi khi hoàn thành",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-CDS.A05",
+   "scenario": "REQ06 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-CDS.REQ06",
+    "M-CDS.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
   },
   {
    "id": "M-CDS.TC27",
@@ -2150,8 +2391,8 @@
     "M-CDS.FLOW04"
    ],
    "items": [
-    "M-CDS.A05.06",
-    "M-CDS.A05.08"
+    "M-CDS.A05.07",
+    "M-CDS.A05.09"
    ]
   },
   {

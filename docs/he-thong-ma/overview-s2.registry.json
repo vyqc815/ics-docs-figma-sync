@@ -1,80 +1,87 @@
 {
  "cluster": "overview-s2",
  "title": "Tổng quan (S2)",
- "figmaPrefix": "CM-OS",
+ "figmaPrefix": "CM-OS2",
  "requirements": [
   {
-   "id": "CM-OS.REQ01",
+   "id": "CM-OS2.REQ01",
    "name": "Công thức Tổng thời gian (dòng)",
    "text": "Tổng thời gian (dòng) = Số buổi (dòng) × Thời gian học (dòng).",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.REQ02",
+   "id": "CM-OS2.REQ02",
    "name": "Công thức % (dòng)",
    "text": "% (dòng) = Tổng thời gian (dòng) ÷ Tổng thời gian (card tổng quan) × 100, làm tròn 2 chữ số thập phân. Tổng thời gian (card) = 0 thì % = 0%.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.REQ03",
+   "id": "CM-OS2.REQ03",
    "name": "Công thức Tổng thời gian (card)",
    "text": "Tổng thời gian (card tổng quan) = Số buổi (card) × Thời gian mỗi buổi (card).",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.REQ04",
+   "id": "CM-OS2.REQ04",
    "name": "Công thức Thời gian thực tế (card)",
    "text": "Thời gian thực tế (card) = tổng cột \"Tổng thời gian\" của toàn bộ các dòng trong bảng.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.REQ05",
+   "id": "CM-OS2.REQ05",
    "name": "Công thức Thời gian còn lại (card)",
    "text": "Thời gian còn lại (card) = Tổng thời gian (card) − Thời gian thực tế (card).",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.REQ06",
+   "id": "CM-OS2.REQ06",
    "name": "Nhập Số buổi / Thời gian mỗi buổi (card)",
    "text": "Do CD tự nhập tay, không tự động lấy từ nguồn dữ liệu khác, không giới hạn tối đa. Số buổi: số nguyên ≥ 0, mặc định 0, xoá trống thì về 0. Thời gian mỗi buổi: số nguyên dương, đơn vị phút, mặc định 90.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.REQ07",
+   "id": "CM-OS2.REQ07",
    "name": "Thêm nhanh bằng Tên + Enter",
    "text": "Chỉ cần nhập Tên và nhấn Enter là tạo được nội dung mới; các field khác để trống/mặc định, bổ sung sau. Tên bắt buộc, khi sửa để trống thì trả về tên cũ.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.REQ08",
+   "id": "CM-OS2.REQ08",
    "name": "Loại thao tác của nội dung",
    "text": "Mỗi nội dung có loại thao tác là Tự chọn hoặc Giảng dạy, đổi qua lại bằng icon cạnh nút xoá trong cột \"Thao tác\". Nội dung mới tạo mặc định là Giảng dạy.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.REQ09",
+   "id": "CM-OS2.REQ09",
    "name": "Màu Thời gian còn lại",
    "text": "Âm: màu đỏ (cảnh báo, không chặn thao tác); dương: màu xanh lá; bằng 0: màu đen mặc định.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.REQ10",
+   "id": "CM-OS2.REQ10",
    "name": "Xoá mềm nội dung",
    "text": "Xoá một nội dung buổi học là xoá mềm, có popup xác nhận trước khi xoá.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.REQ11",
+   "id": "CM-OS2.REQ12",
+   "name": "Loại và số cụm",
+   "text": "Mỗi dòng nội dung có đúng 1 Loại kiến thức / kỹ năng. Với từng loại: số cụm ở S1 / S6 = tổng Số buổi các dòng cùng loại; hệ thống tự tạo cụm rỗng `Chủ đề k` khi tăng, tự xoá cụm rỗng chưa liên kết khi giảm, chặn khi cụm bị bỏ còn mục hoặc còn liên kết bài học. CD không nhập Số cụm ở S1 / S6. Dòng chưa chọn Loại không tính vào số cụm.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-OS2.REQ11",
    "name": "Định dạng Thời gian học",
    "text": "Thời gian học lưu và hiển thị theo `HH:mm:ss`. Giá trị nhập có phút hoặc giây vượt 59 được tự quy đổi lên đơn vị lớn hơn (ví dụ `00:00:120` → `00:02:00`).",
    "source": "qc",
@@ -119,17 +126,16 @@
    ],
    "citedByRequirement": true,
    "regions": [
-    "CM-OS.A01",
-    "CM-OS.A02",
-    "CM-OS.A03",
-    "CM-OS.F01",
-    "CM-OS.F02"
+    "CM-OS2.A01",
+    "CM-OS2.A02",
+    "CM-OS2.A03",
+    "CM-OS2.F01"
    ]
   }
  },
  "regions": [
   {
-   "id": "CM-OS.A01",
+   "id": "CM-OS2.A01",
    "name": "trang-1-tong-quan-s2",
    "title": "Trang 1: Tổng quan (S2)",
    "screens": [
@@ -145,7 +151,7 @@
    "figmaDiffNotes": [],
    "items": [
     {
-     "id": "CM-OS.A01.01",
+     "id": "CM-OS2.A01.01",
      "name": "so-buoi",
      "label": "Số buổi",
      "spec": "Tổng số buổi học của khoá học | Ban đầu là **0**, do CD tự nhập tay; chỉ nhận số nguyên **≥ 0**, không giới hạn tối đa. Xoá trống ô thì giá trị về **0**",
@@ -180,18 +186,20 @@
      },
      "relations": [],
      "testcases": [
-      "CM-OS.TC02",
-      "CM-OS.TC04",
-      "CM-OS.TC07",
-      "CM-OS.TC11",
-      "CM-OS.TC12",
-      "CM-OS.TC17"
+      "CM-OS2.TC02",
+      "CM-OS2.TC04",
+      "CM-OS2.TC07",
+      "CM-OS2.TC11",
+      "CM-OS2.TC12",
+      "CM-OS2.TC19",
+      "CM-OS2.TC21",
+      "CM-OS2.TC17"
      ],
      "missingTerms": [],
      "status": "khop"
     },
     {
-     "id": "CM-OS.A01.02",
+     "id": "CM-OS2.A01.02",
      "name": "thoi-gian-moi-buoi",
      "label": "Thời gian mỗi buổi",
      "spec": "Thời lượng chuẩn của 1 buổi học, đơn vị **phút** | Ban đầu mặc định là **90** phút, CD có thể sửa tay (số phút); chỉ nhận số nguyên dương, không giới hạn tối đa",
@@ -226,14 +234,14 @@
      },
      "relations": [],
      "testcases": [
-      "CM-OS.TC02",
-      "CM-OS.TC12"
+      "CM-OS2.TC02",
+      "CM-OS2.TC12"
      ],
      "missingTerms": [],
      "status": "khop"
     },
     {
-     "id": "CM-OS.A01.03",
+     "id": "CM-OS2.A01.03",
      "name": "tong-thoi-gian",
      "label": "Tổng thời gian",
      "spec": "Tổng thời gian toàn khoá học | Tự tính = Số buổi × Thời gian mỗi buổi",
@@ -268,19 +276,19 @@
      },
      "relations": [],
      "testcases": [
-      "CM-OS.TC02",
-      "CM-OS.TC04",
-      "CM-OS.TC05",
-      "CM-OS.TC07",
-      "CM-OS.TC13",
-      "CM-OS.TC16",
-      "CM-OS.TC17"
+      "CM-OS2.TC02",
+      "CM-OS2.TC04",
+      "CM-OS2.TC05",
+      "CM-OS2.TC07",
+      "CM-OS2.TC13",
+      "CM-OS2.TC16",
+      "CM-OS2.TC17"
      ],
      "missingTerms": [],
      "status": "khop"
     },
     {
-     "id": "CM-OS.A01.04",
+     "id": "CM-OS2.A01.04",
      "name": "thoi-gian-thuc-te",
      "label": "Thời gian thực tế",
      "spec": "Tổng thời gian đã được phân bổ vào các nội dung bên dưới | Tự tính = tổng cột \"Tổng thời gian\" của bảng nội dung",
@@ -315,14 +323,14 @@
      },
      "relations": [],
      "testcases": [
-      "CM-OS.TC05",
-      "CM-OS.TC17"
+      "CM-OS2.TC05",
+      "CM-OS2.TC17"
      ],
      "missingTerms": [],
      "status": "khop"
     },
     {
-     "id": "CM-OS.A01.05",
+     "id": "CM-OS2.A01.05",
      "name": "thoi-gian-con-lai",
      "label": "Thời gian còn lại",
      "spec": "Phần thời gian chưa phân bổ | Tự tính = Tổng thời gian − Thời gian thực tế. Màu: **đỏ** khi âm, **xanh lá** khi dương, **đen** (màu mặc định) khi bằng 0",
@@ -357,10 +365,10 @@
      },
      "relations": [],
      "testcases": [
-      "CM-OS.TC05",
-      "CM-OS.TC07",
-      "CM-OS.TC11",
-      "CM-OS.TC17"
+      "CM-OS2.TC05",
+      "CM-OS2.TC07",
+      "CM-OS2.TC11",
+      "CM-OS2.TC17"
      ],
      "missingTerms": [],
      "status": "khop"
@@ -368,7 +376,7 @@
    ]
   },
   {
-   "id": "CM-OS.A02",
+   "id": "CM-OS2.A02",
    "name": "khu-vuc-bang-noi-dung-buoi-hoc",
    "title": "Khu vực: Bảng \"Nội dung buổi học\"",
    "screens": [
@@ -380,11 +388,11 @@
    "source": "tu-dien",
    "content": "qc",
    "requirement": "course_management/overview-s2/overview-s2.md",
-   "needsDesign": false,
+   "needsDesign": true,
    "figmaDiffNotes": [],
    "items": [
     {
-     "id": "CM-OS.A02.01",
+     "id": "CM-OS2.A02.01",
      "name": "id",
      "label": "ID",
      "spec": "❌ | Mã tự sinh, hiển thị dạng badge",
@@ -411,7 +419,7 @@
      "status": "khop"
     },
     {
-     "id": "CM-OS.A02.02",
+     "id": "CM-OS2.A02.02",
      "name": "ten",
      "label": "Tên",
      "spec": "✅ | Tên nội dung, hiển thị in đậm. Bắt buộc: để trống/chỉ khoảng trắng thì không lưu, trả về tên cũ",
@@ -438,7 +446,7 @@
      "status": "khop"
     },
     {
-     "id": "CM-OS.A02.03",
+     "id": "CM-OS2.A02.03",
      "name": "mo-ta",
      "label": "Mô tả",
      "spec": "✅ | Hiển thị placeholder xám \"Nhập mô tả nội dung bài học\" khi chưa có dữ liệu",
@@ -465,7 +473,48 @@
      "status": "khop"
     },
     {
-     "id": "CM-OS.A02.04",
+     "id": "CM-OS2.A02.04",
+     "name": "loai",
+     "label": "Loại",
+     "spec": "✅ | Dropdown chọn **đúng 1 loại** kiến thức / kỹ năng: `Từ vựng`, `Ngữ pháp`, `Mẫu câu`, `Hanzi`, `Kanji`, `Phát âm`, `Bảng chữ` (chỉ trung tâm có hệ chữ riêng), `Nghe`, `Đọc`, `Viết`, `Nói`. Mặc định trống, hiển thị placeholder `Chọn loại`; bắt buộc để dòng được tính vào số cụm (REQ12). **UI cần bổ sung**",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-020100": [
+       {
+        "term": "Từ vựng",
+        "figmaId": "1448:6918",
+        "layer": "TỪ VỰNG",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "CM-OS2.REQ12",
+       "raw": "REQ12"
+      }
+     ],
+     "testcases": [
+      "CM-OS2.TC06",
+      "CM-OS2.TC15",
+      "CM-OS2.TC18",
+      "CM-OS2.TC22",
+      "CM-OS2.TC23"
+     ],
+     "missingTerms": [
+      "Loại"
+     ],
+     "status": "req-ghi-thieu-nhung-figma-co"
+    },
+    {
+     "id": "CM-OS2.A02.05",
      "name": "so-buoi",
      "label": "Số buổi",
      "spec": "✅ | Hiển thị dạng badge số. Chỉ nhận số nguyên **≥ 0**; mặc định **0**, xoá trống ô thì giá trị về **0**",
@@ -500,18 +549,20 @@
      },
      "relations": [],
      "testcases": [
-      "CM-OS.TC02",
-      "CM-OS.TC04",
-      "CM-OS.TC07",
-      "CM-OS.TC11",
-      "CM-OS.TC12",
-      "CM-OS.TC17"
+      "CM-OS2.TC02",
+      "CM-OS2.TC04",
+      "CM-OS2.TC07",
+      "CM-OS2.TC11",
+      "CM-OS2.TC12",
+      "CM-OS2.TC19",
+      "CM-OS2.TC21",
+      "CM-OS2.TC17"
      ],
      "missingTerms": [],
      "status": "khop"
     },
     {
-     "id": "CM-OS.A02.05",
+     "id": "CM-OS2.A02.06",
      "name": "thoi-gian-hoc",
      "label": "Thời gian học",
      "spec": "✅ | Badge định dạng giờ:phút:giây; là thời lượng của riêng nội dung đó trong 1 buổi, khác với \"Thời gian mỗi buổi\" ở card tổng quan. Nhập phút hoặc giây vượt 59 thì hệ thống tự quy đổi cho đúng (ví dụ `00:00:120` → `00:02:00`, `1:70:00` → `02:10:00`)",
@@ -534,10 +585,10 @@
      },
      "relations": [],
      "testcases": [
-      "CM-OS.TC04",
-      "CM-OS.TC07",
-      "CM-OS.TC11",
-      "CM-OS.TC16"
+      "CM-OS2.TC04",
+      "CM-OS2.TC07",
+      "CM-OS2.TC11",
+      "CM-OS2.TC16"
      ],
      "missingTerms": [
       "00:00:120"
@@ -545,7 +596,7 @@
      "status": "khop"
     },
     {
-     "id": "CM-OS.A02.06",
+     "id": "CM-OS2.A02.07",
      "name": "tong-thoi-gian",
      "label": "Tổng thời gian",
      "spec": "❌ | Tự tính = Số buổi × Thời gian học",
@@ -580,19 +631,19 @@
      },
      "relations": [],
      "testcases": [
-      "CM-OS.TC02",
-      "CM-OS.TC04",
-      "CM-OS.TC05",
-      "CM-OS.TC07",
-      "CM-OS.TC13",
-      "CM-OS.TC16",
-      "CM-OS.TC17"
+      "CM-OS2.TC02",
+      "CM-OS2.TC04",
+      "CM-OS2.TC05",
+      "CM-OS2.TC07",
+      "CM-OS2.TC13",
+      "CM-OS2.TC16",
+      "CM-OS2.TC17"
      ],
      "missingTerms": [],
      "status": "khop"
     },
     {
-     "id": "CM-OS.A02.07",
+     "id": "CM-OS2.A02.08",
      "name": "",
      "label": "%",
      "spec": "❌ | Tự tính = Tổng thời gian dòng ÷ Tổng thời gian (card) × 100, làm tròn 2 chữ số thập phân. Tổng thời gian (card) = 0 thì hiển thị `0%`",
@@ -608,7 +659,7 @@
      "status": "chua-thay-tren-figma"
     },
     {
-     "id": "CM-OS.A02.08",
+     "id": "CM-OS2.A02.09",
      "name": "thao-tac",
      "label": "Thao tác",
      "spec": "— | Gồm icon chuyển loại thao tác (Tự chọn/Giảng dạy) và icon thùng rác để xoá. Nội dung mới tạo mặc định là **Giảng dạy**",
@@ -631,47 +682,16 @@
      },
      "relations": [],
      "testcases": [
-      "CM-OS.TC06",
-      "CM-OS.TC07",
-      "CM-OS.TC10",
-      "CM-OS.TC15"
+      "CM-OS2.TC06",
+      "CM-OS2.TC07",
+      "CM-OS2.TC10",
+      "CM-OS2.TC15"
      ],
      "missingTerms": [],
      "status": "khop"
-    }
-   ]
-  },
-  {
-   "id": "CM-OS.A03",
-   "name": "khu-vuc-them-noi-dung-buoi-hoc-moi",
-   "title": "Khu vực: Thêm nội dung buổi học mới",
-   "screens": [
-    "cd-kh-020100"
-   ],
-   "screensGuessed": [
-    "CD-KH-020100"
-   ],
-   "source": "tu-dien",
-   "content": "qc",
-   "requirement": "course_management/overview-s2/overview-s2.md",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": []
-  },
-  {
-   "id": "CM-OS.F01",
-   "name": "row",
-   "title": "Row",
-   "screens": [
-    "cd-kh-020100"
-   ],
-   "source": "tu-dien",
-   "content": "figma",
-   "needsDesign": false,
-   "figmaDiffNotes": [],
-   "items": [
+    },
     {
-     "id": "CM-OS.F01.01",
+     "id": "CM-OS2.A02.10",
      "name": "atom-id-badge",
      "label": "Atom/ID Badge",
      "spec": "",
@@ -702,7 +722,7 @@
      }
     },
     {
-     "id": "CM-OS.F01.02",
+     "id": "CM-OS2.A02.11",
      "name": "atom-number-badge",
      "label": "Atom/Number Badge",
      "spec": "",
@@ -736,7 +756,24 @@
    ]
   },
   {
-   "id": "CM-OS.F02",
+   "id": "CM-OS2.A03",
+   "name": "khu-vuc-them-noi-dung-buoi-hoc-moi",
+   "title": "Khu vực: Thêm nội dung buổi học mới",
+   "screens": [
+    "cd-kh-020100"
+   ],
+   "screensGuessed": [
+    "CD-KH-020100"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "course_management/overview-s2/overview-s2.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "CM-OS2.F01",
    "name": "ngoai-body",
    "title": "(ngoài Body)",
    "screens": [
@@ -748,7 +785,7 @@
    "figmaDiffNotes": [],
    "items": [
     {
-     "id": "CM-OS.F02.01",
+     "id": "CM-OS2.F01.01",
      "name": "add-new-bar-them-noi-dung-khoa-hoc-moi",
      "label": "Add New Bar · Thêm nội dung khoá học mới",
      "spec": "",
@@ -782,7 +819,7 @@
      }
     },
     {
-     "id": "CM-OS.F02.02",
+     "id": "CM-OS2.F01.02",
      "name": "sidebar-menu-cd",
      "label": "Sidebar · MENU - CD",
      "spec": "",
@@ -811,7 +848,7 @@
      }
     },
     {
-     "id": "CM-OS.F02.03",
+     "id": "CM-OS2.F01.03",
      "name": "account",
      "label": "ACCOUNT",
      "spec": "",
@@ -842,7 +879,7 @@
      }
     },
     {
-     "id": "CM-OS.F02.04",
+     "id": "CM-OS2.F01.04",
      "name": "component-2",
      "label": "Component 2",
      "spec": "",
@@ -875,25 +912,37 @@
  ],
  "exceptions": [
   {
-   "id": "CM-OS.EX01",
+   "id": "CM-OS2.EX01",
    "text": "Tổng thời gian các nội dung trong bảng vượt quá \"Tổng thời gian\" ở card tổng quan (khiến \"Thời gian còn lại\" âm) → card \"Thời gian còn lại\" hiển thị giá trị âm màu **đỏ** để cảnh báo CD (không chặn thao tác).",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.EX02",
+   "id": "CM-OS2.EX02",
    "text": "Nhập Số buổi (card hoặc dòng) là số âm, số thập phân hoặc chữ → không lưu, giữ giá trị cũ; xoá trống ô Số buổi → giá trị về `0`. Nhập Thời gian mỗi buổi không phải số nguyên dương (0, số âm, số thập phân, chữ, để trống) → không lưu, giữ giá trị cũ.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.EX03",
+   "id": "CM-OS2.EX03",
    "text": "Tên nội dung để trống hoặc chỉ khoảng trắng: khi thêm mới thì không tạo; khi sửa thì không lưu, trả về tên cũ.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-OS.EX04",
+   "id": "CM-OS2.EX05",
+   "text": "Giảm Số buổi, đổi Loại hoặc xoá dòng làm số cụm của loại phải giảm, nhưng cụm sẽ bị bỏ còn mục hoặc còn liên kết bài học → BE từ chối, giữ giá trị cũ, Toast `Cảnh Báo` `Cụm <tên> của <loại> còn dữ liệu, dọn cụm ở S1 / S6 trước.`",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-OS2.EX06",
+   "text": "Chọn Loại `Bảng chữ` ở trung tâm không có hệ chữ riêng (qua request) → BE từ chối.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-OS2.EX04",
    "text": "Thời gian học nhập phút hoặc giây vượt 59 (ví dụ `00:00:120`, `1:70:00`) → hệ thống tự quy đổi phần vượt lên đơn vị lớn hơn cho đúng (`00:02:00`, `02:10:00`), rồi lưu và tính lại.",
    "source": "qc",
    "content": "qc"
@@ -901,43 +950,50 @@
  ],
  "flows": [
   {
-   "id": "CM-OS.FLOW01",
+   "id": "CM-OS2.FLOW01",
    "name": "Nhập Số buổi / Thời gian mỗi buổi ở card tổng quan",
    "source": "qc",
    "content": "qc",
    "requirements": []
   },
   {
-   "id": "CM-OS.FLOW02",
+   "id": "CM-OS2.FLOW02",
    "name": "Thêm nhanh nội dung buổi học mới",
    "source": "qc",
    "content": "qc",
    "requirements": []
   },
   {
-   "id": "CM-OS.FLOW03",
+   "id": "CM-OS2.FLOW03",
    "name": "Chỉnh sửa thông tin một nội dung",
    "source": "qc",
    "content": "qc",
    "requirements": []
   },
   {
-   "id": "CM-OS.FLOW04",
+   "id": "CM-OS2.FLOW04",
    "name": "Đổi loại thao tác (Tự chọn / Giảng dạy)",
    "source": "qc",
    "content": "qc",
    "requirements": []
   },
   {
-   "id": "CM-OS.FLOW05",
+   "id": "CM-OS2.FLOW05",
    "name": "Tự động tính toán",
    "source": "qc",
    "content": "qc",
    "requirements": []
   },
   {
-   "id": "CM-OS.FLOW06",
+   "id": "CM-OS2.FLOW06",
    "name": "Xoá một nội dung",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-OS2.FLOW07",
+   "name": "Đồng bộ số cụm ở S1 / S6 theo Loại và Số buổi",
    "source": "qc",
    "content": "qc",
    "requirements": []
@@ -945,7 +1001,7 @@
  ],
  "testcases": [
   {
-   "id": "CM-OS.TC01",
+   "id": "CM-OS2.TC01",
    "title": "Case 1: Xem tổng quan",
    "priority": "High",
    "smoke": true,
@@ -959,7 +1015,7 @@
    "items": []
   },
   {
-   "id": "CM-OS.TC02",
+   "id": "CM-OS2.TC02",
    "title": "Case 2: Giá trị mặc định và nhập Số buổi / Thời gian mỗi buổi lần đầu",
    "priority": "High",
    "smoke": false,
@@ -968,22 +1024,22 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ06"
+    "CM-OS2.REQ06"
    ],
    "exceptions": [],
    "flows": [
-    "CM-OS.FLOW01"
+    "CM-OS2.FLOW01"
    ],
    "items": [
-    "CM-OS.A01.01",
-    "CM-OS.A01.02",
-    "CM-OS.A01.03",
-    "CM-OS.A02.04",
-    "CM-OS.A02.06"
+    "CM-OS2.A01.01",
+    "CM-OS2.A01.02",
+    "CM-OS2.A01.03",
+    "CM-OS2.A02.05",
+    "CM-OS2.A02.07"
    ]
   },
   {
-   "id": "CM-OS.TC03",
+   "id": "CM-OS2.TC03",
    "title": "Case 3: Thêm nhanh nội dung mới",
    "priority": "High",
    "smoke": true,
@@ -992,16 +1048,16 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ07"
+    "CM-OS2.REQ07"
    ],
    "exceptions": [],
    "flows": [
-    "CM-OS.FLOW02"
+    "CM-OS2.FLOW02"
    ],
    "items": []
   },
   {
-   "id": "CM-OS.TC04",
+   "id": "CM-OS2.TC04",
    "title": "Case 4: Sửa Số buổi/Thời gian học → tự tính Tổng thời gian và %",
    "priority": "High",
    "smoke": false,
@@ -1010,23 +1066,23 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ01",
-    "CM-OS.REQ02"
+    "CM-OS2.REQ01",
+    "CM-OS2.REQ02"
    ],
    "exceptions": [],
    "flows": [
-    "CM-OS.FLOW05"
+    "CM-OS2.FLOW05"
    ],
    "items": [
-    "CM-OS.A01.01",
-    "CM-OS.A01.03",
-    "CM-OS.A02.04",
-    "CM-OS.A02.05",
-    "CM-OS.A02.06"
+    "CM-OS2.A01.01",
+    "CM-OS2.A01.03",
+    "CM-OS2.A02.05",
+    "CM-OS2.A02.06",
+    "CM-OS2.A02.07"
    ]
   },
   {
-   "id": "CM-OS.TC05",
+   "id": "CM-OS2.TC05",
    "title": "Case 5: Tự động cập nhật Thời gian thực tế và Thời gian còn lại",
    "priority": "High",
    "smoke": false,
@@ -1035,22 +1091,22 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ04",
-    "CM-OS.REQ05"
+    "CM-OS2.REQ04",
+    "CM-OS2.REQ05"
    ],
    "exceptions": [],
    "flows": [
-    "CM-OS.FLOW05"
+    "CM-OS2.FLOW05"
    ],
    "items": [
-    "CM-OS.A01.03",
-    "CM-OS.A01.04",
-    "CM-OS.A01.05",
-    "CM-OS.A02.06"
+    "CM-OS2.A01.03",
+    "CM-OS2.A01.04",
+    "CM-OS2.A01.05",
+    "CM-OS2.A02.07"
    ]
   },
   {
-   "id": "CM-OS.TC06",
+   "id": "CM-OS2.TC06",
    "title": "Case 6: Đổi loại thao tác Tự chọn/Giảng dạy",
    "priority": "Medium",
    "smoke": false,
@@ -1059,18 +1115,19 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ08"
+    "CM-OS2.REQ08"
    ],
    "exceptions": [],
    "flows": [
-    "CM-OS.FLOW04"
+    "CM-OS2.FLOW04"
    ],
    "items": [
-    "CM-OS.A02.08"
+    "CM-OS2.A02.04",
+    "CM-OS2.A02.09"
    ]
   },
   {
-   "id": "CM-OS.TC07",
+   "id": "CM-OS2.TC07",
    "title": "Case 7: Thời gian còn lại bị âm",
    "priority": "Medium",
    "smoke": false,
@@ -1079,24 +1136,24 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ09"
+    "CM-OS2.REQ09"
    ],
    "exceptions": [
-    "CM-OS.EX01"
+    "CM-OS2.EX01"
    ],
    "flows": [],
    "items": [
-    "CM-OS.A01.01",
-    "CM-OS.A01.03",
-    "CM-OS.A01.05",
-    "CM-OS.A02.04",
-    "CM-OS.A02.05",
-    "CM-OS.A02.06",
-    "CM-OS.A02.08"
+    "CM-OS2.A01.01",
+    "CM-OS2.A01.03",
+    "CM-OS2.A01.05",
+    "CM-OS2.A02.05",
+    "CM-OS2.A02.06",
+    "CM-OS2.A02.07",
+    "CM-OS2.A02.09"
    ]
   },
   {
-   "id": "CM-OS.TC08",
+   "id": "CM-OS2.TC08",
    "title": "Case 8: Xoá một nội dung",
    "priority": "High",
    "smoke": false,
@@ -1105,16 +1162,16 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ10"
+    "CM-OS2.REQ10"
    ],
    "exceptions": [],
    "flows": [
-    "CM-OS.FLOW06"
+    "CM-OS2.FLOW06"
    ],
    "items": []
   },
   {
-   "id": "CM-OS.TC09",
+   "id": "CM-OS2.TC09",
    "title": "Case 9: Huỷ xoá nội dung",
    "priority": "Medium",
    "smoke": false,
@@ -1125,12 +1182,12 @@
    "requirements": [],
    "exceptions": [],
    "flows": [
-    "CM-OS.FLOW06"
+    "CM-OS2.FLOW06"
    ],
    "items": []
   },
   {
-   "id": "CM-OS.TC10",
+   "id": "CM-OS2.TC10",
    "title": "Case 10: Kiểm tra quyền truy cập",
    "priority": "High",
    "smoke": false,
@@ -1142,11 +1199,11 @@
    "exceptions": [],
    "flows": [],
    "items": [
-    "CM-OS.A02.08"
+    "CM-OS2.A02.09"
    ]
   },
   {
-   "id": "CM-OS.TC11",
+   "id": "CM-OS2.TC11",
    "title": "Case 11: Màu Thời gian còn lại dương / bằng 0",
    "priority": "Medium",
    "smoke": false,
@@ -1155,19 +1212,19 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ09"
+    "CM-OS2.REQ09"
    ],
    "exceptions": [],
    "flows": [],
    "items": [
-    "CM-OS.A01.01",
-    "CM-OS.A01.05",
-    "CM-OS.A02.04",
-    "CM-OS.A02.05"
+    "CM-OS2.A01.01",
+    "CM-OS2.A01.05",
+    "CM-OS2.A02.05",
+    "CM-OS2.A02.06"
    ]
   },
   {
-   "id": "CM-OS.TC12",
+   "id": "CM-OS2.TC12",
    "title": "Case 12: Ràng buộc nhập Số buổi / Thời gian mỗi buổi",
    "priority": "Medium",
    "smoke": false,
@@ -1176,20 +1233,20 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ06"
+    "CM-OS2.REQ06"
    ],
    "exceptions": [
-    "CM-OS.EX02"
+    "CM-OS2.EX02"
    ],
    "flows": [],
    "items": [
-    "CM-OS.A01.01",
-    "CM-OS.A01.02",
-    "CM-OS.A02.04"
+    "CM-OS2.A01.01",
+    "CM-OS2.A01.02",
+    "CM-OS2.A02.05"
    ]
   },
   {
-   "id": "CM-OS.TC13",
+   "id": "CM-OS2.TC13",
    "title": "Case 13: % làm tròn 2 chữ số và bằng 0% khi Tổng = 0",
    "priority": "Medium",
    "smoke": false,
@@ -1198,17 +1255,17 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ02"
+    "CM-OS2.REQ02"
    ],
    "exceptions": [],
    "flows": [],
    "items": [
-    "CM-OS.A01.03",
-    "CM-OS.A02.06"
+    "CM-OS2.A01.03",
+    "CM-OS2.A02.07"
    ]
   },
   {
-   "id": "CM-OS.TC14",
+   "id": "CM-OS2.TC14",
    "title": "Case 14: Tên nội dung để trống",
    "priority": "High",
    "smoke": false,
@@ -1217,16 +1274,16 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ07"
+    "CM-OS2.REQ07"
    ],
    "exceptions": [
-    "CM-OS.EX03"
+    "CM-OS2.EX03"
    ],
    "flows": [],
    "items": []
   },
   {
-   "id": "CM-OS.TC15",
+   "id": "CM-OS2.TC15",
    "title": "Case 15: Loại thao tác mặc định",
    "priority": "Low",
    "smoke": false,
@@ -1235,16 +1292,17 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ08"
+    "CM-OS2.REQ08"
    ],
    "exceptions": [],
    "flows": [],
    "items": [
-    "CM-OS.A02.08"
+    "CM-OS2.A02.04",
+    "CM-OS2.A02.09"
    ]
   },
   {
-   "id": "CM-OS.TC16",
+   "id": "CM-OS2.TC16",
    "title": "Case 16: Thời gian học nhập vượt 59 tự quy đổi",
    "priority": "Medium",
    "smoke": false,
@@ -1253,20 +1311,138 @@
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "CM-OS.REQ11"
+    "CM-OS2.REQ11"
    ],
    "exceptions": [
-    "CM-OS.EX04"
+    "CM-OS2.EX04"
    ],
    "flows": [],
    "items": [
-    "CM-OS.A01.03",
-    "CM-OS.A02.05",
-    "CM-OS.A02.06"
+    "CM-OS2.A01.03",
+    "CM-OS2.A02.06",
+    "CM-OS2.A02.07"
    ]
   },
   {
-   "id": "CM-OS.TC17",
+   "id": "CM-OS2.TC18",
+   "title": "Case 18: Chọn Loại sinh cụm ở S1",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 7 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-OS2.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-OS2.FLOW07"
+   ],
+   "items": [
+    "CM-OS2.A02.04"
+   ]
+  },
+  {
+   "id": "CM-OS2.TC19",
+   "title": "Case 19: Hai dòng cùng loại cộng dồn",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 7 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-OS2.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-OS2.FLOW07"
+   ],
+   "items": [
+    "CM-OS2.A01.01",
+    "CM-OS2.A02.05"
+   ]
+  },
+  {
+   "id": "CM-OS2.TC20",
+   "title": "Case 20: Giảm buổi khi cụm cuối rỗng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 7 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-OS2.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-OS2.FLOW07"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-OS2.TC21",
+   "title": "Case 21: Giảm buổi bị chặn",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX05 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-OS2.REQ12"
+   ],
+   "exceptions": [
+    "CM-OS2.EX05"
+   ],
+   "flows": [],
+   "items": [
+    "CM-OS2.A01.01",
+    "CM-OS2.A02.05"
+   ]
+  },
+  {
+   "id": "CM-OS2.TC22",
+   "title": "Case 22: Đổi Loại của dòng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 7 / REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-OS2.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-OS2.FLOW07"
+   ],
+   "items": [
+    "CM-OS2.A02.04"
+   ]
+  },
+  {
+   "id": "CM-OS2.TC23",
+   "title": "Case 23: Dòng chưa chọn Loại",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ12",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-OS2.REQ12"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-OS2.A02.04"
+   ]
+  },
+  {
+   "id": "CM-OS2.TC17",
    "title": "Case 17: Số buổi của dòng xoá trống về 0",
    "priority": "Low",
    "smoke": false,
@@ -1276,40 +1452,45 @@
    "content": "qc",
    "requirements": [],
    "exceptions": [
-    "CM-OS.EX02"
+    "CM-OS2.EX02"
    ],
    "flows": [],
    "items": [
-    "CM-OS.A01.01",
-    "CM-OS.A01.03",
-    "CM-OS.A01.04",
-    "CM-OS.A01.05",
-    "CM-OS.A02.04",
-    "CM-OS.A02.06"
+    "CM-OS2.A01.01",
+    "CM-OS2.A01.03",
+    "CM-OS2.A01.04",
+    "CM-OS2.A01.05",
+    "CM-OS2.A02.05",
+    "CM-OS2.A02.07"
    ]
   }
  ],
  "issues": [
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-OS.TC01",
+   "ref": "CM-OS2.TC01",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-OS.TC10",
+   "ref": "CM-OS2.TC10",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-OS.REQ03",
+   "ref": "CM-OS2.REQ03",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-OS2.EX06",
    "text": "chưa có testcase ghi mã này"
   }
  ],
  "requirementFiles": [
   {
    "file": "course_management/overview-s2/overview-s2.md",
-   "prefix": "CM-OS",
+   "prefix": "CM-OS2",
    "title": "Tổng quan (S2)"
   }
  ]

@@ -119,9 +119,10 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Lịch dạy*
 - `A05.03` **Giờ bắt đầu**: Giờ bắt đầu của buổi; phải kết hợp với Thời gian học để tính giờ kết thúc và kiểm tra trùng.
 - `A05.04` **Giáo viên**: Chọn trong các giáo viên hợp lệ đã được thêm vào lớp. Khi đổi phải kiểm tra lịch giáo viên trên tất cả lớp.
 - `A05.05` **Thời gian học**: Chọn thời lượng từ cấu hình cho phép, ví dụ `90 phút`; `Giờ kết thúc = Giờ bắt đầu + Thời gian học`. Không cho thời lượng bằng 0 hoặc âm.
-- `A05.06` **Trạng thái**: Với lịch chưa kết thúc, cho chọn `Đang đợi`, `Hoàn thành`, `Hủy bỏ`. Lịch `Hoàn thành` có flow `Mở lại` để trở về `Đang đợi`, đảo lương rồi mới cho sửa/hủy. `Đang đợi` giữ màu theo loại nguồn; hai trạng thái kết thúc kích hoạt nghiệp vụ tương ứng.
-- `A05.07` **Hủy**: Nút đóng popup, nhãn tiếng Việt là `Hủy`; bỏ thay đổi chưa xác nhận. Không phải hành động Hủy bỏ lịch.
-- `A05.08` **Xác nhận**: Validate phiên bản, quyền, field, trùng lịch và trạng thái; chỉ cập nhật UI sau khi backend commit.
+- `A05.06` **Lương/giờ**: Lương/giờ của giáo viên cho **riêng buổi này**, VNĐ/giờ, số nguyên **lớn hơn 0**, hiển thị phân tách hàng nghìn kèm `đ`. Mặc định lấy `Lương/giờ` trong hồ sơ giáo viên của buổi. Role CRUD sửa được khi lịch chưa hoàn thành/hủy; Teacher chỉ xem. Bên dưới hiển thị `Tiền buổi dự kiến = Lương/giờ × Thời gian học` (vd `200.000 đ × 1,5 giờ = 300.000 đ`).
+- `A05.07` **Trạng thái**: Với lịch chưa kết thúc, cho chọn `Đang đợi`, `Hoàn thành`, `Hủy bỏ`. Lịch `Hoàn thành` có flow `Mở lại` để trở về `Đang đợi`, đảo lương rồi mới cho sửa/hủy. `Đang đợi` giữ màu theo loại nguồn; hai trạng thái kết thúc kích hoạt nghiệp vụ tương ứng.
+- `A05.08` **Hủy**: Nút đóng popup, nhãn tiếng Việt là `Hủy`; bỏ thay đổi chưa xác nhận. Không phải hành động Hủy bỏ lịch.
+- `A05.09` **Xác nhận**: Validate phiên bản, quyền, field, trùng lịch và trạng thái; chỉ cập nhật UI sau khi backend commit.
 
 **Điểm cần lưu ý:**
 
@@ -130,7 +131,16 @@ Requirement này đặc tả màn **Chi tiết lớp học → Tab Lịch dạy*
 - Chỉnh một buổi cố định chỉ tạo override cho occurrence đó, không âm thầm sửa toàn bộ khung lặp phía trên. Nguồn lịch vẫn là `Cố định` để audit; các lần tái sinh sau không được ghi đè occurrence đã override.
 - Chuyển `Đang đợi → Hoàn thành` phải tạo lương đúng một lần trong cùng giao dịch. Chuyển `Đang đợi → Hủy bỏ` phải loại buổi khỏi N, sinh bù và cập nhật ngày kết thúc trong cùng giao dịch.
 - Lịch `Hủy bỏ` mở ở chế độ chỉ xem. Lịch `Hoàn thành` hiển thị dữ liệu khóa và hành động `Mở lại` cho Admin/Class Handler/Support; chỉ sau khi mở lại và đảo lương thành công mới cho sửa field hoặc hủy lịch.
-- Teacher xem được toàn bộ field của lịch trong phạm vi nhưng các control là read-only; không gửi request cập nhật.
+- Teacher xem được toàn bộ field của lịch trong phạm vi (kể cả `Lương/giờ`) nhưng các control là read-only; không gửi request cập nhật.
+
+**Quy tắc Lương/giờ của buổi:**
+
+- Không còn lương theo lớp. Buổi chưa chỉnh riêng dùng `Lương/giờ` hiện hành trong hồ sơ giáo viên của buổi; đổi hồ sơ thì các buổi này đổi theo.
+- Sửa `Lương/giờ` trong popup chỉ tạo mức riêng cho đúng `schedule_id` đó; không đổi hồ sơ giáo viên, không đổi buổi khác. Buổi đã chỉnh riêng không bị thay đổi khi hồ sơ đổi.
+- Đổi `Giáo viên` của buổi thì `Lương/giờ` reset về mức trong hồ sơ của giáo viên mới (bỏ mức riêng cũ); người dùng vẫn có thể chỉnh lại trước khi Xác nhận.
+- Đổi `Thời gian học` thì tiền buổi dự kiến tính lại theo thời lượng mới.
+- Lịch `Hoàn thành` hoặc `Hủy bỏ` khóa `Lương/giờ`. Muốn sửa lương buổi đã hoàn thành phải đi qua flow `Mở lại` (đảo lương) rồi hoàn thành lại.
+- Lưu audit `Lương/giờ` trước/sau, người và thời điểm sửa.
 - Không dùng hover làm thao tác xóa trực tiếp. Hover chỉ được hiển thị tooltip/trạng thái hoặc affordance mở chi tiết; mọi cập nhật thực hiện trong popup.
 
 ### Trang 6: Hoàn thành và hủy lịch
@@ -235,9 +245,10 @@ Bấm + tại ngày hoặc chọn tab Lịch Linh Hoạt
 ```text
 Bấm thẻ lịch → tải popup theo schedule_id
       → Teacher: chỉ xem
-      → Role CRUD: sửa field hoặc chọn trạng thái
+      → Role CRUD: sửa field (kể cả Lương/giờ của buổi) hoặc chọn trạng thái
+      → Đổi giáo viên: Lương/giờ reset theo hồ sơ giáo viên mới
       → Backend kiểm tra version, quyền, trùng lịch và giáo viên
-      → Nếu Hoàn thành: cập nhật trạng thái + tạo khoản lương duy nhất gắn schedule_id
+      → Nếu Hoàn thành: cập nhật trạng thái + tạo khoản lương duy nhất gắn schedule_id, tiền = Lương/giờ của buổi × thời lượng (giờ), chốt tại thời điểm này
       → Commit cùng giao dịch → cập nhật thẻ và Toast
 ```
 
@@ -292,8 +303,9 @@ Role CRUD mở lịch Hoàn thành → chọn Mở lại
 | REQ07 | Hủy và bù | Lịch hủy bị trừ khỏi N, không tính lương và tạo đúng một lịch bù ở cuối theo khung cố định; tự tăng ngày kết thúc dự kiến. |
 | REQ08 | Audit/an toàn | Lưu người, thời điểm máy chủ, giá trị trước/sau, nguồn lịch, trạng thái và liên kết lịch bù; không tin role, class_id, teacher_id hoặc trạng thái do client tự khai. |
 | REQ09 | Toast | Mọi CRUD có phản hồi đúng loại; chỉ thành công sau khi toàn bộ giao dịch liên quan đã hoàn tất. |
-| REQ10 | Popup thẻ lịch | Bấm thẻ mở đúng schedule_id với Ngày, Giờ bắt đầu, Giáo viên, Thời gian học và Trạng thái. Role CRUD được sửa lịch Đang đợi; Teacher chỉ xem. Nút Hủy chỉ đóng form; trạng thái Hủy bỏ mới kích hoạt sinh bù. |
+| REQ10 | Popup thẻ lịch | Bấm thẻ mở đúng schedule_id với Ngày, Giờ bắt đầu, Giáo viên, Thời gian học, Lương/giờ và Trạng thái. Role CRUD được sửa lịch Đang đợi; Teacher chỉ xem. Nút Hủy chỉ đóng form; trạng thái Hủy bỏ mới kích hoạt sinh bù. |
 | REQ11 | Mở lại lịch hoàn thành | Admin/Class Handler/Support được mở lại lịch Hoàn thành khi nhập lý do. Hệ thống không xóa lương gốc mà tạo bút toán đảo/điều chỉnh, đưa lịch về Đang đợi rồi mới cho sửa/hủy. Hoàn thành lại tạo lần lương mới và chỉ một khoản lương có hiệu lực. |
+| REQ12 | Lương/giờ của buổi | Mỗi lịch có `Lương/giờ`, mặc định theo hồ sơ giáo viên của buổi; Role CRUD chỉnh riêng được cho từng buổi chưa hoàn thành/hủy, Teacher chỉ xem. Đổi giáo viên reset theo hồ sơ giáo viên mới. Tiền buổi = Lương/giờ × thời lượng (giờ), chốt khi Hoàn thành; đổi hồ sơ không hồi tố buổi đã hoàn thành và không ghi đè buổi đã chỉnh riêng. Không còn lương theo lớp. |
 
 ### 2.4. Ràng buộc
 
@@ -301,13 +313,13 @@ Role CRUD mở lịch Hoàn thành → chọn Mở lại
 
 **Quyền tại tab Lịch dạy**
 
-| Role | Xem lịch | Tạo cố định/linh hoạt | Sửa lịch | Hoàn thành | Hủy bỏ | Mở lại hoàn thành |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Admin | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Class Handler | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Support | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Teacher được phân công | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| Role khác | Theo permission/phạm vi | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Role | Xem lịch | Tạo cố định/linh hoạt | Sửa lịch | Sửa Lương/giờ buổi | Hoàn thành | Hủy bỏ | Mở lại hoàn thành |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Admin | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Class Handler | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Support | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Teacher được phân công | ✅ | ❌ | ❌ | ❌ (chỉ xem) | ❌ | ❌ | ❌ |
+| Role khác | Theo permission/phạm vi | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 - Teacher không hoàn thành lịch tại tab; lịch được hoàn thành gián tiếp khi giáo viên bấm `Hoàn thành buổi học` ở menu Bài học (lịch đã chọn lúc bắt đầu buổi).
 
@@ -323,7 +335,8 @@ Role CRUD mở lịch Hoàn thành → chọn Mở lại
 #### Lương giáo viên
 
 - Chỉ lịch `Hoàn thành` mới phát sinh lương.
-- Khoản lương gắn `schedule_id`, `teacher_id`, `class_id`, thời điểm hoàn thành và rule lương áp dụng; cách tính số tiền dẫn chiếu requirement lương giáo viên.
+- Khoản lương gắn `schedule_id`, `teacher_id`, `class_id`, thời điểm hoàn thành, `Lương/giờ` áp dụng và thời lượng buổi.
+- **Số tiền = `Lương/giờ` của buổi × thời lượng buổi (giờ)**, ví dụ `200.000 đ/giờ × 90 phút = 300.000 đ`. `Lương/giờ` của buổi là mức chỉnh riêng nếu có, nếu không là mức trong hồ sơ giáo viên tại thời điểm hoàn thành. Số tiền được chốt khi hoàn thành; đổi hồ sơ sau đó không hồi tố.
 - **Ngày tính lương là ngày của lịch**, không phải ngày bấm Hoàn thành. Ví dụ giáo viên chọn lịch ngày 15 để bắt đầu buổi, ngày 20 mới bấm `Hoàn thành buổi học` thì khoản lương thuộc ngày 15. Hoàn thành qua luồng dạy gắn `teacher_id` là giáo viên của buổi (người bấm Bắt đầu buổi học).
 - Unique/idempotency bảo đảm một lịch chỉ có một khoản lương hiệu lực tại một thời điểm. Mở lại giữ khoản gốc, tạo bút toán đảo; hoàn thành lại có thể tạo khoản mới nhưng khoản cũ không còn hiệu lực.
 - Lịch hủy không phát sinh lương. Nếu lịch đã có lương thì không được hủy theo flow thông thường trong requirement này.
@@ -372,6 +385,12 @@ Role CRUD mở lịch Hoàn thành → chọn Mở lại
 | Case 24: Đổi giáo viên không bị trùng lịch | High | REQ10 | Role CRUD | Giáo viên mới thuộc lớp và rảnh | **Given** chọn giáo viên mới<br>**When** Xác nhận<br>**Then** cập nhật teacher_id của lịch | - Kiểm tra lịch toàn hệ thống<br>- Thẻ hiển thị giáo viên mới<br>- Không tác động lịch khác |
 | Case 25: Chặn chỉnh sửa gây trùng lịch | High | EX02 / REQ10 | Role CRUD | Thời gian mới trùng lớp hoặc lịch giáo viên ở lớp khác | **Given** sửa field tạo khoảng giao nhau<br>**When** Xác nhận<br>**Then** cảnh báo và không lưu | - Nêu đúng giáo viên/ngày/giờ trùng<br>- Không có lựa chọn bỏ qua<br>- Giữ dữ liệu cũ ở backend |
 | Case 26: Nút Hủy chỉ đóng popup | Medium | REQ10 | Role CRUD | Có thay đổi chưa xác nhận | **Given** đã sửa field<br>**When** bấm `Hủy` ở chân popup<br>**Then** đóng form | - Không chuyển trạng thái Hủy bỏ<br>- Không sinh lịch bù<br>- Không lưu draft/Toast thành công |
+| Case 27a: Lương/giờ mặc định từ hồ sơ | High | REQ10 / REQ12 | Role CRUD | Giáo viên có Lương/giờ `200.000` trong hồ sơ; lịch chưa chỉnh riêng | **Given** bấm thẻ lịch<br>**When** popup mở<br>**Then** Lương/giờ = `200.000 đ` | - Tiền buổi dự kiến = 200.000 × thời lượng<br>- Đổi hồ sơ thành `250.000` thì mở lại popup thấy `250.000 đ` |
+| Case 27b: Chỉnh Lương/giờ riêng một buổi | High · Smoke | REQ10 / REQ12 | Role CRUD | Lịch Đang đợi | **Given** sửa Lương/giờ thành `300.000`<br>**When** Xác nhận<br>**Then** chỉ buổi này dùng `300.000` | - Hồ sơ giáo viên không đổi<br>- Buổi khác không đổi<br>- Đổi hồ sơ sau đó không ghi đè buổi này<br>- Có audit và Toast |
+| Case 27c: Đổi giáo viên thì reset Lương/giờ | High | REQ10 / REQ12 | Role CRUD | Buổi của G đã chỉnh riêng `300.000`; H có hồ sơ `180.000` | **Given** đổi giáo viên sang H<br>**When** popup cập nhật<br>**Then** Lương/giờ = `180.000 đ` | - Bỏ mức riêng cũ<br>- Vẫn cho chỉnh lại trước khi Xác nhận |
+| Case 27d: Validation Lương/giờ buổi | High | REQ12 | Role CRUD | Lịch Đang đợi | **Given** nhập `0`, số âm, số thập phân hoặc chữ<br>**When** Xác nhận<br>**Then** từ chối | - Chỉ chấp nhận số nguyên > 0<br>- Không lưu giá trị sai |
+| Case 27e: Khóa Lương/giờ khi đã hoàn thành và Teacher chỉ xem | High | REQ02 / REQ12 | Role CRUD / Teacher | Lịch Hoàn thành; Teacher được phân công | **Given** mở popup<br>**When** xem field Lương/giờ<br>**Then** không sửa được | - Role CRUD phải Mở lại mới sửa<br>- Teacher thấy giá trị nhưng read-only<br>- API sửa trực tiếp bị từ chối |
+| Case 27f: Tính tiền buổi khi hoàn thành | High · Smoke | REQ06 / REQ12 | Role CRUD | Lương/giờ `200.000`, thời lượng 90 phút | **Given** chuyển Hoàn thành<br>**When** commit<br>**Then** khoản lương = `300.000 đ` | - Chốt tiền tại lúc hoàn thành<br>- Đổi hồ sơ sau đó không đổi tiền buổi này |
 | Case 27: Đổi trạng thái từ popup | High | Flow 4–5 / REQ06–REQ07 / REQ10 | Role CRUD | Lịch đang Đang đợi | **Given** lần lượt chọn Hoàn thành và Hủy bỏ trên các lịch hợp lệ<br>**When** Xác nhận<br>**Then** chạy đúng nghiệp vụ trạng thái | - Hoàn thành: xanh lá và tính lương một lần<br>- Hủy bỏ: xám, không lương, sinh bù và cập nhật ngày kết thúc<br>- Không chỉ đổi màu ở client |
 | Case 28: Hoàn thành lịch cố định | High · Smoke | Flow 4 / REQ06 | Role CRUD | Lịch cố định hợp lệ, có giáo viên | **Given** lịch màu cam<br>**When** đánh dấu Hoàn thành<br>**Then** cập nhật trạng thái và lương | - Thẻ xanh lá<br>- Vẫn lưu nguồn Cố định<br>- Lương đúng giáo viên/lịch<br>- Một audit và Toast |
 | Case 29: Hoàn thành lịch linh hoạt | High | Flow 4 / REQ06 | Role CRUD | Lịch linh hoạt hợp lệ, có giáo viên | **Given** lịch màu xanh dương<br>**When** hoàn thành<br>**Then** xử lý như buổi hợp lệ | - Thẻ xanh lá<br>- Vẫn lưu nguồn Linh hoạt<br>- Tính lương đúng một lần |

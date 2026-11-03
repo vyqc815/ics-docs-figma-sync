@@ -60,16 +60,16 @@ Frame: `CD-DM-010057`, `CD-DM-010060` (tool đoán:CD-DM-010057, CD-DM-010060) �
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | danh-muc |  |  | — |  | `TC01`, `TC02`, `TC03`, `TC04`, `TC06`, `TC07`, `TC08`, `TC09`, `TC10`, `TC11`, `TC12`, `TC15`, `TC16`, `TC17`, `TC18`, `TC19`, `TC20`, `TC21`, `TC22`, `TC23`, `TC27` | Chưa sync | QC |
-| `A03.02` | trang-thai-hien-tai |  |  | — |  |  | Chưa sync | QC |
-| `A03.03` | id-danh-muc |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | o-nhap-id |  |  | — |  | `TC06` | Chưa sync | QC |
-| `A03.05` | nut-lam-moi-bieu-tuong-xoay |  |  | — |  |  | Chưa sync | QC |
-| `A03.06` | bieu-tuong-ket-qua-kiem-tra |  |  | — |  |  | Chưa sync | QC |
-| `A03.07` | thong-bao-trang-thai |  |  | — |  |  | Chưa sync | QC |
-| `A03.08` | ghi-chu-canh-bao |  |  | — |  |  | Chưa sync | QC |
-| `A03.09` | nut-cong-khai-danh-muc |  |  | — |  | `TC06`, `TC10` | Chưa sync | QC |
-| `A03.10` | nut-huy-bieu-tuong-x |  |  | — |  |  | Chưa sync | QC |
+| `A03.01` | danh-muc |  | `689:14242` Đã lưu và áp dụng cấu hình cho danh mục | — |  | `TC01`, `TC02`, `TC03`, `TC04`, `TC06`, `TC07`, `TC08`, `TC09`, `TC10`, `TC11`, `TC12`, `TC15`, `TC16`, `TC17`, `TC18`, `TC19`, `TC20`, `TC21`, `TC22`, `TC23`, `TC27` | Khớp | QC |
+| `A03.02` | trang-thai-hien-tai |  | `6025:210779` Trạng thái hiện tại; `6025:210782` Nháp | — |  |  | Khớp một phần | QC |
+| `A03.03` | id-danh-muc |  | `6025:210760` ID danh mục *: | — |  |  | Khớp một phần | QC |
+| `A03.04` | o-nhap-id |  |  | — |  | `TC06` | Chưa khớp tự động | QC |
+| `A03.05` | nut-lam-moi-bieu-tuong-xoay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.06` | bieu-tuong-ket-qua-kiem-tra |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.07` | thong-bao-trang-thai |  | `6025:210769` ID có thể sử dụng. | — |  |  | Khớp một phần | QC |
+| `A03.08` | ghi-chu-canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.09` | nut-cong-khai-danh-muc | `Atom/Button` Type=Primary, Size=Medium | `I6025:210790;2514:153363` Atom/Button | — |  | `TC06`, `TC10` | Khớp một phần | QC |
+| `A03.10` | nut-huy-bieu-tuong-x | `Atom/Button` Type=Secondary, Size=Medium | `I6025:210790;2514:153361` Atom/Button | — |  |  | Khớp một phần | QC |
 
 ### `F01` (ngoài Body)
 
@@ -161,8 +161,7 @@ Frame: `CD-DM-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (7): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A02.01`, `A02.02`
-- Chưa sync (10): `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`
+- Chưa khớp tự động (11): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A02.01`, `A02.02`, `A03.04`, `A03.05`, `A03.06`, `A03.08`
 - Frame Figma chưa có requirement (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Thiếu prototype link đi vào (7): `CD-DM-010010`, `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`, `CD-DM-010057`, `CD-DM-010060`, `CD-DM-010062`
 - Phân loại cần design duyệt (3): `CD-DM-010020`, `CD-DM-010030`, `CD-DM-010040`

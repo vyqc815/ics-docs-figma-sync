@@ -99,21 +99,21 @@ Frame: `ADM-LGV-020010`, `GV-LS-010010`, `GV-LS-010012` · Nguồn nội dung: Q
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | giao-vien-flow-giao-vien-de-xuat-tang-lu |  |  | — |  |  | Chưa sync | QC |
-| `A04.02` | admin-flow-admin-duyet-de-xuat-tang-luon |  |  | — |  |  | Chưa sync | QC |
-| `A04.03` | ket-qua-tra-ve-giao-vien |  |  | — |  |  | Chưa sync | QC |
-| `A04.04` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A04.05` | thong-bao-chu-ky |  |  | — |  |  | Chưa sync | QC |
-| `A04.06` | pham-vi-de-xuat |  |  | — |  |  | Chưa sync | QC |
-| `A04.07` | luong-buoi-day-hien-tai |  |  | — |  |  | Chưa sync | QC |
-| `A04.08` | muc-luong-de-xuat |  |  | — |  |  | Chưa sync | QC |
-| `A04.09` | ly-do-de-xuat |  |  | — |  |  | Chưa sync | QC |
-| `A04.10` | cac-ly-do |  |  | — |  |  | Chưa sync | QC |
-| `A04.11` | ly-do-khac-chi-tiet |  |  | — |  |  | Chưa sync | QC |
-| `A04.12` | dropdown-tien-te |  |  | — |  |  | Chưa sync | QC |
-| `A04.13` | khoi-trung-dropdown-khong-nhan |  |  | — |  |  | Chưa sync | QC |
-| `A04.14` | huy |  |  | — |  |  | Chưa sync | QC |
-| `A04.15` | gui-de-xuat |  |  | — | opens `A05` | `TC15a` | Chưa sync | QC |
+| `A04.01` | giao-vien-flow-giao-vien-de-xuat-tang-lu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | admin-flow-admin-duyet-de-xuat-tang-luon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.03` | ket-qua-tra-ve-giao-vien |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.04` | tieu-de | `Popup/Header`  | `I4899:118051;2514:153340` Tiêu đề | — |  |  | Khớp | QC |
+| `A04.05` | thong-bao-chu-ky |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.06` | pham-vi-de-xuat |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.07` | luong-buoi-day-hien-tai | `Atom/Label`  | `I4899:118067;3004:58620` Atom/Label | — |  |  | Khớp | QC |
+| `A04.08` | muc-luong-de-xuat | `Atom/Label`  | `I4760:16697;3004:58620` Atom/Label | — |  |  | Khớp một phần | QC |
+| `A04.09` | ly-do-de-xuat |  | `4899:118069` Lý do đề xuất | — |  |  | Khớp | QC |
+| `A04.10` | cac-ly-do |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.11` | ly-do-khac-chi-tiet | `Liner Icon`  | `I4899:118075;2808:48144` Liner Icon | — |  |  | Khớp | QC |
+| `A04.12` | dropdown-tien-te | `Atom/Nút đơn vị tiền` State=Mặc định | `I4899:118073;3004:58628;3004:60386` Đơn vị tiền | — |  |  | Khớp | QC |
+| `A04.13` | khoi-trung-dropdown-khong-nhan | `Atom/Input` State=CChọn, Kiểu=Chuẩn | `I4895:105780;3004:58628;2148:20906` Chọn | — |  |  | Khớp một phần | QC |
+| `A04.14` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I4760:16723;2514:153361` Atom/Button | — |  |  | Khớp một phần | QC |
+| `A04.15` | gui-de-xuat | `Atom/Button` Type=Primary, Size=Medium | `I4760:16723;2514:153363` Atom/Button | — | opens `A05` | `TC15a` | Khớp một phần | QC |
 
 ### `A05` Popup Xác nhận gửi đề xuất
 
@@ -121,11 +121,11 @@ Frame: `GV-LS-010015` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | noi-dung |  |  | — |  |  | Chưa sync | QC |
-| `A05.02` | ty-le-tang |  |  | — |  |  | Chưa sync | QC |
-| `A05.03` | thong-bao |  |  | — |  |  | Chưa sync | QC |
-| `A05.04` | quay-lai-chinh-sua |  |  | — |  | `TC18` | Chưa sync | QC |
-| `A05.05` | xac-nhan-gui |  |  | — |  | `TC19` | Chưa sync | QC |
+| `A05.01` | noi-dung | `Atom/Alert` Type=Lưu ý | `I4899:106633;2808:43032` Số câu hỏi và tổng điểm có thể được cập nhật tự động dựa trên nội dung trong tab Bộ câu hỏi. | — |  |  | Khớp | QC |
+| `A05.02` | ty-le-tang |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.03` | thong-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A05.04` | quay-lai-chinh-sua | `Atom/Button` Type=Secondary, Size=Medium | `I4899:106641;2514:153361` Atom/Button | — |  | `TC18` | Khớp | QC |
+| `A05.05` | xac-nhan-gui | `Atom/Button` Type=Primary, Size=Medium | `I4899:106641;2514:153363` Atom/Button | — |  | `TC19` | Khớp | QC |
 
 ### `A06` Trạng thái đề xuất và hủy đề xuất
 
@@ -140,7 +140,7 @@ Frame: `GV-LS-010011`, `GV-LS-010014`, `GV-LS-010016` · Nguồn nội dung: QC
 | `A06.05` | da-huy |  |  | — |  | `TC23`, `TC25` | Chưa khớp tự động | QC |
 | `A06.06` | de-xuat-dang-cho |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A06.07` | du-lieu-xac-nhan |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A06.08` | giu-de-xuat |  |  | — |  | `TC22` | Chưa khớp tự động | QC |
+| `A06.08` | giu-de-xuat | `Atom/Button` Type=Secondary, Size=Medium | `I4899:106671;2514:153361` Atom/Button | — |  | `TC22` | Khớp một phần | QC |
 | `A06.09` | huy-de-xuat | `Molecule/Trạng thái đề xuất tăng lương`  | `I4899:106093;4899:105924` Huỷ đề xuất | — |  | `TC21` | Khớp một phần | QC |
 | `A06.10` | huy-va-gui-lai |  |  | — |  |  | Chưa khớp tự động | QC |
 
@@ -150,12 +150,12 @@ Frame: `GV-LS-010013` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A07.02` | moi-muc-lich-su |  |  | — |  |  | Chưa sync | QC |
-| `A07.03` | sap-xep |  |  | — |  |  | Chưa sync | QC |
-| `A07.04` | phan-hoi |  |  | — |  | `TC28` | Chưa sync | QC |
-| `A07.05` | dong |  |  | — |  | `TC29` | Chưa sync | QC |
-| `A07.06` | rong-loi |  |  | — |  | `TC29` | Chưa sync | QC |
+| `A07.01` | tieu-de | `Popup/Header`  | `I4895:105829;2514:153340` Tiêu đề | — |  |  | Khớp | QC |
+| `A07.02` | moi-muc-lich-su |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.03` | sap-xep |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.04` | phan-hoi | `Popup/Header`  | `I4895:105829;2514:153342` Description | — |  | `TC28` | Khớp | QC |
+| `A07.05` | dong | `Atom/Button` Type=Primary, Size=Medium | `I4895:105870;2514:153363` Atom/Button | — |  | `TC29` | Khớp | QC |
+| `A07.06` | rong-loi |  |  | — |  | `TC29` | Chưa khớp tự động | QC |
 
 ### `F01` Header
 
@@ -196,7 +196,7 @@ Frame: `GV-LS-010000`, `GV-LS-010003`, `GV-LS-010004`, `GV-LS-010011`, `GV-LS-01
 | `REQ03` | Buổi và lương | Tổng lương từng lớp chỉ gồm lương buổi dạy của chính giáo viên trong khoảng, không gồm KPI/OT.  Buổi Hoàn thành của chính giáo viên; không lịch vẫn đếm nhưng tiền 0; buổi có lịch giữ tiền đã ghi nhận. Không hồi tố khi đổi mức lương. Chỉ đọc và không tự coi phát sinh lương là đã thanh toán. |
 | `REQ04` | KPI | Khoản của giáo viên, type KPI, tên từ cấu hình được tham chiếu, tiền từ khoản thực tế; Mới/Đã xác nhận/Đã hủy được xem, Đã xóa ẩn; chỉ Đã xác nhận tham gia tổng KPI. |
 | `REQ05` | OT | OT của chính giáo viên, tách khỏi KPI/OT của Handler; chỉ đọc. Bảng giữ Mới/Đã xác nhận/Đã hủy và loại Đã xóa; tổng chỉ cộng value thực tế của OT Đã xác nhận có Ngày ghi nhận trong khoảng. Không nhân thời lượng trong tên, không thay bằng tiền gốc cấu hình. |
-| `REQ06` | Form đề xuất | Giáo viên gửi đề xuất tăng lương chung của mình, không chọn lớp và không bắt buộc class_id. Admin quyết định gắn mức lương vào lớp nào trong chức năng quản lý riêng. Không thêm chọn lớp/mã lớp vào form, xác nhận, banner, hủy hoặc lịch sử theo suy diễn từ mức lương theo lớp. Draft/gửi đề xuất không tự đổi lương; lý do theo danh sách, nội dung tối đa 500 ký tự. Mức hiện tại do giáo viên tự nhập và mức đề xuất đều là số nguyên VNĐ/giờ, lưu đúng như nhập (không làm tròn, không trần); đề xuất phải lớn hơn mức hiện tại; hiện tại bằng 0 thì tỷ lệ `—`. Chi tiết chỉ bắt buộc khi chọn Lý do khác, tối đa 500 ký tự. Hệ thống không tự lấy mức hiện tại từ lương lớp (đơn giá khác nhau giữa lớp 1–1 và lớp chung). |
+| `REQ06` | Form đề xuất | Giáo viên gửi đề xuất tăng lương chung của mình, không chọn lớp và không bắt buộc class_id. Admin tự cập nhật `Lương/giờ` trong hồ sơ giáo viên nếu đồng ý. Không thêm chọn lớp/mã lớp vào form, xác nhận, banner, hủy hoặc lịch sử. Draft/gửi đề xuất không tự đổi lương; lý do theo danh sách, nội dung tối đa 500 ký tự. Mức hiện tại do giáo viên tự nhập và mức đề xuất đều là số nguyên VNĐ/giờ, lưu đúng như nhập (không làm tròn, không trần); đề xuất phải lớn hơn mức hiện tại; hiện tại bằng 0 thì tỷ lệ `—`. Chi tiết chỉ bắt buộc khi chọn Lý do khác, tối đa 500 ký tự. Hệ thống không tự điền mức hiện tại từ hồ sơ. |
 | `REQ07` | Xác nhận gửi | Hai bước nhập và xác nhận; quay lại giữ draft; backend kiểm tra lại owner/điều kiện/trạng thái, chống lặp, thành công tạo Mới; gửi đề xuất không trực tiếp tăng lương. |
 | `REQ08` | Trạng thái và hủy | Theo flow Figma, Mới được hủy có xác nhận; Đang xử lý không hủy; Đã duyệt/Từ chối do quản lý. Chu kỳ 6 tháng tính từ thời điểm duyệt hoặc từ chối gần nhất, không từ ngày gửi/ngày chỉnh lương; lần hủy Mới không tạo mốc chờ mới. Backend kiểm tra mốc này cùng trạng thái đề xuất đang chờ khi gửi. |
 | `REQ09` | Lịch sử | Chỉ request của chính mình; lưu riêng mức hiện tại tham chiếu, mức đề xuất và mức được duyệt, kèm ngày gửi/kết quả, lý do và phản hồi/ghi chú. Mức duyệt có thể khác mức xin. Duyệt không tự đổi lương thực tế; quản lý chỉnh thủ công riêng. Không lấy lương hiện tại mới thay dữ liệu của lần đề xuất cũ. |
@@ -262,8 +262,7 @@ Frame: `GV-LS-010000`, `GV-LS-010003`, `GV-LS-010004`, `GV-LS-010011`, `GV-LS-01
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (19): `A01.01`, `A01.02`, `A01.09`, `A01.10`, `A01.16`, `A01.17`, `A01.21`, `A01.22`, `A02.06`, `A02.07`, `A03.06`, `A03.07`, `A06.01`, `A06.04`, `A06.05`, `A06.06`, `A06.07`, `A06.08`, `A06.10`
-- Chưa sync (26): `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A04.09`, `A04.10`, `A04.11`, `A04.12`, `A04.13`, `A04.14`, `A04.15`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`
+- Chưa khớp tự động (29): `A01.01`, `A01.02`, `A01.09`, `A01.10`, `A01.16`, `A01.17`, `A01.21`, `A01.22`, `A02.06`, `A02.07`, `A03.06`, `A03.07`, `A04.01`, `A04.02`, `A04.03`, `A04.05`, `A04.06`, `A04.10`, `A05.02`, `A05.03`, `A06.01`, `A06.04`, `A06.05`, `A06.06`, `A06.07`, `A06.10`, `A07.02`, `A07.03`, `A07.06`
 - Thiếu prototype link đi vào (2): `ADM-LGV-020010`, `GV-LS-010012`
 - REQ/EX chưa có testcase (1): `EX06`
 

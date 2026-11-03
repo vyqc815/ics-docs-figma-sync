@@ -98,10 +98,10 @@ Frame: `ADM-LOP-040210` (tool đoán:ADM-LOP-040210) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A06.01` | noi-dung-ghi-chu |  |  | — |  |  | Chưa sync | QC |
-| `A06.02` | icon-lich-su |  |  | — |  | `TC24` | Chưa sync | QC |
-| `A06.03` | moi-ban-ghi-lich-su |  |  | — |  |  | Chưa sync | QC |
-| `A06.04` | copy |  |  | — |  | `TC25` | Chưa sync | QC |
+| `A06.01` | noi-dung-ghi-chu |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.02` | icon-lich-su |  |  | — |  | `TC24` | Chưa khớp tự động | QC |
+| `A06.03` | moi-ban-ghi-lich-su |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.04` | copy | `Action Icon` Size=18 | `2409:147708` Copy | — |  | `TC25` | Khớp | QC |
 
 ### `A07` Trạng thái học viên và Lịch sử thay đổi trạng thái
 
@@ -109,17 +109,17 @@ Frame: `ADM-LOP-040220` (tool đoán:ADM-LOP-040220) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | trang-thai-hien-tai |  |  | — |  |  | Chưa sync | QC |
-| `A07.02` | trang-thai-hop-le |  |  | — |  |  | Chưa sync | QC |
-| `A07.03` | doi-trang-thai |  |  | — |  |  | Chưa sync | QC |
-| `A07.04` | lich-su |  |  | — |  | `TC27`, `TC28`, `TC29`, `TC30`, `TC31`, `TC32`, `TC48` | Chưa sync | QC |
-| `A07.05` | chi-xem |  |  | — |  | `TC48` | Chưa sync | QC |
-| `A07.06` | du-thinh |  |  | — |  | `TC48` | Chưa sync | QC |
-| `A07.07` | dang-hoc |  |  | — |  | `TC28`, `TC29`, `TC30`, `TC48` | Chưa sync | QC |
-| `A07.08` | hoan-thanh |  |  | — |  | `TC48` | Chưa sync | QC |
-| `A07.09` | nghi-hoc |  |  | — |  | `TC48` | Chưa sync | QC |
-| `A07.10` | roi-lop |  |  | — |  | `TC48` | Chưa sync | QC |
-| `A07.11` | xoa |  |  | — |  |  | Chưa sync | QC |
+| `A07.01` | trang-thai-hien-tai |  | `2409:147815` Label | — |  |  | Khớp | QC |
+| `A07.02` | trang-thai-hop-le |  | `2409:147815` Label | — |  |  | Khớp | QC |
+| `A07.03` | doi-trang-thai | `Popup/Header`  | `I2527:167828;2514:153348` Title; `2409:147815` Label | — |  |  | Khớp | QC |
+| `A07.04` | lich-su | `Popup/Header`  | `I2527:167828;2514:153348` Title | — |  | `TC27`, `TC28`, `TC29`, `TC30`, `TC31`, `TC32`, `TC48` | Khớp | QC |
+| `A07.05` | chi-xem |  |  | — |  | `TC48` | Chưa khớp tự động | QC |
+| `A07.06` | du-thinh | `Student Status`  | `2409:147819` Student Status | — |  | `TC48` | Khớp | QC |
+| `A07.07` | dang-hoc |  | `2409:147815` Label | — |  | `TC28`, `TC29`, `TC30`, `TC48` | Khớp | QC |
+| `A07.08` | hoan-thanh | `Student Status`  | `2409:147813` Student Status | — |  | `TC48` | Khớp | QC |
+| `A07.09` | nghi-hoc |  |  | — |  | `TC48` | Chưa khớp tự động | QC |
+| `A07.10` | roi-lop |  |  | — |  | `TC48` | Chưa khớp tự động | QC |
+| `A07.11` | xoa | `DD/Molecule/Menu Item` Type=Danger, State=Disabled, Size=S | `2409:147795` Xoá | — |  |  | Khớp | QC |
 
 ### `A08` Popup Thêm học phí
 
@@ -127,13 +127,13 @@ Frame: `ADM-LOP-040230` (tool đoán:ADM-LOP-040230) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | toi-han |  |  | — |  | `TC34` | Chưa sync | QC |
-| `A08.02` | trang-thai |  |  | — |  | `TC34` | Chưa sync | QC |
-| `A08.03` | chon-hoa-don |  |  | — |  | `TC34`, `TC35` | Chưa sync | QC |
-| `A08.04` | gia-tri |  |  | — |  | `TC34`, `TC39` | Chưa sync | QC |
-| `A08.05` | so-buoi-hoc |  |  | — |  | `TC34`, `TC50` | Chưa sync | QC |
-| `A08.06` | ghi-chu-hoc-phi |  |  | — |  |  | Chưa sync | QC |
-| `A08.07` | them |  |  | — |  | `TC34`, `TC35`, `TC37`, `TC49`, `TC50` | Chưa sync | QC |
+| `A08.01` | toi-han | `DD/Molecule/Trigger` Size=XS, State=Active | `2409:147857` Filter Tới hạn | — |  | `TC34` | Khớp | QC |
+| `A08.02` | trang-thai | `DD/Molecule/Trigger` Size=XS, State=Active | `2409:147868` Filter Trạng thái | — |  | `TC34` | Khớp | QC |
+| `A08.03` | chon-hoa-don | `Atom/Label`  | `2911:43642` Atom/Label | — |  | `TC34`, `TC35` | Khớp | QC |
+| `A08.04` | gia-tri | `Atom/Label`  | `2911:43647` Atom/Label | — |  | `TC34`, `TC39` | Khớp | QC |
+| `A08.05` | so-buoi-hoc |  |  | — |  | `TC34`, `TC50` | Chưa khớp tự động | QC |
+| `A08.06` | ghi-chu-hoc-phi | `Atom/Label`  | `2911:43652` Atom/Label | — |  |  | Khớp | QC |
+| `A08.07` | them | `Atom/Button` Type=Primary, Size=Medium | `I2527:167815;2514:153363` Atom/Button | — |  | `TC34`, `TC35`, `TC37`, `TC49`, `TC50` | Khớp | QC |
 
 ### `A09` Menu thao tác từ tên học viên
 
@@ -277,8 +277,7 @@ Frame: `ADM-LOP-040200` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (22): `A01.02`, `A01.03`, `A01.09`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A04.01`, `A04.02`, `A04.05`, `A05.01`, `A05.03`, `A05.04`, `A05.05`, `A09.01`, `A10.01`, `A10.03`, `A10.04`
-- Chưa sync (22): `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`
+- Chưa khớp tự động (29): `A01.02`, `A01.03`, `A01.09`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A04.01`, `A04.02`, `A04.05`, `A05.01`, `A05.03`, `A05.04`, `A05.05`, `A06.01`, `A06.02`, `A06.03`, `A07.05`, `A07.09`, `A07.10`, `A08.05`, `A09.01`, `A10.01`, `A10.03`, `A10.04`
 - Frame Figma chưa có requirement (3): `ADM-LOP-040210`, `ADM-LOP-040220`, `ADM-LOP-040230`
 - Thiếu prototype link đi vào (3): `ADM-LOP-040210`, `ADM-LOP-040220`, `ADM-LOP-040230`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`

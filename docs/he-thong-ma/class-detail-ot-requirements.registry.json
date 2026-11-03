@@ -102,9 +102,9 @@
    "content": "figma",
    "nodeId": "2401:13017",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-040810",
    "link": "/lop-hoc/cai-dat/ot?popup=ADM-LOP-040810",
    "dark": "ADM-LOP-040810-DK",
    "openedFrom": [],
@@ -125,9 +125,9 @@
    "content": "figma",
    "nodeId": "2401:12994",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-040812",
    "link": "/lop-hoc/cai-dat/ot?popup=ADM-LOP-040812",
    "dark": "ADM-LOP-040812-DK",
    "openedFrom": [],
@@ -398,8 +398,10 @@
      "testcases": [
       "M-CDO.TC05"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Người nhận"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDO.A02.02",
@@ -413,8 +415,10 @@
      "testcases": [
       "M-CDO.TC08"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Số tiền"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDO.A02.03",
@@ -423,11 +427,30 @@
      "spec": "Ngày và giờ ghi nhận người dùng nhập.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040810": [
+       {
+        "term": "Thời gian thực hiện",
+        "figmaId": "2925:24983",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Thời gian thực hiện",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2224",
+         "Label": "Thời gian thực hiện:",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDO.A02.04",
@@ -436,13 +459,32 @@
      "spec": "Mặc định Mới khi thêm; chọn theo rule trạng thái bên dưới.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040810": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "2925:24988",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Trạng thái",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2370:27888",
+         "Label": "Trạng thái",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDO.TC05"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDO.A02.05",
@@ -451,13 +493,27 @@
      "spec": "Khối chỉ đọc gồm Tên, Mô tả và Giá trị gốc của cấu hình OT. Giá trị gốc chỉ để tham chiếu, không ép số tiền nhập.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040810": [
+       {
+        "term": "Thông tin OT",
+        "figmaId": "2402:67801",
+        "layer": "Thông tin OT:",
+        "confidence": "cao",
+        "region": "Thông tin KPI",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDO.TC08"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDO.A02.06",
@@ -471,8 +527,10 @@
      "testcases": [
       "M-CDO.TC08"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Hủy bỏ"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDO.A02.07",
@@ -481,14 +539,32 @@
      "spec": "Nút lưu theo ảnh; validate rồi lưu khoản được gắn/chỉnh và cập nhật danh sách OT sau thành công.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040810": [
+       {
+        "term": "Cập nhật",
+        "figmaId": "I2527:167480;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Cập nhật",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDO.TC05",
       "M-CDO.TC09"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ]
   },

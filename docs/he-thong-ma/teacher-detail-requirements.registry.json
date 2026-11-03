@@ -6,7 +6,7 @@
   {
    "id": "M-TD.REQ01",
    "name": "Xem chi tiết giáo viên",
-   "text": "`Admin` được xem hồ sơ giáo viên thuộc phạm vi dữ liệu; tab mặc định là `Thông tin cá nhân` với Giới tính, Ngày sinh, Trạng thái, Ghi chú và thông tin ngân hàng; Mã giáo viên và Gmail bị khóa; không có field lương theo giờ. `Class Handler` và `Support` chỉ được truy cập tab `Danh sách lớp` theo REQ11, tab `Log` theo REQ07, tab `Quản lý đăng ký lịch` theo REQ10 và tab `Ghi chú` theo REQ08–REQ09, không được kế thừa quyền xem/cập nhật các tab khác.",
+   "text": "`Admin` được xem hồ sơ giáo viên thuộc phạm vi dữ liệu; tab mặc định là `Thông tin cá nhân` với Giới tính, Ngày sinh, Trạng thái, Ghi chú và thông tin ngân hàng; Mã giáo viên và Gmail bị khóa; có field `Lương/giờ` (Admin, Class Handler, Support cập nhật). `Class Handler` và `Support` chỉ được truy cập tab `Thông tin cá nhân` (chỉ sửa `Lương/giờ`), tab `Danh sách lớp` theo REQ11, tab `Log` theo REQ07, tab `Quản lý đăng ký lịch` theo REQ10 và tab `Ghi chú` theo REQ08–REQ09, không được kế thừa quyền xem/cập nhật các tab khác.",
    "source": "qc",
    "content": "qc"
   },
@@ -41,7 +41,7 @@
   {
    "id": "M-TD.REQ06",
    "name": "Notification cho thao tác thay đổi",
-   "text": "Mọi thao tác cập nhật tài khoản, reset mật khẩu, đổi trạng thái, cập nhật lương giáo viên theo lớp, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú hoặc CUD comment phải hiển thị đúng một notification thành công/thất bại. Chỉ hiển thị thành công sau khi backend xác nhận và không đưa mật khẩu, stack trace, token hoặc thông tin kỹ thuật nhạy cảm vào nội dung.",
+   "text": "Mọi thao tác cập nhật tài khoản, reset mật khẩu, đổi trạng thái, cập nhật Lương/giờ, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú hoặc CUD comment phải hiển thị đúng một notification thành công/thất bại. Chỉ hiển thị thành công sau khi backend xác nhận và không đưa mật khẩu, stack trace, token hoặc thông tin kỹ thuật nhạy cảm vào nội dung.",
    "source": "qc",
    "content": "qc"
   },
@@ -75,8 +75,8 @@
   },
   {
    "id": "M-TD.REQ11",
-   "name": "Danh sách lớp và lương giáo viên theo lớp",
-   "text": "Tab chỉ hiển thị các lớp đã thêm giáo viên đang xem, gồm Trạng thái lớp, Mã lớp, Khóa học, Đánh giá lớp, KPI là tỷ lệ lên kỳ của lớp và cột `LƯƠNG/GIỜ`. Lương là dữ liệu riêng của quan hệ giáo viên–lớp, đơn vị VNĐ/giờ, là số nguyên không âm và cho phép `0`; hiển thị bằng nút màu cam dạng `200.000 đ` kèm icon bút. `Admin`, `Class Handler`, `Support` click nút để mở popup `Chỉnh Sửa Lương`, trong đó có đúng Mã lớp, giá trị hiện tại, tiền tệ VNĐ, đơn vị Giờ, `Hủy` và `Xác Nhận`. Hỗ trợ tìm theo Mã lớp/Tên khóa học, filter Loại lớp, Khóa học cấu hình, đủ tám Trạng thái lớp và Thời gian tạo lớp với cùng danh sách khoảng thời gian của tab Ghi chú; danh sách phân trang tối đa 50 lớp/trang.",
+   "name": "Danh sách lớp",
+   "text": "Tab chỉ hiển thị các lớp đã thêm giáo viên đang xem, gồm Trạng thái lớp, Mã lớp, Khóa học, Đánh giá lớp và KPI là tỷ lệ lên kỳ của lớp. Không có lương theo lớp; lương lấy từ `Lương/giờ` trong hồ sơ và có thể chỉnh riêng từng buổi tại tab Lịch dạy của lớp. Hỗ trợ tìm theo Mã lớp/Tên khóa học, filter Loại lớp, Khóa học cấu hình, đủ tám Trạng thái lớp và Thời gian tạo lớp với cùng danh sách khoảng thời gian của tab Ghi chú; danh sách phân trang tối đa 50 lớp/trang.",
    "source": "qc",
    "content": "qc"
   }
@@ -144,9 +144,9 @@
    "content": "figma",
    "nodeId": "1540:30533",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-gv-020210",
    "link": "/chi-tiet-giao-vien/danh-sach-lop?popup=ADM-GV-020210",
    "dark": "ADM-GV-020210-DK",
    "openedFrom": [],
@@ -261,9 +261,9 @@
    "content": "figma",
    "nodeId": "3674:61905",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-gv-020520",
    "link": "/chi-tiet-giao-vien/quan-ly-dang-ky-lich?popup=ADM-GV-020520",
    "dark": "ADM-GV-020520-DK",
    "openedFrom": [],
@@ -508,6 +508,21 @@
     },
     {
      "id": "M-TD.A02.13",
+     "name": "luong-gio",
+     "label": "Lương/giờ",
+     "spec": "✅ | Số nguyên **lớn hơn 0**, đơn vị `VNĐ/giờ`; hiển thị phân tách hàng nghìn kèm `đ` (vd `200.000 đ`). Là mức mặc định cho các buổi dạy của giáo viên; xem quy tắc lương bên dưới.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "M-TD.TC03"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec"
+    },
+    {
+     "id": "M-TD.A02.14",
      "name": "lay-lai-mat-khau",
      "label": "Lấy lại mật khẩu",
      "spec": "— | Reset mật khẩu của giáo viên về `abc12345`.",
@@ -522,7 +537,7 @@
      "status": "chua-co-spec"
     },
     {
-     "id": "M-TD.A02.14",
+     "id": "M-TD.A02.15",
      "name": "cap-nhat-tai-khoan",
      "label": "Cập nhật tài khoản",
      "spec": "— | Lưu toàn bộ thay đổi của Thông tin cá nhân, ảnh, ghi chú và thông tin ngân hàng trong một lần.",
@@ -567,8 +582,11 @@
      "testcases": [
       "M-TD.TC22"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tìm kiếm lớp học",
+      "Enter"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-TD.A03.02",
@@ -580,8 +598,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Trạng thái lớp",
+      "#"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-TD.A03.03",
@@ -594,11 +615,12 @@
      "relations": [],
      "testcases": [
       "M-TD.TC13",
-      "M-TD.TC18",
       "M-TD.TC22"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Mã lớp"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-TD.A03.04",
@@ -614,8 +636,11 @@
       "M-TD.TC22",
       "M-TD.TC23"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Khóa học",
+      "đã học/tổng số buổi Buổi"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-TD.A03.05",
@@ -630,8 +655,10 @@
       "M-TD.TC13",
       "M-TD.TC14"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Đánh giá"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-TD.A03.06",
@@ -645,30 +672,13 @@
      "testcases": [
       "M-TD.TC15"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "KPI lớp"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-TD.A03.07",
-     "name": "luong-giao-vien-theo-gio",
-     "label": "Lương giáo viên theo giờ",
-     "spec": "Cột có tiêu đề `LƯƠNG/GIỜ`; mỗi dòng hiển thị mức lương của đúng giáo viên trong đúng lớp bằng nút màu cam kèm icon bút chỉnh sửa, định dạng phân tách hàng nghìn kèm `đ`, ví dụ `200.000 đ`. `Admin`, `Class Handler`, `Support` được mở popup thiết lập/cập nhật.",
-     "source": "tu-dien",
-     "content": "qc",
-     "matches": {},
-     "relations": [
-      {
-       "type": "opens",
-       "target": "M-TD.A03",
-       "raw": "mở popup thiết lập/cập nhật"
-      }
-     ],
-     "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
-    },
-    {
-     "id": "M-TD.A03.08",
      "name": "mo-chi-tiet",
      "label": "Mở chi tiết",
      "spec": "Icon mũi tên ở cuối dòng được hiển thị theo UI; hành vi điều hướng khi click cần xác nhận tại mục 3.",
@@ -677,11 +687,13 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Mở chi tiết"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
-     "id": "M-TD.A03.09",
+     "id": "M-TD.A03.08",
      "name": "loai-lop",
      "label": "Loại lớp",
      "spec": "`Lớp 1-1`, `Lớp chung`.",
@@ -692,11 +704,14 @@
      "testcases": [
       "M-TD.TC23"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Loại lớp",
+      "Lớp 1-1"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
-     "id": "M-TD.A03.10",
+     "id": "M-TD.A03.09",
      "name": "khoa-hoc",
      "label": "Khóa học",
      "spec": "Lấy động từ danh sách khóa học được cấu hình/define trong hệ thống; kết quả chỉ gồm lớp thuộc khóa học đã chọn.",
@@ -709,11 +724,13 @@
       "M-TD.TC22",
       "M-TD.TC23"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Khóa học"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
-     "id": "M-TD.A03.11",
+     "id": "M-TD.A03.10",
      "name": "trang-thai-lop",
      "label": "Trạng thái lớp",
      "spec": "`Khai giảng`, `Mới tạo`, `Đang học`, `Tạm dừng`, `Hoàn thành`, `Hủy`, `Xóa`, `Trải nghiệm`.",
@@ -722,11 +739,14 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Trạng thái lớp",
+      "Khai giảng"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
-     "id": "M-TD.A03.12",
+     "id": "M-TD.A03.11",
      "name": "thoi-gian",
      "label": "Thời gian",
      "spec": "Lọc theo thời gian tạo lớp (`class.created_at`), mặc định `Hôm nay`; danh sách gồm `Tới hạn`, `Hôm nay`, `Hôm qua`, `Hôm nay và hôm qua`, `Tuần này`, `Tuần trước`, `Tháng này`, `Tháng trước`, `3 tháng trước`, `Năm nay`, `Năm trước`, `Tùy chọn`.",
@@ -738,8 +758,11 @@
       "M-TD.TC24",
       "M-TD.TC25"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thời gian",
+      "class.created_at"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },
@@ -950,8 +973,10 @@
       "M-TD.TC49",
       "M-TD.TC49a"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Fulltime"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-TD.A06.02",
@@ -963,8 +988,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Cột ngày",
+      "Thứ 2"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-TD.A06.03",
@@ -976,8 +1004,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Hàng buổi",
+      "Buổi sáng 07h30 - 12h00"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-TD.A06.04",
@@ -986,7 +1017,25 @@
      "spec": "Checkbox trống; tick mở popup `Đăng ký khung giờ` của đúng thứ và buổi.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-gv-020520": [
+       {
+        "term": "Đăng ký khung giờ",
+        "figmaId": "I3674:61906;2514:153341",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [
       {
        "type": "opens",
@@ -995,8 +1044,10 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Ô buổi chưa đăng ký"
+     ],
+     "status": "khop"
     },
     {
      "id": "M-TD.A06.05",
@@ -1008,8 +1059,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Ô buổi đã đăng ký",
+      "Trước 9h tối"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-TD.A06.06",
@@ -1018,13 +1072,31 @@
      "spec": "Dòng phụ `<Thứ> · <Buổi> (<khung buổi>)`; `Giờ bắt đầu`, `Giờ kết thúc` là dropdown các mốc cách nhau 30 phút trong khung buổi (gợi ý `Chọn trong khung 14h00 – 18h00, mỗi mốc cách nhau 30 phút`); `Ghi chú` không bắt buộc; `Huỷ` đóng không đổi ô; `Xác nhận` lưu tạm vào lưới.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-gv-020520": [
+       {
+        "term": "Đăng ký khung giờ",
+        "figmaId": "I3674:61906;2514:153341",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-TD.TC47"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-TD.A06.07",
@@ -1033,11 +1105,30 @@
      "spec": "Ô văn bản dưới lưới, không bắt buộc, lưu cùng lịch đăng ký; placeholder `gửi tới người phỏng vấn` trên Figma là copy từ màn giáo viên, requirement đọc là ghi chú chung cho lịch đăng ký.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-gv-020520": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "3674:61918",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Ghi chú",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Ghi chú",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-TD.A06.08",
@@ -1056,8 +1147,10 @@
       "M-TD.TC51",
       "M-TD.TC52"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Cập nhật"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },
@@ -2563,31 +2656,19 @@
   },
   {
    "id": "M-TD.EX23",
-   "text": "Lương giáo viên theo lớp là số âm, số thập phân hoặc không phải số → từ chối cập nhật, giữ giá trị đã lưu và hiển thị lỗi tại trường cùng notification thất bại; số nguyên `0` là hợp lệ.",
+   "text": "`Lương/giờ` trong hồ sơ là `0`, số âm, số thập phân hoặc không phải số → từ chối cập nhật, giữ giá trị đã lưu và hiển thị lỗi tại trường cùng notification thất bại.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "M-TD.EX24",
-   "text": "Role không thuộc `Admin`, `Class Handler`, `Support`, người dùng ngoài phạm vi hoặc quan hệ giáo viên–lớp không tồn tại gửi request cập nhật lương → backend từ chối và không thay đổi dữ liệu.",
+   "text": "Role ngoài `Admin`/`Class Handler`/`Support`, người dùng ngoài phạm vi, hoặc Class Handler/Support sửa field khác ngoài `Lương/giờ` gửi request cập nhật `Lương/giờ` trong hồ sơ → backend từ chối và không thay đổi dữ liệu.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "M-TD.EX25",
    "text": "Tải/tìm/lọc/chuyển trang Danh sách lớp thất bại, hết thời gian chờ hoặc request cũ trả về sau → hiển thị lỗi có thể thử lại và chỉ nhận response của trang, từ khóa và tổ hợp filter mới nhất; không coi lỗi là danh sách rỗng.",
-   "source": "qc",
-   "content": "qc"
-  },
-  {
-   "id": "M-TD.EX26",
-   "text": "Cập nhật lương thất bại hoặc người dùng xác nhận lặp khi request đang xử lý → không tạo nhiều lần cập nhật, giữ lương chính thức cũ và hiển thị đúng một notification thất bại.",
-   "source": "qc",
-   "content": "qc"
-  },
-  {
-   "id": "M-TD.EX27",
-   "text": "Lương của quan hệ giáo viên–lớp đã được người khác cập nhật sau khi dòng dữ liệu được tải → không âm thầm ghi đè; thông báo xung đột và yêu cầu tải lại theo cơ chế kiểm soát phiên bản.",
    "source": "qc",
    "content": "qc"
   }
@@ -2676,7 +2757,7 @@
   },
   {
    "id": "M-TD.FLOW10",
-   "name": "Xem lớp và cập nhật lương giáo viên theo lớp",
+   "name": "Xem danh sách lớp của giáo viên",
    "source": "qc",
    "content": "qc",
    "requirements": [
@@ -2792,7 +2873,8 @@
     "M-TD.A02.06",
     "M-TD.A02.08",
     "M-TD.A02.09",
-    "M-TD.A02.10"
+    "M-TD.A02.10",
+    "M-TD.A02.13"
    ]
   },
   {
@@ -2814,7 +2896,7 @@
    ],
    "items": [
     "M-TD.A02.02",
-    "M-TD.A02.14"
+    "M-TD.A02.15"
    ]
   },
   {
@@ -2835,7 +2917,7 @@
    "flows": [],
    "items": [
     "M-TD.A02.07",
-    "M-TD.A02.14"
+    "M-TD.A02.15"
    ]
   },
   {
@@ -2918,7 +3000,7 @@
     "M-TD.FLOW03"
    ],
    "items": [
-    "M-TD.A02.13"
+    "M-TD.A02.14"
    ]
   },
   {
@@ -3000,7 +3082,7 @@
     "M-TD.A03.03",
     "M-TD.A03.04",
     "M-TD.A03.05",
-    "M-TD.A03.10"
+    "M-TD.A03.09"
    ]
   },
   {
@@ -3056,98 +3138,6 @@
    "items": []
   },
   {
-   "id": "M-TD.TC17",
-   "title": "Case 17: Lương được lưu và hiển thị riêng theo quan hệ giáo viên–lớp",
-   "priority": "High",
-   "smoke": false,
-   "region": "M-TD.A03",
-   "scenario": "Flow 10 / REQ11",
-   "source": "qc",
-   "content": "qc",
-   "requirements": [
-    "M-TD.REQ11"
-   ],
-   "exceptions": [],
-   "flows": [
-    "M-TD.FLOW10"
-   ],
-   "items": []
-  },
-  {
-   "id": "M-TD.TC18",
-   "title": "Case 18: Mở popup và cập nhật lương đúng lớp",
-   "priority": "High",
-   "smoke": false,
-   "region": "M-TD.A03",
-   "scenario": "Flow 10 / REQ11 / REQ06",
-   "source": "qc",
-   "content": "qc",
-   "requirements": [
-    "M-TD.REQ11",
-    "M-TD.REQ06"
-   ],
-   "exceptions": [],
-   "flows": [
-    "M-TD.FLOW10"
-   ],
-   "items": [
-    "M-TD.A03.03"
-   ]
-  },
-  {
-   "id": "M-TD.TC19",
-   "title": "Case 19: Hủy chỉnh sửa lương",
-   "priority": "High",
-   "smoke": false,
-   "region": "M-TD.A03",
-   "scenario": "REQ11",
-   "source": "qc",
-   "content": "qc",
-   "requirements": [
-    "M-TD.REQ11"
-   ],
-   "exceptions": [],
-   "flows": [],
-   "items": []
-  },
-  {
-   "id": "M-TD.TC20",
-   "title": "Case 20: Validation lương VNĐ không âm",
-   "priority": "High",
-   "smoke": false,
-   "region": "M-TD.A03",
-   "scenario": "EX23 / REQ11 / REQ06",
-   "source": "qc",
-   "content": "qc",
-   "requirements": [
-    "M-TD.REQ11",
-    "M-TD.REQ06"
-   ],
-   "exceptions": [
-    "M-TD.EX23"
-   ],
-   "flows": [],
-   "items": []
-  },
-  {
-   "id": "M-TD.TC21",
-   "title": "Case 21: Kiểm tra quyền cập nhật lương",
-   "priority": "High",
-   "smoke": false,
-   "region": "M-TD.A03",
-   "scenario": "EX24 / REQ11",
-   "source": "qc",
-   "content": "qc",
-   "requirements": [
-    "M-TD.REQ11"
-   ],
-   "exceptions": [
-    "M-TD.EX24"
-   ],
-   "flows": [],
-   "items": []
-  },
-  {
    "id": "M-TD.TC22",
    "title": "Case 22: Tìm kiếm lớp học",
    "priority": "High",
@@ -3167,7 +3157,7 @@
     "M-TD.A03.01",
     "M-TD.A03.03",
     "M-TD.A03.04",
-    "M-TD.A03.10"
+    "M-TD.A03.09"
    ]
   },
   {
@@ -3188,8 +3178,8 @@
    ],
    "items": [
     "M-TD.A03.04",
-    "M-TD.A03.09",
-    "M-TD.A03.10"
+    "M-TD.A03.08",
+    "M-TD.A03.09"
    ]
   },
   {
@@ -3209,7 +3199,7 @@
     "M-TD.FLOW10"
    ],
    "items": [
-    "M-TD.A03.12"
+    "M-TD.A03.11"
    ]
   },
   {
@@ -3229,7 +3219,7 @@
     "M-TD.FLOW10"
    ],
    "items": [
-    "M-TD.A03.12"
+    "M-TD.A03.11"
    ]
   },
   {
@@ -3270,21 +3260,87 @@
   },
   {
    "id": "M-TD.TC28",
-   "title": "Case 28: Tải danh sách hoặc cập nhật lương thất bại/xung đột",
+   "title": "Case 28: Tải danh sách thất bại",
    "priority": "High",
    "smoke": false,
    "region": "M-TD.A03",
-   "scenario": "EX25 / EX26 / EX27 / REQ11 / REQ06",
+   "scenario": "EX25 / REQ11",
    "source": "qc",
    "content": "qc",
    "requirements": [
-    "M-TD.REQ11",
-    "M-TD.REQ06"
+    "M-TD.REQ11"
    ],
    "exceptions": [
-    "M-TD.EX25",
-    "M-TD.EX26",
-    "M-TD.EX27"
+    "M-TD.EX25"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC17",
+   "title": "Case 17: Không còn lương theo lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "REQ11",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ11"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC18",
+   "title": "Case 18: Cập nhật Lương/giờ trong hồ sơ",
+   "priority": "High",
+   "smoke": true,
+   "region": "M-TD.A03",
+   "scenario": "REQ02 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ02",
+    "M-TD.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC19",
+   "title": "Case 19: Validation Lương/giờ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "EX23 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ02"
+   ],
+   "exceptions": [
+    "M-TD.EX23"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "M-TD.TC20",
+   "title": "Case 20: Class Handler/Support sửa Lương/giờ trong hồ sơ",
+   "priority": "High",
+   "smoke": false,
+   "region": "M-TD.A03",
+   "scenario": "REQ01 / EX24",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "M-TD.REQ01"
+   ],
+   "exceptions": [
+    "M-TD.EX24"
    ],
    "flows": [],
    "items": []

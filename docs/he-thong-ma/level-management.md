@@ -61,17 +61,17 @@ Frame: `CD-CDO-010010` (tool đoán:CD-CDO-010010) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | cap-do |  |  | — |  | `TC01`, `TC02`, `TC03`, `TC04`, `TC06`, `TC07`, `TC08`, `TC09`, `TC11`, `TC12`, `TC13`, `TC14`, `TC15`, `TC17`, `TC18`, `TC19`, `TC21`, `TC22`, `TC23` | Chưa có thiết kế | QC |
-| `A04.02` | trang-thai-hien-tai |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.03` | id-cap-do |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.04` | o-nhap-id |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.05` | nut-lam-moi-id-bieu-tuong-xoay |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.06` | ma-cap-do |  |  | — |  | `TC01`, `TC03`, `TC04`, `TC07`, `TC08`, `TC09`, `TC13`, `TC19`, `TC23` | Chưa có thiết kế | QC |
-| `A04.07` | bieu-tuong-ket-qua-kiem-tra |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.08` | thong-bao-trang-thai |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.09` | ghi-chu-canh-bao |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.10` | nut-cong-khai-cap-do |  |  | — |  | `TC07` | Chưa có thiết kế | QC |
-| `A04.11` | nut-huy-bieu-tuong-x |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A04.01` | cap-do |  | `4687:5175` Cấp độ: | — |  | `TC01`, `TC02`, `TC03`, `TC04`, `TC06`, `TC07`, `TC08`, `TC09`, `TC11`, `TC12`, `TC13`, `TC14`, `TC15`, `TC17`, `TC18`, `TC19`, `TC21`, `TC22`, `TC23` | Khớp | QC |
+| `A04.02` | trang-thai-hien-tai |  | `4687:5192` Trạng thái hiện tại; `4687:5195` Nháp | — |  |  | Khớp | QC |
+| `A04.03` | id-cap-do |  | `4687:5180` ID cấp độ *: | — |  |  | Khớp | QC |
+| `A04.04` | o-nhap-id |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.05` | nut-lam-moi-id-bieu-tuong-xoay |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.06` | ma-cap-do |  |  | — |  | `TC01`, `TC03`, `TC04`, `TC07`, `TC08`, `TC09`, `TC13`, `TC19`, `TC23` | Chưa khớp tự động | QC |
+| `A04.07` | bieu-tuong-ket-qua-kiem-tra |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.08` | thong-bao-trang-thai |  | `4687:5189` ID có thể sử dụng. | — |  |  | Khớp | QC |
+| `A04.09` | ghi-chu-canh-bao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.10` | nut-cong-khai-cap-do | `Atom/Button` Type=Primary, Size=Medium | `I2527:168067;2514:153363` Atom/Button | — |  | `TC07` | Khớp | QC |
+| `A04.11` | nut-huy-bieu-tuong-x | `Atom/Button` Type=Secondary, Size=Medium | `I2527:168067;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 
 ### `F01` (ngoài Body)
 
@@ -149,7 +149,7 @@ Frame: `CD-CDO-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (2): `A03.01`, `A03.02`
+- Chưa khớp tự động (7): `A03.01`, `A03.02`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.09`
 - Frame Figma chưa có requirement (2): `CD-CDO-010010`, `CD-CDO-010012`
 - Thiếu prototype link đi vào (2): `CD-CDO-010010`, `CD-CDO-010012`
 - Testcase không trỏ REQ (2): `TC13`, `TC22`

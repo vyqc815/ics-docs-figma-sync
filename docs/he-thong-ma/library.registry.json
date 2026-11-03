@@ -13,7 +13,7 @@
   {
    "id": "CM-LI.REQ02",
    "name": "Tìm kiếm và lọc",
-   "text": "Chỉ có ô tìm kiếm (theo cột chính của tab) và lọc `Cấp độ` (một lựa chọn, mặc định `Tất cả`), kết hợp với nhau; `Xoá bộ lọc` đưa về mặc định; phân trang 50 dòng/trang; badge tổng số theo kết quả; ô trống hiện `— trống —` / `— chưa có … —` màu cam.",
+   "text": "Ô tìm kiếm (theo cột chính của tab), lọc `Cấp độ` (một lựa chọn, mặc định `Tất cả`) và lọc `Nâng cao` (`Tất cả / Có / Không`, chỉ Kiến thức và Kỹ năng), kết hợp với nhau; `Xoá bộ lọc` đưa về mặc định; phân trang 50 dòng/trang; badge tổng số theo kết quả; ô trống hiện `— trống —` / `— chưa có … —` màu cam.",
    "source": "qc",
    "content": "qc"
   },
@@ -41,7 +41,7 @@
   {
    "id": "CM-LI.REQ06",
    "name": "Thư viện kiến thức",
-   "text": "Mọi trung tâm có đủ 6 tab Từ vựng, Ngữ pháp, Mẫu câu, Hanzi, Kanji, Phát âm (cộng Bảng chữ theo REQ07); cột theo bảng Giải thích thành phần kèm `Cụm`, `Đang dùng ở`, `Trạng thái`; Loại của Phát âm theo S1; thêm / sửa tại S1.",
+   "text": "Mọi trung tâm có đủ 6 tab Từ vựng, Ngữ pháp, Mẫu câu, Hanzi, Kanji, Phát âm (cộng Bảng chữ theo REQ07); cột theo bảng Giải thích thành phần kèm `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`; Loại của Phát âm theo S1; thêm / sửa tại S1.",
    "source": "qc",
    "content": "qc"
   },
@@ -55,7 +55,7 @@
   {
    "id": "CM-LI.REQ08",
    "name": "Thư viện kỹ năng",
-   "text": "Tab Nghe, Đọc, Viết, Nói; cột nội dung (âm thanh, đoạn văn, đề bài), số câu hỏi, đang dùng ở, trạng thái; phát âm thanh trong bảng, một bài tại một thời điểm; thêm / sửa tại S6.",
+   "text": "Tab Nghe, Đọc, Viết, Nói; cột nội dung (âm thanh, đoạn văn, đề bài), số câu hỏi, đang dùng ở, Nâng cao, trạng thái; phát âm thanh trong bảng, một bài tại một thời điểm; thêm / sửa tại S6.",
    "source": "qc",
    "content": "qc"
   },
@@ -434,7 +434,7 @@
    "source": "tu-dien",
    "content": "qc",
    "requirement": "course_management/library/library.md",
-   "needsDesign": false,
+   "needsDesign": true,
    "figmaDiffNotes": [],
    "items": [
     {
@@ -516,6 +516,21 @@
     },
     {
      "id": "CM-LI.A01.04",
+     "name": "loc-nang-cao",
+     "label": "Lọc Nâng cao",
+     "spec": "Chỉ Thư viện kiến thức và kỹ năng: `Tất cả` (mặc định), `Có`, `Không` theo field Nâng cao của mục (**UI cần bổ sung**).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nâng cao"
+     ],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "CM-LI.A01.05",
      "name": "loc-cap-do",
      "label": "Lọc Cấp độ",
      "spec": "Một lựa chọn: `Tất cả` hoặc một cấp độ trong danh sách [Quản lý cấp độ](../../curriculum_management_requirement/level_management/level_management_requirements.md) của trung tâm. Mặc định `Tất cả`.",
@@ -581,7 +596,7 @@
      "status": "khop-mot-phan"
     },
     {
-     "id": "CM-LI.A01.05",
+     "id": "CM-LI.A01.06",
      "name": "badge-tong-so",
      "label": "Badge tổng số",
      "spec": "Tổng số mục khớp tìm kiếm và lọc của tab đang mở (vd `1.240 từ vựng`, `96 bài nghe`, `248 câu hỏi`).",
@@ -600,10 +615,10 @@
      "status": "chua-thay-tren-figma"
     },
     {
-     "id": "CM-LI.A01.06",
+     "id": "CM-LI.A01.07",
      "name": "xoa-bo-loc",
      "label": "Xoá bộ lọc",
-     "spec": "Đưa ô tìm kiếm về trống và Cấp độ về `Tất cả`.",
+     "spec": "Đưa ô tìm kiếm về trống, Cấp độ và Nâng cao về `Tất cả`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -650,7 +665,7 @@
      "status": "khop-mot-phan"
     },
     {
-     "id": "CM-LI.A01.07",
+     "id": "CM-LI.A01.08",
      "name": "cot-cum",
      "label": "Cột Cụm",
      "spec": "Chip cụm kiến thức chứa mục (vd `01. Chào hỏi`); nhiều cụm thì hiện cụm đầu kèm `+N`. Chỉ có ở Thư viện kiến thức.",
@@ -690,7 +705,7 @@
      "status": "khop-mot-phan"
     },
     {
-     "id": "CM-LI.A01.08",
+     "id": "CM-LI.A01.09",
      "name": "cot-dang-dung-o",
      "label": "Cột Đang dùng ở",
      "spec": "Kỳ và bài đang dùng mục: một bài hiện tên bài (`HK I · Bài 1`), nhiều bài hiện số bài (`HK I · 3 bài`); chưa gắn bài nào hiện `Chưa dùng` màu cam. Chỉ có ở Thư viện kiến thức, kỹ năng; Ngân hàng câu hỏi không có cột này.",
@@ -732,7 +747,22 @@
      "status": "khop-mot-phan"
     },
     {
-     "id": "CM-LI.A01.09",
+     "id": "CM-LI.A01.10",
+     "name": "cot-nang-cao",
+     "label": "Cột Nâng cao",
+     "spec": "`Có` / `Không`; chỉ có ở Thư viện kiến thức và kỹ năng, đứng trước cột `Trạng thái` (**UI cần bổ sung**).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nâng cao"
+     ],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "CM-LI.A01.11",
      "name": "cot-trang-thai",
      "label": "Cột Trạng thái",
      "spec": "Badge `Nháp` (cam), `Công khai` (xanh lá), `Vô hiệu` (xám). Quy tắc ở khu vực Trạng thái và xoá mục.",
@@ -788,7 +818,7 @@
      "status": "khop"
     },
     {
-     "id": "CM-LI.A01.10",
+     "id": "CM-LI.A01.12",
      "name": "menu-cuoi-dong",
      "label": "Menu ⋮ cuối dòng",
      "spec": "Kiến thức, Kỹ năng: `Đổi trạng thái`, `Xoá`. Bài tập: không có.",
@@ -803,7 +833,7 @@
      "status": "chua-thay-tren-figma"
     },
     {
-     "id": "CM-LI.A01.11",
+     "id": "CM-LI.A01.13",
      "name": "o-trong",
      "label": "Ô trống",
      "spec": "Field bắt buộc đang trống hiện `— trống —` màu cam (vd Nghĩa, Phiên âm); nội dung đặc thù hiện `— chưa có file âm thanh —`, `— chưa có đoạn văn —`, `— chưa có đề bài —`, `— chưa có file —`. `0 câu` màu cam.",
@@ -858,7 +888,7 @@
      "status": "khop"
     },
     {
-     "id": "CM-LI.A01.12",
+     "id": "CM-LI.A01.14",
      "name": "phan-trang",
      "label": "Phân trang",
      "spec": "50 dòng/trang; dòng chú thích `Hiển thị 1–50 trong N …`; nút số trang, `…`, trang cuối.",
@@ -1206,7 +1236,7 @@
      "id": "CM-LI.A03.02",
      "name": "cot-tab-tu-vung",
      "label": "Cột tab Từ vựng",
-     "spec": "`STT`, `Từ`, `Phiên âm`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Từ, Phiên âm, Nghĩa.",
+     "spec": "`STT`, `Từ`, `Phiên âm`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Từ, Phiên âm, Nghĩa.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -1248,7 +1278,7 @@
      "id": "CM-LI.A03.03",
      "name": "cot-tab-ngu-phap",
      "label": "Cột tab Ngữ pháp",
-     "spec": "`STT`, `Cấu trúc` (tên điểm ngữ pháp, dòng phụ là một ví dụ), `Ý nghĩa`, `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Cấu trúc, Ý nghĩa.",
+     "spec": "`STT`, `Cấu trúc` (tên điểm ngữ pháp, dòng phụ là một ví dụ), `Ý nghĩa`, `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Cấu trúc, Ý nghĩa.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -1290,7 +1320,7 @@
      "id": "CM-LI.A03.04",
      "name": "cot-tab-mau-cau",
      "label": "Cột tab Mẫu câu",
-     "spec": "`STT`, `Câu`, `Phiên âm`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Câu, Phiên âm, Nghĩa.",
+     "spec": "`STT`, `Câu`, `Phiên âm`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Câu, Phiên âm, Nghĩa.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -1332,7 +1362,7 @@
      "id": "CM-LI.A03.05",
      "name": "cot-tab-hanzi",
      "label": "Cột tab Hanzi",
-     "spec": "`STT`, `Chữ`, `Phiên âm`, `Hán Việt`, `Nghĩa`, `Bộ thủ` (ký tự + tên, vd `亻 nhân`), `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Chữ, Phiên âm, Hán Việt, Nghĩa.",
+     "spec": "`STT`, `Chữ`, `Phiên âm`, `Hán Việt`, `Nghĩa`, `Bộ thủ` (ký tự + tên, vd `亻 nhân`), `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Chữ, Phiên âm, Hán Việt, Nghĩa.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -1374,7 +1404,7 @@
      "id": "CM-LI.A03.06",
      "name": "cot-tab-kanji",
      "label": "Cột tab Kanji",
-     "spec": "`STT`, `Chữ`, `Âm On`, `Âm Kun`, `Hán Việt`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Chữ, Âm On / Kun, Hán Việt, Nghĩa.",
+     "spec": "`STT`, `Chữ`, `Âm On`, `Âm Kun`, `Hán Việt`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Chữ, Âm On / Kun, Hán Việt, Nghĩa.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -1416,7 +1446,7 @@
      "id": "CM-LI.A03.07",
      "name": "cot-tab-phat-am",
      "label": "Cột tab Phát âm",
-     "spec": "`STT`, `Âm`, `Loại` (badge `Thanh mẫu` / `Vận mẫu` / `Âm tiết` theo S1), `Ví dụ` (chữ + phiên âm), `Âm thanh` (nút phát + thời lượng `mm:ss`; chưa có file hiện `— chưa có file —`), `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Âm, Ví dụ.",
+     "spec": "`STT`, `Âm`, `Loại` (badge `Thanh mẫu` / `Vận mẫu` / `Âm tiết` theo S1), `Ví dụ` (chữ + phiên âm), `Âm thanh` (nút phát + thời lượng `mm:ss`; chưa có file hiện `— chưa có file —`), `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Âm, Ví dụ.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -1933,7 +1963,7 @@
      "id": "CM-LI.A05.01",
      "name": "cot-tab-nghe",
      "label": "Cột tab Nghe",
-     "spec": "`STT`, `Bài nghe` (tiêu đề + mô tả), `Âm thanh` (nút phát, thanh tiến độ, thời lượng `mm:ss`; chưa có file hiện `— chưa có file âm thanh —`), `Số câu hỏi`, `Đang dùng ở`, `Trạng thái`.",
+     "spec": "`STT`, `Bài nghe` (tiêu đề + mô tả), `Âm thanh` (nút phát, thanh tiến độ, thời lượng `mm:ss`; chưa có file hiện `— chưa có file âm thanh —`), `Số câu hỏi`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -1975,7 +2005,7 @@
      "id": "CM-LI.A05.02",
      "name": "cot-tab-doc",
      "label": "Cột tab Đọc",
-     "spec": "`STT`, `Bài đọc` (tiêu đề + mô tả), `Đoạn văn` (một dòng, dài thì cắt `…`; chưa có hiện `— chưa có đoạn văn —`), `Số câu hỏi`, `Đang dùng ở`, `Trạng thái`.",
+     "spec": "`STT`, `Bài đọc` (tiêu đề + mô tả), `Đoạn văn` (một dòng, dài thì cắt `…`; chưa có hiện `— chưa có đoạn văn —`), `Số câu hỏi`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -2017,7 +2047,7 @@
      "id": "CM-LI.A05.03",
      "name": "cot-tab-viet",
      "label": "Cột tab Viết",
-     "spec": "`STT`, `Bài viết` (tiêu đề + mô tả), `Đề bài` (một dòng; chưa có hiện `— chưa có đề bài —`), `Số câu hỏi`, `Đang dùng ở`, `Trạng thái`.",
+     "spec": "`STT`, `Bài viết` (tiêu đề + mô tả), `Đề bài` (một dòng; chưa có hiện `— chưa có đề bài —`), `Số câu hỏi`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -2059,7 +2089,7 @@
      "id": "CM-LI.A05.04",
      "name": "cot-tab-noi",
      "label": "Cột tab Nói",
-     "spec": "`STT`, `Bài nói` (tiêu đề + mô tả), `Đề bài` (như tab Viết), `Số câu hỏi`, `Đang dùng ở`, `Trạng thái`.",
+     "spec": "`STT`, `Bài nói` (tiêu đề + mô tả), `Đề bài` (như tab Viết), `Số câu hỏi`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -4075,8 +4105,8 @@
     "CM-LI.FLOW01"
    ],
    "items": [
-    "CM-LI.A01.04",
-    "CM-LI.A01.05"
+    "CM-LI.A01.05",
+    "CM-LI.A01.06"
    ]
   },
   {
@@ -4096,7 +4126,7 @@
     "CM-LI.FLOW01"
    ],
    "items": [
-    "CM-LI.A01.05"
+    "CM-LI.A01.06"
    ]
   },
   {
@@ -4115,7 +4145,7 @@
    "flows": [],
    "items": [
     "CM-LI.A01.03",
-    "CM-LI.A01.06"
+    "CM-LI.A01.07"
    ]
   },
   {
@@ -4151,7 +4181,7 @@
    "exceptions": [],
    "flows": [],
    "items": [
-    "CM-LI.A01.08"
+    "CM-LI.A01.09"
    ]
   },
   {
@@ -4309,6 +4339,22 @@
    "content": "qc",
    "requirements": [
     "CM-LI.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-LI.TC13a",
+   "title": "Case 13a: Lọc Nâng cao",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-LI.A03",
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-LI.REQ02"
    ],
    "exceptions": [],
    "flows": [],

@@ -46,15 +46,17 @@ Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` (tool đoán:CD-KH-070160,
 | `A01.01` | tieu-de-mo-ta |  | `5729:91619` Tiêu đề trang | có |  |  | Khớp một phần | QC |
 | `A01.02` | thanh-tab |  |  | — |  | `TC04` | Chưa khớp tự động | QC |
 | `A01.03` | o-tim-kiem |  |  | — |  | `TC03` | Chưa khớp tự động | QC |
-| `A01.04` | loc-cap-do | `DD/Molecule/Trigger` Size=S, State=Default | `5729:91632` Bộ lọc · Cấp độ | có |  | `TC01` | Khớp một phần | QC |
-| `A01.05` | badge-tong-so |  |  | — |  | `TC01`, `TC02` | Chưa khớp tự động | QC |
-| `A01.06` | xoa-bo-loc | `Atom/Button` Type=Outlined, Size=Small | `5729:91635` Xoá bộ lọc | có |  | `TC03` | Khớp một phần | QC |
-| `A01.07` | cot-cum |  | `5729:92951` Cụm | có |  |  | Khớp một phần | QC |
-| `A01.08` | cot-dang-dung-o |  | `5729:93307` Đang dùng ở | có |  | `TC05` | Khớp một phần | QC |
-| `A01.09` | cot-trang-thai |  | `5729:93309` Trạng thái | có |  |  | Khớp | QC |
-| `A01.10` | menu-cuoi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.11` | o-trong |  | `5729:91870` Hiển thị 1–50 trong 104 chữ | có |  |  | Khớp | QC |
-| `A01.12` | phan-trang |  | `5729:91869` Footer · Phân trang | có |  |  | Khớp một phần | QC |
+| `A01.04` | loc-nang-cao |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A01.05` | loc-cap-do | `DD/Molecule/Trigger` Size=S, State=Default | `5729:91632` Bộ lọc · Cấp độ | có |  | `TC01` | Khớp một phần | QC |
+| `A01.06` | badge-tong-so |  |  | — |  | `TC01`, `TC02` | Chưa khớp tự động | QC |
+| `A01.07` | xoa-bo-loc | `Atom/Button` Type=Outlined, Size=Small | `5729:91635` Xoá bộ lọc | có |  | `TC03` | Khớp một phần | QC |
+| `A01.08` | cot-cum |  | `5729:92951` Cụm | có |  |  | Khớp một phần | QC |
+| `A01.09` | cot-dang-dung-o |  | `5729:93307` Đang dùng ở | có |  | `TC05` | Khớp một phần | QC |
+| `A01.10` | cot-nang-cao |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A01.11` | cot-trang-thai |  | `5729:93309` Trạng thái | có |  |  | Khớp | QC |
+| `A01.12` | menu-cuoi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.13` | o-trong |  | `5729:91870` Hiển thị 1–50 trong 104 chữ | có |  |  | Khớp | QC |
+| `A01.14` | phan-trang |  | `5729:91869` Footer · Phân trang | có |  |  | Khớp một phần | QC |
 
 ### `A02` Trạng thái và xoá mục
 
@@ -198,13 +200,13 @@ Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` · Nguồn nội dung: Fig
 | Mã | Tên | Nội dung |
 |---|---|---|
 | `REQ01` | Phạm vi dữ liệu | Thư viện chỉ hiển thị dữ liệu của trung tâm CD đang chọn ở header; đổi trung tâm thì tải lại theo trung tâm mới. |
-| `REQ02` | Tìm kiếm và lọc | Chỉ có ô tìm kiếm (theo cột chính của tab) và lọc `Cấp độ` (một lựa chọn, mặc định `Tất cả`), kết hợp với nhau; `Xoá bộ lọc` đưa về mặc định; phân trang 50 dòng/trang; badge tổng số theo kết quả; ô trống hiện `— trống —` / `— chưa có … —` màu cam. |
+| `REQ02` | Tìm kiếm và lọc | Ô tìm kiếm (theo cột chính của tab), lọc `Cấp độ` (một lựa chọn, mặc định `Tất cả`) và lọc `Nâng cao` (`Tất cả / Có / Không`, chỉ Kiến thức và Kỹ năng), kết hợp với nhau; `Xoá bộ lọc` đưa về mặc định; phân trang 50 dòng/trang; badge tổng số theo kết quả; ô trống hiện `— trống —` / `— chưa có … —` màu cam. |
 | `REQ03` | Đang dùng ở | Hiển thị kỳ và bài đang dùng mục: một bài hiện tên bài, nhiều bài hiện số bài; chưa gắn bài nào hiển thị `Chưa dùng`. |
 | `REQ04` | Trạng thái mục kiến thức, kỹ năng | `Nháp` → `Công khai` / `Vô hiệu`; `Công khai` → `Vô hiệu`; `Vô hiệu` → `Công khai`; không về `Nháp`; menu con chỉ hiện trạng thái được phép. Mục `Vô hiệu` không được thêm mới vào bài; bài đã gắn trước đó vẫn dùng. |
 | `REQ05` | Xoá | Chỉ xoá mềm mục `Nháp` / `Vô hiệu` chưa dùng ở bài nào, qua popup xác nhận; mục `Công khai` hoặc đang dùng thì `Xoá` mờ kèm tooltip, backend từ chối request. |
-| `REQ06` | Thư viện kiến thức | Mọi trung tâm có đủ 6 tab Từ vựng, Ngữ pháp, Mẫu câu, Hanzi, Kanji, Phát âm (cộng Bảng chữ theo REQ07); cột theo bảng Giải thích thành phần kèm `Cụm`, `Đang dùng ở`, `Trạng thái`; Loại của Phát âm theo S1; thêm / sửa tại S1. |
+| `REQ06` | Thư viện kiến thức | Mọi trung tâm có đủ 6 tab Từ vựng, Ngữ pháp, Mẫu câu, Hanzi, Kanji, Phát âm (cộng Bảng chữ theo REQ07); cột theo bảng Giải thích thành phần kèm `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`; Loại của Phát âm theo S1; thêm / sửa tại S1. |
 | `REQ07` | Bảng chữ | Tab chỉ ở trung tâm có hệ chữ riêng (Sakumi: Hiragana / Katakana, 104 mục, 1 dòng = cặp chữ; Saechang: Hangul, 40 jamo); hai dạng xem danh sách và lưới; lưới có panel Chi tiết chữ và `Nghe phát âm`; tìm kiếm / Cấp độ áp dụng cả hai dạng; dạng lưới chỉ có ở Thư viện. |
-| `REQ08` | Thư viện kỹ năng | Tab Nghe, Đọc, Viết, Nói; cột nội dung (âm thanh, đoạn văn, đề bài), số câu hỏi, đang dùng ở, trạng thái; phát âm thanh trong bảng, một bài tại một thời điểm; thêm / sửa tại S6. |
+| `REQ08` | Thư viện kỹ năng | Tab Nghe, Đọc, Viết, Nói; cột nội dung (âm thanh, đoạn văn, đề bài), số câu hỏi, đang dùng ở, Nâng cao, trạng thái; phát âm thanh trong bảng, một bài tại một thời điểm; thêm / sửa tại S6. |
 | `REQ09` | Thư viện bài tập | 3 tab Ngân hàng câu hỏi, BTVN Mẫu, Kiểm Tra Mẫu; không đổi trạng thái, không xoá câu; Ngân hàng câu hỏi không có cột `Đang dùng ở`, cột `Kiến thức / Kỹ năng` chỉ ghi `Kiến thức` hoặc `Kỹ năng`; trạng thái câu hỏi lấy theo khoá học chứa câu (`Chưa dùng` khi chưa thuộc bài nào); tag `AI` cho câu AI chưa được sửa; hai tab mẫu không có cột Tổng điểm. |
 | `REQ10` | Chi tiết câu hỏi | Bấm câu ở Ngân hàng câu hỏi mở Chi tiết câu hỏi; sửa được khi câu `Chưa dùng` hoặc mọi khoá học chứa câu đều đang `Nháp`, khác thì chỉ xem (học viên có thể đã làm câu) (banner, ẩn nút sửa, `Đóng`); sửa là sửa câu gốc, mọi bộ BTVN / bài kiểm tra dùng câu thấy nội dung mới; câu Nghe có kịch bản theo lượt và đối tượng, câu Đọc có văn bản theo câu và từ khoá (chọn được từ có sẵn ở S1); sửa kịch bản / giọng câu Nghe thì tạo lại audio; backend kiểm tra lại điều kiện sửa. |
 | `EX01` | Ngoại lệ | Request chuyển trạng thái không hợp lệ (`Công khai` → `Nháp`, `Vô hiệu` → `Nháp`) → backend từ chối; trạng thái giữ nguyên. |
@@ -220,11 +222,11 @@ Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` · Nguồn nội dung: Fig
 
 | Mã | Tên | Priority | Smoke | Scenario | Khu vực | Item |
 |---|---|---|---|---|---|---|
-| `TC01` | Case 1: Mở Thư viện | High | Có | Flow 1 / REQ01 | `A01` | `A01.04`, `A01.05` |
-| `TC02` | Case 2: Tìm kiếm kết hợp Cấp độ | High |  | Flow 1 / REQ02 | `A01` | `A01.05` |
-| `TC03` | Case 3: Xoá bộ lọc | Medium |  | REQ02 | `A01` | `A01.03`, `A01.06` |
+| `TC01` | Case 1: Mở Thư viện | High | Có | Flow 1 / REQ01 | `A01` | `A01.05`, `A01.06` |
+| `TC02` | Case 2: Tìm kiếm kết hợp Cấp độ | High |  | Flow 1 / REQ02 | `A01` | `A01.06` |
+| `TC03` | Case 3: Xoá bộ lọc | Medium |  | REQ02 | `A01` | `A01.03`, `A01.07` |
 | `TC04` | Case 4: Đổi trung tâm | High |  | REQ01 | `A01` | `A01.02` |
-| `TC05` | Case 5: Cột Đang dùng ở | Medium |  | REQ03 | `A01` | `A01.08` |
+| `TC05` | Case 5: Cột Đang dùng ở | Medium |  | REQ03 | `A01` | `A01.09` |
 | `TC5a` | Case 5a: Ô trống | Medium |  | REQ02 | `A01` |  |
 | `TC06` | Case 6: Đổi Nháp sang Công khai | High | Có | Flow 2 / REQ04 | `A02` | `A02.01` |
 | `TC07` | Case 7: Menu con theo trạng thái | High |  | EX01 / REQ04 | `A02` | `A02.01` |
@@ -234,6 +236,7 @@ Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` · Nguồn nội dung: Fig
 | `TC11` | Case 11: Huỷ xoá | Medium |  | Flow 3 | `A02` |  |
 | `TC12` | Case 12: Đủ tab ở mọi trung tâm | High |  | REQ06 | `A03` | `A03.01` |
 | `TC13` | Case 13: Cột theo tab | Medium |  | REQ06 | `A03` |  |
+| `TC13a` | Case 13a: Lọc Nâng cao | Medium |  | REQ02 | `A03` |  |
 | `TC14` | Case 14: Sửa ở S1 hiển thị ở Thư viện | High |  | REQ06 | `A03` |  |
 | `TC14a` | Case 14a: Tab rỗng | Low |  | REQ06 | `A03` |  |
 | `TC15` | Case 15: Tab Bảng chữ theo trung tâm | High |  | REQ07 | `A04` |  |
@@ -279,7 +282,7 @@ Frame: `CD-KH-070160`, `CD-KH-070170`, `CD-KH-070304` · Nguồn nội dung: Fig
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (30): `A01.02`, `A01.03`, `A01.05`, `A01.10`, `A02.01`, `A03.08`, `A04.09`, `A05.05`, `A05.06`, `A05.07`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A06.05`, `A06.07`, `A06.08`, `A06.09`, `A06.10`, `A07.01`, `A07.10`, `A07.11`, `A07.12`, `A07.17`, `A07.19`, `A07.20`, `A07.21`, `A07.22`, `A08.01`, `A08.02`
+- Chưa khớp tự động (30): `A01.02`, `A01.03`, `A01.06`, `A01.12`, `A02.01`, `A03.08`, `A04.09`, `A05.05`, `A05.06`, `A05.07`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A06.05`, `A06.07`, `A06.08`, `A06.09`, `A06.10`, `A07.01`, `A07.10`, `A07.11`, `A07.12`, `A07.17`, `A07.19`, `A07.20`, `A07.21`, `A07.22`, `A08.01`, `A08.02`
 - Requirement ghi thiếu, Figma đã có (2): `A07.06`, `A07.24`
 - Phân loại cần design duyệt (10): `CD-KH-070161`, `CD-KH-070171`, `CD-KH-070301`, `CD-KH-070302`, `CD-KH-070303`, `CD-KH-070305`, `CD-KH-070306`, `CD-KH-070307`, `CD-KH-070309`, `CD-KH-070313`
 - Thiếu prototype link đi vào (4): `CD-KH-070161`, `CD-KH-070171`, `CD-KH-070303`, `CD-KH-070313`

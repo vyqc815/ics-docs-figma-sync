@@ -15,7 +15,7 @@ Requirement: `course_management/semester/lesson/lesson.md` — Học Kỳ - Tab 
 - `FLOW01` Mở chi tiết — 
 - `FLOW02` Chỉnh sửa & lưu gộp — 
 - `FLOW03` Tài nguyên — 
-- `FLOW05` Thêm kiến thức / kỹ năng vào bài — 
+- `FLOW05` Xem kiến thức / kỹ năng của bài theo cụm liên kết — 
 - `FLOW04` Tự tạo/xoá bài học theo "Số buổi" ở Tổng quan (S2) — 
 
 ## 3. Popup, trạng thái, dropdown
@@ -89,7 +89,7 @@ Frame: `CD-KH-030211`, `CD-KH-030244`, `CD-KH-030247` (tool đoán:CD-KH-030211,
 
 ### `A06` Popup: Chi tiết bài học - Tab Kỹ năng (mới — **UI cần bổ sung Figma**)
 
-Frame: `CD-KH-030242`, `CD-KH-030245`, `CD-KH-030246` (tool đoán:CD-KH-030242, CD-KH-030245, CD-KH-030246) · Nguồn nội dung: QC
+Frame: `CD-KH-030242`, `CD-KH-030245` (tool đoán:CD-KH-030242, CD-KH-030245) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
@@ -119,24 +119,24 @@ Frame: `CD-KH-030200` · Nguồn nội dung: Figma
 | Mã | Tên | Nội dung |
 |---|---|---|
 | `REQ01` | Danh sách chỉ xem | Không kéo-thả, không thêm/xoá thủ công. Thứ tự cố định theo 3 số cuối Mã bài học. Card không có nhãn cam, mũi tên. |
-| `REQ02` | Icon 3 phần | Sáng khi số lượng phần đó > 0 (icon Kiến thức = số kiến thức + số bài kỹ năng), tối khi = 0. |
+| `REQ02` | Icon 3 phần | Sáng khi số lượng phần đó > 0 (icon Kiến thức = số loại kiến thức + số loại kỹ năng có cụm liên kết), tối khi = 0. |
 | `REQ03` | Nội dung dạng text | 1 loại nội dung text, nhóm → nội dung; tên bắt buộc; mô tả nội dung ≤ 500 ký tự; kéo-thả/xoá/badge theo mục 1. |
-| `REQ04` | Không sửa kiến thức/kỹ năng từ bài học | Chỉ tạo/sửa ở S1 / S6; bài học chỉ thêm/gỡ; không gắn trùng 1 mục vào cùng bài học. |
-| `REQ10` | Tab Kiến thức / Kỹ năng | 2 tab riêng, mỗi tab là danh sách mục đã gắn + nút "+" mở popup 3 bước: loại → cụm → mục (chọn nhiều). Kiến thức lấy từ S1, Kỹ năng lấy từ S6 của khoá đang mở. |
-| `REQ12` | Thêm cả cụm & đồng bộ khi đổi cụm | "Chọn tất cả" trong cụm thêm một lần mọi mục hợp lệ, không tự gắn mục mới. Gỡ mục khỏi cụm / xoá cụm ở S1 / S6 thì gỡ mục tương ứng khỏi bài học (có cảnh báo). |
-| `REQ11` | Kỹ năng/Kiến thức ở tab Thông tin | Read-only, tự sinh = tập **loại** có ≥ 1 mục ở tab Kiến thức / Kỹ năng; không lưu riêng, không chọn tay. |
+| `REQ04` | Không sửa kiến thức/kỹ năng từ bài học | Chỉ tạo / sửa / chia cụm / liên kết ở S1 / S6; bài học chỉ xem. |
+| `REQ10` | Tab Kiến thức / Kỹ năng | 2 tab riêng, chỉ xem: bộ lọc Loại (mặc định Từ vựng / Nghe), tiêu đề = tên cụm đã liên kết với bài cho loại đó, danh sách mục của cụm theo thứ tự trong cụm, khung phải chi tiết. Kiến thức lấy từ S1, Kỹ năng lấy từ S6 của khoá đang mở. Badge tab = số loại có cụm liên kết. |
+| `REQ12` | Liên kết cụm ↔ bài học | Một cụm liên kết đúng 1 bài học; một bài học tối đa 1 cụm mỗi loại; BE bắt trùng (EX02). Liên kết lập / đổi / bỏ tại S1 / S6; mọi thay đổi trong cụm phản ánh ngay ở bài học. Nhân bản khoá sao chép liên kết. |
+| `REQ11` | Kỹ năng/Kiến thức ở tab Thông tin | Read-only, tự sinh = tập **loại** có cụm liên kết với bài; không lưu riêng, không chọn tay. |
 | `REQ05` | Mã bài học | 12 số `CCAALLBBBEEE`: `CC` = mã trung tâm, `AA` = ID danh mục, `LL` = ID cấp độ (lấy từ ID khoá học `CCAALLMMM`), `BBB` = 3 số cuối ID học kỳ (`CCAALLMMMBBB`), `EEE` = số thứ tự bài học (`001`–`999`). Mã không chứa `MMM` của khoá học. Tự sinh, không sửa thủ công; đồng bộ khi ID học kỳ / ID khoá học đổi (EX03). |
 | `REQ06` | Tự tạo/xoá bài học | Số bài học = "Số buổi" ở S2. Tên mặc định `Bài học {số thứ tự}`. Xoá = xoá mềm bài + dữ liệu con (nội dung, tài nguyên, liên kết kiến thức/kỹ năng). |
 | `REQ07` | Cột buổi học | Lấy từ tick ở Lộ trình (S4), chỉ xem; màu thời lượng và trạng thái trống theo mục 1. |
-| `REQ08` | Lưu & Hủy | Thông tin/Nội dung/Kiến thức/Kỹ năng lưu gộp khi "Lưu thay đổi"; Tài nguyên lưu/xoá ngay; Hủy/X/click ngoài có popup xác nhận khi còn thay đổi chưa lưu. |
+| `REQ08` | Lưu & Hủy | Thông tin / Nội dung lưu gộp khi "Lưu thay đổi" (Kiến thức / Kỹ năng chỉ xem); Tài nguyên lưu/xoá ngay; Hủy/X/click ngoài có popup xác nhận khi còn thay đổi chưa lưu. |
 | `REQ09` | Quyền theo trạng thái | Chỉ sửa bài học (thông tin, nội dung, tài nguyên, kiến thức/kỹ năng) và đổi "Số buổi" khi học kỳ `Nháp` **và** khoá học `Nháp`. Bài học không có trạng thái riêng, đi theo trạng thái học kỳ / khoá học. Nhân bản học kỳ / khoá học sao chép toàn bộ bài học (xem `information.md` REQ06, `course_management.md` REQ11). |
 | `EX01` | Ngoại lệ | Tên nhóm/nội dung trống hoặc chỉ khoảng trắng → chặn thêm/lưu. |
-| `EX02` | Ngoại lệ | Kiến thức/kỹ năng đã gắn → không gắn trùng (trong popup mục đã gắn tick sẵn + disable; BE bỏ qua bản ghi trùng). |
-| `EX06` | Ngoại lệ | Loại chưa có cụm / cụm chưa có mục ở S1 hoặc S6 → popup hiển thị trạng thái trống (`Chưa có cụm` / `Cụm chưa có kiến thức`), nút `Thêm` disable. |
-| `EX07` | Ngoại lệ | Xoá (gỡ khỏi khoá) mục kiến thức / bài kỹ năng ở S1 / S6 khi đang gắn vào bài học → **popup cảnh báo** liệt kê bài học đang dùng; xác nhận → BE tự gỡ khỏi mọi bài học liên quan. (**UI cần bổ sung** popup cảnh báo ở S1 / S6.) |
-| `EX10` | Ngoại lệ | Mục `Chưa phân cụm` → không thêm được vào bài (popup không hiển thị; BE từ chối). |
-| `EX08` | Ngoại lệ | Mục thiếu thông tin / chưa hoàn chỉnh ở S1 / S6 → không được gắn vào bài (popup disable, "Chọn tất cả" bỏ qua; BE từ chối). |
-| `EX09` | Ngoại lệ | Ở S1 / S6, mục bị **gỡ khỏi cụm** hoặc cụm bị **xoá** → mục đó (mọi mục của cụm khi xoá cụm) **tự gỡ khỏi các bài học** đã thêm nó từ cụm đó, có cảnh báo liệt kê bài học. Thêm mục mới vào cụm **không** tự gắn vào bài. Gỡ ở bài học (nút x) chỉ xoá liên kết, mục vẫn ở S1 / S6 và cụm. |
+| `EX02` | Ngoại lệ | Liên kết cụm thứ hai cùng loại vào một bài học (từ S1 / S6 hoặc API) → BE từ chối, bài giữ cụm cũ; popup liên kết mờ bài đã có cụm cùng loại. |
+| `EX06` | Ngoại lệ | Loại chưa có cụm liên kết, hoặc cụm liên kết chưa có mục → tab hiển thị trạng thái trống (`Chưa có cụm <loại> liên kết với bài này` / `Cụm <tên> chưa có mục`), badge không đếm loại đó. |
+| `EX07` | Ngoại lệ | Gỡ mục / bài khỏi khoá ở S1 / S6 khi thuộc cụm đã liên kết bài học → popup gỡ nêu cụm và bài học; xác nhận → mục mất khỏi cụm và khỏi bài học. |
+| `EX10` | Ngoại lệ | Mục `Chưa phân cụm` → không xuất hiện ở bài học nào; gửi API gắn mục trực tiếp vào bài học → BE từ chối (không còn liên kết mục ↔ bài). |
+| `EX08` | Ngoại lệ | Mục thiếu thông tin trong cụm liên kết → vẫn hiện ở tab với chấm cam (bài học phản ánh cụm); app học viên chỉ dùng mục đủ thông tin. |
+| `EX09` | Ngoại lệ | Ở S1 / S6, mục được thêm vào / gỡ khỏi / chuyển cụm → bài học liên kết cụm phản ánh ngay, không cảnh báo. Giảm Số buổi ở S2 làm mất cụm đang liên kết → BE chặn (xem Tổng quan (S2) EX05). |
 | `EX03` | Ngoại lệ | `BBB` của ID học kỳ đổi (chỉ khi học kỳ `Nháp`) hoặc `CCAALL` của ID khoá học đổi (chỉ khi khoá học `Nháp`, xem `course_management.md` REQ06) → đồng bộ 9 số đầu Mã bài học của **tất cả** bài học bị ảnh hưởng, `EEE` giữ nguyên. |
 | `EX04` | Ngoại lệ | Học kỳ hoặc khoá học `Công khai`/`Vô hiệu` → popup chỉ đọc (gồm cả tab Tài nguyên), không cho đổi "Số buổi" ở S2; gọi API ghi trực tiếp → BE từ chối, dữ liệu không đổi. |
 | `EX05` | Ngoại lệ | "Lưu thay đổi" thất bại → không ghi một phần, popup giữ nguyên thay đổi chưa lưu để thử lại. |
@@ -151,16 +151,16 @@ Frame: `CD-KH-030200` · Nguồn nội dung: Figma
 | `TC04` | Case 4: Xoá & kéo-thả nội dung | High |  | CD; `Nháp`; ≥ 2 nhóm, mỗi nhóm có nội dung | — |  |
 | `TC05` | Case 5: Cột buổi học theo S4 | High |  | CD; có bài đã tick và bài chưa tick ở S4; thời lượng chuẩn 01:30:00 | — |  |
 | `TC06` | Case 6: Tài nguyên (file, link, menu 3 chấm) | High |  | CD; `Nháp`; tab Tài nguyên | — |  |
-| `TC07` | Case 7: Thêm/gỡ kiến thức | High |  | CD; `Nháp`; bài đã gắn sẵn 1 từ vựng cụm 1; S1 có Ngữ pháp cụm 2 | — |  |
-| `TC7b` | Case 7b: Thêm/gỡ kỹ năng | High |  | CD; `Nháp`; S6 có bài Nghe, Đọc | — |  |
-| `TC7c` | Case 7c: Tag tự động ở tab Thông tin | High |  | CD; `Nháp` | — |  |
-| `TC7e` | Case 7e: Thêm cả cụm | High |  | CD; `Nháp`; cụm 1 Từ vựng có 5 mục (1 mục thiếu thông tin) | — |  |
-| `TC7h` | Case 7h: Gỡ khỏi cụm / xoá cụm ở S1 | High |  | Bài 1 đã thêm 4 mục từ cụm 1 | — |  |
-| `TC7f` | Case 7f: Xoá ở S1/S6 khi đang gắn | High |  | Mục đang gắn vào 2 bài học | — |  |
-| `TC7g` | Case 7g: Xem chi tiết 2 khung | Medium |  | Bài có kiến thức | — |  |
-| `TC7d` | Case 7d: Popup trống | Medium |  | CD; loại chưa có cụm / cụm rỗng; loại `Viết`/`Nói` | — |  |
+| `TC07` | Case 7: Tab Kiến thức hiện mục của cụm liên kết | High | Có | CD; cụm Từ vựng `Gia đình` (16 mục) liên kết Bài 1; cụm Ngữ pháp `Chủ đề 2` liên kết Bài 1 | — |  |
+| `TC7b` | Case 7b: Tab Kỹ năng hiện bài của cụm liên kết | High | Có | CD; cụm Nghe `Chào hỏi` (3 bài) liên kết Bài 1 | — |  |
+| `TC7c` | Case 7c: Tag tự động và badge theo số loại | High |  | CD; Bài 1 có cụm Từ vựng, Ngữ pháp, Mẫu câu và cụm Nghe liên kết | — |  |
+| `TC7e` | Case 7e: Cụm thay đổi, bài học phản ánh ngay | High |  | CD; cụm `Gia đình` liên kết Bài 1 | — |  |
+| `TC7h` | Case 7h: BE bắt trùng cụm cùng loại | High |  | CD; Bài 1 đã có cụm Từ vựng `Gia đình` | — |  |
+| `TC7f` | Case 7f: Gỡ mục khỏi khoá ở S1 khi thuộc cụm liên kết | High |  | Mục `爸爸` thuộc cụm `Gia đình` liên kết Bài 1 | — |  |
+| `TC7g` | Case 7g: Xem chi tiết 2 khung | Medium |  | Bài có cụm liên kết | — |  |
+| `TC7d` | Case 7d: Mục Chưa phân cụm và API gắn trực tiếp | Medium |  | CD; mục `你好` ở `Chưa phân cụm` | — |  |
 | `TC08` | Case 8: Lưu gộp, Hủy & lỗi | High |  | CD; `Nháp`; sửa ở nhiều tab | — |  |
-| `TC09` | Case 9: Tăng/giảm số buổi | High |  | CD; học kỳ `Nháp` có 20 bài; bài cuối có nội dung/tài nguyên/kiến thức | — |  |
+| `TC09` | Case 9: Tăng/giảm số buổi | High |  | CD; học kỳ `Nháp` có 20 bài; bài cuối có nội dung/tài nguyên/cụm liên kết | — |  |
 | `TC10` | Case 10: Chỉ đọc & phân quyền | High |  | CD với học kỳ `Công khai`/`Vô hiệu`, hoặc học kỳ `Nháp` thuộc khoá học `Công khai`/`Vô hiệu`; role không phải CD | — |  |
 
 ## 7. Code

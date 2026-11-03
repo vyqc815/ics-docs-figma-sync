@@ -99,9 +99,9 @@
    "content": "figma",
    "nodeId": "1901:3763",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-cdo-010010",
    "link": "/quan-ly-cap-do?popup=CD-CDO-010010",
    "dark": "CD-CDO-010010-DK",
    "openedFrom": [],
@@ -122,9 +122,9 @@
    "content": "figma",
    "nodeId": "1901:3819",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-cdo-010012",
    "link": "/quan-ly-cap-do?state=CD-CDO-010012",
    "dark": "CD-CDO-010012-DK",
    "openedFrom": [],
@@ -453,7 +453,21 @@
      "spec": "Hiển thị (chỉ đọc) đúng Tên cấp độ đang thao tác.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-cdo-010010": [
+       {
+        "term": "Cấp độ",
+        "figmaId": "4687:5175",
+        "layer": "Cấp độ:",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-LM.TC01",
@@ -477,7 +491,7 @@
       "CM-LM.TC23"
      ],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "CM-LM.A04.02",
@@ -486,11 +500,36 @@
      "spec": "Hiển thị badge trạng thái hiện tại (`Nháp`) trước khi chuyển.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-cdo-010010": [
+       {
+        "term": "Trạng thái hiện tại",
+        "figmaId": "4687:5192",
+        "layer": "Trạng thái hiện tại",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Nháp",
+        "figmaId": "4687:5195",
+        "layer": "Nháp",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "CM-LM.A04.03",
@@ -499,11 +538,25 @@
      "spec": "Hiển thị ID hiện tại (2 chữ số) mà cấp độ đã có sẵn từ lúc tạo.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-cdo-010010": [
+       {
+        "term": "ID cấp độ",
+        "figmaId": "4687:5180",
+        "layer": "ID cấp độ *:",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "CM-LM.A04.04",
@@ -515,8 +568,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Ô nhập ID"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-LM.A04.05",
@@ -528,8 +583,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Nút làm mới ID (biểu tượng xoay)"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-LM.A04.06",
@@ -551,8 +608,10 @@
       "CM-LM.TC19",
       "CM-LM.TC23"
      ],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Mã cấp độ"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-LM.A04.07",
@@ -564,8 +623,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Biểu tượng kết quả kiểm tra"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-LM.A04.08",
@@ -574,11 +635,27 @@
      "spec": "ID: `ID có thể sử dụng` / `ID đang bị trùng` / `ID sai định dạng`. Mã cấp độ (khi đang trống): `Mã cấp độ có thể sử dụng` / `Mã cấp độ không được để trống`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-cdo-010010": [
+       {
+        "term": "ID có thể sử dụng",
+        "figmaId": "4687:5189",
+        "layer": "ID có thể sử dụng.",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Thông báo trạng thái"
+     ],
+     "status": "khop"
     },
     {
      "id": "CM-LM.A04.09",
@@ -590,8 +667,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Ghi chú cảnh báo",
+      "Sau khi xác nhận, cấp độ sẽ chuyển sang trạng thái Công khai, chỉ còn sửa được Tên và Mô tả. ID và Mã cấp độ sẽ bị khóa"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-LM.A04.10",
@@ -600,13 +680,31 @@
      "spec": "Chỉ bật khi ID hợp lệ, chưa trùng **và** Mã cấp độ có giá trị. Khi bấm, backend kiểm tra lại lần cuối rồi lưu ID, lưu Mã cấp độ (nếu vừa nhập) và chuyển trạng thái sang `Công Khai` trong cùng một giao dịch.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-cdo-010010": [
+       {
+        "term": "Công khai cấp độ",
+        "figmaId": "I2527:168067;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Công khai cấp độ",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-LM.TC07"
      ],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "CM-LM.A04.11",
@@ -615,11 +713,31 @@
      "spec": "Đóng popup, không lưu thay đổi ID/Mã cấp độ vừa nhập, không đổi trạng thái cấp độ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-cdo-010010": [
+       {
+        "term": "Hủy",
+        "figmaId": "I2527:168067;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "X"
+     ],
+     "status": "khop"
     }
    ]
   },

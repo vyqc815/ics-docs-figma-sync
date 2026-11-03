@@ -610,6 +610,27 @@
     "ADM-MV-020000"
    ],
    "source": "ghép theo tiêu đề"
+  },
+  "course_management/overview-s1/overview-s1.md": {
+   "title": "Tổng quan (S1)",
+   "screens": [
+    "CD-KH-020100"
+   ],
+   "source": "ghép theo tiêu đề (bản QC 2026-11-03, cần QC xác nhận)"
+  },
+  "course_management/learning-path-s2/learning-path-s2.md": {
+   "title": "Lộ Trình (S2)",
+   "screens": [
+    "CD-KH-020200"
+   ],
+   "source": "ghép theo tiêu đề (bản QC 2026-11-03, cần QC xác nhận)"
+  },
+  "curriculum_management_requirement/category_management/category_management_requirements.md": {
+   "title": "Quản lý danh mục",
+   "screens": [
+    "CD-DM-010000"
+   ],
+   "source": "ghép theo tiêu đề (bản QC 2026-11-03, cùng màn với category_management.md)"
   }
  }
 }

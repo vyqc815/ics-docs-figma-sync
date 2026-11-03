@@ -1,0 +1,2307 @@
+{
+ "cluster": "category-management-requirements",
+ "title": "Quản lý danh mục",
+ "figmaPrefix": "CM-CM3",
+ "requirements": [
+  {
+   "id": "CM-CM3.REQ01",
+   "name": "Quản lý danh sách danh mục",
+   "text": "Cho phép xem, tìm kiếm và thêm danh mục; Tên danh mục và Mô tả danh mục là bắt buộc, không giới hạn độ dài nghiệp vụ. Danh mục mới mặc định ở trạng thái `Nháp` và chưa bắt buộc có Subject ID công khai. Cho phép chuyển tự do giữa `Nháp`, `Công khai` và `Vô hiệu hóa`. Khi trạng thái đích là `Công khai`, người dùng lấy Subject ID bằng chế độ tự động tạo ID mới hoặc nhập thủ công nếu chưa có ID; hệ thống kiểm tra định dạng và tính duy nhất toàn hệ thống tại backend trước khi chuyển. Danh mục và khóa học có quan hệ `1:n`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.REQ02",
+   "name": "Quản lý khóa học thuộc danh mục",
+   "text": "Popup chi tiết có bốn tab và mặc định mở `Tổng quan`; cho phép tìm kiếm, tạo khóa học trong danh mục, chọn cấp độ từ dữ liệu đã định nghĩa và chuyển tự do giữa ba trạng thái của khóa học. Tên và Mô tả khóa học là bắt buộc, không giới hạn độ dài nghiệp vụ. Khóa học mới mặc định là `Nháp`, chưa bắt buộc có ID công khai. Khi trạng thái đích là `Công khai`, khóa học áp dụng cùng cơ chế tự động tạo/nhập thủ công và kiểm tra ID như danh mục; chuyển sang trạng thái khác không xóa ID đã có. Khóa học và kỳ có quan hệ `1:n`; Số kỳ là số quan hệ kỳ đang liên kết với khóa học.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.REQ03",
+   "name": "Cấu hình nội dung danh mục",
+   "text": "Tại từng tab `Mindset`, `Tiêu chuẩn giáo trình`, `Hướng dẫn giảng dạy`, người dùng được chọn nhiều package/category rồi chọn nhiều action item trực thuộc để áp dụng cho danh mục; không giới hạn số lượng lựa chọn. Dữ liệu nguồn chỉ được tham chiếu, không bị chỉnh sửa hoặc sao chép; thay đổi tại feature định nghĩa được phản ánh vào nội dung áp dụng. Quyền `Chỉ xem` chỉ được xem trước; quyền `Cập nhật kết quả` được tick chọn và lưu/áp dụng. Lưu/áp dụng và thông báo kết quả là bước kết thúc của requirement này.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "CD-DM-010000": {
+   "id": "CD-DM-010000",
+   "name": "quan-ly-danh-muc",
+   "title": "Quản lý danh mục",
+   "kind": "man-chinh",
+   "parent": null,
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "714:16696",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quan-ly-danh-muc",
+   "link": "/quan-ly-danh-muc",
+   "dark": "CD-DM-010000-DK",
+   "openedFrom": [],
+   "citedByRequirement": true,
+   "regions": [
+    "CM-CM3.A01",
+    "CM-CM3.A02",
+    "CM-CM3.A04",
+    "CM-CM3.A05",
+    "CM-CM3.A06",
+    "CM-CM3.F01"
+   ]
+  },
+  "CD-DM-010010": {
+   "id": "CD-DM-010010",
+   "name": "popup-danh-muc-cap-do",
+   "title": "Quản lý danh mục / Popup danh mục & cấp độ",
+   "kind": "popup",
+   "parent": "CD-DM-010000",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1725:17306",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do",
+   "link": "/quan-ly-danh-muc?popup=CD-DM-010010",
+   "dark": "CD-DM-010010-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "CD-DM-010020": {
+   "id": "CD-DM-010020",
+   "name": "mindset",
+   "title": "Quản lý danh mục / Popup danh mục & cấp độ / Mindset",
+   "kind": "trang-thai",
+   "parent": "CD-DM-010010",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1758:4876",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/mindset",
+   "link": "/quan-ly-danh-muc?state=CD-DM-010020",
+   "dark": "CD-DM-010020-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-CM3.A07"
+   ]
+  },
+  "CD-DM-010030": {
+   "id": "CD-DM-010030",
+   "name": "tieu-chuan-giao-trinh",
+   "title": "Quản lý danh mục / Popup danh mục & cấp độ / Tiêu chuẩn giáo trình",
+   "kind": "trang-thai",
+   "parent": "CD-DM-010010",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1758:5127",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/tieu-chuan-giao-trinh",
+   "link": "/quan-ly-danh-muc?state=CD-DM-010030",
+   "dark": "CD-DM-010030-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-CM3.A07"
+   ]
+  },
+  "CD-DM-010040": {
+   "id": "CD-DM-010040",
+   "name": "huong-dan-giang-day",
+   "title": "Quản lý danh mục / Popup danh mục & cấp độ / Hướng dẫn giảng dạy",
+   "kind": "trang-thai",
+   "parent": "CD-DM-010010",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "trung-binh",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1758:5335",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/huong-dan-giang-day",
+   "link": "/quan-ly-danh-muc?state=CD-DM-010040",
+   "dark": "CD-DM-010040-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-CM3.A07"
+   ]
+  },
+  "CD-DM-010057": {
+   "id": "CD-DM-010057",
+   "name": "thanh-cong",
+   "title": "Quản lý danh mục / Popup danh mục & cấp độ / Quản lý danh mục / Thành công",
+   "kind": "trang-thai",
+   "parent": "CD-DM-010010",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "689:14188",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-dm-010057",
+   "link": "/quan-ly-danh-muc?state=CD-DM-010057",
+   "dark": "CD-DM-010057-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-CM3.A08"
+   ]
+  },
+  "CD-DM-010060": {
+   "id": "CD-DM-010060",
+   "name": "popup-kich-hoat-cong-khai",
+   "title": "Quản lý danh mục / Popup kích hoạt công khai",
+   "kind": "popup",
+   "parent": "CD-DM-010000",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1854:20955",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-dm-010060",
+   "link": "/quan-ly-danh-muc?popup=CD-DM-010060",
+   "dark": "CD-DM-010060-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": [
+    "CM-CM3.A03"
+   ]
+  },
+  "CD-DM-010062": {
+   "id": "CD-DM-010062",
+   "name": "dien-sai",
+   "title": "Quản lý danh mục / Popup kích hoạt công khai / Điền sai",
+   "kind": "trang-thai",
+   "parent": "CD-DM-010060",
+   "shownOn": "CD-DM-010000",
+   "kindConfidence": "cao",
+   "source": "figma",
+   "content": "figma",
+   "nodeId": "1854:21305",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-dm-010062",
+   "link": "/quan-ly-danh-muc?state=CD-DM-010062",
+   "dark": "CD-DM-010062-DK",
+   "openedFrom": [],
+   "citedByRequirement": false,
+   "regions": []
+  }
+ },
+ "regions": [
+  {
+   "id": "CM-CM3.A01",
+   "name": "trang-1-danh-sach-danh-muc",
+   "title": "Trang 1: Danh sách danh mục",
+   "screens": [
+    "cd-dm-010000"
+   ],
+   "screensGuessed": [
+    "CD-DM-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "curriculum_management_requirement/category_management/category_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM3.A02",
+   "name": "form-them-danh-muc",
+   "title": "Form thêm danh mục",
+   "screens": [
+    "cd-dm-010000"
+   ],
+   "screensGuessed": [
+    "CD-DM-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "curriculum_management_requirement/category_management/category_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM3.A02.01",
+     "name": "id-danh-muc-tam-thoi",
+     "label": "ID danh mục tạm thời",
+     "spec": "Có thể được hệ thống sinh để nhận diện bản nháp và chỉ dùng hiển thị. Không được xem là `Subject ID` công khai.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "ID danh mục tạm thời",
+      "Subject ID"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A02.02",
+     "name": "subject-id",
+     "label": "Subject ID",
+     "spec": "Không bắt buộc khi lưu `Nháp`. Bắt buộc khi chuyển sang `Công khai`; được hệ thống tự động tạo mới hoặc do người dùng nhập thủ công. Phải đúng định dạng và duy nhất toàn hệ thống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Nháp",
+        "figmaId": "3065:53348",
+        "layer": "Atom/Status",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Status",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Nháp",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC03",
+      "CM-CM3.TC04",
+      "CM-CM3.TC05",
+      "CM-CM3.TC18",
+      "CM-CM3.TC19",
+      "CM-CM3.TC24"
+     ],
+     "missingTerms": [
+      "Subject ID"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM3.A02.03",
+     "name": "ten-danh-muc",
+     "label": "Tên danh mục",
+     "spec": "Bắt buộc, không áp dụng giới hạn độ dài nghiệp vụ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Tên danh mục",
+        "figmaId": "3065:53290",
+        "layer": "tên danh mục",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC01",
+      "CM-CM3.TC02",
+      "CM-CM3.TC03"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM3.A02.04",
+     "name": "mo-ta-danh-muc",
+     "label": "Mô tả danh mục",
+     "spec": "Bắt buộc, không áp dụng giới hạn độ dài nghiệp vụ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Mô tả danh mục",
+        "figmaId": "3065:53292",
+        "layer": "Mô tả danh mục",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC01",
+      "CM-CM3.TC02"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM3.A02.05",
+     "name": "so-khoa-hoc",
+     "label": "Số khóa học",
+     "spec": "Field chỉ đọc, do hệ thống tự tính; danh mục mới chưa có khóa học hiển thị `0`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Số khóa học",
+        "figmaId": "3065:53296",
+        "layer": "Số khoá học",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC01",
+      "CM-CM3.TC02",
+      "CM-CM3.TC08"
+     ],
+     "missingTerms": [
+      "0"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM3.A02.06",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Gồm `Nháp`, `Công khai`, `Vô hiệu hóa`; mặc định khi tạo là `Nháp`. Cho phép chuyển từ bất kỳ trạng thái hiện tại sang một trong hai trạng thái còn lại. Khi chuyển đến `Công khai`, Subject ID phải hợp lệ; chuyển sang trạng thái khác không xóa Subject ID đã có.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "3065:53785",
+        "layer": "DD/Molecule/Trigger",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Molecule/Trigger",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Nháp",
+        "figmaId": "3065:53348",
+        "layer": "Atom/Status",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Status",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Nháp",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC02",
+      "CM-CM3.TC03",
+      "CM-CM3.TC04",
+      "CM-CM3.TC05",
+      "CM-CM3.TC08",
+      "CM-CM3.TC10",
+      "CM-CM3.TC11",
+      "CM-CM3.TC14",
+      "CM-CM3.TC18",
+      "CM-CM3.TC21",
+      "CM-CM3.TC22",
+      "CM-CM3.TC23",
+      "CM-CM3.TC24",
+      "CM-CM3.TC26"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM3.A02.07",
+     "name": "id-badge",
+     "label": "ID Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "ID Badge",
+        "figmaId": "3065:53304",
+        "layer": "ID Badge",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "ID Badge",
+        "component": "Atom/ID Badge",
+        "variant": {
+         "Type": "7-digit",
+         "Size": "26H",
+         "Item": "01"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM3.A02.08",
+     "name": "atom-number-badge",
+     "label": "Atom/Number Badge",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Atom/Number Badge",
+        "figmaId": "3065:53310",
+        "layer": "Atom/Number Badge",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Number Badge",
+        "component": "Atom/Number Badge",
+        "variant": {
+         "Value": "2",
+         "Type": "Kỳ",
+         "Size": "Medium",
+         "State": "Active"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM3.A02.09",
+     "name": "atom-status",
+     "label": "Atom/Status",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Atom/Status",
+        "figmaId": "3065:53314",
+        "layer": "Atom/Status",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Status",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Công khai",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM3.A02.10",
+     "name": "arrow-detail",
+     "label": "ARROW DETAIL",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "ARROW DETAIL",
+        "figmaId": "3065:53318",
+        "layer": "ARROW DETAIL",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "ARROW DETAIL",
+        "component": "ARROW DETAIL",
+        "variant": {
+         "Property 1": "Arrow detail (Default)",
+         "Property 2": "No"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM3.A02.11",
+     "name": "dd-organism-menu-panel",
+     "label": "DD/Organism/Menu Panel",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "DD/Organism/Menu Panel",
+        "figmaId": "3065:53331",
+        "layer": "DD/Organism/Menu Panel",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "DD/Organism/Menu Panel",
+        "component": "DD/Organism/Menu Panel",
+        "variant": {
+         "Footer": false,
+         "Search": false,
+         "Type": "Action"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "CM-CM3.A03",
+   "name": "popup-kich-hoat-cong-khai-danh-muc",
+   "title": "Popup Kích hoạt công khai danh mục",
+   "screens": [
+    "cd-dm-010060"
+   ],
+   "screensGuessed": [
+    "CD-DM-010060"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "curriculum_management_requirement/category_management/category_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM3.A03.01",
+     "name": "thong-tin-danh-muc",
+     "label": "Thông tin danh mục",
+     "spec": "Hiển thị đúng `Tên danh mục`, `ID danh mục tạm thời` và trạng thái hiện tại của đối tượng (`Nháp` hoặc `Vô hiệu hóa`) khi chuyển sang `Công khai`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Thông tin danh mục",
+      "Tên danh mục"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A03.02",
+     "name": "chon-cach-lay-subject-id",
+     "label": "Chọn cách lấy Subject ID",
+     "spec": "Chỉ được chọn một trong hai chế độ: `Tự động tạo` hoặc `Nhập Subject ID thủ công`. Khi đổi chế độ, kết quả kiểm tra của chế độ trước không được dùng để xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Chọn cách lấy Subject ID",
+      "Tự động tạo"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A03.03",
+     "name": "tu-dong-tao",
+     "label": "Tự động tạo",
+     "spec": "Hệ thống sinh một Subject ID mới, chưa được sử dụng và không tìm hay tái sử dụng Subject ID đã tồn tại. Trong lúc xử lý, hệ thống hiển thị trạng thái đang tạo và vô hiệu hóa `Xác nhận`. Khi thành công, hiển thị Subject ID vừa tạo; nút làm mới cho phép tạo một Subject ID mới khác và phải kiểm tra lại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010060": [
+       {
+        "term": "Xác nhận",
+        "figmaId": "6025:210789",
+        "layer": "Sau khi xác nhận, danh mục sẽ chuyển sang trạng thái Công khai và không được chỉnh sửa ID này",
+        "confidence": "thap",
+        "region": "Aside - Warning Alert Box",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC04",
+      "CM-CM3.TC10",
+      "CM-CM3.TC24"
+     ],
+     "missingTerms": [
+      "Tự động tạo"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM3.A03.04",
+     "name": "loi-tu-dong-tao",
+     "label": "Lỗi tự động tạo",
+     "spec": "Hiển thị notification `Không thể tự động tạo Subject ID. Vui lòng thử lại.` kèm hành động `Thử lại`. Mỗi lần người dùng chọn `Thử lại`, hệ thống gửi lại yêu cầu tạo ID mới; không giới hạn số lần thử lại ở tầng nghiệp vụ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Lỗi tự động tạo",
+      "Không thể tự động tạo Subject ID. Vui lòng thử lại."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A03.05",
+     "name": "nhap-thu-cong",
+     "label": "Nhập thủ công",
+     "spec": "Cho phép nhập Subject ID và chủ động chọn `Kiểm tra Subject ID`. Hệ thống kiểm tra định dạng và tính duy nhất toàn hệ thống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC05",
+      "CM-CM3.TC10"
+     ],
+     "missingTerms": [
+      "Nhập thủ công",
+      "Kiểm tra Subject ID"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A03.06",
+     "name": "subject-id-hop-le",
+     "label": "Subject ID hợp lệ",
+     "spec": "Hiển thị trạng thái thành công và thông báo `Subject ID hợp lệ`. Nút `Xác nhận` được bật.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC05"
+     ],
+     "missingTerms": [
+      "Subject ID hợp lệ",
+      "Subject ID hợp lệ"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A03.07",
+     "name": "subject-id-bi-trung",
+     "label": "Subject ID bị trùng",
+     "spec": "Hiển thị lỗi `Subject ID đang bị trùng.`; không cho xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Subject ID bị trùng",
+      "Subject ID đang bị trùng."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A03.08",
+     "name": "subject-id-sai-dinh-dang",
+     "label": "Subject ID sai định dạng",
+     "spec": "Hiển thị lỗi `Subject ID không đúng định dạng.`; không cho xác nhận.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Subject ID sai định dạng",
+      "Subject ID không đúng định dạng."
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A03.09",
+     "name": "huong-dan-nhap",
+     "label": "Hướng dẫn nhập",
+     "spec": "Subject ID có tiền tố `SUB-`, chỉ gồm chữ in hoa và số theo cấu trúc được cấu hình; không có khoảng trắng, ký tự đặc biệt hoặc ký tự thừa. Số lượng chữ số chính xác cần xác nhận do hình minh họa chưa thống nhất.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Hướng dẫn nhập",
+      "SUB-"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A03.10",
+     "name": "xac-nhan",
+     "label": "Xác nhận",
+     "spec": "Chỉ bật sau khi cách đang chọn có Subject ID hợp lệ. Khi bấm, backend phải kiểm tra lại trước khi lưu Subject ID và chuyển trạng thái sang `Công khai` trong cùng một giao dịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010060": [
+       {
+        "term": "Xác nhận",
+        "figmaId": "6025:210789",
+        "layer": "Sau khi xác nhận, danh mục sẽ chuyển sang trạng thái Công khai và không được chỉnh sửa ID này",
+        "confidence": "thap",
+        "region": "Aside - Warning Alert Box",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Công khai",
+        "figmaId": "1854:20955",
+        "layer": "CD-DM-010060 — Quản lý danh mục / Popup kích hoạt công khai",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC03",
+      "CM-CM3.TC04",
+      "CM-CM3.TC05",
+      "CM-CM3.TC10",
+      "CM-CM3.TC11",
+      "CM-CM3.TC18",
+      "CM-CM3.TC19",
+      "CM-CM3.TC20",
+      "CM-CM3.TC22",
+      "CM-CM3.TC23",
+      "CM-CM3.TC24"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM3.A03.11",
+     "name": "huy-dong",
+     "label": "Hủy/Đóng",
+     "spec": "Nút `Hủy` hoặc biểu tượng `X` đóng popup, không lưu Subject ID và không đổi trạng thái danh mục.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010060": [
+       {
+        "term": "Hủy",
+        "figmaId": "I6025:210790;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Hủy/Đóng"
+     ],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "CM-CM3.A04",
+   "name": "popup-chi-tiet-danh-muc",
+   "title": "Popup Chi tiết danh mục",
+   "screens": [
+    "cd-dm-010000"
+   ],
+   "screensGuessed": [
+    "CD-DM-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "curriculum_management_requirement/category_management/category_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM3.A05",
+   "name": "tab-tong-quan",
+   "title": "Tab Tổng quan",
+   "screens": [
+    "cd-dm-010000"
+   ],
+   "screensGuessed": [
+    "CD-DM-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "curriculum_management_requirement/category_management/category_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM3.A05.01",
+     "name": "danh-sach-khoa-hoc",
+     "label": "Danh sách khóa học",
+     "spec": "Hiển thị các khóa học đang thuộc danh mục hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Danh sách khóa học"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A05.02",
+     "name": "tim-kiem-khoa-hoc",
+     "label": "Tìm kiếm khóa học",
+     "spec": "Sau khi người dùng ngừng nhập `2 giây`, lọc trong danh mục hiện tại theo keyword khớp một phần với ID, Tên hoặc Mô tả khóa học; không yêu cầu khớp chính xác 100%.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tìm kiếm khóa học",
+      "2 giây"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A05.03",
+     "name": "them-khoa-hoc",
+     "label": "Thêm khóa học",
+     "spec": "Mở form tạo khóa học mới và gắn khóa học vào danh mục hiện tại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC08"
+     ],
+     "missingTerms": [
+      "Thêm khóa học"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A05.04",
+     "name": "id-khoa-hoc-tam-thoi",
+     "label": "ID khóa học tạm thời",
+     "spec": "Có thể được hệ thống sinh để nhận diện bản nháp và chỉ dùng hiển thị; không thay thế ID công khai của khóa học.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "ID khóa học tạm thời"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A05.05",
+     "name": "id-cong-khai-cua-khoa-hoc",
+     "label": "ID công khai của khóa học",
+     "spec": "Không bắt buộc khi lưu `Nháp`. Bắt buộc khi chuyển sang `Công khai`; được hệ thống tự động tạo mới hoặc do người dùng nhập thủ công, sau đó phải được kiểm tra đúng định dạng và duy nhất toàn hệ thống.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Nháp",
+        "figmaId": "3065:53348",
+        "layer": "Atom/Status",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Status",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Nháp",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "ID công khai của khóa học"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM3.A05.06",
+     "name": "ten-khoa-hoc",
+     "label": "Tên khóa học",
+     "spec": "Bắt buộc, không áp dụng giới hạn độ dài nghiệp vụ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Tên khóa học"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A05.07",
+     "name": "mo-ta-khoa-hoc",
+     "label": "Mô tả khóa học",
+     "spec": "Bắt buộc, không áp dụng giới hạn độ dài nghiệp vụ.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Mô tả khóa học",
+        "figmaId": "3065:53306",
+        "layer": "Nhập mô tả khoá học",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC08"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM3.A05.08",
+     "name": "so-ky",
+     "label": "Số kỳ",
+     "spec": "Field chỉ đọc. Khóa học và kỳ có quan hệ `1:n`; hệ thống đếm số kỳ đang liên kết với khóa học và cập nhật khi quan hệ khóa học–kỳ được thêm hoặc xóa.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC09"
+     ],
+     "missingTerms": [
+      "Số kỳ",
+      "1:n"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A05.09",
+     "name": "cap-do",
+     "label": "Cấp độ",
+     "spec": "Chỉ được chọn từ danh sách cấp độ đã được định nghĩa tại feature `Quản lý cấp độ`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Cấp độ",
+        "figmaId": "I4915:257163;4901:217035;2245:87774",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Card Menu",
+        "component": "Card Menu v2 (Test)",
+        "variant": {
+         "Icon": "470:992",
+         "Label": "Danh Mục & Cấp Độ",
+         "Type": "Chính",
+         "State": "Select",
+         "Expanded": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC08"
+     ],
+     "missingTerms": [
+      "Quản lý cấp độ"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "CM-CM3.A05.10",
+     "name": "trang-thai",
+     "label": "Trạng thái",
+     "spec": "Gồm `Nháp`, `Công khai`, `Vô hiệu hóa`; mặc định khi tạo là `Nháp`. Cho phép chuyển từ bất kỳ trạng thái hiện tại sang một trong hai trạng thái còn lại. Khi chuyển đến `Công khai`, ID công khai phải hợp lệ; chuyển sang trạng thái khác không xóa ID đã có.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "3065:53785",
+        "layer": "DD/Molecule/Trigger",
+        "confidence": "cao",
+        "region": null,
+        "owner": "DD/Molecule/Trigger",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": false,
+         "Leading Icon": "2015:30465",
+         "Count": false,
+         "Chevron": true,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Nháp",
+        "figmaId": "3065:53348",
+        "layer": "Atom/Status",
+        "confidence": "cao",
+        "region": "Row",
+        "owner": "Atom/Status",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Nháp",
+         "Size": "M"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC02",
+      "CM-CM3.TC03",
+      "CM-CM3.TC04",
+      "CM-CM3.TC05",
+      "CM-CM3.TC08",
+      "CM-CM3.TC10",
+      "CM-CM3.TC11",
+      "CM-CM3.TC14",
+      "CM-CM3.TC18",
+      "CM-CM3.TC21",
+      "CM-CM3.TC22",
+      "CM-CM3.TC23",
+      "CM-CM3.TC24",
+      "CM-CM3.TC26"
+     ],
+     "missingTerms": [],
+     "status": "khop"
+    }
+   ]
+  },
+  {
+   "id": "CM-CM3.A06",
+   "name": "popup-kich-hoat-cong-khai-khoa-hoc",
+   "title": "Popup Kích hoạt công khai khóa học",
+   "screens": [
+    "cd-dm-010000"
+   ],
+   "screensGuessed": [
+    "CD-DM-010000"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "curriculum_management_requirement/category_management/category_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM3.A07",
+   "name": "tab-mindset-tieu-chuan-giao-trinh-va-huo",
+   "title": "Tab Mindset, Tiêu chuẩn giáo trình và Hướng dẫn giảng dạy",
+   "screens": [
+    "cd-dm-010020",
+    "cd-dm-010030",
+    "cd-dm-010040"
+   ],
+   "screensGuessed": [
+    "CD-DM-010020",
+    "CD-DM-010030",
+    "CD-DM-010040"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "curriculum_management_requirement/category_management/category_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM3.A07.01",
+     "name": "tim-kiem",
+     "label": "Tìm kiếm",
+     "spec": "Sau khi người dùng ngừng nhập `2 giây`, lọc theo keyword khớp một phần với tên package/category hoặc tiêu đề action item đã được định nghĩa trước; không yêu cầu khớp chính xác 100%.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010020": [
+       {
+        "term": "Tìm kiếm",
+        "figmaId": "I2702:46381;1739:32505",
+        "layer": "Tìm nội dung...",
+        "confidence": "thap",
+        "region": "Modal Body: 2 Columns Layout",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm kiếm mindset...",
+         "State": "Search",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC25"
+     ],
+     "missingTerms": [
+      "2 giây"
+     ],
+     "status": "khop-mot-phan"
+    },
+    {
+     "id": "CM-CM3.A07.02",
+     "name": "package-category",
+     "label": "Package/category",
+     "spec": "Người dùng được chọn nhiều package/category; không giới hạn số lượng lựa chọn. Mỗi package/category được chọn sẽ tải các action item trực thuộc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC12",
+      "CM-CM3.TC17"
+     ],
+     "missingTerms": [
+      "Package/category"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A07.03",
+     "name": "action-item",
+     "label": "Action item",
+     "spec": "Người dùng được chọn nhiều action item từ các package/category đã chọn; không giới hạn số lượng lựa chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC12",
+      "CM-CM3.TC13",
+      "CM-CM3.TC17"
+     ],
+     "missingTerms": [
+      "Action item"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-CM3.A07.04",
+     "name": "xem-truoc-noi-dung",
+     "label": "Xem trước nội dung",
+     "spec": "Hiển thị nội dung của package/category và các action item đang được chọn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-dm-010030": [
+       {
+        "term": "Xem trước nội dung",
+        "figmaId": "1758:5155",
+        "layer": "Section - Cột phải: Xem trước nội dung chi tiết",
+        "confidence": "thap",
+        "region": "Frame 427321968",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-dm-010040": [
+       {
+        "term": "Xem trước nội dung",
+        "figmaId": "1758:5363",
+        "layer": "Section - Cột phải: Xem trước nội dung chi tiết",
+        "confidence": "thap",
+        "region": "Frame 427321951",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "khop-mot-phan"
+    },
+    {
+     "id": "CM-CM3.A07.05",
+     "name": "luu-ap-dung",
+     "label": "Lưu/Áp dụng",
+     "spec": "Lưu các action item được chọn vào danh mục hiện tại; không tạo hoặc chỉnh sửa dữ liệu gốc.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-CM3.TC13",
+      "CM-CM3.TC17"
+     ],
+     "missingTerms": [
+      "Lưu/Áp dụng"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ]
+  },
+  {
+   "id": "CM-CM3.A08",
+   "name": "popup-ap-dung-thanh-cong",
+   "title": "Popup Áp dụng thành công",
+   "screens": [
+    "cd-dm-010057"
+   ],
+   "screensGuessed": [
+    "CD-DM-010057"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "curriculum_management_requirement/category_management/category_management_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM3.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "cd-dm-010000"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-CM3.F01.01",
+     "name": "sidebar-menu-cd",
+     "label": "Sidebar · MENU - CD",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Sidebar · MENU - CD",
+        "figmaId": "4915:257163",
+        "layer": "Sidebar · MENU - CD",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - CD",
+        "component": "MENU - CD",
+        "variant": {
+         "Trang": "Danh Mục & Cấp Độ"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM3.F01.02",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2223:86161",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "CD",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM3.F01.03",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Component 2",
+        "figmaId": "4273:160833",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Sakumi"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM3.F01.04",
+     "name": "atom-input",
+     "label": "Atom/Input",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Atom/Input",
+        "figmaId": "3065:53784",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "Search Compact",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-CM3.F01.05",
+     "name": "add-new-bar-them-noi-dung-khoa-hoc-moi",
+     "label": "Add New Bar · Thêm nội dung khoá học mới",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-dm-010000": [
+       {
+        "term": "Add New Bar · Thêm nội dung khoá học mới",
+        "figmaId": "3065:53528",
+        "layer": "Add New Bar · Thêm nội dung khoá học mới",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Add New Bar · Thêm nội dung khoá học mới",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1075:1478",
+         "Placeholder": "Thêm nội dung khoá học mới",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "CM-CM3.EX01",
+   "text": "Subject ID danh mục để trống, sai định dạng hoặc đã tồn tại khi chuyển sang `Công khai` → hiển thị lỗi tương ứng, vô hiệu hóa `Xác nhận` và giữ nguyên trạng thái trước khi thao tác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.EX02",
+   "text": "ID công khai của khóa học để trống, sai định dạng hoặc đã tồn tại khi chuyển sang `Công khai` → hiển thị lỗi tương ứng, vô hiệu hóa `Xác nhận` và giữ nguyên trạng thái trước khi thao tác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.EX03",
+   "text": "Cấp độ được chọn đã bị xóa hoặc không còn khả dụng trước khi lưu khóa học → không lưu cấp độ không hợp lệ; dữ liệu khóa học đã lưu trước đó không thay đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.EX04",
+   "text": "Package/category hoặc action item đã bị xóa hay không còn khả dụng tại feature định nghĩa → nội dung tham chiếu tại danh mục phải phản ánh trạng thái mới và không được tiếp tục hiển thị như dữ liệu còn hiệu lực.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.EX05",
+   "text": "Tìm kiếm khóa học không có kết quả → hiển thị trạng thái không có dữ liệu; không làm thay đổi dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.EX06",
+   "text": "Lưu/áp dụng cấu hình thất bại → không hiển thị `Áp dụng thành công!` và không hiển thị dữ liệu chưa lưu như dữ liệu đã áp dụng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.EX07",
+   "text": "Người dùng không có quyền truy cập hoặc gửi request trực tiếp → từ chối thao tác và không thay đổi dữ liệu.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.EX08",
+   "text": "Người dùng chỉ có quyền `Chỉ xem` gửi request tick chọn hoặc lưu/áp dụng package/category/action item → hệ thống từ chối và giữ nguyên cấu hình danh mục.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.EX09",
+   "text": "Tự động tạo ID thất bại hoặc hết thời gian chờ → dừng trạng thái đang xử lý, hiển thị notification `Không thể tự động tạo Subject ID. Vui lòng thử lại.` kèm hành động `Thử lại`, không bật `Xác nhận` và giữ nguyên trạng thái đối tượng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.EX10",
+   "text": "ID đã hợp lệ trên UI nhưng bị đối tượng khác sử dụng trước lúc người dùng xác nhận → backend từ chối tại bước kiểm tra cuối, không lưu ID và giữ nguyên trạng thái đối tượng.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-CM3.EX11",
+   "text": "Người dùng đổi giữa chế độ tự động và nhập thủ công → hủy kết quả kiểm tra của chế độ trước; chỉ kết quả hợp lệ của chế độ đang chọn mới được dùng để bật `Xác nhận`.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "CM-CM3.FLOW01",
+   "name": "Quản lý danh sách và thêm danh mục",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01"
+   ]
+  },
+  {
+   "id": "CM-CM3.FLOW02",
+   "name": "Xem chi tiết và quản lý khóa học thuộc danh mục",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ02"
+   ]
+  },
+  {
+   "id": "CM-CM3.FLOW03",
+   "name": "Cấu hình nội dung cho danh mục",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ03"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "CM-CM3.TC01",
+   "title": "Case 1: Hiển thị danh sách danh mục",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-CM3.A02.03",
+    "CM-CM3.A02.04",
+    "CM-CM3.A02.05"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC02",
+   "title": "Case 2: Thêm danh mục Nháp không có ID",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 1 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW01"
+   ],
+   "items": [
+    "CM-CM3.A02.03",
+    "CM-CM3.A02.04",
+    "CM-CM3.A02.05",
+    "CM-CM3.A02.06",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC03",
+   "title": "Case 3: Mở popup kích hoạt công khai danh mục",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 1B / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW01"
+   ],
+   "items": [
+    "CM-CM3.A02.02",
+    "CM-CM3.A02.03",
+    "CM-CM3.A02.06",
+    "CM-CM3.A03.10",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC04",
+   "title": "Case 4: Công khai danh mục bằng Subject ID tự động tạo",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 1B / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW01"
+   ],
+   "items": [
+    "CM-CM3.A02.02",
+    "CM-CM3.A02.06",
+    "CM-CM3.A03.03",
+    "CM-CM3.A03.10",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC05",
+   "title": "Case 5: Công khai danh mục bằng Subject ID nhập thủ công",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 1B / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW01"
+   ],
+   "items": [
+    "CM-CM3.A02.02",
+    "CM-CM3.A02.06",
+    "CM-CM3.A03.05",
+    "CM-CM3.A03.06",
+    "CM-CM3.A03.10",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC06",
+   "title": "Case 6: Mở chi tiết danh mục",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM3.TC07",
+   "title": "Case 7: Tìm kiếm khóa học trong danh mục",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-CM3.TC08",
+   "title": "Case 8: Thêm khóa học Nháp không có ID",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW02"
+   ],
+   "items": [
+    "CM-CM3.A02.05",
+    "CM-CM3.A02.06",
+    "CM-CM3.A05.03",
+    "CM-CM3.A05.07",
+    "CM-CM3.A05.09",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC09",
+   "title": "Case 9: Tự tính Số kỳ của khóa học",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-CM3.A05.08"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC10",
+   "title": "Case 10: Công khai khóa học với ID hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW02"
+   ],
+   "items": [
+    "CM-CM3.A02.06",
+    "CM-CM3.A03.03",
+    "CM-CM3.A03.05",
+    "CM-CM3.A03.10",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC11",
+   "title": "Case 11: Chặn công khai khóa học khi ID không hợp lệ",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX02 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [
+    "CM-CM3.EX02"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM3.A02.06",
+    "CM-CM3.A03.10",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC12",
+   "title": "Case 12: Chọn nhiều package/category và action item",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW03"
+   ],
+   "items": [
+    "CM-CM3.A07.02",
+    "CM-CM3.A07.03"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC13",
+   "title": "Case 13: Áp dụng cấu hình thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 3 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW03"
+   ],
+   "items": [
+    "CM-CM3.A07.03",
+    "CM-CM3.A07.05"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC14",
+   "title": "Case 14: Đồng bộ thay đổi từ dữ liệu define",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX04 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ03"
+   ],
+   "exceptions": [
+    "CM-CM3.EX04"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM3.A02.06",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC15",
+   "title": "Case 15: Kiểm tra quyền truy cập trực tiếp",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX07 / Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-CM3.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM3.TC16",
+   "title": "Case 16: Chặn lưu khi thiếu tên hoặc mô tả",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ01 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01",
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-CM3.TC17",
+   "title": "Case 17: Quyền Chỉ xem không được thay đổi cấu hình",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX08 / REQ03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ03"
+   ],
+   "exceptions": [
+    "CM-CM3.EX08"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM3.A07.02",
+    "CM-CM3.A07.03",
+    "CM-CM3.A07.05"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC18",
+   "title": "Case 18: Báo lỗi Subject ID danh mục bị trùng",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX01 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01"
+   ],
+   "exceptions": [
+    "CM-CM3.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM3.A02.02",
+    "CM-CM3.A02.06",
+    "CM-CM3.A03.10",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC19",
+   "title": "Case 19: Báo lỗi Subject ID danh mục sai định dạng",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX01 / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01"
+   ],
+   "exceptions": [
+    "CM-CM3.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM3.A02.02",
+    "CM-CM3.A03.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC20",
+   "title": "Case 20: Làm mới Subject ID tự động",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 1B / REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW01"
+   ],
+   "items": [
+    "CM-CM3.A03.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC21",
+   "title": "Case 21: Hủy kích hoạt công khai",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 1B / REQ01, Flow 2 / REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01",
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-CM3.FLOW01",
+    "CM-CM3.FLOW02"
+   ],
+   "items": [
+    "CM-CM3.A02.06",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC22",
+   "title": "Case 22: ID bị chiếm trước thời điểm xác nhận",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX10 / REQ01, REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01",
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [
+    "CM-CM3.EX10"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM3.A02.06",
+    "CM-CM3.A03.10",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC23",
+   "title": "Case 23: Đổi chế độ lấy ID",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX11 / REQ01, REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01",
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [
+    "CM-CM3.EX11"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM3.A02.06",
+    "CM-CM3.A03.10",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC24",
+   "title": "Case 24: Tự động tạo Subject ID thất bại và thử lại",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX09 / REQ01, REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01",
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [
+    "CM-CM3.EX09"
+   ],
+   "flows": [],
+   "items": [
+    "CM-CM3.A02.02",
+    "CM-CM3.A02.06",
+    "CM-CM3.A03.03",
+    "CM-CM3.A03.10",
+    "CM-CM3.A05.10"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC25",
+   "title": "Case 25: Tìm kiếm danh mục theo keyword",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ01",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-CM3.A07.01"
+   ]
+  },
+  {
+   "id": "CM-CM3.TC26",
+   "title": "Case 26: Chuyển đổi giữa mọi trạng thái",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ01, REQ02",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-CM3.REQ01",
+    "CM-CM3.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-CM3.A02.06",
+    "CM-CM3.A05.10"
+   ]
+  }
+ ],
+ "issues": [
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010010",
+   "text": "popup “Quản lý danh mục / Popup danh mục & cấp độ” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010010",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010020",
+   "text": "trang-thai “Quản lý danh mục / Popup danh mục & cấp độ / Mindset” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CD-DM-010020",
+   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010020",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010030",
+   "text": "trang-thai “Quản lý danh mục / Popup danh mục & cấp độ / Tiêu chuẩn giáo trình” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CD-DM-010030",
+   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010030",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010040",
+   "text": "trang-thai “Quản lý danh mục / Popup danh mục & cấp độ / Hướng dẫn giảng dạy” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "phan-loai-can-duyet",
+   "ref": "CD-DM-010040",
+   "text": "loại trang-thai, màn cha CD-DM-010010 — tin cậy trung-binh"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010040",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010057",
+   "text": "trang-thai “Quản lý danh mục / Popup danh mục & cấp độ / Quản lý danh mục / Thành công” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010057",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010060",
+   "text": "popup “Quản lý danh mục / Popup kích hoạt công khai” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010060",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "figma-chua-co-requirement",
+   "ref": "CD-DM-010062",
+   "text": "trang-thai “Quản lý danh mục / Popup kích hoạt công khai / Điền sai” chưa được requirement nhắc tới"
+  },
+  {
+   "kind": "thieu-prototype-link",
+   "ref": "CD-DM-010062",
+   "text": "không có prototype link nào đi vào frame"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM3.EX03",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM3.EX05",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-CM3.EX06",
+   "text": "chưa có testcase ghi mã này"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "curriculum_management_requirement/category_management/category_management_requirements.md",
+   "prefix": "CM-CM3",
+   "title": "Quản lý danh mục"
+  }
+ ]
+}

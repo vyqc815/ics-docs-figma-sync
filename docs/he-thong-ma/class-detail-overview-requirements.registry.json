@@ -142,9 +142,9 @@
    "content": "figma",
    "nodeId": "3348:62669",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-020110",
    "link": "/chi-tiet-lop-hoc/tong-quan?popup=ADM-LOP-020110",
    "dark": "ADM-LOP-020110-DK",
    "openedFrom": [],
@@ -1282,8 +1282,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Icon cạnh tên học viên đang chọn"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDO2.A07.02",
@@ -1292,11 +1294,25 @@
      "spec": "Nội dung, avatar/tên người tạo/chỉnh, thời điểm máy chủ; mới nhất trước, đúng class_id + student_id.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-020110": [
+       {
+        "term": "Popup Lịch sử ghi chú",
+        "figmaId": "3348:62669",
+        "layer": "ADM-LOP-020110 — Lớp học / Tổng quan / Popup lịch sử ghi chú",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDO2.A07.03",
@@ -1305,14 +1321,31 @@
      "spec": "Copy nội dung của bản được chọn, không kèm metadata; không tạo phiên bản.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-020110": [
+       {
+        "term": "Copy",
+        "figmaId": "3348:62677",
+        "layer": "Copy",
+        "confidence": "cao",
+        "region": "Note Item",
+        "owner": "Copy",
+        "component": "Action Icon",
+        "variant": {
+         "Icon": "Copy",
+         "Size": "18"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDO2.TC22",
       "M-CDO2.TC46"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDO2.A07.04",
@@ -1324,8 +1357,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Ghi chú bất thường"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },

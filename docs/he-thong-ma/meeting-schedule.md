@@ -59,15 +59,15 @@ Frame: `SP-LHP-010010` (tool đoán:SP-LHP-010010) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | dong-phu-duoi-tieu-de |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A03.02` | chu-de |  |  | — |  | `TC03`, `TC04` | Chưa có thiết kế | QC |
-| `A03.03` | thoi-gian |  |  | — |  | `TC08`, `TC10` | Chưa có thiết kế | QC |
-| `A03.04` | trang-thai |  |  | — |  | `TC1b`, `TC03`, `TC05`, `TC06`, `TC08` | Chưa có thiết kế | QC |
-| `A03.05` | nguoi-tham-gia |  |  | — |  | `TC01`, `TC1b`, `TC03`, `TC07`, `TC08` | Chưa có thiết kế | QC |
-| `A03.06` | ghi-chu |  |  | — |  | `TC04`, `TC09` | Chưa có thiết kế | QC |
-| `A03.07` | link-cuoc-hop |  |  | — |  | `TC06` | Chưa có thiết kế | QC |
-| `A03.08` | huy |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A03.09` | luu |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A03.01` | dong-phu-duoi-tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | chu-de | `Atom/Label`  | `3857:80159` Atom/Label | — |  | `TC03`, `TC04` | Khớp | QC |
+| `A03.03` | thoi-gian | `Atom/Label`  | `3857:80162` Atom/Label | — |  | `TC08`, `TC10` | Khớp | QC |
+| `A03.04` | trang-thai | `Atom/Label`  | `3857:80175` Atom/Label | — |  | `TC1b`, `TC03`, `TC05`, `TC06`, `TC08` | Khớp | QC |
+| `A03.05` | nguoi-tham-gia | `Atom/Label`  | `3977:77319` Atom/Label | — |  | `TC01`, `TC1b`, `TC03`, `TC07`, `TC08` | Khớp | QC |
+| `A03.06` | ghi-chu | `Atom/Label`  | `3857:80172` Atom/Label | — |  | `TC04`, `TC09` | Khớp | QC |
+| `A03.07` | link-cuoc-hop | `Atom/Label`  | `3857:80266` Atom/Label | — |  | `TC06` | Khớp | QC |
+| `A03.08` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I3857:80177;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+| `A03.09` | luu | `Atom/Button` Type=Primary, Size=Medium | `I3857:80177;2514:153363` Atom/Button | — |  |  | Khớp | QC |
 | `A03.10` | xoa |  |  | — | opens `A03` |  | Chưa có thiết kế | QC |
 
 ### `A04` Trang 4: Dropdown bộ lọc
@@ -151,6 +151,7 @@ Frame: `SP-LHP-010000`, `SP-LHP-020000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
+- Chưa khớp tự động (1): `A03.01`
 - Frame Figma chưa có requirement (4): `SP-LHP-010001`, `SP-LHP-010002`, `SP-LHP-010003`, `SP-LHP-010010`
 - Phân loại cần design duyệt (2): `SP-LHP-010002`, `SP-LHP-010003`
 - Thiếu prototype link đi vào (1): `SP-LHP-010010`

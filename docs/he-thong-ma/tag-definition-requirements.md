@@ -32,10 +32,10 @@ Frame: `ADM-TAG-010020` (tool đoán:ADM-TAG-010020) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | tag-quan-ly |  |  | — | opens `A01` |  | Chưa sync | QC |
-| `A01.02` | nhom |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.03` | them-nhom-moi |  |  | — | opens `A02` |  | Chưa sync | QC |
-| `A01.04` | chinh-sua-xoa |  |  | — |  |  | Chưa sync | QC |
+| `A01.01` | tag-quan-ly |  |  | — | opens `A01` |  | Chưa khớp tự động | QC |
+| `A01.02` | nhom | `Popup/Header`  | `I3065:69666;2514:153358` Title | — |  | `TC01` | Khớp | QC |
+| `A01.03` | them-nhom-moi | `Popup/Header`  | `I3065:69666;2514:153358` Title | — | opens `A02` |  | Khớp | QC |
+| `A01.04` | chinh-sua-xoa |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Popup Thêm nhóm mới
 
@@ -54,11 +54,11 @@ Frame: `ADM-TAG-010010` (tool đoán:ADM-TAG-010010) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | ten-tag-mo-ta |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | nhom |  |  | — |  | `TC04`, `TC05`, `TC06`, `TC09`, `TC10`, `TC11` | Chưa sync | QC |
-| `A03.03` | loai |  |  | — |  | `TC04`, `TC05`, `TC06` | Chưa sync | QC |
-| `A03.04` | mau-sac |  |  | — |  | `TC07` | Chưa sync | QC |
-| `A03.05` | them-huy-bo |  |  | — |  |  | Chưa sync | QC |
+| `A03.01` | ten-tag-mo-ta |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.02` | nhom |  |  | — |  | `TC04`, `TC05`, `TC06`, `TC09`, `TC10`, `TC11` | Chưa khớp tự động | QC |
+| `A03.03` | loai |  |  | — |  | `TC04`, `TC05`, `TC06` | Chưa khớp tự động | QC |
+| `A03.04` | mau-sac | `Atom/Label`  | `3065:69601` Atom/Label | — |  | `TC07` | Khớp | QC |
+| `A03.05` | them-huy-bo |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Toast phản hồi CRUD
 
@@ -129,8 +129,7 @@ Frame: `ADM-TAG-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (7): `A02.01`, `A02.02`, `A02.04`, `A04.01`, `A04.02`, `A04.03`, `A04.04`
-- Chưa sync (9): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`
+- Chưa khớp tự động (13): `A01.01`, `A01.04`, `A02.01`, `A02.02`, `A02.04`, `A03.01`, `A03.02`, `A03.03`, `A03.05`, `A04.01`, `A04.02`, `A04.03`, `A04.04`
 - Frame Figma chưa có requirement (2): `ADM-TAG-010010`, `ADM-TAG-010020`
 - Thiếu prototype link đi vào (2): `ADM-TAG-010010`, `ADM-TAG-010020`
 - REQ/EX chưa có testcase (2): `EX02`, `EX03`

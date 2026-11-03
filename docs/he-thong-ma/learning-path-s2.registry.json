@@ -1,0 +1,695 @@
+{
+ "cluster": "learning-path-s2",
+ "title": "Lộ Trình (S2)",
+ "figmaPrefix": "CM-LPS",
+ "requirements": [
+  {
+   "id": "CM-LPS.REQ01",
+   "name": "Nguồn dữ liệu cột",
+   "text": "Danh sách cột buổi học, số buổi, thời gian mỗi buổi lấy từ S1. Thứ tự cột theo thứ tự ở S1.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.REQ02",
+   "name": "Tính toán realtime",
+   "text": "Header cột và cột Thời gian của hàng được tính lại ngay sau mỗi lần tick/bỏ tick, không cần reload.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.REQ03",
+   "name": "Công thức",
+   "text": "Tổng phút cột = số ô đã tick × phút/buổi. Thời gian hàng = tổng phút/buổi của các ô đã tick trong hàng đó, hiển thị `HH:mm:ss`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.REQ04",
+   "name": "Freeze",
+   "text": "Cố định 3 cột đầu và hàng đầu khi cuộn ngang/dọc. Khi cuộn ngang, cột buổi học không đè lên 3 cột cố định.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.REQ05",
+   "name": "Màu đỏ",
+   "text": "Chỉ áp dụng cho header khi lố buổi (cả số buổi và số phút). Cột Thời gian không có trạng thái đỏ.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.REQ06",
+   "name": "Tự động lưu",
+   "text": "Mỗi thao tác tick/bỏ tick, đổi Kỳ, kéo thả gọi API cập nhật ngay, không có nút Lưu. Nếu API lỗi thì hoàn tác thao tác vừa làm và báo lỗi (EX07).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.REQ07",
+   "name": "Kéo thả bài học",
+   "text": "Thứ tự bài học được lưu; thứ tự này chỉ dùng cho màn này, không ảnh hưởng chỗ khác.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.REQ08",
+   "name": "Dropdown Kỳ",
+   "text": "Danh sách kỳ lấy từ khoá học hiện tại; mặc định chọn sẵn kỳ của bài học đó.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "screens": {
+  "CD-KH-020200": {
+   "id": "CD-KH-020200",
+   "name": "lo-trinh",
+   "title": "Chi tiết khoá học / Lộ trình",
+   "kind": "man-chinh",
+   "parent": "CD-KH-020100",
+   "shownOn": "CD-KH-020200",
+   "kindConfidence": "trung-binh",
+   "source": "qc",
+   "content": "figma",
+   "nodeId": "1219:8317",
+   "inFigma": true,
+   "inPageList": true,
+   "synced": true,
+   "route": "/chi-tiet-khoa-hoc/lo-trinh",
+   "link": "/chi-tiet-khoa-hoc/lo-trinh",
+   "dark": "CD-KH-020200-DK",
+   "openedFrom": [
+    "CD-KH-020100",
+    "CD-KH-030100",
+    "CD-KH-030104",
+    "CD-KH-030200",
+    "CD-KH-030300",
+    "CD-KH-030340",
+    "CD-KH-030343",
+    "CD-KH-030347"
+   ],
+   "citedByRequirement": true,
+   "regions": [
+    "CM-LPS.A01",
+    "CM-LPS.F01"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "CM-LPS.A01",
+   "name": "trang-1-noi-dung-buoi-hoc-lo-trinh-s2",
+   "title": "Trang 1: Nội dung buổi học (Lộ Trình S2)",
+   "screens": [
+    "cd-kh-020200"
+   ],
+   "screensGuessed": [
+    "CD-KH-020200"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "course_management/learning-path-s2/learning-path-s2.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": []
+  },
+  {
+   "id": "CM-LPS.F01",
+   "name": "ngoai-body",
+   "title": "(ngoài Body)",
+   "screens": [
+    "cd-kh-020200"
+   ],
+   "source": "tu-dien",
+   "content": "figma",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-LPS.F01.01",
+     "name": "trang-thai-so-buoi",
+     "label": "Trạng thái số buổi",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-020200": [
+       {
+        "term": "Trạng thái số buổi",
+        "figmaId": "2808:53235",
+        "layer": "Trạng thái số buổi",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trạng thái số buổi",
+        "component": "Atom/Status",
+        "variant": {
+         "Status": "Đủ buổi",
+         "Size": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-LPS.F01.02",
+     "name": "dropdown",
+     "label": "Dropdown",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-020200": [
+       {
+        "term": "Dropdown",
+        "figmaId": "2015:39141",
+        "layer": "Dropdown",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Dropdown",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Placeholder": "Chọn...",
+         "Count": false,
+         "Leading Icon": "1994:25956",
+         "Clear": false,
+         "Count Value": "1",
+         "Leading": true,
+         "Chevron": true,
+         "Value": "Nhập Môn Tiếng Trung (HSK1) · HK I",
+         "Size": "XS",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-LPS.F01.03",
+     "name": "atom-chip-thoi-gian",
+     "label": "Atom/Chip · Thời gian",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-020200": [
+       {
+        "term": "Atom/Chip · Thời gian",
+        "figmaId": "2808:53136",
+        "layer": "Atom/Chip · Thời gian",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Chip · Thời gian",
+        "component": "Atom/Chip",
+        "variant": {
+         "Icon": false,
+         "Name": "Trần Minh Khoa",
+         "Time": "4 ngày trước",
+         "Label": "01:30:00",
+         "Type": "Thời gian · 90–100%"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-LPS.F01.04",
+     "name": "input-ten-bai-hoc",
+     "label": "Input · Tên bài học",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-020200": [
+       {
+        "term": "Input · Tên bài học",
+        "figmaId": "2857:58679",
+        "layer": "Input · Tên bài học",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Input · Tên bài học",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "期中考试 1",
+         "State": "Sửa trực tiếp",
+         "Kiểu": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-LPS.F01.05",
+     "name": "input-mo-ta",
+     "label": "Input · Mô tả",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-020200": [
+       {
+        "term": "Input · Mô tả",
+        "figmaId": "2857:58683",
+        "layer": "Input · Mô tả",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Input · Mô tả",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Kiểm tra giữa kỳ 1",
+         "State": "Text",
+         "Kiểu": "S"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-LPS.F01.06",
+     "name": "molecule-add-new-bar-them-bai-hoc",
+     "label": "Molecule/Add New Bar · Thêm bài học",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-020200": [
+       {
+        "term": "Molecule/Add New Bar · Thêm bài học",
+        "figmaId": "6518:337110",
+        "layer": "Molecule/Add New Bar · Thêm bài học",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Molecule/Add New Bar · Thêm bài học",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1075:1478",
+         "Placeholder": "Nhập nhanh tên bài học — nhấn Enter để thêm dòng mới",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-LPS.F01.07",
+     "name": "sidebar-menu-cd",
+     "label": "Sidebar · MENU - CD",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-020200": [
+       {
+        "term": "Sidebar · MENU - CD",
+        "figmaId": "4915:256398",
+        "layer": "Sidebar · MENU - CD",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Sidebar · MENU - CD",
+        "component": "MENU - CD",
+        "variant": {
+         "Trang": "Khoá học / Quy trình / Lộ trình (S4)"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-LPS.F01.08",
+     "name": "account",
+     "label": "ACCOUNT",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-020200": [
+       {
+        "term": "ACCOUNT",
+        "figmaId": "2812:34997",
+        "layer": "ACCOUNT",
+        "confidence": "cao",
+        "region": null,
+        "owner": "ACCOUNT",
+        "component": "ACCOUNT",
+        "variant": {
+         "Role": "CD",
+         "Theme": "Dark",
+         "Size": "Default"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    },
+    {
+     "id": "CM-LPS.F01.09",
+     "name": "component-2",
+     "label": "Component 2",
+     "spec": "",
+     "source": "tu-dien",
+     "content": "figma",
+     "status": "chi-co-tren-figma",
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "matches": {
+      "cd-kh-020200": [
+       {
+        "term": "Component 2",
+        "figmaId": "4273:160593",
+        "layer": "Component 2",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Component 2",
+        "component": "Switch Center",
+        "variant": {
+         "Property 1": "Đắc Nhân"
+        },
+        "inCode": false
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "CM-LPS.EX01",
+   "text": "Số ô đã tick của 1 cột > tổng số buổi ở S1 → vẫn cho tick, số buổi và số phút ở header hiển thị đỏ (ví dụ 05/04). Không hiện popup chặn.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.EX02",
+   "text": "Bỏ tick làm số buổi về ≤ tổng số buổi → header trở lại màu cam thường.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.EX03",
+   "text": "Hàng bài học chưa tick ô nào → cột Thời gian hiển thị `00:00:00`.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.EX04",
+   "text": "S1 đổi số buổi hoặc thời gian mỗi buổi → các ô đã tick giữ nguyên, header tính lại theo giá trị mới của S1; lố thì đỏ, không lố thì màu thường.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.EX05",
+   "text": "S1 xoá buổi học → xoá toàn bộ tick của cột đó; cột Thời gian của các hàng liên quan tính lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.EX06",
+   "text": "S1 thêm buổi học → S2 hiển thị thêm cột mới, chưa có tick (`00/{tổng} [0 PHÚT]`).",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LPS.EX07",
+   "text": "API tự động lưu bị lỗi (mất mạng, server lỗi) → hoàn tác thao tác vừa thực hiện (ô vừa tick/bỏ tick trở về trạng thái cũ, header và cột Thời gian tính lại theo trạng thái cũ) và hiện thông báo lỗi.",
+   "source": "qc",
+   "content": "qc"
+  }
+ ],
+ "flows": [
+  {
+   "id": "CM-LPS.FLOW01",
+   "name": "Vào màn Lộ Trình (S2)",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-LPS.FLOW02",
+   "name": "Tick / bỏ tick 1 ô",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-LPS.FLOW03",
+   "name": "Ví dụ tính toán",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-LPS.FLOW04",
+   "name": "Đổi Kỳ của bài học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  },
+  {
+   "id": "CM-LPS.FLOW05",
+   "name": "Kéo thả sắp xếp bài học",
+   "source": "qc",
+   "content": "qc",
+   "requirements": []
+  }
+ ],
+ "testcases": [
+  {
+   "id": "CM-LPS.TC01",
+   "title": "Case 1: Hiển thị ban đầu và freeze",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 1, REQ01, REQ04, EX03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-LPS.REQ01",
+    "CM-LPS.REQ04"
+   ],
+   "exceptions": [
+    "CM-LPS.EX03"
+   ],
+   "flows": [
+    "CM-LPS.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-LPS.TC02",
+   "title": "Case 2: Tick, bỏ tick và tự động lưu",
+   "priority": "High",
+   "smoke": true,
+   "region": null,
+   "scenario": "Flow 2, Flow 3, REQ02, REQ03, REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-LPS.REQ02",
+    "CM-LPS.REQ03",
+    "CM-LPS.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-LPS.FLOW02",
+    "CM-LPS.FLOW03"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-LPS.TC03",
+   "title": "Case 3: Tick nhiều cột trong 1 hàng",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "REQ03, EX03",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-LPS.REQ03"
+   ],
+   "exceptions": [
+    "CM-LPS.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-LPS.TC04",
+   "title": "Case 4: Lố buổi và về lại bình thường",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX01, EX02, REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-LPS.REQ05"
+   ],
+   "exceptions": [
+    "CM-LPS.EX01",
+    "CM-LPS.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-LPS.TC05",
+   "title": "Case 5: S1 đổi số buổi hoặc thời gian mỗi buổi",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX04",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-LPS.EX04"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-LPS.TC06",
+   "title": "Case 6: S1 xoá hoặc thêm buổi học",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX05, EX06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-LPS.EX05",
+    "CM-LPS.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-LPS.TC07",
+   "title": "Case 7: Đổi Kỳ của bài học",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 4, REQ08",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-LPS.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-LPS.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-LPS.TC08",
+   "title": "Case 8: Kéo thả sắp xếp bài học",
+   "priority": "Medium",
+   "smoke": false,
+   "region": null,
+   "scenario": "Flow 5, REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-LPS.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-LPS.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-LPS.TC09",
+   "title": "Case 9: API lưu lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "EX07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [
+    "CM-LPS.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-LPS.TC10",
+   "title": "Case 10: Phân quyền",
+   "priority": "High",
+   "smoke": false,
+   "region": null,
+   "scenario": "Ràng buộc quyền",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "issues": [
+  {
+   "kind": "testcase-khong-tro-req",
+   "ref": "CM-LPS.TC10",
+   "text": "testcase không ghi REQ/EX/Flow"
+  }
+ ],
+ "requirementFiles": [
+  {
+   "file": "course_management/learning-path-s2/learning-path-s2.md",
+   "prefix": "CM-LPS",
+   "title": "Lộ Trình (S2)"
+  }
+ ]
+}

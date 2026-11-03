@@ -44,10 +44,10 @@ Frame: `ADM-LOP-020710`, `ADM-LOP-020810` (tool đoán:ADM-LOP-020710, ADM-LOP-0
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | ten-tab |  |  | — |  |  | Chưa sync | QC |
-| `A01.02` | tien-do |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.03` | action-item |  |  | — |  |  | Chưa sync | QC |
-| `A01.04` | nut-them |  |  | — |  |  | Chưa sync | QC |
+| `A01.01` | ten-tab |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.02` | tien-do |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
+| `A01.03` | action-item |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.04` | nut-them |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Popup Thêm nội dung
 
@@ -55,13 +55,13 @@ Frame: `ADM-LOP-020610` (tool đoán:ADM-LOP-020610) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | tieu-chuan-lop-giao-vien-them-tieu-chuan |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | cskh-them-quy-trinh |  |  | — |  |  | Chưa sync | QC |
-| `A02.03` | quy-trinh-lop-them-quy-trinh |  |  | — |  |  | Chưa sync | QC |
-| `A02.04` | cay-lua-chon |  |  | — |  |  | Chưa sync | QC |
-| `A02.05` | category-action-item |  |  | — |  | `TC03` | Chưa sync | QC |
-| `A02.06` | them-1 |  |  | — |  |  | Chưa sync | QC |
-| `A02.07` | huy |  |  | — |  |  | Chưa sync | QC |
+| `A02.01` | tieu-chuan-lop-giao-vien-them-tieu-chuan | `Popup/Header`  | `I2711:50591;2514:153354` Title | — |  |  | Khớp | QC |
+| `A02.02` | cskh-them-quy-trinh |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.03` | quy-trinh-lop-them-quy-trinh |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.04` | cay-lua-chon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.05` | category-action-item |  |  | — |  | `TC03` | Chưa khớp tự động | QC |
+| `A02.06` | them-1 | `Atom/Button` Type=Primary, Size=Medium | `I2711:50640;2514:153363` Atom/Button | — |  |  | Khớp | QC |
+| `A02.07` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2711:50640;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 
 ### `A03` Toast phản hồi CRUD
 
@@ -175,8 +175,7 @@ Frame: `ADM-LOP-020700`, `ADM-LOP-020800` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (4): `A03.01`, `A03.02`, `A03.03`, `A03.04`
-- Chưa sync (11): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`
+- Chưa khớp tự động (12): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A03.04`
 - Frame Figma chưa có requirement (13): `ADM-LOP-020604`, `ADM-LOP-020610`, `ADM-LOP-020611`, `ADM-LOP-020612`, `ADM-LOP-020704`, `ADM-LOP-020710`, `ADM-LOP-020711`, `ADM-LOP-020712`, `ADM-LOP-020804`, `ADM-LOP-020810`, `ADM-LOP-020811`, `ADM-LOP-020812`, `ADM-LOP-020904`
 - Phân loại cần design duyệt (4): `ADM-LOP-020604`, `ADM-LOP-020704`, `ADM-LOP-020804`, `ADM-LOP-020904`
 - Thiếu prototype link đi vào (7): `ADM-LOP-020604`, `ADM-LOP-020610`, `ADM-LOP-020704`, `ADM-LOP-020710`, `ADM-LOP-020804`, `ADM-LOP-020810`, `ADM-LOP-020904`

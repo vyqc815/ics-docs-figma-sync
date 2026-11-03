@@ -138,9 +138,9 @@
    "content": "figma",
    "nodeId": "2370:27393",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lhn-010110",
    "link": "/lich-hen/hen-lop?popup=ADM-LHN-010110",
    "dark": "ADM-LHN-010110-DK",
    "openedFrom": [],
@@ -465,11 +465,30 @@
      "spec": "**Bắt buộc**, nhập tự do, không cần chọn nội dung từ nguồn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lhn-010110": [
+       {
+        "term": "Nội dung",
+        "figmaId": "2370:27447",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427326008",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "497:25741",
+         "Label": "Nội dung",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "A-AP.A03.02",
@@ -478,11 +497,30 @@
      "spec": "Không bắt buộc, được để trống; nhập tự do, không giới hạn độ dài; hiển thị ở cột Ghi chú sau khi lưu.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lhn-010110": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "2370:27405",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427326008",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Ghi chú",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "A-AP.A03.03",
@@ -491,11 +529,32 @@
      "spec": "**Bắt buộc**, chọn ngày hẹn bằng lịch chọn ngày, không chọn giờ; hiển thị dạng `dd.MM.yyyy`. Không giới hạn mốc thời gian theo xác nhận. Ngày mẫu `01.01.2000` trong ảnh không là giá trị mặc định. Có [ảnh lịch chọn ngày](./images/06-date-picker.png).",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lhn-010110": [
+       {
+        "term": "Thời gian",
+        "figmaId": "2370:27409",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427326008",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Thời gian",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "dd.MM.yyyy"
+     ],
+     "status": "khop"
     },
     {
      "id": "A-AP.A03.04",
@@ -504,13 +563,32 @@
      "spec": "**Bắt buộc**, chọn một trung tâm từ danh sách trung tâm; lịch hẹn được tạo thuộc trung tâm đã chọn. Danh sách Đối tượng lấy theo trung tâm đã chọn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lhn-010110": [
+       {
+        "term": "Trung tâm",
+        "figmaId": "4835:162294",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427326008",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "4835:162312",
+         "Label": "Trung Tâm",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "A-AP.TC21"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "A-AP.A03.05",
@@ -519,13 +597,32 @@
      "spec": "**Bắt buộc**, chọn đúng một đối tượng theo tab: Hẹn lớp → lớp, Học viên → học viên, Hoá đơn → hoá đơn (hiển thị số tiền và học viên), Giáo viên → giáo viên. Class Handler/Support chỉ chọn đối tượng thuộc phạm vi họ được phép truy cập; Admin theo phạm vi Admin.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lhn-010110": [
+       {
+        "term": "Đối tượng",
+        "figmaId": "2370:27455",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427326008",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2370:27857",
+         "Label": "Đối tượng",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "A-AP.TC07"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "A-AP.A03.06",
@@ -534,11 +631,32 @@
      "spec": "**Bắt buộc**, chọn một trong `Ưu tiên cao`, `Quan trọng`, `Bình thường`, `Ưu tiên thấp` theo [menu UI](./images/10-priority-options.png). Giá trị mặc định chưa được chốt.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lhn-010110": [
+       {
+        "term": "Độ ưu tiên",
+        "figmaId": "2370:27412",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427326008",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:37119",
+         "Label": "Độ ưu tiên",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Ưu tiên cao"
+     ],
+     "status": "khop"
     },
     {
      "id": "A-AP.A03.07",
@@ -547,11 +665,45 @@
      "spec": "**Bắt buộc**, chọn một trong `Mới`, `Chưa xử lý`, `Đang xử lý`, `Đã xử lý`; bỏ `Đã xoá` trong [ảnh menu cũ](./images/07-status-options.png). Giá trị mặc định của form chưa được chốt; không lấy bộ lọc mặc định làm giá trị form.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lhn-010110": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "2370:27869",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427326008",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2370:27888",
+         "Label": "Trạng thái",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Mới",
+        "figmaId": "I2527:167628;2514:153358",
+        "layer": "Title",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "No",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "A-AP.A03.08",
@@ -560,7 +712,37 @@
      "spec": "Không bắt buộc, được để trống; chọn một hoặc nhiều user thuộc bốn nhóm role: `Trợ giảng` (Teaching Assistant), `Support`, `Nhân viên kinh doanh` (Sale), `Phụ trách lớp` (Class Handler). Nút `+` mở danh sách chọn có ô `Tìm kiếm...` và bốn nhóm role thu gọn/mở được, chọn bằng checkbox. Mở popup mặc định đã chọn chính người tạo nếu người tạo thuộc một trong bốn nhóm này; người tạo có thể gỡ mình ra hoặc thêm người khác. Khi tạo và khi sửa đều được bỏ hết Người phụ trách.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lhn-010110": [
+       {
+        "term": "Người phụ trách",
+        "figmaId": "2370:28055",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427325811",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "738:25432",
+         "Label": "Người phụ trách",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Trợ giảng",
+        "figmaId": "2370:28072",
+        "layer": "Trợ giảng",
+        "confidence": "cao",
+        "region": "Frame 427325811",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [
       {
        "type": "opens",
@@ -573,7 +755,7 @@
       "A-AP.TC09"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "A-AP.A03.09",
@@ -582,13 +764,32 @@
      "spec": "Không bắt buộc; tìm/chọn nhiều user thuộc cùng bốn nhóm role với Người phụ trách, nhóm theo role, dùng cùng kiểu danh sách chọn với Người phụ trách. Người được thêm chỉ xem lịch hẹn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lhn-010110": [
+       {
+        "term": "Theo dõi",
+        "figmaId": "2370:28132",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Frame 427326006",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "738:25432",
+         "Label": "Theo dõi",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "A-AP.TC09"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "A-AP.A03.10",
@@ -600,8 +801,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Hủy / Thêm lịch hẹn"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },

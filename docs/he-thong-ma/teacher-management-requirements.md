@@ -91,10 +91,10 @@ Frame: `ADM-GV-010001`, `ADM-GV-010030`, `ADM-GV-010040`, `ADM-GV-010050` (tool 
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | menu-thao-tac | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `1657:12040` ADM-GV-010001 — Danh sách giáo viên / Hover menu thao tác; `I3210:31964;2015:31836;3210:31958` Chỉnh sửa | — |  |  | Khớp | QC |
-| `A05.02` | popup-them-lich-hen | `DD/Molecule/Trigger` Size=XS, State=Default | `4713:129455` Dropdown · Trung tâm | — |  |  | Khớp | QC |
-| `A05.03` | popup-them-tag | `Atom/Input` State=Search Advanced, Kiểu=Chuẩn | `I1739:33369;1739:32346` Tìm Kiếm Nâng Cao | — |  |  | Khớp | QC |
-| `A05.04` | popup-danh-sach-lich-hen |  |  | — |  | `TC50` | Chưa khớp tự động | QC |
+| `A05.01` | menu-thao-tac | `DD/Molecule/Menu Item` Type=Default, State=Default, Size=M | `1657:12040` ADM-GV-010001 — Danh sách giáo viên / Hover menu thao tác; `I3210:31964;2015:31836;3210:31958` Chỉnh sửa | — |  |  | Khớp một phần | QC |
+| `A05.02` | popup-them-lich-hen | `DD/Molecule/Trigger` Size=XS, State=Default | `4713:129455` Dropdown · Trung tâm | — |  |  | Khớp một phần | QC |
+| `A05.03` | popup-them-tag | `Atom/Input` State=Search Advanced, Kiểu=Chuẩn | `I1739:33369;1739:32346` Tìm Kiếm Nâng Cao | — |  |  | Khớp một phần | QC |
+| `A05.04` | popup-danh-sach-lich-hen | `Atom/Label`  | `1832:36668` Atom/Label | — |  | `TC50` | Khớp một phần | QC |
 
 ### `A06` Điều hướng đến chi tiết giáo viên
 
@@ -109,17 +109,17 @@ Frame: `ADM-GV-010020` (tool đoán:ADM-GV-010020) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | ho-va-ten |  |  | — |  | `TC36` | Chưa sync | QC |
-| `A07.02` | gioi-tinh |  |  | — |  | `TC36`, `TC37`, `TC38`, `TC39` | Chưa sync | QC |
-| `A07.03` | ngay-sinh |  |  | — |  | `TC36`, `TC37`, `TC38`, `TC39` | Chưa sync | QC |
-| `A07.04` | so-dien-thoai |  |  | — |  | `TC36`, `TC37`, `TC38`, `TC39`, `TC43` | Chưa sync | QC |
-| `A07.05` | vai-tro |  |  | — |  | `TC36`, `TC37` | Chưa sync | QC |
-| `A07.06` | gmail |  |  | — |  | `TC36` | Chưa sync | QC |
-| `A07.07` | mat-khau |  |  | — |  | `TC36`, `TC42` | Chưa sync | QC |
-| `A07.08` | trung-tam |  |  | — |  | `TC36`, `TC46` | Chưa sync | QC |
-| `A07.09` | code |  |  | — |  | `TC36`, `TC37`, `TC41` | Chưa sync | QC |
-| `A07.10` | huy |  |  | — |  |  | Chưa sync | QC |
-| `A07.11` | them |  |  | — |  | `TC36`, `TC37` | Chưa sync | QC |
+| `A07.01` | ho-va-ten | `Atom/Label`  | `1739:36477` Atom/Label | — |  | `TC36` | Khớp | QC |
+| `A07.02` | gioi-tinh | `Atom/Label`  | `1739:36467` Atom/Label | — |  | `TC36`, `TC37`, `TC38`, `TC39` | Khớp | QC |
+| `A07.03` | ngay-sinh | `Atom/Label`  | `1739:36495` Atom/Label | — |  | `TC36`, `TC37`, `TC38`, `TC39` | Khớp | QC |
+| `A07.04` | so-dien-thoai | `Atom/Label`  | `1739:36487` Atom/Label | — |  | `TC36`, `TC37`, `TC38`, `TC39`, `TC43` | Khớp | QC |
+| `A07.05` | vai-tro | `Atom/Input` State=Disabled, Kiểu=Chuẩn; `Atom/Label`  | `1739:36499` Atom/Label; `I1739:32604;1739:32457` 0000000009 | — |  | `TC36`, `TC37` | Khớp | QC |
+| `A07.06` | gmail | `Atom/Label`  | `1739:36513` Atom/Label | — |  | `TC36` | Khớp | QC |
+| `A07.07` | mat-khau | `Atom/Label`  | `1739:36521` Atom/Label | — |  | `TC36`, `TC42` | Khớp | QC |
+| `A07.08` | trung-tam | `Atom/Label`  | `4835:162368` Atom/Label | — |  | `TC36`, `TC46` | Khớp | QC |
+| `A07.09` | code | `Atom/Label`  | `1739:36531` Atom/Label | — |  | `TC36`, `TC37`, `TC41` | Khớp | QC |
+| `A07.10` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167719;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+| `A07.11` | them | `Atom/Button` Type=Primary, Size=Medium | `I2527:167719;2514:153363` Atom/Button | — |  | `TC36`, `TC37` | Khớp | QC |
 
 ### `A08` Toast phản hồi CRUD
 
@@ -263,8 +263,7 @@ Frame: `ADM-GV-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (10): `A02.01`, `A02.02`, `A02.03`, `A02.05`, `A03.02`, `A05.04`, `A08.01`, `A08.02`, `A08.03`, `A08.04`
-- Chưa sync (11): `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`
+- Chưa khớp tự động (9): `A02.01`, `A02.02`, `A02.03`, `A02.05`, `A03.02`, `A08.01`, `A08.02`, `A08.03`, `A08.04`
 - Frame Figma chưa có requirement (7): `ADM-GV-010001`, `ADM-GV-010010`, `ADM-GV-010020`, `ADM-GV-010030`, `ADM-GV-010040`, `ADM-GV-010042`, `ADM-GV-010050`
 - Thiếu prototype link đi vào (5): `ADM-GV-010010`, `ADM-GV-010020`, `ADM-GV-010030`, `ADM-GV-010040`, `ADM-GV-010050`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`

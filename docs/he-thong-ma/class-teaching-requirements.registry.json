@@ -276,9 +276,9 @@
    "content": "figma",
    "nodeId": "5292:222984",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-lop-030120",
    "link": "/chi-tiet-lop/bai-hoc/buoi-hoc?popup=GV-LOP-030120",
    "dark": null,
    "openedFrom": [],
@@ -299,9 +299,9 @@
    "content": "figma",
    "nodeId": "5292:223041",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-lop-030121",
    "link": "/chi-tiet-lop/bai-hoc/buoi-hoc?popup=GV-LOP-030121",
    "dark": null,
    "openedFrom": [],
@@ -641,9 +641,9 @@
    "content": "figma",
    "nodeId": "5425:277378",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-lop-040211",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?popup=GV-LOP-040211",
    "dark": "GV-LOP-040211-DK",
    "openedFrom": [
@@ -666,9 +666,9 @@
    "content": "figma",
    "nodeId": "5425:277391",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-lop-040221",
    "link": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra?popup=GV-LOP-040221",
    "dark": "GV-LOP-040221-DK",
    "openedFrom": [
@@ -925,11 +925,31 @@
      "spec": "Không hiện popup Chọn lịch dạy; hiện popup `Bắt đầu buổi học` (`Nhấn 'Xác nhận' để bắt đầu buổi học!`). Bắt đầu xong hiển thị Toast `Thông Báo` `Lớp không có lịch để tính lương buổi này`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-030121": [
+       {
+        "term": "Bắt đầu buổi học",
+        "figmaId": "I5292:223042;2514:153348",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "No",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Lớp không có lịch tuần này"
+     ],
+     "status": "khop-mot-phan"
     },
     {
      "id": "TR-CT.A03.02",
@@ -938,14 +958,32 @@
      "spec": "Liệt kê lịch tuần hiện tại của lớp do **chính giáo viên** dạy (lịch cố định và linh hoạt): thứ, ngày, giờ. Lịch đã hoàn thành hoặc đã gắn với buổi khác hiển thị nhưng không chọn được; lịch huỷ không hiển thị. Không có lịch của giáo viên thì hiện `Không có lịch dạy tuần này`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-030120": [
+       {
+        "term": "Chọn lịch dạy",
+        "figmaId": "I5292:222985;2514:153341",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-CT.TC09",
       "TR-CT.TC10"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop-mot-phan"
     },
     {
      "id": "TR-CT.A03.03",
@@ -954,11 +992,25 @@
      "spec": "Dòng phụ `Buổi học này sẽ không được tính lương`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-030120": [
+       {
+        "term": "Không chọn lịch",
+        "figmaId": "5292:223039",
+        "layer": "Không chọn lịch",
+        "confidence": "cao",
+        "region": "Không chọn lịch",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop-mot-phan"
     },
     {
      "id": "TR-CT.A03.04",
@@ -967,11 +1019,72 @@
      "spec": "`Huỷ` đóng popup, không bắt đầu. `Bắt đầu` cần đã chọn một lịch hoặc `Không chọn lịch`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-030120": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I5292:223001;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Bắt đầu",
+        "figmaId": "I5292:223001;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Bắt đầu",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-lop-030121": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I5292:223058;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Bắt đầu",
+        "figmaId": "5292:223075",
+        "layer": "Nhấn 'Xác nhận' để bắt đầu buổi học!",
+        "confidence": "thap",
+        "region": "Nhấn 'Xác nhận' để bắt đầu buổi học!",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-CT.A03.05",
@@ -980,11 +1093,29 @@
      "spec": "Sau khi chọn lịch: nội dung `Nhấn 'Xác nhận' để bắt đầu buổi học!`, nút `Huỷ` / `Xác nhận`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-030121": [
+       {
+        "term": "Bắt đầu buổi học",
+        "figmaId": "I5292:223042;2514:153348",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "No",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop-mot-phan"
     },
     {
      "id": "TR-CT.A03.06",
@@ -996,8 +1127,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Bắt đầu với lịch",
+      "Đang dạy"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CT.A03.07",
@@ -1009,8 +1143,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Bắt đầu không chọn lịch",
+      "Thông Báo"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },
@@ -3136,8 +3273,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Xem trước đề",
+      "A"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CT.A16.02",
@@ -3146,7 +3286,25 @@
      "spec": "Chỉ `Giáo viên phụ trách chính`. Bấm mở popup `Giao bài` với nội dung `Nhấn 'Xác nhận' để giao bài kiểm tra này`, nút `Huỷ` / `Xác nhận`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-040211": [
+       {
+        "term": "Giao bài",
+        "figmaId": "I5425:277379;2514:153348",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "No",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [
       {
        "type": "opens",
@@ -3156,7 +3314,7 @@
      ],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-CT.A16.03",
@@ -3168,8 +3326,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Điều kiện giao",
+      "Đang học"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CT.A16.04",
@@ -3181,8 +3342,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Giao thành công",
+      "Đang đợi nộp bài"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },
@@ -3209,7 +3373,25 @@
      "spec": "Bấm mở popup `Thu hồi`, nội dung `Bạn muốn thu hồi bài kiểm tra này? Toàn bộ bài làm và điểm của học viên sẽ bị xoá.`, nút `Huỷ` / `Xác nhận`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-040221": [
+       {
+        "term": "Thu hồi",
+        "figmaId": "I5425:277392;2514:153348",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "No",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [
       {
        "type": "opens",
@@ -3219,7 +3401,7 @@
      ],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-CT.A17.02",
@@ -3231,8 +3413,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thu hồi thành công",
+      "Chưa giao"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },

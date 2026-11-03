@@ -44,16 +44,16 @@ Frame: `ADM-HV-010102`, `ADM-HV-010202` (tool đoán:ADM-HV-010102, ADM-HV-01020
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | ten-hoc-vien |  |  | — |  | `TC20`, `TC14`, `TC04` | Chưa sync | QC |
-| `A01.02` | mui-ten-cuoi-dong |  |  | — |  | `TC54` | Chưa sync | QC |
-| `A01.03` | gmail |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.04` | ngay-chot-don |  |  | — |  | `TC01`, `TC50` | Chưa sync | QC |
-| `A01.05` | so-lop |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.06` | so-bill |  |  | — |  | `TC01`, `TC52`, `TC55` | Chưa sync | QC |
-| `A01.07` | lop-hien-tai |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.08` | ghi-chu |  |  | — |  | `TC01`, `TC31`, `TC53` | Chưa sync | QC |
-| `A01.09` | tong-doanh-thu |  |  | — |  | `TC01` | Chưa sync | QC |
-| `A01.10` | hoan-tien |  |  | — |  | `TC01`, `TC55` | Chưa sync | QC |
+| `A01.01` | ten-hoc-vien |  |  | — |  | `TC20`, `TC14`, `TC04` | Chưa khớp tự động | QC |
+| `A01.02` | mui-ten-cuoi-dong |  |  | — |  | `TC54` | Chưa khớp tự động | QC |
+| `A01.03` | gmail |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
+| `A01.04` | ngay-chot-don |  |  | — |  | `TC01`, `TC50` | Chưa khớp tự động | QC |
+| `A01.05` | so-lop |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
+| `A01.06` | so-bill |  |  | — |  | `TC01`, `TC52`, `TC55` | Chưa khớp tự động | QC |
+| `A01.07` | lop-hien-tai | `DD/Molecule/Menu Item` Type=Checkbox, State=Default, Size=S | `I3269:74669;2015:31501;3269:74736` Đang học | — |  | `TC01` | Khớp một phần | QC |
+| `A01.08` | ghi-chu |  |  | — |  | `TC01`, `TC31`, `TC53` | Chưa khớp tự động | QC |
+| `A01.09` | tong-doanh-thu |  |  | — |  | `TC01` | Chưa khớp tự động | QC |
+| `A01.10` | hoan-tien |  |  | — |  | `TC01`, `TC55` | Chưa khớp tự động | QC |
 
 ### `A02` Popup Thêm học viên
 
@@ -61,17 +61,17 @@ Frame: `ADM-HV-010010` (tool đoán:ADM-HV-010010) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | trung-tam |  |  | — |  | `TC32`, `TC33`, `TC41`, `TC56`, `TC95` | Chưa sync | QC |
-| `A02.02` | ho-va-ten |  |  | — |  |  | Chưa sync | QC |
-| `A02.03` | gioi-tinh |  |  | — |  |  | Chưa sync | QC |
-| `A02.04` | ngay-sinh |  |  | — |  |  | Chưa sync | QC |
-| `A02.05` | so-dien-thoai |  |  | — |  | `TC41` | Chưa sync | QC |
-| `A02.06` | vai-tro |  |  | — |  | `TC06` | Chưa sync | QC |
-| `A02.07` | gmail-email |  |  | — |  |  | Chưa sync | QC |
-| `A02.08` | mat-khau |  |  | — |  | `TC89` | Chưa sync | QC |
-| `A02.09` | ngay-chot-don |  |  | — |  | `TC06`, `TC88` | Chưa sync | QC |
-| `A02.10` | chon-cap-do-level |  |  | — |  |  | Chưa sync | QC |
-| `A02.11` | code |  |  | — |  | `TC06`, `TC10`, `TC09`, `TC90`, `TC91` | Chưa sync | QC |
+| `A02.01` | trung-tam | `Atom/Label`  | `4835:162350` Atom/Label | — |  | `TC32`, `TC33`, `TC41`, `TC56`, `TC95` | Khớp | QC |
+| `A02.02` | ho-va-ten | `Atom/Label`  | `2263:35414` Atom/Label | — |  |  | Khớp | QC |
+| `A02.03` | gioi-tinh | `Atom/Input` State=CChọn, Kiểu=Chuẩn; `Atom/Label`  | `2263:35523` Atom/Label; `I4835:162351;2148:20906` Chọn | — |  |  | Khớp | QC |
+| `A02.04` | ngay-sinh | `Atom/Label`  | `2263:35421` Atom/Label | — |  |  | Khớp | QC |
+| `A02.05` | so-dien-thoai | `Atom/Label`  | `2263:35428` Atom/Label | — |  | `TC41` | Khớp | QC |
+| `A02.06` | vai-tro | `Atom/Label`  | `2263:35432` Atom/Label | — |  | `TC06` | Khớp | QC |
+| `A02.07` | gmail-email | `Atom/Input` State=Filled, Kiểu=Chuẩn | `I2263:35583;1048:1266` Đã nhập xong | — |  |  | Khớp | QC |
+| `A02.08` | mat-khau | `Atom/Label`  | `2263:35639` Atom/Label | — |  | `TC89` | Khớp | QC |
+| `A02.09` | ngay-chot-don | `Atom/Label`  | `2263:35553` Atom/Label | — |  | `TC06`, `TC88` | Khớp | QC |
+| `A02.10` | chon-cap-do-level |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.11` | code | `Atom/Label`  | `2263:35605` Atom/Label | — |  | `TC06`, `TC10`, `TC09`, `TC90`, `TC91` | Khớp | QC |
 
 ### `A03` Bộ lọc Tag
 
@@ -93,14 +93,14 @@ Frame: `ADM-HV-010060`, `ADM-HV-010070` (tool đoán:ADM-HV-010060, ADM-HV-01007
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | noi-dung |  |  | — |  | `TC21` | Chưa sync | QC |
-| `A05.02` | thoi-gian |  |  | — |  | `TC35` | Chưa sync | QC |
-| `A05.03` | do-uu-tien |  |  | — |  | `TC21`, `TC22` | Chưa sync | QC |
-| `A05.04` | nguoi-phu-trach |  |  | — |  | `TC21`, `TC35`, `TC23`, `TC34`, `TC68` | Chưa sync | QC |
-| `A05.05` | theo-doi |  |  | — |  | `TC21`, `TC22`, `TC23`, `TC34`, `TC68` | Chưa sync | QC |
-| `A05.06` | ghi-chu |  |  | — |  | `TC21` | Chưa sync | QC |
-| `A05.07` | huy |  |  | — |  |  | Chưa sync | QC |
-| `A05.08` | xac-nhan |  |  | — |  | `TC21`, `TC22`, `TC24` | Chưa sync | QC |
+| `A05.01` | noi-dung | `Atom/Input` State=CChọn, Kiểu=Chuẩn; `Atom/Label`  | `2263:45947` Atom/Label; `4835:162357` Atom/Input | — |  | `TC21` | Khớp | QC |
+| `A05.02` | thoi-gian | `Atom/Label`  | `2263:45951` Atom/Label | — |  | `TC35` | Khớp | QC |
+| `A05.03` | do-uu-tien | `Atom/Input` State=CChọn, Kiểu=Chuẩn; `Atom/Label`  | `2263:45958` Atom/Label; `I4835:162357;2148:20906` Chọn | — |  | `TC21`, `TC22` | Khớp một phần | QC |
+| `A05.04` | nguoi-phu-trach | `Atom/Label`  | `2263:45963` Atom/Label | — |  | `TC21`, `TC35`, `TC23`, `TC34`, `TC68` | Khớp | QC |
+| `A05.05` | theo-doi | `Atom/Label`  | `2263:45978` Atom/Label | — |  | `TC21`, `TC22`, `TC23`, `TC34`, `TC68` | Khớp | QC |
+| `A05.06` | ghi-chu | `Atom/Label`  | `2263:45988` Atom/Label; `2263:45988` Atom/Label | — |  | `TC21` | Khớp | QC |
+| `A05.07` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167682;2514:153361` Atom/Button | — |  |  | Khớp một phần | QC |
+| `A05.08` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167682;2514:153363` Atom/Button | — |  | `TC21`, `TC22`, `TC24` | Khớp một phần | QC |
 
 ### `A06` Lịch sử học viên
 
@@ -135,25 +135,25 @@ Frame: `ADM-HV-010062` (tool đoán:ADM-HV-010062) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | so-lop |  |  | — |  | `TC64`, `TC77`, `TC79`, `TC83` | Chưa sync | QC |
-| `A08.02` | len-ky |  |  | — |  | `TC28`, `TC64`, `TC79`, `TC83` | Chưa sync | QC |
-| `A08.03` | di-hoc |  |  | — |  | `TC64`, `TC74`, `TC75`, `TC83` | Chưa sync | QC |
-| `A08.04` | btvn |  |  | — |  | `TC64`, `TC74`, `TC75`, `TC83` | Chưa sync | QC |
-| `A08.05` | dat-kpi |  |  | — |  | `TC28`, `TC64`, `TC79`, `TC83` | Chưa sync | QC |
-| `A08.06` | danh-gia |  |  | — |  | `TC28`, `TC64`, `TC81`, `TC83` | Chưa sync | QC |
-| `A08.07` | ma-lop |  |  | — |  | `TC28` | Chưa sync | QC |
-| `A08.08` | khoa-hoc |  |  | — |  | `TC28` | Chưa sync | QC |
-| `A08.09` | danh-gia |  |  | — |  | `TC28`, `TC64`, `TC81`, `TC83` | Chưa sync | QC |
-| `A08.10` | kpi |  |  | — |  |  | Chưa sync | QC |
-| `A08.11` | mui-ten-cuoi-dong |  |  | — |  |  | Chưa sync | QC |
-| `A08.12` | hoan-thanh |  |  | — |  | `TC28`, `TC77`, `TC78`, `TC79`, `TC83` | Chưa sync | QC |
-| `A08.13` | chua-hoan-thanh |  |  | — |  | `TC78`, `TC83` | Chưa sync | QC |
-| `A08.14` | 8-5 |  |  | — |  |  | Chưa sync | QC |
-| `A08.15` | 7-va-8-5 |  |  | — |  |  | Chưa sync | QC |
-| `A08.16` | 5-5-va-7 |  |  | — |  |  | Chưa sync | QC |
-| `A08.17` | 4-va-5-5 |  |  | — |  |  | Chưa sync | QC |
-| `A08.18` | 2-va-4 |  |  | — |  |  | Chưa sync | QC |
-| `A08.19` | 2 |  |  | — |  |  | Chưa sync | QC |
+| `A08.01` | so-lop |  |  | — |  | `TC64`, `TC77`, `TC79`, `TC83` | Chưa khớp tự động | QC |
+| `A08.02` | len-ky |  |  | — |  | `TC28`, `TC64`, `TC79`, `TC83` | Chưa khớp tự động | QC |
+| `A08.03` | di-hoc |  |  | — |  | `TC64`, `TC74`, `TC75`, `TC83` | Chưa khớp tự động | QC |
+| `A08.04` | btvn |  |  | — |  | `TC64`, `TC74`, `TC75`, `TC83` | Chưa khớp tự động | QC |
+| `A08.05` | dat-kpi |  |  | — |  | `TC28`, `TC64`, `TC79`, `TC83` | Chưa khớp tự động | QC |
+| `A08.06` | danh-gia |  |  | — |  | `TC28`, `TC64`, `TC81`, `TC83` | Chưa khớp tự động | QC |
+| `A08.07` | ma-lop |  |  | — |  | `TC28` | Chưa khớp tự động | QC |
+| `A08.08` | khoa-hoc |  |  | — |  | `TC28` | Chưa khớp tự động | QC |
+| `A08.09` | danh-gia |  |  | — |  | `TC28`, `TC64`, `TC81`, `TC83` | Chưa khớp tự động | QC |
+| `A08.10` | kpi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.11` | mui-ten-cuoi-dong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.12` | hoan-thanh |  |  | — |  | `TC28`, `TC77`, `TC78`, `TC79`, `TC83` | Chưa khớp tự động | QC |
+| `A08.13` | chua-hoan-thanh |  |  | — |  | `TC78`, `TC83` | Chưa khớp tự động | QC |
+| `A08.14` | 8-5 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.15` | 7-va-8-5 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.16` | 5-5-va-7 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.17` | 4-va-5-5 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.18` | 2-va-4 |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.19` | 2 |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A09` Ghi chú — danh sách, bình luận và popup thêm
 
@@ -209,7 +209,7 @@ Frame: `ADM-HV-010000` · Nguồn nội dung: Figma
 | `REQ02` |  | Mỗi trang hiển thị tối đa 50 học viên. Phân trang hiển thị Trang trước, các số trang, dấu `...`, các trang cuối và Trang sau như UI; chỉ một trang được đánh dấu đang chọn. Trang trước bị vô hiệu hóa tại trang đầu, Trang sau bị vô hiệu hóa tại trang cuối; chuyển trang giữ nguyên search/filter. |
 | `REQ03` |  | Search chỉ áp dụng trên `Tên học viên` theo kiểu khớp chứa từ khóa, không yêu cầu khớp chính xác toàn bộ tên; tự chạy sau 2 giây kể từ lần nhập cuối hoặc chạy ngay khi nhấn Enter. |
 | `REQ04` |  | Search, Trạng thái và Tag được kết hợp đồng thời; thay đổi điều kiện đưa danh sách về trang 1. |
-| `REQ05` |  | Dropdown Trạng thái dùng checkbox chọn nhiều với mapping nhãn UI `Mới → [0]`, `Đang học → [1]`, `Đợi lớp → [2]`. Logic BE lần lượt là chưa vào lớp / đang học / đã ở trong lớp (đang học + các trạng thái khác). Nhiều trạng thái dùng OR, không trùng dòng học viên; không chọn trạng thái thì bỏ điều kiện này. FE gửi tập giá trị đã chọn theo hợp đồng API để BE lọc, không tự ánh xạ từ 7 status trong lớp. Kết hợp keyword tên/Tag bằng AND và dùng tổng kết quả BE trả để phân trang. |
+| `REQ05` |  | Dropdown Trạng thái dùng checkbox chọn nhiều với mapping nhãn UI `Mới → [0]`, `Đang học → [1]`, `Đợi lớp → [2]`. Trạng thái hồ sơ là giá trị BE **tính** theo thứ tự ưu tiên: `Đang học` = có ≥ 1 lớp với status trong lớp `Đang học` / `Dự thính` và lớp đó `Đang học`; `Đợi lớp` = không thoả trên nhưng đã từng vào lớp (bản ghi chưa `Xóa`); `Mới` = chưa từng vào lớp. Không nhập tay, không lưu field riêng, tính lại ngay khi status trong lớp hoặc trạng thái lớp đổi; hồ sơ không dùng `Bảo lưu` / `Drop dời` / `Drop`. Nhiều trạng thái dùng OR, không trùng dòng học viên; không chọn trạng thái thì bỏ điều kiện này. FE gửi tập giá trị đã chọn theo hợp đồng API để BE lọc, không tự ánh xạ từ 7 status trong lớp. Kết hợp keyword tên/Tag bằng AND và dùng tổng kết quả BE trả để phân trang. |
 | `REQ06` |  | Filter Tag có search ở đầu popup, nhóm thu gọn/mở rộng bằng chevron và checkbox tag chọn nhiều. Nhóm/tag lấy động từ dữ liệu user định nghĩa; tìm theo mã/tên tag, giữ checkbox đang chọn khi tìm kiếm, thu gọn hoặc mở lại. Nhiều tag dùng OR kể cả khác nhóm; không chọn tag thì bỏ điều kiện Tag. Kết hợp bằng AND với Trạng thái/keyword tên, đổi lựa chọn đưa danh sách về trang 1. |
 | `REQ07` |  | Nút Excel nằm ở góc dưới bên phải bảng, cùng hàng với phần phân trang theo UI chuẩn. File Excel có đúng thứ tự cột: `Tên học viên`, `Số điện thoại`, `Email`, `Ngày tạo`. Không có search/filter thì xuất toàn bộ danh sách thuộc phạm vi dữ liệu của user; có search/filter thì xuất toàn bộ kết quả thỏa điều kiện. Luôn xuất tất cả trang, không chỉ trang đang xem. |
 | `REQ08` |  | Dropdown `Chọn cấp độ` có đúng 9 lựa chọn từ `Cấp độ 1` đến `Cấp độ 9`, chọn một giá trị; placeholder `Chọn` không được tính là lựa chọn hợp lệ. |
@@ -282,6 +282,8 @@ Frame: `ADM-HV-010000` · Nguồn nội dung: Figma
 | `TC15` | Case 15: Nhập tiếp trước thời gian auto search | Medium |  | EX06 | `A01` |  |
 | `TC16` | Case 16: Search ngay bằng Enter | High |  | Flow 2 / EX07 | `A01` |  |
 | `TC17` | Case 17: Xóa từ khóa tìm kiếm | Medium |  | Flow 2 | `A01` |  |
+| `TC11a` | Case 11a: Công thức ưu tiên Đang học | High |  | Flow 3 / REQ05 | `A01` |  |
+| `TC11b` | Case 11b: Nhóm đổi theo status trong lớp | High |  | Flow 3 / REQ05 / REQ29 | `A01` |  |
 | `TC11` | Case 11: Nhãn UI và mapping filter logic 0/1/2 | High |  | Flow 3 / REQ05 | `A01` |  |
 | `TC59` | Case 59: Filter logic độc lập với status học viên trong lớp | High |  | REQ05 | `A01` |  |
 | `TC60` | Case 60: Chọn nhiều trạng thái theo OR | High |  | REQ05 | `A01` |  |
@@ -376,8 +378,7 @@ Frame: `ADM-HV-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (22): `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.12`, `A07.13`, `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`, `A10.03`, `A10.04`
-- Chưa sync (48): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.11`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.09`, `A08.10`, `A08.11`, `A08.12`, `A08.13`, `A08.14`, `A08.15`, `A08.16`, `A08.17`, `A08.18`, `A08.19`
+- Chưa khớp tự động (51): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.08`, `A01.09`, `A01.10`, `A02.10`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.12`, `A07.13`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.09`, `A08.10`, `A08.11`, `A08.12`, `A08.13`, `A08.14`, `A08.15`, `A08.16`, `A08.17`, `A08.18`, `A08.19`, `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`, `A10.03`, `A10.04`
 - Frame Figma chưa có requirement (8): `ADM-HV-010001`, `ADM-HV-010010`, `ADM-HV-010012`, `ADM-HV-010060`, `ADM-HV-010062`, `ADM-HV-010070`, `ADM-HV-010102`, `ADM-HV-010202`
 - Thiếu prototype link đi vào (3): `ADM-HV-010010`, `ADM-HV-010060`, `ADM-HV-010070`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`

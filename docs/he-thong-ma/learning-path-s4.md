@@ -8,7 +8,7 @@
 |---|---|---|---|---|
 | `CD-KH-020200` | Chi tiết khoá học / Lộ trình | `/chi-tiet-khoa-hoc/lo-trinh` | `CD-KH-020200-DK` | QC |
 
-Requirement: `course_management/learning-path-s4/learning-path-s4.md` — Lộ Trình (S4) (tiền tố `CM-LPS`).
+Requirement: `course_management/learning-path-s4/learning-path-s4.md` — Lộ Trình (S4) (tiền tố `CM-LPS2`).
 
 ## 2. Luồng
 

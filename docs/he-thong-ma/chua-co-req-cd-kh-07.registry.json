@@ -83,9 +83,9 @@
    "content": "figma",
    "nodeId": "5672:64312",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-kh-070103",
    "link": null,
    "dark": "CD-KH-070103-DK",
    "openedFrom": [

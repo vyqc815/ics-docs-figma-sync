@@ -142,9 +142,9 @@
    "content": "figma",
    "nodeId": "5413:49911",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-ld-020010",
    "link": "/lich-day/quan-ly-dang-ky-lich?popup=GV-LD-020010",
    "dark": "GV-LD-020010-DK",
    "openedFrom": [],
@@ -876,11 +876,44 @@
      "spec": "`Đăng ký khung giờ`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ld-020010": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I5413:49912;2514:153340",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Đăng ký khung giờ",
+        "figmaId": "I5413:49912;2514:153341",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-TS.A03.02",
@@ -889,13 +922,33 @@
      "spec": "Đúng thứ, buổi và khung tương ứng ô đã bấm, ví dụ `Thứ 3 · Buổi chiều (14h00 – 18h00)`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ld-020010": [
+       {
+        "term": "Thứ 3 · Buổi chiều (14h00 – 18h00)",
+        "figmaId": "I5413:49912;2514:153342",
+        "layer": "Description",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-TS.TC21"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Dòng phụ"
+     ],
+     "status": "khop"
     },
     {
      "id": "TR-TS.A03.03",
@@ -904,11 +957,46 @@
      "spec": "Bắt buộc. Chọn các mốc cách nhau 30 phút, nằm trong khung của buổi. Buổi sáng gồm các mốc 07:30–12:00, chiều 14:00–18:00, tối 18:00–23:00. Giờ kết thúc phải lớn hơn giờ bắt đầu.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ld-020010": [
+       {
+        "term": "Giờ bắt đầu",
+        "figmaId": "5413:49917",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Khung giờ",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2224",
+         "Label": "Giờ bắt đầu",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Giờ kết thúc",
+        "figmaId": "5413:49920",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Khung giờ",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2224",
+         "Label": "Giờ kết thúc",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-TS.A03.04",
@@ -917,14 +1005,33 @@
      "spec": "Không bắt buộc, chỉ thuộc ô đang sửa; không ghi đè ghi chú chung. Giới hạn ký tự cần xác nhận.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ld-020010": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "5413:49924",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Ghi chú",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Ghi chú",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-TS.TC24",
       "TR-TS.TC25"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-TS.A03.05",
@@ -933,11 +1040,29 @@
      "spec": "Đóng popup, không thay đổi nháp của ô; ô mới vẫn trống, ô đang sửa giữ giờ/ghi chú trước khi mở.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ld-020010": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I5413:49926;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-TS.A03.06",
@@ -946,14 +1071,32 @@
      "spec": "Validate và lưu vào nháp lưới; chưa ghi backend. Nếu thiếu giờ hoặc khoảng không hợp lệ, báo lỗi tại field và giữ popup để sửa.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ld-020010": [
+       {
+        "term": "Xác nhận",
+        "figmaId": "I5413:49926;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xác nhận",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-TS.TC22",
       "TR-TS.TC25"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ]
   },

@@ -23,12 +23,12 @@ Requirement: `course_management/skill-s6/skill-s6.md` — Kỹ năng (S6) — Ng
 - `FLOW05` Xem và sửa chi tiết — `REQ04`, `REQ07`, `REQ08`
 - `FLOW06` Thêm vào cụm / Gỡ khỏi cụm — `REQ05`
 - `FLOW07` Gỡ khỏi khoá — `REQ09`
-- `FLOW08` Quản lý cụm — `REQ05`, `REQ11`
+- `FLOW08` Cụm sinh từ S2, đổi tên, liên kết bài học, chia cụm AI — `REQ05`, `REQ11`
 - `FLOW09` Import / Export Excel — `REQ12`
 - `FLOW10` Transcript AI (Nghe) / Tạo câu hỏi AI (Đọc) — `REQ11`
 - `FLOW11` Soát lỗi AI — `REQ11`
 - `FLOW12` Preview mobile — `REQ13`
-- `FLOW13` Thêm / gỡ bài kỹ năng trong Chi tiết bài học — `REQ14`
+- `FLOW13` Xem bài kỹ năng của bài học theo cụm liên kết — `REQ14`
 
 ## 3. Popup, trạng thái, dropdown
 
@@ -81,13 +81,14 @@ Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A02.01` | checkbox |  |  | — |  |  | Chưa sync | QC |
-| `A02.02` | stt-tay-nam-keo-tha |  |  | — |  |  | Chưa sync | QC |
-| `A02.03` | bai-nghe |  |  | — |  |  | Chưa sync | QC |
-| `A02.04` | am-thanh |  |  | — |  | `TC04`, `TC05` | Chưa sync | QC |
-| `A02.05` | cum |  |  | — | opens `A08` |  | Chưa sync | QC |
-| `A02.06` | menu |  |  | — |  |  | Chưa sync | QC |
-| `A02.07` | nhan-ai-duoi-ten |  |  | — |  |  | Chưa sync | QC |
+| `A02.01` | checkbox |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A02.02` | stt-tay-nam-keo-tha |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A02.03` | bai-nghe |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A02.04` | am-thanh |  |  | — |  | `TC04`, `TC05` | Chưa có thiết kế | QC |
+| `A02.05` | cum |  |  | — | opens `A08` |  | Chưa có thiết kế | QC |
+| `A02.06` | nang-cao |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A02.07` | menu |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A02.08` | nhan-ai-duoi-ten |  |  | — |  |  | Chưa có thiết kế | QC |
 
 ### `A03` Bảng bài đọc
 
@@ -98,6 +99,7 @@ Frame: `CD-KH-050200` · Nguồn nội dung: QC
 | `A03.01` | stt-checkbox-cum-menu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.02` | bai-doc |  | `5491:342755` Câu | có |  |  | Khớp | QC |
 | `A03.03` | doan-van |  | `5491:342757` Phiên âm | có |  | `TC08` | Khớp | QC |
+| `A03.04` | cot-khac |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Panel Cụm và Số cụm
 
@@ -109,8 +111,9 @@ Frame: chưa có · Nguồn nội dung: QC
 | `A04.02` | so-cum |  |  | — |  | `TC12` | Chưa có thiết kế | QC |
 | `A04.03` | chia-cum-bang-ai |  |  | — |  | `TC12b` | Chưa có thiết kế | QC |
 | `A04.04` | dong-cum |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A04.05` | chua-phan-cum |  |  | — |  | `TC11`, `TC12a` | Chưa có thiết kế | QC |
-| `A04.06` | them-cum-moi |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A04.05` | popup-lien-ket-bai-hoc |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A04.06` | chua-phan-cum |  |  | — |  | `TC11` | Chưa có thiết kế | QC |
+| `A04.07` | them-cum-moi |  |  | — |  |  | Chưa có thiết kế | QC |
 
 ### `A05` Tìm kiếm, lọc và sắp xếp
 
@@ -118,10 +121,11 @@ Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A05.01` | o-tim |  |  | — |  |  | Chưa sync | QC |
-| `A05.02` | cum |  |  | — |  |  | Chưa sync | QC |
-| `A05.03` | sap-xep |  |  | — |  |  | Chưa sync | QC |
-| `A05.04` | trang-thai |  |  | — |  | `TC15` | Chưa sync | QC |
+| `A05.01` | o-tim |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A05.02` | cum |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A05.03` | sap-xep |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A05.04` | trang-thai |  |  | — |  | `TC15`, `TC15a` | Chưa có thiết kế | QC |
+| `A05.05` | nang-cao |  |  | — |  | `TC15a` | Chưa có thiết kế | QC |
 
 ### `A06` Drawer Chi tiết bài nghe
 
@@ -133,10 +137,11 @@ Frame: `CD-KH-050110`, `CD-KH-070301` · Nguồn nội dung: QC
 | `A06.02` | ten-bai |  |  | — |  | `TC17` | Chưa khớp tự động | QC |
 | `A06.03` | mo-ta |  |  | — |  | `TC16`, `TC20a` | Chưa khớp tự động | QC |
 | `A06.04` | cum |  | `6646:84793` Cụm | có | opens `A08` |  | Khớp một phần | QC |
-| `A06.05` | am-thanh | `Liner Icon`  | `6646:84806` Liner Icon | có |  |  | Khớp một phần | QC |
-| `A06.06` | kich-ban-n-luot |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A06.07` | cau-hoi |  | `6518:373116` h · Câu hỏi | có |  | `TC20` | Khớp một phần | QC |
-| `A06.08` | footer |  | `6646:84932` Footer · Phân trang | có |  |  | Khớp một phần | QC |
+| `A06.05` | nang-cao |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A06.06` | am-thanh | `Liner Icon`  | `6646:84806` Liner Icon | có |  |  | Khớp một phần | QC |
+| `A06.07` | kich-ban-n-luot |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A06.08` | cau-hoi |  | `6518:373116` h · Câu hỏi | có |  | `TC20` | Khớp một phần | QC |
+| `A06.09` | footer |  | `6646:84932` Footer · Phân trang | có |  |  | Khớp một phần | QC |
 
 ### `A07` Drawer Chi tiết bài đọc
 
@@ -144,7 +149,7 @@ Frame: `CD-KH-070302`, `CD-KH-050210` (tool đoán:CD-KH-050210) · Nguồn nộ
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | ten-bai-mo-ta-cum-cau-hoi-footer |  | `6518:383898` Field · Danh sách câu hỏi | có |  |  | Khớp | QC |
+| `A07.01` | ten-bai-mo-ta-cum-nang-cao-cau-hoi-foote |  | `6518:383898` Field · Danh sách câu hỏi | có |  |  | Khớp | QC |
 | `A07.02` | doan-van |  | `6163:82186` Đọc đoạn văn và trả lời 3 câu · Kỹ năng: Đọc | có |  | `TC21` | Khớp | QC |
 | `A07.03` | audio-doc-mau |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.04` | tu-vung-lien-quan |  |  | — |  | `TC22` | Chưa khớp tự động | QC |
@@ -222,10 +227,10 @@ Frame: `CD-KH-050155` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A13.01` | tieu-de |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A13.02` | noi-dung |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A13.03` | ghi-chu |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A13.04` | nut |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A13.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A13.02` | noi-dung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A13.03` | ghi-chu |  | `6646:120239` Bản ghi trong Thư viện dữ liệu vẫn còn; khoá khác đang dùng không bị ảnh hưởng. | — |  |  | Khớp | QC |
+| `A13.04` | nut | `Atom/Button` Type=Secondary, Size=Medium | `6646:120241` Atom/Button | — |  |  | Khớp | QC |
 
 ### `A14` Màn trống
 
@@ -300,15 +305,16 @@ Frame: `CD-KH-050140` · Nguồn nội dung: QC
 | `A19.04` | mo-chi-tiet-bai-nghe | `Atom/Button` Type=Secondary, Size=Small | `6646:117403` Atom/Button | có |  |  | Khớp | QC |
 | `A19.05` | bai-truoc-bai-sau |  | `6646:117407` Bài trước; `6646:117410` Bài sau | có |  |  | Khớp | QC |
 
-### `A20` Thêm / gỡ bài kỹ năng trong Chi tiết bài học
+### `A20` Cụm liên kết với Chi tiết bài học
 
 Frame: chưa có · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A20.01` | popup-them |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A20.02` | them-ca-cum |  |  | — |  |  | Chưa có thiết kế | QC |
-| `A20.03` | danh-sach-trong-bai |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A20.01` | nguon-du-lieu |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A20.02` | bo-loc-loai |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A20.03` | tieu-de-khung |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A20.04` | dong-bo |  |  | — |  |  | Chưa có thiết kế | QC |
 
 ### `A21` Toast phản hồi CRUD
 
@@ -339,29 +345,30 @@ Frame: `CD-KH-050100`, `CD-KH-050180`, `CD-KH-050200`, `CD-KH-050300`, `CD-KH-05
 | `REQ01` | Phạm vi | Mỗi khoá học có danh sách Kỹ năng (S6) riêng; dữ liệu theo trung tâm CD đang chọn ở header. |
 | `REQ02` | Tab kỹ năng | 4 tab `Nghe`, `Đọc`, `Viết`, `Nói` ở mọi trung tâm, mỗi tab có panel Cụm riêng; bảng và field |
 | `REQ03` | Cột và nội dung | Nghe: tên, mô tả, âm thanh (mp3 ≤ 50MB, thời lượng không giới hạn, `h:mm:ss` khi ≥ 1 giờ, chỉ phát một bài tại một thời điểm), cụm. Đọc: tên, mô tả, đoạn văn, cụm; audio đọc mẫu không bắt buộc. Không có cột bài học. |
-| `REQ04` | Thư viện kỹ năng | Bài của S6 là tham chiếu bản ghi Thư viện kỹ năng; một bản ghi gắn vào một khoá tối đa 1 lần. Thêm mới (popup tạo, nhập nhanh, import) tạo bản ghi `Nháp`; sửa tại S6 sửa bản ghi thư viện. Field: Tên *, Mô tả, Âm thanh + Kịch bản (lượt, người nói, phiên âm, dịch, mốc start / end) với Nghe; Đoạn văn + audio đọc mẫu + Từ vựng liên quan (từ S1 của khoá) với Đọc. **Thiếu thông tin** khi thiếu file / đoạn văn, mô tả, hoặc 0 câu hỏi đã duyệt. |
-| `REQ05` | Cụm | Mỗi tab có bộ cụm riêng của khoá; một bài thuộc **tối đa 1 cụm** của tab. `Số cụm` chỉ nhập khi chưa có cụm (tạo `Chủ đề 1…N`), sau đó thêm / đổi tên / xoá cụm, Chia cụm bằng AI. Thêm vào / gỡ khỏi cụm qua popup thêm / tạo, nhập nhanh, import (cụm đang chọn), menu dòng, hàng loạt, nhãn cột Cụm, drawer (chọn 1 cụm). Xoá cụm không gỡ bài khỏi khoá. Số đếm panel Cụm cập nhật ngay. Thứ tự bài trong cụm kéo thả được. |
-| `REQ06` | Tìm kiếm, lọc, sắp xếp | Tìm theo tên, mô tả, nội dung; lọc theo cụm (panel Cụm) và Trạng thái `Tất cả / Nháp / Công khai / Vô hiệu`; sắp xếp `Thứ tự thêm / Tên A–Z / Mới cập nhật / Thứ tự trong cụm`; phân trang 50 dòng; đổi điều kiện về trang 1. |
+| `REQ04` | Thư viện kỹ năng | Bài của S6 là tham chiếu bản ghi Thư viện kỹ năng; không có rule bắt trùng bản ghi trong khoá (thống nhất với S1 REQ04), popup thêm chỉ khoá bài đã có để tránh thêm nhầm. Thêm mới (popup tạo, nhập nhanh, import) tạo bản ghi `Nháp`; sửa tại S6 sửa bản ghi thư viện. Field: Tên *, Mô tả, Nâng cao (Có / Không, mặc định Không), Âm thanh + Kịch bản (lượt, người nói, phiên âm, dịch, mốc start / end) với Nghe; Đoạn văn + audio đọc mẫu + Từ vựng liên quan (từ S1 của khoá) với Đọc. **Thiếu thông tin** khi thiếu file / đoạn văn, mô tả, hoặc 0 câu hỏi đã duyệt. |
+| `REQ05` | Cụm | Mỗi tab có bộ cụm riêng của khoá; một bài thuộc **tối đa 1 cụm** của tab. **Số cụm = tổng Số buổi của loại ở Tổng quan (S2)**, tự tạo `Chủ đề k`, không nhập / thêm / xoá cụm tại S6; CD đổi tên, Chia cụm bằng AI. **Mỗi cụm liên kết đúng 1 bài học, mỗi bài học tối đa 1 cụm mỗi loại kỹ năng**, BE kiểm tra trùng (EX13), liên kết tại ⋮ cụm; nhân bản khoá sao chép cụm và liên kết. Thêm vào / gỡ khỏi cụm qua popup thêm / tạo, nhập nhanh, import (cụm đang chọn), menu dòng, hàng loạt, nhãn cột Cụm, drawer (chọn 1 cụm). Xoá cụm không gỡ bài khỏi khoá. Số đếm panel Cụm cập nhật ngay. Thứ tự bài trong cụm kéo thả được. |
+| `REQ06` | Bảng, tìm kiếm, lọc, sắp xếp | Bảng hiện đủ mọi field, cuộn ngang, ghim cột đầu / cuối. Tìm theo tên, mô tả, nội dung; lọc theo cụm (panel Cụm), Trạng thái `Tất cả / Nháp / Công khai / Vô hiệu`, Nâng cao `Tất cả / Có / Không`; sắp xếp `Thứ tự thêm / Tên A–Z / Mới cập nhật / Thứ tự trong cụm`; phân trang 50 dòng; đổi điều kiện về trang 1. |
 | `REQ07` | Drawer chi tiết | Đủ field theo REQ04, cụm chỉ đọc + `Sửa cụm`, duyệt / hoàn tác giá trị AI, hỏi xác nhận khi đóng có thay đổi; lưu ảnh hưởng mọi khoá dùng bản ghi. |
 | `REQ08` | Câu hỏi | Soạn và duyệt ở màn Chi tiết câu hỏi của Thư viện bài tập (Listening / Reading), đủ loại câu của BTVN & Kiểm tra; drawer chỉ tóm tắt số câu theo loại và dẫn link. |
-| `REQ09` | Gỡ khỏi khoá | Xoá ở S6 là gỡ khỏi khoá, khỏi mọi cụm và khỏi các bài học của khoá, có xác nhận; bản ghi thư viện còn; kết quả học viên giữ. |
+| `REQ09` | Gỡ khỏi khoá | Xoá ở S6 là gỡ khỏi khoá và khỏi cụm (bài học liên kết cụm không còn bài), có xác nhận nêu cụm và bài học; bản ghi thư viện còn; kết quả học viên giữ. |
 | `REQ10` | Trạng thái khoá học | Chỉ thao tác ghi khi khoá `Nháp`; khoá khác chỉ xem, tìm, lọc, Preview, Export. |
 | `REQ11` | AI | Transcript AI (Nghe, từ file âm thanh, có phiên âm, dịch, mốc thời gian), Tạo câu hỏi AI (Đọc, từ đoạn văn), Soát lỗi AI (cả hai), Chia cụm bằng AI. Kết quả lưu nháp chờ duyệt, không ghi đè; `Duyệt tất cả` của Soát lỗi áp dụng sửa của AI, có Hoàn tác; `Dừng` được; bài đang xử lý bị khoá sửa / gỡ. |
 | `REQ12` | Import / Export Excel | Chỉ `.xlsx`. Tab Nghe chỉ đọc 3 sheet `listening_lesson`, `listening`, `listening_question`; tab Đọc chỉ đọc 4 sheet `reading_lesson`, `reading`, `reading_question`, `reading_vocabulary` (bắt buộc cột `reading_lesson_id`); bỏ qua sheet khác. **Không có cột bài học**: bỏ qua `lesson_id`, bài vào cụm đang chọn. Export toàn bộ bài của tab cùng cấu trúc sheet; import tạo bản ghi `Nháp` thêm vào cuối, có dòng lỗi thì chặn cả file, không tự dò trùng. |
 | `REQ13` | Preview mobile | Tái hiện màn học của app học viên cho bài đang chọn (Làm bài / Kịch bản hoặc Đoạn văn / Kết quả); toggle `Kịch bản ẩn khi làm bài` lưu theo bài; không ghi dữ liệu học. |
-| `REQ14` | Bài kỹ năng trong bài học | Chỉ Chi tiết bài học liên kết bài kỹ năng với bài học: thêm cả cụm (chọn tất cả, một lần, không tự gắn bài mới) hoặc từng bài từ S6 của chính khoá; bài thiếu thông tin không gắn được; gỡ khỏi khoá / gỡ khỏi cụm / xoá cụm đang dùng ở bài học có cảnh báo liệt kê bài học, xác nhận thì tự gỡ khỏi bài học; một bài có thể ở nhiều bài học; không sửa nội dung tại bài; S6 không hiển thị bài học. |
+| `REQ14` | Bài kỹ năng trong bài học | Chi tiết bài học không chọn bài; tab Kỹ năng chỉ hiển thị bài của cụm đã liên kết, theo loại đang lọc (mặc định Nghe), tiêu đề là tên cụm; thay đổi ở cụm phản ánh ngay; không thêm / gỡ / sửa tại bài; badge tab = số loại kỹ năng có cụm liên kết. |
 | `REQ15` | Phản hồi | Mỗi thao tác thay đổi dữ liệu đúng một Toast theo kết quả; không báo thành công trước khi lưu xong. |
 | `EX01` | Ngoại lệ | Khoá học không `Nháp` → ẩn / mờ mọi thao tác ghi (gồm thao tác cụm); API thêm / sửa / gỡ / cụm / AI bị từ chối. |
 | `EX02` | Ngoại lệ | Tên bài trống, Nhập nhanh rỗng, Tạo bài mới thiếu file (Nghe) hoặc đoạn văn (Đọc) → báo lỗi tại field, không tạo / lưu. |
 | `EX03` | Ngoại lệ | File âm thanh không phải `.mp3` hoặc lớn hơn 50MB → từ chối, Toast `Cảnh Báo`, giữ file cũ. |
-| `EX04` | Ngoại lệ | Gắn bản ghi thư viện đã có trong khoá → popup khoá lựa chọn; API từ chối gắn trùng. |
+| `EX04` | Ngoại lệ | Gắn bản ghi thư viện đã có trong khoá → popup khoá lựa chọn, không gắn thêm từ popup; API vẫn nhận (như S1 REQ04: không bắt trùng bản ghi trong khoá). |
 | `EX05` | Ngoại lệ | Import không phải `.xlsx`, thiếu sheet bài gốc, `reading_vocabulary` thiếu cột `reading_lesson_id`, dòng thiếu |
 | `EX06` | Ngoại lệ | AI lỗi hoặc CD bấm `Dừng` → bài chưa xử lý giữ nguyên; bài đã xử lý giữ trạng thái chờ duyệt; AI lỗi thì Toast `Có Lỗi Xảy Ra`. |
 | `EX07` | Ngoại lệ | Sửa / gỡ bài đang được AI xử lý → UI mờ; API từ chối. |
 | `EX08` | Ngoại lệ | Role khác CD hoặc trung tâm khác trung tâm đang chọn truy cập S6 / gọi API → từ chối. |
-| `EX09` | Ngoại lệ | Lưu drawer, thêm / gỡ cụm, gỡ bài, duyệt AI thất bại → giữ dữ liệu cũ, Toast `Có Lỗi Xảy Ra`. |
-| `EX10` | Ngoại lệ | Thêm bài vào cụm của tab khác / khoá khác, hoặc thêm vào bài học không thuộc khoá đang mở (qua API) → từ chối. |
-| `EX11` | Ngoại lệ | Nhập `Số cụm` khi tab đã có cụm (qua API) → từ chối; số cụm âm / không phải số → báo lỗi tại ô. |
+| `EX09` | Ngoại lệ | Lưu drawer, thêm / gỡ cụm, liên kết bài học, gỡ bài, duyệt AI thất bại → giữ dữ liệu cũ, Toast `Có Lỗi Xảy Ra`. |
+| `EX10` | Ngoại lệ | Thêm bài vào cụm của tab khác / khoá khác, hoặc liên kết cụm với bài học không thuộc khoá đang mở (qua API) → từ chối. |
+| `EX11` | Ngoại lệ | Đổi `Số cụm`, thêm hoặc xoá cụm trực tiếp ở S6 (UI / API) → ô chỉ đọc, không có nút; API từ chối. Số cụm chỉ đổi qua Số buổi ở S2. |
+| `EX13` | Ngoại lệ | Liên kết cụm với bài học đã có cụm cùng loại kỹ năng → BE từ chối (409), Toast `Cảnh Báo` nêu cụm đang chiếm; dữ liệu không đổi. |
 
 ## 6. Testcase
 
@@ -378,25 +385,27 @@ Frame: `CD-KH-050100`, `CD-KH-050180`, `CD-KH-050200`, `CD-KH-050300`, `CD-KH-05
 | `TC08` | Case 8: Hiển thị bảng Đọc | High | Có | Flow 1 / REQ03 | `A03` | `A03.03` |
 | `TC09` | Case 9: Tìm theo nội dung đoạn văn | Medium |  | REQ06 | `A03` |  |
 | `TC10` | Case 10: Lọc theo cụm | High | Có | Flow 1 / REQ06 | `A04` |  |
-| `TC11` | Case 11: Lọc Chưa phân cụm | High |  | REQ06 | `A04` | `A04.05` |
-| `TC12` | Case 12: Tạo cụm theo Số cụm | High | Có | Flow 8 / REQ05 | `A04` | `A04.02` |
-| `TC12a` | Case 12a: Xoá cụm | Medium |  | Flow 8 / REQ05 | `A04` | `A04.05` |
+| `TC11` | Case 11: Lọc Chưa phân cụm | High |  | REQ06 | `A04` | `A04.06` |
+| `TC12` | Case 12: Cụm sinh từ S2 | High | Có | Flow 8 / REQ05 | `A04` | `A04.02` |
+| `TC12a` | Case 12a: Liên kết cụm với bài học | High | Có | Flow 8 / REQ05 | `A04` |  |
+| `TC12c` | Case 12c: Bài đã có cụm cùng loại | High |  | EX13 / REQ05 | `A04` |  |
 | `TC12b` | Case 12b: Chia cụm bằng AI | Medium |  | Flow 8 / REQ05 / REQ11 | `A04` | `A04.03` |
 | `TC13` | Case 13: Kết hợp tìm và lọc cụm | High |  | Flow 1 / REQ06 | `A05` |  |
 | `TC13a` | Case 13a: Kéo thả thứ tự trong cụm | Medium |  | REQ06 | `A05` |  |
 | `TC14` | Case 14: Sắp xếp Tên A–Z | Medium |  | REQ06 | `A05` |  |
 | `TC15` | Case 15: Lọc trạng thái Vô hiệu | Medium |  | REQ06 / REQ09 | `A05` | `A05.04` |
+| `TC15a` | Case 15a: Lọc Nâng cao và cuộn ngang | Medium |  | REQ06 | `A05` | `A05.04`, `A05.05` |
 | `TC16` | Case 16: Sửa và lưu bài nghe | High | Có | Flow 5 / REQ04 / REQ07 | `A06` | `A06.03` |
 | `TC17` | Case 17: Tên trống không lưu | High |  | EX02 / REQ04 | `A06` | `A06.02` |
 | `TC18` | Case 18: Tải file sai loại / quá dung lượng | High |  | EX03 / REQ03 | `A06` |  |
 | `TC19` | Case 19: Đóng khi có thay đổi | Medium |  | REQ07 | `A06` |  |
-| `TC20` | Case 20: Mở chi tiết câu hỏi | Medium |  | Flow 5 / REQ08 | `A06` | `A06.07` |
+| `TC20` | Case 20: Mở chi tiết câu hỏi | Medium |  | Flow 5 / REQ08 | `A06` | `A06.08` |
 | `TC20a` | Case 20a: Lưu drawer thất bại | Medium |  | EX09 | `A06` | `A06.03` |
 | `TC21` | Case 21: Sửa đoạn văn và lưu | High | Có | Flow 5 / REQ04 | `A07` | `A07.02` |
 | `TC22` | Case 22: Gắn từ vựng liên quan | Medium |  | REQ04 | `A07` | `A07.04` |
 | `TC23` | Case 23: Audio đọc mẫu không bắt buộc | Low |  | REQ04 | `A07` |  |
 | `TC24` | Case 24: Thêm bài vào cụm từ menu dòng | High | Có | Flow 6 / REQ05 | `A08` | `A08.02` |
-| `TC24a` | Case 24a: Chuyển cụm bài đang dùng ở bài học | High |  | Flow 6 / REQ05 | `A08` |  |
+| `TC24a` | Case 24a: Chuyển cụm bài đang hiển thị ở bài học | High |  | Flow 6 / REQ05 | `A08` |  |
 | `TC25` | Case 25: Gỡ khỏi cụm cuối cùng | Medium |  | Flow 6 / REQ05 | `A08` |  |
 | `TC25a` | Case 25a: Gọi API thêm bài vào cụm của tab / khoá khác | Medium |  | EX10 | `A08` |  |
 | `TC26` | Case 26: Nhập nhanh tạo bài | High | Có | Flow 4 / REQ04 | `A09` | `A09.01` |
@@ -434,10 +443,10 @@ Frame: `CD-KH-050100`, `CD-KH-050180`, `CD-KH-050200`, `CD-KH-050300`, `CD-KH-05
 | `TC51` | Case 51: Preview bài nghe | High | Có | Flow 12 / REQ13 | `A19` |  |
 | `TC52` | Case 52: Toggle kịch bản lưu theo bài | Medium |  | REQ13 | `A19` |  |
 | `TC53` | Case 53: Bài 0 câu hỏi | Low |  | REQ13 | `A19` |  |
-| `TC54` | Case 54: Thêm cụm bài nghe vào bài học | High | Có | Flow 13 / REQ14 | `A20` |  |
-| `TC55b` | Case 55b: Xoá cụm / gỡ bài đang dùng ở bài học | High |  | REQ09 / REQ14 | `A20` |  |
-| `TC55` | Case 55: Một bài kỹ năng ở nhiều bài học | Medium |  | REQ14 | `A20` |  |
-| `TC55a` | Case 55a: Gỡ khỏi bài học | Medium |  | REQ14 | `A20` |  |
+| `TC54` | Case 54: Bài học hiện bài của cụm liên kết | High | Có | Flow 13 / REQ14 | `A20` |  |
+| `TC55` | Case 55: Thêm bài vào cụm, bài học cập nhật | High | Có | Flow 13 / REQ14 | `A20` |  |
+| `TC55a` | Case 55a: Loại chưa liên kết | Medium |  | REQ14 | `A20` |  |
+| `TC55b` | Case 55b: Gỡ bài khỏi khoá đang ở cụm liên kết | High |  | REQ09 / REQ14 | `A20` |  |
 | `TTC01` | Toast Case 1: Thành công | High |  | REQ15 | `A21` | `A21.01` |
 | `TTC02` | Toast Case 2: Cảnh báo | High |  | REQ15 | `A21` | `A21.03` |
 | `TTC03` | Toast Case 3: Lỗi | High |  | REQ15 | `A21` |  |
@@ -452,9 +461,9 @@ Frame: `CD-KH-050100`, `CD-KH-050180`, `CD-KH-050200`, `CD-KH-050300`, `CD-KH-05
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (13): `A03.01`, `A06.02`, `A06.03`, `A07.03`, `A07.04`, `A10.01`, `A10.02`, `A10.03`, `A10.05`, `A10.06`, `A12.06`, `A16.01`, `A18.01`
+- Chưa khớp tự động (16): `A03.01`, `A03.04`, `A06.02`, `A06.03`, `A07.03`, `A07.04`, `A10.01`, `A10.02`, `A10.03`, `A10.05`, `A10.06`, `A12.06`, `A13.01`, `A13.02`, `A16.01`, `A18.01`
 - Requirement ghi thiếu, Figma đã có (1): `A01.07`
-- Chưa sync (19): `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A02.06`, `A02.07`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A09.01`, `A09.02`, `A17.01`, `A17.02`, `A21.01`, `A21.02`, `A21.03`, `A21.04`
+- Chưa sync (8): `A09.01`, `A09.02`, `A17.01`, `A17.02`, `A21.01`, `A21.02`, `A21.03`, `A21.04`
 - Thiếu prototype link đi vào (10): `CD-KH-050110`, `CD-KH-050120`, `CD-KH-050130`, `CD-KH-050140`, `CD-KH-050150`, `CD-KH-050155`, `CD-KH-050160`, `CD-KH-050190`, `CD-KH-050210`, `CD-KH-070313`
 - Phân loại cần design duyệt (11): `CD-KH-050120`, `CD-KH-050130`, `CD-KH-050140`, `CD-KH-050190`, `CD-KH-070301`, `CD-KH-070302`, `CD-KH-070305`, `CD-KH-070306`, `CD-KH-070307`, `CD-KH-070309`, `CD-KH-070313`
 - Frame Figma chưa có requirement (6): `CD-KH-050210`, `CD-KH-070305`, `CD-KH-070306`, `CD-KH-070307`, `CD-KH-070309`, `CD-KH-070313`

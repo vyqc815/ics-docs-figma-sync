@@ -378,7 +378,7 @@
      "id": "M-TS.A02.05",
      "name": "luong-buoi",
      "label": "Lương buổi",
-     "spec": "Tổng tiền buổi dạy đã ghi nhận tại lớp trong kỳ; phân biệt với đơn giá theo giờ của quan hệ giáo viên–lớp.",
+     "spec": "Tổng tiền buổi dạy đã ghi nhận tại lớp trong kỳ; mỗi buổi = `Lương/giờ` của buổi × thời lượng (giờ), đã chốt khi hoàn thành. Không còn đơn giá theo lớp.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -398,7 +398,9 @@
      },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
+     "missingTerms": [
+      "Lương/giờ"
+     ],
      "status": "khop"
     },
     {
@@ -1562,14 +1564,15 @@
      "id": "M-TS.A10.10",
      "name": "teacher-detail-teacher-history-salary-re",
      "label": "Teacher detail / Teacher history & salary requirements",
-     "spec": "Ngày tính lương, buổi không lịch, giữ tiền lịch sử, confirmed KPI/OT; đơn giá theo giờ riêng từng lớp, duyệt đề xuất và chỉnh lương thủ công tách nhau.",
+     "spec": "Ngày tính lương, buổi không lịch, giữ tiền lịch sử, confirmed KPI/OT; `Lương/giờ` trong hồ sơ + chỉnh riêng từng buổi, duyệt đề xuất và chỉnh lương thủ công tách nhau.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [
-      "Teacher detail / Teacher history & salary requirements"
+      "Teacher detail / Teacher history & salary requirements",
+      "Lương/giờ"
      ],
      "status": "chua-thay-tren-figma"
     }

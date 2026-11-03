@@ -41,7 +41,7 @@
   {
    "id": "TR-HAS.REQ06",
    "name": "Form đề xuất",
-   "text": "Giáo viên gửi đề xuất tăng lương chung của mình, không chọn lớp và không bắt buộc class_id. Admin quyết định gắn mức lương vào lớp nào trong chức năng quản lý riêng. Không thêm chọn lớp/mã lớp vào form, xác nhận, banner, hủy hoặc lịch sử theo suy diễn từ mức lương theo lớp. Draft/gửi đề xuất không tự đổi lương; lý do theo danh sách, nội dung tối đa 500 ký tự. Mức hiện tại do giáo viên tự nhập và mức đề xuất đều là số nguyên VNĐ/giờ, lưu đúng như nhập (không làm tròn, không trần); đề xuất phải lớn hơn mức hiện tại; hiện tại bằng 0 thì tỷ lệ `—`. Chi tiết chỉ bắt buộc khi chọn Lý do khác, tối đa 500 ký tự. Hệ thống không tự lấy mức hiện tại từ lương lớp (đơn giá khác nhau giữa lớp 1–1 và lớp chung).",
+   "text": "Giáo viên gửi đề xuất tăng lương chung của mình, không chọn lớp và không bắt buộc class_id. Admin tự cập nhật `Lương/giờ` trong hồ sơ giáo viên nếu đồng ý. Không thêm chọn lớp/mã lớp vào form, xác nhận, banner, hủy hoặc lịch sử. Draft/gửi đề xuất không tự đổi lương; lý do theo danh sách, nội dung tối đa 500 ký tự. Mức hiện tại do giáo viên tự nhập và mức đề xuất đều là số nguyên VNĐ/giờ, lưu đúng như nhập (không làm tròn, không trần); đề xuất phải lớn hơn mức hiện tại; hiện tại bằng 0 thì tỷ lệ `—`. Chi tiết chỉ bắt buộc khi chọn Lý do khác, tối đa 500 ký tự. Hệ thống không tự điền mức hiện tại từ hồ sơ.",
    "source": "qc",
    "content": "qc"
   },
@@ -94,9 +94,9 @@
    "content": "figma",
    "nodeId": "4899:118050",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lgv-020010",
    "link": "/luong/de-xuat-tang-luong?popup=ADM-LGV-020010",
    "dark": "ADM-LGV-020010-DK",
    "openedFrom": [],
@@ -194,9 +194,9 @@
    "content": "figma",
    "nodeId": "4760:16671",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-ls-010010",
    "link": "/lich-su-luong/buoi-day?popup=GV-LS-010010",
    "dark": "GV-LS-010010-DK",
    "openedFrom": [
@@ -248,9 +248,9 @@
    "content": "figma",
    "nodeId": "4814:159271",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-ls-010012",
    "link": "/lich-su-luong/buoi-day?state=GV-LS-010012",
    "dark": "GV-LS-010012-DK",
    "openedFrom": [],
@@ -271,9 +271,9 @@
    "content": "figma",
    "nodeId": "4895:105828",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-ls-010013",
    "link": "/lich-su-luong/de-xuat-dang-xu-ly-khong-huy-duoc?popup=GV-LS-010013",
    "dark": "GV-LS-010013-DK",
    "openedFrom": [
@@ -332,9 +332,9 @@
    "content": "figma",
    "nodeId": "4899:106613",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-ls-010015",
    "link": "/lich-su-luong/buoi-day?popup=GV-LS-010015",
    "dark": "GV-LS-010015-DK",
    "openedFrom": [
@@ -357,9 +357,9 @@
    "content": "figma",
    "nodeId": "4899:106646",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-ls-010016",
    "link": "/lich-su-luong/de-xuat-moi-co-the-huy?popup=GV-LS-010016",
    "dark": "GV-LS-010016-DK",
    "openedFrom": [
@@ -1448,8 +1448,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "3772:93114"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-HAS.A04.02",
@@ -1461,8 +1463,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "4895:105908"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-HAS.A04.03",
@@ -1474,8 +1478,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Kết quả trả về Giáo viên"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-HAS.A04.04",
@@ -1484,11 +1490,63 @@
      "spec": "Đề xuất tăng lương; mô tả gửi đề xuất điều chỉnh lương buổi dạy tới quản lý trung tâm.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lgv-020010": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I4899:118051;2514:153340",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010010": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I4760:16672;2514:153340",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010012": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I4814:159272;2514:153340",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A04.05",
@@ -1500,8 +1558,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thông báo chu kỳ"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-HAS.A04.06",
@@ -1513,21 +1573,78 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Phạm vi đề xuất"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-HAS.A04.07",
      "name": "luong-buoi-day-hien-tai",
      "label": "Lương buổi dạy hiện tại",
-     "spec": "**Đã chốt:** ô **giáo viên tự nhập**, bắt buộc, số nguyên không âm, đơn vị **VNĐ/giờ**; là mức tham chiếu để quản lý xem xét, hệ thống không tự lấy từ lương các lớp (đơn giá khác nhau giữa lớp 1–1 và lớp chung). Không chọn lớp, không lấy trung bình, không chọn một lớp đại diện.",
+     "spec": "**Đã chốt:** ô **giáo viên tự nhập**, bắt buộc, số nguyên không âm, đơn vị **VNĐ/giờ**; là mức tham chiếu để quản lý xem xét, hệ thống không tự điền từ `Lương/giờ` trong hồ sơ. Không chọn lớp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lgv-020010": [
+       {
+        "term": "Lương buổi dạy hiện tại",
+        "figmaId": "I4899:118067;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Lương",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2925:24887",
+         "Label": "Lương buổi dạy hiện tại",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010010": [
+       {
+        "term": "Lương buổi dạy hiện tại",
+        "figmaId": "I4760:16687;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Lương",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2925:24887",
+         "Label": "Lương buổi dạy hiện tại",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010012": [
+       {
+        "term": "Lương buổi dạy hiện tại",
+        "figmaId": "I4814:159276;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Lương",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2925:24887",
+         "Label": "Lương buổi dạy hiện tại",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A04.08",
@@ -1536,11 +1653,48 @@
      "spec": "**Đã chốt:** bắt buộc, số nguyên **VNĐ/giờ**, giáo viên nhập số nào lưu đúng số đó (không làm tròn, không trần); phải lớn hơn mức hiện tại đã nhập. Từ chối số âm, số lẻ, không phải số hoặc mức thấp hơn/bằng hiện tại. Mức hiện tại bằng 0 thì tỷ lệ tăng hiển thị `—`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ls-010010": [
+       {
+        "term": "Mức lương đề xuất",
+        "figmaId": "I4760:16697;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Lương",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": true,
+         "Icon": "4814:159744",
+         "Label": "Mức lương đề xuất",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010012": [
+       {
+        "term": "Mức lương đề xuất",
+        "figmaId": "I4814:159277;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Lương",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": true,
+         "Icon": "4814:159744",
+         "Label": "Mức lương đề xuất",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop-mot-phan"
     },
     {
      "id": "TR-HAS.A04.09",
@@ -1549,11 +1703,61 @@
      "spec": "Bắt buộc theo dấu * trên ảnh; chọn một lý do theo danh sách Figma.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lgv-020010": [
+       {
+        "term": "Lý do đề xuất",
+        "figmaId": "4899:118069",
+        "layer": "Lý do đề xuất",
+        "confidence": "cao",
+        "region": "Lý do đề xuất",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "gv-ls-010010": [
+       {
+        "term": "Lý do đề xuất",
+        "figmaId": "I4895:105780;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Molecule/Field",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": true,
+         "Icon": "4814:159745",
+         "Label": "Lý do đề xuất",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010012": [
+       {
+        "term": "Lý do đề xuất",
+        "figmaId": "I4895:105808;3004:58620",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Molecule/Field",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": true,
+         "Icon": "4814:159745",
+         "Label": "Lý do đề xuất",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A04.10",
@@ -1565,8 +1769,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Các lý do"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-HAS.A04.11",
@@ -1575,11 +1781,63 @@
      "spec": "**Đã chốt:** ô nhiều dòng, có đếm ký tự /500; chỉ bắt buộc khi chọn Lý do khác, các lý do còn lại được để trống. Không chấp nhận nội dung chỉ có khoảng trắng khi bắt buộc; tối đa 500 ký tự. Không tự kiểm tra đạt KPI/chứng chỉ chỉ vì tên lý do.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lgv-020010": [
+       {
+        "term": "Lý do khác",
+        "figmaId": "I4899:118075;2808:48144",
+        "layer": "Liner Icon",
+        "confidence": "cao",
+        "region": "Field · Ghi chú phản hồi",
+        "owner": "Liner Icon",
+        "component": "Liner Icon",
+        "variant": {
+         "Property 1": "Lý do khác"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010010": [
+       {
+        "term": "Lý do khác",
+        "figmaId": "4760:16729",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Lý do khác",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": true,
+         "Icon": "4814:159746",
+         "Label": "Lý do khác",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010012": [
+       {
+        "term": "Lý do khác",
+        "figmaId": "4814:159280",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Lý do khác",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": true,
+         "Icon": "4814:159746",
+         "Label": "Lý do khác",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A04.12",
@@ -1588,11 +1846,62 @@
      "spec": "Chỉ `VND`, không có lựa chọn khác; không quy đổi ngoại tệ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lgv-020010": [
+       {
+        "term": "VND",
+        "figmaId": "I4899:118073;3004:58628;3004:60386",
+        "layer": "Đơn vị tiền",
+        "confidence": "cao",
+        "region": "Molecule/Field",
+        "owner": "Đơn vị tiền",
+        "component": "Atom/Nút đơn vị tiền",
+        "variant": {
+         "Đơn vị": "VND",
+         "State": "Mặc định"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010010": [
+       {
+        "term": "VND",
+        "figmaId": "I4760:16697;3004:58628;3004:60386",
+        "layer": "Đơn vị tiền",
+        "confidence": "cao",
+        "region": "Lương",
+        "owner": "Đơn vị tiền",
+        "component": "Atom/Nút đơn vị tiền",
+        "variant": {
+         "Đơn vị": "VND",
+         "State": "Mặc định"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010012": [
+       {
+        "term": "VND",
+        "figmaId": "I4814:159277;3004:58628;3004:60386",
+        "layer": "Đơn vị tiền",
+        "confidence": "cao",
+        "region": "Lương",
+        "owner": "Đơn vị tiền",
+        "component": "Atom/Nút đơn vị tiền",
+        "variant": {
+         "Đơn vị": "VND",
+         "State": "Mặc định"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Dropdown tiền tệ"
+     ],
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A04.13",
@@ -1601,11 +1910,50 @@
      "spec": "**Đã chốt:** bỏ khối Lương buổi dạy hiện tại thứ hai và dropdown `Chọn` không nhãn trên GV-LS-010010; form chỉ gồm mức hiện tại (tự nhập), mức đề xuất, lý do, chi tiết. Không có field chọn lớp. Figma cần sửa theo.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ls-010010": [
+       {
+        "term": "Chọn",
+        "figmaId": "I4895:105780;3004:58628;2148:20906",
+        "layer": "Chọn",
+        "confidence": "cao",
+        "region": "Molecule/Field",
+        "owner": "Ô nhập",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "CChọn",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010012": [
+       {
+        "term": "Chọn",
+        "figmaId": "I4895:105808;3004:58628;2148:20906",
+        "layer": "Chọn",
+        "confidence": "cao",
+        "region": "Molecule/Field",
+        "owner": "Ô nhập",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm nội dung...",
+         "State": "CChọn",
+         "Kiểu": "Chuẩn"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Khối trùng / dropdown không nhãn"
+     ],
+     "status": "khop-mot-phan"
     },
     {
      "id": "TR-HAS.A04.14",
@@ -1614,11 +1962,46 @@
      "spec": "Đóng form, không tạo đề xuất và không tiêu thụ chu kỳ 6 tháng.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ls-010010": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I4760:16723;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010012": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I4814:159283;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop-mot-phan"
     },
     {
      "id": "TR-HAS.A04.15",
@@ -1627,7 +2010,42 @@
      "spec": "Kiểm tra draft; nếu hợp lệ mở popup Xác nhận gửi, chưa tạo đề xuất chỉ vì bấm nút ở bước nhập.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ls-010010": [
+       {
+        "term": "Gửi đề xuất",
+        "figmaId": "I4760:16723;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Gửi đề xuất",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010012": [
+       {
+        "term": "Gửi đề xuất",
+        "figmaId": "I4814:159283;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Gửi đề xuất",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [
       {
        "type": "opens",
@@ -1639,7 +2057,7 @@
       "TR-HAS.TC15a"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop-mot-phan"
     }
    ]
   },
@@ -1664,11 +2082,27 @@
      "spec": "Lương tham chiếu hiện tại của giáo viên, mức đề xuất, tỷ lệ tăng, lý do và chi tiết đúng draft đang xác nhận. Không có lớp được giáo viên chọn và không bổ sung xác nhận lớp áp dụng vào bước này.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ls-010015": [
+       {
+        "term": "Nội dung",
+        "figmaId": "I4899:106633;2808:43032",
+        "layer": "Số câu hỏi và tổng điểm có thể được cập nhật tự động dựa trên nội dung trong tab Bộ câu hỏi.",
+        "confidence": "thap",
+        "region": "Atom/Alert",
+        "owner": "Atom/Alert",
+        "component": "Atom/Alert",
+        "variant": {
+         "Type": "Lưu ý"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A05.02",
@@ -1680,8 +2114,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tỷ lệ tăng",
+      "—"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-HAS.A05.03",
@@ -1693,8 +2130,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thông báo"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-HAS.A05.04",
@@ -1703,13 +2142,31 @@
      "spec": "Quay về form, giữ mức đề xuất, lý do và nội dung chi tiết; chưa gửi.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ls-010015": [
+       {
+        "term": "Quay lại chỉnh sửa",
+        "figmaId": "I4899:106641;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Quay lại chỉnh sửa",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-HAS.TC18"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A05.05",
@@ -1718,13 +2175,31 @@
      "spec": "Kiểm tra quyền, trạng thái/điều kiện hiện tại và dữ liệu; thành công tạo một đề xuất Mới, cập nhật banner.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ls-010015": [
+       {
+        "term": "Xác nhận gửi",
+        "figmaId": "I4899:106641;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xác nhận gửi",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-HAS.TC19"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ]
   },
@@ -1795,6 +2270,19 @@
          "Chi tiết": "· 240.000 đ → 280.000 đ · Gửi 12.10.2026",
          "Trạng thái": "Mới"
         },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010016": [
+       {
+        "term": "Mới",
+        "figmaId": "4899:106662",
+        "layer": "Mới",
+        "confidence": "cao",
+        "region": "Tóm tắt",
+        "owner": null,
+        "component": null,
+        "variant": null,
         "inCode": false
        }
       ]
@@ -1910,15 +2398,31 @@
      "spec": "Đóng popup, giữ trạng thái hiện tại; không gửi request hủy.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ls-010016": [
+       {
+        "term": "Giữ đề xuất",
+        "figmaId": "I4899:106671;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Giữ đề xuất",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-HAS.TC22"
      ],
-     "missingTerms": [
-      "Giữ đề xuất"
-     ],
-     "status": "chua-thay-tren-figma"
+     "missingTerms": [],
+     "status": "khop-mot-phan"
     },
     {
      "id": "TR-HAS.A06.09",
@@ -1940,6 +2444,23 @@
         "variant": {
          "Chi tiết": "· 240.000 đ → 280.000 đ · Gửi 12.10.2026",
          "Trạng thái": "Mới"
+        },
+        "inCode": false
+       }
+      ],
+      "gv-ls-010016": [
+       {
+        "term": "Huỷ đề xuất",
+        "figmaId": "I4899:106671;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ đề xuất",
+         "Type": "Danger",
+         "Size": "Medium"
         },
         "inCode": false
        }
@@ -1990,11 +2511,29 @@
      "spec": "Lịch sử đề xuất tăng lương; các lần đề xuất và phản hồi từ quản lý trung tâm.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ls-010013": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I4895:105829;2514:153340",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A07.02",
@@ -2006,8 +2545,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Mỗi mục lịch sử"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-HAS.A07.03",
@@ -2019,8 +2560,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Sắp xếp"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-HAS.A07.04",
@@ -2029,13 +2572,31 @@
      "spec": "Lý do của admin/ghi chú theo dữ liệu đã lưu; ví dụ chấp nhận/từ chối trong ảnh không phải câu trả lời mặc định.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ls-010013": [
+       {
+        "term": "Phản hồi",
+        "figmaId": "I4895:105829;2514:153342",
+        "layer": "Description",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-HAS.TC28"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A07.05",
@@ -2044,13 +2605,31 @@
      "spec": "Đóng popup, không đổi request hoặc chu kỳ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-ls-010013": [
+       {
+        "term": "Đóng",
+        "figmaId": "I4895:105870;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Đóng",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-HAS.TC29"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-HAS.A07.06",
@@ -2064,8 +2643,10 @@
      "testcases": [
       "TR-HAS.TC29"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Rỗng/lỗi"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },

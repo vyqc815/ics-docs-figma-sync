@@ -175,9 +175,9 @@
    "content": "figma",
    "nodeId": "3857:80154",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/sp-lhp-010010",
    "link": "/lich-hop/dang-danh-sach?popup=SP-LHP-010010",
    "dark": "SP-LHP-010010-DK",
    "openedFrom": [],
@@ -846,8 +846,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Dòng phụ dưới tiêu đề",
+      "Thứ, dd.MM.yyyy · HH:mm · <nhãn>"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "MS-MS.A03.02",
@@ -856,14 +859,33 @@
      "spec": "Bắt buộc, tối đa 255 ký tự.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "sp-lhp-010010": [
+       {
+        "term": "Chủ đề",
+        "figmaId": "3857:80159",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36628",
+         "Label": "Chủ đề",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "MS-MS.TC03",
       "MS-MS.TC04"
      ],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "MS-MS.A03.03",
@@ -872,14 +894,33 @@
      "spec": "Ngày (`dd.MM.yyyy`, date picker) và giờ (`HH:mm`, time picker), đều bắt buộc. Tạo mới mặc định ngày hôm nay, giờ trống. Cho phép chọn thời điểm quá khứ và trùng giờ với cuộc họp khác.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "sp-lhp-010010": [
+       {
+        "term": "Thời gian",
+        "figmaId": "3857:80162",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2222",
+         "Label": "Thời gian",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "MS-MS.TC08",
       "MS-MS.TC10"
      ],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "MS-MS.A03.04",
@@ -888,7 +929,26 @@
      "spec": "Dropdown `Mới tạo`, `Đang chờ`, `Đang tham gia`, `Hoàn thành`. Tạo mới mặc định `Mới tạo`. Không tự đổi theo thời gian.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "sp-lhp-010010": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "3857:80175",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2370:27888",
+         "Label": "Trạng thái",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "MS-MS.TC1b",
@@ -898,7 +958,7 @@
       "MS-MS.TC08"
      ],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "MS-MS.A03.05",
@@ -907,7 +967,26 @@
      "spec": "Chip avatar + tên; nút `+` mở danh sách chọn nhiều người (tìm kiếm, mỗi dòng `Tên (Role)`, chỉ tài khoản đang hoạt động). Chọn được tài khoản **mọi role của ICS**, gồm cả Giáo viên, Học viên, Trợ giảng. Hover chip hiện `x` để bỏ. Không bắt buộc; người tạo không tự được thêm vào danh sách.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "sp-lhp-010010": [
+       {
+        "term": "Người tham gia",
+        "figmaId": "3977:77319",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "738:25432",
+         "Label": "Người tham gia",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "MS-MS.TC01",
@@ -917,7 +996,7 @@
       "MS-MS.TC08"
      ],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "MS-MS.A03.06",
@@ -926,14 +1005,33 @@
      "spec": "Không bắt buộc, tối đa 500 ký tự.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "sp-lhp-010010": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "3857:80172",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Ghi chú",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "MS-MS.TC04",
       "MS-MS.TC09"
      ],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "MS-MS.A03.07",
@@ -942,13 +1040,32 @@
      "spec": "Không bắt buộc; phải là URL bắt đầu bằng `http://` hoặc `https://`. Ở chế độ chỉ xem hiển thị dạng link, bấm mở tab mới.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "sp-lhp-010010": [
+       {
+        "term": "Link cuộc họp",
+        "figmaId": "3857:80266",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Link cuộc họp",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "MS-MS.TC06"
      ],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "MS-MS.A03.08",
@@ -957,11 +1074,29 @@
      "spec": "Đóng popup, bỏ thay đổi chưa lưu.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "sp-lhp-010010": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I3857:80177;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "MS-MS.A03.09",
@@ -970,11 +1105,29 @@
      "spec": "Validate → lưu → đóng popup → cập nhật danh sách/lịch và badge sidebar → Toast. Chống bấm lặp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "sp-lhp-010010": [
+       {
+        "term": "Lưu",
+        "figmaId": "I3857:80177;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Lưu",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "status": "khop"
     },
     {
      "id": "MS-MS.A03.10",
@@ -992,7 +1145,9 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [],
+     "missingTerms": [
+      "Xoá"
+     ],
      "status": "chua-co-thiet-ke"
     }
    ]

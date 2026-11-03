@@ -1,73 +1,73 @@
 {
  "cluster": "learning-path-s4",
  "title": "Lộ Trình (S4)",
- "figmaPrefix": "CM-LPS",
+ "figmaPrefix": "CM-LPS2",
  "requirements": [
   {
-   "id": "CM-LPS.REQ01",
+   "id": "CM-LPS2.REQ01",
    "name": "Nguồn dữ liệu",
    "text": "Cột buổi học, số buổi, phút/buổi từng cột, phút chuẩn 1 buổi lấy từ S2; thứ tự cột theo S2.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.REQ02",
+   "id": "CM-LPS2.REQ02",
    "name": "Tính toán realtime",
    "text": "Header cột, badge và cột Thời gian (giá trị + màu) tính lại ngay sau mỗi thao tác, không reload.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.REQ03",
+   "id": "CM-LPS2.REQ03",
    "name": "Công thức",
    "text": "Thời gian hàng = Σ phút/buổi của các cột đã tick trong hàng (`HH:mm:ss`). % màu = Thời gian hàng / phút chuẩn 1 buổi (S2).",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.REQ04",
+   "id": "CM-LPS2.REQ04",
    "name": "Badge cột",
    "text": "Theo số tick so với tổng buổi: `Chưa đủ buổi` (cam) / `Đủ buổi` (xanh) / `Quá buổi` (đỏ). `00/00` hiển thị `Đủ buổi`.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.REQ05",
+   "id": "CM-LPS2.REQ05",
    "name": "Màu cột Thời gian",
    "text": "90–100% xanh, 80–<90% vàng, >0 và <80% cam, 0 xám, >100% đỏ (giống tab Bài học của Học kỳ). Chỉ cảnh báo bằng màu, không chặn.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.REQ06",
+   "id": "CM-LPS2.REQ06",
    "name": "Freeze",
    "text": "Cố định 4 cột đầu và hàng header; cột buổi học không đè lên cột cố định khi cuộn ngang.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.REQ07",
+   "id": "CM-LPS2.REQ07",
    "name": "Header cột buổi học",
    "text": "Dòng 1 `SỐ BUỔI {đã tick}/{tổng số buổi}`; dòng 2 `[ {tổng phút đã xếp} PHÚT ]` = số tick × phút/buổi của cột, bắt đầu từ `0` và cộng/trừ theo từng lần tick/bỏ tick.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.REQ08",
+   "id": "CM-LPS2.REQ08",
    "name": "Kéo thả",
    "text": "Thứ tự bài học được lưu, STT cập nhật theo; chỉ dùng cho màn này.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.REQ09",
+   "id": "CM-LPS2.REQ09",
    "name": "Dropdown Kỳ",
    "text": "Danh sách kỳ của khoá học hiện tại; mặc định kỳ của bài học; hiển thị mã kỳ + tên kỳ. Đổi Kỳ sẽ chuyển bài học sang học kỳ mới (đồng bộ tab Bài học của Học kỳ).",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.REQ10",
+   "id": "CM-LPS2.REQ10",
    "name": "Sửa inline",
    "text": "Tên (bắt buộc) và mô tả (không bắt buộc) bài học sửa trực tiếp tại ô; dữ liệu dùng chung với tab Bài học của Học kỳ.",
    "source": "qc",
@@ -104,14 +104,14 @@
    ],
    "citedByRequirement": true,
    "regions": [
-    "CM-LPS.A01",
-    "CM-LPS.F01"
+    "CM-LPS2.A01",
+    "CM-LPS2.F01"
    ]
   }
  },
  "regions": [
   {
-   "id": "CM-LPS.A01",
+   "id": "CM-LPS2.A01",
    "name": "trang-1-noi-dung-buoi-hoc-lo-trinh-s4",
    "title": "Trang 1: Nội dung buổi học (Lộ Trình S4)",
    "screens": [
@@ -127,7 +127,7 @@
    "figmaDiffNotes": [],
    "items": [
     {
-     "id": "CM-LPS.A01.01",
+     "id": "CM-LPS2.A01.01",
      "name": "tick-tong-buoi",
      "label": "tick < tổng buổi",
      "spec": "`Chưa đủ buổi` | Cam",
@@ -159,7 +159,7 @@
      "status": "khop"
     },
     {
-     "id": "CM-LPS.A01.02",
+     "id": "CM-LPS2.A01.02",
      "name": "tick-tong-buoi",
      "label": "tick = tổng buổi",
      "spec": "`Đủ buổi` | Xanh",
@@ -191,7 +191,7 @@
      "status": "khop"
     },
     {
-     "id": "CM-LPS.A01.03",
+     "id": "CM-LPS2.A01.03",
      "name": "tick-tong-buoi",
      "label": "tick > tổng buổi",
      "spec": "`Quá buổi` | Đỏ",
@@ -207,7 +207,7 @@
      "status": "chua-thay-tren-figma"
     },
     {
-     "id": "CM-LPS.A01.04",
+     "id": "CM-LPS2.A01.04",
      "name": "90-100",
      "label": "90% – 100%",
      "spec": "Xanh",
@@ -240,7 +240,7 @@
      "status": "khop"
     },
     {
-     "id": "CM-LPS.A01.05",
+     "id": "CM-LPS2.A01.05",
      "name": "80-90",
      "label": "80% – <90%",
      "spec": "Vàng",
@@ -255,7 +255,7 @@
      "status": "chua-thay-tren-figma"
     },
     {
-     "id": "CM-LPS.A01.06",
+     "id": "CM-LPS2.A01.06",
      "name": "0-va-80",
      "label": ">0 và <80%",
      "spec": "Cam",
@@ -270,7 +270,7 @@
      "status": "chua-thay-tren-figma"
     },
     {
-     "id": "CM-LPS.A01.07",
+     "id": "CM-LPS2.A01.07",
      "name": "00-00-00",
      "label": "00:00:00",
      "spec": "Xám",
@@ -303,7 +303,7 @@
      "status": "khop"
     },
     {
-     "id": "CM-LPS.A01.08",
+     "id": "CM-LPS2.A01.08",
      "name": "100",
      "label": ">100%",
      "spec": "Đỏ",
@@ -338,7 +338,7 @@
    ]
   },
   {
-   "id": "CM-LPS.F01",
+   "id": "CM-LPS2.F01",
    "name": "ngoai-body",
    "title": "(ngoài Body)",
    "screens": [
@@ -350,7 +350,7 @@
    "figmaDiffNotes": [],
    "items": [
     {
-     "id": "CM-LPS.F01.01",
+     "id": "CM-LPS2.F01.01",
      "name": "trang-thai-so-buoi",
      "label": "Trạng thái số buổi",
      "spec": "",
@@ -380,7 +380,7 @@
      }
     },
     {
-     "id": "CM-LPS.F01.02",
+     "id": "CM-LPS2.F01.02",
      "name": "dropdown",
      "label": "Dropdown",
      "spec": "",
@@ -419,7 +419,7 @@
      }
     },
     {
-     "id": "CM-LPS.F01.03",
+     "id": "CM-LPS2.F01.03",
      "name": "atom-chip-thoi-gian",
      "label": "Atom/Chip · Thời gian",
      "spec": "",
@@ -452,7 +452,7 @@
      }
     },
     {
-     "id": "CM-LPS.F01.04",
+     "id": "CM-LPS2.F01.04",
      "name": "input-ten-bai-hoc",
      "label": "Input · Tên bài học",
      "spec": "",
@@ -484,7 +484,7 @@
      }
     },
     {
-     "id": "CM-LPS.F01.05",
+     "id": "CM-LPS2.F01.05",
      "name": "input-mo-ta",
      "label": "Input · Mô tả",
      "spec": "",
@@ -516,7 +516,7 @@
      }
     },
     {
-     "id": "CM-LPS.F01.06",
+     "id": "CM-LPS2.F01.06",
      "name": "molecule-add-new-bar-them-bai-hoc",
      "label": "Molecule/Add New Bar · Thêm bài học",
      "spec": "",
@@ -550,7 +550,7 @@
      }
     },
     {
-     "id": "CM-LPS.F01.07",
+     "id": "CM-LPS2.F01.07",
      "name": "sidebar-menu-cd",
      "label": "Sidebar · MENU - CD",
      "spec": "",
@@ -579,7 +579,7 @@
      }
     },
     {
-     "id": "CM-LPS.F01.08",
+     "id": "CM-LPS2.F01.08",
      "name": "account",
      "label": "ACCOUNT",
      "spec": "",
@@ -610,7 +610,7 @@
      }
     },
     {
-     "id": "CM-LPS.F01.09",
+     "id": "CM-LPS2.F01.09",
      "name": "component-2",
      "label": "Component 2",
      "spec": "",
@@ -643,55 +643,55 @@
  ],
  "exceptions": [
   {
-   "id": "CM-LPS.EX01",
+   "id": "CM-LPS2.EX01",
    "text": "Số tick của cột > tổng buổi → vẫn cho tick, badge `Quá buổi` (đỏ), không popup chặn.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.EX02",
+   "id": "CM-LPS2.EX02",
    "text": "Bỏ tick/đổi S2 làm số tick về = tổng buổi → badge `Đủ buổi`; < tổng buổi → `Chưa đủ buổi`. Trường hợp tổng buổi = 0 và chưa tick (`00/00`) → `Đủ buổi`.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.EX03",
+   "id": "CM-LPS2.EX03",
    "text": "Hàng chưa tick ô nào → Thời gian `00:00:00`, màu xám.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.EX04",
+   "id": "CM-LPS2.EX04",
    "text": "S2 đổi số buổi / phút mỗi buổi / phút chuẩn 1 buổi → giữ nguyên tick; tính lại header cột (tổng phút đã xếp = số tick × phút/buổi mới), badge, Thời gian và màu từng hàng theo giá trị mới.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.EX05",
+   "id": "CM-LPS2.EX05",
    "text": "S2 xoá buổi học → xoá toàn bộ tick của cột đó, tính lại Thời gian các hàng liên quan.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.EX06",
+   "id": "CM-LPS2.EX06",
    "text": "S2 thêm buổi học → hiển thị thêm cột mới chưa tick (`00/{tổng}`, `[ 0 PHÚT ]`, badge `Chưa đủ buổi`).",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.EX07",
+   "id": "CM-LPS2.EX07",
    "text": "API lưu lỗi (tick, đổi Kỳ, kéo thả, sửa tên/mô tả) → hoàn tác thao tác vừa làm, tính lại hiển thị, hiện thông báo lỗi.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.EX08",
+   "id": "CM-LPS2.EX08",
    "text": "Tên bài học để trống/chỉ khoảng trắng → không lưu, trả về tên cũ.",
    "source": "qc",
    "content": "qc"
   },
   {
-   "id": "CM-LPS.EX09",
+   "id": "CM-LPS2.EX09",
    "text": "Phút chuẩn 1 buổi luôn có giá trị (S2 mặc định 90 phút, chỉ nhận số nguyên dương) nên cột Thời gian luôn tính được % màu; hàng chưa tick hiển thị màu xám theo EX03.",
    "source": "qc",
    "content": "qc"
@@ -699,42 +699,42 @@
  ],
  "flows": [
   {
-   "id": "CM-LPS.FLOW01",
+   "id": "CM-LPS2.FLOW01",
    "name": "Vào màn",
    "source": "qc",
    "content": "qc",
    "requirements": []
   },
   {
-   "id": "CM-LPS.FLOW02",
+   "id": "CM-LPS2.FLOW02",
    "name": "Tick / bỏ tick",
    "source": "qc",
    "content": "qc",
    "requirements": []
   },
   {
-   "id": "CM-LPS.FLOW03",
+   "id": "CM-LPS2.FLOW03",
    "name": "Ví dụ",
    "source": "qc",
    "content": "qc",
    "requirements": []
   },
   {
-   "id": "CM-LPS.FLOW04",
+   "id": "CM-LPS2.FLOW04",
    "name": "Đổi Kỳ",
    "source": "qc",
    "content": "qc",
    "requirements": []
   },
   {
-   "id": "CM-LPS.FLOW05",
+   "id": "CM-LPS2.FLOW05",
    "name": "Kéo thả",
    "source": "qc",
    "content": "qc",
    "requirements": []
   },
   {
-   "id": "CM-LPS.FLOW06",
+   "id": "CM-LPS2.FLOW06",
    "name": "Sửa tên/mô tả bài học",
    "source": "qc",
    "content": "qc",
@@ -743,7 +743,7 @@
  ],
  "testcases": [
   {
-   "id": "CM-LPS.TC01",
+   "id": "CM-LPS2.TC01",
    "title": "Case 1: Hiển thị ban đầu & freeze",
    "priority": "High",
    "smoke": true,
@@ -757,7 +757,7 @@
    "items": []
   },
   {
-   "id": "CM-LPS.TC02",
+   "id": "CM-LPS2.TC02",
    "title": "Case 2: Tick/bỏ tick, header & badge",
    "priority": "High",
    "smoke": true,
@@ -771,7 +771,7 @@
    "items": []
   },
   {
-   "id": "CM-LPS.TC03",
+   "id": "CM-LPS2.TC03",
    "title": "Case 3: Cột Thời gian: công thức & màu",
    "priority": "High",
    "smoke": false,
@@ -785,7 +785,7 @@
    "items": []
   },
   {
-   "id": "CM-LPS.TC04",
+   "id": "CM-LPS2.TC04",
    "title": "Case 4: S2 đổi số buổi/phút",
    "priority": "Medium",
    "smoke": false,
@@ -799,7 +799,7 @@
    "items": []
   },
   {
-   "id": "CM-LPS.TC05",
+   "id": "CM-LPS2.TC05",
    "title": "Case 5: S2 xoá/thêm buổi học",
    "priority": "High",
    "smoke": false,
@@ -813,7 +813,7 @@
    "items": []
   },
   {
-   "id": "CM-LPS.TC06",
+   "id": "CM-LPS2.TC06",
    "title": "Case 6: Đổi Kỳ",
    "priority": "Medium",
    "smoke": false,
@@ -827,7 +827,7 @@
    "items": []
   },
   {
-   "id": "CM-LPS.TC07",
+   "id": "CM-LPS2.TC07",
    "title": "Case 7: Kéo thả",
    "priority": "Medium",
    "smoke": false,
@@ -841,7 +841,7 @@
    "items": []
   },
   {
-   "id": "CM-LPS.TC08",
+   "id": "CM-LPS2.TC08",
    "title": "Case 8: Sửa tên/mô tả inline",
    "priority": "Medium",
    "smoke": false,
@@ -855,7 +855,7 @@
    "items": []
   },
   {
-   "id": "CM-LPS.TC09",
+   "id": "CM-LPS2.TC09",
    "title": "Case 9: API lưu lỗi",
    "priority": "High",
    "smoke": false,
@@ -869,7 +869,7 @@
    "items": []
   },
   {
-   "id": "CM-LPS.TC10",
+   "id": "CM-LPS2.TC10",
    "title": "Case 10: Phân quyền",
    "priority": "High",
    "smoke": false,
@@ -883,7 +883,7 @@
    "items": []
   },
   {
-   "id": "CM-LPS.TC11",
+   "id": "CM-LPS2.TC11",
    "title": "Case 11: Cột có tổng buổi = 0",
    "priority": "Low",
    "smoke": false,
@@ -900,159 +900,159 @@
  "issues": [
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-LPS.TC01",
+   "ref": "CM-LPS2.TC01",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-LPS.TC02",
+   "ref": "CM-LPS2.TC02",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-LPS.TC03",
+   "ref": "CM-LPS2.TC03",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-LPS.TC04",
+   "ref": "CM-LPS2.TC04",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-LPS.TC05",
+   "ref": "CM-LPS2.TC05",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-LPS.TC06",
+   "ref": "CM-LPS2.TC06",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-LPS.TC07",
+   "ref": "CM-LPS2.TC07",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-LPS.TC08",
+   "ref": "CM-LPS2.TC08",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-LPS.TC09",
+   "ref": "CM-LPS2.TC09",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-LPS.TC10",
+   "ref": "CM-LPS2.TC10",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "testcase-khong-tro-req",
-   "ref": "CM-LPS.TC11",
+   "ref": "CM-LPS2.TC11",
    "text": "testcase không ghi REQ/EX/Flow"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.REQ01",
+   "ref": "CM-LPS2.REQ01",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.REQ02",
+   "ref": "CM-LPS2.REQ02",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.REQ03",
+   "ref": "CM-LPS2.REQ03",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.REQ04",
+   "ref": "CM-LPS2.REQ04",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.REQ05",
+   "ref": "CM-LPS2.REQ05",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.REQ06",
+   "ref": "CM-LPS2.REQ06",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.REQ07",
+   "ref": "CM-LPS2.REQ07",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.REQ08",
+   "ref": "CM-LPS2.REQ08",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.REQ09",
+   "ref": "CM-LPS2.REQ09",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.REQ10",
+   "ref": "CM-LPS2.REQ10",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.EX01",
+   "ref": "CM-LPS2.EX01",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.EX02",
+   "ref": "CM-LPS2.EX02",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.EX03",
+   "ref": "CM-LPS2.EX03",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.EX04",
+   "ref": "CM-LPS2.EX04",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.EX05",
+   "ref": "CM-LPS2.EX05",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.EX06",
+   "ref": "CM-LPS2.EX06",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.EX07",
+   "ref": "CM-LPS2.EX07",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.EX08",
+   "ref": "CM-LPS2.EX08",
    "text": "chưa có testcase ghi mã này"
   },
   {
    "kind": "req-chua-co-testcase",
-   "ref": "CM-LPS.EX09",
+   "ref": "CM-LPS2.EX09",
    "text": "chưa có testcase ghi mã này"
   }
  ],
  "requirementFiles": [
   {
    "file": "course_management/learning-path-s4/learning-path-s4.md",
-   "prefix": "CM-LPS",
+   "prefix": "CM-LPS2",
    "title": "Lộ Trình (S4)"
   }
  ]

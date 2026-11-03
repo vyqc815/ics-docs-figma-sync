@@ -74,6 +74,15 @@
    "auto": true
   },
   {
+   "name": "learning-path-s2",
+   "title": "Lộ Trình (S2)",
+   "screens": "^(CD\\-KH\\-020200)$",
+   "requirements": [
+    "course_management/learning-path-s2/learning-path-s2.md"
+   ],
+   "auto": true
+  },
+  {
    "name": "learning-path-s4",
    "title": "Lộ Trình (S4)",
    "screens": "^(CD\\-KH\\-020200)$",
@@ -88,6 +97,15 @@
    "screens": "^(CD\\-KH\\-070160|CD\\-KH\\-070161|CD\\-KH\\-070170|CD\\-KH\\-070171|CD\\-KH\\-070301|CD\\-KH\\-070302|CD\\-KH\\-070303|CD\\-KH\\-070304|CD\\-KH\\-070305|CD\\-KH\\-070306|CD\\-KH\\-070307|CD\\-KH\\-070309|CD\\-KH\\-070313)$",
    "requirements": [
     "course_management/library/library.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "overview-s1",
+   "title": "Tổng quan (S1)",
+   "screens": "^(CD\\-KH\\-020100)$",
+   "requirements": [
+    "course_management/overview-s1/overview-s1.md"
    ],
    "auto": true
   },
@@ -142,6 +160,15 @@
    "screens": "^(CD\\-DM\\-010000|CD\\-DM\\-010010|CD\\-DM\\-010020|CD\\-DM\\-010030|CD\\-DM\\-010040|CD\\-DM\\-010057|CD\\-DM\\-010060|CD\\-DM\\-010062)$",
    "requirements": [
     "curriculum_management_requirement/category_management/category_management.md"
+   ],
+   "auto": true
+  },
+  {
+   "name": "category-management-requirements",
+   "title": "Quản lý danh mục",
+   "screens": "^(CD\\-DM\\-010000|CD\\-DM\\-010010|CD\\-DM\\-010020|CD\\-DM\\-010030|CD\\-DM\\-010040|CD\\-DM\\-010057|CD\\-DM\\-010060|CD\\-DM\\-010062)$",
+   "requirements": [
+    "curriculum_management_requirement/category_management/category_management_requirements.md"
    ],
    "auto": true
   },

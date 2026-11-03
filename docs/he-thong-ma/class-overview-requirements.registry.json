@@ -161,9 +161,9 @@
    "content": "figma",
    "nodeId": "5413:255556",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-lop-020020",
    "link": "/chi-tiet-lop/tong-quan?popup=GV-LOP-020020",
    "dark": "GV-LOP-020020-DK",
    "openedFrom": [],
@@ -184,9 +184,9 @@
    "content": "figma",
    "nodeId": "5413:255496",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/gv-lop-020030",
    "link": "/chi-tiet-lop/tong-quan?popup=GV-LOP-020030",
    "dark": "GV-LOP-020030-DK",
    "openedFrom": [],
@@ -1982,11 +1982,30 @@
      "spec": "Ghi chú gửi học viên do giáo viên của buổi nhập ở Bước 2 của menu Bài học; chỉ đọc.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-020020": [
+       {
+        "term": "Ghi chú từ Giáo viên cho Học viên",
+        "figmaId": "5413:255569",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Vùng · Ghi chú từ Giáo viên cho Học viên",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Ghi chú từ Giáo viên cho Học viên",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-CO.A08.02",
@@ -1995,11 +2014,30 @@
      "spec": "Ghi chú gửi Support do giáo viên của buổi nhập ở Bước 2; chỉ đọc.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-020020": [
+       {
+        "term": "Ghi chú từ Giáo viên cho Team Support",
+        "figmaId": "5413:255576",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Vùng · Ghi chú từ Giáo viên cho Team Support",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Ghi chú từ Giáo viên cho Team Support",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-CO.A08.03",
@@ -2011,8 +2049,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Phạm vi xem"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CO.A08.04",
@@ -2021,11 +2061,29 @@
      "spec": "Đóng popup, không lưu, không đổi dữ liệu.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-020020": [
+       {
+        "term": "Hủy",
+        "figmaId": "I5413:255582;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Hủy",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ]
   },
@@ -2057,8 +2115,10 @@
      "testcases": [
       "TR-CO.TC37"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Chín phần"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CO.A09.02",
@@ -2070,8 +2130,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Mỗi ô",
+      "HH:mm:ss"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-CO.A09.03",
@@ -2080,13 +2143,27 @@
      "spec": "Thời gian ghi nhận thực tế bằng 0; không dùng để che lỗi tải.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-020030": [
+       {
+        "term": "00:00:00",
+        "figmaId": "5413:255545",
+        "layer": "00:00:00",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "TR-CO.TC38"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "TR-CO.A09.04",
@@ -2095,11 +2172,29 @@
      "spec": "Đóng popup, không đổi dữ liệu.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-020030": [
+       {
+        "term": "Hủy",
+        "figmaId": "I5413:255546;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Hủy",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ]
   },

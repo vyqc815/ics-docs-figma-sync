@@ -13,7 +13,7 @@
   {
    "id": "CM-LE.REQ02",
    "name": "Icon 3 phần",
-   "text": "Sáng khi số lượng phần đó > 0 (icon Kiến thức = số kiến thức + số bài kỹ năng), tối khi = 0.",
+   "text": "Sáng khi số lượng phần đó > 0 (icon Kiến thức = số loại kiến thức + số loại kỹ năng có cụm liên kết), tối khi = 0.",
    "source": "qc",
    "content": "qc"
   },
@@ -27,28 +27,28 @@
   {
    "id": "CM-LE.REQ04",
    "name": "Không sửa kiến thức/kỹ năng từ bài học",
-   "text": "Chỉ tạo/sửa ở S1 / S6; bài học chỉ thêm/gỡ; không gắn trùng 1 mục vào cùng bài học.",
+   "text": "Chỉ tạo / sửa / chia cụm / liên kết ở S1 / S6; bài học chỉ xem.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-LE.REQ10",
    "name": "Tab Kiến thức / Kỹ năng",
-   "text": "2 tab riêng, mỗi tab là danh sách mục đã gắn + nút \"+\" mở popup 3 bước: loại → cụm → mục (chọn nhiều). Kiến thức lấy từ S1, Kỹ năng lấy từ S6 của khoá đang mở.",
+   "text": "2 tab riêng, chỉ xem: bộ lọc Loại (mặc định Từ vựng / Nghe), tiêu đề = tên cụm đã liên kết với bài cho loại đó, danh sách mục của cụm theo thứ tự trong cụm, khung phải chi tiết. Kiến thức lấy từ S1, Kỹ năng lấy từ S6 của khoá đang mở. Badge tab = số loại có cụm liên kết.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-LE.REQ12",
-   "name": "Thêm cả cụm & đồng bộ khi đổi cụm",
-   "text": "\"Chọn tất cả\" trong cụm thêm một lần mọi mục hợp lệ, không tự gắn mục mới. Gỡ mục khỏi cụm / xoá cụm ở S1 / S6 thì gỡ mục tương ứng khỏi bài học (có cảnh báo).",
+   "name": "Liên kết cụm ↔ bài học",
+   "text": "Một cụm liên kết đúng 1 bài học; một bài học tối đa 1 cụm mỗi loại; BE bắt trùng (EX02). Liên kết lập / đổi / bỏ tại S1 / S6; mọi thay đổi trong cụm phản ánh ngay ở bài học. Nhân bản khoá sao chép liên kết.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-LE.REQ11",
    "name": "Kỹ năng/Kiến thức ở tab Thông tin",
-   "text": "Read-only, tự sinh = tập **loại** có ≥ 1 mục ở tab Kiến thức / Kỹ năng; không lưu riêng, không chọn tay.",
+   "text": "Read-only, tự sinh = tập **loại** có cụm liên kết với bài; không lưu riêng, không chọn tay.",
    "source": "qc",
    "content": "qc"
   },
@@ -76,7 +76,7 @@
   {
    "id": "CM-LE.REQ08",
    "name": "Lưu & Hủy",
-   "text": "Thông tin/Nội dung/Kiến thức/Kỹ năng lưu gộp khi \"Lưu thay đổi\"; Tài nguyên lưu/xoá ngay; Hủy/X/click ngoài có popup xác nhận khi còn thay đổi chưa lưu.",
+   "text": "Thông tin / Nội dung lưu gộp khi \"Lưu thay đổi\" (Kiến thức / Kỹ năng chỉ xem); Tài nguyên lưu/xoá ngay; Hủy/X/click ngoài có popup xác nhận khi còn thay đổi chưa lưu.",
    "source": "qc",
    "content": "qc"
   },
@@ -378,9 +378,7 @@
    "dark": null,
    "openedFrom": [],
    "citedByRequirement": false,
-   "regions": [
-    "CM-LE.A06"
-   ]
+   "regions": []
   },
   "CD-KH-030247": {
    "id": "CD-KH-030247",
@@ -887,13 +885,11 @@
    "title": "Popup: Chi tiết bài học - Tab Kỹ năng (mới — **UI cần bổ sung Figma**)",
    "screens": [
     "cd-kh-030242",
-    "cd-kh-030245",
-    "cd-kh-030246"
+    "cd-kh-030245"
    ],
    "screensGuessed": [
     "CD-KH-030242",
-    "CD-KH-030245",
-    "CD-KH-030246"
+    "CD-KH-030245"
    ],
    "source": "tu-dien",
    "content": "qc",
@@ -1332,37 +1328,37 @@
   },
   {
    "id": "CM-LE.EX02",
-   "text": "Kiến thức/kỹ năng đã gắn → không gắn trùng (trong popup mục đã gắn tick sẵn + disable; BE bỏ qua bản ghi trùng).",
+   "text": "Liên kết cụm thứ hai cùng loại vào một bài học (từ S1 / S6 hoặc API) → BE từ chối, bài giữ cụm cũ; popup liên kết mờ bài đã có cụm cùng loại.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-LE.EX06",
-   "text": "Loại chưa có cụm / cụm chưa có mục ở S1 hoặc S6 → popup hiển thị trạng thái trống (`Chưa có cụm` / `Cụm chưa có kiến thức`), nút `Thêm` disable.",
+   "text": "Loại chưa có cụm liên kết, hoặc cụm liên kết chưa có mục → tab hiển thị trạng thái trống (`Chưa có cụm <loại> liên kết với bài này` / `Cụm <tên> chưa có mục`), badge không đếm loại đó.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-LE.EX07",
-   "text": "Xoá (gỡ khỏi khoá) mục kiến thức / bài kỹ năng ở S1 / S6 khi đang gắn vào bài học → **popup cảnh báo** liệt kê bài học đang dùng; xác nhận → BE tự gỡ khỏi mọi bài học liên quan. (**UI cần bổ sung** popup cảnh báo ở S1 / S6.)",
+   "text": "Gỡ mục / bài khỏi khoá ở S1 / S6 khi thuộc cụm đã liên kết bài học → popup gỡ nêu cụm và bài học; xác nhận → mục mất khỏi cụm và khỏi bài học.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-LE.EX10",
-   "text": "Mục `Chưa phân cụm` → không thêm được vào bài (popup không hiển thị; BE từ chối).",
+   "text": "Mục `Chưa phân cụm` → không xuất hiện ở bài học nào; gửi API gắn mục trực tiếp vào bài học → BE từ chối (không còn liên kết mục ↔ bài).",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-LE.EX08",
-   "text": "Mục thiếu thông tin / chưa hoàn chỉnh ở S1 / S6 → không được gắn vào bài (popup disable, \"Chọn tất cả\" bỏ qua; BE từ chối).",
+   "text": "Mục thiếu thông tin trong cụm liên kết → vẫn hiện ở tab với chấm cam (bài học phản ánh cụm); app học viên chỉ dùng mục đủ thông tin.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-LE.EX09",
-   "text": "Ở S1 / S6, mục bị **gỡ khỏi cụm** hoặc cụm bị **xoá** → mục đó (mọi mục của cụm khi xoá cụm) **tự gỡ khỏi các bài học** đã thêm nó từ cụm đó, có cảnh báo liệt kê bài học. Thêm mục mới vào cụm **không** tự gắn vào bài. Gỡ ở bài học (nút x) chỉ xoá liên kết, mục vẫn ở S1 / S6 và cụm.",
+   "text": "Ở S1 / S6, mục được thêm vào / gỡ khỏi / chuyển cụm → bài học liên kết cụm phản ánh ngay, không cảnh báo. Giảm Số buổi ở S2 làm mất cụm đang liên kết → BE chặn (xem Tổng quan (S2) EX05).",
    "source": "qc",
    "content": "qc"
   },
@@ -1409,7 +1405,7 @@
   },
   {
    "id": "CM-LE.FLOW05",
-   "name": "Thêm kiến thức / kỹ năng vào bài",
+   "name": "Xem kiến thức / kỹ năng của bài theo cụm liên kết",
    "source": "qc",
    "content": "qc",
    "requirements": []
@@ -1509,11 +1505,11 @@
   },
   {
    "id": "CM-LE.TC07",
-   "title": "Case 7: Thêm/gỡ kiến thức",
+   "title": "Case 7: Tab Kiến thức hiện mục của cụm liên kết",
    "priority": "High",
-   "smoke": false,
+   "smoke": true,
    "region": null,
-   "scenario": "CD; `Nháp`; bài đã gắn sẵn 1 từ vựng cụm 1; S1 có Ngữ pháp cụm 2",
+   "scenario": "CD; cụm Từ vựng `Gia đình` (16 mục) liên kết Bài 1; cụm Ngữ pháp `Chủ đề 2` liên kết Bài 1",
    "source": "qc",
    "content": "qc",
    "requirements": [],
@@ -1523,11 +1519,11 @@
   },
   {
    "id": "CM-LE.TC7b",
-   "title": "Case 7b: Thêm/gỡ kỹ năng",
+   "title": "Case 7b: Tab Kỹ năng hiện bài của cụm liên kết",
    "priority": "High",
-   "smoke": false,
+   "smoke": true,
    "region": null,
-   "scenario": "CD; `Nháp`; S6 có bài Nghe, Đọc",
+   "scenario": "CD; cụm Nghe `Chào hỏi` (3 bài) liên kết Bài 1",
    "source": "qc",
    "content": "qc",
    "requirements": [],
@@ -1537,11 +1533,11 @@
   },
   {
    "id": "CM-LE.TC7c",
-   "title": "Case 7c: Tag tự động ở tab Thông tin",
+   "title": "Case 7c: Tag tự động và badge theo số loại",
    "priority": "High",
    "smoke": false,
    "region": null,
-   "scenario": "CD; `Nháp`",
+   "scenario": "CD; Bài 1 có cụm Từ vựng, Ngữ pháp, Mẫu câu và cụm Nghe liên kết",
    "source": "qc",
    "content": "qc",
    "requirements": [],
@@ -1551,11 +1547,11 @@
   },
   {
    "id": "CM-LE.TC7e",
-   "title": "Case 7e: Thêm cả cụm",
+   "title": "Case 7e: Cụm thay đổi, bài học phản ánh ngay",
    "priority": "High",
    "smoke": false,
    "region": null,
-   "scenario": "CD; `Nháp`; cụm 1 Từ vựng có 5 mục (1 mục thiếu thông tin)",
+   "scenario": "CD; cụm `Gia đình` liên kết Bài 1",
    "source": "qc",
    "content": "qc",
    "requirements": [],
@@ -1565,11 +1561,11 @@
   },
   {
    "id": "CM-LE.TC7h",
-   "title": "Case 7h: Gỡ khỏi cụm / xoá cụm ở S1",
+   "title": "Case 7h: BE bắt trùng cụm cùng loại",
    "priority": "High",
    "smoke": false,
    "region": null,
-   "scenario": "Bài 1 đã thêm 4 mục từ cụm 1",
+   "scenario": "CD; Bài 1 đã có cụm Từ vựng `Gia đình`",
    "source": "qc",
    "content": "qc",
    "requirements": [],
@@ -1579,11 +1575,11 @@
   },
   {
    "id": "CM-LE.TC7f",
-   "title": "Case 7f: Xoá ở S1/S6 khi đang gắn",
+   "title": "Case 7f: Gỡ mục khỏi khoá ở S1 khi thuộc cụm liên kết",
    "priority": "High",
    "smoke": false,
    "region": null,
-   "scenario": "Mục đang gắn vào 2 bài học",
+   "scenario": "Mục `爸爸` thuộc cụm `Gia đình` liên kết Bài 1",
    "source": "qc",
    "content": "qc",
    "requirements": [],
@@ -1597,7 +1593,7 @@
    "priority": "Medium",
    "smoke": false,
    "region": null,
-   "scenario": "Bài có kiến thức",
+   "scenario": "Bài có cụm liên kết",
    "source": "qc",
    "content": "qc",
    "requirements": [],
@@ -1607,11 +1603,11 @@
   },
   {
    "id": "CM-LE.TC7d",
-   "title": "Case 7d: Popup trống",
+   "title": "Case 7d: Mục Chưa phân cụm và API gắn trực tiếp",
    "priority": "Medium",
    "smoke": false,
    "region": null,
-   "scenario": "CD; loại chưa có cụm / cụm rỗng; loại `Viết`/`Nói`",
+   "scenario": "CD; mục `你好` ở `Chưa phân cụm`",
    "source": "qc",
    "content": "qc",
    "requirements": [],
@@ -1639,7 +1635,7 @@
    "priority": "High",
    "smoke": false,
    "region": null,
-   "scenario": "CD; học kỳ `Nháp` có 20 bài; bài cuối có nội dung/tài nguyên/kiến thức",
+   "scenario": "CD; học kỳ `Nháp` có 20 bài; bài cuối có nội dung/tài nguyên/cụm liên kết",
    "source": "qc",
    "content": "qc",
    "requirements": [],

@@ -33,21 +33,21 @@ Frame: `ADM-LOP-010010` (tool đoán:ADM-LOP-010010) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | lop-khong-chinh-thuc |  |  | — |  |  | Chưa sync | QC |
-| `A01.02` | trung-tam |  |  | — |  | `TC25` | Chưa sync | QC |
-| `A01.03` | khoa-hoc |  |  | — |  | `TC20` | Chưa sync | QC |
-| `A01.04` | so-buoi |  |  | — |  |  | Chưa sync | QC |
-| `A01.05` | loai-lop |  |  | — |  |  | Chưa sync | QC |
-| `A01.06` | ma-lop |  |  | — |  | `TC24` | Chưa sync | QC |
-| `A01.07` | ngay-bat-dau-ngay-ket-thuc |  |  | — |  |  | Chưa sync | QC |
-| `A01.08` | mo-ta |  |  | — |  | `TC24` | Chưa sync | QC |
-| `A01.09` | ghi-chu |  |  | — |  |  | Chưa sync | QC |
-| `A01.10` | link-google-meet |  |  | — |  |  | Chưa sync | QC |
-| `A01.11` | phu-trach-chinh |  |  | — |  |  | Chưa sync | QC |
-| `A01.12` | cskh-chinh |  |  | — |  |  | Chưa sync | QC |
-| `A01.13` | them-lich-day |  |  | — | opens `A05` |  | Chưa sync | QC |
-| `A01.14` | huy |  |  | — |  |  | Chưa sync | QC |
-| `A01.15` | xac-nhan |  |  | — |  | `TC24`, `TC25` | Chưa sync | QC |
+| `A01.01` | lop-khong-chinh-thuc | `Atom/Label`  | `1991:28272` Lớp không chính thức; `3065:60157` Atom/Label | — |  |  | Khớp | QC |
+| `A01.02` | trung-tam | `Atom/Label`  | `4835:162332` Atom/Label; `3065:60154` Atom/Label | — |  | `TC25` | Khớp | QC |
+| `A01.03` | khoa-hoc | `Atom/Label`  | `3065:60154` Atom/Label | — |  | `TC20` | Khớp | QC |
+| `A01.04` | so-buoi |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.05` | loai-lop | `Atom/Label`  | `3065:60157` Atom/Label | — |  |  | Khớp | QC |
+| `A01.06` | ma-lop | `Atom/Label`  | `1991:28284` Atom/Label | — |  | `TC24` | Khớp | QC |
+| `A01.07` | ngay-bat-dau-ngay-ket-thuc | `Atom/Label`  | `1991:28288` Atom/Label | — |  |  | Khớp | QC |
+| `A01.08` | mo-ta | `Atom/Label`  | `1991:28294` Atom/Label | — |  | `TC24` | Khớp | QC |
+| `A01.09` | ghi-chu | `Atom/Label`  | `1991:28297` Atom/Label | — |  |  | Khớp | QC |
+| `A01.10` | link-google-meet |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A01.11` | phu-trach-chinh | `Atom/Label`  | `1991:28305` Atom/Label | — |  |  | Khớp | QC |
+| `A01.12` | cskh-chinh | `Atom/Label`  | `1991:28382` Atom/Label | — |  |  | Khớp | QC |
+| `A01.13` | them-lich-day | `Atom/Label`  | `1991:28394` Atom/Label | — | opens `A05` |  | Khớp | QC |
+| `A01.14` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167646;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+| `A01.15` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167646;2514:153363` Atom/Button | — |  | `TC24`, `TC25` | Khớp | QC |
 
 ### `A02` Lớp không chính thức
 
@@ -210,8 +210,7 @@ Frame: `ADM-LOP-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (4): `A10.01`, `A10.02`, `A10.03`, `A10.04`
-- Chưa sync (15): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.14`, `A01.15`
+- Chưa khớp tự động (6): `A01.04`, `A01.10`, `A10.01`, `A10.02`, `A10.03`, `A10.04`
 - Frame Figma chưa có requirement (6): `ADM-LOP-010002`, `ADM-LOP-010004`, `ADM-LOP-010010`, `ADM-LOP-010020`, `ADM-LOP-010040`, `ADM-LOP-010050`
 - Thiếu prototype link đi vào (4): `ADM-LOP-010010`, `ADM-LOP-010020`, `ADM-LOP-010040`, `ADM-LOP-010050`
 - Testcase không trỏ REQ (4): `TTC01`, `TTC02`, `TTC03`, `TTC04`

@@ -21,7 +21,7 @@ Requirement sáu tab Chi tiết học viên được tách riêng tại [Chi ti�
 - Có ô tìm kiếm, bộ lọc `Trạng thái`, bộ lọc `Tag` và nút `+` tạo tài khoản cạnh tiêu đề. Nút Excel xuất danh sách nằm ở góc dưới bên phải bảng, cùng hàng với phần phân trang.
 - Search chỉ áp dụng trên `Tên học viên`, khớp chứa từ khóa; sau 2 giây kể từ lần nhập cuối tự tìm kiếm. Giữ thao tác Enter tìm ngay theo requirement hiện có.
 - Danh sách sắp xếp theo **ngày tạo học viên giảm dần, mới nhất trước**; áp dụng cả khi tìm kiếm, lọc và phân trang.
-- Trạng thái học viên thuộc từng quan hệ học viên–lớp và khác trạng thái của lớp học. Học viên có 3 lớp có 3 trạng thái học viên riêng, có thể khác nhau; không tổng hợp thành một status chung và không tự lấy status của lớp làm status học viên.
+- Có hai lớp trạng thái khác nhau. **Status trong lớp** thuộc từng quan hệ học viên–lớp (bộ 7 giá trị, chỉnh tại Cài đặt lớp); học viên có 3 lớp có 3 status riêng, có thể khác nhau. **Trạng thái hồ sơ** (`Mới` / `Đang học` / `Đợi lớp`) là giá trị **tính** từ tập lớp của học viên theo công thức ở khu Bộ lọc Trạng thái, **không nhập tay**, không có field riêng để sửa; hồ sơ không dùng các trạng thái `Bảo lưu`, `Drop dời`, `Drop`.
 - Danh sách tổng chỉ hiển thị status theo lớp; chỉ được chỉnh tại `Cài đặt lớp → Học viên → Chọn trạng thái`, mở dropdown 7 trạng thái đã duyệt. Bấm icon status trên danh sách tổng không được đổi trạng thái.
 - Lịch sử lớp hiển thị icon trạng thái của từng lớp theo [Trạng thái lớp](../class_management/class_management_requirements.md#trạng-thái-lớp). Khi chưa có lớp hiện tại, cột đó hiển thị `Chưa có`. Bộ lọc Trạng thái có ba checkbox `Mới [0] / Đang học [1] / Đợi lớp [2]`, chọn nhiều; logic phân loại do BE xử lý, độc lập với status học viên trong lớp.
 - Các tên, số tiền, tag và mã trong ảnh là dữ liệu minh họa. `Mã HV: 00001` và Code `173201` trong popup không thay thế quy tắc Code 6 chữ số theo cấp độ đã xác nhận bên dưới.
@@ -447,7 +447,7 @@ User mở tab Ghi chú
 | REQ02 |  | Mỗi trang hiển thị tối đa 50 học viên. Phân trang hiển thị Trang trước, các số trang, dấu `...`, các trang cuối và Trang sau như UI; chỉ một trang được đánh dấu đang chọn. Trang trước bị vô hiệu hóa tại trang đầu, Trang sau bị vô hiệu hóa tại trang cuối; chuyển trang giữ nguyên search/filter. |
 | REQ03 |  | Search chỉ áp dụng trên `Tên học viên` theo kiểu khớp chứa từ khóa, không yêu cầu khớp chính xác toàn bộ tên; tự chạy sau 2 giây kể từ lần nhập cuối hoặc chạy ngay khi nhấn Enter. |
 | REQ04 |  | Search, Trạng thái và Tag được kết hợp đồng thời; thay đổi điều kiện đưa danh sách về trang 1. |
-| REQ05 |  | Dropdown Trạng thái dùng checkbox chọn nhiều với mapping nhãn UI `Mới → [0]`, `Đang học → [1]`, `Đợi lớp → [2]`. Logic BE lần lượt là chưa vào lớp / đang học / đã ở trong lớp (đang học + các trạng thái khác). Nhiều trạng thái dùng OR, không trùng dòng học viên; không chọn trạng thái thì bỏ điều kiện này. FE gửi tập giá trị đã chọn theo hợp đồng API để BE lọc, không tự ánh xạ từ 7 status trong lớp. Kết hợp keyword tên/Tag bằng AND và dùng tổng kết quả BE trả để phân trang. |
+| REQ05 |  | Dropdown Trạng thái dùng checkbox chọn nhiều với mapping nhãn UI `Mới → [0]`, `Đang học → [1]`, `Đợi lớp → [2]`. Trạng thái hồ sơ là giá trị BE **tính** theo thứ tự ưu tiên: `Đang học` = có ≥ 1 lớp với status trong lớp `Đang học` / `Dự thính` và lớp đó `Đang học`; `Đợi lớp` = không thoả trên nhưng đã từng vào lớp (bản ghi chưa `Xóa`); `Mới` = chưa từng vào lớp. Không nhập tay, không lưu field riêng, tính lại ngay khi status trong lớp hoặc trạng thái lớp đổi; hồ sơ không dùng `Bảo lưu` / `Drop dời` / `Drop`. Nhiều trạng thái dùng OR, không trùng dòng học viên; không chọn trạng thái thì bỏ điều kiện này. FE gửi tập giá trị đã chọn theo hợp đồng API để BE lọc, không tự ánh xạ từ 7 status trong lớp. Kết hợp keyword tên/Tag bằng AND và dùng tổng kết quả BE trả để phân trang. |
 | REQ06 |  | Filter Tag có search ở đầu popup, nhóm thu gọn/mở rộng bằng chevron và checkbox tag chọn nhiều. Nhóm/tag lấy động từ dữ liệu user định nghĩa; tìm theo mã/tên tag, giữ checkbox đang chọn khi tìm kiếm, thu gọn hoặc mở lại. Nhiều tag dùng OR kể cả khác nhóm; không chọn tag thì bỏ điều kiện Tag. Kết hợp bằng AND với Trạng thái/keyword tên, đổi lựa chọn đưa danh sách về trang 1. |
 | REQ07 |  | Nút Excel nằm ở góc dưới bên phải bảng, cùng hàng với phần phân trang theo UI chuẩn. File Excel có đúng thứ tự cột: `Tên học viên`, `Số điện thoại`, `Email`, `Ngày tạo`. Không có search/filter thì xuất toàn bộ danh sách thuộc phạm vi dữ liệu của user; có search/filter thì xuất toàn bộ kết quả thỏa điều kiện. Luôn xuất tất cả trang, không chỉ trang đang xem. |
 | REQ08 |  | Dropdown `Chọn cấp độ` có đúng 9 lựa chọn từ `Cấp độ 1` đến `Cấp độ 9`, chọn một giá trị; placeholder `Chọn` không được tính là lựa chọn hợp lệ. |
@@ -542,6 +542,8 @@ User mở tab Ghi chú
 | Case 15: Nhập tiếp trước thời gian auto search | Medium | EX06 | Administrator | Bộ đếm 2 giây đang chạy | **Given** User vừa nhập một phần từ khóa<br>**When** Nhập thêm trước khi đủ 2 giây<br>**Then** Hệ thống hủy bộ đếm cũ và tính lại từ ký tự mới nhất | - Chỉ tìm kiếm sau 2 giây kể từ lần nhập cuối |
 | Case 16: Search ngay bằng Enter | High | Flow 2 / EX07 | Administrator | Ô search có từ khóa và đang chờ auto search | **Given** Chưa đủ 2 giây<br>**When** User nhấn Enter<br>**Then** Hệ thống tìm kiếm ngay một lần | - Hủy lượt auto search đang chờ<br>- Không gửi request tìm kiếm lặp |
 | Case 17: Xóa từ khóa tìm kiếm | Medium | Flow 2 | Administrator | Danh sách đang có kết quả search | **Given** Ô search có từ khóa<br>**When** User xóa hết từ khóa và chờ 2 giây hoặc nhấn Enter<br>**Then** Hệ thống hiển thị lại danh sách theo filter còn lại từ trang 1 | - Không còn áp dụng điều kiện từ khóa |
+| Case 11a: Công thức ưu tiên Đang học | High | Flow 3 / REQ05 | Administrator | Học viên X: lớp A Hoàn thành (lớp Hoàn thành), lớp B Dự thính (lớp Đang học) | **Given** tick `Đang học`<br>**When** BE lọc<br>**Then** X xuất hiện | - Tick riêng `Đợi lớp` thì X không xuất hiện (mỗi học viên đúng 1 nhóm) |
+| Case 11b: Nhóm đổi theo status trong lớp | High | Flow 3 / REQ05 / REQ29 | Administrator | Học viên Y chỉ có lớp C Đang học (lớp Đang học) | **Given** tại Cài đặt lớp C đổi Y sang `Rời lớp`<br>**When** mở lại danh sách, tick `Đợi lớp`<br>**Then** Y xuất hiện ở `Đợi lớp`, không còn ở `Đang học` | - Xoá Y khỏi lớp C (status `Xóa`) thì Y về `Mới`<br>- Không có field sửa trạng thái hồ sơ ở Chi tiết học viên |
 | Case 11: Nhãn UI và mapping filter logic 0/1/2 | High | Flow 3 / REQ05 | Administrator | BE có dữ liệu cho ba nhóm filter học viên | **Given** User mở dropdown Trạng thái<br>**When** Lần lượt tick Mới, Đang học, Đợi lớp<br>**Then** FE gửi đúng giá trị 0, 1, 2 và render kết quả BE trả | - Ba checkbox đúng thứ tự và nhãn UI mới<br>- Mới=[0] chưa vào lớp; Đang học=[1] đang học; Đợi lớp=[2] đã ở trong lớp gồm đang học và các trạng thái khác<br>- Không diễn giải Đợi lớp theo trạng thái lớp Khai giảng<br>- Không tự lọc lại theo 7 status trong lớp |
 | Case 59: Filter logic độc lập với status học viên trong lớp | High | REQ05 | Administrator | BE trả kết quả nhóm [2] gồm học viên Đang học và học viên có status khác trong lớp | **Given** User chọn filter [2]<br>**When** BE trả danh sách và tổng kết quả<br>**Then** FE render đầy đủ dữ liệu đúng response | - Không loại học viên theo icon 7 status<br>- Không tự thay [2] bằng enum lớp hoặc enum học viên trong lớp<br>- Phân trang theo tổng kết quả BE trả |
 | Case 60: Chọn nhiều trạng thái theo OR | High | REQ05 | Administrator | BE có nhóm [1]/[2] và học viên thuộc cả hai nhóm | **Given** User tick Đang học và Đợi lớp<br>**When** FE gửi tập [1,2] theo hợp đồng API<br>**Then** BE trả hợp kết quả và FE hiển thị đúng | - Học viên thuộc ít nhất một nhóm được chọn xuất hiện<br>- Không nhân đôi học viên khớp cả hai nhóm<br>- Giữ keyword/Tag và sắp ngày tạo học viên giảm dần (mới nhất trước)<br>- Quay về trang 1 |
@@ -634,11 +636,11 @@ User mở tab Ghi chú
 
 ##### Testcase — Tìm kiếm theo tên và kết hợp điều kiện
 
-| Giá trị logic gửi BE | Nhãn checkbox trên UI | Ý nghĩa nghiệp vụ đã chốt |
+| Giá trị logic gửi BE | Nhãn checkbox trên UI | Công thức BE tính (xét theo thứ tự ưu tiên, mỗi học viên đúng 1 nhóm) |
 |---|---|---|
-| `[0]` | Mới | Chỉ học viên chưa vào lớp, theo logic BE. |
-| `[1]` | Đang học | Chỉ học viên đang học, theo logic BE. |
-| `[2]` | Đợi lớp | Học viên đã ở trong lớp, gồm đang học và các trạng thái khác, theo logic BE đã xác nhận. |
+| `[1]` | Đang học | Có ít nhất 1 lớp mà status trong lớp là `Đang học` hoặc `Dự thính` **và** lớp đó đang ở trạng thái lớp `Đang học`. |
+| `[2]` | Đợi lớp | Không thoả `Đang học` nhưng đã từng được thêm vào ít nhất 1 lớp (bản ghi học viên–lớp chưa `Xóa`): lớp `Khai giảng` chưa bắt đầu, hoặc mọi lớp đã `Hoàn thành` / `Rời lớp` / `Nghỉ học` / `Chỉ xem`. |
+| `[0]` | Mới | Chưa từng được thêm vào lớp nào (hoặc mọi bản ghi học viên–lớp đã `Xóa`). |
 
 #### Bộ lọc Trạng thái — logic học viên do BE xử lý
 
@@ -647,10 +649,12 @@ User mở tab Ghi chú
   <em>UI mới — dropdown Trạng thái chọn nhiều bằng checkbox</em>
 </p>
 
+Ví dụ: học viên có lớp A (`Hoàn thành`, lớp đã `Hoàn thành`) và lớp B (`Đang học`, lớp còn `Khai giảng`) → `Đợi lớp`; khi lớp B chuyển `Đang học` → `Đang học`; học viên chỉ có lớp C với status `Dự thính` ở lớp `Đang học` → `Đang học`.
+
 - Bấm nút `Trạng thái` mở dropdown ba checkbox theo đúng thứ tự `Mới`, `Đang học`, `Đợi lớp`. Cho chọn nhiều giá trị; mỗi checkbox có thể chọn/bỏ chọn độc lập, không dùng radio hoặc dropdown chỉ chọn một.
 - Khi chọn nhiều trạng thái, dùng OR giữa các nhóm logic được chọn: học viên thuộc ít nhất một nhóm theo BE là phù hợp. Học viên thuộc nhiều nhóm vẫn chỉ xuất hiện một lần. Bỏ chọn toàn bộ thì không áp dụng điều kiện Trạng thái, vẫn giữ keyword/Tag và phạm vi quyền.
 - FE gửi tập giá trị `0/1/2` đã chọn theo hợp đồng API để BE phân loại/lọc và trả danh sách cùng tổng số kết quả. Không tự suy ra nhóm từ icon/status học viên từng lớp hoặc lọc lại riêng trên các dòng của trang hiện tại.
-- Nhãn `Đợi lớp` là nhãn hiển thị của giá trị logic `[2]`; vẫn giữ định nghĩa BE đã chốt là học viên đã ở trong lớp. Không diễn giải lại thành chỉ học viên thuộc lớp `Khai giảng` theo requirement cũ.
+- Nhãn `Đợi lớp` là nhãn hiển thị của giá trị logic `[2]` theo công thức trên; không diễn giải lại thành chỉ học viên thuộc lớp `Khai giảng` theo requirement cũ. Trạng thái hồ sơ được tính lại ngay khi status trong lớp hoặc trạng thái lớp đổi; BE không lưu giá trị nhập tay.
 - Filter này độc lập với 7 status quan hệ học viên–lớp, status lớp học và status tài khoản. Nhãn `Đang học` trùng chữ nhưng không dùng chung enum hoặc tự ánh xạ nghiệp vụ.
 - Checkbox cập nhật điều kiện lọc khi chọn/bỏ chọn, kết hợp với keyword tên và Tag bằng AND; tải lại từ trang 1, giữ thứ tự ngày tạo học viên giảm dần (mới nhất trước) và dùng tổng kết quả do BE trả để phân trang.
 

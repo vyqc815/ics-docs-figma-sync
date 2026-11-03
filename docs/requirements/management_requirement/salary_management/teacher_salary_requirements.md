@@ -26,7 +26,7 @@ Trạng thái: Bản nháp đối chiếu Figma và source cũ; các mục Cần
 - `A02.02` **Tiến độ**: Buổi hoàn thành / tổng buổi, dùng công thức tiến độ lớp chung.
 - `A02.03` **Sĩ số**: Theo thành phần sĩ số lớp dùng chung; Figma có mẫu 7/14(2), không tự coi đây là sĩ số điểm danh một buổi.
 - `A02.04` **Số buổi**: Buổi đã dạy của giáo viên đang chọn tại lớp trong kỳ, theo quy tắc buổi Hoàn thành.
-- `A02.05` **Lương buổi**: Tổng tiền buổi dạy đã ghi nhận tại lớp trong kỳ; phân biệt với đơn giá theo giờ của quan hệ giáo viên–lớp.
+- `A02.05` **Lương buổi**: Tổng tiền buổi dạy đã ghi nhận tại lớp trong kỳ; mỗi buổi = `Lương/giờ` của buổi × thời lượng (giờ), đã chốt khi hoàn thành. Không còn đơn giá theo lớp.
 - `A02.06` **KPI / OT**: Tổng khoản thực tế Đã xác nhận của đúng giáo viên/lớp/loại trong kỳ Ngày ghi nhận.
 - `A02.07` **Tổng lương**: Lương buổi + KPI + OT của lớp; khác bảng lớp bên phải màn Giáo viên đã chốt chỉ tiền buổi. Chỉ liệt kê lớp có buổi Hoàn thành hoặc KPI/OT Đã xác nhận trong kỳ; lớp không có phát sinh hợp lệ bị loại.
 
@@ -86,10 +86,10 @@ Trạng thái: Bản nháp đối chiếu Figma và source cũ; các mục Cần
 
 - **REQ01 — Phạm vi:** backend kiểm tra quyền Admin, xác định đúng teacher_id/class_id; giáo viên được chọn chỉ quyết định vùng chi tiết. Danh sách giáo viên/lớp chỉ gồm nơi có buổi Hoàn thành hoặc KPI/OT Đã xác nhận trong kỳ, không phụ thuộc có tiền buổi lớn hơn 0 hay không. Số lớp toàn trang đếm class_id không trùng; mỗi giáo viên đếm lớp riêng. Việc khử trùng lớp không loại buổi/khoản của giáo viên khác cùng lớp. Quyền role quản lý khác cần chốt riêng.
 - **REQ02 — Ngày thống kê:** buổi có lịch theo ngày tính lương của lịch, không theo ngày bấm Hoàn thành. Buổi không lịch dùng thời điểm hoàn thành. KPI/OT theo Ngày ghi nhận, không dùng ngày cập nhật hoặc ngày xác nhận.
-- **REQ03 — Buổi dạy:** chỉ buổi Hoàn thành của đúng giáo viên. Buổi không lịch vẫn đếm, tiền 0 và có cảnh báo; tiền buổi đã hoàn thành giữ nguyên sau khi đổi đơn giá. Chưa tự suy ra phép nhân thời lượng–đơn giá theo giờ khi cách quy đổi chưa chốt.
+- **REQ03 — Buổi dạy:** chỉ buổi Hoàn thành của đúng giáo viên. Buổi không lịch vẫn đếm, tiền 0 và có cảnh báo; tiền buổi = `Lương/giờ` của buổi (mức chỉnh riêng tại popup lịch nếu có, nếu không là mức trong hồ sơ giáo viên) × thời lượng buổi (giờ), chốt khi hoàn thành; đổi `Lương/giờ` trong hồ sơ không hồi tố buổi đã hoàn thành.
 - **REQ04 — KPI/OT:** tổng value thực tế của khoản Đã xác nhận. Khoản Mới/Đã hủy không cộng, Đã xóa loại khỏi bảng. Tách đúng type KPI và OT, đúng owner; tên khoản từ cấu hình được tham chiếu.
 - **REQ05 — Tổng tiền:** tổng lương = lương buổi + KPI + OT. Các cấp toàn trang/giáo viên/lớp phải đối chiếu được trong cùng phạm vi; không cộng lại bảng chi tiết như nguồn tiền thứ hai. Export hoặc chọn checkbox không được mặc định là đã chi trả.
-- **REQ06 — Lương theo lớp:** đơn giá theo giờ lưu riêng từng quan hệ giáo viên–lớp; lớp 1–1 có thể khác lớp chung. Chỉnh lương ở chức năng quản lý riêng; duyệt đề xuất tăng lương không tự cập nhật đơn giá hoặc lương lịch sử.
+- **REQ06 — Lương/giờ:** không còn lương theo lớp. `Lương/giờ` lưu trong hồ sơ giáo viên và có thể chỉnh riêng từng buổi tại popup lịch của tab Lịch dạy. Duyệt đề xuất tăng lương không tự cập nhật `Lương/giờ` hoặc lương lịch sử.
 - **REQ07 — Đồng bộ:** đổi kỳ/giáo viên phải bỏ response cũ, tách loading/rỗng/lỗi; lỗi không giả thành tổng 0. Không dùng số tiền mẫu Figma làm dữ liệu hoặc công thức.
 - **REQ08 — Thống kê và Export:** chỉ thống kê/xuất dữ liệu, bỏ bộ lọc trạng thái chốt/thanh toán và không bổ sung luồng chuyển trạng thái. Checkbox chọn Export độc lập với chọn xem; không tự chọn giáo viên đang xem để xuất. File .xlsx dạng bảng tổng hợp theo đúng mẫu đã cung cấp, mỗi giáo viên một dòng và có Tổng cộng; không mặc định thêm các sheet chi tiết đã đề xuất trước đó. Checkbox đầu danh sách chỉ chọn/bỏ chọn trang hiện tại; chuyển trang giữ các teacher_id đã chọn, đổi kỳ/tìm kiếm xóa tập chọn; chưa chọn thì khóa Export. Export (n) đếm toàn bộ giáo viên được chọn qua các trang.
 - **REQ09 — Chọn chi tiết:** mặc định giáo viên đầu tiên khi có kết quả; bấm giáo viên chọn xem bên trái và xóa class_id cũ. Bấm lớp con chỉ lọc bảng theo teacher_id + class_id tại chỗ; bốn thẻ cá nhân giữ tổng giáo viên trong kỳ. Không điều hướng sang Chi tiết lớp. Checkbox không thay đổi teacher_id/class_id đang xem.
@@ -187,4 +187,4 @@ Admin → Lương → Lương Giáo Viên → kiểm tra quyền
 | `pls_repository_api/lib/repositories/firebase/class_kpi_result_repository.dart:209` | Query time hai biên; không tự lọc owner/type/status hoặc cộng tiền. |
 | `pls_repository_api/lib/model/course/lesson_result_model.dart:7` | Có teacherId/classId/dateTime/status; chưa có snapshot lương ở model đã đọc. |
 | `pls_repository_api/lib/model/user/user_class_model.dart:11` | rate theo quan hệ userId/classId. Không lấy UserModel.salary làm đơn giá mọi lớp. |
-| Teacher detail / Teacher history & salary requirements | Ngày tính lương, buổi không lịch, giữ tiền lịch sử, confirmed KPI/OT; đơn giá theo giờ riêng từng lớp, duyệt đề xuất và chỉnh lương thủ công tách nhau. |
+| Teacher detail / Teacher history & salary requirements | Ngày tính lương, buổi không lịch, giữ tiền lịch sử, confirmed KPI/OT; `Lương/giờ` trong hồ sơ + chỉnh riêng từng buổi, duyệt đề xuất và chỉnh lương thủ công tách nhau. |

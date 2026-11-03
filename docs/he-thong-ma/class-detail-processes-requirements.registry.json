@@ -98,9 +98,9 @@
    "content": "figma",
    "nodeId": "2711:50590",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-020610",
    "link": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?popup=ADM-LOP-020610",
    "dark": "ADM-LOP-020610-DK",
    "openedFrom": [],
@@ -121,9 +121,9 @@
    "content": "figma",
    "nodeId": "2711:53620",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-020611",
    "link": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020611",
    "dark": "ADM-LOP-020611-DK",
    "openedFrom": [
@@ -144,9 +144,9 @@
    "content": "figma",
    "nodeId": "2711:54002",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-020612",
    "link": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien?state=ADM-LOP-020612",
    "dark": "ADM-LOP-020612-DK",
    "openedFrom": [
@@ -218,9 +218,9 @@
    "content": "figma",
    "nodeId": "3772:87161",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-020710",
    "link": "/chi-tiet-lop-hoc/quy-trinh-lop?popup=ADM-LOP-020710",
    "dark": "ADM-LOP-020710-DK",
    "openedFrom": [],
@@ -241,9 +241,9 @@
    "content": "figma",
    "nodeId": "3772:87185",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-020711",
    "link": "/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020711",
    "dark": "ADM-LOP-020711-DK",
    "openedFrom": [
@@ -264,9 +264,9 @@
    "content": "figma",
    "nodeId": "3772:87240",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-020712",
    "link": "/chi-tiet-lop-hoc/quy-trinh-lop?state=ADM-LOP-020712",
    "dark": "ADM-LOP-020712-DK",
    "openedFrom": [
@@ -338,9 +338,9 @@
    "content": "figma",
    "nodeId": "2711:65257",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-020810",
    "link": "/chi-tiet-lop-hoc/cskh?popup=ADM-LOP-020810",
    "dark": "ADM-LOP-020810-DK",
    "openedFrom": [],
@@ -361,9 +361,9 @@
    "content": "figma",
    "nodeId": "2711:65273",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-020811",
    "link": "/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020811",
    "dark": "ADM-LOP-020811-DK",
    "openedFrom": [
@@ -384,9 +384,9 @@
    "content": "figma",
    "nodeId": "2711:65320",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-020812",
    "link": "/chi-tiet-lop-hoc/cskh?state=ADM-LOP-020812",
    "dark": "ADM-LOP-020812-DK",
    "openedFrom": [
@@ -446,8 +446,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tên tab"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDP.A01.02",
@@ -461,8 +463,11 @@
      "testcases": [
       "M-CDP.TC01"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tiến độ",
+      "2/7"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDP.A01.03",
@@ -474,8 +479,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Action Item"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDP.A01.04",
@@ -487,8 +494,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Nút Thêm",
+      "Thêm tiêu chuẩn"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },
@@ -515,11 +525,29 @@
      "spec": "Chỉ hiển thị Package từ loại `Lớp - Giáo viên`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-020610": [
+       {
+        "term": "Thêm tiêu chuẩn",
+        "figmaId": "I2711:50591;2514:153354",
+        "layer": "Title",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDP.A02.02",
@@ -531,8 +559,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thêm quy trình"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDP.A02.03",
@@ -544,8 +574,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thêm quy trình"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDP.A02.04",
@@ -557,8 +589,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Cây lựa chọn"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDP.A02.05",
@@ -572,8 +606,11 @@
      "testcases": [
       "M-CDP.TC03"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Category / Action Item",
+      "10/10"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDP.A02.06",
@@ -582,11 +619,29 @@
      "spec": "Xác nhận lựa chọn; ảnh thể hiện một Package được chọn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-020610": [
+       {
+        "term": "Thêm (1)",
+        "figmaId": "I2711:50640;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Thêm (1)",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDP.A02.07",
@@ -595,11 +650,29 @@
      "spec": "Đóng popup, không lưu lựa chọn mới.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-020610": [
+       {
+        "term": "Hủy",
+        "figmaId": "I2711:50640;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ]
   },

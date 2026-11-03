@@ -139,10 +139,10 @@ Frame: `GV-LOP-020020` (tool đoán:GV-LOP-020020) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | ghi-chu-tu-giao-vien-cho-hoc-vien |  |  | — |  |  | Chưa sync | QC |
-| `A08.02` | ghi-chu-tu-giao-vien-cho-team-support |  |  | — |  |  | Chưa sync | QC |
-| `A08.03` | pham-vi-xem |  |  | — |  |  | Chưa sync | QC |
-| `A08.04` | huy |  |  | — |  |  | Chưa sync | QC |
+| `A08.01` | ghi-chu-tu-giao-vien-cho-hoc-vien | `Atom/Label`  | `5413:255569` Atom/Label | — |  |  | Khớp | QC |
+| `A08.02` | ghi-chu-tu-giao-vien-cho-team-support | `Atom/Label`  | `5413:255576` Atom/Label | — |  |  | Khớp | QC |
+| `A08.03` | pham-vi-xem |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.04` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I5413:255582;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 
 ### `A09` Popup Thời gian từng phần trên app
 
@@ -150,10 +150,10 @@ Frame: `GV-LOP-020030` (tool đoán:GV-LOP-020030) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A09.01` | chin-phan |  |  | — |  | `TC37` | Chưa sync | QC |
-| `A09.02` | moi-o |  |  | — |  |  | Chưa sync | QC |
-| `A09.03` | 00-00-00 |  |  | — |  | `TC38` | Chưa sync | QC |
-| `A09.04` | huy |  |  | — |  |  | Chưa sync | QC |
+| `A09.01` | chin-phan |  |  | — |  | `TC37` | Chưa khớp tự động | QC |
+| `A09.02` | moi-o |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A09.03` | 00-00-00 |  | `5413:255545` 00:00:00 | — |  | `TC38` | Khớp | QC |
+| `A09.04` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I5413:255546;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 
 ### `A10` Loading, rỗng, lỗi và an toàn dữ liệu
 
@@ -274,8 +274,7 @@ Frame: `GV-LOP-010000`, `GV-LOP-020000` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - `A01` Khác Figma GV-LOP-020000: khối `Bài Học Gần Đây` ở vùng trái đang vẽ 4 icon, requirement là 6 bài; bảng bài học chưa có tag thời điểm mở bài phía trên tên bài.
-- Chưa khớp tự động (32): `A01.02`, `A01.03`, `A01.04`, `A01.07`, `A02.02`, `A02.03`, `A02.04`, `A02.06`, `A02.08`, `A03.09`, `A04.01`, `A04.03`, `A04.04`, `A05.01`, `A05.02`, `A05.03`, `A05.06`, `A06.01`, `A06.03`, `A06.04`, `A06.05`, `A06.06`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`, `A07.12`, `A10.01`, `A10.02`, `A10.04`
-- Chưa sync (8): `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A09.01`, `A09.02`, `A09.03`, `A09.04`
+- Chưa khớp tự động (35): `A01.02`, `A01.03`, `A01.04`, `A01.07`, `A02.02`, `A02.03`, `A02.04`, `A02.06`, `A02.08`, `A03.09`, `A04.01`, `A04.03`, `A04.04`, `A05.01`, `A05.02`, `A05.03`, `A05.06`, `A06.01`, `A06.03`, `A06.04`, `A06.05`, `A06.06`, `A07.06`, `A07.07`, `A07.08`, `A07.09`, `A07.10`, `A07.11`, `A07.12`, `A08.03`, `A09.01`, `A09.02`, `A10.01`, `A10.02`, `A10.04`
 - Frame Figma chưa có requirement (2): `GV-LOP-020020`, `GV-LOP-020030`
 - Thiếu prototype link đi vào (2): `GV-LOP-020020`, `GV-LOP-020030`
 

@@ -64,16 +64,16 @@ Frame: `ADM-LHN-010110` (tool đoán:ADM-LHN-010110) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | noi-dung |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | ghi-chu |  |  | — |  |  | Chưa sync | QC |
-| `A03.03` | thoi-gian |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | trung-tam |  |  | — |  | `TC21` | Chưa sync | QC |
-| `A03.05` | doi-tuong |  |  | — |  | `TC07` | Chưa sync | QC |
-| `A03.06` | do-uu-tien |  |  | — |  |  | Chưa sync | QC |
-| `A03.07` | trang-thai |  |  | — |  |  | Chưa sync | QC |
-| `A03.08` | nguoi-phu-trach |  |  | — | opens `A03` | `TC08`, `TC09` | Chưa sync | QC |
-| `A03.09` | theo-doi |  |  | — |  | `TC09` | Chưa sync | QC |
-| `A03.10` | huy-them-lich-hen |  |  | — |  |  | Chưa sync | QC |
+| `A03.01` | noi-dung | `Atom/Label`  | `2370:27447` Atom/Label | — |  |  | Khớp | QC |
+| `A03.02` | ghi-chu | `Atom/Label`  | `2370:27405` Atom/Label | — |  |  | Khớp | QC |
+| `A03.03` | thoi-gian | `Atom/Label`  | `2370:27409` Atom/Label | — |  |  | Khớp | QC |
+| `A03.04` | trung-tam | `Atom/Label`  | `4835:162294` Atom/Label | — |  | `TC21` | Khớp | QC |
+| `A03.05` | doi-tuong | `Atom/Label`  | `2370:27455` Atom/Label | — |  | `TC07` | Khớp | QC |
+| `A03.06` | do-uu-tien | `Atom/Label`  | `2370:27412` Atom/Label | — |  |  | Khớp | QC |
+| `A03.07` | trang-thai | `Atom/Label` ; `Popup/Header`  | `2370:27869` Atom/Label; `I2527:167628;2514:153358` Title | — |  |  | Khớp | QC |
+| `A03.08` | nguoi-phu-trach | `Atom/Label`  | `2370:28055` Atom/Label; `2370:28072` Trợ giảng | — | opens `A03` | `TC08`, `TC09` | Khớp | QC |
+| `A03.09` | theo-doi | `Atom/Label`  | `2370:28132` Atom/Label | — |  | `TC09` | Khớp | QC |
+| `A03.10` | huy-them-lich-hen |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Chỉnh Độ ưu tiên và Trạng thái trên dòng
 
@@ -207,7 +207,8 @@ Frame: `ADM-LHN-010100`, `ADM-LHN-010200`, `ADM-LHN-010300`, `ADM-LHN-010400`, `
 
 **Tool báo, cần người xem**
 
-- Chưa sync (37): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A03.08`, `A03.09`, `A03.10`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`
+- Chưa khớp tự động (1): `A03.10`
+- Chưa sync (27): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.05`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`
 - Frame Figma chưa có requirement (1): `ADM-LHN-010110`
 - Thiếu prototype link đi vào (1): `ADM-LHN-010110`
 

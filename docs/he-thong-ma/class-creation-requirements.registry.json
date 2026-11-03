@@ -132,9 +132,9 @@
    "content": "figma",
    "nodeId": "1991:28315",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-010002",
    "link": "/danh-sach-lop-hoc?popup=ADM-LOP-010002",
    "dark": "ADM-LOP-010002-DK",
    "openedFrom": [],
@@ -153,9 +153,9 @@
    "content": "figma",
    "nodeId": "3634:78207",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-010004",
    "link": "/danh-sach-lop-hoc?popup=ADM-LOP-010004",
    "dark": null,
    "openedFrom": [],
@@ -174,9 +174,9 @@
    "content": "figma",
    "nodeId": "1991:28268",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-010010",
    "link": "/danh-sach-lop-hoc?popup=ADM-LOP-010010",
    "dark": "ADM-LOP-010010-DK",
    "openedFrom": [],
@@ -220,9 +220,9 @@
    "content": "figma",
    "nodeId": "1991:23381",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-010040",
    "link": "/danh-sach-lop-hoc?popup=ADM-LOP-010040",
    "dark": "ADM-LOP-010040-DK",
    "openedFrom": [],
@@ -241,9 +241,9 @@
    "content": "figma",
    "nodeId": "1991:23448",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-010050",
    "link": "/danh-sach-lop-hoc?popup=ADM-LOP-010050",
    "dark": "ADM-LOP-010050-DK",
    "openedFrom": [],
@@ -277,11 +277,41 @@
      "spec": "Không có checkbox riêng. Lớp không chính thức là lớp có `Loại lớp` = `Lớp demo`. `Admin` và `Class Handler` đều được chọn `Lớp demo` để tạo lớp test; role khác không được tạo lớp. Lớp test mở toàn bộ bài học/bài kiểm tra và bỏ qua điều kiện nghiệp vụ khi đổi trạng thái; quyền người dùng vẫn được kiểm tra.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Lớp không chính thức",
+        "figmaId": "1991:28272",
+        "layer": "Lớp không chính thức",
+        "confidence": "cao",
+        "region": "Frame 1171274920",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Loại lớp",
+        "figmaId": "3065:60157",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7617",
+         "Label": "Loại lớp",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.02",
@@ -290,13 +320,48 @@
      "spec": "**Bắt buộc.** Chọn một trung tâm từ danh sách trung tâm; lớp được tạo thuộc trung tâm đã chọn. Danh sách `Khóa học` lấy theo trung tâm đã chọn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Trung tâm",
+        "figmaId": "4835:162332",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "4835:162312",
+         "Label": "Trung Tâm",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Khóa học",
+        "figmaId": "3065:60154",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7627",
+         "Label": "Khoá học",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CC.TC25"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.03",
@@ -305,13 +370,32 @@
      "spec": "**Bắt buộc.** Chỉ cho chọn từ danh sách khóa học đã được define sẵn; không nhập tên khóa học tự do.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Khóa học",
+        "figmaId": "3065:60154",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7627",
+         "Label": "Khoá học",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CC.TC20"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.04",
@@ -323,8 +407,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Số buổi",
+      "Công khai"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CC.A01.05",
@@ -333,11 +420,32 @@
      "spec": "**Bắt buộc.** Có ba giá trị: `Lớp chung`, `Lớp 1-1` và `Lớp demo`. `Lớp demo` là lớp không chính thức; `Admin` và `Class Handler` đều được chọn. Không hiển thị hoặc chấp nhận loại lớp khác. `Lớp 1-1` không giới hạn một học viên và có thể được thêm nhiều học viên sau khi tạo.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Loại lớp",
+        "figmaId": "3065:60157",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7617",
+         "Label": "Loại lớp",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Lớp chung"
+     ],
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.06",
@@ -346,13 +454,32 @@
      "spec": "Hệ thống tự động sinh khi tạo lớp, duy nhất toàn hệ thống. Người dùng không nhập và không sửa; popup tạo lớp không có ô nhập Mã lớp. Backend không nhận Mã lớp do client gửi.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Mã lớp",
+        "figmaId": "1991:28284",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7671",
+         "Label": "Mã lớp",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CC.TC24"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.07",
@@ -361,11 +488,32 @@
      "spec": "Người dùng nhập `Ngày bắt đầu`. `Ngày kết thúc` là field chỉ đọc, tự lấy ngày của buổi cuối cùng sau khi sinh đủ lịch; nếu chưa có lịch thì để trống.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Ngày bắt đầu",
+        "figmaId": "1991:28288",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2222",
+         "Label": "Ngày bắt đầu",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Ngày bắt đầu / Ngày kết thúc"
+     ],
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.08",
@@ -374,13 +522,32 @@
      "spec": "**Bắt buộc.** Không chấp nhận giá trị rỗng hoặc chỉ chứa khoảng trắng; không giới hạn số ký tự theo nghiệp vụ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Mô tả",
+        "figmaId": "1991:28294",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1966:7703",
+         "Label": "Mô tả",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CC.TC24"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.09",
@@ -389,11 +556,30 @@
      "spec": "Không bắt buộc và không giới hạn số ký tự theo nghiệp vụ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Ghi chú",
+        "figmaId": "1991:28297",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Ghi chú",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.10",
@@ -405,8 +591,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Link Google Meet",
+      "Khai giảng"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CC.A01.11",
@@ -415,11 +604,32 @@
      "spec": "**Bắt buộc.** Chỉ cho chọn người dùng có role `Class Handler`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Phụ trách chính",
+        "figmaId": "1991:28305",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "738:25432",
+         "Label": "Phụ trách chính",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Class Handler"
+     ],
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.12",
@@ -428,11 +638,32 @@
      "spec": "**Bắt buộc.** Chỉ cho chọn người dùng có role `Support`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "CSKH chính",
+        "figmaId": "1991:28382",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "738:25432",
+         "Label": "CSKH chính",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Support"
+     ],
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.13",
@@ -441,7 +672,26 @@
      "spec": "Nút `+` mở popup `Thêm Lịch Dạy Cố Định`. Lịch đã xác nhận hiển thị thành các chip trong popup tạo lớp và có thể xóa trước khi lưu.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Thêm lịch dạy",
+        "figmaId": "1991:28394",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form: Grid Layout (Balanced Rows 1 to 4)",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1053:2222",
+         "Label": "Thêm lịch dạy",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [
       {
        "type": "opens",
@@ -450,8 +700,10 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "+"
+     ],
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.14",
@@ -460,11 +712,29 @@
      "spec": "Đóng popup, không tạo lớp và không lưu dữ liệu đang nhập.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Hủy",
+        "figmaId": "I2527:167646;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CC.A01.15",
@@ -473,14 +743,32 @@
      "spec": "Kiểm tra dữ liệu, tạo đúng một lớp và xác định trạng thái ban đầu theo quy tắc lịch dạy.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-010010": [
+       {
+        "term": "Xác Nhận",
+        "figmaId": "I2527:167646;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xác nhận",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CC.TC24",
       "M-CC.TC25"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ]
   },

@@ -8,7 +8,7 @@
 |---|---|---|---|---|
 | `CD-KH-020100` | Chi tiết khoá học / Tổng quan | `/chi-tiet-khoa-hoc/tong-quan` | `CD-KH-020100-DK` | QC |
 
-Requirement: `course_management/overview-s2/overview-s2.md` — Tổng quan (S2) (tiền tố `CM-OS`).
+Requirement: `course_management/overview-s2/overview-s2.md` — Tổng quan (S2) (tiền tố `CM-OS2`).
 
 ## 2. Luồng
 
@@ -18,6 +18,7 @@ Requirement: `course_management/overview-s2/overview-s2.md` — Tổng quan (S2)
 - `FLOW04` Đổi loại thao tác (Tự chọn / Giảng dạy) — 
 - `FLOW05` Tự động tính toán — 
 - `FLOW06` Xoá một nội dung — 
+- `FLOW07` Đồng bộ số cụm ở S1 / S6 theo Loại và Số buổi — 
 
 ## 3. Popup, trạng thái, dropdown
 
@@ -32,7 +33,7 @@ Frame: `CD-KH-020100` (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A01.01` | so-buoi | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25145` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC07`, `TC11`, `TC12`, `TC17` | Khớp | QC |
+| `A01.01` | so-buoi | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25145` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC07`, `TC11`, `TC12`, `TC19`, `TC21`, `TC17` | Khớp | QC |
 | `A01.02` | thoi-gian-moi-buoi | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25154` Thẻ chỉ số | — |  | `TC02`, `TC12` | Khớp | QC |
 | `A01.03` | tong-thoi-gian | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25164` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC05`, `TC07`, `TC13`, `TC16`, `TC17` | Khớp | QC |
 | `A01.04` | thoi-gian-thuc-te | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25174` Thẻ chỉ số | — |  | `TC05`, `TC17` | Khớp | QC |
@@ -47,11 +48,14 @@ Frame: `CD-KH-020100` (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
 | `A02.01` | id |  | `1448:6747` ID | — |  |  | Khớp | QC |
 | `A02.02` | ten |  | `1448:6749` Tên | — |  |  | Khớp | QC |
 | `A02.03` | mo-ta |  | `1448:6751` Mô tả | — |  |  | Khớp | QC |
-| `A02.04` | so-buoi | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25145` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC07`, `TC11`, `TC12`, `TC17` | Khớp | QC |
-| `A02.05` | thoi-gian-hoc |  | `1448:6755` Thời gian học | — |  | `TC04`, `TC07`, `TC11`, `TC16` | Khớp | QC |
-| `A02.06` | tong-thoi-gian | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25164` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC05`, `TC07`, `TC13`, `TC16`, `TC17` | Khớp | QC |
-| `A02.07` |  |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.08` | thao-tac |  | `1448:6761` Thao tác | — |  | `TC06`, `TC07`, `TC10`, `TC15` | Khớp | QC |
+| `A02.04` | loai |  | `1448:6918` TỪ VỰNG | — | governed-by `REQ12` | `TC06`, `TC15`, `TC18`, `TC22`, `TC23` | Requirement ghi thiếu, Figma đã có | QC |
+| `A02.05` | so-buoi | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25145` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC07`, `TC11`, `TC12`, `TC19`, `TC21`, `TC17` | Khớp | QC |
+| `A02.06` | thoi-gian-hoc |  | `1448:6755` Thời gian học | — |  | `TC04`, `TC07`, `TC11`, `TC16` | Khớp | QC |
+| `A02.07` | tong-thoi-gian | `Thẻ chỉ số` Kiểu=Chuẩn | `2812:25164` Thẻ chỉ số | — |  | `TC02`, `TC04`, `TC05`, `TC07`, `TC13`, `TC16`, `TC17` | Khớp | QC |
+| `A02.08` |  |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A02.09` | thao-tac |  | `1448:6761` Thao tác | — |  | `TC06`, `TC07`, `TC10`, `TC15` | Khớp | QC |
+| `A02.10` | atom-id-badge | `Atom/ID Badge` Type=6-digit, Size=26H | `2409:144771` Atom/ID Badge | — |  |  | Chỉ có trên Figma | Figma |
+| `A02.11` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `2812:25761` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
 
 ### `A03` Khu vực: Thêm nội dung buổi học mới
 
@@ -60,25 +64,16 @@ Frame: `CD-KH-020100` (tool đoán:CD-KH-020100) · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 
-### `F01` Row
+### `F01` (ngoài Body)
 
 Frame: `CD-KH-020100` · Nguồn nội dung: Figma
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `F01.01` | atom-id-badge | `Atom/ID Badge` Type=6-digit, Size=26H | `2409:144771` Atom/ID Badge | — |  |  | Chỉ có trên Figma | Figma |
-| `F01.02` | atom-number-badge | `Atom/Number Badge` Type=Số buổi, Size=Medium, State=Active | `2812:25761` Atom/Number Badge | — |  |  | Chỉ có trên Figma | Figma |
-
-### `F02` (ngoài Body)
-
-Frame: `CD-KH-020100` · Nguồn nội dung: Figma
-
-| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
-|---|---|---|---|---|---|---|---|---|
-| `F02.01` | add-new-bar-them-noi-dung-khoa-hoc-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2812:32946` Add New Bar · Thêm nội dung khoá học mới | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.02` | sidebar-menu-cd | `MENU - CD`  | `4915:255903` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.03` | account | `ACCOUNT` Size=Default | `2812:32932` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
-| `F02.04` | component-2 | `Switch Center`  | `4273:160623` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.01` | add-new-bar-them-noi-dung-khoa-hoc-moi | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `2812:32946` Add New Bar · Thêm nội dung khoá học mới | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.02` | sidebar-menu-cd | `MENU - CD`  | `4915:255903` Sidebar · MENU - CD | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.03` | account | `ACCOUNT` Size=Default | `2812:32932` ACCOUNT | — |  |  | Chỉ có trên Figma | Figma |
+| `F01.04` | component-2 | `Switch Center`  | `4273:160623` Component 2 | — |  |  | Chỉ có trên Figma | Figma |
 
 ## 5. Nghiệp vụ
 
@@ -94,10 +89,13 @@ Frame: `CD-KH-020100` · Nguồn nội dung: Figma
 | `REQ08` | Loại thao tác của nội dung | Mỗi nội dung có loại thao tác là Tự chọn hoặc Giảng dạy, đổi qua lại bằng icon cạnh nút xoá trong cột "Thao tác". Nội dung mới tạo mặc định là Giảng dạy. |
 | `REQ09` | Màu Thời gian còn lại | Âm: màu đỏ (cảnh báo, không chặn thao tác); dương: màu xanh lá; bằng 0: màu đen mặc định. |
 | `REQ10` | Xoá mềm nội dung | Xoá một nội dung buổi học là xoá mềm, có popup xác nhận trước khi xoá. |
+| `REQ12` | Loại và số cụm | Mỗi dòng nội dung có đúng 1 Loại kiến thức / kỹ năng. Với từng loại: số cụm ở S1 / S6 = tổng Số buổi các dòng cùng loại; hệ thống tự tạo cụm rỗng `Chủ đề k` khi tăng, tự xoá cụm rỗng chưa liên kết khi giảm, chặn khi cụm bị bỏ còn mục hoặc còn liên kết bài học. CD không nhập Số cụm ở S1 / S6. Dòng chưa chọn Loại không tính vào số cụm. |
 | `REQ11` | Định dạng Thời gian học | Thời gian học lưu và hiển thị theo `HH:mm:ss`. Giá trị nhập có phút hoặc giây vượt 59 được tự quy đổi lên đơn vị lớn hơn (ví dụ `00:00:120` → `00:02:00`). |
 | `EX01` | Ngoại lệ | Tổng thời gian các nội dung trong bảng vượt quá "Tổng thời gian" ở card tổng quan (khiến "Thời gian còn lại" âm) → card "Thời gian còn lại" hiển thị giá trị âm màu **đỏ** để cảnh báo CD (không chặn thao tác). |
 | `EX02` | Ngoại lệ | Nhập Số buổi (card hoặc dòng) là số âm, số thập phân hoặc chữ → không lưu, giữ giá trị cũ; xoá trống ô Số buổi → giá trị về `0`. Nhập Thời gian mỗi buổi không phải số nguyên dương (0, số âm, số thập phân, chữ, để trống) → không lưu, giữ giá trị cũ. |
 | `EX03` | Ngoại lệ | Tên nội dung để trống hoặc chỉ khoảng trắng: khi thêm mới thì không tạo; khi sửa thì không lưu, trả về tên cũ. |
+| `EX05` | Ngoại lệ | Giảm Số buổi, đổi Loại hoặc xoá dòng làm số cụm của loại phải giảm, nhưng cụm sẽ bị bỏ còn mục hoặc còn liên kết bài học → BE từ chối, giữ giá trị cũ, Toast `Cảnh Báo` `Cụm <tên> của <loại> còn dữ liệu, dọn cụm ở S1 / S6 trước.` |
+| `EX06` | Ngoại lệ | Chọn Loại `Bảng chữ` ở trung tâm không có hệ chữ riêng (qua request) → BE từ chối. |
 | `EX04` | Ngoại lệ | Thời gian học nhập phút hoặc giây vượt 59 (ví dụ `00:00:120`, `1:70:00`) → hệ thống tự quy đổi phần vượt lên đơn vị lớn hơn cho đúng (`00:02:00`, `02:10:00`), rồi lưu và tính lại. |
 
 ## 6. Testcase
@@ -105,22 +103,28 @@ Frame: `CD-KH-020100` · Nguồn nội dung: Figma
 | Mã | Tên | Priority | Smoke | Scenario | Khu vực | Item |
 |---|---|---|---|---|---|---|
 | `TC01` | Case 1: Xem tổng quan | High | Có | Flow chính | — |  |
-| `TC02` | Case 2: Giá trị mặc định và nhập Số buổi / Thời gian mỗi buổi lần đầu | High |  | Flow 1 / REQ06 | — | `A01.01`, `A01.02`, `A01.03`, `A02.04`, `A02.06` |
+| `TC02` | Case 2: Giá trị mặc định và nhập Số buổi / Thời gian mỗi buổi lần đầu | High |  | Flow 1 / REQ06 | — | `A01.01`, `A01.02`, `A01.03`, `A02.05`, `A02.07` |
 | `TC03` | Case 3: Thêm nhanh nội dung mới | High | Có | Flow 2 / REQ07 | — |  |
-| `TC04` | Case 4: Sửa Số buổi/Thời gian học → tự tính Tổng thời gian và % | High |  | Flow 5 / REQ01 / REQ02 | — | `A01.01`, `A01.03`, `A02.04`, `A02.05`, `A02.06` |
-| `TC05` | Case 5: Tự động cập nhật Thời gian thực tế và Thời gian còn lại | High |  | Flow 5 / REQ04 / REQ05 | — | `A01.03`, `A01.04`, `A01.05`, `A02.06` |
-| `TC06` | Case 6: Đổi loại thao tác Tự chọn/Giảng dạy | Medium |  | Flow 4 / REQ08 | — | `A02.08` |
-| `TC07` | Case 7: Thời gian còn lại bị âm | Medium |  | EX01 / REQ09 | — | `A01.01`, `A01.03`, `A01.05`, `A02.04`, `A02.05`, `A02.06`, `A02.08` |
+| `TC04` | Case 4: Sửa Số buổi/Thời gian học → tự tính Tổng thời gian và % | High |  | Flow 5 / REQ01 / REQ02 | — | `A01.01`, `A01.03`, `A02.05`, `A02.06`, `A02.07` |
+| `TC05` | Case 5: Tự động cập nhật Thời gian thực tế và Thời gian còn lại | High |  | Flow 5 / REQ04 / REQ05 | — | `A01.03`, `A01.04`, `A01.05`, `A02.07` |
+| `TC06` | Case 6: Đổi loại thao tác Tự chọn/Giảng dạy | Medium |  | Flow 4 / REQ08 | — | `A02.04`, `A02.09` |
+| `TC07` | Case 7: Thời gian còn lại bị âm | Medium |  | EX01 / REQ09 | — | `A01.01`, `A01.03`, `A01.05`, `A02.05`, `A02.06`, `A02.07`, `A02.09` |
 | `TC08` | Case 8: Xoá một nội dung | High |  | Flow 6 / REQ10 | — |  |
 | `TC09` | Case 9: Huỷ xoá nội dung | Medium |  | Flow 6 | — |  |
-| `TC10` | Case 10: Kiểm tra quyền truy cập | High |  | Ràng buộc quyền | — | `A02.08` |
-| `TC11` | Case 11: Màu Thời gian còn lại dương / bằng 0 | Medium |  | REQ09 | — | `A01.01`, `A01.05`, `A02.04`, `A02.05` |
-| `TC12` | Case 12: Ràng buộc nhập Số buổi / Thời gian mỗi buổi | Medium |  | EX02 / REQ06 | — | `A01.01`, `A01.02`, `A02.04` |
-| `TC13` | Case 13: % làm tròn 2 chữ số và bằng 0% khi Tổng = 0 | Medium |  | REQ02 | — | `A01.03`, `A02.06` |
+| `TC10` | Case 10: Kiểm tra quyền truy cập | High |  | Ràng buộc quyền | — | `A02.09` |
+| `TC11` | Case 11: Màu Thời gian còn lại dương / bằng 0 | Medium |  | REQ09 | — | `A01.01`, `A01.05`, `A02.05`, `A02.06` |
+| `TC12` | Case 12: Ràng buộc nhập Số buổi / Thời gian mỗi buổi | Medium |  | EX02 / REQ06 | — | `A01.01`, `A01.02`, `A02.05` |
+| `TC13` | Case 13: % làm tròn 2 chữ số và bằng 0% khi Tổng = 0 | Medium |  | REQ02 | — | `A01.03`, `A02.07` |
 | `TC14` | Case 14: Tên nội dung để trống | High |  | EX03 / REQ07 | — |  |
-| `TC15` | Case 15: Loại thao tác mặc định | Low |  | REQ08 | — | `A02.08` |
-| `TC16` | Case 16: Thời gian học nhập vượt 59 tự quy đổi | Medium |  | EX04 / REQ11 | — | `A01.03`, `A02.05`, `A02.06` |
-| `TC17` | Case 17: Số buổi của dòng xoá trống về 0 | Low |  | EX02 | — | `A01.01`, `A01.03`, `A01.04`, `A01.05`, `A02.04`, `A02.06` |
+| `TC15` | Case 15: Loại thao tác mặc định | Low |  | REQ08 | — | `A02.04`, `A02.09` |
+| `TC16` | Case 16: Thời gian học nhập vượt 59 tự quy đổi | Medium |  | EX04 / REQ11 | — | `A01.03`, `A02.06`, `A02.07` |
+| `TC18` | Case 18: Chọn Loại sinh cụm ở S1 | High | Có | Flow 7 / REQ12 | — | `A02.04` |
+| `TC19` | Case 19: Hai dòng cùng loại cộng dồn | High |  | Flow 7 / REQ12 | — | `A01.01`, `A02.05` |
+| `TC20` | Case 20: Giảm buổi khi cụm cuối rỗng | Medium |  | Flow 7 / REQ12 | — |  |
+| `TC21` | Case 21: Giảm buổi bị chặn | High |  | EX05 / REQ12 | — | `A01.01`, `A02.05` |
+| `TC22` | Case 22: Đổi Loại của dòng | Medium |  | Flow 7 / REQ12 | — | `A02.04` |
+| `TC23` | Case 23: Dòng chưa chọn Loại | Medium |  | REQ12 | — | `A02.04` |
+| `TC17` | Case 17: Số buổi của dòng xoá trống về 0 | Low |  | EX02 | — | `A01.01`, `A01.03`, `A01.04`, `A01.05`, `A02.05`, `A02.07` |
 
 ## 7. Code
 
@@ -131,9 +135,10 @@ Frame: `CD-KH-020100` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (1): `A02.07`
+- Chưa khớp tự động (1): `A02.08`
+- Requirement ghi thiếu, Figma đã có (1): `A02.04`
 - Testcase không trỏ REQ (2): `TC01`, `TC10`
-- REQ/EX chưa có testcase (1): `REQ03`
+- REQ/EX chưa có testcase (2): `REQ03`, `EX06`
 
 ## 9. Chi tiết dựng
 

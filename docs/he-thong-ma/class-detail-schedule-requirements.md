@@ -61,7 +61,7 @@ Frame: `ADM-LOP-040510`, `ADM-LOP-040521` (tool đoán:ADM-LOP-040510, ADM-LOP-0
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A03.01` | tab-co-dinh-linh-hoat |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A03.02` | chon-ngay-bat-dau | `Time`  | `I2384:59020;1739:32355` Thứ Ba, 22.09.2026 | — |  |  | Khớp | QC |
+| `A03.02` | chon-ngay-bat-dau | `Time`  | `I2384:59020;1739:32355` Thứ Ba, 22.09.2026 | — |  |  | Khớp một phần | QC |
 | `A03.03` | gio-bat-dau-ket-thuc |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.04` | thu-2-chu-nhat |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.05` | them-lich-day |  | `2384:59178` Thêm lịch dạy | — |  |  | Khớp | QC |
@@ -75,11 +75,11 @@ Frame: `ADM-LOP-040520` (tool đoán:ADM-LOP-040520) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A04.01` | khoang-tuan |  |  | — |  |  | Chưa sync | QC |
-| `A04.02` | gio-bat-dau-ket-thuc |  |  | — |  |  | Chưa sync | QC |
-| `A04.03` | thu-trong-tuan |  |  | — |  |  | Chưa sync | QC |
-| `A04.04` | them-lich-day |  |  | — |  |  | Chưa sync | QC |
-| `A04.05` | xac-nhan |  |  | — |  | `TC16`, `TC17`, `TC19` | Chưa sync | QC |
+| `A04.01` | khoang-tuan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.02` | gio-bat-dau-ket-thuc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.03` | thu-trong-tuan |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A04.04` | them-lich-day | `Popup/Header`  | `I2527:167773;2514:153358` Title | — |  |  | Khớp | QC |
+| `A04.05` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167779;2514:153363` Atom/Button | — |  | `TC16`, `TC17`, `TC19` | Khớp | QC |
 
 ### `A05` Popup xem/chỉnh sửa khi bấm thẻ lịch
 
@@ -90,11 +90,12 @@ Frame: `ADM-LOP-040500` (tool đoán:ADM-LOP-040500) · Nguồn nội dung: QC
 | `A05.01` | tieu-de |  |  | — |  | `TC21` | Chưa khớp tự động | QC |
 | `A05.02` | thoi-gian-ngay |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A05.03` | gio-bat-dau |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.04` | giao-vien | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I2384:57888;2177:28928` Chi tiết NV | — |  | `TC21`, `TC24`, `TC25` | Khớp | QC |
+| `A05.04` | giao-vien | `Atom/Side Tab` State=Inactive, Kiểu=Gạch trái | `I2384:57888;2177:28928` Chi tiết NV | — |  | `TC21`, `TC24`, `TC25`, `TC27b`, `TC27c` | Khớp | QC |
 | `A05.05` | thoi-gian-hoc |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A05.06` | trang-thai |  |  | — |  | `TC21`, `TC22`, `TC26`, `TC27` | Chưa khớp tự động | QC |
-| `A05.07` | huy | `STATUS CALENDAR`  | `3650:48210` STATUS CALENDAR; `3650:48210` STATUS CALENDAR | — |  |  | Khớp | QC |
-| `A05.08` | xac-nhan |  |  | — |  | `TC22`, `TC23`, `TC24`, `TC25`, `TC27` | Chưa khớp tự động | QC |
+| `A05.06` | luong-gio |  |  | — |  | `TC27a`, `TC27b`, `TC27c`, `TC27e` | Chưa khớp tự động | QC |
+| `A05.07` | trang-thai |  |  | — |  | `TC21`, `TC22`, `TC26`, `TC27` | Chưa khớp tự động | QC |
+| `A05.08` | huy | `STATUS CALENDAR`  | `3650:48210` STATUS CALENDAR; `3650:48210` STATUS CALENDAR | — |  |  | Khớp | QC |
+| `A05.09` | xac-nhan |  |  | — |  | `TC22`, `TC23`, `TC24`, `TC25`, `TC27b`, `TC27c`, `TC27d`, `TC27` | Chưa khớp tự động | QC |
 
 ### `A06` Hoàn thành và hủy lịch
 
@@ -158,8 +159,9 @@ Frame: `ADM-LOP-040500` · Nguồn nội dung: Figma
 | `REQ07` | Hủy và bù | Lịch hủy bị trừ khỏi N, không tính lương và tạo đúng một lịch bù ở cuối theo khung cố định; tự tăng ngày kết thúc dự kiến. |
 | `REQ08` | Audit/an toàn | Lưu người, thời điểm máy chủ, giá trị trước/sau, nguồn lịch, trạng thái và liên kết lịch bù; không tin role, class_id, teacher_id hoặc trạng thái do client tự khai. |
 | `REQ09` | Toast | Mọi CRUD có phản hồi đúng loại; chỉ thành công sau khi toàn bộ giao dịch liên quan đã hoàn tất. |
-| `REQ10` | Popup thẻ lịch | Bấm thẻ mở đúng schedule_id với Ngày, Giờ bắt đầu, Giáo viên, Thời gian học và Trạng thái. Role CRUD được sửa lịch Đang đợi; Teacher chỉ xem. Nút Hủy chỉ đóng form; trạng thái Hủy bỏ mới kích hoạt sinh bù. |
+| `REQ10` | Popup thẻ lịch | Bấm thẻ mở đúng schedule_id với Ngày, Giờ bắt đầu, Giáo viên, Thời gian học, Lương/giờ và Trạng thái. Role CRUD được sửa lịch Đang đợi; Teacher chỉ xem. Nút Hủy chỉ đóng form; trạng thái Hủy bỏ mới kích hoạt sinh bù. |
 | `REQ11` | Mở lại lịch hoàn thành | Admin/Class Handler/Support được mở lại lịch Hoàn thành khi nhập lý do. Hệ thống không xóa lương gốc mà tạo bút toán đảo/điều chỉnh, đưa lịch về Đang đợi rồi mới cho sửa/hủy. Hoàn thành lại tạo lần lương mới và chỉ một khoản lương có hiệu lực. |
+| `REQ12` | Lương/giờ của buổi | Mỗi lịch có `Lương/giờ`, mặc định theo hồ sơ giáo viên của buổi; Role CRUD chỉnh riêng được cho từng buổi chưa hoàn thành/hủy, Teacher chỉ xem. Đổi giáo viên reset theo hồ sơ giáo viên mới. Tiền buổi = Lương/giờ × thời lượng (giờ), chốt khi Hoàn thành; đổi hồ sơ không hồi tố buổi đã hoàn thành và không ghi đè buổi đã chỉnh riêng. Không còn lương theo lớp. |
 | `EX01` | Ngoại lệ | Không có quyền hoặc ngoài phạm vi lớp → không trả control CRUD và backend từ chối request thay đổi. |
 | `EX02` | Ngoại lệ | Giờ kết thúc không sau giờ bắt đầu, dòng không chọn thứ, trùng lịch của lớp hoặc trùng lịch giáo viên tại bất kỳ lớp nào → cảnh báo, không cho tạo/lưu và đánh dấu đúng dòng/ngày. |
 | `EX03` | Ngoại lệ | Cấu hình cố định không thể sinh đủ N lịch hợp lệ → rollback toàn bộ cấu hình/lịch mới. |
@@ -196,13 +198,19 @@ Frame: `ADM-LOP-040500` · Nguồn nội dung: Figma
 | `TC18` | Case 18: Chèn lịch và cân bằng về đúng N buổi | High |  | Flow 3 / REQ04 | `A04` |  |
 | `TC19` | Case 19: Một lịch trong nhóm bị trùng lịch lớp hoặc lịch giáo viên | High |  | EX04 / REQ04 | `A04` | `A04.05` |
 | `TC20` | Case 20: Hủy popup linh hoạt | Medium |  | REQ04 | `A04` |  |
-| `TC21` | Case 21: Mở đúng popup của thẻ được bấm | High |  | Flow 4 / REQ10 | `A05` | `A05.01`, `A05.04`, `A05.06` |
-| `TC22` | Case 22: Teacher xem popup ở chế độ chỉ đọc | High |  | REQ02 / Ràng buộc quyền | `A05` | `A05.06`, `A05.08` |
-| `TC23` | Case 23: Chỉnh ngày, giờ hoặc thời lượng hợp lệ | High |  | REQ10 | `A05` | `A05.08` |
-| `TC24` | Case 24: Đổi giáo viên không bị trùng lịch | High |  | REQ10 | `A05` | `A05.04`, `A05.08` |
-| `TC25` | Case 25: Chặn chỉnh sửa gây trùng lịch | High |  | EX02 / REQ10 | `A05` | `A05.04`, `A05.08` |
-| `TC26` | Case 26: Nút Hủy chỉ đóng popup | Medium |  | REQ10 | `A05` | `A05.06` |
-| `TC27` | Case 27: Đổi trạng thái từ popup | High |  | Flow 4–5 / REQ06–REQ07 / REQ10 | `A05` | `A05.06`, `A05.08` |
+| `TC21` | Case 21: Mở đúng popup của thẻ được bấm | High |  | Flow 4 / REQ10 | `A05` | `A05.01`, `A05.04`, `A05.07` |
+| `TC22` | Case 22: Teacher xem popup ở chế độ chỉ đọc | High |  | REQ02 / Ràng buộc quyền | `A05` | `A05.07`, `A05.09` |
+| `TC23` | Case 23: Chỉnh ngày, giờ hoặc thời lượng hợp lệ | High |  | REQ10 | `A05` | `A05.09` |
+| `TC24` | Case 24: Đổi giáo viên không bị trùng lịch | High |  | REQ10 | `A05` | `A05.04`, `A05.09` |
+| `TC25` | Case 25: Chặn chỉnh sửa gây trùng lịch | High |  | EX02 / REQ10 | `A05` | `A05.04`, `A05.09` |
+| `TC26` | Case 26: Nút Hủy chỉ đóng popup | Medium |  | REQ10 | `A05` | `A05.07` |
+| `TC27a` | Case 27a: Lương/giờ mặc định từ hồ sơ | High |  | REQ10 / REQ12 | `A05` | `A05.06` |
+| `TC27b` | Case 27b: Chỉnh Lương/giờ riêng một buổi | High | Có | REQ10 / REQ12 | `A05` | `A05.04`, `A05.06`, `A05.09` |
+| `TC27c` | Case 27c: Đổi giáo viên thì reset Lương/giờ | High |  | REQ10 / REQ12 | `A05` | `A05.04`, `A05.06`, `A05.09` |
+| `TC27d` | Case 27d: Validation Lương/giờ buổi | High |  | REQ12 | `A05` | `A05.09` |
+| `TC27e` | Case 27e: Khóa Lương/giờ khi đã hoàn thành và Teacher chỉ xem | High |  | REQ02 / REQ12 | `A05` | `A05.06` |
+| `TC27f` | Case 27f: Tính tiền buổi khi hoàn thành | High | Có | REQ06 / REQ12 | `A05` |  |
+| `TC27` | Case 27: Đổi trạng thái từ popup | High |  | Flow 4–5 / REQ06–REQ07 / REQ10 | `A05` | `A05.07`, `A05.09` |
 | `TC28` | Case 28: Hoàn thành lịch cố định | High | Có | Flow 4 / REQ06 | `A06` | `A06.01` |
 | `TC29` | Case 29: Hoàn thành lịch linh hoạt | High |  | Flow 4 / REQ06 | `A06` | `A06.01` |
 | `TC30` | Case 30: Gửi lặp hoàn thành | High |  | EX05 / REQ06 | `A06` | `A06.01` |
@@ -232,8 +240,7 @@ Frame: `ADM-LOP-040500` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (27): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A03.01`, `A03.03`, `A03.04`, `A03.06`, `A05.01`, `A05.02`, `A05.03`, `A05.05`, `A05.06`, `A05.08`, `A06.02`, `A06.04`, `A06.05`, `A07.01`, `A07.02`, `A07.03`, `A07.05`, `A08.01`, `A08.03`, `A08.04`
-- Chưa sync (5): `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`
+- Chưa khớp tự động (31): `A01.01`, `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.06`, `A01.07`, `A03.01`, `A03.03`, `A03.04`, `A03.06`, `A04.01`, `A04.02`, `A04.03`, `A05.01`, `A05.02`, `A05.03`, `A05.05`, `A05.06`, `A05.07`, `A05.09`, `A06.02`, `A06.04`, `A06.05`, `A07.01`, `A07.02`, `A07.03`, `A07.05`, `A08.01`, `A08.03`, `A08.04`
 - Frame Figma chưa có requirement (3): `ADM-LOP-040510`, `ADM-LOP-040520`, `ADM-LOP-040521`
 - Thiếu prototype link đi vào (1): `ADM-LOP-040521`
 - Testcase không trỏ REQ (3): `TC44`, `TC45`, `TC46`

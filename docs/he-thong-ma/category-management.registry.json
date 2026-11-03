@@ -188,9 +188,9 @@
    "content": "figma",
    "nodeId": "689:14188",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-dm-010057",
    "link": "/quan-ly-danh-muc?state=CD-DM-010057",
    "dark": "CD-DM-010057-DK",
    "openedFrom": [],
@@ -211,9 +211,9 @@
    "content": "figma",
    "nodeId": "1854:20955",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-dm-010060",
    "link": "/quan-ly-danh-muc?popup=CD-DM-010060",
    "dark": "CD-DM-010060-DK",
    "openedFrom": [],
@@ -234,9 +234,9 @@
    "content": "figma",
    "nodeId": "1854:21305",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-dm-010062",
    "link": "/quan-ly-danh-muc?state=CD-DM-010062",
    "dark": "CD-DM-010062-DK",
    "openedFrom": [],
@@ -508,7 +508,34 @@
      "spec": "Hiển thị (chỉ đọc) đúng Tên danh mục đang thao tác.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010057": [
+       {
+        "term": "Danh mục",
+        "figmaId": "689:14242",
+        "layer": "Đã lưu và áp dụng cấu hình cho danh mục",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-dm-010060": [
+       {
+        "term": "Danh mục",
+        "figmaId": "6025:210755",
+        "layer": "Danh mục:",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-CM2.TC01",
@@ -534,7 +561,7 @@
       "CM-CM2.TC27"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CM-CM2.A03.02",
@@ -543,11 +570,36 @@
      "spec": "Hiển thị badge trạng thái hiện tại của danh mục (`Nháp`) trước khi chuyển.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010060": [
+       {
+        "term": "Trạng thái hiện tại",
+        "figmaId": "6025:210779",
+        "layer": "Trạng thái hiện tại",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Nháp",
+        "figmaId": "6025:210782",
+        "layer": "Nháp",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop-mot-phan"
     },
     {
      "id": "CM-CM2.A03.03",
@@ -556,11 +608,25 @@
      "spec": "Hiển thị ID hiện tại (2 chữ số) mà danh mục đã có sẵn từ lúc tạo.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010060": [
+       {
+        "term": "ID danh mục",
+        "figmaId": "6025:210760",
+        "layer": "ID danh mục *:",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop-mot-phan"
     },
     {
      "id": "CM-CM2.A03.04",
@@ -574,8 +640,10 @@
      "testcases": [
       "CM-CM2.TC06"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Ô nhập ID"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-CM2.A03.05",
@@ -587,8 +655,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Nút làm mới (biểu tượng xoay)"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-CM2.A03.06",
@@ -600,8 +670,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Biểu tượng kết quả kiểm tra"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-CM2.A03.07",
@@ -610,11 +682,27 @@
      "spec": "`ID có thể sử dụng` khi hợp lệ; `ID đang bị trùng` / `ID sai định dạng` khi không hợp lệ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010060": [
+       {
+        "term": "ID có thể sử dụng",
+        "figmaId": "6025:210769",
+        "layer": "ID có thể sử dụng.",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Thông báo trạng thái"
+     ],
+     "status": "khop-mot-phan"
     },
     {
      "id": "CM-CM2.A03.08",
@@ -626,8 +714,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Ghi chú cảnh báo",
+      "Sau khi xác nhận, danh mục sẽ chuyển sang trạng thái Công khai, chỉ còn sửa được Tên và Mô tả. ID và cấu hình Mindset, Tiêu chuẩn giáo trình, Hướng dẫn giảng dạy sẽ bị khóa."
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-CM2.A03.09",
@@ -636,14 +727,32 @@
      "spec": "Chỉ bật khi ID trong ô đang ở trạng thái hợp lệ. Khi bấm, backend kiểm tra lại ID lần cuối rồi lưu ID và chuyển trạng thái sang `Công Khai` trong cùng một giao dịch.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010060": [
+       {
+        "term": "Công khai danh mục",
+        "figmaId": "I6025:210790;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Công khai danh mục",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "CM-CM2.TC06",
       "CM-CM2.TC10"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop-mot-phan"
     },
     {
      "id": "CM-CM2.A03.10",
@@ -652,11 +761,31 @@
      "spec": "Đóng popup, không lưu thay đổi ID và không đổi trạng thái danh mục.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010060": [
+       {
+        "term": "Hủy",
+        "figmaId": "I6025:210790;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "X"
+     ],
+     "status": "khop-mot-phan"
     }
    ]
   },

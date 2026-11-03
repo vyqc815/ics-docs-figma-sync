@@ -83,13 +83,13 @@ Frame: `GV-LOP-030120`, `GV-LOP-030121` (tool đoán:GV-LOP-030120, GV-LOP-03012
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | lop-khong-co-lich-tuan-nay |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | popup-chon-lich-day |  |  | — |  | `TC09`, `TC10` | Chưa sync | QC |
-| `A03.03` | lua-chon-khong-chon-lich |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | nut-huy-bat-dau |  |  | — |  |  | Chưa sync | QC |
-| `A03.05` | popup-bat-dau-buoi-hoc |  |  | — |  |  | Chưa sync | QC |
-| `A03.06` | bat-dau-voi-lich |  |  | — |  |  | Chưa sync | QC |
-| `A03.07` | bat-dau-khong-chon-lich |  |  | — |  |  | Chưa sync | QC |
+| `A03.01` | lop-khong-co-lich-tuan-nay | `Popup/Header`  | `I5292:223042;2514:153348` Title | — |  |  | Khớp một phần | QC |
+| `A03.02` | popup-chon-lich-day | `Popup/Header`  | `I5292:222985;2514:153341` Title | — |  | `TC09`, `TC10` | Khớp một phần | QC |
+| `A03.03` | lua-chon-khong-chon-lich |  | `5292:223039` Không chọn lịch | — |  |  | Khớp một phần | QC |
+| `A03.04` | nut-huy-bat-dau | `Atom/Button` Type=Primary, Size=Medium; `Atom/Button` Type=Secondary, Size=Medium | `I5292:223001;2514:153361` Atom/Button; `I5292:223001;2514:153363` Atom/Button | — |  |  | Khớp | QC |
+| `A03.05` | popup-bat-dau-buoi-hoc | `Popup/Header`  | `I5292:223042;2514:153348` Title | — |  |  | Khớp một phần | QC |
+| `A03.06` | bat-dau-voi-lich |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A03.07` | bat-dau-khong-chon-lich |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A04` Bước 1 — Điểm danh và Ghi chú cho lớp học
 
@@ -258,10 +258,10 @@ Frame: `GV-LOP-040211` (tool đoán:GV-LOP-040211) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A16.01` | xem-truoc-de |  |  | — |  |  | Chưa sync | QC |
-| `A16.02` | nut-giao-bai |  |  | — | opens `A16` |  | Chưa sync | QC |
-| `A16.03` | dieu-kien-giao |  |  | — |  |  | Chưa sync | QC |
-| `A16.04` | giao-thanh-cong |  |  | — |  |  | Chưa sync | QC |
+| `A16.01` | xem-truoc-de |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A16.02` | nut-giao-bai | `Popup/Header`  | `I5425:277379;2514:153348` Title | — | opens `A16` |  | Khớp | QC |
+| `A16.03` | dieu-kien-giao |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A16.04` | giao-thanh-cong |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A17` Thu hồi bài kiểm tra
 
@@ -269,8 +269,8 @@ Frame: `GV-LOP-040221` (tool đoán:GV-LOP-040221) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A17.01` | nut-thu-hoi |  |  | — | opens `A17` |  | Chưa sync | QC |
-| `A17.02` | thu-hoi-thanh-cong |  |  | — |  |  | Chưa sync | QC |
+| `A17.01` | nut-thu-hoi | `Popup/Header`  | `I5425:277392;2514:153348` Title | — | opens `A17` |  | Khớp | QC |
+| `A17.02` | thu-hoi-thanh-cong |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A18` Màn chấm bài — Khung màn và điều hướng
 
@@ -604,8 +604,8 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 - `A12` Khác Figma GV-LOP-040100: Figma chưa có nút điều hướng chấm bài trên card; requirement bổ sung nút này cho `Giáo viên phụ trách chính`.
 - `A14` Khác Figma GV-LOP-040200: Figma chưa có frame card `Chưa giao` đang chọn (xem trước đề) và nút `Giao bài`; hai thành phần này đặc tả theo ICS cũ.
 - `A26` Khác Figma GV-LOP-050100: Figma chỉ có trạng thái chưa có khóa tự học; trạng thái có dữ liệu theo UI của requirement Admin, bỏ các nút thêm.
-- Chưa khớp tự động (27): `A01.01`, `A01.03`, `A01.04`, `A01.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A10.02`, `A12.03`, `A12.04`, `A12.06`, `A12.07`, `A14.01`, `A14.05`, `A18.01`, `A18.03`, `A18.05`, `A26.02`, `A26.03`, `A26.04`, `A26.05`, `A26.06`, `A26.07`
-- Chưa sync (103): `A02.01`, `A02.02`, `A02.03`, `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`, `A03.07`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A11.01`, `A11.02`, `A11.03`, `A11.04`, `A11.05`, `A13.01`, `A13.02`, `A13.03`, `A13.04`, `A13.05`, `A13.06`, `A13.07`, `A15.01`, `A15.02`, `A15.03`, `A15.04`, `A15.05`, `A15.06`, `A15.07`, `A16.01`, `A16.02`, `A16.03`, `A16.04`, `A17.01`, `A17.02`, `A19.01`, `A19.02`, `A19.03`, `A19.04`, `A19.05`, `A20.01`, `A20.02`, `A20.03`, `A20.04`, `A20.05`, `A20.06`, `A21.01`, `A21.02`, `A21.03`, `A21.04`, `A21.05`, `A21.06`, `A21.07`, `A21.08`, `A21.09`, `A21.10`, `A21.11`, `A21.12`, `A21.13`, `A22.01`, `A22.02`, `A22.03`, `A22.04`, `A22.05`, `A22.06`, `A23.01`, `A23.02`, `A23.03`, `A23.04`, `A24.01`, `A24.02`, `A24.03`, `A24.04`, `A25.01`, `A25.02`, `A25.03`, `A25.04`, `A27.01`, `A27.02`, `A27.03`, `A27.04`
+- Chưa khớp tự động (33): `A01.01`, `A01.03`, `A01.04`, `A01.05`, `A03.06`, `A03.07`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A10.02`, `A12.03`, `A12.04`, `A12.06`, `A12.07`, `A14.01`, `A14.05`, `A16.01`, `A16.03`, `A16.04`, `A17.02`, `A18.01`, `A18.03`, `A18.05`, `A26.02`, `A26.03`, `A26.04`, `A26.05`, `A26.06`, `A26.07`
+- Chưa sync (90): `A02.01`, `A02.02`, `A02.03`, `A04.01`, `A04.02`, `A04.03`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A04.08`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A06.01`, `A06.02`, `A06.03`, `A07.01`, `A07.02`, `A07.03`, `A07.04`, `A07.05`, `A11.01`, `A11.02`, `A11.03`, `A11.04`, `A11.05`, `A13.01`, `A13.02`, `A13.03`, `A13.04`, `A13.05`, `A13.06`, `A13.07`, `A15.01`, `A15.02`, `A15.03`, `A15.04`, `A15.05`, `A15.06`, `A15.07`, `A19.01`, `A19.02`, `A19.03`, `A19.04`, `A19.05`, `A20.01`, `A20.02`, `A20.03`, `A20.04`, `A20.05`, `A20.06`, `A21.01`, `A21.02`, `A21.03`, `A21.04`, `A21.05`, `A21.06`, `A21.07`, `A21.08`, `A21.09`, `A21.10`, `A21.11`, `A21.12`, `A21.13`, `A22.01`, `A22.02`, `A22.03`, `A22.04`, `A22.05`, `A22.06`, `A23.01`, `A23.02`, `A23.03`, `A23.04`, `A24.01`, `A24.02`, `A24.03`, `A24.04`, `A25.01`, `A25.02`, `A25.03`, `A25.04`, `A27.01`, `A27.02`, `A27.03`, `A27.04`
 - Frame Figma chưa có requirement (11): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040211`, `GV-LOP-040221`, `GV-LOP-040320`
 - Thiếu prototype link đi vào (7): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-050100`
 - Phân loại cần design duyệt (8): `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040320`, `GV-LOP-050100`

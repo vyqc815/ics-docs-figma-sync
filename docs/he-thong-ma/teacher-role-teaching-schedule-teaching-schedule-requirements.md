@@ -76,12 +76,12 @@ Frame: `GV-LD-020010` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A03.02` | dong-phu |  |  | — |  | `TC21` | Chưa sync | QC |
-| `A03.03` | gio-bat-dau-gio-ket-thuc |  |  | — |  |  | Chưa sync | QC |
-| `A03.04` | ghi-chu |  |  | — |  | `TC24`, `TC25` | Chưa sync | QC |
-| `A03.05` | huy |  |  | — |  |  | Chưa sync | QC |
-| `A03.06` | xac-nhan |  |  | — |  | `TC22`, `TC25` | Chưa sync | QC |
+| `A03.01` | tieu-de | `Popup/Header`  | `I5413:49912;2514:153340` Tiêu đề; `I5413:49912;2514:153341` Title | — |  |  | Khớp | QC |
+| `A03.02` | dong-phu | `Popup/Header`  | `I5413:49912;2514:153342` Description | — |  | `TC21` | Khớp | QC |
+| `A03.03` | gio-bat-dau-gio-ket-thuc | `Atom/Label`  | `5413:49917` Atom/Label; `5413:49920` Atom/Label | — |  |  | Khớp | QC |
+| `A03.04` | ghi-chu | `Atom/Label`  | `5413:49924` Atom/Label | — |  | `TC24`, `TC25` | Khớp | QC |
+| `A03.05` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I5413:49926;2514:153361` Atom/Button | — |  |  | Khớp | QC |
+| `A03.06` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I5413:49926;2514:153363` Atom/Button | — |  | `TC22`, `TC25` | Khớp | QC |
 
 ### `F01` Header
 
@@ -168,7 +168,6 @@ Frame: `GV-LD-020000` · Nguồn nội dung: Figma
 **Tool báo, cần người xem**
 
 - Chưa khớp tự động (16): `A01.02`, `A01.03`, `A01.04`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.15`, `A02.01`, `A02.03`, `A02.05`, `A02.06`
-- Chưa sync (6): `A03.01`, `A03.02`, `A03.03`, `A03.04`, `A03.05`, `A03.06`
 - Phân loại cần design duyệt (1): `GV-LD-010000`
 - Thiếu prototype link đi vào (2): `GV-LD-010000`, `GV-LD-020010`
 

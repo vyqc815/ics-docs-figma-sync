@@ -179,12 +179,12 @@ Frame: `CD-KH-030341`, `CD-KH-030342` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A09.01` | tab-nhap-prompt |  |  | — |  |  | Chưa sync | QC |
-| `A09.02` | tab-chon-kien-thuc-ky-nang |  |  | — |  |  | Chưa sync | QC |
-| `A09.03` | so-cau |  |  | — |  | `TC29`, `TC31` | Chưa sync | QC |
-| `A09.04` | dang-cau-hoi |  |  | — |  |  | Chưa sync | QC |
-| `A09.05` | ghi-chu |  |  | — |  |  | Chưa sync | QC |
-| `A09.06` | huy-generate |  |  | — |  |  | Chưa sync | QC |
+| `A09.01` | tab-nhap-prompt | `Atom/Tab` State=Active, Kiểu=Khung | `5491:358445` Chế độ · Nhập prompt | — |  |  | Khớp | QC |
+| `A09.02` | tab-chon-kien-thuc-ky-nang | `Atom/Tab` State=Inactive, Kiểu=Khung | `5491:358447` Chế độ · Chọn kiến thức & kỹ năng | — |  |  | Khớp | QC |
+| `A09.03` | so-cau | `Atom/Label`  | `5491:358458` Atom/Label | — |  | `TC29`, `TC31` | Khớp | QC |
+| `A09.04` | dang-cau-hoi | `Atom/Label`  | `5491:358465` Atom/Label | — |  |  | Khớp | QC |
+| `A09.05` | ghi-chu |  | `5491:358481` Ghi chú | — |  |  | Khớp | QC |
+| `A09.06` | huy-generate | `Atom/Button` Type=Primary, Size=Medium; `Atom/Button` Type=Secondary, Size=Medium | `I5491:358433;2514:153361` Atom/Button; `I5491:358433;2514:153363` Atom/Button | — |  |  | Khớp | QC |
 
 ### `A10` Generate — Đang tạo bảng và lỗi
 
@@ -192,8 +192,8 @@ Frame: `CD-KH-030344`, `CD-KH-030346` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A10.01` | dang-tao-bang-generate |  |  | — |  |  | Chưa sync | QC |
-| `A10.02` | loi |  |  | — |  |  | Chưa sync | QC |
+| `A10.01` | dang-tao-bang-generate | `Popup/Header`  | `I5609:31773;2514:153354` Title | — |  |  | Khớp một phần | QC |
+| `A10.02` | loi |  | `5609:31815` CD-KH-030346 — Học kỳ / Kiểm tra / Generate · Lỗi; `5609:31846` Không tạo được bảng Generate. Dữ liệu bạn đã nhập vẫn được giữ, hãy thử lại. | — |  |  | Khớp một phần | QC |
 
 ### `A11` Generate — Bảng N dòng
 
@@ -202,10 +202,10 @@ Frame: `CD-KH-030343`, `CD-KH-030345` · Nguồn nội dung: QC
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
 | `A11.01` | dong-tom-tat |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A11.02` | cot | `DD/Molecule/Trigger` Size=S, State=Default | `5491:358961` STT; `5491:358963` Prompt | — |  |  | Khớp | QC |
+| `A11.02` | cot | `DD/Molecule/Trigger` Size=S, State=Default | `5491:358961` STT; `5491:358963` Prompt | — |  |  | Khớp một phần | QC |
 | `A11.03` | thanh-chon |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A11.04` | them-n-cau-da-chon |  |  | — |  | `TC37` | Chưa khớp tự động | QC |
-| `A11.05` | huy-nut | `Atom/Button` Type=Outlined, Size=Small | `5491:358909` Atom/Button | — | opens `A11` |  | Khớp | QC |
+| `A11.05` | huy-nut | `Atom/Button` Type=Outlined, Size=Small | `5491:358909` Atom/Button | — | opens `A11` |  | Khớp một phần | QC |
 
 ### `A12` Generate — Sau khi tạo
 
@@ -333,7 +333,6 @@ Frame: `CD-KH-030340` · Nguồn nội dung: Figma
 - `A12` Khác Figma CD-KH-030347: tag câu mới ghi `Mới`; requirement dùng tag `AI`.
 - Chưa khớp tự động (16): `A01.04`, `A01.05`, `A03.04`, `A03.09`, `A07.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A11.01`, `A11.03`, `A11.04`, `A12.02`, `A12.03`, `A13.01`, `A13.02`
 - Requirement ghi thiếu, Figma đã có (6): `A02.03`, `A06.12`, `A06.13`, `A06.14`, `A06.15`, `A06.16`
-- Chưa sync (8): `A09.01`, `A09.02`, `A09.03`, `A09.04`, `A09.05`, `A09.06`, `A10.01`, `A10.02`
 - Phân loại cần design duyệt (4): `CD-KH-030343`, `CD-KH-030347`, `CD-KH-060130`, `CD-KH-060160`
 - Thiếu prototype link đi vào (8): `CD-KH-030346`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060130`, `CD-KH-060140`
 - Frame Figma chưa có requirement (10): `CD-KH-030348`, `CD-KH-060121`, `CD-KH-060122`, `CD-KH-060123`, `CD-KH-060124`, `CD-KH-060125`, `CD-KH-060140`, `CD-KH-060141`, `CD-KH-060150`, `CD-KH-060160`

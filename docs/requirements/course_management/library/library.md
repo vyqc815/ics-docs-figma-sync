@@ -20,18 +20,20 @@ Menu **Thư viện** của role **CD** gồm 3 mục **Kiến thức**, **Kỹ n
 - `A01.01` **Tiêu đề / mô tả**: `Thư viện kiến thức`, `Thư viện kỹ năng`, `Thư viện bài tập` kèm một dòng mô tả như ảnh.
 - `A01.02` **Thanh tab**: Loại dữ liệu của từng thư viện (chi tiết ở khu vực tương ứng). Mặc định tab đầu tiên.
 - `A01.03` **Ô tìm kiếm**: Tìm theo các cột chính của tab (placeholder nêu rõ, vd `Tìm từ, phiên âm, nghĩa…`), không phân biệt hoa thường, bỏ khoảng trắng thừa.
-- `A01.04` **Lọc `Cấp độ`**: Một lựa chọn: `Tất cả` hoặc một cấp độ trong danh sách [Quản lý cấp độ](../../curriculum_management_requirement/level_management/level_management_requirements.md) của trung tâm. Mặc định `Tất cả`.
-- `A01.05` **Badge tổng số**: Tổng số mục khớp tìm kiếm và lọc của tab đang mở (vd `1.240 từ vựng`, `96 bài nghe`, `248 câu hỏi`).
-- `A01.06` **`Xoá bộ lọc`**: Đưa ô tìm kiếm về trống và Cấp độ về `Tất cả`.
-- `A01.07` **Cột `Cụm`**: Chip cụm kiến thức chứa mục (vd `01. Chào hỏi`); nhiều cụm thì hiện cụm đầu kèm `+N`. Chỉ có ở Thư viện kiến thức.
-- `A01.08` **Cột `Đang dùng ở`**: Kỳ và bài đang dùng mục: một bài hiện tên bài (`HK I · Bài 1`), nhiều bài hiện số bài (`HK I · 3 bài`); chưa gắn bài nào hiện `Chưa dùng` màu cam. Chỉ có ở Thư viện kiến thức, kỹ năng; Ngân hàng câu hỏi không có cột này.
-- `A01.09` **Cột `Trạng thái`**: Badge `Nháp` (cam), `Công khai` (xanh lá), `Vô hiệu` (xám). Quy tắc ở khu vực Trạng thái và xoá mục.
-- `A01.10` **Menu `⋮` cuối dòng**: Kiến thức, Kỹ năng: `Đổi trạng thái`, `Xoá`. Bài tập: không có.
-- `A01.11` **Ô trống**: Field bắt buộc đang trống hiện `— trống —` màu cam (vd Nghĩa, Phiên âm); nội dung đặc thù hiện `— chưa có file âm thanh —`, `— chưa có đoạn văn —`, `— chưa có đề bài —`, `— chưa có file —`. `0 câu` màu cam.
-- `A01.12` **Phân trang**: 50 dòng/trang; dòng chú thích `Hiển thị 1–50 trong N …`; nút số trang, `…`, trang cuối.
+- `A01.04` **Lọc `Nâng cao`**: Chỉ Thư viện kiến thức và kỹ năng: `Tất cả` (mặc định), `Có`, `Không` theo field Nâng cao của mục (**UI cần bổ sung**).
+- `A01.05` **Lọc `Cấp độ`**: Một lựa chọn: `Tất cả` hoặc một cấp độ trong danh sách [Quản lý cấp độ](../../curriculum_management_requirement/level_management/level_management_requirements.md) của trung tâm. Mặc định `Tất cả`.
+- `A01.06` **Badge tổng số**: Tổng số mục khớp tìm kiếm và lọc của tab đang mở (vd `1.240 từ vựng`, `96 bài nghe`, `248 câu hỏi`).
+- `A01.07` **`Xoá bộ lọc`**: Đưa ô tìm kiếm về trống, Cấp độ và Nâng cao về `Tất cả`.
+- `A01.08` **Cột `Cụm`**: Chip cụm kiến thức chứa mục (vd `01. Chào hỏi`); nhiều cụm thì hiện cụm đầu kèm `+N`. Chỉ có ở Thư viện kiến thức.
+- `A01.09` **Cột `Đang dùng ở`**: Kỳ và bài đang dùng mục: một bài hiện tên bài (`HK I · Bài 1`), nhiều bài hiện số bài (`HK I · 3 bài`); chưa gắn bài nào hiện `Chưa dùng` màu cam. Chỉ có ở Thư viện kiến thức, kỹ năng; Ngân hàng câu hỏi không có cột này.
+- `A01.10` **Cột `Nâng cao`**: `Có` / `Không`; chỉ có ở Thư viện kiến thức và kỹ năng, đứng trước cột `Trạng thái` (**UI cần bổ sung**).
+- `A01.11` **Cột `Trạng thái`**: Badge `Nháp` (cam), `Công khai` (xanh lá), `Vô hiệu` (xám). Quy tắc ở khu vực Trạng thái và xoá mục.
+- `A01.12` **Menu `⋮` cuối dòng**: Kiến thức, Kỹ năng: `Đổi trạng thái`, `Xoá`. Bài tập: không có.
+- `A01.13` **Ô trống**: Field bắt buộc đang trống hiện `— trống —` màu cam (vd Nghĩa, Phiên âm); nội dung đặc thù hiện `— chưa có file âm thanh —`, `— chưa có đoạn văn —`, `— chưa có đề bài —`, `— chưa có file —`. `0 câu` màu cam.
+- `A01.14` **Phân trang**: 50 dòng/trang; dòng chú thích `Hiển thị 1–50 trong N …`; nút số trang, `…`, trang cuối.
 
 - Dữ liệu chỉ thuộc trung tâm CD đang chọn ở header; đổi trung tâm thì tải lại cả 3 thư viện theo trung tâm mới.
-- Tìm kiếm và lọc Cấp độ kết hợp với nhau; đổi tab giữ nguyên Cấp độ, xoá ô tìm kiếm; đổi điều kiện thì về trang 1.
+- Tìm kiếm, lọc Cấp độ và Nâng cao kết hợp với nhau; đổi tab giữ nguyên Cấp độ, Nâng cao, xoá ô tìm kiếm; đổi điều kiện thì về trang 1.
 - Kiến thức, Kỹ năng: bấm dòng không mở form sửa; thao tác duy nhất là menu `⋮`. Bài tập: bấm dòng câu hỏi mở Chi
   tiết câu hỏi (xem khu vực Thư viện bài tập — Chi tiết câu hỏi).
 
@@ -92,12 +94,12 @@ Menu **Thư viện** của role **CD** gồm 3 mục **Kiến thức**, **Kỹ n
 **Điểm cần lưu ý:**
 
 - `A03.01` **Thanh tab**: **Mọi trung tâm** có đủ 6 tab theo thứ tự `Từ Vựng`, `Ngữ Pháp`, `Mẫu Câu`, `Hanzi`, `Kanji`, `Phát Âm`. Trung tâm có hệ chữ riêng có thêm tab `Bảng chữ` đứng trước `Phát Âm` (xem khu vực Bảng chữ). Thứ tự tab giống S1.
-- `A03.02` **Cột tab Từ vựng**: `STT`, `Từ`, `Phiên âm`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Từ, Phiên âm, Nghĩa.
-- `A03.03` **Cột tab Ngữ pháp**: `STT`, `Cấu trúc` (tên điểm ngữ pháp, dòng phụ là một ví dụ), `Ý nghĩa`, `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Cấu trúc, Ý nghĩa.
-- `A03.04` **Cột tab Mẫu câu**: `STT`, `Câu`, `Phiên âm`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Câu, Phiên âm, Nghĩa.
-- `A03.05` **Cột tab Hanzi**: `STT`, `Chữ`, `Phiên âm`, `Hán Việt`, `Nghĩa`, `Bộ thủ` (ký tự + tên, vd `亻 nhân`), `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Chữ, Phiên âm, Hán Việt, Nghĩa.
-- `A03.06` **Cột tab Kanji**: `STT`, `Chữ`, `Âm On`, `Âm Kun`, `Hán Việt`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Chữ, Âm On / Kun, Hán Việt, Nghĩa.
-- `A03.07` **Cột tab Phát âm**: `STT`, `Âm`, `Loại` (badge `Thanh mẫu` / `Vận mẫu` / `Âm tiết` theo S1), `Ví dụ` (chữ + phiên âm), `Âm thanh` (nút phát + thời lượng `mm:ss`; chưa có file hiện `— chưa có file —`), `Cụm`, `Đang dùng ở`, `Trạng thái`. Tìm theo Âm, Ví dụ.
+- `A03.02` **Cột tab Từ vựng**: `STT`, `Từ`, `Phiên âm`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Từ, Phiên âm, Nghĩa.
+- `A03.03` **Cột tab Ngữ pháp**: `STT`, `Cấu trúc` (tên điểm ngữ pháp, dòng phụ là một ví dụ), `Ý nghĩa`, `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Cấu trúc, Ý nghĩa.
+- `A03.04` **Cột tab Mẫu câu**: `STT`, `Câu`, `Phiên âm`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Câu, Phiên âm, Nghĩa.
+- `A03.05` **Cột tab Hanzi**: `STT`, `Chữ`, `Phiên âm`, `Hán Việt`, `Nghĩa`, `Bộ thủ` (ký tự + tên, vd `亻 nhân`), `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Chữ, Phiên âm, Hán Việt, Nghĩa.
+- `A03.06` **Cột tab Kanji**: `STT`, `Chữ`, `Âm On`, `Âm Kun`, `Hán Việt`, `Nghĩa`, `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Chữ, Âm On / Kun, Hán Việt, Nghĩa.
+- `A03.07` **Cột tab Phát âm**: `STT`, `Âm`, `Loại` (badge `Thanh mẫu` / `Vận mẫu` / `Âm tiết` theo S1), `Ví dụ` (chữ + phiên âm), `Âm thanh` (nút phát + thời lượng `mm:ss`; chưa có file hiện `— chưa có file —`), `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`. Tìm theo Âm, Ví dụ.
 - `A03.08` **Badge tổng số**: `N từ vựng`, `N ngữ pháp`, `N mẫu câu`, `N chữ Hán`, `N chữ Kanji`, `N mục phát âm`.
 
 - Thêm và sửa kiến thức làm tại S1 của khoá học; S1 ghi thẳng vào bản ghi thư viện nên Thư viện luôn hiển thị dữ liệu mới nhất.
@@ -168,10 +170,10 @@ Menu **Thư viện** của role **CD** gồm 3 mục **Kiến thức**, **Kỹ n
 
 **Điểm cần lưu ý:**
 
-- `A05.01` **Cột tab Nghe**: `STT`, `Bài nghe` (tiêu đề + mô tả), `Âm thanh` (nút phát, thanh tiến độ, thời lượng `mm:ss`; chưa có file hiện `— chưa có file âm thanh —`), `Số câu hỏi`, `Đang dùng ở`, `Trạng thái`.
-- `A05.02` **Cột tab Đọc**: `STT`, `Bài đọc` (tiêu đề + mô tả), `Đoạn văn` (một dòng, dài thì cắt `…`; chưa có hiện `— chưa có đoạn văn —`), `Số câu hỏi`, `Đang dùng ở`, `Trạng thái`.
-- `A05.03` **Cột tab Viết**: `STT`, `Bài viết` (tiêu đề + mô tả), `Đề bài` (một dòng; chưa có hiện `— chưa có đề bài —`), `Số câu hỏi`, `Đang dùng ở`, `Trạng thái`.
-- `A05.04` **Cột tab Nói**: `STT`, `Bài nói` (tiêu đề + mô tả), `Đề bài` (như tab Viết), `Số câu hỏi`, `Đang dùng ở`, `Trạng thái`.
+- `A05.01` **Cột tab Nghe**: `STT`, `Bài nghe` (tiêu đề + mô tả), `Âm thanh` (nút phát, thanh tiến độ, thời lượng `mm:ss`; chưa có file hiện `— chưa có file âm thanh —`), `Số câu hỏi`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`.
+- `A05.02` **Cột tab Đọc**: `STT`, `Bài đọc` (tiêu đề + mô tả), `Đoạn văn` (một dòng, dài thì cắt `…`; chưa có hiện `— chưa có đoạn văn —`), `Số câu hỏi`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`.
+- `A05.03` **Cột tab Viết**: `STT`, `Bài viết` (tiêu đề + mô tả), `Đề bài` (một dòng; chưa có hiện `— chưa có đề bài —`), `Số câu hỏi`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`.
+- `A05.04` **Cột tab Nói**: `STT`, `Bài nói` (tiêu đề + mô tả), `Đề bài` (như tab Viết), `Số câu hỏi`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`.
 - `A05.05` **`Số câu hỏi`**: Số câu của bài kỹ năng; `0 câu` hiển thị màu cam.
 - `A05.06` **Phát âm thanh**: Bấm nút phát nghe ngay trong bảng, thanh tiến độ chạy theo; chỉ phát một bài tại một thời điểm.
 - `A05.07` **Badge tổng số**: `N bài nghe`, `N bài đọc`, `N bài viết`, `N bài nói`.
@@ -312,8 +314,8 @@ Menu **Thư viện** của role **CD** gồm 3 mục **Kiến thức**, **Kỹ n
 ```text
 CD chọn Thư Viện → Kiến Thức / Kỹ Năng / Bài Tập
       → Hệ thống tải dữ liệu thư viện của trung tâm đang chọn, tab đầu tiên, trang 1
-      → CD đổi tab / nhập tìm kiếm / chọn Cấp độ → bảng và badge tổng số cập nhật, về trang 1
-      → Xoá bộ lọc: tìm kiếm trống, Cấp độ Tất cả
+      → CD đổi tab / nhập tìm kiếm / chọn Cấp độ / chọn Nâng cao → bảng và badge tổng số cập nhật, về trang 1
+      → Xoá bộ lọc: tìm kiếm trống, Cấp độ và Nâng cao Tất cả
 ```
 
 **Flow 2 / REQ04: Đổi trạng thái mục kiến thức, kỹ năng**
@@ -372,13 +374,13 @@ CD mở Thư Viện → Bài Tập → tab Ngân Hàng Câu Hỏi → bấm mộ
 | Mã | Tên yêu cầu | Mô tả |
 |---|---|---|
 | REQ01 | Phạm vi dữ liệu | Thư viện chỉ hiển thị dữ liệu của trung tâm CD đang chọn ở header; đổi trung tâm thì tải lại theo trung tâm mới. |
-| REQ02 | Tìm kiếm và lọc | Chỉ có ô tìm kiếm (theo cột chính của tab) và lọc `Cấp độ` (một lựa chọn, mặc định `Tất cả`), kết hợp với nhau; `Xoá bộ lọc` đưa về mặc định; phân trang 50 dòng/trang; badge tổng số theo kết quả; ô trống hiện `— trống —` / `— chưa có … —` màu cam. |
+| REQ02 | Tìm kiếm và lọc | Ô tìm kiếm (theo cột chính của tab), lọc `Cấp độ` (một lựa chọn, mặc định `Tất cả`) và lọc `Nâng cao` (`Tất cả / Có / Không`, chỉ Kiến thức và Kỹ năng), kết hợp với nhau; `Xoá bộ lọc` đưa về mặc định; phân trang 50 dòng/trang; badge tổng số theo kết quả; ô trống hiện `— trống —` / `— chưa có … —` màu cam. |
 | REQ03 | Đang dùng ở | Hiển thị kỳ và bài đang dùng mục: một bài hiện tên bài, nhiều bài hiện số bài; chưa gắn bài nào hiển thị `Chưa dùng`. |
 | REQ04 | Trạng thái mục kiến thức, kỹ năng | `Nháp` → `Công khai` / `Vô hiệu`; `Công khai` → `Vô hiệu`; `Vô hiệu` → `Công khai`; không về `Nháp`; menu con chỉ hiện trạng thái được phép. Mục `Vô hiệu` không được thêm mới vào bài; bài đã gắn trước đó vẫn dùng. |
 | REQ05 | Xoá | Chỉ xoá mềm mục `Nháp` / `Vô hiệu` chưa dùng ở bài nào, qua popup xác nhận; mục `Công khai` hoặc đang dùng thì `Xoá` mờ kèm tooltip, backend từ chối request. |
-| REQ06 | Thư viện kiến thức | Mọi trung tâm có đủ 6 tab Từ vựng, Ngữ pháp, Mẫu câu, Hanzi, Kanji, Phát âm (cộng Bảng chữ theo REQ07); cột theo bảng Giải thích thành phần kèm `Cụm`, `Đang dùng ở`, `Trạng thái`; Loại của Phát âm theo S1; thêm / sửa tại S1. |
+| REQ06 | Thư viện kiến thức | Mọi trung tâm có đủ 6 tab Từ vựng, Ngữ pháp, Mẫu câu, Hanzi, Kanji, Phát âm (cộng Bảng chữ theo REQ07); cột theo bảng Giải thích thành phần kèm `Cụm`, `Đang dùng ở`, `Nâng cao`, `Trạng thái`; Loại của Phát âm theo S1; thêm / sửa tại S1. |
 | REQ07 | Bảng chữ | Tab chỉ ở trung tâm có hệ chữ riêng (Sakumi: Hiragana / Katakana, 104 mục, 1 dòng = cặp chữ; Saechang: Hangul, 40 jamo); hai dạng xem danh sách và lưới; lưới có panel Chi tiết chữ và `Nghe phát âm`; tìm kiếm / Cấp độ áp dụng cả hai dạng; dạng lưới chỉ có ở Thư viện. |
-| REQ08 | Thư viện kỹ năng | Tab Nghe, Đọc, Viết, Nói; cột nội dung (âm thanh, đoạn văn, đề bài), số câu hỏi, đang dùng ở, trạng thái; phát âm thanh trong bảng, một bài tại một thời điểm; thêm / sửa tại S6. |
+| REQ08 | Thư viện kỹ năng | Tab Nghe, Đọc, Viết, Nói; cột nội dung (âm thanh, đoạn văn, đề bài), số câu hỏi, đang dùng ở, Nâng cao, trạng thái; phát âm thanh trong bảng, một bài tại một thời điểm; thêm / sửa tại S6. |
 | REQ09 | Thư viện bài tập | 3 tab Ngân hàng câu hỏi, BTVN Mẫu, Kiểm Tra Mẫu; không đổi trạng thái, không xoá câu; Ngân hàng câu hỏi không có cột `Đang dùng ở`, cột `Kiến thức / Kỹ năng` chỉ ghi `Kiến thức` hoặc `Kỹ năng`; trạng thái câu hỏi lấy theo khoá học chứa câu (`Chưa dùng` khi chưa thuộc bài nào); tag `AI` cho câu AI chưa được sửa; hai tab mẫu không có cột Tổng điểm. |
 | REQ10 | Chi tiết câu hỏi | Bấm câu ở Ngân hàng câu hỏi mở Chi tiết câu hỏi; sửa được khi câu `Chưa dùng` hoặc mọi khoá học chứa câu đều đang `Nháp`, khác thì chỉ xem (học viên có thể đã làm câu) (banner, ẩn nút sửa, `Đóng`); sửa là sửa câu gốc, mọi bộ BTVN / bài kiểm tra dùng câu thấy nội dung mới; câu Nghe có kịch bản theo lượt và đối tượng, câu Đọc có văn bản theo câu và từ khoá (chọn được từ có sẵn ở S1); sửa kịch bản / giọng câu Nghe thì tạo lại audio; backend kiểm tra lại điều kiện sửa. |
 
@@ -421,7 +423,8 @@ CD mở Thư Viện → Bài Tập → tab Ngân Hàng Câu Hỏi → bấm mộ
 | Case 10: Không xoá mục đang dùng | Medium | EX03 / REQ05 | CD | Mục `Vô hiệu`, đang dùng ở 2 bài | **Given** mở menu `⋮`<br>**When** hover `Xoá`<br>**Then** `Xoá` mờ, tooltip gỡ khỏi bài trước | - Request xoá trực tiếp bị từ chối, Toast `Cảnh Báo` |
 | Case 11: Huỷ xoá | Medium | Flow 3 | CD | Popup xoá đang mở | **Given** bấm `Huỷ`<br>**When** popup đóng<br>**Then** mục giữ nguyên | - Không Toast |
 | Case 12: Đủ tab ở mọi trung tâm | High | REQ06 | CD | Trung tâm Đắc Nhân, Sakumi, Saechang, Creative English | **Given** mở Thư viện kiến thức ở từng trung tâm<br>**When** xem thanh tab<br>**Then** cả 4 trung tâm đều có Từ Vựng, Ngữ Pháp, Mẫu Câu, Hanzi, Kanji, Phát Âm | - Sakumi, Saechang có thêm `Bảng chữ`; Đắc Nhân, Creative English không có |
-| Case 13: Cột theo tab | Medium | REQ06 | CD | Trung tâm Đắc Nhân có dữ liệu đủ 5 tab | **Given** lần lượt mở Ngữ Pháp, Hanzi, Phát Âm<br>**When** render bảng<br>**Then** cột đúng bảng Giải thích thành phần | - Hanzi có Bộ thủ; Phát âm có Loại, Âm thanh |
+| Case 13: Cột theo tab | Medium | REQ06 | CD | Trung tâm Đắc Nhân có dữ liệu đủ 5 tab | **Given** lần lượt mở Ngữ Pháp, Hanzi, Phát Âm<br>**When** render bảng<br>**Then** cột đúng bảng Giải thích thành phần | - Hanzi có Bộ thủ; Phát âm có Loại, Âm thanh<br>- Mọi tab có cột Nâng cao trước Trạng thái |
+| Case 13a: Lọc Nâng cao | Medium | REQ02 | CD | 5 từ Nâng cao = Có, 2 bài nghe Nâng cao = Có | **Given** chọn `Nâng cao: Có` ở Kiến thức rồi Kỹ năng<br>**When** lọc<br>**Then** 5 từ; 2 bài nghe | - Xoá bộ lọc đưa về `Tất cả`<br>- Thư viện bài tập không có lọc này |
 | Case 14: Sửa ở S1 hiển thị ở Thư viện | High | REQ06 | CD | Từ `你好` dùng ở khoá HSK1 | **Given** sửa Nghĩa của `你好` ở S1<br>**When** mở Thư viện kiến thức<br>**Then** dòng `你好` hiện Nghĩa mới | - Thư viện không có form sửa |
 | Case 14a: Tab rỗng | Low | REQ06 | CD | Đắc Nhân chưa có mục Kanji | **Given** mở tab Kanji<br>**When** bảng tải xong<br>**Then** hiện `Bảng dữ liệu này đang trống`, badge `0 chữ Kanji` | - Tab vẫn bấm được |
 | Case 15: Tab Bảng chữ theo trung tâm | High | REQ07 | CD | CD phụ trách Sakumi, Saechang, Đắc Nhân | **Given** mở Thư viện kiến thức ở từng trung tâm<br>**When** xem thanh tab<br>**Then** Sakumi và Saechang có `Bảng chữ` trước `Phát Âm`; Đắc Nhân không có | - Nội dung Bảng chữ đúng hệ chữ của trung tâm |

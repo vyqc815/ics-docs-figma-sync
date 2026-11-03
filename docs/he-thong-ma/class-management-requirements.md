@@ -171,12 +171,12 @@ Frame: `ADM-LOP-010020`, `ADM-LOP-010050` (tool đoán:ADM-LOP-010020, ADM-LOP-0
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A08.01` | noi-dung |  |  | — |  | `TC51`, `TC54` | Chưa khớp tự động | QC |
-| `A08.02` | thoi-gian |  |  | — |  | `TC51`, `TC54` | Chưa khớp tự động | QC |
-| `A08.03` | do-uu-tien |  |  | — |  | `TC51` | Chưa khớp tự động | QC |
-| `A08.04` | nguoi-phu-trach |  |  | — |  | `TC51`, `TC55` | Chưa khớp tự động | QC |
-| `A08.05` | theo-doi |  |  | — |  | `TC51`, `TC53`, `TC54`, `TC55` | Chưa khớp tự động | QC |
-| `A08.06` | ghi-chu |  |  | — |  | `TC51`, `TC54` | Chưa khớp tự động | QC |
+| `A08.01` | noi-dung | `Atom/Label`  | `1991:23454` Atom/Label | — |  | `TC51`, `TC54` | Khớp một phần | QC |
+| `A08.02` | thoi-gian | `Atom/Label`  | `1991:23458` Atom/Label | — |  | `TC51`, `TC54` | Khớp một phần | QC |
+| `A08.03` | do-uu-tien | `Atom/Label`  | `1991:23465` Atom/Label | — |  | `TC51` | Khớp một phần | QC |
+| `A08.04` | nguoi-phu-trach | `Atom/Label`  | `1991:23470` Atom/Label | — |  | `TC51`, `TC55` | Khớp một phần | QC |
+| `A08.05` | theo-doi | `Atom/Label`  | `1991:23547` Atom/Label | — |  | `TC51`, `TC53`, `TC54`, `TC55` | Khớp một phần | QC |
+| `A08.06` | ghi-chu | `Atom/Label`  | `1991:23557` Atom/Label | — |  | `TC51`, `TC54` | Khớp một phần | QC |
 | `A08.07` | huy | `Atom/Button` Type=Secondary, Size=Medium | `I2527:167755;2514:153361` Atom/Button | — |  |  | Khớp | QC |
 | `A08.08` | xac-nhan | `Atom/Button` Type=Primary, Size=Medium | `I2527:167755;2514:153363` Atom/Button | — |  | `TC53`, `TC55` | Khớp | QC |
 
@@ -319,7 +319,7 @@ Frame: `ADM-LOP-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (36): `A02.03`, `A02.11`, `A02.19`, `A02.20`, `A02.21`, `A02.22`, `A02.23`, `A02.24`, `A02.25`, `A02.26`, `A02.28`, `A02.29`, `A03.06`, `A03.07`, `A04.09`, `A04.17`, `A04.24`, `A05.12`, `A05.15`, `A05.16`, `A05.18`, `A05.19`, `A05.20`, `A05.21`, `A05.22`, `A05.23`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A09.01`, `A09.02`, `A09.03`, `A09.04`
+- Chưa khớp tự động (30): `A02.03`, `A02.11`, `A02.19`, `A02.20`, `A02.21`, `A02.22`, `A02.23`, `A02.24`, `A02.25`, `A02.26`, `A02.28`, `A02.29`, `A03.06`, `A03.07`, `A04.09`, `A04.17`, `A04.24`, `A05.12`, `A05.15`, `A05.16`, `A05.18`, `A05.19`, `A05.20`, `A05.21`, `A05.22`, `A05.23`, `A09.01`, `A09.02`, `A09.03`, `A09.04`
 - Frame Figma chưa có requirement (6): `ADM-LOP-010002`, `ADM-LOP-010004`, `ADM-LOP-010010`, `ADM-LOP-010020`, `ADM-LOP-010040`, `ADM-LOP-010050`
 - Thiếu prototype link đi vào (4): `ADM-LOP-010010`, `ADM-LOP-010020`, `ADM-LOP-010040`, `ADM-LOP-010050`
 - Testcase không trỏ REQ (5): `TC59`, `TTC01`, `TTC02`, `TTC03`, `TTC04`

@@ -160,9 +160,9 @@
    "content": "figma",
    "nodeId": "689:14188",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-dm-010057",
    "link": "/quan-ly-danh-muc?state=CD-DM-010057",
    "dark": "CD-DM-010057-DK",
    "openedFrom": [],
@@ -183,9 +183,9 @@
    "content": "figma",
    "nodeId": "1854:20955",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-dm-010060",
    "link": "/quan-ly-danh-muc?popup=CD-DM-010060",
    "dark": "CD-DM-010060-DK",
    "openedFrom": [],
@@ -206,9 +206,9 @@
    "content": "figma",
    "nodeId": "1854:21305",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-dm-010062",
    "link": "/quan-ly-danh-muc?state=CD-DM-010062",
    "dark": "CD-DM-010062-DK",
    "openedFrom": [],
@@ -266,8 +266,11 @@
       }
      ],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "ID",
+      "CCAALLMMM"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-DC.A02.02",
@@ -276,11 +279,25 @@
      "spec": "Bắt buộc, không giới hạn độ dài nghiệp vụ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010060": [
+       {
+        "term": "Tên khóa học",
+        "figmaId": "6025:210757",
+        "layer": "Tên khoá học",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CM-DC.A02.03",
@@ -292,8 +309,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Mô tả khóa học"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-DC.A02.04",
@@ -309,8 +328,11 @@
       "CM-DC.TC03",
       "CM-DC.TC12"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Cấp độ",
+      "Quản lý cấp độ"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-DC.A02.05",
@@ -322,8 +344,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Số kỳ",
+      "1:n"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-DC.A02.06",
@@ -332,7 +357,32 @@
      "spec": "`Nháp` (mặc định) / `Công Khai` / `Vô hiệu`, theo rule chuyển trạng thái của khóa học (`course_management.md` REQ05): `Nháp → Công Khai` (qua popup Công khai khoá học), `Công Khai ↔ Vô hiệu`, không về `Nháp`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-dm-010060": [
+       {
+        "term": "Trạng thái",
+        "figmaId": "6025:210789",
+        "layer": "Sau khi xác nhận, danh mục sẽ chuyển sang trạng thái Công khai và không được chỉnh sửa ID này",
+        "confidence": "thap",
+        "region": "Aside - Warning Alert Box",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Nháp",
+        "figmaId": "6025:210782",
+        "layer": "Nháp",
+        "confidence": "cao",
+        "region": "Meta Summary Section:margin",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [
       {
        "type": "governed-by",
@@ -346,7 +396,7 @@
       "CM-DC.TC07"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "CM-DC.A02.07",
@@ -358,8 +408,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Tìm kiếm",
+      "2 giây"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },

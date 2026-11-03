@@ -802,7 +802,7 @@
      "id": "TR-CI.A03.04",
      "name": "luong-buoi-day",
      "label": "Lương Buổi Dạy",
-     "spec": "Tổng lương các buổi `Hoàn thành` **có lịch gắn** của giáo viên tại lớp trong khoảng lọc; mỗi buổi = lương/buổi của giáo viên tại lớp (cột `LƯƠNG/GIỜ` ở Chi tiết giáo viên) tại thời điểm hoàn thành và được lưu cho buổi đó; đổi lương/buổi về sau không tính lại buổi đã hoàn thành. Mức mới chỉ áp dụng cho các buổi hoàn thành sau thời điểm thay đổi. Buổi không gắn lịch = 0. Định dạng `1.000.000 VNĐ`.",
+     "spec": "Tổng lương các buổi `Hoàn thành` **có lịch gắn** của giáo viên tại lớp trong khoảng lọc; mỗi buổi = `Lương/giờ` của buổi (mức chỉnh riêng tại popup lịch nếu có, nếu không là `Lương/giờ` trong hồ sơ giáo viên) × thời lượng buổi (giờ), chốt tại thời điểm hoàn thành và lưu cho buổi đó; đổi `Lương/giờ` về sau không tính lại buổi đã hoàn thành. Buổi không gắn lịch = 0. Định dạng `1.000.000 VNĐ`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {

@@ -6,9 +6,10 @@ Dữ liệu theo trung tâm CD đang chọn ở header.
 Mỗi bài kỹ năng là **bản ghi của Thư viện kỹ năng**: S6 tham chiếu bản ghi thư viện; thêm mới hoặc sửa tại S6 ghi
 thẳng vào thư viện, mọi khoá đang dùng bản ghi đó thấy nội dung mới.
 
-**Tổ chức theo cụm, không theo bài học:** giống Kiến thức (S1), mỗi tab chia bài kỹ năng theo **cụm** (panel Cụm bên
-phải). Màn S6 không hiển thị, không lọc và không gán **bài học**; bài kỹ năng chỉ được thêm vào bài học tại màn Chi tiết
-bài học, theo cụm hoặc theo từng bài (xem khu vực Thêm / gỡ bài kỹ năng trong Chi tiết bài học).
+**Tổ chức theo cụm, cụm liên kết bài học:** giống Kiến thức (S1), mỗi tab chia bài kỹ năng theo **cụm** (panel Cụm bên
+phải); số cụm mỗi tab sinh từ Số buổi của loại đó ở Tổng quan (S2). Mỗi cụm liên kết **đúng 1 bài học**, mỗi bài học
+nhận **tối đa 1 cụm mỗi loại** (BE bắt trùng). Chi tiết bài học chỉ **hiển thị** bài của cụm đã liên kết, không chọn
+từng bài (xem khu vực Cụm liên kết với Chi tiết bài học).
 
 **Quyền sửa theo trạng thái khoá học:** chỉ sửa được khi khoá học đang `Nháp`. Khoá học `Công Khai` / `Vô hiệu`: màn
 này chỉ đọc (ẩn / disable mọi thao tác thêm, sửa, gỡ, AI); backend từ chối mọi request ghi.
@@ -56,13 +57,15 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - `A02.03` **`Bài nghe`**: Dòng 1 **Tên bài** (ngôn ngữ đích, vd `对话：初次见面`), dòng 2 **Mô tả** tiếng Việt, cắt `…` khi dài; hover hiện đủ. Bấm tên mở drawer Chi tiết.
 - `A02.04` **`Âm thanh`**: Nút phát, thanh tiến độ, thời lượng `mm:ss` (≥ 1 giờ hiện `h:mm:ss`). Chưa có file hiện `— chưa có file —` màu cam. Chỉ phát một bài tại một thời điểm, phát bài khác thì bài đang phát dừng.
 - `A02.05` **`Cụm`**: Nhãn cụm duy nhất của bài; bấm nhãn mở popup Thêm vào cụm / Gỡ khỏi cụm của bài đó. Không thuộc cụm nào hiện `Chưa phân cụm`. Không có nhãn `+N`.
-- `A02.06` **Menu `⋮`**: `Mở chi tiết`, `Thêm vào cụm / Gỡ khỏi cụm`, `Transcript AI`, `Gỡ khỏi khoá`.
-- `A02.07` **Nhãn AI dưới tên**: `AI · đang tạo transcript`, `AI · đã tạo, chờ duyệt`, `? <lý do nghi sai>` (xem khu vực AI).
+- `A02.06` **`Nâng cao`**: `Có` / `Không` (mặc định `Không`); `Có` = bài nâng cao, app không đẩy lên bước học chính, vẫn hiện trong danh sách luyện (**UI cần bổ sung**).
+- `A02.07` **Menu `⋮`**: `Mở chi tiết`, `Thêm vào cụm / Gỡ khỏi cụm`, `Transcript AI`, `Gỡ khỏi khoá`.
+- `A02.08` **Nhãn AI dưới tên**: `AI · đang tạo transcript`, `AI · đã tạo, chờ duyệt`, `? <lý do nghi sai>` (xem khu vực AI).
 
 - Bài **thiếu thông tin** khi thiếu bất kỳ: file âm thanh, mô tả, hoặc chưa có câu hỏi nào; tên dòng có chấm cam và
   được đếm vào badge `N thiếu thông tin`.
 - Thời lượng đọc từ file lúc tải lên, không giới hạn độ dài.
 - Bảng không có cột `Bài học` (Figma còn vẽ cột này, **UI cần cập nhật** thành cột `Cụm`).
+- Bảng hiện **đủ mọi field** của bài (Tên, Mô tả, Âm thanh, Số lượt kịch bản, Số câu hỏi, Nâng cao, Trạng thái, Cụm), **cuộn ngang**; ghim checkbox, STT, `Bài nghe` bên trái, `Cụm` và ⋮ bên phải (**UI cần cập nhật**).
 
 ### Trang 3: CD-KH-050200 — Bảng bài đọc
 ![Trang 3](./images/02-doc.png)
@@ -78,6 +81,7 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - `A03.01` **`STT`, checkbox, `Cụm`, menu `⋮`**: Như bảng Nghe; menu `⋮` thay `Transcript AI` bằng `Tạo câu hỏi bằng AI`.
 - `A03.02` **`Bài đọc`**: Tên bài (ngôn ngữ đích) + mô tả tiếng Việt, như cột `Bài nghe`.
 - `A03.03` **`Đoạn văn`**: Tối đa 2 dòng, dài thì cắt `…`; chưa có hiện `— chưa có đoạn văn —` màu cam.
+- `A03.04` **Cột khác**: `Audio đọc mẫu`, `Số câu hỏi`, `Từ vựng liên quan` (số từ), `Nâng cao`, `Trạng thái`, `Cụm`; bảng cuộn ngang, ghim như bảng Nghe.
 
 - Bài đọc **thiếu thông tin** khi thiếu bất kỳ: đoạn văn, mô tả, hoặc chưa có câu hỏi. Audio đọc mẫu không bắt buộc,
   không tính thiếu.
@@ -87,26 +91,28 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 **Mô tả:**
 
 - Panel bên phải của mỗi tab quản lý cụm của **kỹ năng đó** (Nghe, Đọc, Viết, Nói mỗi tab một bộ cụm riêng), giống
-  Panel Cụm của Kiến thức (S1): xem số bài mỗi cụm, chọn cụm để lọc bảng, tạo cụm theo Số cụm, thêm / đổi tên / xoá cụm,
+  Panel Cụm của Kiến thức (S1): xem số bài mỗi cụm, chọn cụm để lọc bảng, đổi tên cụm, liên kết cụm với bài học,
+  Chia cụm bằng AI; số cụm sinh từ Số buổi của loại ở Tổng quan (S2). **UI cần bổ sung** (Figma đang vẽ panel `Học kỳ & bài học`).
   Chia cụm bằng AI. **UI cần bổ sung** (Figma đang vẽ panel `Học kỳ & bài học`).
 
 **Điểm cần lưu ý:**
 
 - `A04.01` **`Tất cả cụm` + badge `N cụm`**: Tiêu đề panel và số cụm hiện có; chọn để xem mọi bài của tab (mặc định).
-- `A04.02` **`Số cụm`**: Mặc định `0`. **Chỉ nhập được khi chưa có cụm**: CD nhập N thì hệ thống tạo N cụm rỗng tên `Chủ đề 1` … `Chủ đề N`. Chưa có cụm thì panel hiện `Chưa có cụm. Nhập Số cụm để tạo các cụm rỗng "Chủ đề 1 … N".`. Đã có cụm thì ô chỉ đọc, hiện số cụm hiện tại; thêm / bớt cụm bằng `Thêm cụm mới` và menu ⋮ của cụm.
+- `A04.02` **`Số cụm`**: **Chỉ đọc**, = tổng `Số buổi` của các dòng Nội dung buổi học có Loại = kỹ năng của tab ở Tổng quan (S2); ghi chú `Theo Tổng quan (S2) · N buổi`. Hệ thống tự tạo đủ cụm rỗng `Chủ đề 1` … `Chủ đề N`; CD đổi tên, chia bài, liên kết bài học. Chưa có buổi thì panel hiện `Chưa có cụm. Nhập Số buổi cho loại <Nghe> ở Tổng quan (S2) để tạo cụm.`
 - `A04.03` **`Chia cụm bằng AI`**: AI đề xuất chia các bài của tab vào cụm theo chủ đề nội dung; kết quả chờ duyệt, CD áp dụng hoặc bỏ, theo cùng quy tắc popup Chia cụm bằng AI của S1.
-- `A04.04` **Dòng cụm**: `NN. <tên cụm>` + badge số bài của cụm (0 hiện xám); chọn để lọc bảng trái, tiêu đề bảng đổi thành tên cụm. Menu ⋮: `Đổi tên`, `Xoá cụm`.
-- `A04.05` **`Chưa phân cụm`**: Badge cam = số bài chưa thuộc cụm nào; chọn để lọc.
-- `A04.06` **`Thêm cụm mới`**: Thêm 1 cụm rỗng ở cuối, đặt tên ngay tại dòng.
+- `A04.04` **Dòng cụm**: `NN. <tên cụm>` + badge số bài của cụm (0 hiện xám) + chip bài học đã liên kết (`HK I · Bài 3`) hoặc nhãn cam `Chưa liên kết`; chọn để lọc bảng trái, tiêu đề bảng đổi thành tên cụm. Menu ⋮: `Đổi tên`, `Liên kết bài học`. Không có `Xoá cụm`.
+- `A04.05` **Popup `Liên kết bài học`**: Như S1: cây `<kỳ> › Bài N`, radio chọn đúng 1 bài; bài đã có cụm **cùng loại kỹ năng** mờ kèm `Đã liên kết: <cụm>`; `Bỏ liên kết`; `Huỷ` / `Lưu`.
+- `A04.06` **`Chưa phân cụm`**: Badge cam = số bài chưa thuộc cụm nào; chọn để lọc.
+- `A04.07` **`Thêm cụm mới`**: **Bỏ**: số cụm chỉ do S2 quyết định.
 
 - Một bài kỹ năng thuộc **tối đa 1 cụm** của tab đó (hoặc `Chưa phân cụm`); số đếm cập nhật ngay sau thêm / gỡ bài, thêm / gỡ cụm.
-- Xoá cụm chỉ xoá cụm, không gỡ bài khỏi khoá; các bài của cụm về `Chưa phân cụm`. Có popup xác nhận nêu số bài
-  của cụm; bài của cụm đang dùng ở bài học thì popup Xoá cụm / Gỡ khỏi cụm thêm cảnh báo `N bài đang dùng ở các bài học:`
-  + danh sách bài học (**UI cần bổ sung**); xác nhận → các bài kỹ năng đó **tự gỡ khỏi các bài học** liên quan (xoá cụm: mọi bài của cụm).
+- Không xoá cụm tại S6; bớt cụm bằng cách giảm Số buổi của loại ở S2 (chỉ được khi cụm cuối rỗng và chưa liên kết).
+- **Liên kết bài học:** một cụm ↔ đúng 1 bài học; một bài học nhận tối đa 1 cụm Nghe, 1 cụm Đọc, 1 cụm Viết, 1 cụm Nói.
+  BE kiểm tra trùng khi lưu (EX13); đổi bài = gỡ liên kết cũ. Thêm / gỡ / chuyển bài giữa cụm không cần cảnh báo, bài học
+  phản ánh cụm ngay.
 - Cụm đang chọn là giá trị mặc định cho `Thêm vào cụm` ở popup thêm / tạo, Nhập nhanh và Import; đang ở `Tất cả cụm` /
   `Chưa phân cụm` thì bài mới vào `Chưa phân cụm`.
-- Màn S6 không hiển thị bài học; cụm không liên kết bài học. Thêm bài vào cụm **không** tự vào bài học (CD thêm thủ
-  công ở Chi tiết bài học). Gỡ bài khỏi cụm / xoá cụm → gỡ khỏi bài học (có cảnh báo, xem trên).
+- Cụm là mắt xích duy nhất giữa bài kỹ năng và bài học; màn S6 hiện liên kết qua chip bài học trên dòng cụm.
 
 ### Trang 5: Tìm kiếm, lọc và sắp xếp
 **Mô tả:**
@@ -119,9 +125,10 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - `A05.02` **Cụm**: Chọn ở panel Cụm (`Tất cả cụm`, một cụm, hoặc `Chưa phân cụm`); không có dropdown lọc riêng trên toolbar.
 - `A05.03` **`Sắp xếp`**: `Thứ tự thêm` (mặc định), `Tên A–Z`, `Mới cập nhật`, `Thứ tự trong cụm` (chỉ khi đang xem 1 cụm).
 - `A05.04` **`Trạng thái`**: `Tất cả` (mặc định), `Nháp`, `Công khai`, `Vô hiệu` của bản ghi thư viện.
+- `A05.05` **`Nâng cao`**: `Tất cả` (mặc định), `Có`, `Không` (**UI cần bổ sung**).
 
 - Đổi điều kiện đưa về trang 1; badge trên tiêu đề tính theo cụm đang chọn, không đổi theo tìm / Trạng thái.
-- Kéo thả chỉ đổi **thứ tự bài trong cụm** (dùng khi thêm cụm vào bài học); các kiểu sắp xếp khác chỉ để xem.
+- Kéo thả chỉ đổi **thứ tự bài trong cụm** (là thứ tự hiển thị ở bài học liên kết); các kiểu sắp xếp khác chỉ để xem.
 - Không có kết quả hiện `Không tìm thấy bài nghe phù hợp` kèm nút `Xoá bộ lọc`.
 
 ### Trang 6: CD-KH-050110, CD-KH-070301 — Drawer Chi tiết bài nghe
@@ -139,11 +146,12 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - `A06.01` **Tiêu đề**: `Chi tiết bài nghe` + dòng phụ `Bài nghe NN`; `×` đóng, hỏi xác nhận nếu có thay đổi chưa lưu.
 - `A06.02` **`Tên bài` ***: Bắt buộc, ngôn ngữ đích, tối đa 200 ký tự.
 - `A06.03` **`Mô tả` ***: Bắt buộc để đủ thông tin, tiếng Việt, tối đa 500 ký tự. Trống vẫn lưu được nhưng bài tính thiếu thông tin.
-- `A06.04` **`Cụm`**: Chỉ đọc: chip cụm bài đang thuộc (hoặc `Chưa phân cụm`); `Sửa cụm` mở popup Thêm vào cụm / Gỡ khỏi cụm. Drawer không có field `Bài học`.
-- `A06.05` **`Âm thanh`**: Trình phát `00:00 / mm:ss`; `Tải lên` / `Thay` / `Xoá`; chỉ `.mp3`, tối đa 50MB (theo `file_limits.json`, **khác Figma** ghi `MP3 / WAV · 25 MB`).
-- `A06.06` **`Kịch bản · N lượt`**: Danh sách lượt thoại theo thứ tự: nhãn người nói (`A`, `B`…), câu gốc, `Phiên âm ·`, `Dịch ·`, mốc `start – end` theo audio (`mm:ss.s`, **UI cần bổ sung**). Thêm / sửa / xoá / kéo thả lượt; lượt có giá trị AI chờ duyệt viền nét đứt cam với `✓ Duyệt` / `↺ Hoàn tác`.
-- `A06.07` **`Câu hỏi`**: Tóm tắt `N câu hỏi · <loại> k · …` và `Mở chi tiết ›` dẫn sang màn Chi tiết câu hỏi của Thư viện bài tập (`CD-KH-070301` Listening); chưa có câu hiện `0 câu hỏi` màu cam.
-- `A06.08` **Footer**: Ghi chú `Lưu = sửa bản ghi thư viện; mọi khoá dùng bài này thấy nội dung mới`; `Huỷ`, `Lưu`.
+- `A06.04` **`Cụm`**: Chỉ đọc: chip cụm bài đang thuộc (hoặc `Chưa phân cụm`) kèm bài học mà cụm liên kết; `Sửa cụm` mở popup Thêm vào cụm / Gỡ khỏi cụm. Drawer không có field `Bài học`.
+- `A06.05` **`Nâng cao`**: Toggle `Không` (mặc định) / `Có`; cùng ý nghĩa field Nâng cao của Kiến thức (S1): `Có` = bài nâng cao, không đẩy lên bước học chính. (**UI cần bổ sung**)
+- `A06.06` **`Âm thanh`**: Trình phát `00:00 / mm:ss`; `Tải lên` / `Thay` / `Xoá`; chỉ `.mp3`, tối đa 50MB (theo `file_limits.json`, **khác Figma** ghi `MP3 / WAV · 25 MB`).
+- `A06.07` **`Kịch bản · N lượt`**: Danh sách lượt thoại theo thứ tự: nhãn người nói (`A`, `B`…), câu gốc, `Phiên âm ·`, `Dịch ·`, mốc `start – end` theo audio (`mm:ss.s`, **UI cần bổ sung**). Thêm / sửa / xoá / kéo thả lượt; lượt có giá trị AI chờ duyệt viền nét đứt cam với `✓ Duyệt` / `↺ Hoàn tác`.
+- `A06.08` **`Câu hỏi`**: Tóm tắt `N câu hỏi · <loại> k · …` và `Mở chi tiết ›` dẫn sang màn Chi tiết câu hỏi của Thư viện bài tập (`CD-KH-070301` Listening); chưa có câu hiện `0 câu hỏi` màu cam.
+- `A06.09` **Footer**: Ghi chú `Lưu = sửa bản ghi thư viện; mọi khoá dùng bài này thấy nội dung mới`; `Huỷ`, `Lưu`.
 
 **Điểm cần lưu ý:**
 
@@ -159,7 +167,7 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 
 **Giải thích field:**
 
-- `A07.01` **`Tên bài` *, `Mô tả` *, `Cụm`, `Câu hỏi`, Footer**: Như drawer bài nghe; `Mở chi tiết ›` dẫn sang `CD-KH-070302` Reading.
+- `A07.01` **`Tên bài` *, `Mô tả` *, `Cụm`, `Nâng cao`, `Câu hỏi`, Footer**: Như drawer bài nghe; `Mở chi tiết ›` dẫn sang `CD-KH-070302` Reading.
 - `A07.02` **`Đoạn văn` ***: Nhiều dòng, ngôn ngữ đích; trống thì bài tính thiếu thông tin. Có thể tách câu: mỗi câu có `Phiên âm ·`, `Dịch ·` (tuỳ chọn, AI điền được).
 - `A07.03` **`Audio đọc mẫu`**: Không bắt buộc; `.mp3` ≤ 50MB; có file thì app học viên phát kèm đoạn văn.
 - `A07.04` **`Từ vựng liên quan`**: Chọn nhiều từ trong Kiến thức (S1) Từ vựng của chính khoá; chip có `×`; dùng để app tô sáng và tra nhanh trong đoạn văn.
@@ -182,10 +190,10 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - `A08.04` **`Gỡ khỏi khoá`**: Mở popup Gỡ khỏi khoá.
 - `A08.05` **Popup — Tìm cụm**: Tìm theo tên cụm của tab.
 - `A08.06` **Popup — Danh sách cụm**: **Radio** từng cụm + số bài của cụm, thêm `Chưa phân cụm` (= gỡ khỏi cụm). Mọi bài đang chọn cùng cụm thì chọn sẵn cụm đó.
-- `A08.07` **Popup — `Huỷ` / `Lưu`**: Lưu: các bài chuyển vào cụm đã chọn (rời cụm cũ); chọn `Chưa phân cụm` thì gỡ khỏi cụm. Bài đang dùng ở bài học mà rời cụm → cảnh báo liệt kê bài học, xác nhận thì tự gỡ khỏi bài học.
+- `A08.07` **Popup — `Huỷ` / `Lưu`**: Lưu: các bài chuyển vào cụm đã chọn (rời cụm cũ); chọn `Chưa phân cụm` thì gỡ khỏi cụm. Bài học liên kết cụm cũ / mới phản ánh ngay, không cảnh báo.
 
-- Popup không tạo cụm mới (cụm tạo bằng `Số cụm` / `Thêm cụm mới` ở panel Cụm).
-- Bài bị gỡ khỏi cụm thì về `Chưa phân cụm`, vẫn còn trong khoá, không thêm được vào bài học.
+- Popup không tạo cụm mới (cụm sinh theo Số buổi ở Tổng quan (S2)).
+- Bài bị gỡ khỏi cụm thì về `Chưa phân cụm`, vẫn còn trong khoá, không xuất hiện ở bài học nào.
 - Sau khi lưu, bài có thể biến mất khỏi bảng nếu đang lọc theo cụm vừa gỡ; Toast nêu rõ kết quả.
 
 ### Trang 9: Nhập nhanh
@@ -284,12 +292,11 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 **Điểm cần lưu ý:**
 
 - `A13.01` **Tiêu đề**: `Gỡ N bài nghe khỏi khoá học?`
-- `A13.02` **Nội dung**: `Bài nghe <tên> sẽ bị gỡ khỏi Kỹ năng (S6) của khoá, khỏi các cụm và khỏi các bài học đang dùng:` + **danh sách bài học đang dùng** (cảnh báo, **UI cần bổ sung** trên Figma `CD-KH-050155`); nhiều bài thì liệt kê tên từng bài. Không dùng ở bài học nào thì bỏ phần danh sách.
+- `A13.02` **Nội dung**: `Bài nghe <tên> sẽ bị gỡ khỏi Kỹ năng (S6) của khoá, khỏi cụm và khỏi bài học mà cụm liên kết:` + dòng `Cụm <tên> · <kỳ> · <bài>` (nếu bài thuộc cụm đã liên kết); nhiều bài thì liệt kê từng bài.
 - `A13.03` **Ghi chú**: `Bản ghi trong Thư viện dữ liệu vẫn còn; khoá khác đang dùng không bị ảnh hưởng.`
 - `A13.04` **Nút**: `Huỷ`; `Xác nhận gỡ` (đỏ).
 
-- Gỡ cũng gỡ bài khỏi mọi cụm của tab và khỏi các bài học của khoá đã thêm bài này (tại Chi tiết bài học); kết quả học
-  viên đã làm trên bài vẫn giữ.
+- Gỡ cũng gỡ bài khỏi cụm của tab; bài học liên kết cụm không còn bài này; kết quả học viên đã làm vẫn giữ.
 
 ### Trang 14: CD-KH-050130 — Màn trống
 ![Trang 14](./images/05-khoa-chua-co-bai.png)
@@ -413,23 +420,23 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Preview không ghi dữ liệu học; bài thiếu file / đoạn văn hoặc 0 câu hỏi hiện thông báo trong khung điện thoại.
 - Bài đọc: tab `Kịch bản` thay bằng `Đoạn văn` (tô sáng Từ vựng liên quan, phát audio đọc mẫu nếu có).
 
-### Trang 20: Thêm / gỡ bài kỹ năng trong Chi tiết bài học
+### Trang 20: Cụm liên kết với Chi tiết bài học
 **Mô tả:**
 
-- Tại Chi tiết bài học, tab `Kỹ năng` → `+ Thêm` để thêm bài nghe / đọc / viết / nói đã có trong S6 của **chính khoá**
-  vào bài, **theo cụm** hoặc theo từng bài; không sửa nội dung tại đây (**UI cần bổ sung**, viết theo popup Thêm kiến
-  thức vào bài học của S1). Đây là nơi duy nhất liên kết bài kỹ năng với bài học; màn S6 không hiển thị liên kết này.
-- Đặc tả UI chi tiết (danh sách 2 khung, popup 3 cột, giữ lựa chọn) xem [Học kỳ — Bài học](../semester/lesson/lesson.md) tab Kỹ năng.
+- Bài học **không** chọn bài kỹ năng; liên kết duy nhất là **cụm ↔ bài học** lập tại panel Cụm của S6 (⋮ cụm › `Liên kết
+  bài học`). Tab `Kỹ năng` của Chi tiết bài học chỉ **hiển thị** bài của cụm đã liên kết, lọc theo loại (mặc định `Nghe`);
+  không có nút thêm, gỡ, sửa (**UI cần bổ sung**).
+- Đặc tả UI (bộ lọc loại, tiêu đề theo tên cụm, 2 khung) xem [Học kỳ — Bài học](../semester/lesson/lesson.md) tab Kỹ năng.
 
 **Điểm cần lưu ý:**
 
-- `A20.01` **Popup `+ Thêm`**: Tiêu đề `Thêm kỹ năng vào bài học` + tên bài; 1 màn 3 cột: Loại (`Nghe` / `Đọc` / `Viết` / `Nói`, luôn hiện đủ 4, loại chưa có dữ liệu hiện trống) \| Cụm \| Bài (checkbox, `Chọn tất cả`, ô tìm). Giữ lựa chọn khi đổi cụm / loại. Bài đã có trong bài mờ, tick sẵn; bài **thiếu thông tin** mờ, không chọn được. `Huỷ`, `Thêm ({n})`.
-- `A20.02` **Thêm cả cụm**: Chọn cụm → `Chọn tất cả`: thêm **một lần** mọi bài đủ thông tin hiện có của cụm theo `Thứ tự trong cụm`; bài thêm sau vào cụm **không** tự vào bài học.
-- `A20.03` **Danh sách trong bài**: Mỗi bài có `×` gỡ khỏi bài học này (bài vẫn ở S6 và ở cụm), không có nút sửa.
+- `A20.01` **Nguồn dữ liệu**: Với mỗi loại kỹ năng, bài học có tối đa 1 cụm liên kết; tab hiện bài của cụm đó theo `Thứ tự trong cụm`.
+- `A20.02` **Bộ lọc loại**: `Nghe` (mặc định), `Đọc`, `Viết`, `Nói`; loại chưa liên kết hiện `Chưa có cụm <loại> liên kết với bài này` + hướng dẫn `Liên kết tại Kỹ năng (S6) › panel Cụm`.
+- `A20.03` **Tiêu đề khung**: Tên cụm đã liên kết (vd `Cụm nghe: Chào hỏi · 3 bài`).
+- `A20.04` **Đồng bộ**: Thêm / gỡ / chuyển bài trong cụm, đổi tên cụm, đổi liên kết ở S6 → bài học cập nhật ngay.
 
-- Một bài kỹ năng có thể được thêm vào **nhiều** bài học của khoá; thêm vào bài này không gỡ khỏi bài khác.
-- Thêm bài vào cụm → bài học không đổi; gỡ bài khỏi cụm / xoá cụm → cảnh báo, bài kỹ năng tự gỡ khỏi các bài học đã thêm nó từ cụm đó.
-- Gỡ bài khỏi khoá ở S6 thì có cảnh báo liệt kê bài học đang dùng; xác nhận thì bài tự mất khỏi mọi bài học của khoá.
+- Bài thiếu thông tin vẫn hiện ở bài học nếu thuộc cụm liên kết (có chấm cam); app học viên chỉ hiển thị bài đủ thông tin.
+- Gỡ bài khỏi khoá (Flow 7) thì bài mất khỏi cụm và khỏi bài học liên kết, popup gỡ nêu cụm và bài học.
 
 ### Trang 21: Toast phản hồi CRUD
 ![Trang 21](../../images/01-toast-crud.png)
@@ -438,7 +445,7 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 
 **Mô tả:**
 
-- Phản hồi sau thêm / tạo / sửa / gỡ bài, thêm / gỡ / tạo / xoá cụm, import, áp dụng AI và thêm / gỡ trong bài học.
+- Phản hồi sau thêm / tạo / sửa / gỡ bài, thao tác cụm, liên kết bài học, import và áp dụng AI.
 
 **Điểm cần lưu ý:**
 
@@ -504,8 +511,8 @@ CD bấm tên bài hoặc ⋮ › Mở chi tiết → drawer
 
 ```text
 CD ⋮ › Thêm vào cụm / Gỡ khỏi cụm (1 bài) hoặc thanh hàng loạt (N bài), hoặc bấm nhãn ở cột Cụm
-      → popup Cụm của N bài: chọn 1 cụm hoặc Chưa phân cụm → Lưu (cảnh báo nếu bài đang dùng ở bài học rời cụm)
-      → bài chuyển cụm / về Chưa phân cụm, bài rời cụm tự gỡ khỏi bài học; số đếm panel Cụm cập nhật
+      → popup Cụm của N bài: chọn 1 cụm hoặc Chưa phân cụm → Lưu
+      → bài chuyển cụm / về Chưa phân cụm; bài học liên kết cụm cũ / mới phản ánh ngay; số đếm panel Cụm cập nhật
 ```
 
 **Flow 7 / REQ09: Gỡ khỏi khoá**
@@ -515,11 +522,13 @@ CD ⋮ › Gỡ khỏi khoá hoặc Gỡ khỏi khoá (N) → popup xác nhận 
       → Gỡ bài khỏi khoá, khỏi mọi cụm và khỏi các bài học của khoá; bản ghi thư viện và khoá khác không đổi
 ```
 
-**Flow 8 / REQ05 / REQ11: Quản lý cụm**
+**Flow 8 / REQ05 / REQ11: Cụm sinh từ S2, đổi tên, liên kết bài học, chia cụm AI**
 
 ```text
-Tab chưa có cụm: CD nhập Số cụm N → tạo Chủ đề 1 … N (rỗng) → ô Số cụm chỉ đọc
-Đã có cụm: Thêm cụm mới / ⋮ cụm › Đổi tên / Xoá cụm (xác nhận; bài của cụm về Chưa phân cụm và tự gỡ khỏi bài học)
+CD nhập Loại (Nghe / Đọc / Viết / Nói) + Số buổi ở Tổng quan (S2) → hệ thống tạo đủ cụm rỗng Chủ đề 1 … N cho tab (Số cụm chỉ đọc)
+CD ⋮ cụm › Đổi tên → lưu tên mới
+CD ⋮ cụm › Liên kết bài học → chọn 1 bài (bài đã có cụm cùng loại bị mờ) → Lưu
+      → BE kiểm tra trùng → lưu liên kết (gỡ liên kết cũ của cụm nếu có) hoặc từ chối (EX13) → Chi tiết bài học hiện bài của cụm
 Chia cụm bằng AI → AI đề xuất bài vào cụm → CD áp dụng hoặc bỏ
 ```
 
@@ -556,12 +565,13 @@ CD chọn bài → Preview mobile → panel phải hiện khung điện thoại:
       → Đổi toggle Kịch bản ẩn / hiện → lưu theo bài → Bài trước / sau → × đóng về panel Cụm
 ```
 
-**Flow 13 / REQ14: Thêm / gỡ bài kỹ năng trong Chi tiết bài học**
+**Flow 13 / REQ14: Xem bài kỹ năng của bài học theo cụm liên kết**
 
 ```text
-CD mở Chi tiết bài học → tab Kỹ năng → + Thêm → popup 3 cột: Chọn tất cả (thêm cả cụm) hoặc tick từng bài trong S6 của khoá → xác nhận
-      → Bài được thêm vào bài học này (bài có thể ở nhiều bài học) → × gỡ khỏi bài học này (chỉ xoá liên kết)
-CD gỡ bài khỏi cụm / xoá cụm ở S6 → cảnh báo → bài tự gỡ khỏi các bài học đã thêm nó từ cụm đó
+CD mở Chi tiết bài học → tab Kỹ năng (mặc định lọc Nghe)
+      → Hệ thống tìm cụm của loại đó đã liên kết với bài → hiện tên cụm + bài của cụm theo thứ tự trong cụm
+      → Đổi loại → cụm liên kết của loại mới; chưa liên kết → thông báo và hướng dẫn liên kết tại S6
+CD sửa cụm ở S6 (thêm / gỡ / chuyển bài, đổi tên, đổi liên kết) → bài học cập nhật ngay, không thao tác tại bài
 ```
 
 ### 2.2. Ngoại lệ
@@ -569,15 +579,16 @@ CD gỡ bài khỏi cụm / xoá cụm ở S6 → cảnh báo → bài tự gỡ
 - **EX01:** Khoá học không `Nháp` → ẩn / mờ mọi thao tác ghi (gồm thao tác cụm); API thêm / sửa / gỡ / cụm / AI bị từ chối.
 - **EX02:** Tên bài trống, Nhập nhanh rỗng, Tạo bài mới thiếu file (Nghe) hoặc đoạn văn (Đọc) → báo lỗi tại field, không tạo / lưu.
 - **EX03:** File âm thanh không phải `.mp3` hoặc lớn hơn 50MB → từ chối, Toast `Cảnh Báo`, giữ file cũ.
-- **EX04:** Gắn bản ghi thư viện đã có trong khoá → popup khoá lựa chọn; API từ chối gắn trùng.
+- **EX04:** Gắn bản ghi thư viện đã có trong khoá → popup khoá lựa chọn, không gắn thêm từ popup; API vẫn nhận (như S1 REQ04: không bắt trùng bản ghi trong khoá).
 - **EX05:** Import không phải `.xlsx`, thiếu sheet bài gốc, `reading_vocabulary` thiếu cột `reading_lesson_id`, dòng thiếu
   field bắt buộc hoặc `*_lesson_id` không có trong sheet bài gốc → chặn cả file, báo theo sheet + dòng, không thêm bài nào.
 - **EX06:** AI lỗi hoặc CD bấm `Dừng` → bài chưa xử lý giữ nguyên; bài đã xử lý giữ trạng thái chờ duyệt; AI lỗi thì Toast `Có Lỗi Xảy Ra`.
 - **EX07:** Sửa / gỡ bài đang được AI xử lý → UI mờ; API từ chối.
 - **EX08:** Role khác CD hoặc trung tâm khác trung tâm đang chọn truy cập S6 / gọi API → từ chối.
-- **EX09:** Lưu drawer, thêm / gỡ cụm, gỡ bài, duyệt AI thất bại → giữ dữ liệu cũ, Toast `Có Lỗi Xảy Ra`.
-- **EX10:** Thêm bài vào cụm của tab khác / khoá khác, hoặc thêm vào bài học không thuộc khoá đang mở (qua API) → từ chối.
-- **EX11:** Nhập `Số cụm` khi tab đã có cụm (qua API) → từ chối; số cụm âm / không phải số → báo lỗi tại ô.
+- **EX09:** Lưu drawer, thêm / gỡ cụm, liên kết bài học, gỡ bài, duyệt AI thất bại → giữ dữ liệu cũ, Toast `Có Lỗi Xảy Ra`.
+- **EX10:** Thêm bài vào cụm của tab khác / khoá khác, hoặc liên kết cụm với bài học không thuộc khoá đang mở (qua API) → từ chối.
+- **EX11:** Đổi `Số cụm`, thêm hoặc xoá cụm trực tiếp ở S6 (UI / API) → ô chỉ đọc, không có nút; API từ chối. Số cụm chỉ đổi qua Số buổi ở S2.
+- **EX13:** Liên kết cụm với bài học đã có cụm cùng loại kỹ năng → BE từ chối (409), Toast `Cảnh Báo` nêu cụm đang chiếm; dữ liệu không đổi.
 
 ### 2.3. Yêu cầu khác
 
@@ -589,17 +600,17 @@ CD gỡ bài khỏi cụm / xoá cụm ở S6 → cảnh báo → bài tự gỡ
 | Mã | Tên yêu cầu | Mô tả |
 |---|---|---|
 | REQ03 | Cột và nội dung | Nghe: tên, mô tả, âm thanh (mp3 ≤ 50MB, thời lượng không giới hạn, `h:mm:ss` khi ≥ 1 giờ, chỉ phát một bài tại một thời điểm), cụm. Đọc: tên, mô tả, đoạn văn, cụm; audio đọc mẫu không bắt buộc. Không có cột bài học. |
-| REQ04 | Thư viện kỹ năng | Bài của S6 là tham chiếu bản ghi Thư viện kỹ năng; một bản ghi gắn vào một khoá tối đa 1 lần. Thêm mới (popup tạo, nhập nhanh, import) tạo bản ghi `Nháp`; sửa tại S6 sửa bản ghi thư viện. Field: Tên *, Mô tả, Âm thanh + Kịch bản (lượt, người nói, phiên âm, dịch, mốc start / end) với Nghe; Đoạn văn + audio đọc mẫu + Từ vựng liên quan (từ S1 của khoá) với Đọc. **Thiếu thông tin** khi thiếu file / đoạn văn, mô tả, hoặc 0 câu hỏi đã duyệt. |
-| REQ05 | Cụm | Mỗi tab có bộ cụm riêng của khoá; một bài thuộc **tối đa 1 cụm** của tab. `Số cụm` chỉ nhập khi chưa có cụm (tạo `Chủ đề 1…N`), sau đó thêm / đổi tên / xoá cụm, Chia cụm bằng AI. Thêm vào / gỡ khỏi cụm qua popup thêm / tạo, nhập nhanh, import (cụm đang chọn), menu dòng, hàng loạt, nhãn cột Cụm, drawer (chọn 1 cụm). Xoá cụm không gỡ bài khỏi khoá. Số đếm panel Cụm cập nhật ngay. Thứ tự bài trong cụm kéo thả được. |
-| REQ06 | Tìm kiếm, lọc, sắp xếp | Tìm theo tên, mô tả, nội dung; lọc theo cụm (panel Cụm) và Trạng thái `Tất cả / Nháp / Công khai / Vô hiệu`; sắp xếp `Thứ tự thêm / Tên A–Z / Mới cập nhật / Thứ tự trong cụm`; phân trang 50 dòng; đổi điều kiện về trang 1. |
+| REQ04 | Thư viện kỹ năng | Bài của S6 là tham chiếu bản ghi Thư viện kỹ năng; không có rule bắt trùng bản ghi trong khoá (thống nhất với S1 REQ04), popup thêm chỉ khoá bài đã có để tránh thêm nhầm. Thêm mới (popup tạo, nhập nhanh, import) tạo bản ghi `Nháp`; sửa tại S6 sửa bản ghi thư viện. Field: Tên *, Mô tả, Nâng cao (Có / Không, mặc định Không), Âm thanh + Kịch bản (lượt, người nói, phiên âm, dịch, mốc start / end) với Nghe; Đoạn văn + audio đọc mẫu + Từ vựng liên quan (từ S1 của khoá) với Đọc. **Thiếu thông tin** khi thiếu file / đoạn văn, mô tả, hoặc 0 câu hỏi đã duyệt. |
+| REQ05 | Cụm | Mỗi tab có bộ cụm riêng của khoá; một bài thuộc **tối đa 1 cụm** của tab. **Số cụm = tổng Số buổi của loại ở Tổng quan (S2)**, tự tạo `Chủ đề k`, không nhập / thêm / xoá cụm tại S6; CD đổi tên, Chia cụm bằng AI. **Mỗi cụm liên kết đúng 1 bài học, mỗi bài học tối đa 1 cụm mỗi loại kỹ năng**, BE kiểm tra trùng (EX13), liên kết tại ⋮ cụm; nhân bản khoá sao chép cụm và liên kết. Thêm vào / gỡ khỏi cụm qua popup thêm / tạo, nhập nhanh, import (cụm đang chọn), menu dòng, hàng loạt, nhãn cột Cụm, drawer (chọn 1 cụm). Xoá cụm không gỡ bài khỏi khoá. Số đếm panel Cụm cập nhật ngay. Thứ tự bài trong cụm kéo thả được. |
+| REQ06 | Bảng, tìm kiếm, lọc, sắp xếp | Bảng hiện đủ mọi field, cuộn ngang, ghim cột đầu / cuối. Tìm theo tên, mô tả, nội dung; lọc theo cụm (panel Cụm), Trạng thái `Tất cả / Nháp / Công khai / Vô hiệu`, Nâng cao `Tất cả / Có / Không`; sắp xếp `Thứ tự thêm / Tên A–Z / Mới cập nhật / Thứ tự trong cụm`; phân trang 50 dòng; đổi điều kiện về trang 1. |
 | REQ07 | Drawer chi tiết | Đủ field theo REQ04, cụm chỉ đọc + `Sửa cụm`, duyệt / hoàn tác giá trị AI, hỏi xác nhận khi đóng có thay đổi; lưu ảnh hưởng mọi khoá dùng bản ghi. |
 | REQ08 | Câu hỏi | Soạn và duyệt ở màn Chi tiết câu hỏi của Thư viện bài tập (Listening / Reading), đủ loại câu của BTVN & Kiểm tra; drawer chỉ tóm tắt số câu theo loại và dẫn link. |
-| REQ09 | Gỡ khỏi khoá | Xoá ở S6 là gỡ khỏi khoá, khỏi mọi cụm và khỏi các bài học của khoá, có xác nhận; bản ghi thư viện còn; kết quả học viên giữ. |
+| REQ09 | Gỡ khỏi khoá | Xoá ở S6 là gỡ khỏi khoá và khỏi cụm (bài học liên kết cụm không còn bài), có xác nhận nêu cụm và bài học; bản ghi thư viện còn; kết quả học viên giữ. |
 | REQ10 | Trạng thái khoá học | Chỉ thao tác ghi khi khoá `Nháp`; khoá khác chỉ xem, tìm, lọc, Preview, Export. |
 | REQ11 | AI | Transcript AI (Nghe, từ file âm thanh, có phiên âm, dịch, mốc thời gian), Tạo câu hỏi AI (Đọc, từ đoạn văn), Soát lỗi AI (cả hai), Chia cụm bằng AI. Kết quả lưu nháp chờ duyệt, không ghi đè; `Duyệt tất cả` của Soát lỗi áp dụng sửa của AI, có Hoàn tác; `Dừng` được; bài đang xử lý bị khoá sửa / gỡ. |
 | REQ12 | Import / Export Excel | Chỉ `.xlsx`. Tab Nghe chỉ đọc 3 sheet `listening_lesson`, `listening`, `listening_question`; tab Đọc chỉ đọc 4 sheet `reading_lesson`, `reading`, `reading_question`, `reading_vocabulary` (bắt buộc cột `reading_lesson_id`); bỏ qua sheet khác. **Không có cột bài học**: bỏ qua `lesson_id`, bài vào cụm đang chọn. Export toàn bộ bài của tab cùng cấu trúc sheet; import tạo bản ghi `Nháp` thêm vào cuối, có dòng lỗi thì chặn cả file, không tự dò trùng. |
 | REQ13 | Preview mobile | Tái hiện màn học của app học viên cho bài đang chọn (Làm bài / Kịch bản hoặc Đoạn văn / Kết quả); toggle `Kịch bản ẩn khi làm bài` lưu theo bài; không ghi dữ liệu học. |
-| REQ14 | Bài kỹ năng trong bài học | Chỉ Chi tiết bài học liên kết bài kỹ năng với bài học: thêm cả cụm (chọn tất cả, một lần, không tự gắn bài mới) hoặc từng bài từ S6 của chính khoá; bài thiếu thông tin không gắn được; gỡ khỏi khoá / gỡ khỏi cụm / xoá cụm đang dùng ở bài học có cảnh báo liệt kê bài học, xác nhận thì tự gỡ khỏi bài học; một bài có thể ở nhiều bài học; không sửa nội dung tại bài; S6 không hiển thị bài học. |
+| REQ14 | Bài kỹ năng trong bài học | Chi tiết bài học không chọn bài; tab Kỹ năng chỉ hiển thị bài của cụm đã liên kết, theo loại đang lọc (mặc định Nghe), tiêu đề là tên cụm; thay đổi ở cụm phản ánh ngay; không thêm / gỡ / sửa tại bài; badge tab = số loại kỹ năng có cụm liên kết. |
 | REQ15 | Phản hồi | Mỗi thao tác thay đổi dữ liệu đúng một Toast theo kết quả; không báo thành công trước khi lưu xong. |
 
 ### 2.4. Ràng buộc
@@ -645,13 +656,15 @@ CD gỡ bài khỏi cụm / xoá cụm ở S6 → cảnh báo → bài tự gỡ
 | Case 9: Tìm theo nội dung đoạn văn | Medium | REQ06 | CD | Bài 06 đoạn văn chứa `多少钱` | **Given** gõ `多少钱`<br>**When** tìm<br>**Then** chỉ còn bài 06 | - Tìm không phân biệt hoa thường |
 | Case 10: Lọc theo cụm | High · Smoke | Flow 1 / REQ06 | CD | Cụm `Chào hỏi` có 3 bài nghe | **Given** bấm `Chào hỏi` ở panel Cụm<br>**When** bảng lọc<br>**Then** 3 bài, tiêu đề bảng `Chào hỏi` + `3 bài nghe` | - Footer `1–3 trong 3` |
 | Case 11: Lọc Chưa phân cụm | High | REQ06 | CD | 40 bài chưa thuộc cụm | **Given** bấm `Chưa phân cụm`<br>**When** bảng lọc<br>**Then** 40 bài, cột Cụm hiện `Chưa phân cụm` | - Badge `40` cam |
-| Case 12: Tạo cụm theo Số cụm | High · Smoke | Flow 8 / REQ05 | CD | Tab Nghe chưa có cụm | **Given** nhập Số cụm `5`<br>**When** xác nhận<br>**Then** tạo `Chủ đề 1` … `Chủ đề 5`, mỗi cụm 0 bài | - Ô Số cụm thành chỉ đọc `5`<br>- Tab Đọc không bị tạo cụm |
-| Case 12a: Xoá cụm | Medium | Flow 8 / REQ05 | CD | Cụm `Chủ đề 2` có 4 bài, 1 bài chỉ thuộc cụm này | **Given** ⋮ cụm › `Xoá cụm`, xác nhận<br>**When** xoá xong<br>**Then** cụm biến mất; bài chỉ thuộc cụm này về `Chưa phân cụm` | - 4 bài vẫn còn trong khoá |
+| Case 12: Cụm sinh từ S2 | High · Smoke | Flow 8 / REQ05 | CD | S2 có dòng Loại `Nghe` tổng 5 buổi | **Given** mở tab Nghe<br>**When** xem panel Cụm<br>**Then** `Chủ đề 1` … `Chủ đề 5`, Số cụm chỉ đọc `5` | - Tab Đọc không bị tạo cụm |
+| Case 12a: Liên kết cụm với bài học | High · Smoke | Flow 8 / REQ05 | CD | Cụm `Chào hỏi`, Bài 1 chưa có cụm Nghe | **Given** ⋮ cụm › `Liên kết bài học`, chọn `HK I · Bài 1`, Lưu<br>**When** lưu xong<br>**Then** chip `HK I · Bài 1` trên cụm; Chi tiết Bài 1 tab Kỹ năng hiện 3 bài nghe | - Bài 1 vẫn liên kết thêm được cụm Đọc |
+| Case 12c: Bài đã có cụm cùng loại | High | EX13 / REQ05 | CD | Bài 1 đã liên kết cụm Nghe `Chào hỏi` | **Given** cụm `Gia đình` › `Liên kết bài học`<br>**When** xem Bài 1; gửi request trực tiếp<br>**Then** Bài 1 mờ `Đã liên kết: Chào hỏi`; API từ chối | - Không có `Xoá cụm` trong menu |
 | Case 12b: Chia cụm bằng AI | Medium | Flow 8 / REQ05 / REQ11 | CD | 20 bài chưa phân cụm | **Given** bấm `Chia cụm bằng AI`<br>**When** AI đề xuất, CD áp dụng<br>**Then** bài vào cụm theo đề xuất | - Bỏ đề xuất thì cụm không đổi |
 | Case 13: Kết hợp tìm và lọc cụm | High | Flow 1 / REQ06 | CD | Cụm `Gia đình` có 3 bài, 1 bài tên chứa `家` | **Given** chọn cụm `Gia đình`, gõ `家`<br>**When** tìm<br>**Then** 1 bài | - Về trang 1 |
 | Case 13a: Kéo thả thứ tự trong cụm | Medium | REQ06 | CD | Đang xem cụm `Gia đình`, Sắp xếp = `Thứ tự trong cụm` | **Given** bảng của cụm<br>**When** kéo dòng 3 lên vị trí 1<br>**Then** thứ tự trong cụm được lưu | - Tải lại vẫn giữ<br>- Thứ tự ở cụm khác không đổi |
 | Case 14: Sắp xếp Tên A–Z | Medium | REQ06 | CD | Có bài tiếng Trung và tiếng Anh | **Given** chọn `Tên A–Z`<br>**When** bảng sắp lại<br>**Then** theo bảng chữ của ngôn ngữ, STT đánh lại | - Thứ tự thêm giữ nguyên khi đổi về |
 | Case 15: Lọc trạng thái Vô hiệu | Medium | REQ06 / REQ09 | CD | 2 bài `Vô hiệu` | **Given** chọn `Trạng thái: Vô hiệu`<br>**When** lọc<br>**Then** 2 bài | - Bài Vô hiệu vẫn gỡ được |
+| Case 15a: Lọc Nâng cao và cuộn ngang | Medium | REQ06 | CD | 4 bài Nâng cao = Có | **Given** chọn `Nâng cao: Có`, cuộn ngang<br>**When** render<br>**Then** 4 bài; thấy đủ cột Số câu hỏi, Nâng cao, Trạng thái; cột ghim không trôi | - Kết hợp được với cụm, Trạng thái |
 | Case 16: Sửa và lưu bài nghe | High · Smoke | Flow 5 / REQ04 / REQ07 | CD | Bài 01 đang dùng ở 2 khoá | **Given** mở chi tiết, sửa Mô tả, thêm lượt B<br>**When** bấm `Lưu`<br>**Then** bảng cập nhật; mở khoá kia thấy nội dung mới | - Toast `Thành Công` `Đã lưu bài nghe.` |
 | Case 17: Tên trống không lưu | High | EX02 / REQ04 | CD | Drawer đang mở | **Given** xoá Tên bài<br>**When** bấm `Lưu`<br>**Then** viền đỏ Tên bài, không lưu | - Không có Toast thành công |
 | Case 18: Tải file sai loại / quá dung lượng | High | EX03 / REQ03 | CD | File `.wav` 10MB và `.mp3` 60MB | **Given** tải từng file<br>**When** kiểm tra<br>**Then** cả hai bị từ chối, Toast `Cảnh Báo` nêu lý do | - Không thay file cũ |
@@ -662,7 +675,7 @@ CD gỡ bài khỏi cụm / xoá cụm ở S6 → cảnh báo → bài tự gỡ
 | Case 22: Gắn từ vựng liên quan | Medium | REQ04 | CD | S1 có từ `爸爸` | **Given** chọn `爸爸` ở Từ vựng liên quan<br>**When** lưu<br>**Then** chip `爸爸` hiện trong drawer | - Gỡ `爸爸` ở S1 thì chip biến mất |
 | Case 23: Audio đọc mẫu không bắt buộc | Low | REQ04 | CD | Bài đọc có đoạn văn, không audio | **Given** xem bảng<br>**When** render<br>**Then** bài không tính thiếu thông tin | - Preview phát được khi có audio |
 | Case 24: Thêm bài vào cụm từ menu dòng | High · Smoke | Flow 6 / REQ05 | CD | Bài 05 chưa phân cụm | **Given** `⋮ › Thêm vào cụm / Gỡ khỏi cụm`, chọn `Chào hỏi`<br>**When** lưu<br>**Then** cột Cụm `Chào hỏi`, badge `Chào hỏi` +1, Chưa phân cụm −1 | - Chỉ chọn được 1 cụm<br>- Toast `Thành Công` |
-| Case 24a: Chuyển cụm bài đang dùng ở bài học | High | Flow 6 / REQ05 | CD | Bài 01 thuộc `Chào hỏi`, dùng ở Bài 2 | **Given** popup cụm, chọn `Gia đình`<br>**When** lưu, xác nhận cảnh báo<br>**Then** bài chuyển cụm | - Cảnh báo liệt kê Bài 2<br>- Bài 01 mất khỏi Bài 2 |
+| Case 24a: Chuyển cụm bài đang hiển thị ở bài học | High | Flow 6 / REQ05 | CD | Bài 01 thuộc `Chào hỏi` (liên kết Bài 2); `Gia đình` liên kết Bài 3 | **Given** popup cụm, chọn `Gia đình`<br>**When** lưu<br>**Then** bài chuyển cụm, không cảnh báo | - Bài 2 hết bài 01, Bài 3 có bài 01 |
 | Case 25: Gỡ khỏi cụm cuối cùng | Medium | Flow 6 / REQ05 | CD | Bài 01 chỉ thuộc cụm `Chào hỏi` | **Given** chọn `Chưa phân cụm`<br>**When** lưu<br>**Then** cột Cụm `Chưa phân cụm`, Chưa phân cụm +1 | - Bài vẫn trong khoá |
 | Case 25a: Gọi API thêm bài vào cụm của tab / khoá khác | Medium | EX10 | CD | Cụm X thuộc tab Đọc hoặc khoá khác | **Given** gửi request thêm bài nghe vào cụm X<br>**When** backend xử lý<br>**Then** bị từ chối | - Bài nghe giữ nguyên |
 | Case 26: Nhập nhanh tạo bài | High · Smoke | Flow 4 / REQ04 | CD | Đang chọn cụm `Chào hỏi` | **Given** gõ `我的一天`, Enter<br>**When** tạo xong<br>**Then** bài mới cuối bảng, thuộc cụm `Chào hỏi`, badge +1, thiếu thông tin +1 | - Ô nhập trống, giữ focus |
@@ -700,16 +713,14 @@ CD gỡ bài khỏi cụm / xoá cụm ở S6 → cảnh báo → bài tự gỡ
 | Case 51: Preview bài nghe | High · Smoke | Flow 12 / REQ13 | CD | Bài 01 có 5 câu | **Given** chọn bài 01, bấm `Preview mobile`<br>**When** panel mở<br>**Then** tab Làm bài, `Nghe · Câu 1/5`, phát được audio | - Đóng `×` về panel Cụm |
 | Case 52: Toggle kịch bản lưu theo bài | Medium | REQ13 | CD | Bài 01 đang `ẩn` | **Given** đổi sang `hiện`<br>**When** mở lại preview bài 01 sau khi tải lại trang<br>**Then** vẫn `hiện` | - Bài 02 không đổi |
 | Case 53: Bài 0 câu hỏi | Low | REQ13 | CD | Bài chưa có câu | **Given** preview<br>**When** render<br>**Then** khung báo `Bài chưa có câu hỏi` | - Không ghi dữ liệu |
-| Case 54: Thêm cụm bài nghe vào bài học | High · Smoke | Flow 13 / REQ14 | CD | Cụm `Chào hỏi` có 3 bài nghe | **Given** Chi tiết bài 2, tab Kỹ năng, `+ Thêm`, tick cụm `Chào hỏi`<br>**When** xác nhận<br>**Then** bài 2 có 3 bài nghe theo thứ tự trong cụm | - S6 không hiển thị bài học<br>- Thêm bài thứ 4 vào cụm sau đó **không** tự vào bài 2 |
-| Case 55b: Xoá cụm / gỡ bài đang dùng ở bài học | High | REQ09 / REQ14 | CD | Bài 2 đã thêm 3 bài nghe của cụm `Chào hỏi`; bài nghe 01 dùng ở Bài 1 | **Given** gỡ 1 bài khỏi cụm `Chào hỏi`; xoá cụm `Chào hỏi`; gỡ bài nghe 01 khỏi khoá<br>**When** xem popup và xác nhận<br>**Then** cảnh báo liệt kê bài học | - Gỡ khỏi cụm: bài đó mất khỏi Bài 2<br>- Xoá cụm: Bài 2 mất các bài nghe còn lại của cụm<br>- Gỡ khỏi khoá: bài nghe 01 mất khỏi Bài 1 |
-| Case 55: Một bài kỹ năng ở nhiều bài học | Medium | REQ14 | CD | Bài nghe 01 đã ở Bài 1 | **Given** thêm bài nghe 01 vào Bài 3<br>**When** xác nhận<br>**Then** bài nghe 01 có ở cả Bài 1 và Bài 3 | - Không nhân đôi trong cùng một bài học |
-| Case 55a: Gỡ khỏi bài học | Medium | REQ14 | CD | Bài 2 có bài nghe 01 | **Given** bấm `×` bài nghe 01 trong Bài 2<br>**When** xác nhận<br>**Then** bài nghe 01 mất khỏi Bài 2 | - Vẫn ở S6 và ở cụm cũ |
+| Case 54: Bài học hiện bài của cụm liên kết | High · Smoke | Flow 13 / REQ14 | CD | Cụm Nghe `Chào hỏi` (3 bài) liên kết Bài 2 | **Given** Chi tiết Bài 2, tab Kỹ năng<br>**When** lọc `Nghe`<br>**Then** tiêu đề `Cụm nghe: Chào hỏi · 3 bài`, 3 bài đúng thứ tự trong cụm | - Không có nút +, × |
+| Case 55: Thêm bài vào cụm, bài học cập nhật | High · Smoke | Flow 13 / REQ14 | CD | Như Case 54 | **Given** ở S6 thêm bài nghe 04 vào cụm `Chào hỏi`<br>**When** mở lại Bài 2<br>**Then** 4 bài | - Gỡ khỏi cụm thì còn 3 |
+| Case 55a: Loại chưa liên kết | Medium | REQ14 | CD | Bài 2 chưa có cụm Đọc | **Given** lọc `Đọc`<br>**When** render<br>**Then** `Chưa có cụm Đọc liên kết với bài này` + hướng dẫn | - Badge tab không đếm Đọc |
+| Case 55b: Gỡ bài khỏi khoá đang ở cụm liên kết | High | REQ09 / REQ14 | CD | Bài nghe 01 thuộc cụm `Chào hỏi` liên kết Bài 2 | **Given** ⋮ › `Gỡ khỏi khoá`<br>**When** popup nêu `Cụm Chào hỏi · HK I · Bài 2`, xác nhận<br>**Then** bài mất khỏi S6, cụm và Bài 2 | - Thư viện còn bản ghi |
 | Toast Case 1: Thành công | High | REQ15 | CD | Dữ liệu hợp lệ | **Given** gỡ 1 bài<br>**When** backend xong<br>**Then** `Thành Công` `Đã gỡ 1 bài nghe khỏi khoá.` | - Một Toast |
 | Toast Case 2: Cảnh báo | High | REQ15 | CD | File 60MB | **Given** tải file<br>**When** kiểm tra<br>**Then** `Cảnh Báo` `File vượt quá dung lượng cho phép (50MB).` | - Không lưu |
 | Toast Case 3: Lỗi | High | REQ15 | CD | AI lỗi | **Given** transcript đang chạy<br>**When** AI thất bại<br>**Then** `Có Lỗi Xảy Ra` | - Bài giữ nguyên |
 | Toast Case 4: Thông tin | Medium | REQ15 | CD | Bấm AI cho 5 bài | **Given** bắt đầu<br>**When** đang chạy<br>**Then** `Thông Báo` `AI đang tạo transcript cho 5 bài nghe.` | - Không lặp Toast |
-
----
 
 ---
 
@@ -761,12 +772,13 @@ CD gỡ bài khỏi cụm / xoá cụm ở S6 → cảnh báo → bài tự gỡ
   chốt `.mp3` ≤ 50MB theo `file_limits.json` (`KNOWLEDGE_MEDIA`), cần sửa chữ trên Figma hoặc đổi config.
 - **Q03:** **Figma panel Cụm:** mọi màn S6 đang vẽ panel `Học kỳ & bài học`, cột / ô `Bài học`; cần vẽ lại theo panel Cụm, cột
   `Cụm`, popup `Cụm của N bài`, ô `Thêm vào cụm` (tham khảo Figma Kiến thức S1).
-- **Q04:** **Import / Export Excel:** chưa có UI menu và popup kết quả; cấu trúc sheet theo file dữ liệu khoá học (vd
+- **Q04:** **UI cần vẽ theo mô hình cụm ↔ bài học (03/11):** ô Số cụm chỉ đọc theo S2, bỏ `Thêm cụm mới` / `Xoá cụm`, menu ⋮ cụm có `Liên kết bài học` + popup chọn bài, chip bài học trên dòng cụm, field và bộ lọc `Nâng cao`, bảng đủ cột cuộn ngang có cột ghim, tab Kỹ năng ở Chi tiết bài học chỉ xem theo cụm.
+- **Q05:** **Import / Export Excel:** chưa có UI menu và popup kết quả; cấu trúc sheet theo file dữ liệu khoá học (vd
   `HSK1_DATA_v261028.xlsx`); file hiện tại chưa có cột `reading_lesson_id` ở sheet `reading_vocabulary`, cần bổ sung trước
   khi import tab Đọc.
-- **Q05:** **Phiên âm theo ngôn ngữ:** tiếng Trung pinyin, tiếng Nhật furigana / romaji, tiếng Hàn romanization; tiếng Anh / Đức /
+- **Q06:** **Phiên âm theo ngôn ngữ:** tiếng Trung pinyin, tiếng Nhật furigana / romaji, tiếng Hàn romanization; tiếng Anh / Đức /
   Pháp để trống hay dùng IPA, chưa chốt.
-- **Q06:** **Preview app học viên:** màn Làm bài / Kết quả tái hiện theo app; cần ảnh app để khớp chi tiết (cách tô sáng câu theo
+- **Q07:** **Preview app học viên:** màn Làm bài / Kết quả tái hiện theo app; cần ảnh app để khớp chi tiết (cách tô sáng câu theo
   mốc thời gian, hiển thị Từ vựng liên quan).
 
 ---

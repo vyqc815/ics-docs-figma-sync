@@ -27,21 +27,21 @@
   {
    "id": "CM-SS.REQ04",
    "name": "Thư viện kỹ năng",
-   "text": "Bài của S6 là tham chiếu bản ghi Thư viện kỹ năng; một bản ghi gắn vào một khoá tối đa 1 lần. Thêm mới (popup tạo, nhập nhanh, import) tạo bản ghi `Nháp`; sửa tại S6 sửa bản ghi thư viện. Field: Tên *, Mô tả, Âm thanh + Kịch bản (lượt, người nói, phiên âm, dịch, mốc start / end) với Nghe; Đoạn văn + audio đọc mẫu + Từ vựng liên quan (từ S1 của khoá) với Đọc. **Thiếu thông tin** khi thiếu file / đoạn văn, mô tả, hoặc 0 câu hỏi đã duyệt.",
+   "text": "Bài của S6 là tham chiếu bản ghi Thư viện kỹ năng; không có rule bắt trùng bản ghi trong khoá (thống nhất với S1 REQ04), popup thêm chỉ khoá bài đã có để tránh thêm nhầm. Thêm mới (popup tạo, nhập nhanh, import) tạo bản ghi `Nháp`; sửa tại S6 sửa bản ghi thư viện. Field: Tên *, Mô tả, Nâng cao (Có / Không, mặc định Không), Âm thanh + Kịch bản (lượt, người nói, phiên âm, dịch, mốc start / end) với Nghe; Đoạn văn + audio đọc mẫu + Từ vựng liên quan (từ S1 của khoá) với Đọc. **Thiếu thông tin** khi thiếu file / đoạn văn, mô tả, hoặc 0 câu hỏi đã duyệt.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-SS.REQ05",
    "name": "Cụm",
-   "text": "Mỗi tab có bộ cụm riêng của khoá; một bài thuộc **tối đa 1 cụm** của tab. `Số cụm` chỉ nhập khi chưa có cụm (tạo `Chủ đề 1…N`), sau đó thêm / đổi tên / xoá cụm, Chia cụm bằng AI. Thêm vào / gỡ khỏi cụm qua popup thêm / tạo, nhập nhanh, import (cụm đang chọn), menu dòng, hàng loạt, nhãn cột Cụm, drawer (chọn 1 cụm). Xoá cụm không gỡ bài khỏi khoá. Số đếm panel Cụm cập nhật ngay. Thứ tự bài trong cụm kéo thả được.",
+   "text": "Mỗi tab có bộ cụm riêng của khoá; một bài thuộc **tối đa 1 cụm** của tab. **Số cụm = tổng Số buổi của loại ở Tổng quan (S2)**, tự tạo `Chủ đề k`, không nhập / thêm / xoá cụm tại S6; CD đổi tên, Chia cụm bằng AI. **Mỗi cụm liên kết đúng 1 bài học, mỗi bài học tối đa 1 cụm mỗi loại kỹ năng**, BE kiểm tra trùng (EX13), liên kết tại ⋮ cụm; nhân bản khoá sao chép cụm và liên kết. Thêm vào / gỡ khỏi cụm qua popup thêm / tạo, nhập nhanh, import (cụm đang chọn), menu dòng, hàng loạt, nhãn cột Cụm, drawer (chọn 1 cụm). Xoá cụm không gỡ bài khỏi khoá. Số đếm panel Cụm cập nhật ngay. Thứ tự bài trong cụm kéo thả được.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-SS.REQ06",
-   "name": "Tìm kiếm, lọc, sắp xếp",
-   "text": "Tìm theo tên, mô tả, nội dung; lọc theo cụm (panel Cụm) và Trạng thái `Tất cả / Nháp / Công khai / Vô hiệu`; sắp xếp `Thứ tự thêm / Tên A–Z / Mới cập nhật / Thứ tự trong cụm`; phân trang 50 dòng; đổi điều kiện về trang 1.",
+   "name": "Bảng, tìm kiếm, lọc, sắp xếp",
+   "text": "Bảng hiện đủ mọi field, cuộn ngang, ghim cột đầu / cuối. Tìm theo tên, mô tả, nội dung; lọc theo cụm (panel Cụm), Trạng thái `Tất cả / Nháp / Công khai / Vô hiệu`, Nâng cao `Tất cả / Có / Không`; sắp xếp `Thứ tự thêm / Tên A–Z / Mới cập nhật / Thứ tự trong cụm`; phân trang 50 dòng; đổi điều kiện về trang 1.",
    "source": "qc",
    "content": "qc"
   },
@@ -62,7 +62,7 @@
   {
    "id": "CM-SS.REQ09",
    "name": "Gỡ khỏi khoá",
-   "text": "Xoá ở S6 là gỡ khỏi khoá, khỏi mọi cụm và khỏi các bài học của khoá, có xác nhận; bản ghi thư viện còn; kết quả học viên giữ.",
+   "text": "Xoá ở S6 là gỡ khỏi khoá và khỏi cụm (bài học liên kết cụm không còn bài), có xác nhận nêu cụm và bài học; bản ghi thư viện còn; kết quả học viên giữ.",
    "source": "qc",
    "content": "qc"
   },
@@ -97,7 +97,7 @@
   {
    "id": "CM-SS.REQ14",
    "name": "Bài kỹ năng trong bài học",
-   "text": "Chỉ Chi tiết bài học liên kết bài kỹ năng với bài học: thêm cả cụm (chọn tất cả, một lần, không tự gắn bài mới) hoặc từng bài từ S6 của chính khoá; bài thiếu thông tin không gắn được; gỡ khỏi khoá / gỡ khỏi cụm / xoá cụm đang dùng ở bài học có cảnh báo liệt kê bài học, xác nhận thì tự gỡ khỏi bài học; một bài có thể ở nhiều bài học; không sửa nội dung tại bài; S6 không hiển thị bài học.",
+   "text": "Chi tiết bài học không chọn bài; tab Kỹ năng chỉ hiển thị bài của cụm đã liên kết, theo loại đang lọc (mặc định Nghe), tiêu đề là tên cụm; thay đổi ở cụm phản ánh ngay; không thêm / gỡ / sửa tại bài; badge tab = số loại kỹ năng có cụm liên kết.",
    "source": "qc",
    "content": "qc"
   },
@@ -261,9 +261,9 @@
    "content": "figma",
    "nodeId": "6646:120233",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/cd-kh-050155",
    "link": "/ky-nang-s6/nghe?popup=CD-KH-050155",
    "dark": "CD-KH-050155-DK",
    "openedFrom": [],
@@ -1146,7 +1146,7 @@
    "source": "tu-dien",
    "content": "qc",
    "requirement": "course_management/skill-s6/skill-s6.md",
-   "needsDesign": false,
+   "needsDesign": true,
    "figmaDiffNotes": [],
    "items": [
     {
@@ -1160,7 +1160,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-SS.A02.02",
@@ -1173,7 +1173,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-SS.A02.03",
@@ -1186,7 +1186,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-SS.A02.04",
@@ -1202,7 +1202,7 @@
       "CM-SS.TC05"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-SS.A02.05",
@@ -1221,10 +1221,23 @@
      ],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-SS.A02.06",
+     "name": "nang-cao",
+     "label": "Nâng cao",
+     "spec": "`Có` / `Không` (mặc định `Không`); `Có` = bài nâng cao, app không đẩy lên bước học chính, vẫn hiện trong danh sách luyện (**UI cần bổ sung**).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "CM-SS.A02.07",
      "name": "menu",
      "label": "Menu ⋮",
      "spec": "`Mở chi tiết`, `Thêm vào cụm / Gỡ khỏi cụm`, `Transcript AI`, `Gỡ khỏi khoá`.",
@@ -1234,10 +1247,10 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-co-thiet-ke"
     },
     {
-     "id": "CM-SS.A02.07",
+     "id": "CM-SS.A02.08",
      "name": "nhan-ai-duoi-ten",
      "label": "Nhãn AI dưới tên",
      "spec": "`AI · đang tạo transcript`, `AI · đã tạo, chờ duyệt`, `? <lý do nghi sai>` (xem khu vực AI).",
@@ -1253,7 +1266,7 @@
      ],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-co-thiet-ke"
     }
    ]
   },
@@ -1341,6 +1354,22 @@
      ],
      "missingTerms": [],
      "status": "khop"
+    },
+    {
+     "id": "CM-SS.A03.04",
+     "name": "cot-khac",
+     "label": "Cột khác",
+     "spec": "`Audio đọc mẫu`, `Số câu hỏi`, `Từ vựng liên quan` (số từ), `Nâng cao`, `Trạng thái`, `Cụm`; bảng cuộn ngang, ghim như bảng Nghe.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cột khác",
+      "Audio đọc mẫu"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },
@@ -1373,7 +1402,7 @@
      "id": "CM-SS.A04.02",
      "name": "so-cum",
      "label": "Số cụm",
-     "spec": "Mặc định `0`. **Chỉ nhập được khi chưa có cụm**: CD nhập N thì hệ thống tạo N cụm rỗng tên `Chủ đề 1` … `Chủ đề N`. Chưa có cụm thì panel hiện `Chưa có cụm. Nhập Số cụm để tạo các cụm rỗng \"Chủ đề 1 … N\".`. Đã có cụm thì ô chỉ đọc, hiện số cụm hiện tại; thêm / bớt cụm bằng `Thêm cụm mới` và menu ⋮ của cụm.",
+     "spec": "**Chỉ đọc**, = tổng `Số buổi` của các dòng Nội dung buổi học có Loại = kỹ năng của tab ở Tổng quan (S2); ghi chú `Theo Tổng quan (S2) · N buổi`. Hệ thống tự tạo đủ cụm rỗng `Chủ đề 1` … `Chủ đề N`; CD đổi tên, chia bài, liên kết bài học. Chưa có buổi thì panel hiện `Chưa có cụm. Nhập Số buổi cho loại <Nghe> ở Tổng quan (S2) để tạo cụm.`",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -1403,7 +1432,7 @@
      "id": "CM-SS.A04.04",
      "name": "dong-cum",
      "label": "Dòng cụm",
-     "spec": "`NN. <tên cụm>` + badge số bài của cụm (0 hiện xám); chọn để lọc bảng trái, tiêu đề bảng đổi thành tên cụm. Menu ⋮: `Đổi tên`, `Xoá cụm`.",
+     "spec": "`NN. <tên cụm>` + badge số bài của cụm (0 hiện xám) + chip bài học đã liên kết (`HK I · Bài 3`) hoặc nhãn cam `Chưa liên kết`; chọn để lọc bảng trái, tiêu đề bảng đổi thành tên cụm. Menu ⋮: `Đổi tên`, `Liên kết bài học`. Không có `Xoá cụm`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -1414,6 +1443,19 @@
     },
     {
      "id": "CM-SS.A04.05",
+     "name": "popup-lien-ket-bai-hoc",
+     "label": "Popup Liên kết bài học",
+     "spec": "Như S1: cây `<kỳ> › Bài N`, radio chọn đúng 1 bài; bài đã có cụm **cùng loại kỹ năng** mờ kèm `Đã liên kết: <cụm>`; `Bỏ liên kết`; `Huỷ` / `Lưu`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "CM-SS.A04.06",
      "name": "chua-phan-cum",
      "label": "Chưa phân cụm",
      "spec": "Badge cam = số bài chưa thuộc cụm nào; chọn để lọc.",
@@ -1422,17 +1464,16 @@
      "matches": {},
      "relations": [],
      "testcases": [
-      "CM-SS.TC11",
-      "CM-SS.TC12a"
+      "CM-SS.TC11"
      ],
      "missingTerms": [],
      "status": "chua-co-thiet-ke"
     },
     {
-     "id": "CM-SS.A04.06",
+     "id": "CM-SS.A04.07",
      "name": "them-cum-moi",
      "label": "Thêm cụm mới",
-     "spec": "Thêm 1 cụm rỗng ở cuối, đặt tên ngay tại dòng.",
+     "spec": "**Bỏ**: số cụm chỉ do S2 quyết định.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -1452,7 +1493,7 @@
    "source": "tu-dien",
    "content": "qc",
    "requirement": "course_management/skill-s6/skill-s6.md",
-   "needsDesign": false,
+   "needsDesign": true,
    "figmaDiffNotes": [],
    "items": [
     {
@@ -1466,7 +1507,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-SS.A05.02",
@@ -1479,7 +1520,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-SS.A05.03",
@@ -1492,7 +1533,7 @@
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-co-thiet-ke"
     },
     {
      "id": "CM-SS.A05.04",
@@ -1504,10 +1545,26 @@
      "matches": {},
      "relations": [],
      "testcases": [
-      "CM-SS.TC15"
+      "CM-SS.TC15",
+      "CM-SS.TC15a"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "CM-SS.A05.05",
+     "name": "nang-cao",
+     "label": "Nâng cao",
+     "spec": "`Tất cả` (mặc định), `Có`, `Không` (**UI cần bổ sung**).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-SS.TC15a"
+     ],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
     }
    ]
   },
@@ -1607,7 +1664,7 @@
      "id": "CM-SS.A06.04",
      "name": "cum",
      "label": "Cụm",
-     "spec": "Chỉ đọc: chip cụm bài đang thuộc (hoặc `Chưa phân cụm`); `Sửa cụm` mở popup Thêm vào cụm / Gỡ khỏi cụm. Drawer không có field `Bài học`.",
+     "spec": "Chỉ đọc: chip cụm bài đang thuộc (hoặc `Chưa phân cụm`) kèm bài học mà cụm liên kết; `Sửa cụm` mở popup Thêm vào cụm / Gỡ khỏi cụm. Drawer không có field `Bài học`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -1638,6 +1695,21 @@
     },
     {
      "id": "CM-SS.A06.05",
+     "name": "nang-cao",
+     "label": "Nâng cao",
+     "spec": "Toggle `Không` (mặc định) / `Có`; cùng ý nghĩa field Nâng cao của Kiến thức (S1): `Có` = bài nâng cao, không đẩy lên bước học chính. (**UI cần bổ sung**)",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Nâng cao"
+     ],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "CM-SS.A06.06",
      "name": "am-thanh",
      "label": "Âm thanh",
      "spec": "Trình phát `00:00 / mm:ss`; `Tải lên` / `Thay` / `Xoá`; chỉ `.mp3`, tối đa 50MB (theo `file_limits.json`, **khác Figma** ghi `MP3 / WAV · 25 MB`).",
@@ -1666,7 +1738,7 @@
      "status": "khop-mot-phan"
     },
     {
-     "id": "CM-SS.A06.06",
+     "id": "CM-SS.A06.07",
      "name": "kich-ban-n-luot",
      "label": "Kịch bản · N lượt",
      "spec": "Danh sách lượt thoại theo thứ tự: nhãn người nói (`A`, `B`…), câu gốc, `Phiên âm ·`, `Dịch ·`, mốc `start – end` theo audio (`mm:ss.s`, **UI cần bổ sung**). Thêm / sửa / xoá / kéo thả lượt; lượt có giá trị AI chờ duyệt viền nét đứt cam với `✓ Duyệt` / `↺ Hoàn tác`.",
@@ -1681,7 +1753,7 @@
      "status": "chua-co-thiet-ke"
     },
     {
-     "id": "CM-SS.A06.07",
+     "id": "CM-SS.A06.08",
      "name": "cau-hoi",
      "label": "Câu hỏi",
      "spec": "Tóm tắt `N câu hỏi · <loại> k · …` và `Mở chi tiết ›` dẫn sang màn Chi tiết câu hỏi của Thư viện bài tập (`CD-KH-070301` Listening); chưa có câu hiện `0 câu hỏi` màu cam.",
@@ -1710,7 +1782,7 @@
      "status": "khop-mot-phan"
     },
     {
-     "id": "CM-SS.A06.08",
+     "id": "CM-SS.A06.09",
      "name": "footer",
      "label": "Footer",
      "spec": "Ghi chú `Lưu = sửa bản ghi thư viện; mọi khoá dùng bài này thấy nội dung mới`; `Huỷ`, `Lưu`.",
@@ -1759,8 +1831,8 @@
    "items": [
     {
      "id": "CM-SS.A07.01",
-     "name": "ten-bai-mo-ta-cum-cau-hoi-footer",
-     "label": "Tên bài , Mô tả , Cụm, Câu hỏi, Footer",
+     "name": "ten-bai-mo-ta-cum-nang-cao-cau-hoi-foote",
+     "label": "Tên bài , Mô tả , Cụm, Nâng cao, Câu hỏi, Footer",
      "spec": "Như drawer bài nghe; `Mở chi tiết ›` dẫn sang `CD-KH-070302` Reading.",
      "source": "tu-dien",
      "content": "qc",
@@ -1811,7 +1883,8 @@
      "testcases": [],
      "missingTerms": [
       "Tên bài",
-      "Mô tả"
+      "Mô tả",
+      "Nâng cao"
      ],
      "status": "khop"
     },
@@ -2005,7 +2078,7 @@
      "id": "CM-SS.A08.07",
      "name": "popup-huy-luu",
      "label": "Popup — Huỷ / Lưu",
-     "spec": "Lưu: các bài chuyển vào cụm đã chọn (rời cụm cũ); chọn `Chưa phân cụm` thì gỡ khỏi cụm. Bài đang dùng ở bài học mà rời cụm → cảnh báo liệt kê bài học, xác nhận thì tự gỡ khỏi bài học.",
+     "spec": "Lưu: các bài chuyển vào cụm đã chọn (rời cụm cũ); chọn `Chưa phân cụm` thì gỡ khỏi cụm. Bài học liên kết cụm cũ / mới phản ánh ngay, không cảnh báo.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -2790,7 +2863,7 @@
    "source": "tu-dien",
    "content": "qc",
    "requirement": "course_management/skill-s6/skill-s6.md",
-   "needsDesign": true,
+   "needsDesign": false,
    "figmaDiffNotes": [],
    "items": [
     {
@@ -2803,21 +2876,27 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Tiêu đề",
+      "Gỡ N bài nghe khỏi khoá học?"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-SS.A13.02",
      "name": "noi-dung",
      "label": "Nội dung",
-     "spec": "`Bài nghe <tên> sẽ bị gỡ khỏi Kỹ năng (S6) của khoá, khỏi các cụm và khỏi các bài học đang dùng:` + **danh sách bài học đang dùng** (cảnh báo, **UI cần bổ sung** trên Figma `CD-KH-050155`); nhiều bài thì liệt kê tên từng bài. Không dùng ở bài học nào thì bỏ phần danh sách.",
+     "spec": "`Bài nghe <tên> sẽ bị gỡ khỏi Kỹ năng (S6) của khoá, khỏi cụm và khỏi bài học mà cụm liên kết:` + dòng `Cụm <tên> · <kỳ> · <bài>` (nếu bài thuộc cụm đã liên kết); nhiều bài thì liệt kê từng bài.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Nội dung",
+      "Bài nghe <tên> sẽ bị gỡ khỏi Kỹ năng (S6) của khoá, khỏi cụm và khỏi bài học mà cụm liên kết:"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "CM-SS.A13.03",
@@ -2826,11 +2905,27 @@
      "spec": "`Bản ghi trong Thư viện dữ liệu vẫn còn; khoá khác đang dùng không bị ảnh hưởng.`",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-050155": [
+       {
+        "term": "Bản ghi trong Thư viện dữ liệu vẫn còn; khoá khác đang dùng không bị ảnh hưởng.",
+        "figmaId": "6646:120239",
+        "layer": "Bản ghi trong Thư viện dữ liệu vẫn còn; khoá khác đang dùng không bị ảnh hưởng.",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Ghi chú"
+     ],
+     "status": "khop"
     },
     {
      "id": "CM-SS.A13.04",
@@ -2839,11 +2934,31 @@
      "spec": "`Huỷ`; `Xác nhận gỡ` (đỏ).",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "cd-kh-050155": [
+       {
+        "term": "Huỷ",
+        "figmaId": "6646:120241",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-thiet-ke"
+     "missingTerms": [
+      "Nút"
+     ],
+     "status": "khop"
     }
    ]
   },
@@ -3723,8 +3838,8 @@
   },
   {
    "id": "CM-SS.A20",
-   "name": "them-go-bai-ky-nang-trong-chi-tiet-bai-h",
-   "title": "Thêm / gỡ bài kỹ năng trong Chi tiết bài học",
+   "name": "cum-lien-ket-voi-chi-tiet-bai-hoc",
+   "title": "Cụm liên kết với Chi tiết bài học",
    "screens": [],
    "screensGuessed": [],
    "source": "tu-dien",
@@ -3735,9 +3850,9 @@
    "items": [
     {
      "id": "CM-SS.A20.01",
-     "name": "popup-them",
-     "label": "Popup + Thêm",
-     "spec": "Tiêu đề `Thêm kỹ năng vào bài học` + tên bài; 1 màn 3 cột: Loại (`Nghe` / `Đọc` / `Viết` / `Nói`, luôn hiện đủ 4, loại chưa có dữ liệu hiện trống) / Cụm / Bài (checkbox, `Chọn tất cả`, ô tìm). Giữ lựa chọn khi đổi cụm / loại. Bài đã có trong bài mờ, tick sẵn; bài **thiếu thông tin** mờ, không chọn được. `Huỷ`, `Thêm ({n})`.",
+     "name": "nguon-du-lieu",
+     "label": "Nguồn dữ liệu",
+     "spec": "Với mỗi loại kỹ năng, bài học có tối đa 1 cụm liên kết; tab hiện bài của cụm đó theo `Thứ tự trong cụm`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -3748,9 +3863,9 @@
     },
     {
      "id": "CM-SS.A20.02",
-     "name": "them-ca-cum",
-     "label": "Thêm cả cụm",
-     "spec": "Chọn cụm → `Chọn tất cả`: thêm **một lần** mọi bài đủ thông tin hiện có của cụm theo `Thứ tự trong cụm`; bài thêm sau vào cụm **không** tự vào bài học.",
+     "name": "bo-loc-loai",
+     "label": "Bộ lọc loại",
+     "spec": "`Nghe` (mặc định), `Đọc`, `Viết`, `Nói`; loại chưa liên kết hiện `Chưa có cụm <loại> liên kết với bài này` + hướng dẫn `Liên kết tại Kỹ năng (S6) › panel Cụm`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -3761,9 +3876,22 @@
     },
     {
      "id": "CM-SS.A20.03",
-     "name": "danh-sach-trong-bai",
-     "label": "Danh sách trong bài",
-     "spec": "Mỗi bài có `×` gỡ khỏi bài học này (bài vẫn ở S6 và ở cụm), không có nút sửa.",
+     "name": "tieu-de-khung",
+     "label": "Tiêu đề khung",
+     "spec": "Tên cụm đã liên kết (vd `Cụm nghe: Chào hỏi · 3 bài`).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [],
+     "status": "chua-co-thiet-ke"
+    },
+    {
+     "id": "CM-SS.A20.04",
+     "name": "dong-bo",
+     "label": "Đồng bộ",
+     "spec": "Thêm / gỡ / chuyển bài trong cụm, đổi tên cụm, đổi liên kết ở S6 → bài học cập nhật ngay.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -4012,7 +4140,7 @@
   },
   {
    "id": "CM-SS.EX04",
-   "text": "Gắn bản ghi thư viện đã có trong khoá → popup khoá lựa chọn; API từ chối gắn trùng.",
+   "text": "Gắn bản ghi thư viện đã có trong khoá → popup khoá lựa chọn, không gắn thêm từ popup; API vẫn nhận (như S1 REQ04: không bắt trùng bản ghi trong khoá).",
    "source": "qc",
    "content": "qc"
   },
@@ -4042,19 +4170,25 @@
   },
   {
    "id": "CM-SS.EX09",
-   "text": "Lưu drawer, thêm / gỡ cụm, gỡ bài, duyệt AI thất bại → giữ dữ liệu cũ, Toast `Có Lỗi Xảy Ra`.",
+   "text": "Lưu drawer, thêm / gỡ cụm, liên kết bài học, gỡ bài, duyệt AI thất bại → giữ dữ liệu cũ, Toast `Có Lỗi Xảy Ra`.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-SS.EX10",
-   "text": "Thêm bài vào cụm của tab khác / khoá khác, hoặc thêm vào bài học không thuộc khoá đang mở (qua API) → từ chối.",
+   "text": "Thêm bài vào cụm của tab khác / khoá khác, hoặc liên kết cụm với bài học không thuộc khoá đang mở (qua API) → từ chối.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-SS.EX11",
-   "text": "Nhập `Số cụm` khi tab đã có cụm (qua API) → từ chối; số cụm âm / không phải số → báo lỗi tại ô.",
+   "text": "Đổi `Số cụm`, thêm hoặc xoá cụm trực tiếp ở S6 (UI / API) → ô chỉ đọc, không có nút; API từ chối. Số cụm chỉ đổi qua Số buổi ở S2.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-SS.EX13",
+   "text": "Liên kết cụm với bài học đã có cụm cùng loại kỹ năng → BE từ chối (409), Toast `Cảnh Báo` nêu cụm đang chiếm; dữ liệu không đổi.",
    "source": "qc",
    "content": "qc"
   }
@@ -4131,7 +4265,7 @@
   },
   {
    "id": "CM-SS.FLOW08",
-   "name": "Quản lý cụm",
+   "name": "Cụm sinh từ S2, đổi tên, liên kết bài học, chia cụm AI",
    "source": "qc",
    "content": "qc",
    "requirements": [
@@ -4177,7 +4311,7 @@
   },
   {
    "id": "CM-SS.FLOW13",
-   "name": "Thêm / gỡ bài kỹ năng trong Chi tiết bài học",
+   "name": "Xem bài kỹ năng của bài học theo cụm liên kết",
    "source": "qc",
    "content": "qc",
    "requirements": [
@@ -4404,12 +4538,12 @@
    "exceptions": [],
    "flows": [],
    "items": [
-    "CM-SS.A04.05"
+    "CM-SS.A04.06"
    ]
   },
   {
    "id": "CM-SS.TC12",
-   "title": "Case 12: Tạo cụm theo Số cụm",
+   "title": "Case 12: Cụm sinh từ S2",
    "priority": "High",
    "smoke": true,
    "region": "CM-SS.A04",
@@ -4429,9 +4563,9 @@
   },
   {
    "id": "CM-SS.TC12a",
-   "title": "Case 12a: Xoá cụm",
-   "priority": "Medium",
-   "smoke": false,
+   "title": "Case 12a: Liên kết cụm với bài học",
+   "priority": "High",
+   "smoke": true,
    "region": "CM-SS.A04",
    "scenario": "Flow 8 / REQ05",
    "source": "qc",
@@ -4443,9 +4577,25 @@
    "flows": [
     "CM-SS.FLOW08"
    ],
-   "items": [
-    "CM-SS.A04.05"
-   ]
+   "items": []
+  },
+  {
+   "id": "CM-SS.TC12c",
+   "title": "Case 12c: Bài đã có cụm cùng loại",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-SS.A04",
+   "scenario": "EX13 / REQ05",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-SS.REQ05"
+   ],
+   "exceptions": [
+    "CM-SS.EX13"
+   ],
+   "flows": [],
+   "items": []
   },
   {
    "id": "CM-SS.TC12b",
@@ -4535,6 +4685,25 @@
    "flows": [],
    "items": [
     "CM-SS.A05.04"
+   ]
+  },
+  {
+   "id": "CM-SS.TC15a",
+   "title": "Case 15a: Lọc Nâng cao và cuộn ngang",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-SS.A05",
+   "scenario": "REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-SS.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-SS.A05.04",
+    "CM-SS.A05.05"
    ]
   },
   {
@@ -4629,7 +4798,7 @@
     "CM-SS.FLOW05"
    ],
    "items": [
-    "CM-SS.A06.07"
+    "CM-SS.A06.08"
    ]
   },
   {
@@ -4726,7 +4895,7 @@
   },
   {
    "id": "CM-SS.TC24a",
-   "title": "Case 24a: Chuyển cụm bài đang dùng ở bài học",
+   "title": "Case 24a: Chuyển cụm bài đang hiển thị ở bài học",
    "priority": "High",
    "smoke": false,
    "region": "CM-SS.A08",
@@ -5428,7 +5597,7 @@
   },
   {
    "id": "CM-SS.TC54",
-   "title": "Case 54: Thêm cụm bài nghe vào bài học",
+   "title": "Case 54: Bài học hiện bài của cụm liên kết",
    "priority": "High",
    "smoke": true,
    "region": "CM-SS.A20",
@@ -5445,8 +5614,42 @@
    "items": []
   },
   {
+   "id": "CM-SS.TC55",
+   "title": "Case 55: Thêm bài vào cụm, bài học cập nhật",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-SS.A20",
+   "scenario": "Flow 13 / REQ14",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-SS.REQ14"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-SS.FLOW13"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-SS.TC55a",
+   "title": "Case 55a: Loại chưa liên kết",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-SS.A20",
+   "scenario": "REQ14",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-SS.REQ14"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
    "id": "CM-SS.TC55b",
-   "title": "Case 55b: Xoá cụm / gỡ bài đang dùng ở bài học",
+   "title": "Case 55b: Gỡ bài khỏi khoá đang ở cụm liên kết",
    "priority": "High",
    "smoke": false,
    "region": "CM-SS.A20",
@@ -5455,38 +5658,6 @@
    "content": "qc",
    "requirements": [
     "CM-SS.REQ09",
-    "CM-SS.REQ14"
-   ],
-   "exceptions": [],
-   "flows": [],
-   "items": []
-  },
-  {
-   "id": "CM-SS.TC55",
-   "title": "Case 55: Một bài kỹ năng ở nhiều bài học",
-   "priority": "Medium",
-   "smoke": false,
-   "region": "CM-SS.A20",
-   "scenario": "REQ14",
-   "source": "qc",
-   "content": "qc",
-   "requirements": [
-    "CM-SS.REQ14"
-   ],
-   "exceptions": [],
-   "flows": [],
-   "items": []
-  },
-  {
-   "id": "CM-SS.TC55a",
-   "title": "Case 55a: Gỡ khỏi bài học",
-   "priority": "Medium",
-   "smoke": false,
-   "region": "CM-SS.A20",
-   "scenario": "REQ14",
-   "source": "qc",
-   "content": "qc",
-   "requirements": [
     "CM-SS.REQ14"
    ],
    "exceptions": [],

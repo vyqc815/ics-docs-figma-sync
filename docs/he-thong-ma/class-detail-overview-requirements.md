@@ -113,10 +113,10 @@ Frame: `ADM-LOP-020110` (tool đoán:ADM-LOP-020110) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A07.01` | icon-canh-ten-hoc-vien-dang-chon |  |  | — |  |  | Chưa sync | QC |
-| `A07.02` | popup-lich-su-ghi-chu |  |  | — |  |  | Chưa sync | QC |
-| `A07.03` | copy |  |  | — |  | `TC22`, `TC46` | Chưa sync | QC |
-| `A07.04` | ghi-chu-bat-thuong |  |  | — |  |  | Chưa sync | QC |
+| `A07.01` | icon-canh-ten-hoc-vien-dang-chon |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.02` | popup-lich-su-ghi-chu |  | `3348:62669` ADM-LOP-020110 — Lớp học / Tổng quan / Popup lịch sử ghi chú | — |  |  | Khớp | QC |
+| `A07.03` | copy | `Action Icon` Size=18 | `3348:62677` Copy | — |  | `TC22`, `TC46` | Khớp | QC |
+| `A07.04` | ghi-chu-bat-thuong |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A08` Đánh giá tổng và bài học gần đây
 
@@ -308,8 +308,7 @@ Frame: `ADM-LOP-020100` · Nguồn nội dung: Figma
 
 - `A08` Khác Figma ADM-LOP-020100: khối Bài học gần đây ở vùng trái đang vẽ 4 icon, requirement là 6 bài.
 - `A09` Khác Figma ADM-LOP-020100: bảng bài chưa có tag thời điểm mở bài phía trên tên bài.
-- Chưa khớp tự động (60): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.07`, `A01.08`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.07`, `A02.08`, `A03.09`, `A04.01`, `A04.03`, `A04.04`, `A04.05`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A05.09`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A06.05`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.09`, `A08.10`, `A08.11`, `A09.06`, `A09.07`, `A09.08`, `A09.09`, `A09.10`, `A09.11`, `A09.12`, `A10.01`, `A10.02`, `A10.03`, `A11.01`, `A11.02`, `A11.03`, `A11.04`, `A12.01`, `A12.02`, `A12.03`, `A12.04`
-- Chưa sync (4): `A07.01`, `A07.02`, `A07.03`, `A07.04`
+- Chưa khớp tự động (62): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.07`, `A01.08`, `A02.01`, `A02.02`, `A02.03`, `A02.04`, `A02.07`, `A02.08`, `A03.09`, `A04.01`, `A04.03`, `A04.04`, `A04.05`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A05.09`, `A06.01`, `A06.02`, `A06.03`, `A06.04`, `A06.05`, `A07.01`, `A07.04`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.09`, `A08.10`, `A08.11`, `A09.06`, `A09.07`, `A09.08`, `A09.09`, `A09.10`, `A09.11`, `A09.12`, `A10.01`, `A10.02`, `A10.03`, `A11.01`, `A11.02`, `A11.03`, `A11.04`, `A12.01`, `A12.02`, `A12.03`, `A12.04`
 - Frame Figma chưa có requirement (1): `ADM-LOP-020110`
 - Thiếu prototype link đi vào (1): `ADM-LOP-020110`
 - REQ/EX chưa có testcase (1): `EX06`

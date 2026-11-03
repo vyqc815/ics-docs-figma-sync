@@ -29,13 +29,16 @@
 - `A02.01` **ID**: Nhập được?: ❌; Mã tự sinh, hiển thị dạng badge
 - `A02.02` **Tên**: Nhập được?: ✅; Tên nội dung, hiển thị in đậm. Bắt buộc: để trống/chỉ khoảng trắng thì không lưu, trả về tên cũ
 - `A02.03` **Mô tả**: Nhập được?: ✅; Hiển thị placeholder xám "Nhập mô tả nội dung bài học" khi chưa có dữ liệu
-- `A02.04` **Số buổi**: Nhập được?: ✅; Hiển thị dạng badge số. Chỉ nhận số nguyên **≥ 0**; mặc định **0**, xoá trống ô thì giá trị về **0**
-- `A02.05` **Thời gian học**: Nhập được?: ✅; Badge định dạng giờ:phút:giây; là thời lượng của riêng nội dung đó trong 1 buổi, khác với "Thời gian mỗi buổi" ở card tổng quan. Nhập phút hoặc giây vượt 59 thì hệ thống tự quy đổi cho đúng (ví dụ `00:00:120` → `00:02:00`, `1:70:00` → `02:10:00`)
-- `A02.06` **Tổng thời gian**: Nhập được?: ❌; Tự tính = Số buổi × Thời gian học
-- `A02.07` **%**: Nhập được?: ❌; Tự tính = Tổng thời gian dòng ÷ Tổng thời gian (card) × 100, làm tròn 2 chữ số thập phân. Tổng thời gian (card) = 0 thì hiển thị `0%`
-- `A02.08` **Thao tác**: Nhập được?: —; Gồm icon chuyển loại thao tác (Tự chọn/Giảng dạy) và icon thùng rác để xoá. Nội dung mới tạo mặc định là **Giảng dạy**
+- `A02.04` **Loại**: Nhập được?: ✅; Dropdown chọn **đúng 1 loại** kiến thức / kỹ năng: `Từ vựng`, `Ngữ pháp`, `Mẫu câu`, `Hanzi`, `Kanji`, `Phát âm`, `Bảng chữ` (chỉ trung tâm có hệ chữ riêng), `Nghe`, `Đọc`, `Viết`, `Nói`. Mặc định trống, hiển thị placeholder `Chọn loại`; bắt buộc để dòng được tính vào số cụm (REQ12). **UI cần bổ sung**
+- `A02.05` **Số buổi**: Nhập được?: ✅; Hiển thị dạng badge số. Chỉ nhận số nguyên **≥ 0**; mặc định **0**, xoá trống ô thì giá trị về **0**
+- `A02.06` **Thời gian học**: Nhập được?: ✅; Badge định dạng giờ:phút:giây; là thời lượng của riêng nội dung đó trong 1 buổi, khác với "Thời gian mỗi buổi" ở card tổng quan. Nhập phút hoặc giây vượt 59 thì hệ thống tự quy đổi cho đúng (ví dụ `00:00:120` → `00:02:00`, `1:70:00` → `02:10:00`)
+- `A02.07` **Tổng thời gian**: Nhập được?: ❌; Tự tính = Số buổi × Thời gian học
+- `A02.08` **%**: Nhập được?: ❌; Tự tính = Tổng thời gian dòng ÷ Tổng thời gian (card) × 100, làm tròn 2 chữ số thập phân. Tổng thời gian (card) = 0 thì hiển thị `0%`
+- `A02.09` **Thao tác**: Nhập được?: —; Gồm icon chuyển loại thao tác (Tự chọn/Giảng dạy) và icon thùng rác để xoá. Nội dung mới tạo mặc định là **Giảng dạy**
 
 - Icon trong cột "Thao tác" (trước icon xoá) là nút để **chuyển đổi loại thao tác của nội dung** giữa 2 giá trị: **Tự chọn** và **Giảng dạy** (nhấn vào để đổi qua lại giữa 2 trạng thái này), hover vào hiển thị thao tác hiện tại.
+- **Số cụm theo loại:** với mỗi loại, tổng `Số buổi` của các dòng cùng loại = số cụm của loại đó ở Kiến thức (S1) / Kỹ năng (S6). Ví dụ `Từ vựng A` 5 buổi + `Từ vựng B` 10 buổi → S1 tab Từ vựng có đúng 15 cụm. Dòng chưa chọn Loại không tính. Hệ thống tự tạo thêm cụm rỗng tên `Chủ đề k` khi tổng tăng; CD đổi tên, chia mục và liên kết bài học tại S1 / S6 (xem REQ12, EX05).
+- Dưới bảng có khối tóm tắt `Số cụm theo loại`: mỗi loại một dòng `Loại · Tổng số buổi · Số cụm hiện có ở S1 / S6`, lệch thì hiện cảnh báo cam (chỉ xảy ra khi giảm buổi bị chặn giữa chừng). **UI cần bổ sung**
 - Cột "Tổng thời gian" và "%" của từng dòng, cùng 2 card "Thời gian thực tế" và "Thời gian còn lại", đều tự động tính lại ngay khi CD thay đổi Số buổi hoặc Thời gian học của bất kỳ dòng nào (xem công thức ở mục 2.3).
 
 ---
@@ -73,7 +76,7 @@ CD nhấn vào ô "Thêm nội dung buổi học mới" → CD nhập Tên nội
 **Flow 3: Chỉnh sửa thông tin một nội dung**
 
 ```
-CD sửa trực tiếp Tên / Mô tả / Số buổi / Thời gian học trên 1 dòng (Tên để trống: không lưu, trả về tên cũ; Số buổi xoá trống: về 0; Thời gian học vượt 59 phút/giây: tự quy đổi) 
+CD sửa trực tiếp Tên / Mô tả / Loại / Số buổi / Thời gian học trên 1 dòng (Tên để trống: không lưu, trả về tên cũ; Số buổi xoá trống: về 0; Thời gian học vượt 59 phút/giây: tự quy đổi; đổi Loại hoặc Số buổi thì chạy Flow 7) 
 → FE gửi dữ liệu lên BE theo từng field → BE cập nhật 
 → FE tính lại Tổng thời gian và % của dòng đó, đồng thời tính lại các card tổng quan liên quan
 ```
@@ -110,11 +113,28 @@ BE xoá mềm nội dung → FE loại dòng khỏi bảng, cập nhật badge s
 Đóng popup, giữ nguyên dữ liệu
 ```
 
+**Flow 7: Đồng bộ số cụm ở S1 / S6 theo Loại và Số buổi**
+
+```
+CD chọn Loại hoặc đổi Số buổi của 1 dòng đã có Loại
+→ BE tính tổng Số buổi của mọi dòng cùng Loại = N
+→ N > số cụm hiện có của loại ở S1 / S6: BE tạo thêm cụm rỗng "Chủ đề k" vào cuối danh sách cụm cho đủ N
+→ N < số cụm hiện có: BE kiểm tra các cụm cuối sẽ bị bỏ
+    ↓ (cụm bị bỏ đều rỗng và chưa liên kết bài học)
+  BE xoá các cụm đó, lưu dòng
+    ↓ (có cụm còn mục hoặc còn liên kết bài học)
+  BE từ chối, FE giữ giá trị cũ, Toast Cảnh Báo nêu tên cụm cần dọn trước (EX05)
+→ Đổi Loại của dòng = giảm buổi ở loại cũ + tăng buổi ở loại mới, kiểm tra như trên
+→ FE cập nhật khối "Số cụm theo loại"
+```
+
 ### 2.2. Ngoại lệ
 
 - **EX01:** Tổng thời gian các nội dung trong bảng vượt quá "Tổng thời gian" ở card tổng quan (khiến "Thời gian còn lại" âm) → card "Thời gian còn lại" hiển thị giá trị âm màu **đỏ** để cảnh báo CD (không chặn thao tác).
 - **EX02:** Nhập Số buổi (card hoặc dòng) là số âm, số thập phân hoặc chữ → không lưu, giữ giá trị cũ; xoá trống ô Số buổi → giá trị về `0`. Nhập Thời gian mỗi buổi không phải số nguyên dương (0, số âm, số thập phân, chữ, để trống) → không lưu, giữ giá trị cũ.
 - **EX03:** Tên nội dung để trống hoặc chỉ khoảng trắng: khi thêm mới thì không tạo; khi sửa thì không lưu, trả về tên cũ.
+- **EX05:** Giảm Số buổi, đổi Loại hoặc xoá dòng làm số cụm của loại phải giảm, nhưng cụm sẽ bị bỏ còn mục hoặc còn liên kết bài học → BE từ chối, giữ giá trị cũ, Toast `Cảnh Báo` `Cụm <tên> của <loại> còn dữ liệu, dọn cụm ở S1 / S6 trước.`
+- **EX06:** Chọn Loại `Bảng chữ` ở trung tâm không có hệ chữ riêng (qua request) → BE từ chối.
 - **EX04:** Thời gian học nhập phút hoặc giây vượt 59 (ví dụ `00:00:120`, `1:70:00`) → hệ thống tự quy đổi phần vượt lên đơn vị lớn hơn cho đúng (`00:02:00`, `02:10:00`), rồi lưu và tính lại.
 
 ### 2.3. Yêu cầu khác
@@ -131,6 +151,7 @@ BE xoá mềm nội dung → FE loại dòng khỏi bảng, cập nhật badge s
 | REQ08 | Loại thao tác của nội dung | Mỗi nội dung có loại thao tác là Tự chọn hoặc Giảng dạy, đổi qua lại bằng icon cạnh nút xoá trong cột "Thao tác". Nội dung mới tạo mặc định là Giảng dạy. |
 | REQ09 | Màu Thời gian còn lại | Âm: màu đỏ (cảnh báo, không chặn thao tác); dương: màu xanh lá; bằng 0: màu đen mặc định. |
 | REQ10 | Xoá mềm nội dung | Xoá một nội dung buổi học là xoá mềm, có popup xác nhận trước khi xoá. |
+| REQ12 | Loại và số cụm | Mỗi dòng nội dung có đúng 1 Loại kiến thức / kỹ năng. Với từng loại: số cụm ở S1 / S6 = tổng Số buổi các dòng cùng loại; hệ thống tự tạo cụm rỗng `Chủ đề k` khi tăng, tự xoá cụm rỗng chưa liên kết khi giảm, chặn khi cụm bị bỏ còn mục hoặc còn liên kết bài học. CD không nhập Số cụm ở S1 / S6. Dòng chưa chọn Loại không tính vào số cụm. |
 | REQ11 | Định dạng Thời gian học | Thời gian học lưu và hiển thị theo `HH:mm:ss`. Giá trị nhập có phút hoặc giây vượt 59 được tự quy đổi lên đơn vị lớn hơn (ví dụ `00:00:120` → `00:02:00`). |
 
 ### 2.4. Ràng buộc
@@ -144,6 +165,7 @@ BE xoá mềm nội dung → FE loại dòng khỏi bảng, cập nhật badge s
 
 #### Ràng buộc khác
 
+- Số cụm ở S1 / S6 chỉ do S2 quyết định; xoá dòng nội dung có Loại cũng chạy kiểm tra giảm cụm như REQ12.
 - Cột "ID", "Tổng thời gian", "%" không cho CD chỉnh sửa trực tiếp, luôn do hệ thống tự sinh/tự tính.
 - Ở card tổng quan, chỉ `Số buổi` và `Thời gian mỗi buổi` được nhập; `Tổng thời gian`, `Thời gian thực tế`, `Thời gian còn lại` do hệ thống tự tính, không cho nhập hay sửa.
 - Không cho phép xem/thao tác nếu không có quyền, kể cả khi gọi trực tiếp bằng URL hoặc request.
@@ -158,7 +180,7 @@ BE xoá mềm nội dung → FE loại dòng khỏi bảng, cập nhật badge s
 
 | Tên testcase | Priority | Scenario | Role | Pre-condition | Given/When/Then | Expected Result |
 |---|---|---|---|---|---|---|
-| Case 1: Xem tổng quan | High · Smoke | Flow chính | CD | Khoá học đã có sẵn nội dung buổi học | **Given:** CD mở màn hình Tổng quan (S2)<br>**When:** trang tải xong<br>**Then:** hệ thống hiển thị đầy đủ 5 card và bảng nội dung | - 5 card hiển thị đúng giá trị<br>- Bảng hiển thị đầy đủ các nội dung, badge số lượng đúng |
+| Case 1: Xem tổng quan | High · Smoke | Flow chính | CD | Khoá học đã có sẵn nội dung buổi học, có dòng đã chọn Loại | **Given:** CD mở màn hình Tổng quan (S2)<br>**When:** trang tải xong<br>**Then:** hệ thống hiển thị đầy đủ 5 card và bảng nội dung | - 5 card hiển thị đúng giá trị<br>- Bảng hiển thị đầy đủ các nội dung, badge số lượng đúng |
 | Case 2: Giá trị mặc định và nhập Số buổi / Thời gian mỗi buổi lần đầu | High | Flow 1 / REQ06 | CD | Khoá học mới, chưa nhập card | **Given:** CD mở S2 lần đầu<br>**When:** quan sát card, rồi nhập Số buổi và sửa Thời gian mỗi buổi<br>**Then:** hệ thống tính lại Tổng thời gian (card) và % của các dòng | - Mặc định: Số buổi = 0, Thời gian mỗi buổi = 90 phút, Tổng thời gian = 0<br>- Sau khi nhập: Tổng thời gian (card) = Số buổi × Thời gian mỗi buổi; % các dòng cập nhật theo mẫu số mới |
 | Case 3: Thêm nhanh nội dung mới | High · Smoke | Flow 2 / REQ07 | CD | Đang ở màn hình Tổng quan (S2) | **Given:** CD nhấn vào ô "Thêm nội dung buổi học mới"<br>**When:** CD nhập Tên và nhấn Enter<br>**Then:** hệ thống tạo nội dung mới | - Dòng mới xuất hiện trong bảng với Tên vừa nhập<br>- Các field còn lại để trống/mặc định<br>- Badge số lượng tăng lên |
 | Case 4: Sửa Số buổi/Thời gian học → tự tính Tổng thời gian và % | High | Flow 5 / REQ01 / REQ02 | CD | Bảng đã có ít nhất 1 nội dung | **Given:** dòng nội dung đang hiển thị Số buổi và Thời gian học hiện tại<br>**When:** CD sửa Số buổi hoặc Thời gian học<br>**Then:** hệ thống tính lại Tổng thời gian và % của dòng đó | - Tổng thời gian = Số buổi × Thời gian học mới<br>- % = Tổng thời gian dòng ÷ Tổng thời gian card × 100, hiển thị đúng |
@@ -174,6 +196,12 @@ BE xoá mềm nội dung → FE loại dòng khỏi bảng, cập nhật badge s
 | Case 14: Tên nội dung để trống | High | EX03 / REQ07 | CD | Bảng đã có nội dung | **Given:** CD thêm mới hoặc sửa Tên<br>**When:** để trống / chỉ khoảng trắng<br>**Then:** hệ thống không lưu | - Thêm mới: không tạo dòng<br>- Sửa: trả về tên cũ |
 | Case 15: Loại thao tác mặc định | Low | REQ08 | CD | - | **Given:** CD thêm nội dung mới<br>**When:** hover icon loại thao tác<br>**Then:** hiển thị loại hiện tại | - Mặc định là Giảng dạy |
 | Case 16: Thời gian học nhập vượt 59 tự quy đổi | Medium | EX04 / REQ11 | CD | Bảng đã có ít nhất 1 nội dung | **Given:** CD sửa Thời gian học của 1 dòng<br>**When:** nhập `00:00:120`, `00:90:00`, `1:70:00`<br>**Then:** hệ thống tự quy đổi | - Lần lượt thành `00:02:00`, `01:30:00`, `02:10:00`<br>- Tổng thời gian dòng, %, các card tính theo giá trị đã quy đổi |
+| Case 18: Chọn Loại sinh cụm ở S1 | High · Smoke | Flow 7 / REQ12 | CD | Dòng `Từ vựng A` Số buổi 5 chưa có Loại; S1 Từ vựng có 0 cụm | **Given:** CD chọn Loại `Từ vựng`<br>**When:** lưu<br>**Then:** S1 tab Từ vựng có 5 cụm `Chủ đề 1`…`Chủ đề 5`, Số cụm chỉ đọc = 5 | - Khối Số cụm theo loại: `Từ vựng · 5 buổi · 5 cụm` |
+| Case 19: Hai dòng cùng loại cộng dồn | High | Flow 7 / REQ12 | CD | `Từ vựng A` 5 buổi, thêm `Từ vựng B` Loại Từ vựng 10 buổi | **Given:** CD nhập Số buổi 10 cho dòng B<br>**When:** lưu<br>**Then:** S1 Từ vựng có 15 cụm | - Cụm 6–15 tên `Chủ đề 6`…`Chủ đề 15` |
+| Case 20: Giảm buổi khi cụm cuối rỗng | Medium | Flow 7 / REQ12 | CD | Từ vựng 15 cụm, cụm 15 rỗng, chưa liên kết | **Given:** CD giảm dòng B từ 10 xuống 9<br>**When:** lưu<br>**Then:** S1 còn 14 cụm | - Cụm 1–14 giữ nguyên tên, mục, liên kết |
+| Case 21: Giảm buổi bị chặn | High | EX05 / REQ12 | CD | Cụm 15 có 3 mục hoặc đã liên kết Bài 15 | **Given:** CD giảm dòng B xuống 9<br>**When:** BE kiểm tra<br>**Then:** từ chối, Số buổi giữ 10, Toast `Cảnh Báo` nêu cụm 15 | - S1 vẫn 15 cụm |
+| Case 22: Đổi Loại của dòng | Medium | Flow 7 / REQ12 | CD | Dòng A Loại Từ vựng 5 buổi, Ngữ pháp 0 cụm | **Given:** CD đổi Loại dòng A sang `Ngữ pháp`<br>**When:** 5 cụm Từ vựng cuối rỗng<br>**Then:** Từ vựng còn 10 cụm, Ngữ pháp có 5 cụm | - Cụm Từ vựng còn mục thì bị chặn như Case 21 |
+| Case 23: Dòng chưa chọn Loại | Medium | REQ12 | CD | Dòng mới Số buổi 3, Loại trống | **Given:** CD xem khối Số cụm theo loại<br>**When:** quan sát<br>**Then:** không loại nào cộng 3 buổi này | - Placeholder `Chọn loại` trên dòng |
 | Case 17: Số buổi của dòng xoá trống về 0 | Low | EX02 | CD | Dòng có Số buổi = 4 | **Given:** CD xoá trống ô Số buổi của dòng<br>**When:** rời ô<br>**Then:** hệ thống lưu giá trị 0 | - Số buổi = 0, Tổng thời gian dòng = `00:00:00`, % = 0%<br>- Card Thời gian thực tế, Thời gian còn lại tính lại |
 
 ### Feature: Tổng quan (S2)

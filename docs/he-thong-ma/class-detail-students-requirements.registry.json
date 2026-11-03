@@ -145,9 +145,9 @@
    "content": "figma",
    "nodeId": "2409:147699",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-040210",
    "link": "/lop-hoc/cai-dat/hoc-vien?popup=ADM-LOP-040210",
    "dark": "ADM-LOP-040210-DK",
    "openedFrom": [],
@@ -168,9 +168,9 @@
    "content": "figma",
    "nodeId": "2409:147786",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-040220",
    "link": "/lop-hoc/cai-dat/hoc-vien?popup=ADM-LOP-040220",
    "dark": "ADM-LOP-040220-DK",
    "openedFrom": [],
@@ -191,9 +191,9 @@
    "content": "figma",
    "nodeId": "2409:147854",
    "inFigma": true,
-   "inPageList": false,
-   "synced": false,
-   "route": null,
+   "inPageList": true,
+   "synced": true,
+   "route": "/frames/adm-lop-040230",
    "link": "/lop-hoc/cai-dat/hoc-vien?popup=ADM-LOP-040230",
    "dark": "ADM-LOP-040230-DK",
    "openedFrom": [],
@@ -912,8 +912,11 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Nội dung ghi chú",
+      "Admin"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDS3.A06.02",
@@ -927,8 +930,10 @@
      "testcases": [
       "M-CDS3.TC24"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Icon lịch sử"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDS3.A06.03",
@@ -940,8 +945,10 @@
      "matches": {},
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Mỗi bản ghi lịch sử"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDS3.A06.04",
@@ -950,13 +957,30 @@
      "spec": "Sao chép nguyên nội dung của đúng bản ghi vào clipboard; không chỉnh sửa dữ liệu.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040210": [
+       {
+        "term": "Copy",
+        "figmaId": "2409:147708",
+        "layer": "Copy",
+        "confidence": "cao",
+        "region": "Note Item",
+        "owner": "Copy",
+        "component": "Action Icon",
+        "variant": {
+         "Icon": "Copy",
+         "Size": "18"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDS3.TC25"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ]
   },
@@ -983,11 +1007,27 @@
      "spec": "`Đang học` dùng icon bút trắng trên nền cam theo mẫu chuẩn. Màu/icon phải nhất quán trên danh sách, menu và lịch sử.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040220": [
+       {
+        "term": "Đang học",
+        "figmaId": "2409:147815",
+        "layer": "Label",
+        "confidence": "cao",
+        "region": "List",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Trạng thái hiện tại"
+     ],
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A07.02",
@@ -996,11 +1036,27 @@
      "spec": "`Đang học`, `Hoàn thành`, `Dự thính`, `Rời lớp`, `Nghỉ học`, `Chỉ xem`, `Xóa`. Menu không cần hiển thị lại trạng thái hiện tại như một đích chuyển.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040220": [
+       {
+        "term": "Đang học",
+        "figmaId": "2409:147815",
+        "layer": "Label",
+        "confidence": "cao",
+        "region": "List",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Trạng thái hợp lệ"
+     ],
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A07.03",
@@ -1009,11 +1065,40 @@
      "spec": "Bấm trạng thái đích để cập nhật quan hệ học viên–lớp. Chuyển sang `Đang học` chỉ hợp lệ khi học viên đã có học phí trong lớp.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040220": [
+       {
+        "term": "Đổi trạng thái",
+        "figmaId": "I2527:167828;2514:153348",
+        "layer": "Title",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "No",
+         "Icon": "No"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Đang học",
+        "figmaId": "2409:147815",
+        "layer": "Label",
+        "confidence": "cao",
+        "region": "List",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A07.04",
@@ -1022,7 +1107,25 @@
      "spec": "Mỗi bản ghi hiển thị trạng thái cũ → mới, người thay đổi và thời điểm máy chủ; mới nhất trước.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040220": [
+       {
+        "term": "Lịch sử",
+        "figmaId": "I2527:167828;2514:153348",
+        "layer": "Title",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "Yes",
+         "Description": "No",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDS3.TC27",
@@ -1034,7 +1137,7 @@
       "M-CDS3.TC48"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A07.05",
@@ -1048,8 +1151,10 @@
      "testcases": [
       "M-CDS3.TC48"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Chỉ xem"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDS3.A07.06",
@@ -1058,13 +1163,29 @@
      "spec": "<img src=\"./images/student-status-auditing.png\" alt=\"Dự thính\" width=\"60\" height=\"60\"> | Tai trắng trên nền xanh dương.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040220": [
+       {
+        "term": "Dự thính",
+        "figmaId": "2409:147819",
+        "layer": "Student Status",
+        "confidence": "cao",
+        "region": "List",
+        "owner": "Student Status",
+        "component": "Student Status",
+        "variant": {
+         "Property 1": "Dự thính"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDS3.TC48"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A07.07",
@@ -1073,7 +1194,21 @@
      "spec": "<img src=\"./images/student-status-studying.png\" alt=\"Đang học\" width=\"60\" height=\"60\"> | Bút trắng trên nền cam.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040220": [
+       {
+        "term": "Đang học",
+        "figmaId": "2409:147815",
+        "layer": "Label",
+        "confidence": "cao",
+        "region": "List",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDS3.TC28",
@@ -1082,7 +1217,7 @@
       "M-CDS3.TC48"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A07.08",
@@ -1091,13 +1226,29 @@
      "spec": "<img src=\"./images/student-status-completed.png\" alt=\"Hoàn thành\" width=\"60\" height=\"60\"> | Bục có ngôi sao trắng trên nền xanh lá.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040220": [
+       {
+        "term": "Hoàn thành",
+        "figmaId": "2409:147813",
+        "layer": "Student Status",
+        "confidence": "cao",
+        "region": "List",
+        "owner": "Student Status",
+        "component": "Student Status",
+        "variant": {
+         "Property 1": "Hoàn thành"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDS3.TC48"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A07.09",
@@ -1111,8 +1262,10 @@
      "testcases": [
       "M-CDS3.TC48"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Nghỉ học"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDS3.A07.10",
@@ -1126,8 +1279,10 @@
      "testcases": [
       "M-CDS3.TC48"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Rời lớp"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDS3.A07.11",
@@ -1136,11 +1291,37 @@
      "spec": "<img src=\"./images/student-status-deleted.png\" alt=\"Xóa\" width=\"60\" height=\"60\"> | Túi có dấu X trắng trên nền đỏ tươi.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040220": [
+       {
+        "term": "Xóa",
+        "figmaId": "2409:147795",
+        "layer": "Xoá",
+        "confidence": "cao",
+        "region": "Toolbar",
+        "owner": "Xoá",
+        "component": "DD/Molecule/Menu Item",
+        "variant": {
+         "Submenu": false,
+         "Leading Icon": "2808:42940",
+         "Leading": true,
+         "Description Text": "Mô tả phụ",
+         "Meta Text": "12",
+         "Meta": false,
+         "Description": false,
+         "Label": "Xoá (0)",
+         "Type": "Danger",
+         "State": "Disabled",
+         "Size": "S"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ]
   },
@@ -1167,13 +1348,39 @@
      "spec": "Filter hóa đơn theo quy tắc tới hạn hiện hành. Danh sách lựa chọn cụ thể cần dùng cấu hình của module Hóa đơn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040230": [
+       {
+        "term": "Tới hạn",
+        "figmaId": "2409:147857",
+        "layer": "Filter Tới hạn",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "Filter Tới hạn",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Tới hạn",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDS3.TC34"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A08.02",
@@ -1182,13 +1389,39 @@
      "spec": "**Loại bỏ khỏi popup**, không hiển thị và không dùng làm filter.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040230": [
+       {
+        "term": "Trạng Thái",
+        "figmaId": "2409:147868",
+        "layer": "Filter Trạng thái",
+        "confidence": "cao",
+        "region": "Header",
+        "owner": "Filter Trạng thái",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Chevron": true,
+         "Count Value": "1",
+         "Count": false,
+         "Clear": false,
+         "Leading": false,
+         "Value": "Trạng thái",
+         "Size": "XS",
+         "State": "Active",
+         "Content": "Value"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDS3.TC34"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A08.03",
@@ -1197,14 +1430,33 @@
      "spec": "Bắt buộc chọn một hóa đơn hợp lệ của đúng học viên. Không hiển thị/cho chọn hóa đơn của người khác.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040230": [
+       {
+        "term": "Chọn hóa đơn",
+        "figmaId": "2911:43642",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2925:22961",
+         "Label": "Chọn hoá đơn",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDS3.TC34",
       "M-CDS3.TC35"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A08.04",
@@ -1213,14 +1465,33 @@
      "spec": "Số tiền học phí muốn ghi nhận; phải là số tiền dương hợp lệ.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040230": [
+       {
+        "term": "Giá trị",
+        "figmaId": "2911:43647",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "2925:24887",
+         "Label": "Giá trị",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDS3.TC34",
       "M-CDS3.TC39"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A08.05",
@@ -1235,8 +1506,11 @@
       "M-CDS3.TC34",
       "M-CDS3.TC50"
      ],
-     "missingTerms": [],
-     "status": "chua-co-spec"
+     "missingTerms": [
+      "Số buổi học",
+      "1..N"
+     ],
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "M-CDS3.A08.06",
@@ -1245,11 +1519,30 @@
      "spec": "Nội dung bổ sung cho lần đóng học phí; hiển thị/lưu an toàn.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040230": [
+       {
+        "term": "Ghi chú học phí",
+        "figmaId": "2911:43652",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Form",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Required": false,
+         "Icon": "1832:36661",
+         "Label": "Ghi chú học phí",
+         "Có icon": "Yes"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     },
     {
      "id": "M-CDS3.A08.07",
@@ -1258,7 +1551,25 @@
      "spec": "Validate hóa đơn/tiền/Số buổi học, ghi nhận học phí kèm số buổi và trừ giá trị vào số dư hóa đơn trong cùng giao dịch.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "adm-lop-040230": [
+       {
+        "term": "Thêm",
+        "figmaId": "I2527:167815;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Thêm",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [
       "M-CDS3.TC34",
@@ -1268,7 +1579,7 @@
       "M-CDS3.TC50"
      ],
      "missingTerms": [],
-     "status": "chua-co-spec"
+     "status": "khop"
     }
    ]
   },

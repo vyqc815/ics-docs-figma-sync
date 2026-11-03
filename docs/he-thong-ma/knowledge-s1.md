@@ -20,11 +20,11 @@ Requirement: `course_management/knowledge-s1/knowledge-s1.md` — Kiến thức 
 - `FLOW05` Sửa và nhân bản mục — `REQ06`
 - `FLOW06` Điền thiếu bằng AI — `REQ10`
 - `FLOW07` Soát lỗi bằng AI — `REQ10`
-- `FLOW08` Số cụm, thêm và xoá cụm — `REQ08`
+- `FLOW08` Cụm sinh từ S2, đổi tên và liên kết bài học — `REQ08`
 - `FLOW09` Thêm vào cụm / Gỡ khỏi cụm — `REQ08`
 - `FLOW10` Chia cụm bằng AI — `REQ09`
 - `FLOW11` Gỡ mục khỏi khoá — `REQ07`
-- `FLOW12` Thêm / gỡ kiến thức trong Chi tiết bài học — `REQ13`
+- `FLOW12` Xem kiến thức của bài học theo cụm liên kết — `REQ13`
 - `FLOW13` Preview mobile — `REQ12`
 
 ## 3. Popup, trạng thái, dropdown
@@ -96,7 +96,7 @@ Frame: `CD-KH-040100`, `CD-KH-040200` (tool đoán:CD-KH-040100, CD-KH-040200) �
 | `A02.13` | phien-am-tung-chu-furigana |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.14` | vi-du |  | `4846:168532` Ví dụ | có |  | `TC7a` | Khớp một phần | QC |
 | `A02.15` | cach-dung-luu-y-ngu-phap |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A02.16` | mo-rong |  | `4846:158655` Không, đừng | có |  |  | Khớp một phần | QC |
+| `A02.16` | nang-cao |  | `4846:158655` Không, đừng | có |  |  | Khớp một phần | QC |
 | `A02.17` | nghia-han-tu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.18` | bo-thu-kanji-han-tu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A02.19` | chuoi-tim-kiem-kanji |  |  | — |  |  | Chưa khớp tự động | QC |
@@ -118,16 +118,17 @@ Frame: `CD-KH-040100`, `CD-KH-040200` (tool đoán:CD-KH-040100, CD-KH-040200) �
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A03.01` | checkbox | `Checkbox` Size=16 | `4846:158468` Checkbox | có |  |  | Khớp | QC |
+| `A03.01` | checkbox | `Checkbox` Size=16 | `4846:158468` Checkbox | có |  | `TC12c` | Khớp | QC |
 | `A03.02` | stt-tay-nam-keo-tha |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.03` | cot-field |  |  | — |  | `TC12b` | Chưa khớp tự động | QC |
 | `A03.04` | cum | `Atom/Tag` Size=Small | `4846:158480` Cụm; `4846:158608` Atom/Tag | có | opens `A10` |  | Khớp | QC |
 | `A03.05` |  |  |  | — | see `A07` |  | Chưa khớp tự động | QC |
 | `A03.06` | tim-kiem |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.07` | sap-xep | `DD/Molecule/Trigger` Size=S, State=Default | `I4846:158439;2015:31180` Value; `I4846:158439;2015:31180` Value | có |  | `TC12` | Khớp | QC |
-| `A03.08` | trang-thai | `DD/Molecule/Trigger` Size=S, State=Default | `I4846:158451;2015:31180` Value; `4846:158324` Tất cả | có |  |  | Khớp | QC |
-| `A03.09` | phan-trang |  | `4846:158705` Footer · Phân trang | có |  |  | Khớp | QC |
-| `A03.10` | nhap-nhanh | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `I4846:158697;5056:365849` Placeholder | có | see `A06` |  | Khớp | QC |
+| `A03.08` | trang-thai | `DD/Molecule/Trigger` Size=S, State=Default | `I4846:158451;2015:31180` Value; `4846:158324` Tất cả | có |  | `TC12d` | Khớp | QC |
+| `A03.09` | nang-cao |  | `4846:158324` Tất cả | có |  | `TC12c`, `TC12d` | Requirement ghi thiếu, Figma đã có | QC |
+| `A03.10` | phan-trang |  | `4846:158705` Footer · Phân trang | có |  |  | Khớp | QC |
+| `A03.11` | nhap-nhanh | `Molecule/Add New Bar` Type=Box, Size=M, State=Default | `I4846:158697;5056:365849` Placeholder | có | see `A06` |  | Khớp | QC |
 
 ### `A04` Menu thêm, Popup Thêm từ thư viện dữ liệu
 
@@ -199,7 +200,7 @@ Frame: `CD-KH-040195` (tool đoán:CD-KH-040195) · Nguồn nội dung: QC
 | `A08.03` | tu-loai |  | `5004:36570` Từ loại | có |  | `TC25e` | Khớp | QC |
 | `A08.04` | han-viet |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A08.05` | tao-lai |  |  | — |  | `TC25c` | Chưa khớp tự động | QC |
-| `A08.06` | mo-rong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A08.06` | nang-cao |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A08.07` | audio |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A08.08` | vi-du |  |  | — |  | `TC25a`, `TC25b`, `TC25e` | Chưa khớp tự động | QC |
 | `A08.09` | cum | `Atom/Tag` Size=Small | `5004:36572` Cụm; `5004:36590` Atom/Tag | có | opens `A10` |  | Khớp | QC |
@@ -240,9 +241,10 @@ Frame: `CD-KH-040100`, `CD-KH-040200` (tool đoán:CD-KH-040100, CD-KH-040200) �
 | `A11.03` | chia-cum-bang-ai | `Atom/Button` Type=Secondary, Size=Small | `4846:158312` Atom/Button | có | opens `A12` |  | Khớp | QC |
 | `A11.04` | tim-cum | `Atom/Input` State=Search, Kiểu=S | `4846:158314` Atom/Input | có |  |  | Khớp | QC |
 | `A11.05` | tat-ca |  | `4846:158324` Tất cả | có |  |  | Khớp | QC |
-| `A11.06` | chua-phan-cum | `Atom/Tag` Size=Small | `4846:158500` Atom/Tag | có |  | `TC32` | Khớp | QC |
-| `A11.07` | dong-cum |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A11.08` | them-cum-moi | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `4846:158404` Molecule/Add New Bar | có |  | `TC31` | Khớp | QC |
+| `A11.06` | chua-phan-cum | `Atom/Tag` Size=Small | `4846:158500` Atom/Tag | có |  |  | Khớp | QC |
+| `A11.07` | dong-cum |  |  | — |  | `TC31` | Chưa khớp tự động | QC |
+| `A11.08` | popup-lien-ket-bai-hoc |  |  | — |  |  | Chưa có thiết kế | QC |
+| `A11.09` | them-cum-moi | `Molecule/Add New Bar` Type=Box, Size=S, State=Default | `4846:158404` Molecule/Add New Bar | có |  |  | Khớp | QC |
 
 ### `A12` Popup Chia cụm bằng AI
 
@@ -295,23 +297,23 @@ Frame: `CD-KH-040155` (tool đoán:CD-KH-040155) · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A15.01` | tieu-de |  |  | — |  |  | Chưa sync | QC |
-| `A15.02` | noi-dung |  |  | — |  |  | Chưa sync | QC |
-| `A15.03` | ghi-chu |  |  | — |  |  | Chưa sync | QC |
-| `A15.04` | huy |  |  | — |  |  | Chưa sync | QC |
-| `A15.05` | xac-nhan-go |  |  | — |  | `TC46` | Chưa sync | QC |
-| `A15.06` | muc-khong-dung-o-bai-hoc-nao |  |  | — |  |  | Chưa sync | QC |
+| `A15.01` | tieu-de |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A15.02` | noi-dung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A15.03` | ghi-chu |  | `5003:17916` Bản ghi trong Thư viện dữ liệu vẫn còn; khoá khác đang dùng không bị ảnh hưởng. | — |  |  | Khớp | QC |
+| `A15.04` | huy | `Atom/Button` Type=Secondary, Size=Medium | `5003:17918` Atom/Button | — |  |  | Khớp | QC |
+| `A15.05` | xac-nhan-go | `Atom/Button` Type=Delete, Size=Medium | `5003:17920` Atom/Button | — |  |  | Khớp | QC |
+| `A15.06` | muc-chua-phan-cum-hoac-cum-chua-lien-ket |  |  | — |  |  | Chưa khớp tự động | QC |
 
-### `A16` Thêm / gỡ kiến thức trong Chi tiết bài học
+### `A16` Cụm liên kết với Chi tiết bài học
 
 Frame: `CD-KH-030270` · Nguồn nội dung: QC
 
 | Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
 |---|---|---|---|---|---|---|---|---|
-| `A16.01` | popup-them |  |  | — |  | `TC48`, `TC50b` | Chưa sync | QC |
-| `A16.02` | them-ca-cum |  |  | — |  |  | Chưa sync | QC |
-| `A16.03` | tick-muc |  |  | — |  |  | Chưa sync | QC |
-| `A16.04` | danh-sach-trong-bai |  |  | — |  |  | Chưa sync | QC |
+| `A16.01` | nguon-du-lieu |  |  | — |  |  | Chưa sync | QC |
+| `A16.02` | bo-loc-loai |  |  | — |  |  | Chưa sync | QC |
+| `A16.03` | tieu-de-khung |  |  | — |  |  | Chưa sync | QC |
+| `A16.04` | dong-bo |  |  | — |  |  | Chưa sync | QC |
 
 ### `A17` Toast phản hồi CRUD
 
@@ -347,25 +349,26 @@ Frame: `CD-KH-040100`, `CD-KH-040200` · Nguồn nội dung: Figma
 | `REQ05` | Thêm mục | Thêm từ thư viện, Thêm theo list (mỗi dòng 1 mục theo thứ tự cột của loại, tách dấu phẩy, chỉ cột |
 | `REQ06` | Sửa và nhân bản | Sửa nhanh inline và drawer Chi tiết mục (đủ field, danh sách ví dụ, audio, `↻ Tạo lại` |
 | `REQ07` | Gỡ khỏi khoá | Xoá ở S1 là gỡ mục khỏi khoá (bản ghi thư viện còn); có xác nhận, liệt kê bài đang dùng; xác |
-| `REQ08` | Cụm | Mỗi loại có bộ cụm riêng; Số cụm mặc định 0, chỉ nhập khi chưa có cụm, nhập N tạo `Chủ đề 1…N` rỗng; |
+| `REQ08` | Cụm | Mỗi loại có bộ cụm riêng; **số cụm = tổng Số buổi của loại ở Tổng quan (S2)**, hệ thống tự tạo cụm rỗng |
 | `REQ09` | Chia cụm bằng AI | AI chia mục vào các cụm đang có theo chủ đề và prompt, đặt tên cụm theo chủ đề; không tạo |
 | `REQ10` | AI | 4 nút riêng. (1) `Thêm bằng AI`: tạo mục mới theo prompt, số lượng 1–50 / lần. (2) `Điền thiếu bằng AI`: |
-| `REQ11` | Tìm kiếm, lọc, sắp xếp, kéo thả | Tìm theo field chính; Trạng thái `Tất cả / Đủ thông tin / Thiếu thông tin / |
+| `REQ11` | Bảng, tìm kiếm, lọc, sắp xếp, kéo thả | Bảng hiện đủ mọi field của loại, cuộn ngang, ghim checkbox / STT / field |
 | `REQ12` | Preview và âm thanh | Mọi loại có Preview mobile tái hiện màn học của app học viên cho loại đó; Audio không |
-| `REQ13` | Kiến thức trong bài học | Chi tiết bài học chỉ thêm / gỡ kiến thức từ S1 của chính khoá qua popup `Thêm kiến |
+| `REQ13` | Kiến thức trong bài học | Chi tiết bài học không chọn mục; tab Kiến thức chỉ hiển thị mục hiện có của cụm đã |
 | `REQ14` | Quyền | Chỉ CD được truy cập và thao tác S1 trong trung tâm đang chọn; kiểm tra cả UI và API. |
 | `REQ15` | Phản hồi | Thao tác thay đổi dữ liệu có đúng một Toast theo kết quả; không báo thành công trước khi lưu xong. |
 | `EX01` | Ngoại lệ | Dòng Thêm theo list thiếu cột đầu → dòng báo lỗi, không tạo; các dòng hợp lệ khác vẫn thêm được. |
 | `EX02` | Ngoại lệ | Nhập nhanh rỗng hoặc chỉ khoảng trắng → không tạo mục. |
 | `EX03` | Ngoại lệ | Điền thiếu bằng AI quá 50 mục / lần hoặc Thêm bằng AI số lượng > 50 → UI chặn (nút mờ / báo `Tối đa 50 mục mỗi lần`); API từ chối, không chạy AI. |
 | `EX04` | Ngoại lệ | AI lỗi hoặc CD bấm `Dừng` → mục chưa xử lý giữ nguyên; mục đã điền giữ giá trị AI đã lưu; báo lỗi nếu AI |
-| `EX05` | Ngoại lệ | Chia cụm bằng AI khi loại chưa có cụm (Số cụm = 0) → không gửi yêu cầu, nhắc nhập Số cụm. |
+| `EX05` | Ngoại lệ | Chia cụm bằng AI khi loại chưa có cụm (S2 chưa có buổi cho loại) → không gửi yêu cầu, nhắc nhập Số buổi ở Tổng quan (S2). |
 | `EX06` | Ngoại lệ | Role khác CD truy cập S1 hoặc gọi API thay đổi kiến thức → từ chối, không thay đổi dữ liệu. |
 | `EX07` | Ngoại lệ | Truy cập tab Bảng chữ ở trung tâm không có hệ chữ riêng (qua URL / API) → từ chối. |
 | `EX08` | Ngoại lệ | Truy cập khoá học / kiến thức của trung tâm khác trung tâm đang chọn → từ chối. |
-| `EX09` | Ngoại lệ | Lưu thất bại (sửa, cụm, áp dụng AI, thêm / gỡ ở bài học) → giữ dữ liệu cũ, Toast `Có Lỗi Xảy Ra`. |
+| `EX09` | Ngoại lệ | Lưu thất bại (sửa, cụm, liên kết bài học, áp dụng AI) → giữ dữ liệu cũ, Toast `Có Lỗi Xảy Ra`. |
 | `EX10` | Ngoại lệ | Sửa / xoá / đổi cụm mục đang được AI xử lý → UI mờ thao tác; API từ chối, dữ liệu không đổi. |
-| `EX11` | Ngoại lệ | Đổi `Số cụm` khi loại đã có cụm → ô chỉ đọc; API từ chối. |
+| `EX11` | Ngoại lệ | Đổi `Số cụm`, thêm hoặc xoá cụm trực tiếp ở S1 (qua UI / API) → ô chỉ đọc, không có nút; API từ chối. Số cụm chỉ đổi qua Số buổi ở S2. |
+| `EX13` | Ngoại lệ | Liên kết cụm với bài học đã có cụm cùng loại, hoặc với bài học không thuộc khoá → BE từ chối (409), Toast `Cảnh Báo` nêu cụm đang chiếm; dữ liệu không đổi. |
 | `EX12` | Ngoại lệ | Lưu Chi tiết mục với Ví dụ rỗng (0 ví dụ) hoặc Từ loại ngoài danh sách → báo lỗi tại field, không lưu. |
 
 ## 6. Testcase
@@ -391,6 +394,8 @@ Frame: `CD-KH-040100`, `CD-KH-040200` · Nguồn nội dung: Figma
 | `TC12` | Case 12: Không kéo thả khi sắp xếp khác | Low |  | REQ11 | `A03` | `A03.07` |
 | `TC12a` | Case 12a: Nhãn cụm của mục | Medium |  | REQ08 / REQ11 | `A03` |  |
 | `TC12b` | Case 12b: Cột bảng theo tab | Medium |  | REQ02 / REQ03 | `A03` | `A03.03` |
+| `TC12c` | Case 12c: Bảng đủ cột, cuộn ngang | Medium |  | REQ11 | `A03` | `A03.01`, `A03.09` |
+| `TC12d` | Case 12d: Lọc Nâng cao | Medium |  | REQ11 | `A03` | `A03.08`, `A03.09` |
 | `TC13` | Case 13: Thêm nhiều mục từ thư viện | High | Có | Flow 2 / REQ04 / REQ05 | `A04` |  |
 | `TC14` | Case 14: Thêm lại bản ghi đã có trong khoá | High |  | REQ04 | `A04` |  |
 | `TC15` | Case 15: Thêm vào cụm đang chọn | Medium |  | REQ04 / REQ08 | `A04` | `A04.06` |
@@ -416,12 +421,14 @@ Frame: `CD-KH-040100`, `CD-KH-040200` · Nguồn nội dung: Figma
 | `TC26a` | Case 26a: Điền thiếu tối đa 50 mục | High |  | REQ10 | `A09` | `A09.06` |
 | `TC27` | Case 27: Chọn tất cả theo bộ lọc | Medium |  | REQ11 | `A09` |  |
 | `TC28` | Case 28: Thêm mục vào cụm | High | Có | Flow 9 / REQ08 | `A10` |  |
-| `TC28a` | Case 28a: Chuyển cụm mục đang dùng ở bài học | High |  | Flow 9 / REQ08 | `A10` |  |
+| `TC28a` | Case 28a: Chuyển cụm mục đang hiển thị ở bài học | High |  | Flow 9 / REQ08 | `A10` |  |
 | `TC29` | Case 29: Gỡ khỏi cụm | Medium |  | REQ08 | `A10` |  |
-| `TC30` | Case 30: Tạo cụm theo Số cụm | High | Có | Flow 8 / REQ08 | `A11` | `A11.02` |
-| `TC31` | Case 31: Thêm cụm mới | Medium |  | REQ08 | `A11` | `A11.08` |
-| `TC32` | Case 32: Xoá cụm có dữ liệu | High | Có | Flow 8 / REQ08 | `A11` | `A11.06` |
-| `TC30a` | Case 30a: Số cụm chỉ đọc khi đã có cụm | Medium |  | REQ08 / EX11 | `A11` | `A11.02` |
+| `TC30` | Case 30: Cụm sinh từ S2 | High | Có | Flow 8 / REQ08 | `A11` | `A11.02` |
+| `TC31` | Case 31: Liên kết cụm với bài học | High | Có | Flow 8 / REQ08 | `A11` | `A11.07` |
+| `TC31a` | Case 31a: Bài đã có cụm cùng loại | High |  | EX13 / REQ08 | `A11` |  |
+| `TC31b` | Case 31b: Đổi bài học của cụm | Medium |  | Flow 8 / REQ08 | `A11` |  |
+| `TC32` | Case 32: Không xoá cụm tại S1 | Medium |  | REQ08 | `A11` |  |
+| `TC30a` | Case 30a: Số cụm luôn chỉ đọc | Medium |  | REQ08 / EX11 | `A11` | `A11.02` |
 | `TC33` | Case 33: Cụm riêng theo loại | Medium |  | REQ08 | `A11` |  |
 | `TC34` | Case 34: Chia cụm bằng AI | High | Có | Flow 10 / REQ09 | `A12` | `A12.06` |
 | `TC35` | Case 35: Giữ cụm cũ | High |  | REQ09 | `A12` |  |
@@ -438,14 +445,12 @@ Frame: `CD-KH-040100`, `CD-KH-040200` · Nguồn nội dung: Figma
 | `TC43` | Case 43: Soát lỗi toàn bộ tab | High |  | Flow 7 / REQ10 | `A13` |  |
 | `TC44` | Case 44: Xem trước từ đang chọn | Medium |  | Flow 13 / REQ12 | `A14` |  |
 | `TC45` | Case 45: Chuyển mục bằng phím | Low |  | REQ12 | `A14` |  |
-| `TC46` | Case 46: Gỡ mục đang dùng ở bài học | High | Có | Flow 11 / REQ07 | `A15` | `A15.05` |
+| `TC46` | Case 46: Gỡ mục thuộc cụm đã liên kết bài học | High | Có | Flow 11 / REQ07 | `A15` |  |
 | `TC47` | Case 47: Huỷ gỡ | Medium |  | REQ07 | `A15` |  |
-| `TC48` | Case 48: Thêm cụm vào bài | High | Có | Flow 12 / REQ13 | `A16` | `A16.01` |
-| `TC49` | Case 49: Gỡ một mục khỏi bài | High | Có | Flow 12 / REQ13 | `A16` |  |
-| `TC50` | Case 50: Cụm đổi sau khi thêm | Medium |  | REQ13 | `A16` |  |
-| `TC50a` | Case 50a: Gỡ khỏi cụm / xoá cụm đang dùng ở bài học | High |  | REQ08 / REQ13 | `A16` |  |
-| `TC50b` | Case 50b: Không gắn mục thiếu thông tin | Medium |  | REQ13 | `A16` | `A16.01` |
-| `TC51` | Case 51: Không sửa tại bài học | Medium |  | REQ13 | `A16` |  |
+| `TC48` | Case 48: Bài học hiện mục của cụm liên kết | High | Có | Flow 12 / REQ13 | `A16` |  |
+| `TC49` | Case 49: Thêm mục vào cụm, bài học cập nhật | High | Có | Flow 12 / REQ13 | `A16` |  |
+| `TC50` | Case 50: Loại chưa liên kết | Medium |  | REQ13 | `A16` |  |
+| `TC51` | Case 51: Không thao tác tại bài học | Medium |  | REQ13 | `A16` |  |
 | `TTC01` | Toast Case 1: Thành công | High |  | REQ15 | `A17` | `A17.01` |
 | `TTC02` | Toast Case 2: Cảnh báo | High |  | REQ15 | `A17` | `A17.03` |
 | `TTC03` | Toast Case 3: Lỗi xử lý | High |  | REQ15 | `A17` |  |
@@ -460,8 +465,9 @@ Frame: `CD-KH-040100`, `CD-KH-040200` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (75): `A01.01`, `A01.02`, `A01.06`, `A01.09`, `A01.10`, `A01.11`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.13`, `A02.15`, `A02.17`, `A02.18`, `A02.19`, `A02.20`, `A02.22`, `A02.23`, `A02.24`, `A02.25`, `A02.26`, `A02.27`, `A02.28`, `A02.29`, `A03.02`, `A03.03`, `A03.05`, `A03.06`, `A04.02`, `A04.04`, `A04.07`, `A05.02`, `A05.04`, `A05.07`, `A05.08`, `A05.10`, `A05.11`, `A05.12`, `A05.13`, `A05.14`, `A05.15`, `A05.16`, `A06.01`, `A06.02`, `A07.01`, `A07.02`, `A07.04`, `A07.05`, `A07.06`, `A08.02`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.10`, `A09.01`, `A09.02`, `A09.03`, `A09.05`, `A10.04`, `A11.07`, `A13.01`, `A13.02`, `A13.03`, `A13.04`, `A13.07`, `A13.08`, `A13.09`, `A14.05`, `A14.06`, `A17.01`, `A17.03`
-- Chưa sync (10): `A15.01`, `A15.02`, `A15.03`, `A15.04`, `A15.05`, `A15.06`, `A16.01`, `A16.02`, `A16.03`, `A16.04`
+- Chưa khớp tự động (78): `A01.01`, `A01.02`, `A01.06`, `A01.09`, `A01.10`, `A01.11`, `A02.05`, `A02.06`, `A02.07`, `A02.08`, `A02.09`, `A02.10`, `A02.13`, `A02.15`, `A02.17`, `A02.18`, `A02.19`, `A02.20`, `A02.22`, `A02.23`, `A02.24`, `A02.25`, `A02.26`, `A02.27`, `A02.28`, `A02.29`, `A03.02`, `A03.03`, `A03.05`, `A03.06`, `A04.02`, `A04.04`, `A04.07`, `A05.02`, `A05.04`, `A05.07`, `A05.08`, `A05.10`, `A05.11`, `A05.12`, `A05.13`, `A05.14`, `A05.15`, `A05.16`, `A06.01`, `A06.02`, `A07.01`, `A07.02`, `A07.04`, `A07.05`, `A07.06`, `A08.02`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.10`, `A09.01`, `A09.02`, `A09.03`, `A09.05`, `A10.04`, `A11.07`, `A13.01`, `A13.02`, `A13.03`, `A13.04`, `A13.07`, `A13.08`, `A13.09`, `A14.05`, `A14.06`, `A15.01`, `A15.02`, `A15.06`, `A17.01`, `A17.03`
+- Requirement ghi thiếu, Figma đã có (1): `A03.09`
+- Chưa sync (4): `A16.01`, `A16.02`, `A16.03`, `A16.04`
 - Requirement nhắc mã Figma không có (3): `CD-KH-030270`, `CD-KH-030400`, `CD-KH-030540`
 - Frame Figma chưa có requirement (10): `CD-KH-040110`, `CD-KH-040120`, `CD-KH-040125`, `CD-KH-040140`, `CD-KH-040150`, `CD-KH-040155`, `CD-KH-040160`, `CD-KH-040170`, `CD-KH-040190`, `CD-KH-040195`
 - Phân loại cần design duyệt (6): `CD-KH-040110`, `CD-KH-040120`, `CD-KH-040125`, `CD-KH-040140`, `CD-KH-040190`, `CD-KH-040195`
