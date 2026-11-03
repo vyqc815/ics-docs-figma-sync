@@ -3,11 +3,11 @@
 - URL: `http://localhost:3000/bang-chia-lich-hen/dang-keo-the-dk`
 - Verdict: **FAIL**
 - Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.225%; inside text boxes: 0.661% (glyph rendering)
-- Boxes: 624/639 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 606, ≤1px: 616, ≤2px: 624, ≤4px: 626, >4px: 13
+- Boxes: 625/639 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 607, ≤1px: 617, ≤2px: 625, ≤4px: 627, >4px: 12
 
 ## Failures
 
-- 15 elements are off by more than their limit (1px, 2.5px for text-driven; worst 452px).
+- 14 elements are off by more than their limit (1px, 2.5px for text-driven; worst 18.02px).
 
 ## Pixel regions (largest first)
 
@@ -41,7 +41,6 @@
 
 | Node | Role | Δ | Limit | dx | dy | dw | dh |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Frame 427325252 (`4056:107555`) | container | 452 ✗ | 2.5 (text) | 0 | 0 | 452 | -0.01 |
 | Frame 427325251 (`4056:107647`) | container | 18.02 ✗ | 2.5 (text) | 0 | -18.02 | 6.47 | 17.79 |
 | Frame 427325250 (`4056:107648`) | container | 18.02 ✗ | 2.5 (text) | 0 | -18.02 | 0.79 | 17.97 |
 | Frame 1171274963 (`4056:107656`) | container | 18.02 ✗ | 2.5 (text) | 0 | -18.02 | 2.99 | 17.9 |
@@ -66,3 +65,4 @@
 | Ellipse 76 (`I4056:107653;1991:15990`) | image | 1.23 | 2.5 (text) | 0 | -1.23 | 1.18 | 1.18 |
 | Count (`I4056:107654;2245:90745`) | text | 0.83 | 2.5 (text) | 0 | -0.75 | 0.83 | 0.71 |
 | Frame 427321947 (`4056:107274`) | container | 0.73 | 2.5 (text) | 0 | 0 | -0.73 | 0 |
+| Frame 427323979 (`4056:107277`) | container | 0.73 | 2.5 (text) | -0.73 | 0 | 0.73 | 0 |

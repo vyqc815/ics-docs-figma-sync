@@ -1,13 +1,9 @@
 # Fidelity: CD-KH-030247 — Học kỳ / Bài học / Popup chi tiết bài học / Tab Kiến thức / Popup Thêm kiến thức / Cụm chưa có kiến thức
 
 - URL: `http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-kien-thuc/popup-them-kien-thuc/cum-chua-co-kien-thuc`
-- Verdict: **FAIL**
+- Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.345%; inside text boxes: 1.908% (glyph rendering)
-- Boxes: 59/60 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 58, ≤1px: 59, ≤2px: 59, ≤4px: 59, >4px: 1
-
-## Failures
-
-- 1 elements are off by more than their limit (1px, 2.5px for text-driven; worst 345.73px).
+- Boxes: 59/59 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 58, ≤1px: 59, ≤2px: 59, ≤4px: 59, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
@@ -33,7 +29,6 @@
 
 | Node | Role | Δ | Limit | dx | dy | dw | dh |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Text (`7193:404798`) | text | 345.73 ✗ | 2.5 (text) | -172.73 | 0 | 345.73 | 0 |
 | Cụm chưa có kiến thức (`7193:404801`) | text | 0.7 | 2.5 (text) | -0.36 | 0 | 0.7 | 0 |
 | Loại kiến thức (`7193:404755`) | text | 0.48 | 2.5 (text) | 0 | 0 | 0.48 | 0 |
 | Chọn tất cả (`7193:404797`) | text | 0.27 | 2.5 (text) | 0 | 0 | 0.27 | 0 |
@@ -58,3 +53,4 @@
 | 52 (`7193:404765`) | text | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |
 | Hanzi (`7193:404766`) | container | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |
 | Hanzi (`7193:404767`) | text | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |
+| 80 (`7193:404768`) | text | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |

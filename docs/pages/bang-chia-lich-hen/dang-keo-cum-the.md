@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ LỊCH HẸN › ADM-LHN-020009 — Bảng chia lịch hẹn / Đang kéo cụm thẻ (`2371:38662`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/bang-chia-lich-hen/dang-keo-cum-the`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-03T01:14:40.829Z  
+> **Xuất lúc:** 2026-11-03T06:02:28.206Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-lhn-020009/page-spec.json`
 
 ## 1. Tổng quan

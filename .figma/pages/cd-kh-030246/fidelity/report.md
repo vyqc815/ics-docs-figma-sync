@@ -1,13 +1,9 @@
 # Fidelity: CD-KH-030246 — Học kỳ / Bài học / Popup chi tiết bài học / Tab Kỹ năng / Popup Thêm kỹ năng / Loại chưa có dữ liệu
 
 - URL: `http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/popup-them-ky-nang/loai-chua-co-du-lieu`
-- Verdict: **FAIL**
+- Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.381%; inside text boxes: 2.382% (glyph rendering)
-- Boxes: 50/51 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 50, ≤1px: 50, ≤2px: 50, ≤4px: 50, >4px: 1
-
-## Failures
-
-- 1 elements are off by more than their limit (1px, 2.5px for text-driven; worst 345.73px).
+- Boxes: 50/50 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 50, ≤1px: 50, ≤2px: 50, ≤4px: 50, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
@@ -33,7 +29,6 @@
 
 | Node | Role | Δ | Limit | dx | dy | dw | dh |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Text (`7193:404528`) | text | 345.73 ✗ | 2.5 (text) | -172.73 | 0 | 345.73 | 0 |
 | Loại Viết chưa có cụm ở Kỹ năng (S6) (`7193:404513`) | text | 0.5 | 2.5 (text) | -0.25 | 0 | 0.5 | 0 |
 | Chưa có bài kỹ năng (`7193:404531`) | text | 0.48 | 2.5 (text) | -0.25 | 0 | 0.48 | 0 |
 | Chưa có cụm (`7193:404512`) | text | 0.45 | 2.5 (text) | -0.23 | 0 | 0.45 | 0 |
@@ -58,3 +53,4 @@
 | 9 (`7193:404501`) | text | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |
 | Viết (`7193:404502`) | container | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |
 | Viết (`7193:404503`) | text | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |
+| 0 (`7193:404504`) | text | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |

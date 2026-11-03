@@ -151,27 +151,15 @@
   "boxes": {
     "measured": 639,
     "missing": [],
-    "withinThreshold": 624,
+    "withinThreshold": 625,
     "buckets": {
-      "≤0.5px": 606,
-      "≤1px": 616,
-      "≤2px": 624,
-      "≤4px": 626,
-      ">4px": 13
+      "≤0.5px": 607,
+      "≤1px": 617,
+      "≤2px": 625,
+      "≤4px": 627,
+      ">4px": 12
     },
     "worst": [
-      {
-        "id": "4056:107555",
-        "name": "Frame 427325252",
-        "role": "container",
-        "delta": 452,
-        "dx": 0,
-        "dy": 0,
-        "dw": 452,
-        "dh": -0.01,
-        "limit": 2.5,
-        "textDriven": true
-      },
       {
         "id": "4056:107647",
         "name": "Frame 427325251",
@@ -459,22 +447,22 @@
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
-      }
-    ],
-    "maxDelta": 452,
-    "over": [
+      },
       {
-        "id": "4056:107555",
-        "name": "Frame 427325252",
+        "id": "4056:107277",
+        "name": "Frame 427323979",
         "role": "container",
-        "delta": 452,
-        "dx": 0,
+        "delta": 0.73,
+        "dx": -0.73,
         "dy": 0,
-        "dw": 452,
-        "dh": -0.01,
+        "dw": 0.73,
+        "dh": 0,
         "limit": 2.5,
         "textDriven": true
-      },
+      }
+    ],
+    "maxDelta": 18.02,
+    "over": [
       {
         "id": "4056:107647",
         "name": "Frame 427325251",
@@ -646,7 +634,7 @@
     ]
   },
   "failures": [
-    "15 elements are off by more than their limit (1px, 2.5px for text-driven; worst 452px)."
+    "14 elements are off by more than their limit (1px, 2.5px for text-driven; worst 18.02px)."
   ],
   "url": "http://localhost:3000/bang-chia-lich-hen/dang-keo-the-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",

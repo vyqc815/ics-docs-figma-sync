@@ -1,13 +1,9 @@
 # Fidelity: ADM-LOP-050404-DK — Lớp học / Nhật ký / Tin nhắn
 
 - URL: `http://localhost:3000/lop-hoc/nhat-ky/tin-nhan-dk`
-- Verdict: **FAIL**
+- Verdict: **PASS**
 - Pixels outside text: **0.01%** differ (limit 0.5%); all pixels: 0.131%; inside text boxes: 0.409% (glyph rendering)
-- Boxes: 418/421 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 418, ≤1px: 418, ≤2px: 418, ≤4px: 418, >4px: 3
-
-## Failures
-
-- 3 elements are off by more than their limit (1px, 2.5px for text-driven; worst 110px).
+- Boxes: 418/418 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 418, ≤1px: 418, ≤2px: 418, ≤4px: 418, >4px: 0
 
 ## Pixel regions (largest first)
 
@@ -45,9 +41,6 @@
 
 | Node | Role | Δ | Limit | dx | dy | dw | dh |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Text (`4056:119181`) | text | 110 ✗ | 2.5 (text) | -55 | 0 | 110 | 0 |
-| Text (`4056:119224`) | text | 70 ✗ | 2.5 (text) | -35 | 0 | 70 | 0 |
-| Text (`4056:119214`) | text | 24 ✗ | 2.5 (text) | -12 | 0 | 24 | 0 |
 | Atom/Badge (`4056:119261`) | instance | 0.31 | 2.5 (text) | 0 | 0 | 0.31 | 0 |
 | Badge (`I4056:119261;1048:1255`) | text | 0.31 | 2.5 (text) | 0 | 0 | 0.31 | 0 |
 | Atom/Badge (`4056:119287`) | instance | 0.31 | 2.5 (text) | 0 | 0 | 0.31 | 0 |
@@ -70,3 +63,6 @@
 | Container (`I4056:119157;2177:28927`) | container | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |
 | Chi tiết NV (`I4056:119157;2177:28928`) | text | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |
 | Atom/Side Tab (`4056:119158`) | instance | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |
+| Container (`I4056:119158;2177:28935`) | container | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |
+| Nhiệm vụ con (`I4056:119158;2177:28936`) | text | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |
+| Left accent vertical pill bar (`I4056:119158;2177:28937`) | shape | 0 | 2.5 (text) | 0 | 0 | 0 | 0 |

@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 4053,
-    "percent": 0.347,
-    "shapePercent": 0.062,
-    "textPercent": 0.827,
+    "mismatched": 4022,
+    "percent": 0.345,
+    "shapePercent": 0.06,
+    "textPercent": 0.824,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -116,7 +116,7 @@
       "y": 184,
       "width": 288,
       "height": 72,
-      "pixels": 253,
+      "pixels": 232,
       "node": {
         "id": "2371:38398",
         "name": "Frame 427325249",
@@ -199,27 +199,15 @@
   "boxes": {
     "measured": 730,
     "missing": [],
-    "withinThreshold": 715,
+    "withinThreshold": 716,
     "buckets": {
-      "≤0.5px": 697,
-      "≤1px": 707,
-      "≤2px": 715,
-      "≤4px": 717,
-      ">4px": 13
+      "≤0.5px": 698,
+      "≤1px": 708,
+      "≤2px": 716,
+      "≤4px": 718,
+      ">4px": 12
     },
     "worst": [
-      {
-        "id": "2371:38303",
-        "name": "Frame 427325252",
-        "role": "container",
-        "delta": 452,
-        "dx": 0,
-        "dy": 0,
-        "dw": 452,
-        "dh": -0.01,
-        "limit": 2.5,
-        "textDriven": true
-      },
       {
         "id": "2371:38395",
         "name": "Frame 427325251",
@@ -507,22 +495,22 @@
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
-      }
-    ],
-    "maxDelta": 452,
-    "over": [
+      },
       {
-        "id": "2371:38303",
-        "name": "Frame 427325252",
+        "id": "2371:37149",
+        "name": "Frame 427323979",
         "role": "container",
-        "delta": 452,
-        "dx": 0,
+        "delta": 0.73,
+        "dx": -0.73,
         "dy": 0,
-        "dw": 452,
-        "dh": -0.01,
+        "dw": 0.73,
+        "dh": 0,
         "limit": 2.5,
         "textDriven": true
-      },
+      }
+    ],
+    "maxDelta": 18.02,
+    "over": [
       {
         "id": "2371:38395",
         "name": "Frame 427325251",
@@ -694,7 +682,7 @@
     ]
   },
   "failures": [
-    "15 elements are off by more than their limit (1px, 2.5px for text-driven; worst 452px)."
+    "14 elements are off by more than their limit (1px, 2.5px for text-driven; worst 18.02px)."
   ],
   "url": "http://localhost:3000/bang-chia-lich-hen/dang-keo-the",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",

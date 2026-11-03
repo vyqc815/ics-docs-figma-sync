@@ -1,5 +1,5 @@
 {
-  "pass": false,
+  "pass": true,
   "thresholds": {
     "maxPixelDiffPercent": 0.5,
     "maxBoxDelta": 1,
@@ -197,7 +197,7 @@
     }
   ],
   "boxes": {
-    "measured": 421,
+    "measured": 418,
     "missing": [],
     "withinThreshold": 418,
     "buckets": {
@@ -205,45 +205,9 @@
       "≤1px": 418,
       "≤2px": 418,
       "≤4px": 418,
-      ">4px": 3
+      ">4px": 0
     },
     "worst": [
-      {
-        "id": "4056:119181",
-        "name": "Text",
-        "role": "text",
-        "delta": 110,
-        "dx": -55,
-        "dy": 0,
-        "dw": 110,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4056:119224",
-        "name": "Text",
-        "role": "text",
-        "delta": 70,
-        "dx": -35,
-        "dy": 0,
-        "dw": 70,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4056:119214",
-        "name": "Text",
-        "role": "text",
-        "delta": 24,
-        "dx": -12,
-        "dy": 0,
-        "dw": 24,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
       {
         "id": "4056:119261",
         "name": "Atom/Badge",
@@ -507,51 +471,48 @@
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
-      }
-    ],
-    "maxDelta": 110,
-    "over": [
+      },
       {
-        "id": "4056:119181",
-        "name": "Text",
-        "role": "text",
-        "delta": 110,
-        "dx": -55,
+        "id": "I4056:119158;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
         "dy": 0,
-        "dw": 110,
+        "dw": 0,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       },
       {
-        "id": "4056:119224",
-        "name": "Text",
+        "id": "I4056:119158;2177:28936",
+        "name": "Nhiệm vụ con",
         "role": "text",
-        "delta": 70,
-        "dx": -35,
+        "delta": 0,
+        "dx": 0,
         "dy": 0,
-        "dw": 70,
+        "dw": 0,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       },
       {
-        "id": "4056:119214",
-        "name": "Text",
-        "role": "text",
-        "delta": 24,
-        "dx": -12,
+        "id": "I4056:119158;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0,
+        "dx": 0,
         "dy": 0,
-        "dw": 24,
+        "dw": 0,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       }
-    ]
+    ],
+    "maxDelta": 0.31,
+    "over": []
   },
-  "failures": [
-    "3 elements are off by more than their limit (1px, 2.5px for text-driven; worst 110px)."
-  ],
+  "failures": [],
   "url": "http://localhost:3000/lop-hoc/nhat-ky/tin-nhan-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],

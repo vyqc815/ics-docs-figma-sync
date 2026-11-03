@@ -1,5 +1,5 @@
 {
-  "pass": false,
+  "pass": true,
   "thresholds": {
     "maxPixelDiffPercent": 0.5,
     "maxBoxDelta": 1,
@@ -112,7 +112,7 @@
   ],
   "regions": [],
   "boxes": {
-    "measured": 51,
+    "measured": 50,
     "missing": [],
     "withinThreshold": 50,
     "buckets": {
@@ -120,21 +120,9 @@
       "≤1px": 50,
       "≤2px": 50,
       "≤4px": 50,
-      ">4px": 1
+      ">4px": 0
     },
     "worst": [
-      {
-        "id": "7193:404528",
-        "name": "Text",
-        "role": "text",
-        "delta": 345.73,
-        "dx": -172.73,
-        "dy": 0,
-        "dw": 345.73,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
       {
         "id": "7193:404513",
         "name": "Loại Viết chưa có cụm ở Kỹ năng (S6)",
@@ -422,27 +410,24 @@
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
-      }
-    ],
-    "maxDelta": 345.73,
-    "over": [
+      },
       {
-        "id": "7193:404528",
-        "name": "Text",
+        "id": "7193:404504",
+        "name": "0",
         "role": "text",
-        "delta": 345.73,
-        "dx": -172.73,
+        "delta": 0,
+        "dx": 0,
         "dy": 0,
-        "dw": 345.73,
+        "dw": 0,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
       }
-    ]
+    ],
+    "maxDelta": 0.5,
+    "over": []
   },
-  "failures": [
-    "1 elements are off by more than their limit (1px, 2.5px for text-driven; worst 345.73px)."
-  ],
+  "failures": [],
   "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/popup-them-ky-nang/loai-chua-co-du-lieu",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],

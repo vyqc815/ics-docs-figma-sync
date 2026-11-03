@@ -2,18 +2,18 @@
 
 - URL: `http://localhost:3000/bang-chia-lich-hen/dang-keo-the`
 - Verdict: **FAIL**
-- Pixels outside text: **0.062%** differ (limit 0.5%); all pixels: 0.347%; inside text boxes: 0.827% (glyph rendering)
-- Boxes: 715/730 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 697, ≤1px: 707, ≤2px: 715, ≤4px: 717, >4px: 13
+- Pixels outside text: **0.06%** differ (limit 0.5%); all pixels: 0.345%; inside text boxes: 0.824% (glyph rendering)
+- Boxes: 716/730 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 698, ≤1px: 708, ≤2px: 716, ≤4px: 718, >4px: 12
 
 ## Failures
 
-- 15 elements are off by more than their limit (1px, 2.5px for text-driven; worst 452px).
+- 14 elements are off by more than their limit (1px, 2.5px for text-driven; worst 18.02px).
 
 ## Pixel regions (largest first)
 
 | Region (x, y, w×h) | Pixels | Likely node |
 | --- | --- | --- |
-| 512, 184, 288×72 | 253 | Frame 427325249 (`2371:38398`, container) |
+| 512, 184, 288×72 | 232 | Frame 427325249 (`2371:38398`, container) |
 | 912, 184, 288×8 | 174 | Cell (`2371:37177`, container) |
 | 992, 208, 216×112 | 142 | Frame 1171274957 (`2371:37199`, container) |
 | 880, 216, 8×96 | 86 | Frame 1171274956 (`2371:37192`, container) |
@@ -45,7 +45,6 @@
 
 | Node | Role | Δ | Limit | dx | dy | dw | dh |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Frame 427325252 (`2371:38303`) | container | 452 ✗ | 2.5 (text) | 0 | 0 | 452 | -0.01 |
 | Frame 427325251 (`2371:38395`) | container | 18.02 ✗ | 2.5 (text) | 0 | -18.02 | 6.47 | 17.79 |
 | Frame 427325250 (`2371:38396`) | container | 18.02 ✗ | 2.5 (text) | 0 | -18.02 | 0.79 | 17.97 |
 | Frame 1171274963 (`2371:38404`) | container | 18.02 ✗ | 2.5 (text) | 0 | -18.02 | 2.99 | 17.9 |
@@ -70,3 +69,4 @@
 | Ellipse 76 (`I2371:38401;1991:15990`) | image | 1.23 | 2.5 (text) | 0 | -1.23 | 1.18 | 1.18 |
 | Count (`I2371:38402;2245:90745`) | text | 0.83 | 2.5 (text) | 0 | -0.75 | 0.83 | 0.71 |
 | Frame 427321947 (`2371:37146`) | container | 0.73 | 2.5 (text) | 0 | 0 | -0.73 | 0 |
+| Frame 427323979 (`2371:37149`) | container | 0.73 | 2.5 (text) | -0.73 | 0 | 0.73 | 0 |
