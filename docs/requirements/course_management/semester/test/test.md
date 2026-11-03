@@ -7,6 +7,9 @@ Tab **Kiểm tra** trong màn **Học kỳ** của khoá học (role **CD**): đ
 ## 1. UI
 
 ### Trang 1: CD-KH-030300 — Danh sách bài kiểm tra
+
+![Figma mới nhất · CD-KH-030300](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030300.png)
+
 ![Trang 1](./images/01-danh-sach-kiem-tra.png)
 
 *Tab Kiểm tra của học kỳ đang chọn và Danh sách kỳ bên phải (Figma CD-KH-030300) — nhấn để xem ảnh gốc*
@@ -30,6 +33,9 @@ Tab **Kiểm tra** trong màn **Học kỳ** của khoá học (role **CD**): đ
 - Khác Figma CD-KH-030300: card chưa có menu `⋮` để xoá bài.
 
 ### Trang 2: CD-KH-030310 — Popup bài kiểm tra — Tab Thông tin
+
+![Figma mới nhất · CD-KH-030310](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030310.png)
+
 ![Trang 2](./images/02-popup-thong-tin.png)
 
 *Popup bài kiểm tra, tab Thông tin (Figma CD-KH-030310) — nhấn để xem ảnh gốc*
@@ -55,6 +61,9 @@ Tab **Kiểm tra** trong màn **Học kỳ** của khoá học (role **CD**): đ
 - Khác Figma CD-KH-030310: ô `Số câu hỏi` đang vẽ như ô nhập, requirement là chỉ đọc; ô `Tổng điểm` trên Figma cần bỏ. Dòng Lưu ý ghi `Số câu hỏi và tổng điểm có thể được cập nhật`.
 
 ### Trang 3: CD-KH-030340 — Popup bài kiểm tra — Tab Bộ Câu Hỏi
+
+![Figma mới nhất · CD-KH-030340](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030340.png)
+
 ![Trang 3](./images/03-bo-cau-hoi.png)
 
 *Bộ câu hỏi của bài kiểm tra (Figma CD-KH-030340, đang vẽ thành màn riêng) — nhấn để xem ảnh gốc*

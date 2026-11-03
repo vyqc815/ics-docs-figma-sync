@@ -5,6 +5,9 @@ Tài liệu đặc tả menu **Đánh giá** trong Chi tiết lớp của role G
 ## 1. UI
 
 ### Trang 1: GV-LOP-100100 — Màn Không có quyền truy cập
+
+![Figma mới nhất · GV-LOP-100100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-100100.png)
+
 ![Trang 1](./images/evaluation-no-access.png)
 
 *Menu Đánh giá của Giáo viên luôn hiển thị màn Không có quyền truy cập (Figma GV-LOP-100100) — nhấn để xem ảnh gốc*

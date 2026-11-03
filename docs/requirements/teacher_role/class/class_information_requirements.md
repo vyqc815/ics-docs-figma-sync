@@ -5,6 +5,9 @@ Tài liệu đặc tả menu **Thông tin** trong Chi tiết lớp của role Gi
 ## 1. UI
 
 ### Trang 1: GV-LOP-110100 — Tab Thông tin
+
+![Figma mới nhất · GV-LOP-110100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-110100.png)
+
 ![Trang 1](./images/info-information.png)
 
 *Tab Thông tin của Giáo viên: toàn bộ field chỉ đọc (Figma GV-LOP-110100) — nhấn để xem ảnh gốc*
@@ -31,6 +34,9 @@ Tài liệu đặc tả menu **Thông tin** trong Chi tiết lớp của role Gi
 - Backend từ chối mọi request cập nhật thông tin lớp từ role Giáo viên.
 
 ### Trang 2: GV-LOP-110200 — Tab KPI — KPI của tôi
+
+![Figma mới nhất · GV-LOP-110200](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-110200.png)
+
 ![Trang 2](./images/info-kpi.png)
 
 *Tab KPI: bảng KPI của tôi, trạng thái trống (Figma GV-LOP-110200) — nhấn để xem ảnh gốc*
@@ -57,6 +63,9 @@ Tài liệu đặc tả menu **Thông tin** trong Chi tiết lớp của role Gi
 - Không có nút `+`, `Cài đặt KPI`, `X`, ghi chú/lịch sử; backend từ chối request ghi từ role Giáo viên.
 
 ### Trang 3: GV-LOP-110300 — Tab Lịch sử & lương
+
+![Figma mới nhất · GV-LOP-110300](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-110300.png)
+
 ![Trang 3](./images/info-salary.png)
 
 *Tab Lịch sử & lương: bộ lọc thời gian, 5 thẻ, bảng Buổi dạy (Figma GV-LOP-110300) — nhấn để xem ảnh gốc*

@@ -5,6 +5,13 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 ## 1. UI
 
 ### Trang 1: GV-LOP-030100, GV-LOP-030110, GV-LOP-030170 — Bài học — Khung menu và Danh sách bài học
+
+![Figma mới nhất · GV-LOP-030100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030100.png)
+
+![Figma mới nhất · GV-LOP-030110](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030110.png)
+
+![Figma mới nhất · GV-LOP-030170](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030170.png)
+
 ![Trang 1](./images/lesson-session.png)
 
 *Menu Bài học: tab Buổi học của bài đã hoàn thành và Danh sách bài học (Figma GV-LOP-030100) — nhấn để xem ảnh gốc*
@@ -149,6 +156,9 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Bấm BTVN hoặc điểm không mở màn chấm.
 
 ### Trang 8: GV-LOP-030100 — Icon trạng thái điểm danh
+
+![Figma mới nhất · GV-LOP-030100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030100.png)
+
 ![Trang 8](../../management_requirement/class_management/images/attendance-status-icons.png)
 
 *Bộ icon `Trạng thái đi học` (Figma component 2456:110608) — nhấn để xem ảnh gốc*
@@ -172,6 +182,13 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Icon chỉ để xem; bấm icon không mở menu sửa điểm danh với role Giáo viên.
 
 ### Trang 9: GV-LOP-030200, GV-LOP-030300, GV-LOP-030500 — Tab Thông tin, Nội dung và Kiến thức
+
+![Figma mới nhất · GV-LOP-030200](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030200.png)
+
+![Figma mới nhất · GV-LOP-030300](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030300.png)
+
+![Figma mới nhất · GV-LOP-030500](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030500.png)
+
 ![Trang 9](./images/lesson-information.png)
 
 *Tab Thông tin chỉ đọc (Figma GV-LOP-030200) — nhấn để xem ảnh gốc*
@@ -187,6 +204,9 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - `A09.03` **`Kiến thức`**: Để trống, hiện `Không có dữ liệu!` (Figma GV-LOP-030500).
 
 ### Trang 10: GV-LOP-030400 — Tab Tài nguyên — Khoá tải theo bài
+
+![Figma mới nhất · GV-LOP-030400](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030400.png)
+
 ![Trang 10](./images/lesson-resources.png)
 
 *Tab Tài nguyên: Bài giảng và Tài nguyên khác (Figma GV-LOP-030400) — nhấn để xem ảnh gốc*
@@ -218,6 +238,9 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - `A11.05` **Mẫu số bằng 0**: Để trống, không chia 0; tử số 0 với mẫu số > 0 là `0%`.
 
 ### Trang 12: GV-LOP-040100 — Bài tập và Kiểm tra — Khung menu
+
+![Figma mới nhất · GV-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040100.png)
+
 ![Trang 12](./images/homework-list.png)
 
 *Menu Bài tập và Kiểm tra — Tab BTVN (Figma GV-LOP-040100) — nhấn để xem ảnh gốc*
@@ -261,6 +284,9 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Sau khi chấm, giao hoặc thu hồi bài, các thẻ liên quan cập nhật theo dữ liệu mới.
 
 ### Trang 14: GV-LOP-040200 — Tab, badge và card bài
+
+![Figma mới nhất · GV-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040200.png)
+
 ![Trang 14](./images/test-list.png)
 
 *Tab Kiểm tra: nút Thu hồi của bài đã giao, card Đã chấm và Chưa giao (Figma GV-LOP-040200) — nhấn để xem ảnh gốc*
@@ -333,6 +359,11 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Giao lại sau khi thu hồi là lượt giao mới, học viên làm lại từ đầu.
 
 ### Trang 18: GV-LOP-040100, GV-LOP-040200 — Màn chấm bài — Khung màn và điều hướng
+
+![Figma mới nhất · GV-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040100.png)
+
+![Figma mới nhất · GV-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040200.png)
+
 ![Trang 18](./images/grading-record-reviewed.png)
 
 *Màn chấm bài: chi tiết câu bên trái, danh sách Câu hỏi bên phải, nút Đã Chấm và Sửa Bài Trên Lớp kèm avatar và thời điểm của người bấm (UI ICS cũ) — nhấn để xem ảnh gốc*
@@ -503,6 +534,9 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Ghi nhận không khoá chấm: giáo viên vẫn sửa điểm và nhận xét sau khi bấm.
 
 ### Trang 26: GV-LOP-050100 — Tự học — Danh sách bài và bảng thời gian
+
+![Figma mới nhất · GV-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-050100.png)
+
 ![Trang 26](./images/self-study-empty.png)
 
 *Menu Tự học khi lớp chưa có khóa tự học (Figma GV-LOP-050100) — nhấn để xem ảnh gốc*

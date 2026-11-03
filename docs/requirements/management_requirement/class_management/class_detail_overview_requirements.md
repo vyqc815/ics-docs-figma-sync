@@ -171,6 +171,9 @@ Nút Back ở góc trên trái gồm mũi tên quay lại và mã lớp đang xe
 - Không lấy ảnh avatar làm định danh người sửa; backend phải giữ người và thời điểm audit.
 
 ### Trang 8: ADM-LOP-020100 — Đánh giá tổng và bài học gần đây
+
+![Figma mới nhất · ADM-LOP-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020100.png)
+
 **Mô tả:** Mỗi học viên có badge đánh giá tổng và trạng thái 3 bài gần nhất. Vùng trái hiển thị Bài học gần đây gồm 6 bài gần nhất của người được chọn.
 
 ![Trang 8](./images/recent-lesson-status-icons.png)
@@ -198,6 +201,9 @@ Nút Back ở góc trên trái gồm mũi tên quay lại và mã lớp đang xe
 - Badge đánh giá không có điều hướng. Hover icon bài gần đây để xem trạng thái; không tự thêm thao tác click cập nhật/điều hướng.
 
 ### Trang 9: ADM-LOP-020100 — Bảng bài học của học viên và điểm danh
+
+![Figma mới nhất · ADM-LOP-020100](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LOP-020100.png)
+
 **Mô tả:** Bảng bên trái gồm Tên bài học, Ghi chú, Trạng thái, Điểm số và Thời gian của học viên đang chọn.
 
 **Giải thích field/thành phần:**

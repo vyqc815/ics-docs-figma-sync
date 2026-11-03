@@ -7,6 +7,11 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 ## 1. UI
 
 ### Trang 1: CD-KH-060100, CD-KH-060200 — Khung màn, cây kỳ và bài
+
+![Figma mới nhất · CD-KH-060100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-060100.png)
+
+![Figma mới nhất · CD-KH-060200](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-060200.png)
+
 ![Trang 1](./images/01-btvn.png)
 
 *Tab BTVN: cây Học kỳ & bài học bên phải, bộ câu hỏi của bài đang chọn bên trái (Figma CD-KH-060100) — nhấn để xem ảnh gốc*
@@ -34,6 +39,11 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 - Khác Figma CD-KH-060200: tab Kiểm tra trên Figma là danh sách phẳng; requirement là cây theo kỳ giống BTVN.
 
 ### Trang 2: CD-KH-030340, CD-KH-060100 — Bộ câu hỏi: thanh công cụ và thẻ tổng quan
+
+![Figma mới nhất · CD-KH-030340](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030340.png)
+
+![Figma mới nhất · CD-KH-060100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-060100.png)
+
 ![Trang 2](./images/04-danh-sach-bai-tap.png)
 
 *Bộ câu hỏi của bài kiểm tra: nút Import / Export Excel, Thêm câu hỏi, Generate và thẻ tổng quan (Figma CD-KH-030340, còn vẽ thẻ Tổng điểm đã bỏ) — nhấn để xem ảnh gốc*
@@ -59,6 +69,11 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 - Khác Figma CD-KH-030340: còn thẻ `Tổng điểm` (đã bỏ theo thang 10, CD-KH-060100 / 060200 đã sửa); nút tạo bằng AI ghi `Generate`.
 
 ### Trang 3: CD-KH-060100, CD-KH-030340 — Bảng câu hỏi
+
+![Figma mới nhất · CD-KH-060100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-060100.png)
+
+![Figma mới nhất · CD-KH-030340](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030340.png)
+
 **Mô tả:**
 
 - Bảng các câu hỏi của bài đang chọn, có tìm kiếm, lọc, chọn nhiều, menu thao tác dòng và ô nhập nhanh cuối bảng.
@@ -83,6 +98,9 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 - Khác Figma CD-KH-060100 / 060200: bảng chưa có cột `Kiến thức / Kỹ năng`, lọc `Kiến thức / Kỹ năng` (đã có ở CD-KH-030340) và còn lọc `Trạng thái`.
 
 ### Trang 4: CD-KH-060130 — Bài chưa có câu hỏi
+
+![Figma mới nhất · CD-KH-060130](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-060130.png)
+
 ![Trang 4](./images/03-btvn-chua-co-cau-hoi.png)
 
 *Bài chưa có câu hỏi (Figma CD-KH-060130) — nhấn để xem ảnh gốc*
@@ -101,6 +119,9 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 - Badge số câu của bài trong cây là `0` màu vàng.
 
 ### Trang 5: CD-KH-060110 — Popup Chọn loại câu
+
+![Figma mới nhất · CD-KH-060110](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-060110.png)
+
 ![Trang 5](./images/05-popup-chon-loai-cau.png)
 
 *Popup Thêm câu hỏi — chọn loại câu (Figma CD-KH-060110) — nhấn để xem ảnh gốc*
@@ -124,6 +145,9 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 - Ghi chú dưới lưới: `Câu hỏi con: câu cha chứa nhiều câu nhỏ, mỗi câu con chọn một loại câu riêng và chấm điểm riêng.`
 
 ### Trang 6: CD-KH-060120 — Popup Soạn câu hỏi
+
+![Figma mới nhất · CD-KH-060120](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-060120.png)
+
 ![Trang 6](./images/06-popup-soan-cau-hoi.png)
 
 *Popup Soạn câu hỏi · Trắc nghiệm (Figma CD-KH-060120) — nhấn để xem ảnh gốc*
@@ -158,6 +182,9 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 - Khác Figma CD-KH-060120: popup chưa có field `Số câu` và `Kiến thức / Kỹ năng`; Figma mới có phần đáp án của Trắc nghiệm.
 
 ### Trang 7: CD-KH-030340 — Import / Export Excel
+
+![Figma mới nhất · CD-KH-030340](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030340.png)
+
 **Mô tả:**
 
 - `Export Excel` tải bộ câu hỏi của bài đang chọn ra file `.xlsx`; `Import Excel` thêm câu hỏi từ file `.xlsx` vào cuối bộ câu hỏi của bài đang chọn (**UI popup kết quả cần bổ sung**).
@@ -190,6 +217,11 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 - Soát lỗi chỉ đọc dữ liệu, không thay đổi bộ câu hỏi.
 
 ### Trang 9: CD-KH-030341, CD-KH-030342 — Generate bài tập bằng AI — Popup nhập yêu cầu
+
+![Figma mới nhất · CD-KH-030341](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030341.png)
+
+![Figma mới nhất · CD-KH-030342](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030342.png)
+
 ![Trang 9](./images/07-generate-nhap-prompt.png)
 
 *Popup Generate bài tập bằng AI, tab Nhập prompt (Figma CD-KH-030341) — nhấn để xem ảnh gốc*
@@ -215,6 +247,11 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 - Khác Figma CD-KH-030341 / 030342: dòng phụ dưới `Số câu` ghi `Tối đa 50 câu mỗi lần`; requirement không giới hạn.
 
 ### Trang 10: CD-KH-030344, CD-KH-030346 — Generate — Đang tạo bảng và lỗi
+
+![Figma mới nhất · CD-KH-030344](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030344.png)
+
+![Figma mới nhất · CD-KH-030346](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030346.png)
+
 ![Trang 10](./images/09-generate-dang-tao.png)
 
 *Đang tạo bảng Generate (Figma CD-KH-030344) — nhấn để xem ảnh gốc*
@@ -235,6 +272,11 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 - Huỷ hoặc lỗi không thêm câu nào vào bộ câu hỏi.
 
 ### Trang 11: CD-KH-030343, CD-KH-030345 — Generate — Bảng N dòng
+
+![Figma mới nhất · CD-KH-030343](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030343.png)
+
+![Figma mới nhất · CD-KH-030345](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030345.png)
+
 ![Trang 11](./images/11-generate-bang-dong.png)
 
 *Bảng 30 dòng sau Generate (Figma CD-KH-030343) — nhấn để xem ảnh gốc*
@@ -259,6 +301,9 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 - Chưa bấm `Thêm N câu đã chọn` thì chưa có câu nào được tạo.
 
 ### Trang 12: CD-KH-030347 — Generate — Sau khi tạo
+
+![Figma mới nhất · CD-KH-030347](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030347.png)
+
 ![Trang 12](./images/13-sau-khi-tao.png)
 
 *Bộ câu hỏi sau khi thêm 5 câu tạo bằng AI (Figma CD-KH-030347) — nhấn để xem ảnh gốc*

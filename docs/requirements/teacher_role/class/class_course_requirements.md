@@ -5,6 +5,9 @@ Tài liệu đặc tả nhóm menu **Khoá học** trong Chi tiết lớp của 
 ## 1. UI
 
 ### Trang 1: GV-LOP-080100 — Mindset khoá học
+
+![Figma mới nhất · GV-LOP-080100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-080100.png)
+
 ![Trang 1](./images/course-mindset.png)
 
 *Mindset khoá học: Danh sách mục bên phải, nội dung mục đang chọn bên trái (Figma GV-LOP-080100) — nhấn để xem ảnh gốc*
@@ -25,6 +28,9 @@ Tài liệu đặc tả nhóm menu **Khoá học** trong Chi tiết lớp của 
 - Văn bản hiển thị thuần, không thực thi HTML/script.
 
 ### Trang 2: GV-LOP-090100 — Hướng dẫn giảng dạy
+
+![Figma mới nhất · GV-LOP-090100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-090100.png)
+
 ![Trang 2](./images/teaching-guide-empty.png)
 
 *Hướng dẫn giảng dạy: hiện chỉ có trạng thái trống (Figma GV-LOP-090100) — nhấn để xem ảnh gốc*

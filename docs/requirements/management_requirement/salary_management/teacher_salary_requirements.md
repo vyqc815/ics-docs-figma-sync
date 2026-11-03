@@ -5,6 +5,9 @@ Trạng thái: Bản nháp đối chiếu Figma và source cũ; các mục Cần
 ## 1. UI
 
 ### Trang 1: ADM-LGV-010000 — Tổng quan
+
+![Figma mới nhất · ADM-LGV-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LGV-010000.png)
+
 - Menu: Lương → Lương Giáo Viên, thuộc Admin. Không phải menu Lịch sử & lương của Giáo viên.
 - [Figma — ADM-LGV-010000](https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG?node-id=4101-138376), page LƯƠNG GV `4101:128323`.
 - Đã đọc trực tiếp Figma desktop ngày 17/10/2026 vì MCP báo hết lượt seat View. Chưa xuất ảnh frame cục bộ trong bản nháp này.

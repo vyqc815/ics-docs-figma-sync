@@ -5,6 +5,9 @@ Tài liệu đặc tả menu **Lớp** của role Giáo viên: thống kê tổn
 ## 1. UI
 
 ### Trang 1: GV-LOP-010000 — Thống kê tổng quan
+
+![Figma mới nhất · GV-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-010000.png)
+
 ![Trang 1](./images/class-list.png)
 
 *Thống kê tổng quan: hàng thẻ chỉ số, khối lớp đang chọn bên trái, Danh sách lớp bên phải (Figma GV-LOP-010000) — nhấn để xem ảnh gốc*

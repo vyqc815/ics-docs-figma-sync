@@ -5,6 +5,9 @@ Menu **Thống Kê** của role `Class Handler` (Phụ trách lớp): tổng h�
 ## 1. UI
 
 ### Trang 1: CH-TK-010000 — Thống kê
+
+![Figma mới nhất · CH-TK-010000](https://ics-figma-demo.vercel.app/api/figma-frame/CH-TK-010000.png)
+
 ![Trang 1](./images/statistics.png)
 
 **Mô tả:**

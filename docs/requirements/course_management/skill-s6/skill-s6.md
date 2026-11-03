@@ -21,6 +21,9 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 ## 1. UI
 
 ### Trang 1: CD-KH-050100 — Khung màn hình và tab kỹ năng
+
+![Figma mới nhất · CD-KH-050100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050100.png)
+
 ![Trang 1](./images/01-nghe.png)
 
 *Kỹ năng (S6), tab Nghe: bảng bài nghe bên trái; panel phải trên Figma còn là Học kỳ & bài học, cần đổi thành panel Cụm (Figma CD-KH-050100) — nhấn để xem ảnh gốc*
@@ -68,6 +71,9 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Bảng hiện **đủ mọi field** của bài (Tên, Mô tả, Âm thanh, Số lượt kịch bản, Số câu hỏi, Nâng cao, Trạng thái, Cụm), **cuộn ngang**; ghim checkbox, STT, `Bài nghe` bên trái, `Cụm` và ⋮ bên phải (**UI cần cập nhật**).
 
 ### Trang 3: CD-KH-050200 — Bảng bài đọc
+
+![Figma mới nhất · CD-KH-050200](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050200.png)
+
 ![Trang 3](./images/02-doc.png)
 
 *Kỹ năng (S6), tab Đọc (Figma CD-KH-050200) — nhấn để xem ảnh gốc*
@@ -132,6 +138,11 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Không có kết quả hiện `Không tìm thấy bài nghe phù hợp` kèm nút `Xoá bộ lọc`.
 
 ### Trang 6: CD-KH-050110, CD-KH-070301 — Drawer Chi tiết bài nghe
+
+![Figma mới nhất · CD-KH-050110](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050110.png)
+
+![Figma mới nhất · CD-KH-070301](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070301.png)
+
 ![Trang 6](./images/03-chi-tiet-bai-nghe.png)
 
 *Drawer Chi tiết bài nghe: tên, mô tả, âm thanh, kịch bản 3 lượt, câu hỏi; ô Bài học trên Figma đổi thành Cụm (Figma CD-KH-050110) — nhấn để xem ảnh gốc*
@@ -161,6 +172,9 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Lưu thất bại giữ dữ liệu cũ, Toast `Có Lỗi Xảy Ra`.
 
 ### Trang 7: CD-KH-070302 — Drawer Chi tiết bài đọc
+
+![Figma mới nhất · CD-KH-070302](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070302.png)
+
 **Mô tả:**
 
 - Giống drawer bài nghe, thay khối Âm thanh + Kịch bản bằng khối Đoạn văn (**UI cần bổ sung**, Figma chưa vẽ).
@@ -210,6 +224,9 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Cho phép trùng tên; không tạo khi rỗng hoặc chỉ khoảng trắng.
 
 ### Trang 10: CD-KH-050120 — Chọn nhiều và thao tác hàng loạt
+
+![Figma mới nhất · CD-KH-050120](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050120.png)
+
 ![Trang 10](./images/04-chon-nhieu.png)
 
 *Thanh thao tác khi chọn 3 bài nghe (Figma CD-KH-050120) — nhấn để xem ảnh gốc*
@@ -231,6 +248,9 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Đổi tab hoặc đổi bộ lọc thì bỏ chọn.
 
 ### Trang 11: CD-KH-050150 — Popup Thêm bài từ thư viện
+
+![Figma mới nhất · CD-KH-050150](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050150.png)
+
 ![Trang 11](./images/07-popup-them-tu-thu-vien.png)
 
 *Popup Thêm bài nghe từ thư viện: lọc Kho / Cấp độ / Dạng câu, bài đã có bị khoá; ô Gán vào bài học trên Figma đổi thành Thêm vào cụm (Figma CD-KH-050150) — nhấn để xem ảnh gốc*
@@ -255,6 +275,9 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Bài `Vô hiệu` trong thư viện không hiện trong popup.
 
 ### Trang 12: CD-KH-050160 — Popup Tạo bài mới
+
+![Figma mới nhất · CD-KH-050160](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050160.png)
+
 ![Trang 12](./images/08-popup-tao-bai-nghe.png)
 
 *Popup Tạo bài nghe mới (Figma CD-KH-050160) — nhấn để xem ảnh gốc*
@@ -281,6 +304,9 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Tải file thất bại thì không tạo bài, Toast `Có Lỗi Xảy Ra`.
 
 ### Trang 13: CD-KH-050155 — Popup Gỡ khỏi khoá
+
+![Figma mới nhất · CD-KH-050155](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050155.png)
+
 ![Trang 13](./images/09-popup-go-khoi-khoa.png)
 
 *Popup Gỡ 1 bài nghe khỏi khoá học (Figma CD-KH-050155) — nhấn để xem ảnh gốc*
@@ -299,6 +325,9 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Gỡ cũng gỡ bài khỏi cụm của tab; bài học liên kết cụm không còn bài này; kết quả học viên đã làm vẫn giữ.
 
 ### Trang 14: CD-KH-050130 — Màn trống
+
+![Figma mới nhất · CD-KH-050130](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050130.png)
+
 ![Trang 14](./images/05-khoa-chua-co-bai.png)
 
 *Khoá chưa có bài nghe (Figma CD-KH-050130) — nhấn để xem ảnh gốc*
@@ -350,6 +379,9 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Một file có thể chứa cả sheet Nghe và Đọc: import ở tab Nghe chỉ lấy 3 sheet Nghe, import ở tab Đọc chỉ lấy 4 sheet Đọc.
 
 ### Trang 16: CD-KH-050180 — Transcript bằng AI
+
+![Figma mới nhất · CD-KH-050180](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050180.png)
+
 ![Trang 16](./images/10-transcript-ai.png)
 
 *Transcript AI inline: thanh tiến độ, bài đang tạo và bài chờ duyệt (Figma CD-KH-050180) — nhấn để xem ảnh gốc*
@@ -383,6 +415,9 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Câu hỏi AI chưa duyệt không tính vào `Số câu hỏi` và không xuất hiện cho học viên.
 
 ### Trang 18: CD-KH-050190 — Soát lỗi bằng AI
+
+![Figma mới nhất · CD-KH-050190](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050190.png)
+
 ![Trang 18](./images/11-soat-loi-ai.png)
 
 *Soát lỗi AI: 2 bài nghi sai kèm lý do (Figma CD-KH-050190) — nhấn để xem ảnh gốc*
@@ -401,6 +436,9 @@ panel `Học kỳ & bài học`, cột / ô `Bài học`: **UI cần cập nhậ
 - Đề xuất của AI lưu nháp, dữ liệu cũ giữ nguyên tới khi duyệt; nhãn nghi sai mất khi duyệt, hoàn tác hoặc CD sửa tay.
 
 ### Trang 19: CD-KH-050140 — Preview mobile
+
+![Figma mới nhất · CD-KH-050140](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-050140.png)
+
 ![Trang 19](./images/06-preview-mobile.png)
 
 *Preview mobile bài nghe đang chọn: tab Làm bài, câu 1/5 (Figma CD-KH-050140) — nhấn để xem ảnh gốc*

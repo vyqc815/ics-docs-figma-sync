@@ -48,6 +48,10 @@ def main():
     for code, kind, name, comp, shown in rows:
         out.append(f'  "{code}": {{ kind: "{kind}", shownOn: {json.dumps(shown)}, load: () => import("@/components/figma/{name}").then((m) => m.{comp}) }},')
     out += ["};", ""]
+    # code → Figma node id of every coded frame, for the live image route (app/api/figma-frame)
+    ids = {code: f["id"] for code, f in sorted(frames.items())}
+    with open(f"{w}/lib/figma-frame-ids.generated.json", "w", encoding="utf-8") as fh:
+        json.dump(ids, fh, ensure_ascii=False, separators=(",", ":"))
     path = f"{w}/components/frames/frames.generated.ts"
     os.makedirs(os.path.dirname(path), exist_ok=True)
     open(path, "w", encoding="utf-8").write("\n".join(out))

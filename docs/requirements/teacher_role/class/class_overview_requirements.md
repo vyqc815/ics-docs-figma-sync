@@ -5,6 +5,9 @@ Tài liệu đặc tả menu **Tổng quan** trong Chi tiết lớp của role G
 ## 1. UI
 
 ### Trang 1: GV-LOP-020000 — Tổng quan — Khung màn và phân quyền
+
+![Figma mới nhất · GV-LOP-020000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-020000.png)
+
 ![Trang 1](./images/class-overview.png)
 
 *Menu Tổng quan: thống kê lớp phía trên, học viên đang chọn bên trái, danh sách học viên bên phải (Figma GV-LOP-020000) — nhấn để xem ảnh gốc*
@@ -30,6 +33,9 @@ Tài liệu đặc tả menu **Tổng quan** trong Chi tiết lớp của role G
 - Mọi thao tác trên màn là thao tác đọc; không có Toast CRUD.
 
 ### Trang 2: GV-LOP-010000 — Nút Back và tooltip thông tin lớp
+
+![Figma mới nhất · GV-LOP-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-010000.png)
+
 ![Trang 2](../../management_requirement/class_management/images/61-class-overview-back-tooltip.png)
 
 *Tooltip thông tin lớp khi hover nút Back (ảnh requirement Admin) — nhấn để xem ảnh gốc*

@@ -7,6 +7,9 @@ Quy tắc đã chốt dùng chung với [Thông tin lớp — Lịch sử & lư�
 ## 1. UI
 
 ### Trang 1: GV-LS-010000 — Tổng quan và tab Buổi dạy
+
+![Figma mới nhất · GV-LS-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LS-010000.png)
+
 ![Trang 1](./images/salary-lessons.png)
 
 *Figma GV-LS-010000 — sáu thẻ tổng hợp, bảng Buổi dạy và Danh sách lớp; số liệu là dữ liệu mẫu*
@@ -59,6 +62,9 @@ Quy tắc đã chốt dùng chung với [Thông tin lớp — Lịch sử & lư�
 - Số liệu mẫu trong Figma chưa nhất quán: cả hai dòng Danh sách lớp đều ghi 5.520.000 đ dù số buổi khác nhau, không khớp thẻ Lương buổi dạy 7.200.000 đ. Không dùng các số mẫu này để quyết định công thức.
 
 ### Trang 2: GV-LS-010003 — Tab KPI
+
+![Figma mới nhất · GV-LS-010003](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LS-010003.png)
+
 ![Trang 2](./images/salary-kpi.png)
 
 *Figma GV-LS-010003 — KPI của giáo viên trên toàn bộ lớp*
@@ -80,6 +86,9 @@ Quy tắc đã chốt dùng chung với [Thông tin lớp — Lịch sử & lư�
 - Không có thêm, sửa, xóa, đổi trạng thái hoặc xác nhận KPI. Không sao chép quyền Admin/Class Handler từ tab KPI quản lý lớp sang menu này.
 
 ### Trang 3: GV-LS-010004 — Tab OT
+
+![Figma mới nhất · GV-LS-010004](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LS-010004.png)
+
 ![Trang 3](./images/salary-ot.png)
 
 *Figma GV-LS-010004 — OT của giáo viên; không phải OT của Phụ trách lớp*
@@ -97,6 +106,13 @@ Quy tắc đã chốt dùng chung với [Thông tin lớp — Lịch sử & lư�
 **Phân biệt phạm vi:** Requirement [OT của Phụ trách lớp](../../management_requirement/class_management/class_detail_ot_requirements.md) chỉ cho Admin/Class Handler quản lý khoản nhận bởi Handler. Không áp dụng quyền truy cập/người nhận của requirement đó cho OT cá nhân Giáo viên ở đây. Cùng tên OT không có nghĩa dùng chung dữ liệu người nhận.
 
 ### Trang 4: GV-LS-010010, GV-LS-010012, ADM-LGV-020010 — Popup Đề xuất tăng lương
+
+![Figma mới nhất · GV-LS-010010](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LS-010010.png)
+
+![Figma mới nhất · GV-LS-010012](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LS-010012.png)
+
+![Figma mới nhất · ADM-LGV-020010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LGV-020010.png)
+
 ![Trang 4](./images/raise-request-form.png)
 
 *Figma GV-LS-010010 — bản xuất hiện tại có khối Lương buổi dạy hiện tại trùng và dropdown chưa nhãn; đã chốt bỏ hai thành phần này, Figma cần sửa — nhấn để xem ảnh gốc*
@@ -136,6 +152,9 @@ Các testcase nhắc đến Admin trong tài liệu này chỉ kiểm tra kết 
 - Dữ liệu form là draft cho tới Xác nhận gửi cuối cùng; quay lại chỉnh sửa giữ nội dung.
 
 ### Trang 5: GV-LS-010015 — Popup Xác nhận gửi đề xuất
+
+![Figma mới nhất · GV-LS-010015](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LS-010015.png)
+
 ![Trang 5](./images/raise-request-confirm-submit.png)
 
 *Figma GV-LS-010015 — bước xác nhận trước khi gửi*
@@ -153,6 +172,13 @@ Các testcase nhắc đến Admin trong tài liệu này chỉ kiểm tra kết 
 - Lỗi giữ draft để thử lại, không hiển thị banner Mới giả hoặc thông báo thành công trước backend.
 
 ### Trang 6: GV-LS-010014, GV-LS-010011, GV-LS-010016 — Trạng thái đề xuất và hủy đề xuất
+
+![Figma mới nhất · GV-LS-010014](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LS-010014.png)
+
+![Figma mới nhất · GV-LS-010011](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LS-010011.png)
+
+![Figma mới nhất · GV-LS-010016](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LS-010016.png)
+
 ![Trang 6](./images/raise-request-new.png)
 
 *Figma GV-LS-010014 — Mới, có thể hủy*
@@ -178,6 +204,9 @@ Các testcase nhắc đến Admin trong tài liệu này chỉ kiểm tra kết 
 - `A06.10` **Hủy và gửi lại**: Theo Figma, đề xuất Mới đã hủy không tiêu thụ chu kỳ; có thể gửi lại ngay nếu không có điều kiện chặn khác đang áp dụng. Hủy không xóa các kết quả cũ hoặc bỏ thời hạn chờ của một kết quả cũ.
 
 ### Trang 7: GV-LS-010013 — Popup Lịch sử đề xuất tăng lương
+
+![Figma mới nhất · GV-LS-010013](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LS-010013.png)
+
 ![Trang 7](./images/raise-request-history.png)
 
 *Figma GV-LS-010013 — lịch sử Mới/Đang xử lý/Đã duyệt/Đã huỷ/Từ chối theo dữ liệu thực tế*

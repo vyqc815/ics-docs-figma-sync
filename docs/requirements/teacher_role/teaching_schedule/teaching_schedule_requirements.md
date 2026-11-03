@@ -5,6 +5,9 @@ Tài liệu đặc tả menu **Lịch dạy** của role Giáo viên, gồm hai 
 ## 1. UI
 
 ### Trang 1: GV-LD-010000 — Tab Lịch dạy
+
+![Figma mới nhất · GV-LD-010000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LD-010000.png)
+
 ![Trang 1](./images/teaching-schedule-by-class.png)
 
 *Lịch tuần ở chế độ Theo lớp (Figma GV-LD-010000) — nhấn để xem ảnh gốc*
@@ -46,6 +49,9 @@ Tài liệu đặc tả menu **Lịch dạy** của role Giáo viên, gồm hai 
 - `A01.15` **Khác màn quản lý lịch lớp**: Quy tắc: Tab Lịch dạy ở Chi tiết lớp dùng màu loại/trạng thái lịch (Cố định, Linh hoạt, Hoàn thành, Hủy bỏ); không lấy màu theo thời gian tại menu này để thay đổi dữ liệu của tab đó.
 
 ### Trang 2: GV-LD-020000 — Tab Quản lý đăng ký lịch
+
+![Figma mới nhất · GV-LD-020000](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LD-020000.png)
+
 ![Trang 2](./images/schedule-registration.png)
 
 *Lưới đăng ký 3 buổi × 7 thứ, Fulltime và ghi chú chung (Figma GV-LD-020000) — nhấn để xem ảnh gốc*
@@ -84,6 +90,9 @@ Tài liệu đặc tả menu **Lịch dạy** của role Giáo viên, gồm hai 
 - Không tự xóa, dời hoặc đổi giáo viên của lịch dạy đã được xếp chỉ vì đổi lịch rảnh. Ví dụ giáo viên đã đăng ký rảnh T3–Chiều và được xếp buổi 15:00–16:00 vào T3: bỏ tick ô T3–Chiều chỉ là đổi đăng ký rảnh. **Đã chốt:** vẫn cho lưu lịch đăng ký bình thường khi bấm Cập nhật; không cảnh báo/chặn chỉ vì còn lịch đã phân công. Buổi 15:00–16:00 giữ nguyên, không phải thao tác hủy buổi dạy.
 
 ### Trang 3: GV-LD-020010 — Popup Đăng ký khung giờ
+
+![Figma mới nhất · GV-LD-020010](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LD-020010.png)
+
 ![Trang 3](./images/schedule-registration-slot.png)
 
 *Popup Đăng ký khung giờ (Figma GV-LD-020010) — nhấn để xem ảnh gốc*

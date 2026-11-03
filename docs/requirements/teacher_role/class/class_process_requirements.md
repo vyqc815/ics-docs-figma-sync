@@ -5,6 +5,9 @@ Tài liệu đặc tả nhóm menu **Quy trình** trong Chi tiết lớp của r
 ## 1. UI
 
 ### Trang 1: GV-LOP-060100 — Tiêu chuẩn lớp — Cây tiêu chuẩn và tiến độ
+
+![Figma mới nhất · GV-LOP-060100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-060100.png)
+
 **Mô tả:**
 
 - Giáo viên của lớp vào Chi tiết lớp → Quy trình → **Tiêu chuẩn lớp** để xem toàn bộ tiêu chuẩn (quy trình loại `Lớp - Giáo viên`) đã được Class Handler/Support thêm vào lớp, cùng Result và tiến độ. Thao tác ghi duy nhất là **tick xác nhận** Action loại Xác thực (`verify`) mà giáo viên được gán.
@@ -25,6 +28,9 @@ Tài liệu đặc tả nhóm menu **Quy trình** trong Chi tiết lớp của r
 - Tick không Toast thành công; lỗi lưu hiển thị Toast `Có Lỗi Xảy Ra`.
 
 ### Trang 2: GV-LOP-070100 — Cuộc họp — Khung màn và Danh sách buổi họp
+
+![Figma mới nhất · GV-LOP-070100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-070100.png)
+
 **Mô tả:**
 
 - Giáo viên của lớp vào Chi tiết lớp → Quy trình → **Cuộc họp** để xem các buổi họp của lớp mà mình **được mời tham gia**. Vùng trái là `Nội dung buổi họp` của buổi đang chọn; vùng phải là `Danh sách buổi họp`.

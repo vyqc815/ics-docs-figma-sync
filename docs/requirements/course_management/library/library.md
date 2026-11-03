@@ -106,6 +106,15 @@ Menu **Thư viện** của role **CD** gồm 3 mục **Kiến thức**, **Kỹ n
 - Tab không có dữ liệu ở trung tâm (vd Kanji ở Đắc Nhân) vẫn hiện, bảng hiện trạng thái rỗng `Bảng dữ liệu này đang trống`.
 
 ### Trang 4: CD-KH-070160, CD-KH-070161, CD-KH-070170, CD-KH-070171 — Thư viện kiến thức — tab Bảng chữ
+
+![Figma mới nhất · CD-KH-070160](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070160.png)
+
+![Figma mới nhất · CD-KH-070161](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070161.png)
+
+![Figma mới nhất · CD-KH-070170](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070170.png)
+
+![Figma mới nhất · CD-KH-070171](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070171.png)
+
 ![Trang 4](./images/06-bang-chu-nhat-danh-sach.png)
 
 *Bảng chữ tiếng Nhật, dạng danh sách (Figma CD-KH-070160) — nhấn để xem ảnh gốc*
@@ -219,6 +228,17 @@ Menu **Thư viện** của role **CD** gồm 3 mục **Kiến thức**, **Kỹ n
 - BTVN Mẫu / Kiểm Tra Mẫu không có cột `Tổng điểm` (mọi câu chấm thang 10, điểm bài là trung bình các câu).
 
 ### Trang 7: CD-KH-070301, CD-KH-070302, CD-KH-070304, CD-KH-070305, CD-KH-070303 — Thư viện bài tập — Chi tiết câu hỏi
+
+![Figma mới nhất · CD-KH-070301](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070301.png)
+
+![Figma mới nhất · CD-KH-070302](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070302.png)
+
+![Figma mới nhất · CD-KH-070304](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070304.png)
+
+![Figma mới nhất · CD-KH-070305](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070305.png)
+
+![Figma mới nhất · CD-KH-070303](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-070303.png)
+
 ![Trang 7](./images/22-chi-tiet-cau-nghe.png)
 
 *Câu Nghe: kịch bản theo lượt, đang thêm lượt và mở ô chọn đối tượng (Figma CD-KH-070301) — nhấn để xem ảnh gốc*

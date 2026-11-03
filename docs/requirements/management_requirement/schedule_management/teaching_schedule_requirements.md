@@ -5,6 +5,9 @@
 ## 1. UI
 
 ### Trang 1: ADM-LD-010000 — Lịch dạy tổng theo tuần
+
+![Figma mới nhất · ADM-LD-010000](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LD-010000.png)
+
 ![Trang 1](./images/teaching-schedule-overview.png)
 
 *Lịch dạy tổng: thanh tuần, tìm kiếm, bộ lọc và lưới 7 ngày (Figma ADM-LD-010000) — nhấn để xem ảnh gốc*
@@ -44,6 +47,9 @@
 - Khác ICS cũ: ICS cũ không có ô tìm kiếm, không lọc Giáo viên, ba bộ lọc còn lại chọn một; requirement mới theo Figma và quyết định người dùng (chọn nhiều, có tìm kiếm, có Trung tâm).
 
 ### Trang 2: ADM-LD-010010 — Chế độ Theo lớp
+
+![Figma mới nhất · ADM-LD-010010](https://ics-figma-demo.vercel.app/api/figma-frame/ADM-LD-010010.png)
+
 ![Trang 2](./images/teaching-schedule-by-class.png)
 
 *Bật Theo lớp: mỗi lớp một nhóm có thanh mã lớp và lưới 7 ngày (Figma ADM-LD-010010) — nhấn để xem ảnh gốc*
