@@ -1,0 +1,89 @@
+# Sinh lại code + MD cho màn design vừa sửa, 3 lượt/ngày (8h30, 12h30, 16h30 giờ VN, thứ 2–7), trước mỗi lượt deploy
+# gộp 30 phút (deploy.yml). Đọc Figma qua REST (figma-page export --rest): không cần Figma Desktop.
+#   changes → export --rest + build các màn đổi → nén page-spec → commit → deploy lượt kế tiếp đưa lên demo/Hub.
+# Màn mới vẽ chưa có trong figma.pages.json thì chưa tự thêm (cần đăng ký màn, figma-page add/discover).
+# Cần secret PIPELINE_TOKEN (đọc repo figma-console-mcp-pls) và FIGMA_ACCESS_TOKEN.
+name: Figma codegen
+
+on:
+  schedule:
+    - cron: "30 1,5,9 * * 1-6"
+  workflow_dispatch:
+
+concurrency:
+  group: figma-codegen
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  codegen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+      FIGMA_PAGE: node .pipeline/dist/figma-page.js
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: khanhtruongds-del/figma-console-mcp-pls
+          ref: feat/screen-registry
+          token: ${{ secrets.PIPELINE_TOKEN }}
+          path: .pipeline
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: .pipeline/package-lock.json
+
+      - name: Build figma-page
+        working-directory: .pipeline
+        run: npm ci --ignore-scripts && npm run build:local
+
+      - name: Restore snapshot
+        uses: actions/cache/restore@v4
+        with:
+          path: .figma/pages/snapshot.json
+          key: codegen-snapshot-${{ github.run_id }}
+          restore-keys: codegen-snapshot-
+
+      - name: Which screens changed
+        id: changed
+        run: |
+          set +e
+          $FIGMA_PAGE changes --save --names "$RUNNER_TEMP/names.json" > "$RUNNER_TEMP/changes.log" 2>&1
+          code=$?
+          tail -20 "$RUNNER_TEMP/changes.log"
+          if [ "$code" != 0 ] && [ "$code" != 3 ]; then exit $code; fi
+          names=$(node -e 'try{process.stdout.write(JSON.parse(require("fs").readFileSync(process.argv[1],"utf8")).join(" "))}catch{}' "$RUNNER_TEMP/names.json")
+          echo "names=$names" >> "$GITHUB_OUTPUT"
+          echo "Màn cần sinh lại: ${names:-không có}"
+
+      - name: Save snapshot
+        if: hashFiles('.figma/pages/snapshot.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .figma/pages/snapshot.json
+          key: codegen-snapshot-${{ github.run_id }}
+
+      - name: Export and build
+        if: steps.changed.outputs.names != ''
+        run: |
+          node scripts/figma/specs-pack.mjs unpack
+          $FIGMA_PAGE sync ${{ steps.changed.outputs.names }} --rest
+          node scripts/figma/specs-pack.mjs pack
+          python3 scripts/he-thong-ma/spec_slim.py
+
+      - name: Commit
+        if: steps.changed.outputs.names != ''
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A components app docs public lib .figma/specs .figma/token-table.json
+          if git diff --cached --quiet; then echo "Không có gì đổi trong code."; exit 0; fi
+          git commit -m "Sinh lại code + MD từ Figma: ${{ steps.changed.outputs.names }}"
+          git push
