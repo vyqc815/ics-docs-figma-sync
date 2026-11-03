@@ -38,6 +38,7 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
   return (
     <>
       <PageHead
+        back="/hub/man"
         title={<span className="font-mono">{code}</span>}
         sub={frame?.title ?? planned?.title ?? "Mã dự kiến"}
       >
