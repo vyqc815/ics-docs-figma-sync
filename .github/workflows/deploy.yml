@@ -34,10 +34,13 @@ jobs:
       # The runner has 7GB RAM; next build of ~930 pages peaks above it and the runner is killed mid-build.
       - name: Add swap
         run: |
+          # free disk first (unused preinstalled SDKs); a 12GB swap on the stock disk filled it and killed the runner
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
           sudo swapoff -a || true
-          sudo fallocate -l 12G /swapfile2 && sudo chmod 600 /swapfile2
+          sudo rm -f /swapfile /mnt/swapfile
+          sudo fallocate -l 8G /swapfile2 && sudo chmod 600 /swapfile2
           sudo mkswap /swapfile2 && sudo swapon /swapfile2
-          free -h
+          free -h && df -h /
 
       - uses: actions/checkout@v4
         with:
