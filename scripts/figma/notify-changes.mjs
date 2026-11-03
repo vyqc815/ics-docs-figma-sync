@@ -6,6 +6,9 @@
  * thì dừng sau một request; có sửa thì đọc lại các màn đã đăng ký, so với mốc,
  * ghi báo cáo và gửi tóm tắt vào Google Chat.
  *
+ * Chỉ báo khi design sửa thật: so theo id frame (đổi mã, đổi tên màn trong danh sách không tính),
+ * bỏ qua màn mới đưa vào danh sách, đổi tên layer và lệch vị trí ≤ 1px. Không còn gì thì không gửi tin.
+ *
  * Env: FIGMA_ACCESS_TOKEN (bắt buộc), GOOGLE_CHAT_WEBHOOK_URL (không có thì chỉ in ra),
  * FIGMA_PROJECT (tên dự án; mỗi dự án một luồng trong Space chung),
  * RUN_URL (link tới lượt chạy, kèm vào tin nhắn).
@@ -13,15 +16,11 @@
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
-import {
-	changesMarkdown,
-	diffSnapshots,
-	fetchSnapshot,
-	restClient,
-} from "./changes.mjs";
+import { changesMarkdown, diffFrame, fetchSnapshot, restClient } from "./changes.mjs";
 
 /** Google Chat cắt tin nhắn dài; phần còn lại nằm trong báo cáo đầy đủ. */
 const CHAT_LIMIT = 3500;
+const LABEL = { added: "Thêm", removed: "Xoá", text: "Đổi chữ", component: "Đổi component", style: "Đổi màu/kiểu", layout: "Đổi vị trí, kích thước" };
 
 const root = process.cwd();
 const config = JSON.parse(readFileSync(join(root, "figma.pages.json"), "utf-8"));
@@ -71,27 +70,60 @@ if (!previous) {
 	process.exit(0);
 }
 
-const changes = diffSnapshots(previous, snapshot);
+const changes = designChanges(previous, snapshot);
+// a frame deleted on Figma is a design change only if it was being watched before
+const watched = new Set(Object.values(previous.pages).map((f) => f.nodeId));
+const deleted = missing.filter((n) => watched.has(config.pages.find((p) => p.name === n)?.nodeId));
 const report = changesMarkdown(changes, 12, pages.length);
 writeFileSync(reportPath, report, "utf-8");
 console.log(report);
 for (const name of missing) console.log(`! ${name}: không thấy frame trên Figma`);
-if (!changes.length) process.exit(0);
+if (!changes.length && !deleted.length) {
+	console.log("Không có thay đổi thật của design, không gửi tin.");
+	process.exit(0);
+}
 
-await postToChat(chatText(report, missing));
+await postToChat(chatText(changes, deleted));
 process.exit(3);
 
-/** Markdown của báo cáo sang cú pháp Google Chat (*đậm*), cắt cho vừa một tin. */
-function chatText(markdown, missingNames) {
-	let text = markdown
-		.replace(/^# (.*)$/gm, `*[${project}] $1*`)
-		.replace(/^## (.*)$/gm, "*$1*")
-		.replace(/\n{3,}/g, "\n\n")
-		.trim();
-	if (missingNames.length)
-		text += `\n\n*Không thấy trên Figma:* ${missingNames.join(", ")}`;
-	const link = process.env.RUN_URL ? `\n\nBáo cáo đầy đủ: ${process.env.RUN_URL}` : "";
+/** Changes design made, matched by frame id; sync work on our side does not count. */
+function designChanges(before, after) {
+	const byNode = new Map(Object.values(before.pages).map((f) => [f.nodeId, f]));
+	const out = [];
+	for (const [page, frame] of Object.entries(after.pages)) {
+		const prev = byNode.get(frame.nodeId);
+		if (!prev) continue; // newly registered screen, not an edit
+		const real = diffFrame(prev, frame).filter(meaningful);
+		if (real.length) out.push({ page, frameName: frame.frameName, status: "changed", changes: real });
+	}
+	return out;
+}
+
+function meaningful(c) {
+	if (c.kind === "renamed") return false; // layer names are not visible
+	if (c.kind === "layout" && c.before && c.after) {
+		const a = c.before.split(",").map(Number);
+		const b = c.after.split(",").map(Number);
+		return a.some((v, i) => Math.abs(v - b[i]) > 1); // rounding moves 1px
+	}
+	return true;
+}
+
+/** One line per changed screen with what changed, a few text edits quoted; the full list is in the report. */
+function chatText(changed, deleted) {
+	const q = (s) => `“${String(s ?? "").replace(/\s+/g, " ").slice(0, 50)}”`;
+	const lines = [`*[${project}] Design vừa sửa ${changed.length} màn*`];
+	for (const p of changed) {
+		const counts = {};
+		for (const c of p.changes) counts[c.kind] = (counts[c.kind] ?? 0) + 1;
+		lines.push(`• *${p.frameName}*: ${Object.entries(counts).map(([k, n]) => `${LABEL[k] ?? k} ${n}`).join(" · ")}`);
+		for (const c of p.changes.filter((c) => c.kind === "text").slice(0, 2))
+			lines.push(`    ${q(c.before)} → ${q(c.after)}`);
+	}
+	if (deleted.length) lines.push("", `*Frame bị xoá trên Figma:* ${deleted.join(", ")}`);
+	let text = lines.join("\n");
 	if (text.length > CHAT_LIMIT) text = `${text.slice(0, CHAT_LIMIT)}\n…(còn nữa)`;
+	const link = process.env.RUN_URL ? `\n\nChi tiết từng màn: ${process.env.RUN_URL}` : "";
 	return text + link;
 }
 
