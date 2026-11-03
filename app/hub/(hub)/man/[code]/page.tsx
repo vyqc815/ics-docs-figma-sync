@@ -53,7 +53,7 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
         {frameSrc ? (
           <iframe src={frameSrc} title={`${code} · ${xem}`} className="h-[78vh] min-h-[560px] w-full rounded-xl border border-(--hub-line) bg-white" />
         ) : (
-          <LiveShot code={code} className="min-h-[260px]" />
+          <LiveShot code={code} className="min-h-[260px]" live />
         )}
         <div className="mt-4 flex flex-wrap gap-2 text-sm">
             {demo && (

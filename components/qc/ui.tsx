@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
+import { FigmaShot } from "@/components/qc/figma-shot";
+
 /** Small building blocks of the QC hub, all on the dark panel palette from app/qc/qc.css. */
 
 export function Panel({ title, action, children, className = "" }: { title?: ReactNode; action?: ReactNode; children: ReactNode; className?: string }): React.JSX.Element {
@@ -102,18 +104,9 @@ export function PageHead({ title, sub, children }: { title: ReactNode; sub?: Rea
   );
 }
 
-/**
- * Live Figma render of a screen; the route serves a "Chưa có thiết kế" card for codes not drawn yet.
- * QC_IMAGE_BASE points a local run without a Figma token at the deployed route.
- */
-export function LiveShot({ code, className = "" }: { code: string; className?: string }): React.JSX.Element {
-  return (
-    <div className={`relative overflow-hidden rounded-xl bg-(--hub-panel-3) ${className}`}>
-      <span className="absolute inset-0 grid place-items-center text-xs text-(--hub-faint)">Đang tải ảnh Figma…</span>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={`${process.env.QC_IMAGE_BASE ?? ""}/api/figma-frame/${code}.png`} alt={code} loading="lazy" className="relative h-full w-full object-cover object-top" />
-    </div>
-  );
+/** Image of a screen: saved render first, the current Figma render swapped in when `live` (FigmaShot). */
+export function LiveShot({ code, className = "", live = false }: { code: string; className?: string; live?: boolean }): React.JSX.Element {
+  return <FigmaShot code={code} className={className} live={live} liveBase={process.env.QC_IMAGE_BASE ?? ""} />;
 }
 
 export function SearchBox({ defaultValue = "", placeholder }: { defaultValue?: string; placeholder: string }): React.JSX.Element {

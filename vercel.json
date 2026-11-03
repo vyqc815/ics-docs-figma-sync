@@ -8,7 +8,7 @@
       "permanent": false
     }
   ],
-  "buildCommand": "next build",
+  "buildCommand": "node scripts/figma/copy-refs.mjs && next build",
   "git": {
     "deploymentEnabled": false
   }

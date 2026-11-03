@@ -23,3 +23,6 @@ next-env.d.ts
 __pycache__/
 .vercel
 .env*
+
+# figma-ref: copied from .figma/pages/*/reference@1x.png at build (scripts/figma/copy-refs.mjs)
+public/figma-ref/

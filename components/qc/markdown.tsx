@@ -2,6 +2,8 @@ import { posix } from "node:path";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+import { FigmaShot } from "@/components/qc/figma-shot";
+
 const QC_SHOT = "qc-shot:";
 
 /**
@@ -43,6 +45,8 @@ export function RequirementMarkdown({ file, text }: { file: string; text: string
                   Ảnh QC chụp{alt.length > QC_SHOT.length ? ` · ${alt.slice(QC_SHOT.length)}` : ""} ↗
                 </a>
               );
+            const code = url?.match(/\/api\/figma-frame\/([A-Z0-9-]+)\.png$/)?.[1];
+            if (code) return <FigmaShot code={code} live liveBase={url?.split("/api/")[0] ?? ""} className="my-2.5" />;
             // eslint-disable-next-line @next/next/no-img-element
             return <img src={url} alt={alt ?? ""} loading="lazy" />;
           },
