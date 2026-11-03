@@ -705,23 +705,6 @@
    }
   },
   {
-   "cluster": "overview-s2",
-   "clusterTitle": "Tổng quan (S2)",
-   "region": "CM-OS2.A02",
-   "regionTitle": "Khu vực: Bảng \"Nội dung buổi học\"",
-   "screens": [
-    "CD-KH-020100"
-   ],
-   "kind": "khu-vuc-can-bo-sung",
-   "requirement": "course_management/overview-s2/overview-s2.md",
-   "item": null,
-   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-036",
-   "links": {
-    "CD-KH-020100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=470-2142"
-   }
-  },
-  {
    "cluster": "skill-s6",
    "clusterTitle": "Kỹ năng (S6) — Nghe / Đọc",
    "region": "CM-SS.A02",
@@ -731,7 +714,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A02.01",
    "text": "Thêm `Checkbox`: Chọn dòng cho thao tác hàng loạt; checkbox đầu bảng chọn cả trang.",
-   "id": "FIX-037",
+   "id": "FIX-036",
    "links": {}
   },
   {
@@ -744,7 +727,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A02.02",
    "text": "Thêm `STT + tay nắm kéo thả`: Số thứ tự theo sắp xếp hiện tại, 2 chữ số; tay nắm chỉ hiện khi đang xem 1 cụm và Sắp xếp = `Thứ tự trong cụm`.",
-   "id": "FIX-038",
+   "id": "FIX-037",
    "links": {}
   },
   {
@@ -757,7 +740,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A02.03",
    "text": "Thêm `Bài nghe`: Dòng 1 **Tên bài** (ngôn ngữ đích, vd `对话：初次见面`), dòng 2 **Mô tả** tiếng Việt, cắt `…` khi dài; hover hiện đủ. Bấm tên mở drawer Chi tiết.",
-   "id": "FIX-039",
+   "id": "FIX-038",
    "links": {}
   },
   {
@@ -770,7 +753,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A02.04",
    "text": "Thêm `Âm thanh`: Nút phát, thanh tiến độ, thời lượng `mm:ss` (≥ 1 giờ hiện `h:mm:ss`). Chưa có file hiện `— chưa có file —` màu cam. Chỉ phát một bài tại một thời điểm, phát bài khác thì bài đang phát dừng.",
-   "id": "FIX-040",
+   "id": "FIX-039",
    "links": {}
   },
   {
@@ -783,7 +766,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A02.05",
    "text": "Thêm `Cụm`: Nhãn cụm duy nhất của bài; bấm nhãn mở popup Thêm vào cụm / Gỡ khỏi cụm của bài đó. Không thuộc cụm nào hiện `Chưa phân cụm`. Không có nhãn `+N`.",
-   "id": "FIX-041",
+   "id": "FIX-040",
    "links": {}
   },
   {
@@ -796,7 +779,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A02.06",
    "text": "Thêm `Nâng cao`: `Có` / `Không` (mặc định `Không`); `Có` = bài nâng cao, app không đẩy lên bước học chính, vẫn hiện trong danh sách luyện (**UI cần bổ sung**).",
-   "id": "FIX-042",
+   "id": "FIX-041",
    "links": {}
   },
   {
@@ -809,7 +792,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A02.07",
    "text": "Thêm `Menu ⋮`: `Mở chi tiết`, `Thêm vào cụm / Gỡ khỏi cụm`, `Transcript AI`, `Gỡ khỏi khoá`.",
-   "id": "FIX-043",
+   "id": "FIX-042",
    "links": {}
   },
   {
@@ -822,7 +805,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A02.08",
    "text": "Thêm `Nhãn AI dưới tên`: `AI · đang tạo transcript`, `AI · đã tạo, chờ duyệt`, `? <lý do nghi sai>` (xem khu vực AI).",
-   "id": "FIX-044",
+   "id": "FIX-043",
    "links": {}
   },
   {
@@ -835,7 +818,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A04.01",
    "text": "Thêm `Tất cả cụm + badge N cụm`: Tiêu đề panel và số cụm hiện có; chọn để xem mọi bài của tab (mặc định).",
-   "id": "FIX-045",
+   "id": "FIX-044",
    "links": {}
   },
   {
@@ -848,7 +831,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A04.02",
    "text": "Thêm `Số cụm`: **Chỉ đọc**, = tổng `Số buổi` của các dòng Nội dung buổi học có Loại = kỹ năng của tab ở Tổng quan (S2); ghi chú `Theo Tổng quan (S2) · N buổi`. Hệ thống tự tạo đủ cụm rỗng `Chủ đề 1` … `Chủ đề N`; CD đổi tên, chia bài, liên kết bài học. Chưa có buổi thì panel hiện `Chưa có cụm. Nhập Số buổi cho loại <Nghe> ở Tổng quan (S2) để tạo cụm.`",
-   "id": "FIX-046",
+   "id": "FIX-045",
    "links": {}
   },
   {
@@ -861,7 +844,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A04.03",
    "text": "Thêm `Chia cụm bằng AI`: AI đề xuất chia các bài của tab vào cụm theo chủ đề nội dung; kết quả chờ duyệt, CD áp dụng hoặc bỏ, theo cùng quy tắc popup Chia cụm bằng AI của S1.",
-   "id": "FIX-047",
+   "id": "FIX-046",
    "links": {}
   },
   {
@@ -874,7 +857,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A04.04",
    "text": "Thêm `Dòng cụm`: `NN. <tên cụm>` + badge số bài của cụm (0 hiện xám) + chip bài học đã liên kết (`HK I · Bài 3`) hoặc nhãn cam `Chưa liên kết`; chọn để lọc bảng trái, tiêu đề bảng đổi thành tên cụm. Menu ⋮: `Đổi tên`, `Liên kết bài học`. Không có `Xoá cụm`.",
-   "id": "FIX-048",
+   "id": "FIX-047",
    "links": {}
   },
   {
@@ -887,7 +870,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A04.05",
    "text": "Thêm `Popup Liên kết bài học`: Như S1: cây `<kỳ> › Bài N`, radio chọn đúng 1 bài; bài đã có cụm **cùng loại kỹ năng** mờ kèm `Đã liên kết: <cụm>`; `Bỏ liên kết`; `Huỷ` / `Lưu`.",
-   "id": "FIX-049",
+   "id": "FIX-048",
    "links": {}
   },
   {
@@ -900,7 +883,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A04.06",
    "text": "Thêm `Chưa phân cụm`: Badge cam = số bài chưa thuộc cụm nào; chọn để lọc.",
-   "id": "FIX-050",
+   "id": "FIX-049",
    "links": {}
   },
   {
@@ -913,7 +896,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A04.07",
    "text": "Thêm `Thêm cụm mới`: **Bỏ**: số cụm chỉ do S2 quyết định.",
-   "id": "FIX-051",
+   "id": "FIX-050",
    "links": {}
   },
   {
@@ -926,7 +909,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A05.01",
    "text": "Thêm `Ô tìm`: Khớp một phần, không phân biệt hoa thường, theo tên bài, mô tả, nội dung (kịch bản với Nghe, đoạn văn với Đọc). Tìm sau khi ngừng gõ 2 giây hoặc Enter.",
-   "id": "FIX-052",
+   "id": "FIX-051",
    "links": {}
   },
   {
@@ -939,7 +922,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A05.02",
    "text": "Thêm `Cụm`: Chọn ở panel Cụm (`Tất cả cụm`, một cụm, hoặc `Chưa phân cụm`); không có dropdown lọc riêng trên toolbar.",
-   "id": "FIX-053",
+   "id": "FIX-052",
    "links": {}
   },
   {
@@ -952,7 +935,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A05.03",
    "text": "Thêm `Sắp xếp`: `Thứ tự thêm` (mặc định), `Tên A–Z`, `Mới cập nhật`, `Thứ tự trong cụm` (chỉ khi đang xem 1 cụm).",
-   "id": "FIX-054",
+   "id": "FIX-053",
    "links": {}
   },
   {
@@ -965,7 +948,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A05.04",
    "text": "Thêm `Trạng thái`: `Tất cả` (mặc định), `Nháp`, `Công khai`, `Vô hiệu` của bản ghi thư viện.",
-   "id": "FIX-055",
+   "id": "FIX-054",
    "links": {}
   },
   {
@@ -978,7 +961,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A05.05",
    "text": "Thêm `Nâng cao`: `Tất cả` (mặc định), `Có`, `Không` (**UI cần bổ sung**).",
-   "id": "FIX-056",
+   "id": "FIX-055",
    "links": {}
   },
   {
@@ -994,7 +977,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A06.05",
    "text": "Thêm `Nâng cao`: Toggle `Không` (mặc định) / `Có`; cùng ý nghĩa field Nâng cao của Kiến thức (S1): `Có` = bài nâng cao, không đẩy lên bước học chính. (**UI cần bổ sung**)",
-   "id": "FIX-057",
+   "id": "FIX-056",
    "links": {
     "CD-KH-050110": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-84755",
     "CD-KH-070301": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-81278"
@@ -1013,7 +996,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A06.07",
    "text": "Thêm `Kịch bản · N lượt`: Danh sách lượt thoại theo thứ tự: nhãn người nói (`A`, `B`…), câu gốc, `Phiên âm ·`, `Dịch ·`, mốc `start – end` theo audio (`mm:ss.s`, **UI cần bổ sung**). Thêm / sửa / xoá / kéo thả lượt; lượt có giá trị AI chờ duyệt viền nét đứt cam với `✓ Duyệt` / `↺ Hoàn tác`.",
-   "id": "FIX-058",
+   "id": "FIX-057",
    "links": {
     "CD-KH-050110": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-84755",
     "CD-KH-070301": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-81278"
@@ -1032,7 +1015,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-059",
+   "id": "FIX-058",
    "links": {
     "CD-KH-070302": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-82177",
     "CD-KH-050210": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6935-379016"
@@ -1048,7 +1031,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A08.01",
    "text": "Thêm `Mở chi tiết`: Mở drawer.",
-   "id": "FIX-060",
+   "id": "FIX-059",
    "links": {}
   },
   {
@@ -1061,7 +1044,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A08.02",
    "text": "Thêm `Thêm vào cụm / Gỡ khỏi cụm`: Mở popup `Cụm của N bài` (N bài đang chọn: 1 khi mở từ dòng).",
-   "id": "FIX-061",
+   "id": "FIX-060",
    "links": {}
   },
   {
@@ -1074,7 +1057,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A08.03",
    "text": "Thêm `Transcript AI (Nghe) / Tạo câu hỏi bằng AI (Đọc)`: Chạy AI cho riêng bài đó (xem khu vực AI).",
-   "id": "FIX-062",
+   "id": "FIX-061",
    "links": {}
   },
   {
@@ -1087,7 +1070,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A08.04",
    "text": "Thêm `Gỡ khỏi khoá`: Mở popup Gỡ khỏi khoá.",
-   "id": "FIX-063",
+   "id": "FIX-062",
    "links": {}
   },
   {
@@ -1100,7 +1083,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A08.05",
    "text": "Thêm `Popup — Tìm cụm`: Tìm theo tên cụm của tab.",
-   "id": "FIX-064",
+   "id": "FIX-063",
    "links": {}
   },
   {
@@ -1113,7 +1096,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A08.06",
    "text": "Thêm `Popup — Danh sách cụm`: **Radio** từng cụm + số bài của cụm, thêm `Chưa phân cụm` (= gỡ khỏi cụm). Mọi bài đang chọn cùng cụm thì chọn sẵn cụm đó.",
-   "id": "FIX-065",
+   "id": "FIX-064",
    "links": {}
   },
   {
@@ -1126,7 +1109,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A08.07",
    "text": "Thêm `Popup — Huỷ / Lưu`: Lưu: các bài chuyển vào cụm đã chọn (rời cụm cũ); chọn `Chưa phân cụm` thì gỡ khỏi cụm. Bài học liên kết cụm cũ / mới phản ánh ngay, không cảnh báo.",
-   "id": "FIX-066",
+   "id": "FIX-065",
    "links": {}
   },
   {
@@ -1141,7 +1124,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-067",
+   "id": "FIX-066",
    "links": {
     "CD-KH-050150": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-122539"
    }
@@ -1158,7 +1141,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-068",
+   "id": "FIX-067",
    "links": {
     "CD-KH-050160": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-122949"
    }
@@ -1173,7 +1156,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.01",
    "text": "Thêm `listening_lesson (bắt buộc)`: Mỗi dòng = 1 bài nghe | `id` → mã dòng trong file (chỉ để nối sheet, không lưu làm mã bài); `title` → `Tên bài`; `mean` → `Mô tả`. Bỏ qua `lesson_id`.",
-   "id": "FIX-069",
+   "id": "FIX-068",
    "links": {}
   },
   {
@@ -1186,7 +1169,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.02",
    "text": "Thêm `listening`: Kịch bản, mỗi dòng = 1 lượt thoại, theo thứ tự dòng | `listening_lesson_id` → bài nghe; `character` → người nói (`A`, `B`…); `sentence` → câu gốc; `phonetic` → `Phiên âm`; `furigana` → phiên âm có chú thích (tiếng Nhật); `mean` → `Dịch`; `start` / `end` → mốc thời gian. Bỏ qua `id`, `_start`, `_end`.",
-   "id": "FIX-070",
+   "id": "FIX-069",
    "links": {}
   },
   {
@@ -1199,7 +1182,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.03",
    "text": "Thêm `listening_question`: Câu hỏi của bài nghe | `listening_lesson_id` → bài nghe; `question`, `a`–`d`, `answer` (số thứ tự đáp án đúng 1–4), `explain` → câu hỏi trắc nghiệm của bài (lưu vào bộ câu hỏi Listening của Thư viện bài tập).",
-   "id": "FIX-071",
+   "id": "FIX-070",
    "links": {}
   },
   {
@@ -1212,7 +1195,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.04",
    "text": "Thêm `reading_lesson (bắt buộc)`: Mỗi dòng = 1 bài đọc | `id` → mã dòng trong file; `title` → `Tên bài`; `mean` → `Mô tả`; `source` → nguồn (ghi chú). Bỏ qua `lesson_id`.",
-   "id": "FIX-072",
+   "id": "FIX-071",
    "links": {}
   },
   {
@@ -1225,7 +1208,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.05",
    "text": "Thêm `reading`: Đoạn văn, mỗi dòng = 1 câu, theo thứ tự dòng | `reading_lesson_id` → bài đọc; `sentence` → câu của đoạn văn; `phonetic` → `Phiên âm`; `furigana` → phiên âm có chú thích; `mean` → `Dịch`. Bỏ qua `id`, `note`.",
-   "id": "FIX-073",
+   "id": "FIX-072",
    "links": {}
   },
   {
@@ -1238,7 +1221,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.06",
    "text": "Thêm `reading_question`: Câu hỏi của bài đọc | `reading_lesson_id` → bài đọc; `question`, `image`, `question_type`, `a`–`d`, `answer`, `explain` → câu hỏi (bộ câu hỏi Reading của Thư viện bài tập).",
-   "id": "FIX-074",
+   "id": "FIX-073",
    "links": {}
   },
   {
@@ -1251,7 +1234,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.07",
    "text": "Thêm `reading_vocabulary`: Từ vựng liên quan của bài đọc | **Bắt buộc có cột `reading_lesson_id`** → bài đọc; `word`, `phonetic`, `type`, `furigana`, `mean`, `example`, `example_phonetic`, `example_mean` → từ vựng. Từ trùng với Từ vựng S1 của khoá thì nối vào từ đó; chưa có thì tạo từ mới trong S1 của khoá rồi nối.",
-   "id": "FIX-075",
+   "id": "FIX-074",
    "links": {}
   },
   {
@@ -1264,7 +1247,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.08",
    "text": "Thêm `Import — sheet`: Thiếu sheet bắt buộc (`listening_lesson` / `reading_lesson`) → báo `Không tìm thấy sheet listening_lesson`, không import. Sheet phụ trống / không có thì bài thiếu phần đó (tính thiếu thông tin), vẫn import.",
-   "id": "FIX-076",
+   "id": "FIX-075",
    "links": {}
   },
   {
@@ -1277,7 +1260,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.09",
    "text": "Thêm `Import — dòng bắt buộc`: Sheet bài gốc: `title`. Sheet phụ: cột nối `listening_lesson_id` / `reading_lesson_id` phải trùng một `id` của sheet bài gốc trong cùng file. Nghe cho phép trống file âm thanh (bài tính thiếu thông tin).",
-   "id": "FIX-077",
+   "id": "FIX-076",
    "links": {}
   },
   {
@@ -1290,7 +1273,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.10",
    "text": "Thêm `Import — lỗi dữ liệu`: Có dòng lỗi → **chặn cả file**, không thêm bài nào; danh sách lỗi theo **sheet + số dòng** (vd `reading_vocabulary dòng 12: thiếu reading_lesson_id`, `listening dòng 40: listening_lesson_id 999 không có trong listening_lesson`).",
-   "id": "FIX-078",
+   "id": "FIX-077",
    "links": {}
   },
   {
@@ -1303,7 +1286,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.11",
    "text": "Thêm `Import — thành công`: Mỗi dòng sheet bài gốc tạo 1 bản ghi thư viện mới `Nháp` (kèm kịch bản / đoạn văn, câu hỏi, từ vựng liên quan), gắn vào khoá theo thứ tự dòng, vào cụm đang chọn; Toast `Thành Công` `Đã import N bài nghe.`; gợi ý Soát lỗi AI. Không tự dò trùng bài.",
-   "id": "FIX-079",
+   "id": "FIX-078",
    "links": {}
   },
   {
@@ -1316,7 +1299,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A15.12",
    "text": "Thêm `Export`: Toàn bộ bài của tab trong khoá (không theo bộ lọc); tên file `<Khoá học>_<Kỹ năng>.xlsx`; cùng các sheet và cột như bảng trên (Nghe 3 sheet, Đọc 4 sheet, `reading_vocabulary` có `reading_lesson_id`), `id` đánh lại theo thứ tự trong file; thêm cột `cluster` (tên các cụm, cách nhau `;`) ở sheet bài gốc để tham khảo. Không có cột bài học.",
-   "id": "FIX-080",
+   "id": "FIX-079",
    "links": {}
   },
   {
@@ -1329,7 +1312,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A20.01",
    "text": "Thêm `Nguồn dữ liệu`: Với mỗi loại kỹ năng, bài học có tối đa 1 cụm liên kết; tab hiện bài của cụm đó theo `Thứ tự trong cụm`.",
-   "id": "FIX-081",
+   "id": "FIX-080",
    "links": {}
   },
   {
@@ -1342,7 +1325,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A20.02",
    "text": "Thêm `Bộ lọc loại`: `Nghe` (mặc định), `Đọc`, `Viết`, `Nói`; loại chưa liên kết hiện `Chưa có cụm <loại> liên kết với bài này` + hướng dẫn `Liên kết tại Kỹ năng (S6) › panel Cụm`.",
-   "id": "FIX-082",
+   "id": "FIX-081",
    "links": {}
   },
   {
@@ -1355,7 +1338,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A20.03",
    "text": "Thêm `Tiêu đề khung`: Tên cụm đã liên kết (vd `Cụm nghe: Chào hỏi · 3 bài`).",
-   "id": "FIX-083",
+   "id": "FIX-082",
    "links": {}
   },
   {
@@ -1368,7 +1351,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A20.04",
    "text": "Thêm `Đồng bộ`: Thêm / gỡ / chuyển bài trong cụm, đổi tên cụm, đổi liên kết ở S6 → bài học cập nhật ngay.",
-   "id": "FIX-084",
+   "id": "FIX-083",
    "links": {}
   },
   {
@@ -1383,7 +1366,7 @@
    "requirement": "course_management/semester/test/test.md",
    "item": null,
    "text": "Khác Figma CD-KH-030300: card chưa có menu `⋮` để xoá bài.",
-   "id": "FIX-085",
+   "id": "FIX-084",
    "links": {
     "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
    }
@@ -1400,7 +1383,7 @@
    "requirement": "course_management/semester/test/test.md",
    "item": "CM-TE.A01.06",
    "text": "Thêm `Xoá bài`: Menu `⋮` trên card có `Xoá` (popup xác nhận `Xoá bài kiểm tra \"<tên>\"? Bộ câu hỏi của bài cũng sẽ bị xoá.`, nút `Huỷ` / `Xoá`); xoá mềm (**UI cần bổ sung**).",
-   "id": "FIX-086",
+   "id": "FIX-085",
    "links": {
     "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
    }
@@ -1417,7 +1400,7 @@
    "requirement": "course_management/semester/test/test.md",
    "item": null,
    "text": "Khác Figma CD-KH-030310: ô `Số câu hỏi` đang vẽ như ô nhập, requirement là chỉ đọc; ô `Tổng điểm` trên Figma cần bỏ. Dòng Lưu ý ghi `Số câu hỏi và tổng điểm có thể được cập nhật`.",
-   "id": "FIX-087",
+   "id": "FIX-086",
    "links": {
     "CD-KH-030310": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1496-16304"
    }
@@ -1434,7 +1417,7 @@
    "requirement": "course_management/semester/test/test.md",
    "item": null,
    "text": "Khác Figma: bộ câu hỏi đang vẽ thành màn riêng `CD-KH-030340` (mở từ `>`); requirement đặt trong tab `Bộ Câu Hỏi` của popup (**UI cần bổ sung**).",
-   "id": "FIX-088",
+   "id": "FIX-087",
    "links": {
     "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
    }
@@ -1451,7 +1434,7 @@
    "requirement": "course_management/semester/test/test.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-089",
+   "id": "FIX-088",
    "links": {
     "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
    }

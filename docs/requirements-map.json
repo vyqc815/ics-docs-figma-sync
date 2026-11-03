@@ -84,13 +84,6 @@
    ],
    "source": "ghi trong file"
   },
-  "course_management/learning-path-s4/learning-path-s4.md": {
-   "title": "Lộ Trình (S4)",
-   "screens": [
-    "CD-KH-020200"
-   ],
-   "source": "ghép theo tiêu đề"
-  },
   "course_management/library/library.md": {
    "title": "[CD] Thư viện",
    "screens": [
@@ -105,13 +98,6 @@
     "CD-KH-070305"
    ],
    "source": "ghi trong file"
-  },
-  "course_management/overview-s2/overview-s2.md": {
-   "title": "Tổng quan (S2)",
-   "screens": [
-    "CD-KH-020100"
-   ],
-   "source": "ghép theo tiêu đề"
   },
   "course_management/semester/information/information.md": {
    "title": "Học Kỳ",
@@ -156,13 +142,6 @@
     "CD-KH-070302"
    ],
    "source": "ghi trong file"
-  },
-  "curriculum_management_requirement/category_management/category_management.md": {
-   "title": "Quản lý danh sách danh mục",
-   "screens": [
-    "CD-DM-010000"
-   ],
-   "source": "ghép theo tiêu đề"
   },
   "curriculum_management_requirement/category_management/detail_category.md": {
    "title": "Chi tiết danh mục (Popup)",
@@ -616,21 +595,26 @@
    "screens": [
     "CD-KH-020100"
    ],
-   "source": "ghép theo tiêu đề (bản QC 2026-11-03, cần QC xác nhận)"
+   "source": "ghép theo tiêu đề; design xác nhận thay file cũ (2026-11-03)"
   },
   "course_management/learning-path-s2/learning-path-s2.md": {
    "title": "Lộ Trình (S2)",
    "screens": [
     "CD-KH-020200"
    ],
-   "source": "ghép theo tiêu đề (bản QC 2026-11-03, cần QC xác nhận)"
+   "source": "ghép theo tiêu đề; design xác nhận thay file cũ (2026-11-03)"
   },
   "curriculum_management_requirement/category_management/category_management_requirements.md": {
    "title": "Quản lý danh mục",
    "screens": [
     "CD-DM-010000"
    ],
-   "source": "ghép theo tiêu đề (bản QC 2026-11-03, cùng màn với category_management.md)"
+   "source": "ghép theo tiêu đề; design xác nhận thay file cũ (2026-11-03)"
   }
+ },
+ "replaced": {
+  "course_management/overview-s2/overview-s2.md": "course_management/overview-s1/overview-s1.md",
+  "course_management/learning-path-s4/learning-path-s4.md": "course_management/learning-path-s2/learning-path-s2.md",
+  "curriculum_management_requirement/category_management/category_management.md": "curriculum_management_requirement/category_management/category_management_requirements.md"
  }
 }
